@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-15T15:27:17.458139+00:00",
+  "scope": "Final affected-source and saved-product/cache identity check; no scientific rerun, formal audit, integrated approval or empirical validation.",
+  "report": "CANONICAL_SUPPLEMENT_v2.md",
+  "report_sha256": "f200b734866606a1e9f77653fce078ba7ae8697d3b862685ac55fca09d9267be",
+  "artifacts": {
+    "CANONICAL_SUPPLEMENT_v2.md": "f200b734866606a1e9f77653fce078ba7ae8697d3b862685ac55fca09d9267be",
+    "CANONICAL_EXPOSURE_v2.json": "b3766119d55ada96174f5e6cb35dedf39d54c8a8f66e03534f7887e744f260cd",
+    "canonical_binding_v2.py": "e9158d2ea8d3872604bc0332db3d1f54c245618ab27aeaf8edc2fa342f6d95b1",
+    "canonical_binding_v2_1.py": "50af7ccc83f0a9d9a9abd48d52a761502b893370e44252c7dbd22e65a43a79b6",
+    "canonical_binding_v2_2.py": "27582c625d1cc71134904b8f802e0ec8ec6698105270686c852ae2c4ad9949ee",
+    "canonical_binding_v2_3.py": "4922f315c0670d37af0178c60f09c94f74c4022f33579ebd7b89aad9df10a81f",
+    "CANONICAL_BINDING_SETUP_FAILURE_v2.json": "4b47512006d97a01f2eceb6027e9d2644aa58202a74a193f5ba6456aa039b3c8",
+    "CANONICAL_BINDING_LOG_FORMAT_FAILURE_v2.json": "f7789980347de3d31452a1332eac7854df62117d3426f148c9dc3d072157abfc",
+    "CANONICAL_BINDING_SEPARATOR_REPAIR_v2.json": "befdad52480928fc933d8061f983b84a65c6f419c868a4ca988ad27f1a6b4e4f",
+    "CANONICAL_BINDING_RESULTS_v2.json": "2ef18190bcf83e56d6e6f4e5d2e1901ddcde88c156f1b39450b387c27842c419",
+    "CANONICAL_BINDING_RESULTS_v2_1.json": "13b250d7b2257e88d27be53f735bc43ab70718212ae964c0c59717d6dad38a39",
+    "CANONICAL_REVIEW_v1.md": "50b50e297dd97169b0bf75f2eccca1e775d6970b8d16ecd97342a65fb580cf4f",
+    "CANONICAL_IDENTITY_v1.json": "c5f63ee091bf62fc7cbfdf02749955f567e0c309076b2e2eb2ca53bc86e4a5f8",
+    "DYNAMICAL_FORWARD_REVIEW_v1.md": "7510a44722f33175b0199cbc963c0b1e5c833717e4033c07f1bba983eebc68f8",
+    "POTENTIAL_REVIEW_v1.md": "27b6c5675aeea6ecc0389e892377dfdc066a0fbebb5abd9666fe580a0114bfe0"
+  },
+  "current_source_and_product_sha256": {
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "952a82662a01ea1af31da281a45f14a1818c365d789f20784725a11013017b9f",
+    "scripts/scalar_dynamical_covariance.py": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+    "scripts/scalar_dynamical_forward.py": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+    "scripts/scalar_dynamical_geometry.py": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+    "scripts/scalar_dynamical_momentum_inverse_check.py": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+    "scripts/scalar_dynamical_extensions.py": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+    "scripts/scalar_dynamical_domains.py": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/CANONICAL_SOURCE_FREEZE_v2.json": "5cffcef0422fa745c180a65959813aac9e1d975769eb48fb61e15d45a9446547",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+    "logs/runner-cache/scalar_dynamical_momentum_inverse_check.txt": "4cc15dc73aa8ab18e28e6117ab48eb34e97e1fd8bd48293245f8daa65bdce7c8",
+    "outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json": "3472188a7173f3542f73ed77eeecebd8586bfd6abd5d123f2abba66a7814c0f0",
+    "outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json": "5e9f941685afcd5c714c9ebd592fd08d8a993e8606ce7395915332369e63ff1d"
+  },
+  "binding_counts": {
+    "passed": 36,
+    "failed": 0
+  },
+  "v1_remains_historical": true,
+  "original_mode_rows_and_potential_diagnostics_unchanged": true,
+  "cache_fingerprint": "e3ecb7fe38ab5bb57aaa6046c48b7cff1009a2f062ae1daddf975d1fe91ae241",
+  "independent_mathematical_witness_report": {
+    "path": "../independent_equations_v1/SHARP_ENVELOPE_REVIEW_v1.md",
+    "sha256": "803d4ef7a220850f4cac23eaa6afb73478d567cfb9e75060389c20f5cb770599"
+  },
+  "limitations": [
+    "root 301-time vs independent seven-epoch constraint scope",
+    "both rolling histories cross a turning domain between saved samples",
+    "ill-conditioned potential diagnostic; no newly chosen fit tolerance or observational accuracy",
+    "mutation classifications parsed, not independently executed or validated"
+  ]
+}

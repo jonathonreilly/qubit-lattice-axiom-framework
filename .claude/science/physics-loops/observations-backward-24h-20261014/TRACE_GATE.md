@@ -119,3 +119,17 @@ The inverse converts a continuous physical history into candidate function tests
 ### Growth/lensing inverse — 2026-10-15
 
 Target: reconstruct missing physical gravity histories from observations without supplying an initial dust offset. `trace_class: upstream_support`; `reachability_to_target: supports`; `artifact_role: support_lemma`. The downstream consumer is the conditional cosmological action-membership test, restated locally. Endpoint subtraction removes C, while the exact interval classification prevents choosing among indistinguishable shapes. Strongest missing bridge: controlled full perturbation response and actual calibrated survey likelihood. No claim that the supplied action or initial scalar history was derived.
+
+## M14 full dynamical inverse
+
+```yaml
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate the remaining scalar action, state, scale and measurement assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Test a concrete physical operator for the joint equal-time covariance inputs and full-history consistency
+```
+
+The named downstream consumer is the revised-scalar action/potential/scale reconstruction. Momentum and covariance equations eliminate specified input assumptions inside the supplied dynamical class. They do not close the theory, select an action, measure physical F, or supply an empirical likelihood. The exact proof and source-bound computation are self-contained in the new note/primary; earlier unmerged conclusions are provenance, not proof inputs.

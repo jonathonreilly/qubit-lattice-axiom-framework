@@ -14,3 +14,7 @@ Second exact target: reconstruct every stored Doppler row in the registered deve
 ## Conditional cosmological inverse target
 
 Derive necessary and sufficient whole-interval conditions for an ideal smooth FLRW history to solve the coupled metric/scalar equations of the supplied revised candidate, including explicit candidate parameter reconstruction, curvature/conservation/domain gates and a separate matter-solution premise. This narrows the physical action/scale assumptions to checkable conditional identities; it does not derive the observed histories, select an action among all theories, or select a physical initial state. The strongest unresolved supplier is an observation-to-F history map with controlled environment, calibration and derivative errors.
+
+## M14 target contract: full dynamical and statistical inverse
+
+For the explicitly supplied canonical scalar plus conformal dust action, derive a finite inverse for the common momentum coefficients from simultaneous ideal measurements, retaining both scalar initial data. Construct an equal-time covariance version that eliminates the separate mixed time derivative and common-transfer premise. Establish rank availability, required physical domains, candidate-family and background tests; distinguish mathematical input elimination from physical action/state/measurement derivation. Canonical proof: `docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md`.

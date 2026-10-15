@@ -1,0 +1,140 @@
+{
+  "at_utc": "2026-10-15T15:17:25.461056+00:00",
+  "reviewer": "/root/launch_check",
+  "scope": "Affected late source-delta reading and identity binding only; not execution, formal audit or final delivery acceptance",
+  "prior_binding": {
+    "receipt_sha256": "3b3024b8123e635639f3a404dabd524b4e6648d6584e20adb238a6aa7a5ba1ac",
+    "identity_matches": 101,
+    "identity_mismatches": 2,
+    "exit_code": 0,
+    "failure_preserved": true,
+    "disposition": "One late source change plus changed-file count; no claim of complete initial identity success"
+  },
+  "late_delta": "Two error-bound controls appended; inverse and envelope implementation unchanged; complete diff read, no new control executed",
+  "note_confirmed_sha256": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+  "covariance_scope_judgment": "No material observational overclaim or covariance proof-wording issue in scoped note",
+  "cluster_verdict": "OPEN",
+  "initial_author_output": {
+    "passed": 81,
+    "failed": 0,
+    "only_initial_frozen_source": true,
+    "new_executables_not_covered": true
+  },
+  "current_observation_checks": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "observed_at_first_closing": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+      "current": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_covariance.py",
+      "observed_at_first_closing": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+      "current": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_domains.py",
+      "observed_at_first_closing": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+      "current": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_extensions.py",
+      "observed_at_first_closing": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "current": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_forward.py",
+      "observed_at_first_closing": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "current": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_geometry.py",
+      "observed_at_first_closing": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "current": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_momentum_inverse_check.py",
+      "observed_at_first_closing": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "current": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json",
+      "observed_at_first_closing": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "current": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "observed_at_first_closing": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "current": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json",
+      "observed_at_first_closing": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619",
+      "current": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json",
+      "observed_at_first_closing": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68",
+      "current": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68",
+      "matches": true
+    }
+  ],
+  "matching_current_observations": 11,
+  "mismatching_current_observations": 0,
+  "artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_CLUSTER_IDENTITY_v1.json",
+      "bytes": 108314,
+      "sha256": "3b3024b8123e635639f3a404dabd524b4e6648d6584e20adb238a6aa7a5ba1ac"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SCOPE_REVIEW_v1.md",
+      "bytes": 18383,
+      "sha256": "657c027af93d1ec12abfe59ddbd7025ae7d0e4175f009c23f70c942970ad18bb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CLUSTER_CAP_VERDICT_v1.md",
+      "bytes": 2538,
+      "sha256": "834446a8b79f574386abe68826bd2b44f054b80718b661b2148a2e2368d1331a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CLOSING_DELTA_v1.md",
+      "bytes": 1881,
+      "sha256": "346d4c601bbfb7a8f542f1b01afb8e19b15d8b488ed5584dff67bfe1aa7ec6c1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_domains.py",
+      "bytes": 7656,
+      "sha256": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_domains.py.diff",
+      "bytes": 1818,
+      "sha256": "7170de2b707f7b90bcc2dbcf3db716dcfaa3e2ae4e414ee52d6951d9f16c17ab"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_BIND_REVIEW_v1.py",
+      "bytes": 13609,
+      "sha256": "ee1b120cb9856730d45f6f84cf505a309de0f1b3032d72672670a07dbbaece57"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_FINAL_SHA256_v1.txt",
+      "bytes": 388,
+      "sha256": "8f5f58abb24419930408879eee31d7577776d14eca6c9766eead3ee7af2df77b"
+    }
+  ],
+  "scientific_runs": 0,
+  "git_mutations": 0,
+  "author_source_edits": 0,
+  "pending": "Corrected execution/cache and affected implementation closure, final evidence inventory, integrated-main landing validation",
+  "receipt_self_hash_excluded": true
+}

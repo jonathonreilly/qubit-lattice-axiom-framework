@@ -1,0 +1,9 @@
+# Closing source-timing delta
+
+The first binding run completed with 101 matching identity checks and two mismatches, both preserved in `M14_CANONICAL_CLUSTER_IDENTITY_v1.json`. It returned exit0 while reporting those mismatches; no all-identities-match result is claimed. The mismatches concern one new source file version and the resulting changed-file count, not two independently detected scientific failures.
+
+Between the earlier affected-source read and closing binding, `scripts/scalar_dynamical_domains.py` changed from `17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf` to `595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1`. Thus five, rather than four, files differed from the initial canonical freeze. The newly observed bytes and full diff were already preserved in `M14_AFFECTED_SEEN_v1` by that run.
+
+The complete late diff was then read. It appends two exact rational error-envelope controls, named `sharp_matrix_inverse_error` and `sharp_ratio_error`, to `checks()`. It changes neither the coefficient inverse nor the error-envelope implementation, the covariance proof, the physical observation definitions or the action premises. This source inspection does not certify the new controls or supply their execution result; those remain with the affected implementation reviewer and author's subsequent source-bound execution.
+
+The observational/covariance wording conclusion and 339-word OPEN judgment therefore remain applicable to the note at `2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30`. The original report's four-delta description is the earlier observation, not a claim about all later bytes. The companion closing receipt binds this fifth version separately and preserves the initial report and both mismatch records. None of these records provides final delivery/cache acceptance or covers future edits.

@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-15T15:23:47.373793+00:00",
+  "source_freeze": ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/CANONICAL_SOURCE_FREEZE_v2.json",
+  "source_freeze_sha256": "5cffcef0422fa745c180a65959813aac9e1d975769eb48fb61e15d45a9446547",
+  "progress": "Final canonical85 checks pass,0 fail; full rolling scalar/dust and five-row equal-time covariance inverse. Two bound-denominator mutants initially survived weak fixtures; independently checked sharp witnesses now reject them. Invalid v2 run retained because its baseline fixture failed. Guarded v3:21 failed-check rejections,3 exceptions,0 survivors,0 selector failures. Two histories cross a zero-roll point between saved epochs; no uniform inverse or empirical test. Full independent equation, numerical, covariance and primary-scope reports read; final source/cache confirmations and evidence delivery ongoing.",
+  "next_action": "Finish M14 source/cache and evidence binding, graph/helper inventory and coherent review PR; next derive the physical measurement operator for joint covariance histories without assumed common transfer.",
+  "ownership": "root direct author; no detached author or research job",
+  "deadline": "2026-10-15T21:48:44Z"
+}

@@ -1,0 +1,179 @@
+===== runner cache v1 =====
+runner: scripts/scalar_dynamical_momentum_inverse_check.py
+runner_sha256: cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0
+input_fingerprint_sha256: 56226655877d7ba75ab43600311752697bf675eb9a87f79005eeea44b175b4cc
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.99
+status: ok
+----- stdout -----
+per_element: checked: exact metric, constraint, covariance, rank and coefficient-error equations
+per_site: checked and not executed: no lattice site or local environmental field solution
+per_mode: checked: full rolling linear coupled scalar/dust modes with arbitrary supplied scalar initial data
+per_block: checked: two synthetic backgrounds, four modes, seven epochs each; six separate covariance examples
+lattice_wide: checked and not executed: no fundamental action, state, scale or empirical theory validation
+{
+  "actual_current_surface_status": "conditional-support",
+  "cases": [
+    {
+      "candidate": {
+        "beta_inferred": 0.2852000000161281,
+        "beta_true": 0.2852,
+        "kappa_inferred": 4.559702332306617,
+        "kappa_true": 4.559702332218165,
+        "matrix": [
+          [
+            0.07283399762451387,
+            0.16330481080768833
+          ],
+          [
+            0.07279357001981053,
+            0.16333589875144175
+          ]
+        ],
+        "reserved_residuals": [
+          -1.8640644583456378e-13,
+          -4.956035581926699e-13,
+          -8.810729923425242e-13,
+          -1.1806111643863915e-12
+        ]
+      },
+      "case": {
+        "id": "positive_roll",
+        "kappa_model": 0.08,
+        "nu": 0.7,
+        "rho_E": 0.8,
+        "u": 0.12,
+        "u_dot": 0.15
+      },
+      "constraint_max": 5.452724630633026e-15,
+      "maximum_abs_r_minus_q": 0.18283399762451533,
+      "turning_diagnostic": {
+        "saved_sign_changes": [
+          {
+            "left_index": 1,
+            "right_index": 2,
+            "y_left": -0.020140003527027918,
+            "y_right": 0.07404779881814817
+          }
+        ],
+        "scope": "Finite sampled signs; no root enclosure or uniform interval identification"
+      }
+    },
+    {
+      "candidate": {
+        "beta_inferred": 0.3219250000010447,
+        "beta_true": 0.321925,
+        "kappa_inferred": 3.247127486078771,
+        "kappa_true": 3.2471274860570767,
+        "matrix": [
+          [
+            0.21653326892542282,
+            0.1008213465934813
+          ],
+          [
+            0.21688351841487058,
+            0.10048628591263468
+          ]
+        ],
+        "reserved_residuals": [
+          -7.66053886991358e-15,
+          2.2426505097428162e-14,
+          5.995204332975845e-14,
+          9.43689570931383e-14
+        ]
+      },
+      "case": {
+        "id": "negative_roll",
+        "kappa_model": 0.21,
+        "nu": 1.4,
+        "rho_E": 1.2,
+        "u": -0.08,
+        "u_dot": -0.12
+      },
+      "constraint_max": 4.307496696515417e-15,
+      "maximum_abs_r_minus_q": 0.3265332689254272,
+      "turning_diagnostic": {
+        "saved_sign_changes": [
+          {
+            "left_index": 1,
+            "right_index": 2,
+            "y_left": 0.02183739220006939,
+            "y_right": -0.0027705854714320053
+          }
+        ],
+        "scope": "Finite sampled signs; no root enclosure or uniform interval identification"
+      }
+    }
+  ],
+  "counts": {
+    "failed": 0,
+    "passed": 85
+  },
+  "empirical_tests": 0,
+  "failed_checks": [],
+  "history_scope": {
+    "checker_setup_failure": "Independent correspondence v1 BooleanAtom counting failed; repaired v2 preserved same mathematics.",
+    "precision": "Double-precision ODE/readout arithmetic; exact rational controls do not certify trajectory or measurement accuracy.",
+    "protocol_name": "reserved_scaled_max applies to absolute dimensionless residuals in the fixed root forward implementation.",
+    "working_coefficient_label": "Original positive-chart label exceeded observable-domain scope; narrowed to positive coefficients without changing norm theorem."
+  },
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "592df22cbc7421da970842b42157129ba65e8f0c71d6928ca90fa189474702ce",
+    "scripts/scalar_dynamical_covariance.py": "af688b94f90de2532df5a3544bbacce25b72e474ebc59465b15d6ebb26db4707",
+    "scripts/scalar_dynamical_domains.py": "bafe3ab7ef0018206d7d9c5718f8742ef9bd96034460c160b75b2218425cd25f",
+    "scripts/scalar_dynamical_extensions.py": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+    "scripts/scalar_dynamical_forward.py": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+    "scripts/scalar_dynamical_geometry.py": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834"
+  },
+  "potential_diagnostics": [
+    {
+      "basis_condition": 976255.322486162,
+      "case": "positive_roll",
+      "gamma_inferred": 0.7886707325757166,
+      "gamma_true": 0.7886707325500398,
+      "nu_error": -2.777285779131944e-08,
+      "nu_inferred": 0.6999999722271422,
+      "nu_true": 0.7,
+      "reserved_residuals": [
+        1.2582873653611826e-13,
+        6.029441811279679e-13,
+        1.697734251901624e-12,
+        3.0145782856203125e-12
+      ],
+      "status": "diagnostic; no error envelope or observational inference"
+    },
+    {
+      "basis_condition": 107337.05132072301,
+      "case": "negative_roll",
+      "gamma_inferred": 0.7152287893241936,
+      "gamma_true": 0.7152287893198976,
+      "nu_error": 3.744959009566173e-09,
+      "nu_inferred": 1.400000003744959,
+      "nu_true": 1.4,
+      "reserved_residuals": [
+        2.4489064205310274e-14,
+        -1.2399573013320564e-13,
+        -3.613414905831447e-13,
+        -5.939504733854482e-13
+      ],
+      "status": "diagnostic; no error envelope or observational inference"
+    }
+  ],
+  "primary_sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+  "read_inventory": {
+    "integrity_reads": [
+      "Primary source and every declared input for SHA256; no external observations or ancestral result files loaded"
+    ],
+    "scientific_inputs": [
+      "Fixed synthetic protocol; explicit supplied action and derived equations in the imported helpers"
+    ]
+  },
+  "scope": "Supplied full linear scalar/dust dynamics, exact conditional inverses and synthetic cases; no measured covariance supplier or action selection",
+  "target_claim_type": "bounded_theorem"
+}
+
+----- stderr -----
+

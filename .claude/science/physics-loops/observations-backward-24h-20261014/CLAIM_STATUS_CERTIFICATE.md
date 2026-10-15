@@ -70,3 +70,24 @@ The canonical source has102 checks and a fresh source-bound run within120seconds
 ### Growth/lensing inverse — 2026-10-15
 
 `target_claim_type: bounded_theorem`; `actual_current_surface_status: conditional-support`; `trace_class: upstream_support`; `reachability_to_target: supports`; `hypothetical_axiom_status: null`; `audit_required_before_effective_retained: true`; `bare_retained_allowed: false`. Conditional surface: finite positive calibrated coherent-mode histories with a supplied response/candidate chart. Observation status: published ACT/BOSS summaries are exposed development context, with zero independent empirical tests and no fit. The derived density-offset elimination and interval classification are mathematical support; the action, homogeneous perturbation, absolute scale and physical observation map remain supplied/open.
+
+## M14 certificate
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: Exact three-mode momentum inverse and five-row equal-time covariance lift under explicit physical premises
+hypothetical_axiom_status: none proposed
+admitted_observation_status: No full observation input collection or empirical test admitted
+claim_type_reason: The proof establishes an implication from a supplied action and calibrated finite input maps
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+The strongest checked mathematics is full constraint propagation plus the unique covariance lift on a rank-five chart, with monomial/positivity gates. Numerical initial states are supplied and the actual histories cross turning points between samples. Current final-source focused checks and delivery binding must complete before publication. No effective status, audit verdict or fundamental closure is asserted.
+
+## M14 final source and opening disposition
+
+Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded_theorem target, actual conditional-support. Final85 controls0fail; independent equations, canonical-state forward solution, covariance proof, source and cache checks complete. Root read complete closing reports. Two original mutation survivors repaired by independently checked sharp fixtures; invalidv2 retained; finalv3 has21 failed-check rejections and3 exceptions. One coherent M14 OPEN content judgment; final indexed evidence/tree binding precedes publication. No observation fit, action selection, integrated-main landing validation or formal audit. See dynamical_response/REVIEW_RECORD_v1.md.

@@ -42,3 +42,7 @@ The six exact-version primary sources and their acquisition hashes are in action
 ### Growth/lensing source bridge — 2026-10-15
 
 Versioned primary sources 1210.0439v2, 2405.12795v2 and 2401.12971v2 were inspected for the observable convention, ACT/BOSS estimator and RSD/covariance supplier. The older P2 convention is twice the adopted ACT E_G-normalized P. Projected spectra at two effective redshifts do not supply this note's continuous coherent-mode P3 and integrals. Read scopes, exact downloaded-source identities and the bounded unsuccessful likelihood-release search remain recorded; the limited search is not an assertion that a release does not exist. No observational parameter value was fitted.
+
+## M14 primary-source scope
+
+Rondeau–Li1709.07087v1 §§IV–V supplies classical conformal-observable conventions; A_paper=A_campaign² and time-coordinate dictionaries are explicit. Assisted coupled quintessence1407.2156v1 §§II,VI is a constant-coupling comparator; its small-scale approximation is not imported. ACT2405.12795v2 and estimator2401.12971v2 supply projected-spectrum/velocity-bias context; no raw maps, likelihood or continuous covariance collection admitted. Complete independent source report, version/page/hash inventories and root read scopes are in dynamical_response. The exact rolling inverse and equal-time covariance algebra are derived here, not attributed to an unread source or claimed globally novel.

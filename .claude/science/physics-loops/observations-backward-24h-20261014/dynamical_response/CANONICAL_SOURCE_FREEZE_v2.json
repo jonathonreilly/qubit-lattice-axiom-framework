@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-10-15T15:21:15.859783+00:00",
+  "execution": {
+    "runner": "scripts/scalar_dynamical_momentum_inverse_check.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "per_element: checked: exact metric, constraint, covariance, rank and coefficient-error equations\nper_site: checked and not executed: no lattice site or local environmental field solution\nper_mode: checked: full rolling linear coupled scalar/dust modes with arbitrary supplied scalar initial data\nper_block: checked: two synthetic backgrounds, four modes, seven epochs each; six separate covariance examples\nlattice_wide: checked and not executed: no fundamental action, state, scale or empirical theory validation\n{\n  \"actual_current_surface_status\": \"conditional-support\",\n  \"cases\": [\n    {\n      \"candidate\": {\n        \"beta_inferred\": 0.2852000000161281,\n        \"beta_true\": 0.2852,\n        \"kappa_inferred\": 4.559702332306617,\n        \"kappa_true\": 4.559702332218165,\n        \"matrix\": [\n          [\n            0.07283399762451387,\n            0.16330481080768833\n          ],\n          [\n            0.07279357001981053,\n            0.16333589875144175\n          ]\n        ],\n        \"reserved_residuals\": [\n          -1.8640644583456378e-13,\n          -4.956035581926699e-13,\n          -8.810729923425242e-13,\n          -1.1806111643863915e-12\n        ]\n      },\n      \"case\": {\n        \"id\": \"positive_roll\",\n        \"kappa_model\": 0.08,\n        \"nu\": 0.7,\n        \"rho_E\": 0.8,\n        \"u\": 0.12,\n        \"u_dot\": 0.15\n      },\n      \"constraint_max\": 5.452724630633026e-15,\n      \"maximum_abs_r_minus_q\": 0.18283399762451533,\n      \"turning_diagnostic\": {\n        \"saved_sign_changes\": [\n          {\n            \"left_index\": 1,\n            \"right_index\": 2,\n            \"y_left\": -0.020140003527027918,\n            \"y_right\": 0.07404779881814817\n          }\n        ],\n        \"scope\": \"Finite sampled signs; no root enclosure or uniform interval identification\"\n      }\n    },\n    {\n      \"candidate\": {\n        \"beta_inferred\": 0.3219250000010447,\n        \"beta_true\": 0.321925,\n        \"kappa_inferred\": 3.247127486078771,\n        \"kappa_true\": 3.2471274860570767,\n        \"matrix\": [\n          [\n            0.21653326892542282,\n            0.1008213465934813\n          ],\n          [\n            0.21688351841487058,\n            0.10048628591263468\n          ]\n        ],\n        \"reserved_residuals\": [\n          -7.66053886991358e-15,\n          2.2426505097428162e-14,\n          5.995204332975845e-14,\n          9.43689570931383e-14\n        ]\n      },\n      \"case\": {\n        \"id\": \"negative_roll\",\n        \"kappa_model\": 0.21,\n        \"nu\": 1.4,\n        \"rho_E\": 1.2,\n        \"u\": -0.08,\n        \"u_dot\": -0.12\n      },\n      \"constraint_max\": 4.307496696515417e-15,\n      \"maximum_abs_r_minus_q\": 0.3265332689254272,\n      \"turning_diagnostic\": {\n        \"saved_sign_changes\": [\n          {\n            \"left_index\": 1,\n            \"right_index\": 2,\n            \"y_left\": 0.02183739220006939,\n            \"y_right\": -0.0027705854714320053\n          }\n        ],\n        \"scope\": \"Finite sampled signs; no root enclosure or uniform interval identification\"\n      }\n    }\n  ],\n  \"counts\": {\n    \"failed\": 0,\n    \"passed\": 85\n  },\n  \"empirical_tests\": 0,\n  \"failed_checks\": [],\n  \"history_scope\": {\n    \"checker_setup_failure\": \"Independent correspondence v1 BooleanAtom counting failed; repaired v2 preserved same mathematics.\",\n    \"precision\": \"Double-precision ODE/readout arithmetic; exact rational controls do not certify trajectory or measurement accuracy.\",\n    \"protocol_name\": \"reserved_scaled_max applies to absolute dimensionless residuals in the fixed root forward implementation.\",\n    \"working_coefficient_label\": \"Original positive-chart label exceeded observable-domain scope; narrowed to positive coefficients without changing norm theorem.\"\n  },\n  \"input_sha256\": {\n    \".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json\": \"22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656\",\n    \".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md\": \"067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7\",\n    \"docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md\": \"952a82662a01ea1af31da281a45f14a1818c365d789f20784725a11013017b9f\",\n    \"scripts/scalar_dynamical_covariance.py\": \"091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20\",\n    \"scripts/scalar_dynamical_domains.py\": \"595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1\",\n    \"scripts/scalar_dynamical_extensions.py\": \"d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a\",\n    \"scripts/scalar_dynamical_forward.py\": \"b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005\",\n    \"scripts/scalar_dynamical_geometry.py\": \"e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834\"\n  },\n  \"potential_diagnostics\": [\n    {\n      \"basis_condition\": 976255.322486162,\n      \"case\": \"positive_roll\",\n      \"gamma_inferred\": 0.7886707325757166,\n      \"gamma_true\": 0.7886707325500398,\n      \"nu_error\": -2.777285779131944e-08,\n      \"nu_inferred\": 0.6999999722271422,\n      \"nu_true\": 0.7,\n      \"reserved_residuals\": [\n        1.2582873653611826e-13,\n        6.029441811279679e-13,\n        1.697734251901624e-12,\n        3.0145782856203125e-12\n      ],\n      \"status\": \"diagnostic; no error envelope or observational inference\"\n    },\n    {\n      \"basis_condition\": 107337.05132072301,\n      \"case\": \"negative_roll\",\n      \"gamma_inferred\": 0.7152287893241936,\n      \"gamma_true\": 0.7152287893198976,\n      \"nu_error\": 3.744959009566173e-09,\n      \"nu_inferred\": 1.400000003744959,\n      \"nu_true\": 1.4,\n      \"reserved_residuals\": [\n        2.4489064205310274e-14,\n        -1.2399573013320564e-13,\n        -3.613414905831447e-13,\n        -5.939504733854482e-13\n      ],\n      \"status\": \"diagnostic; no error envelope or observational inference\"\n    }\n  ],\n  \"primary_sha256\": \"cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0\",\n  \"read_inventory\": {\n    \"integrity_reads\": [\n      \"Primary source and every declared input for SHA256; no external observations or ancestral result files loaded\"\n    ],\n    \"scientific_inputs\": [\n      \"Fixed synthetic protocol; explicit supplied action and derived equations in the imported helpers\"\n    ]\n  },\n  \"scope\": \"Supplied full linear scalar/dust dynamics, exact conditional inverses and synthetic cases; no measured covariance supplier or action selection\",\n  \"target_claim_type\": \"bounded_theorem\"\n}\n",
+    "stderr": "",
+    "elapsed_sec": 2.2028229236602783,
+    "timeout_sec": 180,
+    "live_log": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/.in-progress/scalar_dynamical_momentum_inverse_check.txt"
+  },
+  "cache": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_dynamical_momentum_inverse_check.txt",
+  "cache_status": "fresh",
+  "files": {
+    "scripts/scalar_dynamical_momentum_inverse_check.py": {
+      "sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "bytes": 6258
+    },
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "952a82662a01ea1af31da281a45f14a1818c365d789f20784725a11013017b9f",
+      "bytes": 25885
+    },
+    "scripts/scalar_dynamical_covariance.py": {
+      "sha256": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+      "bytes": 4709
+    },
+    "scripts/scalar_dynamical_domains.py": {
+      "sha256": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+      "bytes": 7656
+    },
+    "scripts/scalar_dynamical_extensions.py": {
+      "sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "bytes": 5916
+    },
+    "scripts/scalar_dynamical_forward.py": {
+      "sha256": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "bytes": 8114
+    },
+    "scripts/scalar_dynamical_geometry.py": {
+      "sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "bytes": 2054
+    },
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json": {
+      "sha256": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "bytes": 1424
+    },
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "bytes": 6192
+    },
+    "outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json": {
+      "sha256": "5e9f941685afcd5c714c9ebd592fd08d8a993e8606ce7395915332369e63ff1d",
+      "bytes": 88780
+    },
+    "outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json": {
+      "sha256": "3472188a7173f3542f73ed77eeecebd8586bfd6abd5d123f2abba66a7814c0f0",
+      "bytes": 5947
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_dynamical_momentum_inverse_check.txt": {
+      "sha256": "4cc15dc73aa8ab18e28e6117ab48eb34e97e1fd8bd48293245f8daa65bdce7c8",
+      "bytes": 6818
+    }
+  }
+}

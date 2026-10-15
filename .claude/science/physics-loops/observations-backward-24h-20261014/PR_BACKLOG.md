@@ -66,3 +66,11 @@ M11 published 2026-10-15T11:07:17.193934+00:00: [PR #9600](https://github.com/jo
 Current branch codex/observations-backward-selection-20261015 is stacked on frozen M11 codex/observations-backward-discrepancy-20261015 at5a73333518a13640c6a99cbcb01c31342c519fd3. The mathematics is self-contained; the stack preserves the shared campaign history rather than treating receiver inference as an action premise. New note and two scripts, frozen synthetic protocol, original failures and scoped evidence form a coherent conditional-support unit. Source/evidence conformance and cluster judgment precede PR creation. No merge or main push.
 
 M12 published 2026-10-15T12:29:43.754333+00:00: [PR #9603](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9603), regular/open/mergeable,73 paths,head `e2873beca6af9954be49c4a9bbe8d98f05c9e69b`,base M11 `5a73333518a13640c6a99cbcb01c31342c519fd3`. Attached. No M12 publication backlog. Current continuation: `codex/observations-backward-growth-20261015`; next physical-history input-map block is planned, with no new discovery result yet.
+
+## M13 publication — 2026-10-15T14:11:06.477049+00:00
+
+[PR #9605](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9605) — regular/open,65paths,head `4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137`, frozen M12 base `e2873beca6af9954be49c4a9bbe8d98f05c9e69b`, attached. Conditional growth/lensing inverse;143 controls, independent six-case comparison, final exact-tree delivery review complete. Integrated-current-main gates and independent audit remain landing obligations. No merge.
+
+## M14 final source and opening disposition
+
+Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded_theorem target, actual conditional-support. Final85 controls0fail; independent equations, canonical-state forward solution, covariance proof, source and cache checks complete. Root read complete closing reports. Two original mutation survivors repaired by independently checked sharp fixtures; invalidv2 retained; finalv3 has21 failed-check rejections and3 exceptions. One coherent M14 OPEN content judgment; final indexed evidence/tree binding precedes publication. No observation fit, action selection, integrated-main landing validation or formal audit. See dynamical_response/REVIEW_RECORD_v1.md.

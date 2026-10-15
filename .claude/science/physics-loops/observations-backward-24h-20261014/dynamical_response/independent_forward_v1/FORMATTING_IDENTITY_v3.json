@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-10-15T15:35:14.446221+00:00",
+  "scope": "Formatting-only source delta and final execution/cache/product identity confirmation; no scientific rerun, formal audit, integrated landing approval or empirical validation.",
+  "report": "FORMATTING_SUPPLEMENT_v3.md",
+  "report_sha256": "36aa04259c9774c8a5ac607b9a1d52ca5c91675cace7c52a0ec0b7ea98541696",
+  "artifacts": {
+    "FORMATTING_SUPPLEMENT_v3.md": "36aa04259c9774c8a5ac607b9a1d52ca5c91675cace7c52a0ec0b7ea98541696",
+    "formatting_binding_v3.py": "3756172bd5a8e71338ae2004dbb8ca16318253fd3b10296245bbbcb7367e5827",
+    "FORMATTING_BINDING_RESULTS_v3.json": "3e18aa036996d2394896cfe046512af9628df5bc661ae51ad81137c80767918a",
+    "CANONICAL_SUPPLEMENT_v2.md": "f200b734866606a1e9f77653fce078ba7ae8697d3b862685ac55fca09d9267be",
+    "CANONICAL_IDENTITY_v2.json": "aca4abe0a7973f35e2362d9f01f815e4bd22fa30a7c59e20cfa11a43c3bdea61",
+    "CANONICAL_REVIEW_v1.md": "50b50e297dd97169b0bf75f2eccca1e775d6970b8d16ecd97342a65fb580cf4f",
+    "CANONICAL_IDENTITY_v1.json": "c5f63ee091bf62fc7cbfdf02749955f567e0c309076b2e2eb2ca53bc86e4a5f8"
+  },
+  "current_files": {
+    "scripts/scalar_dynamical_momentum_inverse_check.py": {
+      "sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "bytes": 6258
+    },
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "592df22cbc7421da970842b42157129ba65e8f0c71d6928ca90fa189474702ce",
+      "bytes": 25879
+    },
+    "scripts/scalar_dynamical_forward.py": {
+      "sha256": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+      "bytes": 8112
+    },
+    "scripts/scalar_dynamical_geometry.py": {
+      "sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "bytes": 2054
+    },
+    "scripts/scalar_dynamical_extensions.py": {
+      "sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "bytes": 5916
+    },
+    "scripts/scalar_dynamical_domains.py": {
+      "sha256": "bafe3ab7ef0018206d7d9c5718f8742ef9bd96034460c160b75b2218425cd25f",
+      "bytes": 7654
+    },
+    "scripts/scalar_dynamical_covariance.py": {
+      "sha256": "af688b94f90de2532df5a3544bbacce25b72e474ebc59465b15d6ebb26db4707",
+      "bytes": 4708
+    },
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json": {
+      "sha256": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "bytes": 1424
+    },
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "bytes": 6192
+    },
+    "outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json": {
+      "sha256": "53ff9e5846532dbbad341c5b034b85fd7349d1f42ce94dc9eb014c713bdaf64f",
+      "bytes": 88780
+    },
+    "outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json": {
+      "sha256": "8338854faa67d1cd912e4539a4b257f1a29e3ef291ffe46af5346e62ace0285d",
+      "bytes": 5947
+    },
+    "logs/runner-cache/scalar_dynamical_momentum_inverse_check.txt": {
+      "sha256": "243ac297f1c0fe3df9378831430e85b89a9f7ba375ddbdac482fcc497b0460b9",
+      "bytes": 6818
+    },
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/CANONICAL_SOURCE_FREEZE_v3.json": {
+      "sha256": "aa3bb8550b58f5b672a8dea6b01fc79dd4d07eebf3d1e14e1cc52dc139eef277",
+      "bytes": 9783
+    },
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FINAL_FORMATTING_IDENTITY_v1.json": {
+      "sha256": "7953ac0731b8d9ecdec035a358a26f349002166575fe3cb9cd4242b6f5c7b403",
+      "bytes": 3587
+    }
+  },
+  "binding_counts": {
+    "passed": 24,
+    "failed": 0
+  },
+  "current_input_fingerprint": "56226655877d7ba75ab43600311752697bf675eb9a87f79005eeea44b175b4cc",
+  "all_nonidentity_products_unchanged": true,
+  "prior_receipts_preserved": true
+}

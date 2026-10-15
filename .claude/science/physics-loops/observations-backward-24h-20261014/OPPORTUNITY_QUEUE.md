@@ -82,3 +82,11 @@ Do not generate another variant of the receiver geometry solely to refine spectr
 ### Growth/lensing next obligations — 2026-10-15
 
 Priority: derive response dynamics while retaining the homogeneous scalar mode and a quantitative approximation residual. Check the unresolved prior conformal potential-sign question from the action before adopting its formulas. Next connect the derived histories to a windowed lensing/RSD forward likelihood, rather than differentiating two survey summary points. Distinguish calibration data, exposed model development and genuine independent tests. Potential/scale selection remains a separate terminal obligation; do not introduce an assumed selector and call it derived.
+
+## Ranked next opportunities after M14
+
+1. Physical observation operator for joint Weyl/velocity covariance: derive how redshift/time and scale windows act on the exact equal-time identity, and what can be constrained without supplying an unprojected history. This attacks the new theorem's highest-impact open supplier; first decisive check is an explicit forward projection retaining coefficient variation and known noise terms.
+2. Full-history compatibility from inferred coefficients: determine which remaining scalar/matter constraints test an apparent covariance fit without choosing a preparation. Local rank alone is insufficient. First check is a constraint-compatible reconstruction or counterexample with fixed observable histories.
+3. Independent normalization/environment bridge: connect a reconstructed relative F to a measured same-environment gravitational coefficient, retaining source, range and endpoint assumptions. Avoid a supplied numerical Newton constant being treated as a derivation.
+
+Priorities reflect new evidence value, not PR counts. Do not repeat receiver or scalar algebra variants that supply no new discriminator. Fixed deadline and final packaging time remain unchanged.

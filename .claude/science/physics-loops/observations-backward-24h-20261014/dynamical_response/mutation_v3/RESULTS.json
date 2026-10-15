@@ -1,0 +1,320 @@
+{
+  "source_sha256": {
+    "scripts/scalar_dynamical_covariance.py": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+    "scripts/scalar_dynamical_domains.py": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+    "scripts/scalar_dynamical_extensions.py": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+    "scripts/scalar_dynamical_forward.py": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+    "scripts/scalar_dynamical_geometry.py": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+    "scripts/scalar_dynamical_momentum_inverse_check.py": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7"
+  },
+  "mutations": [
+    {
+      "name": "constraint_scalar_momentum",
+      "source": "scalar_dynamical_forward.py",
+      "old": "pd=-H*phi+(s*X-rho*v)/(2*Q)",
+      "new": "pd=-H*phi+(s*X+rho*v)/(2*Q)",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "forward_symbolic.constraint_propagation",
+        "forward_symbolic.Jordan_momentum"
+      ],
+      "source_sha256": "22fc9bac6c3a07d69b7f1012484f059e0727865d919f3239989883093ac8c740"
+    },
+    {
+      "name": "scalar_number_mass",
+      "source": "scalar_dynamical_forward.py",
+      "old": "-b*rho*(n+b*X)",
+      "new": "-b*rho*n",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "forward_symbolic.constraint_propagation"
+      ],
+      "source_sha256": "79e78bd63c56cd4c1527a7090760fe37e3a4dd813e4d7ee0fbfd60b328a97c3f"
+    },
+    {
+      "name": "matter_lapse_source",
+      "source": "scalar_dynamical_forward.py",
+      "old": "-2*(V1+b*rho)*phi",
+      "new": "-2*V1*phi",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "forward_symbolic.constraint_propagation"
+      ],
+      "source_sha256": "43c8b10f9ee91bb0822799e9cb2c65f13b3b627d9022c6baf9eae02db8a2b395"
+    },
+    {
+      "name": "physical_velocity_map",
+      "source": "scalar_dynamical_forward.py",
+      "old": "dt(A*v)/A+Psi",
+      "new": "dt(A*v)/A-Psi",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "forward_symbolic.Jordan_velocity"
+      ],
+      "source_sha256": "9f7edeae3d83fa6a8690a5b01e45e60fc52672e31ee10f5547796da14b9a4aea"
+    },
+    {
+      "name": "momentum_conformal_sign",
+      "source": "scalar_dynamical_forward.py",
+      "old": "D=-2*b*X",
+      "new": "D=2*b*X",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "forward_symbolic.Jordan_momentum"
+      ],
+      "source_sha256": "f4722eb94a0e61cd8416abf6000ec70e81ec01660c25dcc5d33abee5d8b50321"
+    },
+    {
+      "name": "full_forward_force",
+      "source": "scalar_dynamical_forward.py",
+      "old": "-phi-c['b']*X-c['b']*ss*v",
+      "new": "-phi+c['b']*X-c['b']*ss*v",
+      "status": "exception",
+      "exit_code": 1,
+      "failed_checks": [],
+      "source_sha256": "793389fa68ffd4297d70dce0c294637d141282e2a97e894fed8534834d0e2fde"
+    },
+    {
+      "name": "numerical_inverse_ratio",
+      "source": "scalar_dynamical_forward.py",
+      "old": "qi=x/yy",
+      "new": "qi=yy/x",
+      "status": "exception",
+      "exit_code": 1,
+      "failed_checks": [],
+      "source_sha256": "9b399028128b630e573c69a7ec34bcbb652aae72cac2131c29d4cc5469bbf0da"
+    },
+    {
+      "name": "Euler_slip_factor",
+      "source": "scalar_dynamical_forward.py",
+      "old": "robs=2*(HJ/H0)**2",
+      "new": "robs=(HJ/H0)**2",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "positive_roll.Euler_metric_slip",
+        "positive_roll.inverse_q",
+        "positive_roll.inverse_Rxy",
+        "positive_roll.candidate_beta",
+        "positive_roll.candidate_kappa",
+        "positive_roll.candidate_later",
+        "positive_roll.finite_saved_epoch_domains",
+        "negative_roll.Euler_metric_slip",
+        "negative_roll.inverse_q",
+        "negative_roll.inverse_Rxy",
+        "negative_roll.candidate_beta",
+        "negative_roll.candidate_kappa",
+        "negative_roll.candidate_later",
+        "negative_roll.finite_saved_epoch_domains"
+      ],
+      "source_sha256": "c868cc294595bf65d7374cdd2c85f841fcd7903e52a7063a20a6bee97a54ebbd"
+    },
+    {
+      "name": "geometry_lapse",
+      "source": "scalar_dynamical_geometry.py",
+      "old": "-(1+2*ep*f*wave)",
+      "new": "-(1+ep*f*wave)",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "geometry.Einstein_00",
+        "geometry.Einstein_0i",
+        "geometry.Einstein_pressure"
+      ],
+      "source_sha256": "a5b39b510054916fc1dabcf381ca99e005d1972c2e33c41fe9f3a334e1f4a176"
+    },
+    {
+      "name": "geometry_wave_metric",
+      "source": "scalar_dynamical_geometry.py",
+      "old": "sqrtg=a**3*(1-2*ep*f*wave)",
+      "new": "sqrtg=a**3*(1-ep*f*wave)",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "geometry.scalar_box"
+      ],
+      "source_sha256": "82e20113266a2bb105bbbc9aea93fdaef04bc31958b23d794c828ab16ed29340"
+    },
+    {
+      "name": "candidate_epoch_determinant",
+      "source": "scalar_dynamical_extensions.py",
+      "old": "-(q1-q2)/kap",
+      "new": "+(q1-q2)/kap",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "extensions.two_epoch_candidate_rank"
+      ],
+      "source_sha256": "bc42528443c8e16e9e63fc138ca6f0f479abc4964707253b2723c70f32e8f5c0"
+    },
+    {
+      "name": "single_time_leg_factor",
+      "source": "scalar_dynamical_extensions.py",
+      "old": "MM-PPd-PP*(2*g-eta)",
+      "new": "MM-PPd-PP*(g-eta)",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "extensions.covariance_derivative_split"
+      ],
+      "source_sha256": "2ababe5c6c7635b4427cab2244efdfd76ce2d32fcf274e8fabe09b0cd8826368"
+    },
+    {
+      "name": "background_kinetic_term",
+      "source": "scalar_dynamical_extensions.py",
+      "old": "omega=(1/q-3)/2",
+      "new": "omega=(1/q+3)/2",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "background.Jordan_background_acceleration",
+        "background.Jordan_potential_value"
+      ],
+      "source_sha256": "8adc8feefa0be501678fe558772fdd32dca8ebcc3ae8419f25b17ec40d282013"
+    },
+    {
+      "name": "potential_decoder_normalization",
+      "source": "scalar_dynamical_extensions.py",
+      "old": "'target':vp*CC/2",
+      "new": "'target':vp*CC",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "background.potential_decoder_exact_event"
+      ],
+      "source_sha256": "5189a3f1d53a4852a5d20d50ac4023ed26999362356b625ff118ea4e64520a24"
+    },
+    {
+      "name": "potential_shape_basis",
+      "source": "scalar_dynamical_extensions.py",
+      "old": "U1=(1+st)*uu*uu/(2*FF**2)",
+      "new": "U1=(1+st)*uu*uu/(FF**2)",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "background.potential_decoder_exact_event"
+      ],
+      "source_sha256": "03b26a34e0ee8fb898ec747a0312a8cffee2c1d2b1e8f54ef487e3de4e4e9903"
+    },
+    {
+      "name": "domain_zero_q",
+      "source": "scalar_dynamical_domains.py",
+      "old": "if q <= 0:",
+      "new": "if q < 0:",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "domains.zero_q"
+      ],
+      "source_sha256": "692199605e64a80063974b0c116c0a22812c57f40666c6bcc6e821a23eb50277"
+    },
+    {
+      "name": "error_norm_denominator",
+      "source": "scalar_dynamical_domains.py",
+      "old": "/(1-eta)",
+      "new": "/(1+eta)",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "domains.sharp_matrix_inverse_error"
+      ],
+      "source_sha256": "46442ed4d790da27fff4c1f2c7fd504633bae8765d9f2c3c2e2ee06f33957873"
+    },
+    {
+      "name": "error_ratio_denominator",
+      "source": "scalar_dynamical_domains.py",
+      "old": "/(abs(zhat[2])-eps)",
+      "new": "/(abs(zhat[2])+eps)",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "domains.sharp_ratio_error"
+      ],
+      "source_sha256": "3e460658f356b8841e270e8f08b005ec0681e6d734b64bfa8d775be5594f0956"
+    },
+    {
+      "name": "overbroad_certificate_label",
+      "source": "scalar_dynamical_domains.py",
+      "old": "reason='positive coefficients certified' if ok",
+      "new": "reason='positive chart certified' if ok",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "domains.coefficient_label_not_observable_chart"
+      ],
+      "source_sha256": "ab8008329f0ff6ee33f49e3a2fa8d440771443ada3343888a0dcb1113f0ea362"
+    },
+    {
+      "name": "covariance_row_time_leg",
+      "source": "scalar_dynamical_covariance.py",
+      "old": "return [SS/2,-SS/2-SVp+(h-1)*SV",
+      "new": "return [SS/2,-SS/2+SVp+(h-1)*SV",
+      "status": "exception",
+      "exit_code": 1,
+      "failed_checks": [],
+      "source_sha256": "bb9af09f4c29aa37f7760e8161f47c1266a96284e7bbe968666ffb173a671dc0"
+    },
+    {
+      "name": "covariance_square_gate",
+      "source": "scalar_dynamical_covariance.py",
+      "old": "if z3!=y*y or z5!=(z4+x*y/2)*y:",
+      "new": "if z5!=(z4+x*y/2)*y:",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "equal_time_covariance.square_monomial_inconsistent_lift_not_physics"
+      ],
+      "source_sha256": "9466e0e71030645ab091761762601cc2ca08cead39aeab79ead500284d092930"
+    },
+    {
+      "name": "covariance_product_gate",
+      "source": "scalar_dynamical_covariance.py",
+      "old": "if z3!=y*y or z5!=(z4+x*y/2)*y:",
+      "new": "if z3!=y*y:",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "equal_time_covariance.product_monomial_inconsistent_lift_not_physics"
+      ],
+      "source_sha256": "312a678d4819beaf8459c78746bf30396c67b42d503277804f14cc636edb7838"
+    },
+    {
+      "name": "covariance_PSD_gate",
+      "source": "scalar_dynamical_covariance.py",
+      "old": "if SS<0 or VV<0 or SS*VV-SV**2<0:",
+      "new": "if False:",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "equal_time_covariance.nonpositive_covariance_refused"
+      ],
+      "source_sha256": "d277b03e356c9ab27e4a9ff102d1f2d9e44f67d585fd209b7c0abf19221dd821"
+    },
+    {
+      "name": "covariance_density_recovery",
+      "source": "scalar_dynamical_covariance.py",
+      "old": "R=(z4+x*y/2)/J",
+      "new": "R=(z4-x*y/2)/J",
+      "status": "failed_checks",
+      "exit_code": 1,
+      "failed_checks": [
+        "equal_time_covariance.five_covariance_inverse"
+      ],
+      "source_sha256": "590277c51aeb6b18f80ce02af8cb120eb5c7a75d039bca3a11bd0d477063c08b"
+    }
+  ],
+  "counts": {
+    "failed_checks": 21,
+    "exception": 3,
+    "survived": 0,
+    "selector_setup_failure": 0
+  }
+}

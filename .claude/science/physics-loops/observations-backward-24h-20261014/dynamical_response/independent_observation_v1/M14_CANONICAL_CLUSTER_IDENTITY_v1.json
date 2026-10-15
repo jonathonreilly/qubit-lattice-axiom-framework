@@ -1,0 +1,1594 @@
+{
+  "affected_note_sha256": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+  "allowed_write_root": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1",
+  "artifact_count": 126,
+  "artifacts": [
+    {
+      "bytes": 4224,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/ACCELERATED_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "c5621ddfa2ddad26a90186348dc8fbe71741c71f1779f960266f7d7f5e21111b"
+    },
+    {
+      "bytes": 4517,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/DOPPLER_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "f4eeece6fe07eb8e8e92887505b1bb5f6570f5bc6a1d4d7d4877da82110c68bb"
+    },
+    {
+      "bytes": 6828,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/ENERGY_PR_BODY_v2.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "d59d87a9f344daf6f9c5fccce0cfce3c7f28a23344c7d32a968e885aa6e79e29"
+    },
+    {
+      "bytes": 6991,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/HISTORY_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "5d54d7eb4bd22dfd73e17ea080703a606100f25786eadd9eee0b36463778de6f"
+    },
+    {
+      "bytes": 4811,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M10_PR_BODY.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "098b39cf0fa08fbfc88ace6f8278518d165e06ce277ba54ba2914ce89720d673"
+    },
+    {
+      "bytes": 3855,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M11_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "704cbf5be375af3066815e3a70646c072066db4ebb1980e2c00b8757cff0524a"
+    },
+    {
+      "bytes": 6103,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M12_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "1d8ff032a537db2f59c185a986358e70e6ee821b9e6a3a4c6e7c14abd38b93b7"
+    },
+    {
+      "bytes": 4457,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M13_PR_BODY_v1.md",
+      "read_scope": "Complete local context record read; not a live GitHub refresh",
+      "sha256": "9ea3c9ef9f2e3830d45952e5a46b6c95ff94954d28ab802c18d2f860e56ab985"
+    },
+    {
+      "bytes": 1715,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M7_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "b2e7318aaf48ae80fb2e1ae7e21dfb5fd5eb2c22d956cf0dbdfc615929c732e0"
+    },
+    {
+      "bytes": 2955,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M8_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "12a4546c1886a1b830c5373039b7ae0e4068b4070f1a262bb0401445a1068913"
+    },
+    {
+      "bytes": 4774,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M9_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "ea423c63daa0c8dcf7d36e7dbdd58969e0cef909c988a73a83af0838b7e2ebc1"
+    },
+    {
+      "bytes": 5260,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PHASE_PR_BODY_v1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "be8eedd682121c294c0622f7fdfe6a4170a6dcdcf553ecf23e62e9f446939ee5"
+    },
+    {
+      "bytes": 15011,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PRS.json",
+      "read_scope": "Complete local context record read; not a live GitHub refresh",
+      "sha256": "6558b75464ebc6d9ba7a6b0d11bd0b5e9959e763c10c127b77474be928e07777"
+    },
+    {
+      "bytes": 4010,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PR_BODY_M1.md",
+      "read_scope": "Prior complete PR-body read reused after byte identity match",
+      "sha256": "873f7374c09a26ab74b3d8da45a996187cd10392b746632b067bab2f6d3857f6"
+    },
+    {
+      "bytes": 1333,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/CANONICAL_SOURCE_FREEZE_v1.json",
+      "read_scope": "Complete original nine-path source freeze",
+      "sha256": "b5fc8549e56e569317097780255c60f0d9c7c44776b0481bd6c52bdba24c443d"
+    },
+    {
+      "bytes": 1424,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656"
+    },
+    {
+      "bytes": 6192,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7"
+    },
+    {
+      "bytes": 16913,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/REPO_CONTEXT_v1.json",
+      "read_scope": "Complete local context record read; not a live GitHub refresh",
+      "sha256": "49c425eb26ec5fd6db6e07295a4921908c340f6c22bce19de5b62f9cebad3ee0"
+    },
+    {
+      "bytes": 1270,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/AUTHOR_SOURCE_SEEN_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "d164c4deba91204801ead011d720e4a2038ac86c33ba48c4981b70f2d9d69165"
+    },
+    {
+      "bytes": 723,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_AUTHOR_SOURCE_SEEN_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "275da3a9635a652096a9c15046856431d5d58b2bc7618d57eb91db0ecefe2064"
+    },
+    {
+      "bytes": 2410,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_CHECK_v1.py",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "0a60951f8dc13294eb5eb72babbdf680e752c9c2adb563cba7718350f9b305b6"
+    },
+    {
+      "bytes": 2161,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_RESULTS_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "b22fe657b67fdf752c346493b441bf25d2fba2d899bc21d0c6b57ac1507175fa"
+    },
+    {
+      "bytes": 4282,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply; Complete reviewer conclusion/read scope or immutable source observation reused",
+      "sha256": "a9b68d3ee6bd86d86fa3278f814469a7f5bfbf56404c43e9d6425281b0e7ab8e"
+    },
+    {
+      "bytes": 7690,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_CONTROL_RESULTS_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "415d2d48a831c324e03cfd49018c2911b26b7c633674b78d798eade5016ee882"
+    },
+    {
+      "bytes": 4251,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_CONTROL_v1.py",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "20beccb9b08ba43302bdf56f7a197fd453e0e29fc924036f98f96caa30639236"
+    },
+    {
+      "bytes": 7633,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_DERIVATION_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply; Complete reviewer conclusion/read scope or immutable source observation reused",
+      "sha256": "f2150ce1e33898c3790b73ce4ccdf8a07ce79029745750289c2065d38b19157b"
+    },
+    {
+      "bytes": 2856,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_FREEZE_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply; Complete reviewer conclusion/read scope or immutable source observation reused",
+      "sha256": "fc15a3b9481705981dedb11d0f7f7861bab81c4b6217ed86ece39896f7d132fa"
+    },
+    {
+      "bytes": 6752,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_IDENTITY_v1.json",
+      "read_scope": "Previously completed independent source/covariance evidence receipt",
+      "sha256": "b35b5096bcc47c25b6c7741d8605b8c5237b2c3d4f5213beefccae457058a6a0"
+    },
+    {
+      "bytes": 938,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_PRECHECK_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "f97ab61b4543e7fb42a44a6ecd454e4d4557787406dc6b8a592e78c7ac61cd35"
+    },
+    {
+      "bytes": 13944,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/IDENTITY_RECEIPT_v1.json",
+      "read_scope": "Previously completed independent source/covariance evidence receipt",
+      "sha256": "9a0ee690f25e90ff2fb89ae5d73a1f4bdc2c065770bb7fdd24003381099d029c"
+    },
+    {
+      "bytes": 7139,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/INDEPENDENT_ADMISSION_FREEZE_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply; Complete reviewer conclusion/read scope or immutable source observation reused",
+      "sha256": "4bba14568e0fba4d3171e851b0eb541a7c1baef4ff68c086b4104697927645de"
+    },
+    {
+      "bytes": 1216,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "read_scope": "Entire source delta read; not an execution result",
+      "sha256": "13e6a4aa4726c70ca7855f56b84d0623239eb5f43b09a980b96fa5bd5e8289cd"
+    },
+    {
+      "bytes": 1312,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_covariance.py.diff",
+      "read_scope": "Entire source delta read; not an execution result",
+      "sha256": "d98dac09ee113dcd5d5d1f8593d54a0b409a22c8b75f5695b09d0a1bd9facc2f"
+    },
+    {
+      "bytes": 1818,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_domains.py.diff",
+      "read_scope": "Entire source delta read; not an execution result",
+      "sha256": "7170de2b707f7b90bcc2dbcf3db716dcfaa3e2ae4e414ee52d6951d9f16c17ab"
+    },
+    {
+      "bytes": 3118,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_extensions.py.diff",
+      "read_scope": "Entire source delta read; not an execution result",
+      "sha256": "d63d8b7c673ac3dba75ec1493f6452a90d60027c3ca8ac9272bb373d3605aafe"
+    },
+    {
+      "bytes": 661,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_momentum_inverse_check.py.diff",
+      "read_scope": "Entire source delta read; not an execution result",
+      "sha256": "063c0ee8eecfe6507aa60c7c863187b10f4df6f602d25ae2f2693f1e95c8345f"
+    },
+    {
+      "bytes": 24967,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Exact changed source snapshot; complete affected diff read",
+      "sha256": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30"
+    },
+    {
+      "bytes": 4709,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_covariance.py",
+      "read_scope": "Exact changed source snapshot; complete affected diff read",
+      "sha256": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20"
+    },
+    {
+      "bytes": 7656,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_domains.py",
+      "read_scope": "Exact changed source snapshot; complete affected diff read",
+      "sha256": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1"
+    },
+    {
+      "bytes": 5916,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_extensions.py",
+      "read_scope": "Exact changed source snapshot; complete affected diff read",
+      "sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a"
+    },
+    {
+      "bytes": 6258,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_momentum_inverse_check.py",
+      "read_scope": "Exact changed source snapshot; complete affected diff read",
+      "sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0"
+    },
+    {
+      "bytes": 13609,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_BIND_REVIEW_v1.py",
+      "read_scope": "New reviewer-owned verdict, full scoped report or reproducible identity binder",
+      "sha256": "ee1b120cb9856730d45f6f84cf505a309de0f1b3032d72672670a07dbbaece57"
+    },
+    {
+      "bytes": 6726,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_OBSERVATION_v1.json",
+      "read_scope": "Complete reviewer conclusion/read scope or immutable source observation reused",
+      "sha256": "1513250f9177b6e5e615641c4c657d6a10928d5ae9ad030993ae5c69fd38bc14"
+    },
+    {
+      "bytes": 18383,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SCOPE_REVIEW_v1.md",
+      "read_scope": "New reviewer-owned verdict, full scoped report or reproducible identity binder",
+      "sha256": "657c027af93d1ec12abfe59ddbd7025ae7d0e4175f009c23f70c942970ad18bb"
+    },
+    {
+      "bytes": 1424,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656"
+    },
+    {
+      "bytes": 6192,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7"
+    },
+    {
+      "bytes": 1333,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/CANONICAL_SOURCE_FREEZE_v1.json",
+      "read_scope": "Immutable original source-freeze snapshot",
+      "sha256": "b5fc8549e56e569317097780255c60f0d9c7c44776b0481bd6c52bdba24c443d"
+    },
+    {
+      "bytes": 24914,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f"
+    },
+    {
+      "bytes": 87989,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619"
+    },
+    {
+      "bytes": 5947,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68"
+    },
+    {
+      "bytes": 4378,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_covariance.py",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "060d282e64eb8ead9ebd55614cdda8bc4dd2db33bb51ee2ef56fcca9083cf9f6"
+    },
+    {
+      "bytes": 6344,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_domains.py",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf"
+    },
+    {
+      "bytes": 5129,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_extensions.py",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "935f99266dc7b93ea90589c60a5c35e71accec69bac4592dd11a333d19798f14"
+    },
+    {
+      "bytes": 8114,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_forward.py",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005"
+    },
+    {
+      "bytes": 2054,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_geometry.py",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834"
+    },
+    {
+      "bytes": 6219,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_momentum_inverse_check.py",
+      "read_scope": "Initial exact source/output snapshot; read scopes distinguished in report",
+      "sha256": "cea1f8f345aa64adf0c2a903b25133418e0389c06b48691e50b553a5d7e341b4"
+    },
+    {
+      "bytes": 2538,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CLUSTER_CAP_VERDICT_v1.md",
+      "read_scope": "New reviewer-owned verdict, full scoped report or reproducible identity binder",
+      "sha256": "834446a8b79f574386abe68826bd2b44f054b80718b661b2148a2e2368d1331a"
+    },
+    {
+      "bytes": 11558,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/AI_EXECUTION_AGENTS.md",
+      "read_scope": "Complete procedure read from pinned Git ref; no workflow/audit invoked",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "bytes": 9827,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/CURRENT_MAIN_CAMPAIGN.md",
+      "read_scope": "Complete procedure read from pinned Git ref; no workflow/audit invoked",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "bytes": 15435,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/CURRENT_MAIN_SCIENCE_WORKFLOW.md",
+      "read_scope": "Complete procedure read from pinned Git ref; no workflow/audit invoked",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 23722,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/prior_notes/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Exact prior source snapshot",
+      "sha256": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25"
+    },
+    {
+      "bytes": 18501,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/prior_notes/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Exact prior source snapshot",
+      "sha256": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50"
+    },
+    {
+      "bytes": 8764,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/prior_notes/EXPONENTIAL_SCALAR_FINITE_MODE_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Exact prior source snapshot",
+      "sha256": "d816996a38b6ca65feef503578372058d6d67561fd4c36318f476ca6ba22ee64"
+    },
+    {
+      "bytes": 13716,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/prior_notes/EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Exact prior source snapshot",
+      "sha256": "5ac1796b19252dc3f04579bca00959e4c4f13a091344be989bbd50e515a629ba"
+    },
+    {
+      "bytes": 25119,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/prior_notes/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Exact prior source snapshot",
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122"
+    },
+    {
+      "bytes": 20487,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/prior_notes/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Exact prior source snapshot",
+      "sha256": "98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719"
+    },
+    {
+      "bytes": 4224,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/ACCELERATED_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "c5621ddfa2ddad26a90186348dc8fbe71741c71f1779f960266f7d7f5e21111b"
+    },
+    {
+      "bytes": 4517,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/DOPPLER_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "f4eeece6fe07eb8e8e92887505b1bb5f6570f5bc6a1d4d7d4877da82110c68bb"
+    },
+    {
+      "bytes": 6828,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/ENERGY_PR_BODY_v2.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "d59d87a9f344daf6f9c5fccce0cfce3c7f28a23344c7d32a968e885aa6e79e29"
+    },
+    {
+      "bytes": 6991,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/HISTORY_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "5d54d7eb4bd22dfd73e17ea080703a606100f25786eadd9eee0b36463778de6f"
+    },
+    {
+      "bytes": 4811,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/M10_PR_BODY.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "098b39cf0fa08fbfc88ace6f8278518d165e06ce277ba54ba2914ce89720d673"
+    },
+    {
+      "bytes": 3855,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/M11_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "704cbf5be375af3066815e3a70646c072066db4ebb1980e2c00b8757cff0524a"
+    },
+    {
+      "bytes": 6103,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/M12_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "1d8ff032a537db2f59c185a986358e70e6ee821b9e6a3a4c6e7c14abd38b93b7"
+    },
+    {
+      "bytes": 4457,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/M13_PR_BODY_v1.md",
+      "read_scope": "Exact current local PR/context snapshot",
+      "sha256": "9ea3c9ef9f2e3830d45952e5a46b6c95ff94954d28ab802c18d2f860e56ab985"
+    },
+    {
+      "bytes": 1715,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/M7_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "b2e7318aaf48ae80fb2e1ae7e21dfb5fd5eb2c22d956cf0dbdfc615929c732e0"
+    },
+    {
+      "bytes": 2955,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/M8_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "12a4546c1886a1b830c5373039b7ae0e4068b4070f1a262bb0401445a1068913"
+    },
+    {
+      "bytes": 4774,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/M9_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "ea423c63daa0c8dcf7d36e7dbdd58969e0cef909c988a73a83af0838b7e2ebc1"
+    },
+    {
+      "bytes": 5260,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/PHASE_PR_BODY_v1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "be8eedd682121c294c0622f7fdfe6a4170a6dcdcf553ecf23e62e9f446939ee5"
+    },
+    {
+      "bytes": 15011,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/PRS.json",
+      "read_scope": "Exact current local PR/context snapshot",
+      "sha256": "6558b75464ebc6d9ba7a6b0d11bd0b5e9959e763c10c127b77474be928e07777"
+    },
+    {
+      "bytes": 4010,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/PR_BODY_M1.md",
+      "read_scope": "Exact reused PR-body snapshot",
+      "sha256": "873f7374c09a26ab74b3d8da45a996187cd10392b746632b067bab2f6d3857f6"
+    },
+    {
+      "bytes": 16913,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_READ_CONTEXT_v1/runtime/REPO_CONTEXT_v1.json",
+      "read_scope": "Exact current local PR/context snapshot",
+      "sha256": "49c425eb26ec5fd6db6e07295a4921908c340f6c22bce19de5b62f9cebad3ee0"
+    },
+    {
+      "bytes": 1526,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/PAGE_RENDER_IDENTITIES_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "d7badd7b9c99bb28f34c9fec36b552cad26b8e81f9cd831a76c3ca5fdf916603"
+    },
+    {
+      "bytes": 12547,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/READ_SCOPE_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply; Complete reviewer conclusion/read scope or immutable source observation reused",
+      "sha256": "f8d4f04a756d52a11ddfa4b706bfd321c1c50fb9d32dbacc71598c7e451c3b9a"
+    },
+    {
+      "bytes": 10250,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/REPORT_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply; Complete reviewer conclusion/read scope or immutable source observation reused",
+      "sha256": "e257d5ddb020ad5b39a93d029d0e6cff1adf48c88077f7004747cd21bcf202d6"
+    },
+    {
+      "bytes": 1280,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/SOURCE_ACQUISITION_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "2968809a124c58686c93b0d42935c3b3e26bac7c5c09ed7d2d193a0e3c499183"
+    },
+    {
+      "bytes": 662,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/STATISTICAL_SOURCE_SEEN_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "e11d71f1231753abb3a02df8c5c2dc2f9ef419450173a124fadad076c36f7b5c"
+    },
+    {
+      "bytes": 1665,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/TEXT_EXTRACTION_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "e7929ce8c9e48c80840279410e8bc8b9496fec9feb2b06d932c15585eae33b96"
+    },
+    {
+      "bytes": 3742,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/COVARIANCE_LIFT_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "3af34348187408767f12cd604f969f3b22475a4aa493622b8c66843c2ce28e18"
+    },
+    {
+      "bytes": 5877,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/EXTENSION_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "1e1dadc5a38f5b6ac0a2e2fd778d360d1246f49c668cd054c88ca53705a3dc57"
+    },
+    {
+      "bytes": 2417,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/STATISTICAL_INPUT_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "79604dea5cd68201d2216a7f085f64c496daec0821bace3da6fe2d1c85312c86"
+    },
+    {
+      "bytes": 5859,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/WORKING_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "637fdbfbead8d4566bf0e99e046a26cae28123b73f88f60d4e768ee5584cdff1"
+    },
+    {
+      "bytes": 130304,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/assisted_quintessence_1407_2156v1_p11.png",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "349248c180f9b99d0f02f9e4ade9cba87b95ca892960bedfc612fa2e679c7b3e"
+    },
+    {
+      "bytes": 125325,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/conformal_observables_1709_07087v1_p16.png",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "bc79aa318f00cce77f4d0b55480f294a3d207a6ab125ccb153d80d04ced0a084"
+    },
+    {
+      "bytes": 141991,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/conformal_observables_1709_07087v1_p17.png",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "f1a585c47117fe2a00f674bcf85707e092ee04d199897b2eabbca76a9d58bea4"
+    },
+    {
+      "bytes": 255007,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/conformal_observables_1709_07087v1_p20.png",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "b0bc9850d42c58ad4381c096e66ca4030a97d5129fd34dd8396ed90b7daf07ee"
+    },
+    {
+      "bytes": 584330,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/assisted_quintessence_1407_2156v1.pdf",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "095667cc515d82aeda63adc98875c30928618e9897c12dc6235148a0c6beaead"
+    },
+    {
+      "bytes": 49521,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/assisted_quintessence_1407_2156v1.txt",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "52a84b2ec08999860935e58182a124b3daba20623575f8e9b5bfa27d899648d8"
+    },
+    {
+      "bytes": 402810,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/conformal_observables_1709_07087v1.pdf",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "1293df0753bf48f8b06a453aaf684148e51743a5fd27b5059bfb7e1008b1836a"
+    },
+    {
+      "bytes": 134990,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/conformal_observables_1709_07087v1.txt",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "1668ef1ca8201dadab83007d97f4e3d9a44e54f295fdcd7c9ebae7adda0a0891"
+    },
+    {
+      "bytes": 25653,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/IDENTITY_RECEIPT_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "0c61927ee31c4e416384713619826c9300bcd2f846847cd4901d939e18419234"
+    },
+    {
+      "bytes": 79539,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/M13_CANONICAL_CLUSTER_IDENTITY_v1.json",
+      "read_scope": "Previous full-read identity evidence; old OPEN verdict not adopted",
+      "sha256": "dd83000a407478b5ed1e358b65b0eaf0a6193b483e51b4998179c8e46e82dd07"
+    },
+    {
+      "bytes": 7034,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/READ_SCOPE_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "fccd7f0f272edbfa0912d4bff9157aacab301e5d8789370ddddb09818c2d2319"
+    },
+    {
+      "bytes": 13927,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/REPORT_v1.md",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "6f5676d8681ad9281f0083c213c66477ff92251d9dfd0cb0840fcc02571b2bf8"
+    },
+    {
+      "bytes": 9066,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/SOURCE_ADMISSION_FREEZE_v1.json",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "be4040e6ee05b7c3b1cd8d2c8c615becff63651563e993d9c83417a37c5e9ab3"
+    },
+    {
+      "bytes": 1645611,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/act_boss_eg.pdf",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "cd068e0555f7f1dc3a65ecae728ae26400a24cfd58965fd7ca9301b105fc9664"
+    },
+    {
+      "bytes": 146449,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/act_boss_eg_text.txt",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "5788d2c60931add43d9d60a2b6c9ab17ad6c70dcfe9653f743581f25f69e5f73"
+    },
+    {
+      "bytes": 216957,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/observables.pdf",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "86757eab1e9d1d89177c231b544510b746bd83c0fdc78331f5ffda2b37c867fb"
+    },
+    {
+      "bytes": 40169,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/observables_text.txt",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "f7e683eb08008f8d547451cc1c77a0064517ed5929f946a49a84572cd12d0416"
+    },
+    {
+      "bytes": 1852417,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/precision_estimator.pdf",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "fc5ecd1a8858ad7e9c2de89f0f5f04603c7e8704ddd3321e17c16aba45523a02"
+    },
+    {
+      "bytes": 174532,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/precision_estimator_text.txt",
+      "read_scope": "Reused exact independent evidence or local primary source; original read limits apply",
+      "sha256": "b9945de91254117cde2b1462f8c3e8e0f1234d9ea312c4a5b473dd278c0a99d9"
+    },
+    {
+      "bytes": 1265,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/AGENTS.md",
+      "read_scope": "Complete root pointer read",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "bytes": 23722,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Complete actual prior note read for content comparison; not independently audited here",
+      "sha256": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25"
+    },
+    {
+      "bytes": 18501,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Complete actual prior note read for content comparison; not independently audited here",
+      "sha256": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50"
+    },
+    {
+      "bytes": 8764,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FINITE_MODE_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Complete actual prior note read for content comparison; not independently audited here",
+      "sha256": "d816996a38b6ca65feef503578372058d6d67561fd4c36318f476ca6ba22ee64"
+    },
+    {
+      "bytes": 13716,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Complete actual prior note read for content comparison; not independently audited here",
+      "sha256": "5ac1796b19252dc3f04579bca00959e4c4f13a091344be989bbd50e515a629ba"
+    },
+    {
+      "bytes": 25119,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Complete actual prior note read for content comparison; not independently audited here",
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122"
+    },
+    {
+      "bytes": 24967,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30"
+    },
+    {
+      "bytes": 20487,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Complete actual prior note read for content comparison; not independently audited here",
+      "sha256": "98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719"
+    },
+    {
+      "bytes": 87989,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619"
+    },
+    {
+      "bytes": 5947,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68"
+    },
+    {
+      "bytes": 4709,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_covariance.py",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20"
+    },
+    {
+      "bytes": 7656,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_domains.py",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1"
+    },
+    {
+      "bytes": 5916,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_extensions.py",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a"
+    },
+    {
+      "bytes": 8114,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_forward.py",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005"
+    },
+    {
+      "bytes": 2054,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_geometry.py",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834"
+    },
+    {
+      "bytes": 6258,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_momentum_inverse_check.py",
+      "read_scope": "Current byte identity only unless complete note/covariance helper or affected diff is specified in report",
+      "sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0"
+    }
+  ],
+  "author_source_edits": 0,
+  "completed_utc": "2026-10-15T15:15:25.911374+00:00",
+  "formal_audit_or_aggregate_gates": 0,
+  "git_mutations": 0,
+  "git_refs_read_only": {
+    "HEAD": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713"
+  },
+  "identity_checks": [
+    {
+      "actual": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+      "expected": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+      "matches": true,
+      "name": "read-only ref",
+      "ref": "HEAD"
+    },
+    {
+      "actual": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "expected": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "matches": true,
+      "name": "read-only ref",
+      "ref": "origin/main"
+    },
+    {
+      "actual": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+      "expected": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+      "matches": true,
+      "name": "read-only ref",
+      "ref": "origin/ai/execution"
+    },
+    {
+      "actual": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "expected": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "matches": true,
+      "name": "CAMPAIGN brief identity"
+    },
+    {
+      "actual": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "expected": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "matches": true,
+      "name": "prior source matches pinned Git",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "ref": "e2873beca6af9954be49c4a9bbe8d98f05c9e69b"
+    },
+    {
+      "actual": "98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719",
+      "expected": "98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719",
+      "matches": true,
+      "name": "prior source matches pinned Git",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "ref": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137"
+    },
+    {
+      "actual": "d816996a38b6ca65feef503578372058d6d67561fd4c36318f476ca6ba22ee64",
+      "expected": "d816996a38b6ca65feef503578372058d6d67561fd4c36318f476ca6ba22ee64",
+      "matches": true,
+      "name": "prior source matches pinned Git",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FINITE_MODE_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "ref": "bbada1fe09b2d10d610560864d86b68c24a59713"
+    },
+    {
+      "actual": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50",
+      "expected": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50",
+      "matches": true,
+      "name": "prior source matches pinned Git",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "ref": "bbada1fe09b2d10d610560864d86b68c24a59713"
+    },
+    {
+      "actual": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "expected": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "matches": true,
+      "name": "prior source matches pinned Git",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "ref": "bbada1fe09b2d10d610560864d86b68c24a59713"
+    },
+    {
+      "actual": "5ac1796b19252dc3f04579bca00959e4c4f13a091344be989bbd50e515a629ba",
+      "expected": "5ac1796b19252dc3f04579bca00959e4c4f13a091344be989bbd50e515a629ba",
+      "matches": true,
+      "name": "prior source matches pinned Git",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "ref": "bbada1fe09b2d10d610560864d86b68c24a59713"
+    },
+    {
+      "actual": "c5621ddfa2ddad26a90186348dc8fbe71741c71f1779f960266f7d7f5e21111b",
+      "expected": "c5621ddfa2ddad26a90186348dc8fbe71741c71f1779f960266f7d7f5e21111b",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/ACCELERATED_PR_BODY_v1.md"
+    },
+    {
+      "actual": "f4eeece6fe07eb8e8e92887505b1bb5f6570f5bc6a1d4d7d4877da82110c68bb",
+      "expected": "f4eeece6fe07eb8e8e92887505b1bb5f6570f5bc6a1d4d7d4877da82110c68bb",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/DOPPLER_PR_BODY_v1.md"
+    },
+    {
+      "actual": "d59d87a9f344daf6f9c5fccce0cfce3c7f28a23344c7d32a968e885aa6e79e29",
+      "expected": "d59d87a9f344daf6f9c5fccce0cfce3c7f28a23344c7d32a968e885aa6e79e29",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/ENERGY_PR_BODY_v2.md"
+    },
+    {
+      "actual": "5d54d7eb4bd22dfd73e17ea080703a606100f25786eadd9eee0b36463778de6f",
+      "expected": "5d54d7eb4bd22dfd73e17ea080703a606100f25786eadd9eee0b36463778de6f",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/HISTORY_PR_BODY_v1.md"
+    },
+    {
+      "actual": "098b39cf0fa08fbfc88ace6f8278518d165e06ce277ba54ba2914ce89720d673",
+      "expected": "098b39cf0fa08fbfc88ace6f8278518d165e06ce277ba54ba2914ce89720d673",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M10_PR_BODY.md"
+    },
+    {
+      "actual": "704cbf5be375af3066815e3a70646c072066db4ebb1980e2c00b8757cff0524a",
+      "expected": "704cbf5be375af3066815e3a70646c072066db4ebb1980e2c00b8757cff0524a",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M11_PR_BODY_v1.md"
+    },
+    {
+      "actual": "1d8ff032a537db2f59c185a986358e70e6ee821b9e6a3a4c6e7c14abd38b93b7",
+      "expected": "1d8ff032a537db2f59c185a986358e70e6ee821b9e6a3a4c6e7c14abd38b93b7",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M12_PR_BODY_v1.md"
+    },
+    {
+      "actual": "b2e7318aaf48ae80fb2e1ae7e21dfb5fd5eb2c22d956cf0dbdfc615929c732e0",
+      "expected": "b2e7318aaf48ae80fb2e1ae7e21dfb5fd5eb2c22d956cf0dbdfc615929c732e0",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M7_PR_BODY_v1.md"
+    },
+    {
+      "actual": "12a4546c1886a1b830c5373039b7ae0e4068b4070f1a262bb0401445a1068913",
+      "expected": "12a4546c1886a1b830c5373039b7ae0e4068b4070f1a262bb0401445a1068913",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M8_PR_BODY_v1.md"
+    },
+    {
+      "actual": "ea423c63daa0c8dcf7d36e7dbdd58969e0cef909c988a73a83af0838b7e2ebc1",
+      "expected": "ea423c63daa0c8dcf7d36e7dbdd58969e0cef909c988a73a83af0838b7e2ebc1",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M9_PR_BODY_v1.md"
+    },
+    {
+      "actual": "be8eedd682121c294c0622f7fdfe6a4170a6dcdcf553ecf23e62e9f446939ee5",
+      "expected": "be8eedd682121c294c0622f7fdfe6a4170a6dcdcf553ecf23e62e9f446939ee5",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PHASE_PR_BODY_v1.md"
+    },
+    {
+      "actual": "873f7374c09a26ab74b3d8da45a996187cd10392b746632b067bab2f6d3857f6",
+      "expected": "873f7374c09a26ab74b3d8da45a996187cd10392b746632b067bab2f6d3857f6",
+      "matches": true,
+      "name": "prior complete PR-body read reusable",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PR_BODY_M1.md"
+    },
+    {
+      "actual": 12,
+      "expected": 12,
+      "matches": true,
+      "name": "twelve earlier campaign bodies"
+    },
+    {
+      "actual": 13,
+      "expected": 13,
+      "matches": true,
+      "name": "thirteen existing local campaign entries"
+    },
+    {
+      "actual": "d164c4deba91204801ead011d720e4a2038ac86c33ba48c4981b70f2d9d69165",
+      "expected": "d164c4deba91204801ead011d720e4a2038ac86c33ba48c4981b70f2d9d69165",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/AUTHOR_SOURCE_SEEN_v1.json"
+    },
+    {
+      "actual": "4bba14568e0fba4d3171e851b0eb541a7c1baef4ff68c086b4104697927645de",
+      "expected": "4bba14568e0fba4d3171e851b0eb541a7c1baef4ff68c086b4104697927645de",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/INDEPENDENT_ADMISSION_FREEZE_v1.json"
+    },
+    {
+      "actual": "d7badd7b9c99bb28f34c9fec36b552cad26b8e81f9cd831a76c3ca5fdf916603",
+      "expected": "d7badd7b9c99bb28f34c9fec36b552cad26b8e81f9cd831a76c3ca5fdf916603",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/PAGE_RENDER_IDENTITIES_v1.json"
+    },
+    {
+      "actual": "f8d4f04a756d52a11ddfa4b706bfd321c1c50fb9d32dbacc71598c7e451c3b9a",
+      "expected": "f8d4f04a756d52a11ddfa4b706bfd321c1c50fb9d32dbacc71598c7e451c3b9a",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/READ_SCOPE_v1.json"
+    },
+    {
+      "actual": "e257d5ddb020ad5b39a93d029d0e6cff1adf48c88077f7004747cd21bcf202d6",
+      "expected": "e257d5ddb020ad5b39a93d029d0e6cff1adf48c88077f7004747cd21bcf202d6",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/REPORT_v1.md"
+    },
+    {
+      "actual": "2968809a124c58686c93b0d42935c3b3e26bac7c5c09ed7d2d193a0e3c499183",
+      "expected": "2968809a124c58686c93b0d42935c3b3e26bac7c5c09ed7d2d193a0e3c499183",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/SOURCE_ACQUISITION_v1.json"
+    },
+    {
+      "actual": "e11d71f1231753abb3a02df8c5c2dc2f9ef419450173a124fadad076c36f7b5c",
+      "expected": "e11d71f1231753abb3a02df8c5c2dc2f9ef419450173a124fadad076c36f7b5c",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/STATISTICAL_SOURCE_SEEN_v1.json"
+    },
+    {
+      "actual": "e7929ce8c9e48c80840279410e8bc8b9496fec9feb2b06d932c15585eae33b96",
+      "expected": "e7929ce8c9e48c80840279410e8bc8b9496fec9feb2b06d932c15585eae33b96",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/TEXT_EXTRACTION_v1.json"
+    },
+    {
+      "actual": "1e1dadc5a38f5b6ac0a2e2fd778d360d1246f49c668cd054c88ca53705a3dc57",
+      "expected": "1e1dadc5a38f5b6ac0a2e2fd778d360d1246f49c668cd054c88ca53705a3dc57",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/EXTENSION_v1.md"
+    },
+    {
+      "actual": "79604dea5cd68201d2216a7f085f64c496daec0821bace3da6fe2d1c85312c86",
+      "expected": "79604dea5cd68201d2216a7f085f64c496daec0821bace3da6fe2d1c85312c86",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/STATISTICAL_INPUT_v1.md"
+    },
+    {
+      "actual": "637fdbfbead8d4566bf0e99e046a26cae28123b73f88f60d4e768ee5584cdff1",
+      "expected": "637fdbfbead8d4566bf0e99e046a26cae28123b73f88f60d4e768ee5584cdff1",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/WORKING_v1.md"
+    },
+    {
+      "actual": "349248c180f9b99d0f02f9e4ade9cba87b95ca892960bedfc612fa2e679c7b3e",
+      "expected": "349248c180f9b99d0f02f9e4ade9cba87b95ca892960bedfc612fa2e679c7b3e",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/assisted_quintessence_1407_2156v1_p11.png"
+    },
+    {
+      "actual": "bc79aa318f00cce77f4d0b55480f294a3d207a6ab125ccb153d80d04ced0a084",
+      "expected": "bc79aa318f00cce77f4d0b55480f294a3d207a6ab125ccb153d80d04ced0a084",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/conformal_observables_1709_07087v1_p16.png"
+    },
+    {
+      "actual": "f1a585c47117fe2a00f674bcf85707e092ee04d199897b2eabbca76a9d58bea4",
+      "expected": "f1a585c47117fe2a00f674bcf85707e092ee04d199897b2eabbca76a9d58bea4",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/conformal_observables_1709_07087v1_p17.png"
+    },
+    {
+      "actual": "b0bc9850d42c58ad4381c096e66ca4030a97d5129fd34dd8396ed90b7daf07ee",
+      "expected": "b0bc9850d42c58ad4381c096e66ca4030a97d5129fd34dd8396ed90b7daf07ee",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/page_renders/conformal_observables_1709_07087v1_p20.png"
+    },
+    {
+      "actual": "095667cc515d82aeda63adc98875c30928618e9897c12dc6235148a0c6beaead",
+      "expected": "095667cc515d82aeda63adc98875c30928618e9897c12dc6235148a0c6beaead",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/assisted_quintessence_1407_2156v1.pdf"
+    },
+    {
+      "actual": "52a84b2ec08999860935e58182a124b3daba20623575f8e9b5bfa27d899648d8",
+      "expected": "52a84b2ec08999860935e58182a124b3daba20623575f8e9b5bfa27d899648d8",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/assisted_quintessence_1407_2156v1.txt"
+    },
+    {
+      "actual": "1293df0753bf48f8b06a453aaf684148e51743a5fd27b5059bfb7e1008b1836a",
+      "expected": "1293df0753bf48f8b06a453aaf684148e51743a5fd27b5059bfb7e1008b1836a",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/conformal_observables_1709_07087v1.pdf"
+    },
+    {
+      "actual": "1668ef1ca8201dadab83007d97f4e3d9a44e54f295fdcd7c9ebae7adda0a0891",
+      "expected": "1668ef1ca8201dadab83007d97f4e3d9a44e54f295fdcd7c9ebae7adda0a0891",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/primary_sources/conformal_observables_1709_07087v1.txt"
+    },
+    {
+      "actual": "6f5676d8681ad9281f0083c213c66477ff92251d9dfd0cb0840fcc02571b2bf8",
+      "expected": "6f5676d8681ad9281f0083c213c66477ff92251d9dfd0cb0840fcc02571b2bf8",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/REPORT_v1.md"
+    },
+    {
+      "actual": "fccd7f0f272edbfa0912d4bff9157aacab301e5d8789370ddddb09818c2d2319",
+      "expected": "fccd7f0f272edbfa0912d4bff9157aacab301e5d8789370ddddb09818c2d2319",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/READ_SCOPE_v1.json"
+    },
+    {
+      "actual": "be4040e6ee05b7c3b1cd8d2c8c615becff63651563e993d9c83417a37c5e9ab3",
+      "expected": "be4040e6ee05b7c3b1cd8d2c8c615becff63651563e993d9c83417a37c5e9ab3",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/SOURCE_ADMISSION_FREEZE_v1.json"
+    },
+    {
+      "actual": "0c61927ee31c4e416384713619826c9300bcd2f846847cd4901d939e18419234",
+      "expected": "0c61927ee31c4e416384713619826c9300bcd2f846847cd4901d939e18419234",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/IDENTITY_RECEIPT_v1.json"
+    },
+    {
+      "actual": "cd068e0555f7f1dc3a65ecae728ae26400a24cfd58965fd7ca9301b105fc9664",
+      "expected": "cd068e0555f7f1dc3a65ecae728ae26400a24cfd58965fd7ca9301b105fc9664",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/act_boss_eg.pdf"
+    },
+    {
+      "actual": "5788d2c60931add43d9d60a2b6c9ab17ad6c70dcfe9653f743581f25f69e5f73",
+      "expected": "5788d2c60931add43d9d60a2b6c9ab17ad6c70dcfe9653f743581f25f69e5f73",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/act_boss_eg_text.txt"
+    },
+    {
+      "actual": "fc5ecd1a8858ad7e9c2de89f0f5f04603c7e8704ddd3321e17c16aba45523a02",
+      "expected": "fc5ecd1a8858ad7e9c2de89f0f5f04603c7e8704ddd3321e17c16aba45523a02",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/precision_estimator.pdf"
+    },
+    {
+      "actual": "b9945de91254117cde2b1462f8c3e8e0f1234d9ea312c4a5b473dd278c0a99d9",
+      "expected": "b9945de91254117cde2b1462f8c3e8e0f1234d9ea312c4a5b473dd278c0a99d9",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/precision_estimator_text.txt"
+    },
+    {
+      "actual": "86757eab1e9d1d89177c231b544510b746bd83c0fdc78331f5ffda2b37c867fb",
+      "expected": "86757eab1e9d1d89177c231b544510b746bd83c0fdc78331f5ffda2b37c867fb",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/observables.pdf"
+    },
+    {
+      "actual": "f7e683eb08008f8d547451cc1c77a0064517ed5929f946a49a84572cd12d0416",
+      "expected": "f7e683eb08008f8d547451cc1c77a0064517ed5929f946a49a84572cd12d0416",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/observables_text.txt"
+    },
+    {
+      "actual": "f97ab61b4543e7fb42a44a6ecd454e4d4557787406dc6b8a592e78c7ac61cd35",
+      "expected": "f97ab61b4543e7fb42a44a6ecd454e4d4557787406dc6b8a592e78c7ac61cd35",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_PRECHECK_v1.md"
+    },
+    {
+      "actual": "f2150ce1e33898c3790b73ce4ccdf8a07ce79029745750289c2065d38b19157b",
+      "expected": "f2150ce1e33898c3790b73ce4ccdf8a07ce79029745750289c2065d38b19157b",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_DERIVATION_v1.md"
+    },
+    {
+      "actual": "20beccb9b08ba43302bdf56f7a197fd453e0e29fc924036f98f96caa30639236",
+      "expected": "20beccb9b08ba43302bdf56f7a197fd453e0e29fc924036f98f96caa30639236",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_CONTROL_v1.py"
+    },
+    {
+      "actual": "415d2d48a831c324e03cfd49018c2911b26b7c633674b78d798eade5016ee882",
+      "expected": "415d2d48a831c324e03cfd49018c2911b26b7c633674b78d798eade5016ee882",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_CONTROL_RESULTS_v1.json"
+    },
+    {
+      "actual": "fc15a3b9481705981dedb11d0f7f7861bab81c4b6217ed86ece39896f7d132fa",
+      "expected": "fc15a3b9481705981dedb11d0f7f7861bab81c4b6217ed86ece39896f7d132fa",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_FREEZE_v1.json"
+    },
+    {
+      "actual": "275da3a9635a652096a9c15046856431d5d58b2bc7618d57eb91db0ecefe2064",
+      "expected": "275da3a9635a652096a9c15046856431d5d58b2bc7618d57eb91db0ecefe2064",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_AUTHOR_SOURCE_SEEN_v1.json"
+    },
+    {
+      "actual": "0a60951f8dc13294eb5eb72babbdf680e752c9c2adb563cba7718350f9b305b6",
+      "expected": "0a60951f8dc13294eb5eb72babbdf680e752c9c2adb563cba7718350f9b305b6",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_CHECK_v1.py"
+    },
+    {
+      "actual": "b22fe657b67fdf752c346493b441bf25d2fba2d899bc21d0c6b57ac1507175fa",
+      "expected": "b22fe657b67fdf752c346493b441bf25d2fba2d899bc21d0c6b57ac1507175fa",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_RESULTS_v1.json"
+    },
+    {
+      "actual": "a9b68d3ee6bd86d86fa3278f814469a7f5bfbf56404c43e9d6425281b0e7ab8e",
+      "expected": "a9b68d3ee6bd86d86fa3278f814469a7f5bfbf56404c43e9d6425281b0e7ab8e",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_v1.md"
+    },
+    {
+      "actual": "3af34348187408767f12cd604f969f3b22475a4aa493622b8c66843c2ce28e18",
+      "expected": "3af34348187408767f12cd604f969f3b22475a4aa493622b8c66843c2ce28e18",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/COVARIANCE_LIFT_v1.md"
+    },
+    {
+      "actual": "637fdbfbead8d4566bf0e99e046a26cae28123b73f88f60d4e768ee5584cdff1",
+      "expected": "637fdbfbead8d4566bf0e99e046a26cae28123b73f88f60d4e768ee5584cdff1",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/WORKING_v1.md"
+    },
+    {
+      "actual": "79604dea5cd68201d2216a7f085f64c496daec0821bace3da6fe2d1c85312c86",
+      "expected": "79604dea5cd68201d2216a7f085f64c496daec0821bace3da6fe2d1c85312c86",
+      "matches": true,
+      "name": "reused independent evidence identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/STATISTICAL_INPUT_v1.md"
+    },
+    {
+      "actual": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f",
+      "expected": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+    },
+    {
+      "actual": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+      "expected": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+    },
+    {
+      "actual": "060d282e64eb8ead9ebd55614cdda8bc4dd2db33bb51ee2ef56fcca9083cf9f6",
+      "expected": "060d282e64eb8ead9ebd55614cdda8bc4dd2db33bb51ee2ef56fcca9083cf9f6",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_covariance.py"
+    },
+    {
+      "actual": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+      "expected": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_covariance.py"
+    },
+    {
+      "actual": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf",
+      "expected": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_domains.py"
+    },
+    {
+      "actual": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+      "expected": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf",
+      "matches": false,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_domains.py"
+    },
+    {
+      "actual": "935f99266dc7b93ea90589c60a5c35e71accec69bac4592dd11a333d19798f14",
+      "expected": "935f99266dc7b93ea90589c60a5c35e71accec69bac4592dd11a333d19798f14",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_extensions.py"
+    },
+    {
+      "actual": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "expected": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_extensions.py"
+    },
+    {
+      "actual": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "expected": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_forward.py"
+    },
+    {
+      "actual": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "expected": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_forward.py"
+    },
+    {
+      "actual": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "expected": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_geometry.py"
+    },
+    {
+      "actual": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "expected": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_geometry.py"
+    },
+    {
+      "actual": "cea1f8f345aa64adf0c2a903b25133418e0389c06b48691e50b553a5d7e341b4",
+      "expected": "cea1f8f345aa64adf0c2a903b25133418e0389c06b48691e50b553a5d7e341b4",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/scripts/scalar_dynamical_momentum_inverse_check.py"
+    },
+    {
+      "actual": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "expected": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_momentum_inverse_check.py"
+    },
+    {
+      "actual": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "expected": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json"
+    },
+    {
+      "actual": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "expected": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json"
+    },
+    {
+      "actual": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "expected": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "actual": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "expected": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "actual": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619",
+      "expected": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json"
+    },
+    {
+      "actual": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619",
+      "expected": "6572a6a54285ecfebd941b2e49ec59606428eb8bf2a441da2a6cf362c9852619",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/RESULTS_v1.json"
+    },
+    {
+      "actual": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68",
+      "expected": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68",
+      "matches": true,
+      "name": "initial observed snapshot identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_CANONICAL_SEEN_v1/outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json"
+    },
+    {
+      "actual": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68",
+      "expected": "a6517c93aea237e734f62db919847726a916c409b6de8b80c7a337f1e7fbff68",
+      "matches": true,
+      "name": "closing bytes match actually read version",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json"
+    },
+    {
+      "actual": 5,
+      "expected": 4,
+      "matches": false,
+      "name": "four observed source deltas"
+    },
+    {
+      "actual": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "expected": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json"
+    },
+    {
+      "actual": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "expected": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "actual": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f",
+      "expected": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+    },
+    {
+      "actual": "060d282e64eb8ead9ebd55614cdda8bc4dd2db33bb51ee2ef56fcca9083cf9f6",
+      "expected": "060d282e64eb8ead9ebd55614cdda8bc4dd2db33bb51ee2ef56fcca9083cf9f6",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": "scripts/scalar_dynamical_covariance.py"
+    },
+    {
+      "actual": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf",
+      "expected": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": "scripts/scalar_dynamical_domains.py"
+    },
+    {
+      "actual": "935f99266dc7b93ea90589c60a5c35e71accec69bac4592dd11a333d19798f14",
+      "expected": "935f99266dc7b93ea90589c60a5c35e71accec69bac4592dd11a333d19798f14",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": "scripts/scalar_dynamical_extensions.py"
+    },
+    {
+      "actual": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "expected": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": "scripts/scalar_dynamical_forward.py"
+    },
+    {
+      "actual": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "expected": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "matches": true,
+      "name": "v1 result declared input matches original source",
+      "path": "scripts/scalar_dynamical_geometry.py"
+    },
+    {
+      "actual": "cea1f8f345aa64adf0c2a903b25133418e0389c06b48691e50b553a5d7e341b4",
+      "expected": "cea1f8f345aa64adf0c2a903b25133418e0389c06b48691e50b553a5d7e341b4",
+      "matches": true,
+      "name": "v1 result primary matches original source"
+    },
+    {
+      "actual": 81,
+      "expected": 81,
+      "matches": true,
+      "name": "v1 check count"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "matches": true,
+      "name": "v1 author failed count"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "matches": true,
+      "name": "v1 empirical tests"
+    },
+    {
+      "actual": {
+        "failed": 0,
+        "passed": 81
+      },
+      "expected": {
+        "failed": 0,
+        "passed": 81
+      },
+      "matches": true,
+      "name": "v1 result-summary counts"
+    },
+    {
+      "actual": "OPEN",
+      "expected": "OPEN",
+      "matches": true,
+      "name": "verdict first line"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "matches": true,
+      "name": "verdict requested word range"
+    }
+  ],
+  "identity_checks_failed": 2,
+  "identity_checks_matched": 101,
+  "initial_note_sha256": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f",
+  "new_source_acquisitions": 0,
+  "paired_output_read_scope": {
+    "all_named_checks": true,
+    "background_and_candidate_summaries": true,
+    "complete_short_summary": true,
+    "counts": {
+      "failed": 0,
+      "passed": 81
+    },
+    "covers_current_changed_executables": false,
+    "empirical_tests": 0,
+    "six_covariance_rows_and_reconstruction": true,
+    "trajectory_arrays": "Preserved and hashed; not individually independently verified by this reviewer"
+  },
+  "prior_campaign_context": {
+    "existing_prs_conservatively_same_family": 13,
+    "fresh_live_GitHub_status_claim": false,
+    "m13_body_and_registry_read_now": true,
+    "twelve_body_full_reads_reused_after_hash_match": true
+  },
+  "prior_science_context": [
+    "SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "EXPONENTIAL_SCALAR_FINITE_MODE_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "publication_limit": "External primary PDFs, extracted text and renders remain local; no full-paper republication",
+  "receipt_self_hash_excluded": true,
+  "required_later_work": [
+    "Affected executable execution/mutation closure and final cache binding",
+    "Final frozen source and evidence inventory confirmation",
+    "Integrated-current-main landing validation"
+  ],
+  "reused_independent_controls": {
+    "post_author_correspondence": {
+      "failed": 0,
+      "matched": 16
+    },
+    "pre_author_covariance": {
+      "failed": 0,
+      "matched": 39
+    },
+    "rerun_in_this_continuation": false
+  },
+  "reviewer": "/root/launch_check",
+  "schema": "m14-canonical-observation-covariance-cluster-review-v1",
+  "science_runs": 0,
+  "scope_result": "No material observational overclaim or covariance-proof wording error in reviewed source; later executable binding pending",
+  "source_changes_during_review": [
+    {
+      "diff": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "initial_output_covers_new_bytes": false,
+      "initial_sha256": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f",
+      "observed_sha256": "2133ec1786855f768c261f243f77c1fcc114001c4b583d1115fdec4defb6dd30",
+      "path": "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+    },
+    {
+      "diff": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_covariance.py.diff",
+      "initial_output_covers_new_bytes": false,
+      "initial_sha256": "060d282e64eb8ead9ebd55614cdda8bc4dd2db33bb51ee2ef56fcca9083cf9f6",
+      "observed_sha256": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+      "path": "scripts/scalar_dynamical_covariance.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_covariance.py"
+    },
+    {
+      "diff": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_domains.py.diff",
+      "initial_output_covers_new_bytes": false,
+      "initial_sha256": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf",
+      "observed_sha256": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+      "path": "scripts/scalar_dynamical_domains.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_domains.py"
+    },
+    {
+      "diff": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_extensions.py.diff",
+      "initial_output_covers_new_bytes": false,
+      "initial_sha256": "935f99266dc7b93ea90589c60a5c35e71accec69bac4592dd11a333d19798f14",
+      "observed_sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "path": "scripts/scalar_dynamical_extensions.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_extensions.py"
+    },
+    {
+      "diff": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/diffs/scalar_dynamical_momentum_inverse_check.py.diff",
+      "initial_output_covers_new_bytes": false,
+      "initial_sha256": "cea1f8f345aa64adf0c2a903b25133418e0389c06b48691e50b553a5d7e341b4",
+      "observed_sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "path": "scripts/scalar_dynamical_momentum_inverse_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/M14_AFFECTED_SEEN_v1/scripts/scalar_dynamical_momentum_inverse_check.py"
+    }
+  ],
+  "verdict": "OPEN",
+  "verdict_scope": "Coherent PR opening only; no scientific/audit status, empirical result, final cache or landing acceptance",
+  "verdict_word_count": 339
+}

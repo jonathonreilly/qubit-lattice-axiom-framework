@@ -512,3 +512,18 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - The no-alignment and NFC lemmas hold for the stated definite-momentum D3/B-gen content. They are not a no-go against arbitrary extra fields, symmetries or propagator tuning.
   - "KILL level for X2 as written" is supported for the tested D3 spectra. It is not proved universally for D6 or for general non-degenerate potentials.
 - **Strongest correct statement (referee).** In the degenerate-heavy D3 benchmark, exact B-gen textures necessarily have large flavour-changing couplings in the mass basis, and need about 1.3e3–7.9e3 TeV untuned; vev cancellations reach 15–43 TeV only through 1e-4–1e-5 amplitude tuning. Exact translations remove the ordinary D3 decoupling term, so TeV-scale active carriers are the natural perturbative outcome. But a universal 1.1 TeV ceiling and a universal X2 KILL are not established. The fixed result stays FCNC-PRICE, because the concrete high-scale singlet escape is named extra structure that breaks translations to BCC and forfeits X2-L2 protection.
+
+## Campaign wave 2d (pre-registered 2026-10-15T14:35Z)
+
+**CLS-1. Does class S (lattice-scale translation breaking to BCC) destroy X2's light generations?** (route 2; follows OBS-4 and its referee). Cap 0.4 GB.
+- **Why.** CKM ≠ permutation needs corner-changing Yukawas (OBS-4: the NFC lemma and the selection rule). Under exact translations these need light electroweak doublets, which fail FCNC in the D3 benchmark. The passing route, class S, is an electroweak-singlet condensate at the hw2 momenta with f ≳ 0.03/a. It breaks unit translations to BCC, and the OBS-4 referee confirmed that X2-L2's exact guarantee is then lost: hw1–hw3 hopping is symmetry-allowed.
+- **Questions.**
+  - (i) Under BCC translations, do bilinear masses still fail to gap the light corners? Check whether the label sectors {hw1, hw3} and {hw0, hw2} contain only one chirality each.
+  - (ii) How strongly do the light corners now couple to the filtered mirror interaction, as a function of the mixing set by f? Is that below the symmetric-mass-generation threshold, so the light modes stay gapless? Use mean-field, a free-fermion proxy with the mirror gap modelled by an auxiliary partner, or exact diagonalisation on a toy; state which.
+  - (iii) What observable change does the mixing cause in the light sector? Consider at least velocity and Lorentz violation (does OBS-3's zero survive?), gauge couplings, and any new light–composite couplings. Compare each with bounds.
+- **Readings.**
+  - **CLS-SAFE:** (i) holds, (ii) leaves the light modes gapless, and (iii) is within bounds, for every f in the range the up-sector Yukawas need (g·f·a ≈ 0.33, g ≤ 4π).
+  - **CLS-PRICE:** safe only for part of that range, or with a named extra tuning or structure. State its size.
+  - **CLS-KILL:** for every f in that range, the light generations are gapped, or modified beyond a bound by more than 10×.
+  - **OPEN:** otherwise.
+- **Scope to state:** the model of the mirror gap, the dimension, and the order.

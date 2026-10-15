@@ -483,3 +483,17 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Confirmed independently.** Reloading the saved log-kernels reproduces all three λ_min (−2.4485e-3, −9.5787e-4, −5.3679e-4), their ratios to E (49.0, 26.0, 22.1), the W-matching, the reflection behaviour, and the fact that the negativity is carried by the modulus.
 - **Conditional.** If the anomaly-free flat tail is accepted as Lüscher's small finite-volume term, and a chart-local measure is accepted as sufficient, the fixed rule gives CHI-RP-FAIL.
 - **What would close it:** a Kadoh–Kikukawa-type explicit Wilson-line measure term with its locality bound, or a demonstration that the flat tail falls exponentially with Lx, together with the integrability check.
+
+## Campaign wave 2c (pre-registered 2026-10-15T14:19Z)
+
+**NT-1″. Completing the chiral measure (route 1; closes NT-1′'s referee gap at G-LEG (b)).** Cap 0.5 GB.
+- **Why.** The NT-1′ referee confirmed the negative kernels and (c), but not (b). Its finite-volume term is a global right inverse of the divergence, not Lüscher's exponentially small correction. Neither the exponential decay of the anomaly-free flat tail nor integrability around the Wilson-line circle is shown.
+- **Gate.** The readings (CHI-RP-FAIL / CHI-RP-PASS-at-power / OPEN) are NT-1′'s, unchanged. G-LEG (b) is made concrete by two items, and both must pass.
+  - **(b′) Finite-volume part.** Either:
+    - replace it with an explicit Wilson-line measure term of Kadoh–Kikukawa type (arXiv:0709.3656) and demonstrate its locality bound numerically; or
+    - show that the anomaly-free x-flat tail falls exponentially with Lx: at least 3 sizes among Lx = 4, 6, 8, 10, a fitted rate > 0 at ≥ 3σ, and the L1 plateau ∝ 1/Lx as a contrast.
+  - **(b″) Integrability around the Wilson-line circle.** Transport the measure around closed loops in Wilson-line space, including at least one non-contractible loop. The accumulated phase must be trivial (a multiple of 2π) to stated precision for 11112, and the anomalous control should fail.
+- **Readings.**
+  - **CHI-RP-FAIL:** (b′) and (b″) pass, NT-1′'s (a), (c) and (d) hold, and at least one NT-1′ pool, recomputed with the completed measure, stays below −10E.
+  - **CHI-RP-PASS-at-power:** the gate passes, and the kernel is PSD within error.
+  - **OPEN:** otherwise, naming the failed item.

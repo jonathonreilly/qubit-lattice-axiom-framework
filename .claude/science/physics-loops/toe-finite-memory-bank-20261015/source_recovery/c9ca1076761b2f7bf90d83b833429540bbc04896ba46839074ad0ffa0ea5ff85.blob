@@ -1,0 +1,81 @@
+"""Static proposal/source verification; do not execute or import its primary."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+import re
+
+D=Path(__file__).resolve().parent
+N=D.parent;W=N.parent/"correlation_worktree";OUT=D/"proposal"
+PACK=".claude/science/physics-loops/toe-correlated-memory-delivery-20261015"
+NOTE="docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+PRIMARY="scripts/correlated_memory_delivery_and_readiness_2026_10_15.py"
+def sha(b):return hashlib.sha256(b).hexdigest()
+def read(name):return json.loads((OUT/PACK/name).read_text())
+def identity(b,row):assert (len(b),sha(b))==(row["bytes"],row["sha256"])
+def container(path):return (OUT/path).read_bytes() if (OUT/path).exists() else (W/path).read_bytes()
+def recover(row):
+ r=row["recovery"]
+ if r["kind"]=="blob":b=(OUT/r["path"]).read_bytes()
+ elif r["kind"]=="external_pinned":b=(W/r["path"]).read_bytes()
+ else:b=container(r["container"])[r["start_byte_inclusive"]:r["end_byte_exclusive"]]
+ identity(b,row);return b
+
+note=(OUT/NOTE).read_bytes();bodies=read("BODY_MAP.json")["bodies"]
+assert len(bodies)==7
+for row in bodies:
+ raw=note[row["start_byte_inclusive"]:row["end_byte_exclusive"]]
+ identity(raw,row);assert note.count(raw)==1
+parents=read("DEPENDENCIES.json")["dependencies"]
+assert len(parents)==2
+for row in parents:
+ b=(W/row["path"]).read_bytes();identity(b,row)
+ r=row["accepted_body_interval"];raw=b[r["start_byte_inclusive"]:r["end_byte_exclusive"]]
+ identity(raw,r);assert b.count(raw)==1
+sources=read("SOURCE_MANIFEST.json")["sources"]
+for row in sources:recover(row)
+blobs=read("ARCHIVE_INDEX.json")["objects"]
+assert len({r["sha256"] for r in blobs})==len(blobs)
+for row in blobs:identity((OUT/row["path"]).read_bytes(),row)
+manifest=read("INPUT_MANIFEST.json")
+for row in manifest["inputs"]:identity((OUT/row["path"]).read_bytes(),row)
+parsed=ast.parse((OUT/PRIMARY).read_text())
+assign={node.targets[0].id:ast.literal_eval(node.value) for node in parsed.body if isinstance(node,ast.Assign) and isinstance(node.targets[0],ast.Name) and node.targets[0].id in {"AUDIT_INPUT_PATHS","MANIFEST_SHA256","EXPECTED_BODIES","AUDIT_TIMEOUT_SEC"}}
+assert assign["MANIFEST_SHA256"]==sha((OUT/PACK/"INPUT_MANIFEST.json").read_bytes())
+assert assign["EXPECTED_BODIES"]=={r["name"]:r["sha256"] for r in bodies}
+expected={r["path"] for r in manifest["inputs"]}|{PACK+"/INPUT_MANIFEST.json",PACK+"/ACTUAL_BINDING.json"}|{r["path"] for r in parents}
+assert set(assign["AUDIT_INPUT_PATHS"])==expected
+assert assign["AUDIT_TIMEOUT_SEC"]==60
+state=read("PUBLICATION_STATE.json");binding=read("ACTUAL_BINDING.json")
+for field in ["canonical_binding","git_base","primary_execution","cache_execution","mutation_execution","graph_execution","publication_action","retained_audit"]:assert state[field] is None
+assert state["composition_source_decision"]=="4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71"
+assert binding["canonical_parent_binding_complete"] is False and binding["note_sha256"] is None and binding["receipt_paths"]==[]
+assert b"canonical_parent_binding_complete: false\n" in note.split(b"---",2)[1]
+assert b"Primary-runner role: source integrity only" in note[:4000]
+assert (OUT/PACK/"PR_TITLE.txt").read_text().strip()=="[physics-loop] correlated-memory-delivery: bounded_theorem / conditional-support"
+
+# This is lexical inspection, not a citation-graph build or acknowledgment.
+local_targets=[]
+for target in re.findall(rb"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)",note):
+ target=target.decode()
+ if "://" in target:continue
+ p=(OUT/"docs"/target).resolve()
+ if p.is_relative_to((OUT/"docs").resolve()):local_targets.append(str(p.relative_to(OUT)))
+ else:assert p.is_relative_to(OUT.resolve()) and p.is_file(),target
+assert set(local_targets)=={r["path"] for r in parents}
+
+current=json.loads((D/"SOURCE_FRESHNESS.json").read_text())
+for row in current["identities"]:identity(Path(row["original"]).read_bytes(),row)
+for p in [D/"build_proposal.py",D/"primary_template.py",D/"record_metadata.py",D/"inspect_proposal.py"]:ast.parse(p.read_text())
+run=D/"metadata_runs/build"
+receipt=json.loads((run/"EXECUTION.json").read_text())
+assert receipt["exit_code"]==0
+for key in ["stdout","stderr","child_source_at_launch"]:
+ row=receipt[key];identity(Path(row["path"]).read_bytes(),row)
+assert not (run/"stderr").read_bytes()
+assert sha((run/"executed_source.py").read_bytes())==sha((D/"build_proposal.py").read_bytes())
+
+result={"checked_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"scope":"Static source/text/AST/recovery metadata only; primary was not imported or executed","note":{"path":NOTE,"bytes":len(note),"sha256":sha(note)},"immutable_bodies":len(bodies),"direct_mathematical_parents":len(parents),"selected_source_records":len(sources),"unique_recovery_blobs":len(blobs),"literal_declared_inputs":len(expected),"lexical_local_doc_targets":sorted(set(local_targets)),"actual_binding":None,"primary_execution":None,"scientific_programs_run":0,"historical_programs_replayed":0,"root_source_decisions":"Three actual source acceptances preserved; no publication or audit inferred"}
+(D/"VERIFICATION.json").write_text(json.dumps(result,indent=2)+"\n")
+print(json.dumps(result,indent=2))

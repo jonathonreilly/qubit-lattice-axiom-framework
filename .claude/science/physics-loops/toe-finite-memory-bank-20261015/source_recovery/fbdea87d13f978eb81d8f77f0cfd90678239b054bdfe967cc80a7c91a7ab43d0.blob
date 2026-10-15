@@ -1,0 +1,36 @@
+"""Actual local metadata-process recorder; no primary/scientific execution."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+D=Path(__file__).resolve().parent
+script=(D/sys.argv[1]).resolve()
+script.relative_to(D)
+assert script.name in {"build_proposal.py","inspect_proposal.py"}
+run=D/"metadata_runs"/sys.argv[2]
+run.mkdir(parents=True,exist_ok=False)
+def ident(path):
+    b=path.read_bytes()
+    return {"path":str(path),"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()}
+source=script.read_bytes()
+(run/"executed_source.py").write_bytes(source)
+inputs=[]
+for p in [D/"wrapper.md",D/"primary_template.py",*sorted((D/"packet_text").glob("*"))]:
+    dest=run/"inputs"/p.relative_to(D)
+    dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(p.read_bytes())
+    inputs.append({"original":ident(p),"captured":ident(dest)})
+launch={"created_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"script":ident(script),"source_at_launch":ident(run/"executed_source.py"),"inputs":inputs,"scope":"Metadata source capture; no scientific primary or historical program is launched"}
+(run/"LAUNCH.json").write_text(json.dumps(launch,indent=2)+"\n")
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();tick=time.monotonic()
+result=subprocess.run([sys.executable,str(script)],cwd=D,capture_output=True)
+elapsed=time.monotonic()-tick;end=datetime.datetime.now(datetime.timezone.utc).isoformat()
+(run/"stdout").write_bytes(result.stdout);(run/"stderr").write_bytes(result.stderr)
+receipt={"argv":[sys.executable,str(script)],"cwd":str(D),"start_utc":start,"end_utc":end,"elapsed_seconds":elapsed,"exit_code":result.returncode,"child_source_at_launch":launch["source_at_launch"],"stdout":ident(run/"stdout"),"stderr":ident(run/"stderr"),"recorder":ident(Path(__file__)),"scientific_execution":False}
+(run/"EXECUTION.json").write_text(json.dumps(receipt,indent=2)+"\n")
+print(result.stdout.decode());print(result.stderr.decode(),file=sys.stderr)
+print(json.dumps({"receipt":str(run/"EXECUTION.json"),"exit_code":result.returncode,"scope":"metadata only"}))
+raise SystemExit(result.returncode)

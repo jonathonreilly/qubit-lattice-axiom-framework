@@ -1,0 +1,118 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T18:23:21.406260+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "b53db1786778a4ae8bf7745371f228c5823b15b4de2703642121256aba15a2d6",
+  "parent_sha256": {
+    "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89"
+  },
+  "source_acceptances": {
+    "finite_bank": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908"
+  },
+  "git_base": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+  "base_branch": "physics-loop/toe-correlated-memory-delivery-20261015",
+  "planned_feature_branch": "physics-loop/toe-finite-memory-bank-20261015",
+  "observed_parent_prs": {
+    "stack": {
+      "baseRefName": "physics-loop/toe-readiness-resources-20261015",
+      "headRefName": "physics-loop/toe-correlated-memory-delivery-20261015",
+      "headRefOid": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+      "isDraft": false,
+      "number": 9611,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9611"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_base_pr_head": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+  "raw_bodies": [
+    {
+      "name": "bank_author",
+      "container": "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 21005,
+      "end_byte_exclusive": 32750,
+      "bytes": 11745,
+      "sha256": "162d7504ad3951ed29add0facefc0bbdb227fcdf582e22250baad04a4f63c521"
+    },
+    {
+      "name": "bank_assessment",
+      "container": "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 32896,
+      "end_byte_exclusive": 58145,
+      "bytes": 25249,
+      "sha256": "16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+      "claim_id": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea",
+      "accepted_body_interval": {
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 28196,
+        "end_byte_exclusive": 75424,
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "accepted_review_interval": {
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 103286,
+        "end_byte_exclusive": 134811,
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/REFS.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/SOURCE_DRAFT_FREEZE.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/historical_recorder.py",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/live_recorder.py",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_failed_EXECUTION.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_failed_stdout",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_failed_stderr",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_fetch_stdout",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_fetch_stderr",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_inventory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_inventory_stdout",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_inventory_stderr",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_stdout",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_stderr",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/inventory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/inventory_stdout",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/inventory_stderr",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_EXECUTION.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_stdout",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_stderr",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_executed_source.py",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_LAUNCH.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_EXECUTION.json",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_stdout",
+    ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_stderr"
+  ],
+  "source_proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/FINAL_FREEZE.json",
+    "bytes": 81161,
+    "sha256": "da49c7c8d76ecd35ac6a02a8cfbb37a263df9f29d11bc5b7aa18369b0426274f"
+  },
+  "root_source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_root_publication_review/ROOT_REVIEW.json",
+    "bytes": 8005,
+    "sha256": "33c200eaf5fe0c0ad63bfccf2cb81e866cf05fc41e2588b1a810083074e8656d"
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T18:23:21.406382+00:00",
+    "reviewed_source_sha256": "da49c7c8d76ecd35ac6a02a8cfbb37a263df9f29d11bc5b7aa18369b0426274f"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "retained_audit": false
+}

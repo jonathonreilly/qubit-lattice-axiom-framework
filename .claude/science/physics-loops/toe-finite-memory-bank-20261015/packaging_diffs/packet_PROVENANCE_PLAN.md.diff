@@ -1,0 +1,12 @@
+--- /dev/null
++++ finite_bank_publication_draft/packet_text/PROVENANCE_PLAN.md
+@@ -0,0 +1,9 @@
++# Actual binding and metadata validation plan
++
++Before any primary run, root selects the actual Git base and reviewed stack, verifies the canonical parent203198bytes/12bd18b0 and the two exact new body identities, reads every changed wrapper/code/packet hunk, and records dated source-at-launch observations. A new ACTUAL_BINDING must contain the exact final note hash, parent map, finite-bank acceptance, selected base, root reading confirmation and declared receipt paths. EXPECTED_GIT_BASE in the primary must be bound to the same actual40-hex identity. Source-proposal null outcomes remain historical.
++
++Any wrapper/header edit shifts body offsets. Regenerate BODY_MAP, every source-manifest interval, INPUT_MANIFEST, primary literal inputs/hash and associated pins before execution. Binding receipts must be real files inside the reviewed delta or available parent, listed in the manifest/input closure; mere existence or a path string is not an execution receipt. The proposed primary rejects an unbound draft and certifies source integrity only.
++
++After binding, run one source-integrity baseline and one targeted mutation per changed schema family: manifest mismatch; body byte/interval drift; parent identity/role; omitted input; wrong acceptance; historical-null rewrite; missing/false root binding; note hash mismatch; actual base mismatch; receipt undeclared/missing; wrong dependency count. Preserve actual command/source/time/stdout/stderr/exit records for every attempt. This is a plan, not an executed mutation result.
++
++Use the canonical runner-cache envelope with declared timeout60, then focused changed-evidence, vocabulary/syntax and actual diff checks. Inspect intended graph addition and preserve every old node/edge; no policy/helper registry change is proposed. Actual combined landing validation, cumulative parent review and regular PR publication/attachment belong to root. No cached or historical source-integrity result is scientific evidence.

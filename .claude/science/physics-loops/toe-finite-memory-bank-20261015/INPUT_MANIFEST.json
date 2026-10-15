@@ -1,0 +1,596 @@
+{
+  "schema": "source_integrity_inputs_v1",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/ACTUAL_BINDING.json",
+      "bytes": 6989,
+      "sha256": "b349729f5a93c695d805f129642395f91d933395010b19e189bc24c2acd868b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/ACTUAL_HANDOFF.md",
+      "bytes": 1008,
+      "sha256": "4a04f37f263ccb1cc73676b76df4f9ffb17932f8398e818a58a22d6e44e79a83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/ARCHIVE_INDEX.json",
+      "bytes": 20367,
+      "sha256": "5f1bafbdad1e30672e8f6ada3c7dae31bdbc2b88f985ab806248377aa9390e35"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 1622,
+      "sha256": "b08c128d2fcf3a0e0cfe38da029ba5e63ddeb4908be2debc92e1bce21fb9163e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/BODY_MAP.json",
+      "bytes": 724,
+      "sha256": "d44a66a3f63b242adc5e66eb6b910d939102e5b3ce192f885bef4b93ea1e7b5a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/CANONICAL_BINDING.json",
+      "bytes": 3609,
+      "sha256": "1885c28b79d7da8bc919d0360737105e0f545ca0fd9e46508777e1fcb0f22836"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/CHANGED_CODE_MAP.json",
+      "bytes": 7493,
+      "sha256": "c0f04e07b0cbe3bf6a83a9fa014a2ac46e9ca03323d57dcce95de2b119e166b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1586,
+      "sha256": "a85289639ade038ccb10c317d2c5791f63083e224b08ceb6d40a50bd95ef15bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/COUNTEREXAMPLES.md",
+      "bytes": 1638,
+      "sha256": "70bd9b7bf4569c544af9a893dd2c074d8078a0922e5a5353e0c8655ab3c34b10"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/DEPENDENCIES.json",
+      "bytes": 1362,
+      "sha256": "8c62233c90948e29737c09b5e176deb76ca2c3cc9ed9b94fa9bdbfa33aacc718"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/HANDOFF.md",
+      "bytes": 3227,
+      "sha256": "6024d6e7e4337cadafb9753477de4d066e3b2b3f1e2715a937a6f1f8d157e7f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/PROVENANCE_PLAN.md",
+      "bytes": 1970,
+      "sha256": "e759dd544df26db9930b19e500a36a8cad9da9f84579906263297d435646e6cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/PR_BODY.md",
+      "bytes": 1762,
+      "sha256": "d38091546579dda821911ca839eb91f74fdf7e0a4a297091f2006c25f10e7443"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/PR_TITLE.txt",
+      "bytes": 73,
+      "sha256": "da30e027550f43476a9d03c828874095b7f5b393ced6c1a650a133feface2271"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/PUBLICATION_STATE.json",
+      "bytes": 486,
+      "sha256": "fda0fc08500f59d6a55eb5e5291aacf1cad5fef236fd1e84bae599748db5a4dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/RECOVERY_SCOPE.md",
+      "bytes": 1517,
+      "sha256": "729b194f4bb85721715573ce8b37c8a81df6c67b3b84f9a3deaed02b23a5aad0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/RECOVERY_SELECTION.json",
+      "bytes": 26879,
+      "sha256": "abc6dab11b5e08a069a707f0fd5d57b02e3776e68cd51c634936b755677c9ea9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/REVIEW_HISTORY.md",
+      "bytes": 3988,
+      "sha256": "5fb0d9f25229a6f7897657e2531ca520afff6a49f46e0617f1c8531778c58a91"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/SOURCE_MANIFEST.json",
+      "bytes": 30201,
+      "sha256": "738cedd675f0662f54f154a782305ea0afbb3142c45534b5f7d9e2cb061142f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/TRACE_GATE.md",
+      "bytes": 917,
+      "sha256": "eacfe6f0f22274e972b5ea1082fe75d8303c2d80f2062693568a9b5a970be59d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/REFS.json",
+      "bytes": 3493,
+      "sha256": "4efe5c41698ca84346baeb73bbf2f9f4b6761ee70f85995e85d1807602ff7c32"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+      "bytes": 8005,
+      "sha256": "33c200eaf5fe0c0ad63bfccf2cb81e866cf05fc41e2588b1a810083074e8656d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/SOURCE_DRAFT_FREEZE.json",
+      "bytes": 81161,
+      "sha256": "da49c7c8d76ecd35ac6a02a8cfbb37a263df9f29d11bc5b7aa18369b0426274f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_EXECUTION.json",
+      "bytes": 1238,
+      "sha256": "9a8806e96fa652385dddf9e943169163cd04556659d6505e5e9435e1c2e32791"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_failed_EXECUTION.json",
+      "bytes": 1076,
+      "sha256": "b1b02ceb1fe1208f449ee7f7afa1b48b629bc93e138a83146efdb80015843178"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_failed_stderr",
+      "bytes": 69,
+      "sha256": "d2b35cacadc66b7fad8dedd1be5244e17150a6625978c9330f831bd7a9cd6b1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_failed_stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_stderr",
+      "bytes": 121,
+      "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/fetch_stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/historical_recorder.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/inventory_EXECUTION.json",
+      "bytes": 1261,
+      "sha256": "f964b5ee5568b4b6dbe152420fc5684dabdeb8ef36747d782875a070363f751a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/inventory_stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/inventory_stdout",
+      "bytes": 15967,
+      "sha256": "c933efaf480104e4d88a0b8289283ab7b17979ff86245a324c206d0cc02ff0c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/live_recorder.py",
+      "bytes": 39485,
+      "sha256": "ca4afb56072401252f86358fb589055e109ccd0303aaf5ae5998e8577ce408c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_fetch_EXECUTION.json",
+      "bytes": 1196,
+      "sha256": "c1caeffcedf3ba14cbda6b90fbe614fd4fc6be6243d51872c47b90b598d06c83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_fetch_stderr",
+      "bytes": 121,
+      "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_fetch_stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_inventory_EXECUTION.json",
+      "bytes": 1260,
+      "sha256": "1e8656831f56a177635d7f1dbe8a598a34e65962702b6aa7899221c34dae837a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_inventory_stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/prior_inventory_stdout",
+      "bytes": 15967,
+      "sha256": "c933efaf480104e4d88a0b8289283ab7b17979ff86245a324c206d0cc02ff0c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_EXECUTION.json",
+      "bytes": 1446,
+      "sha256": "f5e1ceced752b48af5db6680a98324008213da3f93a5be9462e790c0a458e34e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_executed_source.py",
+      "bytes": 6696,
+      "sha256": "260e170963b63b95644c21c6383599c374f08436feba2196e46dfe6296d116fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/root_review_stdout",
+      "bytes": 596,
+      "sha256": "da2a6e937d4f1ecec863da351309727aa14dd5fd10b09f093449f4812bb61891"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_EXECUTION.json",
+      "bytes": 992,
+      "sha256": "d8ff0f7545d37d0149e5d12408f3c53851b4687bd45d9a72af8cc11166504444"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_LAUNCH.json",
+      "bytes": 749,
+      "sha256": "44ba2f9f00f08015d03b7ca84ab490447dd8cd4486a7dca985aa775e2dd61212"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/binding_sources/stack_stdout",
+      "bytes": 316,
+      "sha256": "59bbe60ac11e089c887189122256bfd413d87b93f62a7ba53475074073629016"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/build_proposal.py.diff",
+      "bytes": 29935,
+      "sha256": "8edf271ae598a4b4635ceadb96259f8d4d0ca7a673f0f7f6b1f0bf715b41ae3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/inspect_proposal.py.diff",
+      "bytes": 11027,
+      "sha256": "2245529b1721fa22304edd42ac656751e1c52f16cf06a78d0bf7c5b666d526b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_ASSUMPTIONS_AND_IMPORTS.md.diff",
+      "bytes": 3185,
+      "sha256": "0001bf1e15c2fe7054ef3b3abd408278a1941f7cb9285bc53d398ff8aba8cedd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_CLAIM_STATUS_CERTIFICATE.md.diff",
+      "bytes": 2619,
+      "sha256": "3cf915755bce7bbe643c4f613bdf97030d5207753239b5994b729b7da8878898"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_COUNTEREXAMPLES.md.diff",
+      "bytes": 1749,
+      "sha256": "f63831d384d3ff13d4f1e77c04d87e8c66881404293fea215c874b696a30f545"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_HANDOFF.md.diff",
+      "bytes": 5794,
+      "sha256": "6fedd3c8154da9811d1f4a4c780faca7b6d1b31a1ecc23caef8c3e18aa996ea2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_PROVENANCE_PLAN.md.diff",
+      "bytes": 2074,
+      "sha256": "3be09a32ef88163d866551b215ae98b03aea3d798f6365d80352373e015b01ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_PR_BODY.md.diff",
+      "bytes": 3942,
+      "sha256": "3364fdfab39e77609d09db49b3ff2db71045c1e18663c50e70700761ee77d916"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_RECOVERY_SCOPE.md.diff",
+      "bytes": 3188,
+      "sha256": "8eba39b77d06e21f9f732c4e550c8993c73a7b74eb6b412c27bc1cc6ba6c1000"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_REVIEW_HISTORY.md.diff",
+      "bytes": 7613,
+      "sha256": "35fa26e0a3ea56e1f3dde5634f7b1139ac54af9eed7b0de3dc452c40266b7597"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/packet_TRACE_GATE.md.diff",
+      "bytes": 1584,
+      "sha256": "ef7cab001a578f89ce45d935f657776dd45c42f7e0a9d0c600b8b50352398440"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/primary_template.py.diff",
+      "bytes": 9422,
+      "sha256": "b90147755c816df15add99a487d520293a85d995cdda35dc2c194d5489111930"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/record_metadata.py.diff",
+      "bytes": 4464,
+      "sha256": "292dfd107a3ec848bc0771c980679f665775bc8e229c1cd9d2088fd9001b1cce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/seal_packet.py.diff",
+      "bytes": 8341,
+      "sha256": "027ae3440179f9c5d6a6a3d2105fc81a0b06c50b50f5ca22f832f0849b248e8a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/wrapper.md.diff",
+      "bytes": 47680,
+      "sha256": "c928cf4c64eb04862c86e8aec6f370d55f0ae8761df92ba7aeecbfaac9de84d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/001e55f5cfeac36e4ca9dbf80a96938f05ac60a92c8e9575761d802c734ddf1e.blob",
+      "bytes": 1144,
+      "sha256": "001e55f5cfeac36e4ca9dbf80a96938f05ac60a92c8e9575761d802c734ddf1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/098a5aa6be9160ee42f7e15b47dc0d6582221f04bffadd455c03006fa72259ef.blob",
+      "bytes": 1387,
+      "sha256": "098a5aa6be9160ee42f7e15b47dc0d6582221f04bffadd455c03006fa72259ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/0e2c4a627624deeb936e2b7f975a88135582e022211daf2c4ff86b2bea717510.blob",
+      "bytes": 1214,
+      "sha256": "0e2c4a627624deeb936e2b7f975a88135582e022211daf2c4ff86b2bea717510"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/10b075e8fb1cf76d2303cfc21960c5e5e9b26d3916343162eb5d7e03f319a2c7.blob",
+      "bytes": 2774,
+      "sha256": "10b075e8fb1cf76d2303cfc21960c5e5e9b26d3916343162eb5d7e03f319a2c7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/1708bd8973c91c6efaa214778a4ccd09b9a35387b3d3bcebe8e10e5987cbbe29.blob",
+      "bytes": 14669,
+      "sha256": "1708bd8973c91c6efaa214778a4ccd09b9a35387b3d3bcebe8e10e5987cbbe29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/193c9a0589488e13d5446149fda484861b981012d1bcba0cd155d0951f300a0b.blob",
+      "bytes": 4319,
+      "sha256": "193c9a0589488e13d5446149fda484861b981012d1bcba0cd155d0951f300a0b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/2122bd0370928ad6fb8970af617cf76dc5f97d8557a5758008dc4335ea607827.blob",
+      "bytes": 818,
+      "sha256": "2122bd0370928ad6fb8970af617cf76dc5f97d8557a5758008dc4335ea607827"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/21ab94d462060c28ad4eed645bf260b65e849a5238178d83152b840060b3a0ab.blob",
+      "bytes": 1543,
+      "sha256": "21ab94d462060c28ad4eed645bf260b65e849a5238178d83152b840060b3a0ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/24117ab2b2f9dc5500b8915641dc330447b9d041baa6c136774a44ec965eb6e3.blob",
+      "bytes": 9170,
+      "sha256": "24117ab2b2f9dc5500b8915641dc330447b9d041baa6c136774a44ec965eb6e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.blob",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/338a0a3199e8de397779aae38707ceb0077a2588d52c4d7ccce28e93e129ac95.blob",
+      "bytes": 341,
+      "sha256": "338a0a3199e8de397779aae38707ceb0077a2588d52c4d7ccce28e93e129ac95"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/34b4a66d6f77d590de86c9a18624fa2afdd861793c937ce4497950598ac99e7b.blob",
+      "bytes": 2415,
+      "sha256": "34b4a66d6f77d590de86c9a18624fa2afdd861793c937ce4497950598ac99e7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/382cc76fcf42b9849bf9bea09acd942fae822f48c2351eb67a4fff7e2918652b.blob",
+      "bytes": 591,
+      "sha256": "382cc76fcf42b9849bf9bea09acd942fae822f48c2351eb67a4fff7e2918652b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/3add669ebcb29ab88b9049bd807a12d0732f4a6aecc0f38aabe5774850bfd02e.blob",
+      "bytes": 934,
+      "sha256": "3add669ebcb29ab88b9049bd807a12d0732f4a6aecc0f38aabe5774850bfd02e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/56c3a4c7a37c98178bbe6799b2c8bd0829d6ed541f501f0e27b402d67b223807.blob",
+      "bytes": 7903,
+      "sha256": "56c3a4c7a37c98178bbe6799b2c8bd0829d6ed541f501f0e27b402d67b223807"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/594691d17e1675047e27f9066725fba5568d56aede09bbe08c33be27505b772a.blob",
+      "bytes": 4413,
+      "sha256": "594691d17e1675047e27f9066725fba5568d56aede09bbe08c33be27505b772a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908.blob",
+      "bytes": 2362,
+      "sha256": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/5eb3e36e3b9316982e9d19bfc1563a420ffdc7749ad33aa418658e7c78ca22e2.blob",
+      "bytes": 3507,
+      "sha256": "5eb3e36e3b9316982e9d19bfc1563a420ffdc7749ad33aa418658e7c78ca22e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37.blob",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b.blob",
+      "bytes": 8964,
+      "sha256": "6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/67a7af8e049cacee2d69c0bab132fd4ecf40915a7acb73eb1b6498b8a1bf2a6f.blob",
+      "bytes": 7533,
+      "sha256": "67a7af8e049cacee2d69c0bab132fd4ecf40915a7acb73eb1b6498b8a1bf2a6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563.blob",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/79d10728c72fcf450086834a8587008a16725f463abe4b43556ffbf61e5d23ec.blob",
+      "bytes": 20401,
+      "sha256": "79d10728c72fcf450086834a8587008a16725f463abe4b43556ffbf61e5d23ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/7a3b9dc1a67efb42a4acf579d51c5f81b5b2cd399ac247868df93387bab9d2f7.blob",
+      "bytes": 2597,
+      "sha256": "7a3b9dc1a67efb42a4acf579d51c5f81b5b2cd399ac247868df93387bab9d2f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.blob",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/7e85e05328c91e1b46b6959b8a709d1899901eac25e28b4e360623ceb95f48d4.blob",
+      "bytes": 15314,
+      "sha256": "7e85e05328c91e1b46b6959b8a709d1899901eac25e28b4e360623ceb95f48d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/88d8aae1bd0b07def238bdb5a1408f43a7bfe9ae7c46cf88952c45d9acf3c1f1.blob",
+      "bytes": 27691,
+      "sha256": "88d8aae1bd0b07def238bdb5a1408f43a7bfe9ae7c46cf88952c45d9acf3c1f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/913fc4ce6f9d45d7b97c299de3a6af1522813752c2059a720e534d12356664dd.blob",
+      "bytes": 1142,
+      "sha256": "913fc4ce6f9d45d7b97c299de3a6af1522813752c2059a720e534d12356664dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/b8156831899212a51e6be24a262f593358d69da4bc1961c4a5c62dd42dab686d.blob",
+      "bytes": 3090,
+      "sha256": "b8156831899212a51e6be24a262f593358d69da4bc1961c4a5c62dd42dab686d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/bdeb8ecba472db14a87adf66e2d3ae6963a7b594a1fa14e26f0b496f58d2ac10.blob",
+      "bytes": 934,
+      "sha256": "bdeb8ecba472db14a87adf66e2d3ae6963a7b594a1fa14e26f0b496f58d2ac10"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.blob",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/c812492b863ca373b61fcd928bbc7e69bc61da1bb80366b77df7949aa41d0305.blob",
+      "bytes": 3787,
+      "sha256": "c812492b863ca373b61fcd928bbc7e69bc61da1bb80366b77df7949aa41d0305"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/c9ca1076761b2f7bf90d83b833429540bbc04896ba46839074ad0ffa0ea5ff85.blob",
+      "bytes": 5270,
+      "sha256": "c9ca1076761b2f7bf90d83b833429540bbc04896ba46839074ad0ffa0ea5ff85"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/ccf02591453159370f54aa69a32696f8541d3fb90ee5a414a97a34263c3343ae.blob",
+      "bytes": 2036,
+      "sha256": "ccf02591453159370f54aa69a32696f8541d3fb90ee5a414a97a34263c3343ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/cd8341414d4df65a10889af5e1dd0a281bfdc4cf54ab1dab8dd18eb9753513bf.blob",
+      "bytes": 3848,
+      "sha256": "cd8341414d4df65a10889af5e1dd0a281bfdc4cf54ab1dab8dd18eb9753513bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/ce05a70dea48ae35c1266fc92d5dcfe5964f55ea3da29cd522cec21335c8b767.blob",
+      "bytes": 1399,
+      "sha256": "ce05a70dea48ae35c1266fc92d5dcfe5964f55ea3da29cd522cec21335c8b767"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/dd10996065a41e9f116ebac93b135864443c823bc4210a74a3833901ac874ad5.blob",
+      "bytes": 7800,
+      "sha256": "dd10996065a41e9f116ebac93b135864443c823bc4210a74a3833901ac874ad5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/e0a182f7db581c1fc6051bb1dcfa7e3fd54985a24bb35a0ecc0e19a44acc69f1.blob",
+      "bytes": 2762,
+      "sha256": "e0a182f7db581c1fc6051bb1dcfa7e3fd54985a24bb35a0ecc0e19a44acc69f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.blob",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/e66dc3d4d956acffc070076bca03e2bee3677550db809ed86e56594470044f0b.blob",
+      "bytes": 12202,
+      "sha256": "e66dc3d4d956acffc070076bca03e2bee3677550db809ed86e56594470044f0b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/ea7242efaeb00ba35cc9aee3f155796fdf3b0f2345cdbf1f9f3cc4aba71c9f73.blob",
+      "bytes": 3863,
+      "sha256": "ea7242efaeb00ba35cc9aee3f155796fdf3b0f2345cdbf1f9f3cc4aba71c9f73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/ee3c437b3752332de30d2ff49ae8a1774906663fbcb84bea873555dba767950d.blob",
+      "bytes": 578,
+      "sha256": "ee3c437b3752332de30d2ff49ae8a1774906663fbcb84bea873555dba767950d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.blob",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/f5b9ef6e40c5596a9e851a0ce6a19bdc8856fa2a286394bbe2d4e723d75a97d4.blob",
+      "bytes": 1258,
+      "sha256": "f5b9ef6e40c5596a9e851a0ce6a19bdc8856fa2a286394bbe2d4e723d75a97d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/f5def3706984cd0a22b403eec48483c05baa6eabfa355edfd0dba190afc2f45f.blob",
+      "bytes": 319,
+      "sha256": "f5def3706984cd0a22b403eec48483c05baa6eabfa355edfd0dba190afc2f45f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/f860e77316e93fc0e9226d6f8a800e6bac9a916782f850384f64d2a9748ff5ce.blob",
+      "bytes": 4901,
+      "sha256": "f860e77316e93fc0e9226d6f8a800e6bac9a916782f850384f64d2a9748ff5ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/fbdea87d13f978eb81d8f77f0cfd90678239b054bdfe967cc80a7c91a7ab43d0.blob",
+      "bytes": 2175,
+      "sha256": "fbdea87d13f978eb81d8f77f0cfd90678239b054bdfe967cc80a7c91a7ab43d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/feac515d67c7fdcf239c7867504dc22f19a96434154e046c999f564c88076f69.blob",
+      "bytes": 8090,
+      "sha256": "feac515d67c7fdcf239c7867504dc22f19a96434154e046c999f564c88076f69"
+    },
+    {
+      "path": "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 58145,
+      "sha256": "b53db1786778a4ae8bf7745371f228c5823b15b4de2703642121256aba15a2d6"
+    },
+    {
+      "path": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89"
+    }
+  ],
+  "scope": "Source/body/recovery/binding structure only; no scientific execution."
+}

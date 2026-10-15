@@ -1,0 +1,333 @@
+{
+  "basis": "exact pinned correlated-memory template; full text diffs, not boilerplate-equivalence claims",
+  "files": [
+    {
+      "file": "build_proposal.py",
+      "old_sha256": "7e85e05328c91e1b46b6959b8a709d1899901eac25e28b4e360623ceb95f48d4",
+      "new_sha256": "1708bd8973c91c6efaa214778a4ccd09b9a35387b3d3bcebe8e10e5987cbbe29",
+      "complete_diff": "diffs/build_proposal.py.diff",
+      "functions": [
+        {
+          "name": "archive",
+          "status": "changed_AST",
+          "old_lines": [
+            98,
+            111
+          ],
+          "new_lines": [
+            70,
+            82
+          ]
+        },
+        {
+          "name": "checked",
+          "status": "same_AST",
+          "old_lines": [
+            53,
+            57
+          ],
+          "new_lines": [
+            32,
+            36
+          ]
+        },
+        {
+          "name": "dump",
+          "status": "same_AST",
+          "old_lines": [
+            47,
+            49
+          ],
+          "new_lines": [
+            28,
+            29
+          ]
+        },
+        {
+          "name": "packet_json",
+          "status": "same_AST",
+          "old_lines": [
+            155,
+            155
+          ],
+          "new_lines": [
+            37,
+            37
+          ]
+        },
+        {
+          "name": "sha",
+          "status": "same_AST",
+          "old_lines": [
+            46,
+            46
+          ],
+          "new_lines": [
+            27,
+            27
+          ]
+        },
+        {
+          "name": "write",
+          "status": "same_AST",
+          "old_lines": [
+            50,
+            52
+          ],
+          "new_lines": [
+            30,
+            31
+          ]
+        }
+      ],
+      "module_level": "entire module-level change is included in complete diff"
+    },
+    {
+      "file": "inspect_proposal.py",
+      "old_sha256": "c9ca1076761b2f7bf90d83b833429540bbc04896ba46839074ad0ffa0ea5ff85",
+      "new_sha256": "67a7af8e049cacee2d69c0bab132fd4ecf40915a7acb73eb1b6498b8a1bf2a6f",
+      "complete_diff": "diffs/inspect_proposal.py.diff",
+      "functions": [
+        {
+          "name": "container",
+          "status": "same_AST",
+          "old_lines": [
+            17,
+            17
+          ],
+          "new_lines": [
+            18,
+            18
+          ]
+        },
+        {
+          "name": "identity",
+          "status": "changed_AST",
+          "old_lines": [
+            16,
+            16
+          ],
+          "new_lines": [
+            17,
+            17
+          ]
+        },
+        {
+          "name": "read",
+          "status": "same_AST",
+          "old_lines": [
+            15,
+            15
+          ],
+          "new_lines": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "recover",
+          "status": "same_AST",
+          "old_lines": [
+            18,
+            23
+          ],
+          "new_lines": [
+            19,
+            24
+          ]
+        },
+        {
+          "name": "sha",
+          "status": "same_AST",
+          "old_lines": [
+            14,
+            14
+          ],
+          "new_lines": [
+            15,
+            15
+          ]
+        }
+      ],
+      "module_level": "entire module-level change is included in complete diff"
+    },
+    {
+      "file": "record_metadata.py",
+      "old_sha256": "fbdea87d13f978eb81d8f77f0cfd90678239b054bdfe967cc80a7c91a7ab43d0",
+      "new_sha256": "10b075e8fb1cf76d2303cfc21960c5e5e9b26d3916343162eb5d7e03f319a2c7",
+      "complete_diff": "diffs/record_metadata.py.diff",
+      "functions": [
+        {
+          "name": "capture",
+          "status": "added",
+          "old_lines": null,
+          "new_lines": [
+            20,
+            23
+          ]
+        },
+        {
+          "name": "ident",
+          "status": "same_AST",
+          "old_lines": [
+            16,
+            18
+          ],
+          "new_lines": [
+            17,
+            19
+          ]
+        }
+      ],
+      "module_level": "entire module-level change is included in complete diff"
+    },
+    {
+      "file": "seal_packet.py",
+      "old_sha256": "193c9a0589488e13d5446149fda484861b981012d1bcba0cd155d0951f300a0b",
+      "new_sha256": "ea7242efaeb00ba35cc9aee3f155796fdf3b0f2345cdbf1f9f3cc4aba71c9f73",
+      "complete_diff": "diffs/seal_packet.py.diff",
+      "functions": [
+        {
+          "name": "identity",
+          "status": "changed_AST",
+          "old_lines": [
+            15,
+            17
+          ],
+          "new_lines": [
+            12,
+            14
+          ]
+        },
+        {
+          "name": "sha",
+          "status": "same_AST",
+          "old_lines": [
+            12,
+            13
+          ],
+          "new_lines": [
+            11,
+            11
+          ]
+        },
+        {
+          "name": "verify",
+          "status": "same_AST",
+          "old_lines": [
+            19,
+            21
+          ],
+          "new_lines": [
+            15,
+            17
+          ]
+        }
+      ],
+      "module_level": "entire module-level change is included in complete diff"
+    },
+    {
+      "file": "primary_template.py",
+      "old_sha256": "56c3a4c7a37c98178bbe6799b2c8bd0829d6ed541f501f0e27b402d67b223807",
+      "new_sha256": "feac515d67c7fdcf239c7867504dc22f19a96434154e046c999f564c88076f69",
+      "complete_diff": "diffs/primary_template.py.diff",
+      "functions": [
+        {
+          "name": "digest",
+          "status": "same_AST",
+          "old_lines": [
+            28,
+            28
+          ],
+          "new_lines": [
+            26,
+            26
+          ]
+        },
+        {
+          "name": "identity",
+          "status": "same_AST",
+          "old_lines": [
+            35,
+            36
+          ],
+          "new_lines": [
+            33,
+            34
+          ]
+        },
+        {
+          "name": "interval",
+          "status": "same_AST",
+          "old_lines": [
+            38,
+            44
+          ],
+          "new_lines": [
+            36,
+            42
+          ]
+        },
+        {
+          "name": "main",
+          "status": "changed_AST",
+          "old_lines": [
+            46,
+            111
+          ],
+          "new_lines": [
+            44,
+            115
+          ]
+        },
+        {
+          "name": "read_json",
+          "status": "same_AST",
+          "old_lines": [
+            37,
+            37
+          ],
+          "new_lines": [
+            35,
+            35
+          ]
+        },
+        {
+          "name": "require",
+          "status": "same_AST",
+          "old_lines": [
+            26,
+            27
+          ],
+          "new_lines": [
+            24,
+            25
+          ]
+        },
+        {
+          "name": "safe",
+          "status": "same_AST",
+          "old_lines": [
+            29,
+            34
+          ],
+          "new_lines": [
+            27,
+            32
+          ]
+        }
+      ],
+      "module_level": "entire module-level change is included in complete diff"
+    },
+    {
+      "file": "wrapper.md",
+      "old_sha256": "88d8aae1bd0b07def238bdb5a1408f43a7bfe9ae7c46cf88952c45d9acf3c1f1",
+      "new_sha256": "79d10728c72fcf450086834a8587008a16725f463abe4b43556ffbf61e5d23ec",
+      "complete_diff": "diffs/wrapper.md.diff",
+      "functions": [],
+      "module_level": "entire module-level change is included in complete diff"
+    }
+  ],
+  "primary_execution": null,
+  "scientific_programs_run": 0
+}

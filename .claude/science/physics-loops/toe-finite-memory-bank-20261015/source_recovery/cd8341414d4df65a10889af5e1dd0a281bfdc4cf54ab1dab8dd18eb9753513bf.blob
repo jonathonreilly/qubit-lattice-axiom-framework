@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-10-15T17:20:26.496025+00:00",
+  "status": "finite consumed bank supported with compensation at-most and fully priced guard/chronology qualifications; no recycling or audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/REPORT.md",
+    "bytes": 25249,
+    "sha256": "16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/SOURCE_MANIFEST.json",
+    "bytes": 9170,
+    "sha256": "24117ab2b2f9dc5500b8915641dc330447b9d041baa6c136774a44ec965eb6e3"
+  },
+  "closing_metadata": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/CLOSING_METADATA.json",
+    "bytes": 7800,
+    "sha256": "dd10996065a41e9f116ebac93b135864443c823bc4210a74a3833901ac874ad5"
+  },
+  "actual_metadata_receipts": [
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/LAUNCH.json",
+        "bytes": 1144,
+        "sha256": "001e55f5cfeac36e4ca9dbf80a96938f05ac60a92c8e9575761d802c734ddf1e"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/EXECUTION.json",
+        "bytes": 934,
+        "sha256": "bdeb8ecba472db14a87adf66e2d3ae6963a7b594a1fa14e26f0b496f58d2ac10"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stdout",
+        "bytes": 341,
+        "sha256": "338a0a3199e8de397779aae38707ceb0077a2588d52c4d7ccce28e93e129ac95"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/LAUNCH.json",
+        "bytes": 1142,
+        "sha256": "913fc4ce6f9d45d7b97c299de3a6af1522813752c2059a720e534d12356664dd"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/EXECUTION.json",
+        "bytes": 934,
+        "sha256": "3add669ebcb29ab88b9049bd807a12d0732f4a6aecc0f38aabe5774850bfd02e"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/stdout",
+        "bytes": 578,
+        "sha256": "ee3c437b3752332de30d2ff49ae8a1774906663fbcb84bea873555dba767950d"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "provisional_bias_or_rotation_used_as_premise": false,
+  "other_worker_sources_opened": false,
+  "model_override": false,
+  "delegation": false,
+  "git_operations": 0,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,66 @@
+--- correlated_memory_publication_draft/record_metadata.py
++++ finite_bank_publication_draft/record_metadata.py
+@@ -1,4 +1,4 @@
+-"""Actual local metadata-process recorder; no primary/scientific execution."""
++"""Actual bounded metadata-process recorder; never launch a scientific primary."""
+ from pathlib import Path
+ import datetime
+ import hashlib
+@@ -8,29 +8,40 @@
+ import time
+ 
+ D=Path(__file__).resolve().parent
+-script=(D/sys.argv[1]).resolve()
+-script.relative_to(D)
+-assert script.name in {"build_proposal.py","inspect_proposal.py"}
++assert len(sys.argv)==3
++assert sys.argv[1] in {"build_proposal.py","inspect_proposal.py"}
++assert sys.argv[2] in {"build","inspection"}
++script=D/sys.argv[1]
+ run=D/"metadata_runs"/sys.argv[2]
+ run.mkdir(parents=True,exist_ok=False)
+ def ident(path):
+     b=path.read_bytes()
+     return {"path":str(path),"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()}
+-source=script.read_bytes()
+-(run/"executed_source.py").write_bytes(source)
+-inputs=[]
+-for p in [D/"wrapper.md",D/"primary_template.py",*sorted((D/"packet_text").glob("*"))]:
+-    dest=run/"inputs"/p.relative_to(D)
+-    dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(p.read_bytes())
+-    inputs.append({"original":ident(p),"captured":ident(dest)})
+-launch={"created_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"script":ident(script),"source_at_launch":ident(run/"executed_source.py"),"inputs":inputs,"scope":"Metadata source capture; no scientific primary or historical program is launched"}
++def capture(path,destination):
++    destination.parent.mkdir(parents=True,exist_ok=True)
++    destination.write_bytes(path.read_bytes())
++    return {"original":ident(path),"captured":ident(destination)}
++source=capture(script,run/"executed_source.py")
++recorder=capture(Path(__file__).resolve(),run/"recorder_source.py")
++inputs=[capture(p,run/"inputs"/p.relative_to(D)) for p in [D/"wrapper.md",D/"primary_template.py",*sorted((D/"packet_text").glob("*"))]]
++launch={"created_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"script":source["original"],"source_at_launch":source["captured"],"recorder_at_launch":recorder["captured"],"inputs":inputs,"timeout_seconds":60,"scope":"Metadata source capture only; no scientific primary or historical program is launched"}
+ (run/"LAUNCH.json").write_text(json.dumps(launch,indent=2)+"\n")
++argv=[sys.executable,str(script)]
+ start=datetime.datetime.now(datetime.timezone.utc).isoformat();tick=time.monotonic()
+-result=subprocess.run([sys.executable,str(script)],cwd=D,capture_output=True)
++failure=None
++try:
++    result=subprocess.run(argv,cwd=D,capture_output=True,timeout=60)
++    stdout,stderr,code=result.stdout,result.stderr,result.returncode
++except subprocess.TimeoutExpired as exc:
++    stdout,stderr,code=exc.stdout or b"",exc.stderr or b"",124
++    failure={"kind":"timeout","seconds":60}
++except OSError as exc:
++    stdout,stderr,code=b"",str(exc).encode(),127
++    failure={"kind":type(exc).__name__,"message":str(exc)}
+ elapsed=time.monotonic()-tick;end=datetime.datetime.now(datetime.timezone.utc).isoformat()
+-(run/"stdout").write_bytes(result.stdout);(run/"stderr").write_bytes(result.stderr)
+-receipt={"argv":[sys.executable,str(script)],"cwd":str(D),"start_utc":start,"end_utc":end,"elapsed_seconds":elapsed,"exit_code":result.returncode,"child_source_at_launch":launch["source_at_launch"],"stdout":ident(run/"stdout"),"stderr":ident(run/"stderr"),"recorder":ident(Path(__file__)),"scientific_execution":False}
++(run/"stdout").write_bytes(stdout);(run/"stderr").write_bytes(stderr)
++receipt={"argv":argv,"cwd":str(D),"start_utc":start,"end_utc":end,"elapsed_seconds":elapsed,"exit_code":code,"failure":failure,"timeout_seconds":60,"child_source_at_launch":source["captured"],"stdout":ident(run/"stdout"),"stderr":ident(run/"stderr"),"recorder":recorder["original"],"recorder_at_launch":recorder["captured"],"scientific_execution":False}
+ (run/"EXECUTION.json").write_text(json.dumps(receipt,indent=2)+"\n")
+-print(result.stdout.decode());print(result.stderr.decode(),file=sys.stderr)
+-print(json.dumps({"receipt":str(run/"EXECUTION.json"),"exit_code":result.returncode,"scope":"metadata only"}))
+-raise SystemExit(result.returncode)
++print(stdout.decode(errors="replace"));print(stderr.decode(errors="replace"),file=sys.stderr)
++print(json.dumps({"receipt":str(run/"EXECUTION.json"),"exit_code":code,"scope":"metadata only"}))
++raise SystemExit(code)

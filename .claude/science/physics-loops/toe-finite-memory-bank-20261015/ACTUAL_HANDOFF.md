@@ -1,0 +1,5 @@
+# Actual finite-bank binding
+
+ACTUAL_BINDING records two unchanged bodies, the sole correlated-memory parent with both exact proof/review intervals, root publication interpretation and real base observations. The finite source bank is consumed. One global complete-marginal comparison is propagated; ideal unused-block purity is not asserted on faulty trajectories. Compensation action is at most its B_C allowance, and H0-only guards remain fully compensated. Every source, intervening segment and whole bank lifetime keeps its control, scalar/phase, timing, isolation and moment/work prices.
+
+Historical source-proposal nulls and source-exposure limits remain unchanged. The current primary is source integrity only. Actual primary/cache/mutation/graph/stage/publication results require separate receipts. No native supplier, bank restoration, autonomous program, common hardware cap, microscopic energy/detector model or retained audit is certified. Root must attach the regular PR after actual creation.

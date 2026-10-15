@@ -1,0 +1,176 @@
+{
+  "started_utc": "2026-10-15T17:20:26.451489+00:00",
+  "completed_utc": "2026-10-15T17:20:26.488546+00:00",
+  "kind": "metadata identity/receipt closure only",
+  "checks": [
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_root_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/bank/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_root_candidate/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/bank/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/markov/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/markov/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/prior_reviews/MARKOV_REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/prior_reviews/MARKOV_FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/joint/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/exposure/PRIOR_ROTATED_FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/workhorse.SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "new proposal member DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax record_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax seal_review.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax capture_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "capture actual exit zero",
+      "passed": true
+    },
+    {
+      "name": "capture UTC order",
+      "passed": true
+    },
+    {
+      "name": "capture source-at-launch child",
+      "passed": true
+    },
+    {
+      "name": "capture source-at-launch recorder",
+      "passed": true
+    },
+    {
+      "name": "actual capture launch /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "actual capture stdout /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stdout",
+      "passed": true
+    },
+    {
+      "name": "actual capture stderr /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stderr",
+      "passed": true
+    },
+    {
+      "name": "zero scientific executions/replays",
+      "passed": true
+    },
+    {
+      "name": "no provisional bias/rotation premise",
+      "passed": true
+    },
+    {
+      "name": "no other-worker source exposure",
+      "passed": true
+    }
+  ],
+  "check_count": 40,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/REPORT.md",
+    "bytes": 25249,
+    "sha256": "16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6"
+  },
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "scope_limit": "Analytic check only. Prior parent seals are exact pins, not a new recursive audit."
+}

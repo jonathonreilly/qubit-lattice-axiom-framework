@@ -1,0 +1,92 @@
+"""One-time local metadata seal; does not execute any proposed primary."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+started = datetime.datetime.now(datetime.timezone.utc).isoformat()
+target = D / "FINAL_FREEZE.json"
+assert not target.exists(), "Already frozen"
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def identity(path):
+    data = path.read_bytes()
+    return {"path": str(path.relative_to(D)), "bytes": len(data), "sha256": sha(data)}
+
+def verify(path, row):
+    data = path.read_bytes()
+    assert len(data) == row["bytes"] and sha(data) == row["sha256"], str(path)
+
+freshness = json.loads((D / "SOURCE_FRESHNESS.json").read_text())
+for row in freshness["identities"]:
+    verify(Path(row["original"]), row)
+receipts = []
+for name in ("build", "inspection"):
+    folder = D / "metadata_runs" / name
+    receipt = json.loads((folder / "EXECUTION.json").read_text())
+    assert receipt["exit_code"] == 0 and receipt["scientific_execution"] is False
+    for key in ("child_source_at_launch", "stdout", "stderr", "recorder"):
+        row = receipt[key]
+        verify(Path(row["path"]), row)
+    receipts.append(identity(folder / "EXECUTION.json"))
+verification = json.loads((D / "VERIFICATION.json").read_text())
+verify(D / "proposal" / verification["note"]["path"], verification["note"])
+assert verification["immutable_bodies"] == 7
+assert verification["direct_mathematical_parents"] == 2
+assert verification["actual_binding"] is None
+assert verification["primary_execution"] is None
+
+script_names = ("build_proposal.py", "record_metadata.py", "inspect_proposal.py", "seal_packet.py", "primary_template.py")
+scripts = []
+for name in script_names:
+    row = identity(D / name)
+    row["role"] = {
+        "build_proposal.py": "Executed once: source assembly and exact metadata recovery",
+        "record_metadata.py": "Actual recorder for the build and static inspection subprocesses",
+        "inspect_proposal.py": "Executed once: static source, AST and metadata inspection",
+        "seal_packet.py": "Current in-process metadata seal, no primary or scientific execution",
+        "primary_template.py": "Unexecuted source-integrity primary template",
+    }[name]
+    scripts.append(row)
+(D / "SCRIPT_MAP.json").write_text(json.dumps({"scripts": scripts, "scientific_programs_run": 0, "primary_execution": None}, indent=2) + "\n")
+(D / "DELIVERY.json").write_text(json.dumps({
+    "scope": "Source-only regular-publication proposal, not an actual integration or publication",
+    "title": "[physics-loop] correlated-memory-delivery: bounded_theorem / conditional-support",
+    "requested_git_base": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+    "note": verification["note"],
+    "immutable_bodies": 7,
+    "mathematical_parents": 2,
+    "actual_binding": None,
+    "primary_execution": None,
+    "actual_publication": None,
+    "actual_metadata_receipts": receipts,
+    "future_integration": "Separate root-owned integration outside this frozen directory",
+}, indent=2) + "\n")
+(D / "SEAL_OPERATION.json").write_text(json.dumps({
+    "started_utc": started,
+    "checked_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "scope": "Actual in-process metadata verification and seal; no invented subprocess receipt",
+    "source_identities_refreshed": len(freshness["identities"]),
+    "actual_metadata_subprocesses": 2,
+    "scientific_programs_run": 0,
+    "primary_execution": None,
+    "excluded_path": "FINAL_FREEZE.json only; nested freezes and every other file are included",
+}, indent=2) + "\n")
+files = [identity(p) for p in sorted(D.rglob("*")) if p.is_file() and p != target]
+freeze = {
+    "frozen_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "scope": "Complete source-only draft, actual metadata evidence and exact selected recovery; no science execution",
+    "immutable_bodies": 7,
+    "mathematical_parents": 2,
+    "actual_binding": None,
+    "primary_execution": None,
+    "scientific_programs_run": 0,
+    "files": files,
+}
+target.write_text(json.dumps(freeze, indent=2) + "\n")
+for row in files:
+    verify(D / row["path"], row)
+print(json.dumps({"freeze": identity(target), "members": len(files), "note": verification["note"], "scope": "metadata seal only"}, indent=2))

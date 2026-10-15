@@ -1,0 +1,157 @@
+"""Source-only assembly and metadata verification; never execute science or primary."""
+from pathlib import Path
+import ast
+import datetime
+import difflib
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent;N=D.parent;W=N.parent/'correlation_worktree'
+OUT=D/'proposal'
+PACK='.claude/science/physics-loops/toe-finite-memory-bank-20261015'
+NOTE='docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+PRIMARY='scripts/finite_consumed_memory_bank_2026_10_15.py'
+PARENT='docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+PARENT_SHA='12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89'
+ACCEPTANCE='5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908'
+BODIES=[
+('bank_author','finite_memory_bank_root_candidate/DERIVATION.md',11745,'162d7504ad3951ed29add0facefc0bbdb227fcdf582e22250baad04a4f63c521'),
+('bank_assessment','finite_memory_bank_decisive_check/REPORT.md',25249,'16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6')]
+PARENT_BODIES=[
+('markov_author','correlated_markov_memory_candidate/DERIVATION.md',47228,'685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea'),
+('markov_assessment','correlated_markov_memory_independent/comparison/REPORT.md',31525,'c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef')]
+FREEZES=[
+('finite_memory_bank_root_candidate/PROPOSAL_FREEZE.json','f5def3706984cd0a22b403eec48483c05baa6eabfa355edfd0dba190afc2f45f'),
+('finite_memory_bank_decisive_check/FINAL_FREEZE.json','e66dc3d4d956acffc070076bca03e2bee3677550db809ed86e56594470044f0b'),
+('conditional_sources_root_review/FINAL_FREEZE.json','0e2c4a627624deeb936e2b7f975a88135582e022211daf2c4ff86b2bea717510')]
+def sha(b):return hashlib.sha256(b).hexdigest()
+def dump(path,value):
+    path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(value,indent=2)+'\n')
+def write(rel,data):
+    path=OUT/rel;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(data if isinstance(data,bytes) else data.encode())
+def checked(path,expected=None,size=None):
+    data=path.read_bytes()
+    if expected is not None:assert sha(data)==expected,str(path)
+    if size is not None:assert len(data)==size,str(path)
+    return data
+def packet_json(name,value):write(PACK+'/'+name,json.dumps(value,indent=2)+'\n')
+
+assert not (D/'FINAL_FREEZE.json').exists(),'Frozen draft cannot be rebuilt'
+assert not OUT.exists(),'Preserve an existing assembly; do not overwrite it'
+now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+sources=[];freshness=[];recovery_by_sha={};objects={};body_map=[]
+note=(D/'wrapper.md').read_bytes()
+for name,rel,size,digest in BODIES:
+    data=checked(N/rel,digest,size)
+    note+=('\n\n---\n\n## Immutable source body: '+name+'\n\nHistorical source retained exactly; current status and mandatory interpretations appear above.\n\n').encode()
+    start=len(note);note+=data;end=len(note)
+    row={'name':name,'container':NOTE,'start_byte_inclusive':start,'end_byte_exclusive':end,'bytes':size,'sha256':digest};body_map.append(row)
+    recovery={'kind':'body_interval','body_name':name,'container':NOTE,'start_byte_inclusive':start,'end_byte_exclusive':end}
+    recovery_by_sha[digest]=recovery
+    sources.append({'source':'campaign/'+rel,'role':'immutable_proof_or_review_body','bytes':size,'sha256':digest,'recovery':recovery})
+    freshness.append({'original':str(N/rel),'bytes':size,'sha256':digest})
+write(NOTE,note)
+for row in body_map:
+    raw=note[row['start_byte_inclusive']:row['end_byte_exclusive']];assert sha(raw)==row['sha256'] and note.count(raw)==1
+
+parent=checked(W/PARENT,PARENT_SHA,203198)
+recovery_by_sha[PARENT_SHA]={'kind':'external_pinned','path':PARENT}
+sources.append({'source':'repository/'+PARENT,'role':'direct_mathematical_parent','bytes':len(parent),'sha256':PARENT_SHA,'recovery':recovery_by_sha[PARENT_SHA]})
+freshness.append({'original':str(W/PARENT),'bytes':len(parent),'sha256':PARENT_SHA})
+parent_intervals=[]
+for name,rel,size,digest in PARENT_BODIES:
+    raw=checked(N/rel,digest,size);assert parent.count(raw)==1
+    start=parent.index(raw);r={'container':PARENT,'start_byte_inclusive':start,'end_byte_exclusive':start+size,'bytes':size,'sha256':digest}
+    parent_intervals.append(r);recovery_by_sha[digest]={'kind':'external_body_interval',**r}
+    sources.append({'source':'campaign/'+rel,'role':'exact_parent_'+name,'bytes':size,'sha256':digest,'recovery':recovery_by_sha[digest]})
+    freshness.append({'original':str(N/rel),'bytes':size,'sha256':digest})
+dependencies=[{'path':PARENT,'bytes':203198,'sha256':PARENT_SHA,'claim_id':'correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15','accepted_raw_source_sha256':PARENT_BODIES[0][3],'accepted_body_interval':parent_intervals[0],'accepted_review_interval':parent_intervals[1],'role':'direct_mathematical_parent'}]
+
+def archive(path,role):
+    data=path.read_bytes();digest=sha(data)
+    if path.is_relative_to(D):label='draft/'+str(path.relative_to(D))
+    elif path.is_relative_to(N):label='campaign/'+str(path.relative_to(N))
+    else:label='repository/'+str(path.relative_to(W))
+    recovery=recovery_by_sha.get(digest)
+    if recovery is None:
+        rel=PACK+'/source_recovery/'+digest+'.blob';write(rel,data)
+        recovery={'kind':'blob','path':rel};recovery_by_sha[digest]=recovery
+        objects[digest]={'path':rel,'bytes':len(data),'sha256':digest,'aliases':[]}
+    if digest in objects:objects[digest]['aliases'].append(label)
+    sources.append({'source':label,'role':role,'bytes':len(data),'sha256':digest,'recovery':recovery})
+    freshness.append({'original':str(path),'bytes':len(data),'sha256':digest})
+
+freeze_checks=[];member_records=[]
+for rel,digest in FREEZES:
+    p=N/rel;f=json.loads(checked(p,digest))
+    for row in f['files']:
+        q=Path(row['path']);q=q if q.is_absolute() else p.parent/q
+        checked(q,row['sha256'],row['bytes'])
+        member_records.append({'freeze':'campaign/'+rel,'original':str(q),'bytes':row['bytes'],'sha256':row['sha256']})
+    freeze_checks.append({'source':'campaign/'+rel,'sha256':digest,'members_verified':len(f['files'])})
+
+selected={p for root in [N/'finite_memory_bank_root_candidate',N/'finite_memory_bank_decisive_check'] for p in root.iterdir() if p.is_file()}
+selected.update(p for p in (N/'finite_memory_bank_decisive_check/metadata_runs').rglob('*') if p.is_file())
+selected.update(N/('conditional_sources_root_review/'+x) for x in ['FINITE_BANK_ACCEPTANCE.md','VERIFICATION.json','FINAL_FREEZE.json'])
+body_paths={N/x[1] for x in BODIES}
+for p in sorted(selected-body_paths):
+    role='root_conditional_source_acceptance' if p.name=='FINITE_BANK_ACCEPTANCE.md' else 'selected_actual_source_or_metadata_evidence'
+    archive(p,role)
+checked(N/'conditional_sources_root_review/FINITE_BANK_ACCEPTANCE.md',ACCEPTANCE,2362)
+checked(N/'conditional_sources_root_review/VERIFICATION.json','6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b',8964)
+
+instruction_rels=['AGENTS.md','docs/ai_methodology/SCIENCE_WORKFLOW.md','docs/ai_methodology/skills/physics-loop/SKILL.md','docs/ai_methodology/skills/physics-loop/references/DELIVERY.md','docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md','docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md','docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md','docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md','docs/audit/data/axiom_premise_nodes.json','docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md']
+for rel in instruction_rels:archive(W/rel,'instruction_or_premise_classification_provenance_only')
+checked(W/'docs/ai_methodology/SCIENCE_WORKFLOW.md','05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce')
+
+# Complete textual diffs and function-level AST reuse map are bookkeeping only.
+change_map=[]
+for name in ['build_proposal.py','inspect_proposal.py','record_metadata.py','seal_packet.py','primary_template.py','wrapper.md']:
+    old=D/'template_snapshot'/name;new=D/name;a=old.read_text();b=new.read_text()
+    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='correlated_memory_publication_draft/'+name,tofile='finite_bank_publication_draft/'+name))
+    (D/'diffs'/f'{name}.diff').write_text(diff);write(PACK+'/packaging_diffs/'+name+'.diff',diff)
+    row={'file':name,'old_sha256':sha(a.encode()),'new_sha256':sha(b.encode()),'complete_diff':'diffs/'+name+'.diff','functions':[],'module_level':'entire module-level change is included in complete diff'}
+    if name.endswith('.py'):
+        ta=ast.parse(a);tb=ast.parse(b)
+        aa={x.name:x for x in ta.body if isinstance(x,(ast.FunctionDef,ast.AsyncFunctionDef,ast.ClassDef))};bb={x.name:x for x in tb.body if isinstance(x,(ast.FunctionDef,ast.AsyncFunctionDef,ast.ClassDef))}
+        for function in sorted(set(aa)|set(bb)):
+            status='added' if function not in aa else 'removed' if function not in bb else 'same_AST' if ast.dump(aa[function],include_attributes=False)==ast.dump(bb[function],include_attributes=False) else 'changed_AST'
+            row['functions'].append({'name':function,'status':status,'old_lines':None if function not in aa else [aa[function].lineno,aa[function].end_lineno],'new_lines':None if function not in bb else [bb[function].lineno,bb[function].end_lineno]})
+    change_map.append(row)
+for p in sorted((D/'packet_text').glob('*')):
+    old=D/'template_snapshot/packet_text'/p.name;a=old.read_text() if old.exists() else '';b=p.read_text()
+    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='correlated_memory_publication_draft/packet_text/'+p.name if old.exists() else '/dev/null',tofile='finite_bank_publication_draft/packet_text/'+p.name))
+    (D/'diffs'/('packet_'+p.name+'.diff')).write_text(diff);write(PACK+'/packaging_diffs/packet_'+p.name+'.diff',diff)
+dump(D/'CHANGED_CODE_MAP.json',{'basis':'exact pinned correlated-memory template; full text diffs, not boilerplate-equivalence claims','files':change_map,'primary_execution':None,'scientific_programs_run':0})
+packet_json('CHANGED_CODE_MAP.json',json.loads((D/'CHANGED_CODE_MAP.json').read_text()))
+for p in sorted((D/'template_snapshot').rglob('*')):
+    if p.is_file():archive(p,'exact_packaging_template_provenance_only')
+for name in ['TEMPLATE_MANIFEST.json','INSTRUCTION_MATCH.json','build_proposal.py','inspect_proposal.py','record_metadata.py','seal_packet.py','primary_template.py','wrapper.md','READ_COVERAGE.md']:
+    archive(D/name,'current_packaging_source_provenance_only')
+
+selection=[]
+for row in member_records:
+    recovery=recovery_by_sha.get(row['sha256'])
+    selection.append({**row,'recovery':recovery,'selection_status':'recoverable_selected_identity' if recovery else 'not_selected_historical_or_unrelated_member','limit':None if recovery else 'Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency.'})
+packet_json('BODY_MAP.json',{'note':NOTE,'bodies':body_map})
+packet_json('DEPENDENCIES.json',{'dependencies':dependencies,'older_joint_memory_geometry':'transitive through sole correlated-memory parent','local_bias_and_rotation_are_mathematical_dependencies':False,'git_ancestry_is_not_mathematical_dependency':True})
+packet_json('SOURCE_MANIFEST.json',{'schema':'portable_source_recovery_v1','sources':sources,'scope':'Selected exact recovery, not recursive historical publication archives'})
+packet_json('ARCHIVE_INDEX.json',{'schema':'sha256_deduplicated_recovery_v1','objects':sorted(objects.values(),key=lambda x:x['sha256']),'immutable_bodies_stored_only_in_note':True})
+packet_json('RECOVERY_SELECTION.json',{'current_source_freezes_checked':freeze_checks,'members':selection,'scope':'Historical frozen manifests remain literal; only selected identities have portable recovery payload'})
+packet_json('CANONICAL_BINDING.json',{'kind':'observed_exact_parent_bytes_not_actual_checkout_binding','expected_git_base':None,'parent_sha256':{PARENT:PARENT_SHA},'actual_binding':None,'source_acceptances':{'finite_bank':ACCEPTANCE},'root_reported_context':{'pr':9611,'head':'9369c12d0804f170f0016f5b26d7b12e057f0664','role':'planning context only; not a worker Git observation or future base decision'}})
+packet_json('PUBLICATION_STATE.json',{'kind':'dated_source_proposal_not_actual_binding','created_utc':now,'canonical_binding':None,'git_base':None,'primary_execution':None,'cache_execution':None,'mutation_execution':None,'graph_execution':None,'publication_action':None,'retained_audit':None,'source_decision':ACCEPTANCE,'scientific_programs_run':0,'historical_programs_replayed':0})
+packet_json('ACTUAL_BINDING.json',{'kind':'unbound_source_proposal','canonical_parent_binding_complete':False,'root_read_complete':None,'note_sha256':None,'parent_sha256':None,'source_acceptances':None,'git_base':None,'receipt_paths':[]})
+for p in sorted((D/'packet_text').glob('*')):write(PACK+'/'+p.name,p.read_bytes())
+write(PACK+'/PR_TITLE.txt','[physics-loop] finite-memory-bank: bounded_theorem / conditional-support\n')
+inputs=[]
+for p in sorted(OUT.rglob('*')):
+    if p.is_file() and str(p.relative_to(OUT)) not in {PRIMARY,PACK+'/INPUT_MANIFEST.json',PACK+'/ACTUAL_BINDING.json'}:
+        data=p.read_bytes();inputs.append({'path':str(p.relative_to(OUT)),'bytes':len(data),'sha256':sha(data)})
+packet_json('INPUT_MANIFEST.json',{'schema':'source_integrity_inputs_v1','inputs':inputs,'scope':'All package integrity reads plus one explicit external canonical parent. No scientific execution.'})
+mpath=PACK+'/INPUT_MANIFEST.json'
+declared=sorted({x['path'] for x in inputs}|{mpath,PACK+'/ACTUAL_BINDING.json',PARENT})
+primary=(D/'primary_template.py').read_text().replace('__MANIFEST_SHA256__',sha((OUT/mpath).read_bytes())).replace('__AUDIT_INPUT_PATHS__',repr(declared)).replace('__EXPECTED_BODIES__',repr({x[0]:x[3] for x in BODIES}))
+write(PRIMARY,primary);ast.parse(primary)
+dump(D/'SOURCE_FRESHNESS.json',{'verified_utc':now,'identities':freshness,'freezes':freeze_checks,'scope':'Metadata identity checks only; complete reading coverage separately described'})
+dump(D/'BUILD_RESULT.json',{'built_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'note_bytes':len(note),'note_sha256':sha(note),'immutable_bodies':len(body_map),'mathematical_parents':len(dependencies),'selected_source_records':len(sources),'unique_recovery_blobs':len(objects),'proposal_files':sum(p.is_file() for p in OUT.rglob('*')),'scientific_programs_run':0,'historical_programs_replayed':0,'primary_executed':False,'actual_binding':None,'git_base':None,'source_decision':ACCEPTANCE})
+print((D/'BUILD_RESULT.json').read_text())

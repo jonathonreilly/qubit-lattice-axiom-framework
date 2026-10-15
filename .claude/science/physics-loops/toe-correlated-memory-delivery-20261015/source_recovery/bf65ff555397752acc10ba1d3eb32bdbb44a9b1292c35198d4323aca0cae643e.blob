@@ -1,0 +1,34 @@
+"""Verify immutable source identities and current packet metadata only."""
+from pathlib import Path
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+manifest = json.loads((D / "SOURCE_MANIFEST.json").read_text())
+for row in manifest["files"]:
+    for path in (D / row["snapshot"], Path(row["original"])):
+        data = path.read_bytes()
+        assert len(data) == row["bytes"], str(path)
+        assert hashlib.sha256(data).hexdigest() == row["sha256"], str(path)
+proposal = json.loads((D / "source/PROPOSAL_FREEZE.json").read_text())
+for row in proposal["files"]:
+    data = (D / "source" / row["path"]).read_bytes()
+    assert len(data) == row["bytes"]
+    assert hashlib.sha256(data).hexdigest() == row["sha256"]
+receipt = json.loads((D / "capture_sources.RECEIPT.json").read_text())
+assert receipt["returncode"] == 0
+assert receipt["scientific_run"] is False
+assert hashlib.sha256((D / "capture_sources.py").read_bytes()).hexdigest() == receipt["script_sha256"]
+assert not (D / "capture_sources.stderr").read_bytes()
+data = (D / "REPORT.md").read_bytes()
+print(json.dumps({
+    "status": "metadata verified; no scientific computation performed",
+    "verified_source_snapshots": len(manifest["files"]),
+    "verified_current_originals": len(manifest["files"]),
+    "verified_nested_proposal_members": len(proposal["files"]),
+    "report_bytes": len(data),
+    "report_sha256": hashlib.sha256(data).hexdigest(),
+    "science_runs": 0,
+    "historical_replays": 0,
+    "capture_receipt_verified": True,
+}, indent=2))

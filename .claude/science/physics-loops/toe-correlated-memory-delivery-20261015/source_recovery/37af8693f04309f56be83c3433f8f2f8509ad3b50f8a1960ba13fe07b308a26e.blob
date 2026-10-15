@@ -1,0 +1,19 @@
+{
+  "finished_utc": "2026-10-15T15:59:56.059697+00:00",
+  "exit_code": 0,
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/LAUNCH.json",
+    "bytes": 1257,
+    "sha256": "700da553069fe644784dc73e1fc5652f34a97142456508c7690282b42b0f19e6"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/stdout",
+    "bytes": 416,
+    "sha256": "fd25d374f87af32d519f2a8bf8fd1eca8f3b68a06ff08b2d7390020d37abe8ce"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

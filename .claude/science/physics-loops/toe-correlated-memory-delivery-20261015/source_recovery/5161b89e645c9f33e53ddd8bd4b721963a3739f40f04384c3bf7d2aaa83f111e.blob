@@ -1,0 +1,830 @@
+{
+  "started_utc": "2026-10-15T16:17:14.002967+00:00",
+  "completed_utc": "2026-10-15T16:17:14.211887+00:00",
+  "kind": "metadata source/receipt closure, not science",
+  "checks": [
+    {
+      "name": "independent_freeze /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "independent_sources_reused /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/CURRENT_WRAPPER.diff",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/DELIVERY.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/EXPOSURE.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/METADATA_PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/METADATA_VERIFICATION.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/READING_LOG.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/snapshot/EXECUTION.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/snapshot/LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/snapshot/child_source.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/snapshot/recorder_source.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/snapshot/stderr",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/snapshot/stdout",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/EXECUTION.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/child_source.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/recorder_source.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/stderr",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/stdout",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/record_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/seal_independent.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/snapshot_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_0_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_1_SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_2_REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_3_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_4_DELIVERY.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_5_CLAIM_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_6_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_0_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_1_SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/joint_canonical.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/memory_canonical.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/root_prior_refresh_REFS.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/AUTHOR_CLARIFICATIONS.diff",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/CLOSING_SOURCE_CHECK.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DRAFT_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/METADATA_LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/METADATA_PROCESS_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/ROOT_READ_EXPOSURE.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/SCOPE_PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/SOURCE_CAPTURE_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/capture_sources.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/draft_snapshot/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/draft_snapshot/SCOPE_PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/draft_snapshot/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/metadata.stderr",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/metadata.stdout",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/record_draft_snapshot.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/seal_packet.py",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/joint_readiness_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_biased_memory_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_joint_readiness_correction/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/next_realization_attack/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/next_realization_attack/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "frozen member unchanged /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_biased_memory_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_joint_readiness_correction/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/joint_readiness_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/next_realization_attack/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/next_realization_attack/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/next_realization_attack/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/N/next_realization_attack/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "candidate source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "candidate recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/sources/W/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/draft_snapshot/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/draft_snapshot/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DRAFT_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/DRAFT_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/AUTHOR_CLARIFICATIONS.diff",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/AUTHOR_CLARIFICATIONS.diff",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/SCOPE_PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/SCOPE_PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/SOURCE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/SOURCE_CAPTURE_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/SOURCE_CAPTURE_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/ROOT_READ_EXPOSURE.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/ROOT_READ_EXPOSURE.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/CLOSING_SOURCE_CHECK.json",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/CLOSING_SOURCE_CHECK.json",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/METADATA_LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/METADATA_LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/METADATA_PROCESS_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/METADATA_PROCESS_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/metadata.stdout",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/metadata.stdout",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/metadata.stderr",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/metadata.stderr",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/capture_sources.py",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/capture_sources.py",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/record_draft_snapshot.py",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/record_draft_snapshot.py",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/seal_packet.py",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/candidate/seal_packet.py",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/premises/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/premises/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "comparison copy origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "comparison saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/sources/premises/joint_readiness_root_review/ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "no unlisted files in /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent",
+      "passed": true
+    },
+    {
+      "name": "no unlisted files in /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/joint_canonical.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/memory_canonical.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_0_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_1_SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_2_REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_3_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_4_DELIVERY.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_5_CLAIM_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_6_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_0_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_1_SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "independent instruction/source freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1513/REFS.json",
+      "passed": true
+    },
+    {
+      "name": "independent saved source /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/root_prior_refresh_REFS.json",
+      "passed": true
+    },
+    {
+      "name": "exact canonical body dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "passed": true
+    },
+    {
+      "name": "exact raw body freshness /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "exact canonical body f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "passed": true
+    },
+    {
+      "name": "complete final diff unchanged and exact",
+      "passed": true
+    },
+    {
+      "name": "metadata script parses record_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata script parses seal_comparison.py",
+      "passed": true
+    },
+    {
+      "name": "metadata script parses capture_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata script parses verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "actual capture exit zero",
+      "passed": true
+    },
+    {
+      "name": "actual capture ordered times",
+      "passed": true
+    },
+    {
+      "name": "actual capture saved source_at_launch",
+      "passed": true
+    },
+    {
+      "name": "actual capture saved recorder_at_launch",
+      "passed": true
+    },
+    {
+      "name": "actual capture receipt /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "actual capture receipt /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/stdout",
+      "passed": true
+    },
+    {
+      "name": "actual capture receipt /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/stderr",
+      "passed": true
+    },
+    {
+      "name": "author actual metadata exit zero",
+      "passed": true
+    },
+    {
+      "name": "author metadata ordered times",
+      "passed": true
+    },
+    {
+      "name": "author launched wrapper",
+      "passed": true
+    },
+    {
+      "name": "author launched child",
+      "passed": true
+    },
+    {
+      "name": "author launched derivation",
+      "passed": true
+    },
+    {
+      "name": "author launched plan",
+      "passed": true
+    },
+    {
+      "name": "author launched source_manifest",
+      "passed": true
+    },
+    {
+      "name": "author launched draft_freeze",
+      "passed": true
+    },
+    {
+      "name": "author actual stdout",
+      "passed": true
+    },
+    {
+      "name": "author actual stderr",
+      "passed": true
+    },
+    {
+      "name": "author actual launch",
+      "passed": true
+    },
+    {
+      "name": "author lightweight script pin SOURCE_CAPTURE_RECEIPT.json",
+      "passed": true
+    },
+    {
+      "name": "author lightweight script pin DRAFT_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "capture scoped as non-scientific",
+      "passed": true
+    }
+  ],
+  "check_count": 201,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/REPORT.md",
+    "bytes": 31525,
+    "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+  },
+  "independent_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/DERIVATION.md",
+    "bytes": 27580,
+    "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+  },
+  "candidate_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+    "bytes": 47228,
+    "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+  },
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "scope_limit": "Analytic mathematical assessment only; no fixture or propagator was executed and metadata checks do not establish theorem truth."
+}

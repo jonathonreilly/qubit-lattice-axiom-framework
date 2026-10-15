@@ -1,0 +1,46 @@
+"""Capture reviewed exact sources and metadata recoverability without executing them."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+OUT=Path(__file__).resolve().parent;N=OUT.parent
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def checked(p,bytes_,sha):
+ r=meta(p);assert r['bytes']==bytes_ and r['sha256']==sha,str(p);return r
+started=now()
+pins=[
+('composition','gibbs_markov_composition_root_candidate/DERIVATION.md',7597,'6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f'),
+('gibbs','local_gibbs_memory_interface_root_candidate/DERIVATION.md',13367,'c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747'),
+('gibbs_scope','local_gibbs_memory_interface_root_candidate/LITERATURE_AND_SCOPE.md',2418,'5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee'),
+('gibbs_review','local_gibbs_memory_interface_decisive_check/REPORT.md',26646,'2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10'),
+('markov','correlated_markov_memory_candidate/DERIVATION.md',47228,'685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea'),
+('markov_review','correlated_markov_memory_independent/comparison/REPORT.md',31525,'c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef')]
+sources=[]
+for role,rel,n,h in pins:
+ src=N/rel;checked(src,n,h);dst=OUT/'sources'/rel
+ dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(src.read_bytes())
+ sources.append({'role':role,'origin':meta(src),'recovery':meta(dst)})
+freezes=[];members=[]
+for rel,key in [('gibbs_markov_composition_root_candidate/PROPOSAL_FREEZE.json','files'),('local_gibbs_memory_interface_root_candidate/PROPOSAL_FREEZE.json','files'),('local_gibbs_memory_interface_decisive_check/FINAL_FREEZE.json','files'),('correlated_markov_memory_candidate/FINAL_FREEZE.json','members'),('correlated_markov_memory_independent/comparison/FINAL_FREEZE.json','files')]:
+ src=N/rel;data=json.loads(src.read_text());dst=OUT/'sources'/rel
+ dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(src.read_bytes())
+ freezes.append({'origin':meta(src),'recovery':meta(dst)})
+ for row in data[key]:
+  p=Path(row['path']);p=p if p.is_absolute() else src.parent/p
+  members.append(checked(p,row['bytes'],row['sha256']))
+receipts=[]
+for name in ['SCOPE_AND_PLAN.md','SOURCE_MANIFEST.json','capture_sources.RECEIPT.json','capture_sources.stdout','capture_sources.stderr','capture_sources.py','finalize_metadata.RECEIPT.json','finalize_metadata.stdout','finalize_metadata.stderr','finalize_metadata.py','seal_packet.py']:
+ src=N/'local_gibbs_memory_interface_decisive_check'/name;dst=OUT/'sources/local_gibbs_memory_interface_decisive_check'/name
+ dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(src.read_bytes())
+ receipts.append({'origin':meta(src),'recovery':meta(dst)})
+# Recheck previously read applicable instructions and canonical imports by their sealed source map.
+ind=N/'correlated_markov_memory_independent/independent'
+im=json.loads((ind/'SOURCE_MANIFEST.json').read_text())
+reused=[]
+for row in im['sources']:
+ for key in ['origin','recovery']:
+  r=row[key];reused.append(checked(Path(r['path']),r['bytes'],r['sha256']))
+result={'started_utc':started,'completed_utc':now(),'kind':'metadata-only source capture after substantive reading','sources':sources,'freezes':freezes,'verified_input_members':members,'gibbs_review_receipts':receipts,'reused_instruction_and_canonical_identities':reused,'scientific_executions':0,'scientific_replays':0,'root_acceptance_imported':False,'scope_limit':'Input member hashes establish recovery and freshness, not new reading of unrelated nested proofs or mathematical truth.'}
+(OUT/'SOURCE_MANIFEST.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({'source_count':len(sources),'input_freeze_count':len(freezes),'input_members':len(members),'reused_identities':len(reused),'source_manifest':meta(OUT/'SOURCE_MANIFEST.json'),'scientific_executions':0},sort_keys=True))

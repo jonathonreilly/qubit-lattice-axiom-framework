@@ -1,0 +1,162 @@
+{
+  "checked_utc": "2026-10-15T16:26:24.757112+00:00",
+  "kind": "root_conditional_source_acceptances",
+  "root_read_complete": true,
+  "frozen_sources": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+        "bytes": 6228,
+        "sha256": "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615"
+      },
+      "members": 34
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/FINAL_FREEZE.json",
+        "bytes": 13921,
+        "sha256": "f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4"
+      },
+      "members": 37
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/FINAL_FREEZE.json",
+        "bytes": 16703,
+        "sha256": "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a"
+      },
+      "members": 44
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 616,
+        "sha256": "ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba"
+      },
+      "members": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/FINAL_FREEZE.json",
+        "bytes": 3822,
+        "sha256": "4b29be30e0253c821e1a826eb78064aeae1391a581009a0a740c6d7bce663b67"
+      },
+      "members": 20
+    }
+  ],
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/snapshot/EXECUTION.json",
+      "bytes": 983,
+      "sha256": "b9b12f410eb16092c7a6c67a7132e4ba3cb6f652d9c5ab3b8b3f25d3cbf347e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/metadata_runs/verification/EXECUTION.json",
+      "bytes": 994,
+      "sha256": "37af8693f04309f56be83c3433f8f2f8509ad3b50f8a1960ba13fe07b308a26e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/EXECUTION.json",
+      "bytes": 976,
+      "sha256": "7f414fbbc457e61e0a5a7b8e63893bbe7bd25a4f76f5fb4843d5157bc88412a8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/closure/EXECUTION.json",
+      "bytes": 977,
+      "sha256": "127b433b46e2593b709c94c71097348bf52a438191260b54d03ee6a020330c74"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/METADATA_PROCESS_RECEIPT.json",
+      "bytes": 569,
+      "sha256": "5e3c18b2578ac726d1ab52619ef099232fd1ae05f2edc8cb97d7b74a8db83d00"
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/capture_sources.RECEIPT.json",
+        "bytes": 562,
+        "sha256": "054b249cc68e17beee9565251c61bdc5f1900a9f58890798494c27d1043b3305"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/capture_sources.stdout",
+        "bytes": 114,
+        "sha256": "e6894a6ca664716340069af498d5a354696d9b6d6788158537fd3a5fadc82314"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/capture_sources.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "limit": "No source-at-launch copy or stream digest in this receipt schema; current frozen source and stream bytes verified separately."
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/finalize_metadata.RECEIPT.json",
+        "bytes": 605,
+        "sha256": "dbb3bb49c6fac88c163e704d8437bc6503e5c1b30c9f4ff104bb842a323f6189"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/finalize_metadata.stdout",
+        "bytes": 379,
+        "sha256": "2c4f69c08bb4f088f1f570ed9ae5e1c3945d264c118f0a299fe794aa0cf8e05f"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/finalize_metadata.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "limit": "No source-at-launch copy or stream digest in this receipt schema; current frozen source and stream bytes verified separately."
+    }
+  ],
+  "markov_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/MARKOV_ACCEPTANCE.md",
+    "bytes": 5131,
+    "sha256": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d"
+  },
+  "gibbs_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/GIBBS_ACCEPTANCE.md",
+    "bytes": 4325,
+    "sha256": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632"
+  },
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/AUTHOR_CLARIFICATIONS.diff",
+      "bytes": 11171,
+      "sha256": "c1158abd074e9c66c1943a085a5c42089f0bc0882e6c2046b465637c5bd6c44a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/DERIVATION.md",
+      "bytes": 27580,
+      "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/REPORT.md",
+      "bytes": 31525,
+      "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_root_candidate/DERIVATION.md",
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_root_candidate/LITERATURE_AND_SCOPE.md",
+      "bytes": 2418,
+      "sha256": "5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/REPORT.md",
+      "bytes": 26646,
+      "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+    }
+  ],
+  "scope": "Separate conditional Markov and Gibbs source decisions; composite argument and actual publication remain pending. Full changed arguments and necessary hypotheses read; current identities and actual receipt structure verified. No science execution inferred from metadata.",
+  "scientific_executions": 0,
+  "historical_replays": 0,
+  "formal_proof_runs": 0,
+  "editable_prompt_files_changed": []
+}

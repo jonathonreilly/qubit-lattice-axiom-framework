@@ -1,0 +1,56 @@
+{
+  "checked_utc": "2026-10-15T16:37:41.892031+00:00",
+  "kind": "root_conditional_composition_source_acceptance",
+  "root_read_complete": true,
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_root_review/ACCEPTANCE.md",
+    "bytes": 4125,
+    "sha256": "4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71"
+  },
+  "composition": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_root_candidate/DERIVATION.md",
+    "bytes": 7597,
+    "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f"
+  },
+  "composition_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_root_candidate/PROPOSAL_FREEZE.json",
+    "bytes": 312,
+    "sha256": "76d0700c7841420d06e218ff16e4a631d3f54e558903f25479577de62bc45312"
+  },
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/REPORT.md",
+    "bytes": 20217,
+    "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/FINAL_FREEZE.json",
+    "bytes": 17251,
+    "sha256": "de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6"
+  },
+  "review_members_verified": 43,
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 952,
+      "sha256": "f9366492215430a8ca56ee8fcd869310302c07f1da69c0ad936737a492701e0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/EXECUTION.json",
+      "bytes": 952,
+      "sha256": "51d68a855cabfa37b86f66f53b3af7b627c56d896baa03ff7c8cf028ec978b46"
+    }
+  ],
+  "separate_source_decisions": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/FINAL_FREEZE.json",
+    "bytes": 1001,
+    "sha256": "4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677"
+  },
+  "scientific_executions": 0,
+  "historical_replays": 0,
+  "formal_proof_runs": 0,
+  "remaining": [
+    "Actual source-publication binding and execution",
+    "Current-main/cumulative landing and independent retained audit",
+    "All native supplier/controller/calibration/energy/detector/reuse/full-program obligations in acceptance"
+  ]
+}

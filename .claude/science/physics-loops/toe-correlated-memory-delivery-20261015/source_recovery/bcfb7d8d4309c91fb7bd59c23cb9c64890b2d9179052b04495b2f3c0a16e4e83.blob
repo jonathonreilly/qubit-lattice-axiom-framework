@@ -1,0 +1,104 @@
+{
+  "captured_utc": "2026-10-15T15:36:35.714626+00:00",
+  "source_roles": "see individual coverage; identity/copy is not proof review",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/DERIVATION.md",
+      "copy": "sources/N/local_clock_biased_memory_candidate/DERIVATION.md",
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "bytes": 25740,
+      "read_coverage": "complete new-task read; existing circuit and input distinction"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "copy": "sources/N/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "sha256": "435cf70b8b3a385add4edc73f2383e36a841c43db33559a3380b5217bd7d0222",
+      "bytes": 4801,
+      "read_coverage": "complete new-task read; conditional dependency status"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "copy": "sources/W/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd",
+      "bytes": 51476,
+      "read_coverage": "prior exact wrapper/relevant-body coverage reused; source f38 read completely this task"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "copy": "sources/N/local_clock_joint_readiness_correction/DERIVATION.md",
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "bytes": 40833,
+      "read_coverage": "complete authored coverage reused; full new-task refresh with truncated aggregate tail recovered at lines212-360"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "copy": "sources/N/joint_readiness_root_review/ACCEPTANCE.md",
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478",
+      "bytes": 5501,
+      "read_coverage": "complete new-task read; conditional source acceptance"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "copy": "sources/W/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "bytes": 152470,
+      "read_coverage": "complete current wrapper lines1-113; exact joint body dcee read separately; unrelated routed/review bodies not re-reviewed"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "copy": "sources/N/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "bytes": 28846,
+      "read_coverage": "authored full-source coverage reused; literal geometry/isolation lines179-256 refreshed"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "copy": "sources/W/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649",
+      "bytes": 72885,
+      "read_coverage": "canonical identity bound by joint wrapper; imported exact d4ed geometry, not new simulation review"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "copy": "sources/W/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "bytes": 80595,
+      "read_coverage": "previous exact boundary geometry lines587-643 coverage reused"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/next_realization_attack/REPORT.md",
+      "copy": "sources/N/next_realization_attack/REPORT.md",
+      "sha256": "aba1989f7e2d4c95ee53b0a0466432b577f5e53278b7e9f2fc3e4a38a58c6d63",
+      "bytes": 22794,
+      "read_coverage": "source-exposed author selection proposal, not theorem premise"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/next_realization_attack/FINAL_FREEZE.json",
+      "copy": "sources/N/next_realization_attack/FINAL_FREEZE.json",
+      "sha256": "e4d584768186a8cec83d2c0072197a22bf934484b6f9d4b51201c659a4f20556",
+      "bytes": 7317,
+      "read_coverage": "selection identity only; no scientific rerun"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "copy": "sources/W/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "read_coverage": "complete unchanged prior reading reused"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "copy": "sources/W/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "read_coverage": "complete unchanged prior reading reused"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "copy": "sources/W/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "read_coverage": "complete unchanged immediately preceding task reading reused; installed copy previously matched"
+    }
+  ]
+}

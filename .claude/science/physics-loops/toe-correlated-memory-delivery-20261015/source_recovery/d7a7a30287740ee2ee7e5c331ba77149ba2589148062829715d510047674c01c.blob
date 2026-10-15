@@ -1,0 +1,7 @@
+# Root draft-read exposure
+
+The following parent message was received after the author's complete-draft snapshot and final analytic clarifications, before the final metadata seal. This record attributes the actual scope; it does not confer independent checking or final acceptance. No candidate was sent to the separate checker and there was no proof coordination with it.
+
+> Root has now read the entire frozen 46,121-byte draft_snapshot/DERIVATION.md at 3f52db29364c2258d61575b575967692a5c1dc81742aed3611522523ec0dfa73 (all 46,114 characters, three complete ranges). I separately checked the leaf-gap/count derivation, positive CV branch and scalar action, enlarged-ray adjacency argument, full marginal replacement and three-part turn-on/compression/release proof; no blocking defect found in this read. This is source-exposed root assessment, not independent checking or final acceptance. Preserve that draft and provide exact complete change diff to final so I can reuse coverage. Keep candidate hidden from independent worker until its own freeze. No extra numerical program needed merely for a PASS count.
+
+The requested exact draft-to-final diff is AUTHOR_CLARIFICATIONS.diff. Its before side is the preserved draft just identified. It is metadata describing real source changes, not a rerun or new scientific result.

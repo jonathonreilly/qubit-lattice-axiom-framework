@@ -1,0 +1,178 @@
+{
+  "sealed_utc": "2026-10-15T16:01:32.438201+00:00",
+  "status": "conditional author candidate pending separate check/acceptance",
+  "scientific_run_count": 0,
+  "excluded_exact_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+  "members": [
+    {
+      "path": "AUTHOR_CLARIFICATIONS.diff",
+      "bytes": 11171,
+      "sha256": "c1158abd074e9c66c1943a085a5c42089f0bc0882e6c2046b465637c5bd6c44a"
+    },
+    {
+      "path": "CLOSING_SOURCE_CHECK.json",
+      "bytes": 11201,
+      "sha256": "0f339ff8941a377d442be6f5031daa6b6de2def53626fa57aa851f042e85defc"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+    },
+    {
+      "path": "DRAFT_FREEZE.json",
+      "bytes": 823,
+      "sha256": "d356e6710570fa3e4863d869efada0d62a3d2460bd98a566584225f12d4869b8"
+    },
+    {
+      "path": "METADATA_LAUNCH.json",
+      "bytes": 1277,
+      "sha256": "29190033f2ecbfee2604357492962f0cb4f8c1568e22e08b9273b846d41b5230"
+    },
+    {
+      "path": "METADATA_PROCESS_RECEIPT.json",
+      "bytes": 569,
+      "sha256": "5e3c18b2578ac726d1ab52619ef099232fd1ae05f2edc8cb97d7b74a8db83d00"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 5787,
+      "sha256": "3c2c4da753593892b1a6ba2872f24b290ce5b9758ac50d946476dc2d717debf9"
+    },
+    {
+      "path": "ROOT_READ_EXPOSURE.md",
+      "bytes": 1326,
+      "sha256": "d7a7a30287740ee2ee7e5c331ba77149ba2589148062829715d510047674c01c"
+    },
+    {
+      "path": "SCOPE_PLAN.md",
+      "bytes": 2824,
+      "sha256": "9329dbf8ebd5abae8b12d5ec91d5b770a31634e38d02e70920085098c152e0c8"
+    },
+    {
+      "path": "SOURCE_CAPTURE_RECEIPT.json",
+      "bytes": 357,
+      "sha256": "8f988998ee6a79f859dd816b981569e09d44884a88c004bb7e1d76207c37f44a"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 6542,
+      "sha256": "bcfb7d8d4309c91fb7bd59c23cb9c64890b2d9179052b04495b2f3c0a16e4e83"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 4206,
+      "sha256": "d66a458b15e1ffd19b2d8cab8305981e290ec249c75e91de8da1f5d0ee5ecf80"
+    },
+    {
+      "path": "draft_snapshot/DERIVATION.md",
+      "bytes": 46121,
+      "sha256": "3f52db29364c2258d61575b575967692a5c1dc81742aed3611522523ec0dfa73"
+    },
+    {
+      "path": "draft_snapshot/SCOPE_PLAN.md",
+      "bytes": 2824,
+      "sha256": "9329dbf8ebd5abae8b12d5ec91d5b770a31634e38d02e70920085098c152e0c8"
+    },
+    {
+      "path": "draft_snapshot/SOURCE_MANIFEST.json",
+      "bytes": 6542,
+      "sha256": "bcfb7d8d4309c91fb7bd59c23cb9c64890b2d9179052b04495b2f3c0a16e4e83"
+    },
+    {
+      "path": "metadata.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata.stdout",
+      "bytes": 396,
+      "sha256": "fb8fd5556de47522532bb26678aa5827431c83770d4a46efde7951c91a9a5cbc"
+    },
+    {
+      "path": "record_draft_snapshot.py",
+      "bytes": 1155,
+      "sha256": "2c6d064841a6eb236f8c5d591276b0ec581f5a133c938ec93ae582ebc885bd48"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 2243,
+      "sha256": "89678b9bd660864948b9a5fbbf4cdb8a7e5f49c185841962e0394169fac615cc"
+    },
+    {
+      "path": "sources/N/joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478"
+    },
+    {
+      "path": "sources/N/local_clock_biased_memory_candidate/DERIVATION.md",
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"
+    },
+    {
+      "path": "sources/N/local_clock_biased_memory_root_review/ACCEPTANCE.md",
+      "bytes": 4801,
+      "sha256": "435cf70b8b3a385add4edc73f2383e36a841c43db33559a3380b5217bd7d0222"
+    },
+    {
+      "path": "sources/N/local_clock_joint_readiness_correction/DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+    },
+    {
+      "path": "sources/N/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25"
+    },
+    {
+      "path": "sources/N/next_realization_attack/FINAL_FREEZE.json",
+      "bytes": 7317,
+      "sha256": "e4d584768186a8cec83d2c0072197a22bf934484b6f9d4b51201c659a4f20556"
+    },
+    {
+      "path": "sources/N/next_realization_attack/REPORT.md",
+      "bytes": 22794,
+      "sha256": "aba1989f7e2d4c95ee53b0a0466432b577f5e53278b7e9f2fc3e4a38a58c6d63"
+    },
+    {
+      "path": "sources/W/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "sources/W/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 51476,
+      "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd"
+    },
+    {
+      "path": "sources/W/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 80595,
+      "sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a"
+    },
+    {
+      "path": "sources/W/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 72885,
+      "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649"
+    },
+    {
+      "path": "sources/W/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 152470,
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+    },
+    {
+      "path": "sources/W/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "sources/W/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "path": "verify_metadata.py",
+      "bytes": 2114,
+      "sha256": "da702251c16623c9a3e379304fbabf235c8d07d5304e0ed70da6dd31f1a05fb7"
+    }
+  ]
+}

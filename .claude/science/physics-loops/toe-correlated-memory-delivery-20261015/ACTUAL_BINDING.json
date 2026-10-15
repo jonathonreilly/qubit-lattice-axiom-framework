@@ -1,0 +1,185 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T17:10:12.626227+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+  "parent_sha256": {
+    "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+    "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd"
+  },
+  "source_acceptances": {
+    "markov": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d",
+    "gibbs": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632",
+    "composition": "4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71"
+  },
+  "git_base": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+  "base_branch": "physics-loop/toe-readiness-resources-20261015",
+  "planned_feature_branch": "physics-loop/toe-correlated-memory-delivery-20261015",
+  "observed_parent_prs": {
+    "stack": {
+      "baseRefName": "physics-loop/toe-joint-readiness-20261015",
+      "headRefName": "physics-loop/toe-readiness-resources-20261015",
+      "headRefOid": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+      "isDraft": false,
+      "number": 9609,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9609"
+    },
+    "joint": {
+      "baseRefName": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+      "headRefName": "physics-loop/toe-joint-readiness-20261015",
+      "headRefOid": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+      "isDraft": false,
+      "number": 9607,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9607"
+    },
+    "memory": {
+      "baseRefName": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+      "headRefName": "physics-loop/toe-local-clock-memory-resources-20261015",
+      "headRefOid": "93ac27f053e952e811bc07a7130bbdc44af8e2c8",
+      "isDraft": false,
+      "number": 9601,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9601"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+  "raw_bodies": [
+    {
+      "name": "markov_author",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 28196,
+      "end_byte_exclusive": 75424,
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+    },
+    {
+      "name": "markov_pre_exposure",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 75566,
+      "end_byte_exclusive": 103146,
+      "bytes": 27580,
+      "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+    },
+    {
+      "name": "markov_comparison",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 103286,
+      "end_byte_exclusive": 134811,
+      "bytes": 31525,
+      "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+    },
+    {
+      "name": "gibbs_author",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 134946,
+      "end_byte_exclusive": 148313,
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+    },
+    {
+      "name": "gibbs_assessment",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 148452,
+      "end_byte_exclusive": 175098,
+      "bytes": 26646,
+      "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+    },
+    {
+      "name": "composition_author",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 175239,
+      "end_byte_exclusive": 182836,
+      "bytes": 7597,
+      "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f"
+    },
+    {
+      "name": "composition_assessment",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 182981,
+      "end_byte_exclusive": 203198,
+      "bytes": 20217,
+      "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 152470,
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "claim_id": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "accepted_body_interval": {
+        "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70024,
+        "end_byte_exclusive": 110857,
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "role": "direct_mathematical_parent"
+    },
+    {
+      "path": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 51476,
+      "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd",
+      "claim_id": "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "accepted_body_interval": {
+        "container": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 25736,
+        "end_byte_exclusive": 51476,
+        "bytes": 25740,
+        "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"
+      },
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/REFS.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/historical_recorder.py",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/live_recorder.py",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/fetch_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/fetch_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/inventory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/inventory_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/inventory_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_executed_source.py",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_LAUNCH.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_LAUNCH.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_LAUNCH.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_stderr"
+  ],
+  "source_proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_publication_draft/FINAL_FREEZE.json",
+    "bytes": 45949,
+    "sha256": "6ab1df30d82b0ee7abb39c2da9739a2d9745e120e565e55355838ab841e7f003"
+  },
+  "root_source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_publication_review/ROOT_REVIEW.json",
+    "bytes": 9593,
+    "sha256": "557feb9618c5153721f5006f33ae2b3870dc962bb452cc90dd7b96a9eac16071"
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T17:10:12.626431+00:00",
+    "reviewed_source_sha256": "6ab1df30d82b0ee7abb39c2da9739a2d9745e120e565e55355838ab841e7f003"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "retained_audit": false
+}

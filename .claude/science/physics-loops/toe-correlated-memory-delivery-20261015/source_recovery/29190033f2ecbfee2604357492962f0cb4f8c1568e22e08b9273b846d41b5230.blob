@@ -1,0 +1,36 @@
+{
+  "kind": "contemporaneous metadata-process launch; not science",
+  "started_utc": "2026-10-15T16:01:32.339468+00:00",
+  "wrapper_pid": 72364,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/verify_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate",
+  "wrapper": {
+    "bytes": 2243,
+    "sha256": "89678b9bd660864948b9a5fbbf4cdb8a7e5f49c185841962e0394169fac615cc"
+  },
+  "child": {
+    "bytes": 2114,
+    "sha256": "da702251c16623c9a3e379304fbabf235c8d07d5304e0ed70da6dd31f1a05fb7"
+  },
+  "derivation": {
+    "bytes": 47228,
+    "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+  },
+  "plan": {
+    "bytes": 2824,
+    "sha256": "9329dbf8ebd5abae8b12d5ec91d5b770a31634e38d02e70920085098c152e0c8"
+  },
+  "source_manifest": {
+    "bytes": 6542,
+    "sha256": "bcfb7d8d4309c91fb7bd59c23cb9c64890b2d9179052b04495b2f3c0a16e4e83"
+  },
+  "draft_freeze": {
+    "bytes": 823,
+    "sha256": "d356e6710570fa3e4863d869efada0d62a3d2460bd98a566584225f12d4869b8"
+  },
+  "scientific_execution": false
+}

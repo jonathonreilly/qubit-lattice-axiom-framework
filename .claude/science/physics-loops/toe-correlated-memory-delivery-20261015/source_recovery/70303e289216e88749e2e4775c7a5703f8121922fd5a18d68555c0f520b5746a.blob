@@ -1,0 +1,30 @@
+"""Record exact root composition reading and metadata continuity; no science."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1];R=N/'gibbs_markov_composition_decisive_check';D=N/'gibbs_markov_composition_root_review';C=N/'gibbs_markov_composition_root_candidate'
+def js(p):return json.loads(p.read_bytes())
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def identity(row):
+ p=Path(row['path']);got=pin(p);assert got['bytes']==row['bytes'] and got['sha256']==row['sha256'];return p
+f=js(R/'FINAL_FREEZE.json');assert pin(R/'FINAL_FREEZE.json')['sha256']=='de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6'
+assert {p for p in R.rglob('*') if p.is_file() and p!=R/'FINAL_FREEZE.json'}=={identity(row) for row in f['files']}
+m=js(R/'SOURCE_MANIFEST.json')
+for k in ['sources','freezes','gibbs_review_receipts']:
+ for row in m[k]:identity(row['origin']);identity(row['recovery'])
+for k in ['verified_input_members','reused_instruction_and_canonical_identities']:
+ for row in m[k]:identity(row)
+receipts=[]
+for folder in sorted((R/'metadata_runs').iterdir()):
+ e=js(folder/'EXECUTION.json');l=js(folder/'LAUNCH.json');assert e['exit_code']==0 and l['started_utc']<=e['finished_utc']
+ for key in ['launch','stdout','stderr']:identity(e[key])
+ for fn,key in [('child_source.py','child'),('recorder_source.py','recorder')]:
+  row=l[key];identity(row);got=pin(folder/fn);assert (got['bytes'],got['sha256'])==(row['bytes'],row['sha256'])
+ receipts.append(pin(folder/'EXECUTION.json'))
+assert pin(C/'DERIVATION.md')['sha256']=='6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f'
+assert js(R/'CLOSING_METADATA.json')['report']['sha256']==pin(R/'REPORT.md')['sha256']=='406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b'
+v={'checked_utc':datetime.now(timezone.utc).isoformat(),'kind':'root_conditional_composition_source_acceptance','root_read_complete':True,'acceptance':pin(D/'ACCEPTANCE.md'),'composition':pin(C/'DERIVATION.md'),'composition_freeze':pin(C/'PROPOSAL_FREEZE.json'),'report':pin(R/'REPORT.md'),'review_freeze':pin(R/'FINAL_FREEZE.json'),'review_members_verified':len(f['files']),'actual_metadata_receipts':receipts,'separate_source_decisions':pin(N/'correlated_memory_root_review/FINAL_FREEZE.json'),'scientific_executions':0,'historical_replays':0,'formal_proof_runs':0,'remaining':['Actual source-publication binding and execution','Current-main/cumulative landing and independent retained audit','All native supplier/controller/calibration/energy/detector/reuse/full-program obligations in acceptance']}
+(D/'VERIFICATION.json').write_text(json.dumps(v,indent=2)+'\n')
+(D/'FINAL_FREEZE.json').write_text(json.dumps({'sealed_utc':datetime.now(timezone.utc).isoformat(),'files':[pin(p) for p in sorted(D.iterdir()) if p.is_file()],'scope':'Root conditional composition decision only; no retained audit or publication'},indent=2)+'\n')
+print(json.dumps({'acceptance':pin(D/'ACCEPTANCE.md'),'verification':pin(D/'VERIFICATION.json'),'freeze':pin(D/'FINAL_FREEZE.json'),'scientific_executions':0}))

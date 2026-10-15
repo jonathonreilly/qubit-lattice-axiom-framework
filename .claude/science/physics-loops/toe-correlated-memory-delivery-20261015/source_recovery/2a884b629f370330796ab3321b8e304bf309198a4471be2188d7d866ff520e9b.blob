@@ -1,0 +1,25 @@
+"""Record source metadata verification, then freeze this independent subtree before candidate exposure."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,subprocess,sys
+OUT=Path(__file__).resolve().parent
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+assert not (OUT/'FINAL_FREEZE.json').exists()
+r=subprocess.run([sys.executable,'-B',str(OUT/'record_metadata.py'),'verify_metadata.py','verification'],cwd=OUT,capture_output=True)
+sys.stdout.buffer.write(r.stdout);sys.stderr.buffer.write(r.stderr)
+if r.returncode:raise SystemExit(r.returncode)
+receipts=[]
+for run in sorted((OUT/'metadata_runs').iterdir()):
+ e=json.loads((run/'EXECUTION.json').read_text());assert e['exit_code']==0
+ receipts.append({'launch':meta(run/'LAUNCH.json'),'execution':meta(run/'EXECUTION.json'),'stdout':meta(run/'stdout'),'stderr':meta(run/'stderr')})
+delivery={'created_utc':now(),'status':'independent analytic source sealed before new-candidate exposure','derivation':meta(OUT/'DERIVATION.md'),'source_manifest':meta(OUT/'SOURCE_MANIFEST.json'),'actual_metadata_receipts':receipts,'scientific_executions':0,'scientific_replays':0,'new_candidate_exposed':False,'git_operations':0,'model_override':False,'delegation':False,'editable_prompt_files_changed':[],'next_action':'Only after this freeze, receive and compare the candidate in a separate sibling comparison directory. Preserve this subtree byte-exact.'}
+(OUT/'DELIVERY.json').write_text(json.dumps(delivery,indent=2)+'\n')
+files=[]
+for p in sorted(OUT.rglob('*')):
+ if p.is_file() and p!=OUT/'FINAL_FREEZE.json':
+  row=meta(p);row['relative_path']=str(p.relative_to(OUT));files.append(row)
+freeze={'schema':'independent_pre_candidate_source_freeze_v1','sealed_utc':now(),'root':str(OUT),'excludes_only':str(OUT/'FINAL_FREEZE.json'),'file_count':len(files),'files':files,'new_candidate_exposed':False,'scientific_executions':0,'scientific_replays':0,'status':'conditional analytic construction; no audit verdict'}
+(OUT/'FINAL_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n')
+print(json.dumps({'freeze':meta(OUT/'FINAL_FREEZE.json'),'derivation':meta(OUT/'DERIVATION.md'),'files':len(files),'new_candidate_exposed':False,'scientific_executions':0},sort_keys=True))

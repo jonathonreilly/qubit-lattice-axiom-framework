@@ -1,0 +1,25 @@
+"""Launch/capture one metadata-only closure process, then seal all packet members."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,subprocess,sys,os
+D=Path(__file__).resolve().parent
+def utc(): return datetime.now(timezone.utc).isoformat()
+def rec(p):
+ b=p.read_bytes();return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+if (D/'FINAL_FREEZE.json').exists(): raise RuntimeError('refuse to overwrite final seal')
+child=D/'verify_metadata.py'
+launch={'kind':'contemporaneous metadata-process launch; not science','started_utc':utc(),'wrapper_pid':os.getpid(),'command':[sys.executable,'-B',str(child)],'cwd':str(D),'wrapper':rec(Path(__file__)),'child':rec(child),'derivation':rec(D/'DERIVATION.md'),'plan':rec(D/'SCOPE_PLAN.md'),'source_manifest':rec(D/'SOURCE_MANIFEST.json'),'draft_freeze':rec(D/'DRAFT_FREEZE.json'),'scientific_execution':False}
+(D/'METADATA_LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+proc=subprocess.run(launch['command'],cwd=D,capture_output=True)
+(D/'metadata.stdout').write_bytes(proc.stdout)
+(D/'metadata.stderr').write_bytes(proc.stderr)
+receipt={'kind':'actual completed metadata child process','started_utc':launch['started_utc'],'completed_utc':utc(),'returncode':proc.returncode,'stdout':rec(D/'metadata.stdout'),'stderr':rec(D/'metadata.stderr'),'launch':rec(D/'METADATA_LAUNCH.json'),'scientific_execution':False}
+(D/'METADATA_PROCESS_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+if proc.returncode!=0:
+ sys.stdout.buffer.write(proc.stdout);sys.stderr.buffer.write(proc.stderr);raise SystemExit(proc.returncode)
+freeze=D/'FINAL_FREEZE.json';members=[]
+for p in sorted(D.rglob('*')):
+ if p.is_file() and p!=freeze:
+  members.append({'path':str(p.relative_to(D)),**rec(p)})
+freeze.write_text(json.dumps({'sealed_utc':utc(),'status':'conditional author candidate pending separate check/acceptance','scientific_run_count':0,'excluded_exact_path':str(freeze),'members':members},indent=2)+'\n')
+print(json.dumps({'derivation':rec(D/'DERIVATION.md'),'report':rec(D/'REPORT.md'),'diff':rec(D/'AUTHOR_CLARIFICATIONS.diff'),'freeze':rec(freeze),'members':len(members),'metadata_child_returncode':proc.returncode,'scientific_run_count':0}))

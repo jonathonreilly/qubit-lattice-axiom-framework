@@ -1,0 +1,7 @@
+# Selected portable recovery
+
+The seven immutable body intervals in BODY_MAP.json recover exact scientific sources from the proposed canonical note. DEPENDENCIES.json binds exactly the two canonical mathematical parents and their accepted raw-body intervals. SOURCE_MANIFEST.json maps every selected source role to a body interval, exact external parent/interval, or SHA256 blob. ARCHIVE_INDEX.json deduplicates selected blobs by content, including empty streams and overlapping historical source copies.
+
+Selection includes the current source/review packets' top-level records, the preserved Markov draft/diff, their actual metadata-run records, the three root decisions and associated verification/freezes and actual root acceptance runs. It does not recursively copy prior publication archives or every original source snapshot named by each historical manifest. RECOVERY_SELECTION.json records each current frozen member and whether it is recoverable from the selected package. Unselected historical members remain labeled, rather than being silently represented as portable complete closure.
+
+Historical paths and timestamps inside immutable receipts stay literal. Runtime integrity reads use safe repository-relative paths only; no dependency on the original author's absolute workspace is introduced. Root must bind the exact canonical parents in the actual proposed tree. Source-integrity checks are not mathematical validation, and current hashes do not manufacture missing source-at-launch or stream-digest fields in older receipts.

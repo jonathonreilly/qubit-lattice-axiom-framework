@@ -1,0 +1,50 @@
+{
+  "checked_utc": "2026-10-15T16:34:22.415221+00:00",
+  "refs": {
+    "HEAD": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main_unchanged": true,
+  "instructions_unchanged": true,
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1622/stdout",
+    "bytes": 15186,
+    "sha256": "5daf34cc54ab970c81310ba9089b0ecf52e575be68b5e5a66365608ce8c5773a"
+  },
+  "open_pr_count": 39,
+  "new_or_changed_rows": [
+    {
+      "baseRefName": "physics-loop/toe-joint-readiness-20261015",
+      "headRefName": "physics-loop/toe-readiness-resources-20261015",
+      "headRefOid": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+      "isDraft": false,
+      "number": 9609,
+      "title": "[physics-loop] readiness-resources: bounded_theorem / conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9609"
+    },
+    {
+      "baseRefName": "codex/observations-backward-growth-20261015",
+      "headRefName": "codex/observations-backward-dynamics-20261015",
+      "headRefOid": "f3637a4eba3fb18690fe6a2b03d9455c60cc6363",
+      "isDraft": false,
+      "number": 9608,
+      "title": "[physics-loop] full-wave scalar inverse: bounded_theorem / conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9608"
+    }
+  ],
+  "removed_rows": [],
+  "actual_fetch_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1622/EXECUTION.json",
+  "actual_inventory_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1622/EXECUTION.json",
+  "external_scope_report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1622/EXTERNAL_9608_SCOPE/REPORT.md",
+    "bytes": 6821,
+    "sha256": "346d5e29f9fe1bc324810c9125d29451db0dad84afed520942d6a7cc57e62962"
+  },
+  "external_scope_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1622/EXTERNAL_9608_SCOPE/FINAL_FREEZE.json",
+    "bytes": 12538,
+    "sha256": "f7243892da7fc9bb896daa1a1e1a0197a9af7c6e5329ca13406df2d4e23210a1"
+  },
+  "scope_review": "Root read complete bounded report; all72 frozen members verified. Separate scalar inverse; no imported science. Shared manifest must preserve both node additions at future combined integration."
+}

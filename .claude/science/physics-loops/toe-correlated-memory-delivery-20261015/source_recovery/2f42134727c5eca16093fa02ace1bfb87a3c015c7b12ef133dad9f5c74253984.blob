@@ -1,0 +1,171 @@
+{
+  "checked_utc": "2026-10-15T15:59:56.055041+00:00",
+  "kind": "metadata_source_freshness_only",
+  "checks": [
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/joint_canonical.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/memory_canonical.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_0_AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_1_SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_2_REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_3_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_4_DELIVERY.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_5_CLAIM_STATUS.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_6_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_0_SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_1_SKILL_FRESHNESS_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "origin /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1513/REFS.json",
+      "passed": true
+    },
+    {
+      "name": "recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/root_prior_refresh_REFS.json",
+      "passed": true
+    },
+    {
+      "name": "body dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "passed": true
+    },
+    {
+      "name": "body live origin dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "passed": true
+    },
+    {
+      "name": "body f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "passed": true
+    },
+    {
+      "name": "metadata source parses record_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source parses snapshot_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source parses seal_independent.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source parses verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "snapshot actually exited zero",
+      "passed": true
+    },
+    {
+      "name": "actual snapshot source_at_launch",
+      "passed": true
+    },
+    {
+      "name": "actual snapshot recorder_at_launch",
+      "passed": true
+    },
+    {
+      "name": "actual snapshot launch",
+      "passed": true
+    },
+    {
+      "name": "actual snapshot stdout",
+      "passed": true
+    },
+    {
+      "name": "actual snapshot stderr",
+      "passed": true
+    },
+    {
+      "name": "actual snapshot timestamp order",
+      "passed": true
+    },
+    {
+      "name": "independent scope explicitly stated",
+      "passed": true
+    }
+  ],
+  "check_count": 39,
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "new_candidate_exposed": false,
+  "derivation": {
+    "bytes": 27580,
+    "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+  },
+  "scope_limit": "No numerical or symbolic scientific diagnostic was run; mathematical claims are analytic."
+}

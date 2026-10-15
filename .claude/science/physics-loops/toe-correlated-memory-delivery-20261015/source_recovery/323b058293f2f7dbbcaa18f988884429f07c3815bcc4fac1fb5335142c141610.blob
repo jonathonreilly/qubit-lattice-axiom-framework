@@ -1,0 +1,27 @@
+"""Record closing metadata child and freeze only this new review directory."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,subprocess,sys
+OUT=Path(__file__).resolve().parent
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+assert not (OUT/'FINAL_FREEZE.json').exists()
+r=subprocess.run([sys.executable,'-B',str(OUT/'record_metadata.py'),'verify_metadata.py','closure'],cwd=OUT,capture_output=True)
+sys.stdout.buffer.write(r.stdout);sys.stderr.buffer.write(r.stderr)
+if r.returncode:raise SystemExit(r.returncode)
+receipts=[]
+for run in sorted((OUT/'metadata_runs').iterdir()):
+ e=json.loads((run/'EXECUTION.json').read_text());assert e['exit_code']==0
+ for key in ['launch','stdout','stderr']:
+  want=e[key];got=meta(Path(want['path']));assert got['bytes']==want['bytes'] and got['sha256']==want['sha256']
+ receipts.append({'launch':meta(run/'LAUNCH.json'),'execution':meta(run/'EXECUTION.json'),'stdout':meta(run/'stdout'),'stderr':meta(run/'stderr')})
+delivery={'created_utc':now(),'status':'conditional composition supported; monotone switch and supplied diagonal channels retained; no audit verdict','report':meta(OUT/'REPORT.md'),'source_manifest':meta(OUT/'SOURCE_MANIFEST.json'),'closing_metadata':meta(OUT/'CLOSING_METADATA.json'),'actual_metadata_receipts':receipts,'scientific_executions':0,'scientific_replays':0,'model_override':False,'delegation':False,'git_operations':0,'editable_prompt_files_changed':[],'root_acceptance_imported':False,'scope_limit':'No native thermal preparation, controller, feasible common cap, restoration or full-program realization.'}
+(OUT/'DELIVERY.json').write_text(json.dumps(delivery,indent=2)+'\n')
+files=[]
+for p in sorted(OUT.rglob('*')):
+ if p.is_file() and p!=OUT/'FINAL_FREEZE.json':
+  row=meta(p);row['relative_path']=str(p.relative_to(OUT));files.append(row)
+freeze={'schema':'gibbs_markov_composition_review_v1','sealed_utc':now(),'root':str(OUT),'excluded_exact_path':str(OUT/'FINAL_FREEZE.json'),'files':files,'file_count':len(files),'all_nested_freezes_included_by_full_path':True,'scientific_executions':0,'scientific_replays':0}
+(OUT/'FINAL_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n')
+print(json.dumps({'report':meta(OUT/'REPORT.md'),'freeze':meta(OUT/'FINAL_FREEZE.json'),'files':len(files),'scientific_executions':0},sort_keys=True))

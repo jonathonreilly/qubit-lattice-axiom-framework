@@ -1,0 +1,19 @@
+{
+  "finished_utc": "2026-10-15T16:29:19.375980+00:00",
+  "exit_code": 0,
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/LAUNCH.json",
+    "bytes": 1181,
+    "sha256": "bc316d52f05848291c2801dd9fb4bb571b41b20a44f370bc17d5fed8358d0bd8"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/stdout",
+    "bytes": 396,
+    "sha256": "07898d95c68905e961d16e301f549f2a09bd1e7966d2e4a9a8aa1715dcb5dc66"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

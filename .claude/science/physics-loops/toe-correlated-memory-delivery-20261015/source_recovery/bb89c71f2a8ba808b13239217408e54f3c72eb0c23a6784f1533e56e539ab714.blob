@@ -1,0 +1,39 @@
+"""Snapshot only explicitly admitted sources; no scientific program or candidate access."""
+from pathlib import Path
+from datetime import datetime,timezone
+import difflib,hashlib,json
+OUT=Path(__file__).resolve().parent;N=OUT.parent.parent;W=N.parent/'correlation_worktree'
+def sha(b):return hashlib.sha256(b).hexdigest()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':sha(b)}
+def write(p,x):p.write_text(json.dumps(x,indent=2)+'\n')
+snapshot=OUT/'sources';snapshot.mkdir(exist_ok=False)
+joint=W/'docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+memory=W/'docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+admitted=[(joint,'joint_canonical.md','00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e'),(memory,'memory_canonical.md','32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd')]
+rows=[]
+for source,name,h in admitted:
+ b=source.read_bytes();assert sha(b)==h
+ (snapshot/name).write_bytes(b);rows.append({'origin':meta(source),'recovery':meta(snapshot/name),'role':'accepted source; see reading log for precise refreshed/reused coverage'})
+prior_manifest=N/'joint_readiness_publication_draft/proposal/.claude/science/physics-loops/toe-joint-readiness-20261015/SOURCE_MANIFEST.json'
+instructions=json.loads(prior_manifest.read_text())['instruction_identities']
+extra=[W/'docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md',W/'docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md']
+for i,row in enumerate(instructions):
+ p=Path(row['path']);b=p.read_bytes();assert len(b)==row['bytes'] and sha(b)==row['sha256']
+ dest=snapshot/('instruction_'+str(i)+'_'+p.name);dest.write_bytes(b)
+ rows.append({'origin':meta(p),'recovery':meta(dest),'role':'previously read exact instruction; identity refreshed'})
+for i,p in enumerate(extra):
+ dest=snapshot/('instruction_extra_'+str(i)+'_'+p.name);dest.write_bytes(p.read_bytes())
+ rows.append({'origin':meta(p),'recovery':meta(dest),'role':'read during this independent task'})
+refs=N/'main_refresh_1513/REFS.json';dest=snapshot/'root_prior_refresh_REFS.json';dest.write_bytes(refs.read_bytes());rows.append({'origin':meta(refs),'recovery':meta(dest),'role':'saved root main/instruction context; HEAD is its dated pre-9607 checkout, not a new Git observation'})
+raw_joint=N/'local_clock_joint_readiness_correction/DERIVATION.md';j=raw_joint.read_bytes();jc=joint.read_bytes();assert sha(j)=='dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179' and jc.count(j)==1
+body_joint={'origin':meta(raw_joint),'container':str(snapshot/'joint_canonical.md'),'start_byte_inclusive':jc.index(j),'end_byte_exclusive':jc.index(j)+len(j),'bytes':len(j),'sha256':sha(j),'role':'complete prior mathematical read/check reused at exact identity; selected obligations refreshed'}
+mb=memory.read_bytes();start=mb.index(b'# Finite biased memory for the supplied nearest-neighbour clock reset\n');raw=mb[start:]
+assert len(raw)==25740 and sha(raw)=='f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a'
+body_memory={'origin_container':meta(memory),'container':str(snapshot/'memory_canonical.md'),'start_byte_inclusive':start,'end_byte_exclusive':len(mb),'bytes':len(raw),'sha256':sha(raw),'role':'complete constructive raw body read; only explicit gate machinery reused, not its independent input or normalized-success target'}
+old=N/'joint_readiness_publication_draft/proposal/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+a=old.read_text().split('<!-- BEGIN IMMUTABLE routed_proof -->')[0];b=joint.read_text().split('<!-- BEGIN IMMUTABLE routed_proof -->')[0]
+(OUT/'CURRENT_WRAPPER.diff').write_text(''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='previous_fully_read_wrapper',tofile='current_canonical_wrapper')))
+manifest={'created_utc':datetime.now(timezone.utc).isoformat(),'source_access_boundary':'Only the explicitly listed accepted scientific/instruction sources were read by this script; new candidate and next-attack directories were not accessed.','sources':rows,'bodies':[body_joint,body_memory],'wrapper_diff':meta(OUT/'CURRENT_WRAPPER.diff'),'previous_wrapper_origin':meta(old),'scientific_executions':0,'previous_science_replays':0,'git_operations':0,'new_candidate_exposed':False,'same_model_and_prior_source_exposure':'See EXPOSURE.md; not blind to accepted prior machinery.'}
+write(OUT/'SOURCE_MANIFEST.json',manifest)
+print(json.dumps({'sources_snapshotted':len(rows),'body_intervals':manifest['bodies'],'manifest':meta(OUT/'SOURCE_MANIFEST.json'),'scientific_executions':0,'new_candidate_exposed':False},sort_keys=True))

@@ -1,0 +1,12 @@
+# Actual reading and reuse
+
+The task began with the actual clock reading 2026-10-15 15:31:20 UTC. The independent derivation was developed before receiving or reading the new candidate. The eventual freeze time is recorded separately by the metadata seal, not inferred here.
+
+* Corrected joint source dcee9d6f: complete earlier read/review reused at its unchanged full SHA256; current sections 1–9, including arbitrary correlated input, full-space compensation/release, coordinates, isolation and resource/error clauses, were refreshed as needed. No unrelated parent proof was re-reviewed.
+* Current joint canonical00c2097a: exact file identity checked; complete changed wrapper relative to the previously fully read frozen wrapper was read as a unified diff. It changes binding/runner prose, not mathematics.
+* Memory canonical32e4: current wrapper lines 34–202 read; complete constructive raw body from line 330 to EOF read in two contiguous ranges. The intervening separate spectral application was not used as a theorem premise and was not re-reviewed. The raw constructive interval [25736,51476) is exactly f38d4590.
+* Current physics-claim-reviewer skill and skill-freshness procedure read. Previously read SCIENCE_WORKFLOW, conformance, physics-loop/delivery/claim-status and workhorse instructions reused after exact hash checks. Installed and checkout physics-claim-reviewer/physics-loop/workhorse skill bytes match. No fetch or Git command was run by this worker; the root's saved main/instruction refresh provides the revision context.
+
+The first locator included a guessed old memory-candidate directory that was absent; no source content was inferred from that locator. All needed memory content was subsequently read from the exact canonical document. Tool output used for the necessary proof reads was not truncated. Nothing in either forbidden new-work directory was read or inventoried.
+
+The source manifest records actual origin paths, byte counts, hashes, selected body intervals and local recovery paths. Metadata verification checks freshness and copied bytes; it does not mechanically prove the new mathematics.

@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/correlated_memory_delivery_and_readiness_2026_10_15.py
+runner_sha256: c4dde1de103eeafd8cdb381a3ed0a421077efcc08e96dce976a90a4972ba6f35
+input_fingerprint_sha256: bbbccf94c3310e717d229979b3d870535c6d84378da4cbcbfa5b418bdac2e24a
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and binding only; no mathematical validation by execution"}
+per_element: source coefficients remain literal text; no physical element or gate run
+per_site: fixed-endpoint geometry premises preserved by exact bodies, not a new site test
+per_mode: arbitrary correlated-input and exact-marginal scopes preserved as source
+per_block: immutable source bodies, two parents and actual binding identities checked
+lattice_wide: no native supplier, full program, thermalization or audit is certified
+
+----- stderr -----
+

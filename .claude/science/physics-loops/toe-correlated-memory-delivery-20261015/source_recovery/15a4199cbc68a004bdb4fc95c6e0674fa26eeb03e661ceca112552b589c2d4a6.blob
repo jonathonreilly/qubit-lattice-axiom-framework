@@ -1,0 +1,50 @@
+"""Verify exact reviewed sources and actual metadata receipts; no science execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,difflib
+N=Path(__file__).resolve().parents[1];D=N/'correlated_memory_root_review'
+def sha(b):return hashlib.sha256(b).hexdigest()
+def js(p):return json.loads(p.read_bytes())
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':sha(b)}
+def ident(p,row):
+ b=p.read_bytes();assert len(b)==row['bytes'] and sha(b)==row['sha256'],str(p)
+def freeze(p,key,expected):
+ assert pin(p)['sha256']==expected
+ f=js(p);base=p.parent;paths=[]
+ for r in f[key]:
+  x=Path(r['path']);x=x if x.is_absolute() else base/x;ident(x,r);paths.append(x)
+ assert {x for x in base.rglob('*') if x.is_file() and x!=p}==set(paths)
+ return {'freeze':pin(p),'members':len(paths)}
+c=N/'correlated_markov_memory_candidate';i=N/'correlated_markov_memory_independent/independent';r=N/'correlated_markov_memory_independent/comparison';g=N/'local_gibbs_memory_interface_root_candidate';v=N/'local_gibbs_memory_interface_decisive_check'
+frozen=[freeze(c/'FINAL_FREEZE.json','members','80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615'),freeze(i/'FINAL_FREEZE.json','files','f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4'),freeze(r/'FINAL_FREEZE.json','files','2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a'),freeze(g/'PROPOSAL_FREEZE.json','files','ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba'),freeze(v/'FINAL_FREEZE.json','files','4b29be30e0253c821e1a826eb78064aeae1391a581009a0a740c6d7bce663b67')]
+before=(c/'draft_snapshot/DERIVATION.md').read_text().splitlines(True);after=(c/'DERIVATION.md').read_text().splitlines(True)
+assert ''.join(difflib.unified_diff(before,after,fromfile='draft_snapshot/DERIVATION.md',tofile='DERIVATION.md'))==(c/'AUTHOR_CLARIFICATIONS.diff').read_text()
+for row in js(c/'SOURCE_MANIFEST.json')['sources']:
+ ident(Path(row['source']),row);ident(c/row['copy'],row)
+for row in js(i/'SOURCE_MANIFEST.json')['sources']:
+ ident(Path(row['origin']['path']),row['origin']);ident(Path(row['recovery']['path']),row['recovery'])
+for row in js(v/'SOURCE_MANIFEST.json')['files']:
+ ident(Path(row['original']),row);ident(v/row['snapshot'],row)
+receipts=[]
+for base in [i,r]:
+ for folder in sorted((base/'metadata_runs').iterdir()):
+  e=js(folder/'EXECUTION.json');l=js(folder/'LAUNCH.json');assert e['exit_code']==0 and l['started_utc']<=e['finished_utc']
+  for k in ['launch','stdout','stderr']:ident(Path(e[k]['path']),e[k])
+  for fn,k in [('child_source.py','source_at_launch'),('recorder_source.py','recorder_at_launch')]:ident(folder/fn,l[k]);ident(Path(l[k]['path']),l[k])
+  receipts.append(pin(folder/'EXECUTION.json'))
+e=js(c/'METADATA_PROCESS_RECEIPT.json');l=js(c/'METADATA_LAUNCH.json');assert e['returncode']==0
+for fn,k in [('metadata.stdout','stdout'),('metadata.stderr','stderr'),('METADATA_LAUNCH.json','launch')]:ident(c/fn,e[k])
+for fn,k in [('seal_packet.py','wrapper'),('verify_metadata.py','child'),('DERIVATION.md','derivation'),('SCOPE_PLAN.md','plan'),('SOURCE_MANIFEST.json','source_manifest'),('DRAFT_FREEZE.json','draft_freeze')]:ident(c/fn,l[k])
+receipts.append(pin(c/'METADATA_PROCESS_RECEIPT.json'))
+for stem in ['capture_sources','finalize_metadata']:
+ e=js(v/(stem+'.RECEIPT.json'));assert e['returncode']==0 and e['scientific_run'] is False and e['script_sha256']==pin(v/(stem+'.py'))['sha256']
+ assert (v/e['stdout']).exists() and (v/e['stderr']).read_bytes()==b''
+ receipts.append({'receipt':pin(v/(stem+'.RECEIPT.json')),'stdout':pin(v/e['stdout']),'stderr':pin(v/e['stderr']),'limit':'No source-at-launch copy or stream digest in this receipt schema; current frozen source and stream bytes verified separately.'})
+assert js(i/'FINAL_FREEZE.json')['sealed_utc']<js(r/'metadata_runs/capture/LAUNCH.json')['started_utc']
+assert js(r/'CLOSING_METADATA.json')['report']['sha256']==pin(r/'REPORT.md')['sha256']
+result={'checked_utc':datetime.now(timezone.utc).isoformat(),'kind':'root_conditional_source_acceptances','root_read_complete':True,'frozen_sources':frozen,'actual_metadata_receipts':receipts,'markov_acceptance':pin(D/'MARKOV_ACCEPTANCE.md'),'gibbs_acceptance':pin(D/'GIBBS_ACCEPTANCE.md'),'sources':[pin(x) for x in [c/'DERIVATION.md',c/'AUTHOR_CLARIFICATIONS.diff',i/'DERIVATION.md',r/'REPORT.md',g/'DERIVATION.md',g/'LITERATURE_AND_SCOPE.md',v/'REPORT.md']],'scope':'Separate conditional Markov and Gibbs source decisions; composite argument and actual publication remain pending. Full changed arguments and necessary hypotheses read; current identities and actual receipt structure verified. No science execution inferred from metadata.','scientific_executions':0,'historical_replays':0,'formal_proof_runs':0,'editable_prompt_files_changed':[]}
+(D/'VERIFICATION.json').write_text(json.dumps(result,indent=2)+'\n')
+files=[pin(p) for p in sorted(D.iterdir()) if p.is_file()]
+(D/'FINAL_FREEZE.json').write_text(json.dumps({'sealed_utc':datetime.now(timezone.utc).isoformat(),'files':files,'scope':'Two separate root source acceptances; no retained audit, no composition decision, no publication'},indent=2)+'\n')
+print(json.dumps({'verification':pin(D/'VERIFICATION.json'),'freeze':pin(D/'FINAL_FREEZE.json'),'acceptances':[pin(D/'MARKOV_ACCEPTANCE.md'),pin(D/'GIBBS_ACCEPTANCE.md')],'frozen_member_counts':[x['members'] for x in frozen],'scientific_executions':0}))

@@ -1,0 +1,31 @@
+--- previous_fully_read_wrapper
++++ current_canonical_wrapper
+@@ -7,15 +7,18 @@
+ reachability_to_target: supports
+ audit_required_before_effective_retained: true
+ bare_retained_allowed: false
+-canonical_parent_binding_complete: false
++canonical_parent_binding_complete: true
++runner: scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py
+ upstream_dependencies: ["nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15"]
+ ---
+ 
+ # Routed auxiliary preparation and joint clock readiness
+ 
++Primary runner: [source-integrity primary](../scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py).
++
+ This conditional finite-Hamiltonian theorem gives two local preparation alternatives on the same fixed accessible-pair mediator geometry. Both transfer arbitrary correlated input information into supplied independent pure memory, retain every output register, and pay for active compensation and finite switching. The joint variant also resets the original clock and synthesizes a prescribed complex packet. These are externally controlled preparation maps; native initialization, controller manufacture, common resource caps and a complete autonomous program remain open.
+ 
+-This is a source-only publication proposal. The complete accepted proofs and separate reviews are preserved below, exactly once each. Root source acceptance is conditional-support, not an audit verdict. Canonical binding, primary execution, Git base, mutation checks, graph checks, combined integration checks and publication are pending. No scientific program or proposed primary has been executed for this draft.
++The complete accepted proofs and separate reviews are preserved below, exactly once each. Root source acceptance is conditional-support, not an audit verdict. CANONICAL_BINDING and ACTUAL_BINDING record the actual source, geometry, provenance and Git-stack observations. Primary/cache, mutation, graph and publication outcomes require their separate actual integration receipts. The historical draft executed no scientific program or proposed primary; its null outcome record is preserved.
+ 
+ ## Current theorem and the two endpoint contracts
+ 
+@@ -105,6 +108,6 @@
+ 
+ Separate analytic checks and root source acceptance are same-family/source-exposed. The joint reviewer also reviewed predecessor mediator sources and helped draft their publication. There was no reviewer science rerun, blind replication, cross-model independence or audit ratification. The source-only primary proposed here checks identities/recovery/body structure; even a future successful run will not establish theorem truth or physical resource availability.
+ 
+-The [packet handoff](../.claude/science/physics-loops/toe-joint-readiness-20261015/HANDOFF.md), [review record](../.claude/science/physics-loops/toe-joint-readiness-20261015/REVIEW_HISTORY.md), [status certificate](../.claude/science/physics-loops/toe-joint-readiness-20261015/CLAIM_STATUS_CERTIFICATE.md) and [primary source](../scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py) state the pending integration gates. Source recovery treats the following four bodies as unique exact intervals; historical pending/error statements are attributed to their versions and governed by this current wrapper and the explicit later correction.
++The [packet handoff](../.claude/science/physics-loops/toe-joint-readiness-20261015/HANDOFF.md), [review record](../.claude/science/physics-loops/toe-joint-readiness-20261015/REVIEW_HISTORY.md), [status certificate](../.claude/science/physics-loops/toe-joint-readiness-20261015/CLAIM_STATUS_CERTIFICATE.md) and [primary source](../scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py) preserve the dated draft gates; ACTUAL_HANDOFF and actual integration receipts record subsequent actions. Source recovery treats the following four bodies as unique exact intervals; historical pending/error statements are attributed to their versions and governed by this current wrapper and the explicit later correction.
+ 
+ 

@@ -1,0 +1,11 @@
+{
+  "status": "metadata verified; no scientific computation performed",
+  "verified_source_snapshots": 7,
+  "verified_current_originals": 7,
+  "verified_nested_proposal_members": 2,
+  "report_bytes": 26646,
+  "report_sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10",
+  "science_runs": 0,
+  "historical_replays": 0,
+  "capture_receipt_verified": true
+}

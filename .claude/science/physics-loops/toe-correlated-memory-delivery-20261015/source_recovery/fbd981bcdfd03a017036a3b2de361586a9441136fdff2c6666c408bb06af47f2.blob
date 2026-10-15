@@ -1,0 +1,16 @@
+{
+  "sealed_utc": "2026-10-15T16:37:41.894016+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_root_review/ACCEPTANCE.md",
+      "bytes": 4125,
+      "sha256": "4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_root_review/VERIFICATION.json",
+      "bytes": 2861,
+      "sha256": "664293ebf52d1112336adf34495d058ce7dcf7db0a26d63e2edb2b586209ef96"
+    }
+  ],
+  "scope": "Root conditional composition decision only; no retained audit or publication"
+}

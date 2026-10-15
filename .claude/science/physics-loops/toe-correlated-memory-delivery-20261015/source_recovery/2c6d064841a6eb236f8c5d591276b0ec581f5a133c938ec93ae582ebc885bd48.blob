@@ -1,0 +1,16 @@
+"""Metadata-only preservation of the complete analytic draft before final author clarifications."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,os
+D=Path(__file__).resolve().parent
+def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+rows=[]
+for name in ['DERIVATION.md','SCOPE_PLAN.md','SOURCE_MANIFEST.json']:
+ src=D/name;dst=D/'draft_snapshot'/name
+ dst.parent.mkdir(parents=True,exist_ok=True)
+ if dst.exists(): raise RuntimeError('refuse to overwrite draft snapshot')
+ dst.write_bytes(src.read_bytes())
+ rows.append({'path':str(dst.relative_to(D)),'bytes':dst.stat().st_size,'sha256':sha(dst)})
+record={'recorded_utc':datetime.now(timezone.utc).isoformat(),'pid':os.getpid(),'kind':'analytic draft/plan/source snapshot before author clarifications; no science run planned or executed','scientific_execution':False,'script_sha256':sha(Path(__file__)),'members':rows}
+(D/'DRAFT_FREEZE.json').write_text(json.dumps(record,indent=2)+'\n')
+print(json.dumps({'draft_sha256':rows[0]['sha256'],'draft_bytes':rows[0]['bytes'],'snapshot_freeze_sha256':sha(D/'DRAFT_FREEZE.json'),'scientific_execution':False}))

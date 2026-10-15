@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-15T16:17:13.930398+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/verify_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison",
+  "interpreter": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/verify_metadata.py",
+    "bytes": 5230,
+    "sha256": "bd275844fa5f9cbb047b8ce3866313bf69555fde2397d2afcad87a895aa084fc"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/record_metadata.py",
+    "bytes": 1604,
+    "sha256": "4f623a9bd4a1fe651c683e641425383c9bbc4d2391f4f10e24a5a5bf79f2171a"
+  },
+  "purpose": "Metadata-only comparison source/receipt verification; no science, replay or Git",
+  "timeout_seconds": 60
+}

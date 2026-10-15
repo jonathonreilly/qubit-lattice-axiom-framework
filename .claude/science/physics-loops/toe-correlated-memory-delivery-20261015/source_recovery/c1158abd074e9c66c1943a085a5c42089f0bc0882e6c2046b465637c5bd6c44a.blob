@@ -1,0 +1,64 @@
+--- draft_snapshot/DERIVATION.md
++++ DERIVATION.md
+@@ -13,14 +13,14 @@
+     K=H0+F_inst,
+     F_inst=K_X+Delta L+sqrt(Delta)V+C0+R0 I.                 (1)
+ 
+-All coefficients and full-space bounds are finite computable supplied data. No commutation of H0 with F_inst is assumed. K>=0 is an additional hypothesis whenever positivity of the complete driven generator is claimed. The exact preparation comparison itself needs only finite Hermitian operators. Later interaction simulation is not imported as a premise of literal readiness.
++All coefficients and full-space bounds are finite computable supplied data; use hbar=1, so Hamiltonian coefficients have inverse-time units. No commutation of H0 with F_inst is assumed. K>=0 is an additional hypothesis whenever positivity of the complete driven generator is claimed. The exact preparation comparison itself needs only finite Hermitian operators. Later interaction simulation is not imported as a premise of literal readiness.
+ 
+ Append B={B_1,...,B_Lraw} on the same boundary ray as joint readiness. E={B_1,...,B_s} are exactly its first s reset endpoints. F=B minus E contains every other raw-memory/trash/spacing factor. There is no overlap between the symbol F for retained memory and F_inst for the installed addition. Write Z=D S R. The nominal free generator on B is zero and all unlisted interactions are absent; section9 states the full residual/static-baseline alternatives.
+ 
+ The complete input rho_ZB is otherwise arbitrary. In particular Z/B need not factor, the B density matrix need not be diagonal, and R may purify the entire state. The sole memory-state condition is its computational-basis diagonal:
+ 
+-    <x_1...x_L|rho_B|x_1...x_L>
+-       =pi_(x_1) product_(i=1)^(L-1) P_(x_i,x_(i+1)),
++    <x_1...x_Lraw|rho_B|x_1...x_Lraw>
++       =pi_(x_1) product_(i=1)^(Lraw-1) P_(x_i,x_(i+1)),
+     P=[[1-a,a],[b,1-b]], pi=(1-q,q),
+     0<=a,b<=1, a+b>0, q=a/(a+b)<1/2,
+     lambda=1-a-b, |lambda|<1.                              (2)
+@@ -89,7 +89,7 @@
+ 
+ This is a union bound. No product formula for the s endpoint successes is asserted. The equations remain valid for arbitrary coherences and extensions of (2), since U_c is a phase-exact basis permutation.
+ 
+-For any epsilon_mem>0, choose the first integer r>=1 with
++For any positive rational epsilon_mem (or a supplied positive rational lower bound on a requested tolerance), choose the first integer r>=1 with
+ 
+     q_r<=epsilon_mem^2/(9s).                               (12)
+ 
+@@ -135,6 +135,8 @@
+ equals CCX(b,c;a) exactly: for control bits b,c its target exponent is c-(c xor b)+b=2bc, with both controls restored. This proves the full operator identity, including phases. Each majority node uses four CX, two CV and one CV†, a total of seven logical two-qubit gates.
+ 
+ For a logical pair at physical ray indices i<j and distance d=j-i, move the first label to j-1 by d-1 consecutive full SWAPs, apply the gate on j-1,j with the transported control/target orientation, and reverse those d-1 SWAPs. The whole word is exactly the intended pair gate on its original factors and identity on every intermediate factor. Thus it costs 2d-1 physical gates. The operator proof works on arbitrary dirty, correlated transit factors. A transit site may belong to another leaf set or already contain garbage; every completed route restores it before another logical gate begins. Original D/S factors are never memory-compression transit.
++
++Consequently the completed U_c is the tensor product of its disjoint logical-leaf circuits and identity on unused spacing factors, as an operator identity. This does not require the initial state to factor. Temporary transit during a physical route is not confused with the support of its completed logical gate.
+ 
+ At a level-k node, write d=3^(k-1). For uniformly spaced logical leaves the seven pair distances are ell times d,2d,2d,d,2d,d,d, with sum10ell d. The only deviation in (7) is the initial gap h_j. At each level exactly one node contains leaf0; precisely five of its seven pairs contain that first representative, so its distance sum acquires5h_j. Hence the exact physical count for endpoint j, and then all endpoints, is
+ 
+@@ -350,7 +352,7 @@
+ 
+     D_C=sum_alpha [c_alpha+sum_mu||h_alpha,mu||].           (40)
+ 
+-It bounds the summed uncompacted channel load; cancellations may lower it. For the dictionary(26), split each clock b_j into its two occupations and hopping, and all other blocks into the displayed Pauli/occupation channels. Their channel sum is at most(3/2)c_alpha for clock blocks and c_alpha for the others, so D_C<=(5/2)kappa is a safe explicit bound. This may be loose for scalar blocks whose compensator is zero. Use D_C, the actual gate-channel sums and their durations in per-channel versions of (38). Per-site loads sum only the corresponding local channels touching that site, plus the installed loads; bounded lattice degree alone does not bound their coefficients. If a different physical dictionary is supplied, (40) must be recomputed rather than using the whole-block norm silently.
++It bounds the summed uncompacted channel load; cancellations may lower it. For the dictionary(26), split each clock b_j into its two occupations and hopping, and all other blocks into the displayed Pauli/occupation channels. Their channel sum is at most(3/2)c_alpha for clock blocks and c_alpha for the others, so D_C<=(5/2)kappa is a safe explicit bound. This may be loose for scalar blocks whose compensator is zero. Use D_C, the actual gate-channel sums and their durations in per-channel versions of (38). For equal slots a safe gate-channel peak is m0(1+sqrt(5))pi G_tot/T_pl; this is not the smaller whole-block3pi bound. Per-site loads sum only the corresponding local channels touching that site, plus the installed loads; bounded lattice degree alone does not bound their coefficients. If a different physical dictionary is supplied, (40) must be recomputed rather than using the whole-block norm silently.
+ 
+ A common compensation envelope discrepancy delta u and independent compensation coefficient error sum zeta_C=sum||Delta C_alpha|| have integrated operator allowance
+ 
+@@ -368,7 +370,7 @@
+ 
+     K_base=K+E_base,
+ 
+-not K. Controls that vanish at endpoints return exactly to K_base. A certified||E_base||<=zeta contributes2Tzeta to (33), with any separately counted time-dependent faults added once. Positivity then requires K_base>=0, for example an actually installed retained margin K>=zeta I. Any added reserve is included in F_inst, kappa, Gamma, moments and scalar prices; the bound itself does not install it. A switched fault-reserve control must vanish at the actual endpoint to claim return, while a retained baseline reserve must not be switched off.
++not K. Controls that vanish at endpoints return exactly to K_base. Every residual described as a switched control must also vanish there; a persistent extra field must instead be declared in the actual baseline or the return claim fails. A certified||E_base||<=zeta contributes2Tzeta to (33), with any separately counted time-dependent faults added once. Positivity then requires K_base>=0, for example an actually installed retained margin K>=zeta I. Any added reserve is included in F_inst, kappa, Gamma, moments and scalar prices; the bound itself does not install it. A switched fault-reserve control must vanish at the actual endpoint to claim return, while a retained baseline reserve must not be switched off.
+ 
+ Alternatively known static local memory/coupling blocks can be included in an enlarged F_inst and compensated literally. Then B_F,kappa,B_C,Gamma,channel/scalar sums and moment formulas must be recomputed; Gamma=B_F remains safe. The simple scalar nu in (34) need not survive when F_inst acts on retained E/F. The gate/permutation/probability argument still applies because the plateau leaves only H0, but zero free memory is no longer the uncompensated nominal description. Uncontrolled leakage is never priced by a prepared-sector norm.
+ 
+@@ -443,6 +445,6 @@
+ 
+ Under(1)-(2), the literal finite geometry/control/isolation hypotheses, any computable normalized one-excitation target psi and any positive error allocation admit the finite circuit(7),(9),(15),(18),(23)-(24), paid positive compensation(25)-(29), and complete output(30) with bound(33). It uses exactly the original first s E sites, a finite extension of that same ray, preserves every original nonclock factor up to actual H0 aging, and returns to the declared actual baseline. The only retired supplier conditions are exact raw-memory product structure and initial raw-memory/old-system independence, replaced by the quantitative complete diagonal law(2) and effective mixing/bias certificates.
+ 
+-Every new mathematical claim above is analytic author work pending separate checking. No new scientific fixture, old-fixture replay, Hamiltonian sweep or large Hilbert-space calculation was executed. The optional diagnostic contemplated by the selection memo was not needed: the nonuniform coupling, full quantum comparison, exact count and strict false-product witness have explicit proofs. This is not a count of passed tests. The dated parent 31/159 and biased-memory fixtures support only their original scopes, including their recorded defects; none is presented as evidence for this extension. Metadata capture/final source checks only establish file identity.
++Every new mathematical claim above is analytic author work pending separate checking. No new scientific fixture, old-fixture replay, Hamiltonian sweep or large Hilbert-space calculation was executed. The optional diagnostic contemplated by the selection memo was not needed: the nonuniform coupling, full quantum comparison, exact count and strict false-product witness have explicit proofs. This is not a count of passed tests. The dated parent 31/159 and biased-memory fixtures support only their original scopes, including their recorded defects; none is presented as evidence for this extension. Metadata capture/final source checks only establish file identity. The recursive majority and controlled-square-root decomposition remain established machinery credited by f38; no new general-purpose compression or coupling theorem is claimed here. Relative to pure-memory joint readiness, this supplier uses additional controlled-X/square-root-X channels and a larger memory ray, all explicitly priced above.
+ 
+ Native bias/mixing preparation, actual interaction/control supply, independent addressability, autonomous scheduling, common-cap viability, thermodynamic reservoir manufacture, repeated-use restoration, saturated-pair access and full scheduled-pair programming remain open. The construction assumes no new physical axiom, no classical reader and no uncharged clean controller. The old fixed clock and its programmed interaction geometry are unchanged. A later simulator theorem must apply to the same actual post-generator and the complete state(30), with D already aged by the actual T and all E/F/R records retained; further common evolution propagates the readiness error, and any additional simulator error must be charged separately.

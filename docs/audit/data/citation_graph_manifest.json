@@ -1,6 +1,6 @@
 {
- "edge_count": 16095,
- "node_count": 7135,
+ "edge_count": 16097,
+ "node_count": 7136,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4185,6 +4185,10 @@
   "corrected_dispersion_bounded_theorem_note_2026-10-13": {
    "deps_hash": "d9669c5e9542",
    "out_degree": 3
+  },
+  "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "df509244bb53",
+   "out_degree": 2
   },
   "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12": {
    "deps_hash": "7b707271a9a8",

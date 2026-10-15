@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-10-15T16:35:44.929446+00:00",
+  "status": "conditional composition supported; monotone switch and supplied diagonal channels retained; no audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/REPORT.md",
+    "bytes": 20217,
+    "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/SOURCE_MANIFEST.json",
+    "bytes": 52427,
+    "sha256": "58ce1f0b8d2f0c15dc38c031307993e0cb21c5ae66f456976fd6f5610043afd1"
+  },
+  "closing_metadata": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/CLOSING_METADATA.json",
+    "bytes": 44374,
+    "sha256": "febe3bd24d471f4328acf4017d1ffbdad4a4206c021b8c0ed74062f9d9a390e0"
+  },
+  "actual_metadata_receipts": [
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/LAUNCH.json",
+        "bytes": 1181,
+        "sha256": "bc316d52f05848291c2801dd9fb4bb571b41b20a44f370bc17d5fed8358d0bd8"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/EXECUTION.json",
+        "bytes": 952,
+        "sha256": "f9366492215430a8ca56ee8fcd869310302c07f1da69c0ad936737a492701e0a"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/stdout",
+        "bytes": 396,
+        "sha256": "07898d95c68905e961d16e301f549f2a09bd1e7966d2e4a9a8aa1715dcb5dc66"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/LAUNCH.json",
+        "bytes": 1179,
+        "sha256": "992a3d241939aa852940bfe2b6cf2298bc4f24a2b2cb89dafd5cac7da9d4dfe6"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/EXECUTION.json",
+        "bytes": 952,
+        "sha256": "51d68a855cabfa37b86f66f53b3af7b627c56d896baa03ff7c8cf028ec978b46"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/stdout",
+        "bytes": 873,
+        "sha256": "489602fed1664e6f7c26d824ebdc3e748a416f6888d3661edb20c40db3f2da54"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "model_override": false,
+  "delegation": false,
+  "git_operations": 0,
+  "editable_prompt_files_changed": [],
+  "root_acceptance_imported": false,
+  "scope_limit": "No native thermal preparation, controller, feasible common cap, restoration or full-program realization."
+}

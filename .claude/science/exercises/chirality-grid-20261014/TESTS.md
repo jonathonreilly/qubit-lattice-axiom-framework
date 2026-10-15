@@ -435,3 +435,19 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **"Up-flat + M2 has no structural zero"** is established only to the extent of excluding the S3-invariant route.
   - **Mechanism 1's all-orders zero** holds at v = 0 (symmetric phase), not for an arbitrary fixed broken vacuum. The (va)² suppression is reasonable but uncomputed, and FCNC safety is open.
 - **Strongest correct statement (referee).** The exact B-gen parameterisation fits the observed quark data while making the one-loop data S3-invariant, so every quark tensor is removable by the allowed counterterms. OBS-2's d-quark violation is therefore texture-dependent and not forced by CKM at one loop.
+
+## Campaign wave 2b (pre-registered 2026-10-15T13:27Z)
+
+**OBS-4. Tree-level FCNC from the corner carriers in X2's texture escape** (route 2; the hazard OBS-3 and its referee named). Cap 0.4 GB.
+- **Why.** OBS-3's escape (B-gen) needs off-diagonal corner Yukawas of size about y/3. These are carried by fields at the corner-difference momenta (hw2): orientation-selective τ_xσ_c carriers, flavons, or a Higgs degenerate at those momenta. Their physical scalar modes couple to quark mass eigenstates in a flavour-changing way at tree level. That is the classic multi-Higgs FCNC problem.
+- **Question.** For B-gen and B-gen120, and for any other exact OBS-3 escape realisation the worker builds:
+  - derive the tree-level ΔF = 2 couplings of the carrier scalars in the mass basis;
+  - compare them with K–K̄ (ε_K, Δm_K), B_d, B_s and D mixing bounds (state the sources);
+  - find the minimum carrier mass M* that passes every bound;
+  - say whether the construction can give those carriers mass M* while their condensate supplies the electroweak-scale off-diagonal Yukawas (for example: no tuning; a tuning of a stated size; or forced to be light).
+- **Readings.**
+  - **FCNC-SAFE:** some exact escape realisation passes every ΔF = 2 bound with carrier masses the construction supplies without new tuning.
+  - **FCNC-PRICE:** passing needs M* above a stated scale, or alignment, and that costs a named tuning or structure; state its size.
+  - **FCNC-KILL:** every escape realisation built violates some ΔF = 2 bound by more than 10× for every carrier mass the construction allows.
+  - **OPEN:** otherwise.
+- **Scope to state:** tree level, the carrier model, the meson matrix elements used, and the running.

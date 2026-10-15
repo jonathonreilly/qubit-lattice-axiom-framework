@@ -74,3 +74,11 @@ M12 published 2026-10-15T12:29:43.754333+00:00: [PR #9603](https://github.com/jo
 ## M14 final source and opening disposition
 
 Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded_theorem target, actual conditional-support. Final85 controls0fail; independent equations, canonical-state forward solution, covariance proof, source and cache checks complete. Root read complete closing reports. Two original mutation survivors repaired by independently checked sharp fixtures; invalidv2 retained; finalv3 has21 failed-check rejections and3 exceptions. One coherent M14 OPEN content judgment; final indexed evidence/tree binding precedes publication. No observation fit, action selection, integrated-main landing validation or formal audit. See dynamical_response/REVIEW_RECORD_v1.md.
+
+## M14 published — 2026-10-15T15:58:59.402386+00:00
+
+[PR #9608](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9608), regular/open, 76 paths, head `f3637a4eba3fb18690fe6a2b03d9455c60cc6363`, tree `fcfba0674309efabb284a2d573b975e4423de22b`, stacked on frozen M13. Attached; independent full delivery read. Conditional-support target bounded_theorem; no integrated-main or formal audit claim. Next block: projected physical covariance operator on `codex/observations-backward-covariance-20261015`.
+
+## M15 review-ready projected construction
+
+Coherent-opening judgment OPEN; base codex/observations-backward-dynamics-20261015 at f3637a4eba. Canonical29checks0fail, source confirmations complete, mechanical delivery being frozen. Final verified URL and head will be recorded in runtime PRS.json and attached to the chat. No request to merge.

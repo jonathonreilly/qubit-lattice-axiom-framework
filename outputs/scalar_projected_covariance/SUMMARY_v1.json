@@ -1,0 +1,56 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "counts": {
+    "failed": 0,
+    "passed": 29
+  },
+  "empirical_tests": 0,
+  "failed_checks": [],
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/FORWARD_PROTOCOL_v1.json": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/NO_GO_DISCIPLINE_CHECKLIST.md": "e14ecf6536684f69856727e389c198a638b7fd213f792fdddf0ab8b9fb455c63",
+    "docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "d2edccd39d714b645ac5c2772aca000b21ef66b68843c2c0c943f14ae5fe7c34",
+    "scripts/scalar_dynamical_forward.py": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+    "scripts/scalar_projected_forward.py": "83761632bef726dd562bb8f323f8d14714487862dfa3bdf702e59835dbd56b08",
+    "scripts/scalar_projected_geometry.py": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+    "scripts/scalar_projected_weak.py": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227"
+  },
+  "local_condition_inf": "6317591712.91910954056824012182274336423429839814847233380021150354449022384685368729425733",
+  "primary_sha256": "4259e61f17ce8d990621cbf0d73a10b988a06b08224f26ee8f0c062f19c92233",
+  "read_inventory": {
+    "integrity_reads": [
+      "Source and declared inputs for SHA256; no external observational arrays or ancestral result files loaded"
+    ],
+    "scientific_inputs": [
+      "Fixed synthetic protocol; supplied candidate and operators in declared imported helpers"
+    ]
+  },
+  "rolling": [
+    {
+      "case": "positive_roll",
+      "inverse_errors": [
+        9.90734196071319e-11,
+        1.2116484210270353e-10,
+        5.128874736026745e-08,
+        5.7333804953652034e-08,
+        8.694995775893055e-05
+      ],
+      "max_condition_row_scaled": 4991470803649.921,
+      "max_scaled_identity_residual": 4.692534572901058e-15
+    },
+    {
+      "case": "negative_roll",
+      "inverse_errors": [
+        2.0605173817189737e-11,
+        2.797365557943854e-09,
+        8.986867505177378e-09,
+        2.7413885674075315e-07,
+        0.00020310563943153667
+      ],
+      "max_condition_row_scaled": 7870835348086.77,
+      "max_scaled_identity_residual": 2.1853504042005022e-14
+    }
+  ],
+  "scope": "Exact necessary implication under supplied measurement geometry, statistics and field law; synthetic tests only",
+  "target_claim_type": "bounded_theorem"
+}

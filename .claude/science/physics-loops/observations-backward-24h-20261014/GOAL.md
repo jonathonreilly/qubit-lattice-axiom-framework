@@ -18,3 +18,7 @@ Derive necessary and sufficient whole-interval conditions for an ideal smooth FL
 ## M14 target contract: full dynamical and statistical inverse
 
 For the explicitly supplied canonical scalar plus conformal dust action, derive a finite inverse for the common momentum coefficients from simultaneous ideal measurements, retaining both scalar initial data. Construct an equal-time covariance version that eliminates the separate mixed time derivative and common-transfer premise. Establish rank availability, required physical domains, candidate-family and background tests; distinguish mathematical input elimination from physical action/state/measurement derivation. Canonical proof: `docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md`.
+
+## Projected covariance route — 2026-10-15
+
+Target M15: derive a necessary scalar coefficient constraint directly from full-sky shear-tomographic and radial proper-velocity signal correlations on the flat light cone, without a velocity-potential integration boundary or chosen initial state. Domain: smooth linear homogeneous/isotropic scalar sector, calibrated geometry and first-order Born response. Success witness: exact projection/commutator/null-mode algebra plus independent check and nondegenerate synthetic forward examples. Measured finite windows, noise and calibrated signal identification remain conditional; no observed-data fit.

@@ -52,3 +52,7 @@ The attempted scale-elimination route succeeds mathematically only with the expl
 ### Growth/lensing inverse — 2026-10-15
 
 No theory-wide no-go is asserted. The explicit two-shape interval witness refutes uniqueness only for the named reduced readouts and hypotheses. Its full-background failure is separately derived under r=q. A non-Mobius q(J) gives at most one shape under the exact varying-J chart assumptions, without a finite-noise identifiability theorem. Large K/H alone does not bound free scalar oscillations; the controlled dynamical route remains open. Five materially different attempted routes and complete N1-N8 scope answers are preserved in growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md.
+
+## M15 local failed routes and live alternatives
+
+Unqualified moving radial boundaries invalidate the finite six-jet weak alternative; fixed bounds or the exact extra flux repair it. Direct potential inversion needs domain information; ordered compatibility avoids it for a necessary test. Synthetic rank is attainable but severely ill-conditioned. None is a universal measurement no-go. Unequal-time correlations, calibrated finite weightings and explicit window/error models remain live routes.

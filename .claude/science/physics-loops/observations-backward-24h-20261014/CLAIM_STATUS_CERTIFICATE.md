@@ -91,3 +91,7 @@ The strongest checked mathematics is full constraint propagation plus the unique
 ## M14 final source and opening disposition
 
 Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded_theorem target, actual conditional-support. Final85 controls0fail; independent equations, canonical-state forward solution, covariance proof, source and cache checks complete. Root read complete closing reports. Two original mutation survivors repaired by independently checked sharp fixtures; invalidv2 retained; finalv3 has21 failed-check rejections and3 exceptions. One coherent M14 OPEN content judgment; final indexed evidence/tree binding precedes publication. No observation fit, action selection, integrated-main landing validation or formal audit. See dynamical_response/REVIEW_RECORD_v1.md.
+
+## M15 proposed surface
+
+Target bounded_theorem; actual conditional-support; trace upstream_support to revised scalar measurement/assumption reconstruction. Necessity and one exact rank witness are checked under explicit field-law and observation premises. No empirical test, full-history converse, fundamental action selection or retained status. Final canonical reports and OPEN cluster judgment are in projected_covariance; formal audit remains required before effective retention.

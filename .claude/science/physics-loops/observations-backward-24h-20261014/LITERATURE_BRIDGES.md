@@ -46,3 +46,7 @@ Versioned primary sources 1210.0439v2, 2405.12795v2 and 2401.12971v2 were inspec
 ## M14 primary-source scope
 
 Rondeau–Li1709.07087v1 §§IV–V supplies classical conformal-observable conventions; A_paper=A_campaign² and time-coordinate dictionaries are explicit. Assisted coupled quintessence1407.2156v1 §§II,VI is a constant-coupling comparator; its small-scale approximation is not imported. ACT2405.12795v2 and estimator2401.12971v2 supply projected-spectrum/velocity-bias context; no raw maps, likelihood or continuous covariance collection admitted. Complete independent source report, version/page/hash inventories and root read scopes are in dynamical_response. The exact rolling inverse and equal-time covariance algebra are derived here, not attributed to an unread source or claimed globally novel.
+
+## M15 source bridge
+
+Taylor astro-ph/0111605v1 (Born inversion), Heavens astro-ph/0304151v2 (windows/noise), and Wang1808.07543v1 (radial pair geometry/calibration) were checked in the exact scopes recorded in projected_covariance/independent_observation_v1/SOURCE_RECORD_v1.json. Root read the complete independent derivation and comparisons. No Poisson/growth forecast, fitted calibration, observed covariance history or raw catalogue is imported. Full third-party texts and renders remain local with identities in the evidence map.

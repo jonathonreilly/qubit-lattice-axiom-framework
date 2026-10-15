@@ -133,3 +133,19 @@ next_trace_action: Test a concrete physical operator for the joint equal-time co
 ```
 
 The named downstream consumer is the revised-scalar action/potential/scale reconstruction. Momentum and covariance equations eliminate specified input assumptions inside the supplied dynamical class. They do not close the theory, select an action, measure physical F, or supply an empirical likelihood. The exact proof and source-bound computation are self-contained in the new note/primary; earlier unmerged conclusions are provenance, not proof inputs.
+
+## Projected covariance route — 2026-10-15
+
+M15 expected trace: upstream_support/supports; target consumer is M14 full dynamical covariance inverse. Source blocker: M14 physical measurement/error operator is open. Planned artifact derives the shear/radial-velocity projection and null-mode elimination under explicit continuum/calibration conditions. It does not retire actual survey windows, noise, initial cosmic state, action or environment. Current status open pending independent checks; intended type bounded_theorem.
+
+## M15 projected observation constraint
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate the remaining scalar action, state, scale and measurement assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Establish a finite measured window functional without supplying an initial covariance.
+
+This eliminates potential boundary and ell0/1 choices only for the stated necessary constraint. It does not close actual finite-input, action, state, scale or environmental identification.

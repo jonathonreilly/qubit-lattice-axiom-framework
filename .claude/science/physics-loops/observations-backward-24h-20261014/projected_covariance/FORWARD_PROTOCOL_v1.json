@@ -1,0 +1,21 @@
+{
+  "scope": "Exposed synthetic full rolling field ensembles; no observation fit or empirical holdout",
+  "backgrounds": [
+    {"id":"positive_roll","k":0.08,"nu":0.7,"u":0.12,"ud":0.15,"rho":0.8},
+    {"id":"negative_roll","k":0.21,"nu":1.4,"u":-0.08,"ud":-0.12,"rho":1.2}
+  ],
+  "Q": 1.0,
+  "Hv": 1.0,
+  "amplitude": 0.000001,
+  "comoving_wavenumbers_over_initial_aE_HE": [2,5,11,23,41],
+  "duration_times_initial_HE": 0.35,
+  "epoch_fractions": [0,0.1,0.25,0.45,0.65],
+  "separation_fractions_of_chi": [0.2,0.4,0.6,0.8,1.0,1.2],
+  "inverse_rows": [0,1,2,3,4],
+  "reserved_row": 5,
+  "solver": {"method":"DOP853","rtol":2e-12,"atol":2e-15,"maximum_step_fraction":0.001},
+  "checks": {"constraint_scaled":2e-9,"projected_identity_scaled":1e-10},
+  "inverse_policy": "Report all conditions/errors; no guarantee of stable inversion or physical noise precision. Do not tune states or thresholds after outcomes.",
+  "state_policy": "Each of five spectral shells has three bounded independent seed directions from a declared positive-definite S,V,T covariance. X and Z are independently assigned; solve only initial00 constraint. No physical cosmic preparation selected.",
+  "failure_policy": "Preserve every attempted source, output and singular/ill-conditioned case; new versions preserve the same scientific case list unless explicitly declared as exposed development."
+}

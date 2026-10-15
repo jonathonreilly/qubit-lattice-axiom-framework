@@ -1,0 +1,134 @@
+[
+  {
+    "name": "projection_factor",
+    "helper": "geometry",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 18,
+      "failed": [
+        "kernel_is_smooth_nonzero_on_positive_r",
+        "direct_Cartesian_radial_projection"
+      ]
+    },
+    "source_sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+    "mutant_sha256": "a71a67add552e296c06c37284f81c02e60c5174001b212102d00798b812e6fd8"
+  },
+  {
+    "name": "moving_shell_sign",
+    "helper": "geometry",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 18,
+      "failed": [
+        "changing_shell_operator",
+        "radial_potential_elimination"
+      ]
+    },
+    "source_sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+    "mutant_sha256": "17818448fc56058b8e122d1c676c34cd22b65b4bd50473dd59e4120a738c19c9"
+  },
+  {
+    "name": "operator_order",
+    "helper": "geometry",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 18,
+      "failed": [
+        "annihilator_does_not_kill_all_signals"
+      ]
+    },
+    "source_sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+    "mutant_sha256": "a89cbd1cb4fdcfce1929d742cc71b1a3dda1c5aa76e5f8df9a7e2382b3636bdc"
+  },
+  {
+    "name": "fixed_angle_instead",
+    "helper": "geometry",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 18,
+      "failed": [
+        "fixed_separation_light_cone_derivative"
+      ]
+    },
+    "source_sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+    "mutant_sha256": "27f444aa8c66526f756e3a530b64f9088b599b9695710b670a7b679d5867c69f"
+  },
+  {
+    "name": "wrong_weak_adjoint",
+    "helper": "weak",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 7,
+      "failed": [
+        "E_Green_identity",
+        "two_dimensional_weighted_identity"
+      ]
+    },
+    "source_sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+    "mutant_sha256": "6452de804e4864058e563190de896bc7aef5c52801ea9fd01afd00ea50b991dd"
+  },
+  {
+    "name": "weak_missing_geometry",
+    "helper": "weak",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 7,
+      "failed": [
+        "two_dimensional_weighted_identity"
+      ]
+    },
+    "source_sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+    "mutant_sha256": "f2413cc1592801d75ca00579bdae592324a1d1bdcefeeda26159c3b9b8d3a4d7"
+  },
+  {
+    "name": "weak_frozen_coefficient",
+    "helper": "weak",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 7,
+      "failed": [
+        "two_dimensional_weighted_identity"
+      ]
+    },
+    "source_sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+    "mutant_sha256": "fb05e6ed9f8a5285b3e17c7f9b21a83b7fde85ccf8feb4b9a78a65ea792353e7"
+  },
+  {
+    "name": "forward_missing_subtraction",
+    "helper": "forward",
+    "exit_code": 1,
+    "rejected_by_failed_check": true,
+    "exception": false,
+    "survived": false,
+    "detail": {
+      "checks": 4,
+      "failed": [
+        "positive_roll_projected_constraint",
+        "negative_roll_projected_constraint"
+      ]
+    },
+    "source_sha256": "84a665bb00236a4bd4a3eb9d0602cea94eaaeb04ef4b52dddb046b9f25cbb91a",
+    "mutant_sha256": "58fc0a6d40ac13640045c77c66ccc5d1357f95511ece90ea40e21e15d41d2832"
+  }
+]

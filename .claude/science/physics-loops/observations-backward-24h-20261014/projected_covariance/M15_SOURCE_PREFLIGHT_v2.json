@@ -1,0 +1,22 @@
+{
+  "scope": "Final mechanical source/cache readiness after AST-identical EOF cleanup; no formal audit",
+  "row": {
+    "claim_id": "scalar_projected_covariance_bounded_theorem_note_2026-10-15",
+    "note_path": "docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem",
+    "runner_path": "scripts/scalar_projected_covariance_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_dynamical_forward.py",
+      "scripts/scalar_projected_forward.py",
+      "scripts/scalar_projected_geometry.py",
+      "scripts/scalar_projected_weak.py"
+    ],
+    "deps": [
+      "scalar_dynamical_momentum_inverse_bounded_theorem_note_2026-10-15"
+    ]
+  },
+  "issue": null,
+  "cache_status": "fresh",
+  "cache_sha256": "7c64ddc501eddc141d07f952e782eb8a9957939c59948b243492c10e6b7388bd",
+  "initial_probe": "Tool330d33 used note_path on graph node whose actual field is path; StopIteration before any output/write. Corrected schema mapping here."
+}

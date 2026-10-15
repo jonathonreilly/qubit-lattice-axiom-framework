@@ -79,3 +79,7 @@ Completed one coherent chain: reconstruct slip from ideal Euler/Weyl quotients; 
 ## M14 approach update
 
 Full variational/constraint formulation: completed conditional equations, Cdot=-3HC and full-wave momentum inverse; numerical dynamics use supplied radial action. Moment elimination: completed five-row equal-time lift with two nonlinear consistency tests and attainable positive covariance rank; no common transfer or separate time leg supplied. Background geometry formulation: relative F, normalized potential and specific two-epoch family tests; absolute scales and action selection still open. Matrix-error formulation: exact coefficient bounds with sharp equality examples; errors and observable denominators remain supplied. Measurement-operator formulation: reviewed primary estimator scopes, actual projected covariance supplier remains the strongest unresolved lemma. No arbitrary history or fitted selector is promoted.
+
+## Projected covariance route — 2026-10-15
+
+M15 family: differential elimination of the radial potential after the shell geometry is derived. New mechanism: radial projection changes with time; retain its commutator, then eliminate the undetermined potential derivative without a boundary condition. Fixed Euler-operator polynomial removes only the full-sky shear/velocity ell0/1 ambiguity. Mathematical support for a physical input bridge, not a supplied observational selector. Closest M14 result assumes potential covariances; this construction addresses its measurement-input residual. Other approach families remain unexcluded.

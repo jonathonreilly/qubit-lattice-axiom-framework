@@ -1,0 +1,27 @@
+# Independent physical-source and measurement check
+
+Ideal shear and radial peculiar-velocity data can supply **projected light-cone fields and their covariances**, subject to explicit metric, distance, selection and calibration assumptions. They do not automatically supply unfiltered equal-time `S,V` Fourier covariances or fixed-k time derivatives. There is, however, a constructive geometric route from sufficiently complete scalar light-cone correlations to fixed-comoving-separation time derivatives; it must not be replaced by a blanket light-cone impossibility claim.
+
+This report and the accompanying derivation are frozen independently of the root's new `projected_covariance` working files: none was read. The source base was `f3637a4eba3fb18690fe6a2b03d9455c60cc6363`. Root retains authorship. No raw catalogue/map access, fit, parent implementation run, Git mutation or formal audit occurred.
+
+The material conclusions are:
+
+1. **Lensing normalization and nulls.** For the physical metric with spatial perturbation `1-2 Phi`, define `S=Phi+Psi`. In flat-Born geometry, `varphi=integral (chi_s-chi)/(chi_s chi) S_LC dchi` and `partial_chi(chi^2 partial_chi varphi)=S_LC`. The inverse returns S; the Weyl average is S/2. Full-sky shear supplies ell>=2 and annihilates ell=0,1 at every distance. A flat finite patch also has affine and isotropic-quadratic potential ambiguities. Averaging or setting a boundary value does not measure an omitted realised mode. [Taylor v1, Eqs. (3)-(18)](https://arxiv.org/pdf/astro-ph/0111605v1).
+
+2. **Windows are part of the supplier.** Finite source bins, true-distance distributions, photometric errors, source weights and sky masks mix the underlying correlations. Shape response, intrinsic alignment, additive/multiplicative calibration and noise must be separated or propagated before applying the radial derivatives. A continuum mathematical inverse is stronger than a finite tomographic data product. [Heavens v2, Secs. 2.3-2.5](https://arxiv.org/pdf/astro-ph/0304151v2).
+
+3. **Velocity is a different projection.** With `u_i=partial_i U`, `V=H U` and `v_phys=grad_x V/(aH)`, a radial measurement is `u=(aH)^(-1)partial_chi^spatial V`. It is not the derivative of V along the evolving light cone. In angular spectra its kernel is `k j_ell'(k chi)/(aH)`, not `j_ell(k chi)`. The independent derivation fixes the scalar-velocity cross sign and all length/Hubble factors.
+
+4. **An equal-radius geometry restriction matters.** Radial pair products measure `mu Psi_perp+p1 p2(Psi_parallel-Psi_perp)`. The two-statistic recovery needs distinct geometric weights, `A-B!=0`. At one exact radius and one separation, A=B; the estimator is rank one. Scalar potential flow supplies an additional differential relation, whose inversion needs its own boundary/domain analysis. Different-radius pairs can help but are unequal-time pairs. This is a restriction on the stated design, not a no-go for velocity reconstruction. [Wang et al. v1, Sec. 3, Eqs. (2)-(11)](https://arxiv.org/pdf/1808.07543v1).
+
+5. **Fixed separation requires a geometry correction.** For an unfiltered statistically homogeneous/isotropic scalar covariance, `C_LC(chi1,chi2,mu)=xi(N1,N2;s)` with `s^2=chi1^2+chi2^2-2chi1 chi2 mu`. The independent result is
+
+   `partial_N1 xi|s = -(1/mathcalH1)[partial_chi1+(chi1-chi2 mu)/(chi1 chi2) partial_mu] C_LC`.
+
+   It applies inside the accessible separation triangle, with calibrated geometry and differentiable covariance data. On equal-radius shells, the fixed-angle derivative differs from the fixed-separation equal-time derivative by `-s xi_s/(mathcalH chi)`. Thus ideal scalar correlations can inform a time derivative without a common growth factor, but changing radius alone is not that derivative. Applying this to radial-velocity projections also requires differentiating their geometric prefactors; applying it after shear filtering does not restore the missing angular modes.
+
+The primary sources support their own bounded geometries and estimators. Heavens' density forecast imports Poisson/growth assumptions; Wang's density model and fitted calibration values are not admitted here. In particular, the older radial-velocity study illustrates distance-indicator/Hubble calibration dependence, finite pair bins and variance, not a continuous covariance-derivative supplier. Its calibration/variance discussion was read through Secs. 4-5; cosmological fits were not reused.
+
+The full field, covariance and derivative derivation is in `DERIVATION_v1.md`, including the unequal-time Bessel kernels and same-shell velocity formulas. The independent script recorded **43 exact symbolic identities, zero failures, and six incorrect alternatives distinguished**. These are internal geometry controls, not observations or checks of root-authored code. All residuals are retained in `CHECK_RESULTS_v1.json`.
+
+All three selected primary PDFs were recovered with TLS verification enabled. The exact versions, sections/pages actually read, source bytes and visual equation checks are bound in `SOURCE_RECORD_v1.json` and `SOURCE_FREEZE_v1.json`. Text extraction warned about rotated text; relevant equations were checked against rendered pages. Full external PDFs, extracted texts and page pixels are local source-recovery material, not proposed publication contents. No unavailable primary source is being concealed, and no claim is made about every existing survey or possible reconstruction method.

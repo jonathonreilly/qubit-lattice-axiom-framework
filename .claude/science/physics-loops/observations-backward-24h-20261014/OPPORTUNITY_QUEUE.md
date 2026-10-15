@@ -90,3 +90,7 @@ Priority: derive response dynamics while retaining the homogeneous scalar mode a
 3. Independent normalization/environment bridge: connect a reconstructed relative F to a measured same-environment gravitational coefficient, retaining source, range and endpoint assumptions. Avoid a supplied numerical Newton constant being treated as a derivation.
 
 Priorities reflect new evidence value, not PR counts. Do not repeat receiver or scalar algebra variants that supply no new discriminator. Fixed deadline and final packaging time remain unchanged.
+
+## Re-ranked after M15
+
+Highest next target: derive a finite measured correlation functional from actual source/velocity window operators, challenging the equal-epoch diagonal and calibration rather than interpolating them. First discriminator: determine whether an unequal-time compatibility identity admits smooth two-source weights and a finite unbiased pair estimator. Preserve the prior conditional projected constraint if this fails. Secondary target: measured-gravity normalization/environment, avoiding another synthetic inverse relabel. Action/state/scale selectors remain unsolved.

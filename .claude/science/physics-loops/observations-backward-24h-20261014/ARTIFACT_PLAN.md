@@ -16,3 +16,7 @@ Canonical source note and four Python files plus pinned input manifest, two prot
 ## Cosmological inverse review unit
 
 Publish the self-contained conditional note, one primary/helper pair, four declared inputs, paired result/summary and genuine runner cache. The action_selection evidence archive preserves exact earlier source, failed90/1 run, precision diagnosis, mutation variants, independently frozen work and source correspondence; its index lists per-member hashes and excluded external paper assets. Selected complete review reports remain plain files. The shared campaign pack records dependencies and remaining physical suppliers. No formal audit or integrated landing is part of this publication.
+
+## M15 delivery
+
+One coherent canonical projected-covariance note, primary plus3new helpers, existing supplied candidate helper, fresh paired output/cache, exact protocol and scope checklist. Independent reports remain readable; indexed historical evidence preserves all code/result/failure versions while omitting external full papers/renders from publication. Base is frozen M14 f3637a4eba. No authority weaving or audit-state update.

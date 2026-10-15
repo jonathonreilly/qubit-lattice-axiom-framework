@@ -171,3 +171,11 @@ Root read the complete focused delivery report `bad9a13bf1dde64e35aa85b010ed26f9
 ## M14 final source and opening disposition
 
 Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded_theorem target, actual conditional-support. Final85 controls0fail; independent equations, canonical-state forward solution, covariance proof, source and cache checks complete. Root read complete closing reports. Two original mutation survivors repaired by independently checked sharp fixtures; invalidv2 retained; finalv3 has21 failed-check rejections and3 exceptions. One coherent M14 OPEN content judgment; final indexed evidence/tree binding precedes publication. No observation fit, action selection, integrated-main landing validation or formal audit. See dynamical_response/REVIEW_RECORD_v1.md.
+
+## M14 final delivery and publication — 2026-10-15T15:58:59.402386+00:00
+
+Root read full final report `1a1c6162aa39edc507356599bef981652c2119b2dbb1fa7e40cfe2112bcb72eb` and identity `959becb7d7a41d848a08d8cb28199528a1d02f88e5d907993557915ae589c050`: 2,823 mechanical comparisons, zero mismatches, 76-path tree `fcfba0674309efabb284a2d573b975e4423de22b`, 568 archive versions, 566 latest paths, 49 plain copies, nine omissions; every current evidence reference resolves. No science rerun or formal verdict. Published and attached PR9608 at head `f3637a4eba3fb18690fe6a2b03d9455c60cc6363`. Final source/cache and independent science receipts stay in the frozen M14 constituent.
+
+## M15 projected-covariance milestone
+
+Root read complete geometry, weak and primary-source reports and all final canonical correspondence. Matrix norm, moving-boundary qualification and ignored protocol declaration findings were repaired and prior versions preserved.29 current controls pass;8 mathematical mutations rejected;0 empirical tests. Conformance sections1–12 checked in projected_covariance/CONFORMANCE_v1.md, including explicit scopes for formal audit/integrated landing not performed. Independent coherent-opening judgment is OPEN. Frozen staged-tree and publication receipts remain separate.

@@ -1,0 +1,218 @@
+{
+  "HEAD_observed": "f3637a4eba3fb18690fe6a2b03d9455c60cc6363",
+  "acquisition_receipts": [
+    {
+      "bytes": 2059,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_ACQUISITION_v1.json",
+      "sha256": "5f2eea729d5ca771119848fcb91b26f7dfdd7d4684ad2cff7fcd2428c3783bc4"
+    },
+    {
+      "bytes": 1317,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_ACQUISITION_v2.json",
+      "sha256": "bc7c9a36f60ee2fb039cedf65d49dc19b7a5c32a61df0f0c9678f6edc78404b9"
+    }
+  ],
+  "base_requested": "f3637a4eba3fb18690fe6a2b03d9455c60cc6363",
+  "created_utc": "2026-10-15T16:23:55.115589+00:00",
+  "instructions": {
+    "planning_AGENTS_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+    "root_AGENTS": {
+      "bytes": 1265,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    "workflow_bytes_equal": true,
+    "workflow_origin_main_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+    "workflow_worktree_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+  },
+  "origin_main_observed": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "planning_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "preliminary_web_only_access": [
+    {
+      "scope": "Version metadata and initial PDF web preview; final selected source is v2, recovered locally and read in its own right.",
+      "url": "https://arxiv.org/abs/astro-ph/0304151v1"
+    },
+    {
+      "scope": "Initial web-rendered method preview; not a locally hashed source or the bound version used for final statements.",
+      "url": "https://arxiv.org/pdf/astro-ph/0304151v1"
+    }
+  ],
+  "pypdf_version": "6.11.0",
+  "scope": "Independent physical supplier/convention check only; no root projected_covariance working files read",
+  "scope_limits": [
+    "Not a survey of all current datasets or a universal measurement impossibility theorem.",
+    "No uniqueness theorem for the same-shell scalar velocity differential inverse is claimed.",
+    "The primary-source density models and numerical calibrations are not physical inputs to the new candidate."
+  ],
+  "sources": [
+    {
+      "abs_url": "https://arxiv.org/abs/astro-ph/0111605v1",
+      "accessed_date_UTC": "2026-10-15",
+      "authors": [
+        "A. N. Taylor"
+      ],
+      "key": "Taylor2001v1",
+      "pdf": {
+        "bytes": 123166,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.pdf",
+        "sha256": "7195d9506d556dffc0e85f53e6399943833218a4095fe6229f6887e72bf1b3c9"
+      },
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0111605v1",
+      "publication_policy": "External full text and pixels remain local; source identities and versioned citations may be included, not full source files.",
+      "read_scope": [
+        "PDF pp. 1-3: Introduction and Method, Eqs. (1)-(27), including flat-Born inverse, shear inversion, spherical angular relation and illustrative noise discussion.",
+        "PDF p. 4: Summary and figure caption read in web-rendered text; reference list consulted only as displayed, not an acquisition/review of those references."
+      ],
+      "source_convention": "Single Newtonian potential with equal metric potentials; translated explicitly by S=2 Phi. Printed recompile date differs from arXiv version date; versioned URL and byte identity control.",
+      "text": {
+        "bytes": 26137,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.txt",
+        "sha256": "4893e37f8c1913b7dee61ecc933aca9fe2f15264db84075f6c213d876d812341"
+      },
+      "title": "Imaging the 3-D cosmological mass distribution with weak gravitational lensing",
+      "used_for": "Flat-Born radial relation, angular shear normalization and null-space comparison; not GR density identification, survey forecasts, or missing-realisation-mode recovery.",
+      "version": "astro-ph/0111605v1",
+      "version_date": "2001-11-30",
+      "visual_equation_checks": [
+        {
+          "bytes": 328182,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p1.png",
+          "sha256": "71b8e602f51828e85fdab43e34542f6be990353b23a0f1b38c548719f8c1702f"
+        },
+        {
+          "bytes": 343575,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p2.png",
+          "sha256": "5bfe2f29fc2bf99b57ec3436dbc3ea9ac1a163710b910b6cb5999e096495cb32"
+        },
+        {
+          "bytes": 314165,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p3.png",
+          "sha256": "ea7079a8ce6a3449c4c9976d8c8de82358168916802f467c2e76ade3abe62617"
+        }
+      ],
+      "visual_equation_pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "abs_url": "https://arxiv.org/abs/1808.07543v1",
+      "accessed_date_UTC": "2026-10-15",
+      "authors": [
+        "Yuyu Wang",
+        "Christopher Rooney",
+        "Hume A. Feldman",
+        "Richard Watkins"
+      ],
+      "key": "Wang2018v1",
+      "pdf": {
+        "bytes": 1470357,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.pdf",
+        "sha256": "1d1fa83aca8c8c0e19d0a15a5aab4d1f308e1377d93565e68766e00f3e1eb568"
+      },
+      "pdf_url": "https://arxiv.org/pdf/1808.07543v1",
+      "publication_policy": "External full text and pixels remain local; source identities and versioned citations may be included, not full source files.",
+      "read_scope": [
+        "Abstract/introduction and Sec. 2 catalogue/selection context, including Eq. (1), PDF pp. 1-3; no catalogue acquisition.",
+        "Complete Sec. 3, PDF pp. 3-4, Eqs. (2)-(11): radial pair statistics, sightline/separation geometry and inverse.",
+        "Secs. 4.1-4.3 and 5, PDF pp. 4-7: variance, distance-modulus errors, calibration dependence.",
+        "Sec. 6 introduction and Eqs. (12)-(13), PDF p. 7, read only to separate the subsequent density/growth model from the geometric estimator. Later fitting/results sections not reviewed or reused."
+      ],
+      "source_convention": "Our derivation uses n1,n2 for sightlines and s_hat for the separation vector; printed Eqs. (4)-(5) have overloaded/ambiguous repeated unit-vector notation. The contraction and Eqs. (6)-(11) were independently derived rather than blindly transcribed.",
+      "text": {
+        "bytes": 73408,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.txt",
+        "sha256": "1fc720a6be9642ec654f9eea2f195a38a651e819446db36ac0a8b5c4b7fa48c8"
+      },
+      "title": "The Peculiar Velocity Correlation Function",
+      "used_for": "Radial velocity projection/estimator and measurement/calibration limits. No fitted parameter, growth law, empirical value, simulation result or continuous derivative supplier admitted.",
+      "version": "1808.07543v1",
+      "version_date": "2018-08-22",
+      "visual_equation_checks": [
+        {
+          "bytes": 355710,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p4.png",
+          "sha256": "0d9605ba03d64244f102c6d44b469c030eea4613a33ca4d6dfd2e2e2ea8729d0"
+        },
+        {
+          "bytes": 360328,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p6.png",
+          "sha256": "1f070014e3accf7f8189da5e40dd51dd3b0e3542fbdeb3c627f4892e4d36b613"
+        },
+        {
+          "bytes": 363138,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p7.png",
+          "sha256": "afb430e26b76658e7d1b1d77c049f73b45583261d03c7a529a6155607454b343"
+        }
+      ],
+      "visual_equation_pages": [
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "abs_url": "https://arxiv.org/abs/astro-ph/0304151v2",
+      "accessed_date_UTC": "2026-10-15",
+      "authors": [
+        "Alan Heavens"
+      ],
+      "key": "Heavens2003v2",
+      "pdf": {
+        "bytes": 293672,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.pdf",
+        "sha256": "656e5d0e05bf1e78a3b3b460a424835c5d0f2e2c008cf8a7dfa61522dbdfae7e"
+      },
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0304151v2",
+      "publication_policy": "External full text and pixels remain local; source identities and versioned citations may be included, not full source files.",
+      "read_scope": [
+        "Introduction, PDF pp. 1-2, source-distance and systematic context.",
+        "Complete Secs. 2.1-2.5, PDF pp. 2-4, Eqs. (1)-(32), including growth/Poisson premises, discrete estimator, photometric-error mixing, angular mask, source weights, covariance and shape noise.",
+        "PDF p. 5 visually inspected: likelihood/finite-forecast assumptions through Sec. 3.2 opening. No numerical forecast reused."
+      ],
+      "source_convention": "Own spin-2 and two-potential normalization derived independently; no reuse of curved-background kernel or density growth normalization.",
+      "text": {
+        "bytes": 52257,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.txt",
+        "sha256": "85504fbbb42bc70fc99e91485724ed9c97da3ced795824b2f07809cc7a2011af"
+      },
+      "title": "3D weak lensing",
+      "used_for": "Explicit finite observation/window/noise operators and separation of model-conditioned density forecast from geometry. Gaussian photo-z model and common growth are source assumptions, not data supplied here.",
+      "version": "astro-ph/0304151v2",
+      "version_date": "2003-04-10",
+      "visual_equation_checks": [
+        {
+          "bytes": 346385,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p3.png",
+          "sha256": "954cf9be170263034d9b14813b32b1271639ba8bbc12edd7f196f1ce4f77c4bd"
+        },
+        {
+          "bytes": 303025,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p4.png",
+          "sha256": "c8f88b28b2c8fb33b0c5742797c4424fd9cd386213929ce927c82498685c0484"
+        },
+        {
+          "bytes": 315021,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p5.png",
+          "sha256": "65ec5b6aae2aad3498b3d4f3de41b75247ed4c2a8620082b3063307124646d94"
+        }
+      ],
+      "visual_equation_pages": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "unavailable_selected_sources": [],
+  "unrun": [
+    "No raw survey data, catalogue rows or maps downloaded.",
+    "No empirical fit, ODE history, parent helper or formal audit executed.",
+    "No root-authored new projected_covariance file read.",
+    "No Git mutation, PR or external message."
+  ],
+  "warnings": [
+    "pypdf layout extraction warned: Rotated text discovered. Output will be incomplete. The original PDFs were preserved and relevant equations checked visually; rotated side labels were not taken as proof text."
+  ]
+}

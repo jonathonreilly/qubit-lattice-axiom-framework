@@ -1,6 +1,6 @@
 {
- "edge_count": 16105,
- "node_count": 7144,
+ "edge_count": 16106,
+ "node_count": 7145,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -176,6 +176,10 @@
   },
   "accessible_prediction_note": {
    "deps_hash": "ce7f8dd35214",
+   "out_degree": 1
+  },
+  "accuracy_scaled_compiler_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "bc6e71c91ca5",
    "out_degree": 1
   },
   "achiral_zero_one_two_orbit_order_blind_factor_bounded_theorem_note_2026-10-09": {

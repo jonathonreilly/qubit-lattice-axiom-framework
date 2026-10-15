@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/review_accuracy_publication_2134_v2.py",
+    "cce1fca4d4ad8c1f1ba48fa19626612ddebc44147e7490bb5cd9be4f3ec6039c"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-15T21:34:08.877482+00:00",
+  "end_utc": "2026-10-15T21:34:09.138524+00:00",
+  "elapsed_seconds": 0.26095108315348625,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/accuracy_publication_review_2134_v2/stdout",
+    "bytes": 597,
+    "sha256": "b99fd79811cb6fe8d8d5412b1c2090cae5311d44a97b201a8f0fd10099339189"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/accuracy_publication_review_2134_v2/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/review_accuracy_publication_2134_v2.py",
+    "bytes": 9223,
+    "sha256": "3844c9d2a5151ff675c1a949e48f26f9a90975813d7a5c45ebc25a3426f1559f"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+    "bytes": 1342,
+    "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+  }
+}

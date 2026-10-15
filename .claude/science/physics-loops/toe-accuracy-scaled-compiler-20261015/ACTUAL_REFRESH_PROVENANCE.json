@@ -1,0 +1,82 @@
+{
+  "kind": "captured_root_refresh_and_ancestry_metadata",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/5a3e4d1ce76d0b6a61d6f7f29da315ec9f39b05243bfd8d67091c5850082301b.json",
+      "bytes": 2973,
+      "sha256": "5a3e4d1ce76d0b6a61d6f7f29da315ec9f39b05243bfd8d67091c5850082301b"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/1c41a347201995b15a4ebf59e96c0df24ecf235732039e6a0abea77098284b14.json",
+      "bytes": 1588,
+      "sha256": "1c41a347201995b15a4ebf59e96c0df24ecf235732039e6a0abea77098284b14"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/fe292db3590a1c719f081ca61bf75c82a549af8749d9011931a96ab6b0e95f0d.json",
+      "bytes": 178,
+      "sha256": "fe292db3590a1c719f081ca61bf75c82a549af8749d9011931a96ab6b0e95f0d"
+    },
+    "prior_root_review_failure": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/2cc30f2661ef427baa3e98cff6e1a094a4802b1116ed6391a432f62e752ddf07.json",
+        "bytes": 1533,
+        "sha256": "2cc30f2661ef427baa3e98cff6e1a094a4802b1116ed6391a432f62e752ddf07"
+      },
+      "source": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/b42a554ccada52b29dff9b513d5a6df82d9463d30e1e4029bd645fa31e1ff81c.py",
+        "bytes": 8803,
+        "sha256": "b42a554ccada52b29dff9b513d5a6df82d9463d30e1e4029bd645fa31e1ff81c"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/cdd63a5d3da39a2ed733cad7218978d808f6c4d152f094ccdb3e4a3f6b679a9d.blob",
+        "bytes": 410,
+        "sha256": "cdd63a5d3da39a2ed733cad7218978d808f6c4d152f094ccdb3e4a3f6b679a9d"
+      },
+      "recorder": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+        "bytes": 1342,
+        "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+      }
+    },
+    "fetch": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/eb18c5ef0b6694eb36d50bab2c952f19e327c92f42b45595bd2c4407b44c0ddc.json",
+        "bytes": 1196,
+        "sha256": "eb18c5ef0b6694eb36d50bab2c952f19e327c92f42b45595bd2c4407b44c0ddc"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+        "bytes": 179,
+        "sha256": "3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44"
+      }
+    },
+    "inventory": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/c651aff18297b7e4363f4a9e86006b1e029f842b667e1c2abfe8abd37a3fbd3c.json",
+        "bytes": 1261,
+        "sha256": "c651aff18297b7e4363f4a9e86006b1e029f842b667e1c2abfe8abd37a3fbd3c"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/ab3ef049f91d66a76cb633e08960d791c54cad53f1b0995f24b01ca78606cf73.blob",
+        "bytes": 20298,
+        "sha256": "ab3ef049f91d66a76cb633e08960d791c54cad53f1b0995f24b01ca78606cf73"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "scope": "Historical fetch/inventory and base-publication provenance; the observed predecessor PR is Git ancestry only; the canonical quantitative compiler and its protected finite-grid proof/comparison intervals are the sole mathematical import/evidence."
+}

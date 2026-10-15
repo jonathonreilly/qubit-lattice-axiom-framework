@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-15T20:57:53.454658+00:00",
+  "root_candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_candidate/DERIVATION.md",
+    "bytes": 12683,
+    "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+  },
+  "self_readout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_readout/READOUT.md",
+    "bytes": 1855,
+    "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+  },
+  "status": "Proposed sharpening; no independent check or acceptance",
+  "scientific_programs_run": 0
+}

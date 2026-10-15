@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/review_accuracy_publication_2134.py", line 58, in <module>
+    for k in ('stdout','stderr','child_source_at_launch','recorder','launch'):same(r[k]['path'],r[k])
+                                                                                   ~^^^
+KeyError: 'launch'

@@ -1,0 +1,65 @@
+"""Seal this analytic check after its two actual metadata subprocesses."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import sys
+
+D = Path(__file__).resolve().parent
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+
+def write(name, value):
+    (D / name).write_text(json.dumps(value, indent=2, sort_keys=True) + '\n')
+
+
+assert not (D / 'FINAL_FREEZE.json').exists()
+for label in ['capture', 'verify']:
+    r = json.loads((D / 'metadata_runs' / label / 'EXECUTION.json').read_text())
+    assert r['exit_code'] == 0 and not r['timed_out'] and r['scientific_programs_run'] == 0
+    for key in ['child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr']:
+        row = r[key]
+        got = pin(Path(row['path']))
+        assert got['bytes'] == row['bytes'] and got['sha256'] == row['sha256']
+v = json.loads((D / 'VERIFICATION.json').read_text())
+assert v['report'] == pin(D / 'REPORT.md')
+write('HANDOFF.json', {
+    'report': pin(D / 'REPORT.md'),
+    'disposition': 'Analytic support for original degree-D conditional recipe and separately attributed root k0 refinement; no proof repair required. New proposal awaits root source decision.',
+    'source_exposed': True,
+    'parent_source_accepted': True,
+    'new_candidate_root_accepted_in_this_record': False,
+    'source_rows': v['source_rows'],
+    'source_blobs': v['source_blobs'],
+    'scientific_programs_run': 0,
+    'new_metadata_subprocesses': 2,
+    'editable_prompts_changed': [],
+    'qualifications': [
+        'Fixed actual polynomial tree family, certified nonzero coefficient, computable nominal inputs and uniform constants are supplied.',
+        'D remains the interpolation degree bound and node-count parameter under the optional k0 sharpening.',
+        'Use the actual specified sufficient repetition recipe; no upper bound for arbitrary inflated choices.',
+        'Complete reference/plant output at actual T+s with exp(-isH) W exp(-iTH) and exact scalar phase.',
+        'All integrated hardware errors share one total allowance; peak positivity and endpoint work require their own bounds.',
+        'No efficient oracle/qubit-size/runtime claim, native supplier, permanent halt or automatic autonomous-resource inheritance.',
+    ],
+})
+write('SEAL_OPERATION.json', {
+    'utc': datetime.now(timezone.utc).isoformat(),
+    'argv': sys.argv,
+    'cwd': str(Path.cwd()),
+    'source_at_operation': pin(Path(__file__).resolve()),
+    'operation': 'Direct in-process metadata seal; not an invented subprocess receipt.',
+    'scientific_programs_run': 0,
+})
+members = [pin(p) | {'path': str(p.relative_to(D))} for p in sorted(D.rglob('*')) if p.is_file() and p.name != 'FINAL_FREEZE.json']
+write('FINAL_FREEZE.json', {
+    'sealed_utc': datetime.now(timezone.utc).isoformat(),
+    'status': 'frozen source-exposed analytic assessment',
+    'scientific_programs_run': 0,
+    'members': members,
+})
+print(json.dumps({'report': pin(D / 'REPORT.md'), 'freeze': pin(D / 'FINAL_FREEZE.json'), 'members': len(members), 'source_rows': v['source_rows'], 'source_blobs': v['source_blobs'], 'scientific_programs_run': 0}, sort_keys=True))

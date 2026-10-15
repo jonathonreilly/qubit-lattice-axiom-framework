@@ -1,0 +1,19 @@
+{
+  "kind": "dated_source_proposal_not_actual_binding",
+  "created_utc": "2026-10-15T21:32:27.404888+00:00",
+  "canonical_binding": null,
+  "git_base": null,
+  "primary_execution": null,
+  "cache_execution": null,
+  "mutation_execution": null,
+  "graph_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "source_acceptances": {
+    "accuracy_scaled_compiler": "e0735ca8d982440594af54e9d711071531d40042440fc26b1f7e131677747ade"
+  },
+  "scientific_programs_run_this_draft": 0,
+  "historical_root_scientific_fixtures": 0,
+  "historical_programs_replayed": 0,
+  "future_base_supplied": false
+}

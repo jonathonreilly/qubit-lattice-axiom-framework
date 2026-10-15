@@ -1,0 +1,24 @@
+{
+  "disposition": "Analytic support for original degree-D conditional recipe and separately attributed root k0 refinement; no proof repair required. New proposal awaits root source decision.",
+  "editable_prompts_changed": [],
+  "new_candidate_root_accepted_in_this_record": false,
+  "new_metadata_subprocesses": 2,
+  "parent_source_accepted": true,
+  "qualifications": [
+    "Fixed actual polynomial tree family, certified nonzero coefficient, computable nominal inputs and uniform constants are supplied.",
+    "D remains the interpolation degree bound and node-count parameter under the optional k0 sharpening.",
+    "Use the actual specified sufficient repetition recipe; no upper bound for arbitrary inflated choices.",
+    "Complete reference/plant output at actual T+s with exp(-isH) W exp(-iTH) and exact scalar phase.",
+    "All integrated hardware errors share one total allowance; peak positivity and endpoint work require their own bounds.",
+    "No efficient oracle/qubit-size/runtime claim, native supplier, permanent halt or automatic autonomous-resource inheritance."
+  ],
+  "report": {
+    "bytes": 32307,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/REPORT.md",
+    "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+  },
+  "scientific_programs_run": 0,
+  "source_blobs": 25,
+  "source_exposed": true,
+  "source_rows": 26
+}

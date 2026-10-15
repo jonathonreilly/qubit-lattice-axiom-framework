@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/seal.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex",
+  "operation": "Direct in-process metadata seal; not an invented subprocess receipt.",
+  "scientific_programs_run": 0,
+  "source_at_operation": {
+    "bytes": 3258,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/seal.py",
+    "sha256": "94db5dac619a19ec84b735bfd568e0f5e64b1a99460950bc7660ba5b97511531"
+  },
+  "utc": "2026-10-15T21:12:59.242817+00:00"
+}

@@ -1,0 +1,5 @@
+# Actual source-assembly access failures
+
+Two read-only cat requests used guessed names seal_proposal.py and seal_metadata.py in the immutable polynomial_path_mediator_publication_draft reference directory. Each returned exit1 with “No such file or directory” (tool chunks753f81 and7c848a). No metadata or science program was executed by these failed reads. rg subsequently identified seal_packet.py, which was read completely. No source changed because of these access errors.
+
+The earlier decisive-check ACCESS_FAILURES.md is separately recovered unchanged. It reports that check’s own misspelled acceptance path and empty-glob probe, not new events in this task. No failed science or invented launch receipt is inferred.

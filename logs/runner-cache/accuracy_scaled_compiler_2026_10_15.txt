@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/accuracy_scaled_compiler_2026_10_15.py
+runner_sha256: ac218fc9081a98948499559cc66dfe7ac40162784e6504c481df73021948f23a
+input_fingerprint_sha256: 937a4102f271a718ebeb08f0e95d16998bcadb6279eb65b1b9b5a1fd359a580e
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "historical_root_scientific_fixtures": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"}
+per_element: exact coefficient text retained; no physical element or gate executed
+per_site: fixed port plant and supplied isolation are preserved; no hardware test executed
+per_mode: actual-time compiler bounds retained; no search, pulse schedule or mode simulation executed
+per_block: three exact bodies, one parent and captured binding evidence checked
+lattice_wide: source integrity only; certificate discovery, oracle runtime, native controllers and audit remain open
+
+----- stderr -----
+

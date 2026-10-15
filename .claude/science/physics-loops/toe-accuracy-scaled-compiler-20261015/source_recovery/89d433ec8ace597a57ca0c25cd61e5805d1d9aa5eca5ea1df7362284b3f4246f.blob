@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-15T21:17:17.308171+00:00",
+  "canonical_parent": null,
+  "parent_publication": null,
+  "parent_review": null,
+  "source_acceptance": null,
+  "actual_git_base": null,
+  "actual_binding": null,
+  "actual_primary_run": null,
+  "publication": null,
+  "root_publication_review": null,
+  "scope": "Initial source-only status. Actual source acceptance and canonical parent publication have not yet been supplied; do not infer them."
+}

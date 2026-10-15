@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-15T21:32:25.415917+00:00",
+  "refs": {
+    "HEAD": "70676cfdaa37280254c95e55c8d550816daf0040",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "fetch_scope": "Actual origin/main fetch recorded in linked main_refresh_2133 receipt; origin/ai/execution also fetched in the same actual invocation.",
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_2133/EXECUTION.json",
+      "bytes": 1196,
+      "sha256": "eb18c5ef0b6694eb36d50bab2c952f19e327c92f42b45595bd2c4407b44c0ddc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2133/EXECUTION.json",
+      "bytes": 1261,
+      "sha256": "c651aff18297b7e4363f4a9e86006b1e029f842b667e1c2abfe8abd37a3fbd3c"
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2133/stdout",
+    "bytes": 20298,
+    "sha256": "ab3ef049f91d66a76cb633e08960d791c54cad53f1b0995f24b01ca78606cf73"
+  },
+  "previous_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_2119/REFS.json",
+    "bytes": 3423,
+    "sha256": "62e3fb9432267ccb9af467a1ad074d9eb41078f3d3e2d24a4f8e1b8cb7e883ec"
+  },
+  "inventory_count": 52,
+  "inventory_delta": {
+    "new": [
+      {
+        "baseRefName": "physics-loop/toe-polynomial-path-mediator-20261015",
+        "headRefName": "physics-loop/toe-conditioned-positive-compiler-20261015",
+        "headRefOid": "70676cfdaa37280254c95e55c8d550816daf0040",
+        "isDraft": false,
+        "number": 9622,
+        "title": "[physics-loop] conditioned-positive-compiler: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9622"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "external_science": "Latest9614 b7898552 fully scoped in main_refresh_2002/EXTERNAL_9614_DELTA; no import. Other source changes require scoped reading before import.",
+  "current_publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/conditioned_positive_compiler/PUBLICATION.json",
+    "bytes": 1588,
+    "sha256": "1c41a347201995b15a4ebf59e96c0df24ecf235732039e6a0abea77098284b14"
+  },
+  "current_attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/conditioned_positive_compiler/ATTACHMENT.json",
+    "bytes": 178,
+    "sha256": "fe292db3590a1c719f081ca61bf75c82a549af8749d9011931a96ab6b0e95f0d"
+  }
+}

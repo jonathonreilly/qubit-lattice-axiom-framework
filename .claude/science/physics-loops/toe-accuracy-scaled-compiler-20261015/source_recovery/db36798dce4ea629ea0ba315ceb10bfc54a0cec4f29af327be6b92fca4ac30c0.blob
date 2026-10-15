@@ -1,0 +1,23 @@
+# Actual preliminary access failures
+
+These are exact observations from read-only tool calls. They are not scientific executions and have no invented launch receipts.
+
+1. The following command returned exit code 1 because the renewal directory was misspelled (the underscore after renewal was omitted):
+
+    cat /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal20261014_214309/conditioned_positive_compiler_root_review/ACCEPTANCE.md
+
+Observed stderr:
+
+    cat: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal20261014_214309/conditioned_positive_compiler_root_review/ACCEPTANCE.md: No such file or directory
+
+The tool output chunk was 3a6d11. The correct renewal_20261014_214309 path was then read successfully in full (chunk 871c43), together with the acceptance freeze and actual receipt.
+
+2. At the clock observation 2026-10-15 21:05:49 UTC, the following read-only size probe returned exit code 1 because this output directory was still empty:
+
+    wc -c /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/*
+
+Observed stderr:
+
+    zsh:1: no matches found: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/*
+
+The tool output chunk was 194519. No source or report existed at that glob yet; subsequent report creation did not alter an earlier deliverable.

@@ -1,0 +1,35 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 97212,
+      "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+      "claim_id": "conditioned_positive_time_compiler_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "independent_author",
+          "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 39210,
+          "end_byte_exclusive": 70080,
+          "bytes": 30870,
+          "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+        },
+        {
+          "name": "comparison",
+          "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 70233,
+          "end_byte_exclusive": 97212,
+          "bytes": 26979,
+          "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "independent_author",
+        "comparison"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "git_ancestry_is_not_mathematical_dependency": true,
+  "scope": "Sole quantitative compiler parent; protected finite-grid proof and exposed assessment intervals only"
+}

@@ -1,0 +1,18 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "two_use_pointer_readiness_revision/AFTER.md",
+      "start": 18097,
+      "end": 33490,
+      "bytes": 15393,
+      "sha256": "b237031e9a98918e204fe0d7084f992d85ee176a587d22ea64d9a4667ab49d76"
+    },
+    {
+      "alias": "two_use_pointer_readiness_independent/DERIVATION.md",
+      "start": 33551,
+      "end": 70368,
+      "bytes": 36817,
+      "sha256": "e02639c26b399bdc62f388fdf88422aead94e21208679aea4dba5827c4922b49"
+    }
+  ]
+}

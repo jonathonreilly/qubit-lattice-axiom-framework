@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-15T02:11:44.790920+00:00",
+  "science_branch": "physics-loop/toe-two-reader-pointer-20261015",
+  "science_head": "9373daa6b08f90d675045ef8bd79108c78545255",
+  "science_tree": "ddcf94fd82b97a924b611d398afafa94aabd30ed",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "base_pr": 9582,
+  "base_is_also_mathematical_dependency": true,
+  "canonical_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/HERALDED_AUXILIARY_VACUUM_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 62714,
+      "sha256": "939fd222cc39453aeeeffe19223f665e47882a142b48e52379fa8b00fc7bc592"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42611,
+      "sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    }
+  ],
+  "premise_boundary_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    }
+  ],
+  "exact_parent_clauses": [
+    {
+      "alias": "premises/sharper_de7.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 22794,
+      "end": 38776,
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976"
+    },
+    {
+      "alias": "premises/chain_79d.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 39056,
+      "end": 59953,
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff"
+    },
+    {
+      "alias": "premises/fixed_background_method.md",
+      "canonical_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 11861,
+      "end": 42611,
+      "sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+    }
+  ],
+  "conditional_acceptances": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/two_use_pointer_readiness_root_review/ROOT_ACCEPTANCE.md",
+      "bytes": 3186,
+      "sha256": "0b44f566f5a186708ab780b890934e072893beb09255081a0c0d02216ebf2f60"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "no_new_pr_yet": true,
+  "science_merged": false
+}

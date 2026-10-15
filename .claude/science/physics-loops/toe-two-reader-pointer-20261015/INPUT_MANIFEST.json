@@ -1,0 +1,461 @@
+{
+  "schema": "two-reader-pointer-inputs-v1",
+  "members": {
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/BINDING.json": {
+      "bytes": 3237,
+      "sha256": "9d69af4f202f322de04aef02bca0f5ae9b443d4d26bfc23a422bef8ecc20b198"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/BODY_MAP.json": {
+      "bytes": 482,
+      "sha256": "5609c10377c4bd1f9dd36b54db141993a67c2e68cc2d41c2eaa98adca02d915d"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/SOURCE_INDEX.json": {
+      "bytes": 74953,
+      "sha256": "3277071d987cf7055414278615765879559ab6a821e0a2303ddcab07b90d86a0"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0.gz": {
+      "bytes": 17351,
+      "sha256": "fe308ce01f75683e7402b974944ca863dbfd688a8126a2739ff0942a46284a9d"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/0b44f566f5a186708ab780b890934e072893beb09255081a0c0d02216ebf2f60.gz": {
+      "bytes": 1618,
+      "sha256": "e73a746ce83a070038c8b8da221985add203365111c94601b438d4e8c35dd23b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/0c2fb1d8c53e62c4d20180181ef3c1e5d715aee2147ac6fd684a19c377fe94f4.gz": {
+      "bytes": 1402,
+      "sha256": "bce822b6096b9ef545e70c1fca1617b4b4742d0814b4716d44032720fccb3543"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/1036bebd04b6dad4737e161634a8613efef5b91aab454fffcd9f27549c1f180c.gz": {
+      "bytes": 773,
+      "sha256": "6953c3fb75f83636884abbaeb56aeaf4ce007b2e409d05749a287b29a7db2d99"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/10bd263364bfa6d13669d71b62fc2e82335ea3bfc0aa46c73a9f56fc413707ed.gz": {
+      "bytes": 2817,
+      "sha256": "4a928767375cf92ce2e8faff313f767879b6663e8131fbc1ad67cccc1ebe91d3"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/10d922912dbcd65b04feee6cedbe8f7855437a32d4260e8139913081f245f2e5.gz": {
+      "bytes": 436,
+      "sha256": "621135c247a4289c92bae7d66036c52d3b57e53c68a9b375fccde941cb4e990b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/1f43106fe831dce4ce24f3143a95f9a04e4e222bfe06355203de6b4550b406e1.gz": {
+      "bytes": 134,
+      "sha256": "bfa6160b08ff7e02d3fd74eb0b54392f7af73fbc97edf9309d9f2e9a5429c34a"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/2013c07e17d8d85feec51d472ceb32a9044c278f4e69885bbb9c4d3f5bffd381.gz": {
+      "bytes": 452,
+      "sha256": "1d2cd5b049182e905c8849af7089660b33e3e15da70d9b2288aecac2a931b85b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/205f93b32a37ec06f6461ff0214b012c2baed2ed46351c1b512f4d2f3bcc989c.gz": {
+      "bytes": 2060,
+      "sha256": "71fe4c570d93783032787c7d3b79ac4dce922c02131a1c5d37073e593b3dd54a"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/20bc0e821f3b02198a277d381cac57c2cef973fa55613125878140afad77c453.gz": {
+      "bytes": 504,
+      "sha256": "9ee2b58c1e4f934f319677571ae10918e66a2ffb94f3e378871cb95d73b0582c"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/21df7ac7f5c3fc4d96463b45274297bd4a086857e40ed3e695126036c11dc385.gz": {
+      "bytes": 363,
+      "sha256": "f39f8d4bb39cfd51021b6af0851dd4287afe6871c9927544f42c2aaf3915762b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/2357f8c16ab49d8a7e2abd96f58509bf08ef67dc7c616dc0dbfcccf250c615de.gz": {
+      "bytes": 3962,
+      "sha256": "9ce48064731f5c08887ae129ba596739266efff1410d2457a4dbd0fa1fbe1f3b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/258329e8c63d344469736f3be88ce973db1a8a29e0d5c4c013c2c2aab7f6d4e5.gz": {
+      "bytes": 637,
+      "sha256": "224889584228299c770eb3115d6765e94270bcfd7955187991281a08085b3748"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/272b153897189d0b08fd8f8f2cd4e4f0009278b24258479fe3cf36a4a81fe9bc.gz": {
+      "bytes": 2981,
+      "sha256": "439102db067a84aba5db197f915fbdbb7d964b6dabf21d005ae24587634830a6"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/2a49ff40d93b89ac14007bf4cd32492b853e3f54377416367ab4b7c60c5eb73b.gz": {
+      "bytes": 1989,
+      "sha256": "3af82a7af31ed231631f0bacd310865727f79dc689a539c9bebabd5db6f50d42"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/2ab950eb82a27b2084092d1cc7215ed4108129d7b51e2d985fd96691dceb8d63.gz": {
+      "bytes": 513,
+      "sha256": "c549fc47a52315e7252c1feb9dbf702f0223742cdc42444c39acfb7970eb8833"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/2d8e2d158aa77151a3d981f2339a80e277b671dd5b92cb9118a9b43d1d376fd4.gz": {
+      "bytes": 1197,
+      "sha256": "354f80a74a2f41260b153bdfee3f33641f41382b6cc823580d7c90c9e0d94e08"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/2f6df71c7a38d001d40bf27b16d06357a664cb83f84a4fa57397b46a4dcc7b61.gz": {
+      "bytes": 405,
+      "sha256": "4c52accca8c63c7c6183b9eb32c7753b30d023c278da6d30ff5c52314902854c"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/334b07d40c4a80608ffbbc328a13b66f897adc7199b92fc2f997ff1a47ce1e26.gz": {
+      "bytes": 533,
+      "sha256": "4efe3af7bfa8bbbc980aa150e331fa7eff79de0f6ab2151d1e4e86afc704b0db"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/35cecb341d7c0d235a861c23aca81892e11e003369edf06d3b97ea04a7279312.gz": {
+      "bytes": 506,
+      "sha256": "1b8d6db0f90cafa25e467598e3e413358e34a9d4114c5d68342917fdd0f77565"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/36c8a44df3b024c91720bab42b2b8fe06bbbcc715e6c7f8a137e992a2c45160b.gz": {
+      "bytes": 159,
+      "sha256": "c9b5a10d8ddf6706279349b17c0b9f5fbd7db78e011e55cdc9bc0ac620b4999b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/372e8003af6f42a7b97b020cf0a28e9a2ce92cf403405387a9a1143394ce7205.gz": {
+      "bytes": 1116,
+      "sha256": "7f8c53542079eaef467baff21deff238932c5fcd187486064bb33fbaf34b9880"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.gz": {
+      "bytes": 132,
+      "sha256": "213a7d95066156e8bc9c149c48281aad9ac3ae8266553f73a9d22842299ebf61"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/3a729971c46010042a1409e2aba025f05433faef7484e1734ffb4d45dca4463f.gz": {
+      "bytes": 491,
+      "sha256": "28069672e6ef5fcca3ba58e68c15aa92ee9bec8ff09ca9af8ba4962b6f30238d"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/3bf19e80665b33072e0b3f5ecd4e5b5eb399996d11f7cf2472e831a0b101b3d9.gz": {
+      "bytes": 337,
+      "sha256": "51dc6f94a9f5e1d273f35ff8741de147b698978356c1aa7d2ac59849745bb108"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/3f7a30409e13710d4cdb908644f52b55c68acf5081f8015f13bfeb3df632f1fc.gz": {
+      "bytes": 328,
+      "sha256": "ffcedd95900f3f19db8fa50fed6f6ea5d03b5736a870310353470086416bf8d1"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/4453ef7d5dfdd4285eb0b5e2dd5a0e6b9cb7a1afcfabe063579dbf9dc0af820e.gz": {
+      "bytes": 540,
+      "sha256": "38eda9477d0030f1010d7c2a16b13d76880719979d19a0cb31eecce5e50f5f99"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/455a6edb25f2d9c5524c925bf83b013b521c08b0b2f2296da15fa45d2e420d29.gz": {
+      "bytes": 11230,
+      "sha256": "e2fff07e303dcd0345e6689af76fea075cf8a5c473df88249fbbfbe12f464ab9"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/49c9b3f0ad43751c0bebaea98970f31ec4a00f6ab78c811929f7995eb0b1b7aa.gz": {
+      "bytes": 1129,
+      "sha256": "032e35979dbd3c35253d3186a0ba50ca8818906bb71006737df97e61930a4b88"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/4e8b84705faed6b103d19b484c0a742a8e35332ad09f030e88c0bbb2f8b7bb97.gz": {
+      "bytes": 1759,
+      "sha256": "17f4a195e47be30d100c59801cba077b6eac077bdbc11c92df9b791800bbb4e1"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/4ea39bf8e33e828c7e9dd729e16926fafa20cf2e3fca4f2f348b63b87c481c02.gz": {
+      "bytes": 348,
+      "sha256": "b5406b64216082e01eea0dbc4a10385c70413d307813982729b141b07bb824ea"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/4ec0caf1cc30a6de2735059ecaa6ad099db5f78bd1eafe5e2471901eb64189f0.gz": {
+      "bytes": 537,
+      "sha256": "cb5504ba02501ebc00cd2fc4ac42e054afc6f1528d9175be66817d055465b92e"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/55714c40c546b8ec457f6395c53443c9a0a67e6e63e2e579fef8df060215ec1b.gz": {
+      "bytes": 3758,
+      "sha256": "e6c593dce4de2739af001ebd6c66459c243e95151d363b3477ba8abe600daa8a"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/59b51ee088ea267b686fd71397eeaf788602b87b990781b78eb88060f3ea1b75.gz": {
+      "bytes": 2086,
+      "sha256": "cc30406b0af0a44a9d2dff1a1138093c00b1fc43433a8a2e3825be1419656fa4"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/5c4fdaba2ce0369bc449b75dde6116528b1613148f4d343c1e0048880423e2a4.gz": {
+      "bytes": 1160,
+      "sha256": "3b74a1fde4cea1eeff47e258fb5f5849872dd01c1060a70368aabdeecbdb39c6"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/600f8765e63b55057cf905cdb44fe5b502c28da95e5fb6505c839ad333e2b0d3.gz": {
+      "bytes": 3286,
+      "sha256": "dc70e1f21c0b165fa73115ddeb6d8d427b37a2fc07b2ff424ce90dc73fa77a26"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/605512047828a6cee0e8ffd5db3b80ab7abf28b88b96f6581684131f9340bfea.gz": {
+      "bytes": 357,
+      "sha256": "ec00eb00d2487dd379e16a437ba2a53ab633133c3edeb9f774b1b9c07cd1a77a"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/62c057b6b3479da24908518e7b4002e3f9fce06b44d9f3ae19f02bd2eedbdbb3.gz": {
+      "bytes": 185,
+      "sha256": "5a4157fa5ea66a35351bf54ad38ddc1eb4e0d9973ef341788256361281056bd1"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/67756ce5e184bbbc04bdb8f6acdaad221e2ddc754e55b1bb15a1463061ef55f7.gz": {
+      "bytes": 662,
+      "sha256": "5a4dd7d069a4fad7d4eafe805b124aab1cbbdafb02a4bb3e0be381286c52e696"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/67c45c30206ee06b8c9e66970cdfb429016c162c7730b57ce1b1fe004e944299.gz": {
+      "bytes": 5496,
+      "sha256": "aba1d6ebd369c58e4cb3e9ebe332d42c80f4cf00cb3324df8e2b883972c87923"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/7044c8449633668a8477391c0273077412c9b2e3a80dd2fa681fa7df8203043f.gz": {
+      "bytes": 1827,
+      "sha256": "6a066dbce6717455fa148a88be47c949df076c537255ca2cee78beeac5b39a1e"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/7845451d0e37c8a7d5383e5bbc1e1dbff11fef549d4e668be6c830675ddac474.gz": {
+      "bytes": 575,
+      "sha256": "60d22fc26d12b82b0be4b3ae1b685b0fb280106470e399b7460174ca4d539ac9"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff.gz": {
+      "bytes": 8806,
+      "sha256": "5578306f2e4b4620a3869d6addc9c0e556640c378b3e3cd22260afb58a7c6fda"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/7a41fcceebc8b41ceb2d823775aca7614cd2ea340df229a7a601580436930db1.gz": {
+      "bytes": 3392,
+      "sha256": "7fae7a5dc9e17525a961291b41583b7f9b00d68903875c4f7aa7db052150efa5"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f.gz": {
+      "bytes": 12897,
+      "sha256": "1d0db44da89cfad3df1ac40a81c641716ef6803795fff8bff50eb3826f81735e"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/84172b65d25e365623bb1e7555130a2a960d5f199c5d153a572185a2efff42e6.gz": {
+      "bytes": 540,
+      "sha256": "63c5fd6a901e768683c56dec94e9abfc3f3d4d4283f46955ff3e0ff5b3e0eef3"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/8556833d1645adecae312720a5fe2058d4ee03e41373651e435e92fedcb93298.gz": {
+      "bytes": 1861,
+      "sha256": "07d5124b341e401ce72c4710acb02a08f06dc517c1efc84fe01b69db67267fba"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b.gz": {
+      "bytes": 11446,
+      "sha256": "d22c7b3fbb4c0759e05e486ff25a8eac97cbc38796177bae6fea893b1c34b7d3"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/8d2e5560f08d5eb1ca28a4ba2969f50512cb53a5a9358583b8d88aa444238577.gz": {
+      "bytes": 9111,
+      "sha256": "9be6cebd21ddeb4f2df1e9a54593f2d1b602e4a1de2c4adc49797216c94f25c3"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/8f2fe53f4efac5d1c9be41d1e3a19d89552812a5f0848759cd2a54a156177830.gz": {
+      "bytes": 7577,
+      "sha256": "5f99c71c6f0e174455a434e52c18b930d7c8717f38c4501e0b8bbd21e088d47b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/939fd222cc39453aeeeffe19223f665e47882a142b48e52379fa8b00fc7bc592.gz": {
+      "bytes": 23073,
+      "sha256": "f902f3287a40b4e5a2a321aedc8105f5bd6104483c9e5c975fbac28f352d17b2"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753.gz": {
+      "bytes": 4357,
+      "sha256": "70b06ee88301b6b13ed28ba82d06b0ac071d9286ab55475e57434c84e507e631"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/945bbb506018244e5e79ae554068532d1cba443b48879220cef6e9b8b2fc638d.gz": {
+      "bytes": 584,
+      "sha256": "3367f386ee6b36cb79c4273b1380fde249d00bd890a208a37e5d321a5dee3b9b"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/974e9e5ae361f07891f0584ff63d541875fcc563925c72cfa24b336e797d1d28.gz": {
+      "bytes": 539,
+      "sha256": "a2f092a057efdc45d31fe62661f818f6080c2c5f08b05fa4cc13288215acfcf9"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/9c6f4cbbfd518492bd66ab9e074bd440f456fa5232aba2254e038ee5cb8f8be0.gz": {
+      "bytes": 2019,
+      "sha256": "2aecca41edb969189143330b243d8c3ab2f42e6c3ce33c5eb808ab1fe217f117"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f.gz": {
+      "bytes": 22412,
+      "sha256": "85a82af9076c73d5ccce94184c5051af38872795fb3b9ec43d89ffed7ca887c8"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/a2200a1aaef7c38e5bce7f86124198a962e14880992bbeaf7e19f95181fad82c.gz": {
+      "bytes": 344,
+      "sha256": "5be8fba10ae620b4fc0e0676d1a3ee1066f656b6a375117003f8d813edd98634"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/a75b83229181d5d5c0ff6a21f4b444fb68ac0d654c6967545a839c55669002c9.gz": {
+      "bytes": 848,
+      "sha256": "675f59cb0d5d174b41e533a7e0957f2a2b23ea1fe906fbcf059b5a68dda24f23"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/a82862642c8bf31a1b9ea2e39cad9699dd409d617c00aa1b70de740e75b74e15.gz": {
+      "bytes": 2806,
+      "sha256": "603976b592a00d3637987379c2728b7c90d34a12df5d6f761de43418166729e7"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/abc14129b339b6022606fb1869d9928566305f04be920fc80f06b2d05a169ecf.gz": {
+      "bytes": 4989,
+      "sha256": "7e3c36582f1ce133825fe9554a5d951d25fe18e465a8a7ddacdb73b03b876137"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/afe6a2ddaf77a550648ba837d08b55249d62130f6e5818f0cd8abc2a59931e13.gz": {
+      "bytes": 1638,
+      "sha256": "3ff43233f5732695fd7a69ce78871b90e2b72b19c1f7d72761ea93f81821c58a"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b.gz": {
+      "bytes": 1275,
+      "sha256": "90ac91f84447d5a0d12fca0b258237dd8b902862dee1bf063be1af05cf0fa51c"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/b1eca7eb47710bc832a5d64997c0cd177b5a208af75181f072fba7c0bce621c1.gz": {
+      "bytes": 133,
+      "sha256": "d2f4f40065a629dc62092779364db7d5ad0774af4ede25489c407fb2803095df"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/b21d5bb49dbbce4871808d7a4cf068f6e9e9d6b8d1c6d41afcf5ad1b85e43fae.gz": {
+      "bytes": 553,
+      "sha256": "19d34c1f4e7ed432411d6cc767fcaa61574fea8820bdc5219768221a39d386a7"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/b237031e9a98918e204fe0d7084f992d85ee176a587d22ea64d9a4667ab49d76.gz": {
+      "bytes": 6297,
+      "sha256": "3618460386eafda82f1d8bf8d2f9b16e2eae6af346c7548c3e50818f4b9a5ae3"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/b59e405789a24ea9289630bc47403cc55cfc6445e1fc329bcaf4a22690a9189a.gz": {
+      "bytes": 3455,
+      "sha256": "e79103a6bfc0450ba544d936f8ef64601683b0d4ac606f93c83542a819273482"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/b59fb56f585890232c90c5298a34b1c61e2b2bbc06a091d19cba75f693205156.gz": {
+      "bytes": 1922,
+      "sha256": "25bc061033ee5860377f3426e621310f3e333a64ca87ffa1fbec53f8fb06a2fe"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/b67d577e0c74103bbb6316ac48a7ae657dcb4c5cf18558fbb431a2e280f68def.gz": {
+      "bytes": 569,
+      "sha256": "ab64bdd8178cf0090d74404031ae34a9d9b14f3eeddd705982bb124ecf88d2bf"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/ba7c14a56e84bc12bb2186e4ffeb6111990518c18f55104cdfb516cb334f85b6.gz": {
+      "bytes": 7864,
+      "sha256": "929bafdf4160895ede7eb8c2e50ed346fd49a79cebad04b81ed1ad84e19a5cf0"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/bae7e1af37a4e304743fe53f93b63f2552ac265e6c1f005356e4d00ba8aa458f.gz": {
+      "bytes": 790,
+      "sha256": "84213c5cec2a49c64ef91085d8e64ca75775438de15958662f4082f8e6da7533"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/bcd854c5fa81f579c85cb046c9e2cc64629520321efbb9588188c5476015bffa.gz": {
+      "bytes": 747,
+      "sha256": "f2fbc1cdfe241fa8ededc426282a971976a4ccdef460b6d8aa2c37f3b899fdb1"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/bdfc7ae3edf39cef0e448e3556fc75e1681d60b0a9e9eec64360f8ca9634de8a.gz": {
+      "bytes": 5399,
+      "sha256": "5d6a1adbc81733482ddcc4642ffd038fad25695bc7c65efeab77aa89c3dde80c"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/bdfdc0aa04d71abc4fcd650a0defcd67720d1dd614669edf3915b142adce741a.gz": {
+      "bytes": 1780,
+      "sha256": "d37cfa4caeeafa86ef825339d40d7f7e63da995bafb2134029fbd1a1e8194f5d"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/be5ddc762024c727298919f0289c9e533364240cc000d5e2bc134c0dd8fccf00.gz": {
+      "bytes": 675,
+      "sha256": "4edaae00c8a3153eb1bb1fc155398942911ba42730b6e02e6e8545a4ac4aa029"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/c0b96db3d3d33278d0d94b1a53ed37519281c09569dfa9f61ccabbf3464f3e2b.gz": {
+      "bytes": 2747,
+      "sha256": "3cff40edbf46e9817277ec9d412b10293a3b478de03c7bdb373dab0410133c0a"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/c0ed25c4d82185be60958d9231b271f031c81e64abc407f2b63f8e118ce822ef.gz": {
+      "bytes": 380,
+      "sha256": "012c186feb1a673d449a9986139abb1976906af21847e096806c68027d1991ef"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/c253cc58d53b8f64c0cec4aa88653cba285701afd6979a99f6350cf15d0dbd53.gz": {
+      "bytes": 1278,
+      "sha256": "2a24b4fe60a1f8e5d135c6468e9a46bb1baa8d7dff8dc5f7b49883d09ffa3629"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/c2ff59cc9be258a4505f8c732d8cc0ca17ab17881045eca7197c879f271c6274.gz": {
+      "bytes": 568,
+      "sha256": "0fa53078fb4f1f68f53a8944485df332e1bcfa15ade0180eaed26fbbd1bc05cd"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/c53f937728400fd92dc5e016564f43e1ba2cbbebe8b215a83293eb66400b00c0.gz": {
+      "bytes": 3035,
+      "sha256": "3e2c2a58bd132f14616a28837250a4070f455c424380c88bcf8bd7fb8394fe79"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/c6709eaf32f889ca883bd218424a2c860f3b47dee8b0c8a2c62a9a3a504e3764.gz": {
+      "bytes": 1322,
+      "sha256": "d34932017d44b29f81834d8cf32c98d5e618f7881ba3a5a98349545f014469a9"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/cb3499056a8b87ec0b7a8d48418e43b803ddb64be873091f065c537396b1285a.gz": {
+      "bytes": 587,
+      "sha256": "dd0364b4dfabf7637bd4819dce452df9b644524cbef4a015e559240b002abaad"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/cdf90c8ebd282e1030ac3328ea59d0dfc87f4a87849016b8e6cef244ad8bf84d.gz": {
+      "bytes": 535,
+      "sha256": "4b090845ecc77d521378cbfb119134e84af61b218c33ea748693b6c75e0293de"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/ce822e5d05fbfdf1eba9693deac1e2d0702acbcbf0ed1a8a09bb5e64a3db92a4.gz": {
+      "bytes": 387,
+      "sha256": "3747aa896bafd2887c679a93a9eeba7507248efe1c3b1b274db988a6f39658ee"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/cf4d4851f8cdbd98362a82fe1112f4e076a693ddc82203dd111b4e13efa37e33.gz": {
+      "bytes": 652,
+      "sha256": "a22f14ad6db4ad7023a72ee2ecf734a777fff5a6a3b9c4c8e627b7df8124a819"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.gz": {
+      "bytes": 688,
+      "sha256": "875b7f42ca707edfd4304cdf8d0ca1e0a7d44ab682909812f5b119390ed0fc86"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/d1bca8650eb3f6e1e3b7538ea40c7e517ea2fb8fe0a124934783b9cf8802dc4b.gz": {
+      "bytes": 389,
+      "sha256": "f6df0c87975010919daf26eb5a5305294a682ae006aece76eb2c466864f61961"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/d4cfb471f5a1c65aeb26bdb95f3bc35e3164712171d731375e55cb3805eae649.gz": {
+      "bytes": 2608,
+      "sha256": "71d7b9453f41ba3798d47dc06bd27a3e673774e7e68a30cad74a89d505ebc325"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/d85486ad585ef3bb16a792d1b8c66a4f3c05d900434863237e22a821d1e9ceb9.gz": {
+      "bytes": 90,
+      "sha256": "f6418f80dfb6539af97afe89ca706911baa57317037a13ef51c5aaa4076fd375"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/d8cd1ea86aa7f0cc04d873ff0c8823b57b20479409d8278d167caa71c83ca2bd.gz": {
+      "bytes": 637,
+      "sha256": "55d0678db1015982365e294105e84433cee5da83619dcc270416c5e07769b6bd"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/d9c4c141ae90dd9ad8dc622e2071bdafe78052592e3d9e40ba1e5f28c2a1db2a.gz": {
+      "bytes": 536,
+      "sha256": "417ea078ec9293deb2e12f1027486f34c11c5775765737fd40a924416de822e7"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/dd3059b54878639489df124a7f85a53261398bb1c752d353884810f8aac1689f.gz": {
+      "bytes": 3804,
+      "sha256": "4ad470d1069e7e177c79c9840f792240eabaf495200a13d9c8076858c08985e6"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/dd728e67995e79da546fd6bc529ddc72388cc51171dac933930d8c6289d80763.gz": {
+      "bytes": 625,
+      "sha256": "de13debed5886b7828ee3703fff186a85cfa7c56052ef85582c7d47f1c5bfb2c"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976.gz": {
+      "bytes": 6753,
+      "sha256": "83e138c69a9e116ef439a27336b327115fd036273007d9eddab4f7b669d45105"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/e02639c26b399bdc62f388fdf88422aead94e21208679aea4dba5827c4922b49.gz": {
+      "bytes": 14429,
+      "sha256": "e83d02cf4bc6715eed4f2425a80887855b91d8c9799ad01fbe2a07cacde1f80e"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/e50497db6b6db293b6a539434cca9ec77af1ecff09431616b434df67fdcfbc19.gz": {
+      "bytes": 3345,
+      "sha256": "bb416842d02ebeafc7f168b64747aec9abfecf7dedb49a9a8d1e6c4ccb5d3a07"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/e71d39cd00ff201fc835a7f1dff3fcab78db9c1eeaf4a2715e5e4a4a76a64df1.gz": {
+      "bytes": 6895,
+      "sha256": "844fb1917473fed894748b896f7dc4fcaa49c70fc5ded6a606092e72db840cc5"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/edbc322d83596098dca4056864ef670e4fa74f8602ebda4f166463a3856f5d73.gz": {
+      "bytes": 4941,
+      "sha256": "1d73f16fae2a8e74ebd788826f92c89ca7dcbac5b45976fdf5495b700cca4abb"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/f075fa54aec7f5409abfc93cd16e57fcc2d863421b182c878e68fb451db8899d.gz": {
+      "bytes": 140,
+      "sha256": "c36e52cffa62399c7f328ac68a6c833f47d7afa40e0592159dd5b8bab1ac275e"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/f0b489022d5d8e195aa999055af80e0874781fa39d0f9a66bb2e360894358537.gz": {
+      "bytes": 2724,
+      "sha256": "e1cefc487fc733e41ef44e27bcb4fad9cec2d9854eb6083c0658edfd7225000c"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/f66e607197b8b4572d964b705923622a2cbab26bae510087864594c4ec402a50.gz": {
+      "bytes": 175,
+      "sha256": "7fbf17b0b291ef943392c61b7a11c922d017743b2dfd403d3e80610d1060e2fe"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/f9cc3ef6d53774a4e8e3667043964a3da923a4f90b2738af408058db32d318eb.gz": {
+      "bytes": 7040,
+      "sha256": "d281fd7dadc5c6109848e6194ece8635690398047859121078abbde76f7ec54a"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/fad25adeb1ebc8d13db126fe0ef4d9645e5ee2c9690bb377c1b6eb54a6420004.gz": {
+      "bytes": 540,
+      "sha256": "31129cf26037f5070656121e5dc701a05f02407961ed35db8f7b6f483c3c9eec"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/fec8b31d1cbe96a79c2c30e6727fa9d06f9b992c9bba8efb62f82e6ae3e50f2a.gz": {
+      "bytes": 990,
+      "sha256": "752035f498d043f2d7202195a569253eb363950c3e628c700a731afd6985de67"
+    },
+    ".claude/science/physics-loops/toe-two-reader-pointer-20261015/archive/fee963ce5dd204593549f251c9adc938bafabd128222282a067fb8aede814d94.gz": {
+      "bytes": 2988,
+      "sha256": "1a00ea80aedc6de2a0ac98ff2c7b5c71e60b33a54723a690113aaf403d67f29b"
+    },
+    "docs/TWO_READER_LIVE_POINTER_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 70368,
+      "sha256": "0bc9d473dd631107b96aa96ab5075985ec938d6c1b399e5a19fe9b5db03226b9"
+    },
+    "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    },
+    "docs/HERALDED_AUXILIARY_VACUUM_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 62714,
+      "sha256": "939fd222cc39453aeeeffe19223f665e47882a142b48e52379fa8b00fc7bc592"
+    },
+    "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 42611,
+      "sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0"
+    },
+    "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    }
+  }
+}

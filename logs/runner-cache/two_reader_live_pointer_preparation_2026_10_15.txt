@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/two_reader_live_pointer_preparation_2026_10_15.py
+runner_sha256: a5d82fbce37c2033594e406f565288f180aa64db3e7ae82692b1a1052abb5a1b
+input_fingerprint_sha256: 796466cd2e9a008b8138a59e97b0496079c6289bfd7b4feed89efd465e4112b2
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"complete_proofs": 2, "computed_recurrence_certificates": 0, "decoded_originals": 147, "limits": "Supplied eligible fresh archives, pure states, complete ready readers and coherent-word contracts. Distinct live-F aged and terminal-F aligned endpoints. No native preparation, third-use reset, practical recurrence or retained audit.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Identity/interval verification only. Analytic derivations and selective checks are archived evidence; this runner does not prove their mathematics."}
+per_element: supplied full coherent or complete-output error contracts
+per_site: two ordinary-neighbor archive transfers; explicit supplier hardware outside the routed box
+per_mode: no physical energy or continuum-mode identification
+per_block: both first-read labels and binary outcomes, full declared reference/module state and actual normalization
+lattice_wide: finite layout and full recurrence wait; no whole-apparatus nearest-neighbor conclusion
+
+----- stderr -----
+

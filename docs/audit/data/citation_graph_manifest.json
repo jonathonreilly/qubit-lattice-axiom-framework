@@ -1,6 +1,6 @@
 {
- "edge_count": 16063,
- "node_count": 7119,
+ "edge_count": 16068,
+ "node_count": 7120,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21521,6 +21521,10 @@
   "two_field_retarded_probe_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "two_reader_live_pointer_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "2c00247b251c",
+   "out_degree": 5
   },
   "two_sign_comparison_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

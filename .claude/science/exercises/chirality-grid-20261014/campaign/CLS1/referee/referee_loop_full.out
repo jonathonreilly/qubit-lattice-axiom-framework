@@ -1,0 +1,3 @@
+phase 0.0 max|Z_off| 0.014753865512945514 spreads {'spatial_only': np.float64(1.9984014443252818e-15), 'temporal_only': np.float64(0.029304243551885767), 'both': np.float64(0.029304243551886544)}
+phase 0.07 max|Z_off| 0.014735799406493338 spreads {'spatial_only': np.float64(2.2698750887784058e-05), 'temporal_only': np.float64(0.029268592352262868), 'both': np.float64(0.029245885875771593)}
+watchdog peak RSS 143344 KB

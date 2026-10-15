@@ -1,0 +1,11 @@
+dim-3 (constant) cubic-invariant structures: corner-diagonal (exact translations) 1, all (BCC) 2 -> new under BCC: 1  [all Theta-odd]
+dim-4 (linear in q) cubic-invariant structures: corner-diagonal 2, all (BCC) 5 -> new corner-off-diagonal under BCC: 3  [all Theta-even]
+  dim-3 structure 0: eigenvalues [-2.0156 -2.0156  0.9844  0.9844  0.9844  0.9844], corner-off-diagonal norm 0.41
+  dim-3 structure 1: eigenvalues [0.9687 0.9687 1.0156 1.0156 1.0156 1.0156], corner-off-diagonal norm 0.01
+  dim-4 structure 0: corner-off-diagonal norm 1.00; speed spread per unit coefficient (max over q) 0.061, min over q 0.015
+  dim-4 structure 1: corner-off-diagonal norm 0.00; speed spread per unit coefficient (max over q) 0.980, min over q 0.132
+  dim-4 structure 2: corner-off-diagonal norm 1.00; speed spread per unit coefficient (max over q) 2.103, min over q 0.496
+  dim-4 structure 3: corner-off-diagonal norm 1.00; speed spread per unit coefficient (max over q) 2.000, min over q 2.000
+  dim-4 structure 4: corner-off-diagonal norm 0.00; speed spread per unit coefficient (max over q) 0.980, min over q 0.132
+P-c light block lies in the invariant span: residual 2.3e-10; corner-off-diagonal norm 1.00
+watchdog peak RSS 19888 KB

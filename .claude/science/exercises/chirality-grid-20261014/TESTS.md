@@ -570,7 +570,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Torus topology is confirmed independently:** C_L(1) = −1 and C_R(2) = +4, so C(11112) = 0 and C(L1) = −1.
 - **For route 1:** periodic-time link-reflection positivity is well defined on an even torus with two reflection cuts (Osterwalder–Seiler). A global torus measure and new kernels at Lx ≥ 4 are the natural next work (TOR-1, running). Periodic time is not the only conceivable change of geometry.
 
-**CLS-1 result (15:20Z; same family; referee launched): CLS-PRICE. Untuned, it is KILL-level at every f in the range.**
+**CLS-1 result (15:20Z; same family; referee launched): CLS-PRICE. Untuned, it is KILL-level at every f in the range.** [Referee: CONFIRMED WITH CORRECTIONS; CLS-PRICE correct. See below.]
 - **(i) Labels (proved; brute-force checked).** Under BCC, the sectors are {hw0, hw2}, all R (index +4), and {hw1, hw3}, all L (index −4). The (1,1,1) sign equals the handedness. So no bilinear can pair anything perturbatively. Non-perturbatively this needs a lattice CPT-type Θ (extra structure; AX:169-171).
 - **The real problem is light–light mixing.** The corner-changing Yukawa ψ_cψ_c′H₀S_K and the hopping ψ_c†ψ_c′S_K carry the same translation charge. So the condensate that supplies CKM also mixes the light generations directly, at the lattice scale.
   - Dimension 3: an energy split of about 3ε ≈ 1e19 GeV, ×4e42 over IceCube (zero with Θ).
@@ -584,3 +584,18 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **OBS-3's zero does not survive class S.** Its premise of corner-diagonal kinetic terms needs exact translations.
 - **Supervisor's own thread:** I predicted SAFE or a mild PRICE through Lemma S. That was wrong: cubic-allowed corner-mixing structures split the speeds.
 - **Reading (supervisor; pending referee).** Combined with OBS-4, every CKM realisation in X2 tested so far either has electroweak-scale carriers that fail FCNC (the D3 benchmark), or lattice-scale translation breaking that mixes the light generations at the lattice scale (about 1e-27 tuning). This is a CKM-versus-corner-protection tension.
+
+**CLS-1 referee (codex gpt-5.6-sol, xhigh; returned 15:30Z; recorded 15:30Z): CONFIRMED WITH CORRECTIONS. CLS-PRICE, not KILL, under R3.**
+- **Confirmed.**
+  - The light–light operators share the Yukawa's translation charge and are permitted by Spin(10), G_SM, cubic symmetry and the equal condensate pattern.
+  - The BCC sectors, with indices +4 and −4.
+  - The IceCube rows: 2.9e-24 GeV and 3.9e-28.
+  - The count 4 − rank Φ(P), with an isolated exception at κ = 4/3.
+  - Model B is qualitatively closer to SMG than Model A, whose partner is spurious.
+- **Corrections.**
+  - **The coefficients are independent of the Yukawa coefficient.** εa = 0.33 is a naturalness assumption, not a theorem. "Any symmetry removing it also removes the Yukawa" is too strong.
+  - **Sector protection** works against weak direct bilinear pairing only, not against arbitrary-strength node motion or annihilation. Θ is verified only for the displayed one-body matrices, not for the full gauged interacting theory.
+  - **The IceCube limits apply to individual SME coefficients,** not directly to three-flavour eigenvalue spreads. The enormous exclusion remains, up to O(1) normalisation.
+  - **The one-loop toy omitted its temporal wave-function term.** Including it gives a spread of about 2.9e-2, about 7.5e25 × the IceCube comparator. This strengthens the hazard, but it is still a toy.
+  - "About 18 counterterms" is suggested only. The tuning at tree level stays about 1e-27.
+- **Strongest correct statement (referee).** Class S removes exact corner conservation, and it permits cubic- and gauge-symmetric light–light density and kinetic operators, including three new CPT-even kinetic tensors. Their coefficients are not forced to equal the CKM Yukawa's, but they are generically unprotected and disastrously large without extra structure. So: CLS-PRICE, with a candidate Θ plus about 1e-27 kinetic tuning, within one-body proxies and a toy loop. The many-body SMG fate stays open.

@@ -2,6 +2,17 @@
 
 **Readings: LV-PRICE(n), with n = 19 tuned coefficients (14 if set C's counterterm already includes the tetragonal operator). FLAV2-NEAR.**
 
+> **Referee (codex gpt-5.6-sol, 11:51Z): CONFIRMED WITH CORRECTIONS.**
+> - **Confirmed independently:** c_TT^d ≈ −2.1e-8 and its sign; LV-SAFE fails robustly on the direct d-quark vector and axial rows; tuning of about 1e-14 is needed.
+> - **Not established:** that 19 or 14 is the minimal count. The strict reading is LV-PRICE with n open.
+> - **Further corrections:**
+>   - the s-quark row depends on an unverified kaon map;
+>   - the cited bound row has been corrected;
+>   - the up-quark residual enters through Q_L;
+>   - CKM alone does not fix the magnitude.
+>
+> See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Provenance (supervisor's note).** The harness blocks subagents from writing REPORT.md, so the supervisor saved this file from the worker's final message, lightly condensed; every number and file reference is the worker's.
 - **Worker:** Claude Opus 5.5 at xhigh, the same model family as the supervisor. Unrefereed.
 - **Run windows:** 00:29–00:47Z and 11:22–11:40Z on 2026-10-15. The gap is recorded in `PREREG_FOLLOWUP_2026-10-15.md`.

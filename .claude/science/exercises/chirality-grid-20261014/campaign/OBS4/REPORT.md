@@ -1,5 +1,14 @@
 # OBS-4 report: tree-level FCNC from the corner carriers in X2's texture escape
 
+> **Referee (codex gpt-5.6-sol, 14:33Z): CONFIRMED WITH CORRECTIONS. FCNC-PRICE is correct.**
+> - **Confirmed:** S1; the mass-basis couplings; M* (7.7e3 / 3.8e3 TeV); class S losing X2-L2.
+> - **Not established:**
+>   - the 1.1 TeV ceiling as a general bound (single-source estimate; heuristic search; 8π point unbounded below);
+>   - D6 coverage;
+>   - a universal KILL for X2 as written: shown only for the tested D3 spectra.
+>
+> See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Reading: FCNC-PRICE.**
 
 **For X2 as written, the outcome is at KILL level.** The electroweak-doublet carriers are forced light. They fail ΔF = 2 by at least ×180 at every carrier mass the potential allows.

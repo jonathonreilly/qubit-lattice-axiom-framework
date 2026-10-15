@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-10-15T12:49:15.664383+00:00",
+  "source_sha256": "e831d559bc63f11a122024346123fbf40bc1d59c4d42697d53a0ea0e3d38c2e8",
+  "input_sha256": "7b4cc7071ee05b6668f51db4a5e305d845af1cf025cdbcecb3306744c84dc936",
+  "original_count": 74,
+  "auxiliary_count": 121,
+  "pure_memory_count": 121,
+  "swap_count": 9087,
+  "component_swap_counts": [
+    3569,
+    2345,
+    3173
+  ],
+  "component_distance_sums": [
+    860,
+    560,
+    662
+  ],
+  "omitted_edges": 37,
+  "new_memory_omitted_edges": 2,
+  "all_adjacencies": 300,
+  "adjacency_counts": {
+    "same_auxiliary_component_declared": 124,
+    "auxiliary_original_omitted": 18,
+    "same_auxiliary_component_omitted": 11,
+    "auxiliary_original_declared": 18,
+    "inter_auxiliary_component_omitted": 6,
+    "memory_auxiliary_declared": 3,
+    "memory_memory_declared": 118,
+    "memory_auxiliary_omitted": 2
+  },
+  "scientific_scope": "Selected exact permutation and geometry only; no inverse, Hilbert matrix or continuous dynamics.",
+  "status": "PASS_SELECTED_ROUTING_FIXTURE",
+  "finished_utc": "2026-10-15T12:49:15.683849+00:00"
+}
+Check count: 269 Passed: 269

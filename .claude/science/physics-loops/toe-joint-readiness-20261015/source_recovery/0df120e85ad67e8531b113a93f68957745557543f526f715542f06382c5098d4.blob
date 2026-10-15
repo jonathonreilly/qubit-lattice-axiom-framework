@@ -1,0 +1,41 @@
+{
+  "sealed_utc": "2026-10-15T13:32:57.889443+00:00",
+  "status": "Contemporaneous pre-execution source preservation",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 29150,
+      "sha256": "292c5de0b5b15a013d9c6895b6b8de4c794f5c284c6fc43da601ba09db606fcc"
+    },
+    {
+      "path": "SELECTED_PLAN.md",
+      "bytes": 2971,
+      "sha256": "10703fe365884a91f2a6a83fc550fd9065c9f9b17b6ce9138e8bb757052aeec7"
+    },
+    {
+      "path": "ROOT_EXPOSURE.md",
+      "bytes": 1406,
+      "sha256": "bb8544603b46849cc18a1f5f0ade8bdc095f4e0f1f2f08083bfc9c8d507ea075"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 3927,
+      "sha256": "3735f71d88bf9813e66e337e1975a1abe5f05baab50aee4ad809611dc8793b3e"
+    },
+    {
+      "path": "exact_fixture.py",
+      "bytes": 10171,
+      "sha256": "c5fdb1571106d70c3c7dbe44e85b21c8638956e6909740d52d5b2a9a68384af7"
+    },
+    {
+      "path": "run_once.py",
+      "bytes": 1811,
+      "sha256": "0fba9bec3607c373107b86eb196e5257a8c526e98b4a5bc3a15d293c1c487ea3"
+    }
+  ],
+  "input": {
+    "path": "sources/base_geometry_result.json",
+    "bytes": 52672,
+    "sha256": "b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f"
+  }
+}

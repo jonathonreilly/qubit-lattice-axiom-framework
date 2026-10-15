@@ -1,0 +1,129 @@
+{
+  "kind": "actual_readiness_source_binding",
+  "utc": "2026-10-15T15:17:23.381139+00:00",
+  "base_head": "1fcff4c8e3cfe5b8ae5fae1a31ae882609ff5939",
+  "base_branch": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+  "planned_feature_branch": "physics-loop/toe-joint-readiness-20261015",
+  "stack_pr": {
+    "baseRefName": "physics-loop/toe-shared-mediator-programming-20261015",
+    "headRefName": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+    "headRefOid": "1fcff4c8e3cfe5b8ae5fae1a31ae882609ff5939",
+    "isDraft": false,
+    "number": 9606,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9606"
+  },
+  "geometry_pr": {
+    "baseRefName": "physics-loop/toe-compensated-reservoir-preparation-20261015",
+    "headRefName": "physics-loop/toe-shared-mediator-programming-20261015",
+    "headRefOid": "60d0ac6642802cdbdea27c6c2c49d0825cba48cd",
+    "isDraft": false,
+    "number": 9604,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9604"
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "canonical_note": {
+    "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 152470,
+    "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+  },
+  "canonical_geometry": {
+    "claim_id": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15",
+    "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 72885,
+    "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649",
+    "role": "literal original/auxiliary geometry and optional L positivity; simulation conclusion not imported"
+  },
+  "compensated_provenance": {
+    "path": "docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 48637,
+    "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8",
+    "role": "source method provenance; compensation/comparison rederived; not a theorem graph edge"
+  },
+  "raw_bodies": [
+    {
+      "name": "routed_proof",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/DERIVATION.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 14713,
+      "end_byte_exclusive": 44758,
+      "bytes": 30045,
+      "sha256": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a"
+    },
+    {
+      "name": "routed_review",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/REPORT.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 44836,
+      "end_byte_exclusive": 69937,
+      "bytes": 25101,
+      "sha256": "fa97db9c1922c56e757de800b1f84095ea6abe229ce412c7c70280a3c520ae59"
+    },
+    {
+      "name": "joint_corrected_proof",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 70024,
+      "end_byte_exclusive": 110857,
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+    },
+    {
+      "name": "joint_corrected_review",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_decisive_check/REPORT.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 110953,
+      "end_byte_exclusive": 152423,
+      "bytes": 41470,
+      "sha256": "0087deec85e8efcfdd41dfc40eb68b3ca63d7811fc039e7f0da73bd2cb855cfb"
+    }
+  ],
+  "geometry_body": {
+    "container": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "start_byte_inclusive": 44002,
+    "end_byte_exclusive": 72848,
+    "bytes": 28846,
+    "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25"
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/REFS.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/OPEN_DELTA.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/open_inventory_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_LAUNCH.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_EXECUTION.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_stderr",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_LAUNCH.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_EXECUTION.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_stderr",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/fetch_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/fetch_stderr"
+  ],
+  "source_proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_publication_draft/FINAL_FREEZE.json",
+    "bytes": 113687,
+    "sha256": "13cc1b985bdcd5292dabc32b5bf36622b2f9eafe9e4c0e41caa5609771826411"
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T15:17:23.381109+00:00",
+    "reviewed_source_sha256": "13cc1b985bdcd5292dabc32b5bf36622b2f9eafe9e4c0e41caa5609771826411",
+    "scope": "Explicit root invocation acknowledges reading this exact frozen source; later canonicalization diff requires separate acknowledgment."
+  },
+  "root_source_closure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/FINAL_SOURCE_CLOSURE.json",
+    "bytes": 5778,
+    "sha256": "fb4d21497824d2790226f386bba1b334b888a2907a7c30bd5d025f6f2d45b55c"
+  },
+  "mandatory_routed_qualification": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/routed_moment_qualification/QUALIFICATION.md",
+    "bytes": 3026,
+    "sha256": "5c0ed07955fcfc9e5b7330c42a61756cf11258b315db6a9b5d7fc642d48ff53d"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "retained_audit": false
+}

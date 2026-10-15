@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py
+runner_sha256: 190d979b2874cc433611fb31d8fb920690bbcc196a93da032110ef4bab5f5e8c
+input_fingerprint_sha256: ca8cba081332232a07bd22deb95706485d43b201e4288140221b89d171e2a6c1
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "identities/body/recovery/binding structure only"}
+per_element: exact recorded bytes only; no physical-element validation
+per_site: literal geometry premise retained; no adjacency computation
+per_mode: arbitrary-input readiness contracts preserved; no dynamics execution
+per_block: four exact bodies, one geometry dependency and compensated provenance
+lattice_wide: no native supplier, full program, scientific execution or audit certified
+
+----- stderr -----
+

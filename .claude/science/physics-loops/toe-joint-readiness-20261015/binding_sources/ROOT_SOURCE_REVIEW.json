@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-10-15T15:04:05.506007+00:00",
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_publication_draft/FINAL_FREEZE.json",
+    "bytes": 113687,
+    "sha256": "13cc1b985bdcd5292dabc32b5bf36622b2f9eafe9e4c0e41caa5609771826411"
+  },
+  "exact_members": 222,
+  "reviewed_scope": [
+    "Complete current canonical wrapper and body-marker boundaries; four complete mathematical body reads reused at exact source identities from accepted root reviews",
+    "Complete current 61-line primary; deterministic input path enumeration is identity data",
+    "Complete build logic outside already-read wrapper and exact generated primary; complete packet text dictionary",
+    "Complete verify, refine, finalize, recorder, seal-checks and seal-packet sources",
+    "All seven actual metadata launch/exit summaries and final verification output; selected closure claims inspected in original scripts",
+    "Corrected fixed-duration resource acceptance is separate and not a mathematical dependency here"
+  ],
+  "pending": [
+    "Actual integration schema adaptation and root full diff review",
+    "Actual canonical source/base binding and primary/cache/mutants/graph/publication"
+  ],
+  "qualifications": [
+    "Frozen outer HANDOFF uses shorthand H0 aging for routed variant; true contract is H0+KX, already explicit in canonical wrapper. Current integration must state this correctly without altering historical bytes.",
+    "Source integrity checks do not independently prove mathematics. No primary or scientific execution performed by this root metadata action."
+  ]
+}

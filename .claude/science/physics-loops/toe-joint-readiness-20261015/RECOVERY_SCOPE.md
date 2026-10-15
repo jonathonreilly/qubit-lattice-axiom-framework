@@ -1,0 +1,7 @@
+# Exact recovery boundary
+
+ARCHIVE_INDEX maps all captured file origins in the eight named current author/reviewer/root/qualification packets, plus current instruction identities, to one exact recovery object per SHA256. Four complete proof/review bodies are stored once as note intervals. Other already-embedded review fragments are recovered by subinterval. The canonical geometry note and compensated provenance file remain exact repository inputs; their full text is not copied into a second ancestor publication package.
+
+Selected route certificates, source-at-launch code, inputs, outputs, failed mutants, old/corrected derivations, full correction diffs, root qualifications and actual metadata receipts are preserved as bytes. Historical manifests/freezes may name earlier external ancestry. Preserving such a receipt does not assert that every recursively named ancestor graph was repackaged or re-reviewed. The supplied canonical geometry is the sole theorem edge, and both direct canonical identities must be bound by root before execution. No prior publication directory or provisional polynomial-readiness result is imported.
+
+All nested freeze files captured in the current packets are represented by their full original path in the archive index; they are never excluded merely because their basename is FINAL_FREEZE.json. The outer final freeze likewise excludes only its own exact path. Root can reconstruct captured files by original path from this index without copying duplicate bodies or recursively traversing source manifests.

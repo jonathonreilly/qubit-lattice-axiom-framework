@@ -1,0 +1,20 @@
+{
+  "launch_utc": "2026-10-15T13:32:57.890175+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_candidate/exact_fixture.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_candidate",
+  "interpreter": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "seal": {
+    "path": "PREEXECUTION_SEAL.json",
+    "bytes": 1209,
+    "sha256": "0df120e85ad67e8531b113a93f68957745557543f526f715542f06382c5098d4"
+  },
+  "driver": {
+    "path": "run_once.py",
+    "bytes": 1811,
+    "sha256": "0fba9bec3607c373107b86eb196e5257a8c526e98b4a5bc3a15d293c1c487ea3"
+  },
+  "scientific_execution_ordinal": 1
+}

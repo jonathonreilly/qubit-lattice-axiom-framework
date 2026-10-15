@@ -1,0 +1,29 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib,difflib
+Q=Path(__file__).resolve().parent;N=Q.parent;A=N/'local_clock_routed_auxiliary_preparation_candidate'
+def read(p):return json.loads(Path(p).read_text())
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):
+ a=pin(p);assert a['sha256']==r['sha256'] and a['bytes']==r['bytes'],str(p)
+f=read(A/'FINAL_FREEZE.json');assert pin(A/'FINAL_FREEZE.json')['sha256']=='c3ca576878f3955a9486e03424658def7345944872beb4ebc62ed84ab10bbf98'
+assert {str(p.relative_to(A)) for p in A.rglob('*') if p.is_file()}=={r['path'] for r in f['files']}|{'FINAL_FREEZE.json'}
+for r in f['files']:same(A/r['path'],r)
+pre=read(A/'PREEXEC_FREEZE.json');launch=read(A/'LAUNCH_RECEIPT.json');end=read(A/'EXECUTION_RECEIPT.json');result=read(A/'EXACT_RESULT.json')
+assert end['returncode']==0 and end['launch_receipt_sha256']==pin(A/'LAUNCH_RECEIPT.json')['sha256']
+assert launch['preexec_freeze_sha256']==pin(A/'PREEXEC_FREEZE.json')['sha256']
+assert launch['sources_at_launch']==pre['files'];assert launch['recorder_sha256']==pin(A/'run_once.py')['sha256']
+for r in pre['files']:same(A/('PREEXEC_DERIVATION.md' if r['path']=='DERIVATION.md' else r['path']),r)
+for r in end['outputs']:same(A/r['path'],r)
+assert launch['launched_utc']<=result['started_utc']<=result['finished_utc']<=end['finished_utc']
+assert result['source_sha256']==pin(A/'exact_route_fixture.py')['sha256'] and result['input_sha256']==pin(A/'INPUT.json')['sha256']
+assert len(result['checks'])==269 and all(x['pass'] for x in result['checks'])
+sources=read(A/'SOURCE_MANIFEST.json')['sources'];assert len(sources)==11
+for r in sources:same(r['source'],r);same(A/r['snapshot'],r)
+diff=(A/'POST_RUN_DERIVATION.diff').read_text();header=diff.splitlines();expected=''.join(difflib.unified_diff((A/'PREEXEC_DERIVATION.md').read_text().splitlines(keepends=True),(A/'DERIVATION.md').read_text().splitlines(keepends=True),fromfile=header[0][4:],tofile=header[1][4:]));assert expected==diff
+c=read(A/'ROUTING_CERTIFICATE.json');assert len(c['chronological_swap_word'])==result['swap_count']==9087;assert len(c['all_NN_pairs_touching_auxiliary_or_memory'])==300
+omitted=[x for x in c['all_NN_pairs_touching_auxiliary_or_memory'] if not x['declared']];assert len(omitted)==result['omitted_edges']==37
+mutation=next(x for x in result['checks'] if x['name']=='forward_only_mutation_detected');assert mutation['wrong_factor_count']==len(mutation['wrong_factors'])==19
+out={'utc':datetime.now(timezone.utc).isoformat(),'source':pin(A/'DERIVATION.md'),'freeze':pin(A/'FINAL_FREEZE.json'),'source_files':len(f['files'])+1,'live_origins':len(sources),'launch':pin(A/'LAUNCH_RECEIPT.json'),'execution':pin(A/'EXECUTION_RECEIPT.json'),'result':pin(A/'EXACT_RESULT.json'),'certificate':pin(A/'ROUTING_CERTIFICATE.json'),'recorded_checks':269,'recorded_swaps':9087,'recorded_omitted_edges':37,'recorded_mutant_wrong_labels':19,'recorded_interval':[result['started_utc'],result['finished_utc']],'preexecution_and_final_diff_verified':True,'root_scientific_replays':0,'scope':'Exact source/receipt closure and inventory of recorded evidence. No fresh routing, adjacency or dynamics computation. Analytic root reading in PRELIMINARY_ANALYTIC_READ; separate review pending.'}
+(Q/'CANDIDATE_SOURCE_CLOSURE.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'closure':pin(Q/'CANDIDATE_SOURCE_CLOSURE.json'),'files':out['source_files'],'origins':len(sources),'science_replays':0}))

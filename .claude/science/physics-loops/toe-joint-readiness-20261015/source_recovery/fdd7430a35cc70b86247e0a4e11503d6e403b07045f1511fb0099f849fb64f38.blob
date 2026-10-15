@@ -1,0 +1,34 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib,difflib
+Q=Path(__file__).resolve().parent;A=Q.parent/'local_clock_joint_readiness_candidate'
+def read(p):return json.loads(Path(p).read_text())
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):
+ a=pin(p);assert a['bytes']==r['bytes'] and a['sha256']==r['sha256'],str(p)
+assert pin(A/'FINAL_FREEZE.json')['sha256']=='4d68a2cd04e5248491ac03a47a92f13810feed769938bda0541c77d1503e7860'
+f=read(A/'FINAL_FREEZE.json');assert {str(p.relative_to(A)) for p in A.rglob('*') if p.is_file()}=={r['path'] for r in f['files']}|{'FINAL_FREEZE.json'}
+for r in f['files']:same(A/r['path'],r)
+m=read(A/'SOURCE_MANIFEST.json')
+for r in m['sources']:same(r['path'],r);same(A/'sources'/r['name'],r)
+seal=read(A/'PREEXECUTION_SEAL.json')
+for r in seal['files']:
+ same(A/'preexecution'/r['path'],r)
+ if r['path']!='DERIVATION.md':same(A/r['path'],r)
+same(A/seal['input']['path'],seal['input'])
+l=read(A/'LAUNCH_RECEIPT.json');r=read(A/'EXECUTION_RECEIPT.json');assert l['scientific_execution_ordinal']==1 and r['returncode']==0
+for x in [l['seal'],l['driver'],r['launch'],r['stdout'],r['stderr'],r['post_source']]+r['outputs']:same(A/x['path'],x)
+delta=''.join(difflib.unified_diff((A/'preexecution/DERIVATION.md').read_text().splitlines(True),(A/'DERIVATION.md').read_text().splitlines(True),fromfile='preexecution/DERIVATION.md',tofile='DERIVATION.md'))
+assert delta==(A/'POST_RUN_DERIVATION.diff').read_text()
+fresh=read(A/'FINAL_SOURCE_FRESHNESS.json')
+for x in fresh['sources']:assert x['unchanged'] and x['expected']==x['observed']==pin(x['path'])['sha256']
+meta=read(A/'FINAL_METADATA_RECEIPT.json')
+for name in ['source_freshness','derivation','report','complete_argument_delta']:same(A/meta[name]['path'],meta[name])
+res=read(A/'EXACT_RESULT.json');cert=read(A/'ROUTING_GEOMETRY_CERTIFICATE.json')
+assert res['source_sha256']==pin(A/'exact_fixture.py')['sha256'] and res['routing_certificate_sha256']==pin(A/'ROUTING_GEOMETRY_CERTIFICATE.json')['sha256']
+assert res['check_count']==len(res['checks'])==31 and all(x['passed'] for x in res['checks'])
+assert len(cert['omitted_edges'])==36 and len(cert['gates_vertex_indices'])==19931
+assert res['synthesis']['parameters'][-1]['state_before_pivot_phase'][-1]==['48/125','64/125']
+out={'utc':datetime.now(timezone.utc).isoformat(),'candidate':pin(A/'DERIVATION.md'),'freeze':pin(A/'FINAL_FREEZE.json'),'frozen_members_verified':len(f['files']),'live_sources_verified':len(m['sources']),'actual_scientific_receipt':pin(A/'EXECUTION_RECEIPT.json'),'actual_launch_utc':l['launch_utc'],'actual_completion_utc':r['completed_utc'],'actual_counts':res['counts'],'actual_mutants':res['mutants'],'root_read':pin(Q/'PRELIMINARY_ANALYTIC_READ.md'),'root_scientific_executions':0,'status':'Candidate provenance closed; source correction and complete separate review required before acceptance.','known_defects':['Raw retained-moment centering/marginal distinction.','B_C upper-bound wording.','Last saved pre-pivot row aliases the final state; unaffected final target comparison, no saved-row rewrite.'],'scope':'Read existing identities and counts only; no routing/geometry/synthesis/scientific replay.'}
+(Q/'CANDIDATE_SOURCE_CLOSURE.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'closure':pin(Q/'CANDIDATE_SOURCE_CLOSURE.json'),'members':len(f['files']),'sources':len(m['sources']),'science_executions':0,'acceptance':False}))

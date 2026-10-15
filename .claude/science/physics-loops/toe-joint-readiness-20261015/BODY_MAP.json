@@ -1,0 +1,48 @@
+{
+  "offset_convention": "zero-based half-open bytes",
+  "bodies": [
+    {
+      "name": "routed_proof",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/DERIVATION.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 14713,
+      "end_byte_exclusive": 44758,
+      "bytes": 30045,
+      "sha256": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a"
+    },
+    {
+      "name": "routed_review",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/REPORT.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 44836,
+      "end_byte_exclusive": 69937,
+      "bytes": 25101,
+      "sha256": "fa97db9c1922c56e757de800b1f84095ea6abe229ce412c7c70280a3c520ae59"
+    },
+    {
+      "name": "joint_corrected_proof",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 70024,
+      "end_byte_exclusive": 110857,
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+    },
+    {
+      "name": "joint_corrected_review",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_decisive_check/REPORT.md",
+      "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 110953,
+      "end_byte_exclusive": 152423,
+      "bytes": 41470,
+      "sha256": "0087deec85e8efcfdd41dfc40eb68b3ca63d7811fc039e7f0da73bd2cb855cfb"
+    }
+  ],
+  "geometry_single_port_body": {
+    "container": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "start_byte_inclusive": 44002,
+    "end_byte_exclusive": 72848,
+    "bytes": 28846,
+    "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25"
+  }
+}

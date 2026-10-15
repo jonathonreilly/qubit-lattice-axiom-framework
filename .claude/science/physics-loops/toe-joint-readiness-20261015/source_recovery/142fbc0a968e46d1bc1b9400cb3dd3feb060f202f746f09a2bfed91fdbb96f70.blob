@@ -1,0 +1,32 @@
+{
+  "completed_utc": "2026-10-15T14:11:42.068664+00:00",
+  "status": "Completed metadata verification only",
+  "launch": {
+    "path": "METADATA_LAUNCH_RECEIPT.json",
+    "bytes": 610,
+    "sha256": "0cd88d93e222b297d441ecb8fac851173bfc71d36e4c719b045e8f65bf231c52"
+  },
+  "original_frozen_files_unchanged": 35,
+  "original_freeze_unchanged": true,
+  "original_inventory_unchanged": true,
+  "all_source_copies_and_live_pins_match": true,
+  "complete_delta_matches": true,
+  "delta_hunks": 3,
+  "proposed_fixture_patch_is_one_list_copy_change": true,
+  "scientific_fixture_executions": 0,
+  "derivation": {
+    "path": "DERIVATION.md",
+    "bytes": 40833,
+    "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+  },
+  "delta": {
+    "path": "CORRECTION.diff",
+    "bytes": 9586,
+    "sha256": "7292d920cefd2b66ef2816ebb5be9184a159293c615aeda4c9d84bddaa3d6403"
+  },
+  "scope": {
+    "path": "SCOPE_EXPOSURE.md",
+    "bytes": 3005,
+    "sha256": "82a66d4c746142f0de775ef8cd10142fd055076071537cdcd18adfc6482bfb7b"
+  }
+}

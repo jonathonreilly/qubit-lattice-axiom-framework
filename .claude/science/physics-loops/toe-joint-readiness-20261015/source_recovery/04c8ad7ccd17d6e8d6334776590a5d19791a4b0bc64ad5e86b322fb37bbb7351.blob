@@ -1,0 +1,64 @@
+{
+  "status": "Extraction of historical recorded values only; no recomputation",
+  "source_sha256": "22d7515b8b90b557a1278f49ebc84fbeaac72342d4047245fe8f9be051d64a0a",
+  "last_saved_state_before_pivot_phase": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "3/5"
+    ],
+    [
+      "-12/25",
+      "0"
+    ],
+    [
+      "48/125",
+      "64/125"
+    ]
+  ],
+  "saved_actual": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "3/5"
+    ],
+    [
+      "-12/25",
+      "0"
+    ],
+    [
+      "48/125",
+      "64/125"
+    ]
+  ],
+  "saved_target": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "3/5"
+    ],
+    [
+      "-12/25",
+      "0"
+    ],
+    [
+      "48/125",
+      "64/125"
+    ]
+  ],
+  "saved_target_predicate": [
+    {
+      "name": "complex target including zero and final phase exactly synthesized",
+      "passed": true
+    }
+  ]
+}

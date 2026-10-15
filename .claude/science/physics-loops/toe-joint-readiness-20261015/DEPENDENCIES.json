@@ -1,0 +1,26 @@
+{
+  "schema": "mathematical_dependencies_and_provenance_v1",
+  "dependencies": [
+    {
+      "claim_id": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15",
+      "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 72885,
+      "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649",
+      "role": "literal original/auxiliary geometry and optional L positivity; simulation conclusion not imported"
+    }
+  ],
+  "pinned_provenance": [
+    {
+      "path": "docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 48637,
+      "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8",
+      "role": "source method provenance; compensation/comparison rederived; not a theorem graph edge"
+    }
+  ],
+  "excluded_direct_dependencies": [
+    "two-copy simulation alternative",
+    "mass-scaled transport",
+    "provisional polynomial readiness",
+    "unrelated Git stack ancestry"
+  ]
+}

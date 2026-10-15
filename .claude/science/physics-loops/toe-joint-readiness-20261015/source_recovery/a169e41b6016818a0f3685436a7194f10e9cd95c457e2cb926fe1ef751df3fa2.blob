@@ -1,0 +1,12 @@
+{
+  "bound_utc": "2026-10-15T14:18:02.233723+00:00",
+  "current_source_sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+  "historical_body_interval_zero_based_half_open": [
+    2175,
+    33668
+  ],
+  "historical_body_sha256": "74ec214987004b3dfc8fb945d798353b0bf2346f29c61fc74a341ffb57a12c99",
+  "report_bytes": 41470,
+  "report_sha256": "0087deec85e8efcfdd41dfc40eb68b3ca63d7811fc039e7f0da73bd2cb855cfb",
+  "purpose": "Text binding/source metadata only; no science"
+}

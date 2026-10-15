@@ -1,0 +1,15 @@
+{
+  "kind": "dated_source_proposal_not_actual_binding",
+  "created_utc": "2026-10-15T14:38:01.275996+00:00",
+  "canonical_binding": null,
+  "git_base": null,
+  "primary_execution": null,
+  "cache_execution": null,
+  "mutation_execution": null,
+  "graph_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "root_supplied_checkout_context": "60d0ac66; planned stack after mass milestone; not independently Git-verified by this packager"
+}

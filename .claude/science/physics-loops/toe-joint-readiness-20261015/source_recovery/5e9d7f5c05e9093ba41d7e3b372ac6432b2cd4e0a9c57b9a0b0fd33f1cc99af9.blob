@@ -1,0 +1,42 @@
+--- /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_publication_draft/proposal/docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md
++++ /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/sources/compensated_canonical.md
+@@ -17,14 +17,14 @@
+ audit_required_before_effective_retained: true
+ bare_retained_allowed: false
+ status: proposed_retained
+-canonical_parent_binding_complete: false
++canonical_parent_binding_complete: true
+ publication_pr: null
+-publication_status: source_proposal_awaiting_root_binding_and_execution
++publication_status: canonical_source_for_regular_review
+ source_acceptance_status: checked_conditional_source
+ upstream_dependencies: ["finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15"]
+ runner: scripts/compensated_finite_reservoir_clock_preparation_2026_10_15.py
+ packet: .claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015
+-next_trace_action: root review and actual canonical binding; physical control supply remains conditional
++next_trace_action: independent milestone review; physical control supply remains conditional
+ ---
+ 
+ Claim type: bounded_theorem
+@@ -124,13 +124,14 @@
+ author exposure and the late root-agreement message are disclosed in that
+ unchanged report; no blind or cross-model independence is claimed.
+ 
+-The compact primary runner proposal checks exact bytes, complete embedded
+-arguments, source acceptance records and the mathematical parent. It executes
+-no scientific program and proves no mathematics. At this draft stage canonical
+-binding, primary execution, cache/graph outcomes, PR changes and retained audit
+-status have not occurred. Only actual later root receipts may establish those
+-events. Previous source packets and run histories are referenced by exact
+-freeze identities rather than recursively repackaged.
++The compact primary checks exact bytes, complete embedded arguments, source
++acceptance records and the mathematical parent. It executes no scientific
++program and proves no mathematics. ACTUAL_BINDING.json records the observed
++canonical source binding. The dated PUBLICATION_STATE.json preserves the
++earlier proposal state; its null fields are not current execution receipts.
++Actual execution, cache, graph and publication outcomes require their own
++records, and none confers retained status. Previous source packets and run
++histories remain referenced by exact freeze identities.
+ 
+ ## Separately accepted report refinement
+ 

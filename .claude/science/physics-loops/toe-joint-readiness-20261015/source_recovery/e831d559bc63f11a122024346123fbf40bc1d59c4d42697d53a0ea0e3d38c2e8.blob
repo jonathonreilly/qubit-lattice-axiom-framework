@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+from pathlib import Path
+from collections import deque,Counter
+import json,hashlib,datetime,traceback
+ROOT=Path(__file__).resolve().parent
+checks=[]
+def check(name,condition,**data):
+    checks.append({'name':name,'pass':bool(condition),**data})
+    if not condition: raise AssertionError(name)
+def ed(a,b): return tuple(sorted((tuple(a),tuple(b))))
+def distance(a,b): return sum(abs(x-y) for x,y in zip(a,b))
+def apply(labels,word):
+    for a,b in word: labels[a],labels[b]=labels[b],labels[a]
+    return labels
+
+def run():
+    inp=json.loads((ROOT/'INPUT.json').read_text())
+    raw=(ROOT/inp['prior_geometry']).read_bytes()
+    check('literal_input_identity',hashlib.sha256(raw).hexdigest()==inp['prior_geometry_sha256'])
+    prior=json.loads(raw)
+    original={tuple(p) for p in prior['original_coordinates']}
+    auxsets=[{tuple(p) for p in c['coordinates']} for c in prior['components']]
+    auxiliary=set().union(*auxsets)
+    X=max(inp['n_old']-1,inp['Q_mem'])+2; Y=1-inp['L_b']; q=inp['M']//4
+    roots=[(X+q,Y+q,2),(X+q,Y+q,4),(X+q+1,Y+q+1,3)]
+    memories=[]; occupied=original|auxiliary
+    for i,(aset,root) in enumerate(zip(auxsets,roots)):
+        m=len(aset); check(f'component{i}_size',m==inp['expected_component_sizes'][i],m=m)
+        check(f'component{i}_root_exists',root in aset)
+        mem=[(root[0]+j,root[1],root[2]) for j in range(1,m+1)]
+        check(f'component{i}_memory_fresh',not set(mem)&occupied and len(mem)==len(set(mem)))
+        occupied.update(mem); memories.append(mem)
+    memory=set().union(*(set(m) for m in memories))
+    check('total_factor_counts',len(original)==74 and len(auxiliary)==121 and len(memory)==121 and len(occupied)==316,original=len(original),auxiliary=len(auxiliary),memory=len(memory),total=len(occupied))
+    sat=(-1,1,1)
+    satneighbors=[tuple(sat[k]+(sgn if k==axis else 0) for k in range(3)) for axis in range(3) for sgn in (-1,1)]
+    check('direct_matching_saturated_a1',all(p in original|auxiliary for p in satneighbors),neighbors=satneighbors)
+    fullword=[]; endpoint_words=[]; pairs=[]; comp_results=[]; all_declared=set(); ray_edges=set()
+    for i,(comp,aset,root,mem) in enumerate(zip(prior['components'],auxsets,roots,memories)):
+        auxedges={ed(a,b) for a,b in comp['auxiliary_edges']}
+        all_declared|=auxedges|{ed(a,b) for a,b in comp['source_detuning_edges']}
+        ray=[root]+mem; ray_edges|={ed(a,b) for a,b in zip(ray,ray[1:])}
+        adj={a:[] for a in aset}
+        for a,b in auxedges: adj[a].append(b); adj[b].append(a)
+        parent={root:None}; queue=deque([root])
+        while queue:
+            v=queue.popleft()
+            for u in sorted(adj[v]):
+                if u not in parent: parent[u]=v; queue.append(u)
+        check(f'component{i}_connected_for_routing',set(parent)==aset)
+        ell_total=0; p_i=0; routes=[]
+        for j,a in enumerate(sorted(aset),1):
+            path=[a]
+            while path[-1]!=root: path.append(parent[path[-1]])
+            ell=len(path)-1; ell_total+=ell
+            path.extend(mem[:j]); d=len(path)-1
+            check(f'component{i}_route{j}_simple_fresh_NN',len(set(path))==len(path) and not set(path)&original and all(distance(x,y)==1 for x,y in zip(path,path[1:])))
+            forward=list(zip(path,path[1:])); backward=[(path[k],path[k+1]) for k in range(d-2,-1,-1)]
+            word=forward+backward
+            local={v:v for v in path}; apply(local,word)
+            expect={v:v for v in path}; expect[a],expect[mem[j-1]]=expect[mem[j-1]],expect[a]
+            check(f'component{i}_route{j}_restores_intermediates',local==expect)
+            pairs.append((a,mem[j-1])); endpoint_words.append({'word':word,'forward':forward,'distance':d})
+            fullword.extend(word); p_i+=len(word)
+            routes.append({'j':j,'auxiliary':a,'memory':mem[j-1],'auxiliary_distance_to_root':ell,'path':path,'swap_count':len(word)})
+        check(f'component{i}_exact_word_count',p_i==len(aset)**2+2*ell_total,actual=p_i,sum_root_distances=ell_total)
+        comp_results.append({'axis':i,'root':root,'auxiliary_size':len(aset),'memory_coordinates':mem,'sum_root_distances':ell_total,'swap_count':p_i,'routes':routes})
+    all_declared|=ray_edges
+    labels={v:v for v in occupied}; apply(labels,fullword)
+    expected={v:v for v in occupied}
+    for a,e in pairs: expected[a],expected[e]=expected[e],expected[a]
+    check('complete_joint_permutation',labels==expected,swap_count=len(fullword))
+    check('all_original_factors_fixed',all(labels[v]==v for v in original))
+    check('all_auxiliary_slots_receive_memory',all(labels[a]==e for a,e in pairs))
+    check('all_input_records_retained_in_memory',all(labels[e]==a for a,e in pairs))
+    chosen=next(i for i,w in enumerate(endpoint_words) if w['distance']>=2)
+    mutant=[]
+    for i,w in enumerate(endpoint_words): mutant.extend(w['forward'] if i==chosen else w['word'])
+    bad={v:v for v in occupied}; apply(bad,mutant)
+    wrong=[v for v in sorted(occupied) if bad[v]!=expected[v]]
+    check('forward_only_mutation_detected',bool(wrong),mutated_endpoint_word=chosen,wrong_factor_count=len(wrong),wrong_factors=wrong)
+    # Complete additional and existing adjacency inventory is part of this declaration.
+    fresh=auxiliary|memory; owner={v:i for i,aset in enumerate(auxsets) for v in aset}; owner.update({v:i for i,mem in enumerate(memories) for v in mem})
+    adjrows=[]
+    for a in sorted(occupied):
+        for axis in range(3):
+            b=list(a); b[axis]+=1; b=tuple(b)
+            if b not in occupied or not ({a,b}&fresh): continue
+            if a in memory or b in memory:
+                kind='memory_memory' if a in memory and b in memory else ('memory_original' if a in original or b in original else 'memory_auxiliary')
+            elif a in original or b in original: kind='auxiliary_original'
+            elif owner[a]==owner[b]: kind='same_auxiliary_component'
+            else: kind='inter_auxiliary_component'
+            adjrows.append({'edge':ed(a,b),'kind':kind,'declared':ed(a,b) in all_declared})
+    omitted=[r for r in adjrows if not r['declared']]
+    newomitted={ed(*r['edge']) for r in omitted if r['kind'].startswith('memory_')}
+    target_new={ed(memories[0][0],(X+q+1,Y+q,3)),ed(memories[1][0],(X+q+1,Y+q,3))}
+    check('exact_new_memory_isolation_edges',newomitted==target_new,new_edges=sorted(newomitted))
+    check('complete_declared_edges_NN',all(distance(a,b)==1 for a,b in all_declared))
+    used_degree={v:sum(v in e for e in all_declared) for v in fresh}
+    check('fresh_used_degree_at_most4',max(used_degree.values())<=4,max_degree=max(used_degree.values()),root_degrees=[used_degree[r] for r in roots])
+    counts=Counter(r['kind']+('_declared' if r['declared'] else '_omitted') for r in adjrows)
+    check('selected_complete_adjacency_counts',len(adjrows)==300 and len(omitted)==37,total=len(adjrows),omitted=len(omitted),counts=dict(counts))
+    # Store the exact finite word compactly by coordinate indices, with full mapping.
+    coords=sorted(occupied); index={v:i for i,v in enumerate(coords)}
+    cert={'coordinate_order':coords,'original_indices':[index[v] for v in sorted(original)],'auxiliary_indices':[index[v] for v in sorted(auxiliary)],'memory_indices':[index[v] for v in sorted(memory)],'endpoint_pairs':[(index[a],index[e]) for a,e in pairs],'chronological_swap_word':[(index[a],index[b]) for a,b in fullword],'final_label_at_each_index':[index[labels[v]] for v in coords],'components':comp_results,'all_NN_pairs_touching_auxiliary_or_memory':adjrows}
+    (ROOT/'ROUTING_CERTIFICATE.json').write_text(json.dumps(cert,indent=2)+'\n')
+    return {'original_count':len(original),'auxiliary_count':len(auxiliary),'pure_memory_count':len(memory),'swap_count':len(fullword),'component_swap_counts':[c['swap_count'] for c in comp_results],'component_distance_sums':[c['sum_root_distances'] for c in comp_results],'omitted_edges':len(omitted),'new_memory_omitted_edges':len(newomitted),'all_adjacencies':len(adjrows),'adjacency_counts':dict(counts),'scientific_scope':'Selected exact permutation and geometry only; no inverse, Hilbert matrix or continuous dynamics.'}
+
+if __name__=='__main__':
+    result={'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'input_sha256':hashlib.sha256((ROOT/'INPUT.json').read_bytes()).hexdigest()}
+    try:
+        result.update(run()); result['status']='PASS_SELECTED_ROUTING_FIXTURE'
+    except BaseException:
+        result['status']='FAILED_OR_EXCEPTION'; result['exception']=traceback.format_exc()
+    result['checks']=checks; result['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+    (ROOT/'EXACT_RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps({k:v for k,v in result.items() if k!='checks'},indent=2))
+    print('Check count:',len(checks),'Passed:',sum(r['pass'] for r in checks))
+    raise SystemExit(0 if result['status']=='PASS_SELECTED_ROUTING_FIXTURE' else 1)

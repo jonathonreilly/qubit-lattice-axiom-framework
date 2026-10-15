@@ -1,0 +1,45 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib
+Q=Path(__file__).resolve().parent;N=Q.parent;A=N/'local_clock_routed_auxiliary_preparation_candidate';V=N/'local_clock_routed_auxiliary_preparation_decisive_check'
+def read(p):return json.loads(Path(p).read_text())
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):
+ a=pin(p);assert a['bytes']==r['bytes'] and a['sha256']==r['sha256'],str(p)
+assert pin(A/'FINAL_FREEZE.json')['sha256']=='c3ca576878f3955a9486e03424658def7345944872beb4ebc62ed84ab10bbf98'
+assert pin(V/'FINAL_FREEZE.json')['sha256']=='816070036ca0cd666a93adc557d04fc8d0e6538e7f99a1330dd4bc334bf31d44'
+membership={}
+for folder in [A,V]:
+ f=read(folder/'FINAL_FREEZE.json');declared={r['path'] for r in f['files']}|{'FINAL_FREEZE.json'}
+ actual={str(p.relative_to(folder)) for p in folder.rglob('*') if p.is_file()}
+ assert declared<=actual
+ extra=actual-declared
+ assert not extra or (folder==V and extra=={'sources/FINAL_FREEZE.json'}),str(extra)
+ for r in f['files']:same(folder/r['path'],r)
+ if extra:assert (V/'sources/FINAL_FREEZE.json').read_bytes()==(A/'FINAL_FREEZE.json').read_bytes()
+ membership[folder.name]={'actual_files':len(actual),'declared_members':len(f['files']),'additionally_verified_nested_candidate_freezes':sorted(extra)}
+m=read(V/'SOURCE_MANIFEST.json')
+for r in m['sources']:same(r['path'],r)
+copies=[]
+for p in sorted((V/'sources').rglob('*')):
+ if p.is_file():
+  assert p.read_bytes()==(A/p.relative_to(V/'sources')).read_bytes();copies.append(pin(p))
+receipts=[]
+for label in ['capture','final']:
+ folder=V/'metadata_runs'/label;launch=read(folder/'LAUNCH.json');r=read(folder/'EXECUTION.json')
+ assert r['returncode']==0 and launch['scientific_execution'] is False
+ same(folder/'LAUNCH.json',r['launch']);same(folder/'child_source.py',launch['source_at_launch']);same(folder/'recorder_source.py',launch['recorder_at_launch'])
+ same(launch['source_at_launch']['path'],launch['source_at_launch']);same(launch['recorder_at_launch']['path'],launch['recorder_at_launch'])
+ for out in r['outputs']:same(out['path'],out)
+ receipts.append({'receipt':pin(folder/'EXECUTION.json'),'launch':pin(folder/'LAUNCH.json'),'start':launch['launched_utc'],'end':r['finished_utc']})
+fresh=read(V/'FINAL_SOURCE_RECHECK.json')
+for r in fresh['sources']+fresh['recovery_copies']+[fresh['report'],fresh['coverage']]:same(r['path'],r)
+seal=read(V/'SEAL_RECEIPT.json');same(V/seal['source_at_launch']['path'],seal['source_at_launch']);same(V/seal['preseal_metadata_execution']['path'],seal['preseal_metadata_execution'])
+assert pin(V/'REPORT.md')['sha256']=='fa97db9c1922c56e757de800b1f84095ea6abe229ce412c7c70280a3c520ae59'
+check=read(Q/'CANDIDATE_SOURCE_CLOSURE.json')
+record={'utc':datetime.now(timezone.utc).isoformat(),'candidate':pin(A/'DERIVATION.md'),'review':pin(V/'REPORT.md'),'candidate_freeze':pin(A/'FINAL_FREEZE.json'),'review_freeze':pin(V/'FINAL_FREEZE.json'),'membership':membership,'live_review_sources_checked':len(m['sources']),'recovery_copies_checked':len(copies),'actual_metadata_receipts':receipts,'candidate_closure_reused':pin(Q/'CANDIDATE_SOURCE_CLOSURE.json'),'acceptance':pin(Q/'ACCEPTANCE.md'),'root_scientific_executions':0,'scope':'Exact source/receipt closure; source acceptance is the bounded analytic disposition. Historical nested candidate freeze, if excluded by reviewer basename filtering, is checked separately against the independently pinned candidate seal.'}
+(Q/'SOURCE_CLOSURE.json').write_text(json.dumps(record,indent=2)+'\n')
+rows=[{**pin(p),'path':str(p.relative_to(Q))} for p in sorted(Q.rglob('*')) if p.is_file() and p!=Q/'FINAL_FREEZE.json']
+(Q/'FINAL_FREEZE.json').write_text(json.dumps({'frozen_utc':datetime.now(timezone.utc).isoformat(),'status':'conditional source acceptance with at-most resource qualification; no audit','files':rows},indent=2)+'\n')
+print(json.dumps({'acceptance':pin(Q/'ACCEPTANCE.md'),'closure':pin(Q/'SOURCE_CLOSURE.json'),'freeze':pin(Q/'FINAL_FREEZE.json'),'membership':membership,'science_executions':0}))

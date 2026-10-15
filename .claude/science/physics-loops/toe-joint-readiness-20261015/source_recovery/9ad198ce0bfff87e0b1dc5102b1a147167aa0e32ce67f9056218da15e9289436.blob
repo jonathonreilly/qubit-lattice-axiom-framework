@@ -1,0 +1,27 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,difflib
+Q=Path(__file__).resolve().parent;N=Q.parent;A=N/'local_clock_joint_readiness_candidate';D=N/'local_clock_joint_readiness_correction'
+def read(p):return json.loads(Path(p).read_text())
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):
+ a=pin(p);assert a['bytes']==r['bytes'] and a['sha256']==r['sha256'],str(p)
+assert pin(A/'FINAL_FREEZE.json')['sha256']=='4d68a2cd04e5248491ac03a47a92f13810feed769938bda0541c77d1503e7860'
+for r in read(A/'FINAL_FREEZE.json')['files']:same(A/r['path'],r)
+assert pin(D/'FINAL_FREEZE.json')['sha256']=='7ba2fceab45352d0032731a56124463ee14b70f12dcd4ba1dd0245e2db57fd40'
+f=read(D/'FINAL_FREEZE.json');declared={r['path'] for r in f['files']}|{'FINAL_FREEZE.json'};actual={str(p.relative_to(D)) for p in D.rglob('*') if p.is_file()}
+assert declared<=actual and actual-declared=={'sources/FINAL_FREEZE.json'}
+for r in f['files']:same(D/r['path'],r)
+assert (D/'sources/FINAL_FREEZE.json').read_bytes()==(A/'FINAL_FREEZE.json').read_bytes()
+m=read(D/'SOURCE_MANIFEST.json');rows=m['sources']+m['inherited_premise_sources']
+for r in rows:same(r['path'],r);same(D/r['copy'],r)
+old=(A/'DERIVATION.md').read_text();new=(D/'DERIVATION.md').read_text()
+delta=''.join(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='frozen818699a3/DERIVATION.md',tofile='proposed-correction/DERIVATION.md'))
+assert delta==(D/'CORRECTION.diff').read_text() and delta.count('\n@@ ')==3
+l=read(D/'METADATA_LAUNCH_RECEIPT.json');r=read(D/'METADATA_RECEIPT.json');same(D/l['script']['path'],l['script']);same(D/r['launch']['path'],r['launch'])
+assert l['scientific_invocations']==r['scientific_fixture_executions']==0
+for k in ['derivation','delta','scope']:same(D/r[k]['path'],r[k])
+assert r['original_frozen_files_unchanged']==35 and r['original_freeze_unchanged'] and r['all_source_copies_and_live_pins_match']
+out={'utc':datetime.now(timezone.utc).isoformat(),'corrected_candidate':pin(D/'DERIVATION.md'),'correction_freeze':pin(D/'FINAL_FREEZE.json'),'declared_members':len(f['files']),'actual_files':len(actual),'additional_nested_freeze_checked':pin(D/'sources/FINAL_FREEZE.json'),'source_rows_checked':len(rows),'exact_diff':pin(D/'CORRECTION.diff'),'metadata_launch':pin(D/'METADATA_LAUNCH_RECEIPT.json'),'metadata_receipt':pin(D/'METADATA_RECEIPT.json'),'root_review':pin(Q/'CORRECTION_REVIEW.md'),'original_candidate_closure':pin(Q/'CANDIDATE_SOURCE_CLOSURE.json'),'root_scientific_executions':0,'status':'Root correction read/identity closure complete; final separate review pending.','limits':'Author metadata receipts are in-process records; no external-launch stdout/stderr capture or new scientific verification is asserted. Historical31 checks do not validate new moment argument.'}
+(Q/'CORRECTION_SOURCE_CLOSURE.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'closure':pin(Q/'CORRECTION_SOURCE_CLOSURE.json'),'corrected_source':pin(D/'DERIVATION.md'),'members':len(f['files']),'science_executions':0}))

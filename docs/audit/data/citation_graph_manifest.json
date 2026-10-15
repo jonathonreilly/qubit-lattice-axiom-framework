@@ -1,6 +1,6 @@
 {
- "edge_count": 16092,
- "node_count": 7133,
+ "edge_count": 16093,
+ "node_count": 7134,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19141,6 +19141,10 @@
   "routec_staggered_radius_one_parity_even_transport_cycle822_bounded_theorem_note_2026-07-30": {
    "deps_hash": "e8158400ce82",
    "out_degree": 7
+  },
+  "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "bda98aae5150",
+   "out_degree": 1
   },
   "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11": {
    "deps_hash": "6dd0963e11c9",

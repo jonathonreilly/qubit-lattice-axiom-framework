@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-15T13:53:37.810202+00:00",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/DERIVATION.md",
+    "bytes": 30045,
+    "sha256": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/REPORT.md",
+    "bytes": 25101,
+    "sha256": "fa97db9c1922c56e757de800b1f84095ea6abe229ce412c7c70280a3c520ae59"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/FINAL_FREEZE.json",
+    "bytes": 5852,
+    "sha256": "c3ca576878f3955a9486e03424658def7345944872beb4ebc62ed84ab10bbf98"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/FINAL_FREEZE.json",
+    "bytes": 7569,
+    "sha256": "816070036ca0cd666a93adc557d04fc8d0e6538e7f99a1330dd4bc334bf31d44"
+  },
+  "membership": {
+    "local_clock_routed_auxiliary_preparation_candidate": {
+      "actual_files": 33,
+      "declared_members": 32,
+      "additionally_verified_nested_candidate_freezes": []
+    },
+    "local_clock_routed_auxiliary_preparation_decisive_check": {
+      "actual_files": 44,
+      "declared_members": 42,
+      "additionally_verified_nested_candidate_freezes": [
+        "sources/FINAL_FREEZE.json"
+      ]
+    }
+  },
+  "live_review_sources_checked": 39,
+  "recovery_copies_checked": 20,
+  "actual_metadata_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/metadata_runs/capture/EXECUTION.json",
+        "bytes": 1020,
+        "sha256": "c84c0dc28fa94a5978cf37457875f4e27898b2ab46830cc6083848d8ef462764"
+      },
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/metadata_runs/capture/LAUNCH.json",
+        "bytes": 1109,
+        "sha256": "d2795e82b579da7d1405d900a6c2772d94de42f5f1a1428e23c5864dbc24ce7b"
+      },
+      "start": "2026-10-15T13:12:59.404842+00:00",
+      "end": "2026-10-15T13:12:59.467826+00:00"
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/metadata_runs/final/EXECUTION.json",
+        "bytes": 1014,
+        "sha256": "55515f1aa3032db92a4e9a16d220509605e66aa9066dc85c3f434c1e93d33b79"
+      },
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/metadata_runs/final/LAUNCH.json",
+        "bytes": 1111,
+        "sha256": "b1cf6c1b7cbe34366c83e7e2ec9ff34054dc59603df51888aaa10e85eba847dc"
+      },
+      "start": "2026-10-15T13:27:25.818168+00:00",
+      "end": "2026-10-15T13:27:25.886234+00:00"
+    }
+  ],
+  "candidate_closure_reused": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/routed_auxiliary_root_review/CANDIDATE_SOURCE_CLOSURE.json",
+    "bytes": 2385,
+    "sha256": "f4933892084ab6eb0f5fd282340421ee1e70babb2216b37380f3d6a610d6b197"
+  },
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/routed_auxiliary_root_review/ACCEPTANCE.md",
+    "bytes": 3768,
+    "sha256": "3627b89ba731a8300880c5916c077dc5ea75d53b666adfc8225d3ea068ea3c27"
+  },
+  "root_scientific_executions": 0,
+  "scope": "Exact source/receipt closure; source acceptance is the bounded analytic disposition. Historical nested candidate freeze, if excluded by reviewer basename filtering, is checked separately against the independently pinned candidate seal."
+}

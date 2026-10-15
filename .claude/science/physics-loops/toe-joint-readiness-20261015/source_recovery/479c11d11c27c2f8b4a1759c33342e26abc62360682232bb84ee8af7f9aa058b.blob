@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Source hashing/copying and existing-data extraction only; no scientific rerun."""
+from pathlib import Path
+import hashlib, json, difflib
+
+OUT = Path(__file__).resolve().parent
+BASE = OUT.parent
+CAND = BASE / 'local_clock_routed_auxiliary_preparation_candidate'
+W = BASE.parent / 'correlation_worktree'
+def identity(p):
+    b = p.read_bytes()
+    return {'path': str(p), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+freeze = identity(CAND / 'FINAL_FREEZE.json')
+assert freeze['sha256'] == 'c3ca576878f3955a9486e03424658def7345944872beb4ebc62ed84ab10bbf98'
+rows = []
+for row in json.loads((CAND / 'FINAL_FREEZE.json').read_text())['files']:
+    got = identity(CAND / row['path'])
+    assert got['bytes'] == row['bytes'] and got['sha256'] == row['sha256'], row['path']
+    rows.append(got)
+rows.append(freeze)
+copy_names = ['DERIVATION.md', 'FINAL_FREEZE.json', 'SELECTED_PLAN.md', 'INPUT.json',
+              'exact_route_fixture.py', 'run_once.py', 'LAUNCH_RECEIPT.json',
+              'EXECUTION_RECEIPT.json', 'STDOUT.log', 'STDERR.log', 'EXACT_RESULT.json',
+              'ROOT_EXPOSURE.md', 'SOURCE_MANIFEST.json', 'PREEXEC_FREEZE.json',
+              'sources/single_port_DERIVATION.md', 'sources/compensated_canonical.md',
+              'sources/geometry_memory.md', 'sources/geometry_reservoir.md',
+              'sources/single_port_EXACT_RESULT.json', 'sources/single_port_ADJACENCY_INVENTORY.json']
+for name in copy_names:
+    target = OUT / 'sources' / name
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_bytes((CAND / name).read_bytes())
+extra = [W / 'AGENTS.md', W / 'docs/ai_methodology/SCIENCE_WORKFLOW.md',
+         Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'),
+         BASE / 'local_clock_compensated_preparation_decisive_check/REPORT.md',
+         BASE / 'local_clock_single_port_mediator_decisive_check/REPORT.md']
+for p in extra:
+    rows.append(identity(p))
+cert = json.loads((CAND / 'ROUTING_CERTIFICATE.json').read_text())
+excerpt = {
+    'source': identity(CAND / 'ROUTING_CERTIFICATE.json'),
+    'operation': 'Extract existing rows verbatim; no permutation, coordinate generation or dynamics rerun.',
+    'omitted_rows': [r for r in cert['all_NN_pairs_touching_auxiliary_or_memory'] if not r['declared']],
+    'component_summaries': [{k:v for k,v in c.items() if k != 'routes'} for c in cert['components']]
+}
+(OUT / 'EXISTING_CERTIFICATE_EXCERPT.json').write_text(json.dumps(excerpt, indent=2)+'\n')
+old = BASE / 'local_clock_compensated_preparation_publication_draft/proposal/docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+new = CAND / 'sources/compensated_canonical.md'
+rows.append(identity(old))
+diff = ''.join(difflib.unified_diff(old.read_text().splitlines(True), new.read_text().splitlines(True), fromfile=str(old), tofile=str(new)))
+(OUT / 'COMPENSATION_BINDING_DIFF.diff').write_text(diff)
+(OUT / 'SOURCE_MANIFEST.json').write_text(json.dumps({'scope':'All candidate frozen members checked by byte count and SHA256; selected recovery copies under sources; additional exact continuity references.', 'sources':rows}, indent=2)+'\n')
+print(json.dumps({'candidate_members_verified':len(rows)-len(extra)-2, 'candidate_freeze':freeze, 'copied_members':len(copy_names), 'omitted_rows_extracted':len(excerpt['omitted_rows']), 'comparison_diff_bytes':len(diff.encode()), 'science_execution':False}, indent=2))

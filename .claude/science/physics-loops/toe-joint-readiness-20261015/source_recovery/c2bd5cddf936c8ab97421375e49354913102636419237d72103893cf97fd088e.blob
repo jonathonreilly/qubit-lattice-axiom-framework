@@ -1,0 +1,53 @@
+"""Exact revision/source bookkeeping only; no scientific execution."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json, difflib, sys
+OUT=Path(__file__).resolve().parent
+SRC=OUT.parent/'local_clock_joint_readiness_correction'
+ORIG=OUT.parent/'local_clock_joint_readiness_candidate'
+MODE=sys.argv[1]
+def now(): return datetime.now(timezone.utc).isoformat()
+def meta(p):
+    b=p.read_bytes(); return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+failures=[]; records=[]
+def verify(p, size, sha, role):
+    m=meta(p); good=m['bytes']==size and m['sha256']==sha
+    records.append({'role':role,**m,'matches':good})
+    if not good: failures.append(str(p))
+archive=OUT/'original_review_818699a3'
+if MODE=='capture':
+    old=json.loads((OUT/'FINAL_FREEZE.json').read_text())
+    assert not archive.exists()
+    for row in old['files']:
+        p=OUT/row['path']; verify(p,row['bytes'],row['sha256'],'original_review_preservation')
+        q=archive/row['path'];q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes(p.read_bytes())
+    (archive/'FINAL_FREEZE.json').write_bytes((OUT/'FINAL_FREEZE.json').read_bytes())
+else:
+    old=json.loads((archive/'FINAL_FREEZE.json').read_text())
+    for row in old['files']: verify(archive/row['path'],row['bytes'],row['sha256'],'original_review_preserved')
+verify(SRC/'DERIVATION.md',40833,'dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179','assigned_corrected_source')
+verify(SRC/'FINAL_FREEZE.json',5006,'7ba2fceab45352d0032731a56124463ee14b70f12dcd4ba1dd0245e2db57fd40','assigned_corrected_freeze')
+for row in json.loads((SRC/'FINAL_FREEZE.json').read_text())['files']:
+    verify(SRC/row['path'],row['bytes'],row['sha256'],'corrected_freeze_entry')
+for p in sorted(SRC.rglob('*')):
+    if not p.is_file(): continue
+    q=OUT/'corrected_source_snapshot'/p.relative_to(SRC)
+    if MODE=='capture': q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes(p.read_bytes())
+    elif q.read_bytes()!=p.read_bytes(): failures.append('corrected snapshot drift '+str(p))
+m=json.loads((SRC/'SOURCE_MANIFEST.json').read_text())
+for row in m['sources']+m['inherited_premise_sources']:
+    verify(Path(row['path']),row['bytes'],row['sha256'],'corrected_live_origin')
+    verify(SRC/row['copy'],row['bytes'],row['sha256'],'corrected_source_copy')
+for row in json.loads((ORIG/'FINAL_FREEZE.json').read_text())['files']:
+    verify(ORIG/row['path'],row['bytes'],row['sha256'],'original_candidate_unchanged')
+old=(ORIG/'DERIVATION.md').read_text(); new=(SRC/'DERIVATION.md').read_text()
+delta=''.join(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='frozen818699a3/DERIVATION.md',tofile='proposed-correction/DERIVATION.md'))
+if delta!=(SRC/'CORRECTION.diff').read_text():failures.append('complete diff mismatch')
+if old.split('## 9.')[0]!=new.split('## 9.')[0]:failures.append('unexpected earlier body change')
+result={'checked_utc':now(),'mode':MODE,'purpose':'Source metadata/text difference only; no new science',
+        'records':records,'failures':failures,'complete_diff_matches':delta==(SRC/'CORRECTION.diff').read_text(),
+        'delta_hunks':delta.count('\n@@ '),'scientific_executions':0}
+name='CORRECTED_SOURCE_MANIFEST.json' if MODE=='capture' else 'CORRECTED_FINAL_SOURCE_FRESHNESS.json'
+(OUT/name).write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({'mode':MODE,'records':len(records),'failures':failures,'hunks':result['delta_hunks'],'scientific_executions':0}))
+sys.exit(bool(failures))

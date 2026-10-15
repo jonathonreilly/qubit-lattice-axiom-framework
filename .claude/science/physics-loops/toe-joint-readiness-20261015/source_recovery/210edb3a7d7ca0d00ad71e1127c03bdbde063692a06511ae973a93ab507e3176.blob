@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-10-15T14:12:06.491930+00:00",
+  "purpose": "Final source stability and hashing only",
+  "candidate_snapshot_unchanged": true,
+  "scientific_executions": 0,
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 31493,
+    "sha256": "74ec214987004b3dfc8fb945d798353b0bf2346f29c61fc74a341ffb57a12c99"
+  },
+  "launch": {
+    "path": "SEAL_LAUNCH.json",
+    "bytes": 256,
+    "sha256": "9a62c97eb27a2329f10516eb033111b45fc79f5c39fd93e8b952cd0c85f3b2eb"
+  }
+}

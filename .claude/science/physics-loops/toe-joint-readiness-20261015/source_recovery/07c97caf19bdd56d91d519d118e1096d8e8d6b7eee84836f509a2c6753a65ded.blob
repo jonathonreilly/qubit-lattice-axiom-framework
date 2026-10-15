@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-15T14:14:21.328088+00:00",
+  "corrected_candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+    "bytes": 40833,
+    "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+  },
+  "correction_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/FINAL_FREEZE.json",
+    "bytes": 5006,
+    "sha256": "7ba2fceab45352d0032731a56124463ee14b70f12dcd4ba1dd0245e2db57fd40"
+  },
+  "declared_members": 29,
+  "actual_files": 31,
+  "additional_nested_freeze_checked": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/sources/FINAL_FREEZE.json",
+    "bytes": 6263,
+    "sha256": "4d68a2cd04e5248491ac03a47a92f13810feed769938bda0541c77d1503e7860"
+  },
+  "source_rows_checked": 21,
+  "exact_diff": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/CORRECTION.diff",
+    "bytes": 9586,
+    "sha256": "7292d920cefd2b66ef2816ebb5be9184a159293c615aeda4c9d84bddaa3d6403"
+  },
+  "metadata_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/METADATA_LAUNCH_RECEIPT.json",
+    "bytes": 610,
+    "sha256": "0cd88d93e222b297d441ecb8fac851173bfc71d36e4c719b045e8f65bf231c52"
+  },
+  "metadata_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/METADATA_RECEIPT.json",
+    "bytes": 1042,
+    "sha256": "142fbc0a968e46d1bc1b9400cb3dd3feb060f202f746f09a2bfed91fdbb96f70"
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/CORRECTION_REVIEW.md",
+    "bytes": 2331,
+    "sha256": "497edf38ebaf72e91650f99127b044771ca3d40603e133138f65e1493d629e3e"
+  },
+  "original_candidate_closure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/CANDIDATE_SOURCE_CLOSURE.json",
+    "bytes": 2357,
+    "sha256": "d1225e2158bd96dd9a43e01d67d6da61a2c41af596f32bae8ec440ec5c2833b5"
+  },
+  "root_scientific_executions": 0,
+  "status": "Root correction read/identity closure complete; final separate review pending.",
+  "limits": "Author metadata receipts are in-process records; no external-launch stdout/stderr capture or new scientific verification is asserted. Historical31 checks do not validate new moment argument."
+}

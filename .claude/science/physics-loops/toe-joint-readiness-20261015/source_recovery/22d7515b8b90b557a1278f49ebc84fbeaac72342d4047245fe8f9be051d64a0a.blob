@@ -1,0 +1,732 @@
+{
+  "started_utc": "2026-10-15T13:32:57.924302+00:00",
+  "finished_utc": "2026-10-15T13:32:57.989959+00:00",
+  "source_sha256": "c5fdb1571106d70c3c7dbe44e85b21c8638956e6909740d52d5b2a9a68384af7",
+  "base_source_sha256": "b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f",
+  "scope": "One fixed geometry and permutation plus constant-size exact synthesis algebra; no inverse, waveform, dynamics or large Hilbert calculation.",
+  "counts": {
+    "original_nonclock": 70,
+    "original_clock": 4,
+    "auxiliary": 121,
+    "S": 125,
+    "new_memory": 125,
+    "total_factors": 320,
+    "S_declared_edges": 140,
+    "sum_root_distances": 2153,
+    "swaps": 19931,
+    "all_touching_NN_edges": 307,
+    "declared_edges": 271,
+    "omitted_edges": 36,
+    "new_omitted_edges": 1
+  },
+  "new_omitted_edges": [
+    [
+      [
+        7,
+        -6,
+        3
+      ],
+      [
+        7,
+        -6,
+        4
+      ]
+    ]
+  ],
+  "saturated_a1_neighbors": [
+    [
+      -2,
+      1,
+      1
+    ],
+    [
+      -1,
+      0,
+      1
+    ],
+    [
+      -1,
+      1,
+      0
+    ],
+    [
+      -1,
+      1,
+      2
+    ],
+    [
+      -1,
+      2,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "routing_certificate_sha256": "c1f2008f0e3055bcec53460181cd01bb0c7ebfe24cb090a4366c2ef7689b311f",
+  "synthesis": {
+    "parameters": [
+      {
+        "a": [
+          "0",
+          "0"
+        ],
+        "b": "1",
+        "sin_theta": "1",
+        "N": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "I_plus_N_principal_minors": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "state_before_pivot_phase": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "a": [
+          "0",
+          "3/5"
+        ],
+        "b": "4/5",
+        "sin_theta": "1",
+        "N": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-3/5",
+              "0"
+            ],
+            [
+              "0",
+              "-4/5"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "4/5"
+            ],
+            [
+              "3/5",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "I_plus_N_principal_minors": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2/5",
+            "0"
+          ],
+          [
+            "8/5",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2/5",
+            "0"
+          ],
+          [
+            "8/5",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "2/5",
+            "0"
+          ],
+          [
+            "8/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "2/5",
+            "0"
+          ],
+          [
+            "8/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "state_before_pivot_phase": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/5"
+          ],
+          [
+            "4/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "a": [
+          "-3/5",
+          "0"
+        ],
+        "b": "4/5",
+        "sin_theta": "4/5",
+        "N": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "I_plus_N_principal_minors": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "state_before_pivot_phase": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/5"
+          ],
+          [
+            "-12/25",
+            "0"
+          ],
+          [
+            "48/125",
+            "64/125"
+          ]
+        ]
+      }
+    ],
+    "target": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "3/5"
+      ],
+      [
+        "-12/25",
+        "0"
+      ],
+      [
+        "48/125",
+        "64/125"
+      ]
+    ],
+    "actual": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "3/5"
+      ],
+      [
+        "-12/25",
+        "0"
+      ],
+      [
+        "48/125",
+        "64/125"
+      ]
+    ],
+    "global_rotation_phase": "exp(-i sum theta_l); retained symbolically",
+    "final_phase_factor": [
+      "3/5",
+      "4/5"
+    ]
+  },
+  "mutants": {
+    "forward_only_first_word_wrong_labels": 21,
+    "reverse_hopping_squared_vector_error": "1924/625"
+  },
+  "checks": [
+    {
+      "name": "saved geometry source identity",
+      "passed": true
+    },
+    {
+      "name": "disjoint component 0",
+      "passed": true
+    },
+    {
+      "name": "disjoint component 1",
+      "passed": true
+    },
+    {
+      "name": "disjoint component 2",
+      "passed": true
+    },
+    {
+      "name": "all selected clock factors are original",
+      "passed": true
+    },
+    {
+      "name": "one ray is fresh",
+      "passed": true
+    },
+    {
+      "name": "joint S graph connected without D transit",
+      "passed": true
+    },
+    {
+      "name": "complete route swaps every input record exactly",
+      "passed": true
+    },
+    {
+      "name": "every original nonclock factor unchanged",
+      "passed": true
+    },
+    {
+      "name": "all gates are declared ordinary NN",
+      "passed": true
+    },
+    {
+      "name": "exact route price",
+      "passed": true
+    },
+    {
+      "name": "forward-only first word has retained-record defect",
+      "passed": true
+    },
+    {
+      "name": "all declared supports are present NN",
+      "passed": true
+    },
+    {
+      "name": "complete new-ray omitted set is the predicted one edge",
+      "passed": true
+    },
+    {
+      "name": "direct matching obstruction has all six occupied neighbors",
+      "passed": true
+    },
+    {
+      "name": "uniform conservative incidence bound covers selected case",
+      "passed": true
+    },
+    {
+      "name": "full pair positive logarithm 0",
+      "passed": true
+    },
+    {
+      "name": "pair unitary and exact cosine-sine data 0",
+      "passed": true
+    },
+    {
+      "name": "exponential algebra including signs 0",
+      "passed": true
+    },
+    {
+      "name": "full pair positive logarithm 1",
+      "passed": true
+    },
+    {
+      "name": "pair unitary and exact cosine-sine data 1",
+      "passed": true
+    },
+    {
+      "name": "exponential algebra including signs 1",
+      "passed": true
+    },
+    {
+      "name": "full pair positive logarithm 2",
+      "passed": true
+    },
+    {
+      "name": "pair unitary and exact cosine-sine data 2",
+      "passed": true
+    },
+    {
+      "name": "exponential algebra including signs 2",
+      "passed": true
+    },
+    {
+      "name": "selected target exactly normalized",
+      "passed": true
+    },
+    {
+      "name": "certified final pivot",
+      "passed": true
+    },
+    {
+      "name": "complex target including zero and final phase exactly synthesized",
+      "passed": true
+    },
+    {
+      "name": "reversed hopping sign fails target",
+      "passed": true
+    },
+    {
+      "name": "full swap spectral exponential has phase plus one",
+      "passed": true
+    },
+    {
+      "name": "excitation spectral exponential equals X",
+      "passed": true
+    }
+  ],
+  "check_count": 31,
+  "mathematical_execution_count": 1
+}

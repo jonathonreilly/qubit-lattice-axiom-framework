@@ -1,0 +1,31 @@
+"""Final current-source seal by hashes/text identities only; no scientific execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+OUT=Path(__file__).resolve().parent
+SRC=OUT.parent/'local_clock_joint_readiness_correction'
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p.relative_to(OUT)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+launch={'started_utc':now(),'purpose':'Corrected review final file seal only','code':meta(Path(__file__))}
+(OUT/'CORRECTED_SEAL_LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+fresh=json.loads((OUT/'CORRECTED_FINAL_SOURCE_FRESHNESS.json').read_text());assert not fresh['failures']
+for row in fresh['records']:
+ b=Path(row['path']).read_bytes();assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],row['path']
+for p in SRC.rglob('*'):
+ if p.is_file():assert p.read_bytes()==(OUT/'corrected_source_snapshot'/p.relative_to(SRC)).read_bytes()
+binding=json.loads((OUT/'REPORT_BINDING.json').read_text());body=(OUT/'REPORT.md').read_bytes();lo,hi=binding['historical_body_interval_zero_based_half_open']
+assert body[lo:hi]==(OUT/'original_review_818699a3/REPORT.md').read_bytes()
+assert len(body)==binding['report_bytes'] and hashlib.sha256(body).hexdigest()==binding['report_sha256']
+receipt={'completed_utc':now(),'purpose':'Final source stability and complete byte binding only',
+ 'all_closing_identities_still_match':True,'historical_body_preserved_exactly':True,'scientific_executions':0,
+ 'report':meta(OUT/'REPORT.md'),'launch':meta(OUT/'CORRECTED_SEAL_LAUNCH.json')}
+(OUT/'CORRECTED_SEAL_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+files=[meta(p) for p in sorted(OUT.rglob('*')) if p.is_file() and p!=OUT/'FINAL_FREEZE.json']
+freeze={'frozen_utc':now(),'status':'Separate source-exposed analytic review supporting corrected conditional scope; no audit verdict',
+ 'current_source_sha256':'dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179',
+ 'current_author_freeze_sha256':'7ba2fceab45352d0032731a56124463ee14b70f12dcd4ba1dd0245e2db57fd40',
+ 'original_review_preserved':'original_review_818699a3/FINAL_FREEZE.json',
+ 'scientific_executions_by_reviewer':0,'model_effort':'Inherited unchanged; no override or delegation','file_count':len(files),'files':files}
+(OUT/'FINAL_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n')
+print(json.dumps({'frozen_utc':freeze['frozen_utc'],'files':len(files),'report':meta(OUT/'REPORT.md'),'freeze':meta(OUT/'FINAL_FREEZE.json')}))

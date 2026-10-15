@@ -1,0 +1,334 @@
+{
+  "utc": "2026-10-15T15:22:10.830575+00:00",
+  "branch": "physics-loop/toe-joint-readiness-20261015",
+  "base_head": "1fcff4c8e3cfe5b8ae5fae1a31ae882609ff5939",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 152470,
+    "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py",
+    "bytes": 33440,
+    "sha256": "190d979b2874cc433611fb31d8fb920690bbcc196a93da032110ef4bab5f5e8c"
+  },
+  "cache": {
+    "utc": "2026-10-15T15:19:30.089336+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py",
+      "bytes": 33440,
+      "sha256": "190d979b2874cc433611fb31d8fb920690bbcc196a93da032110ef4bab5f5e8c"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/CANONICAL_RESULT.json",
+      "bytes": 1014,
+      "sha256": "86d80fdb49b5b138b8ce183e92e50b9aae6ba07bd3b54225e59585e23e1d3b15"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/routed_auxiliary_and_joint_readiness_2026_10_15.txt",
+      "bytes": 969,
+      "sha256": "6c8937f539024ecf582e10ec0c8abc9cfccc20a3d7635fc3a4df67f5f652f0fe"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "publication_or_retained_status_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run": 0,
+      "scope": "identities/body/recovery/binding structure only"
+    },
+    "scope_lines": [
+      "per_element: exact recorded bytes only; no physical-element validation",
+      "per_site: literal geometry premise retained; no adjacency computation",
+      "per_mode: arbitrary-input readiness contracts preserved; no dynamics execution",
+      "per_block: four exact bodies, one geometry dependency and compensated provenance",
+      "lattice_wide: no native supplier, full program, scientific execution or audit certified"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-15T15:19:48.601562+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py",
+      "bytes": 33440,
+      "sha256": "190d979b2874cc433611fb31d8fb920690bbcc196a93da032110ef4bab5f5e8c"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/MUTATION_RESULTS.json",
+      "bytes": 9621,
+      "sha256": "843efcd4ad821bd03593fdfe5c1fcea8d7c156e5be614f57e15b3c34a1f3b51c"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 175,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-15T15:21:50.145393+00:00",
+    "old_nodes_preserved": 7133,
+    "old_edges_preserved": 16092,
+    "new_node": {
+      "claim_id": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py",
+      "title": "Routed auxiliary preparation and joint clock readiness"
+    },
+    "new_edges": [
+      {
+        "from": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+        "to": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "roots_unchanged": true,
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10453112,
+      "sha256": "3de75f307002043233b701bc00b7e2b2ec6385217467eeeec3bb18cbafa589fd"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1018867,
+      "sha256": "de691eaab538b020c5cc57ea61e512948a814bef46b4597bfc81e0fd944ac640"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "61582d12be164dbc02ee5abcb8c2229906f06d96d4185ed6e33537b7ae999dd1"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without duplicating full graph files.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-15T15:19:44.788572+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 997,
+          "sha256": "a135d75f986ce5e7a910ba89df355ade518ceacdbc1c825e8d55450e433a949c"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 1025,
+          "sha256": "94eed2ebe604695c58656d2ad1f5b5c17b8db291600fce2ccdc60b1c0ec16eaa"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 1019,
+          "sha256": "a4ddfbfc10ff05b083d79a132f1cbe3bb80e913942ee97cfbd9cb5a64df83768"
+        }
+      },
+      {
+        "case": "binding_flag",
+        "expected_failure": "Missing current scope/binding field:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_binding_flag/EXECUTION.json",
+          "bytes": 1010,
+          "sha256": "5b85462ccd8da83f6d2940fa326ffc1328fee8982d66a96c46d31062e7f734d0"
+        }
+      },
+      {
+        "case": "routed_proof_interval",
+        "expected_failure": "Unique exact body interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_routed_proof_interval/EXECUTION.json",
+          "bytes": 1038,
+          "sha256": "7c991db528b4598f33fc93b0a360465e4cd7965ff00b9cfb2e828e4ae19d8f32"
+        }
+      },
+      {
+        "case": "routed_review_interval",
+        "expected_failure": "Unique exact body interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_routed_review_interval/EXECUTION.json",
+          "bytes": 1041,
+          "sha256": "c4b79e21892b8269bfc3f2b8de35b1c1771b4ba15fe38599df9146a97dde61a4"
+        }
+      },
+      {
+        "case": "joint_proof_interval",
+        "expected_failure": "Unique exact body interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_joint_proof_interval/EXECUTION.json",
+          "bytes": 1034,
+          "sha256": "f9b9e4f5b7ea3d809dc991fa4d8a91625eedb8bbbb8d7ec478a92e0e4ffc0e19"
+        }
+      },
+      {
+        "case": "joint_review_interval",
+        "expected_failure": "Unique exact body interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_joint_review_interval/EXECUTION.json",
+          "bytes": 1038,
+          "sha256": "2d7a7387e77de61e5741b9ed22d7fbddc4ef653c0fa8ca551fb326b2067367ca"
+        }
+      },
+      {
+        "case": "geometry_interval",
+        "expected_failure": "geometry body interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_geometry_interval/EXECUTION.json",
+          "bytes": 1025,
+          "sha256": "e72bbd6f3c398223d303a40954ad0e3743bd05984e354732442e123f304a7a0c"
+        }
+      },
+      {
+        "case": "dependency_endpoint",
+        "expected_failure": "Geometry dependency",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_dependency_endpoint/EXECUTION.json",
+          "bytes": 1032,
+          "sha256": "157e213d7942f647bc364da74ae56e1917867fe8d07d793667633b4907221144"
+        }
+      },
+      {
+        "case": "provenance_role",
+        "expected_failure": "Compensated source is provenance",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_provenance_role/EXECUTION.json",
+          "bytes": 1019,
+          "sha256": "8eaec06abfc24f5286f3e80796a65013759ca7275a2d7b8ed17222bf67aad0a7"
+        }
+      },
+      {
+        "case": "invented_execution",
+        "expected_failure": "Do not rewrite proposed outcomes",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_invented_execution/EXECUTION.json",
+          "bytes": 1028,
+          "sha256": "f26c5a7003c2eca32c08353b9183a3eea21cd34de79fa76758e538fe6230040d"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Actual bound note identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 1007,
+          "sha256": "0e064aed602bd827bf2320cbe57f2d60dea7a7884ad0d8bc7870ff1cfdcd8eaf"
+        }
+      },
+      {
+        "case": "actual_body",
+        "expected_failure": "actual body binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_actual_body/EXECUTION.json",
+          "bytes": 1007,
+          "sha256": "20ade709612483cbfed7f5a8898c244db8a9e45f6bc0822064d7ba844f2fef21"
+        }
+      },
+      {
+        "case": "actual_geometry",
+        "expected_failure": "actual geometry binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_actual_geometry/EXECUTION.json",
+          "bytes": 1019,
+          "sha256": "1e723d5cb163b5dd2f10c39e61f64d0f10a88fa45c42f0372c3a73d73266f72d"
+        }
+      },
+      {
+        "case": "actual_stack",
+        "expected_failure": "actual stack head",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_actual_stack/EXECUTION.json",
+          "bytes": 1010,
+          "sha256": "2bfaf1ffa6b79f67c02a42202d35dddac5c0ec33a5e656a74a3a41e53cc31be7"
+        }
+      },
+      {
+        "case": "stack_observation",
+        "expected_failure": "observed stack PR binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_stack_observation/EXECUTION.json",
+          "bytes": 1025,
+          "sha256": "be0da456e4fdab3b787aac48280d8f31243309ad7b45f04f4356d4a906cc276e"
+        }
+      },
+      {
+        "case": "geometry_observation",
+        "expected_failure": "observed geometry PR binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_geometry_observation/EXECUTION.json",
+          "bytes": 1034,
+          "sha256": "07812e00a7e63f4717005c50d9be0848a55da245ef535967b4ef282865e734c9"
+        }
+      },
+      {
+        "case": "main_observation",
+        "expected_failure": "latest main refresh binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_main_observation/EXECUTION.json",
+          "bytes": 1022,
+          "sha256": "f8e94800782c29c88647d7244d6604783278c000318e3758b22520143febe102"
+        }
+      },
+      {
+        "case": "root_ack",
+        "expected_failure": "root reviewed source",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_root_ack/EXECUTION.json",
+          "bytes": 998,
+          "sha256": "97f900e6edb41754f0b3c33903c786410fd90a2cea075815a5134e568b39b9e9"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Actual binding receipts must be declared inputs",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 1028,
+          "sha256": "5061f52c216abc626926049e040c106f2a87e9384b5e0728ce9afe0ce697ddc2"
+        }
+      },
+      {
+        "case": "qualification_archive",
+        "expected_failure": "mandatory qualification archive",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/runs/mutation_qualification_archive/EXECUTION.json",
+          "bytes": 1037,
+          "sha256": "4a8f4b8a56d02214871caeb66b7f77aaf8dba1a5f48596dfe8ed88f27da33652"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 21,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Supplied independent pure memory, controls, isolation, physical energy/detector/reuse identification, and complete-program composition."
+  ]
+}

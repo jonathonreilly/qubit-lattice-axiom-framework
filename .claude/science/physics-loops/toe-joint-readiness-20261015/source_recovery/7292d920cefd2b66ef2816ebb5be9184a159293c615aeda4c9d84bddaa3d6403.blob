@@ -1,0 +1,67 @@
+--- frozen818699a3/DERIVATION.md
++++ proposed-correction/DERIVATION.md
+@@ -251,7 +251,7 @@
+     A_gate=pi(P+1)+2Theta+lambda
+             < pi(P+1)+2pi(M-1)+3pi.                       (24)
+ 
+-For each pulse, peak norm<=m0 L_g/tau_g, norm action=L_g, peak derivative<=m1 L_g/tau_g^2 and total variation<=2m0 L_g/tau_g. Compensation has peak B_C, action B_C A_u, peak derivative<=m0 B_C/min(r_on,r_off), variation<=2B_C. Consequently total added norm action is bounded by B_C A_u+A_gate; peak is B_C+max_g m0 L_g/tau_g; total variation is bounded by
++For each pulse, peak norm<=m0 L_g/tau_g, norm action=L_g, peak derivative<=m1 L_g/tau_g^2 and total variation<=2m0 L_g/tau_g. Compensation has peak norm ||C||<=B_C, norm action ||C|| A_u<=B_C A_u, peak derivative<=m0 B_C/min(r_on,r_off), variation<=2B_C. Consequently total added norm action is bounded by B_C A_u+A_gate; peak is at most B_C+max_g m0 L_g/tau_g; total variation is bounded by
+ 
+     V_ctrl=2B_C+2m0 sum_g L_g/tau_g.                        (25)
+ 
+@@ -290,7 +290,45 @@
+ 
+ Expanding the first variance retains Var(H0), Var(B_D) and the symmetrized H0/B_D covariance. Expanding the clock variance retains (18). H0 moments are invariant under its aging but B_D moments and its covariance with H0 need not be. New X and A are independent in the ideal output, while D is generally correlated with E/R holding the previous S inputs. Equations (27) also specify linear E/R-valued first and second moments after partial trace, without pretending the retained records are independent.
+ 
+-For any estimate center a and beta>=||K-aI||, trace error epsilon in (15) implies mean error<=beta epsilon, centered second-moment error<=beta^2 epsilon and variance error<=3beta^2 epsilon. The linear E/R-valued moments satisfy the corresponding beta^j epsilon trace-norm bounds for j=1,2. This follows from trace-norm duality applied to Hermitian test operators on the retained E/R factor. Center a is only a bound parameter; no physical scalar is subtracted. Large simulator coefficients demand tighter preparation precision for fixed moment tolerances.
++For any real estimate center a and beta>=||K-aI||, trace error epsilon in (15) implies scalar mean error<=beta epsilon, scalar centered second-moment error<=beta^2 epsilon and scalar variance error<=3beta^2 epsilon. The scalar mean statement uses equality of the two total traces, and the scalar variance is unchanged by centering. These scalar statements do not by themselves give the same bounds for raw retained-operator moments.
++
++For precision, let B=D/A/X be the factors traced out, Z=E/R the retained factors, and let rho,sigma be the two complete output states with ||rho-sigma||_1<=epsilon. Extend K by identity on the passive R factor. Define the explicitly CENTERED linear partial moments
++
++    M_j^[a](rho)=Tr_B[((K-aI)^j tensor I_R)rho],
++    M_0^[a](rho)=rho_Z,  delta M_j^[a]=M_j^[a](rho)-M_j^[a](sigma).
++
++Here K may also act on E if the installed F has been enlarged as described in section 8; the displayed extension only adds the passive R identity. General trace-norm duality gives
++
++    ||delta M_j^[a]||_1<=beta^j epsilon, j=1,2.             (29)
++
++Indeed, for EVERY bounded retained test operator T_Z with ||T_Z||<=1, including non-Hermitian ones,
++
++    |Tr[T_Z delta M_j^[a]]|
++       =|Tr[(I_B tensor T_Z)((K-aI)^j tensor I_R)(rho-sigma)]|
++       <=beta^j epsilon.
++
++Taking the supremum proves (29). When K acts only on B, the partial moments are Hermitian and Hermitian tests suffice. When K also acts on E, unsymmetrized partial moments need not be Hermitian, so restricting this proof to Hermitian tests is not justified. The symmetrized record (M_j^[a]+M_j^[a]* )/2, if desired, is Hermitian and obeys the same difference bound by the triangle inequality. These are linear operator records; they are not conditional variances, normalized conditional states or a specified energy-measurement protocol. In particular an operator expression formed by squaring a retained first moment is not supplied here as a conditional variance.
++
++Raw moments M_j^[0] retain the scalar and the marginal. Write delta rho_Z=rho_Z-sigma_Z and epsilon_Z=||delta rho_Z||_1<=epsilon. The exact identities are
++
++    delta M_1^[0]=delta M_1^[a]+a delta rho_Z,
++    delta M_2^[0]=delta M_2^[a]+2a delta M_1^[a]+a^2 delta rho_Z.
++
++Consequently the correct raw bounds are
++
++    ||delta M_1^[0]||_1<=beta epsilon+|a| epsilon_Z,
++    ||delta M_2^[0]||_1<=(beta^2+2|a|beta)epsilon+a^2 epsilon_Z. (30)
++
++Direct bounds ||K||^j epsilon are also valid by the same general duality. Even if the retained marginals agree exactly, the raw second moment still contains 2a delta M_1^[a]. More generally the binomial identity M_j^[0]=sum_(k=0)^j binom(j,k)a^(j-k)M_k^[a] fixes every marginal/cross term. Center a is only an estimate parameter; no physical scalar is subtracted from K or the retained record. Large simulator coefficients demand tighter preparation precision for fixed moment tolerances.
++
++A scalar counterexample preserves the failed raw-moment claim. In a two-qubit routing instance take K=aI with a>0 and beta=0, an input |1>_S|0>_E and intended full SWAP. For 0<delta<pi/2, a small allowed positive SWAP overrotation replaces its logarithm by (pi/2+delta)(I-Swap). Up to its irrelevant common phase, the actual output is cos(delta)|0,1>+i sin(delta)|1,0>, instead of |0,1>. Thus the full state error is 2|sin(delta)| and
++
++    delta rho_E=sin^2(delta)(|0><0|-|1><1|),
++    delta M_1^[0]=a delta rho_E != 0,
++    delta M_2^[0]=a^2 delta rho_E,
++    delta M_j^[a]=0 for j>=1.
++
++A tensor passive reference tau_R and fixed spectator factors can be included: delta rho_ER=delta rho_E tensor tau_R and the raw first-moment defect is a delta rho_ER. This is an analytic counterexample to the uncentered moment inequality using a permitted local routing-control error, not a new execution or a claim about the selected clock fixture. The fault can have arbitrarily small integrated norm while changing the retained marginal. Scalar total mean and variance do not contradict their bounds, because Tr(delta rho_E)=0. No memory output is discarded to remove this defect.
+ 
+ For an unabsorbed static E_base with ||E_base||<=zeta, these displayed ideal moments still refer to nominal K. Actual moments of K_base instead obey the same compression identities with F replaced by F+E_base, or can be compared conservatively: mean error<=(beta+zeta)epsilon+zeta; centered second-moment error<=(beta+zeta)^2 epsilon+2beta zeta+zeta^2; variance error<=3(beta+zeta)^2 epsilon+2beta zeta+zeta^2. The last additive bound follows from Var(E_base)<=zeta^2 and the symmetrized covariance bound 2 sqrt[Var(K)Var(E_base)]<=2beta zeta. This prevents nominal isolation from silently entering an actual energy claim.
+ 
+@@ -312,4 +350,8 @@
+ 
+ The rational four-clock target [0,3i/5,-12/25,(48+64i)/125] is exactly normalized and the three positive pair logarithms plus pivot phase reproduce it exactly, after retaining the symbolic global phase exp(-i Theta). Exact four-by-four principal minors check positivity for these selected logarithms, and exact spectral-projector identities check full SWAP and excitation phases. The 31 named predicates are selected evidence, not independent theorem acceptance. The forward-only first routing-word mutant leaves 21 incorrect final labels; reversing the hopping sign gives squared target-vector error 1924/625. These are actual failed routes preserved in EXACT_RESULT.json.
+ 
++Evidence qualification from subsequent source inspection: the frozen exact_fixture.py appends the mutable state list directly to each record under state_before_pivot_phase. After the final rotation, the subsequent in-place assignment state[3]=mul(phase,state[3]) also changes the final saved record. Its last amplitude is therefore the AFTER-phase value (48+64i)/125, not the real before-phase value 16/25. That row is mislabeled and is not valid evidence of the pre-phase state. Each next rotation assigns a new list to state, leaving earlier saved records on their previous lists; only the final list is later modified in place. The analytic recurrence (9) still gives the stated real tail before the phase.
++
++The actual final equality predicate is evaluated after the phase against the explicit target, independently of this diagnostic-record label. The pair positivity/unitarity/cosine-sine predicates are evaluated before the aliasing mutation and do not read the mislabeled row; the full routing checks and failed mutants also do not depend on that label. Their dated 2026-10-15 13:32:57 evidence is preserved with this limitation. No frozen code or result is repaired or rerun here. A proposed list-copy patch is saved separately without any new scientific outcome. In particular the old 31-predicate diagnostic is not evidence for the moment correction (29)-(30). Within this corrected packet, historical fixture and receipt references denote the pinned original copies under sources/ and their original paths in SOURCE_MANIFEST.json.
++
+ The uniform geometry family, full-output Duhamel argument, general packet synthesis, source positivity and control suppliers remain analytic claims for independent review. No waveform execution, arbitrary-H dynamics, large Hilbert matrix or new inverse was computed. The complete selected adjacency inventory and gate/path certificate are saved. Post-run analytic clarifications and actual evidence are recorded by a full diff against the contemporaneous preexecution derivation; no scientific code or input was changed or rerun.

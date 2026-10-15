@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-15T14:29:45.867754+00:00",
+  "status": "Mandatory root qualification; historical sources unchanged",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/routed_moment_qualification/QUALIFICATION.md",
+      "bytes": 3026,
+      "sha256": "5c0ed07955fcfc9e5b7330c42a61756cf11258b315db6a9b5d7fc642d48ff53d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/routed_moment_qualification/SOURCE_MANIFEST.json",
+      "bytes": 2087,
+      "sha256": "61c78c6e854a015eb5749dcef5c2e67b703c6dae165ed4687a993d9ae03d67b3"
+    }
+  ]
+}

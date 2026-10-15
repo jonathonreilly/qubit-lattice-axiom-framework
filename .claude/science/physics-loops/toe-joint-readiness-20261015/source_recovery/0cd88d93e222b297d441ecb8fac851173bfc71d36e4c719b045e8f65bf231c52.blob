@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-15T14:11:42.053185+00:00",
+  "purpose": "Metadata-only hashes, complete text delta and unchanged frozen inventory; no science replay",
+  "argv": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/verify_metadata.py"
+  ],
+  "interpreter": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "script": {
+    "path": "verify_metadata.py",
+    "bytes": 3454,
+    "sha256": "17b693f62a759a0b3167e4657e80beee2e8f11df3b077b2eee15609248d3cf0c"
+  },
+  "scientific_invocations": 0
+}

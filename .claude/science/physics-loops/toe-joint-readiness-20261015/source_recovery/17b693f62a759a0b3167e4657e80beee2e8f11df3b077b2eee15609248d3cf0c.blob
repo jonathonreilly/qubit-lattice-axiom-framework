@@ -1,0 +1,31 @@
+"""Metadata-only correction seal; imports or runs no scientific code."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,difflib,sys
+D=Path(__file__).resolve().parent;S=D.parent/'local_clock_joint_readiness_candidate'
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p,root=D):
+ b=p.read_bytes();return {'path':str(p.relative_to(root)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+launch={'started_utc':now(),'purpose':'Metadata-only hashes, complete text delta and unchanged frozen inventory; no science replay','argv':sys.argv,'interpreter':sys.version,'script':meta(Path(__file__)),'scientific_invocations':0}
+(D/'METADATA_LAUNCH_RECEIPT.json').write_text(json.dumps(launch,indent=2)+'\n')
+f=json.loads((S/'FINAL_FREEZE.json').read_text());same=[]
+for rec in f['files']:
+ observed=meta(S/rec['path'],S);assert observed==rec,(rec,observed);same.append(observed)
+assert {str(p.relative_to(S)) for p in S.rglob('*') if p.is_file()}=={r['path'] for r in f['files']}|{'FINAL_FREEZE.json'}
+assert meta(S/'FINAL_FREEZE.json',S)['sha256']=='4d68a2cd04e5248491ac03a47a92f13810feed769938bda0541c77d1503e7860'
+m=json.loads((D/'SOURCE_MANIFEST.json').read_text())
+for rec in m['sources']+m['inherited_premise_sources']:
+ copied=meta(D/rec['copy']);assert copied['sha256']==rec['sha256'] and copied['bytes']==rec['bytes']
+ live=Path(rec['path']).read_bytes();assert hashlib.sha256(live).hexdigest()==rec['sha256']
+old=(D/'sources/DERIVATION.md').read_text();new=(D/'DERIVATION.md').read_text()
+delta=''.join(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='frozen818699a3/DERIVATION.md',tofile='proposed-correction/DERIVATION.md'))
+assert delta==(D/'CORRECTION.diff').read_text();assert delta.count('\n@@ ')==3
+assert old.split('## 9.')[0]==new.split('## 9.')[0]
+code=(D/'sources/exact_fixture.py').read_text();changed=code.replace("'state_before_pivot_phase':state}","'state_before_pivot_phase':state.copy()}")
+expected=''.join(difflib.unified_diff(code.splitlines(True),changed.splitlines(True),fromfile='frozen/exact_fixture.py',tofile='unexecuted-proposal/exact_fixture.py'))
+assert expected==(D/'PROPOSED_FIXTURE_REPAIR.diff').read_text()
+receipt={'completed_utc':now(),'status':'Completed metadata verification only','launch':meta(D/'METADATA_LAUNCH_RECEIPT.json'),'original_frozen_files_unchanged':len(same),'original_freeze_unchanged':True,'original_inventory_unchanged':True,'all_source_copies_and_live_pins_match':True,'complete_delta_matches':True,'delta_hunks':3,'proposed_fixture_patch_is_one_list_copy_change':True,'scientific_fixture_executions':0,'derivation':meta(D/'DERIVATION.md'),'delta':meta(D/'CORRECTION.diff'),'scope':meta(D/'SCOPE_EXPOSURE.md')}
+(D/'METADATA_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+files=[meta(p) for p in sorted(D.rglob('*')) if p.is_file() and p.name!='FINAL_FREEZE.json']
+(D/'FINAL_FREEZE.json').write_text(json.dumps({'frozen_utc':now(),'status':'Proposed narrow corrected source for root/reviewer inspection; not accepted or published','original_derivation_sha256':'818699a3aaccdabba68914775b01d1c9178cd2d651e2c42d6069b88426580ca7','original_packet_unchanged':True,'scientific_executions':0,'files':files},indent=2)+'\n')
+print(json.dumps({'derivation':meta(D/'DERIVATION.md'),'freeze':meta(D/'FINAL_FREEZE.json'),'diff':meta(D/'CORRECTION.diff'),'metadata_receipt':meta(D/'METADATA_RECEIPT.json')},indent=2))

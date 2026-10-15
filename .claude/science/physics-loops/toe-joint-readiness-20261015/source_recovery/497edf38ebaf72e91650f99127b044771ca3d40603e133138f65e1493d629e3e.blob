@@ -1,0 +1,11 @@
+# Root read of the narrow joint-readiness correction
+
+The complete three-hunk CORRECTION.diff7292d920, SCOPE_EXPOSURE82a66d4c, metadata verifier17b693f6, actual in-process metadata launch/completion records and proposed one-line fixture patch were read. Combined with the prior full315-line read and exact unchanged-section check, this covers the complete corrected40833-byte derivationdcee9d6f. No historical body, fixture, output or source seal was modified.
+
+Section9 now correctly distinguishes the actual compensator norm from its B_C upper bound. Section10 defines M_j^[a]=Tr_B[((K-aI)^j tensor I_R)rho] and uses arbitrary bounded Z tests. Submultiplicativity gives ||(I_B tensor T_Z)(K-aI)^j||<=beta^j, so trace-norm duality supplies the asserted bound without a commutation or Hermitian-output assumption. When K acts on retained E, these ordered moments need not be Hermitian; their symmetrized versions inherit the same bound. Neither version is called a conditional variance or a measurement protocol.
+
+The raw first/second identities are exact polynomial expansions. The first contains a delta rho_Z; the second contains both 2a delta M_1^[a] and a^2 delta rho_Z, including when the retained marginals coincide. The counterexample is valid: exp[-i(pi/2+delta)(I-SWAP)]|1,0> equals e^(-i delta)[cos(delta)|0,1>+i sin(delta)|1,0>]. Thus the retained E marginal changes by sin^2(delta)(|0><0|-|1><1|), while K=aI has beta0. Scalar total traces agree, so scalar mean/variance continuity is not contradicted. This is an analytic counterexample, not an executed fixture.
+
+The source now explicitly disqualifies the final saved pre-pivot row as evidence of that state. Root's direct hand recurrence already gave16/25, while the frozen row contains(48+64i)/125. The proposed state.copy() patch is exactly one diagnostic capture change and remains unexecuted. The existing final target predicate and positivity/routing predicates do not read the mislabeled row; their historical results remain with that limitation. None verifies the new moment argument.
+
+The correction resolves the root's identified source issues. Complete separate review is still required before final acceptance. This is same-family source-exposed work, with no new scientific execution, retained audit, native-control assertion or editable-prompt change.

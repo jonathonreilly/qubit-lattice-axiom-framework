@@ -1,0 +1,73 @@
+"""Source identity/bookkeeping only. No scientific computation or imported runner."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json, sys
+
+OUT = Path(__file__).resolve().parent
+CANDIDATE = OUT.parent / 'local_clock_joint_readiness_candidate'
+MODE = sys.argv[1]
+
+def now(): return datetime.now(timezone.utc).isoformat()
+def meta(p):
+    b = p.read_bytes()
+    return {'path': str(p), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+expected = {
+    'DERIVATION.md': (35766, '818699a3aaccdabba68914775b01d1c9178cd2d651e2c42d6069b88426580ca7'),
+    'FINAL_FREEZE.json': (6263, '4d68a2cd04e5248491ac03a47a92f13810feed769938bda0541c77d1503e7860'),
+}
+records, failures = [], []
+for name, (size, digest) in expected.items():
+    m = meta(CANDIDATE / name)
+    good = m['bytes'] == size and m['sha256'] == digest
+    records.append({'role': 'assigned_identity', **m, 'matches': good})
+    if not good: failures.append(name)
+freeze = json.loads((CANDIDATE / 'FINAL_FREEZE.json').read_text())
+for row in freeze['files']:
+    p = CANDIDATE / row['path']; m = meta(p)
+    good = m['bytes'] == row['bytes'] and m['sha256'] == row['sha256']
+    records.append({'role': 'candidate_freeze_entry', **m, 'matches': good})
+    if not good: failures.append(str(p))
+    if MODE == 'capture':
+        q = OUT / 'source_snapshot' / row['path']
+        q.parent.mkdir(parents=True, exist_ok=True); q.write_bytes(p.read_bytes())
+    else:
+        q = OUT / 'source_snapshot' / row['path']
+        if q.read_bytes() != p.read_bytes(): failures.append('snapshot drift: ' + row['path'])
+if MODE == 'capture':
+    (OUT / 'source_snapshot' / 'FINAL_FREEZE.json').write_bytes((CANDIDATE / 'FINAL_FREEZE.json').read_bytes())
+source_manifest = json.loads((CANDIDATE / 'SOURCE_MANIFEST.json').read_text())
+for row in source_manifest['sources']:
+    live = Path(row['path']); m = meta(live)
+    copy = CANDIDATE / 'sources' / row['name']
+    good = m['bytes'] == row['bytes'] and m['sha256'] == row['sha256'] and live.read_bytes() == copy.read_bytes()
+    records.append({'role': 'live_pinned_dependency', 'snapshot': str(copy), **m, 'matches': good})
+    if not good: failures.append(str(live))
+skills = {
+    '/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md': '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455',
+    '/Users/jonreilly/.codex/skills/workhorse/SKILL.md': '9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb',
+}
+for name, digest in skills.items():
+    p = Path(name); m = meta(p); good = m['sha256'] == digest
+    records.append({'role': 'previously_read_instruction_identity', **m, 'matches': good})
+    if not good: failures.append(name)
+    if MODE == 'capture':
+        q = OUT / 'instruction_snapshots' / p.parent.name / p.name
+        q.parent.mkdir(parents=True, exist_ok=True); q.write_bytes(p.read_bytes())
+receipt = json.loads((CANDIDATE / 'EXECUTION_RECEIPT.json').read_text())
+for row in [receipt['launch'], receipt['stdout'], receipt['stderr'], receipt['post_source'], *receipt['outputs']]:
+    m = meta(CANDIDATE / row['path'])
+    good = m['bytes'] == row['bytes'] and m['sha256'] == row['sha256']
+    records.append({'role': 'author_execution_receipt_entry', **m, 'matches': good})
+    if not good: failures.append('execution receipt: ' + row['path'])
+seal = json.loads((CANDIDATE / 'PREEXECUTION_SEAL.json').read_text())
+for row in seal['files']:
+    p = CANDIDATE / 'preexecution' / row['path']; m = meta(p)
+    good = m['bytes'] == row['bytes'] and m['sha256'] == row['sha256']
+    records.append({'role': 'author_preexecution_entry', **m, 'matches': good})
+    if not good: failures.append('preexecution: ' + row['path'])
+result = {'checked_utc': now(), 'mode': MODE, 'purpose': 'Metadata only; no scientific execution',
+          'records': records, 'failures': failures, 'scientific_executions_by_reviewer': 0}
+(OUT / ('SOURCE_MANIFEST.json' if MODE == 'capture' else 'FINAL_SOURCE_FRESHNESS.json')).write_text(json.dumps(result, indent=2) + '\n')
+print(json.dumps({'mode': MODE, 'identity_records': len(records), 'failures': failures, 'reviewer_scientific_executions': 0}))
+sys.exit(bool(failures))

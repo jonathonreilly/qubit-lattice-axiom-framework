@@ -465,7 +465,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Not tested.** Global integrability around the Wilson-line circle, counterterm freedom, Lx > 4 kernels, 4D, non-abelian.
 - **If (c) is accepted on substance,** the reading would be CHI-RP-FAIL.
 
-**OBS-4 result (14:16Z; same family; referee launched): FCNC-PRICE, at KILL level for X2 as written.**
+**OBS-4 result (14:16Z; same family; referee launched): FCNC-PRICE, at KILL level for X2 as written.** [Referee: CONFIRMED WITH CORRECTIONS; FCNC-PRICE correct; the universal 1.1 TeV ceiling and the universal KILL are not established. See below.]
 - **Selection rule (proved).** Exact unit translations allow a corner-(c, c′) Yukawa only through a scalar at momentum Q_c + Q_c′. So OBS-3's escape needs three extra electroweak doublets at the hw2 momenta (four doublets in all).
 - **The carriers change flavour.** In the mass basis their couplings are large: |Ŷ_uc| up to 0.66, |Ŷ_sd| about 0.015. Even the k = 0 Higgs part is flavour-changing.
 - **Alignment is impossible** (proved; disjoint supports, and |V_ub| ≠ 0). Natural flavour conservation would force a permutation CKM (proved).
@@ -497,3 +497,18 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **CHI-RP-FAIL:** (b′) and (b″) pass, NT-1′'s (a), (c) and (d) hold, and at least one NT-1′ pool, recomputed with the completed measure, stays below −10E.
   - **CHI-RP-PASS-at-power:** the gate passes, and the kernel is PSD within error.
   - **OPEN:** otherwise, naming the failed item.
+
+**OBS-4 referee (codex gpt-5.6-sol, xhigh; returned 14:33Z; recorded 14:33Z): CONFIRMED WITH CORRECTIONS. FCNC-PRICE is correct under PREREG rule 10.**
+- **Confirmed.**
+  - S1, the selection rule, including the spin structure. D3 cross-charge bilinears are forbidden.
+  - Mass-basis couplings, independently: |Ŷ⁰_uc| = 0.65695, |Ŷ⁰_sd| = 0.01506.
+  - The degenerate-H/A C4 formula, and the INP Table I and UTfit Table IV rows. M* = 7693.6 TeV for B-gen and 3799.6 TeV for B-gen120.
+  - The 15–43 TeV vev cancellations and their fragility at the 1e-4–1e-5 amplitude level, within that ansatz.
+  - Class S: the residual lattice is BCC and every hw1 corner shares the hw3 label, so X2-L2's exact guarantee is lost. O(1/a) light–mirror hopping is symmetry-allowed but not dynamically shown to be nonzero, and no protecting residual symmetry is supplied.
+- **Corrections.**
+  - 0.881 TeV is a single-quartic-source estimate, not a general-potential bound. The 0.77/1.09 TeV searches reproduce but are heuristic, and the 8π optimum is not bounded from below.
+  - D6 allows same-translation-charge bilinears and was not covered by the four-doublet search.
+  - A Higgs-basis rotation is legitimate after translation breaking (it is a field redefinition), but H₀ is not itself the aligned physical Higgs.
+  - The no-alignment and NFC lemmas hold for the stated definite-momentum D3/B-gen content. They are not a no-go against arbitrary extra fields, symmetries or propagator tuning.
+  - "KILL level for X2 as written" is supported for the tested D3 spectra. It is not proved universally for D6 or for general non-degenerate potentials.
+- **Strongest correct statement (referee).** In the degenerate-heavy D3 benchmark, exact B-gen textures necessarily have large flavour-changing couplings in the mass basis, and need about 1.3e3–7.9e3 TeV untuned; vev cancellations reach 15–43 TeV only through 1e-4–1e-5 amplitude tuning. Exact translations remove the ordinary D3 decoupling term, so TeV-scale active carriers are the natural perturbative outcome. But a universal 1.1 TeV ceiling and a universal X2 KILL are not established. The fixed result stays FCNC-PRICE, because the concrete high-scale singlet escape is named extra structure that breaks translations to BCC and forfeits X2-L2 protection.

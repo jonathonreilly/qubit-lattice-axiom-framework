@@ -1,0 +1,6 @@
+reproduced objective=1.087819 TeV; vevs=[112.776 100.335  84.88   17.905]
+physical masses=[0.157907 1.087819 1.087819 1.104641 1.10635  1.12316  1.12316  1.227137
+ 1.242832 1.474709 1.474709 1.484039 1.491133]
+sampled min V4 on unit sphere: general=-7.850422e+00, neutral=-9.759939e+00
+BFB sampled result: FAIL (negative quartic direction found)
+watchdog peak RSS 83360 KB

@@ -349,3 +349,12 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **CHI-RP-FAIL:** G-LEG passes, and the kernel has a quadrature-converged negative eigenvalue below −10× the error estimate.
   - **CHI-RP-PASS-at-power:** G-LEG passes, and the kernel is PSD within error, using the vector-like K2c witness on the same geometry as the power reference.
   - **OPEN:** otherwise, naming the failed gate item.
+
+**Campaign interruption (recorded 11:22Z on 10-15).** The supervisor's session ended at about 00:47Z, and all three wave-1 agents stopped with it.
+- **Progress at the break:**
+  - OBS-2 had its PREREG and kinetic runs up to N = 96;
+  - QMC-1 had its PREREG and a model builder;
+  - NT-1′ had literature only, and no PREREG yet.
+- **Resumed at 11:22Z** from the agents' own transcripts, with new deadlines: OBS-2 14:00Z, NT-1′ 16:30Z, QMC-1 18:30Z.
+- **Close:** the campaign close moves to about 11:30Z on 10-16, so the campaign still gets 24 working hours.
+- No reading or pre-registration was changed.

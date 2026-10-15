@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-15T19:18:38.586487+00:00",
+  "finished_utc": "2026-10-15T19:18:38.599157+00:00",
+  "scope": "Actual in-process metadata seal; no invented launch receipt",
+  "actual_metadata_subprocess_receipts": [
+    {
+      "path": "metadata_runs/capture/EXECUTION.json",
+      "bytes": 2077,
+      "sha256": "3950bad051f9e678a70c47e8b5a9975d6cdd64f70918bef8427a4b504008cf45"
+    },
+    {
+      "path": "metadata_runs/verify/EXECUTION.json",
+      "bytes": 2074,
+      "sha256": "7bd23b4adb3c76300c7b3b33720ead918241e5ea4bbca7f253b84320e0c9e276"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "root_candidate_accessed": false
+}

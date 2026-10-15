@@ -1,0 +1,18 @@
+{
+  "kind": "dated_source_proposal_not_actual_binding",
+  "created_utc": "2026-10-15T20:06:26.015104+00:00",
+  "canonical_binding": null,
+  "git_base": null,
+  "primary_execution": null,
+  "cache_execution": null,
+  "mutation_execution": null,
+  "graph_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "source_acceptances": {
+    "basis_clock": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0"
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "polynomial_mediator_imported": false
+}

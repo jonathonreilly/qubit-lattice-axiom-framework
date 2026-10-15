@@ -1,0 +1,7 @@
+# Root handoff
+
+Review the complete current wrapper and changed primary/metadata logic, then confirm the three body identities against their exact sources. Root source acceptance 174ff7dc is actual. Actual publication review eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708 and the separate selected-base binding are captured. Root must inspect the complete generated canonicalization diff before installation. The sole mathematical parent is the actually observed combined controller note, with controller-author and assessment intervals; future Git ancestry is a separate root choice.
+
+Retain the post-exposure attribution for the adopted positive-edge clock and sharper constant. Keep geometric edge count distinct from nonzero dynamics; marginal 2delta distinct from full joint g(delta); exact actual old marginal and all outputs; genuine number-potential/phase/norm/F1/F2 changes; whole-space corrector, positive blocks, moment prices; actual release aging/work; potentially exponential source costs. No native source, polynomial-mediator theorem, fixed cap or reuse is imported.
+
+Root owns actual binding, primary/cache, targeted source mutations, focused evidence checks, exact graph preservation and staging, regular publication and immediate attachment. Relocate all three body/recovery indexes together. Preserve original nulls and failures. Do not execute archived scientific code or treat the source-integrity primary as physics verification. Independent retained audit and cumulative-stack/current-main landing review remain separate.

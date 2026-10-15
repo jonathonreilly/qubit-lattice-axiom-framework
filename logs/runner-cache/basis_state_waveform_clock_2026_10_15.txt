@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/basis_state_waveform_clock_2026_10_15.py
+runner_sha256: be56d6b12e89e981a92e672bae6e592f768383c69bd808d1057c4133586d1e86
+input_fingerprint_sha256: 79570dbd5cf906677eafbd5342557cae8e71f8238534e71c77819c5e2f10bd54
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"}
+per_element: basis-clock coefficients and scalar ledgers preserved; no gate or physical element run
+per_site: weighted clock and exterior NN supports preserved; installation and isolation remain supplied
+per_mode: one-head clock and full auxiliary-sector distinctions preserved; no simulation run
+per_block: three unchanged bodies, one mathematical parent and separate canonical review checked
+lattice_wide: no native initialization, Markov or polynomial-mediator import, common-cap, detector, reuse or retained audit certified
+
+----- stderr -----
+

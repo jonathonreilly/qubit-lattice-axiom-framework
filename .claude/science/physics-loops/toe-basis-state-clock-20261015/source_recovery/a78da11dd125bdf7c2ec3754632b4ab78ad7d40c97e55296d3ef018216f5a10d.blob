@@ -1,0 +1,52 @@
+from pathlib import Path
+import datetime,hashlib,json,subprocess
+N=Path(__file__).resolve().parents[1];W=N.parent/'correlation_worktree';D=N/'basis_state_clock_comparison';R=N/'basis_state_clock_root_review'
+now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):return json.loads(Path(p).read_text())
+def write(p,v):assert not p.exists();p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,indent=2)+'\n')
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def git(*a):return subprocess.check_output(['git','-C',str(W),*a]).decode().strip()
+assert pin(D/'REPORT.md')['sha256']=='8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2'
+assert pin(D/'FINAL_FREEZE.json')['sha256']=='6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3'
+f=read(D/'FINAL_FREEZE.json');assert len(f['files'])==42
+for r in f['files']:same(D/r['path'],r)
+assert {str(p.relative_to(D)) for p in D.rglob('*') if p.is_file()}=={r['path'] for r in f['files']}|{'FINAL_FREEZE.json'}
+m=read(D/'SOURCE_MANIFEST.json');assert len(m['sources'])==23
+for r in m['sources']:same(r['original_path'],r);same(D/r['recovery'],r)
+for row in m['canonical_lemma_read_intervals']:
+ b=Path(row['container']).read_bytes()[row['start_byte_inclusive']:row['end_byte_exclusive']]
+ assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256']
+receipts=[]
+for label in ('capture','verify'):
+ p=D/'metadata_runs'/label/'EXECUTION.json';r=read(p);assert r['exit_code']==0 and r['scientific_programs_run']==0
+ for k in ('child_source_at_launch','source_capture','recorder','stdout','stderr'):same(r[k]['path'],r[k])
+ receipts.append(pin(p))
+body='''# Qualified basis-clock source acceptance
+
+Root read the complete 34,647-byte source-exposed comparison, all new metadata capture/verification/seal logic and scope records. The root and pre-exposure independent bodies were previously read at unchanged identities. Their protected/exposed chronology remains distinct; shared model and prior sources limit independence. No numerical or formal science program ran.
+
+Accept the conditional basis-start weighted NN clock, the sharper uniform time-sampling bound tau^2/(2n), complete retained-output Duhamel estimate, explicit NN one-port mediator with full auxiliary inverse and two-excitation corrector, physical phases/norms/scalars and bare-input moments. Accept the separately attributed exposed positive-edge-clock substitution: its full norm is Omega n(n+1), endpoint phase cancels, and the changed F1/F2, scalar and mean are required. The full-space number-potential change is not a free scalar subtraction. The new positive blocks establish positivity directly.
+
+Two qualifications govern every current interpretation: 3n+5 is the declared geometric edge count, not a universal count of nonzero couplings; the controller marginal 2delta holds with arbitrary correlations, whereas using it as the complete joint replacement price requires product independence. For arbitrary old/reference extensions use g(delta)=delta+sqrt(delta(4-3delta)) with the exact unconditioned old marginal. Preserve the original root sentence as dated history, with the correction explicit in the wrapper.
+
+The optional positive release interpolation is a supplied operation. Its error includes the integral of the new runtime sum, its physical duration ages the old state under H_P, and its work/scalar prices remain. Finite-temperature moments differ from pure-comparator moments by full-norm-weighted errors. Keep all compiler timing/phase premises, whole-plant input, clock/auxiliary outputs, input computation promises, whole-lifetime isolation and growing resource prices. No native cooling/preparation, permanent halt, efficient or common-cap controller, physical energy/detector identification, recycling or retained audit is established. Potentially exponential inverse-entry prices remain in these bodies.
+
+The inspection found no remaining blocking algebraic defect at the recorded scope. Publication requires a separate coherent wrapper/source-integrity/integration review. This acceptance changes no physical axioms, editable prompts or audit verdicts.
+'''
+p=R/'ACCEPTANCE.md';assert not p.exists();p.write_text(body)
+write(R/'ACCEPTANCE_PROVENANCE.json',{'utc':now,'comparison':pin(D/'REPORT.md'),'freeze':pin(D/'FINAL_FREEZE.json'),'actual_metadata_receipts':receipts,'pre_exposure_read':pin(R/'PRE_EXPOSURE_READ.json'),'source_members_verified':42,'sources_verified':23,'read_complete':True,'scientific_programs_run':0})
+write(R/'FINAL_FREEZE.json',{'utc':now,'files':[pin(p) for p in sorted(R.iterdir()) if p.is_file()],'scope':'Qualified root source acceptance; publication remains separate'})
+oldpath=N/'main_refresh_1905/REFS.json';old=read(oldpath);newinv=N/'runs/open_inventory_1945/stdout'
+a={r['number']:r for r in read(old['inventory']['path'])};b={r['number']:r for r in read(newinv)}
+actual=[]
+for label in ('main_refresh_1945','open_inventory_1945'):
+ p=N/'runs'/label/'EXECUTION.json';r=read(p);assert r['exit_code']==0
+ for k in ('stdout','stderr'):same(r[k]['path'],r[k])
+ actual.append(pin(p))
+refs={r:git('rev-parse',r) for r in ('HEAD','origin/main','origin/ai/execution')}
+assert refs['HEAD']=='e93bc2b057492d0eef909907708871cb1920fdc6'
+out={'utc':now,'refs':refs,'main':refs['origin/main'],'instructions':refs['origin/ai/execution'],'fetch_scope':'Actual origin/main fetch19:41; instruction ref observed, not fetched anew.','actual_receipts':actual,'inventory':pin(newinv),'previous_refresh':pin(oldpath),'inventory_count':len(b),'inventory_delta':{'new':[b[k] for k in sorted(b.keys()-a.keys())],'removed':[a[k] for k in sorted(a.keys()-b.keys())],'changed':[{'old':a[k],'new':b[k]} for k in sorted(a.keys()&b.keys()) if a[k]!=b[k]]},'external_science':'Previously scoped9612/9614 preserved; inspect any changed/new external head before import.','current_publication':pin(N/'publication_integration/transverse_field/PUBLICATION.json'),'current_attachment':pin(N/'publication_integration/transverse_field/ATTACHMENT.json')}
+write(N/'main_refresh_1945/REFS.json',out)
+print(json.dumps({'acceptance':pin(R/'ACCEPTANCE.md'),'acceptance_freeze':pin(R/'FINAL_FREEZE.json'),'refresh':pin(N/'main_refresh_1945/REFS.json'),'refs':refs,'delta':out['inventory_delta']}))

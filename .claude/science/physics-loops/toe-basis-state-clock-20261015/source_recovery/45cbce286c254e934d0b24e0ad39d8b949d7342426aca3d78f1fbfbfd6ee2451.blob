@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-10-15T19:17:38.187822+00:00",
+  "scope": "Source identity, recovery, receipt and Python AST metadata only; no scientific assertions evaluated",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/DERIVATION.md",
+    "bytes": 29173,
+    "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+  },
+  "source_records_refreshed": 15,
+  "metadata_source_scripts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/capture_sources.py",
+      "bytes": 4475,
+      "sha256": "195ca29023402c8e86457d96e244eaa80305c68ac83f52ff89ce2a63030251b3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/record_metadata.py",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/verify_metadata.py",
+      "bytes": 2318,
+      "sha256": "c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/seal.py",
+      "bytes": 2439,
+      "sha256": "0df4c2fd20f3241765c0ab06c4ef6b88b21095f766e0a4a8dc6822a217c502d8"
+    }
+  ],
+  "actual_capture_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/metadata_runs/capture/EXECUTION.json",
+    "bytes": 2077,
+    "sha256": "3950bad051f9e678a70c47e8b5a9975d6cdd64f70918bef8427a4b504008cf45"
+  },
+  "scientific_programs_run": 0,
+  "root_candidate_accessed": false,
+  "same_model_author_check": true,
+  "independent_review_complete": false,
+  "failures_observed": []
+}

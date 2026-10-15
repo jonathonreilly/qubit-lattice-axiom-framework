@@ -1,0 +1,40 @@
+{
+  "scope": "source/recovery metadata only; no scientific program",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/verify_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent",
+  "start_utc": "2026-10-15T19:17:38.135371+00:00",
+  "end_utc": "2026-10-15T19:17:38.192663+00:00",
+  "elapsed_seconds": 0.05714520812034607,
+  "timeout_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/verify_metadata.py",
+    "bytes": 2318,
+    "sha256": "c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/metadata_runs/verify/executed_source.py",
+    "bytes": 2318,
+    "sha256": "c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/record_metadata.py",
+    "bytes": 2123,
+    "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/metadata_runs/verify/stdout",
+    "bytes": 412,
+    "sha256": "3076dae4499b300e0a43d5e5c47f38aea651df25e6a00c29a767f31479bf2b8f"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/metadata_runs/verify/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_programs_run": 0
+}

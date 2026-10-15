@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 136036,
+      "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+      "claim_id": "single_port_program_and_autonomous_controller_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "controller_author",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 79110,
+          "end_byte_exclusive": 103180,
+          "bytes": 24070,
+          "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "controller_author"
+      ],
+      "review_evidence": [
+        {
+          "name": "controller_assessment",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 103344,
+          "end_byte_exclusive": 136036,
+          "bytes": 32692,
+          "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d"
+        }
+      ],
+      "role": "direct_mathematical_parent",
+      "import_scope": "One-port contraction, full auxiliary reduced inverse, two-excitation corrector and bare-vacuum full-output estimate; new clock and geometry are proved here. No old unary waveform or compiler theorem is silently imported."
+    }
+  ],
+  "canonical_source_pins_complete": true,
+  "actual_new_note_checkout_binding": null,
+  "git_ancestry_is_not_mathematical_dependency": true,
+  "excluded": "The general g(delta) lemma is locally proved; no Markov/Gibbs or alternate polynomial-mediator theorem is imported"
+}

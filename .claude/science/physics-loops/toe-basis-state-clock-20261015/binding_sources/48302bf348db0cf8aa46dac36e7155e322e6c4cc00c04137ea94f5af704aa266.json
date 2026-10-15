@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-15T20:22:06.425526+00:00",
+  "refs": {
+    "HEAD": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "fetch_scope": "Actual origin/main fetch20:21:44\u201345; instruction ref observed, not fetched anew.",
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_2027/EXECUTION.json",
+      "bytes": 1176,
+      "sha256": "62e87a98350226701e84907a2d4eb2139fc82da073747af35d4660752fc67821"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2027/EXECUTION.json",
+      "bytes": 1261,
+      "sha256": "44b047f949494c18c3be903863dbc1d086d26c43e931ce927aeb08032e572f01"
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2027/stdout",
+    "bytes": 18732,
+    "sha256": "c4cf329ed0296e683768ea4713149bf684d38dbbfb2176b0a7dc41c34cd37617"
+  },
+  "previous_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_2002/REFS.json",
+    "bytes": 3911,
+    "sha256": "7cb943ff2b8a8ca88f13dee7fb54510cf36e88c078d6cf65cb6dcf4a9763d43a"
+  },
+  "inventory_count": 48,
+  "inventory_delta": {
+    "new": [
+      {
+        "baseRefName": "physics-loop/toe-single-port-program-and-controller-20261015",
+        "headRefName": "physics-loop/toe-local-gibbs-controller-source-20261015",
+        "headRefOid": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+        "isDraft": false,
+        "number": 9618,
+        "title": "[physics-loop] local-gibbs-controller-source: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9618"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "external_science": "Latest9614 b7898552 fully scoped in main_refresh_2002/EXTERNAL_9614_DELTA; no import. Other source changes require scoped reading before import.",
+  "current_publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/PUBLICATION.json",
+    "bytes": 1582,
+    "sha256": "7ee919bfe0e3c1c318d51d7e38c2363e7eb53daee2815800a9223cc48820a8da"
+  },
+  "current_attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/ATTACHMENT.json",
+    "bytes": 216,
+    "sha256": "375aad4f021790bb4935f6ea5471d4ca96c20dfd85039a143c0c7ed385d1ca40"
+  }
+}

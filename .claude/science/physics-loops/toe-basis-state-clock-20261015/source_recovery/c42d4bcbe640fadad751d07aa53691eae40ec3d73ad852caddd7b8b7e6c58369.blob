@@ -1,0 +1,49 @@
+"""Refresh source/recovery identities and actual receipts; does not test mathematics."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+def verify(path, row):
+    actual = pin(path)
+    assert actual['bytes'] == row['bytes'] and actual['sha256'] == row['sha256'], str(path)
+
+manifest = json.loads((D/'SOURCE_MANIFEST.json').read_text())
+assert manifest['direct_theorem_imports'] == []
+assert manifest['root_candidate_accessed'] is False
+for row in manifest['sources']:
+    verify(Path(row['original_path']), row)
+    verify(D/row['recovery'], row)
+receipt_path = D/'metadata_runs/capture/EXECUTION.json'
+receipt = json.loads(receipt_path.read_text())
+assert receipt['exit_code'] == 0 and receipt['scientific_programs_run'] == 0
+assert receipt['timeout_seconds'] == 60 and receipt['timed_out'] is False
+for key in ('child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr'):
+    verify(Path(receipt[key]['path']), receipt[key])
+assert receipt['source_capture']['sha256'] == receipt['child_source_at_launch']['sha256']
+scripts = []
+for name in ('capture_sources.py', 'record_metadata.py', 'verify_metadata.py', 'seal.py'):
+    data = (D/name).read_bytes()
+    assert data.endswith(b'\n') and not data.endswith(b'\n\n'), name
+    ast.parse(data, filename=name)
+    scripts.append(pin(D/name))
+proof = pin(D/'DERIVATION.md')
+coverage = {
+    'checked_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Source identity, recovery, receipt and Python AST metadata only; no scientific assertions evaluated',
+    'derivation': proof, 'source_records_refreshed': len(manifest['sources']),
+    'metadata_source_scripts': scripts, 'actual_capture_receipt': pin(receipt_path),
+    'scientific_programs_run': 0, 'root_candidate_accessed': False,
+    'same_model_author_check': True, 'independent_review_complete': False,
+    'failures_observed': [],
+}
+(D/'VERIFICATION.json').write_text(json.dumps(coverage, indent=2)+'\n')
+print(json.dumps({'derivation': proof, 'sources': len(manifest['sources']),
+                  'scientific_programs_run': 0, 'scope': coverage['scope']}))

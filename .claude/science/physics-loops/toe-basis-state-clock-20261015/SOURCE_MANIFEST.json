@@ -1,0 +1,805 @@
+{
+  "schema": "portable_source_recovery_v1",
+  "sources": [
+    {
+      "source": "campaign/basis_state_clock_root_candidate/DERIVATION.md",
+      "role": "immutable_proof_or_review_body",
+      "bytes": 23256,
+      "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "root_author",
+        "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 23221,
+        "end_byte_exclusive": 46477
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/DERIVATION.md",
+      "role": "immutable_proof_or_review_body",
+      "bytes": 29173,
+      "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "independent_author",
+        "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 46638,
+        "end_byte_exclusive": 75811
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/REPORT.md",
+      "role": "immutable_proof_or_review_body",
+      "bytes": 34647,
+      "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "comparison",
+        "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 75964,
+        "end_byte_exclusive": 110611
+      }
+    },
+    {
+      "source": "campaign/single_port_autonomous_root_candidate/DERIVATION.md",
+      "role": "direct_parent_complete_proof",
+      "bytes": 24070,
+      "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "controller_author",
+        "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 79110,
+        "end_byte_exclusive": 103180,
+        "bytes": 24070,
+        "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+      }
+    },
+    {
+      "source": "campaign/single_port_autonomous_decisive_check/REPORT.md",
+      "role": "canonical_parent_separate_review_provenance",
+      "bytes": 32692,
+      "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "controller_assessment",
+        "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 103344,
+        "end_byte_exclusive": 136036,
+        "bytes": 32692,
+        "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d"
+      }
+    },
+    {
+      "source": "repository/docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "role": "direct_mathematical_parent",
+      "bytes": 136036,
+      "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+      "recovery": {
+        "kind": "external_pinned",
+        "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      }
+    },
+    {
+      "source": "repository/.claude/science/physics-loops/toe-single-port-program-and-controller-20261015/BODY_MAP.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1459,
+      "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750.blob"
+      }
+    },
+    {
+      "source": "repository/AGENTS.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob"
+      }
+    },
+    {
+      "source": "repository/docs/WRITING_VOICE_GUIDE_2026-04-25.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/FINAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 8419,
+      "sha256": "6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/HANDOFF.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1818,
+      "sha256": "838c0e8b40d8503b099b34085041f0a620ba1639d6ebca25e44f0e265857f098",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/838c0e8b40d8503b099b34085041f0a620ba1639d6ebca25e44f0e265857f098.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/METADATA_REUSE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 338,
+      "sha256": "f1b13f52eaf575e781117694424c7542d507f4d32d6fb62e18ba598c3ba2f99c",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f1b13f52eaf575e781117694424c7542d507f4d32d6fb62e18ba598c3ba2f99c.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/OPERATION_FAILURES.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 609,
+      "sha256": "48ade9aa8c72d772285081c78e09e9db5024df6ed21c87a35db292a81b917eac",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/48ade9aa8c72d772285081c78e09e9db5024df6ed21c87a35db292a81b917eac.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/READ_COVERAGE.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2617,
+      "sha256": "10c6e80c36ce5e4691c045ed2045aba6f78c75e8d5ef7f404e4479a6ea87b95f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/10c6e80c36ce5e4691c045ed2045aba6f78c75e8d5ef7f404e4479a6ea87b95f.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/SEAL_OPERATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 687,
+      "sha256": "d414aea900d8bdc722aca9db3c6975319228a356c87f410108ffb838c6eef30b",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/d414aea900d8bdc722aca9db3c6975319228a356c87f410108ffb838c6eef30b.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/SOURCE_MANIFEST.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 13219,
+      "sha256": "9630198de15c5854a191f3b6d03a9675e771f0eadb6dcf7ae25a7a05571e0eab",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/9630198de15c5854a191f3b6d03a9675e771f0eadb6dcf7ae25a7a05571e0eab.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/VERIFICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2871,
+      "sha256": "f21a22336bab887f898ca2e14c4bd7c58b81f463a739e910cf6755c648d6eca2",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f21a22336bab887f898ca2e14c4bd7c58b81f463a739e910cf6755c648d6eca2.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/capture_sources.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6273,
+      "sha256": "c462e0e6c225a2e28d96423c7959f572f6da902bb6e35298f5893570023697bb",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c462e0e6c225a2e28d96423c7959f572f6da902bb6e35298f5893570023697bb.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/capture/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2070,
+      "sha256": "bd840f812e2e89d9b3c0fdaa63a5c9f6616fef2e9734a7f421b9943a92a769e6",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/bd840f812e2e89d9b3c0fdaa63a5c9f6616fef2e9734a7f421b9943a92a769e6.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/capture/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6273,
+      "sha256": "c462e0e6c225a2e28d96423c7959f572f6da902bb6e35298f5893570023697bb",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c462e0e6c225a2e28d96423c7959f572f6da902bb6e35298f5893570023697bb.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/capture/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/capture/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 601,
+      "sha256": "6ba5444b903db131cad9e44e1f4865f4e9998f15e39e19004495a707dbfcfd47",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/6ba5444b903db131cad9e44e1f4865f4e9998f15e39e19004495a707dbfcfd47.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/verify/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2067,
+      "sha256": "f34115e73bcbdba7df8aa43693adc3baa741cf8754c07810430f9b4bfa2c006a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f34115e73bcbdba7df8aa43693adc3baa741cf8754c07810430f9b4bfa2c006a.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/verify/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2590,
+      "sha256": "b2f0b33b7610bd3a33753dd4c2e1820b27cbffb6db287c8b8dcc9fe396e0286f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/b2f0b33b7610bd3a33753dd4c2e1820b27cbffb6db287c8b8dcc9fe396e0286f.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/verify/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/metadata_runs/verify/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 393,
+      "sha256": "e6941af17176ce0243a2cf8bb03d4e1118841a42eac5c9d1e14e348889e3e7d6",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e6941af17176ce0243a2cf8bb03d4e1118841a42eac5c9d1e14e348889e3e7d6.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/record_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/seal.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2381,
+      "sha256": "e3506bd12cf173c346b9d56efe3a2471ebe54ea8307857b5869a176b4d8ef135",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3506bd12cf173c346b9d56efe3a2471ebe54ea8307857b5869a176b4d8ef135.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_comparison/verify_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2590,
+      "sha256": "b2f0b33b7610bd3a33753dd4c2e1820b27cbffb6db287c8b8dcc9fe396e0286f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/b2f0b33b7610bd3a33753dd4c2e1820b27cbffb6db287c8b8dcc9fe396e0286f.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/EXPOSURE_AND_LIMITS.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 4185,
+      "sha256": "255f34b704d680b169f3fb08e4d9c3e890755161b316b8ed776e96c8c6840909",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/255f34b704d680b169f3fb08e4d9c3e890755161b316b8ed776e96c8c6840909.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/FINAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6845,
+      "sha256": "e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/HANDOFF.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1657,
+      "sha256": "e2a7cfe5890fe5cc14c732c079b18c3d337ec43319a2bf10084a5461d92b0be8",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e2a7cfe5890fe5cc14c732c079b18c3d337ec43319a2bf10084a5461d92b0be8.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/ROUTE_LOG.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1343,
+      "sha256": "3aabd0f8b80c31a0a607033b568493da5618468ab03974cf21be88928fb04c66",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3aabd0f8b80c31a0a607033b568493da5618468ab03974cf21be88928fb04c66.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/SEAL_OPERATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 640,
+      "sha256": "ecaae2e348189870897deab31463076f4a57d53adf700088938dd744b0f56d7f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/ecaae2e348189870897deab31463076f4a57d53adf700088938dd744b0f56d7f.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/SOURCE_MANIFEST.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 8279,
+      "sha256": "0401494d66409ef11862bb304c0b20679a08fb97283e942bf76a0fcdd3127c82",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/0401494d66409ef11862bb304c0b20679a08fb97283e942bf76a0fcdd3127c82.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/START.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 871,
+      "sha256": "58511cc9b6f2ba50d6ac5bf347a13160c46f9adae73f6b1fbfacbc05f0e86eb6",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/58511cc9b6f2ba50d6ac5bf347a13160c46f9adae73f6b1fbfacbc05f0e86eb6.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/VERIFICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2064,
+      "sha256": "45cbce286c254e934d0b24e0ad39d8b949d7342426aca3d78f1fbfbfd6ee2451",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/45cbce286c254e934d0b24e0ad39d8b949d7342426aca3d78f1fbfbfd6ee2451.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/WEB_PRIOR_ART_RESPONSE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 7338,
+      "sha256": "e58d83eedfa33c523ed7163f1441f3ad8083ed54c034b25fb8f10dce05cd24c6",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e58d83eedfa33c523ed7163f1441f3ad8083ed54c034b25fb8f10dce05cd24c6.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/capture_sources.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 4475,
+      "sha256": "195ca29023402c8e86457d96e244eaa80305c68ac83f52ff89ce2a63030251b3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/195ca29023402c8e86457d96e244eaa80305c68ac83f52ff89ce2a63030251b3.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/capture/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2077,
+      "sha256": "3950bad051f9e678a70c47e8b5a9975d6cdd64f70918bef8427a4b504008cf45",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3950bad051f9e678a70c47e8b5a9975d6cdd64f70918bef8427a4b504008cf45.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/capture/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 4475,
+      "sha256": "195ca29023402c8e86457d96e244eaa80305c68ac83f52ff89ce2a63030251b3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/195ca29023402c8e86457d96e244eaa80305c68ac83f52ff89ce2a63030251b3.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/capture/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/capture/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 144,
+      "sha256": "eac8b5827535edc484f7bffec2f1a4dde50dd565cfa489e8311bba8b74bbb30f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/eac8b5827535edc484f7bffec2f1a4dde50dd565cfa489e8311bba8b74bbb30f.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/verify/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2074,
+      "sha256": "7bd23b4adb3c76300c7b3b33720ead918241e5ea4bbca7f253b84320e0c9e276",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/7bd23b4adb3c76300c7b3b33720ead918241e5ea4bbca7f253b84320e0c9e276.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/verify/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2318,
+      "sha256": "c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/verify/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/metadata_runs/verify/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 412,
+      "sha256": "3076dae4499b300e0a43d5e5c47f38aea651df25e6a00c29a767f31479bf2b8f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3076dae4499b300e0a43d5e5c47f38aea651df25e6a00c29a767f31479bf2b8f.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/record_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/seal.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2439,
+      "sha256": "0df4c2fd20f3241765c0ab06c4ef6b88b21095f766e0a4a8dc6822a217c502d8",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/0df4c2fd20f3241765c0ab06c4ef6b88b21095f766e0a4a8dc6822a217c502d8.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_independent/verify_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2318,
+      "sha256": "c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_publication_draft/INITIAL_PARENT_BINDING.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 260,
+      "sha256": "150f26829933c8e50b4e478a3a73f03643d58a9c557f8b0108c4e160965abc09",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/150f26829933c8e50b4e478a3a73f03643d58a9c557f8b0108c4e160965abc09.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_publication_draft/PARENT_ATTACHMENT.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 216,
+      "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_publication_draft/PARENT_BINDING.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1651,
+      "sha256": "2166582528c535897147977b8af3e242a804f22f26807207555a7cf2165bb31a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/2166582528c535897147977b8af3e242a804f22f26807207555a7cf2165bb31a.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_publication_draft/PARENT_BODY_MAP.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1459,
+      "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_publication_draft/PARENT_METADATA_ORIGINS.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2017,
+      "sha256": "f1b04a745d3c321e555a98f77477cc43d6d87c9a89da153dd5870c78ebe99c3e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f1b04a745d3c321e555a98f77477cc43d6d87c9a89da153dd5870c78ebe99c3e.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_publication_draft/PARENT_PUBLICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1620,
+      "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_root_candidate/PROPOSAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 687,
+      "sha256": "a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_root_candidate/SOURCE_PINS.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2261,
+      "sha256": "51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_root_review/ACCEPTANCE.md",
+      "role": "root_conditional_source_acceptance",
+      "bytes": 2495,
+      "sha256": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_root_review/ACCEPTANCE_PROVENANCE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1601,
+      "sha256": "a1bf65adc47df4d744be70319fbd828471666b747fe8a8b8a92b68954007791c",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/a1bf65adc47df4d744be70319fbd828471666b747fe8a8b8a92b68954007791c.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_root_review/FINAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 965,
+      "sha256": "32f1392f32f798df3e4eb1db4a096b558de45c465295b27c3977c0faa5a1f81f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/32f1392f32f798df3e4eb1db4a096b558de45c465295b27c3977c0faa5a1f81f.blob"
+      }
+    },
+    {
+      "source": "campaign/basis_state_clock_root_review/PRE_EXPOSURE_READ.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1620,
+      "sha256": "5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149.blob"
+      }
+    },
+    {
+      "source": "campaign/bootstrap/review_basis_and_refresh_1945.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6439,
+      "sha256": "a78da11dd125bdf7c2ec3754632b4ab78ad7d40c97e55296d3ef018216f5a10d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/a78da11dd125bdf7c2ec3754632b4ab78ad7d40c97e55296d3ef018216f5a10d.blob"
+      }
+    },
+    {
+      "source": "campaign/bootstrap/review_frontiers_1926.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 7690,
+      "sha256": "1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5.blob"
+      }
+    },
+    {
+      "source": "campaign/publication_integration/single_port_program_and_controller/ATTACHMENT.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 216,
+      "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922.blob"
+      }
+    },
+    {
+      "source": "campaign/publication_integration/single_port_program_and_controller/PUBLICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1620,
+      "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db.blob"
+      }
+    },
+    {
+      "source": "campaign/run.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/basis_review_and_refresh_1945/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1451,
+      "sha256": "d236aa3e37c9efddc01ec30cce13ba7c2323d439c86fdde1d81445bfe00b05a1",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/d236aa3e37c9efddc01ec30cce13ba7c2323d439c86fdde1d81445bfe00b05a1.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/basis_review_and_refresh_1945/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6439,
+      "sha256": "a78da11dd125bdf7c2ec3754632b4ab78ad7d40c97e55296d3ef018216f5a10d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/a78da11dd125bdf7c2ec3754632b4ab78ad7d40c97e55296d3ef018216f5a10d.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/basis_review_and_refresh_1945/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/basis_review_and_refresh_1945/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1394,
+      "sha256": "2f7b36b683ef29e99b4c3e336ba292bd54ac7dbe83afea4dd1e6016919714c45",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/2f7b36b683ef29e99b4c3e336ba292bd54ac7dbe83afea4dd1e6016919714c45.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/review_frontiers_1926/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1418,
+      "sha256": "75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/review_frontiers_1926/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 7690,
+      "sha256": "1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/review_frontiers_1926/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/review_frontiers_1926/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 804,
+      "sha256": "2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87.blob"
+      }
+    }
+  ],
+  "scope": "Three exact bodies, one canonical mediator parent with exact proof/review extraction, selected recoverable metadata; no recursive publication archive"
+}

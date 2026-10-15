@@ -1,0 +1,1032 @@
+{
+  "frozen_utc": "2026-10-15T20:07:36.778621+00:00",
+  "scope": "Complete source-only draft, exact selected recovery and actual metadata receipts; no scientific or primary execution",
+  "immutable_bodies": 3,
+  "mathematical_parents": 1,
+  "actual_binding": null,
+  "primary_execution": null,
+  "scientific_programs_run": 0,
+  "polynomial_mediator_imported": false,
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/BUILD_RESULT.json",
+      "bytes": 587,
+      "sha256": "1a095ef0de860a20a409ec420f14a81c75ece4fc1039b0d8813daa87b5d6bb80"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/CHANGED_CODE.patch",
+      "bytes": 86514,
+      "sha256": "1b98aa90b230cdc53ed8d4ec32d734ad332bf60574a38cb4d1e1b199ba762311"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/CHANGED_PAYLOAD.patch",
+      "bytes": 264196,
+      "sha256": "d912a88cbc02e58be80b26b166f8fc9e41306b8ed01705e23522e1c4c7acb641"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/DELIVERY.json",
+      "bytes": 2273,
+      "sha256": "71bdca405e9b9abc5f30a72523f6d36086d7a93dd51a86ad6fb445f26382601e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/HANDOFF.md",
+      "bytes": 1336,
+      "sha256": "a6643c81361d4fea5a12a584da33aa7c4d26e3b916240736cc2b72094d932581"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/INITIAL_PARENT_BINDING.json",
+      "bytes": 260,
+      "sha256": "150f26829933c8e50b4e478a3a73f03643d58a9c557f8b0108c4e160965abc09"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/METADATA_FAILURES.md",
+      "bytes": 1074,
+      "sha256": "b69d02e126b8a583918781b128530e5a96c8e65fd343277296590afbd413427d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/PARENT_ATTACHMENT.json",
+      "bytes": 216,
+      "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/PARENT_BINDING.json",
+      "bytes": 1651,
+      "sha256": "2166582528c535897147977b8af3e242a804f22f26807207555a7cf2165bb31a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/PARENT_BODY_MAP.json",
+      "bytes": 1459,
+      "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/PARENT_METADATA_ORIGINS.json",
+      "bytes": 2017,
+      "sha256": "f1b04a745d3c321e555a98f77477cc43d6d87c9a89da153dd5870c78ebe99c3e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/PARENT_PUBLICATION.json",
+      "bytes": 1620,
+      "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/PAYLOAD_CHANGE_INDEX.json",
+      "bytes": 30553,
+      "sha256": "c5593a186bd88202d8de53b246513feb7377d4ce907e268cee70375d3c17ee21"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/READ_COVERAGE.md",
+      "bytes": 3600,
+      "sha256": "93cc23ad00d92ea1887040dc88fae9b7061f7779520ed3b99b44d682aa90ffb0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/REFERENCE_PINS.json",
+      "bytes": 1876,
+      "sha256": "4e4d6b04a6fa684ad1ce7b4466a0634976854e42eff6baef99991dac2ce347f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/REUSE_MAP.json",
+      "bytes": 28995,
+      "sha256": "68c2e68604d41804b56d59c25f89d29ebd518d0f3cf7bdd37ba3be6948799f33"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/ROOT_READ_GUIDE.md",
+      "bytes": 1847,
+      "sha256": "9daadb2306fc5821c4aa9d3b0dab7a6baa29851f97f129bc32c94226ff09446b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/SCRIPT_MAP.json",
+      "bytes": 1952,
+      "sha256": "d087e21069641161ed07c12163f7e3b5e5f995e065b687e8f79e8e05076b8465"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/SEAL_OPERATION.json",
+      "bytes": 424,
+      "sha256": "405ebd868c9c4b0dd2f905cbe1d20097bec441ebe8e01194c62189a8ba4544be"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/SELECTED_FREEZES.json",
+      "bytes": 548,
+      "sha256": "6671a4afb1ee2c26a684f6a33f8d874ea715143b935587316b10861e111bf34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/SOURCE_FRESHNESS.json",
+      "bytes": 23215,
+      "sha256": "769fdda2c4e16d6d293c226eb4564e11f5a015babb55ab889806b33e7df32bd8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/START.md",
+      "bytes": 831,
+      "sha256": "e19e4b8b3774ed35c3780b8c8b113740cf693a82664c6c6e39e298888a8fae85"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/VERIFICATION.json",
+      "bytes": 4196,
+      "sha256": "6b0817db7dfc0fae29f75d9bedc0c8f89ad00bd9a8eab10989661add9e256ac6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/build_proposal.py",
+      "bytes": 14323,
+      "sha256": "605a94e0be8be481d52665b76c9de0b3af6c9937bf42e1d8b82104dfbacc3553"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/inspect_proposal.py",
+      "bytes": 13120,
+      "sha256": "efd6063f2ff58a5ff2d4aa783dfff6ece6d0f1f70f82418781af0755d90e0e24"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 2083,
+      "sha256": "bc2393794dcb709d4eb71ebf5f3045571722692bac1baff1c6670e7d8fb42c9c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/LAUNCH.json",
+      "bytes": 10200,
+      "sha256": "85a37447e7bcc964c89bb64c0784421ad86f5cf692ab2d35279939026181cdb7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/executed_source.py",
+      "bytes": 14323,
+      "sha256": "605a94e0be8be481d52665b76c9de0b3af6c9937bf42e1d8b82104dfbacc3553"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/PARENT_BINDING.json",
+      "bytes": 1651,
+      "sha256": "2166582528c535897147977b8af3e242a804f22f26807207555a7cf2165bb31a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/REFERENCE_PINS.json",
+      "bytes": 1876,
+      "sha256": "4e4d6b04a6fa684ad1ce7b4466a0634976854e42eff6baef99991dac2ce347f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/SELECTED_FREEZES.json",
+      "bytes": 548,
+      "sha256": "6671a4afb1ee2c26a684f6a33f8d874ea715143b935587316b10861e111bf34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2147,
+      "sha256": "fb0dd2cf5627fe187a5f713b0afdf98bd997fe302620bea6f7b44b59a4a2dcf9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2201,
+      "sha256": "b0011cae2caeabde29601c12743f55a98c0345a363846e37b445113dd870859a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1135,
+      "sha256": "281cdcda36eb94c3f12ae362f87bc96233e6e5bf43aef2b83124a9f854ca6997"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1686,
+      "sha256": "fb5e5a6af91935cc2f9ce65a18adb528b0e6821300f0bebe8a01b5a7e5b11176"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/HANDOFF.md",
+      "bytes": 1412,
+      "sha256": "3382108cdde13e48643de2f4b5874d1f295fa3ff987f04a74ae91171d53e8b65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/PR_BODY.md",
+      "bytes": 1315,
+      "sha256": "c0577c4cb10c98b204d4f60e26496afd207858d3714788daf548d3def519fcb4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1325,
+      "sha256": "69a30177b7303de475bc15674d607460ff8d6e9259516db41a6cd21388eee34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3919,
+      "sha256": "9da54e08e42faef53ff7741885039bcff8f2ed2474cff2957facd1fd3c5f3a5a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/packet_text/TRACE_GATE.md",
+      "bytes": 1316,
+      "sha256": "55183f9b844e9707ae7b4000d49ffca2e05c8a5f1196677132b8609fe814a647"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/primary_template.py",
+      "bytes": 13171,
+      "sha256": "f1da5c0216625ab14096ca17c407d46140c51cef0796ab8c44980bd6a2ae44fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/inputs/wrapper.md",
+      "bytes": 22678,
+      "sha256": "a6ba3e197b884b85e6ad35c986c63bc21237ea886211697a5b40de9d64ffc60e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/recorder_source.py",
+      "bytes": 2618,
+      "sha256": "43eee6c724ffd3e76e845789975b5dac794afd214bc0ca8a89c60454faab06e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/stdout",
+      "bytes": 588,
+      "sha256": "a53ec3188bb9357331f37a2274eec091a76b9681ac3d0553e034d990aa99b73f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/EXECUTION.json",
+      "bytes": 2143,
+      "sha256": "8927a376c891038ea6e09c818656e53e7f54be4cb399a2b4e08eefa3b89e97c7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/LAUNCH.json",
+      "bytes": 7106,
+      "sha256": "37435efc3eb9f0fd059a8f0f1ff12f8ef986946b0fe95b36d15acaecceb14a26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/executed_source.py",
+      "bytes": 10559,
+      "sha256": "01b059a37ecbee4af4b97207c650e2392680d650ac7e127e4961cb52852a7afc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/PARENT_BINDING.json",
+      "bytes": 260,
+      "sha256": "150f26829933c8e50b4e478a3a73f03643d58a9c557f8b0108c4e160965abc09"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/REFERENCE_PINS.json",
+      "bytes": 1876,
+      "sha256": "4e4d6b04a6fa684ad1ce7b4466a0634976854e42eff6baef99991dac2ce347f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/SELECTED_FREEZES.json",
+      "bytes": 548,
+      "sha256": "6671a4afb1ee2c26a684f6a33f8d874ea715143b935587316b10861e111bf34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/reference_scripts/build_proposal.py",
+      "bytes": 15261,
+      "sha256": "d3db35865a0fa07a9e41606a977ec91c1b70c253c17b186b1141935d4351f83e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/reference_scripts/inspect_proposal.py",
+      "bytes": 12924,
+      "sha256": "85dafa005ca97e165310157dd117d7e901a8772bc75bf8be755436ce10550db4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/reference_scripts/primary_template.py",
+      "bytes": 13357,
+      "sha256": "57a4a909d6285690d17687e1dd1154615de751f4e726c2304cab30bc557ac4cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/reference_scripts/record_metadata.py",
+      "bytes": 2433,
+      "sha256": "96c5ebbdcbe83ec482e8e5d3f10e42b9d738557dcb6c04c42e089e0d8fc686ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/reference_scripts/seal_packet.py",
+      "bytes": 5350,
+      "sha256": "3cbb997b788e8cdf96b7430d8e68b099f8f292b0026c4c0a7701b775c644adc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/inputs/wrapper.md",
+      "bytes": 21933,
+      "sha256": "f90e855d951c0d141b504e8a3c6eafccf0edd6706fa634a24f3a34bcd45c7675"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/recorder_source.py",
+      "bytes": 2618,
+      "sha256": "43eee6c724ffd3e76e845789975b5dac794afd214bc0ca8a89c60454faab06e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/stdout",
+      "bytes": 339,
+      "sha256": "9d3bc9b0607718595a814421bc9832b8a45568c4522ec67ef2d369e088fa3f39"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/EXECUTION.json",
+      "bytes": 2210,
+      "sha256": "92991545c8d8b4039107b0c0d165e1c96874229c7a436c527c6573c9877bb5cb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/LAUNCH.json",
+      "bytes": 14099,
+      "sha256": "577d33f3b9e93b59d8564de3576fd90ff6bef5990cdcd409e7f0051ff087ab1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/executed_source.py",
+      "bytes": 14076,
+      "sha256": "196a1270fd696257e18d303a053726534661d149ea5b45b626056ea5840640dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/PARENT_BINDING.json",
+      "bytes": 260,
+      "sha256": "150f26829933c8e50b4e478a3a73f03643d58a9c557f8b0108c4e160965abc09"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/REFERENCE_PINS.json",
+      "bytes": 1876,
+      "sha256": "4e4d6b04a6fa684ad1ce7b4466a0634976854e42eff6baef99991dac2ce347f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/SELECTED_FREEZES.json",
+      "bytes": 548,
+      "sha256": "6671a4afb1ee2c26a684f6a33f8d874ea715143b935587316b10861e111bf34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2143,
+      "sha256": "9f9fb7591cd06fb02c35f140547e125334f57e66ca73b2873db70e7506ccd7ff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2200,
+      "sha256": "a1aac7ca360e6028379061ed87589024ab51bfb86c683f7c8200f46bb064bdfd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1132,
+      "sha256": "db01bc2ca8f7e54d0c72fc70519bf965baab96d94d880c001bfd9d09c6e38e40"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1682,
+      "sha256": "ac581cd6ed713b2443d7142dcfe507c0c0a81bc536c5f48077c683f6f011239d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/HANDOFF.md",
+      "bytes": 1409,
+      "sha256": "c766ef4d09dd4c72e120806ad486b661113726b7bc4cb16ddc87ff3af0224b7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/PR_BODY.md",
+      "bytes": 1312,
+      "sha256": "4bb83d1873c6a449b32ef46b06946b42da15f99297ddc84daf036647cd5b54f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1325,
+      "sha256": "69a30177b7303de475bc15674d607460ff8d6e9259516db41a6cd21388eee34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3910,
+      "sha256": "958fc3ec70fba6da1fefef03c240caa9e632120974ebe1562ad46644c8d93472"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/packet_text/TRACE_GATE.md",
+      "bytes": 1315,
+      "sha256": "4966796c455dc8e1e52d46288f84902271ca1b0ad2559a92545c02da138773e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/primary_template.py",
+      "bytes": 13171,
+      "sha256": "f1da5c0216625ab14096ca17c407d46140c51cef0796ab8c44980bd6a2ae44fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/reference_scripts/build_proposal.py",
+      "bytes": 15261,
+      "sha256": "d3db35865a0fa07a9e41606a977ec91c1b70c253c17b186b1141935d4351f83e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/reference_scripts/inspect_proposal.py",
+      "bytes": 12924,
+      "sha256": "85dafa005ca97e165310157dd117d7e901a8772bc75bf8be755436ce10550db4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/reference_scripts/primary_template.py",
+      "bytes": 13357,
+      "sha256": "57a4a909d6285690d17687e1dd1154615de751f4e726c2304cab30bc557ac4cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/reference_scripts/record_metadata.py",
+      "bytes": 2433,
+      "sha256": "96c5ebbdcbe83ec482e8e5d3f10e42b9d738557dcb6c04c42e089e0d8fc686ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/reference_scripts/seal_packet.py",
+      "bytes": 5350,
+      "sha256": "3cbb997b788e8cdf96b7430d8e68b099f8f292b0026c4c0a7701b775c644adc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/inputs/wrapper.md",
+      "bytes": 22350,
+      "sha256": "6360c16a37e037088d4b857a03d274d71dc5d4174cd44d79ab5338b59c3aadea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/recorder_source.py",
+      "bytes": 2618,
+      "sha256": "43eee6c724ffd3e76e845789975b5dac794afd214bc0ca8a89c60454faab06e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/stdout",
+      "bytes": 339,
+      "sha256": "e41cb0036273301d0174b55b4ef5bbed497b1f02e0371f4a564964978dc34b53"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/EXECUTION.json",
+      "bytes": 2140,
+      "sha256": "2d9efb052e82eba028ea69f65a13183b79659a5c724f9f8a471b1e8defe997c3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/LAUNCH.json",
+      "bytes": 10378,
+      "sha256": "d3694ea8b86b4ee2132b1dc508939fdce867e4de75b323f1923f4d8afbf0f0ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/executed_source.py",
+      "bytes": 13120,
+      "sha256": "efd6063f2ff58a5ff2d4aa783dfff6ece6d0f1f70f82418781af0755d90e0e24"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/PARENT_BINDING.json",
+      "bytes": 1651,
+      "sha256": "2166582528c535897147977b8af3e242a804f22f26807207555a7cf2165bb31a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/REFERENCE_PINS.json",
+      "bytes": 1876,
+      "sha256": "4e4d6b04a6fa684ad1ce7b4466a0634976854e42eff6baef99991dac2ce347f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/SELECTED_FREEZES.json",
+      "bytes": 548,
+      "sha256": "6671a4afb1ee2c26a684f6a33f8d874ea715143b935587316b10861e111bf34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2147,
+      "sha256": "fb0dd2cf5627fe187a5f713b0afdf98bd997fe302620bea6f7b44b59a4a2dcf9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2201,
+      "sha256": "b0011cae2caeabde29601c12743f55a98c0345a363846e37b445113dd870859a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1135,
+      "sha256": "281cdcda36eb94c3f12ae362f87bc96233e6e5bf43aef2b83124a9f854ca6997"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1686,
+      "sha256": "fb5e5a6af91935cc2f9ce65a18adb528b0e6821300f0bebe8a01b5a7e5b11176"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/HANDOFF.md",
+      "bytes": 1412,
+      "sha256": "3382108cdde13e48643de2f4b5874d1f295fa3ff987f04a74ae91171d53e8b65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/PR_BODY.md",
+      "bytes": 1315,
+      "sha256": "c0577c4cb10c98b204d4f60e26496afd207858d3714788daf548d3def519fcb4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1325,
+      "sha256": "69a30177b7303de475bc15674d607460ff8d6e9259516db41a6cd21388eee34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3919,
+      "sha256": "9da54e08e42faef53ff7741885039bcff8f2ed2474cff2957facd1fd3c5f3a5a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/packet_text/TRACE_GATE.md",
+      "bytes": 1316,
+      "sha256": "55183f9b844e9707ae7b4000d49ffca2e05c8a5f1196677132b8609fe814a647"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/primary_template.py",
+      "bytes": 13171,
+      "sha256": "f1da5c0216625ab14096ca17c407d46140c51cef0796ab8c44980bd6a2ae44fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/inputs/wrapper.md",
+      "bytes": 22678,
+      "sha256": "a6ba3e197b884b85e6ad35c986c63bc21237ea886211697a5b40de9d64ffc60e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/recorder_source.py",
+      "bytes": 2618,
+      "sha256": "43eee6c724ffd3e76e845789975b5dac794afd214bc0ca8a89c60454faab06e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/stdout",
+      "bytes": 362,
+      "sha256": "2a9b67d4cc469c76c05f12c43590578ffba51e55d4a32d02b3923058e16ec06f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2147,
+      "sha256": "fb0dd2cf5627fe187a5f713b0afdf98bd997fe302620bea6f7b44b59a4a2dcf9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2201,
+      "sha256": "b0011cae2caeabde29601c12743f55a98c0345a363846e37b445113dd870859a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1135,
+      "sha256": "281cdcda36eb94c3f12ae362f87bc96233e6e5bf43aef2b83124a9f854ca6997"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1686,
+      "sha256": "fb5e5a6af91935cc2f9ce65a18adb528b0e6821300f0bebe8a01b5a7e5b11176"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/HANDOFF.md",
+      "bytes": 1412,
+      "sha256": "3382108cdde13e48643de2f4b5874d1f295fa3ff987f04a74ae91171d53e8b65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/PR_BODY.md",
+      "bytes": 1315,
+      "sha256": "c0577c4cb10c98b204d4f60e26496afd207858d3714788daf548d3def519fcb4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1325,
+      "sha256": "69a30177b7303de475bc15674d607460ff8d6e9259516db41a6cd21388eee34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3919,
+      "sha256": "9da54e08e42faef53ff7741885039bcff8f2ed2474cff2957facd1fd3c5f3a5a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/TRACE_GATE.md",
+      "bytes": 1316,
+      "sha256": "55183f9b844e9707ae7b4000d49ffca2e05c8a5f1196677132b8609fe814a647"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/prepare_sources.py",
+      "bytes": 14076,
+      "sha256": "196a1270fd696257e18d303a053726534661d149ea5b45b626056ea5840640dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/primary_template.py",
+      "bytes": 13171,
+      "sha256": "f1da5c0216625ab14096ca17c407d46140c51cef0796ab8c44980bd6a2ae44fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/ACTUAL_BINDING.json",
+      "bytes": 331,
+      "sha256": "1d3f1e07317131a0ae82240385336a1dfd147055f7c70b8ec80ef1092624fd5a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/ARCHIVE_INDEX.json",
+      "bytes": 22834,
+      "sha256": "2a1c8591449898d0244f3c52595c36c0b919c7d5628f1f2844dcdecd5702c0b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2147,
+      "sha256": "fb0dd2cf5627fe187a5f713b0afdf98bd997fe302620bea6f7b44b59a4a2dcf9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/BINDING_CONTRACT.md",
+      "bytes": 2201,
+      "sha256": "b0011cae2caeabde29601c12743f55a98c0345a363846e37b445113dd870859a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/BODY_MAP.json",
+      "bytes": 1032,
+      "sha256": "4885b17533473916dd38815d4a4b3d44a5e854761e22aaa77508eb93008b9638"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/CANONICAL_BINDING.json",
+      "bytes": 472,
+      "sha256": "57737b15d2dc0cfda865e57fed7323285e23eb0e3709669f0f2ef3e352e276dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1135,
+      "sha256": "281cdcda36eb94c3f12ae362f87bc96233e6e5bf43aef2b83124a9f854ca6997"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/COUNTEREXAMPLES.md",
+      "bytes": 1686,
+      "sha256": "fb5e5a6af91935cc2f9ce65a18adb528b0e6821300f0bebe8a01b5a7e5b11176"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/DEPENDENCIES.json",
+      "bytes": 1807,
+      "sha256": "776ddc063852472676fa711e88803f5dadcd6625ab8acd16513d600b3cc2d166"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/HANDOFF.md",
+      "bytes": 1412,
+      "sha256": "3382108cdde13e48643de2f4b5874d1f295fa3ff987f04a74ae91171d53e8b65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/INPUT_MANIFEST.json",
+      "bytes": 20065,
+      "sha256": "53d99535d4d588006344ff86938a9946d9142d2894bccf11e5e0edfc1981f616"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/PR_BODY.md",
+      "bytes": 1315,
+      "sha256": "c0577c4cb10c98b204d4f60e26496afd207858d3714788daf548d3def519fcb4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/PR_TITLE.txt",
+      "bytes": 72,
+      "sha256": "d53ab558697a8f462e40177b5efbc463d4de87c67d04fb2e4321b06f332b0ed8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/PUBLICATION_STATE.json",
+      "bytes": 555,
+      "sha256": "094998110c21440251b10b442c0d751d100f5aaaafa3f32d7f2a404d61600254"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/RECOVERY_SCOPE.md",
+      "bytes": 1325,
+      "sha256": "69a30177b7303de475bc15674d607460ff8d6e9259516db41a6cd21388eee34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/RECOVERY_SELECTION.json",
+      "bytes": 59785,
+      "sha256": "1bf6b425a95ae65ac8c21dd9746916193bd9110202215e14bffd208c96c17f09"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/REVIEW_HISTORY.md",
+      "bytes": 3919,
+      "sha256": "9da54e08e42faef53ff7741885039bcff8f2ed2474cff2957facd1fd3c5f3a5a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/SOURCE_MANIFEST.json",
+      "bytes": 38362,
+      "sha256": "5c04aa17bbea6edc7b0ea75d4b102fe3693cb5a8d9237d1e97ab2bdf8179a25c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/TRACE_GATE.md",
+      "bytes": 1316,
+      "sha256": "55183f9b844e9707ae7b4000d49ffca2e05c8a5f1196677132b8609fe814a647"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/0401494d66409ef11862bb304c0b20679a08fb97283e942bf76a0fcdd3127c82.blob",
+      "bytes": 8279,
+      "sha256": "0401494d66409ef11862bb304c0b20679a08fb97283e942bf76a0fcdd3127c82"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/0df4c2fd20f3241765c0ab06c4ef6b88b21095f766e0a4a8dc6822a217c502d8.blob",
+      "bytes": 2439,
+      "sha256": "0df4c2fd20f3241765c0ab06c4ef6b88b21095f766e0a4a8dc6822a217c502d8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/10c6e80c36ce5e4691c045ed2045aba6f78c75e8d5ef7f404e4479a6ea87b95f.blob",
+      "bytes": 2617,
+      "sha256": "10c6e80c36ce5e4691c045ed2045aba6f78c75e8d5ef7f404e4479a6ea87b95f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/150f26829933c8e50b4e478a3a73f03643d58a9c557f8b0108c4e160965abc09.blob",
+      "bytes": 260,
+      "sha256": "150f26829933c8e50b4e478a3a73f03643d58a9c557f8b0108c4e160965abc09"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0.blob",
+      "bytes": 2495,
+      "sha256": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/195ca29023402c8e86457d96e244eaa80305c68ac83f52ff89ce2a63030251b3.blob",
+      "bytes": 4475,
+      "sha256": "195ca29023402c8e86457d96e244eaa80305c68ac83f52ff89ce2a63030251b3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5.blob",
+      "bytes": 7690,
+      "sha256": "1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/2166582528c535897147977b8af3e242a804f22f26807207555a7cf2165bb31a.blob",
+      "bytes": 1651,
+      "sha256": "2166582528c535897147977b8af3e242a804f22f26807207555a7cf2165bb31a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/255f34b704d680b169f3fb08e4d9c3e890755161b316b8ed776e96c8c6840909.blob",
+      "bytes": 4185,
+      "sha256": "255f34b704d680b169f3fb08e4d9c3e890755161b316b8ed776e96c8c6840909"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87.blob",
+      "bytes": 804,
+      "sha256": "2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/2f7b36b683ef29e99b4c3e336ba292bd54ac7dbe83afea4dd1e6016919714c45.blob",
+      "bytes": 1394,
+      "sha256": "2f7b36b683ef29e99b4c3e336ba292bd54ac7dbe83afea4dd1e6016919714c45"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3076dae4499b300e0a43d5e5c47f38aea651df25e6a00c29a767f31479bf2b8f.blob",
+      "bytes": 412,
+      "sha256": "3076dae4499b300e0a43d5e5c47f38aea651df25e6a00c29a767f31479bf2b8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/32f1392f32f798df3e4eb1db4a096b558de45c465295b27c3977c0faa5a1f81f.blob",
+      "bytes": 965,
+      "sha256": "32f1392f32f798df3e4eb1db4a096b558de45c465295b27c3977c0faa5a1f81f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3950bad051f9e678a70c47e8b5a9975d6cdd64f70918bef8427a4b504008cf45.blob",
+      "bytes": 2077,
+      "sha256": "3950bad051f9e678a70c47e8b5a9975d6cdd64f70918bef8427a4b504008cf45"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3aabd0f8b80c31a0a607033b568493da5618468ab03974cf21be88928fb04c66.blob",
+      "bytes": 1343,
+      "sha256": "3aabd0f8b80c31a0a607033b568493da5618468ab03974cf21be88928fb04c66"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.blob",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/45cbce286c254e934d0b24e0ad39d8b949d7342426aca3d78f1fbfbfd6ee2451.blob",
+      "bytes": 2064,
+      "sha256": "45cbce286c254e934d0b24e0ad39d8b949d7342426aca3d78f1fbfbfd6ee2451"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/48ade9aa8c72d772285081c78e09e9db5024df6ed21c87a35db292a81b917eac.blob",
+      "bytes": 609,
+      "sha256": "48ade9aa8c72d772285081c78e09e9db5024df6ed21c87a35db292a81b917eac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d.blob",
+      "bytes": 2261,
+      "sha256": "51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922.blob",
+      "bytes": 216,
+      "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/58511cc9b6f2ba50d6ac5bf347a13160c46f9adae73f6b1fbfacbc05f0e86eb6.blob",
+      "bytes": 871,
+      "sha256": "58511cc9b6f2ba50d6ac5bf347a13160c46f9adae73f6b1fbfacbc05f0e86eb6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149.blob",
+      "bytes": 1620,
+      "sha256": "5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/6ba5444b903db131cad9e44e1f4865f4e9998f15e39e19004495a707dbfcfd47.blob",
+      "bytes": 601,
+      "sha256": "6ba5444b903db131cad9e44e1f4865f4e9998f15e39e19004495a707dbfcfd47"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3.blob",
+      "bytes": 8419,
+      "sha256": "6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e.blob",
+      "bytes": 1418,
+      "sha256": "75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/7bd23b4adb3c76300c7b3b33720ead918241e5ea4bbca7f253b84320e0c9e276.blob",
+      "bytes": 2074,
+      "sha256": "7bd23b4adb3c76300c7b3b33720ead918241e5ea4bbca7f253b84320e0c9e276"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/838c0e8b40d8503b099b34085041f0a620ba1639d6ebca25e44f0e265857f098.blob",
+      "bytes": 1818,
+      "sha256": "838c0e8b40d8503b099b34085041f0a620ba1639d6ebca25e44f0e265857f098"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/9630198de15c5854a191f3b6d03a9675e771f0eadb6dcf7ae25a7a05571e0eab.blob",
+      "bytes": 13219,
+      "sha256": "9630198de15c5854a191f3b6d03a9675e771f0eadb6dcf7ae25a7a05571e0eab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/a1bf65adc47df4d744be70319fbd828471666b747fe8a8b8a92b68954007791c.blob",
+      "bytes": 1601,
+      "sha256": "a1bf65adc47df4d744be70319fbd828471666b747fe8a8b8a92b68954007791c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea.blob",
+      "bytes": 687,
+      "sha256": "a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/a78da11dd125bdf7c2ec3754632b4ab78ad7d40c97e55296d3ef018216f5a10d.blob",
+      "bytes": 6439,
+      "sha256": "a78da11dd125bdf7c2ec3754632b4ab78ad7d40c97e55296d3ef018216f5a10d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/b2f0b33b7610bd3a33753dd4c2e1820b27cbffb6db287c8b8dcc9fe396e0286f.blob",
+      "bytes": 2590,
+      "sha256": "b2f0b33b7610bd3a33753dd4c2e1820b27cbffb6db287c8b8dcc9fe396e0286f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/bd840f812e2e89d9b3c0fdaa63a5c9f6616fef2e9734a7f421b9943a92a769e6.blob",
+      "bytes": 2070,
+      "sha256": "bd840f812e2e89d9b3c0fdaa63a5c9f6616fef2e9734a7f421b9943a92a769e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369.blob",
+      "bytes": 2318,
+      "sha256": "c42d4bcbe640fadad751d07aa53691eae40ec3d73ad852caddd7b8b7e6c58369"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c462e0e6c225a2e28d96423c7959f572f6da902bb6e35298f5893570023697bb.blob",
+      "bytes": 6273,
+      "sha256": "c462e0e6c225a2e28d96423c7959f572f6da902bb6e35298f5893570023697bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.blob",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/d236aa3e37c9efddc01ec30cce13ba7c2323d439c86fdde1d81445bfe00b05a1.blob",
+      "bytes": 1451,
+      "sha256": "d236aa3e37c9efddc01ec30cce13ba7c2323d439c86fdde1d81445bfe00b05a1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/d414aea900d8bdc722aca9db3c6975319228a356c87f410108ffb838c6eef30b.blob",
+      "bytes": 687,
+      "sha256": "d414aea900d8bdc722aca9db3c6975319228a356c87f410108ffb838c6eef30b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750.blob",
+      "bytes": 1459,
+      "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db.blob",
+      "bytes": 1620,
+      "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e2a7cfe5890fe5cc14c732c079b18c3d337ec43319a2bf10084a5461d92b0be8.blob",
+      "bytes": 1657,
+      "sha256": "e2a7cfe5890fe5cc14c732c079b18c3d337ec43319a2bf10084a5461d92b0be8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3506bd12cf173c346b9d56efe3a2471ebe54ea8307857b5869a176b4d8ef135.blob",
+      "bytes": 2381,
+      "sha256": "e3506bd12cf173c346b9d56efe3a2471ebe54ea8307857b5869a176b4d8ef135"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e58d83eedfa33c523ed7163f1441f3ad8083ed54c034b25fb8f10dce05cd24c6.blob",
+      "bytes": 7338,
+      "sha256": "e58d83eedfa33c523ed7163f1441f3ad8083ed54c034b25fb8f10dce05cd24c6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e6941af17176ce0243a2cf8bb03d4e1118841a42eac5c9d1e14e348889e3e7d6.blob",
+      "bytes": 393,
+      "sha256": "e6941af17176ce0243a2cf8bb03d4e1118841a42eac5c9d1e14e348889e3e7d6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d.blob",
+      "bytes": 6845,
+      "sha256": "e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/eac8b5827535edc484f7bffec2f1a4dde50dd565cfa489e8311bba8b74bbb30f.blob",
+      "bytes": 144,
+      "sha256": "eac8b5827535edc484f7bffec2f1a4dde50dd565cfa489e8311bba8b74bbb30f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/ecaae2e348189870897deab31463076f4a57d53adf700088938dd744b0f56d7f.blob",
+      "bytes": 640,
+      "sha256": "ecaae2e348189870897deab31463076f4a57d53adf700088938dd744b0f56d7f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f1b04a745d3c321e555a98f77477cc43d6d87c9a89da153dd5870c78ebe99c3e.blob",
+      "bytes": 2017,
+      "sha256": "f1b04a745d3c321e555a98f77477cc43d6d87c9a89da153dd5870c78ebe99c3e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f1b13f52eaf575e781117694424c7542d507f4d32d6fb62e18ba598c3ba2f99c.blob",
+      "bytes": 338,
+      "sha256": "f1b13f52eaf575e781117694424c7542d507f4d32d6fb62e18ba598c3ba2f99c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f21a22336bab887f898ca2e14c4bd7c58b81f463a739e910cf6755c648d6eca2.blob",
+      "bytes": 2871,
+      "sha256": "f21a22336bab887f898ca2e14c4bd7c58b81f463a739e910cf6755c648d6eca2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f34115e73bcbdba7df8aa43693adc3baa741cf8754c07810430f9b4bfa2c006a.blob",
+      "bytes": 2067,
+      "sha256": "f34115e73bcbdba7df8aa43693adc3baa741cf8754c07810430f9b4bfa2c006a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/.claude/science/physics-loops/toe-basis-state-clock-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110222,
+      "sha256": "1c9c98fb077d739cbd350593ad29485b8bc4f876445aa586e4b8a96c1dc99881"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/scripts/basis_state_waveform_clock_2026_10_15.py",
+      "bytes": 24092,
+      "sha256": "d407e5643f98b66e7d9929b8e8c7226e25917d753f0948603de9765083f69fa0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/record_metadata.py",
+      "bytes": 2618,
+      "sha256": "43eee6c724ffd3e76e845789975b5dac794afd214bc0ca8a89c60454faab06e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/reference_scripts/FINAL_FREEZE.json",
+      "bytes": 42411,
+      "sha256": "c2c576011f10bf011139756ee0ab96e5dedf609a4f354242d9c653198ca7b3c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/reference_scripts/build_proposal.py",
+      "bytes": 15261,
+      "sha256": "d3db35865a0fa07a9e41606a977ec91c1b70c253c17b186b1141935d4351f83e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/reference_scripts/inspect_proposal.py",
+      "bytes": 12924,
+      "sha256": "85dafa005ca97e165310157dd117d7e901a8772bc75bf8be755436ce10550db4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/reference_scripts/primary_template.py",
+      "bytes": 13357,
+      "sha256": "57a4a909d6285690d17687e1dd1154615de751f4e726c2304cab30bc557ac4cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/reference_scripts/record_metadata.py",
+      "bytes": 2433,
+      "sha256": "96c5ebbdcbe83ec482e8e5d3f10e42b9d738557dcb6c04c42e089e0d8fc686ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/reference_scripts/seal_packet.py",
+      "bytes": 5350,
+      "sha256": "3cbb997b788e8cdf96b7430d8e68b099f8f292b0026c4c0a7701b775c644adc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/reference_scripts/wrapper.md",
+      "bytes": 16918,
+      "sha256": "e104af22b9c79022c3ba5c939370d4680aa321e9894e1b6aefacf3f44b6a4ed6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/seal_packet.py",
+      "bytes": 4386,
+      "sha256": "6c0335576fee99e88f721fae463651de19a52de0859b30fed1eba37523a05e8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/wrapper.md",
+      "bytes": 22678,
+      "sha256": "a6ba3e197b884b85e6ad35c986c63bc21237ea886211697a5b40de9d64ffc60e"
+    }
+  ]
+}

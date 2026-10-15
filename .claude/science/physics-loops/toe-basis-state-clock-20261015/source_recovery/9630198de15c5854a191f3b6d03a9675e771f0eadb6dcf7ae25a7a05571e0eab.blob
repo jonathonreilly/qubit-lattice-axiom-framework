@@ -1,0 +1,219 @@
+{
+  "captured_utc": "2026-10-15T19:34:33.345940+00:00",
+  "scope": "Source-exposed comparison; exact source and actual chronology recovery",
+  "scientific_programs_run": 0,
+  "source_freezes_verified": [
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea",
+      "members_verified": 2
+    },
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/FINAL_FREEZE.json",
+      "sha256": "e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d",
+      "members_verified": 35
+    }
+  ],
+  "canonical_lemma_read_intervals": [
+    {
+      "container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "line_start": 76,
+      "line_end_inclusive": 98,
+      "start_byte_inclusive": 7366,
+      "end_byte_exclusive": 10235,
+      "bytes": 2869,
+      "sha256": "80b5193472f93abf7178c04031deb1f8696a18aacf58c6485aba3dbf56700108"
+    },
+    {
+      "container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "line_start": 307,
+      "line_end_inclusive": 350,
+      "start_byte_inclusive": 36870,
+      "end_byte_exclusive": 39661,
+      "bytes": 2791,
+      "sha256": "e894f4c4c607fc41a534325672079ba448f4d473eb6ed87047d621edcb923863"
+    },
+    {
+      "container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "line_start": 779,
+      "line_end_inclusive": 813,
+      "start_byte_inclusive": 84128,
+      "end_byte_exclusive": 87208,
+      "bytes": 3080,
+      "sha256": "146fb386de1e71df4783c9aa9c16fb76db4853f1502daefe7bbefd57b995e255"
+    },
+    {
+      "container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "line_start": 1518,
+      "line_end_inclusive": 1547,
+      "start_byte_inclusive": 167676,
+      "end_byte_exclusive": 170155,
+      "bytes": 2479,
+      "sha256": "5c51eb458b598e79efe44539e26a99194f3e0412af986567be217be21cd17c72"
+    }
+  ],
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/DERIVATION.md",
+      "bytes": 23256,
+      "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46",
+      "recovery": "source_recovery/0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46.blob",
+      "coverage": "Complete root candidate newly read"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/SOURCE_PINS.json",
+      "bytes": 2261,
+      "sha256": "51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d",
+      "recovery": "source_recovery/51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d.blob",
+      "coverage": "Complete root source/exposure metadata"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 687,
+      "sha256": "a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea",
+      "recovery": "source_recovery/a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea.blob",
+      "coverage": "Root two-member proposal freeze"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/DERIVATION.md",
+      "bytes": 29173,
+      "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39",
+      "recovery": "source_recovery/84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39.blob",
+      "coverage": "Complete immutable independent proof"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/FINAL_FREEZE.json",
+      "bytes": 6845,
+      "sha256": "e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d",
+      "recovery": "source_recovery/e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d.blob",
+      "coverage": "Independent 35-member pre-exposure freeze"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_review/PRE_EXPOSURE_READ.json",
+      "bytes": 1620,
+      "sha256": "5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149",
+      "recovery": "source_recovery/5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149.blob",
+      "coverage": "Actual root complete read before candidate access"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/review_frontiers_1926/EXECUTION.json",
+      "bytes": 1418,
+      "sha256": "75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e",
+      "recovery": "source_recovery/75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e.blob",
+      "coverage": "Actual root chronology receipt; no replay"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/DERIVATION.md",
+      "bytes": 24070,
+      "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d",
+      "recovery": "source_recovery/0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d.blob",
+      "coverage": "Previously complete reading, exact unchanged mediator premises"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/REPORT.md",
+      "bytes": 32692,
+      "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d",
+      "recovery": "source_recovery/52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d.blob",
+      "coverage": "Previously complete source-exposed mediator assessment"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_review/ACCEPTANCE.md",
+      "bytes": 4724,
+      "sha256": "134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f",
+      "recovery": "source_recovery/134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f.blob",
+      "coverage": "Complete qualified acceptance reread"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+      "recovery": "source_recovery/12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89.blob",
+      "coverage": "General pure-factor retained-marginal lemma; exact bounded reading below"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "recovery": "source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "coverage": "Unchanged current instructions, reused complete reading"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "recovery": "source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "coverage": "Unchanged current workflow, reused complete reading"
+    },
+    {
+      "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "recovery": "source_recovery/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.blob",
+      "coverage": "Unchanged review skill, reused complete applicable reading"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/EXPOSURE_AND_LIMITS.md",
+      "bytes": 4185,
+      "sha256": "255f34b704d680b169f3fb08e4d9c3e890755161b316b8ed776e96c8c6840909",
+      "recovery": "source_recovery/255f34b704d680b169f3fb08e4d9c3e890755161b316b8ed776e96c8c6840909.blob",
+      "coverage": "Immutable independent exposure/route/source metadata, not new science"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/ROUTE_LOG.md",
+      "bytes": 1343,
+      "sha256": "3aabd0f8b80c31a0a607033b568493da5618468ab03974cf21be88928fb04c66",
+      "recovery": "source_recovery/3aabd0f8b80c31a0a607033b568493da5618468ab03974cf21be88928fb04c66.blob",
+      "coverage": "Immutable independent exposure/route/source metadata, not new science"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/START.md",
+      "bytes": 871,
+      "sha256": "58511cc9b6f2ba50d6ac5bf347a13160c46f9adae73f6b1fbfacbc05f0e86eb6",
+      "recovery": "source_recovery/58511cc9b6f2ba50d6ac5bf347a13160c46f9adae73f6b1fbfacbc05f0e86eb6.blob",
+      "coverage": "Immutable independent exposure/route/source metadata, not new science"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/SOURCE_MANIFEST.json",
+      "bytes": 8279,
+      "sha256": "0401494d66409ef11862bb304c0b20679a08fb97283e942bf76a0fcdd3127c82",
+      "recovery": "source_recovery/0401494d66409ef11862bb304c0b20679a08fb97283e942bf76a0fcdd3127c82.blob",
+      "coverage": "Immutable independent exposure/route/source metadata, not new science"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/review_frontiers_1926.py",
+      "bytes": 7690,
+      "sha256": "1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5",
+      "recovery": "source_recovery/1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5.blob",
+      "coverage": "Actual root receipt member child_source_at_launch; chronology/provenance only"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "recovery": "source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "coverage": "Actual root receipt member recorder; chronology/provenance only"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/review_frontiers_1926/stdout",
+      "bytes": 804,
+      "sha256": "2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87",
+      "recovery": "source_recovery/2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87.blob",
+      "coverage": "Actual root receipt member stdout; chronology/provenance only"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/review_frontiers_1926/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": "source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "coverage": "Actual root receipt member stderr; chronology/provenance only"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/review_frontiers_1926/executed_source.py",
+      "bytes": 7690,
+      "sha256": "1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5",
+      "recovery": "source_recovery/1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5.blob",
+      "coverage": "Actual root source-at-launch capture; incidental other-frontier metadata unselected"
+    }
+  ],
+  "limits": "Prior root metadata may mention another frontier; it is not a proof import. No current acceptance is inferred."
+}

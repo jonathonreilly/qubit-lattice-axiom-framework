@@ -1,0 +1,9 @@
+# Pre-exposure scientific handoff
+
+Read DERIVATION.md completely. The central proposed result is a positive nearest-neighbor path clock initialized at |10...0>, using inverse-arcsine time samples, with full-isometry error at most L*tau*t/sqrt(m). Unhalved full-output trace/diamond error is at most twice this value. All plant/reference inputs are allowed; the clock input is a specified pure product state.
+
+The elementary proof uses explicit positive edge spectra, a symmetric-spin/binomial free propagator, an endpoint-uniform mean-square time bound, and a full-output Duhamel residual. At the horizon the free clock is exactly |0...01> with its clock phase canceled algebraically; the physical reserve phases remain explicit. Full-clock norm, scalar, initial mean/variance, control precision, timing, and work allowances are included.
+
+The path clock is two-qubit NN. Arbitrary matrix occupation-controlled plant couplings are supplied, and require an additional theorem for an all-NN two-local device. Pure basis-state supply, energy coherence relative to the clock Hamiltonian, non-stopping after the finite horizon, and energy/reuse limits remain explicit. Existing controller composition must be checked against this actual clock and its norm-dependent constants.
+
+EXPOSURE_AND_LIMITS.md records source exposure and the same-model limitation. SOURCE_MANIFEST.json pins relevant earlier context; new metadata receipts document only source/recovery integrity. No scientific program was needed. The frozen derivation must remain unchanged when a source-exposed comparison is later authorized. Root's new candidate was not inspected before this freeze.

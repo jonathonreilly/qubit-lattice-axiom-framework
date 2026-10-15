@@ -1,0 +1,29 @@
+{
+  "status": "actual_published_combined_parent",
+  "observed_utc": "2026-10-15T20:05:04.123377+00:00",
+  "note": {
+    "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 136036,
+    "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e"
+  },
+  "body_map": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-single-port-program-and-controller-20261015/BODY_MAP.json",
+    "bytes": 1459,
+    "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750"
+  },
+  "publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/PUBLICATION.json",
+    "bytes": 1620,
+    "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db"
+  },
+  "attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/ATTACHMENT.json",
+    "bytes": 216,
+    "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922"
+  },
+  "published_parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9617",
+  "published_parent_head": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "published_parent_tree": "8ed4a93cf377480ce87bfc024dd9f371ca13b7c5",
+  "git_base": null,
+  "scope": "Actual parent bytes and publication metadata only; new-note checkout binding and future Git base remain separate root decisions."
+}

@@ -1,0 +1,7 @@
+# Trace gate
+
+The finite claim is conditional support. The scientific root decision and actual publication review eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708 are separately captured. Exactly one direct mathematical edge is intended: single_port_program_and_autonomous_controller_bounded_theorem_note_2026-10-15, restricted to its controller proof and separate review. Local proof of the general g lemma avoids a correlated-memory/Markov edge. Git ancestry and metadata provenance create no theorem edges.
+
+Current binding records the real review/source/streams/seal and actual selected-base observation. Before publication root must review the full canonicalization diff, preserve all three bodies and linked interval aliases, and execute the declared 60-second source-integrity surface. Subsequent source mutations must exercise semantic schema/linkage checks, not merely checksum mismatch. Actual focused evidence and one-node/one-edge graph preservation remain root work. No cache or PASS count validates the mathematics.
+
+Native state/energy coherence, installed geometry/controls, whole-lifetime isolation, release/duration/work, full-space faults, precision, energy/readout, common caps, efficiency and reuse remain supplied or open. Current-main/cumulative-stack landing, full pipeline and independent retained audit are required separately from this source-only proposal.

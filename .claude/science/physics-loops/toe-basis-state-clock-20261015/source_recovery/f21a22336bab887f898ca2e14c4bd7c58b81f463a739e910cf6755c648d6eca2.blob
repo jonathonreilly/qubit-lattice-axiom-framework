@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-10-15T19:34:33.456360+00:00",
+  "scope": "Metadata only: original bytes/recovery/coverage/receipts/AST; not mathematical validation",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/REPORT.md",
+    "bytes": 34647,
+    "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+  },
+  "sources_refreshed": 23,
+  "source_freezes": [
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea",
+      "members_verified": 2
+    },
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/FINAL_FREEZE.json",
+      "sha256": "e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d",
+      "members_verified": 35
+    }
+  ],
+  "canonical_lemma_intervals": 4,
+  "scripts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/capture_sources.py",
+      "bytes": 6273,
+      "sha256": "c462e0e6c225a2e28d96423c7959f572f6da902bb6e35298f5893570023697bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/record_metadata.py",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/verify_metadata.py",
+      "bytes": 2590,
+      "sha256": "b2f0b33b7610bd3a33753dd4c2e1820b27cbffb6db287c8b8dcc9fe396e0286f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/seal.py",
+      "bytes": 2381,
+      "sha256": "e3506bd12cf173c346b9d56efe3a2471ebe54ea8307857b5869a176b4d8ef135"
+    }
+  ],
+  "actual_capture_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/metadata_runs/capture/EXECUTION.json",
+    "bytes": 2070,
+    "sha256": "bd840f812e2e89d9b3c0fdaa63a5c9f6616fef2e9734a7f421b9943a92a769e6"
+  },
+  "scientific_programs_run": 0,
+  "same_model_source_exposed": true,
+  "original_proofs_modified": false,
+  "editing_failure_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/OPERATION_FAILURES.md",
+    "bytes": 609,
+    "sha256": "48ade9aa8c72d772285081c78e09e9db5024df6ed21c87a35db292a81b917eac"
+  }
+}

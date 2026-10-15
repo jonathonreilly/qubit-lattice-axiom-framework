@@ -1,0 +1,52 @@
+"""Verify identities, exact coverage intervals and receipts; no science execution."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+def verify(path, row):
+    actual = pin(path)
+    assert actual['bytes'] == row['bytes'] and actual['sha256'] == row['sha256'], str(path)
+
+manifest = json.loads((D/'SOURCE_MANIFEST.json').read_text())
+for row in manifest['sources']:
+    verify(Path(row['original_path']), row)
+    verify(D/row['recovery'], row)
+for row in manifest['canonical_lemma_read_intervals']:
+    data = Path(row['container']).read_bytes()[row['start_byte_inclusive']:row['end_byte_exclusive']]
+    assert len(data) == row['bytes'] and hashlib.sha256(data).hexdigest() == row['sha256']
+receipt_path = D/'metadata_runs/capture/EXECUTION.json'
+receipt = json.loads(receipt_path.read_text())
+assert receipt['exit_code'] == 0 and receipt['scientific_programs_run'] == 0
+assert receipt['timeout_seconds'] == 60 and receipt['timed_out'] is False
+for key in ('child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr'):
+    verify(Path(receipt[key]['path']), receipt[key])
+reuse = json.loads((D/'METADATA_REUSE.json').read_text())
+verify(Path(reuse['source']), reuse)
+verify(D/'record_metadata.py', reuse)
+scripts = []
+for name in ('capture_sources.py', 'record_metadata.py', 'verify_metadata.py', 'seal.py'):
+    data = (D/name).read_bytes()
+    assert data.endswith(b'\n') and not data.endswith(b'\n\n'), name
+    ast.parse(data, filename=name)
+    scripts.append(pin(D/name))
+result = {
+    'checked_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Metadata only: original bytes/recovery/coverage/receipts/AST; not mathematical validation',
+    'report': pin(D/'REPORT.md'), 'sources_refreshed': len(manifest['sources']),
+    'source_freezes': manifest['source_freezes_verified'],
+    'canonical_lemma_intervals': len(manifest['canonical_lemma_read_intervals']),
+    'scripts': scripts, 'actual_capture_receipt': pin(receipt_path),
+    'scientific_programs_run': 0, 'same_model_source_exposed': True,
+    'original_proofs_modified': False, 'editing_failure_record': pin(D/'OPERATION_FAILURES.md'),
+}
+(D/'VERIFICATION.json').write_text(json.dumps(result, indent=2)+'\n')
+print(json.dumps({'report': result['report'], 'sources': result['sources_refreshed'],
+                  'scientific_programs_run': 0, 'scope': result['scope']}))

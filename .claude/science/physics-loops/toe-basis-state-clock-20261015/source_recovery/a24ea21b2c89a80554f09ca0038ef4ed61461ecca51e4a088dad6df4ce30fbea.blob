@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-15T19:14:39.587185+00:00",
+  "status": "Candidate, not accepted result",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/DERIVATION.md",
+      "bytes": 23256,
+      "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/SOURCE_PINS.json",
+      "bytes": 2261,
+      "sha256": "51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d"
+    }
+  ],
+  "scientific_programs_run": 0
+}

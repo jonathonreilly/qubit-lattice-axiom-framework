@@ -1,0 +1,173 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T20:30:51.810381+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+  "parent_sha256": {
+    "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e"
+  },
+  "source_acceptances": {
+    "basis_clock": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0"
+  },
+  "git_base": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+  "base_branch": "physics-loop/toe-local-gibbs-controller-source-20261015",
+  "planned_feature_branch": "physics-loop/toe-basis-state-clock-20261015",
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-single-port-program-and-controller-20261015",
+      "headRefName": "physics-loop/toe-local-gibbs-controller-source-20261015",
+      "headRefOid": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+      "isDraft": false,
+      "number": 9618,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9618"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+  "raw_bodies": [
+    {
+      "name": "root_author",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 23221,
+      "end_byte_exclusive": 46477,
+      "bytes": 23256,
+      "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46"
+    },
+    {
+      "name": "independent_author",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 46638,
+      "end_byte_exclusive": 75811,
+      "bytes": 29173,
+      "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+    },
+    {
+      "name": "comparison",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 75964,
+      "end_byte_exclusive": 110611,
+      "bytes": 34647,
+      "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 136036,
+      "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+      "claim_id": "single_port_program_and_autonomous_controller_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "controller_author",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 79110,
+          "end_byte_exclusive": 103180,
+          "bytes": 24070,
+          "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "controller_author"
+      ],
+      "review_evidence": [
+        {
+          "name": "controller_assessment",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 103344,
+          "end_byte_exclusive": 136036,
+          "bytes": 32692,
+          "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d"
+        }
+      ],
+      "role": "direct_mathematical_parent",
+      "import_scope": "One-port contraction, full auxiliary reduced inverse, two-excitation corrector and bare-vacuum full-output estimate; new clock and geometry are proved here. No old unary waveform or compiler theorem is silently imported."
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/20ebf2a5171efc8b24dd7731af9969edda6c36defd076fe186a17fc59bd713bf.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/43e0aba645e3f15844096135323b074de03e5da217ea158c2526ca4897e15706.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/45b2c8dae126a8082667fa9899e994847ff86b4172039dc20ed5730bc645448b.blob",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/5cb68783eb92da96600182e712ccd4529780c215f090807b4bb42dd43b8edd80.py",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/794f22d534ce6989712f085db1dc78928e2fdded1b6bb5a3559ebac049220f08.py",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/7d1c904ccad39714560697845ea919beb3266ff09c0b62aaa76777380920ad67.blob",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/c5d453f67f3723cfdb729a898a33dc8c717b59cec20a8663d795611db275ef24.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/c904492d9b5ae01038b1b545014a043912c1109ddc387694e24e7c3af7e73e0b.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708.json"
+  ],
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/c5d453f67f3723cfdb729a898a33dc8c717b59cec20a8663d795611db275ef24.json",
+    "bytes": 69901,
+    "sha256": "c5d453f67f3723cfdb729a898a33dc8c717b59cec20a8663d795611db275ef24"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708.json",
+      "bytes": 12693,
+      "sha256": "eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708"
+    },
+    "review_freeze": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/c904492d9b5ae01038b1b545014a043912c1109ddc387694e24e7c3af7e73e0b.json",
+      "bytes": 404,
+      "sha256": "c904492d9b5ae01038b1b545014a043912c1109ddc387694e24e7c3af7e73e0b"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/43e0aba645e3f15844096135323b074de03e5da217ea158c2526ca4897e15706.json",
+      "bytes": 1450,
+      "sha256": "43e0aba645e3f15844096135323b074de03e5da217ea158c2526ca4897e15706"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/7d1c904ccad39714560697845ea919beb3266ff09c0b62aaa76777380920ad67.blob",
+      "bytes": 583,
+      "sha256": "7d1c904ccad39714560697845ea919beb3266ff09c0b62aaa76777380920ad67"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/5cb68783eb92da96600182e712ccd4529780c215f090807b4bb42dd43b8edd80.py",
+      "bytes": 8334,
+      "sha256": "5cb68783eb92da96600182e712ccd4529780c215f090807b4bb42dd43b8edd80"
+    }
+  },
+  "base_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/20ebf2a5171efc8b24dd7731af9969edda6c36defd076fe186a17fc59bd713bf.json",
+      "bytes": 1727,
+      "sha256": "20ebf2a5171efc8b24dd7731af9969edda6c36defd076fe186a17fc59bd713bf"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/794f22d534ce6989712f085db1dc78928e2fdded1b6bb5a3559ebac049220f08.py",
+      "bytes": 45614,
+      "sha256": "794f22d534ce6989712f085db1dc78928e2fdded1b6bb5a3559ebac049220f08"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/45b2c8dae126a8082667fa9899e994847ff86b4172039dc20ed5730bc645448b.blob",
+      "bytes": 334,
+      "sha256": "45b2c8dae126a8082667fa9899e994847ff86b4172039dc20ed5730bc645448b"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T20:30:51.810446+00:00",
+    "reviewed_source_sha256": "c5d453f67f3723cfdb729a898a33dc8c717b59cec20a8663d795611db275ef24"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "polynomial_mediator_imported": false,
+  "retained_audit": false
+}

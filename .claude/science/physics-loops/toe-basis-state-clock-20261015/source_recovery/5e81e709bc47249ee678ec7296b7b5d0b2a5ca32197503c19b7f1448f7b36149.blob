@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-15T19:21:11.319248+00:00",
+  "kind": "root_complete_independent_read_before_candidate_exposure",
+  "independent_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/FINAL_FREEZE.json",
+    "bytes": 6845,
+    "sha256": "e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d"
+  },
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/DERIVATION.md",
+    "bytes": 29173,
+    "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+  },
+  "members_verified": 35,
+  "read_scope": "Complete29173-byte independent derivation, exposure/route/handoff and allfour metadata helpers. Checked positive weighted edge spectrum, full-space norm, symmetric/binomial propagator and exact endpoint phase, endpoint-uniform inverse-arcsine concentration, full-reference Duhamel bound, moments, calibration/positivity/work and wrong-linear-sampling/locality/energy/nonstopping limits.",
+  "comparison": "Independent clock uses a different positive number-weighted block decomposition with lower full norm and exact endpoint phase cancellation; root has a sharper concentration constant and explicit single-port mediator adaptation. Those comparisons remain to be checked after exposure. Same model family and shared older sources; no blind-method or retained audit claim.",
+  "scientific_runs": 0,
+  "candidate_exposure_authorization": "May be sent after this actual record is completed, not before."
+}

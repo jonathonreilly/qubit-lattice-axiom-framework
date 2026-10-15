@@ -1,5 +1,12 @@
 # NT-1′ report: a legitimate chiral measure and gauged RP (route 1)
 
+> **Referee (codex gpt-5.6-sol, 14:17Z): CONFIRMED WITH CORRECTIONS. The reading is OPEN, but it fails at G-LEG (b), not (c).**
+> - **(c) passes** on the fixed wording.
+> - **(b) is not established.** The finite-volume term is a global right inverse, not Lüscher's exponentially small correction; the flat tail's exponential decay and Wilson-line integrability are unshown.
+> - **Reproduced independently:** all three negative kernels.
+>
+> See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Reading: OPEN.**
 - **Why OPEN:** gate item G-LEG (c) is not met *as I operationalised it in my pre-registration*, because that operationalisation was blind to the relevant nonlocality (§6 of the plain-words summary). Every other G-LEG item passes as registered.
 - **On substance:** the anomalous control clearly fails locality. If the referee accepts (c) on that substance, the fixed reading would be **CHI-RP-FAIL**, on all three pools.

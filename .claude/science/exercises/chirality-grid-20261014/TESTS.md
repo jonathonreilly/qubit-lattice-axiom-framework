@@ -452,7 +452,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **OPEN:** otherwise.
 - **Scope to state:** tree level, the carrier model, the meson matrix elements used, and the running.
 
-**NT-1′ result (14:03Z; same family; referee launched): OPEN.** The failed item is G-LEG (c), and only as the worker operationalised it.
+**NT-1′ result (14:03Z; same family; referee launched): OPEN.** The failed item is G-LEG (c), and only as the worker operationalised it. [Referee: CONFIRMED WITH CORRECTIONS; OPEN is correct, but it fails at G-LEG (b), not (c). See below.]
 - **The measure.** Lüscher's construction (eq. 5.8) for 11112 at Lx = 4: straight-ray overlap basis, a local cohomology current with the monopole removed, and a finite-volume correction.
 - **Gate items that pass.**
   - Gauge invariance is exact to 7e-14, via a canonical representative. The un-fixed Ward identity converges as Ns⁻⁴.
@@ -476,3 +476,10 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - Alternatives: P2, a hierarchy tuning of about 1e-20 to 1e-25; P3, a cancellation whose existence is not shown.
 - **Side findings.** OBS-3's saved B-gen has the CP-conjugate sign of J; the conjugate fit is equivalent. Light h alignment |sin ε| ≲ 5e-5 is needed within X2 as written.
 - **Reading (supervisor).** CKM in X2 needs corner-changing couplings, which need translation-breaking condensates. Breaking at the electroweak scale gives light carriers and tree-level FCNC; breaking at the lattice scale removes the light-generation protection. Pending the referee.
+
+**NT-1′ referee (codex gpt-5.6-sol, xhigh; returned 14:17Z; recorded 14:18Z): CONFIRMED WITH CORRECTIONS. The fixed reading is OPEN, failing at G-LEG (b), not (c).**
+- **G-LEG (c) passes the FIXED wording.** The anomalous L1 control visibly fails locality: its monopole defect tends to the nonzero anomaly coefficient, and its current has a plateau with fixed total weight. The worker's narrower pointer cannot override the parent fixed wording.
+- **G-LEG (b) is not confirmed.** The code is a serious, substantially correct finite-chart implementation of the structure of Lüscher's eq. 5.8. But its explicit finite-volume term is a global right inverse of the divergence, not Lüscher's proved exponentially small correction (compare Kadoh–Kikukawa's separate Wilson-line construction and its locality bound). The anomaly-free flat tail is not shown to be exponentially suppressed in volume, and global integrability around the Wilson-line circle is unchecked. So the sampled chart weight is not shown to complete to a legitimate global local Lüscher measure.
+- **Confirmed independently.** Reloading the saved log-kernels reproduces all three λ_min (−2.4485e-3, −9.5787e-4, −5.3679e-4), their ratios to E (49.0, 26.0, 22.1), the W-matching, the reflection behaviour, and the fact that the negativity is carried by the modulus.
+- **Conditional.** If the anomaly-free flat tail is accepted as Lüscher's small finite-volume term, and a chart-local measure is accepted as sufficient, the fixed rule gives CHI-RP-FAIL.
+- **What would close it:** a Kadoh–Kikukawa-type explicit Wilson-line measure term with its locality bound, or a demonstration that the flat tail falls exponentially with Lx, together with the integrability check.

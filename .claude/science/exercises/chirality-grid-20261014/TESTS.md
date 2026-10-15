@@ -289,3 +289,63 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - A β-independent decay exponent, or a universal 0.2–0.4-spacing decay length, is not established: the deep points use separately optimised pools, and only t₀ ≤ 2 was tested at finite β.
   - Exact OS reconstruction already fails for each tested finite measure once any t₀ = 1 witness is negative. But "fails at every depth", failure in the continuum, and a full set-B no-go are not established.
 - **Strongest correct statement:** in the finite 2D U(1) overlap proxy, finite-β torus RP negativity is established at t₀ = 1, the open proxy stays negative at t₀ = 2, and the normalised β → ∞ torus kernel is independently negative at t₀ = 3 and 4. So an exact compact-depth UV cutoff is excluded in substance for large enough β. The evidence supports an exponentially small lattice-scale tail, not a physical-depth or continuum obstruction.
+
+---
+
+## 24-hour campaign, wave 1 (pre-registered 2026-10-15T00:28Z; Jon: "run another 24 hour campaign")
+
+**Scope.** Jon took the "what's next" plan as the campaign. Route 2 (the X2 corner package) first: a cheap kill test (OBS-2), then the sign-free simulation pilot SIGN-1 unlocked (QMC-1). Route 1 gets the corrected handed-measure test NT-1 owes (NT-1′). Wave 2 is pre-registered later, after wave 1 reads out.
+
+**Common rules.**
+- Agents are Opus 5.5 at xhigh (same family; not independent). Each is refereed by codex gpt-5.6-sol at xhigh before its result is used downstream.
+- Every agent writes a detailed PREREG.md before any run. The readings below are FIXED and may not be changed.
+- **Memory:** a per-run cap is enforced by a watchdog wrapper; one process at a time; OMP_NUM_THREADS=2.
+
+**OBS-2. X2's flavour-pattern Lorentz violation and the T₂g strain channel** (route 2 kill test; OBS-1's open hazard). Cap 0.4 GB.
+- **Setup.** X2's walker carrier with corner-selective Yukawas and a lattice Higgs (nearest-neighbour), at one loop. Branches A, B and B′ are as in OBS-1; B is primary.
+- **What to compute.** Separate each charged-fermion mass eigenstate's Yukawa-induced Lorentz-violating kinetic terms (dimension 4) into:
+  - (i) the part set C's existing counterterm removes: one cubic-invariant kinetic counterterm per SM field (OBS-1 REPORT:74-78);
+  - (ii) the residual (flavour-pattern) part.
+
+  Compare (ii) with the current SME bounds (Kostelecký–Russell data tables; cite the table and row).
+- **LV readings:**
+  - **LV-SAFE:** on branch B, every residual is within its bound with no further counterterms.
+  - **LV-PRICE(n):** some residual exceeds its bound, but n named, local, X2-symmetric counterterms remove it. State n and the tuning level.
+  - **LV-KILL:** a residual exceeds its bound, and no local counterterm respecting X2's symmetries (unit translations, cubic rotations as realised on the corners, Spin(10) ⊃ G_SM) can remove it.
+  - **OPEN:** otherwise.
+- **T₂g strain.** Add the T₂g (off-diagonal) strain response to OBS-1's E_g. The rate is the m_p/m_e drift under the nHz GW background, against the 3.6e-17/yr clock bound.
+  - **FLAV2-KILL:** more than 10× over the bound on every branch.
+  - **FLAV2-NEAR:** within 10× on some branch.
+  - **FLAV2-SAFE:** below 1e-2 of the bound on some branch.
+  - **OPEN:** otherwise.
+
+**QMC-1. Sign-free simulation pilot of X2's mirror gapping** (T-G1′ pilot; field question I). Cap 1.5 GB per process.
+- **Model.** Ungauged X2 with global Spin(10), at λ1 = 0, λ2 ≠ 0: rigorously Kramers-class sign-free (SIGN-1 and its referee).
+- **Geometries.** 1+1D and 2+1D analogues: walker Σ σ_a sin p_a; a real filter vanishing exactly at the light corners; the filtered BB + h.c. channel.
+- **Power reference.** The unfiltered on-site control (f ≡ 1).
+- **Measure, as functions of W:**
+  - the 10-vector structure factor S₁₀(L), the symmetry-breaking signal;
+  - the mirror single-particle gap, from imaginary-time Green's functions at the mirror corners;
+  - the light-corner Green's function.
+- **Validation gate (must pass before any production reading):**
+  - (i) W = 0 reproduces the free Green's functions exactly;
+  - (ii) every sampled weight is real and positive (relative phase ≤ 1e-8);
+  - (iii) one observable at finite W agrees with an exact method (ED or enumeration) at one small size, within statistical error;
+  - (iv) on even L at finite W, the light-corner Green's function equals the free one (X2-L2).
+- **Readings:**
+  - **SMG-PILOT:** in 2+1D there is a W window where, between L = 4 and L = 6, the mirror gap is open and stable within errors and S₁₀/L² decreases.
+  - **GPR-PILOT:** in 2+1D, at every W where the mirror gap is open, S₁₀/L² is flat or growing between L = 4 and 6 (the mirrors gap by breaking the symmetry).
+  - **OPEN:** otherwise, including "sizes cannot separate" and "validation not passed in budget"; state which.
+- **Deliverable either way:** validated code with a cost model for a cluster run at L = 8–12 and in 3+1D.
+
+**NT-1′. A legitimate chiral measure and gauged RP** (route 1; the referee's open item from NT-1). Cap 0.5 GB.
+- **Setup.** 2D U(1) overlap with an anomaly-free chiral charge set (3-4-5-0 if admissible at feasible δ, otherwise 11112), link reflection, W-matched gauge-invariant witnesses as in K2c.
+- **Setup gate G-LEG.** It must pass before CHI-RP-FAIL or CHI-RP-PASS can be read:
+  - (a) Lx ≥ 4;
+  - (b) the measure term follows Lüscher's construction (NPB 549 (1999) 295) or an explicit published 2D U(1) construction (for example Kadoh–Kikukawa). Gauge invariance is exact to roundoff. Locality is measured: the response of the measure current to a local variation decays exponentially with distance;
+  - (c) **anomalous control:** the same construction applied to an anomalous charge set visibly fails gauge invariance, locality or integrability;
+  - (d) the reflection condition ρ(θU) = c·conj ρ(U) is measured.
+- **Readings:**
+  - **CHI-RP-FAIL:** G-LEG passes, and the kernel has a quadrature-converged negative eigenvalue below −10× the error estimate.
+  - **CHI-RP-PASS-at-power:** G-LEG passes, and the kernel is PSD within error, using the vector-like K2c witness on the same geometry as the power reference.
+  - **OPEN:** otherwise, naming the failed gate item.

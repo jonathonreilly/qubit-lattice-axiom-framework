@@ -1,0 +1,13 @@
+{
+  "artifact_type": "pull_request",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9615",
+  "tool_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"artifact_type\":\"pull_request\",\"url\":\"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9615\"}"
+      }
+    ],
+    "isError": false
+  }
+}

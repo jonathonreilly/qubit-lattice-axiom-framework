@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-15T18:26:57.199298+00:00",
+  "decision": "Accepted conditional mathematical source with full stated premises and consumer qualifications; publication/integration and independent retained audit remain separate.",
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_root_review/ACCEPTANCE.md",
+    "bytes": 4014,
+    "sha256": "41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a"
+  },
+  "freezes_verified": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 641,
+        "sha256": "d1577da8b8796917c7660180daef846f8c0edfcce30deb70164b08354406e55e"
+      },
+      "members": 3
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/FINAL_FREEZE.json",
+        "bytes": 9055,
+        "sha256": "acdce88206ccaaec24da37c29ef1cd484ac28c11e62611d8d3cd8c76a362e8a5"
+      },
+      "members": 25
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/FINAL_FREEZE.json",
+        "bytes": 20609,
+        "sha256": "b53da933f3545ffb60ce7817722f8a9442d91a11d6caeef4d828d46c158ef221"
+      },
+      "members": 51
+    }
+  ],
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/metadata_runs/capture/EXECUTION.json",
+      "bytes": 2200,
+      "sha256": "68ad6535c26bd42f14c31f5a2aa3eeddfd636d513fcbc7e51d8e7f8be82e3356"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/metadata_runs/verification/EXECUTION.json",
+      "bytes": 2225,
+      "sha256": "5256971fa7f3523ce9f6f99b9cd1379e2b8f288b2157a7786e45ab2612d3c3a1"
+    }
+  ],
+  "root_full_comparison_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/REPORT.md",
+    "bytes": 24065,
+    "sha256": "6693f24d1561fc915213c48e7debd7dd5d538ccc77686b747106ddfc1469baa8"
+  },
+  "same_model_effort": true,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": []
+}

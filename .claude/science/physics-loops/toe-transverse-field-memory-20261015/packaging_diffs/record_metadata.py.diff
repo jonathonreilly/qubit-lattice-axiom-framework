@@ -1,0 +1,11 @@
+--- finite_bank_publication_draft/record_metadata.py
++++ transverse_field_memory_publication_draft/record_metadata.py
+@@ -23,7 +23,7 @@
+     return {"original":ident(path),"captured":ident(destination)}
+ source=capture(script,run/"executed_source.py")
+ recorder=capture(Path(__file__).resolve(),run/"recorder_source.py")
+-inputs=[capture(p,run/"inputs"/p.relative_to(D)) for p in [D/"wrapper.md",D/"primary_template.py",*sorted((D/"packet_text").glob("*"))]]
++inputs=[capture(p,run/"inputs"/p.relative_to(D)) for p in [D/"wrapper.md",D/"primary_template.py",D/"PARENT_BINDING.json",D/"PARENT_READING.md",*sorted((D/"packet_text").glob("*"))]]
+ launch={"created_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"script":source["original"],"source_at_launch":source["captured"],"recorder_at_launch":recorder["captured"],"inputs":inputs,"timeout_seconds":60,"scope":"Metadata source capture only; no scientific primary or historical program is launched"}
+ (run/"LAUNCH.json").write_text(json.dumps(launch,indent=2)+"\n")
+ argv=[sys.executable,str(script)]

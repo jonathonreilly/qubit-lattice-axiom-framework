@@ -1,0 +1,9 @@
+# Assigned independent question
+
+The root supplied this question after the finite-bank publication draft, with the instruction to finish and seal that draft first:
+
+For a finite ordinary nearest-neighbor graph, take G=sum_i h_i n_i+sum_e(J_e n_i n_j+c_e I)+k0 I+sum_i(g_i I-a_i X_i-b_i Y_i), g_i=sqrt(a_i^2+b_i^2), c_e>=max(0,-J_e), k0>=0. Assume h_i-sum_incident max(0,-J_e)>=gamma>0, finite beta>=beta_min>0, g_i<=g_max<infinity. Determine whether the computational diagonal of exp(-beta G)/Tr exp(-beta G) has every full one-bit conditional bounded by a uniform qbar<1/2 independent of graph size, or exhibit a finite counterexample. Derive from first principles with signed/frustrated spatial edges and rare conditioning events in scope. Preserve actual parameter dependence and distinguish input restrictions from proof obligations. No native preparation or general noncommuting extension is authorized.
+
+The root stated that it was independently developing a candidate, and later that its candidate was frozen and unreviewed, but supplied no result or proof mechanism. The worker must not open, list, hash or search that new root-candidate directory before sealing this independent derivation. No other worker or agent may be consulted. Same inherited model/effort; no overrides, delegation, repository/Git/publication/checkpoint/lock/axiom/prompt changes. A scientific fixture is optional only for a specified unresolved risk, not an execution quota.
+
+This is a human-readable capture of the task message, not a hash identity for an unseen root source. The new derivation is a proposed mathematical result until separately checked. The hypotheses themselves, earlier local-bias/rotation work and prior two-qubit boundary are part of the disclosed exposure.

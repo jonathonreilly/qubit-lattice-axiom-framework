@@ -1,6 +1,6 @@
 {
- "edge_count": 16099,
- "node_count": 7138,
+ "edge_count": 16100,
+ "node_count": 7139,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21565,6 +21565,10 @@
   "transverse_cross_kernel_outside_six_caps_bounded_theorem_note_2026-10-10": {
    "deps_hash": "d211c1597417",
    "out_degree": 2
+  },
+  "transverse_field_gibbs_memory_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "de9234246b35",
+   "out_degree": 1
   },
   "triple_stack_collapse_scaling_note": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,29 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 166194,
+      "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+      "claim_id": "local_conditional_bias_and_rotated_gibbs_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95",
+      "accepted_body_interval": {
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 27209,
+        "end_byte_exclusive": 37875,
+        "bytes": 10666,
+        "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+      },
+      "accepted_review_interval": {
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 78220,
+        "end_byte_exclusive": 119796,
+        "bytes": 41576,
+        "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+      },
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "older_correlated_memory_joint_geometry": "transitive through sole local-bias canonical consumer",
+  "finite_bank_and_rotated_source_are_mathematical_dependencies": false,
+  "git_ancestry_is_not_mathematical_dependency": true
+}

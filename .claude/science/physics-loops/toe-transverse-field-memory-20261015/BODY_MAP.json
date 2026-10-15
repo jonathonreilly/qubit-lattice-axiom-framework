@@ -1,0 +1,29 @@
+{
+  "note": "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "transverse_root",
+      "container": "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 24961,
+      "end_byte_exclusive": 45512,
+      "bytes": 20551,
+      "sha256": "5cbafbd7b04fa425c4b5f975c075cce33c0e7b19524917ed0a40051eea1fe5ec"
+    },
+    {
+      "name": "transverse_independent",
+      "container": "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 45665,
+      "end_byte_exclusive": 63093,
+      "bytes": 17428,
+      "sha256": "5f7163966dcc27159591baf80aec86ad75757fedfac2fd69390c65a4a1df0b5f"
+    },
+    {
+      "name": "transverse_comparison",
+      "container": "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 63245,
+      "end_byte_exclusive": 87310,
+      "bytes": 24065,
+      "sha256": "6693f24d1561fc915213c48e7debd7dd5d538ccc77686b747106ddfc1469baa8"
+    }
+  ]
+}

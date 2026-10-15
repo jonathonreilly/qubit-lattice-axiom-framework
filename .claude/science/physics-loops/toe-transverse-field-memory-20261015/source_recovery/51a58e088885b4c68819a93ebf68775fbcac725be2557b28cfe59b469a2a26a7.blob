@@ -1,0 +1,38 @@
+{
+  "kind": "prepared_canonical_parent_read_awaiting_publication_identity",
+  "path": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bytes": 166194,
+  "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+  "claim_id": "local_conditional_bias_and_rotated_gibbs_bounded_theorem_note_2026-10-15",
+  "body_intervals": [
+    {
+      "role": "accepted_body_interval",
+      "name": "local_bias_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 27209,
+      "end_byte_exclusive": 37875,
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+    },
+    {
+      "role": "accepted_review_interval",
+      "name": "local_bias_comparison",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 78220,
+      "end_byte_exclusive": 119796,
+      "bytes": 41576,
+      "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+    }
+  ],
+  "root_reported_pr": null,
+  "root_reported_head": null,
+  "actual_source_observation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_bias/canonical_source/docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "observed_utc": "2026-10-15T18:55:28.626244+00:00",
+    "bytes": 166194,
+    "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+    "scope": "Prepared actual canonical source, not a claimed published PR/head or a worker Git observation"
+  },
+  "git_base": null,
+  "mathematical_role": "sole classical-domination and full correlated-memory/readiness consumer; correlated-memory/geometry inputs transitive"
+}

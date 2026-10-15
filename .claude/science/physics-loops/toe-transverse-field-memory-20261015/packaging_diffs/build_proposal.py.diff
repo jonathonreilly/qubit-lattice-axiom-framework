@@ -1,0 +1,191 @@
+--- finite_bank_publication_draft/build_proposal.py
++++ transverse_field_memory_publication_draft/build_proposal.py
+@@ -8,22 +8,24 @@
+ 
+ D=Path(__file__).resolve().parent;N=D.parent;W=N.parent/'correlation_worktree'
+ OUT=D/'proposal'
+-PACK='.claude/science/physics-loops/toe-finite-memory-bank-20261015'
+-NOTE='docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+-PRIMARY='scripts/finite_consumed_memory_bank_2026_10_15.py'
+-PARENT='docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+-PARENT_SHA='12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89'
+-ACCEPTANCE='5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908'
++PACK='.claude/science/physics-loops/toe-transverse-field-memory-20261015'
++NOTE='docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md'
++PRIMARY='scripts/transverse_field_gibbs_memory_2026_10_15.py'
++PARENT_DATA=json.loads((D/'PARENT_BINDING.json').read_text())
++assert PARENT_DATA['kind']=='observed_actual_canonical_parent_metadata','Wait for actual parent pins; no inferred future identity'
++PARENT=PARENT_DATA['path'];PARENT_SHA=PARENT_DATA['sha256'];PARENT_BYTES=PARENT_DATA['bytes']
++assert PARENT_DATA['actual_source_observation'] is not None and PARENT_DATA['git_base'] is None
++assert isinstance(PARENT_DATA['root_reported_pr'],int) and len(PARENT_DATA['root_reported_head'])==40,'Actual root-reported parent publication pins are required'
++ACCEPTANCE='41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a'
+ BODIES=[
+-('bank_author','finite_memory_bank_root_candidate/DERIVATION.md',11745,'162d7504ad3951ed29add0facefc0bbdb227fcdf582e22250baad04a4f63c521'),
+-('bank_assessment','finite_memory_bank_decisive_check/REPORT.md',25249,'16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6')]
+-PARENT_BODIES=[
+-('markov_author','correlated_markov_memory_candidate/DERIVATION.md',47228,'685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea'),
+-('markov_assessment','correlated_markov_memory_independent/comparison/REPORT.md',31525,'c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef')]
++('transverse_root','transverse_field_memory_root_candidate/DERIVATION.md',20551,'5cbafbd7b04fa425c4b5f975c075cce33c0e7b19524917ed0a40051eea1fe5ec'),
++('transverse_independent','transverse_field_memory_independent/independent/DERIVATION.md',17428,'5f7163966dcc27159591baf80aec86ad75757fedfac2fd69390c65a4a1df0b5f'),
++('transverse_comparison','transverse_field_memory_independent/comparison/REPORT.md',24065,'6693f24d1561fc915213c48e7debd7dd5d538ccc77686b747106ddfc1469baa8')]
+ FREEZES=[
+-('finite_memory_bank_root_candidate/PROPOSAL_FREEZE.json','f5def3706984cd0a22b403eec48483c05baa6eabfa355edfd0dba190afc2f45f'),
+-('finite_memory_bank_decisive_check/FINAL_FREEZE.json','e66dc3d4d956acffc070076bca03e2bee3677550db809ed86e56594470044f0b'),
+-('conditional_sources_root_review/FINAL_FREEZE.json','0e2c4a627624deeb936e2b7f975a88135582e022211daf2c4ff86b2bea717510')]
++('transverse_field_memory_root_candidate/PROPOSAL_FREEZE.json','d1577da8b8796917c7660180daef846f8c0edfcce30deb70164b08354406e55e'),
++('transverse_field_memory_independent/independent/FINAL_FREEZE.json','acdce88206ccaaec24da37c29ef1cd484ac28c11e62611d8d3cd8c76a362e8a5'),
++('transverse_field_memory_independent/comparison/FINAL_FREEZE.json','b53da933f3545ffb60ce7817722f8a9442d91a11d6caeef4d828d46c158ef221'),
++('transverse_field_memory_root_review/FINAL_FREEZE.json','c43d813357cb38331da26d004e9f7846a96c03bedb16c5fe903fc48693bd7d68')]
+ def sha(b):return hashlib.sha256(b).hexdigest()
+ def dump(path,value):
+     path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(value,indent=2)+'\n')
+@@ -39,8 +41,18 @@
+ assert not (D/'FINAL_FREEZE.json').exists(),'Frozen draft cannot be rebuilt'
+ assert not OUT.exists(),'Preserve an existing assembly; do not overwrite it'
+ now=datetime.datetime.now(datetime.timezone.utc).isoformat()
++template_manifest=json.loads((D/'TEMPLATE_MANIFEST.json').read_text())
++template_freeze=N/'finite_bank_publication_draft/FINAL_FREEZE.json'
++template_rows=json.loads(checked(template_freeze,template_manifest['template_freeze_sha256']))['files']
++template_by_path={r['path']:r for r in template_rows}
++for row in template_manifest['files']:
++    checked(Path(row['original']),row['sha256'],row['bytes'])
++    checked(Path(row['captured']),row['sha256'],row['bytes'])
++    frozen=template_by_path[row['original']]
++    assert (frozen['bytes'],frozen['sha256'])==(row['bytes'],row['sha256'])
+ sources=[];freshness=[];recovery_by_sha={};objects={};body_map=[]
+ note=(D/'wrapper.md').read_bytes()
++assert b'__PARENT_' not in note,'Parent placeholders must be resolved and read before assembly'
+ for name,rel,size,digest in BODIES:
+     data=checked(N/rel,digest,size)
+     note+=('\n\n---\n\n## Immutable source body: '+name+'\n\nHistorical source retained exactly; current status and mandatory interpretations appear above.\n\n').encode()
+@@ -54,18 +66,24 @@
+ for row in body_map:
+     raw=note[row['start_byte_inclusive']:row['end_byte_exclusive']];assert sha(raw)==row['sha256'] and note.count(raw)==1
+ 
+-parent=checked(W/PARENT,PARENT_SHA,203198)
++parent=checked(W/PARENT,PARENT_SHA,PARENT_BYTES)
++for row in json.loads((D/'PARENT_METADATA_ORIGINS.json').read_text())['files']:
++    checked(Path(row['original']),row['sha256'],row['bytes']);checked(Path(row['captured']),row['sha256'],row['bytes'])
+ recovery_by_sha[PARENT_SHA]={'kind':'external_pinned','path':PARENT}
+ sources.append({'source':'repository/'+PARENT,'role':'direct_mathematical_parent','bytes':len(parent),'sha256':PARENT_SHA,'recovery':recovery_by_sha[PARENT_SHA]})
+ freshness.append({'original':str(W/PARENT),'bytes':len(parent),'sha256':PARENT_SHA})
+-parent_intervals=[]
+-for name,rel,size,digest in PARENT_BODIES:
+-    raw=checked(N/rel,digest,size);assert parent.count(raw)==1
+-    start=parent.index(raw);r={'container':PARENT,'start_byte_inclusive':start,'end_byte_exclusive':start+size,'bytes':size,'sha256':digest}
+-    parent_intervals.append(r);recovery_by_sha[digest]={'kind':'external_body_interval',**r}
+-    sources.append({'source':'campaign/'+rel,'role':'exact_parent_'+name,'bytes':size,'sha256':digest,'recovery':recovery_by_sha[digest]})
+-    freshness.append({'original':str(N/rel),'bytes':size,'sha256':digest})
+-dependencies=[{'path':PARENT,'bytes':203198,'sha256':PARENT_SHA,'claim_id':'correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15','accepted_raw_source_sha256':PARENT_BODIES[0][3],'accepted_body_interval':parent_intervals[0],'accepted_review_interval':parent_intervals[1],'role':'direct_mathematical_parent'}]
++parent_intervals={}
++for row in PARENT_DATA['body_intervals']:
++    r={k:row[k] for k in ('container','start_byte_inclusive','end_byte_exclusive','bytes','sha256')}
++    assert r['container']==PARENT
++    raw=parent[r['start_byte_inclusive']:r['end_byte_exclusive']]
++    assert len(raw)==r['bytes'] and sha(raw)==r['sha256'] and parent.count(raw)==1
++    assert row['role'] in {'accepted_body_interval','accepted_review_interval'} and row['role'] not in parent_intervals
++    parent_intervals[row['role']]=r;recovery_by_sha[r['sha256']]={'kind':'external_body_interval',**r}
++    sources.append({'source':'canonical-parent-body/'+row['name'],'role':'exact_parent_'+row['role'],'bytes':r['bytes'],'sha256':r['sha256'],'recovery':recovery_by_sha[r['sha256']]})
++assert set(parent_intervals)=={'accepted_body_interval','accepted_review_interval'}
++assert parent_intervals['accepted_body_interval']['sha256']=='637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95'
++dependencies=[{'path':PARENT,'bytes':PARENT_BYTES,'sha256':PARENT_SHA,'claim_id':PARENT_DATA['claim_id'],'accepted_raw_source_sha256':parent_intervals['accepted_body_interval']['sha256'],**parent_intervals,'role':'direct_mathematical_parent'}]
+ 
+ def archive(path,role):
+     data=path.read_bytes();digest=sha(data)
+@@ -90,15 +108,36 @@
+         member_records.append({'freeze':'campaign/'+rel,'original':str(q),'bytes':row['bytes'],'sha256':row['sha256']})
+     freeze_checks.append({'source':'campaign/'+rel,'sha256':digest,'members_verified':len(f['files'])})
+ 
+-selected={p for root in [N/'finite_memory_bank_root_candidate',N/'finite_memory_bank_decisive_check'] for p in root.iterdir() if p.is_file()}
+-selected.update(p for p in (N/'finite_memory_bank_decisive_check/metadata_runs').rglob('*') if p.is_file())
+-selected.update(N/('conditional_sources_root_review/'+x) for x in ['FINITE_BANK_ACCEPTANCE.md','VERIFICATION.json','FINAL_FREEZE.json'])
++selected={p for root in [N/'transverse_field_memory_root_candidate',N/'transverse_field_memory_independent/independent',N/'transverse_field_memory_independent/comparison',N/'transverse_field_memory_root_review'] for p in root.iterdir() if p.is_file()}
++for rel in ['transverse_field_memory_independent/independent/metadata_run','transverse_field_memory_independent/comparison/metadata_runs','runs/transverse_field_root_acceptance_1830']:
++    selected.update(p for p in (N/rel).rglob('*') if p.is_file())
++
++# Actual historical receipt validation is metadata recovery, never a replay.
++def verify_receipt(path,root_style=False):
++    r=json.loads(path.read_text());assert r['exit_code']==0
++    if not root_style:assert r['failure'] is None and r['scientific_execution'] is False
++    keys=['stdout','stderr','child_source_at_launch','recorder'] if root_style else ['stdout','stderr','child_source_at_launch','recorder_at_launch','launch']
++    for key in keys:
++        row=r[key];q=Path(row['path']);checked(q,row['sha256'],row['bytes']);selected.add(q)
++    assert not Path(r['stderr']['path']).read_bytes()
++    if root_style:
++        checked(path.parent/'executed_source.py',r['child_source_at_launch']['sha256'],r['child_source_at_launch']['bytes'])
++    else:
++        for row in json.loads(Path(r['launch']['path']).read_text())['inputs']:
++            for key in ('original','captured'):
++                x=row[key];checked(Path(x['path']),x['sha256'],x['bytes']);selected.add(Path(x['path']))
++    return {'source':'campaign/'+str(path.relative_to(N)),'bytes':path.stat().st_size,'sha256':sha(path.read_bytes()),'start_utc':r['start_utc'],'end_utc':r['end_utc'],'exit_code':r['exit_code'],'scope':'Actual historical metadata process; not replayed here'}
++
++receipt_checks=[]
++for rel in ['transverse_field_memory_independent/independent/metadata_run/EXECUTION.json','transverse_field_memory_independent/comparison/metadata_runs/capture/EXECUTION.json','transverse_field_memory_independent/comparison/metadata_runs/verification/EXECUTION.json']:
++    receipt_checks.append(verify_receipt(N/rel))
++receipt_checks.append(verify_receipt(N/'runs/transverse_field_root_acceptance_1830/EXECUTION.json',True))
+ body_paths={N/x[1] for x in BODIES}
+ for p in sorted(selected-body_paths):
+-    role='root_conditional_source_acceptance' if p.name=='FINITE_BANK_ACCEPTANCE.md' else 'selected_actual_source_or_metadata_evidence'
++    role='root_conditional_source_acceptance' if p==N/'transverse_field_memory_root_review/ACCEPTANCE.md' else 'selected_actual_source_or_metadata_evidence'
+     archive(p,role)
+-checked(N/'conditional_sources_root_review/FINITE_BANK_ACCEPTANCE.md',ACCEPTANCE,2362)
+-checked(N/'conditional_sources_root_review/VERIFICATION.json','6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b',8964)
++checked(N/'transverse_field_memory_root_review/ACCEPTANCE.md',ACCEPTANCE,4014)
++checked(N/'transverse_field_memory_root_review/VERIFICATION.json','44f67af24d3d92c4e7f24afd1c9c9e217cc61fe4c8c5f2b093de689a6c4c161a',2648)
+ 
+ instruction_rels=['AGENTS.md','docs/ai_methodology/SCIENCE_WORKFLOW.md','docs/ai_methodology/skills/physics-loop/SKILL.md','docs/ai_methodology/skills/physics-loop/references/DELIVERY.md','docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md','docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md','docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md','docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md','docs/audit/data/axiom_premise_nodes.json','docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md']
+ for rel in instruction_rels:archive(W/rel,'instruction_or_premise_classification_provenance_only')
+@@ -108,7 +147,7 @@
+ change_map=[]
+ for name in ['build_proposal.py','inspect_proposal.py','record_metadata.py','seal_packet.py','primary_template.py','wrapper.md']:
+     old=D/'template_snapshot'/name;new=D/name;a=old.read_text();b=new.read_text()
+-    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='correlated_memory_publication_draft/'+name,tofile='finite_bank_publication_draft/'+name))
++    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='finite_bank_publication_draft/'+name,tofile='transverse_field_memory_publication_draft/'+name))
+     (D/'diffs'/f'{name}.diff').write_text(diff);write(PACK+'/packaging_diffs/'+name+'.diff',diff)
+     row={'file':name,'old_sha256':sha(a.encode()),'new_sha256':sha(b.encode()),'complete_diff':'diffs/'+name+'.diff','functions':[],'module_level':'entire module-level change is included in complete diff'}
+     if name.endswith('.py'):
+@@ -120,13 +159,13 @@
+     change_map.append(row)
+ for p in sorted((D/'packet_text').glob('*')):
+     old=D/'template_snapshot/packet_text'/p.name;a=old.read_text() if old.exists() else '';b=p.read_text()
+-    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='correlated_memory_publication_draft/packet_text/'+p.name if old.exists() else '/dev/null',tofile='finite_bank_publication_draft/packet_text/'+p.name))
++    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='finite_bank_publication_draft/packet_text/'+p.name if old.exists() else '/dev/null',tofile='transverse_field_memory_publication_draft/packet_text/'+p.name))
+     (D/'diffs'/('packet_'+p.name+'.diff')).write_text(diff);write(PACK+'/packaging_diffs/packet_'+p.name+'.diff',diff)
+-dump(D/'CHANGED_CODE_MAP.json',{'basis':'exact pinned correlated-memory template; full text diffs, not boilerplate-equivalence claims','files':change_map,'primary_execution':None,'scientific_programs_run':0})
++dump(D/'CHANGED_CODE_MAP.json',{'basis':'exact pinned finite-bank template; full text diffs, not boilerplate-equivalence claims','files':change_map,'primary_execution':None,'scientific_programs_run':0})
+ packet_json('CHANGED_CODE_MAP.json',json.loads((D/'CHANGED_CODE_MAP.json').read_text()))
+ for p in sorted((D/'template_snapshot').rglob('*')):
+     if p.is_file():archive(p,'exact_packaging_template_provenance_only')
+-for name in ['TEMPLATE_MANIFEST.json','INSTRUCTION_MATCH.json','build_proposal.py','inspect_proposal.py','record_metadata.py','seal_packet.py','primary_template.py','wrapper.md','READ_COVERAGE.md']:
++for name in ['TEMPLATE_MANIFEST.json','INSTRUCTION_MATCH.json','build_proposal.py','inspect_proposal.py','record_metadata.py','seal_packet.py','primary_template.py','wrapper.md','READ_COVERAGE.md','PARENT_BINDING.json','PARENT_READING.md','PARENT_BODY_MAP.json','PARENT_DEPENDENCIES.json','PARENT_METADATA_ORIGINS.json','INITIAL_PARENT_BINDING.json','PREPARED_PARENT_BINDING.json','PARENT_PUBLICATION.json','PARENT_ATTACHMENT.json']:
+     archive(D/name,'current_packaging_source_provenance_only')
+ 
+ selection=[]
+@@ -134,15 +173,16 @@
+     recovery=recovery_by_sha.get(row['sha256'])
+     selection.append({**row,'recovery':recovery,'selection_status':'recoverable_selected_identity' if recovery else 'not_selected_historical_or_unrelated_member','limit':None if recovery else 'Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency.'})
+ packet_json('BODY_MAP.json',{'note':NOTE,'bodies':body_map})
+-packet_json('DEPENDENCIES.json',{'dependencies':dependencies,'older_joint_memory_geometry':'transitive through sole correlated-memory parent','local_bias_and_rotation_are_mathematical_dependencies':False,'git_ancestry_is_not_mathematical_dependency':True})
++packet_json('DEPENDENCIES.json',{'dependencies':dependencies,'older_correlated_memory_joint_geometry':'transitive through sole local-bias canonical consumer','finite_bank_and_rotated_source_are_mathematical_dependencies':False,'git_ancestry_is_not_mathematical_dependency':True})
+ packet_json('SOURCE_MANIFEST.json',{'schema':'portable_source_recovery_v1','sources':sources,'scope':'Selected exact recovery, not recursive historical publication archives'})
+ packet_json('ARCHIVE_INDEX.json',{'schema':'sha256_deduplicated_recovery_v1','objects':sorted(objects.values(),key=lambda x:x['sha256']),'immutable_bodies_stored_only_in_note':True})
+ packet_json('RECOVERY_SELECTION.json',{'current_source_freezes_checked':freeze_checks,'members':selection,'scope':'Historical frozen manifests remain literal; only selected identities have portable recovery payload'})
+-packet_json('CANONICAL_BINDING.json',{'kind':'observed_exact_parent_bytes_not_actual_checkout_binding','expected_git_base':None,'parent_sha256':{PARENT:PARENT_SHA},'actual_binding':None,'source_acceptances':{'finite_bank':ACCEPTANCE},'root_reported_context':{'pr':9611,'head':'9369c12d0804f170f0016f5b26d7b12e057f0664','role':'planning context only; not a worker Git observation or future base decision'}})
++packet_json('CANONICAL_BINDING.json',{'kind':'observed_exact_parent_bytes_not_actual_checkout_binding','expected_git_base':None,'parent_sha256':{PARENT:PARENT_SHA},'actual_binding':None,'source_acceptances':{'transverse_field':ACCEPTANCE},'root_reported_context':{'pr':PARENT_DATA['root_reported_pr'],'head':PARENT_DATA['root_reported_head'],'role':'Parent publication identity supplied by root; not a worker Git observation or future base decision'},'actual_parent_source_observation':PARENT_DATA['actual_source_observation']})
++packet_json('HISTORICAL_METADATA_RECEIPTS.json',{'receipts':receipt_checks,'scientific_programs_run':0,'historical_programs_replayed':0})
+ packet_json('PUBLICATION_STATE.json',{'kind':'dated_source_proposal_not_actual_binding','created_utc':now,'canonical_binding':None,'git_base':None,'primary_execution':None,'cache_execution':None,'mutation_execution':None,'graph_execution':None,'publication_action':None,'retained_audit':None,'source_decision':ACCEPTANCE,'scientific_programs_run':0,'historical_programs_replayed':0})
+ packet_json('ACTUAL_BINDING.json',{'kind':'unbound_source_proposal','canonical_parent_binding_complete':False,'root_read_complete':None,'note_sha256':None,'parent_sha256':None,'source_acceptances':None,'git_base':None,'receipt_paths':[]})
+ for p in sorted((D/'packet_text').glob('*')):write(PACK+'/'+p.name,p.read_bytes())
+-write(PACK+'/PR_TITLE.txt','[physics-loop] finite-memory-bank: bounded_theorem / conditional-support\n')
++write(PACK+'/PR_TITLE.txt','[physics-loop] transverse-field-memory: bounded_theorem / conditional-support\n')
+ inputs=[]
+ for p in sorted(OUT.rglob('*')):
+     if p.is_file() and str(p.relative_to(OUT)) not in {PRIMARY,PACK+'/INPUT_MANIFEST.json',PACK+'/ACTUAL_BINDING.json'}:
+@@ -151,6 +191,7 @@
+ mpath=PACK+'/INPUT_MANIFEST.json'
+ declared=sorted({x['path'] for x in inputs}|{mpath,PACK+'/ACTUAL_BINDING.json',PARENT})
+ primary=(D/'primary_template.py').read_text().replace('__MANIFEST_SHA256__',sha((OUT/mpath).read_bytes())).replace('__AUDIT_INPUT_PATHS__',repr(declared)).replace('__EXPECTED_BODIES__',repr({x[0]:x[3] for x in BODIES}))
++primary=primary.replace('__EXPECTED_PARENTS__',repr({PARENT:(PARENT_BYTES,PARENT_SHA,PARENT_DATA['claim_id'],parent_intervals['accepted_body_interval']['sha256'])})).replace('__EXPECTED_PARENT_REVIEW__',repr(parent_intervals['accepted_review_interval']['sha256'])).replace('__PARENT_PATH__',PARENT).replace('__PARENT_CLAIM_ID__',PARENT_DATA['claim_id'])
+ write(PRIMARY,primary);ast.parse(primary)
+ dump(D/'SOURCE_FRESHNESS.json',{'verified_utc':now,'identities':freshness,'freezes':freeze_checks,'scope':'Metadata identity checks only; complete reading coverage separately described'})
+ dump(D/'BUILD_RESULT.json',{'built_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'note_bytes':len(note),'note_sha256':sha(note),'immutable_bodies':len(body_map),'mathematical_parents':len(dependencies),'selected_source_records':len(sources),'unique_recovery_blobs':len(objects),'proposal_files':sum(p.is_file() for p in OUT.rglob('*')),'scientific_programs_run':0,'historical_programs_replayed':0,'primary_executed':False,'actual_binding':None,'git_base':None,'source_decision':ACCEPTANCE})

@@ -1,0 +1,69 @@
+{
+  "note": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "local_bias_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 27209,
+      "end_byte_exclusive": 37875,
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+    },
+    {
+      "name": "local_bias_qualification",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 38022,
+      "end_byte_exclusive": 39823,
+      "bytes": 1801,
+      "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+    },
+    {
+      "name": "local_bias_pre_exposure",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 39969,
+      "end_byte_exclusive": 78076,
+      "bytes": 38107,
+      "sha256": "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604"
+    },
+    {
+      "name": "local_bias_comparison",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 78220,
+      "end_byte_exclusive": 119796,
+      "bytes": 41576,
+      "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+    },
+    {
+      "name": "noncommuting_boundary_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 119947,
+      "end_byte_exclusive": 123006,
+      "bytes": 3059,
+      "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e"
+    },
+    {
+      "name": "noncommuting_boundary_assessment",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 123161,
+      "end_byte_exclusive": 133503,
+      "bytes": 10342,
+      "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c"
+    },
+    {
+      "name": "rotated_gibbs_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 133646,
+      "end_byte_exclusive": 141476,
+      "bytes": 7830,
+      "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2"
+    },
+    {
+      "name": "rotated_gibbs_assessment",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 141623,
+      "end_byte_exclusive": 166194,
+      "bytes": 24571,
+      "sha256": "1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b"
+    }
+  ]
+}

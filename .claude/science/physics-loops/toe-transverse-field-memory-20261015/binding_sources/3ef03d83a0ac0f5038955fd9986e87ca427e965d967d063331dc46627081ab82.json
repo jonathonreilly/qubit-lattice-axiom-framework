@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-15T19:15:51.965169+00:00",
+  "kind": "root_source_publication_review",
+  "disposition": "Accept source-only publication proposal for separately reviewed actual integration; no primary or publication result yet",
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_publication_draft/FINAL_FREEZE.json",
+    "bytes": 108311,
+    "sha256": "96e198bc616242f36fc59bb498c68d52cb4b2605fa3695f49eb4463720b43bee"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_publication_draft/proposal/docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 86998,
+    "sha256": "259ffd4f4835fe9945772ac54981ed38f312b209fcd7f63ae01747b544974287"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_publication_draft/proposal/scripts/transverse_field_gibbs_memory_2026_10_15.py",
+    "bytes": 24888,
+    "sha256": "b89bd2175f1ef93a8412a939932627c5d83fee16f28935196e3bc2ef5bd9de59"
+  },
+  "accepted_science": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_root_review/ACCEPTANCE.md",
+    "bytes": 4014,
+    "sha256": "41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a"
+  },
+  "read_coverage": "Complete current wrapper and nine packet texts, complete build/inspection/recorder/seal changed diffs including module-level logic, entire primary template, parent-reading and final-delivery records. Exact three scientific bodies reuse prior complete proof/comparison reading and actual root acceptance at unchanged hashes. All227members,114source records and recoverable selection rows checked mechanically;22named functions retain verified AST identity. No new independent mathematical or retained audit claim.",
+  "same_AST_functions": [
+    "build_proposal.py:archive",
+    "build_proposal.py:checked",
+    "build_proposal.py:dump",
+    "build_proposal.py:packet_json",
+    "build_proposal.py:sha",
+    "build_proposal.py:write",
+    "inspect_proposal.py:container",
+    "inspect_proposal.py:identity",
+    "inspect_proposal.py:read",
+    "inspect_proposal.py:recover",
+    "inspect_proposal.py:sha",
+    "record_metadata.py:capture",
+    "record_metadata.py:ident",
+    "seal_packet.py:identity",
+    "seal_packet.py:sha",
+    "seal_packet.py:verify",
+    "primary_template.py:digest",
+    "primary_template.py:identity",
+    "primary_template.py:interval",
+    "primary_template.py:read_json",
+    "primary_template.py:require",
+    "primary_template.py:safe"
+  ],
+  "changes_requiring_attention": "Integration must relocate RECOVERY_SELECTION alongside BODY_MAP and SOURCE_MANIFEST, enforce linkage in primary, pin real root read/base/receipt inputs and keep historical nulls. Current frozen unbound proposal is intentionally not executed.",
+  "scientific_programs_run": 0,
+  "editable_prompt_files_changed": []
+}

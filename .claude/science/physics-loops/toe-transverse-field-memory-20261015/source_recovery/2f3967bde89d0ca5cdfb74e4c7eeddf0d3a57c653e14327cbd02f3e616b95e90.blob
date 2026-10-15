@@ -1,0 +1,35 @@
+"""Record one actual metadata subprocess, its launch source, inputs and streams."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+D=Path(__file__).resolve().parent;run=D/'metadata_run';run.mkdir(exist_ok=False)
+def ident(path):
+    b=path.read_bytes()
+    return {'path':str(path),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+inputs=[]
+for name in ['verify_metadata.py','record_metadata.py','seal.py','DERIVATION.md','PROBLEM.md','EXPOSURE.md','INSTRUCTIONS.json']:
+    origin=D/name;dest=run/'source_at_launch'/name;dest.parent.mkdir(exist_ok=True)
+    dest.write_bytes(origin.read_bytes());inputs.append({'original':ident(origin),'captured':ident(dest)})
+argv=[sys.executable,str(D/'verify_metadata.py')]
+launch={'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'argv':argv,'cwd':str(D),'timeout_seconds':60,'inputs':inputs,'scope':'metadata identity and syntax only; no scientific computation or candidate access'}
+(run/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();tick=time.monotonic();failure=None
+try:
+    p=subprocess.run(argv,cwd=D,capture_output=True,timeout=60)
+    out,err,code=p.stdout,p.stderr,p.returncode
+except subprocess.TimeoutExpired as exc:
+    out,err,code=exc.stdout or b'',exc.stderr or b'',124;failure={'kind':'timeout','seconds':60}
+except OSError as exc:
+    out,err,code=b'',str(exc).encode(),127;failure={'kind':type(exc).__name__,'message':str(exc)}
+end=datetime.datetime.now(datetime.timezone.utc).isoformat();elapsed=time.monotonic()-tick
+(run/'stdout').write_bytes(out);(run/'stderr').write_bytes(err)
+receipt={'argv':argv,'cwd':str(D),'start_utc':start,'end_utc':end,'elapsed_seconds':elapsed,'exit_code':code,'failure':failure,'child_source_at_launch':ident(run/'source_at_launch/verify_metadata.py'),'recorder_at_launch':ident(run/'source_at_launch/record_metadata.py'),'launch':ident(run/'LAUNCH.json'),'stdout':ident(run/'stdout'),'stderr':ident(run/'stderr'),'scientific_execution':False}
+(run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(out.decode(errors='replace'));print(err.decode(errors='replace'),file=sys.stderr)
+print(json.dumps({'receipt':str(run/'EXECUTION.json'),'exit_code':code,'scientific_execution':False}))
+raise SystemExit(code)

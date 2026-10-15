@@ -1,0 +1,43 @@
+from pathlib import Path
+import datetime,json,hashlib
+N=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309');D=N/'transverse_field_memory_root_review';D.mkdir(exist_ok=False)
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def read(p):return json.loads(p.read_text())
+freezes=[(N/'transverse_field_memory_root_candidate/PROPOSAL_FREEZE.json','d1577da8b8796917c7660180daef846f8c0edfcce30deb70164b08354406e55e'),(N/'transverse_field_memory_independent/independent/FINAL_FREEZE.json','acdce88206ccaaec24da37c29ef1cd484ac28c11e62611d8d3cd8c76a362e8a5'),(N/'transverse_field_memory_independent/comparison/FINAL_FREEZE.json','b53da933f3545ffb60ce7817722f8a9442d91a11d6caeef4d828d46c158ef221')]
+verified=[]
+for p,h in freezes:
+ assert pin(p)['sha256']==h
+ rows=read(p)['files']
+ for r in rows:
+  q=Path(r['path']);check(q if q.is_absolute() else p.parent/q,r)
+ verified.append({'freeze':pin(p),'members':len(rows)})
+C=N/'transverse_field_memory_independent/comparison';m=read(C/'SOURCE_MANIFEST.json')
+for r in m['sources']:
+ for k in ('original','captured'):check(Path(r[k]['path']),r[k])
+for r in m['local_sources']:check(Path(r['path']),r)
+receipts=[]
+for label in ('capture','verification'):
+ p=C/'metadata_runs'/label/'EXECUTION.json';r=read(p);assert r['exit_code']==0 and r['scientific_execution'] is False and r['failure'] is None
+ for k in ('child_source_at_launch','recorder_at_launch','launch','stdout','stderr'):check(Path(r[k]['path']),r[k])
+ for x in read(Path(r['launch']['path']))['inputs']:
+  for k in ('original','captured'):check(Path(x[k]['path']),x[k])
+ receipts.append(pin(p))
+text='''# Root conditional source acceptance: onsite transverse-field Gibbs memory
+
+The exact root proposal5cbafbd7, pre-exposure independent proof5f716396 and full comparison6693f24d support the finite-graph sharp computational full-conditional bound for diagonal occupation-pair interactions plus onsite transverse X/Y fields. Root authored/read the complete proposal, read the full sealed independent derivation before granting candidate access, and has now read the entire comparison and its current capture/record/verification/seal sources. Exact original identities and actual metadata receipts were refreshed. This is a source judgment; no retained audit or native source certificate is applied.
+
+The load-bearing mechanism is a positive finite Trotter closed-path measure, conditioning on every other site's complete path, one temporal ferromagnetic-ring field comparison, tower averaging over paths and the exact finite-L positive-denominator ratio limit. Signed spatial frustration and arbitrarily rare computational records are covered; spatial FKG, approximate conditional stability, efficient Gibbs sampling and uniform finite-discretization estimates are not assumed. Zero transverse fields follow by direct constant paths or fixed-finite-volume continuity. The one-site extremum and monotonicity give q_i = [1 - gamma/sqrt(gamma^2+4g_i^2) tanh(beta sqrt(gamma^2+4g_i^2)/2)]/2 and q_star < 1/2 at the supplied beta lower and transverse upper bounds.
+
+Keep all exact positive-block hypotheses and the actual member's local longitudinal margin. A uniform parameter box must separately cover positive scalar reserves; a fixed transverse reserve must dominate all allowed g_i. The concrete degree-two box admits q_bar=3/8 and norm allowance (7L-1)/2. These are conditional mathematical bounds, not preparation or calibration protocols. Effective selection requires computable numerical certificates. Full reduced Gibbs density, or full reduced trace-distance delivery, is required for non-diagonal source removal; an initial diagonal promise alone fails. Joint old-memory-reference correlations, source phases, ordered K_Z then H0 evolution, all displaced records and the whole unconditioned complement stay in the target.
+
+The literal uncollected channel sum is the charged implementation. Under the exact margin/reserve hypotheses its excess over the collected operator sum is sum_e max(0,-J_e); cancellations do not reduce independently calibrated channels. Keep the full scalar coefficient distinct from the scalar removed for the probability proof. Norm and channel O(L) allowances require bounded degree, all coefficient/reserve bounds and k0=O(L); action/slew also require the corresponding profile bounds. Source work -Tr(G rho_B) compares different endpoint Hamiltonians and does not imply a reusable thermodynamic cycle. Fault work/moments need actual endpoint or variation/norm contracts.
+
+Retain the rare-record TV, retained-reference, onsite same-diagonal/nonstationary and excluded transverse-pair witnesses. The earlier rotated commuting family is a separate sufficient source class, not claimed to contain this one. The exact local-bias consumer, correlated-memory and readiness sources remain inherited premises; no purity is asserted on faulty paths. Fully compensated H0-only guards, at-most compensation action and any retargeting allowance remain necessary.
+
+Independence is limited to the independently frozen new derivation, with the same model/effort and shared older inputs; the comparison is exposed and uses the same proof strategy. No numerical, symbolic, historical science or formal-proof execution occurred. Publisher metadata and the failed article open do not establish a complete paper reading or novelty. Native thermal input, temperature/basis identification, controller preparation, physical energy/work identification, detector/readout, common caps and recycling remain unresolved. No axioms, editable prompts, Git science or audit verdicts changed in this source decision.
+'''
+(D/'ACCEPTANCE.md').write_text(text)
+record={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'decision':'Accepted conditional mathematical source with full stated premises and consumer qualifications; publication/integration and independent retained audit remain separate.','acceptance':pin(D/'ACCEPTANCE.md'),'freezes_verified':verified,'actual_metadata_receipts':receipts,'root_full_comparison_read':pin(C/'REPORT.md'),'same_model_effort':True,'scientific_programs_run':0,'historical_programs_replayed':0,'editable_prompt_files_changed':[]}
+(D/'VERIFICATION.json').write_text(json.dumps(record,indent=2)+'\n');files=[pin(p) for p in sorted(D.iterdir()) if p.is_file()];(D/'FINAL_FREEZE.json').write_text(json.dumps({'utc':record['utc'],'files':files,'retained_audit':False},indent=2)+'\n');print(json.dumps({'acceptance':pin(D/'ACCEPTANCE.md'),'freeze':pin(D/'FINAL_FREEZE.json'),'verified_members':[x['members'] for x in verified]}))

@@ -28,3 +28,16 @@ archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 /.claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/record_metadata.py.diff -whitespace
 /.claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/seal_packet.py.diff -whitespace
 /.claude/science/physics-loops/toe-finite-memory-bank-20261015/packaging_diffs/wrapper.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/build_proposal.py.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/inspect_proposal.py.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_ASSUMPTIONS_AND_IMPORTS.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_CLAIM_STATUS_CERTIFICATE.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_COUNTEREXAMPLES.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_HANDOFF.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_PROVENANCE_PLAN.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_PR_BODY.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_RECOVERY_SCOPE.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_REVIEW_HISTORY.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/packet_TRACE_GATE.md.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/primary_template.py.diff -whitespace
+/.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/wrapper.md.diff -whitespace

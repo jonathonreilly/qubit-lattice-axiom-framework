@@ -1,0 +1,107 @@
+{
+  "checked_utc": "2026-10-15T17:54:53.186651+00:00",
+  "source_exposure": "pre-candidate; root transverse-field source not opened/listed/hashed/searched",
+  "mathematical_external_source_dependencies": [],
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/instruction_snapshots/0_AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "role": "exact already-read instruction snapshot; no theorem premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/instruction_snapshots/1_SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "exact already-read instruction snapshot; no theorem premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/instruction_snapshots/2_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "original": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "role": "exact already-read instruction snapshot; no theorem premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/instruction_snapshots/3_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "original": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "role": "exact already-read instruction snapshot; no theorem premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/REPORT.md",
+      "bytes": 10342,
+      "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c",
+      "role": "prior exposure or completed-task provenance only; not a mathematical premise",
+      "archive": "external exact path; no recursive copy"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/REPORT.md",
+      "bytes": 24571,
+      "sha256": "1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b",
+      "role": "prior exposure or completed-task provenance only; not a mathematical premise",
+      "archive": "external exact path; no recursive copy"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/REPORT.md",
+      "bytes": 25249,
+      "sha256": "16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6",
+      "role": "prior exposure or completed-task provenance only; not a mathematical premise",
+      "archive": "external exact path; no recursive copy"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/FINAL_FREEZE.json",
+      "bytes": 81161,
+      "sha256": "da49c7c8d76ecd35ac6a02a8cfbb37a263df9f29d11bc5b7aa18369b0426274f",
+      "role": "prior exposure or completed-task provenance only; not a mathematical premise",
+      "archive": "external exact path; no recursive copy"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/DERIVATION.md",
+      "bytes": 17428,
+      "sha256": "5f7163966dcc27159591baf80aec86ad75757fedfac2fd69390c65a4a1df0b5f",
+      "role": "current independent source or metadata script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/PROBLEM.md",
+      "bytes": 1764,
+      "sha256": "1463b310abfb086aa64039873fe7c2a3b7bfa148e5a4eaf857b94b92fba4d2da",
+      "role": "current independent source or metadata script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/EXPOSURE.md",
+      "bytes": 3361,
+      "sha256": "2544d341f3925dadb5d610d736ef4a33ec6d3e692fe9b30cef6b310072da7852",
+      "role": "current independent source or metadata script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/INSTRUCTIONS.json",
+      "bytes": 2132,
+      "sha256": "c271bed5483f0e084c031ae5c855bc6c7a9b7439082937d7c96bd6064443a8c6",
+      "role": "current independent source or metadata script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/verify_metadata.py",
+      "bytes": 2749,
+      "sha256": "23c69777e1c9cede803731e85b0295cf4966f78d8736d41e041218474c68685c",
+      "role": "current independent source or metadata script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/record_metadata.py",
+      "bytes": 2384,
+      "sha256": "2f3967bde89d0ca5cdfb74e4c7eeddf0d3a57c653e14327cbd02f3e616b95e90",
+      "role": "current independent source or metadata script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/seal.py",
+      "bytes": 2394,
+      "sha256": "d8536447cebcef30e5d05c9b81e230515a565b7471ae32c0fb85700653efe9b4",
+      "role": "current independent source or metadata script"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0
+}

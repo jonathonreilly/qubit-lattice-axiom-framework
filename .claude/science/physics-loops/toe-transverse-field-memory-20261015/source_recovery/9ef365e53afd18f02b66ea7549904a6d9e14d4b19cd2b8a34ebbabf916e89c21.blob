@@ -1,0 +1,13 @@
+{
+  "verified_utc": "2026-10-15T18:09:53.349222+00:00",
+  "scope": "actual metadata identity closure only; no scientific verification by execution",
+  "identity_checks": 88,
+  "sources": 19,
+  "candidate_freeze_members": 3,
+  "independent_freeze_members": 25,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "prior_originals_unchanged": true,
+  "comparison_is_candidate_exposed": true,
+  "publication_or_audit": null
+}

@@ -1,0 +1,80 @@
+--- finite_bank_publication_draft/inspect_proposal.py
++++ transverse_field_memory_publication_draft/inspect_proposal.py
+@@ -8,10 +8,12 @@
+ import re
+ 
+ D=Path(__file__).resolve().parent;N=D.parent;W=N.parent/"correlation_worktree";OUT=D/"proposal"
+-PACK=".claude/science/physics-loops/toe-finite-memory-bank-20261015"
+-NOTE="docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+-PRIMARY="scripts/finite_consumed_memory_bank_2026_10_15.py"
+-PARENT="docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md"
++PACK=".claude/science/physics-loops/toe-transverse-field-memory-20261015"
++NOTE="docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md"
++PRIMARY="scripts/transverse_field_gibbs_memory_2026_10_15.py"
++PARENT_DATA=json.loads((D/"PARENT_BINDING.json").read_text())
++assert PARENT_DATA["kind"]=="observed_actual_canonical_parent_metadata"
++PARENT=PARENT_DATA["path"]
+ def sha(b):return hashlib.sha256(b).hexdigest()
+ def read(name):return json.loads((OUT/PACK/name).read_text())
+ def identity(b,row):assert (len(b),sha(b))==(row["bytes"],row["sha256"]),row
+@@ -24,7 +26,7 @@
+     identity(b,row);return b
+ 
+ note=(OUT/NOTE).read_bytes();bodies=read("BODY_MAP.json")["bodies"]
+-assert len(bodies)==2 and {r["name"] for r in bodies}=={"bank_author","bank_assessment"}
++assert len(bodies)==3 and {r["name"] for r in bodies}=={"transverse_root","transverse_independent","transverse_comparison"}
+ for row in bodies:
+     raw=note[row["start_byte_inclusive"]:row["end_byte_exclusive"]]
+     identity(raw,row);assert note.count(raw)==1
+@@ -43,20 +45,22 @@
+ manifest=read("INPUT_MANIFEST.json")
+ for row in manifest["inputs"]:identity((OUT/row["path"]).read_bytes(),row)
+ parsed=ast.parse((OUT/PRIMARY).read_text())
+-names={"AUDIT_INPUT_PATHS","MANIFEST_SHA256","EXPECTED_BODIES","AUDIT_TIMEOUT_SEC","EXPECTED_GIT_BASE"}
++names={"AUDIT_INPUT_PATHS","MANIFEST_SHA256","EXPECTED_BODIES","AUDIT_TIMEOUT_SEC","EXPECTED_GIT_BASE","EXPECTED_PARENTS","EXPECTED_PARENT_REVIEW"}
+ assign={n.targets[0].id:ast.literal_eval(n.value) for n in parsed.body if isinstance(n,ast.Assign) and isinstance(n.targets[0],ast.Name) and n.targets[0].id in names}
+ assert assign["MANIFEST_SHA256"]==sha((OUT/PACK/"INPUT_MANIFEST.json").read_bytes())
+ assert assign["EXPECTED_BODIES"]=={r["name"]:r["sha256"] for r in bodies}
+ expected={r["path"] for r in manifest["inputs"]}|{PACK+"/INPUT_MANIFEST.json",PACK+"/ACTUAL_BINDING.json",PARENT}
+ assert set(assign["AUDIT_INPUT_PATHS"])==expected
+ assert assign["AUDIT_TIMEOUT_SEC"]==60 and assign["EXPECTED_GIT_BASE"] is None
++assert assign["EXPECTED_PARENTS"]=={PARENT:(parents[0]["bytes"],parents[0]["sha256"],parents[0]["claim_id"],parents[0]["accepted_raw_source_sha256"])}
++assert assign["EXPECTED_PARENT_REVIEW"]==parents[0]["accepted_review_interval"]["sha256"]
+ state=read("PUBLICATION_STATE.json");binding=read("ACTUAL_BINDING.json")
+ for field in ["canonical_binding","git_base","primary_execution","cache_execution","mutation_execution","graph_execution","publication_action","retained_audit"]:assert state[field] is None
+-assert state["source_decision"]=="5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908"
++assert state["source_decision"]=="41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a"
+ assert binding["canonical_parent_binding_complete"] is False and binding["note_sha256"] is None and binding["receipt_paths"]==[]
+ assert b"canonical_parent_binding_complete: false\n" in note.split(b"---",2)[1]
+ assert b"Primary-runner role: source integrity only" in note[:4000]
+-assert (OUT/PACK/"PR_TITLE.txt").read_text().strip()=="[physics-loop] finite-memory-bank: bounded_theorem / conditional-support"
++assert (OUT/PACK/"PR_TITLE.txt").read_text().strip()=="[physics-loop] transverse-field-memory: bounded_theorem / conditional-support"
+ 
+ # Lexical link inspection is not a graph build, graph acknowledgment or science check.
+ local_targets=[]
+@@ -75,7 +79,7 @@
+ for row in change_map["files"]:
+     name=row["file"];a=(D/"template_snapshot"/name).read_text();b=(D/name).read_text()
+     assert sha(a.encode())==row["old_sha256"] and sha(b.encode())==row["new_sha256"]
+-    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='correlated_memory_publication_draft/'+name,tofile='finite_bank_publication_draft/'+name))
++    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='finite_bank_publication_draft/'+name,tofile='transverse_field_memory_publication_draft/'+name))
+     assert (D/row["complete_diff"]).read_text()==diff
+     assert (OUT/PACK/"packaging_diffs"/(name+".diff")).read_text()==diff
+     if name.endswith(".py"):
+@@ -87,7 +91,7 @@
+             assert f["status"]==status
+ for p in sorted((D/"packet_text").glob("*")):
+     old=D/"template_snapshot/packet_text"/p.name;a=old.read_text() if old.exists() else '';b=p.read_text()
+-    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='correlated_memory_publication_draft/packet_text/'+p.name if old.exists() else '/dev/null',tofile='finite_bank_publication_draft/packet_text/'+p.name))
++    diff=''.join(difflib.unified_diff(a.splitlines(True),b.splitlines(True),fromfile='finite_bank_publication_draft/packet_text/'+p.name if old.exists() else '/dev/null',tofile='transverse_field_memory_publication_draft/packet_text/'+p.name))
+     assert (D/"diffs"/('packet_'+p.name+'.diff')).read_text()==diff
+     assert (OUT/PACK/"packaging_diffs"/('packet_'+p.name+'.diff')).read_text()==diff
+ run=D/"metadata_runs/build";receipt=json.loads((run/"EXECUTION.json").read_text())
+@@ -96,6 +100,6 @@
+     row=receipt[key];identity(Path(row["path"]).read_bytes(),row)
+ assert not (run/"stderr").read_bytes()
+ assert sha((run/"executed_source.py").read_bytes())==sha((D/"build_proposal.py").read_bytes())
+-result={"checked_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"scope":"Static source/text/AST/recovery metadata only; primary was not imported or executed","note":{"path":NOTE,"bytes":len(note),"sha256":sha(note)},"immutable_bodies":len(bodies),"direct_mathematical_parents":len(parents),"selected_source_records":len(sources),"unique_recovery_blobs":len(blobs),"literal_declared_inputs":len(expected),"lexical_local_doc_targets":sorted(set(local_targets)),"complete_code_or_wrapper_diffs":len(change_map["files"]),"packet_text_diffs":len(list((D/"packet_text").glob("*"))),"actual_binding":None,"primary_execution":None,"scientific_programs_run":0,"historical_programs_replayed":0,"root_source_decisions":"Actual finite-bank source acceptance preserved; no publication or audit inferred"}
++result={"checked_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"scope":"Static source/text/AST/recovery metadata only; primary was not imported or executed","note":{"path":NOTE,"bytes":len(note),"sha256":sha(note)},"immutable_bodies":len(bodies),"direct_mathematical_parents":len(parents),"selected_source_records":len(sources),"unique_recovery_blobs":len(blobs),"literal_declared_inputs":len(expected),"lexical_local_doc_targets":sorted(set(local_targets)),"complete_code_or_wrapper_diffs":len(change_map["files"]),"packet_text_diffs":len(list((D/"packet_text").glob("*"))),"actual_binding":None,"primary_execution":None,"scientific_programs_run":0,"historical_programs_replayed":0,"root_source_decisions":"Actual transverse-field source acceptance preserved; no publication or audit inferred"}
+ (D/"VERIFICATION.json").write_text(json.dumps(result,indent=2)+"\n")
+ print(json.dumps(result,indent=2))

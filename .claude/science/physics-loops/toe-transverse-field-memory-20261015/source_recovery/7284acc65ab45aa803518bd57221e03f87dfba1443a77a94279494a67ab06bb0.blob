@@ -1,0 +1,115 @@
+"""Source-integrity primary only: no scientific program, simulation or proof test."""
+from pathlib import Path, PurePosixPath
+import hashlib
+import json
+
+REPO = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 60
+NOTE = "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+PACKET = ".claude/science/physics-loops/toe-transverse-field-memory-20261015"
+PARENT = "__PARENT_PATH__"
+EXPECTED_PARENTS = __EXPECTED_PARENTS__
+EXPECTED_PARENT_REVIEW = __EXPECTED_PARENT_REVIEW__
+EXPECTED_ACCEPTANCES = {
+    "transverse_field": "41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a",
+}
+# Root must replace this null in a separately reviewed bound version.
+EXPECTED_GIT_BASE = None
+MANIFEST_SHA256 = "__MANIFEST_SHA256__"
+AUDIT_INPUT_PATHS = __AUDIT_INPUT_PATHS__
+EXPECTED_BODIES = __EXPECTED_BODIES__
+
+def require(ok, message):
+    if not ok: raise ValueError(message)
+def digest(data): return hashlib.sha256(data).hexdigest()
+def safe(rel):
+    path=PurePosixPath(rel)
+    require(not path.is_absolute() and ".." not in path.parts,"Unsafe package input path")
+    result=(REPO/rel).resolve()
+    result.relative_to(REPO.resolve())
+    return result
+def identity(data,row):
+    require(len(data)==row["bytes"] and digest(data)==row["sha256"],"Input identity mismatch")
+def read_json(rel): return json.loads(safe(rel).read_bytes())
+def interval(row):
+    data=safe(row["container"]).read_bytes()
+    a,b=row["start_byte_inclusive"],row["end_byte_exclusive"]
+    require(isinstance(a,int) and isinstance(b,int) and 0<=a<b<=len(data),"Invalid byte interval")
+    raw=data[a:b];identity(raw,row)
+    require(data.count(raw)==1,"Raw source must occur exactly once")
+    return raw
+
+def main():
+    mpath=PACKET+"/INPUT_MANIFEST.json"
+    raw=safe(mpath).read_bytes()
+    require(digest(raw)==MANIFEST_SHA256,"Input manifest identity")
+    manifest=json.loads(raw)
+    require(manifest["schema"]=="source_integrity_inputs_v1","Input schema")
+    rows=manifest["inputs"]
+    require(len({r["path"] for r in rows})==len(rows),"Duplicate input path")
+    actual=PACKET+"/ACTUAL_BINDING.json"
+    expected={r["path"] for r in rows}|{mpath,actual}|set(EXPECTED_PARENTS)
+    require(set(AUDIT_INPUT_PATHS)==expected,"Literal declared-input closure")
+    for row in rows: identity(safe(row["path"]).read_bytes(),row)
+    note=safe(NOTE).read_bytes()
+    header=note.split(b"---",2)[1].decode().splitlines()
+    for field in ["canonical_parent_binding_complete: true","claim_type: bounded_theorem","actual_current_surface_status: conditional-support","trace_class: upstream_support","audit_required_before_effective_retained: true","bare_retained_allowed: false",'upstream_dependencies: ["__PARENT_CLAIM_ID__"]',"runner: scripts/transverse_field_gibbs_memory_2026_10_15.py"]:
+        require(field in header,"Missing actual scope/binding field: "+field)
+    body_map=read_json(PACKET+"/BODY_MAP.json")
+    require(body_map["note"]==NOTE,"Body container")
+    require({r["name"] for r in body_map["bodies"]}==set(EXPECTED_BODIES) and len(body_map["bodies"])==len(EXPECTED_BODIES),"Immutable body roles")
+    for row in body_map["bodies"]:
+        require(row["container"]==NOTE and row["sha256"]==EXPECTED_BODIES[row["name"]],"Immutable body identity")
+        interval(row)
+    parents=read_json(PACKET+"/DEPENDENCIES.json")["dependencies"]
+    require(len(parents)==1 and {r["path"] for r in parents}==set(EXPECTED_PARENTS),"Exactly one direct mathematical parent")
+    for row in parents:
+        require(row["role"]=="direct_mathematical_parent","Parent role")
+        require((row["bytes"],row["sha256"],row["claim_id"],row["accepted_raw_source_sha256"])==EXPECTED_PARENTS[row["path"]],"Parent identity")
+        identity(safe(row["path"]).read_bytes(),row)
+        r=row["accepted_body_interval"]
+        require(r["container"]==row["path"] and r["sha256"]==row["accepted_raw_source_sha256"],"Parent body role")
+        interval(r)
+        r=row["accepted_review_interval"]
+        require(r["container"]==row["path"] and r["sha256"]==EXPECTED_PARENT_REVIEW,"Parent review role")
+        interval(r)
+    archive=read_json(PACKET+"/ARCHIVE_INDEX.json")["objects"]
+    require(len({r["sha256"] for r in archive})==len(archive),"Recovery must be deduplicated by hash")
+    for row in archive: identity(safe(row["path"]).read_bytes(),row)
+    sources=read_json(PACKET+"/SOURCE_MANIFEST.json")["sources"]
+    accepted={r["sha256"] for r in sources if r["role"]=="root_conditional_source_acceptance"}
+    require(accepted==set(EXPECTED_ACCEPTANCES.values()),"Exact transverse-field source decision")
+    for row in sources:
+        r=row["recovery"]
+        if r["kind"]=="blob": identity(safe(r["path"]).read_bytes(),row)
+        elif r["kind"] in {"body_interval","external_body_interval"}:
+            require(r["container"]==NOTE or r["container"] in EXPECTED_PARENTS,"Undeclared interval container")
+            interval({**r,"bytes":row["bytes"],"sha256":row["sha256"]})
+        else:
+            require(r["kind"]=="external_pinned" and r["path"] in EXPECTED_PARENTS,"Unknown external input")
+            identity(safe(r["path"]).read_bytes(),row)
+    state=read_json(PACKET+"/PUBLICATION_STATE.json")
+    require(state["kind"]=="dated_source_proposal_not_actual_binding","Historical state role")
+    for field in ["canonical_binding","git_base","primary_execution","cache_execution","mutation_execution","graph_execution","publication_action","retained_audit"]:
+        require(state[field] is None,"Historical null state must remain null: "+field)
+    require(state["scientific_programs_run"]==0 and state["historical_programs_replayed"]==0,"Historical execution scope")
+    require(state["source_decision"]==EXPECTED_ACCEPTANCES["transverse_field"],"Actual transverse-field source decision")
+    binding=read_json(actual)
+    require(binding["kind"]=="actual_root_canonical_binding" and binding["canonical_parent_binding_complete"] is True,"Actual binding is required; source draft is unbound")
+    require(binding["root_read_complete"] is True,"Actual root inspection required")
+    require(binding["note_sha256"]==digest(note),"Bound canonical note identity")
+    require(binding["parent_sha256"]=={k:v[1] for k,v in EXPECTED_PARENTS.items()},"Actual parent pin")
+    require(binding["source_acceptances"]==EXPECTED_ACCEPTANCES,"Actual source decision")
+    require(isinstance(EXPECTED_GIT_BASE,str) and len(EXPECTED_GIT_BASE)==40 and all(c in "0123456789abcdef" for c in EXPECTED_GIT_BASE),"Actual Git base must be source-bound by root")
+    require(binding["git_base"]==EXPECTED_GIT_BASE,"Actual selected base")
+    require(isinstance(binding["receipt_paths"],list) and bool(binding["receipt_paths"]),"Actual binding receipt required")
+    for path in binding["receipt_paths"]:
+        require(path in {r["path"] for r in rows} and path in AUDIT_INPUT_PATHS and safe(path).is_file(),"Actual receipt is not a pinned declared input")
+    print(json.dumps({"result":"source_integrity_verified","scope":"exact bytes, recovery and binding only; no mathematical validation by execution","scientific_programs_run":0,"historical_programs_replayed":0,"publication_or_retained_status_certified":False},sort_keys=True))
+    print("per_element: literal fields, positive reserves and channel reconciliation preserved; no physical gate executed")
+    print("per_site: finite source graph and fixed consumer endpoints remain supplied premises")
+    print("per_mode: rare-record, reference and full-density quench limitations preserved as text")
+    print("per_block: three immutable bodies, one parent and actual source binding checked")
+    print("lattice_wide: no native Gibbs preparation, general noncommuting extension or audit certified")
+
+if __name__=="__main__": main()

@@ -1,0 +1,678 @@
+{
+  "schema": "sha256_deduplicated_recovery_v1",
+  "objects": [
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "aliases": [
+        "repository/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/10b075e8fb1cf76d2303cfc21960c5e5e9b26d3916343162eb5d7e03f319a2c7.blob",
+      "bytes": 2774,
+      "sha256": "10b075e8fb1cf76d2303cfc21960c5e5e9b26d3916343162eb5d7e03f319a2c7",
+      "aliases": [
+        "draft/template_snapshot/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/1463b310abfb086aa64039873fe7c2a3b7bfa148e5a4eaf857b94b92fba4d2da.blob",
+      "bytes": 1764,
+      "sha256": "1463b310abfb086aa64039873fe7c2a3b7bfa148e5a4eaf857b94b92fba4d2da",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/PROBLEM.md",
+        "campaign/transverse_field_memory_independent/independent/metadata_run/source_at_launch/PROBLEM.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/1708bd8973c91c6efaa214778a4ccd09b9a35387b3d3bcebe8e10e5987cbbe29.blob",
+      "bytes": 14669,
+      "sha256": "1708bd8973c91c6efaa214778a4ccd09b9a35387b3d3bcebe8e10e5987cbbe29",
+      "aliases": [
+        "draft/template_snapshot/build_proposal.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/1713e53034f530fd761de763ba91b2590dd0dc7c305e06f120850b6cfb5e16f1.blob",
+      "bytes": 3243,
+      "sha256": "1713e53034f530fd761de763ba91b2590dd0dc7c305e06f120850b6cfb5e16f1",
+      "aliases": [
+        "draft/PARENT_DEPENDENCIES.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/1eb6dc4ffbe52b5fb81382c8fdedb09b81fd0870eef6ee5a85d50940901c4d3c.blob",
+      "bytes": 2685,
+      "sha256": "1eb6dc4ffbe52b5fb81382c8fdedb09b81fd0870eef6ee5a85d50940901c4d3c",
+      "aliases": [
+        "draft/READ_COVERAGE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/23c69777e1c9cede803731e85b0295cf4966f78d8736d41e041218474c68685c.blob",
+      "bytes": 2749,
+      "sha256": "23c69777e1c9cede803731e85b0295cf4966f78d8736d41e041218474c68685c",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/metadata_run/source_at_launch/verify_metadata.py",
+        "campaign/transverse_field_memory_independent/independent/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/2544d341f3925dadb5d610d736ef4a33ec6d3e692fe9b30cef6b310072da7852.blob",
+      "bytes": 3361,
+      "sha256": "2544d341f3925dadb5d610d736ef4a33ec6d3e692fe9b30cef6b310072da7852",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/EXPOSURE.md",
+        "campaign/transverse_field_memory_independent/independent/metadata_run/source_at_launch/EXPOSURE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/2b2565fbe3ce3626fbe4ea734316f223c104a93967e88c4e3d8559526ab9e139.blob",
+      "bytes": 404,
+      "sha256": "2b2565fbe3ce3626fbe4ea734316f223c104a93967e88c4e3d8559526ab9e139",
+      "aliases": [
+        "campaign/transverse_field_memory_root_candidate/PRIMARY_OPEN_TOOL_RESPONSE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.blob",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "aliases": [
+        "repository/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/2f32b9e21ba256c8a1afe91ef967a2845932b40a05645935b4e934d4221d59ae.blob",
+      "bytes": 5217,
+      "sha256": "2f32b9e21ba256c8a1afe91ef967a2845932b40a05645935b4e934d4221d59ae",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/2f3967bde89d0ca5cdfb74e4c7eeddf0d3a57c653e14327cbd02f3e616b95e90.blob",
+      "bytes": 2384,
+      "sha256": "2f3967bde89d0ca5cdfb74e4c7eeddf0d3a57c653e14327cbd02f3e616b95e90",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/metadata_run/source_at_launch/record_metadata.py",
+        "campaign/transverse_field_memory_independent/independent/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/38ce43acd36276501867e202b5db145e2cc537a16a090cc2c7d656bc067cdbfe.blob",
+      "bytes": 5174,
+      "sha256": "38ce43acd36276501867e202b5db145e2cc537a16a090cc2c7d656bc067cdbfe",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/metadata_run/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/3ff0ff43ccb169118a47c5585986376cf8a4dab549fa2812c9730fdb848717ac.blob",
+      "bytes": 139,
+      "sha256": "3ff0ff43ccb169118a47c5585986376cf8a4dab549fa2812c9730fdb848717ac",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a.blob",
+      "bytes": 4014,
+      "sha256": "41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a",
+      "aliases": [
+        "campaign/transverse_field_memory_root_review/ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/444967a45050ef38aca3723ecf34c1e2c102ac2c6abe0ad12948e5b0469ff890.blob",
+      "bytes": 3868,
+      "sha256": "444967a45050ef38aca3723ecf34c1e2c102ac2c6abe0ad12948e5b0469ff890",
+      "aliases": [
+        "draft/seal_packet.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/44f67af24d3d92c4e7f24afd1c9c9e217cc61fe4c8c5f2b093de689a6c4c161a.blob",
+      "bytes": 2648,
+      "sha256": "44f67af24d3d92c4e7f24afd1c9c9e217cc61fe4c8c5f2b093de689a6c4c161a",
+      "aliases": [
+        "campaign/transverse_field_memory_root_review/VERIFICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/483583c64d4b46ad901bfdf72a971ef7bf2e6ab08ec8a85f03d7a9ac0b94737a.blob",
+      "bytes": 443,
+      "sha256": "483583c64d4b46ad901bfdf72a971ef7bf2e6ab08ec8a85f03d7a9ac0b94737a",
+      "aliases": [
+        "draft/INITIAL_PARENT_BINDING.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/49b39aaaaa967a4bccab0aec74132cd5a147ecd160e94f7c84dafe652627aa4a.blob",
+      "bytes": 1461,
+      "sha256": "49b39aaaaa967a4bccab0aec74132cd5a147ecd160e94f7c84dafe652627aa4a",
+      "aliases": [
+        "draft/INSTRUCTION_MATCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/4d9eebdfe214d86afa5968d5adf73662c9b96bbd2cec19fd0d94fbb4d96fcb70.blob",
+      "bytes": 5980,
+      "sha256": "4d9eebdfe214d86afa5968d5adf73662c9b96bbd2cec19fd0d94fbb4d96fcb70",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/capture_sources.py",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/capture_sources.py",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/source_at_launch/capture_sources.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/507d2a85e7d7eddeef0cf97b5701832212b35b2ed692b8514f06ccec7af1e562.blob",
+      "bytes": 24503,
+      "sha256": "507d2a85e7d7eddeef0cf97b5701832212b35b2ed692b8514f06ccec7af1e562",
+      "aliases": [
+        "draft/wrapper.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/50d358e9b1a7d252c449e7d8ffd9db6f8ee760f2dc2e62cc76b1bdd72e8830ba.blob",
+      "bytes": 7955,
+      "sha256": "50d358e9b1a7d252c449e7d8ffd9db6f8ee760f2dc2e62cc76b1bdd72e8830ba",
+      "aliases": [
+        "draft/inspect_proposal.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/51a58e088885b4c68819a93ebf68775fbcac725be2557b28cfe59b469a2a26a7.blob",
+      "bytes": 1894,
+      "sha256": "51a58e088885b4c68819a93ebf68775fbcac725be2557b28cfe59b469a2a26a7",
+      "aliases": [
+        "draft/PREPARED_PARENT_BINDING.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/5256971fa7f3523ce9f6f99b9cd1379e2b8f288b2157a7786e45ab2612d3c3a1.blob",
+      "bytes": 2225,
+      "sha256": "5256971fa7f3523ce9f6f99b9cd1379e2b8f288b2157a7786e45ab2612d3c3a1",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/5637cd854c837252157eb9ecf603690fa32e5d7cccc30e7f823f06dd7ae1f5c7.blob",
+      "bytes": 2137,
+      "sha256": "5637cd854c837252157eb9ecf603690fa32e5d7cccc30e7f823f06dd7ae1f5c7",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/metadata_run/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/5d81b31f98478c15d16cb72f056202bd9fc0df3d24300f89e357d4873ed704d0.blob",
+      "bytes": 6399,
+      "sha256": "5d81b31f98478c15d16cb72f056202bd9fc0df3d24300f89e357d4873ed704d0",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/6024d6e7e4337cadafb9753477de4d066e3b2b3f1e2715a937a6f1f8d157e7f3.blob",
+      "bytes": 3227,
+      "sha256": "6024d6e7e4337cadafb9753477de4d066e3b2b3f1e2715a937a6f1f8d157e7f3",
+      "aliases": [
+        "draft/template_snapshot/packet_text/HANDOFF.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37.blob",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "aliases": [
+        "repository/docs/audit/data/axiom_premise_nodes.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/67a7af8e049cacee2d69c0bab132fd4ecf40915a7acb73eb1b6498b8a1bf2a6f.blob",
+      "bytes": 7533,
+      "sha256": "67a7af8e049cacee2d69c0bab132fd4ecf40915a7acb73eb1b6498b8a1bf2a6f",
+      "aliases": [
+        "draft/template_snapshot/inspect_proposal.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/68ad6535c26bd42f14c31f5a2aa3eeddfd636d513fcbc7e51d8e7f8be82e3356.blob",
+      "bytes": 2200,
+      "sha256": "68ad6535c26bd42f14c31f5a2aa3eeddfd636d513fcbc7e51d8e7f8be82e3356",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/6f44b2139e635f1f5ed14919a2250951b713ba10568cbd48cfcaea353886e2f7.blob",
+      "bytes": 1764,
+      "sha256": "6f44b2139e635f1f5ed14919a2250951b713ba10568cbd48cfcaea353886e2f7",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/verify_metadata.py",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/source_at_launch/verify_metadata.py",
+        "campaign/transverse_field_memory_independent/comparison/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/70bd9b7bf4569c544af9a893dd2c074d8078a0922e5a5353e0c8655ab3c34b10.blob",
+      "bytes": 1638,
+      "sha256": "70bd9b7bf4569c544af9a893dd2c074d8078a0922e5a5353e0c8655ab3c34b10",
+      "aliases": [
+        "draft/template_snapshot/packet_text/COUNTEREXAMPLES.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/715f1263ef6bc5c8f36b158cd5dec26a40f51f643ac6339cfe6dccceab167182.blob",
+      "bytes": 1571,
+      "sha256": "715f1263ef6bc5c8f36b158cd5dec26a40f51f643ac6339cfe6dccceab167182",
+      "aliases": [
+        "draft/PARENT_PUBLICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/7284acc65ab45aa803518bd57221e03f87dfba1443a77a94279494a67ab06bb0.blob",
+      "bytes": 7790,
+      "sha256": "7284acc65ab45aa803518bd57221e03f87dfba1443a77a94279494a67ab06bb0",
+      "aliases": [
+        "draft/primary_template.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/729b194f4bb85721715573ce8b37c8a81df6c67b3b84f9a3deaed02b23a5aad0.blob",
+      "bytes": 1517,
+      "sha256": "729b194f4bb85721715573ce8b37c8a81df6c67b3b84f9a3deaed02b23a5aad0",
+      "aliases": [
+        "draft/template_snapshot/packet_text/RECOVERY_SCOPE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563.blob",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "aliases": [
+        "repository/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/79d10728c72fcf450086834a8587008a16725f463abe4b43556ffbf61e5d23ec.blob",
+      "bytes": 20401,
+      "sha256": "79d10728c72fcf450086834a8587008a16725f463abe4b43556ffbf61e5d23ec",
+      "aliases": [
+        "draft/template_snapshot/wrapper.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/7abab850904ec7f0c33899cb814c3384c65ef4b845afead19d4e6265cc9295be.blob",
+      "bytes": 28101,
+      "sha256": "7abab850904ec7f0c33899cb814c3384c65ef4b845afead19d4e6265cc9295be",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.blob",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/physics-loop/SKILL.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/7d9b9773894ae0aedfa0efb2d732f4d7e400ff819450e5f1136f28463d9630f4.blob",
+      "bytes": 2432,
+      "sha256": "7d9b9773894ae0aedfa0efb2d732f4d7e400ff819450e5f1136f28463d9630f4",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/READ_EXPOSURE.json",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/READ_EXPOSURE.json",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/source_at_launch/READ_EXPOSURE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/86b626cc3c4ff238dcb9601a3bfde9583f8a9fa9f1e1c11e2d62418d96421561.blob",
+      "bytes": 3927,
+      "sha256": "86b626cc3c4ff238dcb9601a3bfde9583f8a9fa9f1e1c11e2d62418d96421561",
+      "aliases": [
+        "draft/PARENT_READING.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/8cfb69261c6cf18b0b516d712e9f22fd2e5e0b2313b9e216f4e9596379c87b64.blob",
+      "bytes": 1530,
+      "sha256": "8cfb69261c6cf18b0b516d712e9f22fd2e5e0b2313b9e216f4e9596379c87b64",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/RECOVERY_SCOPE.md",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/RECOVERY_SCOPE.md",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/source_at_launch/RECOVERY_SCOPE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/96349ed2e9ab870e6dda51cb0b884288c22aa39e3ed98fcab37e51cb063daa36.blob",
+      "bytes": 662,
+      "sha256": "96349ed2e9ab870e6dda51cb0b884288c22aa39e3ed98fcab37e51cb063daa36",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/SEAL_OPERATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/9aae08f4c95c7b02d55e755d269c4d836384a8c0074f41fe9047c00b76068206.blob",
+      "bytes": 1254,
+      "sha256": "9aae08f4c95c7b02d55e755d269c4d836384a8c0074f41fe9047c00b76068206",
+      "aliases": [
+        "campaign/transverse_field_memory_root_candidate/SOURCE_PINS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/9ef365e53afd18f02b66ea7549904a6d9e14d4b19cd2b8a34ebbabf916e89c21.blob",
+      "bytes": 442,
+      "sha256": "9ef365e53afd18f02b66ea7549904a6d9e14d4b19cd2b8a34ebbabf916e89c21",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/VERIFICATION.json",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/acdce88206ccaaec24da37c29ef1cd484ac28c11e62611d8d3cd8c76a362e8a5.blob",
+      "bytes": 9055,
+      "sha256": "acdce88206ccaaec24da37c29ef1cd484ac28c11e62611d8d3cd8c76a362e8a5",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/ad9b39fb72f4e4ff7f6f76ff28ed59a1fa1656f7645ed55f866e4240999bc35e.blob",
+      "bytes": 2820,
+      "sha256": "ad9b39fb72f4e4ff7f6f76ff28ed59a1fa1656f7645ed55f866e4240999bc35e",
+      "aliases": [
+        "draft/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/b08c128d2fcf3a0e0cfe38da029ba5e63ddeb4908be2debc92e1bce21fb9163e.blob",
+      "bytes": 1622,
+      "sha256": "b08c128d2fcf3a0e0cfe38da029ba5e63ddeb4908be2debc92e1bce21fb9163e",
+      "aliases": [
+        "draft/template_snapshot/packet_text/ASSUMPTIONS_AND_IMPORTS.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/b53da933f3545ffb60ce7817722f8a9442d91a11d6caeef4d828d46c158ef221.blob",
+      "bytes": 20609,
+      "sha256": "b53da933f3545ffb60ce7817722f8a9442d91a11d6caeef4d828d46c158ef221",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/b69f398c97cbeed620ed6c3c081b5d96c26b0e5c910706a677a7449657a80d7a.blob",
+      "bytes": 2798,
+      "sha256": "b69f398c97cbeed620ed6c3c081b5d96c26b0e5c910706a677a7449657a80d7a",
+      "aliases": [
+        "draft/PARENT_BODY_MAP.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/b9cfba8929eaf8f4a2a85fb1ffe95c0c1cb38cb843e24fcff949cf67b343f97f.blob",
+      "bytes": 440,
+      "sha256": "b9cfba8929eaf8f4a2a85fb1ffe95c0c1cb38cb843e24fcff949cf67b343f97f",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/SEAL_OPERATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/bd3309e15c18f0cdfb2a0ec610d45162c662ebf26f5aabd5089a17238c91b2b4.blob",
+      "bytes": 1496,
+      "sha256": "bd3309e15c18f0cdfb2a0ec610d45162c662ebf26f5aabd5089a17238c91b2b4",
+      "aliases": [
+        "draft/template_snapshot/packet_text/CLAIM_STATUS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.blob",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/c271bed5483f0e084c031ae5c855bc6c7a9b7439082937d7c96bd6064443a8c6.blob",
+      "bytes": 2132,
+      "sha256": "c271bed5483f0e084c031ae5c855bc6c7a9b7439082937d7c96bd6064443a8c6",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/INSTRUCTIONS.json",
+        "campaign/transverse_field_memory_independent/independent/metadata_run/source_at_launch/INSTRUCTIONS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/c2c392635dd6c0320685da0275f28add2d3494eb6ca8316cf02f435b4bfc800b.blob",
+      "bytes": 551,
+      "sha256": "c2c392635dd6c0320685da0275f28add2d3494eb6ca8316cf02f435b4bfc800b",
+      "aliases": [
+        "campaign/runs/transverse_field_root_acceptance_1830/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/c43d813357cb38331da26d004e9f7846a96c03bedb16c5fe903fc48693bd7d68.blob",
+      "bytes": 642,
+      "sha256": "c43d813357cb38331da26d004e9f7846a96c03bedb16c5fe903fc48693bd7d68",
+      "aliases": [
+        "campaign/transverse_field_memory_root_review/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/c8861caeb4a697e5de423842d6b02fd8018953fd77b5ff9dc0d04ac2379e31e6.blob",
+      "bytes": 3916,
+      "sha256": "c8861caeb4a697e5de423842d6b02fd8018953fd77b5ff9dc0d04ac2379e31e6",
+      "aliases": [
+        "draft/template_snapshot/packet_text/REVIEW_HISTORY.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/c9ad1d105c8a3c766981a49da834dc87e16d826067a694a093de6eba24562b46.blob",
+      "bytes": 663,
+      "sha256": "c9ad1d105c8a3c766981a49da834dc87e16d826067a694a093de6eba24562b46",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/VERIFICATION.json",
+        "campaign/transverse_field_memory_independent/independent/metadata_run/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/cdd2a40a53d39ac8cfee8004c84e9cb7242e8f624b0eb0eb83eda247e925d71d.blob",
+      "bytes": 1464,
+      "sha256": "cdd2a40a53d39ac8cfee8004c84e9cb7242e8f624b0eb0eb83eda247e925d71d",
+      "aliases": [
+        "campaign/runs/transverse_field_root_acceptance_1830/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "aliases": [
+        "campaign/run.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/d1577da8b8796917c7660180daef846f8c0edfcce30deb70164b08354406e55e.blob",
+      "bytes": 641,
+      "sha256": "d1577da8b8796917c7660180daef846f8c0edfcce30deb70164b08354406e55e",
+      "aliases": [
+        "campaign/transverse_field_memory_root_candidate/PROPOSAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/d38091546579dda821911ca839eb91f74fdf7e0a4a297091f2006c25f10e7443.blob",
+      "bytes": 1762,
+      "sha256": "d38091546579dda821911ca839eb91f74fdf7e0a4a297091f2006c25f10e7443",
+      "aliases": [
+        "draft/template_snapshot/packet_text/PR_BODY.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/d83a9b713aa637811c126603a0b0da24ae5e701232c8f78ea3ca8e10c2968dd1.blob",
+      "bytes": 2239,
+      "sha256": "d83a9b713aa637811c126603a0b0da24ae5e701232c8f78ea3ca8e10c2968dd1",
+      "aliases": [
+        "draft/PARENT_METADATA_ORIGINS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/d8536447cebcef30e5d05c9b81e230515a565b7471ae32c0fb85700653efe9b4.blob",
+      "bytes": 2394,
+      "sha256": "d8536447cebcef30e5d05c9b81e230515a565b7471ae32c0fb85700653efe9b4",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/independent/metadata_run/source_at_launch/seal.py",
+        "campaign/transverse_field_memory_independent/independent/seal.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/d8e50496df2cc4de3725b80ab771bc26e215f2a7b0a20228acdc86f2ef31ce9a.blob",
+      "bytes": 2857,
+      "sha256": "d8e50496df2cc4de3725b80ab771bc26e215f2a7b0a20228acdc86f2ef31ce9a",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/seal.py",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/source_at_launch/seal.py",
+        "campaign/transverse_field_memory_independent/comparison/seal.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/dfef535a1f7bdfd6ad9d6084c6e709af69e52747f377ddb3ccfbb1a49fa30d39.blob",
+      "bytes": 18984,
+      "sha256": "dfef535a1f7bdfd6ad9d6084c6e709af69e52747f377ddb3ccfbb1a49fa30d39",
+      "aliases": [
+        "draft/build_proposal.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.blob",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aliases": [
+        "campaign/runs/transverse_field_root_acceptance_1830/stderr",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/stderr",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/stderr",
+        "campaign/transverse_field_memory_independent/independent/metadata_run/stderr"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/e51556af7a1dbe1f2370d438d22d4a0797331780c239154e972d57df968a7c3b.blob",
+      "bytes": 2499,
+      "sha256": "e51556af7a1dbe1f2370d438d22d4a0797331780c239154e972d57df968a7c3b",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/record_metadata.py",
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/source_at_launch/record_metadata.py",
+        "campaign/transverse_field_memory_independent/comparison/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/e759dd544df26db9930b19e500a36a8cad9da9f84579906263297d435646e6cc.blob",
+      "bytes": 1970,
+      "sha256": "e759dd544df26db9930b19e500a36a8cad9da9f84579906263297d435646e6cc",
+      "aliases": [
+        "draft/template_snapshot/packet_text/PROVENANCE_PLAN.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/ea7242efaeb00ba35cc9aee3f155796fdf3b0f2345cdbf1f9f3cc4aba71c9f73.blob",
+      "bytes": 3863,
+      "sha256": "ea7242efaeb00ba35cc9aee3f155796fdf3b0f2345cdbf1f9f3cc4aba71c9f73",
+      "aliases": [
+        "draft/template_snapshot/seal_packet.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/eacfe6f0f22274e972b5ea1082fe75d8303c2d80f2062693568a9b5a970be59d.blob",
+      "bytes": 917,
+      "sha256": "eacfe6f0f22274e972b5ea1082fe75d8303c2d80f2062693568a9b5a970be59d",
+      "aliases": [
+        "draft/template_snapshot/packet_text/TRACE_GATE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/ee89d673d0d3899dc1bcb0c50449275893adf52276a49f469bd044b0be76cfb7.blob",
+      "bytes": 7430,
+      "sha256": "ee89d673d0d3899dc1bcb0c50449275893adf52276a49f469bd044b0be76cfb7",
+      "aliases": [
+        "draft/TEMPLATE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.blob",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/f7521b2759bf751b38d02529a7cbd407d9c5e0d873a13ce552c7e466886b11f1.blob",
+      "bytes": 2694,
+      "sha256": "f7521b2759bf751b38d02529a7cbd407d9c5e0d873a13ce552c7e466886b11f1",
+      "aliases": [
+        "draft/PARENT_BINDING.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/f8d564f76d8e49d8be162ebca0668283418d31e28a76d2eb0468ff0c8cbeeb6a.blob",
+      "bytes": 5252,
+      "sha256": "f8d564f76d8e49d8be162ebca0668283418d31e28a76d2eb0468ff0c8cbeeb6a",
+      "aliases": [
+        "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "aliases": [
+        "repository/AGENTS.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/fb47dbfcfbdc5bc525356f831e654beb9237b8d9fc2a025774cecd1796b9a6c7.blob",
+      "bytes": 374,
+      "sha256": "fb47dbfcfbdc5bc525356f831e654beb9237b8d9fc2a025774cecd1796b9a6c7",
+      "aliases": [
+        "draft/PARENT_ATTACHMENT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/feac515d67c7fdcf239c7867504dc22f19a96434154e046c999f564c88076f69.blob",
+      "bytes": 8090,
+      "sha256": "feac515d67c7fdcf239c7867504dc22f19a96434154e046c999f564c88076f69",
+      "aliases": [
+        "draft/template_snapshot/primary_template.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/source_recovery/ff97acd2c1dbebb629537bec53e904c58129ab0d09e29abbdcca11f1384d4973.blob",
+      "bytes": 6751,
+      "sha256": "ff97acd2c1dbebb629537bec53e904c58129ab0d09e29abbdcca11f1384d4973",
+      "aliases": [
+        "campaign/bootstrap/accept_transverse_field_1830.py",
+        "campaign/runs/transverse_field_root_acceptance_1830/executed_source.py"
+      ]
+    }
+  ],
+  "immutable_bodies_stored_only_in_note": true
+}

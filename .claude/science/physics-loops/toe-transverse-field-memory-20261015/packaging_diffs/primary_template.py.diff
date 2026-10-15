@@ -1,0 +1,67 @@
+--- finite_bank_publication_draft/primary_template.py
++++ transverse_field_memory_publication_draft/primary_template.py
+@@ -5,15 +5,13 @@
+ 
+ REPO = Path(__file__).resolve().parents[1]
+ AUDIT_TIMEOUT_SEC = 60
+-NOTE = "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+-PACKET = ".claude/science/physics-loops/toe-finite-memory-bank-20261015"
+-PARENT = "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+-EXPECTED_PARENTS = {
+-    PARENT: (203198, "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89", "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15", "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"),
+-}
+-EXPECTED_PARENT_REVIEW = "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
++NOTE = "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md"
++PACKET = ".claude/science/physics-loops/toe-transverse-field-memory-20261015"
++PARENT = "__PARENT_PATH__"
++EXPECTED_PARENTS = __EXPECTED_PARENTS__
++EXPECTED_PARENT_REVIEW = __EXPECTED_PARENT_REVIEW__
+ EXPECTED_ACCEPTANCES = {
+-    "finite_bank": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908",
++    "transverse_field": "41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a",
+ }
+ # Root must replace this null in a separately reviewed bound version.
+ EXPECTED_GIT_BASE = None
+@@ -55,7 +53,7 @@
+     for row in rows: identity(safe(row["path"]).read_bytes(),row)
+     note=safe(NOTE).read_bytes()
+     header=note.split(b"---",2)[1].decode().splitlines()
+-    for field in ["canonical_parent_binding_complete: true","claim_type: bounded_theorem","actual_current_surface_status: conditional-support","trace_class: upstream_support","audit_required_before_effective_retained: true","bare_retained_allowed: false",'upstream_dependencies: ["correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15"]',"runner: scripts/finite_consumed_memory_bank_2026_10_15.py"]:
++    for field in ["canonical_parent_binding_complete: true","claim_type: bounded_theorem","actual_current_surface_status: conditional-support","trace_class: upstream_support","audit_required_before_effective_retained: true","bare_retained_allowed: false",'upstream_dependencies: ["__PARENT_CLAIM_ID__"]',"runner: scripts/transverse_field_gibbs_memory_2026_10_15.py"]:
+         require(field in header,"Missing actual scope/binding field: "+field)
+     body_map=read_json(PACKET+"/BODY_MAP.json")
+     require(body_map["note"]==NOTE,"Body container")
+@@ -80,7 +78,7 @@
+     for row in archive: identity(safe(row["path"]).read_bytes(),row)
+     sources=read_json(PACKET+"/SOURCE_MANIFEST.json")["sources"]
+     accepted={r["sha256"] for r in sources if r["role"]=="root_conditional_source_acceptance"}
+-    require(accepted==set(EXPECTED_ACCEPTANCES.values()),"Exact finite-bank source decision")
++    require(accepted==set(EXPECTED_ACCEPTANCES.values()),"Exact transverse-field source decision")
+     for row in sources:
+         r=row["recovery"]
+         if r["kind"]=="blob": identity(safe(r["path"]).read_bytes(),row)
+@@ -95,7 +93,7 @@
+     for field in ["canonical_binding","git_base","primary_execution","cache_execution","mutation_execution","graph_execution","publication_action","retained_audit"]:
+         require(state[field] is None,"Historical null state must remain null: "+field)
+     require(state["scientific_programs_run"]==0 and state["historical_programs_replayed"]==0,"Historical execution scope")
+-    require(state["source_decision"]==EXPECTED_ACCEPTANCES["finite_bank"],"Actual finite-bank source decision")
++    require(state["source_decision"]==EXPECTED_ACCEPTANCES["transverse_field"],"Actual transverse-field source decision")
+     binding=read_json(actual)
+     require(binding["kind"]=="actual_root_canonical_binding" and binding["canonical_parent_binding_complete"] is True,"Actual binding is required; source draft is unbound")
+     require(binding["root_read_complete"] is True,"Actual root inspection required")
+@@ -108,10 +106,10 @@
+     for path in binding["receipt_paths"]:
+         require(path in {r["path"] for r in rows} and path in AUDIT_INPUT_PATHS and safe(path).is_file(),"Actual receipt is not a pinned declared input")
+     print(json.dumps({"result":"source_integrity_verified","scope":"exact bytes, recovery and binding only; no mathematical validation by execution","scientific_programs_run":0,"historical_programs_replayed":0,"publication_or_retained_status_certified":False},sort_keys=True))
+-    print("per_element: literal source coefficients are preserved; no physical gate executed")
+-    print("per_site: fixed old sites and finite bank geometry remain conditional source statements")
+-    print("per_mode: one-global-error and ideal-unused-bank scopes are preserved as text")
+-    print("per_block: two immutable bodies, one parent and actual source binding checked")
+-    print("lattice_wide: no native memory, restoration, autonomous program or audit certified")
++    print("per_element: literal fields, positive reserves and channel reconciliation preserved; no physical gate executed")
++    print("per_site: finite source graph and fixed consumer endpoints remain supplied premises")
++    print("per_mode: rare-record, reference and full-density quench limitations preserved as text")
++    print("per_block: three immutable bodies, one parent and actual source binding checked")
++    print("lattice_wide: no native Gibbs preparation, general noncommuting extension or audit certified")
+ 
+ if __name__=="__main__": main()

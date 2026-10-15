@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison",
+  "start_utc": "2026-10-15T18:09:53.132134+00:00",
+  "end_utc": "2026-10-15T18:09:53.236196+00:00",
+  "elapsed_seconds": 0.10407966701313853,
+  "exit_code": 0,
+  "failure": null,
+  "timeout_seconds": 60,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/capture_sources.py",
+    "bytes": 5980,
+    "sha256": "4d9eebdfe214d86afa5968d5adf73662c9b96bbd2cec19fd0d94fbb4d96fcb70"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/metadata_runs/capture/source_at_launch/record_metadata.py",
+    "bytes": 2499,
+    "sha256": "e51556af7a1dbe1f2370d438d22d4a0797331780c239154e972d57df968a7c3b"
+  },
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/metadata_runs/capture/LAUNCH.json",
+    "bytes": 5217,
+    "sha256": "2f32b9e21ba256c8a1afe91ef967a2845932b40a05645935b4e934d4221d59ae"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/metadata_runs/capture/stdout",
+    "bytes": 139,
+    "sha256": "3ff0ff43ccb169118a47c5585986376cf8a4dab549fa2812c9730fdb848717ac"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/metadata_runs/capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_execution": false
+}

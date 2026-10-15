@@ -1,0 +1,7 @@
+# Selected recovery contract
+
+The three exact mathematical bodies are stored once each in the proposed canonical note. BODY_MAP records half-open byte intervals, sizes and SHA256 values; source-at-launch duplicates resolve to those intervals. The one canonical parent remains external and pinned, including its exact imported raw source/review intervals. No recursive parent note or provenance graph archive is copied.
+
+The selected archive retains the current candidate, independent/comparison metadata, exposure/problem records, current root acceptance/verification/seal, failed publisher-open response, source pins and all actual derivation/comparison/root metadata receipts with their source-at-launch/streams. Objects are deduplicated by hash. Historical source manifests and freezes remain byte-exact and may name unselected old ancestry. RECOVERY_SELECTION explicitly marks each historical member's selected recovery or its omission; a frozen historical path is not a promise that every ancestral file is in the new portable payload.
+
+This task's metadata assembly and inspection receipts live in the outer frozen proposal, with actual source-at-launch and streams. The public source packet records historical evidence available at its own assembly. Root can add the current proposal receipts as declared pinned inputs when making the actual bound integration. No primary/cache/scientific/graph/publication result is fabricated. Publisher metadata and the recorded failed open are not full-paper coverage; the unrecorded raw search output is not recreated.

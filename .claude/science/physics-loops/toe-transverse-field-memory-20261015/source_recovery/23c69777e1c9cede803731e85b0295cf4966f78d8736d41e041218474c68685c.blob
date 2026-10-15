@@ -1,0 +1,38 @@
+"""Source identity and syntax bookkeeping only; no scientific calculation."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent
+N=D.parent.parent
+def identity(path):
+    b=path.read_bytes()
+    return {"path":str(path),"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()}
+def verify(path,row):
+    actual=identity(path)
+    assert actual["bytes"]==row["bytes"] and actual["sha256"]==row["sha256"],str(path)
+    return actual
+rows=[]
+for row in json.loads((D/'INSTRUCTIONS.json').read_text())['instructions']:
+    verify(Path(row['original']),row);verify(Path(row['captured']),row)
+    rows.append({**identity(Path(row['captured'])),'original':row['original'],'role':'exact already-read instruction snapshot; no theorem premise'})
+context=[
+('local_bias_noncommuting_boundary_decisive_check/REPORT.md',10342,'ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c'),
+('rotated_gibbs_memory_decisive_check/REPORT.md',24571,'1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b'),
+('finite_memory_bank_decisive_check/REPORT.md',25249,'16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6'),
+('finite_bank_publication_draft/FINAL_FREEZE.json',81161,'da49c7c8d76ecd35ac6a02a8cfbb37a263df9f29d11bc5b7aa18369b0426274f')]
+for rel,size,digest in context:
+    path=N/rel
+    actual=verify(path,{'bytes':size,'sha256':digest})
+    rows.append({**actual,'role':'prior exposure or completed-task provenance only; not a mathematical premise','archive':'external exact path; no recursive copy'})
+for name in ['DERIVATION.md','PROBLEM.md','EXPOSURE.md','INSTRUCTIONS.json','verify_metadata.py','record_metadata.py','seal.py']:
+    path=D/name;rows.append({**identity(path),'role':'current independent source or metadata script'})
+    if name.endswith('.py'):ast.parse(path.read_text(),filename=str(path))
+now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+manifest={'checked_utc':now,'source_exposure':'pre-candidate; root transverse-field source not opened/listed/hashed/searched','mathematical_external_source_dependencies':[],'sources':rows,'scientific_programs_run':0,'historical_programs_replayed':0}
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+result={'checked_utc':now,'scope':'file identity and Python syntax only; no theorem verification by execution','sources':len(rows),'instruction_original_and_snapshot_pairs':4,'prior_provenance_files':len(context),'derivation':identity(D/'DERIVATION.md'),'scientific_programs_run':0,'historical_programs_replayed':0,'candidate_exposure':False,'publication_or_audit':None}
+(D/'VERIFICATION.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))

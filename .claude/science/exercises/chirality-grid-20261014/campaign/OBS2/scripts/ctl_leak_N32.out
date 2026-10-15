@@ -1,0 +1,9 @@
+  h=0   leak L = dSigma_mass(e_x)/dmu = +8.20955771e-02  (0s)
+  h=x+  leak L = dSigma_mass(e_x)/dmu = +8.19421796e-02  (0s)
+  h=x-  leak L = dSigma_mass(e_x)/dmu = +8.22497168e-02  (0s)
+  h=y+  leak L = dSigma_mass(e_x)/dmu = +8.19222275e-02  (0s)
+  h=y-  leak L = dSigma_mass(e_x)/dmu = +8.22697788e-02  (0s)
+  h=z+  leak L = dSigma_mass(e_x)/dmu = +8.17580036e-02  (1s)
+  h=z-  leak L = dSigma_mass(e_x)/dmu = +8.24369878e-02  (1s)
+RESULT-LEAK p=[3.142, 0.0, 0.0] N=32 m0=0.1 Delta=0.5 mu=0.05: L0=+8.209558e-02  L'_x=-7.688429e-03 L'_y=-8.688781e-03 L'_z=-1.697460e-02  traceless parts: tet_z (2z-x-y)/sqrt6 = -7.173738e-03, (x-y)/sqrt2 = +7.073558e-04, Frobenius of traceless part = +7.208528e-03
+watchdog peak RSS 42960 KB

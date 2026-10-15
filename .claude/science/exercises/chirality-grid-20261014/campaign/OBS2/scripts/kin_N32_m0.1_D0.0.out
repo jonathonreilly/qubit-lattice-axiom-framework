@@ -1,0 +1,7 @@
+mode=kin N=32 m0=0.1 Delta=0.0 mH=0.1
+  corner x done (0s)
+  corner y done (0s)
+  corner z done (0s)
+  corner o done (0s)
+saved yuk_kin_N32_m0.1_D0.0_mH0.1.json (0s)
+watchdog peak RSS 12464 KB

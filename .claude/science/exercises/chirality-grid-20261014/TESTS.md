@@ -358,3 +358,17 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Resumed at 11:22Z** from the agents' own transcripts, with new deadlines: OBS-2 14:00Z, NT-1′ 16:30Z, QMC-1 18:30Z.
 - **Close:** the campaign close moves to about 11:30Z on 10-16, so the campaign still gets 24 working hours.
 - No reading or pre-registration was changed.
+
+**OBS-2 result (11:38Z; same family; referee launched): LV-PRICE(19) [14 if set C's counterterm already includes the tetragonal operator]; FLAV2-NEAR.**
+- **Where the residual sits.** On branch B, the up quarks and charged leptons are circulant, so their flavour-pattern Lorentz violation cancels exactly. The residual comes from the CKM-broken down sector.
+  - d quark: c_TT ≈ −2e-8 (range −0.9 to −3.5e-8; −(1.8–7.1)e-9 with Planck-scale couplings). The bound is Kostelecký–Russell D44 part 3, c_TT^d > −1e-22 (astrophysics): ×2e13–3.5e14 over.
+  - s quark: ×1.5–28 over the kaon row (mapping suggested).
+  - e, μ, τ, c, b, t: within their bounds.
+- **The counterterm price.**
+  - 14 flavour-pattern kinetic coefficients on Q and d^c. They need tuning of 3e-15 to 6e-14 of the residual, and they are cubic-covariant only with a flavour spurion.
+  - Plus 5 tetragonal A₁ counterterms Σσ_a sin p_a(cos p_b + cos p_c), one per charged field. Set C's speed counterterm cannot do their job.
+  - No reallocation of set C's counterterms gives LV-SAFE.
+- **T₂g gives no first-order spin-averaged mass shift** (proved by little-group symmetry; checked to ≤1.5e-13). The clock row (E_g + T₂g) on branch B is ×0.09–2.5.
+- **Side finding (checked).** OBS-1's spin-blind (π,π,0) mass condensate is itself Lorentz-violating at dimension 3 (±0.385 q²). A τ_xσ_c condensate is exactly isotropic. This is a completion fix, not a kill.
+- **Scope.** One loop; a nearest-neighbour Higgs in the symmetric phase; corner symbols g_c = (1 − cos k_c)/2; IR regulators and vertex placements varied (about ×4 spread); N-converged to under 2%. No running from 1/a.
+- **Supervisor's own-thread comparison.** I predicted n ≈ 6 with LV-SAFE possible, and named the top quark as the main hazard. I missed that circulant sectors cancel exactly and that the CKM-broken d quark against a 1e-22 astrophysical bound is the binding row.

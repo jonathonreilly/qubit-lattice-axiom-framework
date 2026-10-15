@@ -1,0 +1,7 @@
+mode=strain N=48 m0=0.1 Delta=0.5 mH=0.1
+  leak_gz_onsiteY: base -1.633424e-02  xx +1.669e-03  yy +1.745e-03  zz +1.077e-03  xy +0.000e+00  yz -1.735e-15  zx +0.000e+00  (0s)
+  own_gx_onsiteY: base -3.871677e-02  xx +9.040e-03  yy +9.421e-03  zz +9.421e-03  xy +0.000e+00  yz -1.735e-15  zx +0.000e+00  (0s)
+  leak_gz_selYz: base -2.193516e-03  xx +1.813e-04  yy +1.941e-04  zz +4.376e-04  xy +0.000e+00  yz +0.000e+00  zx +0.000e+00  (1s)
+  onsite_m0_selYy: base -1.841816e-02  xx +1.983e-03  yy +4.104e-03  zz +1.877e-03  xy +0.000e+00  yz +0.000e+00  zx -8.674e-17  (1s)
+saved yuk_strain_N48_m0.1_D0.5_mH0.1.json (1s)
+watchdog peak RSS 30016 KB

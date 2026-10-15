@@ -1,0 +1,6 @@
+24 proper rotations; max |U H(p) U^dag - H(Rp)| = 9.9e-16
+  alpha=0, beta=0.05 at e_x: |v| per axis = [1.1 1.  1. ]  (expect par 1+2beta = 1.1 at hw1 axis, perp 1; origin 1+2beta isotropic)
+  alpha=0, beta=0.05 at e_y: |v| per axis = [1.  1.1 1. ]  (expect par 1+2beta = 1.1 at hw1 axis, perp 1; origin 1+2beta isotropic)
+  alpha=0, beta=0.05 at e_z: |v| per axis = [1.  1.  1.1]  (expect par 1+2beta = 1.1 at hw1 axis, perp 1; origin 1+2beta isotropic)
+  alpha=0, beta=0.05 at origin: |v| per axis = [1.1 1.1 1.1]  (expect par 1+2beta = 1.1 at hw1 axis, perp 1; origin 1+2beta isotropic)
+watchdog peak RSS 13168 KB

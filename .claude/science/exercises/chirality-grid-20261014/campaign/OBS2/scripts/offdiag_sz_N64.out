@@ -1,0 +1,9 @@
+  h=0   Sigma_off/b0 = +2.07515092e-01 (other comps 2.9e-17)  c_x=-5.235058e-02 c_y=-5.235058e-02  dln b = +1.55164510e-01  (1s)
+  h=x+  Sigma_off/b0 = +2.06401730e-01 (other comps 2.1e-15)  c_x=-5.191258e-02 c_y=-5.191135e-02  dln b = +1.54489764e-01  (3s)
+  h=x-  Sigma_off/b0 = +2.08635984e-01 (other comps 7.2e-16)  c_x=-5.279257e-02 c_y=-5.279379e-02  dln b = +1.55842804e-01  (4s)
+  h=y+  Sigma_off/b0 = +2.06401730e-01 (other comps 2.0e-15)  c_x=-5.191135e-02 c_y=-5.191258e-02  dln b = +1.54489764e-01  (6s)
+  h=y-  Sigma_off/b0 = +2.08635984e-01 (other comps 2.6e-15)  c_x=-5.279379e-02 c_y=-5.279257e-02  dln b = +1.55842804e-01  (7s)
+  h=z+  Sigma_off/b0 = +2.06398821e-01 (other comps 2.9e-17)  c_x=-5.191135e-02 c_y=-5.191135e-02  dln b = +1.54487467e-01  (8s)
+  h=z-  Sigma_off/b0 = +2.08638591e-01 (other comps 2.8e-17)  c_x=-5.279379e-02 c_y=-5.279379e-02  dln b = +1.55844802e-01  (9s)
+RESULT-OFF N=64 m0=0.1 Delta=0.5: dln b(0)=+1.551645e-01  L'_x=-3.382600e-02 L'_y=-3.382600e-02 L'_z=-3.393336e-02  traceless Frobenius=+8.766176e-05  tet_z=-8.766176e-05
+watchdog peak RSS 168992 KB

@@ -1,0 +1,6 @@
+mode=offd N=24 m0=0.1 Delta=0.5 mH=0.1
+  B=tau_x: Sigma_off coef -2.489706e-03+0.000000e+00j (other comps 6.0e-18); strain d/dt own-coef: xx +2.432e-03+0.0e+00i (oth 2.0e-14)  yy +1.920e-03+0.0e+00i (oth 8.8e-15)  zz -5.707e-03+0.0e+00i (oth 2.6e-15)  xy +5.723e-14+0.0e+00i (oth 1.4e-08)  yz -1.489e-13+0.0e+00i (oth 1.3e-03)  zx +9.438e-15+0.0e+00i (oth 5.6e-04)  (0s)
+  B=tau_x.sigma_z: Sigma_off coef -6.558880e-02+0.000000e+00j (other comps 1.4e-17); strain d/dt own-coef: xx +1.690e-02+0.0e+00i (oth 2.0e-14)  yy +1.447e-02+0.0e+00i (oth 8.8e-15)  zz +1.743e-02+0.0e+00i (oth 9.3e-15)  xy +1.171e-14+0.0e+00i (oth 1.4e-08)  yz -8.934e-15+0.0e+00i (oth 5.9e-04)  zx +3.296e-15+0.0e+00i (oth 5.9e-04)  (0s)
+  B=tau_x.sigma_x: Sigma_off coef -3.092878e-03+0.000000e+00j (other comps 5.0e-18); strain d/dt own-coef: xx +2.633e-03+0.0e+00i (oth 6.1e-16)  yy -6.539e-03+0.0e+00i (oth 4.3e-16)  zz +3.013e-03+0.0e+00i (oth 1.1e-13)  xy +2.964e-14+0.0e+00i (oth 8.1e-04)  yz -1.486e-13+0.0e+00i (oth 1.3e-03)  zx +5.790e-14+0.0e+00i (oth 5.9e-04)  (1s)
+saved yuk_offd_N24_m0.1_D0.5_mH0.1.json (1s)
+watchdog peak RSS 46496 KB

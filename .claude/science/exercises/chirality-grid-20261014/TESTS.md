@@ -359,7 +359,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Close:** the campaign close moves to about 11:30Z on 10-16, so the campaign still gets 24 working hours.
 - No reading or pre-registration was changed.
 
-**OBS-2 result (11:38Z; same family; referee launched): LV-PRICE(19) [14 if set C's counterterm already includes the tetragonal operator]; FLAV2-NEAR.**
+**OBS-2 result (11:38Z; same family; referee launched): LV-PRICE(19) [14 if set C's counterterm already includes the tetragonal operator]; FLAV2-NEAR.** [Referee: CONFIRMED WITH CORRECTIONS. LV-SAFE fails robustly; the integer n is not established as minimal. See below.]
 - **Where the residual sits.** On branch B, the up quarks and charged leptons are circulant, so their flavour-pattern Lorentz violation cancels exactly. The residual comes from the CKM-broken down sector.
   - d quark: c_TT ≈ −2e-8 (range −0.9 to −3.5e-8; −(1.8–7.1)e-9 with Planck-scale couplings). The bound is Kostelecký–Russell D44 part 3, c_TT^d > −1e-22 (astrophysics): ×2e13–3.5e14 over.
   - s quark: ×1.5–28 over the kaon row (mapping suggested).
@@ -372,3 +372,20 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Side finding (checked).** OBS-1's spin-blind (π,π,0) mass condensate is itself Lorentz-violating at dimension 3 (±0.385 q²). A τ_xσ_c condensate is exactly isotropic. This is a completion fix, not a kill.
 - **Scope.** One loop; a nearest-neighbour Higgs in the symmetric phase; corner symbols g_c = (1 − cos k_c)/2; IR regulators and vertex placements varied (about ×4 spread); N-converged to under 2%. No running from 1/a.
 - **Supervisor's own-thread comparison.** I predicted n ≈ 6 with LV-SAFE possible, and named the top quark as the main hazard. I missed that circulant sectors cancel exactly and that the CKM-broken d quark against a 1e-22 astrophysical bound is the binding row.
+
+**OBS-2 referee (codex gpt-5.6-sol, xhigh; returned 11:51Z; recorded 11:52Z): CONFIRMED WITH CORRECTIONS.**
+- **Confirmed.**
+  - The referee's independent projector calculation (`ref_check.py`) reproduces c_TT^d = −2.1067e-8 (Δ = 0) and −2.1176e-8 (Δ = 0.5) at N = 24, together with d_TT^d ≈ +7e-9. The negative sign is confirmed.
+  - The SME map c_TT = −(3/4)δv is correct.
+  - **LV-SAFE fails robustly:** the direct d-quark vector row and axial row each fail, without relying on the kaon or nucleon maps.
+  - The tuning level for the binding vector row is 2.9e-15 to 5.5e-14.
+  - The T₂g null for spin-averaged masses.
+  - The dimension-3 side finding, with a limit of ±0.400 as q → 0 (the worker's ±0.385 is a finite-q value).
+- **Corrections.**
+  - **The integer in LV-PRICE(19)/(14) is not established as minimal.** Seven per field is the dimension of a generic residual tensor, not a minimal count of spurion invariants or of the combinations that observation constrains. So the strict fixed reading is LV-PRICE with n not established (OPEN on n), not LV-KILL.
+  - **X2 symmetry of the counterterms** needs a specified dynamical flavour spurion: a frozen κ array breaks the cubic action.
+  - **Bound-row citation.** The clean D44 part-3 rows are c̊^d − ¾κ̃_tr − ⅜(f̊^d)² > −1e-22 and |d̊^d| < 1e-22. The later row the report cited is internally inconsistent as printed.
+  - **The s quark** (×1.5–28) rests on identifying the kaon's coefficient with the valence s quark, which the tables say is not known. So "no reallocation gives LV-SAFE" is conditional on that map.
+  - **Circulant cancellation** holds for the own Y_u and Y_e contributions only. Physical up quarks get a residual through the shared Q_L, from Y_d Y_d†.
+  - **CKM alone does not fix the magnitude.** The textures, the U_d = F·V_CKM choice, the corner symbols, the vertex placement and the regulator all enter.
+- **Strongest correct statement (referee).** Within the chosen one-loop, symmetric-phase lattice Yukawa model, branch B's CKM-broken down source gives c_TT^d ≈ −(0.9–3.5)e-8 at low-scale Yukawas, with d_TT^d of order +1e-9. This violates the clean D44 c̊^d and d̊^d astrophysical rows by about 1e14. Removing it needs counterterms tuned to about 1e-14; the minimal count is not established. FLAV2-NEAR is confirmed for spin-averaged masses.

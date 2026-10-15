@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/local_pauli_clock_cell_2026_10_15.py
+runner_sha256: 3be5d0e59187685c1b48b14cf3905b837faf996d14ba684668029c607e3817f6
+input_fingerprint_sha256: 3aa12b483f8bcf27b21c8572b1830482935b9c77e2dac9eaf4529ddfadf07a02
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{"archived_scientific_controls_not_replayed": 2, "complete_proofs": 2, "decoded_originals": 166, "limits": "Supplied vacant eligible cell, one-head product input, supported coefficients, full costs and endpoint timing. Distinct effective signs and phases; no word, entangler, native supplier, permanent record or retained audit.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Identity/interval/recorded-receipt verification only. The two analytic derivations and prior selected controls are evidence; this runner does not prove their mathematics."}
+per_element: one original datum, six supplied fresh qubits and unchanged original K
+per_site: eight ordinary-neighbor new edges with paid old and added local loads
+per_mode: full-space penalty and positive-apparatus claims retain their distinct domains
+per_block: complete old/reference prepared output, explicit scalar phase and endpoint error
+lattice_wide: no occupied-bulk packing, complete word, common-cap or native claim
+
+----- stderr -----
+

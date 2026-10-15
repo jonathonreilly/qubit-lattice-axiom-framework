@@ -1,0 +1,42 @@
+{
+  "mathematical_parent": {
+    "claim_id": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14",
+    "canonical_sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755",
+    "raw_sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+    "raw_interval": [
+      8389,
+      32138
+    ],
+    "role": "Literal paired-path geometry, detuning and full-space spin inequality. Changed self-energy and residual are proved in both new bodies."
+  },
+  "context_only": [
+    {
+      "claim_id": "multi_port_preparation_energy_moments_bounded_theorem_note_2026-10-14",
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f",
+      "role": "Physical cost and scalar/reference accounting context; no clean-preparation or new-cell theorem imported."
+    }
+  ],
+  "procedural_parent": {
+    "regular_pr": 9585,
+    "head": "f6ad0ea049d121fa698fd1adaf9f28913d22d819",
+    "source_receipt_alias": "procedural/energy/PUBLICATION.json",
+    "theorem_import": false
+  },
+  "procedural_templates": [
+    "build_energy_source.py",
+    "energy_common.py",
+    "energy_primary.template.py",
+    "ENERGY_FRAMING.md",
+    "common.py"
+  ],
+  "actual_canonical_markdown_targets": [
+    "SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "graph_result": "Unexecuted; root must derive the graph from the two actual citations and their distinct roles.",
+  "excluded_science": [
+    "clock-word composition",
+    "two-old entangling cells"
+  ],
+  "root_source_acceptance": "013a87fe96779ed2a761a32f4cd8c51c6d3b26171660606be95a227a7cebd861"
+}

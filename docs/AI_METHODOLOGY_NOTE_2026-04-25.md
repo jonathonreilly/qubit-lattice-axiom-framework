@@ -183,9 +183,9 @@ Important surfaces include:
 
 - [`docs/CANONICAL_HARNESS_INDEX.md`](./CANONICAL_HARNESS_INDEX.md)
 - [`docs/repo/ACTIVE_REVIEW_QUEUE.md`](./repo/ACTIVE_REVIEW_QUEUE.md)
-- [`AUTOPILOT_PROTOCOL.md`](../AUTOPILOT_PROTOCOL.md)
-- [`AUTOPILOT_JANITOR_PROTOCOL.md`](../AUTOPILOT_JANITOR_PROTOCOL.md)
-- [`AUTOPILOT_SUMMARY_PROTOCOL.md`](../AUTOPILOT_SUMMARY_PROTOCOL.md)
+- [`AUTOPILOT_PROTOCOL.md`](work_history/automation/AUTOPILOT_PROTOCOL.md)
+- [`AUTOPILOT_JANITOR_PROTOCOL.md`](work_history/automation/AUTOPILOT_JANITOR_PROTOCOL.md)
+- [`AUTOPILOT_SUMMARY_PROTOCOL.md`](work_history/automation/AUTOPILOT_SUMMARY_PROTOCOL.md)
 
 These files encode a reproducibility discipline:
 

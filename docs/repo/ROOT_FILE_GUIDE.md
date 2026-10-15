@@ -25,11 +25,9 @@ instructions from legacy artifacts.
 `SCALING_FAILURE_MECHANISMS.md`, and `SCALING_TARGETS.md` are legacy
 implementation or architecture/scaling artifacts.
 
-`AUTOPILOT_PROTOCOL.md`, `AUTOPILOT_JANITOR_PROTOCOL.md`,
-`AUTOPILOT_SUMMARY_PROTOCOL.md`, and `AUTOPILOT_WORKLOG.md` document an earlier
-automation setup and its history. They are not the entry point for starting
-current science work or an authorization to bypass current review/audit
-boundaries. Use the refreshed repo-native skills for current operations.
+The retired autopilot protocols and their work log now live in
+[`docs/work_history/automation/`](../work_history/automation/README.md).
+They are history, not an entry point for current work.
 
 ## Reading Rule
 

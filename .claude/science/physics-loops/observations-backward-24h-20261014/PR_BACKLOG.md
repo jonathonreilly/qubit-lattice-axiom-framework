@@ -32,3 +32,7 @@ Sixth unit published: [PR#9589](https://github.com/jonathonreilly/qubit-lattice-
 ### M7 2026-10-15T05:11:37.925436+00:00
 
 M7 preparing on codex/observations-backward-physical-20261015, stacked on frozen PR9589 branchcodex/observations-backward-accelerated-20261015. No M7 PR yet; prior six milestone heads remain frozen.
+
+M7 published 2026-10-15T05:24:44.213149+00:00: PR#9591 regular/open,99paths,head`917e147109e58c5bf8b5d4a9d546077d20cfe41c`,frozen and attached. Continuation branch`codex/observations-backward-calibration-20261015`; source scope conditional-support, no merge or audit.
+
+Integer-history quotient: coherent source milestone ready for final envelope binding and publication on codex/observations-backward-calibration-20261015, stacked on frozen physical branch917e1471. Proposed typebounded_theorem, statusconditional-support. No merged or audit-ratified result is claimed.

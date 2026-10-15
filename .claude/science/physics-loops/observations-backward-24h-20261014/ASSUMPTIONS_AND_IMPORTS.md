@@ -76,3 +76,7 @@ The supplied conformal action, flat free massless regime, positive background, s
 ### M7 2026-10-15T05:11:37.925436+00:00
 
 M7 adds no state selector. Supplied action, stationary de Sitter vacuum, B>12,H,Q, ideal coherent link and calibrated reference remain conditional. Force weights require compact continuous W with Wprime BV; clocks remain L2. Derived initial-slice energy conversion and comparison errors do not supply an upper energy budget. Exact C0 cancellation is for comparison chi, not arbitrary constant physical h.
+
+## Integer-history quotient: changed obligation
+
+Arbitrary integer histories are removed only from within-segment phase modulo one cycle. Supplied segmentation, received/reference phase identification, fractional-error set and scalar response/energy conversion remain conditional. The full unwrapped count still needs a history map. No integer or energy-minimizing history is adopted as physical. The data are the already exposed four pinned day169 archive files including day170 rows; no fit, later raw sample or independent empirical test enters. ATDF unsigned item87 and qualitative flags do not supply a signed correction or quantitative error bound. Later TRK-2-34 J-1 semantics remain a separate format. Approved framework primitive roles are unchanged.

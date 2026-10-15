@@ -31,3 +31,18 @@ Target claim type bounded_theorem; actual current surface status conditional-sup
 ### M7 2026-10-15T05:11:37.925436+00:00
 
 M7 proposed bounded_theorem only, actual current surface conditional-support.59 author controls,10 mutation rejections and focused independent mathematical/source checks. No independent empirical test, formal audit, integrated main landing or theory authority claimed.
+
+## Integer-history quotient certificate (2026-10-15)
+
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: partially_closes
+conditional_surface_status: Exact quotient and energy consequence under supplied ambiguity, response and error premises
+hypothetical_axiom_status: null
+admitted_observation_status: Exposed dependent archive reconstruction; no independent gravity test
+claim_type_reason: Removes a history selector for a reduced observable while preserving physical transfer and error obligations
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+The theorem, deliberate information loss, exact false-bound witnesses, receiver metadata limits and complete finite-data accounting are in docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md. The 49 author checks and 13 assertion-rejected mutations are separate from 114 pre-author-source mathematical controls, independent raw decoding, metadata-page checks and subsequent source correspondence. Two executable interface findings were repaired without altering the main theorem. No formal review-loop landing verdict or audit verdict is granted.

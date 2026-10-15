@@ -1,0 +1,178 @@
+{
+  "at": "2026-10-15T05:30:28.511217+00:00",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "planning_branch": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "branch": "codex/observations-backward-calibration-20261015",
+  "base": "917e147109e58c5bf8b5d4a9d546077d20cfe41c",
+  "open_prs": [
+    {
+      "baseRefName": "codex/observations-backward-accelerated-20261015",
+      "headRefName": "codex/observations-backward-physical-20261015",
+      "headRefOid": "917e147109e58c5bf8b5d4a9d546077d20cfe41c",
+      "number": 9591,
+      "title": "[physics-loop] observations-backward: conditional mass and curvature bounds for coherent counts",
+      "updatedAt": "2026-10-15T05:23:16Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-entangling-clock-cell-20261015",
+      "headRefName": "physics-loop/toe-local-clock-word-20261015",
+      "headRefOid": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+      "number": 9590,
+      "title": "[physics-loop] toe-local-clock-word: bounded_theorem / conditional-support ordered maps",
+      "updatedAt": "2026-10-15T05:00:57Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-energy-20261015",
+      "headRefName": "codex/observations-backward-accelerated-20261015",
+      "headRefOid": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+      "number": 9589,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support accelerated coherent counts",
+      "updatedAt": "2026-10-15T04:25:32Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-pauli-clock-cell-20261015",
+      "headRefName": "physics-loop/toe-local-entangling-clock-cell-20261015",
+      "headRefOid": "0393ca788f8bf87f9201e3f3dab911da9de162e7",
+      "number": 9588,
+      "title": "Add two local entangling clock cells with explicit idle behavior",
+      "updatedAt": "2026-10-15T04:11:33Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-energy-preparation-readiness-20261015",
+      "headRefName": "physics-loop/toe-local-pauli-clock-cell-20261015",
+      "headRefOid": "53be395f790a96a42f2d58c448f7a95b193580d7",
+      "number": 9587,
+      "title": "Add two local Pauli clock cells with an active background",
+      "updatedAt": "2026-10-15T03:39:14Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-history-20261015",
+      "headRefName": "codex/observations-backward-energy-20261015",
+      "headRefOid": "ff4a63b6f0407d40ab925ac4bc83011546886217",
+      "number": 9586,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support count-derived energy",
+      "updatedAt": "2026-10-15T03:14:39Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-two-reader-pointer-20261015",
+      "headRefName": "physics-loop/toe-energy-preparation-readiness-20261015",
+      "headRefOid": "f6ad0ea049d121fa698fd1adaf9f28913d22d819",
+      "number": 9585,
+      "title": "Add preparation readiness from a certified installed-generator mean",
+      "updatedAt": "2026-10-15T02:36:21Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-installed-background-preparation-20261015",
+      "headRefName": "physics-loop/toe-two-reader-pointer-20261015",
+      "headRefOid": "5574383f4893f9412b1d58faf988cc0fd3ad8084",
+      "number": 9584,
+      "title": "Add two-reader preparation with protected archives and a live pointer",
+      "updatedAt": "2026-10-15T02:16:14Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-plasma-20261014",
+      "headRefName": "codex/observations-backward-history-20261015",
+      "headRefOid": "444fddc785280eb01898986edfc301bda9e8d9df",
+      "number": 9583,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support scalar history",
+      "updatedAt": "2026-10-15T02:07:10Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-dyadic-population-filter-20261014",
+      "headRefName": "physics-loop/toe-installed-background-preparation-20261015",
+      "headRefOid": "9373daa6b08f90d675045ef8bd79108c78545255",
+      "number": 9582,
+      "title": "Add auxiliary preparation with the installed background active",
+      "updatedAt": "2026-10-15T01:11:46Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-doppler-20261014",
+      "headRefName": "codex/observations-backward-plasma-20261014",
+      "headRefOid": "b8f83e344b3ba756cc31fe24f83b4dec71b199d0",
+      "number": 9581,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support initial-phase elimination",
+      "updatedAt": "2026-10-15T00:20:11Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-vacuum-preparation-certificate-20261014",
+      "headRefName": "physics-loop/toe-dyadic-population-filter-20261014",
+      "headRefOid": "7fa2d130984e52fdac74fc4523278e591bad667f",
+      "number": 9580,
+      "title": "Add dyadic auxiliary-number filtering and chain control bounds",
+      "updatedAt": "2026-10-15T00:13:55Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-chain-preparation-scaling-20261014",
+      "headRefName": "physics-loop/toe-vacuum-preparation-certificate-20261014",
+      "headRefOid": "bf3ecf67438816b28634282361428ad096245ed1",
+      "number": 9579,
+      "title": "Add a one-clean-pointer vacuum-preparation circuit and conditional moments",
+      "updatedAt": "2026-10-14T23:32:57Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-24h-20261014",
+      "headRefName": "codex/observations-backward-doppler-20261014",
+      "headRefOid": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+      "number": 9578,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support count and clock bridge",
+      "updatedAt": "2026-10-14T23:26:04Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-preparation-moments-20261014",
+      "headRefName": "physics-loop/toe-chain-preparation-scaling-20261014",
+      "headRefOid": "6708b30b3ae16610f7a5061301c38adc356aff75",
+      "number": 9577,
+      "title": "[physics-loop] toe-chain-preparation-scaling: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-14T22:42:42Z"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/observations-backward-24h-20261014",
+      "headRefOid": "32d613c0f1361523f1d5dd85275fa945bc87cab0",
+      "number": 9576,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support orbit and radio inverse",
+      "updatedAt": "2026-10-14T22:34:10Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-multi-port-global-20261014",
+      "headRefName": "physics-loop/toe-preparation-moments-20261014",
+      "headRefOid": "84d28d386cf8d8dbbdd4506387ad18296161fe53",
+      "number": 9575,
+      "title": "[physics-loop] toe-preparation-moments: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-14T22:23:56Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-autonomous-record-window-20261014",
+      "headRefName": "physics-loop/toe-multi-port-global-20261014",
+      "headRefOid": "463fa381d9fe9403b6b6f3e3ce19505aa947edf2",
+      "number": 9574,
+      "title": "Add conditional simultaneous multi-port three-Pauli theorem",
+      "updatedAt": "2026-10-14T21:30:36Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+      "headRefName": "physics-loop/toe-autonomous-record-window-20261014",
+      "headRefOid": "103cb68b6541e5f9419463d68ac41d311e3c404d",
+      "number": 9573,
+      "title": "Add conditional finite autonomous admission record window",
+      "updatedAt": "2026-10-14T21:13:29Z"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+      "headRefOid": "b50d97052f1b9dd3277eec137208b454fa609337",
+      "number": 9572,
+      "title": "Add balanced critical mediator sufficient resource corollary",
+      "updatedAt": "2026-10-14T20:51:01Z"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "claude/strain-hot-matter-twins-20261013",
+      "headRefOid": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "number": 9571,
+      "title": "exercise (gravity follow-up): hot-matter strain law, panel F, staggered twins \u2014 self-contained packet",
+      "updatedAt": "2026-10-14T20:46:58Z"
+    }
+  ],
+  "scope": "Main unchanged. New background PR9590 title/head inventory read only; no scientific assertion adopted. Relevant prior count/clock sources are frozen campaign PRs9578/9581/9586/9589/9591. Standing planning surfaces are historical September routing aids, not current science authority."
+}

@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-15T05:59:58.540254+00:00",
+  "scope": "One malformed provenance token only; scientific content, source coverage and calculations unchanged. No rerun.",
+  "reason": "Sequential placeholder replacement replaced DATA_HASH inside METADATA_HASH, leaving META plus the data helper hash.",
+  "original_report": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+    "sha256": "cdf2c98a72c412c07dff915a3643b1aa24981d04b2ba4b43635707692493f885"
+  },
+  "original_identity": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+    "sha256": "c24ed54a02cf56673dbaaef23d2154db1a5cf045cc804271deda1f960ecaefc8"
+  },
+  "corrected_report": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v2.md",
+    "sha256": "e919de64201449bd8851a9a599b3aa860e5b5388e7bf4131930cfb389866ad7f"
+  },
+  "metadata_file": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_metadata_v1/METADATA_REVIEW_v3.md",
+    "sha256": "e2ab70ab98951ea85e6c518160368a9bdc528927288e1ea964c981c897322923"
+  },
+  "old_token": "METAebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+  "new_token": "e2ab70ab98951ea85e6c518160368a9bdc528927288e1ea964c981c897322923",
+  "byte_check": "new bytes equal old bytes with exactly one token replacement",
+  "source_and_calculation_reruns": 0
+}

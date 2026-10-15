@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-10-15T05:41:13.786536+00:00",
+  "reviewer": "/root/force_energy_bridge_check",
+  "scope": "Independent abstract quotient, admissible continuous contrasts, finite-Gram lattice energy bound and synthetic failure witnesses",
+  "report": "INDEPENDENT_REVIEW_v1.md",
+  "report_sha256": "a50044f679a3d4dd6e9e279c31a657969d30c2deafb712f03e83f96f5abf547a",
+  "files": {
+    "CONTROL_SOURCE_FREEZE_v1.json": {
+      "sha256": "369b5f3f1503452889402ba3f189a783944b0c0895c32cf9924d6a4ae718a297",
+      "bytes": 318
+    },
+    "INDEPENDENT_RESULTS_v1.json": {
+      "sha256": "382ede73de3b985ec3688f32c9999a831330741282192f3ed0988615d3e424d3",
+      "bytes": 20211
+    },
+    "INDEPENDENT_REVIEW_v1.md": {
+      "sha256": "a50044f679a3d4dd6e9e279c31a657969d30c2deafb712f03e83f96f5abf547a",
+      "bytes": 8348
+    },
+    "INDEPENDENT_RUN_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "INDEPENDENT_RUN_v1.stdout": {
+      "sha256": "1dd1c1afbe095aa440c971c4a26098b715e29f90990467cbd4bf26c70abf2b9e",
+      "bytes": 43
+    },
+    "PRECHECK_FREEZE_v1.json": {
+      "sha256": "13133e1bebfe87429fa17ad6198bfbe501af4fdc7804906b464cff7f75331d6c",
+      "bytes": 536
+    },
+    "PRECHECK_v1.md": {
+      "sha256": "8526460c9942dbadc3dadef69d70dc7a40050e569b0797f200ccf849721b0236",
+      "bytes": 14342
+    },
+    "independent_quotient_controls_v1.py": {
+      "sha256": "f1c743bd7c183e2c5e2a40d4cbe7d68814180754acba88dfde3a917b55aaf206",
+      "bytes": 12424
+    }
+  },
+  "checks": {
+    "total": 114,
+    "passed": 114,
+    "failed": 0
+  },
+  "author_new_source_exposure": false,
+  "actual_observation_access": false,
+  "physical_error_budget_selected": false,
+  "git_or_index_mutations": false,
+  "network_access": false,
+  "formal_audit": false,
+  "failed_runs": 0
+}

@@ -1,0 +1,53 @@
+{
+  "frozen_before_new_author_source": true,
+  "created_utc": "2026-10-15T05:45:14.791607+00:00",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/PRECHECK_v1.md",
+      "sha256": "4da6f2e3a052f59bf4cc3de5a47cdad4925a60aaa6c295a6fd6b4a1948e91301",
+      "bytes": 3103
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/INPUT_IDENTITY_v1.json",
+      "sha256": "ce511c786ef059f6b70422c5ede6523f8a47ac3f7f9ec08103d04797e4ec2f34",
+      "bytes": 3498
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/quotient_data_controls_v1.py",
+      "sha256": "85cd71f1354d36ae8f77586ff757bd918f9dac67c720274e889234b25ea30def",
+      "bytes": 16270
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/RESULTS_v1.json",
+      "sha256": "9ac5a8b36541fdf471b2e91fea0eda822990d127bc180a8a88932ea5cfa832dd",
+      "bytes": 9767
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/EXECUTION_IDENTITY_v1.json",
+      "sha256": "46c0415e8f325bcd1f920f6d6fa0dd6744bc1c5e2d077c594e9e81219c113ec9",
+      "bytes": 1600
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/NARROW_CONSISTENCY_v1.json",
+      "sha256": "1f870e469cf876d8ed9b58c1e44b64b304f1407a85bac4d0ead83c39e8e9c788",
+      "bytes": 2569
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/RUN_v1.stdout",
+      "sha256": "69c153c3e9b45eb8a3a91bd71714b85e7286892ba3faad999041c4265876a6ae",
+      "bytes": 2126
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/INDEPENDENT_REVIEW_v1.md",
+      "sha256": "9139665be855be0ab5c7bfbf28c43eed0b5e3804265fe76c1c600c936908fc1b",
+      "bytes": 7033
+    }
+  ],
+  "reused_M2_M5_scope": "Primary stored definitions and declared configuration grouping; not forward-history lift or physical calibration",
+  "mutations": "Only assigned reviewer output directory; no source/index/branch/publication/network changes"
+}

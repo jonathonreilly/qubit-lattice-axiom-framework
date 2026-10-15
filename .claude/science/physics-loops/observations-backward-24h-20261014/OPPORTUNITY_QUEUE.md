@@ -39,3 +39,11 @@ The accelerated massless operator and ideal coherent link are now derived condit
 ### M7 2026-10-15T05:11:37.925436+00:00
 
 After M7 publication, prioritize an observation-supported reference/error or scale supplier. Use a declared pre-access protocol before later raw products; day169 remains development. Do not add further synthetic examples without a distinct inference obligation.
+
+## Re-ranked after integer-history quotient
+
+1. Derive a physically applicable integer character for simultaneous radio channels using documented turnaround/phase units, and test whether it can cancel shared phase/media terms without arbitrarily fitting an error budget. First discriminator: the exact integer nullspace and surviving scalar response, before opening reserved samples.
+2. Identify and bound real reset/fractional-error terms for this instrument through applicable calibration documentation or a separately declared calibration dataset. The unsigned slip diagnostic is not such a supplier.
+3. Relate an actually calibrated quotient residual to the earlier same-environment scalar energy/scale map. Do not substitute a minimum-energy state for the missing physical budget.
+
+These remain scientific opportunities, not accomplished derivations. No new raw product is authorized by this queue alone; preserve the pre-access protocol requirement.

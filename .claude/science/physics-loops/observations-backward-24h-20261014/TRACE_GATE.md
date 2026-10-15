@@ -55,3 +55,15 @@ The downstream consumer is scalar-history reconstruction from finite tracking co
 ### M7 2026-10-15T05:11:37.925436+00:00
 
 M7 target scalar_mass_curvature_count, bounded_theorem / conditional-support / upstream_support. Observation: finite proper radio counts under stated link model. Derived: nuisance contrast, propagation correction, initial energy comparison. Missing downstream suppliers: actual calibration, scalar attribution, scales and independent energy/error bound. No selector counted as derivation.
+
+## Integer-history quotient (2026-10-15)
+
+trace_class: upstream_support
+target_claim_id: scalar_phase_quotient
+target_blocker_text: Derive or eliminate the revised scalar theory's remaining history and measured-gravity assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Derive an applicable integer contrast across calibrated radio channels, or the same-instrument fractional-error/reset map.
+
+For the deliberately reduced phase observable, the quotient eliminates selection of unrestricted integer histories and yields a conditional energy bound. It does not recover integer phase, certify physical noise, identify an observed scalar residual or choose a field state. Exact source, inputs and checks are in calibration_error/REVIEW_RECORD_v1.md and the canonical note.

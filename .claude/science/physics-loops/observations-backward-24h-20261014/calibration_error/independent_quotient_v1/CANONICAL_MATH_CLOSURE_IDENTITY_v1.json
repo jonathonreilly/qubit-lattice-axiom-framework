@@ -1,0 +1,206 @@
+{
+  "created_utc": "2026-10-15T06:02:36.746553+00:00",
+  "reviewer": "/root/force_energy_bridge_check",
+  "classification": "Focused mathematical source closure; not formal audit or empirical validation",
+  "report": "CANONICAL_MATH_CLOSURE_v1.md",
+  "report_sha256": "c32abe28960c60adfd2c0c4a87e4f903a7c2ee1f2b4839d2ed10d096105731ce",
+  "sources": {
+    "docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "d333d64f1eec02799a1a03c18cb8aa3b6ad0bcfe64824c3fbd68cf356de1a12e",
+      "bytes": 27472,
+      "snapshot": "FINAL_SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "byte_equal_to_snapshot": true
+    },
+    "scripts/scalar_phase_quotient_controls.py": {
+      "sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "bytes": 7397,
+      "snapshot": "FINAL_scalar_phase_quotient_controls.py",
+      "byte_equal_to_snapshot": true
+    }
+  },
+  "evidence_files": {
+    "AUTHOR_AUTHOR_FREEZE_v1.json": {
+      "sha256": "6b8aadf3251f05f6606f70f196185497ba50675d565d713f581292ee67ab2a0e",
+      "bytes": 1030
+    },
+    "AUTHOR_EXPOSURE_v1.json": {
+      "sha256": "a355c13836f62638074ef40cbfca7cf7ee20c1e7b50c5051571e326bc49888fe",
+      "bytes": 985
+    },
+    "AUTHOR_INTEGER_HISTORY_QUOTIENT_WORKING_v1.md": {
+      "sha256": "90c7356e9ea988969d13cb69269fd673d9c3de0c5bdf3fa7c65ff13231508568",
+      "bytes": 9896
+    },
+    "AUTHOR_RUN_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "AUTHOR_RUN_v1.stdout": {
+      "sha256": "75b6ab4735a91e3cb4cfc769c9f72a928aabdfe280c3a0af14285ed5d60a6830",
+      "bytes": 520
+    },
+    "AUTHOR_SOURCE_CORRESPONDENCE_IDENTITY_v1.json": {
+      "sha256": "15f0117610553f8d87c835d72f54c230d106af2c9ad1b59acf4a852352756090",
+      "bytes": 2837
+    },
+    "AUTHOR_SOURCE_CORRESPONDENCE_v1.md": {
+      "sha256": "629f343ecfc97724fd36f014be348d1256e9dd35a6bf3f26c07f5aa12016a4bb",
+      "bytes": 11201
+    },
+    "AUTHOR_integer_history_controls_v1.py": {
+      "sha256": "e9997f5679c08bfe726bfa604fc243f5f403375b375092f6f304ebadbd987807",
+      "bytes": 5818
+    },
+    "CANONICAL_CHANGED_RESULTS_v1.json": {
+      "sha256": "54fe544c05a17ca56f28444cde4e1036f45fb06b136a6a0b650b7f3319e88bc3",
+      "bytes": 3335
+    },
+    "CANONICAL_CHANGED_RUN_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "CANONICAL_CHANGED_RUN_v1.stdout": {
+      "sha256": "b4a494df98e7536af8cfb5779f43bd7130476352558f592af85b000bae1dbe9d",
+      "bytes": 41
+    },
+    "CANONICAL_EXPOSURE_v1.json": {
+      "sha256": "f2b868faf6fe4f006a5380fc79893eb3c055cabc5d3ed228304b135966de5b7b",
+      "bytes": 881
+    },
+    "CANONICAL_MATH_CLOSURE_v1.md": {
+      "sha256": "c32abe28960c60adfd2c0c4a87e4f903a7c2ee1f2b4839d2ed10d096105731ce",
+      "bytes": 13409
+    },
+    "CANONICAL_SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "eecb503671bc778653a0acfa8c77b2a236546e619c82ad9bc8db64dc0b4e0965",
+      "bytes": 27193
+    },
+    "CANONICAL_scalar_phase_quotient_controls.py": {
+      "sha256": "d65d0e6f6b6c13c6ca3279ceca5644dd1a0774af83d550991fbbd0e6a672ce2b",
+      "bytes": 7372
+    },
+    "CONTROL_SOURCE_FREEZE_v1.json": {
+      "sha256": "369b5f3f1503452889402ba3f189a783944b0c0895c32cf9924d6a4ae718a297",
+      "bytes": 318
+    },
+    "FINAL_API_BINDING_RESULTS_v1.json": {
+      "sha256": "ff310923f59bf8d88039a61d4916466331188fe9b830a0bb8684a5a727afd6cc",
+      "bytes": 1347
+    },
+    "FINAL_API_BINDING_RUN_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "FINAL_API_BINDING_RUN_v1.stdout": {
+      "sha256": "797ebf81f30ac4d1e41978d597b0930728a543d593e77c4c91877a997c54cb58",
+      "bytes": 41
+    },
+    "FINAL_CANONICAL_EXPOSURE_v1.json": {
+      "sha256": "aa20891a452c84d0a5ac815db2f0a7144b599b3c7f8ddf2c25b0c2dffc121aa1",
+      "bytes": 716
+    },
+    "FINAL_SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "d333d64f1eec02799a1a03c18cb8aa3b6ad0bcfe64824c3fbd68cf356de1a12e",
+      "bytes": 27472
+    },
+    "FINAL_SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff": {
+      "sha256": "dd08c23dbee8ba62553211092cbe2e221dbdeb8d97778ebbffea4615a5437910",
+      "bytes": 725
+    },
+    "FINAL_scalar_phase_quotient_controls.py": {
+      "sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "bytes": 7397
+    },
+    "FINAL_scalar_phase_quotient_controls.py.diff": {
+      "sha256": "42485048def94426f628fe86dc30143c866f2efc68549cc6e6debe01954432c7",
+      "bytes": 1487
+    },
+    "IDENTITY_PACKAGING_FAILURE_v1.json": {
+      "sha256": "834dd74ec4d590daa4d4ca36634869868a2c98445068ef3ec3583fd9e41b4808",
+      "bytes": 582
+    },
+    "INDEPENDENT_IDENTITY_v1.json": {
+      "sha256": "51b8abb7795054e2f07ae588fc3654f3daec5bb77934152b1a7f13326028091d",
+      "bytes": 1857
+    },
+    "INDEPENDENT_RESULTS_v1.json": {
+      "sha256": "382ede73de3b985ec3688f32c9999a831330741282192f3ed0988615d3e424d3",
+      "bytes": 20211
+    },
+    "INDEPENDENT_REVIEW_v1.md": {
+      "sha256": "a50044f679a3d4dd6e9e279c31a657969d30c2deafb712f03e83f96f5abf547a",
+      "bytes": 8348
+    },
+    "INDEPENDENT_RUN_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "INDEPENDENT_RUN_v1.stdout": {
+      "sha256": "1dd1c1afbe095aa440c971c4a26098b715e29f90990467cbd4bf26c70abf2b9e",
+      "bytes": 43
+    },
+    "INTEGER_HISTORY_RESULTS_v1.json": {
+      "sha256": "b0c685ab0e34ad0a0949c9caea0d87e22e4924e2d15df9918abf7ff5387bf314",
+      "bytes": 2610
+    },
+    "POSTSOURCE_RESULTS_v1.json": {
+      "sha256": "ad362f08988d8635112a035d6f79006a61a1e93624160e6e677d1a78b7559da2",
+      "bytes": 3589
+    },
+    "POSTSOURCE_RUN_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "POSTSOURCE_RUN_v1.stdout": {
+      "sha256": "ec929c2ae87d01cbfe7cda11c986b211649a1c67836876ed79165e782b2df805",
+      "bytes": 41
+    },
+    "PRECHECK_FREEZE_v1.json": {
+      "sha256": "13133e1bebfe87429fa17ad6198bfbe501af4fdc7804906b464cff7f75331d6c",
+      "bytes": 536
+    },
+    "PRECHECK_v1.md": {
+      "sha256": "8526460c9942dbadc3dadef69d70dc7a40050e569b0797f200ccf849721b0236",
+      "bytes": 14342
+    },
+    "canonical_changed_controls_v1.py": {
+      "sha256": "5d79d7ee7c6ca22b1f75503717a478e9b8d0c00957b197fe6c7f1de05c3e863d",
+      "bytes": 4311
+    },
+    "final_api_binding_controls_v1.py": {
+      "sha256": "2f029881cacf69e2a2e5ba9513e6107ed3f64fac1a762212c9fff26a4edbb30d",
+      "bytes": 3497
+    },
+    "independent_quotient_controls_v1.py": {
+      "sha256": "f1c743bd7c183e2c5e2a40d4cbe7d68814180754acba88dfde3a917b55aaf206",
+      "bytes": 12424
+    },
+    "postsource_correspondence_controls_v1.py": {
+      "sha256": "c8467d86600e7f34be0ff04652d558a210852581bfbcdce3166442fa9854e32e",
+      "bytes": 5017
+    }
+  },
+  "controls": {
+    "independent_preexposure": 114,
+    "author_working_reproduction": 31,
+    "postsource_correspondence": 24,
+    "canonical_changed_closure": 34,
+    "final_affected_binding": 10
+  },
+  "no_canonical_aggregate_rerun": true,
+  "raw_observations_opened": false,
+  "empirical_claims_verified": false,
+  "findings": [
+    {
+      "id": "float_period_guard",
+      "original_finding_preserved": true,
+      "resolved_in_final_source": true
+    },
+    {
+      "id": "implicit_zero_error_default",
+      "original_exposure_preserved": true,
+      "resolved_in_final_source": true
+    }
+  ],
+  "remaining_mathematical_findings_in_reviewed_scope": []
+}

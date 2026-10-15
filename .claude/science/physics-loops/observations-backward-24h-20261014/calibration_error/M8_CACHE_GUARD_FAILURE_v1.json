@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-15T05:55:04.499909+00:00",
+  "failure": "RunnerIdentityChangedError",
+  "runner": "scripts/scalar_phase_quotient_check.py",
+  "cache_written": false,
+  "content_identity_before_and_after": {
+    "runner_sha256": "9dfd11339b89523f0f0d3fc73881c1b014852551115479064ad2c0d77624ade5",
+    "input_fingerprint_sha256": "a1aa44ee622812f1b464dfd1b3240a4c478796d33428fee4d4a58aaf65d2513c"
+  },
+  "changed_token": "calibration_error parent directory metadata changed when root created CANONICAL_SOURCE_FREEZE_v2.json during execution",
+  "before_size": 736,
+  "after_size": 768,
+  "disposition": "No accepted cache. Preserve the error; finish all source/pack creations first, then run the unchanged envelope sequentially. The guard is not disabled."
+}

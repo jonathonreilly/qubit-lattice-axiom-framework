@@ -1,6 +1,6 @@
 {
  "edge_count": 16050,
- "node_count": 7115,
+ "node_count": 7116,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19251,6 +19251,10 @@
    "out_degree": 1
   },
   "scalar_3plus1_temporal_ratio_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "scalar_count_kernel_energy_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

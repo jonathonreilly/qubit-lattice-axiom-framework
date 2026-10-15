@@ -1,0 +1,556 @@
+{
+  "reviewer": "/root/force_energy_bridge_check",
+  "author_new_implementation_opened": false,
+  "raw_or_reserved_observation_values_accessed": false,
+  "script_sha256": "1becb7f812e659c3cad271abd192765147fba16fcd5f2f174162bfe670431e2e",
+  "elapsed_seconds": 0.08332845894619823,
+  "passed": 109,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "hat_area_0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "centroid_gap_normalization_0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "hat_L2_derivative_0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "unequal_gap_identity_0_linear",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "unequal_gap_identity_0_cubic",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "unequal_gap_identity_0_oscillatory",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "unequal_gap_identity_0_AC_cusp",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "hat_area_1",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "centroid_gap_normalization_1",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "hat_L2_derivative_1",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "unequal_gap_identity_1_linear",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "unequal_gap_identity_1_cubic",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-15
+    },
+    {
+      "name": "unequal_gap_identity_1_oscillatory",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "unequal_gap_identity_1_AC_cusp",
+      "passed": true,
+      "max_abs_error": 4.996003610813204e-16
+    },
+    {
+      "name": "hat_area_2",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "centroid_gap_normalization_2",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "hat_L2_derivative_2",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "unequal_gap_identity_2_linear",
+      "passed": true,
+      "max_abs_error": 6.661338147750939e-16
+    },
+    {
+      "name": "unequal_gap_identity_2_cubic",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "unequal_gap_identity_2_oscillatory",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "unequal_gap_identity_2_AC_cusp",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "wrong_gap_area_formula_2",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "gap_cannot_be_ignored_2",
+      "passed": true,
+      "wrong_area": 1.8421052631578947
+    },
+    {
+      "name": "hat_area_3",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "centroid_gap_normalization_3",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "hat_L2_derivative_3",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "unequal_gap_identity_3_linear",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "unequal_gap_identity_3_cubic",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "unequal_gap_identity_3_oscillatory",
+      "passed": true,
+      "max_abs_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "unequal_gap_identity_3_AC_cusp",
+      "passed": true,
+      "max_abs_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "wrong_gap_area_formula_3",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "gap_cannot_be_ignored_3",
+      "passed": true,
+      "wrong_area": 3.3
+    },
+    {
+      "name": "integral_and_mean_Gram_equivalence",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "constant_velocity_raw_integral_annihilation",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "Gram_matrix_direct_quadrature",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18
+    },
+    {
+      "name": "Gram_positive_definite",
+      "passed": true,
+      "minimum_eigenvalue": 0.019827049576686524
+    },
+    {
+      "name": "Gram_diagonal_0",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "Gram_diagonal_1",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "Gram_diagonal_2",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "Gram_adjacent_offdiagonal_0",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18
+    },
+    {
+      "name": "Gram_adjacent_offdiagonal_1",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18
+    },
+    {
+      "name": "Gram_nonadjacent_zero",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "weighted_kernel_mass_normalization",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "weighted_hat_area",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "weighted_hat_nonnegative",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_clock_pushforward_linear",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "weighted_kernel_identity_linear",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "nonlinear_clock_pushforward_cubic",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "weighted_kernel_identity_cubic",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "nonlinear_clock_pushforward_oscillatory",
+      "passed": true,
+      "max_abs_error": 3.885780586188048e-16
+    },
+    {
+      "name": "weighted_kernel_identity_oscillatory",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "varying_calibration_correct_initial_cancel",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "varying_calibration_naive_failure",
+      "passed": true,
+      "leakage": 1.424112152314764
+    },
+    {
+      "name": "midpoint_not_weighted_centroid",
+      "passed": true,
+      "weighted_separation": 1.7597377306933537,
+      "midpoint_separation": 1.7718000000000003
+    },
+    {
+      "name": "clock_L2_Jacobian",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "weighted_Gram_direct",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "baseline_leak_exact",
+      "passed": true,
+      "max_abs_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "baseline_does_not_cancel_after_calibration_normalization",
+      "passed": true
+    },
+    {
+      "name": "two_rows_two_independent_nuisances",
+      "passed": true
+    },
+    {
+      "name": "three_row_baseline_cancel",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "three_row_velocity_cancel",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "calibration_error_initial_leak",
+      "passed": true,
+      "max_abs_error": 2.940356291780688e-16
+    },
+    {
+      "name": "affine_uniform_kernel_0",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "affine_uniform_kernel_1",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "clock_velocity_definition_0",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "clock_velocity_definition_1",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "nonlinear_clock_acceleration_term",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-16
+    },
+    {
+      "name": "clock_second_derivative_not_optional",
+      "passed": true
+    },
+    {
+      "name": "geometry_exact_identity",
+      "passed": true,
+      "max_abs_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "geometry_omission_failure",
+      "passed": true,
+      "omitted": -0.5499342305560947
+    },
+    {
+      "name": "constant_vector_geometry_leak",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "scalar_cancel_not_vector_cancel",
+      "passed": true,
+      "constant_velocity_leak": -0.5335285180568032
+    },
+    {
+      "name": "two_direction_moments_not_proportional",
+      "passed": true
+    },
+    {
+      "name": "vector_nuisance_rank",
+      "passed": true
+    },
+    {
+      "name": "vector_nuisance_annihilation",
+      "passed": true,
+      "max_abs_error": 1.4649921838943417e-16
+    },
+    {
+      "name": "vector_primitive_endpoints_0",
+      "passed": true,
+      "max_abs_error": 1.249000902703301e-16
+    },
+    {
+      "name": "vector_direct_acceleration_identity_0",
+      "passed": true,
+      "max_abs_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "vector_initial_velocity_annihilation_0",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "vector_primitive_endpoints_1",
+      "passed": true,
+      "max_abs_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "vector_direct_acceleration_identity_1",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "vector_initial_velocity_annihilation_1",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "vector_Gram_direct_isotropy_kernel",
+      "passed": true,
+      "max_abs_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "vector_Gram_positive",
+      "passed": true
+    },
+    {
+      "name": "energy_quotient_regression_0_0",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "energy_quotient_regression_0_1",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "energy_quotient_regression_0_2",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "energy_quotient_regression_0_3",
+      "passed": true,
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "name": "energy_quotient_regression_1_0",
+      "passed": true,
+      "max_abs_error": 2.7533531010703882e-14
+    },
+    {
+      "name": "energy_quotient_regression_1_1",
+      "passed": true,
+      "max_abs_error": 2.2863655413374318e-15
+    },
+    {
+      "name": "energy_quotient_regression_1_2",
+      "passed": true,
+      "max_abs_error": 1.5187850976872141e-13
+    },
+    {
+      "name": "energy_quotient_regression_1_3",
+      "passed": true,
+      "max_abs_error": 3.1530333899354446e-14
+    },
+    {
+      "name": "energy_quotient_regression_2_0",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "energy_quotient_regression_2_1",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "energy_quotient_regression_2_2",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "energy_quotient_regression_2_3",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "energy_quotient_regression_3_0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "energy_quotient_regression_3_1",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "energy_quotient_regression_3_2",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "energy_quotient_regression_3_3",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "energy_quotient_regression_4_0",
+      "passed": true,
+      "max_abs_error": 2.78806457761484e-31
+    },
+    {
+      "name": "energy_quotient_regression_4_1",
+      "passed": true,
+      "max_abs_error": 1.1471724043311059e-31
+    },
+    {
+      "name": "energy_quotient_regression_4_2",
+      "passed": true,
+      "max_abs_error": 3.136572649816695e-31
+    },
+    {
+      "name": "energy_quotient_regression_4_3",
+      "passed": true,
+      "max_abs_error": 5.263924007215518e-33
+    },
+    {
+      "name": "fully_nuisance_spanned_has_zero_residual",
+      "passed": true
+    },
+    {
+      "name": "general_calibration_Gram_energy_quotient",
+      "passed": true,
+      "max_abs_error": 7.674416657721395e-15
+    },
+    {
+      "name": "Fourier_Gram_enclosure_0_0",
+      "passed": true,
+      "partial": 0.08746614811649198,
+      "exact": 0.08799836800583632,
+      "tail_bound": 0.004145180180240607
+    },
+    {
+      "name": "Fourier_Gram_enclosure_0_1",
+      "passed": true,
+      "partial": -0.00205690426767576,
+      "exact": -0.0020840655466599577,
+      "tail_bound": 0.004524120402922382
+    },
+    {
+      "name": "Fourier_Gram_enclosure_1_1",
+      "passed": true,
+      "partial": 0.10389281792099733,
+      "exact": 0.10462963851411636,
+      "tail_bound": 0.0049377022300995665
+    },
+    {
+      "name": "Fourier_zero_frequency_vector_cancel",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    }
+  ],
+  "scope": "Synthetic mathematical checks of compressed observation kernels and a conditional fixed-point massless gradient energy quotient."
+}

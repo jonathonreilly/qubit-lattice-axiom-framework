@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-15T02:44:47.598075+00:00",
+  "failure": "hat_normalization deliberately doubled G and survived17variant v1 run. Sixteen others rejected. Smooth fields above a lower infimum and monotone excess alone did not discriminate a smaller claimed infimum.",
+  "repair": "Add an exact comparison from count-difference/piecewise-overlap construction to the equal-window hat_gram for the same observable. One new author control, not a changed physical assumption or formula.",
+  "old_source_sha256": "5fd2a9d68a95ba756daf908b047b928bc6f8e6c62327973570f35e3edb9fcf2a",
+  "new_source_sha256": "99c7e6eb3efdebe6aefe4651f9e586432a7b91358d4e2eb762b3f2ad3e648d19",
+  "preserved_mutations_sha256": "bf17147ec7202530a49be2e17363ae64eb4bf6dc8dd2009b13262547fce63997"
+}

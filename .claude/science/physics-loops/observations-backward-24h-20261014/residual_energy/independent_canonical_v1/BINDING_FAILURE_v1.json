@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-15T02:48:35.739598+00:00",
+  "failure": "Read-only verification of CANONICAL_FREEZE_v1 rejected a stale source identity after author inserted helper timeout declarations.",
+  "failed_script_sha256": "e17c4236b5c71aa99c3263c280b733e378cdfbbe0ef6288c3d95b578ff2cf4d0",
+  "stderr_sha256": "d5b54b145bbacb5bbe97cf7b7cbb544c8651d4f80b5a5a73ce69dfffd4435a9f",
+  "execution_stopped_before_any_scientific_suite": true,
+  "source_changes": [
+    {
+      "path": "scripts/scalar_count_energy_controls.py",
+      "exact_added_line_only": true,
+      "old_sha256": "99c7e6eb3efdebe6aefe4651f9e586432a7b91358d4e2eb762b3f2ad3e648d19",
+      "new_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c"
+    },
+    {
+      "path": "scripts/scalar_inertial_energy_controls.py",
+      "exact_added_line_only": true,
+      "old_sha256": "64f5480ff6baf80ba54647d4eace0b0fe26778fa987dddc957f8afb85d75b75a",
+      "new_sha256": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2"
+    },
+    {
+      "path": "scripts/cassini_count_window_controls.py",
+      "exact_added_line_only": true,
+      "old_sha256": "c224ea6afc4ded7d68596f65fd6b96da1d0664a9f1213f5bbc449d2a554fb3cd",
+      "new_sha256": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e"
+    }
+  ],
+  "next_step": "Bind the refreshed final freeze in a separately versioned verification; preserve v1."
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-15T02:33:56.299537+00:00",
+  "reviewer": "/root/localized_history_check",
+  "scope": "Complete v3 domain diff and working author-source correspondence; no formal audit or landing verdict",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DERIVATION_v2.md",
+      "sha256": "1e31731ea505da305b4a6250a63aa0b2b6c85909eb4f89b56e244ee37e9e02e1",
+      "bytes": 11444
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DERIVATION_v3.md",
+      "sha256": "1eca5b9a13278c819e221955518150cbcc44e4a9d012fbcba85db8df08dc707f",
+      "bytes": 13608
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/residual_energy_check_v1.py",
+      "sha256": "8ce220112159929fc05bbfa2e532f2263cf3a94293742dc2319836fb3738127d",
+      "bytes": 10284
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/AUTHOR_RESULTS_v1.json",
+      "sha256": "cb2f36aaab8cb6d81cb8431e594cc469281f9ec7f77b461b04cd2eba4d6b654f",
+      "bytes": 16799
+    }
+  ],
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/V3_SOURCE_CONFIRMATION_v1.md",
+    "sha256": "96c2100987b20334edba40252eefaebdc7ee1bb45f35de29c0b528b7b527877c"
+  },
+  "reviewed_diff": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/V2_V3_REVIEWED_DIFF_v1.txt",
+    "sha256": "a99c7dbf422cc06dcc493eeb7c1decbbe2c3af431ee01d5b1530b54a15414274"
+  },
+  "prior_review": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/GRAM_REVIEW_v1.md",
+    "sha256": "e25e4881b01de589bfdff2b4655192506b50519139885c8756ddec9f4afb6997",
+    "bytes": 13672
+  },
+  "prior_review_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/GRAM_REVIEW_IDENTITY_v1.json",
+    "sha256": "0efbc3c157ded175e6365fc504e613e42bfffe985848db3034bf2eb6fba03cf7",
+    "bytes": 3898
+  },
+  "mass_noise_review": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/MASS_NOISE_REVIEW_v1.md",
+    "sha256": "ad74cf8f7313ab258adb42083b57d576df06795e0b4aff292ed4b6501eca48fe"
+  },
+  "mass_noise_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/MASS_NOISE_REVIEW_IDENTITY_v1.json",
+    "sha256": "0b22f5103fbb4b88d61d0415773cd9440fa8e68565add0ac39d38ef7f496c6cd"
+  },
+  "independent_checks_original": 110,
+  "independent_checks_extension": 59,
+  "author_result_checks": 149,
+  "author_results_bound_note_version": 2,
+  "v3_executed": false,
+  "author_script_executed_by_reviewer": false,
+  "metadata_validation": {
+    "all_control_names_unique": true,
+    "all_numeric_records_finite_within_stored_tolerance": true,
+    "all_boolean_records_true": true,
+    "source_result_identity_matches": true
+  },
+  "finding_status": "v2 missing-domain finding explicitly resolved in v3; original finding preserved",
+  "physical_or_empirical_tests": 0
+}

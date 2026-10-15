@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-15T02:29:35.200644+00:00",
+  "failure": "v1 could not import the published decoder because the repository parent index pointed at .claude rather than repository root. No observation transform was executed.",
+  "repair": "Preserved v1; v2 corrects ROOT.parents[3] to ROOT.parents[4] and writes new-version outputs. No measurement partition or numeric formula changed.",
+  "files": {
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/development_timing_v1.py": {
+      "sha256": "ae0a323eeed82cef98ec6a9db4c846ef3a50efd15e6855bc6367a9a31c6ddda4",
+      "bytes": 6895
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/development_timing_v2.py": {
+      "sha256": "9b41c5a92214cd0cd6ee4e8c0c3c99b89f2af9ef6b06467e5fa72fb7ca6ef5bc",
+      "bytes": 6895
+    },
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/RESIDUAL_TIMING_v1.stderr": {
+      "sha256": "826c58102c75c3d42cb74568d5e9cfde015d3a5b0fac5c64f9667976f02e8845",
+      "bytes": 356
+    },
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/RESIDUAL_TIMING_v1.stdout": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DERIVATION_v3.md": {
+      "sha256": "1eca5b9a13278c819e221955518150cbcc44e4a9d012fbcba85db8df08dc707f",
+      "bytes": 13608
+    }
+  }
+}

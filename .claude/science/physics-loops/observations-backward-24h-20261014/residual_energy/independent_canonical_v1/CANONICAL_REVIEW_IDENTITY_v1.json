@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-15T02:53:14.220706+00:00",
+  "role": "focused canonical review, not formal audit",
+  "source_freeze_sha256": "6e7787ccb8f33f1701ef86d2cb4f8fff7cd212faa159b19f63a5d3d690420215",
+  "source_sha256": {
+    "scripts/scalar_count_kernel_energy_check.py": "ada23f9ae989333afb0a50e2b0fe168ad50002da367758e124d2f7226fc3fa42",
+    "docs/SCALAR_COUNT_KERNEL_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "f6c0936a00c83070081797a59ef55c66ce5856c15e344d6a73b5fc496498988b",
+    "scripts/scalar_count_energy_controls.py": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+    "scripts/scalar_inertial_energy_controls.py": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+    "scripts/cassini_count_window_controls.py": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "scripts/cassini_count_window_inputs.json": "9b99d155442fb364df5bd32749d7f8ab2c0f355c87b4d2fc73affa1f69efe891"
+  },
+  "prior_reports_reused": {
+    "independent_gram_v1/GRAM_REVIEW_v1.md": "e25e4881b01de589bfdff2b4655192506b50519139885c8756ddec9f4afb6997",
+    "independent_gram_v1/MASS_NOISE_REVIEW_v1.md": "ad74cf8f7313ab258adb42083b57d576df06795e0b4aff292ed4b6501eca48fe",
+    "independent_gram_v1/V3_SOURCE_CONFIRMATION_v1.md": "96c2100987b20334edba40252eefaebdc7ee1bb45f35de29c0b528b7b527877c",
+    "independent_count_kernel_v1/REVIEW_COUNT_KERNEL_v1.md": "10b67a0ed03137290a6abfe8d124ad056991c1e254936f1db09624aad8d30b9f",
+    "independent_count_kernel_v1/COUNT_KERNEL_SOURCE_CONFIRMATION_v3.md": "e1fee00d5b0514fa1cc8597b8b3143ef3d72fd5922641648cba10c606257c352",
+    "independent_count_kernel_v1/TIMING_REVIEW_v1.md": "f1e6a0338d5f6aa445b7fd9010340c3f5ebc6d0be8aaefdb6326787eeb131e73",
+    "independent_inertial_v1/INERTIAL_REVIEW_v1.md": "24d5b09c7e5275e3fd756097f3cc3b2b6395ce5f9f369878f413c3f319d06cde"
+  },
+  "local_artifacts": {
+    "CANONICAL_REVIEW_v1.md": "dc25cbb52fbd093c161b602486be24d7b047444d64e6714e54074a58fc8f000f",
+    "verify_canonical_v1.py": "e17c4236b5c71aa99c3263c280b733e378cdfbbe0ef6288c3d95b578ff2cf4d0",
+    "verify_canonical_v2.py": "621dca6869fa278e5e314d8cdd2c4bf08087629786381c1462c089dbc64f6872",
+    "CANONICAL_BINDING_RUN_v1.stderr": "d5b54b145bbacb5bbe97cf7b7cbb544c8651d4f80b5a5a73ce69dfffd4435a9f",
+    "CANONICAL_BINDING_RUN_v1.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CANONICAL_BINDING_RUN_v2.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CANONICAL_BINDING_RUN_v2.stdout": "85a4c5dd4c5b9e32cbca3a2a5e82ef2c9df554aa28b231e65a164ac35e0f7c87",
+    "CANONICAL_BINDING_RESULTS_v2.json": "85a4c5dd4c5b9e32cbca3a2a5e82ef2c9df554aa28b231e65a164ac35e0f7c87",
+    "BINDING_FAILURE_v1.json": "8c19f5ac91f85336b58449b5be861e975ef4d18eb577eea00a5991059dbe5def",
+    "AFFECTED_CHECKS_v1.json": "fb19604e31347f709d49c553b39893d84fca7fde8261daebe7e2e4511f13d514",
+    "affected_moment_command_v1.py": "cd5f2eaa144eacd3b62994e22d47645dda28a09b514a7f9e7bab2252f42d0270",
+    "scalar_count_energy_controls_ADAPTATION_DIFF_v1.txt": "bdb90ef4ddc39885377963c025a226a4cd8dbeebcc1a0d51391efe291b15978a",
+    "scalar_inertial_energy_controls_ADAPTATION_DIFF_v1.txt": "f92b5d0ebd06771ffe4e18fbbf83ef848bb05816221032babc6f616cddaf52a6",
+    "cassini_count_window_controls_ADAPTATION_DIFF_v1.txt": "2760ee3c610cad4c390519dd1c3661e9ca64f369373cd62388678c8c96d74ed0"
+  },
+  "cache_sha256": "83d72006b904b7b59c63b689db00a6bdee7c4c1416c48f08e4e25e5e4b3594a1",
+  "review_result": "No unresolved scoped discrepancy after explicit clock-domain repair; final source/cache correspondence passed.",
+  "raw_products_read_in_this_review": 0,
+  "complete_author_suites_rerun": false
+}

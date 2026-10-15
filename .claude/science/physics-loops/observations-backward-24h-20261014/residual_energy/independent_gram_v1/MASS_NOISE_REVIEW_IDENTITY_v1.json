@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-15T02:33:56.299537+00:00",
+  "reviewer": "/root/localized_history_check",
+  "scope": "Independent extension of v2 mass, nuisance and deterministic-error claims; no formal audit or landing verdict",
+  "author_source": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DERIVATION_v2.md",
+    "sha256": "1e31731ea505da305b4a6250a63aa0b2b6c85909eb4f89b56e244ee37e9e02e1",
+    "bytes": 11444
+  },
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/MASS_NOISE_REVIEW_v1.md",
+    "sha256": "ad74cf8f7313ab258adb42083b57d576df06795e0b4aff292ed4b6501eca48fe"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/DERIVATION_v2_SNAPSHOT.md",
+      "sha256": "1e31731ea505da305b4a6250a63aa0b2b6c85909eb4f89b56e244ee37e9e02e1",
+      "bytes": 11444
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/MASS_NOISE_PRECHECK_v1.md",
+      "sha256": "ac6a47cdd9e654f3ae70f594f64e69921dae8a95062ed4058c9ee85a26db70cd",
+      "bytes": 4987
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/independent_mass_noise_check_v1.py",
+      "sha256": "aa61e5592a5c1d62d628be9403666f6ba3cc9c85e6171a402831d4c58c390a0e",
+      "bytes": 9495
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/INDEPENDENT_MASS_NOISE_RESULTS_v1.json",
+      "sha256": "a78dc04470cd8f2919c7c1aab55451bb8d12e96c0eadc458942016e5b930db0c",
+      "bytes": 11772
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/INDEPENDENT_MASS_NOISE_RUN_v1.stdout",
+      "sha256": "0e0b94371c81ecc6f4ed68dd44113574776d7fc1fa69331cd35a1d5153898aa1",
+      "bytes": 493
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/INDEPENDENT_MASS_NOISE_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/V2_DOMAIN_FINDING_v1.json",
+      "sha256": "c6e0f951b08e0f872dcdaaf00eeccd01e11a05d679a172f58be0600ee5975027",
+      "bytes": 1603
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/GRAM_REVIEW_v1.md",
+      "sha256": "e25e4881b01de589bfdff2b4655192506b50519139885c8756ddec9f4afb6997",
+      "bytes": 13672
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/GRAM_REVIEW_IDENTITY_v1.json",
+      "sha256": "0efbc3c157ded175e6365fc504e613e42bfffe985848db3034bf2eb6fba03cf7",
+      "bytes": 3898
+    }
+  ],
+  "independent_controls": 59,
+  "original_110_controls_rerun": false,
+  "author_implementation_read_before_independent_run": false,
+  "empirical_tests": 0
+}

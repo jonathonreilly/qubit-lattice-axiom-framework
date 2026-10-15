@@ -1,0 +1,661 @@
+{
+  "role": "Independent exposed-development nominal timing inventory; no physical residual or fit",
+  "input_files": {
+    "odf": {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_development/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f"
+    },
+    "label": {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_odf_c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e"
+    }
+  },
+  "orbit_first_file_record": 6,
+  "orbit_records": 91863,
+  "type_counts": {
+    "11": 649,
+    "12": 61459,
+    "13": 29556,
+    "37": 199
+  },
+  "doppler_records": 91664,
+  "nondoppler_records": 199,
+  "static_fields": [
+    "format",
+    "rx",
+    "tx",
+    "network",
+    "type",
+    "down_band",
+    "up_band",
+    "exciter_band",
+    "bad",
+    "item15",
+    "spacecraft",
+    "independent_receiver",
+    "reference_frequency_high_mHz",
+    "reference_frequency_low_mHz",
+    "item20"
+  ],
+  "static_strata": 8,
+  "chains": 36,
+  "chain_length_histogram": {
+    "1": 1,
+    "3": 3,
+    "5": 1,
+    "6": 1,
+    "18": 2,
+    "21": 1,
+    "28": 1,
+    "35": 1,
+    "65": 1,
+    "150": 1,
+    "214": 1,
+    "255": 1,
+    "283": 1,
+    "394": 1,
+    "434": 1,
+    "579": 1,
+    "587": 1,
+    "1610": 1,
+    "2157": 1,
+    "2566": 1,
+    "3147": 1,
+    "3446": 1,
+    "3538": 1,
+    "4046": 1,
+    "4108": 1,
+    "4135": 1,
+    "4330": 1,
+    "5156": 1,
+    "5656": 1,
+    "6091": 1,
+    "8282": 1,
+    "11564": 1,
+    "18730": 1
+  },
+  "compression_centiseconds": {
+    "100": 91664
+  },
+  "pair_totals": {
+    "adjacent": 91628,
+    "gap": 28,
+    "interval_duplicate_pairs": 0,
+    "identical_record_pairs": 0,
+    "summed_duration_2ms": 183328000,
+    "union_coverage_2ms": 183328000,
+    "multiplicity_excess_2ms": 0
+  },
+  "streams": [
+    {
+      "stream_index": 0,
+      "key": {
+        "format": 2,
+        "rx": 25,
+        "tx": 25,
+        "network": 0,
+        "type": 12,
+        "down_band": 2,
+        "up_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 126184,
+        "reference_frequency_low_mHz": 544256,
+        "item20": 0
+      },
+      "records": 36007,
+      "chains": 4,
+      "pair_counts": {
+        "adjacent": 36003,
+        "gap": 3
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 36003,
+        "6000": 2,
+        "14000": 1
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311137324000,
+        3311209364000
+      ],
+      "compression_centiseconds": {
+        "100": 36007
+      },
+      "summed_duration_2ms": 72014000,
+      "union_coverage_2ms": 72014000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 4,
+      "gap_union_2ms": 26000
+    },
+    {
+      "stream_index": 1,
+      "key": {
+        "format": 2,
+        "rx": 25,
+        "tx": 54,
+        "network": 0,
+        "type": 13,
+        "down_band": 2,
+        "up_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "item20": 0
+      },
+      "records": 9910,
+      "chains": 3,
+      "pair_counts": {
+        "adjacent": 9907,
+        "gap": 2
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 9907,
+        "4000": 2
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311117334000,
+        3311137162000
+      ],
+      "compression_centiseconds": {
+        "100": 9910
+      },
+      "summed_duration_2ms": 19820000,
+      "union_coverage_2ms": 19820000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 3,
+      "gap_union_2ms": 8000
+    },
+    {
+      "stream_index": 2,
+      "key": {
+        "format": 2,
+        "rx": 45,
+        "tx": 25,
+        "network": 0,
+        "type": 13,
+        "down_band": 2,
+        "up_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "item20": 0
+      },
+      "records": 10160,
+      "chains": 6,
+      "pair_counts": {
+        "adjacent": 10154,
+        "gap": 5
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 10154,
+        "4000": 2,
+        "6000": 1,
+        "1302000": 1,
+        "150568000": 1
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311052618000,
+        3311224822000
+      ],
+      "compression_centiseconds": {
+        "100": 10160
+      },
+      "summed_duration_2ms": 20320000,
+      "union_coverage_2ms": 20320000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 6,
+      "gap_union_2ms": 151884000
+    },
+    {
+      "stream_index": 3,
+      "key": {
+        "format": 2,
+        "rx": 45,
+        "tx": 45,
+        "network": 0,
+        "type": 12,
+        "down_band": 2,
+        "up_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "item20": 0
+      },
+      "records": 6094,
+      "chains": 2,
+      "pair_counts": {
+        "adjacent": 6092,
+        "gap": 1
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 6092,
+        "160000000": 1
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311052654000,
+        3311224842000
+      ],
+      "compression_centiseconds": {
+        "100": 6094
+      },
+      "summed_duration_2ms": 12188000,
+      "union_coverage_2ms": 12188000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 2,
+      "gap_union_2ms": 160000000
+    },
+    {
+      "stream_index": 4,
+      "key": {
+        "format": 2,
+        "rx": 54,
+        "tx": 0,
+        "network": 0,
+        "type": 11,
+        "down_band": 2,
+        "up_band": 0,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 136991,
+        "reference_frequency_low_mHz": 5616944,
+        "item20": 0
+      },
+      "records": 649,
+      "chains": 2,
+      "pair_counts": {
+        "adjacent": 647,
+        "gap": 1
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 647,
+        "2000": 1
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311059234000,
+        3311060534000
+      ],
+      "compression_centiseconds": {
+        "100": 649
+      },
+      "summed_duration_2ms": 1298000,
+      "union_coverage_2ms": 1298000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 2,
+      "gap_union_2ms": 2000
+    },
+    {
+      "stream_index": 5,
+      "key": {
+        "format": 2,
+        "rx": 54,
+        "tx": 45,
+        "network": 0,
+        "type": 13,
+        "down_band": 2,
+        "up_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "item20": 0
+      },
+      "records": 9486,
+      "chains": 2,
+      "pair_counts": {
+        "adjacent": 9484,
+        "gap": 1
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 9484,
+        "14000": 1
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311062326000,
+        3311081312000
+      ],
+      "compression_centiseconds": {
+        "100": 9486
+      },
+      "summed_duration_2ms": 18972000,
+      "union_coverage_2ms": 18972000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 2,
+      "gap_union_2ms": 14000
+    },
+    {
+      "stream_index": 6,
+      "key": {
+        "format": 2,
+        "rx": 54,
+        "tx": 54,
+        "network": 0,
+        "type": 12,
+        "down_band": 2,
+        "up_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 126183,
+        "reference_frequency_low_mHz": 15977472,
+        "item20": 0
+      },
+      "records": 15312,
+      "chains": 16,
+      "pair_counts": {
+        "adjacent": 15296,
+        "gap": 15
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 15296,
+        "4000": 3,
+        "8000": 2,
+        "10000": 1,
+        "12000": 1,
+        "14000": 4,
+        "16000": 1,
+        "26000": 1,
+        "28000": 1,
+        "40000": 1
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311090436000,
+        3311121276000
+      ],
+      "compression_centiseconds": {
+        "100": 15312
+      },
+      "summed_duration_2ms": 30624000,
+      "union_coverage_2ms": 30624000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 16,
+      "gap_union_2ms": 216000
+    },
+    {
+      "stream_index": 7,
+      "key": {
+        "format": 2,
+        "rx": 54,
+        "tx": 54,
+        "network": 0,
+        "type": 12,
+        "down_band": 2,
+        "up_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "item15": 2,
+        "spacecraft": 82,
+        "independent_receiver": 1,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "item20": 0
+      },
+      "records": 4046,
+      "chains": 1,
+      "pair_counts": {
+        "adjacent": 4045
+      },
+      "interval_duplicate_pairs": 0,
+      "identical_record_pairs": 0,
+      "separation_histogram_2ms": {
+        "0": 4045
+      },
+      "nominal_endpoint_bounds_2ms": [
+        3311081542000,
+        3311089634000
+      ],
+      "compression_centiseconds": {
+        "100": 4046
+      },
+      "summed_duration_2ms": 8092000,
+      "union_coverage_2ms": 8092000,
+      "multiplicity_excess_2ms": 0,
+      "union_components": 1,
+      "gap_union_2ms": 0
+    }
+  ],
+  "exact_moment_samples": [
+    {
+      "chain_index": 0,
+      "selection_reasons": [
+        "first_three_sorted_chains"
+      ],
+      "records": 11564,
+      "first_file_record": 45589,
+      "last_file_record": 57190,
+      "S0_centiseconds": "1156400",
+      "S1_centiseconds_nanohertz": "2734596274399994200",
+      "S2_centiseconds_nanohertz_squared": "11030323484151085879335031013800",
+      "raw_weighted_mean_Hz": {
+        "numerator": "1953283053142853",
+        "denominator": "826000000000",
+        "float": 2364.749459010718
+      },
+      "raw_centered_sum_Hz2_nominal_seconds": {
+        "numerator": "2692576169954075171846843318533",
+        "denominator": "59000000000000000000",
+        "float": 45636884236.50975
+      },
+      "six_pi_Gram_diagonal_first": [
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        }
+      ],
+      "six_pi_Gram_offdiagonal_first": [
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        },
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        }
+      ]
+    },
+    {
+      "chain_index": 1,
+      "selection_reasons": [
+        "first_three_sorted_chains",
+        "longest_chain"
+      ],
+      "records": 18730,
+      "first_file_record": 57191,
+      "last_file_record": 75982,
+      "S0_centiseconds": "1873000",
+      "S1_centiseconds_nanohertz": "30208323375499981000",
+      "S2_centiseconds_nanohertz_squared": "542000320181722686760735948781400",
+      "raw_weighted_mean_Hz": {
+        "numerator": "30208323375499981",
+        "denominator": "1873000000000",
+        "float": 16128.30933021889
+      },
+      "raw_centered_sum_Hz2_nominal_seconds": {
+        "numerator": "256559496353970065547241752668003",
+        "denominator": "468250000000000000000",
+        "float": 547911364343.7695
+      },
+      "six_pi_Gram_diagonal_first": [
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        }
+      ],
+      "six_pi_Gram_offdiagonal_first": [
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        },
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        }
+      ]
+    },
+    {
+      "chain_index": 2,
+      "selection_reasons": [
+        "first_three_sorted_chains"
+      ],
+      "records": 3147,
+      "first_file_record": 75983,
+      "last_file_record": 79574,
+      "S0_centiseconds": "314700",
+      "S1_centiseconds_nanohertz": "7944839523500023800",
+      "S2_centiseconds_nanohertz_squared": "200623790111586253350789861101200",
+      "raw_weighted_mean_Hz": {
+        "numerator": "13241399205833373",
+        "denominator": "524500000000",
+        "float": 25245.756350492607
+      },
+      "raw_centered_sum_Hz2_nominal_seconds": {
+        "numerator": "13193078290090585735208906651",
+        "denominator": "26225000000000000000",
+        "float": 503072575.40860194
+      },
+      "six_pi_Gram_diagonal_first": [
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        }
+      ],
+      "six_pi_Gram_offdiagonal_first": [
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        },
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        }
+      ]
+    },
+    {
+      "chain_index": 15,
+      "selection_reasons": [
+        "first_oneway"
+      ],
+      "records": 394,
+      "first_file_record": 3313,
+      "last_file_record": 4100,
+      "S0_centiseconds": "39400",
+      "S1_centiseconds_nanohertz": "-114745833188366544300",
+      "S2_centiseconds_nanohertz_squared": "334177823200315865788622743231404100",
+      "raw_weighted_mean_Hz": {
+        "numerator": "-1147458331883665443",
+        "denominator": "394000000000",
+        "float": -2912330.791582907
+      },
+      "raw_centered_sum_Hz2_nominal_seconds": {
+        "numerator": "80130399545435869181",
+        "denominator": "78800000000000000000",
+        "float": 1.0168832429623842
+      },
+      "six_pi_Gram_diagonal_first": [
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        },
+        {
+          "numerator": "2",
+          "denominator": "1",
+          "float": 2.0
+        }
+      ],
+      "six_pi_Gram_offdiagonal_first": [
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        },
+        {
+          "numerator": "-1",
+          "denominator": "1",
+          "float": -1.0
+        }
+      ]
+    }
+  ],
+  "independent_before_author_timing_access": true
+}

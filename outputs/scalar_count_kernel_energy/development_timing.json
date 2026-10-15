@@ -1,0 +1,320 @@
+{
+  "role": "reuse of exposed development data for nominal count-window geometry; no gravity fit or independent test",
+  "self_checks": {
+    "partition_with_gap_duplicate_and_reversed_input": true,
+    "exact_interval_midpoint": true,
+    "large_offset_centered_moment": true,
+    "unequal_duration_centered_moment": true,
+    "singleton_centered_moment": true
+  },
+  "inputs": {
+    "odf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304,
+      "filename": "c32easc2002_169_0000xmmmv0.odf"
+    },
+    "odf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903,
+      "filename": "odf_c32easc2002_169_0000xmmmv0.lbl"
+    }
+  },
+  "source_sha256": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e",
+  "decoder_sha256": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+  "orbit_records": 91863,
+  "type_counts": {
+    "13": 29556,
+    "12": 61459,
+    "37": 199,
+    "11": 649
+  },
+  "doppler_records_accounted": 91664,
+  "unsupported": [],
+  "streams": 8,
+  "chains": 36,
+  "duration_cs_counts": {
+    "100": 91664
+  },
+  "groups": [
+    {
+      "stream": 0,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 126183,
+        "reference_frequency_low_mHz": 15977472,
+        "rx": 54,
+        "spacecraft": 82,
+        "tx": 54,
+        "type": 12,
+        "up_band": 2
+      },
+      "records": 15312,
+      "chains": 16,
+      "chain_lengths": {
+        "1": 1,
+        "3": 2,
+        "5": 1,
+        "18": 1,
+        "21": 1,
+        "28": 1,
+        "35": 1,
+        "65": 1,
+        "150": 1,
+        "214": 1,
+        "283": 1,
+        "587": 1,
+        "4108": 1,
+        "4135": 1,
+        "5656": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 15296,
+        "gap": 15
+      },
+      "source_order_time_decreases": 0
+    },
+    {
+      "stream": 1,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 126184,
+        "reference_frequency_low_mHz": 544256,
+        "rx": 25,
+        "spacecraft": 82,
+        "tx": 25,
+        "type": 12,
+        "up_band": 2
+      },
+      "records": 36007,
+      "chains": 4,
+      "chain_lengths": {
+        "2566": 1,
+        "3147": 1,
+        "11564": 1,
+        "18730": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 36003,
+        "gap": 3
+      },
+      "source_order_time_decreases": 0
+    },
+    {
+      "stream": 2,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "rx": 25,
+        "spacecraft": 82,
+        "tx": 54,
+        "type": 13,
+        "up_band": 2
+      },
+      "records": 9910,
+      "chains": 3,
+      "chain_lengths": {
+        "18": 1,
+        "1610": 1,
+        "8282": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 9907,
+        "gap": 2
+      },
+      "source_order_time_decreases": 0
+    },
+    {
+      "stream": 3,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "rx": 45,
+        "spacecraft": 82,
+        "tx": 25,
+        "type": 13,
+        "up_band": 2
+      },
+      "records": 10160,
+      "chains": 6,
+      "chain_lengths": {
+        "6": 1,
+        "434": 1,
+        "579": 1,
+        "2157": 1,
+        "3446": 1,
+        "3538": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 10154,
+        "gap": 5
+      },
+      "source_order_time_decreases": 0
+    },
+    {
+      "stream": 4,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "rx": 45,
+        "spacecraft": 82,
+        "tx": 45,
+        "type": 12,
+        "up_band": 2
+      },
+      "records": 6094,
+      "chains": 2,
+      "chain_lengths": {
+        "3": 1,
+        "6091": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 6092,
+        "gap": 1
+      },
+      "source_order_time_decreases": 0
+    },
+    {
+      "stream": 5,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "rx": 54,
+        "spacecraft": 82,
+        "tx": 45,
+        "type": 13,
+        "up_band": 2
+      },
+      "records": 9486,
+      "chains": 2,
+      "chain_lengths": {
+        "4330": 1,
+        "5156": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 9484,
+        "gap": 1
+      },
+      "source_order_time_decreases": 0
+    },
+    {
+      "stream": 6,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 126186,
+        "reference_frequency_low_mHz": 14221824,
+        "rx": 54,
+        "spacecraft": 82,
+        "tx": 54,
+        "type": 12,
+        "up_band": 2
+      },
+      "records": 4046,
+      "chains": 1,
+      "chain_lengths": {
+        "4046": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 4045
+      },
+      "source_order_time_decreases": 0
+    },
+    {
+      "stream": 7,
+      "configuration": {
+        "bad": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "format": 2,
+        "independent_receiver": 1,
+        "item15": 2,
+        "item20": 0,
+        "network": 0,
+        "reference_frequency_high_mHz": 136991,
+        "reference_frequency_low_mHz": 5616944,
+        "rx": 54,
+        "spacecraft": 82,
+        "tx": 0,
+        "type": 11,
+        "up_band": 0
+      },
+      "records": 649,
+      "chains": 2,
+      "chain_lengths": {
+        "255": 1,
+        "394": 1
+      },
+      "sorted_neighbor_relations": {
+        "adjacent": 647,
+        "gap": 1
+      },
+      "source_order_time_decreases": 0
+    }
+  ],
+  "full_chain_ledger": "count_window_chains.jsonl",
+  "full_chain_ledger_sha256": "cd5ba960fef413f2207056fa3cf39cf674242a51ce87081834953a0aa8a0a813",
+  "physical_energy_inferences": 0,
+  "physical_residual_fits": 0,
+  "new_raw_products_opened": 0,
+  "limits": [
+    "Nominal archive time is not a derived physical clock map.",
+    "Reference, configuration and validity strata are retained; no values are clipped.",
+    "Overlaps and gaps break this strictly adjacent-chain construction and remain counted.",
+    "Raw frequency weighted variance is neither scalar energy nor a gravity residual.",
+    "Different chains or stations are not assumed independent or pooled into an energy."
+  ]
+}

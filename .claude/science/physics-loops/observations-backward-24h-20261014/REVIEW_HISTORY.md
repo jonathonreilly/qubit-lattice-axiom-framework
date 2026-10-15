@@ -76,3 +76,14 @@ Independent temporal58controls and moving61controls were read completely by root
 
 
 Final canonical confirmation 2026-10-15T01:56:00.922924+00:00: full report SHA d5f4153396c6d5740601cbf325dcbf3caec8c6f09a748a9d34871858bb7872ae read completely. All5science sources and every affected repair/wording change are covered. Cache and29current-source mutation artifacts independently bound; original survivor remains. Force reviewer final wording supplement SHA cef8165703b3ef5931b2757f0f9cbe56c30540ce2d43eadb4ec13cb3f2cd4e6e also read. No formal audit verdict. Final publication binding pending; all12conformance sections are recorded in finite_time_environment/HISTORY_CONFORMANCE_v1.md.
+
+
+M4 delivery complete 2026-10-15T02:09:12.088834+00:00: HISTORY_DELIVERY_REVIEW_v1.md SHA8720e789317f652a08f3d3d92d90044b8a75863787a2dd7afb33030d6521ef2c read fully. All45postimages, final one-byte EOF changes, fresh cache, products, graph and original-reviewer mappings bound. Frozen commit444fddc785280eb01898986edfc301bda9e8d9df passes HISTORY_UNIT_RECORD_v1.json (recordSHA0d9a0b64f00ce64a600472d79f191d05ba026e56c355009fe61af287964ae295), cache checked. No unresolved source/delivery finding; integrated landing validation and formal audit remain pending. PR9583verified/attached.
+
+
+## Count-derived energy source preparation
+
+Root read full independent Gram110, mass/error59, count-kernel109, nominal timing22plus114comparison, and inertial66 reports. Their calculations preceded access to the corresponding author code. Canonical author controls are150count/energy and81inertial;8nominal inventory aggregates remain data consistency rather than physics tests. Findings and preserved repairs are in residual_energy: vector moment cancellation, L2/rank/zero-response domains, C1 clock condition, exact-moment controls and the normalization-mutation survivor. The source proof/cache check is pending its final frozen-byte report; all12conformance sections are recorded in ENERGY_CONFORMANCE_v1.md. No formal audit or integrated landing gate is claimed.
+
+
+Final canonical source review completed: residual_energy/independent_canonical_v1/CANONICAL_REVIEW_v1.md, SHA256 dc25cbb52fbd093c161b602486be24d7b047444d64e6714e54074a58fc8f000f; identity69f9dc6817a072f36a62fc4d7ec8e06087e6d34f134a7743d378994dc024081b. Root read the complete report. Final source/cache/product closure passed. Full staged delivery review remains pending. No formal audit.

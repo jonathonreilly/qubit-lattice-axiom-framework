@@ -1,0 +1,483 @@
+{
+  "created_at": "2026-10-15T02:27:33.310469+00:00",
+  "reviewer": "/root/localized_history_check",
+  "checks_passed": 59,
+  "checks": [
+    {
+      "name": "finite_spectral_Gram_positive_0.0",
+      "passed": true
+    },
+    {
+      "name": "mass_order_matrix_0.0",
+      "passed": true,
+      "min_difference_eigenvalue": 4.2221129219024527e-05
+    },
+    {
+      "name": "mass_coefficient_order_0.0",
+      "passed": true
+    },
+    {
+      "name": "finite_spectral_Gram_positive_0.4",
+      "passed": true
+    },
+    {
+      "name": "mass_order_matrix_0.4",
+      "passed": true,
+      "min_difference_eigenvalue": 0.003337352465052126
+    },
+    {
+      "name": "mass_coefficient_order_0.4",
+      "passed": true
+    },
+    {
+      "name": "finite_spectral_Gram_positive_1.7",
+      "passed": true
+    },
+    {
+      "name": "mass_order_matrix_1.7",
+      "passed": true,
+      "min_difference_eigenvalue": 0.028839344955016492
+    },
+    {
+      "name": "mass_coefficient_order_1.7",
+      "passed": true
+    },
+    {
+      "name": "finite_spectral_Gram_positive_6.0",
+      "passed": true
+    },
+    {
+      "name": "mass_order_matrix_6.0",
+      "passed": true,
+      "min_difference_eigenvalue": 0.0414378651472413
+    },
+    {
+      "name": "mass_coefficient_order_6.0",
+      "passed": true
+    },
+    {
+      "name": "massless_tail_trace_enclosure",
+      "passed": true,
+      "omitted_trace": 0.0008262904933528381,
+      "analytic_trace_upper_bound": 0.0022003783233569725
+    },
+    {
+      "name": "matrix_order_is_not_entrywise",
+      "passed": true,
+      "massless_cross": -0.05305164769729845,
+      "massive_cross": -0.006830300574769919
+    },
+    {
+      "name": "multiple_mass_Loewner_enclosure",
+      "passed": true
+    },
+    {
+      "name": "multiple_mass_energy_lower_bound_0",
+      "passed": true,
+      "finite_band_energy": 37.525099035545,
+      "comparison_lower_bound": 5.406012865819796
+    },
+    {
+      "name": "multiple_mass_energy_lower_bound_1",
+      "passed": true,
+      "finite_band_energy": 28.283288722067148,
+      "comparison_lower_bound": 4.584061373349826
+    },
+    {
+      "name": "multiple_mass_energy_lower_bound_2",
+      "passed": true,
+      "finite_band_energy": 134.61004773741115,
+      "comparison_lower_bound": 19.04048603927835
+    },
+    {
+      "name": "quotient_vs_weighted_LS_4",
+      "passed": true,
+      "max_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "quotient_vs_symmetric_whitening_4",
+      "passed": true,
+      "max_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "ball_attainment_4_0.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "ball_feasibility_4_0.0",
+      "passed": true
+    },
+    {
+      "name": "ball_attainment_4_0.35",
+      "passed": true,
+      "max_error": 4.163336342344337e-17
+    },
+    {
+      "name": "ball_feasibility_4_0.35",
+      "passed": true
+    },
+    {
+      "name": "ball_optimizer_success_4_0.35",
+      "passed": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "name": "ball_direct_constrained_optimizer_4_0.35",
+      "passed": true,
+      "max_error": 6.113165529342268e-14
+    },
+    {
+      "name": "ball_optimizer_feasible_4_0.35",
+      "passed": true
+    },
+    {
+      "name": "ball_attainment_4_1.4",
+      "passed": true,
+      "max_error": 1.0754392809458327e-30
+    },
+    {
+      "name": "ball_feasibility_4_1.4",
+      "passed": true
+    },
+    {
+      "name": "ball_optimizer_success_4_1.4",
+      "passed": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "name": "ball_direct_constrained_optimizer_4_1.4",
+      "passed": true,
+      "max_error": 2.381100122286918e-33
+    },
+    {
+      "name": "ball_optimizer_feasible_4_1.4",
+      "passed": true
+    },
+    {
+      "name": "componentwise_joint_optimizer_success_4",
+      "passed": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "name": "componentwise_contrast_lower_bound_4",
+      "passed": true,
+      "lower_bound": 0.09825889200090335,
+      "joint_optimized_energy": 0.3224032996087983
+    },
+    {
+      "name": "quotient_vs_weighted_LS_6",
+      "passed": true,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "name": "quotient_vs_symmetric_whitening_6",
+      "passed": true,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "ball_attainment_6_0.0",
+      "passed": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "ball_feasibility_6_0.0",
+      "passed": true
+    },
+    {
+      "name": "ball_attainment_6_0.35",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "ball_feasibility_6_0.35",
+      "passed": true
+    },
+    {
+      "name": "ball_optimizer_success_6_0.35",
+      "passed": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "name": "ball_direct_constrained_optimizer_6_0.35",
+      "passed": true,
+      "max_error": 7.993605777301127e-15
+    },
+    {
+      "name": "ball_optimizer_feasible_6_0.35",
+      "passed": true
+    },
+    {
+      "name": "ball_attainment_6_1.4",
+      "passed": true,
+      "max_error": 9.62964972193618e-32
+    },
+    {
+      "name": "ball_feasibility_6_1.4",
+      "passed": true
+    },
+    {
+      "name": "ball_optimizer_success_6_1.4",
+      "passed": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "name": "ball_direct_constrained_optimizer_6_1.4",
+      "passed": true,
+      "max_error": 2.393825788105288e-17
+    },
+    {
+      "name": "ball_optimizer_feasible_6_1.4",
+      "passed": true
+    },
+    {
+      "name": "componentwise_joint_optimizer_success_6",
+      "passed": true,
+      "message": "Optimization terminated successfully"
+    },
+    {
+      "name": "componentwise_contrast_lower_bound_6",
+      "passed": true,
+      "lower_bound": 0.3325012115558094,
+      "joint_optimized_energy": 0.3801476848800768
+    },
+    {
+      "name": "full_nuisance_span_zero_requirement",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "positive_quotient_does_not_imply_raw_invertibility",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "raw_Gram_singular_boundary",
+      "passed": true
+    },
+    {
+      "name": "zero_response_contrast_denominator",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "zero_response_contrast_incompatible",
+      "passed": true
+    },
+    {
+      "name": "physical_Q_G_conversion_2.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "physical_ceiling_lower_bound_2.0",
+      "passed": true
+    },
+    {
+      "name": "physical_Q_G_conversion_0.4",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "physical_ceiling_lower_bound_0.4",
+      "passed": true
+    }
+  ],
+  "time_domain_G0": [
+    [
+      0.1061032953945969,
+      -0.05305164769729845,
+      0.0,
+      0.00906194765650546
+    ],
+    [
+      -0.05305164769729845,
+      0.1061032953945969,
+      -0.0,
+      -0.012686726719107644
+    ],
+    [
+      0.0,
+      -0.0,
+      0.30933905362856245,
+      -0.005548131218268645
+    ],
+    [
+      0.00906194765650546,
+      -0.012686726719107644,
+      -0.005548131218268646,
+      0.04829462694337592
+    ]
+  ],
+  "spectral_cutoff": 800.0,
+  "massless_omitted_trace_upper_bound": 0.0022003783233569725,
+  "mass_controls": [
+    {
+      "mu": 0.0,
+      "finite_spectral_Gram": [
+        [
+          0.10597643385492364,
+          -0.05296700736775491,
+          0.0,
+          0.009062029552344001
+        ],
+        [
+          -0.05296700736775492,
+          0.10597643385492365,
+          0.0,
+          -0.012686827107195724
+        ],
+        [
+          0.0,
+          0.0,
+          0.3088108211377479,
+          -0.0055486149502204
+        ],
+        [
+          0.009062029552343998,
+          -0.012686827107195722,
+          -0.005548614950220398,
+          0.04825029202018415
+        ]
+      ],
+      "minimum_G0_minus_G_eigenvalue": 4.2221129219024527e-05
+    },
+    {
+      "mu": 0.4,
+      "finite_spectral_Gram": [
+        [
+          0.09906732002901868,
+          -0.05364806627013721,
+          0.0,
+          0.006962994368343034
+        ],
+        [
+          -0.05364806627013721,
+          0.09906732002901868,
+          0.0,
+          -0.012186805680963243
+        ],
+        [
+          0.0,
+          0.0,
+          0.29829931221057726,
+          -0.007084007660701759
+        ],
+        [
+          0.006962994368343034,
+          -0.012186805680963243,
+          -0.0070840076607017605,
+          0.04326475443970926
+        ]
+      ],
+      "minimum_G0_minus_G_eigenvalue": 0.003337352465052126
+    },
+    {
+      "mu": 1.7,
+      "finite_spectral_Gram": [
+        [
+          0.04606174335854745,
+          -0.03395282301774543,
+          0.0,
+          -0.001044426280753214
+        ],
+        [
+          -0.03395282301774543,
+          0.04606174335854744,
+          0.0,
+          -0.00032114726517620676
+        ],
+        [
+          0.0,
+          0.0,
+          0.19362075627307226,
+          -0.008185443138378257
+        ],
+        [
+          -0.0010444262807532143,
+          -0.00032114726517620666,
+          -0.008185443138378259,
+          0.014144707445319834
+        ]
+      ],
+      "minimum_G0_minus_G_eigenvalue": 0.028839344955016492
+    },
+    {
+      "mu": 6.0,
+      "finite_spectral_Gram": [
+        [
+          0.010175027941962744,
+          -0.006830300574769919,
+          0.0,
+          5.1102750798005e-05
+        ],
+        [
+          -0.00683030057476992,
+          0.010175027941962745,
+          0.0,
+          0.00019410832048238582
+        ],
+        [
+          0.0,
+          0.0,
+          0.03717927941707618,
+          -0.0010151801165826629
+        ],
+        [
+          5.1102750798005e-05,
+          0.00019410832048238587,
+          -0.0010151801165826629,
+          0.003482815478817735
+        ]
+      ],
+      "minimum_G0_minus_G_eigenvalue": 0.0414378651472413
+    }
+  ],
+  "noise_optimizations": [
+    {
+      "N": 4,
+      "fraction": 0.35,
+      "rho": 0.17586340234982123,
+      "projected_norm": 0.5024668638566321,
+      "exact_cost": 0.10666982106823088,
+      "optimized_cost": 0.10666982106816975,
+      "iterations": 15
+    },
+    {
+      "N": 4,
+      "fraction": 1.4,
+      "rho": 0.7034536093992849,
+      "projected_norm": 0.5024668638566321,
+      "exact_cost": 0.0,
+      "optimized_cost": 2.381100122286918e-33,
+      "iterations": 6
+    },
+    {
+      "N": 6,
+      "fraction": 0.35,
+      "rho": 0.20120246351282112,
+      "projected_norm": 0.5748641814652032,
+      "exact_cost": 0.13962307946312558,
+      "optimized_cost": 0.13962307946311758,
+      "iterations": 16
+    },
+    {
+      "N": 6,
+      "fraction": 1.4,
+      "rho": 0.8048098540512845,
+      "projected_norm": 0.5748641814652032,
+      "exact_cost": 0.0,
+      "optimized_cost": 2.393825788105288e-17,
+      "iterations": 11
+    }
+  ],
+  "author_code_read_before_run": false,
+  "unchanged_110_controls_rerun": false,
+  "elapsed_seconds": 0.014933666680008173,
+  "source_sha256": {
+    "independent_mass_noise_check_v1.py": "aa61e5592a5c1d62d628be9403666f6ba3cc9c85e6171a402831d4c58c390a0e",
+    "MASS_NOISE_PRECHECK_v1.md": "ac6a47cdd9e654f3ae70f594f64e69921dae8a95062ed4058c9ee85a26db70cd",
+    "DERIVATION_v2_SNAPSHOT.md": "1e31731ea505da305b4a6250a63aa0b2b6c85909eb4f89b56e244ee37e9e02e1"
+  },
+  "scope": "Focused new conditional mass/order, nuisance and deterministic-error mathematics. Finite spectral integrals are cutoff controls, and optimization is ordinary floating-point evidence, not interval certification. No empirical error ball, physical residual or energy calibration is inferred."
+}

@@ -63,3 +63,8 @@ has been selected or counted as retired. All new calculations are synthetic.
 ## Finite-window scalar contribution — publication candidate
 
 The temporal observable replaces a compact-support/initial-profile choice with a quantitative energy input. The moving-path extension keeps a uniform subluminal margin and explicit kinematic/direction bounds. The exact conformal test-body action supplies both spatial-gradient and partial-time-derivative force terms; the shared mode bound uses one energy budget. Q and constant-frame normalization are derived explicitly, with an optional same-environment positive-geometry gravity substitution. The action, stable frozen operator, actual energy budget, nonlinear/source remainder and physical count/clock/trajectory calibration remain supplied. No new observation was opened or parameter fitted.
+
+
+## Count-derived energy milestone
+
+The count-window shape is derived from calibrated kernels and vector cancellation; no independent averaging selector is used. Exact nuisance elimination removes arbitrary constant initial velocity within the reduced measurement model. The Hilbert minimum is a consistency requirement, not a physical initial-state selection law. The inertial full-force enclosure is uniform in nonnegative masses and constant subluminal velocities; no mass is selected for the bound. Actual free-field energy, calibrated count/clock/direction/nuisance model, accelerated or retarded trajectories, nonlinear/source errors, action/potential and environment remain supplied or open. Same-environment measured gravity is only an optional conditional normalization. The exposed day16936chain inventory supplies nominal timing; raw Hz²second moments are not scalar energy or physical residuals.

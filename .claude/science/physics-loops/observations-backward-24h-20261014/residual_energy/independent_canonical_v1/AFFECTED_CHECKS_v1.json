@@ -1,0 +1,132 @@
+{
+  "role": "affected canonical adaptation and exact-moment checks, not repeated scientific suites",
+  "checked_canonical_selfcheck": {
+    "partition_with_gap_duplicate_and_reversed_input": true,
+    "exact_interval_midpoint": true,
+    "large_offset_centered_moment": true,
+    "unequal_duration_centered_moment": true,
+    "singleton_centered_moment": true
+  },
+  "independent_pairwise_moment_cases": [
+    {
+      "fixture": 0,
+      "rows": 2,
+      "pairwise_equality": true,
+      "offset_invariance": true,
+      "mean": [
+        199999999999999999991,
+        2000000000
+      ],
+      "variance": [
+        3,
+        80000000000000000
+      ]
+    },
+    {
+      "fixture": 1,
+      "rows": 3,
+      "pairwise_equality": true,
+      "offset_invariance": true,
+      "mean": [
+        131,
+        8200000000
+      ],
+      "variance": [
+        7959,
+        51250000000000000000
+      ]
+    },
+    {
+      "fixture": 2,
+      "rows": 1,
+      "pairwise_equality": true,
+      "offset_invariance": true,
+      "mean": [
+        1234567890123456789,
+        1000000000
+      ],
+      "variance": [
+        0,
+        1
+      ]
+    },
+    {
+      "fixture": 3,
+      "rows": 2,
+      "pairwise_equality": true,
+      "offset_invariance": true,
+      "mean": [
+        26374999999999999999999806509,
+        263750000000
+      ],
+      "variance": [
+        4001213287245807,
+        52750000000000000000000
+      ]
+    },
+    {
+      "fixture": 4,
+      "rows": 3,
+      "pairwise_equality": true,
+      "offset_invariance": true,
+      "mean": [
+        143499999999999999999987044373,
+        1435000000000
+      ],
+      "variance": [
+        775558686254481,
+        8968750000000000000000
+      ]
+    },
+    {
+      "fixture": 5,
+      "rows": 7,
+      "pairwise_equality": true,
+      "offset_invariance": true,
+      "mean": [
+        32799999999999999999992109103,
+        328000000000
+      ],
+      "variance": [
+        1289459284605729,
+        32800000000000000000000
+      ]
+    },
+    {
+      "fixture": 6,
+      "rows": 11,
+      "pairwise_equality": true,
+      "offset_invariance": true,
+      "mean": [
+        301899999999999999999960881317,
+        3019000000000
+      ],
+      "variance": [
+        13817235522964793,
+        150950000000000000000000
+      ]
+    }
+  ],
+  "audit_declarations": {
+    "AUDIT_TIMEOUT_SEC": 240,
+    "AUDIT_INPUT_PATHS": [
+      "docs/SCALAR_COUNT_KERNEL_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "scripts/scalar_count_energy_controls.py",
+      "scripts/scalar_inertial_energy_controls.py",
+      "scripts/cassini_count_window_controls.py",
+      "scripts/cassini_odf_decode.py",
+      "scripts/cassini_count_window_inputs.json"
+    ]
+  },
+  "source_sha256": {
+    "scripts/scalar_count_kernel_energy_check.py": "ada23f9ae989333afb0a50e2b0fe168ad50002da367758e124d2f7226fc3fa42",
+    "docs/SCALAR_COUNT_KERNEL_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "1047bac3e489a443c9308d006dcfaa79f14429b991b5c2f543c70881a3f478f3",
+    "scripts/scalar_count_energy_controls.py": "99c7e6eb3efdebe6aefe4651f9e586432a7b91358d4e2eb762b3f2ad3e648d19",
+    "scripts/scalar_inertial_energy_controls.py": "64f5480ff6baf80ba54647d4eace0b0fe26778fa987dddc957f8afb85d75b75a",
+    "scripts/cassini_count_window_controls.py": "c224ea6afc4ded7d68596f65fd6b96da1d0664a9f1213f5bbc449d2a554fb3cd",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "scripts/cassini_count_window_inputs.json": "9b99d155442fb364df5bd32749d7f8ab2c0f355c87b4d2fc73affa1f69efe891"
+  },
+  "raw_observation_products_read": 0,
+  "complete_author_suites_rerun": false
+}

@@ -1,0 +1,41 @@
+{
+  "sources": {
+    "scripts/scalar_count_kernel_energy_check.py": "ada23f9ae989333afb0a50e2b0fe168ad50002da367758e124d2f7226fc3fa42",
+    "docs/SCALAR_COUNT_KERNEL_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "f6c0936a00c83070081797a59ef55c66ce5856c15e344d6a73b5fc496498988b",
+    "scripts/scalar_count_energy_controls.py": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+    "scripts/scalar_inertial_energy_controls.py": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+    "scripts/cassini_count_window_controls.py": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "scripts/cassini_count_window_inputs.json": "9b99d155442fb364df5bd32749d7f8ab2c0f355c87b4d2fc73affa1f69efe891"
+  },
+  "products": {
+    "count_energy": "11ca88a8c7936d73699b76bd0b22cbbdffa0a300da62f6ffa63d5e88126499b3",
+    "inertial_energy": "8db6e757713779218ec3f822173aca85fc9f568633b286be050f999803300665",
+    "development_timing": "5809f41276dca19c811342f3ea3c88f9a0d7b2634c2dcebf549cc2b4aa1f40a6"
+  },
+  "chain_ledger_sha256": "cd5ba960fef413f2207056fa3cf39cf674242a51ce87081834953a0aa8a0a813",
+  "cache_sha256": "83d72006b904b7b59c63b689db00a6bdee7c4c1416c48f08e4e25e5e4b3594a1",
+  "mutation_record": "ENERGY_MUTATIONS_v3.json",
+  "mutation_record_sha256": "5080320a23686127ef3435e996cd6bf83344f7fca549639fd6fa162b81d15568",
+  "checks": {
+    "count_energy": 150,
+    "inertial_energy": 81
+  },
+  "inventory_controls": {
+    "orbit_accounting": true,
+    "doppler_accounting": true,
+    "static_strata": true,
+    "chain_accounting": true,
+    "nominal_duration": true,
+    "adjacency_and_gaps": true,
+    "overlap_diagnostics": true,
+    "synthetic_partition_controls": true
+  },
+  "execution": {
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_sec": 2.0466628074645996,
+    "timeout_sec": 240
+  },
+  "status": "final source frozen for complete canonical review; prior freeze preserved"
+}

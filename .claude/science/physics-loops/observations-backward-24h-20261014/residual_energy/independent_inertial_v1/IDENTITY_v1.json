@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-15T02:40:59.090334+00:00",
+  "role": "focused independent mathematical check, not formal audit",
+  "files": {
+    "PRECHECK_v1.md": "aa3ff4ef0e3e5bbb350360adfc9dba274e5f55b5ec3a7764deaeeb2a94f1064c",
+    "independent_check_v1.py": "3d3cd9e3e2171d224ff50edb44b85300666ef7f1873a3a1319e940e674748ffd",
+    "RESULTS_v1.json": "9744084fb3833668ac41ecf0d99697a11d6528313623802a3735afb710a4bf3e",
+    "STDOUT_v1.txt": "47ab2c24e3da3e04196777de5d2b28ab3fbe7665d483bddc344d7bca56d131f0",
+    "STDERR_v1.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "INERTIAL_REVIEW_v1.md": "24d5b09c7e5275e3fd756097f3cc3b2b6395ce5f9f369878f413c3f319d06cde"
+  },
+  "reviewed_root_derivation": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/INERTIAL_DERIVATION_v1.md",
+    "sha256": "d3071b2ae96c3c5e87828d931dd7f41e7dd9a996baac66263b79bc82fd271856"
+  },
+  "root_code_read": false,
+  "observations_read": false,
+  "controls": 66,
+  "result": "passed"
+}

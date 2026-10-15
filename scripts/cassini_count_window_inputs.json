@@ -1,0 +1,17 @@
+{
+  "role": "reuse of exposed development data for nominal count-window geometry; no gravity fit or independent test",
+  "inputs": {
+    "odf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304,
+      "filename": "c32easc2002_169_0000xmmmv0.odf"
+    },
+    "odf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903,
+      "filename": "odf_c32easc2002_169_0000xmmmv0.lbl"
+    }
+  }
+}

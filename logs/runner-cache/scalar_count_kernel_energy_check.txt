@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/scalar_count_kernel_energy_check.py
+runner_sha256: ada23f9ae989333afb0a50e2b0fe168ad50002da367758e124d2f7226fc3fa42
+input_fingerprint_sha256: d259a583ebf585cacafe6cff6523531e8b49ab79a6f9a9aabec61b8f0d174757
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+{
+  "actual_current_surface_status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "checks": {
+    "count_energy": 150,
+    "inertial_energy": 81
+  },
+  "nominal_inventory_controls": {
+    "orbit_accounting": true,
+    "doppler_accounting": true,
+    "static_strata": true,
+    "chain_accounting": true,
+    "nominal_duration": true,
+    "adjacency_and_gaps": true,
+    "overlap_diagnostics": true,
+    "synthetic_partition_controls": true
+  },
+  "nominal_inventory_controls_passed": 8,
+  "source_sha256": {
+    "scripts/scalar_count_kernel_energy_check.py": "ada23f9ae989333afb0a50e2b0fe168ad50002da367758e124d2f7226fc3fa42",
+    "docs/SCALAR_COUNT_KERNEL_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "f6c0936a00c83070081797a59ef55c66ce5856c15e344d6a73b5fc496498988b",
+    "scripts/scalar_count_energy_controls.py": "8e57d6b562d3e6c2752fa88a213c8ab055539118e029b30057e3a70b64bf987f",
+    "scripts/scalar_inertial_energy_controls.py": "ab955db78a8a8bf6246e3edd575cbe3eea554510d7e0d3825be4c3b01900108f",
+    "scripts/cassini_count_window_controls.py": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "scripts/cassini_count_window_inputs.json": "9b99d155442fb364df5bd32749d7f8ab2c0f355c87b4d2fc73affa1f69efe891"
+  },
+  "product_sha256": {
+    "count_energy": "11ca88a8c7936d73699b76bd0b22cbbdffa0a300da62f6ffa63d5e88126499b3",
+    "inertial_energy": "8db6e757713779218ec3f822173aca85fc9f568633b286be050f999803300665",
+    "development_timing": "5809f41276dca19c811342f3ea3c88f9a0d7b2634c2dcebf549cc2b4aa1f40a6"
+  },
+  "chain_ledger_sha256": "cd5ba960fef413f2207056fa3cf39cf674242a51ce87081834953a0aa8a0a813",
+  "exposed_development_doppler_rows": 91664,
+  "exposed_development_chains": 36,
+  "measured_gravity_tests": 0,
+  "fitted_parameters": 0,
+  "physical_energy_estimates": 0,
+  "scope": [
+    "Calibrated count kernels and a stable free scalar operator remain supplied.",
+    "Initial velocity and nuisance shapes are removed by derived contrasts, without selecting the field.",
+    "Mass and constant-velocity enclosures retain the full conformal time-derivative force.",
+    "Raw frequency variance is descriptive only; actual radio-to-force calibration is not inferred.",
+    "Accelerated/retarded geometry, field energy upper budgets and actual error bounds remain open."
+  ]
+}
+
+----- stderr -----
+

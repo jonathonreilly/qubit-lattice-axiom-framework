@@ -21,3 +21,13 @@
 No independent experiment has been tested. The three review units are
 conditional support, not TOE closure. Keep all earlier campaigns stopped,
 the original deadline unchanged and authorship in this chat.
+
+
+Next after M4: reconstruct minimum field-energy requirements from calibrated finite observation residuals, using their Gram operator and explicit nuisance projection. This attacks the remaining quantitative-energy import without selecting a minimizing state. Finite observations alone do not control invisible energy; a physical upper budget needs separate evidence. First decisive checks are independently derived Fourier Gram entries, exact constrained initial-data fixtures, and a documented residual/error operator. Existing day169 counts are development data; reserved products stay unopened until that protocol is fixed.
+
+
+## Next observation-driven work after the energy inverse
+
+1. Derive the finite-count sensitivity for an accelerated/retarded reference trajectory, retaining the conformal time derivative, source response and clock terms. Decisive check: direct phase/trajectory evaluation against a controlled perturbation, with explicit remainder bounds.
+2. Establish an independently supported physical error or energy resource budget. The current lower energy requirement is informative only when compared with such evidence; raw frequency variance does not supply it.
+3. Revisit action/potential and scale reconstruction across domains once the measurement map is controlled. Keep candidate choices explicit and challenge them; do not adopt a minimum-energy state as a selector.

@@ -38,3 +38,8 @@ chosen support radius or energy as a derived selector.
 
 
 The temporal-functional route now gives a positive alternative to localization: adjacent finite velocity averages generate a triangular acceleration weight; Fourier energy duality supplies a fixed-point bound, and nonstationary phase supplies the moving-path extension. The actual conformal force combination and physical normalization were derived directly. A shared-mode mutation survivor exposed inadequate random saturation coverage; the repaired aligned attainment control tests the same bound function. Next derive a measurable residual/energy constraint and check the real transfer operator, rather than choosing an initial state.
+
+
+## Count-to-energy inverse
+
+Attacked the initial-history assumption through observation-space duality rather than a preferred state: count kernels -> vector moment cancellation -> Riesz Gram -> minimum-energy range test -> nuisance/error quotient. An independent on-shell boost derivation extends the mass enclosure to constant-velocity full conformal responses. The revealed technical failures (singular whitening, zero denominators, clock regularity and a surviving normalization mutant) are preserved and repaired at their precise scopes. Next hard residual is the accelerated retarded physical observation map, not more instances of the same stationary norm.

@@ -22,3 +22,18 @@ finite-time environment approximation using observed source scales.
 
 
 The finite-window scalar-history unit is upstream_support for the same measured-gravity/initial-history goal. It derives a specified averaged free-field force bound without selecting a profile or compact initial support, together with conformal force and energy normalization. The next consumer is a candidate-consistent residual budget for actual finite tracking observations. Actual energy and clock/path/forcing calibration remain open; no scalar theory has been fitted or validated.
+
+
+## Count-derived energy milestone trace
+
+```yaml
+target_claim_id: scalar_count_kernel_energy
+target_blocker_text: "Derive or eliminate the revised scalar theory's remaining initial-state and measurement assumptions"
+source_of_blocker_text: user_goal
+trace_class: upstream_support
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Derive the accelerated/retarded radio-to-force response and an evidence-based error/resource budget before testing scalar signatures"
+```
+
+The consumer is the campaign's scalar-history reconstruction from finite tracking counts. This unit supplies the observation-derived operator and least compatible energy in a declared regime; it does not close the actual calibration/energy-supplier obligation or derive the scalar action.

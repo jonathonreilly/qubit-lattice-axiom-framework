@@ -1,0 +1,110 @@
+{
+  "reviewer": "/root/force_energy_bridge_check",
+  "completed_at": "2026-10-15T02:39:02.514801+00:00",
+  "timing_precedes_new_author_source_access": true,
+  "independent_raw_record_decode_count": 91863,
+  "independent_timing_checks_passed": 22,
+  "timing_comparison_checks_passed": 114,
+  "failures": 0,
+  "author_script_rerun": false,
+  "reserved_raw_products_opened": false,
+  "new_physical_fits": 0,
+  "mathematical_discrepancies_in_scoped_source": [],
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/TIMING_SOURCE_FREEZE_v1.json",
+      "sha256": "12183bb7b299eca99cf23a8457bd9a73632823858b77e47fedf9dace5631e98f",
+      "bytes": 1515
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/TIMING_PRECHECK_v1.md",
+      "sha256": "998ca7dd237f411a718851d7a778dc62a62c48ba10edf5a158a1e4f647199706",
+      "bytes": 2688
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/TIMING_INDEPENDENCE_v1.json",
+      "sha256": "c3130bd15fc97deb00e954f65e3c499a2869905e13757c8db4c86595067116ee",
+      "bytes": 1668
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/independent_nominal_timing_v1.py",
+      "sha256": "0d7a31cbe0a1f5ca2460be5bab797c750cd37bf1b91a9bd026c43302440daefd",
+      "bytes": 12717
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/INDEPENDENT_TIMING_SUMMARY_v1.json",
+      "sha256": "57dc64fb0dab19e32e127d5ec341d5528e3d865dfb61446429f17fc96c0d4fc1",
+      "bytes": 16035
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/INDEPENDENT_TIMING_CHAINS_v1.json",
+      "sha256": "5cf64c3ada151258ea13569b2a027e09b1c123bf0f03de9cd40908b23f2c98e1",
+      "bytes": 15139
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/INDEPENDENT_TIMING_BOUNDARIES_v1.json",
+      "sha256": "ccd727bfec220aabe26cc082625b85c4891d07a97c3af9503515b299bbe4611e",
+      "bytes": 5846
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/INDEPENDENT_TIMING_EXECUTION_v1.json",
+      "sha256": "93a44795524d35ad0c93f32d6016e070e672f6e190e901e844d30185197fa16e",
+      "bytes": 2217
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/compare_timing_v1.py",
+      "sha256": "a1e8edfc9f7b9acd77fe49f471b067673934fadd0775539c9601f6ceb7ca0c60",
+      "bytes": 6155
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/TIMING_COMPARISON_RESULTS_v1.json",
+      "sha256": "8aaf3b644a717eb7003671d55246cd6b18cd8cf8a8922a15f6658fc61cd09a77",
+      "bytes": 9657
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/TIMING_REVIEW_v1.md",
+      "sha256": "f1e6a0338d5f6aa445b7fd9010340c3f5ebc6d0be8aaefdb6326787eeb131e73",
+      "bytes": 6663
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_count_kernel_v1/COUNT_KERNEL_SOURCE_CONFIRMATION_v3.md",
+      "sha256": "e1fee00d5b0514fa1cc8597b8b3143ef3d72fd5922641648cba10c606257c352",
+      "bytes": 4728
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DERIVATION_v3.md",
+      "sha256": "1eca5b9a13278c819e221955518150cbcc44e4a9d012fbcba85db8df08dc707f",
+      "bytes": 13608
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/residual_energy_check_v1.py",
+      "sha256": "8ce220112159929fc05bbfa2e532f2263cf3a94293742dc2319836fb3738127d",
+      "bytes": 10284
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/AUTHOR_RESULTS_v1.json",
+      "sha256": "cb2f36aaab8cb6d81cb8431e594cc469281f9ec7f77b461b04cd2eba4d6b654f",
+      "bytes": 16799
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/development_timing_v2.py",
+      "sha256": "9b41c5a92214cd0cd6ee4e8c0c3c99b89f2af9ef6b06467e5fa72fb7ca6ef5bc",
+      "bytes": 6895
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DEVELOPMENT_TIMING_RESULTS_v2.json",
+      "sha256": "a6a50d9e0934ff06f06c4ff63b6b710dee95461170f8c99c7ff847fc384a6f67",
+      "bytes": 8070
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/SETUP_REPAIR_v1.json",
+      "sha256": "6bf2cb296c595bb5e08294eab1f133d1cd691fbdf24d61ead9ef980f1779f777",
+      "bytes": 1772
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/RESIDUAL_TIMING_CHAINS_v2.jsonl",
+      "sha256": "cd5ba960fef413f2207056fa3cf39cf674242a51ce87081834953a0aa8a0a813",
+      "bytes": 38460
+    }
+  ]
+}

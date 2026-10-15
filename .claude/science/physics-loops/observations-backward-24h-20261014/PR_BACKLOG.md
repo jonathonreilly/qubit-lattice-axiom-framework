@@ -11,3 +11,11 @@ Complete raw bytes/row ledgers, old exploratory notes and scratch versions remai
 Third unit: [PR#9581](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9581), regular/open,41paths, frozen headb8f83e344b3ba756cc31fe24f83b4dec71b199d0, stacked on the frozen second branch and attached. The canonical phase-elimination proof, source-bound cache, focused scientific check and complete cold delivery check are complete. PHASE_UNIT_PREFLIGHT_v1.stdout.json records mechanical source/cache validity. Combined landing and formal audit remain pending.
 
 The fourth publication candidate is the self-contained finite-window scalar history/force bound on codex/observations-backward-history-20261015, stacked on the frozen third branch. Canonical note and runner are prepared,260controls and29current-source mutations checked; focused final source/delivery checking is in progress. Earlier source-age/localized working derivations remain local and are not canonical premises. The complete observed initial/environment history remains open.
+
+
+Fourth unit published: [PR#9583](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9583), regular/open,45paths, head`444fddc785280eb01898986edfc301bda9e8d9df`, stacked on#9581 and attached. Frozen source/cache binding passed; full integrated landing and formal audit remain pending. New residual_energy work is unreviewed on the descendant branch and has no PR.
+
+
+## Count-derived energy milestone preparation
+
+Proposed branch codex/observations-backward-energy-20261015, base codex/observations-backward-history-20261015 at444fddc785280eb01898986edfc301bda9e8d9df. Local cluster/value decision OPEN for one coherent count-to-energy inverse with general inertial mass enclosure; see residual_energy/VALUE_AND_CLUSTER_GATE_v1.md. Final source and staged delivery confirmation plus mechanical unit binding precede publication. Earlier four PRs remain frozen. No main merge or push.

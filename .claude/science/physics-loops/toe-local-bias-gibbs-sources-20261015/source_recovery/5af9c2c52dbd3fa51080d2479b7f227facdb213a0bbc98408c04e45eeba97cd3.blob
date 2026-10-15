@@ -1,0 +1,11 @@
+{
+  "sealed_utc": "2026-10-15T16:36:12.830120+00:00",
+  "files": [
+    {
+      "path": "SCOPE_AND_PRIOR_ART.md",
+      "bytes": 1801,
+      "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+    }
+  ],
+  "scope": "Later root calibration and prior-art qualification, no theorem change or scientific run"
+}

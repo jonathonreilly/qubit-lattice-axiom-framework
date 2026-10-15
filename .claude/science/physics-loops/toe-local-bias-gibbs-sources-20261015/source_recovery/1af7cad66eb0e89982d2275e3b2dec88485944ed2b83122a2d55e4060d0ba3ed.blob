@@ -1,0 +1,11 @@
+# Targeted primary-source context
+
+Query: `stochastic domination conditional probabilities finite binary measure Holley single site upper bound Bernoulli primary theorem`.
+
+Primary source opened: Maxim Raginsky, *A phase transition and stochastic domination in Pippenger's probabilistic failure model for Boolean networks with unreliable gates*, dated November 24, 2003 in the PDF, hosted on the author's university page:
+
+https://maxim.ece.illinois.edu/pubs/raginsky_PippengerPFM.pdf
+
+The relevant substantive reading is printed page 12, section 4.1, Lemmas 4.1–4.2 and the following remark, corresponding to parsed lines 882–930. It states the coupling characterization and the sufficient bound on conditional probabilities in a site ordering, including the reversed inequality. The finite upper coupling is proved directly in DERIVATION rather than delegated to the paper. Its unrelated random-network phase transition, asymptotic threshold and unreliable-gate dynamics are not imported.
+
+The tool also returned introductory material and neighboring search context. This is not a complete-paper reading or a systematic literature/novelty review. The raw targeted find response is preserved in WEB_TARGETED_TOOL_RESPONSE.json; that is an exact tool response, not a byte-frozen PDF download or an independently captured HTTP body. No external mathematical execution was performed. There was no observed web-access failure.

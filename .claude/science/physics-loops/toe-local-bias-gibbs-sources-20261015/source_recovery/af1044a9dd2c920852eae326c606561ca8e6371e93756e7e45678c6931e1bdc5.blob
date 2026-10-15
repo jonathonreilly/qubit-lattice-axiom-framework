@@ -1,0 +1,8 @@
+{
+  "copied_utc": "2026-10-15T17:09:01.221845+00:00",
+  "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/record_metadata.py",
+  "bytes": 1528,
+  "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+  "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/record_metadata.py",
+  "scope": "byte-identical metadata-only recorder; no old program executed; other scripts newly written"
+}

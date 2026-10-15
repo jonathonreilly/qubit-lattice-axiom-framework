@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T18:30:17.995992+00:00",
+  "baseRefName": "physics-loop/toe-correlated-memory-delivery-20261015",
+  "headRefName": "physics-loop/toe-finite-memory-bank-20261015",
+  "headRefOid": "5a78c290489676e7fcb203aa1e6fa6933c7fdc49",
+  "isDraft": false,
+  "number": 9613,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9613",
+  "tree": "c1ec65c78d46b503115bcc11b1d78dc81ba1a931",
+  "base_head": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 58145,
+    "sha256": "b53db1786778a4ae8bf7745371f228c5823b15b4de2703642121256aba15a2d6"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/finite_consumed_memory_bank_2026_10_15.py",
+    "bytes": 33241,
+    "sha256": "f164eb8dc0127105f2ee40600f0a4a33308ac2dd06562ecbcce1f43328f7b62c"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/PR_BODY.md",
+    "bytes": 3144,
+    "sha256": "aff915300d33c1135bafd753fd7fd01746aab7c3694144d6a47e3033fbc4292a"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

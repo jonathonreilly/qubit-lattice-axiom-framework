@@ -1,0 +1,55 @@
+{
+  "kind": "captured_root_refresh_and_ancestry_metadata",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/45ca48ff9e7cc2e5cb23b13a046e67be4bfb9e58fe180174dbebf1a1e5e6d810.json",
+      "bytes": 5882,
+      "sha256": "45ca48ff9e7cc2e5cb23b13a046e67be4bfb9e58fe180174dbebf1a1e5e6d810"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/47ebaa06ef1a203e98dce6a007f3c2afa58369a7073554013cd48220d3ad5a18.json",
+      "bytes": 1547,
+      "sha256": "47ebaa06ef1a203e98dce6a007f3c2afa58369a7073554013cd48220d3ad5a18"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/3723b9afca123399b07c2bcc59c070c0a6e1216890f8e89d48f9518cc84486e8.json",
+      "bytes": 419,
+      "sha256": "3723b9afca123399b07c2bcc59c070c0a6e1216890f8e89d48f9518cc84486e8"
+    },
+    "fetch": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/de829c737788442ad87a6297bf1f67e26c0512f75e641962301a8f9584cea111.json",
+        "bytes": 1176,
+        "sha256": "de829c737788442ad87a6297bf1f67e26c0512f75e641962301a8f9584cea111"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d.blob",
+        "bytes": 121,
+        "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+      }
+    },
+    "inventory": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/f1e12359369fca55a1395d3bca81794a3451cb42cbbeb9f7f2e59725ed4ca414.json",
+        "bytes": 1261,
+        "sha256": "f1e12359369fca55a1395d3bca81794a3451cb42cbbeb9f7f2e59725ed4ca414"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/97521c2e2396f8da043957ed9e2f606b2f8509d989599a672fd116e2f8c45bc8.blob",
+        "bytes": 16739,
+        "sha256": "97521c2e2396f8da043957ed9e2f606b2f8509d989599a672fd116e2f8c45bc8"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "scope": "Historical fetch/inventory and base-publication provenance; ancestry creates no finite-bank mathematical dependency."
+}

@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+"""Verify exact source/receipt structure only; no scientific execution."""
+from datetime import datetime, timezone
+from hashlib import sha256
+import json
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+
+
+def identity(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": sha256(data).hexdigest()}
+
+
+def verify_pin(item):
+    assert identity(Path(item["path"])) == item, item
+
+
+def main():
+    manifest = json.loads((HERE / "SOURCE_MANIFEST.json").read_text())
+    assert manifest["schema"] == "local-bias-source-exposed-comparison-manifest-v1"
+    assert manifest["scientific_programs_run"] == 0
+    for group in ("new_sources", "reused_sources"):
+        for item in manifest[group]:
+            verify_pin(item["source"])
+            verify_pin(item["snapshot"])
+            assert item["source"]["sha256"] == item["snapshot"]["sha256"]
+    for key in ("independent_derivation", "independent_freeze", "independent_manifest"):
+        verify_pin(manifest[key])
+    for item in manifest["unchanged_instruction_identities"]:
+        verify_pin(item)
+    independent = Path(manifest["independent_freeze"]["path"]).parent
+    freeze = json.loads((independent / "FINAL_FREEZE.json").read_text())
+    assert len(freeze["files"]) == manifest["independent_freeze_members_verified"] == 31
+    for item in freeze["files"]:
+        actual = identity(independent / item["path"])
+        assert actual["bytes"] == item["bytes"] and actual["sha256"] == item["sha256"]
+    receipt_path = HERE / "metadata_runs/capture_sources/EXECUTION.json"
+    receipt = json.loads(receipt_path.read_text())
+    assert receipt["exit_code"] == 0 and receipt["timed_out"] is False
+    assert receipt["scientific_programs_run"] == 0
+    assert receipt["cwd"] == str(HERE)
+    assert receipt["argv"][1] == str(HERE / "capture_sources.py")
+    for key in ("source", "recorder", "stdout", "stderr"):
+        verify_pin(receipt[key])
+    assert Path(receipt["stderr"]["path"]).read_bytes() == b""
+    output = json.loads(Path(receipt["stdout"]["path"]).read_text())
+    assert output == {"status": "metadata verified", "new_sources": 2,
+                      "unchanged_independent_members": 31, "reused_source_pairs": 7,
+                      "scientific_programs_run": 0}
+    report = HERE / "REPORT.md"
+    body = report.read_text()
+    assert body.count("\n## ") == 12
+    for index in range(1, 20):
+        assert f"(C{index})" in body
+    for item in manifest["new_sources"]:
+        assert item["source"]["sha256"] in body
+    for path in (report, HERE / "EXPOSURE_AND_READ_COVERAGE.md", HERE / "HANDOFF.md"):
+        data = path.read_bytes()
+        assert data.endswith(b"\n") and not data.endswith(b"\n\n"), str(path)
+    for path in HERE.glob("*.py"):
+        compile(path.read_text(), str(path), "exec")
+        data = path.read_bytes()
+        assert data.endswith(b"\n") and not data.endswith(b"\n\n"), str(path)
+    result = {"verified_utc": datetime.now(timezone.utc).isoformat(),
+              "scope": "Source identities, recovery equality, immutable predecessor, metadata receipts and document structure; not a mathematical correctness test.",
+              "report": identity(report),
+              "manifest": identity(HERE / "SOURCE_MANIFEST.json"),
+              "independent_freeze_members_unchanged": 31,
+              "capture_receipt": identity(receipt_path),
+              "captured_execution_failures": [],
+              "scientific_programs_run": 0}
+    (HERE / "METADATA_VALIDATION.json").write_text(json.dumps(result, indent=2) + "\n")
+    print(json.dumps({"status": "metadata verified", "scientific_programs_run": 0,
+                      "independent_members_unchanged": 31,
+                      "source_recovery_pairs": 9}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

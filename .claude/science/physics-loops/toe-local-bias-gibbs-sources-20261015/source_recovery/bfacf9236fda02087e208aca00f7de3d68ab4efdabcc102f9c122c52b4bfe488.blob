@@ -1,0 +1,11 @@
+# Root decision: restricted product-basis Gibbs sources
+
+Conditional support is accepted for source30d934ee and complete separate report1a292a21, using the local conditional-bias result accepted alongside this decision. Root read the entire7830-byte source and24571-byte report, all four metadata helpers and exposure/receipt records. Review is source-exposed with the same model and shared prior mechanics; no broader independence is claimed.
+
+Product onsite conjugation preserves positive local support and mutual commutativity. The qubit transition kernel is independent binary observation noise with alpha_i=(1-a_i,z)/2<=alpha_max<1/2. Conditioning on noisy observations of the other bits still gives P(X_i=1|Y_-i)<=q; hence the measured full conditional is bounded by alpha_max+(1-2alpha_max)q<1/2. The ell=1 fixed-endpoint construction and one full retained-marginal comparison follow.
+
+The non-diagonal switch requires the full reduced Gibbs marginal, or its certified full reduced-state trace error. A matching computational diagonal alone is insufficient: retain the report's one-qubit same-diagonal/nonstationary counterexample. Arbitrary joint extensions remain allowed, and their correlations can evolve even when the memory marginal is stationary. The whole joint state is never silently assumed stationary or close to a product.
+
+Correct source wording: commutation with the ideal switch generator conserves G expectation for every input; stationarity separately preserves the full Gibbs marginal. Preserve mixed-axis channel loads, uncollected versus collected coefficients, exact scalar action, independently supplied controls, actual K_Z then H0 chronology, endpoint Hamiltonians and fault budgets. Linear resource prices require bounded local reserves and k_0=O(L), and bounded action/slew profile factors. These are current qualifications; frozen source bytes remain unchanged.
+
+This common-basis commuting family does not remove the accepted generic noncommuting two-qubit boundary. It supplies neither arbitrary noncommuting Gibbs control, thermal preparation, physical inverse-temperature identification, native dynamics nor recycling. Analytic checks only; no scientific program, old fixture or formal checker executed.

@@ -1,0 +1,41 @@
+"""Capture actual bounded metadata-only child executions in this output directory."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import subprocess
+import sys
+
+OUT = Path(__file__).resolve().parent
+
+
+def pin(path):
+    raw = path.read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+
+
+label, program = sys.argv[1:]
+assert label.isidentifier()
+assert program in ('capture_sources.py', 'verify_metadata.py')
+folder = OUT / 'receipts' / label
+folder.mkdir(parents=True, exist_ok=False)
+source = OUT / program
+(folder / 'program_source.py').write_bytes(source.read_bytes())
+(folder / 'recorder_source.py').write_bytes(Path(__file__).read_bytes())
+argv = [sys.executable, '-B', str(source)]
+launch = {'started_utc': datetime.now(timezone.utc).isoformat(), 'argv': argv, 'cwd': str(OUT),
+          'program_source_at_launch': pin(source), 'recorder_source_at_launch': pin(Path(__file__)),
+          'timeout_seconds': 60, 'scope': 'Local source and metadata only; no scientific program.'}
+(folder / 'LAUNCH.json').write_text(json.dumps(launch, indent=2) + '\n')
+try:
+    result = subprocess.run(argv, cwd=OUT, capture_output=True, timeout=60)
+    code, stdout, stderr = result.returncode, result.stdout, result.stderr
+except subprocess.TimeoutExpired as exc:
+    code, stdout, stderr = 124, exc.stdout or b'', (exc.stderr or b'') + b'\nmetadata timeout\n'
+(folder / 'stdout').write_bytes(stdout)
+(folder / 'stderr').write_bytes(stderr)
+receipt = {'completed_utc': datetime.now(timezone.utc).isoformat(), 'exit_code': code,
+           'launch': pin(folder / 'LAUNCH.json'), 'stdout': pin(folder / 'stdout'), 'stderr': pin(folder / 'stderr')}
+(folder / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+print(json.dumps({'label': label, 'exit_code': code, 'execution': pin(folder / 'EXECUTION.json')}, sort_keys=True))
+raise SystemExit(code)

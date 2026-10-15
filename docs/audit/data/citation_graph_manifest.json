@@ -1,6 +1,6 @@
 {
- "edge_count": 16098,
- "node_count": 7137,
+ "edge_count": 16099,
+ "node_count": 7138,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14381,6 +14381,10 @@
   "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24": {
    "deps_hash": "f9e439353aad",
    "out_degree": 3
+  },
+  "local_conditional_bias_and_rotated_gibbs_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "ff390629b0d9",
+   "out_degree": 1
   },
   "local_electric_completions_and_postbirth_field_phase_bounded_theorem_note_2026-09-24": {
    "deps_hash": "666e0b9cf11e",

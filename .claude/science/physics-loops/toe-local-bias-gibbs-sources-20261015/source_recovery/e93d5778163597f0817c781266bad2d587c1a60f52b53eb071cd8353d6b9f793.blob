@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-10-15T16:56:57.241524+00:00",
+  "status": "narrow counterexample supported; occupation-bit/inverse-temperature notation clarified; no general no-go or audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/REPORT.md",
+    "bytes": 10342,
+    "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/SOURCE_MANIFEST.json",
+    "bytes": 4391,
+    "sha256": "e9c318e7508ffb2c6a66cf0b0523b9b8f66d8d36615f2eeb2e8a50c616b95bd5"
+  },
+  "closing_metadata": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/CLOSING_METADATA.json",
+    "bytes": 4886,
+    "sha256": "1eb5587b3f7ccb03fb3302533eb2ea082b04506586258c8833c0bed08dcc971e"
+  },
+  "actual_metadata_receipts": [
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/LAUNCH.json",
+        "bytes": 1200,
+        "sha256": "9d0926b2e4c983d2e6d3177f150af5c48e357603d732c874b2e30645195f0cf5"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/EXECUTION.json",
+        "bytes": 976,
+        "sha256": "963ef313dd1185c87692318a0133daf5177c0237bcf31078ef7a57ee66d99967"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/stdout",
+        "bytes": 354,
+        "sha256": "50d7d2d35e256d26aef4e57a714219ccd27e4ca4e86875fd72a82498b81f4dc5"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/LAUNCH.json",
+        "bytes": 1198,
+        "sha256": "59a1da6897e3e60aad2b3dd542d760d83b91c784340b70362c4af1ccf8ff081f"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/EXECUTION.json",
+        "bytes": 976,
+        "sha256": "cd96ba5f3a4508b8923d869806cb7791e88b015ab969532b59bb11b8cdd23196"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/stdout",
+        "bytes": 590,
+        "sha256": "b84059bb2444b5e04337781c7f4d8083091ad08ba3a037d36d2d238cb679369f"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "rotated_candidate_opened": false,
+  "other_worker_local_bias_opened": false,
+  "model_override": false,
+  "delegation": false,
+  "git_operations": 0,
+  "editable_prompt_files_changed": []
+}

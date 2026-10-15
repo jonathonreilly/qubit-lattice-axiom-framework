@@ -1,0 +1,281 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T18:52:17.501152+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+  "parent_sha256": {
+    "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89"
+  },
+  "source_acceptances": {
+    "local_bias": "2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b",
+    "rotated_gibbs": "bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488",
+    "noncommuting_boundary": "5ed5f4bca23da4fe240f04cded99967ecb525a372942748d93c21125a6ce0eda"
+  },
+  "git_base": "5a78c290489676e7fcb203aa1e6fa6933c7fdc49",
+  "base_branch": "physics-loop/toe-finite-memory-bank-20261015",
+  "planned_feature_branch": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+  "observed_parent_prs": {
+    "stack": {
+      "baseRefName": "physics-loop/toe-correlated-memory-delivery-20261015",
+      "headRefName": "physics-loop/toe-finite-memory-bank-20261015",
+      "headRefOid": "5a78c290489676e7fcb203aa1e6fa6933c7fdc49",
+      "isDraft": false,
+      "number": 9613,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9613"
+    },
+    "correlated": {
+      "baseRefName": "physics-loop/toe-readiness-resources-20261015",
+      "headRefName": "physics-loop/toe-correlated-memory-delivery-20261015",
+      "headRefOid": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+      "isDraft": false,
+      "number": 9611,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9611"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "5a78c290489676e7fcb203aa1e6fa6933c7fdc49",
+  "raw_bodies": [
+    {
+      "name": "local_bias_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 27209,
+      "end_byte_exclusive": 37875,
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+    },
+    {
+      "name": "local_bias_qualification",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 38022,
+      "end_byte_exclusive": 39823,
+      "bytes": 1801,
+      "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+    },
+    {
+      "name": "local_bias_pre_exposure",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 39969,
+      "end_byte_exclusive": 78076,
+      "bytes": 38107,
+      "sha256": "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604"
+    },
+    {
+      "name": "local_bias_comparison",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 78220,
+      "end_byte_exclusive": 119796,
+      "bytes": 41576,
+      "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+    },
+    {
+      "name": "noncommuting_boundary_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 119947,
+      "end_byte_exclusive": 123006,
+      "bytes": 3059,
+      "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e"
+    },
+    {
+      "name": "noncommuting_boundary_assessment",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 123161,
+      "end_byte_exclusive": 133503,
+      "bytes": 10342,
+      "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c"
+    },
+    {
+      "name": "rotated_gibbs_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 133646,
+      "end_byte_exclusive": 141476,
+      "bytes": 7830,
+      "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2"
+    },
+    {
+      "name": "rotated_gibbs_assessment",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 141623,
+      "end_byte_exclusive": 166194,
+      "bytes": 24571,
+      "sha256": "1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+      "claim_id": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "markov_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 28196,
+          "end_byte_exclusive": 75424,
+          "bytes": 47228,
+          "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+        },
+        {
+          "name": "markov_pre_exposure",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 75566,
+          "end_byte_exclusive": 103146,
+          "bytes": 27580,
+          "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+        },
+        {
+          "name": "markov_comparison",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 103286,
+          "end_byte_exclusive": 134811,
+          "bytes": 31525,
+          "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+        },
+        {
+          "name": "gibbs_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 134946,
+          "end_byte_exclusive": 148313,
+          "bytes": 13367,
+          "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+        },
+        {
+          "name": "gibbs_assessment",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 148452,
+          "end_byte_exclusive": 175098,
+          "bytes": 26646,
+          "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+        },
+        {
+          "name": "composition_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 175239,
+          "end_byte_exclusive": 182836,
+          "bytes": 7597,
+          "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f"
+        },
+        {
+          "name": "composition_assessment",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 182981,
+          "end_byte_exclusive": 203198,
+          "bytes": 20217,
+          "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "markov_author",
+        "gibbs_author",
+        "composition_author"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/0cada325dcafb01ef8abe22a0c391a88a292e6ad81c5f8e9d79b3494f9692a49.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/0ea8979c825764701f35820ab949fa576d36caebc32a035dea659fe6c1d758de.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/1cb9d9f055fffa9601ba5747a6478962824c52f8094340ba3fc43ff1a3ebed9c.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/520767eb22da03e4348edb27fa2c60550e7869aff92c3381e5d012c5192ff4f5.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/586aab12ce721c113181b0b23e30a6a879548a895285100893cf78b0c1ddb890.py",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/59bbe60ac11e089c887189122256bfd413d87b93f62a7ba53475074073629016.blob",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/75ab23f8828b19895dde425a29c6549622f0470606038a7fe42b456adcbd81d2.blob",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/95364c74ef1b9032465b5a734903ef8f076307e8f7d8a3806681fbdcdc7023fe.py",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/b5d3294135c8aa8a067d711dc48defe3a05b79a852b79bd7c145d765f0aebd15.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/f95c39e6fd8de082407ef67754043a4f9a17e17c4a26169f6a23ef6d4ca07e8c.blob"
+  ],
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/520767eb22da03e4348edb27fa2c60550e7869aff92c3381e5d012c5192ff4f5.json",
+    "bytes": 42844,
+    "sha256": "520767eb22da03e4348edb27fa2c60550e7869aff92c3381e5d012c5192ff4f5"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/0cada325dcafb01ef8abe22a0c391a88a292e6ad81c5f8e9d79b3494f9692a49.json",
+      "bytes": 14370,
+      "sha256": "0cada325dcafb01ef8abe22a0c391a88a292e6ad81c5f8e9d79b3494f9692a49"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/b5d3294135c8aa8a067d711dc48defe3a05b79a852b79bd7c145d765f0aebd15.json",
+      "bytes": 1470,
+      "sha256": "b5d3294135c8aa8a067d711dc48defe3a05b79a852b79bd7c145d765f0aebd15"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/f95c39e6fd8de082407ef67754043a4f9a17e17c4a26169f6a23ef6d4ca07e8c.blob",
+      "bytes": 589,
+      "sha256": "f95c39e6fd8de082407ef67754043a4f9a17e17c4a26169f6a23ef6d4ca07e8c"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/95364c74ef1b9032465b5a734903ef8f076307e8f7d8a3806681fbdcdc7023fe.py",
+      "bytes": 7304,
+      "sha256": "95364c74ef1b9032465b5a734903ef8f076307e8f7d8a3806681fbdcdc7023fe"
+    }
+  },
+  "base_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/1cb9d9f055fffa9601ba5747a6478962824c52f8094340ba3fc43ff1a3ebed9c.json",
+      "bytes": 1707,
+      "sha256": "1cb9d9f055fffa9601ba5747a6478962824c52f8094340ba3fc43ff1a3ebed9c"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/586aab12ce721c113181b0b23e30a6a879548a895285100893cf78b0c1ddb890.py",
+      "bytes": 41874,
+      "sha256": "586aab12ce721c113181b0b23e30a6a879548a895285100893cf78b0c1ddb890"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/75ab23f8828b19895dde425a29c6549622f0470606038a7fe42b456adcbd81d2.blob",
+      "bytes": 315,
+      "sha256": "75ab23f8828b19895dde425a29c6549622f0470606038a7fe42b456adcbd81d2"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "mathematical_parent_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/0ea8979c825764701f35820ab949fa576d36caebc32a035dea659fe6c1d758de.json",
+      "bytes": 1723,
+      "sha256": "0ea8979c825764701f35820ab949fa576d36caebc32a035dea659fe6c1d758de"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/586aab12ce721c113181b0b23e30a6a879548a895285100893cf78b0c1ddb890.py",
+      "bytes": 41874,
+      "sha256": "586aab12ce721c113181b0b23e30a6a879548a895285100893cf78b0c1ddb890"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/59bbe60ac11e089c887189122256bfd413d87b93f62a7ba53475074073629016.blob",
+      "bytes": 316,
+      "sha256": "59bbe60ac11e089c887189122256bfd413d87b93f62a7ba53475074073629016"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T18:52:17.501230+00:00",
+    "reviewed_source_sha256": "520767eb22da03e4348edb27fa2c60550e7869aff92c3381e5d012c5192ff4f5"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "finite_bank_imported": false,
+  "retained_audit": false
+}

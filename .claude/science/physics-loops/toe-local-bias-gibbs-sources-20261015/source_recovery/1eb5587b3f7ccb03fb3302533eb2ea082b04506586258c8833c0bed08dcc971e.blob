@@ -1,0 +1,120 @@
+{
+  "started_utc": "2026-10-15T16:56:57.220087+00:00",
+  "completed_utc": "2026-10-15T16:56:57.231971+00:00",
+  "kind": "metadata source/receipt closure only",
+  "checks": [
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/source/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_candidate/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/source/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/workhorse.SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "nested proposal member DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax record_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax seal_review.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax capture_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "capture actual exit zero",
+      "passed": true
+    },
+    {
+      "name": "capture UTC order",
+      "passed": true
+    },
+    {
+      "name": "capture source-at-launch child",
+      "passed": true
+    },
+    {
+      "name": "capture source-at-launch recorder",
+      "passed": true
+    },
+    {
+      "name": "actual capture launch /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "actual capture stdout /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/stdout",
+      "passed": true
+    },
+    {
+      "name": "actual capture stderr /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/stderr",
+      "passed": true
+    },
+    {
+      "name": "capture science/replay count zero",
+      "passed": true
+    },
+    {
+      "name": "other candidates unread before boundary seal",
+      "passed": true
+    }
+  ],
+  "check_count": 26,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/REPORT.md",
+    "bytes": 10342,
+    "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c"
+  },
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "scope_limit": "All scientific verification is analytic; no numerical or symbolic fixture was run."
+}

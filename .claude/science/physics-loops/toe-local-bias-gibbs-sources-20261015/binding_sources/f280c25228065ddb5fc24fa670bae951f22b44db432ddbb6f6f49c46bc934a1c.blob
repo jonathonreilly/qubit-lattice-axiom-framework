@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/review_local_bias_integration_1855.py", line 29, in <module>
+    local_rows=[r for r in selection['members'] if r.get('recovery',{}).get('kind')=='body_interval']
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

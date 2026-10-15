@@ -1,0 +1,1 @@
+[physics-loop] local-bias-gibbs-sources: bounded_theorem / conditional-support

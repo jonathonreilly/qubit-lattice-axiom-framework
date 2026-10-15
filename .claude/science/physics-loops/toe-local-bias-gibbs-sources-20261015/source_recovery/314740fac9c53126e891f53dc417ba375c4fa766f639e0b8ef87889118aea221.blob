@@ -1,0 +1,40 @@
+"""Seal a completed independent derivation and actual metadata receipts."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+OUT = Path(__file__).resolve().parent
+
+
+def pin(path):
+    raw = path.read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+
+
+assert not (OUT / 'FINAL_FREEZE.json').exists()
+validation = json.loads((OUT / 'METADATA_VALIDATION.json').read_text())
+assert validation['derivation'] == pin(OUT / 'DERIVATION.md')
+assert json.loads((OUT / 'receipts/verify_metadata/EXECUTION.json').read_text())['exit_code'] == 0
+delivery = {'sealed_utc': datetime.now(timezone.utc).isoformat(), 'status': 'independent construction frozen; new candidate comparison pending',
+            'derivation': pin(OUT / 'DERIVATION.md'), 'source_manifest': pin(OUT / 'SOURCE_MANIFEST.json'),
+            'coverage': pin(OUT / 'EXPOSURE_AND_READ_COVERAGE.md'), 'handoff': pin(OUT / 'HANDOFF.md'),
+            'metadata_receipts': [pin(OUT / 'receipts' / label / 'EXECUTION.json') for label in ['capture_sources', 'verify_metadata']],
+            'scientific_programs_run': 0, 'editable_prompt_files_changed': [],
+            'independence_limit': 'Same model and accepted prior mechanics; explicit prior composition exposure. New local-bias root candidate remains unaccessed.',
+            'execution_limit': 'The seal process completion is supplied by the actual tool response, not a self-referential prior exit receipt.'}
+(OUT / 'DELIVERY.json').write_text(json.dumps(delivery, indent=2) + '\n')
+members = []
+for path in sorted(OUT.rglob('*')):
+    if path.is_file():
+        identity = pin(path)
+        members.append({'path': str(path.relative_to(OUT)), 'bytes': identity['bytes'], 'sha256': identity['sha256']})
+freeze = {'sealed_utc': delivery['sealed_utc'], 'status': delivery['status'], 'files': members,
+          'scientific_programs_run': 0, 'exclusions': ['FINAL_FREEZE.json cannot contain its own hash.']}
+(OUT / 'FINAL_FREEZE.json').write_text(json.dumps(freeze, indent=2) + '\n')
+for row in members:
+    actual = pin(OUT / row['path'])
+    assert actual['bytes'] == row['bytes'] and actual['sha256'] == row['sha256']
+for name in ['DERIVATION.md', 'SOURCE_MANIFEST.json', 'EXPOSURE_AND_READ_COVERAGE.md', 'DELIVERY.json', 'FINAL_FREEZE.json']:
+    print(json.dumps(pin(OUT / name), sort_keys=True))
+print(json.dumps({'frozen_members_checked': len(members), 'scientific_programs_run': 0}))

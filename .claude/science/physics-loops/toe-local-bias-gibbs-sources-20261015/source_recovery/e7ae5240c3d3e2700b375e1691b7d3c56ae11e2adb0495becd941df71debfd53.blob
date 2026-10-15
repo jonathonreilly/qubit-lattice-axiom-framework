@@ -1,0 +1,43 @@
+"""Preserve root's analytic source disposition and exact provenance checks only."""
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib
+N=Path(__file__).resolve().parents[1];A=N/'local_bias_noncommuting_boundary_root_candidate';D=N/'local_bias_noncommuting_boundary_decisive_check';R=N/'local_bias_noncommuting_boundary_root_review'
+def js(p):return json.loads(p.read_bytes())
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,row):
+ v=pin(p);assert (v['bytes'],v['sha256'])==(row['bytes'],row['sha256']),str(p)
+def save(p,x):p.write_text(json.dumps(x,indent=2)+'\n')
+assert pin(A/'DERIVATION.md')['sha256']=='3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e'
+assert pin(D/'REPORT.md')['sha256']=='ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c'
+assert pin(D/'FINAL_FREEZE.json')['sha256']=='e2611ac1546fe0bb94a5ca0a23e92ea9a9982ec3f45c4b7b38d7fa119e43a8d7'
+for folder,name in [(A,'PROPOSAL_FREEZE.json'),(D,'FINAL_FREEZE.json')]:
+ for r in js(folder/name)['files']:
+  p=Path(r['path']);check(p if p.is_absolute() else folder/p,r)
+for r in js(D/'SOURCE_MANIFEST.json')['sources']:
+ check(Path(r['origin']['path']),r['origin']);check(Path(r['recovery']['path']),r['recovery'])
+receipts=[]
+for label in ['capture','closure']:
+ f=D/'metadata_runs'/label;l=js(f/'LAUNCH.json');e=js(f/'EXECUTION.json');assert e['exit_code']==0 and datetime.fromisoformat(l['started_utc'])<=datetime.fromisoformat(e['finished_utc'])
+ for k in ['launch','stdout','stderr']:check(Path(e[k]['path']),e[k])
+ for k,n in [('child','child_source.py'),('recorder','recorder_source.py')]:check(f/n,l[k])
+ assert (f/'stderr').stat().st_size==0
+ receipts.append({'label':label,'launch':pin(f/'LAUNCH.json'),'execution':pin(f/'EXECUTION.json')})
+R.mkdir(exist_ok=False)
+s='''# Root source disposition: finite noncommuting boundary
+
+The exact root candidate3c8a061e (3,059 bytes) and full separate reportea09041f (10,342 bytes) support the stated narrow counterexample. Root read both completely, reconstructed the two invariant blocks and finite-temperature estimates, and read all four new metadata programs. The separate check is same-model and source-exposed; it is not a blind replication or retained audit. No numerical, symbolic or formal-proof execution was needed or performed.
+
+For G=h(n1+n2)+epsilon(I-X1X2), both onsite and NN blocks are positive. The complete added positive-block norm is2epsilon; only its nonconstant part has normepsilon. With r=sqrt(h^2+epsilon^2), the exact finite readout conditional is A/(A+B), A=cosh(beta r)-(h/r)sinh(beta r), B=cosh(beta epsilon). The source's strict finite beta threshold suffices for conditional greater than1/2. The report's stronger finite threshold gives conditional above1-eta while the one-site excitation probability is made arbitrarily small with sufficiently small epsilon/h and sufficiently large but finite beta. Ground gap r-epsilon is positive, the conditioning event is positive at finite beta, and the order of limits remains explicit.
+
+Two mandatory wording corrections govern any current presentation while the historical source stays immutable. Name computational occupation bits b_i, with P(b1=1 | b2=1), to distinguish them from Pauli X operators. Say a lower bound on inverse temperature beta, equivalently an upper bound on temperature; a positive lower temperature bound would instead bound beta above. Keep the full norm2epsilon and scalar reserve in any physical ledger.
+
+The result refutes only the proposed uniform import of a classical full-conditional formula from positive pinning, small local noncommuting norm and beta>=beta_min with no beta upper bound. It does not rule out compression, quantum Gibbs certificates, restricted commuting rotations, finite temperature ranges, direct diagonal certification, block constructions or other concentration methods. No native impossibility, exhaustive route search, bath/thermalization claim, controller or energy identification follows. Those alternatives remain open.
+
+All27 review freeze members and the one-member source freeze were checked, along with current captured source/instruction identities and both actual metadata launches, source copies, streams and exits. This establishes exact recovery only. The report was sealed before its checker opened the later rotated-source candidate; root did not infer this boundary from any rotated-source verdict. No W/Git/PR/audit, model, physical-axiom or editable-prompt change was made. Publication remains a separate authorized step in a coherent positive-source milestone.
+'''
+(R/'ACCEPTANCE.md').write_text(s)
+save(R/'VERIFICATION.json',{'checked_utc':datetime.now(timezone.utc).isoformat(),'source':pin(A/'DERIVATION.md'),'source_freeze':pin(A/'PROPOSAL_FREEZE.json'),'report':pin(D/'REPORT.md'),'review_freeze':pin(D/'FINAL_FREEZE.json'),'review_members':27,'actual_metadata_receipts':receipts,'decision':'accepted narrow conditional-inference counterexample with mandatory occupation-bit/inverse-temperature terminology','scientific_executions':0,'independent_retained_audit':False,'editable_prompt_files_changed':[]})
+save(R/'FINAL_FREEZE.json',{'frozen_utc':datetime.now(timezone.utc).isoformat(),'files':[pin(R/'ACCEPTANCE.md'),pin(R/'VERIFICATION.json')]})
+print(json.dumps({'acceptance':pin(R/'ACCEPTANCE.md'),'verification':pin(R/'VERIFICATION.json'),'freeze':pin(R/'FINAL_FREEZE.json')}))

@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-10-15T17:09:46.760364+00:00",
+  "status": "restricted product-basis Gibbs theorem supported; stationarity wording correction and inherited physical contracts explicit; no audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/REPORT.md",
+    "bytes": 24571,
+    "sha256": "1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/SOURCE_MANIFEST.json",
+    "bytes": 14694,
+    "sha256": "6d3affe34312e0ec0888a7b9ac887240c2f49938e1fcaffd69b5642353d7b918"
+  },
+  "closing_metadata": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/CLOSING_METADATA.json",
+    "bytes": 11886,
+    "sha256": "52bbfb6b2edb71845d32e39f1f6dd4fdcd712feafd7cc14b854452bf30a94eb3"
+  },
+  "actual_metadata_receipts": [
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/LAUNCH.json",
+        "bytes": 1152,
+        "sha256": "39d9fb09c9cd7b2a485586562ab58f78cd0bde4de366f1972504fa25cd09ad46"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/EXECUTION.json",
+        "bytes": 940,
+        "sha256": "042c227b0b300bd740d1faceffebf553dcf51a07207e0a63e383f4df396b8e46"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/stdout",
+        "bytes": 348,
+        "sha256": "431c994991904b19cd945fef1d14a8ddc5788fcc432a604be8b3107d4cfaf1a9"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/LAUNCH.json",
+        "bytes": 1150,
+        "sha256": "1d36d6a8d1ed2d276f7375e9a349be273f668b8a2055149a772571ab1c288abf"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/EXECUTION.json",
+        "bytes": 940,
+        "sha256": "ed7558cc0fa12d393ed604d7865443205bbd21b13c4bb2dfb06d01c05d5ba862"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/stdout",
+        "bytes": 631,
+        "sha256": "e38e2d7b052a92d4150430367094b112901afa42d33cd979a1bcab25393c7a6b"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "other_worker_local_bias_opened": false,
+  "finite_bank_candidate_opened": false,
+  "model_override": false,
+  "delegation": false,
+  "git_operations": 0,
+  "editable_prompt_files_changed": []
+}

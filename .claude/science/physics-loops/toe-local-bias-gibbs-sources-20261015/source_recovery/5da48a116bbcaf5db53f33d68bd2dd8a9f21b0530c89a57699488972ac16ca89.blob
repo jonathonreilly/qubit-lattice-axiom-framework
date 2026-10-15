@@ -1,0 +1,141 @@
+"""Record root analytic decisions and verify their exact provenance; no science execution."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+
+N = Path(__file__).resolve().parents[1]
+OUT = N / 'conditional_sources_root_review'
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+def pin(p):
+    p = Path(p)
+    b = p.read_bytes()
+    return {'path': str(p), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+def check(row, path=None):
+    got = pin(path or row['path'])
+    assert (got['bytes'], got['sha256']) == (row['bytes'], row['sha256']), got
+
+def js(p):
+    return json.loads(Path(p).read_text())
+
+spec = [
+    ('local_bias_memory_independent/independent', 'd5863f3f2955e8c840567c37275bd6955d6a8661ad29795149985af8a8ddad27', 31),
+    ('local_bias_memory_independent/comparison', 'a91de5a5b197ae67d1f348fdecb24b2736f5d5accecfa6de2ae681485d9efe29', 20),
+    ('rotated_gibbs_memory_decisive_check', '7fa048ec66f485ae1f3a1e1ddee410dbf1d99354f42b6f5a7f9871000e1f021a', 41),
+    ('finite_memory_bank_decisive_check', 'e66dc3d4d956acffc070076bca03e2bee3677550db809ed86e56594470044f0b', 34),
+]
+results = []
+for relative, digest, count in spec:
+    d = N / relative
+    f = d / 'FINAL_FREEZE.json'
+    assert pin(f)['sha256'] == digest
+    freeze = js(f)
+    assert len(freeze['files']) == count
+    members = set()
+    for row in freeze['files']:
+        p = d / row['path']
+        check(row, p)
+        members.add(p.resolve())
+    assert members == {p.resolve() for p in d.rglob('*') if p.is_file() and p != f}
+    manifest = js(d / 'SOURCE_MANIFEST.json')
+    for group in ('sources', 'new_sources', 'reused_sources'):
+        for row in manifest.get(group, []):
+            for key in ('origin', 'recovery', 'source', 'snapshot'):
+                if row.get(key):
+                    check(row[key])
+    for row in manifest.get('unchanged_instruction_identities', []):
+        check(row)
+    receipts = []
+    for base in ('metadata_runs', 'receipts'):
+        if not (d / base).exists():
+            continue
+        for p in sorted((d / base).rglob('EXECUTION.json')):
+            e = js(p)
+            assert e['exit_code'] == 0 and not e.get('timed_out', False)
+            for key in ('launch', 'stdout', 'stderr', 'source', 'recorder'):
+                if isinstance(e.get(key), dict):
+                    check(e[key])
+            launch = js(p.parent / 'LAUNCH.json')
+            end = e.get('finished_utc', e.get('completed_utc'))
+            assert datetime.fromisoformat(launch['started_utc']) <= datetime.fromisoformat(end)
+            for key, saved in [('child', 'child_source.py'), ('recorder', 'recorder_source.py'),
+                               ('program_source_at_launch', 'program_source.py'),
+                               ('recorder_source_at_launch', 'recorder_source.py')]:
+                if key in launch:
+                    check(launch[key])
+                    if (p.parent / saved).exists():
+                        check(launch[key], p.parent / saved)
+            if 'source' in launch:
+                check(launch['source'])
+                for key, value in launch.items():
+                    assert e[key] == value
+            receipts.append(pin(p))
+    assert len(receipts) == 2
+    results.append({'freeze': pin(f), 'members_verified': count, 'actual_receipts': receipts,
+                    'source_manifest': pin(d / 'SOURCE_MANIFEST.json')})
+
+source_specs = {
+    'local_bias_memory_root_candidate/DERIVATION.md': '637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95',
+    'local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md': 'c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e',
+    'local_bias_memory_independent/independent/DERIVATION.md': '5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604',
+    'local_bias_memory_independent/comparison/REPORT.md': '90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2',
+    'rotated_gibbs_memory_root_candidate/DERIVATION.md': '30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2',
+    'rotated_gibbs_memory_decisive_check/REPORT.md': '1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b',
+    'finite_memory_bank_root_candidate/DERIVATION.md': '162d7504ad3951ed29add0facefc0bbdb227fcdf582e22250baad04a4f63c521',
+    'finite_memory_bank_decisive_check/REPORT.md': '16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6',
+    'local_bias_noncommuting_boundary_root_review/ACCEPTANCE.md': '5ed5f4bca23da4fe240f04cded99967ecb525a372942748d93c21125a6ce0eda',
+}
+sources = []
+for relative, digest in source_specs.items():
+    p = N / relative
+    assert pin(p)['sha256'] == digest
+    sources.append(pin(p))
+
+OUT.mkdir(exist_ok=False)
+(OUT / 'LOCAL_BIAS_ACCEPTANCE.md').write_text('''# Root decision: local conditional-bias sources
+
+Conditional support is accepted for the exact root source637ccbabb9, mandatory qualificationc5cc6134, pre-exposure independent derivation5f747f09 and complete source-exposed comparison90ff1d5d. This is a source-side mathematical decision, not retained audit or native physical supply. Root read every byte of both new derivations and the entire41576-byte comparison, all eight metadata helpers, coverage records and actual receipts. Earlier accepted source arguments are reused only at unchanged identities.
+
+The full-conditional bound survives partial conditioning by the tower property. Sequential uniform coupling then dominates increasing recursive-majority failure events by iid Bernoulli(q_bar), with actual output correlations retained. The finite occupation Gibbs flip gap is h_i minus the sum of negative-edge magnitudes; local uncertainty bounds and a positive lower inverse-temperature bound certify a fixed strict bias. Occupation-to-Ising collection gives h_Ising=h_occ/2+sum J_occ/4, J_Ising=-J_occ/4, and occupation gap equals twice the Ising margin. The two decompositions require their own actual scalar and positive-block budgets. The two-site norm3 versus2a_B=5/2 example forbids transferring a reserve bound merely from identical Gibbs conditionals.
+
+Mandatory current qualifications: say lower bound on inverse temperature beta, not temperature. Use s>=1 and r>=1 for the displayed tree counts; D_max is a logical span, every actual gate is NN. O(L) field prices require bounded h,J,c, k_0=O(L); action and slew additionally require bounded profile factors. B_C and kappa_B are upper allowances, not equalities. The rank obstruction applies only to genuinely full-rank inputs, including the diagonal Gibbs state, not every coherent state with that diagonal.
+
+Fixed local equilibrium intervals certify membership of the actual source family. They do not certify unrestricted delivery-TV, prescribed coherent nominal-target dynamics, switching, moment or work precision. Keep the exact actual-member quench, ordered K_Z then H0 aging, full retained unconditioned marginal, full-space turn-on and ready-range release, all phases/scalars and real endpoint Hamiltonians. The fixed-TV-ball, weak-field, strongly correlated and Markov-outside-class examples, dimer alternative and coherent phase witness remain explicit. The elementary coupling is proved here; limited prior-art reading is not novelty certification or an unchecked Holley-theorem import.
+
+All state delivery, inverse-temperature/physical-basis identification, actual isolation, local independently calibrated channels, switch-to-zero capability and native controller/bath/recycling remain supplied or open. No scientific program or formal proof checker was run for these analytic results; metadata verification is not mathematical evidence.
+''')
+(OUT / 'ROTATED_GIBBS_ACCEPTANCE.md').write_text('''# Root decision: restricted product-basis Gibbs sources
+
+Conditional support is accepted for source30d934ee and complete separate report1a292a21, using the local conditional-bias result accepted alongside this decision. Root read the entire7830-byte source and24571-byte report, all four metadata helpers and exposure/receipt records. Review is source-exposed with the same model and shared prior mechanics; no broader independence is claimed.
+
+Product onsite conjugation preserves positive local support and mutual commutativity. The qubit transition kernel is independent binary observation noise with alpha_i=(1-a_i,z)/2<=alpha_max<1/2. Conditioning on noisy observations of the other bits still gives P(X_i=1|Y_-i)<=q; hence the measured full conditional is bounded by alpha_max+(1-2alpha_max)q<1/2. The ell=1 fixed-endpoint construction and one full retained-marginal comparison follow.
+
+The non-diagonal switch requires the full reduced Gibbs marginal, or its certified full reduced-state trace error. A matching computational diagonal alone is insufficient: retain the report's one-qubit same-diagonal/nonstationary counterexample. Arbitrary joint extensions remain allowed, and their correlations can evolve even when the memory marginal is stationary. The whole joint state is never silently assumed stationary or close to a product.
+
+Correct source wording: commutation with the ideal switch generator conserves G expectation for every input; stationarity separately preserves the full Gibbs marginal. Preserve mixed-axis channel loads, uncollected versus collected coefficients, exact scalar action, independently supplied controls, actual K_Z then H0 chronology, endpoint Hamiltonians and fault budgets. Linear resource prices require bounded local reserves and k_0=O(L), and bounded action/slew profile factors. These are current qualifications; frozen source bytes remain unchanged.
+
+This common-basis commuting family does not remove the accepted generic noncommuting two-qubit boundary. It supplies neither arbitrary noncommuting Gibbs control, thermal preparation, physical inverse-temperature identification, native dynamics nor recycling. Analytic checks only; no scientific program, old fixture or formal checker executed.
+''')
+(OUT / 'FINITE_BANK_ACCEPTANCE.md').write_text('''# Root decision: finite consumed memory bank
+
+Conditional support is accepted for source162d7504 and complete separate report16f6fbc7. Root read all11745 source bytes and25249 review bytes, all four metadata helpers and complete exposure/receipt records. The accepted Markov source and exact old readiness consumer suffice; local-bias/rotation are optional separate suppliers, not a dependency of this bank theorem.
+
+For finite declared k>=1 and old size s, compress n=k*s endpoints once. The full-ray diagonal event error is delta<=min(1,n q_r+d_delivery). One replacement by vacuum on all n endpoints times the exact unconditioned complementary marginal costs g(delta), once. Subsequent actual maps contract the propagated discrepancy; the unused-bank purity invariant belongs only to the ideal trajectory. Each supplied intervening endpoint unitary must preserve unused banks, with every physical interval, environment/output and error paid. No access to passive references or discard is furnished implicitly.
+
+Returned routes to bank a have P_J,a=(2a-1)s^2+2sum ell_j, summing to k^2s^2+2k sum ell_j. Dirty transit returns exactly on arbitrary entanglement. Compression uses n; old geometry and isolation still use s, so E_iso<=6(s+L_raw). Entire bank lifetime and all old omitted edges remain priced. Current S records move to a distinct consumed block on each use; the chronological C_k V_(k-1) ... V_1 C_1 target cannot in general be flattened to one H0 evolution.
+
+Two mandatory qualifications: exact compensation action is ||C||sum A_u and is at most B_C sum A_u. Guards/waits counted solely as H0 aging must lie on the fully compensated plateau. An uncompensated interval requires its actual chronological K_Z segment or its additional comparison residual, e.g.2B_F*g on the full space or2Gamma*g on the ready comparator. Keep the explicit idle counterexample and distinguish nominal evolution from implementation fault. Every ramp, switch, gate, intervening segment, phase, scalar, moment, endpoint and actual duration remains in the ledger.
+
+The initially supplied finite bank is consumed. No restoration, cyclic bath, unlimited reuse, native state/control manufacture, energy identification, detector or permanent-record claim follows. Same-model source-exposed analytic review, zero scientific executions or replays and no retained-audit decision.
+''')
+record = {'utc': now(), 'decisions': [pin(OUT / n) for n in ('LOCAL_BIAS_ACCEPTANCE.md', 'ROTATED_GIBBS_ACCEPTANCE.md', 'FINITE_BANK_ACCEPTANCE.md')],
+          'sources': sources, 'verified_packets': results, 'scientific_programs_run': 0,
+          'scope': 'Root complete analytic reading and decision, with exact provenance checks. No proof by metadata count.',
+          'editable_prompt_files_changed': [], 'model_override': False}
+(OUT / 'VERIFICATION.json').write_text(json.dumps(record, indent=2) + '\n')
+members = [pin(p) for p in sorted(OUT.iterdir()) if p.is_file()]
+(OUT / 'FINAL_FREEZE.json').write_text(json.dumps({'sealed_utc': now(), 'files': members, 'self_excluded': True}, indent=2) + '\n')
+print(json.dumps({'freeze': pin(OUT / 'FINAL_FREEZE.json'), 'decisions': record['decisions'], 'scientific_programs_run': 0}, indent=2))

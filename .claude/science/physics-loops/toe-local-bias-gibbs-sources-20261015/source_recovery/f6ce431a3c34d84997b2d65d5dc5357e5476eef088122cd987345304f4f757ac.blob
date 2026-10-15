@@ -1,0 +1,169 @@
+{
+  "schema": "local-bias-source-exposed-comparison-manifest-v1",
+  "captured_utc": "2026-10-15T17:10:38.754932+00:00",
+  "timing_scope": "Captured after complete reading; not a preregistration or a pre-exposure record.",
+  "new_sources": [
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_candidate/DERIVATION.md",
+        "bytes": 10666,
+        "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/source/local_bias_memory_root_candidate__DERIVATION.md",
+        "bytes": 10666,
+        "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+      },
+      "coverage": "Complete source-exposed reading."
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md",
+        "bytes": 1801,
+        "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/source/local_bias_memory_root_qualification__SCOPE_AND_PRIOR_ART.md",
+        "bytes": 1801,
+        "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+      },
+      "coverage": "Complete source-exposed reading."
+    }
+  ],
+  "independent_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/DERIVATION.md",
+    "bytes": 38107,
+    "sha256": "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604"
+  },
+  "independent_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+    "bytes": 5531,
+    "sha256": "d5863f3f2955e8c840567c37275bd6955d6a8661ad29795149985af8a8ddad27"
+  },
+  "independent_freeze_members_verified": 31,
+  "independent_sealed_utc": "2026-10-15T16:57:05.319798+00:00",
+  "independent_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/SOURCE_MANIFEST.json",
+    "bytes": 6773,
+    "sha256": "b06667c149785bbda4642b26800732609e5012663e59653caf950c1c1c3b7ebf"
+  },
+  "reused_sources": [
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_markov_memory_candidate__DERIVATION.md",
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "scope": "Complete source reading; provenance decision freeze is metadata, not mathematical proof."
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/REPORT.md",
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_markov_memory_independent__comparison__REPORT.md",
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "scope": "Complete source reading; provenance decision freeze is metadata, not mathematical proof."
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_root_candidate/DERIVATION.md",
+        "bytes": 13367,
+        "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/local_gibbs_memory_interface_root_candidate__DERIVATION.md",
+        "bytes": 13367,
+        "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+      },
+      "scope": "Complete source reading; provenance decision freeze is metadata, not mathematical proof."
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/REPORT.md",
+        "bytes": 26646,
+        "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/local_gibbs_memory_interface_decisive_check__REPORT.md",
+        "bytes": 26646,
+        "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+      },
+      "scope": "Complete source reading; provenance decision freeze is metadata, not mathematical proof."
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/MARKOV_ACCEPTANCE.md",
+        "bytes": 5131,
+        "sha256": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_memory_root_review__MARKOV_ACCEPTANCE.md",
+        "bytes": 5131,
+        "sha256": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d"
+      },
+      "scope": "Complete source reading; provenance decision freeze is metadata, not mathematical proof."
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/GIBBS_ACCEPTANCE.md",
+        "bytes": 4325,
+        "sha256": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_memory_root_review__GIBBS_ACCEPTANCE.md",
+        "bytes": 4325,
+        "sha256": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632"
+      },
+      "scope": "Complete source reading; provenance decision freeze is metadata, not mathematical proof."
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/FINAL_FREEZE.json",
+        "bytes": 1001,
+        "sha256": "4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_memory_root_review__FINAL_FREEZE.json",
+        "bytes": 1001,
+        "sha256": "4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677"
+      },
+      "scope": "Complete source reading; provenance decision freeze is metadata, not mathematical proof."
+    }
+  ],
+  "unchanged_instruction_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "first_root_source_exposure_clock": "2026-10-15 16:58:59 UTC; actual clock immediately before the first complete source read",
+  "prior_composition_exposure": {
+    "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f",
+    "scope": "Read during previous frozen PR9608 scope task; not reopened or used as accepted proof here."
+  },
+  "optional_noncommuting_boundary_sources_opened": false,
+  "rotated_gibbs_sources_opened": false,
+  "scientific_programs_run": 0,
+  "scope": "Hash/source recovery only. No scientific numerical calculation, formal proof, audit, Git or publication operation."
+}

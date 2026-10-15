@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/verify_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison",
+  "started_utc": "2026-10-15T17:20:16.012354+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/verify_metadata.py",
+    "bytes": 3859,
+    "sha256": "9f7417082315d847d3529c39b247e601787073475b2d179995e1569d6db46031"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/record_metadata.py",
+    "bytes": 1984,
+    "sha256": "8e349597907723fc9fefed8028187575acd00dfed6aa0fa036791969a5a9f1d8"
+  },
+  "timeout_seconds": 60,
+  "scientific_programs_run": 0,
+  "finished_utc": "2026-10-15T17:20:16.103109+00:00",
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/verify_metadata/stdout.txt",
+    "bytes": 137,
+    "sha256": "ac777986260e3394f71af3629db1c40799f2c189117ad11c4f9213079c7acdff"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/verify_metadata/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-15T16:32:49.106966+00:00",
+  "status": "root analytic proposal pending separate check",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+    }
+  ],
+  "scientific_executions": 0
+}

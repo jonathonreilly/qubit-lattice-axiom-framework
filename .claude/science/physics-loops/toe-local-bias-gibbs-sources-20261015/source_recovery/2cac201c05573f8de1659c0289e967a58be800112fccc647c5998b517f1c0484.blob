@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+"""Metadata only: pin the compared sources and preserve the prior freeze."""
+from datetime import datetime, timezone
+from hashlib import sha256
+import json
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+N = HERE.parents[1]
+INDEPENDENT = HERE.parent / "independent"
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": sha256(data).hexdigest()}
+
+
+def checked(path, size, digest):
+    value = pin(path)
+    assert value["bytes"] == size and value["sha256"] == digest, value
+    return value
+
+
+def main():
+    old_freeze = checked(INDEPENDENT / "FINAL_FREEZE.json", 5531,
+        "d5863f3f2955e8c840567c37275bd6955d6a8661ad29795149985af8a8ddad27")
+    freeze = json.loads((INDEPENDENT / "FINAL_FREEZE.json").read_text())
+    for entry in freeze["files"]:
+        checked(INDEPENDENT / entry["path"], entry["bytes"], entry["sha256"])
+    old_manifest = checked(INDEPENDENT / "SOURCE_MANIFEST.json", 6773,
+        "b06667c149785bbda4642b26800732609e5012663e59653caf950c1c1c3b7ebf")
+    manifest = json.loads((INDEPENDENT / "SOURCE_MANIFEST.json").read_text())
+    for entry in manifest["sources"]:
+        for kind in ("source", "snapshot"):
+            item = entry[kind]
+            checked(Path(item["path"]), item["bytes"], item["sha256"])
+    for entry in manifest["unchanged_instruction_identities"]:
+        checked(Path(entry["path"]), entry["bytes"], entry["sha256"])
+    new_specs = [
+        ("local_bias_memory_root_candidate/DERIVATION.md", 10666,
+         "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"),
+        ("local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md", 1801,
+         "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"),
+    ]
+    (HERE / "source").mkdir(exist_ok=True)
+    new_sources = []
+    for name, size, digest in new_specs:
+        source = N / name
+        identity = checked(source, size, digest)
+        recovery = HERE / "source" / name.replace("/", "__")
+        assert not recovery.exists(), recovery
+        recovery.write_bytes(source.read_bytes())
+        new_sources.append({"source": identity,
+                            "snapshot": checked(recovery, size, digest),
+                            "coverage": "Complete source-exposed reading."})
+    result = {
+        "schema": "local-bias-source-exposed-comparison-manifest-v1",
+        "captured_utc": datetime.now(timezone.utc).isoformat(),
+        "timing_scope": "Captured after complete reading; not a preregistration or a pre-exposure record.",
+        "new_sources": new_sources,
+        "independent_derivation": checked(INDEPENDENT / "DERIVATION.md", 38107,
+            "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604"),
+        "independent_freeze": old_freeze,
+        "independent_freeze_members_verified": len(freeze["files"]),
+        "independent_sealed_utc": freeze["sealed_utc"],
+        "independent_manifest": old_manifest,
+        "reused_sources": manifest["sources"],
+        "unchanged_instruction_identities": manifest["unchanged_instruction_identities"],
+        "first_root_source_exposure_clock": "2026-10-15 16:58:59 UTC; actual clock immediately before the first complete source read",
+        "prior_composition_exposure": manifest["prior_composition_exposure"],
+        "optional_noncommuting_boundary_sources_opened": False,
+        "rotated_gibbs_sources_opened": False,
+        "scientific_programs_run": 0,
+        "scope": "Hash/source recovery only. No scientific numerical calculation, formal proof, audit, Git or publication operation."
+    }
+    (HERE / "SOURCE_MANIFEST.json").write_text(json.dumps(result, indent=2) + "\n")
+    print(json.dumps({"status": "metadata verified", "new_sources": len(new_sources),
+                      "unchanged_independent_members": len(freeze["files"]),
+                      "reused_source_pairs": len(manifest["sources"]),
+                      "scientific_programs_run": 0}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

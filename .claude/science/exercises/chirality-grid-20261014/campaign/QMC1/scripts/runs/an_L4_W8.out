@@ -1,0 +1,15 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:37: OptimizeWarning: Covariance of the parameters could not be estimated
+  p, _ = curve_fit(f, tau[sel], g[sel], p0=[max(g[sel].min(), 1e-6), 0.5], maxfev=20000)
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:48: OptimizeWarning: Covariance of the parameters could not be estimated
+  p, _ = curve_fit(f, tau[sel], g[sel], p0=[max(g[sel].min(), 1e-4), 1.0], sigma=e, absolute_sigma=True,
+runs/L4_f2_W8.npz: n=60 8.08s/sweep acc=0.48 W=8.0 L=[4, 4] f2
+   S10(Q0) = 84.4434 +- 4.1401 (err at 80/40/20 bins: 4.2842, 3.9149, 4.1401); S10/N = 5.27771 +- 0.25876
+   S(Qpi) = 20.2469 +- 0.8885; WQ = -710.6340 +- 23.8396; WQ(HS channels) = -710.6340 +- 23.8396
+   per component SX0 [1.8791, 2.7331, 2.2944, 5.4769, 6.0459, 1.0917, 3.7372, 1.3522, 29.6393, 29.6393]
+   per component SY0 [0.0747, 0.0136, 0.0464, 0.035, 0.0548, 0.0233, 0.0393, -0.0057, 0.1365, 0.1365]
+   mirror gap (cosh fit tau in [1, beta-1]) = 0.9314 +- 2.4082; c-block 0.0000 +- 9.3937
+   E2 weighted cosh gap [0.4, beta-0.4] = 0.0000 +- 0.0005; E3 weight bound w_1 = 2cosh(beta/2) G(beta/2) = 0.0219 +- 0.0334
+   G_mirror(tau) = [0.5064, 0.0841, 0.0164, -0.0029, 0.0024, -0.0025, -0.001, -0.0131, -0.0047, 0.006, 0.0055, 0.0117, -0.0012, -0.0013, -0.0013, 0.0068, -0.0008, 0.0089, -0.0055, 0.0014, 0.0029, 0.0006, 0.0015, -0.0055, 0.0004, 0.0061, 0.0027, 0.0077, 0.0074, -0.0113, -0.0027, -0.0012, 0.0058, -0.0053, 0.0037, -0.0024, -0.0008, 0.0105, 0.0093, 0.0881, 0.4948]
+   G_light(tau)  = [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]  per-config light dev 5.4e-14
+   gate(ii) max|phase| 1.5e-11; wrap-vs-fresh max 2.1e-11
+watchdog peak RSS 73648 KB

@@ -1,0 +1,9 @@
+[fierz:spin10] families ['sing:8v', 'trip:8v', 'sing:56v', 'trip:56v']; components 35960; lstsq residual 3.0e-16; kernel dim 2; singular values [45.039825, 17.53323, 0.0, 0.0]
+[fierz:spin10] required kappa signs {'sing:8v': 1, 'trip:8v': -1, 'sing:56v': 1, 'trip:56v': -1}; HS weights {'sing:8v': 128.0, 'trip:8v': 384.0, 'sing:56v': 896.0, 'trip:56v': 2688.0}
+[fierz:spin10] chosen kappa {'sing:8v': 1.5, 'trip:8v': -0.5, 'sing:56v': 0.0, 'trip:56v': 0.0}; exhaustive relative residual 1.04e-15; sign margin (>= 0 required) -0.000e+00
+[spin10] D = 32; HS channels per vertex 64; sign-rule violations 0
+[fierz:reduced] families ['sing:1v', 'trip:1v']; components 1; lstsq residual 1.5e-16; kernel dim 1; singular values [0.790569, 0.0]
+[fierz:reduced] required kappa signs {'sing:1v': 1, 'trip:1v': -1}; HS weights {'sing:1v': 2.0, 'trip:1v': 6.0}
+[fierz:reduced] chosen kappa {'sing:1v': 0.0, 'trip:1v': -1.0}; exhaustive relative residual 1.48e-16; sign margin (>= 0 required) 0.000e+00
+[reduced] D = 4; HS channels per vertex 6; sign-rule violations 0
+watchdog peak RSS 102656 KB

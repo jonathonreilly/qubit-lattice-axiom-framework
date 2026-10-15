@@ -599,3 +599,24 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **The one-loop toy omitted its temporal wave-function term.** Including it gives a spread of about 2.9e-2, about 7.5e25 × the IceCube comparator. This strengthens the hazard, but it is still a toy.
   - "About 18 counterterms" is suggested only. The tuning at tree level stays about 1e-27.
 - **Strongest correct statement (referee).** Class S removes exact corner conservation, and it permits cubic- and gauge-symmetric light–light density and kinetic operators, including three new CPT-even kinetic tensors. Their coefficients are not forced to equal the CKM Yukawa's, but they are generically unprotected and disastrously large without extra structure. So: CLS-PRICE, with a candidate Θ plus about 1e-27 kinetic tuning, within one-body proxies and a toy loop. The many-body SMG fate stays open.
+
+**QMC-1 result (17:03Z; same family; referee launched).** Mechanical reading OPEN, because the pre-registered gap estimator E1 fails at strong coupling. Every replacement estimator able to resolve an open gap at both sizes gives GPR-PILOT (E2, E3, E3w, declared in follow-ups D and E before the L6 results). Worker's reading: GPR-PILOT, conditional on the estimator.
+- **Validation gate: all four items passed.**
+  - (i) W = 0 matches the free G to 6e-14.
+  - (ii) Phase ≤ 3e-9 on every proposal.
+  - (iii) A reduced-flavour ED matches W⟨Q⟩, Σ S and E_kin within errors.
+  - (iv) The light-corner G equals ½ per configuration, to 2e-13.
+- **The engine.**
+  - A d-frame, Kramers-class AFQMC with a 64-channel sign-correct Fierz decomposition at λ1 = 0. It has no remainder (proved), exact HS, and Trotter error only.
+  - Rank-32 Woodbury updates; τ_int(S10) ≤ 1.3 sweeps.
+  - A singlet-only vertex gives det = |det_sector|² in 2D (checked), saving about 8×.
+- **2+1D, filter f2, L = 4 and 6, β = 4.** Once the mirror gap opens (W ≳ 2), S10/L² goes from about the free ratio (0.62 at W = 1) to flat: 0.98(5) at W = 2, 1.35(26) at W = 4, 0.87(10) at W = 8. No SMG window was found. There is no strong-coupling turnover up to W = 16 at L4, which is K1's G1 seen numerically.
+- **Caveats.**
+  - Short statistics (45–60 sweeps).
+  - Δτ artefacts: U(1)_c-plane pinning, and S10 shifts of about 10%.
+  - Finite temperature; L ≤ 6.
+  - "Flat" means a correlation length of at least about 6, not proven order. Mermin–Wagner forbids true order at T > 0.
+- **Control f ≡ 1:** qualitatively follows the GPR/EP sequence (gapless, then gapped with large S10, then falling at strong coupling). It cannot decide order versus symmetric at L ≤ 6.
+- **1+1D, L = 8 and 16:** at W = 1 the mirror gap is open (about 2.0) and stable, and S10 does not grow. NT-3's near-light soft mode is not tested.
+- **Cost:** 2+1D L = 8 is about 93 core-hours per 1000 sweeps per W; 3+1D L = 6 about 3.6e3; 3+1D L = 8 about 4.7e4 and 128–208 GB.
+- **Gauge links:** Spin(8) links containing SU(3)_c × U(1)_{B−L} keep the construction sign-free (suggested). SU(2)_L and hypercharge need a new construction, or reweighting.

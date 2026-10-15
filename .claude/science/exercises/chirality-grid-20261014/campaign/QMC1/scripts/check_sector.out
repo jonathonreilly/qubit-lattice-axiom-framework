@@ -1,0 +1,13 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+[f2] T2 J T2^-1 = -J: True
+[f2] singlet-only: nch 128; max ||[J, B_l]||/||B_l|| = 3.5e-17; log det(1+M) = 365.2160207351 (phase -1.7e-17); 2 log|det(1+M_+)| = 365.2160207351; sector dim 256 of 512
+[f2] production: nch 64; max ||[J, B_l]||/||B_l|| = 4.2e-01; J does not commute: no factorisation
+[one] T2 J T2^-1 = -J: True
+[one] singlet-only: nch 128; max ||[J, B_l]||/||B_l|| = 2.8e-17; log det(1+M) = 633.7701265719 (phase 7.8e-16); 2 log|det(1+M_+)| = 633.7701265719; sector dim 256 of 512
+[one] production: nch 64; max ||[J, B_l]||/||B_l|| = 1.8e+00; J does not commute: no factorisation
+watchdog peak RSS 201600 KB

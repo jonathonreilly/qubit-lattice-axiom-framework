@@ -1,0 +1,19 @@
+[run] kind=spin10 dims=(4, 4) filt=one rho=1.0 W=0.5 beta=4.0 dtau=0.1 Lt=40 ns=2 Nd=512 nch=64 eq_pts=[20]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.820 step 0.3750 maxphase 1.2e-12 maxdev 2.0e-12 t 5s rss 508MB
+[warm 10] acc 0.569 step 0.5859 maxphase 2.2e-12 maxdev 2.8e-12 t 37s rss 716MB
+[warm 19] acc 0.481 step 0.5859 maxphase 2.2e-12 maxdev 2.8e-12 t 65s rss 732MB
+[meas 0] acc 0.511 S10(Q0) 395.3302 WQ -542.5043 Gm(beta/2) -0.0450 maxphase 2.2e-12 maxdev 2.8e-12 lightdev 0.0e+00 t 69s rss 732MB
+[meas 10] acc 0.459 S10(Q0) 233.3497 WQ -536.7419 Gm(beta/2) 0.0044 maxphase 2.2e-12 maxdev 2.8e-12 lightdev 0.0e+00 t 102s rss 732MB
+[meas 20] acc 0.397 S10(Q0) 255.5208 WQ -545.6866 Gm(beta/2) 0.0051 maxphase 2.2e-12 maxdev 2.8e-12 lightdev 0.0e+00 t 147s rss 732MB
+[meas 30] acc 0.392 S10(Q0) 245.8053 WQ -579.9702 Gm(beta/2) 0.0047 maxphase 2.2e-12 maxdev 2.8e-12 lightdev 0.0e+00 t 238s rss 732MB
+[meas 40] acc 0.375 S10(Q0) 291.1901 WQ -548.7029 Gm(beta/2) 0.0019 maxphase 2.2e-12 maxdev 2.8e-12 lightdev 0.0e+00 t 275s rss 732MB
+[meas 50] acc 0.381 S10(Q0) 316.9833 WQ -672.6960 Gm(beta/2) 0.0031 maxphase 2.2e-12 maxdev 2.8e-12 lightdev 0.0e+00 t 309s rss 732MB
+[meas 59] acc 0.327 S10(Q0) 274.8523 WQ -563.8180 Gm(beta/2) -0.0031 maxphase 2.2e-12 maxdev 2.8e-12 lightdev 0.0e+00 t 339s rss 732MB
+[done] 60 sweeps, 4.56 s/sweep, maxphase 2.16e-12, maxdev 2.84e-12, peak RSS 732 MB, total 339s
+watchdog peak RSS 749984 KB

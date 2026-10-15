@@ -1,0 +1,11 @@
+[run] kind=reduced dims=(3,) filt=f1 rho=0.375 W=2.0 beta=2.0 dtau=0.1 Lt=20 ns=4 Nd=12 nch=8 eq_pts=[5]
+[warm 0] acc 1.000 step 0.3750 maxphase 7.4e-17 maxdev 1.9e-15 t 0s rss 53MB
+[warm 10] acc 0.917 step 1.0000 maxphase 2.8e-16 maxdev 2.5e-15 t 0s rss 53MB
+[warm 19] acc 0.950 step 1.0000 maxphase 2.8e-16 maxdev 2.5e-15 t 0s rss 53MB
+[meas 0] acc 0.967 S10(Q0) 0.5381 WQ -0.0745 Gm(beta/2) 0.5765 maxphase 2.8e-16 maxdev 2.5e-15 lightdev 1.4e-01 t 0s rss 53MB
+[meas 10] acc 0.950 S10(Q0) 0.5137 WQ -0.0873 Gm(beta/2) 0.4775 maxphase 2.8e-16 maxdev 2.5e-15 lightdev 1.3e-01 t 0s rss 53MB
+[meas 20] acc 0.967 S10(Q0) 0.4833 WQ -0.1161 Gm(beta/2) 0.4401 maxphase 2.8e-16 maxdev 2.5e-15 lightdev 1.2e-01 t 0s rss 53MB
+[meas 30] acc 0.917 S10(Q0) 0.5767 WQ -0.1853 Gm(beta/2) 0.6262 maxphase 2.8e-16 maxdev 2.5e-15 lightdev 1.3e-01 t 0s rss 53MB
+[meas 40] acc 0.950 S10(Q0) 0.6395 WQ -0.5386 Gm(beta/2) 0.4955 maxphase 2.8e-16 maxdev 2.5e-15 lightdev 1.4e-01 t 1s rss 53MB
+[done] 41 sweeps, 0.01 s/sweep, maxphase 2.84e-16, maxdev 2.45e-15, peak RSS 53 MB, total 1s
+watchdog peak RSS 54256 KB

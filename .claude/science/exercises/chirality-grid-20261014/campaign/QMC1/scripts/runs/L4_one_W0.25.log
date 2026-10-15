@@ -1,0 +1,19 @@
+[run] kind=spin10 dims=(4, 4) filt=one rho=1.0 W=0.25 beta=4.0 dtau=0.1 Lt=40 ns=4 Nd=512 nch=64 eq_pts=[10]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.863 step 0.3750 maxphase 4.0e-13 maxdev 1.8e-12 t 4s rss 372MB
+[warm 10] acc 0.523 step 0.9155 maxphase 2.1e-12 maxdev 2.7e-12 t 30s rss 523MB
+[warm 19] acc 0.469 step 0.9155 maxphase 2.1e-12 maxdev 3.8e-12 t 52s rss 551MB
+[meas 0] acc 0.455 S10(Q0) 360.7281 WQ -155.4884 Gm(beta/2) 0.1176 maxphase 2.1e-12 maxdev 3.8e-12 lightdev 0.0e+00 t 55s rss 551MB
+[meas 10] acc 0.380 S10(Q0) 364.9922 WQ -184.2527 Gm(beta/2) 0.0655 maxphase 2.1e-12 maxdev 3.8e-12 lightdev 0.0e+00 t 104s rss 559MB
+[meas 20] acc 0.419 S10(Q0) 623.6149 WQ -225.4741 Gm(beta/2) 0.0606 maxphase 2.1e-12 maxdev 3.8e-12 lightdev 0.0e+00 t 150s rss 559MB
+[meas 30] acc 0.419 S10(Q0) 463.5142 WQ -190.1052 Gm(beta/2) -0.0150 maxphase 3.5e-12 maxdev 3.8e-12 lightdev 0.0e+00 t 177s rss 559MB
+[meas 40] acc 0.416 S10(Q0) 477.5038 WQ -188.6946 Gm(beta/2) 0.0562 maxphase 3.5e-12 maxdev 3.8e-12 lightdev 0.0e+00 t 204s rss 559MB
+[meas 50] acc 0.377 S10(Q0) 594.5380 WQ -222.2658 Gm(beta/2) -0.0030 maxphase 3.5e-12 maxdev 3.8e-12 lightdev 0.0e+00 t 231s rss 559MB
+[meas 59] acc 0.397 S10(Q0) 436.3054 WQ -199.7463 Gm(beta/2) 0.0240 maxphase 3.5e-12 maxdev 3.8e-12 lightdev 0.0e+00 t 255s rss 559MB
+[done] 60 sweeps, 3.37 s/sweep, maxphase 3.54e-12, maxdev 3.85e-12, peak RSS 559 MB, total 255s
+watchdog peak RSS 568320 KB

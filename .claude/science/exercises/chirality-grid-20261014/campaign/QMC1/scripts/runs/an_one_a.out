@@ -1,0 +1,33 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/chirality_ex/campaign/QMC1/scripts/analysis.py:37: OptimizeWarning: Covariance of the parameters could not be estimated
+  p, _ = curve_fit(f, tau[sel], g[sel], p0=[max(g[sel].min(), 1e-6), 0.5], maxfev=20000)
+runs/L4_one_W0.05.npz: n=60 4.60s/sweep acc=0.90 W=0.05 L=[4, 4] one
+   S10(Q0) = 71.5579 +- 0.5042 (err at 80/40/20 bins: 0.4515, 0.5664, 0.5042); S10/N = 4.47237 +- 0.03151
+   S(Qpi) = 12.4274 +- 0.0898; WQ = -1.9761 +- 0.0350; WQ(HS channels) = -1.9761 +- 0.0350
+   per component SX0 [4.4139, 4.4622, 4.1807, 3.966, 4.1061, 3.8382, 4.1407, 4.3019, 4.1996, 4.1996]
+   per component SY0 [2.9525, 3.073, 3.1762, 2.9333, 2.822, 2.8815, 2.9433, 3.0386, 2.9643, 2.9643]
+   mirror gap (cosh fit tau in [1, beta-1]) = 0.0800 +- 0.0315; c-block 0.0002 +- 0.0602
+   E2 weighted cosh gap [0.4, beta-0.4] = 0.0872 +- 0.0098; E3 weight bound w_1 = 2cosh(beta/2) G(beta/2) = 3.7017 +- 0.0105; E3w (window [1, beta-1]) = 3.7051 +- 0.0086
+   G_mirror(tau) = [0.4994, 0.4954, 0.4936, 0.4927, 0.4914, 0.492, 0.4928, 0.4931, 0.4952, 0.4982, 0.5004]
+   G_light(tau)  = [0.499393, 0.495506, 0.493679, 0.492729, 0.491387, 0.491869, 0.492763, 0.492993, 0.495115, 0.498165, 0.500449]  per-config light dev 0.0e+00
+   gate(ii) max|phase| 4.6e-15; wrap-vs-fresh max 8.9e-15
+runs/L4_one_W0.1.npz: n=60 3.92s/sweep acc=0.77 W=0.1 L=[4, 4] one
+   S10(Q0) = 83.6807 +- 1.4690 (err at 80/40/20 bins: 1.2153, 1.4726, 1.4690); S10/N = 5.23005 +- 0.09181
+   S(Qpi) = 15.0257 +- 0.2190; WQ = -9.4076 +- 0.1928; WQ(HS channels) = -9.4076 +- 0.1928
+   per component SX0 [5.2631, 5.1858, 4.9205, 6.0409, 6.4068, 6.0795, 6.2266, 5.335, 6.1783, 6.1783]
+   per component SY0 [2.7189, 2.5449, 2.5168, 2.6255, 2.569, 2.5077, 2.6455, 2.5208, 2.6084, 2.6084]
+   mirror gap (cosh fit tau in [1, beta-1]) = 0.1569 +- 0.0311; c-block 0.1503 +- 0.0295
+   E2 weighted cosh gap [0.4, beta-0.4] = 0.1798 +- 0.0096; E3 weight bound w_1 = 2cosh(beta/2) G(beta/2) = 3.5120 +- 0.0221; E3w (window [1, beta-1]) = 3.5109 +- 0.0177
+   G_mirror(tau) = [0.4998, 0.4819, 0.4751, 0.4692, 0.4643, 0.4667, 0.4645, 0.4683, 0.4762, 0.4848, 0.4994]
+   G_light(tau)  = [0.500791, 0.48252, 0.474958, 0.469647, 0.46373, 0.465519, 0.463306, 0.467033, 0.474632, 0.483628, 0.49832]  per-config light dev 0.0e+00
+   gate(ii) max|phase| 1.3e-14; wrap-vs-fresh max 1.2e-14
+runs/L4_one_W0.25.npz: n=60 3.37s/sweep acc=0.41 W=0.25 L=[4, 4] one
+   S10(Q0) = 458.8675 +- 17.2909 (err at 80/40/20 bins: 21.3363, 23.3880, 17.2909); S10/N = 28.67922 +- 1.08068
+   S(Qpi) = 56.4112 +- 2.3707; WQ = -203.8192 +- 4.2171; WQ(HS channels) = -203.8192 +- 4.2171
+   per component SX0 [28.2339, 10.6696, 16.9486, 9.5412, 12.7377, 8.2081, 17.1298, 41.6825, 152.1783, 152.1783]
+   per component SY0 [0.8202, 0.7466, 0.8987, 0.9671, 1.0509, 0.7617, 0.8647, 0.9835, 1.1331, 1.1331]
+   mirror gap (cosh fit tau in [1, beta-1]) = 1.3670 +- 0.1456; c-block 1.6530 +- 0.1343
+   E2 weighted cosh gap [0.4, beta-0.4] = 1.5303 +- 0.0397; E3 weight bound w_1 = 2cosh(beta/2) G(beta/2) = 0.3289 +- 0.0352; E3w (window [1, beta-1]) = 0.4507 +- 0.0205
+   G_mirror(tau) = [0.4914, 0.2398, 0.1334, 0.078, 0.0579, 0.0437, 0.0482, 0.0717, 0.1441, 0.2593, 0.5094]
+   G_light(tau)  = [0.492125, 0.253971, 0.137132, 0.08861, 0.046638, 0.051662, 0.050843, 0.087354, 0.134348, 0.25518, 0.50974]  per-config light dev 0.0e+00
+   gate(ii) max|phase| 3.5e-12; wrap-vs-fresh max 3.8e-12
+watchdog peak RSS 59200 KB

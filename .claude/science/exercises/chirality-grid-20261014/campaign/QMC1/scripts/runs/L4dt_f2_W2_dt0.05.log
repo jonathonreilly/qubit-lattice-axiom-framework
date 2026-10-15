@@ -1,0 +1,19 @@
+[run] kind=spin10 dims=(4, 4) filt=f2 rho=0.3125 W=2.0 beta=4.0 dtau=0.05 Lt=80 ns=4 Nd=512 nch=64 eq_pts=[20]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.931 step 0.3750 maxphase 4.8e-14 maxdev 2.7e-13 t 8s rss 543MB
+[warm 10] acc 0.680 step 1.0000 maxphase 8.1e-13 maxdev 1.1e-12 t 81s rss 612MB
+[warm 19] acc 0.651 step 1.0000 maxphase 8.1e-13 maxdev 1.1e-12 t 178s rss 761MB
+[meas 0] acc 0.655 S10(Q0) 51.3266 WQ -81.7281 Gm(beta/2) -0.0134 maxphase 8.1e-13 maxdev 1.1e-12 lightdev 1.0e-14 t 184s rss 784MB
+[meas 10] acc 0.587 S10(Q0) 60.4371 WQ -87.5619 Gm(beta/2) 0.0133 maxphase 8.1e-13 maxdev 1.1e-12 lightdev 1.4e-14 t 240s rss 818MB
+[meas 20] acc 0.609 S10(Q0) 56.6791 WQ -95.0027 Gm(beta/2) 0.0044 maxphase 8.1e-13 maxdev 1.1e-12 lightdev 1.0e-14 t 338s rss 818MB
+[meas 30] acc 0.584 S10(Q0) 58.3062 WQ -92.1754 Gm(beta/2) 0.0467 maxphase 8.1e-13 maxdev 1.1e-12 lightdev 9.3e-15 t 394s rss 818MB
+[meas 40] acc 0.575 S10(Q0) 49.8371 WQ -81.5837 Gm(beta/2) 0.0270 maxphase 8.1e-13 maxdev 1.1e-12 lightdev 1.0e-14 t 450s rss 818MB
+[meas 50] acc 0.571 S10(Q0) 50.9900 WQ -92.2243 Gm(beta/2) 0.0198 maxphase 8.1e-13 maxdev 1.1e-12 lightdev 9.2e-15 t 512s rss 818MB
+[meas 59] acc 0.595 S10(Q0) 56.7123 WQ -87.8579 Gm(beta/2) 0.0107 maxphase 8.1e-13 maxdev 1.1e-12 lightdev 8.8e-15 t 568s rss 818MB
+[done] 60 sweeps, 6.49 s/sweep, maxphase 8.10e-13, maxdev 1.13e-12, peak RSS 818 MB, total 568s
+watchdog peak RSS 837280 KB

@@ -1,0 +1,19 @@
+[run] kind=spin10 dims=(4, 4) filt=f2 rho=0.3125 W=8.0 beta=4.0 dtau=0.05 Lt=80 ns=2 Nd=512 nch=64 eq_pts=[40]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.834 step 0.3750 maxphase 2.1e-12 maxdev 5.6e-12 t 11s rss 768MB
+[warm 10] acc 0.538 step 0.7324 maxphase 6.4e-12 maxdev 2.1e-11 t 92s rss 869MB
+[warm 19] acc 0.507 step 0.7324 maxphase 8.3e-12 maxdev 2.1e-11 t 163s rss 883MB
+[meas 0] acc 0.481 S10(Q0) 117.0462 WQ -799.5727 Gm(beta/2) -0.0157 maxphase 8.3e-12 maxdev 2.1e-11 lightdev 4.0e-14 t 171s rss 883MB
+[meas 10] acc 0.474 S10(Q0) 105.5876 WQ -854.3837 Gm(beta/2) 0.0836 maxphase 1.3e-11 maxdev 2.1e-11 lightdev 2.8e-14 t 251s rss 883MB
+[meas 20] acc 0.467 S10(Q0) 146.4048 WQ -1121.0413 Gm(beta/2) -0.0371 maxphase 1.3e-11 maxdev 2.1e-11 lightdev 3.8e-14 t 331s rss 883MB
+[meas 30] acc 0.471 S10(Q0) 67.0422 WQ -575.6652 Gm(beta/2) 0.0514 maxphase 1.3e-11 maxdev 2.1e-11 lightdev 2.5e-14 t 412s rss 883MB
+[meas 40] acc 0.486 S10(Q0) 94.7031 WQ -748.5027 Gm(beta/2) 0.0415 maxphase 1.3e-11 maxdev 2.1e-11 lightdev 3.7e-14 t 494s rss 883MB
+[meas 50] acc 0.488 S10(Q0) 68.0825 WQ -586.5649 Gm(beta/2) 0.1956 maxphase 1.5e-11 maxdev 2.1e-11 lightdev 2.3e-14 t 575s rss 883MB
+[meas 59] acc 0.448 S10(Q0) 104.5242 WQ -873.9436 Gm(beta/2) -0.0862 maxphase 1.5e-11 maxdev 2.1e-11 lightdev 3.6e-14 t 648s rss 883MB
+[done] 60 sweeps, 8.08 s/sweep, maxphase 1.50e-11, maxdev 2.11e-11, peak RSS 883 MB, total 648s
+watchdog peak RSS 903904 KB

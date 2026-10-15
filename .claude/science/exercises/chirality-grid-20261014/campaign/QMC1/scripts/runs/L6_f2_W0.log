@@ -1,0 +1,4 @@
+[run] kind=spin10 dims=(6, 6) filt=f2 rho=0.3125 W=0.0 beta=4.0 dtau=0.1 Lt=40 ns=4 Nd=1152 nch=64 eq_pts=[10]
+[meas 0] acc 0.000 S10(Q0) 10.6007 WQ 0.0000 Gm(beta/2) 0.5000 maxphase 0.0e+00 maxdev 5.8e-15 lightdev 3.7e-15 t 28s rss 876MB
+[done] 1 sweeps, 26.92 s/sweep, maxphase 0.00e+00, maxdev 5.80e-15, peak RSS 876 MB, total 28s
+watchdog peak RSS 895504 KB

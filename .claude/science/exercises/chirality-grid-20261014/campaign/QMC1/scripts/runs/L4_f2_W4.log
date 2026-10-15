@@ -1,0 +1,19 @@
+[run] kind=spin10 dims=(4, 4) filt=f2 rho=0.3125 W=4.0 beta=4.0 dtau=0.1 Lt=40 ns=2 Nd=512 nch=64 eq_pts=[20]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.825 step 0.3750 maxphase 5.2e-13 maxdev 2.2e-12 t 6s rss 461MB
+[warm 10] acc 0.458 step 0.9155 maxphase 1.8e-12 maxdev 5.1e-12 t 47s rss 654MB
+[warm 19] acc 0.430 step 0.9155 maxphase 3.3e-12 maxdev 8.5e-12 t 85s rss 656MB
+[meas 0] acc 0.427 S10(Q0) 97.6756 WQ -330.5339 Gm(beta/2) 0.0711 maxphase 3.3e-12 maxdev 8.5e-12 lightdev 1.9e-14 t 89s rss 656MB
+[meas 10] acc 0.414 S10(Q0) 62.2229 WQ -235.0028 Gm(beta/2) 0.0190 maxphase 3.3e-12 maxdev 8.5e-12 lightdev 1.8e-14 t 132s rss 656MB
+[meas 20] acc 0.350 S10(Q0) 61.6884 WQ -260.0110 Gm(beta/2) 0.0242 maxphase 3.4e-12 maxdev 8.5e-12 lightdev 1.9e-14 t 175s rss 656MB
+[meas 30] acc 0.373 S10(Q0) 93.5223 WQ -349.1041 Gm(beta/2) 0.0523 maxphase 3.4e-12 maxdev 8.5e-12 lightdev 2.6e-14 t 219s rss 656MB
+[meas 40] acc 0.372 S10(Q0) 71.0741 WQ -262.5704 Gm(beta/2) -0.0384 maxphase 3.8e-12 maxdev 8.5e-12 lightdev 1.7e-14 t 263s rss 656MB
+[meas 50] acc 0.347 S10(Q0) 84.1078 WQ -335.5378 Gm(beta/2) -0.0080 maxphase 3.8e-12 maxdev 8.5e-12 lightdev 2.3e-14 t 307s rss 660MB
+[meas 59] acc 0.358 S10(Q0) 50.8992 WQ -214.7733 Gm(beta/2) -0.0065 maxphase 3.8e-12 maxdev 8.5e-12 lightdev 1.8e-14 t 346s rss 660MB
+[done] 60 sweeps, 4.36 s/sweep, maxphase 3.82e-12, maxdev 8.50e-12, peak RSS 660 MB, total 346s
+watchdog peak RSS 675008 KB

@@ -1,0 +1,19 @@
+[run] kind=spin10 dims=(4, 4) filt=f2 rho=0.3125 W=16.0 beta=4.0 dtau=0.025 Lt=160 ns=4 Nd=512 nch=64 eq_pts=[40]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[warm 0] acc 0.821 step 0.3750 maxphase 4.7e-12 maxdev 3.2e-11 t 16s rss 842MB
+[warm 10] acc 0.537 step 0.7324 maxphase 2.3e-11 maxdev 4.1e-11 t 124s rss 924MB
+[warm 19] acc 0.486 step 0.7324 maxphase 2.3e-11 maxdev 6.0e-11 t 220s rss 924MB
+[meas 0] acc 0.480 S10(Q0) 73.3333 WQ -1322.3144 Gm(beta/2) 0.0702 maxphase 2.3e-11 maxdev 6.0e-11 lightdev 6.1e-14 t 231s rss 924MB
+[meas 10] acc 0.470 S10(Q0) 67.9796 WQ -1275.8665 Gm(beta/2) 0.0218 maxphase 2.3e-11 maxdev 6.0e-11 lightdev 4.7e-14 t 340s rss 924MB
+[meas 20] acc 0.478 S10(Q0) 83.0961 WQ -1482.4473 Gm(beta/2) 0.0004 maxphase 2.3e-11 maxdev 6.0e-11 lightdev 7.1e-14 t 446s rss 924MB
+[meas 30] acc 0.477 S10(Q0) 136.0372 WQ -1912.9701 Gm(beta/2) -0.0455 maxphase 2.3e-11 maxdev 6.0e-11 lightdev 5.9e-14 t 553s rss 924MB
+[meas 40] acc 0.446 S10(Q0) 75.8249 WQ -1345.5220 Gm(beta/2) -0.0170 maxphase 2.3e-11 maxdev 6.0e-11 lightdev 9.9e-14 t 662s rss 924MB
+[meas 50] acc 0.427 S10(Q0) 89.6326 WQ -1472.2783 Gm(beta/2) 0.0132 maxphase 4.2e-11 maxdev 6.0e-11 lightdev 7.8e-14 t 769s rss 924MB
+[meas 59] acc 0.442 S10(Q0) 110.1009 WQ -1940.0050 Gm(beta/2) 0.0146 maxphase 4.2e-11 maxdev 6.0e-11 lightdev 6.3e-14 t 867s rss 924MB
+[done] 60 sweeps, 10.78 s/sweep, maxphase 4.16e-11, maxdev 5.97e-11, peak RSS 924 MB, total 867s
+watchdog peak RSS 938864 KB

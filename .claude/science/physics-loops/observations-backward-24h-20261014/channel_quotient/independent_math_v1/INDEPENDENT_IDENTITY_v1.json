@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-15T06:45:06.566723+00:00",
+  "classification": "Independent mathematical precheck and exact controls before author-source exposure",
+  "reviewer": "/root/force_energy_bridge_check",
+  "report": "INDEPENDENT_REVIEW_v1.md",
+  "report_sha256": "ffdd9e7de412a67b8d13df50cb7508e7fdf02575aa237f5600358f8a379fe33c",
+  "source_contract_sha256": "979c4d60a83329ed4781279ac36a4d1e9d24989bbcb2102f03eada3b201030ae",
+  "files": {
+    "CONTROL_SOURCE_FREEZE_v1.json": {
+      "sha256": "dc5fa601070c07b0da351628222b114c353d9ea01c202d1c978886caecae207a",
+      "bytes": 431
+    },
+    "INDEPENDENT_RESULTS_v1.json": {
+      "sha256": "ab81224aad175c6cacddbb86fb2c67edb08370196786c380db916f8b6f2cad64",
+      "bytes": 12368
+    },
+    "INDEPENDENT_REVIEW_v1.md": {
+      "sha256": "ffdd9e7de412a67b8d13df50cb7508e7fdf02575aa237f5600358f8a379fe33c",
+      "bytes": 12058
+    },
+    "INDEPENDENT_RUN_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "INDEPENDENT_RUN_v1.stdout": {
+      "sha256": "51bdfeba7d51e06b3b549abcc7a6e4a79e6363f9992c9849a3aab28da5c15b3d",
+      "bytes": 43
+    },
+    "PRECHECK_FREEZE_v1.json": {
+      "sha256": "4fec7e9cba861ef30d5815beaa5924162037ca6e08448a617e8d7e5b273037dd",
+      "bytes": 548
+    },
+    "PRECHECK_v1.md": {
+      "sha256": "fad46dbd5407d5bc3b9f77d002cae9c33f2b8a1753dad457c25a32fd01c82760",
+      "bytes": 13400
+    },
+    "TARGET_CONTRACT_SOURCE_v1.json": {
+      "sha256": "979c4d60a83329ed4781279ac36a4d1e9d24989bbcb2102f03eada3b201030ae",
+      "bytes": 2814
+    },
+    "independent_channel_controls_v1.py": {
+      "sha256": "d1c79707eca7140f6ebc53a41f78920358f420411d4f5c2a218766f2772d917f",
+      "bytes": 11060
+    }
+  },
+  "counts": {
+    "total": 126,
+    "passed": 126,
+    "failed": 0
+  },
+  "executions": [
+    {
+      "command": "/usr/local/bin/python3 independent_channel_controls_v1.py",
+      "exit_code": 0,
+      "stdout": "INDEPENDENT_RUN_v1.stdout",
+      "stderr": "INDEPENDENT_RUN_v1.stderr"
+    }
+  ],
+  "author_sources_accessed": [],
+  "raw_data_accessed": false,
+  "network_used": false,
+  "formal_audit": false,
+  "scope_limits": [
+    "supplied transfer law and k ratios",
+    "no physical error budget",
+    "no physical residual or empirical claim",
+    "no general tracking impossibility",
+    "no full integer-basis claim for sample nullspace vectors"
+  ]
+}

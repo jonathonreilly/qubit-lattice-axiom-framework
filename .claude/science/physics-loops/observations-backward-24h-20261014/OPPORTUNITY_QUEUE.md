@@ -47,3 +47,11 @@ After M7 publication, prioritize an observation-supported reference/error or sca
 3. Relate an actually calibrated quotient residual to the earlier same-environment scalar energy/scale map. Do not substitute a minimum-energy state for the missing physical budget.
 
 These remain scientific opportunities, not accomplished derivations. No new raw product is authorized by this queue alone; preserve the pre-access protocol requirement.
+
+## Re-ranked after the receiver character checks
+
+1. Resolve the physical coherent-carrier estimator and reference map, including complex-frequency sign and the documented 0 versus 0.5 ms NCO phase argument. Use implementation provenance or a declared calibration comparison; preserve both conventions meanwhile. Derive the estimator's channel/time response before replacing pointwise characters with averaged voltages.
+2. Package one joint-character and receiver-representation milestone after the independent raw comparison and source/evidence checks. PR9592 remains frozen; this working block is unpublished.
+3. Use a physically calibrated residual supplier, or pivot to action/potential/scale discrimination from a different domain if the receiver route remains unidentifiable. Do not substitute a chosen noise budget or minimum-energy field state.
+
+The entire 13:35 X/Ka RSR pair is development-exposed. The 16:56/16:57 pair and other registered raw products remain unopened. No independent empirical test is claimed.

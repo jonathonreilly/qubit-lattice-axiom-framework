@@ -80,3 +80,11 @@ M7 adds no state selector. Supplied action, stationary de Sitter vacuum, B>12,H,
 ## Integer-history quotient: changed obligation
 
 Arbitrary integer histories are removed only from within-segment phase modulo one cycle. Supplied segmentation, received/reference phase identification, fractional-error set and scalar response/energy conversion remain conditional. The full unwrapped count still needs a history map. No integer or energy-minimizing history is adopted as physical. The data are the already exposed four pinned day169 archive files including day170 rows; no fit, later raw sample or independent empirical test enters. ATDF unsigned item87 and qualitative flags do not supply a signed correction or quantitative error bound. Later TRK-2-34 J-1 semantics remain a separate format. Approved framework primitive roles are unchanged.
+
+## Joint integer/plasma calibration — working update
+
+The three supplied coherent turnaround ratios determine the allowed integer character and temporal receiver cancellation. Exact relative-frequency commensurability, matched propagation/time maps and unrestricted per-endpoint plasma remain explicit model inputs. A common hardware reference does not by itself prove the operational cross-uplink ratio. The 19/-5 X/Ka contrast removes the shared uplink and common nondispersive phase, including the target common gravity term; it retains downlink and electronics effects.
+
+The two preregistered 13:35 RSR products are now entirely exposed development data. The fixed 600-second window contains 600,000 paired raw voltages, with all flags retained. Ideal full-cell ADC geometry concerns voltage representation, not physical carrier noise. It identifies the need for a restricted waveform or carrier estimator before applying the large joint character. A noiseless averaging counterexample shows that independent voltage averaging is not automatically that bridge.
+
+The physical carrier/reference-phase estimator, complex sign, NCO timing implementation, analog LO history and physical error bounds remain open. No scalar action, potential, state, scale or environment assumption has been retired by this data block.

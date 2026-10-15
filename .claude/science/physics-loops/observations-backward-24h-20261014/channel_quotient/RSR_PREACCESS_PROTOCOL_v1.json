@@ -1,0 +1,53 @@
+{
+  "id": "M9-RSR-preaccess-v1",
+  "frozen_at": "2026-10-15T06:49:04.059908+00:00",
+  "author": "/root personally",
+  "previous_exposure": "Only labels/directory/SIS metadata for these RSR products. ATDF/ODF day169 already exposed development. No RSR raw sample opened by this campaign before this protocol.",
+  "products": [
+    {
+      "file": "c32easc2002_169_1335x54x25d.1a1",
+      "role": "development only"
+    },
+    {
+      "file": "c32easc2002_169_1335x54k25d.1b1",
+      "role": "development only"
+    }
+  ],
+  "base_url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/",
+  "selection_basis": "Existing metadata identifies simultaneous X-uplink X/Ka downlink pair beginning13:35UTC. Selected before raw access, not on observed phase behavior.",
+  "exposure_policy": "Conservatively declare both entire products exposed development on download even if only first600seconds samples analyzed; never relabel holdout.",
+  "analysis_window": {
+    "year": 2002,
+    "doy": 169,
+    "start_utc_second_inclusive": 48900,
+    "stop_utc_second_exclusive": 49500
+  },
+  "frozen_character": [
+    19,
+    -5
+  ],
+  "frozen_physical_target": "Shared-uplink-cancelled downlink/electronics nuisance diagnostic; common nondispersive gravity also cancels.",
+  "checks": [
+    "All-record structure, timestamps, header values and flags; all deviations retained.",
+    "Windowed signed I/Q decode with documented2k+1 correction; sample format/rate read from header, not assumed.",
+    "Match only exact station/time/sample-rate/resolution grids; retain/report unmatched records separately, no result-driven row trimming.",
+    "Compute raw baseband complex character and lag1sample/lag1second differences; no phase unwrapping. This is explicitly baseband until reference phase mapping is derived.",
+    "Under explicitly conditional unsaturated ideal midrise quantizer, compute corner/disk phase-representation enclosure and error amplification. Extreme signed codes flagged as potentially unbounded/clipped, not silently bounded.",
+    "Quantiles/counts of amplitudes, ADC-cell angular ranges and character widths; every valid-window pair retained independent of quality flag. No sigma clipping, fitting or gravity parameter estimate.",
+    "NCO/LO header reconstruction only with documented sign/time mapping; if ambiguous, record failure, do not select convention to improve coherence."
+  ],
+  "errors_not_supplied": [
+    "thermal/carrier phase",
+    "analog oscillator/receiver calibration",
+    "ray/timing mapping",
+    "plasma path relation",
+    "quantizer transfer law and true clipping history"
+  ],
+  "independent_empirical_test_count": 0,
+  "reserved_unopened": [
+    "c32easc2002_169_1657x25x25d.1a1",
+    "c32easc2002_169_1656x25k25d.1b1",
+    "all other raw RSR products not explicitly above"
+  ],
+  "no_inference": "ADC representation bounds and dependent receiver format checks are not scalar observations or physical noise limits."
+}

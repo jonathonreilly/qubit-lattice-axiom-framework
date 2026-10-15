@@ -1,0 +1,20 @@
+{
+  "schema": "immutable-focused-review-identity-v1",
+  "created_utc": "2026-10-15T06:57:48.170722+00:00",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_v1.md",
+    "bytes": 7829,
+    "sha256": "1ba68da8ecf67a6790ad640ae320bd0e9a7940969166d54f7f9c3b55777f2865"
+  },
+  "evidence": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_EVIDENCE_v1.json",
+    "bytes": 4770,
+    "sha256": "bd23d4e92c1ee445c19178f4a6c445843023e947cce61b6b35e1045c34d6bccd"
+  },
+  "no_formal_audit_verdict": true,
+  "prior_supplier_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/INSTRUMENT_REVIEW_IDENTITY_v1.json",
+    "bytes": 18456,
+    "sha256": "7415d095ffcc277c5bba4afd98d8925c6ae62e38b1f53839aa1a121ce012c85f"
+  }
+}

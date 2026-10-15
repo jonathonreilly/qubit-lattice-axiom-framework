@@ -1,0 +1,22 @@
+{
+  "node": {
+    "claim_id": "scalar_integer_channel_calibration_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/cassini_nco_continuity.py",
+      "scripts/cassini_rsr_development.py",
+      "scripts/scalar_channel_quotient_controls.py"
+    ],
+    "note_hash": "5bd3667c7e34646e616c82498401c8c9169604ce471aeefefd3f1b1da65f6616",
+    "path": "docs/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/scalar_channel_calibration_check.py",
+    "title": "Integer channel calibration and receiver phase representation"
+  },
+  "node_added": "scalar_integer_channel_calibration_bounded_theorem_note_2026-10-15",
+  "edge_change": 0,
+  "existing_node_entries_unchanged": true,
+  "manifest_sha256": "a2196390bbe34816d8369b5a0437b62d9768d195816af865e6c21bc984b5892e"
+}

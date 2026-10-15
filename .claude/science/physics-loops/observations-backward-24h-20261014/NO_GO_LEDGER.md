@@ -27,3 +27,9 @@ and observational scope is developed.
 
 
 Temporal/moving publication scope: positive finite-window bounds plus finite specific rectangular-window and omitted-term witnesses. No theory-wide impossibility, family exhaustion or negative gate PASS is proposed. HISTORY_MUTATIONS_v1.json preserves28rejections and1survivor; the shared-mode control repair makes all29current-source cases assertion-rejected, using18unchanged cases and11targeted force reruns. This is a verification repair, not a changed physical theorem.
+
+## Receiver calibration working failures
+
+The joint plasma/integer quotient depends on exact relative frequency; real-weight normalization does not carry the unit period for free. Under an explicit full ideal 16-bit ADC cell premise, the large pointwise character covers its output circle. This is a conditional measurement-set statement, not impossibility of carrier fitting or radio tracking. The exact noiseless two-sample fixture gives pointwise character +1 and character of separately averaged channels -1. Restricted-waveform and calibrated-estimator routes remain open.
+
+Adjacent NCO polynomial continuity did not resolve the original specification versus label discrepancy: both arguments remain internally nearly continuous. Preserve this failed discriminator in channel_quotient/NCO_CONTINUITY_ATTEMPT_v1.md. Python TLS trust-store failure and a bounded curl timeout were recovered using certificate-verifying system curl and range continuation. No scientific failure was inferred from transport failures. No broad no-go or negative-packet PASS is asserted.

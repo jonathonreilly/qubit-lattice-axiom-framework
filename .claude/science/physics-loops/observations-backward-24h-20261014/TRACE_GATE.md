@@ -67,3 +67,15 @@ artifact_role: theorem
 next_trace_action: Derive an applicable integer contrast across calibrated radio channels, or the same-instrument fractional-error/reset map.
 
 For the deliberately reduced phase observable, the quotient eliminates selection of unrestricted integer histories and yields a conditional energy bound. It does not recover integer phase, certify physical noise, identify an observed scalar residual or choose a field state. Exact source, inputs and checks are in calibration_error/REVIEW_RECORD_v1.md and the canonical note.
+
+## Integer-channel calibration (2026-10-15)
+
+trace_class: upstream_support
+target_claim_id: scalar_channel_calibration
+target_blocker_text: Derive or eliminate the measured-gravity assumptions rather than supplying them
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Derive the physical carrier/reference estimator and admissible error class before interpreting a scalar residual.
+
+The character lattice is derived from the supplied phase/plasma model; it exposes the actual frequency and receiver requirements rather than choosing them. Independent raw decoding verifies representation consistency only. The conditional ADC theorem and averaging witness make a coherent estimator a concrete next supplier. They do not rule out that route or retire action, initial field state, scale or environmental assumptions.

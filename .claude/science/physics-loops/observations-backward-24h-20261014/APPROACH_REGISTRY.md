@@ -51,3 +51,9 @@ The root author derived fixed-proper-time endpoint variations, augmented orbital
 ### M7 2026-10-15T05:11:37.925436+00:00
 
 M7 mass/curvature/count route: explicit operator-distance bounds replace an unsupported massless substitution. A separated-clock interference example rejects universal mass ordering, while a four-endpoint curved proper-count contrast derives the needed weights. Route is conditional upstream support; no broad no-go closure.
+
+## Joint phase/plasma lattice and receiver representation
+
+Root personally derived the simultaneous quotient using exact integer nullspaces and torus Fourier characters. Varying-carrier temporal compatibility supplies constructive rational multi-epoch cases. A real plasma projection cannot simply be reused with a unit phase period.
+
+The receiver route was checked using stored I/Q and conditional ADC preimages. The small 19/-5 character addresses a narrower downlink nuisance target. A deterministic two-sample example shows noncommutation with voltage averaging. NCO polynomial continuity failed as a timing discriminator: both documented phase arguments give tiny internal discontinuities. No physical convention was selected from that comparison.

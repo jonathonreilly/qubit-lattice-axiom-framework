@@ -1,0 +1,102 @@
+{
+  "role": "internal metadata continuity of already exposed development records",
+  "products": {
+    "X": {
+      "header_sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2",
+      "tests": [
+        {
+          "shift_seconds": "0",
+          "count": 8940,
+          "exact_residual_identity_sha256": "9b3ffb17ecd701e4bbd6b65ff3eb7898253e67e1bac44a2eae0cb326dfb4a24d",
+          "raw_min_max": [
+            -9.701276819193579e-12,
+            9.701276819193579e-12
+          ],
+          "absolute_quantiles_0_50_99_100": [
+            0.0,
+            9.701276818346546e-12,
+            9.701276819193579e-12,
+            9.701276819193579e-12
+          ],
+          "fractional_abs_max": 9.701276819193579e-12,
+          "first_three_exact": [
+            "0",
+            "-5726623061/590295810358705651712",
+            "5726623061/590295810358705651712"
+          ]
+        },
+        {
+          "shift_seconds": "1/2000",
+          "count": 8940,
+          "exact_residual_identity_sha256": "56cd2a6f140f7bff1b11a9955d8a417ccf7649678c996925d61f47ed4fbf681e",
+          "raw_min_max": [
+            -1.2085462609361324e-11,
+            1.1847044031108065e-11
+          ],
+          "absolute_quantiles_0_50_99_100": [
+            0.0,
+            9.224439660142574e-12,
+            1.1250918109646154e-11,
+            1.2085462609361324e-11
+          ],
+          "fractional_abs_max": 1.2085462609361324e-11,
+          "first_three_exact": [
+            "1125149306904728917/4722366482869645213696000000000",
+            "-21498929710460245229/2361183241434822606848000000000",
+            "24032392150840623/2361183241434822606848000000"
+          ]
+        }
+      ]
+    },
+    "KA": {
+      "header_sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10",
+      "tests": [
+        {
+          "shift_seconds": "0",
+          "count": 8940,
+          "exact_residual_identity_sha256": "2bd89fc59dee693b662ede70e3903a64f1e6c1f6967ca9935558689e0200d1df",
+          "raw_min_max": [
+            -2.425319205857186e-12,
+            2.425319205857186e-12
+          ],
+          "absolute_quantiles_0_50_99_100": [
+            0.0,
+            1.212659601234527e-12,
+            2.425319202469054e-12,
+            2.425319205857186e-12
+          ],
+          "fractional_abs_max": 2.425319205857186e-12,
+          "first_three_exact": [
+            "-357913941/147573952589676412928",
+            "-357913941/147573952589676412928",
+            "-357913941/147573952589676412928"
+          ]
+        },
+        {
+          "shift_seconds": "1/2000",
+          "count": 8940,
+          "exact_residual_identity_sha256": "82d48dded5ed6e6802f00cfc1d4e20006d31860689200c7e2dff8afcb532cf35",
+          "raw_min_max": [
+            -1.1486178882641445e-11,
+            1.1485543103157057e-11
+          ],
+          "absolute_quantiles_0_50_99_100": [
+            0.0,
+            2.165698134761478e-12,
+            8.147365100903165e-12,
+            1.1486178882641445e-11
+          ],
+          "fractional_abs_max": 1.1486178882641445e-11,
+          "first_three_exact": [
+            "-214070973844404211/73786976294838206464000000000",
+            "-777020927265716211/73786976294838206464000000000",
+            "-530941428876425203/73786976294838206464000000000"
+          ]
+        }
+      ]
+    }
+  },
+  "physical_phase_identification": false,
+  "no_fitted_parameters": true,
+  "independent_empirical_tests": 0
+}

@@ -1,0 +1,210 @@
+{
+  "created_utc": "2026-10-15T07:46:27.927100+00:00",
+  "scope": "Narrow M9 final source/product/cache identity confirmation only",
+  "disposition": "All assigned identities agree; no unresolved mismatch",
+  "original_source_review": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_v1.md",
+    "bytes": 10900,
+    "sha256": "f5ce9dae93e6a8bbf75bcce2c39f135908047aa8ae3ebb555bfe2a2014e59a64"
+  },
+  "original_source_review_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_IDENTITY_v1.json",
+    "bytes": 11674,
+    "sha256": "5e548931a5fb5c24b44b8dff6475d1ef06db87e6d62176a5a12689ceeb250236"
+  },
+  "cache": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_channel_calibration_check.txt",
+    "bytes": 5105,
+    "sha256": "42ca5d2e38c70fdf5b5ddcf031c87687bd02a8b05314c556f5d181f1338e8828"
+  },
+  "summary": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/summary.json",
+    "bytes": 4182,
+    "sha256": "aa4b49aa7679a2f83a12a935a65e5547a529f4baf1a108c7ae972222033a92f6"
+  },
+  "freeze": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_SOURCE_FREEZE_v1.json",
+    "bytes": 3756,
+    "sha256": "fc0650b06d1c795e5051704a4e91443f9154c0d3ee752e222b924f724998b5e4"
+  },
+  "execution_receipt": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M9_CANONICAL_EXECUTION_v2.json",
+    "bytes": 5794,
+    "sha256": "0c9ced7baf9a9773e2d3ed2aafbf567b9fb2a8e29944ec1ee89ce50152f260cb"
+  },
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_channel_calibration_check.py",
+      "bytes": 6183,
+      "sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 27238,
+      "sha256": "5bd3667c7e34646e616c82498401c8c9169604ce471aeefefd3f1b1da65f6616"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_channel_quotient_controls.py",
+      "bytes": 4862,
+      "sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_rsr_development.py",
+      "bytes": 11336,
+      "sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_nco_continuity.py",
+      "bytes": 1860,
+      "sha256": "f172df18e600a0a5e939c1dc9f5ad6b493404f4105f7fbe73879c27bf37c307f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_rsr_development_inputs.json",
+      "bytes": 1527,
+      "sha256": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_PREACCESS_PROTOCOL_v1.json",
+      "bytes": 2985,
+      "sha256": "8f85b14f328d7c0e707ef7fdb4b5bc24473aae7afea63059d410e0bbcd3ac852"
+    }
+  ],
+  "products": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/MATHEMATICAL_RESULTS.json",
+      "bytes": 1432,
+      "sha256": "c8cbc115f8c4324b76326a4b75c37842cf1f3e4daa66247c58c55d3d2dd68d6e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/RSR_DEVELOPMENT_RESULTS_v1.json",
+      "bytes": 5474,
+      "sha256": "7749a64ea8005e8c8f555707f4288b8112d62cb5a5a50a61b58aab9343d51332"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/RSR_WINDOW_DIGESTS_v1.json",
+      "bytes": 198003,
+      "sha256": "404103e8c376de30b7a38a3e58e4ccebd19c6c755c095ce4583cec909e332a9b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/RSR_NCO_DIAGNOSTIC_v1.json",
+      "bytes": 581688,
+      "sha256": "0ce5ac084b99b665891a6ffc19448fe43b2d12b1868e9844c37996b1d471ccee"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3467,
+      "sha256": "5e479a3917e25f9ccf079549b57ad4fe6a5c4116febfcba0e740fddd666006f3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/X_HEADERS_v1.jsonl.gz",
+      "bytes": 1005678,
+      "sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/KA_HEADERS_v1.jsonl.gz",
+      "bytes": 984521,
+      "sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/RSR_CHARACTER_v1.npz",
+      "bytes": 19616792,
+      "sha256": "2b24931f3e4c5441d3f558b0cc707a00afcf512c00cd683e7561ec0459dc87d1"
+    }
+  ],
+  "fingerprint": "22571b79cc5e7aed236071d8e3607be9619eaa4f46fd57d21b7a74c4949e97b2",
+  "source_identity_fresh": true,
+  "cached_stdout_equals_summary": true,
+  "stderr_empty": true,
+  "exit_code": 0,
+  "elapsed_seconds": 2.974271059036255,
+  "timeout_seconds": 180,
+  "counts": {
+    "math": 38,
+    "receiver": 10,
+    "development": 11,
+    "total": 59
+  },
+  "external_manifest_equals_prior_and_current": true,
+  "summary_delta_from_preliminary": [
+    {
+      "path": "/receiver_fixture_controls",
+      "old": 7,
+      "new": 10
+    },
+    {
+      "path": "/checks_passed",
+      "old": 56,
+      "new": 59
+    },
+    {
+      "path": "/source_sha256/docs/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "old": "9f84d0166d719ef1c6c358108dd757520514769e092d1dc64fd5ce25a422eff7",
+      "new": "5bd3667c7e34646e616c82498401c8c9169604ce471aeefefd3f1b1da65f6616"
+    },
+    {
+      "path": "/source_sha256/scripts/scalar_channel_quotient_controls.py",
+      "old": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "new": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696"
+    },
+    {
+      "path": "/source_sha256/scripts/cassini_rsr_development.py",
+      "old": "e5fef4c56f4b0756dfe8cb8c7fae5834547c6c98f91d5b2bb4e97f3842489a5e",
+      "new": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00"
+    },
+    {
+      "path": "/source_sha256/scripts/cassini_nco_continuity.py",
+      "old": "e4bd231d7d47ee097cee84201f7c30a2319e9e13c9f5373a66758c155a54c3de",
+      "new": "f172df18e600a0a5e939c1dc9f5ad6b493404f4105f7fbe73879c27bf37c307f"
+    },
+    {
+      "path": "/product_sha256/RSR_DEVELOPMENT_RESULTS_v1.json",
+      "old": "2d9101c688e30c41de40593363acf629c0b18e199db58e95041410553044d979",
+      "new": "7749a64ea8005e8c8f555707f4288b8112d62cb5a5a50a61b58aab9343d51332"
+    }
+  ],
+  "receiver_delta_from_original_author_v2": [
+    {
+      "path": "/products/0/file",
+      "old": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/rsr_development/c32easc2002_169_1335x54x25d.1a1",
+      "new": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_rsr_inputs/c32easc2002_169_1335x54x25d.1a1"
+    },
+    {
+      "path": "/products/0/headers_file",
+      "old": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/rsr_development_outputs_v2/X_HEADERS_v1.jsonl.gz",
+      "new": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/X_HEADERS_v1.jsonl.gz"
+    },
+    {
+      "path": "/products/1/file",
+      "old": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/rsr_development/c32easc2002_169_1335x54k25d.1b1",
+      "new": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_rsr_inputs/c32easc2002_169_1335x54k25d.1b1"
+    },
+    {
+      "path": "/products/1/headers_file",
+      "old": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/rsr_development_outputs_v2/KA_HEADERS_v1.jsonl.gz",
+      "new": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_channel_calibration/KA_HEADERS_v1.jsonl.gz"
+    },
+    {
+      "path": "/decoder_controls",
+      "old": 7,
+      "new": 10
+    }
+  ],
+  "preliminary_receiver_hash_reproduced_by_only_fixture_count_change": true,
+  "unchanged_preliminary_products": [
+    "MATHEMATICAL_RESULTS.json",
+    "RSR_WINDOW_DIGESTS_v1.json",
+    "RSR_NCO_DIAGNOSTIC_v1.json",
+    "NCO_CONTINUITY_RESULTS_v1.json",
+    "X_HEADERS_v1.jsonl.gz",
+    "KA_HEADERS_v1.jsonl.gz",
+    "RSR_CHARACTER_v1.npz"
+  ],
+  "no_raw_files_reopened": true,
+  "no_numeric_aggregates_rerun": true,
+  "no_formal_audit": true,
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+    "bytes": 3539,
+    "sha256": "1f14b5700dcb62934a9f59f63b4bd31a83a51d85d33cb8100420276a3ac48e1d"
+  }
+}

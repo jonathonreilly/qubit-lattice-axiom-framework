@@ -1,0 +1,126 @@
+{
+  "at": "2026-10-15T07:39:39.807161+00:00",
+  "scope": "No mutation aggregate rerun. All 15 actual prior assertion failures apply to unchanged scientific source; metadata-only timeout insertion is explicitly bound.",
+  "cases": [
+    {
+      "case": "turnaround_numerator",
+      "current_source_sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "tested_source_sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "1c84d0228901c37bc36409517f5fc62250be208fd84db8c187c66c9aac6aaeef",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "primitive_denominator",
+      "current_source_sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "tested_source_sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "a476ac68f69e0fe4a55a94d96355be2356ab31a4a7c357ac5096fb42d6d5c1ed",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "temporal_orientation",
+      "current_source_sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "tested_source_sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "1b3e4764a43e7fa7871529972cab62a1787a70f8e4e66836056a92bf0d6dc803",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "common_signal_ratio",
+      "current_source_sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "tested_source_sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "74f17f0431f0962966ec8dedb8ad8895bbb00ce3347c6b6318fecf8de25d8e7b",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "error_box_absolute_value",
+      "current_source_sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "tested_source_sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "e540bbd89e8a476bc3f97d29c057ccbdc6333230d2c90fdf44c49c1cc6dfd57a",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "small_channel_sign",
+      "current_source_sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "tested_source_sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "68e98ad21ddcb610b8f5fe5b4e185797e4d4eb9b33f729bb2c29bbad55ceb3b3",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "packed_quadrature_half",
+      "current_source_sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+      "tested_source_sha256": "800ee116ffe1c9ff3a2441bde1713030a2a4f1c4d87ba836a96f57f5a6c7b3c1",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "4539461651aa1249b588322df5e0d66e07f18cb93575e89382ec934006514fd2",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "sample_time_order",
+      "current_source_sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+      "tested_source_sha256": "800ee116ffe1c9ff3a2441bde1713030a2a4f1c4d87ba836a96f57f5a6c7b3c1",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "833b5146ebe847ff23f98c3f3f2502a43cfce981ccd1e35ec51d0f64a602bd80",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "truncation_center",
+      "current_source_sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+      "tested_source_sha256": "800ee116ffe1c9ff3a2441bde1713030a2a4f1c4d87ba836a96f57f5a6c7b3c1",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "b519ee982bf2aae886af5360d8875f7c8444128094bf422577a51c065a878f41",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "relative_angle_orientation",
+      "current_source_sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+      "tested_source_sha256": "800ee116ffe1c9ff3a2441bde1713030a2a4f1c4d87ba836a96f57f5a6c7b3c1",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "3f4eb47f91c3743d651c3b642befd7ef248bf6344880556194b17b6b702b185c",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "character_exponent",
+      "current_source_sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+      "tested_source_sha256": "800ee116ffe1c9ff3a2441bde1713030a2a4f1c4d87ba836a96f57f5a6c7b3c1",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "0637fb229abc2301906e084b038855c4b300c04e995236af877d16b116e6a35f",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "negative_interval_endpoint",
+      "current_source_sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+      "tested_source_sha256": "800ee116ffe1c9ff3a2441bde1713030a2a4f1c4d87ba836a96f57f5a6c7b3c1",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "9c0d2d53005d2fbb68e35e64b3343d5b7e73753d3219af10561e35bb66cc229d",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "NCO_accumulation",
+      "current_source_sha256": "f172df18e600a0a5e939c1dc9f5ad6b493404f4105f7fbe73879c27bf37c307f",
+      "tested_source_sha256": "e4bd231d7d47ee097cee84201f7c30a2319e9e13c9f5373a66758c155a54c3de",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "c9cda45e0f0068dd247dc190c5ab968469d2056cbdb3b86fb5886d5ca9de57d4",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "NCO_phase_argument",
+      "current_source_sha256": "f172df18e600a0a5e939c1dc9f5ad6b493404f4105f7fbe73879c27bf37c307f",
+      "tested_source_sha256": "e4bd231d7d47ee097cee84201f7c30a2319e9e13c9f5373a66758c155a54c3de",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "6bdd1ae6789febec8f91bd271c538755ae8181deaa806ec6cd9935ea34c95cd6",
+      "current_scientific_mutation_equivalent": true
+    },
+    {
+      "case": "NCO_polynomial_degree",
+      "current_source_sha256": "f172df18e600a0a5e939c1dc9f5ad6b493404f4105f7fbe73879c27bf37c307f",
+      "tested_source_sha256": "e4bd231d7d47ee097cee84201f7c30a2319e9e13c9f5373a66758c155a54c3de",
+      "only_difference": "AUDIT_TIMEOUT_SEC = 180 metadata assignment; full remaining bytes identical",
+      "tested_mutation_sha256": "210d4248278879ee4bd1145dc8cec2991a65f0a301c625a3672ef24baeb70530",
+      "current_scientific_mutation_equivalent": true
+    }
+  ]
+}

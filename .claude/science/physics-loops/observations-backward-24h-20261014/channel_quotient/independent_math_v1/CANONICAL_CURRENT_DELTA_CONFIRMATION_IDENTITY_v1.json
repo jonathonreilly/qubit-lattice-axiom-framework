@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-15T07:38:34.116551+00:00",
+  "classification": "Narrow note wording, helper timeout and unchanged primary identity confirmation",
+  "report_sha256": "04f7482621b2972d72ccdf2a578d37d3ca3875deac7ce3ed7c9de724beadecfd",
+  "source_delta": {
+    "docs/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "prior_sha256": "9f84d0166d719ef1c6c358108dd757520514769e092d1dc64fd5ce25a422eff7",
+      "current_sha256": "5bd3667c7e34646e616c82498401c8c9169604ce471aeefefd3f1b1da65f6616",
+      "bytes": 27238,
+      "snapshot": "CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "diff": "CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff"
+    },
+    "scripts/scalar_channel_quotient_controls.py": {
+      "prior_sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "current_sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "bytes": 4862,
+      "snapshot": "CURRENT_DELTA_v1_scalar_channel_quotient_controls.py",
+      "diff": "CURRENT_DELTA_v1_scalar_channel_quotient_controls.py.diff"
+    },
+    "scripts/scalar_channel_calibration_check.py": {
+      "prior_sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535",
+      "current_sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535",
+      "bytes": 6183,
+      "snapshot": "CURRENT_DELTA_v1_scalar_channel_calibration_check.py",
+      "diff": "CURRENT_DELTA_v1_scalar_channel_calibration_check.py.diff"
+    }
+  },
+  "files": {
+    "CANONICAL_CURRENT_DELTA_CONFIRMATION_v1.md": {
+      "sha256": "04f7482621b2972d72ccdf2a578d37d3ca3875deac7ce3ed7c9de724beadecfd",
+      "bytes": 2097
+    },
+    "CURRENT_DELTA_EXPOSURE_v1.json": {
+      "sha256": "9aafa6c91baf8f84bf536e9b6cfd7fcc8bc8903f499462c586b0548c79ca3df5",
+      "bytes": 1497
+    },
+    "CANONICAL_MATH_REVIEW_v1.md": {
+      "sha256": "d33dc165fdf99b9128e4cf1e5f4c7180c64bdb213806a74102786235a0ec9395",
+      "bytes": 13926
+    },
+    "CANONICAL_MATH_REVIEW_IDENTITY_v1.json": {
+      "sha256": "5ee2bdef5b577927eb8b9208c62fcf04a666e4d6e94ac203ee2e9b649cc54eb2",
+      "bytes": 4044
+    },
+    "CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "5bd3667c7e34646e616c82498401c8c9169604ce471aeefefd3f1b1da65f6616",
+      "bytes": 27238
+    },
+    "CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff": {
+      "sha256": "82ad31865b87c9fc7d354e1569a482be1121a7183981c633a66f2db14b0779b0",
+      "bytes": 962
+    },
+    "CURRENT_DELTA_v1_scalar_channel_quotient_controls.py": {
+      "sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696",
+      "bytes": 4862
+    },
+    "CURRENT_DELTA_v1_scalar_channel_quotient_controls.py.diff": {
+      "sha256": "3ce06b89177d86e3ef123a1bfe1ac11e7927713ec02d70abe0b0f0d19aef6a85",
+      "bytes": 294
+    },
+    "CURRENT_DELTA_v1_scalar_channel_calibration_check.py": {
+      "sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535",
+      "bytes": 6183
+    },
+    "CURRENT_DELTA_v1_scalar_channel_calibration_check.py.diff": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "static_checks": {
+    "note_only_requested_paragraph": true,
+    "helper_ast_equal_without_timeout": true,
+    "primary_byte_equal": true
+  },
+  "aggregate_rerun": false,
+  "empirical_helpers_read": false,
+  "new_findings": []
+}

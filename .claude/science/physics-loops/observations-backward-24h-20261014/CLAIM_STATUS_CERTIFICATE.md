@@ -46,3 +46,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
 The theorem, deliberate information loss, exact false-bound witnesses, receiver metadata limits and complete finite-data accounting are in docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md. The 49 author checks and 13 assertion-rejected mutations are separate from 114 pre-author-source mathematical controls, independent raw decoding, metadata-page checks and subsequent source correspondence. Two executable interface findings were repaired without altering the main theorem. No formal review-loop landing verdict or audit verdict is granted.
+
+## Integer-channel calibration certificate (2026-10-15)
+
+Target claim type: bounded_theorem. Actual current surface status: conditional-support. Trace class: upstream_support; reachability: supports. The exact joint character lattice, temporal receiver cancellation, conditional ADC image theorem and averaging witness do not identify a scalar residual. Two full RSR products are development-exposed; the sample calculation uses the frozen first 600 seconds. No independent empirical test, fitted physical input, carrier noise floor or formal audit grade is claimed. Physical carrier/reference calibration, waveform admissibility, action, state, scales and environment remain open. The canonical note is docs/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md.

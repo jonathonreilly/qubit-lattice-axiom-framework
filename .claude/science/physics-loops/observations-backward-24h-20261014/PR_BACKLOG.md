@@ -36,3 +36,13 @@ M7 preparing on codex/observations-backward-physical-20261015, stacked on frozen
 M7 published 2026-10-15T05:24:44.213149+00:00: PR#9591 regular/open,99paths,head`917e147109e58c5bf8b5d4a9d546077d20cfe41c`,frozen and attached. Continuation branch`codex/observations-backward-calibration-20261015`; source scope conditional-support, no merge or audit.
 
 Integer-history quotient: coherent source milestone ready for final envelope binding and publication on codex/observations-backward-calibration-20261015, stacked on frozen physical branch917e1471. Proposed typebounded_theorem, statusconditional-support. No merged or audit-ratified result is claimed.
+
+Integer-history quotient published 2026-10-15T06:21:15.381287+00:00: PR#9592, regular/open,44 paths, frozen head`f2fdc425b4a18341c95a076e58fec2d56ebc3cfa`, attached. Continuation`codex/observations-backward-channels-20261015`; conditional-support/bounded_theorem.
+
+## Joint channel calibration — working milestone
+
+Branch codex/observations-backward-channels-20261015 starts from frozen M8 head f2fdc425. There is no new PR yet: the joint-character and receiver-representation block awaits the final independent raw comparison and coherent source/evidence packaging. The existing eight PRs remain frozen and attached.
+
+The scientific scope is conditional mathematics plus exposed receiver development, with no physical gravity residual or scalar parameter fit. No merge, main push or formal audit occurred.
+
+The ninth milestone is the self-contained integer-channel calibration and receiver representation unit on codex/observations-backward-channels-20261015, stacked on the frozen M8 branch. Complete scientific checks and a fresh 59-control cache are ready. Evidence identity and delivery checks precede PR creation. No merged science or formal audit.

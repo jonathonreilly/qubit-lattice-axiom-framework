@@ -1,6 +1,6 @@
 {
  "edge_count": 16050,
- "node_count": 7119,
+ "node_count": 7120,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19273,6 +19273,10 @@
   "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08": {
    "deps_hash": "fbe1946357be",
    "out_degree": 3
+  },
+  "scalar_integer_channel_calibration_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "scalar_kg_rerun_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

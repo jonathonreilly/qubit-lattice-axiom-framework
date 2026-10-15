@@ -1,6 +1,6 @@
 {
- "edge_count": 16059,
- "node_count": 7118,
+ "edge_count": 16063,
+ "node_count": 7119,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12481,6 +12481,10 @@
   "input_distribution_dependence_law_cycle975_bounded_theorem_note_2026-08-10": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "installed_background_auxiliary_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "dcaed0b9908a",
+   "out_degree": 4
   },
   "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "4af4136b6493",

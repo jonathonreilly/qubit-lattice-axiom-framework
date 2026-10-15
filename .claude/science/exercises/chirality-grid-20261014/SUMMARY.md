@@ -53,6 +53,8 @@ Getting past the wall means a grid construction whose particles, below the grid'
 
 ## 3. Routes worth doing (at most three)
 
+*This table is the state at the exercise's close (2026-10-14 ~19Z). For what round 2 changed, see §7.*
+
 | # | Route | What you must believe | Cost | First test | What it would change |
 |---|---|---|---|---|---|
 | 1 | **Set-B Euclidean package**: overlap fermions plus Euclidean hypercubic time plus spatial-TT gravity (X3/F2-H) | Reflection positivity holds for the hard-cutoff gauge measure on the torus or in infinite time; Lüscher's non-abelian measure is local for the SM 16 | K2c done: gauged RP fails in the 2D proxy (codex-confirmed) → test whether a 2D anomaly-free *chiral* U(1) measure or a 4D slice behaves the same (a day) → if so, price Π-W / 5D-without-PV | the chiral-measure RP test | A single package carrying both chirality and the best gravity bill. Prices: Z⁴ time, and a non-rational kernel (with an infinite real-time fibre) |
@@ -107,3 +109,50 @@ There is no single price for the whole wall. The family-level prices:
 - Catterall et al. on reduced Kähler–Dirac and SMG.
 - Gioia–Thorngren 2025.
 - Read 2017 (algebraic K-theory of local bands).
+
+## 7. Round 2: panel D and its tests (2026-10-14 evening; written 2026-10-15T00:30Z)
+
+**Provenance.**
+- Panel D: five Opus 5.5 lenses at xhigh (skeptic, lattice, gravity, quantum information, strategy).
+- Ten tests: NT-1–3, OBS-1, BLEAK-1, UV-1, SIGN-1 and COL-1. Each was run by one Opus 5.5 agent at xhigh.
+- Every test was refereed by codex gpt-5.6-sol at xhigh. Scopes below are the referees', not the workers'. Details are in TESTS.md under each item's referee entry.
+
+**Panel D's advice (owner decisions; nothing adopted).**
+- **D1:** a finite enlarged site content, decided once for all lanes.
+- **D2:** decline.
+- **D3:** set C by default.
+- **D4:** collaborators first.
+
+The drafts  and  are not adopted and not sent.
+
+**Results, at referee scope.**
+
+| Test | Reading | What is established (referee scope) | What is not |
+|---|---|---|---|
+| NT-2 | PG3-NEG (confirmed with corrections) | The flat hard plaquette weight at β_g = 0 is not link-reflection-positive on finite 3D lattices. Exact witness on the 2×2 periodic slice, every 0 < δ < π/4. A positive-type profile with the same support restores pure-gauge RP. | Every geometry, infinite volume, 4D |
+| UV-1 | OPEN, as registered (confirmed with corrections) | The 2D U(1) overlap kernel is negative at finite β_g on tori at t₀ = 1 (triangle and hard), and in the open proxy at t₀ = 2. The normalised β → ∞ torus kernel is negative at t₀ = 3 and 4. This is an exponentially small lattice-scale tail. | A physical-depth or continuum obstruction; a β-independent decay length |
+| NT-1 | **NOT CONFIRMED** (strict reading OPEN) | The RP failure of the fractional-power modulus \|det D(1)\|²\|det D(2)\|^{1/2} (Lx = 2, open time) | That the measure was a legitimate local chiral (Lüscher) measure. The chiral question is open and is the campaign's NT-1′. |
+| BLEAK-1 | LEAK-PLANCK (confirmed with corrections) | For R19-33's scalar action (spatial-TT plus instantaneous bridge, deleted zero mode, no seagull or speed counterterm), one-graviton exchange gives δc = (π/6)(ℓ_P/a)². The covariant kernel gives 0. | A gauge-complete observable: the result is bare and prescription-dependent, and formal at a = ℓ_P |
+| NT-3 | TG1-BROKEN, literal (confirmed with corrections) | In a 1D SU(4) ED proxy (L ≤ 7, W = ∞): a unique singlet ground state, and the 6-vector gap collapses near the filter zero | A mirror gap; symmetry breaking. GPR is neither killed nor defused. |
+| OBS-1 | R1 FLAV-NEAR in the E_g proxy; R2 Z4-EXACT conditionally; R3 PDK-SAFE conditionally (confirmed with corrections) | X2 as written conserves U(1)_X. Electroweak breaking leaves an exact U(1)_{B−L}. Branch B's clock rate is 0.12–2.5× the bound in the diagonal-E_g, U(1), bilinear-proxy completion. | The complete X2/SM flavour reading (T₂g, the non-abelian chiral loop and the mirror self-energy are uncomputed); the leakage coefficient for R3 |
+| SIGN-1 | SIGN-FREE, narrowly (confirmed with corrections) | Ungauged X2 with a real flavour-blind filter is rigorously Kramers-class sign-free at λ1 = 0, λ2 ≠ 0, and numerically certified for λ1 ≤ 0 with \|λ2/λ1\| ≥ 0.1763 | λ1 > 0; dynamical G_SM links (this fixed-U(1)_c construction fails there) |
+| COL-1 | COLOUR-SPREAD-OK in class M (confirmed with corrections) | One-qubit sites can collectively carry exact, finite-range, one-step-translation-covariant SU(3) through gated many-body representations, with a commuting Gauss law. Elementary quadratic charges (class Q) force blocks. | Private physical qubits per colour point (only private tensor factors are forced); cubic rotations; a translation-breaking ground state; QCD universality |
+
+**What changed for the routes (reading).**
+- **Route 1 (set B) is weaker.**
+  - The gauge weight must be positive-type (law data, not an axiom change).
+  - In the 2D proxy, the overlap's own RP failure persists at finite gauge coupling and lattice-scale depth.
+  - Set B's only RP-safe gravity bridge on record carries a Planck-size bare light-cone shift, unless a counterterm is added per species.
+  - Whether a legitimate chiral measure behaves the same is open (NT-1′).
+- **Route 2 (X2) survived its first data screen, conditionally.**
+  - It survives only in a narrow flavour corner (branch B). If the mirrors gap symmetrically, it predicts Dirac neutrinos and zero 0νββ.
+  - It is now simulable without a sign problem, in the ungauged, λ1 ≤ 0 setting.
+  - Open hazards: flavour-pattern Lorentz violation (OBS-2) and the GPR symmetry-breaking phase (QMC-1).
+- **D1 is reframed by COL-1.** Colour need not sit on one site; the question becomes per-cell content located by a marker pattern.
+
+**Did round 2 crack the wall? No.** It sharpened route 2's decisive test into a simulation that can actually be run, and weakened route 1 on the reflection-positivity side.
+
+**Campaign (2026-10-15).** A 24-hour campaign, pre-registered in TESTS.md ("24-hour campaign, wave 1"), runs:
+- OBS-2: route 2 kill test;
+- QMC-1: the sign-free simulation pilot;
+- NT-1′: a legitimate chiral measure and RP.

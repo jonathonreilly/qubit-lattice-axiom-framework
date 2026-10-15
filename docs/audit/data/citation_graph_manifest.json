@@ -1,6 +1,6 @@
 {
- "edge_count": 16088,
- "node_count": 7130,
+ "edge_count": 16089,
+ "node_count": 7131,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3913,6 +3913,10 @@
   "comparator_recovered_theta_misattributed_cycle915_bounded_theorem_note_2026-07-28": {
    "deps_hash": "12b6f44ac94c",
    "out_degree": 4
+  },
+  "compensated_finite_reservoir_clock_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "44fe82ec55ee",
+   "out_degree": 1
   },
   "complement_mechanism_krun_law_cycle891_bounded_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",

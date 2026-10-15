@@ -1,0 +1,12 @@
+{
+  "direct_mathematical_parents": [
+    "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+  ],
+  "direct_parent_claim_ids": [
+    "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15"
+  ],
+  "transitive_boundary_source_sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+  "memory_resource_note_is_dependency": false,
+  "expanded_controls": "supplied conditional engineering interface, not a physical axiom or native supplier",
+  "no_go_claim": false
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "compensated-preparation-sources-v1",
+  "observed_utc": "2026-10-15T11:43:50.309826+00:00",
+  "sources": {
+    "candidate": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_candidate/DERIVATION.md",
+      "bytes": 36516,
+      "sha256": "e3f8baf1f1c1d674a8ef22668356f245fc19716d5a4cf53279cd8f994ad02273",
+      "recovery": {
+        "canonical_path": "docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start": 12121,
+        "end": 48637
+      }
+    },
+    "candidate_freeze": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_candidate/FINAL_FREEZE.json",
+      "bytes": 4488,
+      "sha256": "653fbbff11aa1ace2118e71d40c82599724b35446a0e91ce9e71ee55994798d5",
+      "role": "immutable packet reference; not recursively copied"
+    },
+    "author_exposure": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_candidate/EXPOSURE.md",
+      "bytes": 2948,
+      "sha256": "e3f93dfc9ce21138180d723d783f0c968cd0d4b5bd55ff11709ee043b41e151c",
+      "stored_path": ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/AUTHOR_EXPOSURE.md"
+    },
+    "author_failures": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_candidate/FAILURE_LEDGER.md",
+      "bytes": 2376,
+      "sha256": "da128d4bd21268c816482cdae6287c1301de9c015a5c85d8eb7225dca9a994a6",
+      "stored_path": ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/AUTHOR_FAILURE_LEDGER.md"
+    },
+    "source_review": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_decisive_check/REPORT.md",
+      "bytes": 22559,
+      "sha256": "74cbf0fcbea985b5c52c5700fe54abdcfeacc577df3226246d9a58c2137669c5",
+      "stored_path": ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/SOURCE_REVIEW.md"
+    },
+    "review_freeze": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_decisive_check/FINAL_FREEZE.json",
+      "bytes": 6331,
+      "sha256": "07ca54ff7f13137aa3f764d4ada1a485d800f2ee99b81f22a3aa72496960f6fb",
+      "role": "immutable packet reference; not recursively copied"
+    },
+    "root_acceptance": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/compensated_preparation_root_review/ACCEPTANCE.md",
+      "bytes": 3659,
+      "sha256": "01a9e3220fa7e5c53dbd9a3b3bf9ef246b21bed430d1e2bbdfc45d8af9b90d9a",
+      "stored_path": ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/ROOT_ACCEPTANCE.md"
+    },
+    "root_freeze": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/compensated_preparation_root_review/FINAL_FREEZE.json",
+      "bytes": 2994,
+      "sha256": "3610f66faa1d216995023ddecd0d2a2fc882551001c4a9b885a207cfdfcc8c45",
+      "role": "immutable acceptance packet reference; not recursively copied"
+    },
+    "mathematical_parent": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 41771,
+      "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+    },
+    "boundary_raw_transitive": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_compensated_preparation_candidate/sources/boundary_raw.md",
+      "bytes": 18461,
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1"
+    },
+    "instruction_workflow": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    "instruction_reviewer": {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  },
+  "proof_status": "identity evidence only",
+  "archived_prior_runs_replayed": false,
+  "scientific_programs_run": 0
+}

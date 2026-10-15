@@ -1,0 +1,79 @@
+{
+  "utc": "2026-10-15T12:10:07.461139+00:00",
+  "branch": "physics-loop/toe-compensated-reservoir-preparation-20261015",
+  "base_head": "93ac27f053e952e811bc07a7130bbdc44af8e2c8",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/compensated_finite_reservoir_clock_preparation_2026_10_15.py",
+    "bytes": 6393,
+    "sha256": "06831d785794ea6c14201d9a02c7cf466f7aa7824d5851397572f0a035fcd1f5"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 48637,
+    "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8"
+  },
+  "cache_fresh": true,
+  "timeout_sec": 60,
+  "canonical_source_files": 13,
+  "scientific_programs_run": 0,
+  "historical_runs_replayed": 0,
+  "provenance_mutants_rejected": 8,
+  "links": [
+    {
+      "source": "docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "target": "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+    }
+  ],
+  "focused_checker": {
+    "base": "HEAD",
+    "changed_path_count": 19,
+    "checked": [],
+    "control_failures": [],
+    "diff_scope": "committed_and_worktree",
+    "failures": [],
+    "schema": "changed_audit_evidence_readiness_v1"
+  },
+  "focused_checker_index_preserved": true,
+  "graph": {
+    "utc": "2026-10-15T12:04:19.283841+00:00",
+    "complete_old_nodes_preserved": 7130,
+    "complete_old_edges_preserved": 16088,
+    "roots_unchanged": true,
+    "new_node": {
+      "claim_id": "compensated_finite_reservoir_clock_preparation_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8",
+      "path": "docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/compensated_finite_reservoir_clock_preparation_2026_10_15.py",
+      "title": "Paid compensation for finite-reservoir clock preparation"
+    },
+    "new_edge": {
+      "from": "compensated_finite_reservoir_clock_preparation_bounded_theorem_note_2026-10-15",
+      "to": "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15"
+    },
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/compensation/after_citation_graph.json",
+      "bytes": 10449823,
+      "sha256": "481f89024ca83abc1e8f7633bedabd3f32afba60b65eaeedc59b793b6860b1b9"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/compensation/after_citation_graph_manifest.json",
+      "bytes": 1018469,
+      "sha256": "c9b0ff8e9f228c47718eacbdf5a767f91cab04832554a19c8a125454ca1540d4"
+    },
+    "scope": "Preserves all old graph objects; one direct finite-reservoir dependency, no dependency on stack ancestry, no audit application."
+  },
+  "vocabulary_changed_source": false,
+  "outstanding": [
+    "Combined pipeline, strict audit lint and cumulative changed-evidence on exact integrated current-main candidate.",
+    "Independent retained audit.",
+    "Physical supply of calibrated compensators, independent pure memory, external scheduling and eventual restoration."
+  ],
+  "editable_prompt_files_changed": []
+}

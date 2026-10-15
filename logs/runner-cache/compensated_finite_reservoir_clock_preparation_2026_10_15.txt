@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/compensated_finite_reservoir_clock_preparation_2026_10_15.py
+runner_sha256: 06831d785794ea6c14201d9a02c7cf466f7aa7824d5851397572f0a035fcd1f5
+input_fingerprint_sha256: 6387e8a66d554084d014441857ed357564bbc25403d80f1a8685c1d9b55f2189
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_runs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "Exact source/body/parent identities only; mathematics and physical supply are not executed."}
+per_element: arbitrary old/clock input and passive reference; full transferred reservoir retained
+per_site: supplied positive onsite/nearest-neighbour compensators, full SWAP and entry controls
+per_mode: full-sector turn-on and entry-specific turn-off; channel refinement preserves phase distinction
+per_block: actual free-K aging, scalars, covariance, work, slew and calibration remain charged
+lattice_wide: finite conditional driven preparation; native supply, autonomy and recycling remain open
+
+----- stderr -----
+

@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.407,
+  "load_bearing_score": 6.228,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/gapped_boost_invariance_2026_10_12.py",
   "title": "A simple gapped GNS vacuum and conserved current imply local boost invariance",
-  "transitive_descendants": 14,
+  "transitive_descendants": 52,
   "verdict_rationale": null
 }

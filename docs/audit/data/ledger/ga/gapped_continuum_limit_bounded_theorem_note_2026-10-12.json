@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.17,
+  "load_bearing_score": 5.7,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/gapped_continuum_limit_2026_10_12.py",
   "title": "The actual gapped-chain boost has a controlled massive continuum group limit",
-  "transitive_descendants": 8,
+  "transitive_descendants": 25,
   "verdict_rationale": null
 }

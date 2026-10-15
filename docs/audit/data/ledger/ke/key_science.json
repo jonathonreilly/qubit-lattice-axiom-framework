@@ -43,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "2e21bd535d4811a8b63fc7cdc358467a1d22784ed689eae0e5ef2f72bca9418a",
+  "note_hash": "b5f85981b167ca79d54e2f2e1a2eb28041f1aeabe9c3b44e735bf1d38af5398d",
   "note_path": "docs/KEY_SCIENCE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

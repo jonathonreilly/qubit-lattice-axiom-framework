@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 5.322,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/dyadic_even_refinement_2026_10_12.py",
   "title": "Dyadic refinement of the supplied chain's even spin algebra",
-  "transitive_descendants": 2,
+  "transitive_descendants": 19,
   "verdict_rationale": null
 }

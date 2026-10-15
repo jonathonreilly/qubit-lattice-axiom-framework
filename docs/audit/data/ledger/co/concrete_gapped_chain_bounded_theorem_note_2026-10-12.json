@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "high",
+  "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "gapped_boost_invariance_bounded_theorem_note_2026-10-12",
     "microscopic_boost_flow_bounded_theorem_note_2026-10-12"
   ],
-  "direct_in_degree": 12,
+  "direct_in_degree": 21,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.807,
+  "load_bearing_score": 16.2,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/concrete_gapped_chain_2026_10_12.py",
   "title": "A concrete gapped spin chain: conserved current, actual boost, and a controlled residual",
-  "transitive_descendants": 13,
+  "transitive_descendants": 51,
   "verdict_rationale": null
 }

@@ -58,7 +58,7 @@ Do not update these snapshots as a required step for every new result.
 The [retest playbook](./RETEST_PLAYBOOK.md) and old harness/lane manifests
 can suggest reproductions for a historical bug. Select the actual rerun from
 the affected current claim and source packet before executing it.
-Legacy root `AUTOPILOT_*` protocols describe an earlier automation setup;
+The retired `AUTOPILOT_*` protocols now live in `docs/work_history/automation/`;
 current work follows the lifecycle and refreshed skills above.
 
 ## Adding Or Correcting Work

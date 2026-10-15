@@ -1,16 +1,9 @@
 # Repository agent entry point
 
-Read `AGENTS.md` and `docs/ai_methodology/SCIENCE_WORKFLOW.md`. The current
-research cadence is continuous discovery, selective independent checks, and
-milestone PRs/audits. A process-review request examines instructions before
-applying them; it does not automatically launch a review or audit drain.
+Read `AGENTS.md`. It routes to `docs/ai_methodology/SCIENCE_WORKFLOW.md` (the
+rules) and the `ai/execution` planning branch.
 
-Use the user's configured model and explicit reasoning choices. Proof-critical
-review needs the strongest available suitable reasoning; old model names in
-command prose are not current configuration. Report actual provenance rather
-than inferring independence from a role name.
-
-AI planning and dispatcher instructions live on the separate `ai/execution`
-branch, which never merges into `main`:
-`git fetch origin ai/execution --quiet` then
-`git show origin/ai/execution:AGENTS.md`. Planning supplies no science status.
+Model policy: use the user's configured model and explicit reasoning settings.
+Proof-critical review needs the strongest suitable reasoning available. Model
+names in old command prose are not current configuration. Report actual
+provenance; do not infer independence from a role name.

@@ -123,7 +123,7 @@ There is no single price for the whole wall. The family-level prices:
 - **D3:** set C by default.
 - **D4:** collaborators first.
 
-The drafts  and  are not adopted and not sent.
+The drafts `panel_D/D1_SITE_CONTENT_PROPOSAL.md` and `panel_D/COLLABORATOR_ASKS.md` are not adopted and not sent.
 
 **Results, at referee scope.**
 

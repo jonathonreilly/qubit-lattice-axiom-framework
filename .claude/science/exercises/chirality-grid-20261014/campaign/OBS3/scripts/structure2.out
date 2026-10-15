@@ -1,0 +1,18 @@
+(1) max relative |K_fl(x,y,a) - I_00(e_y,a)| over N in 32..96 and the bracket: 8.3e-13
+    N=96 m0=0.1 D=0.0: kappa_par -1.162573e-02 kappa_perp -1.162573e-02  Delta-kappa -5.33e-15  kbar -1.162573e-02
+    N=96 m0=0.1 D=0.5: kappa_par -1.122190e-02 kappa_perp -1.160076e-02  Delta-kappa +3.79e-04  kbar -1.147447e-02
+    N=96 m0=0.05 D=0.0: kappa_par -1.163913e-02 kappa_perp -1.163913e-02  Delta-kappa -3.79e-15  kbar -1.163913e-02
+    N=96 m0=0.05 D=0.5: kappa_par -1.131282e-02 kappa_perp -1.159833e-02  Delta-kappa +2.86e-04  kbar -1.150316e-02
+    N=96 m0=0.025 D=0.0: kappa_par -1.162664e-02 kappa_perp -1.162664e-02  Delta-kappa -6.84e-15  kbar -1.162664e-02
+    N=96 m0=0.025 D=0.5: kappa_par -1.135028e-02 kappa_perp -1.156958e-02  Delta-kappa +2.19e-04  kbar -1.149648e-02
+(2) up-flat: <delta^d, R^Q - mean> over P_g x D_g grid: min -3.906e-06 max +3.822e-06 (y_b^2 = 5.773e-04); sign changes: yes;  min over grid of max_c |R^Q_c - mean| = 1.266e-05 (= 0.0219 y_b^2)
+(3) equal-modulus realisation B-gen, corner-diagonal non-universality max_c |diag - mean| of flavour words:
+    H_u + H_d (one loop, Q)     : spread 5.551e-17   mean 3.277e-01
+    Y_u^dag Y_u (one loop, u^c) : spread 5.551e-17   mean 3.275e-01
+    Y_d^dag Y_d (one loop, d^c) : spread 2.711e-20   mean 1.925e-04
+    H_u^2                       : spread 1.581e-05   mean 3.218e-01
+    H_d^2                       : spread 4.588e-11   mean 1.111e-07
+    H_u H_d + H_d H_u           : spread 4.047e-07   mean 3.774e-04
+    (Y_u^dag Y_u)^2             : spread 1.661e-05   mean 3.218e-01
+    one-loop scale kbar ~ 1.15e-2; a two-loop coefficient ~ kbar^2 ~ 1.3e-4 (SUGGESTED estimate) times the spreads above
+watchdog peak RSS 67024 KB

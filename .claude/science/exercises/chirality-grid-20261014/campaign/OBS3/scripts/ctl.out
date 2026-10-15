@@ -1,0 +1,10 @@
+C1 N=24 m0=0.1 Delta=0.0 C3-symmetrised=True: c_TT^d = -2.10666612e-08  d_TT^d = +7.02222040e-09   (referee -2.10666629e-08 / +7.02222097e-09)
+C1 N=24 m0=0.1 Delta=0.0 C3-symmetrised=False: c_TT^d = -2.10666612e-08  d_TT^d = +7.02222041e-09   (referee -2.10666629e-08 / +7.02222097e-09)
+C1 N=24 m0=0.1 Delta=0.5 C3-symmetrised=True: c_TT^d = -2.11755093e-08  d_TT^d = +7.05850310e-09   (referee -2.11755110e-08 / +7.05850371e-09)
+C1 N=24 m0=0.1 Delta=0.5 C3-symmetrised=False: c_TT^d = -2.11755093e-08  d_TT^d = +7.05850310e-09   (referee -2.11755110e-08 / +7.05850371e-09)
+C3a max C3[111] violation of archived kin tables over N in 24..96, bracket, variants: 1.26e-14 (abs)
+C3a flavon table: Qxy vs Qxz (own/partner/third) covariance max |diff| = 3.47e-15
+C2 Hermitian circulant up and down (V = 1), N=96, bracket x variants x splits: max |residual|/|universal iso|  M1 2.9e-14  M2 1.1e-14
+C2' non-Hermitian circulant (X = W D), M2: max |residual|/|iso| = 3.26e-04; per-corner isotropic part only: 6.1e-16
+C3b assembly covariance under the corner 3-cycle (random W_u, X_u, X_d; M1/M2): max relative mismatch 3.0e-15
+watchdog peak RSS 13360 KB

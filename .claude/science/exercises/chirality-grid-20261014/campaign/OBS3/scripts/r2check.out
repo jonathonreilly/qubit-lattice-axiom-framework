@@ -1,0 +1,5 @@
+E1 flat-light (Hermitian textures)    : range-2 symbols: max FIXED ratio 3.35e+02; |c_TT^d| in [1.5e-23, 2.5e-20]; max |residual|/|universal| (Q,uc,dc) 1.4e+00
+B-gen equal-modulus                   : range-2 symbols: max FIXED ratio 1.52e+04; |c_TT^d| in [0.0e+00, 7.4e-20]; max |residual|/|universal| (Q,uc,dc) 3.0e-14
+A M1 diag-constant (W_u = F)          : range-2 symbols: max FIXED ratio 9.71e+02; |c_TT^d| in [5.6e-23, 7.3e-20]; max |residual|/|universal| (Q,uc,dc) 3.0e-14
+OBS-2 branch B (control)              : range-2 symbols: max FIXED ratio 5.15e+14; |c_TT^d| in [1.7e-08, 3.9e-08]; max |residual|/|universal| (Q,uc,dc) 1.9e-01
+watchdog peak RSS 30816 KB

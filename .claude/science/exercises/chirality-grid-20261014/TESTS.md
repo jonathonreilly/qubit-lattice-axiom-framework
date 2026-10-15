@@ -408,3 +408,16 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **TEXTURE-FORCED:** every realisation in the family exceeds some direct row by more than 10×. Give the minimum over the family, and a lower-bound argument if one exists, for example that the up and down embeddings cannot both be unbiased to the corner basis unless V_CKM is equivalent to a circulant.
   - **OPEN:** otherwise.
 - **Scope to state:** one loop, symmetric-phase Higgs, the family as built, no running from 1/a.
+
+**OBS-3 result (13:08Z; same family; referee launched): TEXTURE-ESCAPE.**
+- **Main construction.** At one loop, a corner's Lorentz-violating kinetic data depend only on coupling moduli and the diagonal Gram matrix. CKM phases never enter (proved structure, S2).
+  - Corner-basis Yukawas with equal diagonal moduli and equal off-diagonal moduli, plus free orientation-dependent phases ("B-gen"), fit every quark mass ratio, every |V_ij| and |J| exactly (χ² = 7e-23).
+  - The data are then S3-invariant, so every residual row is zero by identity (Lemma S), for all regulators, placements, symbol ranges and carrier models.
+  - The symmetric-off-diagonal version cannot fit J (best χ² 4.7e3; matches the USY literature). Orientation-selective τ_xσ_c carriers of range ≤ 2 are needed.
+- **OBS-2's −2e-8 is removed by a d^c rotation alone** (M1 diagonal equalisation).
+- **Proved:** W_u and W_d are both flat if and only if V_CKM is circulant-equivalent (Haagerup). The observed CKM is not circulant-equivalent (30.6σ).
+- **Restricted to "up flat" with couplings carrying the mass pattern (M2):** no structural zero. A zero needs tuning to about 2e-15.
+- **Outside the family (proved, symmetric-phase effective action, all orders):** a cubic-covariant law with flavour breaking only in vevs gives zero residual. What remains is about y²(va)² ≈ 1e-34 (suggested).
+  - **Price not computed:** a tree-level FCNC question from the hw2 electroweak-doublet carriers with O(y_t) flavour-violating couplings.
+- **Forced at two loops (suggested).** CKM forces some word in H_u, H_d to have a corner-dependent diagonal (L-words, proved). At two loops that could give about 1e-9–1e-10, i.e. about 1e13 over the u/d rows, unless the couplings are law-level covariant.
+- **Supervisor's own thread:** I predicted TEXTURE-FORCED from the flatness argument. That was wrong. Flatness is sufficient but not necessary; universal-strength textures and right-handed rotations escape.

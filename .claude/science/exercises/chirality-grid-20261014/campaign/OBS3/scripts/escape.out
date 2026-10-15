@@ -1,0 +1,49 @@
+construction family: min over (t, sign, phi) of top-column non-flatness max_c ||W_u,ct|^2 - 1/3| = 0.2855 at t=0.070 sign=1 phi=0.000
+refined: eps_t = 0.28335; checks: unitarity 2.8e-16, W_u^dag W_d - V 3.1e-16, |W_u1|^2 flat to 1.1e-16, |W_d1|^2 flat to 1.1e-16; eps_c 0.2834 eps_s 0.2939 eps_b 0.2939
+W_u (E1) =
+ [[ 0.577+0.j    -0.088-0.206j -0.696-0.363j]
+ [ 0.577+0.j     0.022-0.577j  0.476+0.327j]
+ [ 0.577+0.j     0.066+0.783j  0.221+0.036j]] 
+|W_u|^2 =
+ [[0.333 0.05  0.617]
+ [0.333 0.333 0.333]
+ [0.333 0.617 0.05 ]] 
+|W_d|^2 =
+ [[0.333 0.039 0.627]
+ [0.333 0.349 0.318]
+ [0.333 0.612 0.055]]
+N=48 E1-herm: max FIXED-row ratio over bracket x placements x splits x carriers x coupling scale = 3.33e+02
+    side rows ratio [min, max]: u33 [1.4e+16,2.7e+17]  d33 [3.5e+12,2.4e+16]  u_dis [5.9e-02,1.2e+00]  d_dis [1.1e-05,7.2e-02]  s [2.4e+04,6.9e+05]  c [1.4e+04,1.7e+05]  b [2.4e+02,6.9e+03]  t [8.7e+02,1.1e+04]
+N=48 E1-XF: max FIXED-row ratio over bracket x placements x splits x carriers x coupling scale = 4.16e+00
+    side rows ratio [min, max]: u33 [4.5e+14,1.2e+17]  d33 [1.4e+11,8.3e+15]  u_dis [1.9e-03,5.3e-01]  d_dis [4.1e-07,2.5e-02]  s [1.2e+04,6.9e+05]  c [1.2e+03,6.8e+04]  b [1.2e+02,6.9e+03]  t [7.4e+01,4.3e+03]
+N=96 E1-herm: max FIXED-row ratio over bracket x placements x splits x carriers x coupling scale = 3.35e+02
+    side rows ratio [min, max]: u33 [1.4e+16,2.7e+17]  d33 [3.6e+12,2.4e+16]  u_dis [6.1e-02,1.2e+00]  d_dis [1.1e-05,7.2e-02]  s [2.5e+04,7.0e+05]  c [1.4e+04,1.8e+05]  b [2.5e+02,7.0e+03]  t [8.8e+02,1.1e+04]
+N=96 E1-XF: max FIXED-row ratio over bracket x placements x splits x carriers x coupling scale = 4.19e+00
+    side rows ratio [min, max]: u33 [3.0e+14,1.2e+17]  d33 [1.3e+11,8.3e+15]  u_dis [1.3e-03,5.2e-01]  d_dis [4.0e-07,2.5e-02]  s [1.2e+04,7.0e+05]  c [1.2e+03,6.9e+04]  b [1.2e+02,7.0e+03]  t [7.6e+01,4.3e+03]
+E1-herm M1 primary (N=96 m0=0.025 D=0.5 sym trace low-scale):
+   u  c-ring +3.61e-35 d-ring -1.20e-35 | traceless c_jj [-5.266e-05 -5.482e-05  1.075e-04] d_jj [ 1.754e-05  1.826e-05 -3.580e-05]
+   c  c-ring -1.15e-03 d-ring +3.83e-04 | traceless c_jj [-6.774e-05  2.781e-06  6.496e-05] d_jj [ 2.256e-05 -9.252e-07 -2.164e-05]
+   t  c-ring +1.15e-03 d-ring -3.83e-04 | traceless c_jj [-3.758e-05 -1.124e-04  1.500e-04] d_jj [ 1.252e-05  3.745e-05 -4.996e-05]
+   d  c-ring -1.41e-20 d-ring -1.41e-20 | traceless c_jj [-1.758e-05 -1.830e-05  3.588e-05] d_jj [-1.754e-05 -1.826e-05  3.580e-05]
+   s  c-ring -3.91e-04 d-ring -3.90e-04 | traceless c_jj [-2.357e-05  1.377e-06  2.219e-05] d_jj [-2.351e-05  1.371e-06  2.214e-05]
+   b  c-ring +3.91e-04 d-ring +3.90e-04 | traceless c_jj [-1.159e-05 -3.798e-05  4.957e-05] d_jj [-1.157e-05 -3.789e-05  4.946e-05]
+   e  c-ring -0.00e+00 d-ring -0.00e+00 | traceless c_jj [-1.071e-30  5.311e-31  5.403e-31] d_jj [-1.071e-30  5.311e-31  5.403e-31]
+   field Q  universal iso -1.583e-03 tet +6.469e-06 |residual|max 1.57e-03
+   field uc universal iso -3.163e-03 tet +1.293e-05 |residual|max 3.15e-03
+   field dc universal iso -1.904e-06 tet +8.673e-09 |residual|max 1.92e-06
+   field L  universal iso -1.494e-07 tet +2.850e-09 |residual|max 4.12e-21
+   field ec universal iso -2.989e-07 tet +5.701e-09 |residual|max 8.24e-21
+E1-herm M2 primary (N=96 m0=0.025 D=0.5 sym trace low-scale):
+   u  c-ring -0.00e+00 d-ring -0.00e+00 | traceless c_jj [-6.000e-05 -6.050e-05  1.205e-04] d_jj [ 1.998e-05  2.015e-05 -4.014e-05]
+   c  c-ring -2.06e-03 d-ring +6.85e-04 | traceless c_jj [-7.602e-05  8.632e-06  6.738e-05] d_jj [ 2.532e-05 -2.874e-06 -2.244e-05]
+   t  c-ring +2.06e-03 d-ring -6.85e-04 | traceless c_jj [-4.397e-05 -1.296e-04  1.736e-04] d_jj [ 1.465e-05  4.318e-05 -5.783e-05]
+   d  c-ring +1.90e-20 d-ring +1.90e-20 | traceless c_jj [-2.003e-05 -2.020e-05  4.023e-05] d_jj [-1.998e-05 -2.015e-05  4.014e-05]
+   s  c-ring -6.90e-04 d-ring -6.88e-04 | traceless c_jj [-2.653e-05  3.458e-06  2.308e-05] d_jj [-2.647e-05  3.446e-06  2.302e-05]
+   b  c-ring +6.90e-04 d-ring +6.88e-04 | traceless c_jj [-1.353e-05 -4.385e-05  5.738e-05] d_jj [-1.350e-05 -4.375e-05  5.725e-05]
+   e  c-ring -2.61e-54 d-ring +2.61e-54 | traceless c_jj [-2.059e-23  5.882e-24  1.471e-23] d_jj [ 1.471e-23  5.882e-24 -2.059e-23]
+   field Q  universal iso -3.480e-03 tet -1.163e-05 |residual|max 2.61e-03
+   field uc universal iso -6.955e-03 tet -2.324e-05 |residual|max 5.21e-03
+   field dc universal iso -4.091e-06 tet -1.219e-08 |residual|max 2.98e-06
+   field L  universal iso -4.006e-07 tet +4.551e-10 |residual|max 4.12e-21
+   field ec universal iso -8.012e-07 tet +9.102e-10 |residual|max 8.46e-21
+watchdog peak RSS 74640 KB

@@ -1,0 +1,25 @@
+{
+  "actual_in_process_utc": "2026-10-15T19:56:42.468923+00:00",
+  "argv": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/seal.py"
+  ],
+  "seal_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/seal.py",
+    "bytes": 2757,
+    "sha256": "b39e2d58c0e04fb6ef3c8f1d1574af1c647995221c0b4151fe12e65ff18a7da5"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/metadata_runs/capture/EXECUTION.json",
+      "bytes": 2126,
+      "sha256": "95b81f81469ddb965098152d03ec07fe4ff2314ae69f3b78ec77c126193d07ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/metadata_runs/verify/EXECUTION.json",
+      "bytes": 2122,
+      "sha256": "7fca75e9786ccaa2a28ebd7c6935a40de8801c3a38b92dfc3b5027146c549d90"
+    }
+  ],
+  "kind": "Direct metadata seal operation; not a third subprocess receipt",
+  "scientific_programs_run": 0
+}

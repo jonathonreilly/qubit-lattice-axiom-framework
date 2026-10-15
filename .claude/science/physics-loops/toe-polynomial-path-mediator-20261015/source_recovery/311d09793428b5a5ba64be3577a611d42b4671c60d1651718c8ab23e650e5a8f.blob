@@ -1,0 +1,350 @@
+{
+  "utc": "2026-10-15T20:03:10.263295+00:00",
+  "kind": "Bounded numerical scientific sanity fixture",
+  "scientific_programs_run": 1,
+  "universal_proof": false,
+  "independent_derivation": false,
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/polynomial_matrix_fixture_2008.py",
+    "bytes": 5571,
+    "sha256": "ade7e28f58c4029eb4505cc29f1a951e7ee135db895928385aaf8699294c3d71"
+  },
+  "proof_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/DERIVATION.md",
+      "bytes": 18554,
+      "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/DERIVATION.md",
+      "bytes": 35057,
+      "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+    }
+  ],
+  "full_auxiliary_spectra": [
+    {
+      "m": 2,
+      "mass_exponent": 2,
+      "gap": 0.25000000000000006,
+      "norm": 2.5,
+      "errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ]
+    },
+    {
+      "m": 3,
+      "mass_exponent": 2,
+      "gap": 0.11111111111111138,
+      "norm": 4.333333333333333,
+      "errors": [
+        0.0,
+        2.7755575615628914e-16,
+        0.0
+      ]
+    },
+    {
+      "m": 4,
+      "mass_exponent": 2,
+      "gap": 0.06250000000000006,
+      "norm": 6.25,
+      "errors": [
+        0.0,
+        5.551115123125783e-17,
+        0.0
+      ]
+    },
+    {
+      "m": 5,
+      "mass_exponent": 2,
+      "gap": 0.040000000000000126,
+      "norm": 8.2,
+      "errors": [
+        0.0,
+        1.249000902703301e-16,
+        0.0
+      ]
+    },
+    {
+      "m": 6,
+      "mass_exponent": 2,
+      "gap": 0.027777777777777686,
+      "norm": 10.166666666666668,
+      "errors": [
+        0.0,
+        9.020562075079397e-17,
+        1.7763568394002505e-15
+      ]
+    },
+    {
+      "m": 7,
+      "mass_exponent": 2,
+      "gap": 0.020408163265306093,
+      "norm": 12.142857142857142,
+      "errors": [
+        0.0,
+        2.7755575615628914e-17,
+        0.0
+      ]
+    },
+    {
+      "m": 8,
+      "mass_exponent": 2,
+      "gap": 0.01562499999999984,
+      "norm": 14.125,
+      "errors": [
+        0.0,
+        1.5959455978986625e-16,
+        0.0
+      ]
+    },
+    {
+      "m": 2,
+      "mass_exponent": 3,
+      "gap": 0.125,
+      "norm": 2.25,
+      "errors": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "m": 3,
+      "mass_exponent": 3,
+      "gap": 0.03703703703703699,
+      "norm": 4.111111111111111,
+      "errors": [
+        0.0,
+        4.163336342344337e-17,
+        0.0
+      ]
+    },
+    {
+      "m": 4,
+      "mass_exponent": 3,
+      "gap": 0.01562500000000005,
+      "norm": 6.0625,
+      "errors": [
+        0.0,
+        4.85722573273506e-17,
+        0.0
+      ]
+    },
+    {
+      "m": 5,
+      "mass_exponent": 3,
+      "gap": 0.008000000000000099,
+      "norm": 8.04,
+      "errors": [
+        0.0,
+        9.8879238130678e-17,
+        0.0
+      ]
+    },
+    {
+      "m": 6,
+      "mass_exponent": 3,
+      "gap": 0.004629629629629627,
+      "norm": 10.027777777777779,
+      "errors": [
+        0.0,
+        2.6020852139652106e-18,
+        0.0
+      ]
+    },
+    {
+      "m": 7,
+      "mass_exponent": 3,
+      "gap": 0.0029154518950438033,
+      "norm": 12.020408163265305,
+      "errors": [
+        0.0,
+        7.155734338404329e-17,
+        1.7763568394002505e-15
+      ]
+    },
+    {
+      "m": 8,
+      "mass_exponent": 3,
+      "gap": 0.0019531249999998645,
+      "norm": 14.015625,
+      "errors": [
+        0.0,
+        1.3552527156068805e-16,
+        0.0
+      ]
+    }
+  ],
+  "response_checks": [
+    {
+      "m": 2,
+      "mass_exponent": 2,
+      "min": 1.777777777777778,
+      "max": 2.2222222222222223,
+      "endpoint_min": 1.777777777777778
+    },
+    {
+      "m": 3,
+      "mass_exponent": 2,
+      "min": 2.603571428571427,
+      "max": 3.5035714285714272,
+      "endpoint_min": 2.603571428571427
+    },
+    {
+      "m": 5,
+      "mass_exponent": 2,
+      "min": 4.2851404001226765,
+      "max": 6.103970642633376,
+      "endpoint_min": 4.2851404001226765
+    },
+    {
+      "m": 8,
+      "mass_exponent": 2,
+      "min": 6.826451516235286,
+      "max": 10.028553571289416,
+      "endpoint_min": 6.826451516235287
+    },
+    {
+      "m": 16,
+      "mass_exponent": 2,
+      "min": 13.624246408444371,
+      "max": 20.520706225006055,
+      "endpoint_min": 13.624246408444371
+    },
+    {
+      "m": 31,
+      "mass_exponent": 2,
+      "min": 26.383394681860928,
+      "max": 40.210361272515556,
+      "endpoint_min": 26.383394681860935
+    },
+    {
+      "m": 64,
+      "mass_exponent": 2,
+      "min": 54.46114953998333,
+      "max": 83.5372941569213,
+      "endpoint_min": 54.46114953998333
+    },
+    {
+      "m": 2,
+      "mass_exponent": 3,
+      "min": 3.7647058823529402,
+      "max": 4.235294117647058,
+      "endpoint_min": 3.7647058823529402
+    },
+    {
+      "m": 3,
+      "mass_exponent": 3,
+      "min": 8.57273519163763,
+      "max": 9.537020905923344,
+      "endpoint_min": 8.57273519163763
+    },
+    {
+      "m": 5,
+      "mass_exponent": 3,
+      "min": 24.218478888815,
+      "max": 26.17929383788069,
+      "endpoint_min": 24.218478888815
+    },
+    {
+      "m": 8,
+      "mass_exponent": 3,
+      "min": 62.70647311408165,
+      "max": 66.16597160776291,
+      "endpoint_min": 62.70647311408165
+    },
+    {
+      "m": 16,
+      "mass_exponent": 3,
+      "min": 253.3630127836754,
+      "max": 260.8217676482795,
+      "endpoint_min": 253.3630127836754
+    },
+    {
+      "m": 31,
+      "mass_exponent": 3,
+      "min": 955.858073742959,
+      "max": 970.8165844046848,
+      "endpoint_min": 955.8580737429594
+    },
+    {
+      "m": 64,
+      "mass_exponent": 3,
+      "min": 4085.355346572321,
+      "max": 4116.813755079583,
+      "endpoint_min": 4085.355346572323
+    }
+  ],
+  "full_auxiliary_one_clock_sector_correctors": [
+    {
+      "mass_exponent": 2,
+      "n": 2,
+      "m": 6,
+      "Delta": 5.0,
+      "q": 1.0,
+      "contraction_error": 3.553147306742857e-15,
+      "two_excitation_support_error": 0.0,
+      "residual_error": 1.9846167644517454e-14,
+      "mean": 21.37389805400824,
+      "variance": 224.13470717061546,
+      "moment_errors": [
+        3.552713678800501e-15,
+        8.526512829121202e-14
+      ]
+    },
+    {
+      "mass_exponent": 2,
+      "n": 2,
+      "m": 6,
+      "Delta": 50.0,
+      "q": 1.0,
+      "contraction_error": 3.553147306742857e-15,
+      "two_excitation_support_error": 0.0,
+      "residual_error": 3.419291317713384e-14,
+      "mean": 31.164228553168115,
+      "variance": 305.13470717061523,
+      "moment_errors": [
+        3.552713678800501e-15,
+        1.1368683772161603e-13
+      ]
+    },
+    {
+      "mass_exponent": 3,
+      "n": 2,
+      "m": 6,
+      "Delta": 5.0,
+      "q": 0.16666666666666666,
+      "contraction_error": 1.8734288478935672e-14,
+      "two_excitation_support_error": 0.0,
+      "residual_error": 2.1728011495350663e-14,
+      "mean": 6.17781016290834,
+      "variance": 6.8240221546539175,
+      "moment_errors": [
+        0.0,
+        7.105427357601002e-15
+      ]
+    },
+    {
+      "mass_exponent": 3,
+      "n": 2,
+      "m": 6,
+      "Delta": 50.0,
+      "q": 0.16666666666666666,
+      "contraction_error": 1.8734288478935672e-14,
+      "two_excitation_support_error": 0.0,
+      "residual_error": 4.9665409252016117e-14,
+      "mean": 7.897614377113959,
+      "variance": 9.07402215465391,
+      "moment_errors": [
+        8.881784197001252e-16,
+        0.0
+      ]
+    }
+  ],
+  "limitations": "Double precision, finitely many dimensions/parameters; no long-time evolution test or blanket theorem validation. Auxiliary full excitation sectors are retained; the contraction/runtime fixture uses the permitted one-clock-head sector. No native device, preparation, work identification, or empirical evidence.",
+  "editable_prompt_files_changed": []
+}

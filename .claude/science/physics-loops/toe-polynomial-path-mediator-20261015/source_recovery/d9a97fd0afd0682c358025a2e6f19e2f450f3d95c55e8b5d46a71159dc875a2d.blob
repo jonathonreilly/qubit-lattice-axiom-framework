@@ -1,0 +1,38 @@
+--- DERIVATION.first_draft.md
++++ DERIVATION.md
+@@ -316,7 +316,7 @@
+ 
+ For ideal preparation and exact installed parameters, a sufficient full-output trace budget `0<epsilon<=1` is
+ 
+-    n >= max(1, ceil(8 L_C^2 tau^4/epsilon^2)),
++    n = max(1, ceil(8 L_C^2 tau^4/epsilon^2)),
+     eta=epsilon/4,
+ 
+ so (19) is at most epsilon/2 and the full trace error is at most epsilon. At fixed h,g,tau,L_C, this explicit recipe gives
+@@ -333,7 +333,7 @@
+ 
+ The entries of B are rational for integer m, and B is a positive tridiagonal matrix with no zero pivot. Exact rational elimination gives T with finite bit lengths polynomial in m log m: after multiplying B by m^2, determinant and cofactor integer sizes have O(m log m) bit bounds from the row norms. This is coefficient bookkeeping, not an assertion that the original waveform or an arbitrary target-unitary compiler is efficient. Their evaluation/certification costs remain supplied.
+ 
+-There is no hidden exponential sensitivity in the local inverse-entry certificate. If `||delta B|| <= 1/(2m^2)`, the resolvent identity gives
++There is no hidden exponential sensitivity in the local inverse-entry certificate. For real symmetric path-parameter perturbations with `||delta B|| <= 1/(2m^2)`, the resolvent identity gives
+ 
+     ||(B+delta B)^(-1)-B^(-1)|| <= 2m^4 ||delta B||.
+ 
+@@ -361,7 +361,7 @@
+ 
+ ## 10. Supplied preparation, actual release chronology, and work
+ 
+-The runtime theorem is autonomous after initialization: (10) is static. That does not make its pure initial clock and auxiliary vacuum native. There are k=2m-3 new bits. A supplied positive product preparation Hamiltonian
++The runtime theorem is autonomous after initialization: (10) is static. That does not make its pure initial clock and auxiliary vacuum native. There are k=2m-3 new bits. For nu>0, a supplied positive product preparation Hamiltonian
+ 
+     G_prep = nu[(I-n_(c_0))+sum_(other new bits v) n_v]
+ 
+@@ -383,7 +383,7 @@
+ 
+ On the ideal bit state G_prep vanishes. Relative to that fixed controller and the actual H_P-aged old input, the release isometry error is at most `||F|| integral_0^s u(t)dt <= ||F||s`. The correlated source replacement g(delta_bar) is charged first. Runtime then starts from the old state aged by this real duration s. Starting its U_C on the pre-release old state would discard actual evolution. The complete source, release, runtime, and reference chronology is retained.
+ 
+-For a chosen release isometry allowance eta_rel, the sufficient finite choice `s<=eta_rel/||F||` makes the release cost explicit. A fixed-shape ramp has finite but growing slew of order `||F||/s`, thus order `||F||^2/eta_rel`; the polynomial norm bound makes this a polynomial *allowance*, not an actuator implementation. The ramp's actual scalar is included. For the ideal closed evolution under this monotone interpolation,
++Let `B_F=B_X+r g+c_ct+Delta ell_A+2sqrt(Delta)v`, a computable bound on ||F||. For a chosen release isometry allowance eta_rel, take `s=eta_rel/B_F`. If the fixed ramp shape has `max|u'|<=c_u/s`, its full-generator slew is at most `c_u(B_F+k nu)B_F/eta_rel`. This retains the preparation Hamiltonian's norm, which need not be smaller than B_F. It is a polynomial *allowance* in the displayed runtime parameters, k nu and eta_rel^-1, not an actuator implementation. The ramp's actual scalar is included. For the ideal closed evolution under this monotone interpolation,
+ 
+     |W_rel| <= integral ||dot H_rel||dt <= ||F-G_prep||.
+ 

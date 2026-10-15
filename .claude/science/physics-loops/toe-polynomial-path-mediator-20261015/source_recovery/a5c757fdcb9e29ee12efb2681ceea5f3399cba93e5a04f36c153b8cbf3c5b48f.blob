@@ -1,0 +1,28 @@
+{
+  "exact_reused_file": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/record_metadata.py",
+    "bytes": 2123,
+    "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+  },
+  "current_file": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/record_metadata.py",
+    "bytes": 2123,
+    "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+  },
+  "scope": "Only the bounded metadata recorder is claimed byte-exact reused; capture/verification/seal adapted for the explicit present source allowlist. No science runner exists.",
+  "first_draft": {
+    "bytes": 34855,
+    "sha256": "4648e162db7b15e20016de0f248894aa15e349c5df47554845e080882d2a7fd6"
+  },
+  "current_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/DERIVATION.md",
+    "bytes": 35057,
+    "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+  },
+  "actual_operation_failures": [],
+  "draft_corrections": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/DRAFT_CORRECTIONS.patch",
+    "bytes": 3496,
+    "sha256": "d9a97fd0afd0682c358025a2e6f19e2f450f3d95c55e8b5d46a71159dc875a2d"
+  }
+}

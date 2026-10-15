@@ -1,0 +1,75 @@
+"""Verify recorded metadata and manuscript structure; not mathematical execution."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data),
+            'sha256': hashlib.sha256(data).hexdigest()}
+
+
+def verify_row(row, path=None):
+    actual = pin(Path(path or row['path']))
+    assert actual['bytes'] == row['bytes']
+    assert actual['sha256'] == row['sha256']
+
+
+manifest = json.loads((D/'SOURCE_MANIFEST.json').read_text())
+assert manifest['current_root_polynomial_candidate_accessed'] is False
+assert manifest['scientific_programs_run'] == 0
+for row in manifest['sources']:
+    verify_row(row, row['original_path'])
+    verify_row(row, D/row['recovery'])
+for row in manifest['source_freezes_verified']:
+    path = Path(row['path'])
+    assert pin(path)['sha256'] == row['sha256']
+    freeze = json.loads(path.read_text())
+    assert len(freeze['files']) == row['members_verified_as_bytes']
+    for member in freeze['files']:
+        path_member = Path(member['path'])
+        if not path_member.is_absolute():
+            path_member = path.parent/path_member
+        assert path_member.resolve().is_relative_to(path.parent.resolve())
+        verify_row(member, path_member)
+
+receipt_path = D/'metadata_runs/capture/EXECUTION.json'
+receipt = json.loads(receipt_path.read_text())
+assert receipt['exit_code'] == 0 and receipt['timed_out'] is False
+assert receipt['timeout_seconds'] == 60 and receipt['scientific_programs_run'] == 0
+assert receipt['argv'][1] == str(D/'capture_sources.py')
+for key in ('child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr'):
+    verify_row(receipt[key])
+assert (receipt_path.parent/'executed_source.py').read_bytes() == (D/'capture_sources.py').read_bytes()
+
+scripts = []
+for name in ('record_metadata.py', 'capture_sources.py', 'verify_metadata.py', 'seal.py'):
+    path = D/name
+    data = path.read_bytes()
+    assert data.endswith(b'\n') and not data.endswith(b'\n\n')
+    ast.parse(data.decode(), filename=str(path))
+    scripts.append(pin(path))
+proof = (D/'DERIVATION.md').read_text()
+assert proof.startswith('# Polynomial one-port path mediation')
+assert sum(line.startswith('## ') for line in proof.splitlines()) == 12
+assert proof.endswith('\n') and not proof.endswith('\n\n')
+assert (D/'DRAFT_CORRECTIONS.patch').exists()
+report = {
+    'verified_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Identity, recovery, receipt, AST and manuscript structure only',
+    'derivation': pin(D/'DERIVATION.md'),
+    'source_count': len(manifest['sources']),
+    'source_freezes_verified': manifest['source_freezes_verified'],
+    'metadata_capture_receipt': pin(receipt_path),
+    'script_syntax': scripts,
+    'scientific_programs_run': 0,
+    'scientific_claims_verified_by_this_program': False,
+}
+(D/'VERIFICATION.json').write_text(json.dumps(report, indent=2)+'\n')
+print(json.dumps({'sources': report['source_count'], 'source_freezes': len(report['source_freezes_verified']),
+                  'script_syntax': len(scripts), 'scientific_programs_run': 0}))

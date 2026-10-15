@@ -1,0 +1,44 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110611,
+      "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+      "claim_id": "basis_state_waveform_clock_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "root_author",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 23221,
+          "end_byte_exclusive": 46477,
+          "bytes": 23256,
+          "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46"
+        },
+        {
+          "name": "independent_author",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 46638,
+          "end_byte_exclusive": 75811,
+          "bytes": 29173,
+          "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+        },
+        {
+          "name": "comparison",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 75964,
+          "end_byte_exclusive": 110611,
+          "bytes": 34647,
+          "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "root_author",
+        "independent_author",
+        "comparison"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "git_ancestry_is_not_mathematical_dependency": true,
+  "scope": "Sole direct basis-clock parent; changed auxiliary families are proved in current exact bodies"
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "polynomial-path-independent-source-manifest-v1",
+  "captured_utc": "2026-10-15T19:55:54.812201+00:00",
+  "scope": "Pre-exposure derivation; selective exact source recovery",
+  "current_root_polynomial_candidate_accessed": false,
+  "other_worker_current_sources_accessed": false,
+  "earlier_mass_regularization_exposure": true,
+  "scientific_programs_run": 0,
+  "source_freezes_verified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/FINAL_FREEZE.json",
+      "sha256": "6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3",
+      "members_verified_as_bytes": 42
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10",
+      "members_verified_as_bytes": 2
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/FINAL_FREEZE.json",
+      "sha256": "6d0eb6e19a96167e3bb967a16f3a38f80daf2077563ac98195631c4622be6fe4",
+      "members_verified_as_bytes": 37
+    }
+  ],
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/REPORT.md",
+      "bytes": 34647,
+      "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2",
+      "recovery": "source_recovery/8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2.blob",
+      "coverage": "Complete unchanged permitted comparison; prior complete read reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/FINAL_FREEZE.json",
+      "bytes": 8419,
+      "sha256": "6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3",
+      "recovery": "source_recovery/6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3.blob",
+      "coverage": "Prior immutable comparison freeze; all members checked as bytes"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/READ_COVERAGE.md",
+      "bytes": 2617,
+      "sha256": "10c6e80c36ce5e4691c045ed2045aba6f78c75e8d5ef7f404e4479a6ea87b95f",
+      "recovery": "source_recovery/10c6e80c36ce5e4691c045ed2045aba6f78c75e8d5ef7f404e4479a6ea87b95f.blob",
+      "coverage": "Prior exact reading/exposure record"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/DERIVATION.md",
+      "bytes": 24070,
+      "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d",
+      "recovery": "source_recovery/0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d.blob",
+      "coverage": "Complete unchanged permitted autonomous source; prior complete read reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 704,
+      "sha256": "f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10",
+      "recovery": "source_recovery/f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10.blob",
+      "coverage": "Exact earlier candidate freeze; no current polynomial candidate accessed"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/REPORT.md",
+      "bytes": 32692,
+      "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d",
+      "recovery": "source_recovery/52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d.blob",
+      "coverage": "Complete unchanged permitted autonomous review; prior complete read reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/FINAL_FREEZE.json",
+      "bytes": 7598,
+      "sha256": "6d0eb6e19a96167e3bb967a16f3a38f80daf2077563ac98195631c4622be6fe4",
+      "recovery": "source_recovery/6d0eb6e19a96167e3bb967a16f3a38f80daf2077563ac98195631c4622be6fe4.blob",
+      "coverage": "Earlier report freeze; exact byte verification, not a new science check"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "recovery": "source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "coverage": "Unchanged current instructions; previous complete reading reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "recovery": "source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "coverage": "Unchanged current workflow; previous complete reading reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "recovery": "source_recovery/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.blob",
+      "coverage": "Previously read unchanged reviewer skill; not an audit invocation"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/record_metadata.py",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "recovery": "source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob",
+      "coverage": "Byte-exact reuse of bounded metadata recorder"
+    }
+  ]
+}

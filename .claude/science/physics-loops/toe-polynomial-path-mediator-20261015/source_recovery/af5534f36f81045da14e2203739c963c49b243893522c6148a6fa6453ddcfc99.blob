@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-15T20:44:48.892963+00:00",
+  "staging": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/STAGED_VERIFICATION.json",
+    "bytes": 283815,
+    "sha256": "42e530e4773270f5b7c950e7fee560cee1729cf9a90a2e94b9d24a5d1a2f7802"
+  },
+  "paths_verified": 427,
+  "archive_originals_verified": 514,
+  "canonical_files_verified": 98,
+  "provenance_mutants_rejected": 21,
+  "source_integrity_only": true,
+  "focused_checker": {
+    "base": "HEAD",
+    "changed_path_count": 99,
+    "checked": [],
+    "control_failures": [],
+    "diff_scope": "committed_and_worktree",
+    "failures": [],
+    "schema": "changed_audit_evidence_readiness_v1"
+  },
+  "graph_recovery": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/GRAPH_RECOVERY.json",
+    "bytes": 1432,
+    "sha256": "1b9ddd1896407a608ccb56dce14ea20763fd4359f34243bbb8cbe9819e7fef88"
+  },
+  "pr_body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/PR_BODY.md",
+    "bytes": 2981,
+    "sha256": "b2bf72d7d48c3001eb259739d68e2ca8cacd92bfb3b6651caa3ed385ce16772d"
+  },
+  "review_scope": "Changed argument/framing and source-code review retained at exact identities; all staged bytes, compressed provenance, narrow attributes, graph delta and actual receipts checked. No scientific execution or independent retained audit.",
+  "decision": "Publish regular conditional-support milestone; no merge or main push",
+  "editable_prompt_files_changed": []
+}

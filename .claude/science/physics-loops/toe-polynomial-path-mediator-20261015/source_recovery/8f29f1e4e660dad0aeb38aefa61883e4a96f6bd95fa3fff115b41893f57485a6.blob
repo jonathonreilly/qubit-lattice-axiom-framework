@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-15T20:01:16.139365+00:00",
+  "kind": "Root complete pre-comparison analytical read; no final acceptance",
+  "independent_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/DERIVATION.md",
+    "bytes": 35057,
+    "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+  },
+  "independent_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/FINAL_FREEZE.json",
+    "bytes": 6582,
+    "sha256": "2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9"
+  },
+  "members_verified": 33,
+  "source_count": 11,
+  "receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/metadata_runs/capture/EXECUTION.json",
+      "bytes": 2126,
+      "sha256": "95b81f81469ddb965098152d03ec07fe4ff2314ae69f3b78ec77c126193d07ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/metadata_runs/verify/EXECUTION.json",
+      "bytes": 2122,
+      "sha256": "7fca75e9786ccaa2a28ebd7c6935a40de8801c3a38b92dfc3b5027146c549d90"
+    }
+  ],
+  "complete_current_sources_read": [
+    "DERIVATION.md",
+    "EXPOSURE_AND_LIMITS.md",
+    "ROUTE_AND_COVERAGE.md",
+    "capture_sources.py",
+    "verify_metadata.py",
+    "seal.py",
+    "SOURCE_MANIFEST.json",
+    "METADATA_REUSE.json",
+    "DRAFT_CORRECTIONS.patch"
+  ],
+  "reading_limit": "The first tool return was truncated; missing proof interval lines80\u2013300 was subsequently read completely before this record. Metadata checks verify identity, not mathematics.",
+  "root_analytical_findings": [
+    "Endpoint current identity and total response m^2 imply every endpoint response in [m/2,2m]; general current bounded by1 yields diagonal<=2m and B-inner-product Cauchy Schwarz yields>=m.",
+    "Full positive block lower bound mu N and uniform one-head eigenvector prove exact vacuum gap m^-2 and full inverse m^2, including two-excitation corrector. All-occupied state attains exact norm2(m-1)+1/m.",
+    "Complex Y-sign, plant n_p counterterm, one-head cross-term cancellation, bare endpoint corrections and full noncommuting residual checked.",
+    "Printed C1,C2,D_Delta cover F1<=C1 m^4,F2<=C2 m^6 and Delta=D_Delta m^8/eta^2; full norm<=C_B m^9/eta^2.",
+    "Positive-edge clock phase, actual scalar, full moments, coefficient count, calibration, correlated marginal and release slew were checked with unchanged source premises.",
+    "Root construction uses different mu=m^-3 and q=1/m. Families must be compared explicitly; no silent replacement."
+  ],
+  "root_current_candidate_exposed_to_worker_before_this_record": false,
+  "decision": "Allow exposed comparison now; preserve both frozen derivations. Final interpretation and independent comparison still pending.",
+  "scientific_programs_run": 0,
+  "metadata_only": true,
+  "editable_prompt_files_changed": []
+}

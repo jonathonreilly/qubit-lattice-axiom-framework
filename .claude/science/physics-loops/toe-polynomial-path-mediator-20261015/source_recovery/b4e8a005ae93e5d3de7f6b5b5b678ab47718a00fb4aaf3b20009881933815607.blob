@@ -1,0 +1,39 @@
+from pathlib import Path
+import datetime,hashlib,json
+N=Path(__file__).resolve().parents[1];D=N/'polynomial_path_mediator_comparison';R=N/'polynomial_path_mediator_root_review'
+def read(p):return json.loads(Path(p).read_text())
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def freeze(p,digest):
+ assert pin(p)['sha256']==digest
+ rows=read(p)['files']
+ for r in rows:same(p.parent/r['path'],r)
+ return {'freeze':pin(p),'members':len(rows)}
+checks=[freeze(D/'FINAL_FREEZE.json','321c3aaa50591eb381bbbc9b51d4d00ee52f4ef7f6af86ab0b7e9358f1510654'),freeze(N/'polynomial_path_mediator_root_candidate/PROPOSAL_FREEZE.json','60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04'),freeze(N/'polynomial_path_mediator_independent/FINAL_FREEZE.json','2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9')]
+manifest=read(D/'SOURCE_MANIFEST.json');assert len(manifest['sources'])==16
+for r in manifest['sources']:same(r['original_path'],r);same(D/r['recovery'],r)
+receipts=[]
+for name in ('capture','verify'):
+ p=D/'metadata_runs'/name/'EXECUTION.json';r=read(p);assert r['exit_code']==0 and r['scientific_programs_run']==0
+ for key in ('child_source_at_launch','source_capture','recorder','stdout','stderr'):same(r[key]['path'],r[key])
+ assert r['source_capture']['sha256']==r['child_source_at_launch']['sha256'];receipts.append(pin(p))
+fixture=N/'polynomial_path_mediator_root_fixture';checks.append(freeze(fixture/'FINAL_FREEZE.json','eb5027b361fd91e2dfc944f39d86a448dbfc1d30994fc1a3e2a54e561f35eb32'))
+assert pin(D/'REPORT.md')['sha256']=='3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067'
+assert not R.exists();R.mkdir()
+text='''# Qualified root source acceptance: polynomial path mediators
+
+The complete 31,455-byte exposed comparison 3cc7a9d3 supports both frozen conditional constructions. Root previously read the complete protected 35,057-byte derivation 0620431a before exposure and authored the 18,554-byte candidate 45c211e6. All current report sections, exposure, handoff and coverage were read completely. The finite Poincare sum, endpoint-current response bound, full-sector positivity and inverse, complex contraction signs, two-excitation corrector, both bare endpoints, phase, scalar, moment, coefficient and resource estimates support the stated domains.
+
+Acceptance requires the explicit minimal clock-size ceiling, or a matching upper bound, when claiming polynomial accuracy powers. A lower condition on n alone is insufficient. Choose a sufficient Delta recipe as well. Original sources remain immutable. The exposed comparison's explicit root majorants are attributed to that comparison.
+
+Keep the physical families separate. Root uses mu=m^-3 and q=1/m, inverse m^3, all-entry responses of order m^2 and bounded plant counterterm; sufficient Delta/full norm scale as m^12/m^13 divided by eta_med^2. Independent uses mu=m^-2 and q=sqrt(max(1,g)), inverse m^2, endpoint responses of order m and a growing plant counterterm; sufficient Delta/full norm scale as m^8/m^9 divided by eta_med^2. At the stated minimal clock size their full-norm upper powers are epsilon^-28 and epsilon^-20 respectively, at fixed supplied waveform/background parameters. These are sufficient upper bounds, not optimality or practical efficiency.
+
+The exact full-sector scalar, actual positive reserves, source coefficients, full auxiliary inverse, old/reference/controller output, unconditional retained marginal, release aging, preparation-plus-runtime slew, and growing norm factors for energy moments remain required. Real weighted-path inverse calibration and arbitrary full-generator errors are distinct. Positive-block faults require certified positive parameters or paid reserves. Native source/cooling, isolation/calibration/release hardware, compiler complexity, physical energy/detector identification, common caps, permanent stopping and reuse remain open. This does not derive physical axioms or retained audit status.
+
+One separate root scientific matrix fixture actually ran, with captured source and receipts: 14 full auxiliary spectra, 14 inverse cases and four noncommuting complex-source corrector/moment cases in finite double precision. Its passed residual and moment checks are a narrow exposed sanity check, not a proof or an independent review. The comparison author did not inspect or rely on its files and disclosed only notification exposure. This acceptance run performs metadata checks only and does not rerun that fixture. Same model and prior regularization exposure remain disclosed. No editable prompt changed.
+'''
+(R/'ACCEPTANCE.md').write_text(text)
+review={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'kind':'root_conditional_source_acceptance','decision':'Accept both conditional source families with explicit minimal-clock-size qualification','acceptance':pin(R/'ACCEPTANCE.md'),'comparison':pin(D/'REPORT.md'),'verified_freezes':checks,'sources_verified':16,'metadata_receipts':receipts,'root_precomparison_read':pin(N/'polynomial_path_mediator_precomparison_root_review/READ_REVIEW.json'),'root_fixture_results':pin(fixture/'RESULTS.json'),'scientific_programs_run_this_acceptance':0,'historical_root_scientific_fixtures':1,'same_model':True,'independent_audit':False,'editable_prompt_files_changed':[]}
+(R/'REVIEW.json').write_text(json.dumps(review,indent=2)+'\n');(R/'FINAL_FREEZE.json').write_text(json.dumps({'utc':review['utc'],'files':[pin(R/'ACCEPTANCE.md'),pin(R/'REVIEW.json')]},indent=2)+'\n')
+print(json.dumps({'review':pin(R/'REVIEW.json'),'acceptance':pin(R/'ACCEPTANCE.md'),'freeze':pin(R/'FINAL_FREEZE.json'),'verified_members':[r['members'] for r in checks]}))

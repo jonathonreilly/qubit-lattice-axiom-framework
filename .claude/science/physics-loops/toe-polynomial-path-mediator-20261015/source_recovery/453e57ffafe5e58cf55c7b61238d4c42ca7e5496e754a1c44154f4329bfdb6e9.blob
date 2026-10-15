@@ -1,0 +1,136 @@
+{
+  "schema": "polynomial-path-exposed-comparison-manifest-v1",
+  "captured_utc": "2026-10-15T20:15:33.222350+00:00",
+  "scope": "Source-exposed analytic comparison; exact narrow recovery",
+  "root_candidate_exposed_after_independent_freeze": true,
+  "root_fixture_notification_received": true,
+  "root_fixture_files_inspected": false,
+  "scientific_programs_run_by_this_checker": 0,
+  "source_freezes_verified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04",
+      "members_verified_as_bytes": 2
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/FINAL_FREEZE.json",
+      "sha256": "2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9",
+      "members_verified_as_bytes": 33
+    }
+  ],
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/DERIVATION.md",
+      "bytes": 18554,
+      "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893",
+      "recovery": "source_recovery/45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893.blob",
+      "coverage": "Complete newly exposed candidate; all eight sections read"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/SOURCE_PINS.json",
+      "bytes": 2728,
+      "sha256": "78ecb13acae41c653c96f3c5b2943f69aa4969022a7061f03318189b27cd88e2",
+      "recovery": "source_recovery/78ecb13acae41c653c96f3c5b2943f69aa4969022a7061f03318189b27cd88e2.blob",
+      "coverage": "Complete root source/exposure pins; unselected historical rows are not new imports"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 695,
+      "sha256": "60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04",
+      "recovery": "source_recovery/60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04.blob",
+      "coverage": "Root two-member immutable candidate freeze"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/DERIVATION.md",
+      "bytes": 35057,
+      "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7",
+      "recovery": "source_recovery/0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7.blob",
+      "coverage": "Complete protected independent proof, unchanged"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/FINAL_FREEZE.json",
+      "bytes": 6582,
+      "sha256": "2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9",
+      "recovery": "source_recovery/2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9.blob",
+      "coverage": "Independent 33-member pre-exposure freeze"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_precomparison_root_review/READ_REVIEW.json",
+      "bytes": 3149,
+      "sha256": "8f29f1e4e660dad0aeb38aefa61883e4a96f6bd95fa3fff115b41893f57485a6",
+      "recovery": "source_recovery/8f29f1e4e660dad0aeb38aefa61883e4a96f6bd95fa3fff115b41893f57485a6.blob",
+      "coverage": "Complete root read record; not an executable launch receipt or final acceptance"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/REPORT.md",
+      "bytes": 34647,
+      "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2",
+      "recovery": "source_recovery/8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2.blob",
+      "coverage": "Complete unchanged prior comparison; exact permitted mechanics and marginal lemma reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/DERIVATION.md",
+      "bytes": 24070,
+      "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d",
+      "recovery": "source_recovery/0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d.blob",
+      "coverage": "Complete unchanged prior autonomous source; exact permitted reading reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/REPORT.md",
+      "bytes": 32692,
+      "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d",
+      "recovery": "source_recovery/52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d.blob",
+      "coverage": "Complete unchanged prior autonomous review; exact permitted reading reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "recovery": "source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "coverage": "Unchanged instructions; previous complete reading reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "recovery": "source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "coverage": "Unchanged workflow; previous complete reading reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "recovery": "source_recovery/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.blob",
+      "coverage": "Unchanged review skill; previous complete reading reused, not an audit"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/record_metadata.py",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "recovery": "source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob",
+      "coverage": "Byte-exact bounded metadata recorder reuse"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/EXPOSURE_AND_LIMITS.md",
+      "bytes": 2642,
+      "sha256": "bad4a15eae8d700a75d8f29092283818470fd2663fc107d4a03c92fb89220218",
+      "recovery": "source_recovery/bad4a15eae8d700a75d8f29092283818470fd2663fc107d4a03c92fb89220218.blob",
+      "coverage": "Protected independent exposure/route/correction history; unchanged"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/ROUTE_AND_COVERAGE.md",
+      "bytes": 3017,
+      "sha256": "b9092f19da5da3c8ef92b35b4018179e06bf4d38b4813779a709b22e1d0d299a",
+      "recovery": "source_recovery/b9092f19da5da3c8ef92b35b4018179e06bf4d38b4813779a709b22e1d0d299a.blob",
+      "coverage": "Protected independent exposure/route/correction history; unchanged"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/DRAFT_CORRECTIONS.patch",
+      "bytes": 3496,
+      "sha256": "d9a97fd0afd0682c358025a2e6f19e2f450f3d95c55e8b5d46a71159dc875a2d",
+      "recovery": "source_recovery/d9a97fd0afd0682c358025a2e6f19e2f450f3d95c55e8b5d46a71159dc875a2d.blob",
+      "coverage": "Protected independent exposure/route/correction history; unchanged"
+    }
+  ],
+  "root_read_record_is_execution_receipt": false
+}

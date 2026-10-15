@@ -1,0 +1,11 @@
+# Exposed comparison handoff
+
+REPORT.md supports both frozen conditional resource families, with one explicit root qualification: its accuracy powers use the displayed minimal ceiling for n (or a matching upper bound), not every larger size satisfying the lower error condition. The original root and protected independent derivations remain immutable.
+
+Keep the two ledgers separate. Root has mu=m^-3, q=1/m, a complete inverse m^3, all inverse entries of order m^2, and a bounded port counterterm. Its sufficient full norm is O(m^13/eta_med^2), giving O(epsilon^-28) at the chosen minimal basis-clock size. Independent has mu=m^-2, q=sqrt(max(1,g)), endpoint responses of order m, a complete inverse m^2, and a port counterterm growing with m. Its sufficient full norm is O(m^9/eta_med^2), giving O(epsilon^-20). Neither ledger can borrow the other's constants or phases without a new calculation.
+
+The report explicitly checks both complete positive auxiliary penalties, all-source contraction, nonscalar plant term, full noncommuting two-excitation corrector, both bare endpoint errors, actual coherent phase, full norms/scalars, prepared moments and calibration. It preserves the exact unconditioned old marginal, supplied release aging, full preparation-plus-runtime slew, and growing norm factors for energy claims.
+
+No scientific execution occurred in this checker. The root's separately announced finite fixture was not opened or relied on. The current metadata receipts only verify source and recovery identities, freeze members, syntax and receipt integrity. Root's pre-comparison read record is archived exactly as the record it is, without an invented executable receipt. SOURCE_MANIFEST.json and FINAL_FREEZE.json identify the narrow recovery packet.
+
+This is a same-model source-exposed comparison, not another protected derivation or an audit. Native state supply, controller release hardware, isolation/calibration, total external compiler length and oracle costs, common physical caps, permanent halting and reuse remain open. Root acceptance/publication are not performed by this packet.

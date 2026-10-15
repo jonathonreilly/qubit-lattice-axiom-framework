@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-15T20:04:10.576156+00:00",
+  "scope": "Authorized source-exposed comparison after protected independent freeze and complete root read",
+  "root_candidate_first_complete_read_utc": "2026-10-15T20:01:44Z",
+  "independent_freeze_sha256": "2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9",
+  "root_precomparison_record_sha256": "8f29f1e4e660dad0aeb38aefa61883e4a96f6bd95fa3fff115b41893f57485a6",
+  "candidate_sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893",
+  "science_programs_run": 0,
+  "model_or_effort_override": false,
+  "new_agents": 0,
+  "original_sources_modified": false,
+  "root_final_acceptance": null
+}

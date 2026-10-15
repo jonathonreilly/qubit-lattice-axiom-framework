@@ -1,0 +1,106 @@
+{
+  "canonical_parent": {
+    "path": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 110611,
+    "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+    "claim_id": "basis_state_waveform_clock_bounded_theorem_note_2026-10-15"
+  },
+  "body_intervals": [
+    {
+      "name": "root_author",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 23221,
+      "end_byte_exclusive": 46477,
+      "bytes": 23256,
+      "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46"
+    },
+    {
+      "name": "independent_author",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 46638,
+      "end_byte_exclusive": 75811,
+      "bytes": 29173,
+      "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+    },
+    {
+      "name": "comparison",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 75964,
+      "end_byte_exclusive": 110611,
+      "bytes": 34647,
+      "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+    }
+  ],
+  "parent_metadata": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_review/ACCEPTANCE.md",
+      "bytes": 2495,
+      "sha256": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0",
+      "role": "parent_conditional_source_acceptance"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_root_review/ACCEPTANCE.json",
+      "bytes": 12693,
+      "sha256": "eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708",
+      "role": "parent_source_publication_wrapper_acceptance"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/PUBLICATION.json",
+      "bytes": 1554,
+      "sha256": "bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a",
+      "role": "parent_actual_regular_publication"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/ATTACHMENT.json",
+      "bytes": 216,
+      "sha256": "397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e",
+      "role": "parent_actual_attachment"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/ROOT_STAGED_REVIEW.json",
+      "bytes": 1698,
+      "sha256": "af5534f36f81045da14e2203739c963c49b243893522c6148a6fa6453ddcfc99",
+      "role": "parent_actual_staged_root_decision"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-basis-state-clock-20261015/BODY_MAP.json",
+      "bytes": 1032,
+      "sha256": "d9b384259bc086aedd10b8bc5cdac3640d8d5dcc59344fa98ce4d6a38d4ac67e",
+      "role": "parent_actual_canonical_body_map"
+    }
+  ],
+  "gzip_reviews": [],
+  "publication": {
+    "utc": "2026-10-15T20:45:07.261001+00:00",
+    "baseRefName": "physics-loop/toe-local-gibbs-controller-source-20261015",
+    "headRefName": "physics-loop/toe-basis-state-clock-20261015",
+    "headRefOid": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+    "isDraft": false,
+    "number": 9619,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9619",
+    "tree": "f6cd39bef5bd6c27b87e29f342a447890ab36f74",
+    "base_head": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+    "source_note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110611,
+      "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1"
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/basis_state_waveform_clock_2026_10_15.py",
+      "bytes": 27705,
+      "sha256": "be56d6b12e89e981a92e672bae6e592f768383c69bd808d1057c4133586d1e86"
+    },
+    "body": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/PR_BODY.md",
+      "bytes": 3191,
+      "sha256": "2ae75f9a0f8fafcdc11b4e15c1601c8e62067eeee8f2af89dc22b731a9a44255"
+    },
+    "science_merged": false,
+    "main_pushed": false,
+    "audit_applied": false,
+    "editable_prompt_files_changed": [],
+    "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+  },
+  "scope": "Observed actual sole basis-clock parent, PR9619 and exact canonical body/review intervals. These parent records do not set this draft's future Git base or publication review. INITIAL_BINDING.json retains historical nulls."
+}

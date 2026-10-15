@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T20:45:07.261001+00:00",
+  "baseRefName": "physics-loop/toe-local-gibbs-controller-source-20261015",
+  "headRefName": "physics-loop/toe-basis-state-clock-20261015",
+  "headRefOid": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+  "isDraft": false,
+  "number": 9619,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9619",
+  "tree": "f6cd39bef5bd6c27b87e29f342a447890ab36f74",
+  "base_head": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 110611,
+    "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/basis_state_waveform_clock_2026_10_15.py",
+    "bytes": 27705,
+    "sha256": "be56d6b12e89e981a92e672bae6e592f768383c69bd808d1057c4133586d1e86"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/PR_BODY.md",
+    "bytes": 3191,
+    "sha256": "2ae75f9a0f8fafcdc11b4e15c1601c8e62067eeee8f2af89dc22b731a9a44255"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

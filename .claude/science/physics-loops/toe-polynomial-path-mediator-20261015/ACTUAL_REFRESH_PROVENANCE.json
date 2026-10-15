@@ -1,0 +1,55 @@
+{
+  "kind": "captured_root_refresh_and_ancestry_metadata",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/6915958aa483d7d75f380a870e00e3b4150da0bf3a5d080c5f292b2c661348a2.json",
+      "bytes": 2910,
+      "sha256": "6915958aa483d7d75f380a870e00e3b4150da0bf3a5d080c5f292b2c661348a2"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a.json",
+      "bytes": 1554,
+      "sha256": "bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e.json",
+      "bytes": 216,
+      "sha256": "397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e"
+    },
+    "fetch": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2079ecf13e0a6008c736bc3ab76d3723901a8e1bf6039aeca344c850ae9f710c.json",
+        "bytes": 1175,
+        "sha256": "2079ecf13e0a6008c736bc3ab76d3723901a8e1bf6039aeca344c850ae9f710c"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d.blob",
+        "bytes": 121,
+        "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+      }
+    },
+    "inventory": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/267a03e415ed0bfa094fc89b3b201c6b17daf8b11df71744e0c0ac0b6fba035c.json",
+        "bytes": 1261,
+        "sha256": "267a03e415ed0bfa094fc89b3b201c6b17daf8b11df71744e0c0ac0b6fba035c"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2148b8810f6dac38b8b6b4fe0054124e82bcd22d7f626532ae6ceb3f0817bef1.blob",
+        "bytes": 19116,
+        "sha256": "2148b8810f6dac38b8b6b4fe0054124e82bcd22d7f626532ae6ceb3f0817bef1"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "scope": "Historical fetch/inventory and base-publication provenance; the observed base is separately bound as Git ancestry; its exact canonical basis-clock note and all three raw proof/review intervals are the sole mathematical import/evidence. No other ancestor theorem is imported."
+}

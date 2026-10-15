@@ -1,0 +1,11 @@
+# Pre-exposure handoff
+
+Read DERIVATION.md completely for the proposed conditional result. Its new quantitative ingredients are the prefix-current bounds in Section 4, complete corrector and constants in Section 7, and all physical resource/precision/moment prices in Sections 8–10. The current root polynomial-path candidate has not been exposed to this author before sealing. The final freeze does not confer root acceptance or an audit status.
+
+The construction uses a positive auxiliary path Laplacian with mass mu=m^-2. The auxiliary penalty has a unique vacuum, gap m^-2, full reduced inverse norm m^2, endpoint-to-every-source response in [m/2,2m], and diagonal inverse entries in [m,2m]. With q=sqrt(max(1,g)), source amplitudes are O(1/m), the port counterterm is O(m), and the complete bare-input error is achieved by the explicit sufficient Delta=D_Delta m^8/eta^2. The full generator allowance is C_B m^9/eta^2. Constants are printed, not hidden in the order notation.
+
+At fixed supplied waveform/background parameters, combining the basis-state clock gives a sufficient full trace-error recipe with m=O(epsilon^-2), penalty O(epsilon^-18), and full norm/scalar allowance O(epsilon^-20). These are conservative sufficient powers, not optimality claims or polynomial bounds on the external compiler's dependence on arbitrary target size.
+
+All clock/plant/reference/auxiliary outputs remain in the same-time comparison; the reserve phase is retained, physical blocks are positive, and initial moments are computed for the actual bare generator. The correlated preparation clause retains the exact unconditional old marginal using g(delta), with actual aging during any supplied release. Its slew includes both runtime and preparation norms. Growing full norms are charged when transferring state error to energy moments.
+
+SOURCE_MANIFEST.json and source_recovery contain selective exact recovery. Metadata receipts record only source/byte verification and syntax, never a physics execution. DRAFT_CORRECTIONS.patch preserves the actual pre-seal corrections. FINAL_FREEZE.json lists the immutable current members. No follow-on comparison should mutate this folder.

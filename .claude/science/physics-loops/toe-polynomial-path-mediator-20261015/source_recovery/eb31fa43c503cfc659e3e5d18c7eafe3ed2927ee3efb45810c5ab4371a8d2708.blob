@@ -1,0 +1,238 @@
+{
+  "utc": "2026-10-15T20:19:14.678577+00:00",
+  "kind": "root_source_publication_review",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/FINAL_FREEZE.json",
+    "bytes": 69901,
+    "sha256": "c5d453f67f3723cfdb729a898a33dc8c717b59cec20a8663d795611db275ef24"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 110222,
+    "sha256": "1c9c98fb077d739cbd350593ad29485b8bc4f876445aa586e4b8a96c1dc99881"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/proposal/scripts/basis_state_waveform_clock_2026_10_15.py",
+    "bytes": 24092,
+    "sha256": "d407e5643f98b66e7d9929b8e8c7226e25917d753f0948603de9765083f69fa0"
+  },
+  "body_pins": [
+    {
+      "name": "root_author",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 22832,
+      "end_byte_exclusive": 46088,
+      "bytes": 23256,
+      "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46"
+    },
+    {
+      "name": "independent_author",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 46249,
+      "end_byte_exclusive": 75422,
+      "bytes": 29173,
+      "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+    },
+    {
+      "name": "comparison",
+      "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 75575,
+      "end_byte_exclusive": 110222,
+      "bytes": 34647,
+      "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+    }
+  ],
+  "parents": [
+    {
+      "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 136036,
+      "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+      "claim_id": "single_port_program_and_autonomous_controller_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "controller_author",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 79110,
+          "end_byte_exclusive": 103180,
+          "bytes": 24070,
+          "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "controller_author"
+      ],
+      "review_evidence": [
+        {
+          "name": "controller_assessment",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 103344,
+          "end_byte_exclusive": 136036,
+          "bytes": 32692,
+          "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d"
+        }
+      ],
+      "role": "direct_mathematical_parent",
+      "import_scope": "One-port contraction, full auxiliary reduced inverse, two-excitation corrector and bare-vacuum full-output estimate; new clock and geometry are proved here. No old unary waveform or compiler theorem is silently imported."
+    }
+  ],
+  "existing_source_acceptances": {
+    "basis_clock": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_review/ACCEPTANCE.md",
+      "bytes": 2495,
+      "sha256": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0"
+    }
+  },
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "full_current_files_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/wrapper.md",
+      "bytes": 22678,
+      "sha256": "a6ba3e197b884b85e6ad35c986c63bc21237ea886211697a5b40de9d64ffc60e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/build_proposal.py",
+      "bytes": 14323,
+      "sha256": "605a94e0be8be481d52665b76c9de0b3af6c9937bf42e1d8b82104dfbacc3553"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/primary_template.py",
+      "bytes": 13171,
+      "sha256": "f1da5c0216625ab14096ca17c407d46140c51cef0796ab8c44980bd6a2ae44fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/inspect_proposal.py",
+      "bytes": 13120,
+      "sha256": "efd6063f2ff58a5ff2d4aa783dfff6ece6d0f1f70f82418781af0755d90e0e24"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/seal_packet.py",
+      "bytes": 4386,
+      "sha256": "6c0335576fee99e88f721fae463651de19a52de0859b30fed1eba37523a05e8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/prepare_sources.py",
+      "bytes": 14076,
+      "sha256": "196a1270fd696257e18d303a053726534661d149ea5b45b626056ea5840640dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/record_metadata.py",
+      "bytes": 2618,
+      "sha256": "43eee6c724ffd3e76e845789975b5dac794afd214bc0ca8a89c60454faab06e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2147,
+      "sha256": "fb0dd2cf5627fe187a5f713b0afdf98bd997fe302620bea6f7b44b59a4a2dcf9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2201,
+      "sha256": "b0011cae2caeabde29601c12743f55a98c0345a363846e37b445113dd870859a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1135,
+      "sha256": "281cdcda36eb94c3f12ae362f87bc96233e6e5bf43aef2b83124a9f854ca6997"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1686,
+      "sha256": "fb5e5a6af91935cc2f9ce65a18adb528b0e6821300f0bebe8a01b5a7e5b11176"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/HANDOFF.md",
+      "bytes": 1412,
+      "sha256": "3382108cdde13e48643de2f4b5874d1f295fa3ff987f04a74ae91171d53e8b65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/PR_BODY.md",
+      "bytes": 1315,
+      "sha256": "c0577c4cb10c98b204d4f60e26496afd207858d3714788daf548d3def519fcb4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1325,
+      "sha256": "69a30177b7303de475bc15674d607460ff8d6e9259516db41a6cd21388eee34c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3919,
+      "sha256": "9da54e08e42faef53ff7741885039bcff8f2ed2474cff2957facd1fd3c5f3a5a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/packet_text/TRACE_GATE.md",
+      "bytes": 1316,
+      "sha256": "55183f9b844e9707ae7b4000d49ffca2e05c8a5f1196677132b8609fe814a647"
+    }
+  ],
+  "read_scope": "Complete current wrapper, all nine packet texts, primary template, builder/inspector/seal/generator/recorder read. All three bodies and canonical parent proof/review reuse exact previous complete reading. All204members78sources57blobs and recovery/interval links verified, generated primary exactly rendered, four actual metadata executions and captured inputs checked. One truncated preparation-source passage was reread completely. Source-only interpretation, no new independent scientific vote.",
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation/EXECUTION.json",
+      "bytes": 2143,
+      "sha256": "8927a376c891038ea6e09c818656e53e7f54be4cb399a2b4e08eefa3b89e97c7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/helper_generation_parent_bound/EXECUTION.json",
+      "bytes": 2210,
+      "sha256": "92991545c8d8b4039107b0c0d165e1c96874229c7a436c527c6573c9877bb5cb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 2083,
+      "sha256": "bc2393794dcb709d4eb71ebf5f3045571722692bac1baff1c6670e7d8fb42c9c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_publication_draft/metadata_runs/inspection_final/EXECUTION.json",
+      "bytes": 2140,
+      "sha256": "2d9efb052e82eba028ea69f65a13183b79659a5c724f9f8a471b1e8defe997c3"
+    }
+  ],
+  "selected_source_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 687,
+        "sha256": "a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea"
+      },
+      "members": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_independent/FINAL_FREEZE.json",
+        "bytes": 6845,
+        "sha256": "e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d"
+      },
+      "members": 35
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_comparison/FINAL_FREEZE.json",
+        "bytes": 8419,
+        "sha256": "6e678e807ac242b7caeeaf0ec4e40df801b482180a4bc6d5cfe8418c351df8f3"
+      },
+      "members": 42
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_review/FINAL_FREEZE.json",
+        "bytes": 965,
+        "sha256": "32f1392f32f798df3e4eb1db4a096b558de45c465295b27c3977c0faa5a1f81f"
+      },
+      "members": 3
+    }
+  ],
+  "exact_helper_functions": 19,
+  "qualification_scope": [
+    "Principal exposed positive-edge clock has its own phase, norm, scalar, mean and corrector constants; original alternative and corrections preserved.",
+    "Correct geometric edge count and marginal versus full-joint thermal replacement; general exact unconditional retained-marginal lemma locally proved.",
+    "All-source complex contraction, complete auxiliary inverse/two-excitation corrector, arbitrary noncommuting old plant/reference and complete controller output.",
+    "Fixed-mass original mediator may have exponential coefficient cost; no polynomial improvement imported here.",
+    "Actual old aging, release reserves/work and norm-dependent moments; native cooling/preparation, isolation, physical identifications, common caps, permanent halting, compiler bounds and reuse remain open."
+  ],
+  "scientific_programs_run": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": []
+}

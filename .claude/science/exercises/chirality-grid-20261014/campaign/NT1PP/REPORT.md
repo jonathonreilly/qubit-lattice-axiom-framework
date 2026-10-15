@@ -1,5 +1,11 @@
 # NT-1″ report: completing the chiral measure (route 1)
 
+> **Referee (codex gpt-5.6-sol, 15:17Z): CONFIRMED WITH CORRECTIONS. OPEN at (b″) is correct.**
+> - **Independently confirmed:** the edge lemma, the bulk exponential decay and C(11112) = 0.
+> - **Not proved from finite sizes:** the universal "no local measure on this strip" claim. It is strongly supported.
+>
+> See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Reading: OPEN, failing (b″).**
 - **(b″) cannot be met on NT-1′'s geometry.** The reason is the geometry, not the measure.
 - **(b′) passes the fixed minimal wording for the bulk tail.** But near the open time edges, the finite-volume dependence falls only as a power of Lx, so Lüscher's uniform exponential bound fails there too.

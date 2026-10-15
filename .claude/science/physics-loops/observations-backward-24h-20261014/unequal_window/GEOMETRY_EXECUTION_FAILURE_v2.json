@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-15T17:17:29.554488+00:00",
+  "pid": 11120,
+  "command": "/Library/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python .claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/geometry_check_v2.py",
+  "elapsed_before_stop": "02:52",
+  "source_sha256": "dd9e69ea35346974b90648535cad6f3fa13f1b932ef14b343f995715e5e87241",
+  "status": "author terminated expensive symbolic expansion before output",
+  "scientific_interpretation": "No failed mathematical assertion. Preserve v2 source; retry same witness with factored Gaussian-conjugated polynomial operators."
+}

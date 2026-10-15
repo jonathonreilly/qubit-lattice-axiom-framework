@@ -95,3 +95,7 @@ Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded
 ## M15 proposed surface
 
 Target bounded_theorem; actual conditional-support; trace upstream_support to revised scalar measurement/assumption reconstruction. Necessity and one exact rank witness are checked under explicit field-law and observation premises. No empirical test, full-history converse, fundamental action selection or retained status. Final canonical reports and OPEN cluster judgment are in projected_covariance; formal audit remains required before effective retention.
+
+## M16 proposed surface
+
+Target bounded_theorem; actual conditional-support; trace upstream_support to revised scalar action/state/scale/measurement reconstruction. The exact claim is a necessary unequal-distance scalar constraint represented by a finite-pair ensemble statistic under the stated local field law, geometry, statistics and calibrated sampling conditions. It eliminates the equal-epoch diagonal and potential-boundary supplier for that test. It does not derive the physical action, initial state, absolute scale, measured-gravity environment or actual catalogue response. No independent observation fit/test, coefficient uniqueness, variance bound, full-history converse, formal audit or retained status is claimed.

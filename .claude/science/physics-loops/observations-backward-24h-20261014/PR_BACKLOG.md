@@ -82,3 +82,11 @@ Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded
 ## M15 review-ready projected construction
 
 Coherent-opening judgment OPEN; base codex/observations-backward-dynamics-20261015 at f3637a4eba. Canonical29checks0fail, source confirmations complete, mechanical delivery being frozen. Final verified URL and head will be recorded in runtime PRS.json and attached to the chat. No request to merge.
+
+## M15 published — 2026-10-15T17:04:49.530051+00:00
+
+[PR #9610](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9610), regular/open,57paths,head `44c7d3309c17380474ec253a924af6891d438b02`,tree `52c7970632dc82451847c55681e92e881ecee79c`, stacked on frozen M14. Attached; final independent delivery read. No M15 publication backlog. Next direct working route: unequal-time observation windows, only a root working probe so far. No merge or formal audit.
+
+## M16 ready for frozen delivery
+
+One regular constituent planned from codex/observations-backward-windows-20261015 against codex/observations-backward-covariance-20261015 at44c7d3309c17380474ec253a924af6891d438b02 (#9610). Content OPEN; canonical source and scoped independent correspondence complete. Package only the finite-pair theorem, its exact runner/helpers/results/cache, intentional graph delta and indexed campaign evidence. Final staged delivery precedes publication. No merge or main push.

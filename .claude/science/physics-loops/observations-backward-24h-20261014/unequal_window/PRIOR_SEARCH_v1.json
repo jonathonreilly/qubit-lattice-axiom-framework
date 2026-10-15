@@ -1,0 +1,61 @@
+{
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "time": "2026-10-15T17:36:18.583390+00:00",
+  "searches": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(unequal.time.*(shear|velocity)|(shear|velocity).*unequal.time)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json"
+      ],
+      "exit": 1,
+      "output": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(factorial.moment|Horvitz|pair.intensity)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json"
+      ],
+      "exit": 0,
+      "output": "origin/main:docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md:470:counting process has factorial moment E[C_W(C_W-1)]<=(r*m*u)\u00b2. Therefore\norigin/main:docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md:490:just their second point, or neither. Independent Poisson factorial moment\norigin/main:docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md:412:half-Ward terms, nonvacuous factorial moments and Wick subtraction.\norigin/main:docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md:239:To prove (2.3), integrate the j-th factorial moment density using the rate\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(finite.pair.*scalar|scalar.*finite.pair)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json"
+      ],
+      "exit": 0,
+      "output": "origin/main:docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md:160:For true infinite pairings approximated by these finite matrices, first add the reviewed HS input bound with q_* controlling BOTH actual and approximate products. This is essential: finiteN LU error does not control omitted HS tails. Zero-padding a valid common finite CAR frame adds determinant1 and changes no state, while inventing numerical ghost modes is not justified. Relative gauges/frames and unnormalized evolution scalars remain separately bound.\norigin/main:docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md:24:Use the [finite-excitation and scalar-energy theorem](NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md), [infinite pair/node theorem](NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md), and [canonical dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md). The native Hamiltonian and Gaussian reference remain supplied. The parent supplies the CAR implementation, trace-class polarization change and actual scalar-energy identification; the present note proves quantitative transversality for the actual two-link rank-one bipartite perturbations.\norigin/main:docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md:32:Let F_pair,delta(theta) and Omega_pair be exactly the positive paired Fock multiplier and its neutral filled state from the model-match note, with all scalar determinants retained. The finite clock Hilbert space has normalized counting measure on (Z/NZ)^E and the full finite paired Fock space. Define the temporal gauge kernel by the normalized integer jumps\norigin/main:docs/P2_KCPT_ORBIT_TEMPORAL_FACTOR_NO_GO_2026-06-06.md:99:scalar readout `I` is \"finitely additive over any finite pairwise-disjoint\norigin/main:docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md:40:  The Record axiom governs a scalar readout `I` over finite pairwise-disjoint\norigin/main:docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md:99:For the **sharp** L64 fixtures only, projection onto M2D and M2D F_b reconstructs the wall Hamiltonian within 1e-12 (historical 3.1e-15), with singlet coefficient below 1e-12 (historical 5.1e-20), |n| matching E_w to 1e-6 and n reversed between walls. Traceless F_b alone would not establish equal position densities. The runner checks the summed coarse-x-plane projector Pi_x = sum_(a,b) |x,a,b><x,a,b|: its compression is scalar on each selected sharp wall space, so normalized states there share the same x-plane marginal after summing the four transverse-cell coordinates. This is not equality at each individual vertex: a single coordinate projector compresses to rank at most one and cannot be a nonzero scalar on the four-dimensional wall space. This is finite paired taste structure; no regulator, sea, fermion measure or background-response calculation establishes a physical parity anomaly or its cancellation.\norigin/main:docs/audit/AXIOM_RESET_IMPACT_2026-06-29.md:78:  are readable, and scalar readout is additive over finite pairwise-disjoint\n",
+      "stderr": ""
+    }
+  ],
+  "closest_prior": [
+    "M14 rolling local-law and equal-time potential-covariance inverse, personally authored/checked at frozen constituent source",
+    "M15 projected equal-epoch compatibility, personally authored/checked, frozen base44c7d3309c17380474ec253a924af6891d438b02"
+  ],
+  "coverage_delta": "M16 retains independent observation distances, derives weak two-source weights, and proves a finite-pair ensemble-expectation identity with explicit selection/noise support conditions. M15 ideal continuum input is not supplied as data. General Born inversion, adjoints and importance sampling are existing methods, not new discoveries. Current main/planning unchanged; relevant PR refresh is in REPO_CONTEXT_v1. Negative search results are not proof of novelty.",
+  "primary_source_scope": "Independent observation/source report records four newly read primary papers and three scoped reused source identities; no observational arrays opened.",
+  "hit_disposition": "Root read every returned hit. The four factorial-moment hits concern record-rate/spectral constructions, and the seven finite-pair/scalar hits concern Fock/record finite-additivity or lattice fixtures. None is imported as a shear/velocity observation operator. Only matched snippets/titles were read for those unrelated hits, not their full proofs."
+}

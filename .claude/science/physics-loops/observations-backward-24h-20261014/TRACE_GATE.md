@@ -149,3 +149,25 @@ artifact_role: theorem
 next_trace_action: Establish a finite measured window functional without supplying an initial covariance.
 
 This eliminates potential boundary and ell0/1 choices only for the stated necessary constraint. It does not close actual finite-input, action, state, scale or environmental identification.
+
+## M16 working trace
+
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Finite-window supplier remains open for ideal shear/radial-velocity constraints."
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Prove or reject a finite-pair expectation functional; independently check geometry, weak pullback and physical sampling scope. This cannot select the scalar action/state or establish observed gravity.
+
+## M16 checked trace (supersedes working trace for current disposition)
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate the remaining scalar action, state, scale and measurement assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Establish actual calibrated pair response and uncertainty or a distinct normalization/environment discriminator.
+
+The finite expectation bridge is derived conditionally; its actual sampling/response supplier is not selected or retired. Physical action, state, scale and environment assumptions remain open.

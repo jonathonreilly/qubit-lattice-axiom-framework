@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-10-15T17:46:03.699823+00:00",
+  "scope": "Final scientific source/readiness checkpoint with root-owned EOF-only formatting cleanup; canonical sources, outputs, cache and all independent reports byte-unchanged",
+  "source_base": "44c7d3309c17380474ec253a924af6891d438b02",
+  "branch": "codex/observations-backward-windows-20261015",
+  "canonical_counts": {
+    "pass": 89,
+    "fail": 0,
+    "empirical_tests": 0
+  },
+  "mutations": {
+    "failed_controls": 8,
+    "exceptions": 0,
+    "survivors": 0
+  },
+  "identity": [
+    {
+      "path": "docs/SCALAR_UNEQUAL_PAIR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "ca32dbcd31b0776e45393b3e9c363ef0b66ec6aaf6b0f000f03e2710c048364f",
+      "bytes": 18544
+    },
+    {
+      "path": "scripts/scalar_unequal_pair_check.py",
+      "sha256": "f313d5874c1fff25e4c509ac4ffb9c3f2860d1897899d832d615f2f8c2d6105c",
+      "bytes": 4038
+    },
+    {
+      "path": "scripts/scalar_unequal_geometry.py",
+      "sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "bytes": 5607
+    },
+    {
+      "path": "scripts/scalar_unequal_sampling.py",
+      "sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "bytes": 6026
+    },
+    {
+      "path": "outputs/scalar_unequal_pair/RESULTS_v1.json",
+      "sha256": "798a55880f1d585a1ef7226203ffa5e3be7d0880f09c99094cc631d9e5560dd2",
+      "bytes": 29890
+    },
+    {
+      "path": "outputs/scalar_unequal_pair/SUMMARY_v1.json",
+      "sha256": "91d8be56fa05727da85d30882ae01cb002b668e0e7358f058f99fcee2d1e2aa1",
+      "bytes": 1653
+    },
+    {
+      "path": "logs/runner-cache/scalar_unequal_pair_check.txt",
+      "sha256": "96d01ab4804d625930d7cf2b0277a5e3c736097788f3f85c60c65be775cde529",
+      "bytes": 2554
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/CONFORMANCE_v1.md",
+      "sha256": "a78e57a10ef13d65524bfb275f1ba914f4a47760ecbec6428b5b6bf6e1007ef5",
+      "bytes": 4720
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/REVIEW_RECORD_v1.md",
+      "sha256": "cda856286b13a56543493d1fd9a16b1c58e5b5a04ce1873c69f8e4cc38ff70e5",
+      "bytes": 3853
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "eae8df85aa41dad39a5bd00e4a251f79577dc810a1f6cbb7bbe921cd9de49c3b",
+      "bytes": 1360
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/CANONICAL_EXECUTION_v3.json",
+      "sha256": "fdeedfb40fa7dc047878b6a03c838b86cd44e22e6f7334edd56f344a5c8ee7ca",
+      "bytes": 2830
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/M16_SOURCE_PREFLIGHT_v1.json",
+      "sha256": "77f5aaa7d15229a2fc4a22d54fd800bfb9a1eed5a55ae16ad83eafce60d0a46c",
+      "bytes": 1094
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/mutations_v1/REPORT_v1.json",
+      "sha256": "97054cdf282d5fffd757145a39e53b16eb0eea7b2590d241a290c2020979e1f8",
+      "bytes": 6921
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/independent_geometry_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "25a1896f3e22249f5b0f753e11010ff822a321a7d878323d3c1a67e83394e7ca",
+      "bytes": 8408
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/independent_geometry_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "e4d43966bf6dfb2ff532c4e7dc1af5f182762b48cf0ee8eb3284b822dcacc3c3",
+      "bytes": 10067
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/independent_weak_v1/CANONICAL_WEAK_PAIR_REVIEW_v1.md",
+      "sha256": "a5c6e4db440431e2c4ffa669a33b234668556dcc42f16726986d50232f68cc78",
+      "bytes": 9543
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/independent_weak_v1/CANONICAL_WEAK_PAIR_IDENTITY_v1.json",
+      "sha256": "521e1fa3582c6b0f0be5d63c2fcd58d6b1ab26cdc4c0759141f689bb253084a9",
+      "bytes": 5142
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/independent_observation_v1/M16_CANONICAL_SOURCE_COMPARISON_v1.md",
+      "sha256": "1468a0778077a3e75aff8efcd81997c3c5f9e4c47fd2a792e9f8f953a4a3754b",
+      "bytes": 11003
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/independent_observation_v1/M16_CLUSTER_CAP_v1.md",
+      "sha256": "8e49d9d3003ba8b55b50c49858a98cf42ef64bfe475641d98b88639846eabeb8",
+      "bytes": 2415
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/independent_observation_v1/M16_CANONICAL_IDENTITY_v1.json",
+      "sha256": "a8e448c6e4b98a980fef91e1f57e1a30753bc72109963f13e01bf3d2491e4eb7",
+      "bytes": 111570
+    }
+  ],
+  "ownership": "Root direct author; focused reviewers complete; process inspection empty for all4campaign identifiers; matching holder lock refreshed17:40Z",
+  "deadline": "2026-10-15T21:48:44Z",
+  "next_action": "Freeze and independently verify staged delivery, publish regular M16 constituent, then seek a new physical measurement/normalization supplier instead of more annihilator variants.",
+  "supersedes": "CHECKPOINT_v2.json",
+  "formatting_receipt": "FORMATTING_REPAIR_v1.json"
+}

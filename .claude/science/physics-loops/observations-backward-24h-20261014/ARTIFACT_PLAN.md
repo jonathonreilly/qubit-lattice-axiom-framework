@@ -20,3 +20,7 @@ Publish the self-contained conditional note, one primary/helper pair, four decla
 ## M15 delivery
 
 One coherent canonical projected-covariance note, primary plus3new helpers, existing supplied candidate helper, fresh paired output/cache, exact protocol and scope checklist. Independent reports remain readable; indexed historical evidence preserves all code/result/failure versions while omitting external full papers/renders from publication. Base is frozen M14 f3637a4eba. No authority weaving or audit-state update.
+
+## M16 delivery
+
+One self-contained finite-pair note, one primary runner and two exact symbolic/sampling helpers. Final paired output/cache binds the current source; eight isolated source mutations and all independent original/correspondence reports remain preserved. The versioned historical archive includes working derivations, failures, source versions and code/results. External paper PDFs/full texts/renders remain local with version/hash/reading-scope records. Stage only this coherent unit and shared campaign state deltas, stacked on M15. No audit verdict or integrated-main landing is part of this author publication.

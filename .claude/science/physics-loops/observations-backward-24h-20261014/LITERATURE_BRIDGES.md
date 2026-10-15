@@ -50,3 +50,7 @@ Rondeau–Li1709.07087v1 §§IV–V supplies classical conformal-observable conv
 ## M15 source bridge
 
 Taylor astro-ph/0111605v1 (Born inversion), Heavens astro-ph/0304151v2 (windows/noise), and Wang1808.07543v1 (radial pair geometry/calibration) were checked in the exact scopes recorded in projected_covariance/independent_observation_v1/SOURCE_RECORD_v1.json. Root read the complete independent derivation and comparisons. No Poisson/growth forecast, fitted calibration, observed covariance history or raw catalogue is imported. Full third-party texts and renders remain local with identities in the evidence map.
+
+## M16 primary-source boundary
+
+The frozen independent_observation_v1 report distinguishes established Born/spin inversion, finite weighted ellipticity/velocity estimators, lensing selection bias and distance/redshift velocity mapping. Schneider astro-ph/0206182v1, Schmidt0904.4703v3, Wang2108.08036v1 and Davis/Scrimgeour1405.0105v2 were read in recorded scopes; three earlier Taylor/Heavens/Wang sources were reused at exact archived identities. Gaussian covariance closures, source distributions, masks and calibrated distances in those papers are not derived premises here. Standard importance weighting is used as a conditional theorem. The general pair-intensity argument is independently derived and source-scoped, not evidence that a real survey supplies the required marked process.

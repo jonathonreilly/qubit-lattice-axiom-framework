@@ -94,3 +94,11 @@ Priorities reflect new evidence value, not PR counts. Do not repeat receiver or 
 ## Re-ranked after M15
 
 Highest next target: derive a finite measured correlation functional from actual source/velocity window operators, challenging the equal-epoch diagonal and calibration rather than interpolating them. First discriminator: determine whether an unequal-time compatibility identity admits smooth two-source weights and a finite unbiased pair estimator. Preserve the prior conditional projected constraint if this fails. Secondary target: measured-gravity normalization/environment, avoiding another synthetic inverse relabel. Action/state/scale selectors remain unsolved.
+
+## Re-ranked after M16
+
+1. Establish an actual calibrated pair-response or a different observable that eliminates the measured-gravity/environment input. The next block must add new physical information, a checkable supplier or a genuinely distinct cross-domain constraint; do not generate further annihilator variants solely for more algebra.
+2. Derive what operational measurements can fix the absolute normalization left free by the cosmological shape inverses, keeping source mass, same-environment force range and matter clocks explicit. First decisive check: characterize a physical observable combination or a symmetry of all admitted observables, without inserting measured G as a derived number.
+3. Action/potential and initial-state selection remain open. Challenge a concrete symmetry or finite-history candidate against the earlier field equations; no chosen selector counts as a derivation.
+
+Actual observed Cassini products stay development-exposed. M16 uses no observation arrays. An empirical test still requires a frozen candidate/input protocol, selection/window model and uncertainty. Deadline and packaging time remain unchanged.

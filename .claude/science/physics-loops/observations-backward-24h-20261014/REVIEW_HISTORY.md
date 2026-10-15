@@ -179,3 +179,11 @@ Root read full final report `1a1c6162aa39edc507356599bef981652c2119b2dbb1fa7e40c
 ## M15 projected-covariance milestone
 
 Root read complete geometry, weak and primary-source reports and all final canonical correspondence. Matrix norm, moving-boundary qualification and ignored protocol declaration findings were repaired and prior versions preserved.29 current controls pass;8 mathematical mutations rejected;0 empirical tests. Conformance sections1–12 checked in projected_covariance/CONFORMANCE_v1.md, including explicit scopes for formal audit/integrated landing not performed. Independent coherent-opening judgment is OPEN. Frozen staged-tree and publication receipts remain separate.
+
+## M15 final delivery and publication — 2026-10-15T17:04:49.530051+00:00
+
+Root read complete frozen delivery report `324dc7b47905c5dac14c21d4dc81d75227cd9ff71c92aa131cca37ed31daaf73` and identity `1c477de10b301c3e03d59c77ca67100ffbbf05f40bf2f8828422d29abd2a820a`:1107 mechanical checks pass,0fail; exact57-path tree,197 archive versions,29 plain views,17 external omissions and97 scoped references bound. Only final EOF formatting differs from reviewed forward source; every AST and scientific output preserved, fresh final source/cache attached. Published and attached [PR #9610](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9610) at `44c7d3309c17380474ec253a924af6891d438b02`. Independent science checks retain their recorded scope; this correspondence is no science rerun, integrated-main validation or formal audit.
+
+## M16 final scoped correspondence
+
+Complete independent geometry, weak/sampling and primary-source reports read personally by root. Mathematical geometry27pre-exposure plus33post-exposure controls; weak25pre-executable-exposure controls; source findings frozen before author theory exposure. Final canonical bindings agree. Original raw-monopole/noise/selection findings and current-version mismatches remain preserved; precise qualifications were rechecked. One coherent OPEN content recommendation, no formal audit or merge judgment. Root89primary checks and8failed-control source mutants are implementation evidence, not observations. See unequal_window/REVIEW_RECORD_v1.md and CONFORMANCE_v1.md; delivery verification follows separately.

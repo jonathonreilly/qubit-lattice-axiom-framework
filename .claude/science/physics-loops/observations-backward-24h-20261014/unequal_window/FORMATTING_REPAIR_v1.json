@@ -1,0 +1,27 @@
+{
+  "scope": "Root-owned prose/controller EOF cleanup only; canonical science source/outputs/cache unchanged",
+  "changes": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/CONFORMANCE_v1.md",
+      "old_sha256": "b8bfa752158d13536428ea88b07931cd69b5e4de1d9906ca674ba538c99338d2",
+      "new_sha256": "a78e57a10ef13d65524bfb275f1ba914f4a47760ecbec6428b5b6bf6e1007ef5",
+      "only_eof_whitespace": true,
+      "ast_or_prose_unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/REVIEW_RECORD_v1.md",
+      "old_sha256": "fed5839b3f108202c47b4fd8d00e9e537d0ec7a129510bb7d520767312f4c73d",
+      "new_sha256": "cda856286b13a56543493d1fd9a16b1c58e5b5a04ce1873c69f8e4cc38ff70e5",
+      "only_eof_whitespace": true,
+      "ast_or_prose_unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/run_mutations_v1.py",
+      "old_sha256": "489f6b36251e671047049643726b6c2dbb3661b0e0882bb1d15620038304b27f",
+      "new_sha256": "82e2d60ecf4d696cc0767161036eab61dd9cb4614c7886baa91962fc896434de",
+      "only_eof_whitespace": true,
+      "ast_or_prose_unchanged": true
+    }
+  ],
+  "prior_bytes": "formatting_v1"
+}

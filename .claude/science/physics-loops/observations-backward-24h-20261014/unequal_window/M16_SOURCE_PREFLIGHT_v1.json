@@ -1,0 +1,23 @@
+{
+  "scope": "Direct mechanical current source/cache readiness; no formal audit",
+  "row": {
+    "claim_id": "scalar_unequal_pair_bounded_theorem_note_2026-10-15",
+    "note_path": "docs/SCALAR_UNEQUAL_PAIR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem",
+    "runner_path": "scripts/scalar_unequal_pair_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_unequal_geometry.py",
+      "scripts/scalar_unequal_sampling.py"
+    ],
+    "deps": [
+      "scalar_dynamical_momentum_inverse_bounded_theorem_note_2026-10-15",
+      "scalar_projected_covariance_bounded_theorem_note_2026-10-15"
+    ]
+  },
+  "issue": null,
+  "cache_status": "fresh",
+  "cache_sha256": "96d01ab4804d625930d7cf2b0277a5e3c736097788f3f85c60c65be775cde529",
+  "manifest_delta": "Exactly1new note,2edges to M14 and M15; complete generated diff read by root",
+  "vocabulary": "report-only0violations",
+  "schema_probe": "Initial print-only probe used runner/helper_runners and got None; no readiness assertion or write was made. Actual graph keys runner_path/helper_runner_paths used here."
+}

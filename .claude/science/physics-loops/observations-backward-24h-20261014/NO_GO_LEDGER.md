@@ -56,3 +56,7 @@ No theory-wide no-go is asserted. The explicit two-shape interval witness refute
 ## M15 local failed routes and live alternatives
 
 Unqualified moving radial boundaries invalidate the finite six-jet weak alternative; fixed bounds or the exact extra flux repair it. Direct potential inversion needs domain information; ordered compatibility avoids it for a necessary test. Synthetic rank is attainable but severely ill-conditioned. None is a universal measurement no-go. Unequal-time correlations, calibrated finite weightings and explicit window/error models remain live routes.
+
+## M16 negative witnesses and local pivot
+
+The unquotiented angular representative fails; preserve the independently found monopole counterexample and its repair by the explicit annihilator. Unconditional zero noise product does not justify weighted unbiasedness; require the conditional law. A known marginal pair intensity does not remove field-dependent selection (target2 versus weighted5/2). A finite fixed grid misses some smooth functionals; this is not a no-go for physical covariance classes or randomized expectation estimates. Positive sampling density alone need not give finite variance. None excludes other measurement routes. The expanded Gaussian symbolic calculation was terminated after172seconds without an assertion/result; the algebraically equivalent polynomial conjugation route completed. This was an implementation failure, not a rejected physical candidate. Original code/timing evidence is preserved.

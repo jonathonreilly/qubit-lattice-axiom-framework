@@ -1,0 +1,33 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "counts": {
+    "failed": 0,
+    "passed": 89
+  },
+  "empirical_tests": 0,
+  "failed_checks": [],
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/NO_GO_DISCIPLINE_CHECKLIST.md": "eae8df85aa41dad39a5bd00e4a251f79577dc810a1f6cbb7bbe921cd9de49c3b",
+    "docs/SCALAR_UNEQUAL_PAIR_BOUNDED_THEOREM_NOTE_2026-10-15.md": "ca32dbcd31b0776e45393b3e9c363ef0b66ec6aaf6b0f000f03e2710c048364f",
+    "scripts/scalar_unequal_geometry.py": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+    "scripts/scalar_unequal_sampling.py": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a"
+  },
+  "observational_datasets_opened": 0,
+  "primary_sha256": "f313d5874c1fff25e4c509ac4ffb9c3f2860d1897899d832d615f2f8c2d6105c",
+  "read_inventory": {
+    "integrity_reads": [
+      "This source and declared inputs for SHA256; no external observations or inherited output arrays read"
+    ],
+    "scientific_inputs": [
+      "Explicit symbolic operators and fixed synthetic fixtures in declared helpers"
+    ]
+  },
+  "remaining_inputs": [
+    "Actual field law and calibrated distance/velocity/shear identification",
+    "Actual pair selection and conditional mark/noise law",
+    "Actual survey masks, distance windows, error and variance bounds",
+    "Action, initial state, absolute scales and environmental gravity bridge"
+  ],
+  "scope": "Necessary scalar constraint and finite-pair ensemble expectation under supplied field, geometry, statistics, sampling and calibration premises",
+  "target_claim_type": "bounded_theorem"
+}

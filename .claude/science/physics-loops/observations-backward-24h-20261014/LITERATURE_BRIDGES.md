@@ -33,3 +33,8 @@ The original 2001 DSN 0159-Science PDF has SHA256 1161d5d7f50134cf3994c52674af4a
 ## M10 primary receiver/count reconstruction
 
 Moyer2000 section13.2.4 and13.3.1.2, TRK-2-18(2000), TRK-2-25(1996), the2001 RSR specification and Border/Paik2009 support separately scoped counter, band, NCO and complex-sign conventions. Exact originals, URLs and read ranges are in receiver_reference/independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json. The2009 experiment is later than the2002 data and does not certify software2632. Root checked the relevant Moyer text and visually inspected177C page10; the source reviewer had its own broader page scope. Historical implementation, LO phase fluctuations and actual noise remain open. These sources reconstruct measurement conventions; they do not derive the scalar theory.
+
+
+## Cosmological inverse primary-source bridge
+
+The six exact-version primary sources and their acquisition hashes are in action_selection/independent_source_v1/SOURCE_ACQUISITION_v1.json. Boisseau gr-qc/0001066v1 supplies established reconstruction context; Dalang–Lombriser1906.12333v2 and Dalang–Fleury–Lombriser2009.11827v3 distinguish local tensor endpoints from homogeneous cosmological coefficients. GW1708171710.05832v1 and1710.05835v1 use different GR inference and interval conventions; Cantiello1801.06080v2 uses a Cepheid-calibrated host SBF distance. These exposed summaries are route-development material, not a continuous F history or a new-theory likelihood. No raw GW/posterior or fresh independent empirical test was used. All actual paper read scopes, original source-acquisition setup failure and environmental/matter calibration limits are retained. Full downloaded papers stay local; version URLs and hashes accompany publication.

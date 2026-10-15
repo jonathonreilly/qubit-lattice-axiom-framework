@@ -58,3 +58,11 @@ Target claim type: bounded_theorem. Actual current surface status: conditional-s
 ## Error-direction construction certificate
 
 Target bounded_theorem; actual surface conditional-support; trace upstream_support; reachability supports. Quantizer-safe unknown-radial-law inference is proved under supplied angular/cadence/signal hypotheses. Canonical51 controls and13 assertion-rejected variants have distinct scopes from independent51 mathematical controls and raw-data replication. The746 exclusions at the stricter nominal allocation are floating diagnostics on exposed development data, not outward-rounded certificates or independent empirical p-values. All six original numerical-tolerance failures across five Ka records remain preserved. No physical noise bound, selected scalar theory, formal audit or effective grade is asserted; bare retained is disallowed.
+
+## M12 source certificate
+
+Target claim type: bounded_theorem. Actual surface: conditional-support. Trace: upstream_support / supports. No bare retained claim, formal audit or integrated-main landing validation. Registered primitives are not used to supply action parameters, measured histories, typicality or a physical state.
+
+The exact constructive target is: on a connected smooth FLRW interval with F>0,Fdot nonzero, conserved physical fluid and known curvature, reconstruct metric/scalar functions; inside the supplied revised action, characterize the coupled solution by same-parameter kinetic and potential identities with rank and positivity gates. Exact interval equality plus full candidate dynamics implies x=y=0. This is a conditional metric/scalar solution, not a construction of arbitrary matter psi. Required failures are turning points/plateaus, transverse motion, rank loss, normalization ambiguity and ill-conditioned observations. A synthetic round trip or two-point fit does not count as empirical closure.
+
+The canonical source has102 checks and a fresh source-bound run within120seconds. Independent theorem controls, independently integrated12 cases and source admission checks are separate evidence. Numerical and interpretation failures are preserved. Physical inputs, actual state, fundamental action selection, absolute scale and environmental matching remain open.

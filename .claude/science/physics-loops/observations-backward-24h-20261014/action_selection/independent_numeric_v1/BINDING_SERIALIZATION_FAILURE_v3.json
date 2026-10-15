@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-15T11:46:34.261778+00:00",
+  "failed_script": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/final_binding_v3.py",
+  "failed_script_sha256": "1ee8cf4ac630ee585b1e56093c27a539ba675b7d61daab57e19563b641d68895",
+  "failure": "AssertionError (0, 'source_u'): compared exact Decimal of original shortest float text to 55-digit serialization of its 50-digit mpmath conversion.",
+  "diagnosis": "mpmath uses binary precision; a decimal conversion is rounded and 55-digit print exposes an approximately 1e-52 tail. Original float states are unchanged.",
+  "maximum_observed_absolute_conversion_tails": {
+    "source_u": "6.661e-52",
+    "source_velocity": "3.124e-52",
+    "timeE": "1.654e-52",
+    "timeJ": "1.651e-52"
+  },
+  "repair": "Check exact expected mp.nstr(mp.mpf(str(original)),55) at 50 digits and original float recovery. No scientific tolerance, source, outputs or independent computation changed.",
+  "replacement_script": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/final_binding_v3_serialization_repair.py",
+  "replacement_sha256": "20992aa14362aa8d7d2002b27a56e31b8653a401d2817d34f3b331a4127e6677"
+}

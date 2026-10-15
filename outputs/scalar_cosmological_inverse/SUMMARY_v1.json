@@ -1,0 +1,22 @@
+{
+  "absolute_gravity_calibrated": false,
+  "actual_current_surface_status": "conditional-support",
+  "failed": 0,
+  "failed_checks": [],
+  "independent_empirical_tests": 0,
+  "initial_state_principle_derived": false,
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/NO_GO_DISCIPLINE_CHECKLIST.md": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+    "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+    "scripts/scalar_cosmological_inverse.py": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be"
+  },
+  "interpretation": "Parameter reconstruction inside a supplied action class from exact-model synthetic readouts, not observed action or state selection.",
+  "observed_action_selected": false,
+  "original_failure": "Working v1 case9 nu recovery failed5e-7 threshold. Original91 controls (90 pass,1 fail) and all inputs retained. Precision reassembly is a separate diagnostic; thresholds and cases unchanged.",
+  "passed": 102,
+  "physical_input_functions_acquired": false,
+  "primary_sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+  "status": "conditional_synthetic_reconstruction",
+  "uncertainty_scope": "Synthetic readouts assembled at50 digits from a double-precision ODE. No high-precision trajectory, measured derivative accuracy or rigorous numerical enclosure is claimed."
+}

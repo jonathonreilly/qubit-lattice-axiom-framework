@@ -41,3 +41,10 @@ All1200 fixed development blocks exclude constant total analog modulus with idea
 ## Error-direction attempt: bounded result and surviving routes
 
 The attempted scale-elimination route succeeds mathematically only with the explicit conditional angular law. The fixed exposed records challenge the full candidate tone/direction/measurement model numerically. They do not isolate a failing component or close all calibration routes. Axis-supported equal-covariance, validation-selected-reference and FIR examples target only their named substitutions. Actual monitor/transfer-response data, a justified varying signal and independent physical tests remain live. Canonical note contains N1–N8; no theory-wide no-go or independent-wall count is asserted.
+
+## M12 preserved failures and reopening conditions
+
+- A single published GW170817/host-distance pair cannot enter the continuous derivative inverse. This is an input-domain failure; reopen with a controlled joint likelihood, endpoint-to-background map and adequate reconstruction data, not a chosen interpolating curve.
+- Bianchi does not supply the scalar equation on a constant-F interval. An exact dust-plus-Lambda metric witness exposes the missing trace equation. This is not an observed cosmological exclusion and does not rule out radiation/vacuum plateaus or full transverse motion.
+- Binary64 parameter recovery fails original case9 for nu despite passing later synthetic residuals. The original90/1 result remains immutable. Higher-precision arithmetic on rounded inputs still fails. Higher-precision source assembly diagnoses lost input digits; it is not a source of measured precision or a certified trajectory.
+- Two fitted epochs neither test the full kinetic/potential shape nor establish the exact whole-interval truncation. Approximate equality needs a new quantitative result before inferring small transverse fields.

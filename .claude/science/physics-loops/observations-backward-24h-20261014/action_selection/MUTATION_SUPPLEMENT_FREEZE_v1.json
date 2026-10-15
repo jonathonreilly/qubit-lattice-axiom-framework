@@ -1,0 +1,43 @@
+{
+  "frozen_at": "2026-10-15T11:59:10.714821+00:00",
+  "timeout_seconds_each": 120,
+  "source_sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+  "protocol_sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+  "variants": [
+    {
+      "name": "Bianchi_matter_trace",
+      "before": "-(rho-3*p)+2*F*derivative(V)/Fd",
+      "after": "-(rho-p)+2*F*derivative(V)/Fd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/Bianchi_matter_trace.py",
+      "sha256": "cef88557ab18d68ec2f1f3809bcc02db56bb4ebb7597b8cec025e311e99a4c79"
+    },
+    {
+      "name": "tensor_endpoint_orientation",
+      "before": "sp.sqrt(Fsrc/Fmid)*sp.sqrt(Fmid/Fobs)-sp.sqrt(Fsrc/Fobs)",
+      "after": "sp.sqrt(Fmid/Fsrc)*sp.sqrt(Fmid/Fobs)-sp.sqrt(Fsrc/Fobs)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/tensor_endpoint_orientation.py",
+      "sha256": "0d467f1ab31e64fd9848f9b8b04d4ceefbd5b4558d8b8da2ba947e74b96d977d"
+    },
+    {
+      "name": "sharp_interface_transmission",
+      "before": "transmission = 2*Fsrc/(Fsrc+Fmid)",
+      "after": "transmission = 2*Fmid/(Fsrc+Fmid)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/sharp_interface_transmission.py",
+      "sha256": "3ef74f92033e4ce5246b0fcd0f3c06688a1a84bbb162e9d9f09b43bafa0f1e9f"
+    },
+    {
+      "name": "transverse_potential_force",
+      "before": "Uxy = k*x*x*sp.exp(-(1-k)*u/alpha)/2",
+      "after": "Uxy = k*x*x*sp.exp(-(1-k)*u/alpha)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/transverse_potential_force.py",
+      "sha256": "015c1750c96d24be23916d3a77be428d3d822464ddb717df1c0ddbc9ae7cbcb7"
+    },
+    {
+      "name": "transverse_kinetic_factor",
+      "before": "full_D = radial_D+2*tensor*Tperp",
+      "after": "full_D = radial_D+tensor*Tperp",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/transverse_kinetic_factor.py",
+      "sha256": "6ae66c85454b8ed97fd399fa640cbf21ff85ef77c1b411ae150f1a56156a275a"
+    }
+  ]
+}

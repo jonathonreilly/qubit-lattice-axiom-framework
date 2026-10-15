@@ -1,0 +1,106 @@
+{
+  "frozen_at": "2026-10-15T11:42:02.865464+00:00",
+  "timeout_seconds_each": 120,
+  "source_sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+  "protocol_sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+  "variants": [
+    {
+      "name": "curvature_sign",
+      "before": "(Hd - curvature)",
+      "after": "(Hd + curvature)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/curvature_sign.py",
+      "sha256": "8e70ee088af1455ec91c1cea4f9169b1b6eec8c0a74f49d74267dd2dbb0c71cc"
+    },
+    {
+      "name": "pressure_in_kinetic",
+      "before": "- rho - pressure - Fdd",
+      "after": "- rho + pressure - Fdd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/pressure_in_kinetic.py",
+      "sha256": "e49a95abcc31098499afcf79785d7600aff41250b02ecce9259d99fae32817d3"
+    },
+    {
+      "name": "pressure_in_potential",
+      "before": "(rho - pressure) / 2",
+      "after": "(rho + pressure) / 2",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/pressure_in_potential.py",
+      "sha256": "91249a424a062579e80e391f3a7fe859de4cefbffbddc2b4ef4c7f0bdf788146"
+    },
+    {
+      "name": "kinetic_second_derivative",
+      "before": "- Fdd + H * Fd",
+      "after": "+ Fdd + H * Fd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/kinetic_second_derivative.py",
+      "sha256": "151354eeb0d38ac3b4368093a4ccf3b8d7e8e0a146acb5809d5c1406eb819fda"
+    },
+    {
+      "name": "potential_friction",
+      "before": "2.5 * H * Fd",
+      "after": "1.5 * H * Fd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_friction.py",
+      "sha256": "358b407191aff3b48a9e6a33bb924c70c1d4a8fabc12bca003a0463379de9780"
+    },
+    {
+      "name": "background_coupling",
+      "before": "2 * F * D + 3 * Fd**2",
+      "after": "2 * F * D + 6 * Fd**2",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/background_coupling.py",
+      "sha256": "6f272c05c16221a3a3cf22968d4f7118ee3544a570744f4dc627260178b30f78"
+    },
+    {
+      "name": "candidate_root_branch",
+      "before": "1 - 2 * mp.sqrt(2 * coefficient",
+      "after": "1 + 2 * mp.sqrt(2 * coefficient",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_root_branch.py",
+      "sha256": "b85e8fa9f5ece91916ebaf5321612f8274d191145e3ffbc6a717115eebac5c62"
+    },
+    {
+      "name": "candidate_boundary",
+      "before": "Fc = F1 - coefficient * Y1",
+      "after": "Fc = F1 + coefficient * Y1",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_boundary.py",
+      "sha256": "5fd36b19eb42d6a771cc96c9f564a4a4790acca01cea50c7f5f6ba49dae5f911"
+    },
+    {
+      "name": "potential_Hv_normalization",
+      "before": "mp.sqrt(L * parameters[\"Q\"] / 2)",
+      "after": "mp.sqrt(L * parameters[\"Q\"])",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_Hv_normalization.py",
+      "sha256": "37bbf3b5b17f4579f5d901cb0b30ff5aaa9c2c527b5bb76a1db48ec4e6569b63"
+    },
+    {
+      "name": "Jordan_first_time",
+      "before": "Fdot = -2*F*b*velocity/A\n    Fddot",
+      "after": "Fdot = -2*F*b*velocity\n    Fddot",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_first_time.py",
+      "sha256": "f5317ea9f66e9cc349b9a0c421d7706989c6d619fe72eb605268fd87f48a5534"
+    },
+    {
+      "name": "Jordan_second_time",
+      "before": "Fddot = -2*F/A**2*(b*acceleration+(bu-",
+      "after": "Fddot = -2*F/A*(b*acceleration+(bu-",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_second_time.py",
+      "sha256": "ae717d3db264fe5a36da6999915756cbd9acce9dddfa7c628aae5726889841e5"
+    },
+    {
+      "name": "source_kinetic_factor",
+      "before": "source_D':2*F*(K-3*b*b)",
+      "after": "source_D':F*(K-3*b*b)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/source_kinetic_factor.py",
+      "sha256": "6ebe4fc2749e4cf3f890d8714b95f9d2e2b47989a5f5005775c521c2ae1ebb79"
+    },
+    {
+      "name": "source_potential_factor",
+      "before": "source_V':2*Q*Hv**2",
+      "after": "source_V':Q*Hv**2",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/source_potential_factor.py",
+      "sha256": "402426cf0973ee154791783e698b8353ebf52365990d33843402d33fd3567c02"
+    },
+    {
+      "name": "potential_u_origin",
+      "before": "E = Fc / (s * (F - Fc))",
+      "after": "E = 2 * Fc / (s * (F - Fc))",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_u_origin.py",
+      "sha256": "29b72892e9c13a5fc62f99b7796d29d1565cedc372a0305e887ce16d770f4f2f"
+    }
+  ]
+}

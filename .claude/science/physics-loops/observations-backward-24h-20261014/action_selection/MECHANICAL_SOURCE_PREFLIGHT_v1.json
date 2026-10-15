@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-15T12:06:26.535987+00:00",
+  "scope": "mechanical source/cache/packet/manifest only, not scientific or formal audit verdict",
+  "node": {
+    "claim_id": "scalar_cosmological_inverse_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/scalar_cosmological_inverse.py"
+    ],
+    "note_hash": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+    "path": "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/scalar_cosmological_inverse_check.py",
+    "title": "Conditional reconstruction of the revised scalar action from cosmological histories",
+    "note_path": "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem"
+  },
+  "cached_row_readiness_issue": null,
+  "cache_status": "fresh",
+  "declared_inputs": [
+    "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "scripts/scalar_cosmological_inverse.py",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/NO_GO_DISCIPLINE_CHECKLIST.md"
+  ],
+  "manifest_delta": {
+    "added": [
+      "scalar_cosmological_inverse_bounded_theorem_note_2026-10-15"
+    ],
+    "removed": [],
+    "rewired": [],
+    "edge_count_change": 0
+  },
+  "manifest_sha256": "8e829b995df0df43484df75dffa76bb27ea70a2e3d1b83ba20fcbbbaced34641"
+}

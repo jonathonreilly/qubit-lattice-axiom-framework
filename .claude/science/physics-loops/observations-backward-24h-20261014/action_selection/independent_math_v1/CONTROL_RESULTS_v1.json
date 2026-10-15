@@ -1,0 +1,490 @@
+{
+  "scope": "Independent pre-author-source action reconstruction controls",
+  "sympy_version": "1.14.0",
+  "author_new_source_opened": false,
+  "observations_opened": false,
+  "all_passed": true,
+  "failure": null,
+  "check_count": 42,
+  "kinds": {
+    "exact": 39,
+    "floating_control": 3
+  },
+  "checks": [
+    {
+      "name": "conformal_F_derivative",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "source": "F=Q/C, E_u=2sqrt(a)E",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "Jordan_radial_normalization",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "retained_source_factor": "-Q K(dphi)^2, no 1/2",
+        "Ricci_contribution": "+3(dF)^2/(4F)",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "independent_coupling_normalization",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "relation": "Brans-Dicke algebra agrees with source alpha_B^2/K_u=a/J",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "scalar_sufficiency_identity",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "conditions": "rho_dot=-3H(rho+p), chi_dot=-2Hchi",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "expanded_potential_formula",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "curvature_coefficient": "2F chi",
+        "H_Fdot_coefficient": "5/2",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "exact_history_vacuum_open_flat",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "F": "t",
+        "H": "1/t",
+        "curvature": "0",
+        "rho": "0",
+        "p": "0",
+        "Z": "3/t",
+        "V": "9/(2*t)"
+      }
+    },
+    {
+      "name": "exact_history_vacuum_curved",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "F": "t",
+        "H": "1/t",
+        "curvature": "1/(4*t**2)",
+        "rho": "0",
+        "p": "0",
+        "Z": "7/(2*t)",
+        "V": "5/t"
+      }
+    },
+    {
+      "name": "exact_history_radiation_curved_decreasing_F",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "F": "t**(-2)",
+        "H": "1/t",
+        "curvature": "2/t**2",
+        "rho": "t**(-4)",
+        "p": "1/(3*t**4)",
+        "Z": "-5*t**2/6",
+        "V": "11/(3*t**4)"
+      }
+    },
+    {
+      "name": "positive_Jordan_Z_is_not_universal",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "example": "radiation_curved_decreasing_F",
+        "Einstein_kinetic_coefficient": "2t^2/3>0"
+      }
+    },
+    {
+      "name": "nonconserved_matter_breaks_scalar_sufficiency",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "metric_equations": "both satisfied by reconstruction",
+        "scalar_residual": "-3/t",
+        "conservation_residual": "3/t"
+      }
+    },
+    {
+      "name": "two_epoch_parameter_recovery_1/20",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "k": "1/20",
+        "beta": "289/874",
+        "B": "3087/437",
+        "Q0": "7"
+      }
+    },
+    {
+      "name": "third_epoch_shape_check_1/20",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "third_epoch_Z": "170/49",
+        "deliberate_incompatible_increment": "1/100"
+      }
+    },
+    {
+      "name": "two_epoch_parameter_recovery_1/10",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "k": "1/10",
+        "beta": "49/234",
+        "B": "847/117",
+        "Q0": "7"
+      }
+    },
+    {
+      "name": "third_epoch_shape_check_1/10",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "third_epoch_Z": "15/11",
+        "deliberate_incompatible_increment": "1/100"
+      }
+    },
+    {
+      "name": "two_epoch_parameter_recovery_1/5",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "k": "1/5",
+        "beta": "1/16",
+        "B": "63/8",
+        "Q0": "7"
+      }
+    },
+    {
+      "name": "third_epoch_shape_check_1/5",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "third_epoch_Z": "5/14",
+        "deliberate_incompatible_increment": "1/100"
+      }
+    },
+    {
+      "name": "two_epoch_parameter_recovery_3/10",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "k": "3/10",
+        "beta": "1/266",
+        "B": "169/19",
+        "Q0": "7"
+      }
+    },
+    {
+      "name": "third_epoch_shape_check_3/10",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "third_epoch_Z": "5/91",
+        "deliberate_incompatible_increment": "1/100"
+      }
+    },
+    {
+      "name": "identifiability_gate_same_F",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "exact_inputs": [
+          "2",
+          "1",
+          "2",
+          "2"
+        ]
+      }
+    },
+    {
+      "name": "identifiability_gate_same_Z",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "exact_inputs": [
+          "2",
+          "1",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "name": "identifiability_gate_beta_too_large",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "exact_inputs": [
+          "2",
+          "1",
+          "3",
+          "1/2"
+        ]
+      }
+    },
+    {
+      "name": "identifiability_gate_negative_beta",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "exact_inputs": [
+          "2",
+          "1",
+          "3",
+          "2"
+        ]
+      }
+    },
+    {
+      "name": "identifiability_gate_negative_B",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "exact_inputs": [
+          "2",
+          "1/12",
+          "3",
+          "1/16"
+        ]
+      }
+    },
+    {
+      "name": "identifiability_gate_nonpositive_Z",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "exact_inputs": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "name": "full_radial_potential_normalization",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "source_potential": "2 Q Hv^2 U before conformal transformation",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "vacuum_value",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "F_at_vacuum": "Q",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "vacuum_first_derivative",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "nu_dependence": "zero at r=1",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "potential_two_row_identification",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "theta0": "3/2",
+        "theta1": "3/5",
+        "nu": "2/5",
+        "determinant": "166012*log(2)**2/4563"
+      }
+    },
+    {
+      "name": "potential_third_row_consistency",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "deliberate_third_row_potential_increment": "1",
+        "not_absorbed_by_two_fitted_coefficients": true
+      }
+    },
+    {
+      "name": "vacuum_only_row_has_no_nu_information",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "basis_row": [
+          "231/10",
+          "0"
+        ]
+      }
+    },
+    {
+      "name": "transverse_motion_strictly_raises_reconstructed_Z",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "Fdot_squared_fixture": "1",
+        "excess_Z": "1611071/7459020",
+        "finite_D": "27626/18375"
+      }
+    },
+    {
+      "name": "constant_nonzero_transverse_is_not_zero_branch",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "u": "0",
+        "transverse_velocity": "0",
+        "same_radial_kinetic_formula": true,
+        "U_x": "3/50",
+        "U_y": "-4/105",
+        "positive_extra_V": "23353/35000"
+      }
+    },
+    {
+      "name": "radial_metric_has_no_transverse_connection_force",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "Gamma_x_uu": "zero because source K_u independent of x,y",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "zero_transverse_branch_is_stationary",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "transverse_velocities": "zero",
+        "coupling_C_transverse_derivatives": "zero",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "constant_F_metric_only_failure",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "F": "2",
+        "H": "1",
+        "rho_p_curvature": "0",
+        "V": "6 constant",
+        "metric_residuals": [
+          "0",
+          "0"
+        ],
+        "scalar_residual": "-6"
+      }
+    },
+    {
+      "name": "constant_F_requires_independent_potential_slope",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "repaired_potential": "6+6(F-2)",
+        "Z_value": "arbitrary, background unprobed"
+      }
+    },
+    {
+      "name": "candidate_vacuum_plateau_parameter_degeneracy",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "fixed_F": "5",
+        "fixed_H_squared": "7/3",
+        "different_k_nu_Q0": [
+          [
+            "1/20",
+            "1/5",
+            "100/21"
+          ],
+          [
+            "1/5",
+            "4/5",
+            "25/6"
+          ],
+          [
+            "3/10",
+            "2",
+            "50/13"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "absolute_normalization_scaling_Z",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "F_rho_p_scale": "lambda",
+        "beta_k": "invariant",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "absolute_normalization_scaling_V",
+      "passed": true,
+      "kind": "exact",
+      "detail": {
+        "Q0_V_scale": "lambda",
+        "Hv_nu": "unchanged",
+        "exact_residual": "0"
+      }
+    },
+    {
+      "name": "floating_exponential_chart_round_trip_0.07",
+      "passed": true,
+      "kind": "floating_control",
+      "detail": {
+        "k": 0.07,
+        "u": -0.4,
+        "recovered_u": -0.39999999999999963,
+        "absolute_error": 3.885780586188048e-16
+      }
+    },
+    {
+      "name": "floating_exponential_chart_round_trip_0.16",
+      "passed": true,
+      "kind": "floating_control",
+      "detail": {
+        "k": 0.16,
+        "u": 0.3,
+        "recovered_u": 0.30000000000000016,
+        "absolute_error": 1.6653345369377348e-16
+      }
+    },
+    {
+      "name": "floating_exponential_chart_round_trip_0.29",
+      "passed": true,
+      "kind": "floating_control",
+      "detail": {
+        "k": 0.29,
+        "u": 1.1,
+        "recovered_u": 1.1000000000000012,
+        "absolute_error": 1.1102230246251565e-15
+      }
+    }
+  ],
+  "limits": [
+    "Synthetic exact histories and parameter fixtures are not observations.",
+    "Floating round trips are controls, not numerical enclosures.",
+    "No author code or aggregate invoked."
+  ]
+}

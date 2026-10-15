@@ -103,3 +103,15 @@ artifact_role: theorem
 next_trace_action: Prefer a distinct observation-driven action/potential/scale reconstruction unless an actual track-specific receiver transfer/calibration supplier supplies a new physical discriminator.
 
 The new construction conditionally removes the radial-scale input and challenges its angular replacement. Its downstream consumer is physically calibrated scalar inference. It does not identify a scalar signal or derive the real joint signal/error/measurement model.
+
+## M12 cosmological action reconstruction
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate remaining action, state, scale and measured-gravity assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Derive an independently identifiable physical tensor-coefficient history or a complementary growth/lensing discriminator with explicit environmental and source assumptions.
+
+The inverse converts a continuous physical history into candidate function tests and conditionally infers the coupled truncation from full-interval equality. It does not obtain that history from a distance pair, choose the fundamental action, or explain the hierarchy. The observational admission failure is local, not a universal no-go.

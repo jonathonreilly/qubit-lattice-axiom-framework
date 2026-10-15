@@ -61,3 +61,13 @@ The receiver route was checked using stored I/Q and conditional ADC preimages. T
 ## M10: coherent waveform feasibility and receiver reference
 
 Projection geometry gives an exact feasible set for a supplied discrepancy ball; cell geometry rejects the quantization-only constant-modulus class on all1200 exposed blocks. Documentary reconstruction supplies a conditional receiver-reference relation, not a new physical law. Independent local-search disagreement on Ka49112 blocks a global-estimator claim. The physical discrepancy/time supplier is still blocked-equivalent to the measurement-identification obligation unless new independent calibration information constrains it. Candidate next families are redundant receiver dynamics, calibrated noise/state-space models with falsifiable innovations, or a cross-domain action/scale discriminator; none is presumed true.
+
+## M12 family: physical FLRW function reconstruction
+
+| Family | Object | Mechanism | Terminal obligation | Strength versus target | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| Cosmological action membership | Calibrated Jordan expansion and tensor-coefficient histories | Metric/Bianchi inverse; candidate affine kinetic shape; two potential basis coefficients | Supply physically identified functions and uncertainties, then compare alternatives | weaker | candidate-complete for conditional mathematical result; physical inference blocked-local | Self-contained note,102 author controls and separately frozen math/numeric/source checks | Actual endpoint or complementary observation map, with error propagation |
+| Static local density response | Response and density on a stationary branch | First-order inverse with vacuum integration constant | Calibrated density/response environment and independent potential value | weaker | provisional prior result | Prior density-inverse note | New stationary data/environment supplier |
+| Receiver-based scalar residual | Calibrated phase and proper count contrasts | Instrument reference reconstruction and energy quotient | Physical discrepancy and scalar attribution | weaker | blocked-local | Prior11 campaign milestones | Track-specific independent transfer/error calibration |
+
+The new route uses an independently different physical channel and derives action membership along a curve, not a renamed receiver error bound. General scalar-tensor reconstruction is established literature; only the supplied-candidate specialization and precise gates are advanced here.

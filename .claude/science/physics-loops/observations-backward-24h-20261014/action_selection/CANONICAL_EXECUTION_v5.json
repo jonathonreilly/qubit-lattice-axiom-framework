@@ -1,0 +1,17 @@
+{
+  "recovered_from_unchanged_machine_cache": true,
+  "recovery_reason": "PosixPath serialization failure in author receipt after successful cache execution; read API return corrected",
+  "recovered_at": "2026-10-15T12:01:50.649394+00:00",
+  "cache_header": {
+    "runner_path": "scripts/scalar_cosmological_inverse_check.py",
+    "runner_sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+    "input_fingerprint_sha256": "134bc8f419f7730151ca8db793e6f98b6f1562a9b83ede2ae77998eb4d1ab139",
+    "status": "ok",
+    "exit_code": "0"
+  },
+  "elapsed_sec_from_machine_header": 1.46,
+  "elapsed_precision": "machine header rounded to two decimal places; original full-precision wrapper timer was not saved",
+  "cache_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_cosmological_inverse_check.txt",
+  "cache_status": "fresh",
+  "cache_sha256": "6e7388c8c1966f650b8b6fcd7c818c7bd98cd0407e7ffba1eb5721ae0ddf9c17"
+}

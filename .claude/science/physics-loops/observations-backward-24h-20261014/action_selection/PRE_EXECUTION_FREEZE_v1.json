@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-15T11:24:25.919232+00:00",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/WORKING_v1.md",
+      "bytes": 12298,
+      "sha256": "bd8b22a0343fafad71a38028cefa005d16ffa46114e2eace64b66fb60dd25e2c"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/cosmological_inverse_v1.py",
+      "bytes": 15373,
+      "sha256": "fcfdc680cab10ec21788957ae2d8a75abdcf6f11f1da14015b92c836b61ed8d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "bytes": 3148,
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1"
+    }
+  ]
+}

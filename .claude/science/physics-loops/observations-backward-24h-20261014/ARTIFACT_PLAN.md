@@ -11,3 +11,8 @@ One canonical carrier-feasibility note, one primary and three helpers; exact pro
 ## Error-direction evidence unit
 
 Canonical source note and four Python files plus pinned input manifest, two protocols, source-bound cache and coherent evidence pack will form the next constituent PR against frozen M10. The pack includes original failures, independent pre-source mathematics and raw reconstruction, subsequent correspondence, both canonical executions and final source/output identities. Plain reports are supplemented by a deterministic archive of source/calculation detail; downloaded third-party excerpts/renderings are omitted from publication with identities retained. No formal audit or integrated landing is performed.
+
+
+## Cosmological inverse review unit
+
+Publish the self-contained conditional note, one primary/helper pair, four declared inputs, paired result/summary and genuine runner cache. The action_selection evidence archive preserves exact earlier source, failed90/1 run, precision diagnosis, mutation variants, independently frozen work and source correspondence; its index lists per-member hashes and excluded external paper assets. Selected complete review reports remain plain files. The shared campaign pack records dependencies and remaining physical suppliers. No formal audit or integrated landing is part of this publication.

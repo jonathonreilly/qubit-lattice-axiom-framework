@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-10-15T11:37:34.818558+00:00",
+  "scope": "Complete working-note mathematical correspondence after independent proof freeze",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/AUTHOR_NOTE_COMPARISON_v1.md",
+    "sha256": "8b785b2a52d6d42dd8f4fe5e17d5af41bc8acbc41a9899b027de04eeb393f05f",
+    "bytes": 6894
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/AUTHOR_NOTE_COMPARISON_v1.md",
+      "sha256": "8b785b2a52d6d42dd8f4fe5e17d5af41bc8acbc41a9899b027de04eeb393f05f",
+      "bytes": 6894
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/AUTHOR_WORKING_v1.md",
+      "sha256": "bd8b22a0343fafad71a38028cefa005d16ffa46114e2eace64b66fb60dd25e2c",
+      "bytes": 12298
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/AUTHOR_NOTE_EXPOSURE_v1.json",
+      "sha256": "2aa2da75285f5fafe5d9972977d4c6e6b486d676d07ff7f2fa46795b9c4167c8",
+      "bytes": 767
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/AUTHOR_NOTE_FINDINGS_v1.json",
+      "sha256": "6a09206538542dcbe1add4d6fb6cae538b3c872ac382da58885774e41e96874b",
+      "bytes": 1461
+    }
+  ],
+  "independent_report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/INDEPENDENT_MATH_v1.md",
+    "sha256": "aa6f275dd043529fc824a00b0ebdbb190abf610a6ddfb9fc1e4ecad81edaa21a",
+    "bytes": 19457
+  },
+  "complete_author_note_read_lines": 242,
+  "author_new_code_read": false,
+  "author_numeric_results_read": false,
+  "canonical_source_read": false,
+  "observations_read": false,
+  "root_accepted_findings": [
+    "background_vs_gradient_coupling",
+    "canonical_distance_normalization"
+  ],
+  "finding_closure_not_yet_verified": true,
+  "postexposure_extra_math_scope": "Formal wave transport orientation/telescoping from the supplied quadratic wave equation; no observational validation",
+  "formal_audit": false
+}

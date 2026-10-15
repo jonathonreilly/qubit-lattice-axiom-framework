@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-15T12:00:12.527230+00:00",
+  "timeout_seconds": 120,
+  "files": {
+    "scripts/scalar_cosmological_inverse_check.py": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+    "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+    "scripts/scalar_cosmological_inverse.py": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/NO_GO_DISCIPLINE_CHECKLIST.md": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329"
+  }
+}

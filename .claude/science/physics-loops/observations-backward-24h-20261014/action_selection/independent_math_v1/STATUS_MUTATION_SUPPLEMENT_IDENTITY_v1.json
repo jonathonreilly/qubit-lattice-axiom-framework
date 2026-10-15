@@ -1,0 +1,95 @@
+{
+  "frozen_at": "2026-10-15T12:02:27.579347+00:00",
+  "report": {
+    "path": "STATUS_MUTATION_SUPPLEMENT_v1.md",
+    "sha256": "4647af19cd1b688448465f524580ccf12ac68a02ee97ca4e7b449d7c0b5f4919",
+    "bytes": 5407
+  },
+  "scope": "complete note delta, complete five-variant driver/freeze/results; exact one-replacement byte bindings; no scientific rerun or formal audit",
+  "evidence": [
+    {
+      "path": "CANONICAL_REVIEW_v1.md",
+      "sha256": "84c0837516cb0776f9af5f688eb20396783e5ff6dbc2e8526ced94303563fbc2",
+      "bytes": 16331
+    },
+    {
+      "path": "CONFORMANCE_SUPPLEMENT_v1.md",
+      "sha256": "94d91975510ad84040e4c22230c60da0b1b9c8ca46c96e4f0ee002eb4e9e5a10",
+      "bytes": 6271
+    },
+    {
+      "path": "STATUS_MUTATION_SOURCE_FREEZE_v1.json",
+      "sha256": "28f6162b3012bc6a58edd45a613434ff1a2d7c21d0e12faf0bea39e6b99044d4",
+      "bytes": 1400
+    },
+    {
+      "path": "STATUS_MUTATION_NOTE_DELTA_v1.diff",
+      "sha256": "8cc9472ddff9de333dea022609dedddfa79c58ee1b95dbd11484c7f0b5edc4b3",
+      "bytes": 1365
+    },
+    {
+      "path": "STATUS_MUTATION_BINDINGS_v1.json",
+      "sha256": "ece6cac1a2d12fcc13232244258ce174fb2850cc9980e1d31c16de8c7ce18117",
+      "bytes": 2723
+    },
+    {
+      "path": "STATUS_MUTATION_SOURCE_v1_NOTE.md",
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "bytes": 25119
+    },
+    {
+      "path": "STATUS_MUTATION_SOURCE_v1_mutation_supplement.py",
+      "sha256": "37ac6013dd644f727508f0884f5b42bd629d3aa750cb70ec38bca868e69b2b21",
+      "bytes": 3597
+    },
+    {
+      "path": "STATUS_MUTATION_SOURCE_v1_FREEZE.json",
+      "sha256": "deab562eb71510c11a6d5095f87101256a2ecb690162697accd4222c9c81a5aa",
+      "bytes": 2343
+    },
+    {
+      "path": "STATUS_MUTATION_SOURCE_v1_RESULTS.json",
+      "sha256": "b19746508248d42a39b8c711a07d53129dd722b52d2d76d6905475788df0c1a7",
+      "bytes": 3734
+    }
+  ],
+  "current_source_bindings": [
+    {
+      "source": "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "expected_sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "actual_sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "matches": true
+    },
+    {
+      "source": "scripts/scalar_cosmological_inverse.py",
+      "expected_sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "actual_sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "matches": true
+    },
+    {
+      "source": "scripts/scalar_cosmological_inverse_check.py",
+      "expected_sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+      "actual_sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+      "matches": true
+    },
+    {
+      "source": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "expected_sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "actual_sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "matches": true
+    },
+    {
+      "source": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "expected_sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "actual_sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "matches": true
+    }
+  ],
+  "new_findings": [],
+  "original_fourteen_receipts_revalidated": false,
+  "new_author_receipts_inspected": 5,
+  "variant_execution_by_checker": false,
+  "science_or_ODE_or_aggregate_execution": false,
+  "cache_or_index_or_archive_inspected": false,
+  "only_own_directory_written": true
+}

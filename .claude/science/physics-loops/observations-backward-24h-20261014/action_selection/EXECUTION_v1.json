@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-15T11:24:26.945370+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/cosmological_inverse_v1.py",
+    "--protocol",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+    "--output",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/RESULTS_v1.json"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 0.9700170410797,
+  "timeout_seconds": 120,
+  "stdout": "{\n  \"passed\": 90,\n  \"failed\": 1,\n  \"failed_checks\": [\n    {\n      \"name\": \"case9_parameter_recovery\",\n      \"passed\": false,\n      \"detail\": {\n        \"k\": 3.898667595655266e-09,\n        \"Q0\": 7.614093059752728e-10,\n        \"nu\": 2.6967536211064402e-06,\n        \"Hv\": 1.546631244128536e-10\n      }\n    }\n  ],\n  \"output\": \".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/RESULTS_v1.json\"\n}\n",
+  "stderr": ""
+}

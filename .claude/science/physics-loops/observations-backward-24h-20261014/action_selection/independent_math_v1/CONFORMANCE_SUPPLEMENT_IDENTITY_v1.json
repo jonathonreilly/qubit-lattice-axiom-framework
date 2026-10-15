@@ -1,0 +1,89 @@
+{
+  "frozen_at": "2026-10-15T11:53:34.034088+00:00",
+  "scope": "complete affected note/primary deltas and complete N1-N8 checklist; no new scientific audit or execution",
+  "report": {
+    "path": "CONFORMANCE_SUPPLEMENT_v1.md",
+    "sha256": "94d91975510ad84040e4c22230c60da0b1b9c8ca46c96e4f0ee002eb4e9e5a10",
+    "bytes": 6271
+  },
+  "evidence": [
+    {
+      "path": "CANONICAL_REVIEW_v1.md",
+      "sha256": "84c0837516cb0776f9af5f688eb20396783e5ff6dbc2e8526ced94303563fbc2",
+      "bytes": 16331
+    },
+    {
+      "path": "CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "3e65813d8678f8ef1791fa55abfc383cec471d7d848785efe99436b312f634b5",
+      "bytes": 4457
+    },
+    {
+      "path": "CONFORMANCE_SOURCE_FREEZE_v1.json",
+      "sha256": "c43fa0c2e2b452c30b0de1618d2379729e2c4f620dde5c5bc8bd167dd386d2d2",
+      "bytes": 1700
+    },
+    {
+      "path": "CONFORMANCE_SOURCE_v1_NOTE.md",
+      "sha256": "020558ea3f1f41928a485ef19421ebf25a05188a0de4c292c10fc11d6d19d37e",
+      "bytes": 24656
+    },
+    {
+      "path": "CONFORMANCE_SOURCE_v1_NOTE.md.diff",
+      "sha256": "aebd0c6d85a3257ef7fb5fcda7be3a251769130c60778ffe18ed027d6d116f40",
+      "bytes": 4547
+    },
+    {
+      "path": "CONFORMANCE_SOURCE_v1_PRIMARY.py",
+      "sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+      "bytes": 3206
+    },
+    {
+      "path": "CONFORMANCE_SOURCE_v1_PRIMARY.py.diff",
+      "sha256": "06166feb035b24fbf447ee6950a75a29d836ddcb6527d3f6cc631b2da5b2426b",
+      "bytes": 496
+    },
+    {
+      "path": "CONFORMANCE_SOURCE_v1_NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "bytes": 8266
+    }
+  ],
+  "live_bindings": [
+    {
+      "source": "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "reviewed_sha256": "020558ea3f1f41928a485ef19421ebf25a05188a0de4c292c10fc11d6d19d37e",
+      "live_sha256": "020558ea3f1f41928a485ef19421ebf25a05188a0de4c292c10fc11d6d19d37e",
+      "matches": true
+    },
+    {
+      "source": "scripts/scalar_cosmological_inverse_check.py",
+      "reviewed_sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+      "live_sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+      "matches": true
+    },
+    {
+      "source": "scripts/scalar_cosmological_inverse.py",
+      "reviewed_sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "live_sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "matches": true
+    },
+    {
+      "source": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "reviewed_sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "live_sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "matches": true
+    },
+    {
+      "source": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "reviewed_sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "live_sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "matches": true
+    }
+  ],
+  "prior_scientific_review_preserved": true,
+  "new_findings": [],
+  "aggregate_or_ODE_run": false,
+  "staging_or_cache_inspected": false,
+  "network_or_raw_data_access": false,
+  "only_own_directory_written": true
+}

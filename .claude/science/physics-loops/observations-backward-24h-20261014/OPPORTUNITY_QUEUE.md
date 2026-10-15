@@ -71,3 +71,10 @@ M10 source packaging is finishing; its independent science checks are complete. 
 3. Keep all current raw products development-exposed; later16:56/16:57 products remain unopened. A new empirical test needs a frozen model and declared input protocol before access.
 
 Do not generate another variant of the receiver geometry solely to refine spectral digits. This campaign remains active until its original deadline; all three older campaigns remain stopped.
+
+## Queue after M12 cosmological inverse
+
+1. Derive a complementary physical F constraint from jointly measured lensing, growth and tensor propagation, keeping source, force-range and endpoint-environment assumptions explicit. Exact target: determine which new observable breaks the current input-map degeneracy; do not prescribe F(t).
+2. Derive quantitative consequences of approximate kinetic equality for transverse motion and potential contributions using full field equations, rather than replacing exact interval equality with a fit. Need an observation-error supplier and a stability statement; no near-equality claim yet.
+3. Test whether candidate action symmetries or radiative consistency eliminate potential/scale freedom without importing a UV selector. Preserve distinct action classes and any no-go scope; no symmetry is presumed realized.
+4. Reopen receiver calibration only if a track-specific measured transfer/noise supplier adds physical information. More fitted spectral variants alone do not reopen it.

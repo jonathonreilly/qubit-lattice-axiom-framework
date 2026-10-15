@@ -58,3 +58,9 @@ M10 delivered 2026-10-15T09:36:41.401991+00:00: [PR#9597](https://github.com/jon
 ## Error-direction unit ready for publication
 
 M11 is prepared against frozenM10head18c1fe25210d3a19a8f77530937ae7af124084f0 on codex/observations-backward-discrepancy-20261015. Source and empirical checks are complete; final explicit staging/delivery check and regular PR creation follow. No science is merged. The independent cluster judgment is OPEN. Physical supplier remains open.
+
+M11 published 2026-10-15T11:07:17.193934+00:00: [PR #9600](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9600), regular/open, head `5a73333518a13640c6a99cbcb01c31342c519fd3`, base M10, 56 paths. Attached. Current continuation branch: `codex/observations-backward-selection-20261015`. Next unit requires a distinct action/potential/scale discriminator; no new PR prepared yet.
+
+## M12 proposed review unit
+
+Current branch codex/observations-backward-selection-20261015 is stacked on frozen M11 codex/observations-backward-discrepancy-20261015 at5a73333518a13640c6a99cbcb01c31342c519fd3. The mathematics is self-contained; the stack preserves the shared campaign history rather than treating receiver inference as an action premise. New note and two scripts, frozen synthetic protocol, original failures and scoped evidence form a coherent conditional-support unit. Source/evidence conformance and cluster judgment precede PR creation. No merge or main push.

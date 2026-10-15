@@ -1,0 +1,6 @@
+{
+  "failure": "TypeError: Object of type PosixPath is not JSON serializable",
+  "stage": "author receipt serialization after successful cache-envelope execution",
+  "scientific_exit_code": 0,
+  "repair": "recover successful run metadata from unchanged machine cache header; record its rounded elapsed time honestly, do not repeat execution or alter cache"
+}

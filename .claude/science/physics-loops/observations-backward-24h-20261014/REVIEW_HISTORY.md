@@ -131,3 +131,27 @@ M10 final delivery report2401cd64 and identity02071f13 were read completely. The
 ## Error-direction scientific checks complete
 
 The complete11 scoped independent reports are read and indexed in calibration_supplier/REVIEW_RECORD_v1.md. Canonical51 controls,13 rejected implementation mutations and independent math/data/source checks support the conditional result. Six original Ka numerical comparisons remain failed; source terminology and signal-center interpretation were repaired and independently confirmed. Final v2 cache is fresh. Cluster judgment OPEN concerns content only. No formal audit or integrated landing.
+
+M11 publication 2026-10-15T11:07:17.193934+00:00: root read the complete final delivery report SHA `c4b1909e037a0210fe59b0a293f9518f574234506f1b73fb90b50d309bee1522` and inspected the 38 satisfied delivery assertions in identity `23ade77b9a01be6444d28a34c70aa395183472b6ffd6e12525e612185fa3d4a8`. All reviewed source/worktree/index bytes match published commit `5a73333518a13640c6a99cbcb01c31342c519fd3`. Six scientific numerical comparison failures remain preserved; the delivery check introduces no mathematical or empirical validation. Main refresh changes audit/front-door records only; current-main integration was not performed.
+
+
+## Cosmological inverse: completed scoped source checks, integrated landing pending
+
+Root read the complete twelve-section `REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` and current main physics-loop delivery policy. The new conditional metric/scalar theorem is self-contained in the note and primary/helper pair; all four declared inputs are included. The proposal status is proposed_retained, actual status conditional-support. No empirical test, derived observed action, chosen physical state or formal audit result is asserted. Root read the complete eleven reports linked in action_selection/REVIEW_RECORD_v1.md, including independent source, mathematical and numerical work plus final affected-source supplements. The cluster review says OPEN only for a coherent review PR, not for landing or retained authority.
+
+| Conformance section | Disposition and evidence |
+|---|---|
+| 1 Self-containment | Supplied action restated; primary/helper/protocol/checklist and outputs co-land. No prior decoder result or unmerged scalar calculation is needed by the computation. Stacking preserves shared campaign files only. |
+| 2 Cache | Final envelope exit0, fresh input fingerprint, declared120-second cap,102 controls. Original failed scientific run and tooling errors remain separately identified. No hand-edited cache. |
+| 3 Scope | Conditional supplied-action solution membership; finite synthetic controls and missing physical input map explicit. Proposal label and actual status separate. |
+| 4 Negative claims | Committed full N1-N8 checklist and five substantive N5 stdout lines. Domain/failure witnesses do not imply a universal no-go. |
+| 5 Proof obligations | Exact target and acyclic sequence in note section8; monotonicity, rank, conservation, curvature and full matter-solution limitations explicit. |
+| 6 Runner validity | Nineteen real altered sources:12 assertion rejections,6 domain refusals,1 arithmetic exception. Independent42-control proof and separate12-case ODE; original failure retained. No empirical interpretation. |
+| 7 Packet | Actual citation graph discovers the primary and sole imported helper. No helper-registry or dependency-policy edit is needed or proposed. |
+| 8 Graph/links | Final graph built with serialized launcher; only one intended zero-edge node added. Manifest regenerated, not hand-edited. Explicit tracked-target link and staged-set checks at packaging. |
+| 9 Note/records | Complete machine fields, import table, review record and source-bound evidence; hypothetical physical-input supplier remains unadopted. |
+| 10 Propose/ratify | No audit verdict, audit-state transfer, merge or push to main. Citation manifest is the sole generated authority-directory exception. |
+| 11 Sources/counts | Current machine outputs recomputed; original and repaired evidence separated. Six exact-version primary publications, scoped reading and exposed-development status recorded. |
+| 12 Focused/combined | Focused compilation, vocabulary, source/cache, graph, links and constituent diff checks run on this unit. Full pipeline, strict lint and changed-evidence checks are deferred, not passed, pending the shared integrated-current-main landing pass. |
+
+Final publication identity is recorded in the runtime delivery receipt after staging. Unchanged historical evidence is not relabeled as current author execution; compressed snapshots are archival evidence. All three earlier campaigns stay stopped and the fixed deadline is unchanged.

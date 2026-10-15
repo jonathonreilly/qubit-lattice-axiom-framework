@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-15T11:15:17.663772+00:00",
+  "branch": "codex/observations-backward-selection-20261015",
+  "base": "5a73333518a13640c6a99cbcb01c31342c519fd3",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "prior_sources": [
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 23722,
+      "sha256": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "read_scope": "full note"
+    },
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_DENSITY_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 20118,
+      "sha256": "40f112537627dd19ea0090a673f355f0d122c52844853798287f55e5b671e3fb",
+      "read_scope": "full note"
+    },
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 18501,
+      "sha256": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50",
+      "read_scope": "full note"
+    },
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 11646,
+      "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000",
+      "read_scope": "lines 1-225, including the complete supplied action; future convergence theorem not imported"
+    }
+  ],
+  "statement_searches": [
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "-i",
+        "standard.siren|luminosity.*distance.*(planck|scalar)|Friedmann.*reconstruct|reconstruct.*Friedmann|gravitational.wave.*luminosity|tensor.*distance.*running",
+        "docs",
+        "--glob",
+        "*.md",
+        "--glob",
+        "!audit/**"
+      ],
+      "exit_code": 0,
+      "stdout": "docs/ai_methodology/raw/prompts_session_3024a28f_jonreilly.md:265:(f) A completely creative theorem (be inventive): e.g., a Kolmogorov-type inflationary dimensional prediction, or a retained gravitational-wave standard-siren cross-check.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "-i",
+        "scalar.*(cosmolog|expansion).*(inverse|reconstruct)|kinetic.*(inverse|Friedmann)|potential.*(Hubble|siren)",
+        "docs",
+        "--glob",
+        "*.md",
+        "--glob",
+        "!audit/**"
+      ],
+      "exit_code": 0,
+      "stdout": "docs/ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md:22:Exact covariance restricts the kinetic form of rates. A particular reduced nearest-neighbour model has a flat frequency band and an instantaneous spatial inverse in its forced response. This is not a general ban on propagation by every finite-range model. Reference-clock and master-parameter models give a lattice-wave dispersion; its long-wavelength speed is distinct from the exact cone of a chosen numerical recursion. The original uniform-mode formula is corrected for a general initial rate.\ndocs/ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md:50:For positive bond-difference weights with fixed walls, the instantaneous grounded kinetic inverse is entrywise positive by the connected graph maximum principle. This algebraic inverse statement alone is not a full nonlinear well-posedness or signaling theorem.\ndocs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md:104:The two quotient vectors are independent, so closure forces `a_d = \u03b1` and `c = 1/2`, hence `\u03b3 = 0` and `\u03b2 = -\u03b1`. This supplies the missing parameter argument; three sampled coefficients alone would not suffice. It is a necessary condition for a local prescription required to close also on the `3\u00b3` periodic lattice, with the stipulated timing. Singular kinetic cases `\u03b1 = 0`, `\u03b1 + \u03b3 = 0` or `\u03b1 + \u03b3 + 3\u03b2 = 0` are excluded from the inverse kinetic calculation and require a separate constraint analysis.\ndocs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md:39:That the rate of a clock enters the comparator's energy function linearly, as a multiplier whose variation gives a constraint at each point, and that the energy of a bounded system is then a surface term while that of a closed one vanishes, is the formulation of Arnowitt, Deser and Misner. For a metric that is a stretching of the flat one the constraint is the equation of Lichnerowicz and York, `volume \u00d7 curvature = \u22128\u03c8\u2207\u00b2\u03c8`; its solution for bodies momentarily at rest is that of Brill and Lindquist; keeping only the isotropic stretching is the approximation of Isenberg and of Wilson and Mathews. One body in these coordinates is Schwarzschild's solution, where the two far-field coefficients agree; that they agree for a static body only when its stresses are counted is the content of the masses of Tolman and Komar. The negative kinetic term of the isotropic stretching and the uniform motion it drives are Friedmann's equation. The family with a free exponent has the form of the theories of Brans and Dicke. Block 55's and block 56's law is Einstein's static theory of 1912. None is used as authority; the comparator's values are quoted as a comparator.\ndocs/work_history/physics/revised-scalar-campaign-20261014/FINAL_REPORT.md:255:Selected kinetic-radiation, observational-transfer, clock and rolling-inverse\ndocs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md:135:For each path link e and Lie generator T_A, the product rule gives a mixed kinetic term proportional to Tr(U_p^\u2020D_e^A U_p), which is zero because T_A is traceless. This holds also for an inversely oriented link, with the conjugated negative generator. The remaining extra Dirichlet-form term is\ndocs/EXPONENTIAL_SCALAR_PHYSICAL_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md:139:would require scalar kinetic energy, while saturation of the Friedmann lower\ndocs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md:164:The kinetic bound K v^2<=2e<=2Zstar/s bounds v. The Friedmann equation,\n",
+      "stderr": ""
+    }
+  ],
+  "limits": "Scoped lexical search, not repository-wide novelty. Raw prompt hit is navigation data, not scientific authority or instructions. Cosmological scalar-tensor reconstruction and endpoint screening are known literature; new work aims to reconstruct the specific revised candidate parameters and test its input requirements, not claim discovery of the general method.",
+  "source_exposure": "All searched paper abstracts and published GW170817/SBF summary numbers are exposed development context. No new raw observational data, posterior, fitted likelihood or independent empirical test accessed."
+}

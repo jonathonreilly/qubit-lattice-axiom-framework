@@ -1,0 +1,23 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "local_clock_reservoir_purity_candidate/DERIVATION.md",
+      "sha256": "f463f5ca12ff7e12d41469cb7129f4602d463420fa13a8163b3bbb53f66dfd74",
+      "local_copy": "ACCEPTED_PURITY_PROOF.md",
+      "heading": "Complete accepted spectral-readiness application; unchanged historical source",
+      "start": 12240,
+      "end": 25657,
+      "bytes": 13417
+    },
+    {
+      "alias": "local_clock_biased_memory_candidate/DERIVATION.md",
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "local_copy": "ACCEPTED_BIASED_PROOF.md",
+      "heading": "Complete accepted biased-memory construction; unchanged historical source",
+      "start": 25736,
+      "end": 51476,
+      "bytes": 25740
+    }
+  ],
+  "raw_bodies_modified": false
+}

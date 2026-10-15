@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/finite_local_clock_memory_resources_2026_10_15.py
+runner_sha256: 96feb0b506acf41c931984f8c5114a05b52d9f425983b75ac71b9a51c3a36b2e
+input_fingerprint_sha256: 6d6bfaeb53bcc919256d6a10b98cb0e66f95eca2d63b8f02d6d0ab7e047d975e
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+{"canonical_parent_binding_complete": true, "complete_unchanged_proofs": 2, "decoded_originals": 255, "historical_receipts": {"historical_selected_scientific_runs": 1, "historical_unique_receipts": 17, "limits": "Historical source-at-launch and after-execution provenance remain distinct; direct invocations do not acquire invented receipts.", "replayed": false}, "limits": "No theorem test, cooling supplier, hardware simulation, physical supplier or future publication result.", "mathematical_predicates_executed": 0, "publication_binding_complete": false, "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Included bytes, excluded-paper identities, full-body intervals and historical streams only."}
+per_element: arbitrary protected old/clock input and passive references; memory contract explicitly supplied
+per_site: literal disjoint NN memory rays, paid vacancies, isolation, positive controls and full scalar
+per_mode: all clock sectors; retained purifiers and trash; product marginal is not generic noise
+per_block: distinct reduced spectral bound and full-output constructive comparison; r>=1
+lattice_wide: fixed finite apparatus, actual elapsed aging; no native preparation, reuse or reader
+
+----- stderr -----
+

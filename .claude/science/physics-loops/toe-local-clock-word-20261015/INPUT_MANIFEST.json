@@ -1,0 +1,477 @@
+{
+  "schema": "ordered-clock-word-inputs-v1",
+  "members": {
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/ARCHIVED_RUNS.json": {
+      "bytes": 4161,
+      "sha256": "2ae4e4bd61e0fc35a53231727d3d31d17238aa2d6dda4360acc3831bc46531e5"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/BINDING.json": {
+      "bytes": 2952,
+      "sha256": "c0f2118265fc809f64e244189ea74119cb6d5d27adedc12a201ac04ab068ad5c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/BODY_MAP.json": {
+      "bytes": 470,
+      "sha256": "b0245753b394aa8e1a08651a1221d32113b16aa7c704e7527dc1371d2210e109"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/DEPENDENCIES.json": {
+      "bytes": 3063,
+      "sha256": "77c09170217ab651dd53666f28a6859bc96150c9074ef33620eefb3108b39421"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/ROOT_SOURCE_REVIEW.json": {
+      "bytes": 7418,
+      "sha256": "301810dbb11e35d3d2d7114c71e4f28779e655abe66f17ffe289711b731958d6"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/SOURCE_INDEX.json": {
+      "bytes": 78928,
+      "sha256": "e940587057b6f9ffb33371d68781ec60b960055abc3cb6ad6c9e2981e7bf7c07"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz": {
+      "bytes": 6353,
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/0692d2a12bde13b518b41734d0add828f2de21afec5930dc96ae6b30c31696d2.gz": {
+      "bytes": 2710,
+      "sha256": "c733478a343321c544891a0f63206fdfc2d8964bb7164eac2bd099d5b721ab36"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/088bbf9ad344e139e7f4bd309dd86074cbb7197cec4b0d73968d25088a5c787a.gz": {
+      "bytes": 637,
+      "sha256": "bd03c227f31c8ab244d60812e79cd0bf0c06927f5b1be2749bf671d2da9f3abe"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/08cff32851b0b6a8ebcd625a9cbc935ac14c4dd5ed89d66f4c9e59180d004c94.gz": {
+      "bytes": 563,
+      "sha256": "8b2be1c59f449cc9004635f917a04c7a81aee47094b81d19dae191f6928aee3d"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/0b878b3e38dca1bbfd6312981cefe40869f46de1b3620ea08c7695179a324065.gz": {
+      "bytes": 365,
+      "sha256": "240b7b25db0f03388984175ed86bda49853a003ae1aed910d67972d12ee889f8"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/0e9dddedd952c0973f17753f65c6cac82794c91828f73ca0335f2b73aab79448.gz": {
+      "bytes": 1347,
+      "sha256": "530d09e99bd52c6fc1dcb019c6db79e682add84f9c34501c31526a56f0642698"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/15827ae596ed17149780624c1ab269a4234a89d34df99c217718a961c546340e.gz": {
+      "bytes": 54147,
+      "sha256": "057a3d4ed953542dae8c6ecd7a0af91eebf2ced4eeddbfbfad5fc012b8d92546"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/16bf920021062f3f26a12a72324b4a08eabdea85533284fed628f07f320f5970.gz": {
+      "bytes": 916,
+      "sha256": "7c6baa40cc65972e75810ba43d8078042fc3d0dd64924ed8e68915a822fdeae1"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/186edb4d7c118be7168d1ab5d17a813121792a28e3bbca9618d0ef4b76fcad68.gz": {
+      "bytes": 6894,
+      "sha256": "6cec5fc8495bea8cd1dc1b6e389925d6c3f0a8d76ac120ba38b4523847362ba8"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/18df7a74393a264ae4b19f1bbc59c526ce73f335dd9d72c7e921f6fec2ad5cc1.gz": {
+      "bytes": 652,
+      "sha256": "09d3a0479fcedacab4b72af2556630ef0af4404f1ebbd24f7c284719bc3ba244"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256.gz": {
+      "bytes": 20055,
+      "sha256": "54c76bc03938025a34ae938669367e13e425ed8328da38cfade26e032e39cfab"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/1f7691b6584effc866e7b93264372d615ce1e20d6768278ccc6efda2138adad6.gz": {
+      "bytes": 1697,
+      "sha256": "a0574be8112b9fbceb2efdc754911c6d7404ac4f6cbe7da3b695ecee2c66b077"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/2214320bbe9e551f6e15c36859374aa68e6b06c0a6ecb04c3cd82317fecf57ad.gz": {
+      "bytes": 2143,
+      "sha256": "bf36fa14e684ef6ea6d3ca5884957019b3bf94f93d6ff99d436fd3e2fe3d8209"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/232ebba0b52e89f3649ee510dc0238816647da62804f25e5d662ee3fdae8b2b9.gz": {
+      "bytes": 1337,
+      "sha256": "d9d959f40480ab5b9eb1f4e893bc1c0b99ded03bccda48c12ccb7f4b062cf25f"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/240f3453df3ed554f39f65970f03d075d9ea75321dda552a6acef534df4c2b52.gz": {
+      "bytes": 971,
+      "sha256": "109b815cf86929736b2a93d61f769663d5cb4970956faf5b3b09f7d5442cb632"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/24d0228d8b1dc64dc8a28dbc307dae44d4ea5218739a47f01b91aa45738f1337.gz": {
+      "bytes": 1825,
+      "sha256": "e062e727633776e917ad8e5af5ecb470291bcaf868c14918ed407c1363b93fcb"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/2a0d69b6171510cf2e1f5f83a28276d51279d1493efa6b34390d194bdac14656.gz": {
+      "bytes": 362,
+      "sha256": "110146390ba5c41c235741b4d6a5125467396958f80abfcd65123c2c589596f0"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/2ba94662c8cdafcf650eef9d1cee00d5742925b6869c9314c9cf394bda5484f7.gz": {
+      "bytes": 359,
+      "sha256": "8c655f1eef6bfdf3f8ac7672d9b9c0ea69c0ef8acd14c74ab14982de149493d0"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/2beaaa6ecfd0a986cca7ea3c0521cab624bca6a71ef0967d91904c3cb88db4c5.gz": {
+      "bytes": 363,
+      "sha256": "ae2c5a5040f2101a6c5bd8b96bb1c825744014a46e5ac1bbb3f9518b18ac7271"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/2db7bb279f318a7d52ffd2dce5a38b1cd9a42e3103ee1b5c1c7ee536220dc59e.gz": {
+      "bytes": 362,
+      "sha256": "0c66ea613d7a3ddc600c3e1209dab692ba148c0b80dbbd01db5ae7d4e02481bf"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/2e5ee8f4c79340d5a54c0727842bfa2398242e23d0f447e0eba0d611f95b4ea9.gz": {
+      "bytes": 981,
+      "sha256": "68dd8d7c28296c452ca23ad31aab740ed7f705b12ecafe49cc607663104f9463"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/2ef8ec43db1584741c74f8d10edd9d2243e69199ac233ef355ef489542caa6ee.gz": {
+      "bytes": 917,
+      "sha256": "1bd532bb3f56de08983593ad075f1a85cc4a57ca1cab8a83fa40cddba429c8b7"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/345c0b0815fc3582d9e5ce3de1f95f951dfad22ee53baacf07526de2338d4153.gz": {
+      "bytes": 390,
+      "sha256": "5fe68df4b146589c26771dd6b8203eb04d2241370e507ae34a20b2ce57791ec7"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/3715076a9f09fc91015f719dc7f96242650c61957804d64641fe4baac29b862a.gz": {
+      "bytes": 1822,
+      "sha256": "80d4214423efd10c4fff53eab73ecb74bb28c5f7bfd082a01ea42a987f274889"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/409a22746a9760032d57299938e62864e6e9953100110dc998e29e5a17512c50.gz": {
+      "bytes": 410,
+      "sha256": "f8429905299f495c6e7985f242ac05b5cdf25296bdbf9a29ef3a02f6ec3e8021"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/4234912a810a44f29e91245e9226405b417761e41b57385f00db4b184c5b7b9c.gz": {
+      "bytes": 227,
+      "sha256": "2834ffb417ec0fded51ad6407536c9fcb0821f6e3e95eaf67502ea466aef4674"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5.gz": {
+      "bytes": 11231,
+      "sha256": "c55a7c8052c870824deaff63270747254297b0e10a64ad985ea741d05e7f2d54"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/467e48c48f046e51492ff6ee9b23f0be0e745070cfd365c2fb0406257acc6447.gz": {
+      "bytes": 840,
+      "sha256": "06c4ea90f9f375980e60b40cc280ad08dc01fe98a1d6f05b90ea9b081f69f509"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/4724fff5436aa3053813abe2a5a47ef6cfe28fdac09614d706164e4bce34623c.gz": {
+      "bytes": 289,
+      "sha256": "b0fee0f1d4ced1fbdc83c5424a0c098315e30e756df0642944be8dba3c435fdc"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/4a056820f761743a3dcba4ab6a567a57d6ed98a749d7c8aa16c4240eabda4c0d.gz": {
+      "bytes": 910,
+      "sha256": "81676bf4c24afcff4531bf0c3aa9042bf643b6c2c59dc11b6814595ce79343cd"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/4a53b862cb59b43d5af5019e2b5047c1f82b888081214c7c69ae23dea451851f.gz": {
+      "bytes": 857,
+      "sha256": "7c20e2caf1603aba188637f05a292f463f1ae83cfc2a0ed13e5f618174bed4b3"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/4bc1694695537040d1eb946dd251a59e5bd4ebdd7dc0dc49696016c13f4e8b7a.gz": {
+      "bytes": 548,
+      "sha256": "26ba0b7d9d499502ea5877e8209cd0d01ff3ca67bea05b3ded9e79147c7d9385"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/4e6d3b1adb44189a7dfd744b7c8d00abf9b544f20eb30cd77d99221913ce565d.gz": {
+      "bytes": 2120,
+      "sha256": "e4962de2376fe9944a87d9f10490163147d41e86cfe1d88ad85f14e0a8a98d1e"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/540edaf2bbd5695c7d0b9afc78266c55b40f34d6ec5c42f590f700d62c9dbe00.gz": {
+      "bytes": 8884,
+      "sha256": "949d284fb97e2879e18a44d47373f515e4440ebf1214a91a116ecbb07263987a"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/56ba2cc91092735e9a1abb01cd096f40ea2631a98fff9299405839386a6d13dd.gz": {
+      "bytes": 245,
+      "sha256": "44d6aac8b87bb268da159d0752a22492ab1d295eb6a8bad1088d7753d6736a8f"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/590e4e97075d05a151147e1e72fd0dfdea71ff367c8b0618097928a4a68dab63.gz": {
+      "bytes": 760,
+      "sha256": "0baca8a501de48fb1d618214478de797b7978d86bf1ba3392b4c2a16e238a542"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/5b1191605babb02cf13d211e324bb10483c9a0d4336942893702ba932ea9dd21.gz": {
+      "bytes": 679,
+      "sha256": "99e933fc9ae68fb23aae98faf5023e0a12355801950c2128ae9051581b9effc3"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/5cfbd5ee7f9b0df6b72176870cbd0674f041092d7a6932fc1f0ddbd8e97a0692.gz": {
+      "bytes": 3366,
+      "sha256": "f7d74ef367ec3d72aec112c66c46ff4c27b59f5a9b470a6cf43a998c0e4442e3"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/5f9670a56d1df911108ffe803cad6e4b7d75c64c79d40b5aa1d7fb6dd6aeeabf.gz": {
+      "bytes": 5394,
+      "sha256": "77a67e7b8fff2bde60cfb8ed0ce77bfa9b1cca1d85c09e0bd6806327dd5282c3"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/6095716801c5497e066892e2dac0aa3a0c9c306c0e862241b66d3630c4fa986f.gz": {
+      "bytes": 12406,
+      "sha256": "9a183ceaefded836854d36e0f557bc8716c25f798ff746b3559b9b55fd32e99c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/611b377ba4d6a1062dc60b5da64a8586934feb1fcf334644cfb0679a7ddf36f2.gz": {
+      "bytes": 3531,
+      "sha256": "846df307098b7170d8e80a79310ede491c89e3d5533907d65eeb327ef878e0a5"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/62e86f6ea238b2a9ef6cfaad123ce3fea402d7b5569623d1b9c3338a4eea9210.gz": {
+      "bytes": 1790,
+      "sha256": "3e3aad02db2cc78fd45eae66ea0b67f383c61558b00aab2074665c47fddb603d"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/654d2a2d6c5846ba63b38457dbac6eef5872c78dc9087136b7e785c209e29c94.gz": {
+      "bytes": 2454,
+      "sha256": "2288e8bdab3e16254c30419eaa27228fd8774ddfbde2882754e9d7d1074d8198"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a.gz": {
+      "bytes": 12432,
+      "sha256": "76a3dea24835120f8e01f832c8e3386768896c7131c33776b159e44cb4883d11"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/6da2dc570069ced7df2e61fe1ef9975b12c603188326499316e37ee803f9f87c.gz": {
+      "bytes": 2065,
+      "sha256": "6e35e61f212b76a929cdfc98b07e65a1d5c665769a6cf4bf8418160a8364aac0"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/6e59cff11365747184c5d5ab5846af3b5058e2dcaa2ed712aa7451333d0f9373.gz": {
+      "bytes": 226,
+      "sha256": "8bfd85e8df996d1678e1ecc890f1d9ce050535ce14527d32867c6d99ba081f9d"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/725defe09a03fc7e36877b465976274a0c8c160899711300b83aa8f95b5f95cf.gz": {
+      "bytes": 1141,
+      "sha256": "dc7a6b4b509e1e2affd81b1c49b2eb0ac0355046462eeee6f1cd52e551028615"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/7473c3d8dad9dda2369f46ce6d6bdd8e828996c5092c9b0a6e09f50cd03e9869.gz": {
+      "bytes": 3515,
+      "sha256": "87c86e44c444cf7c7528496fca6b9dda5ba4511e2e02a99928a735a9eba20bee"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/7552997cf65231c5160efdbd52451b1a4a956ee0119ea8f0f129b6dc3fc8e443.gz": {
+      "bytes": 1152,
+      "sha256": "259981def325b7d48f31fbb35b8246c8bcc83227e5eaa217f355789e53db0cfc"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/79ca10e5c5d8aa248f374ed9cf78e00269eb204bd2cd7ba422772f9942de6b0b.gz": {
+      "bytes": 2587,
+      "sha256": "2f9f45898ad4c8d00e15f8b5d849a559ff96e3218a4a46286fcc3dd936ce89e9"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/7bccec3a1e36456eb7aefb43e9854ed52b08214d306b86748c7a703f8fee2e2e.gz": {
+      "bytes": 1604,
+      "sha256": "658bf20193f30c864b3707932316e75f93150978a91eeeae83f81748137bab8b"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/80fbc421a81d50a12ac70e07996ac59edf316b3795cd23c3a461dca151b6c5f8.gz": {
+      "bytes": 1589,
+      "sha256": "55abec2647da6188c291bad473f6513b79263f2b164144d628844a85c5e9676c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/84b2f4c4f1f9bfbb4de25918bfc9304dd05a5874e7f18187dd4a9c38623b7b80.gz": {
+      "bytes": 456,
+      "sha256": "10600a31c235432f1b24675c5997eaa72db4be6847dc02f26008278beeab469a"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/8bfd8e5075554f0755346a3b7ad073ae33a464b3b2d64ecc2e932b9e8041174c.gz": {
+      "bytes": 2508,
+      "sha256": "5d21dc1fa3225fef5f79f879011170724843aa733c16a0e3b41b450e1446f4ff"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/9078553f3f0e4b464ac04f96644081ffb4f5fa71c93c5737ac6411a3ae3cbdce.gz": {
+      "bytes": 394,
+      "sha256": "cd810bda8ab5b4fdd1b124fe29897e6374e01ad1245cd2dc80933225da09cbad"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/922a48a1238d3cc5ae0e2a80f2d8c53f44c7d54781da3d9c6fc6cb84fcfd09b7.gz": {
+      "bytes": 8977,
+      "sha256": "37a2c1d21d19e62bb4f09a0e8c509bb4a3e633f519db899a347aa586f63a6d50"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/94cae9075769e8648e3145c39885a6ff367fcfb110cd3bc823b4fcdcbe6c3f7f.gz": {
+      "bytes": 1105,
+      "sha256": "3e6e1b6b64f7f87973e454818812e1afa79264f70e1ba00e34dc176024e6bf94"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/950ff867653d5578dab305b851a6b34b115033fa9b3ec1a8ab811bbd2c3ea0e7.gz": {
+      "bytes": 2493,
+      "sha256": "0de13efa5b0a64491207bd47b1474144e2752bafc0122878ae461be663254397"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/9760fb46179242057318eab67731e75dcccfffc16a1cc6221710867f9b4e644e.gz": {
+      "bytes": 2371,
+      "sha256": "42bb7a0c664d02a64b7201674b9a82e7289d6309bcb0de3986a48370a897e077"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/983248350fd194bb7676b0da08745d5d92b2a31f605d57c6d7109bba91fb642e.gz": {
+      "bytes": 1281,
+      "sha256": "2494c6143f7f81d9895300c9888044d1b50941865efb1682c00a1b31258a6877"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/997f1f4738bc8724ca73da1b36ba4458d62fdcaf36d02272aa8837b55b3b3a77.gz": {
+      "bytes": 1717,
+      "sha256": "34e28a9cdf5e4cefa8b7de08931063f1796d1d3c3326cc28dde7f2e3d2816d2c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/9b2011b480fd2fe2e7583ebcca39d2e3667d9445d773cc4ae681c3e7c905f54a.gz": {
+      "bytes": 2954,
+      "sha256": "8c86d1c7498219ed642efbf1b6b17dbf2b7118a3ecfed6c7372600254f88832c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/9b24aecc8808ca1de597146095cf2aca7c622a705b8a955ea5f5dab4c18e7e35.gz": {
+      "bytes": 940,
+      "sha256": "2159c6c69cde1035cf84164332a29735dba0c38b1d1dd9b0e931463048acec81"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/9d0aec94b1597a1b1f5a2465052596b63c22055b942731494aa6710b3af0cd2a.gz": {
+      "bytes": 668,
+      "sha256": "a2e1aa76d09ffc7bb448c3a4a52a1d0c133b7172f13a78f3726a701405829fe0"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/9ea15e0450e59829b2c951ae562f55f7bb46e8fb1ca039c59f948329d19d9dfe.gz": {
+      "bytes": 3472,
+      "sha256": "47b6fded22e83fa6bda615140e7882263944ec2a4550fcc7e4a920cf7b1248f3"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/9f5ce535d3684b707d780d15b538255d7228669f0cfa2a6170c51c11bdd5674a.gz": {
+      "bytes": 977,
+      "sha256": "45d816d7cd84549e4b62a7f170c314de7d291adb30ee2b96fdd8d0f9f85028a3"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/a139e56c3cb8906b60f68132b0e8172323b88810101db9b6a0da9565539b11b8.gz": {
+      "bytes": 1054,
+      "sha256": "570f16ce692d61d92cc6cb840c2046b23505aa14ceed735f8564873dbb4be89f"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/a3908a5fec53c806cdc7479c115977d2c67f56cd1b64e3dca6035405a856c0fb.gz": {
+      "bytes": 2710,
+      "sha256": "81e7ecc8fac030c7003b55a8c79097fc624650ea57cb653d0df1f45185914b7b"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/a806462b98d2d9a87beb0ee1fe7e1aca75006ebbd38359a924fda254f0915673.gz": {
+      "bytes": 12339,
+      "sha256": "f7e7ab4d8ba9ad4a23d31d2c167625188108a075ae27b263d62552add1b2fe3e"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/ae07d406bf0bd61bb9ba81a201ded74f87e388b70392b5ce4ca81c93779b6d75.gz": {
+      "bytes": 657,
+      "sha256": "9b50b90199b27cdd4143747dfc5466fadac7a9c23e635cfac86e36a2ccd9d662"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/ae7f41c49233777a2cd065362db2178a9b29d5080c30f9a62734504e7e37a426.gz": {
+      "bytes": 1151,
+      "sha256": "870ae057b16ea08dbd595883de69d35787cad3b751d38a410a4a53f895e16e24"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b17508c1f6afafc3f18d15badd18a3a53e40f5dc04f9168b937d3455caab5ad5.gz": {
+      "bytes": 249,
+      "sha256": "2a3dc8077eec4c160cce5356bc1055452eb7af8d7c5a3d6fa04895d4047d0f8f"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b50665d53cc4118cc810668c2c4ba1752905478245ed7839a1320e35e0b87312.gz": {
+      "bytes": 1982,
+      "sha256": "082082b75673a6a749fd46697aaae7c916477de926bad8d1c1f92f2dedd1246c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b56ca0220837f7fab180a5c36c85a38dd051283040ba54f78f519190d0ade09e.gz": {
+      "bytes": 3250,
+      "sha256": "4f22b9130ade50860b913cf16a74a9a422c552308d30d74acacbfcdf5b6da98a"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b5f1955a0bbf2e4d669bf6360c6d7c970fd9937ea6e7f596ba403c7fe0d2823b.gz": {
+      "bytes": 3373,
+      "sha256": "e78e4d71d247db2f390f85d5691664e0ec23e48340bb353d1077303e2908416a"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b62f3a659bf34185410bd98851107f13baa5ab541c9c8aba463f792ac7dd85fe.gz": {
+      "bytes": 2372,
+      "sha256": "4922e3fecc37c66d9af7de93e67c4897ed5b39ebceffa52c691b71e8f780caa7"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b66afa7c4ff075800e6eec912ddeaa6783605a735cbc8464ec78ed810f7d5dc9.gz": {
+      "bytes": 230,
+      "sha256": "030ede4460cab8b28ea7d16912d5b36a2da4a8cc447e0dca5fd9ac078f34bccc"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b6893d1759135fb6bf767831cb93346fcb1f9078c2fdbdd31a87c36c907e0533.gz": {
+      "bytes": 359,
+      "sha256": "c06ba30c4c0bb334716204f8c4c3779f0074f2573a71bd8efff65e8910ed7b64"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/b8742a19c6978052777e60a7a65bee6e1d9ae8f1fc8cc98304cd574987eddee8.gz": {
+      "bytes": 368,
+      "sha256": "3d215b2acce9bf54c5239d834ee8fd1d2adf06e5a88ac75b6b1b74348b27cf68"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/bb3a4764729ad9c0fa73401b9dc0cce83bf8098e17380041d2e0494066eadd17.gz": {
+      "bytes": 566,
+      "sha256": "dc7efa68927d2c470807035939a1c7182789cfef3f3c320d1c7e55f3c71dd4d5"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/bfbc1b8bf1d2fa6a826273b4cf7acbc6ce7fe3fc02a8a7dd9a8d4f5f46fbcb93.gz": {
+      "bytes": 1027,
+      "sha256": "7285d5be604a6d46e80c90a9bba49981176d5c17e545529445d8659e496a806c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/c164118926e77b7fcd4947254fbe39608e217a2c0190eb4952889f7ba6805e8d.gz": {
+      "bytes": 721,
+      "sha256": "d3396d2ab107eb17af37f1ce9e79e12811688be76a13edc1048e96d421ae36b5"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/c359366ee4cba225e8ed5557fbdf36bfc2cc9f00e7f8b11ecd5cc33b5448e2e1.gz": {
+      "bytes": 1791,
+      "sha256": "1bc69f2794509489603a29b945e26be3c8fe1586f510f5fbd4a813471ce1570c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/c46b9efe9a512de581f592a8bc396d2d38e9a6b49315e7676aaa03706ef250a1.gz": {
+      "bytes": 1783,
+      "sha256": "0574d71449bc4c07bdfec3b79db1bbdc14f704301b71137f5b6a9506a6804a0a"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/c7f3e7f365eab9d1961f66f1caa41329e7e980fccdc5bbeffda22b82a4b91a04.gz": {
+      "bytes": 988,
+      "sha256": "e98b7a806f8a10a31184bd968368ab7a90bb3b9bbca1e1c2b35972e6bb19266b"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6.gz": {
+      "bytes": 5002,
+      "sha256": "54f032945ec0f25ecd1a01b6b0dcfe2a2e335ab75d514e9ed0f1aff81e7d9f67"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/ca7da20b768551341622b19d4860dd0e07d14ebab2e714ea62f7597cd42be004.gz": {
+      "bytes": 547,
+      "sha256": "fd238b82ed7c6c7e2104ad46526436a835b426a9fcfe58672ff0d0c21b4fc31b"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/cf17c355fa01f01c8d8c860c86eed49ed603359d9cde41dc3f9b4f8e42fedd3e.gz": {
+      "bytes": 528,
+      "sha256": "5cebad879ca293becbaa3454517fdf1eb6afa947c44fb9c135e15b2ad7ffb1e0"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.gz": {
+      "bytes": 688,
+      "sha256": "875b7f42ca707edfd4304cdf8d0ca1e0a7d44ab682909812f5b119390ed0fc86"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/d4669ec65e329159622cbc6047ed7d36de588ed2746c814c9cc7e0a7b4c1974f.gz": {
+      "bytes": 362,
+      "sha256": "8d602cda83b139197cbb7f53a3617706f84f1b1cde2ff6ee689ce218bead413c"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/d51463c017145cb2287eb7287587574c93fc8be0113fc2765a76fa8f10a1c891.gz": {
+      "bytes": 540,
+      "sha256": "bc7c6d1be5a3433e81f43ef3cd46586abf756defd7ba05d2677118ac2ae415ad"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/d7fc8478b73af1612811b1dca652d87f31e72dab64bc517f387e24468b3d5ed7.gz": {
+      "bytes": 156,
+      "sha256": "20dcf48c3c17a9b948b911618acd374c8a4f4823309e687c6ecd5d04193233c1"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/d8bcb30eefbd9568de44ca128b19fafe140bdbbd8ce5c2d51c2c018600a69c39.gz": {
+      "bytes": 544,
+      "sha256": "72dc98068e1026ecc663ee2cc5d063a3e6b7584b629f3eec5330146a35b1b735"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/dd0db9ce859765afa5ded1888cb2fd362f1c07c9cf5ac70f94dbca74fc6e8935.gz": {
+      "bytes": 1026,
+      "sha256": "e6664fcd83327a1a5d78b4d31f82c0371f48fc923fcf84a6b88482a6a637aae5"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/de69e1821cb31a38e71998f116c881c177d498e6e8f373f62d4d2e31c68fb2dd.gz": {
+      "bytes": 7398,
+      "sha256": "fe8ab3aaf7a7b6eb49d3170140a937a6e526998cbbff0032b1e1b500343a13f6"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/de6a4d20577f396461959032a7cd19b450d4c945892282f4d5edc6ca814518ae.gz": {
+      "bytes": 435,
+      "sha256": "f2df41deac152fe600c712f57b33f2a9659d056a3cb79b049a167b04ea4c2e86"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/dea852660a3d1638c74665c2a43684d6ad3f8024ed459a7b26fc74616a512172.gz": {
+      "bytes": 1312,
+      "sha256": "8838843c28b0cfa3f5c9bb58ee23504055dfe255716aed0256a2180a8e84f602"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/e19c68ff0adba0ffeab57d9d3bd463ba2874791b97fec547fc560c51d645e0c7.gz": {
+      "bytes": 885,
+      "sha256": "a29bf17f8a034f676fabe8321630aa2c2e28451b39e4702a22500b1b9bbcae65"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/e2870dbb3ac324a1f8f560f13fdd6733d2480f1501f132f63b509da0bdf9ad8c.gz": {
+      "bytes": 266,
+      "sha256": "758f85d405dae0de1cedb8852bdba350f6b81e510b00ac2f202e60a969aedadc"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/e330000f550df639feb72a12de1ad393ab03fc46f22f59e43072fcb494582897.gz": {
+      "bytes": 4191,
+      "sha256": "4cdb3067a47b6cf38ed39a4c3343546b5c26b2c12533c78b97592eefa4fce18e"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/e3985930b9542d48a21e411b5e678b1422f1aa12ee7c095cc30627c246e00cec.gz": {
+      "bytes": 818,
+      "sha256": "ef4cab6660748c097ca2afbe3a26238c76bb76332b9389c913388bc2bd6ef8c1"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/e720165511bf1d7e24306618c04748b02309ee774ba44dcefdae971f1b2a5047.gz": {
+      "bytes": 7196,
+      "sha256": "27ba6aa1afa55853611da7dddadfedf7dffbd01981958195023bd5388879e5c6"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/f1d9c59b3b15580ca0644ca93d346aad21b0b8492dd8e00a02303388c02bb643.gz": {
+      "bytes": 293,
+      "sha256": "b8d7bec013a771f172c4696d8522b99d0431de214dba31f86a2c4316f9d71295"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/f53ded2bc3ed75dbbe5b00f945aa1384e952d294a8575851c0ad23f59250eef8.gz": {
+      "bytes": 3214,
+      "sha256": "5f8243d019a17e70b36e5f794ae6444eab3d2f858028344f8c3b52a77b90eb2d"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/f91d8066ff35fc29c8b9edf99aaffe1327caf847b07c6878db476527777a9705.gz": {
+      "bytes": 1589,
+      "sha256": "e3abf41b169380ad5e95442870ed9761ca2f7fb325ea73e5698a106fa10f3599"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz": {
+      "bytes": 724,
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/fa509e29075503a57604f2c953dca5a4906070eb730fa974925fb719ea317ea4.gz": {
+      "bytes": 3520,
+      "sha256": "31b53a00c1243d0ee3365c69d66c94f10c855bfbf5282071486adac8faf477fd"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/fbf18a1b0c08e9a53b3592a5bd01684f42ddc7f538dc3ae1466826d40fd958aa.gz": {
+      "bytes": 540,
+      "sha256": "84da8f3febc53e44922b30370686163e66319ef31476f22b7820070ebee1c8d8"
+    },
+    ".claude/science/physics-loops/toe-local-clock-word-20261015/archive/ff5733effcea599f588a59b358325dd30625b12e679dee6f183c938a5115573a.gz": {
+      "bytes": 11615,
+      "sha256": "46d95f0d0c2ca5fa21f4b41f64478139f7d4d36492c56ba934c8bc0ad10678d4"
+    },
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 66890,
+      "sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea"
+    },
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 52484,
+      "sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+    }
+  }
+}

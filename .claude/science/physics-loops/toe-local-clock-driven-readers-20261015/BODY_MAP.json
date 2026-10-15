@@ -1,0 +1,25 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "local_clock_physical_reader_candidate/DERIVATION.md",
+      "start": 17559,
+      "end": 40145,
+      "bytes": 22586,
+      "sha256": "e22128367932942d22a016ccb58c87128dd7cffb53521764b2334504e79ea0a3"
+    },
+    {
+      "alias": "local_clock_old_transit_reader_candidate/DERIVATION.md",
+      "start": 40210,
+      "end": 62764,
+      "bytes": 22554,
+      "sha256": "75cc73dd944f09f3c9a9147e69a80dc3cba9fac598b8d193296e7d5c03edf5ef"
+    },
+    {
+      "alias": "local_clock_boundary_reader_domain_revision/AFTER.md",
+      "start": 62863,
+      "end": 94214,
+      "bytes": 31351,
+      "sha256": "9d623702a79697aabe579cd5fcc89efcd0c37fea1ff989d551de4b9fdb560b78"
+    }
+  ]
+}

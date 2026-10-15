@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/driven_local_clock_pauli_readers_2026_10_15.py
+runner_sha256: 076514c6ec86e74344365645eb4a687790c4dcd5ad4089f8771026571b7f47ad
+input_fingerprint_sha256: 392b1e46dafff056615c8c9bde0be5a025cb319dafee36a5c1a5659af1dcc0f4
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"archived_receipts": {"failed_root_metadata_attempts": 1, "failed_scientific_attempts": 0, "replayed": false, "root_metadata_attempts": 6, "scientific_attempts": 3}, "complete_proofs": 3, "dated_canonical_source_binding_complete": true, "decoded_originals": 351, "limits": "All three canonical parents and actual feature/source binding are dated records. Later reader publication and retained audit are separate. Hashes do not establish proof or physical supply.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Bytes, complete intervals and historical stream provenance only; no mathematical predicate executed."}
+per_element: arbitrary old/reference input with supplied joint entry and pointer preparation; full coherent output
+per_site: dirty-clock transit pays full drift; occupied-old transit retains the old bond and pays its stated local comparison
+per_mode: whole logical-head domain; two-cell quarter commutator bound restricted to one excitation
+per_block: exact raw bodies, domain repair, scalar/work/precision costs and failed metadata attempts preserved
+lattice_wide: conditional driven coherent readers; no native initialization, classical instrument, reset, stop or common cap
+
+----- stderr -----
+

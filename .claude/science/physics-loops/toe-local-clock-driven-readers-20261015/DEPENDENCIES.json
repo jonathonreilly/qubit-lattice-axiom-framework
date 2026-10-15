@@ -1,0 +1,106 @@
+{
+  "mathematical_roles": [
+    {
+      "alias": "premises/root_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18674,
+      "end": 33077,
+      "bytes": 14403,
+      "sha256": "fc63ea1ed84f9e61f2ad0fc96ce33bdcff5779a9c0e38fa7c73d02f6a829cefc",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Direct: negative m5 full-reference residence estimate and time convention"
+    },
+    {
+      "alias": "premises/independent_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 33181,
+      "end": 62080,
+      "bytes": 28899,
+      "sha256": "101d7778f3aaecbdb2db277c2d9857eee53cc7fae93941e444fe03d939ff36e9",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Preserved contextual clause of the dated window parent; its different ray/time/reader domain is not substituted"
+    },
+    {
+      "alias": "premises/boundary_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 62134,
+      "end": 80595,
+      "bytes": 18461,
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Direct: positive m2 occupied-chain geometry, right entry, apparatus gap/norm and window"
+    },
+    {
+      "alias": "premises/root_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18448,
+      "end": 36172,
+      "bytes": 17724,
+      "sha256": "de69e1821cb31a38e71998f116c881c177d498e6e8f373f62d4d2e31c68fb2dd",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+      "role": "Direct underlying negative-word geometry and bare-input comparison"
+    },
+    {
+      "alias": "premises/independent_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+      "role": "Direct positive shared-head word and full-space lift clauses"
+    },
+    {
+      "alias": "premises/root_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 14202,
+      "end": 25142,
+      "bytes": 10940,
+      "sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+      "role": "Direct literal scalar-port cell underlying the negative m5 reader"
+    },
+    {
+      "alias": "premises/independent_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+      "role": "Direct positive-cell inverse/response, reversed entry and full-space bounds"
+    }
+  ],
+  "intended_canonical_targets": [
+    "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+  ],
+  "actual_final_graph_result": null,
+  "expected_after_root_integration": {
+    "new_nodes": 1,
+    "new_edges": 3
+  },
+  "context_only_clause": "premises/independent_window.md",
+  "canonical_parent_binding_complete": true,
+  "reader_publication_binding_complete": false,
+  "excluded": [
+    "static reader",
+    "reset/preparation",
+    "autonomous supplier",
+    "optional entangling numerical instance",
+    "branch-ancestry theorem imports",
+    "unfinished window integration program"
+  ],
+  "publication_binding": {
+    "binding_complete": true,
+    "base_branch": "physics-loop/toe-local-clock-windows-20261015",
+    "base_head": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+    "base_tree": "85b386b89e07473d55096c70b0eb9e15e81d94f5",
+    "base_pr": 9593,
+    "feature_head": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+    "publication_pr": null
+  },
+  "publication_binding_complete": true,
+  "graph_status": "Exactly three expected mathematical citation targets: windows, word and cell. Seven complete clauses retain their direct/contextual roles. Actual graph verification is a separate dated operation."
+}

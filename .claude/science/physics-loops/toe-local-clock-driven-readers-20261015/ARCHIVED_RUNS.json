@@ -1,0 +1,85 @@
+{
+  "scientific_attempts": [
+    {
+      "id": "original_full_norm",
+      "source_group": "local_clock_physical_reader_candidate",
+      "receipt_alias": "local_clock_physical_reader_candidate/commands/selected_exact_01.json",
+      "stdout_alias": "local_clock_physical_reader_candidate/commands/selected_exact_01.stdout.txt",
+      "stderr_alias": "local_clock_physical_reader_candidate/commands/selected_exact_01.stderr.txt",
+      "preseal_alias": "local_clock_physical_reader_candidate/PRECONTROL_SEAL.json",
+      "exit_key": "exit_code",
+      "start_key": "started_utc",
+      "end_key": "ended_utc",
+      "expected_exit_code": 0,
+      "scope": "Preserved actual selected control only; no replay or mathematical-output evaluation."
+    },
+    {
+      "id": "old_transit_residual",
+      "source_group": "local_clock_old_transit_reader_decisive_check",
+      "receipt_alias": "local_clock_old_transit_reader_decisive_check/runs/selected_01/RECEIPT.json",
+      "stdout_alias": "local_clock_old_transit_reader_decisive_check/runs/selected_01/stdout",
+      "stderr_alias": "local_clock_old_transit_reader_decisive_check/runs/selected_01/stderr",
+      "preseal_alias": "local_clock_old_transit_reader_decisive_check/PRECHECK_SEAL.json",
+      "exit_key": "exit_code",
+      "start_key": "started_utc",
+      "end_key": "ended_utc",
+      "expected_exit_code": 0,
+      "scope": "Preserved actual selected control only; no replay or mathematical-output evaluation."
+    },
+    {
+      "id": "central_commutator",
+      "source_group": "local_clock_boundary_reader_candidate",
+      "receipt_alias": "local_clock_boundary_reader_candidate/logs/03_selected_commutator/RECEIPT.json",
+      "stdout_alias": "local_clock_boundary_reader_candidate/logs/03_selected_commutator/stdout.txt",
+      "stderr_alias": "local_clock_boundary_reader_candidate/logs/03_selected_commutator/stderr.txt",
+      "preseal_alias": "local_clock_boundary_reader_candidate/PRECONTROL_SEAL.json",
+      "exit_key": "returncode",
+      "start_key": "started_utc",
+      "end_key": "ended_utc",
+      "expected_exit_code": 0,
+      "scope": "Preserved actual selected control only; no replay or mathematical-output evaluation."
+    }
+  ],
+  "root_metadata_attempts": [
+    {
+      "label": "local_clock_physical_reader_root_sources",
+      "prefix": "actual_runs/local_clock_physical_reader_root_sources",
+      "expected_exit_code": 0,
+      "child_source_at_launch_present": true
+    },
+    {
+      "label": "local_clock_old_transit_reader_seal",
+      "prefix": "actual_runs/local_clock_old_transit_reader_seal",
+      "expected_exit_code": 0,
+      "child_source_at_launch_present": true
+    },
+    {
+      "label": "local_clock_old_transit_reader_root_sources",
+      "prefix": "actual_runs/local_clock_old_transit_reader_root_sources",
+      "expected_exit_code": 0,
+      "child_source_at_launch_present": true
+    },
+    {
+      "label": "boundary_reader_root_source_closure",
+      "prefix": "actual_runs/boundary_reader_root_source_closure",
+      "expected_exit_code": 2,
+      "child_source_at_launch_present": false
+    },
+    {
+      "label": "boundary_reader_root_source_closure_retry",
+      "prefix": "actual_runs/boundary_reader_root_source_closure_retry",
+      "expected_exit_code": 0,
+      "child_source_at_launch_present": true
+    },
+    {
+      "label": "boundary_reader_root_seal",
+      "prefix": "actual_runs/boundary_reader_root_seal",
+      "expected_exit_code": 0,
+      "child_source_at_launch_present": true
+    }
+  ],
+  "failed_scientific_attempts": 0,
+  "failed_root_metadata_attempts": 1,
+  "scope": "Actual historical evidence; no archived program or mathematical predicate executed.",
+  "limits": "The boundary author recorder lacks an independent child-source-at-launch pin. The failed root relative-path launch has null child source; no source is invented. Copied runs are not additional executions."
+}

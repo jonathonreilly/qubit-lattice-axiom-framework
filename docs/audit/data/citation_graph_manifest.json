@@ -1,6 +1,6 @@
 {
- "edge_count": 16079,
- "node_count": 7125,
+ "edge_count": 16082,
+ "node_count": 7126,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5873,6 +5873,10 @@
   "down_type_mass_ratio_ckm_dual_note": {
    "deps_hash": "b12bc8759bdc",
    "out_degree": 4
+  },
+  "driven_local_clock_pauli_readers_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "b530407a59b0",
+   "out_degree": 3
   },
   "driven_squid_resonator_comparison_open_gate_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",

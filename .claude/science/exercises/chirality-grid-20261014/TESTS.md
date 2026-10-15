@@ -537,3 +537,25 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - Proved (elementary): any gauge-invariant current with ∂*j = 𝒜 inherits a response of at least ¼ of the anomaly's.
   - So no measure on this geometry meets a uniform exponential bound as Lx → ∞ (suggested).
 - **Implication.** NT-1′'s negatives are modulus-carried, so this concerns legitimacy, not sign. A fixed-rule reading needs periodic-time RP kernels at Lx ≥ 4, which is new work: K2c's torus code covers Lx = 2 only.
+
+## Campaign wave 2e (pre-registered 2026-10-15T15:07Z)
+
+**TOR-1. The chiral-measure RP test on a periodic torus** (route 1). This is the geometry NT-1″ says a fixed-rule reading needs. Cap 0.5 GB.
+- **Why.** On open time, H_W's edge zero modes block every non-contractible Wilson-line loop, and they make the finite-volume tail algebraic at the edges (NT-1″). The periodic torus is Lüscher's own setting (NPB 549, the finite-volume Theorem 5.4). There, NT-1″ found C(11112) = 0 and C(L1) = −1.
+- **Setup.**
+  - 2D U(1) on an Lx × Lt torus, with Lx ≥ 4 and Lt even (8 if affordable).
+  - Link reflection, with the hard weight δ = 0.6 at β_g = 0, as in K2c.
+  - Overlap fermions; charge set 11112.
+  - A Lüscher measure with the torus finite-volume construction.
+  - W-matched, gauge-invariant witnesses, with the vector-like witness as the power reference.
+- **Gate G-LEG-T: every item must pass.**
+  - (a) Lx ≥ 4.
+  - (b) Gauge invariance exact to roundoff. Exponential locality of the measure current in the bulk, with no edges.
+  - (b″) Transport around at least one non-contractible Wilson-line loop returns a trivial phase for 11112, and the anomalous L1 control fails.
+  - (c) The anomalous control visibly fails locality or integrability.
+  - (d) The reflection condition holds.
+- **Readings.**
+  - **CHI-RP-FAIL:** G-LEG-T passes, and the kernel has a quadrature-converged negative eigenvalue below −10E.
+  - **CHI-RP-PASS-at-power:** G-LEG-T passes, and the kernel is PSD within error, with the vector-like reference negative on the same geometry.
+  - **OPEN:** otherwise, naming the item.
+- **Comparator.** K2c's torus results at Lx = 2: negative for the vector-like overlap at Lt = 12 and 16.

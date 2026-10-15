@@ -1,0 +1,7 @@
+# Reset/preparation publication handoff
+
+At 2026-10-15T09:59:02.043922+00:00, the two accepted arguments are bound on physics-loop/toe-installed-clock-reset-20261015, parent regular PR9596, source head88b08187750d0ffa795f166c1d94cd2245b048c9, treebe56ff51df547e5db210f9119bd2f82c66f28629. The sole external mathematical clause is b3 within canonical bcef. The future static-reader parent is ancestry only, not a supplied physical reset theorem. The original reset95f stays exact in the archive; its one-link publication rendering58d8 has an exact inverse. The action30c1 body is unchanged.
+
+Actual source identity cache, seven identity rejections and full graph preservation completed. They execute zero mathematical predicates. Eleven actual historical metadata attempts and all exposure/read-failure histories remain preserved; no reset/action science runner exists or was invented. Final focused verification is recorded separately in FINAL_VERIFICATION.json; complete cumulative landing and independent retained audit remain open.
+
+Supplied ready Markov reservoir, rates, calibration, finite positive entry pulse and timing remain physical premises. Output retains old/reference aging and traces the bath, without promising its reuse. Fixed-n action leading log is the only comparison, with no peak/runtime/energy/n optimality. No finite-unitary reservoir result or native reader is imported. This is a static publication handoff, not the campaign checkpoint.

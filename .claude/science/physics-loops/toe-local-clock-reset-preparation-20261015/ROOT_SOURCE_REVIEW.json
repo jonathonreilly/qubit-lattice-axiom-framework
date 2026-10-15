@@ -1,0 +1,124 @@
+{
+  "completed": true,
+  "offline_draft_review_completed": true,
+  "review_scope": "Complete17 proposed source/framing files,6 current metadata programs, actual receipts, eight document maps,25 program maps, all module/global units and six refinements reviewed. Exact accepted mathematical bodies and necessary b3 premise reuse prior full coverage; offline source approval7cc75d03 verified. Actual current-parent graph rebuild is limited to establishing generated ignored baseline for this distinct integration. Zero mathematical replay. Regular PR creation authorized by campaign; no merge/main/axiom/prompt/audit change.",
+  "scientific_programs_run": 0,
+  "control_sha256": "0bc4df1231c3bb7ea8f2e563cd7811e2d312a1e9df5fcbd1ca4c12e9b1e297bc",
+  "integration_source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/FINAL_FREEZE.json",
+    "bytes": 129044,
+    "sha256": "1ec78a999a0ba88fe45b3b346077c0e8a51919290ccd5dd7e58814949989d75c"
+  },
+  "offline_draft_freeze_sha256": "20b8671667e3d86299b0810be79888c7a4f35650cea68bb2eaebfc4deb21006d",
+  "reviewed_files": {
+    "RESET_FRAMING.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/RESET_FRAMING.md",
+      "bytes": 10336,
+      "sha256": "15ae241d354c7d67567c9c3a52fa2bd6a330081f9f81b4086a5063b490de0d3d"
+    },
+    "RESET_PR_BODY.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/RESET_PR_BODY.md",
+      "bytes": 2160,
+      "sha256": "a67b785633b1a678bfd7064493d54a8992b2859c64d01d39ccfe561581f13164"
+    },
+    "bind_reset_branch.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/bind_reset_branch.py",
+      "bytes": 637,
+      "sha256": "ad1e3001e54638f2d640f0f560dbe473d6031e4f097bc08d8f4c04e215edecfd"
+    },
+    "build_reset_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/build_reset_source.py",
+      "bytes": 6525,
+      "sha256": "7c448fea25d1a09c24c5a5afa3aebcbd981013027fcb20ff08b1fa1f28fb2eee"
+    },
+    "check_reset_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/check_reset_graph.py",
+      "bytes": 1805,
+      "sha256": "7b4828aa0d94728e19883cfed03365530f82d69804cecdf70829e9aaa5b4e71e"
+    },
+    "check_reset_primary_mutations.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/check_reset_primary_mutations.py",
+      "bytes": 4718,
+      "sha256": "80667063a83d04d68907ec9aa04c12507a5274aba3f51128b78c17507360b3be"
+    },
+    "common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/common.py",
+      "bytes": 3191,
+      "sha256": "bae03638dd2396dbeb7501735540e1c6636a6d7843398e4e072752090713218e"
+    },
+    "execute_reset_cache.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/execute_reset_cache.py",
+      "bytes": 1871,
+      "sha256": "7f73686906860c42fb1418c31f1389034348706b6afac1ce9936a3b308343448"
+    },
+    "install_reset.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/install_reset.py",
+      "bytes": 4199,
+      "sha256": "ba514f29eb06f159ce597312b862514ce5ad13358a5d99a9e540471cf51f8ea2"
+    },
+    "package_reset.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/package_reset.py",
+      "bytes": 3816,
+      "sha256": "c66e50077adcbd646bd6ca7d12aa406a5301f0a6380fbc90033dee2c1edbde7b"
+    },
+    "publish_reset.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/publish_reset.py",
+      "bytes": 2617,
+      "sha256": "d5130382ae7d5aa03d030b060904e7a2ca16e216ddeefa3166b1b6fee792865c"
+    },
+    "reset_common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/reset_common.py",
+      "bytes": 9130,
+      "sha256": "7c2407c28a8ff29f25c7774ac2523236b74d28e4bdaea5522d6f4e7f4b1ca614"
+    },
+    "reset_primary.template.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/reset_primary.template.py",
+      "bytes": 8617,
+      "sha256": "e5ebaeba53f1c0dbd33a94fbccda83c80dfef75e39381b6609579a590fc8e86d"
+    },
+    "run_reset_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/run_reset_graph.py",
+      "bytes": 183,
+      "sha256": "a61befa731d816bc964be6239013ee29c047f24ed6316325273e4ebfcca2ad2f"
+    },
+    "run_reset_step.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/run_reset_step.py",
+      "bytes": 984,
+      "sha256": "1b628035190078d83443d7b3ee7f045c2598bfe138bb841ed753190ce697e8e3"
+    },
+    "verify_reset_publication.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/verify_reset_publication.py",
+      "bytes": 7069,
+      "sha256": "fe052038576933595cba9a286127645c9ed3e2671e265fdf97126ea0a6853ab7"
+    },
+    "write_reset_publication_text.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_integration_draft/proposals/write_reset_publication_text.py",
+      "bytes": 8585,
+      "sha256": "fc7a695816db3628ed8e658a838418a214685fcbe8f5b44e99d59c999b20a257"
+    }
+  },
+  "approved_steps": [
+    "bind",
+    "build",
+    "install",
+    "identity_cache",
+    "integrity_controls",
+    "graph",
+    "publication_text",
+    "package",
+    "verify_stage",
+    "publish"
+  ],
+  "warning": "Completed root source review for this exact control and source revision only; actual later execution evidence remains separate.",
+  "utc": "2026-10-15T09:46:23.344867+00:00",
+  "source_closure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/reset_integration_root_review/SOURCE_CLOSURE.json",
+    "bytes": 3152,
+    "sha256": "6977b9e7f3ac3044f7f2e7fec18d2a735e4159703df34ef65eb6028926e55bd8"
+  },
+  "offline_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/reset_offline_root_review/ACCEPTANCE.json",
+    "bytes": 1124,
+    "sha256": "7cc75d03cdedf7011856a59f17357fb91105c9e000396d34f97927420ad1cf09"
+  }
+}

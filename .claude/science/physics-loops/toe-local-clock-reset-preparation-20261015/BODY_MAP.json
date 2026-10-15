@@ -1,0 +1,24 @@
+{
+  "complete_proofs": [
+    {
+      "raw_alias": "local_clock_reset_preparation_candidate/DERIVATION.md",
+      "raw_sha256": "95fbc8dddb92e732e76327546eeb2ec89ce0a673939c8135c5f160c72fa03825",
+      "published_alias": "publication_rendering/RESET_AFTER.md",
+      "published_sha256": "58d8ab952bb0e950df83cf6e7c557d10187ef1bbfb479d8510a62b831b5385e9",
+      "heading": "Complete reset and entry-preparation proof; one citation target rendered",
+      "start": 10414,
+      "end": 40364,
+      "bytes": 29950
+    },
+    {
+      "raw_alias": "local_clock_reset_action_candidate/DERIVATION.md",
+      "raw_sha256": "30c1c586644956f5e09c47a71b58318b75a7bc2ff5af03539f958e7de0ba8551",
+      "published_alias": "local_clock_reset_action_candidate/DERIVATION.md",
+      "published_sha256": "30c1c586644956f5e09c47a71b58318b75a7bc2ff5af03539f958e7de0ba8551",
+      "heading": "Complete necessary reset-action proof; unchanged",
+      "start": 40418,
+      "end": 49324,
+      "bytes": 8906
+    }
+  ]
+}

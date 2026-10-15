@@ -1,0 +1,47 @@
+{
+  "mathematical_roles": [
+    {
+      "alias": "premises/boundary_derivation.md",
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "start": 62134,
+      "end": 80595,
+      "role": "Literal positive occupied-chain apparatus, all-sector vacuum silence/number conservation/norm and actual right-entry moments; later boundary-word use retains its own hypotheses"
+    }
+  ],
+  "canonical_targets": [
+    {
+      "claim_id": "finite_local_clock_word_windows_bounded_theorem_note_2026-10-15",
+      "path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a"
+    }
+  ],
+  "distinct_external_targets": 1,
+  "actual_final_graph_result": null,
+  "expected_after_actual_integration": {
+    "new_nodes": 1,
+    "new_edges": 1
+  },
+  "internal_use": "The action application uses the complete reset schedule and entry pulse supplied inside this note; no self-edge.",
+  "publication_binding_complete": true,
+  "methodological_attribution_only": [
+    "standard amplitude damping and dilation",
+    "complete trace contraction",
+    "Duhamel comparison"
+  ],
+  "excluded": [
+    "finite-unitary reservoir candidate",
+    "other reader/reset suppliers",
+    "all-window conclusions as blanket premises",
+    "Git ancestry as a theorem",
+    "native bath or measurement realization"
+  ],
+  "publication_binding": {
+    "branch": "physics-loop/toe-installed-clock-reset-20261015",
+    "base_branch": "physics-loop/toe-static-historical-reader-20261015",
+    "observed_base_head": "88b08187750d0ffa795f166c1d94cd2245b048c9",
+    "observed_base_tree": "be56ff51df547e5db210f9119bd2f82c66f28629",
+    "base_pr": 9596
+  }
+}

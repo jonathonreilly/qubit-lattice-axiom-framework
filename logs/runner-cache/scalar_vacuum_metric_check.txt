@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/scalar_vacuum_metric_check.py
+runner_sha256: 1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25
+input_fingerprint_sha256: e4f912e38c38359bd8d369c36c0c59725e04287699dde120e2aefd6e41732d8e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.04
+status: ok
+----- stdout -----
+per_element: checked: original Ricci/Hessian, null differences, Bianchi identity and inverse formulas
+per_site: checked: three synthetic local vacuum profiles; no observed metric or empirical bound
+per_mode: checked: x=y=0 is supplied consistent sector, not selected; other scalar motion remains open
+per_block: checked: local inverse, integral consistency, potential discrimination and stated degeneracies
+lattice_wide: checked and not executed: no full theory, global solution, history or absolute action normalization derivation
+{
+  "actual_current_surface_status": "conditional-support",
+  "counts": {
+    "failed": 0,
+    "passed": 89
+  },
+  "empirical_tests": 0,
+  "failed_checks": [],
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+    "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+    "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+    "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+    "scripts/scalar_vacuum_metric_inverse.py": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
+    "scripts/scalar_vacuum_metric_weak.py": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+  },
+  "new_observation_arrays": 0,
+  "primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+  "read_inventory": {
+    "integrity_inputs": "Primary and declared notes/helper/checklist only; no observed arrays, inherited result values or independent-review outputs loaded",
+    "scientific_inputs": "Symbolic action/metric and three fixed synthetic coupled local solutions in the declared helper; inverse routine receives metric jets only"
+  },
+  "remaining_inputs": [
+    "Pointwise route: calibrated metric through lapse third and B second derivatives with error envelopes",
+    "Weak alternative uses lapse second/B first derivatives and complete weighted profiles with calibrated errors",
+    "Justified vacuum, static spherical geometry, and single-scalar sector",
+    "Action selection, physical preparation/global history, and measured Newton/action normalization"
+  ],
+  "scope": "Nondegenerate static spherical material vacuum, supplied candidate action and consistent x=y=0 sector; exact metric-to-field/parameter inverse with full-domain consistency checks",
+  "target_claim_type": "bounded_theorem"
+}
+TOTAL: PASS=89 FAIL=0
+
+----- stderr -----
+

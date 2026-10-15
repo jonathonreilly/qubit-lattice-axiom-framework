@@ -1,0 +1,870 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "checks": [
+    {
+      "name": "direct_Christoffel_time",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Christoffel_radial",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Christoffel_angular",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Christoffel_azimuth",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "tangential_null_stress",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial_null_stress",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "original_Bianchi_scalar_contraction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "kinetic_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic_Y",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "integrability_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "pair_inverse",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "lambda_parameter_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "potential_basis",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant_branch_tt",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant_branch_rr",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant_branch_theta",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant_branch_scalar",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "false_positive_geometry_j",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "false_positive_integrability_residual",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "false_positive_residual_is_nonzero",
+      "passed": true
+    },
+    {
+      "name": "fixture0_ODE_completed",
+      "passed": true
+    },
+    {
+      "name": "fixture0_inverse_admitted",
+      "passed": true
+    },
+    {
+      "max_residual": 6.661338147750939e-16,
+      "name": "fixture0_original_tt",
+      "passed": true
+    },
+    {
+      "max_residual": 4.440892098500626e-16,
+      "name": "fixture0_original_rr",
+      "passed": true
+    },
+    {
+      "max_residual": 7.771561172376096e-16,
+      "name": "fixture0_original_theta",
+      "passed": true
+    },
+    {
+      "max_residual": 1.942890293094024e-16,
+      "name": "fixture0_original_scalar",
+      "passed": true
+    },
+    {
+      "error": 1.463967835846347e-13,
+      "name": "fixture0_recovered_k",
+      "passed": true
+    },
+    {
+      "error": 5.588418616753188e-12,
+      "name": "fixture0_recovered_profile",
+      "passed": true
+    },
+    {
+      "name": "fixture0_integral_reserved_rows",
+      "passed": true
+    },
+    {
+      "name": "fixture0_recovered_Hv2",
+      "passed": true
+    },
+    {
+      "name": "fixture0_recovered_nu",
+      "passed": true
+    },
+    {
+      "name": "fixture0_potential_reserved_rows",
+      "passed": true
+    },
+    {
+      "name": "fixture0_length_scale_k_nu",
+      "passed": true
+    },
+    {
+      "name": "fixture0_length_scale_Hv",
+      "passed": true
+    },
+    {
+      "name": "fixture0_profile_scale_invariance",
+      "passed": true
+    },
+    {
+      "name": "fixture1_ODE_completed",
+      "passed": true
+    },
+    {
+      "name": "fixture1_inverse_admitted",
+      "passed": true
+    },
+    {
+      "max_residual": 3.3306690738754696e-16,
+      "name": "fixture1_original_tt",
+      "passed": true
+    },
+    {
+      "max_residual": 5.551115123125783e-16,
+      "name": "fixture1_original_rr",
+      "passed": true
+    },
+    {
+      "max_residual": 6.106226635438361e-16,
+      "name": "fixture1_original_theta",
+      "passed": true
+    },
+    {
+      "max_residual": 8.326672684688674e-17,
+      "name": "fixture1_original_scalar",
+      "passed": true
+    },
+    {
+      "error": 2.7355895326763857e-13,
+      "name": "fixture1_recovered_k",
+      "passed": true
+    },
+    {
+      "error": 1.0721645793410062e-11,
+      "name": "fixture1_recovered_profile",
+      "passed": true
+    },
+    {
+      "name": "fixture1_integral_reserved_rows",
+      "passed": true
+    },
+    {
+      "name": "fixture1_recovered_Hv2",
+      "passed": true
+    },
+    {
+      "name": "fixture1_recovered_nu",
+      "passed": true
+    },
+    {
+      "name": "fixture1_potential_reserved_rows",
+      "passed": true
+    },
+    {
+      "name": "fixture1_length_scale_k_nu",
+      "passed": true
+    },
+    {
+      "name": "fixture1_length_scale_Hv",
+      "passed": true
+    },
+    {
+      "name": "fixture1_profile_scale_invariance",
+      "passed": true
+    },
+    {
+      "name": "fixture2_ODE_completed",
+      "passed": true
+    },
+    {
+      "name": "fixture2_inverse_admitted",
+      "passed": true
+    },
+    {
+      "max_residual": 5.551115123125783e-16,
+      "name": "fixture2_original_tt",
+      "passed": true
+    },
+    {
+      "max_residual": 4.440892098500626e-16,
+      "name": "fixture2_original_rr",
+      "passed": true
+    },
+    {
+      "max_residual": 6.661338147750939e-16,
+      "name": "fixture2_original_theta",
+      "passed": true
+    },
+    {
+      "max_residual": 1.457167719820518e-16,
+      "name": "fixture2_original_scalar",
+      "passed": true
+    },
+    {
+      "error": 3.006345172806846e-13,
+      "name": "fixture2_recovered_k",
+      "passed": true
+    },
+    {
+      "error": 1.1101786157041715e-11,
+      "name": "fixture2_recovered_profile",
+      "passed": true
+    },
+    {
+      "name": "fixture2_integral_reserved_rows",
+      "passed": true
+    },
+    {
+      "name": "altered_potential_fails_reserved_rows",
+      "passed": true,
+      "residual": 5.0425805483119215e-06
+    },
+    {
+      "name": "constant_field_metric_rejected_by_inverse",
+      "passed": true
+    },
+    {
+      "max_violation": 1.5525775109992423e-15,
+      "name": "conditional_finite_error_enclosure",
+      "passed": true
+    },
+    {
+      "name": "finite_error_denominator_guard",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_error_input_0",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_error_input_1",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_error_input_2",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_error_input_3",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_error_input_4",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_error_input_5",
+      "passed": true
+    },
+    {
+      "name": "negative_potential_parameter_guard",
+      "passed": true,
+      "scope": "extra short local domain-refusal fixture, not an admitted candidate",
+      "solver_success": true
+    },
+    {
+      "name": "case0_inverse_admitted",
+      "passed": true
+    },
+    {
+      "name": "case0_k",
+      "passed": true
+    },
+    {
+      "name": "case0_Y",
+      "passed": true
+    },
+    {
+      "name": "case0_later_kinetic",
+      "passed": true
+    },
+    {
+      "name": "case0_Hv2",
+      "passed": true
+    },
+    {
+      "name": "case0_nu",
+      "passed": true
+    },
+    {
+      "name": "case0_later_potential",
+      "passed": true
+    },
+    {
+      "name": "case1_inverse_admitted",
+      "passed": true
+    },
+    {
+      "name": "case1_k",
+      "passed": true
+    },
+    {
+      "name": "case1_Y",
+      "passed": true
+    },
+    {
+      "name": "case1_later_kinetic",
+      "passed": true
+    },
+    {
+      "name": "case1_Hv2",
+      "passed": true
+    },
+    {
+      "name": "case1_nu",
+      "passed": true
+    },
+    {
+      "name": "case1_later_potential",
+      "passed": true
+    },
+    {
+      "name": "case2_inverse_admitted",
+      "passed": true
+    },
+    {
+      "name": "case2_k",
+      "passed": true
+    },
+    {
+      "name": "case2_Y",
+      "passed": true
+    },
+    {
+      "name": "case2_later_kinetic",
+      "passed": true
+    },
+    {
+      "name": "changed_potential_later_rejection",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "failed": 0,
+    "passed": 89
+  },
+  "empirical_tests": 0,
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+    "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+    "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+    "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+    "scripts/scalar_vacuum_metric_inverse.py": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
+    "scripts/scalar_vacuum_metric_weak.py": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+  },
+  "new_observation_arrays": 0,
+  "primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+  "read_inventory": {
+    "integrity_inputs": "Primary and declared notes/helper/checklist only; no observed arrays, inherited result values or independent-review outputs loaded",
+    "scientific_inputs": "Symbolic action/metric and three fixed synthetic coupled local solutions in the declared helper; inverse routine receives metric jets only"
+  },
+  "remaining_inputs": [
+    "Pointwise route: calibrated metric through lapse third and B second derivatives with error envelopes",
+    "Weak alternative uses lapse second/B first derivatives and complete weighted profiles with calibrated errors",
+    "Justified vacuum, static spherical geometry, and single-scalar sector",
+    "Action selection, physical preparation/global history, and measured Newton/action normalization"
+  ],
+  "scope": "Nondegenerate static spherical material vacuum, supplied candidate action and consistent x=y=0 sector; exact metric-to-field/parameter inverse with full-domain consistency checks",
+  "synthetic_fixtures": [
+    {
+      "deformation": 0,
+      "domain": [
+        1,
+        1.8
+      ],
+      "field_error": 5.588418616753188e-12,
+      "initial": [
+        1.4,
+        0.22,
+        0.9,
+        0
+      ],
+      "inverse": {
+        "Hv_squared": 0.0008999999999996438,
+        "calibration_indices": [
+          0,
+          200
+        ],
+        "k": 0.09999999999985361,
+        "lambda": 2.387755102037403,
+        "max_integral_identity_error": 2.5157653738006047e-13,
+        "max_later_integral_identity_error": 1.0086376178719547e-13,
+        "max_later_potential_residual": 8.85879911094456e-15,
+        "max_potential_residual": 8.85879911094456e-15,
+        "min_H": 0.00024091927013772583,
+        "min_abs_u": 0.012389297970440805,
+        "min_lambda_minus_j": 2.0889802737243848,
+        "nu": 1.1999999999793198,
+        "potential_condition": 237.65239595087135,
+        "potential_matrix_det": 29.79122062698607,
+        "test_first_index": 201,
+        "test_row_count": 400
+      },
+      "original_equation_residuals": [
+        6.661338147750939e-16,
+        4.440892098500626e-16,
+        7.771561172376096e-16,
+        1.942890293094024e-16
+      ],
+      "rows": 601,
+      "source": {
+        "Hv": 0.03,
+        "a": 0.2925,
+        "k": 0.1,
+        "lambda": 2.3877551020408165,
+        "nu": 1.2,
+        "s": 15.714285714285714
+      }
+    },
+    {
+      "deformation": 0,
+      "domain": [
+        1,
+        1.8
+      ],
+      "field_error": 1.0721645793410062e-11,
+      "initial": [
+        1.2,
+        -0.12,
+        0.95,
+        0
+      ],
+      "inverse": {
+        "Hv_squared": 0.0024999999999987445,
+        "calibration_indices": [
+          0,
+          200
+        ],
+        "k": 0.21999999999972644,
+        "lambda": 11.200692041466812,
+        "max_integral_identity_error": 4.320321878026334e-12,
+        "max_later_integral_identity_error": 4.320321878026334e-12,
+        "max_later_potential_residual": 1.0098559900632853e-13,
+        "max_potential_residual": 1.0098559900632853e-13,
+        "min_H": 6.178524154983418e-06,
+        "min_abs_u": 0.0032905648363190324,
+        "min_lambda_minus_j": 10.29202439277761,
+        "nu": 0.6999999999487949,
+        "potential_condition": 1928.4975151264448,
+        "potential_matrix_det": -3.1264903052655018,
+        "test_first_index": 201,
+        "test_row_count": 400
+      },
+      "original_equation_residuals": [
+        3.3306690738754696e-16,
+        5.551115123125783e-16,
+        6.106226635438361e-16,
+        8.326672684688674e-17
+      ],
+      "rows": 601,
+      "source": {
+        "Hv": 0.05,
+        "a": 0.3237,
+        "k": 0.22,
+        "lambda": 11.200692041522492,
+        "nu": 0.7,
+        "s": 16.310160427807485
+      }
+    },
+    {
+      "deformation": 0.15,
+      "domain": [
+        1,
+        1.8
+      ],
+      "field_error": 1.1101786157041715e-11,
+      "initial": [
+        1.4,
+        0.22,
+        0.9,
+        0
+      ],
+      "inverse": {
+        "Hv_squared": 0.0008993999253450824,
+        "calibration_indices": [
+          0,
+          200
+        ],
+        "k": 0.09999999999969937,
+        "lambda": 2.387755102033804,
+        "max_integral_identity_error": 2.656208586415687e-13,
+        "max_later_integral_identity_error": 1.2340128918708615e-13,
+        "max_later_potential_residual": 5.0425805483119215e-06,
+        "max_potential_residual": 5.0425805483119215e-06,
+        "min_H": 0.00024425269106485826,
+        "min_abs_u": 0.012477322620991013,
+        "min_lambda_minus_j": 2.088906031250941,
+        "nu": 1.3164375286902075,
+        "potential_condition": 237.51089126778055,
+        "potential_matrix_det": 29.80943828771914,
+        "test_first_index": 201,
+        "test_row_count": 400
+      },
+      "original_equation_residuals": [
+        5.551115123125783e-16,
+        4.440892098500626e-16,
+        6.661338147750939e-16,
+        1.457167719820518e-16
+      ],
+      "rows": 601,
+      "source": {
+        "Hv": 0.03,
+        "a": 0.2925,
+        "k": 0.1,
+        "lambda": 2.3877551020408165,
+        "nu": 1.2,
+        "s": 15.714285714285714
+      }
+    }
+  ],
+  "target_claim_type": "bounded_theorem",
+  "weak_moment_checks": {
+    "checks": [
+      {
+        "name": "case0_inverse_admitted",
+        "passed": true
+      },
+      {
+        "name": "case0_k",
+        "passed": true
+      },
+      {
+        "name": "case0_Y",
+        "passed": true
+      },
+      {
+        "name": "case0_later_kinetic",
+        "passed": true
+      },
+      {
+        "name": "case0_Hv2",
+        "passed": true
+      },
+      {
+        "name": "case0_nu",
+        "passed": true
+      },
+      {
+        "name": "case0_later_potential",
+        "passed": true
+      },
+      {
+        "name": "case1_inverse_admitted",
+        "passed": true
+      },
+      {
+        "name": "case1_k",
+        "passed": true
+      },
+      {
+        "name": "case1_Y",
+        "passed": true
+      },
+      {
+        "name": "case1_later_kinetic",
+        "passed": true
+      },
+      {
+        "name": "case1_Hv2",
+        "passed": true
+      },
+      {
+        "name": "case1_nu",
+        "passed": true
+      },
+      {
+        "name": "case1_later_potential",
+        "passed": true
+      },
+      {
+        "name": "case2_inverse_admitted",
+        "passed": true
+      },
+      {
+        "name": "case2_k",
+        "passed": true
+      },
+      {
+        "name": "case2_Y",
+        "passed": true
+      },
+      {
+        "name": "case2_later_kinetic",
+        "passed": true
+      },
+      {
+        "name": "changed_potential_later_rejection",
+        "passed": true
+      }
+    ],
+    "elapsed": 2.46821928024292,
+    "empirical_tests": 0,
+    "new_observed_arrays": 0,
+    "parent_generator_sha256": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
+    "results": [
+      {
+        "Hv2": 0.0009000000007562763,
+        "Y_max_error": 6.322754320109425e-09,
+        "calibration_intervals": [
+          [
+            1.02,
+            1.12
+          ],
+          [
+            1.16,
+            1.3
+          ]
+        ],
+        "deformation": 0,
+        "eta": 0.8891044295677819,
+        "inverse_ratio_derivative": 0.5645240596097167,
+        "k": 0.10000000019043435,
+        "kinetic_residuals": [
+          0.0,
+          -4.336808689942018e-19,
+          7.593762858110198e-14,
+          7.392871037570359e-14
+        ],
+        "lam": 2.387755106482434,
+        "later_intervals": [
+          [
+            1.4,
+            1.55
+          ],
+          [
+            1.6,
+            1.78
+          ]
+        ],
+        "maximum_shape": 1.0162679198759887,
+        "minimum_shape": 1.0,
+        "nu": 1.2000000142405411,
+        "potential_condition": 404.7540651566682,
+        "potential_residuals": [
+          0.0,
+          0.0,
+          8.097272852225501e-13,
+          8.193584699611733e-13
+        ],
+        "profile_Y": [
+          1.9599999940086554,
+          2.0636531691231768,
+          2.139710660206224,
+          2.1989896468285184,
+          2.247523857542594
+        ],
+        "profile_r": [
+          1,
+          1.2,
+          1.4,
+          1.6,
+          1.8
+        ],
+        "truth": {
+          "Hv": 0.03,
+          "a": 0.2925,
+          "k": 0.1,
+          "lambda": 2.3877551020408165,
+          "nu": 1.2,
+          "s": 15.714285714285714
+        }
+      },
+      {
+        "Hv2": 0.002500000005111754,
+        "Y_max_error": 2.2283357825614303e-08,
+        "calibration_intervals": [
+          [
+            1.02,
+            1.12
+          ],
+          [
+            1.16,
+            1.3
+          ]
+        ],
+        "deformation": 0,
+        "eta": 0.9188739741961868,
+        "inverse_ratio_derivative": 0.1553360480244237,
+        "k": 0.22000000103938588,
+        "kinetic_residuals": [
+          1.3552527156068805e-20,
+          -6.776263578034403e-21,
+          -3.250638690513452e-14,
+          -9.008632463050267e-15
+        ],
+        "lam": 11.200692253080783,
+        "later_intervals": [
+          [
+            1.4,
+            1.55
+          ],
+          [
+            1.6,
+            1.78
+          ]
+        ],
+        "maximum_shape": 1.0,
+        "minimum_shape": 0.9936834126319967,
+        "nu": 0.7000001647211953,
+        "potential_condition": 3434.9430796266747,
+        "potential_residuals": [
+          0.0,
+          0.0,
+          -1.9813872764729012e-12,
+          -3.4093006195945463e-12
+        ],
+        "profile_Y": [
+          1.4399999781243467,
+          1.3935463776650223,
+          1.362897062596533,
+          1.3420853721040649,
+          1.3278795385783246
+        ],
+        "profile_r": [
+          1,
+          1.2,
+          1.4,
+          1.6,
+          1.8
+        ],
+        "truth": {
+          "Hv": 0.05,
+          "a": 0.3237,
+          "k": 0.22,
+          "lambda": 11.200692041522492,
+          "nu": 0.7,
+          "s": 16.310160427807485
+        }
+      },
+      {
+        "Hv2": 0.0008993775285614415,
+        "Y_max_error": 6.325872714540992e-09,
+        "calibration_intervals": [
+          [
+            1.02,
+            1.12
+          ],
+          [
+            1.16,
+            1.3
+          ]
+        ],
+        "deformation": 0.15,
+        "eta": 0.8891044295678656,
+        "inverse_ratio_derivative": 0.5639490464615093,
+        "k": 0.10000000019049833,
+        "kinetic_residuals": [
+          0.0,
+          0.0,
+          7.661568861977441e-14,
+          7.45113606231973e-14
+        ],
+        "lam": 2.3877551064839264,
+        "later_intervals": [
+          [
+            1.4,
+            1.55
+          ],
+          [
+            1.6,
+            1.78
+          ]
+        ],
+        "maximum_shape": 1.0163040393755178,
+        "minimum_shape": 1.0,
+        "nu": 1.3171392525238899,
+        "potential_condition": 404.47565733524306,
+        "potential_residuals": [
+          -6.938893903907228e-18,
+          -6.938893903907228e-18,
+          1.4965884716083844e-06,
+          3.54423116577518e-06
+        ],
+        "profile_Y": [
+          1.9599999940063884,
+          2.0636944079189155,
+          2.139872621246587,
+          2.1993503563263963,
+          2.248162243894008
+        ],
+        "profile_r": [
+          1,
+          1.2,
+          1.4,
+          1.6,
+          1.8
+        ],
+        "truth": {
+          "Hv": 0.03,
+          "a": 0.2925,
+          "k": 0.1,
+          "lambda": 2.3877551020408165,
+          "nu": 1.2,
+          "s": 15.714285714285714
+        }
+      }
+    ],
+    "source_sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+    "status": "conditional synthetic lower-derivative moment inverse; no certified observation errors"
+  }
+}

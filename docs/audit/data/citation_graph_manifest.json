@@ -1,6 +1,6 @@
 {
- "edge_count": 16056,
- "node_count": 7128,
+ "edge_count": 16058,
+ "node_count": 7129,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19356,6 +19356,10 @@
   },
   "scalar_unequal_pair_bounded_theorem_note_2026-10-15": {
    "deps_hash": "5c45ad74db28",
+   "out_degree": 2
+  },
+  "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "f8150ff62aac",
    "out_degree": 2
   },
   "scale_reference_primitive": {

@@ -335,3 +335,38 @@ M18 final science: power-conjugation removes the direct lapse Laplacian from a n
 Verify the frozen M18 stage/evidence, commit and push only the existing campaign branch, update and attach PR9614. Then pursue a physical input supplier or action/scale discriminator with no chosen state/selector; final packaging21:33:44Z, fixed deadline21:48:44Z.
 
 Exact current identities: lapse_derivative_probe/CHECKPOINT_v3.json. The original finite_environment evidence remains frozen at M17. All final scientific reports were read in full; final stage verification remains separate. No new observed data or prior-campaign restart. Matching lock refreshed19:26:07Z.
+
+## M18 coherent extension published — 2026-10-15T19:45:37.101846+00:00
+
+[PR #9614](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614) is regular/open/mergeable at its declared base, head `b789855264cad2db6dabe73f28ff3618dc58f66f`, tree `9f49672106b7a8cb112c665a26ded12358371dad`. PR9614 updated/attached at b789855264cad2db6dabe73f28ff3618dc58f66f, frozen tree9f496721,76paths, stacked on M16.149canonical controls0fail;18formula mutants rejected across unchanged M17 and new M18 helpers. Exact lapse-conjugation ceiling and analytic criterion separation independently checked.233member extension archive/27views/0omissions preserve numerical failures, original mutation survivor and reviewer corrections. No observed array/test or realized material environment. Complete source reviews and14group frozen delivery check read;0mismatches.
+
+Personally choose the next distinct physical-input integration or action/scale discriminator from OPPORTUNITY_QUEUE after refreshing relevant main/PR changes. Prefer a calibrated whole-domain metric/boundary or a coupled matter/metric consistency test; do not add more conjugation variants or assume a selector. Existing M17/M18 source is published and frozen. At21:33:44Z start final packaging, with no new discovery; stop at21:48:44Z and report honestly.
+
+The action, physical initial/ambient state, scales, full metric/matter realization, complete boundary and calibrated derivative/error suppliers remain conditional. The direct second-clock-derivative input is removed only for the alternative bound; spatial curvature, ranging derivatives and central/radius calibration remain. No science was merged or main pushed. All three older campaigns remain stopped. Matching lock refreshed19:45:37UTC; no owned research job remains. Heartbeat stays ACTIVE with its original fixed clock.
+
+
+## Nonlinear vacuum metric inverse — 2026-10-15T20:08:22.594142+00:00
+
+Root derived nonlinear vacuum metric-only inverse for k,z and two potential coefficients, with interval compatibility and local scalar/metric sufficiency.67author controls pass after preserving and fixing independent negative-nu/NaN guard failures.35preexposure and23postexposure independent algebra checks reported; full final source confirmation and alternate-frame numerical check pending. No observed values opened.
+
+Complete independent extended/source checks and alternate-frame numerical test; mutation-check decisive formulas and domain guards; then package one coherent nonlinear vacuum metric inverse milestone. Calibrated actual metric, vacuum and sector remain open. Final packaging21:33:44Z, deadline21:48:44Z.
+
+## M19 nonlinear inverse checkpoint — 2026-10-15T20:19:33.836812+00:00
+
+Root nonlinear metric inverse passes70controls;13actual source mutants rejected by controls. Separate Einstein-areal generator frozen before helper exposure recovers parameters/profile on a distinct fixture and checks original Jordan equations; full report and code read. No empirical data/test. Final source/cache binds note88466d29, helper1fc303d4, cachea195ac65;2.147s/180. Full canonical math and scope closing reviews pending.
+
+Finish full canonical source/scope checks, archive exact working history and guarded final execution, verify graph/source delivery, then publish one coherent inverse milestone. Next physical metric/error and vacuum/sector supplier remains open. Packaging21:33:44Z, deadline21:48:44Z fixed.
+
+## M19 integral extension checkpoint — 2026-10-15T20:30:54.936678+00:00
+
+M19 pointwise and weak nonlinear vacuum metric inverse personally derived;89canonical controls0fail,21formula mutants rejected. Weak version removes direct lapse3/B2 inputs by compact moments, retains lapse2/B1, uniform positive chart and all-weight exact-membership requirement. Independent35+23base exact checks,12weak exact checks and separate Einstein generator complete; finalchanged-source/scope supplements pending. Real negative-coefficient,NaN,later-subset findings preserved and repaired. No observed arrays/tests.
+
+Complete current weak source/scope confirmations and mechanical graph/archive delivery; publish one coherent nonlinear inverse PR stacked on frozenM18. Physical calibrated metric/error and vacuum/sector suppliers remain open; do not claim a measured state or a selected action. Fixed final packaging21:33:44Z and deadline21:48:44Z.
+
+## M19 complete scientific review — 2026-10-15T20:40:03.969004+00:00
+
+M19 scientific source reviews complete:89 canonical controls pass,0fail;21 actual formula mutants rejected. Independent pointwise/weak proofs, alternate Einstein generator and current source/scope bindings read fully. One conditional nonlinear vacuum inverse milestone; zero empirical tests. Full-stage delivery and PR publication remain next.
+
+Freeze exact M19 archive/stage, complete mechanical delivery verification, commit/push only campaign branch and open/attach one regular PR stacked on frozen M18. Then synthesize remaining physical suppliers before fixed packaging21:33:44Z; deadline21:48:44Z unchanged.
+
+Exact report identities and read scopes: material_metric_consistency/REVIEW_RECORD_v1.md. Original failures and source transitions remain explicit. All three older campaigns stay stopped; no owned research jobs.

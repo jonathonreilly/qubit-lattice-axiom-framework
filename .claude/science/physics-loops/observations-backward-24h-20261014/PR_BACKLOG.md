@@ -114,3 +114,17 @@ The initial probe is preserved in lapse_derivative_probe/CHECKPOINT_v1.json with
 ## M18 coherent extension
 
 Scientific checks complete for the physical-metric lapse extension; update existing PR9614 on codex/observations-backward-environment-20261015 after frozen delivery verification. No separate PR, merge or main push. Published M17 head remains9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db until verified publication.
+
+## M18 coherent extension published — 2026-10-15T19:45:37.101846+00:00
+
+[PR #9614](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614) is regular/open/mergeable at its declared base, head `b789855264cad2db6dabe73f28ff3618dc58f66f`, tree `9f49672106b7a8cb112c665a26ded12358371dad`. PR9614 updated/attached at b789855264cad2db6dabe73f28ff3618dc58f66f, frozen tree9f496721,76paths, stacked on M16.149canonical controls0fail;18formula mutants rejected across unchanged M17 and new M18 helpers. Exact lapse-conjugation ceiling and analytic criterion separation independently checked.233member extension archive/27views/0omissions preserve numerical failures, original mutation survivor and reviewer corrections. No observed array/test or realized material environment. Complete source reviews and14group frozen delivery check read;0mismatches.
+
+Personally choose the next distinct physical-input integration or action/scale discriminator from OPPORTUNITY_QUEUE after refreshing relevant main/PR changes. Prefer a calibrated whole-domain metric/boundary or a coupled matter/metric consistency test; do not add more conjugation variants or assume a selector. Existing M17/M18 source is published and frozen. At21:33:44Z start final packaging, with no new discovery; stop at21:48:44Z and report honestly.
+
+The action, physical initial/ambient state, scales, full metric/matter realization, complete boundary and calibrated derivative/error suppliers remain conditional. The direct second-clock-derivative input is removed only for the alternative bound; spatial curvature, ranging derivatives and central/radius calibration remain. No science was merged or main pushed. All three older campaigns remain stopped. Matching lock refreshed19:45:37UTC; no owned research job remains. Heartbeat stays ACTIVE with its original fixed clock.
+
+## M19 coherent publication pending
+
+Prepare one regular PR on codex/observations-backward-material-20261015, stacked on codex/observations-backward-environment-20261015 at b789855264cad2db6dabe73f28ff3618dc58f66f. Pointwise inverse and weak derivative-reduction belong together. Current canonical89/0 and21source-mutant rejections; final changed-source report/delivery pending. No separate weak-only PR, merge or main push.
+
+M19 final scientific confirmations are now complete. One coherent regular PR remains pending frozen-stage delivery; source cache binds89/0. No additional weak-only PR.

@@ -1,0 +1,10 @@
+# External reconstruction methods and the scoped increment
+
+The root author searched and read primary literature after deriving and implementing the working inverse, before final packaging. No global-priority claim is made.
+
+- Bronnikov, Badalov and Ibadov, *Arbitrary static, spherically symmetric space-times as solutions of scalar-tensor gravity*, arXiv:2212.04544v1, https://arxiv.org/pdf/2212.04544v1, Section 2 and equations (3)--(15), read through PDF page 4. It reconstructs coupling, kinetic function and potential from a metric, with scalar reparametrization freedom and piecewise/degenerate qualifications. The angular-time equation for the coupling and subsequent potential/kinetic reconstruction are established methods.
+- Ernazarov, *Reconstructed black hole solutions in the scalar-tensor theory with nonminimal coupling*, arXiv:2603.22517v1, https://arxiv.org/pdf/2603.22517v1, Section 2 and equations (2.2)--(2.32), read through PDF page 6. Constant canonical kinetic normalization does not fix its freely reconstructed coupling and potential. The first-order coupling master equation and nonconstant-scalar qualification are prior work.
+
+Our narrow family fixes F=f0(s+z²), Z=f0/lambda, the relations among s,lambda,k, and a positive two-coefficient potential. The kinetic compatibility identity then determines lambda, followed by a complete-interval potential test. This is a specific conditional family inverse and local solution-membership result. The general reconstruction strategy, Bianchi reduction and existence of constant-field degeneracies are not claimed new. A broader priority review was not executed. The sources are documentary context, not numerical inputs or empirical tests.
+
+Access was by web primary PDF text. The requested 2212.04544v3 HTML route failed; v1 PDF was used. No third-party PDF or verbatim paper text is included in the evidence archive. Formula extraction in 2603.22517 loses prime placement in plain text, so no numerical computation imports its transcribed formula. The root derivation and independent connection calculation stand on their displayed equations.

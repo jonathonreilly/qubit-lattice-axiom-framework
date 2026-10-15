@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-10-15T20:28:12.970445+00:00",
+  "source_sha256": "c00be0711a4eee7f9d36ff8a7055051441cc289a5781bc7519aad994e6f5c07c",
+  "report_sha256": "f17626987016760f3bf496bd4ea170bb400684c106c50f9fd2ab51e0b494ddbe",
+  "independent_exact_controls": 12,
+  "failed_controls": 0,
+  "author_numeric_source_read": false,
+  "author_code_executed": false,
+  "scope": "Conditional proof/source critique plus independent exact algebra and finite-weight limitation; no numerical weak inverse, empirical validation or formal audit.",
+  "findings": [
+    {
+      "kind": "conditional_agreement",
+      "detail": "Displayed shape, kinetic and potential formulas and ordered-support uniqueness proof are correct under stated premises."
+    },
+    {
+      "kind": "existence_limit",
+      "detail": "Monotone moment ratio does not guarantee a solution; its boundary range can be finite."
+    },
+    {
+      "kind": "domain_limit",
+      "detail": "eta<inf h is stricter than pointwise positive Y on an open annulus."
+    },
+    {
+      "kind": "boundary_limit",
+      "detail": "Noncompact weights require kinetic [wu] and potential [wXBu/2] boundary terms."
+    },
+    {
+      "kind": "finite_scope_limit",
+      "detail": "Finite moment agreement cannot establish full weak field equations; exact nonzero missed residual retained."
+    }
+  ],
+  "files": [
+    {
+      "path": "EXPOSED_WEAK_DERIVATION_v1.md",
+      "sha256": "c00be0711a4eee7f9d36ff8a7055051441cc289a5781bc7519aad994e6f5c07c",
+      "bytes": 3042
+    },
+    {
+      "path": "EXPOSED_WEAK_PROBE_v1.json",
+      "sha256": "b50cd58cfcf23bdaeb6274d28f58d3e1640968d9abe96be9d79b3905e375e6a8",
+      "bytes": 321
+    },
+    {
+      "path": "WEAK_EXACT_RESULTS_v1.json",
+      "sha256": "373791ab9454098a0cecd9013f4ccf4456996bfd880c2a8e32850f4a2253a856",
+      "bytes": 1710
+    },
+    {
+      "path": "WEAK_IMPLEMENTATION_FREEZE_v1.json",
+      "sha256": "5f5d55b480f457c27b003224777d566db2f9688fa405c0d0c497602469fb5bf4",
+      "bytes": 552
+    },
+    {
+      "path": "WEAK_INVERSE_REVIEW_v1.md",
+      "sha256": "f17626987016760f3bf496bd4ea170bb400684c106c50f9fd2ab51e0b494ddbe",
+      "bytes": 8023
+    },
+    {
+      "path": "WEAK_PRECHECK_v1.md",
+      "sha256": "69da301f2d23bcc8a4dfc108ab9270f81a1ec3144d1bb6cbf929edc55e075962",
+      "bytes": 3255
+    },
+    {
+      "path": "WEAK_RUN_RECEIPT_v1.json",
+      "sha256": "7ca2c3cd61fd3d587f83e128f470a9d446b8726788a8c506c06edbdc2ce0b9ff",
+      "bytes": 88
+    },
+    {
+      "path": "WEAK_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "WEAK_RUN_v1.stdout",
+      "sha256": "373791ab9454098a0cecd9013f4ccf4456996bfd880c2a8e32850f4a2253a856",
+      "bytes": 1710
+    },
+    {
+      "path": "weak_exact_controls_v1.py",
+      "sha256": "fdfd81efd2697680ac00f81aa82f5f67fc7a06b5229e887212674cab6f9113d0",
+      "bytes": 3275
+    }
+  ]
+}

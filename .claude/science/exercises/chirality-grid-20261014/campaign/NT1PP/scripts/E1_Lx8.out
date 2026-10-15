@@ -1,0 +1,15 @@
+# NT-1'' E1 Lx=8 Lt=8 N=128 seed 4608 nconf 6; ys = [24, 32, 88]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  conf 0 (draw 1): gmin 0.191 Wbot +0.80 Wtop -0.20 | 11112 tau_kQ(s*) 9.674e-06 tau_kQ(Lx/2) 1.68e-05 tau_kbb(s*) 6.683e-05 | L1 tau_kQ(s*) 4.934e-03 [2s]
+  conf 1 (draw 2): gmin 0.157 Wbot +0.69 Wtop -0.94 | 11112 tau_kQ(s*) 1.361e-05 tau_kQ(Lx/2) 6.39e-06 tau_kbb(s*) 5.267e-05 | L1 tau_kQ(s*) 4.934e-03 [4s]
+  conf 2 (draw 3): gmin 0.236 Wbot +0.43 Wtop +0.62 | 11112 tau_kQ(s*) 5.016e-05 tau_kQ(Lx/2) 1.29e-05 tau_kbb(s*) 6.227e-05 | L1 tau_kQ(s*) 4.939e-03 [7s]
+  conf 3 (draw 4): gmin 0.138 Wbot -0.08 Wtop -1.02 | 11112 tau_kQ(s*) 2.585e-05 tau_kQ(Lx/2) 3.76e-06 tau_kbb(s*) 5.879e-05 | L1 tau_kQ(s*) 4.936e-03 [9s]
+  conf 4 (draw 5): gmin 0.168 Wbot -0.42 Wtop +0.90 | 11112 tau_kQ(s*) 2.610e-06 tau_kQ(Lx/2) 5.67e-05 tau_kbb(s*) 1.542e-05 | L1 tau_kQ(s*) 4.934e-03 [11s]
+  conf 5 (draw 6): gmin 0.180 Wbot -0.85 Wtop -0.24 | 11112 tau_kQ(s*) 4.381e-06 tau_kQ(Lx/2) 2.15e-05 tau_kbb(s*) 2.940e-05 | L1 tau_kQ(s*) 4.934e-03 [13s]
+SUMMARY Lx=8: n=6 rejected=0 | 11112 tau mean 1.7716e-05 SE 7.32e-06 max 5.016e-05 | L1 plateau mean 4.9353e-03 SE 7.90e-07; Lx*plateau 0.0395; ratio L1/11112 278.6
+watchdog peak RSS 220896 KB

@@ -1,0 +1,13 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+charge 1 L-Weyl bundle: Chern number -1.000000 (max |F_plaq| 0.026); min gap over grid 1.000
+charge 1 R-Weyl bundle: Chern number +1.000000 (max |F_plaq| 0.026); min gap over grid 1.000
+charge 2 L-Weyl bundle: Chern number -4.000000 (max |F_plaq| 0.105); min gap over grid 1.000
+charge 2 R-Weyl bundle: Chern number +4.000000 (max |F_plaq| 0.105); min gap over grid 1.000
+C(11112) = 4 C_L(1) + C_R(2) = -0.000000;  C(L1) = C_L(1) = -1.000000
+winding over w_t of the Berry phase around the non-contractible w_x loop: 11112 +0.0000, L1 +1.0000; 11112 phase spread over w_t 0.360 rad
+watchdog peak RSS 58784 KB

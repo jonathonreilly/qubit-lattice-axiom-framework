@@ -527,3 +527,13 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **CLS-KILL:** for every f in that range, the light generations are gapped, or modified beyond a bound by more than 10×.
   - **OPEN:** otherwise.
 - **Scope to state:** the model of the mirror gap, the dimension, and the order.
+
+**NT-1″ result (15:06Z; same family; referee launched): OPEN at (b″). The obstruction is in the open-time geometry, not in the measure.**
+- **(b″): edge zero modes (proved; checked).** On the open-time strip, H_W has exact zero modes on the top or bottom slice whenever e·W_edge ≡ π, for any plaquettes. Every winding of the Wilson-line circle crosses such a point. So there is no admissible non-contractible loop: 0/17 at Lx 4, 0/11 at Lx 6 and at Lx 8. The anomalous L1 control is blocked the same way.
+- **On a torus (descriptive):** the toron Chern number is C(11112) = 0 and C(L1) = −1. The 11112 holonomy spread decays at rate ln 2, with winding 0 against L1's 1.
+- **(b′): bulk tail exponential.** ν = 0.869 ± 0.064 (13.5σ) on random fields; about ln 2 on clean backgrounds to Lx 22. L1's plateau is exactly 1/(8π)/Lx.
+- **Edge tail algebraic.** Within two slices of the open edges it falls as about Lx⁻⁵ (checked to Lx 24).
+  - The cause: H_W is a Chern insulator with edge-state gap sin(π/Lx).
+  - Proved (elementary): any gauge-invariant current with ∂*j = 𝒜 inherits a response of at least ¼ of the anomaly's.
+  - So no measure on this geometry meets a uniform exponential bound as Lx → ∞ (suggested).
+- **Implication.** NT-1′'s negatives are modulus-carried, so this concerns legitimacy, not sign. A fixed-rule reading needs periodic-time RP kernels at Lx ≥ 4, which is new work: K2c's torus code covers Lx = 2 only.

@@ -1,0 +1,18 @@
+{
+  "kind": "dated_source_proposal_not_actual_binding",
+  "created_utc": "2026-10-15T14:12:26.796142+00:00",
+  "canonical_binding": null,
+  "primary_execution": null,
+  "cache_execution": null,
+  "mutation_execution": null,
+  "graph_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "root_supplied_parent_context": {
+    "pr": 9604,
+    "head": "60d0ac6642802cdbdea27c6c2c49d0825cba48cd",
+    "remotely_verified_by_this_packager": false
+  }
+}

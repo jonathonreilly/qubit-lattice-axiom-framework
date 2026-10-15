@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+"""Record an actual metadata-only child invocation and complete streams."""
+from pathlib import Path
+import sys,json,hashlib,datetime,subprocess
+ROOT=Path(__file__).resolve().parent
+script=ROOT/sys.argv[1]
+run=ROOT/'metadata_runs'/sys.argv[2]
+run.mkdir(parents=True,exist_ok=False)
+def ident(p):
+    b=p.read_bytes(); return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+(run/'child_source.py').write_bytes(script.read_bytes())
+(run/'recorder_source.py').write_bytes(Path(__file__).read_bytes())
+launch={'launched_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'command':[sys.executable,str(script)],'cwd':str(ROOT),'source_at_launch':ident(script),'recorder_at_launch':ident(Path(__file__)),'scientific_execution':False}
+(run/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+with (run/'stdout').open('wb') as out,(run/'stderr').open('wb') as err:
+    result=subprocess.run([sys.executable,str(script)],cwd=ROOT,stdout=out,stderr=err)
+receipt={'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'returncode':result.returncode,'launch':ident(run/'LAUNCH.json'),'outputs':[ident(run/'stdout'),ident(run/'stderr')]}
+(run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print((run/'stdout').read_text()); print((run/'stderr').read_text()); print(json.dumps(receipt,indent=2))
+raise SystemExit(result.returncode)

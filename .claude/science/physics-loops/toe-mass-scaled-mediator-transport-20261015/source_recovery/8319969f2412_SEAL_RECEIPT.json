@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-15T13:54:01.220955+00:00",
+  "preseal_checks_completed_utc": "2026-10-15T13:54:01.225298+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/seal_metadata.py"
+  ],
+  "source_at_launch": {
+    "path": "seal_metadata.py",
+    "bytes": 2238,
+    "sha256": "fcf66962cfe1b24050a0c22a18a9400e29649f9c3f46a1503b4cdd8b64e720e5"
+  },
+  "scope": "In-process preseal checks and source record; final sealing completion is confirmed by the successful tool exit. Not an independent scientific launcher.",
+  "scientific_execution": false,
+  "preseal_metadata_execution": {
+    "path": "metadata_runs/final/EXECUTION.json",
+    "bytes": 957,
+    "sha256": "cbfaec06c0e87ea7b45172e2b53ec9f4f6089cd5895eddd6e385d0740649d0e2"
+  }
+}

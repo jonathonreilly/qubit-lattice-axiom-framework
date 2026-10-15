@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-10-15T13:59:34.993685+00:00",
+  "status": "Conditional source acceptance for regular milestone review; no audit",
+  "files": [
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 3579,
+      "sha256": "96673d1ea60d1dbaaacbaff529a8c2ed5936a13cd84e2456bf0c5a6d2124014b"
+    },
+    {
+      "path": "close_review.py",
+      "bytes": 3716,
+      "sha256": "55f84274ea10237a708ddf1e44f124b02e89f6b9e0dfd9ffab769cd91ca11269"
+    }
+  ]
+}

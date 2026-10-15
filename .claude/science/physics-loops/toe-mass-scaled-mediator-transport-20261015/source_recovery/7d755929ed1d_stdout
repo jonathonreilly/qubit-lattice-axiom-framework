@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-15T13:52:52.349156+00:00",
+  "scope": "Exact source identities and recovery copies only; no scientific run.",
+  "source_count": 12,
+  "recovery_copy_count": 8,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+    "bytes": 25011,
+    "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e"
+  },
+  "coverage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/READ_COVERAGE.md",
+    "bytes": 3217,
+    "sha256": "494b4a1b7eaffc134875888eb0d4a3b81312d9458c6037bbee8733879b5f7368"
+  }
+}

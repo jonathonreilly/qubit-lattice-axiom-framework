@@ -1,0 +1,163 @@
+{
+  "frozen_utc": "2026-10-15T13:54:01.233314+00:00",
+  "scope": "Same-family source-exposed analytic review of root-origin mass-scaled transport; not audit or retained status.",
+  "conclusion": "No blocking mathematical defect in the stated three-axis conditional resource construction. Optional sampled identity U requires the additional u_bound prices specified in REPORT.md.",
+  "target_sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 25011,
+    "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e"
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "bytes": 4505,
+    "sha256": "e37286b1a818774976d81f3863b9ab18b48f691bd3dfd6bf610f97be96fc909b"
+  },
+  "files": [
+    {
+      "path": "FINAL_SOURCE_RECHECK.json",
+      "bytes": 4006,
+      "sha256": "12940dac4eec8d28e6f35c0b5709b6d7074c57c51a620aaa3ed8de69498d307c"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 3217,
+      "sha256": "494b4a1b7eaffc134875888eb0d4a3b81312d9458c6037bbee8733879b5f7368"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 25011,
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e"
+    },
+    {
+      "path": "SEAL_RECEIPT.json",
+      "bytes": 895,
+      "sha256": "8319969f241212d43d85bc2b02974451417d737ba09f96571fd372888c71baef"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4505,
+      "sha256": "e37286b1a818774976d81f3863b9ab18b48f691bd3dfd6bf610f97be96fc909b"
+    },
+    {
+      "path": "capture_metadata.py",
+      "bytes": 3359,
+      "sha256": "cebbafe2b0b381ec1032a4b4c519c24b31ed1cb66905acb395b79a2b889a5a2f"
+    },
+    {
+      "path": "finalize_metadata.py",
+      "bytes": 1196,
+      "sha256": "f3c8bf07f6f9a987fa2426067f123c33e455e4e4e51b485a1506258078025c5a"
+    },
+    {
+      "path": "metadata_runs/capture/EXECUTION.json",
+      "bytes": 963,
+      "sha256": "c7342b78acc2c134b706ca335cfc85b5685c8db4cca23f556e332c9950a28d03"
+    },
+    {
+      "path": "metadata_runs/capture/LAUNCH.json",
+      "bytes": 1033,
+      "sha256": "e2a84f2ecca1491b29ec7293156541736441d1f8ad01bbc8d270e1057d947cdf"
+    },
+    {
+      "path": "metadata_runs/capture/child_source.py",
+      "bytes": 3359,
+      "sha256": "cebbafe2b0b381ec1032a4b4c519c24b31ed1cb66905acb395b79a2b889a5a2f"
+    },
+    {
+      "path": "metadata_runs/capture/recorder_source.py",
+      "bytes": 1418,
+      "sha256": "9ed1cf096359b3c14ca2e9c3f3f752b54c58c252f246bbf83a9eaf581db5167c"
+    },
+    {
+      "path": "metadata_runs/capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/capture/stdout",
+      "bytes": 809,
+      "sha256": "4eac1e235892dce3bd3f44545c022e1eda1a79ef56f88e7b4cf933d0b288af54"
+    },
+    {
+      "path": "metadata_runs/final/EXECUTION.json",
+      "bytes": 957,
+      "sha256": "cbfaec06c0e87ea7b45172e2b53ec9f4f6089cd5895eddd6e385d0740649d0e2"
+    },
+    {
+      "path": "metadata_runs/final/LAUNCH.json",
+      "bytes": 1035,
+      "sha256": "9bad8213ab8229df7ae321311eed6ced55cc8dc5ece0be743f40d73bfe1aa119"
+    },
+    {
+      "path": "metadata_runs/final/child_source.py",
+      "bytes": 1196,
+      "sha256": "f3c8bf07f6f9a987fa2426067f123c33e455e4e4e51b485a1506258078025c5a"
+    },
+    {
+      "path": "metadata_runs/final/recorder_source.py",
+      "bytes": 1418,
+      "sha256": "9ed1cf096359b3c14ca2e9c3f3f752b54c58c252f246bbf83a9eaf581db5167c"
+    },
+    {
+      "path": "metadata_runs/final/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/final/stdout",
+      "bytes": 739,
+      "sha256": "7d755929ed1d8b0c7f3753cf119255143b9f038ec92a1dfd1aa444668529aa91"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1418,
+      "sha256": "9ed1cf096359b3c14ca2e9c3f3f752b54c58c252f246bbf83a9eaf581db5167c"
+    },
+    {
+      "path": "seal_metadata.py",
+      "bytes": 2238,
+      "sha256": "fcf66962cfe1b24050a0c22a18a9400e29649f9c3f46a1503b4cdd8b64e720e5"
+    },
+    {
+      "path": "sources/DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+    },
+    {
+      "path": "sources/PROPOSAL_FREEZE.json",
+      "bytes": 390,
+      "sha256": "5871330e1923f70f7872f02f14e0d7e70dd9c3ab27b461e55b0dcd74c0165492"
+    },
+    {
+      "path": "sources/geometry_memory.md",
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"
+    },
+    {
+      "path": "sources/geometry_reservoir.md",
+      "bytes": 27222,
+      "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4"
+    },
+    {
+      "path": "sources/single_port_DERIVATION.md",
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25"
+    },
+    {
+      "path": "sources/single_port_REPORT.md",
+      "bytes": 25855,
+      "sha256": "081d9eb9f65993fcaf11caa0c984e194a861ba5993a5bd92890d4e5e67edebf0"
+    },
+    {
+      "path": "sources/single_port_ROOT_ACCEPTANCE.md",
+      "bytes": 4763,
+      "sha256": "374139d56c7217ab52c59b1f94fcec8808fc29a1753fadc2428bf39de1009ec4"
+    },
+    {
+      "path": "sources/single_port_ROOT_FINAL_FREEZE.json",
+      "bytes": 1453,
+      "sha256": "9cf97f26b0e2eb0c5e6604f86c7f1af2748c616bb5d2b97c3e67afa7be2c3fc5"
+    }
+  ]
+}

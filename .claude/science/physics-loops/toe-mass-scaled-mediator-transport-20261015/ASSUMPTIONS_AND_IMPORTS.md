@@ -1,0 +1,3 @@
+# Assumptions and imports
+
+The sole direct mathematical parent is the nearest-neighbor shared-mediator note, SHA256 68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649. Its exact single-port body is d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25. Old geometry is inherited through it. Fixed v0/e(v0), N_X=1, three Pauli axes, bounded finite-time inputs, fixed core sizes, supplied coefficients, fresh vacuum, full-space isolation and actual physical timing are retained. The optional U field requires all additions in the current note. h0, F_max and T_fin must remain explicit resource inputs unless bounded. No physical axiom, native supplier, routed-preparation theorem or two-copy alternative is imported.

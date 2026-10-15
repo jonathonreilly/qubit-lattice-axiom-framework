@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-15T14:14:21.401253+00:00",
+  "pr": 9605,
+  "head": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1413/pr9605_scope/stdout",
+    "bytes": 14486,
+    "sha256": "4c8ba3e263c70e6c263b1dffbc6dab578cf3cd72a21d23940300be7c24483187"
+  },
+  "coverage": "Complete PR body and complete65-path inventory read after recovering initial truncated aggregate. Scope screening only; mathematical derivation and empirical claims not reviewed.",
+  "claim_scope": "Conditional scalar growth/lensing inverse using supplied action and response closure; no observational fit asserted in PR.",
+  "use": "No mathematical or native quantum control/memory supplier imported; no overlap requiring duplication of this active work.",
+  "limits": "Screening is not validation or audit of external science."
+}

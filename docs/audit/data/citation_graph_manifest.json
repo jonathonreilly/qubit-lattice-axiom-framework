@@ -1,6 +1,6 @@
 {
- "edge_count": 16091,
- "node_count": 7132,
+ "edge_count": 16092,
+ "node_count": 7133,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14581,6 +14581,10 @@
   "mass_mixing_subspace_disjointness_theorem_note": {
    "deps_hash": "6f1d48b0b059",
    "out_degree": 3
+  },
+  "mass_scaled_mediator_transport_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "bda98aae5150",
+   "out_degree": 1
   },
   "mass_spectrum_derived_note": {
    "deps_hash": "95ca07898375",

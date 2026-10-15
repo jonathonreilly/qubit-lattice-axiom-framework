@@ -1,0 +1,89 @@
+{
+  "scope": "Exact source identities and role-limited reuse; no scientific run.",
+  "sources": [
+    {
+      "role": "candidate",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "recovery_copy": "sources/DERIVATION.md"
+    },
+    {
+      "role": "candidate proposal freeze",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 390,
+      "sha256": "5871330e1923f70f7872f02f14e0d7e70dd9c3ab27b461e55b0dcd74c0165492",
+      "recovery_copy": "sources/PROPOSAL_FREEZE.json"
+    },
+    {
+      "role": "single-port mathematical parent",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "recovery_copy": "sources/single_port_DERIVATION.md"
+    },
+    {
+      "role": "separate single-port source-exposed assessment",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_decisive_check/REPORT.md",
+      "bytes": 25855,
+      "sha256": "081d9eb9f65993fcaf11caa0c984e194a861ba5993a5bd92890d4e5e67edebf0",
+      "recovery_copy": "sources/single_port_REPORT.md"
+    },
+    {
+      "role": "root single-port source acceptance",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_mediator_root_review/ACCEPTANCE.md",
+      "bytes": 4763,
+      "sha256": "374139d56c7217ab52c59b1f94fcec8808fc29a1753fadc2428bf39de1009ec4",
+      "recovery_copy": "sources/single_port_ROOT_ACCEPTANCE.md"
+    },
+    {
+      "role": "root single-port freeze",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_mediator_root_review/FINAL_FREEZE.json",
+      "bytes": 1453,
+      "sha256": "9cf97f26b0e2eb0c5e6604f86c7f1af2748c616bb5d2b97c3e67afa7be2c3fc5",
+      "recovery_copy": "sources/single_port_ROOT_FINAL_FREEZE.json"
+    },
+    {
+      "role": "exact original geometry",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/sources/geometry_reservoir.md",
+      "bytes": 27222,
+      "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+      "recovery_copy": "sources/geometry_reservoir.md"
+    },
+    {
+      "role": "exact original memory geometry",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/sources/geometry_memory.md",
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "recovery_copy": "sources/geometry_memory.md"
+    },
+    {
+      "role": "this worker prior geometry coverage, not new independence",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/REPORT.md",
+      "bytes": 25101,
+      "sha256": "fa97db9c1922c56e757de800b1f84095ea6abe229ce412c7c70280a3c520ae59",
+      "recovery_copy": null
+    },
+    {
+      "role": "previously read instructions",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "recovery_copy": null
+    },
+    {
+      "role": "previously read workflow",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "recovery_copy": null
+    },
+    {
+      "role": "previously read reviewer skill",
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "recovery_copy": null
+    }
+  ]
+}

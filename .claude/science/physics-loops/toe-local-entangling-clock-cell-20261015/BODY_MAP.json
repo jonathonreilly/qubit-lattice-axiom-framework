@@ -1,0 +1,18 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "local_entangling_clock_gate_domain_revision/AFTER.md",
+      "start": 12329,
+      "end": 24737,
+      "bytes": 12408,
+      "sha256": "2c95a969f8d8f40f4190ece9f25d811c7e204a4f68de722f3fe393265b2c8115"
+    },
+    {
+      "alias": "local_entangling_clock_gate_independent/DERIVATION.md",
+      "start": 24800,
+      "end": 46092,
+      "bytes": 21292,
+      "sha256": "6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543"
+    }
+  ]
+}

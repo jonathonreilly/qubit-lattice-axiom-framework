@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-15T04:05:49.231917+00:00",
+  "stage": "root_bound_review_milestone",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-local-entangling-clock-cell-20261015",
+  "observed_base_head": "53be395f790a96a42f2d58c448f7a95b193580d7",
+  "observed_base_tree": "d27914669cd9411e96c7bc1830cd5be2e5aaaec2",
+  "base_branch": "physics-loop/toe-local-pauli-clock-cell-20261015",
+  "base_pr": 9587,
+  "base_is_mathematical_dependency": false,
+  "main_observation": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_observation": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "feature_branch_created_by_this_builder": false,
+  "feature_head": "53be395f790a96a42f2d58c448f7a95b193580d7",
+  "source_head": "53be395f790a96a42f2d58c448f7a95b193580d7",
+  "publication_pr": null,
+  "root_runtime_freshness_and_feature_binding_pending": false,
+  "canonical_sources": {
+    "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 32493,
+      "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+    },
+    "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 37090,
+      "sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4"
+    }
+  },
+  "literal_model_parent": {
+    "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+  },
+  "methodological_attribution_only": {
+    "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4"
+  },
+  "external_residual_theorem_imported_for_cell": false,
+  "exact_source_clauses": [
+    {
+      "alias": "premises/be8_raw.md",
+      "canonical_path": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 8389,
+      "end": 32138,
+      "bytes": 23749,
+      "sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+      "role": "Literal model and methodological source; cell inequalities, inverse and residual rederived"
+    },
+    {
+      "alias": "premises/mediator_raw.md",
+      "canonical_path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 7032,
+      "end": 35421,
+      "bytes": 28389,
+      "sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6",
+      "role": "Methodological attribution only; auxiliary-only lemma not imported for data-dependent penalty"
+    }
+  ],
+  "conditional_acceptances": {
+    "local_entangling_clock_gate_root_review/ACCEPTANCE.md": "35da19d8c689c01af0c9a3822b66f1f056aa7d445bd1284391cb64db3f8b01d1",
+    "local_entangling_clock_gate_independent_root_review/ACCEPTANCE.md": "256f12b48ced6fafb78bf72bfe091687d59ea30bf3f37ccccb3a7ccf6195098a"
+  },
+  "new_scientific_programs_run": 0,
+  "archived_selected_fixtures": 2,
+  "archived_scientific_attempts": 3,
+  "archived_successful_attempts": 2,
+  "archived_failed_attempts": 1,
+  "scope": "Two conditionally accepted adjacent-pair cells only; no word or readout-window composition. Actual source branch bound; publication and independent retained audit remain separate."
+}

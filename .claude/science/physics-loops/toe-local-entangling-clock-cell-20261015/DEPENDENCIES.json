@@ -1,0 +1,54 @@
+{
+  "literal_model_and_prior_method": {
+    "canonical_path": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "canonical_sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755",
+    "raw_alias": "premises/be8_raw.md",
+    "raw_interval": [
+      8389,
+      32138
+    ],
+    "raw_sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+    "claim_id": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14",
+    "role": "be8 literal-model/full-space spin and residual method. All cell response, data-dependent inverse and noncommuting residual arguments are rederived in the complete new bodies."
+  },
+  "methodological_attribution_only": {
+    "canonical_path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "canonical_sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4",
+    "raw_alias": "premises/mediator_raw.md",
+    "raw_interval": [
+      7032,
+      35421
+    ],
+    "raw_sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6",
+    "claim_id": "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14",
+    "role": "8831 bare-input comparison and charged-counterterm discipline. Its auxiliary-only residual lemma is not imported as a cell theorem."
+  },
+  "external_residual_theorem_imported_for_cell": false,
+  "procedural_template": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft",
+    "freeze_sha256": "423572fb1da66ed2811c553b8f8929efd4676a26e47a9e03e51403fe2b899c10",
+    "theorem_import": false
+  },
+  "actual_canonical_markdown_targets": [
+    "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "graph_status": "Unexecuted. Two canonical citation targets have distinct roles; root must assess actual graph output without treating attribution as a theorem import.",
+  "publication_binding": {
+    "binding_complete": false,
+    "base_branch": null,
+    "base_head": null,
+    "base_tree": null,
+    "base_pr": null,
+    "feature_head": null
+  },
+  "excluded_science": [
+    "gate-word composition",
+    "readout-window theorem",
+    "single-Pauli theorem as an imported result"
+  ],
+  "root_source_acceptances": {
+    "local_entangling_clock_gate_root_review/ACCEPTANCE.md": "35da19d8c689c01af0c9a3822b66f1f056aa7d445bd1284391cb64db3f8b01d1",
+    "local_entangling_clock_gate_independent_root_review/ACCEPTANCE.md": "256f12b48ced6fafb78bf72bfe091687d59ea30bf3f37ccccb3a7ccf6195098a"
+  }
+}

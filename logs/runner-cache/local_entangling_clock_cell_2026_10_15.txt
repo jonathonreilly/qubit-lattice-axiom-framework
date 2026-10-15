@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/local_entangling_clock_cell_2026_10_15.py
+runner_sha256: f69c5ba67f956440b264bc784cca833062ecc3d3ad1651c4284b70a6b2c9b33a
+input_fingerprint_sha256: 0e62747019b1444e72b8c0e85bad3d23aa5f5201b52a89ee3b724ed6ed4d15a7
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"archived_attempts_not_replayed": {"attempts": 3, "failed_attempts": 1, "selected_fixtures": 2, "successful_attempts": 2}, "complete_proofs": 2, "decoded_originals": 138, "limits": "Two separate one-active-cell contracts. Four-rail empty sector preserves K; compact empty sector applies K+cI+dBC. Supplied sites/input/calibration and complete costs; no word, reader, native realization or retained audit.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Identity, intervals and historical receipt verification only; no mathematical predicate or control executed."}
+per_element: adjacent unchanged old pair, arbitrary old/reference input and specified one-head supply
+per_site: four-rail 26 fresh sites and 36 edges; compact 6 fresh sites and 12 edges; paid local loads
+per_mode: full-space penalty inequality separated from total-one-excitation comparison
+per_block: full prepared output, distinct phase targets and explicit bare-input finite-time errors
+lattice_wide: no occupied-bulk packing, word composition, common cap or native claim
+
+----- stderr -----
+

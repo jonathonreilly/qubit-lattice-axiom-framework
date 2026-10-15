@@ -1,5 +1,17 @@
 # OBS-3 report: is X2's flavour-pattern Lorentz violation forced by CKM?
 
+> **Referee (codex gpt-5.6-sol, 13:25Z): CONFIRMED WITH CORRECTIONS.**
+> - **Holds:** TEXTURE-ESCAPE, within the declared one-loop family. The exact B-gen ansatz fits the PDG data, and its one-loop data are S3-invariant.
+> - **Corrections:**
+>   - Lemma S needs fully S3-invariant data: equal moduli alone are not enough with selective diagonal symbols.
+>   - The saved binary64 matrices miss the bounds through rounding; the zero belongs to the exact ansatz.
+>   - "For any W_u" (M1) is not proved.
+>   - "Up-flat + M2: no structural zero" is only partly established.
+>   - Mechanism 1 holds at v = 0.
+> - **Open:** FCNC safety and two-loop terms.
+>
+> See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Reading: TEXTURE-ESCAPE.** At one loop the observed CKM does not force X2's flavour-pattern Lorentz violation: the minimum residual over the family is exactly zero. The escape is structural, not tuned.
 
 **Limits of the escape.**

@@ -1,0 +1,15 @@
+{
+  "status": "exact_selected_fixture_completed",
+  "checks": 54,
+  "all_checks": true,
+  "counts": {
+    "original_qubits": 74,
+    "M": 4,
+    "vertices_per_copy": 33,
+    "tail_length": 28,
+    "fresh_auxiliaries": 66,
+    "edges_per_copy": 33
+  },
+  "full_auxiliary_dynamics_checked": false,
+  "independent_audit": false
+}

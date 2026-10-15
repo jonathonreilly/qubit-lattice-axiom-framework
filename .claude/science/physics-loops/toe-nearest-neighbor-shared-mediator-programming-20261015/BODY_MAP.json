@@ -1,0 +1,39 @@
+{
+  "interval_convention": "zero-based UTF-8 bytes, start inclusive/end exclusive",
+  "bodies": {
+    "two_copy": {
+      "start": 18974,
+      "end": 43879,
+      "bytes": 24905,
+      "sha256": "0f885e0c7ae6c739b971af218afdeddc693df4c720d791b8c0db7e0a95a02a29",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_shared_mediator_candidate/DERIVATION.md",
+      "start_line": 327,
+      "end_line_inclusive": 562
+    },
+    "single_port": {
+      "start": 44002,
+      "end": 72848,
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "start_line": 570,
+      "end_line_inclusive": 858
+    }
+  },
+  "canonical_geometry_bodies": [
+    {
+      "canonical_path": "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 14549,
+      "end": 41771,
+      "bytes": 27222,
+      "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4"
+    },
+    {
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25736,
+      "end": 51476,
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"
+    }
+  ]
+}

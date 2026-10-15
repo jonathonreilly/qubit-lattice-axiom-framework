@@ -1,0 +1,1357 @@
+{
+  "utc": "2026-10-15T13:47:44.826094+00:00",
+  "originals": {
+    "local_clock_mediator_publication_draft/FAILURES.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/FAILURES.md",
+      "bytes": 1832,
+      "sha256": "18794d304522e081aac73ac79bac24e08075494a11b4b820b11dc32f705a2426",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/18794d304522e081aac73ac79bac24e08075494a11b4b820b11dc32f705a2426.gz"
+    },
+    "local_clock_mediator_publication_draft/FINAL_FREEZE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/FINAL_FREEZE.json",
+      "bytes": 36865,
+      "sha256": "f519f338fa3fde92d40459baa3e579eb4ea14db57858bb00a301603ea1c8f0aa",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/f519f338fa3fde92d40459baa3e579eb4ea14db57858bb00a301603ea1c8f0aa.gz"
+    },
+    "local_clock_mediator_publication_draft/README.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/README.md",
+      "bytes": 1507,
+      "sha256": "ef57562cf34d12ea46d6e1eb053e809632439a882f111a540f92d9e750b16296",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/ef57562cf34d12ea46d6e1eb053e809632439a882f111a540f92d9e750b16296.gz"
+    },
+    "local_clock_mediator_publication_draft/build_proposal.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/build_proposal.py",
+      "bytes": 24699,
+      "sha256": "5cfdf89aa22976f0ade020c0fe20f1b8852a48c0596a5f654f09758baa0d4433",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/5cfdf89aa22976f0ade020c0fe20f1b8852a48c0596a5f654f09758baa0d4433.gz"
+    },
+    "local_clock_mediator_publication_draft/check_proposal.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/check_proposal.py",
+      "bytes": 5717,
+      "sha256": "67331bc4448ec7c4cfe9f0b97c45cc8bd06027f5d487552a4198e82ded9f4fb8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/67331bc4448ec7c4cfe9f0b97c45cc8bd06027f5d487552a4198e82ded9f4fb8.gz"
+    },
+    "local_clock_mediator_publication_draft/note_wrapper.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/note_wrapper.md",
+      "bytes": 18612,
+      "sha256": "27d7be146c4bbda1205161e48b1606254e6d3bb7fc0e7466c8dbdccdc82d8642",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/27d7be146c4bbda1205161e48b1606254e6d3bb7fc0e7466c8dbdccdc82d8642.gz"
+    },
+    "local_clock_mediator_publication_draft/primary_template.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/primary_template.py",
+      "bytes": 4160,
+      "sha256": "c75ccd8909bda769b0c5d56da5100ac3ed8e6662a9fe95d3fae4d16f535396f7",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/c75ccd8909bda769b0c5d56da5100ac3ed8e6662a9fe95d3fae4d16f535396f7.gz"
+    },
+    "local_clock_mediator_publication_draft/record_metadata.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/record_metadata.py",
+      "bytes": 1578,
+      "sha256": "b1f3abfa2b3135a7bb6a409ac50ea2c1d32a7fbf036a30ee4198958296e4d491",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b1f3abfa2b3135a7bb6a409ac50ea2c1d32a7fbf036a30ee4198958296e4d491.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/EXECUTION.json",
+      "bytes": 872,
+      "sha256": "fc5581b35efec4788a783de4b73ad9d697bfda9a7f516683a04db5a8c52c1093",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/fc5581b35efec4788a783de4b73ad9d697bfda9a7f516683a04db5a8c52c1093.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/LAUNCH.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/LAUNCH.json",
+      "bytes": 609,
+      "sha256": "b2af269cf09a37e5689106958924f31ff4dc3a3c82ed51f23be14207d068a815",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b2af269cf09a37e5689106958924f31ff4dc3a3c82ed51f23be14207d068a815.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/PRE_REVISION_PRESERVATION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/PRE_REVISION_PRESERVATION.json",
+      "bytes": 2178,
+      "sha256": "a3ec3e8b7b5eff16d117788ff0312bb0bf8ed856c31c9a5b735070da36fc985b",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/a3ec3e8b7b5eff16d117788ff0312bb0bf8ed856c31c9a5b735070da36fc985b.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/executed_source.py",
+      "bytes": 24624,
+      "sha256": "967a697641d87ab8eb2655367f753cb98b461a6f6307bb8450dfc980c549a368",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/967a697641d87ab8eb2655367f753cb98b461a6f6307bb8450dfc980c549a368.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/pre_revision_0_note_wrapper.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/pre_revision_0_note_wrapper.md",
+      "bytes": 18602,
+      "sha256": "60f65c7b9e0eff07ae8f363c80862db3d1d975558b07504a0f9748002c921f2b",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/60f65c7b9e0eff07ae8f363c80862db3d1d975558b07504a0f9748002c921f2b.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/pre_revision_1_BUILD_RESULT.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/pre_revision_1_BUILD_RESULT.json",
+      "bytes": 5641,
+      "sha256": "936eb9bf008b06b3e800a212002565db0c26e9165d2518ee556d34529bdd718e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/936eb9bf008b06b3e800a212002565db0c26e9165d2518ee556d34529bdd718e.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/pre_revision_2_BODY_MAP.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/pre_revision_2_BODY_MAP.json",
+      "bytes": 1462,
+      "sha256": "25a1e2e4b0300141f8a02be623eddabd104c08b6e7ab64e56f147d50f8d5d0cd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/25a1e2e4b0300141f8a02be623eddabd104c08b6e7ab64e56f147d50f8d5d0cd.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/pre_revision_3_SOURCE_MANIFEST.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/pre_revision_3_SOURCE_MANIFEST.json",
+      "bytes": 50062,
+      "sha256": "20fd44936e047057c3ab580d69a211fe4c7507179829d40fb9061222ce776ae3",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/20fd44936e047057c3ab580d69a211fe4c7507179829d40fb9061222ce776ae3.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/pre_revision_4_INPUT_MANIFEST.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/pre_revision_4_INPUT_MANIFEST.json",
+      "bytes": 25954,
+      "sha256": "87edd7a17a5713778cd38e25fff7b1a5fd50fd40f55e9f8b294bda9aedf63a70",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/87edd7a17a5713778cd38e25fff7b1a5fd50fd40f55e9f8b294bda9aedf63a70.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/pre_revision_5_PUBLICATION_STATE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/pre_revision_5_PUBLICATION_STATE.json",
+      "bytes": 367,
+      "sha256": "a9213b6c991cdb68a453b8771adf5d5289b31925d0a1aa121491b60d009769d8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/a9213b6c991cdb68a453b8771adf5d5289b31925d0a1aa121491b60d009769d8.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/pre_revision_6_nearest_neighbor_shared_mediator_programming_2026_10_15.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/pre_revision_6_nearest_neighbor_shared_mediator_programming_2026_10_15.py",
+      "bytes": 18062,
+      "sha256": "dade9c94db32a7d92edc37af548ed45e387c46023a1bf6d95c95c22c68d86c19",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dade9c94db32a7d92edc37af548ed45e387c46023a1bf6d95c95c22c68d86c19.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build/stdout",
+      "bytes": 1020,
+      "sha256": "0a15500d664a269ae80fcd5ba5346971a03fdfccfa795e49d3fb7fff575eafb9",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/0a15500d664a269ae80fcd5ba5346971a03fdfccfa795e49d3fb7fff575eafb9.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/EXECUTION.json",
+      "bytes": 1459,
+      "sha256": "ffc6cea80336c808263ddebaf5d5087e4f03c218c5b110561a3b511bbf998416",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/ffc6cea80336c808263ddebaf5d5087e4f03c218c5b110561a3b511bbf998416.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/LAUNCH.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/LAUNCH.json",
+      "bytes": 1168,
+      "sha256": "fdfbc971d9c9bf0913c8e7fdc3d54507d5a26442c2fbe3a9548a2224c9449ce4",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/fdfbc971d9c9bf0913c8e7fdc3d54507d5a26442c2fbe3a9548a2224c9449ce4.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/input_build_proposal.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/input_build_proposal.py",
+      "bytes": 24699,
+      "sha256": "5cfdf89aa22976f0ade020c0fe20f1b8852a48c0596a5f654f09758baa0d4433",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/5cfdf89aa22976f0ade020c0fe20f1b8852a48c0596a5f654f09758baa0d4433.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/input_note_wrapper.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/input_note_wrapper.md",
+      "bytes": 18612,
+      "sha256": "27d7be146c4bbda1205161e48b1606254e6d3bb7fc0e7466c8dbdccdc82d8642",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/27d7be146c4bbda1205161e48b1606254e6d3bb7fc0e7466c8dbdccdc82d8642.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/input_primary_template.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/input_primary_template.py",
+      "bytes": 4160,
+      "sha256": "c75ccd8909bda769b0c5d56da5100ac3ed8e6662a9fe95d3fae4d16f535396f7",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/c75ccd8909bda769b0c5d56da5100ac3ed8e6662a9fe95d3fae4d16f535396f7.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/input_record_metadata.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/input_record_metadata.py",
+      "bytes": 1578,
+      "sha256": "b1f3abfa2b3135a7bb6a409ac50ea2c1d32a7fbf036a30ee4198958296e4d491",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b1f3abfa2b3135a7bb6a409ac50ea2c1d32a7fbf036a30ee4198958296e4d491.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/build_revision/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/build_revision/stdout",
+      "bytes": 1020,
+      "sha256": "ca18edbf744c281c10bfb9853ed7d056cd20f469a4a5934a1995616bdf726f59",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/ca18edbf744c281c10bfb9853ed7d056cd20f469a4a5934a1995616bdf726f59.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final/EXECUTION.json",
+      "bytes": 837,
+      "sha256": "03f120024013ed2b72b6121e4b86e679f25d7e5b2da3c0312d4f7933fb941236",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/03f120024013ed2b72b6121e4b86e679f25d7e5b2da3c0312d4f7933fb941236.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final/LAUNCH.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final/LAUNCH.json",
+      "bytes": 594,
+      "sha256": "2b4e8fee94d7433bfe44c1ccb159bb18d38acb29404319f11ba9ddef4a980391",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/2b4e8fee94d7433bfe44c1ccb159bb18d38acb29404319f11ba9ddef4a980391.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final/executed_source.py",
+      "bytes": 5042,
+      "sha256": "0f8efc75e52b108c653e5204df3469b43bc15f328d13c96f6996dc74af3c9763",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/0f8efc75e52b108c653e5204df3469b43bc15f328d13c96f6996dc74af3c9763.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final/stdout",
+      "bytes": 451,
+      "sha256": "e6c5d7b9a438c3846f456d275879ae4ecab1fbde827eed3552174498302bcd18",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e6c5d7b9a438c3846f456d275879ae4ecab1fbde827eed3552174498302bcd18.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/EXECUTION.json",
+      "bytes": 1458,
+      "sha256": "953bc90eca4520d032045fd4b2792a7617c256f087fb5ffc96b553be60244c1c",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/953bc90eca4520d032045fd4b2792a7617c256f087fb5ffc96b553be60244c1c.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/LAUNCH.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/LAUNCH.json",
+      "bytes": 1168,
+      "sha256": "562eee1c6ca2ffb5730f46794a08a3f104e310e5323912b3dfce869d35bf8885",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/562eee1c6ca2ffb5730f46794a08a3f104e310e5323912b3dfce869d35bf8885.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/input_check_proposal.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/input_check_proposal.py",
+      "bytes": 5717,
+      "sha256": "67331bc4448ec7c4cfe9f0b97c45cc8bd06027f5d487552a4198e82ded9f4fb8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/67331bc4448ec7c4cfe9f0b97c45cc8bd06027f5d487552a4198e82ded9f4fb8.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/input_note_wrapper.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/input_note_wrapper.md",
+      "bytes": 18612,
+      "sha256": "27d7be146c4bbda1205161e48b1606254e6d3bb7fc0e7466c8dbdccdc82d8642",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/27d7be146c4bbda1205161e48b1606254e6d3bb7fc0e7466c8dbdccdc82d8642.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/input_primary_template.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/input_primary_template.py",
+      "bytes": 4160,
+      "sha256": "c75ccd8909bda769b0c5d56da5100ac3ed8e6662a9fe95d3fae4d16f535396f7",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/c75ccd8909bda769b0c5d56da5100ac3ed8e6662a9fe95d3fae4d16f535396f7.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/input_record_metadata.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/input_record_metadata.py",
+      "bytes": 1578,
+      "sha256": "b1f3abfa2b3135a7bb6a409ac50ea2c1d32a7fbf036a30ee4198958296e4d491",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b1f3abfa2b3135a7bb6a409ac50ea2c1d32a7fbf036a30ee4198958296e4d491.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_clock_mediator_publication_draft/runs/final_revision/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/runs/final_revision/stdout",
+      "bytes": 451,
+      "sha256": "e6c5d7b9a438c3846f456d275879ae4ecab1fbde827eed3552174498302bcd18",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e6c5d7b9a438c3846f456d275879ae4ecab1fbde827eed3552174498302bcd18.gz"
+    },
+    "mediator_publication_root_review/SOURCE_CLOSURE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mediator_publication_root_review/SOURCE_CLOSURE.json",
+      "bytes": 4706,
+      "sha256": "e98cb31818829822c86d9d11bf5f9652e6bb0ce1ba18142330201f2485ed4677",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e98cb31818829822c86d9d11bf5f9652e6bb0ce1ba18142330201f2485ed4677.gz"
+    },
+    "mediator_publication_root_review/close_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mediator_publication_root_review/close_source.py",
+      "bytes": 4305,
+      "sha256": "3eb8b524e35c1b3ecf687230f355df425a4f93ec0ac3b660044f903ee59195c4",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/3eb8b524e35c1b3ecf687230f355df425a4f93ec0ac3b660044f903ee59195c4.gz"
+    },
+    "publication_integration/check_mediator_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/check_mediator_graph.py",
+      "bytes": 1903,
+      "sha256": "bb2838ddcf4cb0ad8c2e7ecd6f37c7fbb977c1d11d2e007fc79f57404f675e3e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/bb2838ddcf4cb0ad8c2e7ecd6f37c7fbb977c1d11d2e007fc79f57404f675e3e.gz"
+    },
+    "publication_integration/common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/common.py",
+      "bytes": 3127,
+      "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b.gz"
+    },
+    "publication_integration/execute_mediator_cache.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/execute_mediator_cache.py",
+      "bytes": 1632,
+      "sha256": "b3016f7a1c5f4c1acb9772acbdc572c03526a219d12f4e1e5daab392298d6998",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b3016f7a1c5f4c1acb9772acbdc572c03526a219d12f4e1e5daab392298d6998.gz"
+    },
+    "publication_integration/finish_mediator_verification.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finish_mediator_verification.py",
+      "bytes": 11145,
+      "sha256": "540452bfb6c97dbdc2419c02aeda656d3f8312594ecb7fb464c1508c3a48702b",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/540452bfb6c97dbdc2419c02aeda656d3f8312594ecb7fb464c1508c3a48702b.gz"
+    },
+    "publication_integration/install_mediator.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/install_mediator.py",
+      "bytes": 2236,
+      "sha256": "fe5319f5062e990c04275852b5fbe5ef5c2d4a838b7466a2c305671822820772",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/fe5319f5062e990c04275852b5fbe5ef5c2d4a838b7466a2c305671822820772.gz"
+    },
+    "publication_integration/mediator/CANONICALIZATION.diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/CANONICALIZATION.diff",
+      "bytes": 42472,
+      "sha256": "9906e3713ab97dc541a56eaba731b7e9cff9a54983f25494e6a95f4a7f25924d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/9906e3713ab97dc541a56eaba731b7e9cff9a54983f25494e6a95f4a7f25924d.gz"
+    },
+    "publication_integration/mediator/CANONICAL_EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/CANONICAL_EXECUTION.json",
+      "bytes": 2101,
+      "sha256": "5f0429373d4c4c005dffe87aa453510e54c08257673b8e9a601d77b52f82a70e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/5f0429373d4c4c005dffe87aa453510e54c08257673b8e9a601d77b52f82a70e.gz"
+    },
+    "publication_integration/mediator/CANONICAL_RESULT.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/CANONICAL_RESULT.json",
+      "bytes": 1184,
+      "sha256": "4dcaaa7224e9e9c793c9ba6c7ed968f0ea713eaf3b95d4d987cfb2a803e501ae",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/4dcaaa7224e9e9c793c9ba6c7ed968f0ea713eaf3b95d4d987cfb2a803e501ae.gz"
+    },
+    "publication_integration/mediator/EXTERNAL_9603_SCOPE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/EXTERNAL_9603_SCOPE.json",
+      "bytes": 847,
+      "sha256": "759caa106161d7656a7b5004e9d9d51ac670977bd0e1a488a41066bbcce15e65",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/759caa106161d7656a7b5004e9d9d51ac670977bd0e1a488a41066bbcce15e65.gz"
+    },
+    "publication_integration/mediator/GRAPH_VERIFICATION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/GRAPH_VERIFICATION.json",
+      "bytes": 2250,
+      "sha256": "a40dcd233c8f2c4ee7e4e488a930a743d4c5d7604e049eb86fe1b2f8504247f1",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/a40dcd233c8f2c4ee7e4e488a930a743d4c5d7604e049eb86fe1b2f8504247f1.gz"
+    },
+    "publication_integration/mediator/INSTALLED.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/INSTALLED.json",
+      "bytes": 56314,
+      "sha256": "a1e99d89c217a1c04b0b2ed4ea56d23adbead9b9a280c3859f8ca0d473d7a0a8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/a1e99d89c217a1c04b0b2ed4ea56d23adbead9b9a280c3859f8ca0d473d7a0a8.gz"
+    },
+    "publication_integration/mediator/MUTATION_PLAN.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/MUTATION_PLAN.json",
+      "bytes": 1527,
+      "sha256": "e505afabcdb0d3da04bded5d8466d21235b8cdb9003dbecffe426d2ab45fd1d6",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e505afabcdb0d3da04bded5d8466d21235b8cdb9003dbecffe426d2ab45fd1d6.gz"
+    },
+    "publication_integration/mediator/MUTATION_RESULTS.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/MUTATION_RESULTS.json",
+      "bytes": 5990,
+      "sha256": "d8293ee34d0326398ae21871fce1bdf310134e9b9df77608907cb22865461348",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d8293ee34d0326398ae21871fce1bdf310134e9b9df77608907cb22865461348.gz"
+    },
+    "publication_integration/mediator/OPEN_INVENTORY_DELTA_1317.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/OPEN_INVENTORY_DELTA_1317.json",
+      "bytes": 973,
+      "sha256": "0120a5c35fe1d1b16201c2d727702b7dd87cb09aa9ceb1f3140bd4a5522406d4",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/0120a5c35fe1d1b16201c2d727702b7dd87cb09aa9ceb1f3140bd4a5522406d4.gz"
+    },
+    "publication_integration/mediator/PREPARED.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/PREPARED.json",
+      "bytes": 58207,
+      "sha256": "61e2b28b689421a87fb7b72a673def040fb5d09e354bed8560270c3ea5fe816d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/61e2b28b689421a87fb7b72a673def040fb5d09e354bed8560270c3ea5fe816d.gz"
+    },
+    "publication_integration/mediator/ROOT_CANONICAL_REVIEW.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/ROOT_CANONICAL_REVIEW.json",
+      "bytes": 57042,
+      "sha256": "077d1c377ee2838748f40b3a86fd823f1e50f46c468c0ff79f46460869853c0e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/077d1c377ee2838748f40b3a86fd823f1e50f46c468c0ff79f46460869853c0e.gz"
+    },
+    "publication_integration/mediator/SOURCE_VERIFICATION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/SOURCE_VERIFICATION.json",
+      "bytes": 1445,
+      "sha256": "e431a72bd89acdaba304883b65c0c9b1d893cd3fd34b16e26a59f90aa8904ec8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e431a72bd89acdaba304883b65c0c9b1d893cd3fd34b16e26a59f90aa8904ec8.gz"
+    },
+    "publication_integration/mediator/changed_evidence/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/changed_evidence/EXECUTION.json",
+      "bytes": 1556,
+      "sha256": "ad980783e1a5d60176390c2d19461cd1747a445cd3f63a6a78118aac2b13ab7f",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/ad980783e1a5d60176390c2d19461cd1747a445cd3f63a6a78118aac2b13ab7f.gz"
+    },
+    "publication_integration/mediator/changed_evidence/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/changed_evidence/executed_source.py",
+      "bytes": 7903,
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz"
+    },
+    "publication_integration/mediator/changed_evidence/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/changed_evidence/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/changed_evidence/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/changed_evidence/stdout",
+      "bytes": 204,
+      "sha256": "9c8bd3d39a14cda6d1044761135a9623f514fff8138844277a550a6ddf08e77d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/9c8bd3d39a14cda6d1044761135a9623f514fff8138844277a550a6ddf08e77d.gz"
+    },
+    "publication_integration/mediator/mutation_actual_body/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_body/EXECUTION.json",
+      "bytes": 1814,
+      "sha256": "075dd6ced68c24763d7903bcc8e97511f58549157202105e1802ca8065746cce",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/075dd6ced68c24763d7903bcc8e97511f58549157202105e1802ca8065746cce.gz"
+    },
+    "publication_integration/mediator/mutation_actual_body/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_body/executed_source.py",
+      "bytes": 19176,
+      "sha256": "59c8eb39190ad2afaa98ff5b104192bbe811e17a6d2d388e8b0c9c8ab2fc7ab8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/59c8eb39190ad2afaa98ff5b104192bbe811e17a6d2d388e8b0c9c8ab2fc7ab8.gz"
+    },
+    "publication_integration/mediator/mutation_actual_body/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_body/stderr",
+      "bytes": 1017,
+      "sha256": "1eda80e59d3d9f1fea022ce9c3bc807a2756e3aa67b7131b45a2c027b0fa3dff",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/1eda80e59d3d9f1fea022ce9c3bc807a2756e3aa67b7131b45a2c027b0fa3dff.gz"
+    },
+    "publication_integration/mediator/mutation_actual_body/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_body/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_actual_note/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_note/EXECUTION.json",
+      "bytes": 1814,
+      "sha256": "0fa3144ccce95fbc75141df0db39165e842694e848d4c197e0d5430cb2fa5437",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/0fa3144ccce95fbc75141df0db39165e842694e848d4c197e0d5430cb2fa5437.gz"
+    },
+    "publication_integration/mediator/mutation_actual_note/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_note/executed_source.py",
+      "bytes": 19176,
+      "sha256": "7515816166f102b1ac1c571bb0fb066bf3af110999645f1551fb7d7d66756e42",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/7515816166f102b1ac1c571bb0fb066bf3af110999645f1551fb7d7d66756e42.gz"
+    },
+    "publication_integration/mediator/mutation_actual_note/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_note/stderr",
+      "bytes": 1135,
+      "sha256": "103bb62dd85d23f67269f08798bcdc988c9a0d5a2aac35db3b697b8c384ed37d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/103bb62dd85d23f67269f08798bcdc988c9a0d5a2aac35db3b697b8c384ed37d.gz"
+    },
+    "publication_integration/mediator/mutation_actual_note/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_note/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_actual_parent/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_parent/EXECUTION.json",
+      "bytes": 1825,
+      "sha256": "46f3f2883f5dfb214cacefea337757558ff81e4ba6e7701f27377b8cc66619ce",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/46f3f2883f5dfb214cacefea337757558ff81e4ba6e7701f27377b8cc66619ce.gz"
+    },
+    "publication_integration/mediator/mutation_actual_parent/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_parent/executed_source.py",
+      "bytes": 19176,
+      "sha256": "47c1bafc9bf4228febcb814c0ecd1d159b3c9088ac022dd4ab75cdc6270ff895",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/47c1bafc9bf4228febcb814c0ecd1d159b3c9088ac022dd4ab75cdc6270ff895.gz"
+    },
+    "publication_integration/mediator/mutation_actual_parent/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_parent/stderr",
+      "bytes": 1101,
+      "sha256": "740d97eb68ce997afb91442e38fba6605240b2753afaa3d50f001ad107c4e86d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/740d97eb68ce997afb91442e38fba6605240b2753afaa3d50f001ad107c4e86d.gz"
+    },
+    "publication_integration/mediator/mutation_actual_parent/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_actual_parent/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_alternative_dependence/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_alternative_dependence/EXECUTION.json",
+      "bytes": 1869,
+      "sha256": "b12eab39eeb66c97a89eac64e52482139a8dd2afa384af4fd75d9d611999c4d2",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b12eab39eeb66c97a89eac64e52482139a8dd2afa384af4fd75d9d611999c4d2.gz"
+    },
+    "publication_integration/mediator/mutation_alternative_dependence/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_alternative_dependence/executed_source.py",
+      "bytes": 19176,
+      "sha256": "cbe20458500f1ded43a55ba84cfa368bb3f771586502ea2072c88e809298f0e3",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/cbe20458500f1ded43a55ba84cfa368bb3f771586502ea2072c88e809298f0e3.gz"
+    },
+    "publication_integration/mediator/mutation_alternative_dependence/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_alternative_dependence/stderr",
+      "bytes": 1077,
+      "sha256": "a066bb3b0cdcb9fdbda9cdb7bfbd96ea5c4315918335cb64dd1f8a07f70b1207",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/a066bb3b0cdcb9fdbda9cdb7bfbd96ea5c4315918335cb64dd1f8a07f70b1207.gz"
+    },
+    "publication_integration/mediator/mutation_alternative_dependence/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_alternative_dependence/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_autonomous_import/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_autonomous_import/EXECUTION.json",
+      "bytes": 1844,
+      "sha256": "58a4ad686eaa0b7098c8159f77fe1cea33581b9cf058da63e51d25b67c8b9312",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/58a4ad686eaa0b7098c8159f77fe1cea33581b9cf058da63e51d25b67c8b9312.gz"
+    },
+    "publication_integration/mediator/mutation_autonomous_import/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_autonomous_import/executed_source.py",
+      "bytes": 19176,
+      "sha256": "78ef4ef9ff3f54185e0e282c236503e9ae96b299639156abef34e4a779fd5dea",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/78ef4ef9ff3f54185e0e282c236503e9ae96b299639156abef34e4a779fd5dea.gz"
+    },
+    "publication_integration/mediator/mutation_autonomous_import/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_autonomous_import/stderr",
+      "bytes": 1080,
+      "sha256": "1496e1fd4078031f6483d3dc3c71f57857e0b7feba6fd20f6bddc9effaccea3a",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/1496e1fd4078031f6483d3dc3c71f57857e0b7feba6fd20f6bddc9effaccea3a.gz"
+    },
+    "publication_integration/mediator/mutation_autonomous_import/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_autonomous_import/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_baseline/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_baseline/EXECUTION.json",
+      "bytes": 1798,
+      "sha256": "f6221a230fade9869e5f029fa17655c0897cef8e1d88bb00c0d09613a157d303",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/f6221a230fade9869e5f029fa17655c0897cef8e1d88bb00c0d09613a157d303.gz"
+    },
+    "publication_integration/mediator/mutation_baseline/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_baseline/executed_source.py",
+      "bytes": 19176,
+      "sha256": "85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd.gz"
+    },
+    "publication_integration/mediator/mutation_baseline/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_baseline/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_baseline/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_baseline/stdout",
+      "bytes": 758,
+      "sha256": "dc87053384356fcedc2fd79a6149103d3f9d7814dcca66d3d122d4e0c65e895f",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc87053384356fcedc2fd79a6149103d3f9d7814dcca66d3d122d4e0c65e895f.gz"
+    },
+    "publication_integration/mediator/mutation_binding_flag/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_binding_flag/EXECUTION.json",
+      "bytes": 1819,
+      "sha256": "7664785a42260c28881139055318dcad817a95d74d192996fc27b5bfc0bef89f",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/7664785a42260c28881139055318dcad817a95d74d192996fc27b5bfc0bef89f.gz"
+    },
+    "publication_integration/mediator/mutation_binding_flag/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_binding_flag/executed_source.py",
+      "bytes": 19176,
+      "sha256": "e17904b07f0b910f27c277643aa0897531592439512bc139e8c72d01a66dc12d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e17904b07f0b910f27c277643aa0897531592439512bc139e8c72d01a66dc12d.gz"
+    },
+    "publication_integration/mediator/mutation_binding_flag/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_binding_flag/stderr",
+      "bytes": 1254,
+      "sha256": "44e7ca5e7bd5f7d4129647da344bcbc0d2404c3a941e67a93dd54f1dd75adc94",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/44e7ca5e7bd5f7d4129647da344bcbc0d2404c3a941e67a93dd54f1dd75adc94.gz"
+    },
+    "publication_integration/mediator/mutation_binding_flag/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_binding_flag/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_dependency_endpoint/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_dependency_endpoint/EXECUTION.json",
+      "bytes": 1854,
+      "sha256": "fe6979d147c8f701f4e3c967d919185ea2fad7ae643fbf59ae1fbf3d79de3763",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/fe6979d147c8f701f4e3c967d919185ea2fad7ae643fbf59ae1fbf3d79de3763.gz"
+    },
+    "publication_integration/mediator/mutation_dependency_endpoint/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_dependency_endpoint/executed_source.py",
+      "bytes": 19176,
+      "sha256": "25679f708dbda79c7d2298a30db97aa0472fb58e93783bec19074427583c7539",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/25679f708dbda79c7d2298a30db97aa0472fb58e93783bec19074427583c7539.gz"
+    },
+    "publication_integration/mediator/mutation_dependency_endpoint/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_dependency_endpoint/stderr",
+      "bytes": 1182,
+      "sha256": "bd112246110c77b72babdc7048d9d913d06e05a09a805b2b3a0fccd3536b7617",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/bd112246110c77b72babdc7048d9d913d06e05a09a805b2b3a0fccd3536b7617.gz"
+    },
+    "publication_integration/mediator/mutation_dependency_endpoint/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_dependency_endpoint/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_geometry_interval/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_geometry_interval/EXECUTION.json",
+      "bytes": 1844,
+      "sha256": "dca826d8e4858a22b87f5ad58c581e69b6bd423ab7497d116ba4623ef609dcc6",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dca826d8e4858a22b87f5ad58c581e69b6bd423ab7497d116ba4623ef609dcc6.gz"
+    },
+    "publication_integration/mediator/mutation_geometry_interval/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_geometry_interval/executed_source.py",
+      "bytes": 19176,
+      "sha256": "dc9e379c74bb3a87aaddde2026360e7351e03b07667eb8d0401f06d43571cc65",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc9e379c74bb3a87aaddde2026360e7351e03b07667eb8d0401f06d43571cc65.gz"
+    },
+    "publication_integration/mediator/mutation_geometry_interval/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_geometry_interval/stderr",
+      "bytes": 1121,
+      "sha256": "d2211e061351f6a768f92effc7e5518df69a1ef85400edd5ee007a26c1bf850f",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d2211e061351f6a768f92effc7e5518df69a1ef85400edd5ee007a26c1bf850f.gz"
+    },
+    "publication_integration/mediator/mutation_geometry_interval/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_geometry_interval/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_invented_execution/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_invented_execution/EXECUTION.json",
+      "bytes": 1849,
+      "sha256": "aa8895032c5d2b01484c10e56b20947c805d7705efa53232a33bcd6b50d5161d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/aa8895032c5d2b01484c10e56b20947c805d7705efa53232a33bcd6b50d5161d.gz"
+    },
+    "publication_integration/mediator/mutation_invented_execution/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_invented_execution/executed_source.py",
+      "bytes": 19176,
+      "sha256": "24ca19d43b1a8e2a5a52ef1da5d816a3b08e21e852fa807a8f4071026b893c48",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/24ca19d43b1a8e2a5a52ef1da5d816a3b08e21e852fa807a8f4071026b893c48.gz"
+    },
+    "publication_integration/mediator/mutation_invented_execution/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_invented_execution/stderr",
+      "bytes": 1066,
+      "sha256": "d3f77e988fcfd571a78163e9fd22ecf793f539ae93c678406570a26670b56aae",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d3f77e988fcfd571a78163e9fd22ecf793f539ae93c678406570a26670b56aae.gz"
+    },
+    "publication_integration/mediator/mutation_invented_execution/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_invented_execution/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_manifest_identity/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_manifest_identity/EXECUTION.json",
+      "bytes": 1845,
+      "sha256": "b8c904841640da563bd60219c0ce21a344bbdf6e3d9e3b2540b3d23037a2fe69",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b8c904841640da563bd60219c0ce21a344bbdf6e3d9e3b2540b3d23037a2fe69.gz"
+    },
+    "publication_integration/mediator/mutation_manifest_identity/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_manifest_identity/executed_source.py",
+      "bytes": 19176,
+      "sha256": "85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd.gz"
+    },
+    "publication_integration/mediator/mutation_manifest_identity/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_manifest_identity/stderr",
+      "bytes": 1017,
+      "sha256": "62a2ef588269f38fafafdc32ad3988283247ccd16f1565880a9db7a5a8f6957f",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/62a2ef588269f38fafafdc32ad3988283247ccd16f1565880a9db7a5a8f6957f.gz"
+    },
+    "publication_integration/mediator/mutation_manifest_identity/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_manifest_identity/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_single_port_interval/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_single_port_interval/EXECUTION.json",
+      "bytes": 1859,
+      "sha256": "422266bc948301fae352f0138b98152a4f7d0a0d25e27bac83b2bfd3479951da",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/422266bc948301fae352f0138b98152a4f7d0a0d25e27bac83b2bfd3479951da.gz"
+    },
+    "publication_integration/mediator/mutation_single_port_interval/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_single_port_interval/executed_source.py",
+      "bytes": 19176,
+      "sha256": "572ed436380487dee868b5afc8fd5d28a9b406d999383a8135904fd3741d1f72",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/572ed436380487dee868b5afc8fd5d28a9b406d999383a8135904fd3741d1f72.gz"
+    },
+    "publication_integration/mediator/mutation_single_port_interval/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_single_port_interval/stderr",
+      "bytes": 1129,
+      "sha256": "611c931f1263463174214292acc51e687aeebaece65f57bd35c02488c20c2115",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/611c931f1263463174214292acc51e687aeebaece65f57bd35c02488c20c2115.gz"
+    },
+    "publication_integration/mediator/mutation_single_port_interval/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_single_port_interval/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_source_identity/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_source_identity/EXECUTION.json",
+      "bytes": 1834,
+      "sha256": "120b225a7b925d96d0fc5a49c047bf1030252d9184f32ac7a29b1193286771bd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/120b225a7b925d96d0fc5a49c047bf1030252d9184f32ac7a29b1193286771bd.gz"
+    },
+    "publication_integration/mediator/mutation_source_identity/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_source_identity/executed_source.py",
+      "bytes": 19176,
+      "sha256": "85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd.gz"
+    },
+    "publication_integration/mediator/mutation_source_identity/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_source_identity/stderr",
+      "bytes": 1175,
+      "sha256": "76a770944a768874e946e774cfd756ac033da2749335053dcecaac94b0cf9581",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/76a770944a768874e946e774cfd756ac033da2749335053dcecaac94b0cf9581.gz"
+    },
+    "publication_integration/mediator/mutation_source_identity/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_source_identity/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/mutation_two_copy_interval/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_two_copy_interval/EXECUTION.json",
+      "bytes": 1844,
+      "sha256": "bf0b2d87451d432d17b7fbe60302ee741519b033f2e0f7eb572c4af941982424",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/bf0b2d87451d432d17b7fbe60302ee741519b033f2e0f7eb572c4af941982424.gz"
+    },
+    "publication_integration/mediator/mutation_two_copy_interval/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_two_copy_interval/executed_source.py",
+      "bytes": 19176,
+      "sha256": "7da0529c8165f00d469b0d8eb24306ce9d15a9e1515046cbfa587f265957a2ec",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/7da0529c8165f00d469b0d8eb24306ce9d15a9e1515046cbfa587f265957a2ec.gz"
+    },
+    "publication_integration/mediator/mutation_two_copy_interval/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_two_copy_interval/stderr",
+      "bytes": 1117,
+      "sha256": "3820b3300fef0ec023e325ef3ab1efdbc2d77efb303f5d68a86f53ff5f855722",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/3820b3300fef0ec023e325ef3ab1efdbc2d77efb303f5d68a86f53ff5f855722.gz"
+    },
+    "publication_integration/mediator/mutation_two_copy_interval/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/mutation_two_copy_interval/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/prepare_mediator_attempt1.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/prepare_mediator_attempt1.py",
+      "bytes": 11466,
+      "sha256": "f4302852ab29ea062efda316c54e27ab5662d4decdf64f1d5304bacc063fdc93",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/f4302852ab29ea062efda316c54e27ab5662d4decdf64f1d5304bacc063fdc93.gz"
+    },
+    "publication_integration/mediator/python_compile/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/python_compile/EXECUTION.json",
+      "bytes": 1450,
+      "sha256": "713a0f54722f68067804a982f5f31bf400a753a65c5f6c5d8214f774ce698623",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/713a0f54722f68067804a982f5f31bf400a753a65c5f6c5d8214f774ce698623.gz"
+    },
+    "publication_integration/mediator/python_compile/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/python_compile/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/python_compile/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/python_compile/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/verify_ignored_graph/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/verify_ignored_graph/EXECUTION.json",
+      "bytes": 1257,
+      "sha256": "7f0dbdb8e3c0524b644e55ba9879ff8a005e3643846bf436441bc1b9091efa95",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/7f0dbdb8e3c0524b644e55ba9879ff8a005e3643846bf436441bc1b9091efa95.gz"
+    },
+    "publication_integration/mediator/verify_ignored_graph/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/verify_ignored_graph/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/verify_ignored_graph/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/verify_ignored_graph/stdout",
+      "bytes": 86,
+      "sha256": "114559afe3910891e8c4b6e838f27c916296046875a6b244402ef0b2a8296b19",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/114559afe3910891e8c4b6e838f27c916296046875a6b244402ef0b2a8296b19.gz"
+    },
+    "publication_integration/mediator/vocab_fix/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_fix/EXECUTION.json",
+      "bytes": 3411,
+      "sha256": "0c36aa1e668750ef460d0a2dca3c3f58b55607d546e886693c83454ffb33c0cb",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/0c36aa1e668750ef460d0a2dca3c3f58b55607d546e886693c83454ffb33c0cb.gz"
+    },
+    "publication_integration/mediator/vocab_fix/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_fix/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/mediator/vocab_fix/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_fix/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/vocab_fix/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_fix/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/mediator/vocab_integration_fix/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_fix/EXECUTION.json",
+      "bytes": 1573,
+      "sha256": "b401d09b314fed1dcb9b74f9c029459342f88eb0fa9fa6ba5d48b9baee5049c4",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b401d09b314fed1dcb9b74f9c029459342f88eb0fa9fa6ba5d48b9baee5049c4.gz"
+    },
+    "publication_integration/mediator/vocab_integration_fix/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_fix/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/mediator/vocab_integration_fix/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_fix/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/vocab_integration_fix/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_fix/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/mediator/vocab_integration_report/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_report/EXECUTION.json",
+      "bytes": 1584,
+      "sha256": "810ea65a393b54181cb56cb7b33de792376d2075ff39f8012ae926389addee91",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/810ea65a393b54181cb56cb7b33de792376d2075ff39f8012ae926389addee91.gz"
+    },
+    "publication_integration/mediator/vocab_integration_report/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_report/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/mediator/vocab_integration_report/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_report/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/vocab_integration_report/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_integration_report/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/mediator/vocab_report/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_report/EXECUTION.json",
+      "bytes": 3425,
+      "sha256": "3dc7a21f82e3364814496549c30dcb43639e84e07a12f8db82bd2287a27197fb",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/3dc7a21f82e3364814496549c30dcb43639e84e07a12f8db82bd2287a27197fb.gz"
+    },
+    "publication_integration/mediator/vocab_report/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_report/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/mediator/vocab_report/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_report/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/vocab_report/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_report/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/mediator/write_graph_manifest/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/write_graph_manifest/EXECUTION.json",
+      "bytes": 1499,
+      "sha256": "71a8a5f6ef194da89bc221d1a88c0e068b309ba6bce692c7a3e5c434578612f1",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/71a8a5f6ef194da89bc221d1a88c0e068b309ba6bce692c7a3e5c434578612f1.gz"
+    },
+    "publication_integration/mediator/write_graph_manifest/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/write_graph_manifest/executed_source.py",
+      "bytes": 2049,
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.gz"
+    },
+    "publication_integration/mediator/write_graph_manifest/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/write_graph_manifest/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/write_graph_manifest/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/write_graph_manifest/stdout",
+      "bytes": 77,
+      "sha256": "cdcf0587058971310f345e89ac57cc052c2fd60022103714da633cd38c386011",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/cdcf0587058971310f345e89ac57cc052c2fd60022103714da633cd38c386011.gz"
+    },
+    "publication_integration/mediator_common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator_common.py",
+      "bytes": 1280,
+      "sha256": "371043b3c0ad48afccaf12cddadc89771a5d757b1909e384635c47806f6ec6d4",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/371043b3c0ad48afccaf12cddadc89771a5d757b1909e384635c47806f6ec6d4.gz"
+    },
+    "publication_integration/prepare_mediator.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/prepare_mediator.py",
+      "bytes": 11642,
+      "sha256": "84af08ba5d98b4b13052fd264a90633c84e3072665740ca590677ee0a119202d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/84af08ba5d98b4b13052fd264a90633c84e3072665740ca590677ee0a119202d.gz"
+    },
+    "publication_integration/run_mediator_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/run_mediator_graph.py",
+      "bytes": 181,
+      "sha256": "2ad1a54a7f0f337948a6638b5a363739b761e2f9208142c184fde80c3722ae10",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/2ad1a54a7f0f337948a6638b5a363739b761e2f9208142c184fde80c3722ae10.gz"
+    },
+    "publication_integration/verify_mediator_sources.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/verify_mediator_sources.py",
+      "bytes": 6448,
+      "sha256": "d95d8490664aa8d7156b47d04b163833be3a7fc600bc30c497137a99150bdb14",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d95d8490664aa8d7156b47d04b163833be3a7fc600bc30c497137a99150bdb14.gz"
+    },
+    "runs/mediator_cache_1345/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_1345/EXECUTION.json",
+      "bytes": 1444,
+      "sha256": "ca24e760b8e230258095d6aa9c46e81923d4cb10f7c4b4626718282b764a658a",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/ca24e760b8e230258095d6aa9c46e81923d4cb10f7c4b4626718282b764a658a.gz"
+    },
+    "runs/mediator_cache_1345/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_1345/executed_source.py",
+      "bytes": 1632,
+      "sha256": "b3016f7a1c5f4c1acb9772acbdc572c03526a219d12f4e1e5daab392298d6998",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b3016f7a1c5f4c1acb9772acbdc572c03526a219d12f4e1e5daab392298d6998.gz"
+    },
+    "runs/mediator_cache_1345/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_1345/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_cache_1345/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_1345/stdout",
+      "bytes": 802,
+      "sha256": "25e7369d17986d9cb7f88d1d6f3abd98e902445ee2a7b5176f71630ff29f50dd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/25e7369d17986d9cb7f88d1d6f3abd98e902445ee2a7b5176f71630ff29f50dd.gz"
+    },
+    "runs/mediator_fetch_1316/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_fetch_1316/EXECUTION.json",
+      "bytes": 1167,
+      "sha256": "a18b5c5fd512479443f133c8adfc084dba1fd04a7dc938f8103f5736eb0d97e9",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/a18b5c5fd512479443f133c8adfc084dba1fd04a7dc938f8103f5736eb0d97e9.gz"
+    },
+    "runs/mediator_fetch_1316/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_fetch_1316/stderr",
+      "bytes": 452,
+      "sha256": "1ab5b428c65b115d955c0d2c0c3851830af20055baec43d72e8d1450a7785bfd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/1ab5b428c65b115d955c0d2c0c3851830af20055baec43d72e8d1450a7785bfd.gz"
+    },
+    "runs/mediator_fetch_1316/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_fetch_1316/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_graph_1346/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_1346/EXECUTION.json",
+      "bytes": 1434,
+      "sha256": "00a5d6eeeface92e9d627ff9075efd0a0e27f41806b3da89fc518b98331ebd68",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/00a5d6eeeface92e9d627ff9075efd0a0e27f41806b3da89fc518b98331ebd68.gz"
+    },
+    "runs/mediator_graph_1346/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_1346/executed_source.py",
+      "bytes": 181,
+      "sha256": "2ad1a54a7f0f337948a6638b5a363739b761e2f9208142c184fde80c3722ae10",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/2ad1a54a7f0f337948a6638b5a363739b761e2f9208142c184fde80c3722ae10.gz"
+    },
+    "runs/mediator_graph_1346/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_1346/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_graph_1346/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_1346/stdout",
+      "bytes": 281,
+      "sha256": "d8534acd5169e4b00c0fc5c8de5af97c7d2754aa3bf7026b0629bcac425ddd06",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d8534acd5169e4b00c0fc5c8de5af97c7d2754aa3bf7026b0629bcac425ddd06.gz"
+    },
+    "runs/mediator_graph_check_1352/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_check_1352/EXECUTION.json",
+      "bytes": 1453,
+      "sha256": "b57e30752eda651633c83ac5949fc58f5415bf1e09776df44e3cae36bbe2b673",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b57e30752eda651633c83ac5949fc58f5415bf1e09776df44e3cae36bbe2b673.gz"
+    },
+    "runs/mediator_graph_check_1352/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_check_1352/executed_source.py",
+      "bytes": 1903,
+      "sha256": "bb2838ddcf4cb0ad8c2e7ecd6f37c7fbb977c1d11d2e007fc79f57404f675e3e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/bb2838ddcf4cb0ad8c2e7ecd6f37c7fbb977c1d11d2e007fc79f57404f675e3e.gz"
+    },
+    "runs/mediator_graph_check_1352/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_check_1352/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_graph_check_1352/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_graph_check_1352/stdout",
+      "bytes": 2086,
+      "sha256": "b67161f0d0f05424c37dd5c9d7093b4593bef1d2f257fc23d2500f618ec5f904",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b67161f0d0f05424c37dd5c9d7093b4593bef1d2f257fc23d2500f618ec5f904.gz"
+    },
+    "runs/mediator_install_1345/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_install_1345/EXECUTION.json",
+      "bytes": 1435,
+      "sha256": "f04c3ef8beba8334a7c9df8bc8c3011e4282707a86896707c5489f6e4cad6b8b",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/f04c3ef8beba8334a7c9df8bc8c3011e4282707a86896707c5489f6e4cad6b8b.gz"
+    },
+    "runs/mediator_install_1345/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_install_1345/executed_source.py",
+      "bytes": 2236,
+      "sha256": "fe5319f5062e990c04275852b5fbe5ef5c2d4a838b7466a2c305671822820772",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/fe5319f5062e990c04275852b5fbe5ef5c2d4a838b7466a2c305671822820772.gz"
+    },
+    "runs/mediator_install_1345/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_install_1345/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_install_1345/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_install_1345/stdout",
+      "bytes": 272,
+      "sha256": "40fcc47bdaa3959ec66afc3ea451fab57cccddc1b1da5abc04f576c30877cd00",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/40fcc47bdaa3959ec66afc3ea451fab57cccddc1b1da5abc04f576c30877cd00.gz"
+    },
+    "runs/mediator_prepare_1340/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_1340/EXECUTION.json",
+      "bytes": 1436,
+      "sha256": "c8e23fd7d5d399058cd723cc24b4dd2fbc5f13ec6a8ee8e27913bbf603ab3c13",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/c8e23fd7d5d399058cd723cc24b4dd2fbc5f13ec6a8ee8e27913bbf603ab3c13.gz"
+    },
+    "runs/mediator_prepare_1340/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_1340/executed_source.py",
+      "bytes": 11466,
+      "sha256": "f4302852ab29ea062efda316c54e27ab5662d4decdf64f1d5304bacc063fdc93",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/f4302852ab29ea062efda316c54e27ab5662d4decdf64f1d5304bacc063fdc93.gz"
+    },
+    "runs/mediator_prepare_1340/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_1340/stderr",
+      "bytes": 485,
+      "sha256": "3218fa9e39b564aced0da06acdb9ac7e3c5ec17bd210b8ac219fdcbc20e89be8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/3218fa9e39b564aced0da06acdb9ac7e3c5ec17bd210b8ac219fdcbc20e89be8.gz"
+    },
+    "runs/mediator_prepare_1340/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_1340/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_prepare_retry_1342/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_retry_1342/EXECUTION.json",
+      "bytes": 1447,
+      "sha256": "2dccd37ae7b09a67ead6d75376a7863e00f65e1f059bf809c602e29bda48dfcc",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/2dccd37ae7b09a67ead6d75376a7863e00f65e1f059bf809c602e29bda48dfcc.gz"
+    },
+    "runs/mediator_prepare_retry_1342/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_retry_1342/executed_source.py",
+      "bytes": 11642,
+      "sha256": "84af08ba5d98b4b13052fd264a90633c84e3072665740ca590677ee0a119202d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/84af08ba5d98b4b13052fd264a90633c84e3072665740ca590677ee0a119202d.gz"
+    },
+    "runs/mediator_prepare_retry_1342/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_retry_1342/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_prepare_retry_1342/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_prepare_retry_1342/stdout",
+      "bytes": 1231,
+      "sha256": "3d36222f6443e9a0870c7f81dd7e6d54e7cf8827891a63cbbf3e7d862927d904",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/3d36222f6443e9a0870c7f81dd7e6d54e7cf8827891a63cbbf3e7d862927d904.gz"
+    },
+    "runs/mediator_publication_close_1335/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_publication_close_1335/EXECUTION.json",
+      "bytes": 1466,
+      "sha256": "08a1662e37fac41317c93b0e5de7798a22cf01a29aa5caeb0bd56068cbcd056d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/08a1662e37fac41317c93b0e5de7798a22cf01a29aa5caeb0bd56068cbcd056d.gz"
+    },
+    "runs/mediator_publication_close_1335/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_publication_close_1335/executed_source.py",
+      "bytes": 4305,
+      "sha256": "3eb8b524e35c1b3ecf687230f355df425a4f93ec0ac3b660044f903ee59195c4",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/3eb8b524e35c1b3ecf687230f355df425a4f93ec0ac3b660044f903ee59195c4.gz"
+    },
+    "runs/mediator_publication_close_1335/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_publication_close_1335/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_publication_close_1335/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_publication_close_1335/stdout",
+      "bytes": 305,
+      "sha256": "b9c09f70e07abb98395b4397846879c2a852f994b7ea66a46bf4ea60f7705975",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b9c09f70e07abb98395b4397846879c2a852f994b7ea66a46bf4ea60f7705975.gz"
+    },
+    "runs/mediator_sources_1349/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_sources_1349/EXECUTION.json",
+      "bytes": 1449,
+      "sha256": "7747e0dc0f67125b2fe37478d98730850d5f1990e06f8749ba3a83b7fb5da181",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/7747e0dc0f67125b2fe37478d98730850d5f1990e06f8749ba3a83b7fb5da181.gz"
+    },
+    "runs/mediator_sources_1349/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_sources_1349/executed_source.py",
+      "bytes": 6448,
+      "sha256": "d95d8490664aa8d7156b47d04b163833be3a7fc600bc30c497137a99150bdb14",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d95d8490664aa8d7156b47d04b163833be3a7fc600bc30c497137a99150bdb14.gz"
+    },
+    "runs/mediator_sources_1349/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_sources_1349/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_sources_1349/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_sources_1349/stdout",
+      "bytes": 1323,
+      "sha256": "d4fc5125e7077c7d4a5d98041a1531a77090105c72bc36185e0b91f47a853d56",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d4fc5125e7077c7d4a5d98041a1531a77090105c72bc36185e0b91f47a853d56.gz"
+    },
+    "publication_integration/finish_mediator_recovery.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finish_mediator_recovery.py",
+      "bytes": 5104,
+      "sha256": "484267effe5d77b840f059e57d311bfcce2355659a8831e724502d25fdb3b4bc",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/484267effe5d77b840f059e57d311bfcce2355659a8831e724502d25fdb3b4bc.gz"
+    },
+    "before_final_formatting/publication_integration/mediator/CANONICAL_EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/CANONICAL_EXECUTION.json",
+      "bytes": 2101,
+      "sha256": "9f4bd7264b97245d70969e016d363d765c4de622eec1e566486c51bcba0ed1a1",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/9f4bd7264b97245d70969e016d363d765c4de622eec1e566486c51bcba0ed1a1.gz"
+    },
+    "before_final_formatting/publication_integration/mediator/CANONICAL_RESULT.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/CANONICAL_RESULT.json",
+      "bytes": 1184,
+      "sha256": "f12522d9cc228108cf8d733d9937990020e90b5856a7105492bb821f6fe93b5e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/f12522d9cc228108cf8d733d9937990020e90b5856a7105492bb821f6fe93b5e.gz"
+    },
+    "before_final_formatting/publication_integration/mediator/PREPARED.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/PREPARED.json",
+      "bytes": 57130,
+      "sha256": "34ee44f8bbc798de84aa9582596ed17d1c9f4cea72f7f75c5361ef5141949044",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/34ee44f8bbc798de84aa9582596ed17d1c9f4cea72f7f75c5361ef5141949044.gz"
+    },
+    "publication_integration/mediator/WHITESPACE_REPAIR.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/WHITESPACE_REPAIR.json",
+      "bytes": 2057,
+      "sha256": "07f8fb95d984c7515843e0d6fbeea1c690e2eba7c3077de0a6237b106532c874",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/07f8fb95d984c7515843e0d6fbeea1c690e2eba7c3077de0a6237b106532c874.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/CANONICAL_EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/CANONICAL_EXECUTION.json",
+      "bytes": 2101,
+      "sha256": "9f4bd7264b97245d70969e016d363d765c4de622eec1e566486c51bcba0ed1a1",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/9f4bd7264b97245d70969e016d363d765c4de622eec1e566486c51bcba0ed1a1.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/CANONICAL_RESULT.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/CANONICAL_RESULT.json",
+      "bytes": 1184,
+      "sha256": "f12522d9cc228108cf8d733d9937990020e90b5856a7105492bb821f6fe93b5e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/f12522d9cc228108cf8d733d9937990020e90b5856a7105492bb821f6fe93b5e.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/FINAL_VERIFICATION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/FINAL_VERIFICATION.json",
+      "bytes": 5437,
+      "sha256": "98ac28d65c34c2cd447f43658a5430190c927b25bd56435c4218d1eedb5423fb",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/98ac28d65c34c2cd447f43658a5430190c927b25bd56435c4218d1eedb5423fb.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/INTEGRATION_REVIEW.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/INTEGRATION_REVIEW.md",
+      "bytes": 5212,
+      "sha256": "0d1bb87f284c8449052b3fb515d12366f08a96f99e6c1ae5a4b3592ce2ac0bc8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/0d1bb87f284c8449052b3fb515d12366f08a96f99e6c1ae5a4b3592ce2ac0bc8.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/PREPARED.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/PREPARED.json",
+      "bytes": 57130,
+      "sha256": "34ee44f8bbc798de84aa9582596ed17d1c9f4cea72f7f75c5361ef5141949044",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/34ee44f8bbc798de84aa9582596ed17d1c9f4cea72f7f75c5361ef5141949044.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/PUBLICATION_EVIDENCE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/PUBLICATION_EVIDENCE.json",
+      "bytes": 102862,
+      "sha256": "1462fef772f025a0c948ed746f79a22b6b54498cbc70abc9e0c7b9a4c38c5330",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/1462fef772f025a0c948ed746f79a22b6b54498cbc70abc9e0c7b9a4c38c5330.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/SOURCE_VERIFICATION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/SOURCE_VERIFICATION.json",
+      "bytes": 1445,
+      "sha256": "e431a72bd89acdaba304883b65c0c9b1d893cd3fd34b16e26a59f90aa8904ec8",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e431a72bd89acdaba304883b65c0c9b1d893cd3fd34b16e26a59f90aa8904ec8.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/gitattributes": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/gitattributes",
+      "bytes": 265,
+      "sha256": "530569057c71e4b1da0803f7b8e7c71a7e84ea89e6142646569d09a2012ff075",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/530569057c71e4b1da0803f7b8e7c71a7e84ea89e6142646569d09a2012ff075.gz"
+    },
+    "publication_integration/mediator/before_whitespace_repair/primary.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/primary.py",
+      "bytes": 19176,
+      "sha256": "85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd.gz"
+    },
+    "publication_integration/mediator/compile_after_whitespace/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/compile_after_whitespace/EXECUTION.json",
+      "bytes": 1376,
+      "sha256": "5c45d14380531d250935a4d959f655b8bbc7e64a377a3347f3c45d09612f19e2",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/5c45d14380531d250935a4d959f655b8bbc7e64a377a3347f3c45d09612f19e2.gz"
+    },
+    "publication_integration/mediator/compile_after_whitespace/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/compile_after_whitespace/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/compile_after_whitespace/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/compile_after_whitespace/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_fix/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_fix/EXECUTION.json",
+      "bytes": 1567,
+      "sha256": "ff839af7654a60ae337e354c447e401cb4d0fc03b30fc2d039d225c708dec233",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/ff839af7654a60ae337e354c447e401cb4d0fc03b30fc2d039d225c708dec233.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_fix/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_fix/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_fix/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_fix/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_fix/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_fix/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_report/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_report/EXECUTION.json",
+      "bytes": 1581,
+      "sha256": "1c92c35833cb90c285d51b6587efbe04a98ba6be2462ac0e964c1d8eae17eb76",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/1c92c35833cb90c285d51b6587efbe04a98ba6be2462ac0e964c1d8eae17eb76.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_report/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_report/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_report/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_report/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/mediator/vocab_recovery_report/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/vocab_recovery_report/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/repair_mediator_whitespace.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/repair_mediator_whitespace.py",
+      "bytes": 2454,
+      "sha256": "2e300a812d166d22f1a6f9a5619722ecfc92f511b13123171832a426f4b9cd7e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/2e300a812d166d22f1a6f9a5619722ecfc92f511b13123171832a426f4b9cd7e.gz"
+    },
+    "run.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.gz"
+    },
+    "runs/mediator_cache_refresh_1353/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_refresh_1353/EXECUTION.json",
+      "bytes": 1459,
+      "sha256": "c1def33ae32fcf659d479c16f1d5fe47ddd1b80c448bef76ec62836540ad73fc",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/c1def33ae32fcf659d479c16f1d5fe47ddd1b80c448bef76ec62836540ad73fc.gz"
+    },
+    "runs/mediator_cache_refresh_1353/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_refresh_1353/executed_source.py",
+      "bytes": 1632,
+      "sha256": "b3016f7a1c5f4c1acb9772acbdc572c03526a219d12f4e1e5daab392298d6998",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/b3016f7a1c5f4c1acb9772acbdc572c03526a219d12f4e1e5daab392298d6998.gz"
+    },
+    "runs/mediator_cache_refresh_1353/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_refresh_1353/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_cache_refresh_1353/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_cache_refresh_1353/stdout",
+      "bytes": 802,
+      "sha256": "04e4f27da3e8f69fe446ab7723d66c340eeb7cf55b4e19c0733171ee68bbdd5d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/04e4f27da3e8f69fe446ab7723d66c340eeb7cf55b4e19c0733171ee68bbdd5d.gz"
+    },
+    "runs/mediator_finish_1351/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_finish_1351/EXECUTION.json",
+      "bytes": 1209,
+      "sha256": "81c466c066653974b8d599e1927dade7d5a87689db92857c5de9461789f8bde5",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/81c466c066653974b8d599e1927dade7d5a87689db92857c5de9461789f8bde5.gz"
+    },
+    "runs/mediator_finish_1351/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_finish_1351/stderr",
+      "bytes": 983,
+      "sha256": "32d93f1ee88210f1e2253b1fd9452b6bfdb4cb49b3aae809931529dd6ba2fa09",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/32d93f1ee88210f1e2253b1fd9452b6bfdb4cb49b3aae809931529dd6ba2fa09.gz"
+    },
+    "runs/mediator_finish_1351/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_finish_1351/stdout",
+      "bytes": 6366,
+      "sha256": "39757733cdb672f596c63439440a2634bd4f356b508a6c79fd4de59739c7884d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/39757733cdb672f596c63439440a2634bd4f356b508a6c79fd4de59739c7884d.gz"
+    },
+    "runs/mediator_whitespace_1353/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_whitespace_1353/EXECUTION.json",
+      "bytes": 1462,
+      "sha256": "8ce01ba48f3945ef289d65b32ca006756b9642ded9b1306411de51436143b296",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/8ce01ba48f3945ef289d65b32ca006756b9642ded9b1306411de51436143b296.gz"
+    },
+    "runs/mediator_whitespace_1353/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_whitespace_1353/executed_source.py",
+      "bytes": 2454,
+      "sha256": "2e300a812d166d22f1a6f9a5619722ecfc92f511b13123171832a426f4b9cd7e",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/2e300a812d166d22f1a6f9a5619722ecfc92f511b13123171832a426f4b9cd7e.gz"
+    },
+    "runs/mediator_whitespace_1353/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_whitespace_1353/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/mediator_whitespace_1353/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_whitespace_1353/stdout",
+      "bytes": 1905,
+      "sha256": "6f861dc1b83484ad102ad263ba5af31ababb3e298d01980b985dca4949ac495d",
+      "stored_path": ".claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/publication_archive/6f861dc1b83484ad102ad263ba5af31ababb3e298d01980b985dca4949ac495d.gz"
+    }
+  },
+  "scope": "Actual metadata/source/provenance checks. Scientific arguments and reports are already preserved in the note and source archive. No recursive publication archives. Complete generated graph stays in local recovery evidence; its checking recipe/result are included.",
+  "final_formatting_utc": "2026-10-15T13:51:07.291516+00:00"
+}

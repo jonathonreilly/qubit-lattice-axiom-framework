@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/nearest_neighbor_shared_mediator_programming_2026_10_15.py
+runner_sha256: 19ffa1c0e18cba712c8a804f6a4bb92b0fc7cafc7043fad3eb39dd8d90eb3f1d
+input_fingerprint_sha256: 1957796b458313e5ade961b0e0c95b26960b08e77e087cab467ba5852f56fa5b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{"historical_runs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "Exact source and package integrity only; no mathematical or physical verification."}
+per_element: exact sampled-program proof sources checked as bytes; scientific formulas are not executed
+per_site: literal geometry source identities checked; no lattice adjacency analysis is rerun
+per_mode: the admitted N_X=1 and full auxiliary output contracts are source claims, not simulated here
+per_block: both independent proof bodies and their actual source-review receipts are integrity inputs
+lattice_wide: this runner establishes source closure only and supplies no native realization or audit status
+
+----- stderr -----
+

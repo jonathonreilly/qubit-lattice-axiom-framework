@@ -1,0 +1,75 @@
+{
+  "captured_utc": "2026-10-15T11:12:26.363200+00:00",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "snapshot": "sources/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "sources/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "snapshot": "sources/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_autonomous_preparation_candidate/DERIVATION.md",
+      "snapshot": "sources/autonomous_preparation_DERIVATION.md",
+      "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7",
+      "bytes": 31689,
+      "lines": 288
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "snapshot": "sources/multi_port_THEOREM.md",
+      "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755",
+      "bytes": 32493,
+      "lines": 323
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_preparation_root_review/LOCAL_IMPLEMENTATION_ROUTE_NOTE.md",
+      "snapshot": "sources/LOCAL_IMPLEMENTATION_ROUTE_NOTE.md",
+      "sha256": "3033aa5820756231083fdb09a53931f6ae3c9e87b27c242719f59bb7088fce48",
+      "bytes": 2989,
+      "lines": 48
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "snapshot": "sources/physics_loop_SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md",
+      "snapshot": "sources/physics_loop_references_DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+      "snapshot": "sources/physics_loop_references_CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+      "snapshot": "sources/physics_loop_references_DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "sealed_utc": "2026-10-15T13:12:07.714243+00:00",
+  "status": "Root conditional source acceptance for milestone review; not audit",
+  "files": [
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 4763,
+      "sha256": "374139d56c7217ab52c59b1f94fcec8808fc29a1753fadc2428bf39de1009ec4"
+    },
+    {
+      "path": "CANDIDATE_SOURCE_CLOSURE.json",
+      "bytes": 3710,
+      "sha256": "62b75aefa40504e9ff46ba5ab7f9a3809577b0731e0057d44536913ea019bbbd"
+    },
+    {
+      "path": "FINAL_DELTA.diff",
+      "bytes": 5630,
+      "sha256": "e8c5b5d7cb1b80a6cd21994920c36bd4612d977de9b29f36db24154ad85623b6"
+    },
+    {
+      "path": "PRELIMINARY_ANALYTIC_READ.md",
+      "bytes": 4417,
+      "sha256": "2d8880c94d8f1fcfd8c3e656d2d07a55e5111622474a44f6f5d197411e8f2ea5"
+    },
+    {
+      "path": "READ_VERSION_6f2b94ba02ad637659561b1e24bf5f9c9b2bf9a1f8ccf79eba4d0dd6bba6945e.md",
+      "bytes": 26152,
+      "sha256": "6f2b94ba02ad637659561b1e24bf5f9c9b2bf9a1f8ccf79eba4d0dd6bba6945e"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 3799,
+      "sha256": "924a271820504b573056f9cc2ea6d2c1f3f42bf354fd0a7848f49b7b89db24db"
+    },
+    {
+      "path": "close_candidate.py",
+      "bytes": 4334,
+      "sha256": "f12bc74c5014d95392be29ca7d819a42971c5935c41831f9b67c68c0e64db8bd"
+    },
+    {
+      "path": "close_review.py",
+      "bytes": 3475,
+      "sha256": "0d0b0a9c58dfe4ffa98ee5647848b7ce5d024287f01789482d2b65df399f1c47"
+    }
+  ]
+}

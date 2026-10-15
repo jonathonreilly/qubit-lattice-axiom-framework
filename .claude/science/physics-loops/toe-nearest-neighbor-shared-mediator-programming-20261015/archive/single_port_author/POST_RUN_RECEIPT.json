@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-15T12:20:48.657773+00:00",
+  "status": "Retrospective receipt created after the run, not a pre-execution source receipt.",
+  "preexecution_seal": "PREEXEC_FREEZE.json",
+  "recovered_preexecution_derivation": {
+    "path": "PREEXEC_DERIVATION_RECOVERED.md",
+    "bytes": 23925,
+    "sha256": "c3578a5f0c1f14f7f001a13b2b960271cb8f41af6cd8fd96d4b719db7ba355fc",
+    "method": "After execution, reversed the documented prose changes and matched the complete byte hash in the actual pre-execution seal."
+  },
+  "scientific_fixture": {
+    "invocations": 1,
+    "source": "exact_fixture.py",
+    "source_sha256": "aec83fb3d954529e5c5f9a3251aa381e10989fcb42104af3fd99c13a7c8f3a17",
+    "result": "EXACT_RESULT.json",
+    "result_sha256": "b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f",
+    "stdout_stderr": "EXECUTION.log"
+  },
+  "additional_geometry_analysis": {
+    "source": "inventory_recorded_adjacencies.py",
+    "source_sha256": "bd71c94302c245df43e99fd85427f6a068feeef3ffa3d1bbb3461437df4aa2a6",
+    "raw_output": "ISOLATION_ADJACENCY_INVENTORY.raw.json",
+    "raw_output_sha256": "a2212ff993b436308c5f11b49c6887305298644161a4879f43c9023e85ba6511",
+    "metadata_corrected_output": "ISOLATION_ADJACENCY_INVENTORY.json",
+    "disclosure": "Additional geometry analysis of saved fixture coordinates, requested after execution. Excluded from the predeclared159 checks. The original bookkeeping label was too narrow; only descriptive metadata was corrected. No inverse, dynamics or source-response rerun."
+  },
+  "post_run_argument_changes": [
+    "Explicit q_c>=1.",
+    "Explicit sampled scalar-identity term prices in norms, reserve, scalar, moments and calibration.",
+    "Explicit bounded theorem statement.",
+    "Actual selected-fixture evidence and failed mutations.",
+    "Complete isolation set-difference, general norm/reserve budget, and distinct retrospective selected adjacency inventory."
+  ],
+  "complete_argument_diff": "POST_RUN_DERIVATION.diff",
+  "write_scope": "Only this candidate directory; prior candidate and repository files unchanged."
+}

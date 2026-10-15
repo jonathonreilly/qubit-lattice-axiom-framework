@@ -1,0 +1,4 @@
+# Source-only artifact plan
+Inputs are the exact two proof bodies, their reviews/root acceptances, actual selected-fixture sources/results/receipts, and the two canonical geometry sources.
+Build one canonical note with byte-for-byte raw bodies and separately attributed qualifications. Produce exact interval/source/input manifests and an unexecuted source-integrity primary with an explicit timeout. Archive explicit evidence files once; never import or replay scientific code, recursively package prior archives, or turn metadata into mathematics.
+Permitted draft checks are source hashes, full-body/parent intervals, syntax parsing and source freshness with contemporaneous stdout/stderr/source/timestamp receipts. Canonical primary execution, cache, mutation tests, citation graph, combined validation and PR actions remain for root on actual bound files.

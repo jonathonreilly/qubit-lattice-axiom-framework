@@ -1,0 +1,17 @@
+# Failed shortcuts and remaining scope
+
+1. Separate unit-cube cells for every sampled clock position were not applicable: the given data pair has M requests and distant fixed clock positions. This was supplied prior scope evidence, not a newly executed failed construction.
+2. A single shared graph with Pc source and Pe detuning leaves an unwanted n_j Pc coefficient. The exact selected fixture records the nonzero coefficient after removing one mirror. The two-copy sign design repairs this failure on the stated domain.
+3. Discarding the clock onsite counterterms leaves nonconstant shifts. The selected fixture includes a zero f_j and nonzero other f_j, and records its resulting nonconstant s_j. These terms cannot all be erased by a common phase.
+4. Applying the N_X=1 algebra on all clock sectors is false. The selected two-clock occupancy retains its exact nonzero cross term. The construction's exact N_X conservation and a full-space leakage error allowance are essential.
+5. Exact matched inverse responses require identical abstract graphs/coefficients. Arbitrary different physical paths cannot be declared mirrors without matching that response. The explicit v0 geometry resolves this by equal-length tails, not by an unproved generic embedding statement.
+6. v1 has zero fresh nearest neighbors in the actual old inventory. The present two-port-per-data-site certificate therefore cannot apply to that reset pair. This does not forbid another mechanism using occupied transit, a different embedding/preparation contract, or a more global construction with a new proof.
+7. Repeating the pilot independently for all three Pauli axes consumes six fresh data ports before old neighbors. The current proof establishes no compatible shared multi-axis network or full-SWAP program.
+
+A four-copy construction with both data operators as detunings was briefly considered analytically, then superseded by the two-copy source/detuning cancellation before it was developed or computed. It was not refuted, and it is not counted as an independent failed route.
+
+Open verification: independent checking of the full-space gap/kernel and exact norm, the mixed-sector global residual with noncommuting H0/K_X, the all-parameter coordinate proof, and the complete resource ledger. The one exact diagnostic only checks a finite geometry and one-particle contraction. No independent audit status is claimed. No broad negative theorem is asserted, so these preserved construction-specific failures are not a no-go packet or evidence of exhaustive route search.
+
+Open scientific scope: arbitrary accessible pairs need their own graph certificate; saturated sites and noncommuting-axis sharing need a different mechanism. Common strength caps, efficient scaling, physical initialization, field/coupling fabrication, calibration, timing, stopping and readers remain supplied or unproved. The tiny Green functions can make the finite resource prescription extremely large.
+
+Operational limitations: initial aggregate tool output and a broad file inventory were truncated. Full mathematical sources actually used were subsequently read in bounded untruncated ranges. All mathematical execution was the one predeclared run; no rerun or parameter sweep occurred. The initial source manifest was later extended; its original bytes were recovered from the unchanged initial entries and matched against its pre-execution hash, with both versions retained.

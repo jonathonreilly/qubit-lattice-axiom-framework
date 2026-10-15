@@ -1,0 +1,57 @@
+--- PREEXEC_DERIVATION_RECOVERED.md (sealed before execution)
++++ DERIVATION.md (final author argument)
+@@ -178,7 +178,7 @@
+ 
+ ## 5. Actual disjoint three-component geometry at v0,e(v0)
+ 
+-Set c=(0,1,1), e=(0,2,1), L_b>=8, Q_mem=3^(r_mem)>=3, n_old>=2, X_*=max(n_old-1,Q_mem)+2>=5 and Y_*=1-L_b<=-7. The original M=4q_c clock is the square perimeter at z=3 from (X_*,Y_*,3) to (X_*+q_c,Y_*+q_c,3). No additional occupied sites beyond the literal source inventory are assumed. All line segments below contain their integer unit steps. No original factor is used as transit.
++Set c=(0,1,1), e=(0,2,1), L_b>=8, Q_mem=3^(r_mem)>=3, n_old>=2, X_*=max(n_old-1,Q_mem)+2>=5 and Y_*=1-L_b<=-7. For an integer q_c>=1, the original M=4q_c clock is the square perimeter at z=3 from (X_*,Y_*,3) to (X_*+q_c,Y_*+q_c,3). No additional occupied sites beyond the literal source inventory are assumed. All line segments below contain their integer unit steps. No original factor is used as transit.
+ 
+ Component1 uses core terminals and internal vertex
+ 
+@@ -236,6 +236,24 @@
+ 
+ Each component is a core cycle and a transport cycle joined by one edge; tails are part of the transport graph. Therefore |E_B,i|=m_i+1. Counts exclude the clock/data source and detuning edges, which are priced separately above.
+ 
++
++### Complete isolation accounting
++
++Freshness and disjointness do not mean that the occupied cubic-lattice adjacency graph equals the declared interaction graph. Let O be the complete literal original coordinate set and A the union of the fresh coordinates in section5. Let E_decl be the union of all declared auxiliary hopping edges and the c/a_i,e/b_i,clock/u_(ij) edges. Define the complete omitted-edge set, including edges within one component, by
++
++    E_iso={{u,v}:u,v in O union A, |u-v|_1=1,
++                     {u,v} intersects A, {u,v} not in E_decl}.       (22)
++
++Every NN pair involving a fresh factor is either in E_decl or in E_iso. E_iso includes fresh–original, same-component fresh–fresh and intercomponent pairs; no geometric separation is substituted for isolation. Onsite faults and changes to the original–original H terms are priced separately as in section4. Additional occupied factors beyond O union A require an enlarged inventory and fault sum.
++
++The nominal Hamiltonian sets every E_iso coupling to zero. For actual residual Hermitian interactions E_uv, with no commutation or number-conservation assumption, let
++
++    zeta_iso=sum_({u,v} in E_iso) ||E_uv||.
++
++Full-space Duhamel adds at most2 T_fin zeta_iso in trace norm, and a further installed scalar reserve zeta_iso preserves the whole-space positivity certificate. That reserve adds to the actual scalar/mean/norm and comparator phase. General scalar or onsite calibration errors are not erased by this edge accounting. A uniform edge-error bound nu gives zeta_iso<=|E_iso|nu. Since there are at most6m_total fresh incidences, |E_iso|<=6m_total is always a sufficient finite bound. Using the declared counts gives the sharper conservative bound |E_iso|<=4m_total-3M-12 for the three-component geometry. These are symbolic bounds, not the selected-fixture count.
++
++Additional retrospective geometry analysis of the already saved selected-fixture coordinates found exactly35 omitted edges:18 fresh–original,11 same-component and6 intercomponent. ISOLATION_ADJACENCY_INVENTORY.json lists all177 NN pairs touching fresh factors within that recorded inventory, with142 declared and35 omitted; both classes are included explicitly. In particular the outer-cycle left edge has omitted neighbors on the x=3 tail when X_*=5. For that selected fixture, uniform residual-edge norm nu costs zeta_iso<=35nu. This enumeration was requested after the one inverse fixture and is not part of its predeclared159 checks or independent validation. No inverse or dynamics was rerun. The general theorem uses(22) and the complete norm sum, not a projection of the selected count onto other parameter choices.
++
+ ## 6. Simultaneous X/Y/Z response with one global inverse
+ 
+ Take three components of section5, with Pc_i=X_c,Y_c,Z_c and Pe_i=X_e,Y_e,Z_e, supplied real f_(ij), positive q_i and Lambda_i>max_j|120 f_(ij)/q_i|. Each has its own computed B_i, beta_(ij), gamma_(ij), z_(ij), L_i,V_i,s0_i,s_(ij),d_i. Put
+@@ -256,12 +274,16 @@
+ 
+ in (17). The full scalar is scalar(H)+(Delta/2)sum_i Tr B_i+S0+(1/2)sum_j S_j. The reserve h0+Dsum+sqrt(Delta)v makes the complete operator nonnegative. The initial variance is Var_rho(H+C0)+Delta sum_i[q_i^2+sum_j|z_(ij)|^2 p_j]. All original/auxiliary/reference outputs and the entire physical interval are retained. Noncommutation of the Pe-only counterterms with H or with each other is already included in A and the residual.
+ 
+-Consequently this proposed theorem covers the X/Y/Z sampled sum on the one fixed accessible pair. A scalar sampled identity coefficient can be included directly as an original-clock onsite term in the supplied target and installed generator, with its norm, scalar, mean and timing cost added. This gives a conditional local implementation of a sampled SWAP logarithm for this pair when its three Pauli and scalar coefficients are supplied. It does not synthesize the whole preparation waveform, apply three axes to every scheduled pair, or make the v1 neighbor obstruction disappear.
+-
+-## 7. Preserved limits and next check
++Consequently this proposed theorem covers the X/Y/Z sampled sum on the one fixed accessible pair. A supplied scalar sampled identity term U=sum_j u_j n_j can be installed directly as an original-clock onsite term in both target and generator. Set u_bound=sum_j|u_j|, add u_bound to a,b,B_full and the sufficient positive reserve, and add (1/2)sum_j u_j to the exact scalar. Replace A0 by H+C0+U in the mean and variance, and price these M additional coefficient errors. The residual proof is unchanged because U preserves N_X. This gives a conditional local implementation of a sampled SWAP logarithm for this pair when its three Pauli and scalar coefficients are supplied. It does not synthesize the whole preparation waveform, apply three axes to every scheduled pair, or make the v1 neighbor obstruction disappear.
++
++## 7. Bounded theorem, preserved limits and actual evidence
++
++Conditional theorem statement: under the literal finite original geometry and premises in sections1,5, finite computable coefficients f_(ij), a certified full norm for the unchanged H0+K_X with [H0+K_X,N_X]=0, fresh product-vacuum auxiliary qubits and priced isolation/coefficient access, the displayed static ordinary-NN two-qubit Hamiltonian gives, for every finite horizon and positive error target, a finite Delta with the complete prepared-map bound(17) for the X/Y/Z program(21) on N_X=1. One may omit two components for a single-Pauli-pair pilot. Every original site, H0/K_X term, passive reference and auxiliary output is retained at the same physical time. The full-space positive reserve and scalar are(18)-(19), with the explicit three-axis replacements in section6. This is an author-proposed conditional theorem pending independent review.
+ 
+ Real one-quadrature sources fail for arbitrary f_j through the explicit n_j Pe shift. Omitting the Pe counterterm fails even after fixing the transported modulus: both -q^2 Pe/240 and -Lambda^2 Pe/240 are present. Replacing the signed designed core by a generic positive-hopping graph does not preserve the zero even cross entry. Deleting charged root/subdivision diagonal shifts changes the core inverse. Applying the one-excitation contraction on all clock sectors fails. Independent per-axis one-particle inverses do not replace the mixed full-sector inverse in the dynamics.
+ 
+ All six neighbors of v1=(-1,0,0) remain original occupied factors q0,e(v1),a0,a1,a0',a1'. The present construction uses fresh ports and offers no implementation there. This is an explicit limitation of this construction, not a no-go for other mechanisms. Additional occupied sites, common strength caps, efficient resource scaling, physical initialization and control manufacture remain outside the result. The axis theorem is conditional finite-Hamiltonian mathematics, not derived native physics or retained status.
+ 
+-The planned single exact fixture will check literal three-component placement, independent direct one-particle inversions, source-square/cross response and mutations. It will not form the full many-qubit matrix, check arbitrary-H dynamics numerically, establish a symbolic-family theorem from a sample, or confer independent scientific acceptance. Complete source/plan/execution identities and actual failures will be preserved separately.
++The one predeclared exact Fraction fixture ran once on 2026-10-15 at12:11:34-12:11:35 UTC. Its fixed input L_b=8,Q_mem=3,n_old=2,M=4 has74 original and121 fresh sites, with component sizes43,35,43. SELECTED_PLAN.md and PREEXEC_FREEZE.json seal the plan, rational phases, code and pre-execution argument. Direct Gauss-Jordan inversions of the complete physical one-particle matrices B_s, checked by exact multiplication, have zero response defect at both signs and every selected source. All159 declared checks passed, including mutual NN placement, degrees, both odd diagonal contributions and the six occupied neighbors of v1. The literal coordinate/edge inventories and every rational result are in EXACT_RESULT.json; EXECUTION.log records the single invocation outcome.
++
++The declared mutants were detected: real sources gave unequal odd diagonal coefficients; omitting the full Pe counterterm left +Pe/120, omitting its Pc-source portion left +Pe/240; deleting root compensation changed the cross entry; clock vacuum left -Pe/240, and the selected two-clock state had nonzero extra response. The latter two findings preserve the admitted-domain limit. These are exact selected algebra/geometry checks, not independent scientific review. No full many-qubit matrix, arbitrary-H time evolution, parameter sweep or second inverse/dynamics execution was made. The symbolic geometry family, full-sector gap, noncommuting simultaneous-axis inverse and bare-output dynamics are analytic arguments above, rather than conclusions established by the fixture.

@@ -2,3 +2,9 @@ logs/runner-cache/*.txt -whitespace
 archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 # Preserve exact hash-pinned historical continuum helper bytes.
 .claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/*.py whitespace=-blank-at-eof
+
+# Preserve exact historical evidence bytes for the shared-mediator review.
+.claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/archive/single_port_author/POST_RUN_DERIVATION.diff -whitespace
+.claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/archive/two_copy_author/POST_EXECUTION_DERIVATION.diff -whitespace
+.claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/archive/single_port_review/check_final_freshness.py whitespace=-blank-at-eof
+.claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/archive/single_port_review/verify_metadata.py whitespace=-blank-at-eof

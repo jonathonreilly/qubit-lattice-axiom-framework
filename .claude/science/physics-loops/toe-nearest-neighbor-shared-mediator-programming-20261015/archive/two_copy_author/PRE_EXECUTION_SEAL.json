@@ -1,0 +1,32 @@
+{
+  "sealed_utc": "2026-10-15T11:27:41.874567+00:00",
+  "scientific_runs_before": 0,
+  "planned_scientific_runs": 1,
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "sha256": "d1d34dd50aad033a0dc2ef45808bff90e839f574362f851ce305d99509f89e92",
+      "bytes": 20913
+    },
+    {
+      "path": "SELECTED_PLAN.md",
+      "sha256": "8088ebf478e4813fef9a6af1d8898df702d6e60bdb0f462ca902a73017dde0d3",
+      "bytes": 1961
+    },
+    {
+      "path": "SELECTED_INPUT.json",
+      "sha256": "414cd94cc4f0850b8152f6d14caab4e790ac29c0efe96004d5561fcb6c2a360f",
+      "bytes": 92
+    },
+    {
+      "path": "selected_exact_fixture.py",
+      "sha256": "58b88103daaa01c91003ccb1ccf270bc4a70ce35d2b88de64f406a19d73955ba",
+      "bytes": 8084
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "93d2c0966ae19baa3bf7ac8e9057188c31f11670b7ea909f0781672ec2851e82",
+      "bytes": 3301
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_SELECTED_FIXTURE",
+  "checks": 159,
+  "passed": 159,
+  "exception": null,
+  "result": "EXACT_RESULT.json"
+}

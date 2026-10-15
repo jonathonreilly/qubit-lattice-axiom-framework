@@ -1,0 +1,190 @@
+{
+  "utc": "2026-10-15T13:47:44.826531+00:00",
+  "branch": "physics-loop/toe-shared-mediator-programming-20261015",
+  "base_head": "3e647b40c1f554205aa63d97fe0b5c9bf97a9917",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/nearest_neighbor_shared_mediator_programming_2026_10_15.py",
+    "bytes": 19175,
+    "sha256": "19ffa1c0e18cba712c8a804f6a4bb92b0fc7cafc7043fad3eb39dd8d90eb3f1d"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 72885,
+    "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649"
+  },
+  "cache_fresh": true,
+  "timeout_sec": 60,
+  "canonical_source_files": 104,
+  "scientific_programs_run": 0,
+  "historical_runs_replayed": 0,
+  "provenance_mutants_rejected": 13,
+  "source_verification": {
+    "utc": "2026-10-15T13:38:56.544264+00:00",
+    "source_files": 104,
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/nearest_neighbor_shared_mediator_programming_2026_10_15.py",
+      "bytes": 19176,
+      "sha256": "85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd"
+    },
+    "cache_fresh": true,
+    "provenance_mutants_rejected": 13,
+    "links": [
+      {
+        "source": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "target": "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      },
+      {
+        "source": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "target": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      }
+    ],
+    "vocabulary_source_changes": false,
+    "historical_archive_bytes_untouched": true,
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 105,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "focused_checker_index_preserved": true,
+    "scientific_executions": 0,
+    "scope": "Focused source-integrity and compatibility checks, not audit or science execution. Immutable historical archive prose is preserved rather than vocabulary-rewritten."
+  },
+  "graph": {
+    "utc": "2026-10-15T13:40:12.066998+00:00",
+    "complete_old_nodes_preserved": 7131,
+    "complete_old_edges_preserved": 16089,
+    "roots_unchanged": true,
+    "new_node": {
+      "claim_id": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15",
+        "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649",
+      "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/nearest_neighbor_shared_mediator_programming_2026_10_15.py",
+      "title": "Nearest-neighbor shared mediators for sampled interactions on one fixed pair"
+    },
+    "new_edges": [
+      {
+        "from": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15",
+        "to": "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15"
+      },
+      {
+        "from": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15",
+        "to": "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/after_citation_graph.json",
+      "bytes": 10451152,
+      "sha256": "73a43c7e011b4198d8dc0764b617afd116fa5644e13f89a49c631346882a0ed0"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/after_citation_graph_manifest.json",
+      "bytes": 1018609,
+      "sha256": "327c232acb085ab084f07e808d91f355da3a135232336e978cf548fba9961558"
+    },
+    "graph_json_ignored_not_staged": true,
+    "scope": "Complete old graph objects retained; exactly two canonical geometry dependencies. No dependency on full autonomous or routed readiness or correctness of one alternative for the other. No audit application."
+  },
+  "integration_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-nearest-neighbor-shared-mediator-programming-20261015/INTEGRATION_REVIEW.md",
+    "bytes": 6161,
+    "sha256": "0fdb0c1456cfab4a996cfbe93524b06e27bc34642cb30d58fc3e57b8af6d62d7"
+  },
+  "outstanding": [
+    "Integrated current-main landing checks and independent retained audit.",
+    "Supplied geometry, isolation, input preparation and native control; physical energy/detector/reuse identification."
+  ],
+  "editable_prompt_files_changed": [],
+  "final_formatting_utc": "2026-10-15T13:51:07.292280+00:00",
+  "canonical_execution_after_formatting": {
+    "utc": "2026-10-15T13:50:03.676335+00:00",
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/CANONICAL_RESULT.json",
+      "bytes": 1184,
+      "sha256": "4dcaaa7224e9e9c793c9ba6c7ed968f0ea713eaf3b95d4d987cfb2a803e501ae"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/nearest_neighbor_shared_mediator_programming_2026_10_15.txt",
+      "bytes": 1130,
+      "sha256": "3c14594ef5e1d6258ce0cbb966ac5cda15fa2431dc56c1e1e94a59cc2988afb8"
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/nearest_neighbor_shared_mediator_programming_2026_10_15.py",
+      "bytes": 19175,
+      "sha256": "19ffa1c0e18cba712c8a804f6a4bb92b0fc7cafc7043fad3eb39dd8d90eb3f1d"
+    },
+    "cache_status": "fresh",
+    "timeout_sec": 60,
+    "result_summary": {
+      "historical_runs_replayed": 0,
+      "publication_or_retained_status_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run": 0,
+      "scope": "Exact source and package integrity only; no mathematical or physical verification."
+    },
+    "scope_lines": [
+      "per_element: exact sampled-program proof sources checked as bytes; scientific formulas are not executed",
+      "per_site: literal geometry source identities checked; no lattice adjacency analysis is rerun",
+      "per_mode: the admitted N_X=1 and full auxiliary output contracts are source claims, not simulated here",
+      "per_block: both independent proof bodies and their actual source-review receipts are integrity inputs",
+      "lattice_wide: this runner establishes source closure only and supplies no native realization or audit status"
+    ],
+    "scientific_programs_run": 0,
+    "canonical_child_streams": "runner_cache merges child stderr into stdout; result.stderr is not a separate child stderr capture.",
+    "limits": "Actual source-only primary execution; no proof program, science fixture or gate propagator executed."
+  },
+  "formatting_repair": {
+    "utc": "2026-10-15T13:50:03.332014+00:00",
+    "failed_run": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_finish_1351/EXECUTION.json",
+      "bytes": 1209,
+      "sha256": "81c466c066653974b8d599e1927dade7d5a87689db92857c5de9461789f8bde5"
+    },
+    "old_prepared": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/PREPARED.json",
+      "bytes": 57130,
+      "sha256": "34ee44f8bbc798de84aa9582596ed17d1c9f4cea72f7f75c5361ef5141949044"
+    },
+    "primary_before": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/before_whitespace_repair/primary.py",
+      "bytes": 19176,
+      "sha256": "85588c05305e114080be091de31416213d4ccb8798797f85c4bcaaf40b4221cd"
+    },
+    "primary_after": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/nearest_neighbor_shared_mediator_programming_2026_10_15.py",
+      "bytes": 19175,
+      "sha256": "19ffa1c0e18cba712c8a804f6a4bb92b0fc7cafc7043fad3eb39dd8d90eb3f1d"
+    },
+    "identical_python_ast": true,
+    "changed_bytes": "Exactly one terminal newline removed from active primary.",
+    "historical_whitespace_attributes": {
+      "patches_preserve_context_blank_lines": [
+        "archive/single_port_author/POST_RUN_DERIVATION.diff",
+        "archive/two_copy_author/POST_EXECUTION_DERIVATION.diff"
+      ],
+      "python_preserve_terminal_blank_line": [
+        "archive/single_port_review/check_final_freshness.py",
+        "archive/single_port_review/verify_metadata.py"
+      ]
+    },
+    "gitattributes": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.gitattributes",
+      "bytes": 972,
+      "sha256": "66b2cf880d022f087d1b54fc09f86de6f48b4956ffdfc3d13babe05f51f75f8d"
+    },
+    "all_original_scientific_and_archive_inputs_unchanged": true,
+    "old_cache_requires_refresh": true
+  },
+  "mutation_reuse_basis": "Exactly one terminal newline removed; identical Python AST. Original source/receipts and new source/cache retained; no mutation rerun claimed."
+}

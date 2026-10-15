@@ -1,0 +1,3203 @@
+{
+  "created_utc": "2026-10-15T12:18:45.047985+00:00",
+  "status": "Retrospective deterministic inventory of existing selected-fixture coordinates; not a predeclared check, independent validation, second model execution or new scientific fixture.",
+  "input": "EXACT_RESULT.json",
+  "input_sha256": "b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f",
+  "inventory_source_sha256": "bd71c94302c245df43e99fd85427f6a068feeef3ffa3d1bbb3461437df4aa2a6",
+  "counts": {
+    "same_component_declared": 124,
+    "fresh_original_undeclared": 18,
+    "same_component_undeclared": 11,
+    "fresh_original_declared": 18,
+    "intercomponent_undeclared": 6
+  },
+  "all_NN_pairs_touching_fresh_within_recorded_factor_inventory": [
+    {
+      "edge": [
+        [
+          -3,
+          -11,
+          -2
+        ],
+        [
+          -2,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -11,
+          -2
+        ],
+        [
+          -3,
+          -10,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -10,
+          -2
+        ],
+        [
+          -3,
+          -9,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -9,
+          -2
+        ],
+        [
+          -3,
+          -8,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -8,
+          -2
+        ],
+        [
+          -3,
+          -7,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -7,
+          -2
+        ],
+        [
+          -3,
+          -6,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -6,
+          -2
+        ],
+        [
+          -3,
+          -5,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -5,
+          -2
+        ],
+        [
+          -3,
+          -4,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -3,
+          -3,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -3,
+          -2
+        ],
+        [
+          -3,
+          -2,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -2,
+          -2
+        ],
+        [
+          -3,
+          -1,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          -1,
+          -2
+        ],
+        [
+          -3,
+          0,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          0,
+          -2
+        ],
+        [
+          -3,
+          1,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          0,
+          -2
+        ],
+        [
+          -3,
+          0,
+          -1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": 0,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          -3,
+          0,
+          1
+        ],
+        [
+          -3,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          1,
+          -2
+        ],
+        [
+          -3,
+          2,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          1,
+          0
+        ],
+        [
+          -3,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          1,
+          1
+        ],
+        [
+          -2,
+          1,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          1,
+          1
+        ],
+        [
+          -3,
+          2,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          2,
+          -2
+        ],
+        [
+          -3,
+          3,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          2,
+          1
+        ],
+        [
+          -2,
+          2,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          2,
+          1
+        ],
+        [
+          -3,
+          3,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          3,
+          -2
+        ],
+        [
+          -3,
+          3,
+          -1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          3,
+          -1
+        ],
+        [
+          -3,
+          3,
+          0
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -3,
+          3,
+          0
+        ],
+        [
+          -3,
+          3,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -2,
+          -11,
+          -2
+        ],
+        [
+          -1,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -2,
+          0,
+          1
+        ],
+        [
+          -2,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -2,
+          1,
+          0
+        ],
+        [
+          -2,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -2,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -2,
+          1,
+          1
+        ],
+        [
+          -2,
+          2,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -2,
+          2,
+          1
+        ],
+        [
+          -1,
+          2,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -11,
+          -2
+        ],
+        [
+          0,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -10,
+          5
+        ],
+        [
+          0,
+          -10,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -10,
+          5
+        ],
+        [
+          -1,
+          -9,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -9,
+          5
+        ],
+        [
+          -1,
+          -8,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -8,
+          5
+        ],
+        [
+          -1,
+          -7,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -7,
+          5
+        ],
+        [
+          -1,
+          -6,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -6,
+          5
+        ],
+        [
+          -1,
+          -5,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -5,
+          5
+        ],
+        [
+          -1,
+          -4,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -4,
+          5
+        ],
+        [
+          -1,
+          -3,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -3,
+          5
+        ],
+        [
+          -1,
+          -2,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -2,
+          5
+        ],
+        [
+          -1,
+          -1,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          -1,
+          5
+        ],
+        [
+          -1,
+          0,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -1,
+          0,
+          5
+        ],
+        [
+          -1,
+          1,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 0,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          2,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          2
+        ]
+      ],
+      "kind": "intercomponent",
+      "declared": false,
+      "component_a": 0,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          2
+        ],
+        [
+          -1,
+          2,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          2
+        ],
+        [
+          -1,
+          1,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          3
+        ],
+        [
+          -1,
+          2,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          1,
+          5
+        ],
+        [
+          -1,
+          2,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 0,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          -1,
+          2,
+          1
+        ],
+        [
+          -1,
+          2,
+          2
+        ]
+      ],
+      "kind": "intercomponent",
+      "declared": false,
+      "component_a": 0,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          2,
+          2
+        ],
+        [
+          -1,
+          2,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          2,
+          3
+        ],
+        [
+          -1,
+          3,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          2,
+          5
+        ],
+        [
+          -1,
+          3,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          3,
+          3
+        ],
+        [
+          -1,
+          3,
+          4
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          -1,
+          3,
+          4
+        ],
+        [
+          -1,
+          3,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          0,
+          -11,
+          -2
+        ],
+        [
+          1,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          0,
+          -10,
+          5
+        ],
+        [
+          1,
+          -10,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "kind": "intercomponent",
+      "declared": false,
+      "component_a": 1,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "kind": "intercomponent",
+      "declared": false,
+      "component_a": 1,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "kind": "intercomponent",
+      "declared": false,
+      "component_a": 1,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          4,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          4,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          4,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          0,
+          4,
+          3
+        ],
+        [
+          1,
+          4,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          -11,
+          -2
+        ],
+        [
+          2,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          1,
+          -10,
+          5
+        ],
+        [
+          2,
+          -10,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": 2,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          1,
+          4,
+          3
+        ],
+        [
+          2,
+          4,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          -11,
+          -2
+        ],
+        [
+          3,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          2,
+          -10,
+          5
+        ],
+        [
+          3,
+          -10,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": 2,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          2,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          4,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          3,
+          4,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -11,
+          -2
+        ],
+        [
+          4,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          3,
+          -10,
+          5
+        ],
+        [
+          4,
+          -10,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          3,
+          -9,
+          3
+        ],
+        [
+          4,
+          -9,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -9,
+          3
+        ],
+        [
+          3,
+          -8,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -8,
+          3
+        ],
+        [
+          4,
+          -8,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -8,
+          3
+        ],
+        [
+          3,
+          -7,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -7,
+          3
+        ],
+        [
+          4,
+          -7,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -7,
+          3
+        ],
+        [
+          3,
+          -6,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -6,
+          3
+        ],
+        [
+          4,
+          -6,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -6,
+          3
+        ],
+        [
+          3,
+          -5,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -5,
+          3
+        ],
+        [
+          4,
+          -5,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": false,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -5,
+          3
+        ],
+        [
+          3,
+          -4,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -4,
+          3
+        ],
+        [
+          3,
+          -3,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -3,
+          3
+        ],
+        [
+          3,
+          -2,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -2,
+          3
+        ],
+        [
+          3,
+          -1,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          -1,
+          3
+        ],
+        [
+          3,
+          0,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          2,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          4,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          4,
+          -11,
+          -2
+        ],
+        [
+          5,
+          -11,
+          -2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          4,
+          -10,
+          5
+        ],
+        [
+          5,
+          -10,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          4,
+          -9,
+          3
+        ],
+        [
+          4,
+          -8,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          4,
+          -8,
+          3
+        ],
+        [
+          5,
+          -8,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          4,
+          -8,
+          3
+        ],
+        [
+          4,
+          -7,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          4,
+          -7,
+          3
+        ],
+        [
+          5,
+          -7,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": 2,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          4,
+          -7,
+          3
+        ],
+        [
+          4,
+          -6,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          4,
+          -6,
+          3
+        ],
+        [
+          5,
+          -6,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 2,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          4,
+          -6,
+          3
+        ],
+        [
+          4,
+          -5,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          4,
+          -5,
+          3
+        ],
+        [
+          5,
+          -5,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          5,
+          -11,
+          -2
+        ],
+        [
+          5,
+          -11,
+          -1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -11,
+          -1
+        ],
+        [
+          5,
+          -11,
+          0
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -11,
+          0
+        ],
+        [
+          5,
+          -11,
+          1
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -11,
+          1
+        ],
+        [
+          5,
+          -11,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -11,
+          2
+        ],
+        [
+          5,
+          -10,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -10,
+          2
+        ],
+        [
+          5,
+          -9,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -10,
+          5
+        ],
+        [
+          5,
+          -9,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -9,
+          2
+        ],
+        [
+          5,
+          -8,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -9,
+          5
+        ],
+        [
+          5,
+          -8,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -8,
+          2
+        ],
+        [
+          5,
+          -7,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -8,
+          2
+        ],
+        [
+          5,
+          -8,
+          3
+        ]
+      ],
+      "kind": "intercomponent",
+      "declared": false,
+      "component_a": 0,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          5,
+          -8,
+          3
+        ],
+        [
+          6,
+          -8,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          5,
+          -8,
+          3
+        ],
+        [
+          5,
+          -7,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 2,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          5,
+          -8,
+          5
+        ],
+        [
+          5,
+          -7,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -7,
+          2
+        ],
+        [
+          6,
+          -7,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -7,
+          2
+        ],
+        [
+          5,
+          -6,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -7,
+          2
+        ],
+        [
+          5,
+          -7,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 0,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          5,
+          -7,
+          3
+        ],
+        [
+          5,
+          -7,
+          4
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -7,
+          4
+        ],
+        [
+          6,
+          -7,
+          4
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -7,
+          4
+        ],
+        [
+          5,
+          -6,
+          4
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -7,
+          4
+        ],
+        [
+          5,
+          -7,
+          5
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -6,
+          2
+        ],
+        [
+          6,
+          -6,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          5,
+          -6,
+          2
+        ],
+        [
+          5,
+          -6,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 0,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          5,
+          -6,
+          3
+        ],
+        [
+          5,
+          -5,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          5,
+          -6,
+          3
+        ],
+        [
+          5,
+          -6,
+          4
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -6,
+          4
+        ],
+        [
+          6,
+          -6,
+          4
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          5,
+          -5,
+          3
+        ],
+        [
+          6,
+          -5,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          6,
+          -8,
+          3
+        ],
+        [
+          7,
+          -8,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          6,
+          -8,
+          3
+        ],
+        [
+          6,
+          -7,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": 2,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          6,
+          -7,
+          2
+        ],
+        [
+          6,
+          -6,
+          2
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 0,
+      "component_b": 0
+    },
+    {
+      "edge": [
+        [
+          6,
+          -7,
+          2
+        ],
+        [
+          6,
+          -7,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 0,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          6,
+          -7,
+          3
+        ],
+        [
+          7,
+          -7,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          6,
+          -7,
+          3
+        ],
+        [
+          6,
+          -7,
+          4
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          6,
+          -7,
+          4
+        ],
+        [
+          6,
+          -6,
+          4
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 1,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          6,
+          -6,
+          2
+        ],
+        [
+          6,
+          -6,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": 0,
+      "component_b": null
+    },
+    {
+      "edge": [
+        [
+          6,
+          -6,
+          3
+        ],
+        [
+          7,
+          -6,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": false,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          6,
+          -6,
+          3
+        ],
+        [
+          6,
+          -5,
+          3
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          6,
+          -6,
+          3
+        ],
+        [
+          6,
+          -6,
+          4
+        ]
+      ],
+      "kind": "fresh_original",
+      "declared": true,
+      "component_a": null,
+      "component_b": 1
+    },
+    {
+      "edge": [
+        [
+          6,
+          -5,
+          3
+        ],
+        [
+          7,
+          -5,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          7,
+          -8,
+          3
+        ],
+        [
+          7,
+          -7,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          7,
+          -7,
+          3
+        ],
+        [
+          7,
+          -6,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    },
+    {
+      "edge": [
+        [
+          7,
+          -6,
+          3
+        ],
+        [
+          7,
+          -5,
+          3
+        ]
+      ],
+      "kind": "same_component",
+      "declared": true,
+      "component_a": 2,
+      "component_b": 2
+    }
+  ],
+  "outside_inventory": "Additional occupied factors require an updated inventory and their own complete coupling/isolation budget."
+}

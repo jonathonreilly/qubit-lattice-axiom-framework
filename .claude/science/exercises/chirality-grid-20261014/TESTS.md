@@ -464,3 +464,15 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Phase.** It now varies (7–9 mrad), but moves λ_min only at second order (0.04–1.2%). The negativity is carried by the modulus |det D(1)|²|det D(2)|^½.
 - **Not tested.** Global integrability around the Wilson-line circle, counterterm freedom, Lx > 4 kernels, 4D, non-abelian.
 - **If (c) is accepted on substance,** the reading would be CHI-RP-FAIL.
+
+**OBS-4 result (14:16Z; same family; referee launched): FCNC-PRICE, at KILL level for X2 as written.**
+- **Selection rule (proved).** Exact unit translations allow a corner-(c, c′) Yukawa only through a scalar at momentum Q_c + Q_c′. So OBS-3's escape needs three extra electroweak doublets at the hw2 momenta (four doublets in all).
+- **The carriers change flavour.** In the mass basis their couplings are large: |Ŷ_uc| up to 0.66, |Ŷ_sd| about 0.015. Even the k = 0 Higgs part is flavour-changing.
+- **Alignment is impossible** (proved; disjoint supports, and |V_ub| ≠ 0). Natural flavour conservation would force a permutation CKM (proved).
+- **Required carrier mass M\*.** ΔF = 2 (Isidori–Nir–Perez / UTfit LR rows) needs M* ≈ 1.3e3–7.9e3 TeV untuned; D mixing and ε_K bind. Vev-tuned cancellation brings it to 15–43 TeV, but at a 4e-5 cancellation that is fragile to 1% jitter.
+- **The construction cannot supply M\* (proved at tree level).** Exact translations act as Z₂×Z₂ on (H₀, Φ_K), so there is no tadpole and no decoupling limit. The carriers are forced to 1.1 TeV or less (λ ≤ 8π; global search). The shortfall is ≥ 1.4e6 untuned and ≥ 180 tuned.
+- **The passing route (class S)** is an electroweak-singlet condensate at hw2, at about the lattice scale (f ≳ 0.03/a), with one light Higgs doublet and no tree-level FCNC.
+  - Its cost: unit translations break spontaneously to BCC, so hw1 and hw3 share a label, and light–mirror hopping ψ†_{hw1}ψ_{hw3}S_K becomes allowed. That voids X2-L1/L2's exact-translation protection. The effect is not computed.
+  - Alternatives: P2, a hierarchy tuning of about 1e-20 to 1e-25; P3, a cancellation whose existence is not shown.
+- **Side findings.** OBS-3's saved B-gen has the CP-conjugate sign of J; the conjugate fit is equivalent. Light h alignment |sin ε| ≲ 5e-5 is needed within X2 as written.
+- **Reading (supervisor).** CKM in X2 needs corner-changing couplings, which need translation-breaking condensates. Breaking at the electroweak scale gives light carriers and tree-level FCNC; breaking at the lattice scale removes the light-generation protection. Pending the referee.

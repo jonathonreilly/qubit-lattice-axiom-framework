@@ -1,0 +1,54 @@
+C3. normalisation cross-checks at m_h = 125 GeV (real scalar, L = -Y_ij qbar_L^i q_R^j h + h.c.; C4 = -Y_ij Y_ji^*/m_h^2)
+  K_Re : HKZ published 5.60e-11 | from UTfit |C4| 5.62e-11 (ratio 1.00) | from INP Lambda 4.82e-11 (ratio 0.86)
+  K_Im : HKZ published 2.80e-13 | from UTfit |C4| 2.81e-13 (ratio 1.00) | from INP Lambda 1.53e-13 (ratio 0.54)
+  D    : HKZ published 7.50e-10 | from UTfit |C4| 7.50e-10 (ratio 1.00) | from INP Lambda 4.06e-10 (ratio 0.54)
+  Bd   : HKZ published 3.30e-09 | from UTfit |C4| 3.28e-09 (ratio 0.99) | from INP Lambda 4.33e-09 (ratio 1.31)
+  Bs   : HKZ published 2.50e-07 | from UTfit |C4| 2.50e-07 (ratio 1.00) | from INP Lambda 1.14e-07 (ratio 0.46)
+  own direct (K, dmK): allowed |Re Y Y*| at 125 GeV = 1.57e-10   (LO running factor 2.123)
+  own direct (K, epsK): allowed |Im Y Y*| at 125 GeV = 2.10e-13   (LO running factor 2.123)
+  own direct (D, dmD): allowed |Re Y Y*| at 125 GeV = 3.23e-10   (LO running factor 2.123)
+  own direct (D, phiD): allowed |Im Y Y*| at 125 GeV = 3.23e-11   (LO running factor 2.123)
+  own direct (Bd, dmBd): allowed |Re Y Y*| at 125 GeV = 5.33e-09   (LO running factor 1.932)
+  own direct (Bs, dmBs): allowed |Re Y Y*| at 125 GeV = 1.26e-07   (LO running factor 1.932)
+  matrix elements <Q4> (GeV^4): K 8.1400e-02, D 2.7729e-01, Bd 8.0154e-01, Bs 1.2107e+00
+
+=== B-gen(as fitted) [conjugated]
+  [scale x1.0, D3 equal vevs] sum_K Yhat_ij Yhat_ji^*: K 1.464e-04+2.585e-05j, D 1.133e-01-2.631e-01j, Bd 1.229e-06-7.892e-06j, Bs 4.147e-07+7.935e-06j
+  [scale x1.0] M*_direct (TeV): dmK 1.75e+02, epsK 2.19e+03, dmD 6.07e+03, phiD 1.90e+04, dmBd 6.07e+00, dmBs 1.14e+00  | M*_INP max 7.69e+03 TeV
+  [scale x1.0] R3 H only (A decoupled), required M_H (TeV) vs UTfit Table 4: KC2Re 7.70e+01, KC2Im 4.45e+02, KC4Re 1.43e+02, KC4Im 8.47e+02, DC2 1.16e+03, DC4 1.73e+03, BdC2 5.34e+00, BdC4 4.36e+00, BsC2 6.05e-01, BsC4 4.98e-01
+  [scale x0.5, D3 equal vevs] sum_K Yhat_ij Yhat_ji^*: K 3.660e-05+6.462e-06j, D 2.832e-02-6.577e-02j, Bd 3.073e-07-1.973e-06j, Bs 1.037e-07+1.984e-06j
+  [scale x0.5] M*_direct (TeV): dmK 8.50e+01, epsK 1.07e+03, dmD 2.97e+03, phiD 9.31e+03, dmBd 2.93e+00, dmBs 5.47e-01  | M*_INP max 3.85e+03 TeV
+  [scale x0.5] R3 H only (A decoupled), required M_H (TeV) vs UTfit Table 4: KC2Re 3.85e+01, KC2Im 2.23e+02, KC4Re 7.13e+01, KC4Im 4.24e+02, DC2 5.81e+02, DC4 8.64e+02, BdC2 2.67e+00, BdC4 2.18e+00, BsC2 3.02e-01, BsC4 2.49e-01
+  R1c optimised D3 point: M* = 2.97e+01 TeV, vevs [np.float64(122.52), np.float64(71.73), np.float64(71.11), np.float64(71.4)]
+    K: |sum| = 2.714e-06, sum|terms| = 3.635e-04, cancellation |sum|/sum|.| = 7.47e-03; Re/Im parts: -2.71e-06 -8.59e-09
+    D: |sum| = 2.320e-05, sum|terms| = 5.723e-01, cancellation |sum|/sum|.| = 4.05e-05; Re/Im parts: -2.29e-05 -3.91e-06
+    Bd: |sum| = 1.123e-05, sum|terms| = 9.327e-05, cancellation |sum|/sum|.| = 1.20e-01; Re/Im parts: +1.65e-06 -1.11e-05
+    Bs: |sum| = 1.241e-05, sum|terms| = 9.031e-05, cancellation |sum|/sum|.| = 1.37e-01; Re/Im parts: +6.93e-07 +1.24e-05
+    1% vev jitter: M* median 8.96e+02 TeV, 90th pct 1.39e+03 TeV (optimum 2.97e+01)
+  R4 h-alignment, heavy direction 0: max misalignment sin(e) = 5.11e-05 (binding row D)
+  R4 h-alignment, heavy direction 1: max misalignment sin(e) = 2.39e-04 (binding row K_Im)
+  R4 h-alignment, heavy direction 2: max misalignment sin(e) = 7.26e-05 (binding row D)
+
+=== B-gen120(as fitted)
+  [scale x1.0, D3 equal vevs] sum_K Yhat_ij Yhat_ji^*: K -3.502e-05-1.410e-04j, D -2.804e-01-5.910e-02j, Bd -5.692e-06+7.195e-07j, Bs 5.043e-08+5.744e-06j
+  [scale x1.0] M*_direct (TeV): dmK 8.30e+01, epsK 5.25e+03, dmD 6.07e+03, phiD 8.81e+03, dmBd 5.10e+00, dmBs 9.62e-01  | M*_INP max 3.80e+03 TeV
+  [scale x1.0] R3 H only (A decoupled), required M_H (TeV) vs UTfit Table 4: KC2Re 5.24e+01, KC2Im 1.03e+03, KC4Re 6.97e+01, KC4Im 1.98e+03, DC2 1.16e+03, DC4 1.73e+03, BdC2 5.31e+00, BdC4 3.70e+00, BsC2 6.01e-01, BsC4 4.24e-01
+  [scale x0.5, D3 equal vevs] sum_K Yhat_ij Yhat_ji^*: K -8.754e-06-3.525e-05j, D -7.010e-02-1.478e-02j, Bd -1.423e-06+1.799e-07j, Bs 1.261e-08+1.436e-06j
+  [scale x0.5] M*_direct (TeV): dmK 4.03e+01, epsK 2.57e+03, dmD 2.97e+03, phiD 4.31e+03, dmBd 2.46e+00, dmBs 4.61e-01  | M*_INP max 1.90e+03 TeV
+  [scale x0.5] R3 H only (A decoupled), required M_H (TeV) vs UTfit Table 4: KC2Re 2.62e+01, KC2Im 5.14e+02, KC4Re 3.49e+01, KC4Im 9.89e+02, DC2 5.81e+02, DC4 8.64e+02, BdC2 2.66e+00, BdC4 1.85e+00, BsC2 3.00e-01, BsC4 2.12e-01
+  R1c optimised D3 point: M* = 4.30e+01 TeV, vevs [np.float64(125.96), np.float64(72.21), np.float64(66.26), np.float64(69.57)]
+    K: |sum| = 5.712e-06, sum|terms| = 3.561e-04, cancellation |sum|/sum|.| = 1.60e-02; Re/Im parts: +5.71e-06 +1.81e-08
+    D: |sum| = 4.884e-05, sum|terms| = 5.585e-01, cancellation |sum|/sum|.| = 8.75e-05; Re/Im parts: -4.81e-05 +8.23e-06
+    Bd: |sum| = 5.251e-06, sum|terms| = 1.044e-04, cancellation |sum|/sum|.| = 5.03e-02; Re/Im parts: -4.51e-06 +2.68e-06
+    Bs: |sum| = 1.316e-05, sum|terms| = 9.365e-05, cancellation |sum|/sum|.| = 1.41e-01; Re/Im parts: +1.44e-06 +1.31e-05
+    1% vev jitter: M* median 5.45e+02 TeV, 90th pct 7.46e+02 TeV (optimum 4.30e+01)
+  R4 h-alignment, heavy direction 0: max misalignment sin(e) = 4.43e-05 (binding row K_Im)
+  R4 h-alignment, heavy direction 1: max misalignment sin(e) = 5.79e-05 (binding row K_Im)
+  R4 h-alignment, heavy direction 2: max misalignment sin(e) = 1.58e-04 (binding row K_Im)
+
+R4. carrier-mass ceiling of the Z2xZ2 potential (tree level)
+  Yukawa <= 3.54, quartic <= 12.6: seesaw carrier v_x >= 16.2 GeV, M_x <= 0.88 TeV; others ~ sqrt(lambda) v <= 0.62 TeV
+    all three carriers heavy simultaneously: geometric-mean mass <= 0.33 TeV
+  Yukawa <= 3.54, quartic <= 25.1: seesaw carrier v_x >= 16.2 GeV, M_x <= 1.25 TeV; others ~ sqrt(lambda) v <= 0.87 TeV
+    all three carriers heavy simultaneously: geometric-mean mass <= 0.47 TeV
+watchdog peak RSS 75088 KB

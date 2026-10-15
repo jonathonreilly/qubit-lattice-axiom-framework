@@ -1,0 +1,37 @@
+
+=== B-gen: A plain refits (60 starts)
+  #1: max pull 1.3e-09, M*_eq(D3) = 6.342e+03 TeV, exp(r_u) 1.0019 exp(r_d) 1.0010  (21s)
+  #2: max pull 2.9e-10, M*_eq(D3) = 7.799e+03 TeV, exp(r_u) 0.9981 exp(r_d) 0.9941  (34s)
+  #3: max pull 1.8e-11, M*_eq(D3) = 7.736e+03 TeV, exp(r_u) 0.9981 exp(r_d) 0.9925  (41s)
+  #4: max pull 1.4e-11, M*_eq(D3) = 6.319e+03 TeV, exp(r_u) 0.9980 exp(r_d) 1.0093  (96s)
+  #5: max pull 2.9e-09, M*_eq(D3) = 6.431e+03 TeV, exp(r_u) 0.9983 exp(r_d) 1.0077  (105s)
+  #6: max pull 4.1e-10, M*_eq(D3) = 3.781e+03 TeV, exp(r_u) 0.9992 exp(r_d) 1.0120  (118s)
+  6 distinct exact solutions; M*_eq range 3.78e+03 - 7.80e+03 TeV
+=== B-gen: B FCNC-seeking refits (40 starts)
+  candidate: M*_eq(D3) = 2.956e+03 TeV (exact, max pull 5.4e-10)
+  candidate: M*_eq(D3) = 3.283e+03 TeV (exact, max pull 9.4e-10)
+  candidate: M*_eq(D3) = 3.310e+03 TeV (exact, max pull 8.1e-10)
+  candidate: M*_eq(D3) = 3.670e+03 TeV (exact, max pull 3.6e-10)
+  candidate: M*_eq(D3) = 3.830e+03 TeV (exact, max pull 4.7e-10)
+  17 exact FCNC-seeking solutions; lowest M*_eq 2.956e+03 TeV
+
+=== B-gen120: A plain refits (60 starts)
+  #1: max pull 2.6e-08, M*_eq(D3) = 7.904e+03 TeV, exp(r_u) 1.0010 exp(r_d) 1.0139  (321s)
+  #2: max pull 2.4e-10, M*_eq(D3) = 7.631e+03 TeV, exp(r_u) 1.0015 exp(r_d) 1.0003  (358s)
+  #3: max pull 9.9e-11, M*_eq(D3) = 4.082e+03 TeV, exp(r_u) 0.9998 exp(r_d) 0.9868  (359s)
+  #4: max pull 1.8e-10, M*_eq(D3) = 5.283e+03 TeV, exp(r_u) 1.0014 exp(r_d) 0.9956  (382s)
+  #5: max pull 4.1e-10, M*_eq(D3) = 7.889e+03 TeV, exp(r_u) 0.9979 exp(r_d) 1.0037  (402s)
+  5 distinct exact solutions; M*_eq range 4.08e+03 - 7.90e+03 TeV
+=== B-gen120: B FCNC-seeking refits (40 starts)
+  candidate: M*_eq(D3) = 2.547e+03 TeV (exact, max pull 2.6e-11)
+  candidate: M*_eq(D3) = 3.584e+03 TeV (exact, max pull 1.0e-10)
+  candidate: M*_eq(D3) = 3.813e+03 TeV (exact, max pull 8.1e-10)
+  candidate: M*_eq(D3) = 4.299e+03 TeV (exact, max pull 7.3e-11)
+  candidate: M*_eq(D3) = 4.718e+03 TeV (exact, max pull 5.7e-11)
+  18 exact FCNC-seeking solutions; lowest M*_eq 2.547e+03 TeV
+  B-gen lowest-natural realisation, scale x1.0: M*_eq = 2.956e+03 TeV; vev-optimised (tuned) M* = 2.589e+03 TeV
+  B-gen lowest-natural realisation, scale x0.5: M*_eq = 1.478e+03 TeV; vev-optimised (tuned) M* = 1.294e+03 TeV
+  B-gen120 lowest-natural realisation, scale x1.0: M*_eq = 2.547e+03 TeV; vev-optimised (tuned) M* = 1.883e+03 TeV
+  B-gen120 lowest-natural realisation, scale x0.5: M*_eq = 1.274e+03 TeV; vev-optimised (tuned) M* = 9.417e+02 TeV
+done 608s
+watchdog peak RSS 74736 KB

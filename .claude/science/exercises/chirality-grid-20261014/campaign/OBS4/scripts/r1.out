@@ -1,0 +1,324 @@
+C1. rebuild from p (univ.py:78-85 formula) and check the fit
+  B-gen(as fitted)             m_u,c,t rel.dev 1.0e-11  m_d,s,b rel.dev 6.0e-15  max||V|-|V_PDG|| 8.7e-15  J = -3.1157e-05
+  B-gen120(as fitted)          m_u,c,t rel.dev 2.2e-12  m_d,s,b rel.dev 7.0e-15  max||V|-|V_PDG|| 1.3e-14  J = +3.1157e-05
+  A-M1#0 (W_u=F)               m_u,c,t rel.dev 5.9e-13  m_d,s,b rel.dev 1.9e-14  max||V|-|V_PDG|| 4.7e-15  J = +3.1157e-05
+  A-M1#1 (random W_u)          m_u,c,t rel.dev 1.5e-12  m_d,s,b rel.dev 3.3e-15  max||V|-|V_PDG|| 4.4e-16  J = +3.1157e-05
+  A-M1#2 (E1 W_u)              m_u,c,t rel.dev 2.8e-12  m_d,s,b rel.dev 2.2e-14  max||V|-|V_PDG|| 3.9e-15  J = +3.1157e-05
+  (light-mass ratios were fitted to 1e-3 weights in OBS-3; dev quoted vs PDG inputs)
+
+C2. controls: alignment (all carriers proportional to M) and single doublet
+  rephasing residual |W_u^dag W_d - V_PDG| = 1.5e-13; diag check |Wu^dag Mu Xu - diag| = 2.6e-14 GeV
+  aligned control: max |off-diagonal|/|max entry| over carriers and sectors = 3.2e-16
+  single-doublet control: 1.5e-16
+  completeness: |sum_K Phat_u^K - diag(m_u)| = 2.5e-14 GeV
+
+=== B-gen(as fitted) [complex-conjugated: J<0 as fitted]; rephase res 1.5e-13
+  corner-basis |M_u| (GeV) =
+[[57.4881 57.5433 57.5433]
+ [57.5433 57.4881 57.5433]
+ [57.5433 57.5433 57.4881]]
+  corner-basis |M_d| (GeV) =
+[[1.385  1.3995 1.3995]
+ [1.3995 1.385  1.3995]
+ [1.3995 1.3995 1.385 ]]
+  carrier 0 sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[ 5.8652 57.1876  0.2481]
+ [57.1879  5.8648  0.1669]
+ [ 0.1515  0.2577 57.4873]]
+     ||aligned|| = 5.808e+01  ||flavour-changing|| = 8.088e+01
+  carrier 0 sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.4468 1.3109 0.0124]
+ [1.3108 0.4469 0.0155]
+ [0.0168 0.0107 1.3848]]
+     ||aligned|| = 1.522e+00  ||flavour-changing|| = 1.854e+00
+  carrier x sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[39.0128 13.7412 20.0161]
+ [25.0018 36.6493 18.3099]
+ [17.0755 21.0785 38.3615]]
+     ||aligned|| = 6.585e+01  ||flavour-changing|| = 4.781e+01
+  carrier x sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.8436 0.6204 0.4682]
+ [0.4445 0.939  0.4651]
+ [0.5158 0.4118 0.9328]]
+     ||aligned|| = 1.570e+00  ||flavour-changing|| = 1.206e+00
+  carrier y sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[12.8477 54.7969  6.0372]
+ [16.6761 15.272  26.4459]
+ [26.7874  4.2871 38.3614]]
+     ||aligned|| = 4.324e+01  ||flavour-changing|| = 6.894e+01
+  carrier y sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.5868 1.2027 0.2142]
+ [0.3571 0.5075 0.6241]
+ [0.6127 0.2458 0.9328]]
+     ||aligned|| = 1.213e+00  ||flavour-changing|| = 1.564e+00
+  carrier z sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[22.6859 11.1018 25.8628]
+ [49.1083 25.091   8.1886]
+ [ 9.8386 25.2793 38.3614]]
+     ||aligned|| = 5.114e+01  ||flavour-changing|| = 6.330e+01
+  carrier z sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.4177 0.4327 0.6348]
+ [1.3013 0.3476 0.1814]
+ [0.1634 0.6392 0.9328]]
+     ||aligned|| = 1.080e+00  ||flavour-changing|| = 1.659e+00
+  [D3, coupling scale x1.0] equal vevs (87.0 GeV each): M* = 7.694e+03 TeV; rows: K_Re 2.18e+02, K_Im 1.63e+03, D_Re 2.09e+03, D_Im 7.69e+03, Bd_Re 2.11e+00, Bd_Im 1.01e+01, Bs_abs 1.04e+00; max carrier Yukawa 0.66
+  [D3, coupling scale x1.0] min over vevs: M* = 2.965e+01 TeV; rows: K_Re 2.97e+01, K_Im 2.97e+01, D_Re 2.97e+01, D_Im 2.97e+01, Bd_Re 2.44e+00, Bd_Im 1.20e+01, Bs_abs 1.30e+00; vevs up [np.float64(122.5), np.float64(71.7), np.float64(71.1), np.float64(71.4)] down [np.float64(122.5), np.float64(71.7), np.float64(71.1), np.float64(71.4)] GeV; max Yukawa 0.81
+      carrier 0 alone (equal-vev couplings): K_Re 2.69e+02, K_Im 2.01e+03, D_Re 2.56e+03, D_Im 9.44e+03, Bd_Re 5.18e-02, Bd_Im 5.97e-01, Bs_abs 5.48e-02
+      carrier x alone (equal-vev couplings): K_Re 1.09e+02, K_Im 4.48e+02, D_Re 7.16e+02, D_Im 3.12e+03, Bd_Re 3.40e+00, Bd_Im 2.03e+01, Bs_abs 1.86e+00
+      carrier y alone (equal-vev couplings): K_Re 1.27e+02, K_Im 1.66e+03, D_Re 1.49e+03, D_Im 4.88e+03, Bd_Re 6.27e+00, Bd_Im 1.32e+01, Bs_abs 1.66e+00
+      carrier z alone (equal-vev couplings): K_Re 1.43e+02, K_Im 1.99e+03, D_Re 7.09e+02, D_Im 3.99e+03, Bd_Re 5.68e+00, Bd_Im 1.16e+01, Bs_abs 1.45e+00
+  [D6, coupling scale x1.0] equal vevs (65.8 GeV each): M* = 1.018e+04 TeV; rows: K_Re 2.88e+02, K_Im 2.15e+03, D_Re 2.76e+03, D_Im 1.02e+04, Bd_Re 2.79e+00, Bd_Im 1.34e+01, Bs_abs 1.38e+00; max carrier Yukawa 0.87
+  [D6, coupling scale x1.0] min over vevs: M* = 3.331e+01 TeV; rows: K_Re 3.29e+01, K_Im 3.33e+01, D_Re 3.33e+01, D_Im 3.33e+01, Bd_Re 3.25e+00, Bd_Im 2.11e+01, Bs_abs 8.98e-01; vevs up [np.float64(104.8), np.float64(55.3), np.float64(59.9), np.float64(58.5)] down [np.float64(104.8), np.float64(51.8), np.float64(56.4), np.float64(58.3)] GeV; max Yukawa 1.04
+  [D3, coupling scale x0.5] equal vevs (87.0 GeV each): M* = 3.847e+03 TeV; rows: K_Re 1.09e+02, K_Im 8.13e+02, D_Re 1.04e+03, D_Im 3.85e+03, Bd_Re 1.05e+00, Bd_Im 5.06e+00, Bs_abs 5.21e-01; max carrier Yukawa 0.33
+  [D3, coupling scale x0.5] min over vevs: M* = 1.483e+01 TeV; rows: K_Re 1.48e+01, K_Im 1.48e+01, D_Re 1.48e+01, D_Im 1.48e+01, Bd_Re 1.22e+00, Bd_Im 6.00e+00, Bs_abs 6.52e-01; vevs up [np.float64(122.5), np.float64(71.7), np.float64(71.1), np.float64(71.4)] down [np.float64(122.5), np.float64(71.7), np.float64(71.1), np.float64(71.4)] GeV; max Yukawa 0.40
+  [D6, coupling scale x0.5] equal vevs (65.8 GeV each): M* = 5.089e+03 TeV; rows: K_Re 1.44e+02, K_Im 1.08e+03, D_Re 1.38e+03, D_Im 5.09e+03, Bd_Re 1.39e+00, Bd_Im 6.69e+00, Bs_abs 6.90e-01; max carrier Yukawa 0.44
+  [D6, coupling scale x0.5] min over vevs: M* = 3.984e+01 TeV; rows: K_Re 3.98e+01, K_Im 3.98e+01, D_Re 7.87e+00, D_Im 2.14e+01, Bd_Re 3.93e+00, Bd_Im 3.98e+01, Bs_abs 3.01e+00; vevs up [np.float64(115.6), np.float64(73.2), np.float64(67.8), np.float64(69.4)] down [np.float64(115.6), np.float64(18.5), np.float64(26.9), np.float64(33.5)] GeV; max Yukawa 0.42
+
+=== B-gen120(as fitted); rephase res 2.3e-13
+  corner-basis |M_u| (GeV) =
+[[57.4861 57.5443 57.5443]
+ [57.5443 57.4861 57.5443]
+ [57.5443 57.5443 57.4861]]
+  corner-basis |M_d| (GeV) =
+[[1.3838 1.4001 1.4001]
+ [1.4001 1.3838 1.4001]
+ [1.4001 1.4001 1.3838]]
+  carrier 0 sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[ 5.8991 57.1825  0.1271]
+ [57.182   5.8987  0.2705]
+ [ 0.2631  0.1417 57.4854]]
+     ||aligned|| = 5.809e+01  ||flavour-changing|| = 8.087e+01
+  carrier 0 sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.4919 1.2935 0.0039]
+ [1.2933 0.4919 0.0192]
+ [0.0193 0.0032 1.3837]]
+     ||aligned|| = 1.549e+00  ||flavour-changing|| = 1.829e+00
+  carrier x sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[10.6743 17.4893 26.8971]
+ [55.6155 12.8961  3.5376]
+ [ 5.1664 26.6302 38.3621]]
+     ||aligned|| = 4.186e+01  ||flavour-changing|| = 6.979e+01
+  carrier x sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.1494 0.4986 0.6531]
+ [1.3676 0.1909 0.0986]
+ [0.1463 0.6436 0.9332]]
+     ||aligned|| = 9.642e-01  ||flavour-changing|| = 1.729e+00
+  carrier y sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[38.4546 27.41   16.4586]
+ [11.4494 36.305  21.5642]
+ [20.6385 17.6062 38.3621]]
+     ||aligned|| = 6.533e+01  ||flavour-changing|| = 4.852e+01
+  carrier y sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.804  0.9433 0.3321]
+ [0.2929 0.7454 0.5705]
+ [0.5579 0.3533 0.9332]]
+     ||aligned|| = 1.440e+00  ||flavour-changing|| = 1.359e+00
+  carrier z sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[24.6446 47.5328 10.5707]
+ [ 9.6083 26.836  24.9826]
+ [25.5636  9.0808 38.362 ]]
+     ||aligned|| = 5.291e+01  ||flavour-changing|| = 6.183e+01
+  carrier z sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.7353 0.9499 0.3655]
+ [0.2902 0.8066 0.5498]
+ [0.5815 0.3131 0.9332]]
+     ||aligned|| = 1.436e+00  ||flavour-changing|| = 1.363e+00
+  [D3, coupling scale x1.0] equal vevs (87.0 GeV each): M* = 3.800e+03 TeV; rows: K_Re 1.07e+02, K_Im 3.80e+03, D_Re 3.28e+03, D_Im 3.65e+03, Bd_Re 4.53e+00, Bd_Im 3.05e+00, Bs_abs 8.87e-01; max carrier Yukawa 0.66
+  [D3, coupling scale x1.0] min over vevs: M* = 4.302e+01 TeV; rows: K_Re 4.30e+01, K_Im 4.30e+01, D_Re 4.30e+01, D_Im 4.30e+01, Bd_Re 4.04e+00, Bd_Im 5.90e+00, Bs_abs 1.34e+00; vevs up [np.float64(126.0), np.float64(72.2), np.float64(66.3), np.float64(69.6)] down [np.float64(126.0), np.float64(72.2), np.float64(66.3), np.float64(69.6)] GeV; max Yukawa 0.87
+      carrier 0 alone (equal-vev couplings): K_Re 1.31e+02, K_Im 4.68e+03, D_Re 4.03e+03, D_Im 4.48e+03, Bd_Re 4.53e-02, Bd_Im 3.59e-01, Bs_abs 3.31e-02
+      carrier x alone (equal-vev couplings): K_Re 8.39e+01, K_Im 2.99e+03, D_Re 2.21e+03, D_Im 1.94e+03, Bd_Re 3.95e+00, Bd_Im 1.24e+01, Bs_abs 1.07e+00
+      carrier y alone (equal-vev couplings): K_Re 1.03e+02, K_Im 1.29e+03, D_Re 1.22e+03, D_Im 1.87e+03, Bd_Re 9.39e+00, Bd_Im 4.38e+00, Bs_abs 1.91e+00
+      carrier z alone (equal-vev couplings): K_Re 1.08e+02, K_Im 4.73e+02, D_Re 1.43e+03, D_Im 2.54e+03, Bd_Re 9.64e+00, Bd_Im 1.20e+01, Bs_abs 1.76e+00
+  [D6, coupling scale x1.0] equal vevs (65.8 GeV each): M* = 5.026e+03 TeV; rows: K_Re 1.41e+02, K_Im 5.03e+03, D_Re 4.34e+03, D_Im 4.82e+03, Bd_Re 6.00e+00, Bd_Im 4.04e+00, Bs_abs 1.17e+00; max carrier Yukawa 0.87
+  [D6, coupling scale x1.0] min over vevs: M* = 4.847e+01 TeV; rows: K_Re 4.85e+01, K_Im 4.85e+01, D_Re 4.85e+01, D_Im 4.83e+01, Bd_Re 1.22e+01, Bd_Im 3.33e+01, Bs_abs 2.89e+00; vevs up [np.float64(48.3), np.float64(29.1), np.float64(55.4), np.float64(34.9)] down [np.float64(48.3), np.float64(30.6), np.float64(112.2), np.float64(96.5)] GeV; max Yukawa 1.98
+  [D3, coupling scale x0.5] equal vevs (87.0 GeV each): M* = 1.900e+03 TeV; rows: K_Re 5.33e+01, K_Im 1.90e+03, D_Re 1.64e+03, D_Im 1.82e+03, Bd_Re 2.27e+00, Bd_Im 1.53e+00, Bs_abs 4.43e-01; max carrier Yukawa 0.33
+  [D3, coupling scale x0.5] min over vevs: M* = 2.151e+01 TeV; rows: K_Re 2.15e+01, K_Im 2.15e+01, D_Re 2.15e+01, D_Im 2.15e+01, Bd_Re 2.02e+00, Bd_Im 2.95e+00, Bs_abs 6.71e-01; vevs up [np.float64(126.0), np.float64(72.2), np.float64(66.3), np.float64(69.6)] down [np.float64(126.0), np.float64(72.2), np.float64(66.3), np.float64(69.6)] GeV; max Yukawa 0.43
+  [D6, coupling scale x0.5] equal vevs (65.8 GeV each): M* = 2.513e+03 TeV; rows: K_Re 7.05e+01, K_Im 2.51e+03, D_Re 2.17e+03, D_Im 2.41e+03, Bd_Re 3.00e+00, Bd_Im 2.02e+00, Bs_abs 5.87e-01; max carrier Yukawa 0.44
+  [D6, coupling scale x0.5] min over vevs: M* = 3.774e+01 TeV; rows: K_Re 3.77e+01, K_Im 3.77e+01, D_Re 3.77e+01, D_Im 3.77e+01, Bd_Re 6.70e+00, Bd_Im 3.16e+01, Bs_abs 2.95e+00; vevs up [np.float64(159.0), np.float64(47.6), np.float64(17.5), np.float64(24.8)] down [np.float64(159.0), np.float64(36.7), np.float64(15.8), np.float64(16.0)] GeV; max Yukawa 1.65
+
+=== A-M1#0 (W_u=F); rephase res 2.6e-14
+  corner-basis |M_u| (GeV) =
+[[57.9484 57.312  57.312 ]
+ [57.312  57.9484 57.312 ]
+ [57.312  57.312  57.9484]]
+  corner-basis |M_d| (GeV) =
+[[1.3875 1.4102 1.5584]
+ [1.3159 1.3875 1.3993]
+ [1.328  1.364  1.3875]]
+  carrier 0 sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[5.7948e+01 5.9531e-13 2.5333e-14]
+ [6.0382e-13 5.7948e+01 2.4914e-14]
+ [1.6472e-14 1.0814e-14 5.7948e+01]]
+     ||aligned|| = 1.004e+02  ||flavour-changing|| = 8.489e-13
+  carrier 0 sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.4502 1.3115 0.049 ]
+ [1.3107 0.4501 0.0679]
+ [0.0674 0.0497 1.3849]]
+     ||aligned|| = 1.524e+00  ||flavour-changing|| = 1.858e+00
+  carrier x sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[19.3154 38.2072 18.8918]
+ [38.2072 18.8918 19.3154]
+ [18.8918 19.3154 38.2072]]
+     ||aligned|| = 4.680e+01  ||flavour-changing|| = 6.618e+01
+  carrier x sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.6238 1.0052 0.3801]
+ [0.2191 0.8212 0.5782]
+ [0.5712 0.2257 0.9169]]
+     ||aligned|| = 1.380e+00  ||flavour-changing|| = 1.384e+00
+  carrier y sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[19.3154 38.2072 18.8918]
+ [38.2072 18.8918 19.3154]
+ [18.8918 19.3154 38.2072]]
+     ||aligned|| = 4.680e+01  ||flavour-changing|| = 6.618e+01
+  carrier y sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.8355 0.4839 0.4993]
+ [0.6117 0.9921 0.462 ]
+ [0.4228 0.5488 0.9792]]
+     ||aligned|| = 1.625e+00  ||flavour-changing|| = 1.245e+00
+  carrier z sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[19.3154 38.2072 18.8918]
+ [38.2072 18.8918 19.3154]
+ [18.8918 19.3154 38.2072]]
+     ||aligned|| = 4.680e+01  ||flavour-changing|| = 6.618e+01
+  carrier z sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.9179 0.1117 0.4708]
+ [0.8834 0.6564 0.3957]
+ [0.2157 0.6445 0.9022]]
+     ||aligned|| = 1.445e+00  ||flavour-changing|| = 1.278e+00
+  [D3, coupling scale x1.0] equal vevs (87.0 GeV each): M* = 3.151e+03 TeV; rows: K_Re 2.75e+02, K_Im 3.15e+03, D_Re 0.00e+00, D_Im 1.58e-04, Bd_Re 5.93e+00, Bd_Im 2.90e+01, Bs_abs 2.96e+00; max carrier Yukawa 0.67
+  [D3, coupling scale x1.0] min over vevs: M* = 2.674e+03 TeV; rows: K_Re 2.29e+02, K_Im 2.67e+03, D_Re 2.67e+03, D_Im 2.67e+03, Bd_Re 7.84e+00, Bd_Im 3.51e+01, Bs_abs 3.86e+00; vevs up [np.float64(119.1), np.float64(90.2), np.float64(64.8), np.float64(61.7)] down [np.float64(119.1), np.float64(90.2), np.float64(64.8), np.float64(61.7)] GeV; max Yukawa 0.93
+      carrier 0 alone (equal-vev couplings): K_Re 2.65e+02, K_Im 2.58e+03, D_Re 2.68e-11, D_Im 9.91e-11, Bd_Re 3.96e-01, Bd_Im 2.37e+00, Bs_abs 2.47e-01
+      carrier x alone (equal-vev couplings): K_Re 7.63e+01, K_Im 1.53e+03, D_Re 2.72e+03, D_Im 1.05e-02, Bd_Re 1.07e+00, Bd_Im 1.93e+01, Bs_abs 1.54e+00
+      carrier y alone (equal-vev couplings): K_Re 1.02e+02, K_Im 1.50e+03, D_Re 1.92e+03, D_Im 6.13e+03, Bd_Re 7.14e+00, Bd_Im 1.76e+01, Bs_abs 2.14e+00
+      carrier z alone (equal-vev couplings): K_Re 2.46e+01, K_Im 1.15e+03, D_Re 1.92e+03, D_Im 6.13e+03, Bd_Re 3.84e+00, Bd_Im 1.29e+01, Bs_abs 2.15e+00
+  [D6, coupling scale x1.0] equal vevs (65.8 GeV each): M* = 4.168e+03 TeV; rows: K_Re 3.64e+02, K_Im 4.17e+03, D_Re 3.27e-05, D_Im 1.94e-04, Bd_Re 7.85e+00, Bd_Im 3.84e+01, Bs_abs 3.92e+00; max carrier Yukawa 0.88
+  [D6, coupling scale x1.0] min over vevs: M* = 8.615e+01 TeV; rows: K_Re 4.55e+01, K_Im 8.62e+01, D_Re 7.82e+01, D_Im 5.29e+01, Bd_Re 1.49e+01, Bd_Im 8.62e+01, Bs_abs 1.09e+01; vevs up [np.float64(152.7), np.float64(24.1), np.float64(24.1), np.float64(24.1)] down [np.float64(152.7), np.float64(28.9), np.float64(63.7), np.float64(19.0)] GeV; max Yukawa 2.38
+  [D3, coupling scale x0.5] equal vevs (87.0 GeV each): M* = 1.575e+03 TeV; rows: K_Re 1.38e+02, K_Im 1.58e+03, D_Re 0.00e+00, D_Im 7.90e-05, Bd_Re 2.97e+00, Bd_Im 1.45e+01, Bs_abs 1.48e+00; max carrier Yukawa 0.33
+  [D3, coupling scale x0.5] min over vevs: M* = 1.337e+03 TeV; rows: K_Re 1.14e+02, K_Im 1.34e+03, D_Re 1.34e+03, D_Im 1.34e+03, Bd_Re 3.92e+00, Bd_Im 1.76e+01, Bs_abs 1.93e+00; vevs up [np.float64(119.1), np.float64(90.2), np.float64(64.8), np.float64(61.7)] down [np.float64(119.1), np.float64(90.2), np.float64(64.8), np.float64(61.7)] GeV; max Yukawa 0.46
+  [D6, coupling scale x0.5] equal vevs (65.8 GeV each): M* = 2.084e+03 TeV; rows: K_Re 1.82e+02, K_Im 2.08e+03, D_Re 1.63e-05, D_Im 9.68e-05, Bd_Re 3.92e+00, Bd_Im 1.92e+01, Bs_abs 1.96e+00; max carrier Yukawa 0.44
+  [D6, coupling scale x0.5] min over vevs: M* = 4.869e+01 TeV; rows: K_Re 4.87e+01, K_Im 4.87e+01, D_Re 4.87e+01, D_Im 4.86e+01, Bd_Re 7.44e+00, Bd_Im 3.94e+01, Bs_abs 5.06e+00; vevs up [np.float64(126.5), np.float64(43.4), np.float64(43.4), np.float64(43.4)] down [np.float64(126.5), np.float64(31.1), np.float64(85.3), np.float64(20.5)] GeV; max Yukawa 0.66
+
+=== A-M1#1 (random W_u); rephase res 5.3e-14
+  corner-basis |M_u| (GeV) =
+[[54.4263 52.7147 36.814 ]
+ [56.9793 54.4263 38.8783]
+ [79.5492 75.3328 54.4263]]
+  corner-basis |M_d| (GeV) =
+[[1.3604 1.2738 0.9428]
+ [1.3979 1.3604 1.0379]
+ [1.8343 1.7454 1.3604]]
+  carrier 0 sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[34.8452 41.0615  7.8731]
+ [39.3384 34.0994 15.8726]
+ [14.1605 10.6492 51.4615]]
+     ||aligned|| = 7.089e+01  ||flavour-changing|| = 6.214e+01
+  carrier 0 sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[1.2928 0.3843 0.1783]
+ [0.3452 1.2754 0.3238]
+ [0.2456 0.2762 1.3092]]
+     ||aligned|| = 2.239e+00  ||flavour-changing|| = 7.349e-01
+  carrier x sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[14.4377 31.7439 13.3747]
+ [10.7772 43.4562 23.3113]
+ [27.1057 27.5679 41.8191]]
+     ||aligned|| = 6.201e+01  ||flavour-changing|| = 5.780e+01
+  carrier x sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.8946 0.5436 0.212 ]
+ [0.9251 0.1989 0.5909]
+ [0.5329 0.692  0.9878]]
+     ||aligned|| = 1.347e+00  ||flavour-changing|| = 1.519e+00
+  carrier y sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[24.5355 16.261  18.9734]
+ [48.3423  5.6149 24.2003]
+ [27.676  27.4457 44.5371]]
+     ||aligned|| = 5.116e+01  ||flavour-changing|| = 7.118e+01
+  carrier y sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.2148 0.5878 0.57  ]
+ [0.5415 1.1137 0.4402]
+ [0.5918 0.6375 1.0261]]
+     ||aligned|| = 1.529e+00  ||flavour-changing|| = 1.384e+00
+  carrier z sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[34.7847 34.6335 17.1871]
+ [19.8633 22.2181 30.4745]
+ [13.6151 10.5139 34.7537]]
+     ||aligned|| = 5.396e+01  ||flavour-changing|| = 5.580e+01
+  carrier z sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.6091 0.9984 0.4598]
+ [0.7233 0.2687 0.6731]
+ [0.2975 0.3471 0.8604]]
+     ||aligned|| = 1.088e+00  ||flavour-changing|| = 1.547e+00
+  [D3, coupling scale x1.0] equal vevs (87.0 GeV each): M* = 6.218e+03 TeV; rows: K_Re 3.58e+01, K_Im 2.63e+03, D_Re 9.71e+02, D_Im 6.22e+03, Bd_Re 4.72e-01, Bd_Im 2.61e+01, Bs_abs 2.12e+00; max carrier Yukawa 0.91
+  [D3, coupling scale x1.0] min over vevs: M* = 1.849e+02 TeV; rows: K_Re 1.85e+02, K_Im 1.85e+02, D_Re 1.85e+02, D_Im 1.85e+02, Bd_Re 1.15e+01, Bd_Im 3.94e+01, Bs_abs 3.62e+00; vevs up [np.float64(78.2), np.float64(48.1), np.float64(53.3), np.float64(137.9)] down [np.float64(78.2), np.float64(48.1), np.float64(53.3), np.float64(137.9)] GeV; max Yukawa 1.57
+      carrier 0 alone (equal-vev couplings): K_Re 4.95e+01, K_Im 1.27e+03, D_Re 1.60e+03, D_Im 6.75e+03, Bd_Re 4.56e+00, Bd_Im 2.13e+00, Bs_abs 1.27e+00
+      carrier x alone (equal-vev couplings): K_Re 1.44e+02, K_Im 1.28e+03, D_Re 1.22e+03, D_Im 2.26e+03, Bd_Re 7.33e+00, Bd_Im 2.16e+00, Bs_abs 2.72e+00
+      carrier y alone (equal-vev couplings): K_Re 1.03e+02, K_Im 1.63e+03, D_Re 1.64e+03, D_Im 4.15e+03, Bd_Re 4.25e+00, Bd_Im 2.39e+01, Bs_abs 2.25e+00
+      carrier z alone (equal-vev couplings): K_Re 8.03e+01, K_Im 3.09e+03, D_Re 1.51e+03, D_Im 3.92e+03, Bd_Re 7.51e+00, Bd_Im 1.08e+01, Bs_abs 2.05e+00
+  [D6, coupling scale x1.0] equal vevs (65.8 GeV each): M* = 8.226e+03 TeV; rows: K_Re 4.73e+01, K_Im 3.47e+03, D_Re 1.28e+03, D_Im 8.23e+03, Bd_Re 6.25e-01, Bd_Im 3.45e+01, Bs_abs 2.80e+00; max carrier Yukawa 1.21
+  [D6, coupling scale x1.0] min over vevs: M* = 8.985e+01 TeV; rows: K_Re 6.31e+01, K_Im 8.99e+01, D_Re 8.94e+01, D_Im 8.99e+01, Bd_Re 7.21e+00, Bd_Im 8.99e+01, Bs_abs 4.95e+00; vevs up [np.float64(135.6), np.float64(31.3), np.float64(64.6), np.float64(47.4)] down [np.float64(135.6), np.float64(30.8), np.float64(23.6), np.float64(55.0)] GeV; max Yukawa 2.41
+  [D3, coupling scale x0.5] equal vevs (87.0 GeV each): M* = 3.109e+03 TeV; rows: K_Re 1.79e+01, K_Im 1.31e+03, D_Re 4.85e+02, D_Im 3.11e+03, Bd_Re 2.36e-01, Bd_Im 1.31e+01, Bs_abs 1.06e+00; max carrier Yukawa 0.46
+  [D3, coupling scale x0.5] min over vevs: M* = 9.243e+01 TeV; rows: K_Re 9.24e+01, K_Im 9.24e+01, D_Re 9.24e+01, D_Im 9.24e+01, Bd_Re 5.73e+00, Bd_Im 1.97e+01, Bs_abs 1.81e+00; vevs up [np.float64(78.2), np.float64(48.1), np.float64(53.3), np.float64(137.9)] down [np.float64(78.2), np.float64(48.1), np.float64(53.3), np.float64(137.9)] GeV; max Yukawa 0.78
+  [D6, coupling scale x0.5] equal vevs (65.8 GeV each): M* = 4.113e+03 TeV; rows: K_Re 2.37e+01, K_Im 1.74e+03, D_Re 6.42e+02, D_Im 4.11e+03, Bd_Re 3.12e-01, Bd_Im 1.73e+01, Bs_abs 1.40e+00; max carrier Yukawa 0.60
+  [D6, coupling scale x0.5] min over vevs: M* = 1.615e+01 TeV; rows: K_Re 7.19e+00, K_Im 1.62e+01, D_Re 1.62e+01, D_Im 9.11e+00, Bd_Re 1.27e+01, Bd_Im 1.62e+01, Bs_abs 2.19e+00; vevs up [np.float64(15.9), np.float64(11.2), np.float64(11.1), np.float64(142.6)] down [np.float64(15.9), np.float64(37.2), np.float64(79.9), np.float64(41.2)] GeV; max Yukawa 3.59
+
+=== A-M1#2 (E1 W_u); rephase res 9.5e-14
+  corner-basis |M_u| (GeV) =
+[[ 34.6751  46.8101 122.3587]
+ [ 24.8462  34.6751  90.0425]
+ [ 10.7108  13.1304  34.6751]]
+  corner-basis |M_d| (GeV) =
+[[0.8404 1.2572 2.9477]
+ [0.5801 0.8404 2.1274]
+ [0.2714 0.4264 0.8404]]
+  carrier 0 sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[ 9.5701 27.0013 19.5373]
+ [28.1264  5.0937 19.6296]
+ [17.8797 21.1505 20.8647]]
+     ||aligned|| = 2.351e+01  ||flavour-changing|| = 5.527e+01
+  carrier 0 sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.6506 0.2119 0.488 ]
+ [0.3268 0.6348 0.4434]
+ [0.4198 0.5084 0.5211]]
+     ||aligned|| = 1.048e+00  ||flavour-changing|| = 1.011e+00
+  carrier x sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[14.2294 11.2178 49.3123]
+ [27.2974 12.8104 43.5846]
+ [16.4253 11.8934 47.9575]]
+     ||aligned|| = 5.164e+01  ||flavour-changing|| = 7.492e+01
+  carrier x sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.2389 0.3303 1.1845]
+ [0.1316 0.8218 0.9981]
+ [0.1785 0.4371 1.1075]]
+     ||aligned|| = 1.400e+00  ||flavour-changing|| = 1.658e+00
+  carrier y sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[26.9446 20.4965 62.311 ]
+ [ 8.0815  7.4807 26.4158]
+ [34.8049 19.8232 87.3737]]
+     ||aligned|| = 9.174e+01  ||flavour-changing|| = 8.167e+01
+  carrier y sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.3529 0.7808 1.4787]
+ [0.1205 0.2132 0.5723]
+ [0.2615 0.9916 2.0982]]
+     ||aligned|| = 2.138e+00  ||flavour-changing|| = 2.047e+00
+  carrier z sector u: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[24.1456 17.8899  5.7546]
+ [ 8.1732 15.7255  1.0981]
+ [33.7396 12.2709 16.3743]]
+     ||aligned|| = 3.314e+01  ||flavour-changing|| = 4.135e+01
+  carrier z sector d: mass-basis image |Phat| (GeV) [diag = aligned part; off = flavour-changing]
+[[0.5847 0.5116 0.1881]
+ [0.3929 0.1572 0.0213]
+ [0.1928 0.9237 0.4562]]
+     ||aligned|| = 7.581e-01  ||flavour-changing|| = 1.159e+00
+  [D3, coupling scale x1.0] equal vevs (87.0 GeV each): M* = 2.586e+03 TeV; rows: K_Re 1.17e+02, K_Im 1.39e+03, D_Re 1.45e+03, D_Im 2.59e+03, Bd_Re 1.27e+01, Bd_Im 5.13e+00, Bs_abs 1.60e+00; max carrier Yukawa 1.41
+  [D3, coupling scale x1.0] min over vevs: M* = 1.301e+03 TeV; rows: K_Re 1.36e+02, K_Im 1.30e+03, D_Re 1.30e+03, D_Im 1.30e+03, Bd_Re 2.02e+01, Bd_Im 1.97e+01, Bs_abs 3.86e+00; vevs up [np.float64(106.7), np.float64(70.0), np.float64(51.3), np.float64(106.7)] down [np.float64(106.7), np.float64(70.0), np.float64(51.3), np.float64(106.7)] GeV; max Yukawa 2.38
+      carrier 0 alone (equal-vev couplings): K_Re 3.58e+01, K_Im 9.19e+02, D_Re 1.93e+03, D_Im 2.36e+03, Bd_Re 9.39e+00, Bd_Im 1.23e+01, Bs_abs 2.02e+00
+      carrier x alone (equal-vev couplings): K_Re 3.07e+01, K_Im 7.12e+02, D_Re 1.24e+03, D_Im 1.11e+03, Bd_Re 1.00e+01, Bd_Im 1.57e+00, Bs_abs 2.81e+00
+      carrier y alone (equal-vev couplings): K_Re 6.19e+01, K_Im 6.23e+02, D_Re 8.86e+02, D_Im 1.32e+03, Bd_Re 1.33e+01, Bd_Im 1.35e+01, Bs_abs 3.20e+00
+      carrier z alone (equal-vev couplings): K_Re 8.78e+01, K_Im 1.10e+03, D_Re 8.29e+02, D_Im 1.28e+03, Bd_Re 1.85e+00, Bd_Im 7.80e+00, Bs_abs 5.96e-01
+  [D6, coupling scale x1.0] equal vevs (65.8 GeV each): M* = 3.420e+03 TeV; rows: K_Re 1.55e+02, K_Im 1.84e+03, D_Re 1.92e+03, D_Im 3.42e+03, Bd_Re 1.68e+01, Bd_Im 6.78e+00, Bs_abs 2.11e+00; max carrier Yukawa 1.86
+  [D6, coupling scale x1.0] min over vevs: M* = 1.804e+02 TeV; rows: K_Re 1.80e+02, K_Im 1.80e+02, D_Re 1.80e+02, D_Im 1.80e+02, Bd_Re 2.12e+01, Bd_Im 3.69e+00, Bs_abs 7.51e+00; vevs up [np.float64(73.7), np.float64(97.0), np.float64(34.5), np.float64(72.6)] down [np.float64(73.7), np.float64(29.8), np.float64(67.4), np.float64(59.8)] GeV; max Yukawa 3.54
+  [D3, coupling scale x0.5] equal vevs (87.0 GeV each): M* = 1.293e+03 TeV; rows: K_Re 5.87e+01, K_Im 6.94e+02, D_Re 7.24e+02, D_Im 1.29e+03, Bd_Re 6.34e+00, Bd_Im 2.56e+00, Bs_abs 7.99e-01; max carrier Yukawa 0.70
+  [D3, coupling scale x0.5] min over vevs: M* = 6.506e+02 TeV; rows: K_Re 6.79e+01, K_Im 6.51e+02, D_Re 6.51e+02, D_Im 6.51e+02, Bd_Re 1.01e+01, Bd_Im 9.86e+00, Bs_abs 1.93e+00; vevs up [np.float64(106.7), np.float64(70.0), np.float64(51.3), np.float64(106.7)] down [np.float64(106.7), np.float64(70.0), np.float64(51.3), np.float64(106.7)] GeV; max Yukawa 1.19
+  [D6, coupling scale x0.5] equal vevs (65.8 GeV each): M* = 1.710e+03 TeV; rows: K_Re 7.76e+01, K_Im 9.18e+02, D_Re 9.58e+02, D_Im 1.71e+03, Bd_Re 8.39e+00, Bd_Im 3.39e+00, Bs_abs 1.06e+00; max carrier Yukawa 0.93
+  [D6, coupling scale x0.5] min over vevs: M* = 6.867e+01 TeV; rows: K_Re 6.87e+01, K_Im 6.78e+01, D_Re 6.87e+01, D_Im 6.87e+01, Bd_Re 7.48e+00, Bd_Im 5.42e+00, Bs_abs 3.32e+00; vevs up [np.float64(61.1), np.float64(84.8), np.float64(24.7), np.float64(36.9)] down [np.float64(61.1), np.float64(35.3), np.float64(79.3), np.float64(99.4)] GeV; max Yukawa 2.48
+watchdog peak RSS 74992 KB

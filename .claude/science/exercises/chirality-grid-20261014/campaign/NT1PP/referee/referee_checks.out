@@ -1,0 +1,13 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+edge=top charge=1 eW-pi=+4.441e-16 ||H psi||=1.903e-16 min|eig H|=2.256e-16
+edge=bottom charge=2 eW-pi=+0.000e+00 ||H psi||=6.379e-17 min|eig H|=1.332e-15
+E1 independent WLS: nu=0.869110 sigma=0.064442 significance=13.49; L*P=[0.03509572 0.03856768 0.03948231 0.03971292]
+edge L=16..24: p=4.973778, power_RSS=4.321e-05, nu=0.251636, exp_RSS=7.899e-03
+2x2 Bloch FHS: C_positive(q=1)=-1.000000000000; C_R(q=2)=+4.000000000000; C(L1)=-1.000000000000; C(11112)=+0.000000000000
+holonomy FTC at L=8,W=.3: max|q(W)-q(0)-W*hbar|=2.015e-11
+watchdog peak RSS 129088 KB

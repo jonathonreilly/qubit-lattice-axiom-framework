@@ -528,7 +528,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **OPEN:** otherwise.
 - **Scope to state:** the model of the mirror gap, the dimension, and the order.
 
-**NT-1″ result (15:06Z; same family; referee launched): OPEN at (b″). The obstruction is in the open-time geometry, not in the measure.**
+**NT-1″ result (15:06Z; same family; referee launched): OPEN at (b″). The obstruction is in the open-time geometry, not in the measure.** [Referee: CONFIRMED WITH CORRECTIONS; OPEN at (b″) is correct. See below.]
 - **(b″): edge zero modes (proved; checked).** On the open-time strip, H_W has exact zero modes on the top or bottom slice whenever e·W_edge ≡ π, for any plaquettes. Every winding of the Wilson-line circle crosses such a point. So there is no admissible non-contractible loop: 0/17 at Lx 4, 0/11 at Lx 6 and at Lx 8. The anomalous L1 control is blocked the same way.
 - **On a torus (descriptive):** the toron Chern number is C(11112) = 0 and C(L1) = −1. The 11112 holonomy spread decays at rate ln 2, with winding 0 against L1's 1.
 - **(b′): bulk tail exponential.** ν = 0.869 ± 0.064 (13.5σ) on random fields; about ln 2 on clean backgrounds to Lx 22. L1's plateau is exactly 1/(8π)/Lx.
@@ -559,3 +559,13 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **CHI-RP-PASS-at-power:** G-LEG-T passes, and the kernel is PSD within error, with the vector-like reference negative on the same geometry.
   - **OPEN:** otherwise, naming the item.
 - **Comparator.** K2c's torus results at Lx = 2: negative for the vector-like overlap at Lt = 12 and 16.
+
+**NT-1″ referee (codex gpt-5.6-sol, xhigh; returned 15:17Z; recorded 15:19Z): CONFIRMED WITH CORRECTIONS. The correct reading is OPEN, failing (b″).**
+- **The edge lemma** is confirmed for modes supported on the boundary. Independent checks on nonuniform fields give residuals of 6e-17 to 2e-16. The "iff" does not exclude unrelated bulk zero modes.
+  - This is standard Wilson-fermion / Chern-insulator edge physics (Sen, PRD 102, 094520; Kaplan–Sen, PRL 132, 141604).
+- **(b″) cannot be met on this strip.** Every degree-one winding of the Wilson line crosses an edge zero. Vacuous integrability on contractible pieces does not satisfy the explicit non-contractible-loop requirement.
+- **(b′)'s registered bulk proxy passes** (ν = 0.8691 ± 0.0644, 13.5σ), with the L1 1/Lx contrast.
+  - The edge data fit Lx^−4.974 through Lx = 24.
+  - The argument that any Ward current inherits this edge behaviour is correct. But the universal asymptotic "no local measure on this strip" claim is strongly supported, not proved from finite sizes.
+- **Torus topology is confirmed independently:** C_L(1) = −1 and C_R(2) = +4, so C(11112) = 0 and C(L1) = −1.
+- **For route 1:** periodic-time link-reflection positivity is well defined on an even torus with two reflection cuts (Osterwalder–Seiler). A global torus measure and new kernels at Lx ≥ 4 are the natural next work (TOR-1, running). Periodic time is not the only conceivable change of geometry.

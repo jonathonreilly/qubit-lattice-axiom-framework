@@ -1,0 +1,72 @@
+{
+  "mathematical_roles": [
+    {
+      "alias": "premises/root_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18448,
+      "end": 36172,
+      "bytes": 17724,
+      "sha256": "de69e1821cb31a38e71998f116c881c177d498e6e8f373f62d4d2e31c68fb2dd",
+      "role": "Silent-cell negative word, weighted path, bare residual and m=5 geometry",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea"
+    },
+    {
+      "alias": "premises/independent_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a",
+      "role": "Positive shared-head word, full-space lift, local-cell norm and resource composition",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea"
+    },
+    {
+      "alias": "premises/root_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 14202,
+      "end": 25142,
+      "bytes": 10940,
+      "sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6",
+      "role": "Literal scalar-port single-Pauli cell for both negative m=5 windows",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+    },
+    {
+      "alias": "premises/independent_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "role": "Positive cell response, reversed right entry and full-space bipartite norm in boundary window",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+    }
+  ],
+  "intended_canonical_targets": [
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+  ],
+  "actual_final_graph_result": null,
+  "expected_after_actual_binding": {
+    "new_nodes": 1,
+    "new_edges": 2
+  },
+  "internal_use": "Boundary proof imports the root residence estimate included as the first complete body in this note; no self edge.",
+  "publication_binding_complete": true,
+  "methodological_attribution_only": [],
+  "excluded": [
+    "Concrete reader 75cc/e221/5ff",
+    "autonomous supplier",
+    "optional four-rail numerical word",
+    "branch-ancestry theorem import"
+  ],
+  "publication_binding": {
+    "binding_complete": true,
+    "base_branch": "physics-loop/toe-local-clock-word-20261015",
+    "base_head": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+    "base_tree": "9669328d461a451696d83f68010e62aeb5da2be1",
+    "base_pr": 9590,
+    "feature_head": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+    "publication_pr": null
+  },
+  "graph_status": "Exactly two expected mathematical citation targets: word and cell. Actual graph verification is a separate dated operation."
+}

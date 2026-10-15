@@ -1,0 +1,25 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "local_clock_readout_window_domain_revision/AFTER.md",
+      "start": 18674,
+      "end": 33077,
+      "bytes": 14403,
+      "sha256": "fc63ea1ed84f9e61f2ad0fc96ce33bdcff5779a9c0e38fa7c73d02f6a829cefc"
+    },
+    {
+      "alias": "local_clock_readout_window_independent_domain_revision/AFTER.md",
+      "start": 33181,
+      "end": 62080,
+      "bytes": 28899,
+      "sha256": "101d7778f3aaecbdb2db277c2d9857eee53cc7fae93941e444fe03d939ff36e9"
+    },
+    {
+      "alias": "local_clock_boundary_window_candidate/DERIVATION.md",
+      "start": 62134,
+      "end": 80595,
+      "bytes": 18461,
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1"
+    }
+  ]
+}

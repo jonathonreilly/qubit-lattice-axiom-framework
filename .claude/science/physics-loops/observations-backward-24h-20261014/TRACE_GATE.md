@@ -91,3 +91,15 @@ artifact_role: theorem
 next_trace_action: Obtain an independently justified discrepancy/time supplier or pivot to a cross-domain action/scale discriminator.
 
 The exact feasible set identifies precisely what calibrated information would constrain a carrier. Actual receiver-reference conventions are reconstructed and a restricted total-voltage class is rejected. Neither construction chooses the physical supplier or identifies a scalar residual. No theory assumption is counted as retired.
+
+## Error-direction construction trace
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_measurement_identification
+target_blocker_text: Derive remaining measurement assumptions rather than supply them
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Prefer a distinct observation-driven action/potential/scale reconstruction unless an actual track-specific receiver transfer/calibration supplier supplies a new physical discriminator.
+
+The new construction conditionally removes the radial-scale input and challenges its angular replacement. Its downstream consumer is physically calibrated scalar inference. It does not identify a scalar signal or derive the real joint signal/error/measurement model.

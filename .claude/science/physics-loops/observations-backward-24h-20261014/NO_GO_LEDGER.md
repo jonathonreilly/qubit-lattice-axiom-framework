@@ -37,3 +37,7 @@ Adjacent NCO polynomial continuity did not resolve the original specification ve
 ## M10 restricted candidate failure and open escapes
 
 All1200 fixed development blocks exclude constant total analog modulus with ideal quantization as the only discrepancy, by exact closed-cell certificates. This is not an exclusion of a carrier plus noise/modulation/gain/propagation. With arbitrary additive discrepancy every frequency remains explainable; a calibrated bound or structured physical error class reopens informative inference. The single-local-peak16k FFT route disagrees with an independent estimator at Ka49112; both candidates and the original failed comparison remain. No broad instrument/theory impossibility follows. N1–N8 and positive escape routes are explicit in the canonical note.
+
+## Error-direction attempt: bounded result and surviving routes
+
+The attempted scale-elimination route succeeds mathematically only with the explicit conditional angular law. The fixed exposed records challenge the full candidate tone/direction/measurement model numerically. They do not isolate a failing component or close all calibration routes. Axis-supported equal-covariance, validation-selected-reference and FIR examples target only their named substitutions. Actual monitor/transfer-response data, a justified varying signal and independent physical tests remain live. Canonical note contains N1–N8; no theory-wide no-go or independent-wall count is asserted.

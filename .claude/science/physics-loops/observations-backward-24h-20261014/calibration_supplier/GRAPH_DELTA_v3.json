@@ -1,0 +1,26 @@
+{
+  "base": "18c1fe25210d3a19a8f77530937ae7af124084f0",
+  "node": {
+    "claim_id": "cassini_error_direction_model_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/cassini_error_direction.py",
+      "scripts/cassini_error_direction_development.py",
+      "scripts/cassini_error_direction_sampling.py"
+    ],
+    "note_hash": "571c6b8f108de2c4100653f0fd2509bf33745bb02b5bdee1d2c2b2530c7d71b3",
+    "path": "docs/CASSINI_ERROR_DIRECTION_MODEL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/cassini_error_direction_check.py",
+    "title": "Cassini error-scale elimination under a tested direction model"
+  },
+  "node_count": 7122,
+  "edge_count": 16050,
+  "new_nodes": [
+    "cassini_error_direction_model_bounded_theorem_note_2026-10-15"
+  ],
+  "changed_existing_nodes": [],
+  "manifest_sha256": "1b7957c1f20e367bed837a29c7c99eef00d81ddc67b971fbcf2a372b19ae4022"
+}

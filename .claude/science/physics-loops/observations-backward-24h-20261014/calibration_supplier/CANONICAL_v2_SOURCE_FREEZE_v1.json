@@ -1,0 +1,35 @@
+{
+  "source_inputs": {
+    "scripts/cassini_error_direction_development.py": "b2de0a9f609f852acfceb5b8adfafcc958f3c68674f6acc8dd84ea5b54575905",
+    "scripts/cassini_error_direction.py": "c9b1e47cbaeaa8faf31543541e983c19f23a4e4d1fdfebae88e1e0590843e7aa",
+    "scripts/cassini_error_direction_inputs.json": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/DEVELOPMENT_PROTOCOL_v1.json": "77cab3aac127b3ba804feabf6cd6107c69fc7d4c3462e65c6ae589253b45a381",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/DIRECTION_TEST_PROTOCOL_v1.json": "0ba536a617ea2f4dddcec0031a1e39c37c7aee2bda2e0c2b8213f744516ea266"
+  },
+  "raw_inputs": [
+    {
+      "filename": "c32easc2002_169_1335x54x25d.1a1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.1a1",
+      "sha256": "28af13233a64f7629b794cc8beaad0db2500fb09cc421cda3e82544144235a92",
+      "role": "entire product exposed development; not independent test"
+    },
+    {
+      "filename": "c32easc2002_169_1335x54k25d.1b1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54k25d.1b1",
+      "sha256": "9544e294be8867cb013b3d96891a413f5dddc3d5e0236e8a2b9331fe7d45a19e",
+      "role": "entire product exposed development; not independent test"
+    },
+    {
+      "filename": "rsr_c32easc2002_169_1335x54x25d.lbl",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.lbl",
+      "sha256": "36ab671cbb83c7d04060c2a19058800a4fc50f780aa8fa6e9f77ed3089046382",
+      "role": "primary format metadata"
+    },
+    {
+      "filename": "rsr_c32easc2002_169_1335x54k25d.lbl",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54k25d.lbl",
+      "sha256": "2349b0473986f5247650fc88a5bbaf7e859786e22253b38f4a8719af3dd0c697",
+      "role": "primary format metadata"
+    }
+  ]
+}

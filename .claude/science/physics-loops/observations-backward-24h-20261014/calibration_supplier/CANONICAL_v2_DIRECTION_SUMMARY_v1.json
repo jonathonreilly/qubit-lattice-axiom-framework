@@ -1,0 +1,190 @@
+{
+  "role": "exposed-development conditional error-law diagnostic; no independent empirical test or scalar inference",
+  "source_freeze_sha256": "e7e30d9e3914af0ec77bcc609285bc5f11a19ff7dd821e33d7ba3ee58c548487",
+  "ledger_sha256": "47c52a45a6b5015522c80749f15e644328e2817b01cf17614628b679b99a8105",
+  "headers": {
+    "X": {
+      "FGAIN": {
+        "38": 600
+      },
+      "FGAIN IF BANDWIDTH": {
+        "110": 600
+      },
+      "DIG ATTENUATION": {
+        "40": 600
+      },
+      "TRACKING MODE": {
+        "3": 600
+      },
+      "DATA ERROR COUNT": {
+        "0": 600
+      }
+    },
+    "Ka": {
+      "FGAIN": {
+        "44": 600
+      },
+      "FGAIN IF BANDWIDTH": {
+        "110": 600
+      },
+      "DIG ATTENUATION": {
+        "49": 600
+      },
+      "TRACKING MODE": {
+        "3": 600
+      },
+      "DATA ERROR COUNT": {
+        "0": 600
+      }
+    }
+  },
+  "statistics": {
+    "X": {
+      "records": 600,
+      "extreme_records": 0,
+      "training_failures": 0,
+      "training_frequency_Hz": {
+        "min": -0.7759440480215858,
+        "p01": -0.41002792109708425,
+        "median": 0.29078253982049773,
+        "p99": 1.172504443796623,
+        "max": 1.6762541304750016
+      },
+      "low_over_high_per_rank": {
+        "min": 1.0603283788523266,
+        "p01": 1.1879179604718222,
+        "median": 1.6348870086326266,
+        "p99": 3.298709381142421,
+        "max": 4.458963995705169
+      },
+      "real_lag1": {
+        "min": 0.09293800247472733,
+        "p01": 0.11515702655146674,
+        "median": 0.2289104632540438,
+        "p99": 0.5279511036113012,
+        "max": 0.6310399872992388
+      },
+      "imaginary_lag1": {
+        "min": -0.09489140310819696,
+        "p01": -0.07421824808676147,
+        "median": -0.0014183549180094704,
+        "p99": 0.06515969260684955,
+        "max": 0.08335180558303225
+      },
+      "real_pseudocovariance": {
+        "min": -0.3107929711130055,
+        "p01": -0.2311438583827436,
+        "median": -0.000423643887861761,
+        "p99": 0.23317992431973047,
+        "max": 0.31154987174588933
+      },
+      "imaginary_pseudocovariance": {
+        "min": -0.45875651302491555,
+        "p01": -0.22377777909133179,
+        "median": 0.002122894528809162,
+        "p99": 0.23913097742392975,
+        "max": 0.347261509685353
+      },
+      "direction_challenge": {
+        "pointwise": {
+          "numerically_excluded": 489,
+          "no_arc": 0,
+          "normalized_minimum_score": {
+            "min": -0.06867221992778705,
+            "p01": -0.03556766976027863,
+            "median": 0.02343854978996411,
+            "p99": 0.10477727802559623,
+            "max": 0.13192958771585206
+          }
+        },
+        "family_1200": {
+          "numerically_excluded": 168,
+          "no_arc": 0,
+          "normalized_minimum_score": {
+            "min": -0.11139946828608288,
+            "p01": -0.08368449061542138,
+            "median": -0.016755952708606144,
+            "p99": 0.06971390169499435,
+            "max": 0.08519235161245452
+          }
+        }
+      }
+    },
+    "Ka": {
+      "records": 600,
+      "extreme_records": 0,
+      "training_failures": 0,
+      "training_frequency_Hz": {
+        "min": -3.278829894604371,
+        "p01": -1.1828003883843963,
+        "median": 0.9822223356449342,
+        "p99": 3.260564953151129,
+        "max": 3.9160604261244316
+      },
+      "low_over_high_per_rank": {
+        "min": 2.8055353441338036,
+        "p01": 3.5803281344839535,
+        "median": 11.525676884239292,
+        "p99": 25.845591899299084,
+        "max": 29.986438528537814
+      },
+      "real_lag1": {
+        "min": 0.4585317767421521,
+        "p01": 0.5561499485908351,
+        "median": 0.8343492492082836,
+        "p99": 0.9230591777225312,
+        "max": 0.932383352025958
+      },
+      "imaginary_lag1": {
+        "min": -0.0373859679551193,
+        "p01": -0.021186856129750395,
+        "median": 0.004554810597832025,
+        "p99": 0.02627190007360954,
+        "max": 0.03707420395269147
+      },
+      "real_pseudocovariance": {
+        "min": -0.6729347100625529,
+        "p01": -0.5525705041747643,
+        "median": 0.0017419024229705805,
+        "p99": 0.564377812126642,
+        "max": 0.6511782293987495
+      },
+      "imaginary_pseudocovariance": {
+        "min": -0.6481576737342685,
+        "p01": -0.5264910350251806,
+        "median": 0.003593547735674247,
+        "p99": 0.5561977732550548,
+        "max": 0.6086815390981315
+      },
+      "direction_challenge": {
+        "pointwise": {
+          "numerically_excluded": 592,
+          "no_arc": 8,
+          "normalized_minimum_score": {
+            "min": 0.0594411809596828,
+            "p01": 0.10267893469677379,
+            "median": 0.27425745003309576,
+            "p99": 0.5887972090485555,
+            "max": 0.6396521236713774
+          }
+        },
+        "family_1200": {
+          "numerically_excluded": 578,
+          "no_arc": 21,
+          "normalized_minimum_score": {
+            "min": -0.17190510153958338,
+            "p01": 0.0812702764278172,
+            "median": 0.2551824080143044,
+            "p99": 0.5629561399398753,
+            "max": 0.6067664087006085
+          }
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 16.740035958122462,
+  "physical_noise_scale_calibrated": false,
+  "physical_noise_direction_law_derived": false,
+  "numerical_status": "Real-arithmetic formulas have conservative mesh/ADC margins; floating computations are not outward-rounded interval certificates.",
+  "independent_empirical_tests": 0
+}

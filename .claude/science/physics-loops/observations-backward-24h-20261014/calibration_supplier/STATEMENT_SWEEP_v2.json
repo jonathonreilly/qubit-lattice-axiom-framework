@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-15T10:09:35.323378+00:00",
+  "ref": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "repair": "v1 first POSIX regex incorrectly used a noncapturing group; failed search preserved and repeated here. No absent-result claim was based on it.",
+  "searches": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(spherical.*(noise|error)|(noise|error).*spherical)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 0,
+      "stdout": "origin/main:docs/ADMISSIBILITY_RULE_RECORDS_WITH_INERTIA_CONTENT_AS_DIRECTION_OF_TRAVEL_CONSERVED_MOMENTUM_STRUCTURELESS_EQUILIBRIUM_SOUND_SPEED_FORCES_NEED_CAPTURE_OR_EMISSION_BOUNDED_THEOREM_NOTE_2026-09-20.md:98:Control `specs/supervisor_control_block44_bodies.py` (floating point; side 96; density `0.3`; `\u03b3 = 1`; spherical bodies of radius 3; a reservoir at density `0.3` on the two outer layers; 2000 warm-up and 8000 measured ticks; force per tick along the joining axis, positive towards the other body, mean and standard error over ten blocks).\norigin/main:docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md:506:After multiplying by the spherical measure r^2dr, the integrated errors are\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(unknown.variance|noise.direction|spherical.direction|quantizer.safe)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(F.distribution|F-test|F_test)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 0,
+      "stdout": "origin/main:docs/ADMISSIBILITY_D4_H1_ACI_COMPONENT_SUMMARY_TERMINAL_CONFLUENCE_BOUNDARY_NOTE_2026-08-28.md:196:`len(range(64))` checks. The optional self-test reports this split explicitly;\norigin/main:docs/ADMISSIBILITY_D4_H1_ACI_COMPONENT_SUMMARY_TERMINAL_CONFLUENCE_BOUNDARY_NOTE_2026-08-28.md:212:python3 -B scripts/admissibility_d4_h1_aci_component_summary_terminal_gate_2026_08_28.py --self-test\norigin/main:docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md:197:The runner still self-tests the comparison path on synthetic coefficients: it\norigin/main:docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md:262:Drouffe-Itzykson branch); the synthetic-coefficient self-test of the\norigin/main:docs/C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md:197:4. **Self-test**: cross-checks the analytic NLO derivation against the\norigin/main:docs/EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness.md:222:8. **Self-test** validates SU(3) heatbath: isotropic 2\u2074 at \u03b2_W = 6\norigin/main:docs/EXACT_TIER_PATH_INTEGRAL_BOUNDED_NOTE_2026-05-07_exact.md:179:6. **Self-test** verifies isotropic SU(3) at \u03b2=6 gives plaquette\norigin/main:docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md:95:> rigorous **lower bound** on the number of distribution-valued rules. It is\norigin/main:docs/GL_F_RECORD_VALUE_DICTIONARY_COMMUTING_LOCK_BOUNDED_THEOREM_NOTE_2026-09-01.md:161:`0` otherwise (runner group A self-tests `1, 1/3, 1/5, 1/15`, odd `-> 0`).\norigin/main:docs/HIGGS_MASS_WILSON_LOOP_SPECTROSCOPY_BOUNDED_NOTE_2026-05-10_higgsH3.md:268:    vocabulary absence, cited upstream existence, kernel self-test,\norigin/main:docs/INDEPENDENT_GENERATORS_HELDOUT_NOTE.md:137:- **Negative result on out-of-distribution generalization**\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:30:The runner also exposes a `--self-test` mode that executes temporary hostile\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:86:2026-05-06 stdout-regression self-test transcript:\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:87:`outputs/frontier_koide_hostile_review_guard_self_test_2026-05-06.txt`.\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:93:`outputs/frontier_koide_hostile_review_guard_self_test_2026-07-27.txt`.\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:105:SELF_TEST_PASSED=TRUE\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:106:SELF_TEST_PASS_COUNT=11\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:107:SELF_TEST_FAIL_COUNT=0\norigin/main:docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md:112:contract.  The paired self-test demonstrates that source-only labels and\norigin/main:docs/PROJECTIVE_HISTORY_FIXED_FIRST_TARGET_LOCAL_PROGRAM_BOUNDED_THEOREM_NOTE_2026-09-13.md:156:c_j-e1 and T at c_j+e1. Hence its actual F distribution is\norigin/main:docs/SPINNETWORK_FULL_ED_LOOP_BASIS_BOUNDED_THEOREM_NOTE_2026-05-07_w1exactv2.md:192:python3 scripts/cl3_ks_full_spinnet_ed_loop_basis_2026_05_07_w1exactv2.py --mode self_test\norigin/main:docs/SPINNETWORK_FULL_ED_LOOP_BASIS_BOUNDED_THEOREM_NOTE_2026-05-07_w1exactv2.md:199:[1] Loop-supporting subset enumeration self-test\norigin/main:docs/U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md:355:- physical ownership of distribution overlap as a transition/action weight;\norigin/main:docs/YT_P2_TASTE_STAIRCASE_DRESSING_DISTRIBUTION_INVARIANCE_THEOREM_NOTE_2026-05-17.md:117:that choice?\" This note answers: **no choice of distribution can produce\norigin/main:docs/YT_P2_TASTE_STAIRCASE_DRESSING_DISTRIBUTION_INVARIANCE_THEOREM_NOTE_2026-05-17.md:271:choice of distribution `{r_k}`.\norigin/main:docs/YT_P2_TASTE_STAIRCASE_DRESSING_DISTRIBUTION_INVARIANCE_THEOREM_NOTE_2026-05-17.md:300:implements the family of distributions explicitly and verifies the\norigin/main:docs/YT_P2_TASTE_STAIRCASE_DRESSING_DISTRIBUTION_INVARIANCE_THEOREM_NOTE_2026-05-17.md:368:is identical for every choice of distribution `{r_k}`.\norigin/main:docs/ai_methodology/raw/prompts_session_fe95a681_jonreilly.md:3175:there is no holdout / leave-one-out / out-of-distribution validation in the artifact chain\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(Dirichlet.*frequency|frequency.*Dirichlet)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

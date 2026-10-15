@@ -52,3 +52,9 @@ Ninth milestone: [PR #9594](https://github.com/jonathonreilly/qubit-lattice-axio
 ## M10 receiver-reference milestone awaiting publication
 
 Branch codex/observations-backward-receiver-20261015, stacked on frozen M9 codex/observations-backward-channels-20261015 at e143a32663ad58483efa73050d9344a700d91508. Claim bounded_theorem; status conditional-support. Final exact-source scientific reports are complete; staged delivery and publication follow. Source unit is receiver_reference/REVIEW_RECORD_v1.md plus the canonical note/runner. No main push, merge or formal audit.
+
+M10 delivered 2026-10-15T09:36:41.401991+00:00: [PR#9597](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9597), regular/open,62paths, head`18c1fe25210d3a19a8f77530937ae7af124084f0`, baseM9e143a326. Final source frozen and attached. No publication backlog for this unit.
+
+## Error-direction unit ready for publication
+
+M11 is prepared against frozenM10head18c1fe25210d3a19a8f77530937ae7af124084f0 on codex/observations-backward-discrepancy-20261015. Source and empirical checks are complete; final explicit staging/delivery check and regular PR creation follow. No science is merged. The independent cluster judgment is OPEN. Physical supplier remains open.

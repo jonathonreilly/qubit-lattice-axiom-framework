@@ -1,0 +1,53 @@
+{
+  "frozen_at": "2026-10-15T10:32:05.041100+00:00",
+  "scope": "Complete exact two-wording-change diff and source identity; no scientific rerun",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_WORDING_SUPPLEMENT_v1.md",
+    "sha256": "227442f71da82c5c564fddcfe62fbb7df853bebb31d423a843462aba2a9f5b45",
+    "bytes": 2499
+  },
+  "prior_full_review": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_REVIEW_v1.md",
+    "sha256": "ba2534d17187b67e6e84d15c4338b4170296ca28cbd92351bcef804af63638f5",
+    "bytes": 8319
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_WORDING_SUPPLEMENT_v1.md",
+      "sha256": "227442f71da82c5c564fddcfe62fbb7df853bebb31d423a843462aba2a9f5b45",
+      "bytes": 2499
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_WORDING_SOURCE_FREEZE_v1.json",
+      "sha256": "f0ca539ce8f97b6ad50fff1f381b4910ad8a0fc6c0660060ab0eea09ece44e10",
+      "bytes": 2210
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_WORDING_DIFF_v1.patch",
+      "sha256": "138e9c82a551adf37daf69047a0f5d6814b437d0c8ef473d5bf43dc6ab2d9305",
+      "bytes": 3815
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_SOURCE_v2_CASSINI_ERROR_DIRECTION_MODEL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "00310bf4a764ec80b3c00faa5eed53149fa2713184cf7a08b7ac23f156a67231",
+      "bytes": 24860
+    }
+  ],
+  "final_note_sha256": "00310bf4a764ec80b3c00faa5eed53149fa2713184cf7a08b7ac23f156a67231",
+  "unchanged_geometry_sha256": "c9b1e47cbaeaa8faf31543541e983c19f23a4e4d1fdfebae88e1e0590843e7aa",
+  "finding_dispositions": [
+    {
+      "id": "canonical_exact_decimal_wording",
+      "status": "resolved in bound final note"
+    },
+    {
+      "id": "continuous_phase_axis_support_terminology",
+      "reported_by": "separate source checker via root",
+      "status": "corrected interpretation confirmed"
+    }
+  ],
+  "formula_or_code_changes": false,
+  "aggregate_run": false,
+  "raw_observations_opened": false,
+  "formal_audit": false
+}

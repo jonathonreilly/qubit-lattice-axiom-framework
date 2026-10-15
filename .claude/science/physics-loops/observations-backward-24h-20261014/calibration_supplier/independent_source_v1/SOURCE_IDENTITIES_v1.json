@@ -1,0 +1,140 @@
+{
+  "created_at_utc": "2026-10-15T09:58:20.117070+00:00",
+  "reviewer": "/root/localized_history_check",
+  "scope": "Primary-source premise check only; no author proof/code, raw IQ, fits, calibration-value extraction or observational tests. Full-file keyword scan is navigation, not evidence that every sentence was read. Complete applicable pages/sections read are listed.",
+  "sources": [
+    {
+      "id": "DSN0159_2001",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/DSN_0159_Science_2001.pdf",
+      "url": "https://pds-geosciences.wustl.edu/radiosciencedocs/urn-nasa-pds-radiosci_documentation/DSN_0159-SCIENCE/dsn_0159-science.2001-02-28.pdf",
+      "read_pdf_pages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        35,
+        36,
+        42
+      ],
+      "read_scope": "Signal path, timing compensation, FGAIN and ADC monitor metadata, sample truncation; printed 2-2 through 2-6, 2-8, 3-13/14, 3-20.",
+      "bytes": 444934,
+      "sha256": "1161d5d7f50134cf3994c52674af4a2d8984990b7a7c64551b6c17d5964fe32d",
+      "retrieval": "Previously downloaded primary document reused; no new retrieval in this check.",
+      "pdf_page_count": 44,
+      "excerpt": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_source_v1/DSN0159_2001_READ_EXCERPTS_v1.txt",
+        "sha256": "7f4f6b3ca8e0a0a1f820950cea327841930ccbf1bfe0aeade2e3de780178ed67",
+        "bytes": 16483,
+        "method": "PyMuPDF text extraction with explicit PDF page markers, or exact labeled text lines; unedited extraction."
+      }
+    },
+    {
+      "id": "GUIDE_2018",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf",
+      "url": "https://pds.nasa.gov/data/pds4/misc/document_cassini/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf",
+      "doi": "10.17189/1522471",
+      "read_pdf_pages": [
+        12,
+        13,
+        18,
+        33,
+        34,
+        35,
+        48,
+        49,
+        53,
+        54
+      ],
+      "read_scope": "Receiver overview; DSN monitor product description; complete raw-RSR conversion example; ring calibration and SNR examples. Later examples are not a 2002 track-specific calibration.",
+      "bytes": 6791690,
+      "sha256": "4feb3072681da0f3026889d41864cef0c92c0beb91926278fc2d907e607c1d76",
+      "retrieval": "Previously downloaded primary document reused; no new retrieval in this check.",
+      "pdf_page_count": 74,
+      "excerpt": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_source_v1/GUIDE_2018_READ_EXCERPTS_v1.txt",
+        "sha256": "2f1b790e801410be68499470a593d028e518b105f8df4210f5afed82d976f96e",
+        "bytes": 28191,
+        "method": "PyMuPDF text extraction with explicit PDF page markers, or exact labeled text lines; unedited extraction."
+      }
+    },
+    {
+      "id": "JPL177C_2009",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_2009.pdf",
+      "url": "https://ipnpr.jpl.nasa.gov/progress_report/42-177/177C.pdf",
+      "read_pdf_pages": [
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "read_scope": "Station-delay limitations; expected performance introduction; complete IV-V reception/processing and VI results. Experiments are 2007/2008, not 2002.",
+      "bytes": 450720,
+      "sha256": "81143ad7210e55ac6bd0b44352e0f90728cf72e36c5d1b05461f20ee65bf7f34",
+      "retrieval": "Previously downloaded primary document reused; no new retrieval in this check.",
+      "pdf_page_count": 14,
+      "excerpt": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_source_v1/JPL177C_2009_READ_EXCERPTS_v1.txt",
+        "sha256": "0bc42cbf52a3faab332042ed7ce8920353b687cde3a568409ca552cc66a67615",
+        "bytes": 19687,
+        "method": "PyMuPDF text extraction with explicit PDF page markers, or exact labeled text lines; unedited extraction."
+      }
+    },
+    {
+      "id": "DAY169_X_LABEL",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/physical_link/rsr_c32easc2002_169_1335x54x25d.lbl",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.lbl",
+      "read_line_ranges": [
+        [
+          485,
+          682
+        ],
+        [
+          1114,
+          1158
+        ]
+      ],
+      "read_scope": "Only label text, including columns33-44 and72; no binary record or value read.",
+      "bytes": 61946,
+      "sha256": "36ab671cbb83c7d04060c2a19058800a4fc50f780aa8fa6e9f77ed3089046382",
+      "retrieval": "Previously downloaded primary document reused; no new retrieval in this check.",
+      "excerpt": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_source_v1/DAY169_X_LABEL_READ_EXCERPTS_v1.txt",
+        "sha256": "35218374cd40a991bdea5aa4e9120aba0a051124fc6e9335f558e6132a187514",
+        "bytes": 14137,
+        "method": "PyMuPDF text extraction with explicit PDF page markers, or exact labeled text lines; unedited extraction."
+      }
+    },
+    {
+      "id": "CASSINI_SIS",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/physical_link/casrssis.txt",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/document/casrssis.txt",
+      "read_line_ranges": [
+        [
+          292,
+          311
+        ],
+        [
+          410,
+          450
+        ]
+      ],
+      "read_scope": "Primary specification identity and signed truncation correction.",
+      "bytes": 309479,
+      "sha256": "daa759b2338fc4ca53d7474d7c17f83a1068470c0c5a00bcc17cf2d17e5ad84b",
+      "retrieval": "Previously downloaded primary document reused; no new retrieval in this check.",
+      "excerpt": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_source_v1/CASSINI_SIS_READ_EXCERPTS_v1.txt",
+        "sha256": "e8ccbcd445d8b27e8146e7bec7f71d7f5fd25f29124ec74fe85462d6bdbb97b7",
+        "bytes": 3002,
+        "method": "PyMuPDF text extraction with explicit PDF page markers, or exact labeled text lines; unedited extraction."
+      }
+    }
+  ],
+  "new_network_retrievals": 0,
+  "retrieval_failures_this_check": []
+}

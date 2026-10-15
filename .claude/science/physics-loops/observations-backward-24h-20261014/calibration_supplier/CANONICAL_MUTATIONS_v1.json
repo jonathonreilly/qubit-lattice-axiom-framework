@@ -1,0 +1,155 @@
+{
+  "source_sha256": {
+    "cassini_error_direction.py": "c9b1e47cbaeaa8faf31543541e983c19f23a4e4d1fdfebae88e1e0590843e7aa",
+    "cassini_error_direction_sampling.py": "5cf7f2a6ef97f007b77edb1a1d055541c8546ce8a92a7ba7133049456aa4304c",
+    "cassini_error_direction_development.py": "b2de0a9f609f852acfceb5b8adfafcc958f3c68674f6acc8dd84ea5b54575905"
+  },
+  "mutations": [
+    {
+      "label": "cone_denominator",
+      "source": "cassini_error_direction.py",
+      "original": "max(0.,a-tau*b)/math.hypot(1.,tau)",
+      "mutation": "max(0.,a-tau*b)",
+      "mutant_sha256": "4de35cd909e963173dc017ba1e579560e1f934f88ae5193aa18a06948b1df58e",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.6095994999632239,
+      "stderr_sha256": "e6b3a02e7d9cb9dfae07cd7f6a5c129d670099de9b91344adbbd251479607420"
+    },
+    {
+      "label": "complex_projection",
+      "source": "cassini_error_direction.py",
+      "original": "d=np.vdot(v,z)",
+      "mutation": "d=np.dot(v,z)",
+      "mutant_sha256": "bbcd68ee271201d961fefa1a0c3aec10437ae3909d2e78fbd0d27c0d7e71033b",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.43443108443170786,
+      "stderr_sha256": "4fdfd301a6f8b5ed48cf16516407ee3b291e48b3d9227539a09ac375e46d1f3b"
+    },
+    {
+      "label": "carrier_residual_rank",
+      "source": "cassini_error_direction.py",
+      "original": "-math.log(alpha)/s",
+      "mutation": "-math.log(alpha)/(s+1)",
+      "mutant_sha256": "cb22c365b3e4a2dfd1d80143d743c9e2d5b275f84db4ab0e5068399b47ca690c",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.44152962509542704,
+      "stderr_sha256": "2d5476fb1803d43c10a13bd6216c385d5f97e9ac1c1aeb7595a95ce56e3069c5"
+    },
+    {
+      "label": "missing_second_projection",
+      "source": "cassini_error_direction.py",
+      "original": "res=z-uf*np.vdot(uf,z)/n-v*d",
+      "mutation": "res=z-uf*np.vdot(uf,z)/n",
+      "mutant_sha256": "5640c84303c1e0e6c6851e272050fc765fe68b9a04db9c8a8fd45b0957830b6c",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.4318830417469144,
+      "stderr_sha256": "f1b99b3253ef5b261290b531740b66521354b1fc4777be3942ffd4b548e46300"
+    },
+    {
+      "label": "amplitude_normalization",
+      "source": "cassini_error_direction.py",
+      "original": "radius=(tau*b+q*math.hypot(1.,tau))/math.sqrt(n)",
+      "mutation": "radius=(tau*b+q*math.hypot(1.,tau))/n",
+      "mutant_sha256": "1e78b0cea15e285dac98f1e1c5f4fe6a37b4557af9021f8b1dca6ee6774968e9",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.4438957921229303,
+      "stderr_sha256": "58a1cc96665486d538e9586b96a8a19d254c38608baddb1ed15c4c5975aba5fa"
+    },
+    {
+      "label": "amplitude_adc_margin",
+      "source": "cassini_error_direction.py",
+      "original": "radius=(tau*b+q*math.hypot(1.,tau))/math.sqrt(n)",
+      "mutation": "radius=(tau*b+q)/math.sqrt(n)",
+      "mutant_sha256": "f1788b47a04eafc8efcfda81d263ed2d47bac0092a94159021b0f2c5222ed46a",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.4403018751181662,
+      "stderr_sha256": "0cd79d7b7a9c96b422fa060948ac20027a9babef84f9b3287fa6867adc88afaa"
+    },
+    {
+      "label": "unitary_dft",
+      "source": "cassini_error_direction.py",
+      "original": "coeff=np.fft.fft(z*np.exp(-2j*np.pi*f*t))/math.sqrt(n)",
+      "mutation": "coeff=np.fft.fft(z*np.exp(-2j*np.pi*f*t))",
+      "mutant_sha256": "c96141250a0b0664b77f111b935176cf8c0a642e8efb457c44e462b40ea81a8a",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.43516195891425014,
+      "stderr_sha256": "90d466e70d574e20e7fe253e9d6adf7edc220ea262c1d7b3fd983f632415a2ff"
+    },
+    {
+      "label": "carrier_adc_ignored",
+      "source": "cassini_error_direction.py",
+      "original": "cone_distance(r['a'],r['b'],tau)<=q",
+      "mutation": "cone_distance(r['a'],r['b'],tau)<=0",
+      "mutant_sha256": "e6df8f55cc59fa9581ea4ec6c61b3d8793d126e4bbb1e0e3845b86655bdb1bbe",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.44268112489953637,
+      "stderr_sha256": "d1f78de7e578bf09a289f94002bdd5ab542493241f7927948605663434e46d7a"
+    },
+    {
+      "label": "outer_strict_margin",
+      "source": "cassini_error_direction.py",
+      "original": "k=.999*m",
+      "mutation": "k=1.1*m",
+      "mutant_sha256": "be194fb1205aa492edc5a8d4a626ab9b6dfcb6ac7f52151bd914fa2efb281c90",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.4369125827215612,
+      "stderr_sha256": "547ead8f234d18d9e4cc631b8d6c422bd38c30f0be6314c367fcda34035e7ae0"
+    },
+    {
+      "label": "complex_degrees_freedom",
+      "source": "cassini_error_direction.py",
+      "original": "f_law.isf(alpha, 2*r, 2*s)",
+      "mutation": "f_law.isf(alpha, r, s)",
+      "mutant_sha256": "ceb72a2574a77650c428a99c88fb4b697bcd90c7d2c9b8cf18a731a0db4abc0b",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.5401306659914553,
+      "stderr_sha256": "8b71d8383efc097ba72691a7664d3d59740c342412136b2037201132a4c0363f"
+    },
+    {
+      "label": "iq_order",
+      "source": "cassini_error_direction_development.py",
+      "original": "return i,q",
+      "mutation": "return q,i",
+      "mutant_sha256": "e803584e063132cdfa9a60e74b2c54bcf95e87df1dd77052755393d757bfe479",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.534877416677773,
+      "stderr_sha256": "200be9ee4af71006cb28c6da7258af6daeebe8806c152b53e0f4a3af8bfd0cb5"
+    },
+    {
+      "label": "validation_leakage",
+      "source": "cassini_error_direction_development.py",
+      "original": "train=z[:500];valid=z[500:]",
+      "mutation": "train=z[500:];valid=z[500:]",
+      "mutant_sha256": "1a4e1003789b4fa939a5036cd3446348a7d475bc355e87ea4c1a1dfb97ae8a06",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.5470284172333777,
+      "stderr_sha256": "d20463ab5ce24ac0ca75b916330c645d127f54b9b42043167c50a4483bf21b52"
+    },
+    {
+      "label": "lipschitz_margin_omission",
+      "source": "cassini_error_direction.py",
+      "original": "lipschitz_base=2*math.pi*float(np.linalg.norm(times(len(z),fs)*z))",
+      "mutation": "lipschitz_base=0.",
+      "mutant_sha256": "b85a775ebdfe75b265f2d11d2a0f3d2adb28359ec3799ec6cd399e4b0eebe5cf",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "elapsed_seconds": 0.4379843329079449,
+      "stderr_sha256": "f88edf78bf4981298df3792164f09526ece92552b189084ed329c956324af85c"
+    }
+  ],
+  "assertion_rejected": 13,
+  "survived": [],
+  "setup_failure": []
+}

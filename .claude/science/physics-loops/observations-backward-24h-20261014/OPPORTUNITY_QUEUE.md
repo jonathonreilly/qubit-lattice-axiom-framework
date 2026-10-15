@@ -63,3 +63,11 @@ The entire 13:35 X/Ka RSR pair is development-exposed. The 16:56/16:57 pair and 
 3. Keep the0/0.5ms historical phase ambiguity and Ka49112 competing peaks as bounded unresolved applications. Later16:56/16:57 products remain unopened until an explicit preaccess protocol; opening them would test a frozen proposed model, not retroactively turn current development into a holdout.
 
 M10 source packaging is finishing; its independent science checks are complete. Physical error/energy, action, initial scalar state, scale and environment remain open. No chosen selector counts as a derivation.
+
+## Re-ranked after the error-direction challenge
+
+1. Refresh the revised scalar action/potential and scale reconstruction against current main/open PRs, and select a distinct cross-domain observational discriminator. Read the full prior proof before reusing an inverse; do not count fitted potential coefficients, a chosen vacuum or dimensional units as derived scales.
+2. Pursue receiver calibration only if a concrete matching monitor stream, transfer response or independently justified waveform supplies new physical information. Expected settings, fitted spectra, covariance isotropy and assumed Gaussianity are insufficient substitutes.
+3. Keep all current raw products development-exposed; later16:56/16:57 products remain unopened. A new empirical test needs a frozen model and declared input protocol before access.
+
+Do not generate another variant of the receiver geometry solely to refine spectral digits. This campaign remains active until its original deadline; all three older campaigns remain stopped.

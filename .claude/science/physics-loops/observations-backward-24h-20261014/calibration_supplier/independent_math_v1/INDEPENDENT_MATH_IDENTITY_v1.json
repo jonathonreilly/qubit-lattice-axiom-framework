@@ -1,0 +1,73 @@
+{
+  "frozen_at": "2026-10-15T10:12:26.814503+00:00",
+  "context": "Independent derivation from parent-supplied premises, before author files/protocol/results exposure",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/INDEPENDENT_MATH_v1.md",
+    "sha256": "de40057de817a745e52beebb6a162802ff4215b862932ef5b7bad818f8a8f811",
+    "bytes": 20182
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/TASK_PREMISE_v1.json",
+      "sha256": "8c959f51695976469e6e633e7f43dd09bca437a18922ad8709ecabb987eca9a8",
+      "bytes": 847
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/PRECHECK_v1.md",
+      "sha256": "2e9c6bfd76e6abb7eab78652bb62b9af971edde040224b7d20a175911a217f5b",
+      "bytes": 15449
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "sha256": "f3ac53b52fca1b704e1161d536985a0eff6ed4616fa7616aafd5b38235e7de63",
+      "bytes": 857
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/independent_controls_v1.py",
+      "sha256": "8d2c70b442ae770321c1f2b46b36053feb8f31eff1703f62be7b0403115f8095",
+      "bytes": 11943
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CONTROL_SOURCE_FREEZE_v1.json",
+      "sha256": "f5b5191dbbb471316bdbdd4495d38f8c7c878655be2a3afb6200a0e5e046b9e7",
+      "bytes": 849
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CONTROL_RESULTS_v1.json",
+      "sha256": "6200b26ed1d757f870d8a334b9a1afef47a5251a6cb89cc9c239d88f2097a68a",
+      "bytes": 13423
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CONTROL_STDERR_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CONTROL_EXECUTION_v1.json",
+      "sha256": "cf68981b29967f6e585d0a129bdae4542fb7e9aa6e6d90dbd88693c7095fbd9e",
+      "bytes": 1417
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/INDEPENDENT_MATH_v1.md",
+      "sha256": "de40057de817a745e52beebb6a162802ff4215b862932ef5b7bad818f8a8f811",
+      "bytes": 20182
+    }
+  ],
+  "checks": {
+    "total": 51,
+    "exact": 40,
+    "floating_controls": 11,
+    "failed": 0
+  },
+  "author_source_exposed": false,
+  "author_protocol_exposed": false,
+  "raw_data_exposed": false,
+  "network_used": false,
+  "formal_audit": false,
+  "outside_assigned_directory_writes": false,
+  "limits": [
+    "No empirical calibration or physical noise law validated",
+    "Ordinary floating controls are not interval certificates",
+    "No author implementation executed"
+  ]
+}

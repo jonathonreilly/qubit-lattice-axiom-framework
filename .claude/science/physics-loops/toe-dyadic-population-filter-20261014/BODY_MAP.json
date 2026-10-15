@@ -1,0 +1,32 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "dyadic_filter_candidate/DERIVATION.md",
+      "start": 14047,
+      "end": 23292,
+      "bytes": 9245,
+      "sha256": "252836f496963d3410d0d77369a85dd11c7f98990475d11fb5406d957bdbf973"
+    },
+    {
+      "alias": "dyadic_filter_candidate/EXPLICIT_TOLERANCE_CONSTANTS.md",
+      "start": 23354,
+      "end": 28382,
+      "bytes": 5028,
+      "sha256": "e6b59790c51a2aadb59a9d3fc6f2ca4faa7bfcc0fd0b4656a822552e7188bb84"
+    },
+    {
+      "alias": "dyadic_filter_independent/DERIVATION.md",
+      "start": 28441,
+      "end": 57307,
+      "bytes": 28866,
+      "sha256": "0e75e69e573224265a60f86ab041f4c28faf6e35171cf7cb8c4386e1b2b5d482"
+    },
+    {
+      "alias": "dyadic_filter_chain_layout/DERIVATION.md",
+      "start": 57371,
+      "end": 85434,
+      "bytes": 28063,
+      "sha256": "86f5b54dc2b085f4e533d7fb2fd4e1d360bdd703322c349b9f045b6eab689039"
+    }
+  ]
+}

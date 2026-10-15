@@ -1,6 +1,6 @@
 {
- "edge_count": 16057,
- "node_count": 7117,
+ "edge_count": 16059,
+ "node_count": 7118,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5885,6 +5885,10 @@
   "dt1_time_dimension_proof_walk_note_2026-05-17": {
    "deps_hash": "7cfaf5ef38ff",
    "out_degree": 7
+  },
+  "dyadic_auxiliary_number_filter_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "399fae0391b6",
+   "out_degree": 2
   },
   "dyadic_even_refinement_bounded_theorem_note_2026-10-12": {
    "deps_hash": "c6cb357c79e6",

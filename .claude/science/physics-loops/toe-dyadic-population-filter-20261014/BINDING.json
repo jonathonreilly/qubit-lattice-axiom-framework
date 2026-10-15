@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-14T23:59:51.169570+00:00",
+  "science_branch": "physics-loop/toe-dyadic-population-filter-20261014",
+  "science_head": "bf3ecf67438816b28634282361428ad096245ed1",
+  "science_tree": "e807404e26b3bf3b150cbfb8dcbb8b35d62a13bd",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "actual_base_pr_observation": {
+    "baseRefName": "physics-loop/toe-chain-preparation-scaling-20261014",
+    "headRefName": "physics-loop/toe-vacuum-preparation-certificate-20261014",
+    "headRefOid": "bf3ecf67438816b28634282361428ad096245ed1",
+    "isDraft": false,
+    "number": 9579,
+    "state": "OPEN",
+    "title": "Add a one-clean-pointer vacuum-preparation circuit and conditional moments",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9579"
+  },
+  "base_is_not_automatic_mathematical_dependency": true,
+  "canonical_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CHAIN_PREPARATION_MOMENT_SCALING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 30252,
+      "sha256": "883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b"
+    }
+  ],
+  "exact_parent_clauses": [
+    {
+      "alias": "premises/sharper_de7.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 22794,
+      "end": 38776,
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976"
+    },
+    {
+      "alias": "premises/chain_79d.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 39056,
+      "end": 59953,
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff"
+    }
+  ],
+  "conditional_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/dyadic_filter_candidate/ROOT_ACCEPTANCE.json",
+    "bytes": 4910,
+    "sha256": "abc29205c8c3ce215d78774b9c070960908492bad8e2c03abecfb283a61c48b6"
+  },
+  "no_new_pr_yet": true,
+  "no_science_merge": true
+}

@@ -1,0 +1,21 @@
+{
+  "disposition": "Both conditional recipes supported with root readout chronology qualifications and distinct target/norm/timing contracts. Awaiting root source decision; not an audit.",
+  "editable_prompts_changed": [],
+  "mandatory_qualifications": [
+    "Compose finite target factors as augmented pairs before reconstructing actual aging.",
+    "Window comparator is exp(-isH) W exp(-iTH), with scalar phase at actual T+s.",
+    "Keep root operator-norm recurrence test distinct from protected Frobenius test and ceiling.",
+    "Root supplies logarithm/factors; protected target-grid construction is a separate broader target-data result.",
+    "Fixed quantitative certificate only, with full physical supply and resource limits."
+  ],
+  "new_metadata_subprocesses": 2,
+  "report": {
+    "bytes": 26979,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/REPORT.md",
+    "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+  },
+  "scientific_programs_run": 0,
+  "source_blobs": 22,
+  "source_exposed": true,
+  "source_rows": 23
+}

@@ -1,0 +1,35 @@
+"""Seal the protected derivation after its two actual metadata subprocesses."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import sys
+
+D = Path(__file__).resolve().parent
+
+
+def pin(path):
+    b = path.read_bytes()
+    return {'path': str(path), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+
+def write(name, value):
+    (D / name).write_text(json.dumps(value, indent=2, sort_keys=True) + '\n')
+
+
+for label in ['capture', 'verify']:
+    p = D / 'metadata_runs' / label / 'EXECUTION.json'
+    r = json.loads(p.read_text())
+    assert r['exit_code'] == 0 and r['timed_out'] is False and r['scientific_programs_run'] == 0
+    for key in ['child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr']:
+        row = r[key]
+        got = pin(Path(row['path']))
+        assert row['bytes'] == got['bytes'] and row['sha256'] == got['sha256']
+proof = pin(D / 'DERIVATION.md')
+v = json.loads((D / 'VERIFICATION.json').read_text())
+assert v['proof_pin'] == proof
+write('HANDOFF.json', {'proof': proof, 'protected_from_new_root_candidate': True, 'mathematical_parent_sources': ['bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0', '3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5'], 'disposition': 'Complete positive conditional derivation, awaiting root reading and any separately authorized exposed comparison.', 'source_rows': 8, 'scientific_programs_run': 0, 'new_metadata_subprocesses': 2, 'editable_prompts_changed': [], 'open_limits': ['Fixed admitted quantitative augmented certificate only.', 'No uniform varying-lambda/window or varying-dimension bound.', 'No arbitrary computable-oracle runtime bound.', 'Physical waveform, timing, isolation, static coefficients and initialization remain supplied.']})
+write('SEAL_OPERATION.json', {'utc': datetime.now(timezone.utc).isoformat(), 'argv': sys.argv, 'cwd': str(Path.cwd()), 'source_at_operation': pin(Path(__file__).resolve()), 'operation': 'Direct in-process seal, not an invented subprocess receipt.', 'scientific_programs_run': 0})
+members = [pin(p) | {'path': str(p.relative_to(D))} for p in sorted(D.rglob('*')) if p.is_file() and p.name != 'FINAL_FREEZE.json']
+write('FINAL_FREEZE.json', {'sealed_utc': datetime.now(timezone.utc).isoformat(), 'status': 'protected independent conditional derivation frozen before new root candidate exposure', 'scientific_programs_run': 0, 'members': members})
+print(json.dumps({'proof': proof, 'freeze': pin(D / 'FINAL_FREEZE.json'), 'members': len(members), 'source_rows': 8, 'scientific_programs_run': 0}, sort_keys=True))

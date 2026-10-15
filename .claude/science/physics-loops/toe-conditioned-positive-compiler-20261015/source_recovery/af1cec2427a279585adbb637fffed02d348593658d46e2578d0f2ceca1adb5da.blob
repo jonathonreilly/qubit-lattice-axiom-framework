@@ -1,0 +1,11 @@
+{
+  "status": "pending_frozen_comparison_and_actual_source_acceptance",
+  "comparison": null,
+  "comparison_freeze": null,
+  "acceptance": null,
+  "acceptance_freeze": null,
+  "root_receipts": [],
+  "git_base": null,
+  "publication": null,
+  "refresh": null
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-15T20:34:18.042746+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_candidate/DERIVATION.md",
+      "bytes": 18196,
+      "sha256": "2de387eb501aa8ead91afa1f5a26f7d3a0bbf11e51285d99786715152ad5b6d6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_candidate/SOURCE_PINS.json",
+      "bytes": 1346,
+      "sha256": "5a9db9605466bd03d70cf69b93cfbcda04b3f87d02b89d4acb68cf99a971aca5"
+    }
+  ],
+  "status": "Root analytic candidate, independent check pending",
+  "scientific_programs_run": 0,
+  "editable_prompt_files_changed": []
+}

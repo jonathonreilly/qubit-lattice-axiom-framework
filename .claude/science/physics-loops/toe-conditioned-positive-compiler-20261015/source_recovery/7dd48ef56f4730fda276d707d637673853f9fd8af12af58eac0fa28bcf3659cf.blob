@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-single-port-program-and-controller-20261015/BODY_MAP.json",
+        "bytes": 1459,
+        "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750"
+      },
+      "copy": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/PARENT_BODY_MAP.json",
+        "bytes": 1459,
+        "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/PUBLICATION.json",
+        "bytes": 1620,
+        "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db"
+      },
+      "copy": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/PARENT_PUBLICATION.json",
+        "bytes": 1620,
+        "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/ATTACHMENT.json",
+        "bytes": 216,
+        "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922"
+      },
+      "copy": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/PARENT_ATTACHMENT.json",
+        "bytes": 216,
+        "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922"
+      }
+    }
+  ],
+  "scope": "Actual published compiler parent only; raw attachment schema preserved."
+}

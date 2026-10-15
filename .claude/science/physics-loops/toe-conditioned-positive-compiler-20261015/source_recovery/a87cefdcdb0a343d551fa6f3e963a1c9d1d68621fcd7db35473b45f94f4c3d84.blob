@@ -1,0 +1,40 @@
+"""Check selected source recovery and metadata schema; no mathematics or science execution."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+
+
+def pin(path):
+    b = path.read_bytes()
+    return {'path': str(path), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+
+x = json.loads((D / 'SOURCE_MANIFEST.json').read_text())
+assert x['scientific_programs_run'] == 0 and x['new_root_candidate_exposed'] is False
+assert len(x['sources']) == 8
+for row in x['sources']:
+    for path in [Path(row['path']), D / row['recovery']]:
+        got = pin(path)
+        assert got['bytes'] == row['bytes'] and got['sha256'] == row['sha256'], (str(path), got)
+for name in ['capture_sources.py', 'verify_metadata.py', 'record_metadata.py', 'seal.py']:
+    ast.parse((D / name).read_text(), filename=name)
+for name in ['DERIVATION.md', 'EXPOSURE_AND_SCOPE.md', 'ROUTE_AND_LIMITS.md']:
+    data = (D / name).read_bytes()
+    assert data.endswith(b'\n') and not data.endswith(b'\n\n'), name
+    data.decode('utf-8')
+receipt_path = D / 'metadata_runs/capture/EXECUTION.json'
+receipt = json.loads(receipt_path.read_text())
+assert receipt['exit_code'] == 0 and receipt['timed_out'] is False
+assert receipt['timeout_seconds'] == 60 and receipt['scientific_programs_run'] == 0
+assert receipt['argv'][1] == str(D / 'capture_sources.py')
+for key in ['child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr']:
+    p = receipt[key]
+    actual = pin(Path(p['path']))
+    assert actual['sha256'] == p['sha256'] and actual['bytes'] == p['bytes'], key
+out = {'verified_utc': datetime.now(timezone.utc).isoformat(), 'source_rows': 8, 'source_and_recovery_identities_match': True, 'capture_receipt_schema_and_pins_match': True, 'metadata_helpers_parse': True, 'proof_pin': pin(D / 'DERIVATION.md'), 'scientific_programs_run': 0, 'limits': 'Identity, recovery, syntax and actual metadata receipt checks only. No proof theorem, recurrence search or numerical predicate is executed.'}
+(D / 'VERIFICATION.json').write_text(json.dumps(out, indent=2, sort_keys=True) + '\n')
+print(json.dumps(out, sort_keys=True))

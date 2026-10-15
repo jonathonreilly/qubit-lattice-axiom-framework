@@ -1,0 +1,67 @@
+"""Check source/recovery closure, old freezes and real metadata receipts, never science."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+N = D.parent
+
+
+def read(path):
+    return json.loads(path.read_text())
+
+
+def pin(path):
+    b = path.read_bytes()
+    return {'path': str(path), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+
+def same(path, row):
+    got = pin(path)
+    assert got['bytes'] == row['bytes'] and got['sha256'] == row['sha256'], (str(path), got)
+
+
+x = read(D / 'SOURCE_MANIFEST.json')
+assert x['scientific_programs_run'] == 0 and x['new_root_candidate_exposed'] is True
+for row in x['sources']:
+    same(Path(row['path']), row)
+    same(D / row['recovery'], row)
+I = N / 'conditioned_positive_compiler_independent'
+f = read(I / 'FINAL_FREEZE.json')
+assert len(f['members']) == 27 and f['scientific_programs_run'] == 0
+for row in f['members']:
+    same(I / row['path'], row)
+im = read(I / 'SOURCE_MANIFEST.json')
+assert len(im['sources']) == 8 and im['new_root_candidate_exposed'] is False
+for row in im['sources']:
+    same(Path(row['path']), row)
+    same(I / row['recovery'], row)
+rf = read(N / 'conditioned_positive_compiler_root_candidate/PROPOSAL_FREEZE.json')
+assert len(rf['files']) == 2 and rf['scientific_programs_run'] == 0
+for row in rf['files']:
+    same(Path(row['path']), row)
+root_receipt = read(N / 'runs/conditioned_protected_review_2050/EXECUTION.json')
+assert root_receipt['exit_code'] == 0
+assert root_receipt['argv'][1] == str(N / 'bootstrap/review_conditioned_protected_2050.py')
+for key in ['child_source_at_launch', 'recorder', 'stdout', 'stderr']:
+    same(Path(root_receipt[key]['path']), root_receipt[key])
+same(N / 'runs/conditioned_protected_review_2050/executed_source.py', root_receipt['child_source_at_launch'])
+for directory in [I, D]:
+    labels = ['capture', 'verify'] if directory == I else ['capture']
+    for label in labels:
+        r = read(directory / 'metadata_runs' / label / 'EXECUTION.json')
+        assert r['exit_code'] == 0 and not r['timed_out'] and r['scientific_programs_run'] == 0
+        assert r['timeout_seconds'] == 60
+        for key in ['child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr']:
+            same(Path(r[key]['path']), r[key])
+for name in ['capture_sources.py', 'verify_metadata.py', 'record_metadata.py', 'seal.py']:
+    ast.parse((D / name).read_text(), filename=name)
+for name in ['REPORT.md', 'EXPOSURE.md']:
+    data = (D / name).read_bytes()
+    assert data.endswith(b'\n') and not data.endswith(b'\n\n')
+    data.decode('utf-8')
+out = {'verified_utc': datetime.now(timezone.utc).isoformat(), 'report': pin(D / 'REPORT.md'), 'source_rows': len(x['sources']), 'source_blobs': x['source_blobs'], 'protected_members_verified': 27, 'protected_source_rows_verified': 8, 'root_candidate_members_verified': 2, 'actual_receipt_linkage_verified': True, 'metadata_helpers_parse': True, 'scientific_programs_run': 0, 'limits': 'Metadata identity, recovery, schema and syntax only. No target search, recurrence, matrix fixture, numerical inequality or scientific theorem is executed.'}
+(D / 'VERIFICATION.json').write_text(json.dumps(out, indent=2, sort_keys=True) + '\n')
+print(json.dumps(out, sort_keys=True))

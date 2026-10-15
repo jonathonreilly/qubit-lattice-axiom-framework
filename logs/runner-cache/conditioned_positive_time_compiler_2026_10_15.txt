@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/conditioned_positive_time_compiler_2026_10_15.py
+runner_sha256: 088f294087a3c1d52f114f36eca0f34613088eac889426d2db858e93995c8ac7
+input_fingerprint_sha256: 804d533037c68855c6ef2a4c5519dfc8282de69c5d6a9a5ac90abef5d475919d
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"}
+per_element: certificate, pulse, duration and scalar ledgers preserved; no gate or physical element run
+per_site: fixed filled-box NN path and one onsite port preserved; installation and isolation remain supplied
+per_mode: full-plant and augmented actual-aging distinctions preserved; no simulation run
+per_block: three unchanged bodies, one mathematical parent and separate canonical review checked
+lattice_wide: no native waveform, uniform-lambda or large-system efficiency, autonomous clock, common-cap, detector, reuse or retained audit certified
+
+----- stderr -----
+

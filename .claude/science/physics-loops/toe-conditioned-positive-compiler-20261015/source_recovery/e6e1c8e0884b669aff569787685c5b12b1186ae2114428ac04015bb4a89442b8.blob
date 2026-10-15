@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-15T21:00:28.486212+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_review/ACCEPTANCE.md",
+      "bytes": 2939,
+      "sha256": "9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_review/REVIEW.json",
+      "bytes": 4651,
+      "sha256": "ac640003d9322cb9d890b574ad7a7456ec30e4bf2c6a569f9c7eaf9f2a9afa44"
+    }
+  ],
+  "scientific_programs_run": 0
+}

@@ -1,0 +1,7 @@
+# Actual binding contract
+
+The historical draft has canonical_parent_binding_complete=false and all integration outcomes null. The separately captured current binding uses actual publication review 0cdc01cd5b26bc48f250e5a854d93cb41ed3c135ae1a7dfed24be9d0e7d8c8fd and actual selected-base evidence. Observed exact parent bytes and publication receipts are distinct from the future note's actual checkout binding. Never rewrite dated PUBLICATION_STATE nulls to manufacture past success.
+
+Current root binding pins the selected actual Git base and live base observation; the base is not another theorem edge. It must preserve the three raw bodies once, relocate BODY_MAP, SOURCE_MANIFEST and every RECOVERY_SELECTION body alias together, and retain exactly one direct parent with both raw compiler proof and review intervals. The source primary must declare every actual receipt path it reads, including original proposal seal, root review/source-at-launch/recorder/streams/seal and base-query evidence. No future action outcome is assumed by the current binding.
+
+The actual root publication review uses root_source_publication_review with source_draft_freeze, body_pins, parents, existing_source_acceptances and captured output linkage. Integration must adapt to the actual accepted record if its real schema differs, preserving a complete changed-code diff and fresh metadata receipts. File existence alone is not evidence. Run the primary and its cache only after actual root binding; the source-only draft never executes either.

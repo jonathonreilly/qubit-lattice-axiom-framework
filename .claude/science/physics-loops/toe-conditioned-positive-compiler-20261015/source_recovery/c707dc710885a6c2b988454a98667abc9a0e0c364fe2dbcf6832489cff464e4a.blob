@@ -1,0 +1,55 @@
+"""Record one of two bounded metadata-only subprocesses in this task directory."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+D = Path(__file__).resolve().parent
+assert len(sys.argv) == 3
+name, label = sys.argv[1:]
+assert name in ('capture_sources.py', 'verify_metadata.py')
+assert label and '/' not in label and label not in ('.', '..')
+folder = D / 'metadata_runs' / label
+folder.mkdir(parents=True, exist_ok=False)
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+source = D / name
+source_pin = pin(source)
+(folder / 'executed_source.py').write_bytes(source.read_bytes())
+argv = [sys.executable, str(source)]
+started = datetime.datetime.now(datetime.timezone.utc).isoformat()
+tick = time.monotonic()
+timed_out = False
+try:
+    result = subprocess.run(argv, cwd=D, capture_output=True, timeout=60)
+    stdout, stderr, code = result.stdout, result.stderr, result.returncode
+except subprocess.TimeoutExpired as error:
+    stdout, stderr, code = error.stdout or b'', error.stderr or b'', 124
+    timed_out = True
+(folder / 'stdout').write_bytes(stdout)
+(folder / 'stderr').write_bytes(stderr)
+receipt = {
+    'scope': 'source/recovery metadata only; no scientific program',
+    'argv': argv, 'cwd': str(D), 'start_utc': started,
+    'end_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'elapsed_seconds': time.monotonic()-tick, 'timeout_seconds': 60,
+    'timed_out': timed_out, 'exit_code': code,
+    'child_source_at_launch': source_pin,
+    'source_capture': pin(folder / 'executed_source.py'),
+    'recorder': pin(Path(__file__)),
+    'stdout': pin(folder / 'stdout'), 'stderr': pin(folder / 'stderr'),
+    'scientific_programs_run': 0,
+}
+(folder / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2)+'\n')
+print(json.dumps({'receipt': str(folder/'EXECUTION.json'), 'exit_code': code}))
+if len(stdout) < 6000:
+    print(stdout.decode(errors='replace'))
+if len(stderr) < 6000:
+    print(stderr.decode(errors='replace'))
+sys.exit(code)

@@ -1,0 +1,865 @@
+{
+  "schema": "portable_source_recovery_v1",
+  "sources": [
+    {
+      "source": "campaign/conditioned_positive_compiler_root_candidate/DERIVATION.md",
+      "role": "immutable_proof_or_review_body",
+      "bytes": 18196,
+      "sha256": "2de387eb501aa8ead91afa1f5a26f7d3a0bbf11e51285d99786715152ad5b6d6",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "root_author",
+        "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 20853,
+        "end_byte_exclusive": 39049
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/DERIVATION.md",
+      "role": "immutable_proof_or_review_body",
+      "bytes": 30870,
+      "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "independent_author",
+        "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 39210,
+        "end_byte_exclusive": 70080
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/REPORT.md",
+      "role": "immutable_proof_or_review_body",
+      "bytes": 26979,
+      "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "comparison",
+        "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70233,
+        "end_byte_exclusive": 97212
+      }
+    },
+    {
+      "source": "campaign/single_port_program_research/DERIVATION.md",
+      "role": "direct_parent_complete_proof",
+      "bytes": 33757,
+      "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "compiler_author",
+        "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 17605,
+        "end_byte_exclusive": 51362,
+        "bytes": 33757,
+        "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+      }
+    },
+    {
+      "source": "campaign/single_port_program_decisive_check/REPORT.md",
+      "role": "canonical_parent_separate_review_provenance",
+      "bytes": 27426,
+      "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "compiler_assessment",
+        "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 51524,
+        "end_byte_exclusive": 78950,
+        "bytes": 27426,
+        "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+      }
+    },
+    {
+      "source": "repository/docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "role": "direct_mathematical_parent",
+      "bytes": 136036,
+      "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+      "recovery": {
+        "kind": "external_pinned",
+        "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      }
+    },
+    {
+      "source": "repository/.claude/science/physics-loops/toe-single-port-program-and-controller-20261015/BODY_MAP.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1459,
+      "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750.blob"
+      }
+    },
+    {
+      "source": "repository/AGENTS.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob"
+      }
+    },
+    {
+      "source": "repository/docs/WRITING_VOICE_GUIDE_2026-04-25.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.blob"
+      }
+    },
+    {
+      "source": "repository/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.blob"
+      }
+    },
+    {
+      "source": "repository/docs/audit/data/axiom_premise_nodes.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37.blob"
+      }
+    },
+    {
+      "source": "campaign/bootstrap/review_conditioned_protected_2050.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3020,
+      "sha256": "3bae7bad93ad1ada04012de08dc5db818acbf6828f716fa965a63f4d66c332ca",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/3bae7bad93ad1ada04012de08dc5db818acbf6828f716fa965a63f4d66c332ca.blob"
+      }
+    },
+    {
+      "source": "campaign/bootstrap/review_conditioned_sources_2104.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6490,
+      "sha256": "01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/EXPOSURE.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2199,
+      "sha256": "0723eee41c7d2e1c309c7b434666051853ebacb848c9e1eb6284bd0aa6d3e655",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/0723eee41c7d2e1c309c7b434666051853ebacb848c9e1eb6284bd0aa6d3e655.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/FINAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 7548,
+      "sha256": "db7b2b696bbbb59e09f9b5c9bf41df61f0f95f66cbe31bc357ed363929bc64e0",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/db7b2b696bbbb59e09f9b5c9bf41df61f0f95f66cbe31bc357ed363929bc64e0.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/HANDOFF.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1153,
+      "sha256": "b68de282b4cced3aedf8247355a37cf66381493259853c52ef631b03f745656e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/b68de282b4cced3aedf8247355a37cf66381493259853c52ef631b03f745656e.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/SEAL_OPERATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 658,
+      "sha256": "bd938cceb5738bd27cf22862a07545771447f439029409a7dcf5ea3658634d7e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/bd938cceb5738bd27cf22862a07545771447f439029409a7dcf5ea3658634d7e.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/SOURCE_MANIFEST.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 11330,
+      "sha256": "c782654366b4a6ee865d7fd09db31cc6b61559fc39982b187d1c41c19942e1d9",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/c782654366b4a6ee865d7fd09db31cc6b61559fc39982b187d1c41c19942e1d9.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/VERIFICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 769,
+      "sha256": "df7655f7ed72b70c7810d1ebcbc63990cb0ccd5ac73e9b4e39fda37bc51663bf",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/df7655f7ed72b70c7810d1ebcbc63990cb0ccd5ac73e9b4e39fda37bc51663bf.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/capture_sources.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 5892,
+      "sha256": "e42316f36326d22f2625a56659d3451e6763a8071a4eaa00c5c6bc94daf7e9b2",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e42316f36326d22f2625a56659d3451e6763a8071a4eaa00c5c6bc94daf7e9b2.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/capture/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2153,
+      "sha256": "a5b7a6c908db85f809619ddd00240058ea6f77feb1684fc32cafe13303c7a692",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/a5b7a6c908db85f809619ddd00240058ea6f77feb1684fc32cafe13303c7a692.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/capture/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 5892,
+      "sha256": "e42316f36326d22f2625a56659d3451e6763a8071a4eaa00c5c6bc94daf7e9b2",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e42316f36326d22f2625a56659d3451e6763a8071a4eaa00c5c6bc94daf7e9b2.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/capture/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/capture/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 70,
+      "sha256": "bc512e3ef95149b2fb7d5717996eab2a111a6f3d0fa13fd5d7c6094d4ff86fce",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/bc512e3ef95149b2fb7d5717996eab2a111a6f3d0fa13fd5d7c6094d4ff86fce.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/verify/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2151,
+      "sha256": "f66d10f661ba466095877f9bc6a166759010927802bd97677d1fe9c42a386723",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/f66d10f661ba466095877f9bc6a166759010927802bd97677d1fe9c42a386723.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/verify/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3323,
+      "sha256": "e3751f20dcbd66e509afbf8cd74494d72fa32263e1c7d43530d3024f62db5288",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3751f20dcbd66e509afbf8cd74494d72fa32263e1c7d43530d3024f62db5288.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/verify/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/metadata_runs/verify/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 729,
+      "sha256": "147a0528a96ecbbba510b4e57a885e5bce504a585c9930d4095c0b1fa3f2c83d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/147a0528a96ecbbba510b4e57a885e5bce504a585c9930d4095c0b1fa3f2c83d.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/record_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/seal.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2752,
+      "sha256": "8ea1cd436ad9e1529a6bff618a12b8e0d5a449bfbc2d36490a516820ce0adc75",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/8ea1cd436ad9e1529a6bff618a12b8e0d5a449bfbc2d36490a516820ce0adc75.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_comparison/verify_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3323,
+      "sha256": "e3751f20dcbd66e509afbf8cd74494d72fa32263e1c7d43530d3024f62db5288",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3751f20dcbd66e509afbf8cd74494d72fa32263e1c7d43530d3024f62db5288.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/EXPOSURE_AND_SCOPE.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3357,
+      "sha256": "e71dfe0ec3333325a1caceedb7c325096281d6623c995a9f4def13aee5665aec",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e71dfe0ec3333325a1caceedb7c325096281d6623c995a9f4def13aee5665aec.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/FINAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 4866,
+      "sha256": "586523f983bef60f52cd76d235074f98ea05a4a114475d349b59b36953edb47b",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/586523f983bef60f52cd76d235074f98ea05a4a114475d349b59b36953edb47b.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/HANDOFF.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1072,
+      "sha256": "20d19c530c6f53eec6ff645c1c1e8b0c3e3f04c21f5ca5e40ea56fb8b67ba7bb",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/20d19c530c6f53eec6ff645c1c1e8b0c3e3f04c21f5ca5e40ea56fb8b67ba7bb.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/ROUTE_AND_LIMITS.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2311,
+      "sha256": "062f93d6050b8320a47bcea056490d7ab5be760578925fa90ba89d5c00c7adc5",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/062f93d6050b8320a47bcea056490d7ab5be760578925fa90ba89d5c00c7adc5.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/SEAL_OPERATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 651,
+      "sha256": "29d60870be44b3675bcee75b0dc0d917176498021cdff447025e65206478178e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/29d60870be44b3675bcee75b0dc0d917176498021cdff447025e65206478178e.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/SOURCE_MANIFEST.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3947,
+      "sha256": "fdc87d95ecd57b0f636a3507e7afdfc2e23579fe79171abab55bf891355bf932",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/fdc87d95ecd57b0f636a3507e7afdfc2e23579fe79171abab55bf891355bf932.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/VERIFICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 678,
+      "sha256": "2bb64dad8d58252a8ebb51c51d8c4db3c3132be19dce697bb9947d2bf3b5dc7f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/2bb64dad8d58252a8ebb51c51d8c4db3c3132be19dce697bb9947d2bf3b5dc7f.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/capture_sources.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3048,
+      "sha256": "e7871e6d8a3caec3b9898149904d636d5a5b3e8714433ed92a57978acd971901",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e7871e6d8a3caec3b9898149904d636d5a5b3e8714433ed92a57978acd971901.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/capture/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2160,
+      "sha256": "77e4c7ee4aa07b263d9264eaad9d7b6778348eee0111730408159e50cfebe2d3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/77e4c7ee4aa07b263d9264eaad9d7b6778348eee0111730408159e50cfebe2d3.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/capture/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3048,
+      "sha256": "e7871e6d8a3caec3b9898149904d636d5a5b3e8714433ed92a57978acd971901",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e7871e6d8a3caec3b9898149904d636d5a5b3e8714433ed92a57978acd971901.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/capture/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/capture/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 68,
+      "sha256": "c60c74ebac71d61f0f7fc25ff051854817ba4e5d7e0452dcbb3910feee7cce41",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/c60c74ebac71d61f0f7fc25ff051854817ba4e5d7e0452dcbb3910feee7cce41.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/verify/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2157,
+      "sha256": "9c6f5d32a7c821b32785ad3fa58fbf3c874c5e5edd4686ae4b85c393c4d68ad8",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/9c6f5d32a7c821b32785ad3fa58fbf3c874c5e5edd4686ae4b85c393c4d68ad8.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/verify/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2193,
+      "sha256": "a87cefdcdb0a343d551fa6f3e963a1c9d1d68621fcd7db35473b45f94f4c3d84",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/a87cefdcdb0a343d551fa6f3e963a1c9d1d68621fcd7db35473b45f94f4c3d84.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/verify/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/metadata_runs/verify/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 644,
+      "sha256": "9d8a9140c7a3869e3db33e25c86b649b2e0c2873b8f41aa186af12b9ac4ef1e2",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/9d8a9140c7a3869e3db33e25c86b649b2e0c2873b8f41aa186af12b9ac4ef1e2.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/record_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/seal.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2620,
+      "sha256": "b55d8c220b8785fcfd72eea915492eed36066d979f048735958aa86dc978983f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/b55d8c220b8785fcfd72eea915492eed36066d979f048735958aa86dc978983f.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_independent/verify_metadata.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2193,
+      "sha256": "a87cefdcdb0a343d551fa6f3e963a1c9d1d68621fcd7db35473b45f94f4c3d84",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/a87cefdcdb0a343d551fa6f3e963a1c9d1d68621fcd7db35473b45f94f4c3d84.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_protected_root_read/READ.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3014,
+      "sha256": "2099790774c866ba2debf24b13a6b9a81e2b8c017ab72e60bc29346c9a56ec8e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/2099790774c866ba2debf24b13a6b9a81e2b8c017ab72e60bc29346c9a56ec8e.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/FINAL_INPUTS.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1006,
+      "sha256": "6f82e3c2f85029972b6db153b4dee657a733ec426879d63ace058b2d6338b716",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/6f82e3c2f85029972b6db153b4dee657a733ec426879d63ace058b2d6338b716.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/INITIAL_BINDINGS.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 260,
+      "sha256": "af1cec2427a279585adbb637fffed02d348593658d46e2578d0f2ceca1adb5da",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/af1cec2427a279585adbb637fffed02d348593658d46e2578d0f2ceca1adb5da.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/INITIAL_PARENT_BINDING.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 206,
+      "sha256": "3a2ffb101da380f47c390a059fffcc1df6dade3571ee9c7ef494e246cf3eed03",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/3a2ffb101da380f47c390a059fffcc1df6dade3571ee9c7ef494e246cf3eed03.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/INSTRUCTION_IDENTITIES.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2468,
+      "sha256": "c67cc21328b18f059f8d91b77f9483c6652c3ca29ca4d4df4cf4f320406c8837",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/c67cc21328b18f059f8d91b77f9483c6652c3ca29ca4d4df4cf4f320406c8837.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/PARENT_ATTACHMENT.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 216,
+      "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/PARENT_BINDING.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1657,
+      "sha256": "554ebf82ef443e3f97073bf86c67ae5b946f7d8960b0703665dde49b8b7045a3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/554ebf82ef443e3f97073bf86c67ae5b946f7d8960b0703665dde49b8b7045a3.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/PARENT_BODY_MAP.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1459,
+      "sha256": "dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/dbdd8110b702f59c0b48622d7226da3c6f3690e7dc77e988a1fafed055126750.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/PARENT_METADATA_ORIGINS.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 2052,
+      "sha256": "7dd48ef56f4730fda276d707d637673853f9fd8af12af58eac0fa28bcf3659cf",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/7dd48ef56f4730fda276d707d637673853f9fd8af12af58eac0fa28bcf3659cf.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_publication_draft/PARENT_PUBLICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1620,
+      "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_root_candidate/PROPOSAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 770,
+      "sha256": "e49ad0cd5e6031729fbecf236c61f973b74d0891491c18f43e6b79fafcb7844d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e49ad0cd5e6031729fbecf236c61f973b74d0891491c18f43e6b79fafcb7844d.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_root_candidate/SOURCE_PINS.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1346,
+      "sha256": "5a9db9605466bd03d70cf69b93cfbcda04b3f87d02b89d4acb68cf99a971aca5",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/5a9db9605466bd03d70cf69b93cfbcda04b3f87d02b89d4acb68cf99a971aca5.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_root_readout/READOUT.md",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1598,
+      "sha256": "d30ed09efe424a00942f79df8c4d94ab4f5a2e82dcf6f4a79a25365628a03048",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/d30ed09efe424a00942f79df8c4d94ab4f5a2e82dcf6f4a79a25365628a03048.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_root_review/ACCEPTANCE.md",
+      "role": "root_conditional_source_acceptance",
+      "bytes": 2939,
+      "sha256": "9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_root_review/FINAL_FREEZE.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 653,
+      "sha256": "e6e1c8e0884b669aff569787685c5b12b1186ae2114428ac04015bb4a89442b8",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e6e1c8e0884b669aff569787685c5b12b1186ae2114428ac04015bb4a89442b8.blob"
+      }
+    },
+    {
+      "source": "campaign/conditioned_positive_compiler_root_review/REVIEW.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 4651,
+      "sha256": "ac640003d9322cb9d890b574ad7a7456ec30e4bf2c6a569f9c7eaf9f2a9afa44",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/ac640003d9322cb9d890b574ad7a7456ec30e4bf2c6a569f9c7eaf9f2a9afa44.blob"
+      }
+    },
+    {
+      "source": "campaign/publication_integration/single_port_program_and_controller/ATTACHMENT.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 216,
+      "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922.blob"
+      }
+    },
+    {
+      "source": "campaign/publication_integration/single_port_program_and_controller/PUBLICATION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1620,
+      "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db.blob"
+      }
+    },
+    {
+      "source": "campaign/run.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_protected_review_2050/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1466,
+      "sha256": "83a15498975a7214727e923abd89e299368e5cbdbb54fe3a72460295230a28cf",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/83a15498975a7214727e923abd89e299368e5cbdbb54fe3a72460295230a28cf.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_protected_review_2050/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 3020,
+      "sha256": "3bae7bad93ad1ada04012de08dc5db818acbf6828f716fa965a63f4d66c332ca",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/3bae7bad93ad1ada04012de08dc5db818acbf6828f716fa965a63f4d66c332ca.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_protected_review_2050/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_protected_review_2050/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 314,
+      "sha256": "e1e7dd539129771cb7f6f37a019563dd957c84915960cd7a7dc0133a37ac8ce3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e1e7dd539129771cb7f6f37a019563dd957c84915960cd7a7dc0133a37ac8ce3.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_source_acceptance_2104/EXECUTION.json",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 1464,
+      "sha256": "baebd00dc3a9e597c36e66a0a8ebc9d3a74c842d371b3ccf5ea8008441e00e21",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/baebd00dc3a9e597c36e66a0a8ebc9d3a74c842d371b3ccf5ea8008441e00e21.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_source_acceptance_2104/executed_source.py",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 6490,
+      "sha256": "01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_source_acceptance_2104/stderr",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "campaign/runs/conditioned_source_acceptance_2104/stdout",
+      "role": "selected_current_source_metadata_and_failure_history",
+      "bytes": 789,
+      "sha256": "c16cda8db86834ee4cc00bd73fe3bc283073bdf38debffb1201c6b46e6eec025",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/source_recovery/c16cda8db86834ee4cc00bd73fe3bc283073bdf38debffb1201c6b46e6eec025.blob"
+      }
+    }
+  ],
+  "scope": "Three exact bodies, one canonical compiler parent with exact proof/review extraction, selected recoverable metadata; no recursive publication archive"
+}

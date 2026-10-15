@@ -1,0 +1,7 @@
+A quantitative augmented Lie-basis certificate gives explicit positive-time one-port compilation recipes at fixed finite plant and fixed certificate. The root construction consumes a supplied target logarithm; the protected construction supplies a finite target-grid search. Both retain actual elapsed H aging, all plant/filler/reference outputs, physical scalar phases and complete duration/action/slew/calibration/work costs.
+
+The current window target is exp(-isH) W exp(-iTH). Fixed nonzero lambda retains its explicit lambda b w allowance; no uniform shrinking-coupling, efficient many-qubit algorithm, native controller or source is claimed. Three original bodies are preserved exactly with separate source-exposed comparison and root source acceptance. Publication is conditional support, not an audit verdict.
+
+Source-integrity-only primary, 60 seconds; no science or primary execution in the source draft. The separate current binding captures actual tree/review/base evidence. Root must report actual cache, source-contract and focused integration results before publication. The sole mathematical parent is published combined compiler9617; selected Git ancestry is separate.
+
+Before opening, replace these placeholders with actual commit links: __HANDOFF_LINK__, __TRACE_LINK__, __NOTE_LINK__, __RUNNER_LINK__, __REVIEW_LINK__, __IMPORTS_LINK__, __EVIDENCE_LINK__. Record actual validation, exact stack base and remaining cumulative/current-main/audit conditions; do not copy an anticipated success outcome.

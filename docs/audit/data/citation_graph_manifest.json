@@ -1,6 +1,6 @@
 {
- "edge_count": 16104,
- "node_count": 7143,
+ "edge_count": 16105,
+ "node_count": 7144,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4105,6 +4105,10 @@
   "conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "conditioned_positive_time_compiler_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "a4362a54e960",
+   "out_degree": 1
   },
   "confinement_string_tension_note": {
    "deps_hash": "245d8d2e9ca0",

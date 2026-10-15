@@ -1,0 +1,27 @@
+from pathlib import Path
+import datetime,hashlib,json
+N=Path(__file__).resolve().parents[1];D=N/'conditioned_positive_compiler_independent';R=N/'conditioned_positive_compiler_root_candidate';O=N/'conditioned_positive_compiler_protected_root_read'
+def read(p):return json.loads(Path(p).read_text())
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+f=read(D/'FINAL_FREEZE.json');assert len(f['members'])==27 and f['scientific_programs_run']==0
+for r in f['members']:same(D/r['path'],r)
+m=read(D/'SOURCE_MANIFEST.json');assert len(m['sources'])==8 and not m['new_root_candidate_exposed']
+for r in m['sources']:
+ same(r['path'],r);same(D/r['recovery'],r)
+receipts=[]
+for label,name in [('capture','capture_sources.py'),('verify','verify_metadata.py')]:
+ p=D/'metadata_runs'/label/'EXECUTION.json';r=read(p)
+ assert r['exit_code']==0 and not r['timed_out'] and r['scientific_programs_run']==0
+ assert r['argv'][1]==str(D/name)
+ for k in ['child_source_at_launch','source_capture','recorder','stdout','stderr']:same(r[k]['path'],r[k])
+ assert Path(r['child_source_at_launch']['path']).read_bytes()==Path(r['source_capture']['path']).read_bytes()
+ receipts.append(pin(p))
+for r in read(R/'PROPOSAL_FREEZE.json')['files']:same(r['path'],r)
+for r in read(R/'SOURCE_PINS.json')['sources']:same(r['path'],r)
+assert pin(D/'DERIVATION.md')['sha256']=='dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04'
+assert pin(R/'DERIVATION.md')['sha256']=='2de387eb501aa8ead91afa1f5a26f7d3a0bbf11e51285d99786715152ad5b6d6'
+assert not O.exists();O.mkdir()
+out={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'protected_proof':pin(D/'DERIVATION.md'),'protected_freeze':pin(D/'FINAL_FREEZE.json'),'protected_members_verified':27,'selected_sources_and_copies_verified':8,'metadata_receipts':receipts,'root_proof':pin(R/'DERIVATION.md'),'root_freeze':pin(R/'PROPOSAL_FREEZE.json'),'root_chronology_readout':pin(N/'conditioned_positive_compiler_root_readout/READOUT.md'),'complete_root_read':['Protected proof all10sections30870bytes','Exposure3357bytes and route2311bytes','All four current metadata helpers','Root proposal all8sections18196bytes; inherited window chronology reread'],'analytic_read_scope':'Checked logarithm existence/grid margin, tree Taylor derivatives, balanced signed list, product errors, joint recurrence/Frobenius margins, positive elapsed time, smoothing/phase/window order, fixed-certificate exponents and full ledger. Protected source uses a stronger target-search contract; differences require exposed comparison.','status':'Complete pre-exposure root read; exposed comparison authorized separately, not final acceptance or audit.','scientific_programs_run':0,'editable_prompt_files_changed':[]}
+(O/'READ.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'read_record':pin(O/'READ.json'),'members':27,'sources':8,'science':0}))

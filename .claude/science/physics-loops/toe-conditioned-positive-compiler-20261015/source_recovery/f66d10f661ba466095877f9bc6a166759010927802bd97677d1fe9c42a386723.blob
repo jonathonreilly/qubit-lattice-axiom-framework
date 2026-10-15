@@ -1,0 +1,40 @@
+{
+  "scope": "source/recovery metadata only; no scientific program",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/verify_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison",
+  "start_utc": "2026-10-15T20:58:21.878494+00:00",
+  "end_utc": "2026-10-15T20:58:21.927640+00:00",
+  "elapsed_seconds": 0.04886800004169345,
+  "timeout_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/verify_metadata.py",
+    "bytes": 3323,
+    "sha256": "e3751f20dcbd66e509afbf8cd74494d72fa32263e1c7d43530d3024f62db5288"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/metadata_runs/verify/executed_source.py",
+    "bytes": 3323,
+    "sha256": "e3751f20dcbd66e509afbf8cd74494d72fa32263e1c7d43530d3024f62db5288"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/record_metadata.py",
+    "bytes": 2123,
+    "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/metadata_runs/verify/stdout",
+    "bytes": 729,
+    "sha256": "147a0528a96ecbbba510b4e57a885e5bce504a585c9930d4095c0b1fa3f2c83d"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/metadata_runs/verify/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_programs_run": 0
+}

@@ -1,0 +1,45 @@
+from pathlib import Path
+import datetime,hashlib,json
+N=Path(__file__).resolve().parents[1];D=N/'conditioned_positive_compiler_comparison';I=N/'conditioned_positive_compiler_independent';R=N/'conditioned_positive_compiler_root_candidate';O=N/'conditioned_positive_compiler_root_review'
+def read(p):return json.loads(Path(p).read_text())
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ['bytes','sha256']),str(p)
+assert pin(D/'REPORT.md')['sha256']=='227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0'
+assert pin(D/'FINAL_FREEZE.json')['sha256']=='db7b2b696bbbb59e09f9b5c9bf41df61f0f95f66cbe31bc357ed363929bc64e0'
+freezes=[]
+for folder,name,key,count in [(D,'FINAL_FREEZE.json','members',40),(I,'FINAL_FREEZE.json','members',27),(R,'PROPOSAL_FREEZE.json','files',2)]:
+ f=read(folder/name);assert len(f[key])==count
+ for row in f[key]:same(Path(row['path']) if Path(row['path']).is_absolute() else folder/row['path'],row)
+ freezes.append({'freeze':pin(folder/name),'members':count})
+for folder,count in [(D,23),(I,8)]:
+ rows=read(folder/'SOURCE_MANIFEST.json')['sources'];assert len(rows)==count
+ for r in rows:same(r['path'],r);same(folder/r['recovery'],r)
+receipts=[]
+for folder in [D,I]:
+ for label in ['capture','verify']:
+  p=folder/'metadata_runs'/label/'EXECUTION.json';r=read(p);assert r['exit_code']==0 and not r['timed_out'] and r['scientific_programs_run']==0
+  for k in ['child_source_at_launch','source_capture','recorder','stdout','stderr']:same(r[k]['path'],r[k])
+  assert Path(r['stderr']['path']).read_bytes()==b'';receipts.append(pin(p))
+for r in read(R/'SOURCE_PINS.json')['sources']:same(r['path'],r)
+root_receipt=read(N/'runs/conditioned_protected_review_2050/EXECUTION.json');assert root_receipt['exit_code']==0
+for k in ['child_source_at_launch','recorder','stdout','stderr']:same(root_receipt[k]['path'],root_receipt[k])
+assert read(N/'conditioned_positive_compiler_protected_root_read/READ.json')['status'].startswith('Complete pre-exposure root read')
+assert not O.exists();O.mkdir()
+accept='''# Qualified conditional source acceptance: quantitative positive-time compiler
+
+Root accepts both fixed-certificate conditional constructions after complete reading of root2de387eb, protecteddd6cca85 and source-exposed comparison227180a0, including the exact inherited compiler proof/review. This is a source decision, not publication-wrapper acceptance, independent retained audit, physical realization or a claim of practical efficiency.
+
+The root recipe requires a supplied traceless logarithm or finite factors, admits an empty rounded schedule, and pays rational duration rounding. The protected recipe accepts a full computable target with determinant lift, uses a finite coefficient grid, and retains its exact computable durations. Preserve their constants and target-data contracts separately. Both yield explicit sufficient pulse count, duration and smoothing powers at a fixed complete augmented Lie-basis/conditioning certificate. Degree means total leaf count, and dimension is the complete plant dimension.
+
+Two chronology qualifications are mandatory: finite target products compose the augmented pairs before reconstructing total actual H aging; the finite-window comparator is exp(-isH) W exp(-iTH), with the scalar phase at actual T+s. The exposed comparison supplies an explicit composition proof. Root recurrence uses a certified operator-norm enclosure; the protected larger ceiling supports its Frobenius acceptance test. Do not exchange those norm contracts without repricing the search. Literal H0, all fillers/references, physical reserves and actual smoothed pulse areas remain.
+
+All long waits, full norms, phase/scalar actions, slew, variation, calibration and timing costs are retained. Whole-generator positivity differs from a positive decomposition of every old channel. Integrated dynamical error alone gives no peak positivity or endpoint work bound. Reset consequences require the actual aged input to meet their separate memory premise. A fixed nonzero lambda leaves a nonzero finite-window allowance. No uniform shrinking-lambda result, prescribed completion time, efficient qubit-size/oracle runtime, native source/waveform/timing/isolation supplier, physical energy/detector identity, permanent halt or reuse follows from these sources.
+
+Protected work was shielded only from the new root candidate before its freeze. The model, prior context and question were shared; the later comparison is exposed and authored by the protected proof's author. Root's complete protected read preceded exposure. No scientific program, target-grid search, recurrence search, numerical fixture or physics experiment ran. Current execution only verifies source identities and actual metadata receipts. Frozen proofs and chronology readout remain immutable; no prompt or physical axiom changed.
+
+A further accuracy-scaled coupling proposal is separate provisional work and is not imported or accepted by this decision.
+'''
+(O/'ACCEPTANCE.md').write_text(accept)
+out={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'decision':'Accept both qualified conditional source recipes; publication and retained audit separate','acceptance':pin(O/'ACCEPTANCE.md'),'root':pin(R/'DERIVATION.md'),'independent':pin(I/'DERIVATION.md'),'comparison':pin(D/'REPORT.md'),'root_readout':pin(N/'conditioned_positive_compiler_root_readout/READOUT.md'),'pre_exposure_root_read':pin(N/'conditioned_positive_compiler_protected_root_read/READ.json'),'source_freezes_verified':freezes,'source_rows_verified':{'comparison':23,'protected':8},'metadata_receipts':receipts,'complete_read':'Root8sections,protected10sections,comparison10sections and current exposure statements; all changed metadata helper logic read, exact recorder reused. Full prior compiler proof/review reused at checked identities. Analytical bounds checked; no numeric proof vote.','scientific_programs_run':0,'publication_wrapper_accepted':False,'retained_audit_applied':False,'editable_prompt_files_changed':[]}
+(O/'REVIEW.json').write_text(json.dumps(out,indent=2)+'\n');(O/'FINAL_FREEZE.json').write_text(json.dumps({'utc':out['utc'],'files':[pin(O/'ACCEPTANCE.md'),pin(O/'REVIEW.json')],'scientific_programs_run':0},indent=2)+'\n');print(json.dumps({'acceptance':pin(O/'ACCEPTANCE.md'),'review':pin(O/'REVIEW.json'),'freeze':pin(O/'FINAL_FREEZE.json')}))

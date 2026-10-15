@@ -1,0 +1,29 @@
+{
+  "note": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "root_author",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20853,
+      "end_byte_exclusive": 39049,
+      "bytes": 18196,
+      "sha256": "2de387eb501aa8ead91afa1f5a26f7d3a0bbf11e51285d99786715152ad5b6d6"
+    },
+    {
+      "name": "independent_author",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 39210,
+      "end_byte_exclusive": 70080,
+      "bytes": 30870,
+      "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+    },
+    {
+      "name": "comparison",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 70233,
+      "end_byte_exclusive": 97212,
+      "bytes": 26979,
+      "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+    }
+  ]
+}

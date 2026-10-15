@@ -1,5 +1,16 @@
 # CLS-1 report: does class S (lattice-scale translation breaking to BCC) destroy X2's light generations?
 
+> **Referee (codex gpt-5.6-sol, 15:30Z): CONFIRMED WITH CORRECTIONS. CLS-PRICE.**
+> - **Confirmed:** the light–light operators are permitted.
+> - **Corrections:**
+>   - their coefficients are independent of the Yukawa (natural, not forced);
+>   - the IceCube limits apply per coefficient, with an O(1) normalisation;
+>   - the loop toy omitted its temporal term, and the corrected spread is about 2.9e-2;
+>   - Θ is verified at the one-body level only;
+>   - the many-body SMG fate is open.
+>
+> See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Reading: CLS-PRICE. Without tuning it is KILL-level at every f in the range.**
 
 **Provenance.**

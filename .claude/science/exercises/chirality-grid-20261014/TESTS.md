@@ -276,3 +276,16 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Phase constancy** also holds for the anomalous L1 and for isolated L2/R2. It is a property of the restricted Lx = 2, open-time, W-matched sector, not of chiral measures.
 - **What is new beyond K2c:** RP failure of the fractional-power overlap modulus |det D(1)|²|det D(2)|^{1/2}. No chirality- or anomaly-specific mechanism is shown.
 - **Consequence:** route 1's "chiral measure escapes K2c" question is **not closed**. It needs Lx ≥ 4 and a measure that meets Lüscher's conditions (or Kadoh–Kikukawa's).
+
+**UV-1 referee (codex gpt-5.6-sol, xhigh; returned 23:15Z; recorded 00:26Z 10-15): CONFIRMED WITH CORRECTIONS.** OPEN is the correct reading for both arms.
+- **Why OPEN:** PERSISTS needs a convergence-checked finite-β torus negative at t₀ ≥ 3, and none was computed. The β = ∞ result was registered as a comparator only.
+- **Confirmed:**
+  - The β = ∞ comparator is the legitimate limit of both arms' diagonally normalised kernels. The residual Polyakov holonomy stays Haar-integrated, and the field is not globally flat.
+  - Lt = 20, t₀ = 4: −1.50797e-9 reproduced at 12, 24 and 48 Polyakov nodes (gap ≥ 0.78).
+  - The continuity lemma, for each fixed pool. It gives no useful β₀.
+  - Stage B's bug fix. A primary-arm β = 8 2×2 subkernel stays negative from n = 2 to n = 4 (about −8.42e-6), so the registered depth-2 threshold is securely met.
+- **Corrections:**
+  - "Exact-kink" describes the domain partition, not exact integration of the determinant.
+  - A β-independent decay exponent, or a universal 0.2–0.4-spacing decay length, is not established: the deep points use separately optimised pools, and only t₀ ≤ 2 was tested at finite β.
+  - Exact OS reconstruction already fails for each tested finite measure once any t₀ = 1 witness is negative. But "fails at every depth", failure in the continuum, and a full set-B no-go are not established.
+- **Strongest correct statement:** in the finite 2D U(1) overlap proxy, finite-β torus RP negativity is established at t₀ = 1, the open proxy stays negative at t₀ = 2, and the normalised β → ∞ torus kernel is independently negative at t₀ = 3 and 4. So an exact compact-depth UV cutoff is excluded in substance for large enough β. The evidence supports an exponentially small lattice-scale tail, not a physical-depth or continuum obstruction.

@@ -1,0 +1,15 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+INF nw=12: lambda_min=-1.507970267691e-09 lambda_max=1.594218578674e+01 relative=-9.458993188656e-11 gap_min=0.779726160 eig_residual=8.557e-16 herm_defect=0.0e+00 diag_phase_max=2.8e-15
+INF nw=24: lambda_min=-1.507973749028e-09 lambda_max=1.594218578674e+01 relative=-9.459015025922e-11 gap_min=0.779726158 eig_residual=1.656e-15 herm_defect=0.0e+00 diag_phase_max=1.7e-15
+INF nw=48: lambda_min=-1.507973163092e-09 lambda_max=1.594218578674e+01 relative=-9.459011350541e-11 gap_min=0.779726158 eig_residual=1.638e-15 herm_defect=0.0e+00 diag_phase_max=1.2e-15
+INF change nw=12->24: max_entry=1.066e-14 k*max=1.706e-13
+INF change nw=24->48: max_entry=7.196e-15 k*max=1.151e-13
+INF max_crossing_plaquette=4.441e-16
+INF dense_gap grid=64: min=0.779726158 at=(11, 12, 33)
+elapsed=24.2s
+watchdog peak RSS 34224 KB

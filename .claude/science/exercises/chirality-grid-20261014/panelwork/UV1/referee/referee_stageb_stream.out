@@ -1,0 +1,17 @@
+D2 nodes n=2: count=8064 volume=1.368360000000 volume_error=-2.160e-04
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+D2 full n=2: lambda_min=-2.034420747910e-05 relative=-3.390694009846e-06 gap_min=0.821388487 eigvec_order=[0, 2, 4, 1, 5, 3] weights=[0.5982997301040125, 0.553712531947832, 0.3169002179613214, 0.3165607225033916, 0.27257853731657544, 0.2459763540260345]
+D2 selected principal subset=[0, 4] best_2x2_excess=(np.float64(8.415227449765084e-06), 0, 4)
+D2 subset n=2: lambda_min=-8.415227449821e-06 relative=-4.207596020972e-06 gap_min=0.834244935
+D2 nodes n=3: count=61236 volume=1.368576000000 volume_error=-6.661e-16
+D2 subset n=3: lambda_min=-8.421559419436e-06 relative=-4.210761979127e-06 gap_min=0.818715109
+D2 nodes n=4: count=258048 volume=1.368576000000 volume_error=+0.000e+00
+D2 subset n=4: lambda_min=-8.423311774475e-06 relative=-4.211638149267e-06 gap_min=0.811498268
+D2 subset change n=2->3: max_entry=6.332e-09 k*max=1.266e-08
+D2 subset change n=3->4: max_entry=1.752e-09 k*max=3.505e-09
+watchdog peak RSS 212592 KB

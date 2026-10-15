@@ -116,3 +116,7 @@ Original packaging21:33:44Z and deadline21:48:44Z unchanged. Earlier development
 The scalar boundary and highest directly evaluated metric derivatives are eliminated only in the stated conditional radial vacuum inverse. The next useful work must establish a calibrated observable supplier or challenge the vacuum/single-sector identification; another moment-weight variant alone is not a milestone. A finite set of fitted windows cannot be promoted to exact field-equation membership. Existing Cassini count/receiver observations remain exposed development and do not supply a static areal-radius metric. Avoid opening a new observational dataset without a fixed input/fit/test protocol.
 
 Potential constructive alternative: determine whether a full multi-field/material inverse has a measurable consistency condition that remains after the single-sector restriction is relaxed. Preserve the exact null-stress identities and degeneracies; do not install a vacuum/sector selector as a derivation. Action selection, initial preparation and absolute Q/f0 remain open. Stop new discovery at21:33:44Z; finaldeadline21:48:44Z unchanged.
+
+## Closing priority after M20
+
+Finish source/evidence delivery and final campaign synthesis. Next physical priorities, requiring future authorization beyond the fixed deadline: track-matched receiver/clock/error calibration; calibrated metric/material interval; projected lensing/velocity sampling uncertainty. No new discovery after21:33:44Z; stop21:48:44Z.

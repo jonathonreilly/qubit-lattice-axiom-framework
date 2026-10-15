@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/scalar_full_field_metric_check.py
+runner_sha256: f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180
+input_fingerprint_sha256: 996e3febacdc7b856e3afb89ef3e08ba1a304e76613897884ca72062800370e6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+per_element: checked: complete original Jordan equations and necessary envelope
+per_site: checked: two synthetic local full-field ODE jets; no observed metric
+per_mode: checked: x and y both active; no selected sector or state
+per_block: checked: conditional squared-amplitude reconstruction; not sufficient solution membership
+lattice_wide: not executed: no full theory, global history or measured normalization derivation
+{
+  "actual_current_surface_status": "conditional-support",
+  "counts": {
+    "failed": 0,
+    "passed": 31
+  },
+  "empirical_tests": 0,
+  "failed_checks": [],
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+    "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+    "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+    "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+    "scripts/scalar_full_field_metric.py": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21"
+  },
+  "primary_sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+  "read_inventory": {
+    "integrity_inputs": "Primary source and declared note/helper/protocol/premise sources",
+    "scientific_inputs": "Declared two-case synthetic protocol and helper functions; no observed data or independent reviewer outputs"
+  },
+  "remaining_inputs": [
+    "Candidate action and k,Hv,nu,C",
+    "Calibrated metric through N third and B second derivatives",
+    "Static radial material vacuum",
+    "Smooth roots, derivative kinetic compatibility and both transverse equations",
+    "Global state/preparation, physical normalization and stability"
+  ],
+  "scope": "Two synthetic local full-field Einstein ODE jets, not a global trajectory, observed metric or physical parameter fit",
+  "target_claim_type": "bounded_theorem"
+}
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

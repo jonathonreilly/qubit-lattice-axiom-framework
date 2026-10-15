@@ -199,3 +199,7 @@ artifact_role: theorem
 next_trace_action: Supply a calibrated metric interval and independently test vacuum/sector identification and potential consistency.
 
 The nonlinear inverse eliminates a scalar boundary value and reconstructs k,z,Hv,nu on a regular varying chart of the supplied action. Full interval compatibility and the potential equation distinguish reconstruction from a two-point fit. The constant scalar branch and live material/transverse alternatives delimit the result. Physical action/sector selection, actual state/history, absolute action normalization and measured-gravity identification remain open. A regular coherent milestone is justified by a complete local inverse with an altered-potential discriminator, subject to independent source checks; it is not another variant of the preceding scalar ceiling.
+
+## M20 full-field compatibility
+
+trace_class: upstream_support; reachability_to_target: supports; actual_current_surface_status: conditional-support. Consumer: full-three-field static vacuum compatibility. The positive kinetic/potential envelope removes the zero-transverse-field restriction only for a necessary test; no action, state, absolute scale or physical-metric supplier is derived.

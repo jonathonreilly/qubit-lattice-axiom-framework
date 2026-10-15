@@ -135,3 +135,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
 The initial-boundary input is eliminated from this inverse, not selected dynamically. The reconstructed scalar and parameters are synthetic examples, not measured values. No general uniqueness across material/field sectors, global solution, stable history, measured G, action selection or TOE is established. Formal audit and integrated landing remain future activities.
+
+## M20 conditional necessary envelope
+
+actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Supplied action/parameters/amplitude, physical metric/vacuum and full-solution completion remain. Independent34exact and50post-exposure formula checks do not confer formal audit status.

@@ -1,0 +1,89 @@
+{
+  "at_utc": "2026-10-15T21:18:19.171079+00:00",
+  "scope": "Complete new M20 note/helper/primary/protocol source correspondence, independent prior math plus separate post-exposure formula/domain tests; no author ODE, aggregate, cache, mutation or formal audit claim",
+  "finding": "No material discrepancy in reviewed equations, source correspondence or stated necessary-test scope",
+  "files": [
+    {
+      "path": "CANONICAL_REVIEW_v1.md",
+      "sha256": "68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919",
+      "bytes": 9007
+    },
+    {
+      "path": "CANONICAL_EXPOSURE_v1.json",
+      "sha256": "2e2b14fe608eab5bc7e4033a48022785b504a5cf760c39dd58137136258802be",
+      "bytes": 1280
+    },
+    {
+      "path": "canonical_correspondence_checks_v1.py",
+      "sha256": "efeac035840de1a66197a06b359de4ba209a63a2cf80416034897a1de52b598c",
+      "bytes": 5237
+    },
+    {
+      "path": "CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "sha256": "1935403c4ad5e484bc43212e2c9285de2d63aa8078f385b10a49460bd2735595",
+      "bytes": 6794
+    },
+    {
+      "path": "INDEPENDENT_FREEZE_v1.json",
+      "sha256": "793e607460d94fa2e60d3a9c6993ad598c79c1818b4bc14c09ef812486f1d2f9",
+      "bytes": 1257
+    }
+  ],
+  "reviewed_sources": [
+    {
+      "path": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot": "CANONICAL_EXPOSURE_v1__SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+      "bytes": 10793
+    },
+    {
+      "path": "scripts/scalar_full_field_metric.py",
+      "snapshot": "CANONICAL_EXPOSURE_v1__scalar_full_field_metric.py",
+      "sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+      "bytes": 8501
+    },
+    {
+      "path": "scripts/scalar_full_field_metric_check.py",
+      "snapshot": "CANONICAL_EXPOSURE_v1__scalar_full_field_metric_check.py",
+      "sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+      "bytes": 3308
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "snapshot": "CANONICAL_EXPOSURE_v1__PROTOCOL_v1.json",
+      "sha256": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+      "bytes": 1198
+    }
+  ],
+  "current_source_comparison": [
+    {
+      "path": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot_sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+      "current_sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+      "same": true
+    },
+    {
+      "path": "scripts/scalar_full_field_metric.py",
+      "snapshot_sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+      "current_sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+      "same": true
+    },
+    {
+      "path": "scripts/scalar_full_field_metric_check.py",
+      "snapshot_sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+      "current_sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+      "same": true
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "snapshot_sha256": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+      "current_sha256": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+      "same": true
+    }
+  ],
+  "original_independent_freeze_preserved": true,
+  "postexposure_results": {
+    "passed": 50,
+    "failed": 0
+  }
+}

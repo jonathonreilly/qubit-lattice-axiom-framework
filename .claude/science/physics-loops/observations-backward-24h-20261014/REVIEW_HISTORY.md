@@ -231,3 +231,17 @@ M19 scientific source reviews complete:89 canonical controls pass,0fail;21 actua
 Freeze exact M19 archive/stage, complete mechanical delivery verification, commit/push only campaign branch and open/attach one regular PR stacked on frozen M18. Then synthesize remaining physical suppliers before fixed packaging21:33:44Z; deadline21:48:44Z unchanged.
 
 Exact report identities and read scopes: material_metric_consistency/REVIEW_RECORD_v1.md. Original failures and source transitions remain explicit. All three older campaigns stay stopped; no owned research jobs.
+
+## M19 publication and closing preparation — 2026-10-15T21:00:11.479692+00:00
+
+[PR #9620](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9620) is regular/open/mergeable against its declared M18 base, at `95609a8f3545258e5494d95f2d012a9e15ab1c14`, tree `5aaa06a03ad7c5eadba14fac38705da2416564ca`. M19 published/attached as regular PR9620 at95609a8f3545258e5494d95f2d012a9e15ab1c14,tree5aaa06a0,59paths. Conditional pointwise/weak vacuum metric inverse removes chosen scalar boundary and highest direct derivatives in stated class.89canonical controls0fail,21formula variants detected; independent math/alternate-frame/source checks and862-comparison final delivery delta complete.206archive members/40plainviews/7explicit omissions. No observed metric or empirical test; action/vacuum/sector/calibration/Q remain supplied.
+
+M19 scientific source is published and frozen. Integrate/check existing physical-supplier evidence and unresolved assumption ledger; do not count another synthetic inverse or chosen selector as a supplier. Provisional closing synthesis is runtime FINAL_REPORT_WORKING_v1.md with exact input receipt; review and finalize it at21:33:44Z with no new discovery thereafter. At21:48:44Z stop owned work, verify final PR/artifact/process state, publish honest FINAL_REPORT.md and stop the heartbeat. Original deadline unchanged.
+
+Root read the complete final scientific reports and both mechanical delivery reports. Preserved formatting/display and checker-semantics failures remain explicit. All17earlier campaign PRs remain open at recorded heads and are present in this chat; M19 is now also attached. No science merge, main push or formal audit. Matching lock refreshed20:59:29UTC; no owned research job; all three older campaigns remain stopped.
+
+## M20 full-field extension — 2026-10-15T21:20:05.155986+00:00
+
+Root read the complete independent proof, canonical source report and both exact/post-exposure control implementations. Scoped disposition: pass for this conditional necessary-test extension; not full-solution sufficiency, empirical validation, integrated landing or formal audit. Canonical report SHA256 68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919. Original34exact and separate50post-exposure checks are distinguished. Final guarded execution31/0 and8failed-control mutations are preserved; narrow independent evidence confirmation follows.
+
+M20 evidence supplement32518c38 read completely: unchanged source and31/0cache/products bind; all8mutants fail actual controls. Source-readiness issue is null. Scoped scientific disposition pass; final delivery pending.

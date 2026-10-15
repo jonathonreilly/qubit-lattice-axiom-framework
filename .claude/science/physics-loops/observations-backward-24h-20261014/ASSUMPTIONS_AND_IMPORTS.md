@@ -162,3 +162,7 @@ No new calibration or empirical holdout was opened. Earlier observed products re
 No new primitive, authority change or selector is adopted. Exposed synthetic development is separate from empirical tests; there are zero new empirical tests. Existing day169 receiver/count products remain development-exposed, while unopened campaign products stay unopened.
 
 The integral alternative eliminates direct N'''/B'' evaluation for this inverse, replacing it with N''/B' and finite weighted equations. The exact theorem retains C3/C2 and a uniform amplitude margin. Finite weights, sampled support ordering and numerical bracket margins are development choices and limitations. No physical derivative error bound or complete-interval certificate is derived.
+
+## M20 necessary full-field metric test
+
+x=y=0 is unnecessary for the new necessary envelope. It remains required by the unchanged unique one-field inverse. Candidate action, k/Hv/nu, trial amplitude C, static radial material vacuum and calibrated metric through N3/B2 remain supplied; full smooth roots, derivative kinetic and transverse-equation completion remain open. Zero empirical tests.

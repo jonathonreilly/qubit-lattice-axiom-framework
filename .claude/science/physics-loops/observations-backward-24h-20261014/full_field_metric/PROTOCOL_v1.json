@@ -1,0 +1,53 @@
+{
+  "frozen_at": "2026-10-15T21:07:25.295608+00:00",
+  "role": "synthetic local full-field controls; no empirical observations or independent holdout",
+  "action_source": "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "metric_source": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "fixed_cases": [
+    {
+      "k": ".1",
+      "Hv": ".03",
+      "nu": "1.2",
+      "R": "5",
+      "state": [
+        "1.4",
+        ".2",
+        ".1",
+        ".03",
+        ".02",
+        "-.015",
+        ".9",
+        "0"
+      ]
+    },
+    {
+      "k": ".22",
+      "Hv": ".05",
+      "nu": ".7",
+      "R": "3",
+      "state": [
+        "1.2",
+        "-.15",
+        ".18",
+        "-.02",
+        ".01",
+        ".02",
+        ".95",
+        "0"
+      ]
+    }
+  ],
+  "state_order": [
+    "z",
+    "x",
+    "y",
+    "dz/dR",
+    "dx/dR",
+    "dy/dR",
+    "B_E",
+    "ell_E"
+  ],
+  "precision_digits": 50,
+  "residual_tolerance": "1e-35",
+  "scope": "Local smooth Einstein-frame full-three-field ODE jets, transformed to Jordan metric. Not a global numerical solution. Inverse sees metric jets plus trial k,Hv,nu,X, not transverse amplitudes."
+}

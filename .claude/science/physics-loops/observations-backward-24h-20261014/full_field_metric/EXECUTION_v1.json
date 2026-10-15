@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-10-15T21:14:14.376279+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "scripts/scalar_full_field_metric_check.py"
+  ],
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.5021684160456061,
+  "exit_code": 0,
+  "stdout_sha256": "3a4027d83cf09d3026982e9fbafb0752560e2a37d9388b338aa0f3fc126759ff",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sources": {
+    "scripts/scalar_full_field_metric_check.py": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+    "scripts/scalar_full_field_metric.py": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+    "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a"
+  }
+}

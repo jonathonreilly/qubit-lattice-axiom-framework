@@ -1,6 +1,6 @@
 {
- "edge_count": 16068,
- "node_count": 7120,
+ "edge_count": 16072,
+ "node_count": 7121,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12484,6 +12484,10 @@
   },
   "installed_background_auxiliary_preparation_bounded_theorem_note_2026-10-15": {
    "deps_hash": "dcaed0b9908a",
+   "out_degree": 4
+  },
+  "installed_generator_preparation_readiness_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "7f0d6f98d7fb",
    "out_degree": 4
   },
   "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {

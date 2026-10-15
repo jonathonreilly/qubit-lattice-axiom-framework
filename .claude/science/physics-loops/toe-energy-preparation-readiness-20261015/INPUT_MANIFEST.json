@@ -1,0 +1,633 @@
+{
+  "schema": "energy-preparation-readiness-inputs-v1",
+  "members": {
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/BINDING.json": {
+      "bytes": 3731,
+      "sha256": "21516acbb7616f1b6f8b6a4e75c50d292cd9b72835538ecf050efe6fbef39186"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/BODY_MAP.json": {
+      "bytes": 1168,
+      "sha256": "e049c4e4aaef9ae02ebb2d2b483c5178c0d2beac9e9d677d911c4ddab5f193e4"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/SOURCE_INDEX.json": {
+      "bytes": 119562,
+      "sha256": "c19ba7fd05b6d2817e5285f9cf9c9f783db2343352ea75a21d31f00f56a9bd29"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/0073afa2cd7700fbd7c3d2e4698a9c5b9ea11c2de9819304640ef2d52833f453.gz": {
+      "bytes": 2460,
+      "sha256": "20942d5f4f8f4f99c4d96512c4e20c95706644d9e813508274860ecf484471b6"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/00c33b875c99893276955ddbccec7e9bf751feb4d1d3d20963e062912c07523e.gz": {
+      "bytes": 1441,
+      "sha256": "6a1a0a9abff07c4e4e709f81aa79d4576146aab6fad1cae28c79b4cc44629742"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/0162fa4163e4347b8f973890dee2565e4f47bd1b2d5e4f5ada69d4eb5b5a8ac5.gz": {
+      "bytes": 947,
+      "sha256": "0bdbc31792e7928b5f83802cd040b6a3bd81da8e34e471fd6108c87b7c9afc18"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/048f06aca489c8742516c5e80b8366151fd75d8a9e1ec76f8bbee2cce0a73f23.gz": {
+      "bytes": 321,
+      "sha256": "e9bf3606006039948f5bdc49de3e40b26a7c1f97cd9247d9c2ef3b9b047f74b2"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/04d79ecdc3e80c1fbf45749f9d57663cbc2a41af8e80c7f70c550d3614bcad3d.gz": {
+      "bytes": 266,
+      "sha256": "d988ad30af06170fbaa03d31ee4c040fef275785231c52ec9adc06e8b87409ca"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/05636e446f5efce25c39c08c9061b946e61ad1087717f99cc4cb979e89902195.gz": {
+      "bytes": 474,
+      "sha256": "85bbc7509bf78398e72f190977c7043f6098d85c51b0c09fedddaada7b77305f"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/0784d2dd9a0119092a05ca208bf6fee3475324effa26a13974f0ca848e9388ae.gz": {
+      "bytes": 3034,
+      "sha256": "56957d314025bf64ef037b5b2a3762008058c67e1adaeeaf28fa5dd42bba0142"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/0c2fb1d8c53e62c4d20180181ef3c1e5d715aee2147ac6fd684a19c377fe94f4.gz": {
+      "bytes": 1402,
+      "sha256": "bce822b6096b9ef545e70c1fca1617b4b4742d0814b4716d44032720fccb3543"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/0c91c77ae72a1c8266e8ca2116740d23ad12aa0e883c7b2cc895984873c6994e.gz": {
+      "bytes": 1479,
+      "sha256": "bda60f9e11e48ef99a8e1d46624984049676f9672cb3616a2fd20febb0d539aa"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/0f83d908124b5fc495abc2829252df278ba7d521f951a1b60106c64f682b8207.gz": {
+      "bytes": 145,
+      "sha256": "99fae7b43e92b1197761f01d7d87912f407a32df14ea173e20813bfa1b676f15"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/10bd263364bfa6d13669d71b62fc2e82335ea3bfc0aa46c73a9f56fc413707ed.gz": {
+      "bytes": 2817,
+      "sha256": "4a928767375cf92ce2e8faff313f767879b6663e8131fbc1ad67cccc1ebe91d3"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/11b76b5397c14fe068d34111ad70bcccbe9656d79951cd78fb86fe6dd6a9b50f.gz": {
+      "bytes": 8048,
+      "sha256": "f0725198435858bd66b693cbf3c8a43fb29b9848ae3f4688ddea5192384b81da"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/12b01314a4ee50cde14a78ad2b5256f3f405ceca94d8edb7f3ff32645f94c3a6.gz": {
+      "bytes": 565,
+      "sha256": "9ac7789ec93181d190135bcc69db805b02f2506d72f963dec89da0ab85149269"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/137fcf8fe11b4dacad0ef4a7da3f69df63d592d1af92ec4cd5b671117838f487.gz": {
+      "bytes": 3780,
+      "sha256": "9e7efb37dd2f39edf47cf39577428d69662789de24b06a24bd17460ecafb2ef0"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/14c0a658a9f4de135e174a5da4f202d21e24a79287743d482e3b2eeb46b79e07.gz": {
+      "bytes": 4879,
+      "sha256": "9165e4dff76a73f2647660d165d1f7546fc72a622c570762c16fbeccb94b9e5d"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/1781e6fcbac397068f552824e96f3d047af520479ec1edcad931121712199b7f.gz": {
+      "bytes": 1132,
+      "sha256": "99baba3834b03f70f7fc2c96647f9bc614e6e50c0e2e35301d72719ae211ee4b"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/1c89647342ec992801fc9aaa5f42e437bf43bf5782bee32263f2e41aa596e4f3.gz": {
+      "bytes": 2233,
+      "sha256": "23af7eb5b8695638646c3ac7945a775dc8f3dcd3baf248c103d2e034d4629f9b"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/1fbf19f9b563d3a31477afd784e83cf785f0061892f3109842d2ce9461c7b7d4.gz": {
+      "bytes": 546,
+      "sha256": "b5da20e3aab6d713faf8accd06e42aeea1454e008f3dbad4d0ee0101f26e89c1"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/2013c07e17d8d85feec51d472ceb32a9044c278f4e69885bbb9c4d3f5bffd381.gz": {
+      "bytes": 452,
+      "sha256": "1d2cd5b049182e905c8849af7089660b33e3e15da70d9b2288aecac2a931b85b"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/21927ca617099be91a1bdd8366f28d438b690409ef5a95e1375d4fbeda7de1b3.gz": {
+      "bytes": 631,
+      "sha256": "de3f6e77f4d368a71583ccad825465893265e4432ab708d6efb1a0c7f5bae043"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/224be3ab123ae4658a13fa71924a1cd18b49dde5d27be43a24c34b1419040ad4.gz": {
+      "bytes": 724,
+      "sha256": "4d592e571687f8ebc2a09d7889586a999adef42d91c9eed5681077660029d43f"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/2555a321a386d797fdaa42047198ccce6b07e3c5dc5749f35fc1e931f6e45dde.gz": {
+      "bytes": 3407,
+      "sha256": "ca59ef33d77a0e440fc0bfad13e78909eb71b7cb195ade8171c4bf96ab1ec09c"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/25ca2c772cb3d06c59474f562661e900e16b3a741aae11ab7567eaacf4fbe90d.gz": {
+      "bytes": 115,
+      "sha256": "0643b1c30a109735f07cad12087aa3682d3b6248fce9ea23713c6c6f091610d8"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/2726c802b1c5d3d163af3ea897a53326bd96b8751946a9d521f5cac46680b20e.gz": {
+      "bytes": 1811,
+      "sha256": "257d720d6ad924fee198573d873a7a604796aaddf9820e707e740a8f279d114a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/288300ba70b9769b13f0554e93ed7009ebd303942951c32ebdfa636fb374f80d.gz": {
+      "bytes": 1320,
+      "sha256": "849ca7f4d3abd7c77b656a5dfd8650fd5869488d00aa06e5ec1757602dd2d90a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/334b07d40c4a80608ffbbc328a13b66f897adc7199b92fc2f997ff1a47ce1e26.gz": {
+      "bytes": 533,
+      "sha256": "4efe3af7bfa8bbbc980aa150e331fa7eff79de0f6ab2151d1e4e86afc704b0db"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/3507d27d6e08ce0b1c141510d135c0f470ba9b3abb24b23915a829f0b28fad0f.gz": {
+      "bytes": 1220,
+      "sha256": "349123e2ddae61ed5a65c81a5d513e5226418e242df1d7fb1a7ee1611c6a3e1a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/3924d38105b5f0be56b3ec338716d77d5353fff763a35b086cb320c47380da6c.gz": {
+      "bytes": 752,
+      "sha256": "f638d2c7e68b9537dba4ce4d67388d7fade65855e36ef7132ff56eceed2150f5"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/3bf19e80665b33072e0b3f5ecd4e5b5eb399996d11f7cf2472e831a0b101b3d9.gz": {
+      "bytes": 337,
+      "sha256": "51dc6f94a9f5e1d273f35ff8741de147b698978356c1aa7d2ac59849745bb108"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/3c3d49d698d4d12ea1eb62b8b0df00d24d9b52d36b0ccad022a7940728422300.gz": {
+      "bytes": 1382,
+      "sha256": "41f33d4a80494d6dbe68eaeab54f2c33d43ebf4cc4b764dec2e33572f46b6d34"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/40997c99b225a0d736324f8ec819bcccbbac842fb98d092f24448eda92dc2e93.gz": {
+      "bytes": 1119,
+      "sha256": "eded1e3af64626f67587863a53326572eb3c785abeb8b8fc98310efdf00c9cef"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/4248cfb711181579b064a4b5f45c347c7101db6037d5ef3e22df39f71ba696a8.gz": {
+      "bytes": 3304,
+      "sha256": "dee432efcb1b77bfa22c289742c1fcf4aeebe85531e628c498b687089496563a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/42ff12c20e6e163bca8159fbd0085dfde1c679d0e636971e1fb1ffbc17a0eee2.gz": {
+      "bytes": 2309,
+      "sha256": "0bb155c1df0e983a70b6c1da68bea0ec7aa082d41aea9a1b058749035b8e3895"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/43f9e8ea7ee81982ec76cb3e4bac9ca3c554674ad365e43a7e4e681dc8f15d2d.gz": {
+      "bytes": 3658,
+      "sha256": "a8ddf85e6419e5bdb788a4faf63f036ef53054d870d627e9f0ae566addbfcf53"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/4453ef7d5dfdd4285eb0b5e2dd5a0e6b9cb7a1afcfabe063579dbf9dc0af820e.gz": {
+      "bytes": 540,
+      "sha256": "38eda9477d0030f1010d7c2a16b13d76880719979d19a0cb31eecce5e50f5f99"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/455a6edb25f2d9c5524c925bf83b013b521c08b0b2f2296da15fa45d2e420d29.gz": {
+      "bytes": 11230,
+      "sha256": "e2fff07e303dcd0345e6689af76fea075cf8a5c473df88249fbbfbe12f464ab9"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/49f50de5f77ad0889897fe45fefa117149ec7e2ca4472ca2bdd2cc3f90ef6469.gz": {
+      "bytes": 570,
+      "sha256": "b86da766d8a02b2dffcb9ae8c37be72977e5e4997c40dbc91a14fd28e5cb99d4"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/4c292bf19d111863a4e8c4bbe6990b5a83f918bbb5d81ea33d489497fbef1301.gz": {
+      "bytes": 582,
+      "sha256": "8caf887538c4f6b8ccff0f4dc4bcdbc6d1c234e15d1dad7eadaa8b5a3fb4b837"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/4dfc6619cd448c7856aadc003843f146405960335be34064a48764605329b42c.gz": {
+      "bytes": 767,
+      "sha256": "291e5c673df0b687b89a47bb0366658302f662bd4e7295192a35f6d72ac6d6f9"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/4f5953cd943a8b8d7eaeb598b3785206d0b8eb474e1d87d8f7f01775497f71ff.gz": {
+      "bytes": 763,
+      "sha256": "2be1ecc9c6a241de041e1f352fa7da0daa89d51bcfa58fa6ec431c4d5a4d165e"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/4f7fbfbe680a5f9907d10d94549949634bccacb50c4726521f862db7698b8420.gz": {
+      "bytes": 634,
+      "sha256": "2b7620ff52d4647c1a699c8a40e1f7fabaf4ae9ec497f72bbbd2baa4d2c243e7"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/5374ff9b5be4f22333291adc374eb53dda454d80fdf111a293dd78693285341d.gz": {
+      "bytes": 1146,
+      "sha256": "497ac18f09376d49537a7fc4ebe3f7296de1f2a022854e6e8dbab0a93035eb33"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/53da3cf02d1864b31741f516cedbcea4c92675eec9f9b5d5ba62e407fcbc0cbc.gz": {
+      "bytes": 2867,
+      "sha256": "2a279360d811c89e7e98b54945b2d8c081d8de24220251cd58df54ae3742ddd8"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/53ed23f3b14702a71175175d1c42302b92c7e532a93ceb305ccddb97d087e350.gz": {
+      "bytes": 33887,
+      "sha256": "3657aea1cee93447188b17c12c14ebe06758ea1190d8f7eb1a4ac63ba1361e9d"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/5477db35570fdc44d8763f255c4c2ae3df590a7c085fd917838c4938047c9158.gz": {
+      "bytes": 560,
+      "sha256": "89e7e87e637ee950282b2b6783eb6056ae43b4c3e2008f85aa06c07b8a1f9045"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/55b3dacb54dde7029a205f2b7550eab718aa77e2b3b203a4e6890768cbe4cd28.gz": {
+      "bytes": 3110,
+      "sha256": "1082cb295740c1b44d28cfbb8ee9cccf16b47214e7dbc451dd41eabfd16b5d59"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/594ddba28065b7db8b2e284fba0725219f13a68ae3ec87193793a7bc325821ee.gz": {
+      "bytes": 421,
+      "sha256": "c1d4515f618cc7e37527fc892a6764f9ce7181ed6d8f89cc859a0590b03068b5"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/5c595dca92df965e05085942fde16dbebc16cf957a3f3cad1ab7128fc9e4f200.gz": {
+      "bytes": 541,
+      "sha256": "a10db0171630ae84ae3fd484e353df5c861b7a4dba034cfa75e2cf80c00c1161"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/5c7d649bb4bb55d7d2dc75dbef10669c5968408d4ee84fe9ae453e21d29ab708.gz": {
+      "bytes": 558,
+      "sha256": "5889be8cbd7ebbf355cbdfc98c02d0364b99b87dc7c31871261ef1e5ff138033"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/5f815061e51bc2d0834078ea6792385de5aea90c934b9b68c69961b8c6bef388.gz": {
+      "bytes": 2935,
+      "sha256": "5fbc608934d976e8e563c06fde3b44491814974f3eefe63647e35ca3be1e1f44"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/6307ac75360064a08c562c0a975c81cad324a955bf3bfed02c08b2d359d7a943.gz": {
+      "bytes": 610,
+      "sha256": "8218c5a413c1bb12c6ac54fcb2000c9bb89c975e58b9ee6f5a8a3e293dbf2cfb"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/64970108b17a651deee438fd010f458a5f204196af9b39fe03101dbf993e24f6.gz": {
+      "bytes": 637,
+      "sha256": "2f80eff622c345f5a0eee6725ddff9d082a8efc0aa591a1fb4000561e2f621d7"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/64c2731b31c86a114f04cade4a5f4387304180de9f20e9915c9bf3361405d2ba.gz": {
+      "bytes": 1518,
+      "sha256": "f80a126f19dd92906e2e6d3d5fe7bd60d37a53af66ce78c34817afe56ea9c72e"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/64d19fce149a556718669e3a43806833e662af7c1461c4c6bdb9d5c960349691.gz": {
+      "bytes": 3280,
+      "sha256": "9484ad16b60fcb165f509db3a84c55af674e65c23e610cb4a21388d39aa3276b"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/65405a5bbbd6384c78ef29d1b428905a03e6ab995d1c49cda7aca718da84f21e.gz": {
+      "bytes": 604,
+      "sha256": "7a754f57651054ff701e7d92c3ff22c944845b45acc9fc484098785abc34f653"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/65b259751fbe33490decb30e3e09e9ce6741b87a3f07027fadafba09af814aba.gz": {
+      "bytes": 558,
+      "sha256": "8f7fc9e831ed30156fa130aabbc0277f5cb70a0c558f7afe93c3dd18191c6d4d"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/662e323ea7511d0facb4e967118dcd743c863f2ebc882aa189a56aa87d247331.gz": {
+      "bytes": 9925,
+      "sha256": "04a636a49f6bd03a4f96da4b15659fb653098f24b842e000429bcc4cffdac07f"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/6bb953e7a97c1bc204bfeca12f830226201c5aa53c8c8bff7ac5b9021db62f6e.gz": {
+      "bytes": 2060,
+      "sha256": "ecb1128ead29876dda385543a2f2c460e5f10d5d36f1bd88e7ebc5e8b5f51a21"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/6e36096b5fb8c141550ba2e47d4d4a7777b758cb4df337d43f58bf9d7dc68603.gz": {
+      "bytes": 2013,
+      "sha256": "454e58e79602941a85b4e4c53b3c8f919e75cde9ab37bf8b1893c1ad4a50366b"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/6e6fbed6f98a4dbe3000701750ae60652baf28844009d961f1be0d570821cf45.gz": {
+      "bytes": 6594,
+      "sha256": "e94d42b64a73b0f7de01ade3f408b4afb070485514c7d3cd9d8d4b984a8981d5"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/6fbd6c1489f482564afafa7007c4ca6faf6c6ea3172ef123042f868c0a0ce18d.gz": {
+      "bytes": 459,
+      "sha256": "5496f5fbedbf0ccde8855a1a59ae77f4d34409ebb507c4e609103a6bed19f505"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/76005b9b94dd2e6a6094d4f7418fc6fb18cba53d0e169ddf7e50ba80f47264a9.gz": {
+      "bytes": 3328,
+      "sha256": "0600e60152cbe4edaec3fe1fe100a1733129ad9db77e003c57877823e8e0009b"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/785f987085948ca73cc969118e84ebd30b5644455f21ce5f7547cf0c45985cfc.gz": {
+      "bytes": 308,
+      "sha256": "cb85a08d087b0105ea514febb0b289f37a7c96f138b17acb5cac7784224c26f6"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7867d145fce910c4943cc6e1c378287b09ab7c20af951181c1b4bd87bb69c910.gz": {
+      "bytes": 582,
+      "sha256": "e73d720b5798bd85e7f4515d0d80bf45d06691d231b339a62a2e9f8df92726a5"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/78ec7724f6154cfcf94d95dc66d164bcec0969f78acc786fd94704f3b549583a.gz": {
+      "bytes": 4084,
+      "sha256": "258ec8e4c638195c1ca143591591e8538468ed5774a90ebb29c068a0d25e272f"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff.gz": {
+      "bytes": 8806,
+      "sha256": "5578306f2e4b4620a3869d6addc9c0e556640c378b3e3cd22260afb58a7c6fda"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7af1e3ef2628dcdb76b34a33e76dc7aa74134ae99d09a1f0a3b13b08fbc62a43.gz": {
+      "bytes": 428,
+      "sha256": "0eee49f1ad77278f970a8a870a28c7691ff24f09bbfe6e5813b6cb7c2fce89e9"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7babc615a2aea1b5c7e6bbe02ff1f90fe188927365ac1b24b797aa2176190ed5.gz": {
+      "bytes": 602,
+      "sha256": "fd9d8dc04d20c5220c474e93cd716fcd28159852376d6fc1f43248b5e30eee3e"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7ccaa08c833e3b5bf06fe431a93f028587193bf04d29610281d80aef31e317f0.gz": {
+      "bytes": 762,
+      "sha256": "c0b1802c24ea2e0254c6391942012f7267f3822911e83f23d43928d140dde9e1"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7d8fb792231093574af03fb594b947c6412b496f5295cd6e39d4fc8cabc94a77.gz": {
+      "bytes": 539,
+      "sha256": "fbef06345fb1921468c74b3ac0e67ebc5c0932a913fde00168a5bef21f8d1e7d"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7e9c6b56195365700dccdacb89e4270df46e00071758b2fe81fc0682758d46aa.gz": {
+      "bytes": 2816,
+      "sha256": "ba970d78d9c5b6b0771daef273306621dbbed8b0f220ebd6d81e9541283f5640"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7ed83a306896128ab03f7bed04556c213de6191524cec16f942a08ba73ee14c7.gz": {
+      "bytes": 233,
+      "sha256": "147ccdd40651e86d970d68ab1d1c6ddbfe911ca88a0432a74c15765f2ed64470"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7f4d0563fee0600b0034a3db5863fc406f45e77c1dcc2747f653ba0591488e3f.gz": {
+      "bytes": 791,
+      "sha256": "c7f425d3a41bbf590d7d979bf153d69e23c37101424a22e1a5a1210cfc844579"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/7fc53cfd358f9300b86084584591c1468ae2f027528dccfc90469133a95e6bdc.gz": {
+      "bytes": 1291,
+      "sha256": "a938f368f565625a49c8bb449bcbdb38e9d778b31f26dfad6d954b99b0b73ae7"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/834220bf57876822d2ba308759e54873b70d2c3856a0e04d4223e3d8613eb9a2.gz": {
+      "bytes": 966,
+      "sha256": "38844a5ea961e8889bea8efcd8bbc90f4a2d33cb896ba1b120e29f23ba0e7576"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/876a6504f7e97e035d049f78032bc2ded1797523b8de8a9974e2e9348bd3a892.gz": {
+      "bytes": 733,
+      "sha256": "9fef77d5197f669bad9d248f09b7478e2c74648d5df7862ecb1fa5892f3053a4"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/8a5e2379b0c64204ba6abfb2a7bd4e7057ead484f686ad155f1ca16de515d223.gz": {
+      "bytes": 491,
+      "sha256": "502c62da128eab003d9bf289bcdf5664214f3cff8616c56bae56a7488d6fddfd"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/8a696c8a5b2a17926e3b0b3ad4d9d6d7fe6aa255bb0d609244cd968c4f3c8421.gz": {
+      "bytes": 2820,
+      "sha256": "eefab64c5156609c808cedd85668c16bad5b24dfd49eb227c2ef609da122a677"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/8e3da582fe905c3ec53c34418fa607c7217719a9bc919b01e5158b618ee32472.gz": {
+      "bytes": 7991,
+      "sha256": "23bd5d4007e8e513468427398e9ba91ca104b4a2f01e14e27f2314c811eeadef"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/8e4e9980ebaa444bf58861cec95af287a501bee4db0748df3e52a267de8726cd.gz": {
+      "bytes": 2574,
+      "sha256": "59e42443a45a6e3cee5ea622c6457b4f19d39a01845ff7cd5b659bc04baee201"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/8f04fc250cc8ace0199b061f2679d66e53f41283b4518ac46f3e7f763112524d.gz": {
+      "bytes": 725,
+      "sha256": "6bb5b9bd6e93b5e80fd08416ac2e70d3215f34fbf8cc3949bed2d79896a0230a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/900daaa774717c8b5edca3254a5cda97bcc5ad0af22f8bbb8a2699bce5411471.gz": {
+      "bytes": 2255,
+      "sha256": "c75de2d3a2a71e76573def812f83435683b6482fcc71531099d7eb55e16a16eb"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/9317d1de83d29b1cbae3cc5d727a7f8ed1cf9cdcd76edad8b54a5008629c75d3.gz": {
+      "bytes": 390,
+      "sha256": "4d0807eb5b1d83a2fe69171e41946393262c76f93d0f2c642f8eb38946ceac2a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/933ff55099a06b49e3b306d5cf8d0abf651800ccf99b5c5d5084c6778391ffe5.gz": {
+      "bytes": 2869,
+      "sha256": "b6a8921be282595ecaf8bbefe70e6fe33b752ceb06ad96fc0065f82b0b8e9104"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/939fd222cc39453aeeeffe19223f665e47882a142b48e52379fa8b00fc7bc592.gz": {
+      "bytes": 23073,
+      "sha256": "f902f3287a40b4e5a2a321aedc8105f5bd6104483c9e5c975fbac28f352d17b2"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/93dcd1e219040a9f493abec4a6ec136f9107e20a7f19e73a891cb1cb56f99763.gz": {
+      "bytes": 2808,
+      "sha256": "85a2fe87cf3bc02d97d9c02ded4e91294318056e8fd8b148c8e999d6ab9fef63"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/98a6dbf528869a4a1eda7a09948b63a0225dc4750a9d0ae2739136305388b990.gz": {
+      "bytes": 528,
+      "sha256": "dfd80e15daca2ad79f1e6f84ebf3c761753f2bc8f248692fc924bd5b48ef6dad"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/9a6ce43b4bdc1d8d00c768c8b58bbadf3dacbeece17aa8b03f76d898108c1074.gz": {
+      "bytes": 937,
+      "sha256": "8bfa64107afd3bdb2751dda4401a23aaef409a62b208321bc71217571ad9ff3b"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/9bb175c9c36ff7a6a55ce46c53772481f96438f592defa28cf183d90c3142b61.gz": {
+      "bytes": 1978,
+      "sha256": "73c7b8533a064d2f9122cbd3cec4b6c8be2ea2cf2ec16905cfc0416c5dd2a4a3"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/9c6f4cbbfd518492bd66ab9e074bd440f456fa5232aba2254e038ee5cb8f8be0.gz": {
+      "bytes": 2019,
+      "sha256": "2aecca41edb969189143330b243d8c3ab2f42e6c3ce33c5eb808ab1fe217f117"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f.gz": {
+      "bytes": 22412,
+      "sha256": "85a82af9076c73d5ccce94184c5051af38872795fb3b9ec43d89ffed7ca887c8"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/9d2129a7158b3e3c458aa3d6689f151b7faf9c1f3d684667e51b3ffd58ec65dd.gz": {
+      "bytes": 7111,
+      "sha256": "15356e71a53c3284dfeadfe48540f9798ae3183665aee3f32716747d0c2656e0"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/9d75d362ff3582337b64389680092ffd493e5eb0a1f43150e5870d00a411203c.gz": {
+      "bytes": 1433,
+      "sha256": "2a80fa645b3da293daa744498e75be10641e52d93b6727b02d8d4e8d12a169ea"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/a1b3ec6402c1b9e073a83ab543a129fe8716d202462dea15b4780815789bc94f.gz": {
+      "bytes": 1144,
+      "sha256": "c1a2cf5dd10a0d644f846b2e121638956f8ba95a34b3182bc96dbd5113bf0144"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/a3ea250a03257d7b2cdf9a840d41d478fb022ac343f212fd8efddb3e93c24bf0.gz": {
+      "bytes": 3804,
+      "sha256": "cb4221b5f5974da92f61035c2e38b44e486670a110ff4fb3759fad8427c8da88"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/a9547e938c5101d4261706ebf0e1bd13de2e78ed3e10bdeef039b9bd86bc35b2.gz": {
+      "bytes": 550,
+      "sha256": "d744b8954c2814c9909d618e8e12185d523646ae9517daf2ab3cd7c996076a5e"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/a970df829f42c0e1b62905993a46a84d6793cc3d05436271e866e75253b12ff5.gz": {
+      "bytes": 354,
+      "sha256": "ef0c5e144912d00511787a60e1b9aaeecb76680137cfa69c7a624cadb4ebfbed"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/abc14129b339b6022606fb1869d9928566305f04be920fc80f06b2d05a169ecf.gz": {
+      "bytes": 4989,
+      "sha256": "7e3c36582f1ce133825fe9554a5d951d25fe18e465a8a7ddacdb73b03b876137"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/abf4e9c86bfd9c794ecb1bde09c332a0efae25f089764445dc8fc5fac59784d0.gz": {
+      "bytes": 13484,
+      "sha256": "afa15e73cfd8746c080da33a9f2cd7d579caf0cf37c04b9eaa6c409fcf572332"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/add4e6429eaf6fd72cb4515a017454d06079059ef93ea6c2aaf74f339acd5c3e.gz": {
+      "bytes": 3138,
+      "sha256": "77c68f8db8bc299fb8ef87af9350e84f52000a123507a4486d18f1d91b892c6e"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/afd6a687424b59c3c511c23630a3e4481530969212e49b1704da7095db043675.gz": {
+      "bytes": 659,
+      "sha256": "e9eed1b6637ed3f93225990a2541d25b34def5be343169b7b47193de3c3f3a35"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/afe6a2ddaf77a550648ba837d08b55249d62130f6e5818f0cd8abc2a59931e13.gz": {
+      "bytes": 1638,
+      "sha256": "3ff43233f5732695fd7a69ce78871b90e2b72b19c1f7d72761ea93f81821c58a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/b1615fd1225c6bbcb23f00b10da8dc9097a7533d1f8d6dab028c1e2fbd42b615.gz": {
+      "bytes": 5651,
+      "sha256": "6aadac772d40b13f6ffa23aa6f6031c830fa02adf5d878d46faed8434be9f7ef"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b.gz": {
+      "bytes": 1275,
+      "sha256": "90ac91f84447d5a0d12fca0b258237dd8b902862dee1bf063be1af05cf0fa51c"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/b237031e9a98918e204fe0d7084f992d85ee176a587d22ea64d9a4667ab49d76.gz": {
+      "bytes": 6297,
+      "sha256": "3618460386eafda82f1d8bf8d2f9b16e2eae6af346c7548c3e50818f4b9a5ae3"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/b39a4183ab004047e6f6b6ea9e756bd1429a7df2e482aeb71be33e06648cb132.gz": {
+      "bytes": 1226,
+      "sha256": "33e18684d3ba7729d0115f6349560b25e74023b3d2894e04e12cb20730b5a445"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/b66067a0a10d0f9cd30b0f0e306dad88826bc6d0c41b466e0519e2bf92410854.gz": {
+      "bytes": 997,
+      "sha256": "158c867e570af4f549fabc18037116e01bb46ff630fde61fad1391badeb17a01"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/b8c0fa723f24edc28f313bb88575257fff4bc94ceebdd81a0485a2788776192e.gz": {
+      "bytes": 577,
+      "sha256": "05b6afed61822e3e89a1bfb7fe30023d2297bd7029e74257a14b88a45348acfd"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/be3d50144e889c065165da5b7271f27e97814710d89b7033e2e636cb36f2c26c.gz": {
+      "bytes": 894,
+      "sha256": "2bd63c9b6035d7dfaeb03125f7e6f744845b1e39abf0cdbaa9c22a84b80cf239"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/bf8f7f3aa7ddee74f5cbdf51ef5b131937e727e488f2f5e083cf66321b18367e.gz": {
+      "bytes": 2689,
+      "sha256": "1c91b1b5361bd2ab02238ed1b91fcc4cc69889e7674a7df1357915257251dcee"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c0115e2926054d50a82c4f47fd1f8ce1493c707bcfc77021a3222c78071c4699.gz": {
+      "bytes": 7804,
+      "sha256": "3daaa90fcca9d8a8adbcea307af6299baba003c78fa092690b2f2a0702594cc0"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c127104f4520df91e156aa695cd1f30cdda5438942afbcf33d0ac5c08d600f96.gz": {
+      "bytes": 951,
+      "sha256": "5b5f7aabce2879d371ed85dc35ffcf1ddaeb28f15df51aed7ad52de11a62fc1f"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c1e6c4f82c56475ea6aa0544cbef13600701f8913a3b5a87114f473aa910cb73.gz": {
+      "bytes": 2952,
+      "sha256": "08203b6c8a808e73497a03c41141376565112ca454222ac3f933f09ace91ceb1"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c27ec2d225b8cb4909859fd84e4024466313cb58be18cdacd5cf7db1790a8ead.gz": {
+      "bytes": 147,
+      "sha256": "727150c07867eeb209dd989a06833585e7a6c42ac51c54d9bf853b4394e13d8d"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c36a10d42bb5ca3c09f101eba245a264e8c09664e7e4b97ce44dae70c9ac8bac.gz": {
+      "bytes": 966,
+      "sha256": "a7ce3172ecb82e22420f8e247f2714606e1c25d7e4e059f7db89490d226325f9"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c3feb26716d807b8bcfaf8005a83ad10d4ed195becd88c6a22197922279cbdd1.gz": {
+      "bytes": 784,
+      "sha256": "72b463bb981b088f14499fec23f7fd6403ce8d844df1656cf1d98c6492a0731d"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c53f937728400fd92dc5e016564f43e1ba2cbbebe8b215a83293eb66400b00c0.gz": {
+      "bytes": 3035,
+      "sha256": "3e2c2a58bd132f14616a28837250a4070f455c424380c88bcf8bd7fb8394fe79"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c578839b14075ce877a5bed8cb273ca0f1bf66e5829cbb4c52de67ee65ee0f4f.gz": {
+      "bytes": 708,
+      "sha256": "3b6f24f9b249bd52fe07572af2e325321ad8d0a25728b01b61f0b4f7474719a9"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c6709eaf32f889ca883bd218424a2c860f3b47dee8b0c8a2c62a9a3a504e3764.gz": {
+      "bytes": 1322,
+      "sha256": "d34932017d44b29f81834d8cf32c98d5e618f7881ba3a5a98349545f014469a9"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/c8a37b5c5c076a73bbeb3391ce6b2b2f7dd23e97ba7fd2c31dd1c34b253732a8.gz": {
+      "bytes": 152,
+      "sha256": "f78e9b564f28e007a0ca6b65c8015999c128170bc1ab32a1b47d9eec2042fe66"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/cd0629ae9e515b1beb5b70b7544415a394f142b4fa2dd1af47a9bb8142cce0b8.gz": {
+      "bytes": 558,
+      "sha256": "561836b4a329c783ffe511a8b3ed6955b4a8c050daccd882cb4d73aa308241e0"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/cd2e799b064bfce0aace982a3baae99a60fc9a2fae196b76c511ddac71d6b2c8.gz": {
+      "bytes": 541,
+      "sha256": "95f7c2097ca9c54ba9e7c0411b222760ef212e3e1f9a11fcb0d620e5dd3a1286"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/cdddb52dfc5aaa886c864f3cb2eaf57d2399b25054a5b6ed88e468c936b72948.gz": {
+      "bytes": 7000,
+      "sha256": "100c00021f9b5966d177485b21766887cc20dda4c7f4cb6803491a912c1ea69a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/cff0666fe99040b645087648ba1dfcd60787f5cfc3409f58301ce2f029562c38.gz": {
+      "bytes": 974,
+      "sha256": "44d8ba224bf2ddaa715e4ace8ee133a483865a07aefd7dc37519088bd08b0057"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/d048ba113a544722db908a3a0d68d34e640d900227c6a52b84382942ea2a2a33.gz": {
+      "bytes": 479,
+      "sha256": "2c02ef10e0c9e470f700d712b7eec32567b49c1cde6f9e52a1c465f3f6f3c2ff"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.gz": {
+      "bytes": 688,
+      "sha256": "875b7f42ca707edfd4304cdf8d0ca1e0a7d44ab682909812f5b119390ed0fc86"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/d22a43820c2d26a7724650b05dd03ab4181c692747ca89d5b4d0f8617a17077e.gz": {
+      "bytes": 174,
+      "sha256": "de60fff9ca16d5633f7c10f5d34c8e330d0ce5d5faa5cd134102a0e6d353e271"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/d582dfd9c631c5e1b7d09892d03169f38e0ce0d1389b9aa0d631fc0a26db3954.gz": {
+      "bytes": 347,
+      "sha256": "98135fe0650bb3301db4b635a7abdcaad024153e3aaa8a89f3e77289bcf4816a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/d9b4f566373ebb5d058e2f3df7bccd42c4f6ad2d420699702b2c67e2778b02ea.gz": {
+      "bytes": 187,
+      "sha256": "5365e1f6219d1d853f055a027c4b8a5464a94d77984f922ea2772b2977f4633e"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976.gz": {
+      "bytes": 6753,
+      "sha256": "83e138c69a9e116ef439a27336b327115fd036273007d9eddab4f7b669d45105"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/e37a8413ff6f851a97190e3e5d17b09a63667aab9f8fc1c8f49c5326f94525b6.gz": {
+      "bytes": 411,
+      "sha256": "255ae736abcd6a2cf4708574ac3b8e4e5989be4388b0707d150acab47bbe3f9a"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/e385a640ab4bd3167a75ec026e91c11bd5d1942fbfd91d3c7b7a12136431bccf.gz": {
+      "bytes": 458,
+      "sha256": "0f3183fa3181692a998fad58fc45d93ccc704b93c9951e569bb30f2fd2add1bc"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/e54c2acd05ef23509b074e3c2cd5a8404492edff25e3ed2341813f12baa84978.gz": {
+      "bytes": 355,
+      "sha256": "aec8db2b454454e00f72b16d0128547d5e57ad57a23dab00b63656ecead78894"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/e7d94ce29953d21ec1bf66cde95e7d55f81a2dcfcc7e2046f2345f3c243a8f24.gz": {
+      "bytes": 3893,
+      "sha256": "2fa05a4fdc4cd4a015918abca8e4e6c52f442585ccf814315dffebdd09a9b359"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/e8195032be73bafe0e153be1a12c05f9d60e29cbed65b34974f643ce6f345be0.gz": {
+      "bytes": 6956,
+      "sha256": "54b7f8a9c581eeb1b5d422acabb86631c6cc73488adf22a9ddf688c2339f92ea"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/e878a85bad4579a1aeed1e2f49f3b6aaf8f3bb6fe53a8bc52314f2756b4e7b7e.gz": {
+      "bytes": 2907,
+      "sha256": "c985a132e25ced4eb2c9060ea1e8ac262b0d2f652c6eefcf8569a9f654d5e780"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/ea2283ffe7ffe3e466c5f164182db3a6c1a5e29f4e9a09fc3bc8f400206f34c3.gz": {
+      "bytes": 683,
+      "sha256": "c187f748eff3c7adfa1da126fb740364a6cfffbabf8ae65e3b32f0d7ece71a37"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/eb9b9fe9d66d446d9aa57f4c781cf1031b3f65250c5a7f556ff8fa867e7e05f0.gz": {
+      "bytes": 462,
+      "sha256": "49b619fce151ef5fa5d31539885da6bfe81f95deca6e95537bebfda6ac1d2944"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/ec328d466bfec4574e0c7b46f75373c4d84051c57590277907afe3d366d68865.gz": {
+      "bytes": 6352,
+      "sha256": "6e52fdc4931e40ccccc0e65dcaa23dbb6ce5b867bd545cb10b0490a14f3201e1"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/efba321d09489c02758c18e194c17697c92fb4fbf45e3e9b39cde67c7d805c89.gz": {
+      "bytes": 4868,
+      "sha256": "9a5e9c9a568947d3619ba84ecd25b0ec41c3c78a3ff4eca0412cb770b28c5717"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/effe1f73208782688bf73c92096968c63c94a419fde951b9b0648b328effea7c.gz": {
+      "bytes": 1059,
+      "sha256": "e98149d1881f618867523d166db37eb10fce5ff1412d80c3bf7872c90afa4ec5"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755.gz": {
+      "bytes": 13074,
+      "sha256": "2b125f3f0eb284420fe1a95565bb34528ebff4f13b49b90717a553bdec33f044"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/f22fabe527676e0fcdc4107a004fdde100bb242766bf0a6e1b07b3ec677cf1bb.gz": {
+      "bytes": 4830,
+      "sha256": "8ca3cb33b66066a74252b4fdd666fbd3bed10ebac5be7250ab52c8a528c042b8"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/f566681f101868ece32190bc005788052ba53eeafaa20d18bbcbef5ad83086ff.gz": {
+      "bytes": 2336,
+      "sha256": "f88af2a1a4def4d228f194ca9f04b06287559dc3b5954db63e9b5039498dbeb0"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/f6661e031728a2d1d64a988b461d917da129cea3745ee968c4d05dafb2378d18.gz": {
+      "bytes": 1665,
+      "sha256": "77171c1cc0fb9fd90a355de113f86a61d8937f86f8c050e1b5d83537044059f6"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/f67e1493bbd5389ef9526201fb70e96e62b920feac6be21d80842f42a90b9eed.gz": {
+      "bytes": 717,
+      "sha256": "893d95c950ba1fbb8c76c4cb0733d467c869b4c8e7059cf1a9dd9a5f812d67f1"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/f73accd2060a937630d64c52683852a0626a16536630f8e54db5a9f93eeaf88b.gz": {
+      "bytes": 10003,
+      "sha256": "ad5d401483bdb36906803f3a10165be6f5eedb295ff27f99ca9f947a3f027ed1"
+    },
+    ".claude/science/physics-loops/toe-energy-preparation-readiness-20261015/archive/f9fc706993968c75c573a398f316437c0e6b2ce2c7dd318614b1a6f0048eea53.gz": {
+      "bytes": 659,
+      "sha256": "e3e1324b6d99dec0e52aa6d502389ac16fa45b5274b84382bdc1d869c7985ae4"
+    },
+    "docs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 77852,
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+    },
+    "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    },
+    "docs/HERALDED_AUXILIARY_VACUUM_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 62714,
+      "sha256": "939fd222cc39453aeeeffe19223f665e47882a142b48e52379fa8b00fc7bc592"
+    },
+    "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    "docs/TWO_READER_LIVE_POINTER_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 70368,
+      "sha256": "0bc9d473dd631107b96aa96ab5075985ec938d6c1b399e5a19fe9b5db03226b9"
+    }
+  }
+}

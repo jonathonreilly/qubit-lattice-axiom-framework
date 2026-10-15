@@ -1,6 +1,6 @@
 {
- "edge_count": 16082,
- "node_count": 7126,
+ "edge_count": 16085,
+ "node_count": 7127,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20501,6 +20501,10 @@
   "state_adapted_refinement_bounded_theorem_note_2026-10-12": {
    "deps_hash": "dc64b7472c92",
    "out_degree": 6
+  },
+  "static_historical_pauli_reader_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "b0ddc840ed2a",
+   "out_degree": 3
   },
   "static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_soldered_vertex_records_or_coordinate_letters_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",

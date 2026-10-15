@@ -1,0 +1,67 @@
+{
+  "canonical_sources": {
+    "docs/LOCAL_ENTANGLING_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "5b035c92a858e3ae6ec6c0077441435cc39db4681708d77049b5b34277b9d519",
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+  },
+  "complete_clauses": [
+    {
+      "alias": "premises/four_rail.md",
+      "canonical_path": "docs/LOCAL_ENTANGLING_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 12329,
+      "end": 24737,
+      "bytes": 12408,
+      "sha256": "2c95a969f8d8f40f4190ece9f25d811c7e204a4f68de722f3fe393265b2c8115",
+      "role": "Exposed four-rail primitive extended and rederived here; its six-site endpoint theorem is not composed as a black box"
+    },
+    {
+      "alias": "premises/compact_counterexample.md",
+      "canonical_path": "docs/LOCAL_ENTANGLING_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 24800,
+      "end": 46092,
+      "bytes": 21292,
+      "sha256": "6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543",
+      "role": "Counterexample/context only: compact empty-cell BC disturbance; no compact-cell reader theorem imported"
+    },
+    {
+      "alias": "premises/shared_head_method.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a",
+      "role": "Attribution for global shared-head compression/gauge/bare-input method; current response, residence and all costs are rederived"
+    },
+    {
+      "alias": "premises/positive_lift_method.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "role": "Attribution for full-space operator-valued positive lift and bare-map method; no one-cell endpoint composition"
+    }
+  ],
+  "actual_roles": "Extended four-rail primitive; rederived shared-head and positive-lift methods; compact counterexample only. No endpoint theorem composition.",
+  "raw_context_only": [
+    "b3b6 boundary placement/window",
+    "5ff prior driven reader"
+  ],
+  "excluded": [
+    "Reset preparation theorem",
+    "new window publication as stack ancestry or assumed reader premise"
+  ],
+  "base_binding_complete": true,
+  "base_head": "9054ebdc341b7fb593e38dab3880eddcd20354f7",
+  "base_pr": 9595,
+  "graph": "Three actual canonical citations with distinct primitive, counterexample and method roles. Root builds and checks the graph; ancestry adds no citation.",
+  "historical_offline_binding": {
+    "base_binding_complete": false,
+    "base_head": null,
+    "base_pr": null,
+    "record": "Complete original DEPENDENCIES.json remains unchanged in source-draft recovery."
+  },
+  "base_branch": "physics-loop/toe-local-driven-readers-20261015",
+  "base_tree": "3689f9d7372d0ecd1e5be835e20d931c38353fef",
+  "actual_final_graph_result": null
+}

@@ -1,0 +1,101 @@
+{
+  "actual_attempts": [
+    {
+      "receipt_alias": "local_clock_autonomous_reader_candidate/logs/identity_check_01/RECEIPT.json",
+      "shape": "author",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_candidate/logs/identity_check_01/stdout.txt",
+      "stderr": "local_clock_autonomous_reader_candidate/logs/identity_check_01/stderr.txt"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_candidate/logs/precontrol_seal_01/RECEIPT.json",
+      "shape": "author",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_candidate/logs/precontrol_seal_01/stdout.txt",
+      "stderr": "local_clock_autonomous_reader_candidate/logs/precontrol_seal_01/stderr.txt"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_candidate/logs/recovery_metadata_01/RECEIPT.json",
+      "shape": "author",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_candidate/logs/recovery_metadata_01/stdout.txt",
+      "stderr": "local_clock_autonomous_reader_candidate/logs/recovery_metadata_01/stderr.txt"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_candidate/logs/selected_control_01/RECEIPT.json",
+      "shape": "author",
+      "expected_exit_code": 0,
+      "scientific_attempt": true,
+      "stdout": "local_clock_autonomous_reader_candidate/logs/selected_control_01/stdout.txt",
+      "stderr": "local_clock_autonomous_reader_candidate/logs/selected_control_01/stderr.txt"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_candidate/logs/source_capture_01/RECEIPT.json",
+      "shape": "author",
+      "expected_exit_code": 1,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_candidate/logs/source_capture_01/stdout.txt",
+      "stderr": "local_clock_autonomous_reader_candidate/logs/source_capture_01/stderr.txt"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_candidate/logs/source_capture_02/RECEIPT.json",
+      "shape": "author",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_candidate/logs/source_capture_02/stdout.txt",
+      "stderr": "local_clock_autonomous_reader_candidate/logs/source_capture_02/stderr.txt"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_decisive_check/runs/capture_01/RECEIPT.json",
+      "shape": "local",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_decisive_check/runs/capture_01/stdout",
+      "stderr": "local_clock_autonomous_reader_decisive_check/runs/capture_01/stderr"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_decisive_check/runs/finalize_01/RECEIPT.json",
+      "shape": "local",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_decisive_check/runs/finalize_01/stdout",
+      "stderr": "local_clock_autonomous_reader_decisive_check/runs/finalize_01/stderr"
+    },
+    {
+      "receipt_alias": "local_clock_autonomous_reader_phase_revision/runs/write_01/RECEIPT.json",
+      "shape": "local",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "local_clock_autonomous_reader_phase_revision/runs/write_01/stdout",
+      "stderr": "local_clock_autonomous_reader_phase_revision/runs/write_01/stderr"
+    },
+    {
+      "receipt_alias": "runs/local_clock_autonomous_reader_root_close/EXECUTION.json",
+      "shape": "outer",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "runs/local_clock_autonomous_reader_root_close/stdout",
+      "stderr": "runs/local_clock_autonomous_reader_root_close/stderr"
+    },
+    {
+      "receipt_alias": "runs/local_clock_autonomous_reader_root_seal/EXECUTION.json",
+      "shape": "outer",
+      "expected_exit_code": 0,
+      "scientific_attempt": false,
+      "stdout": "runs/local_clock_autonomous_reader_root_seal/stdout",
+      "stderr": "runs/local_clock_autonomous_reader_root_seal/stderr"
+    }
+  ],
+  "attempt_count": 11,
+  "scientific_attempts": 1,
+  "failed_scientific_attempts": 0,
+  "metadata_attempts": 10,
+  "failed_metadata_attempts": 1,
+  "preseal_alias": "local_clock_autonomous_reader_candidate/PRECONTROL_SEAL.json",
+  "scope": "One exact n3/m7/L8 response/geometry control, not propagation/full-space numerical proof. All other attempts are source-only.",
+  "historical_limit": "Author recorder lacks independent child-source-at-launch pin; original preseal and self-hashes are preserved without upgrade.",
+  "new_scientific_execution": false
+}

@@ -1,0 +1,11 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "local_clock_autonomous_reader_phase_revision/AFTER.md",
+      "start": 11852,
+      "end": 40578,
+      "bytes": 28726,
+      "sha256": "fdb9dbf2661fd3560922e1060ea3ffd5ddb0d2ca0cf3705249cdc3bb0915ea64"
+    }
+  ]
+}

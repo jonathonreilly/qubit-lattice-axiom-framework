@@ -1,0 +1,92 @@
+{
+  "campaign": "observations-backward-derivation-24h-20261015",
+  "status": "active",
+  "phase": "first_block_checked_observation_bridge_open",
+  "started_at": "2026-10-15T22:36:59+00:00",
+  "deadline": "2026-10-16T22:36:59+00:00",
+  "packaging_cutoff": "2026-10-16T22:21:59+00:00",
+  "updated_at": "2026-10-15T23:04:40.695270+00:00",
+  "author": "/root in this chat",
+  "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
+  "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
+  "branch": "codex/observations-backward-derivation-20261015",
+  "main_at_launch": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "delivery": "milestone",
+  "checkpoint_minutes": 30,
+  "block": 1,
+  "route": "common-action reconstruction across environments",
+  "target_claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
+  "next_action": "Derive primitive clock/radar/orbit uncertainty including shared R dependence and areal-radius error. Map the needed channels to pinned observational metadata; do not substitute coherent turnaround for an independent clock. Distill the checked inverse for the first milestone once source/runner/conformance requirements are satisfied.",
+  "open_imports": [
+    "single-scalar two-derivative metric action class",
+    "universal physical matter metric",
+    "static spherical material-vacuum intervals",
+    "metric reconstruction and uncertainty from observations",
+    "normalization and common field-range overlap"
+  ],
+  "independent_check": {
+    "status": "focused check complete; no material mathematical error found within stated chart",
+    "agent": "/root/common_action_check",
+    "source": "BLOCK01_DERIVATION_v5.md",
+    "source_sha256": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
+    "report": "independent_block01/INDEPENDENT_CHECK.md",
+    "report_sha256": "82bdaf95361ea9a6211d3318d05f393eb67e4c8af3cf59f779397d39d9924ece",
+    "core_checks": 28,
+    "relative_map_checks": 27,
+    "failures": 0,
+    "not_formal_audit": true,
+    "readout_intake": "author-only conceptual probe; not in the final focused report"
+  },
+  "milestones": [],
+  "owned_jobs": [],
+  "supervisor_pid": null,
+  "worker_pid": null,
+  "previous_campaigns": "all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json",
+  "global_stop": null,
+  "strongest_checked_result": "Conditional relative F profile from ideal clock/radar/orbit functions, with a deterministic metric-input error bound; common-action equality requires translated reconstructed functions on genuinely overlapping F ranges.",
+  "author_computation": {
+    "core_exact_identities": 28,
+    "core_mutations_detected": 3,
+    "observable_symbolic_identities": 6,
+    "deterministic_bound_examples": 24,
+    "observable_mutations_detected": 3,
+    "empirical_validation": false
+  },
+  "source_state": {
+    "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "open_pr_count": 53,
+    "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
+    "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof"
+  },
+  "first_block_files": [
+    "BLOCK01_DERIVATION_v5.md",
+    "check_block01.py",
+    "BLOCK01_CONTROLS_v1.json",
+    "check_block01_observables.py",
+    "BLOCK01_OBSERVABLE_CONTROLS_v1.json",
+    "independent_block01/INDEPENDENT_CHECK.md",
+    "BLOCK01_READOUT_INTAKE_v1.md"
+  ],
+  "empirical_limits": [
+    "No new raw observations opened; synthetic controls are not empirical tests.",
+    "Existing Cassini products remain exposed development data.",
+    "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
+    "Measured Newton coupling is not identified with 1/F."
+  ],
+  "milestone_status": "First mathematics checked; canonical note, runner/cache and milestone conformance remain to package. No new PR yet.",
+  "checkpoint": {
+    "time": "2026-10-15T23:04:40.695270+00:00",
+    "lock": {
+      "expires_at": "2026-10-16T00:04:40.759554+00:00",
+      "holder_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
+      "owner": "direct-author-observations-backward-derivation",
+      "pid": 23283,
+      "purpose": "observations-backward-derivation-24h-20261015",
+      "started_at": "2026-10-15T23:04:40.759554+00:00"
+    },
+    "direct_author_only": true,
+    "owned_jobs": []
+  }
+}

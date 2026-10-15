@@ -1,0 +1,252 @@
+{
+  "kind": "synthetic mathematical author controls",
+  "source_sha256": "ab3332f77ea15fe7eac634f5c8bacdf68809670e3473b72519c2a35fa11e384c",
+  "derivation_sha256": "8830c6bd57902e1cbbd6053c3ce4f9c477a8e9e54b50af32239edb1c00ede1d1",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "exact_checks": [
+    {
+      "name": "integration by parts general metric",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "power metric exponent",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "geodesic clock frequency",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial null slowness",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "orbital/redshift consistency",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "observable F reconstruction",
+      "pass": true,
+      "residual": "0"
+    }
+  ],
+  "deterministic_bound_examples": [
+    {
+      "p": 0.0,
+      "b": 0.3,
+      "dp": 0.0001,
+      "log_ratio_error": 0.00016175744934705642,
+      "deterministic_bound": 0.0012054790695083667,
+      "inside": true
+    },
+    {
+      "p": 0.0,
+      "b": 0.3,
+      "dp": 0.002,
+      "log_ratio_error": 0.0032439473259870907,
+      "deterministic_bound": 0.024179294170310714,
+      "inside": true
+    },
+    {
+      "p": 0.0,
+      "b": 0.7,
+      "dp": 0.0001,
+      "log_ratio_error": 2.9716210831213065e-05,
+      "deterministic_bound": 0.0008244504866496999,
+      "inside": true
+    },
+    {
+      "p": 0.0,
+      "b": 0.7,
+      "dp": 0.002,
+      "log_ratio_error": 0.0005980949333545567,
+      "deterministic_bound": 0.01652967868779496,
+      "inside": true
+    },
+    {
+      "p": 0.0,
+      "b": 1.2,
+      "dp": 0.0001,
+      "log_ratio_error": 1.1546676205072154e-05,
+      "deterministic_bound": 0.0007053790545063666,
+      "inside": true
+    },
+    {
+      "p": 0.0,
+      "b": 1.2,
+      "dp": 0.002,
+      "log_ratio_error": 0.00022873393934314622,
+      "deterministic_bound": 0.014139173849508788,
+      "inside": true
+    },
+    {
+      "p": 0.2,
+      "b": 0.3,
+      "dp": 0.0001,
+      "log_ratio_error": 0.0002917445708966406,
+      "deterministic_bound": 0.0017012440834933713,
+      "inside": true
+    },
+    {
+      "p": 0.2,
+      "b": 0.3,
+      "dp": 0.002,
+      "log_ratio_error": 0.00585208471740929,
+      "deterministic_bound": 0.034152240918593924,
+      "inside": true
+    },
+    {
+      "p": 0.2,
+      "b": 0.7,
+      "dp": 0.0001,
+      "log_ratio_error": 8.542497720938092e-05,
+      "deterministic_bound": 0.0011058571508250296,
+      "inside": true
+    },
+    {
+      "p": 0.2,
+      "b": 0.7,
+      "dp": 0.002,
+      "log_ratio_error": 0.0017158681011068344,
+      "deterministic_bound": 0.022187731243642733,
+      "inside": true
+    },
+    {
+      "p": 0.2,
+      "b": 1.2,
+      "dp": 0.0001,
+      "log_ratio_error": 2.0950104182150744e-05,
+      "deterministic_bound": 0.000919798734366173,
+      "inside": true
+    },
+    {
+      "p": 0.2,
+      "b": 1.2,
+      "dp": 0.002,
+      "log_ratio_error": 0.0004233004085123652,
+      "deterministic_bound": 0.018448821970220484,
+      "inside": true
+    },
+    {
+      "p": 0.6,
+      "b": 0.3,
+      "dp": 0.0001,
+      "log_ratio_error": 0.0013751030125422467,
+      "deterministic_bound": 0.005379138342063698,
+      "inside": true
+    },
+    {
+      "p": 0.6,
+      "b": 0.3,
+      "dp": 0.002,
+      "log_ratio_error": 0.02763996948142311,
+      "deterministic_bound": 0.10848174965107875,
+      "inside": true
+    },
+    {
+      "p": 0.6,
+      "b": 0.7,
+      "dp": 0.0001,
+      "log_ratio_error": 0.000549721452200311,
+      "deterministic_bound": 0.002996995038343414,
+      "inside": true
+    },
+    {
+      "p": 0.6,
+      "b": 0.7,
+      "dp": 0.002,
+      "log_ratio_error": 0.011053532999970054,
+      "deterministic_bound": 0.0603829161680378,
+      "inside": true
+    },
+    {
+      "p": 0.6,
+      "b": 1.2,
+      "dp": 0.0001,
+      "log_ratio_error": 0.00029178971459380235,
+      "deterministic_bound": 0.002252575255930825,
+      "inside": true
+    },
+    {
+      "p": 0.6,
+      "b": 1.2,
+      "dp": 0.002,
+      "log_ratio_error": 0.00587027159951605,
+      "deterministic_bound": 0.0453520307045875,
+      "inside": true
+    },
+    {
+      "p": 0.9,
+      "b": 0.3,
+      "dp": 0.0001,
+      "log_ratio_error": 0.023058719334655975,
+      "deterministic_bound": 0.07106291387774766,
+      "inside": true
+    },
+    {
+      "p": 0.9,
+      "b": 0.3,
+      "dp": 0.002,
+      "log_ratio_error": 0.47014239989734574,
+      "deterministic_bound": 1.4751240902022231,
+      "inside": true
+    },
+    {
+      "p": 0.9,
+      "b": 0.7,
+      "dp": 0.0001,
+      "log_ratio_error": 0.009842699875963336,
+      "deterministic_bound": 0.032891370868033135,
+      "inside": true
+    },
+    {
+      "p": 0.9,
+      "b": 0.7,
+      "dp": 0.002,
+      "log_ratio_error": 0.2006974317496503,
+      "deterministic_bound": 0.6818038466529079,
+      "inside": true
+    },
+    {
+      "p": 0.9,
+      "b": 1.2,
+      "dp": 0.0001,
+      "log_ratio_error": 0.005712693795122119,
+      "deterministic_bound": 0.020962763677497342,
+      "inside": true
+    },
+    {
+      "p": 0.9,
+      "b": 1.2,
+      "dp": 0.002,
+      "log_ratio_error": 0.11649587920349648,
+      "deterministic_bound": 0.43389127054374693,
+      "inside": true
+    }
+  ],
+  "mutations": [
+    {
+      "name": "drop_clock_factor",
+      "detected": true,
+      "residual": "8*(-r**(3/2) + r)/(3*r**(5/2))"
+    },
+    {
+      "name": "omit_speed_denominator",
+      "detected": true,
+      "residual": "-2/(3*r)"
+    },
+    {
+      "name": "reciprocal_radar_slowness",
+      "detected": true,
+      "residual": "(4*r - 13)/(6*r)"
+    }
+  ],
+  "no_empirical_data": true,
+  "pass": true
+}

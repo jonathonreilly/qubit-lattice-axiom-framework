@@ -1,0 +1,22 @@
+{
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "paths_sha256": {
+    "docs/ai_methodology/skills/physics-loop/SKILL.md": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+    "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+    "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+    "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+    "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+    "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md": "730a6304650d43a27099c3047a4b796d4a7bf1907d8803c38f4368919fad7f47",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+    "docs/EXPONENTIAL_SCALAR_DENSITY_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "40f112537627dd19ea0090a673f355f0d122c52844853798287f55e5b671e3fb",
+    "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md": "30696ddd743d6d0ec687e54c4b833c4daeb57f893653772e2afea707c0f43ea5"
+  },
+  "scope": "Workflow and related source grounding; no blanket proof/review certification. Large PR appendices were not completely read or adopted.",
+  "new_pr_heads": {
+    "9621": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+    "9622": "70676cfdaa37280254c95e55c8d550816daf0040",
+    "9623": "d789fef0a544f91feceb20500a15bacc3374f08b"
+  },
+  "prior_campaign_final_pr_head": "0b758d856efd3c7d63c13668bc533a5290ef238f"
+}

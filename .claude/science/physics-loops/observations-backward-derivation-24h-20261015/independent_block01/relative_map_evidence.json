@@ -1,0 +1,186 @@
+{
+  "kind": "focused_independent_check_not_formal_audit",
+  "utc_time": "2026-10-15T23:01:36.934502+00:00",
+  "source_hashes": {
+    "BLOCK01_DERIVATION_v1.md": "266753576b127818bfed666d6cd773954106d0887db4170c2f6c69797609f86b",
+    "BLOCK01_DERIVATION_v3.md": "c02f88316ff57d743c6c92d8de671c46136651118e98bcdc27ec53f01b9337fb",
+    "BLOCK01_DERIVATION_v4.md": "8830c6bd57902e1cbbd6053c3ce4f9c477a8e9e54b50af32239edb1c00ede1d1",
+    "BLOCK01_DERIVATION_v5.md": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586"
+  },
+  "worktree_head": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "runner_sha256": "e93c22b0598119363f2005e9bb14c1d1c2314b6af799014fec70c835ae395aff",
+  "checks": [
+    {
+      "name": "relative-map numerator identity",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "integrating-factor equation is exactly angular-minus-time equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "differentiated integral formula equals the exact inverse",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "power-law field exponent from direct metric inverse",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "power-law exponent stated in v4",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "reciprocal split for error bound",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "ratio split for derivative-to-y bound",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "frequency orientation: received at r0 divided by emitted at r",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "reference-clock radar slowness",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric B recovered from clock ratio and radar slowness",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "circular geodesic angular-frequency relation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "local circular speed relation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "reference-clock circular angular frequency",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "relative-field endpoint formula cancels the reference lapse",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "relative-field integral substitution",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong radar map omitting clock ratio changes B",
+      "kind": "mutation_detected",
+      "ok": true,
+      "residual": "2*(sqrt(r) - 1)/3"
+    },
+    {
+      "name": "perturbed orbital channel fails independent clock-orbit consistency",
+      "kind": "mutation_detected",
+      "ok": true,
+      "residual": "-eta/r"
+    },
+    {
+      "name": "double-counted endpoint in relative-field formula changes log derivative",
+      "kind": "mutation_detected",
+      "ok": true,
+      "residual": "-1/r"
+    },
+    {
+      "name": "deterministic bound control: positive_y",
+      "kind": "synthetic_numeric_control",
+      "ok": true,
+      "actual_log_error": "0.0111857084693536147816008358225",
+      "bound": "0.75599806482536758338728130657",
+      "quadrature_identity_error": "1.8960328e-71"
+    },
+    {
+      "name": "deterministic bound control: negative_y",
+      "kind": "synthetic_numeric_control",
+      "ok": true,
+      "actual_log_error": "0.195391488776890788159677193257",
+      "bound": "1.45681147086482102784692454739",
+      "quadrature_identity_error": "4.5278395e-72"
+    },
+    {
+      "name": "source identity: BLOCK01_DERIVATION_v1.md",
+      "kind": "provenance",
+      "ok": true,
+      "actual": "266753576b127818bfed666d6cd773954106d0887db4170c2f6c69797609f86b",
+      "expected": "266753576b127818bfed666d6cd773954106d0887db4170c2f6c69797609f86b"
+    },
+    {
+      "name": "source identity: BLOCK01_DERIVATION_v3.md",
+      "kind": "provenance",
+      "ok": true,
+      "actual": "c02f88316ff57d743c6c92d8de671c46136651118e98bcdc27ec53f01b9337fb",
+      "expected": "c02f88316ff57d743c6c92d8de671c46136651118e98bcdc27ec53f01b9337fb"
+    },
+    {
+      "name": "source identity: BLOCK01_DERIVATION_v4.md",
+      "kind": "provenance",
+      "ok": true,
+      "actual": "8830c6bd57902e1cbbd6053c3ce4f9c477a8e9e54b50af32239edb1c00ede1d1",
+      "expected": "8830c6bd57902e1cbbd6053c3ce4f9c477a8e9e54b50af32239edb1c00ede1d1"
+    },
+    {
+      "name": "source identity: BLOCK01_DERIVATION_v5.md",
+      "kind": "provenance",
+      "ok": true,
+      "actual": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
+      "expected": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586"
+    },
+    {
+      "name": "v4 preserves all v1 source bytes as prefix",
+      "kind": "provenance",
+      "ok": true
+    },
+    {
+      "name": "v4 preserves all v3 source bytes as prefix",
+      "kind": "provenance",
+      "ok": true
+    },
+    {
+      "name": "v5 changes only the confirmed frequency-direction clarification",
+      "kind": "provenance",
+      "ok": true
+    }
+  ],
+  "pass": 27,
+  "fail": 0
+}

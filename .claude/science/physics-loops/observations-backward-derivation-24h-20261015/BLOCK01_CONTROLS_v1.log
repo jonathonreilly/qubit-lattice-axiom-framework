@@ -1,0 +1,33 @@
+PASS Ricci scalar from full connection: 0
+PASS temporal Einstein component: 0
+PASS radial Einstein component: 0
+PASS angular Einstein component: 0
+PASS second angular Einstein component: 0
+PASS off-diagonal Einstein 01: 0
+PASS off-diagonal Einstein 02: 0
+PASS off-diagonal Einstein 03: 0
+PASS off-diagonal Einstein 10: 0
+PASS off-diagonal Einstein 12: 0
+PASS off-diagonal Einstein 13: 0
+PASS off-diagonal Einstein 20: 0
+PASS off-diagonal Einstein 21: 0
+PASS off-diagonal Einstein 23: 0
+PASS off-diagonal Einstein 30: 0
+PASS off-diagonal Einstein 31: 0
+PASS off-diagonal Einstein 32: 0
+PASS family metric equation 0: 0
+PASS family metric equation 1: 0
+PASS family metric equation 2: 0
+PASS family metric equation 3: 0
+PASS family scalar Euler equation: 0
+PASS inverse logarithmic field slope: 0
+PASS inverse kinetic function: 0
+PASS inverse potential per F: 0
+PASS healthy Einstein kinetic identity: 0
+PASS patch A reconstructed potential: 0
+PASS patch B reconstructed potential: 0
+DETECTED kinetic_plus_half: ['1/(8*r)', '-1/(8*r)', '1/(8*r)', '1/(8*r)']
+DETECTED potential_twice: ['-1/(2*r)', '-1/(2*r)', '-1/(2*r)', '-1/(2*r)']
+DETECTED wrong_profile_same_action: ['(5*r**2 - 1)/(2*r**2)', '(3*r**2 - 1)/(2*r**2)', '(2*r - 1)*(2*r + 1)/(2*r**2)', '(2*r - 1)*(2*r + 1)/(2*r**2)']
+OVERLAP: {"omega_A": "0", "omega_B": "-1/2", "difference": "1/2", "compatible_under_same_F_overlap": false, "common_disjoint_ranges": {"A": ["1", "2"], "B": ["4", "16"]}, "interpretation": "Exact constructed counterexample to inferring field-range registration from these two metrics; not a global spacetime result."}
+TOTAL: PASS=28 FAIL=0; DETECTED_MUTATIONS=3/3

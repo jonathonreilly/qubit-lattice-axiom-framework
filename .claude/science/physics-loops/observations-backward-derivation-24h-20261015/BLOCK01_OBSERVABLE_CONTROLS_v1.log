@@ -1,0 +1,11 @@
+PASS integration by parts general metric: 0
+PASS power metric exponent: 0
+PASS geodesic clock frequency: 0
+PASS radial null slowness: 0
+PASS orbital/redshift consistency: 0
+PASS observable F reconstruction: 0
+DETERMINISTIC_BOUND_EXAMPLES 24 inside 24 max_error_bound_ratio 0.3244831667657873
+MUTATION {'name': 'drop_clock_factor', 'detected': True, 'residual': '8*(-r**(3/2) + r)/(3*r**(5/2))'}
+MUTATION {'name': 'omit_speed_denominator', 'detected': True, 'residual': '-2/(3*r)'}
+MUTATION {'name': 'reciprocal_radar_slowness', 'detected': True, 'residual': '(4*r - 13)/(6*r)'}
+TOTAL: PASS=6 FAIL=0; BOUND_EXAMPLES=24; DETECTED_MUTATIONS=3/3

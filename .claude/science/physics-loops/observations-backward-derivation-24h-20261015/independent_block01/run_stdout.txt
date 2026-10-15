@@ -1,0 +1,34 @@
+PASS: raw action minus reduced action is the recorded total derivative
+PASS: lapse variation gives candidate time equation
+PASS: radial-metric variation gives candidate radial equation
+PASS: sphere-radius variation gives candidate angular equation
+PASS: scalar variation gives candidate scalar equation
+PASS: angular-minus-time eliminates scalar action functions
+PASS: time residual vanishes after reconstructed omega and W
+PASS: radial residual vanishes after reconstructed omega and W
+PASS: scalar residual is exactly 2*(a-d*u)/(r*u) before angular constraint
+PASS: patch A: independently varied t residual
+PASS: patch A: independently varied r residual
+PASS: patch A: independently varied angular residual
+PASS: patch A: independently varied scalar residual
+PASS: patch B: independently varied t residual
+PASS: patch B: independently varied r residual
+PASS: patch B: independently varied angular residual
+PASS: patch B: independently varied scalar residual
+PASS: wrong kinetic coefficient fails time equation
+  residual: 1/(40*r)
+PASS: wrong potential amplitude fails time equation
+  residual: -1/(2*r)
+PASS: wrong scalar exponent fails angular-minus-time equation
+  residual: -1/2
+PASS: wrong patch-B scalar normalization at fixed V=-4 fails time equation
+  residual: -3
+PASS: general family: Einstein time equation
+PASS: general family: Einstein radial equation
+PASS: general family: Einstein angular equation
+PASS: general family: canonical Einstein scalar equation
+PASS: overlapping scalar ranges forbid one kinetic function
+  residual: 1/2
+PASS: common interpolated action has 2*omega+3=3-chi
+PASS: checked source identity is unchanged
+TOTAL: PASS=28 FAIL=0

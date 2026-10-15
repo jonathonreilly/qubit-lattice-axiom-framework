@@ -1,0 +1,185 @@
+{
+  "kind": "focused_independent_check_not_formal_audit",
+  "utc_time": "2026-10-15T23:00:44.160459+00:00",
+  "source_path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/BLOCK01_DERIVATION_v1.md",
+  "source_sha256": "266753576b127818bfed666d6cd773954106d0887db4170c2f6c69797609f86b",
+  "worktree_head": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "branch": "codex/observations-backward-derivation-20261015",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "runner_sha256": "bbfc79b6b6b0014be795a181eda7e4cf497ba686fa22c0c2ec26b2de560c4339",
+  "checks": [
+    {
+      "name": "raw action minus reduced action is the recorded total derivative",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "lapse variation gives candidate time equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial-metric variation gives candidate radial equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "sphere-radius variation gives candidate angular equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar variation gives candidate scalar equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "angular-minus-time eliminates scalar action functions",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "time residual vanishes after reconstructed omega and W",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial residual vanishes after reconstructed omega and W",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar residual is exactly 2*(a-d*u)/(r*u) before angular constraint",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch A: independently varied t residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch A: independently varied r residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch A: independently varied angular residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch A: independently varied scalar residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch B: independently varied t residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch B: independently varied r residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch B: independently varied angular residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch B: independently varied scalar residual",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong kinetic coefficient fails time equation",
+      "kind": "mutation_detected",
+      "ok": true,
+      "residual": "1/(40*r)"
+    },
+    {
+      "name": "wrong potential amplitude fails time equation",
+      "kind": "mutation_detected",
+      "ok": true,
+      "residual": "-1/(2*r)"
+    },
+    {
+      "name": "wrong scalar exponent fails angular-minus-time equation",
+      "kind": "mutation_detected",
+      "ok": true,
+      "residual": "-1/2"
+    },
+    {
+      "name": "wrong patch-B scalar normalization at fixed V=-4 fails time equation",
+      "kind": "mutation_detected",
+      "ok": true,
+      "residual": "-3"
+    },
+    {
+      "name": "general family: Einstein time equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "general family: Einstein radial equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "general family: Einstein angular equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "general family: canonical Einstein scalar equation",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "overlapping scalar ranges forbid one kinetic function",
+      "kind": "overlap_obstruction",
+      "ok": true,
+      "residual": "1/2"
+    },
+    {
+      "name": "common interpolated action has 2*omega+3=3-chi",
+      "kind": "symbolic_zero",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "checked source identity is unchanged",
+      "kind": "provenance",
+      "ok": true,
+      "actual": "266753576b127818bfed666d6cd773954106d0887db4170c2f6c69797609f86b",
+      "expected": "266753576b127818bfed666d6cd773954106d0887db4170c2f6c69797609f86b"
+    }
+  ],
+  "pass": 28,
+  "fail": 0
+}

@@ -1,0 +1,200 @@
+{
+  "kind": "exact synthetic author controls",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "source_sha256": "cb946a799d7c2de71a41cf18fb08bd9a552e1ef43dbb995b4ed4f83a7c86cbb6",
+  "derivation_sha256": "266753576b127818bfed666d6cd773954106d0887db4170c2f6c69797609f86b",
+  "checks": [
+    {
+      "name": "Ricci scalar from full connection",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "temporal Einstein component",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial Einstein component",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "angular Einstein component",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "second angular Einstein component",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 01",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 02",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 03",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 10",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 12",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 13",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 20",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 21",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 23",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 30",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 31",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-diagonal Einstein 32",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "family metric equation 0",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "family metric equation 1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "family metric equation 2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "family metric equation 3",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "family scalar Euler equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse logarithmic field slope",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse kinetic function",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse potential per F",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "healthy Einstein kinetic identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch A reconstructed potential",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "patch B reconstructed potential",
+      "pass": true,
+      "residual": "0"
+    }
+  ],
+  "mutations": [
+    {
+      "name": "kinetic_plus_half",
+      "detected": true,
+      "residuals": [
+        "1/(8*r)",
+        "-1/(8*r)",
+        "1/(8*r)",
+        "1/(8*r)"
+      ]
+    },
+    {
+      "name": "potential_twice",
+      "detected": true,
+      "residuals": [
+        "-1/(2*r)",
+        "-1/(2*r)",
+        "-1/(2*r)",
+        "-1/(2*r)"
+      ]
+    },
+    {
+      "name": "wrong_profile_same_action",
+      "detected": true,
+      "residuals": [
+        "(5*r**2 - 1)/(2*r**2)",
+        "(3*r**2 - 1)/(2*r**2)",
+        "(2*r - 1)*(2*r + 1)/(2*r**2)",
+        "(2*r - 1)*(2*r + 1)/(2*r**2)"
+      ]
+    }
+  ],
+  "overlap": {
+    "omega_A": "0",
+    "omega_B": "-1/2",
+    "difference": "1/2",
+    "compatible_under_same_F_overlap": false,
+    "common_disjoint_ranges": {
+      "A": [
+        "1",
+        "2"
+      ],
+      "B": [
+        "4",
+        "16"
+      ]
+    },
+    "interpretation": "Exact constructed counterexample to inferring field-range registration from these two metrics; not a global spacetime result."
+  },
+  "pass": true,
+  "no_empirical_data": true
+}

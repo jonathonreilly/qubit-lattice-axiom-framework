@@ -1,0 +1,7 @@
+# Observation-first derivation campaign
+
+Personally work backward from measured phenomena toward the theory, prioritizing derivation or elimination of the remaining action/potential, initial-state/history, scale and environment/readout assumptions. Fixed 24-hour budget; no research after 2026-10-16T22:36:59Z, packaging from22:21:59Z.
+
+Block1 exact target: for two smooth positive static spherical physical metrics on finite vacuum annuli, characterize when one Jordan single-scalar action with unknown kinetic function and potential can realize both on an overlapping nonconstant-scalar branch. The metric and class premises are explicit inputs. Recover functions or provide an explicit mismatch; do not choose an exponential/polynomial potential to force agreement. Include normalization freedom, constant-field and rank-degenerate cases. No claim that ideal metrics have already been measured.
+
+Allowed premises: displayed candidate action class, differential geometry, smoothness and explicitly bounded charts. Forbidden weakenings: separately choosing an action for each environment; silently selecting scalar boundary values; replacing the measured physical metric by an assumed Einstein metric; claiming any fit is independent validation. Completion witness: analytical compatibility statement, direct field-equation controls with nonmatching examples, and focused independent check. Global TOE or empirical closure is not the target of this block.

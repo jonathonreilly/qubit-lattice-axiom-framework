@@ -1,0 +1,322 @@
+{
+  "at_utc": "2026-10-15T19:33:35.211604+00:00",
+  "author_controls": {
+    "failed": 0,
+    "passed": 149
+  },
+  "checklist_finding": "Closed by exact phrase replacement; historical finding remains immutable",
+  "complete_current_note_delta_read": true,
+  "current_note_sha256": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+  "disposition": "Support coherent extension to existing PR 9614 within source/measurement scope; no new unresolved scoped finding",
+  "empirical_tests": 0,
+  "equations_11_through_15_unchanged_from_reviewed_6c3_note": true,
+  "historical_records_retained": [
+    "original numerical 60 passed / 3 failed",
+    "original mutation 7 rejected / 1 survivor",
+    "prior canonical 145 passed / 0 failed",
+    "original N7 variable/negative lapse wording"
+  ],
+  "mechanical_identity_counts": {
+    "failed": 0,
+    "passed": 85
+  },
+  "mechanically_identified_files": [
+    {
+      "bytes": 1981,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "read_scope": "hash identity only",
+      "sha256": "358ba8e5317cc517cd2d2400a5595a56b7c4f7f9ee3adf92ff2347f9a7cb1f72"
+    },
+    {
+      "bytes": 1965,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/CANONICAL_BINDING_v1.json",
+      "read_scope": "historical identity only; superseded by v2",
+      "sha256": "20ea8691fedc3a2ea921c42dc2c0fba11cf2f9683850f23dee3d19506d1ee18f"
+    },
+    {
+      "bytes": 1965,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/CANONICAL_BINDING_v2.json",
+      "read_scope": "complete canonical source/cache binding",
+      "sha256": "c821fefeaea60af377333c04ec2f6134e5c17b92eb22a83420c006f60650028f"
+    },
+    {
+      "bytes": 3573,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/CANONICAL_EXECUTION_v1.json",
+      "read_scope": "historical identity only; superseded by v2",
+      "sha256": "db8eed2ed6b39a7912a46a382cbd43bbc4381925eae0a60bb5cc0b69b38248ef"
+    },
+    {
+      "bytes": 3573,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/CANONICAL_EXECUTION_v2.json",
+      "read_scope": "complete execution metadata and stdout; no execution",
+      "sha256": "457b42539f2d5313ce91f6234126f27bc79f7933ba6a54f5c4f8842f90507711"
+    },
+    {
+      "bytes": 638,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/CHECKLIST_WORDING_REPAIR_v1.json",
+      "read_scope": "complete narrow repair receipt; not applied to separate helper change",
+      "sha256": "3e01468818e755196eba34f1c46a4c89e9935580c956794a9135fbd3f59f8ed7"
+    },
+    {
+      "bytes": 3275,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "read_scope": "hash identity only; complete corrected checklist and actual N7 phrase",
+      "sha256": "7022a833cf7ac076ac2418ff2073e816dcf65e69f055059f199350f38c77fb13"
+    },
+    {
+      "bytes": 3271,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/NO_GO_DISCIPLINE_CHECKLIST_historical_v1.md",
+      "read_scope": "complete old/new wording delta",
+      "sha256": "6b19e478f9fce02f46cc191772d50e34ea99478956bfb01241f415caf2841291"
+    },
+    {
+      "bytes": 21797,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_geometry_v1/CANONICAL_EXPOSURE_v1__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "preserved note previously read; complete current delta compared",
+      "sha256": "6c3e0dfda9f0e8272ab64777e752606dff9a05a288312b682de7b4a0bc9dbfdc"
+    },
+    {
+      "bytes": 13944,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/DERIVATION_v1.md",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "c800c8fb3da5840e66c41e3904260be847467abf5b5ea9b0e9b96003ab1bc327"
+    },
+    {
+      "bytes": 1511,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/EXPOSURE_SCOPE_v1.md",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "5213d3c70be344002e1d110d0b7d4230b240e092c42c82bf9439da6607c2889d"
+    },
+    {
+      "bytes": 3267,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_NOTE_CONFIRMATION_v1.md",
+      "read_scope": "complete historical reviewer finding/confirmation preserved",
+      "sha256": "02f9700c436f862b529432606d79bd7ef6ffd815e550f1b485b5f5b2a8da660d"
+    },
+    {
+      "bytes": 1420,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_SOURCE_FINDING_v1.md",
+      "read_scope": "complete historical reviewer finding/confirmation preserved",
+      "sha256": "b2c810e1c4ab51bba48fc92bde561c86d3f4e216df66563dccd07ce818891e7a"
+    },
+    {
+      "bytes": 2250,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/INDEPENDENT_FREEZE_v1.json",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "ebad6c80f5217230e066a7a3a3ebbe42660318ac97afce226daf5caf84c3ba23"
+    },
+    {
+      "bytes": 14511,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/M17_PREMISE_SNAPSHOT_v1.md",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda"
+    },
+    {
+      "bytes": 5119,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/POST_EXPOSURE_FREEZE_v1.json",
+      "read_scope": "complete prior freeze; every listed identity compared",
+      "sha256": "90d68a57cc411c1074040c99bf48b8b54035d7123ea401e071d6b72cc0d1be5b"
+    },
+    {
+      "bytes": 12067,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/POST_EXPOSURE_RECEIPT_v1.json",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "9a26be9719e5819ff467caeafd7b7e45a80975316ad9c84f146a17dfb33e325b"
+    },
+    {
+      "bytes": 7712,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/POST_EXPOSURE_REPORT_v1.md",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "800260ac6243faef1f77d903018b67ffa2b559915002a791af307e223e2b54da"
+    },
+    {
+      "bytes": 862,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/POST_EXPOSURE_SOURCE_v1__NUMERICAL_REPAIR_v1.json",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "59c310e5e8efb187430d4e2b5b10f8592d3d4be37c1f0c268c8f36b01da7f32d"
+    },
+    {
+      "bytes": 1516,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/POST_EXPOSURE_SOURCE_v1__PROTOCOL_v3.json",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "73b286f8963a969b8a4e40eb5410b79ff83aa5702fedfae83405d385e5575ae9"
+    },
+    {
+      "bytes": 5544,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/POST_EXPOSURE_SOURCE_v1__WORKING_v2.md",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "92d5f254b652c176fa3ee668ccc2c55ad84ed9c0700ca0345dbdb8ff2faba7f8"
+    },
+    {
+      "bytes": 4944,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/REPORT_v1.md",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "09d2c9561408c78b4d0764b128e3bf2c9d6adc070836aea5d282ffd76c3814d6"
+    },
+    {
+      "bytes": 38130,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/SOURCE_RECEIPT_v1.json",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "b15277dad0d92fa1af3d6ff86b25147e7651955f88992bea702364cbd4e4fcdd"
+    },
+    {
+      "bytes": 1526,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/WITNESS_ARITHMETIC_v1.json",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "50bdf2806e31c6cc053ccbf24a32af3705222145c3224826e87f8738a746668d"
+    },
+    {
+      "bytes": 1805,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/WITNESS_ARITHMETIC_v1.py",
+      "read_scope": "prior reviewed artifact identity; no repeated science review",
+      "sha256": "75ff2f97219ff9e8c2b6871ca11dd560aa151ae54d677f25872f3f73599182b6"
+    },
+    {
+      "bytes": 8539,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/mutations_v1/RESULTS_v1.json",
+      "read_scope": "complete outcome metadata and reported failed controls; no source-mutant execution or implementation review",
+      "sha256": "83b476bf3df224612d641700d201ba061a8261a73a676dd3b33cf3d6dda78078"
+    },
+    {
+      "bytes": 9170,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/mutations_v2/RESULTS_v1.json",
+      "read_scope": "complete outcome metadata and reported failed controls; no source-mutant execution or implementation review",
+      "sha256": "f37442b4575b6663caf029a2f2e2e70eb6c2bd7b53a4034f5380c1109d611017"
+    },
+    {
+      "bytes": 23572,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "hash identity only",
+      "sha256": "819c683b881066c736888ec51d735b04afab6d25a70a4515170f71b74cf2fd32"
+    },
+    {
+      "bytes": 11646,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "read_scope": "hash identity only",
+      "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000"
+    },
+    {
+      "bytes": 12374,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "read_scope": "hash identity only",
+      "sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68"
+    },
+    {
+      "bytes": 22772,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "hash identity only; prior complete scope review reused; complete 6c3-to-669 delta read",
+      "sha256": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6"
+    },
+    {
+      "bytes": 3431,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_physical_curvature_check.txt",
+      "read_scope": "complete cache header/stdout/stderr comparison",
+      "sha256": "8010647b91a4ec18bdb69d812bcd98171d9966359ee5bebdfaa9a6b9e93e7d28"
+    },
+    {
+      "bytes": 2535343,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_physical_curvature/RESULTS_v1.json",
+      "read_scope": "metadata, check statuses and component counts only; numerical arrays not reviewed",
+      "sha256": "08ad160bff2ada404400883c6d43ab522848498362d5fb91f848255eda6bb4ac"
+    },
+    {
+      "bytes": 2497,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_physical_curvature/SUMMARY_v1.json",
+      "read_scope": "complete summary",
+      "sha256": "8e854ccf8185b7edcba9969143d6552e13d8f37f0b57697ac1fc4f87d5e4d6c8"
+    },
+    {
+      "bytes": 5030,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_physical_curvature_action.py",
+      "read_scope": "hash identity only",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a"
+    },
+    {
+      "bytes": 4694,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_physical_curvature_check.py",
+      "read_scope": "complete primary read for declarations, summary assembly and scope; no execution",
+      "sha256": "372ed4ea70e578c8cb91fe5917e7a7dd7bb5eb3c73fea7ecfcb895be764933d9"
+    },
+    {
+      "bytes": 9649,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_physical_curvature_geometry.py",
+      "read_scope": "hash identity only",
+      "sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768"
+    },
+    {
+      "bytes": 11315,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_physical_lapse.py",
+      "read_scope": "hash identity only",
+      "sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa"
+    }
+  ],
+  "mutation_history": [
+    {
+      "baseline_sha256": "ba49fcb3a401c7dddef7e3406c5907e1cc84568f0fcf97a563334dc904f072ab",
+      "exceptions": 0,
+      "rejected": 7,
+      "result_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/mutations_v1/RESULTS_v1.json",
+      "scope": "reported outcomes only, no independent rerun",
+      "survivors": 1,
+      "version": "v1"
+    },
+    {
+      "baseline_sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa",
+      "exceptions": 0,
+      "rejected": 8,
+      "result_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/mutations_v2/RESULTS_v1.json",
+      "scope": "reported outcomes only, no independent rerun",
+      "survivors": 0,
+      "version": "v2"
+    }
+  ],
+  "review_artifacts": [
+    {
+      "bytes": 4779,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_SOURCE_CLOSURE_v1.md",
+      "sha256": "8100695b71237bca506085807aa55bbcf9ae16b199f19b8d2883aff7b3b104ac"
+    },
+    {
+      "bytes": 2706,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_SOURCE_DELTA_v1.diff",
+      "sha256": "72f4f17a4a1983f152b7db21712c2bb9dce94a26ebb2d7f92cfc86c8aa4e1dc5"
+    },
+    {
+      "bytes": 11021,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_IDENTITY_CHECK_v1.py",
+      "sha256": "9db6348ed59a74fd486dac5aa13b895cb124afa805979671fedaadbb799200a6"
+    },
+    {
+      "bytes": 29871,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_IDENTITY_CHECK_v1.json",
+      "sha256": "4662e162a1b998b6e276bb54c9be55d44eb651fc31e24e941e0c574f22e2053f"
+    },
+    {
+      "bytes": 1420,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_SOURCE_FINDING_v1.md",
+      "sha256": "b2c810e1c4ab51bba48fc92bde561c86d3f4e216df66563dccd07ce818891e7a"
+    },
+    {
+      "bytes": 3267,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/FINAL_NOTE_CONFIRMATION_v1.md",
+      "sha256": "02f9700c436f862b529432606d79bd7ef6ffd815e550f1b485b5f5b2a8da660d"
+    },
+    {
+      "bytes": 5119,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/independent_observation_v1/POST_EXPOSURE_FREEZE_v1.json",
+      "sha256": "90d68a57cc411c1074040c99bf48b8b54035d7123ea401e071d6b72cc0d1be5b"
+    }
+  ],
+  "reviewer": "/root/launch_check",
+  "schema": "independent_source_confirmation_v1",
+  "scope_limits": [
+    "Input fingerprint string compared across binding/cache; authoritative algorithm not rerun",
+    "Serialized check outcomes are author results, not independent experiments",
+    "Changed lapse helper implementation and mutant execution review belongs to the separate numerical checker",
+    "No formal audit, PR/landing gate or index verification",
+    "No new primary acquisition, full numerical-array review, solver rerun, empirical validation or formal audit",
+    "Current lapse helper is hash-bound; its implementation delta review remains with assigned checker",
+    "Checklist repair is wording-only, but the whole intervening revision also changes the helper/control coverage and note history"
+  ],
+  "source_reading_reuse": "Prior complete M17 source scope and independently frozen extension supplier derivation; no new acquisitions"
+}

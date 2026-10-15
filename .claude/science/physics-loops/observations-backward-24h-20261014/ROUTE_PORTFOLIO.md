@@ -19,3 +19,7 @@ M15 prior-art sweep on origin/main bbada1fe09b2d10d610560864d86b68c24a59713: fou
 ## M16 unequal-distance finite-pair route
 
 Chosen after M15's exact equal-epoch diagonal remained an unmeasured continuum input. The distinct object is a finite catalogue statistic with independent two-source distances. Root derived a one-leg geometry commutator, fixed angular quotient and weak weights; focused independent derivations checked the geometry and measurement bridge. No common transfer, initial covariance or potential boundary value is supplied. Actual selection, calibrated signals, window representability and uncertainty remain premises. The current-main/open-PR and statement searches are in unequal_window/REPO_CONTEXT_v1.json and PRIOR_SEARCH_v1.json; no novelty claim follows from them.
+
+## M18 lapse-conjugation choice
+
+The derivative-cost route was selected after M17 still required a direct lapse Laplacian. The power is derived by cancellation, with a strict analytic usefulness witness. Original four-curvature comparison, potential maximum bound, weak signed curvature and full coupled-environment realization remain distinct alternatives. A signed weak functional does not bound C_+ without additional conditions. This extension belongs in PR9614. Statement-level prior search is lapse_derivative_probe/PRIOR_SEARCH_v1.json.

@@ -102,3 +102,11 @@ Highest next target: derive a finite measured correlation functional from actual
 3. Action/potential and initial-state selection remain open. Challenge a concrete symmetry or finite-history candidate against the earlier field equations; no chosen selector counts as a derivation.
 
 Actual observed Cassini products stay development-exposed. M16 uses no observation arrays. An empirical test still requires a frozen candidate/input protocol, selection/window model and uncertainty. Deadline and packaging time remain unchanged.
+
+## Ranked after the lapse-derivative extension
+
+1. Seek a calibrated weak geometric certificate or actual metric/boundary envelope that supplies a useful environment constraint; do not manufacture derivative errors from sparse samples. First discriminator: whether the actual available measurement operator bounds the positive Green functional, with explicit admissible geometry.
+2. Test a full coupled material/metric environment or cross-domain normalization relation. Candidate action/state/scales and complete boundary remain open. A prescribed synthetic lapse alone is insufficient.
+3. Action/potential selection remains a distinct priority: challenge a concrete symmetry/consistency mechanism without installing a fitted selector. Do not produce further conjugation variants solely for result counts.
+
+Original packaging21:33:44Z and deadline21:48:44Z unchanged. Earlier development exposure and unopened products are preserved.

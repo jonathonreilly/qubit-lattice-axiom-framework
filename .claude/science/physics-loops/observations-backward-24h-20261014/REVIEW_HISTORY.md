@@ -197,3 +197,21 @@ Direct author continues on codex/observations-backward-environment-20261015. M17
 ## M17 physical environment — 2026-10-15T18:40:00.221441+00:00
 
 One coherent complete-field physical-metric bound and measurement-prerequisite unit. Scientific source review complete and OPEN judgment;82author controls,10mutations rejected,0empirical tests. All findings resolved within their scopes; frozen delivery and publication pending. Exact source and complete reports are in finite_environment/CHECKPOINT_v3.json and REVIEW_RECORD_v1.md.
+
+## M17 publication and next working probe — 2026-10-15T19:01:04.294889+00:00
+
+[PR #9614](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614), regular/open/mergeable against its declared stacked base, frozen head `9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db`, tree `bd2c27a4ddb21ae4d44a1cb23d0a5bdf5ea4a410`,41paths; attached.82author controls,10failed-control mutation rejections,6synthetic profiles and zero empirical tests. The exact physical-frame ceiling retains all three fields and replaces a chosen homogeneous environment with conditional geometric and complete-boundary inputs; it does not construct a realized static body or derive the action/state/scales.
+
+Final canonical source/checklist binding is finite_environment/CHECKPOINT_v4.json, cache `b05f98972c9b3f9ec9299d9d29eec109ac9a420a8da12f262a9d878120e16b64`. Earlier v3 entries remain historical. Root read complete delivery reports v1/v2;201archive members,27plain views,28explicit omissions and all41paths verified. Three stale STATE display fields were the only v1→v2 change;146mechanical delta comparisons0mismatches. Runtime exact reports are M17_DELIVERY_REVIEW_v1/v2.md/json; original findings and versions preserved. No formal audit, main push or merge.
+
+Next: Independently challenge the unreviewed lapse-conjugation bound and its whole-domain threshold, then personally test whether first-clock-derivative error envelopes are useful. Investigate a smooth rapidly oscillating synthetic lapse with bounded first derivative; label it kinematic, not a full candidate solution or observation. Package any valid result as a coherent M17 extension, not a new PR for each inequality.
+
+The initial probe is preserved in lapse_derivative_probe/CHECKPOINT_v1.json with exact source/result identities. It is unreviewed and not part of the published M17 unit. Preserve development/independent-test separation; no new data were opened. No owned research jobs; all three older campaigns remain stopped. Matching lock refreshed18:55:59Z. Fixed packaging21:33:44Z and deadline21:48:44Z unchanged.
+
+## M18 final science checkpoint — 2026-10-15T19:36:21.313185+00:00
+
+M18 final science: power-conjugation removes the direct lapse Laplacian from a necessary physical-metric scalar ceiling; exact smooth family proves criterion separation.149canonical controls0fail,8extension source mutants rejected; original60/3numerical failures,7/1mutation outcome and checklist/version findings preserved. Complete final independent mathematics and measurement/source reports read. No observed test or coupled environment; coherent PR9614 extension ready for frozen delivery.
+
+Verify the frozen M18 stage/evidence, commit and push only the existing campaign branch, update and attach PR9614. Then pursue a physical input supplier or action/scale discriminator with no chosen state/selector; final packaging21:33:44Z, fixed deadline21:48:44Z.
+
+Exact current identities: lapse_derivative_probe/CHECKPOINT_v3.json. The original finite_environment evidence remains frozen at M17. All final scientific reports were read in full; final stage verification remains separate. No new observed data or prior-campaign restart. Matching lock refreshed19:26:07Z.

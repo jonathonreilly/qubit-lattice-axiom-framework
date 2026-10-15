@@ -1,0 +1,20 @@
+# M18 focused independent checks and current disposition
+
+Root personally authored the conjugation, threshold, comparison, analytic separation witness, implementation and repairs. Root read every complete final scientific report and each original finding's disposition. Focused scientific checks are complete for the identified final source; no unresolved finding remains in their scopes. The source/measurement checker supports this coherent extension to existing PR9614. Final frozen delivery is a separate mechanical step. No formal audit or landing approval is asserted.
+
+| Evidence | Scope | Complete report |
+| --- | --- | --- |
+| Independent geometry | 37 controls and proof frozen before root formula/code exposure; prior M17 and the route category were known | independent_geometry_v1/INDEPENDENT_DERIVATION_v1.md |
+| Working correspondence | 31 independent exact controls of root's analytic family after exposure; no author implementation used | independent_geometry_v1/AUTHOR_CORRESPONDENCE_v1.md |
+| Complete canonical source | Entire new note/helper/primary read; unchanged M17 helpers reuse their exact prior scope; 67 source/record checks. First saved-envelope match36/3 was a real intervening checklist mismatch | independent_geometry_v1/CANONICAL_REVIEW_v1.md |
+| Manufactured fixture | 15 independently assembled exact checks after root proposed the fixture, before its implementation was read; comparison sign class only | independent_geometry_v1/MANUFACTURED_SIGN_CLASS_PRECHECK_v1.md |
+| Final affected source | Complete helper/note/checklist delta, all16 original/final mutant sources and output records, final nine-input/cache identity. No numerical rerun | independent_geometry_v1/FINAL_SOURCE_SUPPLEMENT_v1.md |
+| Observation/input bridge | Independently frozen spatial geometry, clock/range, center and derivative-calibration argument with reused primary-source scopes; then complete canonical delta, checklist correction and final identity confirmation | independent_observation_v1/REPORT_v1.md, POST_EXPOSURE_REPORT_v1.md and FINAL_SOURCE_CLOSURE_v1.md |
+
+Current canonical source: note669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6; primary372ed4ea70e578c8cb91fe5917e7a7dd7bb5eb3c73fea7ecfcb895be764933d9; lapse helperb7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa; cache8010647b91a4ec18bdb69d812bcd98171d9966359ee5bebdfaa9a6b9e93e7d28. The actual source-bound run has149passes/0failures,2.8906869888305664seconds under180. Complete pre/post execution identities are preserved as M18_EXECUTION_BEFORE_v2.json and M18_EXECUTION_AFTER_v2.json; the scientific reviewers separately delimit their content-binding checks.
+
+Original failures remain intact: numerical60/3 (two Green integration refinements and one node cap); mutation7detections/1survivor; mistaken checklist exclusion of variable lapse; real36/3 mismatch between old execution and changed checklist; and the independent reviewer's KeyError in a component-count reader. Repairs are explicit and do not change scientific tolerances or fit observations. The final8mutants are rejected by failed control records, not exceptions. The original ten M17 mutants remain supported by unchanged action/geometry helper bytes and their frozen review.
+
+The analytic rational ceiling below6/5 and old-criterion lower bound above4 concern supplied smooth metrics. The separately manufactured source cannot realize the positive-Hv candidate at its center; it tests the comparison implementation. No complete Einstein/matter solution, realized initial state, physical error envelope, measured gravity or independent empirical test is inferred. Clock-second-derivative removal does not remove ranging derivatives, spatial curvature, central calibration, full boundary or whole-domain coverage.
+
+Final geometry supplement SHA7db1030d2743e389c39f27fb3eada5179d0dc64584b36b87708b28cc036d478c. Final source/measurement closure SHA8100695b71237bca506085807aa55bbcf9ae16b199f19b8d2883aff7b3b104ac. Original freezes and every superseded report are preserved in indexed history; plain copies are duplicates, not additional independent evidence.

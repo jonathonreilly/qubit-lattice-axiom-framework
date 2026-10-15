@@ -4,10 +4,12 @@ AUDIT_INPUT_PATHS = [
     "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
     "scripts/scalar_physical_curvature_action.py",
     "scripts/scalar_physical_curvature_geometry.py",
+    "scripts/scalar_physical_lapse.py",
     "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
     "docs/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
     "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
     ".claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/NO_GO_DISCIPLINE_CHECKLIST.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/NO_GO_DISCIPLINE_CHECKLIST.md",
 ]
 import argparse
 import hashlib
@@ -15,12 +17,14 @@ import json
 from pathlib import Path
 import scalar_physical_curvature_action as action
 import scalar_physical_curvature_geometry as geometry
+import scalar_physical_lapse as lapse
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def run():
-    components = {"action": action.controls(), "geometry": geometry.controls()}
+    components = {"action": action.controls(), "geometry": geometry.controls(),
+                  "lapse": lapse.controls()}
     checks = [{**row, "name": label + "." + row["name"]}
               for label, value in components.items() for row in value["checks"]]
     return {
@@ -67,7 +71,7 @@ def main():
         json.dumps(summary, sort_keys=True, indent=2, allow_nan=False) + "\n")
     for label, scope in {
         "per_element": "checked: Weyl coefficients, full scalar variation, Ricci contraction, signs and conformal normalization",
-        "per_site": "checked: six synthetic scalar profiles in specified metrics; no actual gravitating body or empirical calibration",
+        "per_site": "checked: ten synthetic scalar profiles in specified metrics; no actual gravitating body or empirical calibration",
         "per_mode": "checked and not executed: no full dynamical spectrum or force/gradient bound",
         "per_block": "checked: regular finite-domain comparison, spherical Green quadrature and integrated scalar flux",
         "lattice_wide": "checked and not executed: no action/state/scale selection, full Einstein/matter solution or empirical validation",

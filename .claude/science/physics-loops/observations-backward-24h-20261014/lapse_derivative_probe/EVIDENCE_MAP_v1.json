@@ -1,0 +1,1206 @@
+{
+  "scope": "Immutable original history path map; selected plain files are identical views, not independent evidence",
+  "archive": {
+    "path": "WORK_HISTORY_v1.json.gz",
+    "sha256": "1685123625c83a0ec53514245939d63ba8f4d3a23d571b241e392c559cf20412",
+    "bytes": 3060295
+  },
+  "members": [
+    {
+      "path": "ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "96a0a0b90de4f29863cfa76af5f8d533f12f24bcbf5ac41c9d3df2ecc2b9c469",
+      "bytes": 1936
+    },
+    {
+      "path": "CANONICAL_BINDING_v1.json",
+      "sha256": "20ea8691fedc3a2ea921c42dc2c0fba11cf2f9683850f23dee3d19506d1ee18f",
+      "bytes": 1965
+    },
+    {
+      "path": "CANONICAL_BINDING_v2.json",
+      "sha256": "c821fefeaea60af377333c04ec2f6134e5c17b92eb22a83420c006f60650028f",
+      "bytes": 1965
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v1.json",
+      "sha256": "db8eed2ed6b39a7912a46a382cbd43bbc4381925eae0a60bb5cc0b69b38248ef",
+      "bytes": 3573
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v2.json",
+      "sha256": "457b42539f2d5313ce91f6234126f27bc79f7933ba6a54f5c4f8842f90507711",
+      "bytes": 3573
+    },
+    {
+      "path": "CANONICAL_PARENT_IDENTITY_v1.json",
+      "sha256": "5f6b527607c99d44ef1bb0a4987a1e989c3b319d1de5d0d1e1ac6d49305ecbec",
+      "bytes": 868
+    },
+    {
+      "path": "CHECKLIST_WORDING_REPAIR_v1.json",
+      "sha256": "3e01468818e755196eba34f1c46a4c89e9935580c956794a9135fbd3f59f8ed7",
+      "bytes": 638
+    },
+    {
+      "path": "CHECKPOINT_v1.json",
+      "sha256": "977c1d758f7176d686bc0e99c63fd624e5b72b5735b874430d2fe250785b55f1",
+      "bytes": 2943
+    },
+    {
+      "path": "CHECKPOINT_v2.json",
+      "sha256": "26b4049b1b57bc8a322c2f528586e4d5bf23becef763478af27759b273804351",
+      "bytes": 1786
+    },
+    {
+      "path": "CHECKPOINT_v3.json",
+      "sha256": "7109425fce92884d8023258060dfdae9d16678d67ffcf715fc72c2121c643cdb",
+      "bytes": 3241
+    },
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "9c4d144479d5948e95e88d0d0efd4a1619915f816e5936c5806d3fc5e881ce00",
+      "bytes": 1311
+    },
+    {
+      "path": "CONFORMANCE_v1.md",
+      "sha256": "f116ad3ad0754fafffe43cf82b0f399292b9a1e50fc892f078b7f16fc9e9a878",
+      "bytes": 4081
+    },
+    {
+      "path": "LAPSE_RESULTS_v5.json",
+      "sha256": "f4896f92afc9aff1e44b8bf76e827fa0803d30c72a2966d1642633aae1203953",
+      "bytes": 1689244
+    },
+    {
+      "path": "LAPSE_SOURCE_v5.py",
+      "sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa",
+      "bytes": 11315
+    },
+    {
+      "path": "M18_EXECUTION_AFTER_v2.json",
+      "sha256": "e467b795fc5e75201f613ea67f54ca37456dbda60d641e82e1a39a21d28ef949",
+      "bytes": 5144
+    },
+    {
+      "path": "M18_EXECUTION_BEFORE_v2.json",
+      "sha256": "e467b795fc5e75201f613ea67f54ca37456dbda60d641e82e1a39a21d28ef949",
+      "bytes": 5144
+    },
+    {
+      "path": "M18_EXECUTION_RAW_v2.json",
+      "sha256": "457b42539f2d5313ce91f6234126f27bc79f7933ba6a54f5c4f8842f90507711",
+      "bytes": 3573
+    },
+    {
+      "path": "M18_LAPSE_RESULTS_v2.json",
+      "sha256": "68ee3be53752fd8de314a0ea7bedd974abd577725785dc3cdada7ebf6a4fb0ae",
+      "bytes": 800
+    },
+    {
+      "path": "M18_LAPSE_WORKING_v1.md",
+      "sha256": "4675db26e2653f74071de8d7de3d60e23a01bb5411dfb7371dbf49d225a344b0",
+      "bytes": 2420
+    },
+    {
+      "path": "M18_SOURCE_MANIFEST_v1.json",
+      "sha256": "5e27dfedaadfe1aaa9aa26fdfb33985c8fb257cc105873ad197be9bfb431241a",
+      "bytes": 1309
+    },
+    {
+      "path": "M18_lapse_controls_v2.py",
+      "sha256": "2d7268579a8ba15ef75ca7b03e34750d8a1108eb480ed0056f5851a9115714c8",
+      "bytes": 1738
+    },
+    {
+      "path": "NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "7022a833cf7ac076ac2418ff2073e816dcf65e69f055059f199350f38c77fb13",
+      "bytes": 3275
+    },
+    {
+      "path": "NO_GO_DISCIPLINE_CHECKLIST_historical_v1.md",
+      "sha256": "6b19e478f9fce02f46cc191772d50e34ea99478956bfb01241f415caf2841291",
+      "bytes": 3271
+    },
+    {
+      "path": "NUMERICAL_REPAIR_v1.json",
+      "sha256": "59c310e5e8efb187430d4e2b5b10f8592d3d4be37c1f0c268c8f36b01da7f32d",
+      "bytes": 862
+    },
+    {
+      "path": "PRIOR_SEARCH_v1.json",
+      "sha256": "78d3b8f4f90bb491bf822bb4b1c07fd5521b06e659a343ed5cff8d8687ea0c58",
+      "bytes": 78485
+    },
+    {
+      "path": "PROTOCOL_v2.json",
+      "sha256": "ae876fc6049a337cffcdbe06f7057c72be523125a4fa7f3641cb8fe1201fb1b0",
+      "bytes": 1192
+    },
+    {
+      "path": "PROTOCOL_v3.json",
+      "sha256": "73b286f8963a969b8a4e40eb5410b79ff83aa5702fedfae83405d385e5575ae9",
+      "bytes": 1516
+    },
+    {
+      "path": "README.md",
+      "sha256": "a2c181b01a2d2cfa24895770595cb169261674c474d2dd75fef4f6c3e8f8d63f",
+      "bytes": 2499
+    },
+    {
+      "path": "REPO_CONTEXT_v1.json",
+      "sha256": "4ff509a49184ffdff9115845f7cc169cdb081b72c32060da385c98479b817df0",
+      "bytes": 861
+    },
+    {
+      "path": "RESULTS_v3.json",
+      "sha256": "2a39f7e58f8855326a1e87ad54b0d734008ce9e33684e016a8d00c6605910fa3",
+      "bytes": 1688601
+    },
+    {
+      "path": "RESULTS_v4.json",
+      "sha256": "d5136ec191129b3c14248aa9ae42e539cd3c76db4009747e1c43cc7aa0c7895d",
+      "bytes": 1688666
+    },
+    {
+      "path": "REVIEW_RECORD_v1.md",
+      "sha256": "cbf2c6b29c38576be20a5713bacb4d66de3b8e57d66e53c062ca4ab469aa15d7",
+      "bytes": 4143
+    },
+    {
+      "path": "SOURCE_PREFLIGHT_v1.json",
+      "sha256": "598f1275be923d4bdf3cf91c90100ae64118c2389b81017cf446273207ad902f",
+      "bytes": 2099
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "sha256": "241459402f3fa8fbdfcdc5836bf47733acb29a91ccaf38d10de8c2dc0a36f1c2",
+      "bytes": 1081
+    },
+    {
+      "path": "VOCAB_v1.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    {
+      "path": "WORKING_v2.md",
+      "sha256": "92d5f254b652c176fa3ee668ccc2c55ad84ed9c0700ca0345dbdb8ff2faba7f8",
+      "bytes": 5544
+    },
+    {
+      "path": "derivative_controls_v3.py",
+      "sha256": "6fd46b885fb65fb259fb5234f47db4cfb5451a0f9b8251c2884cecefb18e1f35",
+      "bytes": 9685
+    },
+    {
+      "path": "derivative_controls_v4.py",
+      "sha256": "33686d6f73a0ab913ddf04f6af568b5f3cba572596706461d1e246b71984eaad",
+      "bytes": 10571
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "sha256": "94d4546e6cd56c7a26313fc576348120954243e7cfab21b14f00b970151d990d",
+      "bytes": 1294
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_CORRESPONDENCE_v1.md",
+      "sha256": "59cca1cf4b21d5c9ffd5308638ab297f79ed9f4f8014b7bcb2f2031a03a4582b",
+      "bytes": 6940
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_EXPOSURE_v1.json",
+      "sha256": "0c1cd2d42947f3401e95fd41e03f0f0600328e6f20ccb32df81bc5287bc377f8",
+      "bytes": 507
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_EXPOSURE_v1__WORKING_v2.md",
+      "sha256": "92d5f254b652c176fa3ee668ccc2c55ad84ed9c0700ca0345dbdb8ff2faba7f8",
+      "bytes": 5544
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "sha256": "0bbc69d389a5f07b765c4f4615c87f1930573bf629636a84f0e4853a9cfa851e",
+      "bytes": 10512
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_ENVELOPE_RESULTS_v1.json",
+      "sha256": "5c09ae28d4f3f6928f94a918bea358876c19bf074aee607fe8bd4a4906071c52",
+      "bytes": 7785
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1.json",
+      "sha256": "ed8c1c4fa00dee5d27c2277f6a526badab4bb76b9b5c3704305737b8dfe27d14",
+      "bytes": 4329
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__CANONICAL_PARENT_IDENTITY_v1.json",
+      "sha256": "5f6b527607c99d44ef1bb0a4987a1e989c3b319d1de5d0d1e1ac6d49305ecbec",
+      "bytes": 868
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "6b19e478f9fce02f46cc191772d50e34ea99478956bfb01241f415caf2841291",
+      "bytes": 3271
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__NUMERICAL_REPAIR_v1.json",
+      "sha256": "59c310e5e8efb187430d4e2b5b10f8592d3d4be37c1f0c268c8f36b01da7f32d",
+      "bytes": 862
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__PROTOCOL_v2.json",
+      "sha256": "ae876fc6049a337cffcdbe06f7057c72be523125a4fa7f3641cb8fe1201fb1b0",
+      "bytes": 1192
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__PROTOCOL_v3.json",
+      "sha256": "73b286f8963a969b8a4e40eb5410b79ff83aa5702fedfae83405d385e5575ae9",
+      "bytes": 1516
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__RESULTS_v3.json",
+      "sha256": "2a39f7e58f8855326a1e87ad54b0d734008ce9e33684e016a8d00c6605910fa3",
+      "bytes": 1688601
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__RESULTS_v4.json",
+      "sha256": "d5136ec191129b3c14248aa9ae42e539cd3c76db4009747e1c43cc7aa0c7895d",
+      "bytes": 1688666
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "6c3e0dfda9f0e8272ab64777e752606dff9a05a288312b682de7b4a0bc9dbfdc",
+      "bytes": 21797
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__derivative_controls_v3.py",
+      "sha256": "6fd46b885fb65fb259fb5234f47db4cfb5451a0f9b8251c2884cecefb18e1f35",
+      "bytes": 9685
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__derivative_controls_v4.py",
+      "sha256": "33686d6f73a0ab913ddf04f6af568b5f3cba572596706461d1e246b71984eaad",
+      "bytes": 10571
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__scalar_physical_curvature_action.py",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "bytes": 5030
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__scalar_physical_curvature_check.py",
+      "sha256": "372ed4ea70e578c8cb91fe5917e7a7dd7bb5eb3c73fea7ecfcb895be764933d9",
+      "bytes": 4694
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__scalar_physical_curvature_geometry.py",
+      "sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "bytes": 9649
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__scalar_physical_lapse.py",
+      "sha256": "ba49fcb3a401c7dddef7e3406c5907e1cc84568f0fcf97a563334dc904f072ab",
+      "bytes": 9910
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1.json",
+      "sha256": "13727069b42e492e569767d28f6d936c0501794a489ab3725bec1510a56ce181",
+      "bytes": 1593
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__CANONICAL_BINDING_v1.json",
+      "sha256": "20ea8691fedc3a2ea921c42dc2c0fba11cf2f9683850f23dee3d19506d1ee18f",
+      "bytes": 1965
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__CANONICAL_EXECUTION_v1.json",
+      "sha256": "db8eed2ed6b39a7912a46a382cbd43bbc4381925eae0a60bb5cc0b69b38248ef",
+      "bytes": 3573
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__RESULTS_v1.json",
+      "sha256": "c4ea8c9e35e42c96c9960900956fbd2c44856a047a668523d260630a9c1f0a41",
+      "bytes": 2533901
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__SUMMARY_v1.json",
+      "sha256": "791bcbb52ba80aa2d7d42e872544058c30a578706cf762cb4c29c2a9b1097a9d",
+      "bytes": 2497
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__scalar_physical_curvature_check.txt",
+      "sha256": "d31d7d22c06ce0e0ddf6fd071414dba4ca31f5e78c9f093916e18a675299bcf9",
+      "bytes": 3431
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "1a8e07513e82f5a0c821fca51cb0e3cbe7bea2982354773337b7ba398b69f9b9",
+      "bytes": 2353
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "cb290d10052c55e2490f7ea95d1838dd13fd36644709ee95dfbfbe8bd4f66750",
+      "bytes": 8624
+    },
+    {
+      "path": "independent_geometry_v1/CHECKLIST_CHANGE_EXPOSURE_v1.json",
+      "sha256": "b6846868d91fc73aaa92fb7a979893ca9691279174b9d9372e51f589dca10d99",
+      "bytes": 577
+    },
+    {
+      "path": "independent_geometry_v1/CHECKLIST_CHANGE_v1.diff",
+      "sha256": "105ffd1d46f311337476597b956a680f057dd59bcf57131e02f8482dd8ba52c1",
+      "bytes": 614
+    },
+    {
+      "path": "independent_geometry_v1/CHECKLIST_EXPOSURE_v2.md",
+      "sha256": "7022a833cf7ac076ac2418ff2073e816dcf65e69f055059f199350f38c77fb13",
+      "bytes": 3275
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_BINDING_RESULTS_v3.json",
+      "sha256": "e31e3422cb3623083e4564f1d21022ea054fbf326656b4b67fe5e524c10f066e",
+      "bytes": 12087
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_BINDING_SETUP_REPAIR_v1.json",
+      "sha256": "6195146b2564eeacfa04901e567c7ee31eb91fd0f9b14192d21bd6ee949097ec",
+      "bytes": 480
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_DELTA_v2__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "sha256": "c66319794e33534b3997d12eb840d294b79cefbca525e84606df4f248d7742c1",
+      "bytes": 2201
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_DELTA_v2__scalar_physical_lapse.py.diff",
+      "sha256": "2b89d39bbc4d202567c91682b1297c685a3e1be268c2be998e28aef271c1cba1",
+      "bytes": 2601
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2.json",
+      "sha256": "4492abfa1520145b8c4d40051034ed0b29c2528b8d34d59a2cd2e8cb40e6b880",
+      "bytes": 21006
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__CANONICAL_BINDING_v2.json",
+      "sha256": "c821fefeaea60af377333c04ec2f6134e5c17b92eb22a83420c006f60650028f",
+      "bytes": 1965
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__CANONICAL_EXECUTION_v2.json",
+      "sha256": "457b42539f2d5313ce91f6234126f27bc79f7933ba6a54f5c4f8842f90507711",
+      "bytes": 3573
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "7022a833cf7ac076ac2418ff2073e816dcf65e69f055059f199350f38c77fb13",
+      "bytes": 3275
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__RESULTS_v1.json",
+      "sha256": "08ad160bff2ada404400883c6d43ab522848498362d5fb91f848255eda6bb4ac",
+      "bytes": 2535343
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "bytes": 22772
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__SUMMARY_v1.json",
+      "sha256": "8e854ccf8185b7edcba9969143d6552e13d8f37f0b57697ac1fc4f87d5e4d6c8",
+      "bytes": 2497
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__PROTOCOL_v1.json",
+      "sha256": "1410ea240bb354c836488629c085ba86fce07c89a8d788409cea17d49ef214ab",
+      "bytes": 2851
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__RESULTS_v1.json",
+      "sha256": "83b476bf3df224612d641700d201ba061a8261a73a676dd3b33cf3d6dda78078",
+      "bytes": 8539
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__missing_global_lapse_threshold.py",
+      "sha256": "7d5acee227738feb11dc8f342837ea669ca4e1c8f8f1626eadd328789568e653",
+      "bytes": 9892
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__missing_global_lapse_threshold.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__missing_global_lapse_threshold.stdout",
+      "sha256": "37597f9e1ea0fc283add98fb19c63a124a799496476badfe07e131cdecc29608",
+      "bytes": 61
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__missing_lapse_curvature_factor.py",
+      "sha256": "27d739493efe4feca5b90754bea7e6eb83a17a4e3400c68c379578253bd6b572",
+      "bytes": 9910
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__missing_lapse_curvature_factor.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__missing_lapse_curvature_factor.stdout",
+      "sha256": "a4b1c8de6f88c852bd7dd8851c46d5edde188288cfb363d93622e8ef91819e89",
+      "bytes": 405
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_global_green_denominator.py",
+      "sha256": "c70dcb12a064f34fdc76851f4a8724192285d94780a70f14c3467e0b499a4145",
+      "bytes": 9910
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_global_green_denominator.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_global_green_denominator.stdout",
+      "sha256": "50f9087f4f3477b3c34ae8d30779c54cb3fbb33dc1acddc9b7c10eaacc23c974",
+      "bytes": 292
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_gradient_sign.py",
+      "sha256": "41231ea342ad2829b8e1e130a6eb12357ca43063223b2aa6a00b521eb47c210d",
+      "bytes": 9910
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_gradient_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_gradient_sign.stdout",
+      "sha256": "7c393ce7681ac1bd57c59c9163a12bbfb6db1a7618cd7df04679eb16e86f7537",
+      "bytes": 418
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_numerical_gradient_coefficient.py",
+      "sha256": "8ca5987bdc578dffaed369742c3052b19b8cdae88558ad5ddf4aa4d787f5c7a4",
+      "bytes": 9907
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_numerical_gradient_coefficient.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_numerical_gradient_coefficient.stdout",
+      "sha256": "c1b0978acf1b321f90fd2be6669ef80064bab279c277539256804848ba343b22",
+      "bytes": 858
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_pointwise_green_sign.py",
+      "sha256": "6801df83b302b4d0640fee2a6d02ec815240418c9c8bb3163d0ec90ba7003605",
+      "bytes": 9910
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_pointwise_green_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_pointwise_green_sign.stdout",
+      "sha256": "ac51842b68838fb9f856dca6da17e57d8553b192fd5839dcde5975aa28a3efba",
+      "bytes": 251
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_ranging_slope.py",
+      "sha256": "97d846f86fd057aaf930e8feca6f20398b7fd02ae9f21dfd145be21f1f9bda65",
+      "bytes": 9910
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_ranging_slope.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_ranging_slope.stdout",
+      "sha256": "f49b67694846b0d8d5623a9dbed47892fc55d478893bbbe5ccf861a2668bef95",
+      "bytes": 187
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_transformed_drift.py",
+      "sha256": "86e0ed7d48a30944d421edaae9c5216a5f5242851db51fafc57166cd7173205c",
+      "bytes": 9908
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_transformed_drift.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v1__wrong_transformed_drift.stdout",
+      "sha256": "e79f23477247041d7860ed5bcfb91f6d0b7be470d04a82eafa758b544f4b0b58",
+      "bytes": 865
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__PROTOCOL_v1.json",
+      "sha256": "fef7944ed0ec03a719c6c9a6c0b5ff3efde1cbead0282c461db5bf83f2ee5eff",
+      "bytes": 2760
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__RESULTS_v1.json",
+      "sha256": "f37442b4575b6663caf029a2f2e2e70eb6c2bd7b53a4034f5380c1109d611017",
+      "bytes": 9170
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__missing_global_lapse_threshold.py",
+      "sha256": "814367f66a14be194e591d3566d5f93db326ddc99177c54fabd8d3cde11b0d36",
+      "bytes": 11292
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__missing_global_lapse_threshold.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__missing_global_lapse_threshold.stdout",
+      "sha256": "f3fc9a6f864f6e36223e9d987608231362b6ddaca675f1fcd8838bdf0e540bfe",
+      "bytes": 213
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__missing_lapse_curvature_factor.py",
+      "sha256": "30782125dcdf7f4aae5c83078fd17b8d3daa1668812dcc7b9794aba94434c18c",
+      "bytes": 11315
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__missing_lapse_curvature_factor.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__missing_lapse_curvature_factor.stdout",
+      "sha256": "ffe29d99a1299ba6ddff6bd72df1743022e59d5a6ce12e84711c4e36f3b6d4fc",
+      "bytes": 571
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_global_green_denominator.py",
+      "sha256": "716b066ffe7c544e872c7eb3649f287e83ab2b2a0145eda232b91d152558cef9",
+      "bytes": 11315
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_global_green_denominator.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_global_green_denominator.stdout",
+      "sha256": "4b674800b232a320c20962b946aef2f27af844f2152f18a5323facb9fc040c70",
+      "bytes": 292
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_gradient_sign.py",
+      "sha256": "25bb3198c2397a5df6559f24077eba2100ad449d56f0b833064f55207018adc8",
+      "bytes": 11315
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_gradient_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_gradient_sign.stdout",
+      "sha256": "c10076f4df922b6e54ba51aa540f5e7ec4d752d6dccf3a0072156f200ec33c68",
+      "bytes": 418
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_numerical_gradient_coefficient.py",
+      "sha256": "537b2fb5f59a515097752c2fc954ecaa9cc54d1357f15f63a982517d113d1ffa",
+      "bytes": 11312
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_numerical_gradient_coefficient.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_numerical_gradient_coefficient.stdout",
+      "sha256": "a5b01d594afa20c4ac43c557c699a525b45974552f5a973ad0cb541d22c39f4a",
+      "bytes": 858
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_pointwise_green_sign.py",
+      "sha256": "9ad1c319f8709d5162c18ef4c93cea8dcc5fb27f984810b1b75b2fdbce6a78bd",
+      "bytes": 11315
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_pointwise_green_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_pointwise_green_sign.stdout",
+      "sha256": "7337fe7b1ce8298d8d485190d02e86e83e40d339f86b5674292c966715363460",
+      "bytes": 406
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_ranging_slope.py",
+      "sha256": "87c659cd9965f43772adb161a24aceb60d0e698218f1f5ef5c35caf6b54bd041",
+      "bytes": 11315
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_ranging_slope.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_ranging_slope.stdout",
+      "sha256": "ced4221676e562fcba4a5275c1d159ad3290e825ba6eaa109abc3b9b53d10998",
+      "bytes": 187
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_transformed_drift.py",
+      "sha256": "214da0658037ab531fe6ae516af64a4fe5599c7676e3f3d28d0078bf32aa55a2",
+      "bytes": 11313
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_transformed_drift.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__mutations_v2__wrong_transformed_drift.stdout",
+      "sha256": "f399d463d92a311c93b130ab99e9cfd471cafde5c8f634379fcf3a56ef4a9894",
+      "bytes": 865
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__scalar_physical_curvature_check.py",
+      "sha256": "372ed4ea70e578c8cb91fe5917e7a7dd7bb5eb3c73fea7ecfcb895be764933d9",
+      "bytes": 4694
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__scalar_physical_curvature_check.txt",
+      "sha256": "8010647b91a4ec18bdb69d812bcd98171d9966359ee5bebdfaa9a6b9e93e7d28",
+      "bytes": 3431
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_EXPOSURE_v2__scalar_physical_lapse.py",
+      "sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa",
+      "bytes": 11315
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_SOURCE_SUPPLEMENT_IDENTITY_v1.json",
+      "sha256": "b33fe1d6df1cce2997641df24f7baaf597a3478d78eea9b539e8542b9dbd26ec",
+      "bytes": 3144
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_SOURCE_SUPPLEMENT_v1.md",
+      "sha256": "7db1030d2743e389c39f27fb3eada5179d0dc64584b36b87708b28cc036d478c",
+      "bytes": 5411
+    },
+    {
+      "path": "independent_geometry_v1/INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "308cd3213b37433bc6df76c312c9fd6c102d7caee307c5b07e2eefda324b66e6",
+      "bytes": 11181
+    },
+    {
+      "path": "independent_geometry_v1/INDEPENDENT_FREEZE_v1.json",
+      "sha256": "a16642ae939fd240384e6f76b092e0362641060b0a2840b6ec176158f203f007",
+      "bytes": 1846
+    },
+    {
+      "path": "independent_geometry_v1/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "f0a207cc2c01c22d34596ac980eafe313f2c73a006523c7f42297edb0bafc086",
+      "bytes": 5154
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED_EXPOSURE_v1.json",
+      "sha256": "bbe8f05da5fb99cdd49fa2631a6c69cf22be13bab724396c482b50a0dd819476",
+      "bytes": 1480
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED__CANONICAL_REVIEW_v1.md",
+      "sha256": "a1de35a50d53ee84b0d009250e8d50e9c98864a3e571f264ec1ba2d195b26be2",
+      "bytes": 9282
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED__INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "69c3f165d096d64d9b5b3f0d80afd7c01e1fd1bbdabdf8d15118ee1a171f69a0",
+      "bytes": 11188
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+      "bytes": 14511
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED__scalar_physical_curvature_action.py",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "bytes": 5030
+    },
+    {
+      "path": "independent_geometry_v1/MANUFACTURED_SIGN_CLASS_IDENTITY_v1.json",
+      "sha256": "1261b2457ac6fb615e5c1995fe84fd56eeb3af0516dd021d306a6daa82f5321b",
+      "bytes": 736
+    },
+    {
+      "path": "independent_geometry_v1/MANUFACTURED_SIGN_CLASS_PRECHECK_v1.md",
+      "sha256": "121f9a14c2def9e7e1242b56aadbf9618f652b1fb02adfd604808ff119ab677f",
+      "bytes": 2696
+    },
+    {
+      "path": "independent_geometry_v1/MANUFACTURED_SIGN_CLASS_RESULTS_v1.json",
+      "sha256": "fc1c4d777a69188e5722a74343d1559e19ba9649c91712fe477ae9eb46e44614",
+      "bytes": 2137
+    },
+    {
+      "path": "independent_geometry_v1/POSTEXPOSURE_ANALYTIC_RESULTS_v1.json",
+      "sha256": "888c3b71f2a0c5cc84d78f2fb550f48ffd0c8268e2e13171996ca59a75141720",
+      "bytes": 4047
+    },
+    {
+      "path": "independent_geometry_v1/V3_V4_SOURCE_DIFF_v1.diff",
+      "sha256": "ee4542bfacf4365199a4c786c88af09627442e668270e3ff631932d29edbcccd",
+      "bytes": 3499
+    },
+    {
+      "path": "independent_geometry_v1/WORKING_CANONICAL_SOURCE_DIFF_v1.diff",
+      "sha256": "7a689744cc2d2c208e54151b4d8c9f189f10e7f43c009084c6d6a2ce3a84a240",
+      "bytes": 1427
+    },
+    {
+      "path": "independent_geometry_v1/canonical_correspondence_controls_v1.py",
+      "sha256": "250615762f65db714f78082d093935e0a8c88608e497fe8feb47e775ea4b2765",
+      "bytes": 8436
+    },
+    {
+      "path": "independent_geometry_v1/canonical_envelope_binding_v1.py",
+      "sha256": "e10bd676dd8a67a14f1f42e1111090e35d93f70c289eca9ffc37f4f06c2b1855",
+      "bytes": 5765
+    },
+    {
+      "path": "independent_geometry_v1/final_binding_v2.py",
+      "sha256": "a43a7575ab9eb2b061f61f69ddbc386786f9369689545052f7a0a611eca7505d",
+      "bytes": 7124
+    },
+    {
+      "path": "independent_geometry_v1/final_binding_v3.py",
+      "sha256": "a9ccb1fd07e354ac2c8951d357cbc08e5e747597cc92922311bf257d7ad3c1a3",
+      "bytes": 7063
+    },
+    {
+      "path": "independent_geometry_v1/independent_controls_v1.py",
+      "sha256": "d2c0fe72520d132b713165543c079ce6d25f268873e1d67236941221c88f3651",
+      "bytes": 6424
+    },
+    {
+      "path": "independent_geometry_v1/manufactured_sign_class_controls_v1.py",
+      "sha256": "431a2d614807eaa004dcf98fe1b2ef622a51b2b7aa481390fae2273f543657b6",
+      "bytes": 2325
+    },
+    {
+      "path": "independent_geometry_v1/postexposure_analytic_controls_v1.py",
+      "sha256": "114344f392e951ce59da3e14d82973fb772cd8fe6ca6888ee25110e9cc62d88f",
+      "bytes": 4585
+    },
+    {
+      "path": "independent_observation_v1/DERIVATION_v1.md",
+      "sha256": "c800c8fb3da5840e66c41e3904260be847467abf5b5ea9b0e9b96003ab1bc327",
+      "bytes": 13944
+    },
+    {
+      "path": "independent_observation_v1/EXPOSURE_SCOPE_v1.md",
+      "sha256": "5213d3c70be344002e1d110d0b7d4230b240e092c42c82bf9439da6607c2889d",
+      "bytes": 1511
+    },
+    {
+      "path": "independent_observation_v1/FINAL_IDENTITY_CHECK_v1.json",
+      "sha256": "4662e162a1b998b6e276bb54c9be55d44eb651fc31e24e941e0c574f22e2053f",
+      "bytes": 29871
+    },
+    {
+      "path": "independent_observation_v1/FINAL_IDENTITY_CHECK_v1.py",
+      "sha256": "9db6348ed59a74fd486dac5aa13b895cb124afa805979671fedaadbb799200a6",
+      "bytes": 11021
+    },
+    {
+      "path": "independent_observation_v1/FINAL_NOTE_CONFIRMATION_v1.md",
+      "sha256": "02f9700c436f862b529432606d79bd7ef6ffd815e550f1b485b5f5b2a8da660d",
+      "bytes": 3267
+    },
+    {
+      "path": "independent_observation_v1/FINAL_SOURCE_CLOSURE_v1.md",
+      "sha256": "8100695b71237bca506085807aa55bbcf9ae16b199f19b8d2883aff7b3b104ac",
+      "bytes": 4779
+    },
+    {
+      "path": "independent_observation_v1/FINAL_SOURCE_DELTA_v1.diff",
+      "sha256": "72f4f17a4a1983f152b7db21712c2bb9dce94a26ebb2d7f92cfc86c8aa4e1dc5",
+      "bytes": 2706
+    },
+    {
+      "path": "independent_observation_v1/FINAL_SOURCE_FINDING_v1.md",
+      "sha256": "b2c810e1c4ab51bba48fc92bde561c86d3f4e216df66563dccd07ce818891e7a",
+      "bytes": 1420
+    },
+    {
+      "path": "independent_observation_v1/FINAL_SOURCE_FREEZE_v1.json",
+      "sha256": "387c4a70bfdf0eb743e310bf67f0daf1815736446c798c1d3c1aa52af1de8bb1",
+      "bytes": 8065
+    },
+    {
+      "path": "independent_observation_v1/FINAL_SOURCE_RECEIPT_v1.json",
+      "sha256": "2216867cb7c976d20221a6d4af465ffee7657c93331e61c69f9fa7d6140e4c42",
+      "bytes": 21173
+    },
+    {
+      "path": "independent_observation_v1/INDEPENDENT_FREEZE_v1.json",
+      "sha256": "ebad6c80f5217230e066a7a3a3ebbe42660318ac97afce226daf5caf84c3ba23",
+      "bytes": 2250
+    },
+    {
+      "path": "independent_observation_v1/M17_PREMISE_SNAPSHOT_v1.md",
+      "sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+      "bytes": 14511
+    },
+    {
+      "path": "independent_observation_v1/POST_EXPOSURE_FREEZE_v1.json",
+      "sha256": "90d68a57cc411c1074040c99bf48b8b54035d7123ea401e071d6b72cc0d1be5b",
+      "bytes": 5119
+    },
+    {
+      "path": "independent_observation_v1/POST_EXPOSURE_RECEIPT_v1.json",
+      "sha256": "9a26be9719e5819ff467caeafd7b7e45a80975316ad9c84f146a17dfb33e325b",
+      "bytes": 12067
+    },
+    {
+      "path": "independent_observation_v1/POST_EXPOSURE_REPORT_v1.md",
+      "sha256": "800260ac6243faef1f77d903018b67ffa2b559915002a791af307e223e2b54da",
+      "bytes": 7712
+    },
+    {
+      "path": "independent_observation_v1/POST_EXPOSURE_SOURCE_v1__NUMERICAL_REPAIR_v1.json",
+      "sha256": "59c310e5e8efb187430d4e2b5b10f8592d3d4be37c1f0c268c8f36b01da7f32d",
+      "bytes": 862
+    },
+    {
+      "path": "independent_observation_v1/POST_EXPOSURE_SOURCE_v1__PROTOCOL_v3.json",
+      "sha256": "73b286f8963a969b8a4e40eb5410b79ff83aa5702fedfae83405d385e5575ae9",
+      "bytes": 1516
+    },
+    {
+      "path": "independent_observation_v1/POST_EXPOSURE_SOURCE_v1__WORKING_v2.md",
+      "sha256": "92d5f254b652c176fa3ee668ccc2c55ad84ed9c0700ca0345dbdb8ff2faba7f8",
+      "bytes": 5544
+    },
+    {
+      "path": "independent_observation_v1/REPORT_v1.md",
+      "sha256": "09d2c9561408c78b4d0764b128e3bf2c9d6adc070836aea5d282ffd76c3814d6",
+      "bytes": 4944
+    },
+    {
+      "path": "independent_observation_v1/SOURCE_RECEIPT_v1.json",
+      "sha256": "b15277dad0d92fa1af3d6ff86b25147e7651955f88992bea702364cbd4e4fcdd",
+      "bytes": 38130
+    },
+    {
+      "path": "independent_observation_v1/WITNESS_ARITHMETIC_v1.json",
+      "sha256": "50bdf2806e31c6cc053ccbf24a32af3705222145c3224826e87f8738a746668d",
+      "bytes": 1526
+    },
+    {
+      "path": "independent_observation_v1/WITNESS_ARITHMETIC_v1.py",
+      "sha256": "75ff2f97219ff9e8c2b6871ca11dd560aa151ae54d677f25872f3f73599182b6",
+      "bytes": 1805
+    },
+    {
+      "path": "mutations_v1/PROTOCOL_v1.json",
+      "sha256": "1410ea240bb354c836488629c085ba86fce07c89a8d788409cea17d49ef214ab",
+      "bytes": 2851
+    },
+    {
+      "path": "mutations_v1/RESULTS_v1.json",
+      "sha256": "83b476bf3df224612d641700d201ba061a8261a73a676dd3b33cf3d6dda78078",
+      "bytes": 8539
+    },
+    {
+      "path": "mutations_v1/missing_global_lapse_threshold.py",
+      "sha256": "7d5acee227738feb11dc8f342837ea669ca4e1c8f8f1626eadd328789568e653",
+      "bytes": 9892
+    },
+    {
+      "path": "mutations_v1/missing_global_lapse_threshold.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/missing_global_lapse_threshold.stdout",
+      "sha256": "37597f9e1ea0fc283add98fb19c63a124a799496476badfe07e131cdecc29608",
+      "bytes": 61
+    },
+    {
+      "path": "mutations_v1/missing_lapse_curvature_factor.py",
+      "sha256": "27d739493efe4feca5b90754bea7e6eb83a17a4e3400c68c379578253bd6b572",
+      "bytes": 9910
+    },
+    {
+      "path": "mutations_v1/missing_lapse_curvature_factor.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/missing_lapse_curvature_factor.stdout",
+      "sha256": "a4b1c8de6f88c852bd7dd8851c46d5edde188288cfb363d93622e8ef91819e89",
+      "bytes": 405
+    },
+    {
+      "path": "mutations_v1/wrong_global_green_denominator.py",
+      "sha256": "c70dcb12a064f34fdc76851f4a8724192285d94780a70f14c3467e0b499a4145",
+      "bytes": 9910
+    },
+    {
+      "path": "mutations_v1/wrong_global_green_denominator.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/wrong_global_green_denominator.stdout",
+      "sha256": "50f9087f4f3477b3c34ae8d30779c54cb3fbb33dc1acddc9b7c10eaacc23c974",
+      "bytes": 292
+    },
+    {
+      "path": "mutations_v1/wrong_gradient_sign.py",
+      "sha256": "41231ea342ad2829b8e1e130a6eb12357ca43063223b2aa6a00b521eb47c210d",
+      "bytes": 9910
+    },
+    {
+      "path": "mutations_v1/wrong_gradient_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/wrong_gradient_sign.stdout",
+      "sha256": "7c393ce7681ac1bd57c59c9163a12bbfb6db1a7618cd7df04679eb16e86f7537",
+      "bytes": 418
+    },
+    {
+      "path": "mutations_v1/wrong_numerical_gradient_coefficient.py",
+      "sha256": "8ca5987bdc578dffaed369742c3052b19b8cdae88558ad5ddf4aa4d787f5c7a4",
+      "bytes": 9907
+    },
+    {
+      "path": "mutations_v1/wrong_numerical_gradient_coefficient.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/wrong_numerical_gradient_coefficient.stdout",
+      "sha256": "c1b0978acf1b321f90fd2be6669ef80064bab279c277539256804848ba343b22",
+      "bytes": 858
+    },
+    {
+      "path": "mutations_v1/wrong_pointwise_green_sign.py",
+      "sha256": "6801df83b302b4d0640fee2a6d02ec815240418c9c8bb3163d0ec90ba7003605",
+      "bytes": 9910
+    },
+    {
+      "path": "mutations_v1/wrong_pointwise_green_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/wrong_pointwise_green_sign.stdout",
+      "sha256": "ac51842b68838fb9f856dca6da17e57d8553b192fd5839dcde5975aa28a3efba",
+      "bytes": 251
+    },
+    {
+      "path": "mutations_v1/wrong_ranging_slope.py",
+      "sha256": "97d846f86fd057aaf930e8feca6f20398b7fd02ae9f21dfd145be21f1f9bda65",
+      "bytes": 9910
+    },
+    {
+      "path": "mutations_v1/wrong_ranging_slope.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/wrong_ranging_slope.stdout",
+      "sha256": "f49b67694846b0d8d5623a9dbed47892fc55d478893bbbe5ccf861a2668bef95",
+      "bytes": 187
+    },
+    {
+      "path": "mutations_v1/wrong_transformed_drift.py",
+      "sha256": "86e0ed7d48a30944d421edaae9c5216a5f5242851db51fafc57166cd7173205c",
+      "bytes": 9908
+    },
+    {
+      "path": "mutations_v1/wrong_transformed_drift.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/wrong_transformed_drift.stdout",
+      "sha256": "e79f23477247041d7860ed5bcfb91f6d0b7be470d04a82eafa758b544f4b0b58",
+      "bytes": 865
+    },
+    {
+      "path": "mutations_v2/PROTOCOL_v1.json",
+      "sha256": "fef7944ed0ec03a719c6c9a6c0b5ff3efde1cbead0282c461db5bf83f2ee5eff",
+      "bytes": 2760
+    },
+    {
+      "path": "mutations_v2/RESULTS_v1.json",
+      "sha256": "f37442b4575b6663caf029a2f2e2e70eb6c2bd7b53a4034f5380c1109d611017",
+      "bytes": 9170
+    },
+    {
+      "path": "mutations_v2/missing_global_lapse_threshold.py",
+      "sha256": "814367f66a14be194e591d3566d5f93db326ddc99177c54fabd8d3cde11b0d36",
+      "bytes": 11292
+    },
+    {
+      "path": "mutations_v2/missing_global_lapse_threshold.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/missing_global_lapse_threshold.stdout",
+      "sha256": "f3fc9a6f864f6e36223e9d987608231362b6ddaca675f1fcd8838bdf0e540bfe",
+      "bytes": 213
+    },
+    {
+      "path": "mutations_v2/missing_lapse_curvature_factor.py",
+      "sha256": "30782125dcdf7f4aae5c83078fd17b8d3daa1668812dcc7b9794aba94434c18c",
+      "bytes": 11315
+    },
+    {
+      "path": "mutations_v2/missing_lapse_curvature_factor.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/missing_lapse_curvature_factor.stdout",
+      "sha256": "ffe29d99a1299ba6ddff6bd72df1743022e59d5a6ce12e84711c4e36f3b6d4fc",
+      "bytes": 571
+    },
+    {
+      "path": "mutations_v2/wrong_global_green_denominator.py",
+      "sha256": "716b066ffe7c544e872c7eb3649f287e83ab2b2a0145eda232b91d152558cef9",
+      "bytes": 11315
+    },
+    {
+      "path": "mutations_v2/wrong_global_green_denominator.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/wrong_global_green_denominator.stdout",
+      "sha256": "4b674800b232a320c20962b946aef2f27af844f2152f18a5323facb9fc040c70",
+      "bytes": 292
+    },
+    {
+      "path": "mutations_v2/wrong_gradient_sign.py",
+      "sha256": "25bb3198c2397a5df6559f24077eba2100ad449d56f0b833064f55207018adc8",
+      "bytes": 11315
+    },
+    {
+      "path": "mutations_v2/wrong_gradient_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/wrong_gradient_sign.stdout",
+      "sha256": "c10076f4df922b6e54ba51aa540f5e7ec4d752d6dccf3a0072156f200ec33c68",
+      "bytes": 418
+    },
+    {
+      "path": "mutations_v2/wrong_numerical_gradient_coefficient.py",
+      "sha256": "537b2fb5f59a515097752c2fc954ecaa9cc54d1357f15f63a982517d113d1ffa",
+      "bytes": 11312
+    },
+    {
+      "path": "mutations_v2/wrong_numerical_gradient_coefficient.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/wrong_numerical_gradient_coefficient.stdout",
+      "sha256": "a5b01d594afa20c4ac43c557c699a525b45974552f5a973ad0cb541d22c39f4a",
+      "bytes": 858
+    },
+    {
+      "path": "mutations_v2/wrong_pointwise_green_sign.py",
+      "sha256": "9ad1c319f8709d5162c18ef4c93cea8dcc5fb27f984810b1b75b2fdbce6a78bd",
+      "bytes": 11315
+    },
+    {
+      "path": "mutations_v2/wrong_pointwise_green_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/wrong_pointwise_green_sign.stdout",
+      "sha256": "7337fe7b1ce8298d8d485190d02e86e83e40d339f86b5674292c966715363460",
+      "bytes": 406
+    },
+    {
+      "path": "mutations_v2/wrong_ranging_slope.py",
+      "sha256": "87c659cd9965f43772adb161a24aceb60d0e698218f1f5ef5c35caf6b54bd041",
+      "bytes": 11315
+    },
+    {
+      "path": "mutations_v2/wrong_ranging_slope.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/wrong_ranging_slope.stdout",
+      "sha256": "ced4221676e562fcba4a5275c1d159ad3290e825ba6eaa109abc3b9b53d10998",
+      "bytes": 187
+    },
+    {
+      "path": "mutations_v2/wrong_transformed_drift.py",
+      "sha256": "214da0658037ab531fe6ae516af64a4fe5599c7676e3f3d28d0078bf32aa55a2",
+      "bytes": 11313
+    },
+    {
+      "path": "mutations_v2/wrong_transformed_drift.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v2/wrong_transformed_drift.stdout",
+      "sha256": "f399d463d92a311c93b130ab99e9cfd471cafde5c8f634379fcf3a56ef4a9894",
+      "bytes": 865
+    }
+  ],
+  "plain_files": [
+    "README.md",
+    "NO_GO_DISCIPLINE_CHECKLIST.md",
+    "CONFORMANCE_v1.md",
+    "TRACE_GATE.md",
+    "CLAIM_STATUS_CERTIFICATE.md",
+    "ASSUMPTIONS_AND_IMPORTS.md",
+    "REVIEW_RECORD_v1.md",
+    "REPO_CONTEXT_v1.json",
+    "PRIOR_SEARCH_v1.json",
+    "CANONICAL_BINDING_v2.json",
+    "CANONICAL_EXECUTION_v2.json",
+    "CHECKPOINT_v3.json",
+    "SOURCE_PREFLIGHT_v1.json",
+    "PROTOCOL_v3.json",
+    "NUMERICAL_REPAIR_v1.json",
+    "CHECKLIST_WORDING_REPAIR_v1.json",
+    "independent_geometry_v1/INDEPENDENT_DERIVATION_v1.md",
+    "independent_geometry_v1/INDEPENDENT_FREEZE_v1.json",
+    "independent_geometry_v1/AUTHOR_CORRESPONDENCE_v1.md",
+    "independent_geometry_v1/CANONICAL_REVIEW_v1.md",
+    "independent_geometry_v1/MANUFACTURED_SIGN_CLASS_PRECHECK_v1.md",
+    "independent_geometry_v1/FINAL_SOURCE_SUPPLEMENT_v1.md",
+    "independent_observation_v1/DERIVATION_v1.md",
+    "independent_observation_v1/REPORT_v1.md",
+    "independent_observation_v1/POST_EXPOSURE_REPORT_v1.md",
+    "independent_observation_v1/FINAL_SOURCE_CLOSURE_v1.md",
+    "independent_observation_v1/FINAL_SOURCE_RECEIPT_v1.json"
+  ],
+  "omitted": [],
+  "recovery": "Read gzip JSON members, verify SHA256 of UTF-8 content, and restore into a new directory; reject absolute/parent-traversal paths and overwrites."
+}

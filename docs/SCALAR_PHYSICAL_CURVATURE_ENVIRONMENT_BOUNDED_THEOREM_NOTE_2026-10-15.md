@@ -209,7 +209,9 @@ Pmax <= (Nmax/Nmin) Rmax L^2/(12 Bmin).                (8)
 These are sufficient metric error envelopes, not quantities inferred from
 unreported data. A constant rescaling of N changes neither (7) nor P, so no
 absolute clock normalization is required. Actual metric reconstruction, second
-derivative control, staticity, radius calibration and boundary information remain.
+derivative control for this four-curvature form, staticity, radius calibration
+and boundary information remain. The alternative below removes the direct
+lapse-Laplacian input under an explicit different geometric envelope.
 
 For an ideal continuum of stationary physical clocks and vacuum radial ranging,
 let f(r)=N(r)/N(r0) be the lapse ratio inferred from the reciprocal received/emitted
@@ -245,6 +247,154 @@ P(r)=ln[B(r)/B(L)],  Pmax=-ln(1-Hv^2 L^2).
 Thus the full positive vacuum curvature is retained. Schwarzschild has R_J=0;
 a vacuum exterior still has its inner boundary, which cannot be dropped when
 applying a finite-domain comparison.
+
+## An alternative bound without the lapse Laplacian
+
+The same action admits a comparison using the intrinsic spatial curvature R3
+and the first lapse gradient. This removes a derivative from one input channel;
+it does not infer an actual metric or its errors from finite measurements.
+All regularity, static-field, positive-metric and complete-boundary hypotheses
+above remain. Write ell=ln N, so R_J=R3-2 Delta_h N/N. Direct differentiation for
+an arbitrary constant power p gives
+
+```text
+N^-p [L_J(N^p w)+lambda R_J N^p w/2]
+ = L_(N^(2p+1)) w + {lambda R3/2+(p-lambda) Delta_h ell
+                       +[p(p+1)-lambda]|grad ell|_h^2}w,
+L_(N^q)=Delta_h+q grad_h ell.dot grad_h.
+```
+
+Canceling the lapse Laplacian fixes p=lambda within this power family. It is an
+algebraic change of variable, not an environmental selector. Put z=N^lambda w
+and denote the noncurvature source in (3) by S_z. Then
+
+```text
+L_tilde w + C w = N^-lambda S_z,
+L_tilde=L_(N^(2lambda+1)),
+C=lambda R3/2+lambda^2 |grad ell|_h^2.                (11)
+```
+
+The positive gradient-square term in C is retained. Let m=min_closure N>0 and
+wB=zB/m^lambda. The complete boundary obeys w<=wB; where w>wB, z>zB>=1 and
+S_z>=0. Using only the minimum lapse on the boundary would not establish this
+interior sign. For v=(w-wB)_+, weak positive-part comparison gives
+
+```text
+-L_tilde v <= C_+(v+wB), v|boundary=0.
+```
+
+Define -L_tilde P_t=C_+, P_t|boundary=0 and eta_t=sup P_t. The positive inverse
+of -L_tilde yields v(X)<=(sup v+wB)P_t(X). Finite fields and eta_t<1 imply
+
+```text
+z(X)<=zB [N(X)/m]^lambda [1+P_t(X)/(1-eta_t)],
+sup z<=zB (Nmax/Nmin)^lambda/(1-eta_t).              (12)
+```
+
+The ratio and operator are invariant under constant normalization of N. This
+does not establish an inverse-operator positivity theorem for an unchecked
+zeroth-order potential; the inverse used is that of -L_tilde. No existence,
+uniqueness, stability or force bound is inferred. As in (1), eta_t>=1 is
+inconclusive, and no bound uniform near k=1/3 is claimed.
+
+For the regular spherical ball used in (7),
+
+```text
+C=lambda[-B'/r+(1-B)/r^2]+lambda^2 B(ln N)'^2,
+P_t(r)=integral_r^L ds/[N(s)^(2lambda+1)s^2 sqrt(B(s))]
+         integral_0^s dt N(t)^(2lambda+1)t^2 C_+(t)/sqrt(B(t)).
+```
+
+With R=Nmax/Nmin, B>=Bmin>0 and C_+<=Cmax throughout the ball,
+
+```text
+eta_t<=R^(2lambda+1) Cmax L^2/(6Bmin).              (13)
+```
+
+In the outward clock/ranging convention of (10), let A_r=f'/f and G_r=g'/g.
+Then
+
+```text
+C=lambda[2B(A_r+G_r)/r+(1-B)/r^2]+lambda^2 B A_r^2. (14)
+```
+
+There is no direct f'' term. There is still g'=tau'', independently calibrated
+areal radius, and a spatial-curvature supplier. On an annulus with positive
+radius, simultaneous enclosures for f,g,f',g' give conservative interval
+enclosures for B and C. A whole ball additionally requires a controlled regular
+center: if B=1+b2 r^2+O(r^4), then R3(0)=-6b2. A constant absolute error in B
+does not control (1-B)/r^2 or B'/r there. The combined central metric coefficient
+or an equivalent whole-ball curvature bound must be supplied; eliminating the
+standalone lapse Laplacian does not eliminate this central information.
+
+Finite clock/range samples do not themselves certify the needed function and
+derivative envelopes. Estimating f' from noisy values may still require higher
+regularity; choosing a smooth interpolation is not its error certificate.
+If an instrument coordinate xi is used, f'=F_xi/r_xi and
+g'=tau_xixi/r_xi^2-tau_xi r_xixi/r_xi^3, so derivative calibration of areal
+radius matters too. Exterior links do not supply the interior or an omitted
+inner boundary. Metric staticity does not establish static scalar fields.
+
+This criterion is not uniformly sharper than (1). On a static Schwarzschild
+annulus R_J=R3=0 but the lapse gradient is nonzero, so (11) has a positive source
+where (1) has none. This comparison of geometries is not a full candidate
+positive-Hv solution. Where both criteria apply, either admitted ceiling can
+be used in the monotone A and q consequences in (5).
+
+## A strict separation of the two sufficient criteria
+
+The benefit of removing the lapse Laplacian can be demonstrated analytically.
+On the unit ball prescribe B=1, k=1/10, lambda=117/49, epsilon=3/20 and
+
+```text
+K=2pi n,  ell_n(r)=epsilon[cos(Kr)-1]/K, n=1,2,... .
+```
+
+Each metric is smooth at its center, N(0)=N(1)=1 and
+Nmin=exp[-epsilon/(pi n)]. The first lapse gradient is uniformly bounded while
+the second derivative grows with n. These are supplied kinematic metrics,
+not solutions of the full Einstein/matter system. Equation (11) gives
+C=lambda^2 epsilon^2 sin^2(Kr), hence
+
+```text
+eta_t<=exp[(2lambda+1)epsilon/(pi n)]lambda^2 epsilon^2/6.
+```
+
+Use pi>3 and exp(x)<=1/(1-x) for 0<=x<1. With
+x=(2lambda+1)epsilon/3 and y=lambda epsilon/3, both less than one,
+
+```text
+Ebar=lambda^2 epsilon^2/[6(1-x)]=41067/1366120<1,
+sup z/zB <= 1/[(1-y)(1-Ebar)]
+          =1338797600/1143520739 < 6/5.              (15)
+```
+
+This is uniform over positive integer n for every scalar solution satisfying
+the stated premises, if such a solution exists. It is not inferred from a
+finite numerical sample or a fit.
+
+For the original criterion, c=(R_J)_+/2 is
+
+```text
+c=[epsilon K cos(Kr)-epsilon^2 sin^2(Kr)
+                                      +2epsilon sin(Kr)/r]_+.
+```
+
+Since m<=N<=1, its Green integral obeys
+P(0)>=m integral_0^1 r(1-r)c(r)dr. On [1/4,3/4], r(1-r)>=3/16 and
+c>=epsilon K(cos Kr)_+-(epsilon^2+8epsilon). For even n the interval contains
+n/2 full periods, giving integral_(1/4)^(3/4)(cos Kr)_+ dr=1/(2pi). Thus
+
+```text
+lambda P(0)>=lambda exp[-epsilon/(pi n)]
+                          *3[2epsilon n-epsilon^2-8epsilon]/32.
+```
+
+At n=64 the bracket is positive. Replacing its exponential factor by the lower
+bound 1-epsilon/(3n) gives 3228248439/802816000>4. The original eta<1 test is
+therefore inconclusive there, while (15) is finite. This is a strict separation
+of sufficient comparison tests on supplied metrics, not a failure of (1), a
+physical counterexample, or a claim that the metric family is realized.
 
 ## Primary-source comparison
 
@@ -300,7 +450,36 @@ it is preserved as an unpromoted route. The physical-metric route above is the
 substantive change. Independent review and final source-bound execution are
 recorded separately in the campaign evidence packet.
 
+The extension (11)-(15) adds 67 author controls to the original 82. Four new
+prescribed-metric scalar profiles use n=1,4,16,64, Hv=0.005, nu=0.0001 and zB=1;
+the transformed and original Green integrals, original scalar-equation residual
+and independently integrated flux are checked. Initial output had 60 passes and
+three failures: two unresolved coarse/refined Green comparisons and exhaustion
+of the n=64 scalar node budget. The preserved repair splits the positive-part
+source at its bracketed roots and increases the node budget to120000, without
+changing tolerances or scientific thresholds. The n=64 solve uses71878 nodes.
+These convergence diagnostics do not certify continuum numerical error.
+
+Seven of eight initial deliberate formula errors failed the controls. Removing
+the global lapse-range factor from the pointwise ceiling survived those four
+profiles. That coverage gap and the original outputs are preserved. A separate
+manufactured sign-class example now challenges that factor: on the unit flat
+ball take lnN=epsilon(1-r^2), w=1, z=N^lambda, and
+S_z=4lambda^2 epsilon^2 r^2 N^lambda>=0. This solves the comparison equation
+with its prescribed source and zB=1; it does not solve the full candidate
+potential equation. At epsilon=1/100 the center value is first order above1,
+whereas the Green correction is second order. The omitted-factor formula
+therefore fails this independent fixture. The actual pointwise implementation
+is shared by that fixture and all four numerical profiles. Four added checks
+establish the original PDE identity, strict separation, implementation and
+constant-lapse normalization. No synthetic profile or observation was refitted.
+
+The [extension scope checklist](../.claude/science/physics-loops/observations-backward-24h-20261014/lapse_derivative_probe/NO_GO_DISCIPLINE_CHECKLIST.md)
+distinguishes the comparison-criterion failure from a theory-wide no-go. The
+original proof, numerical failure, repaired run and independently frozen
+derivation/source assessments are preserved separately.
+
 The complete physical action, actual initial/ambient state, absolute scales,
-calibrated metric with curvature errors, static domain, and observational
+calibrated metric with the applicable curvature/gradient errors, static domain, and observational
 identification of q or Fgrav remain open suppliers. No environmental solution,
 new independent empirical test, formal audit grade or TOE is asserted.

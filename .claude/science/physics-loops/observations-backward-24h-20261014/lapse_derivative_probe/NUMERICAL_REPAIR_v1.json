@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-15T19:11:46.984739+00:00",
+  "source_before": "6fd46b885fb65fb259fb5234f47db4cfb5451a0f9b8251c2884cecefb18e1f35",
+  "source_after": "33686d6f73a0ab913ddf04f6af568b5f3cba572596706461d1e246b71984eaad",
+  "failed_checks": [
+    {
+      "name": "n16: refined Green agreement",
+      "passed": false,
+      "max_difference": 3.543287974139275e-08
+    },
+    {
+      "name": "n64: refined Green agreement",
+      "passed": false,
+      "max_difference": 1.2303462317397873e-05
+    },
+    {
+      "name": "n64: scalar BVP converged",
+      "passed": false,
+      "status": 1,
+      "nodes": 26026
+    }
+  ],
+  "counts": {
+    "passed": 60,
+    "failed": 3
+  },
+  "status": "Numerical control failures retained; diagnostic change not yet run",
+  "repair": "Source-root splitting plus increased BVP nodes; no tolerance or test threshold relaxation."
+}

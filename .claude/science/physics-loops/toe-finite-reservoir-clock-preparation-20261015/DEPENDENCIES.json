@@ -1,0 +1,29 @@
+{
+  "direct_mathematical_parents": [
+    "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+  ],
+  "direct_claim_ids": [
+    "finite_local_clock_word_windows_bounded_theorem_note_2026-10-15"
+  ],
+  "clauses": [
+    {
+      "alias": "local_clock_finite_reservoir_candidate/sources/boundary_derivation.md",
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "start": 62134,
+      "end": 80595,
+      "role": "Direct complete positive boundary-window clause: literal apparatus, geometry, full-space gap/norm, right entry and time-indexed word comparison."
+    }
+  ],
+  "expected_new_nodes": 1,
+  "expected_edges": 1,
+  "graph_executed": false,
+  "markov_reset_action_imported": false,
+  "method_context_only": [
+    "standard full SWAP, Duhamel and trace continuity",
+    "archived reset and static-reader exposure",
+    "prior publication procedure sources"
+  ],
+  "ancestry_is_not_dependency": true
+}

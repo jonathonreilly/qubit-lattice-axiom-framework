@@ -1,0 +1,104 @@
+{
+  "actual_binding_raw": "{\n  \"binding_complete\": true,\n  \"stack_role\": \"ancestry_only_reset_action_milestone\",\n  \"feature_branch\": \"physics-loop/toe-finite-reservoir-clock-preparation-20261015\",\n  \"base_branch\": \"physics-loop/toe-installed-clock-reset-20261015\",\n  \"base_head\": \"294d3e762232aeec754e94b0b2da5b011f682b44\",\n  \"base_tree\": \"d62bd9d4a9c2c3235d9cecc04f21a24af5197f41\",\n  \"parent_pr\": 9598,\n  \"main\": \"92574ffe95192cc0724a27e1acad28e42d325115\",\n  \"instructions\": \"3a4b2c66a1ead7a1c48b4359627e968f681e3c39\",\n  \"parent_publication\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_execution_20261015/PUBLICATION.json\",\n    \"bytes\": 1876,\n    \"sha256\": \"057145c9b497454ed190eee8163eed321ba741d67cff8592760cc13259c6fc96\"\n  },\n  \"parent_query_receipt\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_parent_1016/EXECUTION.json\",\n    \"bytes\": 1222,\n    \"sha256\": \"0f62636b70e606153fb810d49eb6c9a57540a902020b9bdd7dfd52071c7dc9b7\"\n  },\n  \"existing_query_receipt\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_existing_1016/EXECUTION.json\",\n    \"bytes\": 1308,\n    \"sha256\": \"72507a5f9acc0e6e606a03abbf5ecc64525191c54f0d11802328232d844f3609\"\n  },\n  \"feature_creation\": null,\n  \"publication_pr\": null\n}\n",
+  "actual_binding_pin": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/RESERVOIR_ACTUAL_BINDING.json",
+    "bytes": 1411,
+    "sha256": "44a3bc39752ddeddc95beae62e41583e8f9461f8ef1e82e7307d41ebde5a0287"
+  },
+  "parent_publication_raw": "{\n  \"utc\": \"2026-10-15T10:07:38.225829+00:00\",\n  \"baseRefName\": \"physics-loop/toe-static-historical-reader-20261015\",\n  \"headRefName\": \"physics-loop/toe-installed-clock-reset-20261015\",\n  \"headRefOid\": \"294d3e762232aeec754e94b0b2da5b011f682b44\",\n  \"isDraft\": false,\n  \"number\": 9598,\n  \"state\": \"OPEN\",\n  \"url\": \"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9598\",\n  \"tree\": \"d62bd9d4a9c2c3235d9cecc04f21a24af5197f41\",\n  \"base_head\": \"88b08187750d0ffa795f166c1d94cd2245b048c9\",\n  \"commit\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_execution_20261015/COMMIT.json\",\n    \"bytes\": 599,\n    \"sha256\": \"cadcfcb7ab87a1c9ceaaa80e59f7e6b6391e52cda99eee4578645c18d72f3091\"\n  },\n  \"body\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_execution_20261015/PR_BODY.md\",\n    \"bytes\": 2637,\n    \"sha256\": \"8d5c5d2bbbe7026a55bfe71eaefd928c88354dfae41dd209d65068da98757e03\"\n  },\n  \"note\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_LOCAL_CLOCK_RESET_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md\",\n    \"bytes\": 49324,\n    \"sha256\": \"fa4f38f2097a30b141bae9ae6115ec81e95102c61b94d509536ac81bba8cf0b8\"\n  },\n  \"primary\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/installed_local_clock_reset_preparation_2026_10_15.py\",\n    \"bytes\": 27338,\n    \"sha256\": \"c8291993f190397fe67cbcbea158d4b9a51ec4f4f4b7444365ee5f3b86fc42ee\"\n  },\n  \"science_merged\": false,\n  \"main_pushed\": false,\n  \"retained_audit_applied\": false,\n  \"editable_prompt_files_changed\": [],\n  \"attachment_status\": \"Calling root chat must attach the actual created PR URL with the app tool.\"\n}\n",
+  "feature": {
+    "utc": "2026-10-15T10:16:43.967398+00:00",
+    "branch": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+    "source_head": "294d3e762232aeec754e94b0b2da5b011f682b44",
+    "source_tree": "d62bd9d4a9c2c3235d9cecc04f21a24af5197f41",
+    "actual_binding": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/RESERVOIR_ACTUAL_BINDING.json",
+      "bytes": 1411,
+      "sha256": "44a3bc39752ddeddc95beae62e41583e8f9461f8ef1e82e7307d41ebde5a0287"
+    },
+    "parent_observation": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_parent_1016/EXECUTION.json",
+      "bytes": 1222,
+      "sha256": "0f62636b70e606153fb810d49eb6c9a57540a902020b9bdd7dfd52071c7dc9b7"
+    },
+    "absence_observation": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_existing_1016/EXECUTION.json",
+      "bytes": 1308,
+      "sha256": "72507a5f9acc0e6e606a03abbf5ecc64525191c54f0d11802328232d844f3609"
+    },
+    "science_merged": false
+  },
+  "parent_receipt": {
+    "argv": [
+      "gh",
+      "pr",
+      "view",
+      "9598",
+      "--repo",
+      "jonathonreilly/qubit-lattice-axiom-framework",
+      "--json",
+      "number,state,isDraft,headRefName,headRefOid,baseRefName,url"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+    "start_utc": "2026-10-15T10:12:30.140348+00:00",
+    "end_utc": "2026-10-15T10:12:31.071103+00:00",
+    "elapsed_seconds": 0.9305402496829629,
+    "exit_code": 0,
+    "stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_parent_1016/stdout",
+      "bytes": 316,
+      "sha256": "2dcbe8d47775f6154dc9274cd22dce1727db3f0907b01f487c87fa9d9b8a608b"
+    },
+    "stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_parent_1016/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "child_source_at_launch": null,
+    "recorder": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    }
+  },
+  "parent_stdout": "{\"baseRefName\":\"physics-loop/toe-static-historical-reader-20261015\",\"headRefName\":\"physics-loop/toe-installed-clock-reset-20261015\",\"headRefOid\":\"294d3e762232aeec754e94b0b2da5b011f682b44\",\"isDraft\":false,\"number\":9598,\"state\":\"OPEN\",\"url\":\"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9598\"}\n",
+  "parent_stderr": "",
+  "existing_receipt": {
+    "argv": [
+      "gh",
+      "pr",
+      "list",
+      "--repo",
+      "jonathonreilly/qubit-lattice-axiom-framework",
+      "--head",
+      "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+      "--state",
+      "all",
+      "--json",
+      "number,state,isDraft,headRefName,headRefOid,url"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+    "start_utc": "2026-10-15T10:12:30.140322+00:00",
+    "end_utc": "2026-10-15T10:12:30.994442+00:00",
+    "elapsed_seconds": 0.8539448329247534,
+    "exit_code": 0,
+    "stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_existing_1016/stdout",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_existing_1016/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "child_source_at_launch": null,
+    "recorder": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    }
+  },
+  "existing_stdout": "[]\n",
+  "existing_stderr": ""
+}

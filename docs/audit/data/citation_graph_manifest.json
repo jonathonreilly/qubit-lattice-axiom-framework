@@ -1,6 +1,6 @@
 {
- "edge_count": 16086,
- "node_count": 7128,
+ "edge_count": 16087,
+ "node_count": 7129,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6728,6 +6728,10 @@
   },
   "finite_rate_repeated_record_formation_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "3e766f8a603a",
    "out_degree": 1
   },
   "finite_step_gaussian_gauge_canonical_logarithm_and_coulomb_cost_bounded_theorem_note_2026-09-14": {

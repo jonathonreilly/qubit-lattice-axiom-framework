@@ -1,0 +1,124 @@
+{
+  "attempts": [
+    {
+      "kind": "author",
+      "prefix": "local_clock_finite_reservoir_candidate/runs/capture_01",
+      "receipt": "RECEIPT.json",
+      "scientific": false,
+      "source_at_launch": null,
+      "exit_code": 0,
+      "start_utc": "2026-10-15T07:45:25.911446+00:00",
+      "end_utc": "2026-10-15T07:45:25.984321+00:00"
+    },
+    {
+      "kind": "author",
+      "prefix": "local_clock_finite_reservoir_candidate/runs/finalize_01",
+      "receipt": "RECEIPT.json",
+      "scientific": false,
+      "source_at_launch": null,
+      "exit_code": 0,
+      "start_utc": "2026-10-15T07:59:30.838276+00:00",
+      "end_utc": "2026-10-15T07:59:30.909793+00:00"
+    },
+    {
+      "kind": "author",
+      "prefix": "local_clock_finite_reservoir_candidate/runs/freeze_01",
+      "receipt": "RECEIPT.json",
+      "scientific": false,
+      "source_at_launch": null,
+      "exit_code": 0,
+      "start_utc": "2026-10-15T08:00:20.042275+00:00",
+      "end_utc": "2026-10-15T08:00:20.079700+00:00"
+    },
+    {
+      "kind": "author",
+      "prefix": "local_clock_finite_reservoir_candidate/runs/identity_01",
+      "receipt": "RECEIPT.json",
+      "scientific": false,
+      "source_at_launch": null,
+      "exit_code": 0,
+      "start_utc": "2026-10-15T07:59:31.007768+00:00",
+      "end_utc": "2026-10-15T07:59:31.079394+00:00"
+    },
+    {
+      "kind": "author",
+      "prefix": "local_clock_finite_reservoir_candidate/runs/preseal_01",
+      "receipt": "RECEIPT.json",
+      "scientific": false,
+      "source_at_launch": null,
+      "exit_code": 0,
+      "start_utc": "2026-10-15T07:55:22.328364+00:00",
+      "end_utc": "2026-10-15T07:55:22.401202+00:00"
+    },
+    {
+      "kind": "author",
+      "prefix": "local_clock_finite_reservoir_candidate/runs/selected_control_01",
+      "receipt": "RECEIPT.json",
+      "scientific": true,
+      "source_at_launch": null,
+      "exit_code": 0,
+      "start_utc": "2026-10-15T07:55:27.920498+00:00",
+      "end_utc": "2026-10-15T07:55:27.955795+00:00"
+    },
+    {
+      "kind": "review_metadata",
+      "prefix": "local_clock_finite_reservoir_decisive_check/runs/capture_01",
+      "receipt": "RECEIPT.json",
+      "scientific": false,
+      "source_at_launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_finite_reservoir_decisive_check/capture_sources.py",
+        "bytes": 6570,
+        "sha256": "3074bbc8b14ffef058ea76e1df8c2e8046d32fdadaa6d5b3f5ec11f7663b5334"
+      },
+      "exit_code": 0,
+      "start_utc": "2026-10-15T08:08:51.070409+00:00",
+      "end_utc": "2026-10-15T08:08:51.188137+00:00"
+    },
+    {
+      "kind": "review_metadata",
+      "prefix": "local_clock_finite_reservoir_decisive_check/runs/finalize_01",
+      "receipt": "RECEIPT.json",
+      "scientific": false,
+      "source_at_launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_finite_reservoir_decisive_check/finalize_review.py",
+        "bytes": 12386,
+        "sha256": "4bd25e3afe941142840203da59eef1bb42a306914e7e217400ad4a754ebcd669"
+      },
+      "exit_code": 0,
+      "start_utc": "2026-10-15T08:21:53.071179+00:00",
+      "end_utc": "2026-10-15T08:21:53.219850+00:00"
+    },
+    {
+      "kind": "root_metadata",
+      "prefix": "actual_runs/local_clock_finite_reservoir_root_close",
+      "receipt": "EXECUTION.json",
+      "scientific": false,
+      "source_at_launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_finite_reservoir_root_review/close_sources.py",
+        "bytes": 4134,
+        "sha256": "043c8c9e12273166f9f8f8a2039915b60b6fe2e66fb71bfe292c96d80c4581af"
+      },
+      "exit_code": 0,
+      "start_utc": "2026-10-15T08:36:50.898565+00:00",
+      "end_utc": "2026-10-15T08:36:51.009677+00:00"
+    },
+    {
+      "kind": "root_metadata",
+      "prefix": "actual_runs/local_clock_finite_reservoir_root_seal",
+      "receipt": "EXECUTION.json",
+      "scientific": false,
+      "source_at_launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_finite_reservoir_root_review/seal_root.py",
+        "bytes": 1112,
+        "sha256": "03cd209918a9c4d4050399248bbf72d8c9c2ce0aba24e6b64b3377ece2f5cf9e"
+      },
+      "exit_code": 0,
+      "start_utc": "2026-10-15T08:37:09.310583+00:00",
+      "end_utc": "2026-10-15T08:37:09.348501+00:00"
+    }
+  ],
+  "scientific_attempts": 1,
+  "replayed": false,
+  "review_direct_seal": "local_clock_finite_reservoir_decisive_check/SEAL_INVOCATION.json",
+  "limit": "Author recorder does not pin child at launch; the scientific plan/input/source were separately presealed. No stronger historical attestation is invented."
+}

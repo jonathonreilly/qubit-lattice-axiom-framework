@@ -1,0 +1,143 @@
+{
+  "completed": true,
+  "utc": "2026-10-15T10:16:15.994601+00:00",
+  "review_scope": "Full17 current proposed files (15 Python plus framing and PR body), all8 metadata programs, complete current receipts/streams, source/AST/diff mappings and first-seal erratum read. Reused unchanged accepted26220/root51a16227, separate188275ad and offline73212e5b; full raw body and sole b3 dependency remain exact. Primary checks provenance only; seven proposed controls cannot establish science. All-reference target, consumed pure memory, installed generator, aging, covariances/scalars and physical supply limits preserved. Actual operations remain separate.",
+  "scientific_programs_run": 0,
+  "integration_source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_finite_reservoir_integration_draft/FINAL_FREEZE.json",
+    "bytes": 71792,
+    "sha256": "b586b1c63ee4067bbbcd5f3b6e4d85bd65c27ed3084d2b4df169584a96d9d046"
+  },
+  "actual_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/RESERVOIR_ACTUAL_BINDING.json",
+    "bytes": 1411,
+    "sha256": "44a3bc39752ddeddc95beae62e41583e8f9461f8ef1e82e7307d41ebde5a0287"
+  },
+  "reviewed_files": {
+    "RESERVOIR_FRAMING.md": {
+      "path": "proposals/RESERVOIR_FRAMING.md",
+      "bytes": 14488,
+      "sha256": "f5ce01995405cbc9d5230647d2c0e54326742f94d16f237bd118f017198ca751"
+    },
+    "RESERVOIR_PR_BODY.md": {
+      "path": "proposals/RESERVOIR_PR_BODY.md",
+      "bytes": 1339,
+      "sha256": "0ba2b84f7ec5649e686542941690499bdda06db0fe5550fcb26d2de1753cb21e"
+    },
+    "bind_reservoir_branch.py": {
+      "path": "proposals/bind_reservoir_branch.py",
+      "bytes": 866,
+      "sha256": "a9343c1594226c62df32bd8ec480da02573c4373d98df04cf3ba798cce88016d"
+    },
+    "build_reservoir_source.py": {
+      "path": "proposals/build_reservoir_source.py",
+      "bytes": 6760,
+      "sha256": "86ca2851e2abd6fd779c3a06e77ff5cfeac4b29987942c25b8efcf78282e9371"
+    },
+    "check_reservoir_graph.py": {
+      "path": "proposals/check_reservoir_graph.py",
+      "bytes": 1767,
+      "sha256": "d02668f09241338a8c749d26214b78a0d19d6fae8a36fc4bff6f350a1313db35"
+    },
+    "check_reservoir_primary_mutations.py": {
+      "path": "proposals/check_reservoir_primary_mutations.py",
+      "bytes": 5500,
+      "sha256": "e0b0aaba626ef32be5fe078ec997a8cf6f80b280c8077dffc1d540ce5c633b63"
+    },
+    "common.py": {
+      "path": "proposals/common.py",
+      "bytes": 3127,
+      "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b"
+    },
+    "execute_reservoir_cache.py": {
+      "path": "proposals/execute_reservoir_cache.py",
+      "bytes": 1866,
+      "sha256": "f53ac089654051ef457cba34f19b57c992e62df443dee9f2eaf3525b3e17a30d"
+    },
+    "install_reservoir.py": {
+      "path": "proposals/install_reservoir.py",
+      "bytes": 4341,
+      "sha256": "8df1559fe701ba57ca0c611b79296a68d60b04699917e6d5f5841eb6a9f7534b"
+    },
+    "package_reservoir.py": {
+      "path": "proposals/package_reservoir.py",
+      "bytes": 6273,
+      "sha256": "2293dcd5cd7f2e7d726745c889443766610fee1d1700f0f24e33571eb694b88e"
+    },
+    "prepare_reservoir_root.py": {
+      "path": "proposals/prepare_reservoir_root.py",
+      "bytes": 2074,
+      "sha256": "226915098b018a7448bdf85fe7b8585142d45394d8fd9c076981aae12706883c"
+    },
+    "publish_reservoir.py": {
+      "path": "proposals/publish_reservoir.py",
+      "bytes": 2804,
+      "sha256": "a6467ee758e470117aa3761a2017f9925c5c8fac76fca8780e0b108809d13a22"
+    },
+    "reservoir_common.py": {
+      "path": "proposals/reservoir_common.py",
+      "bytes": 9150,
+      "sha256": "eb3a89a2df9d943eba24849b18ab4852165710569089ce4ff73a6256fd7d6467"
+    },
+    "reservoir_primary.template.py": {
+      "path": "proposals/reservoir_primary.template.py",
+      "bytes": 11050,
+      "sha256": "cbf7c7c83e3b3088db02e626c067c6759bb487c6b95c31ad5ddb67eaaf68e219"
+    },
+    "run_reservoir_graph.py": {
+      "path": "proposals/run_reservoir_graph.py",
+      "bytes": 365,
+      "sha256": "471e3b463b50c508f8c1d64b2a5624c911a5b64a84ee2425d4b8de9b40b2e524"
+    },
+    "verify_reservoir_publication.py": {
+      "path": "proposals/verify_reservoir_publication.py",
+      "bytes": 9573,
+      "sha256": "5fbb98c9433938264547e2562f3ee6a0f0cc51d4da49eb7fcddc0441c2468036"
+    },
+    "write_reservoir_publication_text.py": {
+      "path": "proposals/write_reservoir_publication_text.py",
+      "bytes": 6504,
+      "sha256": "52de95d56330d280cd235ae1486cc992e397f216648088373c2bf75416aac839"
+    }
+  },
+  "repository_procedures": {
+    "scripts/runner_cache.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/runner_cache.py",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    "docs/audit/scripts/run_citation_graph_build.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/run_citation_graph_build.py",
+      "bytes": 6826,
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    "docs/audit/scripts/write_citation_graph_manifest.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+      "bytes": 2049,
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    "scripts/vocab_lint.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/vocab_lint.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+    },
+    "docs/audit/scripts/check_changed_audit_evidence.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/check_changed_audit_evidence.py",
+      "bytes": 7903,
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a"
+    }
+  },
+  "actual_source_record_paths": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/reservoir_integration_root_review",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_reservoir_offline_root_review",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_root_close",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_root_close_retry",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/SOURCE_SNAPSHOT.json"
+  ],
+  "warning": "Root fills only after complete source review and actual parent/branch/ref facts. Nulls fail closed; no future success is asserted.",
+  "source_closure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/reservoir_integration_root_review/SOURCE_CLOSURE.json",
+    "bytes": 19511,
+    "sha256": "72598fb030ed7d7be28778b9f6e153a4f7d4df5d5be7351ec00be4a2240425b7"
+  }
+}

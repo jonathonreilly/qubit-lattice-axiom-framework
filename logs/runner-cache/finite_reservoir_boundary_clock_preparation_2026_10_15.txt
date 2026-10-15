@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/finite_reservoir_boundary_clock_preparation_2026_10_15.py
+runner_sha256: 1656f09364520673460d0e676a42b6067a1b55a9d72b32b20dcca285c5e94811
+input_fingerprint_sha256: fe47b6946cb370be479372cf9393d838795d3798a6b2ea664a02297223f2259e
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"archived_receipts": {"historical_attempts": 10, "historical_scientific_attempts": 1, "new_mathematical_executions": 0}, "complete_proofs": 1, "dated_source_binding_complete": true, "decoded_originals": 160, "limits": "No archived code runs; no proof, physical supply, future publication or retained status is certified.", "publication_binding_complete": false, "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Exact bytes, complete parent/body intervals and historical source/stream provenance only."}
+per_element: arbitrary old/clock/passive-reference input; full transferred reservoir correlations retained
+per_site: distinct supplied ordinary-neighbor memory sites and positive full-SWAP pulses; old K stays installed
+per_mode: all initial clock sectors; one-entry preparation has its separate prepared-vector residual
+per_block: full scalar, covariance, work, calibration and consumed pure-memory costs remain charged
+lattice_wide: finite supplied driven endpoint; no Markov law, native preparation, reusable reset or classical reader
+
+----- stderr -----
+

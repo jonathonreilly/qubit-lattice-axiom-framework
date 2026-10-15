@@ -1,0 +1,11 @@
+# Source roles
+
+The accepted reservoir proof 26220ec9 is the sole new mathematical body in the proposed note. Root acceptance 51a16227 and separate report 188275ad are dispositions/evidence, not extra theorem assumptions. The body is kept byte-identically, including its historical status and planned-check prose. It has no Markdown citation targets to render; no raw-body transformation is proposed.
+
+The complete b3b6cb24 boundary argument is the sole directly imported theorem clause. Its current canonical container is the window note bcefbb19, unique interval [62134,80595). This supplies the actual positive boundary apparatus, layout, full-space gap/norm and right-entry moments, and the optional later word comparison. The complete copied body is archived. Other windows in that container are not substituted. Cell/word dependencies of b3 remain transitive, not new graph edges manufactured from ancestry.
+
+Candidate reset source 95fbc8dd, its source pins/freeze, review context files and the historical window integration freeze remain preserved as source/exposure context. They do not import Markov damping, an action lower bound, static reading, native initialization or autonomous control. A context freeze is not recursively expanded into unrelated evidence. Standard SWAP, Duhamel, unitary covariance and trace continuity are used with the proof's explicit finite hypotheses.
+
+The five complete preserved groups have respectively 50, 76, 9, 4 and 4 files. The review's copied candidate remains a distinct alias group while content deduplication avoids duplicate storage. The original candidate freeze has 45 members plus itself and its four producing-run files. The review freeze has 75 members plus itself; root freeze has eight plus itself. All extras are explicit and checked. The two root outer groups retain their matching executed source, actual streams and receipt.
+
+The eight readable procedure originals under procedural/ are taken from the earlier frozen driven-reader source draft. They are implementation context only. Full unified diffs, complete function/module maps and current sources make every replacement reviewable. No theorem in that reader package is imported. Instruction captures are provenance, not science assumptions. No method, historical branch or source disposition is an audit verdict.

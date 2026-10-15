@@ -19,3 +19,6 @@ to two temporal shapes. This partially closes a measurement-state choice only.
 It neither supplies the scalar field state nor the calibrated real-ray error
 budget. Next test a candidate-consistent signature or attack the separate
 finite-time environment approximation using observed source scales.
+
+
+The finite-window scalar-history unit is upstream_support for the same measured-gravity/initial-history goal. It derives a specified averaged free-field force bound without selecting a profile or compact initial support, together with conformal force and energy normalization. The next consumer is a candidate-consistent residual budget for actual finite tracking observations. Actual energy and clock/path/forcing calibration remain open; no scalar theory has been fitted or validated.

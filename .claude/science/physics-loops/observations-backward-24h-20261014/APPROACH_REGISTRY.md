@@ -18,3 +18,23 @@ bounds and an unqualified unbiasedness label. This is constructive elimination
 of a measurement input. Further work must supply the actual phase/ray/clock
 operator and a candidate signature, or move upstream to finite-time environment
 and field history; it must not replace those with selected values.
+
+## Finite-time source and field history
+
+The root author derived the massive step response and differentiated its exact
+kernel to obtain a force bound. A finite signed spacetime variation measure
+then gives a source-history extension. A conserved compact pulse separates
+total energy from scalar trace dynamics and reduces the exterior source using
+the field operator. Direct radial causal integrals corroborate the reduction.
+
+A separate smooth backward-data family tests the attempted inference from
+finite energy to negligible initial history. The positive route remains open:
+specified compact data admit explicit post-front field/gradient bounds, and
+a quantitative energy plus support bound supplies their norm inputs jointly.
+Neither this route nor the original energy control derives actual localization
+from observations. Next priority is identifying a measurable history or
+readout condition and bounding curved/background response, not treating a
+chosen support radius or energy as a derived selector.
+
+
+The temporal-functional route now gives a positive alternative to localization: adjacent finite velocity averages generate a triangular acceleration weight; Fourier energy duality supplies a fixed-point bound, and nonstationary phase supplies the moving-path extension. The actual conformal force combination and physical normalization were derived directly. A shared-mode mutation survivor exposed inadequate random saturation coverage; the repaired aligned attainment control tests the same bound function. Next derive a measurable residual/energy constraint and check the real transfer operator, rather than choosing an initial state.

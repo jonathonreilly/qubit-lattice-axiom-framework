@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "kind": "reviewer_owned_five_science_source_dispositions",
+  "created_at": "2026-10-15T01:53:53.045823+00:00",
+  "reviewer_session": "/root/localized_history_check",
+  "scope": "Five canonical science postimages only. This is a focused independent source review and identity mapping, not a formal audit verdict or a full publication-delta disposition.",
+  "identity_semantics": "Original and final refer to the same final reviewed canonical postimages. They do not refer to earlier working drafts or original constituent base-file bytes. Any later publication map must retain the actual frozen constituent endpoints and cover its complete delta separately.",
+  "science_rerun_performed": false,
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_REVIEW_v1.md",
+    "sha256": "d5f4153396c6d5740601cbf325dcbf3caec8c6f09a748a9d34871858bb7872ae"
+  },
+  "mechanical_evidence": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_FINAL_BINDING_v1.json",
+    "sha256": "85118a487115a652b5d8560431117952478a8f7ee42cf27ee54cc39f6aec084e"
+  },
+  "receipt_schema_reference": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+    "sha256": "cab78dd0ad2113e32d3ee26b337ac95e16366424eef106999872001c83079644"
+  },
+  "original_dispositions": [
+    {
+      "original_path": "docs/SCALAR_FINITE_WINDOW_INITIAL_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original_sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+      "disposition": "included",
+      "recovery": "Preserve the exact reviewed frozen postimage at this path and hash. No source recovery, deletion or transformation is requested by this focused source review.",
+      "final_path": "docs/SCALAR_FINITE_WINDOW_INITIAL_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "final_sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+      "rationale": "The complete note and every subsequent affected change were read. Conditional energy, temporal/moving-path and force/normalization conclusions match the stated derivations; no initial-state selection, physical calibration or exhaustive negative theorem is inferred."
+    },
+    {
+      "original_path": "scripts/scalar_finite_window_history_check.py",
+      "original_sha256": "dc2732e431c4c7427361004681136bc5fb89dbcff7c3c2bbaff58ac65b859b40",
+      "disposition": "included",
+      "recovery": "Preserve the exact reviewed frozen postimage at this path and hash. No source recovery, deletion or transformation is requested by this focused source review.",
+      "final_path": "scripts/scalar_finite_window_history_check.py",
+      "final_sha256": "dc2732e431c4c7427361004681136bc5fb89dbcff7c3c2bbaff58ac65b859b40",
+      "rationale": "The complete primary runner was read. Its direct helper imports, declared source closure and source/product hashes match the fresh final cache. It contains no actual observation or ancestor-result input; execution is author evidence, not an independent reimplementation."
+    },
+    {
+      "original_path": "scripts/scalar_temporal_history_controls.py",
+      "original_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "disposition": "included",
+      "recovery": "Preserve the exact reviewed frozen postimage at this path and hash. No source recovery, deletion or transformation is requested by this focused source review.",
+      "final_path": "scripts/scalar_temporal_history_controls.py",
+      "final_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "rationale": "The complete helper was read and its scientific AST matched the independently reviewed working implementation after explicit wrapper changes. Earlier separate temporal proof and 58 independent controls remain applicable; no actual count-to-force mapping is established."
+    },
+    {
+      "original_path": "scripts/scalar_moving_history_controls.py",
+      "original_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "disposition": "included",
+      "recovery": "Preserve the exact reviewed frozen postimage at this path and hash. No source recovery, deletion or transformation is requested by this focused source review.",
+      "final_path": "scripts/scalar_moving_history_controls.py",
+      "final_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "rationale": "The complete helper was read and its scientific AST matched the independently reviewed working implementation after explicit wrapper changes. Earlier separate moving-path proof and 61 independent controls remain applicable under the stipulated speed gap and regularity."
+    },
+    {
+      "original_path": "scripts/scalar_force_energy_controls.py",
+      "original_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "disposition": "included",
+      "recovery": "Preserve the exact reviewed frozen postimage at this path and hash. No source recovery, deletion or transformation is requested by this focused source review.",
+      "final_path": "scripts/scalar_force_energy_controls.py",
+      "final_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "rationale": "The complete helper and affected additions were read. Eight added angular comparisons and the shared mode-energy attainment repair were checked. Conditional action/energy algebra is consistent; final mutation evidence preserves the original survivor and verifies its repair. No physical energy budget is measured."
+    }
+  ]
+}

@@ -1,0 +1,1339 @@
+{
+  "reviewer": "/root/force_energy_bridge_check",
+  "author_implementation_opened": false,
+  "source_script_sha256": "0ecb1de938963e26fbd8c6165c726ba35cc5e8122b6940f37184b2206d8badfc",
+  "elapsed_seconds": 0.3390587088651955,
+  "checks": [
+    {
+      "name": "symbolic_velocity_hessian_inverse",
+      "passed": true
+    },
+    {
+      "name": "symbolic_exact_momentum_equation",
+      "passed": true
+    },
+    {
+      "name": "EL_linear_system_0",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "momentum_central_difference_0",
+      "passed": true,
+      "max_abs_error": 2.1480955902930532e-11
+    },
+    {
+      "name": "EL_linear_system_1",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "EL_linear_system_2",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "EL_linear_system_3",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_4",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "EL_linear_system_5",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_6",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_7",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "momentum_central_difference_7",
+      "passed": true,
+      "max_abs_error": 7.467537699312743e-11
+    },
+    {
+      "name": "EL_linear_system_8",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_9",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "EL_linear_system_10",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "EL_linear_system_11",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_12",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_13",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "EL_linear_system_14",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "EL_linear_system_15",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "momentum_central_difference_15",
+      "passed": true,
+      "max_abs_error": 6.108025196738254e-11
+    },
+    {
+      "name": "EL_linear_system_16",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_17",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "EL_linear_system_18",
+      "passed": true,
+      "max_abs_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "EL_linear_system_19",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "EL_linear_system_20",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "EL_linear_system_21",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "EL_linear_system_22",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "EL_linear_system_23",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "momentum_central_difference_23",
+      "passed": true,
+      "max_abs_error": 8.039702237283564e-11
+    },
+    {
+      "name": "partial_time_term_not_material_derivative",
+      "passed": true
+    },
+    {
+      "name": "coefficient_budget_v",
+      "passed": true,
+      "maximum": 0.28014505171428605,
+      "bound": 0.2815408496115617
+    },
+    {
+      "name": "coefficient_budget_a",
+      "passed": true,
+      "maximum": 0.10948724580747067,
+      "bound": 0.11289141907160173
+    },
+    {
+      "name": "coefficient_budget_j",
+      "passed": true,
+      "maximum": 0.164781683220557,
+      "bound": 0.16535187185212025
+    },
+    {
+      "name": "coefficient_budget_n",
+      "passed": true,
+      "maximum": 1.0,
+      "bound": 1.0
+    },
+    {
+      "name": "coefficient_budget_nd",
+      "passed": true,
+      "maximum": 0.7211102550927979,
+      "bound": 1.0
+    },
+    {
+      "name": "coefficient_budget_ndd",
+      "passed": true,
+      "maximum": 0.52,
+      "bound": 1.0
+    },
+    {
+      "name": "coefficient_budget_P",
+      "passed": true,
+      "maximum": 0.9489612290926598,
+      "bound": 1.0
+    },
+    {
+      "name": "coefficient_budget_Pd",
+      "passed": true,
+      "maximum": 0.6645166208852962,
+      "bound": 1.0635670920785472
+    },
+    {
+      "name": "coefficient_budget_Pdd",
+      "passed": true,
+      "maximum": 0.5139504043315246,
+      "bound": 1.2457297421293105
+    },
+    {
+      "name": "coefficient_budget_R",
+      "passed": true,
+      "maximum": 0.09179400277942003,
+      "bound": 0.2815408496115617
+    },
+    {
+      "name": "coefficient_budget_Rd",
+      "passed": true,
+      "maximum": 0.15314781946041867,
+      "bound": 0.412329001794294
+    },
+    {
+      "name": "coefficient_budget_Rdd",
+      "passed": true,
+      "maximum": 0.16464536440641708,
+      "bound": 0.7562108784428063
+    },
+    {
+      "name": "window_normalized",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_0",
+      "passed": true,
+      "max_abs_error": 1.6242872000801806e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_0",
+      "passed": true,
+      "max_abs_error": 8.845388854693245e-18
+    },
+    {
+      "name": "halfwave_dual_norm_0",
+      "passed": true,
+      "max_abs_error": 6.098637220230962e-20
+    },
+    {
+      "name": "nonstationary_amplitude_bound_0",
+      "passed": true,
+      "measured": 0.0033325443179529216,
+      "envelope": 0.48534394462227015,
+      "mass": 0.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_1",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_1",
+      "passed": true,
+      "max_abs_error": 3.7367087251761353e-17
+    },
+    {
+      "name": "halfwave_dual_norm_1",
+      "passed": true,
+      "max_abs_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "nonstationary_amplitude_bound_1",
+      "passed": true,
+      "measured": 0.26376976048721007,
+      "envelope": 1.2815408496115617,
+      "mass": 0.4
+    },
+    {
+      "name": "cosine_sine_halfwave_q_2",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_2",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18
+    },
+    {
+      "name": "halfwave_dual_norm_2",
+      "passed": true,
+      "max_abs_error": 3.469446951953614e-18
+    },
+    {
+      "name": "nonstationary_amplitude_bound_2",
+      "passed": true,
+      "measured": 0.12420844502116543,
+      "envelope": 1.2815408496115617,
+      "mass": 2.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_3",
+      "passed": true,
+      "max_abs_error": 4.228388472693467e-18
+    },
+    {
+      "name": "cosine_sine_halfwave_p_3",
+      "passed": true,
+      "max_abs_error": 2.6658203305342977e-18
+    },
+    {
+      "name": "halfwave_dual_norm_3",
+      "passed": true,
+      "max_abs_error": 8.470329472543003e-21
+    },
+    {
+      "name": "nonstationary_amplitude_bound_3",
+      "passed": true,
+      "measured": 0.0022674450585283734,
+      "envelope": 0.5812000199172584,
+      "mass": 8.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_4",
+      "passed": true,
+      "max_abs_error": 1.4061228602377132e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_4",
+      "passed": true,
+      "max_abs_error": 1.3755701568871856e-17
+    },
+    {
+      "name": "halfwave_dual_norm_4",
+      "passed": true,
+      "max_abs_error": 4.6798570335800094e-20
+    },
+    {
+      "name": "nonstationary_amplitude_bound_4",
+      "passed": true,
+      "measured": 0.0016716031333221862,
+      "envelope": 0.15146204410401964,
+      "mass": 0.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_5",
+      "passed": true,
+      "max_abs_error": 1.1107649934270853e-16
+    },
+    {
+      "name": "cosine_sine_halfwave_p_5",
+      "passed": true,
+      "max_abs_error": 1.3985787785349405e-17
+    },
+    {
+      "name": "halfwave_dual_norm_5",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "nonstationary_amplitude_bound_5",
+      "passed": true,
+      "measured": 0.605867475243989,
+      "envelope": 1.2815408496115617,
+      "mass": 0.4
+    },
+    {
+      "name": "cosine_sine_halfwave_q_6",
+      "passed": true,
+      "max_abs_error": 2.1334277879468753e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_6",
+      "passed": true,
+      "max_abs_error": 6.254634441385502e-18
+    },
+    {
+      "name": "halfwave_dual_norm_6",
+      "passed": true,
+      "max_abs_error": 2.168404344971009e-19
+    },
+    {
+      "name": "nonstationary_amplitude_bound_6",
+      "passed": true,
+      "measured": 0.01486684879857772,
+      "envelope": 0.6104558908511741,
+      "mass": 2.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_7",
+      "passed": true,
+      "max_abs_error": 1.3017652077642148e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_7",
+      "passed": true,
+      "max_abs_error": 4.4491937323348064e-18
+    },
+    {
+      "name": "halfwave_dual_norm_7",
+      "passed": true,
+      "max_abs_error": 6.776263578034403e-20
+    },
+    {
+      "name": "nonstationary_amplitude_bound_7",
+      "passed": true,
+      "measured": 0.004797717346278253,
+      "envelope": 0.5738007749359367,
+      "mass": 8.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_8",
+      "passed": true,
+      "max_abs_error": 2.964296775167217e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_8",
+      "passed": true,
+      "max_abs_error": 9.813077866773595e-18
+    },
+    {
+      "name": "halfwave_dual_norm_8",
+      "passed": true,
+      "max_abs_error": 3.469446951953614e-18
+    },
+    {
+      "name": "nonstationary_amplitude_bound_8",
+      "passed": true,
+      "measured": 0.1334595768929884,
+      "envelope": 1.2815408496115617,
+      "mass": 0.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_9",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_9",
+      "passed": true,
+      "max_abs_error": 1.214306433183765e-17
+    },
+    {
+      "name": "halfwave_dual_norm_9",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "nonstationary_amplitude_bound_9",
+      "passed": true,
+      "measured": 0.39569016012929736,
+      "envelope": 1.2815408496115617,
+      "mass": 0.4
+    },
+    {
+      "name": "cosine_sine_halfwave_q_10",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "cosine_sine_halfwave_p_10",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18
+    },
+    {
+      "name": "halfwave_dual_norm_10",
+      "passed": true,
+      "max_abs_error": 1.734723475976807e-18
+    },
+    {
+      "name": "nonstationary_amplitude_bound_10",
+      "passed": true,
+      "measured": 0.1152718149645216,
+      "envelope": 1.2815408496115617,
+      "mass": 2.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_11",
+      "passed": true,
+      "max_abs_error": 1.8114943738431596e-18
+    },
+    {
+      "name": "cosine_sine_halfwave_p_11",
+      "passed": true,
+      "max_abs_error": 9.21970364186597e-19
+    },
+    {
+      "name": "halfwave_dual_norm_11",
+      "passed": true,
+      "max_abs_error": 5.929230630780102e-21
+    },
+    {
+      "name": "nonstationary_amplitude_bound_11",
+      "passed": true,
+      "measured": 0.0017006429801925984,
+      "envelope": 0.63065756816552,
+      "mass": 8.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_12",
+      "passed": true,
+      "max_abs_error": 3.529906531158615e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_12",
+      "passed": true,
+      "max_abs_error": 3.1986720415755645e-17
+    },
+    {
+      "name": "halfwave_dual_norm_12",
+      "passed": true,
+      "max_abs_error": 1.4094628242311558e-18
+    },
+    {
+      "name": "nonstationary_amplitude_bound_12",
+      "passed": true,
+      "measured": 0.0357531886452615,
+      "envelope": 0.7207876480710821,
+      "mass": 0.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_13",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_13",
+      "passed": true,
+      "max_abs_error": 1.3904866443919908e-17
+    },
+    {
+      "name": "halfwave_dual_norm_13",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18
+    },
+    {
+      "name": "nonstationary_amplitude_bound_13",
+      "passed": true,
+      "measured": 0.28269852820638525,
+      "envelope": 1.2815408496115617,
+      "mass": 0.4
+    },
+    {
+      "name": "cosine_sine_halfwave_q_14",
+      "passed": true,
+      "max_abs_error": 1.3877787807814457e-17
+    },
+    {
+      "name": "cosine_sine_halfwave_p_14",
+      "passed": true,
+      "max_abs_error": 7.152448122690996e-18
+    },
+    {
+      "name": "halfwave_dual_norm_14",
+      "passed": true,
+      "max_abs_error": 3.469446951953614e-18
+    },
+    {
+      "name": "nonstationary_amplitude_bound_14",
+      "passed": true,
+      "measured": 0.10977388256242113,
+      "envelope": 1.2815408496115617,
+      "mass": 2.0
+    },
+    {
+      "name": "cosine_sine_halfwave_q_15",
+      "passed": true,
+      "max_abs_error": 4.670885906470169e-18
+    },
+    {
+      "name": "cosine_sine_halfwave_p_15",
+      "passed": true,
+      "max_abs_error": 4.358438792651351e-18
+    },
+    {
+      "name": "halfwave_dual_norm_15",
+      "passed": true,
+      "max_abs_error": 6.776263578034403e-21
+    },
+    {
+      "name": "nonstationary_amplitude_bound_15",
+      "passed": true,
+      "measured": 0.005277761029212345,
+      "envelope": 0.49032071608467853,
+      "mass": 8.0
+    },
+    {
+      "name": "radial_envelope_1.0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "radial_envelope_0.2",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "radial_envelope_2.3",
+      "passed": true,
+      "max_abs_error": 1.0842021724855044e-19
+    },
+    {
+      "name": "parallel_angular_primitive_0.0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "perpendicular_angular_primitive_0.0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "constant_speed_uniform_envelope_0.0",
+      "passed": true,
+      "parallel": 0.021596437084184187,
+      "perpendicular": 0.021596437084184187,
+      "envelope": 0.10998975088387303
+    },
+    {
+      "name": "parallel_angular_primitive_0.02",
+      "passed": true,
+      "max_abs_error": 2.7111646261346323e-13
+    },
+    {
+      "name": "perpendicular_angular_primitive_0.02",
+      "passed": true,
+      "max_abs_error": 1.794120407794253e-13
+    },
+    {
+      "name": "constant_speed_uniform_envelope_0.02",
+      "passed": true,
+      "parallel": 0.021584343869343707,
+      "perpendicular": 0.021589525829355406,
+      "envelope": 0.12158341424447032
+    },
+    {
+      "name": "parallel_angular_primitive_0.2",
+      "passed": true,
+      "max_abs_error": 2.55351295663786e-15
+    },
+    {
+      "name": "perpendicular_angular_primitive_0.2",
+      "passed": true,
+      "max_abs_error": 1.5543122344752192e-15
+    },
+    {
+      "name": "constant_speed_uniform_envelope_0.2",
+      "passed": true,
+      "parallel": 0.020395041998325668,
+      "perpendicular": 0.02090134840206238,
+      "envelope": 0.3093461743608928
+    },
+    {
+      "name": "parallel_angular_primitive_0.55",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "perpendicular_angular_primitive_0.55",
+      "passed": true,
+      "max_abs_error": 2.6645352591003757e-15
+    },
+    {
+      "name": "constant_speed_uniform_envelope_0.55",
+      "passed": true,
+      "parallel": 0.012955111576613075,
+      "perpendicular": 0.01611771651102116,
+      "envelope": 2.899866957459589
+    },
+    {
+      "name": "missing_partial_time_witness_0.55",
+      "passed": true,
+      "full": 0.012955111576613075,
+      "missing_time": 0.03255387823051022
+    },
+    {
+      "name": "parallel_angular_primitive_0.85",
+      "passed": true,
+      "max_abs_error": 6.661338147750939e-16
+    },
+    {
+      "name": "perpendicular_angular_primitive_0.85",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "constant_speed_uniform_envelope_0.85",
+      "passed": true,
+      "parallel": 0.0032996055494556764,
+      "perpendicular": 0.007339714161563831,
+      "envelope": 111.53775478520159
+    },
+    {
+      "name": "missing_partial_time_witness_0.85",
+      "passed": true,
+      "full": 0.0032996055494556764,
+      "missing_time": 0.05010988292942491
+    },
+    {
+      "name": "parallel_angular_primitive_0.98",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "perpendicular_angular_primitive_0.98",
+      "passed": true,
+      "max_abs_error": 6.394884621840902e-14
+    },
+    {
+      "name": "constant_speed_uniform_envelope_0.98",
+      "passed": true,
+      "parallel": 0.00014222825601152843,
+      "perpendicular": 0.0012117142347947791,
+      "envelope": 53900.47742064183
+    },
+    {
+      "name": "missing_partial_time_witness_0.98",
+      "passed": true,
+      "full": 0.00014222825601152843,
+      "missing_time": 0.06236588278296316
+    },
+    {
+      "name": "mathematical_energy_frame_0",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "physical_energy_frame_0",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "functional_norm_frame_0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "acceleration_bound_frame_0",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "gravity_substitution_identity_0",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "joint_mode_budget_0",
+      "passed": true,
+      "actual": 1.216451105509646,
+      "bound": 3.6453821886857285
+    },
+    {
+      "name": "mathematical_energy_frame_1",
+      "passed": true,
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "name": "physical_energy_frame_1",
+      "passed": true,
+      "max_abs_error": 9.094947017729282e-13
+    },
+    {
+      "name": "functional_norm_frame_1",
+      "passed": true,
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "name": "acceleration_bound_frame_1",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "gravity_substitution_identity_1",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "joint_mode_budget_1",
+      "passed": true,
+      "actual": 0.8420307816868118,
+      "bound": 2.9007287085737237
+    },
+    {
+      "name": "mathematical_energy_frame_2",
+      "passed": true,
+      "max_abs_error": 3.410605131648481e-13
+    },
+    {
+      "name": "physical_energy_frame_2",
+      "passed": true,
+      "max_abs_error": 1.7053025658242404e-13
+    },
+    {
+      "name": "functional_norm_frame_2",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "acceleration_bound_frame_2",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "gravity_substitution_identity_2",
+      "passed": true,
+      "max_abs_error": 2.842170943040401e-14
+    },
+    {
+      "name": "joint_mode_budget_2",
+      "passed": true,
+      "actual": 0.7923877245998084,
+      "bound": 3.251700234880993
+    },
+    {
+      "name": "mathematical_energy_frame_3",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "physical_energy_frame_3",
+      "passed": true,
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "name": "functional_norm_frame_3",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "acceleration_bound_frame_3",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "gravity_substitution_identity_3",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "joint_mode_budget_3",
+      "passed": true,
+      "actual": 1.223463032819637,
+      "bound": 4.00614017375182
+    },
+    {
+      "name": "mathematical_energy_frame_4",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "physical_energy_frame_4",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "functional_norm_frame_4",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "acceleration_bound_frame_4",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "gravity_substitution_identity_4",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "joint_mode_budget_4",
+      "passed": true,
+      "actual": 0.9945458193873941,
+      "bound": 4.480389291400989
+    },
+    {
+      "name": "mathematical_energy_frame_5",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    {
+      "name": "physical_energy_frame_5",
+      "passed": true,
+      "max_abs_error": 6.661338147750939e-16
+    },
+    {
+      "name": "functional_norm_frame_5",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "acceleration_bound_frame_5",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "gravity_substitution_identity_5",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "joint_mode_budget_5",
+      "passed": true,
+      "actual": 1.1455774038534556,
+      "bound": 5.817453067940089
+    },
+    {
+      "name": "mathematical_energy_frame_6",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "physical_energy_frame_6",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "functional_norm_frame_6",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "acceleration_bound_frame_6",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "gravity_substitution_identity_6",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "joint_mode_budget_6",
+      "passed": true,
+      "actual": 1.1665001688725982,
+      "bound": 5.637763894987982
+    },
+    {
+      "name": "mathematical_energy_frame_7",
+      "passed": true,
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "name": "physical_energy_frame_7",
+      "passed": true,
+      "max_abs_error": 1.3642420526593924e-12
+    },
+    {
+      "name": "functional_norm_frame_7",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "acceleration_bound_frame_7",
+      "passed": true,
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "name": "gravity_substitution_identity_7",
+      "passed": true,
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "name": "joint_mode_budget_7",
+      "passed": true,
+      "actual": 4.452653866963878,
+      "bound": 10.418771985772812
+    },
+    {
+      "name": "mathematical_energy_frame_8",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "physical_energy_frame_8",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "functional_norm_frame_8",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "acceleration_bound_frame_8",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "gravity_substitution_identity_8",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "joint_mode_budget_8",
+      "passed": true,
+      "actual": 2.364538677120546,
+      "bound": 3.254073065695587
+    },
+    {
+      "name": "mathematical_energy_frame_9",
+      "passed": true,
+      "max_abs_error": 2.2737367544323206e-13
+    },
+    {
+      "name": "physical_energy_frame_9",
+      "passed": true,
+      "max_abs_error": 7.105427357601002e-15
+    },
+    {
+      "name": "functional_norm_frame_9",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "acceleration_bound_frame_9",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "gravity_substitution_identity_9",
+      "passed": true,
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "name": "joint_mode_budget_9",
+      "passed": true,
+      "actual": 1.4393565845470628,
+      "bound": 5.128954104806721
+    },
+    {
+      "name": "mathematical_energy_frame_10",
+      "passed": true,
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "name": "physical_energy_frame_10",
+      "passed": true,
+      "max_abs_error": 1.7053025658242404e-13
+    },
+    {
+      "name": "functional_norm_frame_10",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "acceleration_bound_frame_10",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "gravity_substitution_identity_10",
+      "passed": true,
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "name": "joint_mode_budget_10",
+      "passed": true,
+      "actual": 2.4943299785746995,
+      "bound": 6.415846149397724
+    },
+    {
+      "name": "mathematical_energy_frame_11",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "physical_energy_frame_11",
+      "passed": true,
+      "max_abs_error": 4.547473508864641e-13
+    },
+    {
+      "name": "functional_norm_frame_11",
+      "passed": true,
+      "max_abs_error": 1.4210854715202004e-14
+    },
+    {
+      "name": "acceleration_bound_frame_11",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "gravity_substitution_identity_11",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "joint_mode_budget_11",
+      "passed": true,
+      "actual": 1.796560129048372,
+      "bound": 4.642475140802806
+    },
+    {
+      "name": "canonical_coupling_norm_0",
+      "passed": true,
+      "max_abs_error": 5.329070518200751e-15
+    },
+    {
+      "name": "mass_matrix_positive_0",
+      "passed": true,
+      "minimum": 0.24057991687860697
+    },
+    {
+      "name": "canonical_energy_0",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-15
+    },
+    {
+      "name": "canonical_coupling_norm_1",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "mass_matrix_positive_1",
+      "passed": true,
+      "minimum": 0.010357259103175464
+    },
+    {
+      "name": "canonical_energy_1",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "canonical_coupling_norm_2",
+      "passed": true,
+      "max_abs_error": 1.3322676295501878e-15
+    },
+    {
+      "name": "mass_matrix_positive_2",
+      "passed": true,
+      "minimum": 0.0046502081956444315
+    },
+    {
+      "name": "canonical_energy_2",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "canonical_coupling_norm_3",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "mass_matrix_positive_3",
+      "passed": true,
+      "minimum": 0.007731151914872674
+    },
+    {
+      "name": "canonical_energy_3",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-15
+    },
+    {
+      "name": "canonical_coupling_norm_4",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "mass_matrix_positive_4",
+      "passed": true,
+      "minimum": 0.03301656764175107
+    },
+    {
+      "name": "canonical_energy_4",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "canonical_coupling_norm_5",
+      "passed": true,
+      "max_abs_error": 6.039613253960852e-14
+    },
+    {
+      "name": "mass_matrix_positive_5",
+      "passed": true,
+      "minimum": 0.0002182713813175817
+    },
+    {
+      "name": "canonical_energy_5",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "canonical_coupling_norm_6",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "mass_matrix_positive_6",
+      "passed": true,
+      "minimum": 0.02696192890561257
+    },
+    {
+      "name": "canonical_energy_6",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "canonical_coupling_norm_7",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-15
+    },
+    {
+      "name": "mass_matrix_positive_7",
+      "passed": true,
+      "minimum": 0.03545384649768152
+    },
+    {
+      "name": "canonical_energy_7",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.0001_-30.0",
+      "passed": true,
+      "coupling": 0.25004999244169
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.0001_-0.8",
+      "passed": true,
+      "coupling": 0.00022246284536509762
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.0001_0.3",
+      "passed": true,
+      "coupling": 7.408728004322689e-05
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.0001_8.0",
+      "passed": true,
+      "coupling": 3.353284783687018e-08
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.03_-30.0",
+      "passed": true,
+      "coupling": 0.26432499999991727
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.03_-0.8",
+      "passed": true,
+      "coupling": 0.05965084532715297
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.03_0.3",
+      "passed": true,
+      "coupling": 0.022721487503679243
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.03_8.0",
+      "passed": true,
+      "coupling": 9.055580791536957e-06
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.12_-30.0",
+      "passed": true,
+      "coupling": 0.29919999999999747
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.12_-0.8",
+      "passed": true,
+      "coupling": 0.1844184129119303
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.12_0.3",
+      "passed": true,
+      "coupling": 0.09735041334693442
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.12_8.0",
+      "passed": true,
+      "coupling": 3.168623902753404e-05
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3_-30.0",
+      "passed": true,
+      "coupling": 0.33249999999999996
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3_-0.8",
+      "passed": true,
+      "coupling": 0.3187734321568248
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3_0.3",
+      "passed": true,
+      "coupling": 0.28834936497467856
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3_8.0",
+      "passed": true,
+      "coupling": 0.0003018647810683727
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3333332333333333_-30.0",
+      "passed": true,
+      "coupling": 0.3333333333333259
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3333332333333333_-0.8",
+      "passed": true,
+      "coupling": 0.3333332937606817
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3333332333333333_0.3",
+      "passed": true,
+      "coupling": 0.33333319239697684
+    },
+    {
+      "name": "candidate_coupling_ceiling_0.3333332333333333_8.0",
+      "passed": true,
+      "coupling": 0.33231218864930046
+    },
+    {
+      "name": "positive_geometry_G_bound_0.0",
+      "passed": true
+    },
+    {
+      "name": "positive_geometry_G_bound_0.03",
+      "passed": true
+    },
+    {
+      "name": "positive_geometry_G_bound_0.2",
+      "passed": true
+    },
+    {
+      "name": "signed_geometry_not_covered",
+      "passed": true
+    },
+    {
+      "name": "negative_mass_squared_excluded",
+      "passed": true
+    }
+  ],
+  "passed": 253,
+  "failed": 0,
+  "scope": "Independent synthetic mathematical controls; not empirical tests or audit verdicts."
+}

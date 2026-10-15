@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-15T01:44:28.935659+00:00",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "queries": [
+    {
+      "query": "triangular acceleration",
+      "returncode": 1,
+      "matches": []
+    },
+    {
+      "query": "C_mu[w]",
+      "returncode": 1,
+      "matches": []
+    },
+    {
+      "query": "partial_s ell",
+      "returncode": 1,
+      "matches": []
+    },
+    {
+      "query": "finite-window density inverse",
+      "returncode": 0,
+      "matches": [
+        "origin/main:docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md:216:## Finite-window density inverse without prescribed initial amplitudes"
+      ]
+    }
+  ],
+  "scope": "Targeted current-main search plus opened boundaries of dynamical inverse, curved response, time-averaged energy transfer and energy-distribution notes. Not a global literature novelty survey."
+}

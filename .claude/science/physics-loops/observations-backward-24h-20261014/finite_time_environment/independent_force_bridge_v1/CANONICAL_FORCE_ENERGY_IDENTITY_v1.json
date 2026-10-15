@@ -1,0 +1,29 @@
+{
+  "confirmed_at": "2026-10-15T01:44:08.751110+00:00",
+  "reviewer": "/root/force_energy_bridge_check",
+  "note_sha256": "6b961015a75b9655623ddffd2c43d1ead6100d61c506208d772fe7cde58509dd",
+  "helper_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+  "review_sha256": "8a4adfd9e1559679b8af5864cd5ff968e1031057b3ddc739e59c01ae5b7d305a",
+  "working_report_sha256": "6243e8b238304bd4a9f791a5cff8db1766df6132599d424216f4c13ef42a7d15",
+  "targeted_symbolic_checks_sha256": "60bbcc11e9ee6cb1b68ba65c6897ff1def9bf9a5a6b7d56e49b66aaa66cf2b87",
+  "main_input_correspondence": [
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "local_sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68",
+      "pinned_main_sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68",
+      "bytes_equal": true
+    },
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_ENVIRONMENT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "local_sha256": "3648502a7d8b9f966d134d97300c53ff2d7eaab5ddb0dc5d8bf7589b2ae3a4a2",
+      "pinned_main_sha256": "3648502a7d8b9f966d134d97300c53ff2d7eaab5ddb0dc5d8bf7589b2ae3a4a2",
+      "bytes_equal": true
+    }
+  ],
+  "canonical_helper_reexecuted": false,
+  "unchanged_independent_suite_reexecuted": false,
+  "source_discrepancies": [],
+  "pending_external_evidence": [
+    "Root canonical cache and final mutation outcomes are not independently inspected by this source confirmation."
+  ]
+}

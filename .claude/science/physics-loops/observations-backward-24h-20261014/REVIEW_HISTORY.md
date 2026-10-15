@@ -62,3 +62,17 @@ only stale current-state wording, corrected in STATE.yaml, PR_BACKLOG.md and
 PHASE_CONFORMANCE.md. Final identity-only disposition checking is in progress
 and will be preserved in runtime before publication. No canonical scientific
 source changed during these operational corrections.
+
+Final initial-phase delivery confirmation completed before publication: PHASE_DELIVERY_CHECK_v1.md SHA71ab370dcff57473e3579047797f775e842ac7591e934f89a231ce5d885d1603; PHASE_REVIEW_DISPOSITIONS_v1.json SHA11ce2e6d0bff79a080b686c64951f1e43f1d3402884d3f0d14f4fe48545e665a. All41disk/index identities and patchpostimages matched. Immutable scientific reports remain unchanged. The frozen commitb8f83e344b3ba756cc31fe24f83b4dec71b199d0 and its fresh cache pass the read-only PHASE_UNIT_RECORD_v1.json preflight. PR9581 was verified and attached. These post-publication operational edits do not change that commit or promote its conditional scientific status.
+
+## Finite-time working history checks
+
+The complete finite-age report (SHA5cf6cb16c52f9d2422b8e72b8d72297d773efbb0e3c666480ca5a273d4d768ed) checks118controls; the history/energy report (SHA7635c6a173633e778a0d3ecf371b1f4648dc7862c4bad3b18582db9fe571cb24) checks55; localized report (SHA0bae3c2d241a580ca620cb014b5229c8aef73dfa488b6baf71733a7a298048e3) checks55. Root has read all reports completely. Each reviewer derived before code access and used different selected representations. Findings clarified time-dependent forcing, moving-point BV scope and uniform-family quantifiers. No physical energy budget, initial state or observation fit was inferred. The published third unit is unaffected; fourth-unit canonicalization and delivery remain pending.
+
+
+## Finite-window source preparation
+
+Independent temporal58controls and moving61controls were read completely by root. The force bridge253controls and6targeted canonical algebra controls were also read completely. Final canonical source review is finishing. Temporal error-budget notation and natural-unit wording were clarified. The canonical force helper adds8angular-antiderivative checks and repairs a random-only shared-mode sensitivity gap, yielding57force checks. The first canonical cache completed260total checks in1.308seconds within120seconds,exit0,fresh. All29current-source mathematical mutations are assertion-rejected; the initial survivor and targeted repair are preserved. No scientific source is modified after this frozen cache. Full combined landing validation and formal independent audit remain pending.
+
+
+Final canonical confirmation 2026-10-15T01:56:00.922924+00:00: full report SHA d5f4153396c6d5740601cbf325dcbf3caec8c6f09a748a9d34871858bb7872ae read completely. All5science sources and every affected repair/wording change are covered. Cache and29current-source mutation artifacts independently bound; original survivor remains. Force reviewer final wording supplement SHA cef8165703b3ef5931b2757f0f9cbe56c30540ce2d43eadb4ec13cb3f2cd4e6e also read. No formal audit verdict. Final publication binding pending; all12conformance sections are recorded in finite_time_environment/HISTORY_CONFORMANCE_v1.md.

@@ -37,3 +37,29 @@ on an arbitrary initial phase is quietly supplied. Covariances and residual
 means are separate assumptions. PD1/PD2 are retrieved atmospheric path delays,
 not additional coherent frequencies. All reserved measurement products remain
 unopened. No scalar action, potential, scale or environment import is retired.
+
+## Finite-time environment block — working, unpublished
+
+The causal step kernel is now a personally checked particular solution, with
+separate potential and gradient errors. Its construction is not a condition
+on the actual initial field. The current extensions have the following scope.
+
+| Input or proposed replacement | What is derived | What remains supplied |
+| --- | --- | --- |
+| Stable frozen flat scalar operator | Exact step response and post-front potential/force bounds | Validity of that operator over the causal history, including curvature, matter response and drift |
+| Finite signed source-increment measure | Finite-history remainder controlled by total variation and its distance moment | A physical bound on trace variation; conserved total energy does not determine it; moving point deltas are not automatically BV in this norm |
+| Complete conserved compact pulse | A time-varying trace at fixed total energy, with reduced exterior source mu²f-2f'' | Actual matter dynamics, source profile and observed amplitudes |
+| Arbitrary finite field energy | Explicit smooth backward-data controls; a chosen spatial average has a norm bound | Actual energy and readout bounds; finiteness alone is not an assigned small error |
+| Quantitatively localized initial data | Post-front point field and gradient bounds; the separate L1 norms can be bounded jointly from energy and support volume | Actual localization, energy budget and common domain; none is inferred from the radio data |
+
+The localized positive result is not a closure of all history routes. Its
+per-datum bounds apply with each datum's own constants; a uniform family
+decay statement needs common constants and a common post-front domain.
+The earlier Gaussian family lies outside compact support. No scalar action,
+potential, absolute scale, actual initial state or environmental solution
+has been selected or counted as retired. All new calculations are synthetic.
+
+
+## Finite-window scalar contribution — publication candidate
+
+The temporal observable replaces a compact-support/initial-profile choice with a quantitative energy input. The moving-path extension keeps a uniform subluminal margin and explicit kinematic/direction bounds. The exact conformal test-body action supplies both spatial-gradient and partial-time-derivative force terms; the shared mode bound uses one energy budget. Q and constant-frame normalization are derived explicitly, with an optional same-environment positive-geometry gravity substitution. The action, stable frozen operator, actual energy budget, nonlinear/source remainder and physical count/clock/trajectory calibration remain supplied. No new observation was opened or parameter fitted.

@@ -1,0 +1,795 @@
+{
+  "created_at": "2026-10-15T01:50:49.368178+00:00",
+  "reviewer": "/root/localized_history_check",
+  "scope": "Read-only source, final cache, product, adaptation and mutation-artifact identity verification. No scientific runner, mutation or independent control executed.",
+  "science_rerun_performed": false,
+  "sources": [
+    {
+      "path": "docs/SCALAR_FINITE_WINDOW_INITIAL_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+      "line_count": 508
+    },
+    {
+      "path": "scripts/scalar_finite_window_history_check.py",
+      "sha256": "dc2732e431c4c7427361004681136bc5fb89dbcff7c3c2bbaff58ac65b859b40",
+      "line_count": 55
+    },
+    {
+      "path": "scripts/scalar_temporal_history_controls.py",
+      "sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "line_count": 122
+    },
+    {
+      "path": "scripts/scalar_moving_history_controls.py",
+      "sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "line_count": 116
+    },
+    {
+      "path": "scripts/scalar_force_energy_controls.py",
+      "sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "line_count": 116
+    }
+  ],
+  "declared_input_paths_in_order": [
+    "docs/SCALAR_FINITE_WINDOW_INITIAL_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "scripts/scalar_temporal_history_controls.py",
+    "scripts/scalar_moving_history_controls.py",
+    "scripts/scalar_force_energy_controls.py"
+  ],
+  "independently_reconstructed_input_fingerprint": "2fbab4a4f5dbdfcd344f2f45154bccf6693fa889aaa4ef131ce8acd764b3303d",
+  "cache": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_finite_window_history_check.txt",
+    "sha256": "a512eae1939d384402fd5ec633d0b9238d66733fc7a938d4895d5a1dad05ed5e",
+    "fields": {
+      "runner": "scripts/scalar_finite_window_history_check.py",
+      "runner_sha256": "dc2732e431c4c7427361004681136bc5fb89dbcff7c3c2bbaff58ac65b859b40",
+      "input_fingerprint_sha256": "2fbab4a4f5dbdfcd344f2f45154bccf6693fa889aaa4ef131ce8acd764b3303d",
+      "timeout_sec": "120",
+      "exit_code": "0",
+      "elapsed_sec": "1.38",
+      "status": "ok"
+    },
+    "stdout_equals_summary": true,
+    "stderr_empty": true
+  },
+  "summary": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_finite_window_history/summary.json",
+    "sha256": "c6a0fc8a2b3952d3837a32af5bb984e8aab35d89f8a9ca3be2dd80c2ba3c2177"
+  },
+  "products": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_finite_window_history/temporal.json",
+      "sha256": "5f735c2c9b3210301686b9e47438ccdf5007f7f69095be0086d693ca13e54b1c",
+      "check_count": 70,
+      "scope": "Fixed-point temporal field functional and conditional leading velocity/count readout. No actual radio-force calibration, physical energy budget, localized state selection or observational test."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_finite_window_history/moving.json",
+      "sha256": "343e521a5b4fa81ee0d6c5c951d749aa6c3a81908786d90b6176f3dcf4902811",
+      "check_count": 133,
+      "scope": "Conditional moving-path energy functional under a frozen stable flat KG operator. No measured energy, path calibration, fitted data or independent observation."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_finite_window_history/force_energy.json",
+      "sha256": "e268f5779357059665ac9d6cc8ba806c298067f6bb2d55ca207c2cfa29a548a9",
+      "check_count": 57,
+      "scope": "Conditional point-particle action, prescribed-path linear force functional, joint energy and constant-frame conversion. All controls synthetic; no empirical fit or physical energy calibration."
+    }
+  ],
+  "author_control_total": 260,
+  "old_cache_preserved": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/HISTORY_CACHE_BEFORE_WORDING_v1.txt",
+    "sha256": "342e2d1405b37f699c1800ecdf29d0df7f2a4ec1e4989cb9982e2f2f771e628b",
+    "fields": {
+      "runner": "scripts/scalar_finite_window_history_check.py",
+      "runner_sha256": "dc2732e431c4c7427361004681136bc5fb89dbcff7c3c2bbaff58ac65b859b40",
+      "input_fingerprint_sha256": "83d4b0b8390b34a41be95a9afb1f32beddade5994683c531d9b55a2b3ef59d3f",
+      "timeout_sec": "120",
+      "exit_code": "0",
+      "elapsed_sec": "1.31",
+      "status": "ok"
+    }
+  },
+  "scientific_products_unchanged_by_wording_refresh": true,
+  "mutation_counts": {
+    "final_assertion_rejections": 29,
+    "unchanged_cases_reused": 18,
+    "force_cases_rerun_by_author": 11,
+    "original_survivors_preserved": 1
+  },
+  "mutation_rows": [
+    {
+      "name": "triangle_derivative",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/triangle_derivative/scalar_temporal_history_controls.py",
+        "sha256": "1c94d774cd8f5e11dd4399c969d66c513a9c593d0d79643cee2ab32a458d715d"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/triangle_derivative/stderr.txt",
+        "sha256": "5ab633c5f9c22525a5a7228ba91006f9a1a82c441f5a599b6263ec76ce44b65b"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/triangle_derivative/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: triangular_derivative_norm",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "triangle_transform",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/triangle_transform/scalar_temporal_history_controls.py",
+        "sha256": "f6c2d9521478927e2a52ff7ccb5c793319d2a3f61cfdcecaa1816df6c645dcf5"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/triangle_transform/stderr.txt",
+        "sha256": "e85ba5db4706a1a44ebd4221ce20c05f7077e99c9c227c14b769844c751959f6"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/triangle_transform/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: mass_enclosure_0.4_0.0",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "mass_spectral_norm",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/mass_spectral_norm/scalar_temporal_history_controls.py",
+        "sha256": "41ece4b49d63807fc090fc58bcb375928ff23b1ce14c24f93ea449f692246afa"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/mass_spectral_norm/stderr.txt",
+        "sha256": "14383d053317a4d03b962ec48425c1687ae1f08608ed98d31bf283ca4339f6b0"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/mass_spectral_norm/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: mass_enclosure_0.4_0.0",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "mass_dispersion_weight",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/mass_dispersion_weight/scalar_temporal_history_controls.py",
+        "sha256": "3a48daf8e3c2303cfe45c7160e80bf693b28ad328c64c3b681c7c4e0cef82e6f"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/mass_dispersion_weight/stderr.txt",
+        "sha256": "10b8f28fafca6914f82d95a2c93dbd4033c94159f75c2225a6c5ff0cd4152aea"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/mass_dispersion_weight/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: mass_enclosure_0.4_0.7499999999999999",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "time_filter_phase",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/time_filter_phase/scalar_temporal_history_controls.py",
+        "sha256": "053ecf60c1d46900f120e2c31f927bd32108c6240928ce6a9e2913f51ee491dd"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/time_filter_phase/stderr.txt",
+        "sha256": "135d5900b972bce7c209ee61fa0dc49a7dce847fb40c0c59801aea9c1aed20a1"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/time_filter_phase/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: time_frequency_filter_0.0",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "Parseval_half_line",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/Parseval_half_line/scalar_temporal_history_controls.py",
+        "sha256": "d57786c6d02e776716c55843a74491bcf8132d63e6e6f4900d96b0eb9df2a71b"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/Parseval_half_line/stderr.txt",
+        "sha256": "25d3719a15bcf998a796e5bf7bf04770323a4b3c3012fcb94f2d6c06880da113"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/Parseval_half_line/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: Gaussian_Parseval_0.4",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "rectangular_cutoff",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rectangular_cutoff/scalar_temporal_history_controls.py",
+        "sha256": "54b74db29112f5affa50e61ab6b984c5255abe86a11151c9fe23da40a6d8d661"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rectangular_cutoff/stderr.txt",
+        "sha256": "3aebd5dec5688baecc7759a2d7f9d905a8c87d9ae429e599d1f7f054f05b4dde"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rectangular_cutoff/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: box_cutoff_formula_0.5_10.0",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "adjacent_average",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/adjacent_average/scalar_temporal_history_controls.py",
+        "sha256": "969504b1424eefb87217bab1ca7333211cfd166e32f1048dd0710c394fda0829"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/adjacent_average/stderr.txt",
+        "sha256": "a2a7a882a7c38e86cfc18c2328ef938ee54be258a4e2274f72bd97b75fb041f3"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/adjacent_average/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: adjacent_velocity_identity_degree0",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "count_absolute_error",
+      "family": "temporal",
+      "source_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/count_absolute_error/scalar_temporal_history_controls.py",
+        "sha256": "4989da27050b7f0142b5f904194d4e23a82363a37f910e002d75f40ae9575e7d"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/count_absolute_error/stderr.txt",
+        "sha256": "637dcf3f69a0dde0f9cee4a99c1ec5c52a0102b24405de8fbbbbe6b283acc06f"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/count_absolute_error/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: count_error_bound_0.5",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "IBP_three_factor",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_three_factor/scalar_moving_history_controls.py",
+        "sha256": "eb0d4afae019ef1c6e65547efcf9e4bd31c633586f6b80007d12710c6de67cb0"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_three_factor/stderr.txt",
+        "sha256": "5cff96843ad88f03db07f432d760909714d60e141a56ffa47e084f4488ce5b91"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_three_factor/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: twice_IBP_coefficients",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "radial_split",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/radial_split/scalar_moving_history_controls.py",
+        "sha256": "921af73a2128bbeecd9df7f0c7f734b784c6447c126c1cd96ed552242789b198"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/radial_split/stderr.txt",
+        "sha256": "8c6cf3009035a74e4bf04fe6850809677b507f71dd534ca132bacc9adc45f578"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/radial_split/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: radial_envelope_integral",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "fixed_projection_constant",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/fixed_projection_constant/scalar_moving_history_controls.py",
+        "sha256": "8e89c968bcef970ecbc9a394780c88ee837b826d0d62af6096f6676e878383a9"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/fixed_projection_constant/stderr.txt",
+        "sha256": "7675e4f1eb32cf9127ff1ca5ccd8fafd623bd67a6627b50a9f68e38b6949e01b"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/fixed_projection_constant/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: fixed_projection_constant",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "rotating_projection_constant",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rotating_projection_constant/scalar_moving_history_controls.py",
+        "sha256": "84692001c942f954c3b66cfae1df7e25491345439b63b6376db1c8fa7eeb83b2"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rotating_projection_constant/stderr.txt",
+        "sha256": "daf93fd850d94d3d05c1a89261bd3cbdcd3ebc7ded81cc5f536bbf629165f6f0"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rotating_projection_constant/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: rotating_projection_constant",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "IBP_overall_sign",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_overall_sign/scalar_moving_history_controls.py",
+        "sha256": "8b975784ae4e222ad71b37c4052d7948f7cf87b348c5d8668aaf238a32033c99"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_overall_sign/stderr.txt",
+        "sha256": "e6215d1e0ffbaf8c88f8f7fadba81bbda9e15e9e875b963928e0c26809993f1e"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_overall_sign/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "IBP_distribution_atoms",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_distribution_atoms/scalar_moving_history_controls.py",
+        "sha256": "35d3683c1ad40307e0b2c27da129b7d1e7009ecc53f9a3434f060ef90fe72cba"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_distribution_atoms/stderr.txt",
+        "sha256": "640e847a67d55e548225213b22e32b888942535fbb5e4a8912a1266aa831865d"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/IBP_distribution_atoms/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "rotating_amplitude_derivative",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rotating_amplitude_derivative/scalar_moving_history_controls.py",
+        "sha256": "af54ff7fa74314dcc046e33de1ea4d6c915b2aa414fb452daeb83ebe6f74168b"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rotating_amplitude_derivative/stderr.txt",
+        "sha256": "0460787d132da17aba1e9d5fab8692d949247e4accf57bd101104b90d6d103ee"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/rotating_amplitude_derivative/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_True",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "trajectory_phase",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/trajectory_phase/scalar_moving_history_controls.py",
+        "sha256": "53db61ff2ba817464611fe85eac8b004dc6fe3d18ffb71fb37e4509f1cf75e6c"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/trajectory_phase/stderr.txt",
+        "sha256": "85d880b4775b84f273e31c77622e0a2c48f75361162efd55f4688c6cfcb8b270"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/trajectory_phase/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "readout_geometry",
+      "family": "moving",
+      "source_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/readout_geometry/scalar_moving_history_controls.py",
+        "sha256": "b806793e094a02f6bb35c64a5e2ca4b5414261768f5f354cfd6ebac3cf1a550b"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/readout_geometry/stderr.txt",
+        "sha256": "4fe4553ae343d4587756c86bdf36d8b48c4c674cf932c7ef0589812305964ebe"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v1/readout_geometry/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: rotating_velocity_readout_identity",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+        "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+      }
+    },
+    {
+      "name": "conformal_force_partial_time",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/conformal_force_partial_time/scalar_force_energy_controls.py",
+        "sha256": "eebbed399f73a052e066190636b0ef8b9c45363a5306e35b7ef3176bbb0aa62e"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/conformal_force_partial_time/stderr.txt",
+        "sha256": "894482a29dc9e3fdb544acc997221450bc8a69a61941130a07273092c564c8b2"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/conformal_force_partial_time/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: Euler_Lagrange_component_0",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "canonical_momentum_force_sign",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/canonical_momentum_force_sign/scalar_force_energy_controls.py",
+        "sha256": "7d834400624e216f8d4318f4d49b4830dc52cdd0ef39019fe21982e2e90eb962"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/canonical_momentum_force_sign/stderr.txt",
+        "sha256": "72d87e36c42b25746a5dc9590381462dbe73da8c02c2dfc30e8de2918f1254a9"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/canonical_momentum_force_sign/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: canonical_momentum_vs_acceleration_0.03_0.8",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "coordinate_force_speed_factor",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/coordinate_force_speed_factor/scalar_force_energy_controls.py",
+        "sha256": "857e508775f3f49d9a45e9e16d6291b5ee91db5742e9678fa715aa0259e99d16"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/coordinate_force_speed_factor/stderr.txt",
+        "sha256": "89713601a601f4256c0c7c6c37a16feb596b13516a458c13fc6cdfc89b3fdf1d"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/coordinate_force_speed_factor/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: canonical_momentum_vs_acceleration_0.03_0.8",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "coefficient_derivative_budget",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/coefficient_derivative_budget/scalar_force_energy_controls.py",
+        "sha256": "be9ab663f3d187f7bb4ca7cd9dec6a45ce889e1cb72d8e24f17e84dfa7c7ce43"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/coefficient_derivative_budget/stderr.txt",
+        "sha256": "2c0a0bf6b9b0c90f8bf8ff3f0c09cb4db0d37e66dfb1989aa24215b50c42e1d8"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/coefficient_derivative_budget/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: P_derivative_budget_1",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "candidate_coupling_ceiling",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/candidate_coupling_ceiling/scalar_force_energy_controls.py",
+        "sha256": "61f725634406236c3cb548667d6c9fa0a0884e4a1a7d8c101b8bb16d26166775"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/candidate_coupling_ceiling/stderr.txt",
+        "sha256": "2ea242baa41f3a2498f7adf0c270d223991f85112ff285a7963e46700d7748ce"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/candidate_coupling_ceiling/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: candidate_coupling_ceiling_identity",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "forcejet_partial_time_cancellation",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/forcejet_partial_time_cancellation/scalar_force_energy_controls.py",
+        "sha256": "63380a6518fcfb68f9c0be9e2a090da15ff281fde3eb458cc4134699474855f9"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/forcejet_partial_time_cancellation/stderr.txt",
+        "sha256": "03dbc80732030465b30b4735743f418eaea7983b35019052ccdf8df44b5e32c9"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/forcejet_partial_time_cancellation/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: forcejet_parallel_angular_antiderivative_0.2",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "forcejet_transverse_norm",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/forcejet_transverse_norm/scalar_force_energy_controls.py",
+        "sha256": "7c5c21e0272c377ede46be38210a4f33fa9b0a60adea102e05cfce50b2536aa2"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/forcejet_transverse_norm/stderr.txt",
+        "sha256": "cfa02208d9b9c4fa14196ab1cdce9807d591e9781ff470bd986abc2895ec9a26"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/forcejet_transverse_norm/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: forcejet_perpendicular_angular_antiderivative_0.2",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "physical_energy_factor",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/physical_energy_factor/scalar_force_energy_controls.py",
+        "sha256": "ff91b36d1c9364cbc0d737c253703240303f955cd0c76b0c23edff91373dbb25"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/physical_energy_factor/stderr.txt",
+        "sha256": "989f759355b2161fa744fa74057656eeaf71a11ad13874b5b6bada9ef2d18de4"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/physical_energy_factor/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: physical_energy_frame_scaling_0.4",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "frame_kinetic_factor",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/frame_kinetic_factor/scalar_force_energy_controls.py",
+        "sha256": "cd869986e68c5765faf18f23ea52aa57bc809a225ce34731f83321cc287c4aa8"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/frame_kinetic_factor/stderr.txt",
+        "sha256": "a7842f69d035cf138d9caa03b87afcb8c5a49cc3c271c921d28ceb06f1a0c6cf"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/frame_kinetic_factor/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: physical_energy_frame_scaling_0.4",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "G_normalization",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/G_normalization/scalar_force_energy_controls.py",
+        "sha256": "a5413ee7ddac42ce96c0e824c940ad7a58ad97e8505f7563cd5a9d9f8e4e62b8"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/G_normalization/stderr.txt",
+        "sha256": "78dc4156fa8e779bcd73926075dd6baf9c864ed7daa89f04ab928ee7c08dfcd3"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/G_normalization/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: Q_to_G_normalization_0.4",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    },
+    {
+      "name": "shared_mode_budget",
+      "family": "force",
+      "source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "mutant": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/shared_mode_budget/scalar_force_energy_controls.py",
+        "sha256": "48128a892371a66c9ce15e2a4ed30a84626647028abc6855a174f60966bc7205"
+      },
+      "stderr": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/shared_mode_budget/stderr.txt",
+        "sha256": "ce913b086f837b859c01e39d2bc80fb6f44c41073bf6aa8fbddef8d7a4531c21"
+      },
+      "stdout": {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/history_mutations_v2/shared_mode_budget/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "last_error": "AssertionError: joint_mode_budget_attainment",
+      "evidence": {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+        "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/CANONICAL_ADAPTATION_v2.json",
+      "sha256": "4baabe46b31565dac134341a688baf7adf3a3c6e30cb0a49ce7795bb6f1581a1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/CANONICAL_WORDING_CHANGE_v1.json",
+      "sha256": "3240a3e913cb0226795fb3748cadf3f21e155af0ab279d4e6670982b8230f36f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/CANONICAL_NOTE_BEFORE_WORDING_v1.md",
+      "sha256": "6b961015a75b9655623ddffd2c43d1ead6100d61c506208d772fe7cde58509dd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/SHARED_MODE_TEST_REPAIR_v1.json",
+      "sha256": "215da20427392d330d534d9aad5ed8d0cb91a84da6ceed433ab94d6833818f79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v1.json",
+      "sha256": "f7dfb0d22fffe9e94e8e9568ff235762b582e31de0094f5c2b9d553983f4b3a0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_v2.json",
+      "sha256": "917318c1e15554de8324dda61754303eb5cd430f5e76770b171d4e10e8cb0e96"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/HISTORY_MUTATIONS_FINAL_v1.json",
+      "sha256": "4f0e777bba86f11a86927dce318355d5973f0abbaf8672e5197cec8b6fe2bfc3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/run_history_mutations_v1.py",
+      "sha256": "a6e997b599a15046e51d35edb08efd8e4ca5c9acfae4a189cdf7a785e295c180"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/run_history_mutations_v2.py",
+      "sha256": "026dbf706e1379a6d91ed2f8689dba4b6d5ccfb4fb701a3c11b63858d0c9cfd0"
+    }
+  ],
+  "tooling_read": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    }
+  ],
+  "checker": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/check_canonical_binding_v1.py",
+    "sha256": "fafe5317f1dd7daf6634a722d1609edf810d48a9a34f40c6301ded302996c420"
+  },
+  "source_postcheck_matches": true,
+  "not_checked": [
+    "Git index or publication identity",
+    "graph-manifest delta",
+    "remote PR state",
+    "actual observations or physical calibration"
+  ]
+}

@@ -15,3 +15,6 @@ linear algebra and cold-plasma response are explicit tools/premises. The
 independent checks are focused mathematics and source checks, not an audit or
 empirical acceptance. No independent holdout is opened; the main scalar
 action/state/scale/environment gaps remain. Trace class remains upstream_support.
+
+
+The fourth proposal is bounded_theorem / conditional-support with trace class upstream_support: a positive finite-window free-scalar history envelope, prescribed moving observation path, conformal test-body force and physical energy normalization. Fourier/operator and variational arguments are directly checked here. Quantitative energy, stable local model, kinematics, measurement identification and approximation errors remain premises. Independent mathematics/source checks do not apply an audit status. No empirical holdout, selected action or inferred initial state is claimed.

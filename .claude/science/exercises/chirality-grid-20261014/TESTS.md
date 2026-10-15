@@ -359,7 +359,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Close:** the campaign close moves to about 11:30Z on 10-16, so the campaign still gets 24 working hours.
 - No reading or pre-registration was changed.
 
-**OBS-2 result (11:38Z; same family; referee launched): LV-PRICE(19) [14 if set C's counterterm already includes the tetragonal operator]; FLAV2-NEAR.** [Referee: CONFIRMED WITH CORRECTIONS. LV-SAFE fails robustly; the integer n is not established as minimal. See below.]
+**OBS-2 result (11:38Z; same family; referee launched): LV-PRICE(19) [14 if set C's counterterm already includes the tetragonal operator]; FLAV2-NEAR.** [Referee: CONFIRMED WITH CORRECTIONS. LV-SAFE fails robustly; the integer n is not established as minimal. See below.] [OBS-3, refereed: this price is texture-dependent and not forced by CKM at one loop.]
 - **Where the residual sits.** On branch B, the up quarks and charged leptons are circulant, so their flavour-pattern Lorentz violation cancels exactly. The residual comes from the CKM-broken down sector.
   - d quark: c_TT ≈ −2e-8 (range −0.9 to −3.5e-8; −(1.8–7.1)e-9 with Planck-scale couplings). The bound is Kostelecký–Russell D44 part 3, c_TT^d > −1e-22 (astrophysics): ×2e13–3.5e14 over.
   - s quark: ×1.5–28 over the kaon row (mapping suggested).
@@ -409,7 +409,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **OPEN:** otherwise.
 - **Scope to state:** one loop, symmetric-phase Higgs, the family as built, no running from 1/a.
 
-**OBS-3 result (13:08Z; same family; referee launched): TEXTURE-ESCAPE.**
+**OBS-3 result (13:08Z; same family; referee launched): TEXTURE-ESCAPE.** [Referee: CONFIRMED WITH CORRECTIONS, within the declared one-loop family. See below.]
 - **Main construction.** At one loop, a corner's Lorentz-violating kinetic data depend only on coupling moduli and the diagonal Gram matrix. CKM phases never enter (proved structure, S2).
   - Corner-basis Yukawas with equal diagonal moduli and equal off-diagonal moduli, plus free orientation-dependent phases ("B-gen"), fit every quark mass ratio, every |V_ij| and |J| exactly (χ² = 7e-23).
   - The data are then S3-invariant, so every residual row is zero by identity (Lemma S), for all regulators, placements, symbol ranges and carrier models.
@@ -421,3 +421,17 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **Price not computed:** a tree-level FCNC question from the hw2 electroweak-doublet carriers with O(y_t) flavour-violating couplings.
 - **Forced at two loops (suggested).** CKM forces some word in H_u, H_d to have a corner-dependent diagonal (L-words, proved). At two loops that could give about 1e-9–1e-10, i.e. about 1e13 over the u/d rows, unless the couplings are law-level covariant.
 - **Supervisor's own thread:** I predicted TEXTURE-FORCED from the flatness argument. That was wrong. Flatness is sufficient but not necessary; universal-strength textures and right-handed rotations escape.
+
+**OBS-3 referee (codex gpt-5.6-sol, xhigh; returned 13:25Z; recorded 13:26Z): CONFIRMED WITH CORRECTIONS.** TEXTURE-ESCAPE is met within the declared effective one-loop family. It is not shown for a complete, FCNC-safe, gauged X2 UV completion.
+- **Confirmed.**
+  - B-gen's parameterisation imposes the equalities **exactly**: one common complex diagonal entry and six exactly equal off-diagonal moduli (`univ.py:78-85`).
+  - It fits the official PDG 2024 quark masses and CKM fit far inside their uncertainties (checked at 80–100 digits with mpmath).
+  - Cubic covariance then puts every quark tensor in the span of α + βδ_ca, which the allowed counterterms remove exactly.
+  - Also confirmed: the flat-flat ⟺ circulant-equivalent theorem, and the L-words result.
+- **Corrections.**
+  - **Lemma S needs fully S3-invariant data with separate, non-mixing carriers.** With selective diagonal symbols, the diagonal phases enter through Re(η_s η_t*), so equal moduli alone are not sufficient. B-gen survives because its diagonals are the same complex number. B-gen120 uses the cubic-character phase pattern.
+  - **The literal saved binary64 matrices miss the direct bounds by 5e2–4e3**, through rounding. The zero belongs to the exact ansatz, not to the stored numbers.
+  - **M1 diagonal equalisation** is supported for OBS-2's realisation; "for any W_u" is not proved.
+  - **"Up-flat + M2 has no structural zero"** is established only to the extent of excluding the S3-invariant route.
+  - **Mechanism 1's all-orders zero** holds at v = 0 (symmetric phase), not for an arbitrary fixed broken vacuum. The (va)² suppression is reasonable but uncomputed, and FCNC safety is open.
+- **Strongest correct statement (referee).** The exact B-gen parameterisation fits the observed quark data while making the one-loop data S3-invariant, so every quark tensor is removable by the allowed counterterms. OBS-2's d-quark violation is therefore texture-dependent and not forced by CKM at one loop.

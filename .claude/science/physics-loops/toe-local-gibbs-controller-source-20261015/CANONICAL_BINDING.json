@@ -1,0 +1,24 @@
+{
+  "kind": "actual_local_gibbs_controller_source_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "actual_git_base": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "actual_branch_at_binding": "physics-loop/toe-single-port-program-and-controller-20261015",
+  "bound_note_sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/07fe994aa80009c71c6d868c3b3f48e1b0d1bed3ad60e7e639cd0ad2d1f5a8ce.json",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/2efa0c4821c9d3ccc01bf61afbe537c10a16b2ffc5029d93db9fa56e8dc978bd.py",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/bf8a0ef9aeea39ee2fa902ae70cd5c5a1c3e4e514f4652d7756acfc0e8454c03.py",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/c1a78b657c4d41c2b18bd1e9d90a6705cd4446abc170874dffb23e104723da28.json",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d4dd8e003d0870bf93a6a8d1ce5b07f82e1010b1d5eeaeb06f9c5d30c577a6cd.blob",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d54a4a8b37085ed737df451e55e0f202d5b0f95d8287a4ceccfd88148b2b6676.json",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/e729fa28ed25d833e54c95d828be5bec6fee93711692b0e39352aaadfb7ce440.blob",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/f48dc581b628b01203bae933c8d768d12f2116e6207cd8e702bf06a3afa11c14.json"
+  ],
+  "canonical_parent_sha256": {
+    "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542"
+  }
+}

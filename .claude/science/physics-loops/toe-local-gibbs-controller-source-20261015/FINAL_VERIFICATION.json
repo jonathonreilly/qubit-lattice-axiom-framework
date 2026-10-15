@@ -1,0 +1,352 @@
+{
+  "utc": "2026-10-15T20:20:33.469262+00:00",
+  "branch": "physics-loop/toe-local-gibbs-controller-source-20261015",
+  "base_head": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 102731,
+    "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_gibbs_controller_source_2026_10_15.py",
+    "bytes": 27829,
+    "sha256": "686529085c301520099d2c9b67bd7f720696301dba60582068db4d87b2a10490"
+  },
+  "cache": {
+    "utc": "2026-10-15T20:16:24.688812+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_gibbs_controller_source_2026_10_15.py",
+      "bytes": 27829,
+      "sha256": "686529085c301520099d2c9b67bd7f720696301dba60582068db4d87b2a10490"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/CANONICAL_RESULT.json",
+      "bytes": 1084,
+      "sha256": "c140bf9be9a645a3aa3d8a178232e01815f18c40c13e26d7b2100d6351453808"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/local_gibbs_controller_source_2026_10_15.txt",
+      "bytes": 1045,
+      "sha256": "3ff798bdb4fe92213cc0ccdcfc0a00350ca32c829d0a4b6670a4be97844d765a"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "publication_or_retained_status_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run": 0,
+      "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"
+    },
+    "scope_lines": [
+      "per_element: exact coefficient text retained; no physical element or gate executed",
+      "per_site: fixed path and supplied isolation are preserved; no hardware test executed",
+      "per_mode: full-sector analytic Gibbs spectrum retained; no mode simulation executed",
+      "per_block: three exact bodies, one parent and captured binding evidence checked",
+      "lattice_wide: source integrity only; cooling, runtime handoff and audit remain unexecuted"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-15T20:16:46.346556+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_gibbs_controller_source_2026_10_15.py",
+      "bytes": 27829,
+      "sha256": "686529085c301520099d2c9b67bd7f720696301dba60582068db4d87b2a10490"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/MUTATION_RESULTS.json",
+      "bytes": 10761,
+      "sha256": "e4e583105547461dd6d94acb229b9a518f17885d681f7e6397268a871e0e7734"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 89,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-15T20:19:56.882721+00:00",
+    "old_nodes_preserved": 7140,
+    "old_edges_preserved": 16101,
+    "new_node": {
+      "claim_id": "local_gibbs_controller_source_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "positive_unary_cycle_clock_bounded_theorem_note_2026-10-14"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+      "path": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/local_gibbs_controller_source_2026_10_15.py",
+      "title": "Positive local Gibbs source for a specified unary controller state"
+    },
+    "new_edges": [
+      {
+        "from": "local_gibbs_controller_source_bounded_theorem_note_2026-10-15",
+        "to": "positive_unary_cycle_clock_bounded_theorem_note_2026-10-14"
+      }
+    ],
+    "roots_unchanged": true,
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10460477,
+      "sha256": "9b0972973d0c073c1f66b2385ad390b4fe1ef0f3c9d87128a99c83b728885a2f"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1019780,
+      "sha256": "fc0a68db948ff06153dce11ce19506bf685b384cf92b426947fcaab8844519e2"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "adf8de6850d80f94060dc5c266cfe79a769b308cc10d2bc1b609b8a100087811"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-15T20:16:43.491541+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2253,
+          "sha256": "3471ce35a57c40ba66e7bc08fa07440bb3babb273bd9ee400b82d2c2f7cd02d5"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2309,
+          "sha256": "9dd437d3d034ca767572599804dcd73abe6b25ace3ca9257dd2763aaf59fc3dd"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2296,
+          "sha256": "f159c7cae7fbed0a097032428cbaca959635b5d9d762dad6f10624fd4e291d64"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2284,
+          "sha256": "e6a2daf269f0b6229c2fb0a7a5a63aa5b4d2976b3ff063552886c61cf80b9b29"
+        }
+      },
+      {
+        "case": "source_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_source_interval/EXECUTION.json",
+          "bytes": 2296,
+          "sha256": "c3979013d0a2137fff64e4ee4a9e702560f222dd44d43bc417d5ef6f9e253b21"
+        }
+      },
+      {
+        "case": "parent_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_parent_interval/EXECUTION.json",
+          "bytes": 2297,
+          "sha256": "cc03fa8f1eea0cf6ab04a7405c6701ffae138d571dc23fe1f4ff1ce533a16715"
+        }
+      },
+      {
+        "case": "dependency_role",
+        "expected_failure": "Exactly one direct mathematical parent",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_dependency_role/EXECUTION.json",
+          "bytes": 2296,
+          "sha256": "c92c9c424fe283f8ed6556c2c176a80db529bb30f1726e0dd33e89f9df2cfedf"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical null state must remain null:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2314,
+          "sha256": "422751be111ba5ef5ee1c94b71c3e3c9d1735e321a2c09a99f11c1a27acc4cef"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Bound canonical note identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2272,
+          "sha256": "dd2c826d8cda1c4bfd22d431783c224d5769cb985e2332b1800182b9d2bc2087"
+        }
+      },
+      {
+        "case": "root_review_scope",
+        "expected_failure": "Actual source-publication review schema",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_root_review_scope/EXECUTION.json",
+          "bytes": 2308,
+          "sha256": "7f831f715df746c2c1edddb60cdb95b9c2597071359dd496d54c8eab6354053e"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Captured successful execution required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2302,
+          "sha256": "a552a1aa6fb074f904d338775877e3dd5a9a3ad442f0eb989b8249bb748c4261"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2332,
+          "sha256": "6e3b1b0db2e24655bdd61ac17390ad0a8d7a98013e2730c07b99cc7cbfe50caa"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2320,
+          "sha256": "21cb524c30dd4169ee309d9ac8ca71aa79e78747e05fd48b3d80785a92efbbed"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2279,
+          "sha256": "afe79e8038ae55983f4f198cdf999364d629125d2435fc9d4bd3faf29a8f7146"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2284,
+          "sha256": "486bd7afbd72d7db664f7d08a226cc5833665f193b0d883a54fb25cbf41330c4"
+        }
+      },
+      {
+        "case": "parent_review_link",
+        "expected_failure": "Parent review source/body linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_parent_review_link/EXECUTION.json",
+          "bytes": 2314,
+          "sha256": "3f41fe7708abc8946d8c5e51a553fb482c66125488834a53061206e9c24cf712"
+        }
+      },
+      {
+        "case": "parent_review_identity",
+        "expected_failure": "Exact parent review identities",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_parent_review_identity/EXECUTION.json",
+          "bytes": 2339,
+          "sha256": "b7228b1d42364ac51ac8705937059af22ebef53c61c584c62550a124f91d81f1"
+        }
+      },
+      {
+        "case": "parent_review_encoding",
+        "expected_failure": "Parent review encoding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_parent_review_encoding/EXECUTION.json",
+          "bytes": 2337,
+          "sha256": "b3e40be42a805d83ae71e36ae65ed3985b28ae512fc985d2280e478ff17ad7ba"
+        }
+      },
+      {
+        "case": "parent_gzip_bytes",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_parent_gzip_bytes/EXECUTION.json",
+          "bytes": 2308,
+          "sha256": "8558d84f20e236569364afa7dc1e99d1519066377772054c70be9beda7b0d18e"
+        }
+      },
+      {
+        "case": "recovery_selection_link",
+        "expected_failure": "Selected recovery linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_recovery_selection_link/EXECUTION.json",
+          "bytes": 2344,
+          "sha256": "5bbbc66e03a5bce2c1157b98e4093d53c1996ee7685d114c92945938f3e212aa"
+        }
+      },
+      {
+        "case": "root_parent_review",
+        "expected_failure": "Root reviewed exact parent review recovery",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_root_parent_review/EXECUTION.json",
+          "bytes": 2314,
+          "sha256": "b7098ebe4b12306be2c0848b406384f85586e2452c6580e475e4842f885691b8"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2314,
+          "sha256": "ab0939996bd9b3e78dce499d81f8118a80f23e3745f1bae73d8d252bf4d66786"
+        }
+      },
+      {
+        "case": "seal_scope",
+        "expected_failure": "Historical proposal seal scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_seal_scope/EXECUTION.json",
+          "bytes": 2266,
+          "sha256": "5f34ceb8e41473ffe338cc3034df3bd59f1998b28c107cdb8e867c300e2ed7ee"
+        }
+      },
+      {
+        "case": "historical_base_flag",
+        "expected_failure": "Historical execution and pending-base scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/runs/mutation_historical_base_flag/EXECUTION.json",
+          "bytes": 2327,
+          "sha256": "a5163e655523e48bd56176fb3d6b08b3f4ccfe6bd69dd2a7a36f17cd0f5666d6"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 23,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Supplied normalized computable nonvanishing unary vector, actual positive local coefficients/channel dictionary, calibrated Gibbs delivery/temperature, full-space isolation and perturbation norm, retained-reference state comparison and actual-time source removal. Normalized and weighted edge budgets differ; the positive-channel reserve is paid. Cooling, physical manufacture, complete runtime handoff, full scheduled programs, native supply, common caps, recycling and microscopic energy/controller/detector identification remain open. No stack mathematics is imported."
+  ]
+}

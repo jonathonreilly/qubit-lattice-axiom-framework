@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-15T18:42:04.075918+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_autonomous_preparation_candidate/DERIVATION.md",
+      "bytes": 31689,
+      "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_preparation_root_review/ACCEPTANCE.md",
+      "bytes": 3948,
+      "sha256": "274119dd43f5ad046a9f532e4d2229150c72fb6f2f00fa3fec6550f69716815e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89"
+    }
+  ],
+  "root_coverage": "New inverse-parent/full-sector/Gibbs proof authored here. Exact earlier unary-clock and sharp marginal lemmas reuse full prior source/review reading; clock packet formula and application conditions reread now. No science execution.",
+  "literature_scope": "Official IBM and arXiv abstract/metadata only, actual opened-tool response preserved. Earlier search-result listing remains only in tool transcript, not represented as a saved full search. No full paper or imported specialized theorem/novelty claim.",
+  "independent_worker": "shared_mediator_pilot received only nonzero-vector/open-NN/positive-block/full-gap/Gibbs question and power-of-two clock application before root candidate was written; no route/formula exposed. Protected directory must remain unseen until independent freeze.",
+  "scientific_programs_run": 0,
+  "editable_prompt_files_changed": []
+}

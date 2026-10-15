@@ -1,0 +1,8 @@
+{
+  "actual_record_written_utc": "2026-10-15T19:09:36.448128+00:00",
+  "record_kind": "post-first-exposure comparison metadata",
+  "first_exposure_time_basis": "tool-read sequence and clock output, approximately2026-10-15T19:04:57Z",
+  "source_science_runs": 0,
+  "new_science_runs_planned": 0,
+  "output_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison"
+}

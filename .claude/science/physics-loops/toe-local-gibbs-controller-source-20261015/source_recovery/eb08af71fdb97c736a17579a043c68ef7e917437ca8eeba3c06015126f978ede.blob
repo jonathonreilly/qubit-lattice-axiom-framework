@@ -1,0 +1,25 @@
+{
+  "actual_utc": "2026-10-15T19:18:48.476997+00:00",
+  "kind": "metadata_only_verification",
+  "source_rows": 20,
+  "recovery_files": 12,
+  "original_freeze_member_counts": [
+    23,
+    3
+  ],
+  "root_external_identity_pins": 3,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/REPORT.md",
+    "bytes": 31441,
+    "sha256": "e36f9dd364a5846d66d2bc1a2e2529e39cfc5cff83b25b1a0e17bdfe1a87894c"
+  },
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/SOURCE_MANIFEST.json",
+    "bytes": 21105,
+    "sha256": "d06649c8b8d9579fd8bd21c0a5e196975ce0d8ff2d869247829448aec6aceab8"
+  },
+  "scientific_runs": 0,
+  "scientific_replays": 0,
+  "proof_acceptance": null,
+  "scope": "This result does not verify mathematics, supply a Gibbs state, or confer audit/publication status"
+}

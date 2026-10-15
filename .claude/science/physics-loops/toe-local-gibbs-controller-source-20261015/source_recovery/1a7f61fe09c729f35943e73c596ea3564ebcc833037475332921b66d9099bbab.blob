@@ -1,0 +1,41 @@
+"""Identity/recovery metadata only; no scientific computation or candidate discovery."""
+from pathlib import Path
+import datetime, hashlib, json
+O=Path(__file__).resolve().parent
+N=O.parent
+W=N.parent/'correlation_worktree'
+SK=Path('/Users/jonreilly/.codex/skills/physics-loop')
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def write(p,v):Path(p).write_text(json.dumps(v,indent=2)+'\n')
+sources=[]
+def source(p,role,coverage,expected=None,recover=False):
+ p=Path(p);r=pin(p)
+ if expected:assert r['sha256']==expected,str(p)
+ r.update({'role':role,'read_scope':coverage})
+ if recover:
+  dest=O/'source_recovery'/(r['sha256']+p.suffix);dest.parent.mkdir(exist_ok=True)
+  if dest.exists():assert dest.read_bytes()==p.read_bytes()
+  else:dest.write_bytes(p.read_bytes())
+  r['recovery']={**pin(dest),'path':dest.relative_to(O).as_posix()}
+ sources.append(r)
+source(N/'local_clock_autonomous_preparation_candidate/DERIVATION.md','clock_definition_geometry_and_scope','Complete prior coverage reused; current sections1,4,6,7,8 completely reread. No program theorem import.','b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7',True)
+source(W/'AGENTS.md','instruction','Complete current read','f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f')
+source(W/'docs/ai_methodology/SCIENCE_WORKFLOW.md','instruction','Complete current read','05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce')
+source(W/'docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md','instruction','Complete current read')
+source(W/'docs/audit/data/axiom_premise_nodes.json','premise_registry_scope','Previous complete read reused at matching identity; no new primitive imported','615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37')
+matches=[]
+for rel in ('SKILL.md','references/DISCOVERY.md','references/CLAIM_STATUS.md','references/DELIVERY.md'):
+ installed=SK/rel;canonical=W/'docs/ai_methodology/skills/physics-loop'/rel
+ assert installed.read_bytes()==canonical.read_bytes(),rel
+ coverage='Complete current entry read' if rel=='SKILL.md' else 'Prior complete selected-revision coverage reused; current aggregate truncation not credited as complete'
+ source(installed,'instruction',coverage)
+ matches.append({'relative_path':rel,'installed':pin(installed),'canonical':pin(canonical),'exact_match':True})
+source(N/'single_port_program_research/READ_COVERAGE.md','prior_read_provenance','Complete current read; no mathematical theorem import')
+source(N/'single_port_program_research/SOURCE_IDENTITIES.initial.json','prior_identity_provenance','Complete current read; no mathematical theorem import')
+source(N/'main_refresh_1832/REFS.json','dated_repository_context','Complete current metadata read; not a current W HEAD or science certificate','45ca48ff9e7cc2e5cb23b13a046e67be4bfb9e58fe180174dbebf1a1e5e6d810')
+write(O/'SOURCE_MANIFEST.json',{'utc':now(),'sources':sources,'instruction_distribution_identity':matches,'root_candidate_accessed':False,'scientific_programs_run':0,'scope':'Exact source identity and selected recovery only; no new mathematical check by this program'})
+result={'utc':now(),'kind':'metadata_only_verification','source_count':len(sources),'instruction_files_exact_match':len(matches),'science_runs':0,'historical_science_replays':0,'root_candidate_accessed':False,'derivation':pin(O/'DERIVATION.md'),'report':pin(O/'REPORT.md'),'source_manifest':pin(O/'SOURCE_MANIFEST.json'),'editable_prompt_changes':[]}
+write(O/'METADATA_VERIFICATION.json',result)
+print(json.dumps(result,indent=2))

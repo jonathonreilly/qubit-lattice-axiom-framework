@@ -1,0 +1,145 @@
+"""Byte identity/recovery verification only; no mathematical experiment."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import sys
+
+O = Path(sys.argv[1]).resolve()
+N = O.parent
+W = N.parent / "correlation_worktree"
+assert O.name == "local_gibbs_controller_comparison"
+
+
+def digest(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def verify(path, size, sha):
+    row = digest(path)
+    if row["bytes"] != size or row["sha256"] != sha:
+        raise ValueError({"source_changed": str(path), "expected": [size, sha], "actual": row})
+    return row
+
+
+sources = []
+recovery = O / "source_recovery"
+recovery.mkdir()
+
+
+def add(path, size, sha, role, scope, copy=False):
+    row = verify(path, size, sha)
+    row.update(role=role, read_scope=scope)
+    if copy:
+        dest = recovery / (sha + path.suffix)
+        if not dest.exists():
+            dest.write_bytes(path.read_bytes())
+        r = verify(dest, size, sha)
+        r["path"] = str(dest.relative_to(O))
+        row["recovery"] = r
+    sources.append(row)
+    return row
+
+
+add(N / "local_gibbs_controller_independent/DERIVATION.md", 31566,
+    "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40",
+    "pre_exposure_independent_proof", "Complete author/read coverage and all313 lines reread", True)
+add(N / "local_gibbs_controller_root_candidate/DERIVATION.md", 15842,
+    "5a278bbd0f96eff93a2c506573898a9cb4b8cc2ffd8ac5d42d4ea2bcd17e712e",
+    "parallel_root_proof", "Complete175-line source-exposed read", True)
+add(N / "local_gibbs_controller_independent/FINAL_FREEZE.json", 4549,
+    "656357ca8416febc385119582e14dd1640fca84d30659d0509c3cef4f36cff53",
+    "independent_pre_exposure_freeze", "Complete metadata read; members verified below", True)
+add(N / "local_gibbs_controller_root_candidate/PROPOSAL_FREEZE.json", 1044,
+    "3296ddaa7ce6c97e45cee7e1654467633685f75a944daab4e424e825b439b19d",
+    "root_parallel_freeze", "Complete metadata read; members verified below", True)
+pre = N / "local_gibbs_controller_root_review/PRE_EXPOSURE_READ.json"
+pre_row = digest(pre)
+add(pre, pre_row["bytes"], "ceca11900946ddb6b4e9e542b1af3a2ac2c98eab167b90f89e9bdd403bab335c",
+    "authorization_and_exposure_order", "Complete actual root-read record", True)
+add(N / "local_gibbs_controller_root_candidate/SOURCE_PINS.json", 1811,
+    "395deb75d4d733683c51ba18a53fa3d1735cc86f62112c2f0c5d7fb2e94a4273",
+    "root_source_scope", "Complete read; all exact external pins verified below", True)
+add(N / "local_gibbs_controller_root_candidate/PRIMARY_CONTEXT_TOOL_RESPONSE.json", 10987,
+    "32f18faf93644d5b32e35b9a60787297c00e07e612d4b8426a9ed5957b8d2db8",
+    "root_literature_exposure", "Complete saved response; abstract/metadata only, no full paper", True)
+add(N / "local_gibbs_controller_independent/REPORT.md", 3705,
+    "1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302",
+    "independent_scope_report", "Complete read", True)
+add(N / "local_gibbs_controller_independent/READ_COVERAGE.md", 2951,
+    "0c0e6299eb8ce1f33fb6326c74013a22bc0fc5d1c4bf2b9433bca2016ebeef08",
+    "independent_read_scope", "Complete read", True)
+add(N / "local_gibbs_controller_independent/SOURCE_MANIFEST.json", 7354,
+    "4616ac0e6ec7df04f063f6aa1b50c0bb09b45fe04f7026a958bbc76ccd2b7fb6",
+    "independent_source_map", "Complete read; no recursive archive copy", True)
+add(N / "local_gibbs_controller_independent/metadata_run/EXECUTION.json", 1988,
+    "a1bf5c76cd0f2fabf678251d869523b6480788767cc2d35987165d8ed8251e84",
+    "independent_actual_metadata_receipt", "Complete read; not science execution", True)
+add(N / "local_clock_autonomous_preparation_candidate/DERIVATION.md", 31689,
+    "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7",
+    "clock_packet_and_geometry", "Unchanged complete prior coverage; precise reuse described in READ_COVERAGE", True)
+add(W / "AGENTS.md", 1265,
+    "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+    "instructions", "Immediately preceding complete read reused at matching identity")
+add(W / "docs/ai_methodology/SCIENCE_WORKFLOW.md", 15435,
+    "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+    "instructions", "Immediately preceding complete read reused at matching identity")
+add(W / "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md", 2180,
+    "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "instructions", "Complete current read")
+add(W / "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md", 14490,
+    "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "instructions", "Complete current installed copy read; W identity matches")
+installed = Path("/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md")
+add(installed, 14490,
+    "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "instruction_distribution", "Complete current read; exact W match")
+loop = W / "docs/ai_methodology/skills/review-loop/SKILL.md"
+loop_row = digest(loop)
+add(loop, loop_row["bytes"], loop_row["sha256"], "referenced_review_scope",
+    "Complete entry read, omitted tail in aggregate output reread lines235–305; no workflow invocation")
+add(W / "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md", 4975,
+    "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "proof_obligation_scope", "Complete current read; one comparison, no new approach/delegation round")
+add(W / "docs/audit/data/axiom_premise_nodes.json", 6416,
+    "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "unchanged_registry_scope", "Prior exact complete coverage reused; no new primitive claim")
+
+freeze_results = []
+for directory, filename in [("local_gibbs_controller_independent", "FINAL_FREEZE.json"),
+                            ("local_gibbs_controller_root_candidate", "PROPOSAL_FREEZE.json")]:
+    base = N / directory
+    freeze = json.loads((base / filename).read_text())
+    members = []
+    for entry in freeze["files"]:
+        path = Path(entry["path"])
+        path = path if path.is_absolute() else base / path
+        if not path.resolve().is_relative_to(base.resolve()):
+            raise ValueError("Unexpected freeze member escape: " + str(path))
+        members.append(verify(path, entry["bytes"], entry["sha256"]))
+    freeze_results.append({"base": str(base), "freeze": digest(base / filename),
+                           "members_verified": len(members), "members": members})
+
+root_external = []
+for row in json.loads((N / "local_gibbs_controller_root_candidate/SOURCE_PINS.json").read_text())["sources"]:
+    root_external.append(verify(Path(row["path"]), row["bytes"], row["sha256"]))
+
+manifest = {"actual_utc": datetime.now(timezone.utc).isoformat(), "sources": sources,
+            "original_freezes": freeze_results, "root_external_pins_identity_only": root_external,
+            "source_exposed_comparison": True, "scientific_programs_run": 0,
+            "scientific_replays": 0, "metadata_is_science": False,
+            "editable_prompt_changes": [],
+            "scope": "Exact source identities, selected recovery and original frozen-member preservation only"}
+(O / "SOURCE_MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
+result = {"actual_utc": datetime.now(timezone.utc).isoformat(),
+          "kind": "metadata_only_verification", "source_rows": len(sources),
+          "recovery_files": len(list(recovery.iterdir())),
+          "original_freeze_member_counts": [x["members_verified"] for x in freeze_results],
+          "root_external_identity_pins": len(root_external),
+          "report": digest(O / "REPORT.md"), "manifest": digest(O / "SOURCE_MANIFEST.json"),
+          "scientific_runs": 0, "scientific_replays": 0, "proof_acceptance": None,
+          "scope": "This result does not verify mathematics, supply a Gibbs state, or confer audit/publication status"}
+text = json.dumps(result, indent=2) + "\n"
+(O / "METADATA_VERIFICATION.json").write_text(text)
+print(text, end="")

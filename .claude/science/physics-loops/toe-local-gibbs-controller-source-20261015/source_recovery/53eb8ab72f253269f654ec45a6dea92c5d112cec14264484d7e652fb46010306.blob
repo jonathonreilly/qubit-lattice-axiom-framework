@@ -1,0 +1,53 @@
+"""Record the actual metadata-only execution; snapshots precede process launch."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+O = Path(__file__).resolve().parent
+run = O / "metadata_run"
+run.mkdir()
+(run / "inputs").mkdir()
+
+
+def identity(path):
+    b = path.read_bytes()
+    return {"path": str(path), "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
+
+
+script = O / "verify_metadata.py"
+(run / "executed_source.py").write_bytes(script.read_bytes())
+(run / "recorder_source.py").write_bytes(Path(__file__).read_bytes())
+input_rows = []
+for name in ["REPORT.md", "PLAN.md", "EXPOSURE.md", "READ_COVERAGE.md", "TASK_START.json", "seal_metadata.py"]:
+    source = O / name
+    row = identity(source)
+    target = run / "inputs" / (row["sha256"] + source.suffix)
+    target.write_bytes(source.read_bytes())
+    row["snapshot"] = identity(target)
+    input_rows.append(row)
+
+argv = [sys.executable, "-B", str(run / "executed_source.py"), str(O)]
+launch = {"written_before_process_launch_utc": datetime.now(timezone.utc).isoformat(),
+          "argv": argv, "cwd": str(O), "source_at_launch": identity(run / "executed_source.py"),
+          "recorder": identity(run / "recorder_source.py"), "inputs": input_rows,
+          "scientific_execution": False, "retrospective_launch": False,
+          "scope": "Actual source identity/recovery verification only"}
+(run / "LAUNCH.json").write_text(json.dumps(launch, indent=2) + "\n")
+start_utc = datetime.now(timezone.utc).isoformat()
+start = time.monotonic()
+with (run / "stdout").open("wb") as stdout, (run / "stderr").open("wb") as stderr:
+    proc = subprocess.run(argv, cwd=O, stdout=stdout, stderr=stderr, check=False)
+end_utc = datetime.now(timezone.utc).isoformat()
+receipt = {"argv": argv, "cwd": str(O), "start_utc": start_utc, "end_utc": end_utc,
+           "elapsed_seconds": time.monotonic() - start, "exit_code": proc.returncode,
+           "source_at_launch": identity(run / "executed_source.py"),
+           "recorder": identity(run / "recorder_source.py"), "launch": identity(run / "LAUNCH.json"),
+           "stdout": identity(run / "stdout"), "stderr": identity(run / "stderr"),
+           "scientific_execution": False}
+(run / "EXECUTION.json").write_text(json.dumps(receipt, indent=2) + "\n")
+print(json.dumps(receipt, indent=2))
+sys.exit(proc.returncode)

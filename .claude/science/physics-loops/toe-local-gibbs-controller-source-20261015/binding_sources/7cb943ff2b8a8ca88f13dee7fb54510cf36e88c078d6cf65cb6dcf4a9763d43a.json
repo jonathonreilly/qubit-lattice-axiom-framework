@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-15T20:00:39.252679+00:00",
+  "refs": {
+    "HEAD": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "fetch_scope": "Actual origin/main fetch19:59:58-20:00:00; instruction ref observed, not fetched anew.",
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_2002/EXECUTION.json",
+      "bytes": 1176,
+      "sha256": "513948f73233c8a6868405f3a822599d5e76452aa986533c341d3adfa48c1806"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2002/EXECUTION.json",
+      "bytes": 1261,
+      "sha256": "a97b0287d16df1db6e6acc8a2a62ba30356555980de6973e6e0677b4663b933c"
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2002/stdout",
+    "bytes": 18319,
+    "sha256": "d72d85c8d7112546d92993bc023ee3dbd5c0de6b1fa53e75ea7bfa8c66bcfbd3"
+  },
+  "previous_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1945/REFS.json",
+    "bytes": 2821,
+    "sha256": "c9ba0902afde97941d2156ca2ee79be31656b18be647d83c8503b3dfca4199fb"
+  },
+  "inventory_count": 47,
+  "inventory_delta": {
+    "new": [
+      {
+        "baseRefName": "physics-loop/toe-transverse-field-memory-20261015",
+        "headRefName": "physics-loop/toe-single-port-program-and-controller-20261015",
+        "headRefOid": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+        "isDraft": false,
+        "number": 9617,
+        "title": "[physics-loop] single-port-program-and-controller: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9617"
+      }
+    ],
+    "removed": [],
+    "changed": [
+      {
+        "before": {
+          "baseRefName": "codex/observations-backward-windows-20261015",
+          "headRefName": "codex/observations-backward-environment-20261015",
+          "headRefOid": "9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db",
+          "isDraft": false,
+          "number": 9614,
+          "title": "[physics-loop] physical-metric scalar bounds: bounded_theorem / conditional-support",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614"
+        },
+        "after": {
+          "baseRefName": "codex/observations-backward-windows-20261015",
+          "headRefName": "codex/observations-backward-environment-20261015",
+          "headRefOid": "b789855264cad2db6dabe73f28ff3618dc58f66f",
+          "isDraft": false,
+          "number": 9614,
+          "title": "[physics-loop] physical-metric scalar bounds: bounded_theorem / conditional-support",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614"
+        }
+      }
+    ]
+  },
+  "external_science": "Previously scoped9612/9614 preserved; inspect changed/new external source before import.",
+  "current_publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/PUBLICATION.json",
+    "bytes": 1620,
+    "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db"
+  },
+  "current_attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/ATTACHMENT.json",
+    "bytes": 216,
+    "sha256": "57e7952202ef634c4c6da7841166177c1950dc2c9c81236499f4f6f8e1977922"
+  }
+}

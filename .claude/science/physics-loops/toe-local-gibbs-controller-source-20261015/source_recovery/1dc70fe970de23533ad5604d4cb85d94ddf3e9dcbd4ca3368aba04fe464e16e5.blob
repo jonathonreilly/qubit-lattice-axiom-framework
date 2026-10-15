@@ -1,0 +1,51 @@
+from pathlib import Path
+import json,hashlib,datetime
+N=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309');now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def load(p):return json.loads(Path(p).read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256'))
+def dump(p,x):p=Path(p);assert not p.exists();p.write_text(json.dumps(x,indent=2)+'\n')
+def freeze(d,name,sha,count):
+ p=N/d/name;assert pin(p)['sha256']==sha;f=load(p);assert len(f['files'])==count
+ for r in f['files']:
+  q=Path(r['path']);same(q if q.is_absolute() else p.parent/q,r)
+ return pin(p)
+bf=freeze('basis_state_clock_independent','FINAL_FREEZE.json','e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d',35);B=N/'basis_state_clock_independent';BR=N/'basis_state_clock_root_review';BR.mkdir(exist_ok=False)
+assert load(B/'FINAL_FREEZE.json')['root_candidate_accessed'] is False
+for r in load(B/'SOURCE_MANIFEST.json')['sources']:same(r['original_path'],r);same(B/r['recovery'],r)
+for label in ('capture','verify'):
+ p=B/'metadata_runs'/label;r=load(p/'EXECUTION.json');assert r['exit_code']==0
+ for key in ('stdout','stderr','child_source_at_launch','source_capture','recorder'):same(r[key]['path'],r[key])
+dump(BR/'PRE_EXPOSURE_READ.json',{'utc':now,'kind':'root_complete_independent_read_before_candidate_exposure','independent_freeze':bf,'derivation':pin(B/'DERIVATION.md'),'members_verified':35,'read_scope':'Complete29173-byte independent derivation, exposure/route/handoff and allfour metadata helpers. Checked positive weighted edge spectrum, full-space norm, symmetric/binomial propagator and exact endpoint phase, endpoint-uniform inverse-arcsine concentration, full-reference Duhamel bound, moments, calibration/positivity/work and wrong-linear-sampling/locality/energy/nonstopping limits.','comparison':'Independent clock uses a different positive number-weighted block decomposition with lower full norm and exact endpoint phase cancellation; root has a sharper concentration constant and explicit single-port mediator adaptation. Those comparisons remain to be checked after exposure. Same model family and shared older sources; no blind-method or retained audit claim.','scientific_runs':0,'candidate_exposure_authorization':'May be sent after this actual record is completed, not before.'})
+G=N/'local_gibbs_controller_comparison';GR=N/'local_gibbs_controller_root_review'
+gf=freeze('local_gibbs_controller_comparison','FINAL_FREEZE.json','7b58d56405a7807b67039577b65ae3539a2221e42575b08e6ec639fe6f039d74',34)
+freeze('local_gibbs_controller_independent','FINAL_FREEZE.json','656357ca8416febc385119582e14dd1640fca84d30659d0509c3cef4f36cff53',23)
+freeze('local_gibbs_controller_root_candidate','PROPOSAL_FREEZE.json','3296ddaa7ce6c97e45cee7e1654467633685f75a944daab4e424e825b439b19d',3)
+m=load(G/'SOURCE_MANIFEST.json')
+for r in m['sources']+m['root_external_pins_identity_only']:
+ same(r['path'],r)
+ if 'recovery' in r:same(G/r['recovery']['path'],r)
+for group in m['original_freezes']:
+ for r in [group['freeze']]+group['members']:same(r['path'],r)
+r=load(G/'metadata_run/EXECUTION.json');assert r['exit_code']==0 and r['scientific_execution'] is False
+for key in ('stdout','stderr','source_at_launch','recorder','launch'):same(r[key]['path'],r[key])
+for q in load(G/'metadata_run/LAUNCH.json')['inputs']:same(q['path'],q);same(q['snapshot']['path'],q)
+accept='''# Root conditional source acceptance: local Gibbs controller states
+
+Accept the unchanged root unnormalized construction5a278bbd, pre-exposure independent normalized construction4e0c90fb, and exposed reconciliatione36f9dd3 as a bounded conditional source theorem. Root read the complete31441-byte comparison and allthree metadata helpers, after previously reading both proofs in full. Source freezing and pre-exposure chronology are verified; same-model/shared-context and common quadratic-mode method limits remain explicit. This is source acceptance, not retained audit, execution-based proof or publication.
+
+The full-qubit-space open-chain CAR diagonalization, positive edge spectra including11, weighted-resistance lower bound, unique unary ground and exact gapmu are checked. The unified weighted family has exact normT_gamma+mu, groundmu(M-1), physical scalar(T_gamma+Mmu)/2, positive-block normsumT_gamma+Mmu, and distinct uncollected Pauli and separately-positive-channel loads. The latter requires the actual added scalarC_gamma and normsumT_gamma+2C_gamma+Mmu. Complex hopping signs and all-sector/closing-cycle boundaries remain.
+
+The Gibbs occupation product yields infidelity at mostM exp(-beta mu), exact marginal error2delta, and explicit energy moments. Disjoint auxiliary fields add their actual tails, gaps, norms and scalars. Arbitrary retained references require the sharp g(delta)=delta+sqrt(delta(4-3delta)) bound with the exact unconditioned old marginal, fully rederived and saturated in the comparison. A marginal Gibbs premise is not a product-source premise.
+
+The noncommuting finite Gibbs half-trace Lipschitz boundbeta||E|| is correct by normalized Duhamel and Schatten Holder. It is an alternative to the generic actual-gap perturbation certificate; neither transfers a free-mode factorM to an arbitrary perturbed thermal spectrum. Full-space coefficient/isolation budgets and temperature continuity are paid; plant-source equilibrium coupling needs a genuine delivered-marginal or complete-equilibrium premise.
+
+For the actual odd-band packet with design-stage power-of-two M, the normalized edge certificate Rbar_N<=M^4, gap>=J/M^4 and explicit inverse-polynomial coefficient tolerance are checked. This is an energy/gap/inverse-temperature bound, not equilibration or compilation time. The unnormalized design has its distinct conservative M^8/8 resistance bound and lower block load. Fixed-inventory enlargement is not permitted. General multiple-of-four packet zeros and all failed shortcuts remain.
+
+Physical source supply, finite thermalization, hardware manufacture, calibrated temperature and complete runtime handoff remain open. Positive compensation of the old cycle carries its full scalar and channel load. Every source-removal interval retains actual old-system aging; releasing runtime couplings does not produce an unaged packet for free. No native initialization, energy/detector identification, common cap, recycling or complete scheduled controller is established. No scientific program, historical replay, formal checker, audit verdict, prompt or axiom change is claimed. Preserve both original proofs and the comparison, including their historical pending wording, in any publication.
+'''
+assert not(GR/'ACCEPTANCE.md').exists();(GR/'ACCEPTANCE.md').write_text(accept)
+dump(GR/'VERIFICATION.json',{'utc':now,'comparison_freeze':gf,'comparison':pin(G/'REPORT.md'),'independent':pin(N/'local_gibbs_controller_independent/DERIVATION.md'),'root_candidate':pin(N/'local_gibbs_controller_root_candidate/DERIVATION.md'),'members_verified':[34,23,3],'metadata_execution':pin(G/'metadata_run/EXECUTION.json'),'scientific_runs':0,'source_rows':len(m['sources']),'full_comparison_and_helpers_read':True})
+dump(GR/'FINAL_FREEZE.json',{'utc':now,'files':[pin(p) for p in sorted(GR.iterdir()) if p.is_file()],'scope':'Conditional source acceptance with actual pre-exposure root read and verification; not publication or audit.'})
+print(json.dumps({'basis_pre_exposure_read':pin(BR/'PRE_EXPOSURE_READ.json'),'gibbs_acceptance':pin(GR/'ACCEPTANCE.md'),'gibbs_freeze':pin(GR/'FINAL_FREEZE.json')}))

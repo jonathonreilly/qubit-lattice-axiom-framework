@@ -1,0 +1,31 @@
+"""Freeze source and actual metadata before any root-candidate exposure."""
+from pathlib import Path
+import datetime,hashlib,json
+O=Path(__file__).resolve().parent
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def load(p):return json.loads(Path(p).read_text())
+def same(p,row):
+ a=pin(p);assert all(a[k]==row[k] for k in ('bytes','sha256')),str(p)
+def write(p,v):Path(p).write_text(json.dumps(v,indent=2)+'\n')
+start=now();assert not (O/'FINAL_FREEZE.json').exists()
+receipt=load(O/'metadata_run/EXECUTION.json');assert receipt['exit_code']==0 and receipt['scientific_execution'] is False
+for key in ('stdout','stderr'):same(O/'metadata_run'/key,receipt[key])
+assert (O/'metadata_run/stderr').read_bytes()==b''
+launch=load(O/'metadata_run/LAUNCH.json')
+for row in launch['inputs']:
+ same(row['original']['path'],row['original']);same(row['captured']['path'],row['captured'])
+same(O/'verify_metadata.py',receipt['source_at_launch'])
+for row in load(O/'SOURCE_MANIFEST.json')['sources']:
+ same(row['path'],row)
+ if 'recovery' in row:same(O/row['recovery']['path'],row['recovery'])
+files=[];excluded={'FINAL_FREEZE.json','SEAL_OPERATION.json'}
+for p in sorted(O.rglob('*')):
+ if p.is_file() and p.relative_to(O).as_posix() not in excluded:
+  files.append({**pin(p),'path':p.relative_to(O).as_posix()})
+freeze={'frozen_utc':now(),'kind':'independent_analytic_candidate_before_root_exposure','files':files,'excluded_exact_root_paths':sorted(excluded),'scope':'Complete independent derivation and actual identity metadata; no root-candidate comparison or acceptance yet','root_candidate_accessed':False,'science_runs':0,'historical_science_replays':0,'model_or_effort_override':False,'delegation':False,'editable_prompt_changes':[]}
+write(O/'FINAL_FREEZE.json',freeze)
+for row in files:same(O/row['path'],row)
+result={'started_utc':start,'finished_utc':now(),'kind':'metadata_only_seal','program':pin(Path(__file__)),'freeze':pin(O/'FINAL_FREEZE.json'),'derivation':pin(O/'DERIVATION.md'),'report':pin(O/'REPORT.md'),'files_verified':len(files),'science_runs':0,'root_candidate_accessed':False}
+write(O/'SEAL_OPERATION.json',result);print(json.dumps(result,indent=2))

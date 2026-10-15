@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/local_gibbs_controller_source_2026_10_15.py
+runner_sha256: 686529085c301520099d2c9b67bd7f720696301dba60582068db4d87b2a10490
+input_fingerprint_sha256: 2083fd06e1499bfb037a1d5591dd0c643a7cf9536402022b1ecb4f2729872b88
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"}
+per_element: exact coefficient text retained; no physical element or gate executed
+per_site: fixed path and supplied isolation are preserved; no hardware test executed
+per_mode: full-sector analytic Gibbs spectrum retained; no mode simulation executed
+per_block: three exact bodies, one parent and captured binding evidence checked
+lattice_wide: source integrity only; cooling, runtime handoff and audit remain unexecuted
+
+----- stderr -----
+

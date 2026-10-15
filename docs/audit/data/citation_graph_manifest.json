@@ -1,6 +1,6 @@
 {
- "edge_count": 16101,
- "node_count": 7140,
+ "edge_count": 16102,
+ "node_count": 7141,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14413,6 +14413,10 @@
   "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10": {
    "deps_hash": "902cbaf48a4c",
    "out_degree": 4
+  },
+  "local_gibbs_controller_source_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "6ac7d0bfcd57",
+   "out_degree": 1
   },
   "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13": {
    "deps_hash": "f52127449f6a",

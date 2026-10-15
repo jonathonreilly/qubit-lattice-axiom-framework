@@ -1,0 +1,9 @@
+# Portable selected recovery
+
+BODY_MAP identifies the three immutable mathematical bodies stored once in the proposed canonical note. The actual root source decision is separate provenance. DEPENDENCIES binds exactly one external canonical unary-clock note and its unique33019-byte proof interval. PARENT_REVIEW_BINDING identifies the exact gzip object and its29118-byte decoded review; both recovery objects are preserved and their relation is checked.
+
+SOURCE_MANIFEST maps selected source bytes to canonical body intervals, external parent/intervals or SHA256-deduplicated blobs. ARCHIVE_INDEX counts each blob once and lists aliases. Current top-level source/exposure/plan/freeze records, actual metadata launches/sources/streams and root acceptance evidence are selected. No previous publication archive or graph directory is recursively copied. Historical manifests can name unselected older files without promising their recursive closure; RECOVERY_SELECTION records that distinction for every current frozen member.
+
+The shared actual root acceptance recorder and stdout mention basis-clock pre-exposure metadata. Those exact files are retained as the actual Gibbs acceptance receipt; their unrelated references are not followed into a new theorem dependency or science review. Historical correlated/autonomous parent references inside the immutable proofs remain intact. The current comparison rederives the needed reference lemma and the canonical unary-clock note supplies the packet application.
+
+Existing metadata receipt schemas and actual timestamps are preserved. The root acceptance run has no separate LAUNCH.json; its existing captured executed_source.py matches the source-at-launch identity. A new synthetic historical launch is not created. New assembly/static-inspection subprocesses have contemporaneous launch/source/input/stream receipts. Metadata identities establish preservation and recovery, not physics or independent acceptance.

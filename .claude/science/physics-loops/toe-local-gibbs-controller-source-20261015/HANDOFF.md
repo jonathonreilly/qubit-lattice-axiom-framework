@@ -1,0 +1,11 @@
+# Source proposal handoff
+
+Proposed note: docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md. Proposed primary: scripts/local_gibbs_controller_source_2026_10_15.py. Packet: toe-local-gibbs-controller-source-20261015. Regular title: [physics-loop] local-gibbs-controller-source: bounded_theorem / conditional-support.
+
+Three complete exact bodies and actual root source acceptancec2e7680d are preserved. The single direct parent is canonical unary-cycle clockfa7028e0 with exact proofc7a19c3a. Its review8d76345b has both compressed and decompressed recovery identities. Historical autonomous/correlated source pins remain literal provenance, not extra current dependencies. Actual Git ancestry is PR9617/head86eac8cc4523f7f15c8d84824f462f9a5c037806. Current ACTUAL_BINDING records the actual checkout, root publication review and base-observation evidence. No stack mathematics is imported.
+
+Read the complete wrapper and all changed current code through the outside-proposal review maps. Earlier complete body coverage can be reused only at the exact BODY_MAP identities. The primary requires actual captured publication-review/base evidence and bound expected literals; its execution is a separate recorded phase, not inferred from canonical binding. Recompute all offsets and declared-input closure after any wrapper change; never rewrite the three bodies or historical null state.
+
+Keep normalization-dependent gap/temperature/precision, exact norm versus block and channel prices, C_gamma reserve, complete reference g, both calibration methods, actual enlarged isolation and elapsed H0/K_C handoff. Cooling/native manufacture and full scheduled programming remain open. This source-drafting task is limited to source assembly; root performs authorized integration and publication. No new confirmation is requested or required by this packet.
+
+The frozen source-drafting task changed no W/Git/publication state and ran only metadata assembly. This source-drafting task was limited to source assembly; root performs authorized integration and publication. Separate actual phase records determine later outcomes; no science fixture, historical science replay, retained audit or prompt change is implied.

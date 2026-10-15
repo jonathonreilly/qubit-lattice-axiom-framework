@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-15T19:04:35.957251+00:00",
+  "stage": "Root read independent proof before granting candidate exposure",
+  "independent_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_independent/FINAL_FREEZE.json",
+    "bytes": 4549,
+    "sha256": "656357ca8416febc385119582e14dd1640fca84d30659d0509c3cef4f36cff53"
+  },
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_independent/DERIVATION.md",
+    "bytes": 31566,
+    "sha256": "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40"
+  },
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_independent/REPORT.md",
+    "bytes": 3705,
+    "sha256": "1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302"
+  },
+  "members_verified": 23,
+  "read_scope": "Entire31566-byte derivation, complete report, exposure/read coverage/plan and all three metadata helpers. Checked complex hopping/CAR signs, weighted gap, all-sector unique ground/exact norm, channel reserve, thermal product, marginal versus complete reference error, generic perturbation dimension factor, finite sine/resistance bound and actual old-clock compensation/handoff limits.",
+  "comparison": "Root candidate not yet exposed to worker. Independent normalized edge construction differs from root unnormalized edge and strengthens the explicit packet conditioning bound. Complete comparison remains pending; no current accepted science or publication is claimed by this record.",
+  "scientific_runs": 0,
+  "editable_prompt_changes": []
+}

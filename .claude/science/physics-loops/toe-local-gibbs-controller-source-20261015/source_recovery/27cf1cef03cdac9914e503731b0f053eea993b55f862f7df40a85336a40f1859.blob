@@ -1,0 +1,25 @@
+"""Capture one actual identity-only metadata run; no science runner is invoked."""
+from pathlib import Path
+import datetime,hashlib,json,subprocess,sys,time
+O=Path(__file__).resolve().parent
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def pin(p):
+ p=Path(p);b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def write(p,v):Path(p).write_text(json.dumps(v,indent=2)+'\n')
+folder=O/'metadata_run';folder.mkdir(exist_ok=False)
+source=O/'verify_metadata.py'
+(folder/'executed_source.py').write_bytes(source.read_bytes())
+(folder/'recorder_source.py').write_bytes(Path(__file__).read_bytes())
+inputs=[]
+for name in ('PLAN.md','DERIVATION.md','REPORT.md','EXPOSURE.md','READ_COVERAGE.md','seal_metadata.py'):
+ p=O/name;row=pin(p);dest=folder/'inputs'/(row['sha256']+p.suffix);dest.parent.mkdir(exist_ok=True)
+ dest.write_bytes(p.read_bytes());inputs.append({'original':row,'captured':pin(dest)})
+argv=[sys.executable,'-B',str(source)]
+launch={'created_utc':now(),'argv':argv,'source_at_launch':pin(folder/'executed_source.py'),'recorder':pin(folder/'recorder_source.py'),'inputs':inputs,'scientific_execution':False,'scope':'Identity/recovery metadata only'}
+write(folder/'LAUNCH.json',launch);start=now();tick=time.monotonic()
+r=subprocess.run(argv,cwd=O,capture_output=True,timeout=60)
+end=now();(folder/'stdout').write_bytes(r.stdout);(folder/'stderr').write_bytes(r.stderr)
+receipt={'argv':argv,'cwd':str(O),'start_utc':start,'end_utc':end,'elapsed_seconds':time.monotonic()-tick,'exit_code':r.returncode,'source_at_launch':launch['source_at_launch'],'recorder':launch['recorder'],'launch':pin(folder/'LAUNCH.json'),'stdout':pin(folder/'stdout'),'stderr':pin(folder/'stderr'),'scientific_execution':False}
+write(folder/'EXECUTION.json',receipt)
+print(r.stdout.decode());print(r.stderr.decode(),file=sys.stderr);print(json.dumps({'actual_receipt':pin(folder/'EXECUTION.json'),'exit_code':r.returncode}))
+raise SystemExit(r.returncode)

@@ -1,0 +1,63 @@
+"""Seal this comparison only. Exclusions are exact root paths, not basenames."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import time
+
+O = Path(__file__).resolve().parent
+start_utc = datetime.now(timezone.utc).isoformat()
+start = time.monotonic()
+assert O.name == "local_gibbs_controller_comparison"
+assert not (O / "FINAL_FREEZE.json").exists()
+assert not (O / "SEAL_OPERATION.json").exists()
+
+
+def identity(path, relative=False):
+    data = path.read_bytes()
+    return {"path": str(path.relative_to(O) if relative else path), "bytes": len(data),
+            "sha256": hashlib.sha256(data).hexdigest()}
+
+
+execution = json.loads((O / "metadata_run/EXECUTION.json").read_text())
+assert execution["exit_code"] == 0 and execution["scientific_execution"] is False
+launch = json.loads((O / "metadata_run/LAUNCH.json").read_text())
+for row in launch["inputs"]:
+    for key, p in [("original", Path(row["path"])), ("snapshot", Path(row["snapshot"]["path"]))]:
+        actual = identity(p)
+        assert actual["sha256"] == row["sha256"] and actual["bytes"] == row["bytes"], (key, p)
+assert identity(O / "verify_metadata.py")["sha256"] == execution["source_at_launch"]["sha256"]
+assert identity(O / "record_metadata.py")["sha256"] == execution["recorder"]["sha256"]
+
+manifest = json.loads((O / "SOURCE_MANIFEST.json").read_text())
+for row in manifest["sources"] + manifest["root_external_pins_identity_only"]:
+    actual = identity(Path(row["path"]))
+    assert actual["sha256"] == row["sha256"] and actual["bytes"] == row["bytes"], row["path"]
+    if "recovery" in row:
+        actual = identity(O / row["recovery"]["path"])
+        assert actual["sha256"] == row["sha256"] and actual["bytes"] == row["bytes"]
+for group in manifest["original_freezes"]:
+    for row in [group["freeze"]] + group["members"]:
+        actual = identity(Path(row["path"]))
+        assert actual["sha256"] == row["sha256"] and actual["bytes"] == row["bytes"], row["path"]
+
+excluded = {"FINAL_FREEZE.json", "SEAL_OPERATION.json"}
+files = []
+for path in sorted(O.rglob("*")):
+    if path.is_file() and str(path.relative_to(O)) not in excluded:
+        assert not path.is_symlink(), path
+        files.append(identity(path, relative=True))
+freeze = {"frozen_utc": datetime.now(timezone.utc).isoformat(),
+          "kind": "source_exposed_analytic_comparison", "files": files,
+          "excluded_exact_root_paths": sorted(excluded),
+          "scope": "Complete comparison and actual metadata; both prior proofs preserved unchanged",
+          "scientific_runs": 0, "scientific_replays": 0, "root_acceptance": None,
+          "model_or_effort_override": False, "delegation": False, "editable_prompt_changes": []}
+(O / "FINAL_FREEZE.json").write_text(json.dumps(freeze, indent=2) + "\n")
+receipt = {"start_utc": start_utc, "end_utc": datetime.now(timezone.utc).isoformat(),
+           "elapsed_seconds": time.monotonic() - start, "kind": "actual_metadata_only_seal",
+           "source": identity(Path(__file__).resolve()), "freeze": identity(O / "FINAL_FREEZE.json"),
+           "members": len(files), "report": identity(O / "REPORT.md"),
+           "scientific_execution": False, "self_and_freeze_exclusion": "Exact root paths only"}
+(O / "SEAL_OPERATION.json").write_text(json.dumps(receipt, indent=2) + "\n")
+print(json.dumps(receipt, indent=2))

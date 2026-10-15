@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-15T19:01:06.089513+00:00",
+  "kind": "metadata_only_verification",
+  "source_count": 12,
+  "instruction_files_exact_match": 4,
+  "science_runs": 0,
+  "historical_science_replays": 0,
+  "root_candidate_accessed": false,
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_independent/DERIVATION.md",
+    "bytes": 31566,
+    "sha256": "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40"
+  },
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_independent/REPORT.md",
+    "bytes": 3705,
+    "sha256": "1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_independent/SOURCE_MANIFEST.json",
+    "bytes": 7354,
+    "sha256": "4616ac0e6ec7df04f063f6aa1b50c0bb09b45fe04f7026a958bbc76ccd2b7fb6"
+  },
+  "editable_prompt_changes": []
+}

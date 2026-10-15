@@ -187,3 +187,13 @@ Root read complete frozen delivery report `324dc7b47905c5dac14c21d4dc81d75227cd9
 ## M16 final scoped correspondence
 
 Complete independent geometry, weak/sampling and primary-source reports read personally by root. Mathematical geometry27pre-exposure plus33post-exposure controls; weak25pre-executable-exposure controls; source findings frozen before author theory exposure. Final canonical bindings agree. Original raw-monopole/noise/selection findings and current-version mismatches remain preserved; precise qualifications were rechecked. One coherent OPEN content recommendation, no formal audit or merge judgment. Root89primary checks and8failed-control source mutants are implementation evidence, not observations. See unequal_window/REVIEW_RECORD_v1.md and CONFORMANCE_v1.md; delivery verification follows separately.
+
+## M16 publication and next route — 2026-10-15T18:03:10.144354+00:00
+
+M16 regular PR9612, frozen cdf67b716d/tree26a6,49paths, attached. Necessary finite shear/velocity pair expectation derived with explicit local law, geometry and calibrated sampling premises.89 author controls and8 failed-control mutation rejections; focused independent geometry/weak/source reviews and842 mechanical comparisons0mismatches.199member archive/25plain views/24explicit omissions preserve failures and review history. No observed data, variance bound, coefficient uniqueness or full-gravity sensitivity witness.
+
+Direct author continues on codex/observations-backward-environment-20261015. M17 asks whether finite size, boundary values and the complete stress trace bound a regular static body's scalar displacement. The homogeneous density minimum is not accepted as the realized interior. Initial working comparison argument remains unverified; no measured-gravity identification or action/state/scale choice is retired. Preserve all earlier development exposure and unopened products. Main and changed-PR refresh recorded in runtime M17 files. No owned research jobs or old campaign restart. Matching lock refreshed17:58Z; packaging21:33:44Z and deadline21:48:44Z unchanged.
+
+## M17 physical environment — 2026-10-15T18:40:00.221441+00:00
+
+One coherent complete-field physical-metric bound and measurement-prerequisite unit. Scientific source review complete and OPEN judgment;82author controls,10mutations rejected,0empirical tests. All findings resolved within their scopes; frozen delivery and publication pending. Exact source and complete reports are in finite_environment/CHECKPOINT_v3.json and REVIEW_RECORD_v1.md.

@@ -1,0 +1,506 @@
+{
+  "acquisition_receipts": [
+    {
+      "bytes": 4903,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/SOURCE_ACQUISITION_v1.json",
+      "sha256": "84f605fe266295a6a9ce3bca70c06f93c9d7d7d00811098ae88ba2ff1141fb29"
+    },
+    {
+      "bytes": 1116,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/SOURCE_ACQUISITION_ADDENDUM_v1.json",
+      "sha256": "a7f12f71448788d870d04069b33fab25257767fabdb0d72fa8a9ceb3a11ec024"
+    }
+  ],
+  "created_utc": "2026-10-15T18:21:35.251941+00:00",
+  "empirical_tests": 0,
+  "exposure_receipt": {
+    "bytes": 2033,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/SEARCH_AND_EXPOSURE_v1.json",
+    "sha256": "fc13dfb55ce4cc5a78c9e173ef4a55e9f908f855f74e1a6603d4af8d3f82d27b"
+  },
+  "external_messages": 0,
+  "formal_audits": 0,
+  "git_mutations": 0,
+  "identity_checks": [
+    {
+      "actual_sha256": "85372fd26a42a9aa223697e34bc29ed7b96e6555d2303378cd3f2d39b86169a4",
+      "expected_sha256": "85372fd26a42a9aa223697e34bc29ed7b96e6555d2303378cd3f2d39b86169a4",
+      "matches": true,
+      "name": "primary_pdf_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/kaiser_1003_1159v2.pdf"
+    },
+    {
+      "actual_sha256": "1f4fc79be9973e12ceba36716e7f0f96c488736f2c17e1ffd65fe05502c1a92e",
+      "expected_sha256": "1f4fc79be9973e12ceba36716e7f0f96c488736f2c17e1ffd65fe05502c1a92e",
+      "matches": true,
+      "name": "primary_text_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/kaiser_1003_1159v2.txt"
+    },
+    {
+      "actual_sha256": "4c36136350da8104942c34f459aa926aafbdc1ca4bcc12968dd96ebcc97cb406",
+      "expected_sha256": "4c36136350da8104942c34f459aa926aafbdc1ca4bcc12968dd96ebcc97cb406",
+      "matches": true,
+      "name": "primary_pdf_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/khoury_weltman_astro_ph_0309411v2.pdf"
+    },
+    {
+      "actual_sha256": "69c95cae4348a47d1bbac4b94b263534a40f3de4374ec599c7fc7a784b0d5e87",
+      "expected_sha256": "69c95cae4348a47d1bbac4b94b263534a40f3de4374ec599c7fc7a784b0d5e87",
+      "matches": true,
+      "name": "primary_text_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/khoury_weltman_astro_ph_0309411v2.txt"
+    },
+    {
+      "actual_sha256": "84b99c4836ded6e2e29a0801ec71af640ae87ffcceb7dfab518678bc77127c1e",
+      "expected_sha256": "84b99c4836ded6e2e29a0801ec71af640ae87ffcceb7dfab518678bc77127c1e",
+      "matches": true,
+      "name": "primary_pdf_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/faber_visser_astro_ph_0512213v2.pdf"
+    },
+    {
+      "actual_sha256": "0bf6675e2c3f6acd3a42a0e2e4a0ee96ed527d9ee7bac27f9ceb5e3cbe9dc9d8",
+      "expected_sha256": "0bf6675e2c3f6acd3a42a0e2e4a0ee96ed527d9ee7bac27f9ceb5e3cbe9dc9d8",
+      "matches": true,
+      "name": "primary_text_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/faber_visser_astro_ph_0512213v2.txt"
+    },
+    {
+      "actual_sha256": "89a97a6c20278fe92bd2c096a6c19b1475b497302e1ac9c9e42ce7ba20b44b0e",
+      "expected_sha256": "89a97a6c20278fe92bd2c096a6c19b1475b497302e1ac9c9e42ce7ba20b44b0e",
+      "matches": true,
+      "name": "primary_pdf_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/philipp_1702_08412v2.pdf"
+    },
+    {
+      "actual_sha256": "9c9ce489af7542dc42ff962d86effff850cc79ff7c2b19072b49760ebadecfde",
+      "expected_sha256": "9c9ce489af7542dc42ff962d86effff850cc79ff7c2b19072b49760ebadecfde",
+      "matches": true,
+      "name": "primary_text_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/philipp_1702_08412v2.txt"
+    },
+    {
+      "actual_sha256": "b09a69950f7eff17750f580036c38efdd0f98dfc1a784bbee3d1535facedb19e",
+      "expected_sha256": "b09a69950f7eff17750f580036c38efdd0f98dfc1a784bbee3d1535facedb19e",
+      "matches": true,
+      "name": "primary_pdf_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/salgado_gr_qc_0509001v2.pdf"
+    },
+    {
+      "actual_sha256": "f5b8e5b51b97190a87959fda0af9fa664e363010e092c4fa7e9b6f22adf96611",
+      "expected_sha256": "f5b8e5b51b97190a87959fda0af9fa664e363010e092c4fa7e9b6f22adf96611",
+      "matches": true,
+      "name": "primary_text_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/salgado_gr_qc_0509001v2.txt"
+    },
+    {
+      "actual_sha256": "c7b37b39407b2e706f5010c2ea2ee3d888e325d1314af58bd32d113dfc0b9ca7",
+      "expected_sha256": "c7b37b39407b2e706f5010c2ea2ee3d888e325d1314af58bd32d113dfc0b9ca7",
+      "matches": true,
+      "name": "render_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/kaiser_1003_1159v2_p5.png"
+    },
+    {
+      "actual_sha256": "0f2d1b4f5d055175817093bb78ce1f0722a9fd2d3b22b38ac4c648fef898cd49",
+      "expected_sha256": "0f2d1b4f5d055175817093bb78ce1f0722a9fd2d3b22b38ac4c648fef898cd49",
+      "matches": true,
+      "name": "render_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/kaiser_1003_1159v2_p8.png"
+    },
+    {
+      "actual_sha256": "4ac6ff1066959641785c7c3f75be8acf5429d7223ae9dc032f6d85f80bde6b03",
+      "expected_sha256": "4ac6ff1066959641785c7c3f75be8acf5429d7223ae9dc032f6d85f80bde6b03",
+      "matches": true,
+      "name": "render_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/salgado_gr_qc_0509001v2_p4.png"
+    },
+    {
+      "actual_sha256": "895b2ab9a0114f6353aa110149098727bd60c05820f3534e8d953a525bea4fb3",
+      "expected_sha256": "895b2ab9a0114f6353aa110149098727bd60c05820f3534e8d953a525bea4fb3",
+      "matches": true,
+      "name": "render_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/khoury_weltman_astro_ph_0309411v2_p9.png"
+    },
+    {
+      "actual_sha256": "0f4432d7ac7341dc0dddcc4f451200a5636b8a77bd6512775723229c4a37190e",
+      "expected_sha256": "0f4432d7ac7341dc0dddcc4f451200a5636b8a77bd6512775723229c4a37190e",
+      "matches": true,
+      "name": "render_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/faber_visser_astro_ph_0512213v2_p4.png"
+    },
+    {
+      "actual_sha256": "0aba9f8ff8e58f87a6859aa96a3aa42b0133b71a3a22aafa9199efa76208dbb5",
+      "expected_sha256": "0aba9f8ff8e58f87a6859aa96a3aa42b0133b71a3a22aafa9199efa76208dbb5",
+      "matches": true,
+      "name": "render_identity",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/philipp_1702_08412v2_p5.png"
+    },
+    {
+      "matches": true,
+      "name": "inherited_snapshot",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    },
+    {
+      "matches": true,
+      "name": "inherited_snapshot",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "matches": true,
+      "name": "inherited_snapshot",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "independent_hand_derivation": {
+    "bytes": 9960,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/DERIVATION_v1.md",
+    "sha256": "5fbf55c9ca1f1cb0240429edd510ec11a75658388f19beea77e56c7884d084ab"
+  },
+  "inherited_sources": [
+    {
+      "bytes": 23572,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "read_scope": "Complete note read as supplied prior candidate premise/context, not a fresh full proof audit or adoption of status.",
+      "sha256": "819c683b881066c736888ec51d735b04afab6d25a70a4515170f71b74cf2fd32",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/inherited_sources/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "snapshot_sha256": "819c683b881066c736888ec51d735b04afab6d25a70a4515170f71b74cf2fd32"
+    },
+    {
+      "bytes": 12374,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "read_scope": "Complete note read as supplied prior candidate premise/context, not a fresh full proof audit or adoption of status.",
+      "sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/inherited_sources/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "snapshot_sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68"
+    },
+    {
+      "bytes": 11646,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "read_scope": "Complete note read as supplied prior candidate premise/context, not a fresh full proof audit or adoption of status.",
+      "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/inherited_sources/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "snapshot_sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000"
+    }
+  ],
+  "new_raw_data_downloads": 0,
+  "new_science_implementation_runs": 0,
+  "origin_main_observed": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "parent_code_runs": 0,
+  "render_receipt": {
+    "bytes": 6797,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/RENDER_RECEIPT_v1.json",
+    "sha256": "fe228e62d419d168336a9e0f59e81f1a6ec882b4ec77138ea0f84a9cbeb419f9"
+  },
+  "report": {
+    "bytes": 8092,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/REPORT_v1.md",
+    "sha256": "f4f7e79aeee9775a1d7954c33c23d71a67cddb673bcda017b5280b517f415c1f"
+  },
+  "reviewer": "/root/launch_check",
+  "scope": "Independent primary-source/measurement assessment before new M17 theory/code exposure.",
+  "source_base": "cdf67b716d61b49d03313e8c21132babddaeca51",
+  "sources": [
+    {
+      "content_type": "application/pdf",
+      "final_url": "https://arxiv.org/pdf/1003.1159v2",
+      "finished_utc": "2026-10-15T18:12:51.612190+00:00",
+      "key": "kaiser_1003_1159v2",
+      "not_admitted": "Higgs-model premises, Planck numerical calibration, or generic field-space flattening verdict.",
+      "ok": true,
+      "pdf_bytes": 192987,
+      "pdf_pages": 17,
+      "pdf_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/kaiser_1003_1159v2.pdf",
+      "pdf_sha256": "85372fd26a42a9aa223697e34bc29ed7b96e6555d2303378cd3f2d39b86169a4",
+      "publication_policy": "External full PDF, extracted text and rendered pages remain local, not publication content.",
+      "read_scope": [
+        "Complete PDF pp. 1-9, introduction, Section II and Section III opening; transformation Eqs. 1-32 used.",
+        "Subsequent p. 9 field-space-curvature discussion and Eqs. 33-36 were seen as context only; no flattening/no-go conclusion imported.",
+        "Rendered PDF pp. 5 and 8 visually checked."
+      ],
+      "recompile_date_note": "PDF prints November 26, 2024; versioned arXiv URL and bytes identify the historical v2 source.",
+      "requested_url": "https://arxiv.org/pdf/1003.1159v2",
+      "started_utc": "2026-10-15T18:12:49.305273+00:00",
+      "status": 200,
+      "text_bytes": 46961,
+      "text_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/kaiser_1003_1159v2.txt",
+      "text_sha256": "1f4fc79be9973e12ceba36716e7f0f96c488736f2c17e1ffd65fe05502c1a92e",
+      "title": "Conformal Transformations with Multiple Scalar Fields",
+      "tls_verification": true,
+      "used_for": "Conformal metric/curvature and multifield kinetic normalization.",
+      "version": "1003.1159v2",
+      "version_date": "2010-04-23",
+      "visual_equation_checks": [
+        {
+          "bytes": 160821,
+          "command": [
+            "pdftoppm",
+            "-f",
+            "5",
+            "-l",
+            "5",
+            "-r",
+            "110",
+            "-singlefile",
+            "-png",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/kaiser_1003_1159v2.pdf",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/kaiser_1003_1159v2_p5"
+          ],
+          "key": "kaiser_1003_1159v2",
+          "page": 5,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/kaiser_1003_1159v2_p5.png",
+          "returncode": 0,
+          "sha256": "c7b37b39407b2e706f5010c2ea2ee3d888e325d1314af58bd32d113dfc0b9ca7",
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "bytes": 174803,
+          "command": [
+            "pdftoppm",
+            "-f",
+            "8",
+            "-l",
+            "8",
+            "-r",
+            "110",
+            "-singlefile",
+            "-png",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/kaiser_1003_1159v2.pdf",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/kaiser_1003_1159v2_p8"
+          ],
+          "key": "kaiser_1003_1159v2",
+          "page": 8,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/kaiser_1003_1159v2_p8.png",
+          "returncode": 0,
+          "sha256": "0f2d1b4f5d055175817093bb78ce1f0722a9fd2d3b22b38ac4c648fef898cd49",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "content_type": "application/pdf",
+      "final_url": "https://arxiv.org/pdf/astro-ph/0309411v2",
+      "finished_utc": "2026-10-15T18:12:52.541336+00:00",
+      "key": "khoury_weltman_astro_ph_0309411v2",
+      "not_admitted": "Runaway potential, constant coupling, ambient minimum, effective mass, shell factor or historical observational acceptance as inputs to this different candidate.",
+      "ok": true,
+      "pdf_bytes": 296080,
+      "pdf_pages": 25,
+      "pdf_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/khoury_weltman_astro_ph_0309411v2.pdf",
+      "pdf_sha256": "4c36136350da8104942c34f459aa926aafbdc1ca4bcc12968dd96ebcc97cb406",
+      "publication_policy": "External full PDF, extracted text and rendered pages remain local, not publication content.",
+      "read_scope": [
+        "Complete PDF pp. 1-12; Sections I-III including action, scalar source, ambient and central boundary conditions, thin/thick shell approximations, Eqs. 1-31.",
+        "Page 12 Section IV opening/Eqs. 32-33 seen as historical context only; no subsequent observational constraints reviewed.",
+        "Rendered PDF p. 9 visually checked, especially Eqs. 16-20."
+      ],
+      "requested_url": "https://arxiv.org/pdf/astro-ph/0309411v2",
+      "started_utc": "2026-10-15T18:12:49.305557+00:00",
+      "status": 200,
+      "text_bytes": 103364,
+      "text_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/khoury_weltman_astro_ph_0309411v2.txt",
+      "text_sha256": "69c95cae4348a47d1bbac4b94b263534a40f3de4374ec599c7fc7a784b0d5e87",
+      "title": "Chameleon Cosmology",
+      "tls_verification": true,
+      "used_for": "Concrete prior finite-body/ambient matching and thin-shell construction, with its actual assumptions.",
+      "version": "astro-ph/0309411v2",
+      "version_date": "2003-12-01",
+      "visual_equation_checks": [
+        {
+          "bytes": 197547,
+          "command": [
+            "pdftoppm",
+            "-f",
+            "9",
+            "-l",
+            "9",
+            "-r",
+            "110",
+            "-singlefile",
+            "-png",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/khoury_weltman_astro_ph_0309411v2.pdf",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/khoury_weltman_astro_ph_0309411v2_p9"
+          ],
+          "key": "khoury_weltman_astro_ph_0309411v2",
+          "page": 9,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/khoury_weltman_astro_ph_0309411v2_p9.png",
+          "returncode": 0,
+          "sha256": "895b2ab9a0114f6353aa110149098727bd60c05820f3534e8d953a525bea4fb3",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "content_type": "application/pdf",
+      "final_url": "https://arxiv.org/pdf/astro-ph/0512213v2",
+      "finished_utc": "2026-10-15T18:12:52.026409+00:00",
+      "key": "faber_visser_astro_ph_0512213v2",
+      "not_admitted": "Actual galaxy profiles, observational catalogue counts, numerical fits, current feasibility or GR stress interpretation in the candidate.",
+      "ok": true,
+      "pdf_bytes": 183961,
+      "pdf_pages": 8,
+      "pdf_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/faber_visser_astro_ph_0512213v2.pdf",
+      "pdf_sha256": "84b99c4836ded6e2e29a0801ec71af640ae87ffcceb7dfab518678bc77127c1e",
+      "publication_policy": "External full PDF, extracted text and rendered pages remain local, not publication content.",
+      "read_scope": [
+        "Complete PDF pp. 1-7, Sections 1-9, equations through 70; references on p. 7 seen but not a review of cited works; p. 8 references not read.",
+        "Primary scope is static metric, distinct dynamical/optical potentials, Eqs. 1, 9-25 and 37-42, and Section 8 observational limitations.",
+        "Rendered PDF p. 4 visually checked."
+      ],
+      "recompile_date_note": "PDF prints August 7, 2018; versioned arXiv URL and bytes identify v2.",
+      "requested_url": "https://arxiv.org/pdf/astro-ph/0512213v2",
+      "started_utc": "2026-10-15T18:12:49.305644+00:00",
+      "status": 200,
+      "text_bytes": 55307,
+      "text_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/faber_visser_astro_ph_0512213v2.txt",
+      "text_sha256": "0bf6675e2c3f6acd3a42a0e2e4a0ee96ed527d9ee7bac27f9ceb5e3cbe9dc9d8",
+      "title": "Combining rotation curves and gravitational lensing: How to measure the equation of state of dark matter in the galactic halo",
+      "tls_verification": true,
+      "used_for": "Concrete prior two-probe static metric reconstruction and separation from GR matter-density inference.",
+      "version": "astro-ph/0512213v2",
+      "version_date": "2006-07-18",
+      "visual_equation_checks": [
+        {
+          "bytes": 350940,
+          "command": [
+            "pdftoppm",
+            "-f",
+            "4",
+            "-l",
+            "4",
+            "-r",
+            "110",
+            "-singlefile",
+            "-png",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/faber_visser_astro_ph_0512213v2.pdf",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/faber_visser_astro_ph_0512213v2_p4"
+          ],
+          "key": "faber_visser_astro_ph_0512213v2",
+          "page": 4,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/faber_visser_astro_ph_0512213v2_p4.png",
+          "returncode": 0,
+          "sha256": "0f4432d7ac7341dc0dddcc4f451200a5636b8a77bd6512775723229c4a37190e",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "content_type": "application/pdf",
+      "final_url": "https://arxiv.org/pdf/1702.08412v2",
+      "finished_utc": "2026-10-15T18:12:53.178399+00:00",
+      "key": "philipp_1702_08412v2",
+      "not_admitted": "Numerical clock precision, a real geoid/metric reconstruction, general fibre-medium correction or later exact Earth models.",
+      "ok": true,
+      "pdf_bytes": 8485252,
+      "pdf_pages": 24,
+      "pdf_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/philipp_1702_08412v2.pdf",
+      "pdf_sha256": "89a97a6c20278fe92bd2c096a6c19b1475b497302e1ac9c9e42ce7ba20b44b0e",
+      "publication_policy": "External full PDF, extracted text and rendered pages remain local, not publication content.",
+      "read_scope": [
+        "Complete PDF pp. 4-6, Section III A-C, Eqs. 13-27; Section IV opening and Eqs. 28-29 seen as context only.",
+        "Partial introductory/Newtonian pp. 1-3 text was exposed by a truncated tool response and is not claimed as a complete reading.",
+        "Rendered PDF p. 5 visually checked, especially Eqs. 17-24."
+      ],
+      "requested_url": "https://arxiv.org/pdf/1702.08412v2",
+      "started_utc": "2026-10-15T18:12:49.306153+00:00",
+      "status": 200,
+      "text_bytes": 127005,
+      "text_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/philipp_1702_08412v2.txt",
+      "text_sha256": "9c9ce489af7542dc42ff962d86effff850cc79ff7c2b19072b49760ebadecfde",
+      "title": "Definition of the relativistic geoid in terms of isochronometric surfaces",
+      "tls_verification": true,
+      "used_for": "Stationary standard-clock redshift potential and distinction between lapse and complete geometry.",
+      "version": "1702.08412v2",
+      "version_date": "2017-06-06",
+      "visual_equation_checks": [
+        {
+          "bytes": 321743,
+          "command": [
+            "pdftoppm",
+            "-f",
+            "5",
+            "-l",
+            "5",
+            "-r",
+            "110",
+            "-singlefile",
+            "-png",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/philipp_1702_08412v2.pdf",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/philipp_1702_08412v2_p5"
+          ],
+          "key": "philipp_1702_08412v2",
+          "page": 5,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/philipp_1702_08412v2_p5.png",
+          "returncode": 0,
+          "sha256": "0aba9f8ff8e58f87a6859aa96a3aa42b0133b71a3a22aafa9199efa76208dbb5",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "content_type": "application/pdf",
+      "final_url": "https://arxiv.org/pdf/gr-qc/0509001v2",
+      "finished_utc": "2026-10-15T18:14:41.625512+00:00",
+      "key": "salgado_gr_qc_0509001v2",
+      "not_admitted": "Historical experimental bounds, numerical Newton calibration or later well-posedness theorem.",
+      "ok": true,
+      "pdf_bytes": 471565,
+      "pdf_pages": 29,
+      "pdf_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/salgado_gr_qc_0509001v2.pdf",
+      "pdf_sha256": "b09a69950f7eff17750f580036c38efdd0f98dfc1a784bbee3d1535facedb19e",
+      "publication_policy": "External full PDF, extracted text and rendered pages remain local, not publication content.",
+      "read_scope": [
+        "Complete PDF pp. 1-4, introduction and Section II through Eq. 18.",
+        "Section II Eqs. 1, 6-17 used for Jordan action, scalar-curvature source and trace elimination; later Cauchy/hyperbolicity analysis not read.",
+        "Rendered PDF p. 4 visually checked."
+      ],
+      "recompile_date_note": "PDF prints August 30, 2018; versioned arXiv URL and bytes identify v2.",
+      "requested_url": "https://arxiv.org/pdf/gr-qc/0509001v2",
+      "started_utc": "2026-10-15T18:14:39.496121+00:00",
+      "status": 200,
+      "text_bytes": 138354,
+      "text_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/salgado_gr_qc_0509001v2.txt",
+      "text_sha256": "f5b8e5b51b97190a87959fda0af9fa664e363010e092c4fa7e9b6f22adf96611",
+      "title": "The Cauchy problem of scalar-tensor theories of gravity",
+      "tls_verification": true,
+      "used_for": "Direct primary comparator for Jordan scalar variation and metric trace/matter source.",
+      "version": "gr-qc/0509001v2",
+      "version_date": "2006-08-07",
+      "visual_equation_checks": [
+        {
+          "bytes": 173597,
+          "command": [
+            "pdftoppm",
+            "-f",
+            "4",
+            "-l",
+            "4",
+            "-r",
+            "110",
+            "-singlefile",
+            "-png",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/primary_sources/salgado_gr_qc_0509001v2.pdf",
+            "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/salgado_gr_qc_0509001v2_p4"
+          ],
+          "key": "salgado_gr_qc_0509001v2",
+          "page": 4,
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/independent_observation_v1/page_renders/salgado_gr_qc_0509001v2_p4.png",
+          "returncode": 0,
+          "sha256": "4ac6ff1066959641785c7c3f75be8acf5429d7223ae9dc032f6d85f80bde6b03",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    }
+  ],
+  "unavailable_selected_sources": [],
+  "warnings": [
+    "Initial parallel pypdf extraction emitted four rotated-text warnings and one uninterpretable-font warning; source attribution within that shared stream is unavailable.",
+    "Separate Salgado extraction emitted one rotated-text warning.",
+    "Six relevant equation pages rendered and visually read; extracted text is not treated as infallible equation transcription.",
+    "Original arXiv version dates and printed PDF recompilation dates differ in three files; exact versioned URL and byte hash control."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-10-15T18:14:35.428113+00:00",
+  "original_source_sha256": "6e1379f3827436e6d92b22008f3c7b28b32f587d6348b542d5cd81ec203723f0",
+  "original_result_sha256": "8902c547dbb1344f7425e9f7c991710685d5c867655ff182ec786c59731e0821",
+  "original_passed": 48,
+  "original_failed": 1,
+  "failure": "SymPy did not combine log(1/(1-H^2 L^2)) and -log(1-H^2 L^2) without the admitted positive static-chart domain. No field equation or numerical discrepancy.",
+  "repair": "Parameterize H^2 L^2=1-exp(-p), p>0, which covers the full admitted domain; add an exact Ricci monotonicity control so each synthetic upper curvature bound is attained at an endpoint, not justified only by sampling. No tolerance or physical input changed."
+}

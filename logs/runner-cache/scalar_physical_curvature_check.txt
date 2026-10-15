@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/scalar_physical_curvature_check.py
+runner_sha256: 61286432a5d19c861dda47a0dbbdf7258b4d0d77ad0513af5d667fd4edb52792
+input_fingerprint_sha256: 04125f06919b18e7f335c5b8791099991a3b682cf0d4312e3ceaae36f5955518
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.47
+status: ok
+----- stdout -----
+per_element: checked: Weyl coefficients, full scalar variation, Ricci contraction, signs and conformal normalization
+per_site: checked: six synthetic scalar profiles in specified metrics; no actual gravitating body or empirical calibration
+per_mode: checked and not executed: no full dynamical spectrum or force/gradient bound
+per_block: checked: regular finite-domain comparison, spherical Green quadrature and integrated scalar flux
+lattice_wide: checked and not executed: no action/state/scale selection, full Einstein/matter solution or empirical validation
+{
+  "actual_current_surface_status": "conditional-support",
+  "counts": {
+    "failed": 0,
+    "passed": 82
+  },
+  "empirical_tests": 0,
+  "failed_checks": [],
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/NO_GO_DISCIPLINE_CHECKLIST.md": "358ba8e5317cc517cd2d2400a5595a56b7c4f7f9ee3adf92ff2347f9a7cb1f72",
+    "docs/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md": "819c683b881066c736888ec51d735b04afab6d25a70a4515170f71b74cf2fd32",
+    "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000",
+    "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68",
+    "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+    "scripts/scalar_physical_curvature_action.py": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+    "scripts/scalar_physical_curvature_geometry.py": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768"
+  },
+  "observational_datasets_opened": 0,
+  "primary_sha256": "61286432a5d19c861dda47a0dbbdf7258b4d0d77ad0513af5d667fd4edb52792",
+  "read_inventory": {
+    "integrity_reads": [
+      "This primary and declared note/helper/premise/checklist inputs; no observed arrays, inherited output values or reviewer results loaded"
+    ],
+    "scientific_inputs": [
+      "Symbolic original action and explicitly frozen synthetic geometries in declared helpers"
+    ]
+  },
+  "remaining_inputs": [
+    "Actual complete action and parameters, ambient/initial state",
+    "Calibrated static physical metric, curvature errors and complete boundary",
+    "Material/metric consistency and dynamical environment realization",
+    "Identification of action coefficient or coupling with an actual force/readout"
+  ],
+  "scope": "Necessary finite-domain scalar ceiling under the complete supplied action, physical static metric, regularity and boundary premises",
+  "target_claim_type": "bounded_theorem"
+}
+TOTAL: PASS=82 FAIL=0
+
+----- stderr -----
+

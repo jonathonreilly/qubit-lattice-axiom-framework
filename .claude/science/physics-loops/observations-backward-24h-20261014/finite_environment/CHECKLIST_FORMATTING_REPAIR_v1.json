@@ -1,0 +1,7 @@
+{
+  "scope": "Final new-file whitespace scan; original WORKING_v1 stays unchanged in history and is removed only from selected plain views. Checklist loses exactly one excess terminal newline. No note, primary, helper, proof, protocol or check expression changed.",
+  "path": ".claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/NO_GO_DISCIPLINE_CHECKLIST.md",
+  "before_sha256": "837345b9282f4c2ec3a16f0b08c5e8731087dc864918c954928629803d52d4bd",
+  "after_sha256": "358ba8e5317cc517cd2d2400a5595a56b7c4f7f9ee3adf92ff2347f9a7cb1f72",
+  "delta": "old bytes equal new bytes plus one terminal newline"
+}

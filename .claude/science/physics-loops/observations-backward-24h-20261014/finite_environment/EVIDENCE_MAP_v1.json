@@ -1,0 +1,1215 @@
+{
+  "scope": "Immutable source/history path map; selected plain files are convenient identical views, not independent evidence",
+  "archive": {
+    "path": "WORK_HISTORY_v1.json.gz",
+    "sha256": "57eb0136e8e159d86d91c1cd83d0607c3f21c32b6a8db2802891eeef3e1bafdd",
+    "bytes": 1667249
+  },
+  "members": [
+    {
+      "path": "ACTION_RESULTS_v1.json",
+      "sha256": "7d9e427dc79f7efcaa2087d0dca32f23929f5f4ac8dd67ccf1ce894e562ffed6",
+      "bytes": 2242
+    },
+    {
+      "path": "ACTION_RESULTS_v2.json",
+      "sha256": "5afd8210a40c1d5bf37da320d6e6c6666af56afbf3518a0788b30f2c89387d04",
+      "bytes": 2670
+    },
+    {
+      "path": "ACTION_RESULTS_v3.json",
+      "sha256": "3e6028871bf4c87f8ed08e90679a9f28a8303370455cb06b14cb4411c53a39f6",
+      "bytes": 2986
+    },
+    {
+      "path": "CANONICAL_BINDING_v2.json",
+      "sha256": "e7e8a56be954b760f2ea032be9baaf7655f5fdbb5c948c908a2128614e3b0f62",
+      "bytes": 8587
+    },
+    {
+      "path": "CANONICAL_BINDING_v3.json",
+      "sha256": "82c5bb9bd9a72ac4099a3b90006d3d0f118320b6ed37b28a20c191cdadf9995c",
+      "bytes": 8587
+    },
+    {
+      "path": "CANONICAL_BINDING_v4.json",
+      "sha256": "9a15910d50247b6b96e830eb4ee851ddd3027132ef6afd6d58793132cec7c95c",
+      "bytes": 8587
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v1.json",
+      "sha256": "7ee352a5c3f9b331d67d21b6cc2b6a473edbc1456261ed5b1a5ab89103674469",
+      "bytes": 3260
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v2.json",
+      "sha256": "8f391194f4216e0dcb9895119b4afb14debedeb79cca7b6e87ca7c446f7e8583",
+      "bytes": 3259
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v3.json",
+      "sha256": "db48b23c0d8c692c40b4d8343243a9e1b2ac8acf01042f3e34c7e9067509d78f",
+      "bytes": 3259
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v4.json",
+      "sha256": "e50a530984cc2e0bac0381a18506d23d5ae60110f40ef3df37bdee08b2c24625",
+      "bytes": 3260
+    },
+    {
+      "path": "CANONICAL_FORMAT_v1.json",
+      "sha256": "147e1f188eab37563c1aabaecb61d92a2385e4e84f1f346bcc364f61c02031c8",
+      "bytes": 529
+    },
+    {
+      "path": "CHECKLIST_FORMATTING_REPAIR_v1.json",
+      "sha256": "0af0458088d244cacf78d426efe957c770f060686c2bfb8d2895c27b2e8ff527",
+      "bytes": 633
+    },
+    {
+      "path": "CHECKPOINT_v1.json",
+      "sha256": "644e2da0b4d1aed9c3223a580ca260f2b76bbac4db5a4703102f45d5a33051a1",
+      "bytes": 1452
+    },
+    {
+      "path": "CHECKPOINT_v2.json",
+      "sha256": "35dec215372eb4621c35c71327a1caa31b0f4db938e497ee43e52cbec39a0a16",
+      "bytes": 1941
+    },
+    {
+      "path": "CHECKPOINT_v3.json",
+      "sha256": "63b03e14a3eb56bca1aa3668ba650b9b606cafc8f0ff49a932b0fb3559ee41e4",
+      "bytes": 4647
+    },
+    {
+      "path": "CHECKPOINT_v4.json",
+      "sha256": "34692f65282e99b5f92d439cf8c6ffd24ddac9bcf01cdc4516a38904011fc02d",
+      "bytes": 4818
+    },
+    {
+      "path": "CONFORMANCE_v1.md",
+      "sha256": "cc688f024c57b5faa27ebc44ed3fcdf91495f89c2ee54d3bd138c0c7099411cc",
+      "bytes": 5429
+    },
+    {
+      "path": "EXECUTION_GUARD_FAILURE_v1.json",
+      "sha256": "9e3fb939bcc5e932f38a7da8a25f20ade3fd277301fb271af0b77043e0ed5e5b",
+      "bytes": 645
+    },
+    {
+      "path": "FORMATTING_REPAIR_v1.json",
+      "sha256": "2bd4921b95f666c7fc35796ab2fa8e64cb464598409f064f3549e6ee1b7851dc",
+      "bytes": 822
+    },
+    {
+      "path": "GEOMETRY_REPAIR_v1.json",
+      "sha256": "74fea3877e0e69d8bdef0334403b33efbcbf788e68f618e9048260220603424f",
+      "bytes": 740
+    },
+    {
+      "path": "GEOMETRY_RESULTS_v1.json",
+      "sha256": "8902c547dbb1344f7425e9f7c991710685d5c867655ff182ec786c59731e0821",
+      "bytes": 493348
+    },
+    {
+      "path": "GEOMETRY_RESULTS_v2.json",
+      "sha256": "f9a1ecff10ff061624a726489bb0f68337a468d3fb644a5826290f709071cf21",
+      "bytes": 493444
+    },
+    {
+      "path": "GEOMETRY_RESULTS_v3.json",
+      "sha256": "327645ff45d8581ece24ca539c06227ad004e64d7a2823e07d3f0858c9eecd5a",
+      "bytes": 493685
+    },
+    {
+      "path": "M17_SOURCE_PREFLIGHT_v1.json",
+      "sha256": "89b64a6df93b4c499e1a9ae95305af0ddc5f7a96c969a56e21b5dc25b31ef3bf",
+      "bytes": 1349
+    },
+    {
+      "path": "M17_SOURCE_PREFLIGHT_v2.json",
+      "sha256": "0fe04cf392f61f94f13cb5105cf6485b3da35856c6b437e0f60ce2037e9434ed",
+      "bytes": 1394
+    },
+    {
+      "path": "M17_SOURCE_PREFLIGHT_v3.json",
+      "sha256": "8649bf01c9390c69a5b653267b38674c6648b8e98bac9ec2810b7a8082d32b4d",
+      "bytes": 1532
+    },
+    {
+      "path": "NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "358ba8e5317cc517cd2d2400a5595a56b7c4f7f9ee3adf92ff2347f9a7cb1f72",
+      "bytes": 1981
+    },
+    {
+      "path": "NUMERICAL_PROTOCOL_v1.json",
+      "sha256": "b643a7832d99ac99b5f677e6bb3a12447500001525a39504fb6b01b790c6ffbd",
+      "bytes": 570
+    },
+    {
+      "path": "NUMERICAL_PROTOCOL_v2.json",
+      "sha256": "b643a7832d99ac99b5f677e6bb3a12447500001525a39504fb6b01b790c6ffbd",
+      "bytes": 570
+    },
+    {
+      "path": "NUMERICAL_PROTOCOL_v3.json",
+      "sha256": "b643a7832d99ac99b5f677e6bb3a12447500001525a39504fb6b01b790c6ffbd",
+      "bytes": 570
+    },
+    {
+      "path": "OPEN_PRS_v1.json",
+      "sha256": "2fd813fd9f90913a99e7a7fad066659844ce7b1a83c59e1958b57ceeeec83fbb",
+      "bytes": 19620
+    },
+    {
+      "path": "PLAIN_FILES_v1.json",
+      "sha256": "1ddda324ac789cc67499ee56cc542862893b9856725f465a7e8c20efeaf54657",
+      "bytes": 1049
+    },
+    {
+      "path": "PR9611_FILES_v1.json",
+      "sha256": "5d0e2048b493a954c2e55f8ee69a83b9fadb3e660317998893a9845d428f91be",
+      "bytes": 58599
+    },
+    {
+      "path": "PR9611_v1.json",
+      "sha256": "99aaaacacd82e75785e2eeadc43cd9c5a68d8594b12066cb444026935257e464",
+      "bytes": 23905
+    },
+    {
+      "path": "PRIOR_SEARCH_v1.json",
+      "sha256": "578a27977f301ddcae3c62ec719acdedc62866a4cad6686e5c87e0b149bd976f",
+      "bytes": 11188
+    },
+    {
+      "path": "RANGE_DOMAIN_REPAIR_v1.json",
+      "sha256": "0d6ef857e4dd630ca2cd3c1579ba09920ce6e67d86e4699936eaab0e2ecf5b0f",
+      "bytes": 553
+    },
+    {
+      "path": "REPO_CONTEXT_v1.json",
+      "sha256": "fc70efaddd69055ce788d11512e7c328318c5b9c10374af51731925a911d95f6",
+      "bytes": 787
+    },
+    {
+      "path": "REVIEW_RECORD_v1.md",
+      "sha256": "e2e92e3eb9444de4fd1ce2fc458e7f8ae7b5bcc32cf5b00c8786201e47e4bc6f",
+      "bytes": 4928
+    },
+    {
+      "path": "WORKING_v1.md",
+      "sha256": "a559e543db0d97e1367affadace4757065c14e10ab62b185c06431d603255807",
+      "bytes": 6721
+    },
+    {
+      "path": "action_check_v1.py",
+      "sha256": "d4da5d12e8811a096d141d20bdf6b0f81db903efc6f8a6f2fc77f26fee1e28a1",
+      "bytes": 3786
+    },
+    {
+      "path": "action_check_v2.py",
+      "sha256": "84e4ba889843702d573157d9b405241653c800b2ad3a1423a2d95e94beab5273",
+      "bytes": 4344
+    },
+    {
+      "path": "action_check_v3.py",
+      "sha256": "b341886bbf67c4274633d3648a9db88d98c8410d69c0176e068b42f81a5c1adc",
+      "bytes": 4678
+    },
+    {
+      "path": "archive_packet_v1.py",
+      "sha256": "1cceef57c76c1d15d732e27bcf8fdf55a20f3a9500bcf9159de08fd8de1d190a",
+      "bytes": 2092
+    },
+    {
+      "path": "canonical_before_range_domain_v1.md",
+      "sha256": "9e8d265f4a5a30135b3bb8aeb3be2939c538c1f185fbc2d8d134b47e4624cca1",
+      "bytes": 14388
+    },
+    {
+      "path": "canonical_draft_v1.md",
+      "sha256": "a0af7850c1593698e3ea304a31053ff79c9b6c79bfa63542725b2781b736db63",
+      "bytes": 10570
+    },
+    {
+      "path": "canonical_draft_v2.md",
+      "sha256": "64a3522828decd98b68d53d6b0f20f0966b91a70a36ed064e42f611fde9916f3",
+      "bytes": 11538
+    },
+    {
+      "path": "canonical_geometry_before_clock_v1.py",
+      "sha256": "dd8a6831b8d4b569bf39e073279b5d5bc8b1dac43f8bb931d7ce6fef2d0847b7",
+      "bytes": 8846
+    },
+    {
+      "path": "canonical_preformat_v1/scalar_physical_curvature_action.py",
+      "sha256": "1640d3efc2b3c10f1cc14899a625bb90a80a87c85da82484a80fc2e89cee879a",
+      "bytes": 4306
+    },
+    {
+      "path": "canonical_preformat_v1/scalar_physical_curvature_geometry.py",
+      "sha256": "39071c109e5307d3d4acb9f48a3ae9fe4b8eab11b00d341eccd47c7a1d35339e",
+      "bytes": 7578
+    },
+    {
+      "path": "checklist_formatting_v1/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "837345b9282f4c2ec3a16f0b08c5e8731087dc864918c954928629803d52d4bd",
+      "bytes": 1982
+    },
+    {
+      "path": "checklist_formatting_v1/RESULTS_v1.json",
+      "sha256": "2b313f597b04cd80e91042d9165dd4e14d1c1dfac218065bb1ad85e687cc4b60",
+      "bytes": 589323
+    },
+    {
+      "path": "checklist_formatting_v1/SUMMARY_v1.json",
+      "sha256": "506a81180828e02b6f312a2ca6b8e0b4dbdc28f4c3fc3717856baf4c47faf21f",
+      "bytes": 2195
+    },
+    {
+      "path": "checklist_formatting_v1/scalar_physical_curvature_check.txt",
+      "sha256": "7d9b88fed89815408c732a37aa70f4f6045e4fac1920b304e0c90633a130c516",
+      "bytes": 3128
+    },
+    {
+      "path": "formatting_v1/RESULTS_v1.json",
+      "sha256": "a325dc6f0c7399a4418d5361d8b909e1ad71130115a83586a85524f7f845ab68",
+      "bytes": 589323
+    },
+    {
+      "path": "formatting_v1/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "5ab35d877647f97949adf0712ddff833dfa84d286bcec6abddc675bb635eab51",
+      "bytes": 14512
+    },
+    {
+      "path": "formatting_v1/SUMMARY_v1.json",
+      "sha256": "4d35ea64478d936cc8f970f0b2a88d14fe6eac1ed9d3671dd1b358d80f85ee58",
+      "bytes": 2195
+    },
+    {
+      "path": "formatting_v1/scalar_physical_curvature_check.py",
+      "sha256": "662b71a11a02b08dea681949a0efa60672c0fe8ab38b6f0236131740e39adb27",
+      "bytes": 4447
+    },
+    {
+      "path": "formatting_v1/scalar_physical_curvature_check.txt",
+      "sha256": "b7e6d6fd8e0daa32ea5f51a26668c9bc0184696e0894b515d4e9ae13ba800e25",
+      "bytes": 3128
+    },
+    {
+      "path": "geometry_check_v1.py",
+      "sha256": "6e1379f3827436e6d92b22008f3c7b28b32f587d6348b542d5cd81ec203723f0",
+      "bytes": 7466
+    },
+    {
+      "path": "geometry_check_v2.py",
+      "sha256": "bee3b1c897fbc7b7a57d212eaf5343a36c2afba9df0e03f420f809a8d7c1020a",
+      "bytes": 7753
+    },
+    {
+      "path": "geometry_check_v3.py",
+      "sha256": "1d4f97061d442dbf76c2237f88e5cc56f9641a582d9ac55e813854cb22e02b96",
+      "bytes": 7992
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "sha256": "229972e1e0805e730ba49769ec9f1110453eea3422595c1c2fc78ff21c9eaefa",
+      "bytes": 4530
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_CORRESPONDENCE_v1.md",
+      "sha256": "010327b97884a45995d94b767f904bd7f29c48b2354d98dccb15437e715d4dd6",
+      "bytes": 7959
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_EXPOSURE_v1.json",
+      "sha256": "cc5b34346df20ed91a5990f9ae063f5e1c11d48d716e1b4ee7b15e3523dc164f",
+      "bytes": 1061
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_EXPOSURE_v1__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "a0af7850c1593698e3ea304a31053ff79c9b6c79bfa63542725b2781b736db63",
+      "bytes": 10570
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_EXPOSURE_v1__action_check_v2.py",
+      "sha256": "84e4ba889843702d573157d9b405241653c800b2ad3a1423a2d95e94beab5273",
+      "bytes": 4344
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_EXPOSURE_v1__geometry_check_v3.py",
+      "sha256": "1d4f97061d442dbf76c2237f88e5cc56f9641a582d9ac55e813854cb22e02b96",
+      "bytes": 7992
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_RESULTS_EXPOSURE_v1.json",
+      "sha256": "d2cf6d771ba222bc466d3028798284f83092a788fc5fa50e25bc3736a8fd1f16",
+      "bytes": 1343
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_RESULTS_EXPOSURE_v1__ACTION_RESULTS_v2.json",
+      "sha256": "5afd8210a40c1d5bf37da320d6e6c6666af56afbf3518a0788b30f2c89387d04",
+      "bytes": 2670
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_RESULTS_EXPOSURE_v1__GEOMETRY_RESULTS_v1.json",
+      "sha256": "8902c547dbb1344f7425e9f7c991710685d5c867655ff182ec786c59731e0821",
+      "bytes": 493348
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_RESULTS_EXPOSURE_v1__GEOMETRY_RESULTS_v3.json",
+      "sha256": "327645ff45d8581ece24ca539c06227ad004e64d7a2823e07d3f0858c9eecd5a",
+      "bytes": 493685
+    },
+    {
+      "path": "independent_geometry_v1/AUTHOR_RESULTS_EXPOSURE_v1__NUMERICAL_PROTOCOL_v3.json",
+      "sha256": "b643a7832d99ac99b5f677e6bb3a12447500001525a39504fb6b01b790c6ffbd",
+      "bytes": 570
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_BINDING_RESULTS_v1.json",
+      "sha256": "1a7f7c36207921630f379b5cd84dda06c2e3f53ad19deb4a729208eeb3765ef4",
+      "bytes": 8877
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_CONTROLS_RESULTS_v1.json",
+      "sha256": "29566693aa82379c441e3d96c361bd2a5b49cbf1f3ffd134ed16bdd95c2afa44",
+      "bytes": 5286
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1.json",
+      "sha256": "03e95cdd3832f5b8435ef317fd0d517a135b80789ffe82642b9bdfbde6c86683",
+      "bytes": 1287
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "9e8d265f4a5a30135b3bb8aeb3be2939c538c1f185fbc2d8d134b47e4624cca1",
+      "bytes": 14388
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__scalar_physical_curvature_action.py",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "bytes": 5030
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__scalar_physical_curvature_check.py",
+      "sha256": "662b71a11a02b08dea681949a0efa60672c0fe8ab38b6f0236131740e39adb27",
+      "bytes": 4447
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v1__scalar_physical_curvature_geometry.py",
+      "sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "bytes": 9649
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v2.json",
+      "sha256": "c1f28bb1b7ddcefb7a67ad39a1650bf883c46e36b5213f05ff1906dc7557e3fc",
+      "bytes": 788
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v2__RANGE_DOMAIN_REPAIR_v1.json",
+      "sha256": "0d6ef857e4dd630ca2cd3c1579ba09920ce6e67d86e4699936eaab0e2ecf5b0f",
+      "bytes": 553
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_EXPOSURE_v2__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "5ab35d877647f97949adf0712ddff833dfa84d286bcec6abddc675bb635eab51",
+      "bytes": 14512
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_NOTE_DELTA_v1.diff",
+      "sha256": "f712e4f78e886c7fa514dbced95af7a2836347125bf6b1a1efd01882456a0a85",
+      "bytes": 5278
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1.json",
+      "sha256": "f899f423547de788a7b070094790967478aaab03ab368825044d1e30612d76cb",
+      "bytes": 1883
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__CANONICAL_BINDING_v2.json",
+      "sha256": "e7e8a56be954b760f2ea032be9baaf7655f5fdbb5c948c908a2128614e3b0f62",
+      "bytes": 8587
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__CANONICAL_EXECUTION_v2.json",
+      "sha256": "8f391194f4216e0dcb9895119b4afb14debedeb79cca7b6e87ca7c446f7e8583",
+      "bytes": 3259
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__CHECKPOINT_v2.json",
+      "sha256": "35dec215372eb4621c35c71327a1caa31b0f4db938e497ee43e52cbec39a0a16",
+      "bytes": 1941
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__RESULTS_v1.json",
+      "sha256": "a325dc6f0c7399a4418d5361d8b909e1ad71130115a83586a85524f7f845ab68",
+      "bytes": 589323
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__SUMMARY_v1.json",
+      "sha256": "4d35ea64478d936cc8f970f0b2a88d14fe6eac1ed9d3671dd1b358d80f85ee58",
+      "bytes": 2195
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_PRODUCTS_EXPOSURE_v1__scalar_physical_curvature_check.txt",
+      "sha256": "b7e6d6fd8e0daa32ea5f51a26668c9bc0184696e0894b515d4e9ae13ba800e25",
+      "bytes": 3128
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "4292282efe33ba728632261a8007b06c78bdeb92cbcd1cc3fd90a63894bbad3a",
+      "bytes": 7625
+    },
+    {
+      "path": "independent_geometry_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "a1de35a50d53ee84b0d009250e8d50e9c98864a3e571f264ec1ba2d195b26be2",
+      "bytes": 9282
+    },
+    {
+      "path": "independent_geometry_v1/CLOCK_DOMAIN_DELTA_v1.diff",
+      "sha256": "cce8226bbfba532c91b00344e1726154421acc7276fdc22dae3429b2836242c7",
+      "bytes": 747
+    },
+    {
+      "path": "independent_geometry_v1/CLOCK_DOMAIN_FINDING_v1.md",
+      "sha256": "d89dc819cb274cb0cac527905d884878d635729ad2c51a9312856abc968777c7",
+      "bytes": 1470
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_BINDING_RESULTS_v1.json",
+      "sha256": "20812391d5ad22d9dc2fd4bab371dbaefc6e28629940392dc1bb99b1c18d02e4",
+      "bytes": 11640
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1.json",
+      "sha256": "07e252b9578360e08642a6d52da15c7993660f3b3802d29a95207c9238d56fed",
+      "bytes": 3317
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__CANONICAL_BINDING_v3.json",
+      "sha256": "82c5bb9bd9a72ac4099a3b90006d3d0f118320b6ed37b28a20c191cdadf9995c",
+      "bytes": 8587
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__CANONICAL_EXECUTION_v3.json",
+      "sha256": "db48b23c0d8c692c40b4d8343243a9e1b2ac8acf01042f3e34c7e9067509d78f",
+      "bytes": 3259
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__FORMATTING_REPAIR_v1.json",
+      "sha256": "2bd4921b95f666c7fc35796ab2fa8e64cb464598409f064f3549e6ee1b7851dc",
+      "bytes": 822
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__REPORT_v1.json",
+      "sha256": "1e2ec9cea80840b5fe651a5f35debbd808b31cec613d07d203a79a44384bca51",
+      "bytes": 8350
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__RESULTS_v1.json",
+      "sha256": "2b313f597b04cd80e91042d9165dd4e14d1c1dfac218065bb1ad85e687cc4b60",
+      "bytes": 589323
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+      "bytes": 14511
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__SUMMARY_v1.json",
+      "sha256": "506a81180828e02b6f312a2ca6b8e0b4dbdc28f4c3fc3717856baf4c47faf21f",
+      "bytes": 2195
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__scalar_physical_curvature_action.py",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "bytes": 5030
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__scalar_physical_curvature_check.py",
+      "sha256": "61286432a5d19c861dda47a0dbbdf7258b4d0d77ad0513af5d667fd4edb52792",
+      "bytes": 4446
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__scalar_physical_curvature_check.txt",
+      "sha256": "7d9b88fed89815408c732a37aa70f4f6045e4fac1920b304e0c90633a130c516",
+      "bytes": 3128
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_EXPOSURE_v1__scalar_physical_curvature_geometry.py",
+      "sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "bytes": 9649
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_IDENTITY_v1.json",
+      "sha256": "5c9eeee4add7f31e154ce0083efbd59c90eba7857ace9963ab86d0fa18eb600d",
+      "bytes": 14719
+    },
+    {
+      "path": "independent_geometry_v1/FINAL_FORMATTING_SUPPLEMENT_v1.md",
+      "sha256": "6960477c1a7df9d1c90b16de8c2fd5b1025ab8a7304a16808d98fcfd98b2ad49",
+      "bytes": 2897
+    },
+    {
+      "path": "independent_geometry_v1/INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "69c3f165d096d64d9b5b3f0d80afd7c01e1fd1bbdabdf8d15118ee1a171f69a0",
+      "bytes": 11188
+    },
+    {
+      "path": "independent_geometry_v1/INDEPENDENT_FREEZE_v1.json",
+      "sha256": "8229f23c5adbea79c772087227d22e3136931b98c1521740cbf380b8ad1ea724",
+      "bytes": 3237
+    },
+    {
+      "path": "independent_geometry_v1/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "e9a6e9e9e5f48663e8fe0692b9abe3f998b76fb1405990dfc48268b5369cadd2",
+      "bytes": 4942
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED_EXPOSURE_v1.json",
+      "sha256": "38ba2ab7c378514ed73580726e28e448e25978ab0db5348cf66b77e08eeb5062",
+      "bytes": 1307
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED__EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "819c683b881066c736888ec51d735b04afab6d25a70a4515170f71b74cf2fd32",
+      "bytes": 23572
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED__EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000",
+      "bytes": 11646
+    },
+    {
+      "path": "independent_geometry_v1/INHERITED__EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68",
+      "bytes": 12374
+    },
+    {
+      "path": "independent_geometry_v1/POSTEXPOSURE_RESULTS_v1.json",
+      "sha256": "088e79f07426068d200d051664bfabe7125ab1c53822ff755ced13f8a38d847f",
+      "bytes": 2787
+    },
+    {
+      "path": "independent_geometry_v1/canonical_binding_v1.py",
+      "sha256": "2be6fb4c8052c333d4afe47cdcd96d2e57b4f13adfd5ca7fb632e23e047ec89e",
+      "bytes": 6128
+    },
+    {
+      "path": "independent_geometry_v1/canonical_controls_v1.py",
+      "sha256": "e371cd193939a27a0606adab86930b032f5a1663791b9f4f60947792d9e3c352",
+      "bytes": 7450
+    },
+    {
+      "path": "independent_geometry_v1/final_formatting_binding_v1.py",
+      "sha256": "7caf8e04262ac94e9e81ea3ca2228933b728eb77d860f211b96d231296fa6691",
+      "bytes": 8086
+    },
+    {
+      "path": "independent_geometry_v1/independent_controls_v1.py",
+      "sha256": "6cb1289eab1342cdfc05af91a77c662794c7e36051ff7a852b83587c8a2410b5",
+      "bytes": 6601
+    },
+    {
+      "path": "independent_geometry_v1/postexposure_controls_v1.py",
+      "sha256": "fada508f3cca7e6c898d57d45e8baba5bbe88abe8c94d32db4df43f4b0f5e7ff",
+      "bytes": 4872
+    },
+    {
+      "path": "independent_observation_v1/DERIVATION_v1.md",
+      "sha256": "5fbf55c9ca1f1cb0240429edd510ec11a75658388f19beea77e56c7884d084ab",
+      "bytes": 9960
+    },
+    {
+      "path": "independent_observation_v1/M17_CANONICAL_IDENTITY_v1.json",
+      "sha256": "d92376e3eae2fed54ab840b845478d8beb3a0e12335d6996609c23153ec51a80",
+      "bytes": 95461
+    },
+    {
+      "path": "independent_observation_v1/M17_CANONICAL_SOURCE_COMPARISON_v1.md",
+      "sha256": "83ca5ecb2e2b2c7f9a9d73b38f1447e5f0c687c66a05421298c1a5a440642cdb",
+      "bytes": 11544
+    },
+    {
+      "path": "independent_observation_v1/M17_CLOSING_FREEZE_v1.json",
+      "sha256": "1ea713a93300bf4e8767943c1025108294969eb8d1fb3a1ce0932ab9cc0404ef",
+      "bytes": 22473
+    },
+    {
+      "path": "independent_observation_v1/M17_OPENING_ASSESSMENT_v1.md",
+      "sha256": "153683abe815988d7d2e1049ca3ef17a32a92e4a9c8361bb17dcfe147ac42581",
+      "bytes": 2481
+    },
+    {
+      "path": "independent_observation_v1/PRE_SOURCE_PLAN_v1.md",
+      "sha256": "9052c6bed58554e4b6d84ac985133b8a52777ef611f9407c4cc0cfa51830c86d",
+      "bytes": 1272
+    },
+    {
+      "path": "independent_observation_v1/RENDER_RECEIPT_v1.json",
+      "sha256": "fe228e62d419d168336a9e0f59e81f1a6ec882b4ec77138ea0f84a9cbeb419f9",
+      "bytes": 6797
+    },
+    {
+      "path": "independent_observation_v1/REPORT_v1.md",
+      "sha256": "f4f7e79aeee9775a1d7954c33c23d71a67cddb673bcda017b5280b517f415c1f",
+      "bytes": 8092
+    },
+    {
+      "path": "independent_observation_v1/SEARCH_AND_EXPOSURE_v1.json",
+      "sha256": "fc13dfb55ce4cc5a78c9e173ef4a55e9f908f855f74e1a6603d4af8d3f82d27b",
+      "bytes": 2033
+    },
+    {
+      "path": "independent_observation_v1/SOURCE_ACQUISITION_ADDENDUM_v1.json",
+      "sha256": "a7f12f71448788d870d04069b33fab25257767fabdb0d72fa8a9ceb3a11ec024",
+      "bytes": 1116
+    },
+    {
+      "path": "independent_observation_v1/SOURCE_ACQUISITION_v1.json",
+      "sha256": "84f605fe266295a6a9ce3bca70c06f93c9d7d7d00811098ae88ba2ff1141fb29",
+      "bytes": 4903
+    },
+    {
+      "path": "independent_observation_v1/SOURCE_FREEZE_v1.json",
+      "sha256": "e81a4ae4c9cd2c7bd16104d09043fad866d84b7c7190ab25f34c370b1d66bcbf",
+      "bytes": 23644
+    },
+    {
+      "path": "independent_observation_v1/SOURCE_RECORD_v1.json",
+      "sha256": "f3a9284683a9992eb7e814ed1679cd5dcb2c199f18e822ba29b765008b1caaeb",
+      "bytes": 33541
+    },
+    {
+      "path": "independent_observation_v1/bind_canonical_source_v1.py",
+      "sha256": "30996276a357946194492a37bfebaec0e8325421e01194b8717257f46b51afcf",
+      "bytes": 12973
+    },
+    {
+      "path": "independent_observation_v1/inherited_sources/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "819c683b881066c736888ec51d735b04afab6d25a70a4515170f71b74cf2fd32",
+      "bytes": 23572
+    },
+    {
+      "path": "independent_observation_v1/inherited_sources/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000",
+      "bytes": 11646
+    },
+    {
+      "path": "independent_observation_v1/inherited_sources/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68",
+      "bytes": 12374
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/.claude/science/physics-loops/observations-backward-24h-20261014/finite_environment/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "837345b9282f4c2ec3a16f0b08c5e8731087dc864918c954928629803d52d4bd",
+      "bytes": 1982
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/docs/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "19898e25ef9ae34ee7949f7c688a46dda7c3160f41a69f4986acd9a7f1e998a3",
+      "bytes": 25752
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+      "bytes": 14511
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/policy/origin_ai_execution/AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/policy/origin_main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/policy/origin_main/docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "bytes": 9827
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/scripts/scalar_physical_curvature_action.py",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "bytes": 5030
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/scripts/scalar_physical_curvature_check.py",
+      "sha256": "61286432a5d19c861dda47a0dbbdf7258b4d0d77ad0513af5d667fd4edb52792",
+      "bytes": 4446
+    },
+    {
+      "path": "independent_observation_v1/m17_canonical_inputs_v1/scripts/scalar_physical_curvature_geometry.py",
+      "sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "bytes": 9649
+    },
+    {
+      "path": "mutations_v1/REPORT_v1.json",
+      "sha256": "1e2ec9cea80840b5fe651a5f35debbd808b31cec613d07d203a79a44384bca51",
+      "bytes": 8350
+    },
+    {
+      "path": "mutations_v1/baseline_action/RESULTS.json",
+      "sha256": "5597220cae97e041d7942868025c4638fbd71e33735b48490c183dfa8ba4fc62",
+      "bytes": 2836
+    },
+    {
+      "path": "mutations_v1/baseline_action/scalar_physical_curvature_action.py",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "bytes": 5030
+    },
+    {
+      "path": "mutations_v1/baseline_action/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/baseline_action/stdout.txt",
+      "sha256": "4b821c74bc2e3a38a3c3606c64d7958fde2d22aacb68aa3a88d049050b48b0ba",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/baseline_geometry/RESULTS.json",
+      "sha256": "d31a5f22b863e29dfb6be8d86dcc4b907085c857fb3087e492b031a716e6dff7",
+      "bytes": 6860
+    },
+    {
+      "path": "mutations_v1/baseline_geometry/scalar_physical_curvature_geometry.py",
+      "sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "bytes": 9649
+    },
+    {
+      "path": "mutations_v1/baseline_geometry/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/baseline_geometry/stdout.txt",
+      "sha256": "9e1483c2f70b964fef6be73836e3dc37f144375f0dcf82ac9fc301a859b62e50",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/bootstrap_denominator/RESULTS.json",
+      "sha256": "c779c589fb3794f89fbbafdd1dfb16dd13fbd11cbc0a9f8d6bb1ad03d78dc940",
+      "bytes": 2983
+    },
+    {
+      "path": "mutations_v1/bootstrap_denominator/scalar_physical_curvature_action.py",
+      "sha256": "4bbdd663611d4114a2339f685b4b3b76f4896f0bf8ce7290cee07f5443b2b40c",
+      "bytes": 5030
+    },
+    {
+      "path": "mutations_v1/bootstrap_denominator/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/bootstrap_denominator/stdout.txt",
+      "sha256": "57b019baaaf13efc861fa0fdb9928d25e5ec26d650313af1386e66d957c4e86f",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/clock_range_roundtrip/RESULTS.json",
+      "sha256": "a5adcfb5bac4c91660bde07c43598b4b0856225d1468fe3906386e4502559eaf",
+      "bytes": 6985
+    },
+    {
+      "path": "mutations_v1/clock_range_roundtrip/scalar_physical_curvature_geometry.py",
+      "sha256": "0002773a76c413dcb1568a25d643f93dfc8a7e7ab1cda0cb134135004543f7f8",
+      "bytes": 9649
+    },
+    {
+      "path": "mutations_v1/clock_range_roundtrip/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/clock_range_roundtrip/stdout.txt",
+      "sha256": "09b2027303639eec0af62a00ac45bf9d51e2fbdc080796dc31751f7ee412c397",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/coupling_boundary_scaling/RESULTS.json",
+      "sha256": "dc453ab7d48992031ee3c35078457609cf246d08daeebc597a0200571036355f",
+      "bytes": 3110
+    },
+    {
+      "path": "mutations_v1/coupling_boundary_scaling/scalar_physical_curvature_action.py",
+      "sha256": "41a1ae8e9539002509ce04b9624eac1a79d97a1443ef62321549fb0bb9b6a016",
+      "bytes": 5025
+    },
+    {
+      "path": "mutations_v1/coupling_boundary_scaling/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/coupling_boundary_scaling/stdout.txt",
+      "sha256": "57b019baaaf13efc861fa0fdb9928d25e5ec26d650313af1386e66d957c4e86f",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/curvature_source_sign/RESULTS.json",
+      "sha256": "3d7b774fb266968faaa6b92386930f565be25dac80cf53c205e136316b4b0bb5",
+      "bytes": 3127
+    },
+    {
+      "path": "mutations_v1/curvature_source_sign/scalar_physical_curvature_action.py",
+      "sha256": "cc62f6a05872b8d3d8aa5989e3cf7487cf9c92b30a929bf6fa881cb538abd247",
+      "bytes": 5029
+    },
+    {
+      "path": "mutations_v1/curvature_source_sign/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/curvature_source_sign/stdout.txt",
+      "sha256": "e25ad6c8b580762c1364c8a8c16999b3d5fc64e0f05889a1919768cabd0ddd0f",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/green_volume_measure/RESULTS.json",
+      "sha256": "1fdb4121e53cb210225151d4b392703935550b83e2dd7ec61977d86a4a72ff2a",
+      "bytes": 7418
+    },
+    {
+      "path": "mutations_v1/green_volume_measure/scalar_physical_curvature_geometry.py",
+      "sha256": "33400e51efbf012d7974e3cd4d98e6883647e113a1ad35b841254e2fe9b5b44b",
+      "bytes": 9649
+    },
+    {
+      "path": "mutations_v1/green_volume_measure/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/green_volume_measure/stdout.txt",
+      "sha256": "bee7ad845abcb0bc6ec9c13d565e23fc855a028059587d7e230904b0e7ed19ae",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/harness.py",
+      "sha256": "3d3569031781e3e71df306ab306b96cbcbb5e47a9a47237d9d378c7770833b7f",
+      "bytes": 577
+    },
+    {
+      "path": "mutations_v1/pointwise_first_iterate/RESULTS.json",
+      "sha256": "96f98f6fb45cc2241d16f1004941124a5b957c14a6a0a2b30710e83ce6712c1e",
+      "bytes": 7459
+    },
+    {
+      "path": "mutations_v1/pointwise_first_iterate/scalar_physical_curvature_geometry.py",
+      "sha256": "ab4917843b8c59e920a242b692c839ae908ccdfd034c66ab16a9521d2f0e0b54",
+      "bytes": 9633
+    },
+    {
+      "path": "mutations_v1/pointwise_first_iterate/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/pointwise_first_iterate/stdout.txt",
+      "sha256": "bee7ad845abcb0bc6ec9c13d565e23fc855a028059587d7e230904b0e7ed19ae",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/regulator_potential/RESULTS.json",
+      "sha256": "2dec5b8072b8e34f394b515bb7a3d51f9c353296e6cff26f1d0e8e1dd961b6b4",
+      "bytes": 3413
+    },
+    {
+      "path": "mutations_v1/regulator_potential/scalar_physical_curvature_action.py",
+      "sha256": "efe45757e1279a351939d13ff1da275e4978e0e7e0ca6ff0ca76bc556adcaa49",
+      "bytes": 5034
+    },
+    {
+      "path": "mutations_v1/regulator_potential/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/regulator_potential/stdout.txt",
+      "sha256": "11e24cfd39eace4eb9aea5c79b091d852b9c921c0aa43c9b9daf9312e61af7cc",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/ricci_angular_curvature/RESULTS.json",
+      "sha256": "5b4f1e1df4723723788f73f26f20caa180acbb132fa87f9b847df920d70386f0",
+      "bytes": 7719
+    },
+    {
+      "path": "mutations_v1/ricci_angular_curvature/scalar_physical_curvature_geometry.py",
+      "sha256": "642474f3ff4eb4d8a6e22a5c88f7bf2c491242a19aaa6d51270d6072b90bd9c3",
+      "bytes": 9645
+    },
+    {
+      "path": "mutations_v1/ricci_angular_curvature/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/ricci_angular_curvature/stdout.txt",
+      "sha256": "c22cb2e1a4a53fd1e59d5a466651048ff3b6a70cd9f4107d4cefc193896e8ba1",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/transverse_y_potential/RESULTS.json",
+      "sha256": "816b674b91c2049ff9ff401c878d38d651962a93b24d4183adf886a54a482ff8",
+      "bytes": 3031
+    },
+    {
+      "path": "mutations_v1/transverse_y_potential/scalar_physical_curvature_action.py",
+      "sha256": "5e041dc381f7d426beb18a3d85329668625ef9449416422ab040396e2bb9c233",
+      "bytes": 5026
+    },
+    {
+      "path": "mutations_v1/transverse_y_potential/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/transverse_y_potential/stdout.txt",
+      "sha256": "57b019baaaf13efc861fa0fdb9928d25e5ec26d650313af1386e66d957c4e86f",
+      "bytes": 28
+    },
+    {
+      "path": "mutations_v1/weyl_factor/RESULTS.json",
+      "sha256": "17ad0b1a5d893e8ca1d16f5975e42ddfcf3d0f0f72f96ef5e0e0faf8559cdab6",
+      "bytes": 3003
+    },
+    {
+      "path": "mutations_v1/weyl_factor/scalar_physical_curvature_action.py",
+      "sha256": "56394653f9104037085eeed2c0f61a8d3d95fad7f5fbb25917ca99b5acec8c56",
+      "bytes": 5030
+    },
+    {
+      "path": "mutations_v1/weyl_factor/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mutations_v1/weyl_factor/stdout.txt",
+      "sha256": "57b019baaaf13efc861fa0fdb9928d25e5ec26d650313af1386e66d957c4e86f",
+      "bytes": 28
+    },
+    {
+      "path": "rejected_execution_v1/RESULTS_v1.json",
+      "sha256": "d0d1a6606c9f19e555c3e2f13d467c36eb71896023952f28f25425e9d6371a3b",
+      "bytes": 589323
+    },
+    {
+      "path": "rejected_execution_v1/SUMMARY_v1.json",
+      "sha256": "fba571b511c7101161337230746ff8488aebd753bf57e18fae6ed8acff95b1fb",
+      "bytes": 2195
+    },
+    {
+      "path": "run_mutations_v1.py",
+      "sha256": "4f59539bb3106d02b4cbb4eb01ed4c26f391c7cedd0e529ab4f4af51355fe97c",
+      "bytes": 4543
+    }
+  ],
+  "plain_files": [
+    "NO_GO_DISCIPLINE_CHECKLIST.md",
+    "CONFORMANCE_v1.md",
+    "REVIEW_RECORD_v1.md",
+    "CHECKPOINT_v4.json",
+    "PRIOR_SEARCH_v1.json",
+    "REPO_CONTEXT_v1.json",
+    "CANONICAL_EXECUTION_v4.json",
+    "CANONICAL_BINDING_v4.json",
+    "GEOMETRY_REPAIR_v1.json",
+    "EXECUTION_GUARD_FAILURE_v1.json",
+    "RANGE_DOMAIN_REPAIR_v1.json",
+    "FORMATTING_REPAIR_v1.json",
+    "M17_SOURCE_PREFLIGHT_v3.json",
+    "mutations_v1/REPORT_v1.json",
+    "run_mutations_v1.py",
+    "archive_packet_v1.py",
+    "PLAIN_FILES_v1.json",
+    "independent_geometry_v1/INDEPENDENT_DERIVATION_v1.md",
+    "independent_geometry_v1/AUTHOR_CORRESPONDENCE_v1.md",
+    "independent_geometry_v1/CANONICAL_REVIEW_v1.md",
+    "independent_geometry_v1/FINAL_FORMATTING_SUPPLEMENT_v1.md",
+    "independent_observation_v1/REPORT_v1.md",
+    "independent_observation_v1/DERIVATION_v1.md",
+    "independent_observation_v1/M17_CANONICAL_SOURCE_COMPARISON_v1.md",
+    "independent_observation_v1/M17_OPENING_ASSESSMENT_v1.md",
+    "independent_observation_v1/SOURCE_RECORD_v1.json",
+    "CHECKLIST_FORMATTING_REPAIR_v1.json"
+  ],
+  "omitted": [
+    {
+      "path": "independent_observation_v1/page_renders/faber_visser_astro_ph_0512213v2_p4.png",
+      "sha256": "0f4432d7ac7341dc0dddcc4f451200a5636b8a77bd6512775723229c4a37190e",
+      "bytes": 350940,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/page_renders/kaiser_1003_1159v2_p5.png",
+      "sha256": "c7b37b39407b2e706f5010c2ea2ee3d888e325d1314af58bd32d113dfc0b9ca7",
+      "bytes": 160821,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/page_renders/kaiser_1003_1159v2_p8.png",
+      "sha256": "0f2d1b4f5d055175817093bb78ce1f0722a9fd2d3b22b38ac4c648fef898cd49",
+      "bytes": 174803,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/page_renders/khoury_weltman_astro_ph_0309411v2_p9.png",
+      "sha256": "895b2ab9a0114f6353aa110149098727bd60c05820f3534e8d953a525bea4fb3",
+      "bytes": 197547,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/page_renders/philipp_1702_08412v2_p5.png",
+      "sha256": "0aba9f8ff8e58f87a6859aa96a3aa42b0133b71a3a22aafa9199efa76208dbb5",
+      "bytes": 321743,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/page_renders/salgado_gr_qc_0509001v2_p4.png",
+      "sha256": "4ac6ff1066959641785c7c3f75be8acf5429d7223ae9dc032f6d85f80bde6b03",
+      "bytes": 173597,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/faber_visser_astro_ph_0512213v2.pdf",
+      "sha256": "84b99c4836ded6e2e29a0801ec71af640ae87ffcceb7dfab518678bc77127c1e",
+      "bytes": 183961,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/faber_visser_astro_ph_0512213v2.txt",
+      "sha256": "0bf6675e2c3f6acd3a42a0e2e4a0ee96ed527d9ee7bac27f9ceb5e3cbe9dc9d8",
+      "bytes": 55307,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/kaiser_1003_1159v2.pdf",
+      "sha256": "85372fd26a42a9aa223697e34bc29ed7b96e6555d2303378cd3f2d39b86169a4",
+      "bytes": 192987,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/kaiser_1003_1159v2.txt",
+      "sha256": "1f4fc79be9973e12ceba36716e7f0f96c488736f2c17e1ffd65fe05502c1a92e",
+      "bytes": 46961,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/khoury_weltman_astro_ph_0309411v2.pdf",
+      "sha256": "4c36136350da8104942c34f459aa926aafbdc1ca4bcc12968dd96ebcc97cb406",
+      "bytes": 296080,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/khoury_weltman_astro_ph_0309411v2.txt",
+      "sha256": "69c95cae4348a47d1bbac4b94b263534a40f3de4374ec599c7fc7a784b0d5e87",
+      "bytes": 103364,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/philipp_1702_08412v2.pdf",
+      "sha256": "89a97a6c20278fe92bd2c096a6c19b1475b497302e1ac9c9e42ce7ba20b44b0e",
+      "bytes": 8485252,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/philipp_1702_08412v2.txt",
+      "sha256": "9c9ce489af7542dc42ff962d86effff850cc79ff7c2b19072b49760ebadecfde",
+      "bytes": 127005,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/salgado_gr_qc_0509001v2.pdf",
+      "sha256": "b09a69950f7eff17750f580036c38efdd0f98dfc1a784bbee3d1535facedb19e",
+      "bytes": 471565,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "independent_observation_v1/primary_sources/salgado_gr_qc_0509001v2.txt",
+      "sha256": "f5b8e5b51b97190a87959fda0af9fa664e363010e092c4fa7e9b6f22adf96611",
+      "bytes": 138354,
+      "reason": "External complete paper/text/render stays local; source version, identity and reading scope retained"
+    },
+    {
+      "path": "mutations_v1/baseline_action/__pycache__/scalar_physical_curvature_action.cpython-312.pyc",
+      "sha256": "7cb067d2b5babe86e23fd70300fa2029a4529180bd842d51c56f6facb9edf856",
+      "bytes": 11343,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/baseline_geometry/__pycache__/scalar_physical_curvature_geometry.cpython-312.pyc",
+      "sha256": "f1bc661021cbd9cd880b7ba43f8453ebb1070d992267da2b0a5bf72f79ba82c1",
+      "bytes": 23817,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/bootstrap_denominator/__pycache__/scalar_physical_curvature_action.cpython-312.pyc",
+      "sha256": "f5038bcd2cbec9aec7d025c14370b651b2755e2c2eeb3cf2b12dc6fc31235e4f",
+      "bytes": 11349,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/clock_range_roundtrip/__pycache__/scalar_physical_curvature_geometry.cpython-312.pyc",
+      "sha256": "c03f6120a5ccbaf8e82dd60053d1ef02cb6a798707dd57f910b00578d5906c96",
+      "bytes": 23821,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/coupling_boundary_scaling/__pycache__/scalar_physical_curvature_action.cpython-312.pyc",
+      "sha256": "1a4a576125b78bd89311f936f29757689e254307ea02cd13603e435bbb2da4bb",
+      "bytes": 11343,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/curvature_source_sign/__pycache__/scalar_physical_curvature_action.cpython-312.pyc",
+      "sha256": "6b0d5377c86d273b9c32ebc1dcd6b1e4b001e039772a5486c89e3a857651623b",
+      "bytes": 11344,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/green_volume_measure/__pycache__/scalar_physical_curvature_geometry.cpython-312.pyc",
+      "sha256": "ec8fa8dee7ed7853d3d4bdaa3f5e685720a5f1e4733f514b507e4a3d1d863836",
+      "bytes": 23820,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/pointwise_first_iterate/__pycache__/scalar_physical_curvature_geometry.cpython-312.pyc",
+      "sha256": "d04cdafd7902f310872e56e3f70bc0acb9ecda79ef696b4f0b5339a16b040581",
+      "bytes": 23791,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/regulator_potential/__pycache__/scalar_physical_curvature_action.cpython-312.pyc",
+      "sha256": "667b43403076076f29998655106cf23d13f07d5226012bc89131963f233fe3f5",
+      "bytes": 11358,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/ricci_angular_curvature/__pycache__/scalar_physical_curvature_geometry.cpython-312.pyc",
+      "sha256": "ac4e65c683e7172aee1a38dbbac86c0bdfdbaa8f17ecd9758c99994c9d3eb2e2",
+      "bytes": 23803,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/transverse_y_potential/__pycache__/scalar_physical_curvature_action.cpython-312.pyc",
+      "sha256": "8a4c968d3e2cbcf6c821620362c1b1fa68ddbdc4c89bbf6b89bc670d44c51189",
+      "bytes": 11338,
+      "reason": "Generated interpreter bytecode; source retained"
+    },
+    {
+      "path": "mutations_v1/weyl_factor/__pycache__/scalar_physical_curvature_action.cpython-312.pyc",
+      "sha256": "44d3be5ab0e25566a3d969fb94843bcdb63674a24250e77ca029033a935c1bdd",
+      "bytes": 11339,
+      "reason": "Generated interpreter bytecode; source retained"
+    }
+  ],
+  "recovery": "Read gzip JSON members; verify SHA256 of UTF-8 content before writing to a separate directory using checked relative paths. Refuse overwrites and path traversal."
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 16053,
- "node_count": 7127,
+ "edge_count": 16056,
+ "node_count": 7128,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19309,6 +19309,10 @@
   "scalar_phase_quotient_integer_history_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "6c50507ded78",
+   "out_degree": 3
   },
   "scalar_projected_covariance_bounded_theorem_note_2026-10-15": {
    "deps_hash": "9268a14c6d8c",

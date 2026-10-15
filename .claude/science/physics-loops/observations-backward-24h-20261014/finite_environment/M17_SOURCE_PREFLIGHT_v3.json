@@ -1,0 +1,32 @@
+{
+  "scope": "Direct mechanical source/cache preflight, no formal audit or combined landing",
+  "row": {
+    "claim_id": "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15",
+    "note_path": "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem",
+    "runner_path": "scripts/scalar_physical_curvature_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_physical_curvature_action.py",
+      "scripts/scalar_physical_curvature_geometry.py"
+    ],
+    "deps": [
+      "exponential_scalar_finite_body_bounded_theorem_note_2026-10-14",
+      "exponential_scalar_future_confinement_bounded_theorem_note_2026-10-13",
+      "exponential_scalar_local_response_bounded_theorem_note_2026-10-13"
+    ]
+  },
+  "issue": null,
+  "cache_status": "fresh",
+  "cache_sha256": "b05f98972c9b3f9ec9299d9d29eec109ac9a420a8da12f262a9d878120e16b64",
+  "manifest_delta": {
+    "new_nodes": [
+      "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15"
+    ],
+    "other_changed_nodes": [],
+    "edges_added": 3
+  },
+  "vocabulary": "report-only0violations",
+  "graph_ordering_note": "Final graph source hash rebuilt after whitespace-only source repair, then manifest writer run serially; topology unchanged from v1.",
+  "final_note_sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+  "checklist_only_whitespace": "One excess terminal newline removed; canonical note/primary/helpers unchanged; source-bound executionv4"
+}

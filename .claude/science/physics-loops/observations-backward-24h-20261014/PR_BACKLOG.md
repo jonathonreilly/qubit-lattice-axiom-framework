@@ -90,3 +90,13 @@ Coherent-opening judgment OPEN; base codex/observations-backward-dynamics-202610
 ## M16 ready for frozen delivery
 
 One regular constituent planned from codex/observations-backward-windows-20261015 against codex/observations-backward-covariance-20261015 at44c7d3309c17380474ec253a924af6891d438b02 (#9610). Content OPEN; canonical source and scoped independent correspondence complete. Package only the finite-pair theorem, its exact runner/helpers/results/cache, intentional graph delta and indexed campaign evidence. Final staged delivery precedes publication. No merge or main push.
+
+## M16 publication and next route — 2026-10-15T18:03:10.144354+00:00
+
+M16 regular PR9612, frozen cdf67b716d/tree26a6,49paths, attached. Necessary finite shear/velocity pair expectation derived with explicit local law, geometry and calibrated sampling premises.89 author controls and8 failed-control mutation rejections; focused independent geometry/weak/source reviews and842 mechanical comparisons0mismatches.199member archive/25plain views/24explicit omissions preserve failures and review history. No observed data, variance bound, coefficient uniqueness or full-gravity sensitivity witness.
+
+Direct author continues on codex/observations-backward-environment-20261015. M17 asks whether finite size, boundary values and the complete stress trace bound a regular static body's scalar displacement. The homogeneous density minimum is not accepted as the realized interior. Initial working comparison argument remains unverified; no measured-gravity identification or action/state/scale choice is retired. Preserve all earlier development exposure and unopened products. Main and changed-PR refresh recorded in runtime M17 files. No owned research jobs or old campaign restart. Matching lock refreshed17:58Z; packaging21:33:44Z and deadline21:48:44Z unchanged.
+
+## M17 physical environment — 2026-10-15T18:40:00.221441+00:00
+
+One coherent complete-field physical-metric bound and measurement-prerequisite unit. Scientific source review complete and OPEN judgment;82author controls,10mutations rejected,0empirical tests. All findings resolved within their scopes; frozen delivery and publication pending. Exact source and complete reports are in finite_environment/CHECKPOINT_v3.json and REVIEW_RECORD_v1.md.

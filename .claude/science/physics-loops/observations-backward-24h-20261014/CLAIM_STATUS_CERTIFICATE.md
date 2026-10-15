@@ -7,3 +7,11 @@ Source-profile selection cancels from the ideal range ratio. That is a mathemati
 Synthetic controls, independent mathematical checks, exposed measurement development, calibration, and reserved within-experiment validation are distinct. No independent empirical holdout has been analyzed and no raw-data gravity likelihood has been fitted.
 
 The second milestone also proposes bounded_theorem / conditional-support: one product count reconstruction and a finite station-time phase/error operator. All91664 Doppler rows are accounted for; no scalar parameter fit or independent empirical test occurs. The1MHz bias, band-reference factors and corrected count scale are sourced instrument definitions corroborated by dependent-product consistency. A no-reset bounded counter history remains explicit. Nonzero slipped-cycle diagnostics prevent treating numerical reconstruction as a slip-free physical phase certificate.
+
+The third proposed unit is bounded_theorem / conditional-support. Its exact
+target is elimination of arbitrary initial receiver phases from stated count
+contrasts with finite-error propagation and a two-chirp subclass. Standard
+linear algebra and cold-plasma response are explicit tools/premises. The
+independent checks are focused mathematics and source checks, not an audit or
+empirical acceptance. No independent holdout is opened; the main scalar
+action/state/scale/environment gaps remain. Trace class remains upstream_support.

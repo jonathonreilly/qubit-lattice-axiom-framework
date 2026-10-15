@@ -12,3 +12,14 @@ Initial Python HTTPS fetches failed certificate validation; retained original er
 Source receipts are under the local runtime sources folder. Primary PDF hashes: Cassini RSS guide 2018 4feb3072681da0f3026889d41864cef0c92c0beb91926278fc2d907e607c1d76; Dyadina/Labazova2111.13900v1 abccb5726a987cff7f13016878cedcfb5b232a6f8162f25ca3e9798bf2c7a457. The pypdf extraction of the guide emitted object-reference warnings; no layout claim relies on that extraction. Raw development ODF hash 39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f; its label hash 37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e. Large raw files remain local.
 
 Count/clock extension: Moyer2000 sections13.2.4,13.2.6,13.3.2.2; TRK-2-18 June2000 AppendixA; the PDS ATDF interpretation guide Table5/AppendixB; and Morabito/Asmar1995 sectionIII.C now support the receiver count reconstruction. Exact URL/length/SHA pins are in scripts/cassini_doppler_development_inputs.json. The same-track ATDF was registered in RAW_DATA_PROTOCOL_v2_ATDF.json before download. It is exposed development, not a new independent experiment. The PDS guide corrects the erroneous high-part scale in the original label; the failed literal-label result remains preserved.
+
+## Radio-link and atmospheric supplier context
+
+Armstrong2006 sections4.3–4.6 and the Cassini2018 radio guide section3.6.2.2
+supply the known three-link architecture and calibration context. DORS-002
+defines PD1/PD2 as retrieved wet/dry path delays and quality flags, while the
+Cassini RSS SIS section3.3 defines RSR transmitter/receiver filenames.
+Exact retrieved identities and exposure roles are in
+physical_link/METADATA_SUPPLIER_REVIEW_v1.json. No published precision is
+imported as a campaign error bound, and none of these sources derives the
+candidate scalar action or field state.

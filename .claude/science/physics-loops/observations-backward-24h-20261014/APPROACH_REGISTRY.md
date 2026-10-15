@@ -6,3 +6,15 @@
 4. Cosmological reconstruction: reserve while route 1 yields useful new evidence; H(z), growth and light propagation may constrain kinetic/potential functions but not automatically state/measure.
 
 5. Archived precursor reconstruction: primary-source count semantics plus independent full-product matching closes the stored sign/scale/reference conversion obligation on the exposed track. Literal label scale failed999 intervals; PDS documents the correction. The finite station-clock operator and Lipschitz remainder follow from phase calculus. This route gives an observational instrument bridge while retaining counter-history and calibrated physical-clock obligations.
+
+## Initial receiver phase without an assigned state
+
+The direct author derived the fixed-unit endpoint identity, then projected
+count histories onto the null space of the initial-phase response. A restricted
+two-uplink-chirp physical operator gives rank at most two. Separate exact
+calculation checked these steps. The route preserves and corrects three
+failures: instantaneous-frequency normalization, nominal-weight joint error
+bounds and an unqualified unbiasedness label. This is constructive elimination
+of a measurement input. Further work must supply the actual phase/ray/clock
+operator and a candidate signature, or move upstream to finite-time environment
+and field history; it must not replace those with selected values.

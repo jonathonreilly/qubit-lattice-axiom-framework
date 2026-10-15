@@ -1,6 +1,6 @@
 {
  "edge_count": 16050,
- "node_count": 7113,
+ "node_count": 7114,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3737,6 +3737,10 @@
   "coherent_binary_k_admission_bounded_theorem_note_2026-10-14": {
    "deps_hash": "bf48862e7dcb",
    "out_degree": 3
+  },
+  "coherent_radio_count_initial_phase_elimination_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06": {
    "deps_hash": "57580a0f4742",

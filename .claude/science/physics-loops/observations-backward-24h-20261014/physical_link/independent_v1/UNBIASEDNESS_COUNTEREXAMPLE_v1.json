@@ -1,0 +1,48 @@
+{
+  "scope": "Exact eight-point probability model showing that covariance does not imply zero error mean; no empirical test.",
+  "script_sha256": "3066deb7188d7c7641fd9ba3aff455a0afb561f0d32b57d2263625947531a3cb",
+  "source": "INITIAL_PHASE_ELIMINATION_v2.md",
+  "source_sha256": "e1966dbf396ff12892818b4dafd585e8ff3473c96b421d89d7a100c6f16ec856",
+  "signature": [
+    "0",
+    "1",
+    "2"
+  ],
+  "contrast": [
+    "-1/2",
+    "0",
+    "1/2"
+  ],
+  "nuisance_column": [
+    1,
+    1,
+    1
+  ],
+  "noise_distribution": "Uniform independent Rademacher vector in three dimensions; eight equally likely vectors.",
+  "epsilon": "(3/7)*signature + noise",
+  "epsilon_mean": [
+    "0",
+    "3/7",
+    "6/7"
+  ],
+  "covariance": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "contrast_bias": "3/7",
+  "contrast_variance": "1/2",
+  "conclusion": "Unit response and nuisance annihilation do not imply unbiasedness without a zero-mean or known-mean-removed residual premise. The stated deterministic bias bound and minimum-variance contrast calculation are unaffected."
+}

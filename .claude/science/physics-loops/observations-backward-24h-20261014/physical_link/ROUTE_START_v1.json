@@ -1,0 +1,119 @@
+{
+  "created_at": "2026-10-14T23:32:02.291465+00:00",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "starting_head": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+  "branch": "codex/observations-backward-plasma-20261014",
+  "open_prs": [
+    {
+      "baseRefName": "codex/observations-backward-24h-20261014",
+      "headRefName": "codex/observations-backward-doppler-20261014",
+      "headRefOid": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+      "number": 9578,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support count and clock bridge",
+      "updatedAt": "2026-10-14T23:26:04Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9578"
+    },
+    {
+      "baseRefName": "physics-loop/toe-preparation-moments-20261014",
+      "headRefName": "physics-loop/toe-chain-preparation-scaling-20261014",
+      "headRefOid": "6708b30b3ae16610f7a5061301c38adc356aff75",
+      "number": 9577,
+      "title": "[physics-loop] toe-chain-preparation-scaling: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-14T22:42:42Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9577"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/observations-backward-24h-20261014",
+      "headRefOid": "32d613c0f1361523f1d5dd85275fa945bc87cab0",
+      "number": 9576,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support orbit and radio inverse",
+      "updatedAt": "2026-10-14T22:34:10Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9576"
+    },
+    {
+      "baseRefName": "physics-loop/toe-multi-port-global-20261014",
+      "headRefName": "physics-loop/toe-preparation-moments-20261014",
+      "headRefOid": "84d28d386cf8d8dbbdd4506387ad18296161fe53",
+      "number": 9575,
+      "title": "[physics-loop] toe-preparation-moments: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-14T22:23:56Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9575"
+    },
+    {
+      "baseRefName": "physics-loop/toe-autonomous-record-window-20261014",
+      "headRefName": "physics-loop/toe-multi-port-global-20261014",
+      "headRefOid": "463fa381d9fe9403b6b6f3e3ce19505aa947edf2",
+      "number": 9574,
+      "title": "Add conditional simultaneous multi-port three-Pauli theorem",
+      "updatedAt": "2026-10-14T21:30:36Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9574"
+    },
+    {
+      "baseRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+      "headRefName": "physics-loop/toe-autonomous-record-window-20261014",
+      "headRefOid": "103cb68b6541e5f9419463d68ac41d311e3c404d",
+      "number": 9573,
+      "title": "Add conditional finite autonomous admission record window",
+      "updatedAt": "2026-10-14T21:13:29Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9573"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+      "headRefOid": "b50d97052f1b9dd3277eec137208b454fa609337",
+      "number": 9572,
+      "title": "Add balanced critical mediator sufficient resource corollary",
+      "updatedAt": "2026-10-14T20:51:01Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9572"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "claude/strain-hot-matter-twins-20261013",
+      "headRefOid": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "number": 9571,
+      "title": "exercise (gravity follow-up): hot-matter strain law, panel F, staggered twins \u2014 self-contained packet",
+      "updatedAt": "2026-10-14T20:46:58Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9571"
+    }
+  ],
+  "coverage": "Heads unchanged since M2; own source read. PR9577 body/path inventory previously read; no proof adopted from background proposals. Main matching Cassini notes already in campaign source closure; thermal-plasma and generic dispersive hits do not address radio-link cancellation.",
+  "searches": [
+    {
+      "query": "(plasma.*(cancel|frequency|Doppler)|(cancel|frequency|Doppler).*plasma)",
+      "exit": 1,
+      "hits": []
+    },
+    {
+      "query": "(finite.count.*(projection|nuisance)|nuisance.*finite.count|chromatic.*(clock|cancel)|cancel.*chromatic)",
+      "exit": 1,
+      "hits": []
+    },
+    {
+      "query": "(plasma|ionospher|tropospher|Cassini)",
+      "exit": 0,
+      "hits": [
+        "origin/main:docs/CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md:320:post-Newtonian derivation. No observed Cassini/LLR likelihood is used.",
+        "origin/main:docs/EXPONENTIAL_SCALAR_CALIBRATION_BRANCH_BOUNDED_THEOREM_NOTE_2026-10-14.md:88:Personally derived by /root. Complete candidate action and the existing weak-source/environment derivations remain premises. This is a new exact branch inequality plus a transparent comparison with an exposed published parameter estimate. It is not a reconstructed Cassini likelihood, a derived Solar environmental solution, or a global exclusion of the scalar theory.",
+        "origin/main:docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md:86:not a reconstructed Cassini light-time likelihood. A rolling background",
+        "origin/main:docs/EXPONENTIAL_SCALAR_PAIRED_GRAVITY_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-10-14.md:118:Current Cassini and LLR summaries do not provide this matched three-epoch",
+        "origin/main:docs/EXPONENTIAL_SCALAR_RADIATION_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-14.md:208:on k. No Cassini timing model, cosmic-to-local matching, fixed initial amplitude",
+        "origin/main:docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md:41:| M. Giovannini, *A Primer on the Physics of the Cosmic Microwave Background*, [arXiv:astro-ph/0703730](https://arxiv.org/abs/astro-ph/0703730) | Appendix B.4, pp. 159\u2013160, Eqs. (B.40)\u2013(B.43), including the intervening count on p. 160 | For a thermodynamic-equilibrium plasma with restored electroweak symmetry, it expands the quark count as `6*2*2*3=72`, gives `18` leptonic states, expands the bosonic count as `16+8+4=28`, totals the fermions as `90`, and obtains `g_rho=g_s=106.75`. |",
+        "origin/main:docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md:48:- a thermodynamic-equilibrium ideal plasma with chemical potentials neglected;",
+        "origin/main:docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md:22:   the plasma, Yukawa-mediated chemical equilibria, small-`\u03bc/T`",
+        "origin/main:docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md:73:- **E3 Plasma hypercharge neutrality.** The thermalised plasma is weak",
+        "origin/main:docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md:78:  where the sum runs over all SU(2)_L-component plasma species (quarks,",
+        "origin/main:docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md:132:| (B4) | Plasma hypercharge neutrality with `N_F` families and `N_H` Higgs doublets, using retained `Y`-spectrum and species multiplicities, becomes `4 N_F mu_qL - 4 N_F mu_lL + (8 N_F + 4 N_H) mu_phi = 0` after substituting E4 | E3 + authority (2) + E5 | no |",
+        "origin/main:docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md:153:Plasma hypercharge neutrality (E3):",
+        "origin/main:docs/ai_methodology/raw/prompts_session_4ffea772_jonreilly.md:8176:**Root cause:** The 110.75 value erroneously added \"4 taste scalars\" to the thermal plasma. These extra taste states have masses of order the lattice spacing (~Planck mass) and are Boltzmann-suppressed by `exp(-M_Pl/T_EW) ~ exp(-7.6e16) = 0` at the electroweak temperature T ~ 160 GeV.",
+        "origin/main:docs/ai_methodology/raw/prompts_session_4ffea772_jonreilly.md:8186:- `g_*(thermal) = 106.75` -- counts relativistic states in the plasma (28 bosonic + 7/8 x 90 fermionic). Used for rho, s, H, freeze-out, Omega_DM.",
+        "origin/main:docs/historic_intake/HISTORIC_GSTAR_RECONCILIATION_NOTE_INTAKE_NOTE_2026-08-05.md:19:Two different g_* values were in use; the 110.75 variant wrongly added 4 taste scalars to the thermal plasma even though those states have Planck-scale masses and are Boltzmann-suppressed by exp(-1.22e19/160) = 0 at T_EW, so g_*(thermal) = 28 + (7/8)(90) = 106.75 is correct while N_taste = 8 belongs only in the UV sphaleron CP source via the 8/3 enhancement.",
+        "origin/main:docs/work_history/physics/revised-scalar-campaign-20261014/FINAL_REPORT.md:167:| Cassini gamma summary | Exposed interval benchmark conditional on a controlled Solar long-range bridge | No raw timing likelihood, new confidence region or unconditional k exclusion |"
+      ]
+    }
+  ],
+  "route": "Derive finite-count dispersive separation and exact initial-state correction from a time-varying phase mixing operator; inspect existing development channel metadata.",
+  "classification": "Standard three-link cancellation is known prior art, not new physics. Explore its finite-count and state-obligation consequences before any new data exposure or milestone decision.",
+  "inputs": "Only already exposed day169 raw/decoded products. Reserved calibration/validation measurements unopened. No new observational data authorization inferred from this record.",
+  "status": "working; no review or formal status claimed"
+}

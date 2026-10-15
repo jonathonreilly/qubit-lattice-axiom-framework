@@ -1,0 +1,35 @@
+{
+  "families": {
+    "symbolic_inverse_row": 1,
+    "symbolic_determinant": 1,
+    "diversity_denominator": 1,
+    "uplink_phase_derivative_X": 1,
+    "uplink_phase_derivative_K": 1,
+    "exact_rational_inverse": 9,
+    "finite_positive_conditioning_domain": 9,
+    "two_independent_chirps_rank_two": 1,
+    "common_chirp_rank_one": 1,
+    "architecture_factorization": 1,
+    "actual_uplink_frequency_collision": 1,
+    "quadratic_emission_phase_remainder": 9,
+    "chirped_signal_survives_declared_nuisance": 1,
+    "initial_phase_and_clock_basis_eliminated": 1,
+    "nonlinear_count_error_exact": 1,
+    "nonlinear_emission_error_bounded": 1,
+    "missing_chirp_numerator_detected": 1
+  },
+  "total_pass": 41,
+  "total_fail": 0,
+  "synthetic_model": {
+    "endpoint_count": 9,
+    "phase_initial_row_rank": 2,
+    "joint_nuisance_rank": 4,
+    "remaining_contrasts": 5,
+    "true_theta": "3/700000",
+    "actual_error_approx": 3.3766692072251683e-13,
+    "bound_approx": 3.198741506832644e-11,
+    "exact_error": "11868752664069472914492512808101030166248851369345396841710196840880610652258806268258262077208652440949623003861415295232107058093860637595216241157598702429982515195393949506682616780438396552039980765792397072603883357/35149290427008720682306963147201860134310349767575402073006623994334472914695140247379839161900723460946537798206390315573164774730263547276303383620935798679811937081536179826725195707312997713932234823468644617420800000000000000000",
+    "exact_bound": "3942206418343009925539974840383393876386855586912152555254913742467010258411608155046820048666354275528801004465109272017314044933448870801774045971868759954977108845046647256666975457303711139033881206962191983066535671109764003/123242419242764495696843053953396192107551503312247300864742431671535210247605552337002107185409173514465429070822394833917881323677828626784709215717053774969832353216742990118579134481239368940710610426254581868860538880000000000000000000"
+  },
+  "scope": "Common nominal emission and separable frequency-scaled rays are premises. Nonlinear emission phase tested exactly in a synthetic chirp; plasma ray/time cross terms and real calibration errors are not supplied. No empirical scalar test."
+}

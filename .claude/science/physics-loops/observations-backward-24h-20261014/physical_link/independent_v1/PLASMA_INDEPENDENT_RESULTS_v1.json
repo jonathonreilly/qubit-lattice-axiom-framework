@@ -1,0 +1,70 @@
+{
+  "scope": "Independent conditional mathematical checks; no raw measurement access, fit, physical calibration, formal audit or retained-status decision.",
+  "method": "Vector Maxwell equations, symbolic differentiation, stable rationalized remainder, independent Fraction Gauss-Jordan inverse, telescoping discontinuous paths, exact piecewise-linear integration and correlated-sample covariance.",
+  "source_snapshots": {
+    "FINITE_COUNT_PLASMA_DERIVATION_v1_SNAPSHOT.md": "827562589f7386ec797237e83beb8c94464771688b732aa8d6540cb426f83d6b",
+    "FINITE_COUNT_PLASMA_DERIVATION_v2_SNAPSHOT.md": "0bcb450acf7c42251b02b18d67254f1e0797736ce58b2f6922d2845d54418d72"
+  },
+  "script_sha256": "f68bfc1ac1fb35a32dad47883556f9998f4c3f08495bba721641a38dbb4bd3ff",
+  "checks_by_family": {
+    "maxwell_symbolic": 6,
+    "plasma_remainder_numeric": 1212,
+    "countermodels": 47,
+    "fixed_inverse": 474,
+    "aligned_endpoint_counts": 158,
+    "error_bound": 158,
+    "covariance": 158,
+    "coherent_transfer": 40,
+    "degenerate_domains": 2,
+    "alignment_lipschitz": 220,
+    "alignment_bounded": 440,
+    "alignment_sharpness": 10,
+    "varying_matrix": 360,
+    "initial_box": 180,
+    "changing_first_column": 180,
+    "endpoint_errors": 180,
+    "witness": 2,
+    "positive_column_witness": 164,
+    "changing_normalization": 16
+  },
+  "checks": 4007,
+  "failed_checks": 0,
+  "failures": [],
+  "details": {
+    "independent_remainder_identity": "R(X)=X^2/[2(1+sqrt(1-X))^2]",
+    "fixed_matrix_samples": 158,
+    "lipschitz_domain_caveat": "Lipschitz must compare translated point pairs across the union, or a derivative bound must hold on the connecting hull. Separate zero-slope bounds on disjoint intervals with different constant levels do not imply the alignment inequality.",
+    "printed_witness": {
+      "zero_count_final_state": [
+        "1/16",
+        "15/16",
+        "0"
+      ],
+      "initial_state": [
+        "0",
+        "1",
+        "0"
+      ]
+    },
+    "positive_column_witness_scope": "Two continuous, strictly positive U,D histories have zero counts and respective G changes 1/16 and 1/8. These are supplied-matrix examples, not coherent Cassini ramp histories.",
+    "constant_endpoint_error_witness": {
+      "delta_epsilon": "0",
+      "estimator_error": "1/12"
+    },
+    "v1_normalization_counterexample": {
+      "Phi_s": "6",
+      "Phi_r": "6",
+      "F_s": "2",
+      "F_r": "3",
+      "Delta_Phi": "0",
+      "Delta_p": "-1"
+    }
+  },
+  "limitations": [
+    "Finite control counts are not proof of universal hypotheses; analytic reasoning is recorded in the companion report.",
+    "No author executable was imported or rerun and no raw product was opened.",
+    "No physical three-band simultaneity, path equivalence, carrier calibration, Lipschitz constant or plasma/clock/history bound is established.",
+    "The v1 changing-normalizer observation issue is preserved and tested; v2 fixed-unit correction is checked.",
+    "Matrix witnesses are not claimed to satisfy a specific transponder frequency-ramp dynamics."
+  ]
+}

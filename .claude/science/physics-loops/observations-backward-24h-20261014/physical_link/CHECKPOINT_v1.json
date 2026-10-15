@@ -1,0 +1,65 @@
+{
+  "recorded_at": "2026-10-14T23:50:03.076614+00:00",
+  "author": "/root in user chat",
+  "status": "working conditional-support; no new physical gravity inference",
+  "files": [
+    {
+      "path": "FINITE_COUNT_PLASMA_DERIVATION_v2.md",
+      "sha256": "0bcb450acf7c42251b02b18d67254f1e0797736ce58b2f6922d2845d54418d72"
+    },
+    {
+      "path": "finite_count_plasma_check_v2.py",
+      "sha256": "58c423fabfaa5e3bdcfc539687b8f1af9debb7f9e1964e2903b38ff7b2e85b16"
+    },
+    {
+      "path": "author_results_v2.json",
+      "sha256": "5bd74c48b5dd587d0235af529eeee2f9157f59a809bd9d5a0f121fc052b062ff"
+    },
+    {
+      "path": "INITIAL_PHASE_ELIMINATION_v3.md",
+      "sha256": "557d8a5d2b125ddcbd50c66192766498ea9b2bff56f09b3165ed954cfac04fae"
+    },
+    {
+      "path": "initial_phase_elimination_check_v3.py",
+      "sha256": "57ec56d7d1686c6c509df50a76bd27d31767ec06b1d71e6a208726728fabbc80"
+    },
+    {
+      "path": "initial_phase_author_results_v3.json",
+      "sha256": "767770d34cc9356ceb21f1dafa198bbc1f942e7654dd97c6d8e7e321d8142817"
+    },
+    {
+      "path": "CHIRPED_COHERENT_PHASE_OPERATOR_v3.md",
+      "sha256": "3bf1e74cb7ac6d7d5a2baf5c1a3d9638a38236e7ad8002312d2198f9c6c02449"
+    },
+    {
+      "path": "chirped_coherent_phase_check_v3.py",
+      "sha256": "6478126f44d3a9d4897a7bdd1149f35d73cfeb20ad02433be605789d4ee39cea"
+    },
+    {
+      "path": "chirped_coherent_author_results_v3.json",
+      "sha256": "5d2db16d8b0fc9ca82204bebd967831784d8b585a0c702439433289d586cac94"
+    },
+    {
+      "path": "FINDINGS_AND_FAILURES_v2.json",
+      "sha256": "574bbda31b1019bfe94b10aadb350ea75318c3ac971fac20de780ae77e0fd94b"
+    },
+    {
+      "path": "independent_v1/REVIEW_FINITE_COUNT_PLASMA_v2.md",
+      "sha256": "9290eee04f5e237ffdf6b16df1c85b408b0c7ed4bee12d2982eb677b40a9b553"
+    }
+  ],
+  "counts": {
+    "finite_count_author": 879,
+    "initial_phase_author": 198,
+    "chirp_author": 41,
+    "finite_count_independent_reported": 4007,
+    "chirp_independent_reported_pending_report": 1281
+  },
+  "data_access": "Only previously exposed day169 X/X ODF and ATDF values; this block additionally read metadata directory listings for same-day rsr/pd1/pd2, no new measurement values. Reserved tracks unchanged.",
+  "last_main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "last_published_head": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+  "scope": "Conditional finite-count cancellation and exact removal of initial receiver phase in observable contrasts. Scalar action, initial field state/history, scales, source/environment and physical nuisance bounds remain open. No independent empirical holdout used.",
+  "failures_preserved": "Changing-frequency phase normalization needs initial phase; joint count/operator bound needs true-family coefficients; unbiasedness requires zero means. Historical sources and outcomes preserved.",
+  "next_action": "Read the same-day metadata labels to establish supplied channel architecture and whether phase products contain independent uplink diversity; then choose a pre-access supplier protocol or document unavailable observable. Finish narrow independent source confirmation before milestone packaging.",
+  "ownership": "No conflicting owned process found; direct author only. Same-holder cooperative lock refreshed 23:48Z; old campaigns stopped."
+}

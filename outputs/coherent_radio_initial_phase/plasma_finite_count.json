@@ -1,0 +1,67 @@
+{
+  "counts_by_family": {
+    "symbolic_weights": 1,
+    "determinant": 1,
+    "two_link_witness": 1,
+    "maxwell_fluid_dispersion": 1,
+    "plasma_remainder_second_derivative": 1,
+    "plasma_remainder_grid": 150,
+    "rational_inverse_weights": 89,
+    "finite_count_endpoint_exactness": 89,
+    "deterministic_error_bound": 89,
+    "correlated_covariance": 89,
+    "changing_operator_exact_identity": 89,
+    "common_column_initial_G_cancels": 89,
+    "initial_box_bound_saturation": 89,
+    "aligned_interval_lipschitz_bound": 89,
+    "zero_count_changed_state_witness": 1,
+    "witness_correction": 1,
+    "omit_initial_state_is_detected": 1,
+    "varying_normalization_identity": 1,
+    "zero_raw_count_not_zero_normalized_change": 1,
+    "fixed_units_full_phase_operator": 1,
+    "changing_first_column_keeps_initial_G": 1,
+    "constant_phase_error_survives_variable_weights": 1,
+    "nonconstant_design_same_weights": 1,
+    "common_nuisance_survives": 1,
+    "singular_design_rejected": 2
+  },
+  "total_pass": 879,
+  "total_fail": 0,
+  "witness": {
+    "A_start": "Matrix([[1, 1, 1], [1, 1, 1/4], [1, 1/4, 1/4]])",
+    "A_end": "Matrix([[1, 1, 1], [1, 1, 1/4], [1, 1/5, 1/4]])",
+    "z_start": "Matrix([[0], [1], [0]])",
+    "z_end": "Matrix([[1/16], [15/16], [0]])",
+    "counts": [
+      0,
+      0,
+      0
+    ],
+    "G_change": "1/16",
+    "initial_correction": "1/16"
+  },
+  "illustrative_constant_carriers_GHz": [
+    "36/5",
+    "6336/749",
+    "120384/3745",
+    "34",
+    "476/15"
+  ],
+  "illustrative_weights": [
+    {
+      "exact": "-406024211925/5311653960172",
+      "approximate": -0.07644026041030962
+    },
+    {
+      "exact": "156643559397/5311653960172",
+      "approximate": 0.029490542978053418
+    },
+    {
+      "exact": "7225/6901",
+      "approximate": 1.0469497174322562
+    }
+  ],
+  "illustrative_error_amplification_l1": 1.1528805208206192,
+  "carrier_role": "Nominal illustrative values; not measurements, calibration constants or actual Cassini ramp reconstruction."
+}

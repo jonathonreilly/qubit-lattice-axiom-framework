@@ -1,0 +1,696 @@
+{
+  "scope": "Focused complete canonical source read, exact helper correspondence, synthetic execution identity and author-cache/mutation-receipt inspection; not a formal audit, landing review or empirical validation.",
+  "recorded_at": "2026-10-15T00:01:11.244495+00:00",
+  "canonical_source_sha256": {
+    "docs/COHERENT_RADIO_COUNT_INITIAL_PHASE_ELIMINATION_BOUNDED_THEOREM_NOTE_2026-10-14.md": "48e77f8cb258b11a47acd18a1e6d8213a0e7fc693a851862ea8d1a2df2789442",
+    "scripts/coherent_radio_count_initial_phase_check.py": "9ca987b06ff9f9035c86c0403ff84acbc0d42d479c2dee0b4bda9956ed72f21f",
+    "scripts/coherent_count_plasma_controls.py": "a0170fef63edc54af3a7a9a23708d695ab94f51d7f13b9a2b90f848341dcc90f",
+    "scripts/coherent_count_initial_phase_controls.py": "74554c02590e0ebb0a730ba0f86a47bb222853f7fb1d0ccb52facb3023e6254a",
+    "scripts/coherent_count_chirp_controls.py": "9254de2d47f12eb1a5114b08e3b9844e4f561eb913fbff0bb21d4c282361b66b"
+  },
+  "final_note_change": {
+    "previous_sha256": "e539fec6813eda4132608f5c92184f902d48e758813095b926f1869480c75a22",
+    "final_sha256": "48e77f8cb258b11a47acd18a1e6d8213a0e7fc693a851862ea8d1a2df2789442",
+    "old_paragraph": "written p=A(t)z, then B=diag(F_d,l(t)/F_ref,l) A(t). Deriving this physical\noperator from chirped, retarded, proper-clock phase transfer remains a separate\nobligation. In particular it need not retain first column 1.",
+    "replacement_paragraph": "written p=A(t)z, then B=diag(F_d,l(t)/F_ref,l) A(t). The two-chirp section below derives a restricted physical operator.\nIts extension to the full calibrated retarded proper-clock transfer remains\na separate application obligation. In particular it need not retain first column 1.",
+    "added_import_row": "| Calibrated unwrapped count increments, with slips and resets treated explicitly | Measurement inputs, not established by metadata equality | Constant initial phase is eliminated; time-dependent cycle slips require their own residuals or correction |",
+    "reversing_exact_two_changes_recovers_old_hash": true
+  },
+  "helper_mapping": [
+    {
+      "working_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_link/finite_count_plasma_check_v2.py",
+      "working_sha256": "58c423fabfaa5e3bdcfc539687b8f1af9debb7f9e1964e2903b38ff7b2e85b16",
+      "canonical_path": "scripts/coherent_count_plasma_controls.py",
+      "canonical_sha256": "a0170fef63edc54af3a7a9a23708d695ab94f51d7f13b9a2b90f848341dcc90f",
+      "functions": [
+        {
+          "name": "weights",
+          "source_text_identical": true,
+          "ast_identical": true,
+          "function_source_sha256": "135f27a29dbbe32b9788400be5767139d492f190b42b1833a05f786e401147b3"
+        },
+        {
+          "name": "design",
+          "source_text_identical": true,
+          "ast_identical": true,
+          "function_source_sha256": "3738645987748cd3f16e4f9442f32809ba9418bebeb324895b4f8b718225d304"
+        },
+        {
+          "name": "run_checks",
+          "source_text_identical": true,
+          "ast_identical": true,
+          "function_source_sha256": "bbc4415ed1149b9b614a1660f36ed4a9ee9ee821a0ff9d3b130a0b3ac867c87b"
+        }
+      ],
+      "removed_functions": [
+        "main",
+        "metadata"
+      ]
+    },
+    {
+      "working_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_link/initial_phase_elimination_check_v3.py",
+      "working_sha256": "57ec56d7d1686c6c509df50a76bd27d31767ec06b1d71e6a208726728fabbc80",
+      "canonical_path": "scripts/coherent_count_initial_phase_controls.py",
+      "canonical_sha256": "74554c02590e0ebb0a730ba0f86a47bb222853f7fb1d0ccb52facb3023e6254a",
+      "functions": [
+        {
+          "name": "column_projector",
+          "source_text_identical": true,
+          "ast_identical": true,
+          "function_source_sha256": "a4ae421f0e02d58812141a35c34536fc1bbf4b01d928a701d7369ff25f779769"
+        },
+        {
+          "name": "controls",
+          "source_text_identical": true,
+          "ast_identical": true,
+          "function_source_sha256": "65e1d4be0be85b59d527b827920bd171899dcceb96a852b63e61c9f909e5b36e"
+        }
+      ],
+      "removed_functions": [
+        "main"
+      ]
+    },
+    {
+      "working_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_link/chirped_coherent_phase_check_v3.py",
+      "working_sha256": "6478126f44d3a9d4897a7bdd1149f35d73cfeb20ad02433be605789d4ee39cea",
+      "canonical_path": "scripts/coherent_count_chirp_controls.py",
+      "canonical_sha256": "9254de2d47f12eb1a5114b08e3b9844e4f561eb913fbff0bb21d4c282361b66b",
+      "functions": [
+        {
+          "name": "run",
+          "source_text_identical": true,
+          "ast_identical": true,
+          "function_source_sha256": "96a601a371b565eca81539ad1ec3bc2410652156c473ffe07a49cd23bb8cfdc9"
+        }
+      ],
+      "removed_functions": [
+        "main"
+      ]
+    }
+  ],
+  "summary": {
+    "path": "outputs/coherent_radio_initial_phase/summary.json",
+    "sha256": "ef05cac414e20948915d332ee5aaa7f01a662755a226d47f72bccbba39d3b22d",
+    "source_hashes_match": true,
+    "only_difference_from_review_execution_summary": "Final note hash; executable sources and all three products are unchanged.",
+    "total_reported_controls": 1118,
+    "product_checks": {
+      "plasma_finite_count": {
+        "path": "outputs/coherent_radio_initial_phase/plasma_finite_count.json",
+        "sha256": "e22977cb436516a25974e0f53791ce353d4cfce973ceae02b0743ea3812cc23d",
+        "family_count_sum": 879,
+        "reported_failed": 0,
+        "reviewer_execution_product_identical": true
+      },
+      "initial_phase_contrasts": {
+        "path": "outputs/coherent_radio_initial_phase/initial_phase_contrasts.json",
+        "sha256": "928d2db59138602e813a4de8f1572b96ce5000463a06b2457c043bf384f4b694",
+        "family_count_sum": 198,
+        "reported_failed": 0,
+        "reviewer_execution_product_identical": true
+      },
+      "two_uplink_chirps": {
+        "path": "outputs/coherent_radio_initial_phase/two_uplink_chirps.json",
+        "sha256": "c9bbe75023ac0c0538d700d05c3fd1e579f37decddfbc3752c4002b8eacaecd1",
+        "family_count_sum": 41,
+        "reported_failed": 0,
+        "reviewer_execution_product_identical": true
+      }
+    }
+  },
+  "reviewer_execution_receipt_sha256": "642a7b4d44a3a0da0de43c0e1eb81d5be1f8acba6616c3fb30ad3c4f5bf37495",
+  "final_author_cache": {
+    "path": "logs/runner-cache/coherent_radio_count_initial_phase_check.txt",
+    "sha256": "e1f75b8598f430a26a1ad4d0707fcfb532bd919aa19924f79df5bef2161fe5f5",
+    "header": {
+      "runner": "scripts/coherent_radio_count_initial_phase_check.py",
+      "runner_sha256": "9ca987b06ff9f9035c86c0403ff84acbc0d42d479c2dee0b4bda9956ed72f21f",
+      "input_fingerprint_sha256": "808debcf61159b74cedd81ef76b2e70b1e3127a47f8afb8d93b981fbd708cf5d",
+      "timeout_sec": "120",
+      "exit_code": "0",
+      "elapsed_sec": "0.55",
+      "status": "ok"
+    },
+    "declared_input_fingerprint_independently_recomputed": true,
+    "stdout_matches_final_summary": true,
+    "stderr_empty": true,
+    "cache_status_is_execution_evidence_not_scientific_verdict": true
+  },
+  "author_mutations": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_link/MUTATIONS_FINAL_v2.json",
+    "sha256": "d7fc19120e25af5a688e3470a1aff239054ff7709b383a271cdbf8c57854f62d",
+    "source_receipts": [
+      {
+        "path": "MUTATIONS_v1.json",
+        "sha256": "a1797f383f9470be7e98838e35164ee9647b1ea2d758eaf6a6f6d9e7f5d0e7bb"
+      },
+      {
+        "path": "MUTATIONS_v2_REPAIRED_SELECTORS.json",
+        "sha256": "a51dc83e2172c686d4007d23e2a6f25fced88f96f6d6af7df77cc42ae75d7e8d"
+      }
+    ],
+    "initial_setup_failures": {
+      "count_error_propagation": {
+        "status": "mutation_not_applied",
+        "selector_matches": 3
+      },
+      "chirp_symbolic_inverse": {
+        "status": "mutation_not_applied",
+        "selector_matches": 0
+      }
+    },
+    "corrected_two_selectors_recorded_assertion_rejected": true,
+    "results": [
+      {
+        "name": "plasma_weights",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "7023a6b535fcabb20ab392f4cec451850932fd45c4a8a30a72d94b20d795a041",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: symbolic_weights",
+        "independently_executed": false
+      },
+      {
+        "name": "plasma_determinant",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "cb48c8b7821fe4f120e55eaf008ea1969d8044b28ba771cc2868ae642017ec60",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: determinant",
+        "independently_executed": false
+      },
+      {
+        "name": "two_link_alias_witness",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "17cc3753dbcaa772b92062b755300d5a2096e568c479cd507f11282b66833d97",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: two_link_witness",
+        "independently_executed": false
+      },
+      {
+        "name": "maxwell_fluid_sign",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "582e7fe6977288af67d28274f58881efd4273c3ab079e7f84672206fa08ce1a7",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: maxwell_fluid_dispersion",
+        "independently_executed": false
+      },
+      {
+        "name": "plasma_second_derivative",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "6d0bdd3d7c2c6498480e33bdf602fd13f066bf3518f3a4df3e831dfe272c6601",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: plasma_remainder_second_derivative",
+        "independently_executed": false
+      },
+      {
+        "name": "plasma_remainder_bound",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "f3cf7d219cb2d332f265d551a53cb2671dcbf448f76a804691cd7cfc0e2e9ce5",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: plasma_remainder_grid",
+        "independently_executed": false
+      },
+      {
+        "name": "finite_endpoint_difference",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "1906bf8c2093fd815034a67665661ca876dac73956656a8172fc33ebe4f19c8f",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: finite_count_endpoint_exactness",
+        "independently_executed": false
+      },
+      {
+        "name": "count_box_error",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "cba1c716e1c8f71cc923c0afe0d4a5c1a34f17da244f34e23503410e8d79612f",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: deterministic_error_bound",
+        "independently_executed": false
+      },
+      {
+        "name": "channel_covariance",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "07596a5124fdbfc219ff4c732c0206e7631276c1fbec5750c8f70cbd1313a46d",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: correlated_covariance",
+        "independently_executed": false
+      },
+      {
+        "name": "varying_operator_initial_correction",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "fb5f4bf4a9a77008ee794deb682b61d2eeb1d17800fa4f76cb7c97112ab211fd",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: changing_operator_exact_identity",
+        "independently_executed": false
+      },
+      {
+        "name": "initial_box_extremum",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "9d7ab6f2ad807504ed459ea634a788ded53fbeb86bcb01819db6660818cf4bb7",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: initial_box_bound_saturation",
+        "independently_executed": false
+      },
+      {
+        "name": "alignment_derivative_bound",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "ab50157f1845450256c11eaf77495c3298a602b53e6d8a29e7bb338ca46d39be",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: aligned_interval_lipschitz_bound",
+        "independently_executed": false
+      },
+      {
+        "name": "instantaneous_normalization",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "a61927993d91e59cfce5c45e6a2c76a524f6a36264725c2fa79a054c494f4f15",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: varying_normalization_identity",
+        "independently_executed": false
+      },
+      {
+        "name": "fixed_unit_operator",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "a221c17f31c5d53db580b1fc8110d417a9a1a43cdaaa88d07ea277dcb9e80045",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: fixed_units_full_phase_operator",
+        "independently_executed": false
+      },
+      {
+        "name": "constant_phase_error_variable_weights",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "21700f6f507a0407aeb5a904d4889073f6e463deb2405d846c33b4f6ebe706dc",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: constant_phase_error_survives_variable_weights",
+        "independently_executed": false
+      },
+      {
+        "name": "common_nondispersive_gain",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "c53aac701399dd743fa96d04362eb141e3485bb6da1c17c11e7de033f78bb9b4",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: common_nuisance_survives",
+        "independently_executed": false
+      },
+      {
+        "name": "singular_design_domain",
+        "helper": "scripts/coherent_count_plasma_controls.py",
+        "mutant_sha256": "7d000786316c5812af6ab56081c9ef1a78e4f57a0426fb2df53f3499995605c4",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: singular matrix accepted",
+        "independently_executed": false
+      },
+      {
+        "name": "orthogonal_projector",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "0add22babb820965000fe920e30e6b5f8ce11214832459f6e8b5cfe6acfef13c",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: projector_idempotent",
+        "independently_executed": false
+      },
+      {
+        "name": "contrast_normalization",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "cf6b4bd04799d010e6ae866c3d3a564f1cce7f7a99ca5bd18836560260f65605",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: contrast_unit_signal",
+        "independently_executed": false
+      },
+      {
+        "name": "initial_phase_constraint",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "5d581c036a516d9938018a4bc29532c388512b14fe87f1e62c764d25a18ca4fd",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: contrast_eliminates_initial_phase",
+        "independently_executed": false
+      },
+      {
+        "name": "declared_nuisance_constraint",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "3115ed7aa802702e2582117f945eae44019844a47b48355b85709f6abf11bd83",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: contrast_eliminates_H",
+        "independently_executed": false
+      },
+      {
+        "name": "cumulative_counts",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "38233a6515a5cc2ebf672138c24f6af790579fb699a5aad937b2e23121efbdde",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: cumulative_count_identity",
+        "independently_executed": false
+      },
+      {
+        "name": "count_error_propagation",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "fbd2c7c432720c0167761cb84ccf764638a2c7bc3a89d9abe75d71bc4bf6d1fd",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: increment_error_propagation_exact",
+        "independently_executed": false
+      },
+      {
+        "name": "count_box_saturation",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "14f5f26e4de824f51605fc25d9b80bf521a783ec57049b7dd5065a8164e44fa9",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: increment_box_bound_saturated",
+        "independently_executed": false
+      },
+      {
+        "name": "increment_correlations",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "c2ac5c1ce3b068d60905c1ba48a5cc2fb409bf4ff4a07a8d3e49ffe78ced809a",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: correlated_increment_variance",
+        "independently_executed": false
+      },
+      {
+        "name": "robust_affine_constraint",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "f1c7e9f9e35d76e3f0e850c081aa83e45b981955103c4fd3deecc4476a5d292e",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: robust_affine_initial_elimination",
+        "independently_executed": false
+      },
+      {
+        "name": "data_based_operator_bound",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "2563bdda7017cc4eec99e8ffcb49ba4c5379ef831689f7aacd235ef0f287441c",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: data_based_operator_bound",
+        "independently_executed": false
+      },
+      {
+        "name": "error_mean_requirement",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "0d5878c51874d5aad2878a5fe5a9e25a8ec2cf75493892c55130b13b6911e979",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: nonzero_mean_with_identity_covariance",
+        "independently_executed": false
+      },
+      {
+        "name": "joint_true_family_count_bound",
+        "helper": "scripts/coherent_count_initial_phase_controls.py",
+        "mutant_sha256": "b9e48b056df5182b6f1ff8a6fdbaf28d93597cf9c338394d0ab8006d7fefbd8e",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: uniform_true_family_joint_bound",
+        "independently_executed": false
+      },
+      {
+        "name": "chirp_inverse_row",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "ace34320c690b736aa01036bd63c3207e06dbc7402db3591d557bd489df1e8b9",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: exact_rational_inverse",
+        "independently_executed": false
+      },
+      {
+        "name": "chirp_symbolic_inverse",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "84d74b9e910230be2da6a58bb55394795c7fb2103ce6014120c5e52906a98f15",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: symbolic_inverse_row",
+        "independently_executed": false
+      },
+      {
+        "name": "chirp_determinant",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "8e9409ba989fbfecee0812f417fb662005542466f81d400d29977df28e92c97d",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: symbolic_determinant",
+        "independently_executed": false
+      },
+      {
+        "name": "uplink_phase_primitive_X",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "c7bdaf411feed671fcae3269684c21eba78f8ee2e06b01d28db897c61d54b17f",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: uplink_phase_derivative_X",
+        "independently_executed": false
+      },
+      {
+        "name": "uplink_phase_primitive_K",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "da806cde46b3fa658dde9b7ef0f2c275d5380ffa9ddd751f1c34d55cf3966e5a",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: uplink_phase_derivative_K",
+        "independently_executed": false
+      },
+      {
+        "name": "two_chirp_factorization",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "94dc1d7afe75954921cc87a7ff972e6f86ee384d520d3a7d6bda90dbd686cb68",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: architecture_factorization",
+        "independently_executed": false
+      },
+      {
+        "name": "physical_frequency_collision",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "3b9e14c2f8975d466beeeee7d5652d2b25a8ab9d9943cd91f70f302cfef8a293",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: actual_uplink_frequency_collision",
+        "independently_executed": false
+      },
+      {
+        "name": "emission_remainder_bound",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "0063bd6caf2a01a28a3fea06b0ffe6132237ffd96631838d93190051149ecba2",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: quadratic_emission_phase_remainder",
+        "independently_executed": false
+      },
+      {
+        "name": "emission_phase_orientation",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "2e73a484c2c6b196bf7871d7ff2bb5ac16579b7c0d17ec663ec23f71b441feae",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: quadratic_emission_phase_remainder",
+        "independently_executed": false
+      },
+      {
+        "name": "clock_columns_in_chirp_contrast",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "d21af86f07e70926c6da887906c621469046e29bd92bdb12ea6fe6314a920532",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: nonlinear_count_error_exact",
+        "independently_executed": false
+      },
+      {
+        "name": "missing_numerator_discriminator",
+        "helper": "scripts/coherent_count_chirp_controls.py",
+        "mutant_sha256": "2fb9815ac1efc8d6b4bddb3f49e7be879eb11fffd9eb4c6506f4d8f6533836cd",
+        "source_and_mutant_hash_verified": true,
+        "unique_selector_verified": true,
+        "syntax_parses": true,
+        "recorded_status": "assertion_rejected",
+        "recorded_exit_code": 1,
+        "recorded_error": "AssertionError: missing_chirp_numerator_detected",
+        "independently_executed": false
+      }
+    ],
+    "interpretation": "40 author-reported assertion rejections, identities and mutation source construction checked here. No mutant was executed by this reviewer; not independent experiments or complete domain coverage."
+  },
+  "prior_evidence_sha256": {
+    "REVIEW_FINITE_COUNT_PLASMA_v2.md": "9290eee04f5e237ffdf6b16df1c85b408b0c7ed4bee12d2982eb677b40a9b553",
+    "REVIEW_INITIAL_PHASE_AND_CHIRP_v2.md": "6837157d2ded9977029151184e6f2cf548f5546872579b7e4f7e1292b8b653f8",
+    "FINAL_INITIAL_PHASE_CHIRP_CONFIRMATION_v3.md": "7ca2dc1d3120e20ca23969fde207deaf8dec77913a88627af146fc362ba87f8b",
+    "PLASMA_INDEPENDENT_RESULTS_v1.json": "a487190d88c5ead22b423d0377f18e076460d646bdc91bb42ac54a82495da19b",
+    "INITIAL_PHASE_CHIRP_INDEPENDENT_RESULTS_v1.json": "e36a9d092ad84793e10305b5445b014e2ba02c5438ef939e62ef3e7f2c237082",
+    "UNBIASEDNESS_COUNTEREXAMPLE_v1.json": "66739cca4883067bda19febb679e9b37a946cdd6a97854b6b7e4192cbe25c31e"
+  },
+  "cached_primary_document_checks": {
+    "dors_002_020501.txt": {
+      "sha256": "1f2f6f8f99b895f524fb6d27ea06339956e65a5b8d868a32e2f10beed31f7871",
+      "receipt_sha256": "3f83dec668cf1421f032bc14442d8c9422a6a040097e99c9c2303e97e4a3699d",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/document/dors_002_020501.txt",
+      "coverage": "Read relevant specification section or complete directory listing; no measurement sample opened."
+    },
+    "casrssis.txt": {
+      "sha256": "daa759b2338fc4ca53d7474d7c17f83a1068470c0c5a00bcc17cf2d17e5ad84b",
+      "receipt_sha256": "2719ec8a4965beccf183bab017c18f0efa3b068716c2f61b3eb2d2124bb85f39",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/document/casrssis.txt",
+      "coverage": "Read relevant specification section or complete directory listing; no measurement sample opened."
+    },
+    "sce1_169_rsr_index.html": {
+      "sha256": "99fb01cc42256431a4ead127ccf795a94444dbb4759c49db909af8dffadac5a5",
+      "receipt_sha256": "068909540ec1fe2db5c7d42a0aa2d652859c172793a9a5cbdc6c3cc61bba8e1c",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/",
+      "coverage": "Read relevant specification section or complete directory listing; no measurement sample opened."
+    }
+  },
+  "technical_incidents": [
+    {
+      "kind": "source_binding_guard",
+      "detail": "First final-binding attempt stopped before writing because the author replaced the initial canonical note with the two disclosed scope clarifications. New note was read and exact reverse-diff hash checked."
+    },
+    {
+      "kind": "receipt_inspection_parser",
+      "detail": "Initial inspection selected the two source_receipts rows instead of results and raised KeyError(helper); corrected to explicit mutation-result records. No scientific execution or artifact was changed."
+    },
+    {
+      "kind": "web_access",
+      "detail": "Web open calls to both cited archive specifications returned inaccessible; used the already retrieved exact-byte primary-document copies and verified their saved receipt hashes. No new raw product fetched."
+    }
+  ],
+  "excluded": [
+    "Combined landing validation",
+    "Formal audit and any retained-status decision",
+    "Physical calibration or gravity fit",
+    "Raw data or reserved-product access",
+    "Independent execution of author mutants"
+  ]
+}

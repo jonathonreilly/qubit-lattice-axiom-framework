@@ -1,0 +1,211 @@
+{
+  "recorded_at": "2026-10-14T23:53:16.472013+00:00",
+  "role": "exposed development metadata only; not a physical measurement fit or independent validation",
+  "odf_scan": {
+    "role": "exposed development metadata; no new measurements or values fitted",
+    "source_sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+    "source_file": "outputs/cassini_doppler_inputs/c32easc2002_169_0000xmmmv0.odf",
+    "group_field_order": [
+      "type",
+      "receive_station",
+      "transmit_station",
+      "uplink_band",
+      "downlink_band",
+      "bad"
+    ],
+    "groups": [
+      {
+        "key": [
+          11,
+          54,
+          0,
+          0,
+          2,
+          0
+        ],
+        "rows": 649
+      },
+      {
+        "key": [
+          12,
+          25,
+          25,
+          2,
+          2,
+          0
+        ],
+        "rows": 36007
+      },
+      {
+        "key": [
+          12,
+          45,
+          45,
+          2,
+          2,
+          0
+        ],
+        "rows": 6094
+      },
+      {
+        "key": [
+          12,
+          54,
+          54,
+          2,
+          2,
+          0
+        ],
+        "rows": 19358
+      },
+      {
+        "key": [
+          13,
+          25,
+          54,
+          2,
+          2,
+          0
+        ],
+        "rows": 9910
+      },
+      {
+        "key": [
+          13,
+          45,
+          25,
+          2,
+          2,
+          0
+        ],
+        "rows": 10160
+      },
+      {
+        "key": [
+          13,
+          54,
+          45,
+          2,
+          2,
+          0
+        ],
+        "rows": 9486
+      }
+    ],
+    "coherent_rows": 91015,
+    "one_way_rows": 649,
+    "coherent_band_pairs": [
+      [
+        2,
+        2
+      ]
+    ],
+    "coherent_distinct_nominal_time_tags": 85364,
+    "tags_with_multiple_station_links": 5651,
+    "tags_with_multiple_band_pairs": 0,
+    "scope": "Band code2 is X in the already checked label. Different station links do not establish common paths/clocks or an independent carrier. Reserved tracks unopened."
+  },
+  "same_day_rsr_directory_products": [
+    "c32easc2002_169_0155x25x45d.1b1",
+    "c32easc2002_169_0432x45x45d.1b1",
+    "c32easc2002_169_0549x25x54d.1b1",
+    "c32easc2002_169_1335x54k25d.1b1",
+    "c32easc2002_169_1335x54x25d.1a1",
+    "c32easc2002_169_1656x25k25d.1b1",
+    "c32easc2002_169_1657x25x25d.1a1"
+  ],
+  "filename_semantics": "CAS RSS SIS section3.3: xuu=transmitter band and station, drr=downlink band and receiving station; filenames name X uplink and X or Ka downlink. No RSR record has been decoded here.",
+  "pd_document_semantics": "DORS-002 section4.2.3/4.2.5: wet/dry zenith path delays and retrieval-quality flags; output of media-calibration statistical/Bayesian retrieval, not coherent phase channel.",
+  "third_link_status": "Not supplied by the selected exposed ODF or inspected day169 RSR filenames. No claim about other archive dates or products.",
+  "source_receipts": [
+    {
+      "retrieved_at": "2026-10-14T23:46:12.884373+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/",
+      "bytes": 4851,
+      "sha256": "99fb01cc42256431a4ead127ccf795a94444dbb4759c49db909af8dffadac5a5",
+      "role": "directory metadata only; no measurement bytes read",
+      "local_source_name": "sce1_169_rsr_index.html"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:46:13.300875+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/pd1/",
+      "bytes": 1935,
+      "sha256": "317e32a62ca23dd867b7e19ab0895a1850ce234c9149628407d4990240b0f6f5",
+      "role": "directory metadata only; no measurement bytes read",
+      "local_source_name": "sce1_169_pd1_index.html"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:46:13.741939+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/pd2/",
+      "bytes": 1935,
+      "sha256": "03bf1cf8c6722a9326e7943a96b3ffbacf30c48f6031c7ffb7f8fcd0d85acbe4",
+      "role": "directory metadata only; no measurement bytes read",
+      "local_source_name": "sce1_169_pd2_index.html"
+    },
+    {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/document/dors_002_020501.txt",
+      "sha256": "1f2f6f8f99b895f524fb6d27ea06339956e65a5b8d868a32e2f10beed31f7871",
+      "bytes": 9810,
+      "retrieved_at": "2026-10-14T23:51:04.938507+00:00",
+      "role": "instrument/archive documentation; no measurement values",
+      "local_source_name": "dors_002_020501.txt"
+    },
+    {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/document/casrssis.txt",
+      "sha256": "daa759b2338fc4ca53d7474d7c17f83a1068470c0c5a00bcc17cf2d17e5ad84b",
+      "bytes": 309479,
+      "retrieved_at": "2026-10-14T23:51:06.187508+00:00",
+      "role": "instrument/archive documentation; no measurement values",
+      "local_source_name": "casrssis.txt"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:50:24.743090+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1657x25x25d.lbl",
+      "bytes": 61948,
+      "sha256": "18b01e8f2cf86fdb75f07d98e3cd15552029c0b2f301f44e14f73c177dcba273",
+      "role": "exposed development product METADATA ONLY; no measurement sample or reserved product opened",
+      "local_source_name": "rsr_c32easc2002_169_1657x25x25d.lbl"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:50:22.908715+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54k25d.lbl",
+      "bytes": 61946,
+      "sha256": "2349b0473986f5247650fc88a5bbaf7e859786e22253b38f4a8719af3dd0c697",
+      "role": "exposed development product METADATA ONLY; no measurement sample or reserved product opened",
+      "local_source_name": "rsr_c32easc2002_169_1335x54k25d.lbl"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:50:24.130284+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1656x25k25d.lbl",
+      "bytes": 61948,
+      "sha256": "d72c70edc31bacb1ab6a39198f21c359d50db24c23f86685f48b78c3fe3e67ed",
+      "role": "exposed development product METADATA ONLY; no measurement sample or reserved product opened",
+      "local_source_name": "rsr_c32easc2002_169_1656x25k25d.lbl"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:50:23.512943+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.lbl",
+      "bytes": 61946,
+      "sha256": "36ab671cbb83c7d04060c2a19058800a4fc50f780aa8fa6e9f77ed3089046382",
+      "role": "exposed development product METADATA ONLY; no measurement sample or reserved product opened",
+      "local_source_name": "rsr_c32easc2002_169_1335x54x25d.lbl"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:50:25.097482+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/pd1/c32easc2002_169_1335_020825.lbl",
+      "bytes": 712,
+      "sha256": "84d62fe250d158902ca85ccfc41ede42ef2d98908ea168f184fe35c31ce1bcd0",
+      "role": "exposed development product METADATA ONLY; no measurement sample or reserved product opened",
+      "local_source_name": "pd1_c32easc2002_169_1335_020825.lbl"
+    },
+    {
+      "retrieved_at": "2026-10-14T23:50:25.457784+00:00",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/pd2/c32easc2002_169_1335_020825.lbl",
+      "bytes": 712,
+      "sha256": "708bac7fadecee2a6b42ecbe7a92836b78daefde655bffc9d617dc2cac260a27",
+      "role": "exposed development product METADATA ONLY; no measurement sample or reserved product opened",
+      "local_source_name": "pd2_c32easc2002_169_1335_020825.lbl"
+    }
+  ],
+  "reserved_measurements": "All registered calibration/validation measurements remain unopened."
+}

@@ -23,3 +23,17 @@ The current registered scale-reference, kinetic-isotropy and realized-state sour
 | Vacuum mass at the measured background | Background-dependent effective Hessian and matter response | Constrain range from data before selecting field state | live; the new inverse is conditional on one mode and does not select the action |
 
 The count/clock milestone reconstructs the stored count sign, bias units and one-way reference conversion on the exposed product, with no fitted constants. Imported primary instrument definitions replace the formerly unverified conversion guess. The forward modulo lift retains 0<=increment<2^32 cycles and no reset as a condition. Nonzero raw item87 diagnostics are preserved; slip-free physical history is not inferred. The phase law, electronics clock maps, transmitted phase and retarded worldlines remain physical inputs. The finite-count integral and endpoint error bound follow from those premises; no extra clock multiplier is needed. None of the scalar action/state/scale/environment imports is retired.
+
+## Coherent radio phase elimination
+
+Known fixed-unit endpoint operators, calibrated unwrapped increments, shared
+retarded clocks/rays, coherent ratios and the weak cold-plasma approximation
+are explicit measurement premises. The multi-interval construction eliminates
+an arbitrary initial receiver phase by h^T W=0; it does not select that phase
+or derive the scalar field's initial history. For two uplink chirps the initial
+phase response has at most two temporal shapes. Real operator uncertainty
+requires the stated robust-family condition or a bounded leakage; no bound
+on an arbitrary initial phase is quietly supplied. Covariances and residual
+means are separate assumptions. PD1/PD2 are retrieved atmospheric path delays,
+not additional coherent frequencies. All reserved measurement products remain
+unopened. No scalar action, potential, scale or environment import is retired.

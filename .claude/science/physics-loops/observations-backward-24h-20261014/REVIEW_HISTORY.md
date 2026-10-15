@@ -25,3 +25,40 @@ All twelve conformance sections are addressed in DOPPLER_CONFORMANCE.md. Section
 Final note-bound cache regeneration succeeds at240seconds declared cap, statusok and exit0. One intended graph node, zero new edges, all existing topology unchanged. The complete raw-row ledger is reproduced by the canonical runner and bound by SHA6973b8b57b7ecb9fc4f3ea87efbfa1e15dfe4e12349f3ad6aadd054790597f77; it is not committed as a large duplicate data artifact.
 
 Publication copies remove only redundant final newlines to satisfy git diff --check. The immutable original reviewer reports remain unchanged locally and their full exact UTF-8 text/hash is preserved in DOPPLER_REVIEW_PUBLICATION_MAP_v1.json. Readable final report is .claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/CANONICAL_DOPPLER_SOURCE_CONFIRMATION_v1_PUBLISHED.md, SHAb9eb624673eea7c856c0363bd994acb9050c20d832467131b15d51f0df9997e7. The transformation does not change a scientific statement or any checked source.
+
+## Initial receiver phase elimination milestone
+
+Final source confirmation: physical_link/independent_v1/CANONICAL_PHASE_SOURCE_CONFIRMATION_v1.md
+(SHAd1b73dd2cc6d194c0bca3c6a0574ecb1894cdf2b9391d81d271be2288ec4722b).
+The focused reviewer read the consolidated source and four Python files;
+all six mathematical helper functions match the working versions. Independent
+earlier implementations supplied4007 and1281 correlated controls; the isolated
+canonical author-code run supplies879/198/41 controls, not another independent
+implementation. The final note SHA48e77f8c and cache input fingerprint
+808debcf61159b74cedd81ef76b2e70b1e3127a47f8afb8d93b981fbd708cf5d
+are verified. The final note-only edits leave executable hashes/products
+unchanged and update only the paired-note hash in the summary.
+
+Three real qualifications were repaired: changing normalization retains initial
+phase; joint operator/count bounds need true-family coefficients; covariance
+does not imply unbiasedness. Calibrated unwrapped increments and slips/resets
+remain explicit measurement inputs. The canonical note contains complete
+positive proofs and finite witnesses. It makes no exhausted-family or global
+impossibility claim. Full N1–N8 is not invoked or claimed passed.
+
+The final mutation receipt records40 actual assertion-rejected variants.
+Two initial text selectors were not applied and were repaired in a separate
+two-case invocation; no setup error was counted as a mathematical rejection.
+The independent reviewer reconstructed all mutant hashes and inspected
+recorded assertions but did not rerun mutants. PHASE_CONFORMANCE.md addresses
+all12sections; shared integrated landing and formal audit remain pending.
+
+Final delivery checks: all41intended paths were staged explicitly. Four canonical
+Python files compile. Scoped vocabulary fix/report produced zero violations
+and zero automatic edits; staged whitespace checking is clean. The complete
+source report, exact hashes and fresh cache were independently confirmed.
+A cold read of the complete41path delta is complete; the reviewer identified
+only stale current-state wording, corrected in STATE.yaml, PR_BACKLOG.md and
+PHASE_CONFORMANCE.md. Final identity-only disposition checking is in progress
+and will be preserved in runtime before publication. No canonical scientific
+source changed during these operational corrections.

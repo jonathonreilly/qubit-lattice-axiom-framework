@@ -1,0 +1,7 @@
+# Current claim status
+
+`bounded_theorem / conditional-support`, upstream support. External compiler source accepted under bbe2e9c9 with the corrected Pauli induction, endpoint-or-variation work contract, nonempty domain and whole-generator positivity scope. Autonomous source/composition accepted under134cbee6 after complete separate report52eb2e2d. Those scientific source decisions remain distinct from actual root source-publication acceptance60774538, which accepts this rendering for separate integration and confers no retained audit status.
+
+The canonical unary-clock source and its exact proof/review recovery are resolved. This version separately binds the actual root-selected Git base and source-publication evidence. Primary/cache/provenance mutations, focused checks, graph, regular PR and attachment remain subsequent actual gates. The historical PUBLICATION_STATE nulls remain null after any later integration; actual outcomes belong in distinct current binding/receipt fields.
+
+Supported scope: finite ordinary-NN static implementation of an admitted one-port waveform, plus the separately qualified actual-time endpoint/window compiler, with complete retained outputs and supplied initial clock/vacuum. Native initialization, installation/isolation, physical energy/work identification, detector/readout, common caps, efficiency and reuse remain open. No Gibbs frontier is imported. No editable prompt or axiom changes.

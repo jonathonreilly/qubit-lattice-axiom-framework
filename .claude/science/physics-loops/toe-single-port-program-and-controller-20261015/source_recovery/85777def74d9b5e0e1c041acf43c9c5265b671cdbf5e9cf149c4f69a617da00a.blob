@@ -1,0 +1,33 @@
+"""One-time full source/receipt closure and freeze for this analytic review."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent;target=D/'FINAL_FREEZE.json';assert not target.exists()
+started=datetime.datetime.now(datetime.timezone.utc).isoformat()
+def ident(p):
+    b=p.read_bytes();return {'path':str(p),'relative_path':str(p.relative_to(D)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def verify(row):
+    p=Path(row['path']);b=p.read_bytes();assert (len(b),hashlib.sha256(b).hexdigest())==(row['bytes'],row['sha256']),str(p)
+m=json.loads((D/'SOURCE_MANIFEST.json').read_text());count=0
+verify(m['candidate_freeze']);count+=1
+for row in m['candidate_members']:verify(row);count+=1
+for row in m['sources']:
+    verify(row['original']);verify(row['captured']);count+=2
+for row in m['local_sources']:verify(row);count+=1
+for row in m['author_context_origins']:
+    if row['actual_at_capture'] is not None:verify(row['actual_at_capture']);count+=1
+for phase in ['capture','verification']:
+    folder=D/'metadata_runs'/phase;r=json.loads((folder/'EXECUTION.json').read_text())
+    assert r['exit_code']==0 and r['failure'] is None and r['scientific_execution'] is False
+    for key in ['child_source_at_launch','recorder_at_launch','launch','stdout','stderr']:verify(r[key]);count+=1
+    for row in json.loads((folder/'LAUNCH.json').read_text())['inputs']:
+        verify(row['original']);verify(row['captured']);count+=2
+v=json.loads((D/'VERIFICATION.json').read_text());assert v['candidate_originals_unchanged'] is True and v['scientific_programs_run']==0
+(D/'SEAL_OPERATION.json').write_text(json.dumps({'started_utc':started,'checked_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'actual in-process metadata closure; not an invented subprocess receipt','identities_checked':count,'actual_metadata_subprocesses':2,'scientific_programs_run':0,'historical_programs_replayed':0,'candidate_originals_unchanged':True,'excluded_exact_path':str(target)},indent=2)+'\n')
+files=[ident(p) for p in sorted(D.rglob('*')) if p.is_file() and p!=target]
+freeze={'frozen_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'bounded source-exposed analytic review with mandatory qualifications; no audit verdict','scientific_programs_run':0,'files':files}
+target.write_text(json.dumps(freeze,indent=2)+'\n')
+for row in files:verify(row)
+print(json.dumps({'freeze':ident(target),'members':len(files),'report':ident(D/'REPORT.md'),'source_manifest':ident(D/'SOURCE_MANIFEST.json'),'metadata_receipts':[ident(D/'metadata_runs'/p/'EXECUTION.json') for p in ['capture','verification']]},indent=2))

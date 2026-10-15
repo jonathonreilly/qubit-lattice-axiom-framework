@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://arxiv.org/pdf/0805.3975v2",
+  "started_at": "2026-10-15T17:53:22.520191+00:00",
+  "resolved_url": "https://arxiv.org/pdf/0805.3975v2",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "file": "Burgarth_et_al_0805.3975v2.pdf",
+  "bytes": 151007,
+  "sha256": "b981b1b15d4bc75a8ab4d5d50ebd18eb5be22bfbb5d6c342545d0e337be23f99",
+  "outcome": "retrieved",
+  "ended_at": "2026-10-15T17:53:23.000933+00:00"
+}

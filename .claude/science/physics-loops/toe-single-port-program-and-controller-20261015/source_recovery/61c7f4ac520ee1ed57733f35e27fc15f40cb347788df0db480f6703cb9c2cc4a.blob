@@ -1,0 +1,62 @@
+{
+  "schema": "single-port-autonomous-metadata-inspection-v1",
+  "utc": "2026-10-15T18:40:33.710767+00:00",
+  "status": "source/recovery/coverage/receipt consistency verified",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/DERIVATION.md",
+    "bytes": 24070,
+    "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d",
+    "recovery": "source_blobs/0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d.bin",
+    "role": "Current complete changed candidate",
+    "read_coverage": "Complete current read, including a second full untruncated display.",
+    "line_count": 262
+  },
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/REPORT.md",
+    "bytes": 32692,
+    "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d"
+  },
+  "source_rows": 20,
+  "distinct_source_blobs": 19,
+  "selected_complete_freezes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10",
+      "members_checked": 2
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_root_review/FINAL_FREEZE.json",
+      "sha256": "9b7d3b4d1305a80c221ccfe749a5e4921def521260adbf772e07a26a1124c969",
+      "members_checked": 2
+    }
+  ],
+  "candidate_declared_sources_bound": 6,
+  "capture_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/metadata_runs/capture/EXECUTION.json",
+    "bytes": 2265,
+    "sha256": "dad41827ab202b954d14982c3865040d74a9b1cdd043f9977ad92c6fb72fe76b"
+  },
+  "metadata_scripts_parsed": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/capture_sources.py",
+      "bytes": 9160,
+      "sha256": "e8aafa85650d2a0a59cb6a4740a892e0895b5901f078ab634e17ab42d939df5f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/verify_metadata.py",
+      "bytes": 5786,
+      "sha256": "751e6273e5edce4d3eadf93c4ba83f6c59eb2b9a69df83ce6427ab892732df1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/record_metadata.py",
+      "bytes": 3850,
+      "sha256": "a6df08142a325e928f179bab470d7fde711dcb8cc7524e0b665f9e0952db9b67"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "math_verified_by_program": false,
+  "proof_obligations_checked_analytically": "See REPORT; no predicate count is scientific evidence.",
+  "actual_failed_metadata_runs_so_far": 0,
+  "verification_receipt_and_final_freeze": "Recorder writes the actual receipt after this process exits, then seals every member.",
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,13 @@
+{
+  "verified_utc": "2026-10-15T18:26:13.559610+00:00",
+  "scope": "file/source/receipt metadata only, not theorem validation by execution",
+  "identity_checks": 112,
+  "candidate_freeze_members": 34,
+  "source_snapshots": 26,
+  "author_context_current_matches": 13,
+  "author_context_origins": 13,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "candidate_originals_unchanged": true,
+  "publication_or_audit": null
+}

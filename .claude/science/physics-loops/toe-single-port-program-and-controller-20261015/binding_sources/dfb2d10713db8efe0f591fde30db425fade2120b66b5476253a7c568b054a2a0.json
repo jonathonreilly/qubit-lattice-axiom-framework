@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T19:40:17.266436+00:00",
+  "baseRefName": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+  "headRefName": "physics-loop/toe-transverse-field-memory-20261015",
+  "headRefOid": "e93bc2b057492d0eef909907708871cb1920fdc6",
+  "isDraft": false,
+  "number": 9616,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9616",
+  "tree": "38f12d3bc60b6650fdbae1b263a6b6a3e06cad40",
+  "base_head": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 87310,
+    "sha256": "6239c11422d342751c67d6c7530aa03bdacde1c89aa78c8bcdfab5bdcc4de624"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/transverse_field_gibbs_memory_2026_10_15.py",
+    "bytes": 33942,
+    "sha256": "b253130cc73fb24a1961689f5a10e4ae2c1c65e704b2e9bef6c46efbec1ac6b5"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/transverse_field/PR_BODY.md",
+    "bytes": 3177,
+    "sha256": "2c012bb3337dfb888caa702d627f1619c611dfefce6ff349130700e668f9899b"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

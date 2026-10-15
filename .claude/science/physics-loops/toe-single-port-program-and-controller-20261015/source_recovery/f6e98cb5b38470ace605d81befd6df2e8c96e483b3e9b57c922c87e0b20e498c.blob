@@ -1,0 +1,33 @@
+# Single-port program research: bounded author result
+
+The candidate proves a conditional reduction from separately addressed preparation gates to one externally driven boundary port plus a supplied weak positive NN path. It does **not** complete autonomous physical programming. The exact sufficient remaining interface is DERIVATION.md equation (18), including a finite prepared controller, its fixed NN geometry, retained output, phases and costs.
+
+The new endpoint/window contract is
+
+    U(T+s) approximately phase * exp(-isH) W exp(-iTH),  0<=s<=w,
+
+where H contains the literal original H0 and every other declared fixed background term. This is deliberately different from reproducing each intermediate state of the earlier H_aut program. T is a finite returned compilation time, with no fixed upper cap or efficiency conclusion.
+
+## What the argument supplies
+
+* An explicit box-filling NN Hamiltonian path through every fixed original factor. Old sites and their arbitrary inputs/references stay fixed. All fresh fillers are retained and may be arbitrarily correlated; they are not clean mediators. Saturated v1 uses existing geometric edges to occupied neighbors, not a seventh neighbor.
+* A positive path J=sum(I-SWAP), with all four scalar/Pauli coefficients and the full enlarged omitted-edge isolation set charged. A finite polynomial determinant proves that arbitrarily weak positive rational path strengths can be selected despite a known computable fixed H.
+* A finite computable external schedule, beyond a Lie-algebra endpoint statement. The positive-time augmented group tracks actual exp(-it Hbar) alongside the plant and is SU(d) times the background recurrence torus. Dovetailed certified tests find a rational word at its actual elapsed T. Identity phases and the target determinant lift are explicit; no phase recurrence is silently assumed for the scalar background.
+* Positive C^1 onsite X/Y pulses at the same endpoint T, with finite returned action, variation, slew and calibration requirements. The full weak path is included exactly during compilation. Only the later finite window is estimated by lambda ||Jbar|| w.
+* A whole-space operator bound and therefore an arbitrary-reference full-output trace bound. Equation (15a) spells out the consumed-pure-memory reset and target-packet specialization with every displaced input record retained. The full post-endpoint H evolution remains in the window target.
+
+The reduction trades distributed pulse access for substantial explicit premises: extra supplied static couplings/fillers and isolation, complete computable H coefficients, an externally issued waveform, arbitrarily long finite compilation/search, corresponding coefficient precision, and whatever memory state the chosen preparation program consumes. It supplies no native source, fabrication procedure, memory recycling, fixed-strength family, efficient resource scaling or autonomous controller.
+
+## Important checks and limits
+
+The augmented-group ideal argument checks the actual-time ordering rather than replacing the duration with a convenient unaged input. Its SU(d) formulation avoids uncontrolled U(d) center constraints; all physical scalars are put back in equation (12). Unknown recurrence time is handled by a terminating semidecision using strict margins, not by assuming computable exact equality tests. The same distinction is used to choose a nonzero controllability determinant.
+
+The endpoint target is identity on every filler, uniformly on correlated inputs. During compilation those factors can become entangled. The installed path persists afterward, so its endpoint energy and its whole-window action are charged; an exact two-qubit example shows why an endpoint alone does not give a frozen output window. An integrated calibration bound is not claimed to bound calibration work without a derivative bound.
+
+The original autonomous b726 and accessible-pair d4ed sources are context at exact unchanged bytes. Neither is imported as a realization theorem for the new filled-box geometry. The native-clock/control/purity suppliers and a compatible autonomous transducer remain unresolved. The new proposal is author science requiring separate checking, not publication acceptance or an audit verdict.
+
+## Actual evidence
+
+No scientific runner, numerical propagation, pulse search, large matrix, parameter sweep or prior program was executed. The algorithms are analytic constructions with termination proofs; no concrete T or N was measured. Metadata-only activities were local reads/searches, exact source recovery, a primary-literature PDF retrieval, hashing and final freezing. Their actual timestamps and identities are recorded; they do not independently validate the mathematics.
+
+SOURCE_MANIFEST.json binds 13 exact local sources and recovery copies. READ_COVERAGE.md distinguishes reused complete author/root-context coverage from current partial refreshes and search-only matches. LITERATURE_SCOPE.md binds the primary paper and its limited use. Frozen prior packets, W, Git refs, prompts, axioms, audits, locks and checkpoints were not changed. No model override or delegation occurred. No editable prompt file changed.

@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-15T18:16:48.075565+00:00",
+  "status": "root proposal, separate check pending",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/DERIVATION.md",
+      "bytes": 24070,
+      "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/SOURCE_PINS.json",
+      "bytes": 2702,
+      "sha256": "1de6182ecb2cf58f521ff8f5f2558a51fede8d60bbbc2639c5e431b8097f66e1"
+    }
+  ],
+  "scientific_programs_run": 0
+}

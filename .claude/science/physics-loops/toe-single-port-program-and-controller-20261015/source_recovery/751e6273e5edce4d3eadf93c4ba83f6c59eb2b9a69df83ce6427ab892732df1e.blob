@@ -1,0 +1,121 @@
+from pathlib import Path
+from datetime import datetime, timezone
+import ast
+import hashlib
+import json
+
+O = Path(__file__).resolve().parent
+N = O.parent
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+
+def same_identity(actual, expected):
+    assert actual['bytes'] == expected['bytes']
+    assert actual['sha256'] == expected['sha256']
+
+
+def main():
+    assert not (O / 'FINAL_FREEZE.json').exists(), 'Frozen output is immutable'
+    manifest = json.loads((O / 'SOURCE_MANIFEST.json').read_text())
+    assert manifest['schema'] == 'single-port-autonomous-source-manifest-v1'
+    assert manifest['scientific_programs_run'] == 0
+    rows = manifest['sources']
+    by_path = {r['path']: r for r in rows}
+    assert len(by_path) == len(rows)
+    for row in rows:
+        origin = Path(row['path'])
+        recovery = O / row['recovery']
+        assert recovery.resolve().is_relative_to(O)
+        same_identity(pin(origin), row)
+        same_identity(pin(recovery), row)
+        assert origin.read_bytes() == recovery.read_bytes()
+
+    checked_freezes = []
+    for directory, name in [
+        ('single_port_autonomous_root_candidate', 'PROPOSAL_FREEZE.json'),
+        ('single_port_program_root_review', 'FINAL_FREEZE.json'),
+    ]:
+        freeze_path = N / directory / name
+        freeze_row = by_path[str(freeze_path)]
+        freeze = json.loads((O / freeze_row['recovery']).read_text())
+        assert len(freeze['files']) == 2
+        for member in freeze['files']:
+            same_identity(by_path[member['path']], member)
+        checked_freezes.append({'path': str(freeze_path), 'sha256': freeze_row['sha256'], 'members_checked': 2})
+
+    pins_row = by_path[str(N / 'single_port_autonomous_root_candidate/SOURCE_PINS.json')]
+    source_pins = json.loads((O / pins_row['recovery']).read_text())
+    for row in source_pins['sources']:
+        same_identity(by_path[row['path']], row)
+    assert source_pins['scientific_programs_run'] == 0
+    coverage = json.loads((O / 'READ_COVERAGE.json').read_text())
+    assert coverage['source_exposed'] and not coverage['blind_or_model_diverse']
+    assert coverage['same_selected_model_and_effort'] and coverage['new_agents'] == 0
+    assert coverage['scientific_programs_run'] == 0
+    assert coverage['late_compiler_acceptance_received_after_standalone_report_draft']
+    assert {r['path']: r['sha256'] for r in coverage['rows']} == {r['path']: r['sha256'] for r in rows}
+
+    capture_run = O / 'metadata_runs/capture'
+    receipt = json.loads((capture_run / 'EXECUTION.json').read_text())
+    assert receipt['schema'] == 'bounded-metadata-execution-v1'
+    assert receipt['phase'] == 'capture' and receipt['exit_code'] == 0
+    assert not receipt['timed_out'] and receipt['timeout_seconds'] == 60
+    assert receipt['scientific_programs_run'] == 0
+    assert receipt['argv'][1] == str(O / 'capture_sources.py')
+    same_identity(pin(O / 'capture_sources.py'), receipt['child_source_at_launch'])
+    same_identity(pin(capture_run / 'executed_source.py'), receipt['archived_child_source'])
+    assert (capture_run / 'executed_source.py').read_bytes() == (O / 'capture_sources.py').read_bytes()
+    for stream in ('stdout', 'stderr'):
+        same_identity(pin(capture_run / stream), receipt[stream])
+    same_identity(pin(O / 'record_metadata.py'), receipt['recorder_at_launch'])
+
+    scripts = []
+    for name in ('capture_sources.py', 'verify_metadata.py', 'record_metadata.py'):
+        source = O / name
+        data = source.read_bytes()
+        assert data.endswith(b'\n') and not data.endswith(b'\n\n')
+        ast.parse(data.decode(), filename=str(source))
+        scripts.append(pin(source))
+    report = (O / 'REPORT.md').read_text()
+    for marker in (
+        '0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d',
+        'bbe2e9c911e3323f840855fb2e77cc5e86d1669486eb8c8dda2e8cdec3ff53eb',
+        'Late exposure update:',
+        'separately positive old/faulty local blocks',
+        'Omitting the nonscalar port counterterm',
+        'multi-head clock',
+        'two endpoint differences',
+        'No numerical witness was needed',
+    ):
+        assert marker in report, marker
+    assert all(f'## {i}.' in report for i in range(1, 13))
+    assert 'There is no requested amendment to the frozen candidate.' in report
+    inspection = {
+        'schema': 'single-port-autonomous-metadata-inspection-v1',
+        'utc': datetime.now(timezone.utc).isoformat(),
+        'status': 'source/recovery/coverage/receipt consistency verified',
+        'candidate': by_path[str(N / 'single_port_autonomous_root_candidate/DERIVATION.md')],
+        'report': pin(O / 'REPORT.md'),
+        'source_rows': len(rows),
+        'distinct_source_blobs': len({r['sha256'] for r in rows}),
+        'selected_complete_freezes': checked_freezes,
+        'candidate_declared_sources_bound': len(source_pins['sources']),
+        'capture_receipt': pin(capture_run / 'EXECUTION.json'),
+        'metadata_scripts_parsed': scripts,
+        'scientific_programs_run': 0,
+        'math_verified_by_program': False,
+        'proof_obligations_checked_analytically': 'See REPORT; no predicate count is scientific evidence.',
+        'actual_failed_metadata_runs_so_far': 0,
+        'verification_receipt_and_final_freeze': 'Recorder writes the actual receipt after this process exits, then seals every member.',
+        'editable_prompt_files_changed': [],
+    }
+    (O / 'METADATA_INSPECTION.json').write_text(json.dumps(inspection, indent=2) + '\n')
+    print(json.dumps({'metadata_status': inspection['status'], 'source_rows': len(rows), 'scientific_programs_run': 0, 'report': inspection['report']}))
+
+
+if __name__ == '__main__':
+    main()

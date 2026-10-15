@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-15T18:23:27.580197+00:00",
+  "task": "source-exposed separate analytic check of single-port prepared autonomous NN controller",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/DERIVATION.md",
+    "bytes": 24070,
+    "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+  },
+  "pre_exposure_independent": false,
+  "selected_model_and_effort_preserved": true,
+  "delegation": false,
+  "science_execution_planned": false,
+  "earlier_current_reads": "Candidate read completely before this metadata start; complete original unary-clock proof c7a read this task; b726 required sections and actual acceptance read; optional bda sections1-2 and6-9 read only. The read order is disclosed in REPORT, not represented as pre-exposure preregistration.",
+  "scope": "Standalone schedule-to-controller implication; optional controllability import remains conditional on its separate review. No current acceptance presumed.",
+  "write_boundary": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check",
+  "editable_prompt_files_changed": []
+}

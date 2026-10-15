@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/single_port_program_and_autonomous_controller_2026_10_15.py
+runner_sha256: 96625427dea6fb727bfe51129765ec0ed087090a09440f293f601eb7b104bc1b
+input_fingerprint_sha256: 80dfea62202a8c4d374ee3488608040f38cf3192bcdcbc7f815e0b8edd7466a2
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"}
+per_element: literal source coefficients and scalar ledgers preserved; no gate or physical element run
+per_site: one-port and exterior NN supports preserved; installation and isolation remain supplied
+per_mode: one-head clock and full auxiliary-sector distinctions preserved; no simulation run
+per_block: four unchanged bodies, one mathematical parent and separate canonical review checked
+lattice_wide: no native initialization, Gibbs frontier, common-cap, detector, reuse or retained audit certified
+
+----- stderr -----
+

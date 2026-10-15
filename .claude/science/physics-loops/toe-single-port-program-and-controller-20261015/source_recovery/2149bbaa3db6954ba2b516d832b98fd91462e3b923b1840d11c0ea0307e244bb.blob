@@ -1,0 +1,13 @@
+# Frozen standalone controller review
+
+Start with `REPORT.md`. The unchanged 24,070-byte candidate `0e91f936…` supports its finite conditional same-time schedule-to-controller statement. No candidate repair is requested. The review independently reconstructs the vacuum-block contraction and finite bare-input bound, checks the full unary-clock import, explicit lattice counts, all-sector auxiliary gap, phase/scalar ledger, moments and physical precision limits.
+
+The report preserves explicit failure routes for an omitted nonscalar counterterm, multiple clock heads, an XX-only port, deleted scalar samples and dressed-input substitution. It makes no common-cap, efficient-resource, native-state, detector, physical-energy or controller-reuse claim. All new supplied controller states and all output factors remain explicit.
+
+The external compiler's separately qualified root acceptance `bbe2e9c9…` arrived after the standalone assessment and report draft. Its late exposure is recorded. Optional composition keeps its nonempty plant, complete coefficient/phase data, actual aged-memory contract and endpoint-or-variation work qualification. Whole-generator positivity of the old background is sufficient here; separately positive old local blocks would require their own decomposition and paid scalar reserves. The historical candidate's pending wording is not edited.
+
+`SOURCE_MANIFEST.json` and `READ_COVERAGE.json` distinguish complete current reads, partial dependency reads, prior unchanged exposure and context only. The 20 source rows use 19 distinct recovery blobs. Only the current two-member proposal freeze and late two-member compiler acceptance freeze are completely revalidated here; old large packet closures are not claimed rerun.
+
+`capture_sources.py`, `verify_metadata.py` and `record_metadata.py` are metadata programs only. The recorder captures the actual child source, argv, streams, timing and exit status with a 60-second limit. Its verification phase records the process result before writing `FINAL_FREEZE.json`, then checks every sealed member. Scientific programs run: zero. No W/Git/PR/audit/checkpoint/lock/axiom/prompt mutation and no delegation/model change occurred.
+
+This is a source-exposed same-family analytic review, not a blind replication, formal proof or retained audit. Root's subsequent source disposition and any publication remain separate actions.

@@ -1,0 +1,30 @@
+"""Metadata-only consistency and freeze; no scientific computation."""
+from pathlib import Path
+import datetime,hashlib,json
+O=Path(__file__).resolve().parent
+def now(): return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def ident(p):
+ b=p.read_bytes(); return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+start=now(); source_rows=json.loads((O/'SOURCE_MANIFEST.json').read_text())['sources']
+verified=[]
+for row in source_rows:
+ source=Path(row['source']); recovery=O/row['recovery']
+ expected={k:row[k] for k in ['bytes','sha256']}
+ assert ident(source)==expected, ('source changed',str(source))
+ assert ident(recovery)==expected, ('recovery mismatch',str(recovery))
+ verified.append({'source':str(source),**expected})
+verification={'recorded_at':now(),'kind':'metadata-only exact byte check','source_rows':verified,'count':len(verified),'science_execution_count':0,'scope':'No scientific claim, numeric fixture or pulse-search execution is certified by this receipt.'}
+(O/'SOURCE_CURRENT_VERIFICATION.json').write_text(json.dumps(verification,indent=2)+'\n')
+(O/'METADATA_EXECUTION.json').write_text(json.dumps({'started_at':start,'recorded_before_freeze_at':now(),'program':Path(__file__).name,'program_identity':ident(Path(__file__)),'kind':'metadata-only execution','prior_capture_program':'capture_metadata.py','prior_capture_receipt':'CAPTURE_RESULT.json','science_runs':0,'comment':'Actual metadata commands are not scientific tests. No pre-execution science seal exists because no science program was selected or run.'},indent=2)+'\n')
+excluded={'FINAL_FREEZE.json','FINAL_FREEZE_RECEIPT.json'}
+rows=[]
+for p in sorted(O.rglob('*')):
+ if p.is_file() and p.relative_to(O).as_posix() not in excluded:
+  rows.append({'path':p.relative_to(O).as_posix(),**ident(p)})
+freeze={'created_at':now(),'scope':'Author analytic candidate; metadata-only evidence; no independent acceptance','members':rows,'excluded_exact_root_paths':sorted(excluded),'exclusion_reason':'Freeze cannot include itself; final receipt binds freeze and records actual completion. Nested similarly named files, if present, are not excluded.'}
+f=O/'FINAL_FREEZE.json';f.write_text(json.dumps(freeze,indent=2)+'\n')
+for row in rows:
+ assert ident(O/row['path'])=={k:row[k] for k in ['bytes','sha256']}
+receipt={'started_at':start,'ended_at':now(),'kind':'metadata-only finalization completion','members_verified':len(rows),'freeze':ident(f),'derivation':ident(O/'DERIVATION.md'),'report':ident(O/'REPORT.md'),'science_runs':0}
+(O/'FINAL_FREEZE_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2))

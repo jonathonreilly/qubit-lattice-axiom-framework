@@ -1,4 +1,4 @@
-# CKM versus corner protection in X2: a supervisor synthesis (2026-10-15, about 15:40Z)
+# CKM versus corner protection in X2: a supervisor synthesis (2026-10-15, written 15:2x–15:32Z; header time corrected from a typed-ahead 15:40Z)
 
 **Status.** This is my own synthesis of refereed campaign results, written for panel E. It adds no new computation.
 

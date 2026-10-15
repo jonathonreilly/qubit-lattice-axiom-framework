@@ -1,0 +1,22 @@
+# NT-1' locality Lx=8 Lt=8 model=L1 seed=301 nconf=2 eps=0.0001 N=128 nl=120
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+conf 0: gmin 0.291; |kbb| max 2.15e-02 (loc 1.40e-03, Q 2.26e-02); mbar bulk mean|.| 1.580e-01 max 1.581e-01; |hbar| max 1.98e-02 [22s]
+conf 1: gmin 0.352; |kbb| max 2.35e-02 (loc 1.46e-03, Q 2.45e-02); mbar bulk mean|.| 1.580e-01 max 1.581e-01; |hbar| max 1.98e-02 [42s]
+profile chi(d) [total kbb], all links  : 1.22e-04 1.41e-02 1.41e-02 9.84e-03 4.96e-03 4.21e-06 1.63e-06 1.41e-07 2.17e-08 1.42e-09 2.84e-10 5.19e-11
+profile chi(d) [total kbb], inner links: 1.22e-04 1.41e-02 1.41e-02 9.84e-03 4.95e-03 4.21e-06 1.63e-06 1.08e-07 5.48e-09 6.50e-10 nan nan
+FIT total: nu = 2.212 per spacing; chi(dmax=11)/chi(1) = 3.67e-09 -> (b2) criterion nu>=0.3 and ratio<=1e-2: True
+same-slice x-link responses at x-separation 1..4: 1.38e-02 9.82e-03 4.96e-03 1.16e-05
+profile chi(d) [k_loc part], all links  : 1.11e-04 1.49e-03 1.06e-03 1.23e-04 2.28e-05 1.14e-05 2.72e-06 1.41e-07 2.17e-08 1.42e-09 2.82e-10 5.50e-11
+profile chi(d) [k_loc part], inner links: 1.11e-04 1.12e-03 9.34e-04 1.23e-04 2.28e-05 1.14e-05 2.72e-06 1.29e-07 6.88e-09 8.65e-10 nan nan
+profile chi(d) [Q part], all links  : 2.48e-05 1.48e-02 1.48e-02 9.89e-03 4.95e-03 1.07e-05 1.25e-06 4.75e-08 8.12e-09 3.90e-10 6.50e-11 1.29e-11
+profile chi(d) [Q part], inner links: 2.48e-05 1.48e-02 1.48e-02 9.89e-03 4.95e-03 1.07e-05 1.25e-06 4.75e-08 4.99e-09 3.77e-10 nan nan
+XPROFILE [total] s = 0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 : 1.22e-04 1.41e-02 1.38e-02 4.94e-03 9.82e-03 4.95e-03 4.96e-03 4.95e-03 1.16e-05
+XPROFILE [loc  ] s = 0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 : 1.11e-04 1.49e-03 1.11e-03 1.03e-03 7.21e-05 8.79e-05 1.29e-05 1.32e-05 9.50e-06
+XPROFILE [Q    ] s = 0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 : 2.48e-05 1.48e-02 1.48e-02 4.95e-03 9.89e-03 4.95e-03 4.95e-03 4.95e-03 2.11e-05
+done [42s]
+watchdog peak RSS 346976 KB

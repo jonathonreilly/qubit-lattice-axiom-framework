@@ -1,0 +1,22 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+11112 s_k=-1 Q=True  shift0.3: R(2) R(4) R(8) R(16) = 8.71e-07 5.11e-08 3.14e-09 1.96e-10
+11112 s_k=-1 Q=True  rand0.3 : R(2) R(4) R(8) R(16) = 9.03e-06 5.03e-07 3.05e-08 1.89e-09
+11112 s_k=-1 Q=True  rand2.0 : R(2) R(4) R(8) R(16) = 1.83e-01 3.76e-02 1.03e-03 5.10e-05
+11112 s_k=+1 Q=True  shift0.3: R(2) R(4) R(8) R(16) = 4.79e-04 4.80e-04 4.80e-04 4.80e-04
+11112 s_k=+1 Q=True  rand0.3 : R(2) R(4) R(8) R(16) = 7.32e-04 7.36e-04 7.36e-04 7.36e-04
+11112 s_k=+1 Q=True  rand2.0 : R(2) R(4) R(8) R(16) = 1.86e-01 4.49e-02 8.34e-03 7.37e-03
+11112 s_k=-1 Q=False shift0.3: R(2) R(4) R(8) R(16) = 7.14e-07 4.51e-08 2.82e-09 1.76e-10
+11112 s_k=-1 Q=False rand0.3 : R(2) R(4) R(8) R(16) = 6.02e-04 6.05e-04 6.05e-04 6.06e-04
+11112 s_k=-1 Q=False rand2.0 : R(2) R(4) R(8) R(16) = 1.83e-01 4.47e-02 8.13e-03 7.15e-03
+L1    s_k=-1 Q=True  shift0.3: R(2) R(4) R(8) R(16) = 1.28e-08 7.89e-10 4.91e-11 3.07e-12
+L1    s_k=-1 Q=True  rand0.3 : R(2) R(4) R(8) R(16) = 1.36e-07 8.26e-09 5.13e-10 3.20e-11
+L1    s_k=-1 Q=True  rand2.0 : R(2) R(4) R(8) R(16) = 9.98e-03 2.74e-04 1.36e-05 8.06e-07
+L1    s_k=-1 Q=False shift0.3: R(2) R(4) R(8) R(16) = 1.06e-08 6.65e-10 4.16e-11 2.61e-12
+L1    s_k=-1 Q=False rand0.3 : R(2) R(4) R(8) R(16) = 1.94e-02 1.94e-02 1.94e-02 1.94e-02
+L1    s_k=-1 Q=False rand2.0 : R(2) R(4) R(8) R(16) = 2.12e-01 2.02e-01 2.02e-01 2.02e-01
+watchdog peak RSS 218208 KB

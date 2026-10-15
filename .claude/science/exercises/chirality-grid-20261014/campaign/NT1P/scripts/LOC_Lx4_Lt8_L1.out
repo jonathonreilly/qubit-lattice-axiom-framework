@@ -1,0 +1,19 @@
+# NT-1' locality Lx=4 Lt=8 model=L1 seed=301 nconf=2 eps=0.0001 N=64 nl=60
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+conf 0: gmin 0.667; |kbb| max 8.80e-03 (loc 1.17e-03, Q 8.57e-03); mbar bulk mean|.| 1.404e-01 max 1.419e-01; |hbar| max 3.55e-02 [1s]
+conf 1: gmin 0.612; |kbb| max 1.22e-02 (loc 1.33e-03, Q 1.19e-02); mbar bulk mean|.| 1.403e-01 max 1.419e-01; |hbar| max 3.55e-02 [3s]
+profile chi(d) [total kbb], all links  : 4.25e-05 9.73e-03 9.00e-03 1.14e-04 2.01e-05 3.90e-06 7.84e-07 1.50e-07 2.34e-08 1.46e-09
+profile chi(d) [total kbb], inner links: 4.25e-05 9.00e-03 9.00e-03 1.13e-04 1.93e-05 3.71e-06 6.24e-07 8.50e-09 nan nan
+FIT total: nu = 1.966 per spacing; chi(dmax=9)/chi(1) = 1.50e-07 -> (b2) criterion nu>=0.3 and ratio<=1e-2: True
+same-slice x-link responses at x-separation 1..2: 8.76e-03 3.36e-05
+profile chi(d) [k_loc part], all links  : 4.23e-05 1.77e-03 9.64e-04 1.14e-04 2.01e-05 3.90e-06 7.83e-07 1.50e-07 2.34e-08 1.29e-09
+profile chi(d) [k_loc part], inner links: 4.23e-05 1.04e-03 9.59e-04 1.13e-04 1.93e-05 3.71e-06 6.31e-07 9.33e-09 nan nan
+profile chi(d) [Q part], all links  : 4.03e-05 8.89e-03 8.89e-03 2.15e-05 9.88e-07 2.36e-07 3.83e-08 6.81e-09 1.48e-09 3.16e-10
+profile chi(d) [Q part], inner links: 4.03e-05 8.76e-03 8.76e-03 2.15e-05 9.04e-07 1.77e-07 3.60e-08 6.45e-09 nan nan
+done [3s]
+watchdog peak RSS 237568 KB

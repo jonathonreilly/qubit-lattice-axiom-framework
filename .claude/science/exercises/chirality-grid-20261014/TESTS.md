@@ -451,3 +451,16 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **FCNC-KILL:** every escape realisation built violates some ΔF = 2 bound by more than 10× for every carrier mass the construction allows.
   - **OPEN:** otherwise.
 - **Scope to state:** tree level, the carrier model, the meson matrix elements used, and the running.
+
+**NT-1′ result (14:03Z; same family; referee launched): OPEN.** The failed item is G-LEG (c), and only as the worker operationalised it.
+- **The measure.** Lüscher's construction (eq. 5.8) for 11112 at Lx = 4: straight-ray overlap basis, a local cohomology current with the monopole removed, and a finite-volume correction.
+- **Gate items that pass.**
+  - Gauge invariance is exact to 7e-14, via a canonical representative. The un-fixed Ward identity converges as Ns⁻⁴.
+  - Locality: ν ≈ 1.6 per spacing. A small x-flat residual remains in the anomaly-free current (4.6e-4 → 1–2e-4 from Lx 4 to 8; exponential decay not shown).
+  - The reflection condition holds to 1.4e-13.
+- **The anomalous control, in substance.** L1's monopole defect goes 0.140 → 0.158, approaching 1/2π. Its current has a flat Wilson-line plateau ∝ 1/Lx. Without the nonlocal correction, its Ward identity fails.
+  - The registered pointers for (c) were blind to x-only nonlocality, so (c) is not met as registered.
+- **Kernels.** Chiral λ_min is negative on 3/3 pools (Lt 8 searched, Lt 8 random, Lt 12 random) at 22–49 × E. That is 4.0–4.7× the vector reference. The Wilson and pure-gauge controls are PSD.
+- **Phase.** It now varies (7–9 mrad), but moves λ_min only at second order (0.04–1.2%). The negativity is carried by the modulus |det D(1)|²|det D(2)|^½.
+- **Not tested.** Global integrability around the Wilson-line circle, counterterm freedom, Lx > 4 kernels, 4D, non-abelian.
+- **If (c) is accepted on substance,** the reading would be CHI-RP-FAIL.

@@ -1,0 +1,28 @@
+# NT-1' gates Lx=4 Lt=8; pool P-B (10 random W-matched, seed 2504) saved; max|W1| 8.3e-17
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+Duffy n=2: 32 crossing nodes per entry (entry 0,1), weight sum 1.1520000000
+Duffy n=3: 108 crossing nodes per entry (entry 0,1), weight sum 1.1520000000
+Duffy n=4: 256 crossing nodes per entry (entry 0,1), weight sum 1.1520000000
+Duffy n=5: 500 crossing nodes per entry (entry 0,1), weight sum 1.1520000000
+gate configurations: 6 joined fields (3 pool pairs x 2 quadrature nodes)
+(b1-W) s_k=+1: non-canonical Ward residual max|d ln rho| at transport R(2), R(4), R(8): 1.86e-01 4.49e-02 8.34e-03
+(b1-W) s_k=-1: non-canonical Ward residual max|d ln rho| at transport R(2), R(4), R(8): 1.83e-01 3.76e-02 1.03e-03
+(b1-W) s_k = -1; other sign / chosen at R(8) = 8.1e+00 (registered: > 100)
+(b1-W, descriptive) L1 use_Q=False: Ward phase residual at R(2), R(4), R(8): 2.12e-01 2.02e-01 2.02e-01
+(b1-W, descriptive) L1 use_Q=True: Ward phase residual at R(2), R(4), R(8): 9.98e-03 2.74e-04 1.36e-05
+(b1-W, descriptive) 11112 use_Q=False: Ward phase residual at R(2), R(4), R(8): 1.83e-01 4.47e-02 8.13e-03
+(b1) canonical measure: max|ln rho(U^Lambda) - ln rho(U)| = 6.75e-14 -> PASS (<= 1e-10); |div kbb - Abar| 1.8e-15
+G5 min|eig H_W(U^e)| over ray points 0.384; G6 index 0 True; G7 |sum Abar| 7.1e-15; max|W_t| of canonical reps 0.782
+G1 |det M_L||det M_R| = |det D_ov|: max |log difference| 2.1e-14 -> PASS
+(d) Ns=8: c = ln rho(theta U) - conj ln rho(U): Re spread 1.42e-13, Im c[0] -7.962629, Im spread (mod 2pi) 4.44e-14
+(d) Ns=16: c = ln rho(theta U) - conj ln rho(U): Re spread 1.67e-13, Im c[0] -7.962629, Im spread (mod 2pi) 5.42e-14
+(d) spread 1.42e-13; transport change R(4)->R(8) of c 1.11e-13; threshold max(1e-6, 10x) = 1.0e-06 -> PASS
+C0 delta=0.6 (margin 0.55): min|eig H_W(U^e)| along rays, e=1..5: e1:0.620 e2:0.524 e3:0.387 e4:0.147 e5:0.000
+C0 delta=0.3 (margin 0.275): min|eig H_W(U^e)| along rays, e=1..5: e1:0.587 e2:0.449 e3:0.299 e4:0.142 e5:0.018
+timing: one entry n=3 (108 nodes): 3.0s; done [25s]
+watchdog peak RSS 412304 KB

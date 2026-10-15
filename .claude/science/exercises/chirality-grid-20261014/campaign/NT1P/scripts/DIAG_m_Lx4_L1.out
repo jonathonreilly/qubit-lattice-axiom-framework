@@ -1,0 +1,8 @@
+# L1 Lx=4 Lt=8; Wilson lines per slice: +0.200 +0.379 -0.022 -0.423 +0.376 +0.291 +0.278 +0.099
+amp 0.25: m_p by plaquette row (mean over x): -1.42e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.42e-01 | spread over x 1.7e-16
+          h(x) summed per slice: +1.42e-01 -2.20e-03 -3.14e-05 +1.78e-05 +9.72e-06 +2.39e-05 +2.16e-03 -1.42e-01; sum -1.7e-16
+amp 0.5: m_p by plaquette row (mean over x): -1.42e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.42e-01 | spread over x 1.7e-16
+          h(x) summed per slice: +1.42e-01 -2.22e-03 -2.07e-05 +3.24e-06 +1.06e-04 -9.06e-06 +2.05e-03 -1.42e-01; sum +2.8e-17
+amp 1.0: m_p by plaquette row (mean over x): -1.42e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.40e-01 -1.42e-01 | spread over x 2.5e-16
+          h(x) summed per slice: +1.42e-01 -2.28e-03 +2.60e-05 -5.99e-05 +4.93e-04 -1.39e-04 +1.58e-03 -1.42e-01; sum +2.8e-17
+watchdog peak RSS 73600 KB

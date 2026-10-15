@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-15T12:35:13.575819+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "planning": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "main_unchanged_since_M12": true,
+  "queries": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(lensing.*growth|growth.*lensing|anisotropic stress|E_G|quasistatic.*scalar|scalar.*quasistatic)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 0,
+      "lines": 2904
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(cosmological.*inverse|inverse.*cosmological|gravitational slip)",
+        "origin/main",
+        "--",
+        "docs/audit/data/derivation_obligations.json",
+        "docs/audit/data/ledger/*.json"
+      ],
+      "exit": 0,
+      "lines": 1
+    }
+  ],
+  "planning_read_scope": "TOE scorecard, campaign status and inventory complete; BACKLOG current disposition and early history read, remaining unrelated wave history saved but not evidence for current science.",
+  "new_open_PR_read_scope": "Full metadata and bodies 9601/9602 only, not source review; local apparatus context, no cosmological inference adopted."
+}

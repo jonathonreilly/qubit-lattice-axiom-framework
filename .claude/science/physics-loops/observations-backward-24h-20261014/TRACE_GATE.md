@@ -115,3 +115,7 @@ artifact_role: theorem
 next_trace_action: Derive an independently identifiable physical tensor-coefficient history or a complementary growth/lensing discriminator with explicit environmental and source assumptions.
 
 The inverse converts a continuous physical history into candidate function tests and conditionally infers the coupled truncation from full-interval equality. It does not obtain that history from a distance pair, choose the fundamental action, or explain the hierarchy. The observational admission failure is local, not a universal no-go.
+
+### Growth/lensing inverse — 2026-10-15
+
+Target: reconstruct missing physical gravity histories from observations without supplying an initial dust offset. `trace_class: upstream_support`; `reachability_to_target: supports`; `artifact_role: support_lemma`. The downstream consumer is the conditional cosmological action-membership test, restated locally. Endpoint subtraction removes C, while the exact interval classification prevents choosing among indistinguishable shapes. Strongest missing bridge: controlled full perturbation response and actual calibrated survey likelihood. No claim that the supplied action or initial scalar history was derived.

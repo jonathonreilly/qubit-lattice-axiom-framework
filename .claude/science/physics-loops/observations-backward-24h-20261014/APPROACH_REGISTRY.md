@@ -71,3 +71,7 @@ Projection geometry gives an exact feasible set for a supplied discrepancy ball;
 | Receiver-based scalar residual | Calibrated phase and proper count contrasts | Instrument reference reconstruction and energy quotient | Physical discrepancy and scalar attribution | weaker | blocked-local | Prior11 campaign milestones | Track-specific independent transfer/error calibration |
 
 The new route uses an independently different physical channel and derives action membership along a curve, not a renamed receiver error bound. General scalar-tensor reconstruction is established literature; only the supplied-candidate specialization and precise gates are advanced here.
+
+### Growth/lensing inverse — 2026-10-15
+
+Completed one coherent chain: reconstruct slip from ideal Euler/Weyl quotients; invert a two-scale response pole; eliminate the dust offset with the metric-corrected density primitive; retain all finite-epoch shapes; characterize the exact interval second tuple; test tensor discrimination and full-background/Euler compatibility. Two manufactured reduced histories fail the latter test. Six conditional synthetic forward histories recover their generating parameters, independently checked. These do not validate a full perturbation solver or observation likelihood. Ordinary invalid-input and serialization failures were preserved and repaired, with unchanged tolerances.

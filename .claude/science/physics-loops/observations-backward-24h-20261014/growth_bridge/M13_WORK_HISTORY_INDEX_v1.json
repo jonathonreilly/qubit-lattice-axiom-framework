@@ -1,0 +1,2403 @@
+{
+  "created_at": "2026-10-15T13:41:57.229484+00:00",
+  "archive": "M13_WORK_HISTORY_v1.tar.gz",
+  "archive_sha256": "3d32c665991be0210decd4f298d69c761d66d575e5d449d6cbc1092834eaf902",
+  "members": [
+    {
+      "path": "CANONICAL_ASSEMBLY_v1.json",
+      "bytes": 1031,
+      "sha256": "f1849917bc80dcbe8b0f909f42304ad6b87313069b0929e196de7f1885604f28"
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v1.json",
+      "bytes": 4394,
+      "sha256": "10e769786a98694250a4d3b334f7875ec0f7ad3cf69d5c947702313e64d4d26d"
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v2.json",
+      "bytes": 785,
+      "sha256": "17eb3e1eb97ba91d5c3eb56a0440f1ee99c318f8f84a1643213943a4043bf34b"
+    },
+    {
+      "path": "CANONICAL_RECEIPT_SERIALIZATION_FAILURE_v1.json",
+      "bytes": 395,
+      "sha256": "df999d27981c8b413aa81b1502e8f35dc344d60e83bbee291054b3fa8f4c22d1"
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v1.json",
+      "bytes": 1291,
+      "sha256": "f724a83f9f31a4210887080d8c0c9a8fc0c4ec1d7701f1426f93dade706a0b85"
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v2.json",
+      "bytes": 1306,
+      "sha256": "8281a3800a31c1149bbe29fa78618fbe5b9293aa0b503a72b67076a2706786c5"
+    },
+    {
+      "path": "CHECKPOINT_v1.json",
+      "bytes": 1822,
+      "sha256": "c8e8357adf0c9f8e44c5e7f2764d26c357b1501f6b0f539bf0ddad23ac6ea7c3"
+    },
+    {
+      "path": "CHECKPOINT_v2.json",
+      "bytes": 2842,
+      "sha256": "6ebde479610ad97ea7bc93566232ca83437137e1015b1bce2042e5ca13a10902"
+    },
+    {
+      "path": "CHECKPOINT_v3.json",
+      "bytes": 692,
+      "sha256": "ad1cc91c1579beb042f18cf505cf8504e26f62c25e106871447518835b9ab1a1"
+    },
+    {
+      "path": "CONFORMANCE_v1.md",
+      "bytes": 4844,
+      "sha256": "058830f8419791bdeac83e91dcef8c222c8233338844c8615dcda9ce3544c7db"
+    },
+    {
+      "path": "EXTENDED_RESULTS_v1.json",
+      "bytes": 7619,
+      "sha256": "c9a0e24f7e2757795df9aeb0044209c88c014d92b84ab9ab44432b795be0bd67"
+    },
+    {
+      "path": "FINITE_TRAJECTORY_IDENTITY_v2.json",
+      "bytes": 831,
+      "sha256": "75c69121da57e6dfa03f5ebe652a01aa03f0066da44f792a341e5866f2f16614"
+    },
+    {
+      "path": "FORWARD_FAILURE_v1.json",
+      "bytes": 501,
+      "sha256": "871769b25de0a2fa62640520dd06a93a20961e5a3da709eef4f64043f8a7219d"
+    },
+    {
+      "path": "FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "FORWARD_RESULTS_v1.json",
+      "bytes": 1816,
+      "sha256": "f5836e1fc200c16d948219560fa6e4117962358259ac59555fb8a94062080e6c"
+    },
+    {
+      "path": "FORWARD_RESULTS_v2.json",
+      "bytes": 49388,
+      "sha256": "40d81c2633ea1c304dde2200edb6a066889c26ef3ed628118c61446130dcf130"
+    },
+    {
+      "path": "NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 8087,
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd"
+    },
+    {
+      "path": "OPEN_PRS_v1.json",
+      "bytes": 15069,
+      "sha256": "aaf8a58632ec15bc4207bfc443bb7a71c0e8c513825b94281cea02c7d417df78"
+    },
+    {
+      "path": "PLANNING_BACKLOG_STATUS.txt",
+      "bytes": 37170,
+      "sha256": "88713c9331b92f3c9d5fff2db898deaf8b04ea8d74dfe0c2525267a6d5b3ab34"
+    },
+    {
+      "path": "PLANNING_CAMPAIGN_STATUS.txt",
+      "bytes": 5055,
+      "sha256": "f8543c159bdb2bb8e98d2c42f429fe0b7a0e0f4a62246257fcf0222ea8c1ae2b"
+    },
+    {
+      "path": "PLANNING_OPEN_PR_INVENTORY.json",
+      "bytes": 3203,
+      "sha256": "ed6d7c0e78019d521380b4aa1330296452f908579c8402356bb6eaf01649d1c3"
+    },
+    {
+      "path": "PLANNING_TOE_SCORECARD.txt",
+      "bytes": 19201,
+      "sha256": "b235f314801c5c1b6407ef4493804bbae009963dded8ab2648736580bd21e93d"
+    },
+    {
+      "path": "PRIMITIVE_IDENTITY_REUSE_v1.json",
+      "bytes": 1818,
+      "sha256": "80d90464df00e3eb45998aa91cd2873b8883abbd4dbc72008fb310fcc66fdb78"
+    },
+    {
+      "path": "PRIOR_SEARCH_1_v1.txt",
+      "bytes": 699099,
+      "sha256": "272d42c7c292e162af7de3669b879063018817acf9bc33f7a125e5b8cd50bf71"
+    },
+    {
+      "path": "PRIOR_SEARCH_2_v1.txt",
+      "bytes": 1571,
+      "sha256": "c43a400c028a857a10fa6dc3d1f15ab04ca33070830eb54efcd041627541bb34"
+    },
+    {
+      "path": "PRIOR_SEARCH_REFINED_v1.txt",
+      "bytes": 1895,
+      "sha256": "bde93cd7148b77e8190b3bf389f701600cb87c5fa35bcfec34a5e436fa0fd90a"
+    },
+    {
+      "path": "PR_9601_v1.json",
+      "bytes": 22615,
+      "sha256": "df73ba593540a9e10a0315e5483060a9fca51c350a79c160bf7e4e6dd3b4ad3f"
+    },
+    {
+      "path": "PR_9602_v1.json",
+      "bytes": 28232,
+      "sha256": "cc91bb86b0fe62fa836988debf8e13990b298afca0aa78828e443893eb7e346c"
+    },
+    {
+      "path": "REPO_CONTEXT_v1.json",
+      "bytes": 1249,
+      "sha256": "90e782139b79662c8cb3ae1d5f2ca605f796822b291aa67182b03eb2d98baf2b"
+    },
+    {
+      "path": "RESULTS_v1.json",
+      "bytes": 86188,
+      "sha256": "375601ef1b05c25b855dddf4ccba3ebe11c533e49cbeef5733ca23ab75d5af07"
+    },
+    {
+      "path": "REVIEW_RECORD_v1.md",
+      "bytes": 11693,
+      "sha256": "7c9c41dba97f630351a2fc54c285c6e9e06c54aa265b7320d80920191ab84b92"
+    },
+    {
+      "path": "SYNTHETIC_PROTOCOL_v1.json",
+      "bytes": 1546,
+      "sha256": "7cde2696c0566acd3a5119f717d5719f2a067a1eb0d840248d0012827fd981e4"
+    },
+    {
+      "path": "VOCAB_CURRENT_v1.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": "WORKING_v1.md",
+      "bytes": 8708,
+      "sha256": "7540ac4431c3b2a1ff553edf52eb7c30f86522ded8e16804cdf4d99aa7e04fe6"
+    },
+    {
+      "path": "WORKING_v2.md",
+      "bytes": 9173,
+      "sha256": "0aad424f1fd7fe582c7005edab096e7e0a3787ef8ef84ca2ccd813d3490a6397"
+    },
+    {
+      "path": "canonical_before_nonfinite_repair/REPAIR.json",
+      "bytes": 534,
+      "sha256": "af54a7af5a198781d0591fe1188a9e6fc8eddc84781fbd8db70f9b1dd0da5950"
+    },
+    {
+      "path": "canonical_before_nonfinite_repair/scalar_growth_lensing_inverse.py",
+      "bytes": 27308,
+      "sha256": "5561f381fd2fd82ae1a979dcd8d79f275f8b4a500f3fbbc607c8a82ad63efecf"
+    },
+    {
+      "path": "canonical_before_nonfinite_repair/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3465,
+      "sha256": "9b229daa53db4d896709f4741b4499d59e2440b191d5305143196ea6ff4a0fae"
+    },
+    {
+      "path": "canonical_v1_before_domain_repairs/RESULTS_v1.json",
+      "bytes": 61117,
+      "sha256": "1fe69fbd92eceb161400867025f9d36962321cde7fb10ec697ca6e06f8048ff4"
+    },
+    {
+      "path": "canonical_v1_before_domain_repairs/SUMMARY_v1.json",
+      "bytes": 2869,
+      "sha256": "9be74e989b2e5c8516f1f09e0ec4f0dba6ac4d0a0667827d9ec7a3bf9989ee0c"
+    },
+    {
+      "path": "canonical_v1_before_domain_repairs/scalar_growth_lensing_inverse.py",
+      "bytes": 26202,
+      "sha256": "7401cc6fdb77a6598bd7a4dc31010d99da3506dcf97abbffb027775843af07fd"
+    },
+    {
+      "path": "canonical_v1_before_domain_repairs/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3465,
+      "sha256": "9b229daa53db4d896709f4741b4499d59e2440b191d5305143196ea6ff4a0fae"
+    },
+    {
+      "path": "canonical_v1_before_domain_repairs/scalar_growth_lensing_inverse_check.txt",
+      "bytes": 3719,
+      "sha256": "92264a25c96825a3f051d01c08cadc2c491b62d6bd176e9f3ed1c6abcf8be682"
+    },
+    {
+      "path": "extended_controls_v1.py",
+      "bytes": 8649,
+      "sha256": "16e7958528c531b471538520752e07e119ca75379757378bc5f288d53cffb99b"
+    },
+    {
+      "path": "forward_controls_v1.py",
+      "bytes": 10408,
+      "sha256": "ff691cf553b9f1c56f0ad757de5e832e68669a9c25d3f05b98c0b1aaa6f4c563"
+    },
+    {
+      "path": "forward_controls_v2.py",
+      "bytes": 10475,
+      "sha256": "f72a91a02850a149bd0d002aadac6647039838cbb1c85e6b8b26a551fddad8fa"
+    },
+    {
+      "path": "growth_inverse_v1.py",
+      "bytes": 10160,
+      "sha256": "1e12edf8106f43a97a9636d7d8f7fc46c351f6773bd8d2b46fef54851b72a894"
+    },
+    {
+      "path": "growth_inverse_v2.py",
+      "bytes": 4708,
+      "sha256": "fefc0b0552ce7baef474d018ea4f60bd5437ec5d7fdfa51b116b57e2b1d80e01"
+    },
+    {
+      "path": "independent_background_v1/AUTHOR_EXTENDED_RESULTS_v1.json",
+      "bytes": 7619,
+      "sha256": "c9a0e24f7e2757795df9aeb0044209c88c014d92b84ab9ab44432b795be0bd67"
+    },
+    {
+      "path": "independent_background_v1/AUTHOR_SOURCE_FREEZE_v1.json",
+      "bytes": 635,
+      "sha256": "a91c40a968451a7c092673d7e43519c3a35c0f844cbbe49c148d5646c119a12d"
+    },
+    {
+      "path": "independent_background_v1/AUTHOR_WORKING_v2.md",
+      "bytes": 9173,
+      "sha256": "0aad424f1fd7fe582c7005edab096e7e0a3787ef8ef84ca2ccd813d3490a6397"
+    },
+    {
+      "path": "independent_background_v1/BACKGROUND_IDENTITY_v1.json",
+      "bytes": 3379,
+      "sha256": "1e0b849053910ca24834be0af6bce450e2aa1b85e12de44debb7d185e305db71"
+    },
+    {
+      "path": "independent_background_v1/BACKGROUND_REVIEW_v1.md",
+      "bytes": 6502,
+      "sha256": "dfdbe3223e0038563f33a43cab621332c995df78c320615c6f369c676b8e75b5"
+    },
+    {
+      "path": "independent_background_v1/FIXTURE_SCOPE_CONFIRMATION_v1.md",
+      "bytes": 1469,
+      "sha256": "818b608aa78ecc5147c3157f8e58bf028fa562c0ce32d5d8ed7fee86e891ee94"
+    },
+    {
+      "path": "independent_background_v1/FIXTURE_SCOPE_IDENTITY_v1.json",
+      "bytes": 2087,
+      "sha256": "d86daa42432877fe713619ee73cd545178f58849416caa01dc6d326a463a0eca"
+    },
+    {
+      "path": "independent_background_v1/INDEPENDENT_RESULTS_v1.json",
+      "bytes": 3489,
+      "sha256": "ad5e11315ff815cf74d560d8fc15f48c5df3a30c74986cde700a6956b10e5bd6"
+    },
+    {
+      "path": "independent_background_v1/PRECHECK_v1.md",
+      "bytes": 3418,
+      "sha256": "11d1256859aa01873239743468e62672505e02c6a7965b8eec4d5496fe191338"
+    },
+    {
+      "path": "independent_background_v1/PRECOMPUTE_FREEZE_v1.json",
+      "bytes": 775,
+      "sha256": "a7e68dd3d324a3d5d6fc709d31ba9cd11683bf0751785e592047d97a1b938c5a"
+    },
+    {
+      "path": "independent_background_v1/RESULT_FREEZE_v1.json",
+      "bytes": 1565,
+      "sha256": "a054fd3089cbe4fe4743095b0611f880c2fb313b53db42ef3a3690ade7ca95b2"
+    },
+    {
+      "path": "independent_background_v1/exact_fixture_v1.py",
+      "bytes": 2003,
+      "sha256": "d7c4f6d698f8eca83b418bad4beb6a5122a33c584fbcb5a84d1866857f5a4f3c"
+    },
+    {
+      "path": "independent_forward_v1/AUTHOR_INPUTS_v1.json",
+      "bytes": 2968,
+      "sha256": "1a0dae26ffd3f743508296e79389e225e1460245ee5629f0dd82d2d42b534055"
+    },
+    {
+      "path": "independent_forward_v1/AUTHOR_SERIALIZATION_DELTA_v1.patch",
+      "bytes": 817,
+      "sha256": "4bfdd7d3cf1077eb18f49e9055cc3957ca8ec415333feca87c4d60748e09fa94"
+    },
+    {
+      "path": "independent_forward_v1/CANDIDATE_DOMAIN_CHECK_v1.json",
+      "bytes": 1248,
+      "sha256": "83c3572b3a9b34addd94c532860c2914bd91d0d8e5d4722a13408eca229a040c"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_CHECK_IMPLEMENTATION_FREEZE_v1.json",
+      "bytes": 218,
+      "sha256": "f3bc505ca424bff94f4960b65f3a0abac9be411f17bac254c170e7963dbb8dde"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_FORWARD_DELTA_v1.patch",
+      "bytes": 2981,
+      "sha256": "86990cb16a44e095e1ce042c98657b9af61cbe12a2a03506c776f2a7ebf6a404"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_FORWARD_IDENTITY_v1.json",
+      "bytes": 2672,
+      "sha256": "d5d021ec840c77f4bcfba2a294f04752615da685f41262656a5bfb28a557a464"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_FORWARD_REPAIR_CONFIRMATION_v2.md",
+      "bytes": 3510,
+      "sha256": "0be47c67165b358389282854fb17693e49062e7d24799294c43cb998732100cc"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_FORWARD_REPAIR_IDENTITY_v2.json",
+      "bytes": 2554,
+      "sha256": "7a15649bf6548a19da674c2afcb3e36ed33330a4b5007f8d97b08be300f0dd2b"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_FORWARD_REVIEW_v1.md",
+      "bytes": 7807,
+      "sha256": "de3d6be270282b89f16f16b9e1cbc022974ed48f4dd7a778b9130dd5b81718c3"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_SOURCE_CHECK_RESULTS_v1.json",
+      "bytes": 6824,
+      "sha256": "5ebdbe6a7efebeee87f9b90c04eaccc24e3fa5d064fc9438140ad600b3144798"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_SOURCE_SNAPSHOT_v1.json",
+      "bytes": 734,
+      "sha256": "f1983df5e41953f4b9762d06de396f84f8162c5592fef9aaa6192a59cf69f99e"
+    },
+    {
+      "path": "independent_forward_v1/CANONICAL_SOURCE_SNAPSHOT_v2.json",
+      "bytes": 389,
+      "sha256": "4a866b1c32282691449d0748f1d124930c1c0d37994f36644c0eb708644d155e"
+    },
+    {
+      "path": "independent_forward_v1/FINAL_ENVELOPE_CHECK_FREEZE_v1.json",
+      "bytes": 257,
+      "sha256": "40166c6306d148b648611b63b9ba18aca1f357e2bdbcf438fcf128668e9423c4"
+    },
+    {
+      "path": "independent_forward_v1/FINAL_ENVELOPE_CHECK_RESULTS_v1.json",
+      "bytes": 6077,
+      "sha256": "795eda1dcbf9643b0efeace38b49f7b01d2a0e3de1076bc1a68c7b0b54bd5aea"
+    },
+    {
+      "path": "independent_forward_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "bytes": 4424,
+      "sha256": "b7c566d14fb039e4dd80e25510a407e5d50ace7ef8b119cbc402eee1e37b0e88"
+    },
+    {
+      "path": "independent_forward_v1/FINAL_ENVELOPE_IDENTITY_v1.json",
+      "bytes": 5504,
+      "sha256": "4727a15727a705b7cfb15513bbcf91c9b8d202fe6436a891dc1dde7619e94cce"
+    },
+    {
+      "path": "independent_forward_v1/FINAL_ENVELOPE_SNAPSHOT_v1.json",
+      "bytes": 3011,
+      "sha256": "ed3ccbdcf09725f86be83b39eef3fa5bacb27c76b0cdb0d8c12059759156bb9e"
+    },
+    {
+      "path": "independent_forward_v1/FINAL_PRIMARY_METADATA_DELTA_v1.patch",
+      "bytes": 1685,
+      "sha256": "9044d9f82e775f33d133803b2e3aeb50e5dbc90a68555c79c68c2a3f6876e610"
+    },
+    {
+      "path": "independent_forward_v1/FORWARD_CORRESPONDENCE_RESULTS_v1.json",
+      "bytes": 2079,
+      "sha256": "6ad4d09d67bcd1cacb94d3f3b11dfd6a7f5a6d3f3d03473d54bb55f4196a5331"
+    },
+    {
+      "path": "independent_forward_v1/FORWARD_IDENTITY_v1.json",
+      "bytes": 9946,
+      "sha256": "ebdfebf861f9687f39df8dfc83b11ce5aff6bdadcfbaf8f230e51b67ed403fa2"
+    },
+    {
+      "path": "independent_forward_v1/FORWARD_REVIEW_v1.md",
+      "bytes": 9292,
+      "sha256": "f0cfd9e33c8550e8a841ce30c77093fb4eb2ebc8a6592cef6f98d4995a7b90c2"
+    },
+    {
+      "path": "independent_forward_v1/IMPLEMENTATION_FREEZE_v1.json",
+      "bytes": 487,
+      "sha256": "a70aa364f72715c972637a3519ce46a18771038a830054ccecade4e88e64de51"
+    },
+    {
+      "path": "independent_forward_v1/INDEPENDENT_FORWARD_RESULTS_v2.json",
+      "bytes": 34199,
+      "sha256": "f2dff01ecb2ab04cfaec2f092a48b55e52f9aecad22966b79743dd3df47eccfc"
+    },
+    {
+      "path": "independent_forward_v1/INDEPENDENT_RUN_v1.stderr",
+      "bytes": 2066,
+      "sha256": "a67ea6d97f5556c02ca3ac174ed871414235481fd0d3ef4547a8f8834fc32d71"
+    },
+    {
+      "path": "independent_forward_v1/INDEPENDENT_RUN_v1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent_forward_v1/INDEPENDENT_RUN_v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent_forward_v1/INDEPENDENT_RUN_v2.stdout",
+      "bytes": 2209,
+      "sha256": "44ccd14455c748fdc33115366858b64edc1e8b07cff52f70df00129c298d919d"
+    },
+    {
+      "path": "independent_forward_v1/NONFINITE_READOUT_WITNESS_v1.json",
+      "bytes": 919,
+      "sha256": "95cc0ef7c051015488ac6f5ddf0d34b3a0bd1ca66434e06124fa59e35df0a6c3"
+    },
+    {
+      "path": "independent_forward_v1/NONFINITE_REPAIR_CHECK_FREEZE_v2.json",
+      "bytes": 230,
+      "sha256": "a2f1dc18b4cb18faeb8984ee2a25638123fe48d1890fc11ed15dbd1b5e281345"
+    },
+    {
+      "path": "independent_forward_v1/NONFINITE_REPAIR_DELTA_v2.patch",
+      "bytes": 3902,
+      "sha256": "e3c8c3ac157e6f5d4b004d31304c4067dbbb00c87c670f00a552da4099e80d33"
+    },
+    {
+      "path": "independent_forward_v1/NONFINITE_REPAIR_RESULTS_v2.json",
+      "bytes": 7048,
+      "sha256": "ccd4633bb009e1b2d04bc3a78f261c4964b80910b19f3ed449484a8c3b26eb5b"
+    },
+    {
+      "path": "independent_forward_v1/NONFINITE_WITNESS_SOURCE_FREEZE_v1.json",
+      "bytes": 234,
+      "sha256": "2553fac962c38bc745d0050b9f7869ff03f1c6066245ee009d2ffa753c71ccbd"
+    },
+    {
+      "path": "independent_forward_v1/PRECHECK_FREEZE_v1.json",
+      "bytes": 490,
+      "sha256": "3e86e6b08e37b4349f24208654432ffae3fc2f91b0d9c06773bfe67a90531b78"
+    },
+    {
+      "path": "independent_forward_v1/PRECHECK_v1.md",
+      "bytes": 3078,
+      "sha256": "48c4c99515b7b7f5d5d3bb5e9b663824580fed0dbfa7b63d8e622599391fad33"
+    },
+    {
+      "path": "independent_forward_v1/REUSED_BACKGROUND_SOURCE.py",
+      "bytes": 20416,
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be"
+    },
+    {
+      "path": "independent_forward_v1/SERIALIZATION_FAILURE_v1.json",
+      "bytes": 625,
+      "sha256": "671f00dd577dcd678d93b74281c03042bce4f7a0cde282768a8452c9c40b41c0"
+    },
+    {
+      "path": "independent_forward_v1/author_v2/FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "independent_forward_v1/author_v2/FORWARD_RESULTS_v1.json",
+      "bytes": 1816,
+      "sha256": "f5836e1fc200c16d948219560fa6e4117962358259ac59555fb8a94062080e6c"
+    },
+    {
+      "path": "independent_forward_v1/author_v2/FORWARD_RESULTS_v2.json",
+      "bytes": 49388,
+      "sha256": "40d81c2633ea1c304dde2200edb6a066889c26ef3ed628118c61446130dcf130"
+    },
+    {
+      "path": "independent_forward_v1/author_v2/forward_controls_v1.py",
+      "bytes": 10408,
+      "sha256": "ff691cf553b9f1c56f0ad757de5e832e68669a9c25d3f05b98c0b1aaa6f4c563"
+    },
+    {
+      "path": "independent_forward_v1/author_v2/forward_controls_v2.py",
+      "bytes": 10475,
+      "sha256": "f72a91a02850a149bd0d002aadac6647039838cbb1c85e6b8b26a551fddad8fa"
+    },
+    {
+      "path": "independent_forward_v1/canonical_source_check_v1.py",
+      "bytes": 5260,
+      "sha256": "a0aa6e2a1b3925ed884add5afbb1763a8f2fbada787bbf5214785d844d5ca1df"
+    },
+    {
+      "path": "independent_forward_v1/canonical_source_v1/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "independent_forward_v1/canonical_source_v1/scalar_growth_lensing_inverse.py",
+      "bytes": 27308,
+      "sha256": "5561f381fd2fd82ae1a979dcd8d79f275f8b4a500f3fbbc607c8a82ad63efecf"
+    },
+    {
+      "path": "independent_forward_v1/canonical_source_v1/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3465,
+      "sha256": "9b229daa53db4d896709f4741b4499d59e2440b191d5305143196ea6ff4a0fae"
+    },
+    {
+      "path": "independent_forward_v1/canonical_source_v2/scalar_growth_lensing_inverse.py",
+      "bytes": 28918,
+      "sha256": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_check_v1.py",
+      "bytes": 6868,
+      "sha256": "1ebe683afe3fabb446c21589c68462b46290e884573e73aaaba754a5059d8bc4"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_EXECUTION_v1.json",
+      "bytes": 4394,
+      "sha256": "10e769786a98694250a4d3b334f7875ec0f7ad3cf69d5c947702313e64d4d26d"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_EXECUTION_v2.json",
+      "bytes": 785,
+      "sha256": "17eb3e1eb97ba91d5c3eb56a0440f1ee99c318f8f84a1643213943a4043bf34b"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_RECEIPT_SERIALIZATION_FAILURE_v1.json",
+      "bytes": 395,
+      "sha256": "df999d27981c8b413aa81b1502e8f35dc344d60e83bbee291054b3fa8f4c22d1"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_SOURCE_FREEZE_v2.json",
+      "bytes": 1306,
+      "sha256": "8281a3800a31c1149bbe29fa78618fbe5b9293aa0b503a72b67076a2706786c5"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 8087,
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/canonical_v1_before_domain_repairs/RESULTS_v1.json",
+      "bytes": 61117,
+      "sha256": "1fe69fbd92eceb161400867025f9d36962321cde7fb10ec697ca6e06f8048ff4"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/logs/runner-cache/scalar_growth_lensing_inverse_check.txt",
+      "bytes": 4088,
+      "sha256": "db3e65c51773a98982f9be700b80260ae940de379d79e5ed72372b0d7d4cd464"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/outputs/scalar_growth_lensing_inverse/RESULTS_v1.json",
+      "bytes": 63674,
+      "sha256": "a6d4a713177615c5db4a360aa2e9080168b9a525329edc5b8ce9c588f8e6b92a"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json",
+      "bytes": 3238,
+      "sha256": "60a921920f53d81f00c7c084da5f517b31e2321a556e24d09f84da0c3b40d046"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/scripts/scalar_growth_lensing_inverse.py",
+      "bytes": 28918,
+      "sha256": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4"
+    },
+    {
+      "path": "independent_forward_v1/final_envelope_v1/scripts/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3933,
+      "sha256": "fdd2279ac3315d909b44aa65ce8e2989933908d6c874ed6abc588ab588ac3c11"
+    },
+    {
+      "path": "independent_forward_v1/forward_correspondence_v1.py",
+      "bytes": 4532,
+      "sha256": "8b581b81d053d4a5ceab7f50bcb617d5356b5be3d504edcf38fdcf8a07ea5715"
+    },
+    {
+      "path": "independent_forward_v1/independent_forward_v1.py",
+      "bytes": 6136,
+      "sha256": "4a229edc2ce9d0f4f14fc0b6a4dd28bbb29ea46e185c6c33a35295a4e546509d"
+    },
+    {
+      "path": "independent_forward_v1/independent_forward_v2.py",
+      "bytes": 6188,
+      "sha256": "a78f476a76ea4d306692810757dcaafa9577bd41faccb1d35a7250f889e4abe9"
+    },
+    {
+      "path": "independent_forward_v1/nonfinite_readout_witness_v1.py",
+      "bytes": 1964,
+      "sha256": "0b881c193130f8843e323bc59905182017cfd396c94b5df3a1e78493e22229c5"
+    },
+    {
+      "path": "independent_forward_v1/nonfinite_repair_check_v2.py",
+      "bytes": 5507,
+      "sha256": "e6dbd0139925231ad69417d5b32de1aeb694e16ba875b11918a38c3c87a82d5e"
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_CODE_V2_EXPOSURE_FREEZE_v1.json",
+      "bytes": 501,
+      "sha256": "cfef98460230502cf814649c6e7cd027d343ef56090ef23edba912ca02c9d6e4"
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_EXPOSURE_FREEZE_v1.json",
+      "bytes": 921,
+      "sha256": "35da6c4b89e33ecc6445654a93110b029283650271973c6437bad811057aecf7"
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_V2_EXPOSURE_FREEZE_v1.json",
+      "bytes": 513,
+      "sha256": "b18bf39d7fc1f6e0b4cd9fe032004eabbedd66ebcf9373e5cc0bb7ab6a0d96a4"
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_WORKING_v1.md",
+      "bytes": 8708,
+      "sha256": "7540ac4431c3b2a1ff553edf52eb7c30f86522ded8e16804cdf4d99aa7e04fe6"
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_WORKING_v2.md",
+      "bytes": 9173,
+      "sha256": "0aad424f1fd7fe582c7005edab096e7e0a3787ef8ef84ca2ccd813d3490a6397"
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_growth_inverse_v1.py",
+      "bytes": 10160,
+      "sha256": "1e12edf8106f43a97a9636d7d8f7fc46c351f6773bd8d2b46fef54851b72a894"
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_growth_inverse_v2.py",
+      "bytes": 4708,
+      "sha256": "fefc0b0552ce7baef474d018ea4f60bd5437ec5d7fdfa51b116b57e2b1d80e01"
+    },
+    {
+      "path": "independent_math_v1/CONTINUITY_EXTENSION_v1.md",
+      "bytes": 3199,
+      "sha256": "6cdcc523456387a6bbc24e76e4daa1dd078a8f504cf76d0de8703bd7e61efcb1"
+    },
+    {
+      "path": "independent_math_v1/CONTINUITY_FREEZE_v1.json",
+      "bytes": 319,
+      "sha256": "90c99e6e83b011fe14537bfffdb1eb69f1c080d4933346bb3ee70688d2ee12f1"
+    },
+    {
+      "path": "independent_math_v1/CONTINUITY_RESULTS_v1.json",
+      "bytes": 1054,
+      "sha256": "3333910144be3501732e5c03230e43d4b6a1095c823d4c3834fbfc69e3f9c2bb"
+    },
+    {
+      "path": "independent_math_v1/CONTROL_RESULTS_v1.json",
+      "bytes": 5249,
+      "sha256": "f54f236ef268229a665ac77eaf66c7d546eaac1e7a17a0d40eb87dcb51d5e8db"
+    },
+    {
+      "path": "independent_math_v1/EXTENSION_CONTROL_FREEZE_v1.json",
+      "bytes": 407,
+      "sha256": "72e2c8389b3b8f5daefe7c70861dc81fa19221e382b64310a4ae2bad57818e07"
+    },
+    {
+      "path": "independent_math_v1/INDEPENDENT_IDENTITY_v1.json",
+      "bytes": 2041,
+      "sha256": "f10db822421b0eb0b497e1b609f6129c38b66d0cce9a45919574f96aa78a7645"
+    },
+    {
+      "path": "independent_math_v1/INDEPENDENT_MATH_v1.md",
+      "bytes": 2997,
+      "sha256": "1749b967ce04da922f903e3810f94f4dc08581237cf712a0cc7eee356046678d"
+    },
+    {
+      "path": "independent_math_v1/INTERVAL_EXTENSION_v1.md",
+      "bytes": 4544,
+      "sha256": "bf85e7939b48a8955cdd28f4c556b302ed6ca393edf211c491de876110e6dc10"
+    },
+    {
+      "path": "independent_math_v1/INTERVAL_V2_CHECK_RESULTS_v1.json",
+      "bytes": 1856,
+      "sha256": "ef5ab8a9ac5357f6d9a41b757a76a77ab97ef57f1b5be7b693ffbe7b63430f83"
+    },
+    {
+      "path": "independent_math_v1/INTERVAL_V2_CONTROL_FREEZE_v1.json",
+      "bytes": 371,
+      "sha256": "ac1b8c1c9c42e1b2670817966e099f580aa6a133a22c19dffcffc7acb1f63174"
+    },
+    {
+      "path": "independent_math_v1/POST_EXPOSURE_DOMAIN_WITNESS_v1.json",
+      "bytes": 893,
+      "sha256": "1d2932f577750704e7ff028dc8b2f684889f5f68dcd326203ba5444bd7d84aec"
+    },
+    {
+      "path": "independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "bytes": 472,
+      "sha256": "493ab75d7e76dbc52b14ce3584062f9cd3108b5a1d3e0b737b15d705d475c7e7"
+    },
+    {
+      "path": "independent_math_v1/PRECHECK_v1.md",
+      "bytes": 12388,
+      "sha256": "6f10216bad8fa408293369eae4b572a10972cf7ae72489c0096b799577ca5069"
+    },
+    {
+      "path": "independent_math_v1/Q_DOMAIN_REPAIR_CHECK_v1.json",
+      "bytes": 639,
+      "sha256": "647a16450c1b5c4cabf0a359f9a90ba029cc6220f08aaaf6b864541d88bd6223"
+    },
+    {
+      "path": "independent_math_v1/SOURCE_COMPARISON_IDENTITY_v1.json",
+      "bytes": 1270,
+      "sha256": "16517b6025227cbd69906e8ee54d6b160beedc663897f7138c7acd813b603c27"
+    },
+    {
+      "path": "independent_math_v1/SOURCE_COMPARISON_IDENTITY_v2.json",
+      "bytes": 1806,
+      "sha256": "577e056307bde4be57782c5f8c8e7b73073df4230d77c83fd8d7973a89c8b0c1"
+    },
+    {
+      "path": "independent_math_v1/SOURCE_COMPARISON_v1.md",
+      "bytes": 5199,
+      "sha256": "8e0887700a31be113210efe9b1e046cf41c2902659c7703fc68377ea39e64509"
+    },
+    {
+      "path": "independent_math_v1/SOURCE_COMPARISON_v2.md",
+      "bytes": 8849,
+      "sha256": "89aa7b599f7fc73a3e9031af793f1118aa4b1754d42839233ecbfa20f8f2802e"
+    },
+    {
+      "path": "independent_math_v1/SOURCE_FREEZE_v1.json",
+      "bytes": 675,
+      "sha256": "2f8615d39cd2fa00692f364bd27c09b05f51bccf2535e9709fe1aee40ed9f176"
+    },
+    {
+      "path": "independent_math_v1/SUPPLIED_M12_NOTE_v1.md",
+      "bytes": 25119,
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122"
+    },
+    {
+      "path": "independent_math_v1/canonical_FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "independent_math_v1/canonical_NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 7945,
+      "sha256": "c0e78ada04196b33efdda57cd1f3e5932a05036ba79f969a6f1bf245f24c9db5"
+    },
+    {
+      "path": "independent_math_v1/canonical_SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20065,
+      "sha256": "2400b051b42e34dfdfbfc9be2987706c929df6bd4da17f75623a025190212bbc"
+    },
+    {
+      "path": "independent_math_v1/canonical_affected_diff_v2.txt",
+      "bytes": 4400,
+      "sha256": "485ec07e7f5c7f95eb0fc73686a799d3252650fd0dda0728661065381cb88738"
+    },
+    {
+      "path": "independent_math_v1/canonical_affected_diff_v3.txt",
+      "bytes": 6001,
+      "sha256": "aa3ac58f37c188e77b98524a933ce1e5698d169cd831924ce34e3c7ef21f8413"
+    },
+    {
+      "path": "independent_math_v1/canonical_affected_freeze_v2.json",
+      "bytes": 827,
+      "sha256": "ac43a0342f004f73d012bc6734b94f6c1f967b3feca6be91151c1c24cee5a07a"
+    },
+    {
+      "path": "independent_math_v1/canonical_affected_freeze_v3.json",
+      "bytes": 1069,
+      "sha256": "0f7523ad764e5903631e3dc4371ad699331468d07e79fc0c3b30b1a8f3722163"
+    },
+    {
+      "path": "independent_math_v1/canonical_candidate_domain_findings_v1.json",
+      "bytes": 589,
+      "sha256": "347a13ccd189178b497ecacba6bd6ffb5726d4d1e3ec77e930cdab8e54f02106"
+    },
+    {
+      "path": "independent_math_v1/canonical_checklist_v2.md",
+      "bytes": 7945,
+      "sha256": "c0e78ada04196b33efdda57cd1f3e5932a05036ba79f969a6f1bf245f24c9db5"
+    },
+    {
+      "path": "independent_math_v1/canonical_checklist_v3.md",
+      "bytes": 8087,
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd"
+    },
+    {
+      "path": "independent_math_v1/canonical_declared_inputs_freeze_v1.json",
+      "bytes": 844,
+      "sha256": "7aeb5e90173203692dea5dd987a478a2154350d000aa83dd5b594d56b1ec5d3c"
+    },
+    {
+      "path": "independent_math_v1/canonical_domain_repair_checks_v1.py",
+      "bytes": 2239,
+      "sha256": "944ae9c116f5286d40d634f6c3165dee0d432609dea102a4b05fa3598e6ca8f6"
+    },
+    {
+      "path": "independent_math_v1/canonical_domain_repair_freeze_v1.json",
+      "bytes": 313,
+      "sha256": "2457d01578556748f99131abbbc6b908aeaa4c0d454c245b4d5fd8b3c4e92b9b"
+    },
+    {
+      "path": "independent_math_v1/canonical_domain_repair_results_v1.json",
+      "bytes": 1458,
+      "sha256": "6c6d00b25692fc653047a42ab2de1663317683c4778f59dcb8c5617ebbff919a"
+    },
+    {
+      "path": "independent_math_v1/canonical_exact_core_correspondence_v1.json",
+      "bytes": 498,
+      "sha256": "43353d0e49d6715c9db6f49c5f28a667d581f6f658716e20aee10d4a76c3aae8"
+    },
+    {
+      "path": "independent_math_v1/canonical_helper_v2.py",
+      "bytes": 26202,
+      "sha256": "7401cc6fdb77a6598bd7a4dc31010d99da3506dcf97abbffb027775843af07fd"
+    },
+    {
+      "path": "independent_math_v1/canonical_helper_v3.py",
+      "bytes": 27308,
+      "sha256": "5561f381fd2fd82ae1a979dcd8d79f275f8b4a500f3fbbc607c8a82ad63efecf"
+    },
+    {
+      "path": "independent_math_v1/canonical_note_v2.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "independent_math_v1/canonical_note_v3.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "independent_math_v1/canonical_review_identity_v1.json",
+      "bytes": 1756,
+      "sha256": "7dc25fb7f5b742403196391fc302dbe1528175bfbd8cf2ab75a9ba686d343732"
+    },
+    {
+      "path": "independent_math_v1/canonical_review_identity_v2.json",
+      "bytes": 2869,
+      "sha256": "142f5ceded599a166bacd834931b31631c162f0db32c6b8b775cfc21531bd7ff"
+    },
+    {
+      "path": "independent_math_v1/canonical_review_v1.md",
+      "bytes": 11131,
+      "sha256": "56885c895c7ff06ff10c45667060766ade713ba7dd49545a9e7960e8106a5d44"
+    },
+    {
+      "path": "independent_math_v1/canonical_review_v2.md",
+      "bytes": 4911,
+      "sha256": "5cb5cacdd97d8ae7992bfb606ea0688dec967ef5511208eccd5728fe2d56bdc1"
+    },
+    {
+      "path": "independent_math_v1/canonical_scalar_growth_lensing_inverse.py",
+      "bytes": 25062,
+      "sha256": "118dd204fd4535a40174c71093e44001e12dcb4a95524646b1b88e3d589f82ad"
+    },
+    {
+      "path": "independent_math_v1/canonical_scalar_growth_lensing_inverse_check.py",
+      "bytes": 3465,
+      "sha256": "9b229daa53db4d896709f4741b4499d59e2440b191d5305143196ea6ff4a0fae"
+    },
+    {
+      "path": "independent_math_v1/canonical_source_freeze_v1.json",
+      "bytes": 967,
+      "sha256": "24030f8b23f710b63e9cb37588266cfe83ce366ad5deb4e8991576d1e123372d"
+    },
+    {
+      "path": "independent_math_v1/continuity_controls_v1.py",
+      "bytes": 1650,
+      "sha256": "dc9fb8e9ff10d63a0178621ffe971679cbdf383871793a4bd436b0b6b1092afa"
+    },
+    {
+      "path": "independent_math_v1/independent_controls_v1.py",
+      "bytes": 6093,
+      "sha256": "a7f3b8330be15db30b363b595fe9daed3fea88f83b51535cf5628ed2702dee74"
+    },
+    {
+      "path": "independent_math_v1/interval_v2_checks_v1.py",
+      "bytes": 4099,
+      "sha256": "704e4fd8b79069ff093dfca822102514471ddb09d1ac3346c88e77ff23ec02bf"
+    },
+    {
+      "path": "independent_math_v1/post_exposure_domain_witness_v1.py",
+      "bytes": 960,
+      "sha256": "27312dac97e4f5ac3d31c4c033d4de877fa1a47397dfac6cc37256a90ef36c5c"
+    },
+    {
+      "path": "independent_source_v1/IDENTITY_RECEIPT_v1.json",
+      "bytes": 25653,
+      "sha256": "0c61927ee31c4e416384713619826c9300bcd2f846847cd4901d939e18419234"
+    },
+    {
+      "path": "independent_source_v1/IDENTITY_RECEIPT_v1.sha256",
+      "bytes": 91,
+      "sha256": "253c7b247a09cc3cf6409d18aa0602fa63355d3a127cc05af45acb94044dc1ca"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_CLUSTER_IDENTITY_v1.json",
+      "bytes": 79539,
+      "sha256": "dd83000a407478b5ed1e358b65b0eaf0a6193b483e51b4998179c8e46e82dd07"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_CLUSTER_IDENTITY_v1.sha256",
+      "bytes": 105,
+      "sha256": "a918413fe16bf18e8b9f8bf1c02bd00e2e2e533dd23b8b3750ac4427f37dad78"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_CLUSTER_REVIEW_v1.md",
+      "bytes": 10462,
+      "sha256": "d5aa0b780cbd548775209519000de8637599703567c44a2690de31da2d92afc3"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/AI_EXECUTION_AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/CURRENT_MAIN_CAMPAIGN.md",
+      "bytes": 9827,
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/CURRENT_MAIN_SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/FIRST_READ_NOTE.md",
+      "bytes": 20065,
+      "sha256": "2400b051b42e34dfdfbfc9be2987706c929df6bd4da17f75623a025190212bbc"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_SOURCE_FREEZE_v1.json",
+      "bytes": 1291,
+      "sha256": "f724a83f9f31a4210887080d8c0c9a8fc0c4ec1d7701f1426f93dade706a0b85"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 8087,
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/logs/runner-cache/scalar_growth_lensing_inverse_check.txt",
+      "bytes": 3719,
+      "sha256": "92264a25c96825a3f051d01c08cadc2c491b62d6bd176e9f3ed1c6abcf8be682"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/outputs/scalar_growth_lensing_inverse/RESULTS_v1.json",
+      "bytes": 61117,
+      "sha256": "1fe69fbd92eceb161400867025f9d36962321cde7fb10ec697ca6e06f8048ff4"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json",
+      "bytes": 2869,
+      "sha256": "9be74e989b2e5c8516f1f09e0ec4f0dba6ac4d0a0667827d9ec7a3bf9989ee0c"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/scripts/scalar_growth_lensing_inverse.py",
+      "bytes": 26202,
+      "sha256": "7401cc6fdb77a6598bd7a4dc31010d99da3506dcf97abbffb027775843af07fd"
+    },
+    {
+      "path": "independent_source_v1/M13_CANONICAL_SNAPSHOTS_v1/current/scripts/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3465,
+      "sha256": "9b229daa53db4d896709f4741b4499d59e2440b191d5305143196ea6ff4a0fae"
+    },
+    {
+      "path": "independent_source_v1/M13_CHECKLIST_ORIGINAL_TO_CORRECTION_v1.diff",
+      "bytes": 1824,
+      "sha256": "5e481c6b60a60d3e5e021efcc5e4a99fe74de2dc5216bbd263234aee550f7719"
+    },
+    {
+      "path": "independent_source_v1/M13_CLUSTER_CAP_VERDICT_v1.md",
+      "bytes": 2393,
+      "sha256": "5dbbe9ade7a64fb3f3e46eaa1594cb5f0ff04d1a0fc2e7fef01f374961a1e12a"
+    },
+    {
+      "path": "independent_source_v1/M13_CORRECTION_SEEN_RECEIPT_v1.json",
+      "bytes": 1586,
+      "sha256": "a1bb5b9a0de3b6bc963a868d42702f63103eb63226cd9b55330f948a64811d55"
+    },
+    {
+      "path": "independent_source_v1/M13_CORRECTION_SEEN_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 8087,
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd"
+    },
+    {
+      "path": "independent_source_v1/M13_CORRECTION_SEEN_v1/NO_GO_DISCIPLINE_CHECKLIST.md.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent_source_v1/M13_CORRECTION_SEEN_v1/scalar_growth_lensing_inverse.py.diff",
+      "bytes": 4228,
+      "sha256": "b0b21cac9a555d9a67f977d84c921538aba856782d23e225c97f8dce067c4465"
+    },
+    {
+      "path": "independent_source_v1/M13_CORRECTION_SEEN_v1/scripts/scalar_growth_lensing_inverse.py",
+      "bytes": 27308,
+      "sha256": "5561f381fd2fd82ae1a979dcd8d79f275f8b4a500f3fbbc607c8a82ad63efecf"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_COMPARISONS_v2.json",
+      "bytes": 62286,
+      "sha256": "d51efcb47b95f16a1950b989e68fe349ba3ada99e322b4f1c51b0eecc6b180c7"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_IDENTITY_v2.json",
+      "bytes": 14591,
+      "sha256": "8d71d9235dd29ef93bd2584c9724096e3b6d0ac965dee934c04478a975567cdf"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_IDENTITY_v2.sha256",
+      "bytes": 106,
+      "sha256": "eaf6bd39af69466af81268ad57f9a69049146bc590b8bb773789cfa9d2fa6c1e"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 8087,
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/RUNNER_CACHE_FINGERPRINT_SOURCE_EXCERPT_v2.txt",
+      "bytes": 2690,
+      "sha256": "a1e124c83410dd0b076d7891601c796caa1a00661e785b106e4c583b5fdbf475"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/deltas/scalar_growth_lensing_inverse.py.diff",
+      "bytes": 6450,
+      "sha256": "ff736eca2651bbfbdc6f3fee18994f23611236ad8b905bc97891a9d929901008"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/deltas/scalar_growth_lensing_inverse_check.py.diff",
+      "bytes": 1760,
+      "sha256": "7559c5cd77e7c87a7bc3be8377e01a79fcfc0881f50df92db68f5e9d7e6f5db9"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/logs/runner-cache/scalar_growth_lensing_inverse_check.txt",
+      "bytes": 4088,
+      "sha256": "db3e65c51773a98982f9be700b80260ae940de379d79e5ed72372b0d7d4cd464"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/outputs/scalar_growth_lensing_inverse/RESULTS_v1.json",
+      "bytes": 63674,
+      "sha256": "a6d4a713177615c5db4a360aa2e9080168b9a525329edc5b8ce9c588f8e6b92a"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json",
+      "bytes": 3238,
+      "sha256": "60a921920f53d81f00c7c084da5f517b31e2321a556e24d09f84da0c3b40d046"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/parent_receipts/CANONICAL_EXECUTION_v2.json",
+      "bytes": 785,
+      "sha256": "17eb3e1eb97ba91d5c3eb56a0440f1ee99c318f8f84a1643213943a4043bf34b"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/parent_receipts/CANONICAL_RECEIPT_SERIALIZATION_FAILURE_v1.json",
+      "bytes": 395,
+      "sha256": "df999d27981c8b413aa81b1502e8f35dc344d60e83bbee291054b3fa8f4c22d1"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/parent_receipts/CANONICAL_SOURCE_FREEZE_v2.json",
+      "bytes": 1306,
+      "sha256": "8281a3800a31c1149bbe29fa78618fbe5b9293aa0b503a72b67076a2706786c5"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/scripts/scalar_growth_lensing_inverse.py",
+      "bytes": 28918,
+      "sha256": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SNAPSHOTS_v2/scripts/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3933,
+      "sha256": "fdd2279ac3315d909b44aa65ce8e2989933908d6c874ed6abc588ab588ac3c11"
+    },
+    {
+      "path": "independent_source_v1/M13_FINAL_SOURCE_CACHE_SUPPLEMENT_v2.md",
+      "bytes": 3751,
+      "sha256": "0f839fb56469d767c816fde3cdecf692d090f4ad0c481b6f824a03838078b9d4"
+    },
+    {
+      "path": "independent_source_v1/M13_FIRST_READ_TOOL_RECORD_v1.json",
+      "bytes": 26008,
+      "sha256": "2bb48b86cd39b04e9b6ac955cf49a84cd15a7d12de7ce1abeafec9db4e75a182"
+    },
+    {
+      "path": "independent_source_v1/M13_HISTORICAL_DECLARED_CHECKLIST_v1.md",
+      "bytes": 7945,
+      "sha256": "c0e78ada04196b33efdda57cd1f3e5932a05036ba79f969a6f1bf245f24c9db5"
+    },
+    {
+      "path": "independent_source_v1/M13_INITIAL_SCOPE_TOOL_RECORD_v1.json",
+      "bytes": 12809,
+      "sha256": "57c0592e408e1583dac7ac85dd5a3afca815bca9cb6be1aa02a823972f248ab8"
+    },
+    {
+      "path": "independent_source_v1/M13_LATEST_PARENT_CORRECTION_HASH_ONLY_v1.py",
+      "bytes": 28918,
+      "sha256": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4"
+    },
+    {
+      "path": "independent_source_v1/M13_NOTE_FIRST_TO_SNAPSHOT_v1.diff",
+      "bytes": 846,
+      "sha256": "96456a96079d32d57614ee87996dddf27562a60d07d8d378d985a6916df0c65d"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/earlier_review/M12_CANONICAL_CLUSTER_IDENTITY_v1.json",
+      "bytes": 13147,
+      "sha256": "939766526ed8235b835349a0d8ed57d076283465afc74050d3197a68479d9269"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/earlier_review/M12_CANONICAL_CLUSTER_REVIEW_v1.md",
+      "bytes": 8800,
+      "sha256": "1fa91a6f32e486e0fb229c1b6bbebe4d86e00bf19a1188937f6460dec6f6757d"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/repository/docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 23722,
+      "sha256": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/repository/docs/EXPONENTIAL_SCALAR_DENSITY_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 20118,
+      "sha256": "40f112537627dd19ea0090a673f355f0d122c52844853798287f55e5b671e3fb"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/repository/docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 18501,
+      "sha256": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/repository/docs/EXPONENTIAL_SCALAR_FINITE_MODE_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 8764,
+      "sha256": "d816996a38b6ca65feef503578372058d6d67561fd4c36318f476ca6ba22ee64"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/repository/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 25119,
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/ACCELERATED_PR_BODY_v1.md",
+      "bytes": 4224,
+      "sha256": "c5621ddfa2ddad26a90186348dc8fbe71741c71f1779f960266f7d7f5e21111b"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/DOPPLER_PR_BODY_v1.md",
+      "bytes": 4517,
+      "sha256": "f4eeece6fe07eb8e8e92887505b1bb5f6570f5bc6a1d4d7d4877da82110c68bb"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/ENERGY_PR_BODY_v2.md",
+      "bytes": 6828,
+      "sha256": "d59d87a9f344daf6f9c5fccce0cfce3c7f28a23344c7d32a968e885aa6e79e29"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/HISTORY_PR_BODY_v1.md",
+      "bytes": 6991,
+      "sha256": "5d54d7eb4bd22dfd73e17ea080703a606100f25786eadd9eee0b36463778de6f"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/M10_PR_BODY.md",
+      "bytes": 4811,
+      "sha256": "098b39cf0fa08fbfc88ace6f8278518d165e06ce277ba54ba2914ce89720d673"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/M11_PR_BODY_v1.md",
+      "bytes": 3855,
+      "sha256": "704cbf5be375af3066815e3a70646c072066db4ebb1980e2c00b8757cff0524a"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/M12_PR_BODY_v1.md",
+      "bytes": 6103,
+      "sha256": "1d8ff032a537db2f59c185a986358e70e6ee821b9e6a3a4c6e7c14abd38b93b7"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/M7_PR_BODY_v1.md",
+      "bytes": 1715,
+      "sha256": "b2e7318aaf48ae80fb2e1ae7e21dfb5fd5eb2c22d956cf0dbdfc615929c732e0"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/M8_PR_BODY_v1.md",
+      "bytes": 2955,
+      "sha256": "12a4546c1886a1b830c5373039b7ae0e4068b4070f1a262bb0401445a1068913"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/M9_PR_BODY_v1.md",
+      "bytes": 4774,
+      "sha256": "ea423c63daa0c8dcf7d36e7dbdd58969e0cef909c988a73a83af0838b7e2ebc1"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/PHASE_PR_BODY_v1.md",
+      "bytes": 5260,
+      "sha256": "be8eedd682121c294c0622f7fdfe6a4170a6dcdcf553ecf23e62e9f446939ee5"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/PRS.json",
+      "bytes": 13170,
+      "sha256": "ec70a494442762bc31c72a792b42a43834cd6890465e386ea2f65c7d2b0f4541"
+    },
+    {
+      "path": "independent_source_v1/M13_READ_CONTEXT_v1/runtime/PR_BODY_M1.md",
+      "bytes": 4010,
+      "sha256": "873f7374c09a26ab74b3d8da45a996187cd10392b746632b067bab2f6d3857f6"
+    },
+    {
+      "path": "independent_source_v1/M13_REVIEW_CHRONOLOGY_SUPPLEMENT_v1.md",
+      "bytes": 1160,
+      "sha256": "829714d128a4214ab60bd2add432e68ac01c2a0420c17934cefe0a81c6d3ad88"
+    },
+    {
+      "path": "independent_source_v1/M13_SNAPSHOT_RECEIPT_v1.json",
+      "bytes": 7702,
+      "sha256": "299909c15e15c65395d9216f47efad8f33cd6acca03e6de626ccf99048b61baa"
+    },
+    {
+      "path": "independent_source_v1/PRE_ACCESS_PLAN_v1.json",
+      "bytes": 1064,
+      "sha256": "47155a0115bbb2bb1299d7f9d4428cc81165f1c8f4ef458fa11d717f06429251"
+    },
+    {
+      "path": "independent_source_v1/READ_SCOPE_v1.json",
+      "bytes": 7034,
+      "sha256": "fccd7f0f272edbfa0912d4bff9157aacab301e5d8789370ddddb09818c2d2319"
+    },
+    {
+      "path": "independent_source_v1/REPORT_v1.md",
+      "bytes": 13927,
+      "sha256": "6f5676d8681ad9281f0083c213c66477ff92251d9dfd0cb0840fcc02571b2bf8"
+    },
+    {
+      "path": "independent_source_v1/SOURCE_ACQUISITION_v1.json",
+      "bytes": 3474,
+      "sha256": "1d2c04ea87863ca715610762f0c725034d8eebf840e34ffac2cd8da1449f7c07"
+    },
+    {
+      "path": "independent_source_v1/SOURCE_ACQUISITION_v2.json",
+      "bytes": 1886,
+      "sha256": "221db2ecbcd0fd2f172f64dc392076fad1358f64bc697c7a69ae105d6bb95bc1"
+    },
+    {
+      "path": "independent_source_v1/SOURCE_ACQUISITION_v3.json",
+      "bytes": 2975,
+      "sha256": "b5fffca72dce1f3e29a0d9c612a0e21d93f8c8eafe746cf9783972437b515f16"
+    },
+    {
+      "path": "independent_source_v1/SOURCE_ACQUISITION_v4.json",
+      "bytes": 760,
+      "sha256": "1303eafe96799c7dc97c65d372574563c4361d60c07a2e9fb0d2859385777aae"
+    },
+    {
+      "path": "independent_source_v1/SOURCE_ADMISSION_FREEZE_v1.json",
+      "bytes": 9066,
+      "sha256": "be4040e6ee05b7c3b1cd8d2c8c615becff63651563e993d9c83417a37c5e9ab3"
+    },
+    {
+      "path": "independent_source_v1/WEB_NAMED_LINKS_v1.json",
+      "bytes": 29104,
+      "sha256": "43b5dca29a707ec7bc96520c1d5ea0895d25b34c667f82b2ff5fda3e97ac8788"
+    },
+    {
+      "path": "independent_source_v1/WEB_RELEASE_SEARCH_v1.json",
+      "bytes": 30870,
+      "sha256": "f95c845665a4a3a252a410f06e04cd3cd331a5bf8847630185efbbbbef6b5e12"
+    },
+    {
+      "path": "mutation_v1/Euler_force_normalization.py",
+      "bytes": 27308,
+      "sha256": "88812db49d160dc20534a5e818fe92b5edd48537a9f25f42f28a24f1bee2d907"
+    },
+    {
+      "path": "mutation_v1/Euler_force_normalization.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/Euler_force_normalization.stdout.txt",
+      "bytes": 107,
+      "sha256": "91b428ed0bb1a6b0ad445406f42d276820bac8277c5a906751049bd9febe42d8"
+    },
+    {
+      "path": "mutation_v1/HARNESS_v1.py",
+      "bytes": 620,
+      "sha256": "81907d293746768d82016c50690b4c958c670fab2f51a17d722b7b4e761336ef"
+    },
+    {
+      "path": "mutation_v1/Jordan_clock.py",
+      "bytes": 27304,
+      "sha256": "fddd7b6b6a835992e05d125953f323ecc590f9b1ea7554cf07171f8d5e7b33b6"
+    },
+    {
+      "path": "mutation_v1/Jordan_clock.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/Jordan_clock.stdout.txt",
+      "bytes": 4015,
+      "sha256": "bbfc5ed6cd4432683d34cfa3356d8711c18fcdc768ae71e027069e29f3bf27bc"
+    },
+    {
+      "path": "mutation_v1/MANIFEST_v1.json",
+      "bytes": 4529,
+      "sha256": "1fcde078d0e5071113686fd100b29e2e176bdd73e5c34c61cad9eb66ff383584"
+    },
+    {
+      "path": "mutation_v1/RESULTS_v1.json",
+      "bytes": 33493,
+      "sha256": "9b623eaa42144b27588689f15eec2bc5d137f034580c96d48df31711f22ed832"
+    },
+    {
+      "path": "mutation_v1/coupling_chart.py",
+      "bytes": 27308,
+      "sha256": "171469cc6d32bd331a8e774d037b287b82030fc7cba0c7e83c63e3ec65aff82e"
+    },
+    {
+      "path": "mutation_v1/coupling_chart.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/coupling_chart.stdout.txt",
+      "bytes": 96,
+      "sha256": "dd33bf337929c6c144dec626057e59ee984fa03adcbed214925f6dbee19b4618"
+    },
+    {
+      "path": "mutation_v1/density_elimination_coefficient.py",
+      "bytes": 27310,
+      "sha256": "ffd8e54ec5db2e36e6263cfee9cd696a1817bdda53372a3f6d894ad0bd671542"
+    },
+    {
+      "path": "mutation_v1/density_elimination_coefficient.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/density_elimination_coefficient.stdout.txt",
+      "bytes": 443,
+      "sha256": "e3a7f00b30348da7fa1aa1d5f65550ef71ce1b8b6ab48e73d5e331dbe244917e"
+    },
+    {
+      "path": "mutation_v1/dust_metric_continuity.py",
+      "bytes": 27281,
+      "sha256": "7960619622cc829ab16bbf92b0a64fdee7c96306d0d3f8e850a06ac637e46354"
+    },
+    {
+      "path": "mutation_v1/dust_metric_continuity.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/dust_metric_continuity.stdout.txt",
+      "bytes": 4356,
+      "sha256": "203ff97d34e0202b7a5758b4444d708856c42e9e52988241d63a1aeff6c6b3cc"
+    },
+    {
+      "path": "mutation_v1/finite_pole_slope.py",
+      "bytes": 27309,
+      "sha256": "42274295cf7ae02b0dac82701c7e462e8d787b0b8fc9c056005bc557cc035b92"
+    },
+    {
+      "path": "mutation_v1/finite_pole_slope.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/finite_pole_slope.stdout.txt",
+      "bytes": 126,
+      "sha256": "59c8bc4c4b50842926440f63371955077959c41a610c5680e0b2891ff05f90f4"
+    },
+    {
+      "path": "mutation_v1/lift_compatibility.py",
+      "bytes": 27308,
+      "sha256": "b4331169642dd8ddf2293107bedc6d1b88b6ae5b145d40e3435ca86ff076fcca"
+    },
+    {
+      "path": "mutation_v1/lift_compatibility.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/lift_compatibility.stdout.txt",
+      "bytes": 204,
+      "sha256": "d15897d7bd03a904eb4f77d53a59c6692581a32e1d084762e234afecc5826063"
+    },
+    {
+      "path": "mutation_v1/metric_kinetic_density.py",
+      "bytes": 27308,
+      "sha256": "26cd33418d225b38e0311e1e09bdf917603fdb7f08b3526335d55e90e37ec70b"
+    },
+    {
+      "path": "mutation_v1/metric_kinetic_density.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/metric_kinetic_density.stdout.txt",
+      "bytes": 254,
+      "sha256": "c04e703a843076aa956828580d8a2799c8ee5b00614f1fec41447e89e0cc63e2"
+    },
+    {
+      "path": "mutation_v1/metric_primitive.py",
+      "bytes": 27293,
+      "sha256": "f2bfa21b886fadb7ce50f82148247347f2fc8f855db2a6f777222bf15645635f"
+    },
+    {
+      "path": "mutation_v1/metric_primitive.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/metric_primitive.stdout.txt",
+      "bytes": 4340,
+      "sha256": "ed92dbe34fed2dba4c9a42f0d94f5b1363300ed197ea8acda538f61761388c64"
+    },
+    {
+      "path": "mutation_v1/metric_slip_sign.py",
+      "bytes": 27308,
+      "sha256": "9ec5305d540d3ebc6ad264fae7eda38a298e08bdb447c4f5c281e0f71580e8e6"
+    },
+    {
+      "path": "mutation_v1/metric_slip_sign.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/metric_slip_sign.stdout.txt",
+      "bytes": 308,
+      "sha256": "637503e717fd42bb2061fb359d0bd978acc013e79a75a61cf57050b7f90770a7"
+    },
+    {
+      "path": "mutation_v1/mobius_second_offset.py",
+      "bytes": 27308,
+      "sha256": "8a8a35afd1da17d5838ba0ae049e1abd9ab0339ab66110dd838067751c96fad9"
+    },
+    {
+      "path": "mutation_v1/mobius_second_offset.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/mobius_second_offset.stdout.txt",
+      "bytes": 182,
+      "sha256": "1ee98e9d62410ca5b266bb8c2a4de459e47301a847508b08305e81c9cab07bba"
+    },
+    {
+      "path": "mutation_v1/observed_slip_normalization.py",
+      "bytes": 27306,
+      "sha256": "ed96c89d92aec6ae8e3b15631cd6a3ddafe76d552874e4c2683aa15ef773dca3"
+    },
+    {
+      "path": "mutation_v1/observed_slip_normalization.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/observed_slip_normalization.stdout.txt",
+      "bytes": 107,
+      "sha256": "91b428ed0bb1a6b0ad445406f42d276820bac8277c5a906751049bd9febe42d8"
+    },
+    {
+      "path": "mutation_v1/positive_q_gate.py",
+      "bytes": 27309,
+      "sha256": "00caa6a8667d5e2c463dbd8742ca9f6fd29846ea095ea5e74cbc83f07cbcc202"
+    },
+    {
+      "path": "mutation_v1/positive_q_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/positive_q_gate.stdout.txt",
+      "bytes": 347,
+      "sha256": "048aa4876f62807d290b1c3e56e125f1f7ccef21c06521bd4659ff5ff30eba81"
+    },
+    {
+      "path": "mutation_v1/potential_rolling_coefficient.py",
+      "bytes": 27308,
+      "sha256": "b788cfa3e576a5c03e587246a64cba6998670e0baca3dcdb40c682ab45c86ea9"
+    },
+    {
+      "path": "mutation_v1/potential_rolling_coefficient.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/potential_rolling_coefficient.stdout.txt",
+      "bytes": 165,
+      "sha256": "cf2d38f75c291f76c7d11948c606f01c0a2290d0b2ca61f3eb30877209d7cd18"
+    },
+    {
+      "path": "mutation_v1/potential_time_derivative.py",
+      "bytes": 27308,
+      "sha256": "c677d81c58f0dcdbe41ab1ec4d379819dbf43317e54fe56ad5326681296cc2c4"
+    },
+    {
+      "path": "mutation_v1/potential_time_derivative.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/potential_time_derivative.stdout.txt",
+      "bytes": 3375,
+      "sha256": "5a1c71e4550f8106c6e48828707ff109268e174cd0981a8e951871ae6a0d047e"
+    },
+    {
+      "path": "mutation_v1/sampled_density_gate.py",
+      "bytes": 27298,
+      "sha256": "61944ae609d508b6756853f1412c742ef228951681e33a854eb9fbea7c37d4b2"
+    },
+    {
+      "path": "mutation_v1/sampled_density_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/sampled_density_gate.stdout.txt",
+      "bytes": 147,
+      "sha256": "f564fb43c5b1e62c0138161cd4960a476cbb27c3ec0750fe3392d793ef68af25"
+    },
+    {
+      "path": "mutation_v1/sampled_exact_boundary.py",
+      "bytes": 27284,
+      "sha256": "41cf1b3e078ddde57464395899e20cb912edb36f92b215f983c0f876ed1b08cd"
+    },
+    {
+      "path": "mutation_v1/sampled_exact_boundary.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/sampled_exact_boundary.stdout.txt",
+      "bytes": 150,
+      "sha256": "5220e111569959963b4df0567109c6529b1c623908cb756333c899304696c83e"
+    },
+    {
+      "path": "mutation_v1/sampled_pole_gate.py",
+      "bytes": 27277,
+      "sha256": "2c6d76c498b66ac5aac5d15357b9e44c788e9448be15cb4a02006c0a5b76bb84"
+    },
+    {
+      "path": "mutation_v1/sampled_pole_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/sampled_pole_gate.stdout.txt",
+      "bytes": 95,
+      "sha256": "95c155f0b842ee3677de13c4524999dba96c369ec057c36616b44fd4559fe6ab"
+    },
+    {
+      "path": "mutation_v1/scalar_pole_mass.py",
+      "bytes": 27310,
+      "sha256": "cbbe4ec7af898cc5649d350790bd2efdda69bdaa3b12e880af7e5c75eb931dbd"
+    },
+    {
+      "path": "mutation_v1/scalar_pole_mass.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/scalar_pole_mass.stdout.txt",
+      "bytes": 176,
+      "sha256": "9a03f1811e53d9541881f693dcc313b0178c8ba09b7785c5abac926f967f8f14"
+    },
+    {
+      "path": "mutation_v1/tensor_orientation.py",
+      "bytes": 27312,
+      "sha256": "f3125aaba0d18b5a0bd88b4ae66ccb347ef0d2fcf3b98cd848724f1b9df0962b"
+    },
+    {
+      "path": "mutation_v1/tensor_orientation.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v1/tensor_orientation.stdout.txt",
+      "bytes": 96,
+      "sha256": "dd33bf337929c6c144dec626057e59ee984fa03adcbed214925f6dbee19b4618"
+    },
+    {
+      "path": "mutation_v2/Euler_force_normalization.py",
+      "bytes": 28918,
+      "sha256": "7af015649a1e091cf253b62d04d187754c262e8bfbb79fe36363d76c1e4aed61"
+    },
+    {
+      "path": "mutation_v2/Euler_force_normalization.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/Euler_force_normalization.stdout.txt",
+      "bytes": 107,
+      "sha256": "91b428ed0bb1a6b0ad445406f42d276820bac8277c5a906751049bd9febe42d8"
+    },
+    {
+      "path": "mutation_v2/HARNESS_v2.py",
+      "bytes": 620,
+      "sha256": "81907d293746768d82016c50690b4c958c670fab2f51a17d722b7b4e761336ef"
+    },
+    {
+      "path": "mutation_v2/Jordan_clock.py",
+      "bytes": 28914,
+      "sha256": "92b7948781ee4c9b631d4852089cba064c7188faed5256b7250b1d7ce9d6b7a2"
+    },
+    {
+      "path": "mutation_v2/Jordan_clock.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/Jordan_clock.stdout.txt",
+      "bytes": 4015,
+      "sha256": "3149a75c4cabaa391cbfc202e1f7726826e3f2246bac8ac027b0739e61fb7a5a"
+    },
+    {
+      "path": "mutation_v2/MANIFEST_v2.json",
+      "bytes": 5295,
+      "sha256": "224d22f30459e90c7350d91fc83a795f1cf4d995b61b7d617cc3810109c4ccc4"
+    },
+    {
+      "path": "mutation_v2/RESULTS_v2.json",
+      "bytes": 35374,
+      "sha256": "766e926e5c3e71773b0c70b7391677c0ce027e8df96c6ee43d07a37bf19e2d89"
+    },
+    {
+      "path": "mutation_v2/coupling_chart.py",
+      "bytes": 28918,
+      "sha256": "c5dea7161652059ae1169d5de247f6f5629e5ee37f352f06f4d3c4cb79810e1f"
+    },
+    {
+      "path": "mutation_v2/coupling_chart.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/coupling_chart.stdout.txt",
+      "bytes": 96,
+      "sha256": "dd33bf337929c6c144dec626057e59ee984fa03adcbed214925f6dbee19b4618"
+    },
+    {
+      "path": "mutation_v2/density_elimination_coefficient.py",
+      "bytes": 28920,
+      "sha256": "da9b60fca1d7abafebe69f0959222916709c28005b4a56959f39a42962bbfbea"
+    },
+    {
+      "path": "mutation_v2/density_elimination_coefficient.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/density_elimination_coefficient.stdout.txt",
+      "bytes": 443,
+      "sha256": "78fd92f8606a24c8ce2eafa1a0519ac955349a96f07e3595041436c91569cc92"
+    },
+    {
+      "path": "mutation_v2/dust_metric_continuity.py",
+      "bytes": 28891,
+      "sha256": "e5f2eed20df508c450c95340b2b5d77318b0c9057996529278b00de07cd87b65"
+    },
+    {
+      "path": "mutation_v2/dust_metric_continuity.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/dust_metric_continuity.stdout.txt",
+      "bytes": 4356,
+      "sha256": "092719dc4da311fd215b8a642e70804eaacf5dee55d0098cdaedc137af7d9970"
+    },
+    {
+      "path": "mutation_v2/finite_calibration_gate.py",
+      "bytes": 28880,
+      "sha256": "0c26d3cb9915c570eb15bd9702ad390be66ec9305d036f214581dc20332c9623"
+    },
+    {
+      "path": "mutation_v2/finite_calibration_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/finite_calibration_gate.stdout.txt",
+      "bytes": 346,
+      "sha256": "db4b3d98fc713fd8a0edcc5392a180b0b9c7b92735f6f1546d88ffb7700dfe1c"
+    },
+    {
+      "path": "mutation_v2/finite_pole_slope.py",
+      "bytes": 28919,
+      "sha256": "91ac841277000b6e3d10ae46608778b2a105f81c5c2f0a2c498044d0424ae132"
+    },
+    {
+      "path": "mutation_v2/finite_pole_slope.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/finite_pole_slope.stdout.txt",
+      "bytes": 126,
+      "sha256": "59c8bc4c4b50842926440f63371955077959c41a610c5680e0b2891ff05f90f4"
+    },
+    {
+      "path": "mutation_v2/finite_residual_gate.py",
+      "bytes": 28901,
+      "sha256": "3208c7462244e1b8a56ca2dfdce79de42399994db9e440c273f3e5a5ce84b73c"
+    },
+    {
+      "path": "mutation_v2/finite_residual_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/finite_residual_gate.stdout.txt",
+      "bytes": 283,
+      "sha256": "1680f7ae35fd09469307cf2e7eb0378eae65129b35457fdae4190fa7274ebbf5"
+    },
+    {
+      "path": "mutation_v2/later_finite_readout_gate.py",
+      "bytes": 28868,
+      "sha256": "67196a44f94e2abd32bae67541bc36a9b23aa0ee15855476aab9efdbfe400e1c"
+    },
+    {
+      "path": "mutation_v2/later_finite_readout_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/later_finite_readout_gate.stdout.txt",
+      "bytes": 587,
+      "sha256": "46e83b8412e473d432d1564fd9d8682c4e1fa59a8b67105e6fbade80f7b2a3e9"
+    },
+    {
+      "path": "mutation_v2/lift_compatibility.py",
+      "bytes": 28918,
+      "sha256": "39aac3eb0c551dfefe7dda48ab95ce44a8763978ff4b98849a0c3853f409eecd"
+    },
+    {
+      "path": "mutation_v2/lift_compatibility.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/lift_compatibility.stdout.txt",
+      "bytes": 204,
+      "sha256": "68f61d06249fade11482b1c6d77dc4a84a59faad987b1ffd21e5e6b147f53a29"
+    },
+    {
+      "path": "mutation_v2/metric_kinetic_density.py",
+      "bytes": 28918,
+      "sha256": "9649cf654962b7acc11318788b411beb88f8f286a53cfc362e3196b8f1dc4655"
+    },
+    {
+      "path": "mutation_v2/metric_kinetic_density.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/metric_kinetic_density.stdout.txt",
+      "bytes": 254,
+      "sha256": "467ece569f798f4febbcbf52981b1b05da2bc76ccb2eb3eb0a3152835c1b140f"
+    },
+    {
+      "path": "mutation_v2/metric_primitive.py",
+      "bytes": 28903,
+      "sha256": "38556a9294a254b3e310c187a344b17218391fb6956c227a29d4e1fbef1c139a"
+    },
+    {
+      "path": "mutation_v2/metric_primitive.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/metric_primitive.stdout.txt",
+      "bytes": 4340,
+      "sha256": "b98f1c848bef83258828aa503989ff17f8951113ba61cc3ecb335af14d9727e8"
+    },
+    {
+      "path": "mutation_v2/metric_slip_sign.py",
+      "bytes": 28918,
+      "sha256": "611672eac1241d5a053b85883066c5ea49ac3cf965a0a21ba456af26f74050e0"
+    },
+    {
+      "path": "mutation_v2/metric_slip_sign.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/metric_slip_sign.stdout.txt",
+      "bytes": 308,
+      "sha256": "b8a050a7f1028f9624488c3853897aae59cb01be6960409a9ec048b722cdc1e5"
+    },
+    {
+      "path": "mutation_v2/mobius_second_offset.py",
+      "bytes": 28918,
+      "sha256": "467924510ad61722c608d713212c9ab6160f5c21f76698dd584778b04dbdf679"
+    },
+    {
+      "path": "mutation_v2/mobius_second_offset.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/mobius_second_offset.stdout.txt",
+      "bytes": 182,
+      "sha256": "b85bd56dc64baa2713c9847d3815bd126ef1c301d29fec6cd543b9ce233f2d87"
+    },
+    {
+      "path": "mutation_v2/observed_slip_normalization.py",
+      "bytes": 28916,
+      "sha256": "47972885a9eecc6d622669a4c7106f71faf5be4b8f8329a566ebd239ac163aad"
+    },
+    {
+      "path": "mutation_v2/observed_slip_normalization.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/observed_slip_normalization.stdout.txt",
+      "bytes": 107,
+      "sha256": "91b428ed0bb1a6b0ad445406f42d276820bac8277c5a906751049bd9febe42d8"
+    },
+    {
+      "path": "mutation_v2/positive_q_gate.py",
+      "bytes": 28919,
+      "sha256": "8e53cdcaa3629f4ea5ac55823d4ad84b9d66760aa2842adc8013ad5e0005d9cb"
+    },
+    {
+      "path": "mutation_v2/positive_q_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/positive_q_gate.stdout.txt",
+      "bytes": 347,
+      "sha256": "7a102fb53e4337563a9ce430d1660973fd3fb2dcbfc159190924350c7bf16cdb"
+    },
+    {
+      "path": "mutation_v2/potential_rolling_coefficient.py",
+      "bytes": 28918,
+      "sha256": "5dd2dd21de8febc924a34d457372cec960b83017cebf35bfbe00f5a56fe1fc84"
+    },
+    {
+      "path": "mutation_v2/potential_rolling_coefficient.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/potential_rolling_coefficient.stdout.txt",
+      "bytes": 165,
+      "sha256": "0e760a5127b048044dad519a19a65a618257dd2fdc32bbc95ade1d19ae028747"
+    },
+    {
+      "path": "mutation_v2/potential_time_derivative.py",
+      "bytes": 28918,
+      "sha256": "14915811fceb5a6b41bc7026769822a50080a18fa013eac7ff177bcf1d38bec5"
+    },
+    {
+      "path": "mutation_v2/potential_time_derivative.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/potential_time_derivative.stdout.txt",
+      "bytes": 3375,
+      "sha256": "e74057013b7f72fc4be3e34df069d0f4d99097dc3e5de2378382478914fd9eae"
+    },
+    {
+      "path": "mutation_v2/sampled_density_gate.py",
+      "bytes": 28908,
+      "sha256": "44540a351331d2c0730fc7c7d42e4133a4d8546ffae0116ec84fda4f84f93f8e"
+    },
+    {
+      "path": "mutation_v2/sampled_density_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/sampled_density_gate.stdout.txt",
+      "bytes": 147,
+      "sha256": "e053542c969a37a001ebf1086cd7ee9afe982e442e95bdba6c68e57092ca96bb"
+    },
+    {
+      "path": "mutation_v2/sampled_exact_boundary.py",
+      "bytes": 28894,
+      "sha256": "8c5d773229978981feeb0b9791ff285b698fdab5d568c1cfa4bd175007ebd18f"
+    },
+    {
+      "path": "mutation_v2/sampled_exact_boundary.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/sampled_exact_boundary.stdout.txt",
+      "bytes": 150,
+      "sha256": "4e953c01c0cda88cd765a6bfb69145be566ab3c993f97a46c347ff68fa688075"
+    },
+    {
+      "path": "mutation_v2/sampled_pole_gate.py",
+      "bytes": 28887,
+      "sha256": "8bf5cef68c39d9a55dfc2696b46ca561abb5157f9093577dc3711efc6a00d297"
+    },
+    {
+      "path": "mutation_v2/sampled_pole_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/sampled_pole_gate.stdout.txt",
+      "bytes": 339,
+      "sha256": "6878f9e672efec2059434dea41c8df01426a9183221e89eeb476142c703ee224"
+    },
+    {
+      "path": "mutation_v2/scalar_pole_mass.py",
+      "bytes": 28920,
+      "sha256": "60081d2a757ed1ddbc782903b22de537833accb57c9b9cd35b85eba33a9936d2"
+    },
+    {
+      "path": "mutation_v2/scalar_pole_mass.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/scalar_pole_mass.stdout.txt",
+      "bytes": 176,
+      "sha256": "8b92bd6e002b1fad525e1a2a1c91687919cf289405a590e4d8a2c6b8b050aa64"
+    },
+    {
+      "path": "mutation_v2/tensor_orientation.py",
+      "bytes": 28922,
+      "sha256": "3e373ae64016ea7278f47b0bd21f72ffb953b749ad2d1bc6ba4c4c010caf45fa"
+    },
+    {
+      "path": "mutation_v2/tensor_orientation.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutation_v2/tensor_orientation.stdout.txt",
+      "bytes": 96,
+      "sha256": "dd33bf337929c6c144dec626057e59ee984fa03adcbed214925f6dbee19b4618"
+    }
+  ],
+  "omissions": [
+    {
+      "path": "__pycache__/growth_inverse_v2.cpython-312.pyc",
+      "bytes": 9674,
+      "sha256": "7813491c7cf3854a5c87c91b51c80dd6bb84c71bae3399d2976fa887b2df6be7",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "independent_source_v1/page_renders/act_boss_eg_p03.png",
+      "bytes": 252635,
+      "sha256": "7595564e0334c21931f1bcfbc258021e7be826f1c20abfcffe1eddb88a63f076",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/act_boss_eg_p04.png",
+      "bytes": 285296,
+      "sha256": "e2dd20e054e25a768a6fa6df3d70b774c0832bb92dcaaac0daff53c5cd2e8dd7",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/act_boss_eg_p21.png",
+      "bytes": 282427,
+      "sha256": "6a11997e045574a016b351278600559e2ac48eb86112bfd1250f407ae4475e25",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/observables_p03.png",
+      "bytes": 284660,
+      "sha256": "89cda01dec2e3e6c2c285754cd0e4d44ff53a1ddea9534c927578c9782839919",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/observables_p04.png",
+      "bytes": 294927,
+      "sha256": "5c986b68b1b85ea0f223b9fd121b57ff65ba3daaa812696d19aa59fe3ba9675a",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/observables_p05.png",
+      "bytes": 277640,
+      "sha256": "2831edd0c233fee41386d92bc7690a561fc6323780cb10d7b8f8a8df096c2b6a",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/precision_estimator_p04.png",
+      "bytes": 291904,
+      "sha256": "5b63fe1a52736ca14307034943b670123d7ecc8d289c6cfc0b8bb7cb32e6e13a",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/precision_estimator_p17.png",
+      "bytes": 223405,
+      "sha256": "34a2b2c9efd3512f947339e1f5ddea5889c14ddaff2885ff7bb831df5eafa5eb",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/page_renders/precision_estimator_p18.png",
+      "bytes": 278868,
+      "sha256": "96a611f30bb18bc2290deed6ae3ef5424a60ab398a2d53da9f6dd03f3b10df03",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/act_boss_eg.pdf",
+      "bytes": 1645611,
+      "sha256": "cd068e0555f7f1dc3a65ecae728ae26400a24cfd58965fd7ca9301b105fc9664",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/act_boss_eg_abs.html",
+      "bytes": 48268,
+      "sha256": "458c4866455840a5dcc05d294510ec8b528f8543f86fb5b76d3168c5dfacfc0e",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/act_boss_eg_text.txt",
+      "bytes": 146449,
+      "sha256": "5788d2c60931add43d9d60a2b6c9ab17ad6c70dcfe9653f743581f25f69e5f73",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/lambda_act_lensing_map_info.html",
+      "bytes": 19129,
+      "sha256": "c01ac68fdc4a66fb737d6d1e80bee9cdb17f5db1e9db9b8ef249a7bc67555c7f",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/lambda_act_product_table.html",
+      "bytes": 31245,
+      "sha256": "e52192ba86c71aa601518e220c5b0d46c2675fdb3bc98deb4b6b92d39771225b",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/namaster_readme.md",
+      "bytes": 6766,
+      "sha256": "7b8075611dadf4ea348085d022dabc41e18fe8b939959ed11ff88be8f618758a",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/observables.pdf",
+      "bytes": 216957,
+      "sha256": "86757eab1e9d1d89177c231b544510b746bd83c0fdc78331f5ffda2b37c867fb",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/observables_abs.html",
+      "bytes": 44254,
+      "sha256": "bb53848ab10c9542a4448885ffa6cb57ee089ccd40c85bc3b08207f1357528d5",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/observables_text.txt",
+      "bytes": 40169,
+      "sha256": "f7e683eb08008f8d547451cc1c77a0064517ed5929f946a49a84572cd12d0416",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/planck_pr4_readme.md",
+      "bytes": 1391,
+      "sha256": "a54d2753b5cba75e3fd913b712b137eba747c86beb64fe2aa9a603a3925bd892",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/precision_estimator.pdf",
+      "bytes": 1852417,
+      "sha256": "fc5ecd1a8858ad7e9c2de89f0f5f04603c7e8704ddd3321e17c16aba45523a02",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/precision_estimator_abs.html",
+      "bytes": 47383,
+      "sha256": "e9984773547691fc9879b8724573e7675d5a4b18e39e490028fdb3be238b9d01",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/precision_estimator_text.txt",
+      "bytes": 174532,
+      "sha256": "b9945de91254117cde2b1462f8c3e8e0f1234d9ea312c4a5b473dd278c0a99d9",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/sdss_dr12_lss_index.html",
+      "bytes": 15346,
+      "sha256": "074115bad84b5c3f6ec97375b404f51bf24a258ece5086816f0f197c26a3f379",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/velocileptors_readme.md",
+      "bytes": 5918,
+      "sha256": "355eabbbf62ab268a1a648d912c5a21f29743711874853c9608961e794f58fa9",
+      "reason": "third-party full text or rendered pages: preserve local source material, publish identities/read scope only"
+    },
+    {
+      "path": "mutation_v1/__pycache__/Euler_force_normalization.cpython-312.pyc",
+      "bytes": 54772,
+      "sha256": "25d8b212aa55f21b09ed7a5ab7d04a1f8a5ac1cbbf704458102e535cef865e31",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/Jordan_clock.cpython-312.pyc",
+      "bytes": 54739,
+      "sha256": "32778d2e11daea2029d3c92332c675fe21f6803be11c4e611c15d5aa8679d42f",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/coupling_chart.cpython-312.pyc",
+      "bytes": 54769,
+      "sha256": "35b9afaa8519328d8707009303b417bb55131f1ac127b166d6a3050baf9b34b8",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/density_elimination_coefficient.cpython-312.pyc",
+      "bytes": 54788,
+      "sha256": "7a493821266902da0a639d8e1264c03b344ff34f94b4377f85c486980f661d25",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/dust_metric_continuity.cpython-312.pyc",
+      "bytes": 54708,
+      "sha256": "5b4dc4d33e18d55850a0a9bf93fee71c4050b5f6885da864d6899002fe6de5d2",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/finite_pole_slope.cpython-312.pyc",
+      "bytes": 54768,
+      "sha256": "773df3f1af233d041fbcc07628d3556f92fd29f265443ae9210e91e757c71ce1",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/lift_compatibility.cpython-312.pyc",
+      "bytes": 54765,
+      "sha256": "b0f9299de00f57f745ff082a6f1d4028cdde540ca2ffe348d06c704a0115d464",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/metric_kinetic_density.cpython-312.pyc",
+      "bytes": 54769,
+      "sha256": "311ee4c4d8ac6eb56ef9bb2dfc9dd30c4f7a28f616cd1264d6b4a473f6391a24",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/metric_primitive.cpython-312.pyc",
+      "bytes": 54732,
+      "sha256": "ad78878a83b0665f312e103635009461eb7975737a23432726d0b654822f5aab",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/metric_slip_sign.cpython-312.pyc",
+      "bytes": 54763,
+      "sha256": "2ca29d379ccfedbe15c764d71840098764bf7728fe4b4d08f72a778f0212ad69",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/mobius_second_offset.cpython-312.pyc",
+      "bytes": 54767,
+      "sha256": "c1822ab1fee7adb10f419371dde5294e58e3a4150e7cb8ae1096056102fe1682",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/observed_slip_normalization.cpython-312.pyc",
+      "bytes": 54764,
+      "sha256": "8d1f9eb89745778f2a6cd5359cc1cfa258f7bfaf720f38fb1d5951add1be2c42",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/positive_q_gate.cpython-312.pyc",
+      "bytes": 54762,
+      "sha256": "d8ce38bbce8d3ac7c3620f9ad824383d9ca100af0a3e591987700035e64c32ee",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/potential_rolling_coefficient.cpython-312.pyc",
+      "bytes": 54771,
+      "sha256": "ac05e33e6d5c4d8228f6f5843e3812d19fa2d28f0f61beb6a0da0c3629c7f547",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/potential_time_derivative.cpython-312.pyc",
+      "bytes": 54772,
+      "sha256": "cd493d312a5cd8aa3b7fe48359abc5ebeb8454b9487a5607e2c0fc474c6fac73",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/sampled_density_gate.cpython-312.pyc",
+      "bytes": 54723,
+      "sha256": "d94002a86c3b6df462cb6886815baf8a6aa518d89d470fb7bd9fca4ec0c95fb6",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/sampled_exact_boundary.cpython-312.pyc",
+      "bytes": 54655,
+      "sha256": "ae6027861dfa323f005c58675beb6774292493b460ff4290ecbe31d91f1de263",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/sampled_pole_gate.cpython-312.pyc",
+      "bytes": 54695,
+      "sha256": "60d1700141366cf2d62c8378c9bed0ae90cf19d3037cc896e53cca80ec2a0aa5",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/scalar_pole_mass.cpython-312.pyc",
+      "bytes": 54775,
+      "sha256": "41d11fbf03fe2bc6ac8066199a6efbd94049feb2a22bd913dc5035c7f8305353",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v1/__pycache__/tensor_orientation.cpython-312.pyc",
+      "bytes": 54775,
+      "sha256": "79d654fea3894317a723aafc00557f01b730b8e936110c3ffd8bc647cb4a33c1",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/Euler_force_normalization.cpython-312.pyc",
+      "bytes": 57111,
+      "sha256": "a42f1d4ca83060529b0362b95c87428566c09eb418728f51ba3e0ddfb3928545",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/Jordan_clock.cpython-312.pyc",
+      "bytes": 57078,
+      "sha256": "2c9313ed288b707f79289abed335cfddac684105ce23aa772a49fd0f12026d17",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/coupling_chart.cpython-312.pyc",
+      "bytes": 57108,
+      "sha256": "021d80a0044ca309a8c96dc88a81f309d0fcab225c00a76e725affb927358b03",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/density_elimination_coefficient.cpython-312.pyc",
+      "bytes": 57127,
+      "sha256": "8ff94dbb99072484f3989aa28390b04a35f2c96d8ca5d855b9bc5e781a7e811b",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/dust_metric_continuity.cpython-312.pyc",
+      "bytes": 57047,
+      "sha256": "bc65c52ca451f1c75a182d9080a15a24fc67669c5a3d23fa1d92d0480de902db",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/finite_calibration_gate.cpython-312.pyc",
+      "bytes": 56774,
+      "sha256": "9a32ff1d1cab8c12c9c0a12f9e3d00f3e5160ec7173841c1c9ba7b9f5fe2ef70",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/finite_pole_slope.cpython-312.pyc",
+      "bytes": 57107,
+      "sha256": "457e0eff6cae97ab9565a85925d1b398de5e992fa0696f154766ae1b5e9381d2",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/finite_residual_gate.cpython-312.pyc",
+      "bytes": 57075,
+      "sha256": "37b4c8350a375627cab6e1d729e1a7e4a2082dd7bb613a34aaf745ff28e7d979",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/later_finite_readout_gate.cpython-312.pyc",
+      "bytes": 56987,
+      "sha256": "b5a4addd97540792a67453a9e9dad8789153e0e3d09a1b2cd1531eadb69625f6",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/lift_compatibility.cpython-312.pyc",
+      "bytes": 57104,
+      "sha256": "8ea518408caa3af5680e23ebec47b9f57d0614107bbafbc67266d9163a57f6b3",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/metric_kinetic_density.cpython-312.pyc",
+      "bytes": 57108,
+      "sha256": "48997c78273f48f88dbe61357d526d0722b922fb38c16026f21ab3d8b59f29dd",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/metric_primitive.cpython-312.pyc",
+      "bytes": 57071,
+      "sha256": "270288b7d83c7b4a7a7b5f8e2589fbee9fcc462eaeceef6bba0a936a6bab01c8",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/metric_slip_sign.cpython-312.pyc",
+      "bytes": 57102,
+      "sha256": "67bb9602a2a2976032b0bdb89b901ac5a2c0235f17cf07812d04614fd95abe8c",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/mobius_second_offset.cpython-312.pyc",
+      "bytes": 57106,
+      "sha256": "489cda2477c2a70feb0dc5b9a211e429961d4c8d559cb3e1334a68e06890aa0f",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/observed_slip_normalization.cpython-312.pyc",
+      "bytes": 57103,
+      "sha256": "c843bb4b2f6dd8c34c5c107df1b53024ef6bd411250fc375a3c61137cc8f15bb",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/positive_q_gate.cpython-312.pyc",
+      "bytes": 57101,
+      "sha256": "6c25696eac2d30a3f5c7a988072cbc8ed831a43c1843526a93328e791158194c",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/potential_rolling_coefficient.cpython-312.pyc",
+      "bytes": 57110,
+      "sha256": "029c93df9ba47edebaabf5f9156b1ff1995a7577af9cd3d1849a3554f34e0c9e",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/potential_time_derivative.cpython-312.pyc",
+      "bytes": 57111,
+      "sha256": "222be43323a46a2683b766ddc0045cf52a4ea15e48783a23e8a2e027a42a5e99",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/sampled_density_gate.cpython-312.pyc",
+      "bytes": 57062,
+      "sha256": "eb1210e8aedfb50a1f03baca556f3fee818945a1d25807a949859275b678cd6a",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/sampled_exact_boundary.cpython-312.pyc",
+      "bytes": 56994,
+      "sha256": "0816de8c681289ca5a3d49e5c11552553bc7707c7fdf9e76bd023957c746ae0b",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/sampled_pole_gate.cpython-312.pyc",
+      "bytes": 57060,
+      "sha256": "2c22e5deeba872ecb7d72ecf8a3ea2f748a575c12c131606ba799daf1886ede5",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/scalar_pole_mass.cpython-312.pyc",
+      "bytes": 57114,
+      "sha256": "6fd599261de4eb9234089507d77dcf6f5e92f9ba45fee69938ecf4f705883124",
+      "reason": "generated bytecode"
+    },
+    {
+      "path": "mutation_v2/__pycache__/tensor_orientation.cpython-312.pyc",
+      "bytes": 57114,
+      "sha256": "cb5109fd4612af4b870134139107a32fd3a5c7238436d1b4ebe17037aceb72c8",
+      "reason": "generated bytecode"
+    }
+  ],
+  "scope": "Immutable working calculations, original failures, actual mutation sources/outcomes and focused independent evidence. Later final delivery binding lives separately. Third-party full text and bytecode explicitly omitted, originals preserved locally."
+}

@@ -1,0 +1,7 @@
+# Intended light-response fixture confirmation
+
+This supplements the immutable BACKGROUND_REVIEW_v1.md, SHA256 `dfdbe3223e0038563f33a43cab621332c995df78c320615c6f369c676b8e75b5`. After that report was frozen, root explicitly confirmed that the intended and implemented fixture is the massless/light reduced response r=q. Therefore the report's conditional exact rejection applies to the intended fixture. It remains a rejection of those two manufactured readout assignments as full background-plus-Euler solutions, not an empirical theory rejection or a result for an unspecified finite-range slip.
+
+I copied and inspected the two background-failure rows in EXTENDED_RESULTS_v1.json (SHA256 `c9a0e24f7e2757795df9aeb0044209c88c014d92b84ab9ab44432b795be0bd67`). Both necessary Y0 values equal the independent exact values. Both author Euler residuals are exactly one-half the independent residual, as required by the author's normalization Y'/2+2Y−(3/2)exp(-3N)P(1+q). Exact Fraction comparisons verify this equality without executing either scientific implementation.
+
+The author residuals are -43561803701691/156212523334720 and -541963083069/1855997211505. Both are nonzero. This check does not extend to the other 46 checks or to the parent executable; those were not independently rerun here. The canonical note is expected to state r=q explicitly, but no canonical source was supplied or reviewed in this supplement. No earlier report or failure was overwritten.

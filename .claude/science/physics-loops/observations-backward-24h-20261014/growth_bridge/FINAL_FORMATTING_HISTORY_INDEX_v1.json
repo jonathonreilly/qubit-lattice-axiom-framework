@@ -1,0 +1,72 @@
+{
+  "archive": "FINAL_FORMATTING_HISTORY_v1.tar.gz",
+  "sha256": "65ce09ed2a71a37bce8cfa9a83bac0461720a22a24728eb3c5ccfcaed5e61dc4",
+  "members": [
+    {
+      "path": "scripts/scalar_growth_lensing_inverse_check.py",
+      "sha256": "fdd2279ac3315d909b44aa65ce8e2989933908d6c874ed6abc588ab588ac3c11",
+      "bytes": 3933
+    },
+    {
+      "path": "scripts/scalar_growth_lensing_inverse.py",
+      "sha256": "8411d1eb3ad2d3fcc5e4549684e3136e872e5cabb891e9da5ab4a671c6db718a",
+      "bytes": 28917
+    },
+    {
+      "path": "docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7",
+      "bytes": 20485
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json",
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088",
+      "bytes": 1689
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd",
+      "bytes": 8087
+    },
+    {
+      "path": "outputs/scalar_growth_lensing_inverse/RESULTS_v1.json",
+      "sha256": "1d0f5595548054fcabb041378fa984292e5e1ce46eebadb525edbf13d6c41b67",
+      "bytes": 63674
+    },
+    {
+      "path": "outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json",
+      "sha256": "e677dc06549089529db5f05c61f4107afa3575c6a73eda0af9348921f23d7e53",
+      "bytes": 3238
+    },
+    {
+      "path": "logs/runner-cache/scalar_growth_lensing_inverse_check.txt",
+      "sha256": "96bbcb34ffd24e2c8febe4191a08d1c4f7387a97da1fafb13c0939168809fc56",
+      "bytes": 4088
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_EXECUTION_v3.json",
+      "sha256": "c0effeda2ed14fce1da2fe1f6721a2807d28cc7397452cc42c7f920524d7ff50",
+      "bytes": 5101
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_SOURCE_FREEZE_v3.json",
+      "sha256": "3f292c4b9385814ffb9def5748c1df53bef3b4a4c101f3a7dbb798ccabd01fca",
+      "bytes": 1395
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/REVIEW_RECORD_v1.md",
+      "sha256": "ca7833f31b40cc16ce6054b0040a1411af4fad5177039e3b7ef248cfeea3b5bc",
+      "bytes": 12232
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CONFORMANCE_v1.md",
+      "sha256": "1872bb78ed8b8c5903848b72b9944379d65e8e0456be3a885718a41178d3b9b0",
+      "bytes": 4844
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FINAL_WHITESPACE_BINDING_v1.json",
+      "sha256": "0300020be9b4382cce025702fc540ab458b7a4e11fee9ff9b01ecb67d3c5362f",
+      "bytes": 1130
+    }
+  ],
+  "scope": "Interim v3 envelope and source preserved before one Markdown inline-code repair. These are not failures or new scientific outcomes."
+}

@@ -155,3 +155,11 @@ Root read the complete twelve-section `REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` and c
 | 12 Focused/combined | Focused compilation, vocabulary, source/cache, graph, links and constituent diff checks run on this unit. Full pipeline, strict lint and changed-evidence checks are deferred, not passed, pending the shared integrated-current-main landing pass. |
 
 Final publication identity is recorded in the runtime delivery receipt after staging. Unchanged historical evidence is not relabeled as current author execution; compressed snapshots are archival evidence. All three earlier campaigns stay stopped and the fixed deadline is unchanged.
+
+## M12 final delivery and publication — 2026-10-15T12:29:43.754333+00:00
+
+The complete final report `79ff46441be17d780cd0602a2b832c47b35b8e9b03919b22e5ec46196d75e4f3` and identity `cdf65dd6b2e7b497b8d8c41823b244f982b1e7f91e5909a065a5dc00219894b3` were read by root and bind the reviewed tree `da5141a83591572945caf29f5eaf95c176c6be27` to committed head `e2873beca6af9954be49c4a9bbe8d98f05c9e69b`. No discrepancy was reported. The frozen 73-path constituent is published as [PR #9603](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9603) and attached. This is a mechanical delivery check plus prior scoped scientific reviews, not integrated landing validation or a formal audit. The original numerical and tooling failures remain preserved. Postpublication state is recorded only on the new continuation branch `codex/observations-backward-growth-20261015`.
+
+### Growth/lensing focused source review — 2026-10-15
+
+Root read complete independent mathematics, background, forward, primary-source and cluster reports. The exact negative-q witness, rounded boundary/infinite B-C admission, evaluated rejected pole and nonfinite later-P false acceptance were preserved and repaired. The final mathematical helper has143 passing controls and23 rejected mutations (18 explicit check failures,5 exceptions). A separate six-case implementation agrees with all36 synthetic rows. The cluster judgment is OPEN for one coherent theorem chain; final source/cache and artifact delivery binding follow separately. These focused checks apply no audit verdict and do not replace shared integrated-current-main landing validation.

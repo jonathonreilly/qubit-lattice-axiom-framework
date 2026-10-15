@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-15T13:07:00.531581+00:00",
+  "type": "Focused post-exposure v2 classification and q-domain repair check",
+  "new_controls": 14,
+  "new_control_failures": 0,
+  "original_negative_q_function_rejections": 2,
+  "aggregate_run": false,
+  "background_closure_reviewed": false,
+  "pending": "Later source wording must explicitly gate eq4 on varying J/nonconstant observed q; reviewed source already separates constant-q branch.",
+  "files": {
+    "AUTHOR_WORKING_v2.md": {
+      "sha256": "0aad424f1fd7fe582c7005edab096e7e0a3787ef8ef84ca2ccd813d3490a6397",
+      "bytes": 9173
+    },
+    "AUTHOR_V2_EXPOSURE_FREEZE_v1.json": {
+      "sha256": "b18bf39d7fc1f6e0b4cd9fe032004eabbedd66ebcf9373e5cc0bb7ab6a0d96a4",
+      "bytes": 513
+    },
+    "AUTHOR_growth_inverse_v2.py": {
+      "sha256": "fefc0b0552ce7baef474d018ea4f60bd5437ec5d7fdfa51b116b57e2b1d80e01",
+      "bytes": 4708
+    },
+    "AUTHOR_CODE_V2_EXPOSURE_FREEZE_v1.json": {
+      "sha256": "cfef98460230502cf814649c6e7cd027d343ef56090ef23edba912ca02c9d6e4",
+      "bytes": 501
+    },
+    "interval_v2_checks_v1.py": {
+      "sha256": "704e4fd8b79069ff093dfca822102514471ddb09d1ac3346c88e77ff23ec02bf",
+      "bytes": 4099
+    },
+    "INTERVAL_V2_CONTROL_FREEZE_v1.json": {
+      "sha256": "ac1b8c1c9c42e1b2670817966e099f580aa6a133a22c19dffcffc7acb1f63174",
+      "bytes": 371
+    },
+    "INTERVAL_V2_CHECK_RESULTS_v1.json": {
+      "sha256": "ef5ab8a9ac5357f6d9a41b757a76a77ab97ef57f1b5be7b693ffbe7b63430f83",
+      "bytes": 1856
+    },
+    "Q_DOMAIN_REPAIR_CHECK_v1.json": {
+      "sha256": "647a16450c1b5c4cabf0a359f9a90ba029cc6220f08aaaf6b864541d88bd6223",
+      "bytes": 639
+    },
+    "SOURCE_COMPARISON_v2.md": {
+      "sha256": "89aa7b599f7fc73a3e9031af793f1118aa4b1754d42839233ecbfa20f8f2802e",
+      "bytes": 8849
+    }
+  }
+}

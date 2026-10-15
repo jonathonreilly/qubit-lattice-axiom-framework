@@ -64,3 +64,5 @@ M11 published 2026-10-15T11:07:17.193934+00:00: [PR #9600](https://github.com/jo
 ## M12 proposed review unit
 
 Current branch codex/observations-backward-selection-20261015 is stacked on frozen M11 codex/observations-backward-discrepancy-20261015 at5a73333518a13640c6a99cbcb01c31342c519fd3. The mathematics is self-contained; the stack preserves the shared campaign history rather than treating receiver inference as an action premise. New note and two scripts, frozen synthetic protocol, original failures and scoped evidence form a coherent conditional-support unit. Source/evidence conformance and cluster judgment precede PR creation. No merge or main push.
+
+M12 published 2026-10-15T12:29:43.754333+00:00: [PR #9603](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9603), regular/open/mergeable,73 paths,head `e2873beca6af9954be49c4a9bbe8d98f05c9e69b`,base M11 `5a73333518a13640c6a99cbcb01c31342c519fd3`. Attached. No M12 publication backlog. Current continuation: `codex/observations-backward-growth-20261015`; next physical-history input-map block is planned, with no new discovery result yet.

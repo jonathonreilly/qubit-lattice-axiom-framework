@@ -1,0 +1,34 @@
+{
+  "at": "2026-10-15T13:06:29.477973+00:00",
+  "scope": "Parent confirmed intended r=q; exact comparison of only two author background-failure rows after independent freeze",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_background_v1/FIXTURE_SCOPE_CONFIRMATION_v1.md",
+      "bytes": 1469,
+      "sha256": "818b608aa78ecc5147c3157f8e58bf028fa562c0ce32d5d8ed7fee86e891ee94"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_background_v1/AUTHOR_EXTENDED_RESULTS_v1.json",
+      "bytes": 7619,
+      "sha256": "c9a0e24f7e2757795df9aeb0044209c88c014d92b84ab9ab44432b795be0bd67"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_background_v1/BACKGROUND_REVIEW_v1.md",
+      "bytes": 6502,
+      "sha256": "dfdbe3223e0038563f33a43cab621332c995df78c320615c6f369c676b8e75b5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_background_v1/BACKGROUND_IDENTITY_v1.json",
+      "bytes": 3379,
+      "sha256": "1e0b849053910ca24834be0af6bce450e2aa1b85e12de44debb7d185e305db71"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_background_v1/INDEPENDENT_RESULTS_v1.json",
+      "bytes": 3489,
+      "sha256": "ad5e11315ff815cf74d560d8fc15f48c5df3a30c74986cde700a6956b10e5bd6"
+    }
+  ],
+  "both_Y0_equal": true,
+  "both_author_residuals_exactly_half_independent": true,
+  "formal_audit": false
+}

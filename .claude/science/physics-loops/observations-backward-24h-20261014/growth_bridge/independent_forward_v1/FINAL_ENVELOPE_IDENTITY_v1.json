@@ -1,0 +1,136 @@
+{
+  "timestamp_utc": "2026-10-15T13:39:38.580021+00:00",
+  "scope": "Final source/cache/product binding; no scientific rerun. Current helper repair confirmed separately; historical artifacts not relabelled.",
+  "artifacts": [
+    {
+      "path": "FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "bytes": 4424,
+      "sha256": "b7c566d14fb039e4dd80e25510a407e5d50ace7ef8b119cbc402eee1e37b0e88"
+    },
+    {
+      "path": "FINAL_ENVELOPE_SNAPSHOT_v1.json",
+      "bytes": 3011,
+      "sha256": "ed3ccbdcf09725f86be83b39eef3fa5bacb27c76b0cdb0d8c12059759156bb9e"
+    },
+    {
+      "path": "FINAL_PRIMARY_METADATA_DELTA_v1.patch",
+      "bytes": 1685,
+      "sha256": "9044d9f82e775f33d133803b2e3aeb50e5dbc90a68555c79c68c2a3f6876e610"
+    },
+    {
+      "path": "final_envelope_check_v1.py",
+      "bytes": 6868,
+      "sha256": "1ebe683afe3fabb446c21589c68462b46290e884573e73aaaba754a5059d8bc4"
+    },
+    {
+      "path": "FINAL_ENVELOPE_CHECK_FREEZE_v1.json",
+      "bytes": 257,
+      "sha256": "40166c6306d148b648611b63b9ba18aca1f357e2bdbcf438fcf128668e9423c4"
+    },
+    {
+      "path": "FINAL_ENVELOPE_CHECK_RESULTS_v1.json",
+      "bytes": 6077,
+      "sha256": "795eda1dcbf9643b0efeace38b49f7b01d2a0e3de1076bc1a68c7b0b54bd5aea"
+    },
+    {
+      "path": "CANONICAL_FORWARD_REPAIR_CONFIRMATION_v2.md",
+      "bytes": 3510,
+      "sha256": "0be47c67165b358389282854fb17693e49062e7d24799294c43cb998732100cc"
+    },
+    {
+      "path": "CANONICAL_FORWARD_REPAIR_IDENTITY_v2.json",
+      "bytes": 2554,
+      "sha256": "7a15649bf6548a19da674c2afcb3e36ed33330a4b5007f8d97b08be300f0dd2b"
+    },
+    {
+      "path": "CANONICAL_FORWARD_REVIEW_v1.md",
+      "bytes": 7807,
+      "sha256": "de3d6be270282b89f16f16b9e1cbc022974ed48f4dd7a778b9130dd5b81718c3"
+    },
+    {
+      "path": "CANONICAL_FORWARD_IDENTITY_v1.json",
+      "bytes": 2672,
+      "sha256": "d5d021ec840c77f4bcfba2a294f04752615da685f41262656a5bfb28a557a464"
+    },
+    {
+      "path": "FORWARD_REVIEW_v1.md",
+      "bytes": 9292,
+      "sha256": "f0cfd9e33c8550e8a841ce30c77093fb4eb2ebc8a6592cef6f98d4995a7b90c2"
+    },
+    {
+      "path": "FORWARD_IDENTITY_v1.json",
+      "bytes": 9946,
+      "sha256": "ebdfebf861f9687f39df8dfc83b11ce5aff6bdadcfbaf8f230e51b67ed403fa2"
+    },
+    {
+      "path": "NONFINITE_READOUT_WITNESS_v1.json",
+      "bytes": 919,
+      "sha256": "95cc0ef7c051015488ac6f5ddf0d34b3a0bd1ca66434e06124fa59e35df0a6c3"
+    },
+    {
+      "path": "final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_EXECUTION_v1.json",
+      "bytes": 4394,
+      "sha256": "10e769786a98694250a4d3b334f7875ec0f7ad3cf69d5c947702313e64d4d26d"
+    },
+    {
+      "path": "final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_EXECUTION_v2.json",
+      "bytes": 785,
+      "sha256": "17eb3e1eb97ba91d5c3eb56a0440f1ee99c318f8f84a1643213943a4043bf34b"
+    },
+    {
+      "path": "final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_RECEIPT_SERIALIZATION_FAILURE_v1.json",
+      "bytes": 395,
+      "sha256": "df999d27981c8b413aa81b1502e8f35dc344d60e83bbee291054b3fa8f4c22d1"
+    },
+    {
+      "path": "final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/CANONICAL_SOURCE_FREEZE_v2.json",
+      "bytes": 1306,
+      "sha256": "8281a3800a31c1149bbe29fa78618fbe5b9293aa0b503a72b67076a2706786c5"
+    },
+    {
+      "path": "final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 8087,
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd"
+    },
+    {
+      "path": "final_envelope_v1/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/canonical_v1_before_domain_repairs/RESULTS_v1.json",
+      "bytes": 61117,
+      "sha256": "1fe69fbd92eceb161400867025f9d36962321cde7fb10ec697ca6e06f8048ff4"
+    },
+    {
+      "path": "final_envelope_v1/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "final_envelope_v1/logs/runner-cache/scalar_growth_lensing_inverse_check.txt",
+      "bytes": 4088,
+      "sha256": "db3e65c51773a98982f9be700b80260ae940de379d79e5ed72372b0d7d4cd464"
+    },
+    {
+      "path": "final_envelope_v1/outputs/scalar_growth_lensing_inverse/RESULTS_v1.json",
+      "bytes": 63674,
+      "sha256": "a6d4a713177615c5db4a360aa2e9080168b9a525329edc5b8ce9c588f8e6b92a"
+    },
+    {
+      "path": "final_envelope_v1/outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json",
+      "bytes": 3238,
+      "sha256": "60a921920f53d81f00c7c084da5f517b31e2321a556e24d09f84da0c3b40d046"
+    },
+    {
+      "path": "final_envelope_v1/scripts/scalar_growth_lensing_inverse.py",
+      "bytes": 28918,
+      "sha256": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4"
+    },
+    {
+      "path": "final_envelope_v1/scripts/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3933,
+      "sha256": "fdd2279ac3315d909b44aa65ce8e2989933908d6c874ed6abc588ab588ac3c11"
+    }
+  ]
+}

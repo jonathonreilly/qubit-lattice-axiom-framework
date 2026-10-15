@@ -48,3 +48,7 @@ The attempted scale-elimination route succeeds mathematically only with the expl
 - Bianchi does not supply the scalar equation on a constant-F interval. An exact dust-plus-Lambda metric witness exposes the missing trace equation. This is not an observed cosmological exclusion and does not rule out radiation/vacuum plateaus or full transverse motion.
 - Binary64 parameter recovery fails original case9 for nu despite passing later synthetic residuals. The original90/1 result remains immutable. Higher-precision arithmetic on rounded inputs still fails. Higher-precision source assembly diagnoses lost input digits; it is not a source of measured precision or a certified trajectory.
 - Two fitted epochs neither test the full kinetic/potential shape nor establish the exact whole-interval truncation. Approximate equality needs a new quantitative result before inferring small transverse fields.
+
+### Growth/lensing inverse — 2026-10-15
+
+No theory-wide no-go is asserted. The explicit two-shape interval witness refutes uniqueness only for the named reduced readouts and hypotheses. Its full-background failure is separately derived under r=q. A non-Mobius q(J) gives at most one shape under the exact varying-J chart assumptions, without a finite-noise identifiability theorem. Large K/H alone does not bound free scalar oscillations; the controlled dynamical route remains open. Five materially different attempted routes and complete N1-N8 scope answers are preserved in growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md.

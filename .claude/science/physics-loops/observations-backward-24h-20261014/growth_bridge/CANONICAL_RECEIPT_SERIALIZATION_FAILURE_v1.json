@@ -1,0 +1,5 @@
+{
+  "at": "2026-10-15T13:34:28.003627+00:00",
+  "failure": "Root orchestration receipt serialization encountered PosixPath in result.live_log after canonical execute_and_write_cache completed. Canonical output/cache preserved, receipt recovered from unchanged machine cache. No scientific rerun.",
+  "canonical_cache_sha256": "db3e65c51773a98982f9be700b80260ae940de379d79e5ed72372b0d7d4cd464"
+}

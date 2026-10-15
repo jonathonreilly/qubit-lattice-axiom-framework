@@ -1,0 +1,28 @@
+{
+  "scope": "Supplied full radial background plus an explicitly conditional light, quasistatic single-mode perturbation closure. Exact dust continuity term retained. Synthetic computational checks, never observations or exact full-action perturbations.",
+  "author": "/root",
+  "cases": [
+    {"k": 0.06, "nu": 0.4, "Q0": 2.0, "Hv": 0.17, "u0": -1.2, "v0_over_Hv": -0.15, "rhoE_over_QHv2": 0.8},
+    {"k": 0.17, "nu": 1.2, "Q0": 5.0, "Hv": 0.11, "u0": -0.5, "v0_over_Hv": -0.2, "rhoE_over_QHv2": 1.1},
+    {"k": 0.27, "nu": 2.1, "Q0": 0.7, "Hv": 0.23, "u0": 0.2, "v0_over_Hv": -0.1, "rhoE_over_QHv2": 0.6}
+  ],
+  "duration_over_inverse_Hv": 0.35,
+  "mode_K0_over_H0": [40.0, 90.0],
+  "initial_density_and_velocity": [[1.0, 0.6], [0.8, 0.3]],
+  "sample_time_fractions": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+  "calibration_indices": [0, 1, 2],
+  "synthetic_test_indices": [3, 4, 5],
+  "method": "DOP853",
+  "rtol": 2e-12,
+  "atol": 2e-14,
+  "max_step_divisor": 64,
+  "inverse_arithmetic_digits": 60,
+  "shape_relative_tolerance": 5e-6,
+  "B_relative_tolerance": 2e-5,
+  "initial_density_recovery_relative_tolerance": 2e-5,
+  "integrated_identity_relative_tolerance": 2e-9,
+  "metric_potential_relative_tolerance": 2e-8,
+  "slip_absolute_tolerance": 1e-10,
+  "failure_policy": "Record all cases, roots, domain/solver failures and thresholds unchanged. Any later diagnostic gets a new version. More arithmetic on rounded synthetic readouts is not extra observed precision.",
+  "initial_state_status": "Different supplied computational initial conditions exercise the inverse. None is claimed selected by physics. Both modes share the same background but need not share perturbation amplitudes."
+}

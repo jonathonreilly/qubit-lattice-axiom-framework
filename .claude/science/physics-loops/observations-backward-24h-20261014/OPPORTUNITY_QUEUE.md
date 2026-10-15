@@ -78,3 +78,7 @@ Do not generate another variant of the receiver geometry solely to refine spectr
 2. Derive quantitative consequences of approximate kinetic equality for transverse motion and potential contributions using full field equations, rather than replacing exact interval equality with a fit. Need an observation-error supplier and a stability statement; no near-equality claim yet.
 3. Test whether candidate action symmetries or radiative consistency eliminate potential/scale freedom without importing a UV selector. Preserve distinct action classes and any no-go scope; no symmetry is presumed realized.
 4. Reopen receiver calibration only if a track-specific measured transfer/noise supplier adds physical information. More fitted spectral variants alone do not reopen it.
+
+### Growth/lensing next obligations — 2026-10-15
+
+Priority: derive response dynamics while retaining the homogeneous scalar mode and a quantitative approximation residual. Check the unresolved prior conformal potential-sign question from the action before adopting its formulas. Next connect the derived histories to a windowed lensing/RSD forward likelihood, rather than differentiating two survey summary points. Distinguish calibration data, exposed model development and genuine independent tests. Potential/scale selection remains a separate terminal obligation; do not introduce an assumed selector and call it derived.

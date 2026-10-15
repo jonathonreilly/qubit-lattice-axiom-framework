@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-15T13:48:29.106778+00:00",
+  "helper_before": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4",
+  "helper_after": "8411d1eb3ad2d3fcc5e4549684e3136e872e5cabb891e9da5ab4a671c6db718a",
+  "only_change": "Exactly one final newline removed to pass whitespace check; source otherwise byte-identical.",
+  "scientific_values_identical": {
+    "checks": true,
+    "histories": true,
+    "exceptional_pairs": true,
+    "background_failures": true
+  },
+  "canonical_controls": 143,
+  "failed": 0,
+  "cache_sha256": "96bbcb34ffd24e2c8febe4191a08d1c4f7387a97da1fafb13c0939168809fc56",
+  "plain_original_source_report_omitted": ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/REPORT_v1.md",
+  "original_report_retained": "Immutable original local file and397-member work-history archive; no evidence content changed.",
+  "receipt_postprocess_failure": "Initial comparison lookup examined only the top level of a nested reviewer snapshot and failed after successful execution and v3 receipt writes. Corrected exact known nested path, no science rerun."
+}

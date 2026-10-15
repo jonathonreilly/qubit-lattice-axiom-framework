@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "reviewer": "/root/launch_check",
+  "recorded_utc": "2026-10-15T12:53:51.053Z",
+  "scope": "Empirical primary-source input admission only; not theory authorship, statistical reanalysis or formal audit",
+  "author_new_theory_read": false,
+  "papers": [
+    {
+      "id": "2405.12795v2",
+      "version_url": "https://arxiv.org/abs/2405.12795v2",
+      "pdf_url": "https://arxiv.org/pdf/2405.12795v2",
+      "pdf_pages": 31,
+      "full_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27
+      ],
+      "critical_equations_read": "1–20; pseudo-Cl, covariance and transfer/normalization definitions on pp7–10; 42–46; Table II and Figs12–16",
+      "visual_pages_checked": [
+        3,
+        4,
+        21
+      ],
+      "navigation_only": "All-page extracted-text scans for source/data links and relevant headings; bibliography link annotations. This is not full reading of pp11–17,25,28–31.",
+      "sections": "Abstract, introduction, II–IV, initial V methods pp7–10, VI A–D through p24, late VI discussion p26, VII conclusion pp26–27",
+      "limits": "Null/foreground tests not independently rerun; all covariance arrays, map data, posterior samples and exact numerical response matrices unacquired."
+    },
+    {
+      "id": "1210.0439v2",
+      "version_url": "https://arxiv.org/abs/1210.0439v2",
+      "pdf_url": "https://arxiv.org/pdf/1210.0439v2",
+      "pdf_pages": 9,
+      "full_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "critical_equations_read": "1–22; emphasis 8–15,18–22",
+      "visual_pages_checked": [
+        3,
+        4,
+        5
+      ],
+      "sections": "Main text I–VI including assumptions and ideal-observation caveat; appendix heading at bottom of p6",
+      "limits": "Appendix A Horndeski coefficient formulas pp6–8 and bibliography p9 not independently derived or certified. Version fixed by arXiv v2 URL and bytes; PDF header date differs from arXiv revision chronology."
+    },
+    {
+      "id": "2401.12971v2",
+      "version_url": "https://arxiv.org/abs/2401.12971v2",
+      "pdf_url": "https://arxiv.org/pdf/2401.12971v2",
+      "pdf_pages": 36,
+      "full_pages_read": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        17,
+        18,
+        28,
+        29,
+        31
+      ],
+      "critical_equations_read": "1–8; 11–37; 60–61; Figs7 and17; conclusion",
+      "visual_pages_checked": [
+        4,
+        17,
+        18
+      ],
+      "sections": "III conventions; V A–C projection/reweighting and accuracy premise; VI G RSD and beginning VII A ratio likelihood; IX conclusions; Appendix B continuation and Appendix C Fig17 on p31",
+      "navigation_only": "Whole-PDF heading/link scans; other pages not fully read.",
+      "limits": "No code execution, chain retrieval, prior-table rederivation or full statistical-estimator audit. Published numerical summaries are exposed development material, not held-out observations."
+    }
+  ],
+  "documentation": [
+    {
+      "url": "https://lambda.gsfc.nasa.gov/product/act/actadv_prod_table.html",
+      "file": "primary_sources/lambda_act_product_table.html",
+      "read_scope": "Product listings for DR6 maps and derived likelihoods; link metadata; no BOSS E_G-labelled entry on the inspected listing.",
+      "status": "HTML downloaded and inspected; does not establish exhaustive absence elsewhere."
+    },
+    {
+      "url": "https://lambda.gsfc.nasa.gov/product/act/actadv_dr6_lensing_maps_info.html",
+      "file": "primary_sources/lambda_act_lensing_map_info.html",
+      "read_scope": "Entire technical product description, variants, map/mask/noise/filter/simulation interpretation and transfer-function guidance.",
+      "status": "HTML downloaded. Linked NERSC data and tutorial repository located only; no data assets requested."
+    },
+    {
+      "url": "https://data.sdss.org/sas/dr12/boss/lss/",
+      "file": "primary_sources/sdss_dr12_lss_index.html",
+      "read_scope": "Full directory index names/sizes/dates only.",
+      "status": "Browser tool error preserved; TLS-verified direct GET succeeded. No directory data assets followed."
+    },
+    {
+      "url": "https://github.com/carronj/planck_PR4_lensing",
+      "file": "primary_sources/planck_pr4_readme.md",
+      "read_scope": "Current complete README; primary product role and release links.",
+      "status": "README only; no maps/chains/code checkout."
+    },
+    {
+      "url": "https://github.com/sfschen/velocileptors",
+      "file": "primary_sources/velocileptors_readme.md",
+      "read_scope": "Current complete README; description of LPT/EPT RSD, bias/counterterms, AP parameters.",
+      "status": "README only; no installation or execution; not a pinned analysis commit."
+    },
+    {
+      "url": "https://github.com/LSSTDESC/NaMaster",
+      "file": "primary_sources/namaster_readme.md",
+      "read_scope": "Current complete README; masked pseudo-Cl and covariance role.",
+      "status": "README only; no installation or execution; not a pinned analysis commit."
+    },
+    {
+      "url": "https://github.com/LSSTDESC/CCL",
+      "read_scope": "Named URL in ACT p3 and estimator p6, not a repository-source inspection.",
+      "status": "Located from primary paper only."
+    },
+    {
+      "url": "https://portal.nersc.gov/project/act/dr6_lensing_v1/",
+      "read_scope": "Named link in official LAMBDA description only.",
+      "status": "Located only; no linked assets opened."
+    },
+    {
+      "url": "https://github.com/ACTCollaboration/DR6_Notebooks",
+      "read_scope": "Named link in official LAMBDA description only.",
+      "status": "Located only; no notebook executed or retrieved."
+    }
+  ],
+  "exposure": "All paper summaries/figures read are exposed development material; no holdout claim.",
+  "outcome": "Not admitted as a direct continuous P/P3/derivative/F-history supplier. Model-conditioned window-level likelihood use remains possible subject to separately checked theory, numerical release provenance, calibration transfer, covariance and derivative/boundary assumptions.",
+  "failures_and_limits": [
+    "Browser web open of SDSS directory failed; direct verified-TLS GET recovered documentation.",
+    "Targeted release search returned irrelevant results; no negative existence inference is made.",
+    "No exact article-specific numerical bandpower/covariance/window/beta-likelihood release was independently verified.",
+    "No numerical science/control tests were run, so no test PASS/FAIL is asserted.",
+    "No author-theory comparison performed."
+  ],
+  "prohibited_actions_performed": [],
+  "writes_limited_to": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1"
+}

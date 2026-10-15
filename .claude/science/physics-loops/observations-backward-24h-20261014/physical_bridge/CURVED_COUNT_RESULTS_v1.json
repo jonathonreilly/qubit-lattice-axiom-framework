@@ -1,0 +1,194 @@
+{
+  "status": "working mathematical controls; no empirical validation",
+  "checks": [
+    {
+      "name": "conformal_field_equation",
+      "passed": true
+    },
+    {
+      "name": "moving_clock_force_weight_transform",
+      "passed": true
+    },
+    {
+      "name": "physical_initial_energy_cross_term",
+      "passed": true
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_12.001",
+      "passed": true,
+      "eigenvalues": [
+        0.800005714005847,
+        1.4999642889938531
+      ]
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_16.0",
+      "passed": true,
+      "eigenvalues": [
+        0.819205080417909,
+        1.3950806338678055
+      ]
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_50.0",
+      "passed": true,
+      "eigenvalues": [
+        0.8835682616796059,
+        1.178931738320394
+      ]
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_1000.0",
+      "passed": true,
+      "eigenvalues": [
+        0.9698128965914459,
+        1.0331931154326022
+      ]
+    },
+    {
+      "name": "energy_norm_random_controls",
+      "passed": true,
+      "sampled_cases": 80,
+      "range": [
+        0.8288223735838783,
+        1.4646921146170608
+      ]
+    },
+    {
+      "name": "exact_curved_contrast_endpoint_sum",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_initial_position",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_station_initial_velocity",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_spacecraft_initial_velocity",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_initial_clock",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_comparison_constant",
+      "passed": true
+    },
+    {
+      "name": "curved_gram_flat_limit",
+      "passed": true,
+      "expression": "(646969*H**2 - 454020*H + 98700)/(16200*pi)",
+      "angular_cuts": [
+        "-1",
+        "-2/3",
+        "2/3",
+        "1"
+      ]
+    },
+    {
+      "name": "curved_gram_direct_piecewise_control",
+      "passed": true,
+      "comparisons": [
+        [
+          0.0,
+          1.9393324547123543,
+          1.939336316536156,
+          3.861823801631914e-06
+        ],
+        [
+          0.01,
+          1.8513943755533295,
+          1.8513980619503287,
+          3.6863969992140255e-06
+        ],
+        [
+          0.05,
+          1.5250663340720993,
+          1.5250693631037864,
+          3.0290316870296152e-06
+        ],
+        [
+          0.15,
+          0.8872161564531087,
+          0.8872178524647375,
+          1.6960116288045057e-06
+        ]
+      ],
+      "classification": "finite angular quadrature diagnostic, exact polynomial is proof supplier"
+    },
+    {
+      "name": "curved_original_ode_vs_derived_count",
+      "passed": true,
+      "maximum_error": 2.1519505332378858e-10
+    },
+    {
+      "name": "curved_initial_orbit_clock_cancellation",
+      "passed": true,
+      "maximum_error": 3.8284420997391375e-10
+    },
+    {
+      "name": "potential_mode_difference_enclosure",
+      "passed": true,
+      "maximum_ratio": 0.9954713017614398
+    },
+    {
+      "name": "proper_count_endpoint_conversion",
+      "passed": true,
+      "proper_intervals": [
+        1.10525357350099,
+        1.169924133632172,
+        1.242635622140122
+      ],
+      "count_coefficients": [
+        1.09420103776598,
+        -2.1409611645468747,
+        1.0438139225977026
+      ]
+    }
+  ],
+  "checks_passed": 20,
+  "source_sha256": "4a272c55ab3ba6a81b51bd3c1d33519a38cd13bd3b7d3a382c600baf43f79ae2",
+  "working_note_sha256": "84cb8fb11a008f6ca8fd268f20f1dede6d5aaded0b4a206065e93f57acba4ba2",
+  "exact_massless_curved_count_gram": "(646969*H**2 - 454020*H + 98700)/(16200*pi)",
+  "exact_gram_coefficients": [
+    "646969/(16200*pi)",
+    "-7567/(270*pi)",
+    "329/(54*pi)"
+  ],
+  "curved_count_numeric_gram": [
+    [
+      0.0,
+      1.9393324547123543,
+      1.939336316536156,
+      3.861823801631914e-06
+    ],
+    [
+      0.01,
+      1.8513943755533295,
+      1.8513980619503287,
+      3.6863969992140255e-06
+    ],
+    [
+      0.05,
+      1.5250663340720993,
+      1.5250693631037864,
+      3.0290316870296152e-06
+    ],
+    [
+      0.15,
+      0.8872161564531087,
+      0.8872178524647375,
+      1.6960116288045057e-06
+    ]
+  ],
+  "mode_comparison_maximum_ratio": 0.9954713017614398,
+  "limits": [
+    "Fixed vacuum/action and homogeneous linear scalar perturbation only.",
+    "No actual measured H,B,Q, residual, error or energy budget.",
+    "Potential operator high-frequency proof needs independent check."
+  ]
+}

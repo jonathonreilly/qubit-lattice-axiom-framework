@@ -1,0 +1,117 @@
+{
+  "status": "mutation validation only, not independent empirical evidence",
+  "cases": [
+    {
+      "name": "energy_real_factor",
+      "source": "scripts/scalar_massive_response_controls.py",
+      "source_sha256": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+      "mutated_sha256": "43bfac3f20b7ba392d2ed79644f74c6378f7c08cc4a4ce8e8d38653beae35ad8",
+      "old": "expected = 4*np.sum(om**2*abs(a)**2)",
+      "new": "expected = 2*np.sum(om**2*abs(a)**2)",
+      "target": "run",
+      "outcome": "assertion_rejected",
+      "message": "real_energy_isometry: {'relative_errors': [1.0, 1.0, 1.0]}"
+    },
+    {
+      "name": "time_force_omission",
+      "source": "scripts/scalar_massive_response_controls.py",
+      "source_sha256": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+      "mutated_sha256": "ee03cf00a798fcb8aec8f2c2bea23c5d355654ad148fe371667f890c049089ad",
+      "old": "q = (1-u*u)*(v*z-u)",
+      "new": "q = (1-u*u)*v*z",
+      "target": "run",
+      "outcome": "assertion_rejected",
+      "message": "accelerated_original_vs_ibp: {'maximum_error': 0.06816965725997717}"
+    },
+    {
+      "name": "coherent_bounce_factor",
+      "source": "scripts/scalar_massive_response_controls.py",
+      "source_sha256": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+      "mutated_sha256": "a90d57fcf015ec699388406ea2e56fa7d150d20fd375cb5323e6ecbcab767b4b",
+      "old": "-2*v*z*np.exp(-1j*(om*L+k*L*z))",
+      "new": "-v*z*np.exp(-1j*(om*L+k*L*z))",
+      "target": "coherent",
+      "outcome": "assertion_rejected",
+      "message": "original_coherent_vs_derived_weights: 0.5475510891155612"
+    },
+    {
+      "name": "curvature_mass_shift",
+      "source": "scripts/scalar_curved_count_controls.py",
+      "source_sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "mutated_sha256": "e61da06ab950d78d52eecc74cbfb627a5b97b781f9e0b8eff4d7289fd570c5cd",
+      "old": "expected=sp.diff(chi,t,2)+(B-2)*H*H/(1-H*t)**2*chi",
+      "new": "expected=sp.diff(chi,t,2)+B*H*H/(1-H*t)**2*chi",
+      "target": "run",
+      "outcome": "assertion_rejected",
+      "message": "conformal_field_equation: {}"
+    },
+    {
+      "name": "induced_clock_sign",
+      "source": "scripts/scalar_curved_count_controls.py",
+      "source_sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "mutated_sha256": "27f79147ae8e55b34cf7c80b4057cfe33c99957cb20663fceaea50ec13f162ef",
+      "old": "rhs=(c+(1-u*u)*hh*w*u)*chi/a",
+      "new": "rhs=(c-(1-u*u)*hh*w*u)*chi/a",
+      "target": "run",
+      "outcome": "assertion_rejected",
+      "message": "moving_clock_force_weight_transform: {}"
+    },
+    {
+      "name": "physical_energy_cross_sign",
+      "source": "scripts/scalar_curved_count_controls.py",
+      "source_sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "mutated_sha256": "96d8e99606e00aca79641d7cb0e76216147c10ae032963682f73dd59158195a5",
+      "old": "energy=(p-H*q)**2+B*H*H*q*q",
+      "new": "energy=(p+H*q)**2+B*H*H*q*q",
+      "target": "run",
+      "outcome": "assertion_rejected",
+      "message": "physical_initial_energy_cross_term: {}"
+    },
+    {
+      "name": "proper_endpoint_lapse",
+      "source": "scripts/scalar_curved_count_controls.py",
+      "source_sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "mutated_sha256": "6c463bdd88126ad13912fea4c249c1179f30a2e572141513f0f23c2f1e0c752a",
+      "old": "ye[2]-ae/ar*yr[2]",
+      "new": "ye[2]-yr[2]",
+      "target": "curved",
+      "outcome": "assertion_rejected",
+      "message": "original_curved_count_vs_weights: 0.14366140461738836"
+    },
+    {
+      "name": "curved_contrast_beta",
+      "source": "scripts/scalar_curved_count_controls.py",
+      "source_sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "mutated_sha256": "1174564930f86ef62ba68534093b1eccd8a0db7db39c7b5cedf93323f7828320",
+      "old": "beta=(1-H*(times-2*L))*gamma",
+      "new": "beta=gamma.copy()",
+      "target": "curved",
+      "outcome": "assertion_rejected",
+      "message": "original_curved_count_vs_weights: 0.1630368002642493"
+    },
+    {
+      "name": "bounce_arrival_shift",
+      "source": "scripts/scalar_curved_count_controls.py",
+      "source_sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "mutated_sha256": "aaab76da9c48a3e51a04cd7e1998e85dae4b54dbe9a4c7badfb0cc129ede1841",
+      "old": "(ti-length-length*z,-2*gi*z*(1-H*(t+length*z)))",
+      "new": "(ti-length,-2*gi*z*(1-H*(t+length*z)))",
+      "target": "gram",
+      "outcome": "assertion_rejected",
+      "message": "independently_reproduced_gram_mismatch: (32849*H**2 - 24150*H + 5250)/(375*pi)"
+    },
+    {
+      "name": "proper_count_interval",
+      "source": "scripts/scalar_curved_count_controls.py",
+      "source_sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "mutated_sha256": "9269b03780669d89882938fb210d2df3cbc11f8f7f461e7dc1bbf432a8da5b92",
+      "old": "coeff=-np.diff(tau)*np.cumsum(beta)[:-1]",
+      "new": "coeff=-np.diff(times)*np.cumsum(beta)[:-1]",
+      "target": "run",
+      "outcome": "assertion_rejected",
+      "message": "proper_count_endpoint_conversion: {'proper_intervals': [1.10525357350099, 1.169924133632172, 1.242635622140122], 'count_coefficients': [0.99, -1.8299999999999998, 0.8400000000000004]}"
+    }
+  ],
+  "assertion_rejected": 10,
+  "survived": 0
+}

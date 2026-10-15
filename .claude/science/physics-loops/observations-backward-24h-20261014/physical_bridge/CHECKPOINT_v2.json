@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-15T05:11:37.925436+00:00",
+  "author": "/root in user chat",
+  "branch": "codex/observations-backward-physical-20261015",
+  "base": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+  "source_sha256": {
+    "docs/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "19898e25ef9ae34ee7949f7c688a46dda7c3160f41a69f4986acd9a7f1e998a3",
+    "scripts/scalar_mass_curvature_count_check.py": "76e6defceabfee840a63df313cba4e2948f325f6f697c86f23d801a89129afe1",
+    "scripts/scalar_massive_response_controls.py": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+    "scripts/scalar_massive_refinement_controls.py": "f3f5a8c4d560c7a4560662f7ec48ee9e811ee898eb39fda7ec64ef039620c512",
+    "scripts/scalar_curved_count_controls.py": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0"
+  },
+  "cache": {
+    "path": "logs/runner-cache/scalar_mass_curvature_count_check.txt",
+    "sha256": "3dc75e7dbcbc3c2f8bb7cc3f1876964fbef7cf66e6b408790fd26390fd9d5b17"
+  },
+  "canonical_controls": 59,
+  "actual_mutation_rejections": 10,
+  "empirical_tests": 0,
+  "proof_review_status": "Focused working-source mass, curvature and original count/Gram comparisons complete; full canonical report being finalized.",
+  "limits": "Conditional supplied action/background/calibration; no scalar state, mass, H, Q or measured energy/error upper budget selected.",
+  "fixed_deadline": "2026-10-15T21:48:44Z",
+  "packaging_at": "2026-10-15T21:33:44Z",
+  "next_action": "Complete canonical confirmation and coherent source delivery, publish M7 stacked on frozen M6. Next scientific block must address observation-supported calibration/error or scale suppliers.",
+  "independent_reports_read_complete": [
+    "physical_bridge/independent_massive_v1/PRECHECK_v1.md",
+    "physical_bridge/independent_massive_v1/INDEPENDENT_REVIEW_v1.md",
+    "physical_bridge/independent_massive_v1/AUTHOR_SOURCE_COMPARISON_v1.md",
+    "physical_bridge/independent_mass_order_v1/MASS_ORDER_REVIEW_v1.md",
+    "physical_bridge/independent_mass_order_v1/EQUILATERAL_CORRESPONDENCE_v1.md",
+    "physical_bridge/independent_mass_order_v1/CURVED_COUNT_PRECHECK_v1.md",
+    "physical_bridge/independent_mass_order_v1/CURVED_COUNT_REVIEW_v1.md",
+    "physical_bridge/independent_curvature_v1/PRECHECK_v1.md",
+    "physical_bridge/independent_curvature_v1/INDEPENDENT_REVIEW_v1.md",
+    "physical_bridge/independent_curvature_v1/AUTHOR_SOURCE_COMPARISON_v1.md"
+  ]
+}

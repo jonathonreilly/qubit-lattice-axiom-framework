@@ -1,0 +1,362 @@
+{
+  "reason": "Verbatim evidence archive, including every omitted source snapshot required by post-exposure checks. V1 remains local historical; this complete v2 is the publication archive.",
+  "archive": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/IMMUTABLE_EVIDENCE_ARCHIVE_v2.tar.gz",
+  "archive_sha256": "2bac38e55892c4ffc9b471f1cdd77836699ae4513045b0e08916196a979a1925",
+  "members": [
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md.BEFORE_WHITESPACE_v1",
+      "archive_member": "SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md.BEFORE_WHITESPACE_v1",
+      "sha256": "a8a1c3b16992722fcaa95b6b3dd11a42dc8b624b1c3298fbc93e1896cde0c8d9",
+      "bytes": 25733
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/bounce_arrival_shift_MUTATION_v1.txt",
+      "archive_member": "bounce_arrival_shift_MUTATION_v1.txt",
+      "sha256": "eb643acb22e1f3d5e9cf3deb745090c3f345f3e3dd254d13990a653e730c6824",
+      "bytes": 79
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/coherent_bounce_factor_MUTATION_v1.txt",
+      "archive_member": "coherent_bounce_factor_MUTATION_v1.txt",
+      "sha256": "4dd672f23e3be4a67ad904c6683f4770382942543b5154a97a8dab839c810142",
+      "bytes": 57
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/curvature_mass_shift_MUTATION_v1.txt",
+      "archive_member": "curvature_mass_shift_MUTATION_v1.txt",
+      "sha256": "60934784034cecfd70c6cb11b32ba02e9be0bdb8e311489416ef37773c345317",
+      "bytes": 29
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/curved_contrast_beta_MUTATION_v1.txt",
+      "archive_member": "curved_contrast_beta_MUTATION_v1.txt",
+      "sha256": "1f45d87508519db9805c82fe27ec66f34b23d6c814d84557307d95c333d70ee3",
+      "bytes": 53
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/energy_real_factor_MUTATION_v1.txt",
+      "archive_member": "energy_real_factor_MUTATION_v1.txt",
+      "sha256": "d3b83933f8c79f63d5217af15892fc39305d765f76ae4584f45df4bf38d46e5c",
+      "bytes": 59
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/ADAPTATION_scalar_curved_count_controls.py.diff",
+      "archive_member": "independent_canonical_v1/ADAPTATION_scalar_curved_count_controls.py.diff",
+      "sha256": "e939f0f1dabfdf2ce6afb48bf770f0c7d8fcbf7d5b94ff05baafb6079c394a33",
+      "bytes": 6551
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/ADAPTATION_scalar_massive_refinement_controls.py.diff",
+      "archive_member": "independent_canonical_v1/ADAPTATION_scalar_massive_refinement_controls.py.diff",
+      "sha256": "b80b714803452ee8d262c63c64e460e4e121aae482a8d0dda23a0c90c14d4958",
+      "bytes": 1904
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/ADAPTATION_scalar_massive_response_controls.py.diff",
+      "archive_member": "independent_canonical_v1/ADAPTATION_scalar_massive_response_controls.py.diff",
+      "sha256": "44e7121bec0ed54200bcc1f21812048385fb95993fa2fd3f5df598d7e8c19029",
+      "bytes": 1879
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/CANONICAL_SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "archive_member": "independent_canonical_v1/CANONICAL_SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "a8a1c3b16992722fcaa95b6b3dd11a42dc8b624b1c3298fbc93e1896cde0c8d9",
+      "bytes": 25733
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/CANONICAL_scalar_curved_count_controls.py",
+      "archive_member": "independent_canonical_v1/CANONICAL_scalar_curved_count_controls.py",
+      "sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "bytes": 13674
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/CANONICAL_scalar_mass_curvature_count_check.py",
+      "archive_member": "independent_canonical_v1/CANONICAL_scalar_mass_curvature_count_check.py",
+      "sha256": "5ef7ce8911bddc98ac5a39f8957639ec8a8daa0334e9e408a533793a8a330a1e",
+      "bytes": 3102
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/CANONICAL_scalar_massive_refinement_controls.py",
+      "archive_member": "independent_canonical_v1/CANONICAL_scalar_massive_refinement_controls.py",
+      "sha256": "f3f5a8c4d560c7a4560662f7ec48ee9e811ee898eb39fda7ec64ef039620c512",
+      "bytes": 6054
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/CANONICAL_scalar_massive_response_controls.py",
+      "archive_member": "independent_canonical_v1/CANONICAL_scalar_massive_response_controls.py",
+      "sha256": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+      "bytes": 11739
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_curvature_v1__AUTHOR_SOURCE_COMPARISON_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_curvature_v1__AUTHOR_SOURCE_COMPARISON_v1.md",
+      "sha256": "b9ffe5941a52b4f6176d591910a731ddc1a3a8c7a109b5f72cd52c0cb2ebb6af",
+      "bytes": 11493
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_curvature_v1__INDEPENDENT_REVIEW_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_curvature_v1__INDEPENDENT_REVIEW_v1.md",
+      "sha256": "16f38d4bc178e5f3d28c7dee9383aa04e55ea87e3f2de940e91114cdc83e9070",
+      "bytes": 8094
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_mass_order_v1__CURVED_COUNT_PRECHECK_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_mass_order_v1__CURVED_COUNT_PRECHECK_v1.md",
+      "sha256": "21a052975ec0a87df00e8f9dd1e704f09d7ae755fc067dc276bc0f2a248d3619",
+      "bytes": 6712
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_mass_order_v1__CURVED_COUNT_REVIEW_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_mass_order_v1__CURVED_COUNT_REVIEW_v1.md",
+      "sha256": "91088f51b46e93a6483da137647e67c654e01902a735ecee63a73a6643087721",
+      "bytes": 13421
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_mass_order_v1__CURVED_GRAM_PRECHECK_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_mass_order_v1__CURVED_GRAM_PRECHECK_v1.md",
+      "sha256": "be7bd0f52840ac47c9f3671218fc3daf45dc24775314e0628263ea32bba9b907",
+      "bytes": 2532
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_mass_order_v1__EQUILATERAL_CORRESPONDENCE_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_mass_order_v1__EQUILATERAL_CORRESPONDENCE_v1.md",
+      "sha256": "ea0bcc1d87783f280594fa88137d433c2a4aeb473a3f781acff97b64cc6dbd2b",
+      "bytes": 6821
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_mass_order_v1__MASS_ORDER_REVIEW_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_mass_order_v1__MASS_ORDER_REVIEW_v1.md",
+      "sha256": "355fa24cbf0632a586139597b7505537d3c0783eb617f1035cdb42435478129e",
+      "bytes": 9002
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_massive_v1__AUTHOR_SOURCE_COMPARISON_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_massive_v1__AUTHOR_SOURCE_COMPARISON_v1.md",
+      "sha256": "5e4c821f3341ec12cc78c94d9ddb6433d7c98929e075b7a1bad64a275034d6da",
+      "bytes": 8305
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_massive_v1__INDEPENDENT_REVIEW_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_massive_v1__INDEPENDENT_REVIEW_v1.md",
+      "sha256": "8aa2145243f64e3d6b552ed00d08a923282cc7d8fe5f1558fabad91aa222f6d7",
+      "bytes": 8587
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/EVIDENCE_independent_massive_v1__PRECHECK_v1.md",
+      "archive_member": "independent_canonical_v1/EVIDENCE_independent_massive_v1__PRECHECK_v1.md",
+      "sha256": "4e3e9e12ea953e60e3aaf7fd0fa110192e2a90cb5913e901e28c89e79e45719e",
+      "bytes": 9842
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/FINAL_RUNNER_CACHE_v1.txt",
+      "archive_member": "independent_canonical_v1/FINAL_RUNNER_CACHE_v1.txt",
+      "sha256": "3dc75e7dbcbc3c2f8bb7cc3f1876964fbef7cf66e6b408790fd26390fd9d5b17",
+      "bytes": 2415
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/FINAL_SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "archive_member": "independent_canonical_v1/FINAL_SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "19898e25ef9ae34ee7949f7c688a46dda7c3160f41a69f4986acd9a7f1e998a3",
+      "bytes": 25752
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/FINAL_SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "archive_member": "independent_canonical_v1/FINAL_SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "sha256": "21eccffcb7a7b442b68e7841dedf0fe89e2449f91497e61cec2ebc62fcaf308c",
+      "bytes": 918
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/FINAL_scalar_mass_curvature_count_check.py",
+      "archive_member": "independent_canonical_v1/FINAL_scalar_mass_curvature_count_check.py",
+      "sha256": "76e6defceabfee840a63df313cba4e2948f325f6f697c86f23d801a89129afe1",
+      "bytes": 3101
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/FINAL_scalar_mass_curvature_count_check.py.diff",
+      "archive_member": "independent_canonical_v1/FINAL_scalar_mass_curvature_count_check.py.diff",
+      "sha256": "55694cac3ea5809a8051ecfe8a3e76a0c277535d9dd6802609e2d8689e155c6b",
+      "bytes": 176
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/canonical_consistency_controls_v1.py",
+      "archive_member": "independent_canonical_v1/canonical_consistency_controls_v1.py",
+      "sha256": "07fb81f63ae76d1017421b2ed582e93e583f5dd1b0a5447cb309959159af6c86",
+      "bytes": 7931
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/AUTHOR_COMPARISON_RESULTS_v1.json",
+      "archive_member": "independent_curvature_v1/AUTHOR_COMPARISON_RESULTS_v1.json",
+      "sha256": "7abce79c82f0c4e3bb97908bc231cd9ec4a8e709c459798e37bc77d616a8d6e9",
+      "bytes": 77249
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/AUTHOR_CURVED_COUNT_COMPOSITION_v1.md",
+      "archive_member": "independent_curvature_v1/AUTHOR_CURVED_COUNT_COMPOSITION_v1.md",
+      "sha256": "dae8894dd8740055d12a9f84b59a33146e95e9284fc2046cd132c514593c7ce3",
+      "bytes": 4167
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/AUTHOR_CURVED_COUNT_RESULTS_v1.json",
+      "archive_member": "independent_curvature_v1/AUTHOR_CURVED_COUNT_RESULTS_v1.json",
+      "sha256": "204a5b8eaed4773dc8cc8d69e52557544d83483a86d5bc4463f902b9609cb46c",
+      "bytes": 4601
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/AUTHOR_CURVED_COUNT_WORKING_v1.md",
+      "archive_member": "independent_curvature_v1/AUTHOR_CURVED_COUNT_WORKING_v1.md",
+      "sha256": "84cb8fb11a008f6ca8fd268f20f1dede6d5aaded0b4a206065e93f57acba4ba2",
+      "bytes": 10147
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/AUTHOR_MASSIVE_REFINEMENT_WORKING_v1.md",
+      "archive_member": "independent_curvature_v1/AUTHOR_MASSIVE_REFINEMENT_WORKING_v1.md",
+      "sha256": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb",
+      "bytes": 6664
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/AUTHOR_MASSIVE_RESPONSE_WORKING_v1.md",
+      "archive_member": "independent_curvature_v1/AUTHOR_MASSIVE_RESPONSE_WORKING_v1.md",
+      "sha256": "4131181f0d73351ef2eaddf7b24dbcceb5d680351db1ede0ed38badbdf433e8d",
+      "bytes": 9773
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/AUTHOR_curved_count_controls_v1.py",
+      "archive_member": "independent_curvature_v1/AUTHOR_curved_count_controls_v1.py",
+      "sha256": "4a272c55ab3ba6a81b51bd3c1d33519a38cd13bd3b7d3a382c600baf43f79ae2",
+      "bytes": 10020
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/AUTHOR_MASSIVE_REFINEMENT_RESULTS_v1.json",
+      "archive_member": "independent_massive_v1/AUTHOR_MASSIVE_REFINEMENT_RESULTS_v1.json",
+      "sha256": "a92e03d28c8008d0c501a098c8b52455aa36b1afacd2c3c20baba92361092c74",
+      "bytes": 5487
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/AUTHOR_MASSIVE_REFINEMENT_WORKING_v1.md",
+      "archive_member": "independent_massive_v1/AUTHOR_MASSIVE_REFINEMENT_WORKING_v1.md",
+      "sha256": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb",
+      "bytes": 6664
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/AUTHOR_MASSIVE_RESPONSE_RESULTS_v1.json",
+      "archive_member": "independent_massive_v1/AUTHOR_MASSIVE_RESPONSE_RESULTS_v1.json",
+      "sha256": "f6332af784a3bdb94df24386f97e90b8890907f64ec0546d86c8e8e37677c482",
+      "bytes": 7433
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/AUTHOR_MASSIVE_RESPONSE_WORKING_v1.md",
+      "archive_member": "independent_massive_v1/AUTHOR_MASSIVE_RESPONSE_WORKING_v1.md",
+      "sha256": "4131181f0d73351ef2eaddf7b24dbcceb5d680351db1ede0ed38badbdf433e8d",
+      "bytes": 9773
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/AUTHOR_SOURCE_COMPARISON_v1.md",
+      "archive_member": "independent_massive_v1/AUTHOR_SOURCE_COMPARISON_v1.md",
+      "sha256": "5e4c821f3341ec12cc78c94d9ddb6433d7c98929e075b7a1bad64a275034d6da",
+      "bytes": 8305
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/AUTHOR_massive_refinement_controls_v1.py",
+      "archive_member": "independent_massive_v1/AUTHOR_massive_refinement_controls_v1.py",
+      "sha256": "9674ee5a3ec50361df27f4a63e723931085b9cae2d1dbbbc7418fe8d77a7f451",
+      "bytes": 6490
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/AUTHOR_massive_response_controls_v1.py",
+      "archive_member": "independent_massive_v1/AUTHOR_massive_response_controls_v1.py",
+      "sha256": "226fbb6e5f4ef57359d1758a3fe99d5d212f357331ac2d05c1ce1ca3af74692f",
+      "bytes": 12103
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/INDEPENDENT_REVIEW_v1.md",
+      "archive_member": "independent_massive_v1/INDEPENDENT_REVIEW_v1.md",
+      "sha256": "8aa2145243f64e3d6b552ed00d08a923282cc7d8fe5f1558fabad91aa222f6d7",
+      "bytes": 8587
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/M6_SOURCE_SNAPSHOT_v1.md",
+      "archive_member": "independent_massive_v1/M6_SOURCE_SNAPSHOT_v1.md",
+      "sha256": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+      "bytes": 32514
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/PRECHECK_v1.md",
+      "archive_member": "independent_massive_v1/PRECHECK_v1.md",
+      "sha256": "4e3e9e12ea953e60e3aaf7fd0fa110192e2a90cb5913e901e28c89e79e45719e",
+      "bytes": 9842
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/independent_massive_controls_v1.py",
+      "archive_member": "independent_massive_v1/independent_massive_controls_v1.py",
+      "sha256": "136a027c9fcaf56f02014e5737959274f57bc169f16f5a9399d0f426895a36c9",
+      "bytes": 12024
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_massive_v1/postsource_correspondence_controls_v1.py",
+      "archive_member": "independent_massive_v1/postsource_correspondence_controls_v1.py",
+      "sha256": "8aceb911157bb26ed0caea3e42d72785bd9948939070d2a6b6f83267e804cb16",
+      "bytes": 6644
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/induced_clock_sign_MUTATION_v1.txt",
+      "archive_member": "induced_clock_sign_MUTATION_v1.txt",
+      "sha256": "2040b8e0f1f72807b9a9cb3232514e13f7ad6276600a17d108df7589c7c4702a",
+      "bytes": 40
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/physical_energy_cross_sign_MUTATION_v1.txt",
+      "archive_member": "physical_energy_cross_sign_MUTATION_v1.txt",
+      "sha256": "26311455d40113f414acc23f084fcf95800405ed8c6363563d2bf5c50e3b278e",
+      "bytes": 39
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/proper_count_interval_MUTATION_v1.txt",
+      "archive_member": "proper_count_interval_MUTATION_v1.txt",
+      "sha256": "644423a6cdf8203018a647de1cbe2711906271665ff8483a40a2791d0b7daf38",
+      "bytes": 184
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/proper_endpoint_lapse_MUTATION_v1.txt",
+      "archive_member": "proper_endpoint_lapse_MUTATION_v1.txt",
+      "sha256": "63f991708f9486e5f96ffd517e52a9ee43c7de3142ffa6783964e7fc42686961",
+      "bytes": 54
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/run_canonical_mutations_v1.py",
+      "archive_member": "run_canonical_mutations_v1.py",
+      "sha256": "3492c6fed9dfddce3a30f6edc014c4ae6f65d2a49005a6752408f4ff3f04cdd0",
+      "bytes": 3831
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/scalar_curved_count_controls.py.ADAPTATION_v1.diff",
+      "archive_member": "scalar_curved_count_controls.py.ADAPTATION_v1.diff",
+      "sha256": "e914c3336872ce7dcff4365214b905a9c5b31b40e140b52b32ab59441841066f",
+      "bytes": 2129
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/scalar_mass_curvature_count_check.py.BEFORE_WHITESPACE_v1",
+      "archive_member": "scalar_mass_curvature_count_check.py.BEFORE_WHITESPACE_v1",
+      "sha256": "5ef7ce8911bddc98ac5a39f8957639ec8a8daa0334e9e408a533793a8a330a1e",
+      "bytes": 3102
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/scalar_massive_refinement_controls.py.ADAPTATION_v1.diff",
+      "archive_member": "scalar_massive_refinement_controls.py.ADAPTATION_v1.diff",
+      "sha256": "b80b714803452ee8d262c63c64e460e4e121aae482a8d0dda23a0c90c14d4958",
+      "bytes": 1904
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/scalar_massive_response_controls.py.ADAPTATION_v1.diff",
+      "archive_member": "scalar_massive_response_controls.py.ADAPTATION_v1.diff",
+      "sha256": "44e7121bec0ed54200bcc1f21812048385fb95993fa2fd3f5df598d7e8c19029",
+      "bytes": 1879
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/time_force_omission_MUTATION_v1.txt",
+      "archive_member": "time_force_omission_MUTATION_v1.txt",
+      "sha256": "cbc64d8017b4a8a4225e5230ef4807bc72883fa8222ec08d303cc3811d26d79c",
+      "bytes": 68
+    }
+  ],
+  "reproduction": "In a disposable copy, extract these relative members into physical_bridge. Check every restored byte hash against this manifest before a reproduction; do not overwrite different existing files. Reports and scripts remain historical evidence with original version identities."
+}

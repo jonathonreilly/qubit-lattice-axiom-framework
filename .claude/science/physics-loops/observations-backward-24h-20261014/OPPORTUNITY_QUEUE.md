@@ -35,3 +35,7 @@ Next after M4: reconstruct minimum field-energy requirements from calibrated fin
 ## Next after the accelerated observation operator
 
 The accelerated massless operator and ideal coherent link are now derived conditionally; more stationary examples are lower priority. First establish an observation-supported error or energy budget, or a controlled background/source correction that makes the response usable on actual tracking data. Reconstruct or bound those quantities from independent observables instead of assigning a preferred field state or energy. Action/potential and cross-domain scale discrimination remain live alternatives. Refresh relevant main/open PR science before a new route. Day169 remains exposed development; later raw products remain unopened without a pre-access protocol.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+After M7 publication, prioritize an observation-supported reference/error or scale supplier. Use a declared pre-access protocol before later raw products; day169 remains development. Do not add further synthetic examples without a distinct inference obligation.

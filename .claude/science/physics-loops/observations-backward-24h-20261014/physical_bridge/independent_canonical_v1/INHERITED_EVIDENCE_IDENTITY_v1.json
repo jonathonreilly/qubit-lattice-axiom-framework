@@ -1,0 +1,52 @@
+{
+  "independent_massive_v1/PRECHECK_v1.md": {
+    "sha256": "4e3e9e12ea953e60e3aaf7fd0fa110192e2a90cb5913e901e28c89e79e45719e",
+    "bytes": 9842,
+    "snapshot": "EVIDENCE_independent_massive_v1__PRECHECK_v1.md"
+  },
+  "independent_massive_v1/INDEPENDENT_REVIEW_v1.md": {
+    "sha256": "8aa2145243f64e3d6b552ed00d08a923282cc7d8fe5f1558fabad91aa222f6d7",
+    "bytes": 8587,
+    "snapshot": "EVIDENCE_independent_massive_v1__INDEPENDENT_REVIEW_v1.md"
+  },
+  "independent_massive_v1/AUTHOR_SOURCE_COMPARISON_v1.md": {
+    "sha256": "5e4c821f3341ec12cc78c94d9ddb6433d7c98929e075b7a1bad64a275034d6da",
+    "bytes": 8305,
+    "snapshot": "EVIDENCE_independent_massive_v1__AUTHOR_SOURCE_COMPARISON_v1.md"
+  },
+  "independent_curvature_v1/INDEPENDENT_REVIEW_v1.md": {
+    "sha256": "16f38d4bc178e5f3d28c7dee9383aa04e55ea87e3f2de940e91114cdc83e9070",
+    "bytes": 8094,
+    "snapshot": "EVIDENCE_independent_curvature_v1__INDEPENDENT_REVIEW_v1.md"
+  },
+  "independent_curvature_v1/AUTHOR_SOURCE_COMPARISON_v1.md": {
+    "sha256": "b9ffe5941a52b4f6176d591910a731ddc1a3a8c7a109b5f72cd52c0cb2ebb6af",
+    "bytes": 11493,
+    "snapshot": "EVIDENCE_independent_curvature_v1__AUTHOR_SOURCE_COMPARISON_v1.md"
+  },
+  "independent_mass_order_v1/MASS_ORDER_REVIEW_v1.md": {
+    "sha256": "355fa24cbf0632a586139597b7505537d3c0783eb617f1035cdb42435478129e",
+    "bytes": 9002,
+    "snapshot": "EVIDENCE_independent_mass_order_v1__MASS_ORDER_REVIEW_v1.md"
+  },
+  "independent_mass_order_v1/EQUILATERAL_CORRESPONDENCE_v1.md": {
+    "sha256": "ea0bcc1d87783f280594fa88137d433c2a4aeb473a3f781acff97b64cc6dbd2b",
+    "bytes": 6821,
+    "snapshot": "EVIDENCE_independent_mass_order_v1__EQUILATERAL_CORRESPONDENCE_v1.md"
+  },
+  "independent_mass_order_v1/CURVED_COUNT_REVIEW_v1.md": {
+    "sha256": "91088f51b46e93a6483da137647e67c654e01902a735ecee63a73a6643087721",
+    "bytes": 13421,
+    "snapshot": "EVIDENCE_independent_mass_order_v1__CURVED_COUNT_REVIEW_v1.md"
+  },
+  "independent_mass_order_v1/CURVED_COUNT_PRECHECK_v1.md": {
+    "sha256": "21a052975ec0a87df00e8f9dd1e704f09d7ae755fc067dc276bc0f2a248d3619",
+    "bytes": 6712,
+    "snapshot": "EVIDENCE_independent_mass_order_v1__CURVED_COUNT_PRECHECK_v1.md"
+  },
+  "independent_mass_order_v1/CURVED_GRAM_PRECHECK_v1.md": {
+    "sha256": "be7bd0f52840ac47c9f3671218fc3daf45dc24775314e0628263ea32bba9b907",
+    "bytes": 2532,
+    "snapshot": "EVIDENCE_independent_mass_order_v1__CURVED_GRAM_PRECHECK_v1.md"
+  }
+}

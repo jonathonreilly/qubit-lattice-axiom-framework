@@ -1,0 +1,287 @@
+{
+  "status": "mathematical development controls; not empirical validation",
+  "checks": [
+    {
+      "name": "real_energy_isometry",
+      "passed": true,
+      "relative_errors": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "quotient_derivative_supplier",
+      "passed": true,
+      "sampled_max_ratios": [
+        0.17501180979460626,
+        0.035273928100424186,
+        0.013638431360244266
+      ],
+      "sampled_cases": 1000
+    },
+    {
+      "name": "accelerated_original_vs_ibp",
+      "passed": true,
+      "maximum_error": 5.3291167772926676e-14
+    },
+    {
+      "name": "accelerated_mass_difference_bound",
+      "passed": true,
+      "maximum_ratio": 0.9557481745692972
+    },
+    {
+      "name": "accelerated_high_frequency_bound",
+      "passed": true,
+      "maximum_ratio": 0.09235680663243609,
+      "analytic_V": 91.51036362971898
+    },
+    {
+      "name": "elementary_low_integral_enclosure",
+      "passed": true,
+      "maximum_ratio": 0.9986511717043602
+    },
+    {
+      "name": "massive_coherent_original_vs_weights",
+      "passed": true,
+      "maximum_error": 2.256099027748507e-14
+    },
+    {
+      "name": "coherent_angular_reduction",
+      "passed": true,
+      "maximum_error": 1.0658141036401503e-14
+    },
+    {
+      "name": "coherent_gram_quadrature_mu_0.0",
+      "passed": true,
+      "resolution_difference": 1.1102230246251565e-16,
+      "eigenvalues": [
+        0.2342069813605652,
+        0.968651813641001
+      ],
+      "tail_bound": 0.0064845557531096176
+    },
+    {
+      "name": "massless_exact_gram_recovered_with_tail",
+      "passed": true,
+      "maximum_error": 0.0006085600715223238,
+      "tail_bound": 0.0064845557531096176
+    },
+    {
+      "name": "coherent_gram_quadrature_mu_0.001",
+      "passed": true,
+      "resolution_difference": 2.220446049250313e-16,
+      "eigenvalues": [
+        0.23420698136056534,
+        0.9686518136410012
+      ],
+      "tail_bound": 0.0064845557531096176
+    },
+    {
+      "name": "coherent_gram_quadrature_mu_0.05",
+      "passed": true,
+      "resolution_difference": 1.6653345369377348e-15,
+      "eigenvalues": [
+        0.2342069675482253,
+        0.9686518135097906
+      ],
+      "tail_bound": 0.0064845557531096176
+    },
+    {
+      "name": "coherent_gram_quadrature_mu_0.5",
+      "passed": true,
+      "resolution_difference": 1.1102230246251565e-16,
+      "eigenvalues": [
+        0.2332652382899136,
+        0.9685292755548374
+      ],
+      "tail_bound": 0.0064845557531096176
+    },
+    {
+      "name": "coherent_gram_quadrature_mu_2.0",
+      "passed": true,
+      "resolution_difference": 5.551115123125783e-17,
+      "eigenvalues": [
+        0.11229627376266939,
+        0.7923403964314949
+      ],
+      "tail_bound": 0.0064845557531096176
+    },
+    {
+      "name": "coherent_gram_quadrature_mu_8.0",
+      "passed": true,
+      "resolution_difference": 1.3877787807814457e-17,
+      "eigenvalues": [
+        0.037945611130726656,
+        0.1949927959355522
+      ],
+      "tail_bound": 0.0064845557531096176
+    },
+    {
+      "name": "explicit_mass_continuity_enclosures",
+      "passed": true,
+      "sequence": [
+        {
+          "mu": 0.01,
+          "epsilon_upper": 0.10557206630295407,
+          "K": 114285.71428571428
+        },
+        {
+          "mu": 0.0001,
+          "epsilon_upper": 0.009383356151648196,
+          "K": 1142857142.8571427
+        },
+        {
+          "mu": 1e-06,
+          "epsilon_upper": 0.0009370915068522781,
+          "K": 11428571428571.43
+        },
+        {
+          "mu": 1e-08,
+          "epsilon_upper": 9.370790578032008e-05,
+          "K": 1.1428571428571427e+17
+        }
+      ]
+    },
+    {
+      "name": "finite_hilbert_gram_perturbation",
+      "passed": true,
+      "actual": 0.031521916136938374,
+      "bound": 0.11470874959312931
+    },
+    {
+      "name": "conditional_energy_lower_bound",
+      "passed": true,
+      "lower": 0.008030013785410118,
+      "actual": 0.8250000000000001
+    }
+  ],
+  "checks_passed": 18,
+  "observations_opened": 0,
+  "fitted_values": 0,
+  "massive_grams": [
+    {
+      "mu": 0.0,
+      "finite_integral_gram": [
+        [
+          0.6014293975007831,
+          -0.36722241614021783
+        ],
+        [
+          -0.36722241614021783,
+          0.6014293975007831
+        ]
+      ],
+      "cutoff": 2000,
+      "entrywise_tail_bound": 0.0064845557531096176,
+      "quadrature_status": "floating convergence diagnostic; only tail is analytically certified"
+    },
+    {
+      "mu": 0.001,
+      "finite_integral_gram": [
+        [
+          0.6014293975007833,
+          -0.36722241614021794
+        ],
+        [
+          -0.36722241614021794,
+          0.6014293975007833
+        ]
+      ],
+      "cutoff": 2000,
+      "entrywise_tail_bound": 0.0064845557531096176,
+      "quadrature_status": "floating convergence diagnostic; only tail is analytically certified"
+    },
+    {
+      "mu": 0.05,
+      "finite_integral_gram": [
+        [
+          0.6014293905290079,
+          -0.3672224229807826
+        ],
+        [
+          -0.3672224229807826,
+          0.6014293905290079
+        ]
+      ],
+      "cutoff": 2000,
+      "entrywise_tail_bound": 0.0064845557531096176,
+      "quadrature_status": "floating convergence diagnostic; only tail is analytically certified"
+    },
+    {
+      "mu": 0.5,
+      "finite_integral_gram": [
+        [
+          0.6008972569223755,
+          -0.36763201863246187
+        ],
+        [
+          -0.36763201863246187,
+          0.6008972569223755
+        ]
+      ],
+      "cutoff": 2000,
+      "entrywise_tail_bound": 0.0064845557531096176,
+      "quadrature_status": "floating convergence diagnostic; only tail is analytically certified"
+    },
+    {
+      "mu": 2.0,
+      "finite_integral_gram": [
+        [
+          0.45231833509708214,
+          -0.34002206133441276
+        ],
+        [
+          -0.34002206133441276,
+          0.45231833509708214
+        ]
+      ],
+      "cutoff": 2000,
+      "entrywise_tail_bound": 0.0064845557531096176,
+      "quadrature_status": "floating convergence diagnostic; only tail is analytically certified"
+    },
+    {
+      "mu": 8.0,
+      "finite_integral_gram": [
+        [
+          0.11646920353313943,
+          -0.07852359240241277
+        ],
+        [
+          -0.07852359240241277,
+          0.11646920353313943
+        ]
+      ],
+      "cutoff": 2000,
+      "entrywise_tail_bound": 0.0064845557531096176,
+      "quadrature_status": "floating convergence diagnostic; only tail is analytically certified"
+    }
+  ],
+  "mass_continuity_enclosures": [
+    {
+      "mu": 0.01,
+      "epsilon_upper": 0.10557206630295407,
+      "K": 114285.71428571428
+    },
+    {
+      "mu": 0.0001,
+      "epsilon_upper": 0.009383356151648196,
+      "K": 1142857142.8571427
+    },
+    {
+      "mu": 1e-06,
+      "epsilon_upper": 0.0009370915068522781,
+      "K": 11428571428571.43
+    },
+    {
+      "mu": 1e-08,
+      "epsilon_upper": 9.370790578032008e-05,
+      "K": 1.1428571428571427e+17
+    }
+  ],
+  "limits": [
+    "No physical mass, energy/error upper budget or state selected.",
+    "Flat-background KG only; no dynamical curved-spacetime correction.",
+    "Finite quadrature error is not interval-certified."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-15T04:58:20.025213+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "base": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+  "scope": "Independent pre-author-file curvature bridge derivation and synthetic mode/readout controls; no formal audit",
+  "author_curvature_files_opened": false,
+  "message_exposure_after_precheck": "Root disclosed a four-endpoint massless Gram and author control count after precheck/initial script drafting. Neither was used. Root flagged energy orientation; reciprocal constants then independently checked.",
+  "observations_accessed": false,
+  "files": {
+    "PRECHECK_v1.md": "7b471f937667fb6f2b89c5db280857a9976ed11256a44a27cd7eabe565815b95",
+    "curvature_controls_v1.py": "32d0428ad759674ec2eb53d6342a4b400e3b25e4cec588dfa5778ea7d01ed275",
+    "RESULTS_v1.json": "1cefd09d66171f3b6ff83fbaa489b22633c3034d55a46429005320052cb7956d",
+    "INDEPENDENT_REVIEW_v1.md": "16f38d4bc178e5f3d28c7dee9383aa04e55ea87e3f2de940e91114cdc83e9070"
+  },
+  "supplied_sources": {
+    "docs/EXPONENTIAL_SCALAR_CURVED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "1eb49b6a111c0532e9ed6540e3a11ce8970cc1b9dd8cb0cd026e23bb0becd874",
+    "docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76"
+  },
+  "executed_checks": {
+    "total": 209,
+    "passed": 209,
+    "failed": 0
+  },
+  "author_suites_rerun": false,
+  "failed_attempts": [],
+  "limits": [
+    "Comparison is V(t) to positive frozen V(0), not massless propagation.",
+    "Whole-operator bound follows the analytic BV/Fourier-tail proof, not the finite numerical sample.",
+    "Actual physical initial energy and measurement/environment suppliers remain conditional."
+  ]
+}

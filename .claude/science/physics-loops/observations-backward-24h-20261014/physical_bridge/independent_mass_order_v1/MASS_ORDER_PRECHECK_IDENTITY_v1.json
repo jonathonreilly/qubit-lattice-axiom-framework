@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-10-15T04:47:25.417505+00:00",
+  "reviewer": "/root/localized_history_check",
+  "author_source_read": false,
+  "other_reviewer_work_read": false,
+  "source": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_mass_order_v1/MASS_ORDER_PRECHECK_v1.md",
+    "sha256": "30518157177387a7d90d3c218a638ae78aa30fb8cfbab310f663d34076c3fb51"
+  },
+  "scope": "Fixed-point pure-clock KG dual Gram; explicit noncollinear counterexample with pointwise zero summed weights; no physical coherent-fixture verdict"
+}

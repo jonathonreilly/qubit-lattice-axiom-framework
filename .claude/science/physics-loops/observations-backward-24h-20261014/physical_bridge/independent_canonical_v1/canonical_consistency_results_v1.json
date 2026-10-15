@@ -1,0 +1,500 @@
+{
+  "created_utc": "2026-10-15T05:10:25.264116+00:00",
+  "classification": "Post-exposure canonical source consistency/adaptation controls, not independent derivation or aggregate rerun.",
+  "script_sha256": "07fb81f63ae76d1017421b2ed582e93e583f5dd1b0a5447cb309959159af6c86",
+  "checks": [
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_angular_expression",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_check",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_closed_low",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_coherent_original",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_coherent_weights",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_epsilon",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_low_bound",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_massive_gram",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_smooth_response",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_response_controls.py_variation_supplier",
+      "passed": true
+    },
+    {
+      "name": "unchanged_existing_scientific_runner_prefix_CANONICAL_scalar_massive_response_controls.py",
+      "passed": true,
+      "old_statement_count": 48,
+      "new_extra_controls": false
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_refinement_controls.py_bound",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_refinement_controls.py_chat",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_refinement_controls.py_check",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_massive_refinement_controls.py_clock_gram",
+      "passed": true
+    },
+    {
+      "name": "unchanged_existing_scientific_runner_prefix_CANONICAL_scalar_massive_refinement_controls.py",
+      "passed": true,
+      "old_statement_count": 36,
+      "new_extra_controls": false
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_curved_count_controls.py_check",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_curved_count_controls.py_exact_gram",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_curved_count_controls.py_mode_and_observation",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_curved_count_controls.py_numerical_gram",
+      "passed": true
+    },
+    {
+      "name": "unchanged_function_CANONICAL_scalar_curved_count_controls.py_weights",
+      "passed": true
+    },
+    {
+      "name": "unchanged_existing_scientific_runner_prefix_CANONICAL_scalar_curved_count_controls.py",
+      "passed": true,
+      "old_statement_count": 46,
+      "new_extra_controls": true
+    },
+    {
+      "name": "new_analytic_supplier_function_0.00001",
+      "passed": true,
+      "maximum_absolute_difference": 1.0842021724855044e-19
+    },
+    {
+      "name": "new_analytic_supplier_function_0.0001",
+      "passed": true,
+      "maximum_absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "new_analytic_supplier_function_0.001",
+      "passed": true,
+      "maximum_absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "name": "new_analytic_supplier_function_0.01",
+      "passed": true,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "name": "new_analytic_supplier_function_0.05",
+      "passed": true,
+      "maximum_absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "name": "table_has_five_rows",
+      "passed": true
+    },
+    {
+      "name": "printed_table_rounding_0.00001",
+      "passed": true,
+      "printed": [
+        "0.00001",
+        "1.39257",
+        "0.00098185",
+        "0.00001125",
+        "0.00071314"
+      ],
+      "calculated": [
+        1.3925671426149087,
+        0.0009818460358300383,
+        1.124959729807864e-05,
+        0.0007131402161789631
+      ]
+    },
+    {
+      "name": "printed_table_rounding_0.0001",
+      "passed": true,
+      "printed": [
+        "0.0001",
+        "1.39228",
+        "0.00987757",
+        "0.00035585",
+        "0.00735012"
+      ],
+      "calculated": [
+        1.3922788833077093,
+        0.009877566949851266,
+        0.0003558463884052916,
+        0.007350117466368882
+      ]
+    },
+    {
+      "name": "printed_table_rounding_0.001",
+      "passed": true,
+      "printed": [
+        "0.001",
+        "1.38940",
+        "0.10066077",
+        "0.01128624",
+        "0.08057237"
+      ],
+      "calculated": [
+        1.3893970769935624,
+        0.10066076889614171,
+        0.01128624262575026,
+        0.08057236723437462
+      ]
+    },
+    {
+      "name": "printed_table_rounding_0.01",
+      "passed": true,
+      "printed": [
+        "0.01",
+        "1.36066",
+        "1.06801545",
+        "0.37040972",
+        "1.05715289"
+      ],
+      "calculated": [
+        1.3606595369721735,
+        1.0680154451132458,
+        0.37040971830619895,
+        1.0571528911782886
+      ]
+    },
+    {
+      "name": "printed_table_rounding_0.05",
+      "passed": true,
+      "printed": [
+        "0.05",
+        "1.23494",
+        "5.93795881",
+        "6.13170055",
+        "9.77351191"
+      ],
+      "calculated": [
+        1.2349357611115241,
+        5.937958813722039,
+        6.13170054950897,
+        9.773511905078784
+      ]
+    },
+    {
+      "name": "large_rows_remain_non_small",
+      "passed": true
+    },
+    {
+      "name": "enclosure_domain_guard_(0, 16, 4.4)",
+      "passed": true
+    },
+    {
+      "name": "enclosure_domain_guard_(-0.1, 16, 4.4)",
+      "passed": true
+    },
+    {
+      "name": "enclosure_domain_guard_(0.1, 12, 4.4)",
+      "passed": true
+    },
+    {
+      "name": "enclosure_domain_guard_(0.1, 16, 4.0)",
+      "passed": true
+    },
+    {
+      "name": "enclosure_domain_guard_(0.25, 16, 4.4)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 0)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 1)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 2)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 3)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 4)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 5)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 6)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(12.01, 7)",
+      "passed": true
+    },
+    {
+      "name": "initial_energy_normalization_equality_12.01",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 0)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 1)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 2)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 3)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 4)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 5)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 6)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(16.0, 7)",
+      "passed": true
+    },
+    {
+      "name": "initial_energy_normalization_equality_16.0",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 0)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 1)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 2)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 3)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 4)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 5)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 6)",
+      "passed": true
+    },
+    {
+      "name": "composed_physical_energy_(50.0, 7)",
+      "passed": true
+    },
+    {
+      "name": "initial_energy_normalization_equality_50.0",
+      "passed": true
+    },
+    {
+      "name": "primary_declares_all_four_other_sources",
+      "passed": true
+    },
+    {
+      "name": "declared_timeout_CANONICAL_scalar_mass_curvature_count_check.py",
+      "passed": true
+    },
+    {
+      "name": "declared_timeout_CANONICAL_scalar_massive_response_controls.py",
+      "passed": true
+    },
+    {
+      "name": "declared_timeout_CANONICAL_scalar_massive_refinement_controls.py",
+      "passed": true
+    },
+    {
+      "name": "declared_timeout_CANONICAL_scalar_curved_count_controls.py",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "total": 71,
+    "passed": 71,
+    "failed": 0
+  },
+  "adaptation": [
+    {
+      "old": "WORKING_massive_response_controls_v1.py",
+      "new": "CANONICAL_scalar_massive_response_controls.py",
+      "common_functions": [
+        "angular_expression",
+        "check",
+        "closed_low",
+        "coherent_original",
+        "coherent_weights",
+        "epsilon",
+        "low_bound",
+        "massive_gram",
+        "smooth_response",
+        "variation_supplier"
+      ],
+      "added_functions": [
+        "run_checks"
+      ]
+    },
+    {
+      "old": "WORKING_massive_refinement_controls_v1.py",
+      "new": "CANONICAL_scalar_massive_refinement_controls.py",
+      "common_functions": [
+        "bound",
+        "chat",
+        "check",
+        "clock_gram"
+      ],
+      "added_functions": [
+        "run_checks"
+      ]
+    },
+    {
+      "old": "WORKING_curved_count_controls_v1.py",
+      "new": "CANONICAL_scalar_curved_count_controls.py",
+      "common_functions": [
+        "check",
+        "exact_gram",
+        "mode_and_observation",
+        "numerical_gram",
+        "weights"
+      ],
+      "added_functions": [
+        "extra_controls",
+        "propagation_enclosure",
+        "run_checks"
+      ]
+    }
+  ],
+  "analytic_table": [
+    {
+      "H": "0.00001",
+      "expected": [
+        "1.39256714261490862810399399395244446149467487931397561867017897046005",
+        "0.0009818460358300382551590873551482901950889684989379211050460098193192516",
+        "0.00001124959729807863941008645172316898760154399066027200096122598407089795",
+        "0.0007131402161789631128556255259929415328299335897054082003630667535853325"
+      ],
+      "computed": [
+        1.3925671426149087,
+        0.0009818460358300383,
+        1.1249597298078643e-05,
+        0.0007131402161789632
+      ]
+    },
+    {
+      "H": "0.0001",
+      "expected": [
+        "1.392278883307709428526723692270004999927645111341326784125744745182717",
+        "0.009877566949851265893758136464030221518370360719900413992717584753064179",
+        "0.0003558463884052915730644140772428374277163546809511674798646454105773684",
+        "0.007350117466368881945932589160864650714083396005487744224555841361125536"
+      ],
+      "computed": [
+        1.3922788833077095,
+        0.009877566949851266,
+        0.00035584638840529165,
+        0.007350117466368882
+      ]
+    },
+    {
+      "H": "0.001",
+      "expected": [
+        "1.389397076993562298440142175139349549205890530924349647605493149052061",
+        "0.1006607688961417149739164020079985056724151084391101284140610254082715",
+        "0.01128624262575026115977605127034143883003178648074526524710493114369014",
+        "0.08057236723437462434500186032532649893583181341530538475864948983696562"
+      ],
+      "computed": [
+        1.3893970769935624,
+        0.1006607688961417,
+        0.01128624262575026,
+        0.08057236723437461
+      ]
+    },
+    {
+      "H": "0.01",
+      "expected": [
+        "1.360659536972173447900897886524682918013502358740799836671068741063261",
+        "1.068015445113245757553406917352911142135722859509499128018445996068726",
+        "0.3704097183061989376664649348045724249137163328606935792647696234280909",
+        "1.057152891178288647252513196659845683911206041059871394291413694061365"
+      ],
+      "computed": [
+        1.3606595369721735,
+        1.0680154451132458,
+        0.37040971830619895,
+        1.0571528911782886
+      ]
+    },
+    {
+      "H": "0.05",
+      "expected": [
+        "1.234935761111524110891864096861765763904947173637379589301761325650815",
+        "5.937958813722039583813588733999960917895766058164967920585221952897287",
+        "6.131700549508970295554685510159077403019827572997482661722886079457645",
+        "9.773511905078783813649165214407135490249941664429050943021378502051179"
+      ],
+      "computed": [
+        1.2349357611115241,
+        5.93795881372204,
+        6.131700549508972,
+        9.773511905078784
+      ]
+    }
+  ],
+  "energy_diagnostic_maximum_ratio": 0.7832239709989662
+}

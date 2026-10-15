@@ -51,3 +51,7 @@ next_trace_action: "Establish actual trajectory, clock and link calibration with
 ```
 
 The downstream consumer is scalar-history reconstruction from finite tracking counts. The new construction derives response weights and a joint massless energy Gram from the declared observation, including acceleration and shared-clock effects. It does not identify archived residuals with a scalar field, derive the physical action or provide the external energy/error comparison needed for exclusion.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 target scalar_mass_curvature_count, bounded_theorem / conditional-support / upstream_support. Observation: finite proper radio counts under stated link model. Derived: nuisance contrast, propagation correction, initial energy comparison. Missing downstream suppliers: actual calibration, scalar attribution, scales and independent energy/error bound. No selector counted as derivation.

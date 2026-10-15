@@ -1,0 +1,30 @@
+{
+  "checkpoint_at": "2026-10-15T04:52:07.809673+00:00",
+  "branch": "codex/observations-backward-physical-20261015",
+  "frozen_base": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+  "author": "/root in this chat",
+  "deadline": "2026-10-15T21:48:44Z",
+  "status": "working; independent checks in progress",
+  "source_sha256": {
+    "MASSIVE_RESPONSE_WORKING_v1.md": "4131181f0d73351ef2eaddf7b24dbcceb5d680351db1ede0ed38badbdf433e8d",
+    "MASSIVE_REFINEMENT_WORKING_v1.md": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb",
+    "CURVED_COUNT_WORKING_v1.md": "84cb8fb11a008f6ca8fd268f20f1dede6d5aaded0b4a206065e93f57acba4ba2",
+    "massive_response_controls_v1.py": "226fbb6e5f4ef57359d1758a3fe99d5d212f357331ac2d05c1ce1ca3af74692f",
+    "massive_refinement_controls_v1.py": "9674ee5a3ec50361df27f4a63e723931085b9cae2d1dbbbc7418fe8d77a7f451",
+    "MASSIVE_RESPONSE_RESULTS_v1.json": "f6332af784a3bdb94df24386f97e90b8890907f64ec0546d86c8e8e37677c482",
+    "MASSIVE_REFINEMENT_RESULTS_v1.json": "a92e03d28c8008d0c501a098c8b52455aa36b1afacd2c3c20baba92361092c74"
+  },
+  "author_controls": {
+    "massive_response": 18,
+    "refinement": 13
+  },
+  "progress": [
+    "Explicit mass-error enclosure for the derived finite observation, with arbitrary finite-energy initial fields.",
+    "Exact constant-offset contrasts improve the small-mass error rate.",
+    "Root has derived a fixed-vacuum de Sitter conformal-field mapping, conservative time-varying-potential comparison and rational four-endpoint coherent contrast; these curvature results are still unreviewed."
+  ],
+  "data": "No new data or fitted values; all reserved products remain unopened.",
+  "independent_status": "Mass-bound comparison and independent spatial-interference counterexample reports pending final read; curvature derivation running in assigned check scope.",
+  "next_action": "Execute direct curved count/mode and exact Gram controls, read independent reports, repair any consequential discrepancy and integrate one coherent M7 source.",
+  "owned_processes": "No detached author; only current focused in-chat check agents and foreground commands."
+}

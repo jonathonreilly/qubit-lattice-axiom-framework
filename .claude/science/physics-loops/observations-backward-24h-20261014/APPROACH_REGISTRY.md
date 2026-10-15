@@ -47,3 +47,7 @@ Attacked the initial-history assumption through observation-space duality rather
 ## Accelerated coherent counts and their energy operator
 
 The root author derived fixed-proper-time endpoint variations, augmented orbital/clock adjoints, ideal multileg phase composition and the joint massless energy Gram on prescribed accelerated paths. The field and force responses are summed at common arrival phase before squaring. Exact response columns allow cancellation of full initial body/clock perturbations and constant scalar offsets within the supplied model. An exact two-body count fixture gives the same rational Gram by time overlap and original harmonic endpoint responses. This removes the previously arbitrary measurement kernel in that regime. Actual reference dynamics, calibration, physical field energy and action/potential remain open suppliers.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 mass/curvature/count route: explicit operator-distance bounds replace an unsupported massless substitution. A separated-clock interference example rejects universal mass ordering, while a four-endpoint curved proper-count contrast derives the needed weights. Route is conditional upstream support; no broad no-go closure.

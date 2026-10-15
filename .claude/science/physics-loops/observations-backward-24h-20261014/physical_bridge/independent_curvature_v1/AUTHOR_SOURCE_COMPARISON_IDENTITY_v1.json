@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-15T05:05:09.118814+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Focused complete curvature source and potential BV/Gronwall comparison, consuming explicitly identified massive suppliers and count-weight inputs; no formal audit",
+  "original_independent_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_curvature_v1/INDEPENDENT_IDENTITY_v1.json",
+    "sha256": "6b9d0faf02c639f8b33d0ef96b0f09c92f12b4798294f9515a0da332591963e7"
+  },
+  "sources": {
+    "CURVED_COUNT_WORKING_v1.md": "84cb8fb11a008f6ca8fd268f20f1dede6d5aaded0b4a206065e93f57acba4ba2",
+    "curved_count_controls_v1.py": "4a272c55ab3ba6a81b51bd3c1d33519a38cd13bd3b7d3a382c600baf43f79ae2",
+    "CURVED_COUNT_RESULTS_v1.json": "204a5b8eaed4773dc8cc8d69e52557544d83483a86d5bc4463f902b9609cb46c",
+    "MASSIVE_RESPONSE_WORKING_v1.md": "4131181f0d73351ef2eaddf7b24dbcceb5d680351db1ede0ed38badbdf433e8d",
+    "MASSIVE_REFINEMENT_WORKING_v1.md": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb",
+    "CURVED_COUNT_COMPOSITION_v1.md": "dae8894dd8740055d12a9f84b59a33146e95e9284fc2046cd132c514593c7ce3"
+  },
+  "files": {
+    "AUTHOR_SOURCE_COMPARISON_v1.md": "b9ffe5941a52b4f6176d591910a731ddc1a3a8c7a109b5f72cd52c0cb2ebb6af",
+    "author_potential_comparison_v1.py": "0137643d6812dce1ea851c98c44acbe5ed0924b2e910f69ff6fdcb7c47117cc8",
+    "AUTHOR_COMPARISON_RESULTS_v1.json": "7abce79c82f0c4e3bb97908bc231cd9ec4a8e709c459798e37bc77d616a8d6e9",
+    "AUTHOR_CURVED_COUNT_WORKING_v1.md": "84cb8fb11a008f6ca8fd268f20f1dede6d5aaded0b4a206065e93f57acba4ba2",
+    "AUTHOR_curved_count_controls_v1.py": "4a272c55ab3ba6a81b51bd3c1d33519a38cd13bd3b7d3a382c600baf43f79ae2",
+    "AUTHOR_CURVED_COUNT_RESULTS_v1.json": "204a5b8eaed4773dc8cc8d69e52557544d83483a86d5bc4463f902b9609cb46c",
+    "AUTHOR_MASSIVE_RESPONSE_WORKING_v1.md": "4131181f0d73351ef2eaddf7b24dbcceb5d680351db1ede0ed38badbdf433e8d",
+    "AUTHOR_MASSIVE_REFINEMENT_WORKING_v1.md": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb",
+    "AUTHOR_CURVED_COUNT_COMPOSITION_v1.md": "dae8894dd8740055d12a9f84b59a33146e95e9284fc2046cd132c514593c7ce3"
+  },
+  "result": "No unresolved consequential discrepancy in the assigned curvature/energy/weight/potential-control scope",
+  "energy_orientation": "Author lambda_minus = reciprocal of independent lambda_plus; author lambda_plus = reciprocal of independent lambda_minus",
+  "narrow_control_counts": {
+    "total": 747,
+    "passed": 747,
+    "failed": 0
+  },
+  "grid_point_matrix_conditions": 605,
+  "author_aggregate_suite_rerun": false,
+  "author_recorded_control_count": 20,
+  "raw_observations_accessed": false,
+  "independent_four_endpoint_gram_rederived_here": false,
+  "separate_scopes": [
+    "Full independent massive-response theorem review belongs to independent_massive_v1.",
+    "Independent final four-endpoint count/Gram construction belongs to independent_mass_order_v1.",
+    "Canonical complete source/delivery packaging is not covered by this working-source supplement."
+  ],
+  "unresolved_findings": [],
+  "failed_attempts": []
+}

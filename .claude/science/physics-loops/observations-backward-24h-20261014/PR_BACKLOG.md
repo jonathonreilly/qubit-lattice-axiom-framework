@@ -26,3 +26,9 @@ Fifth unit published: [PR#9586](https://github.com/jonathonreilly/qubit-lattice-
 ## Accelerated coherent-count milestone preparation
 
 One coherent sixth unit is prepared on codex/observations-backward-accelerated-20261015, based on frozen ff4a63b6f0407d40ab925ac4bc83011546886217 / codex/observations-backward-energy-20261015. Its value/cluster decision is OPEN for the derived proper-count/adjoint/coherent observation operator and accelerated massless energy Gram, including an exact composition fixture. Final delivery checking and mechanical source binding precede its regular stacked PR. Earlier five PRs remain frozen; no main merge or push.
+
+Sixth unit published: [PR#9589](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9589), regular/open,96paths, frozen head`c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee`, stacked on#9586 and attached. Complete focused science/delivery review and mechanical source/cache checks are complete for this exact tree. No integrated landing or formal audit is claimed. Continue new work on codex/observations-backward-physical-20261015; keep all six publication branches frozen.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 preparing on codex/observations-backward-physical-20261015, stacked on frozen PR9589 branchcodex/observations-backward-accelerated-20261015. No M7 PR yet; prior six milestone heads remain frozen.

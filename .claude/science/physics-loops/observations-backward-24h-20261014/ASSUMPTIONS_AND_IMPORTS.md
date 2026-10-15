@@ -72,3 +72,7 @@ The count-window shape is derived from calibrated kernels and vector cancellatio
 ## Accelerated coherent-count milestone
 
 The supplied conformal action, flat free massless regime, positive background, smooth timelike reference dynamics, proper-clock labels and instantaneous coherent link remain explicit conditional inputs. Within them, endpoint sensitivities, adjoint weights, initial-response columns, constant-offset response and common-field Gram are derived. Ideal coherence removes a spacecraft direct clock channel, but leaves its force response. Exact contrasts cancel specified nuisance responses without selecting their values or the physical scalar state. Numerical nullspaces alone do not cancel unbounded unknowns when calibration is uncertain. The stationary rational fixture proves exact cancellation only for its declared model. No actual error/energy budget, absolute scale, environment, positive-mass accelerated norm or scalar action/potential is derived.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 adds no state selector. Supplied action, stationary de Sitter vacuum, B>12,H,Q, ideal coherent link and calibrated reference remain conditional. Force weights require compact continuous W with Wprime BV; clocks remain L2. Derived initial-slice energy conversion and comparison errors do not supply an upper energy budget. Exact C0 cancellation is for comparison chi, not arbitrary constant physical h.

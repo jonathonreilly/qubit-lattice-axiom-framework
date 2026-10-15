@@ -1,0 +1,68 @@
+PASS: shared-label endpoint factor
+PASS: shared-label integral density
+PASS: endpoint quotient under an orientation-preserving relabeling
+PASS: integral density under an orientation-preserving relabeling
+PASS: omitting the dr/dz factor breaks relabeling covariance
+  residual: -P**2*R**4*(positive_relabeling_derivative - 1)/(D*q**2*r)
+PASS: exact primitive D product split
+PASS: shared-clock change in D when other primitive channels are fixed
+PASS: exact five-factor telescoping identity for J
+PASS: fourth-power finite difference supplies coefficient 4
+PASS: square finite difference supplies coefficient 2
+PASS: reciprocal difference supplies squared denominator minimum
+PASS: joint-control R upper envelope
+PASS: joint-control D lower envelope
+PASS: joint primitive perturbation respects the analytic-envelope bound
+  actual_log_error: 0.016377884406811637949410898685672194
+  bound: 0.50587981917621456787452677122769064
+PASS: shared-clock error is retained in the valid bound
+  actual_log_error: 48.817746391320632872921619060964316
+  bound: 361.31922433204201776611130566737127
+PASS: dropping shared-clock error from D fails on a concrete control
+  actual_log_error: 48.817746391320632872921619060964316
+  incorrect_bound: 0.59157436054870874776469630253973313
+PASS: radius-only perturbation respects the valid bound
+  actual_log_error: 0.048001024039323397648340313863092081
+  bound: 0.2
+PASS: omitting radius uncertainty fails on a concrete control
+  actual_log_error: 0.048001024039323397648340313863092081
+  incorrect_bound: 0.0
+PASS: inverting the slowness endpoint ratio changes the logarithmic inverse
+  residual: -2*log(2)
+PASS: complete-square identity for a strict finite-bin example
+PASS: finite-bin equality family S=k/w
+PASS: strict finite-bin example has positive gap
+PASS: exact refinement gain
+PASS: two-bin refinement improves the constant-S example
+PASS: clamped uncertain-increment lower bound remains below the exact-bin bound
+PASS: analytic baseline mass bound exceeds the chosen removed area
+PASS: certified baseline lower bound
+PASS: finite-sample bump control epsilon=1/4
+  I: 1.0384802405487165407995356539205241
+  lower_bound: 0.3375584065048487644937166051220794
+PASS: finite-sample bump control epsilon=1/8
+  I: 1.4879773811557557082281423006948229
+  lower_bound: 0.6751168130096975289874332102441588
+PASS: finite-sample bump control epsilon=1/16
+  I: 2.3879772818143207601450900621605722
+  lower_bound: 1.3502336260193950579748664204883176
+PASS: finite-sample bump control epsilon=1/32
+  I: 4.1882442430976248163524449771624146
+  lower_bound: 2.7004672520387901159497328409766352
+PASS: finite-sample bump control epsilon=1/64
+  I: 7.7888533066957300667130173095095261
+  lower_bound: 5.4009345040775802318994656819532704
+PASS: finite-sample bump control epsilon=1/128
+  I: 14.990094424332537882779938377256561
+  lower_bound: 10.801869008155160463798931363906541
+PASS: static coherent turnaround cancellation
+PASS: intake family has unit radial-radar slowness
+PASS: intake family has local circular speed squared p
+PASS: two intake family metrics have distinct clock ratios
+  residual: x**(1/4) - sqrt(x)
+PASS: source identity: BLOCK02_DERIVATION_v1.md
+PASS: source identity: BLOCK02_DERIVATION_v2.md
+PASS: source identity: BLOCK01_DERIVATION_v5.md
+PASS: source identity: BLOCK01_READOUT_INTAKE_v1.md
+PASS: v2 changes only the confirmed positive-relabeling-derivative condition
+TOTAL: PASS=42 FAIL=0

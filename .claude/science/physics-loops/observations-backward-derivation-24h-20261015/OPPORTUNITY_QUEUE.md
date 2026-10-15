@@ -1,12 +1,13 @@
 # Ranked opportunities after the first calculation
 
 1. Establish the primitive observational input and scalar registration needed by
-   the checked inverse. Derive clock/radar/orbit error bounds including shared R
-   and areal-radius uncertainty; determine an available measured input set.
+   the checked inverse. The clock/radar/orbit error-transfer bound now retains shared R and areal-radius
+   uncertainty; its certificates still need an available measured input set.
    Highest current value: it decides whether the mathematical reconstruction
    actually replaces a physical assumption. Do not spend another block merely
    adding synthetic metrics. The known single-metric inverse alone is not novel.
-2. Couple material and scalar dynamics to derive a finite-source response and
+2. The sourced transport and regular-center family are independently checked.
+   Next couple material and scalar dynamics to derive a finite-source response and
    an independent normalization constraint. Retain pressure, compressibility,
    control conditions and stability. Risk: importing an arbitrary matter law
    can simply relocate the original assumption; challenge it explicitly.
@@ -20,4 +21,6 @@
 
 Delivery task alongside science: distill v5 and its focused check into a coherent
 first milestone note/runner after abstract-core and conformance requirements.
+The next delivery block should integrate the checked mathematics instead of adding
+more isolated synthetic examples. Material response is a separate physical gap.
 No mathematical or observational objective is complete merely because a PR exists.

@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "first_block_checked_observation_bridge_open",
+  "phase": "first_milestone_packaging",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-15T23:04:40.695270+00:00",
+  "updated_at": "2026-10-15T23:58:08.316445+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -13,18 +13,20 @@
   "main_at_launch": "bbada1fe09b2d10d610560864d86b68c24a59713",
   "delivery": "milestone",
   "checkpoint_minutes": 30,
-  "block": 1,
-  "route": "common-action reconstruction across environments",
+  "block": 3,
+  "route": "checked primitive-input bounds and material normalization/boundary diagnostics",
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Derive primitive clock/radar/orbit uncertainty including shared R dependence and areal-radius error. Map the needed channels to pinned observational metadata; do not substitute coherent turnaround for an independent clock. Distill the checked inverse for the first milestone once source/runner/conformance requirements are satisfied.",
+  "next_action": "Package the first coherent milestone from the checked inverse, primitive-input bounds and sourced material/boundary diagnostics: self-contained canonical note, declared-input primary runner with canonical cache, exact dependency closure and applicable conformance checks, then open/verify/attach its PR. In parallel scientific planning, identify a coupled response observable with fixed action parameters and justified preparation/readout; do not infer a physical mass from Vsecond/Z or adopt the hypothetical global geometry as observed.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
     "static spherical material-vacuum intervals",
     "metric reconstruction and uncertainty from observations",
-    "normalization and common field-range overlap"
+    "normalization and common field-range overlap",
+    "primitive channel alignment and derivative-error certificates",
+    "known material stress/action and boundary data for sourced reconstruction"
   ],
   "independent_check": {
     "status": "focused check complete; no material mathematical error found within stated chart",
@@ -37,7 +39,7 @@
     "relative_map_checks": 27,
     "failures": 0,
     "not_formal_audit": true,
-    "readout_intake": "author-only conceptual probe; not in the final focused report"
+    "readout_intake": "Ideal coherent-carrier cancellation and metric-level ambiguity independently checked in independent_block02/INDEPENDENT_CHECK.md; external Moyer citation and empirical implications were outside that check."
   },
   "milestones": [],
   "owned_jobs": [],
@@ -45,7 +47,7 @@
   "worker_pid": null,
   "previous_campaigns": "all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json",
   "global_stop": null,
-  "strongest_checked_result": "Conditional relative F profile from ideal clock/radar/orbit functions, with a deterministic metric-input error bound; common-action equality requires translated reconstructed functions on genuinely overlapping F ranges.",
+  "strongest_checked_result": "A conditional relative-field inverse now has joint primitive-input error bounds and a finite radar-bin exponent bound. Known stress transports scalar normalization affinely. An explicit regular-center family retains a free central value with varying potentials, while a separately stipulated equatorial continuation yields a distinct constant branch. The action, history, absolute scale and actual observation bridge remain open.",
   "author_computation": {
     "core_exact_identities": 28,
     "core_mutations_detected": 3,
@@ -58,7 +60,16 @@
     "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
     "open_pr_count": 53,
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
-    "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof"
+    "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
+    "latest_refresh": {
+      "time": "2026-10-15T23:30:18.932733+00:00",
+      "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "open_pr_count": 54,
+      "new_pr": 9624,
+      "new_head": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+      "new_note_sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "scope": "Latest compact metadata and declared interface read; no full mathematical check or dependency adoption. Last complete path inventory remains the prior 53-PR snapshot."
+    }
   },
   "first_block_files": [
     "BLOCK01_DERIVATION_v5.md",
@@ -75,18 +86,105 @@
     "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
     "Measured Newton coupling is not identified with 1/F."
   ],
-  "milestone_status": "First mathematics checked; canonical note, runner/cache and milestone conformance remain to package. No new PR yet.",
+  "milestone_status": "All three scoped mathematical blocks have completed focused independent checks. First milestone canonical packaging and conformance remain; no PR created yet.",
   "checkpoint": {
-    "time": "2026-10-15T23:04:40.695270+00:00",
+    "time": "2026-10-15T23:58:08.316445+00:00",
     "lock": {
-      "expires_at": "2026-10-16T00:04:40.759554+00:00",
+      "expires_at": "2026-10-16T00:49:24.399482+00:00",
       "holder_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
       "owner": "direct-author-observations-backward-derivation",
-      "pid": 23283,
+      "pid": 37490,
       "purpose": "observations-backward-derivation-24h-20261015",
-      "started_at": "2026-10-15T23:04:40.759554+00:00"
+      "started_at": "2026-10-15T23:49:24.399482+00:00"
     },
     "direct_author_only": true,
-    "owned_jobs": []
+    "owned_jobs": [],
+    "artifact_format_recovery": "Exact unified-diff bytes encoded losslessly in JSON after a pre-commit whitespace rejection; no science source/output changes or scientific rerun."
+  },
+  "last_pushed_checkpoint": {
+    "checked_at": "2026-10-15T23:06:12.435032+00:00",
+    "commit": "22e0f18e6fc133c4f8b7db1e20d31fbc25e2f694",
+    "branch": "codex/observations-backward-derivation-20261015",
+    "remote_refs": {
+      "refs/heads/codex/observations-backward-derivation-20261015": "22e0f18e6fc133c4f8b7db1e20d31fbc25e2f694",
+      "refs/heads/main": "bbada1fe09b2d10d610560864d86b68c24a59713"
+    },
+    "worktree_clean": true,
+    "no_pr_created": true,
+    "scope": "Personal-author campaign checkpoint; first milestone packaging is still pending."
+  },
+  "block02": {
+    "source": "BLOCK02_DERIVATION_v2.md",
+    "source_sha256": "6af03812dccdf6c77322b20591f5cc72300c84e304f7fff56bf680af7e066c1e",
+    "author_output": "BLOCK02_CONTROLS_v2.json",
+    "author_output_sha256": "28137d9af03e61532e28616053217b38657518e642bc567fd35db785f3d593e1",
+    "symbolic_identities": 7,
+    "mutations_detected": 4,
+    "numeric_controls": 17,
+    "smooth_spike_controls": 3,
+    "independent_check": {
+      "status": "completed; no material mathematical error found in declared scope",
+      "report": "independent_block02/INDEPENDENT_CHECK.md",
+      "report_sha256": "b8093ee62fd45f9dec8a16a04f14a2abb979210f10de4be7725bab677354c9a2",
+      "manifest_sha256": "18d33ca49ebf7084c02a278d88fa7b3abb067ea7c5070344dcbfb37945424d88",
+      "manifest_entries_verified": 12,
+      "checks": 42,
+      "failures": 0,
+      "scope": "Independent finite-difference and completed-square proofs plus synthetic controls; not empirical validation or formal audit."
+    },
+    "data_status": "synthetic mathematics only",
+    "author_runner_sha256": "e51b8a927b4b9264d37be9e76dd0859b5f623ec7949777bb9319c39bfbc6dd71",
+    "author_source": "BLOCK02_DERIVATION_v1.md",
+    "author_source_sha256": "2b65e7cc57f06b145792ab4623dd78d78e9b86f747a2bb5b927cff9295e8f448",
+    "source_version_relation": "Root output binds v1; v2 only restricts the relabeling derivative to be strictly positive. Root relabeling controls already assume that stricter domain. The independent final report directly binds v2.",
+    "control_correction": "Current v2 output corrects the compact bump support to [-1/4,1/4]. Original v1 runner/output preserved; see BLOCK02_ROOT_CORRECTION_v1.md."
+  },
+  "material_candidate": {
+    "source": "BLOCK03_MATERIAL_CANDIDATE_v1.md",
+    "source_sha256": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+    "output": "MATERIAL_CANDIDATE_CONTROLS_v2.json",
+    "output_sha256": "9661d79a5d7935fea86ae9b4cc07a3ad505f390f64cfedf9000fce26c797af3c",
+    "root_exact_checks": 20,
+    "mutations_detected": 4,
+    "independent_check": {
+      "status": "completed; no material error found in the stated hypotheses",
+      "agent": "/root/common_action_check",
+      "report": "independent_block03/INDEPENDENT_CHECK.md",
+      "report_sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
+      "manifest_sha256": "8a362eb4b273daeb7e7193a2836eafb5c82a81d5c4e1efd845504e6eda25c034",
+      "manifest_entries_verified": 19,
+      "core_checks": 35,
+      "boundary_checks": 13,
+      "conservation_dimensions_provenance_checks": 3,
+      "failed_completed_checks": 0,
+      "interrupted_attempts": 1,
+      "empirical_validation": false,
+      "not_formal_audit": true
+    },
+    "result": "Affine known-stress field transport plus an explicit regular-center family with common static metric/dust density/kinetic function and varying potential coefficient; not observed data or a global uniqueness/no-go claim."
+  },
+  "material_boundary_probe": {
+    "source": "BLOCK03_BOUNDARY_PROBE_v1.md",
+    "source_sha256": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc",
+    "author_output": "BLOCK03_BOUNDARY_CONTROLS_v1.json",
+    "author_output_sha256": "7615cc6db8587940ddd469f8a078e399306964d340fe786ffa42435943957d69",
+    "root_identities": 5,
+    "root_mutations": 2,
+    "scope": "Additional hypothetical round-sphere/dust continuation, not an observed input or a replacement for the local domain. Its constant branch is separately derived, not a singular endpoint substituted in the nonconstant action.",
+    "independent_check": {
+      "status": "completed; no material error found in the stated hypotheses",
+      "agent": "/root/common_action_check",
+      "report": "independent_block03/INDEPENDENT_CHECK.md",
+      "report_sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
+      "manifest_sha256": "8a362eb4b273daeb7e7193a2836eafb5c82a81d5c4e1efd845504e6eda25c034",
+      "manifest_entries_verified": 19,
+      "core_checks": 35,
+      "boundary_checks": 13,
+      "conservation_dimensions_provenance_checks": 3,
+      "failed_completed_checks": 0,
+      "interrupted_attempts": 1,
+      "empirical_validation": false,
+      "not_formal_audit": true
+    }
   }
 }

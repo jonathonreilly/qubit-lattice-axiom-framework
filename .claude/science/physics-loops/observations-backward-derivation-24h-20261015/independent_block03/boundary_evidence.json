@@ -1,0 +1,134 @@
+{
+  "kind": "focused_independent_check_not_formal_audit",
+  "utc_time": "2026-10-15T23:44:05.602995+00:00",
+  "source_sha256": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc",
+  "runner_sha256": "775240e9140a421700c17e1f09b75b68f23a9e59e69a0671e221fe6e17dab79d",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "checks": [
+    {
+      "name": "proper-radius Ricci tensor from Christoffel symbols",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "proper-radius four-dimensional product curvature",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "angular scalar Hessian before any areal-radius division",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "regular-coordinate scalar transport coefficient",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "off-equator scalar transport solution",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "off-equator invariant amplitude",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "equator transport coefficient vanishes",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "proper-radius metric remains regular through the equator",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "constant branch metric and scalar equations",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "constant branch leaves higher potential coefficients undetermined",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "local-center profile becomes the secant-squared form",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "local positive branch reaches zero at the stated radius",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "exact boundary source identity",
+      "kind": "provenance",
+      "ok": true,
+      "actual": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc",
+      "expected": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc"
+    }
+  ],
+  "pass": 13,
+  "fail": 0
+}

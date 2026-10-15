@@ -1,0 +1,140 @@
+{
+  "kind": "provisional campaign dependency record; no audit authority",
+  "items": [
+    {
+      "id": "metric_inverse",
+      "source": "BLOCK01_DERIVATION_v5.md",
+      "source_sha256": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
+      "parents": [],
+      "claim": "Angular-minus-time field equation determines the local logarithmic field slope under the single-scalar static-vacuum chart.",
+      "conditions": "candidate action class; universal matter metric; positive smooth metric and field; d and u nonzero",
+      "independent_report": "independent_block01/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "82bdaf95361ea9a6211d3318d05f393eb67e4c8af3cf59f779397d39d9924ece",
+      "status": "focused conditional mathematics checked"
+    },
+    {
+      "id": "action_registration",
+      "source": "BLOCK01_DERIVATION_v5.md",
+      "source_sha256": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
+      "parents": [
+        "metric_inverse"
+      ],
+      "claim": "Reconstructed action restrictions must agree after field-log translations where the field ranges actually overlap.",
+      "conditions": "actual shared field values; no overlap imposed or inferred from separate metrics",
+      "independent_report": "independent_block01/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "82bdaf95361ea9a6211d3318d05f393eb67e4c8af3cf59f779397d39d9924ece",
+      "status": "focused conditional mathematics checked"
+    },
+    {
+      "id": "relative_profile",
+      "source": "BLOCK01_DERIVATION_v5.md",
+      "source_sha256": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
+      "parents": [
+        "metric_inverse"
+      ],
+      "claim": "Integrating the field slope eliminates higher metric derivatives from the relative-field expression.",
+      "conditions": "connected chart; exact endpoints; normalizing constant remains open",
+      "independent_report": "independent_block01/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "82bdaf95361ea9a6211d3318d05f393eb67e4c8af3cf59f779397d39d9924ece",
+      "status": "focused conditional mathematics checked"
+    },
+    {
+      "id": "ideal_readout_map",
+      "source": "BLOCK01_DERIVATION_v5.md",
+      "source_sha256": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
+      "parents": [
+        "relative_profile"
+      ],
+      "claim": "Ideal identified clocks, radial timing and circular motion determine the relative-field functional.",
+      "conditions": "independent physical areal radius and properly identified measurement channels",
+      "independent_report": "independent_block01/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "82bdaf95361ea9a6211d3318d05f393eb67e4c8af3cf59f779397d39d9924ece",
+      "status": "focused conditional mathematics checked"
+    },
+    {
+      "id": "primitive_error_transfer",
+      "source": "BLOCK02_DERIVATION_v2.md",
+      "source_sha256": "6af03812dccdf6c77322b20591f5cc72300c84e304f7fff56bf680af7e066c1e",
+      "parents": [
+        "ideal_readout_map"
+      ],
+      "claim": "The shared-label functional obeys the stated deterministic joint-input error bound.",
+      "conditions": "common positive envelopes; value/derivative errors and alignment certified externally",
+      "independent_report": "independent_block02/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "b8093ee62fd45f9dec8a16a04f14a2abb979210f10de4be7725bab677354c9a2",
+      "status": "focused conditional mathematics checked"
+    },
+    {
+      "id": "finite_bin_bound",
+      "source": "BLOCK02_DERIVATION_v2.md",
+      "source_sha256": "6af03812dccdf6c77322b20591f5cc72300c84e304f7fff56bf680af7e066c1e",
+      "parents": [
+        "ideal_readout_map"
+      ],
+      "claim": "Radar increments imply a weighted quadratic-integral lower bound with endpoint factors retained.",
+      "conditions": "positive weight and certified bin bounds; no upper derivative or endpoint control supplied",
+      "independent_report": "independent_block02/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "b8093ee62fd45f9dec8a16a04f14a2abb979210f10de4be7725bab677354c9a2",
+      "status": "focused conditional mathematics checked"
+    },
+    {
+      "id": "coherent_transfer_probe",
+      "source": "BLOCK01_READOUT_INTAKE_v1.md",
+      "source_sha256": "6d8dc4094320a13731ee1366cf5343076f82b7c106fded48496807fd6d933e33",
+      "parents": [],
+      "claim": "Static coherent turnaround cancels the remote lapse in the ideal carrier ratio.",
+      "conditions": "ideal static endpoints, fixed emission and immediate coherent turnaround; empirical provenance outside focused check",
+      "independent_report": "independent_block02/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "b8093ee62fd45f9dec8a16a04f14a2abb979210f10de4be7725bab677354c9a2",
+      "status": "focused conditional mathematics checked"
+    },
+    {
+      "id": "sourced_transport_candidate",
+      "source": "BLOCK03_MATERIAL_CANDIDATE_v1.md",
+      "source_sha256": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+      "parents": [
+        "metric_inverse"
+      ],
+      "claim": "Known material anisotropy changes homogeneous scalar transport to an affine boundary-value map.",
+      "conditions": "known stress plus metric; boundary F remains unspecified",
+      "independent_report": "independent_block03/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
+      "status": "focused conditional mathematics checked; physical realization and response remain open"
+    },
+    {
+      "id": "regular_center_candidate",
+      "source": "BLOCK03_MATERIAL_CANDIDATE_v1.md",
+      "source_sha256": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+      "parents": [
+        "sourced_transport_candidate"
+      ],
+      "claim": "An explicit family varies the potential coefficient and central F at fixed regular metric, dust density and kinetic function.",
+      "conditions": "chosen dust action/state; local ball; no exterior match, nonlinear stability or empirical identification",
+      "independent_report": "independent_block03/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
+      "status": "focused conditional mathematics checked; physical realization and response remain open"
+    },
+    {
+      "id": "global_domain_boundary_probe",
+      "source": "BLOCK03_BOUNDARY_PROBE_v1.md",
+      "source_sha256": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc",
+      "parents": [
+        "sourced_transport_candidate"
+      ],
+      "claim": "The separately stipulated static round-sphere/dust continuation has a finite constant-field branch satisfying value/slope conditions on the potential.",
+      "conditions": "Hypothetical global domain, static spherical scalar, smoothness through the equator; does not select the actual universe or import a closed history.",
+      "independent_report": "independent_block03/INDEPENDENT_CHECK.md",
+      "independent_report_sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
+      "status": "focused conditional mathematics checked; physical realization and response remain open"
+    }
+  ],
+  "terminal_open_obligations": [
+    "Actual independently calibrated physical channels and error certificates",
+    "Absolute and cross-environment F normalization",
+    "Physical action/potential selection",
+    "Initial state and bounded history",
+    "Dimensional scales and source/environment response"
+  ],
+  "empirical_validation": false,
+  "no_data_newly_opened": true
+}

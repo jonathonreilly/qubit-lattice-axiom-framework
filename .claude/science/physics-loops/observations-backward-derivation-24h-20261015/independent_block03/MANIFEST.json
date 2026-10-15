@@ -1,0 +1,105 @@
+{
+  "kind": "focused_independent_check_not_formal_audit",
+  "created_utc": "2026-10-15T23:52:13.785439+00:00",
+  "directory": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_block03",
+  "sources": {
+    "BLOCK03_MATERIAL_CANDIDATE_v1.md": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+    "BLOCK03_BOUNDARY_PROBE_v1.md": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc"
+  },
+  "completed_checks": {
+    "material": 35,
+    "boundary": 13,
+    "conservation_dimensions_provenance": 3
+  },
+  "completed_failed_checks": 0,
+  "interrupted_attempts": 1,
+  "no_checker_pending": true,
+  "files": {
+    "INDEPENDENT_CHECK.md": {
+      "sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
+      "bytes": 11875
+    },
+    "SESSION_FAILURES.md": {
+      "sha256": "6cb32163b8e3214cc5256e46dd790ee66c328edaf7b15581b6132d19bb1816c7",
+      "bytes": 2869
+    },
+    "attempt01_process_cost.txt": {
+      "sha256": "4db9ee9749979e28c0666ff16de0b39c4bf3ff5fe3eaa9dc9fa1e40aa4c755e6",
+      "bytes": 300
+    },
+    "attempt02_changes.json": {
+      "sha256": "a73ca4b0e77dd3fd344d6bf7ecd311168e54f5839fc662c4e8b2dacdaf48a7ac",
+      "bytes": 1587
+    },
+    "attempt02_execution.json": {
+      "sha256": "0d149c7d753f601ddabdfe993faa4afb3ac50a7c4ad2a931eacbed9f36a604fc",
+      "bytes": 273
+    },
+    "boundary_evidence.json": {
+      "sha256": "fe495c6cd4c81ec86250c5b9b3c0d1eaebed8acd7e8ea7b642ff83eece570470",
+      "bytes": 2972
+    },
+    "boundary_stdout.txt": {
+      "sha256": "49dcebfddde9bc13bb85fbc10d499bf274a6353dccd15e582bfa7561d9d4e295",
+      "bytes": 721
+    },
+    "check_boundary.py": {
+      "sha256": "775240e9140a421700c17e1f09b75b68f23a9e59e69a0671e221fe6e17dab79d",
+      "bytes": 4583
+    },
+    "check_conservation.py": {
+      "sha256": "b466abeec4e79ca11a75e0a896ca60f531f31f327781dceac6b7150e04b6748d",
+      "bytes": 2927
+    },
+    "check_material.py": {
+      "sha256": "08127c4d27024e5691ae8a0cb62a190741e32b94d48537de6c5ca2bfdc6140ee",
+      "bytes": 10443
+    },
+    "check_material_factored.py": {
+      "sha256": "72c9a18dd006b5b6aa6dd4e83d1e76bf68bf7720eb5affbea50b5a767d3f7354",
+      "bytes": 10535
+    },
+    "conservation_evidence.json": {
+      "sha256": "a9b9dc4bf7eaf3afa493398803588e3d735e8a80dc8a37ee30ceead392594878",
+      "bytes": 1177
+    },
+    "conservation_stdout.txt": {
+      "sha256": "fb308d9aeacdf49e72f477709a76925bb1ec93e429dafaac0c8b37d51dbd5325",
+      "bytes": 186
+    },
+    "factored_evidence.json": {
+      "sha256": "31f8981b98ff94f276b49273e3989930cf1e3046e9c5fadbbeaf48d91b612ace",
+      "bytes": 8197
+    },
+    "factored_stdout.txt": {
+      "sha256": "ed7cb561f40b59a5a4db5c7a7445da718955607a959f237a9e0d15b6c4fd5fe3",
+      "bytes": 3937
+    },
+    "run_stdout.txt": {
+      "sha256": "6d215deebf2e5bab525e1f6f59ed247a9ed2256a8ba3382bafdc10215112e157",
+      "bytes": 4015
+    },
+    "serialization_prior/INDEPENDENT_CHECK.md": {
+      "sha256": "71bfd5a93da5e80fa62fa9ffa607f499824ccd8b9b1aa3f38602c4b07c464db6",
+      "bytes": 11242
+    },
+    "serialization_prior/MANIFEST.json": {
+      "sha256": "91dffd0b9c76d69f1c49229abb3003b43808d69df19cc6c2edad254db28806fc",
+      "bytes": 3050
+    },
+    "serialization_prior/SESSION_FAILURES.md": {
+      "sha256": "fbcc551382ba4f4d2d015573a72c7dc39bb4cc7a85d89307abdd12619c13b4d9",
+      "bytes": 2322
+    }
+  },
+  "updated_utc": "2026-10-15T23:56:53.701917+00:00",
+  "serialization_correction": {
+    "scope": "artifact format only; no science rerun",
+    "container": "attempt02_changes.json",
+    "original_raw_diff_sha256": "2210e4771c8622611ec4a9d8f38386b71fdbd4ded5fea81a0ee7ce9d01ee1cb4",
+    "original_raw_diff_bytes": 1060,
+    "roundtrip_bytes_verified": true,
+    "prior_manifest_sha256": "91dffd0b9c76d69f1c49229abb3003b43808d69df19cc6c2edad254db28806fc",
+    "prior_versions_directory": "serialization_prior"
+  }
+}

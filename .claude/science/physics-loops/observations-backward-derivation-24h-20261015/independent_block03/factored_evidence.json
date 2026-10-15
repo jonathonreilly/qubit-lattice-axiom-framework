@@ -1,0 +1,390 @@
+{
+  "kind": "focused_independent_check_not_formal_audit",
+  "utc_time": "2026-10-15T23:50:20.884326+00:00",
+  "source_path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/BLOCK03_MATERIAL_CANDIDATE_v1.md",
+  "source_sha256": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+  "runner_sha256": "72c9a18dd006b5b6aa6dd4e83d1e76bf68bf7720eb5affbea50b5a767d3f7354",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "checks": [
+    {
+      "name": "sourced angular-minus-time relation from action variation",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "sourced radial-minus-time kinetic reconstruction",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "sourced temporal potential reconstruction",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "affine integrating-factor solution",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "dust multiplier variation",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "dust scalar variation is current conservation",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "declared static dust satisfies its constraint and continuity equation",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "dust stress from lapse variation before imposing its constraint",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "dust radial and angular pressures vanish on shell",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "wrong dust clock normalization fails the multiplier constraint",
+      "kind": "defect_detected",
+      "ok": true,
+      "residual": "-(alpha - 1)*(alpha + 1)"
+    },
+    {
+      "name": "imposing the zero dust Lagrangian before variation loses nonzero density stress",
+      "kind": "defect_detected",
+      "ok": true,
+      "residual": "-density*r**2/sqrt(-k*r**2 + 1)"
+    },
+    {
+      "name": "Cartesian metric inverse",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "Cartesian connection is regular at the center",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "direct Cartesian Ricci tensor",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "direct curvature scalar",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "Cartesian scalar Hessian",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "Cartesian scalar gradient norm and Laplacian",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "entire family: temporal metric equation",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "entire family: all Cartesian spatial metric equations",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "entire family: direct scalar equation",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "regular center metric and connection",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "regular center field, Hessian and Laplacian",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "finite center kinetic and potential values",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "positive-kinetic identity",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "normalized center homogeneous solution",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "center-based affine integration yields the proposed profile",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "radial profile derivative",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "field-domain denominator identity",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "changed central scalar at fixed potential fails the mixed temporal metric equation",
+      "kind": "defect_detected",
+      "ok": true,
+      "residual": "3*k*(C - C2)*(2*C2*k - density)/((2*C*k - density)*(k*x**2 + k*y**2 + k*z**2 - 1)**2)"
+    },
+    {
+      "name": "changed central scalar at fixed potential fails the scalar equation",
+      "kind": "defect_detected",
+      "ok": true,
+      "residual": "12*k**2*(C - C2)/((2*C*k - density)*(k*x**2 + k*y**2 + k*z**2 - 1))"
+    },
+    {
+      "name": "changed source density at fixed geometry/profile/action fails the temporal equation",
+      "kind": "defect_detected",
+      "ok": true,
+      "residual": "eta"
+    },
+    {
+      "name": "different potentials on a common field interval",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "center potential derivative is independent of C",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "center V second derivative divided by Z is independent of C",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "exact source identity",
+      "kind": "provenance",
+      "ok": true,
+      "actual": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+      "expected": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7"
+    }
+  ],
+  "pass": 35,
+  "fail": 0
+}

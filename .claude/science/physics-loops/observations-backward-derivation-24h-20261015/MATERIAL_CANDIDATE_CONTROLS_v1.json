@@ -1,0 +1,117 @@
+{
+  "kind": "author exact synthetic substitution; independent check pending",
+  "runner_sha256": "8c9349312204374a93742390cce60adbbf318b6813fbb9b63a946f71f15ed205",
+  "source_sha256": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+  "sympy": "1.14.0",
+  "checks": [
+    {
+      "name": "metric temporal Einstein component",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric radial Einstein component",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric angular Einstein component",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "source affine transport equation",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial field derivative",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "full time equation",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "full radial equation",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "full angular equation",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "full scalar equation",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive Einstein kinetic coefficient",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center field limit",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center field derivative",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center second derivative",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center Z limit",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center V limit",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust multiplier constraint",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust current continuity",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust radial conservation with N=1",
+      "ok": true,
+      "residual": "0"
+    }
+  ],
+  "mutations": [
+    {
+      "name": "change scalar C at fixed potential coefficient",
+      "detected": true,
+      "residual": "3*k*(C - Cnew)*(2*Cnew*k - rho)/((2*C*k - rho)*(k*r**2 - 1)**2)"
+    },
+    {
+      "name": "change source density at fixed action/profile",
+      "detected": true,
+      "residual": "rho"
+    },
+    {
+      "name": "delete potential at fixed profile",
+      "detected": true,
+      "residual": "-(-6*C*k + k**2*r**4*rho - 2*k*r**2*rho + 4*rho)/(2*(k*r**2 - 1)**2)"
+    }
+  ],
+  "scope": "Local regular-center dust family only; no exterior matching, nonlinear stability or empirical validation.",
+  "pass": true
+}

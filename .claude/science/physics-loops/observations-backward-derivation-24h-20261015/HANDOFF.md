@@ -70,3 +70,91 @@ remain before PR creation. No formal audit or retained claim; no main push or
 science merge. The heartbeat is ACTIVE in this same chat, ID
 observations-backward-derive-assumptions-october-15. Read runtime AUTOMATION.json
 for its exact prompt; delete it after final completion at the fixed deadline.
+
+## Continuation at 2026-10-15 23:30 UTC
+
+Main remains bbada1fe. Compact PR refresh now has 54 open PRs; new #9624 is
+9ca474a32b3a4799d2d14cfee7580d77750422b4. Its declared interface is a conditional
+finite-plant autonomous compiler composition. It is background only; no proof
+premise is imported. The source note was saved and its interface inspected,
+not fully independently reviewed. The earlier complete path inventory still
+covers its original 53 PRs, not this later addition.
+
+BLOCK02_DERIVATION_v2.md now proves the primitive-input error bound, keeping
+areal-radius errors and shared clock dependence, plus a finite radar-bin lower
+bound on the exponent. Root's checks pass: seven symbolic identities, four
+mutations, 17 numeric controls and three smooth-sample ambiguity controls.
+The finite-sample construction concerns observation functions, not a family of
+healthy scalar solutions. The metric model, data alignment and derivative-error
+bounds remain explicit; no interpolation or noise model is declared derived.
+The same focused checker has completed 42 computation checks without failures;
+read its final report and identity manifest before downstream use. Its sole
+relabeling-domain clarification is incorporated in v2.
+
+BLOCK03_MATERIAL_CANDIDATE_v1.md is a new, separately provisional root derivation.
+It retains known material stress in the scalar transport equation and constructs
+a smooth-center dust family with the same metric/density and varying scalar
+central value/potential coefficient. Root's direct field/scalar/dust checks pass
+20 identities and detect four mutations. Independent checking is pending; do not
+promote it to an established observational degeneracy or global theorem. The
+original runner used trivial static dust-condition checks; the stronger v2 runner
+now varies the declared dust action and tests a wrong clock normalization. Both
+versions and outputs are preserved. No failed mathematical run was concealed.
+
+Next: bind the block02 report; focus-check the material family; package the first
+coherent milestone with current conformance requirements. Identify actual
+independent observational channels before applying the bounds to real data.
+No new raw or reserved dataset was opened, and no scalar initial state, potential
+or absolute scale has been selected. The original fixed deadline remains.
+
+## Bound report integrated and material check underway
+
+The completed block02 report and its 12 manifest entries have been verified.
+Use BLOCK02_CONTROLS_v2.json for current root controls. It corrects the bump
+support-domain mismatch; the older runner and output are archived. Its source
+hash is intentionally the original v1. The independent report directly binds
+v2, whose strictly-positive-relabeling qualification matches root's actual
+control domain. The ideal readout calculation is now covered by the focused
+block02 check; external source provenance and empirical application remain outside
+that check. See BLOCK02_ROOT_CORRECTION_v1.md for the real correction history.
+
+The existing focused checker is checking block03's source independently without
+using root's material runner. Do not infer its outcome until the source-bound
+report arrives. No detached author has been launched. The canonical first
+milestone note, runner envelope and conformance record remain the next delivery
+work; this checkpoint does not yet claim PR readiness.
+
+A small additional boundary probe is preserved in BLOCK03_BOUNDARY_PROBE_v1.md.
+Its hypothetical whole-sphere continuation would constrain a separate constant
+branch at the regular equator. This global domain is not adopted as observed,
+and the singular nonconstant action formulas are not evaluated there. Root
+checks five identities and two mutations; the focused checker reports 13 exact
+proper-radius checks while its full material computation/report remain pending.
+See MILESTONE_PLAN_v1.md for the fixed-action response guard: a density disturbance
+must not retune action parameters, and V''/Z alone is not a physical mass.
+
+## Current resume point: material and boundary check complete
+
+Read independent_block03/INDEPENDENT_CHECK.md, now bound to both exact v1
+sources. Root read it and verified its 16 artifact hashes and source identities.
+There are 35 completed core checks, 13 boundary checks and three conservation/
+dimension/provenance checks, with zero completed-check failures. The slow first
+Cartesian attempt is preserved and excluded from successful counts. Its bounded
+rational-reduction replacement finished in 3.74 seconds; no checker remains active.
+The earlier pending statements above and in initial frozen source drafts describe
+their historical state; current check status is this section and STATE.yaml.
+
+The first milestone can now integrate these scoped results. Package the canonical
+source, declared-input runner, canonical cache and all applicable conformance
+checks, then create, verify and attach its PR. Do this before expanding a large
+new dependency chain. The physical follow-up is a coupled response at fixed
+action parameters, with independently justified preparation/readout. The global
+spherical continuation was a hypothetical boundary probe, not an adopted observed
+cosmology or a chosen initial-history rule. No empirical tests have been run.
+
+Final packaging correction for this checkpoint: use the current block03 report
+and manifest (19 bound artifacts). Its exact failed-attempt checker diff is now
+losslessly stored in attempt02_changes.json to preserve significant context
+spaces without violating the pre-commit whitespace check. The older report and
+manifest remain in serialization_prior. This changes no scientific conclusion.
+Next remains first milestone packaging and then coupled fixed-action response.

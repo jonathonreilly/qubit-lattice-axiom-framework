@@ -1,6 +1,7 @@
 # Delivery
 
-No new PR yet. The first conditional mathematics has a focused independent check.
+No new PR yet. The inverse, primitive bounds, sourced material family and
+separate boundary probe now have scoped focused independent checks.
 The canonical source note, reproducible runner/cache, abstract-core extraction
 and milestone conformance gates remain to package. This checkpoint will be
 committed and pushed to codex/observations-backward-derivation-20261015 without

@@ -1,0 +1,39 @@
+{
+  "kind": "focused_independent_check_not_formal_audit",
+  "utc_time": "2026-10-15T23:49:13.766947+00:00",
+  "source_sha256": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+  "runner_sha256": "b466abeec4e79ca11a75e0a896ca60f531f31f327781dceac6b7150e04b6748d",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "checks": [
+    {
+      "name": "general material radial conservation from mixed tensor divergence",
+      "ok": true,
+      "residual": "0",
+      "computed_divergence": "(r*(pr(r) + rho(r))*Derivative(N(r), r) + r*N(r)*Derivative(pr(r), r) + 2*(pr(r) - pt(r))*N(r))/(r*N(r))"
+    },
+    {
+      "name": "declared action and construction dimensions agree",
+      "ok": true,
+      "mass_dimensions": {
+        "r": -1,
+        "T": -1,
+        "F": 2,
+        "C": 2,
+        "k": 2,
+        "rho": 4,
+        "Z": -2,
+        "V": 4,
+        "lambda": 4
+      }
+    },
+    {
+      "name": "exact material source identity",
+      "ok": true,
+      "actual": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
+      "expected": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7"
+    }
+  ],
+  "pass": 3,
+  "fail": 0
+}

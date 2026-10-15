@@ -1,0 +1,10 @@
+{
+  "attempt": "factored rational reduction with incremental progress",
+  "timeout_seconds": 120,
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_seconds": 3.738660874776542,
+  "user_seconds": 3.585319,
+  "system_seconds": 0.045964,
+  "max_rss_bytes_macos": 68812800
+}

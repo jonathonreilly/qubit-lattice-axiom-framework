@@ -1,0 +1,350 @@
+{
+  "kind": "author conditional mathematical controls; no empirical data",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "runner_sha256": "e51b8a927b4b9264d37be9e76dd0859b5f623ec7949777bb9319c39bfbc6dd71",
+  "source_sha256": "2b65e7cc57f06b145792ab4623dd78d78e9b86f747a2bb5b927cff9295e8f448",
+  "symbolic_checks": [
+    {
+      "name": "general observation-label formula from metric angular equation",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "increasing relabeling preserves endpoint P/q",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "increasing relabeling preserves integral density",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "nonlinear-label power metric reproduces field exponent",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "exact bin refinement surplus",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "finite-bin equality profile S=coef*r",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncertain D product split",
+      "kind": "symbolic_identity",
+      "ok": true,
+      "residual": "0"
+    }
+  ],
+  "mutations": [
+    {
+      "name": "extra radius Jacobian in integrand",
+      "detected": true,
+      "residual": "-5*(2*exp(2*z) - 1)*exp(-2*z)/2"
+    },
+    {
+      "name": "inverted endpoint radar slowness",
+      "detected": true,
+      "residual": "4/5"
+    },
+    {
+      "name": "drop shared clock contribution to D slope",
+      "detected": true,
+      "residual": "4/5"
+    },
+    {
+      "name": "reverse finite-bin lower inequality",
+      "detected": true,
+      "residual": "0.02648051389327864275056545479151"
+    }
+  ],
+  "numerical_controls": [
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "0.002",
+        "0.003",
+        "0.004"
+      ],
+      "actual": "0.0055874353423191977619375043841629",
+      "bound": "0.092131009316245665492926059226054",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "0.002",
+        "0.003",
+        "-0.006"
+      ],
+      "actual": "0.0070522005735737053268285007221436",
+      "bound": "0.1039181684322130271085837914573",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "0.002",
+        "-0.002",
+        "0.004"
+      ],
+      "actual": "0.0040877516940658929942172928367035",
+      "bound": "0.087484924244799713547785676985694",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "0.002",
+        "-0.002",
+        "-0.006"
+      ],
+      "actual": "0.00554360951493112695541370408878",
+      "bound": "0.099255882917171454384098186169639",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "-0.004",
+        "0.003",
+        "0.004"
+      ],
+      "actual": "0.001162740058436134060538743676072",
+      "bound": "0.13738137963517564917371422501018",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "-0.004",
+        "0.003",
+        "-0.006"
+      ],
+      "actual": "0.0026248796755462992932104357841849",
+      "bound": "0.14931613308884076749666663917484",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "-0.004",
+        "-0.002",
+        "0.004"
+      ],
+      "actual": "0.0003376105871622211482706797221148",
+      "bound": "0.13266740805768171362642399625529",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "0.002",
+        "-0.004",
+        "-0.002",
+        "-0.006"
+      ],
+      "actual": "0.0011156191995383070227317604127424",
+      "bound": "0.1445857105967033050387005439714",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "0.002",
+        "0.003",
+        "0.004"
+      ],
+      "actual": "0.0038435647626942202796365824739613",
+      "bound": "0.097634993565447172563084451662802",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "0.002",
+        "0.003",
+        "-0.006"
+      ],
+      "actual": "0.0023787581177334082335702514569553",
+      "bound": "0.10943970188626232558765057034492",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "0.002",
+        "-0.002",
+        "0.004"
+      ],
+      "actual": "0.0053413545591852690695007553272553",
+      "bound": "0.0929809057032322922946098884251",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "0.002",
+        "-0.002",
+        "-0.006"
+      ],
+      "actual": "0.0038854490127889183632252198792249",
+      "bound": "0.10476938058397044871313426206355",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "-0.004",
+        "0.003",
+        "0.004"
+      ],
+      "actual": "0.0082631584562670678914832806818505",
+      "bound": "0.14293519003985057084862626427533",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "-0.004",
+        "0.003",
+        "-0.006"
+      ],
+      "actual": "0.0068010729080822806860325014662183",
+      "bound": "0.15488771397215492170765485473616",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "-0.004",
+        "-0.002",
+        "0.004"
+      ],
+      "actual": "0.0097616128702457083977370759175961",
+      "bound": "0.13821311125962437243060932990019",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "joint primitive perturbation",
+      "parameters": [
+        "-0.003",
+        "-0.004",
+        "-0.002",
+        "-0.006"
+      ],
+      "actual": "0.0083084308372320358389176395729227",
+      "bound": "0.15014915086907007341904561195871",
+      "inside": true,
+      "bounds_from": "analytic envelopes, not a grid maximum",
+      "scope": "functional perturbations, not asserted field-equation solutions"
+    },
+    {
+      "name": "constant slowness strict/refined bin bound",
+      "actual": "0.69314718055994530941723212145818",
+      "coarse": "0.66666666666666666666666666666667",
+      "fine": "0.68571428571428571428571428571429",
+      "inside": true
+    }
+  ],
+  "finite_sample_witness": [
+    {
+      "epsilon": "0.125",
+      "radar_increment": "1.0",
+      "quadratic_integral": "0.71621916593269952265273744723493",
+      "proved_lower_bound": "0.027004672520387901159497328409766",
+      "endpoint_slowness": [
+        "1.0",
+        "1.0"
+      ],
+      "ok": true
+    },
+    {
+      "epsilon": "0.03125",
+      "radar_increment": "1.0",
+      "quadratic_integral": "0.82402661060745319180061767000835",
+      "proved_lower_bound": "0.10801869008155160463798931363907",
+      "endpoint_slowness": [
+        "1.0",
+        "1.0"
+      ],
+      "ok": true
+    },
+    {
+      "epsilon": "0.0078125",
+      "radar_increment": "1.0",
+      "quadratic_integral": "1.2560880521676863268784961251288",
+      "proved_lower_bound": "0.43207476032620641855195725455626",
+      "endpoint_slowness": [
+        "1.0",
+        "1.0"
+      ],
+      "ok": true
+    }
+  ],
+  "baseline_lower_bound": "0.66857246405235793933433637480559",
+  "bump_support": [
+    -0.25,
+    0.25
+  ],
+  "bump_normalization": "1.0",
+  "support_within_source_open_interval": true,
+  "pass": true
+}

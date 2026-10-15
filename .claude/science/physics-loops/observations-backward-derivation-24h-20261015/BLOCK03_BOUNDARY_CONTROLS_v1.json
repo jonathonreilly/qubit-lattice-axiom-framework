@@ -1,0 +1,19 @@
+{
+  "kind": "small conditional author probe; focused check pending",
+  "source_sha256": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc",
+  "runner_sha256": "dcd0614cdb86d5449b2dce8c652a425498bddd6fb81f8aaede9d46454268c401",
+  "sympy": "1.14.0",
+  "identities": {
+    "proper_radius_transport": "0",
+    "constant_time_equation": "0",
+    "constant_spatial_equation": "0",
+    "constant_scalar_equation": "0",
+    "divergent_amplitude": "0"
+  },
+  "mutations": {
+    "wrong_constant_value": "rho",
+    "wrong_potential_slope": "-3*k"
+  },
+  "pass": true,
+  "empirical_validation": false
+}

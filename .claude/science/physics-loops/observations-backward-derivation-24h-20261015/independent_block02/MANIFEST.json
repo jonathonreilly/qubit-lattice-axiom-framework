@@ -1,0 +1,14 @@
+{
+  "INDEPENDENT_CHECK.md": "b8093ee62fd45f9dec8a16a04f14a2abb979210f10de4be7725bab677354c9a2",
+  "SESSION_FAILURES.md": "c4258f73a4965487b2580ebfd5186612c06de1a36fb74b1493d57ebcf0b62a47",
+  "check_block02.py": "bb1d9acaad61516b2d2874ffe3ef9e5b8a2d0053c4f7ecf6eaf57d03b7fd6b4e",
+  "computed_evidence.json": "947525e17539c21617d6d4834e92d39b4fbd0e9c1c011f55f92e6ffed2ce6a2c",
+  "run01_checker.py": "fc0d76bce360a6d23f8c7a6cc01c519e6230e60969ee7bec554762ded63f2fcf",
+  "run01_evidence.json": "2692835fcd073d492469bed963b7dbf9b80703f933461e77640d86a530e548d9",
+  "run01_stdout.txt": "7cafb0d7bd6896d3c0c0d03cf235745fb9a38c436e6a6569b9680bd6726afd9b",
+  "run02_checker.py": "6dd98f1d09224debb9ace657d4f0f7dfbca5fefa17be9912c280fe1676cfc8dc",
+  "run02_evidence.json": "d761a625c0c2b296cc22ad1045487af89b99e2ad1262c22825db86a8e3bb7244",
+  "run02_stdout.txt": "4c72b6fc284c8ad92324d4d11a95d05ba7acc4616b869174c0cd187f7f715e2d",
+  "run03_failed_command.txt": "f9121e85b2f17d9ec97c811004b6c031fbb2fb6c942c07daaae68c4bd5594b71",
+  "run_stdout.txt": "6adc7c3f6b273c3ffe424e985102c73a0d4502c6e81df05545d5b17b856f086e"
+}

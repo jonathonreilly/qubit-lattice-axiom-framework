@@ -1,0 +1,2 @@
+  PID ELAPSED      TIME  %CPU    RSS STAT COMMAND
+35412   09:22   6:57.40  98.7 298800 Rs   /Library/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python .claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_block03/check_material.py

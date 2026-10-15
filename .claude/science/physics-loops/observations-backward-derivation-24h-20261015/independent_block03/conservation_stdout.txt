@@ -1,0 +1,4 @@
+PASS: general material radial conservation from mixed tensor divergence
+PASS: declared action and construction dimensions agree
+PASS: exact material source identity
+TOTAL: PASS=3 FAIL=0

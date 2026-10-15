@@ -4,4 +4,4 @@ target_blocker_text: "derive the remaining assumptions rather than supplying the
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: frontier_probe
-next_trace_action: "derive a common-action discriminator without a supplied potential; then check whether observations provide its required inputs"
+next_trace_action: "identify measured channels and normalization transport for the common-action discriminator; package the checked relative-field and finite-bin constraints"

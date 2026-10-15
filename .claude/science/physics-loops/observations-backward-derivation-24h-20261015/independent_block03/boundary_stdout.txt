@@ -1,0 +1,14 @@
+PASS: proper-radius Ricci tensor from Christoffel symbols
+PASS: proper-radius four-dimensional product curvature
+PASS: angular scalar Hessian before any areal-radius division
+PASS: regular-coordinate scalar transport coefficient
+PASS: off-equator scalar transport solution
+PASS: off-equator invariant amplitude
+PASS: equator transport coefficient vanishes
+PASS: proper-radius metric remains regular through the equator
+PASS: constant branch metric and scalar equations
+PASS: constant branch leaves higher potential coefficients undetermined
+PASS: local-center profile becomes the secant-squared form
+PASS: local positive branch reaches zero at the stated radius
+PASS: exact boundary source identity
+TOTAL: PASS=13 FAIL=0

@@ -1,0 +1,9 @@
+{
+  "kind": "lossless_utf8_evidence_serialization",
+  "original_filename": "attempt02_changes.diff",
+  "encoding": "utf-8",
+  "original_sha256": "2210e4771c8622611ec4a9d8f38386b71fdbd4ded5fea81a0ee7ce9d01ee1cb4",
+  "original_byte_count": 1060,
+  "raw_diff_utf8": "--- check_material.py\n+++ check_material_factored.py\n@@ -21,10 +21,11 @@\n \n \n def red(e):\n-    return s.factor(s.cancel(e))\n+    return s.factor(s.cancel(s.together(e)))\n \n \n def zero(name, expressions):\n+    print(\"BEGIN: \" + name, flush=True)\n     if not isinstance(expressions, (list, tuple)):\n         expressions = [expressions]\n     residuals = [red(e) for e in expressions]\n@@ -33,6 +34,7 @@\n \n \n def nonzero(name, e):\n+    print(\"BEGIN: \" + name, flush=True)\n     e = red(e)\n     checks.append({\"name\": name, \"kind\": \"defect_detected\", \"ok\": e != 0, \"residual\": str(e)})\n \n@@ -194,7 +196,7 @@\n     \"python\": platform.python_version(), \"sympy\": s.__version__,\n     \"checks\": checks, \"pass\": sum(bool(c[\"ok\"]) for c in checks), \"fail\": sum(not c[\"ok\"] for c in checks),\n }\n-(HERE / \"computed_evidence.json\").write_text(json.dumps(report, indent=2) + \"\\n\")\n+(HERE / \"factored_evidence.json\").write_text(json.dumps(report, indent=2) + \"\\n\")\n for item in checks:\n     print(f\"{'PASS' if item['ok'] else 'FAIL'}: {item['name']}\")\n     if \"residual\" in item:\n",
+  "reason": "Unified-diff context spaces are significant evidence bytes. Encoding them in JSON avoids trailing whitespace in the added text artifact without normalizing the evidence."
+}

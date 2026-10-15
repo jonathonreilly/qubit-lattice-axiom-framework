@@ -17,6 +17,9 @@ not new registered axioms and do not count as retired imports.
 | Initial state and bounded history | Unresolved | Actual causal/energy/history evidence; no chosen vacuum |
 | Dimensional scales and G identification | Unresolved | Derive measurement bridge; do not set G=1/F |
 | Ideal clock/radar/orbit and areal radius | Supplied ideal inputs, not measured in this campaign | Primitive calibration/noise and radius errors; independent channels |
+| Derivative and alignment certificates for the observed channels | Required input to the deterministic bound; not inferred from finite samples | Independent instrument/shape bounds, or finite-bin method with endpoint factors retained |
+| Known material stress and dust action in block 03 | Declared construction premise; not actual matter inferred from observations | Coupled response, boundary completion and independently measured source properties |
+| Regularity as a scalar normalization selector | Local center regularity leaves a free constant in the checked family; a separate stipulated equatorial domain selects a constant branch | Actual observed response/boundary constraints, without adopting the hypothetical global domain |
 | Coherent turnaround constant k and calibration | Instrument/forward-model inputs | Real phase-transfer, delays and stability, not nominal values alone |
 
 Separate C_i are adjustable while reconstructing unknown action functions; once

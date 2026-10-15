@@ -1,0 +1,75 @@
+BEGIN: sourced angular-minus-time relation from action variation
+BEGIN: sourced radial-minus-time kinetic reconstruction
+BEGIN: sourced temporal potential reconstruction
+BEGIN: affine integrating-factor solution
+BEGIN: dust multiplier variation
+BEGIN: dust scalar variation is current conservation
+BEGIN: declared static dust satisfies its constraint and continuity equation
+BEGIN: dust stress from lapse variation before imposing its constraint
+BEGIN: dust radial and angular pressures vanish on shell
+BEGIN: wrong dust clock normalization fails the multiplier constraint
+BEGIN: imposing the zero dust Lagrangian before variation loses nonzero density stress
+BEGIN: Cartesian metric inverse
+BEGIN: Cartesian connection is regular at the center
+BEGIN: direct Cartesian Ricci tensor
+BEGIN: direct curvature scalar
+BEGIN: Cartesian scalar Hessian
+BEGIN: Cartesian scalar gradient norm and Laplacian
+BEGIN: entire family: temporal metric equation
+BEGIN: entire family: all Cartesian spatial metric equations
+BEGIN: entire family: direct scalar equation
+BEGIN: regular center metric and connection
+BEGIN: regular center field, Hessian and Laplacian
+BEGIN: finite center kinetic and potential values
+BEGIN: positive-kinetic identity
+BEGIN: normalized center homogeneous solution
+BEGIN: center-based affine integration yields the proposed profile
+BEGIN: radial profile derivative
+BEGIN: field-domain denominator identity
+BEGIN: changed central scalar at fixed potential fails the mixed temporal metric equation
+BEGIN: changed central scalar at fixed potential fails the scalar equation
+BEGIN: changed source density at fixed geometry/profile/action fails the temporal equation
+BEGIN: different potentials on a common field interval
+BEGIN: center potential derivative is independent of C
+BEGIN: center V second derivative divided by Z is independent of C
+PASS: sourced angular-minus-time relation from action variation
+PASS: sourced radial-minus-time kinetic reconstruction
+PASS: sourced temporal potential reconstruction
+PASS: affine integrating-factor solution
+PASS: dust multiplier variation
+PASS: dust scalar variation is current conservation
+PASS: declared static dust satisfies its constraint and continuity equation
+PASS: dust stress from lapse variation before imposing its constraint
+PASS: dust radial and angular pressures vanish on shell
+PASS: wrong dust clock normalization fails the multiplier constraint
+  -(alpha - 1)*(alpha + 1)
+PASS: imposing the zero dust Lagrangian before variation loses nonzero density stress
+  -density*r**2/sqrt(-k*r**2 + 1)
+PASS: Cartesian metric inverse
+PASS: Cartesian connection is regular at the center
+PASS: direct Cartesian Ricci tensor
+PASS: direct curvature scalar
+PASS: Cartesian scalar Hessian
+PASS: Cartesian scalar gradient norm and Laplacian
+PASS: entire family: temporal metric equation
+PASS: entire family: all Cartesian spatial metric equations
+PASS: entire family: direct scalar equation
+PASS: regular center metric and connection
+PASS: regular center field, Hessian and Laplacian
+PASS: finite center kinetic and potential values
+PASS: positive-kinetic identity
+PASS: normalized center homogeneous solution
+PASS: center-based affine integration yields the proposed profile
+PASS: radial profile derivative
+PASS: field-domain denominator identity
+PASS: changed central scalar at fixed potential fails the mixed temporal metric equation
+  3*k*(C - C2)*(2*C2*k - density)/((2*C*k - density)*(k*x**2 + k*y**2 + k*z**2 - 1)**2)
+PASS: changed central scalar at fixed potential fails the scalar equation
+  12*k**2*(C - C2)/((2*C*k - density)*(k*x**2 + k*y**2 + k*z**2 - 1))
+PASS: changed source density at fixed geometry/profile/action fails the temporal equation
+  eta
+PASS: different potentials on a common field interval
+PASS: center potential derivative is independent of C
+PASS: center V second derivative divided by Z is independent of C
+PASS: exact source identity
+TOTAL: PASS=35 FAIL=0

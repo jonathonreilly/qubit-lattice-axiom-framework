@@ -1,0 +1,22 @@
+{
+  "derivation": {
+    "bytes": 27200,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/DERIVATION.md",
+    "sha256": "9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7"
+  },
+  "editable_prompts_changed": [],
+  "key_contracts": [
+    "tau=T+w; clock output moves through the observation window",
+    "A_cl=4P+2R+4; mediator constants retain tau dependence",
+    "Both physically distinct mediator families priced separately",
+    "Finite supplied release retains or charges additional lambda Jbar aging and exact scalar phase",
+    "Actual unconditional retained marginal, source/release/positivity/timing/calibration obligations remain",
+    "Zero-runtime branch bypasses controller; growing norms do not give moment accuracy"
+  ],
+  "metadata_subprocesses": 2,
+  "scientific_programs_run": 0,
+  "source_blobs": 22,
+  "source_exposed": true,
+  "source_rows": 22,
+  "status": "new provisional analytic resource composition; separate check and root acceptance open"
+}

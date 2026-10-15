@@ -1,0 +1,25 @@
+{
+  "kind": "actual_polynomial_path_mediator_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+  "actual_git_base": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+  "actual_branch_at_binding": "physics-loop/toe-basis-state-clock-20261015",
+  "bound_note_sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/1044880b42acb6830366c27da99969c2e9b62de5904ef149dc03c92100e51bc3.blob",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2e2cbd31fe6c8ed92c80286f9cf32ca2bf553ad37ad569f561c3d29340f995e6.blob",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/47f80d0950f11be804f0b67405fd2c46512164da57dae68befc80551e9be9ff0.py",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/a7d5d8d63a9b26f49b6065d82cd62ad93146f3e2503aeb3fd90daa4d4ecd26e1.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/acac29fb6a92fcbf4a14cd375f8c80525c171d8d159a710c62a196b5863d8b12.py",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/b859501f0dec81dc34b1f3dd48bf0ebcad2f5ada77a2846164bb4498826f63f7.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d78856437e14673ea7c0a444c645527b2ca6a97fd4f99e81d9101b454cbff25f.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d9603a48b4afcf830617821b535d830f87cad2d63f1302c4ad22ff86f2b55fe3.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+  ],
+  "canonical_parent_sha256": {
+    "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1"
+  }
+}

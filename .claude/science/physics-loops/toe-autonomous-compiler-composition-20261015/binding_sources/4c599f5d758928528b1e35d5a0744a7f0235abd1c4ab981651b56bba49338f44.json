@@ -1,0 +1,26 @@
+{
+  "status": "bound_actual_root_publication_review",
+  "utc": "2026-10-15T23:09:59.421677+00:00",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_publication_review/REVIEW.json",
+    "bytes": 13600,
+    "sha256": "1991825227706df05138d825858431949c9a864277aa9c625d423f86fb40916d"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/root_publication_source_review/EXECUTION.json",
+    "bytes": 1927,
+    "sha256": "0e7a422c806de9d5c62624d0f6681c40b8f5480f357d354e0942124b892b2224"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_publication_review/FINAL_FREEZE.json",
+    "bytes": 672,
+    "sha256": "48d753c20796a2507733d1886b2c4cbd3d4323c345c763b306e82e4fadca9002"
+  },
+  "decision": "Accept the reviewed source-preserving publication package for root integration as conditional support; no retained audit or native physical closure.",
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/refresh_before_publication/REFS.json",
+    "bytes": 1272,
+    "sha256": "5c283da1b38d9c7932af4851648635d7fd5f6f02073a0616ef1a5519e2b52146"
+  },
+  "scope": "Root source publication review. Canonical/integration review and all canonical execution remain pending."
+}

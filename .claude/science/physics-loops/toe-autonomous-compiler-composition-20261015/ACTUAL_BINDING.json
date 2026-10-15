@@ -1,0 +1,402 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-15T23:15:30.173791+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+  "git_base": "d789fef0a544f91feceb20500a15bacc3374f08b",
+  "base_branch": "physics-loop/toe-accuracy-scaled-compiler-20261015",
+  "planned_feature_branch": "physics-loop/toe-autonomous-compiler-composition-20261015",
+  "source_acceptance_sha256": "c93bcd9a29d2226e5923b5ac53bd1d1eead89e59abfe41e470557b4fbfae93c4",
+  "source_body_pins": [
+    {
+      "name": "root_runtime_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 16628,
+      "end_byte_exclusive": 24043,
+      "bytes": 7415,
+      "sha256": "f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8"
+    },
+    {
+      "name": "extended_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 24206,
+      "end_byte_exclusive": 51406,
+      "bytes": 27200,
+      "sha256": "9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7"
+    },
+    {
+      "name": "exposed_comparison_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 51579,
+      "end_byte_exclusive": 69094,
+      "bytes": 17515,
+      "sha256": "d43f8ee3e438afc591a1f542c7d6d97b572199d6fbc8547bb8948841a8f9e691"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "name": "root_runtime_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 16846,
+      "end_byte_exclusive": 24261,
+      "bytes": 7415,
+      "sha256": "f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8"
+    },
+    {
+      "name": "extended_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 24424,
+      "end_byte_exclusive": 51624,
+      "bytes": 27200,
+      "sha256": "9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7"
+    },
+    {
+      "name": "exposed_comparison_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 51797,
+      "end_byte_exclusive": 69312,
+      "bytes": 17515,
+      "sha256": "d43f8ee3e438afc591a1f542c7d6d97b572199d6fbc8547bb8948841a8f9e691"
+    }
+  ],
+  "parent_binding": {
+    "canonical_parents": [
+      {
+        "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 66336,
+        "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+        "claim_id": "accuracy_scaled_compiler_bounded_theorem_note_2026-10-15",
+        "role": "direct_mathematical_parent",
+        "accepted_body_intervals": [
+          {
+            "name": "root_degree_D",
+            "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 19188,
+            "end_byte_exclusive": 31871,
+            "bytes": 12683,
+            "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+          },
+          {
+            "name": "separately_attributed_k0_readout",
+            "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 32026,
+            "end_byte_exclusive": 33881,
+            "bytes": 1855,
+            "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+          },
+          {
+            "name": "source_exposed_assessment",
+            "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 34029,
+            "end_byte_exclusive": 66336,
+            "bytes": 32307,
+            "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+          }
+        ],
+        "body_map": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/BODY_MAP.json",
+          "bytes": 1053,
+          "sha256": "57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96"
+        },
+        "canonical_binding": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/CANONICAL_BINDING.json",
+          "bytes": 2421,
+          "sha256": "ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d"
+        },
+        "source_revision_supplied": "d789fef0a544f91feceb20500a15bacc3374f08b",
+        "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records."
+      },
+      {
+        "path": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 115781,
+        "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+        "claim_id": "polynomial_path_mediator_bounded_theorem_note_2026-10-15",
+        "role": "direct_mathematical_parent",
+        "accepted_body_intervals": [
+          {
+            "name": "root_mass_m3",
+            "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 30425,
+            "end_byte_exclusive": 48979,
+            "bytes": 18554,
+            "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893"
+          },
+          {
+            "name": "independent_mass_m2",
+            "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 49121,
+            "end_byte_exclusive": 84178,
+            "bytes": 35057,
+            "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+          },
+          {
+            "name": "source_exposed_comparison",
+            "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 84326,
+            "end_byte_exclusive": 115781,
+            "bytes": 31455,
+            "sha256": "3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067"
+          }
+        ],
+        "body_map": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-polynomial-path-mediator-20261015/BODY_MAP.json",
+          "bytes": 1041,
+          "sha256": "6ab51e0b1d83545d0ed1ccc0def8be768fb8e0fadb090df24309d427ee134a3c"
+        },
+        "canonical_binding": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-polynomial-path-mediator-20261015/CANONICAL_BINDING.json",
+          "bytes": 2401,
+          "sha256": "509dbbd181927e0dc69108ecbc8cedf3ca9cf158880941f78db87a86f3d9702c"
+        },
+        "source_revision_supplied": null,
+        "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records."
+      },
+      {
+        "path": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 97212,
+        "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+        "claim_id": "conditioned_positive_time_compiler_bounded_theorem_note_2026-10-15",
+        "role": "direct_mathematical_parent",
+        "accepted_body_intervals": [
+          {
+            "name": "independent_author",
+            "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 39210,
+            "end_byte_exclusive": 70080,
+            "bytes": 30870,
+            "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+          },
+          {
+            "name": "comparison",
+            "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 70233,
+            "end_byte_exclusive": 97212,
+            "bytes": 26979,
+            "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+          }
+        ],
+        "body_map": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/BODY_MAP.json",
+          "bytes": 1063,
+          "sha256": "04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a"
+        },
+        "canonical_binding": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/CANONICAL_BINDING.json",
+          "bytes": 2487,
+          "sha256": "bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6"
+        },
+        "source_revision_supplied": null,
+        "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records."
+      }
+    ],
+    "transitive_premises": [
+      {
+        "path": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 110611,
+        "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+        "claim_id": "basis_state_waveform_clock_bounded_theorem_note_2026-10-15",
+        "role": "transitive_premise",
+        "accepted_body_intervals": [
+          {
+            "name": "comparison",
+            "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 75964,
+            "end_byte_exclusive": 110611,
+            "bytes": 34647,
+            "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+          }
+        ],
+        "body_map": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-basis-state-clock-20261015/BODY_MAP.json",
+          "bytes": 1032,
+          "sha256": "d9b384259bc086aedd10b8bc5cdac3640d8d5dcc59344fa98ce4d6a38d4ac67e"
+        },
+        "canonical_binding": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-basis-state-clock-20261015/CANONICAL_BINDING.json",
+          "bytes": 2348,
+          "sha256": "1e6c31961380e7ecec2a2bc2b2a9d0d6788daeb109940c58ef70433e520f1621"
+        },
+        "source_revision_supplied": null,
+        "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records."
+      }
+    ],
+    "preparation_release_intervals": [
+      {
+        "name": "independent_mass_m2_preparation_release_premise",
+        "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 75079,
+        "end_byte_exclusive": 79497,
+        "bytes": 4418,
+        "sha256": "d8941152bbf210ab34f9109f13e7763c19e87688034fb8b523bd1a4756d918c6",
+        "containing_body_sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7",
+        "scope": "Supplied correlated-input preparation and preparation-to-runtime release only; not final stopping."
+      },
+      {
+        "name": "comparison_preparation_release_premise",
+        "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 94599,
+        "end_byte_exclusive": 101646,
+        "bytes": 7047,
+        "sha256": "e2689c44b5701cff629b434013fb5ac199d4a0ef37001db20af6d63cd2802b5d",
+        "containing_body_sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2",
+        "scope": "Supplied correlated-input preparation and preparation-to-runtime release only; not final stopping."
+      }
+    ],
+    "mathematical_scope": "Accuracy scaling; protected finite-grid positive compiler; two separate polynomial mediator Hamiltonians. Preparation/release are selected intervals in mediator and its basis-clock ancestor, not an invented standalone theorem edge.",
+    "supplied_main_revision": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "actual_current_git_observation": null
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/2d4957484f3e335d1140633252d2e7fe23395b5940ff7c5db2a94c6c985e869e.json",
+    "bytes": 34783,
+    "sha256": "2d4957484f3e335d1140633252d2e7fe23395b5940ff7c5db2a94c6c985e869e"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/7ac6960f4936e185f74aad065042d58553cb1c617467999cfac5a3bb0bf40fa0.json",
+    "bytes": 1064,
+    "sha256": "7ac6960f4936e185f74aad065042d58553cb1c617467999cfac5a3bb0bf40fa0"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/1991825227706df05138d825858431949c9a864277aa9c625d423f86fb40916d.json",
+      "bytes": 13600,
+      "sha256": "1991825227706df05138d825858431949c9a864277aa9c625d423f86fb40916d"
+    },
+    "review_freeze": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/48d753c20796a2507733d1886b2c4cbd3d4323c345c763b306e82e4fadca9002.json",
+      "bytes": 672,
+      "sha256": "48d753c20796a2507733d1886b2c4cbd3d4323c345c763b306e82e4fadca9002"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/0e7a422c806de9d5c62624d0f6681c40b8f5480f357d354e0942124b892b2224.json",
+      "bytes": 1927,
+      "sha256": "0e7a422c806de9d5c62624d0f6681c40b8f5480f357d354e0942124b892b2224"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/868c6cdd689d02e25a8f4299ddf9d2a16d32981f89fab8852fef698ab38337bb.blob",
+      "bytes": 519,
+      "sha256": "868c6cdd689d02e25a8f4299ddf9d2a16d32981f89fab8852fef698ab38337bb"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/92b4e721ccbc477cfb1c0c6efc4bee1be9c038ad5f60afccdc699281013144da.py",
+      "bytes": 3286,
+      "sha256": "92b4e721ccbc477cfb1c0c6efc4bee1be9c038ad5f60afccdc699281013144da"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/2cff84a1bbfa52bee6af1ac4f678eb830f103aebf9d12be2b418fa949414582f.json",
+      "bytes": 23488,
+      "sha256": "2cff84a1bbfa52bee6af1ac4f678eb830f103aebf9d12be2b418fa949414582f"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/9056836c94bff2ac748e774c0d9b693f8c6ed163c6669bd7e6b14cb8feee2925.json",
+      "bytes": 1733,
+      "sha256": "9056836c94bff2ac748e774c0d9b693f8c6ed163c6669bd7e6b14cb8feee2925"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/d296c7afa167930e700afe2e8f0a52eea5aa22995a9b5a7fb866d2a8529921ab.py",
+      "bytes": 3010,
+      "sha256": "d296c7afa167930e700afe2e8f0a52eea5aa22995a9b5a7fb866d2a8529921ab"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/110474fc26d249483426b53d6c5fdf4b76a861ad750f47adf189abe56eb966d1.blob",
+      "bytes": 330,
+      "sha256": "110474fc26d249483426b53d6c5fdf4b76a861ad750f47adf189abe56eb966d1"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/420d16128335de770217cc147bc77b6896cd16ced35253556aa87c15fce605b9.json",
+    "bytes": 1477,
+    "sha256": "420d16128335de770217cc147bc77b6896cd16ced35253556aa87c15fce605b9"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/a10b97533de1914652a107573e0f88c47393d733493360896c7768c34768b41f.json",
+      "bytes": 1788,
+      "sha256": "a10b97533de1914652a107573e0f88c47393d733493360896c7768c34768b41f"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/bb9c225e4640e233130400647ad6c2016e8d315372462dde0954a41ef43a68f7.py",
+      "bytes": 55392,
+      "sha256": "bb9c225e4640e233130400647ad6c2016e8d315372462dde0954a41ef43a68f7"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/cfd82f3421b66b34515ad56533ed60303d4bcb5deba6fed58608ed3d95ae4d05.blob",
+      "bytes": 324,
+      "sha256": "cfd82f3421b66b34515ad56533ed60303d4bcb5deba6fed58608ed3d95ae4d05"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-conditioned-positive-compiler-20261015",
+      "headRefName": "physics-loop/toe-accuracy-scaled-compiler-20261015",
+      "headRefOid": "d789fef0a544f91feceb20500a15bacc3374f08b",
+      "isDraft": false,
+      "number": 9623,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9623"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/0e7a422c806de9d5c62624d0f6681c40b8f5480f357d354e0942124b892b2224.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/110474fc26d249483426b53d6c5fdf4b76a861ad750f47adf189abe56eb966d1.blob",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/1991825227706df05138d825858431949c9a864277aa9c625d423f86fb40916d.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/2cff84a1bbfa52bee6af1ac4f678eb830f103aebf9d12be2b418fa949414582f.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/2d4957484f3e335d1140633252d2e7fe23395b5940ff7c5db2a94c6c985e869e.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/420d16128335de770217cc147bc77b6896cd16ced35253556aa87c15fce605b9.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/48d753c20796a2507733d1886b2c4cbd3d4323c345c763b306e82e4fadca9002.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/7ac6960f4936e185f74aad065042d58553cb1c617467999cfac5a3bb0bf40fa0.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/868c6cdd689d02e25a8f4299ddf9d2a16d32981f89fab8852fef698ab38337bb.blob",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/9056836c94bff2ac748e774c0d9b693f8c6ed163c6669bd7e6b14cb8feee2925.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/92b4e721ccbc477cfb1c0c6efc4bee1be9c038ad5f60afccdc699281013144da.py",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/a10b97533de1914652a107573e0f88c47393d733493360896c7768c34768b41f.json",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/b4464825db43679493f1fdfbe3d1ecb108e6a70a4ead246fd9d78869a21e0782.blob",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/bb9c225e4640e233130400647ad6c2016e8d315372462dde0954a41ef43a68f7.py",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/cfd82f3421b66b34515ad56533ed60303d4bcb5deba6fed58608ed3d95ae4d05.blob",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/d296c7afa167930e700afe2e8f0a52eea5aa22995a9b5a7fb866d2a8529921ab.py",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/e5428d430d00e333e26f0c54169be26a856de09be0e0086b45bbd94076de6d30.json"
+  ],
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "root_review_ack": {
+    "reviewed_source_sha256": "2d4957484f3e335d1140633252d2e7fe23395b5940ff7c5db2a94c6c985e869e",
+    "root_binding": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/autonomous_compiler_composition/ROOT_BINDING_INPUT.json",
+      "bytes": 1447,
+      "sha256": "4c599f5d758928528b1e35d5a0744a7f0235abd1c4ab981651b56bba49338f44"
+    }
+  },
+  "canonical_execution_not_yet_performed": true,
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

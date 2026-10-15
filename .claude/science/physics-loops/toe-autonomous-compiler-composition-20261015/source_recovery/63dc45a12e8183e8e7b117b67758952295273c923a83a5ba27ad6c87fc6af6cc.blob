@@ -1,0 +1,53 @@
+"""Capture selected composition inputs; no scientific program or historical replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib,json
+D=Path(__file__).resolve().parent
+N=D.parent
+def pin(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+specs=[
+('accuracy_scaled_compiler_root_candidate/DERIVATION.md','6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b','Complete prior read and analytic assessment reused.'),
+('accuracy_scaled_compiler_root_readout/READOUT.md','899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5','Complete prior read; separately attributed k0 refinement.'),
+('accuracy_scaled_compiler_decisive_check/REPORT.md','c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8','Own complete prior report reused; compiler uniform constants.'),
+('accuracy_scaled_compiler_decisive_check/FINAL_FREEZE.json','2e406f3b743b729ed2bfa33833e4e51edce68c429ea453826615ab39d07aa579','Prior44-member seal checked at original paths; no recursive copy.'),
+('accuracy_scaled_compiler_root_review/ACCEPTANCE.md','e0735ca8d982440594af54e9d711071531d40042440fc26b1f7e131677747ade','Complete current source decision read; not acceptance of this composition.'),
+('accuracy_scaled_compiler_root_review/FINAL_FREEZE.json','e164caa50430445e879ba05802871fd6182d5faae0b31bb1925c12214deb28b4','Complete current decision seal read.'),
+('conditioned_positive_compiler_independent/DERIVATION.md','dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04','Own complete fixed-certificate proof reused at exact bytes.'),
+('conditioned_positive_compiler_comparison/REPORT.md','227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0','Own complete exposed comparison reused.'),
+('conditioned_positive_compiler_root_review/ACCEPTANCE.md','9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d','Complete prior qualified source decision reused.'),
+('polynomial_path_mediator_root_candidate/DERIVATION.md','45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893','Complete current reread of all eight sections.'),
+('polynomial_path_mediator_independent/DERIVATION.md','0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7','Own complete prior proof; sections8-10 reread for growing-parameter resources, calibration, moments and release.'),
+('polynomial_path_mediator_comparison/REPORT.md','3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067','Complete current reread after initial combined output truncation.'),
+('polynomial_path_mediator_root_review/ACCEPTANCE.md','8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2','Complete current qualified source decision read.'),
+('polynomial_path_mediator_root_review/FINAL_FREEZE.json','4e81647ca2654e8ff5442ebcd793060b525e0d8db561ef06efb1f750b29246fe','Complete source decision seal read.'),
+('polynomial_path_mediator_publication_draft/wrapper.md','c20ab3dafc6bbbe9d0874fa2b14762ac0f5ca21b68e478ce2a7daa970974c910','Complete current wrapper read in two bounded ranges after truncated combined output; distinct from assembled fbc6c8f4 note.'),
+('accuracy_scaled_compiler_decisive_check/record_metadata.py','c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a','Exact current recorder reuse; source/streams/exit metadata only.'),
+]
+sources=[]
+blob=D/'sources';blob.mkdir(exist_ok=True)
+def add(p,sha,role):
+    r=pin(p);assert r['sha256']==sha,(str(p),r)
+    q=blob/sha
+    if not q.exists():q.write_bytes(p.read_bytes())
+    r.update(recovery=str(q.relative_to(D)),coverage_and_role=role);sources.append(r)
+for rel,sha,role in specs:add(N/rel,sha,role)
+for folder in ['accuracy_scaled_compiler_root_review','polynomial_path_mediator_root_review']:
+    f=json.loads((N/folder/'FINAL_FREEZE.json').read_text())
+    for row in f['files']:
+        if Path(row['path']).name=='REVIEW.json':add(Path(row['path']),row['sha256'],'Historical root decision metadata: identity/seal validation, not a new analytic premise or replay.')
+old=json.loads((N/'accuracy_scaled_compiler_decisive_check/SOURCE_MANIFEST.json').read_text())
+for row in old['sources']:
+    if row['path'].endswith('/AGENTS.md') or row['path'].endswith('/SCIENCE_WORKFLOW.md') or row['path'].endswith('/physics-claim-reviewer/SKILL.md'):
+        add(Path(row['path']),row['sha256'],'Already read applicable instructions/skill reused at exact checked identity.')
+pub=N/'polynomial_path_mediator_publication_draft'
+build=json.loads((pub/'BUILD_RESULT.json').read_text())
+assert build['note_sha256']=='fbc6c8f4e1a2a5f5e353e889bc96c907329d6ecdd78db8803ee9e3e7dbb89ce5'
+add(pub/'BUILD_RESULT.json',pin(pub/'BUILD_RESULT.json')['sha256'],'Metadata resolves task fbc6c8f4 as assembled note, not wrapper.md; no scientific premise.')
+assembled=pub/'proposal/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+assert pin(assembled)['sha256']==build['note_sha256']
+assert assembled.read_bytes().startswith((pub/'wrapper.md').read_bytes())
+assert (D/'record_metadata.py').read_bytes()==(N/'accuracy_scaled_compiler_decisive_check/record_metadata.py').read_bytes()
+out={'utc':datetime.now(timezone.utc).isoformat(),'sources':sources,'source_blobs':len(list(blob.iterdir())),'assembled_publication_identity_only':pin(assembled),'assembled_note_recovery':'Referenced at immutable source path; wrapper and three original bodies are preserved separately, avoiding duplicate assembled bodies.','source_exposed':True,'new_root_exponent_calculation_seen':False,'scientific_programs_run':0,'composition_status':'new provisional analytic candidate, not independently checked or root accepted'}
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps(out,indent=2,sort_keys=True)+'\n')
+print(json.dumps({'sources':len(sources),'blobs':out['source_blobs'],'science':0}))

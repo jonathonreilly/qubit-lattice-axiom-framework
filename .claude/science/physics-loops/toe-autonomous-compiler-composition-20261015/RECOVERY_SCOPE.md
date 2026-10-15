@@ -1,0 +1,7 @@
+# Recovery scope
+
+The canonical note contains the root runtime proof, extended proof and exposed comparison exactly once each. The source acceptance and selected source/manifests/receipt records are hash-deduplicated blobs. Parent mathematical bodies recover from exact intervals in the pinned canonical files; the complete canonical files remain external repository dependencies. Source identities and interval maps are provenance, not mathematical verification.
+
+SOURCE_MANIFEST lists every selected source and recovery mode; ARCHIVE_INDEX lists every local blob. Parent body maps and binding records are provenance only. Preparation-to-runtime release is the polynomial mediator's explicit source interval; the earlier correlated-input lemma is traced to its basis-clock ancestor. Neither becomes an invented standalone theorem.
+
+Root's renewal record already verified all 61 original freeze members and complete current arguments. That inherited verification is preserved rather than repeated. This draft checks the selected original bytes, current parent bytes, exact intervals and directly selected actual metadata receipts. Nested historical snapshots and older publication archives are intentionally not copied recursively; preserved freezes do not promise portable recovery of every historical member. No historical scientific program is imported or replayed. The old accuracy publication is implementation precedent only.

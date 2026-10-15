@@ -1,0 +1,25 @@
+{
+  "kind": "actual_accuracy_scaled_compiler_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "70676cfdaa37280254c95e55c8d550816daf0040",
+  "actual_git_base": "70676cfdaa37280254c95e55c8d550816daf0040",
+  "actual_branch_at_binding": "physics-loop/toe-conditioned-positive-compiler-20261015",
+  "bound_note_sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/33c6a6b3a360e487a43af1ece4ceb346bc92424bcdf2d2c761ec7944160cb92c.blob",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/3844c9d2a5151ff675c1a949e48f26f9a90975813d7a5c45ebc25a3426f1559f.py",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/45108c34379de03d0367ae9f7335f4ce5387263b27719455f7947dfc3196257f.json",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/9246814e11eed51458afc47c811fe2d82113bb09bd9d7a5b5a85b38b67d272e2.py",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/a769299f7dce2cd09064bd9ed838ef57e2b1fc8457f8e4eedcfb538b7f2ad384.json",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/b99fd79811cb6fe8d8d5412b1c2090cae5311d44a97b201a8f0fd10099339189.blob",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/cce1fca4d4ad8c1f1ba48fa19626612ddebc44147e7490bb5cd9be4f3ec6039c.json",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/d6d8397caac46e5b2865d053d1cd15f5dec2b1e216f8bf799e62738636284dcd.json",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/binding_sources/f09815c0befcc6fb80aa0a98a59383d3a37bed5d5b6031bbcc044f9a7a16b9b0.json"
+  ],
+  "canonical_parent_sha256": {
+    "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a"
+  }
+}

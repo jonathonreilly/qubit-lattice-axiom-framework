@@ -1,0 +1,40 @@
+"""Single bounded comparison metadata check; no scientific execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json
+D=Path(__file__).resolve().parent;N=D.parent
+I=N/'autonomous_compiler_composition_candidate';R=N/'autonomous_compiler_composition_root_candidate'
+def read(p):return json.loads(p.read_text())
+def pin(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):
+    q=pin(p);assert q['bytes']==r['bytes'] and q['sha256']==r['sha256'],(str(p),q)
+assert pin(R/'DERIVATION.md')['sha256']=='f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8'
+assert pin(R/'PROPOSAL_FREEZE.json')['sha256'].startswith('1dbaac0f')
+assert pin(R/'SOURCE_PINS.json')['sha256']=='9bcd36124fec16a5d03783f3f4a3e48c09d248d4327760cc1f92a5430f91fbd9'
+assert pin(I/'DERIVATION.md')['sha256']=='9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7'
+assert pin(I/'FINAL_FREEZE.json')['sha256']=='132c5ae474622d1eebd0abd0ee37ff1d1596054d5e5ce69f1e02e375af9e6b92'
+rf=read(R/'PROPOSAL_FREEZE.json');assert len(rf['files'])==2
+for row in rf['files']:same(Path(row['path']),row)
+old=read(I/'FINAL_FREEZE.json');assert len(old['members'])==40
+for row in old['members']:same(I/row['path'],row)
+im=read(I/'SOURCE_MANIFEST.json');assert len(im['sources'])==22
+for row in im['sources']:same(Path(row['path']),row);same(I/row['recovery'],row)
+rp=read(R/'SOURCE_PINS.json');assert len(rp['sources'])==8
+for row in rp['sources']:same(Path(row['path']),row)
+specs=[
+(R/'DERIVATION.md','Complete first exposed read in21:30:17UTC-observed batch; all changed argument assessed.'),
+(R/'PROPOSAL_FREEZE.json','Complete root seal read; records21:21:41.541190UTC and prior-outline nonexposure claim.'),
+(R/'SOURCE_PINS.json','Complete root eight-source list and exposure statement read.'),
+(I/'DERIVATION.md','Own complete frozen provisional composition; immutable before root candidate exposure.'),
+(I/'FINAL_FREEZE.json','Own40-member seal verified at original paths.'),
+(I/'SOURCE_MANIFEST.json','Exact22-source prior recovery reused and validated without recursively copying bodies.'),
+]
+sources=[];blobs=D/'sources';blobs.mkdir(exist_ok=True)
+for p,role in specs:
+    row=pin(p);q=blobs/row['sha256'];q.write_bytes(p.read_bytes());row.update(recovery=str(q.relative_to(D)),coverage_and_role=role);sources.append(row)
+assert (D/'record_metadata.py').read_bytes()==(I/'record_metadata.py').read_bytes()
+for name in ['capture_sources.py','record_metadata.py','seal.py']:ast.parse((D/name).read_text(),filename=name)
+report=(D/'REPORT.md').read_bytes();assert report.endswith(b'\n') and not report.endswith(b'\n\n');report.decode('utf-8')
+out={'utc':datetime.now(timezone.utc).isoformat(),'sources':sources,'source_blobs':len(sources),'prior_recovery_manifest':pin(I/'SOURCE_MANIFEST.json'),'prior_sources_checked':22,'prior_members_checked':40,'root_source_pins_checked':8,'root_members_checked':2,'report':pin(D/'REPORT.md'),'source_exposed':True,'scientific_programs_run':0,'status':'Analytic comparison; root disposition remains separate','limits':'Metadata identity/recovery/schema/syntax only; no matrix, compiler, physical or numerical execution.'}
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps(out,indent=2,sort_keys=True)+'\n');print(json.dumps({'sources':len(sources),'report':out['report'],'old_members':40,'root_members':2,'science':0},sort_keys=True))

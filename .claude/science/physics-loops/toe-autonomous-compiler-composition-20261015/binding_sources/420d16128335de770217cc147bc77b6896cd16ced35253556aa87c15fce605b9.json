@@ -1,0 +1,27 @@
+{
+  "observed_commit": "d789fef0a544f91feceb20500a15bacc3374f08b",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/e5428d430d00e333e26f0c54169be26a856de09be0e0086b45bbd94076de6d30.json",
+      "bytes": 1634,
+      "sha256": "e5428d430d00e333e26f0c54169be26a856de09be0e0086b45bbd94076de6d30"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/bb9c225e4640e233130400647ad6c2016e8d315372462dde0954a41ef43a68f7.py",
+      "bytes": 55392,
+      "sha256": "bb9c225e4640e233130400647ad6c2016e8d315372462dde0954a41ef43a68f7"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/b4464825db43679493f1fdfbe3d1ecb108e6a70a4ead246fd9d78869a21e0782.blob",
+      "bytes": 41,
+      "sha256": "b4464825db43679493f1fdfbe3d1ecb108e6a70a4ead246fd9d78869a21e0782"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual local stacked base HEAD, separately checked by clean_base; origin/main is separately pinned authority."
+}

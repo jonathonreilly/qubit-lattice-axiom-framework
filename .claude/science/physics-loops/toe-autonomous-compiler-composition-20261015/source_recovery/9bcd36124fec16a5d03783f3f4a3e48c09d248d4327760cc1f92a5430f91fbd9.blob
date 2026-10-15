@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_candidate/DERIVATION.md",
+      "bytes": 12683,
+      "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_readout/READOUT.md",
+      "bytes": 1855,
+      "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/REPORT.md",
+      "bytes": 32307,
+      "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_review/ACCEPTANCE.md",
+      "bytes": 3112,
+      "sha256": "e0735ca8d982440594af54e9d711071531d40042440fc26b1f7e131677747ade"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_independent/DERIVATION.md",
+      "bytes": 30870,
+      "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/REPORT.md",
+      "bytes": 26979,
+      "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/wrapper.md",
+      "bytes": 29774,
+      "sha256": "c20ab3dafc6bbbe9d0874fa2b14762ac0f5ca21b68e478ce2a7daa970974c910"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_review/ACCEPTANCE.md",
+      "bytes": 2910,
+      "sha256": "8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2"
+    }
+  ],
+  "exposure": "All accepted parent sources known; no parallel composition outline or derivation seen before this freeze.",
+  "scientific_programs_run": 0
+}

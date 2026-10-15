@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-15T22:50:16.765402+00:00",
+  "verified_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 754,
+        "sha256": "1dbaac0f74deba57c46a9f42a7359ce91472c906ab1468de756173f8fe11969b"
+      },
+      "members_checked": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/FINAL_FREEZE.json",
+        "bytes": 7566,
+        "sha256": "132c5ae474622d1eebd0abd0ee37ff1d1596054d5e5ce69f1e02e375af9e6b92"
+      },
+      "members_checked": 40
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_comparison/FINAL_FREEZE.json",
+        "bytes": 3114,
+        "sha256": "4a4c21bb9e946c1719cff107366248ebd6cf6081ff77dda927b21bc7fe122993"
+      },
+      "members_checked": 17
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_review/FINAL_FREEZE.json",
+        "bytes": 625,
+        "sha256": "a6526cfb52cb2948e697ad9af4318c8a220ad7893e9fe47f6c3003d48f24fe5f"
+      },
+      "members_checked": 2
+    }
+  ],
+  "complete_rereads": [
+    "root DERIVATION.md 7415 bytes",
+    "extended DERIVATION.md 27200 bytes in two bounded outputs",
+    "exposed REPORT.md 17515 bytes",
+    "ACCEPTANCE.md 2909 bytes",
+    "root REVIEW.json 2706 bytes"
+  ],
+  "parent_interfaces_reread": {
+    "accuracy": "canonical lines120-165: L_win>=1, lambda<epsilon/L_win, supplied fixed-data resource recipe",
+    "positive_compiler": "canonical lines550-610,755-770,818-830: signed duration, positive smoothing, unchanged chronology and phase, distinct empty/nonempty recipes"
+  },
+  "metadata_only": true,
+  "new_scientific_execution": false,
+  "new_independent_check_claimed": false,
+  "scope": "Reuse accepted conditional proof at unchanged source and premise identities. New packet/wrapper still requires review. Broad rg discovery output was truncated; selected necessary interface contexts were reread fully. Hash verification is provenance, not proof."
+}

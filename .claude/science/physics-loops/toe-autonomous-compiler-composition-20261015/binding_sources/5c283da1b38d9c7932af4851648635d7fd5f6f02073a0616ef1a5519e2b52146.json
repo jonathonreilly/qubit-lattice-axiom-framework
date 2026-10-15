@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T23:03:47.029135+00:00",
+  "refs": {
+    "HEAD": "d789fef0a544f91feceb20500a15bacc3374f08b",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_publication_binding/stdout",
+    "bytes": 22561,
+    "sha256": "7f51d477a0abe63b0dffd4c58467646b1e8891177d484935600cc52e466f480f"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_publication_binding/EXECUTION.json",
+      "bytes": 1212,
+      "sha256": "89ec44402d4c57e0a04a8476c550cdc92d976a502e45724a1ab3c6b4bae71f98"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_publication_binding/EXECUTION.json",
+      "bytes": 1291,
+      "sha256": "9b6190ef9ea0af02e870e6a975c7995dfe7fc629011e5449cbcc93faf2f4fed5"
+    }
+  ],
+  "open_count": 53,
+  "delta": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "scope": "Source and open-PR identity observation only; no scientific verification."
+}

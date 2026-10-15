@@ -1,0 +1,170 @@
+{
+  "assembled_note_recovery": "Referenced at immutable source path; wrapper and three original bodies are preserved separately, avoiding duplicate assembled bodies.",
+  "assembled_publication_identity_only": {
+    "bytes": 115265,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/proposal/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "sha256": "fbc6c8f4e1a2a5f5e353e889bc96c907329d6ecdd78db8803ee9e3e7dbb89ce5"
+  },
+  "composition_status": "new provisional analytic candidate, not independently checked or root accepted",
+  "new_root_exponent_calculation_seen": false,
+  "scientific_programs_run": 0,
+  "source_blobs": 22,
+  "source_exposed": true,
+  "sources": [
+    {
+      "bytes": 12683,
+      "coverage_and_role": "Complete prior read and analytic assessment reused.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_candidate/DERIVATION.md",
+      "recovery": "sources/6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b",
+      "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+    },
+    {
+      "bytes": 1855,
+      "coverage_and_role": "Complete prior read; separately attributed k0 refinement.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_readout/READOUT.md",
+      "recovery": "sources/899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5",
+      "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+    },
+    {
+      "bytes": 32307,
+      "coverage_and_role": "Own complete prior report reused; compiler uniform constants.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/REPORT.md",
+      "recovery": "sources/c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8",
+      "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+    },
+    {
+      "bytes": 8325,
+      "coverage_and_role": "Prior44-member seal checked at original paths; no recursive copy.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/FINAL_FREEZE.json",
+      "recovery": "sources/2e406f3b743b729ed2bfa33833e4e51edce68c429ea453826615ab39d07aa579",
+      "sha256": "2e406f3b743b729ed2bfa33833e4e51edce68c429ea453826615ab39d07aa579"
+    },
+    {
+      "bytes": 3112,
+      "coverage_and_role": "Complete current source decision read; not acceptance of this composition.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_review/ACCEPTANCE.md",
+      "recovery": "sources/e0735ca8d982440594af54e9d711071531d40042440fc26b1f7e131677747ade",
+      "sha256": "e0735ca8d982440594af54e9d711071531d40042440fc26b1f7e131677747ade"
+    },
+    {
+      "bytes": 643,
+      "coverage_and_role": "Complete current decision seal read.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_review/FINAL_FREEZE.json",
+      "recovery": "sources/e164caa50430445e879ba05802871fd6182d5faae0b31bb1925c12214deb28b4",
+      "sha256": "e164caa50430445e879ba05802871fd6182d5faae0b31bb1925c12214deb28b4"
+    },
+    {
+      "bytes": 30870,
+      "coverage_and_role": "Own complete fixed-certificate proof reused at exact bytes.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_independent/DERIVATION.md",
+      "recovery": "sources/dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04",
+      "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+    },
+    {
+      "bytes": 26979,
+      "coverage_and_role": "Own complete exposed comparison reused.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/REPORT.md",
+      "recovery": "sources/227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0",
+      "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+    },
+    {
+      "bytes": 2939,
+      "coverage_and_role": "Complete prior qualified source decision reused.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_review/ACCEPTANCE.md",
+      "recovery": "sources/9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d",
+      "sha256": "9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d"
+    },
+    {
+      "bytes": 18554,
+      "coverage_and_role": "Complete current reread of all eight sections.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/DERIVATION.md",
+      "recovery": "sources/45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893",
+      "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893"
+    },
+    {
+      "bytes": 35057,
+      "coverage_and_role": "Own complete prior proof; sections8-10 reread for growing-parameter resources, calibration, moments and release.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/DERIVATION.md",
+      "recovery": "sources/0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7",
+      "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+    },
+    {
+      "bytes": 31455,
+      "coverage_and_role": "Complete current reread after initial combined output truncation.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/REPORT.md",
+      "recovery": "sources/3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067",
+      "sha256": "3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067"
+    },
+    {
+      "bytes": 2910,
+      "coverage_and_role": "Complete current qualified source decision read.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_review/ACCEPTANCE.md",
+      "recovery": "sources/8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2",
+      "sha256": "8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2"
+    },
+    {
+      "bytes": 611,
+      "coverage_and_role": "Complete source decision seal read.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_review/FINAL_FREEZE.json",
+      "recovery": "sources/4e81647ca2654e8ff5442ebcd793060b525e0d8db561ef06efb1f750b29246fe",
+      "sha256": "4e81647ca2654e8ff5442ebcd793060b525e0d8db561ef06efb1f750b29246fe"
+    },
+    {
+      "bytes": 29774,
+      "coverage_and_role": "Complete current wrapper read in two bounded ranges after truncated combined output; distinct from assembled fbc6c8f4 note.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/wrapper.md",
+      "recovery": "sources/c20ab3dafc6bbbe9d0874fa2b14762ac0f5ca21b68e478ce2a7daa970974c910",
+      "sha256": "c20ab3dafc6bbbe9d0874fa2b14762ac0f5ca21b68e478ce2a7daa970974c910"
+    },
+    {
+      "bytes": 2123,
+      "coverage_and_role": "Exact current recorder reuse; source/streams/exit metadata only.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_decisive_check/record_metadata.py",
+      "recovery": "sources/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+    },
+    {
+      "bytes": 2803,
+      "coverage_and_role": "Historical root decision metadata: identity/seal validation, not a new analytic premise or replay.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/accuracy_scaled_compiler_root_review/REVIEW.json",
+      "recovery": "sources/e027034fd735e3c2f7e0d2c48e170f2ba15958602b77a4a6c0e6e40209c96a25",
+      "sha256": "e027034fd735e3c2f7e0d2c48e170f2ba15958602b77a4a6c0e6e40209c96a25"
+    },
+    {
+      "bytes": 3532,
+      "coverage_and_role": "Historical root decision metadata: identity/seal validation, not a new analytic premise or replay.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_review/REVIEW.json",
+      "recovery": "sources/5ceff7d58e226d50fe500293afecf5cdbb4d0cd17978a57df83a187d1e55c191",
+      "sha256": "5ceff7d58e226d50fe500293afecf5cdbb4d0cd17978a57df83a187d1e55c191"
+    },
+    {
+      "bytes": 1265,
+      "coverage_and_role": "Already read applicable instructions/skill reused at exact checked identity.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "recovery": "sources/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "bytes": 15435,
+      "coverage_and_role": "Already read applicable instructions/skill reused at exact checked identity.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "recovery": "sources/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 14490,
+      "coverage_and_role": "Already read applicable instructions/skill reused at exact checked identity.",
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "recovery": "sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 647,
+      "coverage_and_role": "Metadata resolves task fbc6c8f4 as assembled note, not wrapper.md; no scientific premise.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/BUILD_RESULT.json",
+      "recovery": "sources/afdc87e73a319d383a8e2b51a6f8b65e582140da874f9284db6a7fa0453f56a1",
+      "sha256": "afdc87e73a319d383a8e2b51a6f8b65e582140da874f9284db6a7fa0453f56a1"
+    }
+  ],
+  "utc": "2026-10-15T21:27:48.516970+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "frozen_at": "2026-10-15T08:22:48.514872+00:00",
+  "author": "/root",
+  "role": "prospective analysis of previously exposed development data; no new holdout",
+  "target": "derive receiver reference and a testable carrier estimator class before scalar inference",
+  "source_manifests_and_decoders": {
+    "scripts/cassini_rsr_development_inputs.json": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a",
+    "scripts/cassini_doppler_development_inputs.json": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392",
+    "scripts/cassini_rsr_development.py": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "scripts/cassini_ramp_phase.py": "f6f20d30a557e03359ca1b28fc466805700122ca280819338da733eee80ca296"
+  },
+  "samples": {
+    "products": "both previously exposed day1691335 X/Ka RSR products",
+    "seconds_half_open": [
+      48900,
+      49500
+    ],
+    "blocks": "600 individual one-second blocks per band; no sample/record clipping; all flags retained",
+    "complex_voltage": "(2I+1)+i(2Q+1); both physical sideband signs retained until source or registered tracking comparison resolves them",
+    "sample_rate_Hz": 1000
+  },
+  "estimator": {
+    "model": "a single complex sinusoid with unrestricted complex amplitude in each one-second block; explicit candidate approximation, not derived physical truth",
+    "objective": "unweighted least squared Euclidean error in corrected ADC units; eliminate amplitude analytically",
+    "frequency_domain_Hz": [
+      -500,
+      500
+    ],
+    "grid": "16000-point FFT, all bins, periodic domain",
+    "refinement": "bounded scalar minimization within one FFT grid spacing of strongest grid peak; record both grid and refinement; no claim of globally exact maximizer from refinement",
+    "deterministic_global_bound": "centered-time correlation derivative <= 2*pi*sum(abs(t_n)*abs(z_n)); cover radius1000/(2*16000). This bounds global maximum correlation from its grid maximum. Clamp upper bound at Cauchy bound. Residual lower bound then max(0,||z||^2 - upper^2/N).",
+    "quantization_test": "conditional ideal unsaturated square cells with half-width1 after2k+1. Pure constant-complex-amplitude single-tone compatible only if minimum distance <= sqrt(2N). Global residual lower bound above2N rejects that particular candidate. No analog-noise upper bound is inferred."
+  },
+  "tracking_comparison": {
+    "selection": "all coherent ODF rx25 tx54 Xdownlink intervals fully contained in the fixed600sec RSR window, matching calendar and count endpoints; preserve flags and alternatives",
+    "reference": "derive from primary pre-NSP/BlockV tracking definition; never substitute transmit ramp at reception without source support",
+    "candidates": "physical I+iQ sideband orientations + and -, documented NCO phase-argument alternatives0 and0.5ms; compare all without fitting an offset/time shift/scale",
+    "statistics": "signed error min/median/max/RMS and raw row ledger, counts and missing coverage; no likelihood, outlier removal or scalar fit",
+    "scope": "cross-receiver development consistency; not independent gravity evidence. If reference remains ambiguous, retain alternatives and explicitly report inability to identify."
+  },
+  "prohibitions": [
+    "no later1656/1657 raw products",
+    "no sign/timing/offset selected by scalar residual",
+    "no inferred stochastic distribution from a small residual",
+    "no total-voltage angle identified as physical carrier phase",
+    "no unconditional physical calibration precision"
+  ],
+  "planned_checks": [
+    "synthetic known sinusoids at positive/negative/near-Nyquist frequencies",
+    "exact amplitude projection identity",
+    "rigorous grid covering bound vs known synthetic frequencies",
+    "quantization-only tone feasible and rejected countermodels",
+    "I/Q conjugation reverses spectral sign",
+    "epoch/LO/NCO signs and integrated polynomial vs discrete hold identities"
+  ]
+}

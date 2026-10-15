@@ -1,0 +1,144 @@
+===== runner cache v1 =====
+runner: scripts/cassini_carrier_reference_check.py
+runner_sha256: 58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4
+input_fingerprint_sha256: 7a26dd6bd5586e8704dca4544eae0a6eed0badd8445d8711234ecc4000977cdf
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.37
+status: ok
+----- stdout -----
+{
+  "status": "conditional-support",
+  "role": "carrier feasible-set theorem, finite-voltage model rejection and exposed receiver reconstruction",
+  "primary_sha256": "58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4",
+  "source_inputs": {
+    "docs/CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "ee2c6e46a235de9a2c668d6013dc830eddb160c77d218309431669b8d9ab26f8",
+    "scripts/cassini_carrier_estimator.py": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f",
+    "scripts/cassini_receiver_reference.py": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c",
+    "scripts/cassini_carrier_geometry_controls.py": "b1b25068e1b05487049a1f5e072de329139315816c58db4ec3d96e02b6a74232",
+    "scripts/cassini_rsr_development.py": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "scripts/cassini_atdf_decode.py": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c",
+    "scripts/cassini_atdf_odf_reconcile.py": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225",
+    "scripts/cassini_rsr_development_inputs.json": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a",
+    "scripts/cassini_doppler_development_inputs.json": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_v1.json": "ffce7149f810b2d600ddca1cf3d9a6c3fc55eefb22ef244dfd1cccc52a787238",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_SUPPLEMENT_v1.json": "44c8aac5bcccd055fd91644a4a34ff80d1de809b2941207165de84241b77d358",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/REFERENCE_COMPARISON_FREEZE_v1.json": "d646bf5efd6826715506a8afb4918d438e6bfb12439ad41431f58405be8ae9f1"
+  },
+  "geometry_controls": {
+    "complex_projection_0_0": true,
+    "complex_projection_0_1": true,
+    "complex_projection_0_2": true,
+    "orthogonal_residual_0": true,
+    "complex_projection_1_0": true,
+    "complex_projection_1_1": true,
+    "complex_projection_1_2": true,
+    "orthogonal_residual_1": true,
+    "complex_projection_2_0": true,
+    "complex_projection_2_1": true,
+    "complex_projection_2_2": true,
+    "orthogonal_residual_2": true,
+    "unbounded_discrepancy_witness_-99.25": true,
+    "unbounded_discrepancy_witness_78.125": true,
+    "phase_disk_tangent_5.0_3.0": true,
+    "opposite_phase_excluded_5.0_3.0": true,
+    "phase_disk_tangent_13.0_5.0": true,
+    "opposite_phase_excluded_13.0_5.0": true,
+    "phase_disk_tangent_1.0_0.25": true,
+    "opposite_phase_excluded_1.0_0.25": true,
+    "tangent_origin_not_all_phases": true,
+    "circular_phase_across_principal_cut": true,
+    "disk_strictly_contains_origin_0.0": true,
+    "disk_strictly_contains_origin_0.7": true,
+    "disk_strictly_contains_origin_2.0": true,
+    "disk_strictly_contains_origin_3.0": true,
+    "constant_modulus_cell_accepted": true,
+    "amplitude_variation_certificate": true,
+    "disjoint_radius_certificate": true,
+    "midpoint_hold_join_error": true,
+    "phase_increment_0": true,
+    "phase_increment_1/2000": true,
+    "phase_increment_-3/7": true,
+    "archived_phase_not_rounded_frequency": true,
+    "S_exciter_X_downlink_factor": true,
+    "pre_NSP_reference_minus_count": true,
+    "no_extra_96_multiplier": true,
+    "counter_bias_units": true,
+    "counter_sign_matters": true,
+    "correlation_Lipschitz_-31.0_2.0": true,
+    "correlation_Lipschitz_99.0_99.001": true,
+    "correlation_Lipschitz_420.0_-300.0": true
+  },
+  "carrier_controls": [
+    {
+      "control": "known_tone",
+      "frequency": -499.98,
+      "error": 2.9778520342915726e-06
+    },
+    {
+      "control": "known_tone",
+      "frequency": -123.4567,
+      "error": -3.7732405644419487e-07
+    },
+    {
+      "control": "known_tone",
+      "frequency": -0.124,
+      "error": 4.195271685603075e-09
+    },
+    {
+      "control": "known_tone",
+      "frequency": 0.0,
+      "error": 1.8781008748192107e-08
+    },
+    {
+      "control": "known_tone",
+      "frequency": 12.34567,
+      "error": 1.4011902749189176e-10
+    },
+    {
+      "control": "known_tone",
+      "frequency": 499.98,
+      "error": -2.978445309054223e-06
+    },
+    {
+      "control": "conjugation_reverses_sign"
+    },
+    {
+      "control": "exact_amplitude_cell_witnesses"
+    },
+    {
+      "control": "projection_identity"
+    }
+  ],
+  "development_checks": {
+    "all_registered_blocks": true,
+    "no_flags_clipped": true,
+    "all_fits_completed": true,
+    "exact_constant_modulus_rejection": true,
+    "all_same_interval_tracking_rows": true,
+    "documented_S_exciter_reference_scale": true,
+    "slip_diagnostics_preserved": true,
+    "dependent_storage_agreement": true,
+    "all_sign_timing_candidates_preserved": true,
+    "source_supported_sign_development_consistency": true,
+    "no_bias_or_timing_fit": true,
+    "no_independent_empirical_gravity_test": true
+  },
+  "passed": 63,
+  "failed": 0,
+  "products": {
+    "CARRIER_ESTIMATES_v1.jsonl": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea",
+    "CARRIER_SUMMARY_v1.json": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525",
+    "REFERENCE_COMPARISON_ROWS_v1.jsonl": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7",
+    "REFERENCE_COMPARISON_SUMMARY_v1.json": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+  },
+  "plus_sign_zero_shift_RMS_Hz": 0.06642541944357412,
+  "reverse_sign_zero_shift_RMS_Hz": 0.820417698744439,
+  "fitted_real_parameters_per_block": 3,
+  "physical_error_upper_bound_derived": false,
+  "independent_empirical_gravity_tests": 0
+}
+
+----- stderr -----
+

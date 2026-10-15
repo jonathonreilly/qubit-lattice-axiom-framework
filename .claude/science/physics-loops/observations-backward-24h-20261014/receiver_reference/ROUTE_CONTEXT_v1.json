@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-15T08:15:14.373267+00:00",
+  "origin_main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "campaign_base": "e143a32663ad58483efa73050d9344a700d91508",
+  "open_pr_count": 24,
+  "new_external_prs_since_M9": [
+    {
+      "baseRefName": "physics-loop/toe-local-clock-word-20261015",
+      "headRefName": "physics-loop/toe-local-clock-windows-20261015",
+      "headRefOid": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+      "number": 9593,
+      "title": "[physics-loop] toe-local-clock-windows: bounded_theorem / conditional-support finite windows",
+      "updatedAt": "2026-10-15T07:42:54Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9593"
+    }
+  ],
+  "scope": "Main unchanged. Open-PR titles/head identities refreshed; newest external finite clock-window unit is a different conditional quantum-clock lane. No unexamined external proof adopted as receiver calibration.",
+  "prospective_route": "Derive documented RSR reference phase and an explicit baseband estimator; compare with already exposed simultaneous closed-loop tracking before scalar attribution."
+}

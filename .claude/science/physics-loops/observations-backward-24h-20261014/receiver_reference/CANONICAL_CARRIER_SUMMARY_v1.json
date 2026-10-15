@@ -1,0 +1,106 @@
+{
+  "role": "exposed development; no gravity inference or physical noise bound",
+  "source_sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f",
+  "protocol_sha256": "ffce7149f810b2d600ddca1cf3d9a6c3fc55eefb22ef244dfd1cccc52a787238",
+  "supplement_sha256": "44c8aac5bcccd055fd91644a4a34ff80d1de809b2941207165de84241b77d358",
+  "controls": [
+    {
+      "control": "known_tone",
+      "frequency": -499.98,
+      "error": 2.9778520342915726e-06
+    },
+    {
+      "control": "known_tone",
+      "frequency": -123.4567,
+      "error": -3.7732405644419487e-07
+    },
+    {
+      "control": "known_tone",
+      "frequency": -0.124,
+      "error": 4.195271685603075e-09
+    },
+    {
+      "control": "known_tone",
+      "frequency": 0.0,
+      "error": 1.8781008748192107e-08
+    },
+    {
+      "control": "known_tone",
+      "frequency": 12.34567,
+      "error": 1.4011902749189176e-10
+    },
+    {
+      "control": "known_tone",
+      "frequency": 499.98,
+      "error": -2.978445309054223e-06
+    },
+    {
+      "control": "conjugation_reverses_sign"
+    },
+    {
+      "control": "exact_amplitude_cell_witnesses"
+    },
+    {
+      "control": "projection_identity"
+    }
+  ],
+  "ledger_sha256": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea",
+  "statistics": {
+    "X": {
+      "blocks": 600,
+      "frequency_Hz": {
+        "min": -0.6843588770781821,
+        "p01": -0.40136081927639167,
+        "median": 0.29075954486319233,
+        "p99": 0.9601705391957399,
+        "max": 1.530308296940234
+      },
+      "tone_power_fraction": {
+        "min": 0.26250933812112703,
+        "p01": 0.3290008260829817,
+        "median": 0.5363140559780517,
+        "p99": 0.6981521249136103,
+        "max": 0.7095828922502208
+      },
+      "residual_energy": {
+        "min": 145495377090.76562,
+        "p01": 151234094764.7062,
+        "median": 168075937268.88184,
+        "p99": 209293779354.46854,
+        "max": 241493390004.12634
+      },
+      "exact_quantization_only_rejections": 600,
+      "exact_empty_amplitude_intersections": 600,
+      "fit_failures": 0
+    },
+    "Ka": {
+      "blocks": 600,
+      "frequency_Hz": {
+        "min": -2.4514643028179535,
+        "p01": -0.7693571657482198,
+        "median": 0.9587815432408888,
+        "p99": 2.7880888748096035,
+        "max": 3.7629900049022353
+      },
+      "tone_power_fraction": {
+        "min": 0.17871209148049336,
+        "p01": 0.2372241071582287,
+        "median": 0.5851255454758584,
+        "p99": 0.7867876570957126,
+        "max": 0.8091446436379635
+      },
+      "residual_energy": {
+        "min": 85025232154.60922,
+        "p01": 105616302880.24467,
+        "median": 202105493603.99835,
+        "p99": 387809302135.27966,
+        "max": 424280062253.4802
+      },
+      "exact_quantization_only_rejections": 600,
+      "exact_empty_amplitude_intersections": 600,
+      "fit_failures": 0
+    }
+  },
+  "independent_empirical_tests": 0,
+  "fitted_parameters_per_block": 3
+}

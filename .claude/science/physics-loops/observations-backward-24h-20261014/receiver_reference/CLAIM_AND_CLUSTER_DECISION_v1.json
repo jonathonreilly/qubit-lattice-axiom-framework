@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-15T08:51:11.635453+00:00",
+  "target_claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "trace_class": "upstream_support",
+  "reachability_to_target": "supports",
+  "target": "derive or eliminate the revised scalar measurement assumptions using exposed observations",
+  "value": "Reconstructs actual receiver reference convention; provides exact calibrated finite-voltage feasible set and observation-based rejection of restricted constant-modulus quantization-only model, with a preserved real peak-search limitation.",
+  "imports_retired": "No scalar-theory assumption retired. Earlier source-bounded complex-sign ambiguity narrowed by primary instrument evidence and development consistency; reference normalization reconstructed.",
+  "surviving_imports": [
+    "historicalreceiverapplicability",
+    "timeandphasecalibration",
+    "totaldiscrepancyboundorstructurednoisemodel",
+    "waveformclass",
+    "integerhistory",
+    "actionpotential",
+    "initialstate",
+    "scales",
+    "environment"
+  ],
+  "cluster": "one self-contained note, primary runner,three new helpers, pinned existing decoder/inputdependencies, source cache and evidence pack",
+  "cluster_split": "No extra note for a single FFT or cell counterexample; all pieces support the same measurement-feasibility target.",
+  "overlap": "M9 treated pointwise integer character/ADC loss; M10 treats coherent carrier approximation and actual reference reconstruction. New proofs self-contained; no unmerged mathematical claim imported.",
+  "negative_scope": "N1-N8 finite waveform/ADC/additive-error boundaries included in note; no broad carrier/theory no-go.",
+  "review": "focused independent mathematical, primary source, raw/estimator/ledger and final source-envelope checks; no formal audit",
+  "publication": "regular coherent stacked PR after source checks; no merge or main push"
+}

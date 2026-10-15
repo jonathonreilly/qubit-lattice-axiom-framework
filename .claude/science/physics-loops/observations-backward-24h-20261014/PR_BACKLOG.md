@@ -46,3 +46,9 @@ Branch codex/observations-backward-channels-20261015 starts from frozen M8 head 
 The scientific scope is conditional mathematics plus exposed receiver development, with no physical gravity residual or scalar parameter fit. No merge, main push or formal audit occurred.
 
 The ninth milestone is the self-contained integer-channel calibration and receiver representation unit on codex/observations-backward-channels-20261015, stacked on the frozen M8 branch. Complete scientific checks and a fresh 59-control cache are ready. Evidence identity and delivery checks precede PR creation. No merged science or formal audit.
+
+Ninth milestone: [PR #9594](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9594), regular/open, 59 paths, frozen head `e143a32663ad58483efa73050d9344a700d91508`, stacked on M8 and attached. Final scientific and 243-member delivery reports read; exact source/cache identities agree. No merge or formal audit. New direct work continues on `codex/observations-backward-receiver-20261015`.
+
+## M10 receiver-reference milestone awaiting publication
+
+Branch codex/observations-backward-receiver-20261015, stacked on frozen M9 codex/observations-backward-channels-20261015 at e143a32663ad58483efa73050d9344a700d91508. Claim bounded_theorem; status conditional-support. Final exact-source scientific reports are complete; staged delivery and publication follow. Source unit is receiver_reference/REVIEW_RECORD_v1.md plus the canonical note/runner. No main push, merge or formal audit.

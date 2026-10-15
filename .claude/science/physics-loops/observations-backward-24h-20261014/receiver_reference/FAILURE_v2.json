@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-15T08:35:42.880533+00:00",
+  "source_sha256": "462baf6c48219586c9601bb910bc8b425c189481ba738edf4897470ee93b325d",
+  "failure": "amplitude_variation_certificate exact fixture integer typed996002, correct2*(2+1002002)-(2+1002)^2=995992. Implementation unchanged; only fixture literal corrected.",
+  "scope": "synthetic fixture arithmetic; no empirical output change"
+}

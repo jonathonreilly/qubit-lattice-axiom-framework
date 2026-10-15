@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-15T08:25:26.220708+00:00",
+  "source_sha256": "7f8a28a943abacf4ce51cc7dab3eb924823a65c1f298d8d9af6a812d74a6b8e2",
+  "failure": "KeyError inputs: used M2 manifest structure against M9 manifest before reading data; no scientific computation ran",
+  "recovery": "read actual manifest and use its file entries"
+}

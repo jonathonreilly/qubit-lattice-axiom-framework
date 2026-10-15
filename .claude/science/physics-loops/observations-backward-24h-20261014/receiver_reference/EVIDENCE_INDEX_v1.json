@@ -1,0 +1,1877 @@
+{
+  "schema": "observations-backward-receiver-evidence-v1",
+  "created_at": "2026-10-15T09:17:16.879031+00:00",
+  "claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "archive": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EVIDENCE_ARCHIVE_v1.tar.gz",
+  "archive_sha256": "4f92088f8955771fd5db14759e978d7e761bfb53c3ce7d5e5834c61d5579e4d1",
+  "archive_bytes": 3805694,
+  "archive_members": [
+    {
+      "member": "receiver_reference/CANONICAL_CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608127,
+      "sha256": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_CARRIER_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_EXECUTION_v1.json",
+      "bytes": 962,
+      "sha256": "184f189ae892e036b8cece10bf5ea232f7563ed121212b2d94ea9f4219ad9858"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_EXECUTION_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_EXECUTION_v2.json",
+      "bytes": 1094,
+      "sha256": "189e3ce15f7c4027d7ea33c4d862d0019bd773489c6a973502ee58f2612a417e"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_EXECUTION_v3.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_EXECUTION_v3.json",
+      "bytes": 1204,
+      "sha256": "c594162eadfb38c5ff6d3ddbbd18a5655f8459d0391005011c3f3536b775124c"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1659174,
+      "sha256": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_SOURCE_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SOURCE_FREEZE_v1.json",
+      "bytes": 1036,
+      "sha256": "44c544d82a11db14c65333bf110812d619a0f2dcea11c33f99dc3d607da51854"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_SOURCE_FREEZE_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SOURCE_FREEZE_v2.json",
+      "bytes": 1208,
+      "sha256": "bc3ac9d6c26c81a3fca5cd087d50eb4fdd78662c34c9e80ba1f1c704bf517f7e"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_SOURCE_FREEZE_v3.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SOURCE_FREEZE_v3.json",
+      "bytes": 2710,
+      "sha256": "0b4ef93945aadcf1d8e1c10dfeaafd55100e208e0baf85b16457e1814c54f10e"
+    },
+    {
+      "member": "receiver_reference/CANONICAL_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SUMMARY_v1.json",
+      "bytes": 5876,
+      "sha256": "17af022dcc6ebb6493bf78574f7ae2b27ab180a1c69c461541ba919e72db02e6"
+    },
+    {
+      "member": "receiver_reference/CHECKPOINT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CHECKPOINT_v1.json",
+      "bytes": 2101,
+      "sha256": "bea6074453b56a586e85d2a7ee81566bf3de5c958ab0d95adbc606468436824a"
+    },
+    {
+      "member": "receiver_reference/CHECKPOINT_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CHECKPOINT_v2.json",
+      "bytes": 1855,
+      "sha256": "fc0847c998d11c77bea118f1dec187e7e15828e4b276113ade08c9bdf87ea1de"
+    },
+    {
+      "member": "receiver_reference/CHECKPOINT_v3.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CHECKPOINT_v3.json",
+      "bytes": 1109,
+      "sha256": "402de7105b09d86fef328897b1cb1f728df23ca1d72327833265904507472188"
+    },
+    {
+      "member": "receiver_reference/CLAIM_AND_CLUSTER_DECISION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CLAIM_AND_CLUSTER_DECISION_v1.json",
+      "bytes": 1915,
+      "sha256": "2e491192e47d377d466858562ac1434451e7e8dcf8adaca1f4e2ce79d344d4dc"
+    },
+    {
+      "member": "receiver_reference/DEVELOPMENT_PROTOCOL_SUPPLEMENT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_SUPPLEMENT_v1.json",
+      "bytes": 992,
+      "sha256": "44c8aac5bcccd055fd91644a4a34ff80d1de809b2941207165de84241b77d358"
+    },
+    {
+      "member": "receiver_reference/DEVELOPMENT_PROTOCOL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_v1.json",
+      "bytes": 4073,
+      "sha256": "ffce7149f810b2d600ddca1cf3d9a6c3fc55eefb22ef244dfd1cccc52a787238"
+    },
+    {
+      "member": "receiver_reference/EXECUTION_RECEIPT_FAILURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RECEIPT_FAILURE_v1.json",
+      "bytes": 508,
+      "sha256": "8863d15864f42cba98b610e652997aaedd970c1fdeb9c4cf3451cde997d31f72"
+    },
+    {
+      "member": "receiver_reference/EXECUTION_RESULT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RESULT_v1.json",
+      "bytes": 6641,
+      "sha256": "287f398f64041829e10e0ae28d3aa0179936336f14b231a5f1d691e4c1f62f52"
+    },
+    {
+      "member": "receiver_reference/EXECUTION_RESULT_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RESULT_v2.json",
+      "bytes": 6641,
+      "sha256": "b5c8e50c3af231aab64372ac2748431fad94d0cdcb6858f4506eeadb5cf2a2f7"
+    },
+    {
+      "member": "receiver_reference/EXECUTION_RESULT_v3.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RESULT_v3.json",
+      "bytes": 6641,
+      "sha256": "ec0148aacf36a5f371132154b965ce5546f6835eb464aa03ccd2a9da0fcc4c7f"
+    },
+    {
+      "member": "receiver_reference/FAILURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/FAILURE_v1.json",
+      "bytes": 328,
+      "sha256": "1af91f54136d47f851e6df2052d7e6acd032a1aabdd0102e23ccd3a71bdda56a"
+    },
+    {
+      "member": "receiver_reference/FAILURE_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/FAILURE_v2.json",
+      "bytes": 386,
+      "sha256": "a569b21eedd73a6327d1dc1d0040b55d9fd5673863807147b9cc2a4ba4ca86bb"
+    },
+    {
+      "member": "receiver_reference/GRAPH_DELTA_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRAPH_DELTA_v2.json",
+      "bytes": 1436,
+      "sha256": "efa05a93ccf9098e79d630fe3a0615371b1ef4a285ae7bc80fee9bb60e2e5b22"
+    },
+    {
+      "member": "receiver_reference/GRAPH_DELTA_v3.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRAPH_DELTA_v3.json",
+      "bytes": 1436,
+      "sha256": "b808f7496dce31cd7e9150cafd69944ebb1c348432afdd43d2b73055cad80cdc"
+    },
+    {
+      "member": "receiver_reference/GRID_SENSITIVITY_PROTOCOL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRID_SENSITIVITY_PROTOCOL_v1.json",
+      "bytes": 660,
+      "sha256": "8b9056bdc6d8478082f5a2b6f077f9453ec242d6654968474af6171081709eca"
+    },
+    {
+      "member": "receiver_reference/GRID_SENSITIVITY_RESULT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRID_SENSITIVITY_RESULT_v1.json",
+      "bytes": 1222,
+      "sha256": "2a84f7f3f99a7d38afadd305d4a11943c7d57e2290e80e69a50f074624c1dc31"
+    },
+    {
+      "member": "receiver_reference/MUTATION_CURRENT_SOURCE_BINDING_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/MUTATION_CURRENT_SOURCE_BINDING_v1.json",
+      "bytes": 969,
+      "sha256": "a0357e52e69f2c4f92bd9772e378cb1a38cf0727eb86bd71de5be822aca6c7c5"
+    },
+    {
+      "member": "receiver_reference/PHASE_COEFFICIENT_REPAIR_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PHASE_COEFFICIENT_REPAIR_v1.json",
+      "bytes": 584,
+      "sha256": "fd00c39bab9715694e33595318bf2f85304a89ddfc3e151f8e7b86c6d2a875c2"
+    },
+    {
+      "member": "receiver_reference/PRE_RECEIPT_RETRY_RUNNER_CACHE_v3.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_RECEIPT_RETRY_RUNNER_CACHE_v3.txt",
+      "bytes": 6225,
+      "sha256": "e10d651ab0c4e5d0aaa4f31a816aa77113ddbbe6981e7ac6793af5235bdf6d9d"
+    },
+    {
+      "member": "receiver_reference/PRE_SCOPE_CANONICAL_CARRIER_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_SCOPE_CANONICAL_CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525"
+    },
+    {
+      "member": "receiver_reference/PRE_SCOPE_CANONICAL_EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_SCOPE_CANONICAL_EXECUTION_v1.json",
+      "bytes": 962,
+      "sha256": "184f189ae892e036b8cece10bf5ea232f7563ed121212b2d94ea9f4219ad9858"
+    },
+    {
+      "member": "receiver_reference/PRE_SCOPE_CANONICAL_REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_SCOPE_CANONICAL_REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+    },
+    {
+      "member": "receiver_reference/PRE_SCOPE_CANONICAL_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_SCOPE_CANONICAL_SUMMARY_v1.json",
+      "bytes": 5876,
+      "sha256": "a708a26414de476936bfb4d916ee4914a0262c6d1cd2de218dc419a16a1b01fd"
+    },
+    {
+      "member": "receiver_reference/PRE_SCOPE_RUNNER_CACHE_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_SCOPE_RUNNER_CACHE_v1.txt",
+      "bytes": 6225,
+      "sha256": "b6374fe50c42d6df7640de11d334ecf39a688badb5c245a48af2f2bf9e159dfb"
+    },
+    {
+      "member": "receiver_reference/PRE_WHITESPACE_CANONICAL_NOTE_v2.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_CANONICAL_NOTE_v2.md",
+      "bytes": 18934,
+      "sha256": "79bcdf128d8b0570cc248576ddda09d5f50edbf9851fb9dad0cd920a24f68cd9"
+    },
+    {
+      "member": "receiver_reference/PRE_WHITESPACE_CANONICAL_SUMMARY_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_CANONICAL_SUMMARY_v2.json",
+      "bytes": 5876,
+      "sha256": "1a13e6c4e7690078c88b06c9152cc943b4b88e1dc179820ad31865055e3c233c"
+    },
+    {
+      "member": "receiver_reference/PRE_WHITESPACE_DIFF_CHECK_v1.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_DIFF_CHECK_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/PRE_WHITESPACE_DIFF_CHECK_v1.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_DIFF_CHECK_v1.stdout",
+      "bytes": 560,
+      "sha256": "e6db40554e42d4e1c11524c51cb2015658d1c8d915229bfe02130a2a19653278"
+    },
+    {
+      "member": "receiver_reference/PRE_WHITESPACE_REVIEW_RECORD_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_REVIEW_RECORD_v1.md",
+      "bytes": 11096,
+      "sha256": "4bc07695cd2c7ac888b312c3714f55fb087727c64bc4f8fec25ed5dd187cc53e"
+    },
+    {
+      "member": "receiver_reference/PRE_WHITESPACE_RUNNER_CACHE_v2.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_RUNNER_CACHE_v2.txt",
+      "bytes": 6225,
+      "sha256": "faacc3c097c84b060188a2cc6b48fd2caaeb18d6a270bc92b0d3d5bd360fa0dc"
+    },
+    {
+      "member": "receiver_reference/REFERENCE_COMPARISON_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/REFERENCE_COMPARISON_FREEZE_v1.json",
+      "bytes": 1591,
+      "sha256": "d646bf5efd6826715506a8afb4918d438e6bfb12439ad41431f58405be8ae9f1"
+    },
+    {
+      "member": "receiver_reference/REVIEW_RECORD_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/REVIEW_RECORD_v1.md",
+      "bytes": 11383,
+      "sha256": "9fc805c35eee8764d598d980dc193053192491f2b7e3b9678e5923bea372cb5a"
+    },
+    {
+      "member": "receiver_reference/ROUTE_CONTEXT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/ROUTE_CONTEXT_v1.json",
+      "bytes": 1122,
+      "sha256": "608ae25673ffec87a11f81c749a3e8d81b9286167c713c0b9a5384e4b56f2d5c"
+    },
+    {
+      "member": "receiver_reference/WHITESPACE_REPAIR_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/WHITESPACE_REPAIR_v1.json",
+      "bytes": 722,
+      "sha256": "81b36341b047241a1b0c5ed6e02647586c9ad38615ad47b9ad8d3f56854273fb"
+    },
+    {
+      "member": "receiver_reference/carrier_development_initial_failure.py.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/carrier_development_initial_failure.py.txt",
+      "bytes": 7391,
+      "sha256": "7f8a28a943abacf4ce51cc7dab3eb924823a65c1f298d8d9af6a812d74a6b8e2"
+    },
+    {
+      "member": "receiver_reference/carrier_development_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/carrier_development_v1.py",
+      "bytes": 7384,
+      "sha256": "feadce5547ce028d1e0e6ce46ffe9c23b953ec6e945ec0db4d11696ff0fd3f83"
+    },
+    {
+      "member": "receiver_reference/development_outputs_v1/CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/development_outputs_v1/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "member": "receiver_reference/development_outputs_v1/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/development_outputs_v1/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1612940,
+      "sha256": "4259947a3ea7af9f5ee4d5d771ad04aadd33624e611f0ca7e7ba486cfceb5c2f"
+    },
+    {
+      "member": "receiver_reference/development_outputs_v1/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/development_outputs_v1/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "332c2e2e8ec37617bf0d55f115f0d416b4d43ac2d4ae5aa46117ef739294b4c3"
+    },
+    {
+      "member": "receiver_reference/development_outputs_v1/SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/development_outputs_v1/SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "0aa52e243373c0a7ec10b0a2c6d04cb13389b8eddcc077fe436d3b481c3d0d15"
+    },
+    {
+      "member": "receiver_reference/geometry_initial_fixture_failure.py.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/geometry_initial_fixture_failure.py.txt",
+      "bytes": 4336,
+      "sha256": "462baf6c48219586c9601bb910bc8b425c189481ba738edf4897470ee93b325d"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/ATDF_WINDOW_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/ATDF_WINDOW_ROWS_v1.jsonl",
+      "bytes": 213576,
+      "sha256": "808352ed8a455b714388d6ed7dff0ccdddf5ac7fe8b7a22c849816e577552515"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_COMPARISON_RESULTS_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_COMPARISON_RESULTS_v2.json",
+      "bytes": 1565,
+      "sha256": "8114c3f833f367c8ff399adc073dc0b15bdb4f1518bcff6427c822b836171320"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 10383,
+      "sha256": "219039b8d01beb6b1d36cd59e5bc818700b553b628641548ba73de432976b179"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+      "bytes": 7529,
+      "sha256": "0f2c33fbd01bdfffadb5880f847c2f6dd5c2f860c0ccf4c83b64459d9bacc48d"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_EXECUTION_v1.json",
+      "bytes": 205,
+      "sha256": "383f32f0944666fefd804ce91ec839f69dff4fc3a2709551fd19dbccb1122dd1"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_EXECUTION_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_EXECUTION_v2.json",
+      "bytes": 204,
+      "sha256": "c9d8b5d275ff177be4d6bdae57fd4a2306b9b8f262cc5f6b79fbae8125ce6318"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_INPUTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_INPUTS_v1.json",
+      "bytes": 3914,
+      "sha256": "8cd9d21a8ef153b415e358663440e2272c405bea537223e492c74337569ce2de"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_REFERENCE_DIFFERENCES_v2.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_REFERENCE_DIFFERENCES_v2.jsonl",
+      "bytes": 387100,
+      "sha256": "4bfe44699e9e946cc52ed8b16d38d43984361c3dc7aa605fcd1dc32e47a4f4d6"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_RUN_v1.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v1.stderr",
+      "bytes": 659,
+      "sha256": "305c10d2cc3db9fa50b375404e1088cae390b93acbc428291bc4fd878bf7a232"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_RUN_v1.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_RUN_v2.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_RUN_v2.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v2.stdout",
+      "bytes": 1565,
+      "sha256": "8114c3f833f367c8ff399adc073dc0b15bdb4f1518bcff6427c822b836171320"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/AUTHOR_SPECTRAL_DIFFERENCES_v2.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_SPECTRAL_DIFFERENCES_v2.jsonl",
+      "bytes": 246617,
+      "sha256": "82f71a7060dd61aa650dc5484a44bf37fff8dcdc21cfe32b00fdcc9df0927e93"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/CANONICAL_AFFECTED_CORRESPONDENCE_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_AFFECTED_CORRESPONDENCE_v1.md",
+      "bytes": 4662,
+      "sha256": "4f354dcf807298246abfffe825a9b02cbb84553f89ffce068ac3644f9b56ec5e"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/CANONICAL_AFFECTED_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_AFFECTED_IDENTITY_v1.json",
+      "bytes": 5037,
+      "sha256": "72210f961abf0809bfdc5c25a3145f9c8b30ab1d0d6bbc3b7230e45e524c4bed"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/CANONICAL_PHASE_AFFECTED_CHECK_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_PHASE_AFFECTED_CHECK_v1.json",
+      "bytes": 534,
+      "sha256": "daaaf9850c9dab2b4f2b836de608f38a1e9553c7c0eb49f3061359cb2aec0555"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/COMPARISON_FAILURE_PRESERVATION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/COMPARISON_FAILURE_PRESERVATION_v1.json",
+      "bytes": 534,
+      "sha256": "183ecfdcb77bb26393b70f87307c869e7b434288df8a663977e5aa372bc87851"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/EXECUTION_v1.json",
+      "bytes": 201,
+      "sha256": "90ac0532d71614d25389145dd09161c30a8d12efa9972ec6d6f6ca8869a184b2"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/FINAL_ENVELOPE_COMPARISON_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_COMPARISON_v1.json",
+      "bytes": 12052,
+      "sha256": "8788c67b382711d9bf2bf957ea61d43d1436594151795e7c1bb05873148139cc"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "bytes": 6688,
+      "sha256": "b611e5d93a85a585d42f1fa239040d9010861bd4d07c4209b51be68995881d4e"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/FINAL_ENVELOPE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_IDENTITY_v1.json",
+      "bytes": 16538,
+      "sha256": "71167d4aa5c1be665d46b357b95fbcc4b12c005cc65bcc8719a480b2e3d1d2d1"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/FREQUENCY_MISMATCHES_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FREQUENCY_MISMATCHES_v1.json",
+      "bytes": 1632,
+      "sha256": "48f76b4727a027a80481a871ebee45bc223d547c51595a89c33556e2d60803b9"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/INDEPENDENT_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/INDEPENDENT_IDENTITY_v1.json",
+      "bytes": 5482,
+      "sha256": "85e3cecedf8929cd53a16370dbd02e8eb57f941da29bae90d015f16ee270361b"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/INDEPENDENT_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 7838,
+      "sha256": "30a841356bb3c8a11d80e1eaef84bdab31aa1ae7757a0de8f0788a8265692a46"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/NCO_PHASE_FREQUENCY_DIFFERENCES_v2.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/NCO_PHASE_FREQUENCY_DIFFERENCES_v2.jsonl",
+      "bytes": 306927,
+      "sha256": "730dcb15e1c80ea683ec73326c23cdd1a40298cab0830919b86f16d877027718"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/ODF_WINDOW_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/ODF_WINDOW_ROWS_v1.jsonl",
+      "bytes": 195786,
+      "sha256": "433942c98fe3490186d16a5fcdf7bd33378fd2955b3f67b12843a197ea67b524"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/PRECHECK_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/PRECHECK_v1.md",
+      "bytes": 4325,
+      "sha256": "e044a1fffc570821ce5580b05f88fb0a135d442af061ee0b9f0858ce09fdf148"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/PRECOMPUTE_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/PRECOMPUTE_FREEZE_v1.json",
+      "bytes": 6929,
+      "sha256": "84b08dca27f775ab993cc714a612876871eca68b0f8fde44bd808b8d2c160ee6"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/REFERENCE_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/REFERENCE_ROWS_v1.jsonl",
+      "bytes": 1964742,
+      "sha256": "498976ce618f4302bf2e1d558dc61af7820490537ec83017c142d346183ba6df"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/RESULTS_v1.json",
+      "bytes": 9806,
+      "sha256": "f7334c6e87f2d487db767e23d41ee59d83bc0dde21aa8796a79f6c31d0c43b62"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/RUN_v1.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/RUN_v1.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/RUN_v1.stdout",
+      "bytes": 9806,
+      "sha256": "f7334c6e87f2d487db767e23d41ee59d83bc0dde21aa8796a79f6c31d0c43b62"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/SPECTRAL_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/SPECTRAL_ROWS_v1.jsonl",
+      "bytes": 3722183,
+      "sha256": "95283ddf38d38f209d9ec2455e00e9e47c0dba507a54d2a39ec592d91d7ae562"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/SYNTHETIC_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/SYNTHETIC_RESULTS_v1.json",
+      "bytes": 5705,
+      "sha256": "65dbbf702a0ab2f52759af46965594b342843495c811e83144dc299ac16bbe12"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/TARGETED_PEAK_CHECK_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/TARGETED_PEAK_CHECK_v1.json",
+      "bytes": 3068,
+      "sha256": "602c4dd4404a98b7f198b38e009869cf9587973691761b94421f4cac2c8fef7a"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/WHITESPACE_ENVELOPE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/WHITESPACE_ENVELOPE_IDENTITY_v1.json",
+      "bytes": 13795,
+      "sha256": "c21791c858cbf6bd25e2c74be0a0e7bfa3c6ffa1228c9963a7402826d263370d"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/WHITESPACE_ENVELOPE_SUPPLEMENT_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/WHITESPACE_ENVELOPE_SUPPLEMENT_v1.md",
+      "bytes": 2989,
+      "sha256": "4ab2a630993fdb0d84662eb6901519ba018ba488b5de91a34ba4130f753ba16f"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_comparison_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_comparison_v1.py",
+      "bytes": 8148,
+      "sha256": "91b443170521d3a8180aa9f82457142249ac0ff86c01e767ecdd067685433852"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_comparison_v2.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_comparison_v2.py",
+      "bytes": 8481,
+      "sha256": "8ebc5f4cd8798161d448cf51349e4c76703355a70b3315667d7cb8ba81b327b4"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_sources_v1/CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_sources_v1/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1612940,
+      "sha256": "4259947a3ea7af9f5ee4d5d771ad04aadd33624e611f0ca7e7ba486cfceb5c2f"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_sources_v1/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "332c2e2e8ec37617bf0d55f115f0d416b4d43ac2d4ae5aa46117ef739294b4c3"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_sources_v1/SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "0aa52e243373c0a7ec10b0a2c6d04cb13389b8eddcc077fe436d3b481c3d0d15"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_sources_v1/carrier_development_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/carrier_development_v1.py",
+      "bytes": 7384,
+      "sha256": "feadce5547ce028d1e0e6ce46ffe9c23b953ec6e945ec0db4d11696ff0fd3f83"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/author_sources_v1/reference_development_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/reference_development_v1.py",
+      "bytes": 6372,
+      "sha256": "3f2faf19cb2f91ab2f961b4265eff78a1d27cec4b835827b38b38f7936a63870"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/canonical_sources_v1/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/canonical_sources_v1/cassini_carrier_estimator.py.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_carrier_estimator.py.diff",
+      "bytes": 3422,
+      "sha256": "866eb43a25328584247b972ddd96bff3b12d5ac560a54aacd88713b0bdece9cc"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/canonical_sources_v1/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/canonical_sources_v1/cassini_receiver_reference.py.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_receiver_reference.py.diff",
+      "bytes": 2827,
+      "sha256": "15d64c3b0af1e3cd288f96e8e24a945ce7d41d173447ce9bcd1ad7bfca369215"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/final_envelope_compare_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/final_envelope_compare_v1.py",
+      "bytes": 15339,
+      "sha256": "ce640125f4707076934dc7a13e4fc1cbf682aa3dc56ff68c9cb122bf2330757a"
+    },
+    {
+      "member": "receiver_reference/independent_data_v1/independent_carrier_reference_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/independent_carrier_reference_v1.py",
+      "bytes": 12157,
+      "sha256": "c7d6b1cdb11282659a7dd05b9703d33a1189fb58293c3a02d4d63a2f7c30e7d5"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/ALIAS_AMPLITUDE_WITNESS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/ALIAS_AMPLITUDE_WITNESS_v1.json",
+      "bytes": 3050,
+      "sha256": "037d2e22f8c2c3d36139fcf356fe1ee279f9457e09e30cc61a2220d219bf8dcd"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/AUTHOR_SOURCE_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/AUTHOR_SOURCE_EXPOSURE_v1.json",
+      "bytes": 571,
+      "sha256": "d1125c1916d7f0056a24c963d3a531cbd32cde5b963819c6075899580fbede3a"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/AUTHOR_WORKING_CORRESPONDENCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/AUTHOR_WORKING_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 1113,
+      "sha256": "1e4544cf6940b7835cc21f5a0110f1734987c6c088912ed27e3a8f50d5940d6c"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/AUTHOR_WORKING_CORRESPONDENCE_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/AUTHOR_WORKING_CORRESPONDENCE_v1.md",
+      "bytes": 4299,
+      "sha256": "d993af115d5e787423e2c582930210f3df982c60d7c4a2b8a2282999b2fb3c03"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/AUTHOR_carrier_development_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/AUTHOR_carrier_development_v1.py",
+      "bytes": 7384,
+      "sha256": "feadce5547ce028d1e0e6ce46ffe9c23b953ec6e945ec0db4d11696ff0fd3f83"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 17078,
+      "sha256": "ae3d913bfa45e20e2588c87f0d97222d59ef7c0264353ebaf15e132598c82b44"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_ESTIMATOR_ADAPTATION_v1.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_ESTIMATOR_ADAPTATION_v1.diff",
+      "bytes": 3400,
+      "sha256": "24b709a240da22a147b7c24536042e573dd22dd25819b8a93ae0c72a469fbf56"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_EXPOSURE_v1.json",
+      "bytes": 1617,
+      "sha256": "aa05c21bb9952e2eae1ba6e11edda24895fa8b2e265edfe92f115f1a752b3e78"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_EXPOSURE_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_EXPOSURE_v2.json",
+      "bytes": 1093,
+      "sha256": "80ffa8f7ff842af281da3ed27d45c5887010880221d2082cc269ac471fec2c71"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_EXPOSURE_v3.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_EXPOSURE_v3.json",
+      "bytes": 1492,
+      "sha256": "3898afd21e83ef291dbbebff6f0a6bc7bd583dd9feb156a71c4aba7ca7804fe9"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 18852,
+      "sha256": "d751b57ee265a5169fa395056546724875aac46fbe04dfc47872a5c467130895"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_EXPOSURE_v1.json",
+      "bytes": 1573,
+      "sha256": "8809d85ab6f0563146448156f98ff75d5fb75beb72918cb02c6137f552ea99e0"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_NOTE_WORDING_v2.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_NOTE_WORDING_v2.diff",
+      "bytes": 878,
+      "sha256": "92d2657f66dc10272ede0ff291dc795883f4235fd0843c5cdfa2e4784ca0e62d"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_carrier_geometry_controls.py",
+      "bytes": 4839,
+      "sha256": "b1b25068e1b05487049a1f5e072de329139315816c58db4ec3d96e02b6a74232"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_carrier_reference_check.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_carrier_reference_check.py",
+      "bytes": 5914,
+      "sha256": "58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_FINAL_v2_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_FINAL_v2_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 18934,
+      "sha256": "79bcdf128d8b0570cc248576ddda09d5f50edbf9851fb9dad0cd920a24f68cd9"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_MATH_CORRESPONDENCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_MATH_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 12710,
+      "sha256": "71452805b7a57355df050450d1a508c2b7c1a46144a47d804f60c66df2c7a032"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_MATH_CORRESPONDENCE_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_MATH_CORRESPONDENCE_v1.md",
+      "bytes": 17593,
+      "sha256": "8d3e2bd12d084b57079bfee3f909983dd00b81aaa0b081483c042c94d75c8d19"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_NOTE_WORDING_RECEIPT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_NOTE_WORDING_RECEIPT_v1.json",
+      "bytes": 692,
+      "sha256": "e8446287d5176927eed2c0a6e1c178c3df5e4d82287387549825eeb24e9df0f3"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_STATIC_CORRESPONDENCE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_STATIC_CORRESPONDENCE_v1.json",
+      "bytes": 1379,
+      "sha256": "daa7667f945f1a0c98f76cd67d62a0f7eb902673c418ed0749772a39ae6af67e"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_cassini_carrier_geometry_controls.py",
+      "bytes": 4336,
+      "sha256": "952b05298c05732f9c4d09c91f95088ccd6df4d9e2ecaa5bbb3b0f3bea784a94"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_cassini_carrier_reference_check.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_cassini_carrier_reference_check.py",
+      "bytes": 5673,
+      "sha256": "5c97e8eaacf93eef3971f83598280a8fe975f888515375ae6c69c008413b1d43"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_cassini_receiver_reference.py",
+      "bytes": 6614,
+      "sha256": "e65f700c2b64d3819fd685ebcdba0c9392eb92b1d51ac88ddd4a74d09bccd736"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v2_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v2_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 17431,
+      "sha256": "d37e66fe434dcf0ea7fdda8b89c5b0fa96b75b880bd840c579be8e08af09ffd3"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v2_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v2_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "bytes": 1356,
+      "sha256": "30d908e3fecc162c776b6931a01f12236112caf60586e2778aa9ca5278eda3ab"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v2_cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v2_cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v2_cassini_carrier_geometry_controls.py.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v2_cassini_carrier_geometry_controls.py.diff",
+      "bytes": 1133,
+      "sha256": "7b12ba68b2ee296da422e8823cb7e792b2dd939d1f5c26d9fada521928c514df"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v2_cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v2_cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v2_cassini_receiver_reference.py.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v2_cassini_receiver_reference.py.diff",
+      "bytes": 788,
+      "sha256": "0ab259a4d73d4d2c6793447037eedd29842f9e0088ae0f2cd147cb98e69726a6"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v3_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v3_CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 17697,
+      "sha256": "a891f8b2adb6480510b24b2b18b6c6e12fbe481495a571acd88cb7ee400052d3"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v3_cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v3_cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v3_cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v3_cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v3_cassini_carrier_reference_check.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v3_cassini_carrier_reference_check.py",
+      "bytes": 5914,
+      "sha256": "58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CANONICAL_v3_cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_v3_cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CONTROL_SOURCE_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CONTROL_SOURCE_FREEZE_v1.json",
+      "bytes": 415,
+      "sha256": "c8a55f0a85114dbfd4aabfa4183be2ce22f756b3a8ae1dfdd3cc3c594ef73a6c"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/CONTROL_SOURCE_FREEZE_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CONTROL_SOURCE_FREEZE_v2.json",
+      "bytes": 284,
+      "sha256": "c374cebbaf60d225fe9b3b55d2a3a45e0bf4d8d4b5030fe39fb33f43ca3cabe6"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/FIXTURE_REPAIR_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/FIXTURE_REPAIR_v1.json",
+      "bytes": 835,
+      "sha256": "b8ecd094cb9499e74c6d6958d087baa61c9e966557f29b454cff81a9a1d19710"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_EXECUTION_v1.json",
+      "bytes": 261,
+      "sha256": "befae691aa56244e173c84b68685091c2d2224b5acff11d3644b3f6f5450da91"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_EXECUTION_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_EXECUTION_v2.json",
+      "bytes": 261,
+      "sha256": "57c37916ec302913a704268ad257a5d09b0d6859e47b0909a32fa6a7bb455022"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_IDENTITY_v1.json",
+      "bytes": 3141,
+      "sha256": "447391640197407ff19beb6b26bfc1ab7b2ed74c6da64c0b5cb9b1bfef146275"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_RESULTS_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_RESULTS_v2.json",
+      "bytes": 8150,
+      "sha256": "3ed6bf25845a99beae30880711490de4ade799185c8057aa81373d7cc530764b"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 7812,
+      "sha256": "7856e3180052664bc56036e9a8aa9f9bcf8d32ea51d34d1184d053b91e75c99a"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_RUN_v1.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_RUN_v1.stderr",
+      "bytes": 1212,
+      "sha256": "df3fc51eda774c3715c3e102914af1b7a7aa3579a806d7c4c6d81dcd165393b7"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_RUN_v1.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_RUN_v1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_RUN_v2.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_RUN_v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/INDEPENDENT_RUN_v2.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_RUN_v2.stdout",
+      "bytes": 269,
+      "sha256": "6ee7542a0f5b59aeb2c21faac021ce3e5a6a7182dfadff5170dc946d89b34c74"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/PHASE_BRANCH_WITNESS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/PHASE_BRANCH_WITNESS_v1.json",
+      "bytes": 759,
+      "sha256": "feec87dfd589060849682a9f83d8d35dac63b1da7839c7ee82df3051a9739fcf"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "bytes": 463,
+      "sha256": "a364bce9916049f469916069b34310e02c5791f930133aec523632b96c35bd36"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/PRECHECK_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/PRECHECK_v1.md",
+      "bytes": 11726,
+      "sha256": "d2ea6c4e74ace3104f74f5f2b1930f53bfeff07dfdaafd1e1bb7229a97bc9b4a"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/TASK_PREMISE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/TASK_PREMISE_v1.json",
+      "bytes": 1171,
+      "sha256": "9f1e2debe835d0d2b3d2c5fd638491b36a1c1bec6c55a1a823e9cffad2cafa09"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/independent_receiver_controls_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/independent_receiver_controls_v1.py",
+      "bytes": 11141,
+      "sha256": "0afa9a83ae7e04b4e2b6d10442e4c9e9feb43c021efc5b2ad96cdefb122471be"
+    },
+    {
+      "member": "receiver_reference/independent_math_v1/independent_receiver_controls_v2.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/independent_receiver_controls_v2.py",
+      "bytes": 11239,
+      "sha256": "3f6ade4a7a621d98b51b7d3271532fb474061d131213407de70f0bc59e98a801"
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/JPL_177C_HTTP_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_HTTP_v1.txt",
+      "bytes": 422,
+      "sha256": "fa8463b972aa1ba1c65ce5c17b6230878e634cce8c1c10ac9b470cce3ce9b15c"
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/JPL_177C_RETRIEVAL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_RETRIEVAL_v1.json",
+      "bytes": 469,
+      "sha256": "b1ac8cc34846c51ba99e0ba7c181d0b912e58add8741cf4b5aa28f7e8dd2cbf0"
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json",
+      "bytes": 12886,
+      "sha256": "7ebbfd8ee01ffa840817f4ebde4e33e1a2a409db05a7817303c0fb43c5a9bea3"
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/RECEIVER_SOURCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_IDENTITY_v1.json",
+      "bytes": 874,
+      "sha256": "19a782b6de3ba271d468e50a998139504ec17e06745214ccf96789dabd6958b9"
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/RECEIVER_SOURCE_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_REVIEW_v1.md",
+      "bytes": 11175,
+      "sha256": "7ec1d134adfc33791354e42fb52bec8911ae25714ede168bcf0a5fc75c97bc4b"
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/RSR_UNPACK_HTTP_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_HTTP_v1.txt",
+      "bytes": 355,
+      "sha256": "5dc25f43a5666feca63e0c081fc5fc2b292d6cec41b6ee2837dc5d497ac756fe"
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/RSR_UNPACK_RETRIEVAL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_RETRIEVAL_v1.json",
+      "bytes": 377,
+      "sha256": "1233b99de367baf3293ce0e1d170a27e41e75a117d8a14884da59d66c955dbd8"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/SUMMARY_v1.json",
+      "bytes": 5045,
+      "sha256": "f60c2af4292bc92bf9afcfedcfd5f1ed776f77f43b738e49882da196161dbaa9"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/alias_pair_regression/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/alias_pair_regression/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "c32b9f4ec4fa51b0bc38e72a51c30320bc783885e94d244536241f68f955752c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/alias_pair_regression/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/alias_pair_regression/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/alias_pair_regression/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/alias_pair_regression/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/alias_pair_regression/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/alias_pair_regression/exercise.py",
+      "bytes": 643,
+      "sha256": "27340cfe6daeda31b0d5c8dbf4074916b0d96a791b29791fd607b87f0c58f590"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/alias_pair_regression/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/alias_pair_regression/stderr.txt",
+      "bytes": 773,
+      "sha256": "f1af4ba9dcaf908f938888ceb3d3050f2220e1e578e4d27f9a070ea5c41ec14c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/alias_pair_regression/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/alias_pair_regression/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/amplitude_normalization/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/amplitude_normalization/cassini_carrier_estimator.py",
+      "bytes": 7931,
+      "sha256": "eb9aa2f9a0e02fc28643c5501b1312b5793931ed0c3c3cab54f99c214992b3e0"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/amplitude_normalization/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/amplitude_normalization/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/amplitude_normalization/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/amplitude_normalization/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/amplitude_normalization/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/amplitude_normalization/exercise.py",
+      "bytes": 645,
+      "sha256": "63bf78677165af3a91bea7b339df17627deeab56fb10acebb7122f6b8966a2a8"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/amplitude_normalization/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/amplitude_normalization/stderr.txt",
+      "bytes": 777,
+      "sha256": "d215cd239e3cd5a92d1a5692d2f7744f830fb2b9bc74580a71d21f9f825204a9"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/amplitude_normalization/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/amplitude_normalization/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/cassini_receiver_reference.py",
+      "bytes": 6751,
+      "sha256": "7b1c0e0bf33fd995498cee45e7b3d42e9a7f539dbbc58067f6a33be5faea3147"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/exercise.py",
+      "bytes": 1663,
+      "sha256": "7e4f6795fffd4508efa7f6f8d5c7f810e932ebfa2b82a3d15b107e8af8f4ff57"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1671386,
+      "sha256": "70aff1596e850461d9a55fac5049f17e7004fc1e99482526412540ce539511a5"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2682,
+      "sha256": "569c4524e57444755f280b8711a2d4fcc51744cf1c000056242d6e4264e500d7"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/stderr.txt",
+      "bytes": 470,
+      "sha256": "cf973411d8d422599daa2e95c3ff4a8c7b96a93da0b3b011cdc1f14d97b24507"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/bias_units/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/bias_units/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/complex_sign/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/complex_sign/cassini_carrier_estimator.py",
+      "bytes": 7932,
+      "sha256": "fb9b5171f1b1d794766387df8048f589e40772a04d04c66a2230ffb4082ebac6"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/complex_sign/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/complex_sign/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/complex_sign/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/complex_sign/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/complex_sign/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/complex_sign/exercise.py",
+      "bytes": 634,
+      "sha256": "7af1815326ff8849c1666c6980f11716945fc6158f0bce8315c45fa43a3c0e6c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/complex_sign/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/complex_sign/stderr.txt",
+      "bytes": 707,
+      "sha256": "06aaa5a515ca0ea87fd93fa5afaced5fd5c56649de9f85332166f1e178654755"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/complex_sign/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/complex_sign/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "f80eb2cc8bf6e29cb3496ac41c32177a88d105314f99e4cad227217ffbf23044"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/exercise.py",
+      "bytes": 1667,
+      "sha256": "ef34c50596d19a7d90fff04e81189f2af7d5ac8eb9d6c14156a0190e8d4d4596"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1681281,
+      "sha256": "b9b9ef9106de786d66f1b5fc13be9e877e5e0e89e3ac1f2bfff52b26a4501395"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2660,
+      "sha256": "e5ea3674a0b9f4fff7623fac69eb683a6da26f589f232db7af635a97b29dc3a2"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/stderr.txt",
+      "bytes": 472,
+      "sha256": "3d9a07e1710e4be9b849920d213d70cfa608d637d841728f0a27c497b47acf23"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/doppler_sign/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/doppler_sign/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/cassini_receiver_reference.py",
+      "bytes": 6662,
+      "sha256": "2d5c35573949ac76cfdb67f64de62e8f3e389c91527aa3e5b8ae38cff637353f"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/exercise.py",
+      "bytes": 1677,
+      "sha256": "029a086aae417f2bab8a65301dc4cf547f98e23945713f3030c233fe8fffeaf3"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1659174,
+      "sha256": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2673,
+      "sha256": "95166443c8bda3a9df05792b8d55460211eeb43f88816eee26e3412f68ec30dc"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/stderr.txt",
+      "bytes": 475,
+      "sha256": "243b63e106dc2c6c452cec886008e4cb0da18c0654dea8a5a8326b326a505110"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/drop_slip_history/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/drop_slip_history/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/floor_radius/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/floor_radius/cassini_carrier_estimator.py",
+      "bytes": 7912,
+      "sha256": "571c17ad1e919f27a4448fe70b257786daf8658409b0e8e4c547e50e44bc1591"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/floor_radius/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/floor_radius/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/floor_radius/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/floor_radius/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/floor_radius/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/floor_radius/exercise.py",
+      "bytes": 634,
+      "sha256": "029513bc21dbf7fc9d6778132fab991e617316abf1290518ab1014143a36ebf7"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/floor_radius/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/floor_radius/stderr.txt",
+      "bytes": 777,
+      "sha256": "a009e116189477386cb0403e294102200878dd92c61e1f05cbbefca95b83ca38"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/floor_radius/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/floor_radius/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_cubic_shift/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_cubic_shift/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_cubic_shift/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_cubic_shift/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_cubic_shift/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_cubic_shift/cassini_receiver_reference.py",
+      "bytes": 6748,
+      "sha256": "e19e37edbc7ce992afc5ef0409588d7009ae8490707c2850b99626d5677ce38a"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_cubic_shift/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_cubic_shift/exercise.py",
+      "bytes": 639,
+      "sha256": "80d1468a865bf608ae9a2ddc978d69866a028fb974593835a28fada0af3e95a4"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_cubic_shift/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_cubic_shift/stderr.txt",
+      "bytes": 1098,
+      "sha256": "18e9e13f4ce24f80c1aaa1a518cafd07ace93ea9060c269995ad44ace8b9aaec"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_cubic_shift/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_cubic_shift/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_field_regression/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_field_regression/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_field_regression/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_field_regression/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_field_regression/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_field_regression/cassini_receiver_reference.py",
+      "bytes": 6804,
+      "sha256": "0c3b1b16c90ac94a649d4d74d526ac107a549c0f007752fc91812fcfdd3c57ca"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_field_regression/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_field_regression/exercise.py",
+      "bytes": 644,
+      "sha256": "e8578dfeeedf3126d819d1c192ab98dfe4e2d84e44632b5778e2078a827ef799"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_field_regression/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_field_regression/stderr.txt",
+      "bytes": 1191,
+      "sha256": "71549d7587f6a8f8222fe8ae0c7cb412bd158aac1eccc1fcb12aad807ecd6a08"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/phase_field_regression/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/phase_field_regression/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/projection_power_normalization/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/projection_power_normalization/cassini_carrier_estimator.py",
+      "bytes": 7935,
+      "sha256": "1593f002741ae57d33af2ece5e052f496be4564580461f4223b0640f198b98c6"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/projection_power_normalization/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/projection_power_normalization/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/projection_power_normalization/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/projection_power_normalization/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/projection_power_normalization/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/projection_power_normalization/exercise.py",
+      "bytes": 652,
+      "sha256": "8ccd98044ef094a719438f3d3e55381be9df0b830cd18e04bcbb42ffff976440"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/projection_power_normalization/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/projection_power_normalization/stderr.txt",
+      "bytes": 747,
+      "sha256": "eba0246b53b2783e5eb41ef3f69c6f94428fc6e5e7ee0a5ef5150d32496dce60"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/projection_power_normalization/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/projection_power_normalization/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/radius_upper_aggregation/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/radius_upper_aggregation/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "c4c3bb8f08184e518ec2fd68291f54c167449334d8ce7fec8d0310d986483100"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/radius_upper_aggregation/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/radius_upper_aggregation/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/radius_upper_aggregation/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/radius_upper_aggregation/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/radius_upper_aggregation/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/radius_upper_aggregation/exercise.py",
+      "bytes": 646,
+      "sha256": "23daeb46442961f808fc7236376ed90854185c1bc83942b798716829b019d6ea"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/radius_upper_aggregation/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/radius_upper_aggregation/stderr.txt",
+      "bytes": 811,
+      "sha256": "f4a86c70faa266f7d125d70b597b8ef1b88158eb88b9486dfa92ab67613e5858"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/radius_upper_aggregation/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/radius_upper_aggregation/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/cassini_carrier_estimator.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/cassini_carrier_geometry_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/cassini_carrier_geometry_controls.py",
+      "bytes": 4662,
+      "sha256": "a09fad68decb1ec99b268ed2abe17287a03a8b030725dfec028ee47de72a9a46"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/cassini_receiver_reference.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "7f566da7238d54b498a3c494e6d5f7578076a079d21d6482ce5760c105fe9f0e"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/exercise.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/exercise.py",
+      "bytes": 1681,
+      "sha256": "44f94433155bf299b78ce27c9e37c9e30364a3dd7afb809663342a44b7295546"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/outputs/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/outputs/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1674604,
+      "sha256": "9ffa62fd36404c781b74a7c334e970f63cf51afc3bcf2a438e70d72f3fc789ad"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/outputs/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2630,
+      "sha256": "8ede2145e5c643aaed3037988041ada8db63ecf515f56b587b3afdc787cfe570"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/stderr.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/stderr.txt",
+      "bytes": 569,
+      "sha256": "e30f0a9cf311211df63566d30b34b2b31ef0188b7f0da343d494c666eab2d485"
+    },
+    {
+      "member": "receiver_reference/mutation_results_v1/receiver_band_ratio/stdout.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/mutation_results_v1/receiver_band_ratio/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/CARRIER_ESTIMATES_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/CARRIER_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "fc4367eb0231109250eddff0d7b1834d0ad8a19e1d62ca13ae3c4ad876fb9bcc"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/FINDING_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/FINDING_v1.json",
+      "bytes": 639,
+      "sha256": "8d1a0bba66213cb2d50b176721e780f39d07c6a041234aae209d84c7c422b058"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1612940,
+      "sha256": "4259947a3ea7af9f5ee4d5d771ad04aadd33624e611f0ca7e7ba486cfceb5c2f"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "3e84f0adbd522f96ae60e5594ad1073565446c93d15d16312df0029f4e756f50"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/SUMMARY_v1.json",
+      "bytes": 5727,
+      "sha256": "47d1d8cafe5ca683f466d2b9a5db6388010ff3ae84d9c7da0d1295253f6c1732"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/cassini_carrier_estimator.py.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/cassini_carrier_estimator.py.txt",
+      "bytes": 7651,
+      "sha256": "d4f4598796add3047c2baacd186f04ba2f95ded8a60bfc8f2ab8009eb7c5686a"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/cassini_carrier_geometry_controls.py.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/cassini_carrier_geometry_controls.py.txt",
+      "bytes": 4336,
+      "sha256": "952b05298c05732f9c4d09c91f95088ccd6df4d9e2ecaa5bbb3b0f3bea784a94"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/cassini_carrier_reference_check.py.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/cassini_carrier_reference_check.py.txt",
+      "bytes": 5673,
+      "sha256": "5c97e8eaacf93eef3971f83598280a8fe975f888515375ae6c69c008413b1d43"
+    },
+    {
+      "member": "receiver_reference/pre_alias_fix_canonical_v1/cassini_receiver_reference.py.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/pre_alias_fix_canonical_v1/cassini_receiver_reference.py.txt",
+      "bytes": 6614,
+      "sha256": "e65f700c2b64d3819fd685ebcdba0c9392eb92b1d51ac88ddd4a74d09bccd736"
+    },
+    {
+      "member": "receiver_reference/reference_development_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/reference_development_v1.py",
+      "bytes": 6372,
+      "sha256": "3f2faf19cb2f91ab2f961b4265eff78a1d27cec4b835827b38b38f7936a63870"
+    }
+  ],
+  "plain_evidence": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/REVIEW_RECORD_v1.md",
+      "bytes": 11383,
+      "sha256": "9fc805c35eee8764d598d980dc193053192491f2b7e3b9678e5923bea372cb5a"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CLAIM_AND_CLUSTER_DECISION_v1.json",
+      "bytes": 1915,
+      "sha256": "2e491192e47d377d466858562ac1434451e7e8dcf8adaca1f4e2ce79d344d4dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/ROUTE_CONTEXT_v1.json",
+      "bytes": 1122,
+      "sha256": "608ae25673ffec87a11f81c749a3e8d81b9286167c713c0b9a5384e4b56f2d5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_v1.json",
+      "bytes": 4073,
+      "sha256": "ffce7149f810b2d600ddca1cf3d9a6c3fc55eefb22ef244dfd1cccc52a787238"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_SUPPLEMENT_v1.json",
+      "bytes": 992,
+      "sha256": "44c8aac5bcccd055fd91644a4a34ff80d1de809b2941207165de84241b77d358"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/REFERENCE_COMPARISON_FREEZE_v1.json",
+      "bytes": 1591,
+      "sha256": "d646bf5efd6826715506a8afb4918d438e6bfb12439ad41431f58405be8ae9f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRID_SENSITIVITY_PROTOCOL_v1.json",
+      "bytes": 660,
+      "sha256": "8b9056bdc6d8478082f5a2b6f077f9453ec242d6654968474af6171081709eca"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRID_SENSITIVITY_RESULT_v1.json",
+      "bytes": 1222,
+      "sha256": "2a84f7f3f99a7d38afadd305d4a11943c7d57e2290e80e69a50f074624c1dc31"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PHASE_COEFFICIENT_REPAIR_v1.json",
+      "bytes": 584,
+      "sha256": "fd00c39bab9715694e33595318bf2f85304a89ddfc3e151f8e7b86c6d2a875c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/FAILURE_v1.json",
+      "bytes": 328,
+      "sha256": "1af91f54136d47f851e6df2052d7e6acd032a1aabdd0102e23ccd3a71bdda56a"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/FAILURE_v2.json",
+      "bytes": 386,
+      "sha256": "a569b21eedd73a6327d1dc1d0040b55d9fd5673863807147b9cc2a4ba4ca86bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SOURCE_FREEZE_v3.json",
+      "bytes": 2710,
+      "sha256": "0b4ef93945aadcf1d8e1c10dfeaafd55100e208e0baf85b16457e1814c54f10e"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_EXECUTION_v3.json",
+      "bytes": 1204,
+      "sha256": "c594162eadfb38c5ff6d3ddbbd18a5655f8459d0391005011c3f3536b775124c"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RESULT_v3.json",
+      "bytes": 6641,
+      "sha256": "ec0148aacf36a5f371132154b965ce5546f6835eb464aa03ccd2a9da0fcc4c7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/WHITESPACE_REPAIR_v1.json",
+      "bytes": 722,
+      "sha256": "81b36341b047241a1b0c5ed6e02647586c9ad38615ad47b9ad8d3f56854273fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RECEIPT_FAILURE_v1.json",
+      "bytes": 508,
+      "sha256": "8863d15864f42cba98b610e652997aaedd970c1fdeb9c4cf3451cde997d31f72"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SUMMARY_v1.json",
+      "bytes": 5876,
+      "sha256": "17af022dcc6ebb6493bf78574f7ae2b27ab180a1c69c461541ba919e72db02e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/MUTATION_CURRENT_SOURCE_BINDING_v1.json",
+      "bytes": 969,
+      "sha256": "a0357e52e69f2c4f92bd9772e378cb1a38cf0727eb86bd71de5be822aca6c7c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRAPH_DELTA_v3.json",
+      "bytes": 1436,
+      "sha256": "b808f7496dce31cd7e9150cafd69944ebb1c348432afdd43d2b73055cad80cdc"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CHECKPOINT_v3.json",
+      "bytes": 1109,
+      "sha256": "402de7105b09d86fef328897b1cb1f728df23ca1d72327833265904507472188"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/PRECHECK_v1.md",
+      "bytes": 11726,
+      "sha256": "d2ea6c4e74ace3104f74f5f2b1930f53bfeff07dfdaafd1e1bb7229a97bc9b4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 7812,
+      "sha256": "7856e3180052664bc56036e9a8aa9f9bcf8d32ea51d34d1184d053b91e75c99a"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_MATH_CORRESPONDENCE_v1.md",
+      "bytes": 17593,
+      "sha256": "8d3e2bd12d084b57079bfee3f909983dd00b81aaa0b081483c042c94d75c8d19"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_math_v1/CANONICAL_MATH_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 12710,
+      "sha256": "71452805b7a57355df050450d1a508c2b7c1a46144a47d804f60c66df2c7a032"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/PRECHECK_v1.md",
+      "bytes": 4325,
+      "sha256": "e044a1fffc570821ce5580b05f88fb0a135d442af061ee0b9f0858ce09fdf148"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 7838,
+      "sha256": "30a841356bb3c8a11d80e1eaef84bdab31aa1ae7757a0de8f0788a8265692a46"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+      "bytes": 7529,
+      "sha256": "0f2c33fbd01bdfffadb5880f847c2f6dd5c2f860c0ccf4c83b64459d9bacc48d"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 10383,
+      "sha256": "219039b8d01beb6b1d36cd59e5bc818700b553b628641548ba73de432976b179"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_AFFECTED_CORRESPONDENCE_v1.md",
+      "bytes": 4662,
+      "sha256": "4f354dcf807298246abfffe825a9b02cbb84553f89ffce068ac3644f9b56ec5e"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_AFFECTED_IDENTITY_v1.json",
+      "bytes": 5037,
+      "sha256": "72210f961abf0809bfdc5c25a3145f9c8b30ab1d0d6bbc3b7230e45e524c4bed"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/WHITESPACE_ENVELOPE_SUPPLEMENT_v1.md",
+      "bytes": 2989,
+      "sha256": "4ab2a630993fdb0d84662eb6901519ba018ba488b5de91a34ba4130f753ba16f"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/WHITESPACE_ENVELOPE_IDENTITY_v1.json",
+      "bytes": 13795,
+      "sha256": "c21791c858cbf6bd25e2c74be0a0e7bfa3c6ffa1228c9963a7402826d263370d"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "bytes": 6688,
+      "sha256": "b611e5d93a85a585d42f1fa239040d9010861bd4d07c4209b51be68995881d4e"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_IDENTITY_v1.json",
+      "bytes": 16538,
+      "sha256": "71167d4aa5c1be665d46b357b95fbcc4b12c005cc65bcc8719a480b2e3d1d2d1"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_COMPARISON_v1.json",
+      "bytes": 12052,
+      "sha256": "8788c67b382711d9bf2bf957ea61d43d1436594151795e7c1bb05873148139cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FREQUENCY_MISMATCHES_v1.json",
+      "bytes": 1632,
+      "sha256": "48f76b4727a027a80481a871ebee45bc223d547c51595a89c33556e2d60803b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_REVIEW_v1.md",
+      "bytes": 11175,
+      "sha256": "7ec1d134adfc33791354e42fb52bec8911ae25714ede168bcf0a5fc75c97bc4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_IDENTITY_v1.json",
+      "bytes": 874,
+      "sha256": "19a782b6de3ba271d468e50a998139504ec17e06745214ccf96789dabd6958b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json",
+      "bytes": 12886,
+      "sha256": "7ebbfd8ee01ffa840817f4ebde4e33e1a2a409db05a7817303c0fb43c5a9bea3"
+    }
+  ],
+  "omitted_local_files": [
+    {
+      "member": "receiver_reference/independent_source_v1/JPL_177C_2009.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_2009.pdf",
+      "bytes": 450720,
+      "sha256": "81143ad7210e55ac6bd0b44352e0f90728cf72e36c5d1b05461f20ee65bf7f34",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/JPL_177C_2009.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_2009.text_v1.txt",
+      "bytes": 33523,
+      "sha256": "112fea6094b772bbe5c8c83ed572065ea9f5afc608670f6f5c190db00ad13961",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/JPL_177C_PDFpage10.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_PDFpage10.png",
+      "bytes": 224943,
+      "sha256": "0e0aed268e444d2a0f4c7205f4a8fb905c5918180d44cecc8e83f8e7705a5345",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/JPL_177C_PDFpage9.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_PDFpage9.png",
+      "bytes": 161466,
+      "sha256": "8dbeca53d732a9e9147550f39f44b06a06d99f77fb375b97a349e46f7be080dd",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/MOYER_PDFpage430.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage430.png",
+      "bytes": 99082,
+      "sha256": "ecd48d379d82a30f2e5563963448f6d1410412648080fc970eda2997cd8ebc28",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/MOYER_PDFpage433.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage433.png",
+      "bytes": 186346,
+      "sha256": "a302dc4ebbd87d012bd39478b7cdd04aa9eacb9d82eb4c18fa4b0f21da83498b",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/MOYER_PDFpage434.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage434.png",
+      "bytes": 172277,
+      "sha256": "0ce982b8c9eb7015b8f819f0a5204181b243536e62b2a14dfb16fef66b061ef4",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/MOYER_PDFpage444.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage444.png",
+      "bytes": 151487,
+      "sha256": "86f0bb4168743b19526a06f4e0bb32b49b2ed96d9b8165f66429e1ac454b7650",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/MOYER_PDFpage445.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage445.png",
+      "bytes": 185837,
+      "sha256": "575162c53a74631b8baff188654eb636e5a7ec39bab3e29ccecbf8e0b9bb89fb",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/RSR_UNPACK_PRIMARY_v1.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_PRIMARY_v1.pdf",
+      "bytes": 276403,
+      "sha256": "a56e7dd6cc05f867d41e6345022aa7f4fdfa5fafbe2c0cb185d512a3eb3f7a6a",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    },
+    {
+      "member": "receiver_reference/independent_source_v1/RSR_UNPACK_PRIMARY_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_PRIMARY_v1.txt",
+      "bytes": 31515,
+      "sha256": "a6fb273543d38e05c353615f534ff90db5e357992dfb717ab11fdcbbc93ffb33",
+      "reason": "Downloaded third-party original/full text/render stays local; original URLs, exact identities and read scope are in source evidence/retrieval records."
+    }
+  ],
+  "archive_only_preservation": [],
+  "raw_inputs": "Eight already exposed public input files pinned in scripts/cassini_rsr_development_inputs.json and scripts/cassini_doppler_development_inputs.json; raw binaries not duplicated. Other raw products remain unopened.",
+  "canonical_products": "Both full numerical row ledgers are included in the archive at CANONICAL_ paths and reproducible offline from pinned inputs. Current summary and short product summaries are plain.",
+  "source_documents": "Primary source URLs, original hashes and limited read scopes appear in independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json and retrieval records. Sources previously acquired in runtime remain there; none is a hidden mathematical axiom.",
+  "execution_mapping": {
+    "runtime/M10_CANONICAL_EXECUTION_v1.json": "receiver_reference/EXECUTION_RESULT_v1.json",
+    "runtime/M10_CANONICAL_EXECUTION_v2.json": "receiver_reference/EXECUTION_RESULT_v2.json",
+    "runtime/M10_CANONICAL_EXECUTION_v3.json": "receiver_reference/EXECUTION_RESULT_v3.json"
+  },
+  "extract": "tar -xzf EVIDENCE_ARCHIVE_v1.tar.gz -C <isolated-directory>; every member is relative and every decompressed byte identity is listed.",
+  "review_scope": "Original mathematical/data/source checks, post-exposure correspondences and final cache/row binding are separately labeled. Archive preservation is not a rerun.",
+  "mutations": "All12 actual assertion-rejected mutated sources, outputs and logs are included; exact current-source reuse is specified separately.",
+  "known_unresolved_result": "Ka49112 local-frequency disagreement remains;1199/1200 spectral correspondence. Both timing conventions and physical discrepancy supplier remain open.",
+  "authority": "No formal audit, review-loop landing verdict, integrated-main validation, retained promotion, merge or physical noise calibration."
+}

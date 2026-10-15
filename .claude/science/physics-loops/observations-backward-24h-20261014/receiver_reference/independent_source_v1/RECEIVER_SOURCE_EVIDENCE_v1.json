@@ -1,0 +1,202 @@
+{
+  "schema": "focused-primary-source-review-v1",
+  "created_utc": "2026-10-15T08:34:05.961863+00:00",
+  "reviewer": "/root/localized_history_check",
+  "scope": "M10 RSR signed frequency and pre-NSP receiver-reference branch",
+  "no_raw_observation_access": true,
+  "no_sign_or_timing_fit": true,
+  "no_spectral_estimation": true,
+  "no_author_implementation_access": true,
+  "no_formal_audit_verdict": true,
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/receiver_bridge/moyer_2000.pdf",
+      "bytes": 3137761,
+      "sha256": "23b302fd2b47b6adfadac4c2b01301396ebc54bcefb269cf7126270a3d5d87ce",
+      "read_scope": "\u00a7\u00a713.1\u201313.2.4,13.2.6,13.3.1.1\u201313.3.1.3; Eq13-43 and13-50\u201353; \u00a713.3.2.2.2. Printed13-8\u201313-18,13-23\u201313-31,13-34\u201313-35,13-38\u201313-40. Visual pages430,433,434,444,445."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/receiver_bridge/trk218_2000.pdf",
+      "bytes": 274301,
+      "sha256": "59c45204b231d5c08e8918038a4c605348d9722487664cf73325050843c77c46",
+      "read_scope": "Tables3-1b,3-3b,3-4b,3-5b and AppendixA; PDF15\u201320,23\u201324."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/receiver_bridge/trk225_1996.pdf",
+      "bytes": 1101066,
+      "sha256": "3d47f1372c76a73d1bed60f13403a402f7ded54984cf9bad53855bbfe4946dce",
+      "read_scope": "Visual Table3-3 PDF12\u201315,19\u201320; \u00a74.1 PDF21; general format PDF7,9. Previous frozen image derivatives used for visual read."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/receiver_bridge/morabito_asmar_1995.pdf",
+      "bytes": 640798,
+      "sha256": "73d5f703f31903206df81906c9f953f6933d93f6bb5ec54bc1a14d0c5f738ddc",
+      "read_scope": "Complete \u00a7III.C Sky Frequency Reconstruction, printed130\u2013131/PDF10\u201311; source keyword/context scan."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/receiver_bridge/tdf_unpack.pdf",
+      "bytes": 3973132,
+      "sha256": "2a826779dfa96bfe39658711e936eb156e324ce2c1c41cd526c4b93588bcc33a",
+      "read_scope": "Intro and AppendixB; PDF1 and24. Keyword scan; illustrative record values not used."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/DSN_0159_Science_2001.pdf",
+      "bytes": 444934,
+      "sha256": "1161d5d7f50134cf3994c52674af4a2d8984990b7a7c64551b6c17d5964fe32d",
+      "read_scope": "Previously complete \u00a7\u00a72.1\u20132.6, relevant field definitions and visual PDF17\u201318; retained frozen RSR review used."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_v1.md",
+      "bytes": 7829,
+      "sha256": "1ba68da8ecf67a6790ad640ae320bd0e9a7940969166d54f7f9c3b55777f2865",
+      "read_scope": "Complete earlier independent source conclusions, reused without alteration."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_IDENTITY_v1.json",
+      "bytes": 1241,
+      "sha256": "470d8592241c6fd6d515823a4afbd1d3935e3d5af4e0d9975a21c5cd94e80381",
+      "read_scope": "Immutable earlier identity binding."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/physical_link/rsr_c32easc2002_169_1335x54x25d.lbl",
+      "bytes": 61946,
+      "sha256": "36ab671cbb83c7d04060c2a19058800a4fc50f780aa8fa6e9f77ed3089046382",
+      "read_scope": "Relevant fields previously read; exact full text diff against Ka label: only product/table identifiers differ."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/physical_link/rsr_c32easc2002_169_1335x54k25d.lbl",
+      "bytes": 61946,
+      "sha256": "2349b0473986f5247650fc88a5bbaf7e859786e22253b38f4a8719af3dd0c697",
+      "read_scope": "Exact full text diff against X label; all field descriptions identical."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_tdf_c32easc2002_169_0000xmmmv0.lbl",
+      "bytes": 90858,
+      "sha256": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6",
+      "read_scope": "Items22\u201326,29\u201332,43\u201344 and related metadata descriptions. Source text only, no binary product."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_odf_c32easc2002_169_0000xmmmv0.lbl",
+      "bytes": 63903,
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "read_scope": "Doppler formula, band/reference and ramp descriptions; source text only, no binary product."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_2009.pdf",
+      "bytes": 450720,
+      "sha256": "81143ad7210e55ac6bd0b44352e0f90728cf72e36c5d1b05461f20ee65bf7f34",
+      "read_scope": "Title/scope PDF1\u20132; complete experimental method relevant portions \u00a7IV\u2013V PDF7\u201310; PDF11 results scope. Visually checked PDF9\u201310. No experimental numbers fitted."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_PRIMARY_v1.pdf",
+      "bytes": 276403,
+      "sha256": "a56e7dd6cc05f867d41e6345022aa7f4fdfa5fafbe2c0cb185d512a3eb3f7a6a",
+      "read_scope": "Document keyword scan for complex/sign/frequency/timing; not a sign authority. No linked raw examples opened."
+    }
+  ],
+  "parent_supplied_metadata": {
+    "interval": "2002 DOY169 UTC [48900,49500)",
+    "odf_count": 600,
+    "type": 13,
+    "receiver": 25,
+    "transmitter": 54,
+    "exciter_band": 1,
+    "uplink_band": 2,
+    "downlink_band": 2,
+    "compression_seconds": 1,
+    "independent_receiver": 1,
+    "reference_H": 126186,
+    "reference_L": 14221824,
+    "ATDF_receiver_type": 5,
+    "ATDF_frequency_level": 1,
+    "ATDF_synth_flag": 1,
+    "ATDF_bias_kHz": 1000,
+    "independently_redecoded_here": false
+  },
+  "principal_conclusion": "Conditional pre-NSP Block5 mean received X frequency=(880/221)*level1 S-exciter reference\u2212ODF Doppler; no extra96 or11/3. Later primary RSR paper documents I+iQ positive pseudo-residual, with historical-software applicability kept conditional.",
+  "preserved_uncertainties": [
+    "actual receiver/software branch and record correspondence not independently decoded",
+    "NCO phase start-versus-midpoint documentation discrepancy",
+    "exact millisecond register/quantization effects",
+    "station/ADC endpoint equivalence",
+    "finite-count versus spectral-estimator difference",
+    "no deterministic instrument error certificate"
+  ],
+  "new_derivatives": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_2009.pdf",
+      "bytes": 450720,
+      "sha256": "81143ad7210e55ac6bd0b44352e0f90728cf72e36c5d1b05461f20ee65bf7f34"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_2009.text_v1.txt",
+      "bytes": 33523,
+      "sha256": "112fea6094b772bbe5c8c83ed572065ea9f5afc608670f6f5c190db00ad13961"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_HTTP_v1.txt",
+      "bytes": 422,
+      "sha256": "fa8463b972aa1ba1c65ce5c17b6230878e634cce8c1c10ac9b470cce3ce9b15c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_PDFpage10.png",
+      "bytes": 224943,
+      "sha256": "0e0aed268e444d2a0f4c7205f4a8fb905c5918180d44cecc8e83f8e7705a5345"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_PDFpage9.png",
+      "bytes": 161466,
+      "sha256": "8dbeca53d732a9e9147550f39f44b06a06d99f77fb375b97a349e46f7be080dd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/JPL_177C_RETRIEVAL_v1.json",
+      "bytes": 469,
+      "sha256": "b1ac8cc34846c51ba99e0ba7c181d0b912e58add8741cf4b5aa28f7e8dd2cbf0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage430.png",
+      "bytes": 99082,
+      "sha256": "ecd48d379d82a30f2e5563963448f6d1410412648080fc970eda2997cd8ebc28"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage433.png",
+      "bytes": 186346,
+      "sha256": "a302dc4ebbd87d012bd39478b7cdd04aa9eacb9d82eb4c18fa4b0f21da83498b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage434.png",
+      "bytes": 172277,
+      "sha256": "0ce982b8c9eb7015b8f819f0a5204181b243536e62b2a14dfb16fef66b061ef4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage444.png",
+      "bytes": 151487,
+      "sha256": "86f0bb4168743b19526a06f4e0bb32b49b2ed96d9b8165f66429e1ac454b7650"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/MOYER_PDFpage445.png",
+      "bytes": 185837,
+      "sha256": "575162c53a74631b8baff188654eb636e5a7ec39bab3e29ccecbf8e0b9bb89fb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_HTTP_v1.txt",
+      "bytes": 355,
+      "sha256": "5dc25f43a5666feca63e0c081fc5fc2b292d6cec41b6ee2837dc5d497ac756fe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_PRIMARY_v1.pdf",
+      "bytes": 276403,
+      "sha256": "a56e7dd6cc05f867d41e6345022aa7f4fdfa5fafbe2c0cb185d512a3eb3f7a6a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_PRIMARY_v1.txt",
+      "bytes": 31515,
+      "sha256": "a6fb273543d38e05c353615f534ff90db5e357992dfb717ab11fdcbbc93ffb33"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RSR_UNPACK_RETRIEVAL_v1.json",
+      "bytes": 377,
+      "sha256": "1233b99de367baf3293ce0e1d170a27e41e75a117d8a14884da59d66c955dbd8"
+    }
+  ]
+}

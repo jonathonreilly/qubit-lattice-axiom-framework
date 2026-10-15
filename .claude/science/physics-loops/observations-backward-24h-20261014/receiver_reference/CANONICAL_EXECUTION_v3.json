@@ -1,0 +1,18 @@
+{
+  "execution_result": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M10_CANONICAL_EXECUTION_v3.json",
+  "published_execution_copy": "receiver_reference/EXECUTION_RESULT_v3.json",
+  "cache": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/cassini_carrier_reference_check.txt",
+  "cache_sha256": "8286baf77f5883f1e164313c84a1e718bffb5bc71ae1a891cd0faae956a892e0",
+  "cache_status": "fresh",
+  "summary_sha256": "17af022dcc6ebb6493bf78574f7ae2b27ab180a1c69c461541ba919e72db02e6",
+  "passed": 63,
+  "failed": 0,
+  "products": {
+    "CARRIER_ESTIMATES_v1.jsonl": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea",
+    "CARRIER_SUMMARY_v1.json": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525",
+    "REFERENCE_COMPARISON_ROWS_v1.jsonl": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7",
+    "REFERENCE_COMPARISON_SUMMARY_v1.json": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+  },
+  "all_numerical_products_identical_to_v2": true,
+  "scope": "Source-bound execution refresh following trailing whitespace only; old note/cache/summary preserved."
+}

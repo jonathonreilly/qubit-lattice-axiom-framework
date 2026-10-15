@@ -79,3 +79,15 @@ artifact_role: theorem
 next_trace_action: Derive the physical carrier/reference estimator and admissible error class before interpreting a scalar residual.
 
 The character lattice is derived from the supplied phase/plasma model; it exposes the actual frequency and receiver requirements rather than choosing them. Independent raw decoding verifies representation consistency only. The conditional ADC theorem and averaging witness make a coherent estimator a concrete next supplier. They do not rule out that route or retire action, initial field state, scale or environmental assumptions.
+
+## M10 carrier-reference feasibility
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_measurement_identification
+target_blocker_text: Derive the remaining assumptions rather than supplying them
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Obtain an independently justified discrepancy/time supplier or pivot to a cross-domain action/scale discriminator.
+
+The exact feasible set identifies precisely what calibrated information would constrain a carrier. Actual receiver-reference conventions are reconstructed and a restricted total-voltage class is rejected. Neither construction chooses the physical supplier or identifies a scalar residual. No theory assumption is counted as retired.

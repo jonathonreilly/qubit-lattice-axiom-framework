@@ -1,0 +1,250 @@
+{
+  "at": "2026-10-15T09:15:57.649333+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Whitespace-only note change and v3 source/cache/product binding",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/WHITESPACE_ENVELOPE_SUPPLEMENT_v1.md",
+    "bytes": 2989,
+    "sha256": "4ab2a630993fdb0d84662eb6901519ba018ba488b5de91a34ba4130f753ba16f"
+  },
+  "current_files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 18926,
+      "sha256": "ee2c6e46a235de9a2c668d6013dc830eddb160c77d218309431669b8d9ab26f8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_reference_check.py",
+      "bytes": 5914,
+      "sha256": "58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/cassini_carrier_reference_check.txt",
+      "bytes": 6225,
+      "sha256": "8286baf77f5883f1e164313c84a1e718bffb5bc71ae1a891cd0faae956a892e0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/SUMMARY_v1.json",
+      "bytes": 5876,
+      "sha256": "17af022dcc6ebb6493bf78574f7ae2b27ab180a1c69c461541ba919e72db02e6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SUMMARY_v1.json",
+      "bytes": 5876,
+      "sha256": "17af022dcc6ebb6493bf78574f7ae2b27ab180a1c69c461541ba919e72db02e6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_SOURCE_FREEZE_v3.json",
+      "bytes": 2710,
+      "sha256": "0b4ef93945aadcf1d8e1c10dfeaafd55100e208e0baf85b16457e1814c54f10e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_EXECUTION_v3.json",
+      "bytes": 1204,
+      "sha256": "c594162eadfb38c5ff6d3ddbbd18a5655f8459d0391005011c3f3536b775124c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RESULT_v3.json",
+      "bytes": 6641,
+      "sha256": "ec0148aacf36a5f371132154b965ce5546f6835eb464aa03ccd2a9da0fcc4c7f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M10_CANONICAL_EXECUTION_v3.json",
+      "bytes": 6641,
+      "sha256": "ec0148aacf36a5f371132154b965ce5546f6835eb464aa03ccd2a9da0fcc4c7f"
+    }
+  ],
+  "current_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_reference_check.py",
+      "bytes": 5914,
+      "sha256": "58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 18926,
+      "sha256": "ee2c6e46a235de9a2c668d6013dc830eddb160c77d218309431669b8d9ab26f8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_geometry_controls.py",
+      "bytes": 4839,
+      "sha256": "b1b25068e1b05487049a1f5e072de329139315816c58db4ec3d96e02b6a74232"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_rsr_development.py",
+      "bytes": 11336,
+      "sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_odf_decode.py",
+      "bytes": 7622,
+      "sha256": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_atdf_decode.py",
+      "bytes": 7680,
+      "sha256": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_atdf_odf_reconcile.py",
+      "bytes": 12943,
+      "sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_rsr_development_inputs.json",
+      "bytes": 1527,
+      "sha256": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_doppler_development_inputs.json",
+      "bytes": 2565,
+      "sha256": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_v1.json",
+      "bytes": 4073,
+      "sha256": "ffce7149f810b2d600ddca1cf3d9a6c3fc55eefb22ef244dfd1cccc52a787238"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_SUPPLEMENT_v1.json",
+      "bytes": 992,
+      "sha256": "44c8aac5bcccd055fd91644a4a34ff80d1de809b2941207165de84241b77d358"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/REFERENCE_COMPARISON_FREEZE_v1.json",
+      "bytes": 1591,
+      "sha256": "d646bf5efd6826715506a8afb4918d438e6bfb12439ad41431f58405be8ae9f1"
+    }
+  ],
+  "unchanged_products": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608127,
+      "sha256": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608127,
+      "sha256": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1659174,
+      "sha256": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1659174,
+      "sha256": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+    }
+  ],
+  "preserved_originals": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/WHITESPACE_REPAIR_v1.json",
+      "bytes": 722,
+      "sha256": "81b36341b047241a1b0c5ed6e02647586c9ad38615ad47b9ad8d3f56854273fb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_CANONICAL_NOTE_v2.md",
+      "bytes": 18934,
+      "sha256": "79bcdf128d8b0570cc248576ddda09d5f50edbf9851fb9dad0cd920a24f68cd9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_CANONICAL_SUMMARY_v2.json",
+      "bytes": 5876,
+      "sha256": "1a13e6c4e7690078c88b06c9152cc943b4b88e1dc179820ad31865055e3c233c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_WHITESPACE_RUNNER_CACHE_v2.txt",
+      "bytes": 6225,
+      "sha256": "faacc3c097c84b060188a2cc6b48fd2caaeb18d6a270bc92b0d3d5bd360fa0dc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/EXECUTION_RECEIPT_FAILURE_v1.json",
+      "bytes": 508,
+      "sha256": "8863d15864f42cba98b610e652997aaedd970c1fdeb9c4cf3451cde997d31f72"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PRE_RECEIPT_RETRY_RUNNER_CACHE_v3.txt",
+      "bytes": 6225,
+      "sha256": "e10d651ab0c4e5d0aaa4f31a816aa77113ddbbe6981e7ac6793af5235bdf6d9d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "bytes": 6688,
+      "sha256": "b611e5d93a85a585d42f1fa239040d9010861bd4d07c4209b51be68995881d4e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_IDENTITY_v1.json",
+      "bytes": 16538,
+      "sha256": "71167d4aa5c1be665d46b357b95fbcc4b12c005cc65bcc8719a480b2e3d1d2d1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_COMPARISON_v1.json",
+      "bytes": 12052,
+      "sha256": "8788c67b382711d9bf2bf957ea61d43d1436594151795e7c1bb05873148139cc"
+    }
+  ],
+  "exact_line_changes": [
+    {
+      "line": 3,
+      "removed_ascii_spaces": 2
+    },
+    {
+      "line": 4,
+      "removed_ascii_spaces": 2
+    },
+    {
+      "line": 5,
+      "removed_ascii_spaces": 2
+    },
+    {
+      "line": 6,
+      "removed_ascii_spaces": 2
+    }
+  ],
+  "total_removed_ascii_spaces": 8,
+  "all_other_note_bytes_unchanged": true,
+  "tokens_identical": true,
+  "all_code_manifest_protocol_bytes_unchanged": true,
+  "input_fingerprint_sha256": "7a26dd6bd5586e8704dca4544eae0a6eed0badd8445d8711234ecc4000977cdf",
+  "execution_elapsed_sec": 3.3671867847442627,
+  "timeout_sec": 180,
+  "passed": 63,
+  "failed": 0,
+  "earlier_serialization_failure_cache_checked": true,
+  "known_Ka_discrepancy_preserved": true,
+  "science_rerun_by_reviewer": false,
+  "new_findings": [],
+  "formal_audit": false
+}

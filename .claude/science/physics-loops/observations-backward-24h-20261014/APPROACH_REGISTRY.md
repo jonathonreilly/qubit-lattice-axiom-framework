@@ -57,3 +57,7 @@ M7 mass/curvature/count route: explicit operator-distance bounds replace an unsu
 Root personally derived the simultaneous quotient using exact integer nullspaces and torus Fourier characters. Varying-carrier temporal compatibility supplies constructive rational multi-epoch cases. A real plasma projection cannot simply be reused with a unit phase period.
 
 The receiver route was checked using stored I/Q and conditional ADC preimages. The small 19/-5 character addresses a narrower downlink nuisance target. A deterministic two-sample example shows noncommutation with voltage averaging. NCO polynomial continuity failed as a timing discriminator: both documented phase arguments give tiny internal discontinuities. No physical convention was selected from that comparison.
+
+## M10: coherent waveform feasibility and receiver reference
+
+Projection geometry gives an exact feasible set for a supplied discrepancy ball; cell geometry rejects the quantization-only constant-modulus class on all1200 exposed blocks. Documentary reconstruction supplies a conditional receiver-reference relation, not a new physical law. Independent local-search disagreement on Ka49112 blocks a global-estimator claim. The physical discrepancy/time supplier is still blocked-equivalent to the measurement-identification obligation unless new independent calibration information constrains it. Candidate next families are redundant receiver dynamics, calibrated noise/state-space models with falsifiable innovations, or a cross-domain action/scale discriminator; none is presumed true.

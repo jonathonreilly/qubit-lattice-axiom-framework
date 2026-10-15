@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-15T09:12:36.093626+00:00",
+  "finding": "Git staged whitespace gate rejected four intentional Markdown hard-break trailing spaces on note metadata lines3-6.",
+  "old_note_sha256": "79bcdf128d8b0570cc248576ddda09d5f50edbf9851fb9dad0cd920a24f68cd9",
+  "new_note_sha256": "ee2c6e46a235de9a2c668d6013dc830eddb160c77d218309431669b8d9ab26f8",
+  "repair": "Removed only four trailing-space runs. Token sequence identical; no code, formula, protocol or numeric product changes. Old note/cache/summary/review bytes preserved. Source-bound cache refresh and narrow identity confirmation required.",
+  "old_note": "PRE_WHITESPACE_CANONICAL_NOTE_v2.md",
+  "before_diff_log": "PRE_WHITESPACE_DIFF_CHECK_v1.stdout"
+}

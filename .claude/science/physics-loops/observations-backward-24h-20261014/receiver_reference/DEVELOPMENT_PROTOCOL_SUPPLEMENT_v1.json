@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-15T08:25:00.920460+00:00",
+  "before_first_estimator_execution": true,
+  "parent_sha256": "ffce7149f810b2d600ddca1cf3d9a6c3fc55eefb22ef244dfd1cccc52a787238",
+  "reason": "Separate exact integer rejection certificate from floating FFT evaluation of an analytic global bound.",
+  "exact_test": "For integer center z_n=x_n+i y_n, S=sum(x_n^2+y_n^2), C=sum(ceil_sqrt(x_n^2+y_n^2)); any constant-amplitude waveform satisfies residual_squared>=S-C^2/N. Thus N*S-C^2>2*N^2 exactly rejects all constant-amplitude waveforms within independent ideal square quantization cells, and hence any constant-amplitude sinusoid. Also record max cell radius lower squared and min upper squared; their strict separation independently rejects a common amplitude.",
+  "numerical_bound_status": "The correlation-derivative covering theorem is exact analytically; floating FFT summary is numerical evidence only, not an outward-rounded interval certificate. Physical-noise bound remains absent."
+}

@@ -1,0 +1,41 @@
+{
+  "role": "post-exposure local-search sensitivity diagnostic; not physical carrier choice",
+  "raw_sha256": "9544e294be8867cb013b3d96891a413f5dddc3d5e0236e8a2b9331fe7d45a19e",
+  "record_index": 212,
+  "second": 49112,
+  "center_energy": 523586019048.0,
+  "direct_candidates": [
+    {
+      "supplied_candidate_Hz": 0.9251746909516783,
+      "direct_residual_energy": 308885791468.9636,
+      "refined_frequency_Hz": 0.9251746982332651,
+      "refined_residual_energy": 308885791468.9636
+    },
+    {
+      "supplied_candidate_Hz": -0.5322262786634724,
+      "direct_residual_energy": 308532966242.01733,
+      "refined_frequency_Hz": -0.532226271918654,
+      "refined_residual_energy": 308532966242.0174
+    }
+  ],
+  "grids": [
+    {
+      "size": 16000,
+      "largest_bin_Hz": 0.9375,
+      "residual_at_bin": 309017330258.4053
+    },
+    {
+      "size": 32768,
+      "largest_bin_Hz": -0.518798828125,
+      "residual_at_bin": 308699095145.82007
+    },
+    {
+      "size": 65536,
+      "largest_bin_Hz": -0.5340576171875,
+      "residual_at_bin": 308536048689.9402
+    }
+  ],
+  "frequency_difference_Hz": 1.4574009696151506,
+  "residual_improvement": 352825226.94628906,
+  "all_original_estimates_preserved": true
+}

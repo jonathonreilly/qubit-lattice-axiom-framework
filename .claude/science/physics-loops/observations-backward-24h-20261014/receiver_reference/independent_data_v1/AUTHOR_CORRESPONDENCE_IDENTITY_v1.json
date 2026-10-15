@@ -1,0 +1,148 @@
+{
+  "at": "2026-10-15T08:52:09.757138+00:00",
+  "scope": "Complete working-source/1200spectral/600reference comparison with one retained spectral mismatch",
+  "disposition": "1199/1200 spectral frequency/power agreement;1200/1200 exact certificates and600/600 reference extraction agreement. Tiny original F-versus-P exact-source mismatch preserved.",
+  "original_independent_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/INDEPENDENT_IDENTITY_v1.json",
+    "bytes": 5482,
+    "sha256": "85e3cecedf8929cd53a16370dbd02e8eb57f941da29bae90d015f16ee270361b"
+  },
+  "author_inputs": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_INPUTS_v1.json",
+    "bytes": 3914,
+    "sha256": "8cd9d21a8ef153b415e358663440e2272c405bea537223e492c74337569ce2de"
+  },
+  "results": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_COMPARISON_RESULTS_v2.json",
+    "bytes": 1565,
+    "sha256": "8114c3f833f367c8ff399adc073dc0b15bdb4f1518bcff6427c822b836171320"
+  },
+  "agreeing_subset_statistics": {
+    "agreeing_spectral_count": 1199,
+    "max_frequency_difference_agreeing_Hz": 2.299361767654773e-08,
+    "max_power_relative_difference_agreeing": 1.3571314408330929e-15
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_COMPARISON_RESULTS_v2.json",
+      "bytes": 1565,
+      "sha256": "8114c3f833f367c8ff399adc073dc0b15bdb4f1518bcff6427c822b836171320"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+      "bytes": 7529,
+      "sha256": "0f2c33fbd01bdfffadb5880f847c2f6dd5c2f860c0ccf4c83b64459d9bacc48d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_EXECUTION_v1.json",
+      "bytes": 205,
+      "sha256": "383f32f0944666fefd804ce91ec839f69dff4fc3a2709551fd19dbccb1122dd1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_EXECUTION_v2.json",
+      "bytes": 204,
+      "sha256": "c9d8b5d275ff177be4d6bdae57fd4a2306b9b8f262cc5f6b79fbae8125ce6318"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_INPUTS_v1.json",
+      "bytes": 3914,
+      "sha256": "8cd9d21a8ef153b415e358663440e2272c405bea537223e492c74337569ce2de"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_REFERENCE_DIFFERENCES_v2.jsonl",
+      "bytes": 387100,
+      "sha256": "4bfe44699e9e946cc52ed8b16d38d43984361c3dc7aa605fcd1dc32e47a4f4d6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v1.stderr",
+      "bytes": 659,
+      "sha256": "305c10d2cc3db9fa50b375404e1088cae390b93acbc428291bc4fd878bf7a232"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_RUN_v2.stdout",
+      "bytes": 1565,
+      "sha256": "8114c3f833f367c8ff399adc073dc0b15bdb4f1518bcff6427c822b836171320"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_SPECTRAL_DIFFERENCES_v2.jsonl",
+      "bytes": 246617,
+      "sha256": "82f71a7060dd61aa650dc5484a44bf37fff8dcdc21cfe32b00fdcc9df0927e93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/COMPARISON_FAILURE_PRESERVATION_v1.json",
+      "bytes": 534,
+      "sha256": "183ecfdcb77bb26393b70f87307c869e7b434288df8a663977e5aa372bc87851"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FREQUENCY_MISMATCHES_v1.json",
+      "bytes": 1632,
+      "sha256": "48f76b4727a027a80481a871ebee45bc223d547c51595a89c33556e2d60803b9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/NCO_PHASE_FREQUENCY_DIFFERENCES_v2.jsonl",
+      "bytes": 306927,
+      "sha256": "730dcb15e1c80ea683ec73326c23cdd1a40298cab0830919b86f16d877027718"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/TARGETED_PEAK_CHECK_v1.json",
+      "bytes": 3068,
+      "sha256": "602c4dd4404a98b7f198b38e009869cf9587973691761b94421f4cac2c8fef7a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_comparison_v1.py",
+      "bytes": 8148,
+      "sha256": "91b443170521d3a8180aa9f82457142249ac0ff86c01e767ecdd067685433852"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_comparison_v2.py",
+      "bytes": 8481,
+      "sha256": "8ebc5f4cd8798161d448cf51349e4c76703355a70b3315667d7cb8ba81b327b4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608178,
+      "sha256": "24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1612940,
+      "sha256": "4259947a3ea7af9f5ee4d5d771ad04aadd33624e611f0ca7e7ba486cfceb5c2f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "332c2e2e8ec37617bf0d55f115f0d416b4d43ac2d4ae5aa46117ef739294b4c3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "0aa52e243373c0a7ec10b0a2c6d04cb13389b8eddcc077fe436d3b481c3d0d15"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/carrier_development_v1.py",
+      "bytes": 7384,
+      "sha256": "feadce5547ce028d1e0e6ce46ffe9c23b953ec6e945ec0db4d11696ff0fd3f83"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/author_sources_v1/reference_development_v1.py",
+      "bytes": 6372,
+      "sha256": "3f2faf19cb2f91ab2f961b4265eff78a1d27cec4b835827b38b38f7936a63870"
+    }
+  ],
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+    "bytes": 7529,
+    "sha256": "0f2c33fbd01bdfffadb5880f847c2f6dd5c2f860c0ccf4c83b64459d9bacc48d"
+  },
+  "canonical_cache_binding": "not part of this report"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "immutable-focused-source-review-identity-v1",
+  "created_utc": "2026-10-15T08:34:05.978502+00:00",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_REVIEW_v1.md",
+    "bytes": 11175,
+    "sha256": "7ec1d134adfc33791354e42fb52bec8911ae25714ede168bcf0a5fc75c97bc4b"
+  },
+  "evidence": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json",
+    "bytes": 12886,
+    "sha256": "7ebbfd8ee01ffa840817f4ebde4e33e1a2a409db05a7817303c0fb43c5a9bea3"
+  },
+  "no_formal_audit_verdict": true
+}

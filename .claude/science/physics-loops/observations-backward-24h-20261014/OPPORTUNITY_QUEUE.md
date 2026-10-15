@@ -55,3 +55,11 @@ These remain scientific opportunities, not accomplished derivations. No new raw 
 3. Use a physically calibrated residual supplier, or pivot to action/potential/scale discrimination from a different domain if the receiver route remains unidentifiable. Do not substitute a chosen noise budget or minimum-energy field state.
 
 The entire 13:35 X/Ka RSR pair is development-exposed. The 16:56/16:57 pair and other registered raw products remain unopened. No independent empirical test is claimed.
+
+## Re-ranked after M10 receiver/reference reconstruction
+
+1. Derive a quantitative physical discrepancy or waveform/time calibration constraint from documented instrumentation and redundant observations. The first decisive check must constrain error independently of the same fitted carrier. Explicitly challenge any stochastic independence/stationarity or receiver-dynamics premise. This could connect the exact feasible-set theorem to a physical count/error supplier.
+2. If the available calibration cannot provide that discriminator, pivot to a concrete cross-domain action/potential or scale-selection test after refreshing relevant main/open-PR science. Do not spend another milestone restating nonidentification or refining FFT digits without new physical information.
+3. Keep the0/0.5ms historical phase ambiguity and Ka49112 competing peaks as bounded unresolved applications. Later16:56/16:57 products remain unopened until an explicit preaccess protocol; opening them would test a frozen proposed model, not retroactively turn current development into a holdout.
+
+M10 source packaging is finishing; its independent science checks are complete. Physical error/energy, action, initial scalar state, scale and environment remain open. No chosen selector counts as a derivation.

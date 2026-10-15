@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-15T09:13:50.259829+00:00",
+  "scope": "Packaging wrapper failure after successful canonical execution",
+  "failure": "json.dumps attempted to serialize the (result, Path) tuple from execute_and_write_cache as a dictionary; PosixPath is not JSON serializable.",
+  "disposition": "Prior actual cache retained at PRE_RECEIPT_RETRY_RUNNER_CACHE_v3.txt. Correctly unpack return value and execute once for a complete full-precision execution receipt. No scientific code or assertion changed."
+}

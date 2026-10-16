@@ -18,3 +18,10 @@ Salvage inventory: canonical candidates are the finite algebraic subclaims and s
 - `J:derive:review-20261016-staggered-symmetry-mass:a1` — Establish the exact staggered mass-protection symmetry
 - `J:derive:review-20261016-mirror-carrier-and-gap:a1` — Resolve the carrier count and interacting mirror-gap bridge
 - `J:derive:review-20261016-taste-split-linear-strain:a1` — Resolve first-order strain after a supplied taste split
+
+## Independent follow-up
+
+The [independence follow-up](INDEPENDENCE_FOLLOWUP.md) records the subsequent
+review, corrected task instructions, two mathematically reviewed candidate
+extractions, and their unresolved packet requirements. It updates the initial
+salvage assessment above without promoting the historical packet to authority.

@@ -1,0 +1,62 @@
+{
+  "state": "independent mathematical review passed; canonical main landing held for incomplete no-go packet",
+  "not_audit_authority": true,
+  "main_base": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "source": [
+    {
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_report.md",
+      "blob": "8df89c862cda915f82dba5d4add88f62c6114cf8",
+      "sha256": "25867a7ceacdfdf98aff329b5219f393a49b785c68f3fcedba2a0b89a352292c"
+    },
+    {
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md",
+      "blob": "95fee21403ef56ce199c5c2ba420b63c7094cf59",
+      "sha256": "69f8a151d1232a873182e9b034f8d40cd640de90fa099ac143313861a62bbc6e"
+    },
+    {
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_alg.py",
+      "blob": "d3768236effc137ed8e10014ac4138cd8340d6fa",
+      "sha256": "d4846df591f8f9779416133bca0fff59939a3ccf5c6991bfd6a2b68e9bfcf6ab"
+    },
+    {
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_count.py",
+      "blob": "ecb8b29dbf9c6858fe204e707fbbc07078d7dec2",
+      "sha256": "6849fa5b5000cee876019f990f516e66f9a83ef08c673f0994c3d42ade2cf636"
+    },
+    {
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_fk.py",
+      "blob": "00bcd8d21e51626f54edc1704c9b62d8848a660e",
+      "sha256": "fe7b585d715e8ea1c5a02244da7cb566351c540c2ca8f99cbcf3d8601b2fab0b"
+    },
+    {
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lib.py",
+      "blob": "0495e11da16568e7f1007b64471aa61d05b22a41",
+      "sha256": "4398b6912c80097d84b2952b01ed1533f514c369e9cd8a140329322f6fffe719"
+    }
+  ],
+  "candidates": [
+    {
+      "path": "docs/EIGHT_MAJORANA_QUARTIC_FINITE_SPECTRUM_NOTE_2026-10-16.md",
+      "sha256": "3f2398a243cfdda4b8dcc8094e8ad69aeda73df8f4a34176dd514558b497cba8"
+    },
+    {
+      "path": "docs/INVARIANT_REAL_FORM_FINITE_REPRESENTATION_NOTE_2026-10-16.md",
+      "sha256": "e3f16ad247796f2bcd3913a71fd5e0136049edf88a5c610a29dc8aa2b09dc61e"
+    },
+    {
+      "path": "scripts/eight_majorana_quartic_finite.py",
+      "sha256": "feb662ad5950d04d7853adf34bb2aeafff89ad71304161582166021c7854c55c"
+    },
+    {
+      "path": "scripts/invariant_real_form_finite.py",
+      "sha256": "a84201e1122fb9119ac2c427fc7c987f590a6474df257819f5fe1f5414800db2"
+    }
+  ],
+  "remaining": "Five distinct N1 attack families not demonstrated; no fabricated routes or packet PASS. Remaining original source remains recoverable; no complete scientific review of PR9571 claimed."
+}

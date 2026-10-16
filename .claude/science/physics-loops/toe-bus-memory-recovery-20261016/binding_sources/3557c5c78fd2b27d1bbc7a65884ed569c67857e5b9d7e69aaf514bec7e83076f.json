@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-16T14:44:39.997368+00:00",
+  "refs": {
+    "HEAD": "9f2c922307afc1354e75b2da0dc9a8ce0ac2b3bd",
+    "origin/main": "41f192b2dcee96d9967e0e01ad50c5f1229ab252",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_before_memory_recovery_publication/stdout",
+    "bytes": 19868,
+    "sha256": "59268a6962f32bb9182bb907c54b53e2ed1d2fec9433a2fb5fad30b201042d02"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_before_memory_recovery_publication/EXECUTION.json",
+      "bytes": 1242,
+      "sha256": "6702f16355c9a4020c33f704e37419dffaff69d4fb8779c06cdd25bcbe4dce42"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_before_memory_recovery_publication/EXECUTION.json",
+      "bytes": 1311,
+      "sha256": "9cddf416dff81850c02810dc58536c11b7ddcfa407d8cdc27452fad2cba3de34"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/memory_refresh_open_science_9636/EXECUTION.json",
+      "bytes": 1214,
+      "sha256": "793c6fdb79b148a4e5d05133c25aecfc0c6d2c459d66547185b61e0e70f6a097"
+    }
+  ],
+  "source_snapshot": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/memory_recovery_publication_refresh/SOURCE_REFS.json",
+    "bytes": 9072,
+    "sha256": "97d95ced33f547e96bbacc48da34b5c4082334ca63ee01ab58381914efdbc145"
+  },
+  "open_count": 52,
+  "new_open_prs": [
+    9641,
+    9642
+  ],
+  "changed_open_heads": [
+    9636
+  ],
+  "no_longer_open": [
+    9573,
+    9576,
+    9578,
+    9579,
+    9580,
+    9581,
+    9582,
+    9583,
+    9584,
+    9585,
+    9586,
+    9587,
+    9588,
+    9589
+  ],
+  "instruction_screen": "Current main authority and validator sources are exact prior-reviewed bytes; planning revision unchanged. Complete changed-path screen finds no instruction changes.",
+  "science_screen": "Seven newly landed auxiliary/preparation/local-clock notes exact W matches; record-window full delta is navigation only. Six observational notes and updated9636 discrete-walk/formation scope are outside the current source dependencies. Bus/prep source identities unchanged; no recovery duplicate.",
+  "active_tree": "cc6daf46c5a45905a7caf82e5771867392f22711",
+  "current_main_integrated": false,
+  "generated_current_main_files_copied": false,
+  "editable_prompt_files_changed": []
+}

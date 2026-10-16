@@ -1,0 +1,175 @@
+{
+  "actual_canonical_acceptance": null,
+  "actual_publication": null,
+  "bounded_reference_policy": "52 local rows and317 explicit original references, no recursive resource archive.",
+  "changed_common_functions_read_completely": [
+    "require_bound_base",
+    "prepare",
+    "verify",
+    "finish",
+    "publish"
+  ],
+  "common": {
+    "bytes": 52437,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_refresh/bus_memory_recovery_common.py",
+    "sha256": "1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719"
+  },
+  "editable_prompt_files_changed": [],
+  "failed_routes": [
+    "Expected unbound refusal exit1 preserved as a guard check, not failed mathematics.",
+    "An overlarge aggregate source discovery output was truncated; it is not verification. Exact required constants were subsequently read in bounded output; full changed implementation had already been read."
+  ],
+  "freshness_binding": {
+    "bytes": 2664,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/memory_recovery_publication_refresh/BINDING_REFS.json",
+    "sha256": "3557c5c78fd2b27d1bbc7a65884ed569c67857e5b9d7e69aaf514bec7e83076f"
+  },
+  "kind": "root_integration_source_review",
+  "limitations": [
+    "Source-only acceptance for guarded actual canonical phases. No canonical phase or mathematical program executed by this review.",
+    "Original source nulls remain historical; later canonical review and staged review are still required.",
+    "Resource ancestry is Git base only; no additional resource theorem imported.",
+    "Fresh main41f192b2 affected-source screen is separately recorded; no full endorsement of unrelated newly landed science."
+  ],
+  "metadata_receipts": [
+    {
+      "actual_exit": 0,
+      "receipt": {
+        "bytes": 2385,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/metadata_runs/assemble_01/EXECUTION.json",
+        "sha256": "f7324bf27bbfa2e6e6f9a9b09818ee9c06c5dba281618f66fefb6eecce159915"
+      }
+    },
+    {
+      "actual_exit": 0,
+      "receipt": {
+        "bytes": 2383,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/metadata_runs/controls_01/EXECUTION.json",
+        "sha256": "72d093d0f17ab25583a893ab5a69644ed92d6a077a6728cbf42025f99bcbd6fc"
+      }
+    },
+    {
+      "actual_exit": 0,
+      "receipt": {
+        "bytes": 2381,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/metadata_runs/delivery_01/EXECUTION.json",
+        "sha256": "199249a4b693d1fb98936eb235ab7e30f910c2cc2214cc954b14723a1eb3e56e"
+      }
+    },
+    {
+      "actual_exit": 0,
+      "receipt": {
+        "bytes": 2491,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/metadata_runs/source_integrity_01/EXECUTION.json",
+        "sha256": "0816fa05cbee10810310148eeb3be6e3ef2181a90798e7903240f8f2ead703ba"
+      }
+    },
+    {
+      "actual_exit": 1,
+      "receipt": {
+        "bytes": 2466,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/metadata_runs/unbound_refusal_01/EXECUTION.json",
+        "sha256": "4b02ea78e06fef17157a7a83ceb7393cbe31cf34f4618cc55966ddb14ab83fce"
+      }
+    },
+    {
+      "actual_exit": 0,
+      "receipt": {
+        "bytes": 2393,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/metadata_runs/validation_01/EXECUTION.json",
+        "sha256": "82bd968f36d6e0ed5a5d0fb71daf305fbe9d9fe68505d9d6b46829d000db377d"
+      }
+    },
+    {
+      "actual_exit": 0,
+      "receipt": {
+        "bytes": 2358,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_refresh/metadata_runs/build_01/EXECUTION.json",
+        "sha256": "fef49ea851a0f1190796acc0a03935d994a4c8ea1466b897bb5565d9a1a41fd4"
+      }
+    },
+    {
+      "actual_exit": 0,
+      "receipt": {
+        "bytes": 2384,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_refresh/metadata_runs/validation_01/EXECUTION.json",
+        "sha256": "a01ec842f1d029163acd88f5baea43ad44776e50d0581a8a06cae7155036fe18"
+      }
+    }
+  ],
+  "original_proposal_freeze": {
+    "bytes": 70099,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/FINAL_FREEZE.json",
+    "sha256": "4f4a7c4765b01c01b25eb5dfb6408506d669d5d0da5478a5b9159972bd5209d2"
+  },
+  "primary_source": {
+    "bytes": 39328,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_publication_draft/proposal/scripts/bus_memory_recovery_2026_10_16.py",
+    "sha256": "2d97862c080638df1b4208bf4a6e88ea050e9387edff225eaee14f572587260b"
+  },
+  "primary_unbound": {
+    "bytes": 54190,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_refresh/proposed_primary_unbound.py",
+    "sha256": "0c013d40d88284bdd8df70c5c9a084824eb6a59209f687fe635e57fc01111a4d"
+  },
+  "proposal_freeze": {
+    "bytes": 93151,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_refresh/FINAL_FREEZE.json",
+    "sha256": "701026be0ab17e014547af691558dfe55c5533cf89828ab26bf5e8f75bb3e48d"
+  },
+  "retained_audit": false,
+  "reused_primary_functions": [
+    "sha",
+    "require",
+    "verify_bytes",
+    "pinned_records",
+    "validate"
+  ],
+  "root_read_complete_for_changed_implementation": true,
+  "source_publication_review": {
+    "bytes": 10578,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_memory_recovery_publication_review/REVIEW.json",
+    "sha256": "03e1053a510f8c8df4847142e201f81c58f8e71f5bb2363b96df312cbe84f2e1"
+  },
+  "source_read_scope": [
+    "Complete five changed common functions and global delta, exact29-function reuse from actual seven successful resource phase captures.",
+    "Complete primary extension/changed guards and wrapper changes; five accepted source functions and125 declared inputs verified unchanged.",
+    "Complete original assembler, controls, validator, recorder, sealer, delivery contract, twelve sections, command plan and PR body.",
+    "Complete refreshed builder/validator/sealer, guide, constant and command diffs; original frozen metadata reused with eight full actual source/stream/receipt envelopes inspected.",
+    "Five scientific bodies and two parents fully reviewed earlier with unchanged exact identities; no new proof inferred from provenance."
+  ],
+  "unchanged_common_functions": [
+    "now",
+    "digest",
+    "pin",
+    "portable",
+    "read",
+    "write",
+    "same",
+    "active",
+    "object_hash",
+    "edge_hash",
+    "git",
+    "clean_base",
+    "frozen_proposal",
+    "run",
+    "parent_query",
+    "no_duplicate",
+    "installed",
+    "cache_module",
+    "repin",
+    "install",
+    "cache",
+    "graph",
+    "historical_attributes",
+    "main",
+    "bind_runtime",
+    "phase_guard",
+    "bind_canonical_review",
+    "require_staged_review",
+    "relocate_recoveries"
+  ],
+  "utc": "2026-10-16T14:58:23.332744+00:00",
+  "verified_original_members": 316,
+  "verified_refreshed_members": 369
+}

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-16T04:42:47.644516+00:00",
+  "execution": "run_001/EXECUTION.json",
+  "execution_sha256": "dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/phase_memory_check.py",
+    "bytes": 3952,
+    "sha256": "06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b"
+  },
+  "launcher_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_check.py",
+    "bytes": 1782,
+    "sha256": "0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c"
+  },
+  "exit_code": 0,
+  "full_stdout_read": true,
+  "full_stderr_read": true,
+  "actual_scientific_runs": 1,
+  "failed_runs": 0,
+  "historical_checkers_replayed": 0,
+  "scope": "Complete finite xi=0 isometry memory/phase discriminator only; analytic proof supplies the positive-xi family and modeled derivative accounting."
+}

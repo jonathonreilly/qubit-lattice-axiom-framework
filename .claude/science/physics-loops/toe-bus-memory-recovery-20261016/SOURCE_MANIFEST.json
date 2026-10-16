@@ -1,0 +1,360 @@
+{
+  "acceptance_pins": {
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json": "5a347671fadc51c62b48e54461c9828dca44c954e50d169448acc253c8de1ec8",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+  },
+  "acceptance_reference_edges": [
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "c3d37e42ebdfd711bb97e6633be836db408545848f9beace2296a4309b62d6ef"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/DERIVATION.md",
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/REVIEW.md",
+      "sha256": "d6d800113aa30dafa2031cba309babc4bed70415d61dca3d07c13aaecc2674b0"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/PRE_RESULT_SKETCH.md",
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/REVIEW.md",
+      "sha256": "5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/FREEZE.json",
+      "sha256": "3235995b2bc6f90bcffe34355413181087288ff4540662c928b97341aa008ef0"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/FREEZE.json",
+      "sha256": "a6e440713aaf7219621a58d8d2b0620b10ad14bdf1b9376aa27c9e8810588e3a"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/FREEZE.json",
+      "sha256": "e30a9cf7396ad1e32ff10405006e1a34d361f529c8144a9989830b4a728d1415"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/FREEZE.json",
+      "sha256": "ba58b86684d5fae32b3a31a893e86502a9cccd51e70c1dcf472a8c7ddd148ea4"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/metadata_capture/EXECUTION.json",
+      "sha256": "fd869b5bbf35dc87640d68102e02b432a0b9121b7285f20c962f4b94c634935c"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/FREEZE.json",
+      "sha256": "ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW.md",
+      "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/FREEZE.json",
+      "sha256": "a28cdbb1cda8615dd0afa4fb75755fb25d0badac1a63d45e653c7034c5392465"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION.md",
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION_FREEZE.json",
+      "sha256": "a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/EXECUTION.json",
+      "sha256": "16be1bfabc638c7459a06c85f56e717f354b15cabcffb29a7ffc16d5ce651c93"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/EXECUTION.json",
+      "sha256": "46df65bf93c82c336e6b5c04937c6813ffc8bc5d87aa29ed837bf62f5ff15c48"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/FREEZE.json",
+      "sha256": "2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/FREEZE.json",
+      "sha256": "6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/EXECUTION.json",
+      "sha256": "dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262"
+    },
+    {
+      "acceptance": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "reference": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/SOURCE_MANIFEST.json",
+      "sha256": "b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c"
+    }
+  ],
+  "direct_parent_pins": [
+    {
+      "bytes": 83919,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "scope": "Qualified runtime output, literal old flow, positive block ledger and common incident premise.",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 115070,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "scope": "Evolved U_E preparation, full matching/gate/complement inputs, reference and modeled calibration contracts.",
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+    }
+  ],
+  "freezes": [
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review",
+      "member_count": 3,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FINAL_QUALIFICATIONS.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/record_acceptance.py"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FREEZE.json",
+      "row_key": "files"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal",
+      "member_count": 1,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/PRE_RESULT_SKETCH.md"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/FREEZE.json",
+      "row_key": "files"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check",
+      "member_count": 10,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/CHECKPOINT.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/PROGRESS_01.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/REVIEW.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/SOURCE_IDENTITIES.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/capture_sources.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/seal.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/sources/preparation_derivation.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/sources/preparation_qualifications.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/sources/root_sketch.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/sources/slew_qualifications.md"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/FREEZE.json",
+      "row_key": "files"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate",
+      "member_count": 4,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/CHECKPOINT.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/EXPOSURE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/SOURCE_MANIFEST.json"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/FREEZE.json",
+      "row_key": "members"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check",
+      "member_count": 18,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/CHECKPOINT.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/REVIEW.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/SOURCE_IDENTITIES.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/capture_sources.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/metadata_capture/EXECUTION.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/metadata_capture/executed_source.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/metadata_capture/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/metadata_capture/stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/run_metadata_capture.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/seal.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/author_derivation.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/author_exposure.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/author_freeze.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/author_manifest.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/preparation_derivation.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/preparation_qualifications.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/prior_root_sketch_review.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/sources/slew_qualifications.md"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/FREEZE.json",
+      "row_key": "members"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate",
+      "member_count": 26,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/CHECKPOINT.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/EXPOSURE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/FAILURES_AND_LIMITS.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/INITIAL_FINDINGS.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/INITIAL_FINDINGS_FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/SOURCE_MANIFEST.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/VERIFICATION.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_release_moments.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/EXECUTION.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/LAUNCH.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/executed_source.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/launcher_at_launch.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/stderr.txt",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/stdout.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/run_check.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/seal.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/bus_acceptance.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/bus_note.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/bus_qualifications.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/compensated_reservoir.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/finite_reservoir.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/installed_background.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/installed_readiness.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/quantitative_acceptance.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/quantitative_qualifications.md"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/FREEZE.json",
+      "row_key": "members"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check",
+      "member_count": 29,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/ANALYTIC_FINDINGS.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/ANALYTIC_FINDINGS_FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/CHECKPOINT.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW_FRAME.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/SOURCE_MANIFEST.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/execute_check.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/execute_provenance.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/independent_bitstring_check.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/EXECUTION.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/LAUNCH.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/executed_source.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/launcher_at_launch.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/stderr.txt",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/stdout.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/EXECUTION.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/LAUNCH.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/executed_source.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/launcher_at_launch.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/stderr.txt",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/stdout.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/AGENTS.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/CANDIDATE_FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/SCIENCE_WORKFLOW.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/bus_note.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/compensated_reservoir.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/workhorse_SKILL.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/verify_provenance.py"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/FREEZE.json",
+      "row_key": "members"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check",
+      "member_count": 22,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/CHECKPOINT.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/CHECK_EVIDENCE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/CHECK_RESULT.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW_STATUS.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/SOURCE_COVERAGE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/SOURCE_MANIFEST.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/phase_memory_check.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/EXECUTION.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/LAUNCH.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/executed_source.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/launcher_source.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/source_inputs.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_check.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/sources/00_PROPOSED_LEMMAS.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/sources/01_FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/sources/02_DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/sources/03_QUALIFIED_ACCEPTANCE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/sources/04_FINAL_QUALIFICATIONS.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/sources/05_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      ],
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/FREEZE.json",
+      "row_key": "files"
+    }
+  ],
+  "scope": "Only eight explicitly listed immediate freezes expanded. Nested prior publication freezes captured as records, not recursively expanded."
+}

@@ -1,0 +1,316 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T14:58:34.494631+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "6f76d1790705855488e6b8288b4b4fe13031919930c0b9dabe7ce7ade1cb6abf",
+  "git_base": "9f2c922307afc1354e75b2da0dc9a8ce0ac2b3bd",
+  "base_branch": "physics-loop/toe-bus-resources-20261016",
+  "source_body_pins": [
+    {
+      "bytes": 26987,
+      "end_byte_exclusive": 43192,
+      "label": "Five-stage author derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/DERIVATION.md",
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3",
+      "start_byte": 16205
+    },
+    {
+      "bytes": 16791,
+      "end_byte_exclusive": 60044,
+      "label": "Five-stage exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/REVIEW.md",
+      "sha256": "d6d800113aa30dafa2031cba309babc4bed70415d61dca3d07c13aaecc2674b0",
+      "start_byte": 43253
+    },
+    {
+      "bytes": 6791,
+      "end_byte_exclusive": 66913,
+      "label": "Alternative full-inverse pre-result sketch",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/PRE_RESULT_SKETCH.md",
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340",
+      "start_byte": 60122
+    },
+    {
+      "bytes": 15321,
+      "end_byte_exclusive": 82309,
+      "label": "Alternative full-inverse exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/REVIEW.md",
+      "sha256": "5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4",
+      "start_byte": 66988
+    },
+    {
+      "bytes": 8726,
+      "end_byte_exclusive": 91103,
+      "label": "Controlling final qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "c3d37e42ebdfd711bb97e6633be836db408545848f9beace2296a4309b62d6ef",
+      "start_byte": 82377
+    }
+  ],
+  "raw_bodies": [
+    {
+      "bytes": 26987,
+      "end_byte_exclusive": 43392,
+      "label": "Five-stage author derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/DERIVATION.md",
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3",
+      "start_byte": 16405
+    },
+    {
+      "bytes": 16791,
+      "end_byte_exclusive": 60244,
+      "label": "Five-stage exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/REVIEW.md",
+      "sha256": "d6d800113aa30dafa2031cba309babc4bed70415d61dca3d07c13aaecc2674b0",
+      "start_byte": 43453
+    },
+    {
+      "bytes": 6791,
+      "end_byte_exclusive": 67113,
+      "label": "Alternative full-inverse pre-result sketch",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/PRE_RESULT_SKETCH.md",
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340",
+      "start_byte": 60322
+    },
+    {
+      "bytes": 15321,
+      "end_byte_exclusive": 82509,
+      "label": "Alternative full-inverse exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/REVIEW.md",
+      "sha256": "5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4",
+      "start_byte": 67188
+    },
+    {
+      "bytes": 8726,
+      "end_byte_exclusive": 91303,
+      "label": "Controlling final qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "c3d37e42ebdfd711bb97e6633be836db408545848f9beace2296a4309b62d6ef",
+      "start_byte": 82577
+    }
+  ],
+  "parent_binding": {
+    "direct_canonical_parents": [
+      {
+        "bytes": 83919,
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "scope": "Qualified runtime output, literal old flow, positive block ledger and common incident premise.",
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+      },
+      {
+        "bytes": 115070,
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "scope": "Evolved U_E preparation, full matching/gate/complement inputs, reference and modeled calibration contracts.",
+        "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+      }
+    ],
+    "git_base": null,
+    "preparation_attachment_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ATTACHMENT.json",
+    "preparation_canonical_commit": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+    "preparation_publication_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/PUBLICATION.json",
+    "resource_draft_imported": false,
+    "scope": "Exact mathematical parents; no recovery Git base or wrapper/canonical approval.",
+    "unchanged_preparation_bodies": [
+      {
+        "bytes": 31003,
+        "label": "original_preparation",
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+        "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+      },
+      {
+        "bytes": 22431,
+        "label": "original_exposed_review",
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW.md",
+        "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8"
+      },
+      {
+        "bytes": 5394,
+        "label": "original_root_reconstruction",
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION.md",
+        "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9"
+      },
+      {
+        "bytes": 5082,
+        "label": "original_controlling_qualifications",
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+        "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+      },
+      {
+        "bytes": 7516,
+        "label": "slew_proposal",
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+        "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+      },
+      {
+        "bytes": 17568,
+        "label": "slew_exposed_review",
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+        "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+      },
+      {
+        "bytes": 6990,
+        "label": "slew_controlling_qualifications",
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+        "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+      }
+    ]
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/5f680ad2dcd99182bd6e023e879963c8c23b6b22d8b737045c1ab50ad91c5e49.json",
+    "bytes": 44440,
+    "sha256": "5f680ad2dcd99182bd6e023e879963c8c23b6b22d8b737045c1ab50ad91c5e49"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/35026a41dfa092def44f0803c9f4718a1260a1d59ac56bd97bf1b8c72a90e6d4.json",
+    "bytes": 2174,
+    "sha256": "35026a41dfa092def44f0803c9f4718a1260a1d59ac56bd97bf1b8c72a90e6d4"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/3debd91910196a070cf6b35f98df706e5bb0ecc9bd957ebe8b172f213635e041.md",
+    "bytes": 91103,
+    "sha256": "3debd91910196a070cf6b35f98df706e5bb0ecc9bd957ebe8b172f213635e041"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/03e1053a510f8c8df4847142e201f81c58f8e71f5bb2363b96df312cbe84f2e1.json",
+      "bytes": 10578,
+      "sha256": "03e1053a510f8c8df4847142e201f81c58f8e71f5bb2363b96df312cbe84f2e1"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/cbf63490ae7196e3a97132fcda57765b6f6e78754df8f7d4694032c96a8baa37.md",
+      "bytes": 3225,
+      "sha256": "cbf63490ae7196e3a97132fcda57765b6f6e78754df8f7d4694032c96a8baa37"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/c3f27cfea2ece87710a2d5ec084f03fb925372c17cae3b1e6739ae17566071cf.json",
+      "bytes": 652,
+      "sha256": "c3f27cfea2ece87710a2d5ec084f03fb925372c17cae3b1e6739ae17566071cf"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/7da7c202aad314a8339796089181bd483bc381f6ddeaaaa725050452d0340a77.json",
+      "bytes": 1810,
+      "sha256": "7da7c202aad314a8339796089181bd483bc381f6ddeaaaa725050452d0340a77"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/867f33aa8aaae7796c350f4c86631947da24478f795956a76f46c6e973cba91d.blob",
+      "bytes": 648,
+      "sha256": "867f33aa8aaae7796c350f4c86631947da24478f795956a76f46c6e973cba91d"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1637c0341624373779fcc88b7978a940be7e500e9fe7319079cb76f8de0769f0.py",
+      "bytes": 5874,
+      "sha256": "1637c0341624373779fcc88b7978a940be7e500e9fe7319079cb76f8de0769f0"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/023173cfa57b4e2b01a79d9ed5130d460da06011566ffe2d752f3aae40a492af.json",
+      "bytes": 23501,
+      "sha256": "023173cfa57b4e2b01a79d9ed5130d460da06011566ffe2d752f3aae40a492af"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/38921f710d8be0a68a29d49ccaa8739f92753f297dc45fee5ce97cfdbb82eb0b.json",
+      "bytes": 1810,
+      "sha256": "38921f710d8be0a68a29d49ccaa8739f92753f297dc45fee5ce97cfdbb82eb0b"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/dbaac9e365d4c4c52bf72f521f5f252b1b8d601114971af1367afbc9cd25f5e4.py",
+      "bytes": 7884,
+      "sha256": "dbaac9e365d4c4c52bf72f521f5f252b1b8d601114971af1367afbc9cd25f5e4"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/ce87129940179cf97f0b6ae568c318a5898ec085af287c0aeec65a5cbfc6c629.blob",
+      "bytes": 901,
+      "sha256": "ce87129940179cf97f0b6ae568c318a5898ec085af287c0aeec65a5cbfc6c629"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/5f5639d02e68fec88a26888b583f662e01351102678d275df1f895ac7fa0558c.json",
+    "bytes": 1405,
+    "sha256": "5f5639d02e68fec88a26888b583f662e01351102678d275df1f895ac7fa0558c"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1f99687ee529262859b49720239a43a11fe81885dc3187868e80e6b86450591a.json",
+      "bytes": 1747,
+      "sha256": "1f99687ee529262859b49720239a43a11fe81885dc3187868e80e6b86450591a"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719.py",
+      "bytes": 52437,
+      "sha256": "1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/f491165e500687268a77e78731bd3e9cfe78f894e5cef641055697d76907eb1e.blob",
+      "bytes": 299,
+      "sha256": "f491165e500687268a77e78731bd3e9cfe78f894e5cef641055697d76907eb1e"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-bus-preparation-20261016",
+      "headRefName": "physics-loop/toe-bus-resources-20261016",
+      "headRefOid": "9f2c922307afc1354e75b2da0dc9a8ce0ac2b3bd",
+      "isDraft": false,
+      "number": 9642,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9642"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/023173cfa57b4e2b01a79d9ed5130d460da06011566ffe2d752f3aae40a492af.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/03e1053a510f8c8df4847142e201f81c58f8e71f5bb2363b96df312cbe84f2e1.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1637c0341624373779fcc88b7978a940be7e500e9fe7319079cb76f8de0769f0.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1f99687ee529262859b49720239a43a11fe81885dc3187868e80e6b86450591a.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/22abe97261a142634f183d4f30b7aceca32af2ca0ca10b28716d9fc74170dcdf.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/35026a41dfa092def44f0803c9f4718a1260a1d59ac56bd97bf1b8c72a90e6d4.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/38921f710d8be0a68a29d49ccaa8739f92753f297dc45fee5ce97cfdbb82eb0b.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/3debd91910196a070cf6b35f98df706e5bb0ecc9bd957ebe8b172f213635e041.md",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/5f5639d02e68fec88a26888b583f662e01351102678d275df1f895ac7fa0558c.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/5f680ad2dcd99182bd6e023e879963c8c23b6b22d8b737045c1ab50ad91c5e49.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/7da7c202aad314a8339796089181bd483bc381f6ddeaaaa725050452d0340a77.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/867f33aa8aaae7796c350f4c86631947da24478f795956a76f46c6e973cba91d.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/ad9ca8cfd183154fd1d848f591520d9548b69cf726b2476f6ac36fc23d28feba.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/c3f27cfea2ece87710a2d5ec084f03fb925372c17cae3b1e6739ae17566071cf.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/cbf63490ae7196e3a97132fcda57765b6f6e78754df8f7d4694032c96a8baa37.md",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/ce87129940179cf97f0b6ae568c318a5898ec085af287c0aeec65a5cbfc6c629.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/dbaac9e365d4c4c52bf72f521f5f252b1b8d601114971af1367afbc9cd25f5e4.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/f491165e500687268a77e78731bd3e9cfe78f894e5cef641055697d76907eb1e.blob"
+  ],
+  "origin_main": "41f192b2dcee96d9967e0e01ad50c5f1229ab252",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

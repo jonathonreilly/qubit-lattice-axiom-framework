@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-16T04:42:47.645413+00:00",
+  "kind": "exposed_bounded_scientific_review",
+  "disposition": "Supports conditional bounded per-site modeled slew with explicitly evolved memory comparator; root acceptance pending",
+  "required_scope": [
+    "Retain U_E on complete memory output; it is not literal Q transfer.",
+    "Only modeled per-site derivative and strength caps; implementation needs separate pointwise derivative/amplitude control.",
+    "Moment operators retaining E are conjugated by U_E even when ordinary release moments agree.",
+    "Recompute xi-dependent T, phases, reserves and long-time calibration after added smallness constraints.",
+    "No polynomial total runtime or native microscopic supplier conclusion."
+  ],
+  "reviewer_refinement": "Uniform beta_bar before xi resolves optional fixed moment-tolerance ordering.",
+  "source_proposal_sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44",
+  "preparation_acceptance_sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641",
+  "root_acceptance": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

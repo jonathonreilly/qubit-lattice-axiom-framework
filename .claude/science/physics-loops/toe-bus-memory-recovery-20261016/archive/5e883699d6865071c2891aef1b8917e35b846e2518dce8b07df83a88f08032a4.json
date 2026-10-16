@@ -1,0 +1,166 @@
+{
+  "utc": "2026-10-16T03:53:54.437980+00:00",
+  "sources": [
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 83919,
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/bus_note.md",
+        "bytes": 83919,
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+      },
+      "read_coverage": "Complete wrapper, complete unchanged author proof and complete exposed review; initial overlong display repaired by targeted ranges 230-296,297-325,325-494,495-681,682-796 and727-752. Prior authored proof coverage reused at unchanged identity.",
+      "role": "Conditional bus statement, literal positive blocks, geometry, moments input and exact runtime phase/order."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+        "bytes": 5321,
+        "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/bus_acceptance.json",
+        "bytes": 5321,
+        "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+      },
+      "read_coverage": "Complete current read.",
+      "role": "Qualified source acceptance; no retained audit."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+        "bytes": 4507,
+        "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/bus_qualifications.md",
+        "bytes": 4507,
+        "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+      },
+      "read_coverage": "Complete current read.",
+      "role": "Controlling bus domain/effectiveness/supplier qualifications."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 117717,
+        "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/installed_background.md",
+        "bytes": 117717,
+        "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+      },
+      "read_coverage": "Complete overview28-100; complete generic fast-pulse source/premises/generators/full-reference comparison107-242. Later normalized-success and recurrence proofs not imported or claimed fully read.",
+      "role": "Interface comparison: different binary-vacuum consumer, explicit control/readiness supplies. No chain costs transferred."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 77852,
+        "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/installed_readiness.md",
+        "bytes": 77852,
+        "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+      },
+      "read_coverage": "Complete overview34-146, with34-98 repair after a combined display truncated; complete central energy argument149-260. Other preserved independent derivations and reader composition bodies not imported or claimed fully read.",
+      "role": "Interface comparison: supplied expectation for a specific mediator; no bus phase or purity supplier."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 48637,
+        "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/compensated_reservoir.md",
+        "bytes": 48637,
+        "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8"
+      },
+      "read_coverage": "Complete overview32-141 and complete unchanged central proof228-930 in two untruncated reads. Separate projective-speed refinement142-225 not used or claimed read.",
+      "role": "Reused method: positive complements, C-infinity profiles, full SWAP, paid ramps, full-output Duhamel, scalar/work/moment accounting. Boundary-specific constants not transferred."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 41771,
+        "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/finite_reservoir.md",
+        "bytes": 41771,
+        "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+      },
+      "read_coverage": "Complete unchanged central proof104-644; its boundary apparatus values remain context, not bus constants.",
+      "role": "Reused full-output reservoir SWAP contract and exact finite-memory information accounting."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/QUALIFIED_ACCEPTANCE.json",
+        "bytes": 3894,
+        "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/quantitative_acceptance.json",
+        "bytes": 3894,
+        "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+      },
+      "read_coverage": "Complete current read.",
+      "role": "Context only; no preparation premise imported."
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/FINAL_QUALIFICATIONS.md",
+        "bytes": 3826,
+        "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+      },
+      "captured": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/quantitative_qualifications.md",
+        "bytes": 3826,
+        "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+      },
+      "read_coverage": "Complete current read.",
+      "role": "Context/scope boundary only."
+    }
+  ],
+  "governance_reused": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "coverage": "Complete prior coherent-task read reused at unchanged identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "coverage": "Complete prior coherent-task read reused at unchanged identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "coverage": "Already applied; complete prior coherent-task read reused at unchanged identity."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "coverage": "Already applied; complete prior coherent-task read reused at unchanged identity."
+    }
+  ],
+  "inventoried_not_used": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_LOCAL_CLOCK_RESET_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "sha256": "fa4f38f2097a30b141bae9ae6115ec81e95102c61b94d509536ac81bba8cf0b8",
+    "coverage": "Filename, size/hash and headings only; no Markov/reset theorem imported."
+  },
+  "external_web_sources": [],
+  "scientific_executions": 1,
+  "old_science_replays": 0,
+  "editable_prompt_files_changed": []
+}

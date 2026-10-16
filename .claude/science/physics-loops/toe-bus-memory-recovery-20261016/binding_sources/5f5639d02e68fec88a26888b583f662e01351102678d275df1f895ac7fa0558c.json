@@ -1,0 +1,27 @@
+{
+  "observed_commit": "9f2c922307afc1354e75b2da0dc9a8ce0ac2b3bd",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/ad9ca8cfd183154fd1d848f591520d9548b69cf726b2476f6ac36fc23d28feba.json",
+      "bytes": 1594,
+      "sha256": "ad9ca8cfd183154fd1d848f591520d9548b69cf726b2476f6ac36fc23d28feba"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719.py",
+      "bytes": 52437,
+      "sha256": "1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/22abe97261a142634f183d4f30b7aceca32af2ca0ca10b28716d9fc74170dcdf.blob",
+      "bytes": 41,
+      "sha256": "22abe97261a142634f183d4f30b7aceca32af2ca0ca10b28716d9fc74170dcdf"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

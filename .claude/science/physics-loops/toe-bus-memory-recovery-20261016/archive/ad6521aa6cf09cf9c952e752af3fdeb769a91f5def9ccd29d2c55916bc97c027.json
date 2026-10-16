@@ -1,0 +1,20 @@
+{
+  "source_names_checked": [
+    "DERIVATION.md",
+    "CANDIDATE_FREEZE.json",
+    "bus_note.md",
+    "compensated_reservoir.md",
+    "AGENTS.md",
+    "SCIENCE_WORKFLOW.md",
+    "workhorse_SKILL.md"
+  ],
+  "live_originals_match_captures": true,
+  "scientific_execution_record_matches": true,
+  "in_memory_tamper_cases_rejected": [
+    "DERIVATION.md",
+    "bus_note.md",
+    "compensated_reservoir.md",
+    "run_001/stdout.json"
+  ],
+  "scientific_status": "Provenance only; no theorem established by this check."
+}

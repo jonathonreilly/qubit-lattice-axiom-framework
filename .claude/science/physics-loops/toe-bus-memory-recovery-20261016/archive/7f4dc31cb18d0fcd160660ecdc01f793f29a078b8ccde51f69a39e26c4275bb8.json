@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate",
+  "started_utc": "2026-10-16T03:41:40.514160+00:00",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/executed_source.py",
+    "bytes": 3420,
+    "sha256": "1c1677df40bb9a5861b7b29a1ca5f301c4adbe632d329d85e2d9b30cae1ceea5"
+  },
+  "launcher_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/launcher_at_launch.py",
+    "bytes": 1470,
+    "sha256": "6c774eca97d7f2bbfcea7ca59833a59aba4e0d62973e0b20849329237c51f433"
+  },
+  "limits": {
+    "child_alarm_seconds": 30,
+    "outer_timeout_seconds": 40,
+    "physical_matrix_dimension_max": 64,
+    "executions": 1
+  }
+}

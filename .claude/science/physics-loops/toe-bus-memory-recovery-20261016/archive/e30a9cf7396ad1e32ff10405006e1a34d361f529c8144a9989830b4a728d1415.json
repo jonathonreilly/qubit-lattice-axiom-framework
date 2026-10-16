@@ -1,0 +1,63 @@
+{
+  "schema": "source-proposal-freeze-v1",
+  "frozen_utc": "2026-10-16T13:14:41.284285+00:00",
+  "directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate",
+  "disposition": "Proposed conditional driven endpoint recovery; pending root review, not retained acceptance.",
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1804,
+      "sha256": "cce7221e85784a25051fe3cf006c7cb85f024571353ba3a5e816f39d788ba110"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 26987,
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 2731,
+      "sha256": "506a43815458201822a151669c036bdecb3ad34605a2887394560e923076caa0"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4008,
+      "sha256": "439866a222940a976ffb77c166fac6fce7cd3ff24514ef14ec42995c09c28ab5"
+    }
+  ],
+  "controlling_sources": [
+    {
+      "id": "P1",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "id": "P2",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6990,
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    },
+    {
+      "id": "P3",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "bytes": 17568,
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+    },
+    {
+      "id": "P4",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "bytes": 31003,
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "id": "P5",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    }
+  ],
+  "scientific_programs_launched": [],
+  "verification": "All five source identities checked again immediately before freeze. All four packet members hashed from actual saved bytes. No numerical or symbolic scientific execution was used.",
+  "authorized_scope": "Only this new directory was written. No publication, canonical or prior-packet changes."
+}

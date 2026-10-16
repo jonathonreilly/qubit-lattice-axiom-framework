@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "capture": "sources/00_PROPOSED_LEMMAS.md",
+      "bytes": 7516,
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/FREEZE.json",
+      "capture": "sources/01_FREEZE.json",
+      "bytes": 440,
+      "sha256": "2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "capture": "sources/02_DERIVATION.md",
+      "bytes": 31003,
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "sources/03_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3462,
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "sources/04_FINAL_QUALIFICATIONS.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "capture": "sources/05_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    }
+  ],
+  "exposure": "Complete proposal and accepted preparation derivation/qualifications read; same-model exposed checking. Prior bus source read reused after exact hash verification. No old checker code read or replayed."
+}

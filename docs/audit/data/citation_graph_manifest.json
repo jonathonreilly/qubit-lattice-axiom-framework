@@ -1,6 +1,6 @@
 {
- "edge_count": 16120,
- "node_count": 7154,
+ "edge_count": 16122,
+ "node_count": 7155,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2657,6 +2657,10 @@
   "bus_joint_energy_moments_bounded_theorem_note_2026-10-16": {
    "deps_hash": "e723971c6dcb",
    "out_degree": 1
+  },
+  "bus_memory_recovery_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "ee90eb578f57",
+   "out_degree": 2
   },
   "bus_resource_bounds_bounded_theorem_note_2026-10-16": {
    "deps_hash": "00255890fe87",

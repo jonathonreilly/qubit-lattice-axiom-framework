@@ -114,6 +114,45 @@ def main() -> int:
     Mlin = sp.Matrix([[sp.diff(v, x) for x in unknowns] for v in lin.values()])
     ck.check('the identity determines G uniquely (the map G -> sum G_ij phi_i phi_j is injective)',
              Mlin.rank() == len(unknowns))
+    # Theorem 4: speed bound and the axis-doubler trade-off (exact identities in b)
+    s_ = b[0] + 2 * b[1] + b[2]
+    v = sp.Matrix([1, 2, 1, 0])   # axis restriction: phi(t,0,0) = v + w cos t
+    w_ = sp.Matrix([0, 1, 2, 1])
+    ck.check('axis restriction: phi(t,0,0) = (1,2,1,0) + (0,1,2,1) cos t',
+             all(sp.expand(PHI[i].subs({c2: 1, c3: 1}) - (v[i] + w_[i] * c1)) == 0 for i in range(4)))
+    ck.check('v^T G v = 1 - s^2, w^T G w = s^2, v^T G w = 0 with s = b0 + 2 b1 + b2 (so s^2 <= 1 when G >= 0)',
+             sp.expand((v.T * G * v)[0] - (1 - s_ ** 2)) == 0 and sp.expand((w_.T * G * w_)[0] - s_ ** 2) == 0
+             and sp.expand((v.T * G * w_)[0]) == 0)
+    ck.check('F(0).F(pi,0,0) = (v+w)^T G (v-w) = 1 - 2 s^2: the axis doubler gap is 2 arcsin|s|',
+             sp.expand(((v + w_).T * G * (v - w_))[0] - (1 - 2 * s_ ** 2)) == 0)
+    # Theorem 5: the unique light-speed member, over Q(sqrt 5)
+    r5 = sp.sqrt(5)
+    bgold = {b[0]: (9 * r5 - 5) / 38, b[1]: (5 * r5 - 7) / 19, b[2]: (71 - 29 * r5) / 38}
+    Gg = G.subs(bgold).applyfunc(sp.expand)
+    ck.check('golden member: G(b_gold) v = 0 and s = 1 exactly', all(sp.expand(x) == 0 for x in Gg * v) and sp.expand(s_.subs(bgold)) == 1)
+    lam = sp.Symbol('lam')
+    cpg = sp.Poly(sp.expand((Gg - lam * sp.eye(4)).det(method='berkowitz')), lam)
+    eg = [sp.expand(-cpg.coeff_monomial(lam ** 3)), sp.expand(cpg.coeff_monomial(lam ** 2)), sp.expand(-cpg.coeff_monomial(lam))]
+    ck.check('golden member: e1, e2, e3 > 0 and det = 0 exactly, so G >= 0 of rank 3',
+             all(sp.N(e, 50) > 0 for e in eg) and sp.expand(cpg.coeff_monomial(1)) == 0)
+    sols_v = sp.solve(list(G * v), list(b), dict=True)
+    def is_psd(M):
+        cp_ = sp.Poly(sp.expand((M.applyfunc(sp.expand) - lam * sp.eye(4)).det(method='berkowitz')), lam)
+        es = [(-1) ** k * cp_.coeff_monomial(lam ** (4 - k)) for k in range(1, 5)]   # e1..e4 of a symmetric matrix
+        return all(sp.re(sp.N(e, 40)) >= -sp.Rational(1, 10 ** 30) for e in es)
+    psd = [sv for sv in sols_v if is_psd(G.subs(sv))]
+    ck.check('G v = 0 has four solutions; exactly the pair +-b_gold is positive semidefinite (light speed is unique up to sign)',
+             len(sols_v) == 4 and len(psd) == 2)
+    phi0 = sp.Matrix([1, 3, 3, 1])
+    fg = sum(((Gg * phi0)[i] * PHI[i] for i in range(4)), sp.Integer(0))
+    ck.check('golden member: f(t,0,0) = cos t exactly (light-like along the axes), so U(pi,0,0) = -1 (pi-mode doublers)',
+             sp.expand(sp.expand(fg.subs({c2: 1, c3: 1}) - c1)) == 0)
+    # Theorem 6: exact chirality tau3 (x) 1 commutes with the coin action
+    T3 = kron(SIG[3], SIG[0])
+    ck.check('tau3 (x) 1 commutes with 1 (x) D(R): a chirality-symmetric walk splits into two one-qubit covariant blocks',
+             all(sp.expand(kron(sp.eye(2), sp.cos(sp.pi / 4) * sp.eye(2) - sp.I * sp.sin(sp.pi / 4) * P_) * T3 - T3 * kron(sp.eye(2), sp.cos(sp.pi / 4) * sp.eye(2) - sp.I * sp.sin(sp.pi / 4) * P_)) == sp.zeros(4)
+                 for P_ in (SIG[1], SIG[3])))
+
     # algebraic point on det G = 0 with G >= 0 of rank 3
     B0, B2 = sp.Rational(11, 30), sp.Rational(3, 20)
     u = sp.Symbol('u')

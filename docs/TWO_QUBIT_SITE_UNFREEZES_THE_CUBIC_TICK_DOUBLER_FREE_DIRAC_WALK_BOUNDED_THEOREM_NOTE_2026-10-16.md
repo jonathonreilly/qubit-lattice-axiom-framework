@@ -1,7 +1,7 @@
 ---
 claim_id: two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2), with one extra square, or with nearest-neighbour hops only."
+claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Exact: the cone speed s = b0 + 2 b1 + b2 obeys s^2 <= 1 and the axis doublers sit at quasienergy 2 arcsin|s|, so doubler-free on the axes iff s < 1; the light-speed member is unique up to sign, b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19, (71 - 29 sqrt5)/38), with f(t,0,0) = cos t and pi-mode doublers; a walk commuting with the chirality tau3 (x) 1 splits into two one-qubit covariant cell walks and is frozen, so moving covariant cell walks must break chirality. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2), with one extra square, or with nearest-neighbour hops only."
 upstream_dependencies:
   - minimal_axioms
   - cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16
@@ -52,6 +52,20 @@ forced Dirac structure.
    - tau3 is the chirality; the h terms break it at O(k^2), as a Wilson term
      does, so the absence of doublers is consistent with Nielsen–Ninomiya.
 
+4. **Speed and doubling trade off exactly.** For every member, s^2 <= 1:
+   the cone moves at most one site per tick. The doublers at the three axis
+   points (pi,0,0), (0,pi,0), (0,0,pi) sit at quasienergy 2 arcsin|s|, so
+   they are gapped iff s < 1.
+5. **A unique light-speed walk over the golden field.** s = 1 is attained
+   only at b = +-b_gold with b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19,
+   (71 - 29 sqrt5)/38). There f(t,0,0) = cos t exactly, the axes are
+   light-like, and the axis doublers become massless pi-modes.
+6. **Exact chiral symmetry freezes motion.** If a two-qubit O-covariant cell
+   walk commutes with a flavor chirality tau3 (x) 1, it is block-diagonal and
+   each block is a one-qubit O-covariant cell walk, hence constant by the
+   companion note. Moving covariant matter on the cell must break chirality;
+   the h terms are forced, not chosen.
+
 ## Premises and declared objects
 
 - **Not framework content.** The two-qubit site C^2 (x) C^2 and the action
@@ -98,6 +112,40 @@ e1, e2, e3 of the characteristic polynomial are positive, so the three
 remaining eigenvalues are positive (approximately 0.0173, 0.0529, 0.706).
 Hence G(b*) is positive semidefinite of rank three and an O-covariant moving
 walk exists. ∎ (runner: exact root-divisibility and sign evaluation)
+
+## Theorem 4 — the speed bound and the axis doublers
+
+On the axis line, phi(t,0,0) = v + w cos t with v = (1,2,1,0) and
+w = (0,1,2,1), so F(t,0,0) = F v + F w cos t and g(t,0,0) = (s sin t, 0, 0)
+with s = b0 + 2 b1 + b2. From G(b) one checks the identities
+v^T G v = 1 - s^2, w^T G w = s^2 and v^T G w = 0. Since G >= 0, s^2 <= 1. The
+cone at k = 0 has speed |s|. F(0).F(pi,0,0) = (v+w)^T G (v-w) = 1 - 2 s^2, and
+|F| = 1 at both points (g vanishes there), so with F(0) on the f axis
+f(pi,0,0) = 1 - 2 s^2 = cos(2 arcsin|s|). ∎
+
+The explicit member above has s = 0.9144 and axis gap 2 arcsin(0.9144) =
+2.308, matching the numerical spectrum.
+
+## Theorem 5 — the light-speed member
+
+s^2 = 1 forces v^T G v = 0, hence G v = 0 (G >= 0). The four polynomial
+equations G(b) v = 0 have exactly four real solutions, ±b_gold and a second
+pair at which G is indefinite. At b_gold, det G = 0, the other three
+eigenvalues are positive (≈ 7.7e-4, 0.0432, 0.692), s = 1, and
+f(t,0,0) = cos t. So the light-speed Clifford cell walk exists and is unique
+up to sign and the internal SO(3) rotation; its axis doublers are massless at
+quasienergy pi, while the face and corner doublers are gapped at 2.665 and
+2.455 rad. ∎
+
+## Theorem 6 — exact chirality freezes motion
+
+tau3 (x) 1 commutes with every coin operator 1 (x) D(R). If U commutes with
+tau3 (x) 1 it is U_+ ⊕ U_- on the tau3 eigenspaces, and each U_± is a unitary
+one-qubit walk on the cell, covariant under O with the spin-1/2 coin action.
+By the companion note (Theorem 1) each is a constant. ∎ In the Clifford
+family this says that h ≡ 0 is impossible for a moving walk; together with
+Nielsen–Ninomiya it explains why the surviving walks are vector-like
+(Dirac) with Wilson-type chirality breaking.
 
 ## Numerical properties of the explicit member (labelled numerical)
 
@@ -161,4 +209,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=11 FAIL=0` (a few seconds).
+Expected: `TOTAL: PASS=19 FAIL=0` (a few seconds).

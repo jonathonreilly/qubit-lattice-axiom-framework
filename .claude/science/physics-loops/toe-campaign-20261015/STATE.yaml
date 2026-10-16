@@ -8,9 +8,19 @@ active_block: B1-covariant-qubit-walks
 blocks:
   B1-covariant-qubit-walks:
     status: in_progress
-    results_so_far:
-      - "EXACT: soldered O-covariant one-qubit unitary walks with 27-point (Chebyshev range 1) stencil are +-1 times a phase (Groebner basis over Q, valid over C)."
-      - "NUMERICAL: T-covariant (tetrahedral) cube-stencil walks: no moving solution found (best residual 0.088, 200 starts)."
-    running:
-      - "subgroup scan of moving-walk existence (D2..O) on cube stencil"
-      - "Groebner basis for O-covariant range-2-per-axis stencil (125 points)"
+    note: docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md
+    runner: scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py (TOTAL PASS=22 FAIL=0, ~20 s)
+    exact:
+      - "O and T covariant 27-point-cell walks are constant (Groebner over Q)."
+      - "D4: only axial shifts exp(+-i sigma_z k_z)."
+      - "D2 product walk: unitary, D2-covariant, isotropic Weyl cone at k=0, W3=0."
+    numerical:
+      - "C3, C4, D2 admit 3D moving walks; D3 none found; all W3 = 0."
+      - "Independent raw-coefficient U(2) implementation (coinrep.py, spin-1/2, O): no moving walk (best residual 0.037)."
+      - "O, range 2 per axis: no moving walk; minimizers sit in the quartic valley at the trivial walk (residual ~ |g|^4)."
+    caveats:
+      - "Early pinned-norm searches (sum b^2 = 1) are not scale-free; reruns use a lower-bound penalty."
+    pending:
+      - "exact D3 Groebner"
+      - "residual-vs-amplitude scaling for O range 2 (DELTA 0.2, 0.5, 1.0)"
+      - "soldering-menu sign/axis actions and two-qubit / spin-3/2 coins, rerun with lower-bound penalty"

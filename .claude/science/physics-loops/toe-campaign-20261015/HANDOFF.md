@@ -38,7 +38,7 @@ cubic grid of qubits, if every cube direction is treated alike.
 | B2 | `docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py` (PASS=17) | Positive order-blind formation = one consistent 1-dependent record field whose full conditionals are the rule (static = formation); no long-range order, power laws or pinch points. |
 | B3 | `docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/two_qubit_cubic_dirac_tick_2026_10_16.py` (PASS=41) | A two-qubit site (parked M_4(C) fork) admits exactly O-covariant moving ticks; Clifford family classified by a Gram criterion; explicit member with one massless isotropic Dirac cone and gapped doublers; speed <= 1 with axis doublers at 2 arcsin s; unique light-speed member over Q(sqrt 5); exact chirality freezes motion; W3 = 0; quadratic (not linear) anisotropy. Independent check agrees (and corrected one statement). |
 | B6 | `docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py` (PASS=11) | One amplitude per site on staggered 2x2x2 blocks: the spinorial signed corner action is two copies of spin 3/2, and it carries an exactly covariant moving Dirac tick (two Dirac fermions per block). Theorem 3 (exact): no nearest-site version propagates; the minimal propagating staggered tick reaches 2 sites (with doublers), the doubler-free one 3. |
-| B7 | `docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py` (PASS=9) | Every spinorial cubic-orbit cell is E1/2 (x) F with F an S3 (axis-permutation) rep. Faces A1+E (triplet, no repeat), signed corners 2E, edges A1+A2+2E (C3 labels 1,1,w,w-bar). The singlet pair moves but was found only massive or degenerate; with U(0) = 1 every axis-moving line branch is a unit ideal (mod p; one over Q), so it is flat along the axes. A parallel to the C3 generation programme, not a derivation. |
+| B7 | `docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py` (PASS=9) | Every spinorial cubic-orbit cell is E1/2 (x) F with F an S3 (axis-permutation) rep. Faces A1+E (triplet, no repeat), signed corners 2E, edges A1+A2+2E (C3 labels 1,1,w,w-bar). The singlet pair moves but was found only massive or degenerate; with U(0) = 1 every axis-moving line branch is a unit ideal (mod p and by modStd over Q), so it is flat along the axes. A parallel to the C3 generation programme, not a derivation. |
 
 ## Synthesis for the TOE program (implications, not adoptions)
 
@@ -119,7 +119,8 @@ separately; nothing in this campaign derives it.
 
 - Start the next campaign on OPPORTUNITY_QUEUE N1 (emergent electron from
   neighbourhood conditions).
-- Close the twisted pair (E1/2 + E5/2) branch certificates over Q, not only
-  mod p (see `generations/twisted_branches/`).
+- Promote the twisted pair (E1/2 + E5/2) result: exact branch prefilter and
+  cofactor certificates for the eight unit ideals (see
+  `generations/twisted_branches/`).
 - Range four for the one-qubit freeze; Clifford universality on the
   two-qubit site.

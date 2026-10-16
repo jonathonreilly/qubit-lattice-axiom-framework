@@ -72,5 +72,5 @@ blocks:
     note: docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md
     result: "every spinorial cubic-orbit cell = E1/2 (x) F, F an S3 rep; faces A1+E, signed corners 2E, edges A1+A2+2E; singlet pair E1/2+E5/2 moves but only massive/degenerate found"
     six_neighbour: "E1/2+H most likely frozen (numerical; residual rises steeply with motion bound)"
-    twisted_pair_branches: "U(0)=1: 8 axis-moving branches unit ideal mod 32003 (b0 also over Q, modStd); only axis-flat branch survives (dim 4) -> flat along axes (mod-p evidence; generations/twisted_branches/)"
+    twisted_pair_branches: "U(0)=1: 8 axis-moving branches unit ideal mod 32003 and over Q (modStd; no cofactor certificate); only axis-flat branch survives (dim 4) -> flat along axes (mod-p evidence; generations/twisted_branches/)"
 milestone_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636 (base claude/rules-hygiene-20261015)"

@@ -1,0 +1,31 @@
+{
+  "published_utc": "2026-10-16T17:46:49.409231+00:00",
+  "head": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+  "pr": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-local-conserving-sparse-current-main-20261016",
+    "headRefOid": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+    "isDraft": false,
+    "number": 9647,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9647"
+  },
+  "actual_base": "cea15d2c7fca3ffb403f1f474fef6b6697650d8b",
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/ROOT_CURRENT_REVIEW.json",
+    "bytes": 2054,
+    "sha256": "3288dbf6232d94024a2949524f403c222057927b691aff480cd63bc847ca1dae"
+  },
+  "stage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/CURRENT_STAGED.json",
+    "bytes": 392097,
+    "sha256": "5cdf9370a0a1ac8921ee009b793082c2c16c15889e5315241c5a62bac1128c7b"
+  },
+  "submitted_body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/SUBMITTED_PR_BODY.md",
+    "bytes": 2145,
+    "sha256": "7afd580a6c91d8b6bd2995d91fbd1a0333f05e2c89c18373eded8a6214ed5a91"
+  },
+  "attachment_pending": true,
+  "no_merge": true
+}

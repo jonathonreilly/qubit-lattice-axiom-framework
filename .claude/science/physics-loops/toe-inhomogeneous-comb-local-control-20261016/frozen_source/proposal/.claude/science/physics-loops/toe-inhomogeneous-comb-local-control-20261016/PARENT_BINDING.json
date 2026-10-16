@@ -1,0 +1,33 @@
+{
+  "schema": "qualified_source_parents_v1",
+  "canonical_binding_complete": false,
+  "direct_mathematical_parents": [
+    {
+      "role": "local_conserving_runtime_and_driven_preparation",
+      "canonical_path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "canonical_claim_id": "local_conserving_preparation_bounded_theorem_note_2026-10-16",
+      "source_alias": "canonical_parent/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    },
+    {
+      "role": "sparse_q1_compiler",
+      "canonical_path": null,
+      "canonical_claim_id": null,
+      "proposed_identifier": "local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16",
+      "derivation_alias": "local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "derivation_sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b",
+      "acceptance_alias": "local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json",
+      "acceptance_sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda",
+      "qualifications_alias": "local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "qualifications_sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e",
+      "canonical_publication": null
+    }
+  ],
+  "excluded_as_mathematical_parents": [
+    "inhomogeneous_local_control_independent_candidate",
+    "inhomogeneous_local_control_exposed_comparison",
+    "interacting_positive_complement_scope_screen"
+  ],
+  "git_ancestry_is_not_mathematical_dependency": true
+}

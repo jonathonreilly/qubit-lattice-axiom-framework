@@ -1,0 +1,22 @@
+{
+  "kind": "read-only pinned-methodology-source comparison",
+  "argv": [
+    "git",
+    "show",
+    "dd16171663343dbdeb21adea70ab5e08b3a3a8df:docs/ai_methodology/skills/workhorse/SKILL.md"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "started_utc": "2026-10-16T17:09:48.209918+00:00",
+  "finished_utc": "2026-10-16T17:09:48.226610+00:00",
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_1/stdout",
+    "bytes": 13419,
+    "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_1/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

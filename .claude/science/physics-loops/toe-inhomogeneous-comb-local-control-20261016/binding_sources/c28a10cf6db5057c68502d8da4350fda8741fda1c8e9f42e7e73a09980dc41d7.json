@@ -1,0 +1,191 @@
+{
+  "prior_failed_metadata_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/comb_integration_review/EXECUTION.json",
+    "bytes": 1726,
+    "sha256": "faf9e13818b33b21bc11ec4c961a153a4a81e2a2d0dc85c7942f44e0de54fd57"
+  },
+  "prior_failure": "Source freeze uses members, not files; prior attempt failed before review/binding writes.",
+  "utc": "2026-10-16T18:02:11.049991+00:00",
+  "kind": "root_integration_source_review",
+  "root_read_complete_for_changed_implementation": true,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 132841,
+    "sha256": "a0f5c0d5e5fcb27b6a1415d93c543a55a5547d5d3124726192635ab7bbd51ff9"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/inhomogeneous_comb_common.py",
+    "bytes": 56281,
+    "sha256": "b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 45991,
+    "sha256": "55edd06cc97122445e3da9c842375c8530b45f83b3bdef1914901c7e950f8592"
+  },
+  "source_publication_review": {
+    "bytes": 3382,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_inhomogeneous_comb_qualified_publication_review/REVIEW.json",
+    "sha256": "804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1"
+  },
+  "members_verified": 570,
+  "unchanged_source_members": 193,
+  "unchanged_mathematical_bodies": 6,
+  "direct_mathematical_parents": [
+    {
+      "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    },
+    {
+      "path": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 126779,
+      "sha256": "2f21c5244592af37d48f69a9e7c163fabf1a6372a3ed80cdf70446f3aa892d50"
+    }
+  ],
+  "changed_common_functions": [
+    "finish",
+    "prepare",
+    "publish",
+    "require_bound_base",
+    "verify"
+  ],
+  "exact_common_functions": 28,
+  "metadata_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/actual_base_binding/EXECUTION.json",
+        "bytes": 2414,
+        "sha256": "ce6fbca7f9d062abc6a9853d60e37366cfeaaff1430c8f740d5ee5ac2b214358"
+      },
+      "exit_code": 0,
+      "stdout": "{\"utc\": \"2026-10-16T17:52:01.911207+00:00\", \"base\": {\"status\": \"bound_actual_root_published_base\", \"base_head\": \"781c50e5391a0e8b9c855154c8e7c1bf5d384aa2\", \"base_tree\": \"19e107bb8835e9c0bea0ac4ec2721d425312f58f\", \"base_pr\": 9647, \"base_branch\": \"physics-loop/toe-local-conserving-sparse-current-main-20261016\", \"base_parent_branch\": \"main\", \"root_publication_receipt\": \"reference_receipts/PUBLICATION.json\", \"root_attachment_receipt\": \"reference_receipts/ATTACHMENT_TOOL_RESULT.json\"}, \"freshness\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/BINDING_REFS.json\", \"bytes\": 5124, \"sha256\": \"692fe44bdfdfdc5b8f3724529b896afc3f3576c28f643833a84855a1d7f5f216\"}, \"source_review\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_inhomogeneous_comb_qualified_publication_review/REVIEW.json\", \"bytes\": 3382, \"sha256\": \"804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1\"}, \"reference_paths\": 159, \"refresh_paths\": 50, \"changed_checkout_tools\": [\"docs/audit/scripts/build_citation_graph.py\"], \"actual_integration_review\": null, \"actual_canonical_review\": null, \"actual_staged_review\": null, \"canonical_phases_executed\": 0, \"scientific_programs_executed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/actual_binding_guards/EXECUTION.json",
+        "bytes": 2429,
+        "sha256": "aa60864e9435afa34d234d9ae528bc636bee82474bcb41510f234babba7776e2"
+      },
+      "exit_code": 0,
+      "stdout": "{\"report\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/BINDING_GUARD_VERIFICATION.json\", \"bytes\": 6256, \"sha256\": \"a86a98766837341266dffd126ebb8e3e3375f329e2684cb1525ff556b2a00e9a\"}, \"rejected_mutants\": 10, \"canonical_phases_executed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/actual_binding_spec/EXECUTION.json",
+        "bytes": 2416,
+        "sha256": "a30a9cb7c6a831aa456b9dc90d7ae6af361c2c1a702e5e2b5f14de36a3b7f9d1"
+      },
+      "exit_code": 0,
+      "stdout": "{\"spec\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/ACTUAL_BASE_SPEC.json\", \"bytes\": 7386, \"sha256\": \"7815ae6f4aa0d052292c0f079a1c8934ec43a14acee227356e41bae8284a9dd6\"}, \"bounded_extra_records\": 21}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/build_driver/EXECUTION.json",
+        "bytes": 2376,
+        "sha256": "4918018526bae7aed73f415e4f7be599086447614c8ff56d1c6d91729fbe1bea"
+      },
+      "exit_code": 0,
+      "stdout": "{\"common\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/inhomogeneous_comb_common.py\", \"bytes\": 55961, \"sha256\": \"a847e62a40f5bf42b7234419b2c6047ad6eb64b3261a4bc2c41a61bd211dd7c2\"}, \"actual_base\": null, \"future_approvals\": null}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/build_payload/EXECUTION.json",
+        "bytes": 2381,
+        "sha256": "c483ed180b7043323bafd4504a38ebde52c9bd7a45413082bf3129d227fc64d7"
+      },
+      "exit_code": 0,
+      "stdout": "{\"note\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/PROPOSED_NOTE.md\", \"bytes\": 104822, \"sha256\": \"d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5\"}, \"primary\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/proposed_primary_unbound.py\", \"bytes\": 45991, \"sha256\": \"55edd06cc97122445e3da9c842375c8530b45f83b3bdef1914901c7e950f8592\"}, \"bodies\": 6, \"source_members\": 193, \"canonical_phases_executed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/canonical_refusal/EXECUTION.json",
+        "bytes": 2278,
+        "sha256": "a816b6fe9f1a58d8a6a236055e21f8c1d9a0860af99ea909c2d4cb8632cd12e7"
+      },
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/canonical_refusal/source_at_launch.py\", line 258, in <module>\n    if __name__=='__main__':raise SystemExit(main())\n                                             ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/canonical_refusal/source_at_launch.py\", line 250, in main\n    report=canonical_validate(root);print(json.dumps(report,sort_keys=True))\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/canonical_refusal/source_at_launch.py\", line 164, in canonical_validate\n    require(isinstance(EXPECTED_CANONICAL_REVIEW_SHA,str),'Canonical review is not bound')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/canonical_refusal/source_at_launch.py\", line 41, in require\n    if not ok:raise ValueError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Canonical review is not bound\n"
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/current_base_observation/EXECUTION.json",
+        "bytes": 2440,
+        "sha256": "4c7107359b23bec47428755066601535b070cc4e66ae0eb13892ab3dee2fe357"
+      },
+      "exit_code": 0,
+      "stdout": "{\"freshness\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/BINDING_REFS.json\", \"bytes\": 5124, \"sha256\": \"692fe44bdfdfdc5b8f3724529b896afc3f3576c28f643833a84855a1d7f5f216\"}, \"source_snapshot\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/SOURCE_REFS.json\", \"bytes\": 5309, \"sha256\": \"91d857fdae12b368cd274e299657361f04774724cad8b78e0ffb1ad2e5b9fdc8\"}, \"screen\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/AFFECTED_SOURCE_SCREEN.json\", \"bytes\": 8806, \"sha256\": \"afd70505d79bf51d792e505aacbf5a8547c8c036c85e2e810b1c23a0bcfd5a36\"}, \"open_prs\": [{\"baseRefName\": \"main\", \"headRefName\": \"physics-loop/toe-local-conserving-sparse-current-main-20261016\", \"headRefOid\": \"781c50e5391a0e8b9c855154c8e7c1bf5d384aa2\", \"isDraft\": false, \"number\": 9647, \"title\": \"[physics-loop] toe-local-conserving-sparse: bounded_theorem / conditional-support\", \"url\": \"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9647\"}], \"canonical_phases_executed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/delivery_final/EXECUTION.json",
+        "bytes": 2390,
+        "sha256": "00bf03e74b47488f9443cfa3152f024332a7b9af5e3e4e5f51f259288fcc736b"
+      },
+      "exit_code": 0,
+      "stdout": "{\"guide\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/ROOT_READ_GUIDE.md\", \"bytes\": 6512, \"sha256\": \"b1c9ffbff2e494ec7c071daa344c1dea4b47a032d5f893a42045b670b5ce427e\"}, \"delivery\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/DELIVERY_PINS.json\", \"bytes\": 2677, \"sha256\": \"89dbfc864d821f7b48408534a41b6afd41b1ede6f119432b24c862603fe9661e\"}, \"base\": {\"status\": \"bound_actual_root_published_base\", \"base_head\": \"781c50e5391a0e8b9c855154c8e7c1bf5d384aa2\", \"base_tree\": \"19e107bb8835e9c0bea0ac4ec2721d425312f58f\", \"base_pr\": 9647, \"base_branch\": \"physics-loop/toe-local-conserving-sparse-current-main-20261016\", \"base_parent_branch\": \"main\", \"root_publication_receipt\": \"reference_receipts/PUBLICATION.json\", \"root_attachment_receipt\": \"reference_receipts/ATTACHMENT_TOOL_RESULT.json\"}, \"canonical_phases_executed\": 0, \"actual_integration_review\": null}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/delivery_pending_base/EXECUTION.json",
+        "bytes": 2422,
+        "sha256": "97bb9c665e24d1a2987afc81229f71cd629d96bd3183a86dfa7bca1beb5fd1ab"
+      },
+      "exit_code": 0,
+      "stdout": "{\"guide\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/ROOT_READ_GUIDE.md\", \"bytes\": 4771, \"sha256\": \"538ab216d1f297f1532f2bda95f8fe9d653322870021496cb4a2d6b6ecd157bb\"}, \"common\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/inhomogeneous_comb_common.py\", \"bytes\": 56158, \"sha256\": \"7402c4d7854571139f6c4b95732780f73828b5274dd361994140dd46555e91c0\"}, \"runtime_labels\": 36, \"approval\": null}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/final_inspection/EXECUTION.json",
+        "bytes": 2393,
+        "sha256": "d8218dde914c37f9ada4ff6974cefda690c545853cbcc01ef5fa8834e1bcec26"
+      },
+      "exit_code": 0,
+      "stdout": "{\"report\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/FINAL_INSPECTION.json\", \"bytes\": 28678, \"sha256\": \"18984223cdcf805d50cf089a93ca05a30a486238ffe673f809563cedf709caf4\"}, \"metadata_receipts\": 12, \"unchanged_bodies\": 6, \"canonical_phases_executed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/source_integrity/EXECUTION.json",
+        "bytes": 2450,
+        "sha256": "0559d975f90c2a6ae5a90d25a1b8f218174bd018ee8ab0a09456d3d9c17978b3"
+      },
+      "exit_code": 0,
+      "stdout": "{\"canonical_certification\": false, \"source_only\": {\"archive_objects\": 126, \"body_count\": 6, \"note_sha256\": \"71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1\", \"science_executions\": 0, \"source_aliases\": 288}}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/validation_final/EXECUTION.json",
+        "bytes": 2400,
+        "sha256": "f3cff63acf653b02ba944bb69d9fa225e454e984abc29419d6856b85352eb43c"
+      },
+      "exit_code": 0,
+      "stdout": "{\"common\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/inhomogeneous_comb_common.py\", \"bytes\": 56281, \"sha256\": \"b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae\"}, \"primary\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/proposed_primary_unbound.py\", \"bytes\": 45991, \"sha256\": \"55edd06cc97122445e3da9c842375c8530b45f83b3bdef1914901c7e950f8592\"}, \"unchanged_bodies\": 6, \"rejected_metadata_mutants\": 12, \"future_canonical_mutants\": 22, \"actual_base_status\": \"bound_actual_root_published_base\", \"canonical_phases_executed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/validation_pending_base/EXECUTION.json",
+        "bytes": 2435,
+        "sha256": "0bed090ba1dfe24d44741e8b0e68c28bc1db4fa8445341b665a5e0a17eb5a934"
+      },
+      "exit_code": 0,
+      "stdout": "{\"common\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/inhomogeneous_comb_common.py\", \"bytes\": 56158, \"sha256\": \"7402c4d7854571139f6c4b95732780f73828b5274dd361994140dd46555e91c0\"}, \"primary\": {\"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/proposed_primary_unbound.py\", \"bytes\": 45991, \"sha256\": \"55edd06cc97122445e3da9c842375c8530b45f83b3bdef1914901c7e950f8592\"}, \"unchanged_bodies\": 6, \"rejected_metadata_mutants\": 12, \"future_canonical_mutants\": 22, \"actual_base_status\": \"unset_actual_base\", \"canonical_phases_executed\": 0}\n",
+      "stderr": ""
+    }
+  ],
+  "actual_canonical_acceptance": null,
+  "retained_audit": false,
+  "scientific_executions": 0,
+  "editable_prompt_files_changed": [],
+  "scope": "Complete changed implementation, wrapper, metadata code, final schema/tool deltas and actual receipt/source identities inspected. Exact unchanged arguments reuse source review 804620a7 and prior checked function bodies. No new mathematical verification or future canonical acceptance is represented. Seal operation intentionally has process_exit null; produced inventory verified independently here. Current main 5b0 differs from sparse publication base cea only by the already recorded unrelated scalar milestone; no extra mathematical premise."
+}

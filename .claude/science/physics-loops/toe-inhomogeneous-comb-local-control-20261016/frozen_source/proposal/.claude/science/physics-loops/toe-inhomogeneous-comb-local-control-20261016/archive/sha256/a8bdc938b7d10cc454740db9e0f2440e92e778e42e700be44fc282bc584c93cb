@@ -1,0 +1,62 @@
+{
+  "editable_prompt_files_changed": [],
+  "exposure": "Root read no new independent inhomogeneous candidate; shared accepted-source exposure and same selected model acknowledged.",
+  "independent_acceptance": null,
+  "parents": [
+    {
+      "bytes": 31922,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    },
+    {
+      "bytes": 11037,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305"
+    },
+    {
+      "bytes": 5279,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509"
+    },
+    {
+      "bytes": 15499,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826"
+    },
+    {
+      "bytes": 8398,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc"
+    },
+    {
+      "bytes": 30201,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+    },
+    {
+      "bytes": 8609,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e"
+    },
+    {
+      "bytes": 3678,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda"
+    }
+  ],
+  "primary_universality": {
+    "coverage": "Primary abstract confirms exact one-qubit/CNOT universality; no quantitative decomposition bound or full-paper verification imported.",
+    "doi": "10.1103/PhysRevA.52.3457",
+    "url": "https://arxiv.org/abs/quant-ph/9503016"
+  },
+  "publication": null,
+  "repository_scope_screen": {
+    "bytes": 12304,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_control_scope_screen.json",
+    "sha256": "b568df536213323ae3b1b5aedca390ec0ac60eb6d0922f9f1eb29d71f0e0023d"
+  },
+  "retained_audit": false,
+  "science_execution": null,
+  "scope_screen_limits": "Filename-filtered top-level local note text search only; no comprehensive novelty claim. Existing onsite/interacting controller introduction scope distinguished.",
+  "utc": "2026-10-16T15:45:50.126500+00:00"
+}

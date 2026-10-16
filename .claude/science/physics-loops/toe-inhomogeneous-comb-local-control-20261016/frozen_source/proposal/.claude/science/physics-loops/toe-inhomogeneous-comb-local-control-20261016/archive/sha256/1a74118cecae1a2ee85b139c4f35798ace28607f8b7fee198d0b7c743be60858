@@ -1,0 +1,101 @@
+{
+  "utc": "2026-10-16T16:43:30.829432+00:00",
+  "kind": "selected_sources_for_exposed_uniform_word_check",
+  "captured_sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "packet_path": "source/uniform_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "coverage": "Complete new argument read and reconstructed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/SOURCE_MANIFEST.json",
+      "packet_path": "source/uniform_proposal/SOURCE_MANIFEST.json",
+      "bytes": 2238,
+      "sha256": "07833281338beca8322fb11c9bcc08f8ee13a909ae4faab2c48d511597a127d9",
+      "coverage": "Complete new source/exposure manifest read."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/FREEZE.json",
+      "packet_path": "source/uniform_proposal/FREEZE.json",
+      "bytes": 712,
+      "sha256": "55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e",
+      "coverage": "Complete seal read; its two members captured and verified."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "packet_path": "source/unequal_parent/PROPOSED_LEMMAS.md",
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "coverage": "Prior complete argument read reused at unchanged identity; current selected physical sections reread. Combined current output truncated, not a fresh complete-read claim."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/FREEZE.json",
+      "packet_path": "source/unequal_parent/FREEZE.json",
+      "bytes": 764,
+      "sha256": "26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d",
+      "coverage": "Prior seal identity record only; its entire older archive is not copied."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/REVIEW.md",
+      "packet_path": "source/prior_exposed_check/REVIEW.md",
+      "bytes": 24388,
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e",
+      "coverage": "Same-author prior complete proof check, including static-load correction, counterexamples and physical budgets; reused at unchanged identity."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/FREEZE.json",
+      "packet_path": "source/prior_exposed_check/FREEZE.json",
+      "bytes": 5186,
+      "sha256": "13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21",
+      "coverage": "Prior freeze identity record only; no old scientific replay or recursive archive copy."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "packet_path": "source/sparse_parent/DERIVATION.md",
+      "bytes": 30201,
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b",
+      "coverage": "Authorial full proof coverage reused; full-input branch-isometry and uniform q=1 count are necessary premises."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/sparse_parent/FINAL_QUALIFICATIONS.md",
+      "bytes": 8609,
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e",
+      "coverage": "Complete controlling qualification body previously read and freshly identity-verified."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json",
+      "packet_path": "source/sparse_parent/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3678,
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda",
+      "coverage": "Qualified source-decision identity; no retained or new-wrapper acceptance inferred."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/runtime_parent/FINAL_QUALIFICATIONS.md",
+      "bytes": 11037,
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305",
+      "coverage": "Complete earlier controlling phase, initial/final energy, timing and physical permissions reused at identical hash."
+    }
+  ],
+  "unread_ancestor_identity_only": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate/DERIVATION.md",
+    "bytes": 34955,
+    "sha256": "4bd3d22a785bacedddf66b1ddfecceedf61d1ebb88c92301971b2c0edf9d6e6b",
+    "argument_read": false,
+    "used_as_premise": false,
+    "copied": false
+  },
+  "exposure": "Same selected model and effort; reviewer authored sparse/control parents and prior comb check. Root had read those and a separate candidate before proposing this result. No blindness or retained-audit claim.",
+  "source_scope": "Complete new proposal closure plus selected necessary immutable parent bodies/seal identities. Not recursive historical evidence closure.",
+  "scientific_executions_in_this_review": 1,
+  "old_scientific_replays": 0,
+  "other_agents_spawned": 0,
+  "model_override": null,
+  "canonical_acceptance": null,
+  "publication": null,
+  "editable_prompt_files_changed": [],
+  "physical_axioms_changed": []
+}

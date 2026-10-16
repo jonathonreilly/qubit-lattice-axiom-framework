@@ -1,0 +1,47 @@
+# Controlling qualifications: local sine preparation
+
+The root accepts the fixed finite-time preparation of the buffered sine packet as a conditional driven construction. Source proposal db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826 and exposed analytical review f4addfc95983ebd497bfb44ac7224afdd1b5d342a9241ea11696e97804eab022 remain unchanged. Their original pending-status statements are historical. The related runtime now has separate root acceptance 7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509, controlled by qualifications 9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305. This decision does not accept the separate sparse-count candidate or a target-specific compiler.
+
+For q,L>=1, M=L+2q physical battery qubits carry H_B=Delta N_B. Starting from independent vacuum, q onsite flips and L-1 conditional rotations prepare the real amplitudes b_l=sqrt(2/(L+1)) sin(pi*l/(L+1)) on prefixes of lengths q+l-1. The number of serial rotation slots is G=q+L-1. The actual old Hamiltonian remains installed and decoupled during preparation.
+
+The preparation factorization alone allows any declared finite self-adjoint old K_S. Total-generator positivity, equal-gap full norm and later runtime formulas require their own positive/equal-gap premises. Do not transplant the runtime's E0+(q+M)Delta formula to arbitrary interacting or indefinite K_S. If an idle ancillary qubit is included in the physical space, its free term counts in the full operator norm even when its ideal occupation is zero.
+
+The supplied controls are stronger than the runtime's conserving alphabet: number-changing local Y rotations and n-controlled Y rotations with a phase-locked rotating laboratory quadrature are required. The positive integrated generators are 2pi I+(pi/2)Y and n(2pi I+theta Y), with theta in (0,pi/2). The reserves have exact whole-space unit phase exp(-i2pi I)=exp(-i2pi n)=I. Replacing the conditional reserve by theta n leaves a branch phase and is not equivalent. Pure independent vacuum, waveform generation, absolute timing, isolation, coefficients and physical energy/slew identification remain supplied.
+
+With Q_*=6pi, choose the fixed slot length
+
+h >= max(4 hbar Q_*/g, sqrt(8pi hbar Q_*/sigma), 4pi Delta/sigma).
+
+For every serial rotation use the laboratory control
+hbar f_h(t-t_j) exp(-it H_B/hbar) Q exp(it H_B/hbar),
+where f_h=(1-cos(2pi t/h))/h on its support. Its interaction-picture generator is hbar f_h Q while literal H_B remains present. The derivative includes the rotating-carrier term: 2pi hbar Q_*/h^2+pi Delta/h. Both contributions are paid. The stated choices bound a nominal active local term by g/2 and its derivative by sigma/2.
+
+A final simultaneous phase slot on every battery site gives tau_p=(G+1)h. Set x=Delta*tau_p/hbar, choose rational r with |r-x/(2pi)|<=1/4, k=floor(r)+2 and lambda=2pi*k-x in (3pi/2,9pi/2]. This one parallel layer implements exp(-i lambda N_B), so the exact battery free factor cancels at the declared endpoint on the entire physical space. Its global norm is of order M even though its incident norm per site is bounded. The chosen tau_p precedes lambda; no phase-duration fixed-point assumption is used.
+
+The complete ideal preparation isometry is
+
+U_prep J_vac = J_beta exp(-i tau_p K_S/hbar).
+
+All old/reference correlations are included. E0 is retained in the old scalar. No selected-code-space approximation replaces the actual physical battery evolution. L=1 is included with no conditional angles.
+
+To compose with the separately accepted runtime, set E=exp(-i tau_p K_S/hbar) and request W=V E*. The order gives W E=V. The reversed order can give an orthogonal output (E=Z,V=Hadamard on |0> is the review's witness). The runtime comparator contains gamma(W), so the combined vector comparator contains gamma(W)V, including all runtime reserve and circuit phases. The density-matrix comparison has error at most e_prep+e_runtime because the global scalar cancels. This does not establish a common phase for coherently controlled programs with different W.
+
+The actual imperfect preparation is propagated through the same subsequent runtime channel. It is not replaced by a fresh pure battery. If the ancilla is present initially, its complete readiness and dynamics are included; if appended later, independent exact vacuum or its separate joint readiness allowance must be supplied. A battery-only marginal estimate cannot price an unspecified ancilla. Storage gaps require the applicable phase-age and actual-generator error budget.
+
+For the original joint readiness eta_ready and integrated Hamiltonian error eta_H, the complete joint trace error is at most eta_ready+2eta_H. An alternative resolved estimate is
+
+e_prep <= eta_ready + 2 sum_j |delta theta_j|
+                         + 2M |delta lambda| + 2eta_other.
+
+The full integral and this resolved decomposition are alternative accounting conventions, not two independent errors to add twice. Errors in the positive reserves, carrier frequency/phase, timing and waveform shape need explicit allocations. Nominal edge/number generators have kernels: actual positivity, support, incident cap and slew do not follow from a small norm perturbation and require separate certificates.
+
+The source's allocation eta_ready<=e/4, every displayed angle error<=e/[8(G+M)], eta_other<=e/8 spends at most 3e/4. The remaining quarter can price a stated timing model. A post-schedule free-aging allowance 2||K_S+H_B|| |delta_t|/hbar is valid only after all pulses have ended, and must include any imperfectly occupied idle ancilla. Jitter during pulses or sampling before completion is not a free-aging error. Input precision in Delta, hbar, tau_p and pi must include cancellation-sensitive terms tau_p*delta_Delta/hbar and 2|k|*delta_pi, plus cross terms and schedule arithmetic. Small sine tails still require certified arithmetic; the bounded arccos derivative does not supply an oracle-runtime guarantee.
+
+The ideal battery mean is mu_B=Delta[q+(L-1)/2], and its variance is at most Delta^2(L-1)^2/4. Each edge i adds Delta*w_(i+1) of free energy, while each initial flip adds Delta. This independently reconstructs the same net modeled preparation work. The final phase slot changes no number expectation. Controls vanish at both endpoints; the old energy distribution is unchanged during preparation. Thus net modeled work is mu_B, with absolute work bounded by g(G+M)+(pi/2)Delta G. This is the externally prescribed-drive functional, not a microscopic controller-energy or work-fluctuation theorem. If the conditional nominal runtime has the same matched F at both endpoints, its extra net drive work is zero. Noncommuting implementation errors need the runtime's actual work/error conditions.
+
+With a=M Delta and complete preparation trace error e_prep, the mean and raw second-moment errors are at most a e_prep/2 and a^2 e_prep/2. Retain the conservative variance allowance 3a^2 e_prep. Small trace error alone does not imply fixed moment accuracy as L grows. Actual covariances and all modeled output registers remain. The original product comparator gives zero old-battery covariance; no zero-covariance assumption may be made for an actual correlated input or implementation.
+
+Evidence consists of the complete analytical source and a separate source-exposed reconstruction. The original author exact SymPy fixture at q=1,L=3 acts on all32 battery basis states. Its source SHA ec098c06310c1dde2864c020f8311ea2833bf09c0da31da268d863776564fbc4, execution SHA7d8ea9a5f8c43db3458ef81b4d04fadbbcdd7a8bb0387de2a97b36f454736963 and full streams remain unchanged. It distinguishes omitted phase correction, wrong branch reserve, wrong Y sign and lost positivity. It is one author finite calculation, not an independent rerun, a general-L computer proof or a time-dependent ODE simulation. The exposed reviewer ran no scientific program and preserved a corrected reviewer-draft commutator-sign error. The correct identity is [n,Y]=iX. All original failed discovery paths and limitations remain historical.
+
+This acceptance permits separate milestone packaging and conditional composition only. It supplies no retained audit, native vacuum or drive, physical parameter measurement, interacting-old-H runtime, favorable generic classical compiler, autonomous clock/halt or indefinite reuse. No editable prompts or axioms changed.
+

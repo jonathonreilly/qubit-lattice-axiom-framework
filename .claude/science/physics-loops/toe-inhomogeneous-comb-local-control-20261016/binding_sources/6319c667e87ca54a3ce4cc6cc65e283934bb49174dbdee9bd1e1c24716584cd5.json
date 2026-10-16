@@ -1,0 +1,27 @@
+{
+  "observed_commit": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/f6e5c80aa44e74788d3cb5507264c935dadec670add64b67d09bc5b2186c7a78.json",
+      "bytes": 1590,
+      "sha256": "f6e5c80aa44e74788d3cb5507264c935dadec670add64b67d09bc5b2186c7a78"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae.py",
+      "bytes": 56281,
+      "sha256": "b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/a845f91de69f987476ea733f0eaa597ddffe0ed880ea68bfce8f8d4f5a8bc268.blob",
+      "bytes": 41,
+      "sha256": "a845f91de69f987476ea733f0eaa597ddffe0ed880ea68bfce8f8d4f5a8bc268"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

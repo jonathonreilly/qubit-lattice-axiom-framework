@@ -1,0 +1,109 @@
+"""Metadata-only closure capture and receipt checks; no science replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+OUT = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_exposed_comparison')
+N = OUT.parent
+sha = lambda raw: hashlib.sha256(raw).hexdigest()
+sets = [
+    ('original_candidate', N / 'inhomogeneous_local_control_independent_candidate',
+     '7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737'),
+    ('root_proposal', N / 'inhomogeneous_local_control_root_proposal',
+     '26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d'),
+    ('root_exposed_review', N / 'inhomogeneous_local_control_root_exposed_check', None),
+]
+expected_bodies = {
+    'original_candidate/DERIVATION.md': '4bd3d22a785bacedddf66b1ddfecceedf61d1ebb88c92301971b2c0edf9d6e6b',
+    'root_proposal/PROPOSED_LEMMAS.md': '561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2',
+    'root_exposed_review/REVIEW.md': '71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e',
+}
+destroot = OUT / 'sources'
+destroot.mkdir(exist_ok=False)
+rows, closures = [], []
+
+def capture(group, root, rel, expected=None):
+    original = root / rel
+    assert not original.is_symlink()
+    raw = original.read_bytes()
+    digest = sha(raw)
+    if expected is not None:
+        assert digest == expected, (str(original), digest, expected)
+    dest = destroot / group / rel
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(raw)
+    assert raw == original.read_bytes() == dest.read_bytes()
+    rows.append({'original_path': str(original), 'capture': dest.relative_to(OUT).as_posix(),
+                 'bytes': len(raw), 'sha256': digest, 'current_original_matches': True})
+
+for group, root, expected in sets:
+    freeze_path = root / 'FREEZE.json'
+    freeze_raw = freeze_path.read_bytes()
+    if expected is not None:
+        assert sha(freeze_raw) == expected
+    frozen = json.loads(freeze_raw)
+    seen = set()
+    for member in frozen['members']:
+        path = Path(member['path'])
+        rel = path.relative_to(root) if path.is_absolute() else path
+        assert '..' not in rel.parts and rel.as_posix() not in seen
+        seen.add(rel.as_posix())
+        assert (root / rel).stat().st_size == member['bytes']
+        capture(group, root, rel, member['sha256'])
+    capture(group, root, Path('FREEZE.json'), sha(freeze_raw))
+    if (root / 'FREEZE.sha256').is_file():
+        assert (root / 'FREEZE.sha256').read_text().split()[0] == sha(freeze_raw)
+        capture(group, root, Path('FREEZE.sha256'))
+    closures.append({'group': group, 'original_root': str(root),
+                     'freeze_sha256': sha(freeze_raw),
+                     'declared_frozen_members_verified': len(seen),
+                     'limit': 'Declared top-level frozen members; not recursive verification of all cited external papers or unarchived references.'})
+for rel, expected in expected_bodies.items():
+    assert sha((destroot / rel).read_bytes()) == expected
+
+check = destroot / 'root_exposed_review'
+run = check / 'runs/exact_species_word'
+receipt = json.loads((run / 'EXECUTION.json').read_text())
+assert receipt['exit_code'] == 0
+assert receipt['limits']['cpu_seconds'] == 60 and receipt['limits']['wall_seconds'] == 90
+for key, basename in [('source', 'SOURCE_AT_LAUNCH.py'),
+                      ('launcher', 'LAUNCHER_AT_LAUNCH.py'),
+                      ('precheck', 'PRECHECK_AT_LAUNCH.md'),
+                      ('stdout', 'stdout.txt'), ('stderr', 'stderr.txt')]:
+    raw = (run / basename).read_bytes()
+    assert sha(raw) == receipt[key]['sha256'] and len(raw) == receipt[key]['bytes']
+assert (check / 'exact_species_word_check.py').read_bytes() == (run / 'SOURCE_AT_LAUNCH.py').read_bytes()
+assert (check / 'run_exact_check.py').read_bytes() == (run / 'LAUNCHER_AT_LAUNCH.py').read_bytes()
+assert (check / 'PRECHECK_FINDINGS.md').read_bytes() == (run / 'PRECHECK_AT_LAUNCH.md').read_bytes()
+assert (run / 'stdout.txt').read_bytes() == (run / 'output/RESULT.json').read_bytes()
+assert (run / 'stderr.txt').read_bytes() == b''
+result = json.loads((run / 'output/RESULT.json').read_text())
+sparse = json.loads((run / 'output/full_word_sparse_entries.json').read_text())
+assert sparse['dimension'] == result['parameters']['data_dimension'] == 256
+assert len(sparse['entries']) == result['evidence']['full_nonzero_entries'] == 484
+assert len({(item[0], item[1]) for item in sparse['entries']}) == 484
+assert all(len(item) == 4 and 0 <= item[0] < 256 and 0 <= item[1] < 256
+           and isinstance(item[2], str) and isinstance(item[3], str) for item in sparse['entries'])
+for row in rows:
+    assert (OUT / row['capture']).read_bytes() == Path(row['original_path']).read_bytes()
+manifest = {'kind': 'metadata_only_source_exposed_comparison_capture',
+            'utc': datetime.now(timezone.utc).isoformat(),
+            'sources': rows, 'declared_closures': closures,
+            'new_scientific_executions': 0,
+            'historical_scientific_execution_inspected_not_replayed': {
+                'receipt_capture': 'sources/root_exposed_review/runs/exact_species_word/EXECUTION.json',
+                'source_sha256': receipt['source']['sha256'],
+                'launcher_sha256': receipt['launcher']['sha256'],
+                'full_streams_and_saved_result_match_receipt': True,
+                'sparse_output_structure_only_checked': True,
+                'saved_matrix_algebra_recomputed_by_this_script': False},
+            'exposure': 'Root proposal and review read after original 16:12:25Z author freeze; same model, shared accepted parents; not independent acceptance of own proposal.',
+            'read_scope_authority': 'REVIEW.md and SOURCE_COVERAGE.md',
+            'mathematical_truth_certified_by_this_script': False,
+            'editable_prompt_files_changed': []}
+(OUT / 'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')
+print(json.dumps({'captured_files': len(rows), 'closures': closures,
+                  'historical_receipt_verified': True,
+                  'scientific_programs_executed_by_this_task': 0,
+                  'source_manifest_sha256': sha((OUT / 'SOURCE_MANIFEST.json').read_bytes())}, indent=2))

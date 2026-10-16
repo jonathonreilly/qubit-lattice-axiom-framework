@@ -1,0 +1,145 @@
+# Exposed comparison of two unequal-gap local-control proposals
+
+**Qualified analytical support for the root's fixed-word construction, preserving the already identified static-load correction. The two proposals do not have identical proof contracts.** I reconstructed the root's complete-block composition, direct packet bound, clean-ancilla telescoping, branch count, phase cancellation and preparation order. I found no additional load-bearing defect in that stated fixed-word interface. The root route does not establish my full-matrix/identity-complement contract or its uniform-in-target count. Conversely, my frozen direct construction does not establish the root's comb-graph permission set or its fixed-word fourth-power count. My own derivation remains an unaccepted author proposal requiring another review.
+
+The required correction in the root source is concrete: g/2 bounds the driven incident control, while the new static branch and ancilla fields are also additions relative to old K. A safe nominal added bound is Delta_max+g/2. The source's larger full bound E0+Delta_max+2g remains usable under the parent's actual calibration assumptions. This comparison records the correction and does not change either frozen source.
+
+## 1. Exact sources and exposure
+
+The root source is `inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md`, SHA256 `561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2`, 19,803 bytes, with original freeze `26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d`. The complete seven-section argument, source manifest and freeze were read. The subsequent exposed review is `inhomogeneous_local_control_root_exposed_check/REVIEW.md`, SHA256 `71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e`, 24,388 bytes. Its complete argument, precheck, exposure/source records, actual scientific source and launcher, receipt, result and complete streams were read. Initially truncated aggregate outputs were completed with targeted reads.
+
+My original source is `inhomogeneous_local_control_independent_candidate/DERIVATION.md`, SHA256 `4bd3d22a785bacedddf66b1ddfecceedf61d1ebb88c92301971b2c0edf9d6e6b`. Its 47-member freeze is `7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737`, sealed at 2026-10-16T16:12:25.005345Z before this comparison. That complete original and all its frozen files remain unchanged. Root-source exposure began only after that freeze, at the parent's explicit comparison request. I had not seen the root proposal or the other review during my original derivation.
+
+Both proposals share accepted local-control, sparse-compiler and sine-preparation parents. Those are exposed premises at the same verified identities recorded in the original packet. This is the same model and reasoning effort; it is not blind primary research, model-family replication, a retained audit, or independent review of my own new proof. The other reviewer authored important shared parents, so agreement of these documents does not create additional independent validation of those parents.
+
+`SOURCE_MANIFEST.json` binds the exact frozen source closures and this packet's captures. Hash verification establishes identity. It does not certify mathematical truth or newly execute the captured scientific program. The full primary universality paper was not reread here. Its imported existence statement is isolated below; the main supplied-word claim does not need it. The other review's `PRIMARY_SCOPE.json` records only its abstract-level primary retrieval, not a retained copy or full-paper verification.
+
+## 2. The contracts that differ
+
+| Interface | Root proposal | My frozen direct proposal |
+|---|---|---|
+| Classical target | Supplied finite chronological word P of one-qubit U(2) gates and adjacent CZ, with its full phase | Full q-qubit matrix V, with computable entry enclosures for effective finite-error compilation |
+| Effective scope | Accepted q=1 compiler on each supplied letter; quantitative bounds depend on that actual fixed word | Finite angle-grid enumeration and strict full-isometry certificate, with a uniform target-independent count bound; no efficient search claim |
+| Graph | Old sites form a supplied path; one private matched branch and ancilla per old site; degree-three comb with a displayed two-dimensional embedding | One matched rail per old site, q-1 dedicated pair ports per rail, and one species-1 phase ancilla; degree-three interaction graph, no cubic-lattice embedding proof |
+| Diagonal two-qubit permissions | CZ only on adjacent old-site edges; branch synthesis uses the accepted A/Z/full-SWAP alphabet | CZ on rail edges as well as cross-port edges; these extra locations are used in the controlled-exchange synthesis |
+| Complete blocks | Each product charge block carries V | The same complete product-charge representation carries V |
+| Other data states | Actual product of the lifted letters and physical CZs; generally nonidentity and word dependent | Identity on the full orthogonal complement of the selected product blocks, on the clean-ancilla isometry |
+| Ancillas and extra sites | q matched terminal ancillas; no separate pair ports | One matched phase ancilla plus q(q-1) ports; every port restored by full permutation conjugation |
+| Proven count form | R_CZ+sum_i R_i Gbar_i, Gbar_i<=131328 L_i^4 | Gbar<=K_q^rail L^(q+3), independent of target V but with q-dependent constants and a different gate alphabet |
+
+For equal packet sizes L and M=L+2, the root uses m_root=q(L+4) physical sites, while the direct construction uses m_direct=q(L+2)+q^2+1. Their difference is (q-1)^2. Neither the number of ancillas nor the off-code operator can be silently identified across these architectures. Both require access to every old site, exactly matched new gaps, supplied controls and zero unspecified bonds. Neither is a one-old-port construction or a reduction for interacting old K.
+
+Both keep the actual `K=E0 I+sum_i Delta_i n_i` installed with coefficient one, with E0>=0 and Delta_i>0. Neither needs to decide equality or rational independence of gaps: rail/species labels remain distinct even when some values coincide. All exchanges and physical full SWAPs remain within a matched species. Cross-species controls are diagonal positive projectors and therefore need no gap commensurability.
+
+The root's old-path geometry is a substantive supplied condition. The direct proposal's extra cross-port graph is a different supplied condition. A conversion between them would require an explicit control/routing/resource argument; naming both “degree three” does not provide that conversion.
+
+## 3. Independent reconstruction of the root's exact word semantics
+
+For species i and a_i=1,...,M_i, the two vectors
+
+`J_(i,a_i)|x_i> = |x_i> |prefix_(a_i-x_i)>`
+
+have the same total branch data number a_i and valid prefix lengths. Different a_i are orthogonal. The local unitary ell_i(U) is a direct sum of identical two-by-two U blocks and identity on all remaining local data states. This proves full unitarity and conservation of that species number, rather than just an action on a prepared packet.
+
+On every product block J_a, ell_i(U) acts as U_i. Physical old-site CZ acts as multiplication by (-1)^(x_i x_j), leaving both prefix lengths unchanged. Hence `CZ_physical J_a=J_a CZ_logical`. Every letter preserves each J_a range, so induction in chronological order gives `C_P J_a=J_a V` for the entire supplied word. This induction uses the same physical reservoirs and makes no fresh-readiness insertion. Intermediate old transitions cannot cause a random walk to a reservoir boundary: at every intermediate step each prefix length is a_i minus a single old bit, so it is always one of two valid values.
+
+The complement is invariant because each letter is unitary and preserves the complete subspace, but it need not be fixed. The other review's witness with both old bits one and both batteries 010 has local lifts equal to identity and physical CZ equal to minus identity, so its vector distance from a falsely imposed identity extension is two.
+
+A second simple analytical witness shows genuine **word dependence**, even when V itself is identity. At q=2, let P consist of U_1=-I_2 on old qubit 1 followed by U_2=-I_2 on old qubit 2. The logical product is I_4. If branch 1 is in one complete pair and branch 2 is in a nonprefix state, the physical product is -1 on that vector: the first lift acts by -1 and the second acts by +1. On every complete product block the two minus signs cancel. The empty word has the same logical V but fixes this off-code vector. My target U_L(I) fixes it as well. This is an exact algebraic distinction, not a new executed test or a defect in the root's explicitly retained complement.
+
+Consequently the root word is not automatically an emitted implementation of my strict `V on selected blocks, identity elsewhere` target. Conversely, the root's full output claim is not invalidated by this difference: its nominal readiness lies in the complete subspace, and all actual off-code preparation weight/correlation is covered by the complete readiness norm and actual unitary propagation.
+
+The identities CNOT=(I tensor H)CZ(I tensor H) and SWAP_logical=CNOT_12 CNOT_21 CNOT_12 preserve their full logical phases. The latter maps classical bits (a,b) successively to (a,a xor b), (b,a xor b), and (b,a). They therefore permit logical routing on the old path inside the complete blocks. They do not authorize a physical unequal-gap old-site SWAP. The imported theorem that every finite unitary has a finite one-qubit/CNOT word is an existence corollary only; I do not promote its abstract attribution to a verified effective decomposition bound.
+
+## 4. Direct packet bound and approximate ancilla reuse
+
+Extend each finite packet by zero on an auxiliary integer coordinate and define `D=sum_x |x><x| tensor product_i T_i^(-x_i)`. Its conjugation sends the battery labels r_i to r_i+x_i-y_i in the |y><x| matrix element, exactly matching the conserved a_i. For initial r_i in 1,...,L_i every final label lies in 0,...,L_i+1. Thus the auxiliary bilateral operator agrees with the physical finite operator on the whole input isometry; no infinite physical battery is imported.
+
+Write `d_i=||(T_i-I)beta_i||=2 sin(pi/[2(L_i+1)])`. Tensor telescoping bounds every shifted packet difference by sum_i d_i. Orthogonality of old computational blocks promotes that bound directly to an input-isometry operator norm. Inserting one intermediate term gives
+
+`||[D(V tensor I)D^*-(V tensor I)]J_beta||`
+` <= ||(D^*-I)J_beta|| + ||(D-I)J_beta V|| <= 2 sum_i d_i.`
+
+Tensoring any passive reference does not change that operator norm. The complete unhalved trace error is at most 4 sum_i d_i. It contains no logical word length. This agrees with my direct product-lift estimate at equal L, but agreement of estimates does not make the two global unitaries equal. Implementation error still depends on every actual letter and pulse.
+
+Let actual branch factors be A_j and exact ideal factors B_j. Expand the product difference with actual unitary factors to the left and ideal factors to the right of each A_j-B_j. The ideal prefix always returns the relevant synthesis ancilla to zero, even when it entangles data and batteries. The accepted full-input branch isometry bound therefore applies to each summand, including all other branches as a reference. The left actual factors have norm one, so the total vector error is at most sum_j eta_j. Actual ancilla leakage is propagated, not reset. This establishes the root's repeated use of one ancilla per branch under the stated complete certificate; a reduced old-channel certificate would not suffice.
+
+## 5. Count, effective input and finite-error certification
+
+The root's branch count is the q=1 sparse parent with data size n_i=L_i+3:
+
+`Gbar_i=(2n_i-1)(L_i+2)152[T(n_i-2)+T(n_i-1)]`,
+`T(1)=1`, `T(k)=2T(floor(k/2))+2T(ceil(k/2))`.
+
+The factors count M_i two-column blocks, determinant-compensating ancilla phases, spectator controls and full-SWAP routing along that whole branch. For L_i=1, T(2)=4 and T(3)=10, giving 7*3*152*14=44,688. Independently, T(k)<=9k^2/8 implies
+
+`Gbar_i <= (2L_i+5)(L_i+2)171[(L_i+1)^2+(L_i+2)^2]`
+`        <= 46683 L_i^4 <= 131328 L_i^4` for L_i>=1.
+
+The middle inequality uses 2L+5<=7L, L+2<=3L and the square sum<=13L^2. This verifies the claimed conservative constant without relying on its printed value. It is not a claim that any optimized emitted count attains that bound.
+
+The total is R_CZ+sum_i R_i Gbar_i. At fixed supplied word and q, L_i=O(epsilon^-1) gives O(epsilon^-4) nominal duration. If the word itself changes length with accuracy, its actual R_i(epsilon), R_CZ(epsilon) must remain in that formula. No uniform fourth-power bound for arbitrary full-matrix targets follows from this fixed-word result alone.
+
+For effective numerical compilation, the supplied one-qubit letters must include certified computable matrix or angle enclosures, not merely names for arbitrary real matrices. With that inherited parent condition, each branch's finite-error compiler terminates and its local residual can be allocated across the finite word. For arbitrary finite-real noncomputable letters, the statement is existence, not an executable compiler. Root should retain this input representation explicitly in any theorem wrapper. I regard this as a necessary scope clarification rather than a counterexample to the intended inherited interface.
+
+My direct proposal instead constructs a uniform finite-real bounded-length word for the full V, rounds its onsite angles to a finite grid, and dovetails strict certificates of `C J_A-J_A U_L(V)` with no free phase or discarded rows. The strict margin of the rounded existence word is what makes the search terminate; no exact-zero or branch-decision oracle is used. Its constant/count and physical permission set are different. Its matrix certificate and the root's sum of branch isometry certificates are not interchangeable targets. Neither proposal proves polynomial classical synthesis, polynomial memory, or bounded latency for arbitrary coefficient oracles.
+
+No matrix-to-fixed-word refinement is proved by this comparison. Such a refinement would need its own effective representation, a count uniform over target entries/accuracy, phase retention and error allocations. Agreement with the root's fixed-word proof cannot supply those absent ingredients by itself.
+
+## 6. Positive pulses, complete phases and precision
+
+In both routes all runtime generators commute separately with each N_i, so they commute with F=E0 I+sum_i Delta_i N_i. With the normalized cosine pulse and `h>=max(4hbar Q*/g,sqrt(4pi hbar Q*/sigma))`, Q*=6pi, each driven incident norm is at most g/2 and first derivative at most sigma/2; value and derivative vanish at every boundary. Runtime exchange/SWAP is restricted to equal-gap branches. The cross CZ projector is positive and diagonal. Positivity and support of actual perturbed controls remain separate physical certificates.
+
+Fix the padded duration tau before selecting final coefficients. If r_i approximates x_i/(2pi), x_i=Delta_i tau/hbar, within 1/4 and k_i=floor(r_i)+2, then k_i-x_i/(2pi) lies in (3/4,9/4], giving lambda_i in (3pi/2,9pi/2]. Applying lambda_i n on every site of species i makes `exp[-i(x_i+lambda_i)N_i]=I` on all integer charges. This includes off-code states and occupied ancillas. No common period or equality decision is present.
+
+The remaining runtime scalar is `gamma=exp[-i(E0 tau/hbar+Phi)]`, with Phi=(pi/4) times the actual number of forward A pulses plus the sum of absolute emitted Z angles; any explicitly allowed compiler scalars multiply it. SWAP and CZ have scalar one in the stipulated positive-generator conventions. Lambda n is its entire projector; its identity half must neither be removed nor counted again. Different architectures, target words and durations generally have different gamma. Matching density matrices never establishes agreement of those vector phases.
+
+Both errors have the form full readiness + 4 sum_i d_i + 2eta_C+2eta_H+2eta_t, with an extra 2eta_program for an approximate supplied target word. The Hamiltonian integral uses the full installed difference, and post-off timing uses the actual full free norm. Resolved coefficient/area budgets require the parent's actual-generator norm bound: for `(1+a)Qtilde`, use `(Qtilde-Q)+a Qtilde`, with `||Qtilde||<=Q*`. This avoids omitting a product term by silently bounding the wrong generator.
+
+For the root's fixed word, G,tau=O(epsilon^-4) and m=O(epsilon^-1). A total O(epsilon) integral budget permits global static and per-generator/area requests O(epsilon^5), per-new-field O(epsilon^6), post-off time O(epsilon^2), and cancellation-sensitive numerical Delta/pi evaluation O(epsilon^9). The last power follows from a desired O(epsilon^5) lambda error divided by tau=O(epsilon^-4), with k_i of the same order. Time/unit cross terms must still be included. E0 and reserve-phase reporting have their own scalar budget.
+
+For my uniform full-matrix count G,tau=O(epsilon^(-(q+3))), the corresponding sufficient powers are epsilon^(q+4), epsilon^(q+5), epsilon^2 and epsilon^(2q+7). These are sufficient coefficient requests, not lower bounds or physical oracle speeds. Setting q=1 recovers the same powers. If root word length is accuracy dependent, its R factors also enter the root requests. Neither formula allows arbitrary unmodeled start shifts or hidden overlap; guard intervals change the full time and every lambda.
+
+The static-load correction is unavoidable. At q=1, Delta=1, g=1 and controls off, a new battery onsite term has norm one, exceeding g/2. A vacuum state does not reduce that operator norm. The nominal total added incident cap is Delta_max+g/2 and the full nominal cap can be E0+Delta_max+g/2 with a stated scalar assignment. Static fields contribute zero slew. This agrees with my original ledger and does not break the root's larger certified full cap.
+
+## 7. Preparation, output order and actual energy
+
+The optional preparation in both proposals is an additional permission: positive number-changing Y and conditional-Y pulses with phase-locked laboratory carriers, starting from supplied pure vacuum. They are not generated by the conserving runtime alphabet. For a species-i target the carrier derivative contributes at most pi Delta_i/h_p, alongside the envelope derivative; the shared bound using Delta_max pays both. The reserve exponentials 2pi I and 2pi n are identity on the complete local spaces, not merely on the desired branch.
+
+Use one absolute laboratory time for every branch carrier. In the global interaction picture, the scheduled operations on disjoint batteries produce the desired product packet. Returning to the laboratory picture adds the **whole** tau_p free age to every branch, including waiting through the other preparations. Final lambda_(p,i) therefore must use total tau_p. Root corrects every battery site and leaves ideally vacuum ancillas uncorrected; my proposal corrects all new sites, including ports and the ancilla. Both give the stated vacuum-input preparation isometry, but they need not agree on initially occupied ancillary inputs. Actual imperfect readiness is covered by complete-state norms, not an assertion of that stronger equality.
+
+Both exact preparation maps have order `U_prep J_vac=J_resource exp(-i tau_p K/hbar)`. Therefore the runtime target for acting as V on the original input is `W=V exp(i tau_p K/hbar)`, in that order. The root review correctly makes the fixed-word count explicit: prepend q one-qubit phases, absorb exp(iE0 tau_p/hbar) into the first U(2) letter, and use R_i+1. Although their angles depend on packet size, their count is fixed, and the q=1 compiler count is uniform over its one-qubit matrix. Tau_p is known before those target angles; the padded runtime count then fixes tau before its own final phases. There is no time/target fixed-point equation.
+
+The added logical phase evaluation costs at most `tau_p(|delta_E0|+sum_i|delta_Delta_i|)/hbar` in operator norm for exact time/units, with all product errors otherwise. It must enter a target or compiler budget. With tau_p=O(epsilon^-1), order-epsilon^2 input requests suffice for an order-epsilon compensation allowance. The stronger runtime numerical requests may cover the same inputs but do not automatically cover independent laboratory carrier errors. Carrier phase/frequency bounds have factors G_p and G_p tau_p; the review's sufficient epsilon^2 phase and epsilon^3 frequency requests follow. Propagate an imperfect preparation output through the actual runtime and add errors; do not insert fresh purity. The runtime scalar is gamma(W).
+
+My optional comparator including old aging through the complete returned time is separately stated in the original proposal. The root source does not explicitly claim that corollary. It should not be attached to the root packet merely because both keep literal K installed. Likewise, classical compilation is offline before the modeled unknown input, or its actual waiting evolution must be included.
+
+Nominal runtime in both routes preserves every N_i and every joint function of these charges, hence every moment of the actual fixed F on arbitrary input states. This is not conservation of the time-dependent controlled Hamiltonian. With controls zero and the same F at both endpoints, net prescribed-drive work is zero and absolute work is bounded by g(Gbar+m). Scalar reserves and the parallel final layer are included. Nonconserving errors require the full spectral-width times eta_H allowance; a changed endpoint observable needs an additional term.
+
+The old spectral width is Omega=sum_i Delta_i. Declared-target old energy-gain error is at most `(Omega/2)(e_out+epsilon_S0)`. Initial old error cannot be dropped under imperfect joint readiness. E0 cancels from equal-trace differences and remains in absolute means and vector phases.
+
+The nominal independent product packets have mean sum_i Delta_i(L_i+1)/2 and variance at most sum_i Delta_i^2(L_i-1)^2/4. This variance sum does not describe arbitrary correlated actual output. For the root, the full non-old resource width is `W_root=sum_i(M_i+1)Delta_i`, including all ancillas, whereas the battery-only width printed in preparation is `A_B=sum_i M_i Delta_i`. A battery-only observable may use A_B. A complete resource-energy claim must use W_root and the actual covariance. My resource width includes the extra ports as well: at equal L it is `(M+q-1)sum_i Delta_i+Delta_1`. For an appropriate resource trace error e, centered mean, raw second moment and a conservative variance allowance are respectively W e/2, W^2 e/2 and 3W^2 e. Small trace error alone gives no uniform moment accuracy when W grows.
+
+Root preparation's absolute-work bound counts only its actual final battery phases, `g(G_p+sum_i M_i)+(pi/2)sum_i Delta_i L_i`. My all-new-site phase layer has the larger count already in its source. Nominal net preparation work is the packet mean and old energy distribution is unchanged. Neither budget returns a microscopic driver/clock state or identifies a source of purity. Subsequent storage comparisons require the same actual free evolution and full outputs, with further integrals for persistent mismatch.
+
+## 8. Inspection of the other review's actual discriminator
+
+I read the entire `exact_species_word_check.py` and `run_exact_check.py`, their source-at-launch/launcher/precheck identity records, the complete receipt and both full streams. Hash checks in this packet bind all captured bytes. I did **not** rerun the scientific program, reconstruct its full matrix numerically or claim a second execution. The saved sparse entry file is retained and structurally checked by metadata only; its 484 coefficients were not each manually re-evaluated.
+
+The source constructs every column of the 256-dimensional q=2, M_1=M_2=3 data operator, applies the genuine local two-column lifts and physical CZ, and compares all nine product blocks. The code retains local complement identity and the actual global complement action. Its one-qubit factors include a nontrivial U(2) scalar, so the block residual is phase sensitive. Ancillas and pulse waveforms are absent from this calculation; their return, positive implementation, routing and slew are analytical parent interfaces, not tested by this executable.
+
+Several quantities can be reconstructed without replay. Each branch has six selected local basis states and ten complementary ones. Both selected branches yield 36 columns with four entries each; exactly one selected branch gives 120 columns with two entries; neither gives 100 single-entry columns. Thus 144+240+100=484 full-word nonzero entries, as reported. There are nine blocks with four vectors each. Decimal 170 is old-1/nonprefix-010 on each branch, so only CZ changes it and gives -1; an identity-complement comparator has squared vector error four.
+
+On the old-site physical SWAP, 128 of the 256 basis columns have unequal old bits. Each commutator column has magnitude |sqrt(2)-1|, so the squared Frobenius norm is `128(3-2sqrt(2))=384-256sqrt(2)>0`. In the a_1=a_2=1 block, the two unequal-bit inputs give orthogonal actual/desired output vectors and each contributes squared error two, totaling four. These match the recorded negative comparisons and establish only rejection of that particular physical-SWAP substitution.
+
+For the phase check, tau=hbar=1 and lambda_1=4pi-1, lambda_2=4pi-sqrt(2) give total exponent `1/3+4pi(N_1+N_2)`. Its phase is exp(-i/3) on every integer pair, including the 36 enumerated charges 0 through 5. This is separate species cancellation, not a recurrence experiment. At L_i=1 the packet trace estimate is larger than the maximum trace distance, so this finite fixture supplies no useful small-error unchanged-resource guarantee.
+
+The actual historical execution source hash is `e93a5d063169d8987e0b7925f9e2173e1408eb9498e6e114891d2ac2f07f2b2a`; launcher `de3d32f4a0b8af025bc45e7877df72592dc24131f0d262a5633c536bbdba8db5`. It ran once from 15:54:44.131007Z to 15:54:45.558361Z, exit zero, with a 60-second CPU/90-second wall bound. Stdout/result hash is `d2869083057cb32ed9ee3951b78f9e18ae3baa28202d74ef7b2a89e711fd6c46`, stderr is empty. There was no failed launch in that packet. Its deliberately incorrect SWAP and complement comparisons are preserved outcomes. This comparison adds no scientific execution; its metadata receipts cannot increase that evidence count.
+
+## 9. Disposition and unresolved interfaces
+
+The root's supplied-word theorem is analytically supported with the explicit static-load correction and computable-letter/certificate qualifications above. I did not find a new contradiction in its word-independent ideal packet error, clean-ancilla reuse, separate species phases, or preparation compensation. The root review's numerical evidence is consistent with its limited semantic scope and does not test the entire physical compiler.
+
+The new full-matrix route and root fixed-word route remain separate proposals. Their agreement on matched reservoirs and charge conservation is not identical closure: graph permissions, off-code semantics, extra sites, effective input and quantitative counts differ. My original remains pending review of its new CZ-controlled spectator construction, full complement target, phase ancilla and routing. A source-exposed author comparison cannot grant it independent acceptance.
+
+No merged theorem, efficient full-matrix-to-fixed-word compiler, arbitrary interacting-H reduction, native clock/controller, physical energy identification, single-port extension, automatic halt or indefinite reuse is established here. Any such step needs its own stated premise and proof. No earlier frozen source is repaired in place. Only this new comparison directory was written; no canonical/Git/PR/cache/audit/lock/prompt/axiom state or other chat changed. Editable prompt files changed: none.

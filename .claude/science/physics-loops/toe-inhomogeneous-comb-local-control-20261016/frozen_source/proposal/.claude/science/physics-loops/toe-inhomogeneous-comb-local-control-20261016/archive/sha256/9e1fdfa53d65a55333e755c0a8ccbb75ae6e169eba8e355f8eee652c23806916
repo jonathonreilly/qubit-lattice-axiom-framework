@@ -1,0 +1,43 @@
+{
+  "source_records": 22,
+  "author_freeze_members_verified": 21,
+  "author_execution_receipts": [
+    {
+      "run": "exact_sparse_check",
+      "receipt_sha256": "15d8a0844ecfe025b3f3b65e1c81cdcea8f96cd60a3d50613bd9c6d1e2863da0",
+      "exit_code": null,
+      "source_and_launcher_match": true,
+      "full_stream_hashes_match": true,
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/runs/exact_sparse_check/SOURCE_AT_LAUNCH.py"
+      ],
+      "failure": "Launcher exception"
+    },
+    {
+      "run": "exact_sparse_check_retry",
+      "receipt_sha256": "6d6de9ea3cccfc7bbe436e874c2ad6ffc624f3f9e2a6d2a5b4e5c533025fd533",
+      "exit_code": 0,
+      "source_and_launcher_match": true,
+      "full_stream_hashes_match": true,
+      "argv": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/runs/exact_sparse_check_retry/SOURCE_AT_LAUNCH.py"
+      ],
+      "failure": null
+    }
+  ],
+  "primary_pages": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "prior_parent_review_unchanged": true,
+  "new_reviewer_scientific_executions": 0
+}

@@ -1,0 +1,92 @@
+{
+  "utc": "2026-10-16T17:50:35.903633+00:00",
+  "refs": {
+    "HEAD": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+    "origin/main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "active_tree": "19e107bb8835e9c0bea0ac4ec2721d425312f58f",
+  "branch": "physics-loop/toe-local-conserving-sparse-current-main-20261016",
+  "clean": true,
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/inventory/stdout",
+    "bytes": 364,
+    "sha256": "9db48eed0e2d57d908427232c5e65cb7332bc6b1de02cb2694bdc9ce34be8f63"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/sparse_transport_latest_fetch/EXECUTION.json",
+      "bytes": 1187,
+      "sha256": "c4e1973c386216bf65c160cc34dc1e9f4a013629e8315d5ad103734a596b0451"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/ref_HEAD/EXECUTION.json",
+      "bytes": 1349,
+      "sha256": "656b90144a9a43ea847da4f7d7b743f8e109cc3a9e8437f7e94f9538a13c2c16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/ref_origin_main/EXECUTION.json",
+      "bytes": 1370,
+      "sha256": "9374c949ae2e8ba782e7889def5235e2f190b09a371cd4960b4d1235a591acfb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/ref_origin_ai_execution/EXECUTION.json",
+      "bytes": 1395,
+      "sha256": "af14e749bcf61d6ce85955da188e253bdef567939c1148e007f5764187f6f992"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/tree/EXECUTION.json",
+      "bytes": 1349,
+      "sha256": "58fdecb9d1993d12fea5005e757b666ecee9b10baff4c42163bb6914b0762b95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/branch/EXECUTION.json",
+      "bytes": 1353,
+      "sha256": "6fba207b1589fe7080615242283c4feb4f6c7b9021d1d40772dfae12858e6c16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/status/EXECUTION.json",
+      "bytes": 1357,
+      "sha256": "ef5905a4357ff08be6cc8ae68deecac59bca7c6b3ce044da23275e4e7efa2503"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/parent/EXECUTION.json",
+      "bytes": 1496,
+      "sha256": "2b87584bdbbb3202e679c0733c257e5294077286a4bf7462b8510af8ec49ebd7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/inventory/EXECUTION.json",
+      "bytes": 1544,
+      "sha256": "ca2bbc29da7d9433337dba9b944e79d3e93e973e8cccaaddca473f1e8ef6cd60"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/later_main_paths/EXECUTION.json",
+      "bytes": 1464,
+      "sha256": "6343d5b5c9f374e30cd35f161def8bd69e6a323d297b398052e8fcac4931ca3d"
+    }
+  ],
+  "source_snapshot": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/SOURCE_REFS.json",
+    "bytes": 5309,
+    "sha256": "91d857fdae12b368cd274e299657361f04774724cad8b78e0ffb1ad2e5b9fdc8"
+  },
+  "affected_screen": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/AFFECTED_SOURCE_SCREEN.json",
+    "bytes": 8806,
+    "sha256": "afd70505d79bf51d792e505aacbf5a8547c8c036c85e2e810b1c23a0bcfd5a36"
+  },
+  "open_count": 1,
+  "current_parent_pr": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-local-conserving-sparse-current-main-20261016",
+    "headRefOid": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+    "isDraft": false,
+    "number": 9647,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9647"
+  },
+  "publication_base": "cea15d2c7fca3ffb403f1f474fef6b6697650d8b",
+  "source_scope": "Root transport scope retained exactly; latest main differs only by the recorded unrelated scalar milestone. Current branch is the actual published sparse base.",
+  "editable_prompt_files_changed": [],
+  "canonical_phases_executed": 0
+}

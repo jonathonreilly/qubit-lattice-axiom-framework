@@ -1,0 +1,36 @@
+{
+  "kind": "proposed_uniform_logical_word_source_manifest",
+  "utc": "2026-10-16T16:27:31.003828+00:00",
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 12165,
+    "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b"
+  },
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/REVIEW.md",
+      "bytes": 24388,
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate/DERIVATION.md",
+      "bytes": 34955,
+      "sha256": "4bd3d22a785bacedddf66b1ddfecceedf61d1ebb88c92301971b2c0edf9d6e6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 8609,
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e"
+    }
+  ],
+  "exposure": "Root read the unequal-gap root proposal, exposed reviewer and separate candidate before deriving this proposed quantitative logical-program strengthening; no blind independence claim. Shared accepted SU2 compiler machinery and full-phase synthesis are imported with explicit hypotheses. The new source has not been independently checked.",
+  "scientific_executions": 0,
+  "accepted": false,
+  "model_override": null,
+  "metadata_attempt": "An earlier inline freeze preparation checked a nonexistent QUALIFICATIONS.md name and stopped before writing any manifest or freeze; corrected to the actual FINAL_QUALIFICATIONS.md. No scientific execution or source change."
+}

@@ -1,0 +1,18 @@
+{
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_inhomogeneous_comb_qualified_publication_review/REVIEW.json",
+    "bytes": 3382,
+    "sha256": "804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_inhomogeneous_comb_qualified_publication_review/FREEZE.json",
+    "bytes": 339,
+    "sha256": "169a64730228de2924e03ef8765a77f8835871770f0167ef22ff72969470ba6d"
+  },
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/FREEZE.json",
+    "bytes": 50131,
+    "sha256": "25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e"
+  },
+  "scientific_executions": 0
+}

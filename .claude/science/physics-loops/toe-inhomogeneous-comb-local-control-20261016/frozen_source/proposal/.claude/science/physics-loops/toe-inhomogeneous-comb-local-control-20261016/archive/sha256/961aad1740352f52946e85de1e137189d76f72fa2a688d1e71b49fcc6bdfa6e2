@@ -1,0 +1,29 @@
+{
+  "captured_files": 80,
+  "closures": [
+    {
+      "group": "original_candidate",
+      "original_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate",
+      "freeze_sha256": "7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737",
+      "declared_frozen_members_verified": 47,
+      "limit": "Declared top-level frozen members; not recursive verification of all cited external papers or unarchived references."
+    },
+    {
+      "group": "root_proposal",
+      "original_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal",
+      "freeze_sha256": "26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d",
+      "declared_frozen_members_verified": 2,
+      "limit": "Declared top-level frozen members; not recursive verification of all cited external papers or unarchived references."
+    },
+    {
+      "group": "root_exposed_review",
+      "original_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check",
+      "freeze_sha256": "13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21",
+      "declared_frozen_members_verified": 27,
+      "limit": "Declared top-level frozen members; not recursive verification of all cited external papers or unarchived references."
+    }
+  ],
+  "historical_receipt_verified": true,
+  "scientific_programs_executed_by_this_task": 0,
+  "source_manifest_sha256": "6daad8e679727edafabceb94fb9ce5bff52a7d13b31aeef8330c249872511d99"
+}

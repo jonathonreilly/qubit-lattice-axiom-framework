@@ -1,0 +1,12 @@
+{
+  "same_model_source_exposed": true,
+  "blind_independence": false,
+  "different_model_replication": false,
+  "new_scientific_executions": 0,
+  "historical_new_result_executions": 2,
+  "sparse_parent_scientific_execution": 1,
+  "sparse_parent_failed_launches": 1,
+  "separate_direct_candidate_accepted": false,
+  "comparison_is_historical_only": true,
+  "retained_audit": false
+}

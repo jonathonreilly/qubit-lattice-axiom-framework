@@ -1,0 +1,2881 @@
+{
+  "actual_canonical_acceptance": null,
+  "actual_integration_review": null,
+  "actual_new_publication": null,
+  "actual_staged_review": null,
+  "bounded_source_reference_count": 194,
+  "canonical_phases_executed": 0,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "bytes": 455,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/BUILD_RESULT.json",
+      "sha256": "09d748aba7365e2c82d055c479ed7a350c86991a9904019f5c65d92e91c59eaa"
+    },
+    {
+      "bytes": 1531,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/CHECKPOINT.md",
+      "sha256": "7f2710db9cb932e17d524d3a5d0a4f2f5079cbc210dc6b7ce3e843991fb38719"
+    },
+    {
+      "bytes": 517,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/DELIVERY_STATUS.json",
+      "sha256": "5770564670d9f0cbeab1ca60e39a584bdbcf59876db3896444b85b1eb70048ad"
+    },
+    {
+      "bytes": 50131,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/FREEZE.json",
+      "sha256": "25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e"
+    },
+    {
+      "bytes": 955,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/METADATA_CORRECTION.md",
+      "sha256": "c5caaec500aef831b637e0120c699d2ec479b15aaaa82540ac9d6ef92105f35f"
+    },
+    {
+      "bytes": 7490,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/READ_GUIDE.md",
+      "sha256": "f2d1ee77006e9f24325612f13e33507001301a174bbddd57d788dd9a7f4ae6a8"
+    },
+    {
+      "bytes": 4251,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/REUSE_AND_READ_MAP.json",
+      "sha256": "3fbc007f7bdd3c704fdc8d3b524fab332713cdfca60f7c3c6bd9d1cb2265af2f"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/SEAL_STDOUT.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1222,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/SEAL_VERIFICATION.json",
+      "sha256": "334b8c00082fee26347dafaef2d5ca44c0e43c602629786bf108714ab7d6f20b"
+    },
+    {
+      "bytes": 1449,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/VERIFICATION.json",
+      "sha256": "82cf5a396fdeb8d1ba68ffc42678716773a20c7085893839d0730dfe0879a6be"
+    },
+    {
+      "bytes": 9259,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/build_packet.py",
+      "sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93"
+    },
+    {
+      "bytes": 2786,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/inspect_packet.py",
+      "sha256": "c4034da8d6e386c54d4e245692ae9c3b5f27d6d564105ff13e73fbc65b11eb1d"
+    },
+    {
+      "bytes": 2774,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "sha256": "2cafc678ff96d906383b1a3b5dae0e6e552eb45d266f4403e88ebe1fc82637e4"
+    },
+    {
+      "bytes": 89248,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/INPUT_IDENTITIES_AT_LAUNCH.json",
+      "sha256": "a5faa5bf961de9c5888a06a93fe3cc714b0e3063eb44d0a20842cbc400f13050"
+    },
+    {
+      "bytes": 2010,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/LAUNCH.json",
+      "sha256": "cb73ccd92ad09a7b1af14df92cac21fa8fafbe9d2274acd5eb3aaa9c0500447e"
+    },
+    {
+      "bytes": 9259,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/executed_source.py",
+      "sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93"
+    },
+    {
+      "bytes": 3243,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/recorder_at_launch.py",
+      "sha256": "6070dd6d7b05b945e262476b39b07b4b70edd8c08209b283295f8c2ccf152f7e"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 456,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/stdout",
+      "sha256": "b2b3a2797a6fa1425134cde3eaa50ef7893c3286fa3fc569d7dab5f5307fe925"
+    },
+    {
+      "bytes": 2805,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "sha256": "282e9e413f8cbee1820410ddb9f59887bc7fba1187bd008f726dcc5a46e65633"
+    },
+    {
+      "bytes": 60489,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/INPUT_IDENTITIES_AT_LAUNCH.json",
+      "sha256": "70d50820094d644cdf8a37c7d4482d04db79b9c22ca040a6f02f89bcbd1d9e5e"
+    },
+    {
+      "bytes": 2032,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/LAUNCH.json",
+      "sha256": "efcd953b4347a6c5abb06cba9f3dff3d7b435fb03280a8a42a8fd0fe479bc9d3"
+    },
+    {
+      "bytes": 2648,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/executed_source.py",
+      "sha256": "26ec2c3773faaec3cf705cd7275479d00883990e9446ee4be2b47a5d8a31d4f0"
+    },
+    {
+      "bytes": 3243,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/recorder_at_launch.py",
+      "sha256": "6070dd6d7b05b945e262476b39b07b4b70edd8c08209b283295f8c2ccf152f7e"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1445,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/stdout",
+      "sha256": "d5688c5508cf172a85b257715a2e0c96c02735179afef3226191dc57913d1d6a"
+    },
+    {
+      "bytes": 2825,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/EXECUTION.json",
+      "sha256": "c91c4b1c818202e7c876f641d895e3fbc333c1c36029d163c4d4e313531ac7fc"
+    },
+    {
+      "bytes": 60771,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/INPUT_IDENTITIES_AT_LAUNCH.json",
+      "sha256": "489e9cd26efc7558a377613f69afd2e00f36e24668f9237e2ca3b9bce264de47"
+    },
+    {
+      "bytes": 2044,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/LAUNCH.json",
+      "sha256": "06404a97d74ba192d1f49d3d0e16e90cc64b8b745b9436242fba323d5a800cd7"
+    },
+    {
+      "bytes": 2786,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/executed_source.py",
+      "sha256": "c4034da8d6e386c54d4e245692ae9c3b5f27d6d564105ff13e73fbc65b11eb1d"
+    },
+    {
+      "bytes": 3351,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/recorder_at_launch.py",
+      "sha256": "a50dc683cf577f8a3e45b19a5cd44c17dda44eb8e9cb24293c80263b91283186"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1449,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/stdout",
+      "sha256": "82cf5a396fdeb8d1ba68ffc42678716773a20c7085893839d0730dfe0879a6be"
+    },
+    {
+      "bytes": 1448,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "sha256": "339418e6d1c49eafb6a5af3f616de1b18828e5147693fceebc8c56f639b59073"
+    },
+    {
+      "bytes": 776,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/LAUNCH.json",
+      "sha256": "3855ea1fc876425dc0ac7d69de6a82c0d991a7dcd5fb05c8741771e5fcb04d93"
+    },
+    {
+      "bytes": 1046,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_0/EXECUTION.json",
+      "sha256": "a299ff8a798a34f229cebc854896d045d592ef62c789beee7f654ea055f7bbea"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_0/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3253,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_0/stdout",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "bytes": 1033,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_1/EXECUTION.json",
+      "sha256": "9e7b960c8b2b94a72d2715b1e6c5aefb3942462ab985c5f33fce5f1476de624f"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_1/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 13419,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_1/stdout",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 1038,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_2/EXECUTION.json",
+      "sha256": "1b33ce74998e2353b39b2badafe35c902897d6cb1ff0ed154668be17217766a5"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_2/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2180,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_2/stdout",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 1025,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_3/EXECUTION.json",
+      "sha256": "bdf4d9bb35b630d6ef2eddf656724f71bde6b72da34e2f48566e9c303be69478"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_3/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1958,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_3/stdout",
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "bytes": 4530,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/executed_source.py",
+      "sha256": "a78c7c51a5376e2bf4aca3f487980aaf29f6f24ed72c88566be56935ac729308"
+    },
+    {
+      "bytes": 1743,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/packet_text/BINDING_CONTRACT.md",
+      "sha256": "2451e46637e6bc58f835eddbd03ad3a42bdc871d07ffa97ea8399d3f62856807"
+    },
+    {
+      "bytes": 1341,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/packet_text/PR_BODY.md",
+      "sha256": "6e6e81ba06bb3d372f35eb1b19afcec6474085f92d3eb8a0f485675040d618d9"
+    },
+    {
+      "bytes": 10737,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/packet_text/WRAPPER.md",
+      "sha256": "4b6a6eb28e806cba3970ff91b1af094fbd41913a0037890deb1c6d56ec6eab8a"
+    },
+    {
+      "bytes": 7457,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/primary_template.py",
+      "sha256": "866bf2829562f0df1a7074511c79781fef8ffeda22cef7e44f2031659edad307"
+    },
+    {
+      "bytes": 162,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/ACTUAL_BINDING.json",
+      "sha256": "0307bb243389c034109786b9c561d5cd494b39c1125a744f49fa200477e78ec0"
+    },
+    {
+      "bytes": 36578,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/ARCHIVE_INDEX.json",
+      "sha256": "7f97734fe167d4d7c85d102aa1b6f896f9c252e04e5986293d56a95580f90ac8"
+    },
+    {
+      "bytes": 1743,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/BINDING_CONTRACT.md",
+      "sha256": "2451e46637e6bc58f835eddbd03ad3a42bdc871d07ffa97ea8399d3f62856807"
+    },
+    {
+      "bytes": 2490,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/BODY_MAP.json",
+      "sha256": "0b764c7a3424f8389ff5bbcbe6e533db8eb9b03895ea0db9bee0b137a5eb1bbe"
+    },
+    {
+      "bytes": 382,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/EXPOSURE.json",
+      "sha256": "596eedaca257dddbcd1d0848661801e281d138e280f3a8ab24fb6fc8d9732506"
+    },
+    {
+      "bytes": 2255,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/FROZEN_SOURCE_CLOSURE.json",
+      "sha256": "eddf7bba5450fff8c3097eaf98590df681c4730b4520c302a73f2b855321d709"
+    },
+    {
+      "bytes": 39131,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/INPUT_MANIFEST.json",
+      "sha256": "9356c7fd4f88d0232709e5ae54a28d0499bb8a0d1c4bffa2e038b27bd241a2e2"
+    },
+    {
+      "bytes": 1692,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/PARENT_BINDING.json",
+      "sha256": "3c14fe8d955c4645f9874b5d23deeaa2c45c95daa70efac43fd9dd7ca0d5d5e4"
+    },
+    {
+      "bytes": 1341,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/PR_BODY.md",
+      "sha256": "6e6e81ba06bb3d372f35eb1b19afcec6474085f92d3eb8a0f485675040d618d9"
+    },
+    {
+      "bytes": 288,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/PUBLICATION_STATE.json",
+      "sha256": "99e7085cb95d29f21921e6284b12b490b07e01fba8f03b42d4744f6117ea5d43"
+    },
+    {
+      "bytes": 186563,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/SOURCE_MANIFEST.json",
+      "sha256": "713e7b9c909f79dbb0748427be6067bee68f593b4718f16a39239fc480a07fad"
+    },
+    {
+      "bytes": 1728,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/004301c3077cfbe4f5cfd8ad45ea286ac988d2179f5387559f8cbbcdd50bd9e4",
+      "sha256": "004301c3077cfbe4f5cfd8ad45ea286ac988d2179f5387559f8cbbcdd50bd9e4"
+    },
+    {
+      "bytes": 8398,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc",
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc"
+    },
+    {
+      "bytes": 15435,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 2238,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/07833281338beca8322fb11c9bcc08f8ee13a909ae4faab2c48d511597a127d9",
+      "sha256": "07833281338beca8322fb11c9bcc08f8ee13a909ae4faab2c48d511597a127d9"
+    },
+    {
+      "bytes": 17967,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/0e46e9ab2d4f890a9d830d7d92546700d8c2f0436a8c41dc5cf1be0eed1baad7",
+      "sha256": "0e46e9ab2d4f890a9d830d7d92546700d8c2f0436a8c41dc5cf1be0eed1baad7"
+    },
+    {
+      "bytes": 10451,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/0f0bfd346a505b0898c4598c2f808f133215ab47e0df4d8895a835a80210227b",
+      "sha256": "0f0bfd346a505b0898c4598c2f808f133215ab47e0df4d8895a835a80210227b"
+    },
+    {
+      "bytes": 5186,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21",
+      "sha256": "13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21"
+    },
+    {
+      "bytes": 3138,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/1457dea79ec1f7a65d189a567c7d82e513bc81b0de0a79a1403a931ede4b9869",
+      "sha256": "1457dea79ec1f7a65d189a567c7d82e513bc81b0de0a79a1403a931ede4b9869"
+    },
+    {
+      "bytes": 1202,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/15d8a0844ecfe025b3f3b65e1c81cdcea8f96cd60a3d50613bd9c6d1e2863da0",
+      "sha256": "15d8a0844ecfe025b3f3b65e1c81cdcea8f96cd60a3d50613bd9c6d1e2863da0"
+    },
+    {
+      "bytes": 809,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/16845d2f4bdec54144692ac9b7bb70a5ffad5ebc3255f1713ab2424f5b2fbcc0",
+      "sha256": "16845d2f4bdec54144692ac9b7bb70a5ffad5ebc3255f1713ab2424f5b2fbcc0"
+    },
+    {
+      "bytes": 6350,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/1a74118cecae1a2ee85b139c4f35798ace28607f8b7fee198d0b7c743be60858",
+      "sha256": "1a74118cecae1a2ee85b139c4f35798ace28607f8b7fee198d0b7c743be60858"
+    },
+    {
+      "bytes": 3916,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9",
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9"
+    },
+    {
+      "bytes": 6625,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780",
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780"
+    },
+    {
+      "bytes": 2450,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/21ed17e1cb2be6a06272d667799dc4f21449b1b7e581e432105bd23106b1ef4f",
+      "sha256": "21ed17e1cb2be6a06272d667799dc4f21449b1b7e581e432105bd23106b1ef4f"
+    },
+    {
+      "bytes": 1112,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/238d106b626c93b4bcd92ed357757de087fddbf2a2529becda24a8c946c0c956",
+      "sha256": "238d106b626c93b4bcd92ed357757de087fddbf2a2529becda24a8c946c0c956"
+    },
+    {
+      "bytes": 2526,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/23c71f457e90b456016b44a41f3b2c196beed878690390829472d454ddf7e73e",
+      "sha256": "23c71f457e90b456016b44a41f3b2c196beed878690390829472d454ddf7e73e"
+    },
+    {
+      "bytes": 28030,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/23de1a7508da3d427c801d7d2c5c83576e424579941b09a43d577343a82bdcc2",
+      "sha256": "23de1a7508da3d427c801d7d2c5c83576e424579941b09a43d577343a82bdcc2"
+    },
+    {
+      "bytes": 46778,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/241e2b2cecbe991767e57ae65b8783e313b8b75df4e8803a2f9da30bcfc6e831",
+      "sha256": "241e2b2cecbe991767e57ae65b8783e313b8b75df4e8803a2f9da30bcfc6e831"
+    },
+    {
+      "bytes": 1910,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/26850c3bc51aa6eeea8ed8a4e7545d410233c29ec6b315088647911540df8f7c",
+      "sha256": "26850c3bc51aa6eeea8ed8a4e7545d410233c29ec6b315088647911540df8f7c"
+    },
+    {
+      "bytes": 764,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d",
+      "sha256": "26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d"
+    },
+    {
+      "bytes": 10588,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/29f2bd7e9839b702d68f8a147c0ffd06a9c8467b7740aa8c2be4bf0a6bd51656",
+      "sha256": "29f2bd7e9839b702d68f8a147c0ffd06a9c8467b7740aa8c2be4bf0a6bd51656"
+    },
+    {
+      "bytes": 25079,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a",
+      "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a"
+    },
+    {
+      "bytes": 52,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/2b3be7de47b9b2d4465f18686e1841cba8556f8963b8830de7ad9ec6e45c114c",
+      "sha256": "2b3be7de47b9b2d4465f18686e1841cba8556f8963b8830de7ad9ec6e45c114c"
+    },
+    {
+      "bytes": 4509,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399",
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399"
+    },
+    {
+      "bytes": 48394,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/2e8ec4a860739a5edfc1cae9817a1bef5e074a7059794bfb78a203b5aa343576",
+      "sha256": "2e8ec4a860739a5edfc1cae9817a1bef5e074a7059794bfb78a203b5aa343576"
+    },
+    {
+      "bytes": 5989,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/2eb3057568de7438241c788798dc009e355b0f4c7d41ed543bd741e3eb1f017a",
+      "sha256": "2eb3057568de7438241c788798dc009e355b0f4c7d41ed543bd741e3eb1f017a"
+    },
+    {
+      "bytes": 6960,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565",
+      "sha256": "2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565"
+    },
+    {
+      "bytes": 3261,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/335f0d669a180247f32a0d1a42def16ca91b32f82a79af9fa74d5bb975726c96",
+      "sha256": "335f0d669a180247f32a0d1a42def16ca91b32f82a79af9fa74d5bb975726c96"
+    },
+    {
+      "bytes": 1127,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/335f822645dcec96f7b2b31ded0ddcb026b205a930445069c407827f7930eb04",
+      "sha256": "335f822645dcec96f7b2b31ded0ddcb026b205a930445069c407827f7930eb04"
+    },
+    {
+      "bytes": 5769,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/336e9d5ddf4ab9374d12ad098444bf21a86862bb68ee67e4ee7fdc040ff42b56",
+      "sha256": "336e9d5ddf4ab9374d12ad098444bf21a86862bb68ee67e4ee7fdc040ff42b56"
+    },
+    {
+      "bytes": 4680,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/33adee420f9aa82822b2f21f2257ed64129461e7e08b707fd9268dbba8ea946a",
+      "sha256": "33adee420f9aa82822b2f21f2257ed64129461e7e08b707fd9268dbba8ea946a"
+    },
+    {
+      "bytes": 1419,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/35c1f6fdaf4c0c240ac2cc4c2359263debffda5c43295c3728abbf5671d29b41",
+      "sha256": "35c1f6fdaf4c0c240ac2cc4c2359263debffda5c43295c3728abbf5671d29b41"
+    },
+    {
+      "bytes": 5485,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/36a1ef58262468746a9434c887d32ecbd302a7408696914e64536e5d17804598",
+      "sha256": "36a1ef58262468746a9434c887d32ecbd302a7408696914e64536e5d17804598"
+    },
+    {
+      "bytes": 2829,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/3970da334b53e0317dae95be663582ab88cf9b9699f47502bfe1d55abce4bd82",
+      "sha256": "3970da334b53e0317dae95be663582ab88cf9b9699f47502bfe1d55abce4bd82"
+    },
+    {
+      "bytes": 1958,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "bytes": 2744,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/417d2ac2c509508d4864f48ea586a99caf8903bbf07e9b681eb5a9027dcc0d2b",
+      "sha256": "417d2ac2c509508d4864f48ea586a99caf8903bbf07e9b681eb5a9027dcc0d2b"
+    },
+    {
+      "bytes": 2308,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c",
+      "sha256": "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c"
+    },
+    {
+      "bytes": 2035,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/4354d0834b08e96bac5e06d6e224ab9cb75e341bb83cfa081aca2dc4a9315cb5",
+      "sha256": "4354d0834b08e96bac5e06d6e224ab9cb75e341bb83cfa081aca2dc4a9315cb5"
+    },
+    {
+      "bytes": 24426,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c",
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c"
+    },
+    {
+      "bytes": 2876,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/466e9ceb6460a7bfb1c95b2fda7bc83005ff5966db05b66bf71a81469f6a6f10",
+      "sha256": "466e9ceb6460a7bfb1c95b2fda7bc83005ff5966db05b66bf71a81469f6a6f10"
+    },
+    {
+      "bytes": 34955,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/4bd3d22a785bacedddf66b1ddfecceedf61d1ebb88c92301971b2c0edf9d6e6b",
+      "sha256": "4bd3d22a785bacedddf66b1ddfecceedf61d1ebb88c92301971b2c0edf9d6e6b"
+    },
+    {
+      "bytes": 5777,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/5188aa625822a1ddff12e7fb1b5d70b7f90150d75ae5ee5d1415e8e253e88641",
+      "sha256": "5188aa625822a1ddff12e7fb1b5d70b7f90150d75ae5ee5d1415e8e253e88641"
+    },
+    {
+      "bytes": 6731,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9",
+      "sha256": "54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9"
+    },
+    {
+      "bytes": 1233,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/558c8185c02e36de04f1836fae9e1abcb9a237e475fc176f6905f0e0372310d3",
+      "sha256": "558c8185c02e36de04f1836fae9e1abcb9a237e475fc176f6905f0e0372310d3"
+    },
+    {
+      "bytes": 712,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e",
+      "sha256": "55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e"
+    },
+    {
+      "bytes": 19803,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2"
+    },
+    {
+      "bytes": 6328,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/5ab3bc83f579bf256b26c5a8d5ba63d9a0fbca266e4d7651df3b5d0376a52ae7",
+      "sha256": "5ab3bc83f579bf256b26c5a8d5ba63d9a0fbca266e4d7651df3b5d0376a52ae7"
+    },
+    {
+      "bytes": 4094,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/5e5709575d481f1402f3b2b4af4fe8446b7ef72ebdac406aa034aa2fafbf208c",
+      "sha256": "5e5709575d481f1402f3b2b4af4fe8446b7ef72ebdac406aa034aa2fafbf208c"
+    },
+    {
+      "bytes": 6416,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "bytes": 7612,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/627b35f7b4db7747a4f8a730a2a2d902c81e4b56dfb03e73d565589072a6b1a4",
+      "sha256": "627b35f7b4db7747a4f8a730a2a2d902c81e4b56dfb03e73d565589072a6b1a4"
+    },
+    {
+      "bytes": 2453,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/62b650f712efd67b9aeef27a8ae95e5acde811bd43a2971405ed51a27557bc37",
+      "sha256": "62b650f712efd67b9aeef27a8ae95e5acde811bd43a2971405ed51a27557bc37"
+    },
+    {
+      "bytes": 4402,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/66392c780fba2b318af1cbb27f9ea8df507ab3913efb504b771c30695b224ad1",
+      "sha256": "66392c780fba2b318af1cbb27f9ea8df507ab3913efb504b771c30695b224ad1"
+    },
+    {
+      "bytes": 2861,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/68d0ed43ed73b4f9c9f52cb0b6b10d3f520378f7c6b1dd1e316fdcc8a1e2bce5",
+      "sha256": "68d0ed43ed73b4f9c9f52cb0b6b10d3f520378f7c6b1dd1e316fdcc8a1e2bce5"
+    },
+    {
+      "bytes": 30201,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b",
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+    },
+    {
+      "bytes": 1369,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/6d6de9ea3cccfc7bbe436e874c2ad6ffc624f3f9e2a6d2a5b4e5c533025fd533",
+      "sha256": "6d6de9ea3cccfc7bbe436e874c2ad6ffc624f3f9e2a6d2a5b4e5c533025fd533"
+    },
+    {
+      "bytes": 38473,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/6daad8e679727edafabceb94fb9ce5bff52a7d13b31aeef8330c249872511d99",
+      "sha256": "6daad8e679727edafabceb94fb9ce5bff52a7d13b31aeef8330c249872511d99"
+    },
+    {
+      "bytes": 170504,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    },
+    {
+      "bytes": 24388,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e",
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e"
+    },
+    {
+      "bytes": 1842,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7485f0b7f9b1915c4d1bb6ab7ad83b06e3d7fde4b2b11006a369ad50eeeb26af",
+      "sha256": "7485f0b7f9b1915c4d1bb6ab7ad83b06e3d7fde4b2b11006a369ad50eeeb26af"
+    },
+    {
+      "bytes": 781,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/760e11c16144669140369ff2fce10effab166db012e334ef38291fae7f9e773a",
+      "sha256": "760e11c16144669140369ff2fce10effab166db012e334ef38291fae7f9e773a"
+    },
+    {
+      "bytes": 2856,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/77a278a1e1f5317835051f90ae239f1eb076636cfed3ef050c73b30313c38b9d",
+      "sha256": "77a278a1e1f5317835051f90ae239f1eb076636cfed3ef050c73b30313c38b9d"
+    },
+    {
+      "bytes": 2305,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/791ff5d085f6b08bff9251c1e685e877b42d12b37f0613c6e82e8b812bb0e85f",
+      "sha256": "791ff5d085f6b08bff9251c1e685e877b42d12b37f0613c6e82e8b812bb0e85f"
+    },
+    {
+      "bytes": 5279,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509",
+      "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509"
+    },
+    {
+      "bytes": 12165,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b"
+    },
+    {
+      "bytes": 623,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7d4db0d860638ad6dceb28cb0a23d4eef8aad7d006181176240d32c8a7abe4a9",
+      "sha256": "7d4db0d860638ad6dceb28cb0a23d4eef8aad7d006181176240d32c8a7abe4a9"
+    },
+    {
+      "bytes": 9276,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "bytes": 2691,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7dedd72316a121987844e95e6fd960588d648e422e5ce4f9cf46ce57c1a26c9b",
+      "sha256": "7dedd72316a121987844e95e6fd960588d648e422e5ce4f9cf46ce57c1a26c9b"
+    },
+    {
+      "bytes": 2113,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7e506c877eaed65e42c3f9b69b24446fc20484c4908c217f34c3c923765687a3",
+      "sha256": "7e506c877eaed65e42c3f9b69b24446fc20484c4908c217f34c3c923765687a3"
+    },
+    {
+      "bytes": 9014,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737",
+      "sha256": "7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737"
+    },
+    {
+      "bytes": 30709,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "bytes": 8609,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e",
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e"
+    },
+    {
+      "bytes": 943,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/8fcb4ef0f8dee368380f281030986d0520958b55f2bac6ce62635291155d1a37",
+      "sha256": "8fcb4ef0f8dee368380f281030986d0520958b55f2bac6ce62635291155d1a37"
+    },
+    {
+      "bytes": 35568,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/926a7aaed9c4aa092dd4445550398c37d99307db776f1dcf9c7832b3b38c7664",
+      "sha256": "926a7aaed9c4aa092dd4445550398c37d99307db776f1dcf9c7832b3b38c7664"
+    },
+    {
+      "bytes": 2349,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/928ca72cfe15b8c716ab18b609725a451b80a8d2bf117f331aafa2c89eb07108",
+      "sha256": "928ca72cfe15b8c716ab18b609725a451b80a8d2bf117f331aafa2c89eb07108"
+    },
+    {
+      "bytes": 1674,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/961aad1740352f52946e85de1e137189d76f72fa2a688d1e71b49fcc6bdfa6e2",
+      "sha256": "961aad1740352f52946e85de1e137189d76f72fa2a688d1e71b49fcc6bdfa6e2"
+    },
+    {
+      "bytes": 13419,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 3678,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda",
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda"
+    },
+    {
+      "bytes": 913,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/99d0fbb8a85ca80a0b72d2727d65df02e880b449741c371a3e18373cbac67371",
+      "sha256": "99d0fbb8a85ca80a0b72d2727d65df02e880b449741c371a3e18373cbac67371"
+    },
+    {
+      "bytes": 2163,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/9d554719c443780418c0ebfa47d96880bdad4bfa5eccc27fb2fee9bf616f17fa",
+      "sha256": "9d554719c443780418c0ebfa47d96880bdad4bfa5eccc27fb2fee9bf616f17fa"
+    },
+    {
+      "bytes": 1378,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/9e1fdfa53d65a55333e755c0a8ccbb75ae6e169eba8e355f8eee652c23806916",
+      "sha256": "9e1fdfa53d65a55333e755c0a8ccbb75ae6e169eba8e355f8eee652c23806916"
+    },
+    {
+      "bytes": 11037,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305",
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305"
+    },
+    {
+      "bytes": 1138,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/a0cc8d5c621f23ffe8e8fc3161dc1b090e98b413b779ff6ae86bf55aef41c6f1",
+      "sha256": "a0cc8d5c621f23ffe8e8fc3161dc1b090e98b413b779ff6ae86bf55aef41c6f1"
+    },
+    {
+      "bytes": 29627,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/a184aad487b61f5e459de84f13be5b4ad3fdcd96b0435846edb0aef02e2dd469",
+      "sha256": "a184aad487b61f5e459de84f13be5b4ad3fdcd96b0435846edb0aef02e2dd469"
+    },
+    {
+      "bytes": 3381,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/a8bdc938b7d10cc454740db9e0f2440e92e778e42e700be44fc282bc584c93cb",
+      "sha256": "a8bdc938b7d10cc454740db9e0f2440e92e778e42e700be44fc282bc584c93cb"
+    },
+    {
+      "bytes": 6970,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/aacbef3f9ea87e2367d346b21a4d7a6fb6039332ca2a1565d7bc2a474cd9e074",
+      "sha256": "aacbef3f9ea87e2367d346b21a4d7a6fb6039332ca2a1565d7bc2a474cd9e074"
+    },
+    {
+      "bytes": 687654,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8",
+      "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8"
+    },
+    {
+      "bytes": 1898,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b15e976c5bb78801547dd66ffef488ff9087099517841eda3e3bb6cc7bb13084",
+      "sha256": "b15e976c5bb78801547dd66ffef488ff9087099517841eda3e3bb6cc7bb13084"
+    },
+    {
+      "bytes": 1536,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 2180,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 7700,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b2e8778ddfefaaac1f32381ec66d9bd2f4db03d73ac2107445d8d32fc2535e28",
+      "sha256": "b2e8778ddfefaaac1f32381ec66d9bd2f4db03d73ac2107445d8d32fc2535e28"
+    },
+    {
+      "bytes": 397,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1",
+      "sha256": "b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1"
+    },
+    {
+      "bytes": 6058,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0"
+    },
+    {
+      "bytes": 1756,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b9d2fb0ec93aac02aa91d8fded6a5e9679f77b4f19bdbef5a95ac2353fa35a4a",
+      "sha256": "b9d2fb0ec93aac02aa91d8fded6a5e9679f77b4f19bdbef5a95ac2353fa35a4a"
+    },
+    {
+      "bytes": 6219,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/b9dda453b1c5a57273cb4fd44fc9846237eb157cc75011a6207510c86394eeaa",
+      "sha256": "b9dda453b1c5a57273cb4fd44fc9846237eb157cc75011a6207510c86394eeaa"
+    },
+    {
+      "bytes": 10626,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/bdcdd15298f124681eaf7bdbfcc453685a833c0a3755367703126b965ca727db",
+      "sha256": "bdcdd15298f124681eaf7bdbfcc453685a833c0a3755367703126b965ca727db"
+    },
+    {
+      "bytes": 2594,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7",
+      "sha256": "bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7"
+    },
+    {
+      "bytes": 16755,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "bytes": 1012,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/c5b8409f0e82eb546166e82318d90ac9a3535e2ca9e5481b47f66379837e02e0",
+      "sha256": "c5b8409f0e82eb546166e82318d90ac9a3535e2ca9e5481b47f66379837e02e0"
+    },
+    {
+      "bytes": 31922,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60",
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    },
+    {
+      "bytes": 3253,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "bytes": 14238,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/cb369e78ef6dc8aaf847a3b927aa4cf8615b00c7f9a13b5f052a1291ca5cfe42",
+      "sha256": "cb369e78ef6dc8aaf847a3b927aa4cf8615b00c7f9a13b5f052a1291ca5cfe42"
+    },
+    {
+      "bytes": 11952,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/cf56adfa36f28b185165dcd2f72c133f092be40cec21bc247fe5d8c3bb5bb6b8",
+      "sha256": "cf56adfa36f28b185165dcd2f72c133f092be40cec21bc247fe5d8c3bb5bb6b8"
+    },
+    {
+      "bytes": 2676,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/d2869083057cb32ed9ee3951b78f9e18ae3baa28202d74ef7b2a89e711fd6c46",
+      "sha256": "d2869083057cb32ed9ee3951b78f9e18ae3baa28202d74ef7b2a89e711fd6c46"
+    },
+    {
+      "bytes": 78,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/d514b979438d586c03ca80b732f18cd0952835c44039d114ff88045b294c73e8",
+      "sha256": "d514b979438d586c03ca80b732f18cd0952835c44039d114ff88045b294c73e8"
+    },
+    {
+      "bytes": 705,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05",
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05"
+    },
+    {
+      "bytes": 756,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/d8774291d4919e586499a97faafb0e1579a91f1e2e342b876b9b4557645a750e",
+      "sha256": "d8774291d4919e586499a97faafb0e1579a91f1e2e342b876b9b4557645a750e"
+    },
+    {
+      "bytes": 1067,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/d929cb45b79114f6c0b284d2743e39a94a9d7df3c0a8dcb34259500659923a4c",
+      "sha256": "d929cb45b79114f6c0b284d2743e39a94a9d7df3c0a8dcb34259500659923a4c"
+    },
+    {
+      "bytes": 15499,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826",
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826"
+    },
+    {
+      "bytes": 2326,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/de3d32f4a0b8af025bc45e7877df72592dc24131f0d262a5633c536bbdba8db5",
+      "sha256": "de3d32f4a0b8af025bc45e7877df72592dc24131f0d262a5633c536bbdba8db5"
+    },
+    {
+      "bytes": 5610,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/e1845500ed98989722598d0b16b24f5185fe5c2bcb45ce4b02e1cf62d511d0f5",
+      "sha256": "e1845500ed98989722598d0b16b24f5185fe5c2bcb45ce4b02e1cf62d511d0f5"
+    },
+    {
+      "bytes": 16454,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "bytes": 0,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 10288,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/e4291cdce2c28869dccdac37e706a177772330c7e8da7b559dd82c87f976a2ef",
+      "sha256": "e4291cdce2c28869dccdac37e706a177772330c7e8da7b559dd82c87f976a2ef"
+    },
+    {
+      "bytes": 9483,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/e93a5d063169d8987e0b7925f9e2173e1408eb9498e6e114891d2ac2f07f2b2a",
+      "sha256": "e93a5d063169d8987e0b7925f9e2173e1408eb9498e6e114891d2ac2f07f2b2a"
+    },
+    {
+      "bytes": 2894,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/ea96106505d3186b482beaed308164bb13f8169b33183292daa60c7f6c1be229",
+      "sha256": "ea96106505d3186b482beaed308164bb13f8169b33183292daa60c7f6c1be229"
+    },
+    {
+      "bytes": 2546,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/eb0e75ee4f6a9ae6c483dd65de227f4fc13dd612e2ff617c194d41579d96e5a2",
+      "sha256": "eb0e75ee4f6a9ae6c483dd65de227f4fc13dd612e2ff617c194d41579d96e5a2"
+    },
+    {
+      "bytes": 4188,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/ee68e6e3b9bcd90dcb74f7f05c963656fbdbe1e9ec5d7f9710302f12ba5f56a9",
+      "sha256": "ee68e6e3b9bcd90dcb74f7f05c963656fbdbe1e9ec5d7f9710302f12ba5f56a9"
+    },
+    {
+      "bytes": 6427,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "bytes": 1313,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/f418e3d908557b1e19256f77ad5667eca0a493c3f509ff0a8a2bc1eaf68add7a",
+      "sha256": "f418e3d908557b1e19256f77ad5667eca0a493c3f509ff0a8a2bc1eaf68add7a"
+    },
+    {
+      "bytes": 1658,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/f4f35c50775c513b0de652d8a4325335601c00be310e7ba5c25bfde87e7bccef",
+      "sha256": "f4f35c50775c513b0de652d8a4325335601c00be310e7ba5c25bfde87e7bccef"
+    },
+    {
+      "bytes": 3108,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/f5bfabb3edb543079543d8d922aee78e0bc9357ef6fbf70c466ef2887785d3de",
+      "sha256": "f5bfabb3edb543079543d8d922aee78e0bc9357ef6fbf70c466ef2887785d3de"
+    },
+    {
+      "bytes": 4390,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/f63ea77bfb72132b54d8e3e269c35e8d2f0ef0100e156074b06fe426fc6d3982",
+      "sha256": "f63ea77bfb72132b54d8e3e269c35e8d2f0ef0100e156074b06fe426fc6d3982"
+    },
+    {
+      "bytes": 1135,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/f90bca171e5eec1c9910fb0806db86e31413c8925c62ce5f73380f79ead2a313",
+      "sha256": "f90bca171e5eec1c9910fb0806db86e31413c8925c62ce5f73380f79ead2a313"
+    },
+    {
+      "bytes": 1265,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "bytes": 18699,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/fcacd4867591a1f437a3d8ddd6d12e23ea9fca4359889653b1714966a7e2886b",
+      "sha256": "fcacd4867591a1f437a3d8ddd6d12e23ea9fca4359889653b1714966a7e2886b"
+    },
+    {
+      "bytes": 8656,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/archive/sha256/fe8204186d67765778e5d22fd858ee6d50ca3919444572fb71596f894f8b47ca",
+      "sha256": "fe8204186d67765778e5d22fd858ee6d50ca3919444572fb71596f894f8b47ca"
+    },
+    {
+      "bytes": 104577,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1"
+    },
+    {
+      "bytes": 29217,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/proposal/scripts/inhomogeneous_comb_local_control_2026_10_16.py",
+      "sha256": "162f6bd35fd24e7e82f1c649cb8fe0848030e122d8fe7b9891719aba9eedfdab"
+    },
+    {
+      "bytes": 3351,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/record_metadata.py",
+      "sha256": "a50dc683cf577f8a3e45b19a5cd44c17dda44eb8e9cb24293c80263b91283186"
+    },
+    {
+      "bytes": 4530,
+      "path": "../inhomogeneous_comb_qualified_publication_draft/seal_packet.py",
+      "sha256": "a78c7c51a5376e2bf4aca3f487980aaf29f6f24ed72c88566be56935ac729308"
+    },
+    {
+      "bytes": 1428,
+      "path": "ACTUAL_BASE_BINDING.json",
+      "sha256": "ad5c4e222ef2c90c2ea029f0442f4db728783fee3cb5b52c2cfdf11838067867"
+    },
+    {
+      "bytes": 7386,
+      "path": "ACTUAL_BASE_SPEC.json",
+      "sha256": "7815ae6f4aa0d052292c0f079a1c8934ec43a14acee227356e41bae8284a9dd6"
+    },
+    {
+      "bytes": 2569,
+      "path": "ACTUAL_SCHEMA_ADAPTATION.md",
+      "sha256": "5953e888c987038e8dca5cd25ae9d80c3f24962d22d184cf3e82c92219a80be4"
+    },
+    {
+      "bytes": 73966,
+      "path": "ARCHIVE_CLOSURE.json",
+      "sha256": "ec2671031652b59c629ca266cd0927e607a6eed7b5fac3e32bd5122f94562282"
+    },
+    {
+      "bytes": 2046,
+      "path": "ARCHIVE_CLOSURE_PLAN.json",
+      "sha256": "04b16cc104d49cf777d700eb6de28a8fc712743dece61c314634d6ba0cdec036"
+    },
+    {
+      "bytes": 451,
+      "path": "BASE_BINDING_INPUT.json",
+      "sha256": "d48f25c893ff212abc249e5266d77e1cef10ef2c1c981f97740be2d3c36bfda3"
+    },
+    {
+      "bytes": 3520,
+      "path": "BINDING_CONTRACT.md",
+      "sha256": "f8d87a254e26cb03b95b6b51ee2db077dd92a753c80d723a7047606a4c3b8278"
+    },
+    {
+      "bytes": 879,
+      "path": "BINDING_GUARD_FRAGMENT.txt",
+      "sha256": "0f0aeaf85458cbba1b65a72930eb5d6841c80f5d8978d834219483c0f3bad7c1"
+    },
+    {
+      "bytes": 6256,
+      "path": "BINDING_GUARD_VERIFICATION.json",
+      "sha256": "a86a98766837341266dffd126ebb8e3e3375f329e2684cb1525ff556b2a00e9a"
+    },
+    {
+      "bytes": 3756,
+      "path": "BODY_MAP_FULL.diff",
+      "sha256": "ac38dcffd8e3dcd8c4bf0279f1cef6207fe4f072d04909edb7eb60a54911ee29"
+    },
+    {
+      "bytes": 150,
+      "path": "CANONICAL_TRAILER.md",
+      "sha256": "baf72fc74ff1ff812261324f92da50a6006d9b3d443071b1dc5c56ef9585fbdb"
+    },
+    {
+      "bytes": 2841,
+      "path": "CHECKPOINT.json",
+      "sha256": "7a523f38e8165f016f98707ae5d4132472768c90fa4afb3e31197d1e85cdcc19"
+    },
+    {
+      "bytes": 3451,
+      "path": "COMMAND_PLAN.md",
+      "sha256": "160b69dcde7a283199315f4d1576c9a97ec5d06e1bb080b776714d2fb5c16674"
+    },
+    {
+      "bytes": 23307,
+      "path": "COMMON_FULL.diff",
+      "sha256": "46b5dec0c846aea420e05612552dd6093b2edbc5139d4ba42b452eb8327a8cc1"
+    },
+    {
+      "bytes": 14038,
+      "path": "DELIVERY_FINAL.diff",
+      "sha256": "2d62d03a18f1e56a84fba176a854ee61a6c9b46fa4d44c35aa2ec4c38941a66f"
+    },
+    {
+      "bytes": 2677,
+      "path": "DELIVERY_PINS.json",
+      "sha256": "89dbfc864d821f7b48408534a41b6afd41b1ede6f119432b24c862603fe9661e"
+    },
+    {
+      "bytes": 1035,
+      "path": "EXECUTION_TOOLS_FULL.diff",
+      "sha256": "7f816770f3bfebd469f58203676ceb3fa260e07e2c1a285e8b64d38ec227c4ed"
+    },
+    {
+      "bytes": 2752,
+      "path": "EXECUTION_TOOL_PINS.json",
+      "sha256": "04bd4ff8b4c2d9c59fb4e2c1e50a8ce47f8ba716b8126d4c5d79e0e98c5211be"
+    },
+    {
+      "bytes": 8554,
+      "path": "EXTENSION_FULL.diff",
+      "sha256": "c1da16a0af3159ccc54771246408e01ae47b43fcc364353a6ad73ba8650045fb"
+    },
+    {
+      "bytes": 1712,
+      "path": "FINAL_BINDING_COMMON.diff",
+      "sha256": "ba5d08dd5d0693cdad6ec04c7b5440911e65c684b2d8abc5c8020246412f0529"
+    },
+    {
+      "bytes": 28678,
+      "path": "FINAL_INSPECTION.json",
+      "sha256": "18984223cdcf805d50cf089a93ca05a30a486238ffe673f809563cedf709caf4"
+    },
+    {
+      "bytes": 982,
+      "path": "FRESHNESS_CONTRACT.json",
+      "sha256": "083b5078bca5728777efc70e4c1f6fbbba1cfea056ee9c48331e3df3c3d3c655"
+    },
+    {
+      "bytes": 18933,
+      "path": "FUNCTION_REUSE_MAP.json",
+      "sha256": "8c5097c73fc1906803c798e3a8844f42e96974c622cb076834e8602f76b5b9c2"
+    },
+    {
+      "bytes": 3717,
+      "path": "INTEGRATION_SECTIONS.json",
+      "sha256": "6e4d08870b00d4c1dce488964e852c7fa0eb8443d450963f40ebdf3b24a52669"
+    },
+    {
+      "bytes": 10618,
+      "path": "METADATA_VERIFICATION.json",
+      "sha256": "85ff34b08979164b05b404010599fc6f813bcfa71cdaa1ec0c677c49626629c9"
+    },
+    {
+      "bytes": 9438,
+      "path": "NOTE_FULL.diff",
+      "sha256": "f64654248e161641340611b2b63acaf1d48d6779513e38a8384872d134d4aec7"
+    },
+    {
+      "bytes": 30922,
+      "path": "OBSERVED_REFRESH_EVIDENCE.json",
+      "sha256": "1d1c96d5e09928ff4794ef53d059f7948ddea3d178290f043eab3f58e29bc5b8"
+    },
+    {
+      "bytes": 779,
+      "path": "PARENT_BINDING.json",
+      "sha256": "b0ee10637f1e7dbfb0b2e5a327f8165b855787024341fe87db13b112512a51be"
+    },
+    {
+      "bytes": 2598,
+      "path": "PROPOSED_BODY_MAP.json",
+      "sha256": "0f39df0305f98d7dd27433e7967bb9ccbe58fc50a4c8d0d6eed2eca8d3ba0f98"
+    },
+    {
+      "bytes": 1356,
+      "path": "PROPOSED_CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "a2595e26472bddcf315b0b919384227700bc4039e84f752bdf39e625b87b75ae"
+    },
+    {
+      "bytes": 104822,
+      "path": "PROPOSED_NOTE.md",
+      "sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5"
+    },
+    {
+      "bytes": 3079,
+      "path": "PROPOSED_SOURCE_MANIFEST.json",
+      "sha256": "44e790bf2b31a138dc9b5b98e0ed290d9a16226723b76823a7881e676400bc05"
+    },
+    {
+      "bytes": 1725,
+      "path": "PR_BODY_TEMPLATE.md",
+      "sha256": "cc4456fdf8cd4c4f0c402e9688135e578bfe000310458b34dd6c2e1813d2c2a8"
+    },
+    {
+      "bytes": 434,
+      "path": "README.md",
+      "sha256": "e110c6db937bcda3087df7c4c5837e2f681728825e67c5b23986f1894935ffc6"
+    },
+    {
+      "bytes": 91965,
+      "path": "REFERENCE_EVIDENCE.json",
+      "sha256": "46cd37102a44602126c86c02bf177235e8f8ca1cd166cb665423eaf6e9f88ea6"
+    },
+    {
+      "bytes": 1057,
+      "path": "ROOT_BINDING_INPUT_TEMPLATE.json",
+      "sha256": "0283152627b2f941d1f3137aed1f68bc8c022b72750fee2cc430e6687b873c6c"
+    },
+    {
+      "bytes": 6512,
+      "path": "ROOT_READ_GUIDE.md",
+      "sha256": "b1c9ffbff2e494ec7c071daa344c1dea4b47a032d5f893a42045b670b5ce427e"
+    },
+    {
+      "bytes": 3337,
+      "path": "SEAL_FULL.diff",
+      "sha256": "e0fc0c00fd979fdb5dc0e870c71e438a2fd6b1d33d0979e0975ab2e1b0482170"
+    },
+    {
+      "bytes": 2274,
+      "path": "SEAL_OPERATION.json",
+      "sha256": "afb9f07e87f8c7a8e8e28a0d3531e464678b8d82a3de608318d6ace2a9042850"
+    },
+    {
+      "bytes": 191831,
+      "path": "SOURCE_MANIFEST_FULL.diff",
+      "sha256": "ecd24271c36d9e9162ae16c251b434607490e02cac09fbc1184627a8609722da"
+    },
+    {
+      "bytes": 64470,
+      "path": "SOURCE_PRIMARY_FULL.diff",
+      "sha256": "f4471357288d1d5b69b479e867066fe7d44361cda6253da3930378ecbe4f46aa"
+    },
+    {
+      "bytes": 59756,
+      "path": "SOURCE_REFERENCES.json",
+      "sha256": "b33e230efa3ce11645749e745a1d06e80b7931bf69134ca5ea6fea59a65aa94d"
+    },
+    {
+      "bytes": 6964,
+      "path": "TOOL_SOURCE_REUSE.json",
+      "sha256": "a6d255103ee517ae3e5478c71df38aad348d176a74b81f7c1d22cce0d04429c3"
+    },
+    {
+      "bytes": 2594,
+      "path": "WRAPPER_REPLACEMENTS.json",
+      "sha256": "29ffcc339057ac0ff6ba213ed4fad327fe8e2b1499e7de647d17ffb29b8b91d2"
+    },
+    {
+      "bytes": 8308,
+      "path": "bind_actual_base.py",
+      "sha256": "2928ee48207ae03f1c1968494810ac551d04f862a3f2ca6426494ffa4c30f55d"
+    },
+    {
+      "bytes": 7390,
+      "path": "binding_mutation_inputs/closed_parent.json",
+      "sha256": "2be2c534498aaebcf6264a48a5cb3015fb781244544ffdf1aaa1845021169964"
+    },
+    {
+      "bytes": 7387,
+      "path": "binding_mutation_inputs/draft_parent.json",
+      "sha256": "5c9be12d6a2818438a453bcf86aea3e4a7e84038d1563585d3bdb811c41b818b"
+    },
+    {
+      "bytes": 7387,
+      "path": "binding_mutation_inputs/failed_attachment.json",
+      "sha256": "1a3c8e22745a89911812e80b34ad698bf5ab5fcc190308d6e7d909cc462dd364"
+    },
+    {
+      "bytes": 7031,
+      "path": "binding_mutation_inputs/missing_nested_pr.json",
+      "sha256": "ebd2ad20bcc1320606eea3c46ee7735e007ca88a01ee02acd8ea7e8446bacef9"
+    },
+    {
+      "bytes": 7350,
+      "path": "binding_mutation_inputs/wrong_attachment_url.json",
+      "sha256": "1bd8a8aff3a87ae6b0f63c16474178b4e917589b30caf71a344fe62b644d8227"
+    },
+    {
+      "bytes": 7388,
+      "path": "binding_mutation_inputs/wrong_observed_tree.json",
+      "sha256": "fa0114a455e1c69cb24116cbb2afbfbb097e3a6adb2de22a2305d6d2d4cd9d00"
+    },
+    {
+      "bytes": 7336,
+      "path": "binding_mutation_inputs/wrong_parent_branch.json",
+      "sha256": "2296253df24babc935e81486227a08a53721497f68f84c00f4534aa63ed11124"
+    },
+    {
+      "bytes": 7385,
+      "path": "binding_mutation_inputs/wrong_parent_number.json",
+      "sha256": "c3760899db126dafb4c40fbd97f4d5db93523fa4aadcfb6519442ddb78bbaacb"
+    },
+    {
+      "bytes": 7394,
+      "path": "binding_mutation_inputs/wrong_parent_target.json",
+      "sha256": "51e94e135f4c41ee7131d912af917de4cf0b8fcfebac4710d4317c7cf598121d"
+    },
+    {
+      "bytes": 7388,
+      "path": "binding_mutation_inputs/wrong_published_head.json",
+      "sha256": "24d467d93c439dc8d5a3ad26b8fa75d035d0cb69d411cb03cdea21cd080c5b8c"
+    },
+    {
+      "bytes": 11254,
+      "path": "build_driver.py",
+      "sha256": "ff56f564133c806e06c4ba068f4fdead9d1c60da0f2b7de78f8ad834fc5f2451"
+    },
+    {
+      "bytes": 14799,
+      "path": "build_payload.py",
+      "sha256": "9aebb87463270d9de9fa0fd01379dc14774a7eba5f358592a8ca61b9ceb8dd22"
+    },
+    {
+      "bytes": 88,
+      "path": "cache_inhomogeneous_comb.py",
+      "sha256": "f5860081f7d629f4c578889dc5aa20da1d55fe4afde9098e0427f8cd204219af"
+    },
+    {
+      "bytes": 1638,
+      "path": "create_binding_spec.py",
+      "sha256": "9b5ea86b3415f72bc0ba854c8f56045357c1babcd0ca3e59e00dbefb7e9b4e27"
+    },
+    {
+      "bytes": 8806,
+      "path": "current_base/AFFECTED_SOURCE_SCREEN.json",
+      "sha256": "afd70505d79bf51d792e505aacbf5a8547c8c036c85e2e810b1c23a0bcfd5a36"
+    },
+    {
+      "bytes": 5124,
+      "path": "current_base/BINDING_REFS.json",
+      "sha256": "692fe44bdfdfdc5b8f3724529b896afc3f3576c28f643833a84855a1d7f5f216"
+    },
+    {
+      "bytes": 5309,
+      "path": "current_base/SOURCE_REFS.json",
+      "sha256": "91d857fdae12b368cd274e299657361f04774724cad8b78e0ffb1ad2e5b9fdc8"
+    },
+    {
+      "bytes": 1353,
+      "path": "current_base/commands/branch/EXECUTION.json",
+      "sha256": "6fba207b1589fe7080615242283c4feb4f6c7b9021d1d40772dfae12858e6c16"
+    },
+    {
+      "bytes": 650,
+      "path": "current_base/commands/branch/LAUNCH.json",
+      "sha256": "72096335c33a2112917ceb2759329cd47fa77e4a0d852d4cc44d3c6eb5caf965"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/branch/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 63,
+      "path": "current_base/commands/branch/stdout",
+      "sha256": "248f4ce304eef6a560285e92b13db4c3f1b2212367c1dc11df65570d76c8fbfe"
+    },
+    {
+      "bytes": 1544,
+      "path": "current_base/commands/inventory/EXECUTION.json",
+      "sha256": "ca2bbc29da7d9433337dba9b944e79d3e93e973e8cccaaddca473f1e8ef6cd60"
+    },
+    {
+      "bytes": 836,
+      "path": "current_base/commands/inventory/LAUNCH.json",
+      "sha256": "64ddc19591031f5c3e2f1202c30b5cb0e56a6b593ce7669fa554850c70d7e2d2"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/inventory/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 364,
+      "path": "current_base/commands/inventory/stdout",
+      "sha256": "9db48eed0e2d57d908427232c5e65cb7332bc6b1de02cb2694bdc9ce34be8f63"
+    },
+    {
+      "bytes": 1464,
+      "path": "current_base/commands/later_main_paths/EXECUTION.json",
+      "sha256": "6343d5b5c9f374e30cd35f161def8bd69e6a323d297b398052e8fcac4931ca3d"
+    },
+    {
+      "bytes": 741,
+      "path": "current_base/commands/later_main_paths/LAUNCH.json",
+      "sha256": "1a3ac92679b65d78feed6bc71ab61d93e694187f69e11e6a6ff1b1b3c064b996"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/later_main_paths/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6524,
+      "path": "current_base/commands/later_main_paths/stdout",
+      "sha256": "3bc3f255b9e25c197c02bf80e2ddafe241e2bd50ce1a67cf40ccf26a6903941d"
+    },
+    {
+      "bytes": 1496,
+      "path": "current_base/commands/parent/EXECUTION.json",
+      "sha256": "2b87584bdbbb3202e679c0733c257e5294077286a4bf7462b8510af8ec49ebd7"
+    },
+    {
+      "bytes": 794,
+      "path": "current_base/commands/parent/LAUNCH.json",
+      "sha256": "8aed6ec5b689e009a1d70c5fbf61a431b901cb9de7d0309f737a437e99d0c3e3"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/parent/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 285,
+      "path": "current_base/commands/parent/stdout",
+      "sha256": "d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a"
+    },
+    {
+      "bytes": 1349,
+      "path": "current_base/commands/ref_HEAD/EXECUTION.json",
+      "sha256": "656b90144a9a43ea847da4f7d7b743f8e109cc3a9e8437f7e94f9538a13c2c16"
+    },
+    {
+      "bytes": 643,
+      "path": "current_base/commands/ref_HEAD/LAUNCH.json",
+      "sha256": "9c22ae3bd4dbcf0c359e8cf5980149edcd1facd62085f96361642a993050e954"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/ref_HEAD/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 41,
+      "path": "current_base/commands/ref_HEAD/stdout",
+      "sha256": "a845f91de69f987476ea733f0eaa597ddffe0ed880ea68bfce8f8d4f5a8bc268"
+    },
+    {
+      "bytes": 1395,
+      "path": "current_base/commands/ref_origin_ai_execution/EXECUTION.json",
+      "sha256": "af14e749bcf61d6ce85955da188e253bdef567939c1148e007f5764187f6f992"
+    },
+    {
+      "bytes": 658,
+      "path": "current_base/commands/ref_origin_ai_execution/LAUNCH.json",
+      "sha256": "fef7edf3bef062967ed28b19fead3b8ae0e1842fcad81b39a2b84ec0cf07a188"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/ref_origin_ai_execution/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 41,
+      "path": "current_base/commands/ref_origin_ai_execution/stdout",
+      "sha256": "762a1ad8b854bca2a59a5557fe56da08718af64fef9f5c6ad92b4e647ec103aa"
+    },
+    {
+      "bytes": 1370,
+      "path": "current_base/commands/ref_origin_main/EXECUTION.json",
+      "sha256": "9374c949ae2e8ba782e7889def5235e2f190b09a371cd4960b4d1235a591acfb"
+    },
+    {
+      "bytes": 650,
+      "path": "current_base/commands/ref_origin_main/LAUNCH.json",
+      "sha256": "3766a8fe78ef601422e600dd00f930bd6c1ddc02529f24a279936bea19430db5"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/ref_origin_main/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 41,
+      "path": "current_base/commands/ref_origin_main/stdout",
+      "sha256": "451bbf496ac8aa8d4a3f2751c82c43aa6d92f736521de30240bad1a7913660a4"
+    },
+    {
+      "bytes": 1357,
+      "path": "current_base/commands/status/EXECUTION.json",
+      "sha256": "ef5905a4357ff08be6cc8ae68deecac59bca7c6b3ce044da23275e4e7efa2503"
+    },
+    {
+      "bytes": 657,
+      "path": "current_base/commands/status/LAUNCH.json",
+      "sha256": "ab687adcc6634e5023c806fec95cf1aba44c101285e391abffb6286f9433f371"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/status/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/status/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1349,
+      "path": "current_base/commands/tree/EXECUTION.json",
+      "sha256": "58fdecb9d1993d12fea5005e757b666ecee9b10baff4c42163bb6914b0762b95"
+    },
+    {
+      "bytes": 650,
+      "path": "current_base/commands/tree/LAUNCH.json",
+      "sha256": "7ea31fc0e0a3a49e1a771973115d93ef5ca576e28607dce2a44c2320365cc304"
+    },
+    {
+      "bytes": 0,
+      "path": "current_base/commands/tree/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 41,
+      "path": "current_base/commands/tree/stdout",
+      "sha256": "d73a3251260c7c860df27e45884adcec457377e31229fdbcd40c4f0a51e33b8f"
+    },
+    {
+      "bytes": 7969,
+      "path": "final_inspect.py",
+      "sha256": "055636d395d08e7c3659fbe573a0fc71d83c85bcff3631c2341076daebc2ad70"
+    },
+    {
+      "bytes": 7506,
+      "path": "finalize_delivery.py",
+      "sha256": "5f6f152227f71dec998feadf5983048042a68b5727c71090defa5c0d7e43383c"
+    },
+    {
+      "bytes": 89,
+      "path": "finish_inhomogeneous_comb.py",
+      "sha256": "b9ad2b9c31073e65355bd4758cb2070edc3b64f50223b4acef1d88b31576d4f4"
+    },
+    {
+      "bytes": 88,
+      "path": "graph_inhomogeneous_comb.py",
+      "sha256": "fdf61af452e34908a3aba1aa816dcda8f7c9e4839de70a588ce04d760d97fb3a"
+    },
+    {
+      "bytes": 56281,
+      "path": "inhomogeneous_comb_common.py",
+      "sha256": "b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae"
+    },
+    {
+      "bytes": 90,
+      "path": "install_inhomogeneous_comb.py",
+      "sha256": "508505412531b1b588d22ac0ff142200084f4ccf004be94b44b5520dac6f6cd6"
+    },
+    {
+      "bytes": 2414,
+      "path": "metadata_runs/actual_base_binding/EXECUTION.json",
+      "sha256": "ce6fbca7f9d062abc6a9853d60e37366cfeaaff1430c8f740d5ee5ac2b214358"
+    },
+    {
+      "bytes": 1678,
+      "path": "metadata_runs/actual_base_binding/LAUNCH.json",
+      "sha256": "b20ae636f98ee10be4df6c9866d0af67a836ac9b35cbfa20dc17d723ec3a835c"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/actual_base_binding/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 8308,
+      "path": "metadata_runs/actual_base_binding/source_at_launch.py",
+      "sha256": "2928ee48207ae03f1c1968494810ac551d04f862a3f2ca6426494ffa4c30f55d"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/actual_base_binding/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1326,
+      "path": "metadata_runs/actual_base_binding/stdout",
+      "sha256": "e6d87c7dd66a1cbe856025068f04f0f37f803defbc944b6bf32e131ccf89798c"
+    },
+    {
+      "bytes": 2429,
+      "path": "metadata_runs/actual_binding_guards/EXECUTION.json",
+      "sha256": "aa60864e9435afa34d234d9ae528bc636bee82474bcb41510f234babba7776e2"
+    },
+    {
+      "bytes": 1691,
+      "path": "metadata_runs/actual_binding_guards/LAUNCH.json",
+      "sha256": "44359861a61aaf64bed3f3f8797b953e75e418206568b8946e5775ed063d6e46"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/actual_binding_guards/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 3838,
+      "path": "metadata_runs/actual_binding_guards/source_at_launch.py",
+      "sha256": "d69fc5b04a1ea4bd5beaee87821836e2b56b1cf54888fee95cd4a4fea49245ac"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/actual_binding_guards/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 334,
+      "path": "metadata_runs/actual_binding_guards/stdout",
+      "sha256": "e1d1ddb23e71520dbd0363122ec99372f2354e2940dbc425c32bb591a8229904"
+    },
+    {
+      "bytes": 2416,
+      "path": "metadata_runs/actual_binding_spec/EXECUTION.json",
+      "sha256": "a30a9cb7c6a831aa456b9dc90d7ae6af361c2c1a702e5e2b5f14de36a3b7f9d1"
+    },
+    {
+      "bytes": 1681,
+      "path": "metadata_runs/actual_binding_spec/LAUNCH.json",
+      "sha256": "3ba5f908645e8e5e373c796cd598bbb3aef0635f86187f5ebeae7c20ef3fe58e"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/actual_binding_spec/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 1638,
+      "path": "metadata_runs/actual_binding_spec/source_at_launch.py",
+      "sha256": "9b5ea86b3415f72bc0ba854c8f56045357c1babcd0ca3e59e00dbefb7e9b4e27"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/actual_binding_spec/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 295,
+      "path": "metadata_runs/actual_binding_spec/stdout",
+      "sha256": "c3e81c07b987fe54fdd76d41b21087948f7381c4c69448852094d84be23e6a52"
+    },
+    {
+      "bytes": 2376,
+      "path": "metadata_runs/build_driver/EXECUTION.json",
+      "sha256": "4918018526bae7aed73f415e4f7be599086447614c8ff56d1c6d91729fbe1bea"
+    },
+    {
+      "bytes": 1655,
+      "path": "metadata_runs/build_driver/LAUNCH.json",
+      "sha256": "4ab5a965ca9adc0083800a495034cde0b50a118a08a6e49a0c009d1d201cd5d6"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/build_driver/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 11254,
+      "path": "metadata_runs/build_driver/source_at_launch.py",
+      "sha256": "ff56f564133c806e06c4ba068f4fdead9d1c60da0f2b7de78f8ad834fc5f2451"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/build_driver/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 323,
+      "path": "metadata_runs/build_driver/stdout",
+      "sha256": "14bfd9fa8bd840ffa7463aa3d75ba55c0ff6b6ade8c8323f07afc31f978ab76a"
+    },
+    {
+      "bytes": 2381,
+      "path": "metadata_runs/build_payload/EXECUTION.json",
+      "sha256": "c483ed180b7043323bafd4504a38ebde52c9bd7a45413082bf3129d227fc64d7"
+    },
+    {
+      "bytes": 1659,
+      "path": "metadata_runs/build_payload/LAUNCH.json",
+      "sha256": "810eb6ea5e951c98cddeb4e721994d9c39b546b4e5647191e4146362a40ad364"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/build_payload/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 14799,
+      "path": "metadata_runs/build_payload/source_at_launch.py",
+      "sha256": "9aebb87463270d9de9fa0fd01379dc14774a7eba5f358592a8ca61b9ceb8dd22"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/build_payload/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 606,
+      "path": "metadata_runs/build_payload/stdout",
+      "sha256": "4218900d7ac25de7e8f2deffc96680e7ed189fe0dc1b0de913553abfd59d2562"
+    },
+    {
+      "bytes": 2278,
+      "path": "metadata_runs/canonical_refusal/EXECUTION.json",
+      "sha256": "a816b6fe9f1a58d8a6a236055e21f8c1d9a0860af99ea909c2d4cb8632cd12e7"
+    },
+    {
+      "bytes": 1546,
+      "path": "metadata_runs/canonical_refusal/LAUNCH.json",
+      "sha256": "fe83eab12e3c692a2e8065913bc4e9b3de9dc7ef0b0370e639ed7e6c44c2df0b"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/canonical_refusal/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 45991,
+      "path": "metadata_runs/canonical_refusal/source_at_launch.py",
+      "sha256": "55edd06cc97122445e3da9c842375c8530b45f83b3bdef1914901c7e950f8592"
+    },
+    {
+      "bytes": 1377,
+      "path": "metadata_runs/canonical_refusal/stderr",
+      "sha256": "8f8946d28e430cc8e4eb2f01ecdf53a61f752398a41f2297010877407e40510f"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/canonical_refusal/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2440,
+      "path": "metadata_runs/current_base_observation/EXECUTION.json",
+      "sha256": "4c7107359b23bec47428755066601535b070cc4e66ae0eb13892ab3dee2fe357"
+    },
+    {
+      "bytes": 1696,
+      "path": "metadata_runs/current_base_observation/LAUNCH.json",
+      "sha256": "d95ee83b981098f659d17a85a11c94cdfd5e328956ce2eb009c23be454b29d17"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/current_base_observation/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 5525,
+      "path": "metadata_runs/current_base_observation/source_at_launch.py",
+      "sha256": "b0a759b1aad2bde7b7c45f85bc3b6b4dcf37ed6165591ba8d1973674ce7df3b3"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/current_base_observation/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1272,
+      "path": "metadata_runs/current_base_observation/stdout",
+      "sha256": "1874cbcc7b226bde9f14fbb375a90f52970d8e3d391604b2bbbfc8bddae8ea23"
+    },
+    {
+      "bytes": 2390,
+      "path": "metadata_runs/delivery_final/EXECUTION.json",
+      "sha256": "00bf03e74b47488f9443cfa3152f024332a7b9af5e3e4e5f51f259288fcc736b"
+    },
+    {
+      "bytes": 1664,
+      "path": "metadata_runs/delivery_final/LAUNCH.json",
+      "sha256": "ee9c51d8bb019fafe29e296d61b99f60285191bca7231433f14671ef07358722"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/delivery_final/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 7506,
+      "path": "metadata_runs/delivery_final/source_at_launch.py",
+      "sha256": "5f6f152227f71dec998feadf5983048042a68b5727c71090defa5c0d7e43383c"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/delivery_final/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1039,
+      "path": "metadata_runs/delivery_final/stdout",
+      "sha256": "dd985ffc2fb2b4b054e6d640c99c45a0ab31c2a5b500d1dfec0f20cab0a8c28d"
+    },
+    {
+      "bytes": 2422,
+      "path": "metadata_runs/delivery_pending_base/EXECUTION.json",
+      "sha256": "97bb9c665e24d1a2987afc81229f71cd629d96bd3183a86dfa7bca1beb5fd1ab"
+    },
+    {
+      "bytes": 1684,
+      "path": "metadata_runs/delivery_pending_base/LAUNCH.json",
+      "sha256": "1e3a9baf7b1fa29dca4fbd0bfc04bf6401f156730b6875f6fa0725658a1744c1"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/delivery_pending_base/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 19468,
+      "path": "metadata_runs/delivery_pending_base/source_at_launch.py",
+      "sha256": "1d4e369ae32d02f7c050da3996b1526797b9b8b78d9b95470f6937232ae6b16e"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/delivery_pending_base/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 579,
+      "path": "metadata_runs/delivery_pending_base/stdout",
+      "sha256": "bca7e5fa11c88cbebe56a88be7830eff47abdb4356196929b7764f24302c7b64"
+    },
+    {
+      "bytes": 2393,
+      "path": "metadata_runs/final_inspection/EXECUTION.json",
+      "sha256": "d8218dde914c37f9ada4ff6974cefda690c545853cbcc01ef5fa8834e1bcec26"
+    },
+    {
+      "bytes": 1666,
+      "path": "metadata_runs/final_inspection/LAUNCH.json",
+      "sha256": "33017a5b3a4c5575624dc2735d8175c0b1ac53db1422914c84df00157ca21548"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/final_inspection/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 7969,
+      "path": "metadata_runs/final_inspection/source_at_launch.py",
+      "sha256": "055636d395d08e7c3659fbe573a0fc71d83c85bcff3631c2341076daebc2ad70"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/final_inspection/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 349,
+      "path": "metadata_runs/final_inspection/stdout",
+      "sha256": "87fd2d40a3118bcc33f1a05dd3cb0c800a6d65dc43a1afd4119d6c7831a0ad9d"
+    },
+    {
+      "bytes": 2450,
+      "path": "metadata_runs/source_integrity/EXECUTION.json",
+      "sha256": "0559d975f90c2a6ae5a90d25a1b8f218174bd018ee8ab0a09456d3d9c17978b3"
+    },
+    {
+      "bytes": 1721,
+      "path": "metadata_runs/source_integrity/LAUNCH.json",
+      "sha256": "5d0a79fb68729a9dd330faac5f04092141d76ffd110e6c8ec29b04794e337ae1"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/source_integrity/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 45991,
+      "path": "metadata_runs/source_integrity/source_at_launch.py",
+      "sha256": "55edd06cc97122445e3da9c842375c8530b45f83b3bdef1914901c7e950f8592"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/source_integrity/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 224,
+      "path": "metadata_runs/source_integrity/stdout",
+      "sha256": "124ef92c801a38215caf42c327ed962053489aed1b3d3bf0ea2111998666d938"
+    },
+    {
+      "bytes": 2400,
+      "path": "metadata_runs/validation_final/EXECUTION.json",
+      "sha256": "f3cff63acf653b02ba944bb69d9fa225e454e984abc29419d6856b85352eb43c"
+    },
+    {
+      "bytes": 1672,
+      "path": "metadata_runs/validation_final/LAUNCH.json",
+      "sha256": "da99257b954a16fe28f3835f791a536fc8642106c52ff8c39186f0cd9e919976"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/validation_final/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 11397,
+      "path": "metadata_runs/validation_final/source_at_launch.py",
+      "sha256": "7055b79aa2d2214921c71dd641d9282531a4da6730e236ee938365a40c8f34f7"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/validation_final/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 729,
+      "path": "metadata_runs/validation_final/stdout",
+      "sha256": "e35d79c57869ef81e724a2995e0b2bbc93ea14cf63dcc4a57d1e2a330039543e"
+    },
+    {
+      "bytes": 2435,
+      "path": "metadata_runs/validation_pending_base/EXECUTION.json",
+      "sha256": "0bed090ba1dfe24d44741e8b0e68c28bc1db4fa8445341b665a5e0a17eb5a934"
+    },
+    {
+      "bytes": 1693,
+      "path": "metadata_runs/validation_pending_base/LAUNCH.json",
+      "sha256": "a08a22284ab2ab9117250e12ef95a82ded3c0b2bfa25f750dd1d811103d1f785"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/validation_pending_base/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 11397,
+      "path": "metadata_runs/validation_pending_base/source_at_launch.py",
+      "sha256": "7055b79aa2d2214921c71dd641d9282531a4da6730e236ee938365a40c8f34f7"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/validation_pending_base/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 714,
+      "path": "metadata_runs/validation_pending_base/stdout",
+      "sha256": "b8c130a5328acb40562dd0e36551f0603d853014a8204ca8a39cf01ad449bdeb"
+    },
+    {
+      "bytes": 104577,
+      "path": "mutation_inputs/body_byte.mutant",
+      "sha256": "911c8f32a4c42f44036ff5bbb58ad5e9f1720ff8022be4c43b19577fcdf3f097"
+    },
+    {
+      "bytes": 1746,
+      "path": "mutation_inputs/capture_alias.json",
+      "sha256": "102da1cacb35459b94e81b7fa02ebc5b9ff36d7e25e04d673a7a96e358b2f27f"
+    },
+    {
+      "bytes": 1750,
+      "path": "mutation_inputs/execution.original",
+      "sha256": "d775fe2422c3e18d811bc269380f5563e73fe3ea0ff750b654492561338030eb"
+    },
+    {
+      "bytes": 32,
+      "path": "mutation_inputs/extra.txt",
+      "sha256": "c7cee1fd00c3f4957f08ddf26ed5ed92da01f7723fc203d91f21269bfdf9c84b"
+    },
+    {
+      "bytes": 1750,
+      "path": "mutation_inputs/failed_review.json",
+      "sha256": "6236fa3e5aa1ef314a7a4a9b8d1f10de0dbf2bf057cfc560e93f3ac7642fa461"
+    },
+    {
+      "bytes": 1466,
+      "path": "mutation_inputs/missing_capture.json",
+      "sha256": "12b6bcde6b947b0f225a4abd2718a89130d41e3724b672a8bc1947cb9441bbf9"
+    },
+    {
+      "bytes": 288,
+      "path": "mutation_inputs/original_null_state.mutant",
+      "sha256": "c7e2cc8ab0bf149ffd2c128a9ebf2f9e7fcc5551d90a30fe9356a7d687a2d0cf"
+    },
+    {
+      "bytes": 6625,
+      "path": "mutation_inputs/qualification_bytes.mutant",
+      "sha256": "58f6ce2ed2c76bc22dc79653ff50497759863c7632c988a554304c39a842272d"
+    },
+    {
+      "bytes": 1536,
+      "path": "mutation_inputs/recorder.original",
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 126780,
+      "path": "mutation_inputs/second_parent.mutant",
+      "sha256": "9115509dff09dd4be721a0b1e17ec8e53ef01e86d1f24720bc7a9c6938bd6abe"
+    },
+    {
+      "bytes": 8010,
+      "path": "mutation_inputs/source.original",
+      "sha256": "38150996bde1f5e9001c0dd3a4868389b770f23d78c74d97ecb1f3f29ace7034"
+    },
+    {
+      "bytes": 0,
+      "path": "mutation_inputs/stderr.original",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 898,
+      "path": "mutation_inputs/stdout.original",
+      "sha256": "f01b624ea67460da171a37948375b40e1385d1e84ada45fdea5482afcfb6f149"
+    },
+    {
+      "bytes": 1728,
+      "path": "mutation_inputs/time_reversal.json",
+      "sha256": "8f3debe9b93b1fb69ea9746b08650d1aa5f081f4c90f66a6a06535a9f6fcbb04"
+    },
+    {
+      "bytes": 1621,
+      "path": "mutation_inputs/wrong_command.json",
+      "sha256": "ed924108d500806303ce6339defa4e63188d5193212a28d0143d833ed68f9839"
+    },
+    {
+      "bytes": 1750,
+      "path": "mutation_inputs/wrong_launch_hash.json",
+      "sha256": "17e132363541cbf2a1e00b5cf3cca32008fa516286df018636cfaaa2fb24efb1"
+    },
+    {
+      "bytes": 5525,
+      "path": "observe_actual_base.py",
+      "sha256": "b0a759b1aad2bde7b7c45f85bc3b6b4dcf37ed6165591ba8d1973674ce7df3b3"
+    },
+    {
+      "bytes": 1272,
+      "path": "observed_refresh_evidence/1874cbcc7b226bde9f14fbb375a90f52970d8e3d391604b2bbbfc8bddae8ea23",
+      "sha256": "1874cbcc7b226bde9f14fbb375a90f52970d8e3d391604b2bbbfc8bddae8ea23"
+    },
+    {
+      "bytes": 741,
+      "path": "observed_refresh_evidence/1a3ac92679b65d78feed6bc71ab61d93e694187f69e11e6a6ff1b1b3c064b996",
+      "sha256": "1a3ac92679b65d78feed6bc71ab61d93e694187f69e11e6a6ff1b1b3c064b996"
+    },
+    {
+      "bytes": 63,
+      "path": "observed_refresh_evidence/248f4ce304eef6a560285e92b13db4c3f1b2212367c1dc11df65570d76c8fbfe",
+      "sha256": "248f4ce304eef6a560285e92b13db4c3f1b2212367c1dc11df65570d76c8fbfe"
+    },
+    {
+      "bytes": 1496,
+      "path": "observed_refresh_evidence/2b87584bdbbb3202e679c0733c257e5294077286a4bf7462b8510af8ec49ebd7",
+      "sha256": "2b87584bdbbb3202e679c0733c257e5294077286a4bf7462b8510af8ec49ebd7"
+    },
+    {
+      "bytes": 650,
+      "path": "observed_refresh_evidence/3766a8fe78ef601422e600dd00f930bd6c1ddc02529f24a279936bea19430db5",
+      "sha256": "3766a8fe78ef601422e600dd00f930bd6c1ddc02529f24a279936bea19430db5"
+    },
+    {
+      "bytes": 6524,
+      "path": "observed_refresh_evidence/3bc3f255b9e25c197c02bf80e2ddafe241e2bd50ce1a67cf40ccf26a6903941d",
+      "sha256": "3bc3f255b9e25c197c02bf80e2ddafe241e2bd50ce1a67cf40ccf26a6903941d"
+    },
+    {
+      "bytes": 41,
+      "path": "observed_refresh_evidence/451bbf496ac8aa8d4a3f2751c82c43aa6d92f736521de30240bad1a7913660a4",
+      "sha256": "451bbf496ac8aa8d4a3f2751c82c43aa6d92f736521de30240bad1a7913660a4"
+    },
+    {
+      "bytes": 2440,
+      "path": "observed_refresh_evidence/4c7107359b23bec47428755066601535b070cc4e66ae0eb13892ab3dee2fe357",
+      "sha256": "4c7107359b23bec47428755066601535b070cc4e66ae0eb13892ab3dee2fe357"
+    },
+    {
+      "bytes": 1349,
+      "path": "observed_refresh_evidence/58fdecb9d1993d12fea5005e757b666ecee9b10baff4c42163bb6914b0762b95",
+      "sha256": "58fdecb9d1993d12fea5005e757b666ecee9b10baff4c42163bb6914b0762b95"
+    },
+    {
+      "bytes": 1464,
+      "path": "observed_refresh_evidence/6343d5b5c9f374e30cd35f161def8bd69e6a323d297b398052e8fcac4931ca3d",
+      "sha256": "6343d5b5c9f374e30cd35f161def8bd69e6a323d297b398052e8fcac4931ca3d"
+    },
+    {
+      "bytes": 836,
+      "path": "observed_refresh_evidence/64ddc19591031f5c3e2f1202c30b5cb0e56a6b593ce7669fa554850c70d7e2d2",
+      "sha256": "64ddc19591031f5c3e2f1202c30b5cb0e56a6b593ce7669fa554850c70d7e2d2"
+    },
+    {
+      "bytes": 1349,
+      "path": "observed_refresh_evidence/656b90144a9a43ea847da4f7d7b743f8e109cc3a9e8437f7e94f9538a13c2c16",
+      "sha256": "656b90144a9a43ea847da4f7d7b743f8e109cc3a9e8437f7e94f9538a13c2c16"
+    },
+    {
+      "bytes": 5124,
+      "path": "observed_refresh_evidence/692fe44bdfdfdc5b8f3724529b896afc3f3576c28f643833a84855a1d7f5f216",
+      "sha256": "692fe44bdfdfdc5b8f3724529b896afc3f3576c28f643833a84855a1d7f5f216"
+    },
+    {
+      "bytes": 1353,
+      "path": "observed_refresh_evidence/6fba207b1589fe7080615242283c4feb4f6c7b9021d1d40772dfae12858e6c16",
+      "sha256": "6fba207b1589fe7080615242283c4feb4f6c7b9021d1d40772dfae12858e6c16"
+    },
+    {
+      "bytes": 650,
+      "path": "observed_refresh_evidence/72096335c33a2112917ceb2759329cd47fa77e4a0d852d4cc44d3c6eb5caf965",
+      "sha256": "72096335c33a2112917ceb2759329cd47fa77e4a0d852d4cc44d3c6eb5caf965"
+    },
+    {
+      "bytes": 41,
+      "path": "observed_refresh_evidence/762a1ad8b854bca2a59a5557fe56da08718af64fef9f5c6ad92b4e647ec103aa",
+      "sha256": "762a1ad8b854bca2a59a5557fe56da08718af64fef9f5c6ad92b4e647ec103aa"
+    },
+    {
+      "bytes": 650,
+      "path": "observed_refresh_evidence/7ea31fc0e0a3a49e1a771973115d93ef5ca576e28607dce2a44c2320365cc304",
+      "sha256": "7ea31fc0e0a3a49e1a771973115d93ef5ca576e28607dce2a44c2320365cc304"
+    },
+    {
+      "bytes": 794,
+      "path": "observed_refresh_evidence/8aed6ec5b689e009a1d70c5fbf61a431b901cb9de7d0309f737a437e99d0c3e3",
+      "sha256": "8aed6ec5b689e009a1d70c5fbf61a431b901cb9de7d0309f737a437e99d0c3e3"
+    },
+    {
+      "bytes": 5309,
+      "path": "observed_refresh_evidence/91d857fdae12b368cd274e299657361f04774724cad8b78e0ffb1ad2e5b9fdc8",
+      "sha256": "91d857fdae12b368cd274e299657361f04774724cad8b78e0ffb1ad2e5b9fdc8"
+    },
+    {
+      "bytes": 1370,
+      "path": "observed_refresh_evidence/9374c949ae2e8ba782e7889def5235e2f190b09a371cd4960b4d1235a591acfb",
+      "sha256": "9374c949ae2e8ba782e7889def5235e2f190b09a371cd4960b4d1235a591acfb"
+    },
+    {
+      "bytes": 643,
+      "path": "observed_refresh_evidence/9c22ae3bd4dbcf0c359e8cf5980149edcd1facd62085f96361642a993050e954",
+      "sha256": "9c22ae3bd4dbcf0c359e8cf5980149edcd1facd62085f96361642a993050e954"
+    },
+    {
+      "bytes": 364,
+      "path": "observed_refresh_evidence/9db48eed0e2d57d908427232c5e65cb7332bc6b1de02cb2694bdc9ce34be8f63",
+      "sha256": "9db48eed0e2d57d908427232c5e65cb7332bc6b1de02cb2694bdc9ce34be8f63"
+    },
+    {
+      "bytes": 41,
+      "path": "observed_refresh_evidence/a845f91de69f987476ea733f0eaa597ddffe0ed880ea68bfce8f8d4f5a8bc268",
+      "sha256": "a845f91de69f987476ea733f0eaa597ddffe0ed880ea68bfce8f8d4f5a8bc268"
+    },
+    {
+      "bytes": 657,
+      "path": "observed_refresh_evidence/ab687adcc6634e5023c806fec95cf1aba44c101285e391abffb6286f9433f371",
+      "sha256": "ab687adcc6634e5023c806fec95cf1aba44c101285e391abffb6286f9433f371"
+    },
+    {
+      "bytes": 1395,
+      "path": "observed_refresh_evidence/af14e749bcf61d6ce85955da188e253bdef567939c1148e007f5764187f6f992",
+      "sha256": "af14e749bcf61d6ce85955da188e253bdef567939c1148e007f5764187f6f992"
+    },
+    {
+      "bytes": 8806,
+      "path": "observed_refresh_evidence/afd70505d79bf51d792e505aacbf5a8547c8c036c85e2e810b1c23a0bcfd5a36",
+      "sha256": "afd70505d79bf51d792e505aacbf5a8547c8c036c85e2e810b1c23a0bcfd5a36"
+    },
+    {
+      "bytes": 1912,
+      "path": "observed_refresh_evidence/b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 5525,
+      "path": "observed_refresh_evidence/b0a759b1aad2bde7b7c45f85bc3b6b4dcf37ed6165591ba8d1973674ce7df3b3",
+      "sha256": "b0a759b1aad2bde7b7c45f85bc3b6b4dcf37ed6165591ba8d1973674ce7df3b3"
+    },
+    {
+      "bytes": 424,
+      "path": "observed_refresh_evidence/b76b66729510ecf098d8d7b79fbf0c3d05f660b617050dc5a0a2426c06174f3b",
+      "sha256": "b76b66729510ecf098d8d7b79fbf0c3d05f660b617050dc5a0a2426c06174f3b"
+    },
+    {
+      "bytes": 1187,
+      "path": "observed_refresh_evidence/c4e1973c386216bf65c160cc34dc1e9f4a013629e8315d5ad103734a596b0451",
+      "sha256": "c4e1973c386216bf65c160cc34dc1e9f4a013629e8315d5ad103734a596b0451"
+    },
+    {
+      "bytes": 1544,
+      "path": "observed_refresh_evidence/ca2bbc29da7d9433337dba9b944e79d3e93e973e8cccaaddca473f1e8ef6cd60",
+      "sha256": "ca2bbc29da7d9433337dba9b944e79d3e93e973e8cccaaddca473f1e8ef6cd60"
+    },
+    {
+      "bytes": 1342,
+      "path": "observed_refresh_evidence/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "bytes": 285,
+      "path": "observed_refresh_evidence/d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a",
+      "sha256": "d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a"
+    },
+    {
+      "bytes": 41,
+      "path": "observed_refresh_evidence/d73a3251260c7c860df27e45884adcec457377e31229fdbcd40c4f0a51e33b8f",
+      "sha256": "d73a3251260c7c860df27e45884adcec457377e31229fdbcd40c4f0a51e33b8f"
+    },
+    {
+      "bytes": 1696,
+      "path": "observed_refresh_evidence/d95ee83b981098f659d17a85a11c94cdfd5e328956ce2eb009c23be454b29d17",
+      "sha256": "d95ee83b981098f659d17a85a11c94cdfd5e328956ce2eb009c23be454b29d17"
+    },
+    {
+      "bytes": 0,
+      "path": "observed_refresh_evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1357,
+      "path": "observed_refresh_evidence/ef5905a4357ff08be6cc8ae68deecac59bca7c6b3ce044da23275e4e7efa2503",
+      "sha256": "ef5905a4357ff08be6cc8ae68deecac59bca7c6b3ce044da23275e4e7efa2503"
+    },
+    {
+      "bytes": 658,
+      "path": "observed_refresh_evidence/fef7edf3bef062967ed28b19fead3b8ae0e1842fcad81b39a2b84ec0cf07a188",
+      "sha256": "fef7edf3bef062967ed28b19fead3b8ae0e1842fcad81b39a2b84ec0cf07a188"
+    },
+    {
+      "bytes": 2598,
+      "path": "payload/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/BODY_MAP.json",
+      "sha256": "0f39df0305f98d7dd27433e7967bb9ccbe58fc50a4c8d0d6eed2eca8d3ba0f98"
+    },
+    {
+      "bytes": 1356,
+      "path": "payload/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "a2595e26472bddcf315b0b919384227700bc4039e84f752bdf39e625b87b75ae"
+    },
+    {
+      "bytes": 779,
+      "path": "payload/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/PARENT_BINDING.json",
+      "sha256": "b0ee10637f1e7dbfb0b2e5a327f8165b855787024341fe87db13b112512a51be"
+    },
+    {
+      "bytes": 271,
+      "path": "payload/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/PUBLICATION_STATE.json",
+      "sha256": "8dfb111e28888c6d89ea85ac5bb2ccf9a844c4efaf4783d767ec031395663fb1"
+    },
+    {
+      "bytes": 343,
+      "path": "payload/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/README.md",
+      "sha256": "1914c3e0668442fb3f862e7a1a6c78fe100383ddd2c88f634dd5c9a9e4351aff"
+    },
+    {
+      "bytes": 3079,
+      "path": "payload/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/SOURCE_MANIFEST.json",
+      "sha256": "44e790bf2b31a138dc9b5b98e0ed290d9a16226723b76823a7881e676400bc05"
+    },
+    {
+      "bytes": 104822,
+      "path": "payload/docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5"
+    },
+    {
+      "bytes": 90,
+      "path": "prepare_inhomogeneous_comb.py",
+      "sha256": "b2837465467873900c213588aed986b8c8f9eeb97f479f37ea7c6205cb9bdde4"
+    },
+    {
+      "bytes": 12611,
+      "path": "primary_extension.py",
+      "sha256": "2be9b49dfde76f65bf5d8dd343590ca7971430a2c694a12feea9e6f493419b00"
+    },
+    {
+      "bytes": 45991,
+      "path": "proposed_primary_unbound.py",
+      "sha256": "55edd06cc97122445e3da9c842375c8530b45f83b3bdef1914901c7e950f8592"
+    },
+    {
+      "bytes": 90,
+      "path": "publish_inhomogeneous_comb.py",
+      "sha256": "fa3d4791fc264ebc69810a181785db27641065aef4feb0927d901f78dc9715eb"
+    },
+    {
+      "bytes": 1912,
+      "path": "record_metadata.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 678,
+      "path": "reference_evidence/013d03e58eca1cd697f039e8a5d53dc56d122af1130b9e22ee5f9fe89ecb9de4",
+      "sha256": "013d03e58eca1cd697f039e8a5d53dc56d122af1130b9e22ee5f9fe89ecb9de4"
+    },
+    {
+      "bytes": 279,
+      "path": "reference_evidence/030b3febf5498bbc9bdb95cd5b9df2ff67e65507c5c265e582019982f803e8e1",
+      "sha256": "030b3febf5498bbc9bdb95cd5b9df2ff67e65507c5c265e582019982f803e8e1"
+    },
+    {
+      "bytes": 2682,
+      "path": "reference_evidence/05f4fea340542a7d087f11028811bd390feee9d3201b0b077ef83b1c0ff76400",
+      "sha256": "05f4fea340542a7d087f11028811bd390feee9d3201b0b077ef83b1c0ff76400"
+    },
+    {
+      "bytes": 992,
+      "path": "reference_evidence/06b3d831971a500aacb4fc50f0865bff6a263cd7ef1bbf0797ebef580ae4139a",
+      "sha256": "06b3d831971a500aacb4fc50f0865bff6a263cd7ef1bbf0797ebef580ae4139a"
+    },
+    {
+      "bytes": 1713,
+      "path": "reference_evidence/09c88298aebb6aa5ab6fa5a1bd47bb8b93ab209e3494cba95d7697883cb3cd46",
+      "sha256": "09c88298aebb6aa5ab6fa5a1bd47bb8b93ab209e3494cba95d7697883cb3cd46"
+    },
+    {
+      "bytes": 2447,
+      "path": "reference_evidence/0d0f599a64524fd4579c5b429a813c9d5282e14f29fd788caca0f34e7bd109f9",
+      "sha256": "0d0f599a64524fd4579c5b429a813c9d5282e14f29fd788caca0f34e7bd109f9"
+    },
+    {
+      "bytes": 56587,
+      "path": "reference_evidence/0e40a726997a704ce1acb3dcf27836bdd348440c20053f858e557443ed6dabf8",
+      "sha256": "0e40a726997a704ce1acb3dcf27836bdd348440c20053f858e557443ed6dabf8"
+    },
+    {
+      "bytes": 94,
+      "path": "reference_evidence/0f3c9088288e92aa4529e90b73d595e8a71762a90a83a8d6b042a4b44a0e9420",
+      "sha256": "0f3c9088288e92aa4529e90b73d595e8a71762a90a83a8d6b042a4b44a0e9420"
+    },
+    {
+      "bytes": 953,
+      "path": "reference_evidence/123722d65ae6c431491383518104e04fc0afa8588c12ca35fca744f7782eaaf7",
+      "sha256": "123722d65ae6c431491383518104e04fc0afa8588c12ca35fca744f7782eaaf7"
+    },
+    {
+      "bytes": 339,
+      "path": "reference_evidence/169a64730228de2924e03ef8765a77f8835871770f0167ef22ff72969470ba6d",
+      "sha256": "169a64730228de2924e03ef8765a77f8835871770f0167ef22ff72969470ba6d"
+    },
+    {
+      "bytes": 95,
+      "path": "reference_evidence/16da72363401f0fa383ade4203b637604b4e818ec4ab267def80361e275a5c90",
+      "sha256": "16da72363401f0fa383ade4203b637604b4e818ec4ab267def80361e275a5c90"
+    },
+    {
+      "bytes": 1779,
+      "path": "reference_evidence/1c321a634ac8c35bb9e880460acfc4c615076a0e1effa439d01815c52583fac6",
+      "sha256": "1c321a634ac8c35bb9e880460acfc4c615076a0e1effa439d01815c52583fac6"
+    },
+    {
+      "bytes": 95,
+      "path": "reference_evidence/1c48f4ddd85a4e7972d46130a3d555d204272492225c66386a66fe7b0a7c9571",
+      "sha256": "1c48f4ddd85a4e7972d46130a3d555d204272492225c66386a66fe7b0a7c9571"
+    },
+    {
+      "bytes": 956,
+      "path": "reference_evidence/1daf862840e42aedb9ef3b432454b07d6182110e0475dcb589756dfbb5530bca",
+      "sha256": "1daf862840e42aedb9ef3b432454b07d6182110e0475dcb589756dfbb5530bca"
+    },
+    {
+      "bytes": 3427,
+      "path": "reference_evidence/243168f7d1421c1229e25bc53b41272bcc692f027becfe8146efd79001981ea9",
+      "sha256": "243168f7d1421c1229e25bc53b41272bcc692f027becfe8146efd79001981ea9"
+    },
+    {
+      "bytes": 2256,
+      "path": "reference_evidence/262e0ee61c16f0537efd00a8ccc1411ceac2e918032d7545ef42e56446badf31",
+      "sha256": "262e0ee61c16f0537efd00a8ccc1411ceac2e918032d7545ef42e56446badf31"
+    },
+    {
+      "bytes": 2054,
+      "path": "reference_evidence/3288dbf6232d94024a2949524f403c222057927b691aff480cd63bc847ca1dae",
+      "sha256": "3288dbf6232d94024a2949524f403c222057927b691aff480cd63bc847ca1dae"
+    },
+    {
+      "bytes": 958,
+      "path": "reference_evidence/361e33c2f227668ba2a81a55e5228852d8f3af44c01bd9ac930c873a42e308e6",
+      "sha256": "361e33c2f227668ba2a81a55e5228852d8f3af44c01bd9ac930c873a42e308e6"
+    },
+    {
+      "bytes": 8010,
+      "path": "reference_evidence/38150996bde1f5e9001c0dd3a4868389b770f23d78c74d97ecb1f3f29ace7034",
+      "sha256": "38150996bde1f5e9001c0dd3a4868389b770f23d78c74d97ecb1f3f29ace7034"
+    },
+    {
+      "bytes": 1730,
+      "path": "reference_evidence/393d1b6266861ccf931edaf32e56a44b374cd57ebd2b43dd48868b374d2bb5d5",
+      "sha256": "393d1b6266861ccf931edaf32e56a44b374cd57ebd2b43dd48868b374d2bb5d5"
+    },
+    {
+      "bytes": 204,
+      "path": "reference_evidence/3a90c3a3b2d9a6a5ea5ff213768e40e775fbdf7a2ddae39113f17d47529900bb",
+      "sha256": "3a90c3a3b2d9a6a5ea5ff213768e40e775fbdf7a2ddae39113f17d47529900bb"
+    },
+    {
+      "bytes": 1589,
+      "path": "reference_evidence/3abe5c0b5cbf33a422e80d198bfc3ff6d62494317f41652fc6ad8024effc7569",
+      "sha256": "3abe5c0b5cbf33a422e80d198bfc3ff6d62494317f41652fc6ad8024effc7569"
+    },
+    {
+      "bytes": 93,
+      "path": "reference_evidence/3ace074ee38e273ffb1c5b8ee8ccb70dfe0d855bf2f40c7d088dc452ecff9846",
+      "sha256": "3ace074ee38e273ffb1c5b8ee8ccb70dfe0d855bf2f40c7d088dc452ecff9846"
+    },
+    {
+      "bytes": 6524,
+      "path": "reference_evidence/3bc3f255b9e25c197c02bf80e2ddafe241e2bd50ce1a67cf40ccf26a6903941d",
+      "sha256": "3bc3f255b9e25c197c02bf80e2ddafe241e2bd50ce1a67cf40ccf26a6903941d"
+    },
+    {
+      "bytes": 1796,
+      "path": "reference_evidence/3da24ce3e7c2af1db5160917d51e06931493b97f0826d3ea158124430a997e1a",
+      "sha256": "3da24ce3e7c2af1db5160917d51e06931493b97f0826d3ea158124430a997e1a"
+    },
+    {
+      "bytes": 281,
+      "path": "reference_evidence/3e42adc3d5d0f6e5478fe3024d9bd60d0f8beae381e4d82098a6203b67d82bfa",
+      "sha256": "3e42adc3d5d0f6e5478fe3024d9bd60d0f8beae381e4d82098a6203b67d82bfa"
+    },
+    {
+      "bytes": 1003,
+      "path": "reference_evidence/423b6b173f12b0ce8a4e99ef436510ae15bc24169ecff563bc3bae1ad4baa2df",
+      "sha256": "423b6b173f12b0ce8a4e99ef436510ae15bc24169ecff563bc3bae1ad4baa2df"
+    },
+    {
+      "bytes": 112661,
+      "path": "reference_evidence/474a713c2c41eac70ad5bfba4c917ef9f1625e36328657a112a8be08a8ae7c85",
+      "sha256": "474a713c2c41eac70ad5bfba4c917ef9f1625e36328657a112a8be08a8ae7c85"
+    },
+    {
+      "bytes": 1634,
+      "path": "reference_evidence/4cacecd959641e4d5f9bdd9f7bfcd715acf702d9faf3d2eef99ad18836e55dc6",
+      "sha256": "4cacecd959641e4d5f9bdd9f7bfcd715acf702d9faf3d2eef99ad18836e55dc6"
+    },
+    {
+      "bytes": 2081,
+      "path": "reference_evidence/4e23550f95be658181ea4bcd10d963dae004fdf2d18aef583f1148e2b88ea07b",
+      "sha256": "4e23550f95be658181ea4bcd10d963dae004fdf2d18aef583f1148e2b88ea07b"
+    },
+    {
+      "bytes": 3592,
+      "path": "reference_evidence/54d8e2c807e1396669446d76dbef9b6b66f221411f3493fb38f0f12c119b22a7",
+      "sha256": "54d8e2c807e1396669446d76dbef9b6b66f221411f3493fb38f0f12c119b22a7"
+    },
+    {
+      "bytes": 959,
+      "path": "reference_evidence/5a7a2738bc2c0b889a6ffbf5c4880628e56f79028c2a97afe83391e6ea34cad7",
+      "sha256": "5a7a2738bc2c0b889a6ffbf5c4880628e56f79028c2a97afe83391e6ea34cad7"
+    },
+    {
+      "bytes": 4226,
+      "path": "reference_evidence/5baba01ee7a6c7609425e112206de8cb86245ac43eed84d2890abb8e93dbf6ac",
+      "sha256": "5baba01ee7a6c7609425e112206de8cb86245ac43eed84d2890abb8e93dbf6ac"
+    },
+    {
+      "bytes": 392097,
+      "path": "reference_evidence/5cdf9370a0a1ac8921ee009b793082c2c16c15889e5315241c5a62bac1128c7b",
+      "sha256": "5cdf9370a0a1ac8921ee009b793082c2c16c15889e5315241c5a62bac1128c7b"
+    },
+    {
+      "bytes": 1962,
+      "path": "reference_evidence/5d7ae86f84a91abf29be4023ca51e437c34ece263223c2e0e43711e5de1b50a7",
+      "sha256": "5d7ae86f84a91abf29be4023ca51e437c34ece263223c2e0e43711e5de1b50a7"
+    },
+    {
+      "bytes": 94,
+      "path": "reference_evidence/5e9b296c142050a62a7049fac76ae2ad42329728e016287426cb67a9396f516b",
+      "sha256": "5e9b296c142050a62a7049fac76ae2ad42329728e016287426cb67a9396f516b"
+    },
+    {
+      "bytes": 1428,
+      "path": "reference_evidence/5eb02cd9a2f3d8a7d6217fb41f977b21fde44db5cf69c050fe8536fb5adb3fa9",
+      "sha256": "5eb02cd9a2f3d8a7d6217fb41f977b21fde44db5cf69c050fe8536fb5adb3fa9"
+    },
+    {
+      "bytes": 783,
+      "path": "reference_evidence/65b82ac33c9aa783558028c100009ab5d6a6e20e8bc59170f5f80f868a5ee90d",
+      "sha256": "65b82ac33c9aa783558028c100009ab5d6a6e20e8bc59170f5f80f868a5ee90d"
+    },
+    {
+      "bytes": 1734,
+      "path": "reference_evidence/66a45ea872600151cfe10ee32bbfadb360b4beaf6f1bcd2904d89e09f6fdb0cc",
+      "sha256": "66a45ea872600151cfe10ee32bbfadb360b4beaf6f1bcd2904d89e09f6fdb0cc"
+    },
+    {
+      "bytes": 950,
+      "path": "reference_evidence/66ec56ccd21c6dc2381475e65bbf44c1811e9fd44baec575ff3913ed57903036",
+      "sha256": "66ec56ccd21c6dc2381475e65bbf44c1811e9fd44baec575ff3913ed57903036"
+    },
+    {
+      "bytes": 1631,
+      "path": "reference_evidence/66eff18c97cd039d5f0927b942fd1da86fc496d7033c149de25dd02bbfdb1a77",
+      "sha256": "66eff18c97cd039d5f0927b942fd1da86fc496d7033c149de25dd02bbfdb1a77"
+    },
+    {
+      "bytes": 780,
+      "path": "reference_evidence/6b7e05b97e66a5645a2aa8a73e0eb1448dd1ba76ea420e815326a3762aad4fc6",
+      "sha256": "6b7e05b97e66a5645a2aa8a73e0eb1448dd1ba76ea420e815326a3762aad4fc6"
+    },
+    {
+      "bytes": 11160,
+      "path": "reference_evidence/727f458a5492f39be3fa0199f0056373f7faf6572a72d9913e3fc67165b1d507",
+      "sha256": "727f458a5492f39be3fa0199f0056373f7faf6572a72d9913e3fc67165b1d507"
+    },
+    {
+      "bytes": 1283,
+      "path": "reference_evidence/754a7cacc179e354ea7da24f482310a7fdb99cb466a080c74ebda87f8b326c87",
+      "sha256": "754a7cacc179e354ea7da24f482310a7fdb99cb466a080c74ebda87f8b326c87"
+    },
+    {
+      "bytes": 81,
+      "path": "reference_evidence/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971"
+    },
+    {
+      "bytes": 2398,
+      "path": "reference_evidence/761e7e0398c108cb7d4c081e5eb7fa2dc62ab746144582f97c75271cdc36b248",
+      "sha256": "761e7e0398c108cb7d4c081e5eb7fa2dc62ab746144582f97c75271cdc36b248"
+    },
+    {
+      "bytes": 554,
+      "path": "reference_evidence/777ee4ace1b33995ae70c2bf96731cc6c68768745d8f28771afddf65eb8c7fdc",
+      "sha256": "777ee4ace1b33995ae70c2bf96731cc6c68768745d8f28771afddf65eb8c7fdc"
+    },
+    {
+      "bytes": 1624,
+      "path": "reference_evidence/7a63e6140113eb8e2cac51de2231df78d8e168254d2530dfeb15fbbad109b97b",
+      "sha256": "7a63e6140113eb8e2cac51de2231df78d8e168254d2530dfeb15fbbad109b97b"
+    },
+    {
+      "bytes": 2145,
+      "path": "reference_evidence/7afd580a6c91d8b6bd2995d91fbd1a0333f05e2c89c18373eded8a6214ed5a91",
+      "sha256": "7afd580a6c91d8b6bd2995d91fbd1a0333f05e2c89c18373eded8a6214ed5a91"
+    },
+    {
+      "bytes": 549,
+      "path": "reference_evidence/7b8c6e333029437b83fbc0e915e40342baf81038b3f25953dcaf66feb797caa4",
+      "sha256": "7b8c6e333029437b83fbc0e915e40342baf81038b3f25953dcaf66feb797caa4"
+    },
+    {
+      "bytes": 1252,
+      "path": "reference_evidence/7b9151d889074918a57009bcce1b8c441629499517200b355ede6655deba2d6d",
+      "sha256": "7b9151d889074918a57009bcce1b8c441629499517200b355ede6655deba2d6d"
+    },
+    {
+      "bytes": 3382,
+      "path": "reference_evidence/804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1",
+      "sha256": "804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1"
+    },
+    {
+      "bytes": 1722,
+      "path": "reference_evidence/8297ec19579a75f2abfa27b93a563085efecad223e801fdbdab908010edf8fd8",
+      "sha256": "8297ec19579a75f2abfa27b93a563085efecad223e801fdbdab908010edf8fd8"
+    },
+    {
+      "bytes": 994,
+      "path": "reference_evidence/89321f028a7230ff15698e854fd61f543648ebad2671fb39871115395dc2379b",
+      "sha256": "89321f028a7230ff15698e854fd61f543648ebad2671fb39871115395dc2379b"
+    },
+    {
+      "bytes": 1713,
+      "path": "reference_evidence/8fd8dbb3971d7f354217971a141634527d8f23f23c71a441ce81d39185db6752",
+      "sha256": "8fd8dbb3971d7f354217971a141634527d8f23f23c71a441ce81d39185db6752"
+    },
+    {
+      "bytes": 7903,
+      "path": "reference_evidence/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a"
+    },
+    {
+      "bytes": 547,
+      "path": "reference_evidence/967e43fbfa926afc997bef8cdc95208dc83b69673e2069f66ca108e36dc9c6b2",
+      "sha256": "967e43fbfa926afc997bef8cdc95208dc83b69673e2069f66ca108e36dc9c6b2"
+    },
+    {
+      "bytes": 2101,
+      "path": "reference_evidence/9a8748454281f210cb13975806b0c65fa81a150d8707c1047dcaef1425e3c856",
+      "sha256": "9a8748454281f210cb13975806b0c65fa81a150d8707c1047dcaef1425e3c856"
+    },
+    {
+      "bytes": 56255,
+      "path": "reference_evidence/9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527",
+      "sha256": "9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527"
+    },
+    {
+      "bytes": 2883,
+      "path": "reference_evidence/9c1f039b4859779ccd2706aed53f83afc6bd92eb5ba7068023d9139c5e7d7928",
+      "sha256": "9c1f039b4859779ccd2706aed53f83afc6bd92eb5ba7068023d9139c5e7d7928"
+    },
+    {
+      "bytes": 1107,
+      "path": "reference_evidence/9cf1949cd18b7da5a87f9a8c8a96c0eb00f9cf43aa1f0244e4952529229a0d44",
+      "sha256": "9cf1949cd18b7da5a87f9a8c8a96c0eb00f9cf43aa1f0244e4952529229a0d44"
+    },
+    {
+      "bytes": 277,
+      "path": "reference_evidence/a407e2abef03167078857852ef67877be31f1cb1bdf2f4195acb7b26fac9bb4d",
+      "sha256": "a407e2abef03167078857852ef67877be31f1cb1bdf2f4195acb7b26fac9bb4d"
+    },
+    {
+      "bytes": 77,
+      "path": "reference_evidence/ae6fe6a9bd0c365b442772f8192d4ff8ea246663201c46cd720ea6fd90b169c2",
+      "sha256": "ae6fe6a9bd0c365b442772f8192d4ff8ea246663201c46cd720ea6fd90b169c2"
+    },
+    {
+      "bytes": 1536,
+      "path": "reference_evidence/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 2049,
+      "path": "reference_evidence/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    {
+      "bytes": 955,
+      "path": "reference_evidence/b556041b52c689212088445b60842b7af4023b4f33b282a30633b94d4137431d",
+      "sha256": "b556041b52c689212088445b60842b7af4023b4f33b282a30633b94d4137431d"
+    },
+    {
+      "bytes": 2952,
+      "path": "reference_evidence/b60d3d29838c7f199b0fb1140ee809ce2898631a950e67eefc3f65e886accf26",
+      "sha256": "b60d3d29838c7f199b0fb1140ee809ce2898631a950e67eefc3f65e886accf26"
+    },
+    {
+      "bytes": 6453,
+      "path": "reference_evidence/b669b3aefa37769fbed41363188b85cea309462448085e2e04fccbaaae830a19",
+      "sha256": "b669b3aefa37769fbed41363188b85cea309462448085e2e04fccbaaae830a19"
+    },
+    {
+      "bytes": 2276,
+      "path": "reference_evidence/b6e0c1f9455d976b72caf2c3a0045072868ec218cf7e14fe83a335ec27ac7b86",
+      "sha256": "b6e0c1f9455d976b72caf2c3a0045072868ec218cf7e14fe83a335ec27ac7b86"
+    },
+    {
+      "bytes": 93,
+      "path": "reference_evidence/b9eccf3c0b89a1f6cc62919304d6516db39693c5b13ae8da3cc2c3afcb5edf1c",
+      "sha256": "b9eccf3c0b89a1f6cc62919304d6516db39693c5b13ae8da3cc2c3afcb5edf1c"
+    },
+    {
+      "bytes": 2597,
+      "path": "reference_evidence/bc47d93238f8989ff1b4e987a210b8caa879910e88e0005fa76dddf59c7dce1f",
+      "sha256": "bc47d93238f8989ff1b4e987a210b8caa879910e88e0005fa76dddf59c7dce1f"
+    },
+    {
+      "bytes": 783,
+      "path": "reference_evidence/bec98515c0c9a0777b2374e98b75391d1fb912e756f77c789d1bb2b25b6c307b",
+      "sha256": "bec98515c0c9a0777b2374e98b75391d1fb912e756f77c789d1bb2b25b6c307b"
+    },
+    {
+      "bytes": 75657,
+      "path": "reference_evidence/c031f56e16dfbcfded8ed2a68f29a86f68630e11bd73be8e18ffe192ea9d9b65",
+      "sha256": "c031f56e16dfbcfded8ed2a68f29a86f68630e11bd73be8e18ffe192ea9d9b65"
+    },
+    {
+      "bytes": 55286,
+      "path": "reference_evidence/c120c23317220086e0ae6f21381ae0d4c609c234b1b901d95063d4bdebf9b48c",
+      "sha256": "c120c23317220086e0ae6f21381ae0d4c609c234b1b901d95063d4bdebf9b48c"
+    },
+    {
+      "bytes": 95,
+      "path": "reference_evidence/c552626d03877e7aea8ebaad99e7855d7ed5ef1a58efcaef3d698d747ceba6a7",
+      "sha256": "c552626d03877e7aea8ebaad99e7855d7ed5ef1a58efcaef3d698d747ceba6a7"
+    },
+    {
+      "bytes": 510,
+      "path": "reference_evidence/c6339ba33d59471b14f9623916a37f1f0b37bdb482b9fe1f54b405d36ac29b23",
+      "sha256": "c6339ba33d59471b14f9623916a37f1f0b37bdb482b9fe1f54b405d36ac29b23"
+    },
+    {
+      "bytes": 1769,
+      "path": "reference_evidence/cbf1a311af05fc71eefa02cb5981012caa4145f70f4c55bf13d76c361eb0b3c8",
+      "sha256": "cbf1a311af05fc71eefa02cb5981012caa4145f70f4c55bf13d76c361eb0b3c8"
+    },
+    {
+      "bytes": 281,
+      "path": "reference_evidence/cf64065c51c0ee87a90c5d80c6283e11f4f2f1b8060ac23ed15a9759f460b86d",
+      "sha256": "cf64065c51c0ee87a90c5d80c6283e11f4f2f1b8060ac23ed15a9759f460b86d"
+    },
+    {
+      "bytes": 1328,
+      "path": "reference_evidence/cfed81eba8890f05f1d8281562acb2a5a9423f9e1f2c369dd421b521884654f9",
+      "sha256": "cfed81eba8890f05f1d8281562acb2a5a9423f9e1f2c369dd421b521884654f9"
+    },
+    {
+      "bytes": 637,
+      "path": "reference_evidence/d59b758d62480b1de4fdbb3cc6d4d0344e06133ebee17830e8fffaf9f9aa5f6c",
+      "sha256": "d59b758d62480b1de4fdbb3cc6d4d0344e06133ebee17830e8fffaf9f9aa5f6c"
+    },
+    {
+      "bytes": 5299,
+      "path": "reference_evidence/d5e768f04d4864abb5a6c4ceff84fd48f6ff7c47057f10920026a4c7a9c544fd",
+      "sha256": "d5e768f04d4864abb5a6c4ceff84fd48f6ff7c47057f10920026a4c7a9c544fd"
+    },
+    {
+      "bytes": 285,
+      "path": "reference_evidence/d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a",
+      "sha256": "d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a"
+    },
+    {
+      "bytes": 1750,
+      "path": "reference_evidence/d775fe2422c3e18d811bc269380f5563e73fe3ea0ff750b654492561338030eb",
+      "sha256": "d775fe2422c3e18d811bc269380f5563e73fe3ea0ff750b654492561338030eb"
+    },
+    {
+      "bytes": 1215,
+      "path": "reference_evidence/da4c720c16c33c5f7b6dc444fb21cbfd4afe511c8194406e4b63e3e6ded9897d",
+      "sha256": "da4c720c16c33c5f7b6dc444fb21cbfd4afe511c8194406e4b63e3e6ded9897d"
+    },
+    {
+      "bytes": 1492,
+      "path": "reference_evidence/db8b4428c4fabea32e42cde2ebcdfb6579b59a510df32b71751f7237413c7049",
+      "sha256": "db8b4428c4fabea32e42cde2ebcdfb6579b59a510df32b71751f7237413c7049"
+    },
+    {
+      "bytes": 14183,
+      "path": "reference_evidence/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+    },
+    {
+      "bytes": 1030,
+      "path": "reference_evidence/dca9165cb965ee0a43f3d27b88082f4060a1f340346649e9ab18dd8ad3960353",
+      "sha256": "dca9165cb965ee0a43f3d27b88082f4060a1f340346649e9ab18dd8ad3960353"
+    },
+    {
+      "bytes": 1600,
+      "path": "reference_evidence/df8bd6dd8f87540792026dab56ed07c8a77c0b7ec2af1b16c2e821742c6b7b0b",
+      "sha256": "df8bd6dd8f87540792026dab56ed07c8a77c0b7ec2af1b16c2e821742c6b7b0b"
+    },
+    {
+      "bytes": 1715,
+      "path": "reference_evidence/df9af50ad3942849b2997947d634d49c23564d8871bce07f26aa2be891df6541",
+      "sha256": "df9af50ad3942849b2997947d634d49c23564d8871bce07f26aa2be891df6541"
+    },
+    {
+      "bytes": 1719,
+      "path": "reference_evidence/e03d32173078886d77c45ff9235e13cd34fda75cae891ca394948f55629e2949",
+      "sha256": "e03d32173078886d77c45ff9235e13cd34fda75cae891ca394948f55629e2949"
+    },
+    {
+      "bytes": 2278,
+      "path": "reference_evidence/e3aa0fd758f4ec3627aa6939ae2a546429251bfc53480a8f693c3754951f9430",
+      "sha256": "e3aa0fd758f4ec3627aa6939ae2a546429251bfc53480a8f693c3754951f9430"
+    },
+    {
+      "bytes": 0,
+      "path": "reference_evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6826,
+      "path": "reference_evidence/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42",
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "bytes": 2278,
+      "path": "reference_evidence/ed6f50459e93b9332f85098ac90c1bb72f1dfc51f2c45ec5b9e54bcfa83c8af3",
+      "sha256": "ed6f50459e93b9332f85098ac90c1bb72f1dfc51f2c45ec5b9e54bcfa83c8af3"
+    },
+    {
+      "bytes": 1637,
+      "path": "reference_evidence/ef7b3cacb2ed9b469def2a47551abf2ae974d2f5b62cb2e226c6e7f82a8f153c",
+      "sha256": "ef7b3cacb2ed9b469def2a47551abf2ae974d2f5b62cb2e226c6e7f82a8f153c"
+    },
+    {
+      "bytes": 898,
+      "path": "reference_evidence/f01b624ea67460da171a37948375b40e1385d1e84ada45fdea5482afcfb6f149",
+      "sha256": "f01b624ea67460da171a37948375b40e1385d1e84ada45fdea5482afcfb6f149"
+    },
+    {
+      "bytes": 950,
+      "path": "reference_evidence/f283cca36a8454e9acf82d68efed1be074fc10b53fe63c0f1b0df6fcef5a95fe",
+      "sha256": "f283cca36a8454e9acf82d68efed1be074fc10b53fe63c0f1b0df6fcef5a95fe"
+    },
+    {
+      "bytes": 65169,
+      "path": "reference_evidence/f38656fd0e2834d73a86a31606e3285f2c1ac59f5966c9ad1d790e9f5e336702",
+      "sha256": "f38656fd0e2834d73a86a31606e3285f2c1ac59f5966c9ad1d790e9f5e336702"
+    },
+    {
+      "bytes": 534,
+      "path": "reference_evidence/f487af2a794f485ca1d21d5652bf6baae275c964104e807dfe9e7082afc4d9c8",
+      "sha256": "f487af2a794f485ca1d21d5652bf6baae275c964104e807dfe9e7082afc4d9c8"
+    },
+    {
+      "bytes": 510,
+      "path": "reference_receipts/ATTACHMENT_TOOL_RESULT.json",
+      "sha256": "c6339ba33d59471b14f9623916a37f1f0b37bdb482b9fe1f54b405d36ac29b23"
+    },
+    {
+      "bytes": 1428,
+      "path": "reference_receipts/PUBLICATION.json",
+      "sha256": "5eb02cd9a2f3d8a7d6217fb41f977b21fde44db5cf69c050fe8536fb5adb3fa9"
+    },
+    {
+      "bytes": 56255,
+      "path": "reference_sources/common.py",
+      "sha256": "9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527"
+    },
+    {
+      "bytes": 11625,
+      "path": "reference_sources/extension.py",
+      "sha256": "be23940b34926ed5cd1ff6101e34cee1b8173415f2bb4df92cfd3b2c1344e493"
+    },
+    {
+      "bytes": 1688,
+      "path": "reference_sources/pending_delivery/CHECKPOINT.json",
+      "sha256": "52aa958bb90bf9717d70b8420b9b526606cc423c0fc7a1507e6324b45f0eb27a"
+    },
+    {
+      "bytes": 2097,
+      "path": "reference_sources/pending_delivery/DELIVERY_PINS.json",
+      "sha256": "19d79f0f109593d434eb390a80055fee6464bde96d7d518e3fcc28b81229f2d0"
+    },
+    {
+      "bytes": 413,
+      "path": "reference_sources/pending_delivery/README.md",
+      "sha256": "a0ac66470a38dbcb06c45a31a37555659bb5fc573eb13fd7fe3e6ba9b6fa1815"
+    },
+    {
+      "bytes": 4771,
+      "path": "reference_sources/pending_delivery/ROOT_READ_GUIDE.md",
+      "sha256": "538ab216d1f297f1532f2bda95f8fe9d653322870021496cb4a2d6b6ecd157bb"
+    },
+    {
+      "bytes": 56158,
+      "path": "reference_sources/pending_delivery/common_pending_base.py",
+      "sha256": "7402c4d7854571139f6c4b95732780f73828b5274dd361994140dd46555e91c0"
+    },
+    {
+      "bytes": 29217,
+      "path": "reference_sources/source_validator.py",
+      "sha256": "162f6bd35fd24e7e82f1c649cb8fe0848030e122d8fe7b9891719aba9eedfdab"
+    },
+    {
+      "bytes": 28870,
+      "path": "reference_tools/0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "bytes": 24941,
+      "path": "reference_tools/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "bytes": 12227,
+      "path": "reference_tools/4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    },
+    {
+      "bytes": 4889,
+      "path": "reference_tools/516e28fafd6fd752a967b6d491b0c9cb8058b60fb6fc7c849b279b185df87f97.py",
+      "sha256": "516e28fafd6fd752a967b6d491b0c9cb8058b60fb6fc7c849b279b185df87f97"
+    },
+    {
+      "bytes": 7903,
+      "path": "reference_tools/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.py",
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a"
+    },
+    {
+      "bytes": 2049,
+      "path": "reference_tools/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    {
+      "bytes": 14183,
+      "path": "reference_tools/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.py",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+    },
+    {
+      "bytes": 82110,
+      "path": "reference_tools/df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae.py",
+      "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae"
+    },
+    {
+      "bytes": 6826,
+      "path": "reference_tools/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.py",
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "bytes": 82578,
+      "path": "reference_tools/ea80a55574196fcb9b3573b01f2ed51d4893612f0e15b02354d4fcb2d023ca9e.py",
+      "sha256": "ea80a55574196fcb9b3573b01f2ed51d4893612f0e15b02354d4fcb2d023ca9e"
+    },
+    {
+      "bytes": 0,
+      "path": "seal.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "seal.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5173,
+      "path": "seal_proposal.py",
+      "sha256": "645dd0a460eb112cc9f3ad4363f146da050efacc6574f125278ff2ab1bff3e20"
+    },
+    {
+      "bytes": 5173,
+      "path": "seal_source_at_launch.py",
+      "sha256": "645dd0a460eb112cc9f3ad4363f146da050efacc6574f125278ff2ab1bff3e20"
+    },
+    {
+      "bytes": 3838,
+      "path": "validate_binding_guards.py",
+      "sha256": "d69fc5b04a1ea4bd5beaee87821836e2b56b1cf54888fee95cd4a4fea49245ac"
+    },
+    {
+      "bytes": 11397,
+      "path": "validate_proposal.py",
+      "sha256": "7055b79aa2d2214921c71dd641d9282531a4da6730e236ee938365a40c8f34f7"
+    },
+    {
+      "bytes": 89,
+      "path": "verify_inhomogeneous_comb.py",
+      "sha256": "4ad0677d870944d3f607cd83815b775882a65cf9f9c53e060bb14831a93d8d95"
+    },
+    {
+      "bytes": 19468,
+      "path": "write_delivery.py",
+      "sha256": "1d4e369ae32d02f7c050da3996b1526797b9b8b78d9b95470f6937232ae6b16e"
+    }
+  ],
+  "freshness": {
+    "bytes": 5124,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/BINDING_REFS.json",
+    "sha256": "692fe44bdfdfdc5b8f3724529b896afc3f3576c28f643833a84855a1d7f5f216"
+  },
+  "kind": "source_only_integration_proposal",
+  "local_file_count": 376,
+  "retained_audit": false,
+  "scientific_programs_executed": 0,
+  "source_publication_freeze": {
+    "bytes": 50131,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/FREEZE.json",
+    "sha256": "25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e"
+  },
+  "source_review": {
+    "bytes": 3382,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_inhomogeneous_comb_qualified_publication_review/REVIEW.json",
+    "sha256": "804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1"
+  },
+  "utc": "2026-10-16T17:54:33.042055+00:00"
+}

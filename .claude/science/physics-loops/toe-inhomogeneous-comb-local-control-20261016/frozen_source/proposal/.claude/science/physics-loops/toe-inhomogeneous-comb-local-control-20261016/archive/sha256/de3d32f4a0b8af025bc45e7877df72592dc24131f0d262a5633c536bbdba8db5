@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+"""One bounded scientific launch; source, launcher, precheck, argv and streams."""
+import datetime
+import hashlib
+import json
+from pathlib import Path
+import resource
+import shutil
+import subprocess
+import sys
+import time
+
+ROOT = Path(__file__).resolve().parent
+RUN = ROOT / "runs" / "exact_species_word"
+RUN.mkdir(parents=True, exist_ok=False)
+SOURCE = RUN / "SOURCE_AT_LAUNCH.py"
+LAUNCHER = RUN / "LAUNCHER_AT_LAUNCH.py"
+shutil.copyfile(ROOT / "exact_species_word_check.py", SOURCE)
+shutil.copyfile(Path(__file__), LAUNCHER)
+shutil.copyfile(ROOT / "PRECHECK_FINDINGS.md", RUN / "PRECHECK_AT_LAUNCH.md")
+
+
+def ident(path):
+    body = path.read_bytes()
+    return {"path": str(path), "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest()}
+
+
+def limit():
+    resource.setrlimit(resource.RLIMIT_CPU, (60, 60))
+
+
+argv = [sys.executable, "-B", str(SOURCE), "--output", str(RUN / "output")]
+record = {"started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          "source": ident(SOURCE), "launcher": ident(LAUNCHER),
+          "precheck": ident(RUN / "PRECHECK_AT_LAUNCH.md"), "argv": argv, "cwd": str(RUN),
+          "limits": {"cpu_seconds": 60, "wall_seconds": 90, "address_space": None}}
+(RUN / "EXECUTION.json").write_text(json.dumps(record, indent=2) + "\n")
+start = time.monotonic()
+try:
+    result = subprocess.run(argv, cwd=RUN, capture_output=True, timeout=90, preexec_fn=limit)
+    stdout, stderr = result.stdout, result.stderr
+    record["exit_code"] = result.returncode
+except subprocess.TimeoutExpired as exc:
+    stdout, stderr = exc.stdout or b"", exc.stderr or b""
+    record["exit_code"] = None
+    record["failure"] = "wall timeout"
+except Exception as exc:
+    stdout, stderr = b"", repr(exc).encode()
+    record["exit_code"] = None
+    record["failure"] = "launcher exception"
+(RUN / "stdout.txt").write_bytes(stdout)
+(RUN / "stderr.txt").write_bytes(stderr)
+record["elapsed_wall_seconds"] = time.monotonic() - start
+record["finished_utc"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+record["stdout"] = ident(RUN / "stdout.txt")
+record["stderr"] = ident(RUN / "stderr.txt")
+(RUN / "EXECUTION.json").write_text(json.dumps(record, indent=2) + "\n")
+print(json.dumps(record, indent=2), flush=True)
+sys.exit(0 if record["exit_code"] == 0 else 1)

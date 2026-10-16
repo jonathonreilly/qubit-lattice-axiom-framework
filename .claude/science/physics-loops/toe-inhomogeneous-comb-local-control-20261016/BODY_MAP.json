@@ -1,0 +1,65 @@
+{
+  "bodies": [
+    {
+      "name": "comb_original",
+      "source": "inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 30688,
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "start_byte": 10885
+    },
+    {
+      "name": "comb_exposed_review",
+      "source": "inhomogeneous_local_control_root_exposed_check/REVIEW.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 55135,
+      "bytes": 24388,
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e",
+      "start_byte": 30747
+    },
+    {
+      "name": "comb_controlling_qualifications",
+      "source": "inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 61264,
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "start_byte": 55206
+    },
+    {
+      "name": "uniform_original",
+      "source": "inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 73485,
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "start_byte": 61320
+    },
+    {
+      "name": "uniform_exposed_review",
+      "source": "inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 97973,
+      "bytes": 24426,
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c",
+      "start_byte": 73547
+    },
+    {
+      "name": "uniform_controlling_qualifications",
+      "source": "inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 104672,
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780",
+      "start_byte": 98047
+    }
+  ],
+  "trailer": {
+    "path": "CANONICAL_TRAILER.md",
+    "start_byte": 104672,
+    "end_byte_exclusive": 104822,
+    "bytes": 150,
+    "sha256": "baf72fc74ff1ff812261324f92da50a6006d9b3d443071b1dc5c56ef9585fbdb"
+  }
+}

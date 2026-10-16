@@ -1,0 +1,29 @@
+{
+  "start_utc": "2026-10-16T17:50:33.737968+00:00",
+  "argv": [
+    "git",
+    "rev-parse",
+    "HEAD^{tree}"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/metadata_runs/current_base_observation/source_at_launch.py",
+    "bytes": 5525,
+    "sha256": "b0a759b1aad2bde7b7c45f85bc3b6b4dcf37ed6165591ba8d1973674ce7df3b3"
+  },
+  "child_source_at_launch": null,
+  "scope": "Read-only command; no Python child/source launch reconstructed",
+  "end_utc": "2026-10-16T17:50:33.774140+00:00",
+  "elapsed_seconds": 0.036069334018975496,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/tree/stdout",
+    "bytes": 41,
+    "sha256": "d73a3251260c7c860df27e45884adcec457377e31229fdbcd40c4f0a51e33b8f"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_integration_proposal/current_base/commands/tree/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

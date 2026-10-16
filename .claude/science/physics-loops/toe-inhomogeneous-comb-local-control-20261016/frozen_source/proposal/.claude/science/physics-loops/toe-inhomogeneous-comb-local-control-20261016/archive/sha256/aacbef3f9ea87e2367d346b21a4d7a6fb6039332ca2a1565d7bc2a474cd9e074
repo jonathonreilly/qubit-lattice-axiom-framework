@@ -1,0 +1,64 @@
+"""Capture explicit parents and scope screens; metadata only, no science replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+OUT=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate')
+N=OUT.parent
+W=N.parent/'correlation_worktree'
+sha=lambda raw:hashlib.sha256(raw).hexdigest()
+specs=[
+ ('local_control/body.md',N/'local_conserving_control_candidate/DERIVATION.md','c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60','Complete prior source read and reviewed; unchanged identity reused.'),
+ ('local_control/QUALIFIED_ACCEPTANCE.json',N/'local_conserving_control_root_review/QUALIFIED_ACCEPTANCE.json','7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509','Complete current decision read; conditional status only.'),
+ ('local_control/FINAL_QUALIFICATIONS.md',N/'local_conserving_control_root_review/FINAL_QUALIFICATIONS.md','9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305','Complete current controlling qualifications read.'),
+ ('sparse/body.md',N/'local_conserving_sparse_compiler_candidate/DERIVATION.md','6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b','Complete prior source read and reviewed; unchanged proofs reused with new CZ gate count derived separately.'),
+ ('sparse/FREEZE.json',N/'local_conserving_sparse_compiler_candidate/FREEZE.json','1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9','Identity record; its whole member closure is not recopied by this script.'),
+ ('sparse/QUALIFIED_ACCEPTANCE.json',N/'local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json','999446a2','Complete current decision read; exact full SHA captured here.'),
+ ('sparse/FINAL_QUALIFICATIONS.md',N/'local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md','83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e','Complete current controlling qualifications read.'),
+ ('sine_preparation/body.md',N/'local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md','db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826','Complete eight-section mathematical source read in this task; exact q=1 application per rail.'),
+ ('sine_preparation/FINAL_FREEZE.json',N/'local_sine_preparation_root_proposal/FINAL_FREEZE.json','928ca72cfe15b8c716ab18b609725a451b80a8d2bf117f331aafa2c89eb07108','Identity record; no historical scientific run replay or complete archive recapture.'),
+ ('sine_preparation/QUALIFIED_ACCEPTANCE.json',N/'local_sine_preparation_root_review/QUALIFIED_ACCEPTANCE.json','2ddb0c56','Complete current decision read; exact full SHA captured here.'),
+ ('sine_preparation/FINAL_QUALIFICATIONS.md',N/'local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md','0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc','Complete current controlling qualifications read.'),
+ ('prior_exposure/sparse_REVIEW.md',N/'local_conserving_sparse_compiler_exposed_check/REVIEW.md','2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a','Own prior exposed analytical review; identity and coverage reused.'),
+ ('prior_exposure/sparse_FREEZE.json',N/'local_conserving_sparse_compiler_exposed_check/FREEZE.json','54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9','Own prior review identity; no new independent evidence.'),
+ ('scope/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER.md',W/'docs/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md',None,'Scope screen: lines 1-171, complete current wrapper; full reproduced proof and primary papers not imported or revalidated.'),
+ ('scope/INTERACTING_CONTROLLER_HISTORY_APPLICATION.md',W/'docs/INTERACTING_CONTROLLER_HISTORY_APPLICATION_BOUNDED_THEOREM_NOTE_2026-10-14.md',None,'Scope screen: lines 1-77 complete current wrapper. Some following enlarged-source text was exposed, but no complete imported controller proof is used.'),
+]
+instructions=[
+ 'AGENTS.md','docs/ai_methodology/SCIENCE_WORKFLOW.md',
+ 'docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md',
+ 'docs/ai_methodology/skills/physics-loop/SKILL.md',
+ 'docs/ai_methodology/skills/workhorse/SKILL.md',
+ 'docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md',
+ 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md',
+ 'docs/ai_methodology/skills/physics-loop/references/DELIVERY.md',
+ 'docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md',
+ 'docs/audit/data/axiom_premise_nodes.json',
+]
+for rel in instructions:
+ specs.append(('instructions/'+rel,W/rel,None,'Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed.'))
+destroot=OUT/'sources';destroot.mkdir(exist_ok=False)
+rows=[]
+for destname,original,expected,coverage in specs:
+ raw=original.read_bytes();digest=sha(raw)
+ if expected is not None:assert digest.startswith(expected),(str(original),digest,expected)
+ dest=destroot/destname;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(raw)
+ assert raw==original.read_bytes()==dest.read_bytes()
+ rows.append({'original_path':str(original),'capture':str(dest.relative_to(OUT)),'bytes':len(raw),'sha256':digest,'read_coverage':coverage})
+skills=[]
+for name in ['physics-loop','workhorse']:
+ local=Path('/Users/jonreilly/.codex/skills')/name/'SKILL.md'
+ repo=W/'docs/ai_methodology/skills'/name/'SKILL.md'
+ assert local.read_bytes()==repo.read_bytes()
+ skills.append({'skill':name,'installed_matches_local_repository_source':True,'sha256':sha(repo.read_bytes())})
+screens=[]
+for filename,last in [('ONSITE_ENERGY_AUTONOMOUS_CONTROLLER.md',171),('INTERACTING_CONTROLLER_HISTORY_APPLICATION.md',77)]:
+ raw=(destroot/'scope'/filename).read_bytes()
+ text=raw.decode().splitlines(keepends=True)
+ excerpt=''.join(text[:last]);path=OUT/(filename.replace('.md','_SCREEN.txt'))
+ path.write_text(excerpt)
+ screens.append({'full_capture':'sources/scope/'+filename,'screen_capture':path.name,'one_based_lines':[1,last],'screen_sha256':sha(path.read_bytes())})
+manifest={'utc':datetime.now(timezone.utc).isoformat(),'kind':'metadata_only_explicit_source_capture','sources':rows,'skill_identity_checks':skills,'scope_screens':screens,'scientific_programs_executed':0,'concurrent_root_inhomogeneous_source_read':False,'other_new_worker_results_read':False,'scope_limit':'Bounded parent-authorized source task; no Git/main refresh or broad PR/novelty sweep. Exact local source bytes are the identity authority for these screens, not a claimed exhaustive repository result.'}
+(OUT/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print(json.dumps({'captured_sources':len(rows),'scientific_programs_executed':0,'scope_screens':screens,'skill_identity_checks':skills,'exact_parent_acceptance_identities':[row for row in rows if row['capture'].endswith('QUALIFIED_ACCEPTANCE.json')]},indent=2))

@@ -1,0 +1,70 @@
+{
+  "roots": [
+    {
+      "folder": "inhomogeneous_local_control_root_proposal",
+      "key": "members",
+      "members": 2,
+      "sha256": "26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d"
+    },
+    {
+      "folder": "inhomogeneous_local_control_root_exposed_check",
+      "key": "members",
+      "members": 27,
+      "sha256": "13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21"
+    },
+    {
+      "folder": "inhomogeneous_local_control_independent_candidate",
+      "key": "members",
+      "members": 47,
+      "sha256": "7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737"
+    },
+    {
+      "folder": "inhomogeneous_local_control_exposed_comparison",
+      "key": "members",
+      "members": 91,
+      "sha256": "fcacd4867591a1f437a3d8ddd6d12e23ea9fca4359889653b1714966a7e2886b"
+    },
+    {
+      "folder": "inhomogeneous_local_control_root_review",
+      "key": "members",
+      "members": 2,
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05"
+    },
+    {
+      "folder": "inhomogeneous_uniform_word_root_proposal",
+      "key": "members",
+      "members": 2,
+      "sha256": "55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e"
+    },
+    {
+      "folder": "inhomogeneous_uniform_word_exposed_check",
+      "key": "members",
+      "members": 29,
+      "sha256": "36a1ef58262468746a9434c887d32ecbd302a7408696914e64536e5d17804598"
+    },
+    {
+      "folder": "inhomogeneous_uniform_word_root_review",
+      "key": "members",
+      "members": 2,
+      "sha256": "b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1"
+    },
+    {
+      "folder": "local_conserving_sparse_compiler_candidate",
+      "key": "members",
+      "members": 21,
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9"
+    },
+    {
+      "folder": "local_conserving_sparse_compiler_exposed_check",
+      "key": "members",
+      "members": 36,
+      "sha256": "54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9"
+    },
+    {
+      "folder": "local_conserving_sparse_compiler_root_review",
+      "key": "files",
+      "members": 2,
+      "sha256": "d8774291d4919e586499a97faafb0e1579a91f1e2e342b876b9b4557645a750e"
+    }
+  ]
+}

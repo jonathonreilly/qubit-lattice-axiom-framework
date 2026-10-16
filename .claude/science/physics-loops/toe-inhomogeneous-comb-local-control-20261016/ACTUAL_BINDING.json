@@ -1,0 +1,306 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T18:02:20.551350+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5",
+  "git_base": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+  "base_branch": "physics-loop/toe-local-conserving-sparse-current-main-20261016",
+  "source_body_pins": [
+    {
+      "name": "comb_original",
+      "source": "inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 10790,
+      "end_byte_exclusive": 30593,
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2"
+    },
+    {
+      "name": "comb_exposed_review",
+      "source": "inhomogeneous_local_control_root_exposed_check/REVIEW.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 30652,
+      "end_byte_exclusive": 55040,
+      "bytes": 24388,
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e"
+    },
+    {
+      "name": "comb_controlling_qualifications",
+      "source": "inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 55111,
+      "end_byte_exclusive": 61169,
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0"
+    },
+    {
+      "name": "uniform_original",
+      "source": "inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 61225,
+      "end_byte_exclusive": 73390,
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b"
+    },
+    {
+      "name": "uniform_exposed_review",
+      "source": "inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 73452,
+      "end_byte_exclusive": 97878,
+      "bytes": 24426,
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c"
+    },
+    {
+      "name": "uniform_controlling_qualifications",
+      "source": "inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 97952,
+      "end_byte_exclusive": 104577,
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "name": "comb_original",
+      "source": "inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 30688,
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "start_byte": 10885
+    },
+    {
+      "name": "comb_exposed_review",
+      "source": "inhomogeneous_local_control_root_exposed_check/REVIEW.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 55135,
+      "bytes": 24388,
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e",
+      "start_byte": 30747
+    },
+    {
+      "name": "comb_controlling_qualifications",
+      "source": "inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 61264,
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "start_byte": 55206
+    },
+    {
+      "name": "uniform_original",
+      "source": "inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 73485,
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "start_byte": 61320
+    },
+    {
+      "name": "uniform_exposed_review",
+      "source": "inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 97973,
+      "bytes": 24426,
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c",
+      "start_byte": 73547
+    },
+    {
+      "name": "uniform_controlling_qualifications",
+      "source": "inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 104672,
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780",
+      "start_byte": 98047
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [
+      {
+        "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      {
+        "path": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 126779,
+        "sha256": "2f21c5244592af37d48f69a9e7c163fabf1a6372a3ed80cdf70446f3aa892d50"
+      }
+    ],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "scope": "Local preparation and sparse compiler are the only direct mathematical parents; finite-lift and earlier sources are transitive. Separate direct candidate and opportunity screen excluded."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e.json",
+    "bytes": 50131,
+    "sha256": "25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/0b764c7a3424f8389ff5bbcbe6e533db8eb9b03895ea0db9bee0b137a5eb1bbe.json",
+    "bytes": 2490,
+    "sha256": "0b764c7a3424f8389ff5bbcbe6e533db8eb9b03895ea0db9bee0b137a5eb1bbe"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1.md",
+    "bytes": 104577,
+    "sha256": "71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1"
+  },
+  "source_draft_manifest": {
+    "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/713e7b9c909f79dbb0748427be6067bee68f593b4718f16a39239fc480a07fad.json",
+    "bytes": 186563,
+    "sha256": "713e7b9c909f79dbb0748427be6067bee68f593b4718f16a39239fc480a07fad"
+  },
+  "source_draft_state": {
+    "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/99e7085cb95d29f21921e6284b12b490b07e01fba8f03b42d4744f6117ea5d43.json",
+    "bytes": 288,
+    "sha256": "99e7085cb95d29f21921e6284b12b490b07e01fba8f03b42d4744f6117ea5d43"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1.json",
+      "bytes": 3382,
+      "sha256": "804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/9c1f039b4859779ccd2706aed53f83afc6bd92eb5ba7068023d9139c5e7d7928.md",
+      "bytes": 2883,
+      "sha256": "9c1f039b4859779ccd2706aed53f83afc6bd92eb5ba7068023d9139c5e7d7928"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/169a64730228de2924e03ef8765a77f8835871770f0167ef22ff72969470ba6d.json",
+      "bytes": 339,
+      "sha256": "169a64730228de2924e03ef8765a77f8835871770f0167ef22ff72969470ba6d"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/d775fe2422c3e18d811bc269380f5563e73fe3ea0ff750b654492561338030eb.json",
+      "bytes": 1750,
+      "sha256": "d775fe2422c3e18d811bc269380f5563e73fe3ea0ff750b654492561338030eb"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/f01b624ea67460da171a37948375b40e1385d1e84ada45fdea5482afcfb6f149.blob",
+      "bytes": 898,
+      "sha256": "f01b624ea67460da171a37948375b40e1385d1e84ada45fdea5482afcfb6f149"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/38150996bde1f5e9001c0dd3a4868389b770f23d78c74d97ecb1f3f29ace7034.py",
+      "bytes": 8010,
+      "sha256": "38150996bde1f5e9001c0dd3a4868389b770f23d78c74d97ecb1f3f29ace7034"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/51fdc38d9618517e82109cf425951c82b653e4edfa0154d4f69fc569de96041a.json",
+      "bytes": 43619,
+      "sha256": "51fdc38d9618517e82109cf425951c82b653e4edfa0154d4f69fc569de96041a"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/83f83335a635675b2413b14fd71a8da05602027173aa37ebf9403a06efc366d1.json",
+      "bytes": 1763,
+      "sha256": "83f83335a635675b2413b14fd71a8da05602027173aa37ebf9403a06efc366d1"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/182893b9a6c216b33bf4923bb7a308d12e8ec8703769230b8af9164f945ac383.py",
+      "bytes": 8233,
+      "sha256": "182893b9a6c216b33bf4923bb7a308d12e8ec8703769230b8af9164f945ac383"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/da39a69e6dc83d79d3eedcf99822bbaf0383975e2a6fb5cce6984f577f9ca8ab.blob",
+      "bytes": 364,
+      "sha256": "da39a69e6dc83d79d3eedcf99822bbaf0383975e2a6fb5cce6984f577f9ca8ab"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/6319c667e87ca54a3ce4cc6cc65e283934bb49174dbdee9bd1e1c24716584cd5.json",
+    "bytes": 1457,
+    "sha256": "6319c667e87ca54a3ce4cc6cc65e283934bb49174dbdee9bd1e1c24716584cd5"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/cad5e13d4f998afdc9bf037517f34e4beef695a6128b4ca38620d3a2987a57c2.json",
+      "bytes": 1744,
+      "sha256": "cad5e13d4f998afdc9bf037517f34e4beef695a6128b4ca38620d3a2987a57c2"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae.py",
+      "bytes": 56281,
+      "sha256": "b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a.blob",
+      "bytes": 285,
+      "sha256": "d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-local-conserving-sparse-current-main-20261016",
+      "headRefOid": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+      "isDraft": false,
+      "number": 9647,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9647"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/0b764c7a3424f8389ff5bbcbe6e533db8eb9b03895ea0db9bee0b137a5eb1bbe.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/169a64730228de2924e03ef8765a77f8835871770f0167ef22ff72969470ba6d.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/182893b9a6c216b33bf4923bb7a308d12e8ec8703769230b8af9164f945ac383.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/38150996bde1f5e9001c0dd3a4868389b770f23d78c74d97ecb1f3f29ace7034.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/51fdc38d9618517e82109cf425951c82b653e4edfa0154d4f69fc569de96041a.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/6319c667e87ca54a3ce4cc6cc65e283934bb49174dbdee9bd1e1c24716584cd5.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/713e7b9c909f79dbb0748427be6067bee68f593b4718f16a39239fc480a07fad.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1.md",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/83f83335a635675b2413b14fd71a8da05602027173aa37ebf9403a06efc366d1.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/99e7085cb95d29f21921e6284b12b490b07e01fba8f03b42d4744f6117ea5d43.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/9c1f039b4859779ccd2706aed53f83afc6bd92eb5ba7068023d9139c5e7d7928.md",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/a845f91de69f987476ea733f0eaa597ddffe0ed880ea68bfce8f8d4f5a8bc268.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/cad5e13d4f998afdc9bf037517f34e4beef695a6128b4ca38620d3a2987a57c2.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/d775fe2422c3e18d811bc269380f5563e73fe3ea0ff750b654492561338030eb.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/da39a69e6dc83d79d3eedcf99822bbaf0383975e2a6fb5cce6984f577f9ca8ab.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/f01b624ea67460da171a37948375b40e1385d1e84ada45fdea5482afcfb6f149.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/f6e5c80aa44e74788d3cb5507264c935dadec670add64b67d09bc5b2186c7a78.json"
+  ],
+  "origin_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

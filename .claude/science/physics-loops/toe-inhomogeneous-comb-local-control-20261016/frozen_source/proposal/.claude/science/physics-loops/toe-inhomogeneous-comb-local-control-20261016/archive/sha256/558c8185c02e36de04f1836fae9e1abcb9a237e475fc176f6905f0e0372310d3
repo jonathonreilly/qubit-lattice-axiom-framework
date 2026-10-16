@@ -1,0 +1,17 @@
+{
+  "primary_url": "https://arxiv.org/abs/quant-ph/9503016",
+  "arxiv_version": "quant-ph/9503016v1",
+  "title": "Elementary gates for quantum computation",
+  "authors": "Barenco et al.",
+  "journal": "Physical Review A 52 (1995) 3457",
+  "doi": "10.1103/PhysRevA.52.3457",
+  "actual_retrieval": {
+    "tool": "web.run",
+    "request": {"open": [{"ref_id": "https://arxiv.org/abs/quant-ph/9503016"}], "response_length": "short"},
+    "date_utc": "2026-10-16",
+    "record": "Primary abstract and bibliographic page opened during this task; tool result retained in the conversation. This is a coverage record, not a hash of an unretained web page."
+  },
+  "checked_scope": "The primary abstract states exact finite universality of arbitrary one-qubit gates and XOR for finite-qubit unitaries. The review uses this only as an existence corollary; the main theorem takes a supplied finite word.",
+  "not_checked_or_imported": ["Full 31-page proof", "Quantitative arbitrary-matrix decomposition bounds", "Uniform computable-real branch selection", "Physical implementation permissions"],
+  "bai_marvian_parent_usage": "No fresh primary-paper reread; use the exact accepted parent arguments and their recorded necessary-page coverage."
+}

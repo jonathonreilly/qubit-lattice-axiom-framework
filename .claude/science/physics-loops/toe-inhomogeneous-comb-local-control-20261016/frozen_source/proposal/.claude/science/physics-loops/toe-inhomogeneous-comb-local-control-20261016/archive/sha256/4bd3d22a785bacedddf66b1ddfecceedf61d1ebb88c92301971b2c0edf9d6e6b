@@ -1,0 +1,324 @@
+# Positive two-qubit driven control with arbitrary supplied onsite gaps
+
+**Proposed conditional construction; independent review is pending.** For an actual noninteracting old generator
+
+`K=E0 I+sum_(i=1)^q Delta_i n_(S_i)`, with `E0>=0`, `Delta_i>0`,
+
+one can extend the accepted conserving-control architecture to arbitrary supplied gaps, without an equality, rational-independence or common-period test. The proposed extension uses a separate reservoir rail matched to each old gap and positive diagonal number-projector interactions between rails. All exchange and full-SWAP gates remain within one matched rail. The supplied graph below has degree at most three for every q and accuracy.
+
+The new cross-rail interaction permission is explicit: positive `n_u n_v` control on specified edges. It is not inferred from the earlier XY/Z/full-SWAP alphabet at unequal gaps. This is a conditional engineered graph/control result, not a derivation of that physical permission, a native controller, or a cubic-lattice embedding theorem. No framework axiom or primitive is added.
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+source_of_blocker_text: user_goal
+target_blocker_text: "Reduce the equal-gap restriction of the accepted local conserving-control route for an actual noninteracting old generator."
+reachability_to_target: partially_closes
+conditional_surface_status: supplied matched rails, diagonal cross-rail controls, coherent readiness or the separately supplied driven preparation, and calibrated external timing
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## 1. Exact domain, sources and physical premises
+
+Fix a finite integer q>=1, positive supplied gaps Delta_i and E0>=0, a unitary V on the q original physical qubits S, and a passive reference R of arbitrary dimension. The physical computational bases and the identification of K as the actual generator/energy are supplied. Every term of K stays installed with coefficient one throughout. No scalar E0 is removed. For effective compilation, V, E0, Delta_i, hbar and the requested positive control caps are supplied computable data with certified enclosures. The finite-real existence statements also make sense without an algorithmic input representation.
+
+The mathematical parents are the local-control author source `c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60`, controlled by acceptance `7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509` and qualifications `9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305`; the sparse source `6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b`, acceptance `999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda`, qualifications `83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e`; and, only for the optional preparation section, sine-preparation source `db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826`, acceptance `2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399`, qualifications `0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc`. Exact full identities and actual read scopes accompany the packet. Their source acceptance is conditional and not retained audit.
+
+The finite energy-lift/sine-packet core is existing mathematics. The proposed extension here is the matched-rail, cross-control and complete scheduling interface. Prior knowledge of the accepted local-control and sparse arguments is disclosed. This derivation was developed without reading the concurrent root inhomogeneous proposal.
+
+Choose L>=1 and set M=L+2. For each old qubit S_i add M battery qubits B_i with exactly matched free gap Delta_i. Add q-1 routing-port qubits P_(i,j), j!=i, of that same gap. Add one clean phase ancilla A of gap Delta_1. The total sites are
+
+`n=q(M+1)` data sites S+B,
+`m=n+q(q-1)+1=qM+q^2+1` physical sites.
+
+Species i means a label for rail i, not an assertion that its gap differs from every other rail. Equal gaps are allowed and need not be detected or merged. Let N_i count **all** sites of species i, including its old site, battery, ports and A when i=1. The complete free generator is
+
+`F=E0 I+sum_i Delta_i N_i`.
+
+Its old restriction is exactly K. There are no unlisted permanent couplings. The graph, matched new fields, control matrices, independent readiness, phase/time references and isolation are supplied physical conditions.
+
+## 2. An explicit degree-three graph and its permitted gates
+
+For each i, form one path in this order:
+
+`S_i, B_(i,1),...,B_(i,M), P_(i,j) for j!=i in increasing j, A if i=1`.
+
+Its length in sites is `s_i=M+q+1_(i=1)`, so `s_i<=Smax=M+q+1`. For every i<j add the edge `P_(i,j)--P_(j,i)`. A port belongs to only one cross edge. Every path site has degree at most two before this addition, so the graph has maximum degree three, including q=1 where there are no ports. It is connected for q>1. Every old site needs just its stated matched-rail attachment, but access to **each** old site is a premise. This is not a construction from one accessible old port alone.
+
+On each rail edge permit the positive integrated dimensionless generators
+
+`Q_A=(pi/4)(I-R)`, `R=(XX+YY)/2`,
+`Q_SWAP=(pi/2)(I-SWAP)`,
+`Q_CZ=pi n_u n_v`.
+
+On each cross edge permit Q_CZ only. At every site permit
+
+`Q_Z(phi)=|phi|I-phi Z`, `-pi<=phi<=pi`,
+
+and the final positive number-phase generator `lambda n`. All are onsite or two-qubit positive semidefinite operators. Their support is one vertex or one edge of the explicit graph. They are conditional hardware permissions; graph degree does not itself supply them.
+
+Write `A=exp(i pi R/4)`, `Z(phi)=exp(i phi Z)` and `CZ=exp(-i pi n_u n_v)`. The actual positive pulses give
+
+`exp(-iQ_A)=exp(-i pi/4)A`,
+`exp(-iQ_Z)=exp(-i|phi|)Z(phi)`,
+`exp(-iQ_SWAP)=SWAP`, `exp(-iQ_CZ)=CZ`.
+
+Every listed generator commutes with every N_i. For exchange/SWAP this uses the **same** gap label for both endpoints; for CZ and onsite phases it follows from diagonality in all occupations. Thus it also commutes with the actual F, irrespective of irrational relations or coincidences among the Delta_i.
+
+A direct diagnostic distinguishes this from an unjustified unequal-gap SWAP. If u and v belong to two different-gap species, then on |10>, the commutator `[Delta_i n_u+Delta_j n_v,SWAP_uv]` is `(Delta_j-Delta_i)|01>`. The present construction never uses such a SWAP. This is a rejected shortcut, not a global obstruction theorem. Positive static gap leveling was considered as another possible architecture; it would change the commuting free-energy/work interface and is not used here.
+
+The graph is supplied as an interaction graph. No automatic embedding of every edge as a cubic-lattice nearest-neighbor bond is asserted. A later embedding would need its own path subdivision, gap labels, port placement and resource count. This preserves the distinction between a bounded-degree two-qubit graph result and a native lattice result.
+
+## 3. Full finite product lift and the packet estimate
+
+For rail i let `|p_k>_i=|1>^k|0>^(M-k)` on B_i. For every vector charge `a=(a_1,...,a_q)` with `1<=a_i<=M`, use the ordered d=2^q basis
+
+`b_(a,x)=|x_1...x_q>_S tensor product_i |p_(a_i-x_i)>_i`, `x in {0,1}^q`.
+
+All prefix lengths lie in [0,M]. These d states are orthonormal and have the same vector of data-species charges a. Different a give orthogonal blocks. Define U_L(V) as V on every such complete block and identity on the full orthogonal complement, including every nonprefix state and all incomplete sectors. It is a full unitary on 2^n data dimensions, commuting with every data-species number and hence the data part of F. There are exactly `M^q 2^q` selected vectors. This is not a minimal V-dependent changed-column count.
+
+Within a block, if x_i!=y_i then exactly two positions differ in species i: the old bit and one adjacent prefix endpoint. Thus two selected states have Hamming distance `2 h(x,y)<=2q`, with each mismatch pair wholly within one species. This additional structure will supply local synthesis.
+
+Prepare the product resource
+
+`beta=product_i beta_i`,
+`beta_i=sum_(ell=1)^L b_ell |p_ell>_i`,
+`b_ell=sqrt(2/(L+1)) sin(pi ell/(L+1))`,
+
+and vacuum on A and every routing port. Each packet occupies prefixes 1,...,L. For any old input bit x_i, its total data charge a_i is in [1,L+1], inside the selected interval [1,M]. An old transition x→y shifts the i-th prefix by x_i-y_i in {-1,0,1}; all final prefixes remain in [0,L+1], so the finite unitary agrees exactly on this input domain with the bilateral-shift expression used next.
+
+Let S_i denote the bilateral unit shift of the integer prefix label for the purpose of this estimate, not a physical extra register. Extend each packet by zero. Its neighboring overlap is `cos(pi/(L+1))`, so
+
+`d_L=||(S_i-I)beta_i||=2 sin(pi/[2(L+1)])<=pi/(L+1)`.
+
+On this mathematical bilateral space define
+
+`T=sum_x |x><x| tensor product_i S_i^(-x_i)`.
+
+Then the lifted action is `T(V tensor I)T^*`, since it shifts each reservoir by x_i-y_i. The product telescope gives
+
+`||product_i S_i^(x_i) beta-beta||<=sum_i x_i d_L<=q d_L`.
+
+Because the old x sectors are orthogonal, the same bound holds for the controlled shift as an operator on the whole old/reference input isometry. Applying it before and after V yields
+
+`||U_L(V)J_beta-J_beta V||<=2q d_L`.                 (1)
+
+This is uniform with any passive reference. It gives unhalved complete trace error at most `4q d_L<=4pi q/(L+1)`, with all batteries retained. The bilateral lattice has supplied an estimate only; the physical unitary and its identity complement were already finite and fully defined.
+
+## 4. Cross-species controlled exchange from two-qubit gates
+
+This is the new control bridge. Let target sites t0,t1 lie on the same species rail, and let c be any distinct control site, of the same or another species. The logical CZ between c and t0 obeys the full-space identity
+
+`CZ_(c,t0) R_(t0,t1) CZ_(c,t0) = Z_c R_(t0,t1)`.      (2)
+
+Proof: on c=0 it is the identity conjugation; on c=1 it conjugates by Z_t0, which changes both X_t0 and Y_t0 signs. Both zero- and two-excitation target states have R=0. This proves the identity on all eight states and therefore with arbitrary spectator/reference factors. No exchange of a c excitation with the target occurs.
+
+Equivalently, in bit order c,t0,t1 the only nonzero transitions are 001↔010, with coefficient +1, and 101↔110, with coefficient -1 after conjugation. For free energy `Delta_c n_c+Delta_t(n_t0+n_t1)`, the endpoints of each transition have equal energy for every positive Delta_c,Delta_t. This is an exact full-space diagnostic with symbolic gaps. Omitting the final CZ in (3) produces `C_b(theta) CZ` instead of C_b(theta), whose full operator distance is exactly `||CZ-I||=2`; a phase-sensitive comparator distinguishes this error for every theta. This is an analytical negative control, not a claimed executable result.
+
+The accepted variable-exchange construction uses A and onsite Z to realize `E(theta)=exp(i theta R)` in 12 forward-A/onsite letters. It follows from `A D A^*=Y` in the one-excitation space for `D=(Z_t0-Z_t1)/2`, followed by the paired S conjugation. A*=A^7 is paid literally; the paired S scalar factors cancel exactly.
+
+Since R and Z_c R commute,
+
+`C_b(theta)=E(theta/2) CZ E((-1)^b theta/2) CZ`
+`=exp[i theta(1+(-1)^b Z_c)R/2]`.                    (3)
+
+It is E(theta) when c=b and identity otherwise. This consumes at most `2*12+2=26` logical elementary gates in the enlarged alphabet A/Z/CZ. A controlled arbitrary embedded SU(2) uses an X-Y-X Euler decomposition and a paired target S conjugation for the Y rotation, costing at most `3*26+2=80` gates. A controlled iSWAP on c=1 has half rotations A and A*=A^7, so costs 10; its inverse has the same cost.
+
+These counts differ from the accepted sparse parent's 152/34 constants because the additional CZ permission replaces the three-qubit F construction. They must not be silently substituted into that parent's original alphabet. All temporary operations remain number-conserving in each species, including when a control belongs to a different species.
+
+## 5. Complete spectators, arbitrary selected pairs and the phase ancilla
+
+The multiple-control construction is reproduced to make the full-space contract explicit. For any U in SU(2), write `U=cos(theta)I+i sin(theta)v.sigma`. Choose unit w perpendicular to v, set `A0=cos(theta/2)I+i sin(theta/2)v.sigma` and `B0=i w.sigma`. Since conjugation by B0 reverses v.sigma,
+
+`A0 B0 A0^* B0^*=U`.
+
+For U=I or -I use `(I,iX)` or `(iZ,iX)`. Split a specified spectator pattern into two disjoint groups. Applying the corresponding controlled A0, B0, A0*, B0* gives U if both groups match and identity if either fails, because the remaining pair cancels. This proof holds on every spectator basis sector and hence coherently; it introduces no temporary Boolean flag or extra clean ancilla.
+
+With `T(1)=1` and `T(k)=2T(floor(k/2))+2T(ceil(k/2))`, the parity induction from the parent gives `T(k)<=9k^2/8`. A distance-two special gate on N logical qubits, whose two target sites belong to the same species, therefore costs
+
+`B(N)=80T(N-2)<=90(N-2)^2`, `N>=3`.                  (4)
+
+For two selected data states b,b' differing in t<=q species, list within-species mismatch pairs `(l_j,r_j)` where b has 1 at l_j and b' has 1 at r_j. For j=1,...,t-1 use iSWAP on that pair controlled by `l_(j+1)=1`. Equation (3) permits this control even when the next pair is in another species. The product K sends b to `i^(t-1)b_tilde` and fixes b', leaving b_tilde,b' at distance two in the last species. K is a monomial unitary on all states. Conjugate the desired 2-by-2 special matrix by `diag(i^(t-1),1)` to obtain W on this final pair; then `K^* W K` is the desired gate and identity everywhere else. Spectator permutations cancel because W is identity off the image pair. The cost is at most
+
+`B(n)+20(q-1)`.                                       (5)
+
+Now eliminate a d-by-d target V by determinant-one Givens rotations. At most `p=d(d-1)/2` such factors leave `D=diag(1,...,1,det V)`. The familiar pivot matrix is `(1/r)[[conj(a),conj(b)],[-b,a]]`, with an identity choice at r=0 in the finite-real existence proof. Chronologically apply D first, then the adjoints of the eliminations in reverse order. Each selected block therefore costs p special gates plus one residual phase; no phase of V is discarded relative to the complement.
+
+For each vector a choose `b_(a,1...1)`. Its first old bit is one. Clear that bit and excite A, of gap Delta_1. The two resulting `(data,A)` states have the same species-charge vector and differ in two sites of species 1. For `exp(i theta)=det V`, the special diagonal gate
+
+`P_a=exp{i theta(|b_(a,1...1),0><...|-|b'_a,1><...|)}`  (6)
+
+phases exactly the chosen data vector on the entire ancilla-zero input space and returns A to zero. Its ancilla-one action is retained as part of the full unitary, not projected away. It costs B(n+1). The same ancilla can be reused across all `M^q` blocks. Every completed phase gate and every data gate preserves the ancilla-zero subspace; all data inputs, including the complement, are covered.
+
+The exact logical circuit consequently satisfies
+
+`C J_A=J_A U_L(V)`                                    (7)
+
+with phase one. It commutes with every species number on the extended space. It fixes vacuum. Finite-real phase/axis choices in this existence proof are not assumed uniformly computable at zero or branch cuts.
+
+## 6. Physical routing and a finite explicit count
+
+Any logical A or same-species CZ is routed along its rail by full SWAPs, applying the edge gate when the operands are adjacent and undoing the route. This costs at most `2s_i-3`. For a cross-species CZ between sites of species i and j, move each operand along its own rail to its dedicated port P_(i,j) or P_(j,i), apply the cross-edge CZ, and undo both rail permutations. The two rails are disjoint. This costs at most `2(s_i-1+s_j-1)+1<=4Smax-3` gates. It preserves the original ordered operand action and restores every other wire, including all ports. No physical SWAP ever joins different species.
+
+The route is a full-space permutation conjugation, so the ports need not be reset after gates. Logically the resulting circuit is `C tensor I_ports` on the whole physical Hilbert space. Vacuum ports are supplied only as part of the stated readiness and energy comparator, not as expendable flags.
+
+A sufficient logical and routed count, independent of V and the numerical gap values, is
+
+`G0=M^q { p[80T(n-2)+20(q-1)]+80T(n-1) }`,
+`G<=Gbar=(4Smax-3)G0`.                               (8)
+
+These are explicit integers computed from q,L. The count does not infer efficient synthesis from selected dimension alone: there are M^q fixed-dimension blocks, O(n^2) spectator costs per block, and O(Smax) physical routing. More explicitly, for L>=1 use `M<=3L`, `n<=4qL`, and `Smax<=(q+4)L` in (8). One sufficient constant is
+
+`K_q^rail=4(q+4)3^q [1440q^2(p+1)+20p(q-1)]`,
+`Gbar<=K_q^rail L^(q+3)`.                            (8a)
+
+The constant term in (5) was enlarged by L^2 in this estimate. Thus at fixed q the bound is polynomial in L; q itself has exponential and worse constants through d and M^q. No uniform polynomial-in-q claim is made. This extension is not asserted to preserve the equal-gap parent's L^4 power for q>1.
+
+## 7. Terminating finite-error compilation
+
+For computable V and positive rational eta_C, enumerate logical words of length at most G0 in the finite operand alphabet: same-species A, arbitrary CZ routed as above, and onsite Z angles on a finite rational-multiple-of-pi grid. Use spacing at most `eta_C/[8 max(1,G0)]` by choosing a sufficiently large integer grid. The exact finite-real construction has a rounded word with operator error at most eta_C/8 by telescoping onsite factors. The fixed A and CZ values are computable constants. Modulo endpoints ±pi represent the same onsite unitary; no exact branch selection for a supplied real angle is required by the enumeration.
+
+Certify the complete isometry residual `E=CJ_A-J_A U_L(V)`, with no freely fitted phase and no discarded output rows. A complex-rational enclosure Ehat with `||E-Ehat||<=delta` gives a strict certificate whenever
+
+`Tr[(Ehat^*Ehat)^k] < (eta_C-delta)^(2k)`
+
+for rational positive eta_C-delta. The Schatten 2k upper norms converge to the operator norm. Dovetailing finite-word candidates, enclosure refinements and k eventually certifies a word with strict margin. Repeated blocks do not multiply target error: `||U_L(Vhat)-U_L(V)||=||Vhat-V||<=d delta_v` for entrywise error delta_v.
+
+The word can then be routed mechanically with its actual gate count and positive scalar ledger. This proves finite termination under computable-input enclosures. It does not supply an exact-zero compiler, efficient classical runtime, polynomial memory, an emitted target-specific certificate, or an oracle latency bound. Matrix arithmetic may use the full exponentially large physical space. Compile before the unknown old input is entrusted to the schedule, or explicitly price its waiting evolution.
+
+## 8. Literal free evolution, positive pulses and endpoint scalar
+
+Fix positive modeled per-site drive caps g and sigma independent of L, and use `Q_*=6pi`. Choose a fixed slot length
+
+`h>=max(4 hbar Q_*/g, sqrt(4pi hbar Q_*/sigma))`.
+
+Use `f_h(t)=(1-cos(2pi t/h))/h` on [0,h], zero outside, and actual controls `hbar f_h Q`. They are positive, have peak norm at most g/2 and derivative norm at most sigma/2, and both value and first derivative vanish at pulse boundaries. Each serial slot has at most one active edge/onsite term. Q_A, Q_Z, Q_SWAP and Q_CZ have norms at most Q_*; their reserves are retained in the installed Hamiltonian.
+
+Pad the routed circuit to Gbar slots if needed. Append one simultaneous onsite number-phase slot, so
+
+`tau=(Gbar+1)h`                                       (9)
+
+is known before V-dependent angle selection. For each species i put `x_i=Delta_i tau/hbar`, choose rational r_i with `|r_i-x_i/(2pi)|<=1/4`, set `k_i=floor(r_i)+2`, and choose
+
+`lambda_i=2pi k_i-x_i`, `3pi/2<lambda_i<=9pi/2<Q_*`.
+
+Apply `lambda_i n` at **every** site of species i, including ports and A. This is a parallel all-site permission, with full norm growing with m. It uses no common period. All actual nominal controls commute with F, so the full endpoint is
+
+`U_lab(tau)=exp[-i(E0 tau/hbar+Phi)] (C tensor I_ports)`,
+`Phi=(pi/4)N_Agate+sum_emitted_Z |phi|`.               (10)
+
+Indeed each number phase is `exp[-i(x_i+lambda_i)N_i]=I` on the whole physical space. Full SWAP and CZ have exact endpoint scalar one in the logical conventions above. Their positive energy/work is still counted. Lambda n already includes its complete projector; no identity half is deleted or separately double-counted. Phi is computed from the actual emitted word, including wrapping choices.
+
+Equation (10) retains old K during every slot; the prescribed controls physically compensate its endpoint number phases. This is not a replacement of old K by an equal-gap Hamiltonian. After the schedule, subsequent storage under the same actual free F gives old order `exp(-isK/hbar)V` and the corresponding free aging of all resources. There is no permanent halt.
+
+Combining (1), (7) and (10), the ideal ready-input vector comparator is
+
+`gamma [V psi_SR tensor beta_B tensor 0_A,ports]`,
+`gamma=exp[-i(E0 tau/hbar+Phi)]`,
+
+with vector error at most `2q d_L+eta_C`. The reference is retained. The global scalar does not follow from a density-matrix estimate and must remain in later coherent compositions.
+
+## 9. Full-error, phase, timing and load accounting
+
+Let epsilon_p bound the trace distance of the complete actual initial S/B/A/ports/R state from the declared old/reference state tensor the pure resource. This permits actual initial correlations within that distance; marginal readiness alone is insufficient. Let
+
+`eta_H=(1/hbar) integral_0^tau ||H_actual-H_nominal|| dt`.
+
+If endpoint sampling occurs after every pulse is off, put `eta_t=||F|| |delta_t|/hbar`. Complete Duhamel and contraction give
+
+`e_joint<=4q d_L+epsilon_p+2eta_C+2eta_H+2eta_t`.       (11)
+
+No pure apparatus is reinserted after an imperfect stage. Taking L large enough that `4pi q/(L+1)<=epsilon/5`, epsilon_p<=epsilon/5 and each eta<=epsilon/10 gives e_joint<=epsilon. Rational upper enclosures choose L without an exact ceiling oracle. If a sampled time lies inside a pulse, include its control generator in the timing/error integral instead of using the free-only formula.
+
+With fixed pulse supports, suppose each actual pulse is `hbar(1+a_j)f_h Qtilde_j`, with `||Qtilde_j-Q_j||<=delta_Qj` and `||Qtilde_j||<=Q_*`; use the analogous convention for final onsite pulses. Then `(1+a_j)Qtilde_j-Q_j=(Qtilde_j-Q_j)+a_j Qtilde_j`, so a sufficient resolved bound is
+
+`eta_H <= tau b/hbar + sum_serial(delta_Qj+Q_*|a_j|)`
+`                         + sum_sites(delta_lambda_site+Q_*|a_f,site|)`.
+
+Here b is a global static discrepancy, not a change to the literal old K. A species-shared phase error is multiplied by its s_i sites. Sufficient uniform requests are `b<=hbar eta_H_budget/(3tau)`, generator/phase errors `<=eta_H_budget/[3(Gbar+m)]`, and area errors `<=eta_H_budget/[3Q_*(Gbar+m)]`. Divide a global new-field budget among all new fields when bounding them separately. Do not double-count resolved errors inside eta_H.
+
+Computing lambda_i includes `tau delta_Delta_i/hbar`, `Delta_i delta_tau/hbar`, `2|k_i|delta_pi`, unit errors and cross terms. Computing gamma additionally includes E0 tau/hbar and the actual sum of reserve angles. The same quantities must be refined after the actual schedule is fixed. A fixed certified rational h avoids an unnecessary time-description ambiguity. For fixed q and supplied physical constants, (8) gives nominal `tau=O(epsilon^(-(q+3)))`, so sufficient uniform generator/static/area requests scale as `O(epsilon^(q+4))`, individual new-field requests as `O(epsilon^(q+5))`, and post-off time tolerance as `O(epsilon^2)`. Cancellation-sensitive gap/pi evaluation can require `O(epsilon^(2q+7))`. These are sufficient requests derived from the displayed integrals, not necessity results or efficient-oracle guarantees.
+
+If a reported complex scalar gamma_tilde is used in a vector comparator, add `|gamma_tilde-gamma|` to that vector allowance, obtained from the complete E0-time and reserve-phase evaluation. It cancels from the density-matrix comparator (11). Thus phase reporting is not certified solely by a trace residual.
+
+Actual positivity, support, local norm and derivative bounds require independently certified parameter families. A small norm discrepancy alone does not preserve positivity of a generator with a kernel. Arbitrary waveform/start shifts need their own integrals. The parent's optional guarded start-shift method can be used only with guards, recomputed lambda_i using the enlarged time, the additional `(4Q_*/h)(Gbar+m)delta_s` budget, and actual overlap caps; no pulse-area-only timing claim is made here.
+
+If the initial packets instead carry known number phases theta_i, then the equally aged packet comparator has effective target
+
+`D_S V D_S^*`, `D_S=exp[-i sum_i theta_i n_(S_i)]`.
+
+This follows by commuting `D_S tensor D_B` through the species-conserving lift. Comparing this target with V costs at most `2 sum_i |theta_i|` in unhalved trace norm, using centered n_i to remove an irrelevant conjugation scalar. Comparing the packet itself with the real packet is a different interface; a safe pure-state trace allowance is `(L-1)sum_i|theta_i|`, up to its explicit packet global phase in vector comparisons. These alternatives are not two independent intrinsic errors to charge twice. Storage under a persistent field mismatch needs an additional time integral.
+
+Write `Dsum=sum_i Delta_i`, `Delta_max=max_i Delta_i`. The exact free norm and new-resource width are
+
+`||F||=E0+(M+q)Dsum+Delta_1`,
+`W_res=(M+q-1)Dsum+Delta_1`.
+
+Ports and the phase ancilla count even in vacuum. The nominal global installed norm is at most `||F||+m g/2`. Added incident load is at most `Delta_max+g/2`; assigning E0 to one old site gives full incident bound `E0+Delta_max+g/2`. Certified perturbation headroom may use the parent's conservative `Delta_max+2g` (or E0 plus that full bound) under its actual conditions. Constants depend on supplied gaps and g,sigma, not on accuracy. An unbounded family of old gaps cannot have an accuracy- and data-independent full old-energy cap by declaration.
+
+## 10. Actual energy, correlations and work
+
+Nominally `[H(t),N_i]=0` for every i at every runtime time. Thus the full distribution of each N_i and all joint polynomials in them are conserved, and in particular every moment of the fixed free F is conserved. This statement concerns the actual F, not a leveled surrogate. It is stronger than merely matching a reduced source channel.
+
+The ideal initial resource mean and variance are
+
+`mu_res=((L+1)/2) Dsum`,
+`Var(H_res)<=((L-1)^2/4) sum_i Delta_i^2`.
+
+This uses the product preparation and zero ancilla/ports only at initialization. At the output all resource/source/reference correlations are retained. For each species, resource occupation changes by the negative of the old occupation change. Summing weighted by Delta_i gives the exact runtime energy-transfer identity
+
+`Delta <H_res>=-Delta <K>`.
+
+For declared old input rho_S and actual initial marginal rho_0,S, a final old error e_out and initial error epsilon_S0 give
+
+`|actual old energy gain - declared target gain|`
+` <= (Dsum/2)(e_out+epsilon_S0)`, `epsilon_S0<=epsilon_p`. (12)
+
+The initial term may be dropped only with the corresponding exact-old-marginal premise. E0 cancels from this difference but stays in absolute means and vector phase. For a resource trace comparison e, centering its spectrum gives mean error at most W_res e/2 and raw second-moment error at most W_res^2 e/2; `3W_res^2 e` is a conservative variance allowance. Full-generator or reference-valued moments use their own operator weights and actual covariances. Small trace error does not imply fixed moment accuracy as L grows.
+
+With controls zero at the beginning and end and the same actual F at both endpoints, nominal net prescribed-drive work is zero, for any initial state. The absolute work is bounded by the integrated derivative norm,
+
+`integral |Tr rho dot H_c| <= (4hbar/h) sum_pulses ||Q||`
+`                         <= g(Gbar+m)`.
+
+The final parallel slot is summed over m sites. Identity/projector reserves are retained. For nonconserving implementation error the same-F endpoint energy deviation is bounded by the full energy width times eta_H; a changed endpoint observable requires its own additional term. This is an external prescribed-drive functional, not a microscopic finite controller with returned energy outputs.
+
+## 11. Optional explicit preparation and correct composition order
+
+If coherent packet readiness is not supplied, the accepted sine-preparation source can be applied to each rail with its preparation parameter q=1 and the actual gap Delta_i. This requires **additional number-changing onsite and conditional Y controls**, phase-locked in the laboratory frame; those are not supplied by the conserving runtime alphabet. Vacuum readiness on all batteries, ports and A remains supplied.
+
+Use one flip and L-1 conditional rotations on each B_i path, so `G_p=qL` serial rotation slots. The exact positive generators are `2pi I+(pi/2)Y` and `n(2pi I+theta Y)`, with theta in (0,pi/2); every 2pi reserve has exact whole-space unit exponential. Let
+
+`h_p>=max(4hbar Q_*/g, sqrt(8pi hbar Q_*/sigma), 4pi Delta_max/sigma)`.
+
+At absolute time t, conjugate each scheduled Q by `exp(-itF/hbar)` to obtain its laboratory quadrature. Only its target's actual Delta_i rotates that local Y. Positivity and two-qubit support are preserved; differentiating includes the carrier term, bounded by `pi Delta_max/h_p`, as well as the envelope term. The stated h_p prices both and is independent of L. Old K is decoupled from these rotations and evolves for the entire actual preparation interval.
+
+Append one parallel phase slot on all new resource sites, using a separately computed lambda_i^p from `tau_p=(qL+1)h_p`. It cancels resource free phases at that endpoint. Ports and A remain vacuum ideally; their terms and possible imperfect occupation remain in all full norms. The exact preparation isometry is
+
+`U_prep J_vac = J_resource exp(-i tau_p K/hbar)`.
+
+Request the runtime target
+
+`W=V exp(i tau_p K/hbar)`                              (13)
+
+so that W acts **after** the actual preparation aging and `W exp(-i tau_pK/hbar)=V`. The runtime scalar is gamma(W), not an assumed common phase for all programs. All E0 phases are carried by these operators. For an imperfect preparation, propagate the actual state through the runtime; complete trace errors add by contraction, with no fresh purity inserted.
+
+The ideal preparation net drive work is mu_res above. The old energy distribution is unchanged during preparation. A safe absolute preparation bound is `g(G_p+m-q)+(pi/2)Delta_max G_p`; a sharper species sum can replace the last term. Preparation mean/second-moment/variance errors retain W_res weights and complete joint readiness, including ports and A. Rotating-carrier phase/frequency error, reserves, timing and full Hamiltonian discrepancies require the sine-preparation qualification's separate allocations. Actual positivity/slew/support are not inferred from closeness.
+
+Both tau_p and the padded runtime tau can be fixed before choosing W. If the intended comparator instead expressly includes old free aging by the complete returned time T=tau_p+tau, one may request `W=exp(-iTK/hbar)V exp(i tau_pK/hbar)`. Then the same proof returns `exp(-iTK/hbar)V` on the original input, with its full scalar convention. This optional comparator does not erase any physical interval or create a time/target fixed-point equation.
+
+## 12. Scope comparison, remaining review and evidence limits
+
+The current canonical ONSITE_ENERGY_AUTONOMOUS_CONTROLLER wrapper was screened through its supplied-model, geometry, precision, energy and limits sections. It concerns one source qubit with a common gap and an autonomous coherent-fuel/clock construction, with grouped interactions up to four qubits and a finite-range strip. Its higher-level general lessons about literal energy and covariance are consistent with this ledger, but its proof is not imported here as a two-body inhomogeneous compiler.
+
+The INTERACTING_CONTROLLER_HISTORY_APPLICATION wrapper and the relevant enlarged-chain statement were screened. It already permits an engineered inhomogeneous source under the imported interacting-copy autonomous architecture, with its supplied full copies, stationary router, fuel and higher-arity terms. That is broader in old-H scope but different in physical control hypotheses. It does not by its title alone supply this degree-three, two-qubit driven construction. No claim is made that inhomogeneous control in general is new, absent from the repository, or impossible under other architectures. The screened exact bytes and intervals are recorded; the complete imported controller theorems were not revalidated.
+
+The main new proof obligation for independent review is the use of cross-species diagonal phase gates to supply full spectator-controlled same-species SU(2), followed by the product-charge completion, clean-ancilla phase and degree-three route. The formulas above give a proposed proof, not an accepted verdict. The selected control identity (2) is established by the two control sectors on the complete three-qubit space; no new numerical run is necessary to assert that elementary algebra. No target-specific general emitter or physical simulation is supplied.
+
+Remaining supplied physics includes exact old energy identification, matched new onsite fields, all designated graph controls, independent vacuum/coherent readiness or the explicit nonconserving preparation permissions, laboratory phase/timing, calibrated support/strength/slew, isolation and external drive. No cubic-lattice native embedding, autonomous controller/clock/halt, microscopic driver-energy return, interacting old-H extension, single-old-port access, reset or indefinite reuse is claimed. Approximate gap matching is an error-budget problem and does not become exact species conservation by intention.
+
+Source captures and any bookkeeping execution establish identity only. The original derivation is to be frozen before comparison with the concurrent root route. No canonical file, Git state, PR, audit, cache, graph, lock, physical axiom or editable prompt is changed by this bounded proposal.

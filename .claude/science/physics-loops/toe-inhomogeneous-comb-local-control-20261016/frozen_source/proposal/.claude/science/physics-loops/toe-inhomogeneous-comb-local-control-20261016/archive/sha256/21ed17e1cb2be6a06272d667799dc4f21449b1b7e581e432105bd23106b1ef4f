@@ -1,0 +1,44 @@
+{
+  "started_utc": "2026-10-16T15:54:44.131007+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word/SOURCE_AT_LAUNCH.py",
+    "bytes": 9483,
+    "sha256": "e93a5d063169d8987e0b7925f9e2173e1408eb9498e6e114891d2ac2f07f2b2a"
+  },
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word/LAUNCHER_AT_LAUNCH.py",
+    "bytes": 2326,
+    "sha256": "de3d32f4a0b8af025bc45e7877df72592dc24131f0d262a5633c536bbdba8db5"
+  },
+  "precheck": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word/PRECHECK_AT_LAUNCH.md",
+    "bytes": 2691,
+    "sha256": "7dedd72316a121987844e95e6fd960588d648e422e5ce4f9cf46ce57c1a26c9b"
+  },
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word/SOURCE_AT_LAUNCH.py",
+    "--output",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word/output"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word",
+  "limits": {
+    "cpu_seconds": 60,
+    "wall_seconds": 90,
+    "address_space": null
+  },
+  "exit_code": 0,
+  "elapsed_wall_seconds": 1.4265497499145567,
+  "finished_utc": "2026-10-16T15:54:45.558361+00:00",
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word/stdout.txt",
+    "bytes": 2676,
+    "sha256": "d2869083057cb32ed9ee3951b78f9e18ae3baa28202d74ef7b2a89e711fd6c46"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/runs/exact_species_word/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "metadata_only_source_and_actual_execution_binding_check",
+  "utc": "2026-10-16T16:43:30.833577+00:00",
+  "captured_source_count": 11,
+  "new_proposal_freeze_members_verified": 2,
+  "receipt": {
+    "path": "runs/exact_logical_check/EXECUTION.json",
+    "bytes": 2546,
+    "sha256": "eb0e75ee4f6a9ae6c483dd65de227f4fc13dd612e2ff617c194d41579d96e5a2"
+  },
+  "source_launcher_precheck_and_full_stream_bindings_verified": true,
+  "stdout_equals_saved_result": true,
+  "saved_matrix_shapes_and_label_counts_checked": true,
+  "scientific_calculation_replayed_during_seal": false,
+  "source_bodies_unchanged": true
+}

@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+"""Pin exact proposed/parent sources and actual evidence; metadata only."""
+import datetime
+import hashlib
+import json
+from pathlib import Path
+import shutil
+
+ROOT = Path(__file__).resolve().parent
+N = ROOT.parent
+PROPOSAL = N / "inhomogeneous_local_control_root_proposal"
+PINS = {
+    "PROPOSED_LEMMAS.md": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+    "SOURCE_MANIFEST.json": "a8bdc938b7d10cc454740db9e0f2440e92e778e42e700be44fc282bc584c93cb",
+    "FREEZE.json": "26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d",
+}
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def copy(source, dest, expected, coverage):
+    assert source.is_file() and sha(source) == expected, str(source)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(source, dest)
+    assert sha(dest) == expected
+    return {"original_path": str(source), "packet_path": str(dest.relative_to(ROOT)),
+            "bytes": dest.stat().st_size, "sha256": expected, "coverage": coverage}
+
+
+records = []
+for name, checksum in PINS.items():
+    records.append(copy(PROPOSAL / name, ROOT / "sources/root_proposal" / name, checksum,
+                        "Complete root proposal and source metadata read; identity refreshed."))
+parent_manifest = json.loads((PROPOSAL / "SOURCE_MANIFEST.json").read_text())
+for parent in parent_manifest["parents"]:
+    source = Path(parent["path"])
+    assert source.stat().st_size == parent["bytes"]
+    if "local_sine_preparation" in str(source):
+        coverage = "Complete newly necessary argument/qualification read in this review."
+    elif "DERIVATION.md" == source.name:
+        coverage = "Complete argument previously authored/read; unchanged identity verified and relevant accepted interfaces reconstructed here."
+    else:
+        coverage = "Complete controlling decision/qualification read in the immediately preceding task and reused at refreshed exact identity."
+    records.append(copy(source, ROOT / "sources/parents" / source.parent.name / source.name,
+                        parent["sha256"], coverage))
+
+run = ROOT / "runs/exact_species_word"
+receipt = json.loads((run / "EXECUTION.json").read_text())
+assert receipt["exit_code"] == 0
+for key in ("source", "launcher", "precheck", "stdout", "stderr"):
+    item = receipt[key]
+    path = Path(item["path"])
+    assert path.stat().st_size == item["bytes"] and sha(path) == item["sha256"]
+assert sha(ROOT / "exact_species_word_check.py") == receipt["source"]["sha256"]
+assert sha(ROOT / "run_exact_check.py") == receipt["launcher"]["sha256"]
+assert sha(ROOT / "PRECHECK_FINDINGS.md") == receipt["precheck"]["sha256"]
+assert (run / "stderr.txt").stat().st_size == 0
+manifest = {
+    "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "reviewed_source_sha256": PINS["PROPOSED_LEMMAS.md"],
+    "sources": records,
+    "primary_scope_record": "PRIMARY_SCOPE.json",
+    "exposure": "Source-exposed same-model reconstruction; authored accepted parents; sibling candidate unread.",
+    "scientific_executions": 1,
+    "scientific_receipt": "runs/exact_species_word/EXECUTION.json",
+    "failure_history": "No failed scientific launch. Bad SWAP and wrong off-code identity are preserved deliberate negative comparisons.",
+    "independent_acceptance": None, "retained_audit": False, "publication": None,
+    "editable_prompt_files_changed": [],
+}
+(ROOT / "SOURCE_MANIFEST.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+members = []
+for path in sorted(ROOT.rglob("*")):
+    if path.is_file() and path != ROOT / "FREEZE.json":
+        members.append({"path": str(path.relative_to(ROOT)), "bytes": path.stat().st_size,
+                        "sha256": sha(path)})
+freeze = {"kind": "exposed_analytical_review_with_one_exact_finite_discriminator",
+          "frozen_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          "disposition": "qualified_support_with_required_added_static_load_correction",
+          "review_source_exposed": True, "retained_audit": False,
+          "sibling_candidate_read": False, "members": members}
+(ROOT / "FREEZE.json").write_text(json.dumps(freeze, indent=2, sort_keys=True) + "\n")
+for item in members:
+    path = ROOT / item["path"]
+    assert path.stat().st_size == item["bytes"] and sha(path) == item["sha256"]
+print(json.dumps({"member_count": len(members), "review_sha256": sha(ROOT / "REVIEW.md"),
+                  "source_manifest_sha256": sha(ROOT / "SOURCE_MANIFEST.json"),
+                  "freeze_sha256": sha(ROOT / "FREEZE.json"),
+                  "frozen_utc": freeze["frozen_utc"]}, indent=2))

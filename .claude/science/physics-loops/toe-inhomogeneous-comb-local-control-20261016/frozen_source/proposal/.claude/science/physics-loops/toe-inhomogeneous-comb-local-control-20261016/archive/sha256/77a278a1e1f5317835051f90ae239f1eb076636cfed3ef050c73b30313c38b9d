@@ -1,0 +1,21 @@
+# Proposed claim and review map
+
+This compact map is part of the single bounded proposal, not a second research lane or an acceptance record.
+
+| Obligation | Proposed discharge | Status before root review |
+|---|---|---|
+| Keep the actual unequal-gap old K | Every old onsite term and E0 remains in F; controls commute separately with all species numbers | Analytical proposal, DERIVATION §§1–2,8 |
+| Two-qubit graph support with bounded degree | One rail per old site, q-1 dedicated ports per rail, one cross edge per port | Degree-three proof, §2; no cubic embedding claimed |
+| Arbitrary old V with full finite completion | M^q complete product-charge blocks, identity on all other data states | Full-unitary proof, §3 |
+| Uniform old/reference and apparatus output | Controlled bilateral shift comparison on a finite invariant input domain | Vector 2q d_L / trace 4q d_L, §3 |
+| Cross-species controls without unequal-gap exchange | Diagonal CZ conjugates same-species R to Z_c R | Complete 8-state analytical proof, §4; explicit new control premise |
+| Full spectators and phase ancilla | SU(2) commutator recursion, within-species pair transport, ancilla matched to species 1 | §5; no projected output or reset |
+| Routing and finite count | Same-rail full SWAPs; separate rail transport to designated cross ports, complete undo | §6; Gbar bound stated, root check pending |
+| Effective input rather than equality oracle | Finite angle grid and dovetailed strict isometry norm certificates | §7; no efficient classical bound or exact-zero algorithm |
+| Positive bounded strength/slew | Positive supplied matrices and fixed cosine envelopes, all scalar reserves paid | §8; actual calibration separately supplied |
+| Incommensurate free phase | One bounded positive final number-phase coefficient per species, time fixed first | §8; no common-period assumption |
+| Complete actual energy/work | Species-number conservation, full apparatus widths and covariances, initial-plus-final old allowance | §§9–10; same-F endpoint and storage qualifications retained |
+| Explicit optional packet preparation | Accepted q=1 rail preparation repeated, carrier cost uses Delta_max, full joint readiness | §11; stronger number-changing controls/vacuum supplied |
+| Old aging and composition order | W=V exp(i tau_p K/hbar), or explicitly aged target with known padded total T | §11; gamma(W) retained |
+
+The derivation is proposed conditional support. No independent acceptance, retained audit, physical experiment, source-to-native identification or all-architecture no-go is claimed. The matched gap copies, diagonal cross edges and externally timed pulses are antecedents, not conclusions supplied by the parent. The closest existing autonomous notes use different source/control/locality interfaces; their scope screen is not a proof import.

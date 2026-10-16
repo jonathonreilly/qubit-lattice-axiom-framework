@@ -1,0 +1,18 @@
+{
+  "members": [
+    {
+      "bytes": 19803,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2"
+    },
+    {
+      "bytes": 3381,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/SOURCE_MANIFEST.json",
+      "sha256": "a8bdc938b7d10cc454740db9e0f2440e92e778e42e700be44fc282bc584c93cb"
+    }
+  ],
+  "retained_audit": false,
+  "science_executions": 0,
+  "status": "proposed conditional argument, independent check pending",
+  "utc": "2026-10-16T15:45:50.126500+00:00"
+}

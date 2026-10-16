@@ -1,0 +1,50 @@
+from pathlib import Path
+import datetime,hashlib,json
+N=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023')
+R=N/'inhomogeneous_local_control_root_review'
+def pin(p):
+    p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def checkfreeze(name,expected):
+    root=N/name;p=root/'FREEZE.json';assert pin(p)['sha256']==expected
+    j=json.loads(p.read_text());rows=j['members'];seen=set()
+    for row in rows:
+        rel=Path(row['path']);rel=rel.relative_to(root) if rel.is_absolute() else rel
+        assert '..' not in rel.parts and not rel.is_absolute() and str(rel) not in seen
+        seen.add(str(rel));a=pin(root/rel)
+        assert a['bytes']==row['bytes'] and a['sha256']==row['sha256']
+    actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file()}
+    assert actual-seen<= {'FREEZE.json','FREEZE.sha256'}
+    return dict(freeze=pin(p),members=len(rows),exact_member_identity_checked=True)
+inputs=[checkfreeze(name,sha) for name,sha in [
+('inhomogeneous_local_control_root_proposal','26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d'),
+('inhomogeneous_local_control_root_exposed_check','13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21'),
+('inhomogeneous_local_control_independent_candidate','7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737'),
+('inhomogeneous_local_control_exposed_comparison','fcacd4867591a1f437a3d8ddd6d12e23ea9fca4359889653b1714966a7e2886b')]]
+R.mkdir(exist_ok=False)
+text='''# Controlling qualifications: unequal-gap fixed-word comb construction
+
+Qualified conditional analytical support for the root's frozen supplied-word construction. This decision is restricted to its actual graph, alphabet, input and output contracts. It is not retained audit, a universal interacting-H theorem, a microscopic supplier or a publication decision.
+
+Root read the complete proposed argument561e0154, exposed review71be6f79 and comparison23de1a75, including their full load-bearing derivations, scope/coverage and the first review's actual exact-check source, launcher, precheck, receipt and streams. Root also read the complete separately frozen candidate4bd3d22a and reconstructed its key controlled-exchange/routing argument for comparison; this decision does not confer acceptance on that different candidate. Frozen source member identities are checked here. The checks are source-exposed and use the same model. Shared parent proofs are reused at their qualified identities; agreement between reviewers does not multiply their independence.
+
+Required correction: the g/2 quantity in root section4 is a driven-control cap. New static resource/ancilla fields are additions too. The nominal added incident bound must be Delta_max+g/2, with actual support/positivity/strength/slew certificates retained. The stated safe full bound E0+Delta_max+2g remains available. A new site with Delta=g=1 and controls off already disproves an added-static cap g/2. The source is preserved unchanged and this correction controls any use.
+
+Old K_S=E0+sum_i Delta_i n_i is noninteracting in the supplied old basis. The supplied old line with private matched branches is a degree-three comb, with actual full within-species SWAP and the permitted cross-species diagonal CZ. All-site access, exactly matched new gaps, independent readiness, controls and external timing remain premises. Cross-species physical SWAP is neither authorized nor conserving. The encoded word implements V on complete product-charge blocks. Its orthogonal-complement action is the actual word-dependent product, generally not identity. In particular two logical -I letters can give logical V=I while leaving a minus sign on a mixed complete/nonprefix sector; the empty word need not have the same physical extension. No full identity-complement contract from the separate candidate is imported.
+
+The direct packet isometry estimate is 2 sum_i d_i in vector norm and 4 sum_i d_i in unhalved trace norm, independent of the ideal word length. Implementation errors still sum across actual branch letters. The all-input clean-ancilla bound is applied on ideal prefixes with arbitrary other systems as references; the actual correlated ancilla is never reset. Computable matrix/angle enclosures are required for effective compilation. The bound R_CZ+sum_i R_i Gbar_i<=R_CZ+131328 sum_i R_i L_i^4 is a fixed supplied word statement. It alone gives no uniform target-matrix/accuracy-independent R_i. The new separate uniform-word proposal7b3be653 is still unaccepted and not a premise of this decision.
+
+Runtime duration is fixed before computing each species' final phase. All physical species sites, including ancillas, are phase-corrected. Keep the full scalar exp[-i(E0 tau/hbar+Phi)] and actual positive reserves. Supplied Hamiltonian, area, start/stop, numerical cancellation and positivity/slew errors are distinct. Powers epsilon^5/global, epsilon^6/per-new-field, epsilon^9/cancellation and epsilon^2/post-off timing apply only with a fixed word/q/gaps/control parameters and the stated error model; they are requests, not laboratory realizations or classical oracle speeds. A guard changes tau and every final phase.
+
+Preparation uses number-changing controls in addition to runtime permissions, a single absolute carrier time, positive reserves and the whole tau_p for each branch's final battery phase. Nominally U_prep J_vac=J_beta E with E=exp(-i tau_p K_S/hbar), so the correct runtime target is W=V E*. Prepending q one-qubit phases supplies it with R_i+1 and retains gamma(W). Compile before the unknown input, or account for its actual waiting evolution. Numerical compensation pays tau_p delta_K; it does not pay independent physical carrier errors. Sufficient phase/frequency requests epsilon^2/epsilon^3 and complete preparation-to-runtime release errors remain separate. Ancillas are ideally vacuum; omitting their preparation phase gives no stronger equality on occupied inputs.
+
+Nominal runtime conserves every joint species charge and all moments of the same actual F. Same-F endpoints give modeled net work zero; the actuator state is not supplied. Old-energy target comparison needs (sum_i Delta_i/2)(e_out+epsilon_S0). Complete resource moment claims use W_root=sum_i(M_i+1)Delta_i, including ancillas; battery-only claims may use sum_i M_i Delta_i. Covariance and growing weighted-moment errors remain explicit. No fresh purity or unchanged moment accuracy follows from small trace error alone.
+
+One historical q2,L_i1 exact SymPy semantic calculation at sourcee93a5d06 ran successfully once. It checked all nine complete blocks and full256-dimensional charge semantics, the nonidentity off-code action, phases and the invalid unequal-SWAP substitution. Its 484 nonzero entries and SWAP commutator384-256sqrt(2) agree with separate analytical counting. This was not pulse synthesis, a general certifying compiler, an ODE simulation, a useful small-error packet, or independent reexecution. The comparison inspected its source and outputs without replay. No new scientific process was run by this root metadata acceptance.
+
+The separate direct full-matrix proposal retains different q-dependent ports, CZ permissions, identity-complement contract and O(L^(q+3)) count. It is not substituted into the comb proof. Interacting old generators, restricted-port access, microscopic vacuum/coherence/control/clock/readout, autonomous halt and indefinite reuse remain open. Exact original failures and counterexamples are preserved; no axiom or editable prompt is changed.
+'''
+(R/'FINAL_QUALIFICATIONS.md').write_text(text)
+j=dict(kind='root_unequal_gap_fixed_word_qualified_acceptance',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),disposition='QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT_FIXED_SUPPLIED_WORD_ONLY',inputs=inputs,qualifications=pin(R/'FINAL_QUALIFICATIONS.md'),scientific_executions_by_this_review=0,historical_scientific_executions_replayed=0,retained_audit=False,publication=None,uniform_matrix_word_extension_accepted=False,separate_direct_candidate_accepted=False,editable_prompt_files_changed=[])
+(R/'QUALIFIED_ACCEPTANCE.json').write_text(json.dumps(j,indent=2)+'\n')
+(R/'FREEZE.json').write_text(json.dumps(dict(kind='root_unequal_gap_fixed_word_qualification_freeze',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),members=[pin(R/'FINAL_QUALIFICATIONS.md'),pin(R/'QUALIFIED_ACCEPTANCE.json')]),indent=2)+'\n')
+print(json.dumps(dict(acceptance=pin(R/'QUALIFIED_ACCEPTANCE.json'),qualifications=pin(R/'FINAL_QUALIFICATIONS.md'),freeze=pin(R/'FREEZE.json'))))

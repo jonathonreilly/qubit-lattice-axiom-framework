@@ -1,0 +1,22 @@
+{
+  "kind": "read-only pinned-methodology-source comparison",
+  "argv": [
+    "git",
+    "show",
+    "dd16171663343dbdeb21adea70ab5e08b3a3a8df:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "started_utc": "2026-10-16T17:09:48.226859+00:00",
+  "finished_utc": "2026-10-16T17:09:48.242360+00:00",
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_2/stdout",
+    "bytes": 2180,
+    "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_2/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

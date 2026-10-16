@@ -1,6 +1,6 @@
 {
- "edge_count": 16149,
- "node_count": 7194,
+ "edge_count": 16151,
+ "node_count": 7195,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12564,6 +12564,10 @@
   },
   "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03": {
    "deps_hash": "7680adde7def",
+   "out_degree": 2
+  },
+  "inhomogeneous_comb_local_control_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "eeda1c4cc023",
    "out_degree": 2
   },
   "initial_cube_energy_layer_and_exact_band_balance_bounded_theorem_note_2026-09-24": {

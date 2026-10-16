@@ -23,3 +23,7 @@ The single-current-input route and rigid count accumulator have narrow negative 
 ## Sampled coupling support
 
 The new standalone inverse supports the user's request to derive remaining assumptions: selected coupling functions, assigned hidden preparations and chosen continuous poles are unnecessary within its explicit pulse protocol. Actual force/coordinate identification, the passive class and physical scales remain conditions. Trace remains upstream_support, reachability supports; no existing claim is promoted.
+
+## Physical bridge checkpoint 2026-10-16T05:07:48.595187+00:00
+
+Physical actuator calibration and smooth-history compatibility make explicit what observations would be needed. Reachability supports the inverse program conditionally; they do not identify any actual apparatus with scalar gravity or quantum dynamics.

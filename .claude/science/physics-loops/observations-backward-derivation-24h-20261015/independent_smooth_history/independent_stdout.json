@@ -1,0 +1,455 @@
+{
+  "checks": [
+    {
+      "name": "arbitrary_two_mode_preparation",
+      "passed": true
+    },
+    {
+      "name": "crossing_zero_exact_weak_integral",
+      "passed": true
+    },
+    {
+      "name": "crossing_not_blind",
+      "passed": true
+    },
+    {
+      "name": "regular_exact_weak_integral",
+      "passed": true
+    },
+    {
+      "name": "derivative_forcing_alternative",
+      "passed": true
+    },
+    {
+      "name": "derivative_forcing_constraint_violation",
+      "passed": true
+    },
+    {
+      "name": "offset_over",
+      "passed": true
+    },
+    {
+      "name": "offset_critical",
+      "passed": true
+    },
+    {
+      "name": "offset_under",
+      "passed": true
+    },
+    {
+      "name": "offset_undamped",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_0",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_1",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_2",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_3",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_4",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_5",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_6",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_7",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_8",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_9",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_10",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_11",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_12",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_13",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_14",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_15",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_16",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_17",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_18",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_19",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_20",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_21",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_22",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_23",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_24",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_25",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_26",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_27",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_28",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_29",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_30",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_31",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_32",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_33",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_34",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_35",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_36",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_37",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_38",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_39",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_40",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_41",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_42",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_43",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_44",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_45",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_46",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_47",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_48",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_49",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_50",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_51",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_52",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_53",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_54",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_55",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_56",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_57",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_58",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_59",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_60",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_61",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_62",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_63",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_64",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_65",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_66",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_67",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_68",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_69",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_70",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_71",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_72",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_73",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_74",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_75",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_76",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_77",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_78",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_79",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_80",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_81",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_82",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_83",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_84",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_85",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_86",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_87",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_88",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_89",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_90",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_91",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_92",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_93",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_94",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_95",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_96",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_97",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_98",
+      "passed": true
+    },
+    {
+      "name": "offset_error_corners_99",
+      "passed": true
+    },
+    {
+      "name": "quotient_signed_-1",
+      "passed": true
+    },
+    {
+      "name": "quotient_signed_1",
+      "passed": true
+    }
+  ],
+  "passed": 112,
+  "failed": 0,
+  "empirical_validation": false
+}

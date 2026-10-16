@@ -1,0 +1,45 @@
+{
+  "time": "2026-10-16T05:07:48.595187+00:00",
+  "author": "/root personally",
+  "scope": "physical force/coordinate calibration and smooth-history compatibility; exploratory supporting calculations",
+  "physical_port": {
+    "primary_controls": 28,
+    "independent_assertions": 137,
+    "frozen_sources": {
+      "PHYSICAL_PORT_BRIDGE_v1.md": "17f694e8770bd22190dc9d3e5a589b1dfd37f12f9341369801be8c167e6e815a",
+      "PHYSICAL_PORT_INTAKE_v1.json": "0db561698358d8f5248f58e87807d34838f0968f0e3f83b7bc4ac9e3a05b3d7e",
+      "check_physical_port_bridge_v1.py": "6043347258b23d987b4bbce3dfbc6aee8347cf9df1666c000c34cc4e5486a9c8",
+      "PHYSICAL_PORT_CONTROLS_v1.json": "30fe2cbe48eae60a1ed441ad144c4a89679158010653eb0e9fa5087da4fe1a9a"
+    }
+  },
+  "smooth_history": {
+    "primary_controls": 24,
+    "independent_assertions": 112,
+    "frozen_sources": {
+      "SMOOTH_HISTORY_BRIDGE_v1.md": "cd443c52c1fe9a5cb9ccd7d517bd689a969b839fdb0a942272449ea9deaefcd5",
+      "check_smooth_history_bridge_v1.py": "570e2af0084a638cb0cd46facef78d30243a4a232f8f49bb3297c028978e6cab",
+      "SMOOTH_HISTORY_CONTROLS_v1.json": "a1dd8ed6d554f17e02ba308ca13a4e6168265ae47c166e1fdfea93dda6c73159"
+    }
+  },
+  "root_read_complete_independent_proof_code_results": true,
+  "independent_artifact_bindings_verified": 9,
+  "empirical_validation": false,
+  "source_intake": "PHYSICAL_PORT_INTAKE_v1.json",
+  "new_measured_dataset_accessed": false,
+  "independent_test_data": "none; synthetic reserved histories only",
+  "prior_art": "standard coenergy calibration and weak identification; no broad novelty claim",
+  "operational_failures": [
+    "Python default TLS CA error recovered with certificate-verifying system curl",
+    "web screenshot returned no image pixels; no visual inspection claimed",
+    "checkpoint read expected results.json but actual smooth checker output is independent_stdout.json; recovered by reading actual file"
+  ],
+  "remaining_imports": [
+    "physical actuator coenergy and calibration",
+    "known moving-load correction",
+    "one passive hidden mode and smooth couplings",
+    "continuum coordinate/force/time and derivative-error certificates",
+    "actual field or gravity identification",
+    "absolute scale"
+  ],
+  "next_route": "Test an environment-dependent quadratic hidden-mode action via force-ringdown/linear-response pole identities; provisional derivation not yet checked."
+}

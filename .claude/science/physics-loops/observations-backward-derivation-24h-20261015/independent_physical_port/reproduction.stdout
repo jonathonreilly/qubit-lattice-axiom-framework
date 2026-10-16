@@ -1,0 +1,204 @@
+{
+  "source_note": "PHYSICAL_PORT_BRIDGE_v1.md",
+  "source_sha256": "17f694e8770bd22190dc9d3e5a589b1dfd37f12f9341369801be8c167e6e815a",
+  "runner_sha256": "6043347258b23d987b4bbce3dfbc6aee8347cf9df1666c000c34cc4e5486a9c8",
+  "claims": "Author symbolic/numeric controls; standard calibration physics remains adopted. Published design arithmetic is not observed performance.",
+  "empirical_validation": false,
+  "checks": [
+    {
+      "name": "coenergy_force_in_flux_coordinate",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "coenergy_flux_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "mixed_derivative_reciprocity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_bias_work_from_flux_differences",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "flux_origin_and_current_only_offset_cancel",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "linear_inductance_even_force_term",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "nonlinear_odd_force_not_removed_by_current_reversal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "true_reciprocal_after_coordinate_change",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "naive_sensor_relabel_false_pass",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "proper_transform_rejects_false_pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "naive_sensor_relabel_false_rejection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_gain_product_sets_reciprocity_factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "motion_voltage_integral_0.2",
+      "passed": true,
+      "detail": {
+        "value": 0.4210276720000001,
+        "reference": 0.42102767200000013,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "motion_voltage_integral_0.9",
+      "passed": true,
+      "detail": {
+        "value": 5.779406061000001,
+        "reference": 5.779406061000002,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "voltage_offset_accumulation",
+      "passed": true,
+      "detail": {
+        "value": 0.0039000000000000003,
+        "reference": 0.0039000000000000003,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "corrected_port_restores_six_sample_inverse",
+      "passed": true,
+      "detail": {
+        "maximum_absolute_error": 6.661338147750939e-16
+      }
+    },
+    {
+      "name": "uncorrected_current_biases_same_inverse",
+      "passed": true,
+      "detail": {
+        "errors": [
+          0.0005862094593786851,
+          0.00133542631268746,
+          0.0015752130059965008
+        ]
+      }
+    },
+    {
+      "name": "six_sample_error_weight_bound",
+      "passed": true,
+      "detail": {
+        "weight_l1": 12.974133911292425
+      }
+    },
+    {
+      "name": "complex_force_interval_bound_600_draws",
+      "passed": true,
+      "detail": {
+        "max_error_over_bound": 0.7099829145976417
+      }
+    },
+    {
+      "name": "zero_velocity_guard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "published_design_impedance_budget_arithmetic",
+      "passed": true,
+      "detail": {
+        "value": 0.004,
+        "reference": 0.004,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "published_design_uncorrected_drift_arithmetic",
+      "passed": true,
+      "detail": {
+        "value": 0.08,
+        "reference": 0.08,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "passive_green_energy_and_time_envelope",
+      "passed": true,
+      "detail": {
+        "maximum_energy": 0.500000000000195
+      }
+    },
+    {
+      "name": "ideal_full_period_pulse_endpoint_zero",
+      "passed": true,
+      "detail": {
+        "value": -2.686787239326555e-18,
+        "reference": 0.0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "symmetric_ramp_can_share_zero_endpoint",
+      "passed": true,
+      "detail": {
+        "value": 3.469446951953614e-18,
+        "reference": 0.0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "asymmetric_ramp_endpoint_exact",
+      "passed": true,
+      "detail": {
+        "value": 0.009204528693984703,
+        "reference": 0.009204528693984696,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "asymmetric_ramp_breaks_ideal_endpoint",
+      "passed": true,
+      "detail": {
+        "actual_endpoint_integral": 0.009204528693984703
+      }
+    },
+    {
+      "name": "edge_error_envelope",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.009204528693984707,
+        "bound": 0.25
+      }
+    }
+  ],
+  "summary": {
+    "passed": 28,
+    "failed": 0
+  }
+}

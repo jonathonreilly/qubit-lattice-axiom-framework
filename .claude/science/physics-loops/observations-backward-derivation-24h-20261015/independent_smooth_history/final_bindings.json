@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "SMOOTH_HISTORY_BRIDGE_v1.md": "cd443c52c1fe9a5cb9ccd7d517bd689a969b839fdb0a942272449ea9deaefcd5",
+    "check_smooth_history_bridge_v1.py": "570e2af0084a638cb0cd46facef78d30243a4a232f8f49bb3297c028978e6cab",
+    "SMOOTH_HISTORY_CONTROLS_v1.json": "a1dd8ed6d554f17e02ba308ca13a4e6168265ae47c166e1fdfea93dda6c73159"
+  },
+  "unchanged": true,
+  "independent_artifacts": {
+    "check.py": "990cb9df22160379a4ffe327576ce13621b437b6c4e6f3aeaa981afad3b9bdcc",
+    "execution_receipts.json": "c080da35ea1dbc301ae06914e8678aadff79fc1208890b123aa5cb752ee3f469",
+    "frozen_sources.json": "c36918917e80f88eecddc12d7d9e436218a3e0b4a2825965ee702d9c677547f9",
+    "independent_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparison.json": "8076cfcdb5991654060feaa10f5783e54f94bb59715f76c120462c6b37570e45",
+    "author_stdout.json": "a1dd8ed6d554f17e02ba308ca13a4e6168265ae47c166e1fdfea93dda6c73159",
+    "independent_stdout.json": "2342b706f78eb1d1ebff30688e6b3dc4774684a5eb680b0d5c98549b9096a0d3",
+    "derivation_before_code.md": "4012be47dd529ab0f5c4e0e5f86552fa028bc731884e2c57105115ee43bac937",
+    "author_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

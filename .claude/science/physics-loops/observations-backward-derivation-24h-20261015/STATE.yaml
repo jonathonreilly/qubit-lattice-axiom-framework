@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "sampled coupling milestone published; physical observation bridge next",
+  "phase": "physical bridge checked; common-action resonance probe active",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T04:41:10.591852+00:00",
+  "updated_at": "2026-10-16T05:07:48.595187+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -13,12 +13,12 @@
   "main_at_launch": "bbada1fe09b2d10d610560864d86b68c24a59713",
   "delivery": "milestone",
   "checkpoint_minutes": 30,
-  "block": "clamped pulse coupling reconstruction",
-  "route": "same-run baseline continuation -> finite pulse inverse -> reciprocal-interaction test",
+  "block": "physical observation bridge",
+  "route": "calibrated port -> smooth histories -> common-action cross-environment test",
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Personally establish a physical source/coordinate/time and force-readout bridge for the sampled common-coupling test; freeze calibration/model-development/reserved histories and model-error budget before opening candidate test data. Begin from NEXT_OBSERVATION_CONTRACT_v1.md; do not identify an apparatus oscillator with quantum or gravity dynamics by analogy.",
+  "next_action": "Personally derive and test whether environment-dependent resonance, linear-response residues and nonlinear clamped ringdown obey a common-action relation without supplying hidden mass, coupling or initial amplitude. This is provisional; preserve reciprocal kinetic/damping cross terms, variable inertia and physical readout assumptions. Compare classical Hellmann-Feynman/optomechanical prior art before any novelty claim.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -118,12 +118,12 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T04:41:10.591852+00:00",
+      "time": "2026-10-16T04:44:00+00:00",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
       "open_pr_count": 64,
-      "inventory_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0440.json",
-      "inventory_sha256": "d0092679ff1840e20b0bb0ca95b56ff130553476d630ff1f06b5a5a19135befd",
-      "scope": "Full compact metadata inventory; PR9633 declared interface, body and first90note lines read at its frozen head. No new proof imported. PR9634 exact head/base/state and body verified. Not a complete independent review of all open PR science.",
+      "inventory_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0444.json",
+      "inventory_sha256": "d202854f74f65fbf4c982018606a1f1b634b624a7be4cd501fc049682a9c778b",
+      "scope": "64 open-PR metadata heads compared with04:40inventory; unchanged. main and execution fetched; no other author work modified.",
       "new_background_pr": {
         "number": 9633,
         "head": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
@@ -149,18 +149,11 @@
   ],
   "milestone_status": "PR9628,PR9632,PR9634 published and attached; exact sources preserved. Shared integrated landing gates pending; no merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T04:41:10.591852+00:00",
+    "time": "2026-10-16T05:07:48.595187+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Two personally derived coupling inverses, complete focused checks and standalone PR9634; preparation/scale/physical-model caveats retained.",
-    "deadline_unchanged": true,
-    "failures_preserved": [
-      "v1 sampled p-sensitivity omitted s*F2; v2 corrected",
-      "canonical symbolic ordering exception",
-      "canonical expected derivative corrected from zero to minus one-half",
-      "cache identity changed when bytecode directory appeared; stable rerun with bytecode disabled",
-      "historical cache terminal blank line; lossless gzip packaging after independent byte verification"
-    ]
+    "checkpoint_scope": "Root personally derived physical-port calibration and smooth-history tests.28/24 primary controls and137/112 focused assertions passed respectively; these counts overlap in purpose and are not pooled. Complete independent proofs/code/results read and all7 frozen source bindings plus9 smooth-check artifact bindings verified. Sources distinguish NIST target performance from achieved measurements and preserve finite-edge, inertia, impedance, clamped-versus-moving and calibration-transfer limits. No physical candidate data or empirical holdout was opened. Standard calibration/weak-identification support remains commits-only; no new PR or retained claim is warranted by these calculations alone.",
+    "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
     "checked_at": "2026-10-16T04:41:10.591852+00:00",
@@ -509,5 +502,50 @@
       "a fixed quadratic coupling function",
       "continuous-frequency alias choice"
     ]
+  },
+  "physical_bridge_checkpoint": {
+    "time": "2026-10-16T05:07:48.595187+00:00",
+    "author": "/root personally",
+    "scope": "physical force/coordinate calibration and smooth-history compatibility; exploratory supporting calculations",
+    "physical_port": {
+      "primary_controls": 28,
+      "independent_assertions": 137,
+      "frozen_sources": {
+        "PHYSICAL_PORT_BRIDGE_v1.md": "17f694e8770bd22190dc9d3e5a589b1dfd37f12f9341369801be8c167e6e815a",
+        "PHYSICAL_PORT_INTAKE_v1.json": "0db561698358d8f5248f58e87807d34838f0968f0e3f83b7bc4ac9e3a05b3d7e",
+        "check_physical_port_bridge_v1.py": "6043347258b23d987b4bbce3dfbc6aee8347cf9df1666c000c34cc4e5486a9c8",
+        "PHYSICAL_PORT_CONTROLS_v1.json": "30fe2cbe48eae60a1ed441ad144c4a89679158010653eb0e9fa5087da4fe1a9a"
+      }
+    },
+    "smooth_history": {
+      "primary_controls": 24,
+      "independent_assertions": 112,
+      "frozen_sources": {
+        "SMOOTH_HISTORY_BRIDGE_v1.md": "cd443c52c1fe9a5cb9ccd7d517bd689a969b839fdb0a942272449ea9deaefcd5",
+        "check_smooth_history_bridge_v1.py": "570e2af0084a638cb0cd46facef78d30243a4a232f8f49bb3297c028978e6cab",
+        "SMOOTH_HISTORY_CONTROLS_v1.json": "a1dd8ed6d554f17e02ba308ca13a4e6168265ae47c166e1fdfea93dda6c73159"
+      }
+    },
+    "root_read_complete_independent_proof_code_results": true,
+    "independent_artifact_bindings_verified": 9,
+    "empirical_validation": false,
+    "source_intake": "PHYSICAL_PORT_INTAKE_v1.json",
+    "new_measured_dataset_accessed": false,
+    "independent_test_data": "none; synthetic reserved histories only",
+    "prior_art": "standard coenergy calibration and weak identification; no broad novelty claim",
+    "operational_failures": [
+      "Python default TLS CA error recovered with certificate-verifying system curl",
+      "web screenshot returned no image pixels; no visual inspection claimed",
+      "checkpoint read expected results.json but actual smooth checker output is independent_stdout.json; recovered by reading actual file"
+    ],
+    "remaining_imports": [
+      "physical actuator coenergy and calibration",
+      "known moving-load correction",
+      "one passive hidden mode and smooth couplings",
+      "continuum coordinate/force/time and derivative-error certificates",
+      "actual field or gravity identification",
+      "absolute scale"
+    ],
+    "next_route": "Test an environment-dependent quadratic hidden-mode action via force-ringdown/linear-response pole identities; provisional derivation not yet checked."
   }
 }

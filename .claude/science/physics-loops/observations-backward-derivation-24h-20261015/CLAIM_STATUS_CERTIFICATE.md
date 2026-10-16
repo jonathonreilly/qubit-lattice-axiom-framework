@@ -49,3 +49,7 @@ Blocks01v2-04 have focused independent mathematical checks, complete root readin
 ## Sampled coupling reconstruction
 
 bounded_theorem / conditional-support. Exact sampled recurrence, six-sample history cancellation, positive pulse-end integral, normalized functions, potential compatibility and deterministic errors are personally derived and focused-checked. No independent empirical test or complete action derivation. The exploratory sensitivity failure and correction are preserved. Final standalone publication is receiving focused preflight; shared landing validation remains pending.
+
+## Physical bridge checkpoint 2026-10-16T05:07:48.595187+00:00
+
+Physical-port and smooth-history blocks: conditional-support, exploratory checked mathematics only. No formal retained status or empirical validation. Remaining actuator, calibration, physical class and scale assumptions are explicitly retained.

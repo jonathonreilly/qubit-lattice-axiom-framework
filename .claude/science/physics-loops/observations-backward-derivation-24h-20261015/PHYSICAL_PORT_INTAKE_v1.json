@@ -1,0 +1,58 @@
+{
+  "retrieved_at": "2026-10-16T04:48:21.149732+00:00",
+  "sources": [
+    {
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957415",
+      "runtime_file": "NIST_KDFR_2024.pdf",
+      "sha256": "3c943bcaa27f2ce50131731a0fef0c33d40af8760834340a309ffbb0fb46e9f5",
+      "bytes": 447303,
+      "read_scope": "Full two-page extracted text via web; no quantitative digitization of figures.",
+      "role": "Exposed published metrology context; design/forecast values distinguished from measured calibration. No raw candidate dataset, fit or independent test."
+    },
+    {
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=925140",
+      "runtime_file": "NIST_KDFR_2018.pdf",
+      "sha256": "6b8314229bf0ed88187490d63415f9b81b14add3a772265d27b52b38285d500e",
+      "bytes": 402668,
+      "read_scope": "Full two-page extracted text via web; no quantitative digitization of figures.",
+      "role": "Exposed published metrology context; design/forecast values distinguished from measured calibration. No raw candidate dataset, fit or independent test."
+    }
+  ],
+  "retrieval_failures": [
+    {
+      "route": "Python urllib with platform default TLS roots",
+      "result": "SSLCertVerificationError: local issuer certificate unavailable",
+      "recovery": "System curl succeeded with certificate verification enabled; no TLS checks disabled."
+    },
+    {
+      "route": "web PDF screenshot",
+      "result": "Tool returned citation text without image pixels; no visual inspection claimed."
+    }
+  ],
+  "target": "Reconstruct a conjugate source/coordinate pair from independent electromagnetic port calibration, then carry the sampled candidate test through that transformation.",
+  "claim_status": "exploratory conditional-support",
+  "prior_art": "Electromagnetic coenergy and Kibble cancellation are standard; no broad originality claim.",
+  "candidate_assumptions": [
+    "memoryless reciprocal electromagnetic actuator independent of candidate hidden coordinate",
+    "monotone zero-current flux chart",
+    "bounded corrections and calibration transfer",
+    "one common passive hidden mode and faithful clamped pulse"
+  ],
+  "repo_refresh": {
+    "time": "2026-10-16T04:44:19.816289+00:00",
+    "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+    "open_pr_count": 64,
+    "inventory_sha256": "d202854f74f65fbf4c982018606a1f1b634b624a7be4cd501fc049682a9c778b",
+    "changed_heads": []
+  },
+  "alternatives": [
+    "mechanical length/force calibration: direct but consumes separate conversion functions",
+    "electrostatic capacitance-coordinate calibration: similar known coenergy method, surface potentials remain",
+    "flux-coordinate calibration: directly ties measured motion voltage to current-generated generalized force, but hysteresis/impedance/finite edges remain"
+  ],
+  "raw_data_opened": false,
+  "fit": false,
+  "independent_test": false,
+  "next": "Personally check algebra, finite-edge counterexamples and error propagation; focused independent check before incorporating conclusions."
+}

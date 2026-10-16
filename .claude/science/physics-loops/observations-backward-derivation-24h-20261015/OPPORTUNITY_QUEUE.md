@@ -24,3 +24,9 @@ first milestone note/runner after abstract-core and conformance requirements.
 The next delivery block should integrate the checked mathematics instead of adding
 more isolated synthetic examples. Material response is a separate physical gap.
 No mathematical or observational objective is complete merely because a PR exists.
+
+## Physical bridge checkpoint 2026-10-16T05:07:48.595187+00:00
+
+Personally derive and test whether environment-dependent resonance, linear-response residues and nonlinear clamped ringdown obey a common-action relation without supplying hidden mass, coupling or initial amplitude. This is provisional; preserve reciprocal kinetic/damping cross terms, variable inertia and physical readout assumptions. Compare classical Hellmann-Feynman/optomechanical prior art before any novelty claim.
+
+Completed support: PHYSICAL_PORT_BRIDGE_v1.md and SMOOTH_HISTORY_BRIDGE_v1.md. Their standard inverse/calibration algebra alone does not justify another milestone PR.

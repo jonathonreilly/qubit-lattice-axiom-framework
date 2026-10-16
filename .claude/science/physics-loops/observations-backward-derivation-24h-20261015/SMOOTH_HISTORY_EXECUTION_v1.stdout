@@ -1,0 +1,198 @@
+{
+  "note": "SMOOTH_HISTORY_BRIDGE_v1.md",
+  "note_sha256": "cd443c52c1fe9a5cb9ccd7d517bd689a969b839fdb0a942272449ea9deaefcd5",
+  "runner_sha256": "570e2af0084a638cb0cd46facef78d30243a4a232f8f49bb3297c028978e6cab",
+  "empirical_validation": false,
+  "data_role": "Explicit synthetic development and reserved histories; no measured data used.",
+  "checks": [
+    {
+      "name": "division_free_form_classical",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "adjoint_L0",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "adjoint_L1",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "source_second_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "source_first_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "regular_identity_cancels_static_forcing",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "variable_mass_visible_load",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "three_sample_offset",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "potential_sign_product",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "offset_unequal_hidden_preparations",
+      "passed": true,
+      "detail": {
+        "max_error": 2.4424906541753444e-15,
+        "denominator": 0.2568031630015314
+      }
+    },
+    {
+      "name": "full_period_alias_has_no_offset_denominator",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "offset_error_bound_32_corners",
+      "passed": true,
+      "detail": {
+        "max_error_over_bound": 0.5542276113702638
+      }
+    },
+    {
+      "name": "development_feature_rank_four",
+      "passed": true,
+      "detail": {
+        "singular_values": [
+          2.4894842286299026,
+          1.4668645941694305,
+          1.1296261965679686,
+          0.673878296486188
+        ],
+        "condition_number": 3.6942638479542245
+      }
+    },
+    {
+      "name": "continuous_coefficients_recovered_from_smooth_histories",
+      "passed": true,
+      "detail": {
+        "fitted": [
+          0.40000000000624303,
+          2.2999999999897613,
+          0.4140786749494224,
+          0.165631469977931
+        ],
+        "truth": [
+          0.4,
+          2.3,
+          0.4140786749482402,
+          0.1656314699792961
+        ],
+        "max_error": 1.0238476733093194e-11
+      }
+    },
+    {
+      "name": "nonlinear_coefficient_constraint",
+      "passed": true,
+      "detail": {
+        "difference": -4.423073018955392e-12
+      }
+    },
+    {
+      "name": "continuous_fit_agrees_with_separate_discrete_recurrence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved_synthetic_histories_and_test_windows",
+      "passed": true,
+      "detail": {
+        "residuals": [
+          -4.7271075942489915e-12,
+          -7.847056338050606e-13,
+          -1.9162449405030202e-13,
+          -3.045008689639417e-12,
+          2.97761815204467e-12,
+          -2.2315482794965646e-13
+        ]
+      }
+    },
+    {
+      "name": "omitting_visible_load_is_detected",
+      "passed": true,
+      "detail": {
+        "residuals": [
+          -9.561910664488494,
+          -5.519620728788754,
+          -0.8294967301220895,
+          -2.046447821179787,
+          -3.351042796349501,
+          1.660940644328891
+        ]
+      }
+    },
+    {
+      "name": "derivative_forcing_alternative_fits_unconstrained_rows",
+      "passed": true,
+      "detail": {
+        "fitted": [
+          0.4000000000059893,
+          2.299999999989027,
+          0.41407867495056155,
+          0.345631469975591
+        ]
+      }
+    },
+    {
+      "name": "derivative_forcing_violates_required_coefficient_relation",
+      "passed": true,
+      "detail": {
+        "violation": 0.17999999999288635,
+        "expected": 0.18
+      }
+    },
+    {
+      "name": "frozen_candidate_rejects_derivative_forcing",
+      "passed": true,
+      "detail": {
+        "maximum_residual": 0.09713164478551274
+      }
+    },
+    {
+      "name": "regular_quotient_error_bound",
+      "passed": true,
+      "detail": {
+        "max_error": 0.12824675324675283,
+        "bound": 0.12824675324675322
+      }
+    },
+    {
+      "name": "weak_residual_error_budget",
+      "passed": true,
+      "detail": {
+        "adverse_error": 0.029783303484833514,
+        "budget": 0.0437127093808307
+      }
+    },
+    {
+      "name": "division_free_zero_interval_blind",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "summary": {
+    "passed": 24,
+    "failed": 0
+  }
+}

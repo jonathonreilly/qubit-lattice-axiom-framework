@@ -9,7 +9,7 @@ from sympy.physics.quantum.spin import Rotation
 t0 = time.time()
 def log(*a): print(f'[{time.time()-t0:7.1f}s]', *a, flush=True)
 REP = sys.argv[1]
-j = sp.Rational(REP) if REP != 'E' else sp.Rational(1, 2)
+j = sp.Rational(REP) if REP not in ('E', 'E12+E52') else sp.Rational(1, 2)
 ms = [j - k for k in range(int(2 * j) + 1)]
 d = len(ms)
 Jz = sp.diag(*ms)
@@ -29,6 +29,8 @@ P, Dg = Jx.diagonalize(normalize=True)
 Dx = (P * sp.diag(*[sp.exp(-sp.I * sp.pi / 2 * Dg[k, k]) for k in range(d)]) * P.H).applyfunc(lambda x: sp.nsimplify(sp.simplify(x)))
 assert (Dx * Dx.H - sp.eye(d)).applyfunc(sp.simplify).is_zero_matrix
 RZ = sp.Matrix([[0, -1, 0], [1, 0, 0], [0, 0, 1]]); RX = sp.Matrix([[1, 0, 0], [0, 0, -1], [0, 1, 0]])
+if REP == 'E12+E52':
+    Dz = sp.diag(Dz, -Dz); Dx = sp.diag(Dx, -Dx); d = 4
 if REP == 'E':
     Bs = sp.Matrix([[1, 1], [-1, 1], [0, -2]]) * sp.diag(1 / sp.sqrt(2), 1 / sp.sqrt(6))   # orthonormal basis of sum-zero plane
     perm = lambda R: R.applyfunc(abs)
@@ -36,7 +38,7 @@ if REP == 'E':
     d = 2
     assert (Dz * Dz.T - sp.eye(2)).is_zero_matrix and (Dx * Dx.T - sp.eye(2)).is_zero_matrix
 # covariance check of the lift: D J_a D^dag = sum_b R_ba J_b
-for R, D in (((RZ, Dz), (RX, Dx)) if REP != 'E' else ()):
+for R, D in (((RZ, Dz), (RX, Dx)) if REP not in ('E', 'E12+E52') else ()):
     for a, Ja in enumerate((Jx, Jy, Jz)):
         lhs = (D * Ja * D.H).applyfunc(sp.simplify)
         rhs = sum((R[b, a] * Jb for b, Jb in enumerate((Jx, Jy, Jz))), sp.zeros(d))
@@ -106,7 +108,7 @@ eqs = list(eqs)
 log('real unitarity equations', len(eqs), 'real unknowns', 2 * len(params))
 
 # axis-line lemma in the J_x eigenbasis: U(t e_x) = sum_r z^r B_r, B_r = sum_{n_x = r} A_n
-Px, Dgx = (Dx if REP == 'E' else Jx).diagonalize(normalize=True)
+Px, Dgx = (Dx if REP in ('E', 'E12+E52') else Jx).diagonalize(normalize=True)
 Pxs = [Px[:, k] * Px[:, k].H for k in range(d)]   # projectors, eigenvalues Dgx[k,k] distinct
 assert len(set(Dgx[k, k] for k in range(d))) == d
 B = {r: sum((Ac[n] for n in cell if n[0] == r), sp.zeros(d)) for r in (-1, 0, 1)}

@@ -1,7 +1,7 @@
 ---
 claim_id: cubic_cell_shape_sets_the_taste_content_axis_permutation_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Cells formed by an orbit of the proper cubic group around a centre (6 face centres, 8 corners, 12 edge midpoints), one amplitude per point, with the binary octahedral group acting by monomial matrices (signs or phases). Exact (characters): every spinorial such representation contains only E1/2, E5/2 and H = E (x) E1/2, so it equals E1/2 (x) F with F a representation of S3, the permutation group of the three axes. The copy ('taste') content is F = A1 + E or A2 + E for face centres (the axis triplet, no repeated summand), 2E for signed corners, A1 + A2 + E for phased corners, and A1 + A2 + 2E for edges (phased only). Under the threefold axis cycle C3, A1 and A2 carry 1 and E carries omega + omega-bar. Exact: wherever F contains F' + F', the two-qubit Dirac walk tensored with 1_F' is a moving covariant tick with dim F' Dirac copies. Numerical: the pair E1/2 + E5/2 admits moving unitary walks, but those found are massive, and with U(0) = 1 imposed the solution found is degenerate (zero quasienergy along axis lines); no clean massless singlet copy was found. The six-neighbour coin E1/2 + H showed no moving walk (residuals rise steeply with the motion bound, a high-order valley). This is not a derivation of three generations."
+claim_scope: "Cells formed by an orbit of the proper cubic group around a centre (6 face centres, 8 corners, 12 edge midpoints), one amplitude per point, with the binary octahedral group acting by monomial matrices (signs or phases). Exact (characters): every spinorial such representation contains only E1/2, E5/2 and H = E (x) E1/2, so it equals E1/2 (x) F with F a representation of S3, the permutation group of the three axes. The copy ('taste') content is F = A1 + E or A2 + E for face centres (the axis triplet, no repeated summand), 2E for signed corners, A1 + A2 + E for phased corners, and A1 + A2 + 2E for edges (phased only). Under the threefold axis cycle C3, A1 and A2 carry 1 and E carries omega + omega-bar. Exact: wherever F contains F' + F', the two-qubit Dirac walk tensored with 1_F' is a moving covariant tick with dim F' Dirac copies. Numerical: the pair E1/2 + E5/2 admits moving unitary walks, but those found are massive, and with U(0) = 1 imposed the solution found is degenerate (zero quasienergy along axis lines); no clean massless singlet copy was found. Algebraic evidence (cell walks, U(0) = 1): of the nine line branches that pass a numerical linear prefilter, the eight that move along an axis give the unit ideal (Groebner basis mod 32003; one also over Q by Singular's modular method), and only the axis-flat branch has solutions (a 4-dimensional component), so such a walk is constant along the axes and carries no Dirac cone there. The six-neighbour coin E1/2 + H showed no moving walk (residuals rise steeply with the motion bound, a high-order valley). This is not a derivation of three generations."
 upstream_dependencies:
   - staggered_one_qubit_blocks_carry_a_cubic_covariant_dirac_tick_bounded_theorem_note_2026-10-16
   - two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
@@ -58,12 +58,31 @@ hypothesis is that three generations might be the three spatial axes.
    imposed, the one solution found is degenerate: zero quasienergy along the
    axis lines and a doubler at X. No clean massless Dirac copy from this pair
    was found.
+   **Algebraic evidence (mod p, labelled).** The line lemma reduces the
+   U(0) = 1 cell walks to branches: along the x axis,
+   U(t e_x) = sum_k z^(m_k) P_k on the four J_x eigenlines (eigenvalues
+   distinct), with m_k in {-1, 0, 1}, plus monomials on the body diagonal.
+   Nine branches pass a numerical linear-consistency prefilter, each with
+   32 free unknowns and 336 real unitarity equations. The results:
+   - The eight branches with nonzero axis exponents give the unit ideal:
+     a Groebner basis mod 32003 (slimgb) is {1}. Branch (-1, 1, -1, 1) is
+     also {1} over Q by Singular's modular method (modStd).
+   - Only the axis-flat branch (0, 0, 0, 0) has solutions: a component of
+     Krull dimension 4.
+   So every such walk is constant along the axes (zero quasienergy on the
+   axis lines). This matches the degenerate numerical solution, and rules
+   out a Dirac cone of the singlet pair at k = 0 along the axes. This is
+   mod-p evidence plus a numerical branch prefilter, not a theorem; the
+   inputs and outputs are in
+   `.claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/`.
 5. **Under the threefold axis cycle C3.** A1 and A2 carry the character 1, and
    E carries omega + omega-bar.
    - The twelve-link cell therefore carries copies with C3 labels
      {1, 1, omega, omega-bar} plus a repeat of the E pair.
    - The two E copies can be massless and doubler-free.
-   - The singlet pair gave only massive or degenerate walks in the searches.
+   - The singlet pair gave only massive or degenerate walks in the searches,
+    and with U(0) = 1 the branch ideals leave only walks that are flat
+    along the axes (mod-p evidence, item 4).
 
 ## How this bears on generations (interpretation, not a claim)
 
@@ -134,7 +153,9 @@ which the runner checks: they are trivial on the axis half-turns. ∎
 ## No-Go Discipline Gate
 
 No impossibility claim is made. The singlet-pair statements are numerical
-and labelled as such.
+or mod-p evidence and are labelled as such. Promoting item 4 to a no-go
+would need the branch prefilter done exactly and the eight unit ideals
+certified over Q (one is so far), then the N1-N8 gate.
 
 ## Verification
 

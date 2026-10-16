@@ -4,7 +4,7 @@ base: claude/rules-hygiene-20261015 (from origin/main bbada1fe0)
 window: 2026-10-15T23:30Z .. 2026-10-16T23:00Z
 mode: campaign
 target: best-honest-status
-active_block: B1-covariant-qubit-walks
+active_block: B3-larger-site-covariant-motion
 blocks:
   B1-covariant-qubit-walks:
     status: in_progress
@@ -26,3 +26,18 @@ blocks:
       - "residual-vs-amplitude scaling for O range 2 (DELTA 0.2, 0.5, 1.0)"
       - "two-qubit and spin-3/2 coins under O (outside the Qubit axiom; numerical)"
       - "independent re-derivation of O/T/D4 by a fresh agent (raw coefficients, own method)"
+  B2-order-blind-one-dependent-field:
+    status: delivered_to_branch
+    note: docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md
+    runner: scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py (TOTAL PASS=17)
+    result: "positive order-blind rules: consistent finite laws -> one record field; full conditionals = rule (static = formation); 1-dependent; no LRO, power laws or pinch points"
+    prior_art_note: "iid-priority (random order) decay is standard (Penrose-Sudbury decreasing paths; cited in the 2026-09-07 priority note); not claimed"
+  B3-larger-site-covariant-motion:
+    status: in_progress
+    question: "does a two-qubit site (fork 4, M4(C)) or spin-3/2 coin admit an exactly O-covariant moving cell walk?"
+    so_far:
+      - "spin-3/2 (irreducible 4-dim rep of 2O): 12 starts polished to positive local minima (2.4e-3 .. 1.6e-2); none moving"
+      - "fast analytic-Jacobian search written (coinfast.py); validating on a D2 spin-1/2 control"
+  B1-extra:
+    - "D2 product walk dispersion: omega = |k| - n1 n2 n3 |k|^2 + O(k^3), parity-odd handed correction (runner PASS=31)"
+    - "exact D3 Groebner timed out (83 min); D3 stays numerical"

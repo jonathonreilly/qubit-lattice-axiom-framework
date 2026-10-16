@@ -1,0 +1,6 @@
+qcase00.sing exit 0 : a0=(-1, -1, 1, 1) a1=(-1, -1, 1, 1) nfree=22 dim= -1  time 238
+qcase01.sing exit 0 : a0=(-1, -1, 1, 1) a1=(-1, 0, 1, 0) nfree=22 dim= -1  time 162
+qcase02.sing exit 0 : a0=(-1, -1, 1, 1) a1=(-1, 1, 1, -1) nfree=22 dim= -1  time 101
+qcase03.sing exit 0 : a0=(-1, -1, 1, 1) a1=(0, -1, 0, 1) nfree=22 dim= -1  time 181
+qcase04.sing exit 0 : a0=(-1, -1, 1, 1) a1=(0, 0, 0, 0) nfree=22 dim= -1  time 288
+qcase05.sing exit 0 : a0=(-1, -1, 1, 1) a1=(0, 1, 0, -1) nfree=22 dim= -1  time 233

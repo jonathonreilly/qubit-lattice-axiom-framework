@@ -1,0 +1,7 @@
+ring r=0,(p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12),dp;
+option(redSB);
+execute("ideal G="+read("slice2d_Q.gb")+";");
+attrib(G,"isSB",1); "vdim",vdim(G);
+LIB "primdec.lib"; int t=timer; list L=minAssGTZ(G); "minAss time",timer-t; "ncomponents",size(L);
+for(int i=1;i<=size(L);i++){"--- component",i; print(L[i]);}
+quit;

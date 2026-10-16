@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
+runner_sha256: ddba5b0396d445028dbedffd1e3ece5b570c695f83b6fc3410e486d9a3e29ca6
+input_fingerprint_sha256: 8e08c6012c30ffb1cb95b8140a1b5bb106542e2e15629e0c154a9e5f68ebc251
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 11.23
+status: ok
+----- stdout -----
+PASS tau1(x)1, tau2(x)1, tau3(x)sigma_a are five anticommuting Hermitian involutions
+PASS coin action 1 (x) D(R) fixes the flavor terms and rotates tau3 (x) sigma as a vector (generators)
+PASS Gram identity: sum G_ij phi_i phi_j + |g|^2 - 1 = 0 identically in k and b
+PASS the identity determines G uniquely (the map G -> sum G_ij phi_i phi_j is injective)
+PASS axis restriction: phi(t,0,0) = (1,2,1,0) + (0,1,2,1) cos t
+PASS v^T G v = 1 - s^2, w^T G w = s^2, v^T G w = 0 with s = b0 + 2 b1 + b2 (so s^2 <= 1 when G >= 0)
+PASS Wilson-gap identity: the flavor part W of the k^2 term of the massless member has |W|^2 = w^T G w - (phi0^T G w)^2 = s^2 (1 - s^2) = sin^2(theta_X)/4
+PASS F(0).F(pi,0,0) = (v+w)^T G (v-w) = 1 - 2 s^2: the axis doubler gap is 2 arcsin|s|
+PASS doubler gaps: cos(theta_M) = 1 - 8 s (b0 - b2), cos(theta_R) = 1 - 6(3 b0^2 + 2 b0 b2 + 3 b2^2 - 8 b1^2)
+PASS golden member: G(b_gold) v = 0 and s = 1 exactly
+PASS golden member: e1, e2, e3 > 0 and det = 0 exactly, so G >= 0 of rank 3
+PASS G v = 0 has four solutions; exactly the pair +-b_gold is positive semidefinite (light speed is unique up to sign)
+PASS golden member: f(t,0,0) = cos t exactly (light-like along the axes), so U(pi,0,0) = -1 (pi-mode doublers)
+PASS golden member: omega^2 = |k|^2 - (7/6 - sqrt5/2)(|k|^4 - sum k_a^4) + O(k^6) (quadratic, parity-even anisotropy)
+PASS tau3 (x) 1 commutes with 1 (x) D(R): a chirality-symmetric walk splits into two one-qubit covariant blocks
+PASS under k -> k + Q: phi = (1, sum c, sum cc, c1c2c3) has parities (+,-,+,-); v0, v1, v2 have (-,+,-)
+PASS staggered, epsilon = -1: with b1 = 0, G22 = -b2^2 and G02 = -b0^2 - b0 b2, so G >= 0 forces b2 = 0 then b0 = 0
+PASS staggered, epsilon = +1: with b0 = b2 = 0, G33 = 0 and G13 = -b1^2, so G >= 0 forces b1 = 0
+PASS det G(b) is even in b1, so det = 0 is a quartic in u = b1^2
+PASS at b* = (11/30, sqrt(u*), 3/20): det G = 0 exactly (the minimal polynomial of u* divides the quartic)
+PASS at b*: e1, e2, e3 of G are positive, so the three nonzero eigenvalues are positive (G >= 0, rank 3)
+PASS phi0^T G phi0 = 1 identically in b: the massless member has f = phi0^T G phi(k)
+PASS massless member: omega^2 = s^2 |k|^2 + alpha(b) |k|^4 + beta(b) sum k_a^4 + O(k^6), beta = -s (b0 - b1 - 2 b2)/3
+PASS alpha(b) = s (s^3 + 3 b0 - 6 b1 - 9 b2)/12
+PASS golden member: beta(b_gold) = 7/6 - sqrt5/2 (agrees with Theorem 5)
+PASS on the isotropy plane b0 = b1 + 2 b2: det G = (b1 + b2)^2 Q(b1, b2) with Q polynomial; there s = 3(b1 + b2)
+PASS discriminant in b1 of Q at fixed speed S is c S^12 (8S^2 + 3)(3S^2 - 2)^2 (S^4 + 84 S^2 + 36): real critical speeds 0, +-sqrt(2/3)
+PASS on the plane, rank G <= 2 only at b = 0 (b1, b2 in the radical of the 3x3 minors), so the PSD part of {Q = 0} is a union of compact components
+PASS b_iso = ((sqrt6 + 2 sqrt15)/27, (5 sqrt6 - 2 sqrt15)/27, (2 sqrt15 - 2 sqrt6)/27): on the plane, s = sqrt(2/3), det G = 0, e1, e2, e3 > 0 (G >= 0, rank 3)
+PASS b_iso: omega^2 = (2/3)|k|^2 - (1/54)|k|^4 + (1/243)|k|^6 - (1/540)|k|^2 sum k^4 + (sqrt10/9 - 16/45) k1^2 k2^2 k3^2 + O(k^8)
+PASS b_iso doubler gaps: cos theta_X = -1/3, cos theta_M = -7/9 (exact, from Theorem 4 formulas)
+PASS [numerical] b_iso: on a 41^3 grid omega >= 0.9 s |2 sin(k/2)| (single cone at k = 0, no doublers)
+PASS sextic coefficient of |k|^2 sum k^4 in omega^2 is y(b) = -s (20 b0^3 + ... + 21 b2)/360
+PASS on the isotropy plane: alpha = -s^2 (1 - s^2)/12, x = s^2 (8 s^4 - 5 s^2 + 2)/360, y = -s^2/360 (depend on s only)
+PASS |k|^6, |k|^2 sum k^4 and k1^2 k2^2 k3^2 are linearly independent, so y != 0 is a genuine k^6 anisotropy for every moving isotropic member
+PASS [numerical] 3862 PSD samples of the isotropic curve: speeds fill [0.011, sqrt(2/3)] (largest gap 9.5e-03), never above
+PASS [numerical] factorised walk is unitary to 1e-12 on 2000 random momenta (max error 2.7e-15)
+PASS [numerical] F(0) = (1,0,0): U(0) = 1, a massless point at k = 0
+PASS [numerical] all seven doublers are gapped (quasienergy gaps 2.196..2.308 rad)
+PASS [numerical] on a 40^3 grid the bands touch only at k = 0
+cone: omega = 0.914422 |k| + O(k^2), isotropic (g = (b0 + 2 b1 + b2) k + O(k^3); invariant h have zero gradient at k = 0)
+per_element: exact Clifford and Gram coefficients, certified signs
+per_site: checked and not executed — no interacting site dynamics
+per_mode: exact dispersion series plus explicitly numerical sampled band tests
+per_block: supplied four-component Clifford coin
+lattice_wide: checked and not executed — no global numerical certificate or general irreducible-coin theorem
+TOTAL: PASS=40 FAIL=0
+
+----- stderr -----
+

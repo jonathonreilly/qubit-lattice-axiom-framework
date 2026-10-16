@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py
+runner_sha256: 2e00b305e46ace7a22b6ddbca91c5d08e0289b33121e02dc750e67c6eab9d71e
+input_fingerprint_sha256: 173a02be2d400dd25dc49d5111bdefc7c1732975a77a1ff96063abe01879f2e5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 23.13
+status: ok
+----- stdout -----
+PASS corner permutations represent the rotations about the block centre (orders 4, 4; group of order 24)
+PASS signed corner actions: 3 classes by trace data (group order 24, order 48 split, order 48 spinorial), 1 spinorial
+PASS [numerical] chosen order-eight trace representative is equivalent, up to generator phases, to C^2 (x) E (x) E_1/2 (intertwiner space of dimension 4 = 2^2)
+PASS equivalently, two copies of the spin-3/2 representation (E (x) E_1/2 = spin 3/2)
+PASS the other classes contain no spin-1/2 or spin-3/2 component (only scalar and spin-1 pieces): no spinorial irreducible summand (not a tensor-factor exclusion)
+PASS unitary intertwiner T found (residual 2.8e-15)
+PASS block walk W = T (U_2q (x) 1_E) T^dagger is unitary (max error 3.6e-15)
+PASS W is covariant under the signed block action of both quarter-turn generators (max error 4.7e-15)
+PASS W moves (nonzero hop coefficients)
+PASS [numerical] massless isotropic cone at k = 0: all eight quasienergies = s |k| with s = 0.9144 in four directions
+PASS [numerical] on a 21^3 grid the quasienergy vanishes only at k = 0 (min omega / |2 sin(k/2)| = 0.634)
+per_element: signed permutations exact entries; intertwiners numerical
+per_site: eight supplied amplitude sites per block
+per_mode: finite-grid dispersion only; no global doubler exclusion
+per_block: eight-component transported walk with numerical residuals
+lattice_wide: checked and not executed — no interacting lattice or nearest-site no-go
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

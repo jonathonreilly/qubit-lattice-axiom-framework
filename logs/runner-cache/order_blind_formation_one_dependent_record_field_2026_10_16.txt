@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py
+runner_sha256: da0adff57388cf023a380fdc8ae2fd0019debfc39828d819a7a9c956e49e33d3
+input_fingerprint_sha256: f6a724155c495ffcbfd14d0a4fc4fd55135822662ebefd4c76cab4ece9b8d9be
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 23.05
+status: ok
+----- stdout -----
+PASS 48-point alphabet = two proper orbits of 24; twelve classes of four points
+PASS X depends only on the class
+PASS each value x in {-1,0,1} of X_{-d} is realised by some class (representatives exist)
+PASS rule normalised on every neighbour condition (all 3^6 X-patterns)
+PASS rule strictly positive
+PASS bond symmetry phi_d(a,b) = phi_{-d}(b,a)
+PASS plaquette: every one of the 24 formation orders gives the product-form law
+PASS plaquette: total mass 1
+PASS plaquette marginal on an edge = two-site product form
+PASS plaquette marginal on the diagonal = r0 x r0 (independent although joined by two paths)
+PASS plaquette: conditional of a site given the other three records equals the rule
+PASS 5-site path: finished law (middle-first order) = product form
+PASS 5-site path: law of {0,1} u {3,4} = law({0,1}) x law({3,4}) (edge-disjoint sets independent)
+PASS edge-joined pair is genuinely correlated (rule varies)
+PASS <X_z X_-z> on a z-bond = kappa/36 = 1/72
+PASS <X_z X_-z> at distance 2 and 3 vanish exactly
+PASS single-site variance of X_z = 1/6
+PASS X_z autocovariance on the z-bond is zero; cross covariance is a different observable pair
+X_z structure factor: S_h(q) = 1/6; cross correlation <X_z X_-z> on a z-bond = 1/72
+per_element: rational rule normalization and covariance entries
+per_site: finite plaquette and path marginals
+per_mode: cross covariance distinguished from single-observable structure factor
+per_block: disjoint finite sets factorize; infinite extension is analytic
+lattice_wide: checked and not executed — no infinite lattice simulation; general proof in note
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

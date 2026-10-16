@@ -1,6 +1,6 @@
 {
- "edge_count": 16142,
- "node_count": 7187,
+ "edge_count": 16147,
+ "node_count": 7192,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4405,6 +4405,14 @@
   "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17": {
    "deps_hash": "04fc7d8812c4",
    "out_degree": 3
+  },
+  "cubic_cell_shape_sets_the_taste_content_axis_permutation_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "60d658410801",
+   "out_degree": 2
+  },
+  "cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "cubic_coxeter_edge_lengths_from_matter_correlation_decay_narrow_theorem_note_2026-06-10": {
    "deps_hash": "cb078be0ad0c",
@@ -16366,6 +16374,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "order_blind_positive_formation_is_a_one_dependent_gibbs_field_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "30f7740c3342",
+   "out_degree": 1
+  },
   "order_laws_for_extended_soldered_supports_independent_clocks_nucleate_at_positive_density_and_sweeps_have_no_first_formation_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -20646,6 +20658,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "staggered_one_qubit_blocks_carry_a_cubic_covariant_dirac_tick_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "5d6eddf780ff",
+   "out_degree": 1
+  },
   "staggered_only_det_positivity_case_a_note_2026-05-17": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -21769,6 +21785,10 @@
   "two_field_retarded_probe_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "f8cc0c81b987",
+   "out_degree": 1
   },
   "two_reader_live_pointer_preparation_bounded_theorem_note_2026-10-15": {
    "deps_hash": "2c00247b251c",

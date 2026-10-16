@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py
+runner_sha256: e1ca1f04bce3f8774862398bc82b93a52808d1afd6a7e8d37f85c6f01127b31a
+input_fingerprint_sha256: 148fd8c6e46548894bdd542db4e2948dd6327c0763c71a8096054d010abbabe8
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+PASS exact cyclic restrictions give all face, corner and edge spinorial multiplicities
+PASS binary octahedral group generated: 48 elements
+PASS eight irreducible characters, orthonormal (A1, A2, E, T1, T2, E1/2, E5/2, H); dims sum of squares = 48
+PASS A1, A2 and E factor through S3 (trivial on the axis half-turns V4)
+PASS H = E (x) E1/2 and E5/2 = A2 (x) E1/2 (character identities)
+   faces(6) q=0: integer, signed, {'A1': 1, 'E': 1, 'T1': 1}
+   faces(6) q=1: spinorial, phased, {'E1/2': 1, 'H': 1}, taste F = {'A1': 1, 'A2': 0, 'E': 1}
+   faces(6) q=2: integer, phased, {'T1': 1, 'T2': 1}
+   faces(6) q=3: spinorial, phased, {'E5/2': 1, 'H': 1}, taste F = {'A1': 0, 'A2': 1, 'E': 1}
+   faces(6) q=4: integer, signed, {'A2': 1, 'E': 1, 'T2': 1}
+   faces(6) q=5: spinorial, phased, {'E5/2': 1, 'H': 1}, taste F = {'A1': 0, 'A2': 1, 'E': 1}
+   faces(6) q=6: integer, phased, {'T1': 1, 'T2': 1}
+   faces(6) q=7: spinorial, phased, {'E1/2': 1, 'H': 1}, taste F = {'A1': 1, 'A2': 0, 'E': 1}
+   corners(8) q=0: integer, signed, {'A1': 1, 'A2': 1, 'T1': 1, 'T2': 1}
+   corners(8) q=1: spinorial, phased, {'E1/2': 1, 'E5/2': 1, 'H': 1}, taste F = {'A1': 1, 'A2': 1, 'E': 1}
+   corners(8) q=2: integer, phased, {'E': 1, 'T1': 1, 'T2': 1}
+   corners(8) q=3: spinorial, signed, {'H': 2}, taste F = {'A1': 0, 'A2': 0, 'E': 2}
+   corners(8) q=4: integer, phased, {'E': 1, 'T1': 1, 'T2': 1}
+   corners(8) q=5: spinorial, phased, {'E1/2': 1, 'E5/2': 1, 'H': 1}, taste F = {'A1': 1, 'A2': 1, 'E': 1}
+   edges(12) q=0: integer, signed, {'A1': 1, 'E': 1, 'T1': 1, 'T2': 2}
+   edges(12) q=1: spinorial, phased, {'E1/2': 1, 'E5/2': 1, 'H': 2}, taste F = {'A1': 1, 'A2': 1, 'E': 2}
+   edges(12) q=2: integer, signed, {'A2': 1, 'E': 1, 'T1': 2, 'T2': 1}
+   edges(12) q=3: spinorial, phased, {'E1/2': 1, 'E5/2': 1, 'H': 2}, taste F = {'A1': 1, 'A2': 1, 'E': 2}
+PASS every spinorial cell representation contains only E1/2, E5/2, H, hence equals E1/2 (x) F with F a rep of S3
+PASS six face centres (a site's six neighbours): F = A1 + E or A2 + E, the axis triplet, with no repeated summand
+PASS eight corners with signs (staggered block): F = 2E, two copies (B6 note)
+PASS twelve edges (cube links), spinorial only with phases: F = A1 + A2 + 2E
+PASS under the threefold axis cycle C3, A1 and A2 carry character 1 and E carries omega + omega-bar (trace -1)
+per_element: exact cyclic restriction multiplicities; floating character corroboration
+per_site: three finite orbit types only
+per_mode: checked and not executed — no momentum search in this runner
+per_block: spinorial representations of prescribed 2O only
+lattice_wide: checked and not executed — no electron or generation derivation
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py
+runner_sha256: d1cb1fc898d3f85099312c35284ba8ae2b3a135351e485a20d20fcefc01cce6c
+input_fingerprint_sha256: 72a9cab4c474969a1b499d3785210d38c3a0a602b2666a79de165f30d3d70336
+timeout_sec: 2100
+exit_code: 0
+elapsed_sec: 140.88
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS O has order 24
+PASS O fixes no nonzero momentum vector (det U is constant)
+PASS T has order 12
+PASS T fixes no nonzero momentum vector (det U is constant)
+PASS D4 has order 8
+PASS D4 fixes no nonzero momentum vector (det U is constant)
+PASS D3 has order 6
+PASS D3 fixes no nonzero momentum vector (det U is constant)
+PASS D2 has order 4
+PASS D2 fixes no nonzero momentum vector (det U is constant)
+O: 4 invariant scalars, 3 equivariant vectors, 27 equations
+PASS O: every coefficient except a0 vanishes on the variety (radical membership)
+PASS O: a0^2 - 1 lies in the ideal, so U = +-1 times a phase
+T: 5 invariant scalars, 6 equivariant vectors, 35 equations
+PASS T: every coefficient except a0 vanishes on the variety (radical membership)
+PASS T: a0^2 - 1 lies in the ideal, so U = +-1 times a phase
+PASS D4 basis: f_1 = c3 and g_0 = (0, 0, s3)
+PASS D4: all coefficients except a0, a1, b0 vanish on the variety
+PASS D4 residual system: moving solutions are exactly a0 = 0, a1 = +-1, b0 = +-1
+PASS trivial: every O-invariant cell function is a polynomial in cosines only
+PASS trivial: the invariant cosine polynomials have degrees 0..3 (no constant combination besides 1)
+PASS sign coin action is a homomorphism O -> SO(3)
+PASS sign: every k-dependent coefficient of f vanishes on the variety
+PASS sign: residual identity forces sum of squares of k-dependent g-coefficients to 0 (real walks are constant coins)
+PASS axis coin action is a homomorphism O -> SO(3)
+PASS axis: every k-dependent coefficient of f vanishes on the variety
+PASS axis: every k-dependent coefficient of g vanishes, so U is a constant coin
+PASS product walk is unitary: f^2 + |g|^2 = 1
+PASS product walk is D2-covariant (soldered)
+PASS product walk is not covariant under the quarter turn about z
+PASS product walk is an isotropic unit-speed Weyl cone at k = 0 (dg/dk = identity)
+PASS cos(omega) = f = 1 - |k|^2/2 + k1 k2 k3 + O(k^4): parity-odd cubic term
+PASS O, range two: 10 invariant scalars, 15 equivariant vectors, 149 equations
+PASS O: the stabilisers of the axis, face and body lines fix only the line
+PASS O: g(0) = 0 identically, so f(0) = +-1
+PASS O: line degrees 2, 4, 6
+PASS O: of the 5 x 9 x 13 = 585 exponent branches only (0, 0, 0) is linearly consistent
+PASS O: branch (0, 0, 0) gives a_0 = 1 and a_1..a_9 = 0
+PASS O: on branch (0, 0, 0) each of the 6 free coefficients lies in the radical
+PASS Theorem 4: every O-covariant range-two walk is V = 1 (U a constant phase)
+PASS D3 has order 6 and fixes no vector
+PASS D3, cell: 7 invariant scalars, 12 equivariant vectors, 99 equations
+PASS D3: the stabilisers of the body axis (C3) and the half-turn axis (C2) fix only the line
+PASS D3: line degrees 3 and 2
+PASS D3: all 7 x 5 = 35 exponent branches are linearly consistent (lines alone do not decide D3)
+PASS D3: Groebner bases close every branch except (0, 0) and (+-3, 0)
+PASS D3: each surviving branch is a single point (v - value in the radical for every free v)
+PASS Theorem 5: the D3 cell walks are V = 1 and V = exp(+-i (k1+k2+k3) sigma.(1,1,1)/sqrt 3)
+per_element: exact line coefficients and residual ideals
+per_site: checked and not executed — no site simulation
+per_mode: range-two O and cell D3 line branches enumerated exactly
+per_block: specified two-component coin only
+lattice_wide: checked and not executed — range-three and higher certificates deferred
+TOTAL: PASS=16 FAIL=0
+PASS range-two O and cell D3 exact branch certificates
+per_element: exact finite polynomial coefficients and group constraints
+per_site: checked and not executed — no real-space site simulation
+per_mode: exact trigonometric identity; D2 expansion
+per_block: specified two-component coin only
+lattice_wide: checked and not executed — no infinite-lattice simulation; finite-support proof only
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

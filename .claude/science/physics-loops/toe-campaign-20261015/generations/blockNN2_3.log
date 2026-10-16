@@ -1,0 +1,22 @@
+block3 nearest-site family dim 11
+trial 0: residual 7.88e-02 dispersion measure 0.049
+trial 1: residual 7.88e-02 dispersion measure 0.049
+trial 2: residual 1.53e-01 dispersion measure 1.944
+trial 3: residual 1.53e-01 dispersion measure 1.944
+trial 4: residual 1.53e-01 dispersion measure 1.944
+trial 5: residual 7.88e-02 dispersion measure 0.049
+trial 6: residual 7.67e-01 dispersion measure 7.503
+trial 7: residual 7.67e-01 dispersion measure 7.503
+trial 8: residual 1.09e+00 dispersion measure 8.971
+trial 9: residual 1.53e-01 dispersion measure 1.944
+trial 10: residual 7.88e-02 dispersion measure 0.049
+trial 11: residual 7.88e-02 dispersion measure 0.049
+trial 12: residual 7.88e-02 dispersion measure 0.049
+trial 13: residual 1.53e-01 dispersion measure 1.944
+trial 14: residual 5.62e-01 dispersion measure 20.473
+trial 15: residual 1.53e-01 dispersion measure 1.944
+trial 16: residual 5.62e-01 dispersion measure 20.473
+trial 17: residual 1.53e-01 dispersion measure 1.944
+trial 18: residual 7.88e-02 dispersion measure 0.049
+trial 19: residual 7.88e-02 dispersion measure 0.049
+block3 dispersive unitary solutions 0 / 20 best residual 0.07880950133073644

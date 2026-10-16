@@ -1,0 +1,16 @@
+[    0.9s] lift checked
+[    2.0s] group 24
+[   18.4s] complex parameters 19
+[  526.2s] real unitarity equations 439 real unknowns 38
+[  526.4s] C3 eigenvalue multiplicities [2, 1, 1]
+[  586.4s] body traces
+[  588.9s] axis cache
+[  593.9s] body cache
+[ 1327.1s] numeric caches
+[ 1327.1s] numerically feasible (-1, -1, 1, 1) (0, 0)
+[ 1330.7s] numerically feasible (0, 0, 0, 0) (0, 0)
+[ 1332.5s] numerically feasible (1, 1, -1, -1) (0, 0)
+[ 1334.2s] feasible branches 3 [((-1, -1, 1, 1), (0, 0)), ((0, 0, 0, 0), (0, 0)), ((1, 1, -1, -1), (0, 0))]
+[ 1600.4s] branch (-1, -1, 1, 1) (0, 0): 18 free, 439 eqs
+[ 1857.4s] branch (0, 0, 0, 0) (0, 0): 18 free, 439 eqs
+[ 2131.8s] branch (1, 1, -1, -1) (0, 0): 18 free, 439 eqs

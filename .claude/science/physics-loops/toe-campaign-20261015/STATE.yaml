@@ -66,7 +66,7 @@ blocks:
   B6-staggered-blocks:
     status: delivered_to_branch
     note: docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md
-    result: "spinorial signed corner action = 2 x spin 3/2; moving exactly covariant Dirac tick (U_2q (x) 1_E), two Dirac fermions per block, doubler-free (numerical); nearest-site: flat only (numerical, independently checked)"
+    result: "spinorial signed corner action = 2 x spin 3/2; moving exactly covariant Dirac tick (U_2q (x) 1_E), two Dirac fermions per block, doubler-free (numerical); nearest-site: every walk flat (EXACT, Theorem 3: minAssGTZ 8 components + real-locus argument)"
   B7-taste-content:
     status: delivered_to_branch
     note: docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md

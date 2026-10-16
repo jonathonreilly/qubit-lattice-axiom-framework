@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+"""Exposed reviewer recomputation using tensor operators, not author bit assembly.
+
+Finite tests only. No general theorem, hardware validation or audit is encoded.
+"""
+import json
+from itertools import product
+import numpy as np
+from scipy.linalg import eigh, qr
+from scipy.optimize import root
+
+I=np.eye(2); n=np.diag([0.,1.]); sm=np.array([[0.,1.],[0.,0.]]); sp=sm.T
+X=sm+sp; Z=np.diag([1.,-1.])
+
+def kron_all(xs):
+    v=np.array([[1.]])
+    for x in xs: v=np.kron(v,x)
+    return v
+
+def local(op,j,count):
+    xs=[I]*count;xs[j]=op;return kron_all(xs)
+
+def source_ops(N,edge_weights=None):
+    minus=[local(sm,j,N) for j in range(N)]
+    number=sum(local(n,j,N) for j in range(N))
+    lap=np.zeros((2**N,2**N))
+    weights=edge_weights if edge_weights is not None else np.ones(N-1)
+    for j,w in enumerate(weights):
+        # I-SWAP = n_j+n_k-2 n_j n_k-(s+_j s-_k+s-_j s+_k).
+        nj=local(n,j,N);nk=local(n,j+1,N)
+        lap+=w*(nj+nk-2*nj@nk-minus[j].T@minus[j+1]-minus[j+1].T@minus[j])
+    dicke=np.zeros((2**N,N+1))
+    for k in range(N+1):
+        inds=[i for i in range(2**N) if i.bit_count()==k]
+        dicke[inds,k]=1/np.sqrt(len(inds))
+    return number,lap,minus,dicke
+
+def jacobi(mu,weights):
+    q=np.sqrt(weights/weights.sum()); basis=[];diag=[];off=[];prev=np.zeros_like(q);oldb=0.
+    for j in range(len(mu)):
+        basis.append(q.copy());a=q@(mu*q);diag.append(a)
+        r=mu*q-a*q-oldb*prev
+        for qold in basis: r-=qold*(qold@r)
+        if j+1<len(mu):
+            b=np.linalg.norm(r);off.append(b);prev=q;q=r/b;oldb=b
+    return np.diag(diag)+np.diag(off,1)+np.diag(off,-1)
+
+def main():
+    reports=[]
+    # A local Pauli in a fully mixed, rational-Cayley old energy basis.
+    K=np.array([[0,1,2,-1],[-1,0,1,3],[-2,-1,0,2],[1,-3,-2,0]],float)/7
+    U=np.linalg.solve(I4:=np.eye(4)+K,np.eye(4)-K)
+    B=U.T@np.kron(Z,I)@U
+    E=np.array([0.,1.,3.4,8.2]);Eint=np.array([0,10,34,82])
+    assert np.max(np.abs(U.T@U-np.eye(4)))<1e-13
+    assert min(abs(B[a,b]) for a in range(4) for b in range(a))>1e-3
+    def F(mu):
+        f=np.sum(abs(B)**2/(E[:,None]-E[None,:]-mu),axis=1)
+        return f[1:]-f[0]
+    beta=abs(B[0,1:])**2;Delta=E[1:]
+    trials=[]
+    for power in range(12):
+        offset=.01*4**(-power)
+        plus=np.column_stack([F(x-offset) for x in Delta]);minus=np.column_stack([F(x+offset) for x in Delta])
+        scale=np.diag(offset/beta);M=-np.linalg.solve(plus@scale,minus@scale)
+        trials.append({'offset':offset,'minimum_M1':float(min(M@np.ones(3)))})
+        if min(M@np.ones(3))>.5:break
+    else:raise AssertionError('cone trial failed')
+    y=np.array([-.4,.7,-.1])-.2
+    nullp=scale@(M@np.ones(3));nullm=scale@np.ones(3)
+    part=np.linalg.solve(plus,y);lam=max(1.,1+max(-part/nullp))
+    weights=np.r_[part+lam*nullp,lam*nullm];mu=np.r_[Delta-offset,Delta+offset]
+    assert min(weights)>0
+    J=jacobi(mu,weights);ev,vec=eigh(J);order=np.argsort(mu)
+    spectral=max(np.max(abs(ev-mu[order])),np.max(abs(vec[0,:]**2-weights[order]/weights.sum())))
+    cone=np.linalg.norm(np.column_stack([plus,minus])@weights-y)
+    # The actual 6+24 routed one-particle tree, solved with Newton rather than author fixed-point iteration.
+    m=6;q=6;bus_size=m+4*q;rho=min(1e-3,np.sqrt(offset)*1e-2);nu=12.3
+    def routed(x):
+        w=np.r_[x,weights[3:]];mat=np.diag([0.]*m+[nu]*(4*q));mat[:m,:m]=jacobi(mu,w)
+        for j in range(3*q):
+            a=m-1+j;b=m+j;mat[a,b]=mat[b,a]=rho
+        for ell in range(q):
+            a=m+3*(ell+1)-1;b=m+3*q+ell;mat[a,b]=mat[b,a]=rho
+        return mat,w.sum()
+    def calibration(x):
+        mat,S=routed(x);d=[]
+        for a in range(4):
+            d.append(S*sum(abs(B[b,a])**2*np.linalg.solve((E[a]-E[b])*np.eye(bus_size)-mat,np.eye(bus_size)[:,0])[0] for b in range(4)))
+        return np.array(d[1:])-d[0]-y
+    solution=root(calibration,weights[:3],tol=1e-10)
+    assert min(solution.x)>0
+    residual=np.linalg.norm(calibration(solution.x));assert residual<2e-8
+    mat,_=routed(solution.x);responses=[];cofactor_errors=[]
+    all_gaps=[E[a]-E[b] for a in range(4) for b in range(a)]
+    for ell,z in enumerate(all_gaps):
+        leaf=m+3*q+ell;A=z*np.eye(bus_size)-mat
+        direct=np.linalg.solve(A,np.eye(bus_size)[:,leaf])[0]
+        # An independently computed inverse cofactor deletes row leaf and column root.
+        minor=np.delete(np.delete(A,leaf,axis=0),0,axis=1)
+        cofactor=(-1)**leaf*np.linalg.det(minor)/np.linalg.det(A)
+        responses.append(float(direct));cofactor_errors.append(float(abs(direct-cofactor)/max(abs(direct),1e-300)))
+    reports.append({'scope':'positive cone, Lanczos spectral measure, routed recalibration and raw cofactors',
+                    'old_dimension':4,'bus_one_particle_dimension':bus_size,'cone_trials':trials,
+                    'cone_residual':float(cone),'core_spectral_measure_error':float(spectral),
+                    'routed_calibration_residual':float(residual),'routed_responses':responses,
+                    'maximum_relative_cofactor_error':max(cofactor_errors),
+                    'limits':'No complete many-body gap or contraction-constant certificate is inferred from this one-particle fixture.'})
+    assert spectral<1e-9 and cone<1e-9 and max(cofactor_errors)<1e-8 and all(x!=0 for x in responses)
+
+    source_errors=[];wrong_source=[]
+    for N in range(2,7):
+        num,L,ops,P=source_ops(N,1+np.arange(N-1)/7)
+        Q=np.eye(2**N)-P@P.T;chi=Q@ops[0]@P[:,N]
+        for c in [.37,-.41,2.13]:
+            R=np.linalg.inv(L+c*np.eye(2**N));bN=N/(N-1)*(chi@R@chi)
+            k=np.arange(N+1);pred=k*(N-k+1)/(N*N*c)+bN*k*(k-1)/(N*N)
+            actual=P.T@ops[0].T@R@ops[0]@P
+            error=np.linalg.norm(actual-np.diag(pred),2);source_errors.append(float(error))
+            wrong_source.append(float(np.linalg.norm(actual-np.diag(k*(N-k+1)/(N*N*c)),2)))
+    assert max(source_errors)<1e-10 and max(wrong_source)>.01
+    reports.append({'scope':'SU(2) quadratic source resolvent with nonuniform positive edge weights',
+                    'N_values':list(range(2,7)),'c_values':[.37,-.41,2.13],
+                    'maximum_full_matrix_error':max(source_errors),'largest_omitted_multiplicity_term_error':max(wrong_source)})
+
+    # Full 512-dimensional old/bus/two-source model, with exact integer code-energy labels.
+    nb=3;N=2;number,Lunit,minus,Psrc=source_ops(N)
+    busminus=[local(sm,j,nb) for j in range(nb)]
+    one=np.array([[5.73,.19,.13],[.19,7.19,0],[.13,0,9.41]])
+    Hbus=sum(one[i,j]*(busminus[i].T@busminus[j]) for i in range(nb) for j in range(nb))
+    omega=[1.,2.4];omega_int=[10,24];JF=1.137;vp=.41;rs=[.37,.23]
+    dims=[4,8,4,4];ids=[np.eye(d) for d in dims]
+    def place(items):return kron_all([items.get(j,ids[j]) for j in range(4)])
+    K0=place({0:np.diag(E)})+place({1:Hbus})
+    for ell in range(2):K0+=place({ell+2:omega[ell]*number+JF*Lunit})
+    V=vp*place({0:B,1:busminus[0]+busminus[0].T})
+    for ell in range(2):
+        V+=rs[ell]*(place({1:busminus[ell+1].T,ell+2:minus[0]})+place({1:busminus[ell+1],ell+2:minus[0].T}))
+    vacuum=np.eye(8)[:,[0]];Jcode=kron_all([np.eye(4),vacuum,Psrc,Psrc])
+    energies=np.array([a+omega_int[0]*k1+omega_int[1]*k2 for a,k1,k2 in product(Eint,range(3),range(3))])
+    assert np.linalg.norm(K0@Jcode-Jcode@np.diag(energies/10))<1e-12
+    Qbasis=qr(Jcode,mode='full')[0][:,36:]
+    qe,qv=eigh(Qbasis.T@K0@Qbasis);Qeig=Qbasis@qv
+    Z1=Qeig@((Qeig.T@V@Jcode)/(energies[None,:]/10-qe[:,None]))
+    Dbare=Jcode.T@V@Z1;mask=energies[:,None]==energies[None,:]
+    A2=np.zeros_like(K0);selfcoef=[]
+    for ell in range(2):
+        r=rs[ell];w=omega[ell];idx=ell+1
+        aa=-r*r*np.linalg.inv(one-w*np.eye(3))[idx,idx]
+        bb=-r*r*np.linalg.inv(one+(2*JF-w)*np.eye(3))[idx,idx]
+        u=-aa/N;v=-(bb-aa)/N;ct=u*number+v*local(n,0,N)@local(n,1,N)
+        A2+=place({ell+2:ct});selfcoef.append([float(aa),float(bb)])
+    D=(Dbare+Jcode.T@A2@Jcode)*mask
+    diagold=[vp*vp*sum(abs(B[b,a])**2*np.linalg.inv((E[a]-E[b])*np.eye(3)-one)[0,0] for b in range(4)) for a in range(4)]
+    expected=np.kron(np.diag(diagold),np.eye(9));cross=np.zeros_like(expected)
+    lowering=Psrc.T@sum(minus)@Psrc/N;kappas=[]
+    for ell,(a,b) in enumerate([(1,0),(2,1)]):
+        g=np.linalg.inv(one-omega[ell]*np.eye(3))[0,ell+1]
+        kap=-vp*rs[ell]*B[a,b]*g;kappas.append(float(kap))
+        old=np.zeros((4,4));old[a,b]=kap
+        factors=[old,lowering if ell==0 else np.eye(3),lowering if ell==1 else np.eye(3)]
+        term=kron_all(factors);cross+=term+term.T
+    expected+=cross
+    error=np.linalg.norm(D-expected,2);gap=np.min(abs(energies[None,:]/10-qe[:,None]))
+    first=np.linalg.norm(K0@Z1-Z1@np.diag(energies/10)+V@Jcode,2)
+    herm=np.linalg.norm(D-D.T,2);omit=np.linalg.norm(Dbare*mask-expected,2);double=np.linalg.norm(D-(expected+cross),2)
+    # Old 0->2 and simultaneous losses in both sources is degenerate, but cannot be a connected two-action process.
+    index=lambda a,k1,k2:(a*3+k1)*3+k2
+    forbidden=D[index(2,0,0),index(0,1,1)]
+    assert energies[index(2,0,0)]==energies[index(0,1,1)]
+    assert error<2e-9 and first<2e-9 and herm<2e-9 and abs(forbidden)<1e-12
+    assert omit>.001 and double>1e-6 and gap>1e-5
+    reports.append({'scope':'complete two-source second-order matrix with connected old transitions and accidental total-energy degeneracy',
+                    'full_dimension':512,'code_dimension':36,'Q_dimension':476,'full_QP_gap':float(gap),
+                    'second_order_error':float(error),'first_corrector_error':float(first),'hermiticity_error':float(herm),
+                    'forbidden_degenerate_two_source_old_transition':float(forbidden),
+                    'omitted_counterterm_error':float(omit),'doubled_cross_coefficient_error':float(double),
+                    'kappa_values':kappas,'source_A_B':selfcoef,
+                    'limits':'Reduced three-site bus tests the full algebra, not the exact 30-site routed construction or its general gap proof.'})
+    print(json.dumps({'implementation':'reviewer tensor/Kronecker assembly; no imports from author code','results':reports},indent=2))
+
+if __name__=='__main__':main()

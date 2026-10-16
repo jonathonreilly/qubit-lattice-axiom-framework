@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/full_second_order/full_second_order_check.at_launch.py", line 66, in <module>
+    assert max(error,first,herm)<2e-9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

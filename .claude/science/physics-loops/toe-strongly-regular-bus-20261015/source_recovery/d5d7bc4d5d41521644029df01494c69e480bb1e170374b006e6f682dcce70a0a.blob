@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Finite phase-order and branched-bus discriminator; no generic gap certificate."""
+import json
+import numpy as np
+from scipy.linalg import eigh,expm
+from recompute import local,sm
+
+H=np.diag([.23,1.23,3.63,8.43])
+L=np.array([[.2,.13+.07j,-.09+.02j,.04-.03j],
+            [.13-.07j,-.4,.11+.08j,-.06+.05j],
+            [-.09-.02j,.11-.08j,.7,.12-.04j],
+            [.04+.03j,-.06-.05j,.12+.04j,-.1]])
+tstar=1.7;T=37.4;xi2=tstar/T;theta=.37;reserve=2.13;cold=-.49
+G=np.diag(np.diag(L)/tstar).astype(complex)
+wrong=G.copy()
+for index,(a,b) in enumerate(( (a,b) for a in range(4) for b in range(a) )):
+    omega=H[a,a]-H[b,b]
+    kap=2*abs(L[a,b])/tstar*np.exp(1j*(.31+.47*index))
+    phase=np.angle(L[a,b])-np.angle(kap)+omega*T
+    z=kap*np.exp(1j*phase)/2;G[a,b]=z;G[b,a]=z.conjugate()
+    bad=kap*np.exp(1j*(phase-omega*T))/2;wrong[a,b]=bad;wrong[b,a]=bad.conjugate()
+mean_error=np.linalg.norm(G-expm(1j*H*T)@L@expm(-1j*H*T)/tstar,2)
+W=np.exp(1j*theta)*expm(-1j*L)
+rows=[]
+for s in [0.,.31,.7]:
+    t=T+s
+    effective=np.exp(-1j*(reserve*t+cold*xi2*t))*expm(-1j*H*t)@expm(-1j*xi2*t*G)
+    target=np.exp(-1j*(reserve*t+cold*xi2*t+theta))*expm(-1j*H*s)@W@expm(-1j*H*T)
+    err=np.linalg.norm(effective-target,2);bound=xi2*s*np.linalg.norm(L,2)/tstar
+    identity=expm(-1j*H*t)@expm(-1j*xi2*t*G)-expm(-1j*H*s)@expm(-1j*(1+xi2*s/tstar)*L)@expm(-1j*H*T)
+    rows.append({'s':s,'complete_old_phase_error':float(err),'window_upper_bound':float(bound),'exact_order_identity_error':float(np.linalg.norm(identity,2))})
+    assert err<=bound+1e-12 and np.linalg.norm(identity,2)<1e-12
+bad=np.linalg.norm(expm(-1j*H*T)@expm(-1j*tstar*wrong)-expm(-1j*L)@expm(-1j*H*T),2)
+assert mean_error<1e-12 and bad>.01
+
+one=np.diag([1.7,2.4,3.1,4.2]);count=4
+minus=[local(sm,j,count) for j in range(count)]
+for j,t in enumerate([.15,.21,.12],1):one[0,j]=one[j,0]=t
+full=sum(one[i,j]*minus[i].T@minus[j] for i in range(count) for j in range(count))
+ev=np.linalg.eigvalsh(one)
+fake=np.sort([sum(ev[j] for j in range(count) if mask&(1<<j)) for mask in range(2**count)])
+actual=np.linalg.eigvalsh(full)
+branch_failure=np.max(abs(actual-fake));assert branch_failure>1e-5
+base=np.diag(np.diag(one));basefull=sum(base[i,i]*minus[i].T@minus[i] for i in range(count))
+perturb_norm=np.linalg.norm(full-basefull,2);sum_edges=.15+.21+.12
+weyl=np.max(abs(np.linalg.eigvalsh(full)-np.linalg.eigvalsh(basefull)))
+assert weyl<=perturb_norm+1e-12 and perturb_norm<=sum_edges+1e-12
+print(json.dumps({'mean_generator_phase_error':float(mean_error),'phase_order_rows':rows,
+                  'omitted_omega_T_phase_mutant_error':float(bad),
+                  'branched_XY_not_subset_sums_error':float(branch_failure),
+                  'full_many_body_spectral_shift':float(weyl),'full_perturbation_norm':float(perturb_norm),
+                  'sum_edge_norm_bound':sum_edges,
+                  'scope':'Finite phase and branch/Weyl discriminators only; no controller accuracy-family execution.'},indent=2))

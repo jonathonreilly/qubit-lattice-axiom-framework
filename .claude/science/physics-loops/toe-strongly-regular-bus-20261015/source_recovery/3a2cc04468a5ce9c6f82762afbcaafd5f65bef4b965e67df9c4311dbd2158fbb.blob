@@ -1,0 +1,17 @@
+{
+  "start_utc": "2026-10-16T00:35:32.545573+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/run_02/finite_check.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/run_02",
+  "source_sha256": "b21f0266b367944c93567c034ef9f247f777dc6dc564fb871475847644a17520",
+  "source_bytes": 6967,
+  "timeout_seconds": 120,
+  "max_source_qubits": 7,
+  "max_full_source_dimension": 128,
+  "max_bus_one_particle_dimension": 30,
+  "max_fluctuation_rows": 375,
+  "scientific_role": "bounded author algebra sanity only",
+  "launcher_sha256": "48055d1f9ad9443661ddebc31671fa23dcb8c6893c6e5b888923b4743b5a4c9c"
+}

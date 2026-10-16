@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-16T01:40:52.855798+00:00",
+  "refs": {
+    "HEAD": "058724b51948962713d764781fcb4b99802f5410",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_bus_publication_binding/stdout",
+    "bytes": 23283,
+    "sha256": "3642b82459aa3c9cde31cc4fa2d37f277ef77c335df9e6a574015b456cd8fbb8"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_bus_publication_binding/EXECUTION.json",
+      "bytes": 1219,
+      "sha256": "3f19d861fa38610a754f0f2ee4cfbf090c06ee58cd1f2654c88275cc135dc1bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_bus_publication_binding/EXECUTION.json",
+      "bytes": 1289,
+      "sha256": "0037211f97d82eb917cc091f8f320a0cc594b95d7992d88a7d550c73832ee145"
+    }
+  ],
+  "open_count": 60,
+  "delta": {
+    "added": [
+      {
+        "baseRefName": "physics-loop/toe-restricted-spin-source-20261015",
+        "headRefName": "physics-loop/toe-correlated-energy-comparator-20261015",
+        "headRefOid": "058724b51948962713d764781fcb4b99802f5410",
+        "isDraft": false,
+        "number": 9630,
+        "title": "[physics-loop] correlated energy comparator: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9630"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "scope": "Source and open-PR identity observation only; no scientific verification."
+}

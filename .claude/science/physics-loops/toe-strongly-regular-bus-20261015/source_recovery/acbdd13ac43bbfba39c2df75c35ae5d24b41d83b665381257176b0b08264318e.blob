@@ -1,0 +1,26 @@
+"""Final source identity verification and immutable author-proposal receipt.
+Metadata only; no scientific computation or acceptance claim.
+"""
+import datetime,hashlib,json
+from pathlib import Path
+root=Path(__file__).resolve().parent
+if (root/'FREEZE.json').exists():raise RuntimeError('Refuse to overwrite an existing freeze')
+manifest=json.loads((root/'SOURCE_MANIFEST.json').read_text())
+verified=[]
+for row in manifest['sources']:
+    path=Path(row['path']);data=path.read_bytes()
+    digest=hashlib.sha256(data).hexdigest()
+    if digest!=row['sha256'] or len(data)!=row['bytes']:
+        raise RuntimeError('Source changed before freeze: '+row['key'])
+    if Path(row['recovery_path']).read_bytes()!=data:
+        raise RuntimeError('Recovery bytes differ: '+row['key'])
+    verified.append(dict(key=row['key'],sha256=digest,bytes=len(data)))
+files=[]
+for path in sorted(root.rglob('*')):
+    if path.is_file() and path.name not in ('FREEZE.json','freeze.stdout.log','freeze.stderr.log'):
+        data=path.read_bytes()
+        files.append(dict(path=str(path.relative_to(root)),bytes=len(data),sha256=hashlib.sha256(data).hexdigest()))
+receipt=dict(frozen_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),status='author conditional theorem proposal frozen before further candidate comparison',not_independent_or_retained=True,source_verification=verified,artifacts=files)
+(root/'FREEZE.json').write_text(json.dumps(receipt,indent=2)+'\n')
+derivation=next(x for x in files if x['path']=='DERIVATION.md')
+print(json.dumps(dict(frozen_utc=receipt['frozen_utc'],derivation=derivation,artifact_count=len(files),sources_reverified=len(verified),freeze=str(root/'FREEZE.json'))))

@@ -1,0 +1,23 @@
+"""Preserve scientific executable-at-launch and raw bounded execution receipt."""
+import datetime,hashlib,json,subprocess,sys
+from pathlib import Path
+root=Path(__file__).resolve().parent
+src=root/'finite_check.py'
+if len(sys.argv)>1:
+    root=root/sys.argv[1]
+    root.mkdir(exist_ok=False)
+launch=root/'finite_check.at_launch.py'
+data=src.read_bytes();launch.write_bytes(data)
+cmd=[sys.executable,str(launch)]
+receipt=dict(start_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),command=cmd,cwd=str(root),source_sha256=hashlib.sha256(data).hexdigest(),source_bytes=len(data),timeout_seconds=120,max_source_qubits=7,max_full_source_dimension=128,max_bus_one_particle_dimension=30,max_fluctuation_rows=375,scientific_role='bounded author algebra sanity only',launcher_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+(root/'CHECK_LAUNCH.json').write_text(json.dumps(receipt,indent=2)+'\n')
+with (root/'finite_check.stdout.log').open('w') as out,(root/'finite_check.stderr.log').open('w') as err:
+    try:
+        proc=subprocess.run(cmd,cwd=root,stdout=out,stderr=err,timeout=120,check=False)
+        result=dict(returncode=proc.returncode,timed_out=False)
+    except subprocess.TimeoutExpired:
+        result=dict(returncode=None,timed_out=True)
+result['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+(root/'CHECK_RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result))
+sys.exit(0 if result['returncode']==0 else 1)

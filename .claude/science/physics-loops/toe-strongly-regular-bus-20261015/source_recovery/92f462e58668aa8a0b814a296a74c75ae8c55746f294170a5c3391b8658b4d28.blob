@@ -1,0 +1,86 @@
+{
+  "implementation": "reviewer tensor/Kronecker assembly; no imports from author code",
+  "results": [
+    {
+      "scope": "positive cone, Lanczos spectral measure, routed recalibration and raw cofactors",
+      "old_dimension": 4,
+      "bus_one_particle_dimension": 30,
+      "cone_trials": [
+        {
+          "offset": 0.01,
+          "minimum_M1": -3.4080189314834777
+        },
+        {
+          "offset": 0.0025,
+          "minimum_M1": -0.7322066863832961
+        },
+        {
+          "offset": 0.000625,
+          "minimum_M1": 0.4926596964703552
+        },
+        {
+          "offset": 0.00015625,
+          "minimum_M1": 0.8674626850138032
+        }
+      ],
+      "cone_residual": 6.77599954797753e-16,
+      "core_spectral_measure_error": 6.426192911135331e-12,
+      "routed_calibration_residual": 9.86221123384638e-12,
+      "routed_responses": [
+        -2.4553323647633327e-18,
+        3.9774709840408517e-32,
+        1.8670144546772397e-54,
+        8.060538308650836e-58,
+        3.6525685191663456e-80,
+        -5.995931879009412e-97
+      ],
+      "maximum_relative_cofactor_error": 3.352821017160698e-14,
+      "limits": "No complete many-body gap or contraction-constant certificate is inferred from this one-particle fixture."
+    },
+    {
+      "scope": "SU(2) quadratic source resolvent with nonuniform positive edge weights",
+      "N_values": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "c_values": [
+        0.37,
+        -0.41,
+        2.13
+      ],
+      "maximum_full_matrix_error": 1.199040866595169e-14,
+      "largest_omitted_multiplicity_term_error": 9.1325728461391
+    },
+    {
+      "scope": "complete two-source second-order matrix with connected old transitions and accidental total-energy degeneracy",
+      "full_dimension": 512,
+      "code_dimension": 36,
+      "Q_dimension": 476,
+      "full_QP_gap": 0.014197430659924848,
+      "second_order_error": 1.1227261078200748e-13,
+      "first_corrector_error": 6.687564999065247e-14,
+      "hermiticity_error": 2.170785317945311e-19,
+      "forbidden_degenerate_two_source_old_transition": -2.2992848573955154e-18,
+      "omitted_counterterm_error": 0.025789772230570867,
+      "doubled_cross_coefficient_error": 0.00019017944778953344,
+      "kappa_values": [
+        3.8584538638387625e-05,
+        -0.00026617227147297486
+      ],
+      "source_A_B": [
+        [
+          -0.022143630859032995,
+          -0.016184243340212637
+        ],
+        [
+          -0.007551842097437851,
+          -0.005699828164437693
+        ]
+      ],
+      "limits": "Reduced three-site bus tests the full algebra, not the exact 30-site routed construction or its general gap proof."
+    }
+  ]
+}

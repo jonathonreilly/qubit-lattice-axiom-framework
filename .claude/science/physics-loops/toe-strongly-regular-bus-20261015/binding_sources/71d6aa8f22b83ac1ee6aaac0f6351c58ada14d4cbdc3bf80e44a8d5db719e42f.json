@@ -1,0 +1,790 @@
+{
+  "frozen_utc": "2026-10-16T01:39:45.087131+00:00",
+  "scope": "Exact source-only draft, selected recovery, changed-code maps and actual metadata evidence",
+  "note": {
+    "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 83847,
+    "sha256": "ca5458cc82c78831338dac4bc999a17184f77d63b8ee2c65a084e569e3b032e9"
+  },
+  "immutable_bodies": 2,
+  "direct_mathematical_parents": 0,
+  "transitive_premise_files": 0,
+  "scientific_programs_run_this_draft": 0,
+  "historical_scientific_programs_replayed": 0,
+  "primary_execution": null,
+  "actual_binding": null,
+  "publication_action": null,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "path": "BUILD_RESULT.json",
+      "bytes": 489,
+      "sha256": "b0ddaaddd2528da43c69d17251bc57ff8ba3336db9622283619916ec9552b8da"
+    },
+    {
+      "path": "CHANGED_CODE.patch",
+      "bytes": 25895,
+      "sha256": "144548ca9723dd815d4a3e197ef1ababa38029af7c8450b5fedf47becaaa6c05"
+    },
+    {
+      "path": "CHANGED_TEXT.patch",
+      "bytes": 62353,
+      "sha256": "9ba2fb37926cfeba5ffd41c223ecf6e84d11ff57fccd10badffa5e03488e985e"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1612,
+      "sha256": "40877224e9dcf492b7612550868974c24b36308e4f88bf1d2bcf84fa3b3d46bb"
+    },
+    {
+      "path": "COMMANDS.md",
+      "bytes": 2512,
+      "sha256": "db251e1c5261daaa51b2689748fbad9cd5d1744569f603ba71737218467f7c06"
+    },
+    {
+      "path": "COMMAND_LOG.jsonl",
+      "bytes": 4416,
+      "sha256": "3aaf4154e1d817b9f52dd64f9a8c393d659193d43e9a18bf7fdfc486c74d6858"
+    },
+    {
+      "path": "DELIVERY.json",
+      "bytes": 1140,
+      "sha256": "465b8be8844eca3248979b9abc717ce2eb70d083a96a65735c1a8299323e96ec"
+    },
+    {
+      "path": "DISCOVERY_FAILURE.json",
+      "bytes": 454,
+      "sha256": "04bb8e440904b97e6716cc6d6a7fc9270e9b7d9ea31345a134b4453a35e55738"
+    },
+    {
+      "path": "FINAL_REVIEW_METADATA_OPERATION.json",
+      "bytes": 1303,
+      "sha256": "bfb68a33310fcbb97921e2b8fe2abe261c9dc305b651db0d9b342d5e9df50c41"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 1605,
+      "sha256": "af3e144a0afbbdb38367cc737a5b5129811628b47331d56c5b541d8f80f78415"
+    },
+    {
+      "path": "IMPLEMENTATION_BASIS.json",
+      "bytes": 2467,
+      "sha256": "553e8f9d6bf3dc0c93b7461e69871da966b421ab3fac7a2f7b4ce00b1e90e2b8"
+    },
+    {
+      "path": "INITIAL_BINDING.json",
+      "bytes": 325,
+      "sha256": "23ee618157a009a4cd0da974017c26e88bdb889fc4e3ef0de948409d8648ca93"
+    },
+    {
+      "path": "NEW_METADATA_CODE.patch",
+      "bytes": 35598,
+      "sha256": "81be8be2fa320247106ff2e7fdc8dc777e8a7aa0e2cf75fdb7ad70af6a0d1177"
+    },
+    {
+      "path": "NEW_METADATA_CODE_MAP.json",
+      "bytes": 5714,
+      "sha256": "2ae16818d1932154d65651fcf7ef8715245d7355b5a6f090093594806813a818"
+    },
+    {
+      "path": "PARENT_BINDING.json",
+      "bytes": 763,
+      "sha256": "9674ff9718ec664107f6e9d6027a237ed752a2a49fc91b6708e6e88d98f3302e"
+    },
+    {
+      "path": "PAYLOAD_INDEX.json",
+      "bytes": 21970,
+      "sha256": "ba47446667961ea84846e413a681b3497b8398dfb08f11e4730b0ccc4cb8cdbb"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 5033,
+      "sha256": "994530c3cdb50e59b590750e47ece811f0d2fff3c6cf76540b7241cd70a09470"
+    },
+    {
+      "path": "REUSE_MAP.json",
+      "bytes": 38186,
+      "sha256": "220683d00d8f96fe568cf64a1b5bf20d8e77a85724eab3f29129e06968a924db"
+    },
+    {
+      "path": "REVIEW_SURFACE.json",
+      "bytes": 10501,
+      "sha256": "fe8631fc40e4911431ea6b4713ee5f7168e01b5c51fcd80274c414e589267c0b"
+    },
+    {
+      "path": "ROOT_READ_GUIDE.md",
+      "bytes": 6004,
+      "sha256": "a3ddc09d4ab3f6d9411ef31cf09d446bdded8bb7332521f2447687128e1ae1b7"
+    },
+    {
+      "path": "SCAFFOLD_OPERATION.json",
+      "bytes": 443,
+      "sha256": "31149aebf59509628d550077737e220265e389b0f1d0ba2ac3d51de8f55c10bf"
+    },
+    {
+      "path": "SCRIPT_MAP.json",
+      "bytes": 1241,
+      "sha256": "27ada05cd3877b76b620ff5f319839291e8ad15b1e016b2fab3b46662bf5bfeb"
+    },
+    {
+      "path": "SEAL_OPERATION.json",
+      "bytes": 994,
+      "sha256": "efbdfa0cc62a96ae6d8ec114023eb3b2354ec15948513899e424d4d3a1eda3ae"
+    },
+    {
+      "path": "SOURCE_BINDING.json",
+      "bytes": 35884,
+      "sha256": "4e4d7b45524919525ffd79ccc9ad1b56f5ad111a4053db5278296d6bca5f0156"
+    },
+    {
+      "path": "SOURCE_FRESHNESS.json",
+      "bytes": 31895,
+      "sha256": "11ab4c233fc6579fcc7bbba15f016f4948b144ca5aa5e0206c13a82cad57df0e"
+    },
+    {
+      "path": "START.json",
+      "bytes": 2529,
+      "sha256": "86242c636a174af246b6022cc1a37b958df87ee65671664fdd0ec0e847ca8eb1"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 2205,
+      "sha256": "0c9064307e3282314dd158aa9f48b968646fc9a6ccdf908b271704e7d857b183"
+    },
+    {
+      "path": "build_proposal.py",
+      "bytes": 13292,
+      "sha256": "ef95eb52e819ba9596392332366dbe320f8b8f93dbc1f7e60bd2dd3ef7917ed8"
+    },
+    {
+      "path": "finalize_review_metadata.py",
+      "bytes": 4730,
+      "sha256": "a545c99ae2de009ed7da50d748da963ec63edb9cc3af73fafe853f91c74d10bc"
+    },
+    {
+      "path": "inspect_proposal.py",
+      "bytes": 15963,
+      "sha256": "42daf8863e72f1c80b1273ae5aee73477bd6b530b2e2ef16a758378b6795668c"
+    },
+    {
+      "path": "metadata_failures/scaffold_01/FAILURE.json",
+      "bytes": 430,
+      "sha256": "302a1c240a3a526cf46e7b7d771d6e836aed2631c829b27267e1816bf8707f4e"
+    },
+    {
+      "path": "metadata_failures/scaffold_01/source_at_failure.py",
+      "bytes": 14259,
+      "sha256": "7fd55e01ae95996d096df8e3aa68b0a1c23cd79cf559a74ff44d34ec258c1bb8"
+    },
+    {
+      "path": "metadata_inputs/23ee618157a009a4cd0da974017c26e88bdb889fc4e3ef0de948409d8648ca93.blob",
+      "bytes": 325,
+      "sha256": "23ee618157a009a4cd0da974017c26e88bdb889fc4e3ef0de948409d8648ca93"
+    },
+    {
+      "path": "metadata_inputs/3a1cbe63e6d8ce57693bdcd9d2f4721984b04479ced88f2ebb276ec2e8166a32.blob",
+      "bytes": 925,
+      "sha256": "3a1cbe63e6d8ce57693bdcd9d2f4721984b04479ced88f2ebb276ec2e8166a32"
+    },
+    {
+      "path": "metadata_inputs/418df1adb6374a7cf2efcae51e0cf82d087886fa0bed6344d2d82e39f1b10e8c.blob",
+      "bytes": 794,
+      "sha256": "418df1adb6374a7cf2efcae51e0cf82d087886fa0bed6344d2d82e39f1b10e8c"
+    },
+    {
+      "path": "metadata_inputs/4c42fbb3bdc8081d5c58d12add2c5ab1e562dc97d9b601b1ceba6c267a9a338b.blob",
+      "bytes": 3463,
+      "sha256": "4c42fbb3bdc8081d5c58d12add2c5ab1e562dc97d9b601b1ceba6c267a9a338b"
+    },
+    {
+      "path": "metadata_inputs/4e4d7b45524919525ffd79ccc9ad1b56f5ad111a4053db5278296d6bca5f0156.blob",
+      "bytes": 35884,
+      "sha256": "4e4d7b45524919525ffd79ccc9ad1b56f5ad111a4053db5278296d6bca5f0156"
+    },
+    {
+      "path": "metadata_inputs/553e8f9d6bf3dc0c93b7461e69871da966b421ab3fac7a2f7b4ce00b1e90e2b8.blob",
+      "bytes": 2467,
+      "sha256": "553e8f9d6bf3dc0c93b7461e69871da966b421ab3fac7a2f7b4ce00b1e90e2b8"
+    },
+    {
+      "path": "metadata_inputs/5e248015c0322c3979ba388cb091667a7c45a7faa138e3b0080ee9b38614c42f.blob",
+      "bytes": 19580,
+      "sha256": "5e248015c0322c3979ba388cb091667a7c45a7faa138e3b0080ee9b38614c42f"
+    },
+    {
+      "path": "metadata_inputs/5e9f8b21f95f63c8269b0272f034a7c3023fa764736d0796740a13c6b8a5103c.blob",
+      "bytes": 15159,
+      "sha256": "5e9f8b21f95f63c8269b0272f034a7c3023fa764736d0796740a13c6b8a5103c"
+    },
+    {
+      "path": "metadata_inputs/658530fc22e0bf491151ca60e85f5856fa7eebd86da529f0892e9251ef9d8bdc.blob",
+      "bytes": 682,
+      "sha256": "658530fc22e0bf491151ca60e85f5856fa7eebd86da529f0892e9251ef9d8bdc"
+    },
+    {
+      "path": "metadata_inputs/7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf.blob",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "metadata_inputs/7ee79c68db3e40f3363284e6c0394e4e3d726efac21494cc7b9ee01ca037b5ba.blob",
+      "bytes": 977,
+      "sha256": "7ee79c68db3e40f3363284e6c0394e4e3d726efac21494cc7b9ee01ca037b5ba"
+    },
+    {
+      "path": "metadata_inputs/9674ff9718ec664107f6e9d6027a237ed752a2a49fc91b6708e6e88d98f3302e.blob",
+      "bytes": 763,
+      "sha256": "9674ff9718ec664107f6e9d6027a237ed752a2a49fc91b6708e6e88d98f3302e"
+    },
+    {
+      "path": "metadata_inputs/a4b561881e9b5cd0e0c785e1e03dd059fa93f0b02ab4f70afde905629629c5c9.blob",
+      "bytes": 580,
+      "sha256": "a4b561881e9b5cd0e0c785e1e03dd059fa93f0b02ab4f70afde905629629c5c9"
+    },
+    {
+      "path": "metadata_inputs/a92f8decc9d1c346c9a82bf12a1037b5a72d131f6672613b53fb14ad7e341dcd.blob",
+      "bytes": 793,
+      "sha256": "a92f8decc9d1c346c9a82bf12a1037b5a72d131f6672613b53fb14ad7e341dcd"
+    },
+    {
+      "path": "metadata_inputs/d249b56260f8daab7c7f76a7ee9eac24a5e7bb3b900b286e47b512db1c2687ca.blob",
+      "bytes": 993,
+      "sha256": "d249b56260f8daab7c7f76a7ee9eac24a5e7bb3b900b286e47b512db1c2687ca"
+    },
+    {
+      "path": "metadata_inputs/f8bebc4d210c176c7d82aeb175f88a44958a772574ca846db1637e396c68edfa.blob",
+      "bytes": 821,
+      "sha256": "f8bebc4d210c176c7d82aeb175f88a44958a772574ca846db1637e396c68edfa"
+    },
+    {
+      "path": "metadata_runs/build/EXECUTION.json",
+      "bytes": 2339,
+      "sha256": "09bcfaf5393df22203bd468952b6d0937eb35e4c316fff0ee8655707918bbaf6"
+    },
+    {
+      "path": "metadata_runs/build/LAUNCH.json",
+      "bytes": 11829,
+      "sha256": "f461e1eb79faa545a5d3466953bc48b469a1fe5f68a5620ea0ba96f058a1805a"
+    },
+    {
+      "path": "metadata_runs/build/executed_source.py",
+      "bytes": 13292,
+      "sha256": "ef95eb52e819ba9596392332366dbe320f8b8f93dbc1f7e60bd2dd3ef7917ed8"
+    },
+    {
+      "path": "metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/build/stdout",
+      "bytes": 489,
+      "sha256": "b0ddaaddd2528da43c69d17251bc57ff8ba3336db9622283619916ec9552b8da"
+    },
+    {
+      "path": "metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2365,
+      "sha256": "8054e820318ed99f9a7722e68439ddbf67d58d6b4d4b34f0f5ee853764c778cf"
+    },
+    {
+      "path": "metadata_runs/inspection/LAUNCH.json",
+      "bytes": 11836,
+      "sha256": "0b7858b688555e1ad9ac823653fbe20ee83165b7fe4f12792ec49d869fe16b35"
+    },
+    {
+      "path": "metadata_runs/inspection/executed_source.py",
+      "bytes": 15963,
+      "sha256": "42daf8863e72f1c80b1273ae5aee73477bd6b530b2e2ef16a758378b6795668c"
+    },
+    {
+      "path": "metadata_runs/inspection/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/inspection/stdout",
+      "bytes": 2205,
+      "sha256": "0c9064307e3282314dd158aa9f48b968646fc9a6ccdf908b271704e7d857b183"
+    },
+    {
+      "path": "packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 793,
+      "sha256": "a92f8decc9d1c346c9a82bf12a1037b5a72d131f6672613b53fb14ad7e341dcd"
+    },
+    {
+      "path": "packet_text/BINDING_CONTRACT.md",
+      "bytes": 3463,
+      "sha256": "4c42fbb3bdc8081d5c58d12add2c5ab1e562dc97d9b601b1ceba6c267a9a338b"
+    },
+    {
+      "path": "packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 580,
+      "sha256": "a4b561881e9b5cd0e0c785e1e03dd059fa93f0b02ab4f70afde905629629c5c9"
+    },
+    {
+      "path": "packet_text/COUNTEREXAMPLES.md",
+      "bytes": 977,
+      "sha256": "7ee79c68db3e40f3363284e6c0394e4e3d726efac21494cc7b9ee01ca037b5ba"
+    },
+    {
+      "path": "packet_text/HANDOFF.md",
+      "bytes": 682,
+      "sha256": "658530fc22e0bf491151ca60e85f5856fa7eebd86da529f0892e9251ef9d8bdc"
+    },
+    {
+      "path": "packet_text/PR_BODY.md",
+      "bytes": 794,
+      "sha256": "418df1adb6374a7cf2efcae51e0cf82d087886fa0bed6344d2d82e39f1b10e8c"
+    },
+    {
+      "path": "packet_text/RECOVERY_SCOPE.md",
+      "bytes": 993,
+      "sha256": "d249b56260f8daab7c7f76a7ee9eac24a5e7bb3b900b286e47b512db1c2687ca"
+    },
+    {
+      "path": "packet_text/REVIEW_HISTORY.md",
+      "bytes": 821,
+      "sha256": "f8bebc4d210c176c7d82aeb175f88a44958a772574ca846db1637e396c68edfa"
+    },
+    {
+      "path": "packet_text/TRACE_GATE.md",
+      "bytes": 925,
+      "sha256": "3a1cbe63e6d8ce57693bdcd9d2f4721984b04479ced88f2ebb276ec2e8166a32"
+    },
+    {
+      "path": "prepare_scaffold.py",
+      "bytes": 14251,
+      "sha256": "c8738c075cbd7901357ded8f261ab495cb41879581f35448abc6996f8e7fe88f"
+    },
+    {
+      "path": "primary_template.py",
+      "bytes": 15159,
+      "sha256": "5e9f8b21f95f63c8269b0272f034a7c3023fa764736d0796740a13c6b8a5103c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/ACTUAL_BINDING.json",
+      "bytes": 375,
+      "sha256": "40635cb9358d44ca9846fe41fc0f04c6eab750796f907c30f66e2f8a7aba17ff"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/ARCHIVE_INDEX.json",
+      "bytes": 36260,
+      "sha256": "78d6f6acf0c48a56508a3b2f82591c2840caa083162a64df558d208324037a79"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 793,
+      "sha256": "a92f8decc9d1c346c9a82bf12a1037b5a72d131f6672613b53fb14ad7e341dcd"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/BINDING_CONTRACT.md",
+      "bytes": 3463,
+      "sha256": "4c42fbb3bdc8081d5c58d12add2c5ab1e562dc97d9b601b1ceba6c267a9a338b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/BODY_MAP.json",
+      "bytes": 711,
+      "sha256": "e0ea96413d28b25d0b8e8b718cac67969c54dea5d1855d3af42bba99b9416a52"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/CHECK_RECEIPTS.json",
+      "bytes": 28912,
+      "sha256": "ed6ffe71afc7b3ffd36b563fa53014bdd3da54cb86a92e5d4ba9a6afc811c14f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 580,
+      "sha256": "a4b561881e9b5cd0e0c785e1e03dd059fa93f0b02ab4f70afde905629629c5c9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/COUNTEREXAMPLES.md",
+      "bytes": 977,
+      "sha256": "7ee79c68db3e40f3363284e6c0394e4e3d726efac21494cc7b9ee01ca037b5ba"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/DEPENDENCIES.json",
+      "bytes": 109,
+      "sha256": "a25706cc489fad0a54628797a29d34e0e5729ec57f640a703ce5aea3f617c85d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/HANDOFF.md",
+      "bytes": 682,
+      "sha256": "658530fc22e0bf491151ca60e85f5856fa7eebd86da529f0892e9251ef9d8bdc"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/INPUT_MANIFEST.json",
+      "bytes": 21235,
+      "sha256": "bc880570291d477d316ac3341b3a8ebd08d78ca3d604d84cd8fdf6957b243a6f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/PARENT_BINDING.json",
+      "bytes": 763,
+      "sha256": "9674ff9718ec664107f6e9d6027a237ed752a2a49fc91b6708e6e88d98f3302e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/PR_BODY.md",
+      "bytes": 794,
+      "sha256": "418df1adb6374a7cf2efcae51e0cf82d087886fa0bed6344d2d82e39f1b10e8c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/PR_TITLE.txt",
+      "bytes": 75,
+      "sha256": "d6c117318fcf3f2b253a8e8364cf50d4ddb6b4ff212bc0a80cf6eb95e0eaa3d8"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/PUBLICATION_STATE.json",
+      "bytes": 491,
+      "sha256": "9869067d8b733cf6a2472df6a560b5f90689d7bc8a91cddc390f7bd6a70ce141"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/RECOVERY_SCOPE.md",
+      "bytes": 993,
+      "sha256": "d249b56260f8daab7c7f76a7ee9eac24a5e7bb3b900b286e47b512db1c2687ca"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/RECOVERY_SELECTION.json",
+      "bytes": 36101,
+      "sha256": "0a9846f05f8f724cc4bedad7472f17a09c8c54e71269577e6bd02491d9c0fcf1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/REVIEW_HISTORY.md",
+      "bytes": 821,
+      "sha256": "f8bebc4d210c176c7d82aeb175f88a44958a772574ca846db1637e396c68edfa"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/SOURCE_MANIFEST.json",
+      "bytes": 61180,
+      "sha256": "0b9325f826e6c87fd8195c790ec775266dc410318cbe52e83f26e70dd3726462"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/TRACE_GATE.md",
+      "bytes": 925,
+      "sha256": "3a1cbe63e6d8ce57693bdcd9d2f4721984b04479ced88f2ebb276ec2e8166a32"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/11812da3a16d13e5b9d901df300c02660202751ef72613f0e9cd435c0812298d.blob",
+      "bytes": 1017,
+      "sha256": "11812da3a16d13e5b9d901df300c02660202751ef72613f0e9cd435c0812298d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/185aa0c83c725e09e5ba10197dab16f1254f639d563e8d2993adc7df0e5ee0a4.blob",
+      "bytes": 332,
+      "sha256": "185aa0c83c725e09e5ba10197dab16f1254f639d563e8d2993adc7df0e5ee0a4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/1c4a00e0195c28bd36b68094442254967f75fe70dc587e6ce1d523f9b53d65e6.blob",
+      "bytes": 5245,
+      "sha256": "1c4a00e0195c28bd36b68094442254967f75fe70dc587e6ce1d523f9b53d65e6"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/22bead85499930f151f128633db75522b7ea0fbf3a6b8777a124f1f3edf1502b.blob",
+      "bytes": 2068,
+      "sha256": "22bead85499930f151f128633db75522b7ea0fbf3a6b8777a124f1f3edf1502b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/23ee618157a009a4cd0da974017c26e88bdb889fc4e3ef0de948409d8648ca93.blob",
+      "bytes": 325,
+      "sha256": "23ee618157a009a4cd0da974017c26e88bdb889fc4e3ef0de948409d8648ca93"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508.blob",
+      "bytes": 9215,
+      "sha256": "2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/2dfa5c6176bbd310a517a0e47acf2da19c4443025705e3b09fa05d811cb183cb.blob",
+      "bytes": 9004,
+      "sha256": "2dfa5c6176bbd310a517a0e47acf2da19c4443025705e3b09fa05d811cb183cb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/36bd9d19c09262f539f72c7283756cfa86fbae065a435e13a2248f521e867632.blob",
+      "bytes": 3533,
+      "sha256": "36bd9d19c09262f539f72c7283756cfa86fbae065a435e13a2248f521e867632"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/3a2cc04468a5ce9c6f82762afbcaafd5f65bef4b965e67df9c4311dbd2158fbb.blob",
+      "bytes": 842,
+      "sha256": "3a2cc04468a5ce9c6f82762afbcaafd5f65bef4b965e67df9c4311dbd2158fbb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/3e5e769880746b925f759afc412812fe6fec62486be760a11200d63a0a786de4.blob",
+      "bytes": 3338,
+      "sha256": "3e5e769880746b925f759afc412812fe6fec62486be760a11200d63a0a786de4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/3e85a96b1d47e0d1c5c07de24161a1ee71efa99616ea414552d7a0698de1a27d.blob",
+      "bytes": 904,
+      "sha256": "3e85a96b1d47e0d1c5c07de24161a1ee71efa99616ea414552d7a0698de1a27d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/3ebe4a1c40c4349c600f19ae7c9ccfef2eb79c4596855780ae634d20ecf2e67d.blob",
+      "bytes": 548,
+      "sha256": "3ebe4a1c40c4349c600f19ae7c9ccfef2eb79c4596855780ae634d20ecf2e67d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/411d9258730e4c15433cf9cc9e4c76fc024e6165ef5664ce6cc769f434637a74.blob",
+      "bytes": 350,
+      "sha256": "411d9258730e4c15433cf9cc9e4c76fc024e6165ef5664ce6cc769f434637a74"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/425912c7abc039b9ac2155bc372c4dfa7b79f9676507fb48a4b5fa2b8684fe8f.blob",
+      "bytes": 303,
+      "sha256": "425912c7abc039b9ac2155bc372c4dfa7b79f9676507fb48a4b5fa2b8684fe8f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/43cc594c7ff61a84c99d38143dbc02d5798e991aa80c2d26a12662366b6a9d7f.blob",
+      "bytes": 3544,
+      "sha256": "43cc594c7ff61a84c99d38143dbc02d5798e991aa80c2d26a12662366b6a9d7f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/45ba0b48b9a893b5504d51b8c61a52fab2c0bc485a4f0fbc7cd573d375ab065e.blob",
+      "bytes": 98,
+      "sha256": "45ba0b48b9a893b5504d51b8c61a52fab2c0bc485a4f0fbc7cd573d375ab065e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/48055d1f9ad9443661ddebc31671fa23dcb8c6893c6e5b888923b4743b5a4c9c.blob",
+      "bytes": 1497,
+      "sha256": "48055d1f9ad9443661ddebc31671fa23dcb8c6893c6e5b888923b4743b5a4c9c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/4cbb550d2a2de48332a1de84fa73a118fba5a511dca931df185e41811e0e34bb.blob",
+      "bytes": 3473,
+      "sha256": "4cbb550d2a2de48332a1de84fa73a118fba5a511dca931df185e41811e0e34bb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/4e229757fc07bf0b3e3a3ec821adf1418643468040c2b1f9c258b6b3968a22d1.blob",
+      "bytes": 4553,
+      "sha256": "4e229757fc07bf0b3e3a3ec821adf1418643468040c2b1f9c258b6b3968a22d1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/4e4d7b45524919525ffd79ccc9ad1b56f5ad111a4053db5278296d6bca5f0156.blob",
+      "bytes": 35884,
+      "sha256": "4e4d7b45524919525ffd79ccc9ad1b56f5ad111a4053db5278296d6bca5f0156"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/54bb75d961857cf33a6c5b5add71dd83ab1be8fef73de18003ff227f6eea02c4.blob",
+      "bytes": 430,
+      "sha256": "54bb75d961857cf33a6c5b5add71dd83ab1be8fef73de18003ff227f6eea02c4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/5654254e4f4b1450ff7fbd0abcea8c63d36e867f93e6e19f84e40174c6a735b0.blob",
+      "bytes": 828,
+      "sha256": "5654254e4f4b1450ff7fbd0abcea8c63d36e867f93e6e19f84e40174c6a735b0"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/59b3872ce262cc54d31c7d828025b424d96225118efc14bbbacc1858c8ddd4d6.blob",
+      "bytes": 281,
+      "sha256": "59b3872ce262cc54d31c7d828025b424d96225118efc14bbbacc1858c8ddd4d6"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/653ad5ead571418dcef88ebd2054327e74d406ccb5d59c6c3c53ca8ad3859995.blob",
+      "bytes": 1005,
+      "sha256": "653ad5ead571418dcef88ebd2054327e74d406ccb5d59c6c3c53ca8ad3859995"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/6810cfdca40ae0cac56fa0ce0df932414ac48be43f5dd9c5017820a4ad9cb817.blob",
+      "bytes": 830,
+      "sha256": "6810cfdca40ae0cac56fa0ce0df932414ac48be43f5dd9c5017820a4ad9cb817"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/7bb08a0c201d2bdcb6c2a4e48cb4811eac7cbf116c2646b599349fce61dd55b1.blob",
+      "bytes": 433,
+      "sha256": "7bb08a0c201d2bdcb6c2a4e48cb4811eac7cbf116c2646b599349fce61dd55b1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/7f9b00618c9ef581f352b9c3436e4a4dea131d9f87f08cf9216980674ab23427.blob",
+      "bytes": 1431,
+      "sha256": "7f9b00618c9ef581f352b9c3436e4a4dea131d9f87f08cf9216980674ab23427"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/7fe8d8b2f9102ad154a8557c57c3d5dfdafd26697124ca4d231b260c63279307.blob",
+      "bytes": 7896,
+      "sha256": "7fe8d8b2f9102ad154a8557c57c3d5dfdafd26697124ca4d231b260c63279307"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/8d4fc51cb4d5663762171331f9b152a39782e75c6cbb4ff481b951655ae5b2f7.blob",
+      "bytes": 98,
+      "sha256": "8d4fc51cb4d5663762171331f9b152a39782e75c6cbb4ff481b951655ae5b2f7"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/92f462e58668aa8a0b814a296a74c75ae8c55746f294170a5c3391b8658b4d28.blob",
+      "bytes": 2708,
+      "sha256": "92f462e58668aa8a0b814a296a74c75ae8c55746f294170a5c3391b8658b4d28"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/9a27384ed80d3bde9abc7fc9dc45bca0ab1280abbdcd09242729ac101e13b7cb.blob",
+      "bytes": 1791,
+      "sha256": "9a27384ed80d3bde9abc7fc9dc45bca0ab1280abbdcd09242729ac101e13b7cb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880.blob",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/a35bafbce8e7b0be63333eab3e4f86957f485de8b9a84599d7c515618a71c2a0.blob",
+      "bytes": 2668,
+      "sha256": "a35bafbce8e7b0be63333eab3e4f86957f485de8b9a84599d7c515618a71c2a0"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/a3a31a04928c48f69166ae7d6a6d224f7fe612887c84f6273baab253b1bdbb74.blob",
+      "bytes": 804,
+      "sha256": "a3a31a04928c48f69166ae7d6a6d224f7fe612887c84f6273baab253b1bdbb74"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/a6f9219e3f89689fee6963cf9991bad285ff74e0514e426213cb051a97362b1d.blob",
+      "bytes": 810,
+      "sha256": "a6f9219e3f89689fee6963cf9991bad285ff74e0514e426213cb051a97362b1d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/a9cd83f3ee125484f62beab5fc10cc1c58b99ccaa992a3b9e05a155f418fd4ca.blob",
+      "bytes": 3361,
+      "sha256": "a9cd83f3ee125484f62beab5fc10cc1c58b99ccaa992a3b9e05a155f418fd4ca"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/ab98ed0729a0e6e887c004a24ba5026a2762dc48f5ee3fa8d10386fbde78f4c8.blob",
+      "bytes": 85,
+      "sha256": "ab98ed0729a0e6e887c004a24ba5026a2762dc48f5ee3fa8d10386fbde78f4c8"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/acbdd13ac43bbfba39c2df75c35ae5d24b41d83b665381257176b0b08264318e.blob",
+      "bytes": 1692,
+      "sha256": "acbdd13ac43bbfba39c2df75c35ae5d24b41d83b665381257176b0b08264318e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/acd758dd676a2f9d214067c96faa3607983f3d5adffbbd2755aecf73e1c518bf.blob",
+      "bytes": 6660,
+      "sha256": "acd758dd676a2f9d214067c96faa3607983f3d5adffbbd2755aecf73e1c518bf"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/b0f6aa9b09eb72979d3ae2ee13683822e51a73df03f7cd53f0aa94e600d0c3d7.blob",
+      "bytes": 85,
+      "sha256": "b0f6aa9b09eb72979d3ae2ee13683822e51a73df03f7cd53f0aa94e600d0c3d7"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/b1e6d47573519c9b39bd160d21f28c8ac15fbf382907c0e5dc61a818a8651292.blob",
+      "bytes": 4952,
+      "sha256": "b1e6d47573519c9b39bd160d21f28c8ac15fbf382907c0e5dc61a818a8651292"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.blob",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/b21f0266b367944c93567c034ef9f247f777dc6dc564fb871475847644a17520.blob",
+      "bytes": 6967,
+      "sha256": "b21f0266b367944c93567c034ef9f247f777dc6dc564fb871475847644a17520"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/b3237abd67a23b3d483461e612d5777e5a5c968cb0fe0bcb3d041ecb75d47c5c.blob",
+      "bytes": 1824,
+      "sha256": "b3237abd67a23b3d483461e612d5777e5a5c968cb0fe0bcb3d041ecb75d47c5c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/b7c71dcc8552b5401fa904744d43a36c2f1560d25e63789558158f7625a5af67.blob",
+      "bytes": 98,
+      "sha256": "b7c71dcc8552b5401fa904744d43a36c2f1560d25e63789558158f7625a5af67"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/bfe6eda1aa915e8447370c3c9a3b36b4cdb07dee469438253a7d4f996f8aa09d.blob",
+      "bytes": 975,
+      "sha256": "bfe6eda1aa915e8447370c3c9a3b36b4cdb07dee469438253a7d4f996f8aa09d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/c086beea373f1ac550449fe863afab31d1b2efcc874750e9ac921f9f81dd7974.blob",
+      "bytes": 3150,
+      "sha256": "c086beea373f1ac550449fe863afab31d1b2efcc874750e9ac921f9f81dd7974"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726.blob",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/d49d18dbbb327cb75ce628e90039364dbd3486779fb61b410b6ddf427348b44e.blob",
+      "bytes": 7258,
+      "sha256": "d49d18dbbb327cb75ce628e90039364dbd3486779fb61b410b6ddf427348b44e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/d5d7bc4d5d41521644029df01494c69e480bb1e170374b006e6f682dcce70a0a.blob",
+      "bytes": 2989,
+      "sha256": "d5d7bc4d5d41521644029df01494c69e480bb1e170374b006e6f682dcce70a0a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/d9c25c69380bea27b2b113b94283631c7391cb277217851bc6ca4e3d3804e110.blob",
+      "bytes": 98,
+      "sha256": "d9c25c69380bea27b2b113b94283631c7391cb277217851bc6ca4e3d3804e110"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/e18a228cd8008a663f82d9be789e2596eb214279cf3f3b91a3daaf2930b60f8d.blob",
+      "bytes": 12443,
+      "sha256": "e18a228cd8008a663f82d9be789e2596eb214279cf3f3b91a3daaf2930b60f8d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c.blob",
+      "bytes": 13174,
+      "sha256": "e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/e707445429c4f75422a2632a3f5c64d5e4f2900c1b8286730662cc9ea905b6f6.blob",
+      "bytes": 3056,
+      "sha256": "e707445429c4f75422a2632a3f5c64d5e4f2900c1b8286730662cc9ea905b6f6"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/ef2d40abd03e90c628656b6054c92ad79af03ea95fe71f25d0371e9eba80df44.blob",
+      "bytes": 3515,
+      "sha256": "ef2d40abd03e90c628656b6054c92ad79af03ea95fe71f25d0371e9eba80df44"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/f37267310f011468fecddf6cffd621f679c8695cb0d4b43927c5d8d81f1476b4.blob",
+      "bytes": 1345,
+      "sha256": "f37267310f011468fecddf6cffd621f679c8695cb0d4b43927c5d8d81f1476b4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/f8ad695c6e8f5b6685bd9466184dfa4e8b7859a2edcdd9c449863cba6d248c71.blob",
+      "bytes": 7548,
+      "sha256": "f8ad695c6e8f5b6685bd9466184dfa4e8b7859a2edcdd9c449863cba6d248c71"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75.blob",
+      "bytes": 10160,
+      "sha256": "fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-strongly-regular-bus-20261015/source_recovery/fc4edf1baa103ac39bc875e113b7ff5801903513e949886653b33018c752043f.blob",
+      "bytes": 379,
+      "sha256": "fc4edf1baa103ac39bc875e113b7ff5801903513e949886653b33018c752043f"
+    },
+    {
+      "path": "proposal/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83847,
+      "sha256": "ca5458cc82c78831338dac4bc999a17184f77d63b8ee2c65a084e569e3b032e9"
+    },
+    {
+      "path": "proposal/scripts/strongly_regular_bus_2026_10_15.py",
+      "bytes": 26286,
+      "sha256": "0c5b65a6c92b4847372ec291fd3ad32bbf441c149d444f5ed560c0ace8d88bf9"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 5071,
+      "sha256": "7e169a8ca4f6b879731089b0bc983d4ce21f85569955555d5fbc96b3a1069f5b"
+    },
+    {
+      "path": "wrapper.md",
+      "bytes": 19580,
+      "sha256": "5e248015c0322c3979ba388cb091667a7c45a7faa138e3b0080ee9b38614c42f"
+    }
+  ]
+}

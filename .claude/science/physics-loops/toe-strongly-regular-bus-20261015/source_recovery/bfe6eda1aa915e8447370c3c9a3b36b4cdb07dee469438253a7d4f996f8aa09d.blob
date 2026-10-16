@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/phase_branch_run/check_phase_and_branch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/phase_branch_run",
+  "started_utc": "2026-10-16T00:57:39.357246+00:00",
+  "finished_utc": "2026-10-16T00:57:40.307547+00:00",
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "source_at_launch": [
+    {
+      "path": "check_phase_and_branch.py",
+      "sha256": "d5d7bc4d5d41521644029df01494c69e480bb1e170374b006e6f682dcce70a0a",
+      "bytes": 2989
+    },
+    {
+      "path": "recompute.py",
+      "sha256": "fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75",
+      "bytes": 10160
+    }
+  ],
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  }
+}

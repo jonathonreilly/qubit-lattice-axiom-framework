@@ -1,0 +1,67 @@
+{
+  "kind": "actual_root_refresh_provenance",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/43d0935394d8d3dcc9d3e6f7094f730700ad3c5fea6a653d4b2dbf65b2983976.json",
+      "bytes": 1771,
+      "sha256": "43d0935394d8d3dcc9d3e6f7094f730700ad3c5fea6a653d4b2dbf65b2983976"
+    },
+    "root_binding": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/b3cb8a32eedc9732d64b52614fc70ab0723ae41c13cedfd9a109c77a3882525e.json",
+      "bytes": 1914,
+      "sha256": "b3cb8a32eedc9732d64b52614fc70ab0723ae41c13cedfd9a109c77a3882525e"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/ec2478f76ada4505294879be2910537959c88462a34d425f978c4919681f9d21.json",
+      "bytes": 1572,
+      "sha256": "ec2478f76ada4505294879be2910537959c88462a34d425f978c4919681f9d21"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/6130e3cc5a55ae9761dd52abfcc0756184f566de5cd973a3a6b25e0e7aa17b77.json",
+      "bytes": 484,
+      "sha256": "6130e3cc5a55ae9761dd52abfcc0756184f566de5cd973a3a6b25e0e7aa17b77"
+    },
+    "inventory": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/3642b82459aa3c9cde31cc4fa2d37f277ef77c335df9e6a574015b456cd8fbb8.blob",
+      "bytes": 23283,
+      "sha256": "3642b82459aa3c9cde31cc4fa2d37f277ef77c335df9e6a574015b456cd8fbb8"
+    },
+    "actual_refresh_receipts": [
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/3f19d861fa38610a754f0f2ee4cfbf090c06ee58cd1f2654c88275cc135dc1bb.json",
+          "bytes": 1219,
+          "sha256": "3f19d861fa38610a754f0f2ee4cfbf090c06ee58cd1f2654c88275cc135dc1bb"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+          "bytes": 179,
+          "sha256": "3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44"
+        }
+      },
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/0037211f97d82eb917cc091f8f320a0cc594b95d7992d88a7d550c73832ee145.json",
+          "bytes": 1289,
+          "sha256": "0037211f97d82eb917cc091f8f320a0cc594b95d7992d88a7d550c73832ee145"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/3642b82459aa3c9cde31cc4fa2d37f277ef77c335df9e6a574015b456cd8fbb8.blob",
+          "bytes": 23283,
+          "sha256": "3642b82459aa3c9cde31cc4fa2d37f277ef77c335df9e6a574015b456cd8fbb8"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    ]
+  },
+  "scope": "Actual Git observation and historical publication receipts. Git ancestry does not add a mathematical premise."
+}

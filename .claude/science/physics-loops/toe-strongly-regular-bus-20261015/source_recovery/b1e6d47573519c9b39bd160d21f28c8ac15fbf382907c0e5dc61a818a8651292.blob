@@ -1,0 +1,31 @@
+# Actual reviewer executions
+
+These are two bounded numerical executions by the source-exposed reviewer. They do not establish a theorem by check count, certify every conservative inequality, validate a physical controller, or supply retained status. Both scientific runs exited zero; no failed scientific run was overwritten. The author failures are preserved separately under `author_at_launch` and discussed in REVIEW.md. A later read-only bookkeeping query failed because `Path('.').parent` did not resolve to the intended absolute parent; its tool-reported failure and successful corrected query are recorded in BOOKKEEPING_FAILURE.md. It did not execute a scientific calculation or change a source.
+
+## Main recomputation
+
+`recompute_run_01/EXECUTION.json` gives the exact interpreter, argv, cwd, source identity, 120-second timeout and thread environment. It ran 2026-10-16 00:54:28.372059–00:54:30.969050 UTC and exited 0. The source-at-launch SHA256 is `fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75`. Stdout is 2,708 bytes, SHA `92f462e58668aa8a0b814a296a74c75ae8c55746f294170a5c3391b8658b4d28`; stderr is empty.
+
+| Computation | Actual dimensions / inputs | Result and limit |
+|---|---|---|
+| Pole cone, Jacobi measure, routed calibration, tree response | Old dimension 4; 6 core + 24 router sites; 4 tested offsets | First 3 offsets fail the >1/2 cone margin, fourth succeeds. Cone residual 6.78e-16; eigenvalues and root weights error 6.43e-12; calibration residual 9.86e-12; direct/cofactor relative error 3.36e-14. No full many-body gap or contraction certificate inferred. |
+| Source SU(2) resolvent | N=2,...,6; c=0.37,-0.41,2.13; nonuniform positive edge weights | Maximum full-matrix formula discrepancy 1.20e-14. Removing the multiplicity term gives error up to 9.13. |
+| Complete second-order generator | Full dimension 512, code 36, Q 476; two sources and a deliberately accidental longer-sum code degeneracy | Direct Q/P gap 0.01419743; second-order formula error 1.13e-13; first-corrector residual 6.69e-14. Forbidden old/two-source degenerate entry -2.30e-18. Omitting actual counterterms gives error 0.02579; doubling mixed coefficient gives 1.90e-4. Reduced three-site bus, not full 30-site construction. |
+
+Tensor/Kronecker assembly was written before reading the author executable sources. It still follows the exposed mathematical proof and uses the same model; it is not blind or different-model evidence.
+
+## Phase and branch discriminator
+
+`phase_branch_run/EXECUTION.json` records both executable source captures, interpreter, argv, cwd, 60-second timeout and thread environment. It ran 2026-10-16 00:57:39.357246–00:57:40.307547 UTC and exited 0. Main source SHA256 is `d5d7bc4d5d41521644029df01494c69e480bb1e170374b006e6f682dcce70a0a`, helper SHA is the main recomputation source above. Stdout is 1,017 bytes, SHA `11812da3a16d13e5b9d901df300c02660202751ef72613f0e9cd435c0812298d`; stderr is empty.
+
+The mean generator phase error was 2.04e-15; exact old-time order identity errors were below 4e-14. At s=0,0.31,0.7 the complete old phase/window discrepancies were 7.58e-15, 0.0061927113, 0.0139834501, against window bounds 0,0.0061927212,0.0139835640 (the s=0 numerical roundoff is not a positive exact error bound). Removing the +omega T term gave 0.35768 error. A four-qubit branched-star XY spectrum differed from fake one-particle subset sums by 8.95e-5. Its actual spectral shift 0.06513 was bounded by the full perturbation norm 0.32311 and edge-sum bound 0.48.
+
+This execution is a finite phase/algebra/Weyl discriminator. It does not simulate a complete autonomous controller through an accuracy-dependent runtime. An incidental Python bytecode cache generated from the reviewer helper is retained inside the scoped run directory; it is not a source-at-launch substitute and has no scientific role.
+
+## Provenance checks
+
+SOURCE_MANIFEST.json records exact capture of all 45 author freeze artifacts and the author freeze identity. FAILED_LAUNCHER_HASH_SEARCH.json records a deterministic SHA256 search over all 46 captured files for the two failed-run launcher hashes; neither was found. Their primary scientific sources, launch records, exits and full streams are preserved. No missing launcher was reconstructed or represented as recovered.
+
+SOURCE_REFRESH.json records the final source identity refresh and preservation of the earlier independent bounded-slew freeze. REVIEW_FREEZE.json hashes the final review packet and all actual evidence. Hashes prove byte identities, not correctness of scientific claims.
+
+The initial sealing attempt captured a live redirected stdout file before its final write. A post-execution verification caught that single changed member. Its invalid seal, exact sealing source, streams and discrepancy are preserved in `seal_attempt_01`; BOOKKEEPING_FAILURE.md explains the correction. Only the top-level REVIEW_FREEZE.json is the final packet seal.

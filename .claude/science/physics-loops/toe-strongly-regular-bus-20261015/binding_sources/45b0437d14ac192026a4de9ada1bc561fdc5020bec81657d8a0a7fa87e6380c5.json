@@ -1,0 +1,82 @@
+{
+  "kind": "root_source_publication_review",
+  "utc": "2026-10-16T01:44:25.671276+00:00",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_publication_draft/FINAL_FREEZE.json",
+    "bytes": 35534,
+    "sha256": "71d6aa8f22b83ac1ee6aaac0f6351c58ada14d4cbdc3bf80e44a8d5db719e42f"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_publication_draft/proposal/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 83847,
+    "sha256": "ca5458cc82c78831338dac4bc999a17184f77d63b8ee2c65a084e569e3b032e9"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_publication_draft/proposal/scripts/strongly_regular_bus_2026_10_15.py",
+    "bytes": 26286,
+    "sha256": "0c5b65a6c92b4847372ec291fd3ad32bbf441c149d444f5ed560c0ace8d88bf9"
+  },
+  "body_pins": [
+    {
+      "name": "author_bus_body",
+      "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 19745,
+      "end_byte_exclusive": 60245,
+      "bytes": 40500,
+      "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+    },
+    {
+      "name": "exposed_review_body",
+      "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 60414,
+      "end_byte_exclusive": 83847,
+      "bytes": 23433,
+      "sha256": "cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7"
+    }
+  ],
+  "parent_binding": {
+    "canonical_parents": [],
+    "transitive_premises": [],
+    "preparation_release_intervals": [],
+    "mathematical_scope": "The exact author body sections 2-11 proves the cone, routed geometry/full gap, source resolvent, connected second order, corrector, phases and resource inequalities. Prior compiler/mediator/source proposals are exposure/context only; their theorem conclusions are not imported. Simple spectrum, distinct positive gaps, nonzero port entries, computable spectral data and vacant geometry are supplied premises, not implications of earlier Lie certificates. Rational-M repair is separately attributed in exposed review section 6 and root qualifications. No unproved imported theorem was identified.",
+    "actual_current_git_observation": null
+  },
+  "read_coverage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_strongly_regular_bus_publication_review/READ_COVERAGE.md",
+    "bytes": 2887,
+    "sha256": "00b9befd2ba1b4dc364c59010972f113b19cfb9ac532bafcf3963ff20004cdc4"
+  },
+  "reuse_map": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_publication_draft/REUSE_MAP.json",
+    "bytes": 38186,
+    "sha256": "220683d00d8f96fe568cf64a1b5bf20d8e77a85724eab3f29129e06968a924db"
+  },
+  "verified_function_rows": 40,
+  "byte_exact_reused_functions": 34,
+  "source_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 5321,
+    "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+  },
+  "freshness": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/refresh_before_strongly_regular_bus/BINDING_REFS.json",
+    "bytes": 1771,
+    "sha256": "43d0935394d8d3dcc9d3e6f7094f730700ad3c5fea6a653d4b2dbf65b2983976"
+  },
+  "decision": "Accept reviewed source-preserving package for root integration as conditional support; canonical review remains separate.",
+  "required_canonical_text_correction": {
+    "before": "Unaccepted joint-energy and static-bias continuations are excluded.",
+    "after": "Separate joint-energy and static-bias continuations are excluded.",
+    "scope": "Later acceptance chronology only; neither continuation is imported."
+  },
+  "scientific_programs_run_this_review": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "limits": [
+    "This root content review is recorded after actual reading; this script validates identity only.",
+    "No retained audit, compiler execution, different-model-family replication or physical realization.",
+    "Final canonical offsets, metadata edits and actual integration checks require affected-content review."
+  ],
+  "editable_prompt_files_changed": []
+}

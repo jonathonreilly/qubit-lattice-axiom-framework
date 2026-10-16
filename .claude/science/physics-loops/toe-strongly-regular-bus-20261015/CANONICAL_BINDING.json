@@ -1,0 +1,37 @@
+{
+  "kind": "actual_strongly_regular_bus_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "058724b51948962713d764781fcb4b99802f5410",
+  "actual_git_base": "058724b51948962713d764781fcb4b99802f5410",
+  "actual_branch_at_binding": "physics-loop/toe-correlated-energy-comparator-20261015",
+  "bound_note_sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/2725b9a446618c12bffb1f098824c49c9a845e5eec587074b2f5f12fee1981fa.py",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/289547820e8b6fce01f30bfc3f014d1092ab950124031885e24465e25b78116e.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/45b0437d14ac192026a4de9ada1bc561fdc5020bec81657d8a0a7fa87e6380c5.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/5c33c0692c4c3d48d406741d32dd3e99c98d3dee6aff1669ab26aee9311f32fe.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/5e6c1e181f121331983031ccff4736eb7270309f3a1019ed831d7ff4abbcf290.blob",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/60e379cd3bbacc05677689e751744ad92f5955d81a0e2fef71092f6d94deea88.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/71d6aa8f22b83ac1ee6aaac0f6351c58ada14d4cbdc3bf80e44a8d5db719e42f.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/92b5db0a6ac7a8c8c3f31951c38a0657a47a9648e05caa67d2639d9d7c4b1ac7.py",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/933f98a30ca7bf4cd8b56dc71a0cfc1aeac22980cb4687f039d95e094c09650d.py",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/96b5f165e45f563c00cfdcccfd0aa284263431cbaf7a6014b19c093d96be3629.blob",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/b32f06feab0594eb49844f8285084033cb581660621c36dc611c53d23a817ab8.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/d6f0f4337b62097d6428c4a77a7a1767772054c0b512b2e0f75830ac082e3bdd.blob",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/da161cd410560c0785c603d5611792bc884a3450f148b1ecdaf3f8ec15c36725.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/dc185c8ed023cdac4ff9a4bb6c97bdf8ddd3408523ed8abc5cde1d18be451e0f.blob",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e0ea96413d28b25d0b8e8b718cac67969c54dea5d1855d3af42bba99b9416a52.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e1111b0b3c6724c4bf74314393cb21859b8f73b45c0036949a9f4c7034bb4928.json",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/f3136de966f2addffd5a8ebcc778f09fccbeeb052930ddcf0394e68689db5dc2.json"
+  ],
+  "canonical_parent_sha256": {},
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/b32f06feab0594eb49844f8285084033cb581660621c36dc611c53d23a817ab8.json",
+    "bytes": 13119,
+    "sha256": "b32f06feab0594eb49844f8285084033cb581660621c36dc611c53d23a817ab8"
+  }
+}

@@ -1,0 +1,69 @@
+"""Read-only source refresh and a hash seal of this assigned review directory."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+root = Path(__file__).resolve().parent
+author = root.parent / 'strongly_regular_bus_candidate'
+capture = root / 'author_at_launch'
+prior = root.parent / 'bounded_slew_independent_check'
+
+def digest(path):
+    data = path.read_bytes()
+    return {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+def verify_members(base, members):
+    for row in members:
+        actual = digest(base / row['path'])
+        assert actual['sha256'] == row['sha256'], (str(base), row['path'], actual)
+        assert actual['bytes'] == row['bytes'], (str(base), row['path'], actual)
+    return len(members)
+
+manifest = json.loads((root / 'SOURCE_MANIFEST.json').read_text())
+assert digest(author / 'FREEZE.json')['sha256'] == manifest['author_freeze_sha256']
+assert digest(capture / 'FREEZE.json')['sha256'] == manifest['author_freeze_sha256']
+author_count = verify_members(author, manifest['artifacts'])
+capture_count = verify_members(capture, manifest['artifacts'])
+old = json.loads((prior / 'ORIGINAL_FREEZE.json').read_text())
+old_count = verify_members(prior, old['members'])
+comparison_dir = prior / 'exposed_comparison'
+comparison = json.loads((comparison_dir / 'COMPARISON_FREEZE.json').read_text())
+comparison_count = verify_members(comparison_dir, comparison['members'])
+assert digest(root/'recompute.py') == digest(root/'recompute_run_01/recompute.at_launch.py')
+assert digest(root/'recompute.py') == digest(root/'phase_branch_run/recompute.py')
+assert digest(root/'check_phase_and_branch.py') == digest(root/'phase_branch_run/check_phase_and_branch.py')
+refresh = {
+    'verified_utc': datetime.now(timezone.utc).isoformat(),
+    'author_path': str(author),
+    'author_freeze': digest(author / 'FREEZE.json'),
+    'author_derivation': digest(author / 'DERIVATION.md'),
+    'original_author_members_verified': author_count,
+    'captured_author_members_verified': capture_count,
+    'prior_original_freeze': digest(prior / 'ORIGINAL_FREEZE.json'),
+    'prior_original_members_verified_unchanged': old_count,
+    'prior_comparison_freeze': digest(comparison_dir / 'COMPARISON_FREEZE.json'),
+    'prior_comparison_members_verified_unchanged': comparison_count,
+    'reviewer_executable_copies_match': True,
+    'scientific_status_conferred_by_hashes': False,
+}
+(root/'SOURCE_REFRESH.json').write_text(json.dumps(refresh,indent=2)+'\n')
+excluded={'REVIEW_FREEZE.json','REVIEW_FREEZE.sha256'}
+members=[]
+for path in sorted(root.rglob('*')):
+    if path.is_file() and path.name not in excluded:
+        members.append({'path':str(path.relative_to(root)),**digest(path)})
+freeze={
+    'frozen_utc':datetime.now(timezone.utc).isoformat(),
+    'scope':'Exposed same-model bounded adversarial review; no retained or physical status conferred.',
+    'author_derivation_sha256':refresh['author_derivation']['sha256'],
+    'members':members,
+}
+freeze_path=root/'REVIEW_FREEZE.json'
+assert not freeze_path.exists(), 'Do not silently overwrite an earlier review freeze.'
+freeze_path.write_text(json.dumps(freeze,indent=2)+'\n')
+freeze_hash=digest(freeze_path)['sha256']
+(root/'REVIEW_FREEZE.sha256').write_text(freeze_hash+'  REVIEW_FREEZE.json\n')
+verify_members(root,members)
+print(json.dumps({'review':digest(root/'REVIEW.md'),'freeze':digest(freeze_path),
+                  'members_verified':len(members),'source_refresh':refresh},indent=2))

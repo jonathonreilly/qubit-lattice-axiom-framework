@@ -1,0 +1,27 @@
+"""Record completed root content review and verify frozen evidence identities only."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+D=Path(__file__).resolve().parent;N=D.parent
+def pin(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):return json.loads(p.read_bytes())
+def write(p,o):
+    with p.open('x') as stream:json.dump(o,stream,indent=2);stream.write('\n')
+verified=[]
+for name,seal,key,digest in [('strongly_regular_bus_candidate','FREEZE.json','artifacts','2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508'),('strongly_regular_bus_exposed_check','REVIEW_FREEZE.json','members','e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c')]:
+    base=N/name;f=base/seal;assert pin(f)['sha256']==digest
+    rows=read(f)[key]
+    for row in rows:
+        actual=pin(base/row['path']);assert all(actual[k]==row[k] for k in ('bytes','sha256')),row['path']
+    verified.append({'freeze':pin(f),'verified_members':len(rows)})
+R=N/'strongly_regular_bus_exposed_check'
+assert pin(R/'REVIEW.md')['sha256']=='cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7'
+r=read(R/'recompute_run_01/EXECUTION.json');assert r['exit_code']==0
+p=pin(Path(r['argv'][1]));assert p['sha256']==r['source_sha256'] and p['bytes']==r['source_bytes']
+r=read(R/'phase_branch_run/EXECUTION.json');assert r['exit_code']==0
+for row in r['source_at_launch']:
+    p=pin(R/'phase_branch_run'/row['path']);assert all(p[k]==row[k] for k in ('bytes','sha256'))
+o={'kind':'qualified_conditional_mathematical_source_acceptance','utc':datetime.now(timezone.utc).isoformat(),'root_read_complete':True,'author_derivation':pin(N/'strongly_regular_bus_candidate/DERIVATION.md'),'exposed_review':pin(R/'REVIEW.md'),'qualifications':pin(D/'FINAL_QUALIFICATIONS.md'),'verified_freezes':verified,'reviewer_evidence':[pin(R/p) for p in ['recompute_run_01/EXECUTION.json','recompute_run_01/recompute.at_launch.py','recompute_run_01/stdout.json','recompute_run_01/stderr.txt','phase_branch_run/EXECUTION.json','phase_branch_run/check_phase_and_branch.py','phase_branch_run/recompute.py','phase_branch_run/stdout.json','phase_branch_run/stderr.txt','FAILED_LAUNCHER_HASH_SEARCH.json','BOOKKEEPING_FAILURE.md']],'accepted_scope':'Conditional strong-spectral common incident-strength bus with complete outputs; exact-target existence and separately attributed rational-target effectiveness repair.','independence':'Exposed same-model recomputation; no blind/different-model-family claim.','scientific_programs_run_this_acceptance':0,'retained_audit':False,'native_realization':False,'editable_prompt_files_changed':[]}
+write(D/'QUALIFIED_ACCEPTANCE.json',o);write(D/'FREEZE.json',{'utc':o['utc'],'files':[pin(D/'QUALIFIED_ACCEPTANCE.json'),pin(D/'FINAL_QUALIFICATIONS.md'),pin(Path(__file__).resolve())]})
+print(json.dumps({'acceptance':pin(D/'QUALIFIED_ACCEPTANCE.json'),'freeze':pin(D/'FREEZE.json'),'verified_members':[r['verified_members'] for r in verified]}))

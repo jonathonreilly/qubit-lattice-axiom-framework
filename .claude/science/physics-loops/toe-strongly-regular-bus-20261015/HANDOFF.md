@@ -1,0 +1,3 @@
+# Root handoff
+
+Review the entire new wrapper and code changes through ROOT_READ_GUIDE, REUSE_MAP and CHANGED_CODE, with original qualified sources and read limits. Preserve this source directory after FINAL_FREEZE. In a separate copy bind the actual local base, source-draft review and final canonical wrapper/body map. Keep original draft intervals distinct from final relocated intervals and update declared source recovery/input/literal pins. Root owns all canonical primary/cache/mutation/syntax/vocabulary/graph/pipeline/publication operations; retained audit remains separate. Never reconstruct missing historical receipts or treat finite check counts as theorem acceptance.

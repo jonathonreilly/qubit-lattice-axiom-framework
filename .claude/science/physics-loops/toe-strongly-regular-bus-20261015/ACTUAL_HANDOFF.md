@@ -1,0 +1,3 @@
+# Canonical strongly regular bus handoff
+
+Root must separately review the exact final canonical note, relocated body maps, zero-parent binding, controlling qualifications, chronology-only wrapper correction and prebinding primary, then record actual canonical review. Frozen-draft offsets and final canonical offsets remain separate. Historical successes, failures, missing launchers, exposed reviewer status and invalid seal retain original evidence schemas. Source-primary/cache, scoped provenance mutants, vocabulary/evidence, one-root/zero-edge graph delta and final staged review are subsequent actual gates. Independent retained audit and current-main/cumulative-stack landing remain separate.

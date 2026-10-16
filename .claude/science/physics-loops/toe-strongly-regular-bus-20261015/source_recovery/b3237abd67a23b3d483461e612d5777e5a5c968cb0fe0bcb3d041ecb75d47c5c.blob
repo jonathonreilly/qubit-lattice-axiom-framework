@@ -1,0 +1,24 @@
+"""Identity/read-coverage bookkeeping only; source bytes are not proof."""
+import datetime,hashlib,json
+from pathlib import Path
+root=Path(__file__).resolve().parent
+N=root.parent
+previous=N/'bounded_strength_runtime_candidate'
+prior=json.loads((previous/'SOURCE_MANIFEST.json').read_text())
+specs=[(r['key'],Path(r['path']),r['sha256'],r['read_coverage']) for r in prior['sources']]
+specs += [
+('previous_derivation',previous/'DERIVATION.md','47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15','complete author source read before prior freeze; sections 8-9 fully reread for this continuation'),
+('root_lemmas',N/'resonant_bus_root_proposal/PROPOSED_LEMMAS.md','08e4b164c2b8443b5ab2d826e91afe016679a66a922ab571cc0151b244028fde','complete; exposed unaccepted proposal'),
+('root_routing',N/'resonant_bus_root_proposal/ROUTED_BUS_ADDENDUM.md','64c35e0f33e44e0815e8bfb34cd1b9b9cb7286fb1cde5709dae0192cb93be89d','complete; exposed unaccepted proposal'),
+('root_routing_freeze',N/'resonant_bus_root_proposal/ROUTING_FREEZE.json',None,'complete metadata only'),
+]
+(root/'sources').mkdir(exist_ok=True)
+rows=[]
+for key,path,expected,coverage in specs:
+    data=path.read_bytes();digest=hashlib.sha256(data).hexdigest()
+    if expected is not None and digest!=expected:raise RuntimeError('Identity mismatch '+key)
+    copy=root/'sources'/(key+path.suffix);copy.write_bytes(data)
+    rows.append(dict(key=key,path=str(path),bytes=len(data),sha256=digest,expected_sha256=expected,recovery_path=str(copy),read_coverage=coverage))
+receipt=dict(captured_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),role='metadata only',sources=rows)
+(root/'SOURCE_MANIFEST.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt))

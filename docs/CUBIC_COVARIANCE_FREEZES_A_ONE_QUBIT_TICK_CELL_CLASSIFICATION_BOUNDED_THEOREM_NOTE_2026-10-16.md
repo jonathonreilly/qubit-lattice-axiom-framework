@@ -259,10 +259,9 @@ fixes no nonzero multiple of e, so g(b) = 0 and f(b) = eps_b = +-1. The sign
 depends only on the class of b (X or M), and is +1 at Gamma. Hence on each
 line f = eps cos(n t) and gamma = eps sin(n t), with |n| <= 3 |e|_1. The
 exponents on the three Gamma lines were checked exactly over all
-7 x 13 x 19 choices: only n = 0 is consistent. With those fixed, a numerical
-rank filter over every choice of exponents and signs on the other three
-lines leaves only the trivial one; an exact recheck of those choices is in
-progress (until it lands, this step is numerical). That branch fixes f = 1 and leaves 21
+7 x 13 x 19 choices: only n = 0 is consistent. With those fixed, all
+7 x 13 x 7 x 4 = 2548 choices of exponents and signs on the other three
+lines were checked exactly, and only the trivial one is consistent. That branch fixes f = 1 and leaves 21
 real unknowns, constrained by 122 real linear and quadratic equations. Their
 Groebner basis over Q (Singular modStd, verified mode; repeated mod 32003
 with slimgb) is zero-dimensional and contains a power (at most the fifth) of

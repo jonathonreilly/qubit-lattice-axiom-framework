@@ -7,9 +7,13 @@
   with Theorem 4.
   - **R = 3 (`fastR3_3.log`):** 63 unknowns (21 scalars, 42 vectors). Of
     4,405,492 exponent/sign branches only the trivial one is linearly
-    consistent (exact recheck of the numerical filter). The trivial branch
-    leaves 21 real unknowns, with 122 real quadrics and linear forms
-    (`r3_triv.sing`), which is being closed with Singular modStd.
+    consistent. The three Gamma lines were checked exactly in the earlier
+    `fastR.py` run; `exact_recheck_R3.py` then rechecked the 2548 choices
+    on the other lines exactly. The trivial branch leaves 21 real unknowns,
+    with 122 real quadrics and linear forms (`r3_triv.sing`). Singular modStd
+    (verified mode) closes it: dim 0, vdim 1228, every unknown nilpotent with
+    power <= 5 (`r3_triv.out`). A mod-32003 slimgb run (`r3_triv_p.sing`)
+    agrees. Range three is therefore frozen (B1 Theorem 4').
 - `tosing_branch.py` converts a branch to Singular, splitting each complex
   equation into real and imaginary parts.
 - `spinj_exact.py J` is the exact line-branch test for an irreducible spin-J

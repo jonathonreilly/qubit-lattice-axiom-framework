@@ -1,0 +1,96 @@
+{
+  "time": "2026-10-16T04:09:02.764122+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "open_pr_count": 62,
+  "changed_heads_since_0340": [],
+  "repository_searches": [
+    {
+      "term": "Volterra",
+      "exit_code": 0,
+      "hits": [
+        "origin/main:docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md:216:For any \\(z_r\\in\\mathcal H\\), solve the bounded Volterra equation",
+        "origin/main:docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md:262:The graph transform is also jointly strongly continuous: its Volterra",
+        "origin/main:docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md:548:The positive triangular Volterra equations have the comparison",
+        "origin/main:docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md:799:For arbitrary z_r solve the Volterra equation",
+        "origin/main:docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md:2860:pairings, and reconstructed an alternative free-primitive/Volterra proof.",
+        "origin/main:docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md:39:bounded effective generator has an exact Volterra memory equation and an",
+        "origin/main:docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md:542:The scalar resolvent and Volterra equation remain exactly correct. The",
+        "origin/main:docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md:1494:Volterra convolution, moment recurrences, eliminated-field quadratures,",
+        "origin/main:docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md:102:majorants and continuation; compactness and ordered Volterra uniqueness;",
+        "origin/main:docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md:535:bound C/(rho-rho'). Iterate its Volterra equation m times and allocate",
+        "origin/main:docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md:616:majorant algorithm, bootstrap and Volterra constants therefore remain",
+        "origin/main:docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md:888:(24)-(25)'s ordered Volterra argument gives uniqueness and comparison",
+        "origin/main:docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md:835:in this bounded independent derivation. An absolute-value Volterra",
+        "origin/main:docs/YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md:35:Because this is a scalar linear Volterra problem, the endpoint response has the"
+      ]
+    },
+    {
+      "term": "Zwanzig",
+      "exit_code": 1,
+      "hits": []
+    },
+    {
+      "term": "nonlinear coupling",
+      "exit_code": 0,
+      "hits": [
+        "origin/main:docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_FROM_THE_SOURCE_LINK_THE_WALKERS_SMOOTH_STATES_MEET_THE_MEMBERS_IDENTITY_AT_LEADING_ORDER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md:56:In plain terms, the field's waves and the walker's hops need not have the same top speed; that was a free number. But if the walker's own states are what makes the field, as the source link says, then at the closing ratio the field's equations only work when its waves travel exactly as fast as the walker does. Imposing this necessary identity on all same-corner smooth beats fixes the ratio conditionally. This is not sufficiency for the full sourced field equations, nonlinear coupling, species selection, or a universal causal cone. The probes attempt behind block 112 remarked the beat identity; T2 proves that identity.",
+        "origin/main:docs/ADMISSIBILITY_RULE_ONLY_THE_TWO_STEP_CURRENT_CAN_SOURCE_BLOCK_62S_SYMMETRIC_MEMBER_NO_LOCAL_PLACEMENT_OF_THE_FRAME_RESPONSE_OR_OF_THE_ONE_STEP_CURRENT_KEEPS_ITS_DIVERGENCE_CONDITION_BOUNDED_THEOREM_NOTE_2026-09-24.md:10:  currents, zero-mode solution, self-consistent nonlinear coupling, or physical field is established.",
+        "origin/main:docs/historic_intake/HISTORIC_SORKIN_FIXED_DAG_2026_03_30_INTAKE_NOTE_2026-08-05.md:50:- Extraction escape conditions (negative claims; triage compression): The 'no higher-order interference' negative is stated to depend on holding the DAG fixed via amplitude-zeroing rather than node removal; the escape it identifies is topology change, where DAG reconfiguration reintroduces nonlinear coupling between slit configurations (the original I3 up to 4.6e9)."
+      ]
+    },
+    {
+      "term": "coupling function reconstruction",
+      "exit_code": 1,
+      "hits": []
+    },
+    {
+      "term": "functional derivative",
+      "exit_code": 0,
+      "hits": [
+        "origin/main:docs/ADMISSIBILITY_SCALAR_EDGE_HODGE_RANK_ONE_NONLINEAR_WARD_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md:312:variation remain commuting functional derivatives of (14a). A reciprocal",
+        "origin/main:docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md:244:between N,M. The only surviving functional derivative is the second-lapse-",
+        "origin/main:docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md:178:- Higher functional derivatives give `(-1)^n` times the connected `n`-point functions",
+        "origin/main:docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:153:   label with vanishing functional derivative **cannot be an active variational",
+        "origin/main:docs/SIGNED_GRAVITY_NONLOCAL_BOUNDARY_CHI_TARGET_NOTE.md:364:source functional derivative identified as one of:",
+        "origin/main:docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md:123:functional derivative of a color-singlet source coupled to",
+        "origin/main:docs/historic_intake/HISTORIC_YT_WARD_PHYSICAL_READOUT_REPAIR_AUDIT_NOTE_2026_05_01_INTAKE_NOTE_2026-08-05.md:52:- Extraction escape conditions (negative claims; triage compression): A tree-level operator-matching theorem and runner computing functional derivatives before and after SSB, tracking chirality and scalar-leg factors, and proving no extra normalization enters."
+      ]
+    }
+  ],
+  "search_limit": "Distinctive-term main-source search with contextual results, not a proof of global originality. Existing memory and scalar reconstruction results are context; no matching finite clamped-pulse inverse found in these searches. No theorem from those hits is used.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/1612.00490v3",
+      "scope": "main text, equations1 and paragraph62-77, figures captions",
+      "role": "exposed experimental comparator; actual1:3 resonance and simplified1:1 surrogate distinguished; no fit, raw data or independent test",
+      "adopted_premise": false
+    },
+    {
+      "url": "https://arxiv.org/abs/2202.01922",
+      "scope": "abstract and metadata only",
+      "role": "known nonlinear-memory prior art; full argument not reused"
+    },
+    {
+      "url": "https://doi.org/10.1103/PhysRevLett.133.077301",
+      "scope": "publisher abstract only",
+      "role": "known data-driven state-dependent memory learning; full argument not reused"
+    }
+  ],
+  "retrieval_failures": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9824306/",
+      "result": "web internal error; no content conclusions"
+    },
+    {
+      "url": "https://arxiv.org/html/2202.01922v3",
+      "result": "404; abstract confirms onlyv1, mistaken version not scientific failure"
+    },
+    {
+      "url": "https://arxiv.org/html/2309.00621",
+      "result": "404; unverified candidate URL, not used as scientific source"
+    }
+  ],
+  "workflow": "Current-main physics-loop skill and active operation references read; installed copy is older and does not govern this milestone cadence.",
+  "primitive_check": "Current registry and three primitive source notes read; none supplies physical coupling, force/readout, mode order or preparation."
+}

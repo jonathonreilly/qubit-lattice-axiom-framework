@@ -19,3 +19,7 @@ next_trace_action: "Derive candidate record/transport mechanisms and interventio
 ```
 
 The single-current-input route and rigid count accumulator have narrow negative results. They do not exclude all changing-neighborhood mechanisms. The constructive orientation and deterministic-record models remain conditional; no scalar action, physical environmental mapping or scale follows from them.
+
+## Sampled coupling support
+
+The new standalone inverse supports the user's request to derive remaining assumptions: selected coupling functions, assigned hidden preparations and chosen continuous poles are unnecessary within its explicit pulse protocol. Actual force/coordinate identification, the passive class and physical scales remain conditions. Trace remains upstream_support, reachability supports; no existing claim is promoted.

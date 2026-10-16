@@ -1,0 +1,34 @@
+--- COUPLING_RECONSTRUCTION_v1.md
++++ COUPLING_RECONSTRUCTION_v2.md
+@@ -1,7 +1,7 @@
+ # Reconstructing a coupling from controlled histories
+ 
+ **Claim type:** bounded_theorem. **Status:** conditional-support; author
+-derivation, pending focused independent check. No empirical validation or
++derivation; focused independent-check evidence is recorded separately. No empirical validation or
+ framework premise adoption. This continues the observation contract after the
+ three-hour neighborhood exploration; it is not a correction to its frozen report.
+ 
+@@ -73,6 +73,7 @@
+     T = [[0,1,0],[-Omega2,-Gamma,1],[0,0,0]],  e=(1,0,0).
+ 
+ For three pre-pulse times t_i<=0 define O with rows e exp(T t_i).
++A sample at time0 means its pre-pulse left limit, with q still held at x.
+ If O is invertible, the continuation with q held at x is exactly
+ 
+     F_ref(t) = v(t) F_pre,
+@@ -207,8 +208,12 @@
+ epsilon_A(s),epsilon_B and quadrature handled separately, the error in the
+ estimated residual of (12) is bounded by
+ 
+-    epsilon_B(y)+epsilon_B(x)+|kappa_hat| integral epsilon_A
+-     +epsilon_kappa [integral |A_hat|+integral epsilon_A].         (14)
++    epsilon_B(y)+epsilon_B(x)+|kappa_hat| integral_S epsilon_A
++     +epsilon_kappa [integral_S |A_hat|+integral_S epsilon_A].     (14)
++
++Here S=[min(x,y),max(x,y)] and every integral in (14) uses increasing
++limits. Unlike the signed integral in (12), these nonnegative error integrals
++must not change sign when the endpoints are reversed.
+ 
+ This is a triangle-inequality bound, not a statistical confidence level.
+ Reserve coordinate pairs and pulse widths/times after development; passing a

@@ -1,0 +1,156 @@
+{
+  "status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "evidence": "exact identities and synthetic controls; no measured dataset",
+  "source_hashes": {
+    "COUPLING_RECONSTRUCTION_v1.md": "237145817f188a4e3e5a19a1ac1b451bcdceeb03f7bdcaeda824f94f4d908679",
+    "check_coupling_reconstruction_v1.py": "565a7fb25599691a655716ac9f0666a8f9ae68acab312a4a716f948257b2262d"
+  },
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "checks": [
+    {
+      "name": "constant-clamp force obeys affine oscillator equation",
+      "passed": true
+    },
+    {
+      "name": "column subtraction removes row-specific forcing offset",
+      "passed": true
+    },
+    {
+      "name": "centered pulse response has exact rank-one minors",
+      "passed": true
+    },
+    {
+      "name": "interaction multiplier sign follows measured anchor and shape",
+      "passed": true
+    },
+    {
+      "name": "potential completion has both prescribed cross forces",
+      "passed": true
+    },
+    {
+      "name": "mixed derivatives require reciprocity rather than rank one",
+      "passed": true
+    },
+    {
+      "name": "explicit rank-one nonreciprocal control has nonconstant ratio",
+      "passed": true,
+      "ratio_derivative": "-(q**2 + 2*q - 1)/(q**2 + 1)**2"
+    },
+    {
+      "name": "integral shape law fixes constant from normalized anchor",
+      "passed": true
+    },
+    {
+      "name": "two-channel control violates rank-one signature",
+      "passed": true,
+      "determinant": "1"
+    },
+    {
+      "name": "forward hidden dynamics and same-run baseline recover pulse law",
+      "passed": true,
+      "max_error": 1.2434497875801753e-14,
+      "distinct_preparations": 25
+    },
+    {
+      "name": "null pulses cancel with unrelated run preparations",
+      "passed": true
+    },
+    {
+      "name": "baseline sampling is observable and conditioned",
+      "passed": true,
+      "condition": 55.64646857623103
+    },
+    {
+      "name": "observed centered factorization reconstructs both relative shapes",
+      "passed": true,
+      "factorization_error": 1.7277845820729e-14,
+      "anchor": -0.04583644900975692
+    },
+    {
+      "name": "early-lag kernel is positive and reciprocal energy sign is positive",
+      "passed": true,
+      "pulse_integral": 0.03896098165829202
+    },
+    {
+      "name": "selected synthetic polynomial reconstruction satisfies integral law",
+      "passed": true,
+      "kappa": 0.7500000000000622,
+      "derivative_residual": 8.628653347386717e-13,
+      "selected_degrees": {
+        "A": 2,
+        "B": 3
+      }
+    },
+    {
+      "name": "frozen synthetic shape predicts additional histories and preparations",
+      "passed": true,
+      "held_out_synthetic_errors": [
+        1.1046719095020308e-14,
+        9.228728892196614e-15,
+        2.8428648324307915e-14,
+        3.0253577421035516e-14
+      ],
+      "empirical_independent_test": false
+    },
+    {
+      "name": "independently prepared later windows obey same temporal collapse",
+      "passed": true,
+      "max_error": 5.336286967860815e-13
+    },
+    {
+      "name": "force-error amplification bound is attained by aligned errors",
+      "passed": true,
+      "actual_error": 2.509936976624605e-05,
+      "bound": 2.5099369767278037e-05
+    },
+    {
+      "name": "aliased undamped sample times are not observable",
+      "passed": true
+    },
+    {
+      "name": "nonreciprocal force passes rank one but fails common-potential shape",
+      "passed": true,
+      "shape_residual": 0.16666666666750207
+    },
+    {
+      "name": "negative interaction multiplier fails positive-energy sign",
+      "passed": true
+    },
+    {
+      "name": "common positive force gain cancels from both reconstructed shapes",
+      "passed": true
+    },
+    {
+      "name": "setting-dependent gain changes inferred feedback shape",
+      "passed": true
+    },
+    {
+      "name": "ratio error bound covers all error corners",
+      "passed": true,
+      "max_error": 0.17105263157894757
+    },
+    {
+      "name": "rounded pulse respects stated transition error bound",
+      "passed": true,
+      "force_error": 0.005980378654558628,
+      "bound": 0.020927858823529415
+    }
+  ],
+  "total": {
+    "passed": 25,
+    "failed": 0
+  },
+  "open_conditions": [
+    "physical calibrated coordinate/source/time",
+    "shared hidden linear response and coefficients",
+    "pole uncertainty, drift and pulse error bounds",
+    "continuum coupling inference beyond finite samples",
+    "moving-coordinate inertia and global stability"
+  ]
+}

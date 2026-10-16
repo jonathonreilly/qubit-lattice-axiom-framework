@@ -299,3 +299,39 @@ Root personally completed19network units, read all focused independent derivatio
 Source checkpoint ad9f8e62abb3685a718dd7f95c7efe3b924aaf21 is verified on the remote campaign branch.19personally authored network units,20current focused manifests including the Hensen reproduction,59sourcebindings, final synthesis and synthetic figure are preserved. All focused check agents and owned computations are idle. PR9632 is open/attached at e97535fef2ce2da544c288fe81a7cb35a0d8914b with pending shared landing gates; no science merged. Later adaptive extensions are exploratory and require their own canonical integration.
 
 The final prior-art intake found a physical coupling mismatch: the inspected Chen experiment has1:3resonance, whereas our chosen q² hidden forcing contains2omega. No experiment validates our action by analogy. NEXT_OBSERVATION_CONTRACT_v1.md records physical calibration, dynamics, bandwidth and reserved-test requirements. Continue the fixed24hour campaign from NEXT_OBSERVATION_CONTRACT_v1.md. Establish the physical observable/source bridge before testing the adaptive candidate; preserve19checked network units and PR9632, do not treat fitted or chosen actions as derived. Prioritize common-action tests across environments with explicit model-error and calibration bounds. The original deadline remains22:36:59Z, packaging22:21:59Z. The requested three-hour subwindow ends03:53:06Z; preserve it separately from the full campaign.
+
+## Coupling inverse checkpoint 2026-10-16T04:09:02.764122+00:00
+
+
+Target: replace the selected q-squared coupling in the exploratory adaptive
+model by relative coupling functions reconstructed from controlled source
+responses; test reciprocal interaction rather than assume it. Domain: one
+linear hidden coordinate with positive mass/stiffness and nonnegative damping,
+arbitrary smooth input/output coupling functions, calibrated held-coordinate
+source and three observable pre-pulse samples. The class is supplied.
+
+Approach: same-run finite-dimensional baseline continuation removes arbitrary
+hidden initial preparation; centered finite-pulse response separates the two
+coupling shapes; an integral derivative-consistency relation tests a common
+positive-mass interaction potential. This is a new inverse obligation beyond
+the earlier fixed quadratic action, not a polynomial substitution.
+
+Alternative routes: (1) raw nonlinear Volterra response needs ideal functional
+perturbations and matched states; finite baseline continuation is preferable
+when its observation matrix is calibrated. (2) Frequency-ratio inference alone
+does not identify coupling: the Chen experiment and its simplified model have
+different resonance descriptions. (3) Actual apparatus data with measured
+coordinate/source calibration remains the highest empirical gap.
+
+Success witness: a complete conditional inverse, a nonreciprocal response that
+passes rank one but fails potential consistency, and preparation-independent
+forward-simulation controls. Failure would be retained explicitly. No inference
+of a fundamental physical action, scalar gravity, quantum probability or
+absolute scale follows. Prior-art and current-main searches are recorded in
+COUPLING_ROUTE_INTAKE_v1.json.
+
+Primary exact/synthetic controls: {'passed': 25, 'failed': 0}. Focused independent check active in independent_coupling_reconstruction. No measured dataset used. Original campaign deadline unchanged.
+
+## Sampled coupling checkpoint 2026-10-16T04:20:00.939802+00:00
+
+Coupling v2 has26author controls and31focused independent assertions; root read the entire independent proof/code/results and verified all four frozen hashes. The sampled extension replaces supplied continuous poles with a measured rank2 discrete recurrence and six settled force samples. Its pulse-end response has nonnegative kernel integral for every positive stiffness/nonnegative damping, so a nonzero anchor fixes the reciprocity sign without selecting frequency aliases. Author33controls pass; focused check active. The first sampled execution exposed an omitted s*F2 term in the p sensitivity; v2 corrects the bound, and v1 source/output remain. No measured dataset opened; calibration, held source/coordinate and one passive hidden mode remain premises. A standalone coherent milestone is being prepared; no campaign clock or older worker changed.

@@ -1,0 +1,17 @@
+{
+  "SAMPLED_COUPLING_CONTROLS_v1.json": "e67991e4caf6f101947d39d4ad18572a1c013e65938af7dfd07d257c632bb8c2",
+  "total": {
+    "passed": 31,
+    "failed": 2
+  },
+  "failed": [
+    {
+      "name": "affine characteristic polynomial yields recurrence",
+      "passed": false
+    },
+    {
+      "name": "coefficient sensitivity formulas are exact",
+      "passed": false
+    }
+  ]
+}

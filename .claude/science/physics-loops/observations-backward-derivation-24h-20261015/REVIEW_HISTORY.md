@@ -117,3 +117,7 @@ exploratory checkpoint does not modify the frozen milestone PR 9628.
 Direct author /root read the full independent derivations, check code and results for network history v2, flux records, pair orientation transport and deterministic reservoir. Final corrected scopes passed focused independent checking; exact bindings and primary reproductions are recorded in NETWORK_CHECKPOINT_20261016T0126.json and NETWORK_CHECKPOINT_20261016T0152.json. History v1's freshness/exception flaw is preserved with its counterexample, and corrected in v2. Orientation-check symbolic square-root domain failure is preserved as an operational calculation failure.
 
 Block05 is pending completion: independent checker identified that the adopted interior-p detector map must be explicitly extended at p=0,1 for the full phase domain. Its moment equations are unaffected by deterministic endpoint extension. This remains a review finding until the amended source is checked. No formal audit applied.
+
+## Coupling extension check
+
+Root read complete independent source derivations, code and outputs, then verified final bindings. Coupling v2:26author controls,31independent assertions. Sampled inverse v2:33author controls,275independent assertions. Standalone integration:44primary controls,135focused assertions and21scratch mutations; final source/cache hashes checked. These sets overlap and are not summed. No formal audit or empirical validation.

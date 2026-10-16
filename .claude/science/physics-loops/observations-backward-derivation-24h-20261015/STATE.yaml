@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "active campaign; neighborhood subblock preserved",
+  "phase": "sampled coupling milestone: final publication checks",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T03:50:31.645102+00:00",
+  "updated_at": "2026-10-16T04:29:29.375930+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -13,12 +13,12 @@
   "main_at_launch": "bbada1fe09b2d10d610560864d86b68c24a59713",
   "delivery": "milestone",
   "checkpoint_minutes": 30,
-  "block": "network mechanism exploration: blocks01-19 checked",
-  "route": "Observations -> intervention and multi-history response constraints -> challenge remaining action/state/readout assumptions",
+  "block": "clamped pulse coupling reconstruction",
+  "route": "same-run baseline continuation -> finite pulse inverse -> reciprocal-interaction test",
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Continue the fixed24hour campaign from NEXT_OBSERVATION_CONTRACT_v1.md. Establish the physical observable/source bridge before testing the adaptive candidate; preserve19checked network units and PR9632, do not treat fitted or chosen actions as derived. Prioritize common-action tests across environments with explicit model-error and calibration bounds.",
+  "next_action": "Finish standalone sampled-coupling PR then establish an actual observation/force bridge; fixed campaign continues.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -85,7 +85,7 @@
   "worker_pid": null,
   "previous_campaigns": "all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json",
   "global_stop": null,
-  "strongest_checked_result": "In addition to the scalar inverse: exact conditional intervention discrimination between endpoint-equivalent networks; a division-free weak response identity eliminates arbitrary hidden initial states and allows coordinate crossings in a supplied adaptive-action class; passive multimode frequency constraints avoid selecting one oscillator. A finite-test counterexample exposes untested force directions. No fundamental action, Born record process or independent empirical validation derived.",
+  "strongest_checked_result": "Conditional sampled pulse inverse reconstructs relative couplings and tests reciprocal-potential compatibility without assigning hidden preparations or selecting continuous-frequency aliases; physical response class, source/coordinate and absolute scales remain supplied. Earlier scalar inverse and network intervention results are unchanged.",
   "author_computation": {
     "core_exact_identities": 28,
     "core_mutations_detected": 3,
@@ -142,10 +142,11 @@
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T03:50:31.645102+00:00",
-    "commit": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
+    "checked_at": "2026-10-16T03:54:53.593473+00:00",
+    "commit": "153fc4ae3967615f5d52375ee0301845cc34ea57",
     "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "All19network units, focused source checks, synthesis, source identities and figure. Later metadata/observation-contract follow-up is separate."
+    "scope": "All19checked network units, synthesis, focused checks and final observation contract/handoff; remote verified and campaign worktree clean.",
+    "source_commit": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21"
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -264,7 +265,8 @@
       "Separate permanent record content from changing downstream causal role; explicitly label any alternative to current Record premises."
     ],
     "observations_first": "Published interference, composition and stable outcome records constrain candidate mechanisms. Synthetic controls are not empirical tests; no raw independent-test dataset opened.",
-    "status": "scientific exploration complete; end-of-window preservation and handoff in progress"
+    "status": "complete; results and limitations preserved",
+    "completed_at": "2026-10-16T03:54:53.593473+00:00"
   },
   "shared_mode_probe": {
     "note_sha256": "e1fb1ecc9bec148ad8b19b9998422d8984ece82a2109112aa0fd52c15bb8dfa8",
@@ -372,5 +374,59 @@
       "future_contract": "NEXT_OBSERVATION_CONTRACT_v1.md",
       "review_status": "19focused source checks complete; PR9632 canonical09/10 only; later extensions exploratory"
     }
+  },
+  "subwindow_completion": {
+    "completed_at": "2026-10-16T03:54:53.593473+00:00",
+    "subwindow_started_at": "2026-10-16T00:53:06+00:00",
+    "subwindow_end": "2026-10-16T03:53:06+00:00",
+    "elapsed_hours": 3.0298870758333334,
+    "subwindow_status": "complete",
+    "campaign_status": "active",
+    "campaign_deadline_unchanged": "2026-10-16T22:36:59Z",
+    "source_checkpoint": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
+    "final_handoff_commit": "153fc4ae3967615f5d52375ee0301845cc34ea57",
+    "remote_head_verified": "153fc4ae3967615f5d52375ee0301845cc34ea57",
+    "worktree_clean": true,
+    "report_sha256": "237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a",
+    "owned_research_jobs": [],
+    "conflicting_owned_processes": [],
+    "milestone_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632",
+    "empirical_validation": false,
+    "next_action": "Continue from NEXT_OBSERVATION_CONTRACT_v1.md; establish the observable and source bridge, with reserved histories and test functions, before testing the supplied adaptive-action class."
+  },
+  "coupling_reconstruction": {
+    "status": "v2 focused check complete; source and full reproduction personally read/verified",
+    "note": "COUPLING_RECONSTRUCTION_v2.md",
+    "primary_checks": 26,
+    "independent_assertions": 31,
+    "failures": 0,
+    "scope": "conditional relative coupling and potential consistency; synthetic controls only",
+    "source_hashes": {
+      "COUPLING_RECONSTRUCTION_v2.md": "42498cb335c85568c2358981f8563e9958f8994c61adcf6562cc1fcff9d7c909",
+      "check_coupling_reconstruction_v2.py": "17b6efb074bf435d4346a0203fdb951d78181155ac6316eeb182b892f553f235",
+      "COUPLING_CONTROLS_v2.json": "6d084582bdcb470e00346ca54efe87dc607384c1d9dd3e44374b727bc0627c7c"
+    }
+  },
+  "sampled_coupling_inverse": {
+    "note": "SAMPLED_COUPLING_INVERSE_v2.md",
+    "status": "v2 checked:33primary and275focused assertions, all source bindings verified",
+    "v1_failure": "missing s*F2 term in p sensitivity corrected; original31pass2fail preserved",
+    "source_hashes": {
+      "SAMPLED_COUPLING_INVERSE_v2.md": "f353fa17d30ae96e286d12379b5393daefae58816198323c12001de65251b2f7",
+      "check_sampled_coupling_inverse_v2.py": "7305a8f7daef0d7598bdd288b4e6f4298e6c708e91250a0628f329ce25a95823",
+      "SAMPLED_COUPLING_CONTROLS_v2.json": "1301bf184592aba51a55f9cfaa9203b01711866940a6ece03e05ccb701f8114b"
+    },
+    "empirical_validation": false,
+    "independent_report": "independent_sampled_coupling/REPORT.md",
+    "independent_report_sha256": "42276d4094879d7f6aba9b2fe71fef4914f9b97cbf41bab75b1bc636a804484d"
+  },
+  "sampled_publication": {
+    "worktree": "/Users/jonBridger/.codex/worktrees/sampled-coupling-inverse-20261016/New Axioms Lets Go",
+    "branch": "codex/sampled-coupling-inverse-20261016",
+    "primary_controls": 44,
+    "independent_assertions": 135,
+    "detected_mutations": 21,
+    "status": "focused check complete; manifest/preflight pending",
+    "empirical_validation": false
   }
 }

@@ -45,3 +45,7 @@ bare_retained_allowed: false
 ```
 
 Blocks01v2-04 have focused independent mathematical checks, complete root reading and exact source/output binding checks. Block01v1's failed exception premise remains preserved. Block05 primary passed; focused independent review identified a degenerate-probability domain extension to make explicit before closure. None is a formal audit verdict.
+
+## Sampled coupling reconstruction
+
+bounded_theorem / conditional-support. Exact sampled recurrence, six-sample history cancellation, positive pulse-end integral, normalized functions, potential compatibility and deterministic errors are personally derived and focused-checked. No independent empirical test or complete action derivation. The exploratory sensitivity failure and correction are preserved. Final standalone publication is receiving focused preflight; shared landing validation remains pending.

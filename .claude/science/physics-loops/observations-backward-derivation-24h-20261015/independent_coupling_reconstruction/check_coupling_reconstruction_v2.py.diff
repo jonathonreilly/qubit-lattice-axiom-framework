@@ -1,0 +1,34 @@
+--- check_coupling_reconstruction_v1.py
++++ check_coupling_reconstruction_v2.py
+@@ -263,6 +263,22 @@
+           force_error <= edge_bound, force_error=float(force_error),bound=float(edge_bound))
+ 
+ 
++    reversed_results=[]
++    for x,y in [(0.2,0.8),(0.8,0.2)]:
++        true_A=lambda s:1+s*s
++        estimated_A=lambda s:true_A(s)+0.02*np.sin(3*s)
++        true_B=lambda s:(s+s**3/3)/(4/3)
++        estimated_B=lambda s:true_B(s)+0.005*np.cos(2*s)
++        residual=estimated_B(y)-estimated_B(x)-0.76*quad(estimated_A,x,y)[0]
++        lo,hi=min(x,y),max(x,y)
++        bound=0.01+0.76*0.02*(hi-lo)+0.01*(
++            quad(lambda s:abs(estimated_A(s)),lo,hi)[0]+0.02*(hi-lo))
++        reversed_results.append(dict(x=x,y=y,residual=float(residual),bound=float(bound)))
++    check('integral residual error bound covers both endpoint orientations',
++          all(abs(r['residual'])<=r['bound'] for r in reversed_results),
++          orientations=reversed_results)
++
++
+ def main():
+     symbolic_controls()
+     numerical_controls()
+@@ -270,7 +286,7 @@
+         status='conditional-support',claim_type='bounded_theorem',
+         evidence='exact identities and synthetic controls; no measured dataset',
+         source_hashes={
+-            'COUPLING_RECONSTRUCTION_v1.md':sha(HERE/'COUPLING_RECONSTRUCTION_v1.md'),
++            'COUPLING_RECONSTRUCTION_v2.md':sha(HERE/'COUPLING_RECONSTRUCTION_v2.md'),
+             Path(__file__).name:sha(Path(__file__))},
+         versions=dict(python=sys.version.split()[0],numpy=np.__version__,
+                       scipy=scipy.__version__,sympy=sp.__version__),

@@ -266,6 +266,22 @@ family; that this doubling is what lifts the one-qubit freeze, while the
 irreducible 4-dimensional coin did not in the searches; and an explicit
 member with exactly one light Dirac fermion.
 
+## Bearing on the parked M_4(C) fork (information for the owner, not an adoption)
+
+Fork 4 of `docs/repo/DEFERRED_DECISIONS.md` (enlarge the one-site domain from
+M_2(C) to M_4(C)) wakes when a live lane hits the M_2(C) wall. The companion
+note and this one locate such a wall for discrete-time motion: on the
+27-point cell, M_2(C) admits no exactly cubic-covariant moving tick under any
+soldering action, while M_2(C) (x) M_2(C) = M_4(C) does. The surviving walks
+use a maximal anticommuting set in M_4(C): three lattice directions
+tau3 sigma_a, whose product i tau3 makes tau3 the chirality, and two
+directions with no lattice partner (tau1, tau2) carrying Wilson- and
+twisted-mass terms. Generic members need both; only isolated rank-two points
+use one. This is consistent with the archived proposal's reading of an extra
+Clifford direction without a lattice partner; whether the carrier there
+matches the repository's carrier is the audit question the fork records and
+is not addressed here.
+
 ## What this does not do
 
 - It does not adopt a two-qubit site, a dynamics clause or a tick.

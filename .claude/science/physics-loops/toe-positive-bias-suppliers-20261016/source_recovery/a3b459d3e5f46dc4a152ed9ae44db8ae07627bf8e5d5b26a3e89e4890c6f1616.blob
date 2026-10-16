@@ -1,0 +1,79 @@
+{
+  "captured_utc": "2026-10-16T02:04:35.990237+00:00",
+  "candidate_any_file_first_exposure_interval_utc": [
+    "2026-10-16T02:03:38.067736+00:00",
+    "2026-10-16T02:04:15+00:00"
+  ],
+  "first_exposure_kind": "freeze metadata inspected after original seal; failed initial capture assumed a different manifest schema",
+  "pre_exposure_original_freeze_sha256": "baeafe9ce9e754ce503d53685a76fe2cf0931c8481b46e10654525d5cd9bf73c",
+  "candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate",
+  "candidate_freeze_sha256": "1138e75d7861218cc4ddb77b8c00e116ce7753648b3796d1d006f1bc6f2743fb",
+  "candidate_artifacts": [
+    {
+      "path": "CHECKPOINT.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/CHECKPOINT.md",
+      "bytes": 2233,
+      "sha256": "617c0beafb2f1cf1f0c0221bce63944bd7e22d61989c0dbd8b27e9094677789c"
+    },
+    {
+      "path": "DERIVATION.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/DERIVATION.md",
+      "bytes": 24786,
+      "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/SOURCE_COVERAGE.md",
+      "bytes": 2228,
+      "sha256": "36c6e9c97e97109e84048329b18b70772a11c618ac5614635482241934863f77"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/SOURCE_MANIFEST.json",
+      "bytes": 9492,
+      "sha256": "76529c4f24a762cce9924002696230e7209d721aee22725348a55cb8130bf46e"
+    },
+    {
+      "path": "exact_bell_probe.py",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/exact_bell_probe.py",
+      "bytes": 8038,
+      "sha256": "c2729513574cf2695180cb946b6f3674d360814a5eec83c48f7af12a80b7fc74"
+    },
+    {
+      "path": "finalize_packet.py",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/finalize_packet.py",
+      "bytes": 12473,
+      "sha256": "24db9988fb702a2c549dd21a7b00a995da5ef4ffb8871ca0a97ed367b04970fc"
+    },
+    {
+      "path": "run_exact_check.py",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/run_exact_check.py",
+      "bytes": 1900,
+      "sha256": "1618c3730f5f971e6c1b6bfc79bce40ecd4b64d91e3d2bffdd5d353319dad64d"
+    },
+    {
+      "path": "runs/exact_bell_probe/EXECUTION.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/EXECUTION.json",
+      "bytes": 2245,
+      "sha256": "5f83de1c10687813b657ba7df344f0103ae3d31292ee04761a4885a0d09b8f28"
+    },
+    {
+      "path": "runs/exact_bell_probe/executed_source.py",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/executed_source.py",
+      "bytes": 8038,
+      "sha256": "c2729513574cf2695180cb946b6f3674d360814a5eec83c48f7af12a80b7fc74"
+    },
+    {
+      "path": "runs/exact_bell_probe/stderr.txt",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/exact_bell_probe/stdout.txt",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/stdout.txt",
+      "bytes": 6207,
+      "sha256": "eef262f0a6c2793346ef187364b9e6fd5bceaed76e1ea2d281d746cfa6898751"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+"""One complete nine-qubit second-order algebra check, not an accuracy-family proof.
+One old qubit, six bus qubits, source N=2; total dimension 512, code dimension 6.
+Actual full Q spectrum is used; no free-particle assertion for general buses.
+"""
+import json
+import numpy as np
+
+N=2; dim=512; omega=1.1; jf=.73; rho=.2; nu=3.2; r=.77
+B=np.array([[.2,.9-.4j],[.9+.4j,-.2]])
+mu=np.array([.93,1.21]); weights=np.array([.4,.6]); vp=np.sqrt(sum(weights))
+p=weights/sum(weights)
+v0=np.sqrt(p); v1=np.array([-v0[1],v0[0]])
+Qj=np.column_stack([v0,v1]); core=Qj.T@np.diag(mu)@Qj
+if core[0,1]<0:core=np.diag([1,-1])@core@np.diag([1,-1])
+bus=np.diag([0.,0.,nu,nu,nu,nu]);bus[:2,:2]=core
+for j in range(1,5):bus[j,j+1]=bus[j+1,j]=rho
+K0=np.zeros((dim,dim),complex);V=np.zeros_like(K0)
+def exchange(mat,x,a,b,coeff):
+    if ((x>>a)&1)!=((x>>b)&1):mat[x^(1<<a)^(1<<b),x]+=coeff
+for x in range(dim):
+    K0[x,x]+=omega*(x&1)+omega*(((x>>7)&1)+((x>>8)&1))
+    for j in range(6):K0[x,x]+=bus[j,j]*((x>>(j+1))&1)
+    for j in range(5):exchange(K0,x,j+1,j+2,bus[j,j+1])
+    y=x if ((x>>7)&1)==((x>>8)&1) else x^(1<<7)^(1<<8)
+    K0[x,x]+=jf;K0[y,x]-=jf
+    a=x&1
+    for b in range(2):V[((x&~1)|b) ^ (1<<1),x]+=vp*B[b,a]
+    exchange(V,x,6,7,r)
+J=np.zeros((dim,6),complex);F=[];labels=[]
+for a in range(2):
+    for k in range(3):
+        column=3*a+k;labels.append((a,k));F.append(omega*(a+k))
+        if k==0:J[a,column]=1
+        elif k==1:J[a|(1<<7),column]=J[a|(1<<8),column]=1/np.sqrt(2)
+        else:J[a|(1<<7)|(1<<8),column]=1
+F=np.array(F)
+assert np.linalg.norm(V-V.conj().T)<1e-12
+assert np.linalg.norm(K0-K0.conj().T)<1e-12
+assert np.linalg.norm(K0@J-J@np.diag(F))<1e-12
+fullq=np.linalg.qr(J,mode='complete')[0][:,6:]
+e,Uq=np.linalg.eigh(fullq.conj().T@K0@fullq);U=fullq@Uq
+gap=float(np.min(np.abs(e[:,None]-F[None,:])))
+if gap<1e-8:raise AssertionError('test parameters lack a resolved full gap')
+Z1=U@((U.conj().T@V@J)/(F[None,:]-e[:,None]))
+# Compute independent analytic old and source contractions.
+old_diag=np.array([vp**2*sum(abs(B[b,a])**2*np.linalg.inv((omega*(a-b))*np.eye(6)-bus)[0,0] for b in range(2)) for a in range(2)])
+lam,Ub=np.linalg.eigh(bus);leafweights=np.abs(Ub[-1,:])**2
+LF=np.array([[0.,0.,0.,0.],[0.,jf,-jf,0.],[0.,-jf,jf,0.],[0.,0.,0.,0.]])
+chi=np.array([0.,-.5,.5,0.])
+AA=-r*r*sum(leafweights/(lam-omega))
+BB=-r*r*sum(leafweights[j]*2*(chi@np.linalg.inv(LF+(lam[j]-omega)*np.eye(4))@chi) for j in range(6))
+uct=-AA/N;vct=-(BB-AA)/N
+A2=np.diag([uct*(((x>>7)&1)+((x>>8)&1))+vct*((x>>7)&1)*((x>>8)&1) for x in range(dim)])
+raw=J.conj().T@(V@Z1+A2@J)
+D=np.zeros((6,6),complex)
+for i,(a,k) in enumerate(labels):
+    for j,(b,l) in enumerate(labels):
+        if a+k==b+l:D[i,j]=raw[i,j]
+kap=-vp*r*B[1,0]*np.linalg.inv(bus-omega*np.eye(6))[0,-1]
+expected=np.diag(np.repeat(old_diag,3)).astype(complex)
+for k in (1,2):
+    row=3+k-1;column=k
+    expected[row,column]=kap*np.sqrt(k*(N-k+1))/N
+    expected[column,row]=np.conj(expected[row,column])
+error=float(np.linalg.norm(D-expected,2))
+first=float(np.linalg.norm(K0@Z1-Z1@np.diag(F)+V@J,2))
+herm=float(np.linalg.norm(D-D.conj().T,2))
+print(json.dumps(dict(full_dimension=dim,code_dimension=6,full_Q_dimension=506,full_QP_gap=gap,second_order_formula_error=error,first_corrector_error=first,hermiticity_error=herm,kappa_real=float(kap.real),kappa_imag=float(kap.imag),A_source=float(AA),B_source=float(BB),threshold=2e-9,passed=bool(max(error,first,herm)<2e-9))),flush=True)
+assert max(error,first,herm)<2e-9

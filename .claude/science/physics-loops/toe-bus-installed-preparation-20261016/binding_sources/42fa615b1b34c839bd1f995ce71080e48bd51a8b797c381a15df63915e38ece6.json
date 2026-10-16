@@ -1,0 +1,96 @@
+{
+  "utc": "2026-10-16T13:19:54.531650+00:00",
+  "kind": "root_integration_source_review",
+  "root_read_complete_for_changed_implementation": true,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 64064,
+    "sha256": "56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/bus_preparation_common.py",
+    "bytes": 51748,
+    "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 38631,
+    "sha256": "effee95c2b3ba781550d69baed5714989bda1d693f3ebb331d06aed6b6aecf58"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_preparation_publication_review/REVIEW.json",
+    "bytes": 4004,
+    "sha256": "2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990"
+  },
+  "full_read_basis": [
+    "Previously read seven changed functions, globals, primary extension, assembly and wrapper delta; exact recorded root-read snapshot retained.",
+    "Read complete final requested delta, refinement/validation/seal scripts, phase plan, twelve conformance sections, PR body and complete actual metadata output streams.",
+    "Twenty-seven common functions reused only after exact AST source identity checks against previously executed e4be0d12; original source primary validator and seven theorem bodies unchanged."
+  ],
+  "disposition": "Implementation source accepted for guarded canonical phases and separately recorded canonical/staged reviews; no retained audit.",
+  "substantive_judgment": "Sole external mathematical parent is the qualified bus. Literal-Q and U_E memory contracts remain distinct. New resource and recovery claims are excluded. All new review evidence must be actual, historical nulls remain unchanged.",
+  "metadata_receipts": [
+    {
+      "label": "assemble_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/metadata_runs/assemble_01/EXECUTION.json",
+        "bytes": 2353,
+        "sha256": "dc87132e9643db9f5b4dd713c9fefa8f88c540d2972dae2da83380ead8ec4f4a"
+      },
+      "exit_code": 0
+    },
+    {
+      "label": "source_integrity_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/metadata_runs/source_integrity_01/EXECUTION.json",
+        "bytes": 2459,
+        "sha256": "a59e95c05e8dfed967340e050385a088cc9bad640f6fa9ea0c1de9df1b496d06"
+      },
+      "exit_code": 0
+    },
+    {
+      "label": "unbound_refusal_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/metadata_runs/unbound_refusal_01/EXECUTION.json",
+        "bytes": 2434,
+        "sha256": "013107aecd688f40536fec7a5378e8cc37d81fef4bec3a7184c73dba16a2bb87"
+      },
+      "exit_code": 1
+    },
+    {
+      "label": "refine_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/metadata_runs/refine_01/EXECUTION.json",
+        "bytes": 2205,
+        "sha256": "88899ec851beb4d2c3e790da0ead7733606dfb5121683c60d15c4a6c692c755f"
+      },
+      "exit_code": 1
+    },
+    {
+      "label": "refine_02",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/metadata_runs/refine_02/EXECUTION.json",
+        "bytes": 2339,
+        "sha256": "97006bcacb10d3035b6106d10dcc0017d63af538175f354df5727f4ef066cdbf"
+      },
+      "exit_code": 0
+    },
+    {
+      "label": "validation_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/metadata_runs/validation_01/EXECUTION.json",
+        "bytes": 2361,
+        "sha256": "79d8f60acfe43ee338081c0adeae7b4688b743de5d29037532412c201448301f"
+      },
+      "exit_code": 0
+    }
+  ],
+  "unchanged_math_bodies": 7,
+  "exact_proposal_members": 306,
+  "known_failure": "refine_01 missing directory argument exited 1 before writes; separately corrected refine_02 retained. Expected unbound refusal is a different case.",
+  "cluster_cap_judgment": "OPEN for this coherent preparation milestone, as recorded in source review; no audit applied.",
+  "scientific_reexecutions": 0,
+  "actual_canonical_acceptance": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

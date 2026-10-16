@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-16T03:13:25.989640+00:00",
+  "refs": {
+    "HEAD": "68c531309ac6dae96289aab964213b8c5f55969b",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_before_positive_bias_publication/stdout",
+    "bytes": 24010,
+    "sha256": "d5abcfa87df2658380d164b271c41b8fd648c21090e5f79b12d8f05e95b9d119"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_before_positive_bias_publication/EXECUTION.json",
+      "bytes": 1237,
+      "sha256": "1cf758a98da9aac33f76629fa376906cf31c686298439ea2f4b6f96f473ab07e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_before_positive_bias_publication/EXECUTION.json",
+      "bytes": 1307,
+      "sha256": "f69c102cee953ae5b6cec0c1a4af30a262b1d18ab55a55c79f7a4eb2a4f1f817"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inspect_new_pr_9632/EXECUTION.json",
+      "bytes": 1211,
+      "sha256": "81dfe35faa968be4d406ea0e55c39846a511487a3dee4f46ac7bd20722ab05e8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_new_pr_9632/EXECUTION.json",
+      "bytes": 1219,
+      "sha256": "d20de3d6266327cc7690d5f645308323033c4a9c63eccd2c693416b5ba674314"
+    }
+  ],
+  "open_count": 62,
+  "delta": {
+    "added": [
+      {
+        "baseRefName": "main",
+        "headRefName": "codex/neighborhood-evolution-20261016",
+        "headRefOid": "e97535fef2ce2da544c288fe81a7cb35a0d8914b",
+        "isDraft": false,
+        "number": 9632,
+        "title": "[physics-loop] neighborhood-intervention bounded_theorem conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "main_unchanged": true,
+  "instructions_unchanged": true,
+  "new_pr_screen": {
+    "number": 9632,
+    "head": "e97535fef2ce2da544c288fe81a7cb35a0d8914b",
+    "source": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/refresh_before_positive_bias_publication/new_pr_9632_source_note.md",
+      "bytes": 18736,
+      "sha256": "405eb15fba1d42d8f24f39500ba14375dda3d926b3f0c50919b84c1e954c4699"
+    },
+    "root_read": "PR body and changed-file inventory; note lines1-82 (target, assumptions and interface). Remaining proof/code not reviewed or relied on.",
+    "disposition": "Separate finite linear-network intervention/response lane. No overlap with positive-bias Krylov supplier, box reduction or joint-code energy publication; no theorem acceptance or downstream reliance."
+  },
+  "read_only_recovery": "Initial heartbeat Git-status call used the renewal evidence directory, which is not a checkout, and exited128. Corrected checks in both exact worktrees found their expected clean heads; no mutation occurred.",
+  "scope": "Source/open-PR identity and scope screen only; no new scientific verification."
+}

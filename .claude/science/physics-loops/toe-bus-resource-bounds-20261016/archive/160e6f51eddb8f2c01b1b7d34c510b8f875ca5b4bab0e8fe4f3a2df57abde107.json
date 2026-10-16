@@ -1,0 +1,449 @@
+{
+  "arithmetic": "Python Fraction Gaussian rationals; no external packages",
+  "occupation_recurrence": [
+    {
+      "N": 2,
+      "variance_D": "3/16",
+      "off_code_square": "0",
+      "count_states": 4
+    },
+    {
+      "N": 3,
+      "variance_D": "1/2",
+      "off_code_square": "1/12",
+      "count_states": 7
+    },
+    {
+      "N": 4,
+      "variance_D": "13/16",
+      "off_code_square": "5/32",
+      "count_states": 11
+    },
+    {
+      "N": 5,
+      "variance_D": "9/8",
+      "off_code_square": "9/40",
+      "count_states": 16
+    },
+    {
+      "N": 6,
+      "variance_D": "23/16",
+      "off_code_square": "7/24",
+      "count_states": 22
+    },
+    {
+      "N": 7,
+      "variance_D": "7/4",
+      "off_code_square": "5/14",
+      "count_states": 29
+    },
+    {
+      "N": 8,
+      "variance_D": "33/16",
+      "off_code_square": "27/64",
+      "count_states": 37
+    },
+    {
+      "N": 9,
+      "variance_D": "19/8",
+      "off_code_square": "35/72",
+      "count_states": 46
+    },
+    {
+      "N": 10,
+      "variance_D": "43/16",
+      "off_code_square": "11/20",
+      "count_states": 56
+    },
+    {
+      "N": 11,
+      "variance_D": "3",
+      "off_code_square": "27/44",
+      "count_states": 67
+    },
+    {
+      "N": 12,
+      "variance_D": "53/16",
+      "off_code_square": "65/96",
+      "count_states": 79
+    },
+    {
+      "N": 13,
+      "variance_D": "29/8",
+      "off_code_square": "77/104",
+      "count_states": 92
+    },
+    {
+      "N": 14,
+      "variance_D": "63/16",
+      "off_code_square": "45/56",
+      "count_states": 106
+    },
+    {
+      "N": 15,
+      "variance_D": "17/4",
+      "off_code_square": "13/15",
+      "count_states": 121
+    },
+    {
+      "N": 16,
+      "variance_D": "73/16",
+      "off_code_square": "119/128",
+      "count_states": 137
+    },
+    {
+      "N": 17,
+      "variance_D": "39/8",
+      "off_code_square": "135/136",
+      "count_states": 154
+    },
+    {
+      "N": 18,
+      "variance_D": "83/16",
+      "off_code_square": "19/18",
+      "count_states": 172
+    },
+    {
+      "N": 19,
+      "variance_D": "11/2",
+      "off_code_square": "85/76",
+      "count_states": 191
+    },
+    {
+      "N": 20,
+      "variance_D": "93/16",
+      "off_code_square": "189/160",
+      "count_states": 211
+    },
+    {
+      "N": 21,
+      "variance_D": "49/8",
+      "off_code_square": "209/168",
+      "count_states": 232
+    },
+    {
+      "N": 22,
+      "variance_D": "103/16",
+      "off_code_square": "115/88",
+      "count_states": 254
+    },
+    {
+      "N": 23,
+      "variance_D": "27/4",
+      "off_code_square": "63/46",
+      "count_states": 277
+    },
+    {
+      "N": 24,
+      "variance_D": "113/16",
+      "off_code_square": "275/192",
+      "count_states": 301
+    },
+    {
+      "N": 25,
+      "variance_D": "59/8",
+      "off_code_square": "299/200",
+      "count_states": 326
+    },
+    {
+      "N": 26,
+      "variance_D": "123/16",
+      "off_code_square": "81/52",
+      "count_states": 352
+    },
+    {
+      "N": 27,
+      "variance_D": "8",
+      "off_code_square": "175/108",
+      "count_states": 379
+    },
+    {
+      "N": 28,
+      "variance_D": "133/16",
+      "off_code_square": "377/224",
+      "count_states": 407
+    },
+    {
+      "N": 29,
+      "variance_D": "69/8",
+      "off_code_square": "405/232",
+      "count_states": 436
+    },
+    {
+      "N": 30,
+      "variance_D": "143/16",
+      "off_code_square": "217/120",
+      "count_states": 466
+    },
+    {
+      "N": 31,
+      "variance_D": "37/4",
+      "off_code_square": "58/31",
+      "count_states": 497
+    },
+    {
+      "N": 32,
+      "variance_D": "153/16",
+      "off_code_square": "495/256",
+      "count_states": 529
+    },
+    {
+      "N": 33,
+      "variance_D": "79/8",
+      "off_code_square": "527/264",
+      "count_states": 562
+    },
+    {
+      "N": 34,
+      "variance_D": "163/16",
+      "off_code_square": "35/17",
+      "count_states": 596
+    },
+    {
+      "N": 35,
+      "variance_D": "21/2",
+      "off_code_square": "297/140",
+      "count_states": 631
+    },
+    {
+      "N": 36,
+      "variance_D": "173/16",
+      "off_code_square": "629/288",
+      "count_states": 667
+    },
+    {
+      "N": 37,
+      "variance_D": "89/8",
+      "off_code_square": "665/296",
+      "count_states": 704
+    },
+    {
+      "N": 38,
+      "variance_D": "183/16",
+      "off_code_square": "351/152",
+      "count_states": 742
+    },
+    {
+      "N": 39,
+      "variance_D": "47/4",
+      "off_code_square": "185/78",
+      "count_states": 781
+    },
+    {
+      "N": 40,
+      "variance_D": "193/16",
+      "off_code_square": "779/320",
+      "count_states": 821
+    }
+  ],
+  "release_fixtures": [
+    {
+      "sources": 1,
+      "N": 2,
+      "full_qubits": 6,
+      "old_dimension": 4,
+      "max_KJ_support": 18,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "0",
+      "G_squared": "583263338859709/39554340175350",
+      "C0_squared": "770817682574346289/17146806466014225",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 1,
+      "N": 3,
+      "full_qubits": 7,
+      "old_dimension": 4,
+      "max_KJ_support": 36,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "4/264627",
+      "G_squared": "114053788543498/6592390029225",
+      "C0_squared": "12503141677232704/211688968716225",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 1,
+      "N": 4,
+      "full_qubits": 8,
+      "old_dimension": 4,
+      "max_KJ_support": 72,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "5/176418",
+      "G_squared": "21627413565479/1078754732055",
+      "C0_squared": "1287661717957852561/17146806466014225",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 1,
+      "N": 6,
+      "full_qubits": 10,
+      "old_dimension": 4,
+      "max_KJ_support": 288,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "14/264627",
+      "G_squared": "147605592985229/5650620025050",
+      "C0_squared": "215154172069262449/1905200718446025",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 1,
+      "N": 8,
+      "full_qubits": 12,
+      "old_dimension": 4,
+      "max_KJ_support": 1152,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "1/13068",
+      "G_squared": "217327549891138/6592390029225",
+      "C0_squared": "55448881113691321/349934825837025",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 2,
+      "N": 2,
+      "full_qubits": 9,
+      "old_dimension": 4,
+      "max_KJ_support": 80,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "0",
+      "G_squared": "72802657982381/2825310012525",
+      "C0_squared": "223642710417818176/1905200718446025",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 2,
+      "N": 3,
+      "full_qubits": 11,
+      "old_dimension": 4,
+      "max_KJ_support": 320,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "100/2381643",
+      "G_squared": "379306545903269/10787547320550",
+      "C0_squared": "3044366409794483524/17146806466014225",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 2,
+      "N": 4,
+      "full_qubits": 13,
+      "old_dimension": 4,
+      "max_KJ_support": 1280,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "125/1587762",
+      "G_squared": "60581030075144/1318478005845",
+      "C0_squared": "4288611220278967696/17146806466014225",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 3,
+      "N": 2,
+      "full_qubits": 12,
+      "old_dimension": 4,
+      "max_KJ_support": 352,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "-1"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "0",
+      "G_squared": "165788613694871/3595849106850",
+      "C0_squared": "20311219278979225/76208028737841",
+      "noncommuting_H_B2": true
+    },
+    {
+      "sources": 3,
+      "N": 3,
+      "full_qubits": 15,
+      "old_dimension": 4,
+      "max_KJ_support": 2816,
+      "source_phases": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "-1"
+        ]
+      ],
+      "full_second_minus_compressed_second_diagonal": "200/2381643",
+      "G_squared": "8314853271640967/118663020526050",
+      "C0_squared": "33144192700477156/76208028737841",
+      "noncommuting_H_B2": true
+    }
+  ],
+  "swap_and_rotation": {
+    "full_swap_basis_inputs": 32,
+    "rotation_phase": [
+      "3/5",
+      "4/5"
+    ],
+    "inverse_phase_mutant_rejected": true
+  },
+  "author_code_imported": false,
+  "limits": "Finite algebra fixtures; no full routed-bus evolution, no pulse propagation, no microscopic drive."
+}

@@ -1,0 +1,91 @@
+{
+  "failed_scientific_executions_reported_by_selected_histories": 0,
+  "historical_scientific_runs": 3,
+  "new_scientific_reexecutions": 0,
+  "recovery_scientific_executions": 0,
+  "runs": [
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run",
+      "exit_code": 0,
+      "kind": "scientific",
+      "label": "author-algebra",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/EXECUTION.json",
+      "schema": "nested-author"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001",
+      "exit_code": 0,
+      "kind": "scientific",
+      "label": "exposed-algebra",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/EXECUTION.json",
+      "schema": "flat-review"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance",
+      "exit_code": 0,
+      "kind": "provenance-only",
+      "label": "exposed-provenance",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/EXECUTION.json",
+      "schema": "flat-review"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001",
+      "exit_code": 0,
+      "kind": "scientific",
+      "label": "slew-isometry",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/EXECUTION.json",
+      "schema": "nested-slew"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_source_acceptance",
+      "exit_code": 0,
+      "kind": "source-acceptance-recording",
+      "label": "preparation-acceptance",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_source_acceptance/EXECUTION.json",
+      "schema": "root-recorder"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_bounded_slew_preparation_source_acceptance",
+      "exit_code": 0,
+      "kind": "source-acceptance-recording",
+      "label": "slew-acceptance",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_bounded_slew_preparation_source_acceptance/EXECUTION.json",
+      "schema": "root-recorder"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/metadata_capture",
+      "exit_code": 0,
+      "kind": "provenance-only",
+      "label": "author-recovery-source-capture",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/metadata_capture/EXECUTION.json",
+      "relative_base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check",
+      "schema": "relative-review"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_memory_recovery_source_acceptance",
+      "exit_code": 0,
+      "kind": "source-acceptance-recording",
+      "label": "recovery-qualified-acceptance",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_memory_recovery_source_acceptance/EXECUTION.json",
+      "schema": "root-recorder"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish",
+      "exit_code": 0,
+      "kind": "parent-publication-recording",
+      "label": "preparation-parent-publication",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish/EXECUTION.json",
+      "schema": "phase"
+    }
+  ],
+  "scope": "Selected actual recorded evidence. Earlier unrecorded metadata launches are not assigned invented receipts. Prior publication pipeline not claimed fully revalidated."
+}

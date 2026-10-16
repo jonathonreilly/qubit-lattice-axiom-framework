@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-16T00:46:00.835602+00:00",
+  "refs": {
+    "HEAD": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_spin_publication_binding/stdout",
+    "bytes": 22491,
+    "sha256": "4fa10f4ca90f7b34d7ab5a24ae77921b7ec4ee7ac7714a1f59575e64356c61cd"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_spin_publication_binding/EXECUTION.json",
+      "bytes": 1222,
+      "sha256": "1c2276e254cfaa6e45ac3f3e91e7bf31e6607a8dff62af0543e7b0c2c4c174b3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_spin_publication_binding/EXECUTION.json",
+      "bytes": 1291,
+      "sha256": "6de6c09b2600f6a328620f4cf38b83425d945934682df18083b971ec739948ba"
+    }
+  ],
+  "open_count": 58,
+  "delta": {
+    "added": [
+      {
+        "baseRefName": "physics-loop/toe-autonomous-compiler-composition-20261015",
+        "headRefName": "physics-loop/toe-bounded-slew-compiler-20261015",
+        "headRefOid": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+        "isDraft": false,
+        "number": 9627,
+        "title": "[physics-loop] bounded-slew compiler: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9627"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "codex/scalar-observation-inverse-20261016",
+        "headRefOid": "40e5030769a9409f0d52d3e4e58e8279a5550e47",
+        "isDraft": false,
+        "number": 9628,
+        "title": "[physics-loop] scalar-observation-inverse bounded_theorem conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9628"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "scope": "Source and open-PR identity observation only; no scientific verification."
+}

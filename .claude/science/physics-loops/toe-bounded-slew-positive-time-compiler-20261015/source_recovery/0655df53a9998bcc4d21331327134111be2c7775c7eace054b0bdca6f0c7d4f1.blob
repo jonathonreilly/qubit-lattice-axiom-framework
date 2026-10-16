@@ -1,0 +1,10 @@
+{
+  "verified_utc": "2026-10-15T23:55:59.314780+00:00",
+  "original_freeze_sha256": "cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5",
+  "original_member_count": 26,
+  "original_members_unchanged": true,
+  "root_derivation_still_matches_requested_sha256": true,
+  "root_freeze_still_matches_captured_sha256": true,
+  "comparison_read_completely_before_freeze": true,
+  "scientific_check": "Analytical comparison only; no numerical/compiler/formal-proof execution."
+}

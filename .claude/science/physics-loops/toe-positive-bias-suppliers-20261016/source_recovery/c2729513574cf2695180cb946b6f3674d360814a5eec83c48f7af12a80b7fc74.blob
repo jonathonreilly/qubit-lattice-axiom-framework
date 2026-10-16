@@ -1,0 +1,146 @@
+"""Bounded exact author check for a supplied old-edge bias; not independent review.
+
+No numerical propagation, controller simulation, genericity search, or eigenvalue
+floating point classification is performed. All matrices are at most 4 by 4.
+"""
+from datetime import datetime, timezone
+from itertools import combinations
+import json
+import signal
+import sys
+import sympy as s
+
+signal.alarm(40)
+lam = s.Symbol("lambda", real=True)
+I2 = s.eye(2)
+I4 = s.eye(4)
+X = s.Matrix([[0, 1], [1, 0]])
+Y = s.Matrix([[0, -s.I], [s.I, 0]])
+Z = s.diag(1, -1)
+XX, YY, ZZ = [s.kronecker_product(A, A) for A in (X, Y, Z)]
+H = 3 * I4 + XX + YY + ZZ
+C1 = 2 * (I4 + YY)
+C2 = 8 * (I4 + ZZ)
+C = C1 + C2
+B = s.kronecker_product(X + 2 * Y + 3 * Z, I2)
+bell_names = ["psi_minus", "psi_plus", "phi_plus", "phi_minus"]
+Q = s.Matrix([[0, 0, 1, 1], [1, 1, 0, 0], [-1, 1, 0, 0], [0, 0, 1, -1]]) / s.sqrt(2)
+checks = []
+
+def check(name, statement):
+    assert statement, name
+    checks.append(name)
+
+def zero(A):
+    return A.applyfunc(s.simplify) == s.zeros(*A.shape)
+
+def matrix_strings(A):
+    return [[str(s.simplify(A[i, j])) for j in range(A.cols)] for i in range(A.rows)]
+
+check("Bell transform unitary", zero(Q.H * Q - I4))
+check("literal bias identity", zero(C - (10 * I4 + 2 * YY + 8 * ZZ)))
+check("old positive decomposition identity", zero(H - ((I4 + XX) + (I4 + YY) + (I4 + ZZ))))
+check("commuting old Hamiltonian and bias", zero(H * C - C * H))
+expected_correlations = [(-1, -1, -1), (1, 1, -1), (1, -1, 1), (-1, 1, 1)]
+for k, A in enumerate((XX, YY, ZZ)):
+    check("Bell Pauli correlations " + "XYZ"[k], zero(Q.H * A * Q - s.diag(*[row[k] for row in expected_correlations])))
+check("old spectrum", zero(Q.H * H * Q - s.diag(0, 4, 4, 4)))
+check("bias spectrum", zero(Q.H * C * Q - s.diag(0, 4, 16, 20)))
+check("first added block positive with norm four", C1.eigenvals() == {s.Integer(0): 2, s.Integer(4): 2})
+check("second added block positive with norm sixteen", C2.eigenvals() == {s.Integer(0): 2, s.Integer(16): 2})
+check("bias exact PSD norm twenty", C.eigenvals() == {s.Integer(0): 1, s.Integer(4): 1, s.Integer(16): 1, s.Integer(20): 1})
+for k, A in enumerate((XX, YY, ZZ)):
+    check("old positive edge block " + "XYZ"[k], (I4 + A).eigenvals() == {s.Integer(0): 2, s.Integer(2): 2})
+
+E = [s.Integer(0), 4 + 4 * lam, 4 + 16 * lam, 4 + 20 * lam]
+check("full symbolic attenuated spectrum", zero(Q.H * (H + lam * C) * Q - s.diag(*E)))
+check("strong point spectrum", [e.subs(lam, 1) for e in E] == [0, 8, 20, 24])
+pairs = [(1, 0), (2, 0), (3, 0), (2, 1), (3, 1), (3, 2)]
+gaps = [s.expand(E[a] - E[b]) for a, b in pairs]
+check("all six symbolic gaps", gaps == [4 + 4 * lam, 4 + 16 * lam, 4 + 20 * lam, 12 * lam, 16 * lam, 4 * lam])
+check("strong point six distinct gaps", sorted([g.subs(lam, 1) for g in gaps]) == [4, 8, 12, 16, 20, 24])
+positive_collisions = []
+for i, j in combinations(range(6), 2):
+    p = s.Poly(gaps[i] - gaps[j], lam)
+    check("gap difference polynomial nonzero %d %d" % (i, j), not p.is_zero)
+    if p.degree() == 1:
+        root = -p.nth(0) / p.nth(1)
+        if root > 0:
+            positive_collisions.append({"first_pair": pairs[i], "second_pair": pairs[j], "lambda": str(root)})
+check("only positive gap collisions one third and one half", sorted(s.Rational(row["lambda"]) for row in positive_collisions) == [s.Rational(1, 3), s.Rational(1, 2)])
+
+# This proves the claimed gap lower bounds on the entire interval, not a grid:
+# every displayed difference is affine, and its endpoint values are nonnegative.
+def affine_nonnegative_on_closed_interval(expr, left, right):
+    p = s.Poly(s.expand(expr), lam)
+    return p.degree() <= 1 and p.eval(left) >= 0 and p.eval(right) >= 0
+
+sorted_gaps = [4 * lam, 12 * lam, 16 * lam, 4 + 4 * lam, 4 + 16 * lam, 4 + 20 * lam]
+check("sorted list is permutation of all gaps", set(sorted_gaps) == set(gaps))
+adjacent_gap_differences = [s.expand(sorted_gaps[j + 1] - sorted_gaps[j]) for j in range(5)]
+check("small interval adjacent gap differences", adjacent_gap_differences == [8 * lam, 4 * lam, 4 - 12 * lam, 12 * lam, 4 * lam])
+for j, diff in enumerate(adjacent_gap_differences):
+    check("whole interval gap separation at least four lambda %d" % j,
+          affine_nonnegative_on_closed_interval(diff - 4 * lam, 0, s.Rational(1, 4)))
+for j, gap in enumerate(gaps):
+    check("whole interval positive gap at least four lambda %d" % j,
+          affine_nonnegative_on_closed_interval(gap - 4 * lam, 0, s.Rational(1, 4)))
+check("exact minimum gap attained", gaps[-1] == 4 * lam)
+check("exact minimum gap separation attained", adjacent_gap_differences[1] == 4 * lam)
+
+BB = s.simplify(Q.H * B * Q)
+expected_B = s.Matrix([[0, 3, -2 * s.I, -1], [3, 0, 1, 2 * s.I], [2 * s.I, 1, 0, 3], [-1, -2 * s.I, 3, 0]])
+check("full exact Bell basis port matrix", zero(BB - expected_B))
+transition_entries = [BB[a, b] for a, b in pairs]
+check("all six positive orientation transitions nonzero", transition_entries == [3, 2 * s.I, -1, 1, -2 * s.I, 3])
+check("transition magnitude squares", [s.simplify(z * s.conjugate(z)) for z in transition_entries] == [9, 4, 1, 1, 4, 9])
+check("all port diagonals are zero", all(BB[a, a] == 0 for a in range(4)))
+check("port norm squared fourteen", zero(B * B - 14 * I4))
+check("optional local identity shift makes every matrix entry nonzero", all(z != 0 for z in BB + I4))
+check("positive local port shift spectrum", (s.sqrt(14) * I4 + B).eigenvals() == {s.Integer(0): 2, 2 * s.sqrt(14): 2})
+check("centered bias radius ten", (C - 10 * I4).eigenvals() == {-10: 1, -6: 1, 6: 1, 10: 1})
+check("physical scalar H three", s.trace(H) / 4 == 3)
+check("physical scalar bias ten", s.trace(C) / 4 == 10)
+check("small interval exact total norm at most nine", affine_nonnegative_on_closed_interval(9 - E[-1], 0, s.Rational(1, 4)))
+check("small interval paid added incident load at most five", affine_nonnegative_on_closed_interval(5 - 20 * lam, 0, s.Rational(1, 4)))
+
+out = {
+    "utc": datetime.now(timezone.utc).isoformat(),
+    "role": "Exposed author exact algebra check; not independent validation or a controller simulation",
+    "python_version": sys.version,
+    "sympy_version": s.__version__,
+    "limits": {"child_alarm_seconds": 40, "largest_matrix_dimension": 4, "gap_difference_polynomial_degree_at_most": 1, "floating_point_arithmetic": False},
+    "literal_H": "3II+XX+YY+ZZ",
+    "added_C": "2(II+YY)+8(II+ZZ)=10II+2YY+8ZZ",
+    "designated_B": "(X+2Y+3Z) tensor I",
+    "Bell_basis_order": bell_names,
+    "Bell_basis_columns": matrix_strings(Q),
+    "old_spectrum": [0, 4, 4, 4],
+    "bias_spectrum": [0, 4, 16, 20],
+    "attenuated_spectrum": [str(e) for e in E],
+    "strong_point_spectrum": [0, 8, 20, 24],
+    "pair_order_a_greater_b": pairs,
+    "positive_gaps": [str(g) for g in gaps],
+    "strong_point_gaps_in_pair_order": [int(g.subs(lam, 1)) for g in gaps],
+    "positive_gap_collisions": positive_collisions,
+    "exact_quantitative_interval": "0 < lambda <= 1/4",
+    "minimum_positive_gap_on_interval": "4 lambda",
+    "minimum_positive_gap_separation_on_interval": "4 lambda",
+    "sorted_positive_gaps_on_interval": [str(g) for g in sorted_gaps],
+    "adjacent_sorted_gap_differences": [str(g) for g in adjacent_gap_differences],
+    "B_in_Bell_basis": matrix_strings(BB),
+    "transition_entries": [str(z) for z in transition_entries],
+    "minimum_transition_magnitude": 1,
+    "B_operator_norm": "sqrt(14)",
+    "zero_port_diagonals": True,
+    "old_positive_edge_block_norms": [2, 2, 2],
+    "added_positive_edge_block_norms": [4, 16],
+    "added_incident_load_each_old_endpoint": "20 lambda",
+    "added_scalar_rate": "10 lambda",
+    "centered_bias_norm": 10,
+    "checks_count": len(checks),
+    "checks": checks,
+    "all_checks_passed": True,
+    "boundary": "This requires permission to add and attenuate the specified positive blocks on the already occupied old edge. It proves neither that onsite-only controls authorize that addition nor that generic Lie controllability supplies such a bias."
+}
+print(json.dumps(out, indent=2))

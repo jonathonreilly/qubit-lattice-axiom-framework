@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-10-16T13:28:38.392401+00:00",
+  "kind": "metadata-only identity verification and source capture",
+  "scientific_executions": 0,
+  "sources": [
+    {
+      "key": "author_derivation",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/DERIVATION.md",
+      "bytes": 26987,
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3",
+      "coverage": "Complete current read, sections 1-8; reviewed independently of the prior root schedule.",
+      "capture": "sources/author_derivation.md"
+    },
+    {
+      "key": "author_freeze",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/FREEZE.json",
+      "bytes": 2832,
+      "sha256": "e30a9cf7396ad1e32ff10405006e1a34d361f529c8144a9989830b4a728d1415",
+      "coverage": "Complete current read; all four listed members verified by bytes/hash only where not otherwise read.",
+      "capture": "sources/author_freeze.json"
+    },
+    {
+      "key": "author_exposure",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/EXPOSURE.md",
+      "bytes": 2731,
+      "sha256": "506a43815458201822a151669c036bdecb3ad34605a2887394560e923076caa0",
+      "coverage": "Complete current read; reported author exposure, not independent verification of its reading history.",
+      "capture": "sources/author_exposure.md"
+    },
+    {
+      "key": "author_manifest",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/SOURCE_MANIFEST.json",
+      "bytes": 4008,
+      "sha256": "439866a222940a976ffb77c166fac6fce7cd3ff24514ef14ec42995c09c28ab5",
+      "coverage": "Complete current read; source identity and reported coverage.",
+      "capture": "sources/author_manifest.json"
+    },
+    {
+      "key": "preparation_qualifications",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e",
+      "coverage": "Complete read in immediately preceding frozen review reused at unchanged identity; accepted conditional premise.",
+      "capture": "sources/preparation_qualifications.md"
+    },
+    {
+      "key": "slew_qualifications",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6990,
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25",
+      "coverage": "Complete read in immediately preceding frozen review reused at unchanged identity; accepted evolved-memory/error/cap premise.",
+      "capture": "sources/slew_qualifications.md"
+    },
+    {
+      "key": "preparation_derivation",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "bytes": 31003,
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29",
+      "coverage": "Complete prior same-revision read reused; definitions lines 1-83 and 155-166 refreshed in immediately preceding review. No replay.",
+      "capture": "sources/preparation_derivation.md"
+    },
+    {
+      "key": "prior_root_sketch_review",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/REVIEW.md",
+      "bytes": 15321,
+      "sha256": "5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4",
+      "coverage": "Own earlier frozen review; complete current reread for explicit comparison only. Not new independent evidence for author proof.",
+      "capture": "sources/prior_root_sketch_review.md"
+    },
+    {
+      "key": "prior_root_sketch_review_freeze",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/FREEZE.json",
+      "bytes": 1883,
+      "sha256": "a6e440713aaf7219621a58d8d2b0620b10ad14bdf1b9376aa27c9e8810588e3a",
+      "coverage": "Identity only in this task; prior frozen packet preserved."
+    },
+    {
+      "key": "root_original_sketch",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/PRE_RESULT_SKETCH.md",
+      "bytes": 6791,
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340",
+      "coverage": "Complete earlier review read reused for exposure disclosure; no new root review files read."
+    },
+    {
+      "key": "preparation_acceptance",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3462,
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641",
+      "coverage": "Identity refresh only; controlling qualifications above are reused."
+    },
+    {
+      "key": "slew_acceptance",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3667,
+      "sha256": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473",
+      "coverage": "Identity refresh only; controlling qualifications above are reused."
+    },
+    {
+      "key": "canonical_bus",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+      "coverage": "Prior unchanged-revision mathematical-body reading reused; current identity check only. No new parent revalidation."
+    },
+    {
+      "key": "prior_slew_review",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "bytes": 17568,
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1",
+      "coverage": "Own earlier review reused through accepted qualifications; current identity check only. Historical executions not replayed."
+    }
+  ],
+  "author_freeze_members_verified": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1804,
+      "sha256": "cce7221e85784a25051fe3cf006c7cb85f024571353ba3a5e816f39d788ba110"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 26987,
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 2731,
+      "sha256": "506a43815458201822a151669c036bdecb3ad34605a2887394560e923076caa0"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4008,
+      "sha256": "439866a222940a976ffb77c166fac6fce7cd3ff24514ef14ec42995c09c28ab5"
+    }
+  ]
+}

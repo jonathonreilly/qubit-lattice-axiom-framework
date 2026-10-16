@@ -1,0 +1,60 @@
+"""Exact positive-generator Heisenberg certificate; root proposal, not independent evidence."""
+from datetime import datetime,timezone
+import json,signal
+import sympy as s
+signal.alarm(40)
+labels=[a+b for a in 'IXYZ' for b in 'IXYZ'];index={w:i for i,w in enumerate(labels)}
+def basis(w):
+    v=[0]*16;v[index[w]]=1;return s.Matrix(v)
+cycle={('X','Y'):'Z',('Y','Z'):'X',('Z','X'):'Y'}
+def mul(a,b):
+    out='';phase=1
+    for x,y in zip(a,b):
+        if x=='I':out+=y
+        elif y=='I':out+=x
+        elif x==y:out+='I'
+        elif (x,y) in cycle:out+=cycle[x,y];phase*=s.I
+        else:out+=cycle[y,x];phase*=-s.I
+    return out,s.expand(phase)
+table=[]
+for a in labels:
+    row=[]
+    for b in labels:
+        word,phase=mul(a,b);word2,phase2=mul(b,a);assert word==word2
+        row.append((index[word],s.expand(s.I*(phase-phase2)/2)))
+    table.append(row)
+def bracket(a,b):
+    out=[0]*16
+    for i,x in enumerate(a):
+        if not x:continue
+        for j,y in enumerate(b):
+            if y:
+                k,c=table[i][j];out[k]+=x*y*c
+    return s.Matrix(out)
+H0=basis('XX')+basis('YY')+basis('ZZ');H=H0+3*basis('II')
+for axis in 'XYZ':assert bracket(H,basis(axis+'I')+basis('I'+axis))==s.zeros(16,1)
+generators=[H,H+basis('II')+basis('XI'),H+basis('II')+basis('ZI')]
+gnames=['Hpos','Hpos+II+XI','Hpos+II+ZI'];vectors=[];words=[];matrix=s.zeros(16,0);rank=0
+
+def insert(v,word):
+    global matrix,rank
+    candidate=matrix.row_join(v);r=candidate.rank()
+    if r==rank:return
+    assert r==rank+1
+    matrix=candidate;rank=r;vectors.append(v);words.append(word)
+
+for v,w in zip(generators,gnames):insert(v,w)
+j=0
+while j<len(vectors) and rank<16:
+    for v,w in zip(generators,gnames):insert(bracket(vectors[j],v),f'i[{words[j]},{w}]/2')
+    j+=1
+assert rank==16
+det=matrix.det(method='domain-ge');assert det!=0
+r=s.symbols('r',positive=True,real=True);pauli={'I':s.eye(2),'X':s.Matrix([[0,1],[1,0]]),'Y':s.Matrix([[0,-s.I],[s.I,0]]),'Z':s.diag(1,-1)}
+P=[s.kronecker_product(pauli[a],pauli[b]) for a,b in labels]
+Hm=sum((v*p for v,p in zip(H,P)),s.zeros(4));assert Hm.eigenvals()=={s.Integer(0):1,s.Integer(4):3}
+Ku=Hm+r*P[index['ZI']];up=s.eye(4)[:,0];down=s.eye(4)[:,3]
+assert Ku*up==(4+r)*up and Ku*down==(4-r)*down
+for label in ['II','XI','YI','ZI','IX','IY','IZ']:assert (up.T*P[index[label]]*down)[0]==0
+out={'utc':datetime.now(timezone.utc).isoformat(),'status':'Unaccepted root exact witness; independent content check and scoped negative review pending','H_literal':'3II+XX+YY+ZZ','old_geometry':'Two adjacent old qubits, first is designated port','positive_generators':gnames,'full_u4_rank':rank,'Hermitian_bracket':'i[A,B]/2','certificate_determinant':str(det),'words':words,'coefficient_columns':[[str(x) for x in matrix[:,j]] for j in range(rank)],'global_SU2_commutators_zero':True,'H_eigenvalues':{'0':1,'4':3},'aligned_bias':'cII+rZI with r>0 after common global spin rotation','product_eigenvectors':{'up_up':'4+c+r','down_down':'4+c-r'},'every_one_qubit_B_up_down_matrix_element':0,'all_static_bias_proof':'At r=0 the old triplet is degenerate. At r>0 these two product eigenstates have distinct energies, while every one-qubit B has zero matrix element between them. If other degeneracies occur, simple spectrum fails already. Global SU(2) invariance covers every Hermitian one-qubit bias direction.','boundary':'Full positive-generator Lie controllability does not imply an all-transition local port for any static bias confined to that one port. This does not exclude biases on additional old sites, multi-qubit ports, time-dependent controls, active autonomous compensation or other architectures.'}
+print(json.dumps(out,indent=2))

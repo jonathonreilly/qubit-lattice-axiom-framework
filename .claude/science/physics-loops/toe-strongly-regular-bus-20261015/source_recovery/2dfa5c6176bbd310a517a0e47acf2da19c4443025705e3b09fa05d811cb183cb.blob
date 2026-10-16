@@ -1,0 +1,51 @@
+# Exact coverage for the exposed bus review
+
+This file distinguishes complete scientific reads, reused instruction coverage, captured-only transitive material and actual executions. Reading a summary, storing bytes or verifying a hash is not recorded as a complete scientific read. The main source is the frozen author's self-contained 448-line DERIVATION, not an uninspected older parent theorem. Source identities are captured in SOURCE_MANIFEST.json and independently refreshed in SOURCE_REFRESH.json before the review freeze.
+
+## Complete argument coverage
+
+`author_at_launch/DERIVATION.md`: 40,500 bytes, 448 lines, SHA256 `855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2`. All lines were read in full. Sections 2–10 were independently recomputed algebraically; sections 1, 11 and 12 were checked for the precise conditional contract, solved parameter order and limits. Specific coverage:
+
+| Lines | Argument inspected | Review treatment |
+|---|---|---|
+| 1–32 | Status, literal complete old plant, strong spectral and geometric data | No derivation from generic Lie certificate inferred; effective computable-L qualification identified |
+| 33–67 | Pole cone and Jacobi measure | Residue signs, positive kernel vector, exact weight factor and compact boxes recomputed |
+| 68–95 | Ordinary NN geometry, full base generator and code | Coordinates, counts, adjacency, degrees, source kernel and invariant code checked |
+| 96–117 | Complete zero-route spectrum and nonzero-route gap | Hyperplane coefficients, computable strict search and full-space Weyl bound recomputed |
+| 118–179 | Schur derivative bounds, contraction and tree cofactors | Constants and fixed-point conditions checked; off-path nonvanishing premise checked |
+| 180–210 | Full source SU(2) resolvent | Same-multiplicity ladder, normalized coefficients and full inverse existence recomputed |
+| 211–265 | All connected second-order terms and source cancellation | Sign, unique mixed ordering, labeled resonances and off-shell counterterm coverage recomputed |
+| 266–300 | Complete-source fluctuation and source phases | Orthogonal residual norm and actual-time conjugation checked; zero-support effectiveness gap identified |
+| 301–353 | Complete correctors and Duhamel bound | Sylvester signs, residual expansion, denominator classification and bare-code endpoints checked |
+| 354–412 | Positive installed blocks, incident cap and scalar/output ledgers | Real reserve norms, incident loads, normalized trace distinction and complete phase/order checked |
+| 413–439 | Accuracy/resource order and supplied implementation errors | Positive feasible xi, complete trace conversion, unconditional marginal and fixed cap qualifications checked |
+| 440–448 | Scope limits | Consistent with conditional theorem; no native, efficient or universal claim imported |
+
+`author_at_launch/CHECK_EVIDENCE.md` (4,553 bytes, 21 lines, SHA `4e229757fc07bf0b3e3a3ec821adf1418643468040c2b1f9c258b6b3968a22d1`), `SOURCE_COVERAGE.md` (3,361 bytes, 20 lines, SHA `a9cd83f3ee125484f62beab5fc10cc1c58b99ccaa992a3b9e05a155f418fd4ca`) and `CHECKPOINT.md` (3,150 bytes, 15 lines, SHA `c086beea373f1ac550449fe863afab31d1b2efcc874750e9ac921f9f81dd7974`) were read completely. The author's scope caveats were checked against actual sources and outputs rather than accepted from PASS summaries.
+
+## Complete executable and execution evidence coverage
+
+The successful author algebra source `finite_check.py` / `run_02/finite_check.at_launch.py` was read completely: 6,967 bytes, 166 lines, SHA `b21f0266b367944c93567c034ef9f247f777dc6dc564fb871475847644a17520`. The initial scientific source has 6,660 bytes, 162 lines, SHA `acd758dd676a2f9d214067c96faa3607983f3d5adffbbd2755aecf73e1c518bf`. Its complete difference from the successful source was read, establishing coverage of the changed setup and retained common code.
+
+The successful full-matrix source `full_second_order_check.py` / `full_second_order_02/full_second_order_check.at_launch.py` was read completely: 3,473 bytes, 69 lines, SHA `4cbb550d2a2de48332a1de84fa73a118fba5a511dca931df185e41811e0e34bb`. The initial source has 3,338 bytes, 66 lines, SHA `3e5e769880746b925f759afc412812fe6fec62486be760a11200d63a0a786de4`. Its complete difference was read: port-index parentheses plus three input checks. Current `run_recorded.py` (1,497 bytes, 23 lines) and `run_full_recorded.py` (1,431 bytes, 19 lines) were read completely. They are not the missing original failed launcher versions.
+
+All four author run launch/result records and all four complete stdout/stderr streams were read without truncation:
+
+* Initial algebra: root `CHECK_LAUNCH.json`, `CHECK_RESULT.json`, `finite_check.stdout.log` (3,544 bytes / 27 rows), `finite_check.stderr.log` (281 bytes / 5 lines), exit 1.
+* Successful algebra: `run_02/CHECK_LAUNCH.json`, `CHECK_RESULT.json`, `finite_check.stdout.log` (5,245 bytes / 39 rows), empty stderr, exit 0.
+* Initial full matrix: `full_second_order/CHECK_LAUNCH.json`, `CHECK_RESULT.json`, `stdout.log` (430 bytes), `stderr.log` (332 bytes / 5 lines), exit 1.
+* Successful full matrix: `full_second_order_02/CHECK_LAUNCH.json`, `CHECK_RESULT.json`, `stdout.log` (433 bytes), empty stderr, exit 0.
+
+Exact hashes for every one of these files are in SOURCE_MANIFEST.json. The author's evidence is not reclassified as reviewer execution or independence. The capture/freeze bookkeeping scripts and source-capture stdout were hashed and retained; they were not independently audited line by line as scientific algorithms. The capture manifest was read completely and all 45 referenced artifact sizes and hashes were checked programmatically. The original author FREEZE.json is separately captured, giving 46 files in `author_at_launch`.
+
+The reviewer wrote and executed `recompute.py` (10,160 bytes, 182 lines, SHA `fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75`) before reading the author executable sources. Complete executable-at-launch bytes are in `recompute_run_01/recompute.at_launch.py`; receipt and raw output are in that directory. The reviewer then wrote and executed `check_phase_and_branch.py` (2,989 bytes, 53 lines, SHA `d5d7bc4d5d41521644029df01494c69e480bb1e170374b006e6f682dcce70a0a`) after reading author code. Both its own bytes and the imported reviewer helper bytes were copied into `phase_branch_run` before execution. All reviewer sources, receipts and full streams were inspected. Neither executable imports author code. Scope and numerical results are reported in CHECK_EVIDENCE.md; no missing or unexecuted check is represented by a PASS.
+
+## Instructions and transitive sources
+
+The current installed `physics-claim-reviewer/SKILL.md` was read in full and used for this exposed review. Captured at `instructions/physics-claim-reviewer.SKILL.md`, 14,490 bytes, 230 lines, SHA `9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455`; the repository skill copy has the same hash. The applicable proof-search governance reference was read in full: `instructions/proof-search-governance.md`, 4,975 bytes, 126 lines, SHA `be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258`.
+
+Earlier complete reads of the applicable planning AGENTS, SCIENCE_WORKFLOW and workhorse rules were reused at the same verified identities recorded in `author_at_launch/sources`: planning agents SHA `3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9`, workflow SHA `05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce`, workhorse SHA `9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb`. No model/effort override or child delegation occurred. User-provided AGENTS instructions and the parent's bounded scope/constraints were applied. No editable prompt file changed.
+
+The author packet also captures `sources/accuracy_scaled.md`, `conditioned_compiler.md`, `composition.md`, `mediator.md`, `previous_derivation.md`, `root_lemmas.md`, `root_routing.md`, `root_routing_freeze.json` and `selection.md`. Their hashes are retained and refreshed as provenance. This bus review did **not** newly read those transitive scientific bodies in full and makes no independent finding about them. In particular their historical appended arguments are not treated as newly checked just because the bus author cites them. The complete new bus proof supplies the finite claims actually reviewed here, including its self-contained corrector. Earlier bounded-slew coverage remains in its separate frozen packet and is not broadened by this review.
+
+Parent messages exposed (a) a preliminary no-defect assessment, (b) the failed-launcher provenance concern and (c) the rational-M effectiveness repair. The reviewer independently checked these points and retained their attribution. No other worker results were accessed directly for this review. This exposure rules out any description of the result as blind independence. All frozen bounded-slew and earlier comparison files were preserved.

@@ -1,0 +1,420 @@
+{
+  "utc": "2026-10-16T01:38:51.141019+00:00",
+  "branch": "physics-loop/toe-correlated-energy-comparator-20261015",
+  "base_head": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 87332,
+    "sha256": "6cd949125fa75a780039a66ddc43129f2ff1c8990b6999bfe113415311bcbb47"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/correlated_energy_comparator_2026_10_15.py",
+    "bytes": 45459,
+    "sha256": "fd12a46df1f1d5ee1c94e8e00a996bfb66cedf63a5a28f7368b045ab3b96788e"
+  },
+  "cache": {
+    "utc": "2026-10-16T01:36:04.030812+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/correlated_energy_comparator_2026_10_15.py",
+      "bytes": 45459,
+      "sha256": "fd12a46df1f1d5ee1c94e8e00a996bfb66cedf63a5a28f7368b045ab3b96788e"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/CANONICAL_RESULT.json",
+      "bytes": 1198,
+      "sha256": "3bdd43be8315c935a965c71252b449db813d9c5ecdf61cf553a02ec8e9e939e9"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/correlated_energy_comparator_2026_10_15.txt",
+      "bytes": 1158,
+      "sha256": "76803a2b2baf16b510682180f66c6e41c148a9942a23c4042b4bd6b8175b4e06"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "mathematics_or_retention_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "scope": "exact bytes, recovery and captured binding metadata only"
+    },
+    "scope_lines": [
+      "per_element: source coefficient text retained; no physical element was executed",
+      "per_site: declared complete lattice interface retained; no hardware test was executed",
+      "per_mode: order-14 and order-15 comparison definitions remain distinct; no propagation was executed",
+      "per_block: exact comparator text and historical source/receipt metadata checked only",
+      "lattice_wide: native preparation, actual suppliers and independent audit remain separate"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-16T01:36:16.066113+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/correlated_energy_comparator_2026_10_15.py",
+      "bytes": 45459,
+      "sha256": "fd12a46df1f1d5ee1c94e8e00a996bfb66cedf63a5a28f7368b045ab3b96788e"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/MUTATION_RESULTS.json",
+      "bytes": 14232,
+      "sha256": "6bf3117d34fb750a8c34895c2a0ce1ca8e78cca8d253fc3e7c53709a07be10ff"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 81,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-16T01:38:33.131193+00:00",
+    "old_nodes_preserved": 7148,
+    "old_edges_preserved": 16111,
+    "new_node": {
+      "claim_id": "correlated_energy_comparator_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "polynomial_path_mediator_bounded_theorem_note_2026-10-15",
+        "autonomous_compiler_composition_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6cd949125fa75a780039a66ddc43129f2ff1c8990b6999bfe113415311bcbb47",
+      "path": "docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/correlated_energy_comparator_2026_10_15.py",
+      "title": "A finite-order correlated comparator with same-generator moment accuracy"
+    },
+    "new_edges": [
+      {
+        "from": "correlated_energy_comparator_bounded_theorem_note_2026-10-15",
+        "to": "polynomial_path_mediator_bounded_theorem_note_2026-10-15"
+      },
+      {
+        "from": "correlated_energy_comparator_bounded_theorem_note_2026-10-15",
+        "to": "autonomous_compiler_composition_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "roots_unchanged": true,
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10468998,
+      "sha256": "4df2455d94693294cf2697af8d83d1d58d7bc650376de610342ba3d7399ee28a"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1020793,
+      "sha256": "72bc8fe4519d35e16571b57eb4e0379996f2d1396ece48e981450a9cb9c26e58"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "99932a21d5eba88ad90742107ba3ee79177a03717875f8430a9b37d1e71f9983"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-16T01:36:12.422641+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2283,
+          "sha256": "3f0e8bd5196d67140958eebc9b1ed01b50d79181732666219874a9cb784fd022"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2341,
+          "sha256": "88c29ad8d85e8f797faad866346a2dd5c3ff11eaaca5a79c2a82a9a9b9702e94"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2328,
+          "sha256": "ed1fa4f23f35cc1b3dc9045e76003f2d0d6b89da8cbf3a848179cd7f93b07ac6"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2316,
+          "sha256": "74cb02ae89807b2d9ceb0139fca98f0fe0a5cb619c03dcdebacdb7aafc7c9dda"
+        }
+      },
+      {
+        "case": "source_body_linkage",
+        "expected_failure": "Source body-map linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_source_body_linkage/EXECUTION.json",
+          "bytes": 2353,
+          "sha256": "9377cf51efc4431145ddd2fe89aaec6bc479dfd59a254f4dce09a251aa777e00"
+        }
+      },
+      {
+        "case": "unexpected_parent",
+        "expected_failure": "Exact parent and preparation binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_unexpected_parent/EXECUTION.json",
+          "bytes": 2340,
+          "sha256": "1d4fb26fc32ce026c6fd876327d5a720127b3f744a4f4037b53fad12e83ac7c3"
+        }
+      },
+      {
+        "case": "parent_premise",
+        "expected_failure": "Exact parent and preparation binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_parent_premise/EXECUTION.json",
+          "bytes": 2323,
+          "sha256": "d932485c3517956307f3f8a750e0ab6438e3e66e7965cef041da6cdca2d1f937"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical proposal state must remain unchanged",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2345,
+          "sha256": "80f8a4f912596cf7737fe5fc3410afd8f2175cf4e23fac8fbdbebca07bbbc85b"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Actual note/base linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2304,
+          "sha256": "4cb1ad53e337f5721121756c4cb2771e8179505cfe0b4fc2a8adfaefea93335c"
+        }
+      },
+      {
+        "case": "root_review_identity",
+        "expected_failure": "Exact root review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_root_review_identity/EXECUTION.json",
+          "bytes": 2358,
+          "sha256": "20078a4973938bb4bed24bcf5a60763fe9c0eacb2d8378f21a67e0a63e058c39"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Captured successful execution required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2334,
+          "sha256": "becc5c6b9caf880389ea2c68e34c248ab65e369f7dc4224ee8e18a3f5134f37d"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2364,
+          "sha256": "6a97b5d654e78399a896f6cd8cc3d9dc78f2adb7ef639dd974e5a77e58a58939"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2352,
+          "sha256": "3a0b9fb53735a6ae882b8976a9adafcc0d97ef54db2344f5f6d6c2cb12156ce6"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2309,
+          "sha256": "81b8fbd06e466cc1277ae5e2d20bc65077e8c617e049dd3b2f00abde7bbd4248"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2317,
+          "sha256": "cb2545dc6a0bca132745ede972f13daeeb5847e4ec0bb20f522fa2fcb00193b3"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2346,
+          "sha256": "726df6ad9514916a00ba58404816fe17f11f2cc650b54a0adc2762ec20f6c7dd"
+        }
+      },
+      {
+        "case": "source_freeze_identity",
+        "expected_failure": "Exact source proposal freeze",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_source_freeze_identity/EXECUTION.json",
+          "bytes": 2370,
+          "sha256": "bfcd486d91ee68a6b0f8e1b082a6b90615ac91fdfd0fae2adfeec2e206aa815f"
+        }
+      },
+      {
+        "case": "source_body_offsets",
+        "expected_failure": "Original and relocated body binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_source_body_offsets/EXECUTION.json",
+          "bytes": 2352,
+          "sha256": "8ff1eeda0cffb2833ace1c3997b09d6061afed666d565074f5daa58dc9f7a3c6"
+        }
+      },
+      {
+        "case": "root_review_command",
+        "expected_failure": "Exact root source-review command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_root_review_command/EXECUTION.json",
+          "bytes": 2352,
+          "sha256": "352f78efdc37bb1b2b8050aa7076469768f57b2cdff2ed9f36a90b4618c8c702"
+        }
+      },
+      {
+        "case": "canonical_review_identity",
+        "expected_failure": "Exact canonical review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_canonical_review_identity/EXECUTION.json",
+          "bytes": 2388,
+          "sha256": "b67554030fa9ae8aa811e228ce81d641131949caca7b95233ed08d1ae2b117da"
+        }
+      },
+      {
+        "case": "canonical_output_linkage",
+        "expected_failure": "Canonical review operation linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_canonical_output_linkage/EXECUTION.json",
+          "bytes": 2382,
+          "sha256": "4bd0b9c187957158174450dd2a2648b80c2bac9d4b952e6fcf6dc42937fadcc7"
+        }
+      },
+      {
+        "case": "local_base_identity",
+        "expected_failure": "Actual local base identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_local_base_identity/EXECUTION.json",
+          "bytes": 2352,
+          "sha256": "c688b34e93a2dcaa25d55ce8badfa4588a0f63580ee3ce82aa1c694e6e441265"
+        }
+      },
+      {
+        "case": "source_draft_map_identity",
+        "expected_failure": "Exact frozen draft body-map identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_source_draft_map_identity/EXECUTION.json",
+          "bytes": 2387,
+          "sha256": "c633d3954d0b011b4ebc8ad8141254671910469e191abb9afa229307da540b10"
+        }
+      },
+      {
+        "case": "selected_original_identity",
+        "expected_failure": "Selected original/source identity linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_selected_original_identity/EXECUTION.json",
+          "bytes": 2394,
+          "sha256": "69f2f278d7c01391f9df494fd9e9f6ecf5b5ecda91ad2230416d34ff3e984b0f"
+        }
+      },
+      {
+        "case": "fixture_scope",
+        "expected_failure": "Fixture scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_fixture_scope/EXECUTION.json",
+          "bytes": 2317,
+          "sha256": "929f4f6d172ae5a1a356fb1b8af00541ac573031ed7e3391ad6d532f22e147b2"
+        }
+      },
+      {
+        "case": "acceptance_scope",
+        "expected_failure": "Source decision execution evidence, not new science",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_acceptance_scope/EXECUTION.json",
+          "bytes": 2334,
+          "sha256": "3b2a2560bfa56f9cba0ffbd90bdab016e17a8ec756b8fe151ff17d6cdf52ff4a"
+        }
+      },
+      {
+        "case": "head_scope",
+        "expected_failure": "HEAD is provenance, not theorem or future integration base",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_head_scope/EXECUTION.json",
+          "bytes": 2296,
+          "sha256": "545562950319a08e03cfb555a1cdaa3e4d84908541f0e8c0abe251c4d1412807"
+        }
+      },
+      {
+        "case": "historical_selection",
+        "expected_failure": "Exact historical record selection",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_historical_selection/EXECUTION.json",
+          "bytes": 2358,
+          "sha256": "980501a8b336a9d614a9d2026d0873b5e74ceebd9763a96666ce4ea1eff2e773"
+        }
+      },
+      {
+        "case": "historical_recovery",
+        "expected_failure": "Historical check/source recovery linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_historical_recovery/EXECUTION.json",
+          "bytes": 2353,
+          "sha256": "592c2a029f110ae89563c5c88af95280bbb9755b4b42c4afd0058bce2c7022c5"
+        }
+      },
+      {
+        "case": "invented_independent_execution",
+        "expected_failure": "No protected scientific executable",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_invented_independent_execution/EXECUTION.json",
+          "bytes": 2418,
+          "sha256": "f423471c13fcc4ce9d63176aebe0e3942e9fa3c5bfaeec7a396dbddf1c2982b9"
+        }
+      },
+      {
+        "case": "controlling_qualification",
+        "expected_failure": "Controlling source qualifications",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/runs/mutation_controlling_qualification/EXECUTION.json",
+          "bytes": 2388,
+          "sha256": "7299b00f118167c1107bacc1a5a7f5d2c7c59f7e54f86a454c343e47532ddd32"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 30,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Distinct order-14 polar/pinched and order-15 exponential/polynomial comparators retain both branches, complete outputs, same-K absolute moments, actual growing runtime and exact selected penalty recipes. Full high propagation remains expensive; precision, ideal bare preparation and physical suppliers remain separate. Preserve actual reserve phase, augmented h_*, controlling qualifications and scoped slow-only counterexample. Historical HEAD observations are not the current base; protected derivation ran no scientific executable. No efficient propagation or operational energy identification is added."
+  ]
+}

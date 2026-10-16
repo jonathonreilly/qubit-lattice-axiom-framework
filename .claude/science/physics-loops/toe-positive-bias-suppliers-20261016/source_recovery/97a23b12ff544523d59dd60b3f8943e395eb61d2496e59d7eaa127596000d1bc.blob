@@ -1,0 +1,65 @@
+{
+  "verified_utc": "2026-10-16T02:05:22.208655+00:00",
+  "kind": "hash and metadata verification only; no scientific rerun",
+  "current_sources_and_snapshots": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/DERIVATION.md",
+      "snapshot": "source_snapshots/static_bias_transfer_candidate__DERIVATION.md",
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6",
+      "bytes": 29555,
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "snapshot": "source_snapshots/static_bias_transfer_root_review__QUALIFIED_ACCEPTANCE.json",
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b",
+      "bytes": 5915,
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/FINAL_QUALIFICATIONS.md",
+      "snapshot": "source_snapshots/static_bias_transfer_root_review__FINAL_QUALIFICATIONS.md",
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911",
+      "bytes": 4450,
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+      "snapshot": "source_snapshots/strongly_regular_bus_root_review__QUALIFIED_ACCEPTANCE.json",
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726",
+      "bytes": 5321,
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+      "snapshot": "source_snapshots/strongly_regular_bus_root_review__FINAL_QUALIFICATIONS.md",
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880",
+      "bytes": 4507,
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_proposal/PROPOSED_LEMMAS.md",
+      "snapshot": "source_snapshots/positive_chain_root_proposal__PROPOSED_LEMMAS.md",
+      "sha256": "7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb",
+      "bytes": 4941,
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_proposal/FREEZE.json",
+      "snapshot": "source_snapshots/positive_chain_root_proposal__FREEZE.json",
+      "sha256": "6cec718597b8c7a16b013768253596e9e3aff91f141b5796fde67fc1e60f9424",
+      "bytes": 421,
+      "matches": true
+    }
+  ],
+  "proposal_and_static_acceptance_mathematical_links_match": true,
+  "scientific_main_and_launcher_match_at_launch": true,
+  "manifest_matches_at_launch": true,
+  "complete_stream_hashes_match": true,
+  "scientific_executions": 1,
+  "scientific_exit_code": 0,
+  "receipt": "Actual child argv/cwd and launcher sys.orig_argv preserved before execution; complete streams and exit preserved afterward.",
+  "read_coverage": "Complete proof and necessary static-bias parent; exact bus qualifications reused and refreshed; complete new executable/launcher and streams read.",
+  "historical_parent_executables_or_all_freeze_members_reverified": false,
+  "git_head": "No Git operation or current HEAD assertion."
+}

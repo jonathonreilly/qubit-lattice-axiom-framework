@@ -1,0 +1,5 @@
+# Actual original check attempts
+
+The first exact run is preserved in `execution/`, including both scientific source and launcher bytes at launch, command/cwd/limit, empty stdout, exit 1 and complete assertion traceback. It stopped at the combined structural equality assertion for the expected port matrix and B squared. SymPy leaves products of complex entries unexpanded, so structural matrix equality is not the appropriate test for B^2=14I. The repair splits the assertions and checks the entrywise simplified difference. The success output separately records the unsimplified equality value and the exact simplified-zero result. No mathematical formula in DERIVATION.md was changed by this repair, and the failed source/launcher/streams were not overwritten.
+
+The corrected run uses a new `execution_02/` directory. Its source and updated launcher are captured independently. Complete output and receipt must be inspected before the original freeze; check counts or a successful process exit alone are not treated as mathematical proof. No candidate source has been exposed during either attempt.

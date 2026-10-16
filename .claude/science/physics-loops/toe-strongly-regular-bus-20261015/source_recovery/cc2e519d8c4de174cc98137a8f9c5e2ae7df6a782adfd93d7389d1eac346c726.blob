@@ -1,0 +1,101 @@
+{
+  "kind": "qualified_conditional_mathematical_source_acceptance",
+  "utc": "2026-10-16T01:15:02.830146+00:00",
+  "root_read_complete": true,
+  "author_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/DERIVATION.md",
+    "bytes": 40500,
+    "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/REVIEW.md",
+    "bytes": 23433,
+    "sha256": "cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 4507,
+    "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+  },
+  "verified_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/FREEZE.json",
+        "bytes": 9215,
+        "sha256": "2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508"
+      },
+      "verified_members": 45
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/REVIEW_FREEZE.json",
+        "bytes": 13174,
+        "sha256": "e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c"
+      },
+      "verified_members": 75
+    }
+  ],
+  "reviewer_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/recompute_run_01/EXECUTION.json",
+      "bytes": 830,
+      "sha256": "6810cfdca40ae0cac56fa0ce0df932414ac48be43f5dd9c5017820a4ad9cb817"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/recompute_run_01/recompute.at_launch.py",
+      "bytes": 10160,
+      "sha256": "fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/recompute_run_01/stdout.json",
+      "bytes": 2708,
+      "sha256": "92f462e58668aa8a0b814a296a74c75ae8c55746f294170a5c3391b8658b4d28"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/recompute_run_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/phase_branch_run/EXECUTION.json",
+      "bytes": 975,
+      "sha256": "bfe6eda1aa915e8447370c3c9a3b36b4cdb07dee469438253a7d4f996f8aa09d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/phase_branch_run/check_phase_and_branch.py",
+      "bytes": 2989,
+      "sha256": "d5d7bc4d5d41521644029df01494c69e480bb1e170374b006e6f682dcce70a0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/phase_branch_run/recompute.py",
+      "bytes": 10160,
+      "sha256": "fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/phase_branch_run/stdout.json",
+      "bytes": 1017,
+      "sha256": "11812da3a16d13e5b9d901df300c02660202751ef72613f0e9cd435c0812298d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/phase_branch_run/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/FAILED_LAUNCHER_HASH_SEARCH.json",
+      "bytes": 303,
+      "sha256": "425912c7abc039b9ac2155bc372c4dfa7b79f9676507fb48a4b5fa2b8684fe8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/BOOKKEEPING_FAILURE.md",
+      "bytes": 2068,
+      "sha256": "22bead85499930f151f128633db75522b7ea0fbf3a6b8777a124f1f3edf1502b"
+    }
+  ],
+  "accepted_scope": "Conditional strong-spectral common incident-strength bus with complete outputs; exact-target existence and separately attributed rational-target effectiveness repair.",
+  "independence": "Exposed same-model recomputation; no blind/different-model-family claim.",
+  "scientific_programs_run_this_acceptance": 0,
+  "retained_audit": false,
+  "native_realization": false,
+  "editable_prompt_files_changed": []
+}

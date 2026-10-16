@@ -1,0 +1,27 @@
+{
+  "observed_commit": "058724b51948962713d764781fcb4b99802f5410",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/289547820e8b6fce01f30bfc3f014d1092ab950124031885e24465e25b78116e.json",
+      "bytes": 1601,
+      "sha256": "289547820e8b6fce01f30bfc3f014d1092ab950124031885e24465e25b78116e"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/2725b9a446618c12bffb1f098824c49c9a845e5eec587074b2f5f12fee1981fa.py",
+      "bytes": 56447,
+      "sha256": "2725b9a446618c12bffb1f098824c49c9a845e5eec587074b2f5f12fee1981fa"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/dc185c8ed023cdac4ff9a4bb6c97bdf8ddd3408523ed8abc5cde1d18be451e0f.blob",
+      "bytes": 41,
+      "sha256": "dc185c8ed023cdac4ff9a4bb6c97bdf8ddd3408523ed8abc5cde1d18be451e0f"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual local stacked base HEAD, separately checked by clean_base; origin/main is separately pinned authority."
+}

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T01:39:50.008202+00:00",
+  "baseRefName": "physics-loop/toe-restricted-spin-source-20261015",
+  "headRefName": "physics-loop/toe-correlated-energy-comparator-20261015",
+  "headRefOid": "058724b51948962713d764781fcb4b99802f5410",
+  "isDraft": false,
+  "number": 9630,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9630",
+  "tree": "de1b3f85965d1081dc205e804fb52bfc75677c5e",
+  "base_head": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 87332,
+    "sha256": "6cd949125fa75a780039a66ddc43129f2ff1c8990b6999bfe113415311bcbb47"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/correlated_energy_comparator_2026_10_15.py",
+    "bytes": 45459,
+    "sha256": "fd12a46df1f1d5ee1c94e8e00a996bfb66cedf63a5a28f7368b045ab3b96788e"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/correlated_energy_comparator/PR_BODY.md",
+    "bytes": 3385,
+    "sha256": "71fae4fb93a50ba3072c9c4b03c71b382c6046ec3ea17de543ad12b61e77e3f8"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

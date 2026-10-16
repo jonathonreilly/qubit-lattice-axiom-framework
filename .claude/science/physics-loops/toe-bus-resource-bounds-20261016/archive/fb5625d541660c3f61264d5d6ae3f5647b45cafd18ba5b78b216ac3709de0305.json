@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-16T04:34:53.594099+00:00",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2567,
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 7196,
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/record_acceptance.py",
+      "bytes": 2726,
+      "sha256": "69d3a36c51c5931705950e086f256b3837e42b769d93e80b7a67d811c07c747e"
+    }
+  ],
+  "scientific_executions": 0,
+  "retained_audit": false
+}

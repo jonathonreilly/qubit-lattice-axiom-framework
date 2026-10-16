@@ -1,0 +1,43 @@
+{
+  "status": "bound_actual_root_publication_review",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_correlated_energy_publication_review/REVIEW.json",
+    "bytes": 13065,
+    "sha256": "615f9d7e6551b9d74f0db29549d39d38aece0b7fb196d4ad4484cdd6a2c974a0"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/correlated_energy_publication_review/EXECUTION.json",
+    "bytes": 1795,
+    "sha256": "bf65f5763bcff09f0d8c2980dbef8a64d533658fd8878b74830283a6fe15b8fb"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_correlated_energy_publication_review/FINAL_FREEZE.json",
+    "bytes": 708,
+    "sha256": "48c1acf07b9b1c2a50e67dfa56902e7526d9e2fa079dc15cc281c0db6ab9d82f"
+  },
+  "decision": "Accept reviewed source-preserving package for root integration as conditional support; canonical review remains separate.",
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/refresh_before_correlated_energy/BINDING_REFS.json",
+    "bytes": 1774,
+    "sha256": "b366e2576f1ab4c53400b01a6d122c397c315d3017fe1840ccba141bcc405cea"
+  },
+  "scope": "Actual source review and freshness only. Integration/canonical/staged approval remain separate.",
+  "integration_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_correlated_energy_integration_review/REVIEW.json",
+    "bytes": 2759,
+    "sha256": "cf341ad5f8f23304986f418b3dde73a5dda8b5747b2219ff39eba058e453a4bd"
+  },
+  "integration_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 56808,
+    "sha256": "f5c1c277fe1d9760cb85c7f3ba30c2d2db9e0768aaa0f49861b478506cf01028"
+  },
+  "binding_recovery": {
+    "failed_execution": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/correlated_energy_integration_review/EXECUTION.json",
+      "bytes": 1794,
+      "sha256": "d1813a32d2f736d827320505f3adf4c5946dabe90271df065c566eca3ecbb81d"
+    },
+    "scope": "Original review completed after all checks, then optional template-key removal failed before writing binding. This recovery only writes the previously validated binding; no science or original evidence is changed."
+  }
+}

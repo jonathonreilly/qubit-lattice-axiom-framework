@@ -1,0 +1,671 @@
+{
+  "schema": "portable_source_recovery_v1",
+  "sources": [
+    {
+      "source": "repository/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "role": "direct_mathematical_parent",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "recovery": {
+        "kind": "external_pinned",
+        "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      }
+    },
+    {
+      "source": "repository/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md#root_degree_D",
+      "role": "inherited_mathematical_body",
+      "bytes": 12683,
+      "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "root_degree_D",
+        "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 19188,
+        "end_byte_exclusive": 31871,
+        "bytes": 12683,
+        "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+      }
+    },
+    {
+      "source": "repository/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md#separately_attributed_k0_readout",
+      "role": "inherited_mathematical_body",
+      "bytes": 1855,
+      "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "separately_attributed_k0_readout",
+        "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 32026,
+        "end_byte_exclusive": 33881,
+        "bytes": 1855,
+        "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+      }
+    },
+    {
+      "source": "repository/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md#source_exposed_assessment",
+      "role": "inherited_mathematical_body",
+      "bytes": 32307,
+      "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "source_exposed_assessment",
+        "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 34029,
+        "end_byte_exclusive": 66336,
+        "bytes": 32307,
+        "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+      }
+    },
+    {
+      "source": "repository/docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "role": "direct_mathematical_parent",
+      "bytes": 97212,
+      "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+      "recovery": {
+        "kind": "external_pinned",
+        "path": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      }
+    },
+    {
+      "source": "repository/docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md#independent_author",
+      "role": "inherited_mathematical_body",
+      "bytes": 30870,
+      "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "independent_author",
+        "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 39210,
+        "end_byte_exclusive": 70080,
+        "bytes": 30870,
+        "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+      }
+    },
+    {
+      "source": "repository/docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md#comparison",
+      "role": "inherited_mathematical_body",
+      "bytes": 26979,
+      "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0",
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "comparison",
+        "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70233,
+        "end_byte_exclusive": 97212,
+        "bytes": 26979,
+        "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/DERIVATION.md",
+      "role": "protected_weak_bump_body",
+      "bytes": 19478,
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5",
+      "recovery": {
+        "kind": "body_interval",
+        "name": "protected_weak_bump_body",
+        "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 15591,
+        "end_byte_exclusive": 35069,
+        "bytes": 19478,
+        "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/DERIVATION.md",
+      "role": "root_full_unitary_variant",
+      "bytes": 11481,
+      "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e",
+      "recovery": {
+        "kind": "body_interval",
+        "name": "root_full_unitary_variant",
+        "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 35244,
+        "end_byte_exclusive": 46725,
+        "bytes": 11481,
+        "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/COMPARISON.md",
+      "role": "exposed_comparison_and_minimum_time_corollary",
+      "bytes": 9667,
+      "sha256": "cc263f5f842c4d0f955d2d14bff78dcfbae4df0d331ed61fdb4d6b698868977f",
+      "recovery": {
+        "kind": "body_interval",
+        "name": "exposed_comparison_and_minimum_time_corollary",
+        "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 46920,
+        "end_byte_exclusive": 56587,
+        "bytes": 9667,
+        "sha256": "cc263f5f842c4d0f955d2d14bff78dcfbae4df0d331ed61fdb4d6b698868977f"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/QUALIFIED_ACCEPTANCE.json",
+      "role": "qualified_source_acceptance",
+      "bytes": 3165,
+      "sha256": "270985de36fb34e6b4a91260d7a546eea7d2b859906f1464217b4e856bbb6868",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/270985de36fb34e6b4a91260d7a546eea7d2b859906f1464217b4e856bbb6868.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/INDEPENDENT_READOUT.md",
+      "role": "root_source_provenance",
+      "bytes": 3217,
+      "sha256": "3780da2bf52f63fd6c9972fe5392921a8cd255f01aca5cdd426be81a1433316f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/3780da2bf52f63fd6c9972fe5392921a8cd255f01aca5cdd426be81a1433316f.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/INITIAL_FREEZE.json",
+      "role": "root_source_provenance",
+      "bytes": 563,
+      "sha256": "d0d4dc6619d9452b9b975612c973e13e3dac2faed3cdd5483801371aab7552bf",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/d0d4dc6619d9452b9b975612c973e13e3dac2faed3cdd5483801371aab7552bf.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/check_ramp_limit.py",
+      "role": "root_source_provenance",
+      "bytes": 2605,
+      "sha256": "6beb1dfb5028302836342c8f53c28d29b74d1e67048ef02d29e55a4e9f5c0c16",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/6beb1dfb5028302836342c8f53c28d29b74d1e67048ef02d29e55a4e9f5c0c16.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/freeze_initial.py",
+      "role": "root_source_provenance",
+      "bytes": 807,
+      "sha256": "f0c7c815f56be5a3db2aab5793830663517e6575364ec190fb0ce3c7749d4bc3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/f0c7c815f56be5a3db2aab5793830663517e6575364ec190fb0ce3c7749d4bc3.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/FINAL_STATE.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 2034,
+      "sha256": "e7a57d12e5368a35cd25e3177f82ee9e869180db91fe33b18875525a90a67572",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e7a57d12e5368a35cd25e3177f82ee9e869180db91fe33b18875525a90a67572.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/FREEZE_VERIFICATION.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 201,
+      "sha256": "1ac34e79dc8e935e976faff9c30e6522a9789d0a60f69d7c51dffa00fb0739dc",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/1ac34e79dc8e935e976faff9c30e6522a9789d0a60f69d7c51dffa00fb0739dc.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/ORIGINAL_FREEZE.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 4983,
+      "sha256": "cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/ORIGINAL_FREEZE.sha256",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 87,
+      "sha256": "c65e19954074bcae5a68a65fe4ca2fcb9f5a5166ed86d849ba0ef76ebde5e670",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/c65e19954074bcae5a68a65fe4ca2fcb9f5a5166ed86d849ba0ef76ebde5e670.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/SOURCE_COVERAGE.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 7070,
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/SOURCE_MANIFEST.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1603,
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/check_symbolic_identities.py",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 5018,
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/EXECUTION.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 2040,
+      "sha256": "76bb338ff6c3cf62ebba7d205588a970768942c184c44f7adc81c74a0140aa46",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/76bb338ff6c3cf62ebba7d205588a970768942c184c44f7adc81c74a0140aa46.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/source_at_launch/DERIVATION.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 19478,
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5",
+      "recovery": {
+        "kind": "body_interval",
+        "name": "protected_weak_bump_body",
+        "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 15591,
+        "end_byte_exclusive": 35069,
+        "bytes": 19478,
+        "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/source_at_launch/SOURCE_COVERAGE.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 7070,
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/source_at_launch/SOURCE_MANIFEST.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1603,
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/source_at_launch/check_symbolic_identities.py",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 5018,
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/stderr.txt",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/stdout.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1412,
+      "sha256": "775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_original/EXECUTION.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1845,
+      "sha256": "1a1dc0cdbc9b0a51b8f345b3a7a5e8a353375c24e536c507c495fbf25d984491",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/1a1dc0cdbc9b0a51b8f345b3a7a5e8a353375c24e536c507c495fbf25d984491.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_original/source_at_launch/DERIVATION.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 19273,
+      "sha256": "278dc3607435a0f40acf56cb33d3a793083dac950d2631a44e194608e3846ba7",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/278dc3607435a0f40acf56cb33d3a793083dac950d2631a44e194608e3846ba7.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_original/source_at_launch/SOURCE_COVERAGE.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 7070,
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_original/source_at_launch/SOURCE_MANIFEST.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1603,
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_original/source_at_launch/check_symbolic_identities.py",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 5018,
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_original/stderr.txt",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_original/stdout.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1412,
+      "sha256": "775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/COMPARISON_FREEZE.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1548,
+      "sha256": "e161fa0ec167b09b15690bcdc8082d43fbfa052e32e0e2086145490f8698ac56",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e161fa0ec167b09b15690bcdc8082d43fbfa052e32e0e2086145490f8698ac56.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/COMPARISON_FREEZE.sha256",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 89,
+      "sha256": "9932da872269a61dff350c846e438f9a69fae5a34694107a922a2a30afb9c55a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/9932da872269a61dff350c846e438f9a69fae5a34694107a922a2a30afb9c55a.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/FREEZE_VERIFICATION.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 200,
+      "sha256": "c82e13371f9f8326b73b7c0e1e777cd7ba829a5d63e2b238b24c049cb6779d47",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/c82e13371f9f8326b73b7c0e1e777cd7ba829a5d63e2b238b24c049cb6779d47.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/SOURCE_MANIFEST.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 1950,
+      "sha256": "c8d7d2178e400c19429b0e0c716212bda9274eb076d2255f5e91a25caf487b18",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/c8d7d2178e400c19429b0e0c716212bda9274eb076d2255f5e91a25caf487b18.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/VERIFICATION.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 484,
+      "sha256": "0655df53a9998bcc4d21331327134111be2c7775c7eace054b0bdca6f0c7d4f1",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/0655df53a9998bcc4d21331327134111be2c7775c7eace054b0bdca6f0c7d4f1.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/source_at_launch/INDEPENDENT_DERIVATION.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 19478,
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5",
+      "recovery": {
+        "kind": "body_interval",
+        "name": "protected_weak_bump_body",
+        "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 15591,
+        "end_byte_exclusive": 35069,
+        "bytes": 19478,
+        "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/source_at_launch/INDEPENDENT_ORIGINAL_FREEZE.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 4983,
+      "sha256": "cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/source_at_launch/INDEPENDENT_SOURCE_COVERAGE.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 7070,
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/source_at_launch/ROOT_DERIVATION.md",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 11481,
+      "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e",
+      "recovery": {
+        "kind": "body_interval",
+        "name": "root_full_unitary_variant",
+        "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 35244,
+        "end_byte_exclusive": 46725,
+        "bytes": 11481,
+        "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/source_at_launch/ROOT_INITIAL_FREEZE.json",
+      "role": "protected_source_and_check_provenance",
+      "bytes": 563,
+      "sha256": "d0d4dc6619d9452b9b975612c973e13e3dac2faed3cdd5483801371aab7552bf",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/d0d4dc6619d9452b9b975612c973e13e3dac2faed3cdd5483801371aab7552bf.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bounded_slew_ramp_diagnostic/EXECUTION.json",
+      "role": "root_ramp_check_provenance",
+      "bytes": 1458,
+      "sha256": "08a88b6c5a8f27cdf3f6cc62e2ad24232d592975cf4d4ab509af0045892af639",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/08a88b6c5a8f27cdf3f6cc62e2ad24232d592975cf4d4ab509af0045892af639.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bounded_slew_ramp_diagnostic/executed_source.py",
+      "role": "root_ramp_check_provenance",
+      "bytes": 2605,
+      "sha256": "6beb1dfb5028302836342c8f53c28d29b74d1e67048ef02d29e55a4e9f5c0c16",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/6beb1dfb5028302836342c8f53c28d29b74d1e67048ef02d29e55a4e9f5c0c16.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bounded_slew_ramp_diagnostic/stderr",
+      "role": "root_ramp_check_provenance",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bounded_slew_ramp_diagnostic/stdout",
+      "role": "root_ramp_check_provenance",
+      "bytes": 11925,
+      "sha256": "8ac690365a806f10876cd3272c9e1ad6d731f67959403a1476b441d58b39d767",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/8ac690365a806f10876cd3272c9e1ad6d731f67959403a1476b441d58b39d767.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/run.py",
+      "role": "original_root_check_recorder",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/BODY_MAP.json",
+      "role": "canonical_parent_body_map",
+      "bytes": 1053,
+      "sha256": "57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/CANONICAL_BINDING.json",
+      "role": "canonical_parent_canonical_binding",
+      "bytes": 2421,
+      "sha256": "ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/BODY_MAP.json",
+      "role": "canonical_parent_body_map",
+      "bytes": 1063,
+      "sha256": "04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/CANONICAL_BINDING.json",
+      "role": "canonical_parent_canonical_binding",
+      "bytes": 2487,
+      "sha256": "bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/BODY_MAP.json",
+      "role": "parent_body_map_provenance",
+      "bytes": 1053,
+      "sha256": "57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/CANONICAL_BINDING.json",
+      "role": "parent_canonical_binding_provenance",
+      "bytes": 2421,
+      "sha256": "ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/BODY_MAP.json",
+      "role": "parent_body_map_provenance",
+      "bytes": 1063,
+      "sha256": "04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/CANONICAL_BINDING.json",
+      "role": "parent_canonical_binding_provenance",
+      "bytes": 2487,
+      "sha256": "bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_publication_draft/INITIAL_BINDING.json",
+      "role": "source_proposal_input",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679.blob"
+      }
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_publication_draft/SOURCE_BINDING.json",
+      "role": "source_proposal_input",
+      "bytes": 17029,
+      "sha256": "0fda1e787e39eb405291055b1d92f981627a819104ca2ed8a3b8723a342ed2f9",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/0fda1e787e39eb405291055b1d92f981627a819104ca2ed8a3b8723a342ed2f9.blob"
+      }
+    }
+  ],
+  "scope": "Exact current bodies, canonical parent intervals and selected source/receipt metadata only"
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "actual_bus_resource_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+  "actual_git_base": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+  "bound_note_sha256": "5f97c4bd3247144f4e62a1f35e7a78dde4ab315a7bbf9e18306591cb34414dc6",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/13e354642dab77a4b5aa3b51973b56c423830ebb99b03e3166fce30367d97e5a.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/1b5794326f4aed322091e90cc1d594878039dda9148e5dbc61834cb8ef18efc8.md",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/204a633ca89c7b240a718f3249a2560f0ccf047428a00127edff5fde9b453e32.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/218f31e1864662f13210b0704e974da9ce33cc2503795cef6a0003c5b576ee44.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/2d157009cffee3820c3247a91aafbeeba31920c69cbeef2ef8e1ffed9a3683f6.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/3da72a56938890827df6828d0500e0e745d8586c701e3e988f202762ba799816.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/4a6dba3167787321b04318a6dbb5b219829f803f6766c210f852ce6415f28df9.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/504682ec49838a47db0af515d4fe3ff9353b37763b584f56bf5d510b0ee895cf.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/574f7512c6233eaa4f0eedd23b121ae8a3f3ed5fd793edbed50bbd8fdfb13c8e.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/649f0c3c243729e0460def251e05bf481df2909b7e7d909a31f94ed41eff156b.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/718e0bb5df8934504e7d9922926872e1f2a651962573c4e2e32f0d4086e93185.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/860d6dbdab283c054a08053e7b8622ad7e441e2335bdd6ddae064f2df6fd5030.md",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/8c5facbc4661d179ec883509e25034eaa6cc33ae4b6fb6f000c43f1ef686fba6.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/aca82160f36a6ea453871e9b732c0517c149112fc6147fd018d82b088f28b1db.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/cf8f512362b5ca46f8c2a2c5136d69bb565287757497a20bc3163aa3463cb39f.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/f1af794507f34ac7ca681c746693a8e2dd8ac96e5db29482cf4abb2b91b4602d.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/f283d4537fcc1ae5ba99c637df8d27ea37d9e7336165867da9d98907ee177926.json"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/2d157009cffee3820c3247a91aafbeeba31920c69cbeef2ef8e1ffed9a3683f6.json",
+    "bytes": 70500,
+    "sha256": "2d157009cffee3820c3247a91aafbeeba31920c69cbeef2ef8e1ffed9a3683f6"
+  }
+}

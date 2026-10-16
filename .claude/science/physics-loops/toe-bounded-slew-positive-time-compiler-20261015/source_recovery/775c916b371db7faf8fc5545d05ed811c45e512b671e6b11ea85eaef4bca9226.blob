@@ -1,0 +1,44 @@
+{
+  "scope": "Exact polynomial, noncommuting jet, budget arithmetic and source integrity only",
+  "events": [
+    {
+      "check": "source_pin_and_in_memory_tamper_rejection",
+      "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "check": "source_pin_and_in_memory_tamper_rejection",
+      "path": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a"
+    },
+    {
+      "check": "pulse_polynomial",
+      "area": "8/15",
+      "first_moment": "4/15",
+      "endpoint_value_and_derivative": "all zero",
+      "coefficient_slew_majorant": "8 kappa"
+    },
+    {
+      "check": "noncommuting_degree_two_jet",
+      "value": "I + u^2(CD-DC)"
+    },
+    {
+      "check": "normalized_error_budget",
+      "coherent_nominal": "17/64",
+      "full_unhalved_trace": "9/16"
+    }
+  ],
+  "deliberate_defects_detected": {
+    "quadratic_pulse_has_nonzero_boundary_derivative": true,
+    "incorrect_area_one_half_rejected": true,
+    "reversed_commutator_sign_rejected": true,
+    "omitted_trace_factor_two_rejected": true
+  },
+  "not_checked": [
+    "general reachable-closure theorem",
+    "compiler execution",
+    "physical realization",
+    "formal proof",
+    "audit status"
+  ]
+}

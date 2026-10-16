@@ -1,0 +1,2353 @@
+{
+  "actual_canonical_acceptance": null,
+  "actual_integration_review": null,
+  "actual_new_publication": null,
+  "canonical_phases_executed": 0,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "bytes": 111899,
+      "path": "ARCHIVE_CLOSURE.json",
+      "sha256": "8a8cb8461fa2ead98cb43f7846f4592db663cc15fd0f88e95bd0371b882447d6"
+    },
+    {
+      "bytes": 1336,
+      "path": "ASSEMBLY.json",
+      "sha256": "2703db3264918072c91bbc2f40df410975f1caa5aeca26cf514e6f12eb84495c"
+    },
+    {
+      "bytes": 549,
+      "path": "BASE_BINDING_INPUT.json",
+      "sha256": "9657472a6b906f617ad86c32d4050fde55008b1595bc02400f8071fd451473e9"
+    },
+    {
+      "bytes": 953,
+      "path": "CHECKPOINT.md",
+      "sha256": "1f5c48930a280b5defce82bda92cf20065b63a23e8a4d0705daad55966f66240"
+    },
+    {
+      "bytes": 6709,
+      "path": "COMMAND_PLAN.md",
+      "sha256": "e120d0491d881a15b1436eba8a7d40431bab36fcb65f9eaf83a6d0145f6895fd"
+    },
+    {
+      "bytes": 15811,
+      "path": "COMMON_DELTA.diff",
+      "sha256": "bd4298d3d3fdfd702a3055e671c96b4c20180b1db2b9cc61846a894fe9db39d1"
+    },
+    {
+      "bytes": 773,
+      "path": "DELIVERY_DOCUMENTS.json",
+      "sha256": "02e92d9f5d0830b6d500159b2724455891f96cfe64d16f9a7e7bc59a116d7865"
+    },
+    {
+      "bytes": 37434,
+      "path": "EVIDENCE_CAPTURE_MAP.json",
+      "sha256": "b947c662eea99b828d66d43ef8554b9fb3cf2eb8ffd02f67754eb1fc65354f2d"
+    },
+    {
+      "bytes": 5210,
+      "path": "EXECUTED_REFERENCE.json",
+      "sha256": "faaa2e3e16dbce73cf00328747ff23dc4121ff04e1726c7c46ec54e820791de1"
+    },
+    {
+      "bytes": 6963,
+      "path": "EXTENSION_DELTA.diff",
+      "sha256": "06664d458266cd307f86cd5eb652baeb51c81bb82a3a4017e0f7a17d7db014f7"
+    },
+    {
+      "bytes": 13226,
+      "path": "FUNCTION_REUSE_MAP.json",
+      "sha256": "d90e2784d1e1b9e9c266fdc9b52f6b86dd5794550c0fd9c209fedd8bbd3d6774"
+    },
+    {
+      "bytes": 3667,
+      "path": "INTEGRATION_SECTIONS.json",
+      "sha256": "36e612b02a1595c2f2e571aa67c15790b44ebf2b160cd2ad2d5d02a1823b9ce9"
+    },
+    {
+      "bytes": 3111,
+      "path": "METADATA_CONTROLS.json",
+      "sha256": "3791ac0e44a7e7dfa8c04a691d9993d20dbcbd4d003aa222e0044a7d6cb1db96"
+    },
+    {
+      "bytes": 3438,
+      "path": "METADATA_VERIFICATION.json",
+      "sha256": "2888601150a0dc106bcbc088ddbd8f8267ccc16a1a800bc16ed6d0dc50e1c72a"
+    },
+    {
+      "bytes": 2318,
+      "path": "PARENT_BINDING.json",
+      "sha256": "6ea93693f3f94706690154bb8a06500e15a90e62a77f750381de32e040b9680d"
+    },
+    {
+      "bytes": 67234,
+      "path": "PRIMARY_DELTA.diff",
+      "sha256": "6e2f3ddedf878e5d14f9fe0eb5065f22ddb92ebed39a99915e6ffd3f7f151487"
+    },
+    {
+      "bytes": 1305,
+      "path": "PRIMARY_REUSE_MAP.json",
+      "sha256": "289b4383c671b18f2054fe9d8b45dcd70344800d30cf6e746778e81c722d97c0"
+    },
+    {
+      "bytes": 3449,
+      "path": "PROPOSED_BODY_MAP.json",
+      "sha256": "02e53730e48f8d82afe2d228eda7ced6e1073584cf44c2f227fbeb5f2dcaee97"
+    },
+    {
+      "bytes": 149683,
+      "path": "PROPOSED_NOTE.md",
+      "sha256": "5f97c4bd3247144f4e62a1f35e7a78dde4ab315a7bbf9e18306591cb34414dc6"
+    },
+    {
+      "bytes": 1492,
+      "path": "PR_BODY_TEMPLATE.md",
+      "sha256": "d47f415280974610fdd3853f3c0b2ba90b344adef2d3036f8be230409099c80d"
+    },
+    {
+      "bytes": 1089,
+      "path": "README.md",
+      "sha256": "0602203c042b4ddf56148204db680f26af22f487101204121954c744463299d1"
+    },
+    {
+      "bytes": 812,
+      "path": "ROOT_BINDING_INPUT_TEMPLATE.json",
+      "sha256": "78cbe48c60bf7acb8ea7cb27e636da493a5434a2481479f0fef47825dce991d3"
+    },
+    {
+      "bytes": 4164,
+      "path": "ROOT_READ_GUIDE.md",
+      "sha256": "7f080b0a8b57df89773abea6080f6428894d7e5fef1da96abb01188b4d1ec939"
+    },
+    {
+      "bytes": 662,
+      "path": "SEAL_OPERATION.json",
+      "sha256": "412d5aa78bb17e689e58c59e2204ff4f403c8a9516a63336d2bf8d8db763e6e7"
+    },
+    {
+      "bytes": 1608,
+      "path": "SEMANTIC_DELTA.md",
+      "sha256": "ec4d8688d8662b4b0ea96a58bd49e22f889b9a7f29657e641b194012c8936e3c"
+    },
+    {
+      "bytes": 9320,
+      "path": "WRAPPER_CHANGES.diff",
+      "sha256": "d0cbf3a20c36f0a6c13c832767a7c7dde680035f982b7014873ced7dfd23b3bc"
+    },
+    {
+      "bytes": 1816,
+      "path": "WRAPPER_REPLACEMENTS.json",
+      "sha256": "d21793263c32464d03e47673c56bfd7010ab990228c803b2e307ee2ae903754c"
+    },
+    {
+      "bytes": 19079,
+      "path": "assemble_proposal.py",
+      "sha256": "c2a0c550e567346488ebdc3a08daca2d4f798c53cf2680ee2fa6484a2fe49052"
+    },
+    {
+      "bytes": 53373,
+      "path": "bus_resource_common.py",
+      "sha256": "cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c"
+    },
+    {
+      "bytes": 83,
+      "path": "cache_bus_resource.py",
+      "sha256": "175cadbf7c142b8d81c1f41535f84b11dc73f6367410c2ecf0f7691fe2ebc121"
+    },
+    {
+      "bytes": 216,
+      "path": "evidence/BASE_ATTACHMENT.json",
+      "sha256": "69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531"
+    },
+    {
+      "bytes": 1542,
+      "path": "evidence/BASE_PUBLICATION.json",
+      "sha256": "d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c"
+    },
+    {
+      "bytes": 1536,
+      "path": "evidence/canonical_review_recorder_reference.py",
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 976,
+      "path": "evidence/source_review/FREEZE.json",
+      "sha256": "f283d4537fcc1ae5ba99c637df8d27ea37d9e7336165867da9d98907ee177926"
+    },
+    {
+      "bytes": 5887,
+      "path": "evidence/source_review/REVIEW.json",
+      "sha256": "c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9"
+    },
+    {
+      "bytes": 5307,
+      "path": "evidence/source_review/REVIEW.md",
+      "sha256": "1b5794326f4aed322091e90cc1d594878039dda9148e5dbc61834cb8ef18efc8"
+    },
+    {
+      "bytes": 1342,
+      "path": "evidence/source_review_recorder.py",
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "bytes": 1491,
+      "path": "evidence/source_review_run/EXECUTION.json",
+      "sha256": "cf8f512362b5ca46f8c2a2c5136d69bb565287757497a20bc3163aa3463cb39f"
+    },
+    {
+      "bytes": 5362,
+      "path": "evidence/source_review_run/executed_source.py",
+      "sha256": "718e0bb5df8934504e7d9922926872e1f2a651962573c4e2e32f0d4086e93185"
+    },
+    {
+      "bytes": 0,
+      "path": "evidence/source_review_run/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 633,
+      "path": "evidence/source_review_run/stdout",
+      "sha256": "204a633ca89c7b240a718f3249a2560f0ccf047428a00127edff5fde9b453e32"
+    },
+    {
+      "bytes": 84,
+      "path": "finish_bus_resource.py",
+      "sha256": "741dbe5de56145917bc3213c999f574cb0dce92ff357610c89c38d8fab2f2fd2"
+    },
+    {
+      "bytes": 83,
+      "path": "graph_bus_resource.py",
+      "sha256": "e9b79ff00c59877c7efcb49d299933860eb11634b838d128cf66149ab98669c7"
+    },
+    {
+      "bytes": 85,
+      "path": "install_bus_resource.py",
+      "sha256": "a1570e131e4b265cbff7c04d3229add59f07af39df85552837759072ea584cb7"
+    },
+    {
+      "bytes": 4365,
+      "path": "metadata_controls.py",
+      "sha256": "8b6a1840ff7f1493fbfebd1df48e74ae98ee945d90d2b583056c85a61844c013"
+    },
+    {
+      "bytes": 2329,
+      "path": "metadata_runs/assemble_01/EXECUTION.json",
+      "sha256": "01c1dd3b3a5af21dcbfa8fcae8af8275d05103b493ab4b5bbd11795870d5faa3"
+    },
+    {
+      "bytes": 1621,
+      "path": "metadata_runs/assemble_01/LAUNCH.json",
+      "sha256": "e61a7bb1f5ce7bb238ae0cdb846d6322bb9743bfd622b7f50fcb6cd8006fa840"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/assemble_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 19079,
+      "path": "metadata_runs/assemble_01/source_at_launch.py",
+      "sha256": "c2a0c550e567346488ebdc3a08daca2d4f798c53cf2680ee2fa6484a2fe49052"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/assemble_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1336,
+      "path": "metadata_runs/assemble_01/stdout",
+      "sha256": "2703db3264918072c91bbc2f40df410975f1caa5aeca26cf514e6f12eb84495c"
+    },
+    {
+      "bytes": 2327,
+      "path": "metadata_runs/controls_01/EXECUTION.json",
+      "sha256": "fc1222a768f5f0beb12daa78bd5f0dfff1a1ce18804bbc972fd5123519ead05e"
+    },
+    {
+      "bytes": 1619,
+      "path": "metadata_runs/controls_01/LAUNCH.json",
+      "sha256": "452f6f97ffd10dfbc57eb86743f9ed0d0c5b3d3f744266b3d5f62da9b7095d84"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/controls_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 4365,
+      "path": "metadata_runs/controls_01/source_at_launch.py",
+      "sha256": "8b6a1840ff7f1493fbfebd1df48e74ae98ee945d90d2b583056c85a61844c013"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/controls_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3111,
+      "path": "metadata_runs/controls_01/stdout",
+      "sha256": "ad4e33211374adb5ec598279bd7c74ef8a639b334264bc7ad7e47c7a90d8894b"
+    },
+    {
+      "bytes": 2324,
+      "path": "metadata_runs/delivery_01/EXECUTION.json",
+      "sha256": "bfa9a4f212816a0793dc7399c6edad24b463fa3a8715a5fe3c01b701f9e001f1"
+    },
+    {
+      "bytes": 1618,
+      "path": "metadata_runs/delivery_01/LAUNCH.json",
+      "sha256": "548552aaa34a38e725b47cba0c7cc10f5083ab1e4dc7fe16388c03dd36b5e9f1"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/delivery_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 15303,
+      "path": "metadata_runs/delivery_01/source_at_launch.py",
+      "sha256": "00e067965471e4820ab2579f20b474c78f95587329e2d1fea6108bc278400509"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/delivery_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 773,
+      "path": "metadata_runs/delivery_01/stdout",
+      "sha256": "02e92d9f5d0830b6d500159b2724455891f96cfe64d16f9a7e7bc59a116d7865"
+    },
+    {
+      "bytes": 2435,
+      "path": "metadata_runs/source_integrity_01/EXECUTION.json",
+      "sha256": "930d138d8d97b22780faea20a2f14f772c7e472191e4345139d3d9ba65909847"
+    },
+    {
+      "bytes": 1712,
+      "path": "metadata_runs/source_integrity_01/LAUNCH.json",
+      "sha256": "9759d17ad8732eea9d932d311a009ac4d216add3a444a20aa226b8a64792a703"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/source_integrity_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 72147,
+      "path": "metadata_runs/source_integrity_01/source_at_launch.py",
+      "sha256": "de86bf3ae9d1e781e9775f2e9daf1ae51504e2b6b32d59166a3b21073a30666f"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/source_integrity_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 294,
+      "path": "metadata_runs/source_integrity_01/stdout",
+      "sha256": "9ae86501e906a4c6b904a5d1dc20fc14b877be3bce5bde05a72b8bc4f164eebe"
+    },
+    {
+      "bytes": 2410,
+      "path": "metadata_runs/unbound_refusal_01/EXECUTION.json",
+      "sha256": "3064d12d922a9c745dd939f0379a62dd4b88450da3abc8fe7267d261fd6a8d7c"
+    },
+    {
+      "bytes": 1688,
+      "path": "metadata_runs/unbound_refusal_01/LAUNCH.json",
+      "sha256": "481e21a0750afcf07383c65be93476d8f0db35bc620f40975ca449e31ecd1185"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/unbound_refusal_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 72147,
+      "path": "metadata_runs/unbound_refusal_01/source_at_launch.py",
+      "sha256": "de86bf3ae9d1e781e9775f2e9daf1ae51504e2b6b32d59166a3b21073a30666f"
+    },
+    {
+      "bytes": 1363,
+      "path": "metadata_runs/unbound_refusal_01/stderr",
+      "sha256": "2bb7d3350f57a6dc37da40fec7e163a705f2c04858a752b773fa0fd2b0494c6b"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/unbound_refusal_01/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2339,
+      "path": "metadata_runs/validation_01/EXECUTION.json",
+      "sha256": "623bfc6a685202b3df6aa6f316f32db9944341d0470cfb7608449bb8d66f80eb"
+    },
+    {
+      "bytes": 1627,
+      "path": "metadata_runs/validation_01/LAUNCH.json",
+      "sha256": "7ecfb483d707bc3134595c5d8264790be16f9600de812c0b942d5d2dee1662db"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/validation_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 10355,
+      "path": "metadata_runs/validation_01/source_at_launch.py",
+      "sha256": "2648f3c7ef1a3bb5b9811c742f6b518bd5cdad17224fbdc23b1adb51b621ea02"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/validation_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3438,
+      "path": "metadata_runs/validation_01/stdout",
+      "sha256": "c847247150047db5ed7ad2f9c277d996148fcc612cb202f66039a2ccc1d69de7"
+    },
+    {
+      "bytes": 66336,
+      "path": "parent_sources/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "bytes": 115070,
+      "path": "parent_sources/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+    },
+    {
+      "bytes": 133383,
+      "path": "parent_sources/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36"
+    },
+    {
+      "bytes": 83919,
+      "path": "parent_sources/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 85,
+      "path": "prepare_bus_resource.py",
+      "sha256": "04fb399044f76d212ee14045198d44705f4fc2d67b0bb03ac23773d2886af02d"
+    },
+    {
+      "bytes": 9790,
+      "path": "primary_extension.py",
+      "sha256": "5766c05cbe5f6be63bcc483c7cc7f0bec6e96e03d5e422f13424e4bf64fc0d27"
+    },
+    {
+      "bytes": 72147,
+      "path": "proposed_primary_unbound.py",
+      "sha256": "de86bf3ae9d1e781e9775f2e9daf1ae51504e2b6b32d59166a3b21073a30666f"
+    },
+    {
+      "bytes": 85,
+      "path": "publish_bus_resource.py",
+      "sha256": "00a1a2cfdec295ead8471d16ab4c7f514abbf23ec37f53fbe2207a92036bedd4"
+    },
+    {
+      "bytes": 1912,
+      "path": "record_metadata.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 64064,
+      "path": "reference/FINAL_FREEZE.json",
+      "sha256": "56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93"
+    },
+    {
+      "bytes": 6581,
+      "path": "reference/ROOT_READ_GUIDE.md",
+      "sha256": "a92915151cfd1527001ee6d1c8a55c6c7b87f02afda53a3213b654f402f6d296"
+    },
+    {
+      "bytes": 926,
+      "path": "reference/actions/cache/EXECUTION.json",
+      "sha256": "0e0072a30a841b9f1d9bf5ef21cc567d6d3c54f66b8e7da66c5c8496806e01a8"
+    },
+    {
+      "bytes": 2423,
+      "path": "reference/actions/cache/LAUNCH.json",
+      "sha256": "bf75e25f028a6119e3165173aaf493b3c16d7d657e468794ec05f19959b44370"
+    },
+    {
+      "bytes": 86,
+      "path": "reference/actions/cache/entry_source.py",
+      "sha256": "0b44d901498275270ee81132dfd79d01834fa3e40f250a1654143fec70164d34"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/cache/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/cache/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 931,
+      "path": "reference/actions/finish/EXECUTION.json",
+      "sha256": "e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2"
+    },
+    {
+      "bytes": 2124,
+      "path": "reference/actions/finish/LAUNCH.json",
+      "sha256": "833daae1cf699a9e5981679980bc78494df6124c69bbe36f6a48f984f2a2a8f9"
+    },
+    {
+      "bytes": 87,
+      "path": "reference/actions/finish/entry_source.py",
+      "sha256": "b3c65a1381a59bae554e147e83e01a185598e7956eeecb29091dfa0549e3b5d8"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/finish/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 623,
+      "path": "reference/actions/finish/stdout",
+      "sha256": "479ef14ffe2187cafe191a091e147f1c036c4f46ea9bbd6ee11a24b3445289be"
+    },
+    {
+      "bytes": 926,
+      "path": "reference/actions/graph/EXECUTION.json",
+      "sha256": "54773355cc18e8b59a442ae3665b8a45dc6d387b8d9868f5104668a11b526773"
+    },
+    {
+      "bytes": 2122,
+      "path": "reference/actions/graph/LAUNCH.json",
+      "sha256": "addc47d36c16d3ef4b750b0acb6ac08cd35b7d6489c50f19f4878eb7fe82971c"
+    },
+    {
+      "bytes": 86,
+      "path": "reference/actions/graph/entry_source.py",
+      "sha256": "008162c42267bc024eeaaa7a220e71062007e527d9a3afc6f2a2fb1dc16b270e"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/graph/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/graph/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 932,
+      "path": "reference/actions/install/EXECUTION.json",
+      "sha256": "91acde913d2055045a39038d2067484cdbe0d7d1c2832b7e149b027e2c44bb2d"
+    },
+    {
+      "bytes": 2228,
+      "path": "reference/actions/install/LAUNCH.json",
+      "sha256": "6c9240851f1fdbb578a72072ae7d3cc0937fd086faafbca56d24ec71b9dc0f75"
+    },
+    {
+      "bytes": 88,
+      "path": "reference/actions/install/entry_source.py",
+      "sha256": "c33b8c2bc77f4d1ce7e51760100dfb8d0590efb1c1928a906ce974ee10bd9f15"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/install/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/install/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 934,
+      "path": "reference/actions/prepare/EXECUTION.json",
+      "sha256": "16591512f1a9377a3dd9e802f3361a0821f99ed99574c5d4a89c264eb1e5bac0"
+    },
+    {
+      "bytes": 1955,
+      "path": "reference/actions/prepare/LAUNCH.json",
+      "sha256": "ff53ea40edebd9d3c599200335b4e49699deb0cf6e660763140fc1af91663e29"
+    },
+    {
+      "bytes": 88,
+      "path": "reference/actions/prepare/entry_source.py",
+      "sha256": "f4b6e709afa46330bd9b0dbeb3f5da4f17a5259f3734bf3f4428bfbd7b4d319b"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/prepare/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 537,
+      "path": "reference/actions/prepare/stdout",
+      "sha256": "e7b33e8d36f9ec2e35c917a58391a41397581e47486c46f7b28fae5e9ca588e3"
+    },
+    {
+      "bytes": 935,
+      "path": "reference/actions/publish/EXECUTION.json",
+      "sha256": "345f508a98ce57e7387fb1fc7032b3f4f92068794d56c23e686c7e8f7013395f"
+    },
+    {
+      "bytes": 2520,
+      "path": "reference/actions/publish/LAUNCH.json",
+      "sha256": "88c039d7f09860512af4b5ccd8cd190ba601d2a7a07703540169483114370d71"
+    },
+    {
+      "bytes": 88,
+      "path": "reference/actions/publish/entry_source.py",
+      "sha256": "c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/publish/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1456,
+      "path": "reference/actions/publish/stdout",
+      "sha256": "092ed74bf525aaf3c1090344af0ed1a0eaf056872bb064c0bda1fa8d2d11b4af"
+    },
+    {
+      "bytes": 929,
+      "path": "reference/actions/verify/EXECUTION.json",
+      "sha256": "64763cdb7700408f23df5dfbbb94606eeae76bef71fc988a61b30cdcab6ae60f"
+    },
+    {
+      "bytes": 2124,
+      "path": "reference/actions/verify/LAUNCH.json",
+      "sha256": "c30ddccc71c3eacb8e39f38ad7132625cc08e7f152ad347fd4870fe4fcc88ca9"
+    },
+    {
+      "bytes": 87,
+      "path": "reference/actions/verify/entry_source.py",
+      "sha256": "eddc36429d96501e38940f0ed376b0cf6366d0fc559375fec80dccf450dcb7bc"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/verify/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "reference/actions/verify/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 51748,
+      "path": "reference/bus_preparation_common.py",
+      "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+    },
+    {
+      "bytes": 9352,
+      "path": "reference/primary_extension.py",
+      "sha256": "5bfde25061b66caa8caa57a05e8af80f20d1604a87d429ab6cfdb9326abf219b"
+    },
+    {
+      "bytes": 38631,
+      "path": "reference/proposed_primary_unbound.py",
+      "sha256": "effee95c2b3ba781550d69baed5714989bda1d693f3ebb331d06aed6b6aecf58"
+    },
+    {
+      "bytes": 8541,
+      "path": "rules/ADDITIONAL_SOURCE_REFS.json",
+      "sha256": "db2d3a46636784c17bb3e3a5ea4167823eae11ea85405c918e667d75af964f0b"
+    },
+    {
+      "bytes": 4287,
+      "path": "rules/origin_ai_execution/AGENTS.md",
+      "sha256": "5a4ece822960dd596de0efa4a3348475ad5ddaf47fa43f10aef64cc8a73c932b"
+    },
+    {
+      "bytes": 1118,
+      "path": "rules/origin_main/AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "bytes": 11788,
+      "path": "rules/origin_main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 3589,
+      "path": "seal_proposal.py",
+      "sha256": "9b712f14a8e077d5964bdaca91d90f3fb76e57df00fc7149ac975b661ee41512"
+    },
+    {
+      "bytes": 3589,
+      "path": "seal_source_at_launch.py",
+      "sha256": "9b712f14a8e077d5964bdaca91d90f3fb76e57df00fc7149ac975b661ee41512"
+    },
+    {
+      "bytes": 81919,
+      "path": "source_snapshot/ARCHIVE_CLOSURE.json",
+      "sha256": "457adcf0bcafac6fb24764cb3c371936a78c685af970a615978fa14fb69abfea"
+    },
+    {
+      "bytes": 3205,
+      "path": "source_snapshot/BINDING_CONTRACT.md",
+      "sha256": "cc5723e7e0f1c88defbd2c912b82f56502b5d5a53197900f701730ac85dc02ae"
+    },
+    {
+      "bytes": 867,
+      "path": "source_snapshot/BUILD_RESULT.json",
+      "sha256": "4a614c75f1f8d898af9bafa7700535a3e82c546b01625b609f0038a835e51b3b"
+    },
+    {
+      "bytes": 1982,
+      "path": "source_snapshot/CHECKPOINT.md",
+      "sha256": "11a0379fa803ed442e0801b9c92425737915928300f5bd5dae7303082900d550"
+    },
+    {
+      "bytes": 2195,
+      "path": "source_snapshot/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "31151992b43117a6b9e72f53a9234e1ca126d67c44fea56e3cf81784f66f98b7"
+    },
+    {
+      "bytes": 1203,
+      "path": "source_snapshot/CURRENT_BUILD_RESULT.json",
+      "sha256": "0d8e136257d56906b67eb29c954ef07d7c376131618989d18d4074cd4d0134fd"
+    },
+    {
+      "bytes": 81984,
+      "path": "source_snapshot/FINAL_FREEZE.json",
+      "sha256": "aca82160f36a6ea453871e9b732c0517c149112fc6147fd018d82b088f28b1db"
+    },
+    {
+      "bytes": 6044,
+      "path": "source_snapshot/FINAL_METADATA_CHECK.json",
+      "sha256": "606c880fdc429e57d700ed1dbd3460767d849d00840b4cd76b9ae06306ba52d2"
+    },
+    {
+      "bytes": 12103,
+      "path": "source_snapshot/PREPARATION_PARENT_DELTA.diff",
+      "sha256": "81c4e838da7a98f160c656f170f8e61294889dd7095b9de7de82ac2a6287aa5c"
+    },
+    {
+      "bytes": 1788,
+      "path": "source_snapshot/PROTOCOL_REUSE_MAP.json",
+      "sha256": "b409c94abdcb6d428b7f30ccada9fe8aa44e2e81c6e768081f562371beaccf29"
+    },
+    {
+      "bytes": 1789,
+      "path": "source_snapshot/PR_BODY.md",
+      "sha256": "c3a769838c3efdeed6d43d90dbef9ec5ce1e5859128819e7ffc968586a17b5e9"
+    },
+    {
+      "bytes": 4003,
+      "path": "source_snapshot/READ_COVERAGE.md",
+      "sha256": "aac5abae1685174719b2cffcefa782f42bfd4689cda2e0591544f2fb26472b4d"
+    },
+    {
+      "bytes": 10373,
+      "path": "source_snapshot/ROOT_READ_GUIDE.md",
+      "sha256": "5422ab186dde972ba89fb047c21c97669825345d4d63e8f4fe964ca3e0502a00"
+    },
+    {
+      "bytes": 1449,
+      "path": "source_snapshot/SCRIPT_MAP.json",
+      "sha256": "597d498668e82b48cd655cb1589a4b79db434603bbf95654947ccf9a132dbfe3"
+    },
+    {
+      "bytes": 2215,
+      "path": "source_snapshot/SEAL_OPERATION.json",
+      "sha256": "1f952b83e17cc799e3f9c37ab8da852235e4bf0884b81ba46e237d248a16198f"
+    },
+    {
+      "bytes": 82640,
+      "path": "source_snapshot/SOURCE_FRESHNESS.json",
+      "sha256": "851a6b8d2ff6ff3b53facc6eb7085a4ddb4857f1790f96463d64876c64d87f8f"
+    },
+    {
+      "bytes": 791,
+      "path": "source_snapshot/TRACE_GATE.md",
+      "sha256": "0612a69bc54c022466bf9eb0b556a614600875fb0723c5283d991563cc0dbd30"
+    },
+    {
+      "bytes": 3912,
+      "path": "source_snapshot/VERIFICATION.json",
+      "sha256": "7c98549842fc19046a01e7301d3b4a26fdb6c9fc60cae221941d4313ccd85739"
+    },
+    {
+      "bytes": 867,
+      "path": "source_snapshot/before_preparation_publication/BUILD_RESULT.json",
+      "sha256": "4a614c75f1f8d898af9bafa7700535a3e82c546b01625b609f0038a835e51b3b"
+    },
+    {
+      "bytes": 1447,
+      "path": "source_snapshot/before_preparation_publication/SCRIPT_MAP.json",
+      "sha256": "f36c1cd9094309e2fd71b2ef51bcf93999c63505b57d19d0e66289cebbec2101"
+    },
+    {
+      "bytes": 8662,
+      "path": "source_snapshot/before_preparation_publication/primary_template.py",
+      "sha256": "ae5f79af5775c5bfcc0fbfec180d29736654211963d26505e6597a6dbff420c1"
+    },
+    {
+      "bytes": 7887,
+      "path": "source_snapshot/before_preparation_publication/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/ACTUAL_EVIDENCE.json",
+      "sha256": "7aa42037dd950266f529b0bc14425ffb56979ed8b7769eb1ed7e5e8ac3420bb2"
+    },
+    {
+      "bytes": 154391,
+      "path": "source_snapshot/before_preparation_publication/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/ARCHIVE_INDEX.json",
+      "sha256": "cefa968b9cd7a738e7a3debeb682f9c68aebb5d2b54947da428381dee934b84c"
+    },
+    {
+      "bytes": 3409,
+      "path": "source_snapshot/before_preparation_publication/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/BODY_MAP.json",
+      "sha256": "c06011a51cfcb989483e0c08f5f7eb79c062568b5f33d96e8d4a08d698325bc4"
+    },
+    {
+      "bytes": 1469,
+      "path": "source_snapshot/before_preparation_publication/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/PARENT_BINDING.json",
+      "sha256": "9c3a3ae17f4fab8b67595f3d47718b670c37c0f5df816ab01c81e0e37c1d0cb8"
+    },
+    {
+      "bytes": 362,
+      "path": "source_snapshot/before_preparation_publication/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/PUBLICATION_STATE.json",
+      "sha256": "908a03880ab44a9431b4814545ee5afa1a3472c97222d4fe85d2a77f5670cf3e"
+    },
+    {
+      "bytes": 65612,
+      "path": "source_snapshot/before_preparation_publication/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/SOURCE_MANIFEST.json",
+      "sha256": "03f98186ab2d7bb0669be161ec8514f3c5d857cc77f2587d31ba83f84c348160"
+    },
+    {
+      "bytes": 148774,
+      "path": "source_snapshot/before_preparation_publication/proposal/docs/BUS_RESOURCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "e25763eab99bc3f2f8525530af03df172f068a35703594bd928bc5a2a8faddc3"
+    },
+    {
+      "bytes": 53204,
+      "path": "source_snapshot/before_preparation_publication/proposal/scripts/bus_resource_bounds_2026_10_16.py",
+      "sha256": "91debdc3074ea565c0a458b36df184705e6fc0165f97d14f1a2a033d268d16da"
+    },
+    {
+      "bytes": 14680,
+      "path": "source_snapshot/before_preparation_publication/wrapper.md",
+      "sha256": "89f9053f3685dcd295db2f0da5587187d1f1d0f8c14c3df246fb1895afb10d89"
+    },
+    {
+      "bytes": 11498,
+      "path": "source_snapshot/bind_published_parent.py",
+      "sha256": "747ef9fbb700bc10c6a5a20618479e2617160addd3183be6c03be9db96f6ae29"
+    },
+    {
+      "bytes": 12366,
+      "path": "source_snapshot/build_packet.py",
+      "sha256": "8e6d84c49d45fb2c7b92e9a49243642cf483ea2a1558128f4154b083bd595c26"
+    },
+    {
+      "bytes": 12391,
+      "path": "source_snapshot/build_packet_v2.py",
+      "sha256": "9cf552c97dde8a9747eac6a683134c58913c496078175357f3f3f3f0017a50ef"
+    },
+    {
+      "bytes": 7456,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1.json",
+      "sha256": "03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1"
+    },
+    {
+      "bytes": 15435,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 8361,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97.md",
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "bytes": 83919,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 3826,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386.md",
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "bytes": 4683,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996.json",
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+    },
+    {
+      "bytes": 1449,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/30cbf0d3d83a79145929aec75657b340e3849f51c9324ffaba0351a189202a94.md",
+      "sha256": "30cbf0d3d83a79145929aec75657b340e3849f51c9324ffaba0351a189202a94"
+    },
+    {
+      "bytes": 11558,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "bytes": 21520,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031.md",
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "bytes": 1720,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/762e8b0423570ca12445a0152f08f607515dc35e2d24a3d7f67e7074a1820c2b.md",
+      "sha256": "762e8b0423570ca12445a0152f08f607515dc35e2d24a3d7f67e7074a1820c2b"
+    },
+    {
+      "bytes": 3894,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff.json",
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "bytes": 13419,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 14490,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 4507,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880.md",
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "bytes": 1349,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a33e1d166127806e7da387454a9c9ce780e70f839fe2237f0a7de4b8121351ae.md",
+      "sha256": "a33e1d166127806e7da387454a9c9ce780e70f839fe2237f0a7de4b8121351ae"
+    },
+    {
+      "bytes": 5321,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726.json",
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "bytes": 36324,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875.md",
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "bytes": 415,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d6836428c45b33eb05bcac68f0da85c9e13312fa9346ac5b18861e1bd3335b5f.json",
+      "sha256": "d6836428c45b33eb05bcac68f0da85c9e13312fa9346ac5b18861e1bd3335b5f"
+    },
+    {
+      "bytes": 2594,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62.json",
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    },
+    {
+      "bytes": 6317,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e.json",
+      "sha256": "de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e"
+    },
+    {
+      "bytes": 3280,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f07c6d1069c8feed48c5859968bb1b05a19c13e44e3d66d9db393b18c97d5ab0.md",
+      "sha256": "f07c6d1069c8feed48c5859968bb1b05a19c13e44e3d66d9db393b18c97d5ab0"
+    },
+    {
+      "bytes": 410,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95.json",
+      "sha256": "f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95"
+    },
+    {
+      "bytes": 4734,
+      "path": "source_snapshot/failed_build_01/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21.md",
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "bytes": 5257,
+      "path": "source_snapshot/final_check.py",
+      "sha256": "fb8447e1cbc8693fdf73fe6cfc277ca380cf3e9b08691978d35d2b0758e2b4cf"
+    },
+    {
+      "bytes": 5203,
+      "path": "source_snapshot/inspect_packet.py",
+      "sha256": "ed16bbaed33b993e45da90082e838792aff8618f0e42e5e2584b5836afe36f83"
+    },
+    {
+      "bytes": 2284,
+      "path": "source_snapshot/metadata_runs/build_01/EXECUTION.json",
+      "sha256": "e198bc3682f4fb60f154530a12b769ddd56e6abcfc02894539f58431451fbbcd"
+    },
+    {
+      "bytes": 1589,
+      "path": "source_snapshot/metadata_runs/build_01/LAUNCH.json",
+      "sha256": "96c2bb510ee4fc4cdf27631b278075d895e70af202d835818ab969e3bb537a08"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/build_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 12366,
+      "path": "source_snapshot/metadata_runs/build_01/source_at_launch.py",
+      "sha256": "8e6d84c49d45fb2c7b92e9a49243642cf483ea2a1558128f4154b083bd595c26"
+    },
+    {
+      "bytes": 477,
+      "path": "source_snapshot/metadata_runs/build_01/stderr",
+      "sha256": "54f5558a4cccecf14d079bd65861a28b1bb8f42a7bbe7db40a4e13b60bb1a84a"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/build_01/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2287,
+      "path": "source_snapshot/metadata_runs/build_02/EXECUTION.json",
+      "sha256": "2d24f0ee579d4c0e5bdfe5a684aa7fdf44aa3234acc50a667452bd2b5448f698"
+    },
+    {
+      "bytes": 1592,
+      "path": "source_snapshot/metadata_runs/build_02/LAUNCH.json",
+      "sha256": "5ecb2381e85475d5b00f3efcf2c2a88a1373966249439cdea2f3ac3bb45e56b0"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/build_02/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 12391,
+      "path": "source_snapshot/metadata_runs/build_02/source_at_launch.py",
+      "sha256": "9cf552c97dde8a9747eac6a683134c58913c496078175357f3f3f3f0017a50ef"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/build_02/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 867,
+      "path": "source_snapshot/metadata_runs/build_02/stdout",
+      "sha256": "c1728f2defb38f2f04a3add052d35784e7cd94de4421f0074ea20f3fe6fe3942"
+    },
+    {
+      "bytes": 2384,
+      "path": "source_snapshot/metadata_runs/controls_01/EXECUTION.json",
+      "sha256": "e07e2d0792007d0fd5e62631ee21f0e8876f7c1ad960b149c7278da1fcbd0d39"
+    },
+    {
+      "bytes": 1683,
+      "path": "source_snapshot/metadata_runs/controls_01/LAUNCH.json",
+      "sha256": "18e6589575a38fbf9da30b3b81acf2371a580366b478f18dc844a30677f77820"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/controls_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 57626,
+      "path": "source_snapshot/metadata_runs/controls_01/source_at_launch.py",
+      "sha256": "6372d054068a987309b7d7fc4314899ec1f44d6a236b0a3d9d2842ea0a3ca99e"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/controls_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 835,
+      "path": "source_snapshot/metadata_runs/controls_01/stdout",
+      "sha256": "6c77232b7b69aee53d066e38e4982867d83be0e0519e68972c7197715667f320"
+    },
+    {
+      "bytes": 2392,
+      "path": "source_snapshot/metadata_runs/default_refusal_01/EXECUTION.json",
+      "sha256": "a19b691d940016d4b213db664a1054c51ae197d4c78b33ff082c165bbc1c15f0"
+    },
+    {
+      "bytes": 1677,
+      "path": "source_snapshot/metadata_runs/default_refusal_01/LAUNCH.json",
+      "sha256": "2371845ff08f20dbfa3061c4c76305afe0f48b69943dd2931d7171eaa95a3a6a"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/default_refusal_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 57626,
+      "path": "source_snapshot/metadata_runs/default_refusal_01/source_at_launch.py",
+      "sha256": "6372d054068a987309b7d7fc4314899ec1f44d6a236b0a3d9d2842ea0a3ca99e"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/default_refusal_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 138,
+      "path": "source_snapshot/metadata_runs/default_refusal_01/stdout",
+      "sha256": "b40ab710da176b7e545734c5d03616ec0e20284e91036364e67a1a7466c94b93"
+    },
+    {
+      "bytes": 2312,
+      "path": "source_snapshot/metadata_runs/final_check_01/EXECUTION.json",
+      "sha256": "51ad322a707cd584f04e27749385b0f75049d9b442a770c886f4bebc939e148e"
+    },
+    {
+      "bytes": 1604,
+      "path": "source_snapshot/metadata_runs/final_check_01/LAUNCH.json",
+      "sha256": "244042f3786aeb43060d84ddbd1e9a7a97dcff307c8bf74fb8dafc9e32ee7fdb"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/final_check_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 5257,
+      "path": "source_snapshot/metadata_runs/final_check_01/source_at_launch.py",
+      "sha256": "fb8447e1cbc8693fdf73fe6cfc277ca380cf3e9b08691978d35d2b0758e2b4cf"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/final_check_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6044,
+      "path": "source_snapshot/metadata_runs/final_check_01/stdout",
+      "sha256": "a86c61ee88ba51b47e4aec2e82c31d8a91cbea6a9e75e80ff62add8248ba762b"
+    },
+    {
+      "bytes": 2310,
+      "path": "source_snapshot/metadata_runs/inspection_01/EXECUTION.json",
+      "sha256": "45e3c99e9301f3d9bbcb27748d3f8f48670674a7625ab8fc8378265f3fba63c2"
+    },
+    {
+      "bytes": 1604,
+      "path": "source_snapshot/metadata_runs/inspection_01/LAUNCH.json",
+      "sha256": "3242fe8b61e668c425a45f1785fe974b639bdd4d213ea64bae2c873742418eb9"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/inspection_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 5203,
+      "path": "source_snapshot/metadata_runs/inspection_01/source_at_launch.py",
+      "sha256": "ed16bbaed33b993e45da90082e838792aff8618f0e42e5e2584b5836afe36f83"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/inspection_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3912,
+      "path": "source_snapshot/metadata_runs/inspection_01/stdout",
+      "sha256": "1d45a3a384a37c4bd4c71e676ef0fe99e1f9fd4776feb7b0da0f95bc9f2b5acf"
+    },
+    {
+      "bytes": 2382,
+      "path": "source_snapshot/metadata_runs/integrity_01/EXECUTION.json",
+      "sha256": "575aa47a0ae578ffb0f48717ab2448eb50755e3ce2bd7e099c1274cdbd92f114"
+    },
+    {
+      "bytes": 1680,
+      "path": "source_snapshot/metadata_runs/integrity_01/LAUNCH.json",
+      "sha256": "f78c2fe3bdbe34424c8e4d8f73516ff0d723fe04d3d845607b830c9cd81403f5"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/integrity_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 53204,
+      "path": "source_snapshot/metadata_runs/integrity_01/source_at_launch.py",
+      "sha256": "91debdc3074ea565c0a458b36df184705e6fc0165f97d14f1a2a033d268d16da"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/integrity_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 259,
+      "path": "source_snapshot/metadata_runs/integrity_01/stdout",
+      "sha256": "59a86d6693c8c6ae7f289d4215fab1f9d74a861f4579d35747ddd76fd4d85c22"
+    },
+    {
+      "bytes": 2382,
+      "path": "source_snapshot/metadata_runs/integrity_02/EXECUTION.json",
+      "sha256": "a7ece63e1d607419baca82779eff60f128717ae9aa016371ad6c2d542f4189b3"
+    },
+    {
+      "bytes": 1680,
+      "path": "source_snapshot/metadata_runs/integrity_02/LAUNCH.json",
+      "sha256": "707c3b960eec865b476cdc8556a64c7bd0df18ce4558ca72e294e52b25e3540d"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/integrity_02/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 57626,
+      "path": "source_snapshot/metadata_runs/integrity_02/source_at_launch.py",
+      "sha256": "6372d054068a987309b7d7fc4314899ec1f44d6a236b0a3d9d2842ea0a3ca99e"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/integrity_02/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 259,
+      "path": "source_snapshot/metadata_runs/integrity_02/stdout",
+      "sha256": "4230399d9271d0f903d45e6610db751727d51cfb78462c52be7067843edb8e6e"
+    },
+    {
+      "bytes": 2339,
+      "path": "source_snapshot/metadata_runs/parent_binding_01/EXECUTION.json",
+      "sha256": "4d71057c57d65d3bcfea85da31fbb45a66ab1f925ccfc121b993f0d58ef219f1"
+    },
+    {
+      "bytes": 1625,
+      "path": "source_snapshot/metadata_runs/parent_binding_01/LAUNCH.json",
+      "sha256": "981218e9c58fb70b71b68573dc69ec22bc1e0cf33a0db80ae13c333ab48b2698"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/parent_binding_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 11498,
+      "path": "source_snapshot/metadata_runs/parent_binding_01/source_at_launch.py",
+      "sha256": "747ef9fbb700bc10c6a5a20618479e2617160addd3183be6c03be9db96f6ae29"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/parent_binding_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1203,
+      "path": "source_snapshot/metadata_runs/parent_binding_01/stdout",
+      "sha256": "05db3b955bc592a23c78bc5030683064e0d03bec0235f74db850acd1b222ac62"
+    },
+    {
+      "bytes": 2301,
+      "path": "source_snapshot/metadata_runs/recovery_01/EXECUTION.json",
+      "sha256": "81d7ee33d608baeecbf07de505989b906c051d80115750da7d1a1575ca93379c"
+    },
+    {
+      "bytes": 1600,
+      "path": "source_snapshot/metadata_runs/recovery_01/LAUNCH.json",
+      "sha256": "8082803735607206eec5e9b360622c422aa54f9b341fe9b6c8e85fbf126b7298"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/metadata_runs/recovery_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 1050,
+      "path": "source_snapshot/metadata_runs/recovery_01/source_at_launch.py",
+      "sha256": "ed075fac1d5953cd1c76cfdcff0080262fb4611ad1443f50388e2db4ba79ad48"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/metadata_runs/recovery_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 226,
+      "path": "source_snapshot/metadata_runs/recovery_01/stdout",
+      "sha256": "aa7641747f494a8b73753a31c5505cee2c2b0b12b528fbf53bdf3ed75c81e156"
+    },
+    {
+      "bytes": 9986,
+      "path": "source_snapshot/primary_template.py",
+      "sha256": "d6fd2a6d7fa1e34e08c4203bd0966d2582fb1bbfebe9fb911fa7a9c24a941610"
+    },
+    {
+      "bytes": 8431,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/ACTUAL_EVIDENCE.json",
+      "sha256": "fcdadb5da24a0fd584bcb1d2d8a2f76859ca85de3cb21007eaa53e3fc8d8afa0"
+    },
+    {
+      "bytes": 162956,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/ARCHIVE_INDEX.json",
+      "sha256": "6b82e0a0577aa9bcd33d15af1771ad9d6629b71d4319f2298ba3eed8e5c8913e"
+    },
+    {
+      "bytes": 3409,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/BODY_MAP.json",
+      "sha256": "f1af794507f34ac7ca681c746693a8e2dd8ac96e5db29482cf4abb2b91b4602d"
+    },
+    {
+      "bytes": 2318,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/PARENT_BINDING.json",
+      "sha256": "6ea93693f3f94706690154bb8a06500e15a90e62a77f750381de32e040b9680d"
+    },
+    {
+      "bytes": 1078,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/PUBLICATION_STATE.json",
+      "sha256": "db86a6d88694f5e1b7c1fad6f636dc5d5fe94f67315f3382ba3f1ee59c733728"
+    },
+    {
+      "bytes": 65981,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/SOURCE_MANIFEST.json",
+      "sha256": "0339c5901c62768ad5267c9f2bca748b5f0fb66d12ae21cb5c8e402c6f76bb62"
+    },
+    {
+      "bytes": 1734,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0017d7be3210fd279fbbf69ec32331b319033a3a2d53f34f95d8547a403e5b75.md",
+      "sha256": "0017d7be3210fd279fbbf69ec32331b319033a3a2d53f34f95d8547a403e5b75"
+    },
+    {
+      "bytes": 1782,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c.py",
+      "sha256": "0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c"
+    },
+    {
+      "bytes": 2196,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0272183784213d0343af8f69a334c66b56e42579df79df6ed5ea4036bceaf23b.json",
+      "sha256": "0272183784213d0343af8f69a334c66b56e42579df79df6ed5ea4036bceaf23b"
+    },
+    {
+      "bytes": 7456,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1.json",
+      "sha256": "03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1"
+    },
+    {
+      "bytes": 555,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/03ff75751a4c77728eaa499627befa01e9139f58c7a975aed2d9fb0c4097f036.blob",
+      "sha256": "03ff75751a4c77728eaa499627befa01e9139f58c7a975aed2d9fb0c4097f036"
+    },
+    {
+      "bytes": 15435,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 3952,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b.py",
+      "sha256": "06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b"
+    },
+    {
+      "bytes": 4280,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/07fd4762fbc51b70561af763d0d785aa253a460037ecb9c9e022864500f75618.py",
+      "sha256": "07fd4762fbc51b70561af763d0d785aa253a460037ecb9c9e022864500f75618"
+    },
+    {
+      "bytes": 133383,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36.md",
+      "sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36"
+    },
+    {
+      "bytes": 1456,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/092ed74bf525aaf3c1090344af0ed1a0eaf056872bb064c0bda1fa8d2d11b4af.blob",
+      "sha256": "092ed74bf525aaf3c1090344af0ed1a0eaf056872bb064c0bda1fa8d2d11b4af"
+    },
+    {
+      "bytes": 522,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/09ab5134030ef511d03782dbc70438b6f4f14bd393749a10dcb741c8f9e1728e.blob",
+      "sha256": "09ab5134030ef511d03782dbc70438b6f4f14bd393749a10dcb741c8f9e1728e"
+    },
+    {
+      "bytes": 3680,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0b3be664322498b5ee9ba4e9e0441dc37dd20d96bf9319ab2b2372b97803758a.py",
+      "sha256": "0b3be664322498b5ee9ba4e9e0441dc37dd20d96bf9319ab2b2372b97803758a"
+    },
+    {
+      "bytes": 115070,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823.md",
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+    },
+    {
+      "bytes": 4906,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7.py",
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7"
+    },
+    {
+      "bytes": 4913,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e.md",
+      "sha256": "0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e"
+    },
+    {
+      "bytes": 8361,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97.md",
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "bytes": 9528,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/160e6f51eddb8f2c01b1b7d34c510b8f875ca5b4bab0e8fe4f3a2df57abde107.json",
+      "sha256": "160e6f51eddb8f2c01b1b7d34c510b8f875ca5b4bab0e8fe4f3a2df57abde107"
+    },
+    {
+      "bytes": 2489,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1696732b1a09f6ee0fdaf14b0ed6b9dce51db7bb5b7abe46730cab8cdeec13e8.md",
+      "sha256": "1696732b1a09f6ee0fdaf14b0ed6b9dce51db7bb5b7abe46730cab8cdeec13e8"
+    },
+    {
+      "bytes": 865,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/16be1bfabc638c7459a06c85f56e717f354b15cabcffb29a7ffc16d5ce651c93.json",
+      "sha256": "16be1bfabc638c7459a06c85f56e717f354b15cabcffb29a7ffc16d5ce651c93"
+    },
+    {
+      "bytes": 83919,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 113,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/176fe6944c44283142c9ff6ae26c15530f139c66a76f963e3ae5066c36b6669e.blob",
+      "sha256": "176fe6944c44283142c9ff6ae26c15530f139c66a76f963e3ae5066c36b6669e"
+    },
+    {
+      "bytes": 1581,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/19282aa54291c466f4251abda4d19797ffbb3cbbf3565e6c061143dc3e638f37.md",
+      "sha256": "19282aa54291c466f4251abda4d19797ffbb3cbbf3565e6c061143dc3e638f37"
+    },
+    {
+      "bytes": 10048,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1a7077d06f685485f8178fd437cf55837f2b506683bf5b08d09435a7bb66e6e2.py",
+      "sha256": "1a7077d06f685485f8178fd437cf55837f2b506683bf5b08d09435a7bb66e6e2"
+    },
+    {
+      "bytes": 3826,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386.md",
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "bytes": 4450,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911.md",
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "bytes": 3420,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c1677df40bb9a5861b7b29a1ca5f301c4adbe632d329d85e2d9b30cae1ceea5.py",
+      "sha256": "1c1677df40bb9a5861b7b29a1ca5f301c4adbe632d329d85e2d9b30cae1ceea5"
+    },
+    {
+      "bytes": 11194,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c2a9e64ba114369db30022b13c611276f0e5f3638b0a2781641aa8c9ce6cc0d.json",
+      "sha256": "1c2a9e64ba114369db30022b13c611276f0e5f3638b0a2781641aa8c9ce6cc0d"
+    },
+    {
+      "bytes": 6990,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25.md",
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    },
+    {
+      "bytes": 5082,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e.md",
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "bytes": 4683,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996.json",
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+    },
+    {
+      "bytes": 2215,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1eea710e0d5271968a862bb9fb961fee93f6d5570e08958309e84b23b3766938.json",
+      "sha256": "1eea710e0d5271968a862bb9fb961fee93f6d5570e08958309e84b23b3766938"
+    },
+    {
+      "bytes": 17546,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356.md",
+      "sha256": "20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356"
+    },
+    {
+      "bytes": 4750,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/20b193a5a2158f911d27670b713bc8fdabfecd79e2130dc60d7f9ed368506fc6.json",
+      "sha256": "20b193a5a2158f911d27670b713bc8fdabfecd79e2130dc60d7f9ed368506fc6"
+    },
+    {
+      "bytes": 1409,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e.blob",
+      "sha256": "219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e"
+    },
+    {
+      "bytes": 1409,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e.json",
+      "sha256": "219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e"
+    },
+    {
+      "bytes": 642,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/21f91a53c4100d4aa13abe869aa47ffe4929a22b93ba689be82caa62e3970ddf.json",
+      "sha256": "21f91a53c4100d4aa13abe869aa47ffe4929a22b93ba689be82caa62e3970ddf"
+    },
+    {
+      "bytes": 823,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/28436b704dc0879135b3963ff7a891ea110af0a00a979e27e418a0982285e957.json",
+      "sha256": "28436b704dc0879135b3963ff7a891ea110af0a00a979e27e418a0982285e957"
+    },
+    {
+      "bytes": 3462,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641.json",
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "bytes": 3082,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2b1bf3b534cf83bed57a7ca322b058c667a388f0a684faf11891300ab55a9661.md",
+      "sha256": "2b1bf3b534cf83bed57a7ca322b058c667a388f0a684faf11891300ab55a9661"
+    },
+    {
+      "bytes": 37212,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74.md",
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74"
+    },
+    {
+      "bytes": 440,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c.json",
+      "sha256": "2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c"
+    },
+    {
+      "bytes": 1201,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2f1abe8a822103cbd45268fd24f8c4748d40b2968d0e4d3d163eb708fcd5946e.json",
+      "sha256": "2f1abe8a822103cbd45268fd24f8c4748d40b2968d0e4d3d163eb708fcd5946e"
+    },
+    {
+      "bytes": 1449,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/30cbf0d3d83a79145929aec75657b340e3849f51c9324ffaba0351a189202a94.md",
+      "sha256": "30cbf0d3d83a79145929aec75657b340e3849f51c9324ffaba0351a189202a94"
+    },
+    {
+      "bytes": 935,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/345f508a98ce57e7387fb1fc7032b3f4f92068794d56c23e686c7e8f7013395f.json",
+      "sha256": "345f508a98ce57e7387fb1fc7032b3f4f92068794d56c23e686c7e8f7013395f"
+    },
+    {
+      "bytes": 2681,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/349798bbb8e8e8def5d90b402cfe33221708b318ff7609808f368f3605d91246.md",
+      "sha256": "349798bbb8e8e8def5d90b402cfe33221708b318ff7609808f368f3605d91246"
+    },
+    {
+      "bytes": 7183,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3517d85649dc00bfad42da5f3a21ab97ab2c47594d3e21008a9a3c3bda9bdd96.json",
+      "sha256": "3517d85649dc00bfad42da5f3a21ab97ab2c47594d3e21008a9a3c3bda9bdd96"
+    },
+    {
+      "bytes": 51748,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+      "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+    },
+    {
+      "bytes": 1029,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/37f588c4790dc695db88e4420da5d5903721837eceac46a0d1e3e50db9b63e09.json",
+      "sha256": "37f588c4790dc695db88e4420da5d5903721837eceac46a0d1e3e50db9b63e09"
+    },
+    {
+      "bytes": 4440,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4.json",
+      "sha256": "382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4"
+    },
+    {
+      "bytes": 923,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/386f6ed6c8e7a440817ec6103a2c19b9151cf20625dcf3a94cbc3cc99da2cddd.json",
+      "sha256": "386f6ed6c8e7a440817ec6103a2c19b9151cf20625dcf3a94cbc3cc99da2cddd"
+    },
+    {
+      "bytes": 459,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/391df8e6a053694a06a0ec96a48fff13223e6debdcb247ab31043ca4165b72a3.json",
+      "sha256": "391df8e6a053694a06a0ec96a48fff13223e6debdcb247ab31043ca4165b72a3"
+    },
+    {
+      "bytes": 1589,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3.json",
+      "sha256": "393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3"
+    },
+    {
+      "bytes": 11558,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "bytes": 1795,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3d582d9a4ef6f267136812d11b10e316c5ba66e196024a0ce0cff42cf86ac2c1.json",
+      "sha256": "3d582d9a4ef6f267136812d11b10e316c5ba66e196024a0ce0cff42cf86ac2c1"
+    },
+    {
+      "bytes": 509,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3df1f41f729c46f285b403a4dc9fda0f1f6654dea6a5d81463f1ee57fdc097b1.blob",
+      "sha256": "3df1f41f729c46f285b403a4dc9fda0f1f6654dea6a5d81463f1ee57fdc097b1"
+    },
+    {
+      "bytes": 3021,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3f3dc6486346290863e2386d2173b8a9b9fd13d0026ae963c38c3681ef11eeb3.md",
+      "sha256": "3f3dc6486346290863e2386d2173b8a9b9fd13d0026ae963c38c3681ef11eeb3"
+    },
+    {
+      "bytes": 3584,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6.py",
+      "sha256": "416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6"
+    },
+    {
+      "bytes": 436,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8.json",
+      "sha256": "417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8"
+    },
+    {
+      "bytes": 1911,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/42e2d1e6c6aaea66ff4640acb5bb9a312a716cb0e6fe9ccec4388461aad6438b.md",
+      "sha256": "42e2d1e6c6aaea66ff4640acb5bb9a312a716cb0e6fe9ccec4388461aad6438b"
+    },
+    {
+      "bytes": 3639,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4348c1468c9d5a1eb7087aa4d64e4954569dcb021481205e7975e8d1fd92b169.json",
+      "sha256": "4348c1468c9d5a1eb7087aa4d64e4954569dcb021481205e7975e8d1fd92b169"
+    },
+    {
+      "bytes": 726,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/45823f7f676234bfd8b8233ab73d8d06604f0fe9e6923097ce0980fad71d5cdd.json",
+      "sha256": "45823f7f676234bfd8b8233ab73d8d06604f0fe9e6923097ce0980fad71d5cdd"
+    },
+    {
+      "bytes": 949,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/46df65bf93c82c336e6b5c04937c6813ffc8bc5d87aa29ed837bf62f5ff15c48.json",
+      "sha256": "46df65bf93c82c336e6b5c04937c6813ffc8bc5d87aa29ed837bf62f5ff15c48"
+    },
+    {
+      "bytes": 1785,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/483872990d9612bad59f2885d040e6c89aad4e7e7fcedc873b40c5ba5ddee496.md",
+      "sha256": "483872990d9612bad59f2885d040e6c89aad4e7e7fcedc873b40c5ba5ddee496"
+    },
+    {
+      "bytes": 1667,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4972fe733baa0a37d74063444477fa72178082b14e940618f959abbdc29ceb92.json",
+      "sha256": "4972fe733baa0a37d74063444477fa72178082b14e940618f959abbdc29ceb92"
+    },
+    {
+      "bytes": 2334,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567.md",
+      "sha256": "4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567"
+    },
+    {
+      "bytes": 3344,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270.py",
+      "sha256": "4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270"
+    },
+    {
+      "bytes": 29555,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6.md",
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "bytes": 3655,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716.py",
+      "sha256": "50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716"
+    },
+    {
+      "bytes": 1610,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/51b3c50108ac1f43aa95d2ab3c6ae06f4ecd8095e872f0f56dd054cb89f2309a.py",
+      "sha256": "51b3c50108ac1f43aa95d2ab3c6ae06f4ecd8095e872f0f56dd054cb89f2309a"
+    },
+    {
+      "bytes": 10521,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd.py",
+      "sha256": "52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd"
+    },
+    {
+      "bytes": 824,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/535410d2671e566663c44772860add0a260749b485be773ddddc01ed387e8957.json",
+      "sha256": "535410d2671e566663c44772860add0a260749b485be773ddddc01ed387e8957"
+    },
+    {
+      "bytes": 3455,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/568fb5201f12a717bbeea4842393484b8095176b0f619ce2006c9edce8d88ea4.py",
+      "sha256": "568fb5201f12a717bbeea4842393484b8095176b0f619ce2006c9edce8d88ea4"
+    },
+    {
+      "bytes": 64064,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93.json",
+      "sha256": "56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93"
+    },
+    {
+      "bytes": 5636,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/57657ae8f3568932180c78d6504deae992650eb260e1039eb0d5fce7db7f24d4.json",
+      "sha256": "57657ae8f3568932180c78d6504deae992650eb260e1039eb0d5fce7db7f24d4"
+    },
+    {
+      "bytes": 3183,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/5b2487502fa2e5b0bd5be27b3421ff8ed455911e0131b7bebf527ef05c452ca4.py",
+      "sha256": "5b2487502fa2e5b0bd5be27b3421ff8ed455911e0131b7bebf527ef05c452ca4"
+    },
+    {
+      "bytes": 534,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/5b6330b94894ea666550a92a63d8a494f5943422922f5345af5abec828010c6e.blob",
+      "sha256": "5b6330b94894ea666550a92a63d8a494f5943422922f5345af5abec828010c6e"
+    },
+    {
+      "bytes": 682,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/5e8bf3763390136d0181ede4d5e2d60fc721b40af2239be9e1a5735d54bae703.json",
+      "sha256": "5e8bf3763390136d0181ede4d5e2d60fc721b40af2239be9e1a5735d54bae703"
+    },
+    {
+      "bytes": 6805,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990.md",
+      "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990"
+    },
+    {
+      "bytes": 21520,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031.md",
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "bytes": 1857,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd.py",
+      "sha256": "63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd"
+    },
+    {
+      "bytes": 3887,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525.json",
+      "sha256": "6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525"
+    },
+    {
+      "bytes": 890,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/68f3d139c86cb61fbcb86485a0207614f10b13418446814fcd3e01e8f83b5efb.blob",
+      "sha256": "68f3d139c86cb61fbcb86485a0207614f10b13418446814fcd3e01e8f83b5efb"
+    },
+    {
+      "bytes": 2726,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/69d3a36c51c5931705950e086f256b3837e42b769d93e80b7a67d811c07c747e.py",
+      "sha256": "69d3a36c51c5931705950e086f256b3837e42b769d93e80b7a67d811c07c747e"
+    },
+    {
+      "bytes": 216,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531.json",
+      "sha256": "69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531"
+    },
+    {
+      "bytes": 1470,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6c774eca97d7f2bbfcea7ca59833a59aba4e0d62973e0b20849329237c51f433.py",
+      "sha256": "6c774eca97d7f2bbfcea7ca59833a59aba4e0d62973e0b20849329237c51f433"
+    },
+    {
+      "bytes": 7516,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44.md",
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+    },
+    {
+      "bytes": 3273,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7070d0ab6fbbfb937eec4d86f5a79433167dbcecb1ecc640bb43d8af47996e5d.json",
+      "sha256": "7070d0ab6fbbfb937eec4d86f5a79433167dbcecb1ecc640bb43d8af47996e5d"
+    },
+    {
+      "bytes": 31003,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29.md",
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "bytes": 1720,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/762e8b0423570ca12445a0152f08f607515dc35e2d24a3d7f67e7074a1820c2b.md",
+      "sha256": "762e8b0423570ca12445a0152f08f607515dc35e2d24a3d7f67e7074a1820c2b"
+    },
+    {
+      "bytes": 3588,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105.blob",
+      "sha256": "785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105"
+    },
+    {
+      "bytes": 3588,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105.json",
+      "sha256": "785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105"
+    },
+    {
+      "bytes": 435,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812.json",
+      "sha256": "7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812"
+    },
+    {
+      "bytes": 1177,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7f4dc31cb18d0fcd160660ecdc01f793f29a078b8ccde51f69a39e26c4275bb8.json",
+      "sha256": "7f4dc31cb18d0fcd160660ecdc01f793f29a078b8ccde51f69a39e26c4275bb8"
+    },
+    {
+      "bytes": 9106,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f.py",
+      "sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f"
+    },
+    {
+      "bytes": 5004,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf.md",
+      "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf"
+    },
+    {
+      "bytes": 3894,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff.json",
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "bytes": 1392,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/81ce9ebe010aaeeb218e65feef5baecc170411ef7df85821e1aa96a350aaed76.json",
+      "sha256": "81ce9ebe010aaeeb218e65feef5baecc170411ef7df85821e1aa96a350aaed76"
+    },
+    {
+      "bytes": 5915,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b.json",
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    {
+      "bytes": 1831,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/83d7df7665e896fe056e426005cda688722eae2de932b17f56530a7078cdf8bc.json",
+      "sha256": "83d7df7665e896fe056e426005cda688722eae2de932b17f56530a7078cdf8bc"
+    },
+    {
+      "bytes": 344,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/85beec631607c6cfb96f35854a567be1e1d3ac9b36db7031d37f527489fd8bf5.json",
+      "sha256": "85beec631607c6cfb96f35854a567be1e1d3ac9b36db7031d37f527489fd8bf5"
+    },
+    {
+      "bytes": 2215,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/87fd43f6145ad34feeb96870a63e91db12cafce7946a9f93175537de9abfd121.md",
+      "sha256": "87fd43f6145ad34feeb96870a63e91db12cafce7946a9f93175537de9abfd121"
+    },
+    {
+      "bytes": 2520,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/88c039d7f09860512af4b5ccd8cd190ba601d2a7a07703540169483114370d71.json",
+      "sha256": "88c039d7f09860512af4b5ccd8cd190ba601d2a7a07703540169483114370d71"
+    },
+    {
+      "bytes": 462,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/895059d2212b31324279490d387a004ad08f4b320ab2d9f872cd2e6ff944be17.json",
+      "sha256": "895059d2212b31324279490d387a004ad08f4b320ab2d9f872cd2e6ff944be17"
+    },
+    {
+      "bytes": 7546,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/89d345ad577821716d3d0fa58461eed37bdcee22461ef63c560aefd8abcecb08.json",
+      "sha256": "89d345ad577821716d3d0fa58461eed37bdcee22461ef63c560aefd8abcecb08"
+    },
+    {
+      "bytes": 7470,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8a18e080aa0702912766d61cef93266a86b7112482129cfd69c4c21e3000dcea.py",
+      "sha256": "8a18e080aa0702912766d61cef93266a86b7112482129cfd69c4c21e3000dcea"
+    },
+    {
+      "bytes": 22431,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8.md",
+      "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8"
+    },
+    {
+      "bytes": 6956,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8b96d1e0790c864a1caefe4a7035740e9c0835ebb943d4f0700d7c1f00aa43e2.json",
+      "sha256": "8b96d1e0790c864a1caefe4a7035740e9c0835ebb943d4f0700d7c1f00aa43e2"
+    },
+    {
+      "bytes": 5394,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8db3a92800a16e369b196444c91be40689b5ee477ca2e186e00d14813e926146.md",
+      "sha256": "8db3a92800a16e369b196444c91be40689b5ee477ca2e186e00d14813e926146"
+    },
+    {
+      "bytes": 1233,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8f427613ebe99471994e25ea6388869025985da1a3dde7abd968a5db3b3346ee.blob",
+      "sha256": "8f427613ebe99471994e25ea6388869025985da1a3dde7abd968a5db3b3346ee"
+    },
+    {
+      "bytes": 2920,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/94b43911eb01ed0134c83e6526123c9c06e6e759a2227e54256e153ecbd523bd.json",
+      "sha256": "94b43911eb01ed0134c83e6526123c9c06e6e759a2227e54256e153ecbd523bd"
+    },
+    {
+      "bytes": 13419,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 2292,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4.py",
+      "sha256": "997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4"
+    },
+    {
+      "bytes": 2230,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9a9d08a0c1d2a880a51d2e8d80a78b4c60e67a749d55312fd64351406b9f93fa.json",
+      "sha256": "9a9d08a0c1d2a880a51d2e8d80a78b4c60e67a749d55312fd64351406b9f93fa"
+    },
+    {
+      "bytes": 14490,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 1868,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9e8eec6c662c9de30082d3f9c5be0e537a60afe23ded7b9474b8262fdc172d15.json",
+      "sha256": "9e8eec6c662c9de30082d3f9c5be0e537a60afe23ded7b9474b8262fdc172d15"
+    },
+    {
+      "bytes": 1214,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a1518f8b1d7c092d31d6ae259e3c687548f4c976eef2a9acb0ddecf56eef384a.md",
+      "sha256": "a1518f8b1d7c092d31d6ae259e3c687548f4c976eef2a9acb0ddecf56eef384a"
+    },
+    {
+      "bytes": 4507,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880.md",
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "bytes": 17568,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1.md",
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+    },
+    {
+      "bytes": 517,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a262b6d7fb1b89c8bb2e2b5a1346ce40e3a5be4ec347661ce68dc4be474233d3.md",
+      "sha256": "a262b6d7fb1b89c8bb2e2b5a1346ce40e3a5be4ec347661ce68dc4be474233d3"
+    },
+    {
+      "bytes": 10972,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a28cdbb1cda8615dd0afa4fb75755fb25d0badac1a63d45e653c7034c5392465.json",
+      "sha256": "a28cdbb1cda8615dd0afa4fb75755fb25d0badac1a63d45e653c7034c5392465"
+    },
+    {
+      "bytes": 1349,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a33e1d166127806e7da387454a9c9ce780e70f839fe2237f0a7de4b8121351ae.md",
+      "sha256": "a33e1d166127806e7da387454a9c9ce780e70f839fe2237f0a7de4b8121351ae"
+    },
+    {
+      "bytes": 2966,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a522894a6c0817ce3f7ea63fa10bae4f250d119ad908fb0d16e67376f19a0c6d.json",
+      "sha256": "a522894a6c0817ce3f7ea63fa10bae4f250d119ad908fb0d16e67376f19a0c6d"
+    },
+    {
+      "bytes": 4327,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a6186f3462439abdbd19c2c65ed3d96cb721907a66c19ea49843990408a79540.json",
+      "sha256": "a6186f3462439abdbd19c2c65ed3d96cb721907a66c19ea49843990408a79540"
+    },
+    {
+      "bytes": 2233,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a65c63ba5430446e57ece8e37eef30e08f7fd55bc234392e01f8e1c24eb224d9.py",
+      "sha256": "a65c63ba5430446e57ece8e37eef30e08f7fd55bc234392e01f8e1c24eb224d9"
+    },
+    {
+      "bytes": 418,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345.json",
+      "sha256": "a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345"
+    },
+    {
+      "bytes": 1775,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a915d94a6248cc7a2b5849ea348ad5660ff1925c60ed03709fd1f673205077cd.json",
+      "sha256": "a915d94a6248cc7a2b5849ea348ad5660ff1925c60ed03709fd1f673205077cd"
+    },
+    {
+      "bytes": 1686,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/aaede3dbd3eb301b511e4f685a4775f58bc9dfef727be41df0f342c6b1ef772e.json",
+      "sha256": "aaede3dbd3eb301b511e4f685a4775f58bc9dfef727be41df0f342c6b1ef772e"
+    },
+    {
+      "bytes": 1801,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ab6f7f42eefc80dad4fc5fb4b471467a2335bdbf30ffc0741e6b160e92ba1555.json",
+      "sha256": "ab6f7f42eefc80dad4fc5fb4b471467a2335bdbf30ffc0741e6b160e92ba1555"
+    },
+    {
+      "bytes": 3714,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/aba5f356e130166caf0884c9693152c13fd826b8ebd74b137445028e29ab435d.json",
+      "sha256": "aba5f356e130166caf0884c9693152c13fd826b8ebd74b137445028e29ab435d"
+    },
+    {
+      "bytes": 1204,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/aca3747330d17ce3ee52977fc9bc9c8499216b9bcd7945303f0f0c36221288aa.json",
+      "sha256": "aca3747330d17ce3ee52977fc9bc9c8499216b9bcd7945303f0f0c36221288aa"
+    },
+    {
+      "bytes": 3075,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e.json",
+      "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+    },
+    {
+      "bytes": 517,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ad6521aa6cf09cf9c952e752af3fdeb769a91f5def9ccd29d2c55916bc97c027.json",
+      "sha256": "ad6521aa6cf09cf9c952e752af3fdeb769a91f5def9ccd29d2c55916bc97c027"
+    },
+    {
+      "bytes": 1512,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ad7c2dbc2fb8865fed6d09ea188b8dafed692160cdd62983b45eca4d6c90200a.json",
+      "sha256": "ad7c2dbc2fb8865fed6d09ea188b8dafed692160cdd62983b45eca4d6c90200a"
+    },
+    {
+      "bytes": 57191,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137.py",
+      "sha256": "af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137"
+    },
+    {
+      "bytes": 3152,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b03bfa093bca761959100ff155302e6674bc04a5c11c92ad721fff70ec7c7993.md",
+      "sha256": "b03bfa093bca761959100ff155302e6674bc04a5c11c92ad721fff70ec7c7993"
+    },
+    {
+      "bytes": 2248,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c.json",
+      "sha256": "b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c"
+    },
+    {
+      "bytes": 1536,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 3667,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473.json",
+      "sha256": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+    },
+    {
+      "bytes": 2180,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 7162,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b544c0e4d369977adf91620dfb19628901e24226e83bb1e7430486d6ab931d6a.md",
+      "sha256": "b544c0e4d369977adf91620dfb19628901e24226e83bb1e7430486d6ab931d6a"
+    },
+    {
+      "bytes": 1632,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b602ebb65b952762881055ce750ab7ec6d297b5442933efd8fad69b435e6b31d.md",
+      "sha256": "b602ebb65b952762881055ce750ab7ec6d297b5442933efd8fad69b435e6b31d"
+    },
+    {
+      "bytes": 19932,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701.md",
+      "sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701"
+    },
+    {
+      "bytes": 6919,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/bd87994c906a47f71c704602e008e84e171247612106787e9b020ee642a9ea6c.json",
+      "sha256": "bd87994c906a47f71c704602e008e84e171247612106787e9b020ee642a9ea6c"
+    },
+    {
+      "bytes": 4975,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 3371,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f.md",
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+    },
+    {
+      "bytes": 739,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/bfffe10e61ca688641da29797243805db68e2d8aec310416ca7761bf2b43b6be.json",
+      "sha256": "bfffe10e61ca688641da29797243805db68e2d8aec310416ca7761bf2b43b6be"
+    },
+    {
+      "bytes": 66336,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2.md",
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "bytes": 2891,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c143bb67cb2bba4db1f2c5096f92d85574fd327b11c88dd3f2e5d14d2ecb99ea.json",
+      "sha256": "c143bb67cb2bba4db1f2c5096f92d85574fd327b11c88dd3f2e5d14d2ecb99ea"
+    },
+    {
+      "bytes": 1811,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c65b06ba6561a9ed01d1586ebf5acc8fa9be877faa746fd393c1b4533e4f0c98.json",
+      "sha256": "c65b06ba6561a9ed01d1586ebf5acc8fa9be877faa746fd393c1b4533e4f0c98"
+    },
+    {
+      "bytes": 88,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e.py",
+      "sha256": "c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e"
+    },
+    {
+      "bytes": 14548,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c9174369fd3d3143b570b8708d912c4c3f330871a7d97e561fa35eb1b724eaa4.md",
+      "sha256": "c9174369fd3d3143b570b8708d912c4c3f330871a7d97e561fa35eb1b724eaa4"
+    },
+    {
+      "bytes": 1011,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cac3f5741116c3d1c044028980a901dded3b2696c3830d7a4bf24836d503351f.json",
+      "sha256": "cac3f5741116c3d1c044028980a901dded3b2696c3830d7a4bf24836d503351f"
+    },
+    {
+      "bytes": 5394,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9.md",
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9"
+    },
+    {
+      "bytes": 5321,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726.json",
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "bytes": 36324,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875.md",
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "bytes": 2567,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd.json",
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd"
+    },
+    {
+      "bytes": 1574,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3.py",
+      "sha256": "d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3"
+    },
+    {
+      "bytes": 415,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d6836428c45b33eb05bcac68f0da85c9e13312fa9346ac5b18861e1bd3335b5f.json",
+      "sha256": "d6836428c45b33eb05bcac68f0da85c9e13312fa9346ac5b18861e1bd3335b5f"
+    },
+    {
+      "bytes": 2594,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62.json",
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    },
+    {
+      "bytes": 1542,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c.json",
+      "sha256": "d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c"
+    },
+    {
+      "bytes": 1153,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/dae44f200f62b1485ddb69418bc586a0daa9f671bcc13ca349a40571ef0e9ea9.json",
+      "sha256": "dae44f200f62b1485ddb69418bc586a0daa9f671bcc13ca349a40571ef0e9ea9"
+    },
+    {
+      "bytes": 2444,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/daf6bcf13818b36ee7830e9e0525a2c0c8cf149710b801e6649133da45f803c7.json",
+      "sha256": "daf6bcf13818b36ee7830e9e0525a2c0c8cf149710b801e6649133da45f803c7"
+    },
+    {
+      "bytes": 1806,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/db122322ece57887265783eb373667d5070a713f9a52da796914e699152faf69.json",
+      "sha256": "db122322ece57887265783eb373667d5070a713f9a52da796914e699152faf69"
+    },
+    {
+      "bytes": 1715,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/dc8920f79e2c73702d27b94b80758b2324aeb9c520c7180a08c5fcdfcd803249.py",
+      "sha256": "dc8920f79e2c73702d27b94b80758b2324aeb9c520c7180a08c5fcdfcd803249"
+    },
+    {
+      "bytes": 596,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/de177bf9b05e32866fb90adfe9a8e80051cf8622df1813c4dee6e65e1478b446.blob",
+      "sha256": "de177bf9b05e32866fb90adfe9a8e80051cf8622df1813c4dee6e65e1478b446"
+    },
+    {
+      "bytes": 6317,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e.json",
+      "sha256": "de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e"
+    },
+    {
+      "bytes": 2859,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262.json",
+      "sha256": "dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262"
+    },
+    {
+      "bytes": 1783,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/df42a50f7d4e1a141c33b943d00b1d26b598e84533a955d516dd376c1eafaf67.json",
+      "sha256": "df42a50f7d4e1a141c33b943d00b1d26b598e84533a955d516dd376c1eafaf67"
+    },
+    {
+      "bytes": 4479,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548.py",
+      "sha256": "e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548"
+    },
+    {
+      "bytes": 7701,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5.md",
+      "sha256": "e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 931,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2.json",
+      "sha256": "e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2"
+    },
+    {
+      "bytes": 7196,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b.md",
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "bytes": 1906,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e56ff8d79a6d5bec3d4098036128f9c68daac05c7521ba6ce3536ca522cdf5a3.json",
+      "sha256": "e56ff8d79a6d5bec3d4098036128f9c68daac05c7521ba6ce3536ca522cdf5a3"
+    },
+    {
+      "bytes": 33807,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/eb4bd83b1175bbdd4434dff6e1e9a20e62374959b486755bab20d7b90edfb2f2.md",
+      "sha256": "eb4bd83b1175bbdd4434dff6e1e9a20e62374959b486755bab20d7b90edfb2f2"
+    },
+    {
+      "bytes": 2170,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f04a35fb7dba1c20f0908f95ac41e8e13cff72ffa451583930b409a1a4bb8a72.md",
+      "sha256": "f04a35fb7dba1c20f0908f95ac41e8e13cff72ffa451583930b409a1a4bb8a72"
+    },
+    {
+      "bytes": 3280,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f07c6d1069c8feed48c5859968bb1b05a19c13e44e3d66d9db393b18c97d5ab0.md",
+      "sha256": "f07c6d1069c8feed48c5859968bb1b05a19c13e44e3d66d9db393b18c97d5ab0"
+    },
+    {
+      "bytes": 2170,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f07f751c93d25bd6119cd00373b541db050f5e60e4a4765b91b2276e3f2a5e1f.json",
+      "sha256": "f07f751c93d25bd6119cd00373b541db050f5e60e4a4765b91b2276e3f2a5e1f"
+    },
+    {
+      "bytes": 11765,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583.json",
+      "sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583"
+    },
+    {
+      "bytes": 15735,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f.md",
+      "sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f"
+    },
+    {
+      "bytes": 410,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95.json",
+      "sha256": "f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95"
+    },
+    {
+      "bytes": 1676,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f62e621034d56367ebbadadd47048d4bfec90beb4161e8eaa69e4a001859da98.json",
+      "sha256": "f62e621034d56367ebbadadd47048d4bfec90beb4161e8eaa69e4a001859da98"
+    },
+    {
+      "bytes": 3388,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f81d0bf7b9bc0317647765df726408ca2992ef5b0ab48c388a16a6c0ee577d68.json",
+      "sha256": "f81d0bf7b9bc0317647765df726408ca2992ef5b0ab48c388a16a6c0ee577d68"
+    },
+    {
+      "bytes": 1861,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2.py",
+      "sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2"
+    },
+    {
+      "bytes": 1265,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "bytes": 2440,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f9e2c8dee3d50722119baaf35cb16feacc69e6571445bd45599bd6a436f62a83.py",
+      "sha256": "f9e2c8dee3d50722119baaf35cb16feacc69e6571445bd45599bd6a436f62a83"
+    },
+    {
+      "bytes": 1766,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fa701f7e55fd4b27a7397ba04d4c7d6929bdee1b236c79a6dffdb568640eb1e9.json",
+      "sha256": "fa701f7e55fd4b27a7397ba04d4c7d6929bdee1b236c79a6dffdb568640eb1e9"
+    },
+    {
+      "bytes": 969,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb5625d541660c3f61264d5d6ae3f5647b45cafd18ba5b78b216ac3709de0305.json",
+      "sha256": "fb5625d541660c3f61264d5d6ae3f5647b45cafd18ba5b78b216ac3709de0305"
+    },
+    {
+      "bytes": 4734,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21.md",
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "bytes": 1184,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb9ae0f100fd03129ebdd02eb3e721191c82bb5a80ff46f693a7795b3595504e.json",
+      "sha256": "fb9ae0f100fd03129ebdd02eb3e721191c82bb5a80ff46f693a7795b3595504e"
+    },
+    {
+      "bytes": 6999,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fbd9c4471e0869bc260f26d608ca96b653cd3295f89c26a8359355fd1964a8a5.md",
+      "sha256": "fbd9c4471e0869bc260f26d608ca96b653cd3295f89c26a8359355fd1964a8a5"
+    },
+    {
+      "bytes": 853,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fea82c7d1d46341faf17d061d0a55ab74f8fd331b2ebb0cce4845f582a418324.blob",
+      "sha256": "fea82c7d1d46341faf17d061d0a55ab74f8fd331b2ebb0cce4845f582a418324"
+    },
+    {
+      "bytes": 7791,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3.json",
+      "sha256": "ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3"
+    },
+    {
+      "bytes": 6139,
+      "path": "source_snapshot/proposal/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ffd9b6c0d25477182ba8fe79bc8bbfd55748b4ad43d6e8e6fba9787c60ec681b.py",
+      "sha256": "ffd9b6c0d25477182ba8fe79bc8bbfd55748b4ad43d6e8e6fba9787c60ec681b"
+    },
+    {
+      "bytes": 149482,
+      "path": "source_snapshot/proposal/docs/BUS_RESOURCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "860d6dbdab283c054a08053e7b8622ad7e441e2335bdd6ddae064f2df6fd5030"
+    },
+    {
+      "bytes": 57626,
+      "path": "source_snapshot/proposal/scripts/bus_resource_bounds_2026_10_16.py",
+      "sha256": "6372d054068a987309b7d7fc4314899ec1f44d6a236b0a3d9d2842ea0a3ca99e"
+    },
+    {
+      "bytes": 1912,
+      "path": "source_snapshot/record_metadata.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 1050,
+      "path": "source_snapshot/recover_build_01.py",
+      "sha256": "ed075fac1d5953cd1c76cfdcff0080262fb4611ad1443f50388e2db4ba79ad48"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/seal.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "source_snapshot/seal.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4006,
+      "path": "source_snapshot/seal_packet.py",
+      "sha256": "363d40676dda5f96e73183d724f58f7951e4b314eb77f68170ccefe794685b47"
+    },
+    {
+      "bytes": 4006,
+      "path": "source_snapshot/seal_source_at_launch.py",
+      "sha256": "363d40676dda5f96e73183d724f58f7951e4b314eb77f68170ccefe794685b47"
+    },
+    {
+      "bytes": 15388,
+      "path": "source_snapshot/wrapper.md",
+      "sha256": "d9c1c1fde0edd4ec66239443fe5e71564cd40c774ea0a26e06998259ee262d97"
+    },
+    {
+      "bytes": 10355,
+      "path": "validate_proposal.py",
+      "sha256": "2648f3c7ef1a3bb5b9811c742f6b518bd5cdad17224fbdc23b1adb51b621ea02"
+    },
+    {
+      "bytes": 84,
+      "path": "verify_bus_resource.py",
+      "sha256": "0f71e9b9d4a955d05851ff914dafdad41c9655e061bf8025790f9d928004cc27"
+    },
+    {
+      "bytes": 15303,
+      "path": "write_delivery.py",
+      "sha256": "00e067965471e4820ab2579f20b474c78f95587329e2d1fea6108bc278400509"
+    }
+  ],
+  "kind": "source-only integration proposal",
+  "retained_audit": false,
+  "source_review_sha256": "c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9",
+  "utc": "2026-10-16T14:02:31.012586+00:00"
+}

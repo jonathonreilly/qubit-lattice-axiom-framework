@@ -1,0 +1,22 @@
+from pathlib import Path
+import hashlib
+import json
+from datetime import datetime, timezone
+
+root = Path(__file__).resolve().parent
+names = ['DERIVATION.md', 'freeze_initial.py']
+members = []
+for name in names:
+    data = (root / name).read_bytes()
+    members.append({'path': name, 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()})
+record = {
+    'frozen_at_utc': datetime.now(timezone.utc).isoformat(),
+    'status': 'root proposal; independently unchecked; not installed',
+    'independence': 'Written before root inspected new bounded-strength or runtime-energy worker scientific results.',
+    'members': members,
+}
+destination = root / 'INITIAL_FREEZE.json'
+with destination.open('x') as out:
+    json.dump(record, out, indent=2)
+    out.write('\n')
+print(json.dumps(record, indent=2))

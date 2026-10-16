@@ -1,0 +1,162 @@
+"""Bounded author algebra sanity checks; not a proof or independent review.
+
+Limits: source N=2..7, full source dimension <=128, bus one-particle
+dimension 30, fluctuation isometry <=375 x 3; no full proposed-bus
+many-body simulation or asymptotic validation.
+"""
+import json
+import math
+import numpy as np
+
+tol=2e-9
+checks=[]
+def record(name,error,threshold=tol,**extra):
+    row=dict(name=name,error=float(error),threshold=threshold,passed=bool(error<threshold),**extra)
+    checks.append(row)
+    print(json.dumps(row),flush=True)
+    if not row['passed']:
+        raise AssertionError(name)
+
+for N in range(2,8):
+    dim=2**N
+    lap=np.zeros((dim,dim))
+    lower=np.zeros((dim,dim))
+    for x in range(dim):
+        if x&1: lower[x^1,x]=1
+        for j in range(N-1):
+            y=x
+            if ((x>>j)&1)!=((x>>(j+1))&1):
+                y=x^(1<<j)^(1<<(j+1))
+            lap[x,x]+=0.73
+            lap[y,x]-=0.73
+    dicke=np.zeros((dim,N+1))
+    for x in range(dim):
+        k=x.bit_count()
+        dicke[x,k]=1/math.sqrt(math.comb(N,k))
+    chi=lower@dicke[:,-1]-dicke@(dicke.T@lower@dicke[:,-1])
+    for c in (0.37,-0.51,1.13):
+        inv=np.linalg.inv(lap+c*np.eye(dim))
+        reduced=dicke.T@lower.T@inv@lower@dicke
+        b=N/(N-1)*(chi@inv@chi)
+        expected=np.diag([k*(N-k+1)/(N*N*c)+b*k*(k-1)/(N*N) for k in range(N+1)])
+        record('source_resolvent',np.linalg.norm(reduced-expected,2),N=N,c=c,dimension=dim)
+    density=np.diag([sum(((x>>j)&1)*((x>>(j+1))&1) for j in range(N-1)) for x in range(dim)])
+    expected=np.diag([k*(k-1)/N for k in range(N+1)])
+    record('source_density_counterterm',np.linalg.norm(dicke.T@density@dicke-expected,2),N=N)
+
+# Complete retained-source fluctuation isometry in the symmetric code.
+L=np.array([[.31,.2+.13j,-.07+.08j],[.2-.13j,-.12,.17-.09j],[-.07-.08j,.17+.09j,.4]])
+pairs=[(1,0),(2,0),(2,1)]
+tstar=1.7
+for N in range(2,5):
+    phases=[.23,.77,-.41]
+    alphas=[np.array([math.sqrt(math.comb(N,k))*np.exp(1j*k*phi)/2**(N/2) for k in range(N+1)]) for phi in phases]
+    sm=np.zeros((N+1,N+1))
+    for k in range(1,N+1): sm[k-1,k]=math.sqrt(k*(N-k+1))/N
+    residual=np.zeros((3*(N+1)**3,3),complex)
+    mags=np.zeros((3,3))
+    for l,(a,b) in enumerate(pairs):
+        kap=2*abs(L[a,b])/tstar*np.exp(1j*(l+.3))
+        mags[a,b]=mags[b,a]=abs(kap)
+        aa=np.zeros((3,3),complex); aa[a,b]=kap
+        for op,old in ((sm,aa),(sm.T,aa.conj().T)):
+            dev=op@alphas[l]-np.vdot(alphas[l],op@alphas[l])*alphas[l]
+            vec=np.array([1.],complex)
+            for j in range(3): vec=np.kron(vec,dev if j==l else alphas[j])
+            residual+=np.kron(vec[:,None],old)
+    expected=math.sqrt(np.max(np.sum(mags*mags,axis=1))/(4*N))
+    record('all_source_fluctuation_norm',abs(np.linalg.norm(residual,2)-expected),N=N,rows=residual.shape[0],expected=expected)
+
+# One-particle calibration/routing algebra, deliberately not the full gap.
+rng=np.random.default_rng(91827)
+raw=rng.normal(size=(4,4))+1j*rng.normal(size=(4,4))
+U,_=np.linalg.qr(raw)
+X=np.array([[0.,1.],[1.,0.]])
+B=U.conj().T@np.kron(X,np.eye(2))@U
+energies=np.array([0.,1.,3.2,7.4])
+delta=.03
+mu=np.r_[energies[1:]-delta,energies[1:]+delta]
+def fvec(z):
+    f=np.array([sum(abs(B[b,a])**2/(energies[a]-energies[b]-z) for b in range(4)) for a in range(4)])
+    return f[1:]-f[0]
+fp=np.column_stack([fvec(z) for z in mu[:3]])
+fm=np.column_stack([fvec(z) for z in mu[3:]])
+dd=np.diag(delta/np.abs(B[0,1:])**2)
+vp=fp@dd; vm=fm@dd
+nullp=dd@(-np.linalg.solve(vp,vm)@np.ones(3))
+nullm=dd@np.ones(3)
+assert np.min(nullp)>0
+y=np.array([.12,-.08,.09])
+base=np.linalg.solve(fp,y)
+lam=max(1.,max((1.-base)/nullp))
+x0=base+lam*nullp
+wm=lam*nullm
+def jacobi(weights):
+    first=np.sqrt(weights/sum(weights))
+    basis=[]; v=first
+    for j in range(len(mu)):
+        if j:
+            v=mu*basis[-1]
+            for _ in range(2):
+                for z in basis: v-=np.vdot(z,v)*z
+            v/=np.linalg.norm(v)
+        basis.append(v.copy())
+    Q=np.column_stack(basis)
+    J=Q.T@(mu[:,None]*Q)
+    # Only retain the actual Jacobi tridiagonal after roundoff.
+    return np.diag(np.diag(J))+np.diag(np.diag(J,1),1)+np.diag(np.diag(J,-1),-1)
+rho=.005; nu=12.; m=6; q=6; dim=m+4*q
+edges=[]
+for j in range(m-1): edges.append((j,j+1))
+route=[]
+prev=m-1
+for j in range(3*q):
+    current=m+j; route.append((prev,current)); prev=current
+leaves=[]
+for l in range(q):
+    leaf=m+3*q+l; leaves.append(leaf); route.append((m+3*(l+1)-1,leaf))
+def bus(x):
+    mat=np.diag([0.]*m+[nu]*(4*q))
+    mat[:m,:m]=jacobi(np.r_[x,wm])
+    for a,b in route: mat[a,b]=mat[b,a]=rho
+    return mat
+def calibration(x):
+    mat=bus(x); S=sum(x)+sum(wm)
+    vals=[]
+    for a in range(4):
+        vals.append(S*sum(abs(B[b,a])**2*np.linalg.inv((energies[a]-energies[b])*np.eye(dim)-mat)[0,0] for b in range(4)))
+    return np.array(vals[1:])-vals[0]
+x=x0.copy()
+for iteration in range(12):
+    remainder=calibration(x)-(fp@x+fm@wm)
+    x=x0-np.linalg.solve(fp,remainder)
+assert min(x)>0
+record('routed_diagonal_calibration',np.linalg.norm(calibration(x)-y),threshold=2e-8,dimension=dim,iterations=12)
+mat=bus(x)
+record('jacobi_root_measure',np.linalg.norm(np.linalg.eigvalsh(mat[:m,:m])-np.sort(mu)),threshold=2e-9)
+adj={j:[] for j in range(dim)}
+for a,b in edges+route: adj[a].append(b); adj[b].append(a)
+def path_to(end):
+    stack=[(0,[0])]
+    while stack:
+        u,path=stack.pop()
+        if u==end:return path
+        for v in adj[u]:
+            if v not in path:stack.append((v,path+[v]))
+for l,(a,b) in enumerate([(a,b) for a in range(4) for b in range(a)]):
+    z=energies[a]-energies[b]
+    path=path_to(leaves[l]); remain=set(range(dim))-set(path); components=[]
+    while remain:
+        seed=next(iter(remain)); remain.remove(seed); comp=[seed]; stack=[seed]
+        while stack:
+            u=stack.pop()
+            for v in adj[u]:
+                if v in remain:remain.remove(v);comp.append(v);stack.append(v)
+        components.append(comp)
+    numerator=math.prod(mat[u,v] for u,v in zip(path,path[1:]))
+    for comp in components:numerator*=np.linalg.det(z*np.eye(len(comp))-mat[np.ix_(comp,comp)])
+    cofactor=numerator/np.linalg.det(z*np.eye(dim)-mat)
+    direct=np.linalg.inv(z*np.eye(dim)-mat)[0,leaves[l]]
+    assert direct!=0 and cofactor!=0
+    record('tree_response_cofactor',abs(direct/cofactor-1),threshold=2e-8,pair=[a,b],magnitude=abs(direct))
+print(json.dumps(dict(summary='all bounded author algebra checks passed',checks=len(checks),limits=dict(max_source_N=7,max_full_source_dimension=128,bus_one_particle_dimension=30,max_fluctuation_rows=375),full_bus_many_body_gap_checked=False,independent=False)),flush=True)

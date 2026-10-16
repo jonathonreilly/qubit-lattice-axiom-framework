@@ -1,0 +1,82 @@
+"""Finite coordinate and exact correlated-input discriminators, not the all-box proof."""
+import itertools
+import json
+import platform
+import sympy as s
+
+def snake(shape,corner):
+    a,b,c=shape
+    points=[]
+    for i in range(a*b*c):
+        z,r=divmod(i,a*b)
+        j=r if z%2==0 else a*b-1-r
+        y,k=divmod(j,a)
+        x=k if y%2==0 else a-1-k
+        points.append((x,y,z))
+    reflected=[tuple(v if corner[l]==0 else shape[l]-1-v for l,v in enumerate(p)) for p in points]
+    return list(reversed(reflected))
+
+def defects(path,shape,corner):
+    grid=set(itertools.product(*(range(n) for n in shape)))
+    bad=[]
+    if len(path)!=len(grid) or set(path)!=grid or len(set(path))!=len(path):bad.append('coverage')
+    if path[-1]!=corner:bad.append('endpoint')
+    if any(sum(abs(a-b) for a,b in zip(p,q))!=1 for p,q in zip(path,path[1:])):bad.append('adjacency')
+    return bad
+
+cases=0;vertices=0;singleton_shapes=0
+for shape in itertools.product(range(1,6),repeat=3):
+    if 1 in shape:singleton_shapes+=1
+    for corner in itertools.product(*(sorted(set([0,n-1])) for n in shape)):
+        path=snake(shape,corner)
+        assert not defects(path,shape,corner)
+        cases+=1;vertices+=len(path)
+
+# Omit the full plane reversal between layers: a real cross-layer coordinate fault.
+bad=[]
+for z in range(2):
+    for y in range(2):
+        for x in (range(2) if y%2==0 else reversed(range(2))):bad.append((x,y,z))
+bad=list(reversed(bad))
+bad_defects=defects(bad,(2,2,2),(0,0,0))
+assert 'adjacency' in bad_defects
+upper=(1,1,1)
+negative_neighbors=[tuple(v-(j==axis) for j,v in enumerate(upper)) for axis in range(3)]
+assert all(all(0<=v<2 for v in point) for point in negative_neighbors)
+
+# Exact full operators, noncommuting old gate/drift, and a three-way correlated input.
+I=s.I
+H=s.diag(0,1); ident=s.eye(2)
+W=s.Matrix([[1,I],[I,1]])/s.sqrt(2)
+T=s.pi/3;u=s.pi/2
+Hs=s.kronecker_product(H,ident);Ws=s.kronecker_product(W,ident)
+direct=(-I*u*Hs).exp()*Ws*(-I*T*Hs).exp()
+old=(-I*u*H).exp()*W*(-I*T*H).exp()
+factored=s.kronecker_product(old,ident)
+simplify=lambda M:M.applyfunc(s.simplify)
+assert simplify(direct-factored)==s.zeros(4)
+assert simplify(W.conjugate().T*W-ident)==s.zeros(2)
+psi=s.zeros(8,1);psi[0]=1/s.sqrt(2);psi[7]=1/s.sqrt(2)
+phi=s.Matrix([1,I])/s.sqrt(2)
+out_direct=s.kronecker_product(phi,s.kronecker_product(direct,ident)*psi)
+out_factored=s.kronecker_product(phi,s.kronecker_product(old,ident,ident)*psi)
+assert simplify(out_direct-out_factored)==s.zeros(16,1)
+assert s.simplify((out_direct.conjugate().T*out_direct)[0])==1
+
+rho=psi*psi.conjugate().T
+dephased=s.diag(*rho.diagonal())
+loss=s.simplify(s.trace((rho-dephased).conjugate().T*(rho-dephased)))
+assert loss!=0
+nonidle=s.kronecker_product(ident,-I*s.diag(1,-1),ident)*psi
+overlap=s.simplify((psi.conjugate().T*nonidle)[0])
+assert overlap==0
+
+print(json.dumps({'python':platform.python_version(),'sympy':s.__version__,
+ 'path_shapes':'all a,b,c in 1..5 and every distinct coordinate corner',
+ 'box_shapes':125,'singleton_axis_shapes':singleton_shapes,'corner_cases':cases,'visited_vertices':vertices,
+ 'missing_layer_reversal_mutant':bad_defects,
+ 'upper_corner_negative_neighbors_all_inside':negative_neighbors,
+ 'exact_operator_factorization_residual_zero':True,'exact_correlated_full_output_residual_zero':True,
+ 'correlation_erasure_squared_frobenius_error':str(loss),
+ 'nonidle_filler_overlap_with_claimed_output':str(overlap),'nonidle_pure_state_trace_norm_distance':2,
+ 'scope':'Finite enumeration and exact small matrices; universal claims come from analytic review.'},indent=2))

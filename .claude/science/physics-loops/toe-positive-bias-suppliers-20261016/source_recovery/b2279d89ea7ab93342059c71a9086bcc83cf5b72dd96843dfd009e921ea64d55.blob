@@ -1,0 +1,50 @@
+"""Exact Pauli reconstruction before reading the edge-bias candidate."""
+import itertools,json
+import sympy as s
+
+I=s.eye(2);X=s.Matrix([[0,1],[1,0]]);Y=s.Matrix([[0,-s.I],[s.I,0]]);Z=s.diag(1,-1)
+II=s.eye(4);XX=s.kronecker_product(X,X);YY=s.kronecker_product(Y,Y);ZZ=s.kronecker_product(Z,Z)
+H=3*II+XX+YY+ZZ
+C1=2*(II+YY);C2=8*(II+ZZ);C=C1+C2
+B=s.kronecker_product(X+2*Y+3*Z,I)
+lam=s.symbols('lambda',positive=True,real=True)
+basis=s.Matrix.hstack(s.Matrix([0,1,-1,0]),s.Matrix([0,1,1,0]),s.Matrix([1,0,0,1]),s.Matrix([1,0,0,-1]))/s.sqrt(2)
+assert basis.conjugate().T*basis==II
+energy=[s.Integer(0),4+4*lam,4+16*lam,4+20*lam]
+assert s.simplify(basis.conjugate().T*(H+lam*C)*basis-s.diag(*energy))==s.zeros(4)
+port=s.simplify(basis.conjugate().T*B*basis)
+expected=s.Matrix([[0,3,-2*s.I,-1],[3,0,1,2*s.I],[2*s.I,1,0,3],[-1,-2*s.I,3,0]])
+assert port==expected and B*B==14*II
+assert all(port[a,b]!=0 for a in range(4) for b in range(4) if a!=b)
+gaps={f'{a}{b}':s.expand(energy[a]-energy[b]) for a in range(4) for b in range(a)}
+collisions=[]
+for (name1,g1),(name2,g2) in itertools.combinations(gaps.items(),2):
+    for root in s.solve(g1-g2,lam):
+        if root.is_positive:collisions.append({'lambda':str(root),'pairs':[name1,name2],'common_gap':str(g1.subs(lam,root))})
+assert {row['lambda'] for row in collisions}=={'1/3','1/2'} and len(collisions)==2
+assert H.eigenvals()=={s.Integer(0):1,s.Integer(4):3}
+assert C1.eigenvals()=={s.Integer(0):2,s.Integer(4):2}
+assert C2.eigenvals()=={s.Integer(0):2,s.Integer(16):2}
+assert C.eigenvals()=={s.Integer(0):1,s.Integer(4):1,s.Integer(16):1,s.Integer(20):1}
+assert (C-10*II).eigenvals()=={s.Integer(-10):1,s.Integer(-6):1,s.Integer(6):1,s.Integer(10):1}
+assert set(g.subs(lam,1) for g in gaps.values())=={4,8,12,16,20,24}
+output={
+    'status':'exact equation-level check before candidate exposure; same model',
+    'basis':['Psi-','Psi+','Phi+','Phi-'],
+    'energies':[str(e) for e in energy],
+    'positive_gaps':{name:str(g) for name,g in gaps.items()},
+    'all_positive_gap_collisions':collisions,
+    'port_matrix':[[str(x) for x in port.row(j)] for j in range(4)],
+    'offdiagonal_magnitudes':[str(s.Abs(port[a,b])) for a in range(4) for b in range(a)],
+    'port_norm':'sqrt(14)',
+    'lambda_1_energies':[str(e.subs(lam,1)) for e in energy],
+    'lambda_1_positive_gaps':sorted(int(g.subs(lam,1)) for g in gaps.values()),
+    'H_spectrum':{'0':1,'4':3},'C1_spectrum':{'0':2,'4':2},'C2_spectrum':{'0':2,'16':2},
+    'C_spectrum':{'0':1,'4':1,'16':1,'20':1},
+    'added_incident_norm_each_old_endpoint':'20*lambda',
+    'C_normalized_trace':str(s.trace(C)/4),'c_C':10,'a_C':10,'R_C':0,
+    'strong_domain':'lambda>0 excluding 1/3 and 1/2',
+    'access_limit':'Both positive bias blocks act on the existing two-qubit old edge; not an onsite first-qubit bias.',
+    'max_matrix_dimension':4,
+}
+print(json.dumps(output,indent=2))

@@ -1,0 +1,11 @@
+{
+  "kind": "source_only_unbound_draft",
+  "canonical_integration": null,
+  "actual_git_base": null,
+  "root_publication_review": null,
+  "primary_execution": null,
+  "publication": null,
+  "retained_audit": null,
+  "root_supplied_source_base": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+  "root_supplied_source_pr": 9629
+}

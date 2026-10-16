@@ -1,0 +1,59 @@
+{
+  "frozen_utc": "2026-10-16T13:14:20.663237+00:00",
+  "kind": "final exposed analytical recovery review",
+  "scientific_executions": 0,
+  "member_count": 10,
+  "files": [
+    {
+      "path": "CHECKPOINT.json",
+      "bytes": 1449,
+      "sha256": "39d9298c7c923dd014e036354070c75ff23e4a6358caae4d95bdca543300eb04"
+    },
+    {
+      "path": "PROGRESS_01.md",
+      "bytes": 1029,
+      "sha256": "6f24a4e561ce4f9ba0904af2c47b38c399b4c127d087583cc6af7ff9b623fd7d"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 15321,
+      "sha256": "5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 2110,
+      "sha256": "726f1374a4286f7b95868f540d402bc7221cbd495b4e7fab655a5c650bc1e5d8"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 2081,
+      "sha256": "22a98446aa68694b780af60210e57ff253054fad2686838509e0a79ab86d664c"
+    },
+    {
+      "path": "seal.py",
+      "bytes": 3515,
+      "sha256": "abed699ac797df4b322566ab5f3872746fdd227969971fe6146dde874ab55d37"
+    },
+    {
+      "path": "sources/preparation_derivation.md",
+      "bytes": 31003,
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "path": "sources/preparation_qualifications.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "path": "sources/root_sketch.md",
+      "bytes": 6791,
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340"
+    },
+    {
+      "path": "sources/slew_qualifications.md",
+      "bytes": 6990,
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    }
+  ],
+  "scope": "All local packet files except this root FREEZE.json; exact selected source snapshots, not transitive historical archive validation."
+}

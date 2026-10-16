@@ -1,0 +1,124 @@
+"""Bounded dense author sanity checks; not proof or an independent checker.
+
+No theorem code is imported. Full qubit matrices are constructed here directly.
+Limits: N <= 6 source qubits, total matrix dimension <= 128; no compiler search.
+"""
+import json
+import math
+import time
+import numpy as np
+import scipy
+from scipy.linalg import eigh, expm, null_space
+
+started = time.time()
+I = np.eye(2, dtype=complex)
+X = np.array([[0, 1], [1, 0]], dtype=complex)
+Y = np.array([[0, -1j], [1j, 0]], dtype=complex)
+Z = np.diag([1, -1]).astype(complex)
+n = (I-Z)/2
+cases = [
+    dict(N=N, q=q, omega=0.9, r=0.8, z=0.6)
+    for N in [2, 3, 4, 5, 6] for q in [0.001, 0.002]
+] + [dict(N=4, q=0.001, omega=-0.9, r=1.0, z=0.0),
+     dict(N=3, q=0.002, omega=0.9, r=0.0, z=-1.0)]
+print(json.dumps({"role": "author_dense_sanity_only", "numpy": np.__version__,
+                  "scipy": scipy.__version__, "source_qubit_limit": 6,
+                  "matrix_dimension_limit": 128, "cases": cases}))
+
+def kron_all(items):
+    ans = np.array([[1.0+0j]])
+    for item in items:
+        ans = np.kron(ans, item)
+    return ans
+
+def local(op, site, count):
+    return kron_all([op if j == site else I for j in range(count)])
+
+def norm(a):
+    return float(np.linalg.norm(a, ord=2))
+
+failures=[]
+max_scaled=0.0
+for ci, case in enumerate(cases):
+    N,q,omega,r,z=[case[k] for k in ['N','q','omega','r','z']]
+    count=N+1
+    dim=2**count
+    ident=np.eye(dim, dtype=complex)
+    xs=[local(X,j,count) for j in range(count)]
+    ys=[local(Y,j,count) for j in range(count)]
+    zs=[local(Z,j,count) for j in range(count)]
+    ns=[local(n,j,count) for j in range(count)]
+    Jf=1.3
+    hc=-0.4
+    theta=0.7
+    theta0=-0.23
+    phi0=0.37
+    width=0.2
+    Rs=1.5
+    hold=theta/q
+    phase=phi0+omega*hold
+    alpha=np.array([1,np.exp(1j*phase)],dtype=complex)/math.sqrt(2)
+    source=kron_all([alpha]*N).ravel()
+    embed=np.kron(I,source[:,None])
+    lf=np.zeros((dim,dim),dtype=complex)
+    for j in range(1,N):
+        swap=(ident+xs[j]@xs[j+1]+ys[j]@ys[j+1]+zs[j]@zs[j+1])/2
+        lf += Jf*(ident-swap)
+    v=(xs[0]@xs[1]+ys[0]@ys[1])/2
+    a=2*r*v+z*zs[0]
+    old=hc*I+omega*n
+    full_old=hc*ident+omega*ns[0]
+    fields=omega*sum(ns[1:],np.zeros_like(ident))
+    reserve=Rs+N*max(0,-omega)+2*q*r+q*abs(z)
+    installed=(full_old+Rs*ident+lf
+        +sum([omega*ns[j]+max(0,-omega)*ident for j in range(1,count)],np.zeros_like(ident))
+        +2*q*r*(v+ident)+q*(z*zs[0]+abs(z)*ident))
+    algebra=norm(installed-(full_old+fields+lf+q*a+reserve*ident))
+    resonance=norm((full_old+fields)@a-a@(full_old+fields))
+    eval_lf, evec_lf=eigh(lf)
+    p=evec_lf[:,eval_lf<1e-9]@evec_lf[:,eval_lf<1e-9].conj().T
+    gamma=2*Jf/N**2
+    actual_gap=float(np.min(eval_lf[eval_lf>1e-9]))
+    inv=evec_lf[:,eval_lf>1e-9]@np.diag(1/eval_lf[eval_lf>1e-9])@evec_lf[:,eval_lf>1e-9].conj().T
+    corr_x=inv@a@p
+    corr_z=p-q*corr_x
+    residual=(lf+q*a)@corr_z-corr_z@(q*p@a@p)
+    rhs=q*q*(corr_x@(p@a@p)-a@corr_x)
+    corrector_identity=norm(residual-rhs)
+    g=r*math.cos(phase)*X+r*math.sin(phase)*Y+z*Z
+    fluct=norm(p@a@p@embed-embed@g)
+    fluct_expected=r/math.sqrt(N)
+    physical_scalar=float(np.trace(installed).real/dim)
+    scalar_expected=float(np.trace(old).real/2)+Rs+N*abs(omega)/2+(N-1)*Jf/2+2*q*r+q*abs(z)
+    target= np.exp(1j*theta0)*expm(-1j*theta*(r*math.cos(phi0)*X+r*math.sin(phi0)*Y+z*Z))
+    eig,u=eigh(installed)
+    values=[]
+    for s in [0.0,width/2,width]:
+        t=hold+s
+        actual=(u*np.exp(-1j*t*eig))@(u.conj().T@embed)
+        free_alpha=np.array([1,np.exp(1j*(phase-omega*t))],dtype=complex)/math.sqrt(2)
+        free_source=kron_all([free_alpha]*N).ravel()
+        old_target=expm(-1j*s*old)@target@expm(-1j*hold*old)
+        comparator=np.exp(-1j*(reserve*t+theta0))*np.kron(old_target,free_source[:,None])
+        error=norm(actual-comparator)
+        bound=(6+18*q*(hold+width))*q/gamma+q*(hold+width)/math.sqrt(N)+q*width
+        values.append(dict(s=s,error=error,bound=bound))
+        if error>bound+2e-8:
+            failures.append([ci,'isometry_bound',s,error,bound])
+    for name,value,tol in [('algebra',algebra,1e-10),('resonance',resonance,1e-10),
+          ('corrector_identity',corrector_identity,1e-10),
+          ('fluctuation',abs(fluct-fluct_expected),1e-10),
+          ('scalar',abs(physical_scalar-scalar_expected),1e-10)]:
+        if value>tol:
+            failures.append([ci,name,value,tol])
+    if actual_gap+1e-10<gamma:
+        failures.append([ci,'gap',actual_gap,gamma])
+    print(json.dumps(dict(case=ci,parameters=case,algebra=algebra,resonance=resonance,
+        corrector_identity=corrector_identity,gap=actual_gap,gap_lower=gamma,
+        fluctuation=fluct,fluctuation_formula=fluct_expected,
+        scalar=physical_scalar,scalar_formula=scalar_expected,observations=values)))
+    if time.time()-started>120:
+        raise RuntimeError('Declared 120-second internal wall-time limit exceeded')
+print(json.dumps(dict(failures=failures,elapsed_seconds=time.time()-started,
+                     conclusion='finite author checks only; no general or independent proof')))
+raise SystemExit(1 if failures else 0)

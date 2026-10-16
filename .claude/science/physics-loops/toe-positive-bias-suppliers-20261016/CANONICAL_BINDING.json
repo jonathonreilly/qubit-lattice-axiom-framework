@@ -1,0 +1,38 @@
+{
+  "kind": "actual_positive_bias_suppliers_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+  "actual_git_base": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+  "actual_branch_at_binding": "physics-loop/toe-bus-joint-energy-moments-20261016",
+  "bound_note_sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/19204eac9080b1b5f4f3b359943043e54592914452579bcb8b451ad234bbc485.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/1ed3be8dbe85527bc5093042565efbec1f6bc77aecc8c02d21b8bea4e4849efb.py",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/21ebbc8b9b7118d09ac8ced96f35df94c35ac99f3b389ae13b363985b1a69da0.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/3b9c3d151b106c76141dcd26e202e58eacb90deff96cf779b75ca9af48a8ba14.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/56382b6e11f2884331910112d085b9c616d7f1b3f877795eb957cd8e2008b51f.py",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/599f13b41038fb53b326e766ad772305dfc4f0501721d52a51534ca86bc3ac42.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/5bceb339d628fc71fea41d024ee8bce187681a44f07c44028b952f2203c97dcd.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/6e7be60f5ec317c3ec883f84a23a0eb2e5bed483ad11eb8c605235d2c7f2d326.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/792c7c7142442ba82eaf2bcffc903d9c4cfd9e9765c1b7e6654c3bda5fbd742b.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/8b8c172a101b5cf35a4f542b55d7c5c3249da99dd78a896078805518dfe12d53.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/9060f747444de64723815bf0195f5033606245f234478b9299cef93694663751.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/9d374526afd3aa5d45c2e1296ab22b12f3fed16f251c51481374d1fd857fb033.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/a237db4b5f4c32b6b4be1059a7b17fa195e107e332eca3c9e90afcf777817ea0.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/ad84d2d831321a2e9b1dde778ebc36784c1336534a33582407ff95ac40139717.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/cb53d252188cbf016fbfc055115e954b42ae7193d1a235097e99818707b1abc6.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e4be0d1225bf99f835e2c7d803428c15b99638d32e732989fc1c290780792c42.py"
+  ],
+  "canonical_parent_sha256": {
+    "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+  },
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/ad84d2d831321a2e9b1dde778ebc36784c1336534a33582407ff95ac40139717.json",
+    "bytes": 10950,
+    "sha256": "ad84d2d831321a2e9b1dde778ebc36784c1336534a33582407ff95ac40139717"
+  }
+}

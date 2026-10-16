@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-10-16T13:14:20.660414+00:00",
+  "status": "complete exposed analytical review; root acceptance pending",
+  "sketch_sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340",
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "current_sources_verified": 4,
+  "conclusion": "Full original C and vacuum E are restored at the declared endpoint within the complete trace budget, conditionally on the new complement amplitude range and inherited premises.",
+  "qualifications": [
+    "Coefficient u in[0,2] is an additional physical-control premise.",
+    "Separate positive source generator from its unitary; scalar cancellation is a full-unitary endpoint identity.",
+    "Use the actual runtime output phase in F_out inverse and retain all actual reserves.",
+    "Uniform target certificate and incident bound must precede duration/program selection.",
+    "All D/C/R correlations and full-space errors remain included; initial independent vacuum E is paid once.",
+    "Endpoint recovery and a finite trace telescope do not supply autonomous halt, infinite reuse or physical drive resources."
+  ],
+  "analytic_failed_alternative": "Using F_phi inverse without runtime phase update leaves E at trace distance2 sqrt(1-cos(omega*t/2)^(2N)) in the one-source endpoint comparison.",
+  "other_author_recovery_files_read": false,
+  "editable_prompt_files_changed": [],
+  "canonical_or_git_actions": false
+}

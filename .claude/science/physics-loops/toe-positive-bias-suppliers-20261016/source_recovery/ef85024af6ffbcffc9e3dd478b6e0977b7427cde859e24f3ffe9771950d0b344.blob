@@ -1,0 +1,106 @@
+{
+  "verified_utc": "2026-10-16T02:19:02.114738+00:00",
+  "kind": "File and receipt integrity only; not a mathematical verdict",
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/FREEZE.json",
+    "bytes": 5125,
+    "sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7"
+  },
+  "candidate_members_verified": 22,
+  "parent_snapshot_original_pairs": [
+    {
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/static_bias_transfer_candidate__DERIVATION.md",
+        "bytes": 29555,
+        "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+      },
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/DERIVATION.md",
+        "bytes": 29555,
+        "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/static_bias_transfer_root_review__QUALIFIED_ACCEPTANCE.json",
+        "bytes": 5915,
+        "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+      },
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+        "bytes": 5915,
+        "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/static_bias_transfer_root_review__FINAL_QUALIFICATIONS.md",
+        "bytes": 4450,
+        "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+      },
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/FINAL_QUALIFICATIONS.md",
+        "bytes": 4450,
+        "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/strongly_regular_bus_root_review__QUALIFIED_ACCEPTANCE.json",
+        "bytes": 5321,
+        "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+      },
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+        "bytes": 5321,
+        "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/strongly_regular_bus_root_review__FINAL_QUALIFICATIONS.md",
+        "bytes": 4507,
+        "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+      },
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+        "bytes": 4507,
+        "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/positive_chain_root_proposal__PROPOSED_LEMMAS.md",
+        "bytes": 4941,
+        "sha256": "7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb"
+      },
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_proposal/PROPOSED_LEMMAS.md",
+        "bytes": 4941,
+        "sha256": "7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/positive_chain_root_proposal__FREEZE.json",
+        "bytes": 421,
+        "sha256": "6cec718597b8c7a16b013768253596e9e3aff91f141b5796fde67fc1e60f9424"
+      },
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_proposal/FREEZE.json",
+        "bytes": 421,
+        "sha256": "6cec718597b8c7a16b013768253596e9e3aff91f141b5796fde67fc1e60f9424"
+      }
+    }
+  ],
+  "reviewer_execution_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/EXECUTION.json",
+    "bytes": 1846,
+    "sha256": "d1277402d3440ac391fcc32b89729cae996da76dc6f4e07812d72eb83e98c8a6"
+  },
+  "proof_before_code_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/PROOF_FINDINGS_FREEZE.json",
+    "bytes": 385,
+    "sha256": "ba5023e8f2a9b649e92bf58ad2547ef8021e9d44237c5f5a23cbb6e56bbac3b4"
+  }
+}

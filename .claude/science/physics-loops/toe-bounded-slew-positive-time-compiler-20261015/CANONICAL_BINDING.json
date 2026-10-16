@@ -1,0 +1,40 @@
+{
+  "kind": "actual_bounded_slew_compiler_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "actual_git_base": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "actual_branch_at_binding": "physics-loop/toe-autonomous-compiler-composition-20261015",
+  "bound_note_sha256": "e6bb3a0dacd3ac6a2161e4471155b1d269137470bd84dffb5758b8e8675636ba",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/0add271622a6912ce736e43f106f90a4c40e09ab3115cdc0ec0ea6b7a10fd06f.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/12692fdfe7ce32ed2968680510eaaadc2be2daf6285d1ad7a4a049dda85cd01f.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/1909d938a96545ee60a5624470df424348c20d72cbd1f23e9c1e3d6fc4ea9fc7.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/1c142431607f2aa5756aea7837c1c318a6845653b59431aa96eea9223743c9ae.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/2e31d1a55341ac00a0ce2cf6bf3d37df5b5c6b6e001317018084343445665171.blob",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/36976a446947543bb9b7b18a7ad1e487d6117ad0bf543767f74a488eb84ccb2b.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/5e7ebdfae78ee5d1eea22022f0a0ef565e2db99f85a7a556e08cc7626ede02bc.py",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/65791cefb0ce1ed605e72f7ba2487343373ac64136bf141af3a309fba96db291.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/687b165fd7be31dbab93e7d854ab1755d84a51380ef93743419dc24947ef2b6d.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/8500a4ea92a5e9f25733504ccccd18eadfcc4026c35ea2a75397dd55ed69f956.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/ae4f0bce5744128bc06b97c551bb8a04329cd877b82ea36c3b3bbfcba19f53e7.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/b506680ca281808529a9a137646b2934a05765d362287a0c04b2fe4b82e8e79a.blob",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/be708cea3ddb81371c4b47ca88d2648c2a01b727b441cd317bd68ca84662b81c.py",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/ccbe3903cd4231130db3a3aed1cb46227c273405edb59cd00b9919fd424f2603.py",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/e6180a226a0498b826249bce8e6b81e09947999cba22725aaa9c0a04645b79f3.json",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/e8c1ae2973483790e61e118ced6f53b6b81459682d09df5f78570048874acb9a.blob",
+    ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/f1706af10835754541043f1cbfe34dfb9b8860b9606e4337f05e5a643dc2b948.blob"
+  ],
+  "canonical_parent_sha256": {
+    "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+    "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a"
+  },
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/687b165fd7be31dbab93e7d854ab1755d84a51380ef93743419dc24947ef2b6d.json",
+    "bytes": 17929,
+    "sha256": "687b165fd7be31dbab93e7d854ab1755d84a51380ef93743419dc24947ef2b6d"
+  }
+}

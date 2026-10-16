@@ -1,0 +1,225 @@
+# Qualitative positive-time external compilation with fixed amplitude and slew caps
+
+Status: independent conditional derivation, prepared without exposure to any new root or other worker derivation for this question. This is a proof proposal for the supervisor's scientific review, not a retained/audit verdict. The conclusion is affirmative under the exact supplied computable augmented polynomial certificate and external-control premises below. No polynomial bound on runtime, pulse count, search, precision or higher derivatives is claimed.
+
+## 1. Exact scope and admitted inputs
+
+Use the fixed complete finite plant of dimension d >= 2 from the two parent notes. H is its literal complete unchanged computable Hamiltonian, including H0, apparatus, memories, clock factors, dirty fillers and all other terms retained for this invocation. An arbitrary correlated passive reference is retained. Write H = h0 I + Hbar and J = j0 I + Jbar, where the supplied positive ordinary-nearest-neighbor path Hamiltonian is J. The same geometry, isolation, target-data, external waveform and calibration contracts remain supplied. No additional physical factor, initialized subsystem or actuator is constructed here.
+
+Supply the parent's computable full target W and determinant lift theta with Wtilde = exp(-i theta) W in SU(d). Supply its fixed computable polynomial bracket certificate: the same d^2-1 binary bracket trees in
+
+    X_i(z) = diag(-i t0 [Hbar + z Jbar + v_i], -i t0 Hbar),
+    v_i in {0, +g X_p, -g X_p, +g Y_p, -g Y_p},
+
+have values diag(b_l(z), 0). Their coordinate determinant p(z), in the parent's consistent computable real basis, has degree at most D and has a supplied coefficient witness |a_k0| >= a > 0. All of H, J, g > 0, t0 > 0, the trees, coordinate data, coefficient witness, plant dimension and finite requested output window w remain fixed as accuracy varies. The accuracy-dependent selected lambda is allowed, as in the accuracy-scaled parent.
+
+Prescribe any fixed positive port operator-norm cap C_max and fixed positive port operator-norm first-derivative cap S_max. Positive rational caps suffice. More generally computable positive caps allow effective selection of strictly positive rational lower margins. These caps are upper bounds, with no minimum pulse amplitude or width. The supplied ray strengths still obey 0 <= a(t) <= g. The construction below meets
+
+    C(t) = a(t) (I + sigma P_p) >= 0,
+    P_p in {X_p, Y_p}, sigma in {+1,-1},
+    ||C(t)|| <= C_max,     ||dC(t)/dt|| <= S_max,
+
+with at most one active ray and with C = dC/dt = 0 at every pulse boundary. If the requested caps instead refer to the scalar coefficient, divide the displayed operator-norm bounds by two. The nominal full Hamiltonian is
+
+    H_ph(t) = H + R_s I + lambda J + C(t),   R_s >= h >= ||H||.
+
+No part of H is slowed, deleted, reversed or scaled. R_s is retained. All times below are actual physical times expressed in fixed units; t0 remains the fixed normalization in the supplied certificate. Rational physical intervals are a subset of the parent's supplied computable timing contract.
+
+## 2. Select a small valid coupling without a conditioning claim
+
+For a rational 0 < epsilon <= 1, use the parent's fixed rational bounds b_bar >= ||Jbar|| and w_bar >= w, and choose once
+
+    L_win >= max(1, 64 b_bar (1+w_bar)),   Lambda = epsilon/L_win.
+
+Take exactly the D+1 rational nodes x_j = 1/2 + j/[2(D+1)]. Let V_jk = x_j^k and A_V = sum_j |(V^-1)_(k0,j)|. Rational Vandermonde inversion is effective and A_V > 0. Coefficient extraction for q(x) = p(Lambda x) gives
+
+    a_k0 Lambda^k0 = sum_j (V^-1)_(k0,j) p(Lambda x_j),
+    max_j |p(Lambda x_j)| >= a Lambda^k0/A_V =: b > 0.
+
+Evaluate each p(Lambda x_j) with certified absolute error at most b/8 and accept the first node satisfying
+
+    |p_hat_j| - b/8 > b/2.
+
+A witness has the left side at least 3b/4, so the fixed finite strict test terminates. For the selected rational lambda = Lambda x_j,
+
+    0 < Lambda/2 <= lambda < Lambda <= 1,
+    det C(lambda) != 0,
+    lambda ||Jbar|| w <= epsilon/64.
+
+Thus the given trees at the actual lambda span (su(d),0). This proof needs only that span, not a uniform conditioning lower bound or any polynomial resource estimate. It does not assert controllability at every small coupling. Higher coefficients remain in the D+1-node interpolation, and k0 need not be the first nonzero coefficient.
+
+## 3. A countable library of genuinely admissible smooth pulses
+
+Choose fixed positive rationals kappa and delta_0, independent of epsilon, with
+
+    16 kappa <= S_max,
+    2 kappa delta_0 <= C_max,
+    kappa delta_0 <= g.
+
+Strict choices can be obtained effectively from the positive computable caps and g. Define
+
+    psi(x) = 16 x^2 (1-x)^2,   0 <= x <= 1,
+    c0 = integral_0^1 psi(x) dx = 8/15,
+    c1 = integral_0^1 x psi(x) dx = 4/15.
+
+For every positive rational delta <= delta_0 and each of the four supplied rays, include the pulse
+
+    a_delta(t) = kappa delta psi(t/delta),    0 <= t <= delta,
+    C_delta(t) = a_delta(t) (I + sigma P_p).
+
+Also include every positive rational zero-control wait. These form a countable, effectively enumerable library. All coefficients of a_delta are rational in the fixed physical time coordinate.
+
+Here 0 <= psi <= 1, psi(0)=psi(1)=psi'(0)=psi'(1)=0, and
+
+    psi'(x) = 32 x(1-x)(1-2x),   |psi'(x)| <= 8.
+
+Consequently ||C_delta|| <= 2 kappa delta_0 <= C_max and ||dot C_delta|| <= 16 kappa <= S_max. Every pulse is positive, and its value and first derivative join the zero-control state continuously at both ends. Any finite concatenation is C1 and obeys the same caps. Directly adjacent different rays cause no discontinuity because both are zero, with derivative zero, at the join.
+
+These pulses become weaker as they become shorter. Their integrated scalar area is exactly kappa c0 delta^2. Their second derivative need not have a uniform bound as delta decreases. A fixed first-derivative cap is used here; no hard bandwidth, minimum width or minimum nonzero amplitude is assumed or established.
+
+## 4. The augmented reachable closure is a group
+
+For this selected lambda define the per-unit-physical-time skew matrices
+
+    A = diag(-i[Hbar + lambda Jbar], -i Hbar),
+    B_X = diag(-i X_p, 0),   B_Y = diag(-i Y_p, 0).
+
+Their direct sum is mathematical bookkeeping. For any admissible physical schedule of duration T, its augmented traceless propagator is exactly
+
+    F(T) = diag(U_tr(T), exp(-i T Hbar)).                 (1)
+
+The scalar ledger is not inside this pair and will be restored in section 7. Let S be the set of these pairs for all finite **nonempty** words from the rational library, with their actual durations. Let G be its closure in the full 2d-dimensional unitary group. Ordinary multiplication is allowed: the product of two endpoints is realized by the corresponding reverse chronological concatenation. Therefore S is a semigroup. Its closure is a compact semigroup, and I belongs to it by arbitrarily short positive waits.
+
+For completeness, G is a group. For any Q in G, diagonalize Q unitarily and consider its 2d eigenangles. For each positive integer N, place the N^(2d)+1 points of successive multiples of twice those angles, modulo 2pi, into N^(2d) boxes. A pair in one box supplies 1 <= n <= N^(2d) with ||Q^(2n)-I|| <= 2pi/N. Taking N to infinity gives Q^(2n) -> I. This finite-dimensional spectral recurrence includes **both** augmented blocks. Then Q^(2n-1) belongs to G and converges to Q^-1. Hence every Q in G has its inverse in G. This only puts inverse endpoints in the closure of positive-time schedules. It does not authorize a negative physical time or remove the elapsed time of a recurrence.
+
+All exp(t A), for real t, belong to G: positive rational waits and continuity give t >= 0, and inversion gives t < 0. Full-group closure, not a first-block-only recurrence, is essential to the old-aging statement.
+
+## 5. Fixed-slew pulses generate the port directions
+
+Consider a positive X or Y pulse; write B for its B_X or B_Y, with ||B||=1. Let F_delta(t) solve
+
+    dot F_delta(t) = [A + a_delta(t) B] F_delta(t),
+    F_delta(0) = I,       0 <= t <= delta.
+
+Its endpoint F_delta(delta) belongs to S. Form the **mathematical** interaction-picture endpoint
+
+    E_delta = exp(-delta A) F_delta(delta) in G.
+
+The inverse drift is in G by section 4; it is not being installed as a signed wait. The interaction-picture evolution has generator
+
+    a_delta(t) exp(-t A) B exp(t A).
+
+Because A and B are skew-Hermitian, unitary conjugation and integration give
+
+    ||exp(-tA) B exp(tA) - B|| <= t ||[B,A]|| <= 2t ||A||.
+
+Duhamel between this evolution and the one with generator a_delta(t) B yields the exact upper estimate
+
+    ||E_delta - exp(beta delta^2 B)||
+      <= 2 ||A|| integral_0^delta t a_delta(t) dt
+      = beta ||A|| delta^3,           beta = 8 kappa/15 > 0.       (2)
+
+No cancellation of the physical drift or smallness of lambda times total runtime has been assumed. Equation (2) is a local small-pulse estimate used only to prove the reachable closure.
+
+Fix any u >= 0, take positive rational delta -> 0, and set m_delta = floor(u/(beta delta^2)). Unitary telescoping and (2) give
+
+    ||E_delta^(m_delta) - exp(u B)||
+      <= m_delta beta ||A|| delta^3 + beta delta^2
+      <= u ||A|| delta + beta delta^2 -> 0.                     (3)
+
+For u=0, the conclusion is I in G. For u>0, m_delta is positive eventually. Every left-hand approximant belongs to G, so exp(u B) belongs to G. Inverses give all real u. Both port directions B_X and B_Y are therefore available in the closure despite the fixed amplitude and slew caps. The supplied negative rays are also in the physical library; no additional ray has been introduced.
+
+The finite-dimensional unitary Lie-Trotter formula now puts
+
+    exp[t t0(A + sigma g B_P)] in G
+
+for all real t and either axis/sign, and exp(t t0 A) is already in G. These are precisely the exponentials of the five supplied X_i(lambda). Importantly, the physical pulse peak need never reach g. The value g in this line names a direction in the mathematical closure, obtained by repetition and limits, not a larger instantaneous applied coefficient.
+
+One can avoid invoking a general Lie subgroup theorem. For finite skew matrices C,D whose full real one-parameter groups lie in G, multiplication of their Taylor expansions gives
+
+    exp(v C) exp(v D) exp(-v C) exp(-v D)
+        = I + v^2 [C,D] + O(v^3).
+
+Repeating with v=sqrt(u/n) and letting n grow puts exp(u[C,D]) in G for u>=0; inverse endpoints give u<0. Induction down each finite supplied bracket tree therefore puts exp(t diag(b_l(lambda),0)) in G for every real t. Lie-Trotter then puts exp(diag(Z,0)) in G for every real linear combination Z of the basis b_l(lambda), hence every Z in su(d).
+
+Every Wtilde in SU(d) has some traceless skew logarithm: diagonalize unitarily, choose real eigenangles, and change one angle by the integral multiple of 2pi needed to make their sum zero. This is an existence argument; no computable eigenangle branch is selected. It follows that
+
+    diag(Wtilde, I) in G.                                    (4)
+
+Equations (2)-(4), together with compact positive-time closure, are the load-bearing fixed-slew argument. They do not reuse the parent's accuracy-dependent sharp-ramp recipe.
+
+## 6. A terminating compiler, rather than only dense existence
+
+Enumerate all finite nonempty words in the rational library fairly. For example, at stage n enumerate all words of length at most n whose rational pulse durations, and rational wait durations, have positive numerators and denominators at most n, retaining the admissible delta <= delta_0 pulses. Duplicate words may be skipped or reevaluated. Every finite rational library word eventually occurs. Each word has finite positive actual duration T, computable exactly from its rational segment durations.
+
+Every candidate augmented endpoint is computable with certified absolute matrix error. One explicit evaluation route is:
+
+* On a pulse, replace its scalar polynomial amplitude by midpoint constants on m equal intervals. Its scalar Lipschitz constant is at most 8 kappa, so full augmented traceless Duhamel error is at most 2 kappa delta^2/m. This is an evaluation approximation, not a change to the physical pulse.
+* Evaluate each constant skew-matrix exponential using the finite Taylor series and a certified norm-based tail bound; all matrix entries and required norm majorants are computable from the supplied data.
+* Telescope the finitely many unitary approximation errors and allocate enough precision to enclose the candidate matrix and its Frobenius distance from the computable target. For a long candidate this may require arbitrarily extensive finite computation.
+
+Thus for any candidate one can compute an upper bound on its full augmented Frobenius error exceeding the true error by at most any specified positive rational. This uses no numerical exact-zero test, eigenvalue branch selection or undocumented spectral oracle.
+
+Set eta = epsilon/8. Evaluate each candidate once to obtain an upper Frobenius error bound whose excess is at most eta/4, and accept if this bound is strictly below eta. Otherwise proceed to the next candidate. This test terminates: by (4), S has a candidate at Frobenius distance strictly below eta/2, and that candidate passes with margin. Every preceding fixed-precision computation terminates. The emitted finite schedule uses only the allowed rays and satisfies both caps identically.
+
+For the returned word,
+
+    ||diag(U_tr(T), exp(-i T Hbar)) - diag(Wtilde,I)||_op < eta.
+
+Both block errors are below eta, whence
+
+    ||U_tr(T) - Wtilde exp(-i T Hbar)|| < 2 eta = epsilon/4.     (5)
+
+All recurrence waits implicitly selected by the successful word are part of this actual T. There is no prescribed completion deadline. The proof of termination supplies no useful upper bound on search, T, word length, precision or physical action. It does not transfer the parent's polynomial recipe to this different compiler.
+
+## 7. Full scalar, output window and arbitrary retained input
+
+The returned scalar port area is exactly
+
+    A_s = integral_0^T a(t) dt = kappa c0 sum_pulses delta_j^2.
+
+The actual nominal scalar rate is h0 + R_s + lambda j0 + a(t). Every wait accrues its full h0, reserve and path scalar phase. The control is zero throughout [T,T+w], with no additional settling interval. Define
+
+    chi(T+s) = (R_s + lambda j0)(T+s) + A_s + theta,
+    V_s = exp[-i chi(T+s)] exp(-isH) W exp(-iTH),  0<=s<=w.
+
+Restoring the scalar from (5), then applying Duhamel only over the post-endpoint window, gives
+
+    sup_(0<=s<=w) ||U_ph(T+s) - V_s||
+      <= epsilon/4 + lambda ||Jbar|| w
+      <= 17 epsilon/64.                                      (6)
+
+The comparator uses the complete original H, in the displayed chronological order, at the actual returned T. In general exp(-isH) W is not W exp(-isH). The static path has acted for the entire compilation interval; no lambda T smallness assumption appears anywhere.
+
+For the parent's full retained-space defect E(t) = H_actual(t)-H_ph(t), use one total integrated allowance
+
+    E_int = integral_0^(T+w) ||E(t)|| dt <= epsilon/64.
+
+Then the complete unhalved trace-distance error, for every joint plant/reference input rho, uniformly over the window, is at most
+
+    2 [epsilon/4 + epsilon/64 + epsilon/64] = 9 epsilon/16 <= epsilon.    (7)
+
+The reference does not alter the operator norm and the standard two-term expansion of U rho U* - V rho V* proves this bound without a dimension factor or any discarded output. Input-state error, if present, adds once and must be separately budgeted. All simultaneous timing, calibration, coefficient, scalar, old-background and omitted-edge errors share the one E_int budget; no source may independently spend it all.
+
+Nominal whole-generator positivity follows from H+R_s I >= 0 and J,C >= 0. Robust actual positivity still needs a supplied peak-defect bound zeta_pk and R_s >= h+zeta_pk. This argument does not prove separate positivity of every old local term. Additional literal local reserves, if a consumer requires them, remain explicit and change phase and action.
+
+The nominal full norm has the accuracy-independent bound
+
+    ||H_ph(t)|| <= h + R_s + ||J|| + C_max,
+
+while its explicit time derivative is bounded by S_max. These common instantaneous bounds do not bound accumulated action: it includes the complete actual T+w, all reserves and path action. A sufficient constant defect-rate allowance is epsilon/[64(T+w)], so no fixed positive error floor is silently tolerated when T grows. The theorem constructs neither the external waveform source nor a physical clock. It is not an autonomous bounded-strength construction or an assertion of bounded energy moments for a later autonomous substitute.
+
+## 8. Checks, failure distinctions and remaining scope
+
+The independent mechanism differs from shrinking the parent's ramp widths after a fixed bang-bang compilation. That latter smoothing estimate prices lost area per switch and does not itself meet a common slew cap as accuracy increases. Here admissible small-amplitude bumps define the reachable semigroup from the start; compact recurrence and a computable search select an actual finite schedule.
+
+The following distinctions are essential to the positive theorem:
+
+* The certificate concerns the complete augmented pair and a valid selected lambda; projected rank or arbitrary weak lambda is not substituted.
+* Approximate inverse group elements are limits of positive-time schedules. The compiler emits a finite positive-time word and recomputes both augmented coordinates and T.
+* The smooth pulses may have arbitrarily small amplitude and duration. A fixed slew cap supplies no hard frequency cutoff. No claim is made under extra minimum-amplitude, minimum-width or hard-bandwidth restrictions.
+* A finite window uses an accuracy-dependent selected path coupling. A permanently idle interval of unbounded duration is not covered.
+* The external design/search occurs before the declared physical timeline, as in the parents. Plant aging during design, if present, needs its own chronological contract.
+* All old/filler/reference inputs are arbitrary. A reset or preparation consumer still needs its premise on the actually aged input; no purity, cooling, memory supply, reuse or native physical identification follows from this compiler.
+
+The accompanying exact symbolic check covers the bump endpoint identities, its two integrals, the degree-two commutator sign, and the error-budget arithmetic. It is not a full compiler run, a numerical controllability example, a formal proof checker, or an audit. Source hashes and captures establish provenance only. The remaining review obligation is independent examination of this full argument, especially the compact semigroup closure, its port-direction extraction and its effective enumeration. The worker used the inherited selected model and reasoning effort in a separate context and did not inspect another current derivation. No external theorem lookup, model/effort change or child-agent spawn occurred. No Git/PR mutation, canonical-source edit, cache/graph/audit/axiom/prompt edit or other-chat communication was used.

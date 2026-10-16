@@ -1,0 +1,376 @@
+{
+  "schema": "source_integrity_inputs_v1",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ACTUAL_BINDING.json",
+      "bytes": 14161,
+      "sha256": "ef5d6c17de49cd4908b9192cb95af9bf76da6af5ceb4442fc1d8b850ca62b400"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ACTUAL_HANDOFF.md",
+      "bytes": 667,
+      "sha256": "aa4599e9f06106270bb206ab0e0ec468da4b64b3b656e56bd348944af50a925f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ACTUAL_REFRESH_PROVENANCE.json",
+      "bytes": 3898,
+      "sha256": "e46446713f3753a2b43b177d998aa25cc48aa075cfa2db499ba0475781a0e6f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ARCHIVE_INDEX.json",
+      "bytes": 15027,
+      "sha256": "44f5c3e7b50d61dfad7524755474557c0ea05cbc062f8b2cdd3c7570c58b7de3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 948,
+      "sha256": "357d5aa33188bae3868ba003768ae252817571ee0128e28d73f6ceb798f9a475"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/BINDING_CONTRACT.md",
+      "bytes": 4183,
+      "sha256": "2bee45a15dafbab07dd3e37ec629e01a959eb5ddfba2a4694421f18ff1c83f8b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/BODY_MAP.json",
+      "bytes": 1136,
+      "sha256": "e2b7bb4a77f38fb825f7b824df9fd98b35473a849bbe0829b0ee98c670684635"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/CANONICAL_BINDING.json",
+      "bytes": 4262,
+      "sha256": "43fc73926b201b6c84d173c5e9a48ffcd7cb033e124ca60b3cb85c713d4ed82d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/CHECK_RECEIPTS.json",
+      "bytes": 9845,
+      "sha256": "c3780e397fa217fc735c7860025f2637b2113db4c59dde3db2699cde6f489e9b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 779,
+      "sha256": "a54959b1ddfc547ea066a7ac8ac687350d87a8396c987791257db21047a6a451"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/COUNTEREXAMPLES.md",
+      "bytes": 833,
+      "sha256": "20e695bd90829d85cd1ccad5aa3f73abcc4679c2c95540f02063ff79771c0909"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/DEPENDENCIES.json",
+      "bytes": 109,
+      "sha256": "a25706cc489fad0a54628797a29d34e0e5729ec57f640a703ce5aea3f617c85d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/HANDOFF.md",
+      "bytes": 702,
+      "sha256": "10a156beecdfe77cc15f945fdf98969d53adf63e7d1c3c01967ac1d9067c5c3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PARENT_BINDING.json",
+      "bytes": 450,
+      "sha256": "fb786eaf8226ff3ede70ce821e6e827f0924c65f95b4515d162faa1c6b8f7249"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PR_BODY.md",
+      "bytes": 1012,
+      "sha256": "ac8af3c103b2f92eb472877921a167c67beb15d090834e8b89cc152e114e790f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PR_TITLE.txt",
+      "bytes": 84,
+      "sha256": "0791fff98504eef9c24591b3a5d478eff46d35f038b2130ec55586f034510518"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PUBLICATION_STATE.json",
+      "bytes": 491,
+      "sha256": "b5f44e6c4523defa1dfcf61975fab4b5686308a08913863babfc30b1df557be3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/RECOVERY_SCOPE.md",
+      "bytes": 756,
+      "sha256": "33bde714510b2dc8ee09d9104f1517dd77d779f6ef712e0f4d66fce9883ecee9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/RECOVERY_SELECTION.json",
+      "bytes": 15192,
+      "sha256": "e3e345e2db552c1d8c3d053dd9d4810021516a1e6a2d68129477188db8004bfe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/REVIEW_HISTORY.md",
+      "bytes": 738,
+      "sha256": "22f9243bbfc0dd595536bd2e6635d5081feb439e8f3f6fc0f333eeea22489b01"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/SOURCE_MANIFEST.json",
+      "bytes": 27362,
+      "sha256": "6c4493500608db989c4125102fb7b690c34008bbe1f845a87e7f2ea6f71c6294"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/TRACE_GATE.md",
+      "bytes": 783,
+      "sha256": "9d2b6abc7282e35049addac980a46e7fb273ce524500183b1983099124bbb699"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/17d55edc81a1ac58a2f837d45825b20cb772cd9264d60b33d4e4cdee283d6f6f.py",
+      "bytes": 3038,
+      "sha256": "17d55edc81a1ac58a2f837d45825b20cb772cd9264d60b33d4e4cdee283d6f6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/1924e6cf8eadbe4ed6e5a6259f3dee18107d820beba689fd5a252978aedb5062.json",
+      "bytes": 2190,
+      "sha256": "1924e6cf8eadbe4ed6e5a6259f3dee18107d820beba689fd5a252978aedb5062"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/1c2276e254cfaa6e45ac3f3e91e7bf31e6607a8dff62af0543e7b0c2c4c174b3.json",
+      "bytes": 1222,
+      "sha256": "1c2276e254cfaa6e45ac3f3e91e7bf31e6607a8dff62af0543e7b0c2c4c174b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/26d778ca184624a2017232b6b618b7f713f90f31b0502f41ef7c9b7bbb429405.py",
+      "bytes": 5005,
+      "sha256": "26d778ca184624a2017232b6b618b7f713f90f31b0502f41ef7c9b7bbb429405"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/2d1cc758f972302a865cbabc6f1ae9806a8d3908dfb10087a479e0678d783747.json",
+      "bytes": 1596,
+      "sha256": "2d1cc758f972302a865cbabc6f1ae9806a8d3908dfb10087a479e0678d783747"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/382fde32f249326d287662d4d43f96625f0dd6a5bf23b4102ae836335710e319.blob",
+      "bytes": 41,
+      "sha256": "382fde32f249326d287662d4d43f96625f0dd6a5bf23b4102ae836335710e319"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+      "bytes": 179,
+      "sha256": "3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/3bfc0337f29c12719238fbbbfecca939ec41da19d1707d76879b95371f7c259e.json",
+      "bytes": 1525,
+      "sha256": "3bfc0337f29c12719238fbbbfecca939ec41da19d1707d76879b95371f7c259e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/4cd2e1578fdc6069b3dbe75bafcd4d371cac378bb44a8f1da1ac93d05f821ba5.blob",
+      "bytes": 323,
+      "sha256": "4cd2e1578fdc6069b3dbe75bafcd4d371cac378bb44a8f1da1ac93d05f821ba5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/4eae7034bed1a87f8d8222877b1956fb670bb35fc0346ef021b8a5c830cf6ee8.json",
+      "bytes": 1799,
+      "sha256": "4eae7034bed1a87f8d8222877b1956fb670bb35fc0346ef021b8a5c830cf6ee8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/4fa10f4ca90f7b34d7ab5a24ae77921b7ec4ee7ac7714a1f59575e64356c61cd.blob",
+      "bytes": 22491,
+      "sha256": "4fa10f4ca90f7b34d7ab5a24ae77921b7ec4ee7ac7714a1f59575e64356c61cd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/5093a239b1b0fca7570ef3e2a144f24a4e82d8a71d43b5c141a42dd530b5c4d4.json",
+      "bytes": 1581,
+      "sha256": "5093a239b1b0fca7570ef3e2a144f24a4e82d8a71d43b5c141a42dd530b5c4d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/5bfd0675f1f3d65d8c9fefd7a9a5c6e66570eb1923ba24324c9f418cb1e867b2.json",
+      "bytes": 1136,
+      "sha256": "5bfd0675f1f3d65d8c9fefd7a9a5c6e66570eb1923ba24324c9f418cb1e867b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/60f86037f608b8e22c9e98252c6df21821d2933ef7ed872927fd28da823b9130.json",
+      "bytes": 1750,
+      "sha256": "60f86037f608b8e22c9e98252c6df21821d2933ef7ed872927fd28da823b9130"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/61d51004f3c7510ccdf4a6d47562977fb83babede3cddb3de9163d986b0783d2.json",
+      "bytes": 1893,
+      "sha256": "61d51004f3c7510ccdf4a6d47562977fb83babede3cddb3de9163d986b0783d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/6de6c09b2600f6a328620f4cf38b83425d945934682df18083b971ec739948ba.json",
+      "bytes": 1291,
+      "sha256": "6de6c09b2600f6a328620f4cf38b83425d945934682df18083b971ec739948ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/74f063a0891de7e7b9b575f9d80ed3f875e14b7a332d72c41daeff28b535f985.json",
+      "bytes": 1815,
+      "sha256": "74f063a0891de7e7b9b575f9d80ed3f875e14b7a332d72c41daeff28b535f985"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/8cf3a9a04b5ceb22e440f05da8b8d1fb3bf03ff92b9ca6342b770d859cf5a177.blob",
+      "bytes": 550,
+      "sha256": "8cf3a9a04b5ceb22e440f05da8b8d1fb3bf03ff92b9ca6342b770d859cf5a177"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/903419125264f0e6facf4e8f2d9b3db9c967e06606de646fa02bc2eddb002154.py",
+      "bytes": 55630,
+      "sha256": "903419125264f0e6facf4e8f2d9b3db9c967e06606de646fa02bc2eddb002154"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/919a4ab1cc334b0fb8ba48ddcd6aedaad15bf5940d1d8a8c50d6c3d1c0948c10.json",
+      "bytes": 13623,
+      "sha256": "919a4ab1cc334b0fb8ba48ddcd6aedaad15bf5940d1d8a8c50d6c3d1c0948c10"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/92a27abfa0921598d9b1b53ee8c3616116b83da767af0412aed3092f7c4279e2.json",
+      "bytes": 289,
+      "sha256": "92a27abfa0921598d9b1b53ee8c3616116b83da767af0412aed3092f7c4279e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e11956017f7560a9a1de793ea82002f506748d1bd172615501065999833cf4f8.blob",
+      "bytes": 321,
+      "sha256": "e11956017f7560a9a1de793ea82002f506748d1bd172615501065999833cf4f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e9529b5bee27df7f1be98418f1b0781b29b4cde279ec348829413791267d6c64.json",
+      "bytes": 25731,
+      "sha256": "e9529b5bee27df7f1be98418f1b0781b29b4cde279ec348829413791267d6c64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e9f6b186a1268235bc54ccfbcfee2d2b928c4977870ae486c2db6e2e930b3e2b.json",
+      "bytes": 4431,
+      "sha256": "e9f6b186a1268235bc54ccfbcfee2d2b928c4977870ae486c2db6e2e930b3e2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/f57f92c98a46c506d51269cd6791e45d71f6c3921d748a9a2d7184b3b4ad5394.json",
+      "bytes": 703,
+      "sha256": "f57f92c98a46c506d51269cd6791e45d71f6c3921d748a9a2d7184b3b4ad5394"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b.blob",
+      "bytes": 4893,
+      "sha256": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5.blob",
+      "bytes": 5153,
+      "sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/32d142a282e1347449f9de98f5749c03f9d9a78dccca4c86608f472401ed7aa2.blob",
+      "bytes": 3826,
+      "sha256": "32d142a282e1347449f9de98f5749c03f9d9a78dccca4c86608f472401ed7aa2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2.blob",
+      "bytes": 6009,
+      "sha256": "36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/3c3de9fc9a949601697552c2e2e3a62346ef0126eaa0263763b64497ba35f4b0.blob",
+      "bytes": 3478,
+      "sha256": "3c3de9fc9a949601697552c2e2e3a62346ef0126eaa0263763b64497ba35f4b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c.blob",
+      "bytes": 10900,
+      "sha256": "46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840.blob",
+      "bytes": 5565,
+      "sha256": "4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158.blob",
+      "bytes": 2448,
+      "sha256": "483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679.blob",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a.blob",
+      "bytes": 1704,
+      "sha256": "8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020.blob",
+      "bytes": 14138,
+      "sha256": "95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/9d0edfb643c5744a429ebd83b482d9e573a9bde3a72a137081548b2524d41b8d.blob",
+      "bytes": 13552,
+      "sha256": "9d0edfb643c5744a429ebd83b482d9e573a9bde3a72a137081548b2524d41b8d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb.blob",
+      "bytes": 5172,
+      "sha256": "a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976.blob",
+      "bytes": 929,
+      "sha256": "af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2.blob",
+      "bytes": 635,
+      "sha256": "b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83.blob",
+      "bytes": 15014,
+      "sha256": "bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a.blob",
+      "bytes": 2807,
+      "sha256": "c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c.blob",
+      "bytes": 3739,
+      "sha256": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78.blob",
+      "bytes": 768,
+      "sha256": "d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/dcab7a72c287fe9cd06b2de4997d35051aa67e425be9d6c8703055edae44ba11.blob",
+      "bytes": 4360,
+      "sha256": "dcab7a72c287fe9cd06b2de4997d35051aa67e425be9d6c8703055edae44ba11"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2.blob",
+      "bytes": 8135,
+      "sha256": "e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2.blob",
+      "bytes": 8979,
+      "sha256": "e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/f6b4883e8828851fca18434dda0b422aee137e88c499fe2818f28b17ed5de666.blob",
+      "bytes": 5522,
+      "sha256": "f6b4883e8828851fca18434dda0b422aee137e88c499fe2818f28b17ed5de666"
+    },
+    {
+      "path": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 85165,
+      "sha256": "ed8bb424c2d856aa162f9f5f2d4ab2eda051118422504dcc6a68c88dd81162fe"
+    }
+  ],
+  "scope": "Source/recovery/binding integrity only; no scientific execution."
+}

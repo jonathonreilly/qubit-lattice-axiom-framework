@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-16T02:04:33.426971+00:00",
+  "status": "unaccepted root proposal; no execution or independent check",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 4199,
+      "sha256": "09e43a6822cd08059419998a314f9289b5921ad5380ebb89c15a4ddc70e76106"
+    }
+  ]
+}

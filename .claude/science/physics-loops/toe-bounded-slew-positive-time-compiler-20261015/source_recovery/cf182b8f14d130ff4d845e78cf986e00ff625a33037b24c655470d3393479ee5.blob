@@ -1,0 +1,136 @@
+{
+  "frozen_utc": "2026-10-15T23:50:38.037012+00:00",
+  "scope": "Original result before any comparison exposure; no scientific status conferred by seal.",
+  "members": [
+    {
+      "path": "DERIVATION.md",
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5",
+      "bytes": 19478
+    },
+    {
+      "path": "FINAL_STATE.json",
+      "sha256": "e7a57d12e5368a35cd25e3177f82ee9e869180db91fe33b18875525a90a67572",
+      "bytes": 2034
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "bytes": 7070
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f",
+      "bytes": 1603
+    },
+    {
+      "path": "check_symbolic_identities.py",
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc",
+      "bytes": 5018
+    },
+    {
+      "path": "checks/exact_symbolic_final/EXECUTION.json",
+      "sha256": "76bb338ff6c3cf62ebba7d205588a970768942c184c44f7adc81c74a0140aa46",
+      "bytes": 2040
+    },
+    {
+      "path": "checks/exact_symbolic_final/source_at_launch/DERIVATION.md",
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5",
+      "bytes": 19478
+    },
+    {
+      "path": "checks/exact_symbolic_final/source_at_launch/SOURCE_COVERAGE.md",
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "bytes": 7070
+    },
+    {
+      "path": "checks/exact_symbolic_final/source_at_launch/SOURCE_MANIFEST.json",
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f",
+      "bytes": 1603
+    },
+    {
+      "path": "checks/exact_symbolic_final/source_at_launch/check_symbolic_identities.py",
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc",
+      "bytes": 5018
+    },
+    {
+      "path": "checks/exact_symbolic_final/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/exact_symbolic_final/stdout.json",
+      "sha256": "775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226",
+      "bytes": 1412
+    },
+    {
+      "path": "checks/exact_symbolic_original/EXECUTION.json",
+      "sha256": "1a1dc0cdbc9b0a51b8f345b3a7a5e8a353375c24e536c507c495fbf25d984491",
+      "bytes": 1845
+    },
+    {
+      "path": "checks/exact_symbolic_original/source_at_launch/DERIVATION.md",
+      "sha256": "278dc3607435a0f40acf56cb33d3a793083dac950d2631a44e194608e3846ba7",
+      "bytes": 19273
+    },
+    {
+      "path": "checks/exact_symbolic_original/source_at_launch/SOURCE_COVERAGE.md",
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "bytes": 7070
+    },
+    {
+      "path": "checks/exact_symbolic_original/source_at_launch/SOURCE_MANIFEST.json",
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f",
+      "bytes": 1603
+    },
+    {
+      "path": "checks/exact_symbolic_original/source_at_launch/check_symbolic_identities.py",
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc",
+      "bytes": 5018
+    },
+    {
+      "path": "checks/exact_symbolic_original/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/exact_symbolic_original/stdout.json",
+      "sha256": "775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226",
+      "bytes": 1412
+    },
+    {
+      "path": "source_at_launch/AGENTS.ai_execution.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558
+    },
+    {
+      "path": "source_at_launch/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265
+    },
+    {
+      "path": "source_at_launch/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "bytes": 66336
+    },
+    {
+      "path": "source_at_launch/docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+      "bytes": 97212
+    },
+    {
+      "path": "source_at_launch/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435
+    },
+    {
+      "path": "source_at_launch/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "source_at_launch/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Current review checkpoint
+
+Task: bounded exposed adversarial review of the frozen strongly regular bus construction, due approximately 2026-10-16 01:12 UTC. Only this directory is writable. Same inherited model/effort; no subagents, Git/PR/publication, canonical/author edits, repository cache/graph/audit/lock/axiom/prompt mutations or other-chat messages.
+
+Status: complete analytic review and two bounded independent implementations; final disposition and detailed recomputation in REVIEW.md. No load-bearing algebraic defect found in the fixed-target conditional domain. Exact-L phase selection is not uniformly computable from unknown-support computable entries; retain supplied support/phase or incorporate the separately attributed rational-M refinement with its explicit 9epsilon/16 total trace budget. The refinement preserves the original absence of polynomial resource guarantees and is not inserted into the author's frozen source.
+
+Primary source: author DERIVATION.md SHA256 `855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2`; author FREEZE.json SHA256 `2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508`. All 45 author members plus FREEZE are captured under author_at_launch; exact manifest and final source refresh remain on disk. All scientific executable-at-launch bytes and full stdout/stderr are preserved for author and reviewer checks.
+
+Failures retained: author arbitrary pole offset fails the strict positive-cone margin; author full-matrix initial port assembly has a bitwise-precedence error and is non-Hermitian. Reviewer cone trials independently fail three offsets before finding a valid fourth. Mutants omitting multiplicity, omitting counterterms, doubling the mixed coefficient, omitting actual-T phases and substituting branched one-particle subset sums are numerically rejected. These are scoped discriminators, not universal negative claims.
+
+Provenance limit: the two original failed author launcher hashes have no matching bytes among the 46 captured files; exact primary scientific sources survive. Do not reconstruct missing launchers or imply recovery elsewhere.
+
+Open obligations: extend beyond the additional spectral/geometry domain; derive native source preparation, isolation and long-time calibration; obtain any favorable efficiency result; independent retained-audit disposition. No complete 30-site many-body controller or accuracy family was numerically run. Earlier bounded-slew and comparison freezes remain unchanged.
+
+Final packet receipt is REVIEW_FREEZE.json and its SHA256 sidecar. No work remains in this bounded review except delivery and any separately authorized follow-up.

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/strongly_regular_bus_2026_10_15.py
+runner_sha256: 1ed6dea485d3c3968e0e8a03db54499ce294f2ec9f5749a8574e2ff7bd7ef005
+input_fingerprint_sha256: 0b31752c7b07c04243061f263a4be9bbe374082433b64494867761d2052510c3
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "exact bytes, recovery and captured binding metadata only"}
+per_element: source coefficient text retained; no physical element was executed
+per_site: declared complete lattice interface retained; no hardware test was executed
+per_mode: exact-target existence and rational-target effectiveness remain distinct; no scientific program executed
+per_block: exact bus text and historical success/failure/provenance metadata checked only
+lattice_wide: native preparation, actual suppliers and independent audit remain separate
+metadata_check_counts_only: source bytes and provenance assertions; no scientific proof or retained status
+TOTAL: PASS=1224 FAIL=0
+
+----- stderr -----
+

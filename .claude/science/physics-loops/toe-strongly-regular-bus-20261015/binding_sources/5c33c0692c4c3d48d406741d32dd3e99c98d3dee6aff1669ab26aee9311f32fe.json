@@ -1,0 +1,17 @@
+{
+  "kind": "root_publication_source_review_freeze",
+  "utc": "2026-10-16T01:44:25.671276+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_strongly_regular_bus_publication_review/REVIEW.json",
+      "bytes": 4625,
+      "sha256": "45b0437d14ac192026a4de9ada1bc561fdc5020bec81657d8a0a7fa87e6380c5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_strongly_regular_bus_publication_review/READ_COVERAGE.md",
+      "bytes": 2887,
+      "sha256": "00b9befd2ba1b4dc364c59010972f113b19cfb9ac532bafcf3963ff20004cdc4"
+    }
+  ],
+  "scientific_programs_run": 0
+}

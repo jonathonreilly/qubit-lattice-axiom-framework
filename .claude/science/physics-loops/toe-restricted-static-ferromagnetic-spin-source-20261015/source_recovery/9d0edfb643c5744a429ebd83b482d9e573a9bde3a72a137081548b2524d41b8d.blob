@@ -1,0 +1,198 @@
+{
+  "capture_utc": "2026-10-16T00:06:16.543196+00:00",
+  "first_exposure_utc": "2026-10-16T00:03:08Z",
+  "independent_freeze_utc": "2026-10-16T00:01:25.736644+00:00",
+  "independent_freeze_sha256": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c",
+  "author_freeze_utc": "2026-10-15T23:48:24.492722+00:00",
+  "author_freeze_sha256": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b",
+  "source_identities_verified_against_original_manifests": {
+    "author_files": 16,
+    "independent_files": 18
+  },
+  "sources": [
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/DERIVATION.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_DERIVATION.md",
+      "bytes": 31713,
+      "sha256": "47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_EVIDENCE.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_CHECK_EVIDENCE.md",
+      "bytes": 2448,
+      "sha256": "483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.at_launch.py",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_finite_check.at_launch.py",
+      "bytes": 5153,
+      "sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_LAUNCH.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_CHECK_LAUNCH.json",
+      "bytes": 768,
+      "sha256": "d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_RESULT.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_CHECK_RESULT.json",
+      "bytes": 929,
+      "sha256": "af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.stdout.log",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_finite_check.stdout.log",
+      "bytes": 8135,
+      "sha256": "e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.stderr.log",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_finite_check.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/SOURCE_COVERAGE.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_SOURCE_COVERAGE.md",
+      "bytes": 2807,
+      "sha256": "c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/SOURCE_MANIFEST.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_SOURCE_MANIFEST.json",
+      "bytes": 5172,
+      "sha256": "a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/FREEZE.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_FREEZE.json",
+      "bytes": 4893,
+      "sha256": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "author",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/run_recorded.py",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_run_recorded.py",
+      "bytes": 1704,
+      "sha256": "8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "independent",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/DERIVATION.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_DERIVATION.md",
+      "bytes": 16783,
+      "sha256": "687a28553a1588265906ca0e64a8a18c8caf18027003343aed5708b43b2a0222",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "independent",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/EXPOSURE.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_EXPOSURE.json",
+      "bytes": 6009,
+      "sha256": "36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "independent",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FINITE_CHECK_LAUNCH.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_FINITE_CHECK_LAUNCH.json",
+      "bytes": 635,
+      "sha256": "b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "independent",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FINITE_CHECK_RESULTS.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_FINITE_CHECK_RESULTS.json",
+      "bytes": 10900,
+      "sha256": "46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    },
+    {
+      "role": "independent",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FREEZE.json",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_FREEZE.json",
+      "bytes": 3739,
+      "sha256": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c",
+      "coverage": "Complete read in original independent task or exposed reconciliation."
+    }
+  ],
+  "scientific_execution_this_reconciliation": false,
+  "editable_prompt_files_changed": [],
+  "exposure_timing_note": "The first_exposure_utc field is the clock reading accompanying the initial author-directory inventory, not an exact timestamp of the subsequent scientific text read. All author science reads occurred after the original independent freeze.",
+  "accepted_scope": "Author sections 2-6: conditional single-qubit theorem, full output and reference norm, exact-real resource powers, counted positive reserves and incident sums. No general coupled-plant construction or retained status.",
+  "separate_scope": {
+    "section_8": "Algebraically consistent conditional finite-matrix implication under stated full-spectrum and uniform-residual hypotheses; no realization of those hypotheses certified.",
+    "section_9": "Open proposed NN bus and calibration equations; not accepted as a construction.",
+    "section_10": "Read; no independent validation of cited parent clock estimates or tape realization."
+  },
+  "findings": [
+    "No consequential mathematical defect in the displayed restricted single-qubit proof.",
+    "Explicit theta=pi fixed-decomposition phase remains -I; free-old shortcut needs changed comparison phase or an actual rotation.",
+    "Exact ceiling/minimum establish mathematical upper bounds. An effective implementation requires computable input data, rational upper rounding of N with bounded overshoot, and rational q within a constant factor of its permitted minimum.",
+    "The original independent receipt omitted cwd/process exit. Existing tool records are transcribed retrospectively below without changing that receipt or rerunning science."
+  ],
+  "independence_limit": "Independent pre-exposure derivation, followed by explicitly exposed reconciliation. The gap argument converged to the same swap-comparison proof, and first-order corrector and integration-by-parts bounds are closely related. Finite matrix builders differ. No model-family independence implied.",
+  "parent_proofs_not_read_in_this_reconciliation": [
+    "sources/composition.md",
+    "sources/mediator.md",
+    "sources/conditioned_compiler.md",
+    "sources/accuracy_scaled.md",
+    "sources/selection.md"
+  ],
+  "execution_record_retrospective": {
+    "classification": "Retrospective transcription of existing tool messages; not a launch-time receipt; no replay.",
+    "exec_api": "tools.exec_command",
+    "exec_arguments": {
+      "cmd": "python3 finite_checks.py > FINITE_CHECK_FULL.log 2>&1",
+      "workdir": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check",
+      "yield_time_ms": 1000,
+      "max_output_tokens": 1000
+    },
+    "initial_result": {
+      "chunk_id": "052b0e",
+      "session_id": 27634,
+      "output": ""
+    },
+    "poll_api": "tools.write_stdin",
+    "poll_arguments": {
+      "session_id": 27634,
+      "chars": "",
+      "yield_time_ms": 1000,
+      "max_output_tokens": 1000
+    },
+    "poll_result": {
+      "chunk_id": "b96549",
+      "exit_code": 0,
+      "output": ""
+    },
+    "program_recorded_launch_utc": "2026-10-15T23:57:43.250083+00:00",
+    "clock_read_parallel_with_poll": "2026-10-15 23:58:18 UTC",
+    "exact_process_exit_utc": "not recorded",
+    "resolved_interpreter_path": "not recorded by that execution; not reconstructed",
+    "original_launch_receipt_unchanged": true
+  },
+  "source_reverification_utc": "2026-10-16T00:11:39.016281+00:00"
+}

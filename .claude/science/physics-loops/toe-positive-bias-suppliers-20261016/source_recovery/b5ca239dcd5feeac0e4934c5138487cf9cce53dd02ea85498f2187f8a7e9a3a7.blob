@@ -1,0 +1,23 @@
+"""Freeze the author continuation after rechecking all exact source bytes.
+Metadata only; no scientific execution or acceptance verdict.
+"""
+import datetime,hashlib,json
+from pathlib import Path
+root=Path(__file__).resolve().parent
+if (root/'FREEZE.json').exists():raise RuntimeError('Existing freeze must remain unchanged')
+manifest=json.loads((root/'SOURCE_MANIFEST.json').read_text())
+verified=[]
+for row in manifest['sources']:
+    data=Path(row['path']).read_bytes();digest=hashlib.sha256(data).hexdigest()
+    if digest!=row['sha256'] or len(data)!=row['bytes']:
+        raise RuntimeError('Changed source '+row['key'])
+    if Path(row['recovery_path']).read_bytes()!=data:raise RuntimeError('Recovery mismatch '+row['key'])
+    verified.append(dict(key=row['key'],sha256=digest,bytes=len(data)))
+artifacts=[]
+for path in sorted(root.rglob('*')):
+    if path.is_file() and path.name not in ('FREEZE.json','freeze.stdout.log','freeze.stderr.log'):
+        data=path.read_bytes();artifacts.append(dict(path=str(path.relative_to(root)),bytes=len(data),sha256=hashlib.sha256(data).hexdigest()))
+receipt=dict(frozen_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),status='exposed author conditional transfer proposal; provisional bus dependency; not independent or retained',sources_reverified=verified,artifacts=artifacts)
+(root/'FREEZE.json').write_text(json.dumps(receipt,indent=2)+'\n')
+row=next(x for x in artifacts if x['path']=='DERIVATION.md')
+print(json.dumps(dict(frozen_utc=receipt['frozen_utc'],derivation=row,artifact_count=len(artifacts),source_count=len(verified),freeze=str(root/'FREEZE.json'))))

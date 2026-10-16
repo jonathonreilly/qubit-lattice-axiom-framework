@@ -1,0 +1,27 @@
+{"name": "source_resolvent", "error": 2.220446049250313e-16, "threshold": 2e-09, "passed": true, "N": 2, "c": 0.37, "dimension": 4}
+{"name": "source_resolvent", "error": 2.220446049250313e-16, "threshold": 2e-09, "passed": true, "N": 2, "c": -0.51, "dimension": 4}
+{"name": "source_resolvent", "error": 5.551115123125783e-17, "threshold": 2e-09, "passed": true, "N": 2, "c": 1.13, "dimension": 4}
+{"name": "source_density_counterterm", "error": 0.0, "threshold": 2e-09, "passed": true, "N": 2}
+{"name": "source_resolvent", "error": 4.440892098500626e-16, "threshold": 2e-09, "passed": true, "N": 3, "c": 0.37, "dimension": 8}
+{"name": "source_resolvent", "error": 1.1102230246251565e-16, "threshold": 2e-09, "passed": true, "N": 3, "c": -0.51, "dimension": 8}
+{"name": "source_resolvent", "error": 1.6653345369377348e-16, "threshold": 2e-09, "passed": true, "N": 3, "c": 1.13, "dimension": 8}
+{"name": "source_density_counterterm", "error": 2.220446049250313e-16, "threshold": 2e-09, "passed": true, "N": 3}
+{"name": "source_resolvent", "error": 4.440892098500626e-16, "threshold": 2e-09, "passed": true, "N": 4, "c": 0.37, "dimension": 16}
+{"name": "source_resolvent", "error": 8.881784197001252e-16, "threshold": 2e-09, "passed": true, "N": 4, "c": -0.51, "dimension": 16}
+{"name": "source_resolvent", "error": 1.1102230246251565e-16, "threshold": 2e-09, "passed": true, "N": 4, "c": 1.13, "dimension": 16}
+{"name": "source_density_counterterm", "error": 1.1102230246251565e-16, "threshold": 2e-09, "passed": true, "N": 4}
+{"name": "source_resolvent", "error": 3.3306690738754696e-16, "threshold": 2e-09, "passed": true, "N": 5, "c": 0.37, "dimension": 32}
+{"name": "source_resolvent", "error": 4.440892098500626e-16, "threshold": 2e-09, "passed": true, "N": 5, "c": -0.51, "dimension": 32}
+{"name": "source_resolvent", "error": 1.1102230246251565e-16, "threshold": 2e-09, "passed": true, "N": 5, "c": 1.13, "dimension": 32}
+{"name": "source_density_counterterm", "error": 0.0, "threshold": 2e-09, "passed": true, "N": 5}
+{"name": "source_resolvent", "error": 4.440892098500626e-16, "threshold": 2e-09, "passed": true, "N": 6, "c": 0.37, "dimension": 64}
+{"name": "source_resolvent", "error": 6.661338147750939e-16, "threshold": 2e-09, "passed": true, "N": 6, "c": -0.51, "dimension": 64}
+{"name": "source_resolvent", "error": 2.220446049250313e-16, "threshold": 2e-09, "passed": true, "N": 6, "c": 1.13, "dimension": 64}
+{"name": "source_density_counterterm", "error": 8.881784197001252e-16, "threshold": 2e-09, "passed": true, "N": 6}
+{"name": "source_resolvent", "error": 4.440892098500626e-16, "threshold": 2e-09, "passed": true, "N": 7, "c": 0.37, "dimension": 128}
+{"name": "source_resolvent", "error": 1.3322676295501878e-14, "threshold": 2e-09, "passed": true, "N": 7, "c": -0.51, "dimension": 128}
+{"name": "source_resolvent", "error": 2.220446049250313e-16, "threshold": 2e-09, "passed": true, "N": 7, "c": 1.13, "dimension": 128}
+{"name": "source_density_counterterm", "error": 8.881784197001252e-16, "threshold": 2e-09, "passed": true, "N": 7}
+{"name": "all_source_fluctuation_norm", "error": 5.551115123125783e-17, "threshold": 2e-09, "passed": true, "N": 2, "rows": 81, "expected": 0.12745852164717913}
+{"name": "all_source_fluctuation_norm", "error": 1.3877787807814457e-17, "threshold": 2e-09, "passed": true, "N": 3, "rows": 192, "expected": 0.1040694471350243}
+{"name": "all_source_fluctuation_norm", "error": 1.3877787807814457e-17, "threshold": 2e-09, "passed": true, "N": 4, "rows": 375, "expected": 0.09012678497673272}

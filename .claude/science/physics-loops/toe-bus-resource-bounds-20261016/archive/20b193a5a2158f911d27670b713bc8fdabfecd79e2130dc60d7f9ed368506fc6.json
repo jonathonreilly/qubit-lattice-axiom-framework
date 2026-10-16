@@ -1,0 +1,86 @@
+{
+  "utc": "2026-10-16T03:26:34.254201+00:00",
+  "status": "Frozen exposed same-model source review and extension; root acceptance pending.",
+  "scope_verdict": "Narrow factorization, spectral factor bounds, and explicit matrix-input precision established conditionally; no broader supplier claim.",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/CHECKPOINT.md",
+      "bytes": 1734,
+      "sha256": "0017d7be3210fd279fbbf69ec32331b319033a3a2d53f34f95d8547a403e5b75"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/INITIAL_FINDINGS.md",
+      "bytes": 3021,
+      "sha256": "3f3dc6486346290863e2386d2173b8a9b9fd13d0026ae963c38c3681ef11eeb3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/INITIAL_FINDINGS_FREEZE.json",
+      "bytes": 344,
+      "sha256": "85beec631607c6cfb96f35854a567be1e1d3ac9b36db7031d37f527489fd8bf5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/REVIEW.md",
+      "bytes": 19932,
+      "sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/SOURCE_MANIFEST.json",
+      "bytes": 7183,
+      "sha256": "3517d85649dc00bfad42da5f3a21ab97ab2c47594d3e21008a9a3c3bda9bdd96"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/VERIFICATION.json",
+      "bytes": 3388,
+      "sha256": "f81d0bf7b9bc0317647765df726408ca2992ef5b0ab48c388a16a6c0ee577d68"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_quantitative.py",
+      "bytes": 3584,
+      "sha256": "416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/EXECUTION.json",
+      "bytes": 1906,
+      "sha256": "e56ff8d79a6d5bec3d4098036128f9c68daac05c7521ba6ce3536ca522cdf5a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/LAUNCH.json",
+      "bytes": 1201,
+      "sha256": "2f1abe8a822103cbd45268fd24f8c4748d40b2968d0e4d3d163eb708fcd5946e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/executed_source.py",
+      "bytes": 3584,
+      "sha256": "416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/launcher_at_launch.py",
+      "bytes": 1574,
+      "sha256": "d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/stdout.json",
+      "bytes": 2230,
+      "sha256": "9a9d08a0c1d2a880a51d2e8d80a78b4c60e67a749d55312fd64351406b9f93fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/run_check.py",
+      "bytes": 1574,
+      "sha256": "d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/seal_review.py",
+      "bytes": 10048,
+      "sha256": "1a7077d06f685485f8178fd437cf55837f2b506683bf5b08d09435a7bb66e6e2"
+    }
+  ],
+  "scientific_executions": 1,
+  "retained_audit": false,
+  "fresh_independent_parent_validation": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,96 @@
+{
+  "utc": "2026-10-16T14:10:12.880218+00:00",
+  "kind": "root_integration_source_review",
+  "root_read_complete_for_changed_implementation": true,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 110562,
+    "sha256": "4099c254be3c8f34072da189326d5b266816e13e14f9b0e68f3cde22d374307d"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/bus_resource_common.py",
+    "bytes": 53373,
+    "sha256": "cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 72147,
+    "sha256": "de86bf3ae9d1e781e9775f2e9daf1ae51504e2b6b32d59166a3b21073a30666f"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_resource_publication_review/REVIEW.json",
+    "bytes": 5887,
+    "sha256": "c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9"
+  },
+  "full_read_basis": [
+    "Read complete five changed common functions and global/diff changes; 29 functions reused after exact source identity against the actually executed preparation implementation.",
+    "Read complete extension, assembly, validation, metadata controls/recorder, delivery and sealing code, phase plan, twelve conformance sections, PR body and full six local run streams.",
+    "Five source-primary functions and eight mathematical bodies reused by exact hashes after their earlier complete scoped reviews; source receipt schema preserves its actual absent source_capture field. Future canonical review still requires the field."
+  ],
+  "disposition": "Implementation source accepted for guarded canonical phases and separately recorded canonical/staged reviews; no retained audit.",
+  "substantive_judgment": "Four mathematical parents retain scoped imports. Fixed resource/preparation and separate shrinking-bias runtime bounds remain conditional. Sufficient duration exponents454 and1078 are not efficiency or arbitrary-oracle wall-time claims. Literal H, all outputs, full A2/residuals, restricted inverse, actual phases/reserves and U_E memory are retained.",
+  "metadata_receipts": [
+    {
+      "label": "assemble_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/metadata_runs/assemble_01/EXECUTION.json",
+        "bytes": 2329,
+        "sha256": "01c1dd3b3a5af21dcbfa8fcae8af8275d05103b493ab4b5bbd11795870d5faa3"
+      },
+      "exit_code": 0
+    },
+    {
+      "label": "source_integrity_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/metadata_runs/source_integrity_01/EXECUTION.json",
+        "bytes": 2435,
+        "sha256": "930d138d8d97b22780faea20a2f14f772c7e472191e4345139d3d9ba65909847"
+      },
+      "exit_code": 0
+    },
+    {
+      "label": "unbound_refusal_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/metadata_runs/unbound_refusal_01/EXECUTION.json",
+        "bytes": 2410,
+        "sha256": "3064d12d922a9c745dd939f0379a62dd4b88450da3abc8fe7267d261fd6a8d7c"
+      },
+      "exit_code": 1
+    },
+    {
+      "label": "controls_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/metadata_runs/controls_01/EXECUTION.json",
+        "bytes": 2327,
+        "sha256": "fc1222a768f5f0beb12daa78bd5f0dfff1a1ce18804bbc972fd5123519ead05e"
+      },
+      "exit_code": 0
+    },
+    {
+      "label": "delivery_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/metadata_runs/delivery_01/EXECUTION.json",
+        "bytes": 2324,
+        "sha256": "bfa9a4f212816a0793dc7399c6edad24b463fa3a8715a5fe3c01b701f9e001f1"
+      },
+      "exit_code": 0
+    },
+    {
+      "label": "validation_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_resource_integration_proposal/metadata_runs/validation_01/EXECUTION.json",
+        "bytes": 2339,
+        "sha256": "623bfc6a685202b3df6aa6f316f32db9944341d0470cfb7608449bb8d66f80eb"
+      },
+      "exit_code": 0
+    }
+  ],
+  "unchanged_math_bodies": 8,
+  "exact_proposal_members": 468,
+  "known_limits": "Expected unbound refusal is preserved. Twelve metadata corruptions test provenance only. Source snapshot preserves the earlier failed build and separate recovery without rewriting historical nulls.",
+  "cluster_cap_judgment": "OPEN for this coherent resource milestone as recorded in actual source review; no audit verdict applied.",
+  "scientific_reexecutions": 0,
+  "actual_canonical_acceptance": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

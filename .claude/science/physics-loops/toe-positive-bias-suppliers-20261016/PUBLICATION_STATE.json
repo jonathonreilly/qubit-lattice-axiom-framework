@@ -1,0 +1,12 @@
+{
+  "kind": "unbound_source_only_draft",
+  "actual_git_base": null,
+  "canonical_binding": null,
+  "root_wrapper_review": null,
+  "publication": null,
+  "retained_audit": null,
+  "historical_scientific_programs_replayed": 0,
+  "scientific_programs_run_this_draft": 0,
+  "static_bias_no_go_submission": "FAIL/partial-narrowing",
+  "editable_prompts_changed": []
+}

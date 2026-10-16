@@ -1,0 +1,21 @@
+# Proposed box-padding reduction for a positive chain supplier
+
+Root proposal only, not accepted science or a supplied physical interface. It is a possible follow-on to the still separately checked positive-chain induction. No published theorem or physical axiom is changed. The original root chain proposal is positive_chain_root_proposal/PROPOSED_LEMMAS.md, SHA256 7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb. The accepted static-bias transfer remains conditional on computable input data and the complete bus premises.
+
+Suppose the complete original finite plant occupies a known subset O of a rectangular lattice box. Assume every other site F of that box is either an explicitly retained physical qubit or genuinely available for adding a qubit. Include ALL those factors, and assume the supplied isolation contract covers the full chosen box and its exterior corridors. This is an extra geometric/access premise, not a conclusion from an abstract list of old qubits. No occupied site may be erased, moved, treated as vacant or silently excluded.
+
+Regard S=O tensor F as the extended old plant, with literal old Hamiltonian H_S=H_O tensor I_F and target W_S=W_O tensor I_F. Every actual preexisting filler drift/coupling must either be included in H_S and in the desired full comparator or canceled under a separately supplied, paid operation; the displayed identity drift is only valid for physically idle fillers. The present proposal assumes that idle-filler condition rather than inferring it from newly introduced notation.
+
+A rectangular nearest-neighbor box has a Hamiltonian path beginning at a corner: snake along x within each y row, reverse the row traversal when moving between z layers so consecutive layers meet across one z edge. Reverse the whole path if the chain theorem's designated endpoint is its last site. This gives an endpoint at the chosen corner with a negative-coordinate exterior direction. The separate bus corridor vacancy/isolation premise remains required. An explicit coordinate construction, including side-length-one cases, still needs an independent check.
+
+If arbitrary added positive onsite and nearest-neighbor blocks are permitted on every site and path edge of this extended box, the proposed fixed positive chain C_S would supply a strong direction for H_S+s C_S by its nonzero leading Krylov-Gram coefficient. This permission is stronger than a single accessible old port or a specified isotropic exchange path. Keep the complete original H_O with coefficient one; every installed scalar and positive block counts in the incident-strength ledger. The fixed finite box and C_S may depend on the old plant but not on target accuracy.
+
+A useful observation is that no pure or known filler state is required for the state-vector/channel transfer itself. Its arbitrary-input, arbitrary-reference guarantee can be applied to the complete S plus external R, even when O,F,R are correlated. Its target is the literal operator
+
+    (exp(-is H_O) W_O exp(-iT H_O)) tensor I_F tensor I_R
+
+on that same full joint input, tensored with the specified comparison state of every bus/source output. Thus every filler factor and its correlations are retained. This does not manufacture a ready bus/source state, make unknown filler drift zero, supply access or isolation, or prove energy-moment guarantees for free. Any energy corollary must use the actual extended Hamiltonian, state and reserves.
+
+If these conditions are proved and supplied, padding can replace a separately given Hamiltonian path on only the original occupied subset by a known full-box path. It cannot turn arbitrary occupied geometry into free vacancy or unrestricted control. It does not solve native phase-referenced preparation, calibration over the actual long runtime, physical measured-energy identification, records or reset/reuse.
+
+Next decisive check: explicit finite-box path enumeration/proof and exact arbitrary-correlated-filler comparator identity; compare the proposed idle-filler and added-edge permissions with the precise current physical interface. Do not fold this proposal into the chain theorem without that check and exact accepted source identities.

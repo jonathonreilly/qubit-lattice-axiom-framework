@@ -1,0 +1,2755 @@
+{
+  "deduplicated_blobs": 195,
+  "sources": [
+    {
+      "bytes": 66336,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2.md",
+      "roles": [
+        "direct acceptance reference",
+        "direct canonical mathematical parent"
+      ],
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "bytes": 115070,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823.md",
+      "roles": [
+        "actual parent publication named source"
+      ],
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+    },
+    {
+      "bytes": 133383,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36.md",
+      "roles": [
+        "direct canonical mathematical parent"
+      ],
+      "sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36"
+    },
+    {
+      "bytes": 83919,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "roles": [
+        "direct canonical mathematical parent"
+      ],
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 57191,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_installed_preparation_2026_10_16.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137.py",
+      "roles": [
+        "actual parent publication named source"
+      ],
+      "sha256": "af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137"
+    },
+    {
+      "bytes": 3887,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525.json",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525"
+    },
+    {
+      "bytes": 17568,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1.md",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+    },
+    {
+      "bytes": 2248,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/SOURCE_MANIFEST.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c.json",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c"
+    },
+    {
+      "bytes": 3952,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/phase_memory_check.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b.py",
+      "roles": [
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b"
+    },
+    {
+      "bytes": 2859,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262.json",
+      "roles": [
+        "direct acceptance reference",
+        "actual selected process slew-isometry"
+      ],
+      "sha256": "dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262"
+    },
+    {
+      "bytes": 2170,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f07f751c93d25bd6119cd00373b541db050f5e60e4a4765b91b2276e3f2a5e1f.json",
+      "roles": [
+        "actual selected process slew-isometry"
+      ],
+      "sha256": "f07f751c93d25bd6119cd00373b541db050f5e60e4a4765b91b2276e3f2a5e1f"
+    },
+    {
+      "bytes": 3952,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b.py",
+      "roles": [
+        "actual selected process slew-isometry",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b"
+    },
+    {
+      "bytes": 1782,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/launcher_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c.py",
+      "roles": [
+        "actual selected process slew-isometry",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c"
+    },
+    {
+      "bytes": 2248,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/source_inputs.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c.json",
+      "roles": [
+        "actual selected process slew-isometry",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process slew-isometry",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1233,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8f427613ebe99471994e25ea6388869025985da1a3dde7abd968a5db3b3346ee.blob",
+      "roles": [
+        "actual selected process slew-isometry",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "8f427613ebe99471994e25ea6388869025985da1a3dde7abd968a5db3b3346ee"
+    },
+    {
+      "bytes": 1782,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_check.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c.py",
+      "roles": [
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c"
+    },
+    {
+      "bytes": 440,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c.json",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c"
+    },
+    {
+      "bytes": 7516,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44.md",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+    },
+    {
+      "bytes": 6990,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25.md",
+      "roles": [
+        "member of bus_bounded_slew_preparation_root_review/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    },
+    {
+      "bytes": 682,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/5e8bf3763390136d0181ede4d5e2d60fc721b40af2239be9e1a5735d54bae703.json",
+      "roles": [
+        "immediate freeze",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "5e8bf3763390136d0181ede4d5e2d60fc721b40af2239be9e1a5735d54bae703"
+    },
+    {
+      "bytes": 3667,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473.json",
+      "roles": [
+        "member of bus_bounded_slew_preparation_root_review/FREEZE.json",
+        "controlling qualified acceptance",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+    },
+    {
+      "bytes": 3344,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/record_acceptance.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270.py",
+      "roles": [
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270"
+    },
+    {
+      "bytes": 31003,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29.md",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "bytes": 7791,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3.json",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3"
+    },
+    {
+      "bytes": 1868,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9e8eec6c662c9de30082d3f9c5be0e537a60afe23ded7b9474b8262fdc172d15.json",
+      "roles": [
+        "actual selected process author-algebra"
+      ],
+      "sha256": "9e8eec6c662c9de30082d3f9c5be0e537a60afe23ded7b9474b8262fdc172d15"
+    },
+    {
+      "bytes": 1177,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7f4dc31cb18d0fcd160660ecdc01f793f29a078b8ccde51f69a39e26c4275bb8.json",
+      "roles": [
+        "actual selected process author-algebra"
+      ],
+      "sha256": "7f4dc31cb18d0fcd160660ecdc01f793f29a078b8ccde51f69a39e26c4275bb8"
+    },
+    {
+      "bytes": 3420,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c1677df40bb9a5861b7b29a1ca5f301c4adbe632d329d85e2d9b30cae1ceea5.py",
+      "roles": [
+        "actual selected process author-algebra",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "1c1677df40bb9a5861b7b29a1ca5f301c4adbe632d329d85e2d9b30cae1ceea5"
+    },
+    {
+      "bytes": 1470,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/launcher_at_launch.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6c774eca97d7f2bbfcea7ca59833a59aba4e0d62973e0b20849329237c51f433.py",
+      "roles": [
+        "actual selected process author-algebra",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "6c774eca97d7f2bbfcea7ca59833a59aba4e0d62973e0b20849329237c51f433"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/stderr.txt",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt",
+      "roles": [
+        "actual selected process author-algebra",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 823,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/stdout.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/28436b704dc0879135b3963ff7a891ea110af0a00a979e27e418a0982285e957.json",
+      "roles": [
+        "actual selected process author-algebra",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "28436b704dc0879135b3963ff7a891ea110af0a00a979e27e418a0982285e957"
+    },
+    {
+      "bytes": 10972,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a28cdbb1cda8615dd0afa4fb75755fb25d0badac1a63d45e653c7034c5392465.json",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "a28cdbb1cda8615dd0afa4fb75755fb25d0badac1a63d45e653c7034c5392465"
+    },
+    {
+      "bytes": 22431,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8.md",
+      "roles": [
+        "direct acceptance reference"
+      ],
+      "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8"
+    },
+    {
+      "bytes": 865,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/16be1bfabc638c7459a06c85f56e717f354b15cabcffb29a7ffc16d5ce651c93.json",
+      "roles": [
+        "direct acceptance reference",
+        "actual selected process exposed-algebra"
+      ],
+      "sha256": "16be1bfabc638c7459a06c85f56e717f354b15cabcffb29a7ffc16d5ce651c93"
+    },
+    {
+      "bytes": 4327,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a6186f3462439abdbd19c2c65ed3d96cb721907a66c19ea49843990408a79540.json",
+      "roles": [
+        "actual selected process exposed-algebra"
+      ],
+      "sha256": "a6186f3462439abdbd19c2c65ed3d96cb721907a66c19ea49843990408a79540"
+    },
+    {
+      "bytes": 10521,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd.py",
+      "roles": [
+        "actual selected process exposed-algebra"
+      ],
+      "sha256": "52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd"
+    },
+    {
+      "bytes": 2233,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/launcher_at_launch.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a65c63ba5430446e57ece8e37eef30e08f7fd55bc234392e01f8e1c24eb224d9.py",
+      "roles": [
+        "actual selected process exposed-algebra"
+      ],
+      "sha256": "a65c63ba5430446e57ece8e37eef30e08f7fd55bc234392e01f8e1c24eb224d9"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/stderr.txt",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt",
+      "roles": [
+        "actual selected process exposed-algebra"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9528,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/stdout.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/160e6f51eddb8f2c01b1b7d34c510b8f875ca5b4bab0e8fe4f3a2df57abde107.json",
+      "roles": [
+        "actual selected process exposed-algebra"
+      ],
+      "sha256": "160e6f51eddb8f2c01b1b7d34c510b8f875ca5b4bab0e8fe4f3a2df57abde107"
+    },
+    {
+      "bytes": 949,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/46df65bf93c82c336e6b5c04937c6813ffc8bc5d87aa29ed837bf62f5ff15c48.json",
+      "roles": [
+        "direct acceptance reference",
+        "actual selected process exposed-provenance"
+      ],
+      "sha256": "46df65bf93c82c336e6b5c04937c6813ffc8bc5d87aa29ed837bf62f5ff15c48"
+    },
+    {
+      "bytes": 642,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/21f91a53c4100d4aa13abe869aa47ffe4929a22b93ba689be82caa62e3970ddf.json",
+      "roles": [
+        "actual selected process exposed-provenance"
+      ],
+      "sha256": "21f91a53c4100d4aa13abe869aa47ffe4929a22b93ba689be82caa62e3970ddf"
+    },
+    {
+      "bytes": 2440,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f9e2c8dee3d50722119baaf35cb16feacc69e6571445bd45599bd6a436f62a83.py",
+      "roles": [
+        "actual selected process exposed-provenance"
+      ],
+      "sha256": "f9e2c8dee3d50722119baaf35cb16feacc69e6571445bd45599bd6a436f62a83"
+    },
+    {
+      "bytes": 1610,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/launcher_at_launch.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/51b3c50108ac1f43aa95d2ab3c6ae06f4ecd8095e872f0f56dd054cb89f2309a.py",
+      "roles": [
+        "actual selected process exposed-provenance"
+      ],
+      "sha256": "51b3c50108ac1f43aa95d2ab3c6ae06f4ecd8095e872f0f56dd054cb89f2309a"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/stderr.txt",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt",
+      "roles": [
+        "actual selected process exposed-provenance"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 517,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_002_provenance/stdout.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ad6521aa6cf09cf9c952e752af3fdeb769a91f5def9ccd29d2c55916bc97c027.json",
+      "roles": [
+        "actual selected process exposed-provenance"
+      ],
+      "sha256": "ad6521aa6cf09cf9c952e752af3fdeb769a91f5def9ccd29d2c55916bc97c027"
+    },
+    {
+      "bytes": 64064,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/FINAL_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93.json",
+      "roles": [
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93"
+    },
+    {
+      "bytes": 51748,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/bus_preparation_common.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+      "roles": [
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+    },
+    {
+      "bytes": 88,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/publish_bus_preparation.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e.py",
+      "roles": [
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e"
+    },
+    {
+      "bytes": 3273,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/proposal/.claude/science/physics-loops/toe-bus-installed-preparation-20261016/ACTUAL_EVIDENCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7070d0ab6fbbfb937eec4d86f5a79433167dbcecb1ecc640bb43d8af47996e5d.json",
+      "roles": [
+        "previous selected preparation evidence inventory"
+      ],
+      "sha256": "7070d0ab6fbbfb937eec4d86f5a79433167dbcecb1ecc640bb43d8af47996e5d"
+    },
+    {
+      "bytes": 1686,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/CHECKPOINT.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/aaede3dbd3eb301b511e4f685a4775f58bc9dfef727be41df0f342c6b1ef772e.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "aaede3dbd3eb301b511e4f685a4775f58bc9dfef727be41df0f342c6b1ef772e"
+    },
+    {
+      "bytes": 5636,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/57657ae8f3568932180c78d6504deae992650eb260e1039eb0d5fce7db7f24d4.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "57657ae8f3568932180c78d6504deae992650eb260e1039eb0d5fce7db7f24d4"
+    },
+    {
+      "bytes": 1783,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/INTERRUPTION_RECOVERY.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/df42a50f7d4e1a141c33b943d00b1d26b598e84533a955d516dd376c1eafaf67.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "df42a50f7d4e1a141c33b943d00b1d26b598e84533a955d516dd376c1eafaf67"
+    },
+    {
+      "bytes": 15735,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "direct acceptance reference",
+        "unchanged embedded body"
+      ],
+      "sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f"
+    },
+    {
+      "bytes": 824,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/SEAL_VALIDATION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/535410d2671e566663c44772860add0a260749b485be773ddddc01ed387e8957.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "535410d2671e566663c44772860add0a260749b485be773ddddc01ed387e8957"
+    },
+    {
+      "bytes": 6919,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/SOURCES.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/bd87994c906a47f71c704602e008e84e171247612106787e9b020ee642a9ea6c.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "direct acceptance reference",
+        "source/exposure manifest"
+      ],
+      "sha256": "bd87994c906a47f71c704602e008e84e171247612106787e9b020ee642a9ea6c"
+    },
+    {
+      "bytes": 3152,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/SOURCE_COVERAGE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b03bfa093bca761959100ff155302e6674bc04a5c11c92ad721fff70ec7c7993.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "b03bfa093bca761959100ff155302e6674bc04a5c11c92ad721fff70ec7c7993"
+    },
+    {
+      "bytes": 4906,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/capture_sources.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7.py",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7"
+    },
+    {
+      "bytes": 14548,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/interrupted_original/REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c9174369fd3d3143b570b8708d912c4c3f330871a7d97e561fa35eb1b724eaa4.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "c9174369fd3d3143b570b8708d912c4c3f330871a7d97e561fa35eb1b724eaa4"
+    },
+    {
+      "bytes": 2489,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/interrupted_original/SOURCE_COVERAGE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1696732b1a09f6ee0fdaf14b0ed6b9dce51db7bb5b7abe46730cab8cdeec13e8.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "1696732b1a09f6ee0fdaf14b0ed6b9dce51db7bb5b7abe46730cab8cdeec13e8"
+    },
+    {
+      "bytes": 4906,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/interrupted_original/capture_sources.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7.py",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7"
+    },
+    {
+      "bytes": 1153,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/metadata_run/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/dae44f200f62b1485ddb69418bc586a0daa9f671bcc13ca349a40571ef0e9ea9.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "direct acceptance reference",
+        "actual selected process preparation-resource-capture"
+      ],
+      "sha256": "dae44f200f62b1485ddb69418bc586a0daa9f671bcc13ca349a40571ef0e9ea9"
+    },
+    {
+      "bytes": 739,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/metadata_run/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/bfffe10e61ca688641da29797243805db68e2d8aec310416ca7761bf2b43b6be.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "actual selected process preparation-resource-capture"
+      ],
+      "sha256": "bfffe10e61ca688641da29797243805db68e2d8aec310416ca7761bf2b43b6be"
+    },
+    {
+      "bytes": 2292,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/metadata_run/executed_launcher.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4.py",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "actual selected process preparation-resource-capture"
+      ],
+      "sha256": "997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4"
+    },
+    {
+      "bytes": 4906,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/metadata_run/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7.py",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "actual selected process preparation-resource-capture"
+      ],
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/metadata_run/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "actual selected process preparation-resource-capture"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 113,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/metadata_run/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/176fe6944c44283142c9ff6ae26c15530f139c66a76f963e3ae5066c36b6669e.blob",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json",
+        "actual selected process preparation-resource-capture"
+      ],
+      "sha256": "176fe6944c44283142c9ff6ae26c15530f139c66a76f963e3ae5066c36b6669e"
+    },
+    {
+      "bytes": 2292,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/record_capture.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4.py",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4"
+    },
+    {
+      "bytes": 6139,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/seal_packet.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ffd9b6c0d25477182ba8fe79bc8bbfd55748b4ad43d6e8e6fba9787c60ec681b.py",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "ffd9b6c0d25477182ba8fe79bc8bbfd55748b4ad43d6e8e6fba9787c60ec681b"
+    },
+    {
+      "bytes": 83919,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/canonical_bus.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 31003,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/installed_preparation.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "bytes": 3462,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/preparation_acceptance.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "bytes": 5082,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/preparation_qualifications.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "bytes": 6805,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/proposal.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990"
+    },
+    {
+      "bytes": 436,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/proposal_freeze.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8"
+    },
+    {
+      "bytes": 2567,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/resource_acceptance.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd"
+    },
+    {
+      "bytes": 36324,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/resource_derivation.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "bytes": 4683,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/resource_freeze.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+    },
+    {
+      "bytes": 7196,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/resource_qualifications.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "bytes": 3667,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/slew_acceptance.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+    },
+    {
+      "bytes": 7516,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/slew_proposal.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+    },
+    {
+      "bytes": 6990,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/slew_qualifications.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    },
+    {
+      "bytes": 17568,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/slew_review.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1.md",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+    },
+    {
+      "bytes": 3887,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/sources/slew_review_freeze.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525.json",
+      "roles": [
+        "member of bus_preparation_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525"
+    },
+    {
+      "bytes": 436,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_proposal/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8"
+    },
+    {
+      "bytes": 6805,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_proposal/PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990.md",
+      "roles": [
+        "member of bus_preparation_resource_root_proposal/FREEZE.json",
+        "direct acceptance reference",
+        "unchanged embedded body"
+      ],
+      "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990"
+    },
+    {
+      "bytes": 4913,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e.md",
+      "roles": [
+        "member of bus_preparation_resource_root_review/FREEZE.json",
+        "direct acceptance reference",
+        "unchanged embedded body"
+      ],
+      "sha256": "0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e"
+    },
+    {
+      "bytes": 923,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/386f6ed6c8e7a440817ec6103a2c19b9151cf20625dcf3a94cbc3cc99da2cddd.json",
+      "roles": [
+        "immediate freeze",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "386f6ed6c8e7a440817ec6103a2c19b9151cf20625dcf3a94cbc3cc99da2cddd"
+    },
+    {
+      "bytes": 2966,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a522894a6c0817ce3f7ea63fa10bae4f250d119ad908fb0d16e67376f19a0c6d.json",
+      "roles": [
+        "member of bus_preparation_resource_root_review/FREEZE.json",
+        "controlling qualified acceptance",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "a522894a6c0817ce3f7ea63fa10bae4f250d119ad908fb0d16e67376f19a0c6d"
+    },
+    {
+      "bytes": 4280,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/record_acceptance.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/07fd4762fbc51b70561af763d0d785aa253a460037ecb9c9e022864500f75618.py",
+      "roles": [
+        "member of bus_preparation_resource_root_review/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "07fd4762fbc51b70561af763d0d785aa253a460037ecb9c9e022864500f75618"
+    },
+    {
+      "bytes": 5394,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9.md",
+      "roles": [
+        "member of bus_preparation_root_review/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9"
+    },
+    {
+      "bytes": 418,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345.json",
+      "roles": [
+        "member of bus_preparation_root_review/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345"
+    },
+    {
+      "bytes": 5082,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e.md",
+      "roles": [
+        "member of bus_preparation_root_review/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "bytes": 1512,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ad7c2dbc2fb8865fed6d09ea188b8dafed692160cdd62983b45eca4d6c90200a.json",
+      "roles": [
+        "immediate freeze",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "ad7c2dbc2fb8865fed6d09ea188b8dafed692160cdd62983b45eca4d6c90200a"
+    },
+    {
+      "bytes": 3462,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641.json",
+      "roles": [
+        "member of bus_preparation_root_review/FREEZE.json",
+        "controlling qualified acceptance",
+        "direct acceptance reference",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "bytes": 3655,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/record_acceptance.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716.py",
+      "roles": [
+        "member of bus_preparation_root_review/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716"
+    },
+    {
+      "bytes": 3371,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f.md",
+      "roles": [
+        "specific qualified transfer/direction scope reused"
+      ],
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+    },
+    {
+      "bytes": 4440,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4.json",
+      "roles": [
+        "direct acceptance reference",
+        "specific qualified transfer/direction scope reused"
+      ],
+      "sha256": "382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4"
+    },
+    {
+      "bytes": 216,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ATTACHMENT.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531.json",
+      "roles": [
+        "actual attachment envelope"
+      ],
+      "sha256": "69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531"
+    },
+    {
+      "bytes": 1581,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/PR_BODY.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/19282aa54291c466f4251abda4d19797ffbb3cbbf3565e6c061143dc3e638f37.md",
+      "roles": [
+        "actual parent publication named source"
+      ],
+      "sha256": "19282aa54291c466f4251abda4d19797ffbb3cbbf3565e6c061143dc3e638f37"
+    },
+    {
+      "bytes": 1542,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/PUBLICATION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c.json",
+      "roles": [
+        "actual new preparation parent publication"
+      ],
+      "sha256": "d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c"
+    },
+    {
+      "bytes": 1589,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ROOT_BINDING_INPUT.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3.json",
+      "roles": [
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3"
+    },
+    {
+      "bytes": 931,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/finish/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2.json",
+      "roles": [
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2"
+    },
+    {
+      "bytes": 935,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/345f508a98ce57e7387fb1fc7032b3f4f92068794d56c23e686c7e8f7013395f.json",
+      "roles": [
+        "selected actual parent publication phase"
+      ],
+      "sha256": "345f508a98ce57e7387fb1fc7032b3f4f92068794d56c23e686c7e8f7013395f"
+    },
+    {
+      "bytes": 2520,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/88c039d7f09860512af4b5ccd8cd190ba601d2a7a07703540169483114370d71.json",
+      "roles": [
+        "selected actual parent publication phase",
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "88c039d7f09860512af4b5ccd8cd190ba601d2a7a07703540169483114370d71"
+    },
+    {
+      "bytes": 51748,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish/common_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+      "roles": [
+        "selected actual parent publication phase"
+      ],
+      "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+    },
+    {
+      "bytes": 88,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish/entry_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e.py",
+      "roles": [
+        "selected actual parent publication phase"
+      ],
+      "sha256": "c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "selected actual parent publication phase",
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1456,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/publish/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/092ed74bf525aaf3c1090344af0ed1a0eaf056872bb064c0bda1fa8d2d11b4af.blob",
+      "roles": [
+        "selected actual parent publication phase",
+        "selected publication receipt direct pin"
+      ],
+      "sha256": "092ed74bf525aaf3c1090344af0ed1a0eaf056872bb064c0bda1fa8d2d11b4af"
+    },
+    {
+      "bytes": 1734,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/CHECKPOINT.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0017d7be3210fd279fbbf69ec32331b319033a3a2d53f34f95d8547a403e5b75.md",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "0017d7be3210fd279fbbf69ec32331b319033a3a2d53f34f95d8547a403e5b75"
+    },
+    {
+      "bytes": 3021,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/INITIAL_FINDINGS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3f3dc6486346290863e2386d2173b8a9b9fd13d0026ae963c38c3681ef11eeb3.md",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "3f3dc6486346290863e2386d2173b8a9b9fd13d0026ae963c38c3681ef11eeb3"
+    },
+    {
+      "bytes": 344,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/INITIAL_FINDINGS_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/85beec631607c6cfb96f35854a567be1e1d3ac9b36db7031d37f527489fd8bf5.json",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "85beec631607c6cfb96f35854a567be1e1d3ac9b36db7031d37f527489fd8bf5"
+    },
+    {
+      "bytes": 19932,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701.md",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701"
+    },
+    {
+      "bytes": 4750,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/20b193a5a2158f911d27670b713bc8fdabfecd79e2130dc60d7f9ed368506fc6.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "20b193a5a2158f911d27670b713bc8fdabfecd79e2130dc60d7f9ed368506fc6"
+    },
+    {
+      "bytes": 7183,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/SOURCE_MANIFEST.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3517d85649dc00bfad42da5f3a21ab97ab2c47594d3e21008a9a3c3bda9bdd96.json",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "3517d85649dc00bfad42da5f3a21ab97ab2c47594d3e21008a9a3c3bda9bdd96"
+    },
+    {
+      "bytes": 3388,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/VERIFICATION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f81d0bf7b9bc0317647765df726408ca2992ef5b0ab48c388a16a6c0ee577d68.json",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "f81d0bf7b9bc0317647765df726408ca2992ef5b0ab48c388a16a6c0ee577d68"
+    },
+    {
+      "bytes": 3584,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_quantitative.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6.py",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6"
+    },
+    {
+      "bytes": 1906,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e56ff8d79a6d5bec3d4098036128f9c68daac05c7521ba6ce3536ca522cdf5a3.json",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+        "direct acceptance reference",
+        "actual selected process quantitative-exact"
+      ],
+      "sha256": "e56ff8d79a6d5bec3d4098036128f9c68daac05c7521ba6ce3536ca522cdf5a3"
+    },
+    {
+      "bytes": 1201,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2f1abe8a822103cbd45268fd24f8c4748d40b2968d0e4d3d163eb708fcd5946e.json",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+        "actual selected process quantitative-exact"
+      ],
+      "sha256": "2f1abe8a822103cbd45268fd24f8c4748d40b2968d0e4d3d163eb708fcd5946e"
+    },
+    {
+      "bytes": 3584,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6.py",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+        "actual selected process quantitative-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "416fd344c50c4ee724b88fd9530ba7a00c9dc6e9ab960f3bec76f0afe47c4dd6"
+    },
+    {
+      "bytes": 1574,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/launcher_at_launch.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3.py",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+        "actual selected process quantitative-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/stderr.txt",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+        "actual selected process quantitative-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2230,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/stdout.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9a9d08a0c1d2a880a51d2e8d80a78b4c60e67a749d55312fd64351406b9f93fa.json",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+        "actual selected process quantitative-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "9a9d08a0c1d2a880a51d2e8d80a78b4c60e67a749d55312fd64351406b9f93fa"
+    },
+    {
+      "bytes": 1574,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/run_check.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3.py",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "d254e7bbd852c50b6d3b84edf259b091d260f87ce7ede56c861c166c8d7eb9d3"
+    },
+    {
+      "bytes": 10048,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/seal_review.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1a7077d06f685485f8178fd437cf55837f2b506683bf5b08d09435a7bb66e6e2.py",
+      "roles": [
+        "member of quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json"
+      ],
+      "sha256": "1a7077d06f685485f8178fd437cf55837f2b506683bf5b08d09435a7bb66e6e2"
+    },
+    {
+      "bytes": 435,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812.json",
+      "roles": [
+        "immediate freeze",
+        "member of quantitative_bias_selection_root_proposal/RECONCILIATION_FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812"
+    },
+    {
+      "bytes": 2334,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PRIOR_RESULT_RECONCILIATION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567.md",
+      "roles": [
+        "member of quantitative_bias_selection_root_proposal/RECONCILIATION_FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567"
+    },
+    {
+      "bytes": 5004,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf.md",
+      "roles": [
+        "member of quantitative_bias_selection_root_proposal/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf"
+    },
+    {
+      "bytes": 726,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/RECONCILIATION_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/45823f7f676234bfd8b8233ab73d8d06604f0fe9e6923097ce0980fad71d5cdd.json",
+      "roles": [
+        "immediate freeze"
+      ],
+      "sha256": "45823f7f676234bfd8b8233ab73d8d06604f0fe9e6923097ce0980fad71d5cdd"
+    },
+    {
+      "bytes": 3826,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386.md",
+      "roles": [
+        "member of quantitative_bias_selection_root_review/FREEZE.json",
+        "direct acceptance reference",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "bytes": 1029,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/37f588c4790dc695db88e4420da5d5903721837eceac46a0d1e3e50db9b63e09.json",
+      "roles": [
+        "immediate freeze",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "37f588c4790dc695db88e4420da5d5903721837eceac46a0d1e3e50db9b63e09"
+    },
+    {
+      "bytes": 5394,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/PRE_REVIEW_ANALYTIC_NOTES.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8db3a92800a16e369b196444c91be40689b5ee477ca2e186e00d14813e926146.md",
+      "roles": [
+        "member of quantitative_bias_selection_root_review/PRE_REVIEW_FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "8db3a92800a16e369b196444c91be40689b5ee477ca2e186e00d14813e926146"
+    },
+    {
+      "bytes": 462,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/PRE_REVIEW_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/895059d2212b31324279490d387a004ad08f4b320ab2d9f872cd2e6ff944be17.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "895059d2212b31324279490d387a004ad08f4b320ab2d9f872cd2e6ff944be17"
+    },
+    {
+      "bytes": 3894,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff.json",
+      "roles": [
+        "member of quantitative_bias_selection_root_review/FREEZE.json",
+        "controlling qualified acceptance",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "bytes": 7470,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/record_acceptance.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8a18e080aa0702912766d61cef93266a86b7112482129cfd69c4c21e3000dcea.py",
+      "roles": [
+        "member of quantitative_bias_selection_root_review/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "8a18e080aa0702912766d61cef93266a86b7112482129cfd69c4c21e3000dcea"
+    },
+    {
+      "bytes": 517,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/CHECKPOINT.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a262b6d7fb1b89c8bb2e2b5a1346ce40e3a5be4ec347661ce68dc4be474233d3.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "a262b6d7fb1b89c8bb2e2b5a1346ce40e3a5be4ec347661ce68dc4be474233d3"
+    },
+    {
+      "bytes": 1632,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/CHECK_EVIDENCE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b602ebb65b952762881055ce750ab7ec6d297b5442933efd8fad69b435e6b31d.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "b602ebb65b952762881055ce750ab7ec6d297b5442933efd8fad69b435e6b31d"
+    },
+    {
+      "bytes": 3588,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/CHECK_RESULT.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105"
+    },
+    {
+      "bytes": 1409,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/EXACT_GRAM_RESULT.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e"
+    },
+    {
+      "bytes": 6317,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e"
+    },
+    {
+      "bytes": 21520,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "bytes": 2444,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/REVIEW_STATUS.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/daf6bcf13818b36ee7830e9e0525a2c0c8cf149710b801e6649133da45f803c7.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "daf6bcf13818b36ee7830e9e0525a2c0c8cf149710b801e6649133da45f803c7"
+    },
+    {
+      "bytes": 3639,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/SOURCE_COVERAGE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4348c1468c9d5a1eb7087aa4d64e4954569dcb021481205e7975e8d1fd92b169.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "4348c1468c9d5a1eb7087aa4d64e4954569dcb021481205e7975e8d1fd92b169"
+    },
+    {
+      "bytes": 1785,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/SOURCE_COVERAGE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/483872990d9612bad59f2885d040e6c89aad4e7e7fcedc873b40c5ba5ddee496.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "483872990d9612bad59f2885d040e6c89aad4e7e7fcedc873b40c5ba5ddee496"
+    },
+    {
+      "bytes": 3075,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/SOURCE_MANIFEST.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+    },
+    {
+      "bytes": 4479,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/exact_gram_check.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548"
+    },
+    {
+      "bytes": 1861,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/run_check.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2"
+    },
+    {
+      "bytes": 1857,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/run_exact_check.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd"
+    },
+    {
+      "bytes": 2891,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/exact_gram/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c143bb67cb2bba4db1f2c5096f92d85574fd327b11c88dd3f2e5d14d2ecb99ea.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "direct acceptance reference",
+        "actual selected process reachable-exact"
+      ],
+      "sha256": "c143bb67cb2bba4db1f2c5096f92d85574fd327b11c88dd3f2e5d14d2ecb99ea"
+    },
+    {
+      "bytes": 2196,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/exact_gram/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0272183784213d0343af8f69a334c66b56e42579df79df6ed5ea4036bceaf23b.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-exact"
+      ],
+      "sha256": "0272183784213d0343af8f69a334c66b56e42579df79df6ed5ea4036bceaf23b"
+    },
+    {
+      "bytes": 4479,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/exact_gram/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548"
+    },
+    {
+      "bytes": 1857,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/exact_gram/launcher_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd"
+    },
+    {
+      "bytes": 3075,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/exact_gram/source_inputs.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/exact_gram/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1409,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/exact_gram/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e.blob",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-exact",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e"
+    },
+    {
+      "bytes": 2920,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/94b43911eb01ed0134c83e6526123c9c06e6e759a2227e54256e153ecbd523bd.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "direct acceptance reference",
+        "actual selected process reachable-numerical"
+      ],
+      "sha256": "94b43911eb01ed0134c83e6526123c9c06e6e759a2227e54256e153ecbd523bd"
+    },
+    {
+      "bytes": 2215,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/LAUNCH.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1eea710e0d5271968a862bb9fb961fee93f6d5570e08958309e84b23b3766938.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-numerical"
+      ],
+      "sha256": "1eea710e0d5271968a862bb9fb961fee93f6d5570e08958309e84b23b3766938"
+    },
+    {
+      "bytes": 9106,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-numerical",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f"
+    },
+    {
+      "bytes": 1861,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/launcher_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-numerical",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2"
+    },
+    {
+      "bytes": 3075,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/source_inputs.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-numerical",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-numerical",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3588,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105.blob",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual selected process reachable-numerical",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105"
+    },
+    {
+      "bytes": 9106,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/source_envelope_check.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f.py",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f"
+    },
+    {
+      "bytes": 8361,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/00_PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "bytes": 410,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/01_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95.json",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95"
+    },
+    {
+      "bytes": 83919,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/02_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 1265,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/03_AGENTS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "bytes": 15435,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/04_SCIENCE_WORKFLOW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 2180,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/05_SKILL_FRESHNESS_CHECK.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 13419,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/06_SKILL.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 14490,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/07_SKILL.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 4975,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/sources/08_proof-search-governance.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.md",
+      "roles": [
+        "member of reachable_bus_corrector_exposed_check/FREEZE.json"
+      ],
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 410,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_proposal/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95"
+    },
+    {
+      "bytes": 8361,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_proposal/PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97.md",
+      "roles": [
+        "member of reachable_bus_corrector_root_proposal/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "bytes": 4734,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21.md",
+      "roles": [
+        "member of reachable_bus_corrector_root_review/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "bytes": 1011,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cac3f5741116c3d1c044028980a901dded3b2696c3830d7a4bf24836d503351f.json",
+      "roles": [
+        "immediate freeze",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "cac3f5741116c3d1c044028980a901dded3b2696c3830d7a4bf24836d503351f"
+    },
+    {
+      "bytes": 2594,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62.json",
+      "roles": [
+        "member of reachable_bus_corrector_root_review/FREEZE.json",
+        "direct acceptance reference",
+        "controlling qualified acceptance",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    },
+    {
+      "bytes": 3455,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/record_acceptance.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/568fb5201f12a717bbeea4842393484b8095176b0f619ce2006c9edce8d88ea4.py",
+      "roles": [
+        "member of reachable_bus_corrector_root_review/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "568fb5201f12a717bbeea4842393484b8095176b0f619ce2006c9edce8d88ea4"
+    },
+    {
+      "bytes": 1720,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/CHECKPOINT.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/762e8b0423570ca12445a0152f08f607515dc35e2d24a3d7f67e7074a1820c2b.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "762e8b0423570ca12445a0152f08f607515dc35e2d24a3d7f67e7074a1820c2b"
+    },
+    {
+      "bytes": 1349,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/CHECK_EVIDENCE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a33e1d166127806e7da387454a9c9ce780e70f839fe2237f0a7de4b8121351ae.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "a33e1d166127806e7da387454a9c9ce780e70f839fe2237f0a7de4b8121351ae"
+    },
+    {
+      "bytes": 36324,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/DERIVATION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json",
+        "direct acceptance reference",
+        "unchanged embedded body"
+      ],
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "bytes": 1449,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/EXPOSURE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/30cbf0d3d83a79145929aec75657b340e3849f51c9324ffaba0351a189202a94.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "30cbf0d3d83a79145929aec75657b340e3849f51c9324ffaba0351a189202a94"
+    },
+    {
+      "bytes": 4683,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+    },
+    {
+      "bytes": 3280,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/LEDGER.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f07c6d1069c8feed48c5859968bb1b05a19c13e44e3d66d9db393b18c97d5ab0.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "f07c6d1069c8feed48c5859968bb1b05a19c13e44e3d66d9db393b18c97d5ab0"
+    },
+    {
+      "bytes": 7456,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/SOURCE_MANIFEST.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1.json",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json",
+        "source/exposure manifest"
+      ],
+      "sha256": "03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1"
+    },
+    {
+      "bytes": 8361,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/01_reachable_bus_corrector_root_proposal_PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "bytes": 410,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/02_reachable_bus_corrector_root_proposal_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95.json",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95"
+    },
+    {
+      "bytes": 21520,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/03_reachable_bus_corrector_exposed_check_REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "bytes": 6317,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/04_reachable_bus_corrector_exposed_check_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e.json",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e"
+    },
+    {
+      "bytes": 2594,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/05_reachable_bus_corrector_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62.json",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    },
+    {
+      "bytes": 4734,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/06_reachable_bus_corrector_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "bytes": 83919,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/07_docs_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 5321,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/08_strongly_regular_bus_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726.json",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "bytes": 4507,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/09_strongly_regular_bus_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "bytes": 3894,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/10_quantitative_bias_selection_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff.json",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "bytes": 3826,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/11_quantitative_bias_selection_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "bytes": 11558,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/12_planning_AGENTS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "bytes": 15435,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/13_ai_methodology_SCIENCE_WORKFLOW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 13419,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/14_workhorse_SKILL.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 14490,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/sources/15_physics-claim-reviewer_SKILL.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md",
+      "roles": [
+        "member of reachable_bus_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 6999,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_proposal/CONDITIONAL_LEDGER.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fbd9c4471e0869bc260f26d608ca96b653cd3295f89c26a8359355fd1964a8a5.md",
+      "roles": [
+        "member of reachable_bus_resource_root_proposal/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "fbd9c4471e0869bc260f26d608ca96b653cd3295f89c26a8359355fd1964a8a5"
+    },
+    {
+      "bytes": 415,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_proposal/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d6836428c45b33eb05bcac68f0da85c9e13312fa9346ac5b18861e1bd3335b5f.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "d6836428c45b33eb05bcac68f0da85c9e13312fa9346ac5b18861e1bd3335b5f"
+    },
+    {
+      "bytes": 7196,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b.md",
+      "roles": [
+        "member of reachable_bus_resource_root_review/FREEZE.json",
+        "direct acceptance reference",
+        "unchanged embedded body"
+      ],
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "bytes": 969,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb5625d541660c3f61264d5d6ae3f5647b45cafd18ba5b78b216ac3709de0305.json",
+      "roles": [
+        "immediate freeze",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "fb5625d541660c3f61264d5d6ae3f5647b45cafd18ba5b78b216ac3709de0305"
+    },
+    {
+      "bytes": 2567,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd.json",
+      "roles": [
+        "member of reachable_bus_resource_root_review/FREEZE.json",
+        "controlling qualified acceptance",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd"
+    },
+    {
+      "bytes": 2726,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/record_acceptance.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/69d3a36c51c5931705950e086f256b3837e42b769d93e80b7a67d811c07c747e.py",
+      "roles": [
+        "member of reachable_bus_resource_root_review/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "69d3a36c51c5931705950e086f256b3837e42b769d93e80b7a67d811c07c747e"
+    },
+    {
+      "bytes": 1536,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "roles": [
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 1831,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_bounded_slew_preparation_source_acceptance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/83d7df7665e896fe056e426005cda688722eae2de932b17f56530a7078cdf8bc.json",
+      "roles": [
+        "actual selected process slew-acceptance"
+      ],
+      "sha256": "83d7df7665e896fe056e426005cda688722eae2de932b17f56530a7078cdf8bc"
+    },
+    {
+      "bytes": 3344,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_bounded_slew_preparation_source_acceptance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270.py",
+      "roles": [
+        "actual selected process slew-acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_bounded_slew_preparation_source_acceptance/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process slew-acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 534,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_bounded_slew_preparation_source_acceptance/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/5b6330b94894ea666550a92a63d8a494f5943422922f5345af5abec828010c6e.blob",
+      "roles": [
+        "actual selected process slew-acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "5b6330b94894ea666550a92a63d8a494f5943422922f5345af5abec828010c6e"
+    },
+    {
+      "bytes": 1811,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_resource_source_acceptance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c65b06ba6561a9ed01d1586ebf5acc8fa9be877faa746fd393c1b4533e4f0c98.json",
+      "roles": [
+        "actual selected process bus_preparation_resource_source_acceptance"
+      ],
+      "sha256": "c65b06ba6561a9ed01d1586ebf5acc8fa9be877faa746fd393c1b4533e4f0c98"
+    },
+    {
+      "bytes": 4280,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_resource_source_acceptance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/07fd4762fbc51b70561af763d0d785aa253a460037ecb9c9e022864500f75618.py",
+      "roles": [
+        "actual selected process bus_preparation_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "07fd4762fbc51b70561af763d0d785aa253a460037ecb9c9e022864500f75618"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_resource_source_acceptance/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process bus_preparation_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 596,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_resource_source_acceptance/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/de177bf9b05e32866fb90adfe9a8e80051cf8622df1813c4dee6e65e1478b446.blob",
+      "roles": [
+        "actual selected process bus_preparation_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "de177bf9b05e32866fb90adfe9a8e80051cf8622df1813c4dee6e65e1478b446"
+    },
+    {
+      "bytes": 1766,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_source_acceptance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fa701f7e55fd4b27a7397ba04d4c7d6929bdee1b236c79a6dffdb568640eb1e9.json",
+      "roles": [
+        "actual selected process preparation-acceptance"
+      ],
+      "sha256": "fa701f7e55fd4b27a7397ba04d4c7d6929bdee1b236c79a6dffdb568640eb1e9"
+    },
+    {
+      "bytes": 3655,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_source_acceptance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716.py",
+      "roles": [
+        "actual selected process preparation-acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_source_acceptance/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process preparation-acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 509,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_source_acceptance/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3df1f41f729c46f285b403a4dc9fda0f1f6654dea6a5d81463f1ee57fdc097b1.blob",
+      "roles": [
+        "actual selected process preparation-acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "3df1f41f729c46f285b403a4dc9fda0f1f6654dea6a5d81463f1ee57fdc097b1"
+    },
+    {
+      "bytes": 1795,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/quantitative_bias_source_acceptance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3d582d9a4ef6f267136812d11b10e316c5ba66e196024a0ce0cff42cf86ac2c1.json",
+      "roles": [
+        "actual selected process quantitative_bias_source_acceptance"
+      ],
+      "sha256": "3d582d9a4ef6f267136812d11b10e316c5ba66e196024a0ce0cff42cf86ac2c1"
+    },
+    {
+      "bytes": 7470,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/quantitative_bias_source_acceptance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8a18e080aa0702912766d61cef93266a86b7112482129cfd69c4c21e3000dcea.py",
+      "roles": [
+        "actual selected process quantitative_bias_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "8a18e080aa0702912766d61cef93266a86b7112482129cfd69c4c21e3000dcea"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/quantitative_bias_source_acceptance/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process quantitative_bias_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 890,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/quantitative_bias_source_acceptance/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/68f3d139c86cb61fbcb86485a0207614f10b13418446814fcd3e01e8f83b5efb.blob",
+      "roles": [
+        "actual selected process quantitative_bias_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "68f3d139c86cb61fbcb86485a0207614f10b13418446814fcd3e01e8f83b5efb"
+    },
+    {
+      "bytes": 1801,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_resource_source_acceptance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ab6f7f42eefc80dad4fc5fb4b471467a2335bdbf30ffc0741e6b160e92ba1555.json",
+      "roles": [
+        "actual selected process reachable_bus_resource_source_acceptance"
+      ],
+      "sha256": "ab6f7f42eefc80dad4fc5fb4b471467a2335bdbf30ffc0741e6b160e92ba1555"
+    },
+    {
+      "bytes": 2726,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_resource_source_acceptance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/69d3a36c51c5931705950e086f256b3837e42b769d93e80b7a67d811c07c747e.py",
+      "roles": [
+        "actual selected process reachable_bus_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "69d3a36c51c5931705950e086f256b3837e42b769d93e80b7a67d811c07c747e"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_resource_source_acceptance/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process reachable_bus_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 522,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_resource_source_acceptance/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/09ab5134030ef511d03782dbc70438b6f4f14bd393749a10dcb741c8f9e1728e.blob",
+      "roles": [
+        "actual selected process reachable_bus_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "09ab5134030ef511d03782dbc70438b6f4f14bd393749a10dcb741c8f9e1728e"
+    },
+    {
+      "bytes": 1775,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_source_acceptance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a915d94a6248cc7a2b5849ea348ad5660ff1925c60ed03709fd1f673205077cd.json",
+      "roles": [
+        "actual selected process reachable_bus_source_acceptance"
+      ],
+      "sha256": "a915d94a6248cc7a2b5849ea348ad5660ff1925c60ed03709fd1f673205077cd"
+    },
+    {
+      "bytes": 3455,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_source_acceptance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/568fb5201f12a717bbeea4842393484b8095176b0f619ce2006c9edce8d88ea4.py",
+      "roles": [
+        "actual selected process reachable_bus_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "568fb5201f12a717bbeea4842393484b8095176b0f619ce2006c9edce8d88ea4"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_source_acceptance/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process reachable_bus_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 555,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reachable_bus_source_acceptance/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/03ff75751a4c77728eaa499627befa01e9139f58c7a975aed2d9fb0c4097f036.blob",
+      "roles": [
+        "actual selected process reachable_bus_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "03ff75751a4c77728eaa499627befa01e9139f58c7a975aed2d9fb0c4097f036"
+    },
+    {
+      "bytes": 1806,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/shrinking_bias_resource_source_acceptance/EXECUTION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/db122322ece57887265783eb373667d5070a713f9a52da796914e699152faf69.json",
+      "roles": [
+        "actual selected process shrinking_bias_resource_source_acceptance"
+      ],
+      "sha256": "db122322ece57887265783eb373667d5070a713f9a52da796914e699152faf69"
+    },
+    {
+      "bytes": 3680,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/shrinking_bias_resource_source_acceptance/executed_source.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0b3be664322498b5ee9ba4e9e0441dc37dd20d96bf9319ab2b2372b97803758a.py",
+      "roles": [
+        "actual selected process shrinking_bias_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "0b3be664322498b5ee9ba4e9e0441dc37dd20d96bf9319ab2b2372b97803758a"
+    },
+    {
+      "bytes": 0,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/shrinking_bias_resource_source_acceptance/stderr",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "roles": [
+        "actual selected process shrinking_bias_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 853,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/shrinking_bias_resource_source_acceptance/stdout",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fea82c7d1d46341faf17d061d0a55ab74f8fd331b2ebb0cce4845f582a418324.blob",
+      "roles": [
+        "actual selected process shrinking_bias_resource_source_acceptance",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "fea82c7d1d46341faf17d061d0a55ab74f8fd331b2ebb0cce4845f582a418324"
+    },
+    {
+      "bytes": 1911,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/CHECKPOINT.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/42e2d1e6c6aaea66ff4640acb5bb9a312a716cb0e6fe9ccec4388461aad6438b.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "42e2d1e6c6aaea66ff4640acb5bb9a312a716cb0e6fe9ccec4388461aad6438b"
+    },
+    {
+      "bytes": 2681,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/CHECK_EVIDENCE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/349798bbb8e8e8def5d90b402cfe33221708b318ff7609808f368f3605d91246.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "349798bbb8e8e8def5d90b402cfe33221708b318ff7609808f368f3605d91246"
+    },
+    {
+      "bytes": 37212,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/DERIVATION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json",
+        "direct acceptance reference",
+        "unchanged embedded body"
+      ],
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74"
+    },
+    {
+      "bytes": 2170,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/EXPOSURE.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f04a35fb7dba1c20f0908f95ac41e8e13cff72ffa451583930b409a1a4bb8a72.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "f04a35fb7dba1c20f0908f95ac41e8e13cff72ffa451583930b409a1a4bb8a72"
+    },
+    {
+      "bytes": 6956,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8b96d1e0790c864a1caefe4a7035740e9c0835ebb943d4f0700d7c1f00aa43e2.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "8b96d1e0790c864a1caefe4a7035740e9c0835ebb943d4f0700d7c1f00aa43e2"
+    },
+    {
+      "bytes": 7546,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/INTERRUPTION_PROVENANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/89d345ad577821716d3d0fa58461eed37bdcee22461ef63c560aefd8abcecb08.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "89d345ad577821716d3d0fa58461eed37bdcee22461ef63c560aefd8abcecb08"
+    },
+    {
+      "bytes": 3082,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2b1bf3b534cf83bed57a7ca322b058c667a388f0a684faf11891300ab55a9661.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "2b1bf3b534cf83bed57a7ca322b058c667a388f0a684faf11891300ab55a9661"
+    },
+    {
+      "bytes": 11765,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/SOURCE_MANIFEST.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json",
+        "direct acceptance reference",
+        "source/exposure manifest"
+      ],
+      "sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583"
+    },
+    {
+      "bytes": 2215,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/interrupted_partial/CHECKPOINT.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/87fd43f6145ad34feeb96870a63e91db12cafce7946a9f93175537de9abfd121.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "87fd43f6145ad34feeb96870a63e91db12cafce7946a9f93175537de9abfd121"
+    },
+    {
+      "bytes": 33807,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/interrupted_partial/DERIVATION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/eb4bd83b1175bbdd4434dff6e1e9a20e62374959b486755bab20d7b90edfb2f2.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "eb4bd83b1175bbdd4434dff6e1e9a20e62374959b486755bab20d7b90edfb2f2"
+    },
+    {
+      "bytes": 11194,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/interrupted_partial/SOURCE_MANIFEST.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c2a9e64ba114369db30022b13c611276f0e5f3638b0a2781641aa8c9ce6cc0d.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "1c2a9e64ba114369db30022b13c611276f0e5f3638b0a2781641aa8c9ce6cc0d"
+    },
+    {
+      "bytes": 36324,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/01_reachable_bus_resource_candidate_DERIVATION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "bytes": 4683,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/02_reachable_bus_resource_candidate_FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+    },
+    {
+      "bytes": 2567,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/03_reachable_bus_resource_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd"
+    },
+    {
+      "bytes": 7196,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/04_reachable_bus_resource_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "bytes": 3894,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/05_quantitative_bias_selection_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "bytes": 3826,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/06_quantitative_bias_selection_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "bytes": 19932,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/07_quantitative_bias_selection_exposed_check_REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701"
+    },
+    {
+      "bytes": 5004,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/08_quantitative_bias_selection_root_proposal_PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf"
+    },
+    {
+      "bytes": 66336,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/09_docs_ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "bytes": 83919,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/10_docs_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 5321,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/11_strongly_regular_bus_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "bytes": 4507,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/12_strongly_regular_bus_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "bytes": 8361,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/13_reachable_bus_corrector_root_proposal_PROPOSED_LEMMAS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "bytes": 21520,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/14_reachable_bus_corrector_exposed_check_REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "bytes": 2594,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/15_reachable_bus_corrector_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    },
+    {
+      "bytes": 4734,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/16_reachable_bus_corrector_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "bytes": 29555,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/17_static_bias_transfer_candidate_DERIVATION.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "bytes": 5915,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/18_static_bias_transfer_root_review_QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b.json",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    {
+      "bytes": 4450,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/19_static_bias_transfer_root_review_FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "bytes": 11558,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/20_planning_AGENTS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "bytes": 15435,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/21_ai_methodology_SCIENCE_WORKFLOW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 13419,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/22_workhorse_SKILL.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 14490,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/sources/23_physics-claim-reviewer_SKILL.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md",
+      "roles": [
+        "member of shrinking_bias_resource_candidate/FREEZE.json"
+      ],
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 1184,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/CHECKPOINT.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/fb9ae0f100fd03129ebdd02eb3e721191c82bb5a80ff46f693a7795b3595504e.json",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "fb9ae0f100fd03129ebdd02eb3e721191c82bb5a80ff46f693a7795b3595504e"
+    },
+    {
+      "bytes": 1676,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f62e621034d56367ebbadadd47048d4bfec90beb4161e8eaa69e4a001859da98.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "f62e621034d56367ebbadadd47048d4bfec90beb4161e8eaa69e4a001859da98"
+    },
+    {
+      "bytes": 1214,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/PROGRESS_01.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/a1518f8b1d7c092d31d6ae259e3c687548f4c976eef2a9acb0ddecf56eef384a.md",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "a1518f8b1d7c092d31d6ae259e3c687548f4c976eef2a9acb0ddecf56eef384a"
+    },
+    {
+      "bytes": 17546,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/REVIEW.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356.md",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json",
+        "direct acceptance reference",
+        "actual acceptance stdout linkage",
+        "unchanged embedded body"
+      ],
+      "sha256": "20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356"
+    },
+    {
+      "bytes": 1667,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/SOURCE_IDENTITIES.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4972fe733baa0a37d74063444477fa72178082b14e940618f959abbdc29ceb92.json",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json",
+        "source/exposure manifest"
+      ],
+      "sha256": "4972fe733baa0a37d74063444477fa72178082b14e940618f959abbdc29ceb92"
+    },
+    {
+      "bytes": 1715,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/capture_sources.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/dc8920f79e2c73702d27b94b80758b2324aeb9c520c7180a08c5fcdfcd803249.py",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "dc8920f79e2c73702d27b94b80758b2324aeb9c520c7180a08c5fcdfcd803249"
+    },
+    {
+      "bytes": 3183,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/seal.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/5b2487502fa2e5b0bd5be27b3421ff8ed455911e0131b7bebf527ef05c452ca4.py",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "5b2487502fa2e5b0bd5be27b3421ff8ed455911e0131b7bebf527ef05c452ca4"
+    },
+    {
+      "bytes": 11765,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/sources/author_source_manifest.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583.json",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583"
+    },
+    {
+      "bytes": 37212,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/sources/derivation.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74.md",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74"
+    },
+    {
+      "bytes": 7196,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/sources/fixed_plant_qualifications.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b.md",
+      "roles": [
+        "member of shrinking_bias_resource_exposed_check/FREEZE.json"
+      ],
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "bytes": 459,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_proposal/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/391df8e6a053694a06a0ec96a48fff13223e6debdcb247ab31043ca4165b72a3.json",
+      "roles": [
+        "immediate freeze",
+        "direct acceptance reference"
+      ],
+      "sha256": "391df8e6a053694a06a0ec96a48fff13223e6debdcb247ab31043ca4165b72a3"
+    },
+    {
+      "bytes": 7162,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_proposal/PRE_RESULT_SKETCH.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b544c0e4d369977adf91620dfb19628901e24226e83bb1e7430486d6ab931d6a.md",
+      "roles": [
+        "member of shrinking_bias_resource_root_proposal/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "b544c0e4d369977adf91620dfb19628901e24226e83bb1e7430486d6ab931d6a"
+    },
+    {
+      "bytes": 7701,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5.md",
+      "roles": [
+        "member of shrinking_bias_resource_root_review/FREEZE.json",
+        "direct acceptance reference",
+        "unchanged embedded body"
+      ],
+      "sha256": "e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5"
+    },
+    {
+      "bytes": 1204,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/FREEZE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/aca3747330d17ce3ee52977fc9bc9c8499216b9bcd7945303f0f0c36221288aa.json",
+      "roles": [
+        "immediate freeze",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "aca3747330d17ce3ee52977fc9bc9c8499216b9bcd7945303f0f0c36221288aa"
+    },
+    {
+      "bytes": 3714,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/aba5f356e130166caf0884c9693152c13fd826b8ebd74b137445028e29ab435d.json",
+      "roles": [
+        "member of shrinking_bias_resource_root_review/FREEZE.json",
+        "controlling qualified acceptance",
+        "actual acceptance stdout linkage"
+      ],
+      "sha256": "aba5f356e130166caf0884c9693152c13fd826b8ebd74b137445028e29ab435d"
+    },
+    {
+      "bytes": 1392,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/SOURCE_VERIFICATION.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/81ce9ebe010aaeeb218e65feef5baecc170411ef7df85821e1aa96a350aaed76.json",
+      "roles": [
+        "member of shrinking_bias_resource_root_review/FREEZE.json",
+        "direct acceptance reference"
+      ],
+      "sha256": "81ce9ebe010aaeeb218e65feef5baecc170411ef7df85821e1aa96a350aaed76"
+    },
+    {
+      "bytes": 3680,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/record_acceptance.py",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/0b3be664322498b5ee9ba4e9e0441dc37dd20d96bf9319ab2b2372b97803758a.py",
+      "roles": [
+        "member of shrinking_bias_resource_root_review/FREEZE.json",
+        "actual receipt referenced byte identity"
+      ],
+      "sha256": "0b3be664322498b5ee9ba4e9e0441dc37dd20d96bf9319ab2b2372b97803758a"
+    },
+    {
+      "bytes": 4450,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/FINAL_QUALIFICATIONS.md",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911.md",
+      "roles": [
+        "specific qualified transfer/direction scope reused"
+      ],
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "bytes": 5915,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "recovery": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b.json",
+      "roles": [
+        "specific qualified transfer/direction scope reused"
+      ],
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    }
+  ]
+}

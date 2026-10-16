@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-16T13:33:08.787917+00:00",
+  "status": "qualified source decision, not retained audit",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 8726,
+      "sha256": "c3d37e42ebdfd711bb97e6633be836db408545848f9beace2296a4309b62d6ef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5558,
+      "sha256": "5a347671fadc51c62b48e54461c9828dca44c954e50d169448acc253c8de1ec8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/record_acceptance.py",
+      "bytes": 4798,
+      "sha256": "0577624885c7b08f385a71e159cd429f33c0104d9aa8cdf41d9f5cdda4a8699f"
+    }
+  ]
+}

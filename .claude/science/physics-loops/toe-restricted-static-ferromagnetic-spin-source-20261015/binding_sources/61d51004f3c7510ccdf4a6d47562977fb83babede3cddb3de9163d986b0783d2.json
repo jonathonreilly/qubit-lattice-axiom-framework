@@ -1,0 +1,34 @@
+{
+  "status": "bound_actual_root_publication_review",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_restricted_spin_publication_review/REVIEW.json",
+    "bytes": 4431,
+    "sha256": "e9f6b186a1268235bc54ccfbcfee2d2b928c4977870ae486c2db6e2e930b3e2b"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/restricted_spin_publication_review_corrected/EXECUTION.json",
+    "bytes": 1815,
+    "sha256": "74f063a0891de7e7b9b575f9d80ed3f875e14b7a332d72c41daeff28b535f985"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_restricted_spin_publication_review/FINAL_FREEZE.json",
+    "bytes": 703,
+    "sha256": "f57f92c98a46c506d51269cd6791e45d71f6c3921d748a9a2d7184b3b4ad5394"
+  },
+  "decision": "Accept reviewed source-preserving package for root integration as conditional support; canonical review remains separate.",
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/refresh_before_restricted_spin/BINDING_REFS.json",
+    "bytes": 2190,
+    "sha256": "1924e6cf8eadbe4ed6e5a6259f3dee18107d820beba689fd5a252978aedb5062"
+  },
+  "integration_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_restricted_spin_integration_review/REVIEW.json",
+    "bytes": 2711,
+    "sha256": "98e5f40b428e2864c855f5b7641cfd85a366fbd401e17ab9a75b2563b6ca8381"
+  },
+  "integration_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/restricted_spin_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 57973,
+    "sha256": "b7296b37ebf8051bfb46f16364c3c5fa8b5b34f3ea082e16b837075c0977a828"
+  }
+}

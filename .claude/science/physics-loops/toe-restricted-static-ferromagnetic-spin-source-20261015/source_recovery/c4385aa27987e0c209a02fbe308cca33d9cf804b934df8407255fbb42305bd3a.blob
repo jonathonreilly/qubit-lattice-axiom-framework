@@ -1,0 +1,18 @@
+# Exact source and read coverage
+
+The root supplied W commit `9ca474a32b3a4799d2d14cfee7580d77750422b4`, main `bbada1fe09b2d10d610560864d86b68c24a59713`, and instruction `3a4b2c66a1ead7a1c48b4359627e968f681e3c39`. No Git command was authorized or run by this worker. Actual file bytes were checked against every supplied mathematical SHA256 by `capture_sources.py`; SOURCE_MANIFEST.json records complete identities and recoverable copies under sources/. Hashes establish identity, not mathematical correctness.
+
+| Source | Actual argument coverage | Use here |
+|---|---|---|
+| AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md | Complete, lines 1–684, in bounded reads | Exact target, supplied conditions, existing common-strength gap, parent clock recipe |
+| POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md | Root argument complete, lines 364–584; remaining wrapper/independent/comparison bodies not fully read | Exact parent geometry and clock edge norm; prior bare-input corrector method; no new acceptance of the unread bodies |
+| CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md | Lines 373–438 only | Original arbitrary-plant/certificate domain; no invocation or reproof of the full compiler |
+| ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md | Lines 36–176 only | Original target/certificate/resource interface; no use of uninspected compiler proof as proof of the new restricted construction |
+| Captured planning AGENTS.md | Complete | Scoped source-worker permissions and scientific status boundaries |
+| Captured SCIENCE_WORKFLOW.md | Complete; initial combined truncation repaired by bounded read through line 245 | Current campaign cadence and proof/evidence distinctions |
+| Captured workhorse SKILL.md | Complete; bounded rereads 1–80 and 80–239 | Existing authorized worker split; no new delegation, model override, landing or verdict |
+| next_realization_gap_selection/SELECTION.md | Complete | Exact next gap and duplication boundary |
+
+The heading inventories of the three mathematical parents were also queried. One combined heading display was truncated; no complete-argument coverage is inferred from that inventory. The full composition result in the same call was intact, and all complete arguments used above were returned in full. No other worker science, root's new candidate, external literature, repository audit ledger or unrelated source was read.
+
+Sections 2–6 and 8 of DERIVATION.md are original finite-matrix arguments, using no uninspected parent proof as their correctness witness. Section 9 is explicitly a proposed mechanism with open equations. The source and complete actual finite-check stdout were cold-read before freeze. Full source copies do not imply that every copied line was read.

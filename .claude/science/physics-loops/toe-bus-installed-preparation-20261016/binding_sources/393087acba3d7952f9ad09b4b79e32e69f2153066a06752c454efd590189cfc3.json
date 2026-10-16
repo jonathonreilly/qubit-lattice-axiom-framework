@@ -1,0 +1,29 @@
+{
+  "decision": "source-only wrapper/code accepted for separately reviewed canonical integration; not retained audit",
+  "execution": {
+    "bytes": 1806,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_publication_source_review/EXECUTION.json",
+    "sha256": "af755f443fb22379780475436b86da78563d3e8b21f62b9b83b5a1622c851f05"
+  },
+  "integration_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 64064,
+    "sha256": "56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93"
+  },
+  "integration_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_preparation_integration_review/REVIEW.json",
+    "bytes": 5133,
+    "sha256": "42fa615b1b34c839bd1f995ce71080e48bd51a8b797c381a15df63915e38ece6"
+  },
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_publication_refresh/BINDING_REFS.json",
+    "bytes": 3437,
+    "sha256": "0e79882682d52c171936daa3f27b21af169449a657069682de822576e5b7fdea"
+  },
+  "review": {
+    "bytes": 4004,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_preparation_publication_review/REVIEW.json",
+    "sha256": "2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990"
+  },
+  "status": "bound_actual_root_publication_review"
+}

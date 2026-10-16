@@ -1,0 +1,3 @@
+# Canonical correlated-energy comparator handoff
+
+Root must separately review the exact final canonical note, body maps, both mathematical parents and used premise intervals, controlling qualifications and prebinding primary, then provide the actual canonical review receipt. The frozen draft review and original offsets remain separate. Historical exact fixture, source acceptance metadata and qualified HEAD observations retain their original schemas; no replay is inferred. Source-primary/cache, scoped provenance mutants, vocabulary/evidence, one-node/two-edge graph delta with unchanged roots and final staged review are actual subsequent gates. Independent retained audit and current-main/cumulative-stack landing remain separate.

@@ -1,0 +1,408 @@
+{
+  "frozen_utc": "2026-10-16T03:18:44.107470+00:00",
+  "kind": "unapproved source-only regular-PR draft",
+  "scientific_programs_run_this_draft": 0,
+  "primary_execution": null,
+  "canonical_integration": null,
+  "current_base_observation": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "path": "BUILD_RESULT.json",
+      "bytes": 1379,
+      "sha256": "19e34e1690c0d3e01159c25a761de48155684bd329cc17e4f1a0a87fcf8ee0e8"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1608,
+      "sha256": "3e8051259f2118a1c3521782aa39332b04a72a4685b64580e2c253bef4eb6583"
+    },
+    {
+      "path": "CODE_AND_TEXT_MAP.json",
+      "bytes": 5422,
+      "sha256": "bafbdd5b66266aab0de3418cd70e7abab9f85b63742ebad3215ab3c015c804c8"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 771,
+      "sha256": "53413debac3196738c671d9067f50bf16aaf3255d2d0e710860ace2bf238c52e"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 2913,
+      "sha256": "a00be52e37534d44f0bb87c0a65374250eaa9cb908cc8db0e37ba95cd1df6604"
+    },
+    {
+      "path": "ROOT_READ_GUIDE.md",
+      "bytes": 5537,
+      "sha256": "cbb4e91b148f34a5959664dbb122af599d4fc29d76209271e02dc9c9e5cfc13d"
+    },
+    {
+      "path": "SEAL_OPERATION.json",
+      "bytes": 973,
+      "sha256": "ad4b10628a707581cec5e71d33e9ada6c05c696474f64b8f873a5f964c6c9348"
+    },
+    {
+      "path": "SOURCE_FRESHNESS.json",
+      "bytes": 13652,
+      "sha256": "2eabbe9b95645cd1365f221cd391dccc63c49071baf721733edb21a44c8cca72"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 2664,
+      "sha256": "927fa2bb305902993812e4251b46cb13af54a700c58e1208cd2447d7089dc9c0"
+    },
+    {
+      "path": "build_packet.py",
+      "bytes": 8672,
+      "sha256": "1e7bf486abee145d00d508f641370d9dc03476584e085ff91334237dae22f1a8"
+    },
+    {
+      "path": "inspect_packet.py",
+      "bytes": 4437,
+      "sha256": "b0db9c58c24c065690b47ae196166317112035c67e6ed2eb5dadea05be77e49b"
+    },
+    {
+      "path": "metadata_runs/build/EXECUTION.json",
+      "bytes": 2638,
+      "sha256": "eb5fdd89e845f77e6e07af81ef4b40f986b6769bf82f67574780beffd28473b2"
+    },
+    {
+      "path": "metadata_runs/build/INPUT_IDENTITIES_AT_LAUNCH.json",
+      "bytes": 12586,
+      "sha256": "0433afdbd0529b97d82c7f8c6918e9753151afb856ace6f268dc5e92fcb6a685"
+    },
+    {
+      "path": "metadata_runs/build/LAUNCH.json",
+      "bytes": 1902,
+      "sha256": "462e2e993269a700439b794d1a953c2d4b6cdecff06970568fbf2e275b32e9e8"
+    },
+    {
+      "path": "metadata_runs/build/executed_source.py",
+      "bytes": 8672,
+      "sha256": "1e7bf486abee145d00d508f641370d9dc03476584e085ff91334237dae22f1a8"
+    },
+    {
+      "path": "metadata_runs/build/recorder_at_launch.py",
+      "bytes": 2829,
+      "sha256": "3970da334b53e0317dae95be663582ab88cf9b9699f47502bfe1d55abce4bd82"
+    },
+    {
+      "path": "metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/build/stdout",
+      "bytes": 1379,
+      "sha256": "19e34e1690c0d3e01159c25a761de48155684bd329cc17e4f1a0a87fcf8ee0e8"
+    },
+    {
+      "path": "metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2669,
+      "sha256": "ccf92a314378f4be1d3e69d25acaadbf2e30d12abe78fc943c62662d43db2979"
+    },
+    {
+      "path": "metadata_runs/inspection/INPUT_IDENTITIES_AT_LAUNCH.json",
+      "bytes": 19548,
+      "sha256": "d3459535b48f12541c6a5b7f4bceea30e755449ee97573fba6ed84ee4a933531"
+    },
+    {
+      "path": "metadata_runs/inspection/LAUNCH.json",
+      "bytes": 1924,
+      "sha256": "827c16c97591739afa1f1eaef48a7e5151322a15f80bb4edb0159fec7f3bdd48"
+    },
+    {
+      "path": "metadata_runs/inspection/executed_source.py",
+      "bytes": 4437,
+      "sha256": "b0db9c58c24c065690b47ae196166317112035c67e6ed2eb5dadea05be77e49b"
+    },
+    {
+      "path": "metadata_runs/inspection/recorder_at_launch.py",
+      "bytes": 2829,
+      "sha256": "3970da334b53e0317dae95be663582ab88cf9b9699f47502bfe1d55abce4bd82"
+    },
+    {
+      "path": "metadata_runs/inspection/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/inspection/stdout",
+      "bytes": 2664,
+      "sha256": "927fa2bb305902993812e4251b46cb13af54a700c58e1208cd2447d7089dc9c0"
+    },
+    {
+      "path": "packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 649,
+      "sha256": "a2ce2695a0a2a6dd3008a5ca0dd85020d9a000339907a2a538c0438a4911dc2b"
+    },
+    {
+      "path": "packet_text/BINDING_CONTRACT.md",
+      "bytes": 2016,
+      "sha256": "686e4fad20aa76d1bcd307e1e53c94d57986fd278b9d61b3c428eed12894b050"
+    },
+    {
+      "path": "packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 426,
+      "sha256": "60e9829db39ad1a0f095a9f254dd6ef27d6ae12d79e8f82eda503a9fad5d33bb"
+    },
+    {
+      "path": "packet_text/COUNTEREXAMPLES.md",
+      "bytes": 774,
+      "sha256": "6541ab719434cdc1d91034bc2e36df04f0481a8b5332923ee985efb7a290f445"
+    },
+    {
+      "path": "packet_text/PR_BODY.md",
+      "bytes": 1264,
+      "sha256": "e184bdace3d5c20144ba6f5b1823f1ede8cc1abf018d95d999020736fdd6cdc1"
+    },
+    {
+      "path": "packet_text/RECOVERY_SCOPE.md",
+      "bytes": 670,
+      "sha256": "c9ba761a5a5beff83b37bd672ed959662bfc65f0eb37d10e4ab37cd92edf46b9"
+    },
+    {
+      "path": "packet_text/TRACE_GATE.md",
+      "bytes": 489,
+      "sha256": "87db1a61bc85a127275282b8eb1ee42f48088ef4ef9f185b51380acc13adc6e3"
+    },
+    {
+      "path": "primary_template.py",
+      "bytes": 11952,
+      "sha256": "cf56adfa36f28b185165dcd2f72c133f092be40cec21bc247fe5d8c3bb5bb6b8"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/ACTUAL_BINDING.json",
+      "bytes": 325,
+      "sha256": "1463dc68a84b8bda19ddfde4d59898de0f379c14a4095c6ebb3d4b487bb92293"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/ARCHIVE_INDEX.json",
+      "bytes": 7504,
+      "sha256": "72381e19a7427d7ba5ea99e93cf788dd18857de11d2692e03996179eea877f5b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 649,
+      "sha256": "a2ce2695a0a2a6dd3008a5ca0dd85020d9a000339907a2a538c0438a4911dc2b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/BINDING_CONTRACT.md",
+      "bytes": 2016,
+      "sha256": "686e4fad20aa76d1bcd307e1e53c94d57986fd278b9d61b3c428eed12894b050"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/BODY_MAP.json",
+      "bytes": 823,
+      "sha256": "08316446377bcffa3057cdcc22c75cee3a90373a32b53c6c6aba49c3f1525a79"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/CHECK_RECEIPTS.json",
+      "bytes": 808,
+      "sha256": "0fbe1515bd1094419f5292780dd19dda0b2843d2b735c54825ed325317be74a4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 426,
+      "sha256": "60e9829db39ad1a0f095a9f254dd6ef27d6ae12d79e8f82eda503a9fad5d33bb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/COUNTEREXAMPLES.md",
+      "bytes": 774,
+      "sha256": "6541ab719434cdc1d91034bc2e36df04f0481a8b5332923ee985efb7a290f445"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/INPUT_MANIFEST.json",
+      "bytes": 10419,
+      "sha256": "eb41941d17913150bad9b48c9a3f6e7248d952afcf9b0d3f110c76bf10888bdb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/PARENT_BINDING.json",
+      "bytes": 1611,
+      "sha256": "d274c983e87ee22c10feadee9d552b8f77dd3cb8088eadc2f4493b0f8fb6d1a2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/PR_BODY.md",
+      "bytes": 1264,
+      "sha256": "e184bdace3d5c20144ba6f5b1823f1ede8cc1abf018d95d999020736fdd6cdc1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/PUBLICATION_STATE.json",
+      "bytes": 239,
+      "sha256": "478683988f7140294e8653d35a07f7d7f02a6f1760635050d3d559f4d11081ad"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/RECOVERY_SCOPE.md",
+      "bytes": 670,
+      "sha256": "c9ba761a5a5beff83b37bd672ed959662bfc65f0eb37d10e4ab37cd92edf46b9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/SOURCE_MANIFEST.json",
+      "bytes": 20285,
+      "sha256": "1d3c15b50c1a7d0f5ecb027491b05a47068b06d88d6982ef4510ab5c65839f26"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/TRACE_GATE.md",
+      "bytes": 489,
+      "sha256": "87db1a61bc85a127275282b8eb1ee42f48088ef4ef9f185b51380acc13adc6e3"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.blob",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/1d967c035f607e14c34f548007e168677cc4e864da8f90088fc40c8cfd737d03.blob",
+      "bytes": 1268,
+      "sha256": "1d967c035f607e14c34f548007e168677cc4e864da8f90088fc40c8cfd737d03"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/23df6cf042abb57a1fb67a5c65d2f7262cc492b80c979e3cce489c0f993b137c.blob",
+      "bytes": 4107,
+      "sha256": "23df6cf042abb57a1fb67a5c65d2f7262cc492b80c979e3cce489c0f993b137c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508.blob",
+      "bytes": 9215,
+      "sha256": "2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/3e7accd4ddc80f38f086f75b052a59c2f22668ab59c96b97ce6e1714231ecde4.blob",
+      "bytes": 1516,
+      "sha256": "3e7accd4ddc80f38f086f75b052a59c2f22668ab59c96b97ce6e1714231ecde4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1.blob",
+      "bytes": 19400,
+      "sha256": "498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/530e64f0a12506eb1f99f84ceb4ac2ab3b55e2f9b518b4121a46f2e9f4cae74a.blob",
+      "bytes": 4722,
+      "sha256": "530e64f0a12506eb1f99f84ceb4ac2ab3b55e2f9b518b4121a46f2e9f4cae74a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/642939d2592835977912371e7467d459350fe3d04d524a90772d19f2c23a347f.blob",
+      "bytes": 3201,
+      "sha256": "642939d2592835977912371e7467d459350fe3d04d524a90772d19f2c23a347f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/6a70e1335853cd8eb6f93fd19bc33cd53e109f29c29d66bcd8cd2a108209e186.blob",
+      "bytes": 1601,
+      "sha256": "6a70e1335853cd8eb6f93fd19bc33cd53e109f29c29d66bcd8cd2a108209e186"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/84dca7aa9b867df860a855d30c0fb53be8faecdd67773a10308d1e6642dbcc5f.blob",
+      "bytes": 1546,
+      "sha256": "84dca7aa9b867df860a855d30c0fb53be8faecdd67773a10308d1e6642dbcc5f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2.blob",
+      "bytes": 40500,
+      "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1.blob",
+      "bytes": 7871,
+      "sha256": "86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/87996647963fa851729571e2f554ccf4539623dc7a90f51293aeb0f90be5df6d.blob",
+      "bytes": 2201,
+      "sha256": "87996647963fa851729571e2f554ccf4539623dc7a90f51293aeb0f90be5df6d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/9d94e19bc4768df791242d45e1a1872ba1d84c191ed9109e641afca02f306fed.blob",
+      "bytes": 708,
+      "sha256": "9d94e19bc4768df791242d45e1a1872ba1d84c191ed9109e641afca02f306fed"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880.blob",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/bdb0e8d2b513a4b318ad54a6c2627ec4f911fd6f700a962dd659ef1338f2712f.blob",
+      "bytes": 3583,
+      "sha256": "bdb0e8d2b513a4b318ad54a6c2627ec4f911fd6f700a962dd659ef1338f2712f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726.blob",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7.blob",
+      "bytes": 23433,
+      "sha256": "cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/db4863ae8fa46cd1ef47fc9d22aa7ca3647432a28994d6942d08fafcf2d1c3b2.blob",
+      "bytes": 4128,
+      "sha256": "db4863ae8fa46cd1ef47fc9d22aa7ca3647432a28994d6942d08fafcf2d1c3b2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/dd0fa71627a12cb68e4e95b345510cb2f906181b978aa6a056a61badcc8b2b1b.blob",
+      "bytes": 4885,
+      "sha256": "dd0fa71627a12cb68e4e95b345510cb2f906181b978aa6a056a61badcc8b2b1b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c.blob",
+      "bytes": 13174,
+      "sha256": "e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/e6b59e5008c14ef15412f79e7a8bfb19526bad3d5d6a40626c7b510109b543fa.blob",
+      "bytes": 6582,
+      "sha256": "e6b59e5008c14ef15412f79e7a8bfb19526bad3d5d6a40626c7b510109b543fa"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/eb62d6dbf7e94b97631c3e4c1ed46d52bf1a2d4ad34c9092088c09b210bc4955.blob",
+      "bytes": 1888,
+      "sha256": "eb62d6dbf7e94b97631c3e4c1ed46d52bf1a2d4ad34c9092088c09b210bc4955"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/f2cbe56fcffae6606070a394f662eb555d4f251f4fef917659c0e95c66467c9c.blob",
+      "bytes": 892,
+      "sha256": "f2cbe56fcffae6606070a394f662eb555d4f251f4fef917659c0e95c66467c9c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/f5bddd08b5de3c2db3659a9b93fe8908cb0ee709857c866c50d1ea8e4835bca7.blob",
+      "bytes": 5011,
+      "sha256": "f5bddd08b5de3c2db3659a9b93fe8908cb0ee709857c866c50d1ea8e4835bca7"
+    },
+    {
+      "path": "proposal/docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 35863,
+      "sha256": "881c8a57932b3eca1f43e2a4ecdfe4f04ea5585d90208aef4bc21b949f18e4c9"
+    },
+    {
+      "path": "proposal/scripts/bus_joint_energy_moments_2026_10_16.py",
+      "bytes": 17341,
+      "sha256": "a0756223261f7a40fa9a7286b28912f9896ebd4a68432b818f4605f77d22a4c0"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2829,
+      "sha256": "3970da334b53e0317dae95be663582ab88cf9b9699f47502bfe1d55abce4bd82"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 4648,
+      "sha256": "d1436e9a981c4be1a7b0ecc5ecc21390a26266cd78574602c5815fc76a2bbdd9"
+    },
+    {
+      "path": "wrapper.md",
+      "bytes": 8497,
+      "sha256": "75f22fb38ccec5576a60aeb815ae53f3115440c3d4f22f1e139eb66d7044ee28"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/check_induction.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01",
+  "source_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_induction.py",
+  "source_at_launch": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/check_induction.at_launch.py",
+  "source_sha256": "e2cd05674e2a811709f901d2ec7537bca20b4a235dd9f4a73f4a701c0683e55e",
+  "launcher_source_sha256": "745bf52b886b72daf47a318c071ffad18948bf4ecf054940af23f6e24f8132fb",
+  "launcher_orig_argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "run_check.py"
+  ],
+  "launcher_cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate",
+  "source_manifest_sha256": "5260ff81a10d2bacd6f97746ac21269b6a5408090b993cc3ee383a3be815660c",
+  "started_utc": "2026-10-16T01:57:19.863356+00:00",
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "finished_utc": "2026-10-16T01:57:21.145399+00:00",
+  "elapsed_seconds": 1.2790604578331113,
+  "stdout_sha256": "fc36b8dbbac46b93e7216b20ce6135dddf108443e069267b0f85e650d7a389e5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

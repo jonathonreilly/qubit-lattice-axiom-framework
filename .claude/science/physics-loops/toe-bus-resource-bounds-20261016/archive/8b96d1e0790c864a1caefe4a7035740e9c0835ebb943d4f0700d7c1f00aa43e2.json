@@ -1,0 +1,178 @@
+{
+  "frozen_utc": "2026-10-16T12:45:03.383678+00:00",
+  "status": "Exposed conditional mathematical source proposal; root review pending.",
+  "claim": "Polynomial nominal autonomous runtime and precision requests along a supplied admissible shrinking bias, with a common paid incident cap.",
+  "runtime_power": "P=2+4p+2*kappa*v, as defined in DERIVATION equation1; d=2 gives1078.",
+  "scientific_executions": 0,
+  "interruption": "Prior partial bytes preserved; account usage interruption did not produce a scientific execution or prior freeze.",
+  "source_count": 23,
+  "source_manifest_sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583",
+  "source_independence": "Same-model exposed continuation and earlier bus author; root independent sketch unread; no fresh independent parent validation.",
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1911,
+      "sha256": "42e2d1e6c6aaea66ff4640acb5bb9a312a716cb0e6fe9ccec4388461aad6438b"
+    },
+    {
+      "path": "CHECK_EVIDENCE.md",
+      "bytes": 2681,
+      "sha256": "349798bbb8e8e8def5d90b402cfe33221708b318ff7609808f368f3605d91246"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 37212,
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 2170,
+      "sha256": "f04a35fb7dba1c20f0908f95ac41e8e13cff72ffa451583930b409a1a4bb8a72"
+    },
+    {
+      "path": "INTERRUPTION_PROVENANCE.json",
+      "bytes": 7546,
+      "sha256": "89d345ad577821716d3d0fa58461eed37bdcee22461ef63c560aefd8abcecb08"
+    },
+    {
+      "path": "QUALIFICATIONS.md",
+      "bytes": 3082,
+      "sha256": "2b1bf3b534cf83bed57a7ca322b058c667a388f0a684faf11891300ab55a9661"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 11765,
+      "sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583"
+    },
+    {
+      "path": "interrupted_partial/CHECKPOINT.md",
+      "bytes": 2215,
+      "sha256": "87fd43f6145ad34feeb96870a63e91db12cafce7946a9f93175537de9abfd121"
+    },
+    {
+      "path": "interrupted_partial/DERIVATION.md",
+      "bytes": 33807,
+      "sha256": "eb4bd83b1175bbdd4434dff6e1e9a20e62374959b486755bab20d7b90edfb2f2"
+    },
+    {
+      "path": "interrupted_partial/SOURCE_MANIFEST.json",
+      "bytes": 11194,
+      "sha256": "1c2a9e64ba114369db30022b13c611276f0e5f3638b0a2781641aa8c9ce6cc0d"
+    },
+    {
+      "path": "sources/01_reachable_bus_resource_candidate_DERIVATION.md",
+      "bytes": 36324,
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "path": "sources/02_reachable_bus_resource_candidate_FREEZE.json",
+      "bytes": 4683,
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+    },
+    {
+      "path": "sources/03_reachable_bus_resource_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2567,
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd"
+    },
+    {
+      "path": "sources/04_reachable_bus_resource_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 7196,
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "path": "sources/05_quantitative_bias_selection_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3894,
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "path": "sources/06_quantitative_bias_selection_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 3826,
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "path": "sources/07_quantitative_bias_selection_exposed_check_REVIEW.md",
+      "bytes": 19932,
+      "sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701"
+    },
+    {
+      "path": "sources/08_quantitative_bias_selection_root_proposal_PROPOSED_LEMMAS.md",
+      "bytes": 5004,
+      "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf"
+    },
+    {
+      "path": "sources/09_docs_ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "path": "sources/10_docs_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "path": "sources/11_strongly_regular_bus_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "path": "sources/12_strongly_regular_bus_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "path": "sources/13_reachable_bus_corrector_root_proposal_PROPOSED_LEMMAS.md",
+      "bytes": 8361,
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "path": "sources/14_reachable_bus_corrector_exposed_check_REVIEW.md",
+      "bytes": 21520,
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "path": "sources/15_reachable_bus_corrector_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2594,
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    },
+    {
+      "path": "sources/16_reachable_bus_corrector_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 4734,
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "path": "sources/17_static_bias_transfer_candidate_DERIVATION.md",
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "path": "sources/18_static_bias_transfer_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    {
+      "path": "sources/19_static_bias_transfer_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "path": "sources/20_planning_AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": "sources/21_ai_methodology_SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "sources/22_workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": "sources/23_physics-claim-reviewer_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ]
+}

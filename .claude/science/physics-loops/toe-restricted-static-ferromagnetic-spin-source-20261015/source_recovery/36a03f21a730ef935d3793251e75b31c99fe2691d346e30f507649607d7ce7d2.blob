@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-15T23:53:17.998471+00:00",
+  "source_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "source_planning": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/AGENTS.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/00_sources_AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/01_planning_AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/02_ai_methodology_SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/03_skills_SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/04_workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/05_references_proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/06_physics-claim-reviewer_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "copy": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/07_workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "coverage": "Full text read; any aggregated-output truncation of workhorse was recovered by a separate complete remaining-section read."
+    }
+  ],
+  "science_exposure": "Only the neutral mathematical architecture and exact desired W in the assignment. The desired unitary is necessarily known; no primary proof, resource exponents, primary numerical outputs, root candidate, or other new worker science was inspected. Filenames for other workers were incidentally returned by an instruction-file listing, but their scientific contents were not read. No external literature was consulted.",
+  "independence_limit": "Independent fresh derivation and separately implemented finite calculation from shared architecture. Same inherited selected model/effort; no different-model-family status implied.",
+  "editable_prompt_files_changed": [],
+  "exposure_note": "The final exposure text clarifies that the desired W was known. The source-at-launch exposure bytes remain preserved with their original receipt hash.",
+  "snapshot_local_workhorse_identical": true,
+  "returned_result_status": "Provisional independent conditional derivation. No audit or retained status; no model-family independence claimed."
+}

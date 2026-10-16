@@ -1,0 +1,72 @@
+{
+  "verified_utc": "2026-10-16T01:29:53.113637+00:00",
+  "kind": "read-only hash/bookkeeping verification; no scientific rerun",
+  "current_sources_and_snapshots": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_root_proposal/PROPOSED_LEMMAS.md",
+      "snapshot": "source_snapshots/bus_joint_energy_root_proposal__PROPOSED_LEMMAS.md",
+      "sha256": "86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1",
+      "bytes": 7871,
+      "current_source_and_snapshot_match": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_root_proposal/FREEZE.json",
+      "snapshot": "source_snapshots/bus_joint_energy_root_proposal__FREEZE.json",
+      "sha256": "9d94e19bc4768df791242d45e1a1872ba1d84c191ed9109e641afca02f306fed",
+      "bytes": 708,
+      "current_source_and_snapshot_match": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/DERIVATION.md",
+      "snapshot": "source_snapshots/strongly_regular_bus_candidate__DERIVATION.md",
+      "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2",
+      "bytes": 40500,
+      "current_source_and_snapshot_match": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/FREEZE.json",
+      "snapshot": "source_snapshots/strongly_regular_bus_candidate__FREEZE.json",
+      "sha256": "2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508",
+      "bytes": 9215,
+      "current_source_and_snapshot_match": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/REVIEW.md",
+      "snapshot": "source_snapshots/strongly_regular_bus_exposed_check__REVIEW.md",
+      "sha256": "cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7",
+      "bytes": 23433,
+      "current_source_and_snapshot_match": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/REVIEW_FREEZE.json",
+      "snapshot": "source_snapshots/strongly_regular_bus_exposed_check__REVIEW_FREEZE.json",
+      "sha256": "e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c",
+      "bytes": 13174,
+      "current_source_and_snapshot_match": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+      "snapshot": "source_snapshots/strongly_regular_bus_root_review__QUALIFIED_ACCEPTANCE.json",
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726",
+      "bytes": 5321,
+      "current_source_and_snapshot_match": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+      "snapshot": "source_snapshots/strongly_regular_bus_root_review__FINAL_QUALIFICATIONS.md",
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880",
+      "bytes": 4507,
+      "current_source_and_snapshot_match": true
+    }
+  ],
+  "three_argument_hashes_match_owning_frozen_entries": true,
+  "historical_parent_scientific_members_reverified": false,
+  "authored_and_executed_main_source_match": true,
+  "authored_and_preserved_launcher_match": true,
+  "current_and_launch_manifest_match": true,
+  "recorded_stream_hashes_match": true,
+  "scientific_executions": 1,
+  "scientific_exit_code": 0,
+  "receipt_qualification": "Child argv is complete. Secondary launcher_argv omitted interpreter -B; unchanged receipt, actual tool command retrospectively transcribed in SOURCE_EXPOSURE.md.",
+  "git_head_observation": "No Git command used; source identities are file hashes."
+}

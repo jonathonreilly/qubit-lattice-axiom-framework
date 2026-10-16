@@ -1,0 +1,37 @@
+{
+  "execution": {
+    "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/e249357df3420515161a5c2b94bea62cdd8ec9040164ddfbaa4b70c81ae39578.blob",
+    "bytes": 1771,
+    "sha256": "e249357df3420515161a5c2b94bea62cdd8ec9040164ddfbaa4b70c81ae39578"
+  },
+  "source": {
+    "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/642939d2592835977912371e7467d459350fe3d04d524a90772d19f2c23a347f.blob",
+    "bytes": 3201,
+    "sha256": "642939d2592835977912371e7467d459350fe3d04d524a90772d19f2c23a347f"
+  },
+  "recorder": {
+    "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.blob",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  },
+  "stdout": {
+    "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/3e92b1e48d89b50326b8132d7c9948e2c93ea8edaf40809453dda2d90b9b35cc.blob",
+    "bytes": 539,
+    "sha256": "3e92b1e48d89b50326b8132d7c9948e2c93ea8edaf40809453dda2d90b9b35cc"
+  },
+  "stderr": {
+    "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "acceptance": {
+    "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/530e64f0a12506eb1f99f84ceb4ac2ab3b55e2f9b518b4121a46f2e9f4cae74a.blob",
+    "bytes": 4722,
+    "sha256": "530e64f0a12506eb1f99f84ceb4ac2ab3b55e2f9b518b4121a46f2e9f4cae74a"
+  },
+  "freeze": {
+    "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/archive/f2cbe56fcffae6606070a394f662eb555d4f251f4fef917659c0e95c66467c9c.blob",
+    "bytes": 892,
+    "sha256": "f2cbe56fcffae6606070a394f662eb555d4f251f4fef917659c0e95c66467c9c"
+  }
+}

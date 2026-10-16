@@ -1,0 +1,171 @@
+"""Exact N=3 off-code counterterm discriminator, independently assembled.
+
+This checks the proposed compressed-moment algebra, not the full routed bus
+or its state-corrector theorem. All arithmetic is exact SymPy algebra.
+"""
+import json
+import platform
+import sympy as sp
+
+N = 3
+dim = 32  # old bit 0, bus bit 1, source bits 2,3,4
+Id = sp.eye(dim)
+x = sp.Symbol('xi', real=True)
+rat = sp.Rational
+
+
+def number(bit):
+    return sp.diag(*[(state >> bit) & 1 for state in range(dim)])
+
+
+def flip(*bits):
+    result = sp.zeros(dim)
+    mask = sum(1 << bit for bit in bits)
+    for state in range(dim):
+        result[state ^ mask, state] = 1
+    return result
+
+
+def exchange(a, b):
+    result = sp.zeros(dim)
+    for state in range(dim):
+        if ((state >> a) & 1) != ((state >> b) & 1):
+            result[state ^ (1 << a) ^ (1 << b), state] = 1
+    return result
+
+
+def swap(a, b):
+    result = sp.zeros(dim)
+    for state in range(dim):
+        target = state
+        if ((state >> a) & 1) != ((state >> b) & 1):
+            target ^= (1 << a) | (1 << b)
+        result[target, state] = 1
+    return result
+
+
+def clean(matrix):
+    return matrix.applyfunc(sp.simplify)
+
+
+def iszero(matrix):
+    return all(sp.simplify(value) == 0 for value in matrix)
+
+
+def frob2(matrix):
+    return sp.simplify(sp.trace(matrix.H * matrix))
+
+
+n = [number(bit) for bit in range(5)]
+source_number = n[2] + n[3] + n[4]
+ferro = rat(1, 2) * (2 * Id - swap(2, 3) - swap(3, 4))
+H_old = rat(1, 5) * Id + 2 * n[0]
+K0 = H_old + rat(7, 3) * n[1] + 2 * source_number + ferro
+g_old, r_source = rat(2, 3), rat(3, 5)
+V = g_old * flip(0, 1) + r_source * exchange(1, 2)
+u, vct = -rat(2, 7), rat(4, 9)
+A2 = u * source_number + vct * (n[2] * n[3] + n[3] * n[4])
+Rs, RV, RA2 = rat(11, 5), g_old + r_source, N * (-u)
+reserve = Rs + x * RV + x**2 * RA2
+K = K0 + x * V + x**2 * A2 + reserve * Id
+
+J = sp.zeros(dim, 8)
+for old in range(2):
+    for source in range(8):
+        k = source.bit_count()
+        J[old | (source << 2), 4 * old + k] = 1 / sp.sqrt(sp.binomial(N, k))
+Ic = sp.eye(8)
+F = sp.diag(*[rat(1, 5) + 2 * old + 2 * k for old in range(2) for k in range(4)])
+Q = Id - J * J.H
+assert iszero(J.H * J - Ic)
+assert iszero(K0 * J - J * F)
+assert iszero(K0 - K0.H) and iszero(V - V.H) and iszero(A2 - A2.H)
+assert iszero(J.H * V * J)
+assert iszero(J.H * (V * A2 + A2 * V) * J)
+
+Ac = clean(J.H * A2 * J)
+V2 = clean((V * J).H * (V * J))
+A2_square = clean((A2 * J).H * (A2 * J))
+leak = clean((Q * A2 * J).H * (Q * A2 * J))
+expected_leak = sp.diag(0, 0, rat(32, 729), 0, 0, 0, rat(32, 729), 0)
+assert iszero(leak - expected_leak)
+assert iszero(A2_square - Ac * Ac - leak)
+assert not iszero(leak)
+
+KJ = K * J
+direct_first = clean(J.H * KJ)
+direct_second = clean(KJ.H * KJ)
+FR = F + reserve * Ic
+formula_first = FR + x**2 * Ac
+formula_second = FR * FR + x**2 * (V2 + FR * Ac + Ac * FR) + x**4 * A2_square
+assert iszero(direct_first - formula_first)
+assert iszero(direct_second - formula_second)
+
+# Two deliberately wrong second-moment formulas must be distinguishable.
+wrong_square = FR * FR + x**2 * (V2 + FR * Ac + Ac * FR) + x**4 * Ac * Ac
+wrong_reserve_cross = FR * FR + x**2 * (V2 + F * Ac + Ac * F) + x**4 * A2_square
+assert iszero(direct_second - wrong_square - x**4 * leak)
+assert not iszero(direct_second - wrong_square)
+assert iszero(direct_second - wrong_reserve_cross - 2 * reserve * x**2 * Ac)
+assert not iszero(direct_second - wrong_reserve_cross)
+
+# A deliberately inadmissible bus-changing A2 invalidates cubic cancellation.
+bad_A2 = A2 + rat(1, 7) * flip(1)
+bad_cubic = clean(J.H * (V * bad_A2 + bad_A2 * V) * J)
+assert not iszero(bad_cubic)
+
+# Exact nontrivial unitary in one degenerate F block. It is an allowed joint
+# code evolution for some commuting D; no parent state-error claim is tested.
+U = sp.eye(8)
+U[1, 1] = U[4, 4] = 0
+U[1, 4] = U[4, 1] = -sp.I
+assert iszero(U.H * U - Ic) and iszero(U * F - F * U)
+xi_value = rat(1, 5)
+M1 = direct_first.subs(x, xi_value)
+M2 = direct_second.subs(x, xi_value)
+error1 = clean(U.H * M1 * U - M1)
+error2 = clean(U.H * M2 * U - M2)
+v_bound = g_old + r_source
+a_bound = N * abs(u) + (N - 1) * abs(vct)
+R_value = reserve.subs(x, xi_value)
+f_bound = rat(41, 5) + R_value
+bound1 = 2 * xi_value**2 * a_bound
+bound2 = 2 * xi_value**2 * (v_bound**2 + 2 * f_bound * a_bound) + 2 * xi_value**4 * a_bound**2
+assert frob2(error1) <= bound1**2
+assert frob2(error2) <= bound2**2
+B_bound = rat(11, 5) + Rs + rat(7, 3) + 6 + 2 + 2 * xi_value * RV + xi_value**2 * a_bound
+before_mean = M1[1, 1]
+after_mean = (U.H * M1 * U)[1, 1]
+before_var = M2[1, 1] - before_mean**2
+after_var = (U.H * M2 * U)[1, 1] - after_mean**2
+variance_error = sp.simplify(abs(after_var - before_var))
+variance_bound = sp.simplify(bound2 + 2 * B_bound * bound1)
+assert variance_error <= variance_bound
+
+# The [F,D]=0 premise is also discriminating: an old-only swap changes the
+# leading mean by 2 already at xi=0, where the claimed O(xi^2) bound vanishes.
+U_bad = sp.zeros(8)
+for old in range(2):
+    for k in range(4):
+        U_bad[4 * (1 - old) + k, 4 * old + k] = 1
+bad_leading = clean(U_bad.H * (F + Rs * Ic) * U_bad - (F + Rs * Ic))
+assert abs(bad_leading[0, 0]) == 2
+
+result = {
+    'python': platform.python_version(), 'sympy': sp.__version__,
+    'arithmetic': 'exact rational/Gaussian-rational and sqrt(3); no floating tolerance',
+    'physical_dimension': dim, 'code_dimension': 8, 'source_length': N,
+    'verified': ['bare code isometry and K0 invariance', 'both compressed moment polynomials exactly',
+                 'bus-vacuum cubic cancellation', 'A2-square off-code contribution exactly',
+                 'same-F joint unitary moment/variance bounds using stronger Frobenius bounds'],
+    'off_code_A2_square_diagonal': [str(leak[i, i]) for i in range(8)],
+    'omitted_quartic_witness_at_xi_1_over_5': str((x**4 * leak[2, 2]).subs(x, xi_value)),
+    'omitted_reserve_cross_witness_at_xi_1_over_5': str((2 * reserve * x**2 * Ac[1, 1]).subs(x, xi_value)),
+    'invalid_bus_changing_A2_cubic_nonzero': True,
+    'noncommuting_code_unitary_leading_mean_error': str(abs(bad_leading[0, 0])),
+    'first_error_frobenius_squared': str(frob2(error1)), 'first_bound': str(bound1),
+    'second_error_frobenius_squared': str(frob2(error2)), 'second_bound': str(bound2),
+    'variance_error_for_code_basis_1': str(variance_error), 'variance_bound': str(variance_bound),
+    'limits': 'One reduced one-bus N=3 exact algebra fixture. Not full routed-parent realization, all-N proof, state-corrector simulation, preparation or physical-energy validation.'
+}
+print(json.dumps(result, indent=2))

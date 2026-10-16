@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-16T13:10:09.412575+00:00",
+  "refs": {
+    "HEAD": "142cbd74aa146848b246795f8bf7007f3e38976d",
+    "origin/main": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "tree": "d0df9208acedc1d5632b90eb90c5d966c8d856d3",
+  "branch": "physics-loop/toe-positive-bias-suppliers-20261016",
+  "worktree_status": "clean",
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_before_preparation_publication/stdout",
+    "bytes": 26495,
+    "sha256": "e3bde59bd37d962a2f9e770dc2b49260ba7ce6a2886a0ed2c61b6fb97fc0c20c"
+  },
+  "open_count": 69,
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_before_preparation_publication_corrected/EXECUTION.json",
+      "bytes": 1254,
+      "sha256": "d35fff32e1c73922553b23983abdd3039ed68fb83c5e79b0e4cff49877a986b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_before_preparation_publication/EXECUTION.json",
+      "bytes": 1303,
+      "sha256": "c64ce52228010474d41413f27d976528fbec8a15d7cfa0d2c5911dd5ed34d9f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/rescreen_pr9636_before_preparation/EXECUTION.json",
+      "bytes": 1242,
+      "sha256": "a20f90199baf478ad9810583ddde430401c094b0f3f0b2a35dbfdd090cb61e8c"
+    }
+  ],
+  "delta": {
+    "added": [],
+    "removed": [],
+    "changed": [
+      {
+        "before": {
+          "baseRefName": "claude/rules-hygiene-20261015",
+          "headRefName": "claude/toe-campaign-24h-20261015",
+          "headRefOid": "e0718c81c95f135960583467676f9a29654beada",
+          "isDraft": false,
+          "number": 9636,
+          "title": "campaign: covariant one-tick kinematics (freeze, Dirac unfreezing) and order-blind 1-dependence",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636"
+        },
+        "after": {
+          "baseRefName": "claude/rules-hygiene-20261015",
+          "headRefName": "claude/toe-campaign-24h-20261015",
+          "headRefOid": "0d86ae60109a024bb83e7ba60aa3acc89515831f",
+          "isDraft": false,
+          "number": 9636,
+          "title": "campaign: covariant one-tick kinematics (freeze, Dirac unfreezing) and order-blind 1-dependence",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636"
+        }
+      }
+    ]
+  },
+  "scope_screen": "Full updated PR9636 body read for scope only; still distinct covariant-tick/formation work. No source proof review, import or attachment. All seven campaign PR heads unchanged.",
+  "main_and_instructions_unchanged": true,
+  "failed_preliminary_fetch": {
+    "receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_before_preparation_publication/EXECUTION.json",
+      "bytes": 1134,
+      "sha256": "0b9305dc133e83ed8e3e52702dc0d1315eef50e7e07a511514d385583726107d"
+    },
+    "reason": "Recorder fixes cwd to campaign parent, so plain git fetch exited128 before Git/network action. Separate corrected command supplied explicit git -C worktree and exited0. Original receipt and full streams retained."
+  }
+}

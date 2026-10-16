@@ -1,0 +1,20 @@
+# Exact sources and actual coverage
+
+The supplied worktree identity is `9ca474a32b3a4799d2d14cfee7580d77750422b4`; supplied main is `bbada1fe09b2d10d610560864d86b68c24a59713` and supplied instruction revision is `3a4b2c66a1ead7a1c48b4359627e968f681e3c39`. No Git command was run. Actual current file bytes were rechecked against the previous pinned identities by capture_sources.py; SOURCE_MANIFEST.json records paths, lengths, hashes, recovery copies and coverage. Final freeze rechecks all manifest identities. A hash is provenance, not proof.
+
+| Source | Actual read coverage | Role |
+|---|---|---|
+| AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md | Complete lines 1–684 in previous coherent task, reused at the same verified hash | Exact original target, supplies and fixed-strength gap |
+| POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md | Complete root argument lines 364–584; other bodies not fully read | Parent geometry and corrector context; no acceptance of unread independent/comparison bodies |
+| CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md | Lines 373–438 only | Original generic domain/interface only; its compiler proof is not invoked |
+| ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md | Lines 36–176 in prior task; lines 36–115 reread here | Actual-time ordering, scalar and whole-positivity contract |
+| Captured planning AGENTS.md, SCIENCE_WORKFLOW.md, workhorse SKILL.md | Complete in the same coherent assigned work; same bytes reverified | Scope and status rules; no additional delegation or landing authorization inferred |
+| next_realization_gap_selection/SELECTION.md | Complete in prior task, same bytes reverified | Original gap and duplication boundary |
+| bounded_strength_runtime_candidate/DERIVATION.md | Complete author source/cold read before prior freeze; sections 8–9 reread completely here, earlier theorem premise sections also reread | Original finite corrector implication and explicit prior open equations |
+| resonant_bus_root_proposal/PROPOSED_LEMMAS.md | Complete, twice within this continuation | Exposed unaccepted proposal; no independent status |
+| resonant_bus_root_proposal/ROUTED_BUS_ADDENDUM.md | Complete, twice within this continuation | Exposed unaccepted proposal; no branched-bus free-fermion premise imported |
+| ROUTING_FREEZE.json | Complete | Exposure/provenance metadata only |
+
+The new DERIVATION.md was completely cold-read in bounded ranges. One aggregate tool display truncated approximately 90 tokens in the source-resolvent section; the affected lines 188–215 were reread in full. The final narrow corrections were also read. Complete stdout/stderr of every actual scientific check run were read. The successful small check's historically named `jacobi_root_measure` row checks the sorted one-particle eigenvalues, not the full measure; that limit is explicit in CHECK_EVIDENCE.md.
+
+The new proof supplies its finite-dimensional arguments rather than using unread parent proofs or uncited literature as correctness witnesses. No external literature, other worker's new science, unrelated root candidate or audit ledger was read. The exposed root proposals are acknowledged; this author continuation is not independent review of them. No comparison with further candidate material occurred before this freeze.

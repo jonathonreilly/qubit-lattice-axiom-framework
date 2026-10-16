@@ -1,0 +1,129 @@
+{
+  "frozen_utc": "2026-10-16T02:21:41.457227+00:00",
+  "status": "Exposed conditional mathematical review; chain acceptance separately pending; no retained or native physical status",
+  "scope": "Explicit all-positive-side-length rectangular 3D path ending at a prescribed corner; exact arbitrary-correlated filler/reference full-output identity and separately attributed decoupled-drift extension.",
+  "qualifications": [
+    "Negative-axis exterior direction is not guaranteed at every corner; use appropriate signed direction or lower corner",
+    "Chosen corner must actually have parent port/coupling access",
+    "Idle fillers for identity-filler comparator; known decoupled drift retained only in changed comparator",
+    "All path interactions, filler availability, full retention and exterior vacancy/isolation remain supplied",
+    "No energy-moment, native preparation or efficient-runtime conclusion"
+  ],
+  "scientific_runs": 1,
+  "scientific_execution_source_sha256": "d97d9f2c1ccd25f14063ca1346b60b27fd93f79d18050124735abb4c9cfd3b50",
+  "source_verification_utc": "2026-10-16T02:21:41.447470+00:00",
+  "chain_original_freeze_sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7",
+  "editable_prompts_changed": [],
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1286,
+      "sha256": "4afe2b6b7896b8a6fb22ec7f40028fc2fc613dc4c78221aa3ed50e24e12caf8b"
+    },
+    {
+      "path": "CHECK_EVIDENCE.md",
+      "bytes": 3371,
+      "sha256": "8c7dae32f18141fdd8438491d09864ffa3b40696164c51c62c44f5f4bfa61a09"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 16581,
+      "sha256": "a747876323915e61a3b506f2d91380da6c365e002c089f32ed0a03bc453ff414"
+    },
+    {
+      "path": "SOURCE_EXPOSURE.md",
+      "bytes": 2631,
+      "sha256": "1782a2bc91a78da2d37558393919b99eaf1713413b45430d9dc49019f1d13b76"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 3144,
+      "sha256": "ca33fa1582bc874341f37ac56f4ee0c3d35bec9f09075fb17ea1756720d3e5e4"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 3521,
+      "sha256": "abf65ff5131bb45b849ae4e2a0463c74ef42cc0f214495756d015ab0ca2ef861"
+    },
+    {
+      "path": "check_padding.py",
+      "bytes": 3579,
+      "sha256": "d97d9f2c1ccd25f14063ca1346b60b27fd93f79d18050124735abb4c9cfd3b50"
+    },
+    {
+      "path": "run_01/EXECUTION.json",
+      "bytes": 1495,
+      "sha256": "d53d04675ca8689ee6668ed0d5ed75279d5f4b0adf9ef990dbd6dbbc8d17094f"
+    },
+    {
+      "path": "run_01/LAUNCH.json",
+      "bytes": 1208,
+      "sha256": "3dc822a4fa614c46820f7a0583e9a45e09ce59cd20855b34f502e14f475d0225"
+    },
+    {
+      "path": "run_01/SOURCE_MANIFEST.at_launch.json",
+      "bytes": 3144,
+      "sha256": "ca33fa1582bc874341f37ac56f4ee0c3d35bec9f09075fb17ea1756720d3e5e4"
+    },
+    {
+      "path": "run_01/check_padding.at_launch.py",
+      "bytes": 3579,
+      "sha256": "d97d9f2c1ccd25f14063ca1346b60b27fd93f79d18050124735abb4c9cfd3b50"
+    },
+    {
+      "path": "run_01/launcher.at_launch.py",
+      "bytes": 1671,
+      "sha256": "86fcaaa081577fa97cfde37ca18ea4b9cd66747b2e351c57c97b70c468c76315"
+    },
+    {
+      "path": "run_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "run_01/stdout.json",
+      "bytes": 821,
+      "sha256": "498d0d07e1d8be28b945ba2966939ed592a8d364132ff3ee2c0ce1e44e2082d9"
+    },
+    {
+      "path": "run_check.py",
+      "bytes": 1671,
+      "sha256": "86fcaaa081577fa97cfde37ca18ea4b9cd66747b2e351c57c97b70c468c76315"
+    },
+    {
+      "path": "source_snapshots/padded_box_root_proposal__FREEZE.json",
+      "bytes": 407,
+      "sha256": "2a33df38d9d653f2f86a4d8208bcdab102b138c7bba9bff1a6be2bf48af00dd7"
+    },
+    {
+      "path": "source_snapshots/padded_box_root_proposal__PROPOSED_LEMMAS.md",
+      "bytes": 4199,
+      "sha256": "09e43a6822cd08059419998a314f9289b5921ad5380ebb89c15a4ddc70e76106"
+    },
+    {
+      "path": "source_snapshots/positive_chain_strong_point_candidate__DERIVATION.md",
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+    },
+    {
+      "path": "source_snapshots/positive_chain_strong_point_candidate__FREEZE.json",
+      "bytes": 5125,
+      "sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7"
+    },
+    {
+      "path": "source_snapshots/static_bias_transfer_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "path": "source_snapshots/static_bias_transfer_root_review__QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    {
+      "path": "source_snapshots/strongly_regular_bus_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    }
+  ]
+}

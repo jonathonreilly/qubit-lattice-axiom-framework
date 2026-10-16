@@ -1,0 +1,143 @@
+"""Bounded author discriminators; no parent scientific implementation imported."""
+import hashlib
+import json
+import platform
+import sympy as s
+import mpmath as mp
+
+I=s.I
+X=s.Matrix([[0,1],[1,0]])
+Z=s.diag(1,-1)
+eye=s.eye(2)
+B=eye+X+Z
+g,w,lam=s.symbols('g w lam',real=True)
+rat=s.Rational
+kron=s.kronecker_product
+
+def krylov(G,port):
+    d=G.rows
+    cols=[]
+    f=port
+    for _ in range(d*(d-1)):
+        f=G*f-f*G
+        cols.append(f.reshape(d*d,1))
+    return s.Matrix.hstack(*cols)
+
+def gram_value(G,port):
+    q=krylov(G,port)
+    return s.factor((q.conjugate().T*q).det(method='domain-ge'))
+
+result={'python':platform.python_version(),'sympy':s.__version__,'mpmath':mp.__version__,
+        'scope':'Exact dimensions 4 and 6 plus nonrigorous high-precision coefficient samples; no all-n or physical validation.'}
+
+# A full characteristic determinant independently extracts second-order energies.
+E=[s.Integer(0),s.Integer(1),s.Integer(3)]
+Bc=s.Matrix([[2,1+I,2-I],[1-I,-1,3+2*I],[2+I,3-2*I,rat(1,2)]])
+omega=s.Integer(5)
+H0=kron(s.diag(*E),eye)+omega*kron(s.eye(3),Z)
+V=kron(Bc,X)
+O=kron(s.eye(3),B)
+energies=list(H0.diagonal())
+char=s.Poly((lam*s.eye(6)-H0-g*V).det(method='domain-ge'),g)
+p0=char.coeff_monomial(1)
+p2=char.coeff_monomial(g**2)
+derived=[]
+formula=[]
+omitted_diagonal=[]
+for a in range(3):
+    for sigma in [1,-1]:
+        e=E[a]+sigma*omega
+        d=s.cancel(-p2.subs(lam,e)/s.diff(p0,lam).subs(lam,e))
+        f=sum(s.conjugate(Bc[a,b])*Bc[a,b]/(E[a]-E[b]+2*sigma*omega) for b in range(3))
+        bad=sum(s.conjugate(Bc[a,b])*Bc[a,b]/(E[a]-E[b]+2*sigma*omega) for b in range(3) if b!=a)
+        assert s.simplify(d-f)==0
+        derived.append(d); formula.append(s.simplify(f)); omitted_diagonal.append(s.simplify(d-bad))
+assert any(x!=0 for x in omitted_diagonal)
+D=[s.simplify(derived[2*a]-derived[2*a+1]) for a in range(3)]
+assert all(D[a]!=D[b] for a in range(3) for b in range(a))
+result['characteristic_second_order']={'coefficients':[str(x) for x in derived],
+    'D':[str(x) for x in D],'omitted_diagonal_mutant_residuals':[str(x) for x in omitted_diagonal],
+    'all_exact_formula_residuals_zero':True}
+
+# First projector derivatives assembled as full matrices, not scalar target formulas.
+P=[];Pd=[]
+for i,ei in enumerate(energies):
+    pi=s.zeros(6);pi[i,i]=1;P.append(pi)
+for i,ei in enumerate(energies):
+    dpi=s.zeros(6)
+    for j,ej in enumerate(energies):
+        if j!=i:dpi+=(P[j]*V*P[i]+P[i]*V*P[j])/(ei-ej)
+    Pd.append(dpi)
+slopes={}
+wrong_sign_residual=[]
+for a in range(3):
+    for b in range(3):
+        if a==b:continue
+        for sigma in [1,-1]:
+            i=2*a+(sigma==-1)
+            delta=E[a]-E[b]
+            for tau in [sigma,-sigma]:
+                j=2*b+(tau==-1)
+                got=s.simplify((Pd[i]*O*P[j]+P[i]*O*Pd[j])[i,j])
+                want=(Bc[a,b]*4*sigma*omega/(4*omega**2-delta**2) if tau==sigma else -2*sigma*Bc[a,b]/(delta+2*sigma*omega))
+                assert s.simplify(got-want)==0 and got!=0
+                slopes[(i,j)]=got
+                if tau==-sigma:wrong_sign_residual.append(s.simplify(got+want))
+assert all(x!=0 for x in wrong_sign_residual)
+result['projector_transition_check']={'tested_pairs':len(slopes),'exact_residuals_zero':True,
+    'opposite_sign_mutant_example':str(wrong_sign_residual[0]),
+    'complex_example':str(slopes[(0,3)])}
+
+# The specific two-level base, including a decisive identity-deletion mutant.
+omega2=s.Integer(3);g2=rat(1,10)
+A2=kron(Z,eye)+omega2*kron(eye,Z)+g2*kron(B,X)
+C2=A2+(1+omega2+3*g2)*s.eye(4)
+port2=kron(eye,B)
+pC=gram_value(C2,port2)
+assert pC>0
+badA2=kron(Z,eye)+omega2*kron(eye,Z)+g2*kron(X+Z,X)
+badQ=krylov(badA2,port2)
+bad_rank=badQ.rank()
+badchar=s.expand(badA2.charpoly(lam).as_expr())
+assert bad_rank<12 and s.expand(badchar.subs(lam,-lam)-badchar)==0
+result['rational_two_qubit_witness']={'omega':str(omega2),'g':str(g2),
+    'positive_bias_scalar_reserve':str(1+omega2+3*g2),'krylov_gram':str(pC),
+    'positive':True,'edge_minimum_eigenvalue':str(g2*(2-s.sqrt(2))),
+    'identity_deleted_krylov_rank':bad_rank,'required_rank':12,'identity_deleted_charpoly':str(badchar)}
+
+# H+C need not be strong: compare a direct Gram to the independent homogeneity law.
+H=-C2;small=rat(1,7);degree=12*13
+at_one=gram_value(H+C2,port2)
+at_small=gram_value(H+small*C2,port2)
+assert at_one==0 and at_small>0
+assert s.cancel(at_small-(small-1)**degree*pC)==0
+result['leading_coefficient_stress']={'H':'-C2','p_H(1)':str(at_one),'small_node':str(small),
+    'degree':degree,'positive_at_small_node':True,'exact_homogeneity_residual':'0',
+    'small_value_sha256':hashlib.sha256(str(at_small).encode()).hexdigest()}
+
+# Independent eigensolver samples check coefficient signs without certifying the theorem.
+mp.mp.dps=80
+def to_mp(M):
+    return mp.matrix([[mp.mpc(str(s.re(M[i,j]).evalf(85)),str(s.im(M[i,j]).evalf(85))) for j in range(M.cols)] for i in range(M.rows)])
+h0=to_mp(H0);v=to_mp(V);o=to_mp(O)
+order=sorted(range(6),key=lambda i:energies[i])
+samples=[]
+for raw in ['0.001','0.0005','0.00025']:
+    gg=mp.mpf(raw)
+    vals,vecs=mp.eighe(h0+gg*v)
+    us={};ls={}
+    for sorted_index,original in enumerate(order):
+        vec=vecs[:,sorted_index]
+        anchor=vec[original]
+        vec*=mp.conj(anchor)/abs(anchor)
+        us[original]=vec;ls[original]=vals[sorted_index]
+    slope_error=mp.mpf('0')
+    for (i,j),slope in slopes.items():
+        actual=(us[i].transpose_conj()*o*us[j])[0]/gg
+        target=to_mp(s.Matrix([[slope]]))[0]
+        slope_error=max(slope_error,abs(actual-target))
+    energy_remainder=max(abs(ls[i]-int(energies[i])-gg**2*mp.mpf(int(s.numer(derived[i])))/int(s.denom(derived[i])))/gg**4 for i in range(6))
+    samples.append({'g':raw,'max_transition_slope_error':mp.nstr(slope_error,30),'max_energy_remainder_over_g4':mp.nstr(energy_remainder,30)})
+assert mp.mpf(samples[-1]['max_transition_slope_error'])<mp.mpf(samples[0]['max_transition_slope_error'])/3
+result['numerical_samples']={'precision_digits':80,'rigorous_interval_claim':False,'samples':samples}
+print(json.dumps(result,indent=2,sort_keys=True))

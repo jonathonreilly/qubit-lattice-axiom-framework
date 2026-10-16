@@ -1,0 +1,9 @@
+# Preserved execution and bookkeeping limits
+
+The two actual original scientific executions are preserved under original/execution and original/execution_02, with complete launcher/source-at-launch captures, command/cwd/limit receipts, exit codes and streams. Their distinct identities and the structural-equality repair are recorded in original/CHECK_EVIDENCE.md and REVIEW.md. The original freeze predates all candidate inspection.
+
+The first attempt to capture the candidate after the original seal expected a manifest field named artifacts or members. The candidate uses files with absolute paths. That capture command stopped at an assertion and the subsequent attempted reads of not-yet-created captured files returned file-not-found. The actual freeze was then inspected, its schema handled correctly, and all eleven named candidate artifacts were captured and byte-verified. The first exposure was of freeze metadata; its exact instant was not separately recorded, so CANDIDATE_EXPOSURE.json reports an interval. No unsuccessful attempt is described as a completed capture.
+
+A later read requested original/execution_02/EXECUTION.json, but this independent launcher's receipts are LAUNCH.json and RESULT.json. That read returned file-not-found; both correct receipts and the complete streams were then read. This was a read-path mistake, not a scientific execution or missing preserved evidence. The author packet separately acknowledges its own earlier mistaken receipt path.
+
+The author finalization script was captured and hash-verified but not fully reviewed. No full-controller simulation, new publication action, generic-plant search or additional model-family check is claimed.

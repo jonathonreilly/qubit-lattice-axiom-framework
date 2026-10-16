@@ -1,0 +1,294 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T13:20:03.724732+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823",
+  "git_base": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "base_branch": "physics-loop/toe-positive-bias-suppliers-20261016",
+  "source_body_pins": [
+    {
+      "bytes": 31003,
+      "end_byte_exclusive": 49109,
+      "label": "original_preparation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29",
+      "start_byte": 18106
+    },
+    {
+      "bytes": 22431,
+      "end_byte_exclusive": 71645,
+      "label": "original_exposed_review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW.md",
+      "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8",
+      "start_byte": 49214
+    },
+    {
+      "bytes": 5394,
+      "end_byte_exclusive": 77152,
+      "label": "original_root_reconstruction",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION.md",
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9",
+      "start_byte": 71758
+    },
+    {
+      "bytes": 5082,
+      "end_byte_exclusive": 82359,
+      "label": "original_controlling_qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e",
+      "start_byte": 77277
+    },
+    {
+      "bytes": 7516,
+      "end_byte_exclusive": 89985,
+      "label": "slew_proposal",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44",
+      "start_byte": 82469
+    },
+    {
+      "bytes": 17568,
+      "end_byte_exclusive": 107647,
+      "label": "slew_exposed_review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1",
+      "start_byte": 90079
+    },
+    {
+      "bytes": 6990,
+      "end_byte_exclusive": 114749,
+      "label": "slew_controlling_qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25",
+      "start_byte": 107759
+    }
+  ],
+  "raw_bodies": [
+    {
+      "bytes": 31003,
+      "end_byte_exclusive": 49369,
+      "label": "original_preparation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29",
+      "start_byte": 18366
+    },
+    {
+      "bytes": 22431,
+      "end_byte_exclusive": 71905,
+      "label": "original_exposed_review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW.md",
+      "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8",
+      "start_byte": 49474
+    },
+    {
+      "bytes": 5394,
+      "end_byte_exclusive": 77412,
+      "label": "original_root_reconstruction",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION.md",
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9",
+      "start_byte": 72018
+    },
+    {
+      "bytes": 5082,
+      "end_byte_exclusive": 82619,
+      "label": "original_controlling_qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e",
+      "start_byte": 77537
+    },
+    {
+      "bytes": 7516,
+      "end_byte_exclusive": 90245,
+      "label": "slew_proposal",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44",
+      "start_byte": 82729
+    },
+    {
+      "bytes": 17568,
+      "end_byte_exclusive": 107907,
+      "label": "slew_exposed_review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1",
+      "start_byte": 90339
+    },
+    {
+      "bytes": 6990,
+      "end_byte_exclusive": 115009,
+      "label": "slew_controlling_qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25",
+      "start_byte": 108019
+    }
+  ],
+  "parent_binding": {
+    "direct_mathematical_parents": [
+      {
+        "bytes": 83919,
+        "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+        "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+        "source_use": "Qualified complete bus runtime with exact-target/support and rational-target repair qualifications"
+      }
+    ],
+    "excluded": "No resource-composition, shrinking-bias or positive-bias preparation theorem imported.",
+    "git_ancestry_is_not_dependency_rule": true,
+    "internal_composition": "Slew preparation uses the original preparation argument embedded in this same note."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/ed576446fcbf5f0aae92054730165082e2c68567b09baaf389d36b49f6d87278.json",
+    "bytes": 33180,
+    "sha256": "ed576446fcbf5f0aae92054730165082e2c68567b09baaf389d36b49f6d87278"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/54a6c6055e8bf1b7046db9ec94d6a56526d5d28204ad5be4b3a28b1e11fe3e36.json",
+    "bytes": 3078,
+    "sha256": "54a6c6055e8bf1b7046db9ec94d6a56526d5d28204ad5be4b3a28b1e11fe3e36"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/07c011350166272167a56e69c3551d5ccaf412eea17f76eb343ca6186b2b11c9.md",
+    "bytes": 114810,
+    "sha256": "07c011350166272167a56e69c3551d5ccaf412eea17f76eb343ca6186b2b11c9"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990.json",
+      "bytes": 4004,
+      "sha256": "2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/defdbe274b3d121ac8fd1116e263d997050e6a642600bcc46c33b403d50130ce.md",
+      "bytes": 5448,
+      "sha256": "defdbe274b3d121ac8fd1116e263d997050e6a642600bcc46c33b403d50130ce"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/d72157ac8a873f451103ab17fbb0a263a24dd61b29d5b2569be0a2efc05e3b8c.json",
+      "bytes": 900,
+      "sha256": "d72157ac8a873f451103ab17fbb0a263a24dd61b29d5b2569be0a2efc05e3b8c"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/af755f443fb22379780475436b86da78563d3e8b21f62b9b83b5a1622c851f05.json",
+      "bytes": 1806,
+      "sha256": "af755f443fb22379780475436b86da78563d3e8b21f62b9b83b5a1622c851f05"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/b78f04acb3cdf8a98c0859c2f12a4e1d15e9db62b32aef18a78a745f7bed3474.blob",
+      "bytes": 587,
+      "sha256": "b78f04acb3cdf8a98c0859c2f12a4e1d15e9db62b32aef18a78a745f7bed3474"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/f80e6b016210ba941203d25c92e43f6c930d6a481b715ad5a2712613fba41ac7.py",
+      "bytes": 6309,
+      "sha256": "f80e6b016210ba941203d25c92e43f6c930d6a481b715ad5a2712613fba41ac7"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/457f02dafdb7d3ad547279fe000532dee639c5a1ba59b87207b420b15918ec09.json",
+      "bytes": 13709,
+      "sha256": "457f02dafdb7d3ad547279fe000532dee639c5a1ba59b87207b420b15918ec09"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/2e7ab15259339ef2d3ef943c94cb37f8ef66e1bdd48dd2b7ff0aa6eb45474c55.json",
+      "bytes": 1812,
+      "sha256": "2e7ab15259339ef2d3ef943c94cb37f8ef66e1bdd48dd2b7ff0aa6eb45474c55"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/588a7bc9b4a71003ab50610da957bed882e7684bf17e9e88c23d4d9c75cc42ef.py",
+      "bytes": 5209,
+      "sha256": "588a7bc9b4a71003ab50610da957bed882e7684bf17e9e88c23d4d9c75cc42ef"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/59a7f0294c011ac3c068a126d175c2bca40716247977a1580d98922255992def.blob",
+      "bytes": 301,
+      "sha256": "59a7f0294c011ac3c068a126d175c2bca40716247977a1580d98922255992def"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/89d6d78882274a58f864b541a6612def852519f7017b901c9a84df31b70067a7.json",
+    "bytes": 1429,
+    "sha256": "89d6d78882274a58f864b541a6612def852519f7017b901c9a84df31b70067a7"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/5884a9241b6db9801c8e959b90c8fb9d030b574d2dc969793c84a7be3cb341f7.json",
+      "bytes": 1729,
+      "sha256": "5884a9241b6db9801c8e959b90c8fb9d030b574d2dc969793c84a7be3cb341f7"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+      "bytes": 51748,
+      "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/408bd0c424cd3563dff687a0aefe6aa20775c9eb89fbfdefa5ce288a09001d2e.blob",
+      "bytes": 318,
+      "sha256": "408bd0c424cd3563dff687a0aefe6aa20775c9eb89fbfdefa5ce288a09001d2e"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-bus-joint-energy-moments-20261016",
+      "headRefName": "physics-loop/toe-positive-bias-suppliers-20261016",
+      "headRefOid": "142cbd74aa146848b246795f8bf7007f3e38976d",
+      "isDraft": false,
+      "number": 9635,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9635"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/07c011350166272167a56e69c3551d5ccaf412eea17f76eb343ca6186b2b11c9.md",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/2e7ab15259339ef2d3ef943c94cb37f8ef66e1bdd48dd2b7ff0aa6eb45474c55.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/408bd0c424cd3563dff687a0aefe6aa20775c9eb89fbfdefa5ce288a09001d2e.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/457f02dafdb7d3ad547279fe000532dee639c5a1ba59b87207b420b15918ec09.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/47d08a9eaed8ba5492a507e989837355fdaef4bbbd8ee3810e57cb94f2d98488.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/54a6c6055e8bf1b7046db9ec94d6a56526d5d28204ad5be4b3a28b1e11fe3e36.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/5884a9241b6db9801c8e959b90c8fb9d030b574d2dc969793c84a7be3cb341f7.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/588a7bc9b4a71003ab50610da957bed882e7684bf17e9e88c23d4d9c75cc42ef.py",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/59a7f0294c011ac3c068a126d175c2bca40716247977a1580d98922255992def.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/89d6d78882274a58f864b541a6612def852519f7017b901c9a84df31b70067a7.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/af755f443fb22379780475436b86da78563d3e8b21f62b9b83b5a1622c851f05.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/b78f04acb3cdf8a98c0859c2f12a4e1d15e9db62b32aef18a78a745f7bed3474.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/cb054fad672a4afa990de83b67fec80c14ca0be070448b10b5c8b53a3e7d40c6.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/d72157ac8a873f451103ab17fbb0a263a24dd61b29d5b2569be0a2efc05e3b8c.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/defdbe274b3d121ac8fd1116e263d997050e6a642600bcc46c33b403d50130ce.md",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/ed576446fcbf5f0aae92054730165082e2c68567b09baaf389d36b49f6d87278.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/f80e6b016210ba941203d25c92e43f6c930d6a481b715ad5a2712613fba41ac7.py"
+  ],
+  "origin_main": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

@@ -1,0 +1,148 @@
+{
+  "records": [
+    {
+      "schema": "author_exact_fixture_v1",
+      "scope": "one_exact_gaussian_rational_degree14_fixture_only",
+      "receipt": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.receipt.json",
+        "role": "author_original_evidence",
+        "bytes": 1401,
+        "sha256": "fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b.blob"
+        }
+      },
+      "source": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.source_at_launch.py",
+        "role": "author_original_evidence",
+        "bytes": 4664,
+        "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a.blob"
+        }
+      },
+      "launched_source": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.py",
+        "role": "author_original_evidence",
+        "bytes": 4664,
+        "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a.blob"
+        }
+      },
+      "stdout": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.stdout.json",
+        "role": "author_original_evidence",
+        "bytes": 1653,
+        "sha256": "17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0.blob"
+        }
+      },
+      "stderr": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.stderr.txt",
+        "role": "author_original_evidence",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+        }
+      }
+    },
+    {
+      "schema": "root_acceptance_metadata_v1",
+      "scope": "root_source_acceptance_metadata_only",
+      "receipt": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/correlated_energy_source_acceptance/EXECUTION.json",
+        "role": "root_source_acceptance_actual_metadata",
+        "bytes": 1776,
+        "sha256": "d2df4ad0defa67c87db1c405b5140c6f2ce85d985648eadfb8bfb25b849decb2",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/d2df4ad0defa67c87db1c405b5140c6f2ce85d985648eadfb8bfb25b849decb2.blob"
+        }
+      },
+      "source": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/correlated_energy_source_acceptance/executed_source.py",
+        "role": "root_source_acceptance_actual_metadata",
+        "bytes": 3286,
+        "sha256": "f2a89628467327048052ae762fcf51bf2cfa07b9b99102e03a24e8b518799477",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/f2a89628467327048052ae762fcf51bf2cfa07b9b99102e03a24e8b518799477.blob"
+        }
+      },
+      "stdout": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/correlated_energy_source_acceptance/stdout",
+        "role": "root_source_acceptance_actual_metadata",
+        "bytes": 545,
+        "sha256": "60f08894c45c110dbfda6013ab2425e660940bbcdec3d5302a3b3c5b5e5826b9",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/60f08894c45c110dbfda6013ab2425e660940bbcdec3d5302a3b3c5b5e5826b9.blob"
+        }
+      },
+      "stderr": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/correlated_energy_source_acceptance/stderr",
+        "role": "root_source_acceptance_actual_metadata",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+        }
+      },
+      "recorder": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+        "role": "root_acceptance_recorder",
+        "bytes": 1536,
+        "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.blob"
+        }
+      },
+      "acceptance": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_root_review/QUALIFIED_ACCEPTANCE.json",
+        "role": "qualified_source_acceptance",
+        "bytes": 3809,
+        "sha256": "4e3d3af077b3dd5df8b11c6a7955f960c670a39a2aa16e52f6a409fb09e78067",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/4e3d3af077b3dd5df8b11c6a7955f960c670a39a2aa16e52f6a409fb09e78067.blob"
+        }
+      }
+    },
+    {
+      "schema": "historical_head_correction_v1",
+      "scope": "source_identity_chronology_only",
+      "protected_freeze": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/FREEZE.json",
+        "role": "protected_original_provenance_no_scientific_execution",
+        "bytes": 1505,
+        "sha256": "24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779.blob"
+        }
+      },
+      "exposed_manifest": {
+        "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/exposed_comparison/SOURCE_MANIFEST.json",
+        "role": "exposed_reconciliation_and_head_correction",
+        "bytes": 11656,
+        "sha256": "66cf432a64e8158d8aa5c638563cb76976ef0530cad4276070d4d0d4be8c71c3",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/66cf432a64e8158d8aa5c638563cb76976ef0530cad4276070d4d0d4be8c71c3.blob"
+        }
+      }
+    }
+  ],
+  "independent_scientific_execution": null,
+  "scope": "One original author exact fixture, actual root source-acceptance metadata, and historical HEAD correction; no scientific replay or invented independent executable"
+}

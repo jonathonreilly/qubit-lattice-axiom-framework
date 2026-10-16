@@ -1,0 +1,46 @@
+{
+  "frozen_utc": "2026-10-15T23:55:59.315970+00:00",
+  "scope": "Source-exposed comparison and separately attributed minimum-runtime corollary; original protected result unchanged.",
+  "members": [
+    {
+      "path": "COMPARISON.md",
+      "sha256": "cc263f5f842c4d0f955d2d14bff78dcfbae4df0d331ed61fdb4d6b698868977f",
+      "bytes": 9667
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "c8d7d2178e400c19429b0e0c716212bda9274eb076d2255f5e91a25caf487b18",
+      "bytes": 1950
+    },
+    {
+      "path": "VERIFICATION.json",
+      "sha256": "0655df53a9998bcc4d21331327134111be2c7775c7eace054b0bdca6f0c7d4f1",
+      "bytes": 484
+    },
+    {
+      "path": "source_at_launch/INDEPENDENT_DERIVATION.md",
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5",
+      "bytes": 19478
+    },
+    {
+      "path": "source_at_launch/INDEPENDENT_ORIGINAL_FREEZE.json",
+      "sha256": "cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5",
+      "bytes": 4983
+    },
+    {
+      "path": "source_at_launch/INDEPENDENT_SOURCE_COVERAGE.md",
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "bytes": 7070
+    },
+    {
+      "path": "source_at_launch/ROOT_DERIVATION.md",
+      "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e",
+      "bytes": 11481
+    },
+    {
+      "path": "source_at_launch/ROOT_INITIAL_FREEZE.json",
+      "sha256": "d0d4dc6619d9452b9b975612c973e13e3dac2faed3cdd5483801371aab7552bf",
+      "bytes": 563
+    }
+  ]
+}

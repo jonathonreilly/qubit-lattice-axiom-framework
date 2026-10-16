@@ -1,0 +1,29 @@
+{
+  "mean_generator_phase_error": 2.035905147053982e-15,
+  "phase_order_rows": [
+    {
+      "s": 0.0,
+      "complete_old_phase_error": 7.583384049534131e-15,
+      "window_upper_bound": 0.0,
+      "exact_order_identity_error": 3.3285859494178095e-15
+    },
+    {
+      "s": 0.31,
+      "complete_old_phase_error": 0.0061927113221446894,
+      "window_upper_bound": 0.006192721217534265,
+      "exact_order_identity_error": 3.862179449631185e-14
+    },
+    {
+      "s": 0.7,
+      "complete_old_phase_error": 0.013983450108739658,
+      "window_upper_bound": 0.013983564039593497,
+      "exact_order_identity_error": 1.1652225765491732e-14
+    }
+  ],
+  "omitted_omega_T_phase_mutant_error": 0.35767991305116514,
+  "branched_XY_not_subset_sums_error": 8.951402955315046e-05,
+  "full_many_body_spectral_shift": 0.06512079895980216,
+  "full_perturbation_norm": 0.32310656629234713,
+  "sum_edge_norm_bound": 0.48,
+  "scope": "Finite phase and branch/Weyl discriminators only; no controller accuracy-family execution."
+}

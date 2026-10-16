@@ -1,0 +1,271 @@
+{
+  "utc": "2026-10-16T01:43:46.675374+00:00",
+  "role": "Exposed author exact algebra check; not independent validation or a controller simulation",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sympy_version": "1.14.0",
+  "limits": {
+    "child_alarm_seconds": 40,
+    "largest_matrix_dimension": 4,
+    "gap_difference_polynomial_degree_at_most": 1,
+    "floating_point_arithmetic": false
+  },
+  "literal_H": "3II+XX+YY+ZZ",
+  "added_C": "2(II+YY)+8(II+ZZ)=10II+2YY+8ZZ",
+  "designated_B": "(X+2Y+3Z) tensor I",
+  "Bell_basis_order": [
+    "psi_minus",
+    "psi_plus",
+    "phi_plus",
+    "phi_minus"
+  ],
+  "Bell_basis_columns": [
+    [
+      "0",
+      "0",
+      "sqrt(2)/2",
+      "sqrt(2)/2"
+    ],
+    [
+      "sqrt(2)/2",
+      "sqrt(2)/2",
+      "0",
+      "0"
+    ],
+    [
+      "-sqrt(2)/2",
+      "sqrt(2)/2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "sqrt(2)/2",
+      "-sqrt(2)/2"
+    ]
+  ],
+  "old_spectrum": [
+    0,
+    4,
+    4,
+    4
+  ],
+  "bias_spectrum": [
+    0,
+    4,
+    16,
+    20
+  ],
+  "attenuated_spectrum": [
+    "0",
+    "4*lambda + 4",
+    "16*lambda + 4",
+    "20*lambda + 4"
+  ],
+  "strong_point_spectrum": [
+    0,
+    8,
+    20,
+    24
+  ],
+  "pair_order_a_greater_b": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "positive_gaps": [
+    "4*lambda + 4",
+    "16*lambda + 4",
+    "20*lambda + 4",
+    "12*lambda",
+    "16*lambda",
+    "4*lambda"
+  ],
+  "strong_point_gaps_in_pair_order": [
+    8,
+    20,
+    24,
+    12,
+    16,
+    4
+  ],
+  "positive_gap_collisions": [
+    {
+      "first_pair": [
+        1,
+        0
+      ],
+      "second_pair": [
+        2,
+        1
+      ],
+      "lambda": "1/2"
+    },
+    {
+      "first_pair": [
+        1,
+        0
+      ],
+      "second_pair": [
+        3,
+        1
+      ],
+      "lambda": "1/3"
+    }
+  ],
+  "exact_quantitative_interval": "0 < lambda <= 1/4",
+  "minimum_positive_gap_on_interval": "4 lambda",
+  "minimum_positive_gap_separation_on_interval": "4 lambda",
+  "sorted_positive_gaps_on_interval": [
+    "4*lambda",
+    "12*lambda",
+    "16*lambda",
+    "4*lambda + 4",
+    "16*lambda + 4",
+    "20*lambda + 4"
+  ],
+  "adjacent_sorted_gap_differences": [
+    "8*lambda",
+    "4*lambda",
+    "4 - 12*lambda",
+    "12*lambda",
+    "4*lambda"
+  ],
+  "B_in_Bell_basis": [
+    [
+      "0",
+      "3",
+      "-2*I",
+      "-1"
+    ],
+    [
+      "3",
+      "0",
+      "1",
+      "2*I"
+    ],
+    [
+      "2*I",
+      "1",
+      "0",
+      "3"
+    ],
+    [
+      "-1",
+      "-2*I",
+      "3",
+      "0"
+    ]
+  ],
+  "transition_entries": [
+    "3",
+    "2*I",
+    "-1",
+    "1",
+    "-2*I",
+    "3"
+  ],
+  "minimum_transition_magnitude": 1,
+  "B_operator_norm": "sqrt(14)",
+  "zero_port_diagonals": true,
+  "old_positive_edge_block_norms": [
+    2,
+    2,
+    2
+  ],
+  "added_positive_edge_block_norms": [
+    4,
+    16
+  ],
+  "added_incident_load_each_old_endpoint": "20 lambda",
+  "added_scalar_rate": "10 lambda",
+  "centered_bias_norm": 10,
+  "checks_count": 62,
+  "checks": [
+    "Bell transform unitary",
+    "literal bias identity",
+    "old positive decomposition identity",
+    "commuting old Hamiltonian and bias",
+    "Bell Pauli correlations X",
+    "Bell Pauli correlations Y",
+    "Bell Pauli correlations Z",
+    "old spectrum",
+    "bias spectrum",
+    "first added block positive with norm four",
+    "second added block positive with norm sixteen",
+    "bias exact PSD norm twenty",
+    "old positive edge block X",
+    "old positive edge block Y",
+    "old positive edge block Z",
+    "full symbolic attenuated spectrum",
+    "strong point spectrum",
+    "all six symbolic gaps",
+    "strong point six distinct gaps",
+    "gap difference polynomial nonzero 0 1",
+    "gap difference polynomial nonzero 0 2",
+    "gap difference polynomial nonzero 0 3",
+    "gap difference polynomial nonzero 0 4",
+    "gap difference polynomial nonzero 0 5",
+    "gap difference polynomial nonzero 1 2",
+    "gap difference polynomial nonzero 1 3",
+    "gap difference polynomial nonzero 1 4",
+    "gap difference polynomial nonzero 1 5",
+    "gap difference polynomial nonzero 2 3",
+    "gap difference polynomial nonzero 2 4",
+    "gap difference polynomial nonzero 2 5",
+    "gap difference polynomial nonzero 3 4",
+    "gap difference polynomial nonzero 3 5",
+    "gap difference polynomial nonzero 4 5",
+    "only positive gap collisions one third and one half",
+    "sorted list is permutation of all gaps",
+    "small interval adjacent gap differences",
+    "whole interval gap separation at least four lambda 0",
+    "whole interval gap separation at least four lambda 1",
+    "whole interval gap separation at least four lambda 2",
+    "whole interval gap separation at least four lambda 3",
+    "whole interval gap separation at least four lambda 4",
+    "whole interval positive gap at least four lambda 0",
+    "whole interval positive gap at least four lambda 1",
+    "whole interval positive gap at least four lambda 2",
+    "whole interval positive gap at least four lambda 3",
+    "whole interval positive gap at least four lambda 4",
+    "whole interval positive gap at least four lambda 5",
+    "exact minimum gap attained",
+    "exact minimum gap separation attained",
+    "full exact Bell basis port matrix",
+    "all six positive orientation transitions nonzero",
+    "transition magnitude squares",
+    "all port diagonals are zero",
+    "port norm squared fourteen",
+    "optional local identity shift makes every matrix entry nonzero",
+    "positive local port shift spectrum",
+    "centered bias radius ten",
+    "physical scalar H three",
+    "physical scalar bias ten",
+    "small interval exact total norm at most nine",
+    "small interval paid added incident load at most five"
+  ],
+  "all_checks_passed": true,
+  "boundary": "This requires permission to add and attenuate the specified positive blocks on the already occupied old edge. It proves neither that onsite-only controls authorize that addition nor that generic Lie controllability supplies such a bias."
+}

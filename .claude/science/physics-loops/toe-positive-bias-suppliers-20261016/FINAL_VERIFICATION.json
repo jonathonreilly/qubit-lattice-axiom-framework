@@ -1,0 +1,343 @@
+{
+  "utc": "2026-10-16T04:47:49.989605+00:00",
+  "branch": "physics-loop/toe-positive-bias-suppliers-20261016",
+  "base_head": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 133383,
+    "sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/positive_bias_suppliers_2026_10_16.py",
+    "bytes": 132340,
+    "sha256": "6ed8d187ab1f55bead5fe289ce96a7e96806ab349d2230c415444e349314c64b"
+  },
+  "cache": {
+    "utc": "2026-10-16T04:40:54.091816+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/positive_bias_suppliers_2026_10_16.py",
+      "bytes": 132340,
+      "sha256": "6ed8d187ab1f55bead5fe289ce96a7e96806ab349d2230c415444e349314c64b"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/CANONICAL_RESULT.json",
+      "bytes": 1192,
+      "sha256": "8fa137799eb4afa0d33e4f7e0e5c47df9caaf5bb6062d6f7affbe0eb39e90ef1"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/positive_bias_suppliers_2026_10_16.txt",
+      "bytes": 1157,
+      "sha256": "4bebd085f15ae34d97260559d8d7d82a19c5cb115b70577b794806c58075f14b"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "mathematics_or_retention_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "scope": "exact bytes, recovery and captured binding metadata only"
+    },
+    "scope_lines": [
+      "per_element: source coefficient text retained; no physical element was executed",
+      "per_site: declared complete lattice interface retained; no hardware test was executed",
+      "per_mode: exact-target existence and rational-target effectiveness remain distinct; no scientific program executed",
+      "per_block: positive-bias source text and historical success/failure/provenance metadata checked only",
+      "lattice_wide: native preparation, actual suppliers and independent audit remain separate"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-16T04:41:33.891320+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/positive_bias_suppliers_2026_10_16.py",
+      "bytes": 132340,
+      "sha256": "6ed8d187ab1f55bead5fe289ce96a7e96806ab349d2230c415444e349314c64b"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/MUTATION_RESULTS.json",
+      "bytes": 10413,
+      "sha256": "4b2465e75ecf39088037e86ca305d82d776364d21d1b10910bcdcda2b84a970c"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 187,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-16T04:44:01.411825+00:00",
+    "old_nodes_preserved": 7151,
+    "old_edges_preserved": 16114,
+    "new_node": {
+      "claim_id": "positive_bias_suppliers_bounded_theorem_note_2026-10-16",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "strongly_regular_bus_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36",
+      "path": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "runner_path": "scripts/positive_bias_suppliers_2026_10_16.py",
+      "title": "Fixed-bias window obstruction and transfer by attenuating a supplied bias"
+    },
+    "new_edges": [
+      {
+        "from": "positive_bias_suppliers_bounded_theorem_note_2026-10-16",
+        "to": "strongly_regular_bus_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "old_roots_preserved": true,
+    "new_roots": [],
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10471528,
+      "sha256": "f84ce99ab776e77caf76e40cd3045040c4af206f8319d6bebffe14990741a2d3"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1021148,
+      "sha256": "256d3a2c4ce1712bc6b5e4a606a268522e2a6253291ac118d1e1e4f4b04ea46a"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "872525fa0f3dc40c5742543d8b8d60bdb15d844637464b9d889306007ba676ad"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-16T04:41:30.141673+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2236,
+          "sha256": "3cc88e4cdc6d68e1c4bc95e64590b7022874136bde4d135f5b1eb9c9c034d8de"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2293,
+          "sha256": "af1cdfc8e9e0fc838f86ece85bae77322106fd91fa4c437015a4ed703af0132e"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2281,
+          "sha256": "5cf008397466ce71b2a1c885bfe0eafc38d5fdd22f948dc5ef0bde583e239352"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2269,
+          "sha256": "156be396d7afa71c26257124c6a100a2d30d0507979c80e0b55fd44890de2d9b"
+        }
+      },
+      {
+        "case": "source_body_linkage",
+        "expected_failure": "Source body-map linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_source_body_linkage/EXECUTION.json",
+          "bytes": 2305,
+          "sha256": "b51c3dc2ec5fc3fd9fa325276fe6c1eac3f2b669b050fff1d87780bd42de098a"
+        }
+      },
+      {
+        "case": "unexpected_parent",
+        "expected_failure": "Exact parent and preparation binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_unexpected_parent/EXECUTION.json",
+          "bytes": 2293,
+          "sha256": "ea8cfbeda544b46f8b854b14d2b2d20568c2086d200e5f99c6719415ec55a764"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical proposal state must remain unchanged",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2299,
+          "sha256": "07a9b8efd61d0a2856f1c0d056a5f95c5168f83d936d5ef1a96dd902a973b3d0"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Actual note/base linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2257,
+          "sha256": "380d0b423b97a41f851cc6ca5136cda30eeaa5804ddfd8b6c3e88c638db0753a"
+        }
+      },
+      {
+        "case": "root_review_identity",
+        "expected_failure": "Exact root review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_root_review_identity/EXECUTION.json",
+          "bytes": 2310,
+          "sha256": "82c918781c163065c641f0ff09cbb09d2f08337a0db669f761d4e13b89cc6f6d"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Captured successful execution required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2286,
+          "sha256": "a523ddf694f55e44a4fef8707c8b41a21c8932de180724b2c5c2e84b7e18e649"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2317,
+          "sha256": "aedd12c5d282cafba4398908b746b5dc57b83674729a26af3a82bdec03560f9e"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2305,
+          "sha256": "745becb6fcd108c083af2df03389e0a6ce70293ed3a53d7dffc7fbcf342ce397"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2263,
+          "sha256": "234f65a3ed9b56e783fcf6658fdd5cec27722531be3e7ef2277f10e3b886cbc3"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2269,
+          "sha256": "f366604b49b2ed033706f11de7e4537e1278097c9afa6f48d65431c87fb856e6"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2299,
+          "sha256": "56c473d19fcd5c6a9a41c1ed4eb1d3b4e1d36ed637fd987f700b4036acb6bdbf"
+        }
+      },
+      {
+        "case": "source_freeze_identity",
+        "expected_failure": "Exact source proposal freeze",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_source_freeze_identity/EXECUTION.json",
+          "bytes": 2323,
+          "sha256": "736728c6d5bd438fe1b2d07da3c1757fbc24c99b9350d8e97a5847deebeeb337"
+        }
+      },
+      {
+        "case": "source_body_offsets",
+        "expected_failure": "Original and relocated body binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_source_body_offsets/EXECUTION.json",
+          "bytes": 2304,
+          "sha256": "5bec8dd69d1812431562a64785f2334b2ce45a61a403f9b29769a2e769d6f814"
+        }
+      },
+      {
+        "case": "root_review_command",
+        "expected_failure": "Exact root source-review command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_root_review_command/EXECUTION.json",
+          "bytes": 2305,
+          "sha256": "3efb5e0fac9807176e3048c46b2c649cf21d195afc2aa45ac6ce0fae7c1308e5"
+        }
+      },
+      {
+        "case": "canonical_review_identity",
+        "expected_failure": "Exact canonical review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_canonical_review_identity/EXECUTION.json",
+          "bytes": 2340,
+          "sha256": "11a1a88dac6156d2127e3a2dedb0cb3d6319382f5a70005deed41c94bdf21c4d"
+        }
+      },
+      {
+        "case": "canonical_output_linkage",
+        "expected_failure": "Canonical review operation linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_canonical_output_linkage/EXECUTION.json",
+          "bytes": 2334,
+          "sha256": "e7c1e9a1762761f9b1d752f3da24c39ad41c1550a225e6ce2f8c59700fb9e55f"
+        }
+      },
+      {
+        "case": "local_base_identity",
+        "expected_failure": "Actual local base identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_local_base_identity/EXECUTION.json",
+          "bytes": 2304,
+          "sha256": "b8964b30f544c3a07dcadea6ccfa6ec05de1c50b4983c52ba03ea1283a8ccd9a"
+        }
+      },
+      {
+        "case": "source_draft_map_identity",
+        "expected_failure": "Exact frozen draft body-map identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_source_draft_map_identity/EXECUTION.json",
+          "bytes": 2340,
+          "sha256": "9bb255372e8efb41fe37f4e12a05c44fdf788ee47ce66aa77ceaab2b52162f59"
+        }
+      },
+      {
+        "case": "no_go_promotion",
+        "expected_failure": "Historical proposal state must remain unchanged",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/runs/mutation_no_go_promotion/EXECUTION.json",
+          "bytes": 2281,
+          "sha256": "f25088c13642a4a072799caf8da1c3e22e985b3146ccb36aeadff8b55dfb0c41"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 22,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack checks and independent retained audit remain separate. Literal H, all outputs, actual-time phase/reserve chronology, fixed positive path and sole bus dependency are preserved. Occupied-edge/corner access, correlated filler comparator, vacancy/isolation, physical preparation/timing and measured energy remain conditional. No favorable runtime/global-energy result; historical no-go remains FAIL/partial-narrowing."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "arithmetic": "exact Gaussian rational matrices; no numerical rank/tolerance",
+  "dimension": 4,
+  "slow_rank": 2,
+  "degree_checked_inclusive": 14,
+  "formal_identities_checked": [
+    "P(z)^2=P(z) through degree 14",
+    "[L+zV+z^2A,P(z)]=0 through degree 14",
+    "each projection coefficient Hermitian",
+    "U(z)^*U(z)=I through degree 14",
+    "U(z)P U(z)^*=P(z) through degree 14",
+    "Off(U(z)^*H(z)U(z))=0 through degree 14",
+    "low coefficient z^2 is PAP-PVRVP",
+    "fast initial coefficient z is RVJ and nonzero"
+  ],
+  "P_coefficients_sha256": "2c4550c4704faa59486f020963f13d8453fe05fe6c2f95677b1b2b14cb5444c3",
+  "U_coefficients_sha256": "6d4c3b1d29d658b9c123c50eda96e10104289a0650141efff4cdc70276604608",
+  "U1": [
+    [
+      "0",
+      "0",
+      "1",
+      "1/6"
+    ],
+    [
+      "0",
+      "0",
+      "I/2",
+      "1/3"
+    ],
+    [
+      "-1",
+      "I/2",
+      "0",
+      "0"
+    ],
+    [
+      "-1/6",
+      "-1/3",
+      "0",
+      "0"
+    ]
+  ],
+  "slow_order_2": [
+    [
+      "17/18",
+      "-1/9 + 5*I/6",
+      "0",
+      "0"
+    ],
+    [
+      "-1/9 - 5*I/6",
+      "19/36",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "fast_initial_order_1": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "-I/2"
+    ],
+    [
+      "1/6",
+      "1/3"
+    ]
+  ],
+  "limits": "One exact algebraic fixture. No full mediator simulation, finite-precision polar normalization, compiler search, or independent proof of the analytic remainder."
+}

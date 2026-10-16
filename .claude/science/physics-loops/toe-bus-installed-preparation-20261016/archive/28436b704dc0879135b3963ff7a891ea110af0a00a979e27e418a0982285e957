@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "dimension": 64,
+  "source_length": 3,
+  "number_positive_bus_blocks": 16,
+  "H_noncommutes_with_B": true,
+  "C0": "73403/5145",
+  "actual_reserve_R": "10439/2940",
+  "source_mean": "15391/6860",
+  "source_variance": "79372987/47059600",
+  "first_compression": "Matrix([[80203/10290, -I], [I, 39043/10290]])",
+  "second_compression": "Matrix([[2986357463/47059600, 8/441 - 59623*I/5145], [8/441 + 59623*I/5145, 2414851909/141178800]])",
+  "complete_compensation_identity": true,
+  "release_residual_identity": true,
+  "code_only_mutant_preserves_mean": true,
+  "missing_variance_per_old_vector": "4/352947",
+  "rotation_phase": "exp(-i*pi/4) per source qubit for positive log (pi/4)(I-X)",
+  "scope": "One exact finite compression check, not propagation or a family proof."
+}

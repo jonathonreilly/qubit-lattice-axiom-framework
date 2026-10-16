@@ -1,0 +1,328 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T04:37:31.332752+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36",
+  "git_base": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+  "base_branch": "physics-loop/toe-bus-joint-energy-moments-20261016",
+  "planned_feature_branch": "physics-loop/toe-positive-bias-suppliers-20261016",
+  "source_acceptance_sha256": {
+    "transfer_acceptance": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b",
+    "edge_acceptance": "440ae5bf806f3487a273e3c1092f9b65c1c186afccb649323996805d09881357",
+    "chain_acceptance": "382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4",
+    "box_acceptance": "89eec7c08dbbeedfe0ca311d1dcc4065a125870b6c59ea4829afccd105fee80f"
+  },
+  "source_body_pins": [
+    {
+      "name": "transfer_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 19219,
+      "end_byte_exclusive": 48774,
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "name": "occupied_path_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 48936,
+      "end_byte_exclusive": 70987,
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+    },
+    {
+      "name": "explicit_edge_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 71149,
+      "end_byte_exclusive": 95935,
+      "bytes": 24786,
+      "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+    },
+    {
+      "name": "box_exposed_review",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 96095,
+      "end_byte_exclusive": 112676,
+      "bytes": 16581,
+      "sha256": "a747876323915e61a3b506f2d91380da6c365e002c089f32ed0a03bc453ff414"
+    },
+    {
+      "name": "narrow_onsite_obstruction_appendix",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 112852,
+      "end_byte_exclusive": 118181,
+      "bytes": 5329,
+      "sha256": "4db3c5e627558505aa767f4b62d67c1ca809c141506db1a376e5c7cff0579a57"
+    },
+    {
+      "name": "transfer_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 118357,
+      "end_byte_exclusive": 122807,
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "name": "edge_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 122979,
+      "end_byte_exclusive": 125310,
+      "bytes": 2331,
+      "sha256": "fad54208ad4fe2aaeaa81f3699231cd1ab8e7a0fbbad9d28fc193fdb7ae63d0e"
+    },
+    {
+      "name": "chain_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 125483,
+      "end_byte_exclusive": 128854,
+      "bytes": 3371,
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+    },
+    {
+      "name": "box_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 129025,
+      "end_byte_exclusive": 133385,
+      "bytes": 4360,
+      "sha256": "766121bc9ab9d91b2f29744723560b4f2113bee7df262f88029171e021dc75a2"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "name": "transfer_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 19217,
+      "end_byte_exclusive": 48772,
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "name": "occupied_path_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 48934,
+      "end_byte_exclusive": 70985,
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+    },
+    {
+      "name": "explicit_edge_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 71147,
+      "end_byte_exclusive": 95933,
+      "bytes": 24786,
+      "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+    },
+    {
+      "name": "box_exposed_review",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 96093,
+      "end_byte_exclusive": 112674,
+      "bytes": 16581,
+      "sha256": "a747876323915e61a3b506f2d91380da6c365e002c089f32ed0a03bc453ff414"
+    },
+    {
+      "name": "narrow_onsite_obstruction_appendix",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 112850,
+      "end_byte_exclusive": 118179,
+      "bytes": 5329,
+      "sha256": "4db3c5e627558505aa767f4b62d67c1ca809c141506db1a376e5c7cff0579a57"
+    },
+    {
+      "name": "transfer_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 118355,
+      "end_byte_exclusive": 122805,
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "name": "edge_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 122977,
+      "end_byte_exclusive": 125308,
+      "bytes": 2331,
+      "sha256": "fad54208ad4fe2aaeaa81f3699231cd1ab8e7a0fbbad9d28fc193fdb7ae63d0e"
+    },
+    {
+      "name": "chain_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 125481,
+      "end_byte_exclusive": 128852,
+      "bytes": 3371,
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+    },
+    {
+      "name": "box_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 129023,
+      "end_byte_exclusive": 133383,
+      "bytes": 4360,
+      "sha256": "766121bc9ab9d91b2f29744723560b4f2113bee7df262f88029171e021dc75a2"
+    }
+  ],
+  "parent_binding": {
+    "direct_mathematical_parents": [
+      {
+        "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 83919,
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+        "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+        "source_use": "qualified complete routed-bus theorem including rational-target repair, resources and supplied implementation premises"
+      }
+    ],
+    "parent_publication_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/PUBLICATION.json",
+    "supplied_parent_head": "68c531309ac6dae96289aab964213b8c5f55969b",
+    "current_local_head_observation": null,
+    "git_ancestry_is_not_dependency_rule": true,
+    "older_compiler_mediator_sources": "context and supplied-interface quotations, not imported theorem conclusions for this composition",
+    "standalone_transitive_theorem_files": [],
+    "scope": "The qualified bus source supplies its complete finite argument; later native physical supplies remain assumptions."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/8b8c172a101b5cf35a4f542b55d7c5c3249da99dd78a896078805518dfe12d53.json",
+    "bytes": 55240,
+    "sha256": "8b8c172a101b5cf35a4f542b55d7c5c3249da99dd78a896078805518dfe12d53"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/9d374526afd3aa5d45c2e1296ab22b12f3fed16f251c51481374d1fd857fb033.json",
+    "bytes": 2955,
+    "sha256": "9d374526afd3aa5d45c2e1296ab22b12f3fed16f251c51481374d1fd857fb033"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/599f13b41038fb53b326e766ad772305dfc4f0501721d52a51534ca86bc3ac42.json",
+      "bytes": 8774,
+      "sha256": "599f13b41038fb53b326e766ad772305dfc4f0501721d52a51534ca86bc3ac42"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/792c7c7142442ba82eaf2bcffc903d9c4cfd9e9765c1b7e6654c3bda5fbd742b.json",
+      "bytes": 1775,
+      "sha256": "792c7c7142442ba82eaf2bcffc903d9c4cfd9e9765c1b7e6654c3bda5fbd742b"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/21ebbc8b9b7118d09ac8ced96f35df94c35ac99f3b389ae13b363985b1a69da0.blob",
+      "bytes": 376,
+      "sha256": "21ebbc8b9b7118d09ac8ced96f35df94c35ac99f3b389ae13b363985b1a69da0"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/1ed3be8dbe85527bc5093042565efbec1f6bc77aecc8c02d21b8bea4e4849efb.py",
+      "bytes": 7803,
+      "sha256": "1ed3be8dbe85527bc5093042565efbec1f6bc77aecc8c02d21b8bea4e4849efb"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/ad84d2d831321a2e9b1dde778ebc36784c1336534a33582407ff95ac40139717.json",
+      "bytes": 10950,
+      "sha256": "ad84d2d831321a2e9b1dde778ebc36784c1336534a33582407ff95ac40139717"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/a237db4b5f4c32b6b4be1059a7b17fa195e107e332eca3c9e90afcf777817ea0.json",
+      "bytes": 1788,
+      "sha256": "a237db4b5f4c32b6b4be1059a7b17fa195e107e332eca3c9e90afcf777817ea0"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/56382b6e11f2884331910112d085b9c616d7f1b3f877795eb957cd8e2008b51f.py",
+      "bytes": 5790,
+      "sha256": "56382b6e11f2884331910112d085b9c616d7f1b3f877795eb957cd8e2008b51f"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/5bceb339d628fc71fea41d024ee8bce187681a44f07c44028b952f2203c97dcd.blob",
+      "bytes": 267,
+      "sha256": "5bceb339d628fc71fea41d024ee8bce187681a44f07c44028b952f2203c97dcd"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/cb53d252188cbf016fbfc055115e954b42ae7193d1a235097e99818707b1abc6.json",
+    "bytes": 1445,
+    "sha256": "cb53d252188cbf016fbfc055115e954b42ae7193d1a235097e99818707b1abc6"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/19204eac9080b1b5f4f3b359943043e54592914452579bcb8b451ad234bbc485.json",
+      "bytes": 1749,
+      "sha256": "19204eac9080b1b5f4f3b359943043e54592914452579bcb8b451ad234bbc485"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e4be0d1225bf99f835e2c7d803428c15b99638d32e732989fc1c290780792c42.py",
+      "bytes": 55626,
+      "sha256": "e4be0d1225bf99f835e2c7d803428c15b99638d32e732989fc1c290780792c42"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/6e7be60f5ec317c3ec883f84a23a0eb2e5bed483ad11eb8c605235d2c7f2d326.blob",
+      "bytes": 315,
+      "sha256": "6e7be60f5ec317c3ec883f84a23a0eb2e5bed483ad11eb8c605235d2c7f2d326"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-strongly-regular-bus-20261015",
+      "headRefName": "physics-loop/toe-bus-joint-energy-moments-20261016",
+      "headRefOid": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+      "isDraft": false,
+      "number": 9633,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9633"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/19204eac9080b1b5f4f3b359943043e54592914452579bcb8b451ad234bbc485.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/1ed3be8dbe85527bc5093042565efbec1f6bc77aecc8c02d21b8bea4e4849efb.py",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/21ebbc8b9b7118d09ac8ced96f35df94c35ac99f3b389ae13b363985b1a69da0.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/3b9c3d151b106c76141dcd26e202e58eacb90deff96cf779b75ca9af48a8ba14.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/56382b6e11f2884331910112d085b9c616d7f1b3f877795eb957cd8e2008b51f.py",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/599f13b41038fb53b326e766ad772305dfc4f0501721d52a51534ca86bc3ac42.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/5bceb339d628fc71fea41d024ee8bce187681a44f07c44028b952f2203c97dcd.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/6e7be60f5ec317c3ec883f84a23a0eb2e5bed483ad11eb8c605235d2c7f2d326.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/792c7c7142442ba82eaf2bcffc903d9c4cfd9e9765c1b7e6654c3bda5fbd742b.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/8b8c172a101b5cf35a4f542b55d7c5c3249da99dd78a896078805518dfe12d53.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/9060f747444de64723815bf0195f5033606245f234478b9299cef93694663751.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/9d374526afd3aa5d45c2e1296ab22b12f3fed16f251c51481374d1fd857fb033.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/a237db4b5f4c32b6b4be1059a7b17fa195e107e332eca3c9e90afcf777817ea0.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/ad84d2d831321a2e9b1dde778ebc36784c1336534a33582407ff95ac40139717.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/cb53d252188cbf016fbfc055115e954b42ae7193d1a235097e99818707b1abc6.json",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e4be0d1225bf99f835e2c7d803428c15b99638d32e732989fc1c290780792c42.py"
+  ],
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "root_review_ack": {
+    "reviewed_source_sha256": "8b8c172a101b5cf35a4f542b55d7c5c3249da99dd78a896078805518dfe12d53",
+    "root_binding": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/ROOT_BINDING_INPUT.json",
+      "bytes": 1660,
+      "sha256": "b0d3301ec74501352507914a4d8044f1437d46d31a5ce307b3e536412e2b6752"
+    }
+  },
+  "canonical_execution_not_yet_performed": true,
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

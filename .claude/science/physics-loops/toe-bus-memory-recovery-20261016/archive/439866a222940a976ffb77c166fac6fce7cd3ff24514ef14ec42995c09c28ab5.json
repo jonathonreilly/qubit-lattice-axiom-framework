@@ -1,0 +1,56 @@
+{
+  "schema": "exact-source-manifest-v1",
+  "created_utc": "2026-10-16T13:11:32.628631+00:00",
+  "scientific_source_count": 5,
+  "scientific_source_limit": 5,
+  "sources": [
+    {
+      "id": "P1",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e",
+      "read_coverage": "Complete file, current task before context compaction.",
+      "used_for": "Controlling accepted installed-preparation qualifications, complements, retained outputs and physical supplier boundaries.",
+      "identity_refreshed_utc": "2026-10-16T13:11:32.628631+00:00"
+    },
+    {
+      "id": "P2",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6990,
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25",
+      "read_coverage": "Complete file before compaction and refreshed complete file during final derivation review.",
+      "used_for": "Accepted evolved-memory comparator, weak ramp bounds, common per-site modeled strength/slew and noncircular xi reduction.",
+      "identity_refreshed_utc": "2026-10-16T13:11:32.628631+00:00"
+    },
+    {
+      "id": "P3",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "bytes": 17568,
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1",
+      "read_coverage": "Complete file, current task before context compaction; subsequent keyword-location search is not additional proof coverage.",
+      "used_for": "Explicit stage factorization, U_E retention, phases, full-space Duhamel and direct prep/runtime telescope. Its historical numerical evidence is reported source context, not rerun or independently revalidated here.",
+      "identity_refreshed_utc": "2026-10-16T13:11:32.628631+00:00"
+    },
+    {
+      "id": "P4",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "bytes": 31003,
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29",
+      "read_coverage": "Complete file in two untruncated reads, lines 1-260 and 261-end.",
+      "used_for": "Actual positive blocks/complements, matching geometry, full SWAP, positive rotations and bump, full installed moment/error/work contracts. The distinct fast-ramp literal-Q comparator is not substituted for the accepted evolved-memory comparator.",
+      "identity_refreshed_utc": "2026-10-16T13:11:32.628631+00:00"
+    },
+    {
+      "id": "P5",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+      "read_coverage": "Read complete lines 495-528 (original section 8) and 583-665 (original sections 10-11 through physical release qualifications). A keyword-location search over this same file was truncated and is not counted as completed argument coverage. No other sections freshly revalidated.",
+      "used_for": "Canonical source product/output phases, actual reserve/positive-block ledger, common incident cap, runtime time order and permissible further xi reduction. Strong-bus correctness is an accepted conditional premise, not independently re-proved here.",
+      "identity_refreshed_utc": "2026-10-16T13:11:32.628631+00:00"
+    }
+  ],
+  "other_scientific_sources_read": [],
+  "scientific_programs_launched": [],
+  "source_status": "Accepted parents remain premises at stated scope; this continuation is proposed pending root review."
+}

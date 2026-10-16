@@ -1,0 +1,23 @@
+# Actual check evidence
+
+One scientific execution was run, with no failures, retries, discarded cases or historical-parent executable imports. The actual tool command was `python3 -B run_check.py`, cwd this packet's directory; tool chunk 834ff5 returned exit 0. The launcher recorded its actual `sys.orig_argv`, cwd and the child's complete argv before execution. Original executed source, launcher and mathematical-source manifest were copied into `run_01/` before that child launch.
+
+Child command:
+
+```
+/opt/homebrew/opt/python@3.13/bin/python3.13 -B /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/run_01/check_padding.at_launch.py
+```
+
+Child cwd: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/run_01`.
+Started UTC: 2026-10-16T02:15:38.304831+00:00. Finished UTC: 2026-10-16T02:15:38.919483+00:00. Elapsed: 0.6094479998573661 seconds. Exit: 0. Stderr: empty. The tool-command/chunk statement here is a retrospective transcription; the child receipt itself was recorded at launch and was not rewritten.
+
+Executed-source SHA-256: `d97d9f2c1ccd25f14063ca1346b60b27fd93f79d18050124735abb4c9cfd3b50`.
+Launcher SHA-256: `86fcaaa081577fa97cfde37ca18ea4b9cd66747b2e351c57c97b70c468c76315`.
+Complete stdout SHA-256: `498d0d07e1d8be28b945ba2966939ed592a8d364132ff3ee2c0ce1e44e2082d9`.
+Python 3.13.5 and SymPy 1.14.0 were used. All calculations are integer or exact symbolic arithmetic; no floating tolerance or random sampling was used.
+
+The explicit index formula was checked against an independently generated Cartesian site set, endpoint equality, uniqueness and Manhattan distance one for each successive pair. Across 125 shapes with a,b,c in 1..5, every distinct coordinate corner was checked: 729 cases and 24,389 visited vertices. There are 61 shapes with at least one singleton axis. Omitting the plane reversal between z layers fails adjacency on the 2-by-2-by-2 case. The upper corner's three negative-axis neighbors are (0,1,1),(1,0,1),(1,1,0), all inside that cube, so the unrestricted negative-direction claim is distinguished from the correct outward-direction statement.
+
+The exact operator fixture has H_O=diag(0,1), T=pi/3, u=pi/2 and W_O=[[1,i],[i,1]]/sqrt(2), which does not commute with the drift. Direct exponentials on O/F agree exactly with the factored comparator. Applied to (|000>+|111>)/sqrt(2) on O,F,R and tensored with the retained controller comparison vector (|0>+i|1>)/sqrt(2), the two complete output vectors agree exactly and have norm one. Replacing the input by its diagonal part gives squared Frobenius discrepancy 1/2. With a nonidle Z filler and total time pi/2, the claimed identity-filler and actual output are normalized orthogonal vectors, implying trace-norm distance 2.
+
+The finite enumerator cannot prove the arbitrary-size path theorem; the row/layer proof does that. The exact matrices test one correlated state and gate, while the operator proof covers all states and passive references. No full bus/controller dynamics, chain induction, physical filler formation, corridor vacancy, control access, energy moments or runtime complexity was executed or validated. The root-attributed known-decoupled-drift extension was checked analytically and is not represented as a separate numerical run.

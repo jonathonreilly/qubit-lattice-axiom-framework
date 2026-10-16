@@ -1,0 +1,20 @@
+"""Source identity/read-scope bookkeeping only."""
+import datetime,hashlib,json
+from pathlib import Path
+root=Path(__file__).resolve().parent
+parent=root.parent/'strongly_regular_bus_candidate'
+prior=json.loads((parent/'SOURCE_MANIFEST.json').read_text())
+specs=[(row['key'],Path(row['path']),row['sha256'],row['read_coverage']) for row in prior['sources']]
+specs += [
+('bus_derivation',parent/'DERIVATION.md','855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2','complete prior author cold read at same hash; actual-time/corrector/resource portions reread for this task; full parent argument reused'),
+('bus_freeze',parent/'FREEZE.json',None,'identity metadata, not proof')]
+(root/'sources').mkdir(exist_ok=True)
+rows=[]
+for key,path,expected,coverage in specs:
+    data=path.read_bytes();digest=hashlib.sha256(data).hexdigest()
+    if expected is not None and digest!=expected:raise RuntimeError('Source mismatch: '+key)
+    copy=root/'sources'/(key+path.suffix);copy.write_bytes(data)
+    rows.append(dict(key=key,path=str(path),sha256=digest,bytes=len(data),recovery_path=str(copy),expected_sha256=expected,read_coverage=coverage))
+receipt=dict(captured_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),sources=rows,role='metadata only')
+(root/'SOURCE_MANIFEST.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt))

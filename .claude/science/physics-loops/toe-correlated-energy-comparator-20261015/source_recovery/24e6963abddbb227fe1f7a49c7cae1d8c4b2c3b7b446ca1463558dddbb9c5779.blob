@@ -1,0 +1,41 @@
+{
+  "kind": "initial independent correlated-energy derivation freeze",
+  "frozen_utc": "2026-10-16T00:38:03.855746+00:00",
+  "source_head_verified": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "source_hashes_reverified_at_freeze": true,
+  "scientific_execution": false,
+  "new_candidate_exposure": false,
+  "independence_scope": "Derivation before inspection of the named new comparator candidates; no independent model-family status is implied.",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 22831,
+      "sha256": "e23871d47ef5b3043a903c33deab317cf5a7c14bee86f06486baa699d14a3d93"
+    },
+    {
+      "path": "SOURCE_EXPOSURE.md",
+      "bytes": 5228,
+      "sha256": "50348e1514d9f12a8edbd5fbbcc6a2fccad6559dd5b14ee0f1e11900b3c0c503"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2029,
+      "sha256": "2d760de74266e08b122d0cab7f611ca831af8a3364538c235eb2ce79ca31b549"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1497,
+      "sha256": "8f97592170c32780a1414977204916668b95f3a94492bcf857dac1cbcbcd6538"
+    },
+    {
+      "path": "source_snapshots/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+    },
+    {
+      "path": "source_snapshots/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+    }
+  ]
+}

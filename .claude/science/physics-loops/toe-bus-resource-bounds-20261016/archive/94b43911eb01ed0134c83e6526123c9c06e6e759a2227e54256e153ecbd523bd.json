@@ -1,0 +1,51 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check",
+  "start_utc": "2026-10-16T03:48:12.608252+00:00",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/source_envelope_check.py",
+    "bytes": 9106,
+    "sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/executed_source.py",
+    "bytes": 9106,
+    "sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f"
+  },
+  "launcher_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/run_check.py",
+    "bytes": 1861,
+    "sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2"
+  },
+  "launcher_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/launcher_source.py",
+    "bytes": 1861,
+    "sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2"
+  },
+  "source_inputs": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/source_inputs.json",
+    "bytes": 3075,
+    "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+  },
+  "timeout_seconds": 60,
+  "scope": "New bounded exposed numerical check; no old-checker replay, Git or canonical mutation.",
+  "end_utc": "2026-10-16T03:48:13.789338+00:00",
+  "elapsed_seconds": 1.1805607075802982,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/stdout",
+    "bytes": 3588,
+    "sha256": "785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/runs/source_envelope/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

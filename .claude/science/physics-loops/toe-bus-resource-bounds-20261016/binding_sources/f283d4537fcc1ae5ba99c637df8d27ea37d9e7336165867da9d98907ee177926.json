@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-16T13:47:51.943291+00:00",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_resource_publication_review/REVIEW.md",
+      "bytes": 5307,
+      "sha256": "1b5794326f4aed322091e90cc1d594878039dda9148e5dbc61834cb8ef18efc8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_resource_publication_review/REVIEW.json",
+      "bytes": 5887,
+      "sha256": "c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_resource_publication_source_review.py",
+      "bytes": 5362,
+      "sha256": "718e0bb5df8934504e7d9922926872e1f2a651962573c4e2e32f0d4086e93185"
+    }
+  ],
+  "scope": "Root source review and identity recording, not a new scientific execution."
+}

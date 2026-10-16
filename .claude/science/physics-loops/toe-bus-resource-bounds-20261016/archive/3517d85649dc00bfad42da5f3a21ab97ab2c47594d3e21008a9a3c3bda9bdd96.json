@@ -1,0 +1,131 @@
+{
+  "utc": "2026-10-16T03:26:34.252062+00:00",
+  "task": "Quantitative weak positive bias spectral and input-precision check",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 5004,
+      "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf",
+      "read_coverage": "Complete, first scientific source read in this task.",
+      "role": "Exposed proposal under review, not an accepted premise.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/FREEZE.json",
+      "bytes": 435,
+      "sha256": "7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812",
+      "read_coverage": "Complete; every listed identity checked.",
+      "role": "Proposal freeze.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PRIOR_RESULT_RECONCILIATION.md",
+      "bytes": 2334,
+      "sha256": "4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567",
+      "read_coverage": "Complete, read before reconstruction.",
+      "role": "Existing interpolation result and novelty boundary.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/DERIVATION.md",
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12",
+      "read_coverage": "Complete argument previously read and reviewed by this same worker; unchanged identity reused.",
+      "role": "Qualified positive-chain premise, including strong C and leading coefficient.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW.md",
+      "bytes": 21138,
+      "sha256": "ac486c1c75de92cd5da05ceeed178ad2fddf2d7a3ddde214f7889df92b084239",
+      "read_coverage": "Own completed full proof review reused at unchanged identity.",
+      "role": "Prior exposed check; not fresh independence.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 4440,
+      "sha256": "382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4",
+      "read_coverage": "Complete current read.",
+      "role": "Qualified source acceptance, explicitly not retained audit.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 3371,
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f",
+      "read_coverage": "Complete current read.",
+      "role": "Controlling access, scope, preparation, efficiency and parent conditions.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "read_coverage": "Current complete reads of sections 2-3, lines 59-120, and exposed assessment 3, lines 445-486; prior lines 1-205. Remainder not newly claimed read.",
+      "role": "Existing quantitative upper-half polynomial interpolation and finite strict selection.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/RECONCILIATION_FREEZE.json",
+      "bytes": 726,
+      "sha256": "45823f7f676234bfd8b8233ab73d8d06604f0fe9e6923097ce0980fad71d5cdd",
+      "read_coverage": "Complete current read; all listed identities checked.",
+      "role": "Root reconciliation freeze."
+    }
+  ],
+  "governance_reused": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "read_coverage": "Complete prior coherent-task read reused; current identity refreshed.",
+      "role": "Captured task instructions.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "read_coverage": "Complete prior coherent-task read reused; current identity refreshed.",
+      "role": "Science workflow.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "read_coverage": "Complete prior coherent-task read reused; current identity refreshed.",
+      "role": "Authorized bounded worker scope.",
+      "identity_refreshed": true
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "read_coverage": "Complete prior coherent-task read reused; current identity refreshed.",
+      "role": "Already applied exposed scientific review scope.",
+      "identity_refreshed": true
+    }
+  ],
+  "exposure": "Exposed same-model extension. Reviewer authored earlier bus and static transfer material and the previous positive-chain check. No fresh independent parent validation claimed.",
+  "new_analytical_content": [
+    "Complex Gram factorization with all zero/repeated cases retained",
+    "Individual spectral and port factor bounds",
+    "Uniform explicit matrix-input determinant sensitivity and finite entry-bit request"
+  ],
+  "reused_result": "Canonical upper-half interpolation and finite strict selection; no novelty claimed.",
+  "excluded": [
+    "Unaccepted padding extension",
+    "Full bus Q/P spectral gap",
+    "Efficient source/chain construction",
+    "Oracle-time bound",
+    "Native preparation",
+    "Retained audit status"
+  ],
+  "old_author_checkers_run": false,
+  "scientific_executions": 1,
+  "external_research_sources": [],
+  "editable_prompt_files_changed": [],
+  "writes_confined_to": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check"
+}

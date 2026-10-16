@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-16T01:48:57.797029+00:00",
+  "status": "Unaccepted root proposal under exposed check; no scientific execution",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 4941,
+      "sha256": "7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb"
+    }
+  ]
+}

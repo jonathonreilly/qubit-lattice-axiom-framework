@@ -1,0 +1,45 @@
+{
+  "freezes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/FREEZE.json",
+      "sha256": "3cce08e1453052a8b4db806a939f5b3ecc852afb258f10cdfffb25697e64a8ba",
+      "verified_members": 30
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/REVIEW_FREEZE.json",
+      "sha256": "763daec5e1b3a28b1011cf43a30e2ce79db900142afd3334d3bbd159dbc60ef6",
+      "verified_members": 76
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/FREEZE.json",
+      "sha256": "1138e75d7861218cc4ddb77b8c00e116ce7753648b3796d1d006f1bc6f2743fb",
+      "verified_members": 11
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/REVIEW_FREEZE.json",
+      "sha256": "b49729b4e40c1b6a0879b438d794a7bc0df8903b091129e67d375e95ed5f6be2",
+      "verified_members": 40
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/FREEZE.json",
+      "sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7",
+      "verified_members": 22
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW_FREEZE.json",
+      "sha256": "121e51b2fedb1c69acb133abceee7954103bc8eaa812e4f01a62ab2b9b2169ea",
+      "verified_members": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_proposal/FREEZE.json",
+      "sha256": "2a33df38d9d653f2f86a4d8208bcdab102b138c7bba9bff1a6be2bf48af00dd7",
+      "verified_members": 1
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/FREEZE.json",
+      "sha256": "0b41479ebfc464c56becc82fe296e75f80c8bf1545c2efba988ec54cf530f074",
+      "verified_members": 22
+    }
+  ],
+  "scope": "all listed members of these eight original freezes freshly checked; nested manifests not recursively expanded"
+}

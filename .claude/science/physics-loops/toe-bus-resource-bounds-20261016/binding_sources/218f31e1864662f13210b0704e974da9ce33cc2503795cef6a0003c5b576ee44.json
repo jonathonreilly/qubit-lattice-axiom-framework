@@ -1,0 +1,27 @@
+{
+  "observed_commit": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/8c5facbc4661d179ec883509e25034eaa6cc33ae4b6fb6f000c43f1ef686fba6.json",
+      "bytes": 1561,
+      "sha256": "8c5facbc4661d179ec883509e25034eaa6cc33ae4b6fb6f000c43f1ef686fba6"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c.py",
+      "bytes": 53373,
+      "sha256": "cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/3da72a56938890827df6828d0500e0e745d8586c701e3e988f202762ba799816.blob",
+      "bytes": 41,
+      "sha256": "3da72a56938890827df6828d0500e0e745d8586c701e3e988f202762ba799816"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

@@ -1,0 +1,214 @@
+{
+  "schema": "sha256_deduplicated_recovery_v1",
+  "objects": [
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b.blob",
+      "bytes": 4893,
+      "sha256": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5.blob",
+      "bytes": 5153,
+      "sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.at_launch.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_finite_check.at_launch.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/32d142a282e1347449f9de98f5749c03f9d9a78dccca4c86608f472401ed7aa2.blob",
+      "bytes": 3826,
+      "sha256": "32d142a282e1347449f9de98f5749c03f9d9a78dccca4c86608f472401ed7aa2",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_root_review/QUALIFIED_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2.blob",
+      "bytes": 6009,
+      "sha256": "36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/EXPOSURE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_EXPOSURE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/3c3de9fc9a949601697552c2e2e3a62346ef0126eaa0263763b64497ba35f4b0.blob",
+      "bytes": 3478,
+      "sha256": "3c3de9fc9a949601697552c2e2e3a62346ef0126eaa0263763b64497ba35f4b0",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c.blob",
+      "bytes": 10900,
+      "sha256": "46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FINITE_CHECK_RESULTS.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FINITE_CHECK_FULL.log",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_FINITE_CHECK_RESULTS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840.blob",
+      "bytes": 5565,
+      "sha256": "4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/exposure_at_finite_launch.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158.blob",
+      "bytes": 2448,
+      "sha256": "483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_EVIDENCE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_CHECK_EVIDENCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679.blob",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/restricted_spin_publication_draft/INITIAL_BINDING.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a.blob",
+      "bytes": 1704,
+      "sha256": "8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/run_recorded.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_run_recorded.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020.blob",
+      "bytes": 14138,
+      "sha256": "95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/derivation_at_finite_launch.txt"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/9d0edfb643c5744a429ebd83b482d9e573a9bde3a72a137081548b2524d41b8d.blob",
+      "bytes": 13552,
+      "sha256": "9d0edfb643c5744a429ebd83b482d9e573a9bde3a72a137081548b2524d41b8d",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb.blob",
+      "bytes": 5172,
+      "sha256": "a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/SOURCE_MANIFEST.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976.blob",
+      "bytes": 929,
+      "sha256": "af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_RESULT.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_CHECK_RESULT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2.blob",
+      "bytes": 635,
+      "sha256": "b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FINITE_CHECK_LAUNCH.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_FINITE_CHECK_LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83.blob",
+      "bytes": 15014,
+      "sha256": "bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/restricted_spin_publication_draft/SOURCE_BINDING.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a.blob",
+      "bytes": 2807,
+      "sha256": "c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/SOURCE_COVERAGE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_SOURCE_COVERAGE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c.blob",
+      "bytes": 3739,
+      "sha256": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/independent_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78.blob",
+      "bytes": 768,
+      "sha256": "d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_LAUNCH.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_CHECK_LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/dcab7a72c287fe9cd06b2de4997d35051aa67e425be9d6c8703055edae44ba11.blob",
+      "bytes": 4360,
+      "sha256": "dcab7a72c287fe9cd06b2de4997d35051aa67e425be9d6c8703055edae44ba11",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_root_review/FINAL_QUALIFICATIONS.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.stderr.log",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_finite_check.stderr.log"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2.blob",
+      "bytes": 8135,
+      "sha256": "e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.stdout.log",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/sources/author_finite_check.stdout.log"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2.blob",
+      "bytes": 8979,
+      "sha256": "e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/finite_checks.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/source_at_launch/finite_checks_at_launch.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/f6b4883e8828851fca18434dda0b422aee137e88c499fe2818f28b17ed5de666.blob",
+      "bytes": 5522,
+      "sha256": "f6b4883e8828851fca18434dda0b422aee137e88c499fe2818f28b17ed5de666",
+      "aliases": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_root_review/PRELIMINARY_REVIEW.md"
+      ]
+    }
+  ],
+  "current_science_bodies_stored_only_in_note": true
+}

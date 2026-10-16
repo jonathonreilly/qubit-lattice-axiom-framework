@@ -1,0 +1,14 @@
+# Actual checks and their limits
+
+One bounded author execution was run. It exited 0 without timeout; stderr is empty. The full executable source at launch is finite_check.at_launch.py, 2503 bytes, SHA256 `4558a15b63e5aedea552af6fc0818f8e12251173ae7ef869cae9d4e3ca68b638`. CHECK_LAUNCH.json records the actual interpreter command, cwd, source/launcher hashes, 30-second wall timeout and maximum matrix dimension two. CHECK_RESULT.json records the exit and timestamps. Raw streams are finite_check.stdout.log and finite_check.stderr.log and were read completely.
+
+The 14 checks are:
+
+- Six exact rational calculations of the one-qubit Krylov-Gram example H=0, C=n, B=X+Z/3, at lambda=1,1/2,1/4,1/16,1/256,1/4096. The calculated determinant equals 4lambda^6 and is positive in every case. This checks that example, not the general determinant-degree/rank theorem.
+- Six 2x2 noncommuting window comparisons with H=.3X+.2Z and C=.7I+.4Z. Every displayed scalar-adjusted norm error is below lambda s*.4, for lambda=.02 or 1 and s=.1,.3,1.
+- One actual-time endpoint-order identity, at T=713.123 and lambda=.013, with error 1.47e-16. This includes lambda T>1; the analytic transfer does not require lambda T smallness.
+- The explicit H=0,C=n,W=I,w=pi window counterexample has trace distance 1.9999999999999996 and minimax lower bound .9999999999999998 in floating arithmetic. Its exact values two and one follow from the displayed analytic |+> to |-> calculation.
+
+There were no failed executions in this assigned continuation. The mathematical failed routes are preserved in DERIVATION.md sections 2 and 8 and CHECKPOINT.md. The prior bus task's failed numerical attempts remain in its unchanged freeze; they were neither overwritten nor represented as new evidence here.
+
+No bounded-log enumeration was executed, no complete bus was simulated here, and no uniform runtime estimate or full all-accuracy family was numerically checked. The new general polynomial lemma, uniform construction and effective log argument are author analytic claims. This is not independent review or retained evidence.

@@ -1,0 +1,32 @@
+"""Record completed content review and verify source identities; no science replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+D=Path(__file__).resolve().parent;N=D.parent
+def pin(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):return json.loads(p.read_bytes())
+def write(p,o):
+    with p.open('x') as f:json.dump(o,f,indent=2);f.write('\n')
+verified=[]
+for name,key,digest in [('bus_joint_energy_root_proposal','files','9d94e19bc4768df791242d45e1a1872ba1d84c191ed9109e641afca02f306fed'),('bus_joint_energy_independent_check','members','dd0fa71627a12cb68e4e95b345510cb2f906181b978aa6a056a61badcc8b2b1b')]:
+    base=N/name;seal=base/'FREEZE.json';assert pin(seal)['sha256']==digest
+    rows=read(seal)[key]
+    for row in rows:
+        p=Path(row['path']);p=p if p.is_absolute() else base/p
+        a=pin(p);assert all(a[k]==row[k] for k in ('bytes','sha256')),str(p)
+    verified.append({'freeze':pin(seal),'verified_members':len(rows)})
+R=N/'bus_joint_energy_independent_check';run=R/'exact_check/run_01'
+assert pin(R/'REVIEW.md')['sha256']=='498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1'
+r=read(run/'EXECUTION.json');assert r['exit_code']==0
+assert r['argv'][1]=='-B' and r['argv'][2]==r['source_at_launch']
+assert pin(Path(r['source_at_launch']))['sha256']==r['source_sha256']
+assert pin(run/'launcher.at_launch.py')['sha256']==r['launcher_source_sha256']
+for key in ('stdout','stderr'):assert pin(Path(r[key+'_path']))['sha256']==r[key+'_sha256']
+assert (run/'stderr.txt').read_bytes()==b''
+parent=N/'strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json'
+assert pin(parent)['sha256']=='cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726'
+v={'kind':'qualified_conditional_mathematical_source_acceptance','utc':datetime.now(timezone.utc).isoformat(),'root_read_complete':True,'proposal':pin(N/'bus_joint_energy_root_proposal/PROPOSED_LEMMAS.md'),'exposed_review':pin(R/'REVIEW.md'),'qualifications':pin(D/'FINAL_QUALIFICATIONS.md'),'bus_parent_acceptance':pin(parent),'verified_freezes':verified,'actual_evidence':[pin(R/p) for p in ['check_joint_moments.py','run_exact_check.py','SOURCE_EXPOSURE.md','VERIFICATION.json','exact_check/run_01/LAUNCH.json','exact_check/run_01/EXECUTION.json','exact_check/run_01/stdout.json','exact_check/run_01/stderr.txt']],'accepted_scope':'Full-code same-generator moment identities and all-time bounds, full reserve/load allowance and compatible extra xi-smallness under inherited conditional bus premises.','independence':'Same-model exposed recomputation with independently assembled exact fixture; no blind or model-family claim.','scientific_programs_run_this_acceptance':0,'retained_audit':False,'native_realization':False,'editable_prompt_files_changed':[]}
+write(D/'QUALIFIED_ACCEPTANCE.json',v)
+write(D/'FREEZE.json',{'utc':v['utc'],'files':[pin(D/'QUALIFIED_ACCEPTANCE.json'),pin(D/'FINAL_QUALIFICATIONS.md'),pin(Path(__file__).resolve())]})
+print(json.dumps({'acceptance':pin(D/'QUALIFIED_ACCEPTANCE.json'),'freeze':pin(D/'FREEZE.json'),'verified_members':[r['verified_members'] for r in verified]}))

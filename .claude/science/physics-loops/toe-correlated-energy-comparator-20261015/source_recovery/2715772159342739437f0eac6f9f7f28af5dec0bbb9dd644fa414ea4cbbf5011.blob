@@ -1,0 +1,169 @@
+{
+  "recorded_at": "2026-10-16T00:18:04.902456+00:00",
+  "task_source_revision_as_supplied": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "instruction_source_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "main_revision_as_supplied": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "science_sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "pinned_recovery_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runtime_energy_comparator_check/sources/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "candidate_recovery_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/sources/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "prior_verified_lines_read": [
+        [
+          1,
+          684
+        ]
+      ],
+      "new_read_coverage": [
+        [
+          140,
+          191
+        ],
+        [
+          260,
+          412
+        ]
+      ],
+      "use": "Exact static generator, selected R/I penalties, actual M_f(tau), runtime lower bound, full comparator/scalar interface."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "pinned_recovery_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runtime_energy_comparator_check/sources/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "candidate_recovery_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/sources/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "prior_verified_lines_read": [
+        [
+          34,
+          185
+        ],
+        [
+          358,
+          584
+        ],
+        [
+          589,
+          1013
+        ]
+      ],
+      "new_read_coverage": [
+        [
+          358,
+          589
+        ],
+        [
+          589,
+          851
+        ]
+      ],
+      "use": "Complete root and independent corrector arguments and all hypotheses used: full auxiliary gap/inverse, source contraction, norm bounds, bare preparation and penalty recipes."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "pinned_recovery_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runtime_energy_comparator_check/sources/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "candidate_recovery_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/sources/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110611,
+      "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+      "prior_verified_lines_read": [
+        [
+          511,
+          800
+        ],
+        [
+          927,
+          995
+        ],
+        [
+          1051,
+          1116
+        ]
+      ],
+      "new_read_coverage": [
+        [
+          927,
+          995
+        ]
+      ],
+      "use": "Complete general corrector rederivation and moment/scalar limits; prior clock argument coverage reused at unchanged identity.",
+      "truncation_note": "An aggregate reread request for 511-800 was truncated in returned output and is not counted as newly completed coverage. The necessary corrector 927-995 was then read in full; prior completed 511-800 coverage was already recorded."
+    }
+  ],
+  "instructions_reused": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "coverage": "Prior complete reading reused at unchanged captured source revision for this bounded worker continuation."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "coverage": "Prior complete reading reused at unchanged captured source revision for this bounded worker continuation."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "coverage": "Prior complete reading reused at unchanged captured source revision for this bounded worker continuation."
+    }
+  ],
+  "predecessor_coverage_copy": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/sources/predecessor_SOURCE_COVERAGE.json",
+    "bytes": 5155,
+    "sha256": "bc77be0ef8cab3aac6c123c67dec64f7a6d27275ed1595db8e36d43641221b01"
+  },
+  "previous_freezes_unchanged": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runtime_energy_comparator_check/FREEZE.json",
+        "bytes": 2434,
+        "sha256": "4029e44bfd3e8631a49dccc29c60ea0ba8d7462e94b7d7a627f3fb38f0629412"
+      },
+      "members_verified_unchanged": 12
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runtime_energy_comparator_check/author_addendum/FREEZE.json",
+        "bytes": 4076,
+        "sha256": "0aac4c624934c095f8bca1bcb2dce4fd1bcf1c687b72c214451c243558ab8a4a"
+      },
+      "members_verified_unchanged": 22
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runtime_energy_comparator_check/weighted_distance_exposed_check/FREEZE.json",
+        "bytes": 1748,
+        "sha256": "318d7e2dd0a6b8578b8923228b6e41bb6c7f1c50ffa47bab5ad506dc0a95c8f6"
+      },
+      "members_verified_unchanged": 4
+    }
+  ],
+  "exposure": {
+    "root_suggested_route": "Finite-order spectral block diagonalization with both slow dressed and fast bare-input components; suggestion was not presumed correct.",
+    "prior_known_root_derivation": "The prior task exposed WEIGHTED_DISTANCE_COROLLARY.md, SHA256 a0d5036441d16fe6dd5584146975959831e892a1bacf84434622d498747afcdc. That exposure preceded this task and is not an independent source of the endpoint calculation.",
+    "new_root_or_other_candidate_accessed": false,
+    "new_candidate_comparison_before_freeze": false
+  },
+  "scientific_execution": {
+    "receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.receipt.json",
+      "bytes": 1401,
+      "sha256": "fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b"
+    },
+    "scope": "One exact Gaussian-rational 4x4 algebraic fixture through degree 14; no large-controller simulation.",
+    "exit_code": 0,
+    "elapsed_seconds": 4.725605916231871
+  },
+  "author_cold_read_coverage": {
+    "DERIVATION.md": "Complete sections 1-7 (first 155 lines, then all remaining lines), with subsequent small clarification patches read in place.",
+    "check_rotation_coefficients.py": "Complete source; full captured stdout/receipt inspected."
+  },
+  "limits": [
+    "Independent mathematical review and supervisor acceptance remain pending.",
+    "The high-sector propagator remains large.",
+    "No editable prompt, canonical source, cache, graph, Git, PR, audit, axiom or lock file changed."
+  ]
+}

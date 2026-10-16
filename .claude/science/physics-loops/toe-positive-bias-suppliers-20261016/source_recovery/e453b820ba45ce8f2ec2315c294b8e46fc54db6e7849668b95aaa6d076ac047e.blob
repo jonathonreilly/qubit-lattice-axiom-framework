@@ -1,0 +1,105 @@
+# Exact edge-bias review
+
+Disposition: the supplied two-qubit triple provides a computable strong spectral point and arbitrarily small strong positive biases. I found no load-bearing algebraic defect in the candidate. It supplies the strong-point input to the previously qualified conditional static-bias transfer **only if the positive anisotropic terms on the existing old edge can actually be installed, attenuated and calibrated**. That permission is stronger than the original first-site-only control domain. This result does not invalidate the earlier onsite-bias obstruction, supply the remaining controller hardware, prove a generic Lie-certificate implication, or confer retained/audit status.
+
+This review contains an independently reconstructed equation-level calculation sealed before candidate access, followed by source-exposed comparison. The parent supplied both the equations and the purpose of finding an escape from the onsite obstruction. The same model and effort were retained. There is no claim of independent example selection, blind task framing, or model-family replication.
+
+## 1. Binding identities and initial seal
+
+The candidate is `heisenberg_edge_bias_candidate/DERIVATION.md`, 24,786 bytes, SHA256 `cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950`. Its `FREEZE.json` has SHA256 `1138e75d7861218cc4ddb77b8c00e116ce7753648b3796d1d006f1bc6f2743fb` and declares 2026-10-16T01:51:57.909476Z. All eleven named files and the freeze were captured in `candidate_at_launch/` after checking their bytes.
+
+My original derivation is `original/DERIVATION.md`, 6,035 bytes, SHA256 `740ee398b3fe557eb5aed2a0c3a0abd77cfd83d19ff3e65ff79fad836a9dd938`. Its 19-member `original/ORIGINAL_FREEZE.json`, SHA256 `baeafe9ce9e754ce503d53685a76fe2cf0931c8481b46e10654525d5cd9bf73c`, was sealed at 02:03:38.067736Z. It includes both original execution attempts and source/launcher captures. No original file has been changed during comparison.
+
+Candidate metadata was first exposed after that seal, in the recorded interval ending 02:04:15Z. The complete candidate capture was made at 02:04:35.990237Z. `CANDIDATE_EXPOSURE.json` gives the precise available evidence; the first exposure time was not logged more finely and is not invented here.
+
+## 2. Independently reconstructed spectrum and support
+
+Use explicit Pauli matrices, identity on the complete four-dimensional old plant, and the ordered Bell basis `(Psi-, Psi+, Phi+, Phi-)`. Direct multiplication gives
+
+```
+H_lambda = (3+10lambda)I + XX + (1+2lambda)YY + (1+8lambda)ZZ,
+E = (0, 4+4lambda, 4+16lambda, 4+20lambda).
+```
+
+These energies are strictly ordered for every positive lambda. The six positive gaps, with higher/lower energy indices, are
+
+| Pair | Gap |
+|---|---|
+| 10 | 4+4lambda |
+| 20 | 4+16lambda |
+| 30 | 4+20lambda |
+| 21 | 12lambda |
+| 31 | 16lambda |
+| 32 | 4lambda |
+
+Solving all fifteen pairwise linear equalities gives exactly two positive collision values: lambda=1/3, where gaps 10 and 31 both equal 16/3; and lambda=1/2, where gaps 10 and 21 both equal 6. Lambda=0 retains the old triplet degeneracy. Thus the exact strong spectral domain is positive lambda excluding 1/3 and 1/2. At lambda=1 the energies are 0,8,20,24 and the positive gap set is {4,8,12,16,20,24}.
+
+The complete port matrix, reconstructed before candidate exposure, is
+
+```
+B_Bell = [[ 0, 3,-2i,-1],
+          [ 3, 0,  1,2i],
+          [2i, 1,  0, 3],
+          [-1,-2i, 3, 0]].
+```
+
+Every off-diagonal entry is nonzero, with magnitudes 1, 2 or 3. Also B^2=14I and ||B||=sqrt(14). The vanishing diagonal entries are compatible with the bus parent's off-diagonal support premise. They would fail a different premise requiring every entry nonzero; that stronger premise must not be silently substituted. No old Bell state is prepared: this is an operator-basis calculation valid on arbitrary old states, including states correlated with a passive reference.
+
+## 3. Positive blocks, literal scalar, and access boundary
+
+The added blocks are C1=2(I+YY) and C2=8(I+ZZ). Their spectra are {0,4} and {0,16}, respectively, with each eigenvalue double. Hence they are positive ordinary-NN terms on the same old edge. C=C1+C2 has spectrum 0,4,16,20 and normalized trace 10. The exact added incident load at **each** endpoint is 4lambda+16lambda=20lambda. It is not divided between the endpoints. The full old drift has norm ||H_lambda||=4+20lambda.
+
+Taking the supplied positive blocks themselves as the bias decomposition requires no extra positivity reserve: R_C=0, J_C=20, c_C=10 and a_C=||C-10I||=10. The scalar 10lambda I remains physically present; its action over a lifetime T+w is 10lambda(T+w). Subtracting it in a comparison norm does not remove it from the Hamiltonian. The author separately counts the controller reserves.
+
+The old operator is positive, with spectrum 0,4,4,4, and admits the decomposition (I+XX)+(I+YY)+(I+ZZ), whose three block norms are 2 each. The operator norm 4 must not be confused with the sum 6 of those old block norms. Neither calculation authorizes altering an independently declared immutable old-channel convention. The old summands retain coefficient one when the two new blocks are added.
+
+Both new blocks have support on **two old qubits**. They are not operators of the form A_p tensor I_q, and neither an onsite control permission nor an isotropic exchange path entails access to their anisotropic coefficients. For example, I-SWAP=(I-XX-YY-ZZ)/2 changes the three Pauli-pair coefficients together and does not supply the displayed C by itself. The earlier onsite obstruction therefore survives unchanged in its exact scope.
+
+The accuracy-scaled source's permission to add a supplied path on existing old edges is geometrically compatible with this example, but is not unrestricted permission to install arbitrary YY and ZZ blocks. The candidate states this distinction explicitly. A two-site old box p=(0,0,0), q=(1,0,0) is compatible with a separate bus entry at (-1,0,0) only when that site is actually accessible and vacant and the required isolation is supplied. Biasing the old edge creates no spare neighbor. The complete old plant here is exactly these two qubits. Extra old apparatus, fillers or interacting factors cannot be omitted to preserve the four-dimensional spectrum.
+
+## 4. Post-exposure checks of the candidate's refinements
+
+The candidate's interval sharpening was not in my original seal in this exact form. I checked it algebraically after exposure. On 0<lambda<=1/4 the sorted gaps are
+
+```
+4lambda, 12lambda, 16lambda, 4+4lambda, 4+16lambda, 4+20lambda.
+```
+
+Their adjacent differences are 8lambda, 4lambda, 4-12lambda, 12lambda, 4lambda. The only nontrivial bound is 4-12lambda>=4lambda, exactly lambda<=1/4. Therefore both the minimum positive gap and the minimum separation between distinct positive gaps equal 4lambda. Negative gaps add no smaller separation; their distance from positive gaps is at least 8lambda, and the distance to zero is at least 4lambda. This is a whole-interval affine proof, not inference from sampled lambda values.
+
+On that interval the added incident load is <=5 and the drift norm is <=9. The candidate's fixed R_s>=9 and cap 5+R_s+7M_E+2/t_* are consistent substitutions into the qualified parent's family bounds, with M_E chosen for that restricted family. My original seal used the more conservative outer bounds 20 and 24 over 0<lambda<=1; it is unchanged. A mathematical certificate at lambda=1 does not require physically running or commissioning the device at lambda=1. The cap remains an incident-strength claim, not a total system-energy bound or a runtime bound.
+
+The optional identity-shifted ports are also correct: I+B has all diagonal entries one and norm 1+sqrt(14); sqrt(14)I+B is positive with eigenvalues 0 and 2sqrt(14). Their off-diagonal entries match B. They are different supplied port operators and are unnecessary for the actual off-diagonal premise. I do not use them to broaden the original physical permissions.
+
+## 5. Conditional transfer, timing and phase
+
+The exact two-qubit matrices, Bell eigenbasis and all coefficients are computable. This example consequently supplies the previously conditional bias/port strong-point datum, with p(1)>0 if expressed in the parent's Krylov-Gram form. For this example the explicit small interval also removes any need to run the generic polynomial search for a small strong point. A positive rational lambda strictly below
+
+```
+min(1/4, epsilon/[16 a_C(t_*+w_bar)])
+```
+
+can be selected from computable positive data using strict enclosures, and satisfies lambda w a_C<=epsilon/16. It imposes no condition lambda T<<1. If an energy unit E_u is restored, c_C=a_C=10E_u and all energy bounds carry E_u.
+
+The candidate's endpoint ordering is correct. With H_lambda=H+lambda C, the interaction-frame target U_T=exp(iT H_lambda) W exp(-iTH) gives exp(-iT H_lambda)U_T=W exp(-iTH). The corresponding gate multiplying already aged input on the left is G_T=W exp(-iTH)exp(iT H_lambda). Commutativity of H and C in this example does not justify commuting either past an arbitrary W.
+
+The qualified transfer chooses uniform source/generator bounds over the Hermitian target ball ||M||<=4, then xi and T=t_*/xi^2, and only then searches for a rational Hermitian M approximating the logarithmic target U_T. That order avoids a target/time circle. It still requires computable W and the parent data; a norm bound on an unspecified noncomputable target does not supply an algorithm. The support and phase of rational M are decidable/computable as required. This review reuses that qualified proof, rather than pretending the 4x4 check establishes it anew.
+
+For t=T+s, 0<=s<=w, the parent comparator becomes
+
+```
+exp[-i chi(t)] Phi(t) tensor exp(-isH) W exp(-iTH),
+chi(t)=R_total t+c_M xi^2 t+10lambda s.
+```
+
+All controller factors remain in Phi(t). There is no extra 10lambda T phase: the full H_lambda at T was already canceled in U_T. The scalar remains installed physically for the full time. The Duhamel bound ||exp(-isH_lambda)-exp(-i10lambda s)exp(-isH)||<=10lambda s pays the remaining window defect. Together with the parent's existing error allocation, the conditional total remains within epsilon (the previously reviewed transfer bound is <=7epsilon/8). This is contingent on all parent preparation, calibration, generator and approximation budgets; no new complete-device simulation was performed here.
+
+Spectral separation shrinks as 4lambda. Source size, runtime and precision may grow severely; nothing here gives polynomial complexity, uniform conditioning, a fixed-strength lambda independent of accuracy, or a native supplier for the conditional controller.
+
+## 6. Actual evidence and unresolved obligations
+
+Before candidate exposure I ran two bounded exact SymPy checks, with maximum matrix dimension four and a 60-second limit. The first exited 1 because structural equality did not simplify B^2=14I; the exact port matrix was correct. The repaired source tests the entrywise simplified difference and reports both the failed unsimplified equality and the zero simplified difference. It exited 0. Both scientific sources, both launcher sources, receipts and full streams remain sealed. This is a check repair, not a removed counterexample or a changed formula.
+
+After exposure I read the candidate's complete 270-line proof, 146-line scientific check, 51-line launcher, execution receipt, complete stdout and empty stderr, plus its coverage, manifest, checkpoint and freeze. The author run reproduces the relevant exact algebra; its 62 assertions do not establish independence or validate untested physical supplies. Its packet finalization script was captured and hashed, but was not used as mathematical evidence or reviewed in full. No additional numerical or symbolic run was necessary for the affine interval and scalar/order checks above.
+
+Remaining obligations are physical and inherited: actual anisotropic old-edge installation/attenuation, complete old geometry and access, all source-state preparation, isolation and coefficient/timing calibration, and the qualified routed-bus/transfer proof dependencies. The present result closes the strong-point algebra for this explicit two-qubit extended-access example. It does not close any of those supplies, arbitrary-plant generalization, or formal retained review. No editable prompt changed; no publication or canonical operation was performed.

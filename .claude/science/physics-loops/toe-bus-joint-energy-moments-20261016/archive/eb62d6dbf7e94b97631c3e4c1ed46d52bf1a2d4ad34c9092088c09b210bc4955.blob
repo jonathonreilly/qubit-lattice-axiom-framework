@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/check_joint_moments.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01",
+  "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/check_joint_moments.py",
+  "source_at_launch": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/check_joint_moments.at_launch.py",
+  "source_sha256": "e6b59e5008c14ef15412f79e7a8bfb19526bad3d5d6a40626c7b510109b543fa",
+  "launcher_argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "run_exact_check.py"
+  ],
+  "launcher_source_sha256": "87996647963fa851729571e2f554ccf4539623dc7a90f51293aeb0f90be5df6d",
+  "source_manifest_sha256": "23df6cf042abb57a1fb67a5c65d2f7262cc492b80c979e3cce489c0f993b137c",
+  "started_utc": "2026-10-16T01:18:02.099832+00:00",
+  "stdout_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/stdout.json",
+  "stderr_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/stderr.txt",
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "finished_utc": "2026-10-16T01:18:03.280579+00:00",
+  "elapsed_seconds": 1.1781459576450288,
+  "stdout_sha256": "1d967c035f607e14c34f548007e168677cc4e864da8f90088fc40c8cfd737d03",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

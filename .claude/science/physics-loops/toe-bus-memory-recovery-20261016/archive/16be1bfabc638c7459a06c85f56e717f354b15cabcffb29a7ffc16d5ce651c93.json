@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-16T04:07:53.155192+00:00",
+  "ended_utc": "2026-10-16T04:07:58.116883+00:00",
+  "elapsed_seconds": 4.961288332939148,
+  "exit_code": 0,
+  "timed_out": false,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check",
+  "source_at_launch_sha256": "52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd",
+  "stdout_sha256": "160e6f51eddb8f2c01b1b7d34c510b8f875ca5b4bab0e8fe4f3a2df57abde107",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 9528,
+  "stderr_bytes": 0
+}

@@ -1,0 +1,15 @@
+{"check": "exact_Krylov_Gram_example", "lambda_value": "1", "p": "4", "expected": "4", "passed": true}
+{"check": "exact_Krylov_Gram_example", "lambda_value": "1/2", "p": "1/16", "expected": "1/16", "passed": true}
+{"check": "exact_Krylov_Gram_example", "lambda_value": "1/4", "p": "1/1024", "expected": "1/1024", "passed": true}
+{"check": "exact_Krylov_Gram_example", "lambda_value": "1/16", "p": "1/4194304", "expected": "1/4194304", "passed": true}
+{"check": "exact_Krylov_Gram_example", "lambda_value": "1/256", "p": "1/70368744177664", "expected": "1/70368744177664", "passed": true}
+{"check": "exact_Krylov_Gram_example", "lambda_value": "1/4096", "p": "1/1180591620717411303424", "expected": "1/1180591620717411303424", "passed": true}
+{"check": "noncommuting_window_bound", "lambda_value": 0.02, "s": 0.1, "error": 0.0007998799907270002, "bound": 0.0008, "passed": true}
+{"check": "noncommuting_window_bound", "lambda_value": 0.02, "s": 0.3, "error": 0.002396762354322733, "bound": 0.0024000000000000002, "passed": true}
+{"check": "noncommuting_window_bound", "lambda_value": 0.02, "s": 1.0, "error": 0.00788118300378105, "bound": 0.008, "passed": true}
+{"check": "noncommuting_window_bound", "lambda_value": 1.0, "s": 0.1, "error": 0.03999133517654262, "bound": 0.04000000000000001, "passed": true}
+{"check": "noncommuting_window_bound", "lambda_value": 1.0, "s": 0.3, "error": 0.1197664476584378, "bound": 0.12, "passed": true}
+{"check": "noncommuting_window_bound", "lambda_value": 1.0, "s": 1.0, "error": 0.391516418004886, "bound": 0.4, "passed": true}
+{"check": "actual_time_endpoint_order", "T": 713.123, "lambda_value": 0.013, "error": 1.4674984987040282e-16, "passed": true}
+{"check": "unchanged_bias_window_counterexample", "trace_distance": 1.9999999999999996, "minimax_lower_bound": 0.9999999999999998, "passed": true}
+{"summary": "14 bounded author checks passed", "max_matrix_dimension": 2, "exact_example_only": true, "bounded_log_search_executed": false, "full_bus_simulation": false, "independent": false}

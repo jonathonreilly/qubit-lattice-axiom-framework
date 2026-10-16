@@ -1,0 +1,29 @@
+{
+  "note": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "root_mass_m3",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 30425,
+      "end_byte_exclusive": 48979,
+      "bytes": 18554,
+      "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893"
+    },
+    {
+      "name": "independent_mass_m2",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 49121,
+      "end_byte_exclusive": 84178,
+      "bytes": 35057,
+      "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+    },
+    {
+      "name": "source_exposed_comparison",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 84326,
+      "end_byte_exclusive": 115781,
+      "bytes": 31455,
+      "sha256": "3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067"
+    }
+  ]
+}

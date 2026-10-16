@@ -1,0 +1,1 @@
+[physics-loop] restricted static spin source: bounded_theorem / conditional-support

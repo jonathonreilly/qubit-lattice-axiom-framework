@@ -1,0 +1,36 @@
+{
+  "captured_utc": "2026-10-16T01:26:03.524399+00:00",
+  "source": "parent-requested exposed appendix; no earlier two-axis probe read",
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_pencil_counterexample_probe/heisenberg_static_port_probe.py",
+      "capture": "root_probe_at_launch/heisenberg_static_port_probe.py",
+      "bytes": 3667,
+      "sha256": "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/EXECUTION.json",
+      "capture": "root_probe_at_launch/EXECUTION.json",
+      "bytes": 1787,
+      "sha256": "cd4ba4a21af2ecb9e21203f1baeaf8b112de3d3f49ef0cb22fd89a7749e0e386"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/executed_source.py",
+      "capture": "root_probe_at_launch/executed_source.py",
+      "bytes": 3667,
+      "sha256": "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/stdout",
+      "capture": "root_probe_at_launch/stdout",
+      "bytes": 5038,
+      "sha256": "e88c992762f2ad7e0f746d2d5d8adf0bbba5bd61690197241addae9007c32dd4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/stderr",
+      "capture": "root_probe_at_launch/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

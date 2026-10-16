@@ -1,0 +1,195 @@
+{
+  "utc": "2026-10-16T04:03:37.575938+00:00",
+  "kind": "sealed_exposed_reachable_bus_source_review",
+  "source_proposal_sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97",
+  "bus_parent_sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+  "files": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 517,
+      "sha256": "a262b6d7fb1b89c8bb2e2b5a1346ce40e3a5be4ec347661ce68dc4be474233d3"
+    },
+    {
+      "path": "CHECK_EVIDENCE.md",
+      "bytes": 1632,
+      "sha256": "b602ebb65b952762881055ce750ab7ec6d297b5442933efd8fad69b435e6b31d"
+    },
+    {
+      "path": "CHECK_RESULT.json",
+      "bytes": 3588,
+      "sha256": "785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105"
+    },
+    {
+      "path": "EXACT_GRAM_RESULT.json",
+      "bytes": 1409,
+      "sha256": "219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 21520,
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "path": "REVIEW_STATUS.json",
+      "bytes": 2444,
+      "sha256": "daf6bcf13818b36ee7830e9e0525a2c0c8cf149710b801e6649133da45f803c7"
+    },
+    {
+      "path": "SOURCE_COVERAGE.json",
+      "bytes": 3639,
+      "sha256": "4348c1468c9d5a1eb7087aa4d64e4954569dcb021481205e7975e8d1fd92b169"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 1785,
+      "sha256": "483872990d9612bad59f2885d040e6c89aad4e7e7fcedc873b40c5ba5ddee496"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 3075,
+      "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+    },
+    {
+      "path": "exact_gram_check.py",
+      "bytes": 4479,
+      "sha256": "e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548"
+    },
+    {
+      "path": "run_check.py",
+      "bytes": 1861,
+      "sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2"
+    },
+    {
+      "path": "run_exact_check.py",
+      "bytes": 1857,
+      "sha256": "63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd"
+    },
+    {
+      "path": "runs/exact_gram/EXECUTION.json",
+      "bytes": 2891,
+      "sha256": "c143bb67cb2bba4db1f2c5096f92d85574fd327b11c88dd3f2e5d14d2ecb99ea"
+    },
+    {
+      "path": "runs/exact_gram/LAUNCH.json",
+      "bytes": 2196,
+      "sha256": "0272183784213d0343af8f69a334c66b56e42579df79df6ed5ea4036bceaf23b"
+    },
+    {
+      "path": "runs/exact_gram/executed_source.py",
+      "bytes": 4479,
+      "sha256": "e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548"
+    },
+    {
+      "path": "runs/exact_gram/launcher_source.py",
+      "bytes": 1857,
+      "sha256": "63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd"
+    },
+    {
+      "path": "runs/exact_gram/source_inputs.json",
+      "bytes": 3075,
+      "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+    },
+    {
+      "path": "runs/exact_gram/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/exact_gram/stdout",
+      "bytes": 1409,
+      "sha256": "219aac5ee208f043d5aae3bc3c73bf3d9bd81d2de42fba02c54654a16a1b788e"
+    },
+    {
+      "path": "runs/source_envelope/EXECUTION.json",
+      "bytes": 2920,
+      "sha256": "94b43911eb01ed0134c83e6526123c9c06e6e759a2227e54256e153ecbd523bd"
+    },
+    {
+      "path": "runs/source_envelope/LAUNCH.json",
+      "bytes": 2215,
+      "sha256": "1eea710e0d5271968a862bb9fb961fee93f6d5570e08958309e84b23b3766938"
+    },
+    {
+      "path": "runs/source_envelope/executed_source.py",
+      "bytes": 9106,
+      "sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f"
+    },
+    {
+      "path": "runs/source_envelope/launcher_source.py",
+      "bytes": 1861,
+      "sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2"
+    },
+    {
+      "path": "runs/source_envelope/source_inputs.json",
+      "bytes": 3075,
+      "sha256": "acbd87e43d0023b0c7ab14194c9f2ee624a9b34db205ce4d6c09f13d0142f02e"
+    },
+    {
+      "path": "runs/source_envelope/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/source_envelope/stdout",
+      "bytes": 3588,
+      "sha256": "785b4e0ab7d816177abc2ded54dcda202ae56d205d124807f7b53220b62d0105"
+    },
+    {
+      "path": "source_envelope_check.py",
+      "bytes": 9106,
+      "sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f"
+    },
+    {
+      "path": "sources/00_PROPOSED_LEMMAS.md",
+      "bytes": 8361,
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "path": "sources/01_FREEZE.json",
+      "bytes": 410,
+      "sha256": "f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95"
+    },
+    {
+      "path": "sources/02_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "path": "sources/03_AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "sources/04_SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "sources/05_SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "sources/06_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": "sources/07_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "sources/08_proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  ],
+  "actual_new_runs": 2,
+  "failed_executions": 0,
+  "historical_checker_replays": 0,
+  "root_acceptance": null,
+  "retained_audit": false,
+  "canonical_mutations": [],
+  "editable_prompt_files_changed": []
+}

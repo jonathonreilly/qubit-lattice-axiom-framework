@@ -1,0 +1,18 @@
+{
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_memory_recovery/ACTUAL_ROOT_CANONICAL_REVIEW.json",
+    "bytes": 23501,
+    "sha256": "023173cfa57b4e2b01a79d9ed5130d460da06011566ffe2d752f3aae40a492af"
+  },
+  "installed_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_MEMORY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 91303,
+    "sha256": "6f76d1790705855488e6b8288b4b4fe13031919930c0b9dabe7ce7ade1cb6abf"
+  },
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_memory_recovery_2026_10_16.py",
+    "bytes": 76665,
+    "sha256": "2a9bb19df09a4ea1cc4b7d0b886162723962a79bd0f38196d099cc6a53af46ee"
+  },
+  "scientific_programs_run": 0
+}

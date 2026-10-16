@@ -1,0 +1,1869 @@
+{
+  "actual_canonical_acceptance": null,
+  "actual_fresh_ref_binding": null,
+  "actual_integration_review": null,
+  "actual_new_publication": null,
+  "bounded_external_reference_count": 317,
+  "canonical_phases_executed": 0,
+  "editable_prompt_files_changed": [],
+  "expected_main": "41f192b2dcee96d9967e0e01ad50c5f1229ab252",
+  "files": [
+    {
+      "bytes": 93912,
+      "path": "ARCHIVE_CLOSURE.json",
+      "sha256": "9a842c0ed690d561a8b5205a6af791d1c7ace946e2eefab5f1df4348406fb8a4"
+    },
+    {
+      "bytes": 575,
+      "path": "BASE_BINDING_INPUT.json",
+      "sha256": "c68a6b0c43ea89229576a53b49e40b1257c58f710f3f145a2796c1c3c7258de8"
+    },
+    {
+      "bytes": 1188,
+      "path": "BUILD_RESULT.json",
+      "sha256": "7bc8ab5fb12747d227ac4bf368cb8095b84d188f623c5c54de27819697c23751"
+    },
+    {
+      "bytes": 702,
+      "path": "CHECKPOINT.md",
+      "sha256": "34e0c6966d652c6a21bf096e7b3bed14ef67dd1238b7b64b31cbb53f07424c80"
+    },
+    {
+      "bytes": 3527,
+      "path": "COMMAND_DELTA.diff",
+      "sha256": "6ba883ac3cd5aa0c56c508d4cf94998b4ce8706e45777a197ded05c39c4e7bd5"
+    },
+    {
+      "bytes": 6555,
+      "path": "COMMAND_PLAN.md",
+      "sha256": "60ed80ea70f84ddb030c275b2697640f44ed1702321107e63193c01e4498cf10"
+    },
+    {
+      "bytes": 1069,
+      "path": "COMMON_DELTA.diff",
+      "sha256": "a2fd2737d201079ca7b1f7d320bfe2b5e60e6d8cf2b413aec4daed8ccaf545c3"
+    },
+    {
+      "bytes": 14640,
+      "path": "FILE_REUSE_MAP.json",
+      "sha256": "8f0f2135b57288adfbf7fdf75347e0aff372f5ab5946281fb7fb957c0d665155"
+    },
+    {
+      "bytes": 1152,
+      "path": "FRESHNESS_CONTEXT.json",
+      "sha256": "59487ef98ac9684ccd36d5ae44c8fc5249b6501dac48238607e291b868d1c095"
+    },
+    {
+      "bytes": 10210,
+      "path": "FUNCTION_REUSE_MAP.json",
+      "sha256": "c9065417c2f8aed52e3b68e52bd7d9ea68221fb18539f4db634cc956c8f5cf29"
+    },
+    {
+      "bytes": 3931,
+      "path": "INTEGRATION_SECTIONS.json",
+      "sha256": "74c0fb403e08dbc02e0e49500e4452a54f9cde5b0f670bc829e4b5f5add4c78f"
+    },
+    {
+      "bytes": 4554,
+      "path": "METADATA_VERIFICATION.json",
+      "sha256": "41f4717e7274c10a213825dac7c650305f71e4b1b6fe22470fbc78416c29d296"
+    },
+    {
+      "bytes": 84487,
+      "path": "ORIGINAL_REFERENCE_MANIFEST.json",
+      "sha256": "78533e2e991b95012af11d9e7aa2eaaf520d8d0fa4f6bc28ad66fa2245e2c81d"
+    },
+    {
+      "bytes": 3924,
+      "path": "PARENT_BINDING.json",
+      "sha256": "53900cc1f029c465e93ef95dfec1b85cd3ee57e062aa8368fa8253babc3a717a"
+    },
+    {
+      "bytes": 2214,
+      "path": "PROPOSED_BODY_MAP.json",
+      "sha256": "cab1a17c7eb05e82530e21636c76ab7ee77baf0bc305cbf147829f082d429ac7"
+    },
+    {
+      "bytes": 91303,
+      "path": "PROPOSED_NOTE.md",
+      "sha256": "6f76d1790705855488e6b8288b4b4fe13031919930c0b9dabe7ce7ade1cb6abf"
+    },
+    {
+      "bytes": 1684,
+      "path": "PR_BODY_TEMPLATE.md",
+      "sha256": "a8bda2275d796d73309803d04d8290005ab7850ccc6e5d9560adf64be2345b57"
+    },
+    {
+      "bytes": 557,
+      "path": "README.md",
+      "sha256": "f853e3ed9f90f05cee4aa3f978c92ec67eec665c58f207c3407916ca5ee17881"
+    },
+    {
+      "bytes": 827,
+      "path": "ROOT_BINDING_INPUT_TEMPLATE.json",
+      "sha256": "34a2089a4d96a095c16d04527d0a2d6e8ab93e1fc1cb28fba632e661da0d9a43"
+    },
+    {
+      "bytes": 2999,
+      "path": "ROOT_READ_GUIDE.md",
+      "sha256": "6345d46c031782d5f673d2b904a1ae6078a58521b4e711757235442d6a9266ae"
+    },
+    {
+      "bytes": 707,
+      "path": "SEAL_OPERATION.json",
+      "sha256": "c7d41eb48219542d9634ee4595d80d86ad3e19640838cac6c1802cd83464ba02"
+    },
+    {
+      "bytes": 1827,
+      "path": "WRAPPER_REPLACEMENTS.json",
+      "sha256": "68662cd7d0f590cb3805eb40d4dc7ef6e40cb0f14c6e353ff11ccbb50e815ffb"
+    },
+    {
+      "bytes": 10675,
+      "path": "build_refresh.py",
+      "sha256": "e195ecc88f17d751a6063e69e8657dae97720cf41fa474d8a65b57ffdec991d1"
+    },
+    {
+      "bytes": 52437,
+      "path": "bus_memory_recovery_common.py",
+      "sha256": "1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719"
+    },
+    {
+      "bytes": 90,
+      "path": "cache_bus_memory_recovery.py",
+      "sha256": "a4b8fea5f63f6a2832828c0503d99dd4ffc5cf1cbca66be19ca4def369a4273b"
+    },
+    {
+      "bytes": 216,
+      "path": "evidence/BASE_ATTACHMENT.json",
+      "sha256": "cabc573fe156f975ef16c17216f685d9ebdf15935be9cf8b30207089c7848c42"
+    },
+    {
+      "bytes": 1518,
+      "path": "evidence/BASE_PUBLICATION.json",
+      "sha256": "81f09e9ae9ff95baf1bd705485e2a8e2a2b316ae9021063e77b7156dfae9b89e"
+    },
+    {
+      "bytes": 91,
+      "path": "finish_bus_memory_recovery.py",
+      "sha256": "72144009e241b617b55c8a4ee2b06a8255b930fd365688d9409a65e0784e2bf4"
+    },
+    {
+      "bytes": 3649,
+      "path": "freshness/AFFECTED_SOURCE_SCREEN.json",
+      "sha256": "8d74f13b7bf3f6583f12423c2ed47b855db05defe61dcaefb756d0488bacf75c"
+    },
+    {
+      "bytes": 90,
+      "path": "graph_bus_memory_recovery.py",
+      "sha256": "fc1c2041ca3e69b807ecf57ba58e1996fc84d9cc6a8ee8a33dffd7e2544aeb3d"
+    },
+    {
+      "bytes": 92,
+      "path": "install_bus_memory_recovery.py",
+      "sha256": "1d20718085c0af3a69cd2c52519eef55694dd0c658aea9d1256467c0c048d28b"
+    },
+    {
+      "bytes": 2358,
+      "path": "metadata_runs/build_01/EXECUTION.json",
+      "sha256": "fef49ea851a0f1190796acc0a03935d994a4c8ea1466b897bb5565d9a1a41fd4"
+    },
+    {
+      "bytes": 1644,
+      "path": "metadata_runs/build_01/LAUNCH.json",
+      "sha256": "00bc01c8467b65ffb2bed091f83bc6bf1c42fbffebafd0f60178630aca448dac"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/build_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 10675,
+      "path": "metadata_runs/build_01/source_at_launch.py",
+      "sha256": "e195ecc88f17d751a6063e69e8657dae97720cf41fa474d8a65b57ffdec991d1"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/build_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1188,
+      "path": "metadata_runs/build_01/stdout",
+      "sha256": "7bc8ab5fb12747d227ac4bf368cb8095b84d188f623c5c54de27819697c23751"
+    },
+    {
+      "bytes": 2384,
+      "path": "metadata_runs/validation_01/EXECUTION.json",
+      "sha256": "a01ec842f1d029163acd88f5baea43ad44776e50d0581a8a06cae7155036fe18"
+    },
+    {
+      "bytes": 1660,
+      "path": "metadata_runs/validation_01/LAUNCH.json",
+      "sha256": "4f4163b2889aa9157ff1f60ded1a8f835015c057d995fb91813b65639ac226ff"
+    },
+    {
+      "bytes": 1912,
+      "path": "metadata_runs/validation_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 7127,
+      "path": "metadata_runs/validation_01/source_at_launch.py",
+      "sha256": "7104736f223996f87f229d8c9701052c816fcdc034d4ee986d84fabbe931678a"
+    },
+    {
+      "bytes": 0,
+      "path": "metadata_runs/validation_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4554,
+      "path": "metadata_runs/validation_01/stdout",
+      "sha256": "2e2ab1591ed8805ec9107efb535a60b1cd476723ed5a53e0f28913bdbdcd484a"
+    },
+    {
+      "bytes": 92,
+      "path": "prepare_bus_memory_recovery.py",
+      "sha256": "8e756b3e974057a1d91e7b33f867c250adf0ea46e3a893a427e9d82782a78b26"
+    },
+    {
+      "bytes": 9808,
+      "path": "primary_extension.py",
+      "sha256": "483da884ba139ba5ed0eeb7d412fd3880f482352a44547da65e39b29139b8fea"
+    },
+    {
+      "bytes": 54190,
+      "path": "proposed_primary_unbound.py",
+      "sha256": "0c013d40d88284bdd8df70c5c9a084824eb6a59209f687fe635e57fc01111a4d"
+    },
+    {
+      "bytes": 92,
+      "path": "publish_bus_memory_recovery.py",
+      "sha256": "ebe5163c2be3f3ebd1ed8ed2927e35b9d7a04e07cbfe358ae2119beba4f92d5c"
+    },
+    {
+      "bytes": 1912,
+      "path": "record_metadata.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 3234,
+      "path": "seal_refresh.py",
+      "sha256": "8815c574f888b97d612295b890b5b7583e7c31bf147b0fd07e4326835f24f5cc"
+    },
+    {
+      "bytes": 3234,
+      "path": "seal_source_at_launch.py",
+      "sha256": "8815c574f888b97d612295b890b5b7583e7c31bf147b0fd07e4326835f24f5cc"
+    },
+    {
+      "bytes": 7127,
+      "path": "validate_refresh.py",
+      "sha256": "7104736f223996f87f229d8c9701052c816fcdc034d4ee986d84fabbe931678a"
+    },
+    {
+      "bytes": 91,
+      "path": "verify_bus_memory_recovery.py",
+      "sha256": "18d0fc6812eacba115a4cadab4f84bf433ba16fb31498bb4995ee94de06fb584"
+    },
+    {
+      "bytes": 71440,
+      "path": "../bus_memory_recovery_integration_proposal/ARCHIVE_CLOSURE.json",
+      "sha256": "14e1278005290be38981c086adb92ffcbcf6011ddde14467679423cbe207abf7"
+    },
+    {
+      "bytes": 1372,
+      "path": "../bus_memory_recovery_integration_proposal/ASSEMBLY.json",
+      "sha256": "eaf7d5a14cc419b1bc94e401a6aeebfc60d6b21f48fef5a03e8941e9f8fe8832"
+    },
+    {
+      "bytes": 575,
+      "path": "../bus_memory_recovery_integration_proposal/BASE_BINDING_INPUT.json",
+      "sha256": "c68a6b0c43ea89229576a53b49e40b1257c58f710f3f145a2796c1c3c7258de8"
+    },
+    {
+      "bytes": 1095,
+      "path": "../bus_memory_recovery_integration_proposal/CHECKPOINT.md",
+      "sha256": "bcb6cc9aac80e68d6a8b9c808ac3f4ce4e2f17ef5fdd54f27fa8ba1fc1af11dd"
+    },
+    {
+      "bytes": 6027,
+      "path": "../bus_memory_recovery_integration_proposal/COMMAND_PLAN.md",
+      "sha256": "05dcae82bf79d69dd32c716d2723a3627a34245d9d47a14b92c566f1e658c802"
+    },
+    {
+      "bytes": 15511,
+      "path": "../bus_memory_recovery_integration_proposal/COMMON_DELTA.diff",
+      "sha256": "a4befe51ccaef232ced705d578427e1eddc0f635136cb436e05116ffe3a55835"
+    },
+    {
+      "bytes": 794,
+      "path": "../bus_memory_recovery_integration_proposal/DELIVERY_DOCUMENTS.json",
+      "sha256": "4f3aaaf7c827f353cf3502212a568f2fd501e2abcba63759798db1c5824b4a05"
+    },
+    {
+      "bytes": 35809,
+      "path": "../bus_memory_recovery_integration_proposal/EVIDENCE_CAPTURE_MAP.json",
+      "sha256": "3fdb03bb152004fd93fb14e43e57c5b8bacb7d12150f25ce440ebd1bacb2f574"
+    },
+    {
+      "bytes": 5607,
+      "path": "../bus_memory_recovery_integration_proposal/EXECUTED_REFERENCE.json",
+      "sha256": "e8b6bf9b1bdebf193f4c6f3287b3e57775cea04583d55aaa5b3ed9596babd822"
+    },
+    {
+      "bytes": 7225,
+      "path": "../bus_memory_recovery_integration_proposal/EXTENSION_DELTA.diff",
+      "sha256": "27a6c423b5d9a90dc22beb343645e40746c14677a5c1d7f93d6c1238f6b0518a"
+    },
+    {
+      "bytes": 13234,
+      "path": "../bus_memory_recovery_integration_proposal/FUNCTION_REUSE_MAP.json",
+      "sha256": "4883ccff78e6f2ad8319dc398dd2b78118149f9a023533345d648e50fe550d64"
+    },
+    {
+      "bytes": 3931,
+      "path": "../bus_memory_recovery_integration_proposal/INTEGRATION_SECTIONS.json",
+      "sha256": "74c0fb403e08dbc02e0e49500e4452a54f9cde5b0f670bc829e4b5f5add4c78f"
+    },
+    {
+      "bytes": 3179,
+      "path": "../bus_memory_recovery_integration_proposal/METADATA_CONTROLS.json",
+      "sha256": "b12eecce552125c4ef1c2175f044e03c171fb5e2737426a85100c1c273e32a89"
+    },
+    {
+      "bytes": 3529,
+      "path": "../bus_memory_recovery_integration_proposal/METADATA_VERIFICATION.json",
+      "sha256": "616d1cfd0e9a5f1f9cd07ea916090544ab61fd248f090fd4b371e5403e6cc234"
+    },
+    {
+      "bytes": 3924,
+      "path": "../bus_memory_recovery_integration_proposal/PARENT_BINDING.json",
+      "sha256": "53900cc1f029c465e93ef95dfec1b85cd3ee57e062aa8368fa8253babc3a717a"
+    },
+    {
+      "bytes": 49381,
+      "path": "../bus_memory_recovery_integration_proposal/PRIMARY_DELTA.diff",
+      "sha256": "50985edfcd3e0a5169fd011b534f14d70196923fe82b5bce73871c0d4fc26e80"
+    },
+    {
+      "bytes": 1319,
+      "path": "../bus_memory_recovery_integration_proposal/PRIMARY_REUSE_MAP.json",
+      "sha256": "6dd6d8aaa92d71d90a470ad1ae0b1a85bff4f3a7256176c0d7782aac0210c710"
+    },
+    {
+      "bytes": 2214,
+      "path": "../bus_memory_recovery_integration_proposal/PROPOSED_BODY_MAP.json",
+      "sha256": "cab1a17c7eb05e82530e21636c76ab7ee77baf0bc305cbf147829f082d429ac7"
+    },
+    {
+      "bytes": 91303,
+      "path": "../bus_memory_recovery_integration_proposal/PROPOSED_NOTE.md",
+      "sha256": "6f76d1790705855488e6b8288b4b4fe13031919930c0b9dabe7ce7ade1cb6abf"
+    },
+    {
+      "bytes": 1684,
+      "path": "../bus_memory_recovery_integration_proposal/PR_BODY_TEMPLATE.md",
+      "sha256": "a8bda2275d796d73309803d04d8290005ab7850ccc6e5d9560adf64be2345b57"
+    },
+    {
+      "bytes": 751,
+      "path": "../bus_memory_recovery_integration_proposal/README.md",
+      "sha256": "19773a050333181105bc3d403088853ff4063b9184f4e932965c866b70ee42d7"
+    },
+    {
+      "bytes": 827,
+      "path": "../bus_memory_recovery_integration_proposal/ROOT_BINDING_INPUT_TEMPLATE.json",
+      "sha256": "34a2089a4d96a095c16d04527d0a2d6e8ab93e1fc1cb28fba632e661da0d9a43"
+    },
+    {
+      "bytes": 4741,
+      "path": "../bus_memory_recovery_integration_proposal/ROOT_READ_GUIDE.md",
+      "sha256": "e4fbdec0a83b66047dbb5776eae5e0b21544f552821e0b23130244cdf7be812c"
+    },
+    {
+      "bytes": 676,
+      "path": "../bus_memory_recovery_integration_proposal/SEAL_OPERATION.json",
+      "sha256": "50732525ea017657ec93b9da63422f474223c00604bd2c718d4beddafa533375"
+    },
+    {
+      "bytes": 1669,
+      "path": "../bus_memory_recovery_integration_proposal/SEMANTIC_DELTA.md",
+      "sha256": "0b7525958b985f86583efbc26d5fed2772247dd68ae64a6aa060d7f24cd2961f"
+    },
+    {
+      "bytes": 6141,
+      "path": "../bus_memory_recovery_integration_proposal/WRAPPER_CHANGES.diff",
+      "sha256": "1e6b5f6815f0222134bf65371b6faace4e9097ae8f8a4e9e5727fff74132dce7"
+    },
+    {
+      "bytes": 1827,
+      "path": "../bus_memory_recovery_integration_proposal/WRAPPER_REPLACEMENTS.json",
+      "sha256": "68662cd7d0f590cb3805eb40d4dc7ef6e40cb0f14c6e353ff11ccbb50e815ffb"
+    },
+    {
+      "bytes": 19137,
+      "path": "../bus_memory_recovery_integration_proposal/assemble_proposal.py",
+      "sha256": "0c5d7ed1fa2c25040075f71d77c4d95ec385b43d0b9cb33d97d0fb6557dad4b6"
+    },
+    {
+      "bytes": 52437,
+      "path": "../bus_memory_recovery_integration_proposal/bus_memory_recovery_common.py",
+      "sha256": "9b08162558333ac1c2f6b576dd37eca78dcd4bbbbec2d7f7486276f1cfdd0b26"
+    },
+    {
+      "bytes": 90,
+      "path": "../bus_memory_recovery_integration_proposal/cache_bus_memory_recovery.py",
+      "sha256": "a4b8fea5f63f6a2832828c0503d99dd4ffc5cf1cbca66be19ca4def369a4273b"
+    },
+    {
+      "bytes": 216,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/BASE_ATTACHMENT.json",
+      "sha256": "cabc573fe156f975ef16c17216f685d9ebdf15935be9cf8b30207089c7848c42"
+    },
+    {
+      "bytes": 1518,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/BASE_PUBLICATION.json",
+      "sha256": "81f09e9ae9ff95baf1bd705485e2a8e2a2b316ae9021063e77b7156dfae9b89e"
+    },
+    {
+      "bytes": 652,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review/FREEZE.json",
+      "sha256": "c3f27cfea2ece87710a2d5ec084f03fb925372c17cae3b1e6739ae17566071cf"
+    },
+    {
+      "bytes": 10578,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review/REVIEW.json",
+      "sha256": "03e1053a510f8c8df4847142e201f81c58f8e71f5bb2363b96df312cbe84f2e1"
+    },
+    {
+      "bytes": 3225,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review/REVIEW.md",
+      "sha256": "cbf63490ae7196e3a97132fcda57765b6f6e78754df8f7d4694032c96a8baa37"
+    },
+    {
+      "bytes": 1536,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review_recorder.py",
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 1810,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review_run/EXECUTION.json",
+      "sha256": "7da7c202aad314a8339796089181bd483bc381f6ddeaaaa725050452d0340a77"
+    },
+    {
+      "bytes": 5874,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review_run/executed_source.py",
+      "sha256": "1637c0341624373779fcc88b7978a940be7e500e9fe7319079cb76f8de0769f0"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review_run/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 648,
+      "path": "../bus_memory_recovery_integration_proposal/evidence/source_review_run/stdout",
+      "sha256": "867f33aa8aaae7796c350f4c86631947da24478f795956a76f46c6e973cba91d"
+    },
+    {
+      "bytes": 91,
+      "path": "../bus_memory_recovery_integration_proposal/finish_bus_memory_recovery.py",
+      "sha256": "72144009e241b617b55c8a4ee2b06a8255b930fd365688d9409a65e0784e2bf4"
+    },
+    {
+      "bytes": 90,
+      "path": "../bus_memory_recovery_integration_proposal/graph_bus_memory_recovery.py",
+      "sha256": "fc1c2041ca3e69b807ecf57ba58e1996fc84d9cc6a8ee8a33dffd7e2544aeb3d"
+    },
+    {
+      "bytes": 92,
+      "path": "../bus_memory_recovery_integration_proposal/install_bus_memory_recovery.py",
+      "sha256": "1d20718085c0af3a69cd2c52519eef55694dd0c658aea9d1256467c0c048d28b"
+    },
+    {
+      "bytes": 4024,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_controls.py",
+      "sha256": "5503fb24b2da2969859217657a121fca36d4306f31f7226779b6101acc1685c9"
+    },
+    {
+      "bytes": 2385,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/assemble_01/EXECUTION.json",
+      "sha256": "f7324bf27bbfa2e6e6f9a9b09818ee9c06c5dba281618f66fefb6eecce159915"
+    },
+    {
+      "bytes": 1663,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/assemble_01/LAUNCH.json",
+      "sha256": "cc67afe70674794cf50ca829059e13b50f006aa57305b77edd84246694248d56"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/assemble_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 19137,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/assemble_01/source_at_launch.py",
+      "sha256": "0c5d7ed1fa2c25040075f71d77c4d95ec385b43d0b9cb33d97d0fb6557dad4b6"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/assemble_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1372,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/assemble_01/stdout",
+      "sha256": "eaf7d5a14cc419b1bc94e401a6aeebfc60d6b21f48fef5a03e8941e9f8fe8832"
+    },
+    {
+      "bytes": 2383,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/controls_01/EXECUTION.json",
+      "sha256": "72d093d0f17ab25583a893ab5a69644ed92d6a077a6728cbf42025f99bcbd6fc"
+    },
+    {
+      "bytes": 1661,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/controls_01/LAUNCH.json",
+      "sha256": "c345883b1ce44fccaf458fa4957e48df4c8126e0b618ae0f7adb78dcf431a9c0"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/controls_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 4024,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/controls_01/source_at_launch.py",
+      "sha256": "5503fb24b2da2969859217657a121fca36d4306f31f7226779b6101acc1685c9"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/controls_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3179,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/controls_01/stdout",
+      "sha256": "6ce921e41d37cc74699b0459f6e5f122ebc3954972abec4e70f2dcd7ace6cbb6"
+    },
+    {
+      "bytes": 2381,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/delivery_01/EXECUTION.json",
+      "sha256": "199249a4b693d1fb98936eb235ab7e30f910c2cc2214cc954b14723a1eb3e56e"
+    },
+    {
+      "bytes": 1660,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/delivery_01/LAUNCH.json",
+      "sha256": "a79bbffd0b31d3dba4c798435967ebd67e7aa7e6e8224827d8ad966472d0ffad"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/delivery_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 20370,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/delivery_01/source_at_launch.py",
+      "sha256": "889a9770b77b0a7e5d72aa781ccc2c75ff8d289a76b4e97142db45435f32f581"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/delivery_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 794,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/delivery_01/stdout",
+      "sha256": "4f3aaaf7c827f353cf3502212a568f2fd501e2abcba63759798db1c5824b4a05"
+    },
+    {
+      "bytes": 2491,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/source_integrity_01/EXECUTION.json",
+      "sha256": "0816fa05cbee10810310148eeb3be6e3ef2181a90798e7903240f8f2ead703ba"
+    },
+    {
+      "bytes": 1754,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/source_integrity_01/LAUNCH.json",
+      "sha256": "59f0a39e93112c06105d2e2e01c4a225c4c9f2876c4a319ca319f53e2ac38873"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/source_integrity_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 54190,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/source_integrity_01/source_at_launch.py",
+      "sha256": "0c013d40d88284bdd8df70c5c9a084824eb6a59209f687fe635e57fc01111a4d"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/source_integrity_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 320,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/source_integrity_01/stdout",
+      "sha256": "6acff791da020d8685d3cfb0e64b3ffb3bb13e1c21d2ece0dd1695cbe4959464"
+    },
+    {
+      "bytes": 2466,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/unbound_refusal_01/EXECUTION.json",
+      "sha256": "4b02ea78e06fef17157a7a83ceb7393cbe31cf34f4618cc55966ddb14ab83fce"
+    },
+    {
+      "bytes": 1730,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/unbound_refusal_01/LAUNCH.json",
+      "sha256": "9305ec9437d0299dacc348c8fcc1216ab7190e540ef4f1f74a416f426121f632"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/unbound_refusal_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 54190,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/unbound_refusal_01/source_at_launch.py",
+      "sha256": "0c013d40d88284bdd8df70c5c9a084824eb6a59209f687fe635e57fc01111a4d"
+    },
+    {
+      "bytes": 1391,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/unbound_refusal_01/stderr",
+      "sha256": "3a15891a827131d2b201733b3f34a1d89ce4f121f1c67a78c8057280ecba0c8c"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/unbound_refusal_01/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2393,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/validation_01/EXECUTION.json",
+      "sha256": "82bd968f36d6e0ed5a5d0fb71daf305fbe9d9fe68505d9d6b46829d000db377d"
+    },
+    {
+      "bytes": 1669,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/validation_01/LAUNCH.json",
+      "sha256": "96f52abfec064dafffb29a3047a23d55053cfe7a605eaef96d1fe067ef24c2ce"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/validation_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 11137,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/validation_01/source_at_launch.py",
+      "sha256": "9e1c63048ecec8794920612316e5a8e3e37593c170a46356169903f92ae75398"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/validation_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3529,
+      "path": "../bus_memory_recovery_integration_proposal/metadata_runs/validation_01/stdout",
+      "sha256": "564a57c7c4cd8bb76cd5959300b71762817860508385c7a1a5f35b9b1951b2d1"
+    },
+    {
+      "bytes": 115070,
+      "path": "../bus_memory_recovery_integration_proposal/parent_sources/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+    },
+    {
+      "bytes": 83919,
+      "path": "../bus_memory_recovery_integration_proposal/parent_sources/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 92,
+      "path": "../bus_memory_recovery_integration_proposal/prepare_bus_memory_recovery.py",
+      "sha256": "8e756b3e974057a1d91e7b33f867c250adf0ea46e3a893a427e9d82782a78b26"
+    },
+    {
+      "bytes": 9808,
+      "path": "../bus_memory_recovery_integration_proposal/primary_extension.py",
+      "sha256": "483da884ba139ba5ed0eeb7d412fd3880f482352a44547da65e39b29139b8fea"
+    },
+    {
+      "bytes": 54190,
+      "path": "../bus_memory_recovery_integration_proposal/proposed_primary_unbound.py",
+      "sha256": "0c013d40d88284bdd8df70c5c9a084824eb6a59209f687fe635e57fc01111a4d"
+    },
+    {
+      "bytes": 92,
+      "path": "../bus_memory_recovery_integration_proposal/publish_bus_memory_recovery.py",
+      "sha256": "ebe5163c2be3f3ebd1ed8ed2927e35b9d7a04e07cbfe358ae2119beba4f92d5c"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/record_metadata.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 110562,
+      "path": "../bus_memory_recovery_integration_proposal/reference/FINAL_FREEZE.json",
+      "sha256": "4099c254be3c8f34072da189326d5b266816e13e14f9b0e68f3cde22d374307d"
+    },
+    {
+      "bytes": 4164,
+      "path": "../bus_memory_recovery_integration_proposal/reference/ROOT_READ_GUIDE.md",
+      "sha256": "7f080b0a8b57df89773abea6080f6428894d7e5fef1da96abb01188b4d1ec939"
+    },
+    {
+      "bytes": 917,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/cache/EXECUTION.json",
+      "sha256": "5b8ef4bdf42fe4cbdd440fde57e8941aaf7a4bf31ed09e9029e633525fed4d4b"
+    },
+    {
+      "bytes": 2400,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/cache/LAUNCH.json",
+      "sha256": "e90f754e4d22c438d8cfbcb13be991f65e25eeaf5e21e7c295bfe55040f3cd3c"
+    },
+    {
+      "bytes": 83,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/cache/entry_source.py",
+      "sha256": "175cadbf7c142b8d81c1f41535f84b11dc73f6367410c2ecf0f7691fe2ebc121"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/cache/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/cache/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 922,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/finish/EXECUTION.json",
+      "sha256": "c51769ca9188eb3ec57c42eed191be40890aae2216d39c1a6c4c90b64e8c5a1a"
+    },
+    {
+      "bytes": 2095,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/finish/LAUNCH.json",
+      "sha256": "3d7dff3713f4e599d41e3e040c66738b917d8bfce752cd83765c66c7d98c0b2c"
+    },
+    {
+      "bytes": 84,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/finish/entry_source.py",
+      "sha256": "741dbe5de56145917bc3213c999f574cb0dce92ff357610c89c38d8fab2f2fd2"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/finish/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 611,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/finish/stdout",
+      "sha256": "1f643fef27bf81ceb5de6aa4618d3fd1bd3293c865d6ea73d991872a6429c75a"
+    },
+    {
+      "bytes": 917,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/graph/EXECUTION.json",
+      "sha256": "224da85e05724b424c2cdde144cf08007440d6087d038e6f099108cd892e4c7b"
+    },
+    {
+      "bytes": 2093,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/graph/LAUNCH.json",
+      "sha256": "f86f349ea9168927352ad28568dc89766cc00c3a8f4c8e9cf2f2f9a34b57f824"
+    },
+    {
+      "bytes": 83,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/graph/entry_source.py",
+      "sha256": "e9b79ff00c59877c7efcb49d299933860eb11634b838d128cf66149ab98669c7"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/graph/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/graph/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 923,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/install/EXECUTION.json",
+      "sha256": "f01675657949a7eab7850fd1c9b05e3813766e2fcda23c880dd02c436ae174d1"
+    },
+    {
+      "bytes": 2199,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/install/LAUNCH.json",
+      "sha256": "4d1057de48101cfb67867788a062d09e29c7a467318d04cde44cffe05d859798"
+    },
+    {
+      "bytes": 85,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/install/entry_source.py",
+      "sha256": "a1570e131e4b265cbff7c04d3229add59f07af39df85552837759072ea584cb7"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/install/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/install/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 925,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/prepare/EXECUTION.json",
+      "sha256": "e872be5cea0802b32e745972b81e9bfcbcd6ff9df6d0bb729588b5865ef6a409"
+    },
+    {
+      "bytes": 1929,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/prepare/LAUNCH.json",
+      "sha256": "625b7480d54fb5967632f029430766b63a6ea59db81d41c27b52f0665bcafa5d"
+    },
+    {
+      "bytes": 85,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/prepare/entry_source.py",
+      "sha256": "04fb399044f76d212ee14045198d44705f4fc2d67b0bb03ac23773d2886af02d"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/prepare/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 532,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/prepare/stdout",
+      "sha256": "0043940c5881ef620f3845bd9a5ee52edcba83ea87abc4b8b51bf0d1c81f7c83"
+    },
+    {
+      "bytes": 926,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/publish/EXECUTION.json",
+      "sha256": "70ec2ce52bedf01fae79565b80bd397596211f49149efac88065d960ab2c5faf"
+    },
+    {
+      "bytes": 2488,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/publish/LAUNCH.json",
+      "sha256": "d3429b599d163f9a30e914058af92825ccdfb4300436a5fe688af4f39a190d3f"
+    },
+    {
+      "bytes": 85,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/publish/entry_source.py",
+      "sha256": "00a1a2cfdec295ead8471d16ab4c7f514abbf23ec37f53fbe2207a92036bedd4"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/publish/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1432,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/publish/stdout",
+      "sha256": "88cee2b439d7cc763b286124198453c3fc99f88b61a81207dfe5be1ef6919e51"
+    },
+    {
+      "bytes": 920,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/verify/EXECUTION.json",
+      "sha256": "cb38f8ca68d94859fee1c52304fdb837c6ea8a56c9f9128c05933427261dd9c6"
+    },
+    {
+      "bytes": 2095,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/verify/LAUNCH.json",
+      "sha256": "f0aac771aa617daf4b96fa188135c0904b53172a6bc8129c9b11dec21aed2d02"
+    },
+    {
+      "bytes": 84,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/verify/entry_source.py",
+      "sha256": "0f71e9b9d4a955d05851ff914dafdad41c9655e061bf8025790f9d928004cc27"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/verify/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/reference/actions/verify/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 53373,
+      "path": "../bus_memory_recovery_integration_proposal/reference/bus_resource_common.py",
+      "sha256": "cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c"
+    },
+    {
+      "bytes": 9790,
+      "path": "../bus_memory_recovery_integration_proposal/reference/primary_extension.py",
+      "sha256": "5766c05cbe5f6be63bcc483c7cc7f0bec6e96e03d5e422f13424e4bf64fc0d27"
+    },
+    {
+      "bytes": 72147,
+      "path": "../bus_memory_recovery_integration_proposal/reference/proposed_primary_unbound.py",
+      "sha256": "de86bf3ae9d1e781e9775f2e9daf1ae51504e2b6b32d59166a3b21073a30666f"
+    },
+    {
+      "bytes": 8541,
+      "path": "../bus_memory_recovery_integration_proposal/rules/ADDITIONAL_SOURCE_REFS.json",
+      "sha256": "db2d3a46636784c17bb3e3a5ea4167823eae11ea85405c918e667d75af964f0b"
+    },
+    {
+      "bytes": 4287,
+      "path": "../bus_memory_recovery_integration_proposal/rules/origin_ai_execution/AGENTS.md",
+      "sha256": "5a4ece822960dd596de0efa4a3348475ad5ddaf47fa43f10aef64cc8a73c932b"
+    },
+    {
+      "bytes": 1118,
+      "path": "../bus_memory_recovery_integration_proposal/rules/origin_main/AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "bytes": 11788,
+      "path": "../bus_memory_recovery_integration_proposal/rules/origin_main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 3631,
+      "path": "../bus_memory_recovery_integration_proposal/seal_proposal.py",
+      "sha256": "b89725e3cb0ecbe28b732f0e7004e0ac4086f6f8eb0ae62bba0c510a7ea87b66"
+    },
+    {
+      "bytes": 3631,
+      "path": "../bus_memory_recovery_integration_proposal/seal_source_at_launch.py",
+      "sha256": "b89725e3cb0ecbe28b732f0e7004e0ac4086f6f8eb0ae62bba0c510a7ea87b66"
+    },
+    {
+      "bytes": 44383,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/ARCHIVE_CLOSURE.json",
+      "sha256": "acb52a3d2e707796ed2103d6f7f9e7dca4a210bf510cbdaf34c78e245635f260"
+    },
+    {
+      "bytes": 3033,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/BINDING_CONTRACT.md",
+      "sha256": "136b9704c565af7911fe3f2187be4c67eac35bac31ae3b1af75b0cd8f8922c36"
+    },
+    {
+      "bytes": 1349,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/BUILD_RESULT.json",
+      "sha256": "f2eaa5c0e8e02f42e508f20b54a3fe547e126accdb7a36c967fab4400a4cf589"
+    },
+    {
+      "bytes": 1754,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/CHECKPOINT.md",
+      "sha256": "00be27c5b47f41b0f2380a4a53cea0541be9d8dc69195445c2b65f7114e4443e"
+    },
+    {
+      "bytes": 1973,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "f91168868f619670a63e64dcc1d6d3dd54866dcfa09c148942fe2631bcf6f75a"
+    },
+    {
+      "bytes": 44440,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/FINAL_FREEZE.json",
+      "sha256": "5f680ad2dcd99182bd6e023e879963c8c23b6b22d8b737045c1ab50ad91c5e49"
+    },
+    {
+      "bytes": 1799,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/PROTOCOL_REUSE_MAP.json",
+      "sha256": "1870ef61027884f08e5a5fc2d6a05630da6a32da64b2f8db30bbee602ebc9080"
+    },
+    {
+      "bytes": 1656,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/PR_BODY.md",
+      "sha256": "048f793229dda0458902b56d0bb651c19df85a3dd7e4111d8f033b228f67ead7"
+    },
+    {
+      "bytes": 4076,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/READ_COVERAGE.md",
+      "sha256": "cadab2ddc45bf1530bdf919bba4a9f0f7e607ecc13929bc70d1925be7ea0931e"
+    },
+    {
+      "bytes": 10123,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/ROOT_READ_GUIDE.md",
+      "sha256": "1249af9fe59432b2913e1161ede8bc3b4347c5f9d0a79feca32ef84c156604d1"
+    },
+    {
+      "bytes": 1454,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/SCRIPT_MAP.json",
+      "sha256": "35746b71821acc4132bc9722d276c69d2bfa0d0766e48f2df37a7cb42d4b1055"
+    },
+    {
+      "bytes": 2250,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/SEAL_OPERATION.json",
+      "sha256": "2d5c9c93d2ea6a8fdbfaf2ae34efeba27bb0c75a9f6257340ff981ad4334eafb"
+    },
+    {
+      "bytes": 47362,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/SOURCE_FRESHNESS.json",
+      "sha256": "eadff2bf1217c7cba02d02ad6c0ed98ffb1fe941457476144e9f6220833ddfb4"
+    },
+    {
+      "bytes": 750,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/TRACE_GATE.md",
+      "sha256": "48854a30af052afe578b07b4f09273f27fca8eaf7192013bf367e95c4437b128"
+    },
+    {
+      "bytes": 4557,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/VERIFICATION.json",
+      "sha256": "bef298efd99eaf9e7dd7942d5509c0444997529eb3afabbc1834ed84c91f00c3"
+    },
+    {
+      "bytes": 12432,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/build_packet.py",
+      "sha256": "77f434e72cdab10fe115ae2096b35c94dd5d68e26fb097aafa3fb445354e3f5b"
+    },
+    {
+      "bytes": 6531,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/inspect_packet.py",
+      "sha256": "6fe1e6278ad9c31083b5de293f3d1fa4eedafa8d25737185663e8da583e72212"
+    },
+    {
+      "bytes": 2341,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/build_01/EXECUTION.json",
+      "sha256": "d5a9e57278dead7e1b83378b8a6fd6c993a98150fbf2c7d5a74a80b367379eb8"
+    },
+    {
+      "bytes": 1631,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/build_01/LAUNCH.json",
+      "sha256": "5a8af6fd856d3dbecff424241f57ed0dfa3516b6fd861e7eb3bc55ac3e3c5f74"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/build_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 12432,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/build_01/source_at_launch.py",
+      "sha256": "77f434e72cdab10fe115ae2096b35c94dd5d68e26fb097aafa3fb445354e3f5b"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/build_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1349,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/build_01/stdout",
+      "sha256": "d8f93b46e04361b9b42b5bc82ae0926c3e4555878077cf8875c3bfc587a9dd6a"
+    },
+    {
+      "bytes": 2440,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/controls_01/EXECUTION.json",
+      "sha256": "450bf7930eb56c24b17ea46ad581c6a9385d053ca64113ca7ee3a53e61493298"
+    },
+    {
+      "bytes": 1725,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/controls_01/LAUNCH.json",
+      "sha256": "4cd18c369c5d12b22aef3655bd796c9327726db1524399585e5a9aec66170d32"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/controls_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 39328,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/controls_01/source_at_launch.py",
+      "sha256": "2d97862c080638df1b4208bf4a6e88ea050e9387edff225eaee14f572587260b"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/controls_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 863,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/controls_01/stdout",
+      "sha256": "ddfe7560783455305d5cd17ec43ce3683be99ad65b81a37c2fb4bd118c7badac"
+    },
+    {
+      "bytes": 2291,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/default_refusal_01/EXECUTION.json",
+      "sha256": "5536cd96342b7d248d6b66b8726b0f440a297c514ddf4139dad272437ee43afa"
+    },
+    {
+      "bytes": 1562,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/default_refusal_01/LAUNCH.json",
+      "sha256": "556aa4e9002d309c7074c12eacff5cc55b3674b91a5575ee37ffd13ab7714f7f"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/default_refusal_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 39328,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/default_refusal_01/source_at_launch.py",
+      "sha256": "2d97862c080638df1b4208bf4a6e88ea050e9387edff225eaee14f572587260b"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/default_refusal_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 157,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/default_refusal_01/stdout",
+      "sha256": "30e6d703f4c1780965e484a645e777ff12bbe7672d1b817f4072865204d2cf8a"
+    },
+    {
+      "bytes": 2366,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/inspection_01/EXECUTION.json",
+      "sha256": "a0ac41a6eb6332301a5568c39c4260d411a19aa7962fae4190521b138faadf44"
+    },
+    {
+      "bytes": 1646,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/inspection_01/LAUNCH.json",
+      "sha256": "0aec4dd93a195e1dc0e996edb760b06b4988c68d1822e76834f0db50615ccd10"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/inspection_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 6531,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/inspection_01/source_at_launch.py",
+      "sha256": "6fe1e6278ad9c31083b5de293f3d1fa4eedafa8d25737185663e8da583e72212"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/inspection_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4557,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/inspection_01/stdout",
+      "sha256": "4bf0ac41c5d8fa8155ba294616e6adc413552640b2fb130544c5ed0efc3315eb"
+    },
+    {
+      "bytes": 2439,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/integrity_01/EXECUTION.json",
+      "sha256": "13deeb5e23fbb8f048abbf983c643c071ec58d662c8ff51e9633adcc55eac4fe"
+    },
+    {
+      "bytes": 1722,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/integrity_01/LAUNCH.json",
+      "sha256": "ab83ded37b2cd027c0d3847b99c7469f534d9a43170466db3b311fc67790fe97"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/integrity_01/recorder_at_launch.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 39328,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/integrity_01/source_at_launch.py",
+      "sha256": "2d97862c080638df1b4208bf4a6e88ea050e9387edff225eaee14f572587260b"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/integrity_01/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 287,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/metadata_runs/integrity_01/stdout",
+      "sha256": "70505cfa464cebad1dba6aa10305f32c2af03f72dc0a8636fc7050d43d48ad12"
+    },
+    {
+      "bytes": 10024,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/primary_template.py",
+      "sha256": "e155130295f5afb59b64059c8929fab1869dd9e889c30a38cbabad29133e3a81"
+    },
+    {
+      "bytes": 5115,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/ACTUAL_EVIDENCE.json",
+      "sha256": "6bbf8bc437d23a2420e47c2ecf5c0e800c66a311bc10aa4c49cc2438fbb4aa46"
+    },
+    {
+      "bytes": 89625,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/ARCHIVE_INDEX.json",
+      "sha256": "f323b55270b78c99f9567735e8273467ac9dafd3d3620e5b762370ebc9f72325"
+    },
+    {
+      "bytes": 2174,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/BODY_MAP.json",
+      "sha256": "35026a41dfa092def44f0803c9f4718a1260a1d59ac56bd97bf1b8c72a90e6d4"
+    },
+    {
+      "bytes": 3924,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/PARENT_BINDING.json",
+      "sha256": "53900cc1f029c465e93ef95dfec1b85cd3ee57e062aa8368fa8253babc3a717a"
+    },
+    {
+      "bytes": 889,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/PUBLICATION_STATE.json",
+      "sha256": "c80dea8d4e69eee4e936f6c5f8ec7f0f418afd0444ab4c4b29a2c4cd5bf0f2e9"
+    },
+    {
+      "bytes": 36542,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/SOURCE_MANIFEST.json",
+      "sha256": "85151b60fcd08d420f32fb130a9c3967e7eb8d506437f2bbb8082b85f4cdf341"
+    },
+    {
+      "bytes": 1782,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c.py",
+      "sha256": "0253310d6c5383415cb59061f7fbdef14d8e6d51ca9cd150ee078f09a439794c"
+    },
+    {
+      "bytes": 26987,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3.md",
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3"
+    },
+    {
+      "bytes": 4798,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/0577624885c7b08f385a71e159cd429f33c0104d9aa8cdf41d9f5cdda4a8699f.py",
+      "sha256": "0577624885c7b08f385a71e159cd429f33c0104d9aa8cdf41d9f5cdda4a8699f"
+    },
+    {
+      "bytes": 15435,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 2492,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/0686a75b8d5063bb2ed078618e0c210d5a392e7695199adfd2016857228ed82e.md",
+      "sha256": "0686a75b8d5063bb2ed078618e0c210d5a392e7695199adfd2016857228ed82e"
+    },
+    {
+      "bytes": 3952,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b.py",
+      "sha256": "06a3997e6b9be89e1121da9e305f6f555f5553fe776b5a256d695f576fa4372b"
+    },
+    {
+      "bytes": 1456,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/092ed74bf525aaf3c1090344af0ed1a0eaf056872bb064c0bda1fa8d2d11b4af.bin",
+      "sha256": "092ed74bf525aaf3c1090344af0ed1a0eaf056872bb064c0bda1fa8d2d11b4af"
+    },
+    {
+      "bytes": 115070,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823.md",
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+    },
+    {
+      "bytes": 3220,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/13980d4cffc39f8f800165e8f8fc69318e25756afdf69e180a4086cb1a8385fc.py",
+      "sha256": "13980d4cffc39f8f800165e8f8fc69318e25756afdf69e180a4086cb1a8385fc"
+    },
+    {
+      "bytes": 9528,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/160e6f51eddb8f2c01b1b7d34c510b8f875ca5b4bab0e8fe4f3a2df57abde107.json",
+      "sha256": "160e6f51eddb8f2c01b1b7d34c510b8f875ca5b4bab0e8fe4f3a2df57abde107"
+    },
+    {
+      "bytes": 865,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/16be1bfabc638c7459a06c85f56e717f354b15cabcffb29a7ffc16d5ce651c93.json",
+      "sha256": "16be1bfabc638c7459a06c85f56e717f354b15cabcffb29a7ffc16d5ce651c93"
+    },
+    {
+      "bytes": 83919,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b.md",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 1581,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/19282aa54291c466f4251abda4d19797ffbb3cbbf3565e6c061143dc3e638f37.md",
+      "sha256": "19282aa54291c466f4251abda4d19797ffbb3cbbf3565e6c061143dc3e638f37"
+    },
+    {
+      "bytes": 3826,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386.md",
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "bytes": 3420,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/1c1677df40bb9a5861b7b29a1ca5f301c4adbe632d329d85e2d9b30cae1ceea5.py",
+      "sha256": "1c1677df40bb9a5861b7b29a1ca5f301c4adbe632d329d85e2d9b30cae1ceea5"
+    },
+    {
+      "bytes": 6990,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25.md",
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    },
+    {
+      "bytes": 5082,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e.md",
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "bytes": 642,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/21f91a53c4100d4aa13abe869aa47ffe4929a22b93ba689be82caa62e3970ddf.json",
+      "sha256": "21f91a53c4100d4aa13abe869aa47ffe4929a22b93ba689be82caa62e3970ddf"
+    },
+    {
+      "bytes": 2081,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/22a98446aa68694b780af60210e57ff253054fad2686838509e0a79ab86d664c.py",
+      "sha256": "22a98446aa68694b780af60210e57ff253054fad2686838509e0a79ab86d664c"
+    },
+    {
+      "bytes": 823,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/28436b704dc0879135b3963ff7a891ea110af0a00a979e27e418a0982285e957.json",
+      "sha256": "28436b704dc0879135b3963ff7a891ea110af0a00a979e27e418a0982285e957"
+    },
+    {
+      "bytes": 3462,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641.json",
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "bytes": 554,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/2d7ab56f6d6f0925a42e83f26644322162e0b2bcff475c11ae9da1a8edb93516.bin",
+      "sha256": "2d7ab56f6d6f0925a42e83f26644322162e0b2bcff475c11ae9da1a8edb93516"
+    },
+    {
+      "bytes": 440,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c.json",
+      "sha256": "2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c"
+    },
+    {
+      "bytes": 668,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/2faf33270c5691d909b5303fa41f1c46a08f42b1461e65d95ee763c6828ecf4d.json",
+      "sha256": "2faf33270c5691d909b5303fa41f1c46a08f42b1461e65d95ee763c6828ecf4d"
+    },
+    {
+      "bytes": 418,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/3235995b2bc6f90bcffe34355413181087288ff4540662c928b97341aa008ef0.json",
+      "sha256": "3235995b2bc6f90bcffe34355413181087288ff4540662c928b97341aa008ef0"
+    },
+    {
+      "bytes": 935,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/345f508a98ce57e7387fb1fc7032b3f4f92068794d56c23e686c7e8f7013395f.json",
+      "sha256": "345f508a98ce57e7387fb1fc7032b3f4f92068794d56c23e686c7e8f7013395f"
+    },
+    {
+      "bytes": 41771,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad.md",
+      "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+    },
+    {
+      "bytes": 379,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/3603d4b30ecc2853eccab09d8008e663703bf8898b36592aa555c2c796a19fb3.json",
+      "sha256": "3603d4b30ecc2853eccab09d8008e663703bf8898b36592aa555c2c796a19fb3"
+    },
+    {
+      "bytes": 51748,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+      "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+    },
+    {
+      "bytes": 1589,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3.json",
+      "sha256": "393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3"
+    },
+    {
+      "bytes": 1449,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/39d9298c7c923dd014e036354070c75ff23e4a6358caae4d95bdca543300eb04.json",
+      "sha256": "39d9298c7c923dd014e036354070c75ff23e4a6358caae4d95bdca543300eb04"
+    },
+    {
+      "bytes": 1816,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/3b5a5f0aac1efd3031cc6fba575a89fbe0281684698d8296a94f6d0a998a94a8.py",
+      "sha256": "3b5a5f0aac1efd3031cc6fba575a89fbe0281684698d8296a94f6d0a998a94a8"
+    },
+    {
+      "bytes": 11558,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "bytes": 509,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/3df1f41f729c46f285b403a4dc9fda0f1f6654dea6a5d81463f1ee57fdc097b1.bin",
+      "sha256": "3df1f41f729c46f285b403a4dc9fda0f1f6654dea6a5d81463f1ee57fdc097b1"
+    },
+    {
+      "bytes": 12808,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/3f7a23ad72af86e1140a02516a68b809d033a8cc9f2fe2a22724d52e96f6685f.py",
+      "sha256": "3f7a23ad72af86e1140a02516a68b809d033a8cc9f2fe2a22724d52e96f6685f"
+    },
+    {
+      "bytes": 4008,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/439866a222940a976ffb77c166fac6fce7cd3ff24514ef14ec42995c09c28ab5.json",
+      "sha256": "439866a222940a976ffb77c166fac6fce7cd3ff24514ef14ec42995c09c28ab5"
+    },
+    {
+      "bytes": 6791,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340.md",
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340"
+    },
+    {
+      "bytes": 949,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/46df65bf93c82c336e6b5c04937c6813ffc8bc5d87aa29ed837bf62f5ff15c48.json",
+      "sha256": "46df65bf93c82c336e6b5c04937c6813ffc8bc5d87aa29ed837bf62f5ff15c48"
+    },
+    {
+      "bytes": 3344,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270.py",
+      "sha256": "4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270"
+    },
+    {
+      "bytes": 2731,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/506a43815458201822a151669c036bdecb3ad34605a2887394560e923076caa0.md",
+      "sha256": "506a43815458201822a151669c036bdecb3ad34605a2887394560e923076caa0"
+    },
+    {
+      "bytes": 3655,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716.py",
+      "sha256": "50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716"
+    },
+    {
+      "bytes": 1610,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/51b3c50108ac1f43aa95d2ab3c6ae06f4ecd8095e872f0f56dd054cb89f2309a.py",
+      "sha256": "51b3c50108ac1f43aa95d2ab3c6ae06f4ecd8095e872f0f56dd054cb89f2309a"
+    },
+    {
+      "bytes": 10521,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd.py",
+      "sha256": "52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd"
+    },
+    {
+      "bytes": 3078,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/54a6c6055e8bf1b7046db9ec94d6a56526d5d28204ad5be4b3a28b1e11fe3e36.json",
+      "sha256": "54a6c6055e8bf1b7046db9ec94d6a56526d5d28204ad5be4b3a28b1e11fe3e36"
+    },
+    {
+      "bytes": 64064,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93.json",
+      "sha256": "56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93"
+    },
+    {
+      "bytes": 3213,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/5918dce6ff87583323d8d74d2904604cef9a5849579fd6e2b77dc8af6817891a.md",
+      "sha256": "5918dce6ff87583323d8d74d2904604cef9a5849579fd6e2b77dc8af6817891a"
+    },
+    {
+      "bytes": 5558,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/5a347671fadc51c62b48e54461c9828dca44c954e50d169448acc253c8de1ec8.json",
+      "sha256": "5a347671fadc51c62b48e54461c9828dca44c954e50d169448acc253c8de1ec8"
+    },
+    {
+      "bytes": 534,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/5b6330b94894ea666550a92a63d8a494f5943422922f5345af5abec828010c6e.bin",
+      "sha256": "5b6330b94894ea666550a92a63d8a494f5943422922f5345af5abec828010c6e"
+    },
+    {
+      "bytes": 15321,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4.md",
+      "sha256": "5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4"
+    },
+    {
+      "bytes": 9964,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/5e883699d6865071c2891aef1b8917e35b846e2518dce8b07df83a88f08032a4.json",
+      "sha256": "5e883699d6865071c2891aef1b8917e35b846e2518dce8b07df83a88f08032a4"
+    },
+    {
+      "bytes": 682,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/5e8bf3763390136d0181ede4d5e2d60fc721b40af2239be9e1a5735d54bae703.json",
+      "sha256": "5e8bf3763390136d0181ede4d5e2d60fc721b40af2239be9e1a5735d54bae703"
+    },
+    {
+      "bytes": 1716,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/65fdacbda99c49bba7b381dbebcffef3a7a6d45f18a86571f22db0fe079ff183.md",
+      "sha256": "65fdacbda99c49bba7b381dbebcffef3a7a6d45f18a86571f22db0fe079ff183"
+    },
+    {
+      "bytes": 1089,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/675760470a475860e80df69fa6d0096afa186a5cac408c6ddc4235bd9037b360.json",
+      "sha256": "675760470a475860e80df69fa6d0096afa186a5cac408c6ddc4235bd9037b360"
+    },
+    {
+      "bytes": 3887,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525.json",
+      "sha256": "6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525"
+    },
+    {
+      "bytes": 216,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531.json",
+      "sha256": "69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531"
+    },
+    {
+      "bytes": 1470,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/6c774eca97d7f2bbfcea7ca59833a59aba4e0d62973e0b20849329237c51f433.py",
+      "sha256": "6c774eca97d7f2bbfcea7ca59833a59aba4e0d62973e0b20849329237c51f433"
+    },
+    {
+      "bytes": 7281,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/6d3321afab474cca0fcf0871b25ed1aa3bdbb144afb6bd5ab6720e69664dc012.json",
+      "sha256": "6d3321afab474cca0fcf0871b25ed1aa3bdbb144afb6bd5ab6720e69664dc012"
+    },
+    {
+      "bytes": 7516,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44.md",
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+    },
+    {
+      "bytes": 1029,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/6f24a4e561ce4f9ba0904af2c47b38c399b4c127d087583cc6af7ff9b623fd7d.md",
+      "sha256": "6f24a4e561ce4f9ba0904af2c47b38c399b4c127d087583cc6af7ff9b623fd7d"
+    },
+    {
+      "bytes": 3273,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/7070d0ab6fbbfb937eec4d86f5a79433167dbcecb1ecc640bb43d8af47996e5d.json",
+      "sha256": "7070d0ab6fbbfb937eec4d86f5a79433167dbcecb1ecc640bb43d8af47996e5d"
+    },
+    {
+      "bytes": 31003,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29.md",
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "bytes": 2110,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/726f1374a4286f7b95868f540d402bc7221cbd495b4e7fab655a5c650bc1e5d8.json",
+      "sha256": "726f1374a4286f7b95868f540d402bc7221cbd495b4e7fab655a5c650bc1e5d8"
+    },
+    {
+      "bytes": 385,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/7775c6dc8abff57db44a45ac641e43c86d9d58215ba4b16739104b9deea83e29.json",
+      "sha256": "7775c6dc8abff57db44a45ac641e43c86d9d58215ba4b16739104b9deea83e29"
+    },
+    {
+      "bytes": 117717,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021.md",
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    {
+      "bytes": 1177,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/7f4dc31cb18d0fcd160660ecdc01f793f29a078b8ccde51f69a39e26c4275bb8.json",
+      "sha256": "7f4dc31cb18d0fcd160660ecdc01f793f29a078b8ccde51f69a39e26c4275bb8"
+    },
+    {
+      "bytes": 3894,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff.json",
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "bytes": 2404,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/820dd33962cb00ec59bdf9a8fa581a457c42d4a27f0441ac2a9c944c270ffcc9.md",
+      "sha256": "820dd33962cb00ec59bdf9a8fa581a457c42d4a27f0441ac2a9c944c270ffcc9"
+    },
+    {
+      "bytes": 1831,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/83d7df7665e896fe056e426005cda688722eae2de932b17f56530a7078cdf8bc.json",
+      "sha256": "83d7df7665e896fe056e426005cda688722eae2de932b17f56530a7078cdf8bc"
+    },
+    {
+      "bytes": 10768,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/85d31fb53564d12fbab84883e371f4cf035cad52208db0998ceb8650291a4cff.md",
+      "sha256": "85d31fb53564d12fbab84883e371f4cf035cad52208db0998ceb8650291a4cff"
+    },
+    {
+      "bytes": 2520,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/88c039d7f09860512af4b5ccd8cd190ba601d2a7a07703540169483114370d71.json",
+      "sha256": "88c039d7f09860512af4b5ccd8cd190ba601d2a7a07703540169483114370d71"
+    },
+    {
+      "bytes": 22431,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8.md",
+      "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8"
+    },
+    {
+      "bytes": 1786,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/8c8f50af4e8956841bbf3f95a45b6645c8a61729ac2f835614f545b0475b93b5.json",
+      "sha256": "8c8f50af4e8956841bbf3f95a45b6645c8a61729ac2f835614f545b0475b93b5"
+    },
+    {
+      "bytes": 1233,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/8f427613ebe99471994e25ea6388869025985da1a3dde7abd968a5db3b3346ee.json",
+      "sha256": "8f427613ebe99471994e25ea6388869025985da1a3dde7abd968a5db3b3346ee"
+    },
+    {
+      "bytes": 13419,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 962,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/9ba13e52a5bea61b9647c280f0224f98f7c2ddf44682a9939d7d9b76bf92ef65.json",
+      "sha256": "9ba13e52a5bea61b9647c280f0224f98f7c2ddf44682a9939d7d9b76bf92ef65"
+    },
+    {
+      "bytes": 1868,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/9e8eec6c662c9de30082d3f9c5be0e537a60afe23ded7b9474b8262fdc172d15.json",
+      "sha256": "9e8eec6c662c9de30082d3f9c5be0e537a60afe23ded7b9474b8262fdc172d15"
+    },
+    {
+      "bytes": 4507,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880.md",
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "bytes": 485,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a1b4a504977adbe477d6b9e905c93fa8a43900ee56de95e40380507e9acaa0db.md",
+      "sha256": "a1b4a504977adbe477d6b9e905c93fa8a43900ee56de95e40380507e9acaa0db"
+    },
+    {
+      "bytes": 17568,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1.md",
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+    },
+    {
+      "bytes": 10972,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a28cdbb1cda8615dd0afa4fb75755fb25d0badac1a63d45e653c7034c5392465.json",
+      "sha256": "a28cdbb1cda8615dd0afa4fb75755fb25d0badac1a63d45e653c7034c5392465"
+    },
+    {
+      "bytes": 4327,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a6186f3462439abdbd19c2c65ed3d96cb721907a66c19ea49843990408a79540.json",
+      "sha256": "a6186f3462439abdbd19c2c65ed3d96cb721907a66c19ea49843990408a79540"
+    },
+    {
+      "bytes": 2233,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a65c63ba5430446e57ece8e37eef30e08f7fd55bc234392e01f8e1c24eb224d9.py",
+      "sha256": "a65c63ba5430446e57ece8e37eef30e08f7fd55bc234392e01f8e1c24eb224d9"
+    },
+    {
+      "bytes": 1883,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a6e440713aaf7219621a58d8d2b0620b10ad14bdf1b9376aa27c9e8810588e3a.json",
+      "sha256": "a6e440713aaf7219621a58d8d2b0620b10ad14bdf1b9376aa27c9e8810588e3a"
+    },
+    {
+      "bytes": 418,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345.json",
+      "sha256": "a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345"
+    },
+    {
+      "bytes": 11768,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/aa509ee8e5eaa2e7ffcb7130b5297842d0217ed480221105a9c98ef53eb90b7c.md",
+      "sha256": "aa509ee8e5eaa2e7ffcb7130b5297842d0217ed480221105a9c98ef53eb90b7c"
+    },
+    {
+      "bytes": 3515,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/abed699ac797df4b322566ab5f3872746fdd227969971fe6146dde874ab55d37.py",
+      "sha256": "abed699ac797df4b322566ab5f3872746fdd227969971fe6146dde874ab55d37"
+    },
+    {
+      "bytes": 156,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/ac32391dd0c9994ced11a714fc70bd69079c64d65e1b252b2354243414fdf034.bin",
+      "sha256": "ac32391dd0c9994ced11a714fc70bd69079c64d65e1b252b2354243414fdf034"
+    },
+    {
+      "bytes": 517,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/ad6521aa6cf09cf9c952e752af3fdeb769a91f5def9ccd29d2c55916bc97c027.json",
+      "sha256": "ad6521aa6cf09cf9c952e752af3fdeb769a91f5def9ccd29d2c55916bc97c027"
+    },
+    {
+      "bytes": 1512,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/ad7c2dbc2fb8865fed6d09ea188b8dafed692160cdd62983b45eca4d6c90200a.json",
+      "sha256": "ad7c2dbc2fb8865fed6d09ea188b8dafed692160cdd62983b45eca4d6c90200a"
+    },
+    {
+      "bytes": 57191,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137.py",
+      "sha256": "af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137"
+    },
+    {
+      "bytes": 2248,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c.json",
+      "sha256": "b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c"
+    },
+    {
+      "bytes": 1536,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "bytes": 3667,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473.json",
+      "sha256": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+    },
+    {
+      "bytes": 3967,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/ba58b86684d5fae32b3a31a893e86502a9cccd51e70c1dcf472a8c7ddd148ea4.json",
+      "sha256": "ba58b86684d5fae32b3a31a893e86502a9cccd51e70c1dcf472a8c7ddd148ea4"
+    },
+    {
+      "bytes": 1150,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/c1ee4a845994ccdb24aeeefc04ee2dee38b9e6ab1bc92824dec3781af8f55e1b.json",
+      "sha256": "c1ee4a845994ccdb24aeeefc04ee2dee38b9e6ab1bc92824dec3781af8f55e1b"
+    },
+    {
+      "bytes": 8726,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/c3d37e42ebdfd711bb97e6633be836db408545848f9beace2296a4309b62d6ef.md",
+      "sha256": "c3d37e42ebdfd711bb97e6633be836db408545848f9beace2296a4309b62d6ef"
+    },
+    {
+      "bytes": 88,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e.py",
+      "sha256": "c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e"
+    },
+    {
+      "bytes": 5394,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9.md",
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9"
+    },
+    {
+      "bytes": 5321,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726.json",
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "bytes": 1804,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/cce7221e85784a25051fe3cf006c7cb85f024571353ba3a5e816f39d788ba110.md",
+      "sha256": "cce7221e85784a25051fe3cf006c7cb85f024571353ba3a5e816f39d788ba110"
+    },
+    {
+      "bytes": 77852,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6.md",
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+    },
+    {
+      "bytes": 1842,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/d0f69176d3b46ada487fa63367dbf0c89ba93be8f36b6f36645acae5e4a57e2b.md",
+      "sha256": "d0f69176d3b46ada487fa63367dbf0c89ba93be8f36b6f36645acae5e4a57e2b"
+    },
+    {
+      "bytes": 48637,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8.md",
+      "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8"
+    },
+    {
+      "bytes": 16791,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/d6d800113aa30dafa2031cba309babc4bed70415d61dca3d07c13aaecc2674b0.md",
+      "sha256": "d6d800113aa30dafa2031cba309babc4bed70415d61dca3d07c13aaecc2674b0"
+    },
+    {
+      "bytes": 1542,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c.json",
+      "sha256": "d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c"
+    },
+    {
+      "bytes": 2859,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262.json",
+      "sha256": "dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262"
+    },
+    {
+      "bytes": 2832,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/e30a9cf7396ad1e32ff10405006e1a34d361f529c8144a9989830b4a728d1415.json",
+      "sha256": "e30a9cf7396ad1e32ff10405006e1a34d361f529c8144a9989830b4a728d1415"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 931,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2.json",
+      "sha256": "e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2"
+    },
+    {
+      "bytes": 1573,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/ef0d11e8e3dbfdce2d231639c4509e4e5de8e08cbda45a7f2ae56f1bc49d4a9b.md",
+      "sha256": "ef0d11e8e3dbfdce2d231639c4509e4e5de8e08cbda45a7f2ae56f1bc49d4a9b"
+    },
+    {
+      "bytes": 3383,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/efae6a0bd474f7b449973232b1562e38c41262521ff3bb5463122320166983f2.json",
+      "sha256": "efae6a0bd474f7b449973232b1562e38c41262521ff3bb5463122320166983f2"
+    },
+    {
+      "bytes": 2170,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/f07f751c93d25bd6119cd00373b541db050f5e60e4a4765b91b2276e3f2a5e1f.json",
+      "sha256": "f07f751c93d25bd6119cd00373b541db050f5e60e4a4765b91b2276e3f2a5e1f"
+    },
+    {
+      "bytes": 5854,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/f18f1850e3ab931af1fb6fab3a9724331a4b2efb2f3e8c8ca4481d84635d66c1.py",
+      "sha256": "f18f1850e3ab931af1fb6fab3a9724331a4b2efb2f3e8c8ca4481d84635d66c1"
+    },
+    {
+      "bytes": 2440,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/f9e2c8dee3d50722119baaf35cb16feacc69e6571445bd45599bd6a436f62a83.py",
+      "sha256": "f9e2c8dee3d50722119baaf35cb16feacc69e6571445bd45599bd6a436f62a83"
+    },
+    {
+      "bytes": 1868,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/fa00258c4da44c2efd1a1a5fc18c604687d603dc68ba4cea7750f05671591ac4.md",
+      "sha256": "fa00258c4da44c2efd1a1a5fc18c604687d603dc68ba4cea7750f05671591ac4"
+    },
+    {
+      "bytes": 1766,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/fa701f7e55fd4b27a7397ba04d4c7d6929bdee1b236c79a6dffdb568640eb1e9.json",
+      "sha256": "fa701f7e55fd4b27a7397ba04d4c7d6929bdee1b236c79a6dffdb568640eb1e9"
+    },
+    {
+      "bytes": 1370,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/fd869b5bbf35dc87640d68102e02b432a0b9121b7285f20c962f4b94c634935c.json",
+      "sha256": "fd869b5bbf35dc87640d68102e02b432a0b9121b7285f20c962f4b94c634935c"
+    },
+    {
+      "bytes": 7791,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3.json",
+      "sha256": "ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3"
+    },
+    {
+      "bytes": 91103,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/docs/BUS_MEMORY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "3debd91910196a070cf6b35f98df706e5bb0ecc9bd957ebe8b172f213635e041"
+    },
+    {
+      "bytes": 39328,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/proposal/scripts/bus_memory_recovery_2026_10_16.py",
+      "sha256": "2d97862c080638df1b4208bf4a6e88ea050e9387edff225eaee14f572587260b"
+    },
+    {
+      "bytes": 1912,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/record_metadata.py",
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/seal.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/seal.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3885,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/seal_packet.py",
+      "sha256": "9042851196ea0cb77282159d7de8021203853798ee35653fc93663a02017a719"
+    },
+    {
+      "bytes": 3885,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/seal_source_at_launch.py",
+      "sha256": "9042851196ea0cb77282159d7de8021203853798ee35653fc93663a02017a719"
+    },
+    {
+      "bytes": 16141,
+      "path": "../bus_memory_recovery_integration_proposal/source_snapshot/wrapper.md",
+      "sha256": "947ca0451efae5e9701cdd2e1b4089331e3d01f8b127fa5e5d0a4c54991be5b8"
+    },
+    {
+      "bytes": 11137,
+      "path": "../bus_memory_recovery_integration_proposal/validate_proposal.py",
+      "sha256": "9e1c63048ecec8794920612316e5a8e3e37593c170a46356169903f92ae75398"
+    },
+    {
+      "bytes": 91,
+      "path": "../bus_memory_recovery_integration_proposal/verify_bus_memory_recovery.py",
+      "sha256": "18d0fc6812eacba115a4cadab4f84bf433ba16fb31498bb4995ee94de06fb584"
+    },
+    {
+      "bytes": 20370,
+      "path": "../bus_memory_recovery_integration_proposal/write_delivery.py",
+      "sha256": "889a9770b77b0a7e5d72aa781ccc2c75ff8d289a76b4e97142db45435f32f581"
+    },
+    {
+      "bytes": 70099,
+      "path": "../bus_memory_recovery_integration_proposal/FINAL_FREEZE.json",
+      "sha256": "4f4a7c4765b01c01b25eb5dfb6408506d669d5d0da5478a5b9159972bd5209d2"
+    }
+  ],
+  "kind": "source-only integration main-ref refresh",
+  "local_file_count": 52,
+  "only_runtime_source_change": "EXPECTED_MAIN literal",
+  "original_proposal_freeze": {
+    "bytes": 70099,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_integration_proposal/FINAL_FREEZE.json",
+    "sha256": "4f4a7c4765b01c01b25eb5dfb6408506d669d5d0da5478a5b9159972bd5209d2"
+  },
+  "retained_audit": false,
+  "scientific_programs_executed": 0,
+  "source_review_sha256": "03e1053a510f8c8df4847142e201f81c58f8e71f5bb2363b96df312cbe84f2e1",
+  "utc": "2026-10-16T14:49:03.635136+00:00"
+}

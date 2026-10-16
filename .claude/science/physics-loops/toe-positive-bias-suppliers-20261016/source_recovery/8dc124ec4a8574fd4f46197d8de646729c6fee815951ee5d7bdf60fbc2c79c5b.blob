@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-10-16T01:27:46.404648+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/appendix_run/appendix_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/appendix_run",
+  "timeout_seconds": 60,
+  "sources_and_input_at_launch": [
+    {
+      "path": "appendix_check.py",
+      "bytes": 3297,
+      "sha256": "1645915aeae9419253035a28e0ba71dbcd9d1c407628e70c213c76d37e486a2f"
+    },
+    {
+      "path": "run_appendix.py",
+      "bytes": 1698,
+      "sha256": "0908f2d3b6f5f0e9a99449b47217ce39495cbcab346001fd423ce30f4fe17b2f"
+    },
+    {
+      "path": "root_probe.stdout.json",
+      "bytes": 5038,
+      "sha256": "e88c992762f2ad7e0f746d2d5d8adf0bbba5bd61690197241addae9007c32dd4"
+    }
+  ],
+  "limits": {
+    "largest_Hilbert_matrix_dimension": 4,
+    "largest_coefficient_matrix_dimension": 16
+  },
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_joint_energy_publication_review/REVIEW.json",
+    "bytes": 5845,
+    "sha256": "0b71a5ba5117ffce4792ede1dc1c36f20f61b35025a62377254d05807b61c923"
+  },
+  "verified_freeze_members": 79,
+  "metadata_mutants": 9,
+  "canonical_binding": null
+}

@@ -1,0 +1,3 @@
+# Preserved distinctions and failed substitutions
+
+A fixed-slew cap does not permit reusing accuracy-dependent sharp ramps unchanged; the new admissible pulse library is part of the proof. Inverses inside a compact endpoint closure are not negative physical waits. Selected coupling cannot become an assertion about every weak coupling. Small lambda does not imply small lambda T. A SU(d)-certified word cannot inherit the full-phase coherent comparator. An integral defect bound alone gives neither peak positivity nor delivered slew compliance. The lack of an upper resource bound here is not a no-go for other mechanisms.

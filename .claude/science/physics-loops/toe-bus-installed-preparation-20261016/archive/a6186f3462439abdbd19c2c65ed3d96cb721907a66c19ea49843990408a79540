@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-16T04:07:53.155192+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/run_001/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check",
+  "timeout_seconds": 60,
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "source_at_launch_sha256": "52643e77065591b7440040f54c325500ae9b17bf13f81b5bca4f09ee094fccbd",
+  "launcher_at_launch_sha256": "a65c63ba5430446e57ece8e37eef30e08f7fd55bc234392e01f8e1c24eb224d9",
+  "analytic_findings_sha256": "aa509ee8e5eaa2e7ffcb7130b5297842d0217ed480221105a9c98ef53eb90b7c",
+  "sources": {
+    "captured_utc": "2026-10-16T03:59:31.248034+00:00",
+    "sources": {
+      "DERIVATION.md": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+        "captured": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/DERIVATION.md",
+        "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29",
+        "bytes": 31003,
+        "lines": 279
+      },
+      "CANDIDATE_FREEZE.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/FREEZE.json",
+        "captured": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/CANDIDATE_FREEZE.json",
+        "sha256": "ff5073ee47aac64e332b47938c29774f3b4aa6ccfc8ed7b14011e29587eaeeb3",
+        "bytes": 7791,
+        "lines": 141
+      },
+      "bus_note.md": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/bus_note.md",
+        "captured": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/bus_note.md",
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+        "bytes": 83919,
+        "lines": 796
+      },
+      "compensated_reservoir.md": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/sources/compensated_reservoir.md",
+        "captured": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/compensated_reservoir.md",
+        "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8",
+        "bytes": 48637,
+        "lines": 930
+      },
+      "AGENTS.md": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+        "captured": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/AGENTS.md",
+        "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+        "bytes": 11558,
+        "lines": 183
+      },
+      "SCIENCE_WORKFLOW.md": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "captured": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/SCIENCE_WORKFLOW.md",
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+        "bytes": 15435,
+        "lines": 245
+      },
+      "workhorse_SKILL.md": {
+        "original": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+        "captured": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/sources/workhorse_SKILL.md",
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+        "bytes": 13419,
+        "lines": 239
+      }
+    }
+  }
+}

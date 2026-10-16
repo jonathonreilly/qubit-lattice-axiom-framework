@@ -1,0 +1,3 @@
+# Assumptions and imports
+
+Import exactly the pinned accuracy-scaled and protected positive-time compiler interface: complete literal H, positive ordinary-NN path J, one X/Y port, computable target and coordinate data, fixed augmented polynomial trees and coefficient witness, timing, isolation and external coefficient/control access. The primary uses a determinant lift. Fixed positive caps permit arbitrarily weak and short pulses; no minimum width/amplitude or hard bandwidth is imposed. One shared integrated defect allowance is distinct from peak positivity and delivered-cap compliance. No other candidate is a dependency; no parent polynomial bound transfers to this schedule.

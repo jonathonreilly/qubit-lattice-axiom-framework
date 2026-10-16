@@ -1,0 +1,49 @@
+{
+  "bodies": [
+    {
+      "bytes": 26987,
+      "end_byte_exclusive": 43192,
+      "label": "Five-stage author derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_candidate/DERIVATION.md",
+      "sha256": "054fa44b0c189763bc264457e7e2f91e19e94549f3f95207e903fb384181ffa3",
+      "start_byte": 16205
+    },
+    {
+      "bytes": 16791,
+      "end_byte_exclusive": 60044,
+      "label": "Five-stage exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/REVIEW.md",
+      "sha256": "d6d800113aa30dafa2031cba309babc4bed70415d61dca3d07c13aaecc2674b0",
+      "start_byte": 43253
+    },
+    {
+      "bytes": 6791,
+      "end_byte_exclusive": 66913,
+      "label": "Alternative full-inverse pre-result sketch",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/PRE_RESULT_SKETCH.md",
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340",
+      "start_byte": 60122
+    },
+    {
+      "bytes": 15321,
+      "end_byte_exclusive": 82309,
+      "label": "Alternative full-inverse exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_exposed_check/REVIEW.md",
+      "sha256": "5dc3f23e14468b73d4734846ccd78a5a8ec951e73118b7dec74e7bf4009379e4",
+      "start_byte": 66988
+    },
+    {
+      "bytes": 8726,
+      "end_byte_exclusive": 91103,
+      "label": "Controlling final qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "c3d37e42ebdfd711bb97e6633be836db408545848f9beace2296a4309b62d6ef",
+      "start_byte": 82377
+    }
+  ],
+  "note": "docs/BUS_MEMORY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "wrapper": {
+    "bytes": 16141,
+    "sha256": "947ca0451efae5e9701cdd2e1b4089331e3d01f8b127fa5e5d0a4c54991be5b8"
+  }
+}

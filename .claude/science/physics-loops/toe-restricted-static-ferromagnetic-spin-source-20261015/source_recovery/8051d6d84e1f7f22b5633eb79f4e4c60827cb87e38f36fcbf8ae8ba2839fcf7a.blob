@@ -1,0 +1,38 @@
+"""Record the exact bounded author-check source and actual process streams."""
+import datetime
+import hashlib
+import json
+import pathlib
+import shutil
+import subprocess
+import sys
+
+root=pathlib.Path(__file__).resolve().parent
+source=root/'finite_check.py'
+data=source.read_bytes()
+digest=hashlib.sha256(data).hexdigest()
+frozen=root/'finite_check.at_launch.py'
+frozen.write_bytes(data)
+cmd=[sys.executable,str(frozen)]
+start=datetime.datetime.now(datetime.timezone.utc).isoformat()
+receipt={'start_utc':start,'command':cmd,'cwd':str(root),
+         'source_sha256':digest,'source_bytes':len(data),
+         'timeout_seconds':180,'declared_max_matrix_dimension':128,
+         'declared_max_source_qubits':6,'scientific_role':'author sanity, not proof',
+         'launcher_sha256':hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest()}
+(root/'CHECK_LAUNCH.json').write_text(json.dumps(receipt,indent=2)+'\n')
+try:
+    out=subprocess.run(cmd,cwd=root,capture_output=True,timeout=180)
+    (root/'finite_check.stdout.log').write_bytes(out.stdout)
+    (root/'finite_check.stderr.log').write_bytes(out.stderr)
+    receipt['returncode']=out.returncode
+except subprocess.TimeoutExpired as exc:
+    (root/'finite_check.stdout.log').write_bytes(exc.stdout or b'')
+    (root/'finite_check.stderr.log').write_bytes(exc.stderr or b'')
+    receipt['returncode']=None
+    receipt['timeout']=True
+receipt['end_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+receipt['source_after_sha256']=hashlib.sha256(source.read_bytes()).hexdigest()
+(root/'CHECK_RESULT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt))
+raise SystemExit(0 if receipt.get('returncode')==0 else 1)

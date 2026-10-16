@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check/recompute_run_01/recompute.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_exposed_check",
+  "started_utc": "2026-10-16T00:54:28.372059+00:00",
+  "finished_utc": "2026-10-16T00:54:30.969050+00:00",
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "source_sha256": "fb8a61a0979c9413a91fd07e9d2b7345ba2d038132911df7974a2e247f12ae75",
+  "source_bytes": 10160,
+  "author_derivation_sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  }
+}

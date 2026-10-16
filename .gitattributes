@@ -42,3 +42,14 @@ archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 /.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/primary_template.py.diff -whitespace
 /.claude/science/physics-loops/toe-transverse-field-memory-20261015/packaging_diffs/wrapper.md.diff -whitespace
 /.claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d9a97fd0afd0682c358025a2e6f19e2f450f3d95c55e8b5d46a71159dc875a2d.blob -whitespace
+# Preserve the exact captured source of the completed root review.
+/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/26d778ca184624a2017232b6b618b7f713f90f31b0502f41ef7c9b7bbb429405.py -whitespace
+/.claude/science/physics-loops/toe-bus-installed-preparation-20261016/archive/1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25 -whitespace
+/.claude/science/physics-loops/toe-bus-installed-preparation-20261016/archive/4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270 -whitespace
+/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25.md -whitespace
+/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270.py -whitespace
+/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990.md -whitespace
+/.claude/science/physics-loops/toe-bus-resource-bounds-20261016/archive/b544c0e4d369977adf91620dfb19628901e24226e83bb1e7430486d6ab931d6a.md -whitespace
+/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25.md -whitespace
+/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/archive/4ea9c52686bd09f16645fe7d8e5dfffb57bfc10293ed064e93c193b18c619270.py -whitespace
+/.claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/dbaac9e365d4c4c52bf72f521f5f252b1b8d601114971af1367afbc9cd25f5e4.py -whitespace

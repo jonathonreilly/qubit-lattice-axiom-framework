@@ -1,0 +1,25 @@
+{
+  "status": "complete exposed analytical review; root acceptance pending",
+  "updated_utc": "2026-10-16T12:40:21.073807+00:00",
+  "proposal_sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990",
+  "review_sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f",
+  "conclusion": "Fixed-plant nominal-duration exponent survives evolved-memory preparation with release-only moment allowances.",
+  "exponent": "72*q^2+260*q+122",
+  "qualifications": [
+    "All fixed-plant spectral/calibration and compressed-inverse premises remain.",
+    "Retain U_E, actual scalar phases and the full correlated input/output.",
+    "Optional moment accuracy is relative to ideal release; no runtime target-moment claim from crude trace bounds.",
+    "Physical amplitude/slew needs its own pointwise certificates; arbitrary prescribed strength ceiling is not supplied.",
+    "Tighten actual phase/timing precision budgets where required; polynomial requests are not physical or oracle wall-time suppliers.",
+    "Rational-M target repair has a separate external trace budget and uniform target certificates.",
+    "Shrinking-bias uniformity, autonomous clock, memory storage, halt/reset/reuse remain outside this result."
+  ],
+  "scientific_executions": 0,
+  "metadata_capture_executions": 1,
+  "failed_metadata_executions": 0,
+  "interruption_preserved": "INTERRUPTION_RECOVERY.json",
+  "original_partial_review_sha256": "c9174369fd3d3143b570b8708d912c4c3f330871a7d97e561fa35eb1b724eaa4",
+  "editable_prompt_files_changed": [],
+  "canonical_or_git_actions": false,
+  "next_decision": "Root to inspect and accept, qualify or reject the frozen source review."
+}

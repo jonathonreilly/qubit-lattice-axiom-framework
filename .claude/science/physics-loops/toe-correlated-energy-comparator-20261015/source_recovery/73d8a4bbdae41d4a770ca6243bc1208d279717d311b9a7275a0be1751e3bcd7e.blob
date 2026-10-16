@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-16T00:48:45.635891+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3809,
+      "sha256": "4e3d3af077b3dd5df8b11c6a7955f960c670a39a2aa16e52f6a409fb09e78067"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 4048,
+      "sha256": "8ac73726ce226a725d66b9324f4d155f64781d3e8c95144db08a37164f9cba7b"
+    }
+  ],
+  "scope": "Root completed content review and metadata identity checks only."
+}

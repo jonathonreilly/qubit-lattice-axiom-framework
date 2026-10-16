@@ -1,0 +1,67 @@
+{
+  "kind": "actual_root_refresh_provenance",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/b366e2576f1ab4c53400b01a6d122c397c315d3017fe1840ccba141bcc405cea.json",
+      "bytes": 1774,
+      "sha256": "b366e2576f1ab4c53400b01a6d122c397c315d3017fe1840ccba141bcc405cea"
+    },
+    "root_binding": {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/be61ba32b1f06c5a8de8562890a091edd31561163434f88a7869b898bbe17a6d.json",
+      "bytes": 2564,
+      "sha256": "be61ba32b1f06c5a8de8562890a091edd31561163434f88a7869b898bbe17a6d"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/aa2f59bb5b55830d4a79e5253ccede43e289d6d5adfd90ae52a33a64285e0928.json",
+      "bytes": 1589,
+      "sha256": "aa2f59bb5b55830d4a79e5253ccede43e289d6d5adfd90ae52a33a64285e0928"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/b6a8463e6a8c4f36a1aca54fd981e71c05bb4f3302c2ecfcfd8f07148555467c.json",
+      "bytes": 253,
+      "sha256": "b6a8463e6a8c4f36a1aca54fd981e71c05bb4f3302c2ecfcfd8f07148555467c"
+    },
+    "inventory": {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/81ef0857a36d084bf7a6dd25b49ad01af6c88dd61678ee77db4c84a7f1da35be.blob",
+      "bytes": 22884,
+      "sha256": "81ef0857a36d084bf7a6dd25b49ad01af6c88dd61678ee77db4c84a7f1da35be"
+    },
+    "actual_refresh_receipts": [
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/821cfcff02db29906cd81c0e8821ccbdec9a1e54f970f934d57f42dad30a85e6.json",
+          "bytes": 1226,
+          "sha256": "821cfcff02db29906cd81c0e8821ccbdec9a1e54f970f934d57f42dad30a85e6"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+          "bytes": 179,
+          "sha256": "3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44"
+        }
+      },
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/c81b7ea79f1222580add42f8a646cd684c2a36511572ed704d6ccb46f0ea10b7.json",
+          "bytes": 1294,
+          "sha256": "c81b7ea79f1222580add42f8a646cd684c2a36511572ed704d6ccb46f0ea10b7"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/81ef0857a36d084bf7a6dd25b49ad01af6c88dd61678ee77db4c84a7f1da35be.blob",
+          "bytes": 22884,
+          "sha256": "81ef0857a36d084bf7a6dd25b49ad01af6c88dd61678ee77db4c84a7f1da35be"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    ]
+  },
+  "scope": "Actual Git observation and historical publication receipts. Git ancestry does not add a mathematical premise."
+}

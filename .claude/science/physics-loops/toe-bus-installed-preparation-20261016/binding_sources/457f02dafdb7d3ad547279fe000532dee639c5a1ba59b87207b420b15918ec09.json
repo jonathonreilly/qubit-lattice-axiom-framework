@@ -1,0 +1,156 @@
+{
+  "utc": "2026-10-16T13:22:33.135179+00:00",
+  "kind": "root_actual_canonical_source_review",
+  "root_read_complete": true,
+  "git_base": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "bound_note_sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823",
+  "canonical_body_pins": [
+    {
+      "bytes": 31003,
+      "end_byte_exclusive": 49369,
+      "label": "original_preparation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29",
+      "start_byte": 18366
+    },
+    {
+      "bytes": 22431,
+      "end_byte_exclusive": 71905,
+      "label": "original_exposed_review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_exposed_check/REVIEW.md",
+      "sha256": "8b3daec28d23ee89ddaa44c51e219c52978607687ea9458c6bb289fcb9068fc8",
+      "start_byte": 49474
+    },
+    {
+      "bytes": 5394,
+      "end_byte_exclusive": 77412,
+      "label": "original_root_reconstruction",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION.md",
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9",
+      "start_byte": 72018
+    },
+    {
+      "bytes": 5082,
+      "end_byte_exclusive": 82619,
+      "label": "original_controlling_qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e",
+      "start_byte": 77537
+    },
+    {
+      "bytes": 7516,
+      "end_byte_exclusive": 90245,
+      "label": "slew_proposal",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44",
+      "start_byte": 82729
+    },
+    {
+      "bytes": 17568,
+      "end_byte_exclusive": 107907,
+      "label": "slew_exposed_review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1",
+      "start_byte": 90339
+    },
+    {
+      "bytes": 6990,
+      "end_byte_exclusive": 115009,
+      "label": "slew_controlling_qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25",
+      "start_byte": 108019
+    }
+  ],
+  "parent_binding": {
+    "direct_mathematical_parents": [
+      {
+        "bytes": 83919,
+        "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+        "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+        "source_use": "Qualified complete bus runtime with exact-target/support and rational-target repair qualifications"
+      }
+    ],
+    "excluded": "No resource-composition, shrinking-bias or positive-bias preparation theorem imported.",
+    "git_ancestry_is_not_dependency_rule": true,
+    "internal_composition": "Slew preparation uses the original preparation argument embedded in this same note."
+  },
+  "source_draft_freeze_sha256": "ed576446fcbf5f0aae92054730165082e2c68567b09baaf389d36b49f6d87278",
+  "source_draft_review_sha256": "2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_installed_preparation_2026_10_16.py",
+    "bytes": 55853,
+    "sha256": "32d0163f77f6c14b245222d9310ef096a7821a4faabc4b32b15bc6eeb8efc6fb"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/bus_preparation_common.py",
+    "bytes": 51748,
+    "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+  },
+  "integration_source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_preparation_integration_review/REVIEW.json",
+    "bytes": 5133,
+    "sha256": "42fa615b1b34c839bd1f995ce71080e48bd51a8b797c381a15df63915e38ece6"
+  },
+  "reviewed_diff": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/CANONICALIZATION.diff",
+    "bytes": 478494,
+    "sha256": "5508a489af44fbf01852719254cace6762ea2a661e99491f4eb627609480963e"
+  },
+  "review_basis": "Reviewed all new wrapper and implementation text, actual binding/refresh metadata and actual preparation receipts. Reused prior complete body/source reviews by exact identities. Generated literal tables and copied evidence were checked deterministically in full; truncated raw-diff display was not treated as verification.",
+  "actual_installed_files_checked": 122,
+  "primary_logic_delta_from_reviewed_unbound": 0,
+  "actual_next_step": "Bind this real review and run scoped provenance/cache checks; staged review still required before regular PR.",
+  "limitations": "No new scientific executions, physical supplier, model independence or retained-audit verdict. Literal-Q and U_E contracts remain distinct. Resource and memory-recovery work excluded.",
+  "retained_audit": false,
+  "editable_prompt_files_changed": [],
+  "previous_recording_failure": {
+    "reason": "Original review output name already held the install-phase diff acknowledgement; all checks ran, but exclusive creation stopped before a review write.",
+    "execution": {
+      "argv": [
+        "python3",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_preparation_canonical_review.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+      "start_utc": "2026-10-16T13:22:00.943446+00:00",
+      "end_utc": "2026-10-16T13:22:01.176624+00:00",
+      "elapsed_seconds": 0.2326077502220869,
+      "exit_code": 1,
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_canonical_review/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_canonical_review/stderr",
+        "bytes": 607,
+        "sha256": "cedb2073493103c68080f6a682bc1d4e53f49ec8aba2ac1cfdb4bf9ea97ce1b6"
+      },
+      "child_source_at_launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_preparation_canonical_review.py",
+        "bytes": 4421,
+        "sha256": "e511ead8bcea1bfdbee63a08f46ad95ca4b30d0f3fcbed852042917f0d321185"
+      },
+      "source_capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_canonical_review/executed_source.py",
+        "bytes": 4421,
+        "sha256": "e511ead8bcea1bfdbee63a08f46ad95ca4b30d0f3fcbed852042917f0d321185"
+      },
+      "recorder": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+        "bytes": 1536,
+        "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+      }
+    },
+    "execution_pin": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bus_preparation_canonical_review/EXECUTION.json",
+      "bytes": 1762,
+      "sha256": "d6a0fd02832f830e1ad303c8b76d70b314c9a8943dacf19d9f4136659d442e0f"
+    },
+    "source": "\"\"\"Record root's completed review of actual installed canonical preparation sources.\"\"\"\nfrom pathlib import Path\nfrom datetime import datetime, timezone\nimport ast, hashlib, json, subprocess\nN=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023')\nD=N/'publication_integration/bus_preparation'; P=N/'bus_preparation_integration_proposal'; W=N.parent/'correlation_worktree'\nK='.claude/science/physics-loops/toe-bus-installed-preparation-20261016'\nNOTE='docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md'\nHELPER='scripts/bus_installed_preparation_2026_10_16.py'\ndef read(p):return json.loads(p.read_text())\ndef pin(p):\n b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())\ndef same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)\ndef write(p,d):assert not p.exists();p.write_text(json.dumps(d,indent=2)+'\\n')\npre=read(D/'PREPARED.json');assert read(D/'actions/install/EXECUTION.json')['exit_code']==0\nfor name,row in pre['canonical_files'].items():same(W/name,row)\nassert subprocess.check_output(['git','rev-parse','HEAD'],cwd=W).decode().strip()=='142cbd74aa146848b246795f8bf7007f3e38976d'\nassert subprocess.check_output(['git','branch','--show-current'],cwd=W).decode().strip()=='physics-loop/toe-bus-preparation-20261016'\nassert (W/NOTE).read_bytes()==(P/'PROPOSED_NOTE.md').read_bytes()\nmapping=read(W/K/'BODY_MAP.json');assert mapping==read(P/'PROPOSED_BODY_MAP.json')\nassert read(W/K/'PARENT_BINDING.json')==read(P/'PARENT_BINDING.json')\na=ast.parse((P/'proposed_primary_unbound.py').read_bytes());b=ast.parse((W/HELPER).read_bytes());assert len(a.body)==len(b.body)\nchanged={}\nfor x,y in zip(a.body,b.body):\n if ast.dump(x)!=ast.dump(y):\n  assert isinstance(x,ast.Assign) and isinstance(y,ast.Assign) and ast.dump(x.targets[0])==ast.dump(y.targets[0])\n  changed[x.targets[0].id]=ast.literal_eval(y.value)\nassert set(changed)=={'MANIFEST_SHA256','AUDIT_INPUT_PATHS'}\nmanifest=read(W/K/'INPUT_MANIFEST.json')\nassert changed['MANIFEST_SHA256']==pin(W/K/'INPUT_MANIFEST.json')['sha256']\nassert set(changed['AUDIT_INPUT_PATHS'])=={r['path'] for r in manifest['inputs']}|{K+'/INPUT_MANIFEST.json'}\nfor row in manifest['inputs']:same(W/row['path'],row)\nsource=P/'source_snapshot/proposal'\nfor path in source.rglob('*'):\n if path.is_file() and str(path.relative_to(source)) not in {NOTE,HELPER,K+'/BODY_MAP.json'}:\n  assert (W/path.relative_to(source)).read_bytes()==path.read_bytes()\nfor path in (W/K/'binding_sources').iterdir():assert pin(path)['sha256']==path.stem\nactual=read(W/K/'ACTUAL_BINDING.json')\nassert actual['root_read_complete'] is False and actual['canonical_review_evidence'] is None\nassert actual['parent_binding']==read(P/'PARENT_BINDING.json')\nreview=dict(utc=datetime.now(timezone.utc).isoformat(),kind='root_actual_canonical_source_review',root_read_complete=True,\n git_base=pre['base_head'],bound_note_sha256=pin(W/NOTE)['sha256'],canonical_body_pins=mapping['bodies'],\n parent_binding=read(W/K/'PARENT_BINDING.json'),source_draft_freeze_sha256='ed576446fcbf5f0aae92054730165082e2c68567b09baaf389d36b49f6d87278',\n source_draft_review_sha256='2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990',\n prebinding_primary=pin(W/HELPER),integration_common=pin(P/'bus_preparation_common.py'),\n integration_source_review=pin(N/'root_bus_preparation_integration_review/REVIEW.json'),reviewed_diff=pin(D/'CANONICALIZATION.diff'),\n review_basis='Reviewed all new wrapper and implementation text, actual binding/refresh metadata and actual preparation receipts. Reused prior complete body/source reviews by exact identities. Generated literal tables and copied evidence were checked deterministically in full; truncated raw-diff display was not treated as verification.',\n actual_installed_files_checked=len(pre['canonical_files']),primary_logic_delta_from_reviewed_unbound=0,\n actual_next_step='Bind this real review and run scoped provenance/cache checks; staged review still required before regular PR.',\n limitations='No new scientific executions, physical supplier, model independence or retained-audit verdict. Literal-Q and U_E contracts remain distinct. Resource and memory-recovery work excluded.',\n retained_audit=False,editable_prompt_files_changed=[])\nwrite(D/'ROOT_CANONICAL_REVIEW.json',review)\nprint(json.dumps({'review':pin(D/'ROOT_CANONICAL_REVIEW.json')},indent=2))\n",
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_preparation_canonical_review.py\", line 52, in <module>\n    write(D/'ROOT_CANONICAL_REVIEW.json',review)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_preparation_canonical_review.py\", line 14, in write\n    def write(p,d):assert not p.exists();p.write_text(json.dumps(d,indent=2)+'\\n')\n                          ^^^^^^^^^^^^^^\nAssertionError\n",
+    "preservation": "Original action acknowledgement, failed script and complete failed receipt streams are unchanged; this corrected source writes a distinct name."
+  }
+}

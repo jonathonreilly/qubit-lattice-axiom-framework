@@ -1,0 +1,19 @@
+# Current checkpoint
+
+Assigned continuation: transfer the provisional strongly regular bus construction back to the original literal-H actual-time target after adding a supplied admissible old bias C. Only this directory is writable; previous freezes remain unchanged. Same inherited model/effort, no agents or other-chat actions.
+
+Author source is complete and cold-read. Final provenance/status is controlled by FREEZE.json. This is exposed, conditional and unaccepted; the routed-bus parent remains pending independent review.
+
+Main outcomes in DERIVATION.md:
+
+- An unchanged nonscalar bias admits endpoint correction but generally leaves a nonvanishing positive-window defect. The explicit one-qubit positive-bias example has trace error two at the window end, and a minimax lower bound one even if the endpoint is compromised. This is a route obstruction, not a universal impossibility claim.
+- Uniform cone weights, a common full-spectrum/routing gap, an explicit positive Green-response lower bound, source/counterterm load bounds and conservative corrector constants work for the entire Hermitian ball ||M||<=4. Therefore xi/T can be fixed before the time-dependent target is formed.
+- A terminating search over rational Hermitian M with ||M||<4 approximates exp(iH_lambda T)Wexp(-iHT) after T is known, with its own paid error. Rational support makes source phases decidable and avoids an arbitrary-computable-zero oracle.
+- If scaling the added C blocks is admissible, a new Krylov-Gram polynomial p(lambda) proves that one supplied strong point H+C yields strongly regular H+lambda C at arbitrarily small positive rational lambda. Its degree bound is d(d-1)[d(d-1)+1]; a D+1-node strict search terminates. This does not derive the supplied C from generic Lie controllability.
+- Choosing lambda w||C-c_C I||<=epsilon/16, then uniform bus constants, xi/T and the approximate logarithm gives the complete original-H finite-window comparison, with all outputs/reserves and cap J_C+R_s+7M_E+2/t_*. No lambda T smallness or polynomial runtime is assumed.
+
+Failed shortcuts preserved: treating the interaction-frame U_T as the bus gate G_T; endpoint correction alone with unchanged full C; selecting T from target-dependent constants before the target is known; and using exact support/branch tests on arbitrary computable logarithms. The new attenuation option is explicitly unavailable when C must remain at coefficient one.
+
+Evidence: 14 bounded author checks, matrices at most 2x2, all completed; exact rational p(lambda)=4lambda^6 examples, noncommuting window bounds, endpoint ordering, and the positive-bias counterexample. Executable-at-launch, command, limits and complete streams are preserved. They do not verify the general polynomial lemma, full uniformization, log-search algorithm or entire bus family. No independent new check is claimed.
+
+Remaining obligations: independent review of this source and its provisional bus dependency; existence of an admissible strong old-bias direction in the original generic domain; native preparation/calibration/isolation/timing suppliers; or a proved switch/compensator when attenuation is forbidden. No canonical science, Git/PR, prompt, axiom, lock or previous-freeze changes were made.

@@ -1,0 +1,41 @@
+"""Capture actual source, command, cwd, complete streams and process result."""
+from pathlib import Path
+import datetime, hashlib, json, subprocess, sys, time
+
+root = Path(__file__).resolve().parent
+run = root / 'exact_check' / 'run_01'
+run.mkdir(exist_ok=False)
+source = root / 'check_joint_moments.py'
+source_bytes = source.read_bytes()
+launch = run / 'check_joint_moments.at_launch.py'
+launch.write_bytes(source_bytes)
+launcher_bytes = Path(__file__).read_bytes()
+(run / 'launcher.at_launch.py').write_bytes(launcher_bytes)
+source_manifest = (root / 'SOURCE_MANIFEST.json').read_bytes()
+(run / 'SOURCE_MANIFEST.at_launch.json').write_bytes(source_manifest)
+digest = lambda data: hashlib.sha256(data).hexdigest()
+argv = [sys.executable, '-B', str(launch)]
+record = {'argv': argv, 'cwd': str(run), 'original_source': str(source),
+          'source_at_launch': str(launch), 'source_sha256': digest(source_bytes),
+          'launcher_argv': [sys.executable] + sys.argv,
+          'launcher_source_sha256': digest(launcher_bytes),
+          'source_manifest_sha256': digest(source_manifest),
+          'started_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          'stdout_path': str(run / 'stdout.json'), 'stderr_path': str(run / 'stderr.txt'),
+          'timeout_seconds': 120}
+(run / 'LAUNCH.json').write_text(json.dumps(record, indent=2) + '\n')
+started = time.monotonic()
+with (run / 'stdout.json').open('wb') as stdout, (run / 'stderr.txt').open('wb') as stderr:
+    try:
+        process = subprocess.run(argv, cwd=run, stdout=stdout, stderr=stderr, timeout=120)
+        record['exit_code'] = process.returncode
+    except subprocess.TimeoutExpired:
+        record['exit_code'] = None
+        record['timed_out'] = True
+record['finished_utc'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+record['elapsed_seconds'] = time.monotonic() - started
+record['stdout_sha256'] = digest((run / 'stdout.json').read_bytes())
+record['stderr_sha256'] = digest((run / 'stderr.txt').read_bytes())
+(run / 'EXECUTION.json').write_text(json.dumps(record, indent=2) + '\n')
+print(json.dumps(record, indent=2))
+sys.exit(record['exit_code'] if record['exit_code'] is not None else 124)

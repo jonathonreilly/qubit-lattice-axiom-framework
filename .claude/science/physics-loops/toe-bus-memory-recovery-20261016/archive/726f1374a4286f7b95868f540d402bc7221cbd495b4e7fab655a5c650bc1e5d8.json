@@ -1,0 +1,39 @@
+{
+  "captured_utc": "2026-10-16T13:11:54.286307+00:00",
+  "kind": "metadata-only source capture",
+  "scientific_executions": 0,
+  "sources": [
+    {
+      "key": "root_sketch",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_proposal/PRE_RESULT_SKETCH.md",
+      "capture": "sources/root_sketch.md",
+      "bytes": 6791,
+      "sha256": "43fc957f7c1937091d8755365eb4da550fc171cc02083f0c74d034901a9c3340",
+      "coverage": "Complete current read; unaccepted exposed root sketch."
+    },
+    {
+      "key": "slew_qualifications",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "sources/slew_qualifications.md",
+      "bytes": 6990,
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25",
+      "coverage": "Complete current read; accepted endpoint, error, caps and memory contract."
+    },
+    {
+      "key": "preparation_qualifications",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "sources/preparation_qualifications.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e",
+      "coverage": "Complete current read; inherited physical premises and complete-output contract."
+    },
+    {
+      "key": "preparation_derivation",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/DERIVATION.md",
+      "capture": "sources/preparation_derivation.md",
+      "bytes": 31003,
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29",
+      "coverage": "Complete prior same-revision read reused; current lines1-83 and155-166 refreshed for complement, full SWAP, positive rotation and scalar definitions. Other historical sources were not opened."
+    }
+  ]
+}

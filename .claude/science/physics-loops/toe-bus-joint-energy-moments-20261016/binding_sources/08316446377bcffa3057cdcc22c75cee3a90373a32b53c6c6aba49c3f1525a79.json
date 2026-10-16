@@ -1,0 +1,23 @@
+{
+  "offset_unit": "UTF-8 bytes, zero-based half-open",
+  "bodies": [
+    {
+      "name": "root_proposal",
+      "source": "bus_joint_energy_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 8544,
+      "end_byte_exclusive": 16415,
+      "bytes": 7871,
+      "sha256": "86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1"
+    },
+    {
+      "name": "exposed_review",
+      "source": "bus_joint_energy_independent_check/REVIEW.md",
+      "container": "docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 16463,
+      "end_byte_exclusive": 35863,
+      "bytes": 19400,
+      "sha256": "498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1"
+    }
+  ]
+}

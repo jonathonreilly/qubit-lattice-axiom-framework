@@ -1,0 +1,148 @@
+"""Exact bounded bookkeeping check; not a large-controller simulation.
+
+Risk checked: signs/order in the finite projection/direct-rotation recurrence,
+its formal decoupling degree, and preservation of the bare fast component.
+All arithmetic below is over Gaussian rationals. No floating tolerances.
+"""
+
+import hashlib
+import json
+import platform
+import sympy as sp
+
+N = 14
+dim = 4
+Z = sp.zeros(dim)
+I = sp.eye(dim)
+P = sp.diag(1, 1, 0, 0)
+Q = I - P
+S = P - Q
+L = sp.diag(0, 0, 1, 2)
+R = sp.diag(0, 0, 1, sp.Rational(1, 2))
+V = sp.Matrix([
+    [0, 0, 1, sp.Rational(1, 3)],
+    [0, 0, sp.I / 2, sp.Rational(2, 3)],
+    [1, -sp.I / 2, 0, sp.Rational(1, 4)],
+    [sp.Rational(1, 3), sp.Rational(2, 3), sp.Rational(1, 4), 0],
+])
+A = sp.Matrix([
+    [2, sp.I / 3, 0, 0],
+    [-sp.I / 3, 1, 0, 0],
+    [0, 0, 3, sp.Rational(1, 5)],
+    [0, 0, sp.Rational(1, 5), 4],
+])
+J = sp.Matrix([[1, 0], [0, 1], [0, 0], [0, 0]])
+
+
+def clean(x):
+    return x.applyfunc(sp.expand)
+
+
+def comm(x, y):
+    return clean(x * y - y * x)
+
+
+def zero(x):
+    return all(sp.expand(y) == 0 for y in x)
+
+
+def add(x, y):
+    return [clean(a + b) for a, b in zip(x, y)]
+
+
+def mul(x, y):
+    out = []
+    for degree in range(N + 1):
+        total = sp.zeros(dim)
+        for j in range(degree + 1):
+            total += x[j] * y[degree - j]
+        out.append(clean(total))
+    return out
+
+
+def coefficient_hash(values):
+    data = json.dumps([[str(x) for x in mat] for mat in values],
+                      separators=(",", ":"))
+    return hashlib.sha256(data.encode()).hexdigest()
+
+
+assert zero(V - V.H) and zero(A - A.H)
+assert zero(P * V * P) and zero(comm(A, P))
+assert not zero(comm(A, V))
+assert not zero(Q * V * Q)
+assert zero(L * R - Q)
+
+pc = [P]
+for degree in range(1, N + 1):
+    sj = sp.zeros(dim)
+    for j in range(1, degree):
+        sj += pc[j] * pc[degree - j]
+    cj = comm(V, pc[degree - 1])
+    if degree >= 2:
+        cj += comm(A, pc[degree - 2])
+    pj = clean(-P * sj * P + Q * sj * Q + P * cj * R - R * cj * P)
+    assert zero(pj - pj.H), degree
+    pc.append(pj)
+
+id_poly = [I] + [sp.zeros(dim) for _ in range(N)]
+h_poly = [L, V, A] + [sp.zeros(dim) for _ in range(N - 2)]
+projector_square = mul(pc, pc)
+projector_comm = add(mul(h_poly, pc), [-x for x in mul(pc, h_poly)])
+for degree in range(N + 1):
+    assert zero(projector_square[degree] - pc[degree]), degree
+    assert zero(projector_comm[degree]), degree
+
+ec = [sp.zeros(dim)] + pc[1:]
+e2 = mul(ec, ec)
+power = id_poly
+inv_sqrt = [sp.zeros(dim) for _ in range(N + 1)]
+for k in range(N // 2 + 1):
+    coeff = sp.binomial(2 * k, k) / sp.Integer(4) ** k
+    inv_sqrt = add(inv_sqrt, [coeff * x for x in power])
+    power = mul(power, e2)
+c_poly = [I] + [x * S for x in pc[1:]]
+uc = mul(c_poly, inv_sqrt)
+ud = [x.H for x in uc]
+
+unitarity = mul(ud, uc)
+rotated_projector = mul(mul(uc, [P] + [sp.zeros(dim) for _ in range(N)]), ud)
+rotated_h = mul(mul(ud, h_poly), uc)
+for degree in range(N + 1):
+    assert zero(unitarity[degree] - id_poly[degree]), degree
+    assert zero(rotated_projector[degree] - pc[degree]), degree
+    assert zero(P * rotated_h[degree] * Q + Q * rotated_h[degree] * P), degree
+
+expected_u1 = P * V * R - R * V * P
+expected_slow2 = P * A * P - P * V * R * V * P
+assert zero(uc[1] - expected_u1)
+assert zero(P * rotated_h[0] * P)
+assert zero(P * rotated_h[1] * P)
+assert zero(P * rotated_h[2] * P - expected_slow2)
+assert zero(Q * ud[1] * J - R * V * J)
+assert not zero(R * V * J)
+
+result = {
+    "python": platform.python_version(),
+    "sympy": sp.__version__,
+    "arithmetic": "exact Gaussian rational matrices; no numerical rank/tolerance",
+    "dimension": dim,
+    "slow_rank": 2,
+    "degree_checked_inclusive": N,
+    "formal_identities_checked": [
+        "P(z)^2=P(z) through degree 14",
+        "[L+zV+z^2A,P(z)]=0 through degree 14",
+        "each projection coefficient Hermitian",
+        "U(z)^*U(z)=I through degree 14",
+        "U(z)P U(z)^*=P(z) through degree 14",
+        "Off(U(z)^*H(z)U(z))=0 through degree 14",
+        "low coefficient z^2 is PAP-PVRVP",
+        "fast initial coefficient z is RVJ and nonzero",
+    ],
+    "P_coefficients_sha256": coefficient_hash(pc),
+    "U_coefficients_sha256": coefficient_hash(uc),
+    "U1": [[str(x) for x in uc[1].row(i)] for i in range(dim)],
+    "slow_order_2": [[str(x) for x in expected_slow2.row(i)] for i in range(dim)],
+    "fast_initial_order_1": [[str(x) for x in (R * V * J).row(i)] for i in range(dim)],
+    "limits": "One exact algebraic fixture. No full mediator simulation, finite-precision polar normalization, compiler search, or independent proof of the analytic remainder.",
+}
+print(json.dumps(result, indent=2))

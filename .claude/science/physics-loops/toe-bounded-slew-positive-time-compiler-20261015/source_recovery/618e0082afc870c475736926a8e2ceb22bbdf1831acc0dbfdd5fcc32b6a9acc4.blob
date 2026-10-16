@@ -1,0 +1,43 @@
+# Exact source and exposure coverage
+
+Task: independently answer the bounded-slew positive-time external-compiler question in the parent dispatch. Only this assigned directory is writable. The worker has not inspected any new derivation in `bounded_slew_root_candidate`, `bounded_strength_runtime_candidate`, or `runtime_energy_comparator_check`; those names occur only as exclusion boundaries from the dispatch.
+
+Source checkout: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree`.
+Read-only observed HEAD: `9ca474a32b3a4799d2d14cfee7580d77750422b4`.
+Source capture: `2026-10-15T23:39:42.694843+00:00`.
+The complete captured bytes and hashes are in `source_at_launch/` and `SOURCE_MANIFEST.json`. No Git fetch, checkout, ref update or other mutation was run. Local `origin/ai/execution` was read by `git show`, at `3a4b2c66a1ead7a1c48b4359627e968f681e3c39`. Its network freshness was not independently refreshed, because this dispatch permits no Git mutations and identifies the scientific source revision explicitly.
+
+## Scientific source identities and full argument coverage
+
+| Source | Exact SHA256 | Content read and used |
+|---|---|---|
+| `docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md` | `c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2` | Complete current wrapper, lines 1-216, including all physical premises, fixed computable polynomial certificate, finite interpolation grid and strict selection margin, actual-aging/window comparator, scalar/reserve/calibration contracts and status limits. The complete note is captured, 66,336 bytes, 701 lines. |
+| `docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md` | `db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a` | Complete current wrapper, lines 1-174. Complete appended protected proof body, lines 367-713, including its input/certificate, target search, commutator, recurrence, smoothing, timing, resource and physical-ledger arguments. Appended comparison lines 826-913, containing its complete smoothing/phase, chronology/composition, resource/calibration and qualification sections. The complete note is captured, 97,212 bytes, 913 lines. |
+
+The wrapper is the current publication interpretation. The immutable appended bodies retain historical status language and must not be read as current dispositions. The accuracy note's appended original construction starts at line 222, its sharpening at 374, and its source-exposed assessment at 389. Their full content was not needed or imported for this new qualitative route: the wrapper states the complete polynomial premise, and DERIVATION.md independently proves the finite-grid selection inequality from that premise. The first few historical lines appearing in a read extending to line 240 were incidental exposure, not an additional imported result.
+
+The conditioned note's root body starts at line 179, protected body at line 367 and comparison at line 718. The root body and the comparison's earlier sections were not imported or fully reviewed in this task. The complete protected proof was read to check the parent normalization, actual augmented coordinate, scalar restoration and physical contract; its polynomial resource construction is not asserted for the new schedule. The selected comparison sections were read in full for the chronological and calibration qualifications they impose. No wrapper status or source-acceptance hash was treated as proof of mathematics.
+
+The sole scientific dependency used as a supplied premise is the identified fixed complete plant and augmented polynomial certificate/interface. DERIVATION.md rederives the required coupling selection, qualitative reachable closure, countable constructive search, actual-time reconstruction and error bound. It does not import the parent's autonomous controller, a native state supplier, a hard-bandwidth result or an additional physical primitive. The source note's older compiler dependencies were not independently recertified here; their physical interface is an explicit supplied premise of this task.
+
+## Applicable instruction coverage
+
+The full user-provided local collaboration instructions and the neutral parent dispatch were read. The following local instruction snapshots were read completely and captured:
+
+| Source | SHA256 |
+|---|---|
+| `AGENTS.md` | `f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f` |
+| `origin/ai/execution:AGENTS.md` | `3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9` |
+| `docs/ai_methodology/SCIENCE_WORKFLOW.md` | `05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce` |
+| `docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` | `b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0` |
+| `docs/ai_methodology/skills/workhorse/SKILL.md` | `9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb` |
+
+The installed `/Users/jonreilly/.codex/skills/workhorse/SKILL.md` was read in full and then its byte identity with the captured repository skill was verified. The workhorse skill is applied to a scoped proof worker, not as an audit or landing workflow. The dispatch's inherited model and effort were preserved; no model override or child agent was used. Broad campaign-selection and queue-management instructions belong to the supervisor and were not invoked by this bounded worker. No editable prompt file changed; no platform-supplied instruction was changed.
+
+## New proof and scoped computation
+
+`DERIVATION.md` is the original new proof. `check_symbolic_identities.py` verifies only exact bump-polynomial identities, a truncated noncommuting commutator expansion, elementary error-budget fractions, parent-source hash checks and explicitly labelled deliberate-defect detections. Its outcome must not be generalized into a proof of reachability or a physical compiler run. The actual invocation, source at launch, stdout, stderr, timing and exit status are recorded under `checks/` after execution. No scientific check or outcome is inferred before its recorded invocation.
+
+The central new reasoning is analytic: compact-semigroup inversion on the full augmented group; extraction of port directions from weak smooth bumps through an interaction-picture Duhamel bound; Lie product/commutator limits; and fair enumeration with a fixed strict certified acceptance margin. The parent question and exact parent machinery are shared context. The new derivation is protected from other current solutions, not from the selected model, supplied prior mathematics or framing of the question. No external literature search, empirical data, fitted constant, numerical propagator simulation, physical realization or formal proof assistant was used.
+
+Before comparison exposure, the original derivation, coverage, check source, captured instruction/scientific inputs and actual receipts are frozen by `ORIGINAL_FREEZE.json`. This is source integrity and recovery evidence only. Any later comparison must be a separate file and must not rewrite this original result.

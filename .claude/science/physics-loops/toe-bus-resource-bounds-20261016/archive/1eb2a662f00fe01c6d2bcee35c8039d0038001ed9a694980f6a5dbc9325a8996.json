@@ -1,0 +1,121 @@
+{
+  "frozen_utc": "2026-10-16T04:29:55.489729+00:00",
+  "status": "Exposed conditional source proposal; root review pending.",
+  "science_execution_count": 0,
+  "scope": "Fixed strong old plant and fixed routed graph; common incident cap; polynomial nominal autonomous runtime and precision requests only.",
+  "qualifications": [
+    "Restricted reached-source inverse mandatory; no full-source inverse asserted.",
+    "Full V/A2/residual norms retained; perturbed evolution need not preserve envelope.",
+    "Shrinking-bias uniform constant package remains open.",
+    "No arbitrary computable-oracle wall-clock bound or native physical supplier.",
+    "Same-model exposed continuation, earlier bus author; no fresh independent parent validation."
+  ],
+  "source_manifest_sha256": "03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1",
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1720,
+      "sha256": "762e8b0423570ca12445a0152f08f607515dc35e2d24a3d7f67e7074a1820c2b"
+    },
+    {
+      "path": "CHECK_EVIDENCE.md",
+      "bytes": 1349,
+      "sha256": "a33e1d166127806e7da387454a9c9ce780e70f839fe2237f0a7de4b8121351ae"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 36324,
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 1449,
+      "sha256": "30cbf0d3d83a79145929aec75657b340e3849f51c9324ffaba0351a189202a94"
+    },
+    {
+      "path": "LEDGER.md",
+      "bytes": 3280,
+      "sha256": "f07c6d1069c8feed48c5859968bb1b05a19c13e44e3d66d9db393b18c97d5ab0"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 7456,
+      "sha256": "03049ef8ad6f0945f29fcffb4e97c348818abe8656399c25155a6aa5dd1f1de1"
+    },
+    {
+      "path": "sources/01_reachable_bus_corrector_root_proposal_PROPOSED_LEMMAS.md",
+      "bytes": 8361,
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97"
+    },
+    {
+      "path": "sources/02_reachable_bus_corrector_root_proposal_FREEZE.json",
+      "bytes": 410,
+      "sha256": "f6255052597046f571231cb7cb31ebd16599ebf1c831bfc144a9602a88ec2c95"
+    },
+    {
+      "path": "sources/03_reachable_bus_corrector_exposed_check_REVIEW.md",
+      "bytes": 21520,
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031"
+    },
+    {
+      "path": "sources/04_reachable_bus_corrector_exposed_check_FREEZE.json",
+      "bytes": 6317,
+      "sha256": "de219af2c75464ce0bfb009ff7d45a85d90b7385c828e1036a35885556ed531e"
+    },
+    {
+      "path": "sources/05_reachable_bus_corrector_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2594,
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    },
+    {
+      "path": "sources/06_reachable_bus_corrector_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 4734,
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "path": "sources/07_docs_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "path": "sources/08_strongly_regular_bus_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "path": "sources/09_strongly_regular_bus_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "path": "sources/10_quantitative_bias_selection_root_review_QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3894,
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+    },
+    {
+      "path": "sources/11_quantitative_bias_selection_root_review_FINAL_QUALIFICATIONS.md",
+      "bytes": 3826,
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+    },
+    {
+      "path": "sources/12_planning_AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": "sources/13_ai_methodology_SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "sources/14_workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": "sources/15_physics-claim-reviewer_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ]
+}

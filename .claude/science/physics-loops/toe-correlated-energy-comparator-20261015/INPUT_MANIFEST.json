@@ -1,0 +1,406 @@
+{
+  "schema": "source_integrity_inputs_v1",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ACTUAL_BINDING.json",
+      "bytes": 22183,
+      "sha256": "ae8cf243705302835f32f371e0cfae2d1267e442560df8e97fd9d04b79eb19a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ACTUAL_HANDOFF.md",
+      "bytes": 737,
+      "sha256": "c0b2539a5b268240e0e66206c151fa858a49b823f57986da2163a711559e62e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ACTUAL_REFRESH_PROVENANCE.json",
+      "bytes": 3733,
+      "sha256": "945b4722cb83e4ac1875cd034d98288f93123b9b753bb5d7c8e7018a189c438e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ARCHIVE_INDEX.json",
+      "bytes": 15705,
+      "sha256": "b7a3442e9d62c633e70f202da5bcd2aced1f7a73073ab171e68ca8cc8fabb4c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 762,
+      "sha256": "87a5e6940d772d6ae6e058122da3bace99ace2fd007e76838a9ba72d97e5f610"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/BINDING_CONTRACT.md",
+      "bytes": 4186,
+      "sha256": "0b24b470feba9d9aea8c29414979b8ab54be3a42b0c828384e603bf02c14f249"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/BODY_MAP.json",
+      "bytes": 1068,
+      "sha256": "2efa9c4750b2c5a784e1aecb935e2294f30a786f6124e2e70c524d4ea48ae17b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/CANONICAL_BINDING.json",
+      "bytes": 4258,
+      "sha256": "496663334be58b645e843924a677720c3219a001c10879ef540d7294b9684f47"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/CHECK_RECEIPTS.json",
+      "bytes": 8366,
+      "sha256": "50923cd291cfef8647ac2adf7496674a8e169959e2d837e15eb617329eb5fe2f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 720,
+      "sha256": "6dd759ca29b3e210e286be6b0accfc7784f254835dcdb21d201ef737f76c0467"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/COUNTEREXAMPLES.md",
+      "bytes": 825,
+      "sha256": "21b5ad8ddbdc7efc25a4a3cd041fcffb0df5d9de0110449713f153eaeaf65800"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/DEPENDENCIES.json",
+      "bytes": 8439,
+      "sha256": "6179c044533629808e1da7dde368b4e383203ab118f657e31bd9d9ff212535af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/HANDOFF.md",
+      "bytes": 687,
+      "sha256": "0a26acd27aa719df6a5e0a6cbe03a73aef949541b50e9d32e18525903d74a84b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PARENT_BINDING.json",
+      "bytes": 8802,
+      "sha256": "087534d44026519e14b268f3f03f3d9c7e6293635c65a3fd41f15b5374606100"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PR_BODY.md",
+      "bytes": 921,
+      "sha256": "3d3a041d906f35a9abc7aef35a9923ad06fe99cec7ec916b3791f23115c0514b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PR_TITLE.txt",
+      "bytes": 83,
+      "sha256": "64779f5793772fd13d6f23688a55da61fb21dd2f7ceaf44b871c923e5a1803fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PUBLICATION_STATE.json",
+      "bytes": 491,
+      "sha256": "98bdbeef104b00b4d05c323b72a1edecd4d2135326cf7c1d2b6ec6fbcf6bc340"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/RECOVERY_SCOPE.md",
+      "bytes": 739,
+      "sha256": "a537d8a035afe62802a5cf1020228747104de7ca50feb38128149755b2b8aab0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/RECOVERY_SELECTION.json",
+      "bytes": 14741,
+      "sha256": "91ec67bdf67700ac39dabc6b18920d3378e011d15abbb977208173ea61c8a2b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/REVIEW_HISTORY.md",
+      "bytes": 667,
+      "sha256": "a2c3cc959427e80282acc1f6c7ee3eb20230b57f82c49d66af4f807f2757b7a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/SOURCE_MANIFEST.json",
+      "bytes": 32479,
+      "sha256": "d0fb1929de107397f5856415f368443662ba057dd1386c37b22cb1c076ee6c08"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/TRACE_GATE.md",
+      "bytes": 694,
+      "sha256": "02b4c964e21819792b2880918e2e32814089005e9012723244c01d4d9081b09d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/02f27eb84a6f45bc7c7d0f4e13c26da0fb9c8a7e6c246ec976da68adf5ae169e.blob",
+      "bytes": 41,
+      "sha256": "02f27eb84a6f45bc7c7d0f4e13c26da0fb9c8a7e6c246ec976da68adf5ae169e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/0477441716582a22a5ab76a517610fecda6b545e005ad7f3cdfebf75ee9c43cf.py",
+      "bytes": 3017,
+      "sha256": "0477441716582a22a5ab76a517610fecda6b545e005ad7f3cdfebf75ee9c43cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/12817c7b77114788460ae71c987eeaee8f47dc08b32d40c7eb1c599defb8521a.json",
+      "bytes": 1465,
+      "sha256": "12817c7b77114788460ae71c987eeaee8f47dc08b32d40c7eb1c599defb8521a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+      "bytes": 179,
+      "sha256": "3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/46b22703af34c8ac721ee2ee1890571a1a2c6124960f5ca14f0b5cf556122170.json",
+      "bytes": 1772,
+      "sha256": "46b22703af34c8ac721ee2ee1890571a1a2c6124960f5ca14f0b5cf556122170"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/48c1acf07b9b1c2a50e67dfa56902e7526d9e2fa079dc15cc281c0db6ab9d82f.json",
+      "bytes": 708,
+      "sha256": "48c1acf07b9b1c2a50e67dfa56902e7526d9e2fa079dc15cc281c0db6ab9d82f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/4b77d68351eb84071ea10a3d609caf4f4f9b212b5d68ff2b5e9c4fbe68b5abf8.py",
+      "bytes": 5712,
+      "sha256": "4b77d68351eb84071ea10a3d609caf4f4f9b212b5d68ff2b5e9c4fbe68b5abf8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/4e0bb14a5a730be018fd083699b7fac7017582ce2caf870ccc6a79cb6ae5e0e8.json",
+      "bytes": 1809,
+      "sha256": "4e0bb14a5a730be018fd083699b7fac7017582ce2caf870ccc6a79cb6ae5e0e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/5af054d5e6b47d155f8c5d83884fab2e6f3741302696542deac14d396e279926.blob",
+      "bytes": 327,
+      "sha256": "5af054d5e6b47d155f8c5d83884fab2e6f3741302696542deac14d396e279926"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/615f9d7e6551b9d74f0db29549d39d38aece0b7fb196d4ad4484cdd6a2c974a0.json",
+      "bytes": 13065,
+      "sha256": "615f9d7e6551b9d74f0db29549d39d38aece0b7fb196d4ad4484cdd6a2c974a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/7ad79a528b186d70364642619eead22d2d667973e7d36033fd40e6da948dce05.blob",
+      "bytes": 314,
+      "sha256": "7ad79a528b186d70364642619eead22d2d667973e7d36033fd40e6da948dce05"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/81b55fa25f392bca9e2d64a4aea2221309490553acaee1a507eb104304c5fd7d.blob",
+      "bytes": 555,
+      "sha256": "81b55fa25f392bca9e2d64a4aea2221309490553acaee1a507eb104304c5fd7d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/81ef0857a36d084bf7a6dd25b49ad01af6c88dd61678ee77db4c84a7f1da35be.blob",
+      "bytes": 22884,
+      "sha256": "81ef0857a36d084bf7a6dd25b49ad01af6c88dd61678ee77db4c84a7f1da35be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/821cfcff02db29906cd81c0e8821ccbdec9a1e54f970f934d57f42dad30a85e6.json",
+      "bytes": 1226,
+      "sha256": "821cfcff02db29906cd81c0e8821ccbdec9a1e54f970f934d57f42dad30a85e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/aa2f59bb5b55830d4a79e5253ccede43e289d6d5adfd90ae52a33a64285e0928.json",
+      "bytes": 1589,
+      "sha256": "aa2f59bb5b55830d4a79e5253ccede43e289d6d5adfd90ae52a33a64285e0928"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/b366e2576f1ab4c53400b01a6d122c397c315d3017fe1840ccba141bcc405cea.json",
+      "bytes": 1774,
+      "sha256": "b366e2576f1ab4c53400b01a6d122c397c315d3017fe1840ccba141bcc405cea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/b6a8463e6a8c4f36a1aca54fd981e71c05bb4f3302c2ecfcfd8f07148555467c.json",
+      "bytes": 253,
+      "sha256": "b6a8463e6a8c4f36a1aca54fd981e71c05bb4f3302c2ecfcfd8f07148555467c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/be61ba32b1f06c5a8de8562890a091edd31561163434f88a7869b898bbe17a6d.json",
+      "bytes": 2564,
+      "sha256": "be61ba32b1f06c5a8de8562890a091edd31561163434f88a7869b898bbe17a6d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/bf65f5763bcff09f0d8c2980dbef8a64d533658fd8878b74830283a6fe15b8fb.json",
+      "bytes": 1795,
+      "sha256": "bf65f5763bcff09f0d8c2980dbef8a64d533658fd8878b74830283a6fe15b8fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/c722ca3f97343bd6fc3c2b24637f553b854cdc92c8ca372c4e31f595c78e56e4.json",
+      "bytes": 21799,
+      "sha256": "c722ca3f97343bd6fc3c2b24637f553b854cdc92c8ca372c4e31f595c78e56e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/c81b7ea79f1222580add42f8a646cd684c2a36511572ed704d6ccb46f0ea10b7.json",
+      "bytes": 1294,
+      "sha256": "c81b7ea79f1222580add42f8a646cd684c2a36511572ed704d6ccb46f0ea10b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/cf5dec3968299eef910b0ea1697361e2ca40f9ae46d1cfd2843d40cd866d3eaa.json",
+      "bytes": 1068,
+      "sha256": "cf5dec3968299eef910b0ea1697361e2ca40f9ae46d1cfd2843d40cd866d3eaa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/d49d3e8bc11b60a28e2ea8c390ee4dc958d9b972bbe0c097337a149e6db9cba2.json",
+      "bytes": 26063,
+      "sha256": "d49d3e8bc11b60a28e2ea8c390ee4dc958d9b972bbe0c097337a149e6db9cba2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/d611cff48c82310504c9f9f69556c731ef0df69befd135d761ee3c542bf06522.json",
+      "bytes": 1619,
+      "sha256": "d611cff48c82310504c9f9f69556c731ef0df69befd135d761ee3c542bf06522"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/e503206b6da20bdf90a9346a5e5ff3b83134d1edc57646025eaaa67f1bdb3cc3.py",
+      "bytes": 56424,
+      "sha256": "e503206b6da20bdf90a9346a5e5ff3b83134d1edc57646025eaaa67f1bdb3cc3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/0620fd7bd19b9b9244392ed62282b7ddf07d26a4bd01135557c0c097b147bccb.blob",
+      "bytes": 325,
+      "sha256": "0620fd7bd19b9b9244392ed62282b7ddf07d26a4bd01135557c0c097b147bccb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0.blob",
+      "bytes": 1653,
+      "sha256": "17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a.blob",
+      "bytes": 4664,
+      "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779.blob",
+      "bytes": 1505,
+      "sha256": "24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/2715772159342739437f0eac6f9f7f28af5dec0bbb9dd644fa414ea4cbbf5011.blob",
+      "bytes": 8438,
+      "sha256": "2715772159342739437f0eac6f9f7f28af5dec0bbb9dd644fa414ea4cbbf5011"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/27602e43a43294f441e7739ea7c5e40f9f42ccb6e2c446c67546f26e455be313.blob",
+      "bytes": 1064,
+      "sha256": "27602e43a43294f441e7739ea7c5e40f9f42ccb6e2c446c67546f26e455be313"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/2d760de74266e08b122d0cab7f611ca831af8a3364538c235eb2ce79ca31b549.blob",
+      "bytes": 2029,
+      "sha256": "2d760de74266e08b122d0cab7f611ca831af8a3364538c235eb2ce79ca31b549"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/47f4a3525e784cd544caef0e18c43f7ed7b76bae25c51b3fbe662311064e379f.blob",
+      "bytes": 2610,
+      "sha256": "47f4a3525e784cd544caef0e18c43f7ed7b76bae25c51b3fbe662311064e379f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/4e3d3af077b3dd5df8b11c6a7955f960c670a39a2aa16e52f6a409fb09e78067.blob",
+      "bytes": 3809,
+      "sha256": "4e3d3af077b3dd5df8b11c6a7955f960c670a39a2aa16e52f6a409fb09e78067"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/50348e1514d9f12a8edbd5fbbcc6a2fccad6559dd5b14ee0f1e11900b3c0c503.blob",
+      "bytes": 5228,
+      "sha256": "50348e1514d9f12a8edbd5fbbcc6a2fccad6559dd5b14ee0f1e11900b3c0c503"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/509dbbd181927e0dc69108ecbc8cedf3ca9cf158880941f78db87a86f3d9702c.blob",
+      "bytes": 2401,
+      "sha256": "509dbbd181927e0dc69108ecbc8cedf3ca9cf158880941f78db87a86f3d9702c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/60f08894c45c110dbfda6013ab2425e660940bbcdec3d5302a3b3c5b5e5826b9.blob",
+      "bytes": 545,
+      "sha256": "60f08894c45c110dbfda6013ab2425e660940bbcdec3d5302a3b3c5b5e5826b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/6348161ff21ce696cae626d7173ec26beae772a8cc45b26c08115adf4ab0924e.blob",
+      "bytes": 78,
+      "sha256": "6348161ff21ce696cae626d7173ec26beae772a8cc45b26c08115adf4ab0924e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/664046ae8e1b5cd4cee92e7d8ac3c4a34767573399f99242a5c20cb731143d59.blob",
+      "bytes": 3359,
+      "sha256": "664046ae8e1b5cd4cee92e7d8ac3c4a34767573399f99242a5c20cb731143d59"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/66cf432a64e8158d8aa5c638563cb76976ef0530cad4276070d4d0d4be8c71c3.blob",
+      "bytes": 11656,
+      "sha256": "66cf432a64e8158d8aa5c638563cb76976ef0530cad4276070d4d0d4be8c71c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/6ab51e0b1d83545d0ed1ccc0def8be768fb8e0fadb090df24309d427ee134a3c.blob",
+      "bytes": 1041,
+      "sha256": "6ab51e0b1d83545d0ed1ccc0def8be768fb8e0fadb090df24309d427ee134a3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/73d8a4bbdae41d4a770ca6243bc1208d279717d311b9a7275a0be1751e3bcd7e.blob",
+      "bytes": 700,
+      "sha256": "73d8a4bbdae41d4a770ca6243bc1208d279717d311b9a7275a0be1751e3bcd7e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/8690db6370059341f45e0af1c94de65d90800fc809008df85d6650bb43914ef5.blob",
+      "bytes": 4608,
+      "sha256": "8690db6370059341f45e0af1c94de65d90800fc809008df85d6650bb43914ef5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/8ac73726ce226a725d66b9324f4d155f64781d3e8c95144db08a37164f9cba7b.blob",
+      "bytes": 4048,
+      "sha256": "8ac73726ce226a725d66b9324f4d155f64781d3e8c95144db08a37164f9cba7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/8f97592170c32780a1414977204916668b95f3a94492bcf857dac1cbcbcd6538.blob",
+      "bytes": 1497,
+      "sha256": "8f97592170c32780a1414977204916668b95f3a94492bcf857dac1cbcbcd6538"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27.blob",
+      "bytes": 2810,
+      "sha256": "9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.blob",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/c2aa29e6a4aa83a33a8aba561622a23a655f92596b4f6c52c39e04281c4ac05d.blob",
+      "bytes": 14516,
+      "sha256": "c2aa29e6a4aa83a33a8aba561622a23a655f92596b4f6c52c39e04281c4ac05d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/d2df4ad0defa67c87db1c405b5140c6f2ce85d985648eadfb8bfb25b849decb2.blob",
+      "bytes": 1776,
+      "sha256": "d2df4ad0defa67c87db1c405b5140c6f2ce85d985648eadfb8bfb25b849decb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/f2a89628467327048052ae762fcf51bf2cfa07b9b99102e03a24e8b518799477.blob",
+      "bytes": 3286,
+      "sha256": "f2a89628467327048052ae762fcf51bf2cfa07b9b99102e03a24e8b518799477"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/f809c11fdd39918565116058039de37b83ece2f23316e8e4a2055c049fb38ea6.blob",
+      "bytes": 78,
+      "sha256": "f809c11fdd39918565116058039de37b83ece2f23316e8e4a2055c049fb38ea6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b.blob",
+      "bytes": 1401,
+      "sha256": "fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b"
+    },
+    {
+      "path": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+    },
+    {
+      "path": "docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 87332,
+      "sha256": "6cd949125fa75a780039a66ddc43129f2ff1c8990b6999bfe113415311bcbb47"
+    },
+    {
+      "path": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+    }
+  ],
+  "scope": "Source/recovery/binding integrity only; no scientific execution."
+}

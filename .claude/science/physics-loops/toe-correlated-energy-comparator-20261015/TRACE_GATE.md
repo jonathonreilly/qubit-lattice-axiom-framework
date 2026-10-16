@@ -1,0 +1,3 @@
+# Complete-output, moment and execution boundary
+
+Both coherent branches and the exact reserve phase are retained, B_fin(0)=J_0 and B_fin*B_fin=I. Duhamel gives state error tau e_gen and same-K moments 2tau B^j e_gen, j=1,2. Each variant keeps its own finite remainder and actual M_f(tau) substitution. Isometric evaluation error zeta costs 2B^j zeta; initial trace replacement e costs B^j e. State-level fault budgets do not close those moment obligations. High-block propagation remains generally exponential. The 60-second integrity primary validates sources/receipts only and remains unexecuted. Dynamic metadata counts are not scientific PASS counts or a substitute for root review/audit.

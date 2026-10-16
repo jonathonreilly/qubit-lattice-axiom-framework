@@ -1,0 +1,9 @@
+{
+  "search_scope": "author_at_launch capture only",
+  "files_scanned": 46,
+  "target_launcher_hashes": {
+    "729517ecdc328c72356f1354adb7d37a291529aeef72203f75cdb2f070326ba1": [],
+    "0ab16028ac2177e1f2346737e2d3706f0141cb0bdd0f90dd1800c7398fe81e9f": []
+  },
+  "reconstructed_missing_bytes": false
+}

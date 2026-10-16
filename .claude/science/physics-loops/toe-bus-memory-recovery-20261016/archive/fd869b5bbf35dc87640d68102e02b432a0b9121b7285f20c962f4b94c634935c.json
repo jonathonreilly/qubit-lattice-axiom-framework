@@ -1,0 +1,29 @@
+{
+  "kind": "metadata-only source identity/capture execution",
+  "scientific_execution": false,
+  "started_utc": "2026-10-16T13:28:38.355958+00:00",
+  "ended_utc": "2026-10-16T13:28:38.397516+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check",
+  "exit_code": 0,
+  "launcher_sha256": "3b5a5f0aac1efd3031cc6fba575a89fbe0281684698d8296a94f6d0a998a94a8",
+  "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_author_exposed_check/capture_sources.py",
+  "source_at_launch": "metadata_capture/executed_source.py",
+  "source_bytes": 5854,
+  "source_sha256": "f18f1850e3ab931af1fb6fab3a9724331a4b2efb2f3e8c8ca4481d84635d66c1",
+  "source_unchanged_after_run": true,
+  "stdout": {
+    "path": "metadata_capture/stdout",
+    "bytes": 156,
+    "sha256": "ac32391dd0c9994ced11a714fc70bd69079c64d65e1b252b2354243414fdf034"
+  },
+  "stderr": {
+    "path": "metadata_capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

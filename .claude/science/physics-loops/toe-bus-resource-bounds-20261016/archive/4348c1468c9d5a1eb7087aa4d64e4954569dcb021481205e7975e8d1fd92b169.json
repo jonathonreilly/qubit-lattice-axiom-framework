@@ -1,0 +1,86 @@
+{
+  "utc": "2026-10-16T04:01:45.060817+00:00",
+  "proposal_complete_read": true,
+  "source_manifest": "SOURCE_MANIFEST.json",
+  "parent_read_intervals": [
+    {
+      "role": "current_wrapper_scope_and_gap_source_contract",
+      "first_line": 1,
+      "last_line": 151,
+      "start_byte_inclusive": 0,
+      "end_byte_exclusive": 11534,
+      "bytes": 11534,
+      "sha256": "c7f0da4b7efcaa962a40b3663f5cf0d654b36bd10a18b7dafe6613970a1e8582"
+    },
+    {
+      "role": "original_author_complete_sections_1_through_11",
+      "first_line": 230,
+      "last_line": 668,
+      "start_byte_inclusive": 19817,
+      "end_byte_exclusive": 58094,
+      "bytes": 38277,
+      "sha256": "c27c072d4ca4fa727bfc481e8d3a5e92880737b780e86493f11214b58b91220f"
+    },
+    {
+      "role": "required_geometry_and_gap",
+      "first_line": 297,
+      "last_line": 346,
+      "start_byte_inclusive": 27345,
+      "end_byte_exclusive": 32726,
+      "bytes": 5381,
+      "sha256": "9487135ac43308f7b86f29fceecb35516b3cdec9342aba77c917b1a3d982a2c1"
+    },
+    {
+      "role": "required_source_inverse_and_second_order",
+      "first_line": 409,
+      "last_line": 494,
+      "start_byte_inclusive": 37923,
+      "end_byte_exclusive": 44859,
+      "bytes": 6936,
+      "sha256": "69c29b8ec9520027c6004c51855b2439cdf14f836821af150662312c5571e31e"
+    },
+    {
+      "role": "required_corrector",
+      "first_line": 530,
+      "last_line": 582,
+      "start_byte_inclusive": 46733,
+      "end_byte_exclusive": 51043,
+      "bytes": 4310,
+      "sha256": "abbfbf07e9f1c1942f91e330bf5eaeaa27e70dfed0d193637fd414c84b1e6c4a"
+    }
+  ],
+  "parent_wrapper_152_229_and_old_appended_review_682_onward": "Not newly reread for this check; no argument depends on uninspected appended material. Relevant scope qualification appears in the read wrapper and original body.",
+  "instruction_source": "Task/user instructions plus pinned worktree AGENTS pointer, SCIENCE_WORKFLOW, skill freshness, workhorse, physics-claim-reviewer and proof-search governance. No Git ref refresh was performed under the explicit no-Git scope.",
+  "exposure": "Root proposal and supplied three-level example known before reviewer construction. Same inherited model and effort; no subagents, no different-family or blind independence claim.",
+  "new_check_sources_fully_inspected": true,
+  "receipts": [
+    {
+      "label": "source_envelope",
+      "execution_path": "runs/source_envelope/EXECUTION.json",
+      "execution_bytes": 2920,
+      "execution_sha256": "94b43911eb01ed0134c83e6526123c9c06e6e759a2227e54256e153ecbd523bd",
+      "source_sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f",
+      "launcher_sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2",
+      "exit_code": 0,
+      "start_utc": "2026-10-16T03:48:12.608252+00:00",
+      "end_utc": "2026-10-16T03:48:13.789338+00:00",
+      "full_stdout_read": true,
+      "full_stderr_read": true
+    },
+    {
+      "label": "exact_gram",
+      "execution_path": "runs/exact_gram/EXECUTION.json",
+      "execution_bytes": 2891,
+      "execution_sha256": "c143bb67cb2bba4db1f2c5096f92d85574fd327b11c88dd3f2e5d14d2ecb99ea",
+      "source_sha256": "e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548",
+      "launcher_sha256": "63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd",
+      "exit_code": 0,
+      "start_utc": "2026-10-16T03:52:47.978706+00:00",
+      "end_utc": "2026-10-16T03:52:49.158812+00:00",
+      "full_stdout_read": true,
+      "full_stderr_read": true
+    }
+  ],
+  "historical_checkers_executed": 0,
+  "canonical_or_prompt_changes": []
+}

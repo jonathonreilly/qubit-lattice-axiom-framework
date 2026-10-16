@@ -1,0 +1,35 @@
+{
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "path_shapes": "all a,b,c in 1..5 and every distinct coordinate corner",
+  "box_shapes": 125,
+  "singleton_axis_shapes": 61,
+  "corner_cases": 729,
+  "visited_vertices": 24389,
+  "missing_layer_reversal_mutant": [
+    "adjacency"
+  ],
+  "upper_corner_negative_neighbors_all_inside": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ],
+  "exact_operator_factorization_residual_zero": true,
+  "exact_correlated_full_output_residual_zero": true,
+  "correlation_erasure_squared_frobenius_error": "1/2",
+  "nonidle_filler_overlap_with_claimed_output": "0",
+  "nonidle_pure_state_trace_norm_distance": 2,
+  "scope": "Finite enumeration and exact small matrices; universal claims come from analytic review."
+}

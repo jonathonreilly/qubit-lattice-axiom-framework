@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-16T04:25:10.809594+00:00",
+  "refs": {
+    "HEAD": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "open_count": 63,
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_after_joint_energy_publication/stdout",
+    "bytes": 24400,
+    "sha256": "43f8671ba3bafa70dec623441e814e8b228878c3c1c7b5a44cc551005660ce61"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_after_joint_energy_publication/EXECUTION.json",
+      "bytes": 1234,
+      "sha256": "42dfa1456206975704cf3914fbb95203e21a0ecfc2551f4f80ccab6d7e2c8f2c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_after_joint_energy_publication/EXECUTION.json",
+      "bytes": 1303,
+      "sha256": "26cc23ed369a2559e6053c469bbee1562371e0b1f31d1cd18415a55f52b06292"
+    }
+  ],
+  "delta": {
+    "added": [
+      {
+        "baseRefName": "physics-loop/toe-strongly-regular-bus-20261015",
+        "headRefName": "physics-loop/toe-bus-joint-energy-moments-20261016",
+        "headRefOid": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+        "isDraft": false,
+        "number": 9633,
+        "title": "[physics-loop] joint-code energy moments: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9633"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "main_unchanged": true,
+  "instructions_unchanged": true,
+  "publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/PUBLICATION.json",
+    "bytes": 1564,
+    "sha256": "dec887c8cf29126b35f704bf9c2a0005c47463e82e56c113ab0c188f12b31a88"
+  },
+  "attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/ATTACHMENT.json",
+    "bytes": 439,
+    "sha256": "bfafe612882d53685a742cb40f7dc76e17674c5cf25e42597e1410feee606b72"
+  },
+  "scope": "Current source and open-PR identity refresh; no additional science verification."
+}

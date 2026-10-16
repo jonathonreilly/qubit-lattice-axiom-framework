@@ -1,0 +1,19 @@
+"""Record an actual bounded exact check and capture scientific source and launcher."""
+from pathlib import Path
+import datetime,hashlib,json,os,subprocess,sys
+root=Path(__file__).resolve().parent;run=root/(sys.argv[1] if len(sys.argv)>1 else 'execution');run.mkdir(exist_ok=False)
+rows=[]
+for name in ['check.py','run.py']:
+    data=(root/name).read_bytes();(run/name).write_bytes(data);rows.append({'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+argv=[sys.executable,str(run/'check.py')]
+env=os.environ.copy();env['PYTHONDONTWRITEBYTECODE']='1'
+launch={'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'argv':argv,'cwd':str(run),'timeout_seconds':60,'max_matrix_dimension':4,'sources_at_launch':rows,'candidate_read_before_launch':False,'known_exposure':'parent equations and intent to test an escape from the first-site-only obstruction','environment_overrides':{'PYTHONDONTWRITEBYTECODE':'1'}}
+(run/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+with (run/'stdout.json').open('w') as out,(run/'stderr.txt').open('w') as err:
+    try:
+        p=subprocess.run(argv,cwd=run,env=env,stdout=out,stderr=err,timeout=60,check=False)
+        result={'exit_code':p.returncode,'timed_out':False}
+    except subprocess.TimeoutExpired:result={'exit_code':None,'timed_out':True}
+result['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+(run/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result));sys.exit(0 if result['exit_code']==0 else 1)

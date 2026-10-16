@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-16T03:26:34.252062+00:00",
+  "kind": "Metadata identity verification; no scientific computation or rerun.",
+  "root_freeze_members_verified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 5004,
+      "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/FREEZE.json",
+      "bytes": 435,
+      "sha256": "7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PRIOR_RESULT_RECONCILIATION.md",
+      "bytes": 2334,
+      "sha256": "4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567"
+    }
+  ],
+  "qualified_chain_acceptance_references_verified": [
+    {
+      "key": "candidate",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/DERIVATION.md",
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+    },
+    {
+      "key": "candidate_freeze",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/FREEZE.json",
+      "bytes": 5125,
+      "sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7"
+    },
+    {
+      "key": "review",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW.md",
+      "bytes": 21138,
+      "sha256": "ac486c1c75de92cd5da05ceeed178ad2fddf2d7a3ddde214f7889df92b084239"
+    },
+    {
+      "key": "review_freeze",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW_FREEZE.json",
+      "bytes": 5073,
+      "sha256": "121e51b2fedb1c69acb133abceee7954103bc8eaa812e4f01a62ab2b9b2169ea"
+    },
+    {
+      "key": "qualifications",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 3371,
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+    }
+  ],
+  "science_receipt_verified": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/EXECUTION.json",
+    "bytes": 1906,
+    "sha256": "e56ff8d79a6d5bec3d4098036128f9c68daac05c7521ba6ce3536ca522cdf5a3"
+  },
+  "source_at_launch_and_launcher_match_working_sources": true,
+  "all_scientific_streams_preserved_and_read_complete": true,
+  "scientific_failures": [],
+  "source_location_corrections": [
+    "Initial canonical hash path contained THEM instead of THEOREM and failed; corrected exact path matched expected identity.",
+    "Broad heading search truncated; not counted as coverage. Required sections reread completely."
+  ],
+  "git_operations": 0,
+  "canonical_writes": 0,
+  "scientific_reruns": 0
+}

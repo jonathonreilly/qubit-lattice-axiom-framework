@@ -1,0 +1,15 @@
+{
+  "start_utc": "2026-10-16T00:38:54.022299+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/full_second_order/full_second_order_check.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/full_second_order",
+  "source_sha256": "3e5e769880746b925f759afc412812fe6fec62486be760a11200d63a0a786de4",
+  "source_bytes": 3338,
+  "timeout_seconds": 120,
+  "max_matrix_dimension": 512,
+  "max_qubits": 9,
+  "scientific_role": "one author complete-matrix algebra sanity only",
+  "launcher_sha256": "0ab16028ac2177e1f2346737e2d3706f0141cb0bdd0f90dd1800c7398fe81e9f"
+}

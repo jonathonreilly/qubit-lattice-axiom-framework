@@ -1,0 +1,32 @@
+# Source exposure and verification limits
+
+## Assignment boundary
+
+This is the initial independent derivation for the correlated energy comparator question. The only new scientific parents inspected for this assignment were the two named files in the correlation worktree. Their content hashes exactly matched the dispatch, and a read-only `git rev-parse HEAD` returned `9ca474a32b3a4799d2d14cfee7580d77750422b4`. The head command's tool receipt had chunk `eb0261`, exit 0. Full byte snapshots of those two files accompany the derivation; copying/hashing an entire file is not claimed as a full model read.
+
+Before this assignment, this same agent had completed a separate ferromagnetic-source derivation and its exposed comparison. That prior scientific exposure is not erased, and no independent model-family status is inferred. None of the prohibited new energy-comparator candidates was supplied to or inspected by this agent before the present freeze.
+
+Specifically uninspected before freeze: `correlated_energy_comparator_candidate`, `runtime_energy_comparator_check`, `energy_moment_root_review`, new bus candidate science, and other new workers' results. No candidate theorem, runner, test results, or claimed resource powers from those sources were used. This agent spawned no subagents and did not communicate with another chat.
+
+## Exact scientific source coverage
+
+The ranges below use the line numbering of the verified parent snapshots. They record complete reads of the relevant source arguments, including ranges reread to repair a truncated combined tool result. A heading/search inventory is not counted as proof coverage.
+
+| Source | SHA-256 | Complete inspected line ranges |
+|---|---|---|
+| `docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md` | `d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f` | 1–353; 364–584; 652–949; 1139–1237 |
+| `docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md` | `baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007` | 150–212; 223–385; 470–524 |
+
+The initial broad `rg` output and one combined source read were truncated. They were used only for inventory until the needed ranges were fetched separately. In particular the mediator calibration paragraph near lines 291–295 and the independent source beginning near 777–830 were reread. The full root immutable body 364–584, comparison corrector/recipes 1139–1237, and composition premises/recipes 223–385 were subsequently read again in complete, untruncated outputs during the final derivation pass. The fresh source SHA check returned both exact hashes (tool chunk `364a9c`, exit 0).
+
+These reads cover the complete all-sector gap argument, physical coefficient/counterterm definitions and bounds, bare-input corrector, both adopted exact penalty majorants, full scalar/norm ledger, ideal initial moments, preparation/calibration qualifications, and the actual-runtime hypotheses used here. They do not amount to a fresh proof of the entire upstream compiler, recurrence search, controllability certificate, or all historical acceptance commentary in the assembled parents. The composition's admitted fixed data, computable nominal samples, and nonempty-runtime lower bound are explicit imported premises in this derivation.
+
+## Instruction and execution coverage
+
+Applicable AGENTS/workflow/workhorse/physics-claim-reviewer instructions were already read for this coherent renewal campaign from its bootstrap snapshots and local skill files. The bootstrap revisions used were main `bbada1fe09b2d10d610560864d86b68c24a59713` and planning `3a4b2c66a1ead7a1c48b4359627e968f681e3c39`; the current task supplies the newer scientific parent identities separately. No instruction file or editable prompt was modified.
+
+No scientific program was executed for this task. The finite-order proof, its first coefficient signs, the error-weight powers, and the two-dimensional failed-route example were derived and checked algebraically in the note. Therefore there is no scientific source-at-launch receipt or numerical PASS claim to audit. Shell activity consisted of source inventory/reads, read-only head/hash checks, output-directory creation, text inspection, and deterministic copying/hash/bookkeeping inside the assigned output directory. No successful scientific run was replayed to manufacture provenance.
+
+`DERIVATION.md` was reread in full after its initial write. The subsequent additions spelling out the residue algorithm and the slow/fast generators were reviewed in place before freeze. The source hashes were refreshed when the snapshots were copied and again at freeze. The freeze manifest hashes the deliverable, this disclosure, the source manifest, checkpoint, and exact copied parents.
+
+Verification limits remain: this is one independent mathematical derivation using the inherited user-selected model and effort, not machine-checked formal mathematics, an independent audit, numerical validation, or an implemented order-15 matrix package. No accuracy or efficiency is claimed for an unspecified matrix exponential oracle. The expensive high block and energy-weighted evaluation precision are expressly part of the result.

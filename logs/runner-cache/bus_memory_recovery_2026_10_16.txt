@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/bus_memory_recovery_2026_10_16.py
+runner_sha256: 8fdc7ca827ce7d25ed84678a79c963dc90e30bf4bc71d34c0a4035dc678cf0b9
+input_fingerprint_sha256: 78854f80be792441b54fa7568cdad63feb45e370ddbae5486748db200e764632
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: positive complements through coefficient two remain supplied; no physical element tested
+per_site: modeled 3J_*+g incident bound retained; no hardware slew certificate
+per_mode: five-stage opposite-axis and full-inverse triple-area schedules remain distinct
+per_block: full A2, actual scalar reserves and all correlated D/C/E/R outputs retained
+lattice_wide: finite-use readiness plus m delta only; no autonomous halt, indefinite reuse or retained audit
+
+----- stderr -----
+

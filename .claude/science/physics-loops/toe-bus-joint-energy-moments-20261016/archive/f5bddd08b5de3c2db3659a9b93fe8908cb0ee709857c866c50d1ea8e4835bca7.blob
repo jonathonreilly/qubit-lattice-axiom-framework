@@ -1,0 +1,30 @@
+# Source exposure, actual execution and limits
+
+This task was explicitly an exposed independent recomputation. The complete root proposal (lines 1–79), full bus derivation (1–230 and 231–448), and full exposed bus review (1–60 and 61–111) were read. An initial aggregate `REVIEW.md` plus review-freeze read was truncated and is not counted as completed coverage; the two subsequent untruncated ranges repaired it. The initial requested review filename `FREEZE.json` was absent. Root corrected it to `REVIEW_FREEZE.json` and supplied its exact hash before source capture. No scientific dependency was inferred from the failed read.
+
+The six initially dispatched source/freeze files are copied under `source_snapshots/` with exact original paths, byte counts and SHA-256 values in `SOURCE_MANIFEST.json`. Source hashes matched the dispatch and contained freeze entries. During the task root supplied its new qualified source acceptance and controlling qualifications. Those two files were read completely, hash verified and copied, making eight preserved parent files. Their acceptance status did not substitute for recomputing the proposed moment equations. The original source manifests and freezes were not edited, and no Git command was used.
+
+The bus author's or bus reviewer's scientific executables were not opened or run for this task. Their evidence claims, exact-target effectiveness qualification, and missing historical launcher limitation were encountered in the fully read review/qualification prose. This packet does not claim a fresh audit of those historical numerical runs or verification of all their frozen members. It pins the three mathematical arguments and the additionally supplied controlling qualifications. Prior campaign source exposure and the earlier correlated-energy work remain known; there is no blind or model-family independence claim.
+
+One new scientific program was written and executed: `check_joint_moments.py`. The main executable and launcher were copied before the child science launch to `exact_check/run_01/`. The captured main source is the actual executed child source, not a later reconstruction. Its content was reread completely after execution and matched the current authored source. Both launch and result receipts, complete stdout, and zero-byte stderr were read fully. There were no scientific failures or reruns in this task. A directory-creation tool call initially failed because its requested cwd did not yet exist; it did not start a process or scientific calculation, and was followed by ordinary directory creation from the existing parent directory.
+
+The actual scientific child receipt records:
+
+```
+argv = [
+  /opt/homebrew/opt/python@3.13/bin/python3.13,
+  -B,
+  /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/check_joint_moments.at_launch.py
+]
+cwd = /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01
+started = 2026-10-16T01:18:02.099832+00:00
+finished = 2026-10-16T01:18:03.280579+00:00
+exit_code = 0
+elapsed_seconds = 1.1781459576450288
+```
+
+The `argv` field is complete for that scientific subprocess, and the primary executable and launcher bytes are preserved. A narrower metadata qualification concerns `launcher_argv`: the wrapper formed that annotation using `[sys.executable] + sys.argv`, so it omits the interpreter's `-B` flag. It should not be described as a complete OS-level launcher argv. The actual tool invocation, available in this execution record, was **`python3 -B run_exact_check.py`**, with cwd equal to this packet's root directory. The tool initially returned session **3522**, output chunk **57f6e0**; the completion poll returned chunk **7c9aae**, exit **0**. This paragraph is a retrospective transcription of the tool record, clearly distinct from the unchanged launch-time child receipt. No flags, environment variables, separate tool streams or unrecorded launch timestamps are invented.
+
+The fixture checks an exact reduced one-bus/N=3 algebra case, not the full conditional routed bus. Its chosen source counterterm is deliberately off-code; its commuting code unitary exercises the moment theorem independently of the parent state dynamics. It verifies exact polynomials and finite norm/variance inequalities, not an asymptotic simulation or physical preparation. The mathematical review was reread fully before sealing. All final sources and streams are hash verified by the new freeze.
+
+Writes are confined to this assigned output. No source outside it, canonical file, Git/PR state, audit verdict, graph, repository cache, lock, physical axiom or editable prompt was changed. No model/effort override or subagent was used. The only coordination message reported the missing requested parent-review freeze path to the supervising agent, who supplied its correction within this task; no other chat was messaged.

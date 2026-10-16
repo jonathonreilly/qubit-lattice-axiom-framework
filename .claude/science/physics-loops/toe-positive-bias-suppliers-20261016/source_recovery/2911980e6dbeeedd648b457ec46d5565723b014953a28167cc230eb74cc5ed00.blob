@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-10-16T01:39:00.940087+00:00",
+  "author_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate",
+  "author_derivation": {
+    "bytes": 29555,
+    "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+  },
+  "author_freeze": {
+    "bytes": 6970,
+    "sha256": "3cce08e1453052a8b4db806a939f5b3ecc852afb258f10cdfffb25697e64a8ba"
+  },
+  "original_author_members_verified": 30,
+  "captured_author_members_verified": 30,
+  "parent_qualification_files_reverified": 2,
+  "root_probe_files_reverified": 5,
+  "prior_bus_review_freeze": {
+    "bytes": 13174,
+    "sha256": "e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c"
+  },
+  "prior_bus_review_members_unchanged": 75,
+  "reviewer_source_launcher_input_captures_verified": true,
+  "scientific_status_conferred_by_hashes": false
+}

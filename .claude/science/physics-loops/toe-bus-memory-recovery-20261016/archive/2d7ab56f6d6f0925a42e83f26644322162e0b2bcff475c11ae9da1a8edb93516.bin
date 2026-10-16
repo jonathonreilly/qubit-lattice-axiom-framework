@@ -1,0 +1,12 @@
+{
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 5558,
+    "sha256": "5a347671fadc51c62b48e54461c9828dca44c954e50d169448acc253c8de1ec8"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_memory_recovery_root_review/FREEZE.json",
+    "bytes": 962,
+    "sha256": "9ba13e52a5bea61b9647c280f0224f98f7c2ddf44682a9939d7d9b76bf92ef65"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "created_utc": "2026-10-16T02:19:02.114738+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/DERIVATION.md",
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12",
+      "coverage": "Complete 217-line argument read before candidate check code. The subsequent numbered duplicate read was truncated, but the original full reading was complete; lines 1-44 were reread separately."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/FREEZE.json",
+      "bytes": 5125,
+      "sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7",
+      "coverage": "Complete metadata read; every member verified by current bytes/hash."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/SOURCE_MANIFEST.json",
+      "bytes": 3166,
+      "sha256": "5260ff81a10d2bacd6f97746ac21269b6a5408090b993cc3ee383a3be815660c",
+      "coverage": "Complete manifest read; all seven snapshots and their current original files hash-verified."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/SOURCE_EXPOSURE.md",
+      "bytes": 3270,
+      "sha256": "ebeeb488ccdce7dc970563880b0ebc098bb9f53e13cb66affed190d47a417c52",
+      "coverage": "Complete exposure record read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 4941,
+      "sha256": "7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb",
+      "coverage": "Complete exposed ancestor read after the initial proof findings were recorded; not treated as accepted mathematics."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/static_bias_transfer_candidate__DERIVATION.md",
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6",
+      "coverage": "Complete parent derivation previously read; unchanged identity verified. This reviewer authored it; not independently revalidated here."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/static_bias_transfer_root_review__QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b",
+      "coverage": "Complete exact qualified acceptance read for the imported scope; historical reviewer programs/streams not inspected."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/static_bias_transfer_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911",
+      "coverage": "Complete qualifications read, including computable inputs, target/time order, actual phases and supplier limits."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/strongly_regular_bus_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880",
+      "coverage": "Complete bus qualifications read; underlying bus author proof previously read/authored, not independently revalidated here."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/source_snapshots/strongly_regular_bus_root_review__QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726",
+      "coverage": "Identity verified from the source manifest; body not separately read in this review. Needed mathematical scope was read from the final qualifications."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_induction.py",
+      "bytes": 6079,
+      "sha256": "e2cd05674e2a811709f901d2ec7537bca20b4a235dd9f4a73f4a701c0683e55e",
+      "coverage": "Complete scientific executable read only after initial proof findings were frozen; not executed by this reviewer."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/run_check.py",
+      "bytes": 2035,
+      "sha256": "745bf52b886b72daf47a318c071ffad18948bf4ecf054940af23f6e24f8132fb",
+      "coverage": "Complete recorder read after the proof findings; source-at-launch/stream hashes checked."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/AUTHOR_CHECK.md",
+      "bytes": 4779,
+      "sha256": "991d79ebf3ff326c11e840af932c0052d0f6a2fb7881ee8e9354c166eda1d0ae",
+      "coverage": "Complete evidence description read and compared against actual code/streams."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/LAUNCH.json",
+      "bytes": 1471,
+      "sha256": "bd6cff4dca7c0f88dd02b27f0203f5eb7e3c3009890a98d10c15a612e05c2ea5",
+      "coverage": "Complete launch receipt read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/EXECUTION.json",
+      "bytes": 1758,
+      "sha256": "c0cdb61ef9596605f204809b51d0027943009b27af5b80c58bade608f888c095",
+      "coverage": "Complete execution receipt read; exit zero; no identical rerun."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/stdout.json",
+      "bytes": 2385,
+      "sha256": "fc36b8dbbac46b93e7216b20ce6135dddf108443e069267b0f85e650d7a389e5",
+      "coverage": "Complete stdout read and compared against finite claims."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "coverage": "Complete empty stderr read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "coverage": "Complete installed text read and verified identical to this selected snapshot; focused applicability assessed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "coverage": "Complete source read; no Git/ref refresh authorized in this bounded task."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "Complete proof-governance source read from the same selected snapshot."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+      "coverage": "Relevant focused-review and boundary sections read through line 145; later operations are outside this task and not imported."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "coverage": "Complete coherent-campaign instruction reading reused; latest inline instructions and bounded task restrictions also apply."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "coverage": "Complete prior coherent-campaign reading reused, same selected instruction snapshot."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "coverage": "Complete prior reading reused; inherited model/effort preserved, no new delegation."
+    }
+  ],
+  "exposure": "Source-exposed same-model adversarial reconstruction. Initial proof findings frozen before ancestor/check-code reading. Reviewer authored the reused bus/transfer parents; this is not independent verification of those parents. One new noncommuting-H exact check after code exposure; no candidate executable rerun.",
+  "later_padding_extension_imported": false,
+  "scientific_runs_this_review": 1,
+  "editable_prompt_files_changed": [],
+  "write_boundary": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check"
+}

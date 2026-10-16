@@ -1,0 +1,600 @@
+{
+  "frozen_utc": "2026-10-16T00:39:36.970661+00:00",
+  "scope": "Exact source-only draft, selected recovery, changed-code maps and actual metadata evidence",
+  "note": {
+    "path": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 85060,
+    "sha256": "66648149374f77e7bfba4714abf3f379e0a372464ace5348084bbfdeb68fd3d2"
+  },
+  "immutable_bodies": 3,
+  "direct_mathematical_parents": 0,
+  "transitive_premise_files": 0,
+  "scientific_programs_run_this_draft": 0,
+  "historical_scientific_programs_replayed": 0,
+  "primary_execution": null,
+  "actual_binding": null,
+  "publication_action": null,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "path": "BUILD_RESULT.json",
+      "bytes": 511,
+      "sha256": "14811eea130447d2d819237ec4dacb9f7f4df413b1823925f1679b9ebac9a9f9"
+    },
+    {
+      "path": "CHANGED_CODE.patch",
+      "bytes": 19361,
+      "sha256": "afa305d05e93dcc53d315dd300f7d99425ec3b9386ca85cf9e01ea07c1070a50"
+    },
+    {
+      "path": "CHANGED_TEXT.patch",
+      "bytes": 53945,
+      "sha256": "abeb10faf69c8f1f88a1346fd8f3e6cd92ca10d476e06dfa3a34c7904ddf8340"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1156,
+      "sha256": "3bd87be60bd636c031886d1730c8a3d42e7317e0cd24cd48aad9ef8809aa5436"
+    },
+    {
+      "path": "COMMANDS.md",
+      "bytes": 2074,
+      "sha256": "2077233e083778fcad6cb45002f036047e59da3e809f929f741d1ae0f4dee41e"
+    },
+    {
+      "path": "COMMAND_LOG.jsonl",
+      "bytes": 4337,
+      "sha256": "5966b9b06f35f36b9333dfe16a15dad9b62a60d48c7f97d30e4430d812896621"
+    },
+    {
+      "path": "DELIVERY.json",
+      "bytes": 1163,
+      "sha256": "3f254b6cdcc58bfd2ce4e306f3c2cd7e19f116ecd99c7a4734c5034b95c7444c"
+    },
+    {
+      "path": "EDIT_FAILURE.json",
+      "bytes": 491,
+      "sha256": "9f9bd7c4fcfe30426207c5634f5e62387b286a1f02ed4fa1754df3d044a3cc66"
+    },
+    {
+      "path": "FINAL_REVIEW_METADATA_OPERATION.json",
+      "bytes": 1302,
+      "sha256": "7be467402c9be67c7e6e6b2ed4672a10a3131b72cead9032da2b0ff7e212f0bc"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 2178,
+      "sha256": "b34f622ae22a8ababa442ab063e4890e6d229fce05759dedf0e4d58b2c2bfcbf"
+    },
+    {
+      "path": "HISTORICAL_NOTE_DELTAS.patch",
+      "bytes": 7609,
+      "sha256": "db43c670f55753a69c839e4d44782dee7d5a3d9d7fc665f313815709f8d95f4c"
+    },
+    {
+      "path": "IMPLEMENTATION_BASIS.json",
+      "bytes": 2469,
+      "sha256": "dd4721789139ecb5724c649a2eba72257911f723005e91bb724e08975728d5c1"
+    },
+    {
+      "path": "INITIAL_BINDING.json",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679"
+    },
+    {
+      "path": "NEW_METADATA_CODE_MAP.json",
+      "bytes": 3767,
+      "sha256": "ef71b6166a4243b448beb8d7cd4f73e6c65e0f7d0cd552e86acb34ad11c70710"
+    },
+    {
+      "path": "PARENT_BINDING.json",
+      "bytes": 450,
+      "sha256": "fb786eaf8226ff3ede70ce821e6e827f0924c65f95b4515d162faa1c6b8f7249"
+    },
+    {
+      "path": "PAYLOAD_INDEX.json",
+      "bytes": 12829,
+      "sha256": "e3ddde62dd7cb93c7cc6a8f186e57669c9642c289fed105cf2e78666e01f3424"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 4977,
+      "sha256": "59c5d33d8ab3241bd9f09b62202499dfd3a2f431f842a74b276c368601d4968e"
+    },
+    {
+      "path": "REUSE_MAP.json",
+      "bytes": 36919,
+      "sha256": "7f8507a45ecfb4193569f4b747318d391e1118ef2231f48c02214d3cd56baebd"
+    },
+    {
+      "path": "REVIEW_SURFACE.json",
+      "bytes": 10653,
+      "sha256": "c7007f9322e61416c3fb56d54708dfb8b673c48113a1981de7b25371abee2832"
+    },
+    {
+      "path": "ROOT_READ_GUIDE.md",
+      "bytes": 4405,
+      "sha256": "5e081b330f813c39dd217342da8d412dad29f46ab23ef0b17ff21112c6f754ce"
+    },
+    {
+      "path": "SCAFFOLD_OPERATION.json",
+      "bytes": 612,
+      "sha256": "bd95cc638f3eb3c2965834fa877a6bed46edc7b0ed44724aa3007765757ac755"
+    },
+    {
+      "path": "SCRIPT_MAP.json",
+      "bytes": 1241,
+      "sha256": "02fdb569cec32e85443dcf45069e1e0a1f0818477d80e07193e30d35f3a75926"
+    },
+    {
+      "path": "SEAL_OPERATION.json",
+      "bytes": 983,
+      "sha256": "cc8beee1711069a393115fe0ca30a29f4418f6375e64dd8529f926f30253f1e7"
+    },
+    {
+      "path": "SOURCE_BINDING.json",
+      "bytes": 15014,
+      "sha256": "bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83"
+    },
+    {
+      "path": "SOURCE_FRESHNESS.json",
+      "bytes": 13617,
+      "sha256": "9f3e3b7c06fbff25b0845441dc8890581ff4ee999b1eb47c4c005e103e4c5582"
+    },
+    {
+      "path": "START.json",
+      "bytes": 2509,
+      "sha256": "da819763d91d22bd1557fab7155598a77d50769203534995f6a92f375f23811e"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 2202,
+      "sha256": "837fd04f84d45f5e75107e7524df47b3bcea959accf55e6699f14f7606ed355e"
+    },
+    {
+      "path": "build_proposal.py",
+      "bytes": 12118,
+      "sha256": "3818605241eeb0740855786d4de181de1d68baef5fedb5c2674ddbc7af9fc1b8"
+    },
+    {
+      "path": "finalize_review_metadata.py",
+      "bytes": 3746,
+      "sha256": "81e4b5d7a4e77cd3b5aab4a50efbda93e24824be7525c8c2dd09b0e1e0d804ed"
+    },
+    {
+      "path": "inspect_proposal.py",
+      "bytes": 13680,
+      "sha256": "0a9f1e4fd30f9ee5d54d42603527eec7ebd5eb4d27df8dbc6e0e864a97ea523b"
+    },
+    {
+      "path": "metadata_inputs/10a156beecdfe77cc15f945fdf98969d53adf63e7d1c3c01967ac1d9067c5c3e.blob",
+      "bytes": 702,
+      "sha256": "10a156beecdfe77cc15f945fdf98969d53adf63e7d1c3c01967ac1d9067c5c3e"
+    },
+    {
+      "path": "metadata_inputs/20e695bd90829d85cd1ccad5aa3f73abcc4679c2c95540f02063ff79771c0909.blob",
+      "bytes": 833,
+      "sha256": "20e695bd90829d85cd1ccad5aa3f73abcc4679c2c95540f02063ff79771c0909"
+    },
+    {
+      "path": "metadata_inputs/22f9243bbfc0dd595536bd2e6635d5081feb439e8f3f6fc0f333eeea22489b01.blob",
+      "bytes": 738,
+      "sha256": "22f9243bbfc0dd595536bd2e6635d5081feb439e8f3f6fc0f333eeea22489b01"
+    },
+    {
+      "path": "metadata_inputs/2dade24b29d300103747fcf62bd7605798382f2f0522fbd2b748995b69ba5440.blob",
+      "bytes": 18705,
+      "sha256": "2dade24b29d300103747fcf62bd7605798382f2f0522fbd2b748995b69ba5440"
+    },
+    {
+      "path": "metadata_inputs/33bde714510b2dc8ee09d9104f1517dd77d779f6ef712e0f4d66fce9883ecee9.blob",
+      "bytes": 756,
+      "sha256": "33bde714510b2dc8ee09d9104f1517dd77d779f6ef712e0f4d66fce9883ecee9"
+    },
+    {
+      "path": "metadata_inputs/357d5aa33188bae3868ba003768ae252817571ee0128e28d73f6ceb798f9a475.blob",
+      "bytes": 948,
+      "sha256": "357d5aa33188bae3868ba003768ae252817571ee0128e28d73f6ceb798f9a475"
+    },
+    {
+      "path": "metadata_inputs/5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679.blob",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679"
+    },
+    {
+      "path": "metadata_inputs/7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf.blob",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "metadata_inputs/9d2b6abc7282e35049addac980a46e7fb273ce524500183b1983099124bbb699.blob",
+      "bytes": 783,
+      "sha256": "9d2b6abc7282e35049addac980a46e7fb273ce524500183b1983099124bbb699"
+    },
+    {
+      "path": "metadata_inputs/a54959b1ddfc547ea066a7ac8ac687350d87a8396c987791257db21047a6a451.blob",
+      "bytes": 779,
+      "sha256": "a54959b1ddfc547ea066a7ac8ac687350d87a8396c987791257db21047a6a451"
+    },
+    {
+      "path": "metadata_inputs/ac8af3c103b2f92eb472877921a167c67beb15d090834e8b89cc152e114e790f.blob",
+      "bytes": 1012,
+      "sha256": "ac8af3c103b2f92eb472877921a167c67beb15d090834e8b89cc152e114e790f"
+    },
+    {
+      "path": "metadata_inputs/ae1026ac686103540f804b7f4767fd34adeb1be170612f0c98440a2c6f2d92a9.blob",
+      "bytes": 14203,
+      "sha256": "ae1026ac686103540f804b7f4767fd34adeb1be170612f0c98440a2c6f2d92a9"
+    },
+    {
+      "path": "metadata_inputs/bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83.blob",
+      "bytes": 15014,
+      "sha256": "bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83"
+    },
+    {
+      "path": "metadata_inputs/dd4721789139ecb5724c649a2eba72257911f723005e91bb724e08975728d5c1.blob",
+      "bytes": 2469,
+      "sha256": "dd4721789139ecb5724c649a2eba72257911f723005e91bb724e08975728d5c1"
+    },
+    {
+      "path": "metadata_inputs/e5ddbde72fb955efaabedbf304ea0d97b187f3c10825cbc125e24f0d7994ec01.blob",
+      "bytes": 3980,
+      "sha256": "e5ddbde72fb955efaabedbf304ea0d97b187f3c10825cbc125e24f0d7994ec01"
+    },
+    {
+      "path": "metadata_inputs/fb786eaf8226ff3ede70ce821e6e827f0924c65f95b4515d162faa1c6b8f7249.blob",
+      "bytes": 450,
+      "sha256": "fb786eaf8226ff3ede70ce821e6e827f0924c65f95b4515d162faa1c6b8f7249"
+    },
+    {
+      "path": "metadata_runs/build/EXECUTION.json",
+      "bytes": 2299,
+      "sha256": "e914a81c195bf93bac89de2021b0de8703b3fbd198f4d0fcf6083a8fdec28bc7"
+    },
+    {
+      "path": "metadata_runs/build/LAUNCH.json",
+      "bytes": 11661,
+      "sha256": "f0456d9ce42652fd0532958656b4b711681757d6174103903cce9ba8b0b97558"
+    },
+    {
+      "path": "metadata_runs/build/executed_source.py",
+      "bytes": 12118,
+      "sha256": "3818605241eeb0740855786d4de181de1d68baef5fedb5c2674ddbc7af9fc1b8"
+    },
+    {
+      "path": "metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/build/stdout",
+      "bytes": 511,
+      "sha256": "14811eea130447d2d819237ec4dacb9f7f4df413b1823925f1679b9ebac9a9f9"
+    },
+    {
+      "path": "metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2326,
+      "sha256": "902a169600bde4ac7cb24c446e6a7384af79a0aa9c8841ad492868def11a61f5"
+    },
+    {
+      "path": "metadata_runs/inspection/LAUNCH.json",
+      "bytes": 11668,
+      "sha256": "5af5cd8cce421a530492c2479e2cb53d2e1a8fcdd45f467635114dbbc1b594ff"
+    },
+    {
+      "path": "metadata_runs/inspection/executed_source.py",
+      "bytes": 13680,
+      "sha256": "0a9f1e4fd30f9ee5d54d42603527eec7ebd5eb4d27df8dbc6e0e864a97ea523b"
+    },
+    {
+      "path": "metadata_runs/inspection/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/inspection/stdout",
+      "bytes": 2202,
+      "sha256": "837fd04f84d45f5e75107e7524df47b3bcea959accf55e6699f14f7606ed355e"
+    },
+    {
+      "path": "packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 948,
+      "sha256": "357d5aa33188bae3868ba003768ae252817571ee0128e28d73f6ceb798f9a475"
+    },
+    {
+      "path": "packet_text/BINDING_CONTRACT.md",
+      "bytes": 3980,
+      "sha256": "e5ddbde72fb955efaabedbf304ea0d97b187f3c10825cbc125e24f0d7994ec01"
+    },
+    {
+      "path": "packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 779,
+      "sha256": "a54959b1ddfc547ea066a7ac8ac687350d87a8396c987791257db21047a6a451"
+    },
+    {
+      "path": "packet_text/COUNTEREXAMPLES.md",
+      "bytes": 833,
+      "sha256": "20e695bd90829d85cd1ccad5aa3f73abcc4679c2c95540f02063ff79771c0909"
+    },
+    {
+      "path": "packet_text/HANDOFF.md",
+      "bytes": 702,
+      "sha256": "10a156beecdfe77cc15f945fdf98969d53adf63e7d1c3c01967ac1d9067c5c3e"
+    },
+    {
+      "path": "packet_text/PR_BODY.md",
+      "bytes": 1012,
+      "sha256": "ac8af3c103b2f92eb472877921a167c67beb15d090834e8b89cc152e114e790f"
+    },
+    {
+      "path": "packet_text/RECOVERY_SCOPE.md",
+      "bytes": 756,
+      "sha256": "33bde714510b2dc8ee09d9104f1517dd77d779f6ef712e0f4d66fce9883ecee9"
+    },
+    {
+      "path": "packet_text/REVIEW_HISTORY.md",
+      "bytes": 738,
+      "sha256": "22f9243bbfc0dd595536bd2e6635d5081feb439e8f3f6fc0f333eeea22489b01"
+    },
+    {
+      "path": "packet_text/TRACE_GATE.md",
+      "bytes": 783,
+      "sha256": "9d2b6abc7282e35049addac980a46e7fb273ce524500183b1983099124bbb699"
+    },
+    {
+      "path": "prepare_scaffold.py",
+      "bytes": 13467,
+      "sha256": "f803507cce409d755de63f11bec0c12493837ad1fa5de92bd47d75bf615d045e"
+    },
+    {
+      "path": "primary_template.py",
+      "bytes": 14203,
+      "sha256": "ae1026ac686103540f804b7f4767fd34adeb1be170612f0c98440a2c6f2d92a9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ACTUAL_BINDING.json",
+      "bytes": 375,
+      "sha256": "0c1f5bf02712dd4be2ff172ebda39d3330ba6b280774ce91378e0198fd0c8ca9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ARCHIVE_INDEX.json",
+      "bytes": 15027,
+      "sha256": "44f5c3e7b50d61dfad7524755474557c0ea05cbc062f8b2cdd3c7570c58b7de3"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 948,
+      "sha256": "357d5aa33188bae3868ba003768ae252817571ee0128e28d73f6ceb798f9a475"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/BINDING_CONTRACT.md",
+      "bytes": 3980,
+      "sha256": "e5ddbde72fb955efaabedbf304ea0d97b187f3c10825cbc125e24f0d7994ec01"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/BODY_MAP.json",
+      "bytes": 1136,
+      "sha256": "5bfd0675f1f3d65d8c9fefd7a9a5c6e66570eb1923ba24324c9f418cb1e867b2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/CHECK_RECEIPTS.json",
+      "bytes": 9845,
+      "sha256": "c3780e397fa217fc735c7860025f2637b2113db4c59dde3db2699cde6f489e9b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 779,
+      "sha256": "a54959b1ddfc547ea066a7ac8ac687350d87a8396c987791257db21047a6a451"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/COUNTEREXAMPLES.md",
+      "bytes": 833,
+      "sha256": "20e695bd90829d85cd1ccad5aa3f73abcc4679c2c95540f02063ff79771c0909"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/DEPENDENCIES.json",
+      "bytes": 109,
+      "sha256": "a25706cc489fad0a54628797a29d34e0e5729ec57f640a703ce5aea3f617c85d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/HANDOFF.md",
+      "bytes": 702,
+      "sha256": "10a156beecdfe77cc15f945fdf98969d53adf63e7d1c3c01967ac1d9067c5c3e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/INPUT_MANIFEST.json",
+      "bytes": 12025,
+      "sha256": "7af63b96aaf841a09e82e155e9e01d2a84fdd0b9d65a5c16a4762faa2a4b2150"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PARENT_BINDING.json",
+      "bytes": 450,
+      "sha256": "fb786eaf8226ff3ede70ce821e6e827f0924c65f95b4515d162faa1c6b8f7249"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PR_BODY.md",
+      "bytes": 1012,
+      "sha256": "ac8af3c103b2f92eb472877921a167c67beb15d090834e8b89cc152e114e790f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PR_TITLE.txt",
+      "bytes": 98,
+      "sha256": "23a152f7e17880d3b0adcb4bdc4bb6a04a2cb20125b2be1403ef532df50c0819"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PUBLICATION_STATE.json",
+      "bytes": 491,
+      "sha256": "b5f44e6c4523defa1dfcf61975fab4b5686308a08913863babfc30b1df557be3"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/RECOVERY_SCOPE.md",
+      "bytes": 756,
+      "sha256": "33bde714510b2dc8ee09d9104f1517dd77d779f6ef712e0f4d66fce9883ecee9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/RECOVERY_SELECTION.json",
+      "bytes": 15192,
+      "sha256": "e3e345e2db552c1d8c3d053dd9d4810021516a1e6a2d68129477188db8004bfe"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/REVIEW_HISTORY.md",
+      "bytes": 738,
+      "sha256": "22f9243bbfc0dd595536bd2e6635d5081feb439e8f3f6fc0f333eeea22489b01"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/SOURCE_MANIFEST.json",
+      "bytes": 27362,
+      "sha256": "5fe1da2f85abb049005d4bf54d41094c6bb06d9c0f433b82a1dd446186af49a5"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/TRACE_GATE.md",
+      "bytes": 783,
+      "sha256": "9d2b6abc7282e35049addac980a46e7fb273ce524500183b1983099124bbb699"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b.blob",
+      "bytes": 4893,
+      "sha256": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5.blob",
+      "bytes": 5153,
+      "sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/32d142a282e1347449f9de98f5749c03f9d9a78dccca4c86608f472401ed7aa2.blob",
+      "bytes": 3826,
+      "sha256": "32d142a282e1347449f9de98f5749c03f9d9a78dccca4c86608f472401ed7aa2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2.blob",
+      "bytes": 6009,
+      "sha256": "36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/3c3de9fc9a949601697552c2e2e3a62346ef0126eaa0263763b64497ba35f4b0.blob",
+      "bytes": 3478,
+      "sha256": "3c3de9fc9a949601697552c2e2e3a62346ef0126eaa0263763b64497ba35f4b0"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c.blob",
+      "bytes": 10900,
+      "sha256": "46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840.blob",
+      "bytes": 5565,
+      "sha256": "4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158.blob",
+      "bytes": 2448,
+      "sha256": "483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679.blob",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a.blob",
+      "bytes": 1704,
+      "sha256": "8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020.blob",
+      "bytes": 14138,
+      "sha256": "95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/9d0edfb643c5744a429ebd83b482d9e573a9bde3a72a137081548b2524d41b8d.blob",
+      "bytes": 13552,
+      "sha256": "9d0edfb643c5744a429ebd83b482d9e573a9bde3a72a137081548b2524d41b8d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb.blob",
+      "bytes": 5172,
+      "sha256": "a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976.blob",
+      "bytes": 929,
+      "sha256": "af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2.blob",
+      "bytes": 635,
+      "sha256": "b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83.blob",
+      "bytes": 15014,
+      "sha256": "bc39634701265ab7047f7497b209e5e4a3c9f246d628357e59092914baf5bb83"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a.blob",
+      "bytes": 2807,
+      "sha256": "c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c.blob",
+      "bytes": 3739,
+      "sha256": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78.blob",
+      "bytes": 768,
+      "sha256": "d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/dcab7a72c287fe9cd06b2de4997d35051aa67e425be9d6c8703055edae44ba11.blob",
+      "bytes": 4360,
+      "sha256": "dcab7a72c287fe9cd06b2de4997d35051aa67e425be9d6c8703055edae44ba11"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2.blob",
+      "bytes": 8135,
+      "sha256": "e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2.blob",
+      "bytes": 8979,
+      "sha256": "e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/source_recovery/f6b4883e8828851fca18434dda0b422aee137e88c499fe2818f28b17ed5de666.blob",
+      "bytes": 5522,
+      "sha256": "f6b4883e8828851fca18434dda0b422aee137e88c499fe2818f28b17ed5de666"
+    },
+    {
+      "path": "proposal/docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 85060,
+      "sha256": "66648149374f77e7bfba4714abf3f379e0a372464ace5348084bbfdeb68fd3d2"
+    },
+    {
+      "path": "proposal/scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+      "bytes": 20971,
+      "sha256": "9f571d129b3769dc5d7657688ec3383ec7e7afd4915248408e3ef442ab5c6591"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 5071,
+      "sha256": "7e169a8ca4f6b879731089b0bc983d4ce21f85569955555d5fbc96b3a1069f5b"
+    },
+    {
+      "path": "wrapper.md",
+      "bytes": 18705,
+      "sha256": "2dade24b29d300103747fcf62bd7605798382f2f0522fbd2b748995b69ba5440"
+    }
+  ]
+}

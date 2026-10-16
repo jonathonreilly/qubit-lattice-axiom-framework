@@ -1,0 +1,23 @@
+{
+  "scope": "No Git used; identified local repository snapshot and byte-identical installed skills; no remote freshness assertion.",
+  "items": [
+    {
+      "skill": "physics-claim-reviewer",
+      "same_installed_and_supplied_repository_bytes": true,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "skill": "no-go-discipline",
+      "same_installed_and_supplied_repository_bytes": true,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "reference": "SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "reference": "proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  ]
+}

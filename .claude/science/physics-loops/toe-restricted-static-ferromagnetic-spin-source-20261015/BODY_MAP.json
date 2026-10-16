@@ -1,0 +1,29 @@
+{
+  "note": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "author_restricted_body",
+      "container": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 18982,
+      "end_byte_exclusive": 50695,
+      "bytes": 31713,
+      "sha256": "47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15"
+    },
+    {
+      "name": "independent_restricted_body",
+      "container": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 50872,
+      "end_byte_exclusive": 67655,
+      "bytes": 16783,
+      "sha256": "687a28553a1588265906ca0e64a8a18c8caf18027003343aed5708b43b2a0222"
+    },
+    {
+      "name": "exposed_reconciliation_body",
+      "container": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 67832,
+      "end_byte_exclusive": 85165,
+      "bytes": 17333,
+      "sha256": "85b54da82b54f7accb199d9c4121e5701f229ab91176ed1b0d249e7ee9b448c9"
+    }
+  ]
+}

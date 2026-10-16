@@ -1,0 +1,24 @@
+from pathlib import Path
+import datetime,hashlib,json,subprocess,sys,time
+p=Path(__file__).resolve().parent;r=p/'run_01';r.mkdir(exist_ok=False)
+sha=lambda b:hashlib.sha256(b).hexdigest()
+src=(p/'check_padding.py').read_bytes();launcher=Path(__file__).read_bytes();manifest=(p/'SOURCE_MANIFEST.json').read_bytes()
+(r/'check_padding.at_launch.py').write_bytes(src)
+(r/'launcher.at_launch.py').write_bytes(launcher)
+(r/'SOURCE_MANIFEST.at_launch.json').write_bytes(manifest)
+argv=[sys.executable,'-B',str(r/'check_padding.at_launch.py')]
+receipt={'argv':argv,'cwd':str(r),'original_source':str(p/'check_padding.py'),'source_sha256':sha(src),
+ 'launcher_source_sha256':sha(launcher),'launcher_orig_argv':sys.orig_argv,'launcher_cwd':str(Path.cwd()),
+ 'source_manifest_sha256':sha(manifest),'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'timeout_seconds':60}
+(r/'LAUNCH.json').write_text(json.dumps(receipt,indent=2)+'\n')
+start=time.monotonic()
+try:
+    with (r/'stdout.json').open('wb') as out,(r/'stderr.txt').open('wb') as err:
+        done=subprocess.run(argv,cwd=r,stdin=subprocess.DEVNULL,stdout=out,stderr=err,timeout=60)
+    receipt['exit_code']=done.returncode
+except subprocess.TimeoutExpired:
+    receipt['exit_code']=None;receipt['timed_out']=True
+receipt.update(finished_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),elapsed_seconds=time.monotonic()-start,
+               stdout_sha256=sha((r/'stdout.json').read_bytes()),stderr_sha256=sha((r/'stderr.txt').read_bytes()))
+(r/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2));sys.exit(0 if receipt['exit_code']==0 else 1)

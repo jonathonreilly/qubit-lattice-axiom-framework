@@ -1,0 +1,3 @@
+# Source review and exposure
+
+Root qualified acceptance 32d142a2 follows complete author/checker/comparison and evidence review. Independent body 687a2855 was frozen before author-proof exposure; comparison 85b54da8 is explicitly exposed. Both share model and architecture, the same swap/Casimir gap and closely related reduction identities. Matrix builders differ, but this is not model-family replication. Final qualifications dcab7a72 correct the preliminary scalar shortcut and state exact finite-precision and evidence limits. This packaging is exposed, adds no scientific execution or protected derivation, and does not inherit acceptance for its new wrapper. Root review of the complete wrapper and changed code is still required.

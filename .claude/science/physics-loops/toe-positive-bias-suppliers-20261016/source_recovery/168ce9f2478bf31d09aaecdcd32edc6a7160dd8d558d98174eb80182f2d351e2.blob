@@ -1,0 +1,119 @@
+# Exposed review of static-bias transfer
+
+Primary source: `author_at_launch/DERIVATION.md`, 29,555 bytes, SHA256 `500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6`; author FREEZE.json SHA256 `3cce08e1453052a8b4db806a939f5b3ecc852afb258f10cdfffb25697e64a8ba`, frozen 2026-10-16 01:17:48.998794 UTC. All 309 argument lines were read. Thirty frozen members, the freeze itself and two explicitly supplemental post-freeze streams were captured. This is a same-model, source-exposed bounded review, not blind replication, retained audit or physical validation.
+
+The bus dependency is the unchanged 40,500-byte derivation SHA `855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2`, with controlling root QUALIFIED_ACCEPTANCE.json SHA `cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726` and FINAL_QUALIFICATIONS.md SHA `a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880`. I read those controls completely and reused my prior complete bus review at unchanged source identity. Their acceptance does not verify the new transfer. The new polynomial, uniformity, timing and scalar arguments were recomputed below.
+
+## Disposition
+
+No load-bearing algebraic defect was found in either the narrow continuing-bias obstruction or the attenuated-bias transfer, conditional on the qualified bus parent and the stated permission to scale the added bias. The uniform target-ball construction supplies the bounds needed to choose T before its time-dependent target, and the rational-Hermitian search avoids exact support and logarithm-branch decisions. The small-bias lemma genuinely follows from one supplied strong point; it does not assume strong regularity at every small bias. The common cap is an added incident norm cap, with no favorable runtime, precision or global-energy conclusion.
+
+One explicit premise clarification is needed for the effective claim. Section 1 names computable H but calls W a target unitary and describes C and its decomposition as finite and computably bounded. A computable norm bound is not a computable name for matrix entries. The terminating procedure requires computable C, W and the finite numerical data used in it, including B, t_* and the installed decomposition/reserve coefficients or effective access sufficient to construct them. Section 3 correctly assumes a computable U, and section 6 asserts computable polynomial coefficients; those assertions require these input names. If the intended inherited data supply them, state that explicitly. Without them, the fixed-instance mathematical existence argument remains, but blanket algorithmic acceptance does not follow from norm majorants alone.
+
+No replacement of the original broad Lie-certificate premise by the strong-point premise has been justified. A separately parent-attributed Heisenberg example, checked in APPENDIX_HEISENBERG.md, gives a concrete failure of one narrower implication: full positive-generator Lie controllability does not ensure an all-transition local port after any bias confined to one designated qubit. That appendix does not refute this transfer's supplied-strong-point conditional theorem. NO_GO_DISCIPLINE_CHECKLIST.md records the narrow scope and the publication-packet limitations; no no-go gate PASS or retained status is claimed.
+
+## 1. Fixed bias: endpoint correction and the exact failed route
+
+Write A=H+lambda C. The gate in the bus's original endpoint comparator must be G_T=W exp(-iTH)exp(iTA), since G_T exp(-iTA)=W exp(-iTH). The interaction-frame target is instead U_T=exp(iTA)Wexp(-iTH). Substituting U_T directly for G_T would put the factors in the wrong order. The author distinguishes them correctly and constructs the mean interaction for U_T.
+
+An ideal endpoint corrected at T and then continuing freely under A has output exp(-isA)Wexp(-iTH). With C=c_C I+C_0, Hermitian Duhamel gives
+
+    ||exp(-isA)-exp(-i lambda c_C s)exp(-isH)||
+       <=lambda s ||C_0||.
+
+This is a valid bound for noncommuting H and C; it uses neither a first-order expansion nor lambda T smallness. The spectral midpoint choice minimizes ||C-cI|| over real scalar c. Multiplication by the endpoint unitary does not change the norm.
+
+The lower-bound argument is also valid. For any actual endpoint channel A_0 and desired unitary endpoint B_0,
+
+    ||U_s B_0-V_s B_0||_diamond
+       <=||A_0-B_0||_diamond+||U_s A_0-V_s B_0||_diamond.
+
+Precomposition by unitary B_0 preserves the drift-channel distance. Hence the maximum of the two endpoint/window errors is at least half that drift distance. If the two drift channels agree throughout a positive interval, their derivatives at zero agree, so [C,rho]=0 for every matrix rho and C is scalar. Any fixed nonscalar C therefore leaves a positive channel defect at some time in every positive window for this continuing-bias comparator.
+
+For H=0, C=Omega n, W=I and w=pi/Omega, the exact corrected |+> input becomes |->. Its trace distance is two, and the general endpoint-compromise lower bound is one. B=X+Z/3 gives the required one-qubit strong point. The counterexample is correctly narrow: it concerns passive continuation of the full bias with vanishing extra holding action. It does not exclude a switch, a continuing compensator, a different controller, or attenuation. At w=0 the obstruction is absent. For scalar C the continuing action is absorbed by the displayed scalar phase.
+
+## 2. Krylov-Gram polynomial and arbitrarily small strong points
+
+On the complex Hilbert-Schmidt operator space, ad_A(X)=[A,X] is self-adjoint when A is Hermitian; its eigenoperators |a><b| have real eigenvalues E_a-E_b. Applying at least one commutator kills the diagonal part of B. With n=d(d-1), the n vectors ad_A^(j+1)B have entries Delta_ab^(j+1)B_ab in the n ordered off-diagonal components when the spectrum is simple.
+
+At a strong point their component matrix factors as a nonzero diagonal matrix with entries Delta_ab B_ab and the Vandermonde matrix in all ordered nonzero differences. Distinct positive gaps give distinct ordered positive and negative differences; the sign pairs are distinct points rather than a rank defect. Thus the complex Gram determinant is strictly positive. Hermiticity of B creates conjugate relations among components but does not make the complex Krylov columns dependent: odd and even commutator powers can occupy independent sign-parity directions.
+
+Conversely, degeneracy of A gives nonzero adjoint-eigenspace dimension d^2-sum m_r^2<n. For simple A with repeated nonzero differences, a Krylov sequence from one vector has dimension at most the number of distinct nonzero adjoint eigenvalues, again below n. With all those eigenvalues distinct, any zero B_ab removes a necessary component. These are exhaustive cases, proving the equivalence in (21).
+
+Each F_j has polynomial degree at most j+1 in real lambda. Conjugation in the Gram entries conjugates coefficients, not lambda. In any determinant term the degree is at most sum_i[(i+1)+(sigma(i)+1)]=n(n+1). Thus p is a real nonnegative polynomial of degree at most D=n(n+1). The supplied strong point makes p(1)>0, so p is not identically zero. D+1 distinct nodes in (0,Lambda) cannot all be roots. Dovetailed certified evaluations find a positive lower bound at one node without deciding which other nodes vanish. This establishes arbitrarily small positive rational strong biases, without a conditioning or precision bound.
+
+Once a positive node is found, simple eigenvalues can be strictly separated. Rank-one projectors can be computed by finite spectral calculus; dovetailing coordinates until one projection has nonzero norm supplies a computable normalized eigenvector. The phase convention can be fixed by that chosen coordinate. Distinct-gap and nonzero B certificates can then be refined under known strict promises. This selection does not require testing arbitrary exact degeneracies.
+
+The reviewer's exact noncommuting complex two-level calculation used H=.3X+.2Z, C=.7I+.4Z and B=X+Y/3+Z/5. It gives
+
+    p(lambda)=16(16lambda^2+16lambda+13)
+                 (2000lambda^2+1460lambda+383)^2/791015625,
+
+of degree six, matching the general bound. Independently, for a four-level family with energies 0,1,3+2lambda,7 and a rationally rotated local Z port, direct 12-by-12 Gram determinants match the explicit Vandermonde product. The polynomial has degree 102<=156. Rank is 12 at lambda=1 and 1/16, but 10 at the repeated-gap node 1/2. Removing one Hermitian port pair also gives rank 10. The D+1-node grid with Lambda=1/16 has a checked positive witness at 1/2528. These exact finite calculations discriminate the rank conditions; they do not replace the general proof.
+
+## 3. Uniform target ball and pre-target resource choice
+
+For ||M||<=4, every diagonal difference y_a lies in [-8/t_*,8/t_*]. The parent's pole cone and positive null vector depend on H_lambda and B, not y. On a closed cone-valid energy box, a single sufficiently large beta makes all zero-route weights positive with uniform lower and upper bounds for this entire target box. After selecting spectral parameters, the negative-side weights remain fixed and x0(y) varies in a compact set inside the positive orthant. One common radius around these centers and one positive compact box X suffice.
+
+The complete zero-route spectrum depends on the fixed core eigenvalues, router frequency and ferro scale, not on the weights. Consequently a full Q/P gap found at dummy weights is valid for every y before routing. The full qubit routing perturbation has norm <=Rrho, so the common gap remains >=delta_0-Rrho after changing to any positive weights in X. This is the same full-space argument checked in the parent; no branched free-fermion approximation is introduced.
+
+Uniform positive Gram determinant lower bounds and moment upper bounds on X give computable Jacobi derivative and hopping bounds. For the normalized measure, the jth off-diagonal square is Delta_(j+1)Delta_(j-1)/Delta_j^2; all required determinants through Delta_m are positive. Thus a common t_min>0 is available. The Schur estimates and C0,C1 from the parent are uniform on X, and one small positive rho satisfies all self-map, contraction, positivity and full-gap inequalities for every center x0(y). The resulting exact fixed point depends on y but stays in its certified ball.
+
+The response lower bound (9) has the correct combinatorics and direction. The root-to-leaf path contains m core vertices, 3l backbone vertices and one leaf: m-1 core hoppings and 3l+1 router hoppings. The off-path vertex count is b-m-3l-1, which is nonnegative (at l=q it equals q-1). All off-path components are high-frequency router subtrees, so their determinant magnitudes are at least Delta_R to their vertex counts. The denominator magnitude is at most D_bus^b. Therefore
+
+    |G_l| >= t_min^(m-1) rho^(3l+1)
+              Delta_R^(b-m-3l-1)/D_bus^b >0
+
+uniformly. It has units of inverse energy. This lower bound can be extraordinarily small but is finite and explicit; it is not a compactness assertion resting on unproved generic nonvanishing.
+
+The full Q/P gap bounds the full source inverses by 1/delta, including their nonsymmetric sectors. The normalized multiplicity vector in the parent's b_N has total weight one, so both |A_l| and |B_l| are bounded by r_l,max^2/delta. Hence |u|<=r_max^2/(Ndelta), |v|<=2r_max^2/(Ndelta), total ||A2||<=3 sum r_max^2/delta, and the incident load bound is <=5 max r_max^2/(Ndelta). The v_bar, ell_V and complete corrector majorants in (12)–(13) follow. The connected P/P gap depends only on the fixed drift's labeled one/two-action energy differences, not on M or its support. No arbitrary code-energy equality oracle is introduced.
+
+Finally, each row Euclidean norm of Hermitian M is at most ||M||, so B_M<=4/t_* exactly. Thus source length, spectral choice, rho, corrector/load bounds, xi and T can all be chosen before M. Target-dependent diagonal calibration, source couplings and counterterms are installed afterward but remain under those previously fixed bounds. This removes the potential T=f(T) circularity rather than merely asserting that an implicit solution exists.
+
+A reviewer six-site one-particle fixture sampled diagonal targets -8,-4,0,4,8 with a common positive-weight box [4,10], fixed negative weight, fixed core spectrum and fixed routing. Calibration residuals were below 6.4e-14. Its explicit uniform response lower bound was 8.78e-16; actual sampled responses were 5.84e-12 through 6.09e-12. This tests the formula and the need to vary v_p=sqrt(S), not the complete many-body gap or the full contraction certificate for that fixture.
+
+## 4. Bounded rational logarithm after T
+
+Every finite unitary has an existential Hermitian logarithm of norm <=pi. This is used only to prove that the open search target is nonempty. Rational Hermitian matrices are dense in any supplied orthonormal basis, and the Hermitian exponential is 1-Lipschitz in operator norm. Since pi<4, a rational witness exists satisfying both strict tests ||M||<4 and ||exp(-iM)-U_T||<eta. Dovetailing certified strict tests over rational matrices therefore terminates. A candidate exactly on a boundary cannot block the search.
+
+The algorithm does not select a continuous principal logarithm or decide arbitrary exact zeros. Rational M has decidable support. The generally nonrational L_gate=exp(-iTH_lambda)Mexp(iTH_lambda) has exactly the same support and entry magnitudes because this basis diagonalizes H_lambda. Its time-conjugation phase cancels the parent's +omega_l T phase. Equivalently the direct phase in (15) gives mean M/t_* immediately. The phase prescription is computable for nonzero rational M_ab using unit complex ratios; zero couplings require no phase division.
+
+The reviewer executed a bounded rational witness search for a noncommuting two-level U_T with T=23, lambda=1/5, so lambda T=23/5>1. Numerical screening enumerated 30,976 rational candidates and selected
+
+    M = [[1/2, 1-i/2], [1+i/2, -1/2]].
+
+The witness was then certified with exact rational arithmetic, not accepted on floating error alone. Positive leading principal minors of 4I+M and 4I-M certify ||M||<4. Scaling and Taylor order 20 construct exact complex-rational exponential approximants for M and the two drift factors. At scaled norm a<=1/2, the tail is bounded by 2a^21/21!; after k squarings, error <=2^(k+1) times that tail follows from unitarity and (1+delta)^(2^k)-1<=2^(k+1)delta when 2^k delta<=1/2. Multiplying the two drift approximants around the exact rational unitary W costs e_A+e_B+e_A e_B. The final strict inequality was checked as an exact rational squared Frobenius comparison. Its Frobenius discrepancy is approximately 0.17513, with exponential enclosure allowance below 1.51e-25, strictly below eta=1/4.
+
+This is one coarse certified witness after a fixed T. It is not an execution of the all-accuracy search or the epsilon/16 end-to-end controller allocation. The analytic strict-search proof, rather than this example, supplies the general effective statement under computable input names.
+
+## 5. Full phase/order, error allocation and cap
+
+After the parent reduction, the nominal mean old factor is
+
+    exp[-itH_lambda] exp[-i xi^2 t M/t_*].
+
+At t=T+s, xi^2 T=t_*. Replacing the second factor by exp(-iM) costs at most xi^2 s||M||/t_*. Replacing exp(-iM) by U_T costs eta_log. Then the product is exactly exp(-isH_lambda)Wexp(-iTH). The final scalar-adjusted drift replacement costs lambda s a_C. Thus (18) has precisely the five stated contributions, all in complete isometry norm with controller outputs retained.
+
+The complete phase is
+
+    chi(t)=R_total t+c_M xi^2 t+lambda c_C s.
+
+There is no further lambda c_C T: the definition of U_T already compensates the biased drift, including its scalar, through T. The physical positive bias reserve lambda R_C is different and remains in R_total for the full T+s duration. The normalized trace increment lambda(s_C+R_C) is likewise retained. The old reference remains arbitrary and passive; no phase-bearing controller factor is discarded.
+
+The independent finite phase test used the certified rational M above, nonzero reserve and old scalar shift. At s=0,0.31,0.7, the old-space discrepancies were 0.17424,0.19017,0.21713, below the allocated log/holding/bias bounds 0.25,0.32872,0.42774. Adding an erroneous lambda c_C T phase made the discrepancy approximately 1.996–1.998. This validates the algebraic phase distinction in that fixture; it does not simulate the full controller.
+
+For the accuracy family, lambda w a_C<=epsilon/16 follows from the conservative Lambda bound, including w=0 or scalar C. N bounds source fluctuation by epsilon/16. The chosen xi bounds the corrector and extra holding rotation separately by epsilon/16. Strict log search supplies eta_log<epsilon/16. The nominal isometry error is therefore <=5epsilon/16, giving complete trace error <=5epsilon/8 with arbitrary reference. Preparation epsilon/8 and integrated generator error epsilon/16 (trace cost <=epsilon/8) yield <=7epsilon/8<epsilon. The exact unconditional old/reference marginal is used. The remaining slack is not an unbounded timing allowance.
+
+For the common cap, ||H_lambda||<=h+c_bound and every Bohr gap is <=2(h+c_bound). Cone offsets may shrink arbitrarily while remaining below 1/t_*, so all core eigenvalues have a fixed upper bound. The router/ferro intervals and preliminary rho cap can also lie inside fixed finite outer bounds. Thus M_E is uniform in lambda, N and epsilon even though lower gaps, response bounds, weights and correctors are not. Calibration weights may diverge as lambda tends to zero, but their effect on v_p and r_l is charged to xi-dependent perturbation loads; the Jacobi entries remain bounded by their fixed eigenvalues.
+
+Adding the actual scaled old bias blocks costs at most J_C, the fixed positivity reserve costs R_s, base bus/source terms cost at most 7M_E, and weak/counterterm loads are <=J1+J2. Hence J_*=J_C+R_s+7M_E+J1+J2 is a genuine common added incident norm cap. It does not bound the complete controller's global norm or accumulated phase. Approximate implementations still need pointwise incident budgets or charged fixed slack in addition to an integrated generator error, as the qualified parent requires. Literal terms of H remain installed with coefficient one; only the added bias blocks are attenuated.
+
+## Evidence quality and unresolved obligations
+
+The complete author executable, launcher, launch/result records and full streams were read. Its 14 checks are limited to matrices of dimension two and one exact commuting polynomial example; no complete bus, target-ball uniformization or logarithm enumeration was executed by the author. The author launcher hash matches the captured launcher, unlike the older bus task's preserved failed-launcher limitation. The controlling bus qualifications remain applicable and are not erased by this new packet.
+
+Two reviewer executions completed with exact source/launcher/input captures and full logs. The main run combines exact algebra, floating routing samples and a rational-certified logarithm witness. The appendix run reconstructs the root Lie certificate by a different matrix representation. Neither imports author/root executable code. Both are source-exposed same-model checks, and the formulas being tested were already exposed.
+
+One main-run diagnostic printed `scalar_bias_cancels: false` because it used SymPy structural equality on differently grouped expressions. This was preserved and investigated: the appendix run simplifies the difference entrywise and proves it is exactly zero. The polynomial calculation and its assertions were unaffected. A broad echo-search display was truncated; its complete rerun is archived, and no unread generic Heisenberg matches are treated as scientific authority. No execution failure was overwritten, and no omitted calculation is represented by a PASS count.
+
+The bounded review is complete with the computable-input clarification above. Remaining scientific obligations are the existence of an admissible strong bias direction in any wider original domain; a switch/compensator when attenuation is unavailable; and native preparation, clock/phase reference, calibration, isolation, permanent readout or reuse mechanisms. No claim about those follows here. No author/canonical/frozen files, Git/PR state, audit status, repository cache/graph, locks, axioms or editable prompts changed. No subagents, publication actions, other-chat messages or model/effort overrides were used.

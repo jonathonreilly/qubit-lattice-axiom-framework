@@ -1,0 +1,15 @@
+{
+  "start_utc": "2026-10-15T23:45:42.457258+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate",
+  "source_sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5",
+  "source_bytes": 5153,
+  "timeout_seconds": 180,
+  "declared_max_matrix_dimension": 128,
+  "declared_max_source_qubits": 6,
+  "scientific_role": "author sanity, not proof",
+  "launcher_sha256": "8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a"
+}

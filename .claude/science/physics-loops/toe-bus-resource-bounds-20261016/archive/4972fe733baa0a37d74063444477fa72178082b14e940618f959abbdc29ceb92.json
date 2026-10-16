@@ -1,0 +1,35 @@
+{
+  "captured_utc": "2026-10-16T12:52:44.914077+00:00",
+  "kind": "metadata source identity capture only",
+  "scientific_executions": 0,
+  "source_count": 3,
+  "sources": [
+    {
+      "key": "derivation",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/DERIVATION.md",
+      "capture": "sources/derivation.md",
+      "bytes": 37212,
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74",
+      "read_scope": "Complete final text, sections1-10, read in this task.",
+      "externally_pinned": true
+    },
+    {
+      "key": "author_source_manifest",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/SOURCE_MANIFEST.json",
+      "capture": "sources/author_source_manifest.json",
+      "bytes": 11765,
+      "sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583",
+      "read_scope": "Read for identities and author exposure only; its other listed sources were not opened.",
+      "externally_pinned": false
+    },
+    {
+      "key": "fixed_plant_qualifications",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "sources/fixed_plant_qualifications.md",
+      "bytes": 7196,
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b",
+      "read_scope": "Complete controlling qualifications read; not a full parent revalidation.",
+      "externally_pinned": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check",
+  "started_utc": "2026-10-16T02:12:38.594454+00:00",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/executed_source.py",
+    "bytes": 2201,
+    "sha256": "10b59ff26e2a4120b4a575b0cd592303506c3cc26516d5f5212082bb907f90a5"
+  },
+  "launcher_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/launcher_at_launch.py",
+    "bytes": 1980,
+    "sha256": "0248c2db9a9ce1cc233a345a8333c4ea72a2b681afe6a460fb6212398962a295"
+  },
+  "limits": {
+    "outer_timeout_seconds": 30,
+    "child_alarm_seconds": 20,
+    "largest_matrix_dimension": 2
+  }
+}

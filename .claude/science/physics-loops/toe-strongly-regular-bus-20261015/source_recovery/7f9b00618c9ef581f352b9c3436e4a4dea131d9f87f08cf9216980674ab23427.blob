@@ -1,0 +1,19 @@
+"""Preserve one bounded complete-matrix check and its raw streams."""
+import datetime,hashlib,json,subprocess,sys
+from pathlib import Path
+base=Path(__file__).resolve().parent
+root=base/(sys.argv[1] if len(sys.argv)>1 else 'full_second_order');root.mkdir(exist_ok=False)
+data=(base/'full_second_order_check.py').read_bytes()
+launch=root/'full_second_order_check.at_launch.py';launch.write_bytes(data)
+command=[sys.executable,str(launch)]
+receipt=dict(start_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),command=command,cwd=str(root),source_sha256=hashlib.sha256(data).hexdigest(),source_bytes=len(data),timeout_seconds=120,max_matrix_dimension=512,max_qubits=9,scientific_role='one author complete-matrix algebra sanity only',launcher_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+(root/'CHECK_LAUNCH.json').write_text(json.dumps(receipt,indent=2)+'\n')
+with (root/'stdout.log').open('w') as out,(root/'stderr.log').open('w') as err:
+    try:
+        p=subprocess.run(command,cwd=root,stdout=out,stderr=err,timeout=120,check=False)
+        result=dict(returncode=p.returncode,timed_out=False)
+    except subprocess.TimeoutExpired:result=dict(returncode=None,timed_out=True)
+result['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+(root/'CHECK_RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result))
+sys.exit(0 if result['returncode']==0 else 1)

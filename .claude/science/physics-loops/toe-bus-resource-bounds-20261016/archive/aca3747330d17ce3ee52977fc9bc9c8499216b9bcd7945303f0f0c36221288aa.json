@@ -1,0 +1,25 @@
+{
+  "frozen_utc": "2026-10-16T13:01:25.646724+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 7701,
+      "sha256": "e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3714,
+      "sha256": "aba5f356e130166caf0884c9693152c13fd826b8ebd74b137445028e29ab435d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/SOURCE_VERIFICATION.json",
+      "bytes": 1392,
+      "sha256": "81ce9ebe010aaeeb218e65feef5baecc170411ef7df85821e1aa96a350aaed76"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/record_acceptance.py",
+      "bytes": 3680,
+      "sha256": "0b3be664322498b5ee9ba4e9e0441dc37dd20d96bf9319ab2b2372b97803758a"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/check_symbolic_identities.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check",
+  "started_utc": "2026-10-15T23:50:08.429157+00:00",
+  "finished_utc": "2026-10-15T23:50:08.473724+00:00",
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "reason_for_final_repeat": "Final prose clarifies certified evaluation of nonunitary numerical approximants; arithmetic/check program unchanged. Retain exact final-source-at-launch identity.",
+  "source_at_launch": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/check_symbolic_identities.py",
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc",
+      "bytes": 5018
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/DERIVATION.md",
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5",
+      "bytes": 19478
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/SOURCE_COVERAGE.md",
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4",
+      "bytes": 7070
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/SOURCE_MANIFEST.json",
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f",
+      "bytes": 1603
+    }
+  ],
+  "source_unchanged_after": true,
+  "stdout_sha256": "775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

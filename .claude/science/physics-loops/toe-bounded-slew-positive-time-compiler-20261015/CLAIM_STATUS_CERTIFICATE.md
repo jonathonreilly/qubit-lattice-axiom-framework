@@ -1,0 +1,3 @@
+# Claim status
+
+Claim type: bounded_theorem. Current surface: conditional-support. Positive qualitative external compilation under fixed positive amplitude/first-derivative caps follows conditional on the supplied complete computable plant, augmented polynomial certificate and physical interface. Parent scalar ledger belongs to the primary protected weak-bump theorem; root full-phase ramp theorem and exposed T_min corollary are attributed separately. No polynomial resource, hard-bandwidth, autonomous-controller, preparation or physical-energy result is claimed. Retained audit and canonical publication remain null.

@@ -1,0 +1,171 @@
+{
+  "kind": "root_installed_canonical_source_review",
+  "utc": "2026-10-16T02:05:46.259435+00:00",
+  "root_read_complete": true,
+  "bound_note_sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+  "canonical_body_pins": [
+    {
+      "name": "author_bus_body",
+      "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 19817,
+      "end_byte_exclusive": 60317,
+      "bytes": 40500,
+      "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+    },
+    {
+      "name": "exposed_review_body",
+      "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 60486,
+      "end_byte_exclusive": 83919,
+      "bytes": 23433,
+      "sha256": "cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7"
+    }
+  ],
+  "parent_binding": {
+    "canonical_parents": [],
+    "transitive_premises": [],
+    "preparation_release_intervals": [],
+    "mathematical_scope": "The exact author body sections 2-11 proves the cone, routed geometry/full gap, source resolvent, connected second order, corrector, phases and resource inequalities. Prior compiler/mediator/source proposals are exposure/context only; their theorem conclusions are not imported. Simple spectrum, distinct positive gaps, nonzero port entries, computable spectral data and vacant geometry are supplied premises, not implications of earlier Lie certificates. Rational-M repair is separately attributed in exposed review section 6 and root qualifications. No unproved imported theorem was identified.",
+    "actual_current_git_observation": null
+  },
+  "source_draft_freeze_sha256": "71d6aa8f22b83ac1ee6aaac0f6351c58ada14d4cbdc3bf80e44a8d5db719e42f",
+  "source_draft_review_sha256": "45b0437d14ac192026a4de9ada1bc561fdc5020bec81657d8a0a7fa87e6380c5",
+  "git_base": "058724b51948962713d764781fcb4b99802f5410",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/strongly_regular_bus_2026_10_15.py",
+    "bytes": 42263,
+    "sha256": "bf52b0f87f67e9f85d19dea780291a2a188891d0dc1c1d88b1ce0ccf3e2af27f"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_integration_corrected/strongly_regular_bus_common.py",
+    "bytes": 56447,
+    "sha256": "2725b9a446618c12bffb1f098824c49c9a845e5eec587074b2f5f12fee1981fa"
+  },
+  "root_integration_review": {
+    "utc": "2026-10-16T02:05:06.029411+00:00",
+    "kind": "root_integration_source_review",
+    "root_read_complete_for_changed_implementation": true,
+    "proposal_freeze": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_integration_corrected/FINAL_FREEZE.json",
+      "bytes": 80971,
+      "sha256": "3af723f0a7eb05fbf7750fab6d70630212401086199dc9504d0645c4fb149894"
+    },
+    "source_publication_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_strongly_regular_bus_publication_review/REVIEW.json",
+      "bytes": 4625,
+      "sha256": "45b0437d14ac192026a4de9ada1bc561fdc5020bec81657d8a0a7fa87e6380c5"
+    },
+    "common": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_integration_corrected/strongly_regular_bus_common.py",
+      "bytes": 56447,
+      "sha256": "2725b9a446618c12bffb1f098824c49c9a845e5eec587074b2f5f12fee1981fa"
+    },
+    "primary_unbound": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_integration_corrected/proposed_primary_unbound.py",
+      "bytes": 38255,
+      "sha256": "4caf59b5a8cd7ce51e65f9cf3e8befb497d6fa7da1723529810e5fc4ca431e24"
+    },
+    "function_comparison": {
+      "common_vs_actual_correlated_energy": {
+        "exact_source": 28,
+        "changed": 6
+      },
+      "primary_vs_frozen_strongly_regular_bus": {
+        "exact_source": 11,
+        "added": 1,
+        "changed": 2
+      },
+      "primary_vs_actual_correlated_energy": {
+        "exact_source": 12,
+        "changed": 2
+      }
+    },
+    "coverage": [
+      "Complete changed prepare, verify, graph, finish and publish functions; complete changed primary main; binding inventories verified deterministically; historical_receipt exact from reviewed source draft; other reused functions checked against reviewed actual correlated-energy implementation. Narrow corrected preflight guard and binding schema are separately inspected against the actual publication and attachment receipts.",
+      "Complete metadata build, validation, recorder and seal source; actual produced code is authoritative over its authoring patch inputs.",
+      "Complete wrapper and packet text replacements, binding contract, command plan, PR template and integration sections; exact archive membership verified deterministically.",
+      "Oversized combined diff output was truncated and is not claimed as full read. Full changed operational functions were read in later scoped outputs. Scientific body review and source-draft review are reused at unchanged hashes."
+    ],
+    "decision": "Accept frozen integration implementation for sequential execution with actual canonical and staged review gates.",
+    "preflight_corrections": "Original frozen proposal was not executed: missing base status and attachment result-key mismatches were found by root read. Corrected proposal and its change record preserve original evidence.",
+    "scientific_programs_run": 0,
+    "retained_audit": false,
+    "editable_prompt_files_changed": []
+  },
+  "prepared_content_review": {
+    "kind": "root_prepared_content_review",
+    "utc": "2026-10-16T02:05:27.340584+00:00",
+    "prepared": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/PREPARED.json",
+      "bytes": 61233,
+      "sha256": "ea5053f37da0e5b2d1134e5320b0f21a70ba753110a83fe223320d976a9040b4"
+    },
+    "diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/CANONICALIZATION.diff",
+      "bytes": 249061,
+      "sha256": "94eb344cf5e786203e6e2c9a9a8dd2a91f35d39ba58061264c97adef44d84e88"
+    },
+    "note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/canonical_source/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/canonical_source/scripts/strongly_regular_bus_2026_10_15.py",
+      "bytes": 42263,
+      "sha256": "bf52b0f87f67e9f85d19dea780291a2a188891d0dc1c1d88b1ce0ccf3e2af27f"
+    },
+    "changed": [
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/ACTUAL_BINDING.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/BINDING_CONTRACT.md",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/BODY_MAP.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/INPUT_MANIFEST.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/PR_TITLE.txt",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/SOURCE_MANIFEST.json",
+      "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "scripts/strongly_regular_bus_2026_10_15.py"
+    ],
+    "added": [
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/ACTUAL_HANDOFF.md",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/ACTUAL_REFRESH_PROVENANCE.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/CANONICAL_BINDING.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/0037211f97d82eb917cc091f8f320a0cc594b95d7992d88a7d550c73832ee145.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/2725b9a446618c12bffb1f098824c49c9a845e5eec587074b2f5f12fee1981fa.py",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/289547820e8b6fce01f30bfc3f014d1092ab950124031885e24465e25b78116e.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/3642b82459aa3c9cde31cc4fa2d37f277ef77c335df9e6a574015b456cd8fbb8.blob",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/3f19d861fa38610a754f0f2ee4cfbf090c06ee58cd1f2654c88275cc135dc1bb.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/43d0935394d8d3dcc9d3e6f7094f730700ad3c5fea6a653d4b2dbf65b2983976.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/45b0437d14ac192026a4de9ada1bc561fdc5020bec81657d8a0a7fa87e6380c5.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/5c33c0692c4c3d48d406741d32dd3e99c98d3dee6aff1669ab26aee9311f32fe.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/5e6c1e181f121331983031ccff4736eb7270309f3a1019ed831d7ff4abbcf290.blob",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/60e379cd3bbacc05677689e751744ad92f5955d81a0e2fef71092f6d94deea88.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/6130e3cc5a55ae9761dd52abfcc0756184f566de5cd973a3a6b25e0e7aa17b77.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/71d6aa8f22b83ac1ee6aaac0f6351c58ada14d4cbdc3bf80e44a8d5db719e42f.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/933f98a30ca7bf4cd8b56dc71a0cfc1aeac22980cb4687f039d95e094c09650d.py",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/b3cb8a32eedc9732d64b52614fc70ab0723ae41c13cedfd9a109c77a3882525e.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/d6f0f4337b62097d6428c4a77a7a1767772054c0b512b2e0f75830ac082e3bdd.blob",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/da161cd410560c0785c603d5611792bc884a3450f148b1ecdaf3f8ec15c36725.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/dc185c8ed023cdac4ff9a4bb6c97bdf8ddd3408523ed8abc5cde1d18be451e0f.blob",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e0ea96413d28b25d0b8e8b718cac67969c54dea5d1855d3af42bba99b9416a52.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e1111b0b3c6724c4bf74314393cb21859b8f73b45c0036949a9f4c7034bb4928.json",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      ".claude/science/physics-loops/toe-strongly-regular-bus-20261015/binding_sources/ec2478f76ada4505294879be2910537959c88462a34d425f978c4919681f9d21.json"
+    ],
+    "note_wrapper_matches_fully_read_replacements": true,
+    "two_proof_bodies_unchanged": true,
+    "primary_executable_logic_matches_reviewed_proposal": true,
+    "source_and_canonical_reviews_distinct": true,
+    "historical_publication_nulls_preserved": true,
+    "source_or_binding_metadata_only": true,
+    "scientific_programs_run": 0,
+    "scope": "Full active text/code deltas reviewed through their exact already-read replacements; large copied receipts and manifests verified by identity and schema, not relabeled as new scientific argument reading."
+  },
+  "coverage": "Installed files match the reviewed canonical copy exactly. Frozen source wrapper and complete mathematical bodies were reviewed under their original identities; full final active text replacements and changed integrity logic were read, and canonical byte intervals separately checked. Captured historical receipts and literal inventories are byte/schema evidence, not additional scientific verification.",
+  "decision": "Accept this exact installed canonical source and the reviewed metadata-only binding step for scoped execution and regular PR publication.",
+  "scientific_programs_run": 0,
+  "primary_runs_at_review": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

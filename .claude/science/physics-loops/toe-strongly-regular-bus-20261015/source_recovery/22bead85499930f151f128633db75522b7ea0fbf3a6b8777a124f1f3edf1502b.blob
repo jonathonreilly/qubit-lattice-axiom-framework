@@ -1,0 +1,14 @@
+# Read-only inventory query failure
+
+During final packet preparation, a Python query used `r=Path('.')` and attempted to read `r.parent/'bounded_slew_independent_check/exposed_comparison/COMPARISON_FREEZE.json'`. Its actual cwd was this review directory, so the relative parent remained `.` and the second file was absent at that relative path. The tool reported exit code 1 after printing the author freeze keys; no source or receipt was written by that query. This is a bookkeeping failure, not a failed scientific computation.
+
+The returned failure was:
+
+```text
+author_at_launch/FREEZE.json ['frozen_utc', 'status', 'not_independent_or_retained', 'source_verification', 'artifacts']
+FileNotFoundError: [Errno 2] No such file or directory: 'bounded_slew_independent_check/exposed_comparison/COMPARISON_FREEZE.json'
+```
+
+The subsequent read-only query used `r=Path('.').resolve()` and exited 0, returning the absolute comparison path and keys `['frozen_utc', 'scope', 'members']`. The final sealing executable uses `Path(__file__).resolve().parent`, so it does not reuse the faulty relative-parent calculation. This note transcribes the tool-reported failure; it is not an invented executable-at-launch capture or a recovered missing launcher.
+
+The first sealing command then redirected its own stdout into a file within the sealed directory. The manifest consequently captured that file while empty, and the final printed receipt changed it after the in-process verification. An immediate independent post-execution hash check found exactly this changed member. That invalid seal, stdout/stderr, exact sealing source and post-execution discrepancy are preserved under `seal_attempt_01/`; they are not the final seal. The final command prints to the tool output without creating a live output file under the seal. Its exclusion rule was narrowed to top-level seal names so that the failed attempt's own manifest and sidecar remain covered as historical bytes in the final packet. This is a preserved bookkeeping failure, with no scientific source or result changed.

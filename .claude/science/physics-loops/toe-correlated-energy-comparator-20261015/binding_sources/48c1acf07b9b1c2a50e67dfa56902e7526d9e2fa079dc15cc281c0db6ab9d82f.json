@@ -1,0 +1,17 @@
+{
+  "kind": "root_publication_source_review_freeze",
+  "utc": "2026-10-16T01:15:02.683598+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_correlated_energy_publication_review/REVIEW.json",
+      "bytes": 13065,
+      "sha256": "615f9d7e6551b9d74f0db29549d39d38aece0b7fb196d4ad4484cdd6a2c974a0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_correlated_energy_publication_review/READ_COVERAGE.md",
+      "bytes": 2299,
+      "sha256": "bb329f8326810106947d87ee0b75c2eda0f9a94351881402e0a713ca3b393108"
+    }
+  ],
+  "scientific_programs_run": 0
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "actual_bus_memory_recovery_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "9f2c922307afc1354e75b2da0dc9a8ce0ac2b3bd",
+  "actual_git_base": "9f2c922307afc1354e75b2da0dc9a8ce0ac2b3bd",
+  "bound_note_sha256": "6f76d1790705855488e6b8288b4b4fe13031919930c0b9dabe7ce7ade1cb6abf",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/023173cfa57b4e2b01a79d9ed5130d460da06011566ffe2d752f3aae40a492af.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/03e1053a510f8c8df4847142e201f81c58f8e71f5bb2363b96df312cbe84f2e1.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1637c0341624373779fcc88b7978a940be7e500e9fe7319079cb76f8de0769f0.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1d85a9f7d5681af5e5f7fd238c1abad0f77d44bf7d62d5681f4ab345d73ed719.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/1f99687ee529262859b49720239a43a11fe81885dc3187868e80e6b86450591a.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/22abe97261a142634f183d4f30b7aceca32af2ca0ca10b28716d9fc74170dcdf.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/35026a41dfa092def44f0803c9f4718a1260a1d59ac56bd97bf1b8c72a90e6d4.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/38921f710d8be0a68a29d49ccaa8739f92753f297dc45fee5ce97cfdbb82eb0b.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/3debd91910196a070cf6b35f98df706e5bb0ecc9bd957ebe8b172f213635e041.md",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/5f5639d02e68fec88a26888b583f662e01351102678d275df1f895ac7fa0558c.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/5f680ad2dcd99182bd6e023e879963c8c23b6b22d8b737045c1ab50ad91c5e49.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/7da7c202aad314a8339796089181bd483bc381f6ddeaaaa725050452d0340a77.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/867f33aa8aaae7796c350f4c86631947da24478f795956a76f46c6e973cba91d.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/ad9ca8cfd183154fd1d848f591520d9548b69cf726b2476f6ac36fc23d28feba.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/c3f27cfea2ece87710a2d5ec084f03fb925372c17cae3b1e6739ae17566071cf.json",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/cbf63490ae7196e3a97132fcda57765b6f6e78754df8f7d4694032c96a8baa37.md",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/ce87129940179cf97f0b6ae568c318a5898ec085af287c0aeec65a5cbfc6c629.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/dbaac9e365d4c4c52bf72f521f5f252b1b8d601114971af1367afbc9cd25f5e4.py",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/f491165e500687268a77e78731bd3e9cfe78f894e5cef641055697d76907eb1e.blob"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-bus-memory-recovery-20261016/binding_sources/023173cfa57b4e2b01a79d9ed5130d460da06011566ffe2d752f3aae40a492af.json",
+    "bytes": 23501,
+    "sha256": "023173cfa57b4e2b01a79d9ed5130d460da06011566ffe2d752f3aae40a492af"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "kind": "qualified_conditional_mathematical_source_acceptance",
+  "utc": "2026-10-16T01:38:37.798475+00:00",
+  "root_read_complete": true,
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 7871,
+    "sha256": "86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/REVIEW.md",
+    "bytes": 19400,
+    "sha256": "498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 3583,
+    "sha256": "bdb0e8d2b513a4b318ad54a6c2627ec4f911fd6f700a962dd659ef1338f2712f"
+  },
+  "bus_parent_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 5321,
+    "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+  },
+  "verified_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_root_proposal/FREEZE.json",
+        "bytes": 708,
+        "sha256": "9d94e19bc4768df791242d45e1a1872ba1d84c191ed9109e641afca02f306fed"
+      },
+      "verified_members": 1
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/FREEZE.json",
+        "bytes": 4885,
+        "sha256": "dd0fa71627a12cb68e4e95b345510cb2f906181b978aa6a056a61badcc8b2b1b"
+      },
+      "verified_members": 22
+    }
+  ],
+  "actual_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/check_joint_moments.py",
+      "bytes": 6582,
+      "sha256": "e6b59e5008c14ef15412f79e7a8bfb19526bad3d5d6a40626c7b510109b543fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/run_exact_check.py",
+      "bytes": 2201,
+      "sha256": "87996647963fa851729571e2f554ccf4539623dc7a90f51293aeb0f90be5df6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/SOURCE_EXPOSURE.md",
+      "bytes": 5011,
+      "sha256": "f5bddd08b5de3c2db3659a9b93fe8908cb0ee709857c866c50d1ea8e4835bca7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/VERIFICATION.json",
+      "bytes": 4128,
+      "sha256": "db4863ae8fa46cd1ef47fc9d22aa7ca3647432a28994d6942d08fafcf2d1c3b2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/LAUNCH.json",
+      "bytes": 1601,
+      "sha256": "6a70e1335853cd8eb6f93fd19bc33cd53e109f29c29d66bcd8cd2a108209e186"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/EXECUTION.json",
+      "bytes": 1888,
+      "sha256": "eb62d6dbf7e94b97631c3e4c1ed46d52bf1a2d4ad34c9092088c09b210bc4955"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/stdout.json",
+      "bytes": 1268,
+      "sha256": "1d967c035f607e14c34f548007e168677cc4e864da8f90088fc40c8cfd737d03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_independent_check/exact_check/run_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "accepted_scope": "Full-code same-generator moment identities and all-time bounds, full reserve/load allowance and compatible extra xi-smallness under inherited conditional bus premises.",
+  "independence": "Same-model exposed recomputation with independently assembled exact fixture; no blind or model-family claim.",
+  "scientific_programs_run_this_acceptance": 0,
+  "retained_audit": false,
+  "native_realization": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,96 @@
+{
+  "kind": "root_canonical_source_review",
+  "utc": "2026-10-16T04:13:51.112488+00:00",
+  "root_read_complete": true,
+  "git_base": "68c531309ac6dae96289aab964213b8c5f55969b",
+  "bound_note_sha256": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49",
+  "canonical_body_pins": [
+    {
+      "name": "root_proposal",
+      "source": "bus_joint_energy_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 8579,
+      "end_byte_exclusive": 16450,
+      "bytes": 7871,
+      "sha256": "86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1"
+    },
+    {
+      "name": "exposed_review",
+      "source": "bus_joint_energy_independent_check/REVIEW.md",
+      "container": "docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 16498,
+      "end_byte_exclusive": 35898,
+      "bytes": 19400,
+      "sha256": "498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1"
+    }
+  ],
+  "parent_binding": {
+    "canonical_parents": [
+      {
+        "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+        "bytes": 83919,
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+        "acceptance_sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726",
+        "accepted_body_intervals": [
+          {
+            "name": "author_bus_body",
+            "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 19817,
+            "end_byte_exclusive": 60317,
+            "bytes": 40500,
+            "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+          },
+          {
+            "name": "exposed_bus_review",
+            "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 60486,
+            "end_byte_exclusive": 83919,
+            "bytes": 23433,
+            "sha256": "cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7"
+          }
+        ],
+        "used_contract": "Complete joint code K0J=JF, commuting secular D, source-only full-space A2, bus-vacuum V, reserves/loads, finite corrector and actual-time target contract."
+      }
+    ],
+    "transitive_premises": [],
+    "source_revision": "Published parent PR9631 HEAD68c531309ac6dae96289aab964213b8c5f55969b; future integration base not observed",
+    "upstream_history": "Parent fully supplies its mathematical construction; its older source exposures are not additional imported theorem parents."
+  },
+  "source_draft_freeze_sha256": "d0997db66b3b7465a8a02a233a6d0b8c56cb48af6571a3659fa49852cb28700f",
+  "source_draft_review_sha256": "0b71a5ba5117ffce4792ede1dc1c36f20f61b35025a62377254d05807b61c923",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_joint_energy_moments_2026_10_16.py",
+    "bytes": 28297,
+    "sha256": "d57b31938ab4383449743491b34c260c21ed179ccb77bd40bf8da51f11fecaf9"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_graph_recovery_proposal/recovery_common.py",
+    "bytes": 64260,
+    "sha256": "e621a77af0844abb551bbc08135634b63dc3b90c34ad6ca283a69a97251aaedb"
+  },
+  "reviewed_canonicalization_diff": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/CANONICALIZATION.diff",
+    "bytes": 21770,
+    "sha256": "a2ab6aeed4c750e8dc57c2d6621d95cdcb2a27f999348ee8b322d2449cefb03d"
+  },
+  "read_scope": "New127-byte parent citation read; both mathematical bodies and all other note bytes exactly unchanged. Complete recovery implementation reviewed separately. Canonical binding changes checked against exact intended null-current/preserve-prior transforms; every manifest pin checked, primary AST unchanged except manifest digest. Earlier complete scientific reads reused at identical premises/scope.",
+  "changed_primary_assignments": [
+    "MANIFEST_SHA256"
+  ],
+  "verified_prepared_files": 81,
+  "decision": "Amended canonical note and pending bindings accepted for actual new canonical-review binding and scoped recovery checks. Failed original graph remains preserved; final staged review and publication are separate.",
+  "scientific_programs_run": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": [],
+  "prior_canonical_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_joint_energy_integration_review/CANONICAL_REVIEW.json",
+    "bytes": 4688,
+    "sha256": "3e6413269c7d8fe33fbfe5bc7ae7c47f715c6629712bfc9bd1c4bb024c9dda7a"
+  },
+  "implementation_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_joint_energy_graph_recovery_review/REVIEW.json",
+    "bytes": 3975,
+    "sha256": "8649dcbfa0ead07b49b8fa6924c4d80b76448d4cec42d998bff3dbc96d629f49"
+  }
+}

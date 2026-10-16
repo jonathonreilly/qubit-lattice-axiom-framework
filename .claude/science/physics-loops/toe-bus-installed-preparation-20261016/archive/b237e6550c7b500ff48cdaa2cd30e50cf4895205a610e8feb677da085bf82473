@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-16T04:51:22.491494+00:00",
+  "kind": "root_qualified_source_acceptance",
+  "disposition": "Accepted conditional preparation with fixed per-site modeled strength/slew and explicitly evolved retained memory; not the earlier literal-Q comparator.",
+  "root_read_complete": true,
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 7516,
+    "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+  },
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_proposal/FREEZE.json",
+    "bytes": 440,
+    "sha256": "2d9e190795cb86de679ee01850039f59405bd9745a3931e09955ef7f9bc33e1c"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/REVIEW.md",
+    "bytes": 17568,
+    "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/FREEZE.json",
+    "bytes": 3887,
+    "sha256": "6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525"
+  },
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 6990,
+    "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+  },
+  "parent_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 3462,
+    "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+  },
+  "parent_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 5082,
+    "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+  },
+  "review_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/run_001/EXECUTION.json",
+    "bytes": 2859,
+    "sha256": "dee8a6bc8fa6c214d1194cc2b8ffa60ac1d981bcdffcf9895558dd7650e8e262"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_bounded_slew_preparation_exposed_check/SOURCE_MANIFEST.json",
+    "bytes": 2248,
+    "sha256": "b1313b6e45723073875adb13627cebd847b9405fb30153a7e823b9c09d98238c"
+  },
+  "frozen_members_verified": 22,
+  "original_and_captured_sources_verified": 6,
+  "verification_limits": "One exposed same-model analytical review with separately written floating-point xi=0 discriminator; no blind replication, positive-xi physical simulation, derivative measurement, new root scientific execution or retained audit. Polynomial composition and native suppliers remain open.",
+  "accepted_refinements": [
+    "Noncircular uniform beta_bar before xi for optional moment tolerances.",
+    "Reference-valued moment operators retaining E conjugated by U_E.",
+    "Order-one literal-memory discrepancy despite equal ordinary moments."
+  ],
+  "root_scientific_programs_run": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

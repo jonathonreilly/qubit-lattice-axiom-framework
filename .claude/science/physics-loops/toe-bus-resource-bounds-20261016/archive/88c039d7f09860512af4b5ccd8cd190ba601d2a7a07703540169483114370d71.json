@@ -1,0 +1,45 @@
+{
+  "started_utc": "2026-10-16T13:29:15.932578+00:00",
+  "phase": "publish",
+  "argv": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/publish_bus_preparation.py",
+    "--root-execute",
+    "--root-binding",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ROOT_BINDING_INPUT.json",
+    "--root-binding-sha",
+    "393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3",
+    "--reviewed-staging-sha",
+    "e7d8b001420d6869a8f229f764194aaa5da7462d3a6bb3417a83f692044a7065",
+    "--staged-review-receipt",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ROOT_STAGED_REVIEW.json",
+    "--staged-review-sha",
+    "1357827f87cb7e74a8cde73b054af9669b20451090978c33d01fc6ea1b94213b"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex",
+  "common_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/bus_preparation_common.py",
+    "bytes": 51748,
+    "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+  },
+  "entry_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/publish_bus_preparation.py",
+    "bytes": 88,
+    "sha256": "c6a0da4356514b338ae33137710d08aa25526152be07fb4e0d84d774b476840e"
+  },
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 64064,
+    "sha256": "56d4aedf4d2f34eb7ca22a9d8392b7f3a2c2098ef64b2eddde42dcb4bd107f93"
+  },
+  "root_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ROOT_BINDING_INPUT.json",
+    "bytes": 1589,
+    "sha256": "393087acba3d7952f9ad09b4b79e32e69f2153066a06752c454efd590189cfc3"
+  },
+  "previous_phase_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/actions/finish/EXECUTION.json",
+    "bytes": 931,
+    "sha256": "e4c03074068b166715f7332892dc8af647f5d5bd9353858ccb6650c361eccff2"
+  },
+  "scientific_execution": false
+}

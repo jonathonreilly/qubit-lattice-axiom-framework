@@ -1,0 +1,12 @@
+{
+  "member_count": 71,
+  "changed_after_seal": [
+    {
+      "path": "SEAL_EXECUTION.stdout.json",
+      "expected_bytes": 0,
+      "actual_bytes": 1345,
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "f37267310f011468fecddf6cffd621f679c8695cb0d4b43927c5d8d81f1476b4"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+"""Capture exact bounded reviewer executable and launcher before execution."""
+from pathlib import Path
+import datetime,hashlib,json,os,subprocess,sys
+root=Path(__file__).resolve().parent
+run=root/'run_01';run.mkdir(exist_ok=False)
+sources=[]
+for name in ['transfer_check.py','run_recorded.py']:
+    data=(root/name).read_bytes();(run/name).write_bytes(data)
+    sources.append({'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+cmd=[sys.executable,str(run/'transfer_check.py')]
+env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1')
+launch={'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'argv':cmd,'cwd':str(run),'timeout_seconds':120,'sources_at_launch':sources,'limits':{'largest_exact_Gram_dimension':12,'largest_one_particle_matrix_dimension':6,'largest_log_matrix_dimension':2},'environment_overrides':{k:env[k] for k in ['OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','PYTHONDONTWRITEBYTECODE']}}
+(run/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+with (run/'stdout.jsonl').open('w') as out,(run/'stderr.txt').open('w') as err:
+    try:
+        proc=subprocess.run(cmd,cwd=run,env=env,stdout=out,stderr=err,timeout=120,check=False)
+        result={'exit_code':proc.returncode,'timed_out':False}
+    except subprocess.TimeoutExpired:result={'exit_code':None,'timed_out':True}
+result['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+(run/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result))
+sys.exit(0 if result['exit_code']==0 else 1)

@@ -1,0 +1,26 @@
+{
+  "verified_utc": "2026-10-16T01:09:24.872783+00:00",
+  "author_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate",
+  "author_freeze": {
+    "bytes": 9215,
+    "sha256": "2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508"
+  },
+  "author_derivation": {
+    "bytes": 40500,
+    "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+  },
+  "original_author_members_verified": 45,
+  "captured_author_members_verified": 45,
+  "prior_original_freeze": {
+    "bytes": 4983,
+    "sha256": "cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5"
+  },
+  "prior_original_members_verified_unchanged": 26,
+  "prior_comparison_freeze": {
+    "bytes": 1548,
+    "sha256": "e161fa0ec167b09b15690bcdc8082d43fbfa052e32e0e2086145490f8698ac56"
+  },
+  "prior_comparison_members_verified_unchanged": 8,
+  "reviewer_executable_copies_match": true,
+  "scientific_status_conferred_by_hashes": false
+}

@@ -1,0 +1,77 @@
+{
+  "bodies": [
+    {
+      "name": "transfer_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 19219,
+      "end_byte_exclusive": 48774,
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "name": "occupied_path_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 48936,
+      "end_byte_exclusive": 70987,
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+    },
+    {
+      "name": "explicit_edge_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 71149,
+      "end_byte_exclusive": 95935,
+      "bytes": 24786,
+      "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+    },
+    {
+      "name": "box_exposed_review",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 96095,
+      "end_byte_exclusive": 112676,
+      "bytes": 16581,
+      "sha256": "a747876323915e61a3b506f2d91380da6c365e002c089f32ed0a03bc453ff414"
+    },
+    {
+      "name": "narrow_onsite_obstruction_appendix",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 112852,
+      "end_byte_exclusive": 118181,
+      "bytes": 5329,
+      "sha256": "4db3c5e627558505aa767f4b62d67c1ca809c141506db1a376e5c7cff0579a57"
+    },
+    {
+      "name": "transfer_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 118357,
+      "end_byte_exclusive": 122807,
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "name": "edge_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 122979,
+      "end_byte_exclusive": 125310,
+      "bytes": 2331,
+      "sha256": "fad54208ad4fe2aaeaa81f3699231cd1ab8e7a0fbbad9d28fc193fdb7ae63d0e"
+    },
+    {
+      "name": "chain_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 125483,
+      "end_byte_exclusive": 128854,
+      "bytes": 3371,
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+    },
+    {
+      "name": "box_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 129025,
+      "end_byte_exclusive": 133385,
+      "bytes": 4360,
+      "sha256": "766121bc9ab9d91b2f29744723560b4f2113bee7df262f88029171e021dc75a2"
+    }
+  ],
+  "intervals": "zero-based half-open exact bytes"
+}

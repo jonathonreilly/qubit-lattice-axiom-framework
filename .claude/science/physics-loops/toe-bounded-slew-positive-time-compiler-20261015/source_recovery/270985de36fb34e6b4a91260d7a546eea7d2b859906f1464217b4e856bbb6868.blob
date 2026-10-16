@@ -1,0 +1,50 @@
+{
+  "accepted_at_utc": "2026-10-15T23:58:00.924598+00:00",
+  "status": "conditional-support; qualified source acceptance, no retained audit",
+  "primary_publication_contract": "Independent weak-bump SU(d) compiler with the parent scalar ledger; optional positive minimum-runtime prefix is a separate exposed corollary.",
+  "root_variant": "Separately checked full U(d) ramp/hold compiler; its different coherent runtime phase target must remain explicit.",
+  "source_derivations": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/DERIVATION.md",
+      "bytes": 11481,
+      "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/DERIVATION.md",
+      "bytes": 19478,
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5"
+    }
+  ],
+  "exposed_comparison": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/exposed_comparison/COMPARISON.md",
+    "bytes": 9667,
+    "sha256": "cc263f5f842c4d0f955d2d14bff78dcfbae4df0d331ed61fdb4d6b698868977f"
+  },
+  "root_readout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_root_candidate/INDEPENDENT_READOUT.md",
+    "bytes": 3217,
+    "sha256": "3780da2bf52f63fd6c9972fe5392921a8cd255f01aca5cdd426be81a1433316f"
+  },
+  "actual_checks": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/bounded_slew_ramp_diagnostic/EXECUTION.json",
+      "bytes": 1458,
+      "sha256": "08a88b6c5a8f27cdf3f6cc62e2ad24232d592975cf4d4ab509af0045892af639"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_independent_check/checks/exact_symbolic_final/EXECUTION.json",
+      "bytes": 2040,
+      "sha256": "76bb338ff6c3cf62ebba7d205588a970768942c184c44f7adc81c74a0140aa46"
+    }
+  ],
+  "review_coverage": "Root read both complete arguments, complete comparison, source coverage, complete check implementations and scoped results. Worker froze its proof before reading the root proof. Shared model, parent machinery and question framing remain disclosed.",
+  "limits": [
+    "Supplied augmented polynomial certificate and external control, timing, isolation and coefficient access.",
+    "No polynomial bound on runtime, pulses, oracle/search cost, precision or accumulated action.",
+    "Fixed amplitude and first derivative do not establish hard bandwidth or higher derivative bounds.",
+    "Keep scalar phase contracts distinct and charge integrated defects and peak positivity separately.",
+    "No autonomous controller, native preparation, physical energy identification or permanent record follows.",
+    "No compiler search, formal proof, independent-model replication or retained audit was executed."
+  ],
+  "editable_prompt_files_changed": []
+}

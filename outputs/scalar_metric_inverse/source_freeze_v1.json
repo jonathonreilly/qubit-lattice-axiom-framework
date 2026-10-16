@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-16T11:41:20.565507+00:00",
+  "source_main": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
+  "files": {
+    "docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": "2151e6773f5cc2eee70c01fcb0964ec43d749feb37710435b30ddcabd9e86307",
+    "scripts/scalar_metric_coefficients.py": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+    "scripts/scalar_metric_conditioning.py": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+    "scripts/scalar_metric_constraints.py": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+    "scripts/scalar_metric_fixed_background.py": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+    "scripts/scalar_metric_geometry.py": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+    "scripts/scalar_metric_inverse.py": "4b66a051265f0e9643fa70d8e1e0cc1fd6b21bd5a3d61bd95946b9934002d3d3",
+    "scripts/scalar_metric_joint_gain.py": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+    "scripts/scalar_metric_photon_map.py": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+    "scripts/scalar_metric_transport.py": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+    "scripts/scalar_metric_varying_coupling.py": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01"
+  },
+  "pending": "Fixed-background focused independent source comparison; kernel/domain issue under investigation; not PR-ready."
+}

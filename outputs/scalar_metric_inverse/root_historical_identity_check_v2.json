@@ -1,0 +1,25 @@
+{
+  "scope": "Fresh byte binding validation; complete scientific readings are recorded separately, not inferred from hashes",
+  "reports": [
+    {
+      "manifest": "independent_scalar_response/SOURCE_MANIFEST_v1.json",
+      "sha256": "8127255f0e6c9a748b3d96fe4889394eed4c49f7543ecd09ab82d0f12fa2edce",
+      "verified_files": 32
+    },
+    {
+      "manifest": "independent_mode_inverse/MANIFEST_v2.json",
+      "sha256": "669181ed61c60474880d619cdf06d17a0f3bb98c8f7a424827ef40a1c239e642",
+      "verified_files": 85
+    },
+    {
+      "manifest": "independent_metric_readout/SOURCE_MANIFEST_v1.json",
+      "sha256": "01b1e8c805838868d6d5819d00e11de7f971a961cbe1a8d4841e66d9f671fe30",
+      "verified_files": 50
+    },
+    {
+      "manifest": "independent_metric_fixed_action/MANIFEST_v1.json",
+      "sha256": "28151dac6391981e3b25bab30154028427dbf15cfd375133fe42d1b7d7a7b76f",
+      "verified_files": 57
+    }
+  ]
+}

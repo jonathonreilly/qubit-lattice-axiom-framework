@@ -1,0 +1,9 @@
+{
+  "operation": "Remove exactly one extra terminal blank line from a readable copy; the independently frozen original remains byte-identical in historical/source_evidence.tar.gz at independent_metric_fixed_action/REPORT_v2.md",
+  "original_sha256": "8bfd067a86f0cd2bf095f873e7af3a62f775cb563e8b08f5c2051c7fba690131",
+  "readable_copy_sha256": "63677df12e10bccbf32d79f7fdc0b8c5ad8ddf4aeccfc17d51fdd04ac0264a75",
+  "removed_bytes": 1,
+  "first_staged_whitespace_exit_code": 2,
+  "first_staged_whitespace_message": "outputs/scalar_metric_inverse/fixed_background_review.md:130: new blank line at EOF.",
+  "scientific_content_unchanged": true
+}

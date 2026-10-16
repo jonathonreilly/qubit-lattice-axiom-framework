@@ -1,0 +1,9 @@
+# Milestone publication decision
+
+OPEN
+
+This is a local author-side cluster evaluation, not an audit judgment. Prior frozen source notes were read at their exact heads:9628 supplies a static metric/profile inverse;9634 supplies a sampled clamped-response protocol;9637 reconstructs an action from force residues and ringdowns;9638 constrains scalar histories when expansion, coupling and fixed-density curvature functions are already supplied. The neighborhood study9632 is a separate research family.
+
+The present unit changes a load-bearing input obligation of9638. It derives coupling and fixed-density curvature from jointly compatible metric histories, retaining matter-clock conversion, source response and all original constraints. It also treats the physical photon map and proves a separate fixed-background local observability statement, including the local metric kernel. Those were not assumptions discharged by the prior inverse. The result is still conditional and does not solve joint background identification or produce a measured scalar signal.
+
+This remains the same broad claim type, bounded_theorem. A changed claim label is not the reason to publish. The value is a distinct derivation and exact geometry discriminator. Combining the response, coefficient, trace, photon and boundary work into one unit avoids several thin corollary PRs. The note and imported computational sources re-establish the whole result, so independent review can assess it without treating the five earlier open PRs as authority. The extra review cost is justified by eliminating two supplied functions within the ideal-input inverse and identifying which boundary data can be inferred at fixed background. No further parameter-only variant merits a separate PR. Continue with the simultaneous background/readout problem after this coherent milestone is frozen.

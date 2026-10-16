@@ -1,0 +1,77 @@
+{
+  "scope": "Source packaging, not independent mathematical evidence",
+  "units": [
+    {
+      "unit": "geometry",
+      "original_source": "check_scalar_response_v1.py",
+      "original_source_sha256": "72acb13dba4ad125707e3b70ce37c93cc6ce3c05c1b4997ae268b0f10a4f8ed6",
+      "canonical_path": "scripts/scalar_metric_geometry.py",
+      "canonical_sha256": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "constraints",
+      "original_source": "check_scalar_response_closure_v1.py",
+      "original_source_sha256": "129d7573f02e172c6e9407e11429c21b317a8d3f4dd55b3527df4970b92df28f",
+      "canonical_path": "scripts/scalar_metric_constraints.py",
+      "canonical_sha256": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "coefficients",
+      "original_source": "check_mode_inverse_v1.py",
+      "original_source_sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "canonical_path": "scripts/scalar_metric_coefficients.py",
+      "canonical_sha256": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "varying_coupling",
+      "original_source": "check_mode_inverse_jets_v1.py",
+      "original_source_sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "canonical_path": "scripts/scalar_metric_varying_coupling.py",
+      "canonical_sha256": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "joint_gain",
+      "original_source": "check_mode_joint_gain_v1.py",
+      "original_source_sha256": "44d5bd656fa1e42f1f8730c47c638d418ec2c9bb4f16dbedc2afce996541ab91",
+      "canonical_path": "scripts/scalar_metric_joint_gain.py",
+      "canonical_sha256": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "photon_map",
+      "original_source": "check_metric_readout_v1.py",
+      "original_source_sha256": "512e41145cbaf8c9320b4ee41abffedada9bd02777aee7656e447a9642b20e2a",
+      "canonical_path": "scripts/scalar_metric_photon_map.py",
+      "canonical_sha256": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "transport",
+      "original_source": "check_metric_redshift_transport_v1.py",
+      "original_source_sha256": "1bac771ed115e8ee87e58e2c30b05c06019ec2478ad70c96ab6bcc413c1463f6",
+      "canonical_path": "scripts/scalar_metric_transport.py",
+      "canonical_sha256": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "fixed_background",
+      "original_source": "check_metric_fixed_action_closure_v1.py",
+      "original_source_sha256": "157d34a955fb2367cd523ddf760da6d27c803f6532d8160a23500949d9ee9b00",
+      "canonical_path": "scripts/scalar_metric_fixed_background.py",
+      "canonical_sha256": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    },
+    {
+      "unit": "conditioning",
+      "original_source": "check_metric_readout_numerics_v3.py",
+      "original_source_sha256": "d03d218fa43488a9d0c59424b72a561990c6765c7104af95af14ae14103bb9d2",
+      "canonical_path": "scripts/scalar_metric_conditioning.py",
+      "canonical_sha256": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+      "change": "Exact AST source segments before result serialization wrapped in run_checks; directory/protocol integrity setup removed; mathematical statements unchanged."
+    }
+  ]
+}

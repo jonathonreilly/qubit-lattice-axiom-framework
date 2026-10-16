@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-16T12:07:46.916887+00:00",
+  "vocabulary_fix_exit": 0,
+  "vocabulary_report_exit": 0,
+  "vocabulary_fix_changed_files": [],
+  "fix_stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /Users/jonBridger/.codex/worktrees/scalar-metric-inverse-20261016/New Axioms Lets Go/outputs/scalar_metric_inverse/vocab_publication.json\n",
+  "report_stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+  "link_checks": [
+    {
+      "source": "docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md",
+      "target": "../scripts/scalar_metric_inverse.py",
+      "exists": true
+    }
+  ],
+  "bad_links": [],
+  "science_sources_unchanged": true,
+  "shared_landing_validation": "pending"
+}

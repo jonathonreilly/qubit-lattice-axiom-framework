@@ -1,0 +1,48 @@
+{
+  "outcome": "runner_cache rejected execution identity, not a scientific control failure",
+  "exception": "RunnerIdentityChangedError",
+  "runner_sha256_unchanged": "4b66a051265f0e9643fa70d8e1e0cc1fd6b21bd5a3d61bd95946b9934002d3d3",
+  "input_fingerprint_unchanged": "57efcb2e9a78c5a1b75393c8da21f402f4b8e67ea57513aff9c0b8f0e8f52e84",
+  "changed_stat": "scripts directory grew32 bytes during initial imported-module bytecode creation; file byte digests unchanged",
+  "failed_controls": 0,
+  "unit_counts": {
+    "coefficients": [
+      40,
+      0
+    ],
+    "conditioning": [
+      19,
+      0
+    ],
+    "constraints": [
+      10,
+      0
+    ],
+    "fixed_background": [
+      24,
+      0
+    ],
+    "geometry": [
+      42,
+      0
+    ],
+    "joint_gain": [
+      22,
+      0
+    ],
+    "photon_map": [
+      53,
+      0
+    ],
+    "transport": [
+      20,
+      0
+    ],
+    "varying_coupling": [
+      13,
+      0
+    ]
+  },
+  "preserved_result_sha256": "74b5f595acd3dc85bbcbc1f32068987506efe8b85b274c1a5e3c3d07a60142d2",
+  "repair": "Set PYTHONDONTWRITEBYTECODE=1 for envelope subprocess and repeat unchanged source; do not count rejected envelope as a valid cache."
+}

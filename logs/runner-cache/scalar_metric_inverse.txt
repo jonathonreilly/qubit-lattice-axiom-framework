@@ -1,0 +1,279 @@
+===== runner cache v1 =====
+runner: scripts/scalar_metric_inverse.py
+runner_sha256: 274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708
+input_fingerprint_sha256: e6224789925851fc0d2bdac7ea83426e14faa8d85a8498045a2cfe3f8f495922
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.55
+status: ok
+----- stdout -----
+PASS [geometry] linear covariant Box from determinant and inverse metric
+PASS [geometry] spatial scalar curvature perturbation
+PASS [geometry] extrinsic Hamiltonian term
+PASS [geometry] bare current conservation gives density and velocity equation
+PASS [geometry] proper dust and scalar energy use force Vp+alpha r
+PASS [geometry] Hamiltonian ADM constraint equals displayed Fourier equation
+PASS [geometry] full scalar equation follows from varied source at fixed bare rho
+PASS [geometry] source elimination retains off-minimum force and metric derivatives
+PASS [geometry] particle momentum gives theta friction 2H+alpha v
+PASS [geometry] momentum constraint including scalar and dust velocity
+PASS [geometry] matter metric lapse potential
+PASS [geometry] matter metric curvature potential
+PASS [geometry] Weyl sum unchanged
+PASS [geometry] conditional slip ratio
+PASS [geometry] exact response identity follows without quasistatics
+PASS [geometry] naive Yukawa residual accounting
+PASS [geometry] uncoupled ratio zero does not require scalar zero
+PASS [geometry] matter-time background force
+PASS [geometry] matter-time denominator is not bare curvature
+PASS [geometry] matter-time source offset
+PASS [geometry] off-minimum forward background effective denominator
+PASS [geometry] off-minimum forward background source offset
+PASS [geometry] same forward background in matter clock denominator
+PASS [geometry] same forward background in matter clock source
+PASS [geometry] algebraic source example K2=1 constraint
+PASS [geometry] algebraic source example K2=1 scalar equation
+PASS [geometry] algebraic source example K2=1 response identity
+PASS [geometry] controlled residual triangle bound K2=1
+PASS [geometry] algebraic source example K2=10 constraint
+PASS [geometry] algebraic source example K2=10 scalar equation
+PASS [geometry] algebraic source example K2=10 response identity
+PASS [geometry] controlled residual triangle bound K2=10
+PASS [geometry] algebraic source example K2=100 constraint
+PASS [geometry] algebraic source example K2=100 scalar equation
+PASS [geometry] algebraic source example K2=100 response identity
+PASS [geometry] controlled residual triangle bound K2=100
+PASS [geometry] detect mutation: omit alpha*r*u from total density
+PASS [geometry] detect mutation: omit lapse force term in KG
+PASS [geometry] detect mutation: drop metric time source
+PASS [geometry] detect mutation: identify effective denominator with mu
+PASS [geometry] detect mutation: omit off-minimum numerator
+PASS [geometry] detect mutation: omit mass-dependent Euler friction
+PASS [constraints] Hamiltonian constraint propagated
+PASS [constraints] spatial trace follows from momentum and original equations
+PASS [constraints] physical Euler theta factors
+PASS [constraints] full matter-time response conversion
+PASS [constraints] matter-time damping coefficient
+PASS [constraints] canonical scalar perturbation remains w=u/M
+PASS [constraints] Jordan potential difference supplies b*w
+PASS [constraints] J over b derivative retained
+PASS [constraints] J over b second derivative retained
+PASS [constraints] detect omitted clock damping shift
+PASS [coefficients] quotient derivatives give five coefficients
+PASS [coefficients] coupling magnitude recovered
+PASS [coefficients] log coupling derivative recovered
+PASS [coefficients] speed product recovered without 4-6B denominator
+PASS [coefficients] fixed-bare-density curvature recovered
+PASS [coefficients] remaining d compatibility
+PASS [coefficients] remaining f compatibility
+PASS [coefficients] background source without supplying b sign
+PASS [coefficients] curvature condition from force derivative
+PASS [coefficients] Hamiltonian density restores original scalar
+PASS [coefficients] reconstructed source satisfies momentum
+PASS [coefficients] reconstructed source satisfies Hamiltonian
+PASS [coefficients] matter velocity conversion cancels coupling drag
+PASS [coefficients] matter density continuity transformation
+PASS [coefficients] witness original Friedmann
+PASS [coefficients] witness original Raychaudhuri
+PASS [coefficients] witness original scalar
+PASS [coefficients] witness original bare dust
+PASS [coefficients] witness fixed-density curvature
+PASS [coefficients] witness proper matter clock
+PASS [coefficients] full physical initial-data determinant
+PASS [coefficients] initial physical coefficient a
+PASS [coefficients] initial physical coefficient c
+PASS [coefficients] initial physical coefficient d
+PASS [coefficients] initial physical coefficient e
+PASS [coefficients] initial physical coefficient f
+PASS [coefficients] same-k design loses rank
+PASS [coefficients] critical B power-background scalar
+PASS [coefficients] critical B positive dust
+PASS [coefficients] critical B inversion remains regular
+PASS [coefficients] critical B d alone loses q
+PASS [coefficients] small amplitude does not bound first derivative
+PASS [coefficients] small amplitude does not bound second derivative
+PASS [coefficients] full forward original ODE succeeded
+PASS [coefficients] forward Hamiltonian propagated
+PASS [coefficients] coefficient recovery on all31epochs
+PASS [coefficients] full mode source and dust compatibility
+PASS [coefficients] physical rank stays nonzero on sampled interval
+PASS [coefficients] clock second derivative omission is detectable
+PASS [coefficients] naive observed curvature c is not kappa
+PASS [varying_coupling] original varying-coupling ODE succeeded
+PASS [varying_coupling] coefficient recovered from registered potential jets
+PASS [varying_coupling] coefficient first derivative recovered from registered potential jets
+PASS [varying_coupling] coefficient second derivative recovered from registered potential jets
+PASS [varying_coupling] coupling magnitude recovered from registered potential jets
+PASS [varying_coupling] speed product recovered from registered potential jets
+PASS [varying_coupling] fixed-bare-density curvature recovered from registered potential jets
+PASS [varying_coupling] source ratio recovered from registered potential jets
+PASS [varying_coupling] original Hamiltonian propagated
+PASS [varying_coupling] original background Friedmann propagated
+PASS [varying_coupling] coupling varies on fixture
+PASS [varying_coupling] monotonic scalar chart respected
+PASS [varying_coupling] rank supported at all21sampledepochs
+PASS [joint_gain] general trace gain transformation
+PASS [joint_gain] joint q from invariant trace derivative coefficient
+PASS [joint_gain] joint gain drift recovered
+PASS [joint_gain] wrong missing B factor changes joint reconstruction
+PASS [joint_gain] wrong omitted trace gain derivative is detectable
+PASS [joint_gain] critical background Friedmann
+PASS [joint_gain] critical background Raychaudhuri
+PASS [joint_gain] critical background original scalar
+PASS [joint_gain] critical background dust evolution
+PASS [joint_gain] critical coupling exactly two thirds
+PASS [joint_gain] critical background positive dust
+PASS [joint_gain] critical original-equation forward solve succeeds
+PASS [joint_gain] B in critical-coupling gain witness
+PASS [joint_gain] q in critical-coupling gain witness
+PASS [joint_gain] drift in critical-coupling gain witness
+PASS [joint_gain] kappa in critical-coupling gain witness
+PASS [joint_gain] trace_damping in critical-coupling gain witness
+PASS [joint_gain] trace_fit in critical-coupling gain witness
+PASS [joint_gain] scalar_fit in critical-coupling gain witness
+PASS [joint_gain] Hamiltonian in critical-coupling gain witness
+PASS [joint_gain] critical rank-five design persists
+PASS [joint_gain] critical rank-four trace design persists
+PASS [photon_map] polynomial_forward_kernel
+PASS [photon_map] polynomial_radial_inverse
+PASS [photon_map] radial_boundary_constant
+PASS [photon_map] radial_boundary_inverse_r
+PASS [photon_map] time_dependent_kernel_inverse
+PASS [photon_map] cone_first_time
+PASS [photon_map] cone_fixed_time_radial
+PASS [photon_map] distance_derivative_is_not_time
+PASS [photon_map] single_cone_metric_restriction_null
+PASS [photon_map] single_cone_null_has_normal_derivative
+PASS [photon_map] coeval_laplacian_cone_chain
+PASS [photon_map] wave_operator_second_time_cancellation
+PASS [photon_map] omitted_mixed_derivative_detected
+PASS [photon_map] omitted_clock_correction_detected
+PASS [photon_map] observer_time_gain_spatial_product
+PASS [photon_map] homogeneous_gain_replacement_fails
+PASS [photon_map] shear_ell_0_null_or_positive
+PASS [photon_map] shear_ell_1_null_or_positive
+PASS [photon_map] shear_ell_2_null_or_positive
+PASS [photon_map] shear_ell_3_null_or_positive
+PASS [photon_map] shear_ell_4_null_or_positive
+PASS [photon_map] shear_ell_5_null_or_positive
+PASS [photon_map] shear_ell_6_null_or_positive
+PASS [photon_map] redshift_energy_ratio_endpoint_doppler_integral
+PASS [photon_map] covector_geodesic_energy_source
+PASS [photon_map] transverse_geodesic_sum
+PASS [photon_map] velocity_potential_clock_relation
+PASS [photon_map] coverage_width_(0, 1, 2, 4)
+PASS [photon_map] coverage_width_(0, 3, 2, 4)
+PASS [photon_map] coverage_width_(1, 3, 2, 4)
+PASS [photon_map] coverage_width_(0, 1, 2, 5/2)
+PASS [photon_map] original_background_friedmann
+PASS [photon_map] original_background_raychaudhuri
+PASS [photon_map] original_background_scalar
+PASS [photon_map] original_background_dust
+PASS [photon_map] original_background_force
+PASS [photon_map] original_metric_momentum
+PASS [photon_map] original_dust_euler
+PASS [photon_map] original_dust_continuity
+PASS [photon_map] original_scalar_definition
+PASS [photon_map] original_scalar_second_order
+PASS [photon_map] original_hamiltonian_constraint
+PASS [photon_map] original_pressure_trace
+PASS [photon_map] full_cone_helmholtz_completion
+PASS [photon_map] trace_polynomial_basis_determinant
+PASS [photon_map] trace_determinant_vandermonde
+PASS [photon_map] five_exact_growing_modes_scalar_rank
+PASS [photon_map] one_transfer_trace_rank_one
+PASS [photon_map] one_transfer_scalar_rank_at_most_two
+PASS [photon_map] growing_branch_dispersion
+PASS [photon_map] growing_limit
+PASS [photon_map] finite_stencil_constant_response
+PASS [photon_map] finite_stencil_quadratic_inverse
+PASS [transport] velocity_potential_residual_transport
+PASS [transport] radial_euler
+PASS [transport] force_transport
+PASS [transport] omitting_radial_transport_detected
+PASS [transport] integrating_factor_characteristic
+PASS [transport] commutator_zero_for_homogeneous_background
+PASS [transport] homogeneous_transport_family
+PASS [transport] same_corrected_redshift
+PASS [transport] nonzero_lapse_change
+PASS [transport] homogeneous_force_transport
+PASS [transport] homogeneous_expected_lapse
+PASS [transport] homogeneous_full_radial_euler
+PASS [transport] homogeneous_full_angular_euler
+PASS [transport] homogeneous_same_lensing_sum
+PASS [transport] forced_transport_solution
+PASS [transport] forced_boundary_supplied
+PASS [transport] radial_null_time_sign
+PASS [transport] background_redshift_registration
+PASS [transport] corrected_residual_shapiro_term
+PASS [transport] remote_characteristic_boundary_outside_observing_strip
+PASS [fixed_background] general_spherical_commutator
+PASS [fixed_background] general_local_reconstruction_identity
+PASS [fixed_background] exceptional_denominator_simple_radial_zero
+PASS [fixed_background] general_compatibility_residual_identity
+PASS [fixed_background] dropping_spherical_curvature_changes_inverse
+PASS [fixed_background] wrong_commutator_sign_changes_inverse
+PASS [fixed_background] scalar_hamiltonian_source_elimination
+PASS [fixed_background] trace_to_hidden_scalar_source
+PASS [fixed_background] trace_scalar_to_elliptic_identity
+PASS [fixed_background] momentum_redshift_to_radial_identity
+PASS [fixed_background] witness_C
+PASS [fixed_background] witness_Lambda
+PASS [fixed_background] witness_trace_source
+PASS [fixed_background] witness_elliptic_source
+PASS [fixed_background] witness_radial_source
+PASS [fixed_background] witness_full_matter_euler
+PASS [fixed_background] witness_reconstruction
+PASS [fixed_background] compatible_exceptional_radius_numerator
+PASS [fixed_background] compatible_exceptional_radius_derivative
+PASS [fixed_background] regular_radial_helmholtz_completion
+PASS [fixed_background] origin_regular_radial_limit
+PASS [fixed_background] annular_null_candidate_trace
+PASS [fixed_background] annular_null_candidate_radial
+PASS [fixed_background] annular_null_candidate_rejected_by_field
+PASS [conditioning] high_precision_trace_positive_0.1
+PASS [conditioning] high_precision_scalar_positive_0.1
+PASS [conditioning] high_precision_trace_positive_1
+PASS [conditioning] high_precision_scalar_positive_1
+PASS [conditioning] high_precision_trace_positive_10
+PASS [conditioning] high_precision_scalar_positive_10
+PASS [conditioning] high_precision_trace_positive_100
+PASS [conditioning] high_precision_scalar_positive_100
+PASS [conditioning] high_precision_trace_positive_1000
+PASS [conditioning] high_precision_scalar_positive_1000
+PASS [conditioning] polynomial_zero_noise_65_0.005
+PASS [conditioning] polynomial_zero_noise_65_0.025
+PASS [conditioning] polynomial_zero_noise_65_0.1
+PASS [conditioning] polynomial_zero_noise_129_0.005
+PASS [conditioning] polynomial_zero_noise_129_0.025
+PASS [conditioning] polynomial_zero_noise_129_0.1
+PASS [conditioning] polynomial_zero_noise_257_0.005
+PASS [conditioning] polynomial_zero_noise_257_0.025
+PASS [conditioning] polynomial_zero_noise_257_0.1
+PASS [local_kernels] traceless Hessian kernel component 00
+PASS [local_kernels] traceless Hessian kernel component 01
+PASS [local_kernels] traceless Hessian kernel component 02
+PASS [local_kernels] traceless Hessian kernel component 11
+PASS [local_kernels] traceless Hessian kernel component 12
+PASS [local_kernels] traceless Hessian kernel component 22
+PASS [local_kernels] Hamiltonian hidden velocity coefficient
+PASS [local_kernels] polynomial-source radial particular solution
+PASS [local_kernels] fifth derivative leading exponential coefficient
+PASS [local_kernels] fifth derivative removes resonant spectral exception
+PASS [local_kernels] polynomial forcing killed by five radial derivatives
+PASS [local_kernels] forbidden inverse-square radial coefficient
+PASS [local_kernels] forbidden inverse-radius coefficient
+PASS [local_kernels] surviving velocity potential is spatially constant
+PASS [local_kernels] root reconstruction avoids exceptional D denominator
+PASS [local_kernels] planar mode momentum
+PASS [local_kernels] planar mode Hamiltonian
+PASS [local_kernels] planar mode Euler
+PASS [local_kernels] planar mode bare continuity
+PASS [local_kernels] planar mode uneliminated scalar
+PASS [local_kernels] planar mode spatial pressure trace
+PASS [local_kernels] planar mode corrected planar redshift zero
+PASS [local_kernels] planar mode fails actual spherical radial redshift
+UNIT COUNTS: [('geometry', 42, 0), ('constraints', 10, 0), ('coefficients', 40, 0), ('varying_coupling', 13, 0), ('joint_gain', 22, 0), ('photon_map', 53, 0), ('transport', 20, 0), ('fixed_background', 24, 0), ('conditioning', 19, 0), ('local_kernels', 23, 0)]
+
+----- stderr -----
+

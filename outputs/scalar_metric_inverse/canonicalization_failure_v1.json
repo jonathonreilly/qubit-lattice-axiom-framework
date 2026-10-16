@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-16T11:39:52.300647+00:00",
+  "attempt": "First packaging source extractor",
+  "exit_code": 1,
+  "failure": "IndentationError after raw.index(out=) matched the local variable inside the fixed-background check function instead of the top-level result assignment. Earlier generated files were not executed.",
+  "repair": "Anchor the cut marker at a line start. No scientific expression, protocol or threshold changes. Constraints helper returns rows, its original list name."
+}

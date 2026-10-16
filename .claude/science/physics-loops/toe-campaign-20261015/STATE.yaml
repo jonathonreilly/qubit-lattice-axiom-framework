@@ -4,7 +4,7 @@ base: claude/rules-hygiene-20261015 (from origin/main bbada1fe0)
 window: 2026-10-15T23:30Z .. 2026-10-16T23:00Z
 mode: campaign
 target: best-honest-status
-active_block: B3-larger-site-covariant-motion
+active_block: B4-staggered-one-qubit-tick
 blocks:
   B1-covariant-qubit-walks:
     status: in_progress
@@ -37,7 +37,9 @@ blocks:
     note: docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md
     runner: scripts/two_qubit_cubic_dirac_tick_2026_10_16.py (TOTAL PASS=11)
     result: "two-qubit site (flavor x spin, cube on spin): exact O-covariant moving cell walks exist; Clifford family f + i h.tau_perp + i tau3 g.sigma classified by Gram criterion G(b) >= 0 rank <= 3; explicit algebraic member: one massless isotropic Dirac cone at k=0 (speed 0.914), seven doublers gapped 2.20-2.31 rad"
-    pending: ["independent check (fresh agent, launched 03:50Z)", "universality: are all two-qubit O-covariant cell walks Clifford-form up to flavor gauge? (collect2q + clifford_test)"]
+    extras: ["speed bound s^2 <= 1, axis doublers at 2 arcsin|s|", "unique light-speed member over Q(sqrt5) (pi-mode axis doublers)", "exact chirality freezes motion", "W3 = 0 for the whole family"]
+    independent_check: "done; confirms all claims; corrected one-extra-square statement (isolated rank-2 members exist)"
+    universality_evidence: "3 general two-qubit hits tested, all Clifford-form up to flavor gauge (clifford_test.py)"
     question: "does a two-qubit site (fork 4, M4(C)) or spin-3/2 coin admit an exactly O-covariant moving cell walk?"
     so_far:
       - "spin-3/2 (irreducible 4-dim rep of 2O): 12 starts polished to positive local minima (2.4e-3 .. 1.6e-2); none moving"
@@ -45,3 +47,7 @@ blocks:
   B1-extra:
     - "D2 product walk dispersion: omega = |k| - n1 n2 n3 |k|^2 + O(k^3), parity-odd handed correction (runner PASS=31)"
     - "exact D3 Groebner timed out (83 min); D3 stays numerical"
+  B4-staggered-one-qubit-tick:
+    status: in_progress
+    question: "keep one qubit per site but let the walk coefficients depend on sublattice parity (2-site cell): can an O-covariant (rotations about every site) staggered tick move?"
+    method: "staggered.py: two O-covariant coefficient families, exact Z^3 coefficient equations for WW^dag and W^dag W"

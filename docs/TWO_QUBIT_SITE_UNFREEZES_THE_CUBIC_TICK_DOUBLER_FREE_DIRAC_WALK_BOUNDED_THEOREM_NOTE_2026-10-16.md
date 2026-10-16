@@ -203,9 +203,14 @@ fermion doubling through a Floquet (quasienergy pi) imbalance.
   general two-qubit search on the nearest-neighbour stencil also found none in
   20 starts.
 
-Two unconstrained two-qubit hits were found; the one analysed has exactly the
-Clifford form of Theorem 1 after a flavor rotation. That all two-qubit
-O-covariant cell walks have this form is not claimed.
+**Universality evidence.** Unconstrained searches over the full 28-dimensional
+O-covariant two-qubit cell family (analytic Jacobian, scale-free lower bound
+on motion) found seven moving walks. For each, the real-linear condition
+"U(k)(C (x) 1) has scalar Hermitian part for all k" has a 3-dimensional
+solution space for the constant flavor matrix C, containing a unitary to
+<= 4.2e-15; so every hit is of the Clifford form of Theorem 1 up to a constant
+flavor gauge. That all two-qubit O-covariant cell walks have this form is
+supported by these seven samples and is not proved.
 
 ## Independent check
 

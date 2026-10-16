@@ -28,3 +28,8 @@
   (`spin1*.log`) and spin 3/2 (`spin32*.log`, Singular outputs
   `spin32_b*.out` over Q(sqrt 3)) all freeze. Each `*_exact.log` is the exact
   branch-filter recheck (left null space over the coefficient field).
+- **R = 4 (`fastR3_4.log`), partial.** 39 scalars and 90 vectors. The
+  numerical prefilter leaves only the trivial branch of 21,068,100. That
+  branch has 67 free unknowns and 4881 equations, too large to close in the
+  campaign window. Range four is therefore not claimed; the linear stage is
+  evidence only.

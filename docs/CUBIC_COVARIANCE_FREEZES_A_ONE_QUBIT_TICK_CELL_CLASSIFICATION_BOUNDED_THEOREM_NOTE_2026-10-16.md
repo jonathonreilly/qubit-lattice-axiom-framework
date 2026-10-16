@@ -290,7 +290,9 @@ the unitarity ideal then closes it. The checker's route reduces the 3-D
 problem to a 2-D one plus a positivity identity. It is the more promising
 path to every finite range, but it is not a proof of that: at higher ranges
 p has more freedom than eight point values can fix. Every finite range
-remains open.
+remains open. At range four the line stage again leaves only the trivial
+branch, of 21,068,100, by numerical prefilter. The remaining ideal (67
+unknowns) was not closed, so range four is not claimed.
 
 ## Theorem 5 — D3 on the cell: body-diagonal motion only (exact)
 

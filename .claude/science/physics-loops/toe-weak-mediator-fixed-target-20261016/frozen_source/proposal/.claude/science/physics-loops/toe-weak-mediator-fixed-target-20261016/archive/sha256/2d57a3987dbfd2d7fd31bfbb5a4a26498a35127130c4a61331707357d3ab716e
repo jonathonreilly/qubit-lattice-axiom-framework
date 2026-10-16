@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+"""Metadata-only source capture and exact prior-review verification."""
+import hashlib
+import json
+import pathlib
+import shutil
+
+ROOT = pathlib.Path(__file__).resolve().parent
+SOURCE = ROOT.parent / "weak_mediator_candidate" / "STRUCTURED_COEFFICIENT_ADDENDUM.md"
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def verify_prior(name, expected_hash, expected_count, selected):
+    prior = ROOT.parent / name
+    freeze = pin(prior / "FINAL_FREEZE.json")
+    assert freeze["sha256"] == expected_hash
+    frozen = json.loads((prior / "FINAL_FREEZE.json").read_text())
+    assert len(frozen["files"]) == expected_count
+    actual_paths = {str(p.relative_to(prior)) for p in prior.rglob("*") if p.is_file() and p != prior / "FINAL_FREEZE.json"}
+    assert actual_paths == {row["path"] for row in frozen["files"]}
+    for row in frozen["files"]:
+        actual = pin(prior / row["path"])
+        assert actual["sha256"] == row["sha256"]
+        assert actual["bytes"] == row["bytes"]
+    return {"freeze": freeze, "verified_members": expected_count, "selected_dependencies": [pin(prior / x) for x in selected]}
+
+
+def main():
+    source = pin(SOURCE)
+    assert source["sha256"] == "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395"
+    prior = [
+        verify_prior("weak_mediator_exposed_check", "ef8dce286398c515be38142b54917e2b82d8ea3363709f78f37e70f11a71511c", 23, ["REVIEW.md", "ADDENDUM_REVIEW.md"]),
+        verify_prior("weak_mediator_finite_compiler_exposed_check", "ecf8e0b72ed47c9c112df9d343edb14229c45406c8103201542f30c12fac60f4", 11, ["REVIEW.md"]),
+        verify_prior("weak_mediator_window_reuse_exposed_check", "0f0edb6a806a238ef2dfaf01f52ca97b2bae1eb73f8871eed05d9ac5a05fe6d7", 11, ["REVIEW.md"]),
+    ]
+    recorder_baseline = ROOT.parent / "weak_mediator_finite_compiler_exposed_check" / "capture_metadata.py"
+    assert pin(recorder_baseline)["sha256"] == pin(ROOT / "capture_metadata.py")["sha256"]
+    copies = ROOT / "sources"
+    copies.mkdir(exist_ok=False)
+    captured = copies / SOURCE.name
+    shutil.copyfile(SOURCE, captured)
+    assert pin(captured)["sha256"] == source["sha256"]
+    result = {
+        "scope": "Separate source-exposed analytic structured-coefficient check; no coefficient computation or physics execution",
+        "source": source,
+        "source_copy": pin(captured),
+        "review": pin(ROOT / "REVIEW.md"),
+        "prior_reviews": prior,
+        "prior_archives_copied": False,
+        "recorder_exact_reuse": pin(recorder_baseline),
+        "exposure": "Complete root structured-coefficient source read only after the window/reuse review was sealed; prior lower-endpoint strategy had reviewer exposure and contribution",
+        "scientific_execution": False,
+        "coefficient_computation": False,
+        "blind_review": False,
+        "root_approval": None,
+        "retained_audit_verdict": None,
+        "metadata_controls": ["source and bounded copy match exact hash", "all three prior freezes unchanged", "prior memberships exact", "all 45 prior frozen members match", "recorder exact reuse"],
+    }
+    (ROOT / "SOURCE_EXPOSURE.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(result, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,23 @@
+{
+  "source_exposed": true,
+  "same_selected_model": true,
+  "blind_independence": false,
+  "new_scientific_executions": 0,
+  "historical_scientific_replays": 0,
+  "historical_author_scientific_runs": 2,
+  "independent_scientific_replications": 0,
+  "actual_author_seconds": [
+    0.2838803748600185,
+    0.131953792180866
+  ],
+  "separate_saved_certificate_check_runs": 1,
+  "saved_certificate_check_seconds": 0.07717579184100032,
+  "separate_scopes": [
+    "finite symbolic algebra",
+    "fixed two-scenario rational coefficients"
+  ],
+  "wall_limit_seconds_each": 60,
+  "cpu_quota": null,
+  "ram_quota": null,
+  "retained_audit": false
+}

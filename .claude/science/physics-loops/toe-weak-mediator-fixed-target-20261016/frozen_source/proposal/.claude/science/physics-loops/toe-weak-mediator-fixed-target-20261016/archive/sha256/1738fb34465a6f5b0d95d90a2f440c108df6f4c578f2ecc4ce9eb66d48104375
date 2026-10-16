@@ -1,0 +1,42 @@
+"""Record root's completed conditional-science review; metadata only."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1];R=N/'weak_mediator_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def rd(p):return json.loads(Path(p).read_text())
+def wr(p,o):
+ with Path(p).open('x') as f:f.write(json.dumps(o,indent=2)+'\n')
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+expected={'PROPOSAL.md':'22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b','DYADIC_ADDENDUM.md':'2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517','SCALING_ADDENDUM.md':'7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda','FINITE_COMPILER_ADDENDUM.md':'7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8','WINDOW_REUSE_ADDENDUM.md':'fb9c0e08fbfa8337fe9c8c64cac29c216f0424046846e7361174f3681950dc33','STRUCTURED_COEFFICIENT_ADDENDUM.md':'052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395'}
+sources=[]
+for name,sha in expected.items():
+ p=N/'weak_mediator_candidate'/name;assert pin(p)['sha256']==sha;sources.append(pin(p))
+freezes={'weak_mediator_exposed_check':'ef8dce286398c515be38142b54917e2b82d8ea3363709f78f37e70f11a71511c','weak_mediator_finite_compiler_exposed_check':'ecf8e0b72ed47c9c112df9d343edb14229c45406c8103201542f30c12fac60f4','weak_mediator_window_reuse_exposed_check':'0f0edb6a806a238ef2dfaf01f52ca97b2bae1eb73f8871eed05d9ac5a05fe6d7','weak_mediator_structured_coefficients_exposed_check':'724d308b4222f082dff7d6d4044f1806541d0741e3f57917e6d583e886217a79'}
+reviews=[]
+for name,sha in freezes.items():
+ p=N/name;f=p/'FINAL_FREEZE.json';assert pin(f)['sha256']==sha
+ for x in rd(f)['files']:same(p/x['path'],x)
+ assert {str(x.relative_to(p)) for x in p.rglob('*') if x.is_file()}=={x['path'] for x in rd(f)['files']}|{'FINAL_FREEZE.json'}
+ reviews.append(dict(freeze=pin(f),members=len(rd(f)['files']),review=pin(p/'REVIEW.md')))
+ if (p/'ADDENDUM_REVIEW.md').exists():reviews[-1]['addendum_review']=pin(p/'ADDENDUM_REVIEW.md')
+science=[]
+for folder,label,sha,count in [('weak_mediator_check_proposal','weak_001','4369fa1d5a970bf4e01ea00cc7db000779cab1d1f26be9bcbd26e1c4bc292a7d',60),('weak_mediator_finite_compiler_proposal','compiler_001','0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564',64)]:
+ p=N/folder;d=p/'runs'/label;r=rd(d/'EXECUTION.json');assert r['exit_code']==0 and not r['timeout'] and r['scientific_launches']==1 and r['prelaunch_verified']
+ assert r['source_unchanged'] and r['start_utc']<r['end_utc'] and r['wall_limit_seconds']==60
+ assert r['argv'][1:3]==['-I','-B'] and r['argv'][3]==r['executed_source']['path'] and r['cwd']==str(d)
+ for x in r['artifacts']:same(d/x['path'],x)
+ same(r['original_source']['path'],r['original_source']);same(r['executed_source']['path'],r['executed_source'])
+ assert r['original_source']['sha256']==r['executed_source']['sha256'] and (d/'stderr.txt').read_bytes()==b''
+ report=d/'output/REPORT.json';assert pin(report)['sha256']==sha
+ z=rd(report);assert len(z['checks'])==count and all(x['holds'] for x in z['checks'])
+ out=p/'OUTPUT_FREEZE.json'
+ if not out.exists():wr(out,dict(utc=datetime.now(timezone.utc).isoformat(),scope='One completed fixed two-scenario exact coefficient compiler with all original source, metadata, receipt and full streams; no replay.',scientific_launches=1,members=[dict(pin(x),path=str(x.relative_to(p))) for x in sorted(p.rglob('*')) if x.is_file()]))
+ for x in rd(out)['members']:same(p/x['path'],x)
+ science.append(dict(receipt=pin(d/'EXECUTION.json'),output_freeze=pin(out),report=pin(report),checks=count,elapsed_seconds=r['elapsed_seconds'],independence='author implementation; analytic checks separate; no blind/model-independent claim'))
+assert pin(R/'QUALIFICATION.md')['sha256']=='e367c861fe7496575ee4ba84d0f7178b10fc0992ffe31d4dd89a82e632e2a98e'
+decision=dict(kind='root_conditional_science_acceptance',utc=datetime.now(timezone.utc).isoformat(),status='QUALIFIED_CONDITIONAL_SOURCE_ACCEPTED_PUBLICATION_PENDING',qualification=pin(R/'QUALIFICATION.md'),sources=sources,analytic_reviews=reviews,actual_scientific_executions=science,same_selected_model=True,source_exposed_checks=True,blind_review=False,retained_audit=False,canonical_integration=None,publication=None,editable_prompt_files_changed=[],physical_axioms_changed=False,controlling_limits=['new source and port couplings supplied','independent Bell preparation or full joint initial error required','actual rounded scalar and literal old aging retained','structured calibration limited to three lower shared coefficients','finite known reuse; no indefinite halt/reset','analytic and finite execution scopes distinguished'])
+wr(R/'ACCEPTANCE.json',decision)
+wr(R/'FREEZE.json',dict(files=[dict(pin(R/f),path=f) for f in ['QUALIFICATION.md','ACCEPTANCE.json']],scope='Root actual qualification after complete argument/source/receipt review; subsequent checks and publication separate.'))
+print(json.dumps(dict(acceptance=pin(R/'ACCEPTANCE.json'),qualification=pin(R/'QUALIFICATION.md'),freeze=pin(R/'FREEZE.json'),scientific_replays=0)))

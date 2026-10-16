@@ -1,0 +1,48 @@
+# Proposed sharper bound for three structured coefficient errors
+
+Root-original proposal2026-10-16, requiring a separate independent check. This concerns only lower coefficient replacements within the same specified Bell-projector and four-port family; it does not sharpen the bound for an arbitrary Hamiltonian fault. No actual coarser coefficient list is asserted here.
+
+Keep epsilon=2^-m, T=2^(2m+32), the idealDelta,gx,gy and the longer windoww=epsilon*T/256. Suppose the actual three coefficients obey
+
+0<=gx-gxhat<=h_g, 0<=gy-gyhat<=h_g,
+0<=Delta-Deltahat<=h_D,
+h_g=epsilon/(4096 sqrt(T))=2^-(2m+28),
+h_D=epsilon/8192=2^-(m+13).
+
+These bounds leave all coefficients positive andDeltahat>3/2. Lower replacements preservevhat<=v<4/sqrt(T), every added incident cap, andthe new cross-spectrum gapdeltahat=2-Deltahat>=delta>1/4. The old generatorK remains literal, and the actual reserve rhat=2(gxhat+gyhat) stays in the source comparison phase.
+
+## Effective-Hamiltonian comparison
+
+The same Sylvester proof works for independent positive gxhat,gyhat,Deltahat; it does not need the ideal tuning relation to obtain a residual estimate. Let
+
+M=J*V^2J, Mhat=J*Vhat^2J,
+D=Delta I-2ZZ, Dhat=Deltahat I-2ZZ.
+
+Both compressed squares commute withZZ, and the exact second-order operators areH2=-M D^-1 andH2hat=-Mhat Dhat^-1. They are Hermitian and commute withK for any such three coefficients. The tuned formula yielding the exact targetW is needed only for the idealH2.
+
+The port difference satisfies||Vhat-V||<=4h_g. Therefore
+
+||Mhat-M||<=||Vhat^2-V^2||
+ <=(||Vhat||+||V||)||Vhat-V||<=8v h_g.
+
+Here the square-difference inequality usesVhat^2-V^2=Vhat(Vhat-V)+(Vhat-V)V; it does not assume the two full port operators commute. Also
+
+||Dhat^-1-D^-1||<=h_D/delta^2,
+||Dhat^-1||<=1/delta, ||M||<=v^2.
+
+Consequently
+
+||H2hat-H2||<=8v h_g/delta+v^2 h_D/delta^2
+ <128h_g/sqrt(T)+256h_D/T.
+
+For t<=T+w<2T, the effective-phase error is strictly below
+
+256sqrt(T)h_g+512h_D=epsilon/16+epsilon/16=epsilon/8.
+
+The bare full-isometry residual for the actual rounded model remains bounded byR(T)=12352/sqrt(T)+132096/T<epsilon/4, since the actual coupling bound is smaller and the actual spectral gap is larger. The ideal window drift is at most16w/T=epsilon/16. Thus the same full comparator with actualrhat and literal actual old aging has full-isometry error<7epsilon/16 and generic unhalved joint-reference trace error<7epsilon/8<epsilon on the longer window. No exact cancellation or exact target phase is claimed forH2hat itself.
+
+## Finite coefficient route and limits
+
+The equality-safe finite algorithm may use port gridbits p_g=2m+29 and source gridbits p_D=m+14, with the same enclosure construction at n=max(p_g,p_D)+8. The arctangent intervals then have width<2^-(2max(p_g,p_D)+12). Apply the two integer-square-root lower roundings atp_g and the rationalDelta lower rounding atp_D. Their errors are below2*2^-p_g=h_g and2*2^-p_D=h_D by the same interval argument. Output numerator and denominator lengths are bounded separately byp_g+1 andp_D+1. At m44 these grid exponents are117 and58; no such coarser list has been computed by this proposal.
+
+This gives sufficient structured absolute error allowances O(epsilon^2) for each port coefficient andO(epsilon) for the source coefficient, improving on the unstructured full-generator Duhamel allowanceO(epsilon^3). It is a conditional upper-bound construction, not a necessary precision law. An arbitrary residual self-adjoint faultE beyond this three-coefficient family still costs at most(T+w)||E|| in isometry norm. Unknown sign, support, time dependence, unbounded noise or calibration outside the stated lower intervals is not covered automatically. Initial source faults require the independent-source/full-joint-state contract already stated. Added microscopic permissions, physical energy/time units, preparation/installation, observation timing and exact halt/indefinite reuse remain unresolved.

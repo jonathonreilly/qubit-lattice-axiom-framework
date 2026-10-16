@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_root_recorder_proposal/record_weak_mediator_canonical_review.py",
+    "--root-reviewed",
+    "installed",
+    "--expectations",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/weak_mediator_installed_expectations.json",
+    "--expectations-sha",
+    "f987f8fb51f76eef7a0a5bafab392c4e66c6f68fbf7275c2e0f89b78c2174947"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-16T21:54:44.428725+00:00",
+  "end_utc": "2026-10-16T21:54:47.202292+00:00",
+  "elapsed_seconds": 2.7733662500977516,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/mediator_canonical_review/stdout",
+    "bytes": 360,
+    "sha256": "ee7577c60a16313712e8098a4419956c4c66aa6d556d7189ba4cc218a5262740"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/mediator_canonical_review/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_root_recorder_proposal/record_weak_mediator_canonical_review.py",
+    "bytes": 9923,
+    "sha256": "a4f470416d9ad102b423b072e0175381c91f8c2c673723a0cd34d36ec1096339"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/mediator_canonical_review/executed_source.py",
+    "bytes": 9923,
+    "sha256": "a4f470416d9ad102b423b072e0175381c91f8c2c673723a0cd34d36ec1096339"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "source-only prospective check; scientific_execution_count=0",
+  "created_utc": "2026-10-16T20:59:50.718233+00:00",
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/PROPOSAL.md",
+      "snapshot": "sources/PROPOSAL.md",
+      "bytes": 5883,
+      "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b",
+      "coverage": "complete text read; immutable selected source only",
+      "status": "exposed root proposal, not accepted by this packet"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/SOURCE_FREEZE.json",
+      "snapshot": "sources/SOURCE_FREEZE.json",
+      "bytes": 416,
+      "sha256": "551fab5e4c1876dfff3d807ebf837a8c23f3d28724a554049faa8b6ab92d3f9c",
+      "coverage": "complete text read; immutable selected source only",
+      "status": "exposed root proposal, not accepted by this packet"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/DYADIC_ADDENDUM.md",
+      "snapshot": "sources/DYADIC_ADDENDUM.md",
+      "bytes": 2959,
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517",
+      "coverage": "complete text read; immutable selected source only",
+      "status": "exposed root proposal, not accepted by this packet"
+    }
+  ],
+  "local_syntax_metadata": [
+    {
+      "path": "check_weak_mediator.py",
+      "AST_parse": "completed; not imported or executed",
+      "bytes": 20204,
+      "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab"
+    },
+    {
+      "path": "record_one_attempt.py",
+      "AST_parse": "completed; not imported or executed",
+      "bytes": 5703,
+      "sha256": "ae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87"
+    },
+    {
+      "path": "seal_metadata.py",
+      "AST_parse": "completed; not imported or executed",
+      "bytes": 3698,
+      "sha256": "eac2199a99623241f8c18ddc48c07b7b36b8c1cf6dc2d3b481d28ce352be31fa"
+    },
+    {
+      "path": "record_metadata.py",
+      "AST_parse": "completed; not imported or executed",
+      "bytes": 1985,
+      "sha256": "edb0703da5347e3d17699b9ad635b63453e665d1823a35f73603ad48e60a929e"
+    }
+  ],
+  "read_scope": "complete two mathematical source bodies and source freeze; no sibling checker, no scientific imports",
+  "actual_scientific_execution": null,
+  "root_go": null,
+  "acceptance": null,
+  "future_execution": "one separate explicit GO required; 60-second wall limit; no automatic retry",
+  "exposure": "source-exposed same-model author; see EXPOSURE.md",
+  "metadata_run_outside_freeze": "runs/metadata_001/"
+}

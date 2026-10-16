@@ -1,0 +1,73 @@
+{
+  "kind": "root_qualified_source_publication_review",
+  "utc": "2026-10-16T21:45:18.854684+00:00",
+  "root_read_complete": true,
+  "disposition": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+    "bytes": 49830,
+    "sha256": "32b3edb257c7695c24242b6ef36680468e31e5d8ee6d1156936fb2b44128fa0f"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/proposal/docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 118194,
+    "sha256": "f81f1e7a853ee0bc72f4e3b6b668d7dcd93bbc0971f3791fc86a09324194505d"
+  },
+  "source_validator": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/proposal/scripts/weak_mediator_fixed_target_2026_10_16.py",
+    "bytes": 35728,
+    "sha256": "3fc5df88ae70fc7ba59770a08ef078123d06e6a7cd24666039a76961bda131e7"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/SOURCE_MANIFEST.json",
+    "bytes": 106778,
+    "sha256": "31e99f2c9434bed8229279f56b6deedd88e8b17a693c4dcebbb8d5037574588a"
+  },
+  "source_wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/packet_text/WRAPPER.md",
+    "bytes": 9957,
+    "sha256": "a79bfe517eedf177343039ec0e60005a888eb2fe28a4848be87f6b024058a78c"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_weak_mediator_qualified_publication_review/REVIEW.md",
+    "bytes": 3934,
+    "sha256": "33635132b1822a8d14e57c083816eb411c9a9d17002fbb4325c8c55c07e4bbc4"
+  },
+  "evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_weak_mediator_qualified_publication_review/MECHANICAL_EVIDENCE.json",
+    "bytes": 19508,
+    "sha256": "dce3396bb52485c34294e23663515ad25866593057959abae797ea913327a187"
+  },
+  "immutable_bodies": 12,
+  "source_aliases": 179,
+  "archive_objects": 107,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/prepare/EXECUTION.json",
+      "bytes": 3152,
+      "sha256": "f31219d99de6625e0058ce0c990c5623164cf1ffb7113fd8eb3b1f0e28d5ebca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3139,
+      "sha256": "fc068509db7a0da76caf8fcdfa44f006369bbdf96dca153e7dbe9c5029b56c83"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3174,
+      "sha256": "9360f42a3748e0f7d3012fe4c85c57d02b886ef481f290eb5da3f543c25e3499"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 3128,
+      "sha256": "823f5aef55b3237e24e56812d2cca254131925b2c501dcf7e9a3ed2a0f4fb4c4"
+    }
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "actual_publication": null,
+  "retained_audit": false,
+  "required_canonical_replacements": [],
+  "proposed_graph_disposition": "one_new_root_zero_direct_parent_edges",
+  "editable_prompt_files_changed": []
+}

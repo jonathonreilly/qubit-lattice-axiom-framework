@@ -1,0 +1,40 @@
+{
+  "kind": "actual_weak_mediator_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "cd646f075af86b54a8c5b948ee82e5e6f0f39066",
+  "actual_git_base": "cd646f075af86b54a8c5b948ee82e5e6f0f39066",
+  "bound_note_sha256": "b3df6a2b7ead5e12dc76c273ceca26db0baf7b7ffcfd7bf98403f16306acac05",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/18c46b6a85b6f3d93885186ea4aea670ab83acb2b8203b23eda751e7b2361954.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/2c6d9bff32d7cb8928d3777e08b3850d1f9dcb5ccf00bec053516fdd3774d600.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/31108db9fdc66320bdb6436ee6d9edac9de24dad4a7db3186fb343fa60c6ebb8.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/31e99f2c9434bed8229279f56b6deedd88e8b17a693c4dcebbb8d5037574588a.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/32864e00d7547525c749cc394ac77a4b361496b9977fe64fd1f8c1ab0c424867.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/32b3edb257c7695c24242b6ef36680468e31e5d8ee6d1156936fb2b44128fa0f.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/33635132b1822a8d14e57c083816eb411c9a9d17002fbb4325c8c55c07e4bbc4.md",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/395b7692e84dfbf0cad504c141e59d8d75c887b8440414efa1b82d1b0b8bf5c4.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/3d6852a4d27cbc982576e828de881c11c2fc99fb48d7e17923ef8da8a3a252a4.py",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/3ed8097cc26c55e37028808baac629c3471cc2abbabe085f9318f0c56f80eee1.blob",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/4fbe45463a66ab49baa7f2dbe3a9a8beb7103ad990bd99f15786991081c78c58.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/6ccd5ae7a827e4de1926e479d34b170cf6739d74053594e815d0de3893fc1d0b.blob",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/a4f470416d9ad102b423b072e0175381c91f8c2c673723a0cd34d36ec1096339.py",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/c391afdcb60b66894b785e661d1ce9ee05647ec0ac0425e02cfb4e7ac9cdea04.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/dce3396bb52485c34294e23663515ad25866593057959abae797ea913327a187.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/e23c2a5d921f859665376ec35d7aeb7e250576ec59f0e7a2bdbc62d9a24b8e57.blob",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/e8435b0f10f56364352ba5df08af989b72e89d0c06015f995bf2b6b81d0d1e3c.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/ee7577c60a16313712e8098a4419956c4c66aa6d556d7189ba4cc218a5262740.blob",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/f1cd0532b969182595df0459732a6db5898a744bc881b59a4202cf86b6b8dfb3.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/f781848d6766a366321d89a668bffbf56367afea5a725d8e6e0c66b22edc1455.json",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/f81f1e7a853ee0bc72f4e3b6b668d7dcd93bbc0971f3791fc86a09324194505d.md",
+    ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/fb2b22889545dd3ea1ea9abe10f53daa46125b50a64481172f05cbca35c04ae7.py"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/f1cd0532b969182595df0459732a6db5898a744bc881b59a4202cf86b6b8dfb3.json",
+    "bytes": 83348,
+    "sha256": "f1cd0532b969182595df0459732a6db5898a744bc881b59a4202cf86b6b8dfb3"
+  }
+}

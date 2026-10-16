@@ -1,0 +1,33 @@
+# Proposed longer quiet window and bounded coherent reuse
+
+Root-original corollary,2026-10-16. This is a new proposal for separate checking, not yet a published or independently accepted result. It uses the same supplied square Hamiltonian, product Bell-source interface, equality-safe lower dyadic coefficients, and actual retained scalar from FINITE_COMPILER_ADDENDUM.md7c546393. New microscopic coupling permissions and all physical supply limits remain.
+
+## Longer window relative to literal old aging
+
+Let epsilon=2^-m, T=2^(2m+32), p=3m+39, and set
+
+w_m=epsilon*T/256=2^(m+24).
+
+For every m>=0 this window exceeds24 and is belowT. The original residual argument used only t<=2T, so on[T,T+w_m] its bare residual error is bounded by
+
+R(T)=12352/sqrt(T)+132096/T<epsilon/4.
+
+The effective-Hamiltonian drift over the window contributes at most16w_m/T=epsilon/16. The equality-safe coefficient error<2*2^-p in each of the three scalar coefficients gives nonscalar generator error<10*2^-p; sinceT+w_m<2T, this contributes less than(5/32)epsilon. Thus the actual rounded full-isometry discrepancy against
+
+J exp(-irhat(T+s)) exp(-isK) W exp(-iTK)
+
+is strictly below(1/4+1/16+5/32)epsilon=(15/32)epsilon for every0<=s<=w_m. The generic unhalved joint-reference trace error is therefore below(15/16)epsilon<epsilon. This enlarges the proved window without changingT,p,source count,positivity or added incident caps. For m44 the window is2^68 in the same dimensionless time units, andT=2^120.
+
+This comparison keeps literal old aging for the actual elapsed timeT+s and the actual scalar phase. It is not a statement that an uncertain observation time yields the same fixed-time full vector Wexp(-iTK). A separate fixed-time clock contract must also pay for old drift and its scalar. Nor does this finite window provide a stopping mechanism, permanent halt, switched-off interaction or infinite reuse.
+
+## Bounded coherent reuse with the source retained
+
+LetV_s=exp(-i(T+s)Hhat) on old plus source andU_s=exp(-irhat(T+s))exp(-isK)Wexp(-iTK) on the old factor with its scalar. The established uniform operator inequality is
+
+||V_s J-J U_s||<eta, eta=(15/32)epsilon, 0<=s<=w_m.
+
+Tensoring an arbitrary reference preserves this norm. For any finiteL, composeL such runtime intervals and allow arbitrary supplied unitary interventionsA_j on old plus retained reference registers only, with identity action on the source. The embedding intertwines each such intervention: (A_j tensor I_source)J_R=J_R A_j. A telescoping product expansion therefore bounds the full isometry difference from the corresponding ideal sequence byL eta. Each factor in the expansion has norm1; no assumption that the actual source is exactly restored, uncorrelated or reset between uses is introduced. The unhalved joint trace error is below2L eta<L epsilon, retaining all source/reference registers. With no interventions ands_j=0 the actual process is just exp(-iLT Hhat), compared withJ exp(-irhat LT)(Wexp(-iTK))^L.
+
+For a desired final trace allowance epsilon0=2^-m0 andL>=1, choosek=ceil(log2 L), m=m0+k, soepsilon=2^-m<=epsilon0/L. Then the total error is belowepsilon0. The source still has exactly two qubits; p=3(m0+k)+39. Each duration isT=2^32*2^(2k)*epsilon0^-2, and total runtime for exact endpoint intervals satisfiesLT<2^34 L^3 epsilon0^-2. The strict bound holds also forL1. For intervals anywhere in the enlarged windows, total duration is less than twice this endpoint bound. These are sufficient upper bounds for this fixed target and supplied model, not optimality or a generic programmable compiler.
+
+The optionalA_j are mathematical interfaces, not internally generated operations or unpriced physical controllers. A finite-duration implementation, installation work, source preparation, timing/calibration faults and any discarded intervention outputs need separate budgets. Without such supplied interventions this is a repeated fixed-gate/power statement only. It gives bounded coherent reuse at a stated accumulated error; it does not establish exact reset, indefinite reuse or an autonomous halt.

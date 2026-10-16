@@ -1,0 +1,120 @@
+{
+  "new_wrapper_bytes": [
+    0,
+    9957
+  ],
+  "trailing_wrapper_bytes": [
+    118022,
+    118194
+  ],
+  "bodies": [
+    {
+      "name": "original_proposal",
+      "source": "weak_mediator_candidate/PROPOSAL.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 10014,
+      "end_byte_exclusive": 15897,
+      "bytes": 5883,
+      "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b"
+    },
+    {
+      "name": "dyadic_addendum",
+      "source": "weak_mediator_candidate/DYADIC_ADDENDUM.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 15952,
+      "end_byte_exclusive": 18911,
+      "bytes": 2959,
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517"
+    },
+    {
+      "name": "scaling_addendum",
+      "source": "weak_mediator_candidate/SCALING_ADDENDUM.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 18967,
+      "end_byte_exclusive": 22372,
+      "bytes": 3405,
+      "sha256": "7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda"
+    },
+    {
+      "name": "finite_compiler_addendum",
+      "source": "weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 22436,
+      "end_byte_exclusive": 26731,
+      "bytes": 4295,
+      "sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8"
+    },
+    {
+      "name": "window_reuse_addendum",
+      "source": "weak_mediator_candidate/WINDOW_REUSE_ADDENDUM.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 26792,
+      "end_byte_exclusive": 30885,
+      "bytes": 4093,
+      "sha256": "fb9c0e08fbfa8337fe9c8c64cac29c216f0424046846e7361174f3681950dc33"
+    },
+    {
+      "name": "structured_coefficient_addendum",
+      "source": "weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 30956,
+      "end_byte_exclusive": 34909,
+      "bytes": 3953,
+      "sha256": "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395"
+    },
+    {
+      "name": "original_analytic_review",
+      "source": "weak_mediator_exposed_check/REVIEW.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 34973,
+      "end_byte_exclusive": 52303,
+      "bytes": 17330,
+      "sha256": "0c2f97d373ec11c7cc4089330a184ec24e332ccae4c934c2d7dba33c8458137b"
+    },
+    {
+      "name": "dyadic_scaling_analytic_review",
+      "source": "weak_mediator_exposed_check/ADDENDUM_REVIEW.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 52373,
+      "end_byte_exclusive": 66269,
+      "bytes": 13896,
+      "sha256": "1c6381a591322773e27917734af034aeec39bb48c82aed3ce377f673b8068ac2"
+    },
+    {
+      "name": "finite_compiler_analytic_review",
+      "source": "weak_mediator_finite_compiler_exposed_check/REVIEW.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 66340,
+      "end_byte_exclusive": 79889,
+      "bytes": 13549,
+      "sha256": "45332a1c97e4709f848afea4dc887b624889bcc90ba77d970f3a5e1e29f173cc"
+    },
+    {
+      "name": "window_reuse_analytic_review",
+      "source": "weak_mediator_window_reuse_exposed_check/REVIEW.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 79957,
+      "end_byte_exclusive": 93093,
+      "bytes": 13136,
+      "sha256": "f2b8d7a7a8309c99ff8c71ef8d81edd9e11679f8112948e4d029a61072de4507"
+    },
+    {
+      "name": "structured_analytic_review",
+      "source": "weak_mediator_structured_coefficients_exposed_check/REVIEW.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 93159,
+      "end_byte_exclusive": 106608,
+      "bytes": 13449,
+      "sha256": "89e19b6e80fceec3ca3a1668e1a2ea941004b4966ef8ce8649aa33f32d5c8f41"
+    },
+    {
+      "name": "controlling_root_qualification",
+      "source": "weak_mediator_root_review/QUALIFICATION.md",
+      "container": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 106678,
+      "end_byte_exclusive": 118022,
+      "bytes": 11344,
+      "sha256": "e367c861fe7496575ee4ba84d0f7178b10fc0992ffe31d4dd89a82e632e2a98e"
+    }
+  ]
+}

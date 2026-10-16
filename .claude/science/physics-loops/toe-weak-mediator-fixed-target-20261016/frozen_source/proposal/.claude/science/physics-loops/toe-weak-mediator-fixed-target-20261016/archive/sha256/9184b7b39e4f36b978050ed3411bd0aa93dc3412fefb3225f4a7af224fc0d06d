@@ -1,0 +1,7 @@
+# Structured coefficient errors: separate exposed check
+
+`REVIEW.md` reconstructs the generic second-order operator, the port-norm and compressed Gram estimates, the resolvent bound, the `7epsilon/16` isometry allocation and the mixed-grid finite route. The conditional bounds check out.
+
+The review explicitly proves why lower coefficients decrease the norm in this particular commuting port family, why the actual spectral gap remains the stated one, and why the sharper tolerances require the actual reserve phase in the comparator. It distinguishes the structured three-coefficient model from arbitrary generator faults and preserves the finite-compiler operation-count qualification.
+
+`sources/STRUCTURED_COEFFICIENT_ADDENDUM.md` is an exact captured source. `SOURCE_EXPOSURE.json` references and verifies the unchanged prior review packets without copying their archives. `runs/metadata_inspection/` records an actual metadata-only launch with source captures and complete streams. `FINAL_FREEZE.json` seals this new review. No coarse coefficient list, scientific execution, root approval, retained verdict or publication is claimed.

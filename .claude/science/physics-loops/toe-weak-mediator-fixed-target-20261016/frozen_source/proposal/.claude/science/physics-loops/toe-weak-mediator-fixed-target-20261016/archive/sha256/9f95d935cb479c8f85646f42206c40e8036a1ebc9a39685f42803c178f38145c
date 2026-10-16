@@ -1,0 +1,117 @@
+{
+  "kind": "one proposed exact symbolic/rational scientific check",
+  "recorder_started_utc": "2026-10-16T21:02:57.616275+00:00",
+  "recorder_invocation": [
+    "record_one_attempt.py",
+    "--go-file",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/ROOT_GO.md"
+  ],
+  "wall_limit_seconds": 60,
+  "cpu_quota": null,
+  "ram_quota": null,
+  "quota_qualification": "No OS CPU/RAM quota. Arithmetic/output guards are separate finite caps.",
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "resolved_executable": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "scientific_launches": 1,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-I",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/runs/weak_001/source_at_launch/check_weak_mediator.py",
+    "--inputs",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/runs/weak_001/source_at_launch/INPUTS.json",
+    "--output",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/runs/weak_001/output"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/runs/weak_001",
+  "exit_code": 0,
+  "timeout": false,
+  "prelaunch_verified": true,
+  "executable_identity": {
+    "bytes": 52640,
+    "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+  },
+  "go_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/ROOT_GO.md",
+    "bytes": 1448,
+    "sha256": "33c7a0922775752a12c761a1174451cbf3cd87f8d7b6db9d879ccfaca09c040e"
+  },
+  "prelaunch_freeze": {
+    "bytes": 2214,
+    "sha256": "986fd5995dbe87b4fb2fc24033819136ab66af0dc0e7e7448594a47cff4bb889"
+  },
+  "original_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/check_weak_mediator.py",
+    "bytes": 20204,
+    "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab"
+  },
+  "executed_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/runs/weak_001/source_at_launch/check_weak_mediator.py",
+    "bytes": 20204,
+    "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab"
+  },
+  "executed_inputs": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/runs/weak_001/source_at_launch/INPUTS.json",
+    "bytes": 755,
+    "sha256": "6c6e984010cf2f4f8cbdf03a2ee7982c54f96896545590e2c7f3cbc5340a4bf8"
+  },
+  "start_utc": "2026-10-16T21:02:57.727764+00:00",
+  "pid": 57195,
+  "elapsed_seconds": 0.2838803748600185,
+  "end_utc": "2026-10-16T21:02:58.011867+00:00",
+  "executed_source_after": {
+    "bytes": 20204,
+    "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab"
+  },
+  "source_unchanged": true,
+  "recorder_finished_utc": "2026-10-16T21:02:58.012146+00:00",
+  "artifacts": [
+    {
+      "path": "PRELAUNCH_FREEZE_at_launch.json",
+      "bytes": 2214,
+      "sha256": "986fd5995dbe87b4fb2fc24033819136ab66af0dc0e7e7448594a47cff4bb889"
+    },
+    {
+      "path": "PRELAUNCH_VERIFICATION.json",
+      "bytes": 2130,
+      "sha256": "5b7c06cbffc054c454f77c323f787998dc2f350d872025eff74f3cb8efbce690"
+    },
+    {
+      "path": "ROOT_GO_at_launch.md",
+      "bytes": 1448,
+      "sha256": "33c7a0922775752a12c761a1174451cbf3cd87f8d7b6db9d879ccfaca09c040e"
+    },
+    {
+      "path": "output/REPORT.json",
+      "bytes": 247777,
+      "sha256": "4369fa1d5a970bf4e01ea00cc7db000779cab1d1f26be9bcbd26e1c4bc292a7d"
+    },
+    {
+      "path": "recorder_at_launch.py",
+      "bytes": 5703,
+      "sha256": "ae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87"
+    },
+    {
+      "path": "source_at_launch/INPUTS.json",
+      "bytes": 755,
+      "sha256": "6c6e984010cf2f4f8cbdf03a2ee7982c54f96896545590e2c7f3cbc5340a4bf8"
+    },
+    {
+      "path": "source_at_launch/check_weak_mediator.py",
+      "bytes": 20204,
+      "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab"
+    },
+    {
+      "path": "stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stdout.txt",
+      "bytes": 3972,
+      "sha256": "d37f587e034b64bfdf230573e723215eba6dfd18ab2a46d5c77c6b6b315f4ecb"
+    }
+  ]
+}

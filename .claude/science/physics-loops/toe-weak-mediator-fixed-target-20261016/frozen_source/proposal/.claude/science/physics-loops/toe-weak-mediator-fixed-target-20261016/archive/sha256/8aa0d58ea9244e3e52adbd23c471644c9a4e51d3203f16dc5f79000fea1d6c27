@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+"""Metadata-only inspection. Never import or execute the validator/compiler."""
+import ast
+import hashlib
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def main():
+    manifest = json.loads((ROOT / "SOURCE_MANIFEST.json").read_text())
+    for row in manifest["files"]:
+        original, capture = Path(row["source"]), ROOT / row["capture"]
+        assert capture.stat().st_size == row["bytes"]
+        assert sha(capture) == row["sha256"] == sha(original)
+    receipt = json.loads((ROOT / "author_run/EXECUTION.json").read_text())
+    assert receipt["scientific_launches"] == 1 and receipt["exit_code"] == 0 and receipt["timeout"] is False
+    assert receipt["original_source"]["sha256"] == receipt["executed_source"]["sha256"] == sha(ROOT / "author_run/source_at_launch/compile_coefficients.py")
+    assert receipt["argv"][3] == receipt["executed_source"]["path"]
+    assert receipt["executed_inputs"]["sha256"] == sha(ROOT / "author_run/source_at_launch/PARAMETERS.json")
+    report = ROOT / "author_run/output/REPORT.json"
+    assert sha(report) == "0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564"
+    for original in receipt["artifacts"]:
+        path = Path(original["path"])
+        capture = ROOT / "author_run" / path.relative_to(Path(receipt["cwd"]))
+        assert capture.stat().st_size == original["bytes"] and sha(capture) == original["sha256"]
+    parsed = []
+    for name in ("validate_saved_certificate.py", "record_one_attempt.py", "inspect_sources.py", "record_metadata.py"):
+        path = ROOT / name
+        tree = ast.parse(path.read_text(), filename=str(path))
+        assert all(line == line.rstrip() for line in path.read_text().splitlines())
+        imports = sorted({node.module if isinstance(node, ast.ImportFrom) else alias.name for node in ast.walk(tree) if isinstance(node, (ast.Import, ast.ImportFrom)) for alias in (node.names if isinstance(node, ast.Import) else [None])})
+        if name == "validate_saved_certificate.py":
+            assert set(imports) <= {"argparse", "fractions", "hashlib", "json", "math", "pathlib", "traceback"}
+            assert not any(isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id in ("isqrt", "eval", "exec", "__import__") for node in ast.walk(tree))
+        parsed.append({"path": name, "sha256": sha(path), "functions": [node.name for node in tree.body if isinstance(node, ast.FunctionDef)], "imports": imports})
+    assert json.loads((ROOT / "ROOT_GO_TEMPLATE.json").read_text())["authorization"] is None
+    assert not (ROOT.parent / "weak_mediator_saved_certificate_check_execution").exists()
+    print(json.dumps({"scope": "Metadata and syntax only; validator never imported or executed", "captured_originals": len(manifest["files"]), "source_programs": parsed, "checker_scientific_launches": 0, "root_GO": None}, indent=2, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,30 @@
+# Current checkpoint
+
+One complete source-only check has been specified in `CHECK_PLAN.md` and
+implemented in `check_weak_mediator.py`. Its formal variables are h,a with
+Delta=2h^2, gy=a and gx=ah; the injection is unnormalized to keep every matrix
+entry in a Gaussian-rational polynomial ring. Complete Sylvester and residual
+identities, positivity projectors, Bell amplitudes, target phase construction,
+initial moments, two mutants and finite rational error bounds are covered.
+
+Parents read completely: weak-mediator proposal 22e62c14 and separate dyadic
+addendum 2ad3573f. Base terminology is corrected only in the later addendum;
+the immutable source is preserved. No sibling proof or checker was read.
+
+Open decision: root reviews source and, if appropriate, authorizes the sole
+60-second attempt. No scientific execution is authorized or represented here.
+The prospective source has not been imported or evaluated. Metadata-only
+AST/hash checks are recorded separately. Any later scientific failure must
+remain and cannot trigger automatic rerun.
+
+Open analytic/physical premises: angle and spectral-calculus facts; stated
+parameter-domain inequalities and Sylvester inverse norm; variation-of-
+constants/Duhamel estimates; full scalar source phase; supplied lower dyadic
+approximant certificates; prepared Bell input; the new positive Bell-source
+and signed XX/YY port blocks; calibrated static installation and observation
+time. None is replaced by a claim of native realization.
+
+No failed scientific route exists in this packet because no run occurred.
+Two deliberately incorrect routes are preserved as planned discriminators.
+The earlier static-edge result and its additive freeze are separate evidence
+and remain unchanged.

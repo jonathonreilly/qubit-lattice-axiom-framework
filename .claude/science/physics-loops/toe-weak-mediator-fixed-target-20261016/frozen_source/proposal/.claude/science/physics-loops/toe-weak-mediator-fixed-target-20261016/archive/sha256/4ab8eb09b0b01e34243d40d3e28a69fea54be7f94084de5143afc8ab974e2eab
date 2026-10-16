@@ -1,0 +1,396 @@
+#!/usr/bin/env python3
+"""Proposed exact polynomial check. No result exists until separately authorized.
+
+All matrix entries belong to Q[i,h,a]/(i^2+1). There is no numerical sampling,
+eigensolver, transcendental evaluation, or imported historical science code.
+The unnormalized injection E has E*E=2I. Thus normalized injections and
+correctors are represented without introducing a symbolic sqrt(2).
+"""
+import argparse
+from fractions import Fraction
+import hashlib
+import json
+from pathlib import Path
+import sys
+import traceback
+
+LIMITS = {}
+STATS = {'integer_operations': 0, 'convolution_pairs': 0,
+         'matrix_products': 0, 'maximum_integer_bits': 0,
+         'maximum_polynomial_degree': 0, 'maximum_polynomial_terms': 0}
+CHECKS = []
+DATA = {}
+OUTPUT = None
+
+def tick(name, cap):
+    STATS[name] += 1
+    if STATS[name] > LIMITS[cap]:
+        raise RuntimeError('cost ceiling: '+name)
+
+def integer(x):
+    if not isinstance(x, int):
+        raise TypeError('integer required')
+    b = abs(x).bit_length()
+    STATS['maximum_integer_bits'] = max(STATS['maximum_integer_bits'], b)
+    if b > LIMITS['integer_bit_ceiling']:
+        raise RuntimeError('integer bit ceiling')
+    return x
+
+def imul(x, y):
+    integer(x); integer(y)
+    tick('integer_operations', 'integer_operation_ceiling')
+    if x and y and abs(x).bit_length()+abs(y).bit_length() > LIMITS['integer_bit_ceiling']:
+        raise RuntimeError('conservative multiplication preflight')
+    return integer(x*y)
+
+def iadd(x, y):
+    integer(x); integer(y)
+    tick('integer_operations', 'integer_operation_ceiling')
+    if x and y and max(abs(x).bit_length(), abs(y).bit_length())+1 > LIMITS['integer_bit_ceiling']:
+        raise RuntimeError('conservative addition preflight')
+    return integer(x+y)
+
+def frac(n, d=1):
+    integer(n); integer(d)
+    if not d:
+        raise ZeroDivisionError
+    f = Fraction(n, d)
+    integer(f.numerator); integer(f.denominator)
+    return f
+
+def fadd(x, y):
+    return frac(iadd(imul(x.numerator, y.denominator), imul(y.numerator, x.denominator)),
+                imul(x.denominator, y.denominator))
+
+def fmul(x, y):
+    return frac(imul(x.numerator, y.numerator), imul(x.denominator, y.denominator))
+
+def fpow2(n):
+    if n < 0 or n+1 > LIMITS['integer_bit_ceiling']:
+        raise RuntimeError('fixed power preflight')
+    return integer(1 << n)
+
+class P:
+    """Sparse polynomial; keys (h exponent, a exponent, i exponent in {0,1})."""
+    __slots__ = ('terms',)
+    def __init__(self, value=0):
+        if isinstance(value, P):
+            self.terms = value.terms
+            return
+        if isinstance(value, dict):
+            terms = {}
+            for key, c in value.items():
+                if len(key) != 3 or key[0] < 0 or key[1] < 0 or key[2] not in (0,1):
+                    raise ValueError('invalid monomial')
+                c = c if isinstance(c, Fraction) else frac(c)
+                integer(c.numerator); integer(c.denominator)
+                if c:
+                    terms[key] = c
+        else:
+            c = value if isinstance(value, Fraction) else frac(value)
+            integer(c.numerator); integer(c.denominator)
+            terms = {(0,0,0): c} if c else {}
+        degree = max((key[0]+key[1] for key in terms), default=0)
+        STATS['maximum_polynomial_degree'] = max(STATS['maximum_polynomial_degree'], degree)
+        STATS['maximum_polynomial_terms'] = max(STATS['maximum_polynomial_terms'], len(terms))
+        if degree > LIMITS['polynomial_degree_ceiling'] or len(terms) > LIMITS['polynomial_term_ceiling']:
+            raise RuntimeError('polynomial size ceiling')
+        self.terms = terms
+    def __bool__(self):
+        return bool(self.terms)
+    def __eq__(self, other):
+        return self.terms == P(other).terms
+    def __neg__(self):
+        return P({k: -c for k,c in self.terms.items()})
+    def __add__(self, other):
+        other = P(other)
+        terms = dict(self.terms)
+        for k,c in other.terms.items():
+            terms[k] = fadd(terms.get(k, frac(0)), c)
+        return P(terms)
+    __radd__ = __add__
+    def __sub__(self, other):
+        return self + (-P(other))
+    def __rsub__(self, other):
+        return P(other) + (-self)
+    def __mul__(self, other):
+        other = P(other)
+        out = {}
+        for (h,a,i),c in self.terms.items():
+            for (j,b,k),d in other.terms.items():
+                tick('convolution_pairs', 'convolution_pair_ceiling')
+                key = (h+j, a+b, (i+k)%2)
+                if key[0]+key[1] > LIMITS['polynomial_degree_ceiling']:
+                    raise RuntimeError('polynomial multiplication degree preflight')
+                val = fmul(c,d)
+                if i+k == 2:
+                    val = -val
+                out[key] = fadd(out.get(key, frac(0)), val)
+                if len(out) > LIMITS['polynomial_term_ceiling']:
+                    raise RuntimeError('polynomial multiplication term ceiling')
+        return P(out)
+    __rmul__ = __mul__
+    def conjugate(self):
+        return P({(h,a,i): (-c if i else c) for (h,a,i),c in self.terms.items()})
+    def wire(self):
+        return [{'h': h, 'a': a, 'i': i, 'numerator_hex': hex(c.numerator),
+                 'denominator_hex': hex(c.denominator)}
+                for (h,a,i),c in sorted(self.terms.items())]
+
+def zeros(m,n):
+    return [[P() for _ in range(n)] for _ in range(m)]
+
+def eye(n):
+    return [[P(int(i==j)) for j in range(n)] for i in range(n)]
+
+def shape(A):
+    if not A or not A[0] or any(len(row)!=len(A[0]) for row in A):
+        raise ValueError('rectangular nonempty matrix required')
+    return len(A),len(A[0])
+
+def add(A,B):
+    if shape(A)!=shape(B): raise ValueError('addition shape')
+    return [[x+y for x,y in zip(ar,br)] for ar,br in zip(A,B)]
+
+def scale(c,A):
+    c=P(c)
+    return [[c*x for x in row] for row in A]
+
+def sub(A,B):
+    return add(A,scale(-1,B))
+
+def mm(A,B):
+    m,k=shape(A); l,n=shape(B)
+    if k!=l or max(m,k,l,n)>16: raise ValueError('product dimensions')
+    tick('matrix_products','matrix_product_ceiling')
+    C=zeros(m,n)
+    for i in range(m):
+        for s in range(k):
+            if not A[i][s]: continue
+            for j in range(n):
+                if B[s][j]: C[i][j]=C[i][j]+A[i][s]*B[s][j]
+    return C
+
+def dag(A):
+    m,n=shape(A)
+    return [[A[i][j].conjugate() for i in range(m)] for j in range(n)]
+
+def kron(A,B):
+    m,n=shape(A); p,q=shape(B)
+    if max(m*p,n*q)>16: raise ValueError('tensor dimensions')
+    return [[A[i//p][j//q]*B[i%p][j%q] for j in range(n*q)] for i in range(m*p)]
+
+def trace(A):
+    m,n=shape(A)
+    if m!=n: raise ValueError('square required')
+    return sum((A[i][i] for i in range(m)),P())
+
+def equal(A,B):
+    return shape(A)==shape(B) and all(x==y for ar,br in zip(A,B) for x,y in zip(ar,br))
+
+def iszero(A):
+    return all(not x for row in A for x in row)
+
+def wire_matrix(A):
+    return {'shape': list(shape(A)), 'entries': [[x.wire() for x in row] for row in A]}
+
+def save_matrix(name,A):
+    DATA.setdefault('matrices',{})[name]=wire_matrix(A)
+
+def check(name,condition):
+    row={'name':name,'holds':bool(condition)}
+    CHECKS.append(row)
+    print(json.dumps(row,sort_keys=True),flush=True)
+    if not condition: raise AssertionError(name)
+
+def rational_wire(x):
+    return {'numerator_hex':hex(x.numerator),'denominator_hex':hex(x.denominator)}
+
+def run(inputs):
+    expected = {'integer_bit_ceiling':65536,'polynomial_degree_ceiling':32,
+                'polynomial_term_ceiling':256,'convolution_pair_ceiling':2000000,
+                'integer_operation_ceiling':30000000,'matrix_product_ceiling':256,
+                'report_byte_ceiling':16777216,'wall_limit_seconds':60,'dyadic_bits':400}
+    check('fixed cost and arithmetic limits',all(inputs[k]==v for k,v in expected.items()))
+    T=integer(int(inputs['T_decimal'])); w=inputs['window']
+    check('fixed target duration and window',T==350208522228384946904887108861751911074590975328100424043350794320 and w==24)
+    check('fixed exact duration brackets',fpow2(128)<T<fpow2(300) and T+w<2*T)
+    h=P({(1,0,0):frac(1)}); a=P({(0,1,0):frac(1)}); ii=P({(0,0,1):frac(1)})
+    half=frac(1,2); quarter=frac(1,4)
+    I2=eye(2); X=[[P(0),P(1)],[P(1),P(0)]]
+    Y=[[P(0),-ii],[ii,P(0)]]; Z=[[P(1),P(0)],[P(0),P(-1)]]
+    paulis={'I':I2,'X':X,'Y':Y,'Z':Z}
+    def word(s):
+        out=[[P(1)]]
+        for letter in s: out=kron(out,paulis[letter])
+        return out
+    I4=eye(4); I16=eye(16); ZZ=word('ZZ'); XX=word('XX'); YY=word('YY')
+    K=add(scale(2,I4),ZZ)
+    Delta=2*h*h; q=a*a; delta=2-Delta; D=Delta*Delta-4; D2=Delta*D
+    r=2*a*(h+1)
+    # Bell columns are unnormalized; each squared norm is 2.
+    bellcols={'phi_plus':[1,0,0,1],'phi_minus':[1,0,0,-1],
+              'psi_plus':[0,1,1,0],'psi_minus':[0,1,-1,0]}
+    bells={name:[[P(x)] for x in col] for name,col in bellcols.items()}
+    bp={name:scale(half,mm(col,dag(col))) for name,col in bells.items()}
+    E={name:kron(I4,col) for name,col in bells.items()}
+    J0=E['phi_plus']; J0d=dag(J0); P0=scale(half,mm(J0,J0d)); Q0=sub(I16,P0)
+    check('unnormalized injection Gram',equal(mm(J0d,J0),scale(2,I4)))
+    check('source projector and complement',equal(mm(P0,P0),P0) and equal(mm(Q0,Q0),Q0) and equal(dag(P0),P0) and trace(P0)==4)
+    check('Bell projectors complete',equal(sum_matrices(list(bp.values())),I4))
+    for name in bp:
+        check('Bell rank-one projector '+name,equal(mm(bp[name],bp[name]),bp[name]) and trace(bp[name])==1)
+    Hc=scale(Delta,kron(I4,sub(I4,bp['phi_plus'])))
+    H0=add(kron(K,I4),Hc)
+    X1A=word('XIXI'); X2B=word('IXIX'); Y1A=word('YIYI'); Y2B=word('IYIY')
+    Lx=add(X1A,X2B); Ly=sub(Y1A,Y2B)
+    V=add(scale(a*h,Lx),scale(a,Ly))
+    Hphys=add(add(H0,V),scale(r,I16))
+    blocks=[scale(a*h,add(I16,X1A)),scale(a*h,add(I16,X2B)),
+            scale(a,add(I16,Y1A)),scale(a,sub(I16,Y2B))]
+    check('four positive-block decomposition',equal(sum_matrices(blocks),add(scale(r,I16),V)))
+    for j,L in enumerate([X1A,X2B,Y1A,scale(-1,Y2B)]):
+        pr=scale(half,add(I16,L))
+        check('port involution and projector '+str(j),equal(mm(L,L),I16) and equal(dag(L),L) and equal(mm(pr,pr),pr) and trace(pr)==8)
+    check('source positive block zero state',iszero(mm(Hc,J0)) and equal(dag(Hc),Hc))
+    check('literal generator injection',equal(mm(H0,J0),mm(J0,K)))
+    check('full Hermiticity',equal(dag(Hphys),Hphys) and equal(dag(V),V))
+    check('zero first-order compression',iszero(mm(J0d,mm(V,J0))))
+    DATA['H0_spectral_cells']=[]
+    for z in [1,-1]:
+        oldpz=scale(half,add(I4,scale(z,ZZ)))
+        check('old parity projector '+str(z),equal(mm(oldpz,oldpz),oldpz) and trace(oldpz)==2)
+        for name,sourcep in bp.items():
+            cell=kron(oldpz,sourcep)
+            energy=P(2+z)+(P(0) if name=='phi_plus' else Delta)
+            check('H0 full spectral cell '+str((z,name)),equal(mm(H0,cell),scale(energy,cell)) and equal(mm(P0 if name=='phi_plus' else Q0,cell),cell))
+            DATA['H0_spectral_cells'].append({'old_parity':z,'source_Bell_state':name,'energy':energy.wire()})
+    # Independent source amplitudes expose the proposal's triplet terminology error.
+    Xsum=add(word('XI'),word('IX')); Ysum=add(word('YI'),word('IY'))
+    amplitudes={name:scale(half,mm(dag(inj),mm(V,J0))) for name,inj in E.items()}
+    check('excited Bell source amplitudes',iszero(amplitudes['phi_plus']) and iszero(amplitudes['phi_minus']) and equal(amplitudes['psi_plus'],scale(a*h,Xsum)) and equal(amplitudes['psi_minus'],scale(-ii*a,Ysum)))
+    for name,A in amplitudes.items(): save_matrix('source_amplitude_'+name,A)
+    gram=scale(half,mm(J0d,mm(V,mm(V,J0))))
+    gram_expected=add(scale(2*a*a*h*h,add(I4,XX)),scale(2*a*a,add(I4,YY)))
+    check('full V squared compression signs',equal(gram,gram_expected))
+    # A1=sqrt(2) S1=N1/D; A2=sqrt(2) S2=N2/(Delta D).
+    N1=scale(-1,mm(V,mm(J0,add(scale(Delta,I4),scale(2,ZZ)))))
+    check('first corrector Q support',equal(mm(Q0,N1),N1) and iszero(mm(J0d,N1)))
+    check('first Sylvester identity',iszero(add(sub(mm(H0,N1),mm(N1,K)),scale(D,mm(V,J0)))))
+    QVN1=mm(Q0,mm(V,N1))
+    N2=scale(-1,QVN1)
+    check('second corrector Q support',equal(mm(Q0,N2),N2) and iszero(mm(J0d,N2)))
+    check('second RHS preserves old parity',equal(mm(kron(ZZ,I4),QVN1),mm(QVN1,ZZ)))
+    check('second Sylvester identity',iszero(add(sub(mm(H0,N2),mm(N2,K)),scale(Delta,QVN1))))
+    Nh=scale(half,mm(J0d,mm(V,N1)))
+    expected_Nh=add(scale(-q*(Delta+2),add(scale(Delta,I4),scale(2,ZZ))),scale(-q*D,XX))
+    check('second-order cleared formula',equal(Nh,expected_Nh))
+    check('second-order Hermitian and K commuting',equal(dag(Nh),Nh) and equal(mm(Nh,K),mm(K,Nh)))
+    check('P cancellation identity',equal(mm(P0,mm(V,N1)),mm(J0,Nh)))
+    Fnum=add(add(scale(D2,J0),scale(Delta,N1)),N2)
+    Gnum=add(scale(D,K),Nh)
+    residual_left=sub(scale(D,mm(add(H0,V),Fnum)),mm(Fnum,Gnum))
+    residual_right=sub(sub(scale(D,mm(V,N2)),scale(Delta,mm(N1,Nh))),mm(N2,Nh))
+    check('complete cleared isometry residual',equal(residual_left,residual_right))
+    # Full Bell/parity spectrum and scalar-sensitive target reconstruction.
+    p=P(frac(3,5))+ii*P(frac(4,5)); p2=p*p
+    W=scale(p,add(scale(frac(3,5),I4),scale(ii*P(frac(4,5)),XX)))
+    spectral_W=zeros(4,4)
+    for z in [1,-1]:
+        for x in [1,-1]:
+            proj=scale(quarter,mm(add(I4,scale(z,ZZ)),add(I4,scale(x,XX))))
+            eigen_num=-q*(Delta+2)*(Delta+2*z)-q*D*x
+            check('joint old projector '+str((z,x)),equal(mm(proj,proj),proj) and trace(proj)==1)
+            check('second-order eigenvalue numerator '+str((z,x)),equal(mm(Nh,proj),scale(eigen_num,proj)))
+            spectral_W=add(spectral_W,scale(p2 if x==1 else 1,proj))
+    check('full U4 target phase and unitarity',equal(spectral_W,W) and equal(mm(dag(W),W),I4) and equal(mm(K,W),mm(W,K)))
+    # Initial energy identities retain every scalar and the entire source.
+    mean=scale(half,mm(J0d,mm(Hphys,J0)))
+    old_plus_r=add(K,scale(r,I4))
+    second=scale(half,mm(J0d,mm(Hphys,mm(Hphys,J0))))
+    second_expected=add(mm(old_plus_r,old_plus_r),gram)
+    check('full initial mean identity',equal(mean,old_plus_r))
+    check('full initial second moment identity',equal(second,second_expected))
+    check('scalar reserve trace retained',trace(Hphys)-trace(add(H0,V))==16*r)
+    # Two named mutants only. They must fail their claimed identities exactly.
+    Vwrong=add(scale(a*h,Lx),scale(a,add(Y1A,Y2B)))
+    N1wrong=scale(-1,mm(Vwrong,mm(J0,add(scale(Delta,I4),scale(2,ZZ)))))
+    Nhwrong=scale(half,mm(J0d,mm(Vwrong,N1wrong)))
+    mutant_sign=sub(Nhwrong,expected_Nh)
+    mutant_sign_formula=scale(4*q,mm(YY,add(scale(Delta,I4),scale(2,ZZ))))
+    check('wrong Y2B sign rejected',not iszero(mutant_sign) and equal(mutant_sign,mutant_sign_formula))
+    Nbare=scale(-1,mm(V,J0))
+    mutant_denom=add(sub(mm(H0,Nbare),mm(Nbare,K)),scale(Delta,mm(V,J0)))
+    check('bare Delta denominator rejected',not iszero(mutant_denom) and equal(mutant_denom,scale(2,mm(V,mm(J0,ZZ)))))
+    # Exact arithmetic checks of the separately proved analytic upper bounds.
+    u=frac(1,fpow2(64))
+    residual_bound=fadd(fmul(frac(12352),u),frac(132096,T))
+    quiet=frac(384,T)
+    ideal=fadd(residual_bound,quiet)
+    dyadic_error=frac(imul(5,T+w),fpow2(400))
+    rounded=fadd(ideal,dyadic_error)
+    check('proposed residual constants',64+12288==12352 and 1024+131072==132096)
+    check('incident norm sufficient inequality',fmul(frac(4),u)<frac(1,4))
+    check('ideal residual and quiet bounds',residual_bound<frac(1,fpow2(49)) and ideal<frac(1,fpow2(48)))
+    check('dyadic perturbation and rounded bounds',dyadic_error<frac(1,fpow2(96)) and rounded<frac(1,fpow2(47)) and rounded<frac(1,fpow2(44)))
+    check('dyadic positive lower-margin arithmetic',frac(9,16)>frac(1,4) and frac(3,4)>frac(1,4) and frac(1,fpow2(151))>frac(1,fpow2(400)))
+    check('dyadic denominator and maximal numerator encoding bits',fpow2(400).bit_length()==401 and integer(fpow2(401)-1).bit_length()==401)
+    DATA['rational_upper_bounds']={k:rational_wire(v) for k,v in
+        [('residual',residual_bound),('quiet',quiet),('ideal_total',ideal),('dyadic_perturbation',dyadic_error),('rounded_total',rounded)]}
+    DATA['formal_scalars']={k:v.wire() for k,v in [('Delta',Delta),('delta',delta),('q',q),('r',r),('D',D),('D2',D2)]}
+    for name,A in [('K',K),('J_unnormalized',J0),('P',P0),('Q',Q0),('Hc',Hc),('H0',H0),('V',V),('Hphys',Hphys),('N1',N1),('N2',N2),('H2_numerator',Nh),('H2_expected_numerator',expected_Nh),('F_numerator',Fnum),('G_numerator',Gnum),('residual_left',residual_left),('residual_right',residual_right),('W',W),('V_squared_compression',gram),('initial_mean',mean),('initial_second_moment',second),('mutant_wrong_Y_sign',mutant_sign),('mutant_bare_Delta',mutant_denom)]:
+        save_matrix(name,A)
+
+def sum_matrices(items):
+    out=zeros(*shape(items[0]))
+    for A in items: out=add(out,A)
+    return out
+
+PREMISES = [
+ 'For h=sqrt(Delta/2), a=sqrt(theta/T), delta=theta/pi, theta=atan(4/3), the supplied coefficients equal the formal parameterization.',
+ '3/4<theta<1 and 1/4<delta<1/2 use angle monotonicity, theta=pi/4+atan(1/7), and 3<pi<22/7; these transcendental facts are not computed.',
+ 'The P/Q spectral differences are Delta and Delta plus or minus 2; on this domain their absolute values are at least delta, so the Sylvester inverse has Frobenius norm bound 1/delta.',
+ 'D and Delta D are nonzero on 3/2<Delta<7/4; polynomial cleared identities then imply the rational identities.',
+ 'Projector spectral calculus, Hermitian unitary propagation, variation of constants and submultiplicativity imply the analytic isometry error bound.',
+ 'The H2 Bell eigenphases use qT=theta and (2-Delta)=theta/pi; their exponential phase relation is analytic and not evaluated by the polynomial checker.',
+ 'The full scalar reserve r is retained in exp(-i r t)Phi+; the rational W check alone is not a calculation of this huge source phase.',
+ 'The stated dyadic corollary assumes supplied lower approximants with absolute errors at most 2^-400. No coefficients, floors, or equality-boundary decisions are computed.',
+ 'Static moment conservation, the full-reference trace factor 2, and the old-energy trace bound are analytic facts, not simulated evolution.',
+ 'The square geometry, positive source block and four signed XX/YY port blocks, prepared Bell state, calibrated installation and observation time remain physical assumptions.'
+]
+
+def write_report(status,inputs,error=None):
+    report={'status':status,'checks':CHECKS,'computed':DATA,
+            'analytic_premises_not_computed':PREMISES,'statistics':STATS,
+            'fixed_inputs':inputs,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+            'input_sha256':hashlib.sha256(Path(ARGS.inputs).read_bytes()).hexdigest(),'error':error}
+    total=0
+    with (OUTPUT/'REPORT.json').open('x') as stream:
+        for piece in json.JSONEncoder(indent=2,sort_keys=True).iterencode(report):
+            total+=len(piece.encode())
+            if total+1>LIMITS['report_byte_ceiling']:
+                raise RuntimeError('report byte ceiling; partial report retained')
+            stream.write(piece)
+        stream.write('\n')
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--inputs',required=True)
+    parser.add_argument('--output',required=True)
+    ARGS=parser.parse_args()
+    inputs={}
+    try:
+        inputs=json.loads(Path(ARGS.inputs).read_text())
+        LIMITS.update(inputs)
+        output=Path(ARGS.output)
+        output.mkdir(parents=False,exist_ok=False)
+        OUTPUT=output
+        run(inputs)
+        write_report('completed exact polynomial and rational checks; analytic and physical premises remain',inputs)
+        print(json.dumps({'completed':True,'checks':len(CHECKS),'statistics':STATS,'report':str(OUTPUT/'REPORT.json')},sort_keys=True),flush=True)
+    except BaseException as exc:
+        traceback.print_exc()
+        if OUTPUT is not None and not (OUTPUT/'REPORT.json').exists():
+            try: write_report('failed; no retry',inputs,repr(exc))
+            except BaseException: traceback.print_exc()
+        sys.exit(1)

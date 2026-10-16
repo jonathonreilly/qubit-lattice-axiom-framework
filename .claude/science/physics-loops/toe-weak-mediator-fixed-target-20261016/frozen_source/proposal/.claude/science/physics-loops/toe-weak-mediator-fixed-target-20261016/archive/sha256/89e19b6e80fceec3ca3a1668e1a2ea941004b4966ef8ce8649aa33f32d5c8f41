@@ -1,0 +1,247 @@
+# Analytical review of the three-coefficient perturbation bound
+
+The complete root-authored `STRUCTURED_COEFFICIENT_ADDENDUM.md`, SHA256 `052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395`, was exposed before this reconstruction. The original, finite-compiler and window/reuse review packets remain unchanged. In particular, the window/reuse review was sealed before this source was read.
+
+**Finding.** The stated `7 epsilon/16` full-isometry bound follows for the specified three lower coefficient replacements, with the actual reserve phase in the comparator. The mixed grids `p_g=2m+29` and `p_D=m+14` give the claimed sufficient errors, including at `m=0`. No internal algebraic or constant defect was found. Two proof details are essential: the port norm is monotone here because of this particular commuting Pauli family, and lowering Delta preserves the claimed cross-spectrum gap only because the allowed range keeps `Deltahat>3/2`. The improved tolerances do not apply to an arbitrary generator fault or to a comparator that silently replaces the actual reserve phase by the original one.
+
+This is a separate source-exposed analytic check. It is not a blind review, an execution certificate, a computed coarse coefficient list, a root approval or a retained verdict. The reviewer contributed the earlier lower-endpoint rounding strategy; the new Gram/resolvent perturbation proof and mixed precision allocation were reconstructed from the complete root source. No scientific program or coefficient computation was executed.
+
+## 1. Parameter range, positivity and the actual gap
+
+For integer `m>=0`, use
+
+\[
+\epsilon=2^{-m},\quad T=2^{2m+32},\quad
+\theta=\arctan(4/3),\quad\delta=\theta/\pi,
+\quad\Delta=2-\delta,
+\]
+
+\[
+g_x=\sqrt{\theta\Delta/(2T)},\qquad
+g_y=\sqrt{\theta/T}.
+\]
+
+The exact angle facts checked previously include `3/4<theta<1`, `pi>3`, and `1/4<delta<1/2`. In particular, the stronger bound
+
+\[
+\Delta>2-1/3=5/3
+\tag{1}
+\]
+
+is available here. The proposed allowances are
+
+\[
+h_g=\frac\epsilon{4096\sqrt T}=2^{-(2m+28)},
+\qquad h_D=\frac\epsilon{8192}=2^{-(m+13)}.
+\]
+
+All errors are one-sided: `0<=gx-gxhat<=h_g`, and likewise for `gy`, while `0<=Delta-Deltahat<=h_D`. The prior lower port bound `gx,gy>2^(-(m+17))` implies positivity after these replacements, because `h_g/2^(-(m+17))=2^(-m-11)<1`.
+
+For the source coefficient, (1) gives
+
+\[
+\widehat\Delta>5/3-2^{-13}>3/2,
+\qquad \widehat\Delta\le\Delta<2.
+\tag{2}
+\]
+
+Thus `deltahat=2-Deltahat` lies between `delta>1/4` and `1/2`. The full old-to-source-complement Sylvester differences are
+
+\[
+\widehat\Delta,\quad\widehat\Delta-2,
+\quad\widehat\Delta+2.
+\]
+
+Their minimum absolute value is exactly `deltahat`, because (2) keeps it smaller than `Deltahat`. Therefore the actual cross-spectrum separation is at least the original `delta`. Lowering a source coefficient in an unrestricted range would not by itself prove this fact: if it approached zero, the difference `Deltahat` would become the small gap instead. The explicit lower bound (2) rules out that failure.
+
+The positive-block supports are unchanged. Lower coefficients give `rhat=2(gxhat+gyhat)<=r` and `Deltahat+rhat<=Delta+r<2`. These remain added incident caps; the old vertices still have the separate norm-3 literal `K`. Constant coefficients preserve zero runtime slew. None of these facts supplies the new interactions from the original onsite control rays.
+
+## 2. Why the port norm decreases in this family
+
+Write
+
+\[
+P_1=X_1X_A,\quad P_2=X_2X_B,\quad
+Q_1=Y_1Y_A,\quad Q_2=Y_2Y_B,
+\]
+
+so `V=gx(P1+P2)+gy(Q1-Q2)`. All four displayed port Pauli operators commute. Operators on different pairs `(1,A)` and `(2,B)` have disjoint supports. On a single pair, the two local anticommutations cancel, giving `[XX,YY]=0`.
+
+The norm triangle bound gives `||V||<=2(gx+gy)`. It is attained: choose the Bell state on pair `(1,A)` with `XX=YY=+1` (`Psi+`), and on pair `(2,B)` with `XX=+1,YY=-1` (`Phi+`). Their tensor product is an eigenvector of `V` with eigenvalue `2(gx+gy)`. Consequently
+
+\[
+v:=\|V\|=2(g_x+g_y)=r,
+\qquad \widehat v:=\|\widehat V\|=2(\widehat g_x+\widehat g_y)=\widehat r\le v.
+\tag{3}
+\]
+
+This supplies the needed justification for the norm monotonicity used in the addendum. Monotonicity does not hold merely because some coefficients of an arbitrary sum are lowered. Only the port terms commute here; this is not a claim that the ports commute with `K` or the source Bell projector.
+
+The port difference obeys
+
+\[
+\|\widehat V-V\|\le2|\widehat g_x-g_x|+2|\widehat g_y-g_y|
+\le4h_g.
+\tag{4}
+\]
+
+## 3. Generic second-order operator without the tuning relation
+
+The source embedding and Pauli signs remain exactly those of the original model. For any positive common port coefficients of this form, the Bell calculation gives
+
+\[
+M=J^*V^2J=2g_x^2(I+XX)+2g_y^2(I+YY),
+\]
+
+and the same expression with hats gives `Mhat`. Both commute with old `ZZ`. For an old parity `z`, the first Sylvester denominator is `Delta-2z`, so with
+
+\[
+D=\Delta I-2ZZ,
+\qquad \widehat D=\widehat\Delta I-2ZZ,
+\]
+
+the exact second-order operators in the respective residual constructions are
+
+\[
+H_2=-MD^{-1},\qquad
+\widehat H_2=-\widehat M\widehat D^{-1}.
+\tag{5}
+\]
+
+These are Hermitian because the two factors in each product commute and are Hermitian. They commute with literal `K=2I+ZZ`. The special ideal relation between `gx,gy,Delta` is not needed for these properties. It is needed to identify `exp(-iT H2)` with the exact target `W`; no such exact target equality is asserted for `H2hat`.
+
+The actual Sylvester construction can therefore use `Ghat=K+H2hat` as a Hermitian comparison generator. With its own `S1hat,S2hat`, the same exact cancellation gives `Rhat=Vhat S2hat-S1hat H2hat-S2hat H2hat`. The Frobenius inverse uses the actual gap from (2). This justifies reuse of the residual estimate for generic independent lower coefficients, rather than assuming exact tuning survived rounding.
+
+## 4. Gram and resolvent estimates
+
+Compression by the isometry `J` cannot increase the operator norm. The exact noncommutative square identity is
+
+\[
+\widehat V^2-V^2
+=\widehat V(\widehat V-V)+(\widehat V-V)V.
+\]
+
+Thus (3) and (4) give
+
+\[
+\|\widehat M-M\|
+\le(\widehat v+v)\|\widehat V-V\|
+\le8v h_g.
+\tag{6}
+\]
+
+This calculation does not need to replace the square difference by a product of commuting factors. Also `M=(VJ)*VJ`, so `||M||<=v^2`.
+
+Because `Dhat-D=(Deltahat-Delta)I`, the resolvent identity gives
+
+\[
+\widehat D^{-1}-D^{-1}
+=\widehat D^{-1}(D-\widehat D)D^{-1}.
+\]
+
+The actual inverse bounds are `||D^-1||=1/delta` and `||Dhat^-1||=1/deltahat<=1/delta`. Therefore
+
+\[
+\|\widehat D^{-1}-D^{-1}\|
+\le\frac{h_D}{\widehat\delta\delta}
+\le h_D/\delta^2.
+\tag{7}
+\]
+
+Subtracting (5) in the order
+
+\[
+\widehat H_2-H_2
+=-(\widehat M-M)\widehat D^{-1}
+  -M(\widehat D^{-1}-D^{-1})
+\]
+
+and applying (6), (7) yields
+
+\[
+\|\widehat H_2-H_2\|
+\le8v h_g/\delta+v^2 h_D/\delta^2
+<128h_g/\sqrt T+256h_D/T.
+\tag{8}
+\]
+
+The last constants use only `v<4/sqrt(T)` and `1/delta<4`: `8*4*4=128` and `4^2*4^2=256`.
+
+## 5. Effective phase and full-isometry comparison
+
+For `t=T+s`, `0<=s<=w=epsilon T/256`, one has `t<2T`. Hermitian Duhamel applied to `Ghat` and `G=K+H2` gives
+
+\[
+\|e^{-it\widehat G}-e^{-itG}\|
+\le t\|\widehat H_2-H_2\|
+<256\sqrt T h_g+512h_D
+=\epsilon/8.
+\tag{9}
+\]
+
+Each summand is `epsilon/16`. No commutation between the two effective generators is required for this estimate, although in this family both are Bell diagonal.
+
+The actual residual construction uses `vhat<=v` and `deltahat>=delta`, so its bound remains
+
+\[
+R(T)=12352/\sqrt T+132096/T<\epsilon/4.
+\]
+
+The ideal extra-window drift is still bounded by `16w/T=epsilon/16`. Combining the actual residual, (9), and the ideal drift proves
+
+\[
+\left\|e^{-it\widehat H}J-
+J e^{-i\widehat r t}e^{-isK}W e^{-iTK}\right\|
+<\left(\frac14+\frac18+\frac1{16}\right)\epsilon
+=\frac7{16}\epsilon.
+\tag{10}
+\]
+
+This retains literal old aging and the actual reserve scalar. Tensoring an arbitrary reference preserves the isometry norm, so the unhalved full joint trace error is below `7epsilon/8<epsilon`. Source and reference registers have not been discarded.
+
+The actual reserve is especially important for this sharper tolerance. The allowed errors only give `|r-rhat|<=4h_g`, and `4T h_g=64`, which is not a small `O(epsilon)` phase allowance. Thus the bound does not also establish closeness to a comparator using the original `r`.
+
+For an explicit counterexample to that stronger interpretation within the general real-coefficient interval hypothesis, take `gxhat=gx-pi/(2T)`, keep `gyhat=gy` and `Deltahat=Delta`. This is an allowed positive lower replacement because `(pi/(2T))/h_g=pi/32<1`. It changes the reserve by `r-rhat=pi/T`, so the two source-phase comparators at `t=T` differ by a factor `-1`. Equation (10) is still valid for the actual-reserve comparator, whereas the isometry distance to the fixed-original-reserve comparator is at least `2-7epsilon/16`. This is not a claim about a computed dyadic list; it shows why the actual-phase convention is indispensable for the general structured interval theorem. No necessity claim about precision follows from this example.
+
+## 6. Mixed-grid compiler and the smaller term count
+
+Set
+
+\[
+p_g=2m+29,\qquad p_D=m+14,\qquad P=\max(p_g,p_D)=p_g,
+\qquad n=P+8=2m+37.
+\]
+
+Thus `n>=37`, rather than the previous construction's `n>=47`. This does not invalidate the enclosure proof. Its coarse rational guards use only `n>=2`: consecutive alternating partial sums give `L5>=74/375`, `U239<=1/239`, `pi_L>3`, and `0<theta_L<theta_U<1`. The width proof also remains valid: for `P>=29`,
+
+\[
+20\,2^{-(4n+2)}<2^{-(2P+12)}=:w_0,
+\]
+
+because the ratio is `20*2^(-2P-22)<1`. The variable `w_0` denotes enclosure width, not the observation window.
+
+The same positive interval arithmetic gives Delta width below `w_0/2`, `gy^2` width below `w_0/T`, and `gx^2` width below `2w_0/T`. With the port grid step `d_g=2^-p_g`,
+
+\[
+2w_0/T\le d_g^2 2^{-43}<d_g^2/4.
+\]
+
+Hence the port square-root interval width is below `d_g/2`. Integer-square-root lower rounding at precision `p_g` costs strictly less than another `d_g`. The port coefficient errors are therefore below `3d_g/2<2d_g=h_g`.
+
+For the source grid step `d_D=2^-p_D`, one has `w_0/2=2^(-(4m+71))<2^(-(m+14))=d_D`. The rational lower floor at precision `p_D` consequently has total Delta error below `d_D+w_0/2<2d_D=h_D`.
+
+The mixed grids therefore meet the hypotheses of (10), with strict rather than merely weak coefficient errors. Equality at a grid boundary is harmless: the integer quotient and integer floor square root operate on rational lower endpoints, as proved in the previous finite-compiler review. No floor of an irrational coefficient must be decided.
+
+The port scalar numerators and denominators use at most `p_g+1` bits; the source coefficient uses at most `p_D+1` bits. At `m=44`, the grid exponents are indeed `117` and `58`, so the corresponding uniform coefficient encoding bounds are `118` and `59` bits. These are separate output-coefficient bounds, not bounds on intermediate arithmetic or every expanded matrix-entry denominator.
+
+The prior operation-count qualification still applies: there are `3n=6m+111` terms in the three partial sums, plus three first-omitted remainder terms. The final stage has three explicit integer floor quotients and two integer-square-root calls, with the two distinct grid exponents used in the appropriate quotients. This is not a total bit-operation count. No actual coarse coefficient integers have been computed or certified here.
+
+## 7. What has and has not improved
+
+The sufficient absolute allowances are `h_g=2^-28 epsilon^2` for each shared port coefficient and `h_D=2^-13 epsilon` for the source coefficient. The improvement comes from controlling the quadratic compressed Gram operator and the source resolvent, together with an unchanged small residual. It is not a general replacement of the full-Hamiltonian Duhamel bound by a sharper universal fault bound.
+
+The theorem keeps the exact old `K`, the source projector onto the specified Bell complement, the port axes/supports and common paired coefficients, the lower-error signs, and the initial-source and timing interfaces. A generic residual self-adjoint fault outside this family still admits the usual `(T+w)||E||` isometry allowance. Unknown changes of sign, support, time dependence, arbitrary noise or source preparation are not automatically included in (8). The earlier independent-source/full-joint-state condition remains necessary for an additive initial trace error.
+
+No finite compiled list has been run, no physical calibration has been demonstrated, and no native realization of the new Bell-projector/port permissions has been established. Energy/time units, preparation/installation, actual observation timing and halt/indefinite reuse remain separate obligations. As before, these tolerances are sufficient bounds, not necessary precision laws or an optimization result.
+
+This review analytically supports the structured coefficient proposition and its mixed-grid route with the explicit norm, gap, actual-phase and scope qualifications above. It leaves root qualification and any separately recorded coefficient execution to subsequent action. Original sources, all prior review packets, canonical files, editable prompts, Git state, cache, graph, PRs and audit records were not modified.

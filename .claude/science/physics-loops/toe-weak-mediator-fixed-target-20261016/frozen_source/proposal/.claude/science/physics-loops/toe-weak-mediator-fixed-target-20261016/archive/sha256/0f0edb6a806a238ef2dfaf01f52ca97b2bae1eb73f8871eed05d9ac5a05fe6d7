@@ -1,0 +1,66 @@
+{
+  "files": [
+    {
+      "bytes": 1142,
+      "path": "README.md",
+      "sha256": "42af5c18b3fad2f9ecfeee6473fd017d73424056144d7d0fa68dfdd2e2681401"
+    },
+    {
+      "bytes": 13136,
+      "path": "REVIEW.md",
+      "sha256": "f2b8d7a7a8309c99ff8c71ef8d81edd9e11679f8112948e4d029a61072de4507"
+    },
+    {
+      "bytes": 3475,
+      "path": "SOURCE_EXPOSURE.json",
+      "sha256": "9a8d17388fd96ff67b7087335b4ed19fd3280256de79e6bbb9fed0349470c0c6"
+    },
+    {
+      "bytes": 3032,
+      "path": "capture_metadata.py",
+      "sha256": "09c1c3c52b227ae912cf6cbbdbd8ec950f71f68dc43b76481f5cb37032c6a047"
+    },
+    {
+      "bytes": 3190,
+      "path": "inspect_sources.py",
+      "sha256": "cf3d421232adde4a21cd18d5487c64b654f965cff94044688bc8e7322734599a"
+    },
+    {
+      "bytes": 2224,
+      "path": "runs/metadata_inspection/EXECUTION.json",
+      "sha256": "08d8ccd3fbe78c0dc78f06fb6d023e56fe2a4d8b7e51444eba02bfcac0f7442e"
+    },
+    {
+      "bytes": 3190,
+      "path": "runs/metadata_inspection/executed_source.py",
+      "sha256": "cf3d421232adde4a21cd18d5487c64b654f965cff94044688bc8e7322734599a"
+    },
+    {
+      "bytes": 3032,
+      "path": "runs/metadata_inspection/recorder_source.py",
+      "sha256": "09c1c3c52b227ae912cf6cbbdbd8ec950f71f68dc43b76481f5cb37032c6a047"
+    },
+    {
+      "bytes": 0,
+      "path": "runs/metadata_inspection/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3073,
+      "path": "runs/metadata_inspection/stdout",
+      "sha256": "e3aa9455885b73f281760ef9cb4a9b2aa3b10e6b7f76e16a625849911b9da2b1"
+    },
+    {
+      "bytes": 4093,
+      "path": "sources/WINDOW_REUSE_ADDENDUM.md",
+      "sha256": "fb9c0e08fbfa8337fe9c8c64cac29c216f0424046846e7361174f3681950dc33"
+    }
+  ],
+  "metadata_execution": {
+    "bytes": 2224,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check/runs/metadata_inspection/EXECUTION.json",
+    "sha256": "08d8ccd3fbe78c0dc78f06fb6d023e56fe2a4d8b7e51444eba02bfcac0f7442e"
+  },
+  "sealed_at": "2026-10-16T21:10:53.436943+00:00",
+  "status": "Separate source-exposed analytic review with metadata evidence; no root approval, compiler execution or retained verdict"
+}

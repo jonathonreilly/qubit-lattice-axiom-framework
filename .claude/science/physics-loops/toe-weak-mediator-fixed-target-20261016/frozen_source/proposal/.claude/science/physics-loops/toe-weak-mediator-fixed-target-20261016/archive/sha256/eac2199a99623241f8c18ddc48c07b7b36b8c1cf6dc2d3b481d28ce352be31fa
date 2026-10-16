@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+"""Metadata only: source identity, AST syntax, selected snapshots and freeze."""
+import ast
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+
+root=Path(__file__).resolve().parent
+parent=root.parent/'weak_mediator_candidate'
+def identity(path):
+    raw=path.read_bytes()
+    return {'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+
+expected={'PROPOSAL.md':'22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b',
+          'DYADIC_ADDENDUM.md':'2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517'}
+source_dir=root/'sources'
+source_dir.mkdir(exist_ok=False)
+sources=[]
+for name in ['PROPOSAL.md','SOURCE_FREEZE.json','DYADIC_ADDENDUM.md']:
+    f=parent/name
+    item=identity(f)
+    if name in expected and item['sha256']!=expected[name]:
+        raise RuntimeError('parent identity mismatch: '+name)
+    with (source_dir/name).open('xb') as stream:
+        stream.write(f.read_bytes())
+    if identity(source_dir/name)!=item: raise RuntimeError('snapshot mismatch')
+    sources.append({'original_path':str(f),'snapshot':'sources/'+name,**item,
+                    'coverage':'complete text read; immutable selected source only',
+                    'status':'exposed root proposal, not accepted by this packet'})
+basefreeze=json.loads((source_dir/'SOURCE_FREEZE.json').read_text())
+for item in basefreeze['files']:
+    if Path(item['path']).name=='PROPOSAL.md':
+        got=identity(source_dir/'PROPOSAL.md')
+        if got!={k:item[k] for k in ['bytes','sha256']}:
+            raise RuntimeError('base source freeze mismatch')
+syntax=[]
+for name in ['check_weak_mediator.py','record_one_attempt.py','seal_metadata.py','record_metadata.py']:
+    ast.parse((root/name).read_text(),filename=str(root/name))
+    syntax.append({'path':name,'AST_parse':'completed; not imported or executed',**identity(root/name)})
+inputs=json.loads((root/'INPUTS.json').read_text())
+if inputs['proposal_sha256']!=expected['PROPOSAL.md'] or inputs['dyadic_addendum_sha256']!=expected['DYADIC_ADDENDUM.md']:
+    raise RuntimeError('input source pin mismatch')
+manifest={'status':'source-only prospective check; scientific_execution_count=0',
+          'created_utc':dt.datetime.now(dt.timezone.utc).isoformat(),
+          'sources':sources,'local_syntax_metadata':syntax,
+          'read_scope':'complete two mathematical source bodies and source freeze; no sibling checker, no scientific imports',
+          'actual_scientific_execution':None,'root_go':None,'acceptance':None,
+          'future_execution':'one separate explicit GO required; 60-second wall limit; no automatic retry',
+          'exposure':'source-exposed same-model author; see EXPOSURE.md',
+          'metadata_run_outside_freeze':'runs/metadata_001/'}
+with (root/'SOURCE_MANIFEST.json').open('x') as stream:
+    json.dump(manifest,stream,indent=2);stream.write('\n')
+files=[]
+for f in sorted(root.rglob('*')):
+    if not f.is_file(): continue
+    rel=f.relative_to(root).as_posix()
+    if rel=='PRELAUNCH_FREEZE.json' or rel.startswith('runs/'): continue
+    files.append({'path':rel,**identity(f)})
+freeze={'status':'immutable source-only prospective scientific check; no scientific run',
+        'created_utc':dt.datetime.now(dt.timezone.utc).isoformat(),
+        'scientific_execution_count':0,'metadata_runs_excluded':'runs/',
+        'files':files}
+out=root/'PRELAUNCH_FREEZE.json'
+with out.open('x') as stream:
+    json.dump(freeze,stream,indent=2);stream.write('\n')
+print(json.dumps({'metadata_only':True,'AST_files':len(syntax),'source_snapshots':len(sources),
+                  'freeze_members':len(files),'freeze':str(out),**identity(out)},sort_keys=True))

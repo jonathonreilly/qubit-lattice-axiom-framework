@@ -1,0 +1,158 @@
+diff --git a/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md b/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md
+index f44d13eef5..8724bc0844 100644
+--- a/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md
++++ b/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md
+@@ -33,3 +33,17 @@
+   branch has 67 free unknowns and 4881 equations, too large to close in the
+   campaign window. Range four is therefore not claimed; the linear stage is
+   evidence only.
++- **Converter bug, found and fixed (2026-10-16 21:35Z).** `tosing_branch.py`
++  renamed free unknowns to real symbols `y0, y1, ...` by sequential
++  substitution. When the free unknowns were themselves named `x_i, y_i`
++  (real), as in the twisted-pair branches, the renaming overwrote variables.
++  It now uses fresh names `zz_i` with simultaneous substitution, and passes a
++  self-test: the converted ideal vanishes at the constant walk.
++  - **Affected:** only the twisted-pair (E1/2 + E5/2) mod-p runs. Their
++    unit-ideal output was wrong and is discarded; they are being rerun.
++  - **Unaffected, with reasons:**
++    - range three: its unknowns are named `x_i` only, so there is no
++      collision;
++    - spin 3/2: it used `tosing_alg.py`, whose new symbols are non-real and
++      distinct from the original real `y_i`;
++    - the range-two validation reproduced the sympy result.
+diff --git a/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py b/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py
+index e0a5808415..4cdfcb42d0 100644
+--- a/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py
++++ b/.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py
+@@ -2,11 +2,11 @@
+ import pickle, sys, sympy as sp
+ d = pickle.load(open(sys.argv[1], 'rb'))
+ free, red = d['free'], d['red']
+-Y = sp.symbols(f'y0:{len(free)}', real=True)
++Y = sp.symbols(f'zz0:{len(free)}', real=True)
+ sub = dict(zip(free, Y))
+ out = set()
+ for e in red:
+-    P = sp.Poly(sp.expand(e.subs(sub)), *Y)
++    P = sp.Poly(sp.expand(e.subs(sub, simultaneous=True)), *Y)
+     re = sum(sp.re(c) * sp.prod([y ** k for y, k in zip(Y, m)]) for m, c in P.terms())
+     im = sum(sp.im(c) * sp.prod([y ** k for y, k in zip(Y, m)]) for m, c in P.terms())
+     for part in (re, im):
+diff --git a/docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md b/docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md
+index 38b3a7e2fd..26e17930a7 100644
+--- a/docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md
++++ b/docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md
+@@ -117,9 +117,19 @@ which the runner checks: they are trivial on the axis half-turns. ∎
+ - Staggered-fermion taste counting is standard: 2^(d/2) tastes in d
+   Euclidean dimensions, and 2 per eight-site cube in the 3+1 Hamiltonian
+   form.
++- In this repository, `STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23`
++  shows the hw=1 triplet of the standard staggered lattice carries an
++  unbroken S3: the eta-convention asymmetry is gauge. The generation lane
++  builds on that triplet.
++  `EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03`
++  finds N_f = 2 identical tastes on the cube with no generation label. The
++  table here is consistent with both: signed corners give 2E, two tastes.
+ - New here: the classification of the taste content of every cubic-orbit
+-  cell. It shows the taste index is always an axis-permutation
+-  representation, with the table above.
++  cell, under signs or phases. It shows the taste index is always an
++  axis-permutation representation, with the table above. This is a
++  statement about copy spaces and is separate from the hw=1 momentum-space
++  triplet of the generation lane. The two-qubit note's light-speed corollary
++  is where the hw=1 triplet appears in the one-tick setting.
+ 
+ ## No-Go Discipline Gate
+ 
+diff --git a/docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md b/docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md
+index 8e375533c9..c5340b68b8 100644
+--- a/docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md
++++ b/docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md
+@@ -201,6 +201,21 @@ The doubler-free tick of Theorem 2 reaches three.
+ - **Taste basis.** That the eight sites of a cube carry two Dirac flavors is
+   standard for Kogut–Susskind fermions in 3+1 dimensions (Hamiltonian
+   formulation; see e.g. arXiv:2511.06198).
++  In this repository the continuous-time unit-hop census
++  `EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03`
++  finds 8 = spin 2 x chirality 2 x flavor 2, i.e. N_f = 2 vector-like Dirac
++  tastes. Theorem 2 gives the same content for a single exactly covariant
++  unitary tick. That census also notes that the two tastes are identical
++  copies with no generation label; nothing here changes that.
++- **Hierarchy programme.** `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10`
++  uses the 4D Euclidean 2^4 block, whose naive count is 16, in a Matsubara
++  setting rather than a unitary tick. Its own no-go
++  `HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10`
++  finds the count regulator-dependent. The one-tick results here add data
++  points for that gate (B3b), not a resolution:
++  - two light Dirac fermions per staggered block (Theorem 2);
++  - one per two-qubit site;
++  - no nearest-site staggered tick at all (Theorem 3).
+ - **Staggered walks.** Staggered discrete-time quantum walks and their
+   relation to Kogut–Susskind fermions have been studied mainly in lower
+   dimensions (arXiv:1807.08303, arXiv:1906.04483).
+diff --git a/docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md b/docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md
+index a20d05f788..0248026c02 100644
+--- a/docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md
++++ b/docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md
+@@ -184,6 +184,35 @@ companion note, whose leading correction is linear and handed
+ (-n1 n2 n3 |k|^2). That cubic symmetry pushes lattice anisotropy to
+ O(a^2) is standard; the new point is the contrast within these tick laws.
+ 
++## Corollary to Theorem 5 — at light speed the hw=1 triplet becomes massless
++
++At the light-speed member b_gold the three axis points X = (pi,0,0),
++(0,pi,0), (0,0,pi) carry massless Dirac cones at quasienergy pi (exact). Near
++(pi,0,0), writing q_par along the axis and q_perp across it,
++
++    (omega - pi)^2 = q_par^2 + (sqrt5 - 2)^2 q_perp^2 + ...,
++
++a uniaxial cone with v_par = 1 and v_perp = sqrt5 - 2 = phi^-3, where phi is
++the golden ratio. The axis permutations (S3, with C3 cycling x -> y -> z)
++permute the three cones. The face points M and corner point R stay gapped
++(2.665 and 2.455 rad, Theorem 5).
++
++So at light speed the walk has 1 + 3 massless species: one isotropic cone at
++k = 0 and an S3 triplet of uniaxial pi-mode cones at the hw=1 points. For
++s < 1 the triplet is gapped at theta_X = 2 arcsin s, and its splitting from
++the k = 0 cone is fixed by the speed (Theorem 4 and the Wilson-gap
++corollary).
++
++Bearing on the repository's generation lane (information, not a claim). The
++lane takes the hw=1 triplet with an unbroken S3 as the generation candidate
++(`STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23`, positivity
++reducing S3 to C3).
++- In this one-tick family the triplet is massless only at the unique
++  light-speed member.
++- There it is a degenerate S3 triplet of pi-mode Dirac cones, anisotropic
++  with transverse speed phi^-3, and distinct from the k = 0 fermion.
++- Nothing here splits the triplet or attaches charges.
++
+ ## Theorem 7 — isotropy at order k^4 and the sqrt(2/3) bound
+ 
+ *Massless dispersion.* At k = 0, g = 0 and the Gram identity give
+@@ -508,4 +537,4 @@ impossibility claim.
+ python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
+ ```
+ 
+-Expected: `TOTAL: PASS=40 FAIL=0` (under a minute).
++Expected: `TOTAL: PASS=41 FAIL=0` (under a minute).
+diff --git a/scripts/two_qubit_cubic_dirac_tick_2026_10_16.py b/scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
+index 9e86a60c5f..c817c12555 100644
+--- a/scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
++++ b/scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
+@@ -213,6 +213,15 @@ def main() -> int:
+     ck.check('at b*: e1, e2, e3 of G are positive, so the three nonzero eigenvalues are positive (G >= 0, rank 3)',
+              all(sg == 1 for sg in signs))
+ 
++    # Corollary to Theorem 5: the hw=1 triplet at the light-speed member
++    q1s, q2s, es = sp.symbols('q1s q2s es')
++    kx = [sp.pi + es * q1s, es * q2s, sp.Integer(0)]
++    cx = [sp.cos(x) for x in kx]
++    phx = sp.Matrix([1, sum(cx), cx[0] * cx[1] + cx[0] * cx[2] + cx[1] * cx[2], cx[0] * cx[1] * cx[2]])
++    fx = (sp.Matrix([1, 3, 3, 1]).T * Gg * phx)[0]
++    c2x = sp.expand(sp.series(1 + fx, es, 0, 3).removeO()).coeff(es, 2)
++    ck.check('light-speed member: at X = (pi,0,0) a massless pi-mode cone, (omega - pi)^2 = q_par^2 + (sqrt5 - 2)^2 q_perp^2 (uniaxial, v_perp = sqrt5 - 2 = phi^-3)',
++             sp.simplify(sp.expand(fx.subs(es, 0)) + 1) == 0 and sp.simplify(2 * c2x - (q1s ** 2 + (r5 - 2) ** 2 * q2s ** 2)) == 0)
+     # Theorem 7: quartic isotropy and the sqrt(2/3) bound
+     phi0c = sp.Matrix([1, 3, 3, 1])
+     ck.check('phi0^T G phi0 = 1 identically in b: the massless member has f = phi0^T G phi(k)',

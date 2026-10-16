@@ -1,0 +1,83 @@
+# Provisional two-qubit weak-mediator construction
+Created by root 2026-10-16. UNCHECKED PROPOSAL; not retained, not yet independently checked.
+
+## Scope and fixed inputs
+Old system S comprises two qubits on an edge, with literal K=2 I+Z1 Z2.
+W=((3+4i)/5)(3 I+4i X1 X2)/5; theta=atan(4/3), alpha=pi-theta.
+T=350208522228384946904887108861751911074590975328100424043350794320, window w=24.
+This T is the saved target-compilation schedule duration; this construction does not execute that external schedule. It uses its fixed target and duration only.
+Intended comparison for every s in [0,w], t=T+s:
+exp(-it Hphys) J versus J exp(-irt) exp(-is K) W exp(-iT K),
+as full isometries for arbitrary old/reference input, not only density channels or postselection.
+J psi=psi tensor Phi+, Phi+=(00+11)/sqrt(2) on two source qubits A,B. All four qubits are retained.
+Tensor order S1,S2,A,B. Sources occupy the opposite edge of a square with edges (1,2),(1,A),(2,B),(A,B).
+No added old-edge XX term. NEW PERMISSION: the specified two-qubit source Bell-projector block and old-source XX/YY port terms are available. These are additional microscopic coupling assumptions and are not the original four positive onsite control rays. Native availability, Bell preparation, installation, precise coefficients, external timing and final reuse are open.
+
+## Supplied positive Hamiltonian
+Set delta=theta/pi, Delta=2-delta, q=theta/T,
+gx=sqrt(q Delta/2), gy=sqrt(q), r=2(gx+gy).
+Let Hc=Delta (I-|Phi+><Phi+|) on A,B and
+V=gx(X1 XA+X2 XB)+gy(Y1 YA-Y2 YB).
+Hphys=K+Hc+r I+V is the sum of literal K, positive Hc, and the four positive port blocks
+gx(I+X1 XA), gx(I+X2 XB), gy(I+Y1 YA), gy(I-Y2 YB).
+Each port block has norm twice its coefficient. Each old vertex has added incident norm r; each source vertex has added incident norm Delta+r. Since 1/4<delta<1/2, 3/2<Delta<7/4. theta<1 follows from theta=pi/4+atan(1/7), pi<22/7. Thus r<4/sqrt(T). For T>2^128, r<delta, so every vertex has added incident norm <2. K remains a distinct old block of norm3. All coefficients are constant: runtime slew zero. No internal clock, driving waveform, high-strength penalty, measurement or discarded output is used.
+
+## Second-order candidate, including scalar phase
+P=JJ*, Q=I-P, H0=K+Hc. H0 J=J K and J* V J=0.
+On old ZZ parity z=+/-1, K=2+z. V flips this parity and sends Phi+ into source triplets with Hc energy Delta.
+The old-to-complement spectral denominators for H0 versus K are Delta and Delta+/-2; their absolute values are >=delta.
+
+Define S1 in Q by H0 S1-S1 K=-VJ. Explicitly S1 P_z=-VJ P_z/(Delta-2z).
+Define H2=J* V S1.
+Bell correlations <XA XB>=1, <YA YB>=-1, mixed correlations zero give
+J* V^2 J=2gx^2(I+XX)+2gy^2(I+YY).
+Since YY=-ZZ XX,
+H2 restricted to parity z =
+ -2(gx^2+gy^2)/(Delta-2z) I
+ -2(gx^2-z gy^2)/(Delta-2z) XX.
+The chosen relation gy^2=2gx^2/Delta makes the XX coefficient -q for both parities.
+Consequently
+H2=s0 I+d ZZ-q XX,
+s0=q Delta/(2-Delta)=(2pi-theta)/T,
+d=2q/(2-Delta)=2pi/T.
+This H2 is Hermitian and commutes with K.
+Its four Bell eigenvalues are (4pi-2theta)/T,4pi/T,-2theta/T,0, so ||H2||=4pi/T<16/T.
+Thus exp(-iT H2)=exp(i theta) exp(i theta XX)=W, including the scalar phase, because exp(-i2pi ZZ)=I.
+The large scalar reserve r is NOT deleted: the comparison source state is chi(t)=exp(-irt)Phi+.
+
+## Elementary residual bound proposed for checking
+Define S2 in Q by H0 S2-S2 K=-Q V S1 (entrywise Sylvester inverse across the nonzero gap).
+Let F=J+S1+S2 and G=K+H2.
+Exact expansion should give
+(H0+V)F-FG=R=V S2-S1 H2-S2 H2.
+No normalization of F is needed for the following variation-of-constants comparison, since H0+V and G are Hermitian:
+||exp(-it(H0+V))J-J exp(-itG)|| <=2||F-J||+t||R||.
+With v=||V||<=r, dim(S)=4 and Frobenius norm, proposed bounds are
+||S1||<=||S1||F<=2v/delta,
+||S2||<=||S2||F<=2v^2/delta^2,
+||H2||<=2v^2/delta,
+||R||<=6v^3/delta^2+4v^4/delta^3.
+Therefore error <=4v/delta+4v^2/delta^2+t(6v^3/delta^2+4v^4/delta^3).
+For t<=T+24<=2T, v<4/sqrt(T), delta>1/4, this is
+<=12352/sqrt(T)+132096/T.
+For T>2^128 it is <2^-49.
+During the additional w window, the effective target comparator incurs at most w||H2||<384/T.
+The total proposed uniform isometry error is then <2^-48, hence <2^-44.
+The unhalved joint-reference trace error is at most twice the actual isometry bound. No exact halt or indefinite source reuse follows.
+These coarse powers need exact checking; no numerical execution has occurred.
+
+## Energy statements to check
+J* Hphys J=K+rI; for old state rho, full initial mean is Tr(rho K)+r.
+J* Hphys^2 J=(K+rI)^2+J* V^2 J, so initial full variance is
+Var_rho(K)+2gx^2(1+<XX>)+2gy^2(1+<YY>).
+Full-Hphys moments are conserved by the static evolution.
+Old K need not commute with V. Old-energy error at the output can instead be bounded from the joint-state error and old spectral width2.
+Modeled runtime drive work is zero because dHphys/dt=0. Bell preparation, installation/removal, microscopic actuation and resets are separate and are not declared free.
+
+## Precision and remaining obligations
+Any actual Hamiltonian perturbation E adds at most (T+w)||E|| to the isometry budget (static bounded E), by Duhamel. This is a sufficient absolute calibration requirement, not a necessity theorem.
+The ideal coefficients include pi, atan and square roots; they are computable but a finite rational compilation/encoding bound is not yet supplied.
+The scalar rT belongs to the retained source output. A density-channel statement alone would not check it.
+This is a proposed concrete four-qubit model with newly supplied port/source couplings, not a native realization of the original onsite-only controller, general autonomous compiler, clock or halt/reuse theorem.
+Check all tensor signs, Sylvester inverses, exact residual cancellation, positivity/local incident norms, full source phase and energy identities independently before promotion.
+

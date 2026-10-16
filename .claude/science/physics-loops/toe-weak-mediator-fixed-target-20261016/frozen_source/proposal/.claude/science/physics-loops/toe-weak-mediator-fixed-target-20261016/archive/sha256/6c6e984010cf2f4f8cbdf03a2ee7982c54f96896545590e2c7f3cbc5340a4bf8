@@ -1,0 +1,18 @@
+{
+  "status": "source-only proposed exact check; not executed",
+  "proposal_sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b",
+  "dyadic_addendum_sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517",
+  "T_decimal": "350208522228384946904887108861751911074590975328100424043350794320",
+  "window": 24,
+  "ring": "Q[i,h,a]/(i^2+1); h and a real, Delta=2h^2, q=a^2",
+  "tensor_order": ["S1", "S2", "A", "B"],
+  "integer_bit_ceiling": 65536,
+  "polynomial_degree_ceiling": 32,
+  "polynomial_term_ceiling": 256,
+  "convolution_pair_ceiling": 2000000,
+  "integer_operation_ceiling": 30000000,
+  "matrix_product_ceiling": 256,
+  "report_byte_ceiling": 16777216,
+  "wall_limit_seconds": 60,
+  "dyadic_bits": 400
+}

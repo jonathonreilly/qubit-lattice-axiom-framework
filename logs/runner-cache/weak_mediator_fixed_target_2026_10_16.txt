@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/weak_mediator_fixed_target_2026_10_16.py
+runner_sha256: ae47d5e43dedbd4cf9f0ba89591fb27845e8bbdace98cb8803295984fa4ae3c3
+input_fingerprint_sha256: d32988a7aa6f1b9b5125cb5af3d15104c990ae80d470d78a1914fc670b8391e3
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: literal K=2I+ZZ; supplied Bell projector and four positive XX/YY ports with actual rhat
+per_site: added incident caps below2; old total3+rhat; Bell preparation and microscopic couplers supplied
+per_mode: full U(4) scalar phase and arbitrary old/reference input; no determinant normalization
+per_block: one fixed target, actual-time finite window and known finite reuse; no permanent halt
+lattice_wide: two distinct author programs plus one report-derived saved-arithmetic check; conditional analytic endpoints, no replay or native supply
+
+----- stderr -----
+

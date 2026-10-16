@@ -1,0 +1,9 @@
+# Root GO: one fixed two-scenario coefficient execution
+
+Root reviewed the complete341-line compiler f79abfaee25476fcbf681067caa0b360be5bed251fe184a1c67afa369879cb14, complete recorder, parameter contract, guide and exposure. All14 prelaunch members at418458ae2fd6ecec19320cc79240756b97fa116629badb701a0672ee2e720bc0 are verified. Root also read the complete analytic structured review89e19b6e80fceec3ca3a1668e1a2ea941004b4966ef8ce8649aa33f32d5c8f41: commuting-port norm monotonicity, actual source gap and actual reserve phase are essential qualifications.
+
+Authorize exactly one compiler_001 execution of the captured fixed source and inputs with Python-I-B,60-second wall limit,65536-bit guarded integer ceiling,500000 guarded integer operations and16-MiB report ceiling. No OS CPU/RAM quota or internal isqrt/GCD accounting is claimed. Both declared scenarios execute sequentially: uniform p171,n179,window24; mixed pg117,pD58,n125,window2^68. No retry, precision increase or alternative target is authorized. Preserve failures and partial artifacts.
+
+This is author implementation execution, not an independent invention or blind check. Analytic enclosures, residual/Duhamel/reference estimates and physical interfaces remain explicit premises. The actual rounded scalar remains in the full comparator. No canonical/Git/PR/audit/prompt/axiom changes are authorized by this GO. Root scientific qualification follows the actual evidence; no success is asserted in advance.
+
+Recorded UTC: 2026-10-16T21:17:54.890439+00:00

@@ -1,0 +1,24 @@
+{
+  "status": "source-only fixed m=44 compiler; no scientific execution",
+  "m": 44,
+  "T_exponent": 120,
+  "p": 171,
+  "n": 179,
+  "window": 24,
+  "atan_denominators": [5, 239, 7],
+  "integer_bit_ceiling": 65536,
+  "guarded_integer_operation_ceiling": 500000,
+  "report_byte_ceiling": 16777216,
+  "wall_limit_seconds": 60,
+  "structured_scenario": {
+    "ports_p": 117,
+    "source_p": 58,
+    "n": 125,
+    "window_exponent": 68,
+    "ports_error_exponent": 116,
+    "source_error_exponent": 57
+  },
+  "structured_source_sha256": "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395",
+  "finite_compiler_source_sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8",
+  "scaling_source_sha256": "7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda"
+}

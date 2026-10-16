@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Hash/copy the exposed proposal and record the pre-addendum review identity."""
+import hashlib
+import json
+import pathlib
+import shutil
+
+ROOT = pathlib.Path(__file__).resolve().parent
+SOURCE = ROOT.parent / "weak_mediator_candidate"
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def main():
+    proposal = pin(SOURCE / "PROPOSAL.md")
+    assert proposal["bytes"] == 5883
+    assert proposal["sha256"] == "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b"
+    freeze = pin(SOURCE / "SOURCE_FREEZE.json")
+    manifest = json.loads((SOURCE / "SOURCE_FREEZE.json").read_text())
+    assert manifest["files"] == [proposal]
+    assert manifest["status"] == "root-original unchecked source-only proposal; no scientific execution"
+    assert not (ROOT / "ADDENDUM_REVIEW.md").exists()
+    assert not (ROOT / "sources" / "DYADIC_ADDENDUM.md").exists()
+    copies = ROOT / "sources"
+    copies.mkdir(exist_ok=False)
+    for name in ("PROPOSAL.md", "SOURCE_FREEZE.json"):
+        shutil.copyfile(SOURCE / name, copies / name)
+        assert pin(SOURCE / name)["sha256"] == pin(copies / name)["sha256"]
+    result = {
+        "scope": "Original source exposed, analytical reconstruction completed before dyadic addendum is read",
+        "original_sources": [proposal, freeze],
+        "review": pin(ROOT / "REVIEW.md"),
+        "exposure": "Complete root-authored proposal read; prior campaign target/duration known; no blind or numerical independence claim",
+        "scientific_execution": False,
+        "source_program_import": False,
+        "numerical_solver_run": False,
+        "actual_metadata_controls": [
+            "exact original proposal byte count and SHA256",
+            "original source-freeze row equals actual proposal pin",
+            "original unchecked status preserved",
+            "bounded copies match original bytes",
+            "addendum review/copy absent before original review seal",
+        ],
+    }
+    (ROOT / "SOURCE_MANIFEST_ORIGINAL.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(result, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

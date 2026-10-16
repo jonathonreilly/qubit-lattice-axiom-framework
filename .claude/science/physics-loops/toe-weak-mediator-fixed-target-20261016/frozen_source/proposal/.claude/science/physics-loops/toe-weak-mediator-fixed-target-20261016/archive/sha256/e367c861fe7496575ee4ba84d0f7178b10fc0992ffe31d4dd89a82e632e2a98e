@@ -1,0 +1,63 @@
+# Root qualification of the finite weak-mediator construction
+
+This controls the historical proposal and exposed review bodies preserved with it. It accepts a conditional finite-dimensional construction and its explicitly bounded compiler, observation-window and finite-reuse consequences. It does not identify new interactions with the repository's microscopic axioms, establish retained audit status, or claim a physical experiment. Historical `proposed`, `unchecked`, and source-only status fields remain evidence of their original stage; current acceptance is separate.
+
+## Supplied model and exact comparison
+
+The old system consists of two qubits with literal `K=2I+Z1Z2` and fixed target `W=((9+12i)I+(-16+12i)X1X2)/25`. Two additional qubits A,B start in a Bell state independently of any unknown old/reference input. All four output qubits and arbitrary old references are retained. The new model supplies the positive source block `Delta(I-|Phi+><Phi+|)` and four positive ports `gx(I+X1XA)`, `gx(I+X2XB)`, `gy(I+Y1YA)`, `gy(I-Y2YB)`. Their scalar reserve is already `r=2(gx+gy)`; it is not an additional installed block. The graph is the square with the old pair and source pair as opposite edges.
+
+Let `theta=atan(4/3)`, `delta=theta/pi`, `Delta=2-delta`, `q=theta/T`, `gx=sqrt(q Delta/2)`, and `gy=sqrt(q)`. For the specified parameter range, every added incident load is below2 and runtime coefficients are constant. The old vertices retain the separate norm-3 K block; an added cap is not a total cap. Physical time would be `hbar*T/E0` if physical energies are E0 times the displayed blocks. The theorem does not rescale K to meet a cap.
+
+The complete isometry comparator at `t=T+s` is
+
+`J exp(-irt) exp(-isK) W exp(-iTK)`, with `J psi=psi tensor Phi+`.
+
+For installed rounded coefficients, replace the reserve in this comparator by the **actual** `rhat=2(gxhat+gyhat)`. Neither the scalar nor literal old aging is omitted. Source excitation under V includes Psi+ and Psi−; the proposal's use of “triplets” is a terminology error because Psi− is a singlet. The complementary source block penalizes all three orthogonal Bell states equally, so the formulas and support are unchanged by this correction.
+
+## Why the small residual suffices
+
+Root and the exposed analytic reviewer checked the displayed first and second Sylvester equations, their cross-spectrum gap, Hermiticity of the effective comparison and the residual identity. The source sector need not be the globally lowest band. The relevant gap is `delta`, and the Frobenius inverse bound uses the old input dimension4. Writing `F=J+S1+S2`, `G=K+H2`, one has exactly
+
+`(H0+V)F-FG = V S2-S1 H2-S2 H2`.
+
+Duhamel therefore bounds the two propagated embeddings by `2||F-J||+t||residual||`; F need not be an isometry. This avoids assuming a truncated perturbation expansion remains exact for the long runtime. The tuned second-order operator is `H2=s0 I+d ZZ-q XX`, with `s0=(2pi-theta)/T`, `d=2pi/T`. Its exponential at T is exactly the full-phase W. Both the analytic Bell calculation and the separately implemented finite polynomial fixture support these identities. The fixture does not by itself prove the analytic gap or norm estimates.
+
+For `0<=t<=2T`, the residual construction yields `R(T)=12352/sqrt(T)+132096/T`. A fixed24 observation window adds384/T. The original supplied huge integer T consequently gives the stated finite small error. The scalable family instead sets `epsilon=2^-m`, integer `m>=0`, and `T=2^(2m+32)`; it is a separate explicit runtime, not the earlier externally controlled word's duration.
+
+## Finite coefficients, longer windows and structured errors
+
+The equality-safe compiler uses rational intervals from three alternating arctangent sums and integer quotients/square roots of rational lower endpoints. It never requires an oracle deciding whether an irrational coefficient equals a dyadic boundary. At uniform precision `p=3m+39`, `n=p+8`, each coefficient error is strictly below `2*2^-p`. This supports the uniform finite-precision bounds in the source. The earlier conditional floor construction with one fewer bit remains historical and is not falsely described as the implemented equality-safe algorithm.
+
+For `w=epsilon*T/256`, literal old aging is still kept throughout `[T,T+w]`. The uniform rounded construction has full-isometry error below `15epsilon/32`, hence unhalved full joint trace error below `15epsilon/16`. This is not a fixed-output plateau: the independent review gives old states whose K evolution becomes orthogonal inside such a window.
+
+The sharper structured theorem allows only lower replacements of the same three shared positive coefficients, keeping the source projector, paired port coefficients, signs, supports and old K exact. Port errors at most `h_g=epsilon/(4096 sqrt(T))` and source error at most `h_D=epsilon/8192` give full-isometry error below `7epsilon/16` and full joint trace error below `7epsilon/8` on the longer window. The effective-Hamiltonian bound is
+
+`||H2hat-H2|| < 128 h_g/sqrt(T)+256 h_D/T`.
+
+Two details of the exposed check are required. First, the four port Pauli operators commute, and their Bell eigenvectors attain `||V||=2(gx+gy)`, so lowering these coefficients really gives `||Vhat||<=||V||`. Such monotonicity is not assumed for an arbitrary operator sum. Second, `Delta>5/3` and `h_D<=2^-13` ensure `Deltahat>3/2`; consequently the actual minimum cross-spectrum gap is `2-Deltahat>=delta`. The effective formula `H2hat=-Mhat(Deltahat I-2ZZ)^-1` remains Hermitian without exact tuning. Its Gram/resolvent estimate and the actual residual justify the rounded model directly.
+
+The mixed grids `p_g=2m+29`, `p_D=m+14`, `n=max(p_g,p_D)+8` implement these sufficient errors. The interval proof also works at m=0,n=37. Coefficient bit lengths are output-description bounds; they are not intermediate arithmetic or total bit complexity. Each scenario uses `3n` summed terms **plus three first-omitted remainders**, three final rounding quotients and two integer-square-root calls. Internal rational normalization, GCD and square-root operations are not included in those last small counts.
+
+Using the original r in place of actual rhat would invalidate the full-isometry claim. The review preserves an allowed real coefficient change with `(r-rhat)T=pi`, giving opposite comparator phase at T. A general additional self-adjoint fault E outside the restricted coefficient family retains its separate `(T+w)||E||` isometry allowance. These are sufficient bounds, not necessary precision laws or an optimization theorem.
+
+## What finite reuse establishes
+
+For a prescribed finite number L of runtime intervals, a unitary hybrid argument accumulates at most L times the per-interval error, without resetting the actual source or assuming it stays product after earlier use. Optional interleaved unitaries act on the old system and retained reference and as identity on the source; their physical implementation, elapsed time, errors and controllers are supplied interfaces. With `m=m0+ceil(log2 L)`, the stated total error target is met with the explicit cubic-in-L runtime bound. The known finite-L construction is not indefinite reuse of a fixed device, permanent halt, or an autonomous intervention schedule.
+
+An additive initial trace error requires an independently prepared product source or an explicit bound on the full initial old/reference/source state. A small source marginal alone does not provide that joint bound; the review's correlated counterexample is retained. The total static Hamiltonian's energy moments are conserved, and initial mean/variance include the port contribution and old-state covariance. Old K energy can change during runtime. Zero prescribed drive work during a static interval does not make Bell preparation, installation, timing or reset free.
+
+## Actual checks and their limits
+
+Root read all six proposal/addendum bodies and five separate analytic review bodies, including complete arguments and counterexamples. The reviewer had source exposure and contributed the lower-endpoint rounding strategy; the checks use the same selected model. They are separate analytic reconstructions, not blind or model-independent reviews. Four frozen analytic packets preserve the original chronology and actual metadata receipts. No review-count claim substitutes for the arguments.
+
+The symbolic author fixture ran once for0.2838803748600185 seconds with exit0,60 finite checks and a60-second wall limit. It checked the finite Pauli/Gram/Sylvester/full residual identities and the displayed wrong-sign and bare-denominator mutants in an exact polynomial representation. The complete247777-byte report is preserved at SHA256 `4369fa1d5a970bf4e01ea00cc7db000779cab1d1f26be9bcbd26e1c4bc292a7d`. It did not evaluate long-time matrix exponentials or execute the later scalable/window/structured theorems.
+
+The exact coefficient compiler then ran once for0.131953792180866 seconds with exit0 under its own60-second wall limit. Its two predeclared m=44 cases use T=2^120: uniform p171,n179,window24, and mixed pg117,pD58,n125,window2^68. The actual1,188,206-byte report at SHA256 `0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564` contains both complete coefficient lists, rational intervals, integer certificates and conditional budgets. There were64 finite checks,912 summed terms,6 remainder terms,6 final quotients,4 integer-square-root calls and6111 guarded integer operations. Maximum observed guarded integer size was20857 bits. The coefficient compiler is an author implementation; its checks do not independently prove the mediator or physical premises.
+
+Both executions retain their exact source and inputs at launch, interpreter identity, argv, cwd, full streams, wall time and original receipt schemas. No OS CPU/RAM quotas were imposed. Root inspected source, receipts, streams, selected exact certificate structure and result ledgers; large polynomial/rational report bodies are preserved by hash rather than described as manually checked entry by entry. There was no numerical evolution, physical test or Lean formalization. Any later independent saved-certificate check has a separate result and does not retroactively change these historical execution claims.
+
+## Remaining physical identifications and publication boundary
+
+The construction supplies a finite source/port Hamiltonian model with explicit resource and error accounting. It does not derive the Bell projector or XX/YY ports from the original four onsite rays or from the repository's bare microscopic premises. Bell preparation independent of unknown input, installing and calibrating the supplied interactions, external observation timing, generic noise, and final halt/reset remain unresolved physical interfaces. The downstream autonomous composition and other campaign PRs are not mathematical premises of this self-contained fixed-target theorem.
+
+The publication may preserve these exact source bodies and qualifications as one coherent regular milestone PR with zero direct mathematical parents. Source packaging, canonical integration, actual staging, publication and retained audit each remain separate evidence. No science merge, main push, audit verdict, physical axiom, editable prompt or model setting changes are part of this acceptance.

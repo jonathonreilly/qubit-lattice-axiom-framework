@@ -1,0 +1,82 @@
+{
+  "status": "source-only fixed m=44 coefficient compiler; no scientific execution",
+  "created_utc": "2026-10-16T21:12:44.241375+00:00",
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+      "snapshot": "sources/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+      "bytes": 3953,
+      "sha256": "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395",
+      "read_coverage": "complete body in this task",
+      "status": "root-proposed mathematical parent; no acceptance inferred by this packet"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "snapshot": "sources/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4295,
+      "sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8",
+      "read_coverage": "complete body in this task",
+      "status": "root-proposed mathematical parent; no acceptance inferred by this packet"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/SCALING_ADDENDUM.md",
+      "snapshot": "sources/SCALING_ADDENDUM.md",
+      "bytes": 3405,
+      "sha256": "7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda",
+      "read_coverage": "complete body in this task",
+      "status": "root-proposed mathematical parent; no acceptance inferred by this packet"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/PROPOSAL.md",
+      "snapshot": "sources/PROPOSAL.md",
+      "bytes": 5883,
+      "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b",
+      "read_coverage": "complete body; preceding coherent-task read reused only at unchanged exact identity",
+      "status": "root-proposed mathematical parent; no acceptance inferred by this packet"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/DYADIC_ADDENDUM.md",
+      "snapshot": "sources/DYADIC_ADDENDUM.md",
+      "bytes": 2959,
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517",
+      "read_coverage": "complete body; preceding coherent-task read reused only at unchanged exact identity",
+      "status": "root-proposed mathematical parent; no acceptance inferred by this packet"
+    }
+  ],
+  "syntax_metadata": [
+    {
+      "path": "compile_coefficients.py",
+      "AST_parse": "completed; scientific source not imported or evaluated",
+      "bytes": 20971,
+      "sha256": "f79abfaee25476fcbf681067caa0b360be5bed251fe184a1c67afa369879cb14"
+    },
+    {
+      "path": "record_one_attempt.py",
+      "AST_parse": "completed; scientific source not imported or evaluated",
+      "bytes": 5717,
+      "sha256": "d24a03376c49f22f385aa569d62d67a9cd685eda4a28201977a537c68f6fb61d"
+    },
+    {
+      "path": "seal_metadata.py",
+      "AST_parse": "completed; scientific source not imported or evaluated",
+      "bytes": 3923,
+      "sha256": "29ec74f83e2f1d6ecb91771c78477b45427a430d3e55ae3165d90e7cee7ded21"
+    },
+    {
+      "path": "record_metadata.py",
+      "AST_parse": "completed; scientific source not imported or evaluated",
+      "bytes": 1956,
+      "sha256": "b65dd790bb97f3a6717dd605ed6d79c6edd884b4a0c6be9d474d9a75adc9e9cc"
+    }
+  ],
+  "actual_scientific_execution": null,
+  "root_go": null,
+  "acceptance": null,
+  "recorder_text_ancestor": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/record_one_attempt.py",
+    "sha256": "ae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87",
+    "role": "metadata recorder adaptation only; no scientific source import"
+  },
+  "exposure": "source-exposed same-model author; see EXPOSURE.md",
+  "metadata_runs_outside_freeze": "runs/metadata_001/"
+}

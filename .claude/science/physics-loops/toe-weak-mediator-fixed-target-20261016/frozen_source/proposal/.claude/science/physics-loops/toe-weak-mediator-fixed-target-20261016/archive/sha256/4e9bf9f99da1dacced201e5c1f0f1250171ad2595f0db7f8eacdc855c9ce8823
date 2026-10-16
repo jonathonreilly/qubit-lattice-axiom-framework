@@ -1,0 +1,25 @@
+# Current checkpoint
+
+The m=44, T=2^120 coefficient compiler source and recorder are complete and
+source-only. Both scenarios are predeclared: p=171,n=179,window24; and
+p_g=117,p_D=58,n=125,window2^68. They are distinct outputs of one bounded run,
+with separate coefficients and conditional error contracts, not retries.
+`READ_GUIDE.md` reconstructs every enclosure and
+integer-square certificate and identifies the conditional error/physical scope.
+The code emits all three coefficients and the reserve exactly, all atan terms,
+full rational interval data, rounding certificates, loads, phase arguments,
+error ledger and measured guarded operation/bit counts after a future run.
+
+Open decision: root reviews the frozen source and may authorize exactly one
+60-second attempt. No scientific compiler execution or coefficient list exists
+in this packet. Metadata-only syntax and source/freezing evidence is separate.
+
+The original symbolic checker is immutable and is not modified or replayed.
+Root reported its completion separately; its actual output is not imported
+as new evidence here. Source parents are 7c546393, 7a48fcff, 22e62c14,
+2ad3573f and 052bcf3f, with exact hashes and read coverage in the manifest.
+
+No failed scientific attempt exists here. A future failure must be preserved
+without retry, precision increase or a different runtime/target. Coupling,
+preparation, calibration, actual scalar comparator and finite-window scope
+remain explicit, with no native physical supplier or reset claim.

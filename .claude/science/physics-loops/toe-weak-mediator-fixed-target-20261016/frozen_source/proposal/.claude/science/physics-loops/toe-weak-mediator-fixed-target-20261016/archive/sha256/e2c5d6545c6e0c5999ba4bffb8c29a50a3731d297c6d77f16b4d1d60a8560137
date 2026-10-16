@@ -1,0 +1,10 @@
+{
+  "authorization": "root_GO_saved_certificate_single_attempt",
+  "proposal_freeze_sha256": "c7a2385348e6e73f604cac4c91aceab03c2c704462bc5ed1d078f7646e1309e9",
+  "validator_sha256": "8f2f5c444b65db8f154050d041a506a5cb2e659d43f81daf177ecc4afbda6ae7",
+  "report_sha256": "0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564",
+  "wall_limit_seconds": 60,
+  "attempts": 1,
+  "note": "Root read the complete independent validator, recorder, scope and preserved metadata failure. Authorize one fixed saved-report arithmetic check only. Endpoint enclosure truth, analytic mediator proofs and physical interfaces remain separate. Same-model/source-exposed/report-derived; no compiler replay, no blind or physical validation.60-second wall limit, no CPU/RAM quota or retries.",
+  "utc": "2026-10-16T21:28:07.974982+00:00"
+}

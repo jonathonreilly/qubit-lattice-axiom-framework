@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""Root-GO-gated, single-attempt recorder; 60 seconds, no CPU/RAM quota."""
+import argparse
+import datetime as dt
+import hashlib
+import json
+import os
+from pathlib import Path
+import shutil
+import signal
+import subprocess
+import sys
+import time
+import traceback
+
+ROOT = Path(__file__).resolve().parent
+RUN = ROOT.parent / "weak_mediator_saved_certificate_check_execution" / "runs" / "check_001"
+REPORT_SHA = "0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564"
+
+
+def pin(path):
+    p = Path(path)
+    b = p.read_bytes()
+    return {"path": str(p.resolve()), "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
+
+
+def save(path, value):
+    Path(path).write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
+
+
+def need(condition, label):
+    if not condition:
+        raise ValueError(label)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--go-file", required=True, type=Path)
+    args = parser.parse_args()
+    RUN.mkdir(parents=True, exist_ok=False)
+    receipt = {"kind": "one independently implemented saved-certificate arithmetic check", "status": "prelaunch", "wall_limit_seconds": 60, "cpu_quota": None, "ram_quota": None, "quota_qualification": "No OS CPU or RAM quota is imposed.", "maximum_attempts": 1, "scientific_launches": 0, "exit_code": None, "timeout": False, "started_at": dt.datetime.now(dt.timezone.utc).isoformat(), "argv": None, "cwd": str(RUN), "error": None}
+    try:
+        shutil.copyfile(__file__, RUN / "recorder_at_launch.py")
+        receipt["recorder_source"] = pin(__file__)
+        receipt["recorder_capture"] = pin(RUN / "recorder_at_launch.py")
+        freeze = ROOT / "FINAL_FREEZE.json"
+        receipt["proposal_freeze"] = pin(freeze)
+        shutil.copyfile(freeze, RUN / "FINAL_FREEZE_at_launch.json")
+        expected = json.loads(freeze.read_text())
+        for row in expected["files"]:
+            source = ROOT / row["path"]
+            need(source.resolve().is_relative_to(ROOT.resolve()), "freeze path stays in proposal")
+            observed = pin(source)
+            need(observed["bytes"] == row["bytes"] and observed["sha256"] == row["sha256"], "frozen member identity: " + row["path"])
+        source = ROOT / "validate_saved_certificate.py"
+        source_pin = pin(source)
+        go = json.loads(args.go_file.read_text())
+        need(go["authorization"] == "root_GO_saved_certificate_single_attempt", "explicit root GO")
+        need(go["proposal_freeze_sha256"] == receipt["proposal_freeze"]["sha256"] and go["validator_sha256"] == source_pin["sha256"], "GO exact proposal/source")
+        need(go["report_sha256"] == REPORT_SHA and go["wall_limit_seconds"] == 60 and go["attempts"] == 1, "GO exact report and one bounded run")
+        shutil.copyfile(args.go_file, RUN / "ROOT_GO_at_launch.json")
+        receipt["root_go"] = pin(args.go_file)
+        receipt["root_go_capture"] = pin(RUN / "ROOT_GO_at_launch.json")
+        source_capture = RUN / "validator_at_launch.py"
+        report_capture = RUN / "REPORT_at_launch.json"
+        parameters_capture = RUN / "PARAMETERS_at_launch.json"
+        shutil.copyfile(source, source_capture)
+        shutil.copyfile(ROOT / "author_run/output/REPORT.json", report_capture)
+        shutil.copyfile(ROOT / "author_run/source_at_launch/PARAMETERS.json", parameters_capture)
+        need(pin(report_capture)["sha256"] == REPORT_SHA, "captured report pin")
+        receipt["original_source_at_launch"] = source_pin
+        receipt["executed_source_at_launch"] = pin(source_capture)
+        receipt["source_capture"] = pin(source_capture)
+        receipt["report_capture"] = pin(report_capture)
+        receipt["parameters_capture"] = pin(parameters_capture)
+        receipt["executable"] = pin(Path(sys.executable).resolve())
+        argv = [sys.executable, "-I", "-B", str(source_capture), "--report", str(report_capture), "--parameters", str(parameters_capture), "--output", str(RUN / "output")]
+        receipt["argv"] = argv
+        receipt["executed_source_argv_index"] = 3
+        receipt["launch_started_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+        start = time.monotonic()
+        with (RUN / "stdout").open("wb") as out, (RUN / "stderr").open("wb") as err:
+            child = subprocess.Popen(argv, cwd=RUN, stdout=out, stderr=err, start_new_session=True)
+            receipt["scientific_launches"] = 1
+            receipt["pid"] = child.pid
+            try:
+                child.wait(timeout=60)
+            except subprocess.TimeoutExpired:
+                receipt["timeout"] = True
+                os.killpg(child.pid, signal.SIGKILL)
+                child.wait()
+            receipt["exit_code"] = child.returncode
+        receipt["elapsed_seconds"] = time.monotonic() - start
+        receipt["launch_completed_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+        need(pin(source) == source_pin and pin(source_capture)["sha256"] == source_pin["sha256"], "executed and original source unchanged")
+        need(pin(report_capture)["sha256"] == REPORT_SHA, "report unchanged after launch")
+        receipt["status"] = "completed" if child.returncode == 0 and not receipt["timeout"] else "failed or timed out; no retry"
+    except Exception as error:
+        receipt["status"] = "failed; no retry"
+        receipt["error"] = {"type": type(error).__name__, "message": str(error)}
+        (RUN / "recorder_error.txt").write_text(traceback.format_exc())
+    receipt["finished_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    receipt["artifacts"] = [pin(p) for p in sorted(RUN.rglob("*")) if p.is_file()]
+    save(RUN / "EXECUTION.json", receipt)
+    print(json.dumps({"execution": pin(RUN / "EXECUTION.json"), "status": receipt["status"], "launches": receipt["scientific_launches"]}, sort_keys=True))
+    return 0 if receipt["status"] == "completed" else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

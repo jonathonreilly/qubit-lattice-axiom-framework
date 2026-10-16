@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check/inspect_sources.py"
+  ],
+  "captured_source_matches": true,
+  "child_source_at_launch": {
+    "bytes": 3315,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check/inspect_sources.py",
+    "sha256": "44ea2da77c117bce23bf689b5e06efc0057b522f0420bb9c138f036829a9e0df"
+  },
+  "child_source_unchanged": true,
+  "completed_at": "2026-10-16T21:05:10.525229+00:00",
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check",
+  "elapsed_seconds": 0.05758754210546613,
+  "exit_code": 0,
+  "purpose": "metadata-only source/exposure and prior-freeze inspection; no scientific execution",
+  "recorder_source": {
+    "bytes": 3032,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check/runs/metadata_inspection/recorder_source.py",
+    "sha256": "09c1c3c52b227ae912cf6cbbdbd8ec950f71f68dc43b76481f5cb37032c6a047"
+  },
+  "source_capture": {
+    "bytes": 3315,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check/runs/metadata_inspection/executed_source.py",
+    "sha256": "44ea2da77c117bce23bf689b5e06efc0057b522f0420bb9c138f036829a9e0df"
+  },
+  "started_at": "2026-10-16T21:05:10.467021+00:00",
+  "stderr": {
+    "bytes": 0,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check/runs/metadata_inspection/stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 2642,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check/runs/metadata_inspection/stdout",
+    "sha256": "528fdb696f239a18e58d089f7c6435ea9cba5ecd3320c2a79d985d319b28c327"
+  }
+}

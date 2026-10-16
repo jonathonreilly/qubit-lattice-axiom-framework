@@ -1,0 +1,27 @@
+{
+  "observed_commit": "cd646f075af86b54a8c5b948ee82e5e6f0f39066",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/31108db9fdc66320bdb6436ee6d9edac9de24dad4a7db3186fb343fa60c6ebb8.json",
+      "bytes": 1566,
+      "sha256": "31108db9fdc66320bdb6436ee6d9edac9de24dad4a7db3186fb343fa60c6ebb8"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/fb2b22889545dd3ea1ea9abe10f53daa46125b50a64481172f05cbca35c04ae7.py",
+      "bytes": 64309,
+      "sha256": "fb2b22889545dd3ea1ea9abe10f53daa46125b50a64481172f05cbca35c04ae7"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/3ed8097cc26c55e37028808baac629c3471cc2abbabe085f9318f0c56f80eee1.blob",
+      "bytes": 41,
+      "sha256": "3ed8097cc26c55e37028808baac629c3471cc2abbabe085f9318f0c56f80eee1"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

@@ -1,6 +1,6 @@
 {
  "edge_count": 16156,
- "node_count": 7201,
+ "node_count": 7202,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -22633,6 +22633,10 @@
   "weak_field_wave_packets_from_mobile_record_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "1ab84217dcde",
    "out_degree": 3
+  },
+  "weak_mediator_fixed_target_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "weak_scalar_limit_bounded_theorem_note_2026-10-13": {
    "deps_hash": "e3b0c44298fc",

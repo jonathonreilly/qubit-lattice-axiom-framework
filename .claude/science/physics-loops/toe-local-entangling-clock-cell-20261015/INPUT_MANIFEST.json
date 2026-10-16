@@ -1,0 +1,461 @@
+{
+  "schema": "local-entangling-clock-cell-inputs-v1",
+  "members": {
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/ARCHIVED_RUNS.json": {
+      "bytes": 3775,
+      "sha256": "17b3ed13cb0adffdfa42857dbb850e1c1046c3a96fb264047600e72838dbed6b"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/BINDING.json": {
+      "bytes": 3231,
+      "sha256": "d9927a6b79e3b28018028c1cb3becf2ddb8d8cf44dd5318622be28d8ab50646f"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/BODY_MAP.json": {
+      "bytes": 493,
+      "sha256": "089c5dabec6c475a0f0dde51e80892f404754b38eb2e7c046bbe57c40314a750"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/DEPENDENCIES.json": {
+      "bytes": 2682,
+      "sha256": "efd84be2abe8db7e48336db80b888343053854c22ee70b550ae58cf9a96f70a1"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/SOURCE_INDEX.json": {
+      "bytes": 86608,
+      "sha256": "18f7c6b4acf89e3f05a0071cc112ef9897c33a7d7334edb904101cb1b4e9f09e"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/010c0c0deba4705490424d83b5478f520a1971a1ed9d0e14898f0765e4f9e04e.gz": {
+      "bytes": 358,
+      "sha256": "37ff9ad5e92f36b61cec3c2967012811fc7b1f53e825e22e2aae19e0e73f655c"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/020c43e091122bd02163c2480ac75358fa788f6ada1050115cafe83b8f032e96.gz": {
+      "bytes": 396,
+      "sha256": "5205938f514329409ecaf4f549ddb3b31029b665028e73c68dc396eb6aad434f"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/02f4c819bad0a2c93b7f935522da71cfebdd3bd2a1628a7af97b5fd6ba1d795e.gz": {
+      "bytes": 264,
+      "sha256": "c0f595c0c53e4625884dc4e68205d063134a58213a24b2487c56f3d1ec652106"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz": {
+      "bytes": 6353,
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/095d52f674c03453185afdd7126c526ebbf075e47b98a0c0d93d00599183cca5.gz": {
+      "bytes": 5619,
+      "sha256": "6a257354b7cb207692311a2030e77b5ced30f7dfce0a84cf22e72b1bb5818ce9"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/0cec848de750534e46fd93a58a2c19d5646a48fa200c7e01a4d69f9faead75f5.gz": {
+      "bytes": 1587,
+      "sha256": "b51d9ba7299ffedd6187544d790eacd1f8645734075d4ea193598a59905f2de4"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/12be9b00df013c81b8111b92b139a72d885d03cf81db258671a436f3b224e4b6.gz": {
+      "bytes": 1233,
+      "sha256": "f101d74b0cf1fe3e2012b9d4d0e63174df417fa09064391845e3bdde8206b175"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/16868d7e340d94352cc667c594bec36a654ed0baf0423eec63c4fbedae56129c.gz": {
+      "bytes": 1576,
+      "sha256": "495e9c77d91318676053783c4f51b7a9445f27cd41c1758e0888021329f7d3e6"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/16cc344c5ae26e0f8edc3465cbc57537898b8171080e542cddc47b88f91c5998.gz": {
+      "bytes": 785,
+      "sha256": "dcc7870e77b3fb74fc60a83dcd728714b87dd7f6fb8b19f8fb22da7b87b63f79"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/1fbf026317d6536dd197de580e07d9518d80c67e1bfdff0613b96978072c54f2.gz": {
+      "bytes": 1354,
+      "sha256": "626c0e217f94be0ccd6a2d448d44141bc13d29db82513a532d479795438c502d"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/256f12b48ced6fafb78bf72bfe091687d59ea30bf3f37ccccb3a7ccf6195098a.gz": {
+      "bytes": 2038,
+      "sha256": "3e60b6c752d8ee88c85bab809045e15f852f50f7f34fd25bcbb663c790ab70ea"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/273519a163788928b653f758fa4ef89beec51c46871d2c1d26c48862c69b4171.gz": {
+      "bytes": 514,
+      "sha256": "3cb3834450f5051f29815619258f7c9b3e42dc6f1459bfe7c27210ddd59b3ff2"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/275f6eb9135f1850d246a5cb735947f856f23741f049bc9f327476aa46f96c2a.gz": {
+      "bytes": 828,
+      "sha256": "00322c25ccf46f609d4261637bc6ee8076354672a1038ec7ba1266da314a7497"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/2c95a969f8d8f40f4190ece9f25d811c7e204a4f68de722f3fe393265b2c8115.gz": {
+      "bytes": 5624,
+      "sha256": "53685aca8ceb9b293176fb9576b46f955a5476093353100fe6cfb76ff8ce8c04"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/31cf01981e2d8f6a98bda20339241317c1000b9920e3a34898ff8e351e0bdf87.gz": {
+      "bytes": 3006,
+      "sha256": "f9cb12019cb982d9f5f76fc8ccfba7efba4a4ee317bd500e6638460d660d08d5"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/35da19d8c689c01af0c9a3822b66f1f056aa7d445bd1284391cb64db3f8b01d1.gz": {
+      "bytes": 2735,
+      "sha256": "c6ba90f82ee655670f0390f32c3d215e011ed77e2706815d84f7199a5c40162d"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/386cbb1b43f7798d08534d0b69b6740a5aa9016bc5f34d505f5f027a9cf84acc.gz": {
+      "bytes": 5299,
+      "sha256": "1f3743ee018e3ce71d1c6600d7ac88382b140685a6d1f850a8cf053a14c23736"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/3c66d664f872257c8ee205ac26c929c83a2ee9c1e1c3ecad84e979ef47aeda42.gz": {
+      "bytes": 505,
+      "sha256": "9ccac605ed1fc82401b69f47b53ec05549266c720066d83c1cdcbd9c23bc1795"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/423572fb1da66ed2811c553b8f8929efd4676a26e47a9e03e51403fe2b899c10.gz": {
+      "bytes": 10228,
+      "sha256": "13c34a28d9603f3011377bb351fbf12f1dc1a55fab317c26c53779f7e896e7ad"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/42869965e7cc6e6cd01bd201ad6b84c0a37682dbc0e6298899e938016fa9cbde.gz": {
+      "bytes": 880,
+      "sha256": "7954544da75e544d4ffec0798032e1ec9d2ff22a6bf20a6f1fd02f2d720c5095"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/45eaf95001d009c391e4ca8e703f24ee54a99a76c9bb044c4ae1d7326ac09d46.gz": {
+      "bytes": 1884,
+      "sha256": "aab510b17f217be720f0eeaf428079b54b79ca845d16508b292a3564afb0e9ab"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/46fddea0d6ba3492b2c1229c78a2f7ceeaaef742714409219a87cbb1868a553b.gz": {
+      "bytes": 390,
+      "sha256": "b4ae20e079b4d082e6d6d9dd4dc7a2e8a75a73ff0231a6e79bbfa4d00cbef9a0"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/48af0ae3e94c5b1b9099eb0e0c9d4911e10eb30cfb1f48ddc63b02d6400396a5.gz": {
+      "bytes": 2421,
+      "sha256": "156c1e959867ce9920b943ccc3b5775012d6d0bef7b03c2b70f442f7e39b152c"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/48f52a510848e371621c1f825135328c2bc31280250795fba81824a4235aa841.gz": {
+      "bytes": 1925,
+      "sha256": "47ca35c1bcecc1c43d0cb953aed909ea7eb666414523c9e594be6f88524be27a"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/498764a95ab6ff0a0013d9a4c9d5c6979f3de641984e4e67038741f99596db9a.gz": {
+      "bytes": 6469,
+      "sha256": "e6ff108b1500bc738e6762fc947ebef7a250cffc51c886fa6bc17caabc1a7063"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/5051ffa2815029768e288ba4df154d27f2fca06c1512718f496a8686031f2724.gz": {
+      "bytes": 807,
+      "sha256": "d3e866e9b6efa8a356b22cffac27357d3b77940d3aca0a4ac70f4e6f0b4345fb"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/51f8cf10199e65cf48de5b17f460dad0427a741e2e6f86e39ef3402114e5cf65.gz": {
+      "bytes": 3498,
+      "sha256": "804a37847e45f2795ffbe00f9d40b42cfb0dc2e264a8b971891b9301a720c372"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/524544ffd82245ef28bd62871431f216cf6780126e2be570ef700375c9e95bf8.gz": {
+      "bytes": 1101,
+      "sha256": "59a3e816900a8a8ac332691245372214678c3d8beca3f57cc0fc782b699d3f8f"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/5732d498807ff8264f561a3c36520491950b285ce3f9862cc0b0567ffd48aeb3.gz": {
+      "bytes": 830,
+      "sha256": "7b7b1b9361c5778250b7e84f0f2136c4cbd7316e955ace8cf740d5145044f901"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/5e5db9b1803f4f9996c2fe011b3505811dd2aeb7a4ae1c0929a4310c60d19b3f.gz": {
+      "bytes": 2526,
+      "sha256": "5c723e77a3f286976d386643ec05273b4499a600a89331d8fb2025fb2dedc824"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/602109014f8e022e168880535a5d37488c1ff6ced86492fa21de96cc456bdea5.gz": {
+      "bytes": 635,
+      "sha256": "d9419fb2a4195e9f7b84582e11b21866ef7a46865f9527949d650c33bf8285e7"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543.gz": {
+      "bytes": 8991,
+      "sha256": "d18b096b005ecbd0ea54aa95a71d3d35dbf14bc021a0a1ec6cc997840472632e"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/613788ebb160033dfa5cb69955d183cf19aab3643169ada4b10aa61f2083de60.gz": {
+      "bytes": 3574,
+      "sha256": "c3f4929e028877c79205f385b7f5b016986b3865e87a6bb4c2dcce5cb3478dbc"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/696f0fd4bc8b5ecbfd2be17c160daa152a960163ac939d1efbc311cabb98b9e4.gz": {
+      "bytes": 1173,
+      "sha256": "2bd9770efea1e4394ad657d79464699cf9b20d26671dbf03acd37cba1ebef1c5"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/6b97fef971c1755d1f5a55b1cb93c81fe21a443ff1e02e60c2d0bb9e25162655.gz": {
+      "bytes": 1033,
+      "sha256": "55c25666ff090766e2cd10d7208ca1145816898a3d8fef20e1ca689f3fd70360"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/6e1aebf3385e1188dce918b3837f0a2db75258e9f95a21fff8224b8050f1420f.gz": {
+      "bytes": 422,
+      "sha256": "2373bfeae6e90fd2b3c3cb67f6e0bc02d6dd91233f73eb454a7fc2a4d9316e3d"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/70f8bc054b2e2d7f0ee014458a434d5d5132e74aade64d535c484fdddde2049e.gz": {
+      "bytes": 420,
+      "sha256": "78fa5b630dcce0443fa2d683aa6489195880daa8d5d78d0eb4fe2462b7b3d0bf"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/718e56be97847c82934031d8ca56cb2773dd975a439c2e65f5f4016330b85a67.gz": {
+      "bytes": 709,
+      "sha256": "b26f9aa3cb9cdab8f67ef27dcd9fa092e5ab0e917f1781b828aecffc3d9ac1d9"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/71c3bc48a4dd461d29002a7add5727d5ea1e3e1ff1dff370341354917c24b679.gz": {
+      "bytes": 3041,
+      "sha256": "c898f6c0050406ca292440247b3ca4a17297d19feca8b465b41036ea357cbdf9"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7290d37e3f338fa1b64bc7691bf428eaff6109ffbb312f9ddebd13c349c12661.gz": {
+      "bytes": 1039,
+      "sha256": "74c455ce7c8c7d31a916d881253537170c8162a604caaac38dc8df7f0654d77b"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7341eb3e16cd8866fa778fba5b8df9cc8d148212d537b64e9bbadb763035f754.gz": {
+      "bytes": 375,
+      "sha256": "4122c06bc9ceafa351faf51b788a41d73cd9e8b81df4aa907887a32180244452"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/744535009b26921d07b32b421c9f6a134305e907d8ca185b5341a3b0dd2b11e1.gz": {
+      "bytes": 791,
+      "sha256": "820c7d9e63a33fc1232bc826abe63a2bf2a52649096328b9fd3b3ae50bcc8744"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/74549eeaa060817c3738bb7ea9945386710a6403f02c9e0d7a0065d6efdf51d0.gz": {
+      "bytes": 890,
+      "sha256": "f85accf0fa4c994f265c61a12a208c3882265d2170528d8654511b9dd129eaa0"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/746dde655f8fd9868e0c8c932804f7d7c6a11e12e23f8a7ac8e79dec67586462.gz": {
+      "bytes": 635,
+      "sha256": "7b1cdd22750b3e697b7247fd83e49048ca479d291700045a3b60c1b15ca9e09e"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/754dfa75d30666c39d709f3c5a57db0e48f9430625249d94dacf3c725b507394.gz": {
+      "bytes": 1303,
+      "sha256": "0cede7836068af28ea5371f9ec8ce74320b05b71e8f85560608379f6cb100a4b"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7c637c3367b32bd666b694b65cccd76dfd90a94d8e27ff7a87ce05e54ea7748f.gz": {
+      "bytes": 270,
+      "sha256": "1e7947cc732cfe76c0b3b15d7fe84f3a09159ac7f2bf56aabfb0b2055db1c295"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7c80ee433e47f3849ac841d6b2f4750831ae3aa39dd041c74da3c99eb9cb9394.gz": {
+      "bytes": 17915,
+      "sha256": "46767402a07ed5ddfb03bd1e28dafaba1eafc3dfccc38c035db72024b8ce8191"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7d3fcdcc0c035f78c5d43f4fe7517ad5818350e749f7a442a7a4b8a57604df38.gz": {
+      "bytes": 2391,
+      "sha256": "a67067eb625967d941a198fd7492b373f85d4b346c7fc091ba55d06db2de2402"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7ee8fd4ee179f701f75d96f6e3881aa801bafc1aa8bf280287c6cb3b85bcc279.gz": {
+      "bytes": 4095,
+      "sha256": "8e8b7559e4e75527120732872b6e53975688749fc30f288ff103590fd5f3a528"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/814d0faebc386b2bf8873defb9da7f8cf6b0f90fe94e7f400c5b3ebc0d52eca9.gz": {
+      "bytes": 2602,
+      "sha256": "0880ee89fba34af6d592dd4ab348dca3e1cf600b5fe497665d060a762ed5d6d2"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/81e207b81b1137ca1535c73b22b26ba3b803ac5633d6320571d8813973f3f0b2.gz": {
+      "bytes": 5220,
+      "sha256": "0a8bd9ede9223c2f79dd67f9d7c039e5959564652f766209b078c1d5d0ea0b95"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8670135c7cf4b3c6725e36c3cbab1ad0f54bc847a54861ac009b1ae2c4f683cf.gz": {
+      "bytes": 1846,
+      "sha256": "f23e1ca2f510b825506233e1a503822af0e0536f6e2deee6617790bc426c0a80"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6.gz": {
+      "bytes": 11458,
+      "sha256": "2b73d89db6bf5d2be9f561e702b982f24bebfb524bd8da1e9d520a002eabd5c0"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8a1a6d00e00e4754ff3b79c6bf1fc83bd32df0200b1d6194dc6d67dd26636197.gz": {
+      "bytes": 238,
+      "sha256": "642db66a48858aa34fa04f000b375d0a3441506a51bdc9dbaadc18becc249b49"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8c245229d3dda3176d8ea058e1ed00c28b780e52ecc2c484c2bbd4ca95e815bd.gz": {
+      "bytes": 377,
+      "sha256": "ec76587ea78dad52d4c8b8f215467516c77e19e17a9802f46a697625877aa5dd"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4.gz": {
+      "bytes": 14582,
+      "sha256": "c20bcb41b7beeea86626e0f51e39747cd7afdd4dbac6283bc81c6928ee301dd3"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/92568d56f3ce7e51f4f479329b8c58c9f12d5f814876b10516ac7a91ed46bbcc.gz": {
+      "bytes": 2358,
+      "sha256": "25547d4fdd7d224f35523adcdedc94fdd6637e03b444af584041409347f4b727"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/929808029a58f93360b83fa3adb473a749cfd8bcb5fc8e80b2165d3aa0133711.gz": {
+      "bytes": 858,
+      "sha256": "7a09d46c35c5aa3fa9250f64940bbafb09d473edb600835801e7131c4540f3de"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/96d26a21e761bc1dd32015a33393c337c182c8cb215b3e3ba931ba41be2df070.gz": {
+      "bytes": 7839,
+      "sha256": "34b475e71a0ac244c6eb15e314b7a577afc646413ae8adf444bae492fe84bde5"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/973ff5af0bfad3116be8c71a6f804e75c3d5d1664f46969bc9354868d140af70.gz": {
+      "bytes": 916,
+      "sha256": "353b097b0826764da447f2ae35cd2952b3afa0f01efc826fa3a79ac9d43f31a3"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.gz": {
+      "bytes": 6269,
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/9e5150908f5e876b34de645dc332ebf716fd8467223934017afe800cd5315dd8.gz": {
+      "bytes": 240,
+      "sha256": "71ed46e5714fe17b2bdc82980de6aa21859f4b411aa3c7000bd5fa1f59f0ffaa"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/9ed008a6c12207dff383d4caed39c6b22bb5388f3372c8691b3816cdc7de18ad.gz": {
+      "bytes": 536,
+      "sha256": "eeb3cb994fb956ee3a2cecd6d05e6609fb6f5bb996879937942f0fae0fe50004"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a0d39d165e5ea80db623103ebd4e28b50dae87a6122ae97bbe954e9979bba789.gz": {
+      "bytes": 1672,
+      "sha256": "ca25538170848cd2b690ca65f7c2062f43d91eb3be107c34dc36015c94dcdad7"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a2b29297b855ed78499f0b758ca8f247cb9ad29457a438d220cb35cc3d60703a.gz": {
+      "bytes": 802,
+      "sha256": "61fc0b58ce6d1219500f97dbfcfcd3b6ee2009ae20f252edbb4d8c8d9f58efdc"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a421a2f1d7f094516ee3a8c247b4df685ec0d3896a39ad1b8ba42feefea7f18a.gz": {
+      "bytes": 1265,
+      "sha256": "a8cceee3015976306bf78f0408985a885d0d1f399d398ae2acba9cc7648a4e67"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a56690ff50a62d2e0dde30655d94c30eb57dc65fcaee188f7bd00e9ccdb63be9.gz": {
+      "bytes": 1073,
+      "sha256": "da93efb33f01b306817f77ef089e5d6243e4bce09e353dea946b74cf67866fee"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a7c6aa437b88cc89a91552de7b32fb185a2867bb91332d268a847f678596ed25.gz": {
+      "bytes": 301,
+      "sha256": "788db84114d34a558443664d08b9c6a52e1c484b1ba21fc4edaf2cfae18d8373"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a84adad3143a295f18c31af08a6c28d429a13f6b4b4159681952f5627339cf1a.gz": {
+      "bytes": 934,
+      "sha256": "d3e9a3dd05f1a47196f5f2dc004edf9bce331c898226207ebefb8b32fd1bb743"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a8f3611be2422878a4fbdbfef7d70ac9af9a3e5bd287b42f4aacb205ae08dbf8.gz": {
+      "bytes": 7851,
+      "sha256": "40e3eb6b6fe9dab601ebb41e7a4a7f1211e87827970098c912d03f5b51c28a0a"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b144943b0bc103fe59f4678a1a57ce9d6c64b6f7c273dc5f5c867bccc3f0f334.gz": {
+      "bytes": 2335,
+      "sha256": "4c630041bdd79eba6a4e904e329b22d8fa3f000c36f57a329132e76af205dbdc"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b1514dc2533da7d246cba88eeebf3faf991b32ce041ec1e5f9f1be0441baab2b.gz": {
+      "bytes": 320,
+      "sha256": "0c2a46bd23c70253d8e81f046c1edcbba2eb58fc810fa8837c63ab3167f2690a"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz": {
+      "bytes": 1138,
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b84746b21ee6d380d75eb479f98b8ffdf039add060eca1cc171c403832ec10fb.gz": {
+      "bytes": 606,
+      "sha256": "c59243e303bc2e8a67ecb9f6294efadcad28d433a6b936b000dc9a17c77db220"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ba43a48f0fd7a2289449c13d9cb3149d1db250cb42d803cb944e1e9be8cdc34d.gz": {
+      "bytes": 396,
+      "sha256": "d3ebaa871a5271fbc7264b642b6c7b52072b77980d9ee8df347ba68f29f57578"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/bb3a4764729ad9c0fa73401b9dc0cce83bf8098e17380041d2e0494066eadd17.gz": {
+      "bytes": 566,
+      "sha256": "dc7efa68927d2c470807035939a1c7182789cfef3f3c320d1c7e55f3c71dd4d5"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/bcbef5af221a5feeeb04f291a71d2ce7c3410d50fb7441d50135ca5c98ee9353.gz": {
+      "bytes": 743,
+      "sha256": "73dae4b9ff57e1d105aed4ba5678dfe9089960869366a831af43ad09c06c4744"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.gz": {
+      "bytes": 2265,
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc.gz": {
+      "bytes": 9902,
+      "sha256": "ce16ef085eb230fe3722e34182eb4a3c59597d58143b0563f9a10b89aef0c53d"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/bf83b30a4610b0e079821738984ff6e7be5f374da97e4ef778c224eea21b4644.gz": {
+      "bytes": 756,
+      "sha256": "f0584fd9dc7b2f579c3ac448109e8d0072ecf8a2ff98bd845200bdbba970dd9e"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c1e4f65f1548b66e005e5b06a3578459a2505ee867e885a21717cd8d01cf2893.gz": {
+      "bytes": 250,
+      "sha256": "bcfffcec04da1a1b607f87325068e85b47fa89b25975d762fa085b428e191be0"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13.gz": {
+      "bytes": 8365,
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c2f8698070bd003ece8f2ad03a4241837c05ac7c520ab9267321a7965c134331.gz": {
+      "bytes": 534,
+      "sha256": "b42684adc099e783f5e691f0be68dbebceba3ca715b9b05612dce9804477028f"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c8aeb64e92b743542c1154a5e8554e66f18d3d20629cfec455ed6b2ed6314b6f.gz": {
+      "bytes": 472,
+      "sha256": "a80c9247b52f51178caee6ef82556f98776cad245ca549e0a4b7b0f78e1c5911"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ca283a84b45c5e469346552cba905b0ec14dfd18e31e77b031ea064cd1a8357e.gz": {
+      "bytes": 402,
+      "sha256": "44d9b235cf94d64a9f3c63ca9e157fe1b44a4545531036648a89d290f4b54a40"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.gz": {
+      "bytes": 688,
+      "sha256": "875b7f42ca707edfd4304cdf8d0ca1e0a7d44ab682909812f5b119390ed0fc86"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d27e37865eea2667d1b2caff45c68c3bf7299e7516e9477cc553b1ddbd469654.gz": {
+      "bytes": 751,
+      "sha256": "579ed5e7b5f8083903dd7531269dc62061c13d1399301b8318a5a31f521e22e6"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d28908933397eb710c323d3d25a3eef6db944afb51a60677741e3c55a4c5ceb4.gz": {
+      "bytes": 2184,
+      "sha256": "d128c609ad292a4f19ae2feb93e995fdf4b504b6724472afd7f2f6ee713be4a9"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d2ec9666530c7f0773243a41b83d0696909cf0b517435c908770ecc9012c9664.gz": {
+      "bytes": 374,
+      "sha256": "313fa95193d7cd9ec6aaa1e62d53b01994b56d8aab80f56414a2ba1136444b05"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d2fe7f7ca1763980e3eff85fd124580954a3b4e5d54594f32217920e621bfca6.gz": {
+      "bytes": 500,
+      "sha256": "1541927b3edc79b66074522849e59d1dfc6ae2590fa2378ceb60ce0adf90736e"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3985930b9542d48a21e411b5e678b1422f1aa12ee7c095cc30627c246e00cec.gz": {
+      "bytes": 818,
+      "sha256": "ef4cab6660748c097ca2afbe3a26238c76bb76332b9389c913388bc2bd6ef8c1"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e7cc1ef809c803bd1db16d8fb5510d19b5082e2acc1d56e355190298998f8229.gz": {
+      "bytes": 2878,
+      "sha256": "8a904f11e1a2732747e75a875be7026d91fff396e4f352e5119e4a597a153ce1"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e942bfc2df7e8c67b731c5b02847c3911086edfe7f5ef440e06b1a1d7031b598.gz": {
+      "bytes": 688,
+      "sha256": "d706f332b42cd328796374473671f4ead463f00b1c4abbbfe9175d34cd516050"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e94ad7222730fee0112179daf620b7568f5866f4369e5726734ca7d3a231b446.gz": {
+      "bytes": 581,
+      "sha256": "6d7e2bd39bf3b8a71321f219c0f1a9074bcfd07e9640efef3aad1096e3c086bb"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ebaeebb9d6616e083d6e14ea5ee35120ddce48007866803ae682e00b8309b989.gz": {
+      "bytes": 2610,
+      "sha256": "6382aac007b26c0ac778ee235fcf5d3166906781db3ea7dc28df091c62c1fc17"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/eeebf72d6e84bc787dc963553fe3b68033a375db78e5b0e114b881f5aded1290.gz": {
+      "bytes": 560,
+      "sha256": "28b221a53b9e17885f7ca856ba1e1b85591833e86e4984bd575d89427cc468c6"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ef22835854423c0f48e2cb717742b63071abe6b6d13a56a4408bb61fb1627413.gz": {
+      "bytes": 780,
+      "sha256": "3e85da747bc61937800abf9a7222ffed92982ff9dae3068ac64f830614399436"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ef9ed26d229c22f5be2f079fc31d3ccfbeb4e0d696a2aa3e6c7e0b892787c988.gz": {
+      "bytes": 6253,
+      "sha256": "6f85709e64aa5dd13e09e8e9683d3179be659ef74b7e23d67d524dcd5a4e4170"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755.gz": {
+      "bytes": 13074,
+      "sha256": "2b125f3f0eb284420fe1a95565bb34528ebff4f13b49b90717a553bdec33f044"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f1b1bf41e22a651328dbb78a3137b66b75b6c431e00f54255a7194939c1991fe.gz": {
+      "bytes": 5252,
+      "sha256": "dcefe67b4eca5323a243de62a26d7d86bba68a06fbb46a147cd39d98fdb77530"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f265b5600d8b86d8c6f9dfcf3c9d4017b9d7004036caf50307f0f3acf6b15b35.gz": {
+      "bytes": 1631,
+      "sha256": "4b976f800e4ba5aab3ecf5c2ccda1f60bc8233e0a69db458ea1a227c68f909e2"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f50db4f3963186fc04fdda9b0459039e3645e61f2a8dc7b2687b42ef7e8b4f20.gz": {
+      "bytes": 214,
+      "sha256": "9062808efb1716262b37f80f9fb47c583d35d2fa4200f2b1591256660eda238b"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz": {
+      "bytes": 724,
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/fc334b523b528a117e217fc7e1fd716e4cd656055f5c946a5b7450c01cd684b1.gz": {
+      "bytes": 1316,
+      "sha256": "e265a7413f14487b744ea17053bdf6b8914e675db2ee6dbdb575594d355421e3"
+    },
+    ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/fe12497ed164d94c1e45ca4c3e260d7a10fe5b0c0ef1a7aaa5c0c75dbedad319.gz": {
+      "bytes": 555,
+      "sha256": "1c59d028f3779ce81c50d096a398a475f99755d88d52b6b01f6c8d3c15509831"
+    },
+    "docs/LOCAL_ENTANGLING_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 46092,
+      "sha256": "5b035c92a858e3ae6ec6c0077441435cc39db4681708d77049b5b34277b9d519"
+    },
+    "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 32493,
+      "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+    },
+    "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 37090,
+      "sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4"
+    }
+  }
+}

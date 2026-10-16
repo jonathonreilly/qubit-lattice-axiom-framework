@@ -1,0 +1,208 @@
+{
+  "actual_parent_head": "b50d97052f1b9dd3277eec137208b454fa609337",
+  "actual_parent_pr": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+    "headRefOid": "b50d97052f1b9dd3277eec137208b454fa609337",
+    "isDraft": false,
+    "number": 9572,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9572"
+  },
+  "all_markdown_note_targets": [
+    "COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "actual_use": "Full K coherent isometry, clean-work return, exact emitted word and arbitrary dirty/transit/reference scope.",
+      "body_edits": [],
+      "byte_end_exclusive": 49402,
+      "byte_start_inclusive": 15327,
+      "canonical_path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "line_end_inclusive": 395,
+      "line_start_inclusive": 110,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window/sources/bodies/8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3.md",
+      "source_sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+    },
+    {
+      "actual_use": "Identical full H/scalar, effective coefficient and recurrence inputs, supported signed pulses and positive norm margin with paid duration/precision.",
+      "body_edits": [],
+      "byte_end_exclusive": 42611,
+      "byte_start_inclusive": 11861,
+      "canonical_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "line_end_inclusive": 343,
+      "line_start_inclusive": 67,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window/sources/bodies/7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f.md",
+      "source_sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+    },
+    {
+      "actual_use": "Positive finite Fourier clock, whole-horizon prepared-map error, paid scalar/program geometry, energy and calibration.",
+      "body_edits": [],
+      "byte_end_exclusive": 44273,
+      "byte_start_inclusive": 8890,
+      "canonical_path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "line_end_inclusive": 461,
+      "line_start_inclusive": 63,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window/sources/bodies/5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc.md",
+      "source_sha256": "5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc"
+    }
+  ],
+  "direct_edges_verified": true,
+  "historical_canonical_alias_remaps": [
+    {
+      "current_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "historical_role_retained": true,
+      "historical_sha256": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+      "historical_snapshot_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_publication_preparation_bound/history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "historical_snapshot_relative": "history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "role": "canonical direct mathematical parent; complete relevant body uniquely bound"
+      }
+    },
+    {
+      "current_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "historical_role_retained": true,
+      "historical_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+      "historical_snapshot_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_publication_preparation_bound/history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "historical_snapshot_relative": "history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "role": "canonical direct mathematical parent; complete relevant body uniquely bound"
+      }
+    },
+    {
+      "current_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "historical_role_retained": true,
+      "historical_sha256": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+      "historical_snapshot_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_publication_preparation_bound/history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "historical_snapshot_relative": "history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "role": "canonical direct mathematical parent; complete relevant body uniquely bound"
+      }
+    }
+  ],
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Full K coherent isometry, clean-work return, exact emitted word and arbitrary dirty/transit/reference scope.",
+          "body_edits": [],
+          "byte_end_exclusive": 49402,
+          "byte_start_inclusive": 15327,
+          "canonical_path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+          "line_end_inclusive": 395,
+          "line_start_inclusive": 110,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window/sources/bodies/8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3.md",
+          "source_sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+        }
+      ],
+      "actual_use": "Full K coherent isometry, clean-work return, exact emitted word and arbitrary dirty/transit/reference scope.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 49402,
+      "claim_id": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior complete accepted author/separate/root arguments at exact identities; no new mathematical review",
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "markdown": "[Coherent binary K admission](COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Identical full H/scalar, effective coefficient and recurrence inputs, supported signed pulses and positive norm margin with paid duration/precision.",
+          "body_edits": [],
+          "byte_end_exclusive": 42611,
+          "byte_start_inclusive": 11861,
+          "canonical_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+          "line_end_inclusive": 343,
+          "line_start_inclusive": 67,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window/sources/bodies/7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f.md",
+          "source_sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+        }
+      ],
+      "actual_use": "Identical full H/scalar, effective coefficient and recurrence inputs, supported signed pulses and positive norm margin with paid duration/precision.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42611,
+      "claim_id": "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior complete accepted author/separate/root arguments at exact identities; no new mathematical review",
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "markdown": "[Literal fixed-background control](LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Positive finite Fourier clock, whole-horizon prepared-map error, paid scalar/program geometry, energy and calibration.",
+          "body_edits": [],
+          "byte_end_exclusive": 44273,
+          "byte_start_inclusive": 8890,
+          "canonical_path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+          "line_end_inclusive": 461,
+          "line_start_inclusive": 63,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window/sources/bodies/5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc.md",
+          "source_sha256": "5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc"
+        }
+      ],
+      "actual_use": "Positive finite Fourier clock, whole-horizon prepared-map error, paid scalar/program geometry, energy and calibration.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 44751,
+      "claim_id": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior complete accepted author/separate/root arguments at exact identities; no new mathematical review",
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "markdown": "[Finite autonomous clock bridge](LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "unrelated_history_theorem_imported": false,
+  "verification_scope": "Actual source receipt binding; three unique unchanged cores and current canonical wrappers; no graph execution."
+}

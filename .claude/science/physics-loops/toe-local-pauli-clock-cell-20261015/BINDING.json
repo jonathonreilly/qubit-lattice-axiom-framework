@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-15T03:33:49.456096+00:00",
+  "stage": "root_bound_review_milestone",
+  "branch": "physics-loop/toe-local-pauli-clock-cell-20261015",
+  "observed_base_head": "f6ad0ea049d121fa698fd1adaf9f28913d22d819",
+  "observed_base_tree": "328ae37b098831b9538c660f9b363429df212c11",
+  "base_branch": "physics-loop/toe-energy-preparation-readiness-20261015",
+  "base_pr": 9585,
+  "base_is_mathematical_dependency": false,
+  "main_observation": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_observation": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "feature_branch_created_by_this_builder": false,
+  "source_head": "f6ad0ea049d121fa698fd1adaf9f28913d22d819",
+  "source_tree": "328ae37b098831b9538c660f9b363429df212c11",
+  "publication_pr": null,
+  "root_runtime_freshness_and_feature_binding_pending": false,
+  "canonical_sources": {
+    "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 32493,
+      "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+    },
+    "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    }
+  },
+  "mathematical_parents": {
+    "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+  },
+  "accounting_context_only": {
+    "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+  },
+  "exact_parent_clauses": [
+    {
+      "alias": "premises/be8_raw.md",
+      "canonical_path": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 8389,
+      "end": 32138,
+      "bytes": 23749,
+      "sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc"
+    }
+  ],
+  "conditional_acceptance_sha256": "013a87fe96779ed2a761a32f4cd8c51c6d3b26171660606be95a227a7cebd861",
+  "new_scientific_programs_run": 0,
+  "archived_scientific_runs": 2,
+  "scope": "Two accepted single-Pauli cells; actual source branch bound, publication gates and retained audit remain separate."
+}

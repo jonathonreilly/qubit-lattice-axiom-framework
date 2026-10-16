@@ -1,0 +1,9 @@
+# Dated local Pauli clock-cell publication handoff
+
+This is immutable milestone evidence, not the current campaign checkpoint. Fixed campaign deadline2026-10-15T21:43:09Z. Source branch is physics-loop/toe-local-pauli-clock-cell-20261015, based on regular PR9585 atf6ad0ea049d121fa698fd1adaf9f28913d22d819.
+
+Canonical note 1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256 contains complete accepted ca1cd465 and43de02b9 bodies. Six supplied fresh qubits and eight new edges move one supplied excitation while rotating an old datum and preserving arbitrary old/reference scope. The full K remains installed. Distinct target phases and noncommuting-K error formulas must be kept with their own Hamiltonians. All full-space scalar, strength, local-load and entry mean/variance charges remain explicit. Positive-apparatus norm/gap statements retain the second construction's hypotheses and do not provide a gap for total K or prepare the entry state.
+
+The source archive has 166 original aliases, 92 lossless source objects, 100 core files and 101 declared inputs. Two prior scientific controls remain archived; the new canonical cache a62fd356278037135b675b81e3d9e0f75551c93b4d6e98b62d675f35d52d69e2 is source identity only. Full original/revised bodies, actual control history, exposure and root acceptance are preserved. Independent raw matrix certificate was not separately visually reread by root. Acceptance end-time typo is explicitly corrected in framing from the actual receipt, without altering old evidence.
+
+Literal be8 in f02e is the mathematical parent; preparation9cfc is accounting context. Regular milestone publication is authorized; no science merge or retained verdict. Combined current-main checks and independent retained audit remain outstanding. Words, entanglers and finite-window/physical-reader research are separate. No supplied purity, vacancy, calibration or timing resource is identified as native.

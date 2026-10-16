@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-15T02:24:02.461518+00:00",
+  "science_branch": "physics-loop/toe-energy-preparation-readiness-20261015",
+  "science_head": "5574383f4893f9412b1d58faf988cc0fd3ad8084",
+  "science_tree": "96abefd27aaf736e6247880a9d0904070bcb65fa",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "base_pr": 9584,
+  "base_is_also_mathematical_dependency": true,
+  "canonical_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/HERALDED_AUXILIARY_VACUUM_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 62714,
+      "sha256": "939fd222cc39453aeeeffe19223f665e47882a142b48e52379fa8b00fc7bc592"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_READER_LIVE_POINTER_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 70368,
+      "sha256": "0bc9d473dd631107b96aa96ab5075985ec938d6c1b399e5a19fe9b5db03226b9"
+    }
+  ],
+  "premise_boundary_sources": [],
+  "exact_parent_clauses": [
+    {
+      "alias": "premises/sharper_de7.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 22794,
+      "end": 38776,
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976"
+    },
+    {
+      "alias": "premises/chain_79d.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 39056,
+      "end": 59953,
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff"
+    },
+    {
+      "alias": "premises/installed_recurrence_abf.md",
+      "canonical_path": "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 77879,
+      "end": 110909,
+      "sha256": "abf4e9c86bfd9c794ecb1bde09c332a0efae25f089764445dc8fc5fac59784d0"
+    },
+    {
+      "alias": "premises/live_pointer_b237.md",
+      "canonical_path": "docs/TWO_READER_LIVE_POINTER_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18097,
+      "end": 33490,
+      "sha256": "b237031e9a98918e204fe0d7084f992d85ee176a587d22ea64d9a4667ab49d76"
+    }
+  ],
+  "conditional_acceptances": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/energy_readiness_root_review/ROOT_ACCEPTANCE.md",
+      "bytes": 4951,
+      "sha256": "0073afa2cd7700fbd7c3d2e4698a9c5b9ea11c2de9819304640ef2d52833f453"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/energy_pointer_composition_root_review/ROOT_ACCEPTANCE.md",
+      "bytes": 4636,
+      "sha256": "42ff12c20e6e163bca8159fbd0085dfde1c679d0e636971e1fb1ffbc17a0eee2"
+    }
+  ],
+  "new_scientific_programs_run": 0,
+  "archived_scientific_runs": 1,
+  "archive_scope": "One exact generic mirrored M2 paired-port/coercivity control, not79d strip or all-M numerical proof. No replay.",
+  "no_new_pr_yet": true,
+  "science_merged": false
+}

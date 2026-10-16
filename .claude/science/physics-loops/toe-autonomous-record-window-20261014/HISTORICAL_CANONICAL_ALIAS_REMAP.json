@@ -1,0 +1,41 @@
+{
+  "remaps": [
+    {
+      "current_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "historical_role_retained": true,
+      "historical_sha256": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+      "historical_snapshot_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_publication_preparation_bound/history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "historical_snapshot_relative": "history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "role": "canonical direct mathematical parent; complete relevant body uniquely bound"
+      }
+    },
+    {
+      "current_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "historical_role_retained": true,
+      "historical_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+      "historical_snapshot_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_publication_preparation_bound/history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "historical_snapshot_relative": "history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "role": "canonical direct mathematical parent; complete relevant body uniquely bound"
+      }
+    },
+    {
+      "current_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "historical_role_retained": true,
+      "historical_sha256": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+      "historical_snapshot_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_publication_preparation_bound/history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "historical_snapshot_relative": "history/prebinding_plan/component_snapshot/accepted_assembly/archive/parents/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "original_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "role": "canonical direct mathematical parent; complete relevant body uniquely bound"
+      }
+    }
+  ],
+  "scope": "Old original aliases are explicitly mapped to exact preserved snapshots; current live aliases identify observed current notes. Accepted assembly bytes and original EVIDENCE_MAP remain unchanged in history."
+}

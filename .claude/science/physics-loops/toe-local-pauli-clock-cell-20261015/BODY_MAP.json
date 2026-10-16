@@ -1,0 +1,18 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "local_clock_gate_domain_revision/AFTER.md",
+      "start": 14202,
+      "end": 25142,
+      "bytes": 10940,
+      "sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6"
+    },
+    {
+      "alias": "local_clock_gate_independent/DERIVATION.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5"
+    }
+  ]
+}

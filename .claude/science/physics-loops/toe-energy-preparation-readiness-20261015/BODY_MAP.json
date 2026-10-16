@@ -1,0 +1,39 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "energy_readiness_domain_revision/AFTER.md",
+      "start": 19136,
+      "end": 30549,
+      "bytes": 11413,
+      "sha256": "14c0a658a9f4de135e174a5da4f202d21e24a79287743d482e3b2eeb46b79e07"
+    },
+    {
+      "alias": "energy_readiness_independent/DERIVATION.md",
+      "start": 30614,
+      "end": 55075,
+      "bytes": 24461,
+      "sha256": "f73accd2060a937630d64c52683852a0626a16536630f8e54db5a9f93eeaf88b"
+    },
+    {
+      "alias": "energy_readiness_candidate/FREE_AGING_COMPOSITION.md",
+      "start": 55132,
+      "end": 61584,
+      "bytes": 6452,
+      "sha256": "53da3cf02d1864b31741f516cedbcea4c92675eec9f9b5d5ba62e407fcbc0cbc"
+    },
+    {
+      "alias": "energy_readiness_candidate/REFERENCE_RECORD_DISCRIMINATOR.md",
+      "start": 61643,
+      "end": 64530,
+      "bytes": 2887,
+      "sha256": "00c33b875c99893276955ddbccec7e9bf751feb4d1d3d20963e062912c07523e"
+    },
+    {
+      "alias": "energy_pointer_composition_candidate/DERIVATION.md",
+      "start": 64584,
+      "end": 77852,
+      "bytes": 13268,
+      "sha256": "b1615fd1225c6bbcb23f00b10da8dc9097a7533d1f8d6dab028c1e2fbd42b615"
+    }
+  ]
+}

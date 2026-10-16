@@ -1,0 +1,39 @@
+{
+  "scientific_runs": [
+    {
+      "id": "root_exact_and_float",
+      "source_group": "local_clock_gate_decisive_check",
+      "receipt_alias": "local_clock_gate_decisive_check/run01/EXECUTION.json",
+      "stdout_alias": "local_clock_gate_decisive_check/run01/stdout",
+      "stderr_alias": "local_clock_gate_decisive_check/run01/stderr",
+      "preseal_alias": "local_clock_gate_decisive_check/PRE_EXECUTION_SEAL.json",
+      "seal_time_key": "utc_before_first_control_execution",
+      "preseal_redirects": {},
+      "start_key": "start_utc",
+      "end_key": "end_utc",
+      "stream_schema": "nested",
+      "program_alias": "local_clock_gate_decisive_check/control.py",
+      "scope": "One exact plus floating selected fixture; no replay."
+    },
+    {
+      "id": "independent_exact",
+      "source_group": "local_clock_gate_independent",
+      "receipt_alias": "local_clock_gate_independent/commands/selected_exact_01.json",
+      "stdout_alias": "local_clock_gate_independent/commands/selected_exact_01.stdout.txt",
+      "stderr_alias": "local_clock_gate_independent/commands/selected_exact_01.stderr.txt",
+      "preseal_alias": "local_clock_gate_independent/PRECHECK_SEAL.json",
+      "seal_time_key": "sealed_at_utc",
+      "preseal_redirects": {
+        "DERIVATION.md": "local_clock_gate_independent/history/DERIVATION.precheck_389797bf.md"
+      },
+      "start_key": "started_at_utc",
+      "end_key": "ended_at_utc",
+      "stream_schema": "flat",
+      "program_alias": "local_clock_gate_independent/check_exchange_cell.py",
+      "scope": "One exact Gaussian-rational selected fixture, no propagator exponential or replay."
+    }
+  ],
+  "new_scientific_runs": 0,
+  "assessment_and_root_verification": "Identity-only; not additional scientific runs",
+  "timestamp_erratum": "The preserved acceptance text gives 02:26:21.889699Z as the independent run end. The actual receipt and report give 02:26:22.889699Z; current framing uses that actual receipt."
+}

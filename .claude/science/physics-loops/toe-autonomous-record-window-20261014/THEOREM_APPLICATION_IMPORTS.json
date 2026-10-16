@@ -1,0 +1,34 @@
+{
+  "actual_stack_parent_bound": true,
+  "ancestry_is_not_import": true,
+  "canonical_citation_count": 3,
+  "canonical_parent_binding_complete": true,
+  "critical_balanced_or_open_path_theorem_imported": false,
+  "imported_complete_body_count": 3,
+  "mathematical_parent_count": 3,
+  "mathematical_parents": [
+    "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+    "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14",
+    "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14"
+  ],
+  "native_or_common_cap_or_whole_apparatus_NN": false,
+  "raw_complete_body": "a74ab96765a531976aa6fe4afdb41bdc961eda8516ff845ab15d851cac2a6cdf",
+  "rendered_complete_body": "aec8b63424792816856f5894a7452067615e3f7444617a99ab7a8e5702d87337",
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "role_class": "direct_scientific_premise"
+    }
+  ]
+}

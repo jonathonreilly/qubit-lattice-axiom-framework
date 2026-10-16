@@ -1,0 +1,1025 @@
+{
+  "schema": "local-entangling-clock-cell-archive-v1",
+  "source_groups": [
+    {
+      "group": "local_entangling_clock_gate_candidate",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_candidate",
+      "complete_file_count": 2,
+      "aliases": [
+        "local_entangling_clock_gate_candidate/DERIVATION.md",
+        "local_entangling_clock_gate_candidate/FREEZE.json"
+      ]
+    },
+    {
+      "group": "local_entangling_clock_gate_domain_revision",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_domain_revision",
+      "complete_file_count": 4,
+      "aliases": [
+        "local_entangling_clock_gate_domain_revision/AFTER.md",
+        "local_entangling_clock_gate_domain_revision/BEFORE.md",
+        "local_entangling_clock_gate_domain_revision/CHANGE.diff",
+        "local_entangling_clock_gate_domain_revision/FREEZE.json"
+      ]
+    },
+    {
+      "group": "local_entangling_clock_gate_decisive_check",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check",
+      "complete_file_count": 40,
+      "aliases": [
+        "local_entangling_clock_gate_decisive_check/CONTROL_INPUT.json",
+        "local_entangling_clock_gate_decisive_check/EXPOSURE_START.json",
+        "local_entangling_clock_gate_decisive_check/FAILED_RUN01_FREEZE.json",
+        "local_entangling_clock_gate_decisive_check/FINAL_FREEZE.json",
+        "local_entangling_clock_gate_decisive_check/FREEZE_SOURCE.py",
+        "local_entangling_clock_gate_decisive_check/IDENTITY_CHECK.json",
+        "local_entangling_clock_gate_decisive_check/PARENT_SOURCE_PINS.json",
+        "local_entangling_clock_gate_decisive_check/PLAN.md",
+        "local_entangling_clock_gate_decisive_check/PRE_EXECUTION_SEAL.json",
+        "local_entangling_clock_gate_decisive_check/RECORDER_RETRY.diff",
+        "local_entangling_clock_gate_decisive_check/RECORDER_REUSE.json",
+        "local_entangling_clock_gate_decisive_check/RECORD_IDENTITY_CHECK.py",
+        "local_entangling_clock_gate_decisive_check/RECORD_RUN.py",
+        "local_entangling_clock_gate_decisive_check/RECORD_RUN_RETRY.py",
+        "local_entangling_clock_gate_decisive_check/REPORT.md",
+        "local_entangling_clock_gate_decisive_check/RESULT.json",
+        "local_entangling_clock_gate_decisive_check/SERIALIZATION_REPAIR.diff",
+        "local_entangling_clock_gate_decisive_check/SERIALIZATION_REPAIR_SEAL.json",
+        "local_entangling_clock_gate_decisive_check/SOURCE_PINS.json",
+        "local_entangling_clock_gate_decisive_check/VERIFY_AND_PIN.py",
+        "local_entangling_clock_gate_decisive_check/control.py",
+        "local_entangling_clock_gate_decisive_check/control_serialization_fix.py",
+        "local_entangling_clock_gate_decisive_check/history/PRE_EXECUTION_CLEANUP.diff",
+        "local_entangling_clock_gate_decisive_check/history/PRE_EXECUTION_CLEANUP.json",
+        "local_entangling_clock_gate_decisive_check/history/control_unexecuted_draft.py",
+        "local_entangling_clock_gate_decisive_check/identity_check_run01/EXECUTION.json",
+        "local_entangling_clock_gate_decisive_check/identity_check_run01/LAUNCH.json",
+        "local_entangling_clock_gate_decisive_check/identity_check_run01/stderr",
+        "local_entangling_clock_gate_decisive_check/identity_check_run01/stdout",
+        "local_entangling_clock_gate_decisive_check/run01/EXECUTION.json",
+        "local_entangling_clock_gate_decisive_check/run01/LAUNCH.json",
+        "local_entangling_clock_gate_decisive_check/run01/stderr",
+        "local_entangling_clock_gate_decisive_check/run01/stdout",
+        "local_entangling_clock_gate_decisive_check/run02/EXECUTION.json",
+        "local_entangling_clock_gate_decisive_check/run02/LAUNCH.json",
+        "local_entangling_clock_gate_decisive_check/run02/stderr",
+        "local_entangling_clock_gate_decisive_check/run02/stdout",
+        "local_entangling_clock_gate_decisive_check/sources/be8_canonical.md",
+        "local_entangling_clock_gate_decisive_check/sources/candidate.md",
+        "local_entangling_clock_gate_decisive_check/sources/candidate_freeze.json"
+      ]
+    },
+    {
+      "group": "local_entangling_clock_gate_root_review",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_root_review",
+      "complete_file_count": 4,
+      "aliases": [
+        "local_entangling_clock_gate_root_review/ACCEPTANCE.md",
+        "local_entangling_clock_gate_root_review/FINAL_FREEZE.json",
+        "local_entangling_clock_gate_root_review/SOURCE_VERIFICATION.json",
+        "local_entangling_clock_gate_root_review/verify_and_clarify.py"
+      ]
+    },
+    {
+      "group": "local_entangling_clock_gate_independent",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent",
+      "complete_file_count": 15,
+      "aliases": [
+        "local_entangling_clock_gate_independent/CONTROL_INPUT.json",
+        "local_entangling_clock_gate_independent/CONTROL_PLAN.md",
+        "local_entangling_clock_gate_independent/CONTROL_REPORT.md",
+        "local_entangling_clock_gate_independent/DERIVATION.md",
+        "local_entangling_clock_gate_independent/EXPOSURE_AND_FAILURES.md",
+        "local_entangling_clock_gate_independent/FINAL_FREEZE.json",
+        "local_entangling_clock_gate_independent/PRECONTROL_SEAL.json",
+        "local_entangling_clock_gate_independent/SOURCE_PINS.json",
+        "local_entangling_clock_gate_independent/control_run_01/EXECUTION.json",
+        "local_entangling_clock_gate_independent/control_run_01/stderr",
+        "local_entangling_clock_gate_independent/control_run_01/stdout",
+        "local_entangling_clock_gate_independent/record_control.py",
+        "local_entangling_clock_gate_independent/selected_control.py",
+        "local_entangling_clock_gate_independent/sources/be8.md",
+        "local_entangling_clock_gate_independent/sources/global_mediator.md"
+      ]
+    },
+    {
+      "group": "local_entangling_clock_gate_independent_assessment",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment",
+      "complete_file_count": 42,
+      "aliases": [
+        "local_entangling_clock_gate_independent_assessment/BOOTSTRAP.json",
+        "local_entangling_clock_gate_independent_assessment/EXPOSURE.json",
+        "local_entangling_clock_gate_independent_assessment/FINAL_FREEZE.json",
+        "local_entangling_clock_gate_independent_assessment/README.md",
+        "local_entangling_clock_gate_independent_assessment/REPORT.md",
+        "local_entangling_clock_gate_independent_assessment/SEAL_RECEIPT.json",
+        "local_entangling_clock_gate_independent_assessment/SOURCE_PINS.json",
+        "local_entangling_clock_gate_independent_assessment/author/CONTROL_INPUT.json",
+        "local_entangling_clock_gate_independent_assessment/author/CONTROL_PLAN.md",
+        "local_entangling_clock_gate_independent_assessment/author/CONTROL_REPORT.md",
+        "local_entangling_clock_gate_independent_assessment/author/DERIVATION.md",
+        "local_entangling_clock_gate_independent_assessment/author/EXPOSURE_AND_FAILURES.md",
+        "local_entangling_clock_gate_independent_assessment/author/FINAL_FREEZE.json",
+        "local_entangling_clock_gate_independent_assessment/author/PRECONTROL_SEAL.json",
+        "local_entangling_clock_gate_independent_assessment/author/SOURCE_PINS.json",
+        "local_entangling_clock_gate_independent_assessment/author/control_run_01/EXECUTION.json",
+        "local_entangling_clock_gate_independent_assessment/author/control_run_01/stderr",
+        "local_entangling_clock_gate_independent_assessment/author/control_run_01/stdout",
+        "local_entangling_clock_gate_independent_assessment/author/record_control.py",
+        "local_entangling_clock_gate_independent_assessment/author/selected_control.py",
+        "local_entangling_clock_gate_independent_assessment/author/sources/be8.md",
+        "local_entangling_clock_gate_independent_assessment/author/sources/global_mediator.md",
+        "local_entangling_clock_gate_independent_assessment/capture_sources.py",
+        "local_entangling_clock_gate_independent_assessment/check_source_identity.py",
+        "local_entangling_clock_gate_independent_assessment/commands/capture_sources.json",
+        "local_entangling_clock_gate_independent_assessment/commands/capture_sources.stderr.txt",
+        "local_entangling_clock_gate_independent_assessment/commands/capture_sources.stdout.txt",
+        "local_entangling_clock_gate_independent_assessment/commands/source_identity.json",
+        "local_entangling_clock_gate_independent_assessment/commands/source_identity.stderr.txt",
+        "local_entangling_clock_gate_independent_assessment/commands/source_identity.stdout.txt",
+        "local_entangling_clock_gate_independent_assessment/commands/write_report.json",
+        "local_entangling_clock_gate_independent_assessment/commands/write_report.stderr.txt",
+        "local_entangling_clock_gate_independent_assessment/commands/write_report.stdout.txt",
+        "local_entangling_clock_gate_independent_assessment/instructions/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+        "local_entangling_clock_gate_independent_assessment/instructions/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md",
+        "local_entangling_clock_gate_independent_assessment/instructions/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.md",
+        "local_entangling_clock_gate_independent_assessment/instructions/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.md",
+        "local_entangling_clock_gate_independent_assessment/instructions/c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13.md",
+        "local_entangling_clock_gate_independent_assessment/instructions/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.md",
+        "local_entangling_clock_gate_independent_assessment/record_command.py",
+        "local_entangling_clock_gate_independent_assessment/seal_packet.py",
+        "local_entangling_clock_gate_independent_assessment/write_report.py"
+      ]
+    },
+    {
+      "group": "local_entangling_clock_gate_independent_root_review",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_root_review",
+      "complete_file_count": 2,
+      "aliases": [
+        "local_entangling_clock_gate_independent_root_review/ACCEPTANCE.md",
+        "local_entangling_clock_gate_independent_root_review/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "group": "actual_runs/local_entangler_root_source_verification",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_entangler_root_source_verification",
+      "complete_file_count": 4,
+      "aliases": [
+        "actual_runs/local_entangler_root_source_verification/EXECUTION.json",
+        "actual_runs/local_entangler_root_source_verification/executed_source.py",
+        "actual_runs/local_entangler_root_source_verification/stderr",
+        "actual_runs/local_entangler_root_source_verification/stdout"
+      ]
+    },
+    {
+      "group": "actual_runs/local_cell_followup_source_verification",
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_cell_followup_source_verification",
+      "complete_file_count": 4,
+      "aliases": [
+        "actual_runs/local_cell_followup_source_verification/EXECUTION.json",
+        "actual_runs/local_cell_followup_source_verification/executed_source.py",
+        "actual_runs/local_cell_followup_source_verification/stderr",
+        "actual_runs/local_cell_followup_source_verification/stdout"
+      ]
+    }
+  ],
+  "originals": {
+    "actual_runs/local_cell_followup_source_verification/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_cell_followup_source_verification/EXECUTION.json",
+      "bytes": 1498,
+      "sha256": "fe12497ed164d94c1e45ca4c3e260d7a10fe5b0c0ef1a7aaa5c0c75dbedad319",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/fe12497ed164d94c1e45ca4c3e260d7a10fe5b0c0ef1a7aaa5c0c75dbedad319.gz"
+    },
+    "actual_runs/local_cell_followup_source_verification/executed_source.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_cell_followup_source_verification/executed_source.py",
+      "bytes": 4637,
+      "sha256": "8670135c7cf4b3c6725e36c3cbab1ad0f54bc847a54861ac009b1ae2c4f683cf",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8670135c7cf4b3c6725e36c3cbab1ad0f54bc847a54861ac009b1ae2c4f683cf.gz"
+    },
+    "actual_runs/local_cell_followup_source_verification/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_cell_followup_source_verification/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "actual_runs/local_cell_followup_source_verification/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_cell_followup_source_verification/stdout",
+      "bytes": 471,
+      "sha256": "b1514dc2533da7d246cba88eeebf3faf991b32ce041ec1e5f9f1be0441baab2b",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b1514dc2533da7d246cba88eeebf3faf991b32ce041ec1e5f9f1be0441baab2b.gz"
+    },
+    "actual_runs/local_entangler_root_source_verification/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_entangler_root_source_verification/EXECUTION.json",
+      "bytes": 1509,
+      "sha256": "eeebf72d6e84bc787dc963553fe3b68033a375db78e5b0e114b881f5aded1290",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/eeebf72d6e84bc787dc963553fe3b68033a375db78e5b0e114b881f5aded1290.gz"
+    },
+    "actual_runs/local_entangler_root_source_verification/executed_source.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_entangler_root_source_verification/executed_source.py",
+      "bytes": 5650,
+      "sha256": "7d3fcdcc0c035f78c5d43f4fe7517ad5818350e749f7a442a7a4b8a57604df38",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7d3fcdcc0c035f78c5d43f4fe7517ad5818350e749f7a442a7a4b8a57604df38.gz"
+    },
+    "actual_runs/local_entangler_root_source_verification/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_entangler_root_source_verification/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "actual_runs/local_entangler_root_source_verification/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_entangler_root_source_verification/stdout",
+      "bytes": 693,
+      "sha256": "6e1aebf3385e1188dce918b3837f0a2db75258e9f95a21fff8224b8050f1420f",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/6e1aebf3385e1188dce918b3837f0a2db75258e9f95a21fff8224b8050f1420f.gz"
+    },
+    "canonical/docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 37090,
+      "sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4.gz"
+    },
+    "canonical/docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 32493,
+      "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755.gz"
+    },
+    "local_entangling_clock_gate_candidate/DERIVATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_candidate/DERIVATION.md",
+      "bytes": 12396,
+      "sha256": "095d52f674c03453185afdd7126c526ebbf075e47b98a0c0d93d00599183cca5",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/095d52f674c03453185afdd7126c526ebbf075e47b98a0c0d93d00599183cca5.gz"
+    },
+    "local_entangling_clock_gate_candidate/FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_candidate/FREEZE.json",
+      "bytes": 740,
+      "sha256": "d2fe7f7ca1763980e3eff85fd124580954a3b4e5d54594f32217920e621bfca6",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d2fe7f7ca1763980e3eff85fd124580954a3b4e5d54594f32217920e621bfca6.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/CONTROL_INPUT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/CONTROL_INPUT.json",
+      "bytes": 686,
+      "sha256": "70f8bc054b2e2d7f0ee014458a434d5d5132e74aade64d535c484fdddde2049e",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/70f8bc054b2e2d7f0ee014458a434d5d5132e74aade64d535c484fdddde2049e.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/EXPOSURE_START.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/EXPOSURE_START.json",
+      "bytes": 727,
+      "sha256": "3c66d664f872257c8ee205ac26c929c83a2ee9c1e1c3ecad84e979ef47aeda42",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/3c66d664f872257c8ee205ac26c929c83a2ee9c1e1c3ecad84e979ef47aeda42.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/FAILED_RUN01_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/FAILED_RUN01_FREEZE.json",
+      "bytes": 3052,
+      "sha256": "754dfa75d30666c39d709f3c5a57db0e48f9430625249d94dacf3c725b507394",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/754dfa75d30666c39d709f3c5a57db0e48f9430625249d94dacf3c725b507394.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/FINAL_FREEZE.json",
+      "bytes": 6691,
+      "sha256": "5e5db9b1803f4f9996c2fe011b3505811dd2aeb7a4ae1c0929a4310c60d19b3f",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/5e5db9b1803f4f9996c2fe011b3505811dd2aeb7a4ae1c0929a4310c60d19b3f.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/FREEZE_SOURCE.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/FREEZE_SOURCE.py",
+      "bytes": 1632,
+      "sha256": "a2b29297b855ed78499f0b758ca8f247cb9ad29457a438d220cb35cc3d60703a",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a2b29297b855ed78499f0b758ca8f247cb9ad29457a438d220cb35cc3d60703a.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/IDENTITY_CHECK.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/IDENTITY_CHECK.json",
+      "bytes": 1833,
+      "sha256": "ef22835854423c0f48e2cb717742b63071abe6b6d13a56a4408bb61fb1627413",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ef22835854423c0f48e2cb717742b63071abe6b6d13a56a4408bb61fb1627413.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/PARENT_SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/PARENT_SOURCE_PINS.json",
+      "bytes": 1484,
+      "sha256": "bcbef5af221a5feeeb04f291a71d2ce7c3410d50fb7441d50135ca5c98ee9353",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/bcbef5af221a5feeeb04f291a71d2ce7c3410d50fb7441d50135ca5c98ee9353.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/PLAN.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/PLAN.md",
+      "bytes": 3545,
+      "sha256": "45eaf95001d009c391e4ca8e703f24ee54a99a76c9bb044c4ae1d7326ac09d46",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/45eaf95001d009c391e4ca8e703f24ee54a99a76c9bb044c4ae1d7326ac09d46.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/PRE_EXECUTION_SEAL.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/PRE_EXECUTION_SEAL.json",
+      "bytes": 2373,
+      "sha256": "a56690ff50a62d2e0dde30655d94c30eb57dc65fcaee188f7bd00e9ccdb63be9",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a56690ff50a62d2e0dde30655d94c30eb57dc65fcaee188f7bd00e9ccdb63be9.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/RECORDER_RETRY.diff": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/RECORDER_RETRY.diff",
+      "bytes": 950,
+      "sha256": "c2f8698070bd003ece8f2ad03a4241837c05ac7c520ab9267321a7965c134331",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c2f8698070bd003ece8f2ad03a4241837c05ac7c520ab9267321a7965c134331.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/RECORDER_REUSE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/RECORDER_REUSE.json",
+      "bytes": 377,
+      "sha256": "a7c6aa437b88cc89a91552de7b32fb185a2867bb91332d268a847f678596ed25",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a7c6aa437b88cc89a91552de7b32fb185a2867bb91332d268a847f678596ed25.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/RECORD_IDENTITY_CHECK.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/RECORD_IDENTITY_CHECK.py",
+      "bytes": 1560,
+      "sha256": "bf83b30a4610b0e079821738984ff6e7be5f374da97e4ef778c224eea21b4644",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/bf83b30a4610b0e079821738984ff6e7be5f374da97e4ef778c224eea21b4644.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/RECORD_RUN.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/RECORD_RUN.py",
+      "bytes": 1525,
+      "sha256": "d27e37865eea2667d1b2caff45c68c3bf7299e7516e9477cc553b1ddbd469654",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d27e37865eea2667d1b2caff45c68c3bf7299e7516e9477cc553b1ddbd469654.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/RECORD_RUN_RETRY.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/RECORD_RUN_RETRY.py",
+      "bytes": 1600,
+      "sha256": "16cc344c5ae26e0f8edc3465cbc57537898b8171080e542cddc47b88f91c5998",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/16cc344c5ae26e0f8edc3465cbc57537898b8171080e542cddc47b88f91c5998.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/REPORT.md",
+      "bytes": 17147,
+      "sha256": "96d26a21e761bc1dd32015a33393c337c182c8cb215b3e3ba931ba41be2df070",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/96d26a21e761bc1dd32015a33393c337c182c8cb215b3e3ba931ba41be2df070.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/RESULT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/RESULT.json",
+      "bytes": 17190,
+      "sha256": "71c3bc48a4dd461d29002a7add5727d5ea1e3e1ff1dff370341354917c24b679",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/71c3bc48a4dd461d29002a7add5727d5ea1e3e1ff1dff370341354917c24b679.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/SERIALIZATION_REPAIR.diff": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/SERIALIZATION_REPAIR.diff",
+      "bytes": 2180,
+      "sha256": "696f0fd4bc8b5ecbfd2be17c160daa152a960163ac939d1efbc311cabb98b9e4",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/696f0fd4bc8b5ecbfd2be17c160daa152a960163ac939d1efbc311cabb98b9e4.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/SERIALIZATION_REPAIR_SEAL.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/SERIALIZATION_REPAIR_SEAL.json",
+      "bytes": 1624,
+      "sha256": "275f6eb9135f1850d246a5cb735947f856f23741f049bc9f327476aa46f96c2a",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/275f6eb9135f1850d246a5cb735947f856f23741f049bc9f327476aa46f96c2a.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/SOURCE_PINS.json",
+      "bytes": 8677,
+      "sha256": "b144943b0bc103fe59f4678a1a57ce9d6c64b6f7c273dc5f5c867bccc3f0f334",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b144943b0bc103fe59f4678a1a57ce9d6c64b6f7c273dc5f5c867bccc3f0f334.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/VERIFY_AND_PIN.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/VERIFY_AND_PIN.py",
+      "bytes": 6585,
+      "sha256": "814d0faebc386b2bf8873defb9da7f8cf6b0f90fe94e7f400c5b3ebc0d52eca9",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/814d0faebc386b2bf8873defb9da7f8cf6b0f90fe94e7f400c5b3ebc0d52eca9.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/control.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/control.py",
+      "bytes": 12635,
+      "sha256": "81e207b81b1137ca1535c73b22b26ba3b803ac5633d6320571d8813973f3f0b2",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/81e207b81b1137ca1535c73b22b26ba3b803ac5633d6320571d8813973f3f0b2.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/control_serialization_fix.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/control_serialization_fix.py",
+      "bytes": 12835,
+      "sha256": "386cbb1b43f7798d08534d0b69b6740a5aa9016bc5f34d505f5f027a9cf84acc",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/386cbb1b43f7798d08534d0b69b6740a5aa9016bc5f34d505f5f027a9cf84acc.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/history/PRE_EXECUTION_CLEANUP.diff": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/history/PRE_EXECUTION_CLEANUP.diff",
+      "bytes": 615,
+      "sha256": "46fddea0d6ba3492b2c1229c78a2f7ceeaaef742714409219a87cbb1868a553b",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/46fddea0d6ba3492b2c1229c78a2f7ceeaaef742714409219a87cbb1868a553b.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/history/PRE_EXECUTION_CLEANUP.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/history/PRE_EXECUTION_CLEANUP.json",
+      "bytes": 509,
+      "sha256": "010c0c0deba4705490424d83b5478f520a1971a1ed9d0e14898f0765e4f9e04e",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/010c0c0deba4705490424d83b5478f520a1971a1ed9d0e14898f0765e4f9e04e.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/history/control_unexecuted_draft.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/history/control_unexecuted_draft.py",
+      "bytes": 12730,
+      "sha256": "f1b1bf41e22a651328dbb78a3137b66b75b6c431e00f54255a7194939c1991fe",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f1b1bf41e22a651328dbb78a3137b66b75b6c431e00f54255a7194939c1991fe.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/identity_check_run01/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/identity_check_run01/EXECUTION.json",
+      "bytes": 1748,
+      "sha256": "746dde655f8fd9868e0c8c932804f7d7c6a11e12e23f8a7ac8e79dec67586462",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/746dde655f8fd9868e0c8c932804f7d7c6a11e12e23f8a7ac8e79dec67586462.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/identity_check_run01/LAUNCH.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/identity_check_run01/LAUNCH.json",
+      "bytes": 1075,
+      "sha256": "c8aeb64e92b743542c1154a5e8554e66f18d3d20629cfec455ed6b2ed6314b6f",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c8aeb64e92b743542c1154a5e8554e66f18d3d20629cfec455ed6b2ed6314b6f.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/identity_check_run01/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/identity_check_run01/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/identity_check_run01/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/identity_check_run01/stdout",
+      "bytes": 702,
+      "sha256": "020c43e091122bd02163c2480ac75358fa788f6ada1050115cafe83b8f032e96",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/020c43e091122bd02163c2480ac75358fa788f6ada1050115cafe83b8f032e96.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run01/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run01/EXECUTION.json",
+      "bytes": 1610,
+      "sha256": "5051ffa2815029768e288ba4df154d27f2fca06c1512718f496a8686031f2724",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/5051ffa2815029768e288ba4df154d27f2fca06c1512718f496a8686031f2724.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run01/LAUNCH.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run01/LAUNCH.json",
+      "bytes": 1212,
+      "sha256": "b84746b21ee6d380d75eb479f98b8ffdf039add060eca1cc171c403832ec10fb",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b84746b21ee6d380d75eb479f98b8ffdf039add060eca1cc171c403832ec10fb.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run01/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run01/stderr",
+      "bytes": 1238,
+      "sha256": "273519a163788928b653f758fa4ef89beec51c46871d2c1d26c48862c69b4171",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/273519a163788928b653f758fa4ef89beec51c46871d2c1d26c48862c69b4171.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run01/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run01/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run02/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run02/EXECUTION.json",
+      "bytes": 1818,
+      "sha256": "74549eeaa060817c3738bb7ea9945386710a6403f02c9e0d7a0065d6efdf51d0",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/74549eeaa060817c3738bb7ea9945386710a6403f02c9e0d7a0065d6efdf51d0.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run02/LAUNCH.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run02/LAUNCH.json",
+      "bytes": 1419,
+      "sha256": "e942bfc2df7e8c67b731c5b02847c3911086edfe7f5ef440e06b1a1d7031b598",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e942bfc2df7e8c67b731c5b02847c3911086edfe7f5ef440e06b1a1d7031b598.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run02/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run02/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/run02/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/run02/stdout",
+      "bytes": 17190,
+      "sha256": "71c3bc48a4dd461d29002a7add5727d5ea1e3e1ff1dff370341354917c24b679",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/71c3bc48a4dd461d29002a7add5727d5ea1e3e1ff1dff370341354917c24b679.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/sources/be8_canonical.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/sources/be8_canonical.md",
+      "bytes": 32493,
+      "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/sources/candidate.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/sources/candidate.md",
+      "bytes": 12396,
+      "sha256": "095d52f674c03453185afdd7126c526ebbf075e47b98a0c0d93d00599183cca5",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/095d52f674c03453185afdd7126c526ebbf075e47b98a0c0d93d00599183cca5.gz"
+    },
+    "local_entangling_clock_gate_decisive_check/sources/candidate_freeze.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_decisive_check/sources/candidate_freeze.json",
+      "bytes": 740,
+      "sha256": "d2fe7f7ca1763980e3eff85fd124580954a3b4e5d54594f32217920e621bfca6",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d2fe7f7ca1763980e3eff85fd124580954a3b4e5d54594f32217920e621bfca6.gz"
+    },
+    "local_entangling_clock_gate_domain_revision/AFTER.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_domain_revision/AFTER.md",
+      "bytes": 12408,
+      "sha256": "2c95a969f8d8f40f4190ece9f25d811c7e204a4f68de722f3fe393265b2c8115",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/2c95a969f8d8f40f4190ece9f25d811c7e204a4f68de722f3fe393265b2c8115.gz"
+    },
+    "local_entangling_clock_gate_domain_revision/BEFORE.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_domain_revision/BEFORE.md",
+      "bytes": 12396,
+      "sha256": "095d52f674c03453185afdd7126c526ebbf075e47b98a0c0d93d00599183cca5",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/095d52f674c03453185afdd7126c526ebbf075e47b98a0c0d93d00599183cca5.gz"
+    },
+    "local_entangling_clock_gate_domain_revision/CHANGE.diff": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_domain_revision/CHANGE.diff",
+      "bytes": 1897,
+      "sha256": "5732d498807ff8264f561a3c36520491950b285ce3f9862cc0b0567ffd48aeb3",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/5732d498807ff8264f561a3c36520491950b285ce3f9862cc0b0567ffd48aeb3.gz"
+    },
+    "local_entangling_clock_gate_domain_revision/FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_domain_revision/FREEZE.json",
+      "bytes": 1330,
+      "sha256": "9ed008a6c12207dff383d4caed39c6b22bb5388f3372c8691b3816cdc7de18ad",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/9ed008a6c12207dff383d4caed39c6b22bb5388f3372c8691b3816cdc7de18ad.gz"
+    },
+    "local_entangling_clock_gate_independent/CONTROL_INPUT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/CONTROL_INPUT.json",
+      "bytes": 324,
+      "sha256": "f50db4f3963186fc04fdda9b0459039e3645e61f2a8dc7b2687b42ef7e8b4f20",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f50db4f3963186fc04fdda9b0459039e3645e61f2a8dc7b2687b42ef7e8b4f20.gz"
+    },
+    "local_entangling_clock_gate_independent/CONTROL_PLAN.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/CONTROL_PLAN.md",
+      "bytes": 3091,
+      "sha256": "f265b5600d8b86d8c6f9dfcf3c9d4017b9d7004036caf50307f0f3acf6b15b35",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f265b5600d8b86d8c6f9dfcf3c9d4017b9d7004036caf50307f0f3acf6b15b35.gz"
+    },
+    "local_entangling_clock_gate_independent/CONTROL_REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/CONTROL_REPORT.md",
+      "bytes": 5654,
+      "sha256": "e7cc1ef809c803bd1db16d8fb5510d19b5082e2acc1d56e355190298998f8229",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e7cc1ef809c803bd1db16d8fb5510d19b5082e2acc1d56e355190298998f8229.gz"
+    },
+    "local_entangling_clock_gate_independent/DERIVATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/DERIVATION.md",
+      "bytes": 21292,
+      "sha256": "6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543.gz"
+    },
+    "local_entangling_clock_gate_independent/EXPOSURE_AND_FAILURES.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/EXPOSURE_AND_FAILURES.md",
+      "bytes": 3051,
+      "sha256": "16868d7e340d94352cc667c594bec36a654ed0baf0423eec63c4fbedae56129c",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/16868d7e340d94352cc667c594bec36a654ed0baf0423eec63c4fbedae56129c.gz"
+    },
+    "local_entangling_clock_gate_independent/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/FINAL_FREEZE.json",
+      "bytes": 2976,
+      "sha256": "1fbf026317d6536dd197de580e07d9518d80c67e1bfdff0613b96978072c54f2",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/1fbf026317d6536dd197de580e07d9518d80c67e1bfdff0613b96978072c54f2.gz"
+    },
+    "local_entangling_clock_gate_independent/PRECONTROL_SEAL.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/PRECONTROL_SEAL.json",
+      "bytes": 1789,
+      "sha256": "42869965e7cc6e6cd01bd201ad6b84c0a37682dbc0e6298899e938016fa9cbde",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/42869965e7cc6e6cd01bd201ad6b84c0a37682dbc0e6298899e938016fa9cbde.gz"
+    },
+    "local_entangling_clock_gate_independent/SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/SOURCE_PINS.json",
+      "bytes": 4065,
+      "sha256": "12be9b00df013c81b8111b92b139a72d885d03cf81db258671a436f3b224e4b6",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/12be9b00df013c81b8111b92b139a72d885d03cf81db258671a436f3b224e4b6.gz"
+    },
+    "local_entangling_clock_gate_independent/control_run_01/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/control_run_01/EXECUTION.json",
+      "bytes": 2903,
+      "sha256": "744535009b26921d07b32b421c9f6a134305e907d8ca185b5341a3b0dd2b11e1",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/744535009b26921d07b32b421c9f6a134305e907d8ca185b5341a3b0dd2b11e1.gz"
+    },
+    "local_entangling_clock_gate_independent/control_run_01/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/control_run_01/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_independent/control_run_01/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/control_run_01/stdout",
+      "bytes": 2807,
+      "sha256": "a421a2f1d7f094516ee3a8c247b4df685ec0d3896a39ad1b8ba42feefea7f18a",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a421a2f1d7f094516ee3a8c247b4df685ec0d3896a39ad1b8ba42feefea7f18a.gz"
+    },
+    "local_entangling_clock_gate_independent/record_control.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/record_control.py",
+      "bytes": 1357,
+      "sha256": "718e56be97847c82934031d8ca56cb2773dd975a439c2e65f5f4016330b85a67",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/718e56be97847c82934031d8ca56cb2773dd975a439c2e65f5f4016330b85a67.gz"
+    },
+    "local_entangling_clock_gate_independent/selected_control.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/selected_control.py",
+      "bytes": 9102,
+      "sha256": "613788ebb160033dfa5cb69955d183cf19aab3643169ada4b10aa61f2083de60",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/613788ebb160033dfa5cb69955d183cf19aab3643169ada4b10aa61f2083de60.gz"
+    },
+    "local_entangling_clock_gate_independent/sources/be8.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/sources/be8.md",
+      "bytes": 23749,
+      "sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc.gz"
+    },
+    "local_entangling_clock_gate_independent/sources/global_mediator.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent/sources/global_mediator.md",
+      "bytes": 28389,
+      "sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/BOOTSTRAP.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/BOOTSTRAP.json",
+      "bytes": 559,
+      "sha256": "ba43a48f0fd7a2289449c13d9cb3149d1db250cb42d803cb944e1e9be8cdc34d",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ba43a48f0fd7a2289449c13d9cb3149d1db250cb42d803cb944e1e9be8cdc34d.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/EXPOSURE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/EXPOSURE.json",
+      "bytes": 1899,
+      "sha256": "6b97fef971c1755d1f5a55b1cb93c81fe21a443ff1e02e60c2d0bb9e25162655",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/6b97fef971c1755d1f5a55b1cb93c81fe21a443ff1e02e60c2d0bb9e25162655.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/FINAL_FREEZE.json",
+      "bytes": 7155,
+      "sha256": "48af0ae3e94c5b1b9099eb0e0c9d4911e10eb30cfb1f48ddc63b02d6400396a5",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/48af0ae3e94c5b1b9099eb0e0c9d4911e10eb30cfb1f48ddc63b02d6400396a5.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/README.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/README.md",
+      "bytes": 1070,
+      "sha256": "602109014f8e022e168880535a5d37488c1ff6ced86492fa21de96cc456bdea5",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/602109014f8e022e168880535a5d37488c1ff6ced86492fa21de96cc456bdea5.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/REPORT.md",
+      "bytes": 14433,
+      "sha256": "498764a95ab6ff0a0013d9a4c9d5c6979f3de641984e4e67038741f99596db9a",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/498764a95ab6ff0a0013d9a4c9d5c6979f3de641984e4e67038741f99596db9a.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/SEAL_RECEIPT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/SEAL_RECEIPT.json",
+      "bytes": 349,
+      "sha256": "02f4c819bad0a2c93b7f935522da71cfebdd3bd2a1628a7af97b5fd6ba1d795e",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/02f4c819bad0a2c93b7f935522da71cfebdd3bd2a1628a7af97b5fd6ba1d795e.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/SOURCE_PINS.json",
+      "bytes": 9177,
+      "sha256": "d28908933397eb710c323d3d25a3eef6db944afb51a60677741e3c55a4c5ceb4",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d28908933397eb710c323d3d25a3eef6db944afb51a60677741e3c55a4c5ceb4.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/CONTROL_INPUT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/CONTROL_INPUT.json",
+      "bytes": 324,
+      "sha256": "f50db4f3963186fc04fdda9b0459039e3645e61f2a8dc7b2687b42ef7e8b4f20",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f50db4f3963186fc04fdda9b0459039e3645e61f2a8dc7b2687b42ef7e8b4f20.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/CONTROL_PLAN.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/CONTROL_PLAN.md",
+      "bytes": 3091,
+      "sha256": "f265b5600d8b86d8c6f9dfcf3c9d4017b9d7004036caf50307f0f3acf6b15b35",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f265b5600d8b86d8c6f9dfcf3c9d4017b9d7004036caf50307f0f3acf6b15b35.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/CONTROL_REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/CONTROL_REPORT.md",
+      "bytes": 5654,
+      "sha256": "e7cc1ef809c803bd1db16d8fb5510d19b5082e2acc1d56e355190298998f8229",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e7cc1ef809c803bd1db16d8fb5510d19b5082e2acc1d56e355190298998f8229.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/DERIVATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/DERIVATION.md",
+      "bytes": 21292,
+      "sha256": "6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/EXPOSURE_AND_FAILURES.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/EXPOSURE_AND_FAILURES.md",
+      "bytes": 3051,
+      "sha256": "16868d7e340d94352cc667c594bec36a654ed0baf0423eec63c4fbedae56129c",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/16868d7e340d94352cc667c594bec36a654ed0baf0423eec63c4fbedae56129c.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/FINAL_FREEZE.json",
+      "bytes": 2976,
+      "sha256": "1fbf026317d6536dd197de580e07d9518d80c67e1bfdff0613b96978072c54f2",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/1fbf026317d6536dd197de580e07d9518d80c67e1bfdff0613b96978072c54f2.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/PRECONTROL_SEAL.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/PRECONTROL_SEAL.json",
+      "bytes": 1789,
+      "sha256": "42869965e7cc6e6cd01bd201ad6b84c0a37682dbc0e6298899e938016fa9cbde",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/42869965e7cc6e6cd01bd201ad6b84c0a37682dbc0e6298899e938016fa9cbde.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/SOURCE_PINS.json",
+      "bytes": 4065,
+      "sha256": "12be9b00df013c81b8111b92b139a72d885d03cf81db258671a436f3b224e4b6",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/12be9b00df013c81b8111b92b139a72d885d03cf81db258671a436f3b224e4b6.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/control_run_01/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/control_run_01/EXECUTION.json",
+      "bytes": 2903,
+      "sha256": "744535009b26921d07b32b421c9f6a134305e907d8ca185b5341a3b0dd2b11e1",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/744535009b26921d07b32b421c9f6a134305e907d8ca185b5341a3b0dd2b11e1.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/control_run_01/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/control_run_01/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/control_run_01/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/control_run_01/stdout",
+      "bytes": 2807,
+      "sha256": "a421a2f1d7f094516ee3a8c247b4df685ec0d3896a39ad1b8ba42feefea7f18a",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a421a2f1d7f094516ee3a8c247b4df685ec0d3896a39ad1b8ba42feefea7f18a.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/record_control.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/record_control.py",
+      "bytes": 1357,
+      "sha256": "718e56be97847c82934031d8ca56cb2773dd975a439c2e65f5f4016330b85a67",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/718e56be97847c82934031d8ca56cb2773dd975a439c2e65f5f4016330b85a67.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/selected_control.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/selected_control.py",
+      "bytes": 9102,
+      "sha256": "613788ebb160033dfa5cb69955d183cf19aab3643169ada4b10aa61f2083de60",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/613788ebb160033dfa5cb69955d183cf19aab3643169ada4b10aa61f2083de60.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/sources/be8.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/sources/be8.md",
+      "bytes": 23749,
+      "sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/author/sources/global_mediator.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/author/sources/global_mediator.md",
+      "bytes": 28389,
+      "sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/capture_sources.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/capture_sources.py",
+      "bytes": 4553,
+      "sha256": "48f52a510848e371621c1f825135328c2bc31280250795fba81824a4235aa841",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/48f52a510848e371621c1f825135328c2bc31280250795fba81824a4235aa841.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/check_source_identity.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/check_source_identity.py",
+      "bytes": 2713,
+      "sha256": "7290d37e3f338fa1b64bc7691bf428eaff6109ffbb312f9ddebd13c349c12661",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7290d37e3f338fa1b64bc7691bf428eaff6109ffbb312f9ddebd13c349c12661.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/capture_sources.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/capture_sources.json",
+      "bytes": 556,
+      "sha256": "d2ec9666530c7f0773243a41b83d0696909cf0b517435c908770ecc9012c9664",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d2ec9666530c7f0773243a41b83d0696909cf0b517435c908770ecc9012c9664.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/capture_sources.stderr.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/capture_sources.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/capture_sources.stdout.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/capture_sources.stdout.txt",
+      "bytes": 336,
+      "sha256": "8a1a6d00e00e4754ff3b79c6bf1fc83bd32df0200b1d6194dc6d67dd26636197",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8a1a6d00e00e4754ff3b79c6bf1fc83bd32df0200b1d6194dc6d67dd26636197.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/source_identity.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/source_identity.json",
+      "bytes": 562,
+      "sha256": "8c245229d3dda3176d8ea058e1ed00c28b780e52ecc2c484c2bbd4ca95e815bd",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8c245229d3dda3176d8ea058e1ed00c28b780e52ecc2c484c2bbd4ca95e815bd.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/source_identity.stderr.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/source_identity.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/source_identity.stdout.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/source_identity.stdout.txt",
+      "bytes": 366,
+      "sha256": "c1e4f65f1548b66e005e5b06a3578459a2505ee867e885a21717cd8d01cf2893",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c1e4f65f1548b66e005e5b06a3578459a2505ee867e885a21717cd8d01cf2893.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/write_report.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/write_report.json",
+      "bytes": 552,
+      "sha256": "7341eb3e16cd8866fa778fba5b8df9cc8d148212d537b64e9bbadb763035f754",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7341eb3e16cd8866fa778fba5b8df9cc8d148212d537b64e9bbadb763035f754.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/write_report.stderr.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/write_report.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/commands/write_report.stdout.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/commands/write_report.stdout.txt",
+      "bytes": 350,
+      "sha256": "9e5150908f5e876b34de645dc332ebf716fd8467223934017afe800cd5315dd8",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/9e5150908f5e876b34de645dc332ebf716fd8467223934017afe800cd5315dd8.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/instructions/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/instructions/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/instructions/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/instructions/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/instructions/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/instructions/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/instructions/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/instructions/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/instructions/c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/instructions/c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13.md",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/instructions/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/instructions/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/record_command.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/record_command.py",
+      "bytes": 1105,
+      "sha256": "bb3a4764729ad9c0fa73401b9dc0cce83bf8098e17380041d2e0494066eadd17",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/bb3a4764729ad9c0fa73401b9dc0cce83bf8098e17380041d2e0494066eadd17.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/seal_packet.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/seal_packet.py",
+      "bytes": 1904,
+      "sha256": "a84adad3143a295f18c31af08a6c28d429a13f6b4b4159681952f5627339cf1a",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a84adad3143a295f18c31af08a6c28d429a13f6b4b4159681952f5627339cf1a.gz"
+    },
+    "local_entangling_clock_gate_independent_assessment/write_report.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_assessment/write_report.py",
+      "bytes": 17961,
+      "sha256": "a8f3611be2422878a4fbdbfef7d70ac9af9a3e5bd287b42f4aacb205ae08dbf8",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a8f3611be2422878a4fbdbfef7d70ac9af9a3e5bd287b42f4aacb205ae08dbf8.gz"
+    },
+    "local_entangling_clock_gate_independent_root_review/ACCEPTANCE.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_root_review/ACCEPTANCE.md",
+      "bytes": 3798,
+      "sha256": "256f12b48ced6fafb78bf72bfe091687d59ea30bf3f37ccccb3a7ccf6195098a",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/256f12b48ced6fafb78bf72bfe091687d59ea30bf3f37ccccb3a7ccf6195098a.gz"
+    },
+    "local_entangling_clock_gate_independent_root_review/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_independent_root_review/FINAL_FREEZE.json",
+      "bytes": 344,
+      "sha256": "7c637c3367b32bd666b694b65cccd76dfd90a94d8e27ff7a87ce05e54ea7748f",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7c637c3367b32bd666b694b65cccd76dfd90a94d8e27ff7a87ce05e54ea7748f.gz"
+    },
+    "local_entangling_clock_gate_root_review/ACCEPTANCE.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_root_review/ACCEPTANCE.md",
+      "bytes": 5257,
+      "sha256": "35da19d8c689c01af0c9a3822b66f1f056aa7d445bd1284391cb64db3f8b01d1",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/35da19d8c689c01af0c9a3822b66f1f056aa7d445bd1284391cb64db3f8b01d1.gz"
+    },
+    "local_entangling_clock_gate_root_review/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_root_review/FINAL_FREEZE.json",
+      "bytes": 630,
+      "sha256": "ca283a84b45c5e469346552cba905b0ec14dfd18e31e77b031ea064cd1a8357e",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ca283a84b45c5e469346552cba905b0ec14dfd18e31e77b031ea064cd1a8357e.gz"
+    },
+    "local_entangling_clock_gate_root_review/SOURCE_VERIFICATION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_root_review/SOURCE_VERIFICATION.json",
+      "bytes": 3559,
+      "sha256": "524544ffd82245ef28bd62871431f216cf6780126e2be570ef700375c9e95bf8",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/524544ffd82245ef28bd62871431f216cf6780126e2be570ef700375c9e95bf8.gz"
+    },
+    "local_entangling_clock_gate_root_review/verify_and_clarify.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_gate_root_review/verify_and_clarify.py",
+      "bytes": 5650,
+      "sha256": "7d3fcdcc0c035f78c5d43f4fe7517ad5818350e749f7a442a7a4b8a57604df38",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7d3fcdcc0c035f78c5d43f4fe7517ad5818350e749f7a442a7a4b8a57604df38.gz"
+    },
+    "premises/be8_raw.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 23749,
+      "sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc.gz",
+      "source_interval": {
+        "start": 8389,
+        "end_exclusive": 32138,
+        "parent_sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+      }
+    },
+    "premises/mediator_raw.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 28389,
+      "sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6.gz",
+      "source_interval": {
+        "start": 7032,
+        "end_exclusive": 35421,
+        "parent_sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4"
+      }
+    },
+    "procedural/CHANGE_EXPLANATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/CHANGE_EXPLANATION.md",
+      "bytes": 7760,
+      "sha256": "51f8cf10199e65cf48de5b17f460dad0427a741e2e6f86e39ef3402114e5cf65",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/51f8cf10199e65cf48de5b17f460dad0427a741e2e6f86e39ef3402114e5cf65.gz"
+    },
+    "procedural/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/FINAL_FREEZE.json",
+      "bytes": 26147,
+      "sha256": "423572fb1da66ed2811c553b8f8929efd4676a26e47a9e03e51403fe2b899c10",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/423572fb1da66ed2811c553b8f8929efd4676a26e47a9e03e51403fe2b899c10.gz"
+    },
+    "procedural/FRAMING.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/FRAMING.md",
+      "bytes": 13889,
+      "sha256": "ef9ed26d229c22f5be2f079fc31d3ccfbeb4e0d696a2aa3e6c7e0b892787c988",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ef9ed26d229c22f5be2f079fc31d3ccfbeb4e0d696a2aa3e6c7e0b892787c988.gz"
+    },
+    "procedural/PROGRAM_MAP.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/PROGRAM_MAP.json",
+      "bytes": 82958,
+      "sha256": "7c80ee433e47f3849ac841d6b2f4750831ae3aa39dd041c74da3c99eb9cb9394",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7c80ee433e47f3849ac841d6b2f4750831ae3aa39dd041c74da3c99eb9cb9394.gz"
+    },
+    "procedural/PR_BODY.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/PR_BODY.md",
+      "bytes": 990,
+      "sha256": "e94ad7222730fee0112179daf620b7568f5866f4369e5726734ca7d3a231b446",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e94ad7222730fee0112179daf620b7568f5866f4369e5726734ca7d3a231b446.gz"
+    },
+    "procedural/READ_COVERAGE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/READ_COVERAGE.json",
+      "bytes": 1703,
+      "sha256": "929808029a58f93360b83fa3adb473a749cfd8bcb5fc8e80b2165d3aa0133711",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/929808029a58f93360b83fa3adb473a749cfd8bcb5fc8e80b2165d3aa0133711.gz"
+    },
+    "procedural/ROOT_READ_GUIDE.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/ROOT_READ_GUIDE.md",
+      "bytes": 3210,
+      "sha256": "a0d39d165e5ea80db623103ebd4e28b50dae87a6122ae97bbe954e9979bba789",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/a0d39d165e5ea80db623103ebd4e28b50dae87a6122ae97bbe954e9979bba789.gz"
+    },
+    "procedural/build_local_clock_source.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/build_local_clock_source.py",
+      "bytes": 6864,
+      "sha256": "ebaeebb9d6616e083d6e14ea5ee35120ddce48007866803ae682e00b8309b989",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/ebaeebb9d6616e083d6e14ea5ee35120ddce48007866803ae682e00b8309b989.gz"
+    },
+    "procedural/capture_sources.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/capture_sources.py",
+      "bytes": 10751,
+      "sha256": "7ee8fd4ee179f701f75d96f6e3881aa801bafc1aa8bf280287c6cb3b85bcc279",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/7ee8fd4ee179f701f75d96f6e3881aa801bafc1aa8bf280287c6cb3b85bcc279.gz"
+    },
+    "procedural/local_clock_common.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/local_clock_common.py",
+      "bytes": 2345,
+      "sha256": "fc334b523b528a117e217fc7e1fd716e4cd656055f5c946a5b7450c01cd684b1",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/fc334b523b528a117e217fc7e1fd716e4cd656055f5c946a5b7450c01cd684b1.gz"
+    },
+    "procedural/local_clock_primary.template.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/local_clock_primary.template.py",
+      "bytes": 5754,
+      "sha256": "92568d56f3ce7e51f4f479329b8c58c9f12d5f814876b10516ac7a91ed46bbcc",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/92568d56f3ce7e51f4f479329b8c58c9f12d5f814876b10516ac7a91ed46bbcc.gz"
+    },
+    "procedural/map_and_parse.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/map_and_parse.py",
+      "bytes": 7444,
+      "sha256": "31cf01981e2d8f6a98bda20339241317c1000b9920e3a34898ff8e351e0bdf87",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/31cf01981e2d8f6a98bda20339241317c1000b9920e3a34898ff8e351e0bdf87.gz"
+    },
+    "procedural/record_source_work.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/record_source_work.py",
+      "bytes": 1629,
+      "sha256": "e3985930b9542d48a21e411b5e678b1422f1aa12ee7c095cc30627c246e00cec",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/e3985930b9542d48a21e411b5e678b1422f1aa12ee7c095cc30627c246e00cec.gz"
+    },
+    "procedural/seal_draft.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_publication_draft/seal_draft.py",
+      "bytes": 1904,
+      "sha256": "973ff5af0bfad3116be8c71a6f804e75c3d5d1664f46969bc9354868d140af70",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/973ff5af0bfad3116be8c71a6f804e75c3d5d1664f46969bc9354868d140af70.gz"
+    },
+    "recorders/run.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.gz"
+    },
+    "root_followup/FOLLOWUP_SOURCE_VERIFICATION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_root_review/FOLLOWUP_SOURCE_VERIFICATION.json",
+      "bytes": 6327,
+      "sha256": "0cec848de750534e46fd93a58a2c19d5646a48fa200c7e01a4d69f9faead75f5",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/0cec848de750534e46fd93a58a2c19d5646a48fa200c7e01a4d69f9faead75f5.gz"
+    },
+    "root_followup/verify_followup_closures.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_gate_root_review/verify_followup_closures.py",
+      "bytes": 4637,
+      "sha256": "8670135c7cf4b3c6725e36c3cbab1ad0f54bc847a54861ac009b1ae2c4f683cf",
+      "stored_path": ".claude/science/physics-loops/toe-local-entangling-clock-cell-20261015/archive/8670135c7cf4b3c6725e36c3cbab1ad0f54bc847a54861ac009b1ae2c4f683cf.gz"
+    }
+  }
+}

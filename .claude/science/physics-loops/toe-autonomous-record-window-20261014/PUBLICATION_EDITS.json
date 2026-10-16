@@ -1,0 +1,185 @@
+{
+  "body_link_rendering": {
+    "byte_identical_embedded_body": false,
+    "diff": {
+      "context_lines": 3,
+      "diff": "diffs/three_parent_link_rendering.diff.gz",
+      "diff_bytes": 2106,
+      "diff_sha256": "25614a561b2f6fd954248fa338e740bbd303e55120f6f49832d097c616bdfa07",
+      "diff_stored_sha256": "9cbb53c587d860037eac78ad3fb0655e4d8896ed00a5e380d598e18f13315c39",
+      "fromfile": "RECORD_WINDOW.raw.md",
+      "stored_bytes": 849,
+      "tofile": "RECORD_WINDOW.rendered.md"
+    },
+    "inverse_exact": true,
+    "inverse_sha256": "a74ab96765a531976aa6fe4afdb41bdc961eda8516ff845ab15d851cac2a6cdf",
+    "mathematical_body_edits": [],
+    "raw_bytes": 34642,
+    "raw_sha256": "a74ab96765a531976aa6fe4afdb41bdc961eda8516ff845ab15d851cac2a6cdf",
+    "rendered_bytes": 34618,
+    "rendered_sha256": "aec8b63424792816856f5894a7452067615e3f7444617a99ab7a8e5702d87337",
+    "scope": "exactly three historical Markdown target relocations; no mathematical edit",
+    "targets": [
+      {
+        "actual_resolved_canonical_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "after_target": "COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "after_token": "](COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+        "before_target": "sources/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "before_token": "](sources/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+        "canonical_repository_path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "canonical_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+        "scope": "Markdown target relocation only"
+      },
+      {
+        "actual_resolved_canonical_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "after_target": "LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "after_token": "](LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+        "before_target": "sources/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "before_token": "](sources/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+        "canonical_repository_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "canonical_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+        "scope": "Markdown target relocation only"
+      },
+      {
+        "actual_resolved_canonical_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "after_target": "LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "after_token": "](LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+        "before_target": "sources/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "before_token": "](sources/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+        "canonical_repository_path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "canonical_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+        "scope": "Markdown target relocation only"
+      }
+    ]
+  },
+  "frontmatter": "---\ntitle: Finite autonomous storage window for an initial binary K admission record\nclaim_id: autonomous_finite_record_window_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: supplied finite coherent admission write and storage window under unchanged H, complete prepared-reference estimate and separately supplied finite reader\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: finite conditional record-window construction with charged clock/program/recurrence/scalar/energy/precision costs; no observed collapse, permanent memory, arbitrary stopping, native supply or common cap\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\npublication_stack_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"coherent_binary_k_admission_bounded_theorem_note_2026-10-14\", \"literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14\", \"literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/autonomous_finite_record_window_identity_2026_10_14.py\nnext_trace_action: finish exact publication-source review; root integration and regular PR; independent retained audit later\n---\n\nClaim type: bounded_theorem\n\n",
+  "historical_assembly_status_frame_preserved_in_archive": true,
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "384e32b331b9eaf63bdbd3a63933ff92c559ede561cbb4b3b5a1ab9bde951115",
+      "complete_bodies": [
+        {
+          "byte_end_exclusive": 47436,
+          "byte_identical_embedded_body": false,
+          "byte_start_inclusive": 12818,
+          "bytes": 34618,
+          "id": "RECORD_WINDOW",
+          "line_end_inclusive": 459,
+          "line_start_inclusive": 81,
+          "mathematical_body_edits": [],
+          "publication_link_target_edits": 3,
+          "raw_sha256": "a74ab96765a531976aa6fe4afdb41bdc961eda8516ff845ab15d851cac2a6cdf",
+          "sha256": "aec8b63424792816856f5894a7452067615e3f7444617a99ab7a8e5702d87337",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_source_assembly/cores/RECORD_WINDOW_DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 14414,
+      "diff_sha256": "17bdfa3f2ba43a45b5e6ad4143275b452bab373b6fd7873c358678384a45a866",
+      "diff_stored_sha256": "721f32198107c150a89babb70992f126799ad8c754b2eb129567b922e3c0f5a9",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/AUTONOMOUS_FINITE_RECORD_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "publication_link_target_edits": 3,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_record_window_source_assembly/cores/RECORD_WINDOW_DERIVATION.md",
+          "source_sha256": "a74ab96765a531976aa6fe4afdb41bdc961eda8516ff845ab15d851cac2a6cdf"
+        }
+      ],
+      "published_bytes": 47436,
+      "published_lines": 459,
+      "published_sha256": "e63d4135794a47d226bb88da98a3dd2a39bc6627e3196257ef9282186bb43e0c",
+      "stored_bytes": 4821,
+      "tofile": "docs/AUTONOMOUS_FINITE_RECORD_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "rendered_body_introduction": "## Complete accepted argument with three link-target relocations\n\nThe raw34642-byte,379-line a74 body remains archived unchanged. The following complete rendered body changes only the three explicitly mapped historical Markdown targets to their actual canonical parent paths. Its separate hash and deterministic inverse are supplied. Original pending/status and exposure statements remain historical; no mathematical statement is changed.\n\n",
+  "source_body_introduction": "## Complete unchanged accepted proof\n\nThe following 34642-byte, 379-line body appears exactly once in this candidate. Original pending/status and exposure statements remain historical. Current conditional scientific acceptance and the navigation/export erratum are supplied by the new wrapper; no scientific sentence is rewritten.\n\n",
+  "source_freeze_sha256": "1f9756ca652c050d91e5927cb3084a8dc54f668503cf58e6de0b99e1113a76ba",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 9867,
+    "diff_sha256": "7113afec505b39f6550926135efcbe70d32ee33b4d21316de45e58deb3500708",
+    "diff_stored_sha256": "e09d9051cb4891ed4001a26b25fc487fcc49212c159a950a97fd5fe251755ab5",
+    "fromfile": "THEOREM_WRAPPER.md",
+    "stored_bytes": 3723,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "exactly once below.",
+      "rendered": "in the archive. The body below has exactly three separately mapped Markdown target relocations to the actual canonical parents. Its rendered hash and deterministic inverse are recorded; it is not a byte-identical embedded copy.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "This new wrapper and evidence composition await root review.",
+      "rendered": "Root accepted the source assembly under8541cd0b5e4bf7657b3aba0e5d82eb326c0dca9eba8bf3bec500e24805ae27cb and complete reviewe174751867748371ad03649446314df2350064fddd0cd42bc4d17da47ec4311e. This new publication rendering, exact three-link delta and driver remain subject to separate root review.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "The archived links below contain the complete current canonical notes;",
+      "rendered": "The links below point to the actual current canonical notes; byte-identical copies remain archived;",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "](archive/parents/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "rendered": "](COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "](archive/parents/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "rendered": "](LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "](archive/parents/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "rendered": "](LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "](archive/author/ACTUAL_EXECUTION_INDEX.json)",
+      "rendered": "](../.claude/science/physics-loops/toe-autonomous-record-window-20261014/AUTHOR_ACTUAL_EXECUTION_INDEX.json)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "[root erratum](archive/acceptance/AUTONOMOUS_RECORD_WINDOW_PUBLICATION_ERRATUM.md)",
+      "rendered": "root erratum (archive file `.claude/science/physics-loops/toe-autonomous-record-window-20261014/PUBLICATION_ERRATUM.md`)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "](archive/separate_review/SUGGESTED_README_REPAIR.diff)",
+      "rendered": "](../.claude/science/physics-loops/toe-autonomous-record-window-20261014/AUTHOR_README_REPAIR.diff.gz)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "The proof appears once in the candidate; archival and extraction copies intentionally preserve the original evidence.",
+      "rendered": "The complete three-link-rendered argument appears once in the canonical note; archival and extraction copies preserve raw a74 exactly. The full rendering diff and deterministic inverse establish the byte relationship without claiming an unchanged embedded body.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+      "rendered": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+      "rendered": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+      "rendered": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "The eventual publication parent, branch, head and canonical child identity remain unbound pending an actual receipt.",
+      "rendered": "The actual procedural parent is regular OPEN PR9572 at b50d97052f1b9dd3277eec137208b454fa609337; the clean child physics-loop/toe-autonomous-record-window-20261014 has tree 6b90854fc9a1c0304ba6487f504fcf1fc8f0736b. Root source/driver execution acceptance and canonical prepare/verify remain pending.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

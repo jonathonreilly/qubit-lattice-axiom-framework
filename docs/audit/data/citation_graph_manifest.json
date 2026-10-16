@@ -1,6 +1,6 @@
 {
- "edge_count": 16068,
- "node_count": 7123,
+ "edge_count": 16084,
+ "node_count": 7128,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2104,6 +2104,10 @@
   },
   "autonomous_finite_clock_for_the_original_reduced_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "afd5814d8cef",
+   "out_degree": 3
+  },
+  "autonomous_finite_record_window_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "47c9ce544854",
    "out_degree": 3
   },
   "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30": {
@@ -12482,6 +12486,10 @@
    "deps_hash": "dcaed0b9908a",
    "out_degree": 4
   },
+  "installed_generator_preparation_readiness_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "7f0d6f98d7fb",
+   "out_degree": 4
+  },
   "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "4af4136b6493",
    "out_degree": 1
@@ -14346,6 +14354,10 @@
    "deps_hash": "666e0b9cf11e",
    "out_degree": 4
   },
+  "local_entangling_clock_cell_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "cefbefa9e451",
+   "out_degree": 2
+  },
   "local_even_continuum_bounded_theorem_note_2026-10-12": {
    "deps_hash": "71b211f9b79a",
    "out_degree": 1
@@ -14377,6 +14389,10 @@
   "local_parity_exchange_carrier_recurrent_bell_cycle821_bounded_theorem_note_2026-07-30": {
    "deps_hash": "b7437e336fa1",
    "out_degree": 4
+  },
+  "local_pauli_clock_cell_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "84baac1425e1",
+   "out_degree": 2
   },
   "local_quantum_collisions_and_rapid_mixing_bounded_theorem_note_2026-10-09": {
    "deps_hash": "cd53a40964b7",
@@ -21517,6 +21533,10 @@
   "two_field_retarded_probe_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "two_reader_live_pointer_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "2c00247b251c",
+   "out_degree": 5
   },
   "two_sign_comparison_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/installed_generator_preparation_readiness_2026_10_15.py
+runner_sha256: 2836aa0304707047d2a9fd931d002b1a95d45ac449291a565d8ad5539855826d
+input_fingerprint_sha256: eae79f510a3f85cc2c8402443edad859de84778287610b090d8d6b16d7feca7c
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{"archived_scientific_controls_not_replayed": 1, "complete_proofs": 5, "decoded_originals": 228, "limits": "Supplied ideal-carrier expectation, intended current old/reference state and complete ready apparatus. Scalar moments are distinct from reference-valued records. No physical energy certificate, cooling, native preparation or retained audit.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Identity/interval verification only. Analytic derivations and selective checks are archived evidence; this runner does not prove their mathematics."}
+per_element: supplied expectation and full preparation/control/reader contracts
+per_site: inherited restricted chain, protected archives and separately supplied reader hardware
+per_mode: full-space finite auxiliary bound; physical energy identification remains supplied
+per_block: complete aged output, success floor and scalar moment comparison; reference-valued records separate
+lattice_wide: sufficient M^-5 population and M^-14 generic instrument budgets; full installed strength/time costs
+
+----- stderr -----
+

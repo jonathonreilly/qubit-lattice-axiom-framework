@@ -1,0 +1,54 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "autonomous_finite_record_window_bounded_theorem_note_2026-10-14",
+      "to": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "autonomous_finite_record_window_bounded_theorem_note_2026-10-14",
+      "to": "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "autonomous_finite_record_window_bounded_theorem_note_2026-10-14",
+      "to": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expected_delta": {
+    "edges": 3,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "autonomous_finite_record_window_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+        "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14",
+        "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/AUTONOMOUS_FINITE_RECORD_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/autonomous_finite_record_window_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "Three actual mathematical roles; historical citations and procedural ancestry add no premise. Actual root graph execution remains pending."
+}

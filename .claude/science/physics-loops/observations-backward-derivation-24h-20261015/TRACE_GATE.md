@@ -27,3 +27,7 @@ The new standalone inverse supports the user's request to derive remaining assum
 ## Physical bridge checkpoint 2026-10-16T05:07:48.595187+00:00
 
 Physical actuator calibration and smooth-history compatibility make explicit what observations would be needed. Reachability supports the inverse program conditionally; they do not identify any actual apparatus with scalar gravity or quantum dynamics.
+
+## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
+
+Common-action reconstruction now removes chosen hidden inertia/coupling/potential functions within an explicit passive one-mode class. Trace remains upstream_support, reachability supports. No metric/gravity or quantum identification is asserted. The demonstrated x-dependent hidden translation removes a kinetic cross term as coordinate freedom, not an assumed selector.

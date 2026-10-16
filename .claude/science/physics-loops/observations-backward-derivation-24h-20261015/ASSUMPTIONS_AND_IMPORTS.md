@@ -44,3 +44,7 @@ Block05 is under independent check: third-axis twist law, uniform context marks,
 ## Sampled coupling inverse
 
 The protocol uses an explicit one-coordinate passive linear hidden response with arbitrary C1 coupling functions, a common conjugate source/coordinate/time map and bounded pulse/readout errors. Positive constant diagonal kinetic coefficients are required only for potential completion. It reconstructs relative functions without selected polynomials, shared hidden initial states or continuous-frequency branch choice. No absolute scale, local potential U, moving-coordinate inertia or gravity/quantum identification is derived. All new controls are synthetic.
+
+## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
+
+The checked inverse imports a smooth one-hidden-coordinate reciprocal quadratic action with coefficients depending only on visible x, a Rayleigh quadratic form, independently calibrated force conjugacy/time/coordinate, rest response, an isolated underdamped observable mode and ideal continuum functions. It reconstructs relative inertia, stiffness/damping and potential/coupling functions instead of selecting them; integration constants and proved gauge freedoms remain. Nonlinear hidden potentials, multiple hidden modes, state-dependent readout and w-dependent kinetic metrics remain outside the result. Synthetic controls and fitted preparations are explicitly separated from independent empirical data.

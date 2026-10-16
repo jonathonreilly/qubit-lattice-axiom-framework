@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-16T05:32:18.964776+00:00",
+  "reason": "Staged whitespace check found a context blank line in the preserved historical diff. Preserve exact reviewed bytes in deterministic gzip; historical manifest hashes remain unchanged.",
+  "original_path": "independent_common_action_ringdown/author_v1_v2.diff",
+  "archive_path": "independent_common_action_ringdown/author_v1_v2.diff.gz",
+  "uncompressed_sha256": "456f477eb1070df988a322a6a7630f5d8dd2294f9567c4a3caa5a8e73a8d02d7",
+  "archive_sha256": "487cda9cdc8390737def2f2cb12a9263da120e9b73f35b22c74a089d36f896fd",
+  "byte_exact_roundtrip": true,
+  "semantic_change": false
+}

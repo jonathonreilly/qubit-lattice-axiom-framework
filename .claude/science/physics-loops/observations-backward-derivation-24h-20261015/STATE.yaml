@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "physical bridge checked; common-action resonance probe active",
+  "phase": "Common-action ringdown and conditional action-function inverse checked; canonical milestone preparation",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T05:07:48.595187+00:00",
+  "updated_at": "2026-10-16T05:31:36.754907+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -13,12 +13,12 @@
   "main_at_launch": "bbada1fe09b2d10d610560864d86b68c24a59713",
   "delivery": "milestone",
   "checkpoint_minutes": 30,
-  "block": "physical observation bridge",
-  "route": "calibrated port -> smooth histories -> common-action cross-environment test",
+  "block": "common-action reconstruction across environments",
+  "route": "calibrated dynamic stiffness and clamped ringdown -> coefficient functions -> independent moving-history test",
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Personally derive and test whether environment-dependent resonance, linear-response residues and nonlinear clamped ringdown obey a common-action relation without supplying hidden mass, coupling or initial amplitude. This is provisional; preserve reciprocal kinetic/damping cross terms, variable inertia and physical readout assumptions. Compare classical Hellmann-Feynman/optomechanical prior art before any novelty claim.",
+  "next_action": "Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -103,7 +103,7 @@
   "worker_pid": null,
   "previous_campaigns": "all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json",
   "global_stop": null,
-  "strongest_checked_result": "Conditional sampled pulse inverse reconstructs relative couplings and tests reciprocal-potential compatibility without assigning hidden preparations or selecting continuous-frequency aliases; physical response class, source/coordinate and absolute scales remain supplied. Earlier scalar inverse and network intervention results are unchanged.",
+  "strongest_checked_result": "Within one supplied reciprocal quadratic hidden-mode action class, Q reconstructs the stiffness/inertia ratio derivative; the phase-sensitive second harmonic reconstructs log-inertia derivative. These, response residues, polynomial closure and static-force consistency reconstruct a canonical action and Rayleigh functions up to demonstrated coordinate/constant freedoms.",
   "author_computation": {
     "core_exact_identities": 28,
     "core_mutations_detected": 3,
@@ -118,18 +118,13 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T04:44:00+00:00",
+      "time": "2026-10-16T05:15:00Z",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "open_pr_count": 64,
-      "inventory_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0444.json",
-      "inventory_sha256": "d202854f74f65fbf4c982018606a1f1b634b624a7be4cd501fc049682a9c778b",
-      "scope": "64 open-PR metadata heads compared with04:40inventory; unchanged. main and execution fetched; no other author work modified.",
-      "new_background_pr": {
-        "number": 9633,
-        "head": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
-        "source_note_sha256": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49",
-        "role": "Background only; no premise adopted."
-      }
+      "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+      "open_pr_count": 65,
+      "inventory_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0515.json",
+      "inventory_sha256": "71097aa67fd9ab06e2909bfad8b1138c4647d9a3a371c369d35c7ed38fc5249f",
+      "scope": "Refreshed metadata heads; only newPR9635 background source/body inspected; no premise adopted or others work modified."
     }
   },
   "first_block_files": [
@@ -149,17 +144,19 @@
   ],
   "milestone_status": "PR9628,PR9632,PR9634 published and attached; exact sources preserved. Shared integrated landing gates pending; no merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T05:07:48.595187+00:00",
+    "time": "2026-10-16T05:31:36.754907+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Root personally derived physical-port calibration and smooth-history tests.28/24 primary controls and137/112 focused assertions passed respectively; these counts overlap in purpose and are not pooled. Complete independent proofs/code/results read and all7 frozen source bindings plus9 smooth-check artifact bindings verified. Sources distinguish NIST target performance from achieved measurements and preserve finite-edge, inertia, impedance, clamped-versus-moving and calibration-transfer limits. No physical candidate data or empirical holdout was opened. Standard calibration/weak-identification support remains commits-only; no new PR or retained claim is warranted by these calculations alone.",
+    "checkpoint_scope": "Conditional action-function reconstruction from ideal calibrated rest response and clamped ringdown across environments",
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T04:41:10.591852+00:00",
-    "commit": "48e6b3641d5d4a88914f80f2d9dcd41f9e19a1b7",
+    "checked_at": "2026-10-16T05:08:56.665714+00:00",
+    "commit": "6924d784cab60f977b32e89cdb4c3d387d1c599d",
+    "remote_head": "6924d784cab60f977b32e89cdb4c3d387d1c599d",
     "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "Personally authored coupling and sampled inverse derivations, computations and source-bound focused checks; verified remote checkpoint."
+    "scope": "Exploratory physical-port and smooth-history bridges, full focused evidence; no new PR or physical validation",
+    "worktree_clean": true
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -547,5 +544,49 @@
       "absolute scale"
     ],
     "next_route": "Test an environment-dependent quadratic hidden-mode action via force-ringdown/linear-response pole identities; provisional derivation not yet checked."
+  },
+  "ringdown_reconstruction_checkpoint": {
+    "time": "2026-10-16T05:31:36.754907+00:00",
+    "author": "/root personally",
+    "scope": "Conditional action-function reconstruction from ideal calibrated rest response and clamped ringdown across environments",
+    "common_action": {
+      "source": "COMMON_ACTION_RINGDOWN_v1.md",
+      "primary_controls": 62,
+      "focused_independent_assertions": 268,
+      "manifest_sha256": "ce067b308141b9693f4e8d33f55a9557192ba9f77428628846d124a5655f870d"
+    },
+    "action_inverse": {
+      "source": "RINGDOWN_ACTION_RECONSTRUCTION_v1.md",
+      "primary_extension_controls": 132,
+      "embedded_parent_controls": 62,
+      "focused_independent_assertions": 418,
+      "manifest_sha256": "056b74314366272c1fa493af113529e006acf4a383a1eeec115b369a624bccd3"
+    },
+    "frozen_bindings_verified": 31,
+    "binding_note": "3+3 source rows,3 repeated parent dependencies,22 independent artifacts. Counts overlap and are not pooled.",
+    "root_read_complete_independent_proof_code_results": true,
+    "verification_receipt": "RINGDOWN_SOURCE_VERIFICATION_v1.json",
+    "new_physical_data_accessed": false,
+    "empirical_validation": false,
+    "reserved_data_status": "Synthetic initial states only; first60samples fit preparation and last541are predicted at existing environments. No independent empirical test.",
+    "result": "Within one supplied reciprocal quadratic hidden-mode action class, Q reconstructs the stiffness/inertia ratio derivative; the phase-sensitive second harmonic reconstructs log-inertia derivative. These, response residues, polynomial closure and static-force consistency reconstruct a canonical action and Rayleigh functions up to demonstrated coordinate/constant freedoms.",
+    "not_derived": [
+      "one-mode quadratic action and Rayleigh class",
+      "physical conjugate force/coordinate/time calibration",
+      "rest state for linear response",
+      "isolated nonzero underdamped mode",
+      "ideal continuum functions or adequate error/regularity certificates",
+      "absolute physical hidden scale",
+      "quantum or gravitational identification"
+    ],
+    "failure_preserved": "v1 common-action control inspected unsimplified SymPy free_symbols; the residue identity already held. v2 simplifies before the representation assertion; original61pass1fail remains.",
+    "prior_art": "Classical frequency-force/Hellmann-Feynman relation acknowledged; no broad novelty claim. Optomechanics review SecIII.A-B read; Perkins/Bellan abstract only.",
+    "operational_recovery": [
+      "wrong remote execution ref recovered with exact ai/execution",
+      "broad prior-art git grep terminated137; narrowed docs root search completed, no absence theorem"
+    ],
+    "next_action": "Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.",
+    "deadline_unchanged": "2026-10-16T22:36:59Z",
+    "packaging_unchanged": "2026-10-16T22:21:59Z"
   }
 }

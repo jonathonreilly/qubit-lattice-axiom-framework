@@ -1,0 +1,21 @@
+{
+  "sources": {
+    "COMMON_ACTION_RINGDOWN_v1.md": "61c46a1ae94f20de40fe0d8fd484f350ff9325bfd433afd0913f48a689685750",
+    "check_common_action_ringdown_v2.py": "b8123f4b9aa3da98a453d9cf43621d4830334f5051941d09716103ff9132fee8",
+    "COMMON_ACTION_RINGDOWN_CONTROLS_v2.json": "68c550d5fa4bb230e813d2b649f2a9f2108d7330693c0fa32541266eb46eda8c"
+  },
+  "sources_unchanged": true,
+  "artifacts": {
+    "check.py": "df9832f44042667734ef9d6524c28d0707b142769c1b3ca119e13a999845d017",
+    "author_v1_v2.diff": "456f477eb1070df988a322a6a7630f5d8dd2294f9567c4a3caa5a8e73a8d02d7",
+    "REPORT.md": "73a42a510b17f6e0ea42e2cbcb664e061ece9054215c8e7dce4cb31338996d45",
+    "execution_receipts.json": "7b05601b908b4533402ddd8864d615fb10a09bcd3a84d2138abdfd8e51388189",
+    "frozen_sources.json": "ca5fae11ac9189da387d6934504cef6ab117bc2b910368e6a41c33ca88e0d3b3",
+    "independent_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparison.json": "6b0ca93d267ac445ea4049927d0bc9bab7b431e1db10fd6a5e72fe65b33e86f9",
+    "author_stdout.json": "68c550d5fa4bb230e813d2b649f2a9f2108d7330693c0fa32541266eb46eda8c",
+    "independent_stdout.json": "be82b549dbdd539e5f9f6eedfa8f3a6581bd04e146e2afab5c9b39aa0cc5bc2a",
+    "derivation_before_code.md": "696c63016a6e157a5d0abc09c1d17c87cae48a035076b29c55d1a0aae2057530",
+    "author_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

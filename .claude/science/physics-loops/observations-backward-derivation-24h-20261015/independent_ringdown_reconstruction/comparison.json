@@ -1,0 +1,15 @@
+{
+  "exact_author_json_match": true,
+  "author_summary": {
+    "passed": 132,
+    "failed": 0
+  },
+  "embedded_parent_summary": {
+    "passed": 62,
+    "failed": 0
+  },
+  "independent_summary": {
+    "passed": 418,
+    "failed": 0
+  }
+}

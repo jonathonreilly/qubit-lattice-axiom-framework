@@ -1,0 +1,722 @@
+{
+  "scope": "conditional exact-class reconstruction with synthetic controls; no empirical validation",
+  "summary": {
+    "passed": 132,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "kinetic_cross_removed_by_coordinate_change",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visible_mass_Schur_complement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "damping_cross_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "damping_diagonal_transformed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "potential_translation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "damping_determinant_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_pole_off_diagonal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "equilibrium_holding_force",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_hidden_curvature",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "observed_r_is_real",
+      "passed": true,
+      "detail": 3.2037259134502885e-12
+    },
+    {
+      "name": "inertia_log_derivative_recovered",
+      "passed": true,
+      "detail": 3.3857361358968774e-12
+    },
+    {
+      "name": "relative_inertia_integrated",
+      "passed": true,
+      "detail": 3.699789363764694e-10
+    },
+    {
+      "name": "continuous_hidden_reflection_choice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Rayleigh_cross_reconstructed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visible_mass_from_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visible_damping_from_response",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entire_polynomial_response",
+      "passed": true,
+      "detail": 1.8240460869413518e-13
+    },
+    {
+      "name": "candidate_positivity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "equilibrium_static_consistency",
+      "passed": true,
+      "detail": 6.217248937900877e-15
+    },
+    {
+      "name": "equilibrium_curve_integrated",
+      "passed": true,
+      "detail": 2.1142858991352043e-09
+    },
+    {
+      "name": "visible_equilibrium_potential_integrated",
+      "passed": true,
+      "detail": 1.8001679064072462e-08
+    },
+    {
+      "name": "potential_has_reconstructed_equilibrium",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved_later_history_0",
+      "passed": true,
+      "detail": 4.654499008438506e-12
+    },
+    {
+      "name": "reserved_later_history_30",
+      "passed": true,
+      "detail": 3.648137347767033e-12
+    },
+    {
+      "name": "reserved_later_history_60",
+      "passed": true,
+      "detail": 2.6081359294494177e-12
+    },
+    {
+      "name": "phase_alternative_keeps_first_Q",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase_alternative_rejected_by_real_r",
+      "passed": true,
+      "detail": 0.09934080201723422
+    },
+    {
+      "name": "static_offset_alternative_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "negative_mass_alternative_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "negative_damping_alternative_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonaffine_residue_scaling",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_second_harmonic_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_70",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_80",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_81",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_82",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_83",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_84",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_85",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_86",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_87",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_88",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_89",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_90",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_91",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_92",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_93",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_94",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_95",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_98",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_reconstruction_error_99",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "grid_points": 61,
+    "normalization": "tau(-0.8)=1; chosen hidden unit, not measured absolute scale",
+    "max_relative_inertia_error": 3.699789363764694e-10,
+    "reserved_synthetic_predictions": [
+      {
+        "x": -0.8,
+        "input_state": [
+          -0.37,
+          0.18
+        ],
+        "preparation_fit_samples": 60,
+        "reserved_prediction_samples": 541,
+        "max_error": 4.654499008438506e-12
+      },
+      {
+        "x": 0.09999999999999998,
+        "input_state": [
+          0.49,
+          0.27
+        ],
+        "preparation_fit_samples": 60,
+        "reserved_prediction_samples": 541,
+        "max_error": 3.648137347767033e-12
+      },
+      {
+        "x": 1.0,
+        "input_state": [
+          -0.24,
+          -0.33
+        ],
+        "preparation_fit_samples": 60,
+        "reserved_prediction_samples": 541,
+        "max_error": 2.6081359294494177e-12
+      }
+    ],
+    "max_complex_r_error": 0.002974754755896106,
+    "max_fraction_of_r_bound": 0.7990570466061263,
+    "development_data": "61 synthetic environment responses and ringdowns used for function reconstruction",
+    "reserved_status": "new synthetic initial states at3 calibrated environments; first60 samples fit only preparation, last541 evaluated after preparation fit; no empirical test",
+    "inputs_received_by_inverse": "port spectra and force time series; generator parameter values used only in separate verification comparisons"
+  },
+  "dependency": {
+    "path": "check_common_action_ringdown_v2.py",
+    "sha256": "b8123f4b9aa3da98a453d9cf43621d4830334f5051941d09716103ff9132fee8",
+    "primary_summary": {
+      "passed": 62,
+      "failed": 0
+    }
+  },
+  "source_sha256": "d2d6c29409c16edf3e2e4ea337d671be1e6adfa84e6180697bd0e9c3de3572bc",
+  "runner_sha256": "42711cd3e93c7bc984a0846e28b0604bf5882bc1e4a4dd988dcc8a7a940c60d2",
+  "empirical_validation": false
+}

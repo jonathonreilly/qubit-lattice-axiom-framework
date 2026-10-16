@@ -53,3 +53,7 @@ bounded_theorem / conditional-support. Exact sampled recurrence, six-sample hist
 ## Physical bridge checkpoint 2026-10-16T05:07:48.595187+00:00
 
 Physical-port and smooth-history blocks: conditional-support, exploratory checked mathematics only. No formal retained status or empirical validation. Remaining actuator, calibration, physical class and scale assumptions are explicitly retained.
+
+## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
+
+bounded_theorem / conditional-support. Coefficient-function reconstruction and observation-surface sufficiency within the declared action class are checked. The action class is a premise; it has not been selected by observations. No retained or TOE-complete status. See RINGDOWN_RECONSTRUCTION_CHECKPOINT_v1.json.

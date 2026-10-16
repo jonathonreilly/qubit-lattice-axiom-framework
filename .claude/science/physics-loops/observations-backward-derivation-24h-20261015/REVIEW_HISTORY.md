@@ -129,3 +129,9 @@ PR9634 exact head/base,108files,body and OPEN state verified; attached to this c
 ## Physical bridge checkpoint 2026-10-16T05:07:48.595187+00:00
 
 Root personally derived physical-port calibration and smooth-history tests.28/24 primary controls and137/112 focused assertions passed respectively; these counts overlap in purpose and are not pooled. Complete independent proofs/code/results read and all7 frozen source bindings plus9 smooth-check artifact bindings verified. Sources distinguish NIST target performance from achieved measurements and preserve finite-edge, inertia, impedance, clamped-versus-moving and calibration-transfer limits. No physical candidate data or empirical holdout was opened. Standard calibration/weak-identification support remains commits-only; no new PR or retained claim is warranted by these calculations alone. No formal audit verdict. Receipt PHYSICAL_BRIDGE_CHECKPOINT_v1.json.
+
+## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
+
+Root personally derived and implemented the common-action ringdown identity and full conditional action-function inverse.62parent controls and132extension controls passed; the extension reruns62parent controls, so counts are not summed. Focused independent checks passed268and418assertions respectively. Root read complete proofs/code/results and verified31source/dependency/artifact bindings. No physical dataset or empirical holdout was opened. The v1 representation-check failure remains with its v2 correction. New functions are reconstructed within a supplied one-mode reciprocal quadratic class; physical port calibration, rest preparation, mode observability, finite-band certificates and physical identification remain assumptions.
+
+Reports: independent_common_action_ringdown/REPORT.md and independent_ringdown_reconstruction/REPORT.md. No formal audit, physical validation, novelty certification or landing approval.

@@ -30,3 +30,9 @@ No mathematical or observational objective is complete merely because a PR exist
 Personally derive and test whether environment-dependent resonance, linear-response residues and nonlinear clamped ringdown obey a common-action relation without supplying hidden mass, coupling or initial amplitude. This is provisional; preserve reciprocal kinetic/damping cross terms, variable inertia and physical readout assumptions. Compare classical Hellmann-Feynman/optomechanical prior art before any novelty claim.
 
 Completed support: PHYSICAL_PORT_BRIDGE_v1.md and SMOOTH_HISTORY_BRIDGE_v1.md. Their standard inverse/calibration algebra alone does not justify another milestone PR.
+
+## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
+
+Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.
+
+A useful next empirical bridge must bound preparation contamination and moving-history prediction error; more exact synthetic interpolation alone will not establish the physical model.

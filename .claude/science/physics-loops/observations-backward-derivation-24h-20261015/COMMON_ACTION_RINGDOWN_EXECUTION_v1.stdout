@@ -1,0 +1,362 @@
+{
+  "scope": "conditional synthetic common-action ringdown test; not physical validation",
+  "source_sha256": "61c46a1ae94f20de40fe0d8fd484f350ff9325bfd433afd0913f48a689685750",
+  "runner_sha256": "00c1275bb2c560c4665aaa7986c07a221a320c32b30b08feb55b14ffab97e4de",
+  "versions": {
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "summary": {
+    "passed": 61,
+    "failed": 1
+  },
+  "checks": [
+    {
+      "name": "Euler_Lagrange_held_force",
+      "passed": true
+    },
+    {
+      "name": "Euler_Lagrange_held_hidden",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_stiffness_cross",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_kinetic_cross",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_damping_cross",
+      "passed": true
+    },
+    {
+      "name": "visible_variable_mass_coefficient",
+      "passed": true
+    },
+    {
+      "name": "ringdown_fundamental",
+      "passed": true
+    },
+    {
+      "name": "ringdown_decay_coefficient",
+      "passed": true
+    },
+    {
+      "name": "ringdown_double_frequency",
+      "passed": true
+    },
+    {
+      "name": "variable_inertia_frequency_gradient",
+      "passed": true
+    },
+    {
+      "name": "dynamic_stiffness_residue",
+      "passed": true
+    },
+    {
+      "name": "residue_factor",
+      "passed": true
+    },
+    {
+      "name": "visible_load_polynomial_absent",
+      "passed": false
+    },
+    {
+      "name": "cubic_output_blind_selected_coefficients",
+      "passed": true
+    },
+    {
+      "name": "quadratic_output_changes_h",
+      "passed": true
+    },
+    {
+      "name": "development_-0.8_positive_class",
+      "passed": true
+    },
+    {
+      "name": "development_-0.8_extractor_rank",
+      "passed": true
+    },
+    {
+      "name": "development_-0.8_pole_recovery",
+      "passed": true
+    },
+    {
+      "name": "development_-0.8_action_identity",
+      "passed": true
+    },
+    {
+      "name": "development_-0.8_full_force_closure",
+      "passed": true
+    },
+    {
+      "name": "development_0.0_positive_class",
+      "passed": true
+    },
+    {
+      "name": "development_0.0_extractor_rank",
+      "passed": true
+    },
+    {
+      "name": "development_0.0_pole_recovery",
+      "passed": true
+    },
+    {
+      "name": "development_0.0_action_identity",
+      "passed": true
+    },
+    {
+      "name": "development_0.0_full_force_closure",
+      "passed": true
+    },
+    {
+      "name": "development_0.7_positive_class",
+      "passed": true
+    },
+    {
+      "name": "development_0.7_extractor_rank",
+      "passed": true
+    },
+    {
+      "name": "development_0.7_pole_recovery",
+      "passed": true
+    },
+    {
+      "name": "development_0.7_action_identity",
+      "passed": true
+    },
+    {
+      "name": "development_0.7_full_force_closure",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_-0.45_positive_class",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_-0.45_extractor_rank",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_-0.45_pole_recovery",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_-0.45_action_identity",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_-0.45_full_force_closure",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_0.3_positive_class",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_0.3_extractor_rank",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_0.3_pole_recovery",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_0.3_action_identity",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_0.3_full_force_closure",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_1.0_positive_class",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_1.0_extractor_rank",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_1.0_pole_recovery",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_1.0_action_identity",
+      "passed": true
+    },
+    {
+      "name": "reserved_synthetic_1.0_full_force_closure",
+      "passed": true
+    },
+    {
+      "name": "output_only_quadratic_same_linear_response",
+      "passed": true
+    },
+    {
+      "name": "output_only_quadratic_same_fundamental",
+      "passed": true
+    },
+    {
+      "name": "output_only_quadratic_predicted_defect",
+      "passed": true
+    },
+    {
+      "name": "output_only_quadratic_rejected",
+      "passed": true
+    },
+    {
+      "name": "output_only_quadratic_still_six_modes",
+      "passed": true
+    },
+    {
+      "name": "cubic_output_requires_closure_test",
+      "passed": true
+    },
+    {
+      "name": "time_origin_cancels",
+      "passed": true
+    },
+    {
+      "name": "affine_work_orientation_2.3",
+      "passed": true
+    },
+    {
+      "name": "affine_work_orientation_-1.7",
+      "passed": true
+    },
+    {
+      "name": "no_decay_merges_h_with_offset",
+      "passed": true
+    },
+    {
+      "name": "unexcited_mode_has_no_force_anchor",
+      "passed": true
+    },
+    {
+      "name": "pole_cancellation_is_blind",
+      "passed": true
+    },
+    {
+      "name": "omit_inertia_gradient_is_false",
+      "passed": true
+    },
+    {
+      "name": "finite_quotient_error_68_cases",
+      "passed": true
+    },
+    {
+      "name": "residue_modulus_error_162_cases",
+      "passed": true
+    },
+    {
+      "name": "cross_environment_integral",
+      "passed": true
+    },
+    {
+      "name": "finite_bin_Lipschitz_certificate",
+      "passed": true
+    }
+  ],
+  "details": {
+    "synthetic_rows": [
+      {
+        "role": "development",
+        "x": -0.8,
+        "initial": [
+          0.31,
+          -0.22
+        ],
+        "true_derivative": 0.5468526124749262,
+        "extracted_Q": 0.5468526124580222,
+        "dynamic_fit_condition": 8274.282749680066,
+        "ring_fit_condition": 5.754457900059222,
+        "max_force_residual": 2.6081359294494177e-12
+      },
+      {
+        "role": "development",
+        "x": 0.0,
+        "initial": [
+          -0.42,
+          0.13
+        ],
+        "true_derivative": 0.4880000000000001,
+        "extracted_Q": 0.48799999999927224,
+        "dynamic_fit_condition": 36357.68294579992,
+        "ring_fit_condition": 5.897652403826146,
+        "max_force_residual": 4.438976963783148e-12
+      },
+      {
+        "role": "development",
+        "x": 0.7,
+        "initial": [
+          0.15,
+          0.39
+        ],
+        "true_derivative": 0.40310443308963506,
+        "extracted_Q": 0.4031044330858122,
+        "dynamic_fit_condition": 71283.1740831688,
+        "ring_fit_condition": 6.064332836718344,
+        "max_force_residual": 3.3781866193294263e-12
+      },
+      {
+        "role": "reserved_synthetic",
+        "x": -0.45,
+        "initial": [
+          -0.27,
+          -0.37
+        ],
+        "true_derivative": 0.529003929090613,
+        "extracted_Q": 0.5290039290963541,
+        "dynamic_fit_condition": 16034.890322613523,
+        "ring_fit_condition": 5.809719238481885,
+        "max_force_residual": 3.4167668694351505e-12
+      },
+      {
+        "role": "reserved_synthetic",
+        "x": 0.3,
+        "initial": [
+          0.52,
+          0.19
+        ],
+        "true_derivative": 0.45345189691042564,
+        "extracted_Q": 0.45345189690444554,
+        "dynamic_fit_condition": 55114.63583179836,
+        "ring_fit_condition": 5.96611586728153,
+        "max_force_residual": 4.253597474246362e-12
+      },
+      {
+        "role": "reserved_synthetic",
+        "x": 1.0,
+        "initial": [
+          -0.18,
+          0.41
+        ],
+        "true_derivative": 0.364552539639882,
+        "extracted_Q": 0.3645525396411754,
+        "dynamic_fit_condition": 69547.31337116216,
+        "ring_fit_condition": 6.140957601761015,
+        "max_force_residual": 2.4633628470382973e-12
+      }
+    ],
+    "alternative": {
+      "quadratic_defect": 0.15128593040788352,
+      "cubic_full_basis_residual": 0.013196058548215595
+    },
+    "error_budgets": {
+      "quotient_bound": 0.04148002360910419,
+      "quotient_max_error": 0.04123519845763857,
+      "residue_bound": 0.07535451593068047,
+      "residue_max_error": 0.06051910575121022
+    }
+  },
+  "empirical_validation": false,
+  "data_roles": {
+    "calibration": "synthetic linear-response records; pole features fitted before ringdown extraction",
+    "development": "three named environments",
+    "reserved_test": "three distinct synthetic environments and preparations; frozen extractor, no fitted potential function"
+  }
+}

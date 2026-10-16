@@ -1,0 +1,26 @@
+{
+  "sources": {
+    "RINGDOWN_ACTION_RECONSTRUCTION_v1.md": "d2d6c29409c16edf3e2e4ea337d671be1e6adfa84e6180697bd0e9c3de3572bc",
+    "check_ringdown_action_reconstruction_v1.py": "42711cd3e93c7bc984a0846e28b0604bf5882bc1e4a4dd988dcc8a7a940c60d2",
+    "RINGDOWN_ACTION_RECONSTRUCTION_CONTROLS_v1.json": "c038b08e11887da2f4714e51aced20262eeaeeebd4b07a2fcf8e51b3afea3cbd"
+  },
+  "dependencies": {
+    "COMMON_ACTION_RINGDOWN_v1.md": "61c46a1ae94f20de40fe0d8fd484f350ff9325bfd433afd0913f48a689685750",
+    "check_common_action_ringdown_v2.py": "b8123f4b9aa3da98a453d9cf43621d4830334f5051941d09716103ff9132fee8",
+    "COMMON_ACTION_RINGDOWN_CONTROLS_v2.json": "68c550d5fa4bb230e813d2b649f2a9f2108d7330693c0fa32541266eb46eda8c"
+  },
+  "all_unchanged": true,
+  "independent_artifacts": {
+    "check.py": "82700dde066915214f93314aee8ad80c24ea05d2d2a6ddffa76d14bc5864ca9f",
+    "REPORT.md": "26a840b5ab3aa6187ff1c57a619ddd5b59a4634a12b99fddd96d16ab411ccbb0",
+    "execution_receipts.json": "24d013097680796a433929e4605b08c8704a1a1c1053ee0db6fd5e1baffab284",
+    "frozen_sources.json": "70648aa3dbb7dd696a0a880f939224e06a487581ded289301f30d796af9f3bcd",
+    "independent_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparison.json": "05e36a17be7931398da2a11f666ca697421a255bacaa79a78b091fa777b414db",
+    "dependency_bindings.json": "ca5fae11ac9189da387d6934504cef6ab117bc2b910368e6a41c33ca88e0d3b3",
+    "author_stdout.json": "c038b08e11887da2f4714e51aced20262eeaeeebd4b07a2fcf8e51b3afea3cbd",
+    "independent_stdout.json": "92fc45196fe898c6cbb629fb676137a3f00cc6b134c34d1f44bdbcef721a66e1",
+    "derivation_before_code.md": "29ab2f78b575c5b9754a5896da7b4e28293b72de2e296d00bfd7068e5eedee50",
+    "author_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

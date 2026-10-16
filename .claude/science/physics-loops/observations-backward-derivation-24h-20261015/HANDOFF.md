@@ -353,3 +353,11 @@ Root personally derived physical-port calibration and smooth-history tests.28/24
 Personally derive and test whether environment-dependent resonance, linear-response residues and nonlinear clamped ringdown obey a common-action relation without supplying hidden mass, coupling or initial amplitude. This is provisional; preserve reciprocal kinetic/damping cross terms, variable inertia and physical readout assumptions. Compare classical Hellmann-Feynman/optomechanical prior art before any novelty claim.
 
 No owned research jobs or conflicting campaign processes; lock matches this chat and expires05:44:02Z. Older campaigns remain stopped; original22:36:59Zdeadline and22:21:59Zpackaging remain.
+
+## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
+
+Root personally derived and implemented the common-action ringdown identity and full conditional action-function inverse.62parent controls and132extension controls passed; the extension reruns62parent controls, so counts are not summed. Focused independent checks passed268and418assertions respectively. Root read complete proofs/code/results and verified31source/dependency/artifact bindings. No physical dataset or empirical holdout was opened. The v1 representation-check failure remains with its v2 correction. New functions are reconstructed within a supplied one-mode reciprocal quadratic class; physical port calibration, rest preparation, mode observability, finite-band certificates and physical identification remain assumptions.
+
+Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.
+
+No research jobs or conflicting owned processes. Matching lock refreshed until2026-10-16T06:29:59.173394+00:00. Four older campaigns remain stopped. Original deadline22:36:59Z and packaging22:21:59Z unchanged. PR9628/9632/9634 remain open and unchanged; no new PR created yet.

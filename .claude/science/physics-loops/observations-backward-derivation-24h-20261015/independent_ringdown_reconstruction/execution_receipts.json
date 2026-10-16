@@ -1,0 +1,22 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_ringdown_reconstruction/check.py"
+    ],
+    "timeout_seconds": 120,
+    "elapsed_seconds": 1.0742671489715576,
+    "returncode": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_ringdown_action_reconstruction_v1.py"
+    ],
+    "timeout_seconds": 120,
+    "elapsed_seconds": 4.495507001876831,
+    "returncode": 0
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-10-16T08:00:03.635135+00:00",
+  "author": "/root personally",
+  "fixed_deadline": "2026-10-16T22:36:59Z",
+  "no_new_discovery_after": "2026-10-16T22:21:59Z",
+  "paper_html_sha256": "87b7e8df1b669a851253be04cb5a20822169da6c70cb55d765722dade68062a8",
+  "paper_pdf_sha256": "240ddfc3c7bfcbe954415d05492664b3b1f7cb8b151b8db9aa186071e8534d1d",
+  "metadata_sha256": "291a53a661e6fb08469de7056a01378ed7c373ce6bdc8111a7b036c90ea57620",
+  "development_file": {
+    "id": "ca552c9b-a514-4abf-a256-c8f4d861123f",
+    "key": "Lock-in_data_Lateral_position=3,5cm_Height=48,1cm.txt",
+    "size": 21579572,
+    "checksum": "md5:934a03d9632ba78e8d06f668717ec4fa",
+    "links": {
+      "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=3,5cm_Height=48,1cm.txt/content"
+    }
+  },
+  "selection_basis": "Preselected small public trace whose position is already illustrated in the paper; no raw values consulted",
+  "reserved_files": [
+    {
+      "key": "Lock-in_data_Lateral_position=14cm_Height=48,1cm.txt",
+      "size": 43351786,
+      "checksum": "md5:95b63303276d659ab1be18da8e85080f"
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-11cm_Height=48,1cm.txt",
+      "size": 21804845,
+      "checksum": "md5:da0775902fae03b69ba8cd563b6d00f1"
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=49,9cm.txt",
+      "size": 43589189,
+      "checksum": "md5:ab955ea001673d36b713c3172ca9a1aa"
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=53,5cm.txt",
+      "size": 43143175,
+      "checksum": "md5:80c8a0b1077bc950598698b6f277cdcd"
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=46,3cm.txt",
+      "size": 43043637,
+      "checksum": "md5:d1c4a6571fdd4d0aa8d5a8e24aaf2fe6"
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=57,1cm.txt",
+      "size": 43556713,
+      "checksum": "md5:2e099e0bd3062249020b0e720b5fd5ef"
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=48,1cm.txt",
+      "size": 43328889,
+      "checksum": "md5:7b17edb409d9944fb548be0db1ad39e4"
+    }
+  ],
+  "phase1": [
+    "Fetch only selected development file and check deposited MD5 and byte count; also record SHA256.",
+    "Inspect headers, channel labels, units, timestamps, sample rates, missing values and duration before assigning a physical variable.",
+    "All selected-file arrays become development data. All other raw arrays stay unopened.",
+    "Do not infer center frequency, synchronization, lock-in filter, calibration, source phase convention or platform motion from arbitrary numerical defaults."
+  ],
+  "candidate_analysis": "Conditional compact-test-function oscillator inversion: use measured complex receiver/source channels to eliminate homogeneous initial-state terms without fitting and subtracting a chosen exponential; preserve rank, noise and filter requirements. Derive equations before choosing estimators.",
+  "data_roles": "Published force/phase plots, fitted normalization and quoted calibration are already exposed. Reserved raw files can provide procedural checks only, not an unseen theory prediction. No empirical validation claimed.",
+  "stop_rules": [
+    "If source/receiver/time units cannot be registered, document the limit before any force fit.",
+    "Do not absorb unknown platform acceleration into a scalar force claim.",
+    "No per-environment freely chosen transfer can count as a derived common action."
+  ],
+  "no_parameter_tuning_to_reserved_files": true
+}

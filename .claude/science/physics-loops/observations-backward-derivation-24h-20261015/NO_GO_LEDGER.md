@@ -30,3 +30,13 @@ of every regularity, boundary or response selector has been claimed from it.
 - Ordinary Python TLS and unavailable-parser routes were recovered with public system curl and a standard-library parser. Neither failure has a scientific implication.
 
 Useful pivot: public time-domain gravity records with a documented source/receiver calibration. Fuchs2024 public metadata is pinned; full primary measurement model and a data-access protocol are next. No private data requested or messages sent.
+
+## Fuchs development limits — 2026-10-16T08:27Z
+
+The original real-probe fits retain large weak residuals and duration-sensitive forcing coefficients. They are not a calibrated rejection of the actual apparatus or gravity. Complex probes preserve the oscillating input moment and stabilize one conditional coefficient, but substantial residuals, channel/filter ambiguity and source phase uncertainty remain. Choosing the lower-residual wiring hypothesis cannot identify wiring independently. Seven other arrays remain unopened.
+
+A free uniformly accelerated two-body support has zero particular relative response, while homogeneous motion may persist. The local missing-support-channel ambiguity is not a no-go for gravity measurements with registered platform response. Internal calibration can have a zero transfer even when the mechanical matrix is invertible; both denominators must be excluded separately.
+
+The first complex-probe synthetic run failed one fixed1e-10 residual threshold at1.022986132e-10 with a0.05s step. Frozen v1 evidence is preserved. V2 halves the step, retains the threshold and adds factor-four convergence checks;23controls pass. The helper and experimental inputs are unchanged. This is a numerical refinement, not an observed anomaly.
+
+Next useful pivot: challenge equilibrium/initial-history assumptions in the known scalar density-tomography inverse, rather than inventing an ambient field profile or opening more raw records before their needed measurement map exists.

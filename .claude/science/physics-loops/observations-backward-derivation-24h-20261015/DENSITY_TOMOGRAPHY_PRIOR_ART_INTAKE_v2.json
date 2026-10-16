@@ -1,0 +1,36 @@
+{
+  "time": "2026-10-16T08:30:01.323762+00:00",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1111.6613v4",
+      "title": "Modified Gravity Tomography",
+      "read_scope": "Metadata and abstract only"
+    },
+    {
+      "time": "2026-10-16T08:27:07.954366+00:00",
+      "url": "https://arxiv.org/pdf/1203.4812v2",
+      "returncode": 0,
+      "stderr": "",
+      "scope": "Prior-art intake for next route; not empirical evidence or an adopted equilibrium premise",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/brax2012-arxiv1203.4812v2.pdf",
+      "bytes": 929464,
+      "sha256": "269566741725d0ff1b67f07ee42cd1eda6228fbee6ef7c85e8fb97da9bfe9be6"
+    }
+  ],
+  "observational_motivation": "Calibrated local observations and environmental registration, not a chosen scalar profile, must determine any common potential. The Fuchs file varies source position without independently measuring an ambient scalar state.",
+  "prior_art_limit": "Mass/coupling tomography already reconstructs potentials within a supplied scalar class and minimum-tracking assumptions; do not repackage that inverse as a new result.",
+  "candidate_next_question": "Derive or delimit a non-equilibrium inverse from registered response mass/coupling functions and expansion/matter observations, retaining scalar acceleration and Einstein constraints. Determine which histories/normalizations are fixed or free rather than imposing minimum tracking, A=1 or an initial field. Check degeneracies and consistency before proposing any data fit.",
+  "source_specific_derivations_checked": false,
+  "empirical_validation": false,
+  "version_relation": "v2 appends personally read source scope; v1 preserved",
+  "read_scope_update": {
+    "source_sha256": "269566741725d0ff1b67f07ee42cd1eda6228fbee6ef7c85e8fb97da9bfe9be6",
+    "pdf_pages_read": [
+      2,
+      10,
+      11
+    ],
+    "sections": "Action and conformal matter metric; source equations93-111; tomography discussion; no complete review of stability analysis or examples",
+    "takeaway": "The reconstruction explicitly uses an effective-potential minimum, approximates A near1 in its integral expressions, and retains initial field/potential constants. Its field-to-density correspondence must not be silently equated with measured environmental registration."
+  }
+}

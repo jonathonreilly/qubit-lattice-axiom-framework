@@ -1,0 +1,113 @@
+{
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_complex_probes_v2.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "observer_dont_write_bytecode": true,
+  "start_utc": "2026-10-16T08:26:39.084938+00:00",
+  "end_utc": "2026-10-16T08:26:39.360959+00:00",
+  "wall_seconds": 0.27510004211217165,
+  "child_user_seconds": 0.24310699999999996,
+  "child_system_seconds": 0.027386999999999995,
+  "child_peak_rss_platform_units": 82329600,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "stdout_bytes": 51279,
+  "stdout_sha256": "b1dad3abf400bc9f8bec0c3a10235a7ddac575bfce213fc4db435f9277abb67d",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_binding_before": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v1.md": {
+      "sha256": "a9c1fa8fd781175e976be1346a5e92030c388fec8b0b410286ca377650ecef20",
+      "bytes": 5611
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_PROBE_EXTENSION_v1.md": {
+      "sha256": "5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd",
+      "bytes": 1533
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/fuchs_weak_math_v1.py": {
+      "sha256": "6f34a3e03ff9519a416f13f1c8a079b17a6b1b378fbdd47dd275506d365a66b3",
+      "bytes": 3528
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/fuchs_weak_modulated_v1.py": {
+      "sha256": "45c0485ca94650c9635f6ec01f33d1d3a8ca019954a898b5f875b49888f401ec",
+      "bytes": 1709
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_weak_v1.py": {
+      "sha256": "76cea449ac45a548a9c675ec00ed6ec17743980057b764e43d13b963ba5041c5",
+      "bytes": 4079
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_complex_probes_v2.py": {
+      "sha256": "b63bfa1420c1ebe0e7df000b39fd62a6521045b01eac3f5ef21e2abc99e2055e",
+      "bytes": 3403
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_WEAK_CONTROLS_v1.json": {
+      "sha256": "bdd95321cbfbc14450897fb8106ecf4db683a66c647f7f25f39a4204ea844668",
+      "bytes": 30864
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_CONTROLS_v2.json": {
+      "sha256": "b1dad3abf400bc9f8bec0c3a10235a7ddac575bfce213fc4db435f9277abb67d",
+      "bytes": 51279
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_fuchs_weak/replay_author_synthetic_bounded_v1.py": {
+      "sha256": "336308d55a0d5ba97978e2b713ca913118e7df785b51379ca81480348abdb14e",
+      "bytes": 4483
+    }
+  },
+  "source_binding_after": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v1.md": {
+      "sha256": "a9c1fa8fd781175e976be1346a5e92030c388fec8b0b410286ca377650ecef20",
+      "bytes": 5611
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_PROBE_EXTENSION_v1.md": {
+      "sha256": "5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd",
+      "bytes": 1533
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/fuchs_weak_math_v1.py": {
+      "sha256": "6f34a3e03ff9519a416f13f1c8a079b17a6b1b378fbdd47dd275506d365a66b3",
+      "bytes": 3528
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/fuchs_weak_modulated_v1.py": {
+      "sha256": "45c0485ca94650c9635f6ec01f33d1d3a8ca019954a898b5f875b49888f401ec",
+      "bytes": 1709
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_weak_v1.py": {
+      "sha256": "76cea449ac45a548a9c675ec00ed6ec17743980057b764e43d13b963ba5041c5",
+      "bytes": 4079
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_complex_probes_v2.py": {
+      "sha256": "b63bfa1420c1ebe0e7df000b39fd62a6521045b01eac3f5ef21e2abc99e2055e",
+      "bytes": 3403
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_WEAK_CONTROLS_v1.json": {
+      "sha256": "bdd95321cbfbc14450897fb8106ecf4db683a66c647f7f25f39a4204ea844668",
+      "bytes": 30864
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_CONTROLS_v2.json": {
+      "sha256": "b1dad3abf400bc9f8bec0c3a10235a7ddac575bfce213fc4db435f9277abb67d",
+      "bytes": 51279
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_fuchs_weak/replay_author_synthetic_bounded_v1.py": {
+      "sha256": "336308d55a0d5ba97978e2b713ca913118e7df785b51379ca81480348abdb14e",
+      "bytes": 4483
+    }
+  },
+  "sources_unchanged": true,
+  "output_parse_error": null,
+  "summary": {
+    "passed": 23,
+    "failed": 0
+  },
+  "reference_receipt": "FUCHS_COMPLEX_CONTROLS_v2.json",
+  "reference_sha256": "b1dad3abf400bc9f8bec0c3a10235a7ddac575bfce213fc4db435f9277abb67d",
+  "stdout_byte_identical_to_receipt": true,
+  "raw_trace_access": false,
+  "development_runner_executed": false,
+  "source_inspection": "Complete local runner/helper bodies inspected before execution. Only synthetic fixture generation, library imports, and explicit source-byte hash reads occur."
+}

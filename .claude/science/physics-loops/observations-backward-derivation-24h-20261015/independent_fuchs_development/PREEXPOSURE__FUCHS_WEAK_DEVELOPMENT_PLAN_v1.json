@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-16T08:07:27.824014+00:00",
+  "author": "/root personally",
+  "role": "Exposed development; conditional oscillator and channel hypotheses only",
+  "source_receipt": "FUCHS_RAW_ACQUISITION_v1.json",
+  "source_sha256": "6caefb32f687e479d832a28ffa18a2125484acc3783ee12d42e602e15f1d9c67",
+  "receiver_source_assignments": [
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "input_models": [
+    "unit_phasor",
+    "measured_voltage_phasor"
+  ],
+  "window_durations_s": [
+    600,
+    1200,
+    2400
+  ],
+  "window_function": "w=140*s^3*(1-s)^3/L on each interval; w=w'=0 at endpoints",
+  "window_placement": "Consecutive non-overlapping full nominal intervals from the first sample; endpoints set to first/last included samples, final short interval omitted and reported",
+  "models": [
+    "exact_second_order_weak",
+    "first_order_comparison"
+  ],
+  "regression": "Unweighted real least squares on column-normalized four-column system; report raw and normalized singular values, rank, coefficients and complex residuals. No confidence intervals.",
+  "within_development_temporal_check": "Fit first floor(2N/3) full windows, evaluate final windows with those unchanged coefficients; not an independent empirical test.",
+  "quadrature_checks": "Trapezoidal integration on recorded times and repeated thinning by2and4 with endpoint handling; no frequency or force-domain rescaling guessed.",
+  "controls": [
+    "Symbolic two-body solve and uniform-acceleration cancellation",
+    "Symbolic exact demodulation adjoint",
+    "Analytic manufactured envelopes with different homogeneous amplitudes; no selected experimental initial state",
+    "Monochromatic rank-loss example",
+    "Common-filter commutation and differential-filter failure example"
+  ],
+  "data_registration": "R*exp(i Theta*pi/180); no phase unwrap needed. Equal time and carrier arrays verified. Physical channel assignment, force phase, filter, calibration and support motion remain hypotheses.",
+  "no_data_selection_or_scalar_fit": true,
+  "other_seven_arrays_remain_unopened": true,
+  "derivation_sha256": "a9c1fa8fd781175e976be1346a5e92030c388fec8b0b410286ca377650ecef20"
+}

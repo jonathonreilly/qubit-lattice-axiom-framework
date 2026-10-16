@@ -1,0 +1,39 @@
+{
+  "frozen_utc": "2026-10-16T08:14:05.489869+00:00",
+  "selected_raw_read": false,
+  "author_runner_read": false,
+  "author_math_helper_read": false,
+  "precheck_sha256": "7f063651258c7ba9e10fc76d0fc938d8addb84e5498bd07a56673ff8902bb585",
+  "inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_RAW_ACCESS_PLAN_v1.json",
+      "sha256": "2a7bee423b2ff172abc7f935878ad59e6879beb022d577cd21c8ba6a4a4abdc0",
+      "bytes": 3527
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_RAW_ACQUISITION_v1.json",
+      "sha256": "5bd3f9c51ebbe0198d24bdf2d6e72147c0f309a79491140f383d0c4f5d41e52d",
+      "bytes": 923
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_SCHEMA_INTAKE_v1.json",
+      "sha256": "0689ffe4edfed8bbe4eea05b28421743c4f41c3c944213c49eebd9fd5e80d3c7",
+      "bytes": 5465
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_PRIMARY_REVIEW_v1.json",
+      "sha256": "5f5df36721c5df326ddcb4bce029986c1df4a6b72fc4cc88427cb22432b6a021",
+      "bytes": 2789
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v1.md",
+      "sha256": "a9c1fa8fd781175e976be1346a5e92030c388fec8b0b410286ca377650ecef20",
+      "bytes": 5611
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_WEAK_DEVELOPMENT_PLAN_v1.json",
+      "sha256": "851e5314205a6aee01e365328eef23e4cdfe464787299b0ea19d4efcf56db4d7",
+      "bytes": 2187
+    }
+  ]
+}

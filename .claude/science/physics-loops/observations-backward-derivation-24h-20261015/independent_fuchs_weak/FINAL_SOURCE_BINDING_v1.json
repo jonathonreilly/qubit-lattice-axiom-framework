@@ -1,0 +1,111 @@
+{
+  "checked_at_utc": "2026-10-16T08:28:00.973600+00:00",
+  "all_unchanged": true,
+  "sources": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v1.md": {
+      "sha256": "a9c1fa8fd781175e976be1346a5e92030c388fec8b0b410286ca377650ecef20",
+      "bytes": 5611,
+      "snapshot_sha256": "a9c1fa8fd781175e976be1346a5e92030c388fec8b0b410286ca377650ecef20",
+      "snapshot": "PRE_CODE_SOURCE_SNAPSHOT_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_WEAK_DEVELOPMENT_PLAN_v1.json": {
+      "sha256": "851e5314205a6aee01e365328eef23e4cdfe464787299b0ea19d4efcf56db4d7",
+      "bytes": 2187,
+      "snapshot_sha256": "851e5314205a6aee01e365328eef23e4cdfe464787299b0ea19d4efcf56db4d7",
+      "snapshot": "PRE_CODE_SOURCE_SNAPSHOT_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v2.md": {
+      "sha256": "87c88650707c10c204a106a86749a9fa42d037ee670e4d1093caa75895538d51",
+      "bytes": 5717,
+      "snapshot_sha256": "87c88650707c10c204a106a86749a9fa42d037ee670e4d1093caa75895538d51",
+      "snapshot": "SUPPLEMENT_SOURCE_SNAPSHOT_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_PROBE_EXTENSION_v1.md": {
+      "sha256": "5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd",
+      "bytes": 1533,
+      "snapshot_sha256": "5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd",
+      "snapshot": "SUPPLEMENT_SOURCE_SNAPSHOT_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_PROBE_PLAN_v1.json": {
+      "sha256": "1390d29fc696ebb41030159225d16e9fce5986780e78c4f5beb1ee44bb19feed",
+      "bytes": 975,
+      "snapshot_sha256": "1390d29fc696ebb41030159225d16e9fce5986780e78c4f5beb1ee44bb19feed",
+      "snapshot": "SUPPLEMENT_SOURCE_SNAPSHOT_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_weak_v1.py": {
+      "sha256": "76cea449ac45a548a9c675ec00ed6ec17743980057b764e43d13b963ba5041c5",
+      "bytes": 4079,
+      "snapshot_sha256": "76cea449ac45a548a9c675ec00ed6ec17743980057b764e43d13b963ba5041c5",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/fuchs_weak_math_v1.py": {
+      "sha256": "6f34a3e03ff9519a416f13f1c8a079b17a6b1b378fbdd47dd275506d365a66b3",
+      "bytes": 3528,
+      "snapshot_sha256": "6f34a3e03ff9519a416f13f1c8a079b17a6b1b378fbdd47dd275506d365a66b3",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_complex_probes_v2.py": {
+      "sha256": "b63bfa1420c1ebe0e7df000b39fd62a6521045b01eac3f5ef21e2abc99e2055e",
+      "bytes": 3403,
+      "snapshot_sha256": "b63bfa1420c1ebe0e7df000b39fd62a6521045b01eac3f5ef21e2abc99e2055e",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/fuchs_weak_modulated_v1.py": {
+      "sha256": "45c0485ca94650c9635f6ec01f33d1d3a8ca019954a898b5f875b49888f401ec",
+      "bytes": 1709,
+      "snapshot_sha256": "45c0485ca94650c9635f6ec01f33d1d3a8ca019954a898b5f875b49888f401ec",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_WEAK_CONTROLS_v1.json": {
+      "sha256": "bdd95321cbfbc14450897fb8106ecf4db683a66c647f7f25f39a4204ea844668",
+      "bytes": 30864,
+      "snapshot_sha256": "bdd95321cbfbc14450897fb8106ecf4db683a66c647f7f25f39a4204ea844668",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_CONTROLS_v2.json": {
+      "sha256": "b1dad3abf400bc9f8bec0c3a10235a7ddac575bfce213fc4db435f9277abb67d",
+      "bytes": 51279,
+      "snapshot_sha256": "b1dad3abf400bc9f8bec0c3a10235a7ddac575bfce213fc4db435f9277abb67d",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_CONTROL_REFINEMENT_v1.json": {
+      "sha256": "4d3f6bda2ef03e2e2b7247062c6872382350c7da1adcc3a67c6f2a24005a96cf",
+      "bytes": 667,
+      "snapshot_sha256": "4d3f6bda2ef03e2e2b7247062c6872382350c7da1adcc3a67c6f2a24005a96cf",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_fuchs_complex_probes_v1.py": {
+      "sha256": "9228c4789bc351b8a12e024ce10273b9364bb2ab89503451aa93bb35d4502b5b",
+      "bytes": 3139,
+      "snapshot_sha256": "9228c4789bc351b8a12e024ce10273b9364bb2ab89503451aa93bb35d4502b5b",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_CONTROLS_v1.json": {
+      "sha256": "0dc558e63204fb87abe6c3ce6c13352bc149207fe6a28b2c573278434b3d9f24",
+      "bytes": 50701,
+      "snapshot_sha256": "0dc558e63204fb87abe6c3ce6c13352bc149207fe6a28b2c573278434b3d9f24",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/FUCHS_COMPLEX_CONTROL_RUN_v1.json": {
+      "sha256": "4d0485145676d2c5df5391d941be2a60b38edfe3155394cb8da9fa771bd3377a",
+      "bytes": 341,
+      "snapshot_sha256": "4d0485145676d2c5df5391d941be2a60b38edfe3155394cb8da9fa771bd3377a",
+      "snapshot": "AUTHOR_SYNTHETIC_EXPOSURE_v1.json",
+      "unchanged_since_snapshot": true
+    }
+  }
+}

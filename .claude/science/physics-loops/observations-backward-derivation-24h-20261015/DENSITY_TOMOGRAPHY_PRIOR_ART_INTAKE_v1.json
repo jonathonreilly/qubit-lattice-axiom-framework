@@ -1,0 +1,25 @@
+{
+  "time": "2026-10-16T08:27:07.954366+00:00",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1111.6613v4",
+      "title": "Modified Gravity Tomography",
+      "read_scope": "Metadata and abstract only"
+    },
+    {
+      "time": "2026-10-16T08:27:07.954366+00:00",
+      "url": "https://arxiv.org/pdf/1203.4812v2",
+      "returncode": 0,
+      "stderr": "",
+      "scope": "Prior-art intake for next route; not empirical evidence or an adopted equilibrium premise",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/brax2012-arxiv1203.4812v2.pdf",
+      "bytes": 929464,
+      "sha256": "269566741725d0ff1b67f07ee42cd1eda6228fbee6ef7c85e8fb97da9bfe9be6"
+    }
+  ],
+  "observational_motivation": "Calibrated local observations and environmental registration, not a chosen scalar profile, must determine any common potential. The Fuchs file varies source position without independently measuring an ambient scalar state.",
+  "prior_art_limit": "Mass/coupling tomography already reconstructs potentials within a supplied scalar class and minimum-tracking assumptions; do not repackage that inverse as a new result.",
+  "candidate_next_question": "Can equilibrium/minimum tracking be replaced by a finite-history weak observation obligation, while retaining scalar coordinate/calibration and matter-frame density definitions? Seek a decisive identity or counterexample before opening more data.",
+  "source_specific_derivations_checked": false,
+  "empirical_validation": false
+}

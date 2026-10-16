@@ -1,0 +1,7 @@
+{
+  "frozen_utc": "2026-10-16T08:16:54.489788+00:00",
+  "source_sha256": "0505f57367a8df2b3bb51667bcea78bb5ce951151c5c6685257135661fd966b2",
+  "author_runner_read": false,
+  "author_math_read": false,
+  "raw_exposure_before_source_freeze": "First21headerlines plus first5numeric rows; independent parsing/mathematical design was frozen before that first raw access."
+}

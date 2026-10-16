@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-10-16T08:20:50.020245+00:00",
+  "elapsed_seconds": 0.38227962516248226,
+  "returncode": 0,
+  "timeout_seconds": 60,
+  "output_sha256": "b1dad3abf400bc9f8bec0c3a10235a7ddac575bfce213fc4db435f9277abb67d",
+  "stderr_bytes": 0,
+  "refinement_sha256": "4d3f6bda2ef03e2e2b7247062c6872382350c7da1adcc3a67c6f2a24005a96cf"
+}

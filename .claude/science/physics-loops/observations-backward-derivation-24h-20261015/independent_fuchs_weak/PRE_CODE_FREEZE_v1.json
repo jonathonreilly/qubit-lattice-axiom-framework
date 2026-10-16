@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-16T08:13:06.067678+00:00",
+  "phase": "Independent proof and fixtures frozen before implementation, author runner/results access, or raw trace access",
+  "files": {
+    "PRE_CODE_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "e9ac9fcd3d095dc6e890b20c16183467d6727f53e3ad783d050ff5c9b708b43d",
+      "bytes": 8576
+    },
+    "DERIVATION_BEFORE_CODE_v1.md": {
+      "sha256": "bcd8f31b8a26e834d64f447c927ab92a8d2dd1f9cf8670e4e0ec6da4a0af7b2d",
+      "bytes": 5941
+    }
+  }
+}

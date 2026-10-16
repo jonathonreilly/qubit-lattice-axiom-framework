@@ -60,3 +60,13 @@ Positive-Laplace shape conditions remove common positive gain and common additiv
 The geometry transport estimate avoids choosing a detailed density only when actual nonnegative mass correspondences, admissible paths, positive minimum gap and displacement bounds are available. Optimized Wasserstein moments may replace specified coupling costs only if the path hypotheses remain satisfied. The illustrative mass/length values are stipulated and are not a measured apparatus error certificate.
 
 Next-source intake has accessed only published paper summaries and public Zenodo metadata for Fuchs et al.2024. Raw lock-in arrays remain unopened. A physical calibration/measurement map and frozen exposure protocol must precede trace processing; a source-position change is not an independently registered scalar environment.
+
+## Fuchs raw-channel and weak-inverse checkpoint — 2026-10-16T08:27Z
+
+One frozen3.5cm/48.1cm lock-in record is now exposed development; seven other arrays remain unopened. Earlier metadata-only statements are historical. The selected record contains nine registered amplitude/phase/frequency streams, but archive labels do not establish physical receiver/source wiring or common filtering. No physical force or scalar estimate is reported.
+
+Initial displacement/velocity need not be assigned for a compact weak necessary test of the supplied constant-coefficient second-order observation equation. This retires a fitted homogeneous preparation only within that local test; it does not derive the actual instrument state, all hidden histories or cosmological initial state. The support/calibration reaction path, single-mode closure, force phase, voltage gain, carrier interpretation, measurement error and environment-to-field registration remain open.
+
+The real-probe finite-window forcing integral can cancel. Declared complex probes reduce that numerical problem in the exposed record, with more stable conditional forcing coefficients but substantial residuals. Choosing a probe functional is not selecting an action. Neither algebraic rank nor smaller residuals supplies physical calibration, a noise law or confidence level. All six-hour samples remain included, including the observed amplitude dip.
+
+Density-based mass/coupling tomography is known prior art (arXiv1111.6613v4 and1203.4812v2). Its assumed minimum-tracking history is a candidate obligation to challenge next, not an adopted physical selector. No new scalar potential is chosen from those papers.

@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-16T08:31:16.175570+00:00",
+  "author": "/root",
+  "complete_independent_derivations_code_reports_read": true,
+  "all_control_names_and_detailed_results_inspected": true,
+  "manifest": "independent_fuchs_weak/MANIFEST_v1.json",
+  "manifest_sha256": "412cd463c7df394e37537d385dcd1f74f7a5fa9532f9e6ff9d9156a3d0c4f7d0",
+  "report_sha256": "2e30aae4ad0ea263a8370b8ef76a9181725277fca5e3cc4d1f347153d2d3f75d",
+  "artifact_bindings_verified": 31,
+  "author_source_bindings_verified": 15,
+  "independent_first_pass_controls": 60,
+  "independent_complex_controls": 85,
+  "root_weak_controls": 25,
+  "root_complex_current_controls": 23,
+  "author_replays_byte_identical": true,
+  "counts_overlap_not_pooled": true,
+  "historical_failed_control_preserved": true,
+  "raw_data_outside_this_check": true,
+  "development_extension_runner_not_independently_reviewed": true,
+  "ordinary_recovery": "Initial verification command used unresolved Path parents and exited before writing; rerun with absolute resolved pack path. No evidence changed.",
+  "formal_audit": false,
+  "empirical_validation": false
+}

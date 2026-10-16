@@ -37,3 +37,9 @@ Common-action reconstruction now removes chosen hidden inertia/coupling/potentia
 Trace remains upstream_support with conditional reachability to the scalar inverse program. The immediate observational surface is processed torsion torque, and the missing links are physical transfer/calibration, actual source geometry and independently registered environmental scalar coefficients. Reconstructed mathematical kernels and gain-independent inequalities support those links without establishing them for the apparatus. No claim promotion follows.
 
 Next trace action: read the primary dynamical-gravity measurement and calibration equations, distinguish instrument readings from gravitationally calibrated products, and freeze raw-data roles before opening traces. Preserve the conditional action and scale assumptions rather than replacing missing inputs with chosen values.
+
+## Primitive dynamical-gravity channels — 2026-10-16T08:27Z
+
+Trace remains upstream_support with conditional reachability. Root personally reconstructed the relative-motion/calibration map and preparation-independent weak equation, then ran frozen diagnostics on one deposited lock-in file. The complete parser and one regression were independently rebuilt; known code replay is distinguished from independent implementation. Complex probes are post-exposure development, not held-out evidence. No action, potential, scalar normalization or physical environmental correspondence is promoted.
+
+Next trace action: examine whether the equilibrium premise in known density-based scalar reconstruction can be replaced by finite-history observational identities or bounded departures. Preserve independently measured coordinate, force, density/frame and transfer obligations. A laboratory source-position change does not itself supply a scalar environment label.

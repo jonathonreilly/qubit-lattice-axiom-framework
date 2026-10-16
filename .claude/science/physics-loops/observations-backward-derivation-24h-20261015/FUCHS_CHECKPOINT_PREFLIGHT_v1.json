@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-16T08:32:51.636934+00:00",
+  "scope": "Changed campaign files only; no main or primary checkout change",
+  "files_before_receipt": 113,
+  "parse_counts": {
+    "python": 18,
+    "json": 60,
+    "markdown": 18,
+    "other": 17
+  },
+  "parse_errors": [],
+  "vocabulary_returncode": 0,
+  "vocabulary_stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+  "vocabulary_stderr": "",
+  "science_evidence": [
+    "FUCHS_WEAK_ROOT_VERIFICATION_v1.json",
+    "FUCHS_DEVELOPMENT_ROOT_VERIFICATION_v1.json"
+  ],
+  "current_primary_checks": "25weak/23complex current; historical complex19pass1fail preserved",
+  "development_cases": "24original+12complex, all exposed; no force/scalar estimate",
+  "new_pr": false,
+  "formal_audit": false,
+  "empirical_validation": false,
+  "shared_landing": "Not a canonical milestone; shared integrated landing not run for this support-only commit",
+  "staged_checked_at": "2026-10-16T08:33:20.855841+00:00",
+  "staged_whitespace_exit": 0,
+  "staged_paths": 114,
+  "all_staged_paths_in_campaign_pack": true,
+  "ordinary_whitespace_check": true
+}

@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-16T08:20:24.326792+00:00",
+  "files": {
+    "FUCHS_COMPLEX_PROBE_PLAN_v1.json": "1390d29fc696ebb41030159225d16e9fce5986780e78c4f5beb1ee44bb19feed",
+    "FUCHS_COMPLEX_PROBE_EXTENSION_v1.md": "5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd",
+    "fuchs_weak_math_v1.py": "6f34a3e03ff9519a416f13f1c8a079b17a6b1b378fbdd47dd275506d365a66b3",
+    "fuchs_weak_modulated_v1.py": "45c0485ca94650c9635f6ec01f33d1d3a8ca019954a898b5f875b49888f401ec",
+    "check_fuchs_complex_probes_v1.py": "9228c4789bc351b8a12e024ce10273b9364bb2ab89503451aa93bb35d4502b5b",
+    "analyze_fuchs_complex_probes_v1.py": "d7d7a2d0db5de2e3ca0643d3311408cbffb23c3b1347bf280f96302c5e163c34"
+  },
+  "stage": "Before first extension computation; previous development outputs exposed",
+  "raw_files_opened": 1
+}

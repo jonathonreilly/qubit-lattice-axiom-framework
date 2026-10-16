@@ -1,0 +1,34 @@
+{
+  "time": "2026-10-16T08:14:18.582557+00:00",
+  "exposure": "Post-v1-results development extension, not a new holdout",
+  "previous_results_sha256": "84c6481edd29c155eb07ab854bd4ff879a69c664b5a180b1e6435e9e6fda1351",
+  "extension_sha256": "5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd",
+  "directions": [
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "input_models": [
+    "unit_phasor",
+    "measured_voltage_phasor"
+  ],
+  "window_durations_s": [
+    600,
+    1200,
+    2400
+  ],
+  "kappa_rule": "OLS slope of np.unwrap(angle(source_phasor)) on all recorded times; report fit residual; not a physical force-phase calibration",
+  "probes": "kappa=0 and kappa=source slope, consecutive in each time window",
+  "chronological_check": "Fit first floor(2N/3) time windows including both probes, evaluate remaining windows",
+  "quadrature_thinning": [
+    2,
+    4
+  ],
+  "other_arrays_unopened": true,
+  "empirical_validation": false
+}

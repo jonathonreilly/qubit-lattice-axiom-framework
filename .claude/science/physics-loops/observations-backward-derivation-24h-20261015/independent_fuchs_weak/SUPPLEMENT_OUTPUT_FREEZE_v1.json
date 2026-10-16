@@ -1,0 +1,48 @@
+{
+  "time_utc": "2026-10-16T08:24:52.462502+00:00",
+  "phase": "Independent supplement outputs frozen before reading any author code or output artifacts",
+  "summary": {
+    "passed": 85,
+    "failed": 0
+  },
+  "exposure_note": "Parent progress messages disclosed author v1/v2 counts and quadrature failure residual; independent proof/fixture was frozen before that supplement progress message. No author implementation or output artifact was read. First-pass controls were also independently frozen before artifact access.",
+  "files": {
+    "SUPPLEMENT_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "f29d2c13f4b3b08e0a71dd28651db23da4087e94e6bd796204c8c572bc186b0b",
+      "bytes": 9192
+    },
+    "V1_TO_V2_DELTA_v1.json": {
+      "sha256": "eded7e8a9c9a3ff8106c06cc5c49aba8898d8f7ee15c72dc43b4ad861a9c6866",
+      "bytes": 1555
+    },
+    "COMPLEX_PROBE_DERIVATION_BEFORE_CODE_v1.md": {
+      "sha256": "008460c7a404c0bd290ab34c1f4e056441f96d28043ab6c2a02cac045446f77e",
+      "bytes": 4971
+    },
+    "SUPPLEMENT_PRE_CODE_FREEZE_v1.json": {
+      "sha256": "39cd33ed4ad06b795c571b4b0605e659fef79ee495021cf5793b0cfa60101e0b",
+      "bytes": 827
+    },
+    "independent_complex_probes_v1.py": {
+      "sha256": "cb896d0b86b8851df0869fb10af35cb349c1e15203fa37bc41a68b86377c93a5",
+      "bytes": 7813
+    },
+    "run_supplement_bounded_v1.py": {
+      "sha256": "7c173670b56f33a7ee03746126946a29286edea3fe6477e5e8fb4c0e41f2552e",
+      "bytes": 3236
+    },
+    "supplement_attempt01.run.json": {
+      "sha256": "ea5ced9f30bfbcc117c0c8d02f50ac253c7ce75638f8c65c33b98936cd68f76f",
+      "bytes": 3783
+    },
+    "supplement_attempt01.stdout.json": {
+      "sha256": "6e4de598bd3da543d1ee82e8ed2a31ee7242097fe146cd769cae897f743ab08b",
+      "bytes": 24592
+    },
+    "supplement_attempt01.stderr.txt": {
+      "sha256": "789b61c9009aa7be0ad8fb879e5eac946303f9d58ad597cadf1943eb70dfaa6d",
+      "bytes": 4758
+    }
+  },
+  "raw_trace_access": false
+}

@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-10-16T08:10:17.544429+00:00",
+  "elapsed_s": 0.4606665843166411,
+  "returncode": 0,
+  "timeout_s": 60,
+  "source_hashes": {
+    "check_fuchs_weak_v1.py": "76cea449ac45a548a9c675ec00ed6ec17743980057b764e43d13b963ba5041c5",
+    "fuchs_weak_math_v1.py": "6f34a3e03ff9519a416f13f1c8a079b17a6b1b378fbdd47dd275506d365a66b3",
+    "FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v1.md": "a9c1fa8fd781175e976be1346a5e92030c388fec8b0b410286ca377650ecef20"
+  },
+  "sources_unchanged": true,
+  "stdout_sha256": "bdd95321cbfbc14450897fb8106ecf4db683a66c647f7f25f39a4204ea844668",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

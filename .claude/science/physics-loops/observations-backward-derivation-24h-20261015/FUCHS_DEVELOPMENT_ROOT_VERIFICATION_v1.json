@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-16T08:24:35.044383+00:00",
+  "author": "/root",
+  "proof_report_and_code_read_completely": true,
+  "independent_control_and_correspondence_results_inspected": true,
+  "identity_manifest": "independent_fuchs_development/FUCHS_DEVELOPMENT_REVIEW_IDENTITY_v1.json",
+  "identity_manifest_sha256": "f6caf80c1ddb0004d518d69c8622f0fd888f40db43d23993c227dd504e3a0bc5",
+  "bindings_verified": 44,
+  "independent_controls": 44,
+  "post_exposure_correspondence_controls": 21,
+  "root_math_controls": 25,
+  "root_development_cases": 24,
+  "independent_real_regression_cases": 1,
+  "all_selected_rows_independently_parsed": 678861,
+  "unchanged_author_outputs_byte_identical": true,
+  "counts_overlap_not_pooled": true,
+  "shared_numpy_lstsq_library": true,
+  "other_raw_arrays_opened": false,
+  "complex_extension_outside_this_check": true,
+  "empirical_validation": false,
+  "formal_audit": false
+}

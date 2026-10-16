@@ -1,0 +1,39 @@
+{
+  "time": "2026-10-16T08:04:52.279432+00:00",
+  "author": "/root personally",
+  "primary_url": "https://arxiv.org/html/2303.03545v2",
+  "html_sha256": "87b7e8df1b669a851253be04cb5a20822169da6c70cb55d765722dade68062a8",
+  "pdf_sha256": "240ddfc3c7bfcbe954415d05492664b3b1f7cb8b151b8db9aa186071e8534d1d",
+  "read_scope": "Full main results/discussion and Supplements B,C,E; figure S2,S5,S6 PDF pages15,19,25 rendered and inspected. No independent audit of the publication.",
+  "measured_or_reported_inputs": {
+    "particle_mass_kg": 4.3e-07,
+    "nominal_resonance_Hz": 26.7,
+    "reported_tau_lower_bound_s": 109000.0,
+    "voltage_position_gain_V_per_m": 160000.0,
+    "reported_gain_relative_error": 0.07,
+    "reference_support_lowest_mode_Hz": 0.9,
+    "published_fitted_force_normalization": 0.35,
+    "normalization_role": "Exposed fitted diagnostic; not a scalar charge or prediction"
+  },
+  "measurement_chain": [
+    "SQUID voltage records relative particle/pickup-coil motion; magnetic calibration uses inductance, reciprocity, estimated mass and resonance.",
+    "Photodiode records mass passages; three equal source masses link passage phase to rotor angle.",
+    "Published processing subtracts fitted ringdown, shifts phase, selects integer drive cycles and applies oscillator transfer/calibration.",
+    "Platform gravitational response is discussed as a possible contribution to the fitted force-normalization mismatch."
+  ],
+  "source_limits": [
+    "Mode damping and frequency can depend on amplitudes of other modes; quoted high-amplitude ringdown is a lower bound, not exact raw-record damping.",
+    "Printed Supplement E bandwidth df=Q/f has inverse-frequency dimensions; retain source wording and independently derive any bandwidth convention used.",
+    "Printed exponential exponent uses plus t/tau_fit; do not silently assume the fitted parameter sign.",
+    "Available raw-file header names demodulators, but does not identify receiver/source wiring, lock-in filter settings, or platform acceleration.",
+    "A low-frequency support resonance and a small test/platform mass ratio alone do not bound all transfer corrections near a high-Q sensor resonance."
+  ],
+  "raw_roles": "Only the preselected3.5cm/48.1cm development trace opened. Other seven arrays unopened; primary aggregate plots already exposed.",
+  "pdf_parser_warning": "pypdf reported malformed numeric drawing token0.00-10; recovered relevant text and rendering with MuPDF, primary bytes unchanged.",
+  "rendered_pages": {
+    "15": "3ec6a49a39e3ddb42e12791d120ccd50f680992d4167299f7cdab08f4cf362e1",
+    "19": "a8973f743925bc1901c1f1215df9cdae2b5c9aaefd783050177cb39e8c202e8b",
+    "25": "0ebb3c81cf2440f3d392da3ed5b51a8086a1f693db3c98f7bed770d4ffff4bc1"
+  },
+  "empirical_validation": false
+}

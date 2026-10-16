@@ -1,0 +1,15 @@
+{
+  "source_sha256": "6caefb32f687e479d832a28ffa18a2125484acc3783ee12d42e602e15f1d9c67",
+  "all_samples_plotted": true,
+  "selected_physical_wiring": false,
+  "force_estimate": false,
+  "empirical_validation": false,
+  "note": "Within-record descriptive comparison after both analyses; no confidence intervals or unseen tests",
+  "files": {
+    "plot_fuchs_development_v1.py": "48f9ea273f366fa2867d257b51b8ab47cf465fccf5f96dfd25f4b3306d16d362",
+    "FUCHS_DEVELOPMENT_RESULTS_v1.json": "84c6481edd29c155eb07ab854bd4ff879a69c664b5a180b1e6435e9e6fda1351",
+    "FUCHS_COMPLEX_DEVELOPMENT_v1.json": "0e747b940174657fdacae344912e075c3882fdf834608e53aa3a25e871cd6e9a",
+    "FUCHS_DEVELOPMENT_DIAGNOSTIC_v1.png": "2809244c06a1fdf8f5baae515a9444a400a99f06412a9c0559886539527d3d1a",
+    "FUCHS_DEVELOPMENT_DIAGNOSTIC_v1.pdf": "20d8ca6fe0b2296c432c954365de7f6634e72dbae0243dbef54ac68bfb0c882b"
+  }
+}

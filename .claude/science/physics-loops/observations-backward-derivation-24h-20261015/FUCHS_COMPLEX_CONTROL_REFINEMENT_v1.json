@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-16T08:20:50.019994+00:00",
+  "kind": "Numerical quadrature control refinement, not a tolerance relaxation",
+  "v1_result": "19pass1fail: max exact weak residual1.0229861322125439e-10 exceeds fixed1e-10 threshold at dt=.05s",
+  "change": "v2 halves synthetic time step to .025s and adds factor-of-four convergence checks against .05s; mathematical algorithm and thresholds unchanged",
+  "preserved": [
+    "check_fuchs_complex_probes_v1.py",
+    "FUCHS_COMPLEX_CONTROLS_v1.json",
+    "FUCHS_COMPLEX_CONTROL_RUN_v1.json"
+  ],
+  "code_v2_sha256": "b63bfa1420c1ebe0e7df000b39fd62a6521045b01eac3f5ef21e2abc99e2055e",
+  "empirical_validation": false
+}

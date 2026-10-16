@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-16T05:47:14.751169+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "open_pr_count": 66,
+  "inventory_sha256": "d80edd4ca0ce3015d34a9856027a9008e7ae561108e6f527f09488bdcb0d416c",
+  "new_pr_9636": {
+    "head": "cff01f124387b7558213de04b741e85dcd59958f",
+    "sources": [
+      {
+        "path": "docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "e83d64a4ec32dfc8405ba850947f69a46985c745e2461574ca704d31ed91246b",
+        "read_scope": "first65lines, declared statement/premises; not full proof review"
+      },
+      {
+        "path": "docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "89c7d05dc3aada5476226343e019f853bd7dc30dfa68d0f052a2a3b9762a1b86",
+        "read_scope": "first65lines, declared statement/premises; not full proof review"
+      },
+      {
+        "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "733a32be7b4961558f478e2828be7d075771dfae3bfba65a71879264da622039",
+        "read_scope": "first65lines, declared statement/premises; not full proof review"
+      }
+    ],
+    "disposition": "Background only; no premise or audit status adopted. These unitary-tick/formation hypotheses are distinct from calibrated force-response inversion."
+  },
+  "other_author_work_modified": false
+}

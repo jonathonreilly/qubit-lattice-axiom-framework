@@ -1,0 +1,24 @@
+--- check_ringdown_action_reconstruction_v1.py
++++ reconstruction_controls
+@@ -129,14 +129,18 @@
+ gchanged = f['g'] * np.exp(0.4j)
+ Schanged = -2 * (2 * la + f['Gamma']) * f['residue'] * gchanged / f['f'] ** 2
+ rchanged = (Schanged - f['Q']) / L
+-ck('phase_alternative_keeps_first_Q', f['Q'] == fitrows[j]['Q'])
++unchanged_Q = abs((2 * la + f['Gamma']) * f['residue']) * f['h'] / abs(f['f']) ** 2
++ck('phase_alternative_keeps_first_Q', abs(unchanged_Q - f['Q']) < 1e-14)
+ ck('phase_alternative_rejected_by_real_r', abs(rchanged.imag) > 0.01, float(rchanged.imag))
+ ck('static_offset_alternative_rejected', abs(static_res[j] + 0.2) > 0.19)
+ ck('negative_mass_alternative_rejected', reconstructed[j]['M'] - 5 < 0)
+ ck('negative_damping_alternative_rejected', (reconstructed[j]['d'] - 5) * reconstructed[j]['gamma'] - reconstructed[j]['nu'] ** 2 < 0)
+ Jp, Jpp, R0, Z, rho, ff, hh, gg = s.symbols('Jp Jpp R0 Z rho f h g', nonzero=True)
+-Znew = Z / Jp ** 2 - R0 * Jpp / Jp ** 3
+-ck('nonaffine_residue_scaling', s.diff(Znew, Z) == 1 / Jp ** 2)
++xx = s.symbols('coordinate', real=True)
++jj = s.Function('j')(xx)
++force_curve = s.Function('force')(xx)
++Znew = (s.diff(force_curve / s.diff(jj, xx), xx) / s.diff(jj, xx)).subs({s.diff(force_curve, xx): Z, force_curve: R0, s.diff(jj, xx, 2): Jpp, s.diff(jj, xx): Jp})
++ck('nonaffine_residue_scaling', s.simplify(Znew - (Z / Jp ** 2 - R0 * Jpp / Jp ** 3)) == 0)
+ ck('complex_second_harmonic_covariance', s.simplify(rho / Jp ** 2 * (gg / Jp) / (ff / Jp) ** 2 - rho * gg / ff ** 2 / Jp) == 0)
+ rng = np.random.default_rng(991)
+ error_max = 0.0

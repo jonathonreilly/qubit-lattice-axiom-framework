@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent/sharp_midpoint_check.py"
+  ],
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "returncode": 0,
+  "elapsed_seconds": 0.4088010787963867
+}

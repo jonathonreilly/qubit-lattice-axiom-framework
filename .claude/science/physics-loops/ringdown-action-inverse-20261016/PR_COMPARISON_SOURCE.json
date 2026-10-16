@@ -1,0 +1,14 @@
+{
+  "sampled_inverse": {
+    "path": "/Users/jonBridger/.codex/worktrees/sampled-coupling-inverse-20261016/New Axioms Lets Go/docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md",
+    "sha256": "d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b",
+    "pr": 9634,
+    "head": "09ee78488eda7950be5e18624678d709e3758fb2"
+  },
+  "network_intervention": {
+    "pr": 9632,
+    "path": "/Users/jonBridger/.codex/worktrees/neighborhood-evolution-20261016/New Axioms Lets Go/docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md",
+    "sha256": "405eb15fba1d42d8f24f39500ba14375dda3d926b3f0c50919b84c1e954c4699",
+    "scope_read": "Target, premises and first150lines including the common-intervention contract; earlier full exploration sources checked in this campaign"
+  }
+}

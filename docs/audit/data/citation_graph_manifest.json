@@ -1,6 +1,6 @@
 {
  "edge_count": 16048,
- "node_count": 7111,
+ "node_count": 7112,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18981,6 +18981,10 @@
   "ring_monodromy_does_not_force_car_note_2026-06-04": {
    "deps_hash": "249b8e8adb93",
    "out_degree": 6
+  },
+  "ringdown_action_reconstruction_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "rooted_marked_tree_extension_seed_induction_and_relaxed_lifted_tree_certificates_bounded_theorem_note_2026-09-17": {
    "deps_hash": "4b1f4f4b0e8b",

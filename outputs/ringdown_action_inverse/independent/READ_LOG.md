@@ -1,0 +1,3 @@
+# Complete source reading
+
+Read complete canonical note, primary, helper, controls JSON and cache. The first combined controls/cache display truncated checks80-88; the relevant JSON range was reread separately. Read canonical frozen manifest and extraction map. Read complete normalized body diffs against the two hash-verified old scripts. Prior independent derivations were reused only after checking equation correspondence to canonical equations1-13; their current reruns are bound locally. Read primary output comparison and all independently generated summaries. No external literature was opened for this narrow source check.

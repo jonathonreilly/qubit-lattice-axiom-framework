@@ -1,0 +1,22 @@
+{
+  "unit": "ringdown-action-inverse-20261016",
+  "parent_campaign": "observations-backward-derivation-24h-20261015",
+  "status": "canonical focused check complete; pre-PR delivery preflight",
+  "author": "/root personally",
+  "branch": "codex/ringdown-action-inverse-20261016",
+  "base": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "deadline_unchanged": "2026-10-16T22:36:59Z",
+  "primary_controls": 195,
+  "empirical_validation": false,
+  "frozen": "CANONICAL_FROZEN_v2.json",
+  "next_action": "Publish and attach the checked conditional milestone, then continue the parent preparation/measurement bridge.",
+  "independent_assertions_by_set": [
+    268,
+    418,
+    22,
+    6
+  ],
+  "counts_overlap_not_summed": true,
+  "source_bindings_verified": 57,
+  "updated_at": "2026-10-16T05:52:26.552838+00:00"
+}

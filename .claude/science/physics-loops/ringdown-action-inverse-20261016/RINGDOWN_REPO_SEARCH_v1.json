@@ -1,0 +1,39 @@
+{
+  "time": "2026-10-16T05:25:23.855360+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "prior_failure": "Unthreaded broad docs search terminated137; incomplete search, not absence evidence. Retried narrower primary-note scope with one thread.",
+  "searches": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "--threads=1",
+        "-n",
+        "-i",
+        "-E",
+        "(ringdown|second.harmonic.*inertia|residue.*inertia|inertia.*residue)",
+        "origin/main",
+        "--",
+        ":(glob)docs/*.md"
+      ],
+      "code": 0,
+      "stdout": "origin/main:docs/CLAUDE_BRANCH_RETAINABILITY_NOTE.md:38:- **QNM / BMV / entropy / ringdown / area-law / information-paradox**\norigin/main:docs/CLAUDE_BRANCH_RETAINABILITY_NOTE.md:44:    `5ba2c01 feat(area-law)`, `319ce8b feat(ringdown)`, and\norigin/main:docs/CLAUDE_BRANCH_RETAINABILITY_NOTE.md:110:- **QNM / BMV / entropy / ringdown / area-law cluster**\norigin/main:docs/CLAUDE_BRANCH_RETAINABILITY_NOTE.md:113:  - entropy / area-law / ringdown: rich strong-field phenomenology\norigin/main:docs/CLAUDE_BRANCH_RETAINABILITY_NOTE.md:116:    later entropy / area-law / ringdown / information-paradox claims do not\norigin/main:docs/CLAUDE_BRANCH_RETAINABILITY_NOTE.md:202:4. QNM / BMV / entropy / ringdown as branch-side exploratory strong-field\norigin/main:docs/GW_ECHO_NULL_RESULT_NOTE.md:30:> frozen stars are observationally silent in ringdown; gravitational-wave echo\norigin/main:docs/PHYSICS_FIRST_ATTACK_PLAN.md:310:- QNM / BMV / entropy / ringdown / information-paradox stays branch-side until\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-tree",
+        "-r",
+        "--name-only",
+        "origin/main",
+        "--",
+        "docs/"
+      ],
+      "code": 0,
+      "stdout": "docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md\ndocs/audit/data/ledger/na/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12.json",
+      "stderr": ""
+    }
+  ],
+  "novelty": "not certified; exact hits require scope comparison before any PR."
+}

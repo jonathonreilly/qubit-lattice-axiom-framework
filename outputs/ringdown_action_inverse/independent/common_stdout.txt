@@ -1,0 +1,1376 @@
+{
+  "checks": [
+    {
+      "name": "contour_residue_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_0",
+      "passed": true,
+      "detail": {
+        "Q": -0.6999999999999742,
+        "Oprime": -0.7
+      }
+    },
+    {
+      "name": "independent_pole_fit_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(0, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(0, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_1",
+      "passed": true,
+      "detail": {
+        "Q": 4.19967016795785e-14,
+        "Oprime": 0
+      }
+    },
+    {
+      "name": "independent_pole_fit_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(1, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(1, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_2",
+      "passed": true,
+      "detail": {
+        "Q": 0.6000000000000297,
+        "Oprime": 0.6
+      }
+    },
+    {
+      "name": "independent_pole_fit_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(2, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(2, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_3",
+      "passed": true,
+      "detail": {
+        "Q": -0.6999999999999719,
+        "Oprime": -0.7
+      }
+    },
+    {
+      "name": "independent_pole_fit_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(3, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(3, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_4",
+      "passed": true,
+      "detail": {
+        "Q": 4.099419131212355e-14,
+        "Oprime": 0
+      }
+    },
+    {
+      "name": "independent_pole_fit_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(4, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(4, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_5",
+      "passed": true,
+      "detail": {
+        "Q": 0.6000000000000406,
+        "Oprime": 0.6
+      }
+    },
+    {
+      "name": "independent_pole_fit_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(5, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(5, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_6",
+      "passed": true,
+      "detail": {
+        "Q": -0.6999999999999829,
+        "Oprime": -0.7
+      }
+    },
+    {
+      "name": "independent_pole_fit_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(6, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(6, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_7",
+      "passed": true,
+      "detail": {
+        "Q": 3.255220874460502e-14,
+        "Oprime": 0
+      }
+    },
+    {
+      "name": "independent_pole_fit_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(7, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(7, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "contour_residue_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_ringdown_8",
+      "passed": true,
+      "detail": {
+        "Q": 0.6000000000000493,
+        "Oprime": 0.6
+      }
+    },
+    {
+      "name": "independent_pole_fit_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_defect_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_closure_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(8, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_covariance_(8, -2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "undamped_actual_rank_loss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled_pole_is_polynomial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_preparation_no_anchor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mixed_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_70",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_80",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_81",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_82",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_83",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_84",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_85",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_86",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_87",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_88",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_89",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_90",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_91",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_92",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_93",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_94",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_95",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_98",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_99",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_102",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_103",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_104",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_106",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_108",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_109",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_110",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_111",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_112",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_113",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_114",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_115",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_116",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_117",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_118",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_119",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_120",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_121",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_122",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_123",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_124",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_125",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_126",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_127",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_128",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_129",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_130",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_131",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_132",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_133",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_134",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_135",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_136",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_137",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_138",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_139",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_140",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_141",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_142",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_143",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_145",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_146",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_147",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_148",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_149",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_150",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_151",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_152",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_153",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_154",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_155",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_156",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_157",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_158",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_159",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_160",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_161",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_162",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_163",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_164",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_165",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_166",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_167",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_168",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_169",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_170",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_171",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_172",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_173",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_174",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_175",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_176",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_177",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_178",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_179",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_180",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_181",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_182",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_183",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_184",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_185",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_186",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_187",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_188",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_189",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_190",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_191",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_192",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_193",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_194",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_195",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_196",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_197",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_198",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated_error_199",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "midpoint_sharp_lipschitz",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "summary": {
+    "passed": 268,
+    "failed": 0
+  },
+  "empirical_validation": false
+}

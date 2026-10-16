@@ -1,0 +1,65 @@
+{
+  "time": "2026-10-16T05:15:48.745827+00:00",
+  "route": "common-action ringdown compatibility",
+  "status": "personally derived;62primary controls passed;focused independent check active",
+  "class": "reciprocal quadratic hidden coordinate with x-dependent mass/stiffness and symmetric kinetic/Rayleigh cross terms",
+  "source_dependencies": [
+    {
+      "path": "COMMON_ACTION_RINGDOWN_v1.md",
+      "sha256": "61c46a1ae94f20de40fe0d8fd484f350ff9325bfd433afd0913f48a689685750",
+      "role": "author derivation"
+    },
+    {
+      "path": "check_common_action_ringdown_v2.py",
+      "sha256": "b8123f4b9aa3da98a453d9cf43621d4830334f5051941d09716103ff9132fee8",
+      "role": "current primary runner"
+    }
+  ],
+  "literature": [
+    {
+      "title": "Cavity Optomechanics",
+      "authors": "Aspelmeyer, Kippenberg, Marquardt",
+      "version": "arXiv1303.0733v1",
+      "url": "https://arxiv.org/pdf/1303.0733v1",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/optomechanics_1303.0733v1.pdf",
+      "bytes": 7922078,
+      "sha256": "19bdd38cb3ba4eba7f29f54da1f8cf3f160073c4b0305364b883d55e8bda8d30",
+      "inspected": "Sec.III.A-B textual equations and discussion, especially frequency pull and force Eqs18-21; not all65pages, no rendered image inspection",
+      "use": "prior art for frequency-force connection, not a validation of candidate or proof of novelty"
+    },
+    {
+      "title": "Orbit-averaged quantities, the classical Hellmann-Feynman theorem, and the magnetic flux enclosed by gyro-motion",
+      "url": "https://authors.library.caltech.edu/records/jgh6r-1as74",
+      "doi": "10.1063/1.4905635",
+      "inspected": "abstract and metadata only",
+      "use": "prior-art pointer; no proof imported"
+    }
+  ],
+  "repository_refresh": {
+    "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+    "open_pr_count": 65,
+    "inventory": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0515.json",
+    "sha256": "71097aa67fd9ab06e2909bfad8b1138c4647d9a3a371c369d35c7ed38fc5249f",
+    "new_background": {
+      "number": 9635,
+      "head": "142cbd74aa146848b246795f8bf7007f3e38976d",
+      "source_sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36",
+      "inspected": "body and first100note lines; supplied finite Hamiltonian, installation/preparation/calibration retained. Unrelated to force-port identity; no proof adopted."
+    }
+  },
+  "operational_failures": [
+    {
+      "failure": "git fetch origin main execution: no remote execution ref",
+      "recovery": "inspected local remote ref names, then fetched main and ai/execution separately; both unchanged",
+      "scientific_implication": "none"
+    },
+    {
+      "failure": "v1 raw free_symbols check failed while exact simplified residue identities passed",
+      "recovery": "v2 simplifies residue before syntactic free_symbols inspection; no data or scientific change",
+      "record": "COMMON_ACTION_RINGDOWN_FAILURE_v1.md"
+    }
+  ],
+  "empirical_status": "No physical observation fit or validation. All trajectories/frequency responses synthetic. All candidate action functions used for generation are explicitly supplied, while the port extractor does not receive their values.",
+  "novelty": "Not certified; classical frequency-force prior art acknowledged."
+}

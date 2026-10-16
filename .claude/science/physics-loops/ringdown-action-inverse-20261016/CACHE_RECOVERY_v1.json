@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-16T05:38:04.400930+00:00",
+  "first_attempt": "runner_cache.RunnerIdentityChangedError: scripts directory stat token changed during execution; runner and declared-input content hashes were unchanged",
+  "cause": "Nested runner execution created scripts/__pycache__; parent -B did not propagate to the subprocess",
+  "follow_on": "Freeze failed with FileNotFoundError for missing cache; no stale cache used",
+  "recovery": "Set PYTHONDONTWRITEBYTECODE=1 for the cache execution; do not weaken the identity guard",
+  "scientific_conclusion": "none from operational failure"
+}

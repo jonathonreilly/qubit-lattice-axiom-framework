@@ -1,0 +1,8 @@
+{
+  "old_hashes": {
+    "check_common_action_ringdown_v2.py": "b8123f4b9aa3da98a453d9cf43621d4830334f5051941d09716103ff9132fee8",
+    "check_ringdown_action_reconstruction_v1.py": "42711cd3e93c7bc984a0846e28b0604bf5882bc1e4a4dd988dcc8a7a940c60d2"
+  },
+  "match_extraction_map": true,
+  "only_four_declared_strengthenings_in_normalized_diffs": true
+}

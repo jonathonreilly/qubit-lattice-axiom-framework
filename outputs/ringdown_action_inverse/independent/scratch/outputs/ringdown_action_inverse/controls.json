@@ -1,0 +1,1271 @@
+{
+  "scope": "Exact-class algebra and synthetic controls, not empirical validation",
+  "summary": {
+    "passed": 194,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "Euler_Lagrange_held_force",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "Euler_Lagrange_held_hidden",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reciprocal_stiffness_cross",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reciprocal_kinetic_cross",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reciprocal_damping_cross",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "visible_variable_mass_coefficient",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "ringdown_fundamental",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "ringdown_decay_coefficient",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "ringdown_double_frequency",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "variable_inertia_frequency_gradient",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "dynamic_stiffness_residue",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "residue_factor",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "visible_load_polynomial_absent",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "cubic_output_blind_selected_coefficients",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "quadratic_output_changes_h",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_-0.8_positive_class",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_-0.8_extractor_rank",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_-0.8_pole_recovery",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_-0.8_action_identity",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_-0.8_full_force_closure",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.0_positive_class",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.0_extractor_rank",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.0_pole_recovery",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.0_action_identity",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.0_full_force_closure",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.7_positive_class",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.7_extractor_rank",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.7_pole_recovery",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.7_action_identity",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "development_0.7_full_force_closure",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_-0.45_positive_class",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_-0.45_extractor_rank",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_-0.45_pole_recovery",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_-0.45_action_identity",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_-0.45_full_force_closure",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_0.3_positive_class",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_0.3_extractor_rank",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_0.3_pole_recovery",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_0.3_action_identity",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_0.3_full_force_closure",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_1.0_positive_class",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_1.0_extractor_rank",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_1.0_pole_recovery",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_1.0_action_identity",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "reserved_synthetic_1.0_full_force_closure",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "output_only_quadratic_same_linear_response",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "output_only_quadratic_same_fundamental",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "output_only_quadratic_predicted_defect",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "output_only_quadratic_rejected",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "output_only_quadratic_still_six_modes",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "cubic_output_requires_closure_test",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "time_origin_cancels",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "affine_work_orientation_2.3",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "affine_work_orientation_-1.7",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "no_decay_merges_h_with_offset",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "unexcited_mode_has_no_force_anchor",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "pole_cancellation_is_blind",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "omit_inertia_gradient_is_false",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "finite_quotient_error_68_cases",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "residue_modulus_error_162_cases",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "cross_environment_integral",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "finite_bin_Lipschitz_certificate",
+      "passed": true,
+      "family": "common action"
+    },
+    {
+      "name": "kinetic_cross_removed_by_coordinate_change",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "visible_mass_Schur_complement",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "damping_cross_retained",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "damping_diagonal_transformed",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "potential_translation",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "damping_determinant_preserved",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "same_pole_off_diagonal",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "equilibrium_holding_force",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "fixed_hidden_curvature",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "observed_r_is_real",
+      "passed": true,
+      "detail": 3.2037259134502885e-12,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "inertia_log_derivative_recovered",
+      "passed": true,
+      "detail": 3.3857361358968774e-12,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "relative_inertia_integrated",
+      "passed": true,
+      "detail": 3.699789363764694e-10,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "continuous_hidden_reflection_choice",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "Rayleigh_cross_reconstructed",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "visible_mass_from_response",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "visible_damping_from_response",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "entire_polynomial_response",
+      "passed": true,
+      "detail": 1.8240460869413518e-13,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "candidate_positivity",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "equilibrium_static_consistency",
+      "passed": true,
+      "detail": 6.217248937900877e-15,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "equilibrium_curve_integrated",
+      "passed": true,
+      "detail": 2.1142858991352043e-09,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "visible_equilibrium_potential_integrated",
+      "passed": true,
+      "detail": 1.8001679064072462e-08,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "potential_has_reconstructed_equilibrium",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "reserved_later_history_0",
+      "passed": true,
+      "detail": 4.654499008438506e-12,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "reserved_later_history_30",
+      "passed": true,
+      "detail": 3.648137347767033e-12,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "reserved_later_history_60",
+      "passed": true,
+      "detail": 2.6081359294494177e-12,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "phase_alternative_keeps_first_Q",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "phase_alternative_rejected_by_real_r",
+      "passed": true,
+      "detail": 0.09934080201723422,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "static_offset_alternative_rejected",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "negative_mass_alternative_rejected",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "negative_damping_alternative_rejected",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "nonaffine_residue_scaling",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "complex_second_harmonic_covariance",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_0",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_1",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_2",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_3",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_4",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_5",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_6",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_7",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_8",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_9",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_10",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_11",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_12",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_13",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_14",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_15",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_16",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_17",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_18",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_19",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_20",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_21",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_22",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_23",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_24",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_25",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_26",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_27",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_28",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_29",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_30",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_31",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_32",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_33",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_34",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_35",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_36",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_37",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_38",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_39",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_40",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_41",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_42",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_43",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_44",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_45",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_46",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_47",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_48",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_49",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_50",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_51",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_52",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_53",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_54",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_55",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_56",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_57",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_58",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_59",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_60",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_61",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_62",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_63",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_64",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_65",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_66",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_67",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_68",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_69",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_70",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_71",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_72",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_73",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_74",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_75",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_76",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_77",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_78",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_79",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_80",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_81",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_82",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_83",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_84",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_85",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_86",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_87",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_88",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_89",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_90",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_91",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_92",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_93",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_94",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_95",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_96",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_97",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_98",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    },
+    {
+      "name": "correlated_reconstruction_error_99",
+      "passed": true,
+      "detail": null,
+      "family": "coefficient reconstruction"
+    }
+  ],
+  "common_action_details": {
+    "synthetic_rows": [
+      {
+        "role": "development",
+        "x": -0.8,
+        "initial": [
+          0.31,
+          -0.22
+        ],
+        "true_derivative": 0.5468526124749262,
+        "extracted_Q": 0.5468526124580222,
+        "dynamic_fit_condition": 8274.282749680066,
+        "ring_fit_condition": 5.754457900059222,
+        "max_force_residual": 2.6081359294494177e-12
+      },
+      {
+        "role": "development",
+        "x": 0.0,
+        "initial": [
+          -0.42,
+          0.13
+        ],
+        "true_derivative": 0.4880000000000001,
+        "extracted_Q": 0.48799999999927224,
+        "dynamic_fit_condition": 36357.68294579992,
+        "ring_fit_condition": 5.897652403826146,
+        "max_force_residual": 4.438976963783148e-12
+      },
+      {
+        "role": "development",
+        "x": 0.7,
+        "initial": [
+          0.15,
+          0.39
+        ],
+        "true_derivative": 0.40310443308963506,
+        "extracted_Q": 0.4031044330858122,
+        "dynamic_fit_condition": 71283.1740831688,
+        "ring_fit_condition": 6.064332836718344,
+        "max_force_residual": 3.3781866193294263e-12
+      },
+      {
+        "role": "reserved_synthetic",
+        "x": -0.45,
+        "initial": [
+          -0.27,
+          -0.37
+        ],
+        "true_derivative": 0.529003929090613,
+        "extracted_Q": 0.5290039290963541,
+        "dynamic_fit_condition": 16034.890322613523,
+        "ring_fit_condition": 5.809719238481885,
+        "max_force_residual": 3.4167668694351505e-12
+      },
+      {
+        "role": "reserved_synthetic",
+        "x": 0.3,
+        "initial": [
+          0.52,
+          0.19
+        ],
+        "true_derivative": 0.45345189691042564,
+        "extracted_Q": 0.45345189690444554,
+        "dynamic_fit_condition": 55114.63583179836,
+        "ring_fit_condition": 5.96611586728153,
+        "max_force_residual": 4.253597474246362e-12
+      },
+      {
+        "role": "reserved_synthetic",
+        "x": 1.0,
+        "initial": [
+          -0.18,
+          0.41
+        ],
+        "true_derivative": 0.364552539639882,
+        "extracted_Q": 0.3645525396411754,
+        "dynamic_fit_condition": 69547.31337116216,
+        "ring_fit_condition": 6.140957601761015,
+        "max_force_residual": 2.4633628470382973e-12
+      }
+    ],
+    "alternative": {
+      "quadratic_defect": 0.15128593040788352,
+      "cubic_full_basis_residual": 0.013196058548215595
+    },
+    "error_budgets": {
+      "quotient_bound": 0.04148002360910419,
+      "quotient_max_error": 0.04123519845763857,
+      "residue_bound": 0.07535451593068047,
+      "residue_max_error": 0.06051910575121022
+    }
+  },
+  "inverse_details": {
+    "grid_points": 61,
+    "normalization": "tau(-0.8)=1; chosen hidden unit, not measured absolute scale",
+    "max_relative_inertia_error": 3.699789363764694e-10,
+    "reserved_synthetic_predictions": [
+      {
+        "x": -0.8,
+        "input_state": [
+          -0.37,
+          0.18
+        ],
+        "preparation_fit_samples": 60,
+        "reserved_prediction_samples": 541,
+        "max_error": 4.654499008438506e-12
+      },
+      {
+        "x": 0.09999999999999998,
+        "input_state": [
+          0.49,
+          0.27
+        ],
+        "preparation_fit_samples": 60,
+        "reserved_prediction_samples": 541,
+        "max_error": 3.648137347767033e-12
+      },
+      {
+        "x": 1.0,
+        "input_state": [
+          -0.24,
+          -0.33
+        ],
+        "preparation_fit_samples": 60,
+        "reserved_prediction_samples": 541,
+        "max_error": 2.6081359294494177e-12
+      }
+    ],
+    "max_complex_r_error": 0.002974754755896106,
+    "max_fraction_of_r_bound": 0.7990570466061263,
+    "development_data": "61 synthetic environment responses and ringdowns used for function reconstruction",
+    "reserved_status": "new synthetic initial states at3 calibrated environments; first60 samples fit only preparation, last541 evaluated after preparation fit; no empirical test",
+    "inputs_received_by_inverse": "port spectra and force time series; generator parameter values used only in separate verification comparisons"
+  },
+  "source_hashes": {
+    "scripts/ringdown_action_inverse.py": "1be664a62d9c1656172aa4a45f48a5cc094212d9a2a3cc7d4dd88eaae0419047",
+    "docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md": "980512d7d9a5fb2f19583fbdeb7e849d0861c0299a13fa52f7bf51a059acdd86",
+    "scripts/ringdown_action_math.py": "3293be690789f92a09034a4f9573c95cff7480a2669f33cfc4464847e405a950"
+  },
+  "versions": {
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "empirical_validation": false,
+  "data_roles": {
+    "calibration": "Synthetic force/displacement spectra; fitted pole features",
+    "development": "61 synthetic environments for coefficient reconstruction",
+    "reserved": "Three synthetic initial states at existing environments; first 60 samples fit preparation, last 541 predict force",
+    "independent_empirical_test": "none"
+  },
+  "read_inventory": {
+    "external_scientific_inputs": [],
+    "package_integrity_reads": [
+      "scripts/ringdown_action_inverse.py",
+      "docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md",
+      "scripts/ringdown_action_math.py"
+    ],
+    "imported_computation": "scripts/ringdown_action_math.py"
+  }
+}

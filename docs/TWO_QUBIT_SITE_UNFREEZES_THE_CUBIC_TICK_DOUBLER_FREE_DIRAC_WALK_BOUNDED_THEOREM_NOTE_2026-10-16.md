@@ -137,6 +137,20 @@ up to sign and the internal SO(3) rotation; its axis doublers are massless at
 quasienergy pi, while the face and corner doublers are gapped at 2.665 and
 2.455 rad. ∎
 
+**Dispersion of the light-speed member.** Exactly,
+
+    omega^2 = |k|^2 - (sqrt5/2 - 7/6) (|k|^4 - sum_a k_a^4) + O(k^6),
+
+with sqrt5/2 - 7/6 ≈ 0.0486: light-like along the axes to this order and
+slowest along the body diagonals, where the group velocity is
+1 - 0.0486 (k a)^2. For every O-covariant walk the band functions are
+O-invariant; the O-invariant polynomials on R^3 are generated in degrees
+2, 4, 6 and 9, so omega(k) - omega(-k) = O(k^9) and the leading anisotropy
+is quadratic in k a. This contrasts with the one-qubit D2 walk of the
+companion note, whose leading correction is linear and handed
+(-n1 n2 n3 |k|^2). That cubic symmetry pushes lattice anisotropy to
+O(a^2) is standard; the new point is the contrast within these tick laws.
+
 ## Theorem 6 — exact chirality freezes motion
 
 tau3 (x) 1 commutes with every coin operator 1 (x) D(R). If U commutes with
@@ -243,4 +257,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=19 FAIL=0` (a few seconds).
+Expected: `TOTAL: PASS=20 FAIL=0` (a few seconds).

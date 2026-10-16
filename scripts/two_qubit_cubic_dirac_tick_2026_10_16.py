@@ -147,6 +147,16 @@ def main() -> int:
     fg = sum(((Gg * phi0)[i] * PHI[i] for i in range(4)), sp.Integer(0))
     ck.check('golden member: f(t,0,0) = cos t exactly (light-like along the axes), so U(pi,0,0) = -1 (pi-mode doublers)',
              sp.expand(sp.expand(fg.subs({c2: 1, c3: 1}) - c1)) == 0)
+    eps = sp.Symbol('eps', positive=True)
+    nn = sp.symbols('n1:4', real=True)
+    fe = fg.subs({C[a]: sp.cos(eps * nn[a]) for a in range(3)})
+    one_f = sp.expand(sp.series(1 - fe, eps, 0, 6).removeO())
+    w2 = sp.expand(sp.series(2 * one_f + one_f ** 2 / 3, eps, 0, 6).removeO())
+    nsq = nn[0] ** 2 + nn[1] ** 2 + nn[2] ** 2
+    kap = r5 / 2 - sp.Rational(7, 6)
+    target = eps ** 2 * nsq - kap * eps ** 4 * (nsq ** 2 - (nn[0] ** 4 + nn[1] ** 4 + nn[2] ** 4))
+    ck.check('golden member: omega^2 = |k|^2 - (sqrt5/2 - 7/6)(|k|^4 - sum k_a^4) + O(k^6) (quadratic, parity-even anisotropy)',
+             sp.expand(w2 - target) == 0)
     # Theorem 6: exact chirality tau3 (x) 1 commutes with the coin action
     T3 = kron(SIG[3], SIG[0])
     ck.check('tau3 (x) 1 commutes with 1 (x) D(R): a chirality-symmetric walk splits into two one-qubit covariant blocks',

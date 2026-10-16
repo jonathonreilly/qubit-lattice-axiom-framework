@@ -125,6 +125,13 @@ def main() -> int:
              and sp.expand((v.T * G * w_)[0]) == 0)
     ck.check('F(0).F(pi,0,0) = (v+w)^T G (v-w) = 1 - 2 s^2: the axis doubler gap is 2 arcsin|s|',
              sp.expand(((v + w_).T * G * (v - w_))[0] - (1 - 2 * s_ ** 2)) == 0)
+    phiK = lambda c: sp.Matrix([1, sum(c), c[0] * c[1] + c[0] * c[2] + c[1] * c[2], c[0] * c[1] * c[2]])
+    p0v = phiK((1, 1, 1))
+    cM = sp.expand((p0v.T * G * phiK((-1, -1, 1)))[0])
+    cR = sp.expand((p0v.T * G * phiK((-1, -1, -1)))[0])
+    ck.check('doubler gaps: cos(theta_M) = 1 - 8 s (b0 - b2), cos(theta_R) = 1 - 6(3 b0^2 + 2 b0 b2 + 3 b2^2 - 8 b1^2)',
+             sp.expand(cM - (1 - 8 * s_ * (b[0] - b[2]))) == 0
+             and sp.expand(cR - (1 - 6 * (3 * b[0] ** 2 + 2 * b[0] * b[2] + 3 * b[2] ** 2 - 8 * b[1] ** 2))) == 0)
     # Theorem 5: the unique light-speed member, over Q(sqrt 5)
     r5 = sp.sqrt(5)
     bgold = {b[0]: (9 * r5 - 5) / 38, b[1]: (5 * r5 - 7) / 19, b[2]: (71 - 29 * r5) / 38}

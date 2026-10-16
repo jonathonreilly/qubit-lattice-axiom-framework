@@ -124,7 +124,13 @@ cone at k = 0 has speed |s|. F(0).F(pi,0,0) = (v+w)^T G (v-w) = 1 - 2 s^2, and
 f(pi,0,0) = 1 - 2 s^2 = cos(2 arcsin|s|). ∎
 
 The explicit member above has s = 0.9144 and axis gap 2 arcsin(0.9144) =
-2.308, matching the numerical spectrum.
+2.308, matching the numerical spectrum. The same computation at the other
+time-reversal-invariant classes gives, with F(0) on the f axis,
+
+    cos theta_M = 1 - 8 s (b0 - b2)                       (three face points),
+    cos theta_R = 1 - 6 (3 b0^2 + 2 b0 b2 + 3 b2^2 - 8 b1^2)   (corner point),
+
+so the whole doubler spectrum is an explicit quadratic function of b.
 
 ## Theorem 5 — the light-speed member
 
@@ -343,4 +349,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=23 FAIL=0` (a few seconds).
+Expected: `TOTAL: PASS=24 FAIL=0` (a few seconds).

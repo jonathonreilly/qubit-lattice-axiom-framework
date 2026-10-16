@@ -1,0 +1,29 @@
+{
+  "schema": "source-exposed-analytical-review-v1",
+  "renewal_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023",
+  "scientific_executions": 0,
+  "metadata_only": true,
+  "sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/PROPOSAL.md",
+      "capture": "sources/product_source_mediator_candidate/PROPOSAL.md",
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248",
+      "read_completely": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/PROPOSAL.md",
+      "capture": "sources/weak_mediator_candidate/PROPOSAL.md",
+      "bytes": 5883,
+      "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b",
+      "read_completely": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/REVIEW.md",
+      "capture": "sources/weak_mediator_exposed_check/REVIEW.md",
+      "bytes": 17330,
+      "sha256": "0c2f97d373ec11c7cc4089330a184ec24e332ccae4c934c2d7dba33c8458137b",
+      "read_completely": true
+    }
+  ]
+}

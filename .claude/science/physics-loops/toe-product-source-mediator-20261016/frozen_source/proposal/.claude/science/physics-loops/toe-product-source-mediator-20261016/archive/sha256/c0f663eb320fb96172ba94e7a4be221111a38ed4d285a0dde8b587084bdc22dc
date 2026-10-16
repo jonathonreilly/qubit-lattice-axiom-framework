@@ -1,0 +1,91 @@
+{
+  "schema": "immutable-additive-review-freeze-v1",
+  "created_at": "2026-10-16T21:36:19.387710+00:00",
+  "scope": "separate source-exposed analytical finite-compiler review; no compiler execution; root disposition separate",
+  "scientific_executions": 0,
+  "excluded": [
+    "FREEZE.json"
+  ],
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 733,
+      "sha256": "c5ad25ed30aca28e8f66b3e3cab006e044163756006ffddc68f4f5fd51956432"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 8017,
+      "sha256": "c6ac427900ab13bf671f607b393a94d52f2361b6435ae80f3a959c836458abf6"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 1525,
+      "sha256": "9a0f400c3572f6dbb136ae055db090fa50a3a94fc610a451c3da2d7125e15621"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2398,
+      "sha256": "a40b0fc1be804c2e686b9909facc4369a494dc44223306314365638c280e169b"
+    },
+    {
+      "path": "inspect_sources.py",
+      "bytes": 2608,
+      "sha256": "dcba2ef934e166a2e5c4be7a087a9551184485cd9d2e2b99ff2d215907e6228d"
+    },
+    {
+      "path": "metadata/EXECUTION.json",
+      "bytes": 933,
+      "sha256": "22efb1a23713c671d40da0d20f51d12fd8ff0aed3f00e6776d8a80152b139814"
+    },
+    {
+      "path": "metadata/executed_source.py",
+      "bytes": 2608,
+      "sha256": "dcba2ef934e166a2e5c4be7a087a9551184485cd9d2e2b99ff2d215907e6228d"
+    },
+    {
+      "path": "metadata/launcher_source.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "metadata/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata/stdout",
+      "bytes": 175,
+      "sha256": "96f8fb4656a47c763538ed966499c23fa44c1c3c750d4f2db20d9e123ce2a37b"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "seal.py",
+      "bytes": 1208,
+      "sha256": "1b8333ee93f9e29c62f85c30e1e4c5f27512a733425948c25c25466fda2cb9f1"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "path": "sources/weak_mediator_candidate/DYADIC_ADDENDUM.md",
+      "bytes": 2959,
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517"
+    },
+    {
+      "path": "sources/weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4295,
+      "sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8"
+    },
+    {
+      "path": "sources/weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+      "bytes": 3953,
+      "sha256": "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395"
+    }
+  ]
+}

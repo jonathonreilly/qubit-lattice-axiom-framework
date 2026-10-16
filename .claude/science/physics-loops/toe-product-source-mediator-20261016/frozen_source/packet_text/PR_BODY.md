@@ -1,0 +1,7 @@
+# Supplied product-state mediator with finite coefficient construction
+
+Packages a conditional square-topology mediator for the full-phase target `W=((9+12i)I+(-16+12i)XX)/25` while literal `K=2I+ZZ` remains installed. The independent source is |00>; supplied positive hopping/penalty and XX port interactions give a full-output finite-window bound, an equality-safe finite coefficient algorithm, and explicit scalar, load and energy accounts.
+
+Eight complete bodies preserve the proposal, compiler addendum, three source-exposed same-model reviews, an alternative positive-Pauli realization and both controlling root qualifications. Actual source acceptance `9505e42b` and separate Pauli acceptance `c79e410f` are recorded separately from this wrapper. The Pauli realization retains its u/2 scalar/mean shift and extra-bit qualification; it asserts no strict physical-control-model inclusion. No product-source compiler or scientific fixture ran. Provenance metadata checks and their full receipts are separate from mathematical evidence. The `u=0` finding is only a failed second-corrector route.
+
+Direct mathematical parent: the weak-mediator note's exact corrector and interval machinery, with finalized canonical identity pending. Source-wrapper, actual base, canonical/staged review, publication and retained-audit bindings remain null. Supplied controls, independent initialization, physical calibration/timing, installation work, halt and indefinite reuse remain explicit interfaces. This source packet performs no integration or publication.

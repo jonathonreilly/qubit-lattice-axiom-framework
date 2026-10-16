@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-16T21:40:31.301717+00:00",
+  "files": [
+    {
+      "path": "QUALIFICATION.md",
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    },
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 5738,
+      "sha256": "9505e42b907fdb9031f42b02b4609965ef7980af536e9197c4864aba124119f5"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+# Separate finite-compiler addendum review
+
+The original main-proposal review was sealed first: REVIEW.md SHA256 `517b3714e8b73bb082ed95b8fab1b5bc07f8c4490f4c2fc8f56816fa0681bf53`, ORIGINAL_FREEZE.json SHA256 `97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116`. None of those files is amended. This subsequent review reads the complete new product-source FINITE_COMPILER_ADDENDUM.md, 4274 bytes, SHA256 `afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065`.
+
+Disposition: the addendum supplies a terminating exact-rational coefficient algorithm and the stated sufficient error/positivity bounds. The earlier finite-compilation obligation is thereby resolved at the mathematical algorithm level for this model. It is still not an executed coefficient list, measured resource result, certified physical calibration, or bit-complexity theorem. Root acceptance is separate. This is same-model, source-exposed analytical checking after the original result was frozen, with no compiler or scientific fixture executed.
+
+## 1. Imported interval identities and independent checks
+
+The needed parent is weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md, 4295 bytes, SHA256 `7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8`. Its complete interval construction was read. The earlier DYADIC_ADDENDUM.md and STRUCTURED_COEFFICIENT_ADDENDUM.md were also read during this separate exposure; their sharper Bell-specific tuning and precision conclusions are not premises of the product-source proof. Exact identities and captures are in this subpacket's SOURCE_MANIFEST.json.
+
+For a in {5,239,7}, the n-term alternating sum and its first omitted signed term bracket atan(1/a); their width is
+
+\[
+r_a={1\over(2n+1)a^{2n+1}}<a^{-(2n+1)}.
+\]
+
+The trigonometric identities can be checked directly without a numerical library. If alpha=atan(1/5), then tan(2alpha)=5/12 and tan(4alpha)=120/119. With beta=atan(1/239), the tangent subtraction formula gives tan(4alpha−beta)=1. The angle lies strictly between 0 and pi/2, so 4alpha−beta=pi/4. Also tan(pi/4+atan(1/7))=4/3 and this angle is in (0,pi/2). These establish the Machin identity and theta identity with the correct branches.
+
+The pi interval width is 16r5+4r239<20*5^(−2n−1), and the theta interval width is one quarter of that width plus r7, hence <6*5^(−2n−1). Both are bounded by the former expression. With n=p+8 and p>=39,
+
+\[
+20\,5^{-(2n+1)}<20\,2^{-(4p+34)}<2^{-(2p+12)}=w_0.
+\]
+
+The claimed coarse bounds can also be established without executing a rational guard. For n>=2, the endpoints of each alternating enclosure lie between its second and first partial sums. Thus piL>16(1/5−1/375)−4/239>3, and piU<16/5<4. The lower atan(1/7) endpoint is positive, so thetaL>piL/4>3/4. The upper endpoints give thetaU<(16/5)/4+1/7=33/35<1. Strict interval containment follows from the nonzero alternating remainders. This checks the needed parent interval facts rather than inferring them from earlier acceptance.
+
+## 2. New coefficient maps and width constants
+
+Write dPi=piU−piL and dTheta=thetaU−thetaL, both <w0. Positive denominators and the separate bounds immediately enclose
+
+\[
+j={2\theta\over\pi},\quad
+\lambda={\pi-\theta\over T},\quad
+a=g^2={\pi^2-\theta^2\over\pi T}
+\]
+
+by the proposed [jL,jU], [lambdaL,lambdaU], and [aL,aU]. No unjustified independence or correlation between their conservative endpoints is required.
+
+For j, the exact splitting
+
+\[
+{\theta_U\over\pi_L}-{\theta_L\over\pi_U}
+={d\Theta\over\pi_L}
+ +{\theta_Ld\Pi\over\pi_L\pi_U}
+\]
+
+gives jU−jL<(8/9)w0<w0. The lambda width is (dPi+dTheta)/T<2w0/T.
+
+Set NU=piU²−thetaL² and NL=piL²−thetaU². Then NU−NL<8w0+2w0=10w0, 0<NL<=NU<16, and
+
+\[
+{N_U\over\pi_L}-{N_L\over\pi_U}
+={N_U-N_L\over\pi_U}
+ +N_U\left({1\over\pi_L}-{1\over\pi_U}\right)
+ <\left({10\over3}+{16\over9}\right)w_0<6w_0.
+\]
+
+After dividing by T this proves the claimed radicand width. Positivity is quantitative: lambdaL>(3−1)/T=2/T, aL>(9−1)/(4T)=2/T, and jL>2(3/4)/4=3/8. These statements use strict coarse inequalities already proved above.
+
+## 3. Equality-safe integer rounding and positivity
+
+For a positive rational A/B, ordinary integer division produces floor(2^p A/B) exactly. The dyadic floor is below A/B with error <h=2^(−p). For the square root, let k=isqrt(floor(2^(2p)A/B)). Then
+
+\[
+k^2\le 2^{2p}A/B<(k+1)^2,
+\]
+
+including the case of equality at the lower boundary. Hence k/2^p<=sqrt(A/B)<(k+1)/2^p. No equality of the transcendental true coefficient to a dyadic grid boundary is queried.
+
+The new a interval obeys
+
+\[
+a_U-a_L<6w_0/T
+=6h^2\,2^{-(2m+44)}\le6h^2\,2^{-44}<h^2/4.
+\]
+
+Using sqrt(b)−sqrt(a)<=sqrt(b−a), its square-root width is <h/2. Rounding sqrt(aL) downward therefore gives 0<=g−ghat<3h/2<2h. The j and lambda interval widths are <h, so their downward floor approximations satisfy errors <2h as well. The fact that all three true coefficients have not been evaluated by this review is irrelevant to this universal interval proof.
+
+Strictly positive outputs follow without a sign oracle. jL>3/8>h. Also lambdaL/h>2^(m+8)>=256, and sqrt(aL)>sqrt(2)/sqrt(T)>h. The corresponding integer floors are therefore at least one. Since all outputs are below their exact coefficients, the cap bounds jhat<2/3, ghat<2/sqrt(T), lambdahat<4/T and positivity of every block follow. This does not require retaining jhat>u or re-proving a rounded Sylvester gap; the final comparison uses full-generator Duhamel, not an exact rounded tuning formula.
+
+## 4. Full-phase stability, counts and remaining interfaces
+
+The original sealed review already independently derived the exact ideal bound 3epsilon/32 in isometry norm. After removing the actual source/port phase (jhat+2ghat)t, the coefficient defect is
+
+\[
+-(\widehat j-j)L+(\widehat g-g)(X_1X_A+X_2X_B)
+ +(\widehat\lambda-\lambda)I,
+\]
+
+with norm <2h+4h+2h=8h. On t<=T+w<2T, full-generator Duhamel adds <16Th=epsilon/8. Thus the exact target, actual old aging, actual source phase, all source outputs and arbitrary reference remain covered by <7epsilon/32 isometry and <7epsilon/16 unhalved joint trace error. The old purposeful scalar lambda is compared through its coefficient error; it is not omitted or transferred into an unspecified source rephasing.
+
+The algorithm takes a specified finite n, uses rational arithmetic for three n-term sums and three first-omitted remainders, then three final integer floor quotients (j, lambda, and the square-root argument) and one integer floor-square-root call. All these integer operations terminate. The counts concern these final rounding operations and summed terms, not every division, multiplication, gcd reduction or bit operation during rational evaluation. Numerators and denominators of the three dyadic coefficients have at most p+1 bits; the dyadic grid denominator itself is 2^p. Expanded matrix entries and rational intermediates may have different denominators and costs. No polynomial bit-complexity claim is needed or established by this review.
+
+Substituting m=44 symbolically gives p=171, n=179, and T=2^120, as stated. No emitted list or runtime was computed. The product-source result depends on the exact interval machinery as mathematics, not on a particular Bell-source scientific execution or that source's physical permissions. The Bell-source publication may be its explicit parent in later packaging; the product addendum must not be retroactively made a premise of that earlier result.
+
+The addendum resolves the previously open equality-safe finite mathematical construction. Supplied positive couplings, independent source vacuum, installation/preparation work, finite physical precision and timing, and final halt/reuse remain separate. Arbitrary additional faults and initial-state errors still need explicit budgets. The u=0 proof obstruction and all original source/phase/energy qualifications remain unchanged. No scientific program was run, and no accepted or retained status is created by this check.

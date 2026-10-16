@@ -1,0 +1,49 @@
+# Equality-safe finite parameter algorithm for the product-source proposal
+
+This is a root-authored extension awaiting separate analytic check. It supplies an explicit finite interval algorithm, not an executed coefficient list or optimal complexity result. The original model and proof remain unchanged. Write m>=0 integer, epsilon=2^-m, T=2^(2m+32), p=3m+39, h=2^-p, n=p+8, and w0=2^(-(2p+12)).
+
+Use the complete alternating-series interval algorithm already displayed in the weak-mediator finite-compiler source: for a in5,239,7 sum n terms `(-1)^k/((2k+1)a^(2k+1))`, then bracket by that partial sum and the partial sum plus its first omitted signed term. The sorted endpoints La,Ua enclose atan(1/a). Set
+
+`piL=16L5-4U239`, `piU=16U5-4L239`,
+
+`thetaL=piL/4+L7`, `thetaU=piU/4+U7`.
+
+The previously checked elementary series/angle argument gives `3<piL<pi<piU<4`, `3/4<thetaL<theta<thetaU<1`, and both interval widths strictly below w0. It applies because p>=39,n>=47. These are analytic enclosures, not floating-point library outputs. They must be rechecked if any source or branch identity changes.
+
+## Positive parameter intervals
+
+For the new coefficients define
+
+`jL=2thetaL/piU`, `jU=2thetaU/piL`,
+
+`lambdaL=(piL-thetaU)/T`, `lambdaU=(piU-thetaL)/T`,
+
+`aL=(piL^2-thetaU^2)/(piU*T)`, `aU=(piU^2-thetaL^2)/(piL*T)`.
+
+They are strictly positive and contain respectively j=2theta/pi, lambda=(pi-theta)/T, and a=g^2=(pi^2-theta^2)/(pi T). In particular lambdaL>2/T and aL>2/T using piL>3, thetaU<1 and piU<4. Their conservative widths are
+
+`jU-jL < (8/9)w0 < w0`,
+
+`lambdaU-lambdaL < 2w0/T`,
+
+`aU-aL < 6w0/T`.
+
+For the first, split thetaU/piL-thetaL/piU into the theta-width over piL plus thetaL times the reciprocal-pi width, bounded by w0/3+w0/9, then multiply by2. For the radicand let NU=piU^2-thetaL^2 and NL=piL^2-thetaU^2. One has NU-NL<10w0 and NU<16; split NU/piL-NL/piU as `(NU-NL)/piU + NU*(1/piL-1/piU)`. This is below `(10/3+16/9)w0<6w0`, before division by T. No correlation between the separately conservative intervals is needed.
+
+## Exact integer operations
+
+For a rational lower endpoint A/B>0, define `floor_p(A/B)=floor(2^p A/B)/2^p`, and
+
+`root_p(A/B)=isqrt(floor(2^(2p) A/B))/2^p`.
+
+Both use exact integers and terminate. Set jhat=floor_p(jL), lambdahat=floor_p(lambdaL), ghat=root_p(aL), uhat=1/2. Rational floor differs from its rational input by strictly less than h. Integer root obeys `ghat^2<=aL<(ghat+h)^2`, hence sqrt(aL)-ghat<h. Furthermore
+
+`aU-aL < 6h^2*2^-44 < h^2/4`,
+
+so sqrt(aU)-sqrt(aL)<h/2. Thus `0<=g-ghat<3h/2<2h`. The j and lambda interval widths are below h, so both of those true coefficient errors are also strictly below2h. Equality of a true irrational coefficient to a grid boundary is never queried.
+
+All emitted coefficients are positive. jL>3/8 and h<=2^-39. For lambda, lambdaL/h>2^(m+8)>=256. For g, sqrt(aL)>sqrt(2)/sqrt(T), which exceeds h. Upper bounds jhat<2/3, ghat<2/sqrt(T), lambdahat<4/T follow from the analytic lower-replacement property. The positive-block caps therefore decrease under rounding, with the fixed u contribution unchanged.
+
+After removing the **actual** source/port phase `(jhat+2ghat)t`, the actual-to-ideal generator defect is below8h. The proposal's full-generator Duhamel argument consequently gives an extra error below `16Th=epsilon/8` for t<2T. It does not assume the rounded model's effective coefficients satisfy the exact target tuning. Together with the separately checked ideal3epsilon/32 budget, the resulting isometry bound is7epsilon/32 and unhalved full joint trace bound7epsilon/16 on the same long window. Arbitrary additional faults, preparation error and timing changes retain their own budgets.
+
+The arithmetic count is3n summed terms plus3 first-omitted remainders,3 final floor quotients and1 integer-square-root call, alongside rational arithmetic whose intermediate cost is not included in those small counts. Output numerator/denominator bit lengths are at most p+1 for these coefficients. Expanded matrix-entry denominators, rational normalization, intermediate integer size and bit-operation complexity are distinct obligations. At m=44 the algorithm specifies p171,n179,T2^120, but no concrete output list or execution timing for this new model is claimed here.

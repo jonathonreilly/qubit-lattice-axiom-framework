@@ -1,0 +1,60 @@
+{
+  "status": "bound_actual_root_published_base",
+  "base_head": "50e567424771a7af433fd73e2b38b79bed635b6c",
+  "base_tree": "5ccabd2c966ba12d0a30181ddf967bfdf8a689ec",
+  "base_branch": "physics-loop/toe-weak-mediator-fixed-target-20261016",
+  "base_pr": 9655,
+  "base_parent_branch": "physics-loop/toe-commuting-static-edge-fixed-target-20261016",
+  "publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/weak_mediator/PUBLICATION.json",
+    "bytes": 1565,
+    "sha256": "b89dec7eb4f9deee19b5fe1dbc1936b743a248892d68bcc2fb9b57797dff814c"
+  },
+  "attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/weak_mediator/ATTACHMENT.json",
+    "bytes": 446,
+    "sha256": "697ef48933df9e24f250e12c71fd30fc3fc922344cda8a6d60941030f85ad01e"
+  },
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/product_source/FRESH_REFRESH.json",
+    "bytes": 2809,
+    "sha256": "94c34b479f7c159eb79f1a84744dfb52799b9a4ba06de27c0aaab50e0d6e195d"
+  },
+  "expected_refs": {
+    "HEAD": "50e567424771a7af433fd73e2b38b79bed635b6c",
+    "origin/main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "observations": {
+    "head": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_head/EXECUTION.json",
+      "bytes": 1443,
+      "sha256": "66583a3ee01978ca22dc7ee6da9f3dda9e1f49387469dc3f8029b103069bccfc"
+    },
+    "tree": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_tree/EXECUTION.json",
+      "bytes": 1450,
+      "sha256": "11b87d0cae1cece7fe0121a1f01d93d879d6052923a5615bdffde36b0013a84f"
+    },
+    "branch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_branch/EXECUTION.json",
+      "bytes": 1456,
+      "sha256": "668ba8837c15978eb019af2eed7b6655842c992ed4e6ba382fb6d68fa4de8fd3"
+    },
+    "status": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_status/EXECUTION.json",
+      "bytes": 1460,
+      "sha256": "fbfad8dcad60c9c22c245c80c560b04cc4d9ead9d4cf2b4cd951bf5b4f511e6e"
+    },
+    "parent_pr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_parent_pr/EXECUTION.json",
+      "bytes": 1609,
+      "sha256": "ef4ebcde9be1cd52db612b4802e8ad92cbad8c96fe4a4da7ba22c57ca4938553"
+    }
+  },
+  "context": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/product_source/ACTUAL_BASE_CONTEXT.json",
+    "bytes": 5147,
+    "sha256": "4150075a7d715867aa7e224aa444dd808d8ec209633134743ad52d6e52577a80"
+  }
+}

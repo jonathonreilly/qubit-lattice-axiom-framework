@@ -1,0 +1,7 @@
+# Original review checkpoint
+
+Main analytic review complete; root acceptance remains separate. No blocking defect was found in the u=1/2 construction at source aa1be4b5. The full gap is 1/2, the independent three-state block reproduces h2, and u=0 gives an explicit nonzero resonant second-corrector right-hand side. The latter is a narrow failed route, not a global no-go.
+
+The full-phase comparator, positive added incident cap, residual constants, finite-error conditional Duhamel estimate and full installed-H moments are checked. Initialization, added source/port permissions, calibration/timing/installation and finite reuse interfaces remain explicit. No scientific execution occurred. Source capture and immutable original freeze are the closing metadata steps.
+
+Next separately authorized work: inspect the newly announced finite-compiler addendum only after this original packet is sealed, with separate coverage and freeze. Preserve these original files unchanged.

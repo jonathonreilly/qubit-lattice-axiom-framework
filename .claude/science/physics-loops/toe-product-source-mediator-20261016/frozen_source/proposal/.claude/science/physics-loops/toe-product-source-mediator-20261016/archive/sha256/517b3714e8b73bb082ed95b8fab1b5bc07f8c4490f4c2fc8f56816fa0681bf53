@@ -1,0 +1,250 @@
+# Product-source mediator: exposed analytical check
+
+Status: the displayed conditional construction passes this bounded algebraic review, with the implementation and input qualifications below. This is a reviewer recommendation, not a root acceptance, retained audit, execution result, or native-hardware claim. The finite-coefficient paragraph proves a conditional stability bound; it does not yet supply an emitted, resource-accounted coefficient compiler.
+
+The reviewed proposal is `product_source_mediator_candidate/PROPOSAL.md`, 7613 bytes, SHA256 `aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248`. It was read completely. The complete earlier Bell-source proposal and exposed review were also read at the identities in SOURCE_MANIFEST.json. Their useful reusable content is the finite-dimensional corrector/Duhamel argument, which is reconstructed below rather than accepted from a PASS label. The root's structured acceptance of the earlier lane is contextual and was not used as proof of this new model. This review is same-model and source-exposed: the proposed product source, hopping Hamiltonian and intended conclusion were known before this derivation. There was no blind replication, scientific program, numerical experiment, or theorem-library import.
+
+## 1. Exact model and physical contract
+
+Let the old qubits be 1,2, the source qubits A,B, and
+
+\[
+K=2I+Z_1Z_2,\quad \theta=\arctan(4/3),\quad
+j=2\theta/\pi,\quad u=1/2,
+\]
+\[
+g^2=(\pi^2-\theta^2)/(\pi T),\quad
+\lambda=(\pi-\theta)/T,\quad
+L=(X_AX_B+Y_AY_B)/2.
+\]
+
+The installed generator being checked is exactly
+
+\[
+H=K+j(I-L)+u|11\rangle\langle11|
+ +g(I+X_1X_A)+g(I+X_2X_B)+\lambda I.
+\]
+
+The literal old K remains installed. The permitted topology has old edge 1–2, source edge A–B, and ports 1–A and 2–B. Thus this is a degree-two square, provided the specified blocks on its edges are supplied. The new source interaction and simultaneous static XX ports are physical premises. They do not follow from the earlier four onsite rays, an at-most-one-active-port restriction, or microscopic axioms. The source initialization is the independent product state |00>, including independence from an arbitrary correlated old/reference input. It is simpler than a Bell input but is still a supplied initialization and installation interface.
+
+Using the usual Pauli convention, L exchanges |01> and |10>, and annihilates |00> and |11>. In the ordered source eigenbasis |00>, Psi+, Psi−, |11>,
+
+\[
+\operatorname{spec}(H_c)=(j,0,2j,j+u).
+\]
+
+Since pi/4 < theta < pi/3, we have 1/2 < j < 2/3. Both source terms are positive, and j>u gives ||Hc||=2j. In particular |00> is an excited source eigenstate of energy j, not a zero-energy or ground-state input. Every displayed added block is positive. Positivity of the source block is not a claim that its hopping Pauli summands individually have positive coefficients and spectra; the permitted positive block is j(I−L), or an explicitly justified positive decomposition of that block.
+
+## 2. Full complementary-space gap and an independent invariant block
+
+Put J psi=psi tensor |00>, P=JJ*, Q=I−P, and
+
+\[
+H_0=K+H_c-jI=K-jL+u|11\rangle\langle11|,
+\qquad V=g(X_1X_A+X_2X_B).
+\]
+
+Then H0 J=JK and J*VJ=0. The two port Paulis commute, so ||V||=2g. The old energies are 1 and 3. Relative to the code source eigenvalue zero, the complementary source energies are −j,+j,u. Consequently all full Q-to-P spectral differences, including matrix elements not reached by a first perturbation, are
+
+\[
+\{\pm j,\ \pm j\pm2,\ u,\ u\pm2\}.
+\]
+
+Their minimum absolute value is exactly 1/2: j>1/2, 2−j>4/3, u=1/2, and 2−u=3/2. This is a full Sylvester gap and does not require a lowest-energy code band or a restriction to initially accessible states.
+
+For a more direct check, choose a unit simultaneous old eigenvector psi of ZZ and XX with eigenvalues z,x in {−1,+1}. Since X2 psi=x X1 psi,
+
+\[
+VJ\psi=gX_1\psi\otimes(|10\rangle+x|01\rangle).
+\]
+
+The old vector X1 psi has parity −z and the source vector has L eigenvalue x. Define the orthonormal vectors
+
+\[
+e_0=\psi|00\rangle,\quad
+e_1=X_1\psi(|10\rangle+x|01\rangle)/\sqrt2,\quad
+e_2=\psi|11\rangle.
+\]
+
+Their span is invariant under H0+V. After subtracting the old energy k=2+z, the exact matrix is
+
+\[
+\begin{pmatrix}
+0&\sqrt2g&0\\
+\sqrt2g&-2z-jx&x\sqrt2g\\
+0&x\sqrt2g&u
+\end{pmatrix}.
+\]
+
+This analytic three-state reduction independently checks the signs, the factor sqrt(2), the second excitation, and the support of the first two correctors. It is not a numerical diagonalization. The full-space gap argument above, rather than this invariant-block restriction alone, justifies the Sylvester inverse on arbitrary right-hand sides.
+
+## 3. Second order and the u=0 stress test
+
+The first corrector obeys H0 S1−S1 K=−VJ and lies in Q. On psi it is
+
+\[
+S_1\psi={g\over 2z+jx}\,X_1\psi\otimes(|10\rangle+x|01\rangle).
+\]
+
+Applying V again gives
+
+\[
+VS_1\psi=h_2(z,x)\,\psi\otimes|00\rangle
+ +x h_2(z,x)\,\psi\otimes|11\rangle,
+\qquad h_2(z,x)={2g^2\over2z+jx}.
+\]
+
+Therefore
+
+\[
+H_2=J^*VS_1={2g^2(2ZZ-jXX)\over4-j^2}
+ ={\pi ZZ-\theta XX\over T}.
+\]
+
+Here the reciprocal identity follows from (2z+jx)(2z−jx)=4−j^2, and substituting j and g gives 2g^2/(4−j^2)=pi/(2T). H2 is Hermitian and commutes with K. There is no sign ambiguity from a negative energy denominator: it was retained explicitly in S1.
+
+The same calculation establishes a precise failed route at u=0. The second corrector would have to solve
+
+\[
+(H_0 S_2-S_2K)\psi=-x h_2(z,x)\,\psi|11\rangle.
+\]
+
+At u=0 its displayed matrix entry has zero denominator and nonzero numerator for every z,x and g>0. Hence that Sylvester equation has no solution. At u=1/2 it has the explicit solution S2 psi=−x h2(z,x) psi|11>/u. This is a concrete obstruction to the unpenalized *second-corrector proof route*, not a theorem that every u=0 device, different target, or different timing is impossible. In particular it is not a broad no-go submission, and no fictitious collection of failed architectures is supplied.
+
+## 4. Purposeful old scalar and full endpoint phase
+
+The old effective generator is K+H2+lambda I. Its correction has eigenvalues
+
+\[
+T(H_2+\lambda I):\quad
+2\pi-2\theta,\ 2\pi,\ -2\theta,\ 0
+\]
+
+for (z,x)=(+,+),(+,−),(−,+),(−,−), respectively. Thus its norm is 2pi/T. At time T,
+
+\[
+e^{-iT(H_2+\lambda I)}
+=e^{-i(\pi-\theta)}e^{-i\pi ZZ}e^{i\theta XX}
+=e^{i\theta}e^{i\theta XX}=W.
+\]
+
+Indeed cos(theta)=3/5 and sin(theta)=4/5 give the required I coefficient (9+12i)/25 and XX coefficient (−16+12i)/25. Without lambda the phase is e^{i(pi−theta)}W, so removing that scalar would change the full isometry. The positive old identity is a purposeful phase control, not a dropped source reserve.
+
+The physical Hamiltonian equals H0+V+lambda I+(j+2g)I. Consequently the comparison at t=T+s is exactly
+
+\[
+C_t=J e^{-i(j+2g)t}e^{-isK}W e^{-iTK}.
+\]
+
+All source and old outputs remain present. The u projector is retained in H0; no trace scalar from a Pauli decomposition of that projector has been discarded. The source eigenphase j and positive port reserves 2g are shown explicitly; lambda is included in the old endpoint identity. Scalar phases disappear in density operators but matter to this full isometry comparison and its possible coherent composition.
+
+The new scale family chooses its own T=2^(2m+32). It does not automatically certify a preexisting saved compiler schedule at a different fixed T. The pointwise formulas apply to other positive T, but the numerical cap/error conclusions below use the stated family.
+
+## 5. Residual identity, constants and arbitrary references
+
+Write delta0=1/2 and v=||V||. In eigenbases of H0|Q and K, the Sylvester inverse divides each matrix entry by a number of modulus at least delta0. Its Frobenius-norm bound is therefore 1/delta0. Since the input dimension is four, ||VJ||F<=2v. It follows that
+
+\[
+\|S_1\|\le 2v/\delta_0,\qquad
+\|S_2\|\le 2v^2/\delta_0^2,\qquad
+\|H_2\|\le2v^2/\delta_0.
+\]
+
+The S2 bound uses ||VS1||F<=v||S1||F; multiplying an operator-norm bound by another unnecessary dimension factor would be an incorrect way to reproduce it. With F=J+S1+S2, expansion and PVS1=JH2 give the exact full-space identity
+
+\[
+(H_0+V)F-F(K+H_2)=VS_2-S_1H_2-S_2H_2=R.
+\]
+
+Thus
+
+\[
+\|R\|\le6v^3/\delta_0^2+4v^4/\delta_0^3.
+\]
+
+Adding lambda I to both generators leaves this residual unchanged. Both generators are Hermitian; F need not be an isometry. Duhamel applied to F, followed by the two endpoint replacements F→J, gives
+
+\[
+\|e^{-it(H_0+V+\lambda)}J-Je^{-it(K+H_2+\lambda)}\|
+\le4v/\delta_0+4v^2/\delta_0^2+t\|R\|.
+\]
+
+Since g<2/sqrt(T), v<4/sqrt(T), and t<=2T, the four terms are bounded by 32/sqrt(T), 256/T, 3072/sqrt(T), and 16384/T. Their sum is exactly the stated conservative bound
+
+\[
+R_{\rm prod}(T)=3104/\sqrt T+16640/T.
+\]
+
+For epsilon=2^(−m), integer m>=0, T=2^(2m+32),
+
+\[
+R_{\rm prod}(T)/\epsilon
+\le 3104/65536+16640/2^{32}
+=794689/16777216 < 1/16.
+\]
+
+The window w=epsilon T/256 is positive and <=T/256, so all relevant t are <2T. Since K and H2+lambda commute, the additional endpoint-to-window drift is bounded by s||H2+lambda||<8w/T=epsilon/32. This yields ||e^(−itH)J−Ct||<3epsilon/32 throughout [T,T+w]. The comparison follows actual old aging e^(−isK), rather than holding the old state fixed.
+
+Tensoring the isometries with any reference identity preserves their operator-norm difference. For an arbitrary old/reference input density operator, purification and contractivity give unhalved full joint trace distance at most twice the isometry bound, hence <3epsilon/16. This includes both source qubits, not merely the reduced old channel. The theorem starts with source |00> independent of that input. If preparation is only approximate, its full joint input trace error is an additional budget; marginal source closeness alone does not specify that budget.
+
+## 6. Finite coefficients: what is proved and what remains open
+
+Suppose certified lower dyadic values jhat, ghat, lambdahat satisfy 0<=a−ahat<2h for each coefficient, h=2^(−p), p=3m+39. The supplied actual static Hamiltonian has exactly the same blocks with these values. Subtract its actual uniform source/port phase, not the ideal one:
+
+\[
+\widehat H-(\widehat j+2\widehat g)I
+ =K-\widehat jL+u|11\rangle\langle11|
+ +\widehat g(X_1X_A+X_2X_B)+\widehat\lambda I.
+\]
+
+Its difference from the ideal generator with j+2g subtracted is
+
+\[
+-(\widehat j-j)L+(\widehat g-g)(X_1X_A+X_2X_B)
+ +(\widehat\lambda-\lambda)I.
+\]
+
+Because ||L||=1 and ||X1XA+X2XB||=2, its norm is <8h. Full-generator Duhamel therefore costs <16Th. Substitution gives
+
+\[
+16Th=2^{4+2m+32-3m-39}=\epsilon/8.
+\]
+
+The resulting full comparison uses exp[−i(jhat+2ghat)t], the same exact target W and the actual old time. It has isometry error <7epsilon/32 and unhalved full joint trace error <7epsilon/16. No equality of the rounded second-order generator with its tuned ideal value is assumed. This is the right way to avoid an unjustified retuning assertion. Comparing instead to the ideal source phase would require separately budgeting its change over the long time.
+
+Lower replacements preserve each positive block and decrease the separate incident-load bounds. Their required positive values are consistent throughout the family: j>1/2, lambda>1/T, g>1/sqrt(T), whereas 2hT=2^(−m−6)<1. Thus an approximation with the specified lower-error certificate cannot accidentally make lambda or g zero. This does not establish that any particular interval program has produced that certificate.
+
+The open implementation obligations remain real: construct terminating certified intervals for the transcendental quantities and square root, demonstrate the actual widths, emit the dyadics, bind the installed parameters, and state any algorithmic resource guarantee sought. No such code was run or inspected for this new model. The earlier theta/pi machinery can be a source of methods but was not revalidated here or imported as a completed product-source compiler. The proposed stability inequality alone supplies no polynomial classical runtime, finite laboratory calibration, hardware precision, or preparation guarantee.
+
+## 7. Strength, energy, timing and work scope
+
+Counting Hc's positive terms separately, a source site's conservative added incident load is 2j+u+2g. The old port contribution is 2g. One realization of the old scalar is (lambda/2)(I+X1)+(lambda/2)(I−X1), with separate norm sum 2lambda on site1. Thus 2g+2lambda bounds every old site's added load. The old interaction K, of norm three, remains additional to this *added* cap.
+
+At m=0, and therefore for every m>=0,
+
+\[
+2j+u+2g<4/3+1/2+4/65536<2,
+\qquad 2g+2\lambda<4/65536+8/2^{32}<2.
+\]
+
+The inequalities have substantial positive margin. They do not require a cancellation of negative physical controls. All coefficients are static during the stated runtime, so their runtime first derivatives are zero. This does not specify an installation ramp, zero-valued boundary pulse, finite switch-on slew, launch intervention, final halt, or reusable autonomous controller. A static installed-network theorem and those implementations are different contracts.
+
+Let c=j+2g+lambda. On the initial isometry, HJ=J(K+cI)+VJ, J*VJ=0, and J*V²J=2g²I. Therefore for every old/reference density operator, with rho its old marginal,
+
+\[
+\langle H\rangle=\operatorname{Tr}(\rho K)+c,
+\qquad
+\operatorname{Var}(H)=\operatorname{Var}_{\rho}(K)+2g^2.
+\]
+
+All cross terms with K+c vanish after compression; this is not an independence assumption about old/reference correlations. These are complete installed-H moments and are constant for all runtime times by exact static evolution. They imply initial mean in [1+c,3+c] and variance <=1+2g². Positivity also gives H>=(1+lambda)I and ||H||<=3+2j+4g+lambda. The same moment identities with hats hold for the explicitly rounded model. No conservation of old K alone follows, and no physical reference energy has been modeled.
+
+The prepared product state carries source energy j under Hc. Runtime external drive work is zero because H is static; preparation and installation work are outside this claim. Conserved total energy does not prove zero transient exchange, zero old-energy change, or a measured-energy identification. In physical units, energies are multiplied by E0, variances by E0², and the displayed times by hbar/E0. A timing or installation error would require its own bound; the window estimate above is already relative to actual time and does not certify a clock. Initial-state, timing, and parameter errors cannot be omitted from an implementation budget merely because the ideal source is a product state.
+
+## 8. Disposition and preserved limits
+
+No algebraic defect was found in the new u=1/2 model, its full complementary gap, h2 signs, purposeful scalar, residual constants, ideal window error, conditional finite-coefficient Duhamel bound, positive added cap, or complete-H moment formulas. The exact three-state block provides a separate check of the load-bearing source support and the u=0 failure mechanism. It also makes clear why the second penalty is relevant rather than cosmetic.
+
+The result remains conditional on the supplied positive source/port controls, product initialization independent of old/reference input, installed parameters and timing. It is a new implementation permission set, not a reduction to the original four onsite rays. It supplies neither an emitted finite compiler nor indefinite source reuse, reset, halt, arbitrary interleaved operations, or native/autonomous closure. A finite source-retaining hybrid composition would require the stated full joint per-use hypotheses and a separately budgeted sequence; it is not established by an isolated marginal return estimate.
+
+No scientific execution occurred in this review. Only deterministic source capture, hash/byte verification, and manifest/freeze bookkeeping are permitted evidence. The preserved u=0 calculation is a narrow failed proof route, not a global impossibility claim. Root disposition remains separate.

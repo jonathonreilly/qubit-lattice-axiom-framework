@@ -1,0 +1,39 @@
+{
+  "kind": "publication_packaging_metadata_only",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/prepare/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft",
+  "started_utc": "2026-10-16T21:23:31.893958+00:00",
+  "timeout_seconds": 60,
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/prepare/executed_source.py",
+    "bytes": 1856,
+    "sha256": "e2ba3db2222f937f78c2b08e1ef23eb578a15f83cde858f3397ace37bdb5964b"
+  },
+  "original_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/prepare_sources.py",
+    "bytes": 1856,
+    "sha256": "e2ba3db2222f937f78c2b08e1ef23eb578a15f83cde858f3397ace37bdb5964b"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/prepare/executed_source.py",
+    "bytes": 1856,
+    "sha256": "e2ba3db2222f937f78c2b08e1ef23eb578a15f83cde858f3397ace37bdb5964b"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/prepare/recorder_at_launch.py",
+    "bytes": 4607,
+    "sha256": "c28cdfa46da78e329d81010f3af9299b8458e37fb7b793c304da53052b0d879a"
+  },
+  "input_identities_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/prepare/INPUT_IDENTITIES_AT_LAUNCH.json",
+    "bytes": 9716,
+    "sha256": "ada7f3974bf73d713f652e466b33a8390702ec07128bf4f5f183b385479d05df"
+  },
+  "scientific_programs_run": 0
+}

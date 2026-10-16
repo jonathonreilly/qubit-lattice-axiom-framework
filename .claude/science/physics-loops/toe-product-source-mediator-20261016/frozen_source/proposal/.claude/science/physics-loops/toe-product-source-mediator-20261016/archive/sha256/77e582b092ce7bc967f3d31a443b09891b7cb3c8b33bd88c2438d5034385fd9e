@@ -1,0 +1,20 @@
+"""Metadata-only immutable freeze for the separate additive review."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+root = Path(__file__).resolve().parent
+destination = root / "FREEZE.json"
+assert not destination.exists()
+files = []
+for path in sorted(root.rglob("*")):
+    if path.is_file():
+        data = path.read_bytes()
+        files.append({"path": str(path.relative_to(root)), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()})
+freeze = {"schema": "immutable-additive-review-freeze-v1", "created_at": datetime.datetime.now(datetime.timezone.utc).isoformat(), "scope": "separate source-exposed analytical positive-Pauli realization review; no science execution; root extension disposition separate", "scientific_executions": 0, "excluded": ["FREEZE.json"], "members": files}
+destination.write_text(json.dumps(freeze, indent=2) + "\n")
+for member in files:
+    data = (root / member["path"]).read_bytes()
+    assert len(data) == member["bytes"] and hashlib.sha256(data).hexdigest() == member["sha256"]
+print(json.dumps({"freeze": str(destination), "members": len(files), "bytes": destination.stat().st_size, "sha256": hashlib.sha256(destination.read_bytes()).hexdigest()}, indent=2))

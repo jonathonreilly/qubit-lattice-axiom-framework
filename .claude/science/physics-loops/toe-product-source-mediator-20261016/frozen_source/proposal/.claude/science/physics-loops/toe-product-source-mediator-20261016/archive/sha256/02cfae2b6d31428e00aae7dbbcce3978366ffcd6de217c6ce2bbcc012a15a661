@@ -1,0 +1,5 @@
+# Exact exposure and chronology
+
+Read the complete new Pauli-block addendum8d166d5c after both earlier review freezes and actual original root acceptance9505e42b were already fixed. Reused the previously read complete main proposalaa1be4b5, original review517b3714 and controlling root qualificatione34377a8 without revalidating unrelated parents. Exact copies/pins are in SOURCE_MANIFEST.json. The prior compiler review and its freeze remain unchanged and are not claimed to be fresh blind evidence.
+
+This is a source-exposed same-model analytical check. The author supplied the proposed five-block identity and claimed constant shift before review. The reviewer expanded it independently, traced the exact phase, counted each incident support and checked the energy moments. No science runner, simulation, coefficient computation or experiment ran. Only metadata source capture and freeze bookkeeping ran, with actual saved source/launcher/full streams. Root's distinct qualification for this new extension is pending.

@@ -1,0 +1,23 @@
+# Positive Pauli-block realization of the product-source generator
+
+This is a separate root-authored conditional implementation refinement awaiting an exposed check. It changes neither the frozen original model nor its accepted proof. The rank-one double-excitation penalty can be replaced by a fixed set of positive Pauli blocks, with one explicit constant energy shift.
+
+Keep u=1/2 exact and j,g,lambda as in the accepted product-source construction (or their certified positive lower dyadics). Define
+
+    Hc_tilde = (j/2)(I-XA XB) + (j/2)(I-YA YB)
+             + (u/4)(I+ZA ZB) + (u/4)(I-ZA) + (u/4)(I-ZB).
+
+Each displayed block is positive; the first three are two-qubit source-edge blocks and the last two are onsite source blocks. Since |11><11|=(I-ZA-ZB+ZA ZB)/4,
+
+    Hc_tilde = j(I-L) + u|11><11| + (u/2)I = Hc + (u/2)I.
+
+Thus with the same old K, two positive XX ports and purposeful old identity lambda, the complete installed generator is exactly Hphys_tilde=Hphys+(u/2)I. This is an equality of full matrices, not a rotating-wave, Trotter or effective-Hamiltonian approximation. All blocks are installed simultaneously and are static throughout runtime.
+
+The source eigenstate |00> now has energy j+u/2. The full comparator must use exp[-i(j+u/2+2g)t], or exp[-i(jhat+u/2+2ghat)t] for the actual rounded model. The deliberate old lambda term still enters the target equality rather than disappearing into an unspecified phase. The gap, exact corrector residual, target, finite windows and full-isometry/trace bounds are unchanged by the common shift.
+
+Count incident load by the norm of every physically supplied positive block. At either source vertex the two hopping blocks contribute j+j, the ZZ block contributes u/2, and its own onsite Z block contributes u/2. The other onsite Z block does not touch this vertex. The single old/source port contributes2g. Hence the source incident sum is exactly2j+u+2g, the same conservative bound below2 already checked. The old added bound2g+2lambda and separate literal norm-three K remain unchanged. With lower rounded j,g these sums decrease. No cancellation of a negative physical block or omission of a touching edge is used.
+
+The total initial mean becomes <K>+j+u/2+2g+lambda and the variance stays Var(K)+2g^2. The exact static total moments remain conserved. Adding a constant changes the specified energy reference and full scalar-sensitive propagation; it does not change transition probabilities or source/old correlations. It must therefore be recorded explicitly rather than claimed to be physically cost-free. Preparation and installation work remain unmodeled.
+
+The resulting supplier contract requires only the fixed positive directions I-XX, I-YY and I+ZZ on the source edge, I-Z on each source site, two I+XX old/source ports and the positive old identity realization. It no longer treats an arbitrary rank-one two-qubit projector as a primitive installed block. This is a narrower explicit permission list, not a derivation from the original four onsite rays or the microscopic axioms. In particular the new source-edge directions, onsite Z directions and simultaneous couplings remain supplied. No autonomous installation, physical clock, native coupling derivation, final halt/reset, indefinite reuse, numerical execution or audit is claimed.
+

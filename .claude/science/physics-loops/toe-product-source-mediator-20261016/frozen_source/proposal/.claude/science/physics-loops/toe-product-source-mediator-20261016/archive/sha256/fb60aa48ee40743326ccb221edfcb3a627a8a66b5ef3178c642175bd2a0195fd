@@ -1,0 +1,19 @@
+{
+  "scope": "metadata only; no scientific execution",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/inspect_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check",
+  "started_at": "2026-10-16T21:33:18.382564+00:00",
+  "finished_at": "2026-10-16T21:33:18.423485+00:00",
+  "elapsed_seconds": 0.04045974975451827,
+  "exit_code": 0,
+  "timeout_seconds": 30,
+  "timed_out": false,
+  "source_sha256": "54190d8be9c64ab8838ef7447454e479ff587e0e372f1e6f034c19a10c1d058b",
+  "launcher_sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+  "source_unchanged_during_run": true,
+  "scientific_executions": 0
+}

@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/product_source_mediator_2026_10_16.py
+runner_sha256: 5369bff65801920aadcfd49f19e20cab57dcedd5211d7f346b371b1e7af9bed6
+input_fingerprint_sha256: 3c8dc3cb17129125c651af1a35990dbcc1301879200bf6f308251a478f9f9573
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: literal K=2I+ZZ; independent product source, hopping/penalty or fixed positive-Pauli blocks, two XX ports
+per_site: added incident caps below2; old norm-three K remains additional; source energy and positive old scalar retained
+per_mode: full old/source/reference output; Pauli refinement retains u/2 phase and mean shift; no determinant normalization
+per_block: one fixed target and actual-old-aging finite window; no stationary output, permanent halt or imported Bell reuse constants
+lattice_wide: three exposed analytical reviews and two decision metadata runs; zero product-source scientific runs or coefficient lists; model precision differs from actuator grid
+
+----- stderr -----
+

@@ -1,0 +1,40 @@
+{
+  "argv": [
+    "gh",
+    "pr",
+    "view",
+    "9655",
+    "--repo",
+    "jonathonreilly/qubit-lattice-axiom-framework",
+    "--json",
+    "number,url,state,isDraft,headRefName,headRefOid,baseRefName"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "start_utc": "2026-10-16T22:00:44.203941+00:00",
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_worktree_observation.py",
+    "bytes": 1577,
+    "sha256": "876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103"
+  },
+  "recorder_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_parent_pr/recorder_at_launch.py",
+    "bytes": 1577,
+    "sha256": "876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103"
+  },
+  "timeout_seconds": 60,
+  "child_source_at_launch": null,
+  "end_utc": "2026-10-16T22:00:45.804638+00:00",
+  "elapsed_seconds": 1.5993117499165237,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_parent_pr/stdout",
+    "bytes": 331,
+    "sha256": "f82342ab5064eb7bac1591a3b69ccd32b2e4c5ab29e26437116e020901ff4a66"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_parent_pr/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

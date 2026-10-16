@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T21:59:42.053022+00:00",
+  "baseRefName": "physics-loop/toe-commuting-static-edge-fixed-target-20261016",
+  "headRefName": "physics-loop/toe-weak-mediator-fixed-target-20261016",
+  "headRefOid": "50e567424771a7af433fd73e2b38b79bed635b6c",
+  "isDraft": false,
+  "number": 9655,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9655",
+  "tree": "5ccabd2c966ba12d0a30181ddf967bfdf8a689ec",
+  "base_head": "cd646f075af86b54a8c5b948ee82e5e6f0f39066",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 118368,
+    "sha256": "b3df6a2b7ead5e12dc76c273ceca26db0baf7b7ffcfd7bf98403f16306acac05"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/weak_mediator_fixed_target_2026_10_16.py",
+    "bytes": 105432,
+    "sha256": "ae47d5e43dedbd4cf9f0ba89591fb27845e8bbdace98cb8803295984fa4ae3c3"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/weak_mediator/PR_BODY.md",
+    "bytes": 2008,
+    "sha256": "2bc71ffddfb5fb57bb821e5b9d7df245d2a6ff2ad5778d830d87fc68f18d229a"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

@@ -1,0 +1,13 @@
+{
+  "source_exposed": true,
+  "same_selected_model": true,
+  "blind_independence": false,
+  "new_scientific_executions": 0,
+  "historical_scientific_replays": 0,
+  "historical_product_scientific_runs": 0,
+  "coefficient_lists_emitted": 0,
+  "scientific_replications": 0,
+  "analytical_review_metadata_runs": 3,
+  "root_science_acceptance_recording_runs": 2,
+  "retained_audit": false
+}

@@ -1,0 +1,238 @@
+{
+  "kind": "root_integration_source_review",
+  "utc": "2026-10-16T22:13:32.911156+00:00",
+  "root_read_complete_for_changed_implementation": true,
+  "retained_audit": false,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 88013,
+    "sha256": "02149a98aaacfd5209b5f34c5feb09f1f39f1995e45e37446a12e3615ab5f70e"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/product_source_common.py",
+    "bytes": 65534,
+    "sha256": "cf890790853901688d50f589cea654c53c1cf899f051216f7d489832a0eb68cc"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 40393,
+    "sha256": "a23f7a17639a0b3545531554d567daaa18577ce6f8e0da69178bfe9e43279ae6"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_product_source_qualified_publication_review/REVIEW.json",
+    "bytes": 4109,
+    "sha256": "e902abdb87b3ff6e40216b7b7a0f09400a810167026bcb8152edf81d74abb45a"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/product_source/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 3084,
+    "sha256": "709d56f2a7cef07d9775b330ae9344735c5543a7aefb532baae9eac95519613b"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/build/EXECUTION.json",
+      "bytes": 2303,
+      "sha256": "1be52e0379db4cc62e36bb38d354f1eed436c0798eb67640315e8265b5040886"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/build_v2/EXECUTION.json",
+      "bytes": 2318,
+      "sha256": "8942232377ccc8912b5e9b5603cdf8a19cdef797d1c775ed6fbaef318f24b9c4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/capture_context/EXECUTION.json",
+      "bytes": 2354,
+      "sha256": "bdec568e6f9f32918390c19ed692c46df8f5d9c37e1b9c319f06f86abbb79455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2296,
+      "sha256": "4491aed715274fe1a6fcb9a6fc5a024b3b36e18900bae7eea8869a9fd0d7a66b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/validate/EXECUTION.json",
+      "bytes": 2323,
+      "sha256": "c077cd7ab5dbce479fd00742ec9c736c396004817d37f5c2daf2c3e01377bd67"
+    }
+  ],
+  "local_members": 429,
+  "immutable_bodies": 8,
+  "direct_mathematical_parents": [
+    {
+      "path": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 118368,
+      "sha256": "b3df6a2b7ead5e12dc76c273ceca26db0baf7b7ffcfd7bf98403f16306acac05"
+    }
+  ],
+  "source_review_command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_root_recorder_proposal/record_product_source_publication_source_review.py",
+    "--root-reviewed",
+    "--expectations",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/product_source_wrapper_expectations.json",
+    "--expectations-sha",
+    "2720db9f553a20906c316b2606414cfd3ca091915cbce70ce9d003d51526891c"
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "editable_prompt_files_changed": [],
+  "verified_reuse_functions": 50,
+  "source_captures": 262,
+  "required_canonical_replacements": [],
+  "scope": "Root read the complete changed common and primary arguments, all new adapter metadata programs including final validator84b798d5/seal9aa02d8c, all four final root-recorder sources and the distinct context-contract correction. Accepted eight source bodies are reused unchanged with both controlling qualifications. Five metadata actions actually exited0; build_v2 strengthens the full five-field context guard without erasing original successful build. Controls are provenance/parser/synthetic graph only. Historical weak-mediator source/action records are implementation lineage, not product science. Captured BASE_CONTEXT facts are distinct from the actual root context bound here; the recorder now compares these real observations instead of incorrectly requiring null observed facts. This corrects a source review finding before any failed recorder execution. Parent is exact note b3df6a2b only for corrector/residual and finite-atan machinery, with no Bell physical permissions or sharper precision/reuse import. Current selected transport is actual regular OPEN attached PR9655 at50e56742; main5b0e1cc4 and instruction56c5c0ab remain. Full captured streams were inspected at relevant fields; repetitive hash inventories are mechanically verified, not claimed line-by-line mathematical proof. No canonical, staged, science execution or retained decision follows yet. No editable prompts or axioms changed.",
+  "review_expectations": {
+    "kind": "product_source_integration_review_expectations",
+    "selected_base": {
+      "base_head": "50e567424771a7af433fd73e2b38b79bed635b6c",
+      "base_tree": "5ccabd2c966ba12d0a30181ddf967bfdf8a689ec",
+      "base_branch": "physics-loop/toe-weak-mediator-fixed-target-20261016",
+      "base_pr": 9655,
+      "base_parent_branch": "physics-loop/toe-commuting-static-edge-fixed-target-20261016"
+    },
+    "expected_refs": {
+      "HEAD": "50e567424771a7af433fd73e2b38b79bed635b6c",
+      "origin/main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+      "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+    },
+    "root_completed_actual_read": true,
+    "review_markdown": "Root read the complete changed common and primary arguments, all new adapter metadata programs including final validator84b798d5/seal9aa02d8c, all four final root-recorder sources and the distinct context-contract correction. Accepted eight source bodies are reused unchanged with both controlling qualifications. Five metadata actions actually exited0; build_v2 strengthens the full five-field context guard without erasing original successful build. Controls are provenance/parser/synthetic graph only. Historical weak-mediator source/action records are implementation lineage, not product science. Captured BASE_CONTEXT facts are distinct from the actual root context bound here; the recorder now compares these real observations instead of incorrectly requiring null observed facts. This corrects a source review finding before any failed recorder execution. Parent is exact note b3df6a2b only for corrector/residual and finite-atan machinery, with no Bell physical permissions or sharper precision/reuse import. Current selected transport is actual regular OPEN attached PR9655 at50e56742; main5b0e1cc4 and instruction56c5c0ab remain. Full captured streams were inspected at relevant fields; repetitive hash inventories are mechanically verified, not claimed line-by-line mathematical proof. No canonical, staged, science execution or retained decision follows yet. No editable prompts or axioms changed.",
+    "adapter_freeze_sha256": "02149a98aaacfd5209b5f34c5feb09f1f39f1995e45e37446a12e3615ab5f70e",
+    "adapter_member_count": 429,
+    "function_reuse_entry_count": 50,
+    "source_capture_count": 262,
+    "supplemental_capture_count": 60,
+    "metadata_runs": [
+      {
+        "label": "build",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/build/EXECUTION.json",
+          "bytes": 2303,
+          "sha256": "1be52e0379db4cc62e36bb38d354f1eed436c0798eb67640315e8265b5040886"
+        },
+        "expected_exit_code": 0,
+        "expected_timed_out": false
+      },
+      {
+        "label": "build_v2",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/build_v2/EXECUTION.json",
+          "bytes": 2318,
+          "sha256": "8942232377ccc8912b5e9b5603cdf8a19cdef797d1c775ed6fbaef318f24b9c4"
+        },
+        "expected_exit_code": 0,
+        "expected_timed_out": false
+      },
+      {
+        "label": "capture_context",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/capture_context/EXECUTION.json",
+          "bytes": 2354,
+          "sha256": "bdec568e6f9f32918390c19ed692c46df8f5d9c37e1b9c319f06f86abbb79455"
+        },
+        "expected_exit_code": 0,
+        "expected_timed_out": false
+      },
+      {
+        "label": "seal",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/seal/EXECUTION.json",
+          "bytes": 2296,
+          "sha256": "4491aed715274fe1a6fcb9a6fc5a024b3b36e18900bae7eea8869a9fd0d7a66b"
+        },
+        "expected_exit_code": 0,
+        "expected_timed_out": false
+      },
+      {
+        "label": "validate",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/validate/EXECUTION.json",
+          "bytes": 2323,
+          "sha256": "c077cd7ab5dbce479fd00742ec9c736c396004817d37f5c2daf2c3e01377bd67"
+        },
+        "expected_exit_code": 0,
+        "expected_timed_out": false
+      }
+    ],
+    "source_review_sha256": "e902abdb87b3ff6e40216b7b7a0f09400a810167026bcb8152edf81d74abb45a",
+    "publication": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/weak_mediator/PUBLICATION.json",
+      "bytes": 1565,
+      "sha256": "b89dec7eb4f9deee19b5fe1dbc1936b743a248892d68bcc2fb9b57797dff814c"
+    },
+    "attachment": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/weak_mediator/ATTACHMENT.json",
+      "bytes": 446,
+      "sha256": "697ef48933df9e24f250e12c71fd30fc3fc922344cda8a6d60941030f85ad01e"
+    },
+    "source_review_execution": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_wrapper_review/EXECUTION.json",
+      "bytes": 2126,
+      "sha256": "c050486e012deecee711f25b8d51c643e0a04ef87daff57d0a2064f958f6b2f7"
+    },
+    "inventory": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2200/stdout",
+      "bytes": 3834,
+      "sha256": "155f3ac1f141a1cfa4309351c2ed9637bb61d5824ea0ca16227fd850a83fe336"
+    },
+    "observations": {
+      "head": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_head/EXECUTION.json",
+        "bytes": 1443,
+        "sha256": "66583a3ee01978ca22dc7ee6da9f3dda9e1f49387469dc3f8029b103069bccfc"
+      },
+      "tree": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_tree/EXECUTION.json",
+        "bytes": 1450,
+        "sha256": "11b87d0cae1cece7fe0121a1f01d93d879d6052923a5615bdffde36b0013a84f"
+      },
+      "branch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_branch/EXECUTION.json",
+        "bytes": 1456,
+        "sha256": "668ba8837c15978eb019af2eed7b6655842c992ed4e6ba382fb6d68fa4de8fd3"
+      },
+      "status": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_status/EXECUTION.json",
+        "bytes": 1460,
+        "sha256": "fbfad8dcad60c9c22c245c80c560b04cc4d9ead9d4cf2b4cd951bf5b4f511e6e"
+      },
+      "parent_pr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_parent_pr/EXECUTION.json",
+        "bytes": 1609,
+        "sha256": "ef4ebcde9be1cd52db612b4802e8ad92cbad8c96fe4a4da7ba22c57ca4938553"
+      }
+    },
+    "refresh_receipts": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_2200/EXECUTION.json",
+        "bytes": 1162,
+        "sha256": "1bb011c7d1da0137838bfb5ae3f6c3ae5f70700001c87c3191a754c6cddc98a9"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2200/EXECUTION.json",
+        "bytes": 1260,
+        "sha256": "4f203768e03d1e81858768217400acf85b41c7e710cdd00b8084da580695cf38"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_refs/EXECUTION.json",
+        "bytes": 1477,
+        "sha256": "6ce4beea36e4a7ba18281cd4e4c9bb12b77597adda83c8f64f5e2ed856bf60a4"
+      }
+    ],
+    "repository": "jonathonreilly/qubit-lattice-axiom-framework",
+    "direct_canonical_parents": [
+      {
+        "path": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 118368,
+        "sha256": "b3df6a2b7ead5e12dc76c273ceca26db0baf7b7ffcfd7bf98403f16306acac05"
+      }
+    ],
+    "mathematical_parent_scope": "corrector_residual_and_equality_safe_three_atan_only",
+    "physical_Bell_permissions_imported": false
+  },
+  "review_expectation_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/product_source_integration_expectations.json",
+    "bytes": 8294,
+    "sha256": "3b2fd84857fcc86ef613aa28d1c5834d27a564612f6a337f3c18f7277447f329"
+  },
+  "review_expectations_original_utf8": "{\n  \"kind\": \"product_source_integration_review_expectations\",\n  \"selected_base\": {\n    \"base_head\": \"50e567424771a7af433fd73e2b38b79bed635b6c\",\n    \"base_tree\": \"5ccabd2c966ba12d0a30181ddf967bfdf8a689ec\",\n    \"base_branch\": \"physics-loop/toe-weak-mediator-fixed-target-20261016\",\n    \"base_pr\": 9655,\n    \"base_parent_branch\": \"physics-loop/toe-commuting-static-edge-fixed-target-20261016\"\n  },\n  \"expected_refs\": {\n    \"HEAD\": \"50e567424771a7af433fd73e2b38b79bed635b6c\",\n    \"origin/main\": \"5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2\",\n    \"origin/ai/execution\": \"56c5c0ab64f532c5784e895b2f9aa6894fa334e0\"\n  },\n  \"root_completed_actual_read\": true,\n  \"review_markdown\": \"Root read the complete changed common and primary arguments, all new adapter metadata programs including final validator84b798d5/seal9aa02d8c, all four final root-recorder sources and the distinct context-contract correction. Accepted eight source bodies are reused unchanged with both controlling qualifications. Five metadata actions actually exited0; build_v2 strengthens the full five-field context guard without erasing original successful build. Controls are provenance/parser/synthetic graph only. Historical weak-mediator source/action records are implementation lineage, not product science. Captured BASE_CONTEXT facts are distinct from the actual root context bound here; the recorder now compares these real observations instead of incorrectly requiring null observed facts. This corrects a source review finding before any failed recorder execution. Parent is exact note b3df6a2b only for corrector/residual and finite-atan machinery, with no Bell physical permissions or sharper precision/reuse import. Current selected transport is actual regular OPEN attached PR9655 at50e56742; main5b0e1cc4 and instruction56c5c0ab remain. Full captured streams were inspected at relevant fields; repetitive hash inventories are mechanically verified, not claimed line-by-line mathematical proof. No canonical, staged, science execution or retained decision follows yet. No editable prompts or axioms changed.\",\n  \"adapter_freeze_sha256\": \"02149a98aaacfd5209b5f34c5feb09f1f39f1995e45e37446a12e3615ab5f70e\",\n  \"adapter_member_count\": 429,\n  \"function_reuse_entry_count\": 50,\n  \"source_capture_count\": 262,\n  \"supplemental_capture_count\": 60,\n  \"metadata_runs\": [\n    {\n      \"label\": \"build\",\n      \"receipt\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/build/EXECUTION.json\",\n        \"bytes\": 2303,\n        \"sha256\": \"1be52e0379db4cc62e36bb38d354f1eed436c0798eb67640315e8265b5040886\"\n      },\n      \"expected_exit_code\": 0,\n      \"expected_timed_out\": false\n    },\n    {\n      \"label\": \"build_v2\",\n      \"receipt\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/build_v2/EXECUTION.json\",\n        \"bytes\": 2318,\n        \"sha256\": \"8942232377ccc8912b5e9b5603cdf8a19cdef797d1c775ed6fbaef318f24b9c4\"\n      },\n      \"expected_exit_code\": 0,\n      \"expected_timed_out\": false\n    },\n    {\n      \"label\": \"capture_context\",\n      \"receipt\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/capture_context/EXECUTION.json\",\n        \"bytes\": 2354,\n        \"sha256\": \"bdec568e6f9f32918390c19ed692c46df8f5d9c37e1b9c319f06f86abbb79455\"\n      },\n      \"expected_exit_code\": 0,\n      \"expected_timed_out\": false\n    },\n    {\n      \"label\": \"seal\",\n      \"receipt\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/seal/EXECUTION.json\",\n        \"bytes\": 2296,\n        \"sha256\": \"4491aed715274fe1a6fcb9a6fc5a024b3b36e18900bae7eea8869a9fd0d7a66b\"\n      },\n      \"expected_exit_code\": 0,\n      \"expected_timed_out\": false\n    },\n    {\n      \"label\": \"validate\",\n      \"receipt\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_proposal/metadata_runs/validate/EXECUTION.json\",\n        \"bytes\": 2323,\n        \"sha256\": \"c077cd7ab5dbce479fd00742ec9c736c396004817d37f5c2daf2c3e01377bd67\"\n      },\n      \"expected_exit_code\": 0,\n      \"expected_timed_out\": false\n    }\n  ],\n  \"source_review_sha256\": \"e902abdb87b3ff6e40216b7b7a0f09400a810167026bcb8152edf81d74abb45a\",\n  \"publication\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/weak_mediator/PUBLICATION.json\",\n    \"bytes\": 1565,\n    \"sha256\": \"b89dec7eb4f9deee19b5fe1dbc1936b743a248892d68bcc2fb9b57797dff814c\"\n  },\n  \"attachment\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/weak_mediator/ATTACHMENT.json\",\n    \"bytes\": 446,\n    \"sha256\": \"697ef48933df9e24f250e12c71fd30fc3fc922344cda8a6d60941030f85ad01e\"\n  },\n  \"source_review_execution\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_wrapper_review/EXECUTION.json\",\n    \"bytes\": 2126,\n    \"sha256\": \"c050486e012deecee711f25b8d51c643e0a04ef87daff57d0a2064f958f6b2f7\"\n  },\n  \"inventory\": {\n    \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2200/stdout\",\n    \"bytes\": 3834,\n    \"sha256\": \"155f3ac1f141a1cfa4309351c2ed9637bb61d5824ea0ca16227fd850a83fe336\"\n  },\n  \"observations\": {\n    \"head\": {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_head/EXECUTION.json\",\n      \"bytes\": 1443,\n      \"sha256\": \"66583a3ee01978ca22dc7ee6da9f3dda9e1f49387469dc3f8029b103069bccfc\"\n    },\n    \"tree\": {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_tree/EXECUTION.json\",\n      \"bytes\": 1450,\n      \"sha256\": \"11b87d0cae1cece7fe0121a1f01d93d879d6052923a5615bdffde36b0013a84f\"\n    },\n    \"branch\": {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_branch/EXECUTION.json\",\n      \"bytes\": 1456,\n      \"sha256\": \"668ba8837c15978eb019af2eed7b6655842c992ed4e6ba382fb6d68fa4de8fd3\"\n    },\n    \"status\": {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_status/EXECUTION.json\",\n      \"bytes\": 1460,\n      \"sha256\": \"fbfad8dcad60c9c22c245c80c560b04cc4d9ead9d4cf2b4cd951bf5b4f511e6e\"\n    },\n    \"parent_pr\": {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_parent_pr/EXECUTION.json\",\n      \"bytes\": 1609,\n      \"sha256\": \"ef4ebcde9be1cd52db612b4802e8ad92cbad8c96fe4a4da7ba22c57ca4938553\"\n    }\n  },\n  \"refresh_receipts\": [\n    {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_2200/EXECUTION.json\",\n      \"bytes\": 1162,\n      \"sha256\": \"1bb011c7d1da0137838bfb5ae3f6c3ae5f70700001c87c3191a754c6cddc98a9\"\n    },\n    {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2200/EXECUTION.json\",\n      \"bytes\": 1260,\n      \"sha256\": \"4f203768e03d1e81858768217400acf85b41c7e710cdd00b8084da580695cf38\"\n    },\n    {\n      \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_refs/EXECUTION.json\",\n      \"bytes\": 1477,\n      \"sha256\": \"6ce4beea36e4a7ba18281cd4e4c9bb12b77597adda83c8f64f5e2ed856bf60a4\"\n    }\n  ],\n  \"repository\": \"jonathonreilly/qubit-lattice-axiom-framework\",\n  \"direct_canonical_parents\": [\n    {\n      \"path\": \"docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md\",\n      \"bytes\": 118368,\n      \"sha256\": \"b3df6a2b7ead5e12dc76c273ceca26db0baf7b7ffcfd7bf98403f16306acac05\"\n    }\n  ],\n  \"mathematical_parent_scope\": \"corrector_residual_and_equality_safe_three_atan_only\",\n  \"physical_Bell_permissions_imported\": false\n}\n"
+}

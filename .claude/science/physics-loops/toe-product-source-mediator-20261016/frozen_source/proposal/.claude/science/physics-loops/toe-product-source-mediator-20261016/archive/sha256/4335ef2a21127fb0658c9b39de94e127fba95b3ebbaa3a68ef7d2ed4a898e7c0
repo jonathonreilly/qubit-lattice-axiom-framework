@@ -1,0 +1,56 @@
+# Separate positive-Pauli realization review
+
+This is an analytical, source-exposed same-model review of the complete PAULI_BLOCK_ADDENDUM.md, 3322 bytes, SHA256 `8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f`. The original product-source reviews, both freezes, and root acceptance9505e42b/qualificatione34377a8 remain unchanged. This new refinement is not covered retroactively by those decisions. A distinct root qualification is pending.
+
+The algebra, loads and phase claim check out. There is a small permission-language qualification: the original model supplied the particular projector |11><11|, not an arbitrary rank-one projector or universal projector actuator. The new list gives a different explicit realization of that specified model up to a retained scalar. It does not prove a strict inclusion or cost ordering between physical actuator models.
+
+## Exact full-space identity
+
+The first two proposed blocks sum to
+
+    (j/2)(I-XX)+(j/2)(I-YY) = j(I-L).
+
+The remaining three blocks sum to
+
+    (u/4)(I+ZZ)+(u/4)(I-ZA)+(u/4)(I-ZB)
+      = (u/4)(3I+ZZ-ZA-ZB)
+      = u|11><11|+(u/2)I.
+
+This uses Z|0>=|0>, Z|1>=-|1>, so |11><11|=(I-ZA-ZB+ZZ)/4. Hence Hc_tilde=Hc+(u/2)I and, with exactly the same old term, ports and purposeful old identity, H_tilde=H+(u/2)I on the entire old/source Hilbert space. No projection, approximation, average, time ordering, or rotating frame is required.
+
+Every displayed I±Pauli block is positive, with eigenvalues 0 and 2. Their coefficients j/2 and u/4 are positive. The two hopping directions contain YY on the source edge; the two old/source ports remain XX only. The onsite terms must be supplied on the two source sites. All the stated blocks are simultaneously installed, not alternated by a Trotter sequence.
+
+## Scalar, gap, correlations and endpoint
+
+For exact coefficients the source spectrum is the original spectrum plus u/2: j+u/2, u/2, 2j+u/2, j+3u/2 on |00>, Psi+, Psi−, |11>. In particular the source product state has sharp energy j+u/2. For any t and any input vector, including one entangled with an arbitrary reference,
+
+    exp(-it H_tilde) = exp(-itu/2) exp(-it H).
+
+Multiplying both actual and comparison isometries by this unit scalar preserves their operator-norm difference exactly. The correct comparator therefore contains exp[-i(j+u/2+2g)t], or exp[-i(jhat+u/2+2ghat)t] for the actual rounded coefficients. Dropping that extra phase would generally change a scalar-sensitive full isometry by order one; it is not justified by the equality of reduced density operators.
+
+Subtracting the new actual source scalar leaves exactly the previous H0 and V. Thus the full Q/P gap1/2, corrector identities, old effective operator, purposeful lambda phase, full joint errors and actual-time window are unchanged. This is stronger than an error estimate: it is an exact full-space equality. It preserves every old/source/reference correlation and the original independent-source input contract. Lambda is still in the old effective operation; the added u/2 does not absorb or replace it. The u=0 finding remains only the previously established second-corrector route obstruction.
+
+## Incident support and strength
+
+At each source site, the two source-edge hopping blocks each have norm j. The source-edge ZZ block has norm u/2, its own onsite block has norm u/2, and the one incident old/source port has norm2g. The other source site's onsite block is not incident. Hence the local sum is precisely
+
+    2j + u + 2g.
+
+Counting both onsite blocks at both sites would incorrectly produce a larger incidence value; omitting either edge would incorrectly produce a smaller one. The identity part of an onsite block is assigned to that supplied onsite actuator, as in the declared block-support resource convention. It is not counted as touching every site merely because its extension is a global identity.
+
+The checked bound below2 is therefore preserved. Old added load remains bounded by2g+2lambda; literal norm-three K is still additional. The total source-block norm is 2j+u/2 for ideal j>u, but this is a different quantity from the incident sum of separately supplied blocks. Lower j/g replacements reduce the latter sum with fixed u. No rounded-gap retuning is required, because the exact common-shift identity holds with hats too. Static runtime slew remains zero; ramps, boundary values and installation are still unmodeled.
+
+## Energy and representation qualifications
+
+Adding cI to any Hermitian generator adds c to its mean and leaves variance unchanged for every state. Here c=u/2, so the full initial moments are
+
+    mean = <K> + j + u/2 + 2g + lambda,
+    variance = Var(K) + 2g^2,
+
+with hats for the actual rounded model. These complete-H moments are conserved under the corresponding static evolution. This is not a claim that old K energy is conserved, that source excitation is free, or that installation work vanishes. The changed energy reference and scalar are explicitly part of the new physical specification.
+
+The finite compiler still emits jhat, ghat and lambdahat. Expressing the primitive amplitudes jhat/2 or a complementary old-scalar amplitude lambdahat/2 can require one extra dyadic grid bit; the fixed u/4=1/8 is exact. Thus the previous p+1 numerator/denominator bound applies to the three emitted model coefficients, not automatically to every expanded actuator amplitude or matrix entry. This is consistent with the existing qualification that expanded representations and intermediates are separate. No new coefficient list or arithmetic resource observation has been produced here.
+
+The supported wording is: the fixed projector block can be realized by the displayed five positive Pauli directions with an explicit u/2 scalar shift and the stated load. It remains conditional on supplying source-edge I-XX, I-YY, I+ZZ, onsite I-Z at A and B, the two positive XX ports, the old identity realization, independent source initialization, and simultaneous static installation. It derives none of these permissions from the four onsite rays or microscopic axioms. It does not prove a native supplier, physical clock, preparation/installation budget, reset, halt or indefinite reuse.
+
+No scientific program was executed. Source capture and hash/freeze bookkeeping are the only code operations. The mathematical conclusion comes from the displayed full-space algebra. This review supports a separately qualified implementation refinement; it does not amend the original acceptance or approve a publication wrapper.

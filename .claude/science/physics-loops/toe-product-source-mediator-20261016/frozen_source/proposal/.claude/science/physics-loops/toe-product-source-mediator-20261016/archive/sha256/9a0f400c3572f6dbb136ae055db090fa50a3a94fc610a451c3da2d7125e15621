@@ -1,0 +1,7 @@
+# Additive source coverage and chronology
+
+The main review was sealed as ORIGINAL_FREEZE.json SHA97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116 before the new product finite-compiler addendum was read. Its files are immutable. This separate subpacket adds source-exposed same-model analysis of that addendum and leaves its historical open-obligation statement intact.
+
+Completely read in this separate step: product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md; weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md; weak_mediator_candidate/DYADIC_ADDENDUM.md; weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md. The first two provide the new proof and necessary interval construction. The latter two are disclosed additional exposure and contextual historical refinements, not dependencies for the new product-source interval proof or a promotion of Bell-specific structured allowances.
+
+Exact identities and full copies are in SOURCE_MANIFEST.json. The original product proposal, Bell proposal and Bell review remain available in the original packet's captures. The addendum review reconstructs the interval widths, branch identities, rounding proof, positivity and final error arithmetic by hand. Source hashing/capture and freeze operations are the only code execution in this subpacket. No compiler, coefficient list, scientific fixture, numerical run, author-program import or replay occurred. No canonical/Git/PR/audit/prompt/axiom/lock changes occurred. Root disposition is separate.

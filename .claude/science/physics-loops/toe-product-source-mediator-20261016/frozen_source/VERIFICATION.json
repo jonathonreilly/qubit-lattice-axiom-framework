@@ -1,0 +1,240 @@
+{
+  "kind": "source_integrity_and_metadata_mutants_only",
+  "checked": {
+    "note_sha256": "39febb67cc82668b8907b590232fd2eca496ff363aa3d221c1affe11cd97cd2e",
+    "body_count": 8,
+    "source_aliases": 71,
+    "archive_objects": 49,
+    "original_metadata_receipts": 5,
+    "new_scientific_executions": 0
+  },
+  "direct_original_interval_comparison": true,
+  "scoped_metadata_mutants": [
+    {
+      "name": "unbound_canonical_refusal",
+      "rejected": true,
+      "reason": "UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending"
+    },
+    {
+      "name": "altered_original_body",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "altered_root_qualification",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "altered_pauli_qualification",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "missing_main_capture",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_main_capture"
+    },
+    {
+      "name": "missing_compiler_review_stdout",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_compiler_review_stdout"
+    },
+    {
+      "name": "missing_pauli_review_launcher",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_pauli_review_launcher"
+    },
+    {
+      "name": "missing_root_acceptance_capture",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_root_acceptance_capture"
+    },
+    {
+      "name": "invented_dependency",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "invented_future_approval",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    }
+  ],
+  "direct_receipt_predicate_mutants": [
+    {
+      "receipt": "product_source_mediator_exposed_check/metadata/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/metadata/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/metadata/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/metadata/EXECUTION.json",
+      "mutation": "snapshot_bytes",
+      "rejected": true,
+      "reason": "Original and separately captured source bytes"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/metadata/EXECUTION.json",
+      "mutation": "missing_stream",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/EXECUTION.json",
+      "mutation": "snapshot_bytes",
+      "rejected": true,
+      "reason": "Original and separately captured source bytes"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/EXECUTION.json",
+      "mutation": "missing_stream",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    },
+    {
+      "receipt": "runs/product_source_root_acceptance/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "runs/product_source_root_acceptance/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "runs/product_source_root_acceptance/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "runs/product_source_root_acceptance/EXECUTION.json",
+      "mutation": "snapshot_bytes",
+      "rejected": true,
+      "reason": "Original and separately captured source bytes"
+    },
+    {
+      "receipt": "runs/product_source_root_acceptance/EXECUTION.json",
+      "mutation": "missing_stream",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/EXECUTION.json",
+      "mutation": "snapshot_bytes",
+      "rejected": true,
+      "reason": "Original and separately captured source bytes"
+    },
+    {
+      "receipt": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/EXECUTION.json",
+      "mutation": "missing_stream",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    },
+    {
+      "receipt": "runs/product_pauli_root_acceptance/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "runs/product_pauli_root_acceptance/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "runs/product_pauli_root_acceptance/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Exact original receipt including actual absent fields"
+    },
+    {
+      "receipt": "runs/product_pauli_root_acceptance/EXECUTION.json",
+      "mutation": "snapshot_bytes",
+      "rejected": true,
+      "reason": "Original and separately captured source bytes"
+    },
+    {
+      "receipt": "runs/product_pauli_root_acceptance/EXECUTION.json",
+      "mutation": "missing_stream",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    }
+  ],
+  "default_refusal": {
+    "proposed_copy_entrypoint_refused": true,
+    "reason": "UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending",
+    "canonical_file_executed": false
+  },
+  "graph_parser_primary_resolution": {
+    "parser_sha256": "ea80a55574196fcb9b3573b01f2ed51d4893612f0e15b02354d4fcb2d023ca9e",
+    "functions": [
+      "extract_runner",
+      "first_runner_path",
+      "normalize_runner_path",
+      "runner_paths"
+    ],
+    "resolved_primary": "scripts/product_source_mediator_2026_10_16.py",
+    "proposal_tree_only": true,
+    "graph_build_executed": false,
+    "canonical_graph_written": false
+  },
+  "function_rows": 23,
+  "exact_source_function_reuses": 21,
+  "mathematics_tested_by_this_execution": false,
+  "historical_scientific_replays": 0,
+  "canonical_primary_execution": null,
+  "root_source_wrapper_review": null
+}

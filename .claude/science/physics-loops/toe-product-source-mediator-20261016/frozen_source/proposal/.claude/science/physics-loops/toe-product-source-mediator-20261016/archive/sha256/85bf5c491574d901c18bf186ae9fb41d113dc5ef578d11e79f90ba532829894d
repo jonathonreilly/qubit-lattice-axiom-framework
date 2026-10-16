@@ -1,0 +1,26 @@
+"""Metadata-only source capture for the separately checked Pauli refinement."""
+from pathlib import Path
+import hashlib,json
+ROOT=Path(__file__).resolve().parent
+N=ROOT.parent.parent
+SOURCES=[
+ ('product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md',3322,'8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f'),
+ ('product_source_mediator_candidate/PROPOSAL.md',7613,'aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248'),
+ ('product_source_mediator_exposed_check/REVIEW.md',16127,'517b3714e8b73bb082ed95b8fab1b5bc07f8c4490f4c2fc8f56816fa0681bf53'),
+ ('product_source_mediator_root_review/QUALIFICATION.md',4414,'e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7'),
+]
+def ident(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+records=[]
+for rel,size,digest in SOURCES:
+ p=N/rel;b=p.read_bytes();assert ident(b)=={'bytes':size,'sha256':digest}
+ dest=ROOT/'sources'/rel;dest.parent.mkdir(parents=True,exist_ok=True);assert not dest.exists();dest.write_bytes(b)
+ assert dest.read_bytes()==b and p.read_bytes()==b
+ records.append({'original':str(p),'capture':str(dest.relative_to(ROOT)),**ident(b),'read_completely':True})
+prior=[]
+for rel,digest in [('ORIGINAL_FREEZE.json','97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116'),('finite_compiler_addendum/FREEZE.json','c0f663eb320fb96172ba94e7a4be221111a38ed4d285a0dde8b587084bdc22dc')]:
+ p=ROOT.parent/rel;b=p.read_bytes();assert ident(b)['sha256']==digest
+ f=json.loads(b)
+ for row in f['members']:assert ident((p.parent/row['path']).read_bytes())=={k:row[k] for k in ['bytes','sha256']}
+ prior.append({'path':str(p),**ident(b),'all_members_unchanged':True})
+(ROOT/'SOURCE_MANIFEST.json').write_text(json.dumps({'sources':records,'prior_freezes_verified':prior,'scientific_executions':0,'root_extension_acceptance':None},indent=2)+'\n')
+print(json.dumps({'sources_captured':len(records),'prior_freezes_unchanged':len(prior),'scientific_executions':0,'root_extension_acceptance':None},indent=2))

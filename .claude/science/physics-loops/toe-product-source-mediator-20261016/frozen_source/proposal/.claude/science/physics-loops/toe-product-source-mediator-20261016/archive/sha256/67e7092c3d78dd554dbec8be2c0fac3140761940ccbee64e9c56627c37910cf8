@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "capture": "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f",
+      "read_completely": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/PROPOSAL.md",
+      "capture": "sources/product_source_mediator_candidate/PROPOSAL.md",
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248",
+      "read_completely": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/REVIEW.md",
+      "capture": "sources/product_source_mediator_exposed_check/REVIEW.md",
+      "bytes": 16127,
+      "sha256": "517b3714e8b73bb082ed95b8fab1b5bc07f8c4490f4c2fc8f56816fa0681bf53",
+      "read_completely": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_root_review/QUALIFICATION.md",
+      "capture": "sources/product_source_mediator_root_review/QUALIFICATION.md",
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7",
+      "read_completely": true
+    }
+  ],
+  "prior_freezes_verified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/ORIGINAL_FREEZE.json",
+      "bytes": 2736,
+      "sha256": "97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116",
+      "all_members_unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/finite_compiler_addendum/FREEZE.json",
+      "bytes": 2924,
+      "sha256": "c0f663eb320fb96172ba94e7a4be221111a38ed4d285a0dde8b587084bdc22dc",
+      "all_members_unchanged": true
+    }
+  ],
+  "scientific_executions": 0,
+  "root_extension_acceptance": null
+}

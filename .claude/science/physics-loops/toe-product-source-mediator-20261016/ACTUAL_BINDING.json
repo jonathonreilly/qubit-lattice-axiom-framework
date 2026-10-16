@@ -1,0 +1,336 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T22:14:03.492361+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "4e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20",
+  "git_base": "50e567424771a7af433fd73e2b38b79bed635b6c",
+  "base_branch": "physics-loop/toe-weak-mediator-fixed-target-20261016",
+  "source_body_pins": [
+    {
+      "name": "original_proposal",
+      "source": "product_source_mediator_candidate/PROPOSAL.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 10486,
+      "end_byte_exclusive": 18099,
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    {
+      "name": "finite_compiler_addendum",
+      "source": "product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 18163,
+      "end_byte_exclusive": 22437,
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "name": "original_analytic_review",
+      "source": "product_source_mediator_exposed_check/REVIEW.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 22501,
+      "end_byte_exclusive": 38628,
+      "bytes": 16127,
+      "sha256": "517b3714e8b73bb082ed95b8fab1b5bc07f8c4490f4c2fc8f56816fa0681bf53"
+    },
+    {
+      "name": "finite_compiler_analytic_review",
+      "source": "product_source_mediator_exposed_check/finite_compiler_addendum/REVIEW.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 38699,
+      "end_byte_exclusive": 46716,
+      "bytes": 8017,
+      "sha256": "c6ac427900ab13bf671f607b393a94d52f2361b6435ae80f3a959c836458abf6"
+    },
+    {
+      "name": "controlling_root_qualification",
+      "source": "product_source_mediator_root_review/QUALIFICATION.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 46786,
+      "end_byte_exclusive": 51200,
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    },
+    {
+      "name": "pauli_realization_addendum",
+      "source": "product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 51266,
+      "end_byte_exclusive": 54588,
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    {
+      "name": "pauli_analytic_review",
+      "source": "product_source_mediator_exposed_check/pauli_block_addendum/REVIEW.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 54649,
+      "end_byte_exclusive": 61177,
+      "bytes": 6528,
+      "sha256": "4335ef2a21127fb0658c9b39de94e127fba95b3ebbaa3a68ef7d2ed4a898e7c0"
+    },
+    {
+      "name": "controlling_pauli_qualification",
+      "source": "product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 61248,
+      "end_byte_exclusive": 63581,
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "name": "original_proposal",
+      "source": "product_source_mediator_candidate/PROPOSAL.md",
+      "start_byte": 10729,
+      "end_byte_exclusive": 18342,
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    {
+      "name": "finite_compiler_addendum",
+      "source": "product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "start_byte": 18406,
+      "end_byte_exclusive": 22680,
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "name": "original_analytic_review",
+      "source": "product_source_mediator_exposed_check/REVIEW.md",
+      "start_byte": 22744,
+      "end_byte_exclusive": 38871,
+      "bytes": 16127,
+      "sha256": "517b3714e8b73bb082ed95b8fab1b5bc07f8c4490f4c2fc8f56816fa0681bf53"
+    },
+    {
+      "name": "finite_compiler_analytic_review",
+      "source": "product_source_mediator_exposed_check/finite_compiler_addendum/REVIEW.md",
+      "start_byte": 38942,
+      "end_byte_exclusive": 46959,
+      "bytes": 8017,
+      "sha256": "c6ac427900ab13bf671f607b393a94d52f2361b6435ae80f3a959c836458abf6"
+    },
+    {
+      "name": "controlling_root_qualification",
+      "source": "product_source_mediator_root_review/QUALIFICATION.md",
+      "start_byte": 47029,
+      "end_byte_exclusive": 51443,
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    },
+    {
+      "name": "pauli_realization_addendum",
+      "source": "product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "start_byte": 51509,
+      "end_byte_exclusive": 54831,
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    {
+      "name": "pauli_analytic_review",
+      "source": "product_source_mediator_exposed_check/pauli_block_addendum/REVIEW.md",
+      "start_byte": 54892,
+      "end_byte_exclusive": 61420,
+      "bytes": 6528,
+      "sha256": "4335ef2a21127fb0658c9b39de94e127fba95b3ebbaa3a68ef7d2ed4a898e7c0"
+    },
+    {
+      "name": "controlling_pauli_qualification",
+      "source": "product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "start_byte": 61491,
+      "end_byte_exclusive": 63824,
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [
+      {
+        "path": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 118368,
+        "sha256": "b3df6a2b7ead5e12dc76c273ceca26db0baf7b7ffcfd7bf98403f16306acac05"
+      }
+    ],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "physical_Bell_permissions_imported": false,
+    "scope": "Only exact corrector/residual and equality-safe finite-atan machinery. Expected bytes come from the frozen weak-mediator proposal; prepare must verify the actual installed canonical note and existing graph node. Bell controls and its structured-precision/reuse constants are not product premises."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb.json",
+    "bytes": 36405,
+    "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/54108d905a959f58d833ebfe0dab83448ffa1496cdfb8b2bcb650f091b95df4a.json",
+    "bytes": 3293,
+    "sha256": "54108d905a959f58d833ebfe0dab83448ffa1496cdfb8b2bcb650f091b95df4a"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/39febb67cc82668b8907b590232fd2eca496ff363aa3d221c1affe11cd97cd2e.md",
+    "bytes": 63734,
+    "sha256": "39febb67cc82668b8907b590232fd2eca496ff363aa3d221c1affe11cd97cd2e"
+  },
+  "source_draft_manifest": {
+    "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/3c62c7dae1dcf92b8067c656dab47ac0cbbe2cf7d9b20cf1f573f7d067836d7f.json",
+    "bytes": 43330,
+    "sha256": "3c62c7dae1dcf92b8067c656dab47ac0cbbe2cf7d9b20cf1f573f7d067836d7f"
+  },
+  "source_draft_state": {
+    "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/a84d5f075a241481d8f6ceacd284c54d7b078c979f36663998fd27d967313fba.json",
+    "bytes": 659,
+    "sha256": "a84d5f075a241481d8f6ceacd284c54d7b078c979f36663998fd27d967313fba"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e902abdb87b3ff6e40216b7b7a0f09400a810167026bcb8152edf81d74abb45a.json",
+      "bytes": 4109,
+      "sha256": "e902abdb87b3ff6e40216b7b7a0f09400a810167026bcb8152edf81d74abb45a"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/ef33a6f7cc5492eef6c53293759474c08e9f2e69bbbc9c65f6235e727fcf3873.md",
+      "bytes": 2532,
+      "sha256": "ef33a6f7cc5492eef6c53293759474c08e9f2e69bbbc9c65f6235e727fcf3873"
+    },
+    "evidence": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/35e5f8664ddd7834c11763c3263e25461abb2724587260ac945e413e41f5f6f0.json",
+      "bytes": 33317,
+      "sha256": "35e5f8664ddd7834c11763c3263e25461abb2724587260ac945e413e41f5f6f0"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/be9b9cce7ac12216a01be7da7eef562d3c8c4d59491f9c29c19d652fcf4840e0.json",
+      "bytes": 517,
+      "sha256": "be9b9cce7ac12216a01be7da7eef562d3c8c4d59491f9c29c19d652fcf4840e0"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/c050486e012deecee711f25b8d51c643e0a04ef87daff57d0a2064f958f6b2f7.json",
+      "bytes": 2126,
+      "sha256": "c050486e012deecee711f25b8d51c643e0a04ef87daff57d0a2064f958f6b2f7"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/5c39ca7c3dfddc0c8ef7a70dd7865c85f39faa0a82ba73fed679a4309c5a808b.blob",
+      "bytes": 557,
+      "sha256": "5c39ca7c3dfddc0c8ef7a70dd7865c85f39faa0a82ba73fed679a4309c5a808b"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/d6f25837eabb0ad9243629461d49c9b0bb422eb27e9ea0f4665e515d97eb37f1.py",
+      "bytes": 11700,
+      "sha256": "d6f25837eabb0ad9243629461d49c9b0bb422eb27e9ea0f4665e515d97eb37f1"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/07b43e7368ed39ece79ae1d2200dec867acd0cacc82433d3067f159a6756bbcb.json",
+      "bytes": 59684,
+      "sha256": "07b43e7368ed39ece79ae1d2200dec867acd0cacc82433d3067f159a6756bbcb"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/79c5742918a9640c269ac1e7521b7cf2c22786729d3592c09a0fb0c37391e7a2.json",
+      "bytes": 2132,
+      "sha256": "79c5742918a9640c269ac1e7521b7cf2c22786729d3592c09a0fb0c37391e7a2"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/4c63f26acdd8bb4cf0cfb1372e37ba53271f03de2d109fa79a5a7ba0f841abe1.py",
+      "bytes": 10565,
+      "sha256": "4c63f26acdd8bb4cf0cfb1372e37ba53271f03de2d109fa79a5a7ba0f841abe1"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/1202391ed066f1de3be78f34675f22a0ca882cea88b4dfc2038aa61db9663a57.blob",
+      "bytes": 360,
+      "sha256": "1202391ed066f1de3be78f34675f22a0ca882cea88b4dfc2038aa61db9663a57"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e1f490fe58a9815fcbd48abf1b3e17e45b752a69e065453a085d505d3e2fcaaf.json",
+    "bytes": 1421,
+    "sha256": "e1f490fe58a9815fcbd48abf1b3e17e45b752a69e065453a085d505d3e2fcaaf"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/4e8c0777ad42b62c4ceb9697c2b79873afa1b74fbc59df1fadaf6f867e4a633e.json",
+      "bytes": 1724,
+      "sha256": "4e8c0777ad42b62c4ceb9697c2b79873afa1b74fbc59df1fadaf6f867e4a633e"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/cf890790853901688d50f589cea654c53c1cf899f051216f7d489832a0eb68cc.py",
+      "bytes": 65534,
+      "sha256": "cf890790853901688d50f589cea654c53c1cf899f051216f7d489832a0eb68cc"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/f82342ab5064eb7bac1591a3b69ccd32b2e4c5ab29e26437116e020901ff4a66.blob",
+      "bytes": 331,
+      "sha256": "f82342ab5064eb7bac1591a3b69ccd32b2e4c5ab29e26437116e020901ff4a66"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-commuting-static-edge-fixed-target-20261016",
+      "headRefName": "physics-loop/toe-weak-mediator-fixed-target-20261016",
+      "headRefOid": "50e567424771a7af433fd73e2b38b79bed635b6c",
+      "isDraft": false,
+      "number": 9655,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9655"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/07b43e7368ed39ece79ae1d2200dec867acd0cacc82433d3067f159a6756bbcb.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/0c95244a19a0fabf534a1d3b5e033c273114b6a42f0941454078abdc91cdef89.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/1202391ed066f1de3be78f34675f22a0ca882cea88b4dfc2038aa61db9663a57.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/35e5f8664ddd7834c11763c3263e25461abb2724587260ac945e413e41f5f6f0.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/39febb67cc82668b8907b590232fd2eca496ff363aa3d221c1affe11cd97cd2e.md",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/3c62c7dae1dcf92b8067c656dab47ac0cbbe2cf7d9b20cf1f573f7d067836d7f.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/4c63f26acdd8bb4cf0cfb1372e37ba53271f03de2d109fa79a5a7ba0f841abe1.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/4e8c0777ad42b62c4ceb9697c2b79873afa1b74fbc59df1fadaf6f867e4a633e.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/54108d905a959f58d833ebfe0dab83448ffa1496cdfb8b2bcb650f091b95df4a.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/5c39ca7c3dfddc0c8ef7a70dd7865c85f39faa0a82ba73fed679a4309c5a808b.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/79c5742918a9640c269ac1e7521b7cf2c22786729d3592c09a0fb0c37391e7a2.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/a658039ce10b2f5d7773c78f75f265fd460a793cda6c844958da07e222e3238b.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/a84d5f075a241481d8f6ceacd284c54d7b078c979f36663998fd27d967313fba.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/be9b9cce7ac12216a01be7da7eef562d3c8c4d59491f9c29c19d652fcf4840e0.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/c050486e012deecee711f25b8d51c643e0a04ef87daff57d0a2064f958f6b2f7.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/cf890790853901688d50f589cea654c53c1cf899f051216f7d489832a0eb68cc.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/d6f25837eabb0ad9243629461d49c9b0bb422eb27e9ea0f4665e515d97eb37f1.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e1f490fe58a9815fcbd48abf1b3e17e45b752a69e065453a085d505d3e2fcaaf.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e902abdb87b3ff6e40216b7b7a0f09400a810167026bcb8152edf81d74abb45a.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/ef33a6f7cc5492eef6c53293759474c08e9f2e69bbbc9c65f6235e727fcf3873.md",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/f82342ab5064eb7bac1591a3b69ccd32b2e4c5ab29e26437116e020901ff4a66.blob"
+  ],
+  "origin_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

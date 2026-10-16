@@ -1,0 +1,23 @@
+# Root read guide — product-source mediator draft
+
+Read packet_text/WRAPPER.md and PR_BODY.md first. The proposed note concatenates eight complete unchanged bodies; BODY_MAP.json gives exact byte intervals, roles and hashes. The main source acceptance9505e42b and separate Pauli acceptancec79e410f are actual. Their complete qualifications are bodies five and eight. This wrapper, finalized parent pin, actual base, canonical/staged review, integration, publication and retained audit remain unbound.
+
+The sole proposed mathematical parent is the weak-mediator note's exact finite-dimensional corrector and three-atan interval machinery. Exact prerequisite source bytes are archived. Bell-state physical permissions, its structured precision/reuse corollaries, other campaign results and Git transport ancestry are not silently imported. The finalized canonical note/publication identity is still pending.
+
+## Complete changed code
+
+Read build_packet.py and primary_template.py fully. Their product-specific globals, frozen-source closure, receipt contracts, body roles, two root decisions, parent binding and exposure have changed from the captured weak-mediator machinery. Their small unchanged byte/hash/path functions are identified by CODE_REUSE_MAP.json; function reuse does not cover top-level code or changed call sites. Read inspect_packet.py, record_metadata.py and seal_packet.py fully, then the complete CODE_FULL_DIFF.patch. prepare_sources.py is a bounded adaptation with its own complete diff and captured actual execution.
+
+The primary is a provenance validator, not a scientific runner. It checks the archive, complete chosen source freezes, eight body intervals, actual receipt schemas and unresolved gates; its ordinary main refuses unbound canonical use. The inspector calls its payload interface on the proposed tree, checks original bytes, exercises bounded metadata corruptions and isolates four pure current-parser functions to resolve the explicit primary label. No scientific source is imported. No graph is built or written.
+
+## Bounded source and execution closure
+
+FROZEN_SOURCE_CLOSURE.json includes the complete main review freeze, compiler review freeze, original root decision freeze, Pauli review freeze and Pauli root decision freeze. SOURCE_MANIFEST.json maps every alias and original path to identical content-addressed bytes; ARCHIVE_INDEX.json deduplicates them. Three original source-capture inspections and two root acceptance recordings retain actual argv, original-source identity, distinct source copy, launcher/recorder and full streams. The review receipts did not originally contain stream hashes; archive pins supplement them rather than rewriting history. The actual launched path was the original inspector, not its file named executed_source.py.
+
+There are no product-source scientific programs, emitted coefficient lists, simulations or numerical reports. This packet does not recursively copy the weak-mediator publication archive or replay any of that parent's scientific programs. Machinery_reference contains only five exact baseline programs, baseline freeze, selected actual metadata receipts/captures/full streams and methodology bytes, with exact pins. The root-controlled science and Pauli source decisions are separate from approval of this new wrapper.
+
+## Metadata chronology and preservation
+
+Inspect metadata_runs/{prepare,build,inspection,seal}: each successful run has source-at-launch, recorder-at-launch, a launch-input hash inventory, actual receipt and full stdout/stderr. The preparation phase only copies the baseline machinery. After it completed, root supplied the distinct Pauli acceptance and the wrapper was extended from five bodies to eight. Before changing the earlier draft text/recorder, its eight local launch-input files were recovered by exact hashes under source_revisions/prepare_input_recovery. They are explicitly post-run recoveries matching real launch pins, not falsely labeled contemporaneous captures. The original preparation receipt is unchanged. Final wrapper/code bytes are the inputs of later build/inspection phases. Source body bytes never changed.
+
+The actual metadata inspector writes VERIFICATION.json, code diffs and function maps. These report source/provenance behavior only. They do not prove the matrices, intervals or physical availability. BOOKKEEPING_RECOVERY.md records any real failures and limits; no failed scientific attempt is invented from a metadata issue. The final recorder writes FINAL_FREEZE.json only after the seal child succeeds. Root owns subsequent review and execution decisions.

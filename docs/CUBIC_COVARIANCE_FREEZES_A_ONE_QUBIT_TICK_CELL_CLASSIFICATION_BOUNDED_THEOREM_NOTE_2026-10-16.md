@@ -131,7 +131,16 @@ V = q_x q_y q_z has f = c_1c_2c_3 + s_1s_2s_3 and
 g = (s_1c_2c_3 - c_1s_2s_3, c_1s_2c_3 + s_1c_2s_3, c_1c_2s_3 - s_1s_2c_3).
 It is unitary, covariant under the three axis half-turns, not covariant under
 the quarter turns, and dg/dk at k = 0 is the identity, so
-V = exp(i sigma.k) + O(k^2): an isotropic unit-speed Weyl cone. Each factor
+V = exp(i sigma.k) + O(k^2): an isotropic unit-speed Weyl cone. Beyond the
+cone, cos omega = f = 1 - |k|^2/2 + k_1 k_2 k_3 + O(k^4), so with n = k/|k|
+
+    omega(k) = |k| - n_1 n_2 n_3 |k|^2 + O(|k|^3),
+    group speed along n: 1 - 2 n_1 n_2 n_3 |k| + O(|k|^2).
+
+The leading lattice correction is parity odd (omega(k) != omega(-k)), linear
+in |k| a, and handed: it is the D2-invariant pseudoscalar k_1 k_2 k_3, at most
+2/(3 sqrt 3) = 0.385 |k| a in relative size. Exact cubic covariance would
+forbid this term; its presence is the price of motion on the cell. Each factor
 depends on one momentum, so the three-winding of V vanishes and its Weyl
 nodes come in compensating pairs.
 
@@ -251,4 +260,4 @@ No earlier repository claim is narrowed or contradicted.
 python3 scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=30 FAIL=0` (under a minute).
+Expected: `TOTAL: PASS=31 FAIL=0` (under a minute).

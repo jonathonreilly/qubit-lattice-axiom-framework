@@ -274,6 +274,12 @@ def main() -> int:
     jac = sp.Matrix([[sp.diff(x.subs({C[i]: sp.cos(sp.Symbol(f'k{i}')) for i in range(3)} | {S[i]: sp.sin(sp.Symbol(f'k{i}')) for i in range(3)}), sp.Symbol(f'k{j}')) for j in range(3)] for x in g])
     jac0 = jac.subs({sp.Symbol(f'k{i}'): 0 for i in range(3)})
     checks.check('product walk is an isotropic unit-speed Weyl cone at k = 0 (dg/dk = identity)', jac0 == sp.eye(3))
+    eps = sp.Symbol('eps')
+    nn = sp.symbols('n1:4')
+    fk = f.subs({C[i]: sp.cos(eps * nn[i]) for i in range(3)} | {S[i]: sp.sin(eps * nn[i]) for i in range(3)})
+    fser = sp.expand(sp.series(fk, eps, 0, 4).removeO())
+    target = 1 - eps ** 2 * (nn[0] ** 2 + nn[1] ** 2 + nn[2] ** 2) / 2 + eps ** 3 * nn[0] * nn[1] * nn[2]
+    checks.check('cos(omega) = f = 1 - |k|^2/2 + k1 k2 k3 + O(k^4): parity-odd cubic term', sp.expand(fser - target) == 0)
 
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1

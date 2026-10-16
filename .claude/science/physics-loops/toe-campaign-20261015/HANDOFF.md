@@ -90,6 +90,14 @@ cubic grid of qubits, if every cube direction is treated alike.
 - Irreducible 4-dimensional coin: no moving walk found (search only).
   Doubled spin-1 site: none in 16 + 12 + 12 starts (delta 0.05 / 0.2 / 0.5).
 
+## Next campaign (owner's direction)
+
+The top-ranked next lane is "the electron as an emergent excitation of
+neighbourhood conditions"; see OPPORTUNITY_QUEUE N1. This campaign's results
+concern free tick rules and leave that lane open. It ties directly to the
+Admissibility axiom's nearest-neighbour conditions, and the prior art to
+build on is Levin–Wen string-nets.
+
 ## Next decision
 
 - Is there a nearest-site (Kogut–Susskind-type) dispersive block tick?

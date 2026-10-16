@@ -19,3 +19,41 @@ Oct 14-15 physics-loop clock/compiler/mediator series.
    order-blind note). Check novelty against the holes note first.
 3. Born coefficient c on two-neighbour soldered menus (wake condition of fork 1).
 4. C-add convolution from one-parameter composition + locality (fork 3 wake 2).
+
+
+## Next campaign — ranked first (owner's hypothesis, 2026-10-16)
+
+**N1. The electron as an emergent excitation of neighbourhood conditions.**
+The owner's picture: an electron is not stored on a site or a block. It is a
+collective pattern set by a large system of local conditions. This campaign
+studied free, single-particle tick rules only. The freeze theorems (B1, B3
+Theorem 8, B6 Theorem 3) do not cover emergent excitations of interacting
+constraint dynamics, and if anything they make that route more natural.
+
+- **Prior art to start from.**
+  - Levin–Wen string-nets: emergent photons and fermions from local qubit
+    constraints, with fermions as string endpoints (Rev. Mod. Phys. 77,
+    871 (2005)).
+  - Kitaev toric code and 3D toric code: point excitations as violated local
+    conditions.
+  - Fermion/boson statistics emerging in 3D from string-net condensation.
+- **Framework hook.** The Admissibility axiom is a system of
+  nearest-neighbour conditions on the qubit lattice. Ask whether its
+  admissible configurations, or their violations, carry string-net or
+  gauge-like structure.
+- **Concrete tests:**
+  1. Write admissibility as local projectors on Z^3. Find its excitation
+     types: point violations, strings ending at points. Compute exchange
+     statistics. Is any excitation a fermion, i.e. an exchange sign -1 from
+     bosonic qubits?
+  2. Check cubic covariance of the constraint system and of the
+     excitations' internal labels. Do spin-1/2 labels emerge (projective
+     action of the binary octahedral group on the excitation)?
+  3. Find a local cubic-covariant tick that preserves the constraints and
+     moves such an excitation. It must evade the free-walk freeze through
+     interaction, not through extra on-site storage.
+  4. Count excitation types or copies against the B7 axis-permutation
+     labels (C3 generations).
+- **Novelty discipline.** Emergent fermions from qubits are established. New
+  work would be the identification inside this framework's axioms and the
+  cubic and generation structure, not the mechanism itself.

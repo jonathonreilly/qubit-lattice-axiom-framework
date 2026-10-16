@@ -173,6 +173,16 @@ Scripts and outputs are in
 `.claude/science/physics-loops/toe-campaign-20261015/nearest_site/` (Singular)
 and `independent_check_B7/` (the equations).
 
+*Independent check.* A second fresh agent context, given only the problem,
+re-derived the equations (79 polynomials over Q), treated both inequivalent
+signed classes, and obtained 8 minimal primes for each. It then proved
+flatness on every prime directly. For p = 1..8, tr (z1 z2 z3 W)^p reduced
+modulo the prime is a multiple of (z1 z2 z3)^p, so the characteristic
+polynomial is k-independent on the whole complex variety. This is stronger
+than the real-locus argument above and independent of it. A control shows
+the test detects k-dependence. Its scripts are in
+`.claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/`.
+
 Reading: on staggered one-amplitude blocks, propagation and locality trade
 off. Nearest-site hops cannot propagate at all. The independent check's
 two-layer walks reach two sites per tick and propagate, but with doublers.
@@ -217,10 +227,12 @@ The doubler-free tick of Theorem 2 reaches three.
   Q. The real-locus steps use only printed generators.
 - **N5 — wording.** The claim is "flat bands only". It is not a statement
   about what nature uses.
-- **N6/N7 — strongest objection.** The checker's equations could carry a
-  convention error. Mitigation: my own covariant nearest-site family also
-  has dimension 11, and all ~320 numerical solutions from both
-  implementations were flat.
+- **N6/N7 — strongest objection.** The equations could carry a convention
+  error. Mitigation: a second independent derivation with its own
+  conventions and both sign classes reaches the same conclusion by a
+  different exact test (trace powers modulo each prime). The covariant
+  family has dimension 11 in every implementation, and all ~500 numerical
+  solutions were flat.
 - **N8 — earlier claims.** This narrows the earlier "nearest-site open"
   statement to a no-go.
 

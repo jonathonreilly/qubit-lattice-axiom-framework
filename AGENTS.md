@@ -1,183 +1,82 @@
 # Agent instructions — planning branch
 
-These instructions govern repository work and scoped dispatches. They are
-maintained procedures, not scientific premises. Read the user's task before
-choosing a workflow; a process or prompt review must examine the instructions
-for correctness before applying them. Higher-priority platform instructions
-and explicit user constraints control. Report a concrete conflict rather than
-turning inherited wording into a new approval requirement.
-
+This orphan branch holds planning only and never merges into `main`.
 `origin/main` is the authority for scientific source and applied audit status.
-This orphan `ai/execution` branch contains planning only and never merges into
-main. For the current lifecycle, read
-`git show origin/main:docs/ai_methodology/SCIENCE_WORKFLOW.md`.
 
-## Scientific work
+**The rules are on main:** read
+`git show origin/main:docs/ai_methodology/SCIENCE_WORKFLOW.md`. Its evidence
+rules, owner-settings table (cadence, PR type, audit deferral, reviewer models,
+original mathematics) and stage table apply to all work dispatched from here.
+This file adds only what is specific to planning and dispatch. Higher-priority
+platform instructions and explicit user constraints control; report concrete
+conflicts rather than inventing approval gates.
 
-- Original mathematics is explicitly authorized within the user's scientific
-  task: develop new definitions, constructions, derivations, lemmas, theorems,
-  and proofs. A missing theorem can be a proof target. Prior publication,
-  external citations, exhaustion of conventional routes, and prior Lean
-  formalization are not prerequisites. Check existing work for the actual gap;
-  novelty alone neither validates nor invalidates a result.
-- Treat TOE completion as a hypothesis to establish, not an outcome a worker
-  must produce. A proof, counterexample, falsified premise, or precise open
-  obligation can all be useful results. Never manufacture progress to satisfy
-  a runtime, cycle count, positive-result quota, or reviewer expectation.
-- State the exact target, quantifiers/domain, premises, and success witness.
-  Distinguish framework premises, mathematical tools with checked hypotheses,
-  provisional lemmas, extra conditions, and empirical inputs. New framework
-  axioms/primitives require explicit owner approval; conditional exploration
-  does not silently grant them. New mathematical definitions and proved
-  consequences of stated premises are not new physical axioms or primitives.
-- Derive the contested value. An expected test constant is legitimate only
-  when justified independently of the implementation tested. Record actual
-  commands, failures, uncertainties, and unrun checks. Never fabricate a log,
-  numeric result, or PASS line or tune a prefactor to a comparison target.
-- Inspect exact prior statements and proofs. A retained label is not immunity
-  from a counterexample. A failed search is not an impossibility proof; neither
-  an arbitrary number of routes nor inability to imagine alternatives closes
-  a quantified theorem.
+## Before assigning science
 
-Complex or load-bearing proofs may need Lean verification as part of audit.
-Name the exact proof obligation and verification risk; do not make Lean a
-blanket prerequisite for discovery or regular PRs. Match formal definitions,
-hypotheses, source/toolchain revisions, checker evidence, and declared axioms
-to the claim; admitted conclusions do not count as proofs. Applicable provider
-Lean-verified results, including OpenAI's, may supply mathematical support
-without a second external verification or duplicate local build. Their scope
-does not automatically cover companion results or new physical bridges.
-Follow `docs/ai_methodology/SCIENCE_WORKFLOW.md` on the science branch for the
-full policy. Proof evidence and formal retained status remain distinct.
+Read, from this branch: `TOE_SCORECARD.md` (as-of target map; check its
+revision), `CAMPAIGN_STATUS.md` (assignments and current evidence),
+`BACKLOG_STATUS.md` (authorized landing/triage actions) and the relevant
+entries of `OPEN_PR_INVENTORY.json`. Search actual open-PR science as well as
+main, and verify changed heads before reusing anything. None of these files
+grants scientific status.
 
-## Cadence — owner-selected 2026-09-07
+## Orchestrator and dispatch
 
-Use continuous discovery, selective independent checks, and milestone PRs.
-The owner has deferred formal audits until a solid TOE is ready.
-Develop coherent blocks on an isolated candidate branch and
-checkpoint them without forcing one PR per small result. Combine provisional
-lemmas only with their open obligations and source revisions explicit.
-Independently check critical steps before substantial downstream reuse.
+- The orchestrator owns goal selection, integration and honest reporting. It
+  maintains the shared status files; workers return evidence in assigned
+  artifacts and do not rewrite shared status concurrently.
+- Delegate concrete independent work when useful, sized to available capacity,
+  not a fixed worker quota. Estimate total memory and compute across workers and
+  choose sparse or reduced representations where needed.
+- Every dispatch names: target, source revision, allowed paths, expected
+  output, verification, and external-action permissions. An analysis dispatch is
+  read-only outside its assigned output paths, with no implicit commit, push or
+  network authority.
+- A worker may explore alternatives inside its target and should challenge an
+  infeasible spec rather than force the requested answer.
+- Independent reviewers get raw artifacts and a neutral task, never the author's
+  desired conclusion. They read the complete final source of each frozen unit
+  and confirm corrections in the same session. Authors read their own complete
+  diff before requesting review.
 
-Deliver a reviewable milestone when it establishes a coherent argument,
-resolves a useful target, or the user requests handoff. Create regular PRs;
-use a draft only when the user explicitly requests one. Independent review
-checks the final source revision before authorized landing. Formal audit uses
-a separate restricted context on landed evidence; audit status remains unset
-until that path applies a verdict. Review/audit throughput does not limit
-unrelated discovery. A fully established TOE requires complete dependency and
-empirical validation; a candidate assembly is not that certification.
+## Landing coordination
 
-## Dispatch and review
+Follow current main's `docs/ai_methodology/skills/review-loop/SKILL.md` for
+the executable contract. In short, before landing the coordinator:
 
-Owner update 2026-09-08: use Astra low for focused landing reviews, with one
-independent reviewer per coherent unit. Escalate an unresolved consequential
-mathematical or premise question to Astra xhigh. Read the complete changed
-argument and necessary premises; challenge decisive evidence and physical
-identifications. Report material findings concisely. Fix or narrow known false
-claims before landing. Exhaustive new per-line, per-predicate or per-array
-certificates are not routine landing requirements; detailed certification belongs
-to the later formal audit. This focused-depth rule governs older broad checklist
-wording below. Preserve source/input identity, complete source disposition,
-original-reviewer correction confirmation and the combined integration gate.
-Reuse completed reviews without rerunning them merely to change model labels.
-Follow current main's review-loop skill for the full executable contract.
+- verifies the complete constituent and current-main path/claim disposition
+  map, including deleted and inherited content and transitive premises (hashes
+  alone do not prove completeness);
+- reads every author correction diff, finding disposition and integration
+  change relative to the frozen reviewed sources, and checks current main for
+  science loss and cross-unit interactions;
+- holds affected conclusions for the original reviewer when source bytes, a PR
+  head, provenance or interactions change, reopening only the affected closure.
 
-The orchestrator owns goal selection, integration, and honest reporting.
-Delegate concrete independent work when useful and permitted, using available
-capacity rather than a fixed worker quota. A worker may explore alternatives
-inside its assigned target; it should challenge an infeasible spec instead of
-forcing the requested answer. Estimate total memory and compute across workers;
-choose sparse or reduced representations where needed, not a fixed site-count
-rule divorced from representation size.
-
-Every dispatch names its target, source revision, allowed paths, output,
-verification, and external-action permissions. An analysis dispatch is read-only
-except for explicitly assigned output paths and has no implicit commit, push,
-or network authorization. Explicitly authorized implementation workers may
-edit their assigned files. Independent reviewers receive raw artifacts and a
-neutral task, not the author's desired conclusion. Independent reviewers read the complete final source of each frozen unit,
-with explicit path, claim, premise, transitive input and applicable-lens
-coverage, and confirm corrections in the same reviewer session. Only their
-source-bound final PASS supplies reusable review coverage. Authors still read
-their complete cold diff before requesting review.
-
-Before landing, the coordinator independently verifies the complete original
-constituent and current-main path/claim disposition map, including deleted and
-inherited content, actual transitive helper/premise closure and source hashes.
-Hashes alone do not prove that inventory complete. The coordinator reads all
-author correction diffs, all finding dispositions and proof-critical context,
-and every additional integration change relative to the frozen reviewed
-sources. It checks the effective current-main delta for science loss and
-cross-unit semantic interactions, including interactions across disjoint files.
-An unchanged source body with verified complete independent review coverage
-need not receive a second identical line-by-line read by the coordinator.
-A summary, PASS label, ancestry relation, cache-freshness result or file count
-alone is not coverage.
-
-The coordinator directly inspects additional source whenever coverage,
-provenance, a discrepancy or an interaction is uncertain. New source/input or
-premise bytes, a moved PR head even with identical bytes, new semantic
-interactions, incomplete provenance or missing same-session confirmation hold
-the affected conclusions and dependents for the original reviewer. Reopen the
-affected closure, not automatically every unrelated claim. The exact-current-
-main science-loss check and combined base/tree validation gate remain
-mandatory. This clarifies the current-main separation of review and integration;
-it does not grant an automated coverage, receipt or scientific verdict.
-
-Science authors do not apply audit verdicts. Review may regenerate audit data
-for validation but does not grant status. Only the independent audit application
-path writes verdicts; it is free to disagree with prior review. Prompt, tooling,
-and governance changes receive adversarial behavioral review proportional to
-their effect, not scientific ratification of the procedure itself.
+Reviewers do not perform GitHub mutations. Ready is a queue state, not
+acceptance; a still-draft PR never lands. Only the independent audit path
+writes verdicts.
 
 ## Evidence and recovery
 
-Keep runner output concise but sufficient to inspect every claimed check.
-Use `TOTAL: PASS=<n> FAIL=<n>` when the repo runner contract requires it; an
-exit code or summary line alone does not prove the mathematics. Preserve fuller
-reproduction evidence in the appropriate artifact rather than truncating a
-load-bearing result to meet a display limit.
+- Runner output must be sufficient to inspect every claimed check; use
+  `TOTAL: PASS=<n> FAIL=<n>` where the runner contract requires it.
+- Use isolated worktrees, stage intended paths only, and preserve dirty or
+  unpushed work on failure with recovery paths reported.
+- Never import moving-main generated audit state into a stale science branch.
+- Planning summaries and local memories are retrieval aids; confirm current
+  source before citing them.
 
-Use isolated worktrees. Preserve dirty and unpushed work on failure and report
-recovery paths. Stage intended paths only. Do not import moving-main generated
-audit state into a stale science branch. Planning summaries and local memories
-are retrieval aids; confirm current source and status before citing them.
+## Files on this branch
 
-## Planning surfaces
-
-Owner direction for the active campaign (2026-09-07): formal audit waits until
-a solid TOE is ready. Continue focused independent checks and
-reviewed source integration; do not start an audit drain from discovery or PR
-review. Mechanical integration validation is distinct from invoking an auditor
-or applying verdicts. No candidate or planning entry grants retained status.
-
-Before assigning new science, read `TOE_SCORECARD.md`, `CAMPAIGN_STATUS.md`,
-`BACKLOG_STATUS.md`, and the relevant entries in `OPEN_PR_INVENTORY.json`
-from this branch. Search
-actual open-PR science as well as main; verify changed heads before reuse.
-The campaign coordinator maintains the shared status and assignments. Workers
-return evidence in assigned artifacts rather than concurrently rewriting them.
-`BATCH_REVIEW_PLAN.md` summarizes the reviewed batching process now landed
-on main; follow current main for the executable contract. The plan and
-`NEXT_REVIEW_UNITS.json` grant no scientific PASS. `BACKLOG_CONSOLIDATIONS.json`
-records duplicate closures and transferred obligations, not landed science.
-
-The owner explicitly authorized the coordinator to manage review, fixes and
-landing of the backlog on main. All 37 draft PRs are included for actual
-ready-or-close triage under the latest owner direction. Ready is a queue
-state, not acceptance, and a still-draft PR does not land. On 2026-09-10 the
-owner released the three reservations and requested review and landing of all
-18 remaining originals; see backlog_evidence/released18-20260910/RELEASED_TARGETS.json.
-Release grants no scientific acceptance or premise adoption. Reviewers do not
-perform GitHub mutations.
-
-- `TOE_SCORECARD.md`: as-of target map; check its revision before relying on it.
-- `CAMPAIGN_STATUS.md`: common campaign assignments and current evidence.
-- `BACKLOG_STATUS.md`: current authorized landing/triage assignments and actions.
-- `OPEN_PR_INVENTORY.json`: complete pinned open-PR routing snapshot, with
-  actual Git ancestry and source-file coverage; no scientific authority.
-- `BATCH_REVIEW_PLAN.md`: concrete backlog grouping and efficiency proposal.
-- `README.md`: branch contract and edit flow.
-- `prompt_profiles/CODEX_GLOBAL.md`: versioned local Codex prompt profile.
-- `PROMPT_REVIEW_2026-09-07.md`: prompt-review scope and runtime boundaries.
+- `TOE_SCORECARD.md`, `CAMPAIGN_STATUS.md`, `BACKLOG_STATUS.md`: live planning.
+- `OPEN_PR_INVENTORY.json`, `MAIN_STATUS_SNAPSHOT.json`: pinned snapshots.
+- `BATCH_REVIEW_PLAN.md`, `NEXT_REVIEW_UNITS.json`,
+  `BACKLOG_CONSOLIDATIONS.json`, `DRAFT_DISPOSITIONS.json`: backlog review
+  records (no scientific PASS).
+- `backlog_evidence/`: landing receipts and owner-direction evidence, e.g.
+  `released18-20260910/RELEASED_TARGETS.json`.
+- `REVIEWER_MODEL_PILOT.md`: the Astra-low vs Sol-xhigh comparison behind the
+  current reviewer setting.
+- `prompt_profiles/`, `PROMPT_REVIEW_2026-09-07.md`: local prompt profiles.
+- `README.md`: branch contract and edit flow. `history/`: superseded material.

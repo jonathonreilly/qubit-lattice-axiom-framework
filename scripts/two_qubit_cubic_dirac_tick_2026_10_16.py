@@ -163,6 +163,21 @@ def main() -> int:
              all(sp.expand(kron(sp.eye(2), sp.cos(sp.pi / 4) * sp.eye(2) - sp.I * sp.sin(sp.pi / 4) * P_) * T3 - T3 * kron(sp.eye(2), sp.cos(sp.pi / 4) * sp.eye(2) - sp.I * sp.sin(sp.pi / 4) * P_)) == sp.zeros(4)
                  for P_ in (SIG[1], SIG[3])))
 
+    # Corollary (staggering): parities of the cell functions under k -> k + (pi,pi,pi)
+    Qsub = {c1: -c1, c2: -c2, c3: -c3, s1: -s1, s2: -s2, s3: -s3}
+    phi_par = [sp.cancel(PHI[i].subs(Qsub, simultaneous=True) / PHI[i]) for i in range(4)]
+    vec_par = [sp.cancel(VEC[j][0].subs(Qsub, simultaneous=True) / VEC[j][0]) for j in range(3)]
+    ck.check('under k -> k + Q: phi = (1, sum c, sum cc, c1c2c3) has parities (+,-,+,-); v0, v1, v2 have (-,+,-)',
+             phi_par == [1, -1, 1, -1] and vec_par == [-1, 1, -1])
+    # twist epsilon = -1 forces g odd: b1 = 0; then G >= 0 forces b = 0
+    G0 = G.subs(b[1], 0)
+    ck.check('staggered, epsilon = -1: with b1 = 0, G22 = -b2^2 and G02 = -b0^2 - b0 b2, so G >= 0 forces b2 = 0 then b0 = 0',
+             sp.expand(G0[2, 2] + b[2] ** 2) == 0 and sp.expand(G0.subs(b[2], 0)[2, 2]) == 0
+             and sp.expand(G0.subs(b[2], 0)[0, 2] + b[0] ** 2) == 0)
+    Gp = G.subs({b[0]: 0, b[2]: 0})
+    ck.check('staggered, epsilon = +1: with b0 = b2 = 0, G33 = 0 and G13 = -b1^2, so G >= 0 forces b1 = 0',
+             sp.expand(Gp[3, 3]) == 0 and sp.expand(Gp[1, 3] + b[1] ** 2) == 0)
+
     # algebraic point on det G = 0 with G >= 0 of rank 3
     B0, B2 = sp.Rational(11, 30), sp.Rational(3, 20)
     u = sp.Symbol('u')

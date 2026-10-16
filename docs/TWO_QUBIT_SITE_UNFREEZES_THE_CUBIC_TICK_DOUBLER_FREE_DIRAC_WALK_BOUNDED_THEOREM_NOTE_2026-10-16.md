@@ -1,7 +1,7 @@
 ---
 claim_id: two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Exact: the cone speed s = b0 + 2 b1 + b2 obeys s^2 <= 1 and the axis doublers sit at quasienergy 2 arcsin|s|, so doubler-free on the axes iff s < 1; the light-speed member is unique up to sign, b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19, (71 - 29 sqrt5)/38), with f(t,0,0) = cos t and pi-mode doublers; a walk commuting with the chirality tau3 (x) 1 splits into two one-qubit covariant cell walks and is frozen, so moving covariant cell walks must break chirality. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2). Within the family nearest-neighbour-only walks are impossible (moving needs corner hops, b2 != 0); isolated rank-two members with h2 = 0 exist at small cone speed (independent Groebner computation)."
+claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Exact: the cone speed s = b0 + 2 b1 + b2 obeys s^2 <= 1 and the axis doublers sit at quasienergy 2 arcsin|s|, so doubler-free on the axes iff s < 1; the light-speed member is unique up to sign, b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19, (71 - 29 sqrt5)/38), with f(t,0,0) = cos t and pi-mode doublers; a walk commuting with the chirality tau3 (x) 1 splits into two one-qubit covariant cell walks and is frozen, so moving covariant cell walks must break chirality. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2). Within the family nearest-neighbour-only walks are impossible (moving needs corner hops, b2 != 0); isolated rank-two members with h2 = 0 exist at small cone speed (independent Groebner computation). A one-qubit walk with sublattice-dependent coefficients (staggering) folds into this class with an extra twist symmetry and is then frozen (exact within the Clifford class; no staggered moving walk found numerically)."
 upstream_dependencies:
   - minimal_axioms
   - cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16
@@ -169,6 +169,32 @@ closed torus integrates to zero: W_3 = 0 for every member (numerically
 |W_3| < 1e-17 on a 24^3 grid for the explicit member). No member evades
 fermion doubling through a Floquet (quasienergy pi) imbalance.
 
+## Corollary — staggering one qubit per site does not unfreeze the tick
+
+Keep one qubit per site but let the hop coefficients depend on the parity
+p(x) = x1 + x2 + x3 mod 2 of the source site (a two-site cell). Rotations about
+any site preserve parity, so each family A^{(p)} is O-covariant, giving
+U_p(k) = sum_n A^{(p)}_n e^{i k.n}. With Q = (pi, pi, pi) and the projector
+(Pi_p psi)(k) = (psi(k) + (-1)^p psi(k+Q))/2, the walk acts on
+(psi(k), psi(k+Q)) as
+
+    W(k) = [[S(k), D(k)], [D(k+Q), S(k+Q)]],  S = (U0 + U1)/2,  D = (U0 - U1)/2,
+
+an O-covariant two-qubit cell walk with trivial flavor action and the extra
+symmetry W(k+Q) = tau1 W(k) tau1. Suppose W is of the Clifford form in some
+constant flavor frame (as all seven sampled two-qubit walks are). The twist is
+then a flavor involution preserving that form, so it maps tau3 to eps tau3 with
+eps = ±1 and forces g(k+Q) = eps g(k). Under k -> k+Q the vectors v0, v2 are
+odd and v1 is even (exact). For eps = -1, b1 = 0 and G >= 0 gives G22 = -b2^2
+>= 0, so b2 = 0, and then G02 = -b0^2 forces b0 = 0. For eps = +1, b0 = b2 = 0
+and G13 = -b1^2 forces b1 = 0. Either way g = 0: no motion. So within the
+Clifford class staggering is frozen (exact); for general two-qubit walks this
+rests on the universality evidence above. Independent numerical searches of the
+staggered problem itself (two coefficient families, 40 starts at motion bounds
+0.05 and 0.5, single-threaded rerun) found no moving walk, with the same two
+recurring minima (residuals 1.0e-5 at the bound, 9.5e-4). A genuinely doubled
+site, not a two-site cell, is what the unfreezing needs.
+
 ## Numerical properties of the explicit member (labelled numerical)
 
 | quantity | value |
@@ -262,4 +288,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=20 FAIL=0` (a few seconds).
+Expected: `TOTAL: PASS=23 FAIL=0` (a few seconds).

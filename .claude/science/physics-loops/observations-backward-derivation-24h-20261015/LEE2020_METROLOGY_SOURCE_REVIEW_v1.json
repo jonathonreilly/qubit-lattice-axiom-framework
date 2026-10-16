@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-16T07:36:43.292707+00:00",
+  "source_pdf_sha256": "00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a",
+  "read_text_scope": "Printed Chapter2 pages10-17; Chapter4 pages23-30; separation/calibration pages51-59 and20; article model/fit descriptions, all development exposure.",
+  "viewed_pages": [
+    39,
+    41,
+    42
+  ],
+  "visuals": {
+    "lee_metrology-39.png": "2e912d468d2e811a9fc319d3cbd8e1b08c441fe2f553fed126d78179efeeda3d",
+    "lee_metrology-41.png": "bcbdc6de49841d1c01c56ac3381061a51cd4fc29816c7e773bb9b9c7bf3d913c",
+    "lee_metrology-42.png": "1d36b75c9accc8e8d31d0f7959d15acc07d20e04abf1bbb340835fe222be4833"
+  },
+  "findings": [
+    "Table4.2 explicitly gives removed masses in grams; entries0.22402/0.65749 and0.40955/1.19856 match the Chapter11 inputs previously labeled mg. Do not interpret the numerical entries in milligrams.",
+    "Table4.5 gives full subtended wedge angles; the Chapter2/kernel beta variable is a half-width. Conversion by a factor of two is required.",
+    "Tables4.3-4.4 give unequal radii and different18/120pattern centers. Exact matched-pattern Laplace positivity is not established for the actual apparatus.",
+    "Table4.4 foil2 and foil4 center offsets are6.8+-1.1 and10.2+-1.1micrometers; these are not run-wise relative body centers.",
+    "Edge overcut is estimated0.2+-0.4micrometers; the quoted standard error is not a deterministic geometric enclosure.",
+    "Source separation uses two capacitance-derived positions plus screen and glue offsets. The Appendix46.2 versus52micrometer minimum correspondence remains unresolved."
+  ],
+  "numerical_use": "No finite-apparatus fit or physical interpretation performed from these entries.",
+  "remaining_issues": [
+    "Explicit source association of mounted foils and per-run positions",
+    "Primitive complex torque records, systematics and covariance",
+    "Complete normalized calibration model",
+    "Actual positive-Laplace or bounded-mismatch applicability"
+  ],
+  "empirical_validation": false
+}

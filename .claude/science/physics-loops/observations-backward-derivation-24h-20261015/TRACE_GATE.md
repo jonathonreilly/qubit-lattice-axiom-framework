@@ -31,3 +31,9 @@ Physical actuator calibration and smooth-history compatibility make explicit wha
 ## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
 
 Common-action reconstruction now removes chosen hidden inertia/coupling/potential functions within an explicit passive one-mode class. Trace remains upstream_support, reachability supports. No metric/gravity or quantum identification is asserted. The demonstrated x-dependent hidden translation removes a kinetic cross term as coordinate freedom, not an assumed selector.
+
+## Laboratory observation bridge — 2026-10-16T07:51Z
+
+Trace remains upstream_support with conditional reachability to the scalar inverse program. The immediate observational surface is processed torsion torque, and the missing links are physical transfer/calibration, actual source geometry and independently registered environmental scalar coefficients. Reconstructed mathematical kernels and gain-independent inequalities support those links without establishing them for the apparatus. No claim promotion follows.
+
+Next trace action: read the primary dynamical-gravity measurement and calibration equations, distinguish instrument readings from gravitationally calibrated products, and freeze raw-data roles before opening traces. Preserve the conditional action and scale assumptions rather than replacing missing inputs with chosen values.

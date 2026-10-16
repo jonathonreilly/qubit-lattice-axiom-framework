@@ -1,0 +1,30 @@
+{
+  "recorded_at_utc": "2026-10-16T07:51:17.033581+00:00",
+  "execution_attempts": {
+    "independent": {
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 0.4225912499241531,
+      "summary": {
+        "passed": 63,
+        "failed": 0
+      },
+      "sources_unchanged": true
+    },
+    "author": {
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 0.36525416700169444,
+      "summary": {
+        "passed": 366,
+        "failed": 0
+      },
+      "sources_unchanged": true
+    }
+  },
+  "failed_executions": [],
+  "timeouts": [],
+  "repairs": [],
+  "interpretation": "All actual executions completed successfully. Countercontrols reject invalid path, net-mass and Fourier shortcuts; they are expected mathematical counterexamples, not process failures.",
+  "scope": "No apparatus geometry certificate, empirical uncertainty interval or physical exclusion derived."
+}

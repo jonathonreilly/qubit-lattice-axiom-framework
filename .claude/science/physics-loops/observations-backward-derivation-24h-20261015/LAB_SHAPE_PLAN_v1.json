@@ -1,0 +1,33 @@
+{
+  "frozen_at": "2026-10-16T07:27:40.977480+00:00",
+  "author": "/root",
+  "dataset": "LEE2020_APPENDIX_A1_v1.csv",
+  "dataset_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
+  "exposure": "All rows and published fit results already exposed. This is model-development diagnostics, not an independent empirical test.",
+  "candidate": "Within the supplied static positive Newtonian-plus-attractive-scalar Green class, congruent angular/radial source patterns have a positive Laplace representation of each matched torque harmonic. Unknown common positive gain and common separation offset do not change its shape inequalities.",
+  "not_assumed_derived": [
+    "matched patterns and run-independent geometry",
+    "static homogeneous field coefficients and linear response",
+    "attractive positive exchange weights",
+    "applicable angle/torque transfer and uncertainty boxes",
+    "deterministic bounds from quoted standard errors"
+  ],
+  "derivation": [
+    "Prove complete monotonicity, log convexity and finite-difference inequalities directly from the positive Laplace measure, with a derivative-dependent mismatch bound for unequal source transforms.",
+    "Use positive Laplace sums and signed-source counterexamples as synthetic controls."
+  ],
+  "data_calculation": [
+    "Use all95rows and all3channels, retaining signs and labels.",
+    "Compute the smallest common multiplier k on printed marginal torque errors allowing nonnegative monotone central-separation values, then allowing nonnegative decreasing convex values. Equal central separations share one latent value.",
+    "Separately relax monotonic ordering to only pairs whose separation intervals [s-sigma_s,s+sigma_s] are disjoint, treating these as hypothetical deterministic boxes, not confidence regions.",
+    "Do not fit a potential, scalar mass, absolute gain or separation offset. Do not label quoted marginal sigmas as a simultaneous confidence level.",
+    "Save every residual/candidate value and active constraint. A failed conditional shape diagnostic challenges the entire measurement/model contract, not gravity alone."
+  ],
+  "prohibited": [
+    "No deleting inconvenient rows",
+    "No asserting a null physical result from feasible shape envelopes",
+    "No using published phase-aligned data as raw or independent",
+    "No treating unequal source patterns as automatically reflection positive"
+  ],
+  "delivery": "Standard support and exposed development diagnostics; commits only unless separate substantive result warrants review"
+}

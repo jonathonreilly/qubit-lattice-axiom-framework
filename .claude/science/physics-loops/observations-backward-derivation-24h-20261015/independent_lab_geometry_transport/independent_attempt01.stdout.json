@@ -1,0 +1,599 @@
+{
+  "kind": "Focused independent geometry-transport controls; no formal audit status",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "numpy": "2.4.1",
+  "sympy": "1.14.0",
+  "source_sha256": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
+  "final_source_sha256": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
+  "summary": {
+    "passed": 63,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "initial_source_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "radial_Hessian_eigenvalue",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "tangential_Hessian_eigenvalue",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "kernel_gradient_relation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "h_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "printed_radial_factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "Hessian_norm_dominates_tangential",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "printed_factor_dominates_Hessian_norm",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "rh_negative_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "B_negative_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "sign_proofs_include_massless_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_step_gradient_x_0.0_0",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.0,
+        "expected_norm": 1.0
+      }
+    },
+    {
+      "name": "complex_step_gradient_y_0.0_0",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.0,
+        "expected_norm": 0.0
+      }
+    },
+    {
+      "name": "printed_gradient_bounds_0.0_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "extra_x_term_is_necessary_0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_step_gradient_x_0.0_1",
+      "passed": true,
+      "detail": {
+        "absolute_error": 2.0816681711721685e-17,
+        "expected_norm": 0.19918287768925586
+      }
+    },
+    {
+      "name": "complex_step_gradient_y_0.0_1",
+      "passed": true,
+      "detail": {
+        "absolute_error": 2.5018537765542006e-17,
+        "expected_norm": 0.11408739617859896
+      }
+    },
+    {
+      "name": "printed_gradient_bounds_0.0_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_step_gradient_x_0.9_0",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.0,
+        "expected_norm": 0.7724823535071382
+      }
+    },
+    {
+      "name": "complex_step_gradient_y_0.9_0",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.0,
+        "expected_norm": 0.0
+      }
+    },
+    {
+      "name": "printed_gradient_bounds_0.9_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "extra_x_term_is_necessary_0.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_step_gradient_x_0.9_1",
+      "passed": true,
+      "detail": {
+        "absolute_error": 3.273069708340169e-17,
+        "expected_norm": 0.12379764998457721
+      }
+    },
+    {
+      "name": "complex_step_gradient_y_0.9_1",
+      "passed": true,
+      "detail": {
+        "absolute_error": 1.8683543625880677e-17,
+        "expected_norm": 0.07228024411310707
+      }
+    },
+    {
+      "name": "printed_gradient_bounds_0.9_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_step_gradient_x_4.0_0",
+      "passed": true,
+      "detail": {
+        "absolute_error": 1.3877787807814457e-17,
+        "expected_norm": 0.0915781944436709
+      }
+    },
+    {
+      "name": "complex_step_gradient_y_4.0_0",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.0,
+        "expected_norm": 0.0
+      }
+    },
+    {
+      "name": "printed_gradient_bounds_4.0_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "extra_x_term_is_necessary_4.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_step_gradient_x_4.0_1",
+      "passed": true,
+      "detail": {
+        "absolute_error": 4.336808689942018e-19,
+        "expected_norm": 0.004134022144958372
+      }
+    },
+    {
+      "name": "complex_step_gradient_y_4.0_1",
+      "passed": true,
+      "detail": {
+        "absolute_error": 2.168404344971009e-19,
+        "expected_norm": 0.0028066550813003748
+      }
+    },
+    {
+      "name": "printed_gradient_bounds_4.0_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "product_mass_factor_A",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.0,
+        "expected_norm": 0.13162645380424315
+      }
+    },
+    {
+      "name": "product_mass_factor_B",
+      "passed": true,
+      "detail": {
+        "absolute_error": 2.7755575615628914e-17,
+        "expected_norm": 0.15137498138447994
+      }
+    },
+    {
+      "name": "uniform_original_gap_certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_interpolated_gap_certificate",
+      "passed": true,
+      "detail": {
+        "d0": 1.5,
+        "epsA": 0.045825756949558406,
+        "epsB": 0.04387482193696061,
+        "d": 1.410299421113481
+      }
+    },
+    {
+      "name": "lever_certificate_by_convexity",
+      "passed": true,
+      "detail": {
+        "maximum_endpoint_lever": 0.35171010790137947,
+        "L": 0.6
+      }
+    },
+    {
+      "name": "all_point_transport_bounds_0.0",
+      "passed": true,
+      "detail": {
+        "largest_excess": -0.06180225868330866
+      }
+    },
+    {
+      "name": "product_coupling_bound_0.0",
+      "passed": true,
+      "detail": {
+        "largest_integrated_absolute_change": 0.007797371962438337,
+        "bound": 0.30831869199347633
+      }
+    },
+    {
+      "name": "field_difference_bound_0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_0.0_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_0.0_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_0.0_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_point_transport_bounds_0.9",
+      "passed": true,
+      "detail": {
+        "largest_excess": -0.044947286704945834
+      }
+    },
+    {
+      "name": "product_coupling_bound_0.9",
+      "passed": true,
+      "detail": {
+        "largest_integrated_absolute_change": 0.004618660221266755,
+        "bound": 0.22403770465133582
+      }
+    },
+    {
+      "name": "field_difference_bound_0.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_0.9_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_0.9_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_0.9_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_point_transport_bounds_4.0",
+      "passed": true,
+      "detail": {
+        "largest_excess": -0.002836030449347139
+      }
+    },
+    {
+      "name": "product_coupling_bound_4.0",
+      "passed": true,
+      "detail": {
+        "largest_integrated_absolute_change": 0.00013096201355959942,
+        "bound": 0.014102250689612466
+      }
+    },
+    {
+      "name": "field_difference_bound_4.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_4.0_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_4.0_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complex_and_real_harmonic_bounds_4.0_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "endpoint_gaps_do_not_certify_straight_path",
+      "passed": true,
+      "detail": {
+        "endpoint_gaps": [
+          1,
+          1
+        ],
+        "midpoint_gap": 0,
+        "unconstrained_atom_W1": 2,
+        "admitted_straight_transport_exists": false
+      }
+    },
+    {
+      "name": "zero_net_mass_nonzero_torque",
+      "passed": true,
+      "detail": {
+        "absolute_error": 0.0,
+        "expected_norm": 0.2962962962962963
+      }
+    },
+    {
+      "name": "net_mass_bound_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generic_complex_Fourier_sign_control",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "complex_envelope_is_not_real_envelope",
+      "passed": true,
+      "detail": {
+        "complex_coefficient": "2/pi",
+        "real_coefficient": "4/pi",
+        "uniform_pointwise_envelope": 1,
+        "scope": "Generic Fourier function, not apparatus realization"
+      }
+    },
+    {
+      "name": "stipulated_positive_envelope_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stipulated_positive_envelope_20000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "gradient_checks": [
+      {
+        "m": 0.0,
+        "pair": 0,
+        "gradient_x_norm": 1.0,
+        "gradient_y_norm": 0.0,
+        "Cx": 1.0,
+        "Cy": 0.0
+      },
+      {
+        "m": 0.0,
+        "pair": 1,
+        "gradient_x_norm": 0.19918287768925586,
+        "gradient_y_norm": 0.11408739617859896,
+        "Cx": 0.9016266240304953,
+        "Cy": 0.445005619464285
+      },
+      {
+        "m": 0.9,
+        "pair": 0,
+        "gradient_x_norm": 0.7724823535071382,
+        "gradient_y_norm": 0.0,
+        "Cx": 0.7724823535071382,
+        "Cy": 0.0
+      },
+      {
+        "m": 0.9,
+        "pair": 1,
+        "gradient_x_norm": 0.12379764998457721,
+        "gradient_y_norm": 0.07228024411310707,
+        "Cx": 0.6071119446594726,
+        "Cy": 0.32602909241460226
+      },
+      {
+        "m": 4.0,
+        "pair": 0,
+        "gradient_x_norm": 0.0915781944436709,
+        "gradient_y_norm": 0.0,
+        "Cx": 0.0915781944436709,
+        "Cy": 0.0
+      },
+      {
+        "m": 4.0,
+        "pair": 1,
+        "gradient_x_norm": 0.004134022144958372,
+        "gradient_y_norm": 0.0028066550813003748,
+        "Cx": 0.02723464085484481,
+        "Cy": 0.018745974102373938
+      }
+    ],
+    "split_transport": [
+      {
+        "m": 0.0,
+        "MA": 2.4,
+        "MB": 1.7,
+        "DA": 0.07742732576720185,
+        "DB": 0.06307290891019998,
+        "Cx": 1.3583920207248579,
+        "Cy": 0.8556127719713298,
+        "complex_envelope": 0.30831869199347633,
+        "real_envelope": 0.6166373839869527,
+        "maximum_field_change": 0.004571971149419811,
+        "harmonics": [
+          {
+            "n": 1,
+            "complex_coefficient_change": 0.002256391334005498,
+            "real_amplitude_change": 0.0035926845419521104,
+            "sine_coefficient_change": 0.003847100973406358,
+            "cosine_coefficient_change": 0.0023590297813118636
+          },
+          {
+            "n": 2,
+            "complex_coefficient_change": 0.00015540984694999924,
+            "real_amplitude_change": 0.00030301356696600906,
+            "sine_coefficient_change": 0.00012767258759914253,
+            "cosine_coefficient_change": 0.0002833877070231312
+          },
+          {
+            "n": 3,
+            "complex_coefficient_change": 2.2666349981665713e-06,
+            "real_amplitude_change": 4.510896412580662e-06,
+            "sine_coefficient_change": 3.1184222993811803e-06,
+            "cosine_coefficient_change": 3.2902855837110075e-06
+          }
+        ]
+      },
+      {
+        "m": 0.9,
+        "MA": 2.4,
+        "MB": 1.7,
+        "DA": 0.07742732576720185,
+        "DB": 0.06307290891019998,
+        "Cx": 0.9631597196770638,
+        "Cy": 0.6425130851453029,
+        "complex_envelope": 0.22403770465133582,
+        "real_envelope": 0.44807540930267165,
+        "maximum_field_change": 0.002801490015187225,
+        "harmonics": [
+          {
+            "n": 1,
+            "complex_coefficient_change": 0.0013811035185553248,
+            "real_amplitude_change": 0.0021096581203494044,
+            "sine_coefficient_change": 0.0022901172722544563,
+            "cosine_coefficient_change": 0.0015443932773699198
+          },
+          {
+            "n": 2,
+            "complex_coefficient_change": 0.00011436540603449634,
+            "real_amplitude_change": 0.00021917687924215474,
+            "sine_coefficient_change": 8.36459417515322e-05,
+            "cosine_coefficient_change": 0.00021288762485931428
+          },
+          {
+            "n": 3,
+            "complex_coefficient_change": 1.4625975416438887e-06,
+            "real_amplitude_change": 2.9185286509091557e-06,
+            "sine_coefficient_change": 1.9505971630384667e-06,
+            "cosine_coefficient_change": 2.1798938008162853e-06
+          }
+        ]
+      },
+      {
+        "m": 4.0,
+        "MA": 2.4,
+        "MB": 1.7,
+        "DA": 0.07742732576720185,
+        "DB": 0.06307290891019998,
+        "Cx": 0.05616896280566282,
+        "Cy": 0.044319934775750774,
+        "complex_envelope": 0.014102250689612466,
+        "real_envelope": 0.028204501379224933,
+        "maximum_field_change": 8.477205681876247e-05,
+        "harmonics": [
+          {
+            "n": 1,
+            "complex_coefficient_change": 4.0431413293835014e-05,
+            "real_amplitude_change": 5.610247314085038e-05,
+            "sine_coefficient_change": 6.218743317007122e-05,
+            "cosine_coefficient_change": 5.168674761934165e-05
+          },
+          {
+            "n": 2,
+            "complex_coefficient_change": 5.055885741294251e-06,
+            "real_amplitude_change": 6.530563513440856e-06,
+            "sine_coefficient_change": 3.150666941628635e-07,
+            "cosine_coefficient_change": 1.0106861802474562e-05
+          },
+          {
+            "n": 3,
+            "complex_coefficient_change": 2.0735591817377414e-07,
+            "real_amplitude_change": 4.0730319296231163e-07,
+            "sine_coefficient_change": 3.2041726100348996e-07,
+            "cosine_coefficient_change": 2.6328442046155535e-07
+          }
+        ]
+      }
+    ],
+    "stipulated_scale": {
+      "mass_A_kg": "65749/100000000",
+      "mass_B_kg": "7491/6250000",
+      "d_meter": "3/62500",
+      "epsilon_each_meter": "1/1000000",
+      "L_meter": "27/1000",
+      "reference_G_SI": "33371/500000000000000",
+      "unit_scalar_strength": true,
+      "cases": [
+        {
+          "m_per_meter": 0,
+          "complex_envelope_Nm": "1.02748309782297345833333333333e-10",
+          "real_envelope_Nm": "2.05496619564594691666666666667e-10",
+          "complex_envelope_fNm": "102748.309782297345833333333333",
+          "real_envelope_fNm": "205496.619564594691666666666667",
+          "displacements_are_stipulated_not_measured": true
+        },
+        {
+          "m_per_meter": 20000,
+          "complex_envelope_Nm": "8.61718199234288026679476431125e-11",
+          "real_envelope_Nm": "1.72343639846857605335895286225e-10",
+          "complex_envelope_fNm": "86171.8199234288026679476431125",
+          "real_envelope_fNm": "172343.639846857605335895286225",
+          "displacements_are_stipulated_not_measured": true
+        }
+      ],
+      "empirical_bound": false
+    }
+  },
+  "author_runner_or_results_read": false,
+  "empirical_validation": false
+}

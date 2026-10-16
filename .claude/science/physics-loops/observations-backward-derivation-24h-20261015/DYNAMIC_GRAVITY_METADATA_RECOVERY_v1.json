@@ -1,0 +1,80 @@
+{
+  "retrieved_at": "2026-10-16T07:43:27.609092+00:00",
+  "retrieval": "Ordinary unauthenticated curl with TLS verification enabled after local Python certificate-chain failure; earlier receipt preserved.",
+  "url": "https://zenodo.org/api/records/10300430",
+  "metadata_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/fuchs2024-zenodo10300430-metadata.json",
+  "metadata_sha256": "291a53a661e6fb08469de7056a01378ed7c373ce6bdc8111a7b036c90ea57620",
+  "title": "Measuring gravity with milligram levitated masses",
+  "doi": "10.48550/arXiv.2303.03545",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "description": null,
+  "files": [
+    {
+      "key": "Lock-in_data_Lateral_position=14cm_Height=48,1cm.txt",
+      "size": 43351786,
+      "checksum": "md5:95b63303276d659ab1be18da8e85080f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=14cm_Height=48,1cm.txt/content"
+      }
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=3,5cm_Height=48,1cm.txt",
+      "size": 21579572,
+      "checksum": "md5:934a03d9632ba78e8d06f668717ec4fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=3,5cm_Height=48,1cm.txt/content"
+      }
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-11cm_Height=48,1cm.txt",
+      "size": 21804845,
+      "checksum": "md5:da0775902fae03b69ba8cd563b6d00f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-11cm_Height=48,1cm.txt/content"
+      }
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=49,9cm.txt",
+      "size": 43589189,
+      "checksum": "md5:ab955ea001673d36b713c3172ca9a1aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-3cm_Height=49,9cm.txt/content"
+      }
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=53,5cm.txt",
+      "size": 43143175,
+      "checksum": "md5:80c8a0b1077bc950598698b6f277cdcd",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-3cm_Height=53,5cm.txt/content"
+      }
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=46,3cm.txt",
+      "size": 43043637,
+      "checksum": "md5:d1c4a6571fdd4d0aa8d5a8e24aaf2fe6",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-3cm_Height=46,3cm.txt/content"
+      }
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=57,1cm.txt",
+      "size": 43556713,
+      "checksum": "md5:2e099e0bd3062249020b0e720b5fd5ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-3cm_Height=57,1cm.txt/content"
+      }
+    },
+    {
+      "key": "Lock-in_data_Lateral_position=-3cm_Height=48,1cm.txt",
+      "size": 43328889,
+      "checksum": "md5:7b17edb409d9944fb548be0db1ad39e4",
+      "links": {
+        "self": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-3cm_Height=48,1cm.txt/content"
+      }
+    }
+  ],
+  "raw_trace_access": "No files downloaded or data arrays opened."
+}

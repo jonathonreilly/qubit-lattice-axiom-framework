@@ -1,0 +1,44 @@
+{
+  "verified_at_utc": "2026-10-16T07:32:04.757890+00:00",
+  "sources": {
+    "LEE2020_CALIBRATION_DERIVATION_v1.md": {
+      "sha256": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
+      "bytes": 7020
+    },
+    "LEE2020_CALIBRATION_INPUTS_v1.json": {
+      "sha256": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+      "bytes": 2157
+    },
+    "LEE2020_CALIBRATION_PLAN_v1.json": {
+      "sha256": "f30d6f9cbcf76f8313333cd45092a3046ae31241cc858ecb5b714d98a99be9ba",
+      "bytes": 2292
+    },
+    "check_lee2020_calibration_v1.py": {
+      "sha256": "939fa019d95dad301ac96b2839e914cd385ccea6b9396febd1a11f42d37bd341",
+      "bytes": 13104
+    },
+    "LEE2020_CALIBRATION_CONTROLS_v1.json": {
+      "sha256": "566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244",
+      "bytes": 13816
+    },
+    "LEE2020_CALIBRATION_FROZEN_v1.json": {
+      "sha256": "7617fdf3f68903df1db979f78805b61028c7eafecbbbf5c910be7b45772fddf3",
+      "bytes": 538
+    },
+    "LEE2020_CALIBRATION_RUN_v1.json": {
+      "sha256": "af27bc866d37e162f2650542d25d695a8ae2e96cb2b49c9362146713ef727dfd",
+      "bytes": 314
+    },
+    "LEE2020_CALIBRATION_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "LEE2020_CALIBRATION_DISCREPANCIES_v1.json": {
+      "sha256": "77a747437276a9b6bf796c54801e74dda016d9189811474cb719ca2ff3df67d1",
+      "bytes": 4022
+    }
+  },
+  "all_sources_unchanged": true,
+  "original_frozen_manifest_matches": true,
+  "independent_freezes_match_actual_files": true
+}

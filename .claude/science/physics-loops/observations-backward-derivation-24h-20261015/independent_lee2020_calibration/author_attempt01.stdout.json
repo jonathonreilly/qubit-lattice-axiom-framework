@@ -1,0 +1,466 @@
+{
+  "source_sha256": {
+    "LEE2020_CALIBRATION_DERIVATION_v1.md": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
+    "LEE2020_CALIBRATION_INPUTS_v1.json": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+    "LEE2020_CALIBRATION_PLAN_v1.json": "f30d6f9cbcf76f8313333cd45092a3046ae31241cc858ecb5b714d98a99be9ba",
+    "check_lee2020_calibration_v1.py": "939fa019d95dad301ac96b2839e914cd385ccea6b9396febd1a11f42d37bd341"
+  },
+  "passed": 62,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "P3 third harmonic coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Helmholtz outside source",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "source flux normalization",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "nine pairs to reduced (0.2, 1.0, 0.0, 0.13)",
+      "passed": true
+    },
+    {
+      "name": "centered energy sign (0.2, 1.0, 0.0, 0.13)",
+      "passed": true,
+      "error": 1.694124007745046e-12
+    },
+    {
+      "name": "offaxis inner energy sign (0.2, 1.0, 0.0, 0.13)",
+      "passed": true,
+      "error": 7.0733696677649505e-12
+    },
+    {
+      "name": "nine pairs to reduced (0.2, 1.0, 0.0, 0.49)",
+      "passed": true
+    },
+    {
+      "name": "centered energy sign (0.2, 1.0, 0.0, 0.49)",
+      "passed": true,
+      "error": 1.1225187446228801e-12
+    },
+    {
+      "name": "offaxis inner energy sign (0.2, 1.0, 0.0, 0.49)",
+      "passed": true,
+      "error": 3.4899305667579483e-12
+    },
+    {
+      "name": "nine pairs to reduced (0.2, 1.0, 0.0, 1.12)",
+      "passed": true
+    },
+    {
+      "name": "centered energy sign (0.2, 1.0, 0.0, 1.12)",
+      "passed": true,
+      "error": 1.1946936495643712e-12
+    },
+    {
+      "name": "offaxis inner energy sign (0.2, 1.0, 0.0, 1.12)",
+      "passed": true,
+      "error": 3.1158027546940303e-12
+    },
+    {
+      "name": "nine pairs to reduced (0.31, 1.2, 0.17, 0.13)",
+      "passed": true
+    },
+    {
+      "name": "centered energy sign (0.31, 1.2, 0.17, 0.13)",
+      "passed": true,
+      "error": 2.8504143489982425e-12
+    },
+    {
+      "name": "offaxis inner energy sign (0.31, 1.2, 0.17, 0.13)",
+      "passed": true,
+      "error": 9.155037838937119e-12
+    },
+    {
+      "name": "nine pairs to reduced (0.31, 1.2, 0.17, 0.49)",
+      "passed": true
+    },
+    {
+      "name": "centered energy sign (0.31, 1.2, 0.17, 0.49)",
+      "passed": true,
+      "error": 5.6493421052294934e-12
+    },
+    {
+      "name": "offaxis inner energy sign (0.31, 1.2, 0.17, 0.49)",
+      "passed": true,
+      "error": 5.130951219456392e-12
+    },
+    {
+      "name": "nine pairs to reduced (0.31, 1.2, 0.17, 1.12)",
+      "passed": true
+    },
+    {
+      "name": "centered energy sign (0.31, 1.2, 0.17, 1.12)",
+      "passed": true,
+      "error": 5.094570598718207e-12
+    },
+    {
+      "name": "offaxis inner energy sign (0.31, 1.2, 0.17, 1.12)",
+      "passed": true,
+      "error": 4.210624904299465e-12
+    },
+    {
+      "name": "small radius third harmonic 0.01",
+      "passed": true,
+      "relative_to_leading": 4.375295337588625e-05
+    },
+    {
+      "name": "small radius third harmonic 0.005",
+      "passed": true,
+      "relative_to_leading": 1.0937684655543123e-05
+    },
+    {
+      "name": "small radius third harmonic 0.0025",
+      "passed": true,
+      "relative_to_leading": 2.734386387093224e-06
+    },
+    {
+      "name": "calibration quadrature vs Fourier",
+      "passed": true,
+      "relative": 1.5543122344752192e-15,
+      "reported_quad_error": 3.683556242863218e-17
+    },
+    {
+      "name": "independent pair FFT grid 64",
+      "passed": true,
+      "relative": 4.440892098500626e-16
+    },
+    {
+      "name": "independent pair FFT grid 128",
+      "passed": true,
+      "relative": 2.220446049250313e-16
+    },
+    {
+      "name": "independent pair FFT grid 512",
+      "passed": true,
+      "relative": 4.440892098500626e-16
+    },
+    {
+      "name": "unit factor separates printed exponent candidates",
+      "passed": true
+    },
+    {
+      "name": "complex-to-real factor mutation detected",
+      "passed": true
+    },
+    {
+      "name": "metrology derivative step inner_mass",
+      "passed": true
+    },
+    {
+      "name": "metrology derivative step outer_mass",
+      "passed": true
+    },
+    {
+      "name": "metrology derivative step inner_radius",
+      "passed": true
+    },
+    {
+      "name": "metrology derivative step outer_radius",
+      "passed": true
+    },
+    {
+      "name": "Green angular vs spectral (0.0, 0.0, 0.7, 0, 0.0)",
+      "passed": true,
+      "absolute_error": 2.220446049250313e-16,
+      "quad_error": 5.051605489676977e-12
+    },
+    {
+      "name": "axial point normalization (0.7, 0.0)",
+      "passed": true
+    },
+    {
+      "name": "wrong 4pi normalization detected (0.0, 0.0, 0.7, 0, 0.0)",
+      "passed": true
+    },
+    {
+      "name": "Green angular vs spectral (0.0, 0.0, 1.1, 0, 1.3)",
+      "passed": true,
+      "absolute_error": 2.7755575615628914e-17,
+      "quad_error": 7.870088709458174e-13
+    },
+    {
+      "name": "axial point normalization (1.1, 1.3)",
+      "passed": true
+    },
+    {
+      "name": "wrong 4pi normalization detected (0.0, 0.0, 1.1, 0, 1.3)",
+      "passed": true
+    },
+    {
+      "name": "Green angular vs spectral (0.3, 0.7, 0.8, 1, 0.0)",
+      "passed": true,
+      "absolute_error": 3.3306690738754696e-16,
+      "quad_error": 5.663248931704244e-13
+    },
+    {
+      "name": "wrong 4pi normalization detected (0.3, 0.7, 0.8, 1, 0.0)",
+      "passed": true
+    },
+    {
+      "name": "Green angular vs spectral (0.4, 0.8, 1.0, 2, 0.9)",
+      "passed": true,
+      "absolute_error": 6.938893903907228e-18,
+      "quad_error": 6.664651677971327e-14
+    },
+    {
+      "name": "wrong 4pi normalization detected (0.4, 0.8, 1.0, 2, 0.9)",
+      "passed": true
+    },
+    {
+      "name": "Green angular vs spectral (1.0, 0.5, 0.6, 3, 2.0)",
+      "passed": true,
+      "absolute_error": 5.984795992119984e-17,
+      "quad_error": 7.99227771093641e-12
+    },
+    {
+      "name": "wrong 4pi normalization detected (1.0, 0.5, 0.6, 3, 2.0)",
+      "passed": true
+    },
+    {
+      "name": "volume mass normalization (0.0, 2)",
+      "passed": true
+    },
+    {
+      "name": "complete wedge spatial vs spectral (0.0, 2)",
+      "passed": true,
+      "absolute_error": 1.504293217768904e-12,
+      "coarse_error": 1.5098497384638532e-06,
+      "quad_error": 1.1804434830814793e-10
+    },
+    {
+      "name": "wedge grid refinement (0.0, 2)",
+      "passed": true
+    },
+    {
+      "name": "wedge 4pi mutation (0.0, 2)",
+      "passed": true
+    },
+    {
+      "name": "volume mass normalization (0.0, 4)",
+      "passed": true
+    },
+    {
+      "name": "complete wedge spatial vs spectral (0.0, 4)",
+      "passed": true,
+      "absolute_error": 2.1409444312878168e-12,
+      "coarse_error": 3.3743691523380366e-07,
+      "quad_error": 2.258875450779914e-10
+    },
+    {
+      "name": "wedge grid refinement (0.0, 4)",
+      "passed": true
+    },
+    {
+      "name": "wedge 4pi mutation (0.0, 4)",
+      "passed": true
+    },
+    {
+      "name": "volume mass normalization (0.7, 2)",
+      "passed": true
+    },
+    {
+      "name": "complete wedge spatial vs spectral (0.7, 2)",
+      "passed": true,
+      "absolute_error": 1.3349703287257597e-12,
+      "coarse_error": 1.4835392818969562e-06,
+      "quad_error": 1.2886751051424427e-10
+    },
+    {
+      "name": "wedge grid refinement (0.7, 2)",
+      "passed": true
+    },
+    {
+      "name": "wedge 4pi mutation (0.7, 2)",
+      "passed": true
+    },
+    {
+      "name": "volume mass normalization (0.7, 4)",
+      "passed": true
+    },
+    {
+      "name": "complete wedge spatial vs spectral (0.7, 4)",
+      "passed": true,
+      "absolute_error": 2.0618743257899697e-12,
+      "coarse_error": 3.315659693447484e-07,
+      "quad_error": 2.1038296269487599e-10
+    },
+    {
+      "name": "wedge grid refinement (0.7, 4)",
+      "passed": true
+    },
+    {
+      "name": "wedge 4pi mutation (0.7, 4)",
+      "passed": true
+    }
+  ],
+  "details": {
+    "calibration": {
+      "geometric_A3_over_G_SI": 3.149542200936473e-05,
+      "published_Ncal_nominal_fNm": 2.1094,
+      "G_implied_by_published_computed_Ncal": 6.69748130179935e-11,
+      "literal_printed_G": 667420000000.0,
+      "labeled_negative_exponent_candidate": 6.6742e-11,
+      "candidate_predicted_nominal_fNm": 2.1020674557490207,
+      "literal_predicted_nominal_fNm": 2.102067455749021e+22,
+      "candidate_minus_published_fNm": -0.007332544250979289,
+      "status": "Published-model consistency only. Ncal is calculated, so implied G is not a measurement."
+    },
+    "metrology_sensitivity_diagnostics": [
+      {
+        "parameter": "inner_mass",
+        "derivative_fNm_per_SI_unit": 4364.848638438348,
+        "coherent_parameter_sigma_fNm": 0.00043648486384383474,
+        "printed_sigma_fNm": 0.000209,
+        "difference_fNm": 0.00022748486384383473,
+        "ratio": 2.0884443246116495,
+        "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+      },
+      {
+        "parameter": "outer_mass",
+        "derivative_fNm_per_SI_unit": 1.849434678678096,
+        "coherent_parameter_sigma_fNm": 0.0025892085501493345,
+        "printed_sigma_fNm": 0.00125,
+        "difference_fNm": 0.0013392085501493344,
+        "ratio": 2.0713668401194676,
+        "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+      },
+      {
+        "parameter": "inner_radius",
+        "derivative_fNm_per_SI_unit": 383.49891530152735,
+        "coherent_parameter_sigma_fNm": 0.0042184880683168,
+        "printed_sigma_fNm": 0.00271,
+        "difference_fNm": 0.0015084880683168002,
+        "ratio": 1.556637663585535,
+        "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+      },
+      {
+        "parameter": "outer_radius",
+        "derivative_fNm_per_SI_unit": -44.21065396258939,
+        "coherent_parameter_sigma_fNm": 0.0026526392377553636,
+        "printed_sigma_fNm": 0.00333,
+        "difference_fNm": -0.0006773607622446364,
+        "ratio": 0.7965883596862954,
+        "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+      }
+    ],
+    "centering_diagnostics": {
+      "radial": [
+        {
+          "displacement_orientation_rad": 0.0,
+          "radial_delta_fNm": 0.004713816064562781
+        },
+        {
+          "displacement_orientation_rad": 0.5235987755982988,
+          "radial_delta_fNm": 0.004713846556925194
+        }
+      ],
+      "vertical_delta_fNm": -0.0027241239329809375,
+      "published_radial_table_fNm": 0.00475,
+      "published_radial_prose_fNm": 0.0042,
+      "published_vertical_fNm": -0.0027,
+      "scope": "Ideal six-sphere model, not a complete reproduction of apparatus uncertainty or null corrections."
+    },
+    "reported_scale_arithmetic": {
+      "gamma_from_reported_torques": 1.0119820033151787,
+      "gamma_sigma_if_independent_reported_errors": 0.0047567650544921595,
+      "independence_status": "Arithmetic diagnostic conditional on independent supplied error summaries; covariance not derived."
+    },
+    "point_green": [
+      {
+        "rA": 0.0,
+        "rB": 0.0,
+        "gap": 0.7,
+        "n": 0,
+        "mu": 0.0,
+        "angular": 1.4285714285714288,
+        "bessel": 1.4285714285714286
+      },
+      {
+        "rA": 0.0,
+        "rB": 0.0,
+        "gap": 1.1,
+        "n": 0,
+        "mu": 1.3,
+        "angular": 0.21755356567614045,
+        "bessel": 0.21755356567614043
+      },
+      {
+        "rA": 0.3,
+        "rB": 0.7,
+        "gap": 0.8,
+        "n": 1,
+        "mu": 0.0,
+        "angular": 0.08261844542862647,
+        "bessel": 0.0826184454286268
+      },
+      {
+        "rA": 0.4,
+        "rB": 0.8,
+        "gap": 1.0,
+        "n": 2,
+        "mu": 0.9,
+        "angular": 0.007931693623195622,
+        "bessel": 0.007931693623195629
+      },
+      {
+        "rA": 1.0,
+        "rB": 0.5,
+        "gap": 0.6,
+        "n": 3,
+        "mu": 2.0,
+        "angular": 0.007372762174017885,
+        "bessel": 0.007372762174017945
+      }
+    ],
+    "finite_wedge": [
+      {
+        "mu": 0.0,
+        "n": 2,
+        "coarse_spatial": -0.025975310961415234,
+        "fine_spatial": -0.025976820809649404,
+        "spectral": -0.025976820811153697,
+        "absolute_error": 1.504293217768904e-12,
+        "torque_amplitude": 0.051953641622307395
+      },
+      {
+        "mu": 0.0,
+        "n": 4,
+        "coarse_spatial": -0.0007989366133995873,
+        "fine_spatial": -0.0007992740524557655,
+        "spectral": -0.0007992740503148211,
+        "absolute_error": 2.1409444312878168e-12,
+        "torque_amplitude": 0.0031970962012592844
+      },
+      {
+        "mu": 0.7,
+        "n": 2,
+        "coarse_spatial": -0.02274761077049011,
+        "fine_spatial": -0.022749094308437037,
+        "spectral": -0.022749094309772008,
+        "absolute_error": 1.3349703287257597e-12,
+        "torque_amplitude": 0.045498188619544015
+      },
+      {
+        "mu": 0.7,
+        "n": 4,
+        "coarse_spatial": -0.0007522037677565249,
+        "fine_spatial": -0.000752535335787744,
+        "spectral": -0.0007525353337258697,
+        "absolute_error": 2.0618743257899697e-12,
+        "torque_amplitude": 0.0030101413349034787
+      }
+    ]
+  },
+  "data_role": "Pinned exposed published metrology/model summaries and synthetic kernel controls; no torque-data fit or empirical holdout",
+  "precision": "Floating quadrature/FFT checks, not certified enclosures",
+  "empirical_validation": false
+}

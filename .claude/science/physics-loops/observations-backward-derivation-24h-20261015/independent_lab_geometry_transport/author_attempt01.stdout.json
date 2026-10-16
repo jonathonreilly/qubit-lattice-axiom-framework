@@ -1,0 +1,2065 @@
+{
+  "checks": [
+    {
+      "name": "radial derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "gradient coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "force radial decrease",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "x numerator gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "y numerator gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "maximum_ratio": 0.050976087845022916,
+      "name": "pair transport 0.0:0.00000",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.002767982255720343,
+      "name": "mass transport 0.0:0.00000",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04717955677643241,
+      "name": "pair transport 0.0:0.15325",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0025976862448051042,
+      "name": "mass transport 0.0:0.15325",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.042584519191269696,
+      "name": "pair transport 0.0:0.30650",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0023865028780203795,
+      "name": "mass transport 0.0:0.30650",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03729040098562268,
+      "name": "pair transport 0.0:0.45975",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0021362508867635143,
+      "name": "mass transport 0.0:0.45975",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03138987181579803,
+      "name": "pair transport 0.0:0.61299",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0018484849353624414,
+      "name": "mass transport 0.0:0.61299",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.024969610817016263,
+      "name": "pair transport 0.0:0.76624",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0015248748994039253,
+      "name": "mass transport 0.0:0.76624",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.024395855085390845,
+      "name": "pair transport 0.0:0.91949",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.001167583777244859,
+      "name": "mass transport 0.0:0.91949",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.0266427372411496,
+      "name": "pair transport 0.0:1.07274",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0007796080888638748,
+      "name": "mass transport 0.0:1.07274",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.028857548674413674,
+      "name": "pair transport 0.0:1.22599",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0003650548310089864,
+      "name": "mass transport 0.0:1.22599",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03190259967695129,
+      "name": "pair transport 0.0:1.37924",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 7.066012973991817e-05,
+      "name": "mass transport 0.0:1.37924",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.034550295183706864,
+      "name": "pair transport 0.0:1.53248",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0005206972403153658,
+      "name": "mass transport 0.0:1.53248",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.036401895494130566,
+      "name": "pair transport 0.0:1.68573",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0009767596403658957,
+      "name": "mass transport 0.0:1.68573",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03748442384942931,
+      "name": "pair transport 0.0:1.83898",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0014291356221995347,
+      "name": "mass transport 0.0:1.83898",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03783308503707256,
+      "name": "pair transport 0.0:1.99223",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.001866814855155742,
+      "name": "mass transport 0.0:1.99223",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.041237519396165254,
+      "name": "pair transport 0.0:2.14548",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.002277683463662098,
+      "name": "mass transport 0.0:2.14548",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04730635226737048,
+      "name": "pair transport 0.0:2.29873",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.002648812255825605,
+      "name": "mass transport 0.0:2.29873",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05249866728561842,
+      "name": "pair transport 0.0:2.45197",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0029668592841753986,
+      "name": "mass transport 0.0:2.45197",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05660854732058058,
+      "name": "pair transport 0.0:2.60522",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0032186080255494276,
+      "name": "mass transport 0.0:2.60522",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.059436121425637894,
+      "name": "pair transport 0.0:2.75847",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0033916521981684137,
+      "name": "mass transport 0.0:2.75847",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.06080128949619968,
+      "name": "pair transport 0.0:2.91172",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.003475216073961763,
+      "name": "mass transport 0.0:2.91172",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.06055927216156173,
+      "name": "pair transport 0.0:3.06497",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0034610666965736014,
+      "name": "mass transport 0.0:3.06497",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05861652362946791,
+      "name": "pair transport 0.0:3.21822",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0033444369718673237,
+      "name": "mass transport 0.0:3.21822",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05494510158570645,
+      "name": "pair transport 0.0:3.37147",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0031248448381574908,
+      "name": "mass transport 0.0:3.37147",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.049593381373599116,
+      "name": "pair transport 0.0:3.52471",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0028066742106890963,
+      "name": "mass transport 0.0:3.52471",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.042691149062205995,
+      "name": "pair transport 0.0:3.67796",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0023993878492361387,
+      "name": "mass transport 0.0:3.67796",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03444766330033602,
+      "name": "pair transport 0.0:3.83121",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0019172761987658788,
+      "name": "mass transport 0.0:3.83121",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.026421432054728345,
+      "name": "pair transport 0.0:3.98446",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0013787078977397762,
+      "name": "mass transport 0.0:3.98446",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.027039305009236892,
+      "name": "pair transport 0.0:4.13771",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.000804927027188677,
+      "name": "mass transport 0.0:4.13771",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.028152940702134067,
+      "name": "pair transport 0.0:4.29096",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0002185226163816255,
+      "name": "mass transport 0.0:4.29096",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.029239772773929234,
+      "name": "pair transport 0.0:4.44420",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0003582415826639358,
+      "name": "mass transport 0.0:4.44420",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.031458188096094464,
+      "name": "pair transport 0.0:4.59745",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0009050201868978436,
+      "name": "mass transport 0.0:4.59745",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03611095619757075,
+      "name": "pair transport 0.0:4.75070",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0014046975641003017,
+      "name": "mass transport 0.0:4.75070",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.039936518630905374,
+      "name": "pair transport 0.0:4.90395",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.001844263423094693,
+      "name": "mass transport 0.0:4.90395",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04274601775380111,
+      "name": "pair transport 0.0:5.05720",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0022151750377522412,
+      "name": "mass transport 0.0:5.05720",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04656909353670327,
+      "name": "pair transport 0.0:5.21045",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.002513213523440676,
+      "name": "mass transport 0.0:5.21045",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.051115013010995296,
+      "name": "pair transport 0.0:5.36369",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0027379172328006293,
+      "name": "mass transport 0.0:5.36369",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05426315061937388,
+      "name": "pair transport 0.0:5.51694",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0028917279059309502,
+      "name": "mass transport 0.0:5.51694",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.056039395281643416,
+      "name": "pair transport 0.0:5.67019",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0029790076974280256,
+      "name": "mass transport 0.0:5.67019",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.056505441392587084,
+      "name": "pair transport 0.0:5.82344",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.0030050779136719962,
+      "name": "mass transport 0.0:5.82344",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05574793346095701,
+      "name": "pair transport 0.0:5.97669",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.002975399642986435,
+      "name": "mass transport 0.0:5.97669",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05386861199110881,
+      "name": "pair transport 0.0:6.12994",
+      "passed": true
+    },
+    {
+      "bound": 0.1909661489833076,
+      "error": 0.002894972587757661,
+      "name": "mass transport 0.0:6.12994",
+      "passed": true
+    },
+    {
+      "amplitude": 0.0016131025156556865,
+      "bound": 0.1909661489833076,
+      "name": "complex harmonic 0.0:1",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.0:1",
+      "passed": true
+    },
+    {
+      "amplitude": 0.00016429045848523688,
+      "bound": 0.1909661489833076,
+      "name": "complex harmonic 0.0:2",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.0:2",
+      "passed": true
+    },
+    {
+      "amplitude": 1.1825740395706473e-05,
+      "bound": 0.1909661489833076,
+      "name": "complex harmonic 0.0:3",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.0:3",
+      "passed": true
+    },
+    {
+      "amplitude": 1.2613501047818706e-09,
+      "bound": 0.1909661489833076,
+      "name": "complex harmonic 0.0:6",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.0:6",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04923622149945796,
+      "name": "pair transport 0.4:0.00000",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0025714405763847957,
+      "name": "mass transport 0.4:0.00000",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04545537791844032,
+      "name": "pair transport 0.4:0.15325",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002409929487641788,
+      "name": "mass transport 0.4:0.15325",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04091930966987312,
+      "name": "pair transport 0.4:0.30650",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002211033495698398,
+      "name": "mass transport 0.4:0.30650",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.035725598733933085,
+      "name": "pair transport 0.4:0.45975",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0019764018191059246,
+      "name": "mass transport 0.4:0.45975",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.029963980769922932,
+      "name": "pair transport 0.4:0.61299",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0017074041797010637,
+      "name": "mass transport 0.4:0.61299",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.02371722986313189,
+      "name": "pair transport 0.4:0.76624",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0014054960903703338,
+      "name": "mass transport 0.4:0.76624",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.02350658333987597,
+      "name": "pair transport 0.4:0.91949",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0010725814694672816,
+      "name": "mass transport 0.4:0.91949",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.02624092831531801,
+      "name": "pair transport 0.4:1.07274",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.000711338541135723,
+      "name": "mass transport 0.4:1.07274",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.028519218893048866,
+      "name": "pair transport 0.4:1.22599",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0003254848718640237,
+      "name": "mass transport 0.4:1.22599",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03161709950857214,
+      "name": "pair transport 0.4:1.37924",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 8.003222918630731e-05,
+      "name": "mass transport 0.4:1.37924",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03391540542041469,
+      "name": "pair transport 0.4:1.53248",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0004989240768910018,
+      "name": "mass transport 0.4:1.53248",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03543581204591756,
+      "name": "pair transport 0.4:1.68573",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0009235248866819993,
+      "name": "mass transport 0.4:1.68573",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03621299024743781,
+      "name": "pair transport 0.4:1.83898",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.001344826661050599,
+      "name": "mass transport 0.4:1.83898",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03628887625512007,
+      "name": "pair transport 0.4:1.99223",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0017525823454594641,
+      "name": "mass transport 0.4:1.99223",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04031159631290115,
+      "name": "pair transport 0.4:2.14548",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002135482381320607,
+      "name": "mass transport 0.4:2.14548",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.046183561572271305,
+      "name": "pair transport 0.4:2.29873",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0024814190325528574,
+      "name": "mass transport 0.4:2.29873",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.051207463282378685,
+      "name": "pair transport 0.4:2.45197",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002777859864417158,
+      "name": "mass transport 0.4:2.45197",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05518047718767241,
+      "name": "pair transport 0.4:2.60522",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0030123521420998356,
+      "name": "mass transport 0.4:2.60522",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05790483970860075,
+      "name": "pair transport 0.4:2.75847",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.00317317014943136,
+      "name": "mass transport 0.4:2.75847",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05920161044245995,
+      "name": "pair transport 0.4:2.91172",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.003250095979253133,
+      "name": "mass transport 0.4:2.91172",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05892632796901937,
+      "name": "pair transport 0.4:3.06497",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0032352927345973134,
+      "name": "mass transport 0.4:3.06497",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.056985081694898555,
+      "name": "pair transport 0.4:3.21822",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0031241924361165327,
+      "name": "mass transport 0.4:3.21822",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.053349066442354355,
+      "name": "pair transport 0.4:3.37147",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0029162877230991817,
+      "name": "mass transport 0.4:3.37147",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04806547091060422,
+      "name": "pair transport 0.4:3.52471",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002615697002094728,
+      "name": "mass transport 0.4:3.52471",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04126269696255809,
+      "name": "pair transport 0.4:3.67796",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002231376584077226,
+      "name": "mass transport 0.4:3.67796",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.033148469621931395,
+      "name": "pair transport 0.4:3.83121",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0017768859756054133,
+      "name": "mass transport 0.4:3.83121",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.025536377656444963,
+      "name": "pair transport 0.4:3.98446",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0012696722458329858,
+      "name": "mass transport 0.4:3.98446",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.026049209991277886,
+      "name": "pair transport 0.4:4.13771",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0007299165362907069,
+      "name": "mass transport 0.4:4.13771",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.027718229399467144,
+      "name": "pair transport 0.4:4.29096",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0001790640383916971,
+      "name": "mass transport 0.4:4.29096",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.028732936573645045,
+      "name": "pair transport 0.4:4.44420",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.00036178044158638315,
+      "name": "mass transport 0.4:4.44420",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.031068827241118906,
+      "name": "pair transport 0.4:4.59745",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0008733812124070543,
+      "name": "mass transport 0.4:4.59745",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03538992131935176,
+      "name": "pair transport 0.4:4.75070",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.001339626706363649,
+      "name": "mass transport 0.4:4.75070",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.038898453339217785,
+      "name": "pair transport 0.4:4.90395",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0017483620397681806,
+      "name": "mass transport 0.4:4.90395",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04141254828848196,
+      "name": "pair transport 0.4:5.05720",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002091724921278527,
+      "name": "mass transport 0.4:5.05720",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.045826922892278445,
+      "name": "pair transport 0.4:5.21045",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0023659933153055996,
+      "name": "mass transport 0.4:5.21045",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05013746566534809,
+      "name": "pair transport 0.4:5.36369",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0025710265704839003,
+      "name": "mass transport 0.4:5.36369",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05307226628078398,
+      "name": "pair transport 0.4:5.51694",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002709432368088416,
+      "name": "mass transport 0.4:5.51694",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.054663515240034655,
+      "name": "pair transport 0.4:5.67019",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0027856130965458,
+      "name": "mass transport 0.4:5.67019",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05497837107750693,
+      "name": "pair transport 0.4:5.82344",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002804837528166398,
+      "name": "mass transport 0.4:5.82344",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05410788399298223,
+      "name": "pair transport 0.4:5.97669",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.002772453330849683,
+      "name": "mass transport 0.4:5.97669",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.05215699285537976,
+      "name": "pair transport 0.4:6.12994",
+      "passed": true
+    },
+    {
+      "bound": 0.18247271937261444,
+      "error": 0.0026933129622372324,
+      "name": "mass transport 0.4:6.12994",
+      "passed": true
+    },
+    {
+      "amplitude": 0.0015064064385572422,
+      "bound": 0.18247271937261444,
+      "name": "complex harmonic 0.4:1",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.4:1",
+      "passed": true
+    },
+    {
+      "amplitude": 0.00015737483559343546,
+      "bound": 0.18247271937261444,
+      "name": "complex harmonic 0.4:2",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.4:2",
+      "passed": true
+    },
+    {
+      "amplitude": 1.15191850720448e-05,
+      "bound": 0.18247271937261444,
+      "name": "complex harmonic 0.4:3",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.4:3",
+      "passed": true
+    },
+    {
+      "amplitude": 1.245456917334451e-09,
+      "bound": 0.18247271937261444,
+      "name": "complex harmonic 0.4:6",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 0.4:6",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.034689907384152674,
+      "name": "pair transport 2.0:0.00000",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0009850790754429297,
+      "name": "mass transport 2.0:0.00000",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03133442606000757,
+      "name": "pair transport 2.0:0.15325",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0009072280490179615,
+      "name": "mass transport 2.0:0.15325",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.027556057039274193,
+      "name": "pair transport 2.0:0.30650",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0008167083006708161,
+      "name": "mass transport 2.0:0.30650",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.023428939893290007,
+      "name": "pair transport 2.0:0.45975",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0007141449384438374,
+      "name": "mass transport 2.0:0.45975",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01901352474194288,
+      "name": "pair transport 2.0:0.61299",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0006000072601553403,
+      "name": "mass transport 2.0:0.61299",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01842550527023487,
+      "name": "pair transport 2.0:0.76624",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00047477482613652867,
+      "name": "mass transport 2.0:0.76624",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.021317926531265543,
+      "name": "pair transport 2.0:0.91949",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00033909173081579565,
+      "name": "mass transport 2.0:0.91949",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.023497445686875732,
+      "name": "pair transport 2.0:1.07274",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00019389806559804744,
+      "name": "mass transport 2.0:1.07274",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.024973818307398147,
+      "name": "pair transport 2.0:1.22599",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 4.0532143766217787e-05,
+      "name": "mass transport 2.0:1.22599",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.025782554565863675,
+      "name": "pair transport 2.0:1.37924",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00011919855822043952,
+      "name": "mass transport 2.0:1.37924",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.025976920558896752,
+      "name": "pair transport 2.0:1.53248",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0002829757835776687,
+      "name": "mass transport 2.0:1.53248",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.025620441228627062,
+      "name": "pair transport 2.0:1.68573",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00044795348728295624,
+      "name": "mass transport 2.0:1.68573",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.02478045394252227,
+      "name": "pair transport 2.0:1.83898",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0006107603522647885,
+      "name": "mass transport 2.0:1.83898",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.02672639410763453,
+      "name": "pair transport 2.0:1.99223",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0007675194684192123,
+      "name": "mass transport 2.0:1.99223",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03144833197088523,
+      "name": "pair transport 2.0:2.14548",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0009138883616837764,
+      "name": "mass transport 2.0:2.14548",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.035729248829366636,
+      "name": "pair transport 2.0:2.29873",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0010451295173863264,
+      "name": "mass transport 2.0:2.29873",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.039409024080227166,
+      "name": "pair transport 2.0:2.45197",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0011562275756672943,
+      "name": "mass transport 2.0:2.45197",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04231484911716625,
+      "name": "pair transport 2.0:2.60522",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0012420717585685554,
+      "name": "mass transport 2.0:2.60522",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.044271203901575545,
+      "name": "pair transport 2.0:2.75847",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0012977183822268533,
+      "name": "mass transport 2.0:2.75847",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04511318288480819,
+      "name": "pair transport 2.0:2.91172",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0013187371382477001,
+      "name": "mass transport 2.0:2.91172",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04470233208206059,
+      "name": "pair transport 2.0:3.06497",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0013016266195358692,
+      "name": "mass transport 2.0:3.06497",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.042943480385886294,
+      "name": "pair transport 2.0:3.21822",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00124426204915195,
+      "name": "mass transport 2.0:3.21822",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03980045392007199,
+      "name": "pair transport 2.0:3.37147",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0011463163745022145,
+      "name": "mass transport 2.0:3.37147",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03530823177582156,
+      "name": "pair transport 2.0:3.52471",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0010095813313025406,
+      "name": "mass transport 2.0:3.52471",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.029579198634685614,
+      "name": "pair transport 2.0:3.67796",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0008381140963001112,
+      "name": "mass transport 2.0:3.67796",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.02280176036229724,
+      "name": "pair transport 2.0:3.83121",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0006381516668617454,
+      "name": "mass transport 2.0:3.83121",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.021142477552542817,
+      "name": "pair transport 2.0:3.98446",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0004177686448537277,
+      "name": "mass transport 2.0:3.98446",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.022702994826531476,
+      "name": "pair transport 2.0:4.13771",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00018629889417382152,
+      "name": "mass transport 2.0:4.13771",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.023699869004673635,
+      "name": "pair transport 2.0:4.29096",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 4.641249764870797e-05,
+      "name": "mass transport 2.0:4.29096",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.024140806866504307,
+      "name": "pair transport 2.0:4.44420",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00027082502512840027,
+      "name": "mass transport 2.0:4.44420",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.025351950094101267,
+      "name": "pair transport 2.0:4.59745",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.00047846888911433306,
+      "name": "mass transport 2.0:4.59745",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.027488404115323623,
+      "name": "pair transport 2.0:4.75070",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0006625527178703602,
+      "name": "mass transport 2.0:4.75070",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.029385274412426058,
+      "name": "pair transport 2.0:4.90395",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0008183348308198347,
+      "name": "mass transport 2.0:4.90395",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03418536759895563,
+      "name": "pair transport 2.0:5.05720",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0009432246581616588,
+      "name": "mass transport 2.0:5.05720",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03782910027703656,
+      "name": "pair transport 2.0:5.21045",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0010366287010014146,
+      "name": "mass transport 2.0:5.21045",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04030422048049684,
+      "name": "pair transport 2.0:5.36369",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0010995957079977426,
+      "name": "mass transport 2.0:5.36369",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.041648551677922425,
+      "name": "pair transport 2.0:5.51694",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0011343409717698696,
+      "name": "mass transport 2.0:5.51694",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.0419376726838114,
+      "name": "pair transport 2.0:5.67019",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.001143736657663624,
+      "name": "mass transport 2.0:5.67019",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.04127210518144257,
+      "name": "pair transport 2.0:5.82344",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0011308452195901825,
+      "name": "mass transport 2.0:5.82344",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.03976540674463769,
+      "name": "pair transport 2.0:5.97669",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0010985510926851334,
+      "name": "mass transport 2.0:5.97669",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.037534098831238816,
+      "name": "pair transport 2.0:6.12994",
+      "passed": true
+    },
+    {
+      "bound": 0.09314483247390062,
+      "error": 0.0010493187007288279,
+      "name": "mass transport 2.0:6.12994",
+      "passed": true
+    },
+    {
+      "amplitude": 0.0006089196408239678,
+      "bound": 0.09314483247390062,
+      "name": "complex harmonic 2.0:1",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 2.0:1",
+      "passed": true
+    },
+    {
+      "amplitude": 7.425236039255741e-05,
+      "bound": 0.09314483247390062,
+      "name": "complex harmonic 2.0:2",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 2.0:2",
+      "passed": true
+    },
+    {
+      "amplitude": 6.73008789913899e-06,
+      "bound": 0.09314483247390062,
+      "name": "complex harmonic 2.0:3",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 2.0:3",
+      "passed": true
+    },
+    {
+      "amplitude": 9.308770265332458e-10,
+      "bound": 0.09314483247390062,
+      "name": "complex harmonic 2.0:6",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 2.0:6",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.010310829469173216,
+      "name": "pair transport 7.0:0.00000",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 8.771129028257967e-06,
+      "name": "mass transport 7.0:0.00000",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.00880211470800864,
+      "name": "pair transport 7.0:0.15325",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 7.3588549703871134e-06,
+      "name": "mass transport 7.0:0.15325",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.007279943888156657,
+      "name": "pair transport 7.0:0.30650",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 5.874077985010207e-06,
+      "name": "mass transport 7.0:0.30650",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.00839219155662056,
+      "name": "pair transport 7.0:0.45975",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 4.326541500839223e-06,
+      "name": "mass transport 7.0:0.45975",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.010009401438416207,
+      "name": "pair transport 7.0:0.61299",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 2.725875285755824e-06,
+      "name": "mass transport 7.0:0.61299",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.011491613732338108,
+      "name": "pair transport 7.0:0.76624",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.082984165778969e-06,
+      "name": "mass transport 7.0:0.76624",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01278895611786374,
+      "name": "pair transport 7.0:0.91949",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 5.890847612411379e-07,
+      "name": "mass transport 7.0:0.91949",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.013847056478713813,
+      "name": "pair transport 7.0:1.07274",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 2.2746761503894756e-06,
+      "name": "mass transport 7.0:1.07274",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01460988941098043,
+      "name": "pair transport 7.0:1.22599",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 3.955393718564528e-06,
+      "name": "mass transport 7.0:1.22599",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.015023647000584742,
+      "name": "pair transport 7.0:1.37924",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 5.610252461484379e-06,
+      "name": "mass transport 7.0:1.37924",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.015041408769296343,
+      "name": "pair transport 7.0:1.53248",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 7.216021962737955e-06,
+      "name": "mass transport 7.0:1.53248",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.014628202723641676,
+      "name": "pair transport 7.0:1.68573",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 8.747581725396751e-06,
+      "name": "mass transport 7.0:1.68573",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.013765887543347684,
+      "name": "pair transport 7.0:1.83898",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.0178045855955902e-05,
+      "name": "mass transport 7.0:1.83898",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01245718767407362,
+      "name": "pair transport 7.0:1.99223",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.1478434703577346e-05,
+      "name": "mass transport 7.0:1.99223",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01195515262235598,
+      "name": "pair transport 7.0:2.14548",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.2616808409390518e-05,
+      "name": "mass transport 7.0:2.14548",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.013577620323930086,
+      "name": "pair transport 7.0:2.29873",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.3557021630962501e-05,
+      "name": "mass transport 7.0:2.29873",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.015043402633004839,
+      "name": "pair transport 7.0:2.45197",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.425755635776261e-05,
+      "name": "mass transport 7.0:2.45197",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01626145043251876,
+      "name": "pair transport 7.0:2.60522",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.4671152518499492e-05,
+      "name": "mass transport 7.0:2.60522",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01712858042553847,
+      "name": "pair transport 7.0:2.75847",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.4746077304915743e-05,
+      "name": "mass transport 7.0:2.75847",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01753755841004603,
+      "name": "pair transport 7.0:2.91172",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.4429753965130504e-05,
+      "name": "mass transport 7.0:2.91172",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.017388509469818073,
+      "name": "pair transport 7.0:3.06497",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.3675052036259006e-05,
+      "name": "mass transport 7.0:3.06497",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.016602703154096052,
+      "name": "pair transport 7.0:3.21822",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.2448848993919643e-05,
+      "name": "mass transport 7.0:3.21822",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.015136862316379115,
+      "name": "pair transport 7.0:3.37147",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.0741643905465263e-05,
+      "name": "mass transport 7.0:3.37147",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.012995429521823887,
+      "name": "pair transport 7.0:3.52471",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 8.576276088704938e-06,
+      "name": "mass transport 7.0:3.52471",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.012203976141373274,
+      "name": "pair transport 7.0:3.67796",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 6.0134603152907104e-06,
+      "name": "mass transport 7.0:3.67796",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.013249287382060054,
+      "name": "pair transport 7.0:3.83121",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 3.1521200636300446e-06,
+      "name": "mass transport 7.0:3.83121",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.013906166576134853,
+      "name": "pair transport 7.0:3.98446",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.234342086106548e-07,
+      "name": "mass transport 7.0:3.98446",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.014190479363741473,
+      "name": "pair transport 7.0:4.13771",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 2.921076077635744e-06,
+      "name": "mass transport 7.0:4.13771",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.014129439529176073,
+      "name": "pair transport 7.0:4.29096",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 5.825599288882074e-06,
+      "name": "mass transport 7.0:4.29096",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01375765804858837,
+      "name": "pair transport 7.0:4.44420",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 8.447296929948505e-06,
+      "name": "mass transport 7.0:4.44420",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01311346888690377,
+      "name": "pair transport 7.0:4.59745",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.0671495238590358e-05,
+      "name": "mass transport 7.0:4.59745",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.012907294294324186,
+      "name": "pair transport 7.0:4.75070",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.2422028936146453e-05,
+      "name": "mass transport 7.0:4.75070",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.014749999141607335,
+      "name": "pair transport 7.0:4.90395",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.3665151546050106e-05,
+      "name": "mass transport 7.0:4.90395",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.015963396509703694,
+      "name": "pair transport 7.0:5.05720",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.4406919322904214e-05,
+      "name": "mass transport 7.0:5.05720",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01657385915364424,
+      "name": "pair transport 7.0:5.21045",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.4685317722944948e-05,
+      "name": "mass transport 7.0:5.21045",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.016641034724709982,
+      "name": "pair transport 7.0:5.36369",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.4559296462827532e-05,
+      "name": "mass transport 7.0:5.36369",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.01624550541450151,
+      "name": "pair transport 7.0:5.51694",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.4097158158554706e-05,
+      "name": "mass transport 7.0:5.51694",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.015476987453087976,
+      "name": "pair transport 7.0:5.67019",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.3366439077516892e-05,
+      "name": "mass transport 7.0:5.67019",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.014424494473034408,
+      "name": "pair transport 7.0:5.82344",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.2426699772560845e-05,
+      "name": "mass transport 7.0:5.82344",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.013169159787011773,
+      "name": "pair transport 7.0:5.97669",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.132574955736868e-05,
+      "name": "mass transport 7.0:5.97669",
+      "passed": true
+    },
+    {
+      "maximum_ratio": 0.011779793282320624,
+      "name": "pair transport 7.0:6.12994",
+      "passed": true
+    },
+    {
+      "bound": 0.002484137924351199,
+      "error": 1.0099006109929307e-05,
+      "name": "mass transport 7.0:6.12994",
+      "passed": true
+    },
+    {
+      "amplitude": 7.188763388202613e-06,
+      "bound": 0.002484137924351199,
+      "name": "complex harmonic 7.0:1",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 7.0:1",
+      "passed": true
+    },
+    {
+      "amplitude": 1.100641100784074e-06,
+      "bound": 0.002484137924351199,
+      "name": "complex harmonic 7.0:2",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 7.0:2",
+      "passed": true
+    },
+    {
+      "amplitude": 1.8207806564372119e-07,
+      "bound": 0.002484137924351199,
+      "name": "complex harmonic 7.0:3",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 7.0:3",
+      "passed": true
+    },
+    {
+      "amplitude": 7.032287897495597e-11,
+      "bound": 0.002484137924351199,
+      "name": "complex harmonic 7.0:6",
+      "passed": true
+    },
+    {
+      "name": "real harmonic 7.0:6",
+      "passed": true
+    },
+    {
+      "name": "zero net mass is not zero torque",
+      "passed": true,
+      "signed_net_mass": 0.0,
+      "torque": -0.00858427482279578,
+      "total_variation": 2.0
+    }
+  ],
+  "empirical_validation": false,
+  "failed": 0,
+  "illustrative_envelopes": [
+    {
+      "assumed_gap_m": 4.800000000000001e-05,
+      "assumed_lever_m": 0.027,
+      "assumed_unit_scalar_strength": true,
+      "complex_torque_bound_fNm": 102748.30978229729,
+      "mu_per_m": 0.0,
+      "real_harmonic_bound_fNm": 205496.61956459458,
+      "scope": "Scale illustration only; displacement certificates and reference coupling are stipulated, not inferred."
+    },
+    {
+      "assumed_gap_m": 4.800000000000001e-05,
+      "assumed_lever_m": 0.027,
+      "assumed_unit_scalar_strength": true,
+      "complex_torque_bound_fNm": 86171.81992342873,
+      "mu_per_m": 20000.0,
+      "real_harmonic_bound_fNm": 172343.63984685746,
+      "scope": "Scale illustration only; displacement certificates and reference coupling are stipulated, not inferred."
+    }
+  ],
+  "passed": 366,
+  "source_hashes": {
+    "LAB_GEOMETRY_TRANSPORT_v1.md": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
+    "check_lab_geometry_transport_v1.py": "212ce9574ffc18cbf9cc0a9079d4f1fa1e819b88a71bdaec739733529ebf8c32"
+  },
+  "synthetic_details": [
+    {
+      "D_A": 0.03503368607627601,
+      "D_B": 0.044055171787409794,
+      "L": 0.3206633748964793,
+      "complex_bound": 0.1909661489833076,
+      "d": 1.0301266816056218,
+      "max_direct_change": 0.003475216073961763,
+      "mu": 0.0
+    },
+    {
+      "D_A": 0.03503368607627601,
+      "D_B": 0.044055171787409794,
+      "L": 0.3206633748964793,
+      "complex_bound": 0.18247271937261444,
+      "d": 1.0301266816056218,
+      "max_direct_change": 0.003250095979253133,
+      "mu": 0.4
+    },
+    {
+      "D_A": 0.03503368607627601,
+      "D_B": 0.044055171787409794,
+      "L": 0.3206633748964793,
+      "complex_bound": 0.09314483247390062,
+      "d": 1.0301266816056218,
+      "max_direct_change": 0.0013187371382477001,
+      "mu": 2.0
+    },
+    {
+      "D_A": 0.03503368607627601,
+      "D_B": 0.044055171787409794,
+      "L": 0.3206633748964793,
+      "complex_bound": 0.002484137924351199,
+      "d": 1.0301266816056218,
+      "max_direct_change": 1.4746077304915743e-05,
+      "mu": 7.0
+    }
+  ]
+}

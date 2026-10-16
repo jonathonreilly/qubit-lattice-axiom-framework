@@ -1,0 +1,33 @@
+{
+  "frozen_at": "2026-10-16T07:43:12.025040+00:00",
+  "goal": "Locate actual dynamical gravity records with calibrated source and receiver channels rather than supply missing Lee geometry or covariance.",
+  "access_scope": "Read only public primary paper metadata and repository file inventories in this step. No data arrays or raw trace files opened.",
+  "exposure": "Primary abstracts, some figure captions, and published outcomes already exposed through search; not an unseen physical prediction.",
+  "candidates": [
+    {
+      "name": "Westphal2021",
+      "doi": "10.1038/s41586-021-03250-7",
+      "access": "Primary indexed data-availability statement: corresponding author upon reasonable request. No message sent; do not infer that no public deposit exists."
+    },
+    {
+      "name": "Brack2022",
+      "doi": "10.1038/s41567-022-01642-8",
+      "dataset": "https://doi.org/10.3929/ethz-b-000533207",
+      "access": "Primary repository search index lists source XML and figure spreadsheets. Their actual primitive content not yet inspected."
+    },
+    {
+      "name": "Fuchs2024",
+      "preprint": "https://arxiv.org/abs/2303.03545v2",
+      "dataset": "https://zenodo.org/records/10300430",
+      "access": "Primary PMC indexed availability statement identifies raw lock-in time traces; actual contents uninspected."
+    }
+  ],
+  "next_gate": "Read a selected primary measurement model, distinguish raw/calibration/processed channels, freeze a protocol and exact input roles before opening arrays. Preserve missing calibrations; do not treat a spectral fit as action derivation.",
+  "web_tool_failures": [
+    "Nature publisher opens redirected to an inaccessible authorization endpoint",
+    "PMC open returned browser challenge",
+    "ETH repository direct web open403",
+    "Zenodo web open unavailable"
+  ],
+  "failure_inference": "Operational access failures imply no scientific conclusion. Only ordinary unauthenticated public metadata retrieval attempted."
+}

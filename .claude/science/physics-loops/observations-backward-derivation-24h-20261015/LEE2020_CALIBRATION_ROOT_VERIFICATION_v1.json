@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-16T07:35:25.231651+00:00",
+  "author": "/root",
+  "complete_independent_derivation_code_report_and_results_read": true,
+  "manifest": "independent_lee2020_calibration/MANIFEST_v1.json",
+  "manifest_sha256": "895d10e1bde4fb0fb4d8f88d335609f515072ccb7f26060de0b85da566fe4d24",
+  "artifact_bindings_verified": 17,
+  "source_bindings_verified": 9,
+  "primary_controls": 62,
+  "independent_controls": 85,
+  "author_reproduction_byte_identical": true,
+  "counts_overlap_not_pooled": true,
+  "calibration_reproduction": "Partial; source nominal and sensitivity discrepancies preserved. No retuning or physical significance assigned.",
+  "source_transcription_scope": "Root read and rendered primary source; focused checker used frozen transcription and did not independently reread PDF.",
+  "formal_audit": false,
+  "empirical_validation": false
+}

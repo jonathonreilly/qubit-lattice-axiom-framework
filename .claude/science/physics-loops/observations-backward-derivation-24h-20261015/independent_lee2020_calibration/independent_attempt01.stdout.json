@@ -1,0 +1,1324 @@
+{
+  "kind": "Focused independent calibration controls; no formal audit status",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "sympy": "1.14.0",
+  "source_binding": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_DERIVATION_v1.md": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_INPUTS_v1.json": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_PLAN_v1.json": "f30d6f9cbcf76f8313333cd45092a3046ae31241cc858ecb5b714d98a99be9ba"
+  },
+  "final_source_binding": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_DERIVATION_v1.md": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_INPUTS_v1.json": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_PLAN_v1.json": "f30d6f9cbcf76f8313333cd45092a3046ae31241cc858ecb5b714d98a99be9ba"
+  },
+  "summary": {
+    "passed": 85,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "initial_source_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inner_energy_force_center_0.17",
+      "passed": true,
+      "detail": {
+        "actual": 1.5400462354851597e-05,
+        "expected": 1.5400462354851455e-05,
+        "absolute_error": 1.4230153513872246e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "offset_torque_lever_identity_center_0.17",
+      "passed": true,
+      "detail": {
+        "actual": 1.179069862577986e-18,
+        "expected": 0.0,
+        "absolute_error": 1.179069862577986e-18,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "centered_pair_reduction_0.17",
+      "passed": true,
+      "detail": {
+        "actual": 1.5400462354851597e-05,
+        "expected": 1.5400462354851838e-05,
+        "absolute_error": 2.405573570202213e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "centered_outer_phase_derivative_0.17",
+      "passed": true,
+      "detail": {
+        "actual": 1.5400462354851597e-05,
+        "expected": 1.540046235485042e-05,
+        "absolute_error": 1.179069862577986e-18,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "inner_energy_force_offset_0.17",
+      "passed": true,
+      "detail": {
+        "actual": 1.541690922885627e-05,
+        "expected": 1.5416909228856355e-05,
+        "absolute_error": 8.470329472543003e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "offset_torque_lever_identity_offset_0.17",
+      "passed": true,
+      "detail": {
+        "actual": -1.1387564856912462e-06,
+        "expected": -1.1387564856927531e-06,
+        "absolute_error": 1.5068716131654003e-18,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "different_center_torques_not_opposites_0.17",
+      "passed": true,
+      "detail": {
+        "inner_torque": 1.541690922885627e-05,
+        "outer_energy_derivative": 1.6555665714547517e-05
+      }
+    },
+    {
+      "name": "inner_energy_force_center_0.51",
+      "passed": true,
+      "detail": {
+        "actual": 3.147159259791178e-05,
+        "expected": 3.147159259791191e-05,
+        "absolute_error": 1.2874900798265365e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "offset_torque_lever_identity_center_0.51",
+      "passed": true,
+      "detail": {
+        "actual": 1.6940658945086007e-19,
+        "expected": 0.0,
+        "absolute_error": 1.6940658945086007e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "centered_pair_reduction_0.51",
+      "passed": true,
+      "detail": {
+        "actual": 3.147159259791178e-05,
+        "expected": 3.147159259791179e-05,
+        "absolute_error": 1.3552527156068805e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "centered_outer_phase_derivative_0.51",
+      "passed": true,
+      "detail": {
+        "actual": 3.147159259791178e-05,
+        "expected": 3.147159259791161e-05,
+        "absolute_error": 1.6940658945086007e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "inner_energy_force_offset_0.51",
+      "passed": true,
+      "detail": {
+        "actual": 3.14876480390627e-05,
+        "expected": 3.148764803906241e-05,
+        "absolute_error": 2.846030702774449e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "offset_torque_lever_identity_offset_0.51",
+      "passed": true,
+      "detail": {
+        "actual": 1.4076143752022715e-06,
+        "expected": 1.4076143752018997e-06,
+        "absolute_error": 3.7184746384463785e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "different_center_torques_not_opposites_0.51",
+      "passed": true,
+      "detail": {
+        "inner_torque": 3.14876480390627e-05,
+        "outer_energy_derivative": 3.0080033663860426e-05
+      }
+    },
+    {
+      "name": "inner_energy_force_center_1.06",
+      "passed": true,
+      "detail": {
+        "actual": -1.2071013112855637e-06,
+        "expected": -1.2071013112856748e-06,
+        "absolute_error": 1.1117307432712692e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "offset_torque_lever_identity_center_1.06",
+      "passed": true,
+      "detail": {
+        "actual": 6.138871285225542e-19,
+        "expected": 0.0,
+        "absolute_error": 6.138871285225542e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "centered_pair_reduction_1.06",
+      "passed": true,
+      "detail": {
+        "actual": -1.2071013112855637e-06,
+        "expected": -1.2071013112857521e-06,
+        "absolute_error": 1.8846483076408183e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "centered_outer_phase_derivative_1.06",
+      "passed": true,
+      "detail": {
+        "actual": -1.2071013112855637e-06,
+        "expected": -1.2071013112861775e-06,
+        "absolute_error": 6.138871285225542e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "inner_energy_force_offset_1.06",
+      "passed": true,
+      "detail": {
+        "actual": -1.1903751477527406e-06,
+        "expected": -1.1903751477528497e-06,
+        "absolute_error": 1.0905549195899117e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "offset_torque_lever_identity_offset_1.06",
+      "passed": true,
+      "detail": {
+        "actual": 2.0543100241448802e-06,
+        "expected": 2.0543100241450263e-06,
+        "absolute_error": 1.461131834013668e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "different_center_torques_not_opposites_1.06",
+      "passed": true,
+      "detail": {
+        "inner_torque": -1.1903751477527406e-06,
+        "outer_energy_derivative": -3.244685171897621e-06
+      }
+    },
+    {
+      "name": "Legendre_third_harmonic_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "leading_coefficient_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real_Fourier_amplitude_48",
+      "passed": true,
+      "detail": {
+        "actual": 3.14954220093648e-05,
+        "expected": 3.1495422009364685e-05,
+        "absolute_error": 1.1519648082658485e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "signed_sine_coefficient_48",
+      "passed": true,
+      "detail": {
+        "actual": 3.14954220093648e-05,
+        "expected": 3.1495422009364685e-05,
+        "absolute_error": 1.1519648082658485e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "cosine_coefficient_zero_48",
+      "passed": true,
+      "detail": {
+        "actual": -7.948400047183827e-20,
+        "expected": 0.0,
+        "absolute_error": 7.948400047183827e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "missing_factor_two_detected_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forbidden_harmonic_n1_48",
+      "passed": true,
+      "detail": {
+        "actual": 1.7784543097253858e-19,
+        "expected": 0.0,
+        "absolute_error": 1.7784543097253858e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n2_48",
+      "passed": true,
+      "detail": {
+        "actual": 1.6874954486712574e-20,
+        "expected": 0.0,
+        "absolute_error": 1.6874954486712574e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n4_48",
+      "passed": true,
+      "detail": {
+        "actual": 3.968379778192489e-20,
+        "expected": 0.0,
+        "absolute_error": 3.968379778192489e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n5_48",
+      "passed": true,
+      "detail": {
+        "actual": 1.2579889426014103e-20,
+        "expected": 0.0,
+        "absolute_error": 1.2579889426014103e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "real_Fourier_amplitude_96",
+      "passed": true,
+      "detail": {
+        "actual": 3.149542200936479e-05,
+        "expected": 3.1495422009364685e-05,
+        "absolute_error": 1.0842021724855044e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "signed_sine_coefficient_96",
+      "passed": true,
+      "detail": {
+        "actual": 3.149542200936479e-05,
+        "expected": 3.1495422009364685e-05,
+        "absolute_error": 1.0842021724855044e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "cosine_coefficient_zero_96",
+      "passed": true,
+      "detail": {
+        "actual": -8.493269948197807e-20,
+        "expected": 0.0,
+        "absolute_error": 8.493269948197807e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "missing_factor_two_detected_96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forbidden_harmonic_n1_96",
+      "passed": true,
+      "detail": {
+        "actual": 1.6619463105281143e-19,
+        "expected": 0.0,
+        "absolute_error": 1.6619463105281143e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n2_96",
+      "passed": true,
+      "detail": {
+        "actual": 1.695003110209657e-20,
+        "expected": 0.0,
+        "absolute_error": 1.695003110209657e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n4_96",
+      "passed": true,
+      "detail": {
+        "actual": 1.7617618088671197e-20,
+        "expected": 0.0,
+        "absolute_error": 1.7617618088671197e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n5_96",
+      "passed": true,
+      "detail": {
+        "actual": 2.1471988437367445e-20,
+        "expected": 0.0,
+        "absolute_error": 2.1471988437367445e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "real_Fourier_amplitude_192",
+      "passed": true,
+      "detail": {
+        "actual": 3.149542200936477e-05,
+        "expected": 3.1495422009364685e-05,
+        "absolute_error": 8.809142651444724e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "signed_sine_coefficient_192",
+      "passed": true,
+      "detail": {
+        "actual": 3.149542200936477e-05,
+        "expected": 3.1495422009364685e-05,
+        "absolute_error": 8.809142651444724e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "cosine_coefficient_zero_192",
+      "passed": true,
+      "detail": {
+        "actual": -4.1786958731212146e-20,
+        "expected": 0.0,
+        "absolute_error": 4.1786958731212146e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "missing_factor_two_detected_192",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forbidden_harmonic_n1_192",
+      "passed": true,
+      "detail": {
+        "actual": 1.831629728405671e-19,
+        "expected": 0.0,
+        "absolute_error": 1.831629728405671e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n2_192",
+      "passed": true,
+      "detail": {
+        "actual": 1.6053949817907436e-20,
+        "expected": 0.0,
+        "absolute_error": 1.6053949817907436e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n4_192",
+      "passed": true,
+      "detail": {
+        "actual": 2.1219072311828236e-20,
+        "expected": 0.0,
+        "absolute_error": 2.1219072311828236e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "forbidden_harmonic_n5_192",
+      "passed": true,
+      "detail": {
+        "actual": 2.6854269412772602e-20,
+        "expected": 0.0,
+        "absolute_error": 2.6854269412772602e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "small_radius_approaches_leading_coefficient",
+      "passed": true,
+      "detail": [
+        {
+          "ratio": 0.05,
+          "A3_over_q3": 16.893488237091965,
+          "relative_remainder": 0.001095599235079403,
+          "quad_error": 6.518942909592427e-17
+        },
+        {
+          "ratio": 0.025,
+          "A3_over_q3": 16.879616205382376,
+          "relative_remainder": 0.00027355291154829153,
+          "quad_error": 2.933194032641612e-18
+        },
+        {
+          "ratio": 0.0125,
+          "A3_over_q3": 16.876153686131776,
+          "relative_remainder": 6.836658558673214e-05,
+          "quad_error": 3.656758692943797e-19
+        }
+      ]
+    },
+    {
+      "name": "small_radius_quadratic_relative_remainder_0",
+      "passed": true,
+      "detail": {
+        "quotient": 4.005072469813548
+      }
+    },
+    {
+      "name": "small_radius_quadratic_relative_remainder_1",
+      "passed": true,
+      "detail": {
+        "quotient": 4.001266250180845
+      }
+    },
+    {
+      "name": "analytic_sensitivity_inner_radius",
+      "passed": true,
+      "detail": {
+        "actual": 0.0057459907599254085,
+        "expected": 0.0057459907599254016,
+        "absolute_error": 6.938893903907228e-18,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "analytic_sensitivity_outer_radius",
+      "passed": true,
+      "detail": {
+        "actual": -0.0006624112846873249,
+        "expected": -0.0006624112846873245,
+        "absolute_error": 4.336808689942018e-19,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "vertical_Green_derivative_jump",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_normalization_4pi",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "axial_point_Green_0.0",
+      "passed": true,
+      "detail": {
+        "actual": 2.127659574468085,
+        "expected": 2.127659574468085,
+        "absolute_error": 0.0,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu0.0_n0",
+      "passed": true,
+      "detail": {
+        "actual": 1.283175553955555,
+        "expected": 1.2831755539555552,
+        "absolute_error": 2.220446049250313e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu0.0_n1",
+      "passed": true,
+      "detail": {
+        "actual": 0.2102729434063188,
+        "expected": 0.2102729434063189,
+        "absolute_error": 1.1102230246251565e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu0.0_n3",
+      "passed": true,
+      "detail": {
+        "actual": 0.013830415307791562,
+        "expected": 0.013830415307791638,
+        "absolute_error": 7.632783294297951e-17,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "axial_point_Green_0.8",
+      "passed": true,
+      "detail": {
+        "actual": 1.4608560277495768,
+        "expected": 1.4608560277495768,
+        "absolute_error": 0.0,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu0.8_n0",
+      "passed": true,
+      "detail": {
+        "actual": 0.6951824759289399,
+        "expected": 0.6951824759289397,
+        "absolute_error": 2.220446049250313e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu0.8_n1",
+      "passed": true,
+      "detail": {
+        "actual": 0.1833702936032972,
+        "expected": 0.18337029360329735,
+        "absolute_error": 1.3877787807814457e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu0.8_n3",
+      "passed": true,
+      "detail": {
+        "actual": 0.013323733504150366,
+        "expected": 0.013323733504150469,
+        "absolute_error": 1.0234868508263162e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "axial_point_Green_2.0",
+      "passed": true,
+      "detail": {
+        "actual": 0.8311230539543002,
+        "expected": 0.8311230539543003,
+        "absolute_error": 1.1102230246251565e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu2.0_n0",
+      "passed": true,
+      "detail": {
+        "actual": 0.2878995815310292,
+        "expected": 0.28789958153102896,
+        "absolute_error": 2.220446049250313e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu2.0_n1",
+      "passed": true,
+      "detail": {
+        "actual": 0.11547775782885118,
+        "expected": 0.11547775782885128,
+        "absolute_error": 9.71445146547012e-17,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "point_angular_Bessel_mu2.0_n3",
+      "passed": true,
+      "detail": {
+        "actual": 0.011092727487901853,
+        "expected": 0.011092727487901959,
+        "absolute_error": 1.0581813203458523e-16,
+        "rtol": 2e-08,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "volume_mass_A_order4",
+      "passed": true,
+      "detail": {
+        "actual": 0.025459200000000005,
+        "expected": 0.0254592,
+        "absolute_error": 3.469446951953614e-18,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "volume_mass_B_order4",
+      "passed": true,
+      "detail": {
+        "actual": 0.019353600000000006,
+        "expected": 0.019353600000000006,
+        "absolute_error": 0.0,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "volume_mass_A_order6",
+      "passed": true,
+      "detail": {
+        "actual": 0.02545920000000001,
+        "expected": 0.0254592,
+        "absolute_error": 1.0408340855860843e-17,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "volume_mass_B_order6",
+      "passed": true,
+      "detail": {
+        "actual": 0.019353600000000012,
+        "expected": 0.019353600000000006,
+        "absolute_error": 6.938893903907228e-18,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "volume_mass_A_order8",
+      "passed": true,
+      "detail": {
+        "actual": 0.0254592,
+        "expected": 0.0254592,
+        "absolute_error": 0.0,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "volume_mass_B_order8",
+      "passed": true,
+      "detail": {
+        "actual": 0.019353600000000006,
+        "expected": 0.019353600000000006,
+        "absolute_error": 0.0,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "volume_mass_A_order6",
+      "passed": true,
+      "detail": {
+        "actual": 0.02545920000000001,
+        "expected": 0.0254592,
+        "absolute_error": 1.0408340855860843e-17,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "volume_mass_B_order6",
+      "passed": true,
+      "detail": {
+        "actual": 0.019353600000000012,
+        "expected": 0.019353600000000006,
+        "absolute_error": 6.938893903907228e-18,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "finite_wedge_Bessel_radial_convergence",
+      "passed": true,
+      "detail": {
+        "actual": -9.837979184103421e-06,
+        "expected": -9.837979184103426e-06,
+        "absolute_error": 5.082197683525802e-21,
+        "rtol": 2e-08,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "finite_wedge_full_volume_vs_Bessel",
+      "passed": true,
+      "detail": {
+        "actual": -9.837979184129957e-06,
+        "expected": -9.837979184103426e-06,
+        "absolute_error": 2.6530765973899195e-17,
+        "rtol": 2e-06,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "finite_wedge_phase_convergence",
+      "passed": true,
+      "detail": {
+        "actual": -9.837979190488583e-06,
+        "expected": -9.837979190488617e-06,
+        "absolute_error": 3.3881317890172014e-20,
+        "rtol": 2e-08,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "finite_wedge_volume_convergence",
+      "passed": true,
+      "detail": {
+        "absolute_errors": [
+          2.117841216322234e-12,
+          6.385190160352987e-15,
+          2.6530765973899195e-17
+        ]
+      }
+    },
+    {
+      "name": "finite_wedge_real_even_energy_order4",
+      "passed": true,
+      "detail": {
+        "actual": 5.082197683525802e-21,
+        "expected": 0.0,
+        "absolute_error": 5.082197683525802e-21,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "finite_wedge_real_even_energy_order6",
+      "passed": true,
+      "detail": {
+        "actual": 1.6940658945086007e-21,
+        "expected": 0.0,
+        "absolute_error": 1.6940658945086007e-21,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "finite_wedge_real_even_energy_order8",
+      "passed": true,
+      "detail": {
+        "actual": 1.8634724839594607e-20,
+        "expected": 0.0,
+        "absolute_error": 1.8634724839594607e-20,
+        "rtol": 2e-10,
+        "atol": 1e-14
+      }
+    },
+    {
+      "name": "spurious_4pi_energy_factor_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_complex_order_energy_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final_sources_unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "Fourier_controls": {
+      "adaptive_B": 3.1495422009364685e-05,
+      "adaptive_error_estimate": 1.1726597091390676e-17,
+      "FFTs": [
+        {
+          "count": 48,
+          "real_amplitude_per_G": 3.14954220093648e-05,
+          "complex_coefficient_real": -3.9742000235919137e-20,
+          "complex_coefficient_imag": -1.57477110046824e-05
+        },
+        {
+          "count": 96,
+          "real_amplitude_per_G": 3.149542200936479e-05,
+          "complex_coefficient_real": -4.2466349740989035e-20,
+          "complex_coefficient_imag": -1.5747711004682397e-05
+        },
+        {
+          "count": 192,
+          "real_amplitude_per_G": 3.149542200936477e-05,
+          "complex_coefficient_real": -2.0893479365606073e-20,
+          "complex_coefficient_imag": -1.5747711004682386e-05
+        }
+      ],
+      "small_radius": [
+        {
+          "ratio": 0.05,
+          "A3_over_q3": 16.893488237091965,
+          "relative_remainder": 0.001095599235079403,
+          "quad_error": 6.518942909592427e-17
+        },
+        {
+          "ratio": 0.025,
+          "A3_over_q3": 16.879616205382376,
+          "relative_remainder": 0.00027355291154829153,
+          "quad_error": 2.933194032641612e-18
+        },
+        {
+          "ratio": 0.0125,
+          "A3_over_q3": 16.876153686131776,
+          "relative_remainder": 6.836658558673214e-05,
+          "quad_error": 3.656758692943797e-19
+        }
+      ]
+    },
+    "published_model_diagnostics": {
+      "nominal_amplitude_fNm_negative_exponent_candidate": 2.102067455749018,
+      "published_nominal_fNm": 2.1094,
+      "nominal_difference_fNm": -0.007332544250981954,
+      "G_consistency_only": 6.697481301799359e-11,
+      "G_negative_exponent_candidate": 6.6742e-11,
+      "G_literal_printed": 667420000000.0,
+      "nominal_amplitude_fNm_literal_exponent": 2.1020674557490177e+22,
+      "literal_to_candidate_ratio": 1e+22,
+      "corrections": {
+        "radial": {
+          "amplitude_per_G": 3.156604944133501e-05,
+          "correction_fNm": 0.004713816064563278,
+          "quad_error_per_G": 6.199490195802947e-18,
+          "offset_direction": "dx=specified radial offset, dy=0"
+        },
+        "vertical": {
+          "amplitude_per_G": 3.145460627215309e-05,
+          "correction_fNm": -0.0027241239329764493,
+          "quad_error_per_G": 1.1900676989823581e-17,
+          "offset_direction": "dx=specified radial offset, dy=0"
+        },
+        "combined": {
+          "amplitude_per_G": 3.1524878851618763e-05,
+          "correction_fNm": 0.0019660085657217264,
+          "quad_error_per_G": 6.173845720173705e-18,
+          "offset_direction": "dx=specified radial offset, dy=0"
+        }
+      },
+      "published_radial_correction_table": 0.00475,
+      "published_radial_correction_prose": 0.0042,
+      "published_vertical_correction": -0.0027,
+      "single_parameter_sensitivities": {
+        "inner_mass": {
+          "derivative_per_G": 0.06539882889878254,
+          "single_parameter_sigma_fNm": 0.00043648486383625443,
+          "printed_sigma_fNm": 0.000209,
+          "difference_fNm": 0.00022748486383625442,
+          "ratio_to_printed": 2.08844432457538
+        },
+        "outer_mass": {
+          "derivative_per_G": 2.771020764505075e-05,
+          "single_parameter_sigma_fNm": 0.002589208550104368,
+          "printed_sigma_fNm": 0.00125,
+          "difference_fNm": 0.0013392085501043678,
+          "ratio_to_printed": 2.071366840083494
+        },
+        "inner_radius": {
+          "derivative_per_G": 0.0057459907599254085,
+          "single_parameter_sigma_fNm": 0.004218488068288358,
+          "printed_sigma_fNm": 0.00271,
+          "difference_fNm": 0.0015084880682883577,
+          "ratio_to_printed": 1.5566376635750396
+        },
+        "outer_radius": {
+          "derivative_per_G": -0.0006624112846873249,
+          "single_parameter_sigma_fNm": 0.002652639237756086,
+          "printed_sigma_fNm": 0.00333,
+          "difference_fNm": -0.0006773607622439139,
+          "ratio_to_printed": 0.7965883596865123
+        }
+      },
+      "conditional_uncorrelated_four_parameter_sigma_fNm": 0.00563264204971931,
+      "gamma_arithmetic": 1.0119820033151787,
+      "gamma_sigma_conditional_uncorrelated": 0.0047567650544921595,
+      "published_gamma": {
+        "value": 1.012,
+        "uncertainty": 0.0047
+      },
+      "interpretation": "Published-model diagnostics only; no input retuned, covariance inferred or G measured."
+    },
+    "point_harmonics": [
+      {
+        "mu": 0.0,
+        "n": 0,
+        "angular_complex_order_coefficient": 1.2831755539555552,
+        "Bessel_coefficient": 1.283175553955555,
+        "quadrature_error_estimates": [
+          1.42461104462059e-14,
+          5.5107674275559006e-11
+        ]
+      },
+      {
+        "mu": 0.0,
+        "n": 1,
+        "angular_complex_order_coefficient": 0.2102729434063189,
+        "Bessel_coefficient": 0.2102729434063188,
+        "quadrature_error_estimates": [
+          9.307132268534638e-15,
+          2.672644494700797e-11
+        ]
+      },
+      {
+        "mu": 0.0,
+        "n": 3,
+        "angular_complex_order_coefficient": 0.013830415307791638,
+        "Bessel_coefficient": 0.013830415307791562,
+        "quadrature_error_estimates": [
+          9.081562277741548e-15,
+          6.56945603255649e-13
+        ]
+      },
+      {
+        "mu": 0.8,
+        "n": 0,
+        "angular_complex_order_coefficient": 0.6951824759289397,
+        "Bessel_coefficient": 0.6951824759289399,
+        "quadrature_error_estimates": [
+          7.718075910955663e-15,
+          2.9302692029421646e-11
+        ]
+      },
+      {
+        "mu": 0.8,
+        "n": 1,
+        "angular_complex_order_coefficient": 0.18337029360329735,
+        "Bessel_coefficient": 0.1833702936032972,
+        "quadrature_error_estimates": [
+          5.137117389038556e-15,
+          2.6515119815887952e-11
+        ]
+      },
+      {
+        "mu": 0.8,
+        "n": 3,
+        "angular_complex_order_coefficient": 0.013323733504150469,
+        "Bessel_coefficient": 0.013323733504150366,
+        "quadrature_error_estimates": [
+          4.921013984047768e-15,
+          6.544241921922167e-13
+        ]
+      },
+      {
+        "mu": 2.0,
+        "n": 0,
+        "angular_complex_order_coefficient": 0.28789958153102896,
+        "Bessel_coefficient": 0.2878995815310292,
+        "quadrature_error_estimates": [
+          3.1963274419366536e-15,
+          1.951955734621153e-11
+        ]
+      },
+      {
+        "mu": 2.0,
+        "n": 1,
+        "angular_complex_order_coefficient": 0.11547775782885128,
+        "Bessel_coefficient": 0.11547775782885118,
+        "quadrature_error_estimates": [
+          2.204726354384289e-15,
+          9.159203204686566e-12
+        ]
+      },
+      {
+        "mu": 2.0,
+        "n": 3,
+        "angular_complex_order_coefficient": 0.011092727487901959,
+        "Bessel_coefficient": 0.011092727487901853,
+        "quadrature_error_estimates": [
+          9.419124216926607e-15,
+          6.405180527992542e-13
+        ]
+      }
+    ],
+    "finite_wedge": {
+      "fixture": {
+        "N": 3,
+        "n": 3,
+        "betaA": 0.17,
+        "betaB": 0.21,
+        "rA": [
+          0.2,
+          0.6
+        ],
+        "rB": [
+          0.25,
+          0.55
+        ],
+        "tA": 0.12,
+        "tB": 0.16,
+        "d": 0.4,
+        "rhoA": 1.3,
+        "rhoB": 0.8,
+        "mu": 0.7,
+        "G": 1.0
+      },
+      "complete_volume_quadratures": [
+        {
+          "volume_order": 4,
+          "phase_count": 32,
+          "cosine_energy_coefficient": -9.83797706626221e-06,
+          "sine_energy_coefficient": 5.082197683525802e-21,
+          "complex_coefficient_magnitude": 4.918988533131105e-06,
+          "seconds": 0.006963500287383795,
+          "phase_energies": [
+            -0.00039304779767681956,
+            -0.00039284267231880834,
+            -0.0003922371541998024,
+            -0.0003912600925823604,
+            -0.0003899572510937916,
+            -0.00038838814857970673,
+            -0.00038662220566288384,
+            -0.0003847346276019865,
+            -0.00038280242164640037,
+            -0.0003809008569957699,
+            -0.0003791005553690712,
+            -0.00037746527891640967,
+            -0.0003760503820327361,
+            -0.00037490182627000914,
+            -0.00037405562448790505,
+            -0.00037353757617951,
+            -0.0003733631722271207,
+            -0.00037353757617951,
+            -0.0003740556244879051,
+            -0.00037490182627000914,
+            -0.0003760503820327361,
+            -0.0003774652789164097,
+            -0.00037910055536907115,
+            -0.0003809008569957699,
+            -0.00038280242164640037,
+            -0.00038473462760198657,
+            -0.00038662220566288384,
+            -0.00038838814857970673,
+            -0.0003899572510937916,
+            -0.00039126009258236044,
+            -0.0003922371541998024,
+            -0.0003928426723188084
+          ]
+        },
+        {
+          "volume_order": 6,
+          "phase_count": 32,
+          "cosine_energy_coefficient": -9.837979190488617e-06,
+          "sine_energy_coefficient": 1.6940658945086007e-21,
+          "complex_coefficient_magnitude": 4.918989595244308e-06,
+          "seconds": 0.0767910829745233,
+          "phase_energies": [
+            -0.00039304782841571097,
+            -0.00039284270453393685,
+            -0.0003922371906108467,
+            -0.0003912601352440483,
+            -0.0003899573010607944,
+            -0.00038838820572379876,
+            -0.0003866222686820503,
+            -0.0003847346942311616,
+            -0.00038280248903601927,
+            -0.0003809009221838449,
+            -0.0003791006157538404,
+            -0.00037746533264532264,
+            -0.0003760504282513494,
+            -0.0003749018652082605,
+            -0.00037405565739079635,
+            -0.00037353760510904193,
+            -0.00037336319977172627,
+            -0.00037353760510904193,
+            -0.00037405565739079635,
+            -0.0003749018652082605,
+            -0.00037605042825134943,
+            -0.00037746533264532264,
+            -0.00037910061575384044,
+            -0.0003809009221838449,
+            -0.0003828024890360193,
+            -0.00038473469423116167,
+            -0.00038662226868205034,
+            -0.0003883882057237987,
+            -0.00038995730106079437,
+            -0.0003912601352440483,
+            -0.0003922371906108467,
+            -0.00039284270453393685
+          ]
+        },
+        {
+          "volume_order": 8,
+          "phase_count": 32,
+          "cosine_energy_coefficient": -9.837979184129957e-06,
+          "sine_energy_coefficient": 1.8634724839594607e-20,
+          "complex_coefficient_magnitude": 4.918989592064979e-06,
+          "seconds": 0.5519992080517113,
+          "phase_energies": [
+            -0.0003930478283867749,
+            -0.00039284270450677097,
+            -0.00039223719058872463,
+            -0.00039126013522948326,
+            -0.0003899573010551587,
+            -0.0003883882057271153,
+            -0.0003866222686930045,
+            -0.00038473469424735103,
+            -0.0003828024890543996,
+            -0.0003809009222012742,
+            -0.00037910061576760357,
+            -0.00037746533265353005,
+            -0.0003760504282531478,
+            -0.00037490186520384647,
+            -0.00037405565738127386,
+            -0.00037353760509618617,
+            -0.00037336319975771507,
+            -0.00037353760509618617,
+            -0.00037405565738127386,
+            -0.00037490186520384663,
+            -0.0003760504282531478,
+            -0.00037746533265353005,
+            -0.00037910061576760357,
+            -0.0003809009222012742,
+            -0.0003828024890543996,
+            -0.00038473469424735103,
+            -0.0003866222686930045,
+            -0.0003883882057271153,
+            -0.0003899573010551587,
+            -0.00039126013522948326,
+            -0.00039223719058872463,
+            -0.00039284270450677097
+          ]
+        }
+      ],
+      "phase_convergence_run": {
+        "volume_order": 6,
+        "phase_count": 48,
+        "cosine_energy_coefficient": -9.837979190488583e-06,
+        "sine_energy_coefficient": -0.0,
+        "complex_coefficient_magnitude": 4.918989595244291e-06,
+        "seconds": 0.11448854207992554,
+        "phase_energies": [
+          -0.00039304782841571097,
+          -0.0003929564576077893,
+          -0.000392684305901008,
+          -0.0003922371906108467,
+          -0.0003916245950806733,
+          -0.0003908593638030623,
+          -0.0003899573010607944,
+          -0.00038893669565775654,
+          -0.00038781779703700437,
+          -0.0003866222686820503,
+          -0.00038537264329645266,
+          -0.0003840918011892634,
+          -0.00038280248903601927,
+          -0.00038152689127997564,
+          -0.0003802862614195828,
+          -0.0003791006157538404,
+          -0.0003779884881655528,
+          -0.0003769667414139829,
+          -0.0003760504282513494,
+          -0.00037525269443300054,
+          -0.00037458471524659314,
+          -0.00037405565739079635,
+          -0.00037367265873037436,
+          -0.0003734408194967588,
+          -0.00037336319977172627,
+          -0.0003734408194967588,
+          -0.00037367265873037436,
+          -0.00037405565739079635,
+          -0.00037458471524659314,
+          -0.00037525269443300054,
+          -0.00037605042825134943,
+          -0.0003769667414139829,
+          -0.0003779884881655528,
+          -0.00037910061575384044,
+          -0.00038028626141958273,
+          -0.0003815268912799757,
+          -0.0003828024890360193,
+          -0.0003840918011892634,
+          -0.0003853726432964526,
+          -0.0003866222686820503,
+          -0.00038781779703700437,
+          -0.00038893669565775654,
+          -0.00038995730106079437,
+          -0.0003908593638030623,
+          -0.00039162459508067324,
+          -0.0003922371906108467,
+          -0.000392684305901008,
+          -0.0003929564576077893
+        ]
+      },
+      "Bessel_radial_quadratures": [
+        {
+          "radial_order": 24,
+          "integral": 4.111336476625638e-06,
+          "integral_error_estimate": 1.6469048225221113e-16,
+          "cosine_energy_coefficient": -9.837979184103421e-06
+        },
+        {
+          "radial_order": 40,
+          "integral": 4.111336476625639e-06,
+          "integral_error_estimate": 1.646908878845454e-16,
+          "cosine_energy_coefficient": -9.837979184103426e-06
+        }
+      ],
+      "real_torque_amplitude": 2.951393755231028e-05,
+      "quadrature_class": "Floating diagnostics, not interval certified"
+    }
+  },
+  "empirical_validation": false,
+  "author_runner_or_results_read": false
+}

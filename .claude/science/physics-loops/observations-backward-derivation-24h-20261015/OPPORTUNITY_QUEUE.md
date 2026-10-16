@@ -52,3 +52,14 @@ Finish the focused weak-source check and checkpoint both scalar support derivati
 Reconstruct and check the Lee thesis external-sphere calibration formula and units before any scalar fit, retaining measured versus calculated quantities and the printed G-exponent issue. Then obtain the public finite-geometry kernel and identify required per-run corrections, resolving the Appendix A.1 separation convention before a Newtonian reference reproduction. Freeze computations, keep these95processed rows exposed development, and do not replace unavailable positions, covariances, geometry or calibration leakage with chosen zeros/profiles. If required inputs remain unavailable, derive controlled uncertainty envelopes or pivot to a dataset with the primitive channels. Absolute F and physical environmental registration remain unresolved.
 
 The finite-source/control derivation has been checked. More noiseless synthetic models will not close the actual measurement gap. Source and calibration correspondence take priority.
+
+### 2026-10-16T07:31:56.058210+00:00 — calibration-to-shape continuation
+
+Complete the focused calibration check and source-binding verification. Personally implement the frozen positive-Laplace shape diagnostic on all95exposed processed torque rows, preserving unmatched-geometry, unknown transfer/covariance and separation limitations. No scalar fit or physical exclusion until an applicable forward model and input correspondence are independently established.
+Calibration support is commits-only. Partial published-model reproduction is an input-correspondence limit, not evidence of new gravity.
+
+## Public dynamical-gravity trace route 2026-10-16T07:53:26.580349+00:00
+
+Read the full primary Fuchs2024 measurement and calibration model, identify instrument readings versus calibrated/fitted/gravity-dependent products, and freeze a minimal raw-file access and analysis protocol before opening the public lock-in arrays. Derive the observed transfer/geometry mapping conditionally, preserving source registration, absolute calibration, noise covariance and background-field assumptions. Published summaries are exposed; any reserved raw-record check is not an unseen physical prediction. Preserve Lee2020's unresolved calibration/geometry/separation correspondence without substituting chosen values.
+
+Priority is an actual measurement-to-force bridge. Do not manufacture further noiseless interpolation results to replace unavailable apparatus inputs. Standard support remains commits-only.

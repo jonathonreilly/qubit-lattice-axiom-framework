@@ -57,3 +57,13 @@ Physical-port and smooth-history blocks: conditional-support, exploratory checke
 ## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
 
 bounded_theorem / conditional-support. Coefficient-function reconstruction and observation-surface sufficiency within the declared action class are checked. The action class is a premise; it has not been selected by observations. No retained or TOE-complete status. See RINGDOWN_RECONSTRUCTION_CHECKPOINT_v1.json.
+
+## Laboratory support status — 2026-10-16T07:51Z
+
+Current status: conditional-support; artifact role: upstream_support; proposal_allowed: false. No retained claim, formal audit verdict or empirical validation is asserted. Calibration, shape and transport results are standard mathematical support or exposed-development diagnostics. No new milestone PR is warranted by these alone.
+
+The calibration and shape checks are complete with root reading and exact binding verification. Geometry transport has 366 passing primary controls; its focused independent check is in progress and is not yet counted as complete. Later receipts supersede this time-specific progress statement without rewriting the frozen evidence.
+
+## Geometry check closure 2026-10-16T07:52:24.587592+00:00
+
+Root read the full focused derivation, code, report and results and verified 16 artifact plus 6 source bindings. All 63 independent controls and 366 unchanged author controls pass; stdout is byte-identical. Counts are separate. Receipt LAB_GEOMETRY_TRANSPORT_ROOT_VERIFICATION_v1.json. Actual geometry certification remains unresolved; no empirical validation, claim promotion or formal audit.

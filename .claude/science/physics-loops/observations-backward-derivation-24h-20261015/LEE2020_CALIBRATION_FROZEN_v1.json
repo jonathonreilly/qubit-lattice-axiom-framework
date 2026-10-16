@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-16T07:20:43.942253+00:00",
+  "sources": {
+    "LEE2020_CALIBRATION_DERIVATION_v1.md": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
+    "LEE2020_CALIBRATION_INPUTS_v1.json": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+    "LEE2020_CALIBRATION_PLAN_v1.json": "f30d6f9cbcf76f8313333cd45092a3046ae31241cc858ecb5b714d98a99be9ba",
+    "check_lee2020_calibration_v1.py": "939fa019d95dad301ac96b2839e914cd385ccea6b9396febd1a11f42d37bd341"
+  },
+  "before_execution": true
+}

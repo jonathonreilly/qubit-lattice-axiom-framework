@@ -1,0 +1,84 @@
+{
+  "recorded_at": "2026-10-16T07:24:41.109380+00:00",
+  "kind": "Preserved published-model reproduction discrepancy, not a physics exclusion",
+  "controls_sha256": "566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244",
+  "mathematical_controls": {
+    "passed": 62,
+    "failed": 0
+  },
+  "source_reproduction_status": "Partial; faithful calibration summary not reproduced from the rounded six-sphere model",
+  "nominal": {
+    "geometric_A3_over_G_SI": 3.149542200936473e-05,
+    "published_Ncal_nominal_fNm": 2.1094,
+    "G_implied_by_published_computed_Ncal": 6.69748130179935e-11,
+    "literal_printed_G": 667420000000.0,
+    "labeled_negative_exponent_candidate": 6.6742e-11,
+    "candidate_predicted_nominal_fNm": 2.1020674557490207,
+    "literal_predicted_nominal_fNm": 2.102067455749021e+22,
+    "candidate_minus_published_fNm": -0.007332544250979289,
+    "status": "Published-model consistency only. Ncal is calculated, so implied G is not a measurement."
+  },
+  "uncertainty_diagnostics": [
+    {
+      "parameter": "inner_mass",
+      "derivative_fNm_per_SI_unit": 4364.848638438348,
+      "coherent_parameter_sigma_fNm": 0.00043648486384383474,
+      "printed_sigma_fNm": 0.000209,
+      "difference_fNm": 0.00022748486384383473,
+      "ratio": 2.0884443246116495,
+      "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+    },
+    {
+      "parameter": "outer_mass",
+      "derivative_fNm_per_SI_unit": 1.849434678678096,
+      "coherent_parameter_sigma_fNm": 0.0025892085501493345,
+      "printed_sigma_fNm": 0.00125,
+      "difference_fNm": 0.0013392085501493344,
+      "ratio": 2.0713668401194676,
+      "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+    },
+    {
+      "parameter": "inner_radius",
+      "derivative_fNm_per_SI_unit": 383.49891530152735,
+      "coherent_parameter_sigma_fNm": 0.0042184880683168,
+      "printed_sigma_fNm": 0.00271,
+      "difference_fNm": 0.0015084880683168002,
+      "ratio": 1.556637663585535,
+      "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+    },
+    {
+      "parameter": "outer_radius",
+      "derivative_fNm_per_SI_unit": -44.21065396258939,
+      "coherent_parameter_sigma_fNm": 0.0026526392377553636,
+      "printed_sigma_fNm": 0.00333,
+      "difference_fNm": -0.0006773607622446364,
+      "ratio": 0.7965883596862954,
+      "interpretation": "All three equal sphere parameters varied together; source covariance/averaging convention not assumed."
+    }
+  ],
+  "centering": {
+    "radial": [
+      {
+        "displacement_orientation_rad": 0.0,
+        "radial_delta_fNm": 0.004713816064562781
+      },
+      {
+        "displacement_orientation_rad": 0.5235987755982988,
+        "radial_delta_fNm": 0.004713846556925194
+      }
+    ],
+    "vertical_delta_fNm": -0.0027241239329809375,
+    "published_radial_table_fNm": 0.00475,
+    "published_radial_prose_fNm": 0.0042,
+    "published_vertical_fNm": -0.0027,
+    "scope": "Ideal six-sphere model, not a complete reproduction of apparatus uncertainty or null corrections."
+  },
+  "source_scope": "The negative exponent candidate restores the physical order of magnitude but leaves a0.35percent nominal discrepancy. Source metrology/covariance/averaging, rounding and apparatus components must be reconciled; none is tuned here. No significance or anomalous-force interpretation follows.",
+  "continued_route": "Validate finite-source kernel independently and derive measurement-shape constraints that state, rather than silently fill, the missing geometry/calibration conditions.",
+  "kernel_page_visual": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_kernel-23.png",
+    "sha256": "b2805ef5479b12c93f391f1fd5bb426a983072b4d83fd00f9e19ff2c9845f8c8",
+    "viewed": true
+  },
+  "empirical_validation": false
+}

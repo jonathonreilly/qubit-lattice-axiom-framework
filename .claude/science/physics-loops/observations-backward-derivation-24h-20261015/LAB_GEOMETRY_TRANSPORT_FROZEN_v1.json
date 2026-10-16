@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-16T07:41:03.434628+00:00",
+  "source_hashes": {
+    "LAB_GEOMETRY_TRANSPORT_v1.md": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
+    "check_lab_geometry_transport_v1.py": "212ce9574ffc18cbf9cc0a9079d4f1fa1e819b88a71bdaec739733529ebf8c32"
+  },
+  "scope": "Synthetic proof support; actual correspondence and displacement bounds not derived."
+}

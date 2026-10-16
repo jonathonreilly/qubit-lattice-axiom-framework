@@ -1,0 +1,73 @@
+{
+  "created_at_utc": "2026-10-16T07:51:17.034478+00:00",
+  "kind": "Focused independent geometry-transport evidence, no formal audit status",
+  "self_excluded": true,
+  "report": "REPORT_v1.md",
+  "source_binding": "FINAL_SOURCE_BINDING_v1.json",
+  "files": {
+    "AUTHOR_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "476e74fb47fda1133e4bf73d82ec52b2fc24a072346bd6b71085fcb5139b1770",
+      "bytes": 68249
+    },
+    "DERIVATION_BEFORE_CODE_v1.md": {
+      "sha256": "abe76b4b30cb47b97f2f2ece870d1aaa56189c75c94505de658f308dcfaeb2c9",
+      "bytes": 4858
+    },
+    "FAILURE_RECORD_v1.json": {
+      "sha256": "1c5ab981d1d662d18019db2f553faf7bd799b3b286ce8020c52fb589b137f179",
+      "bytes": 910
+    },
+    "FINAL_SOURCE_BINDING_v1.json": {
+      "sha256": "d07046e67b03c5a5c9adb252b82b91527ff29fa141ae82afc050edb7a35ede72",
+      "bytes": 1136
+    },
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "8302ca224cc64e97ff476d4eabe4d2f0059eda5132e07e5c091743775027f164",
+      "bytes": 1414
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "7bc5ef4284b006bd26d832258bd1f3e5c87146da6dfa9bff97e55ef3a3d005ff",
+      "bytes": 497
+    },
+    "PRE_CODE_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "9354cbd0f968c26869af4d5bde648047b269455d40ac094d722172578dc9dd1a",
+      "bytes": 4667
+    },
+    "REPORT_v1.md": {
+      "sha256": "a6bc60fd9778ddb80b8b3d003d2f2123a32bae1e6a5d49d399f06345e9fdca4a",
+      "bytes": 4985
+    },
+    "author_attempt01.run.json": {
+      "sha256": "737a984a690a9b148227e5c6c9bf5a0232d798a6623b3b9cb08ba475f73c582b",
+      "bytes": 5794
+    },
+    "author_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "author_attempt01.stdout.json": {
+      "sha256": "74730ce6ebf6c899287905fb26a86d6baa3fee417b5ecfe41fde996785572a77",
+      "bytes": 51426
+    },
+    "independent_attempt01.run.json": {
+      "sha256": "75c5b23e8d5e057b5e364d541c08eef915d4e6d0b9557a9cc62595b134b50dc7",
+      "bytes": 2877
+    },
+    "independent_attempt01.stderr.txt": {
+      "sha256": "869a363764bd9293c3cad692b62a746774c14bd5888da0bdfbaf7b776be201cf",
+      "bytes": 3946
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "4b9f6bbecfd7033db6b4ee63e326a11e1c40355f1c086628b71a25579efbbb3a",
+      "bytes": 15684
+    },
+    "independent_controls_v1.py": {
+      "sha256": "229fd13dc8732b2b17857eb39be0efea1581d41a9aa5ee6b1d81802fcab4dd8c",
+      "bytes": 9568
+    },
+    "run_bounded_v1.py": {
+      "sha256": "b6e0c0be861065caa14ddca6b3421a1f2e546ea0d9aa5552427c0c51702f2e63",
+      "bytes": 4957
+    }
+  }
+}

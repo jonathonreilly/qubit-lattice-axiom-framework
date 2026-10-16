@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-16T07:52:24.587592+00:00",
+  "author": "/root",
+  "complete_independent_derivation_code_report_and_results_read": true,
+  "manifest": "independent_lab_geometry_transport/MANIFEST_v1.json",
+  "manifest_sha256": "d1983b409f09dd78d90a7d332c372355beb0a926aaff0ca6898ddcf48156b23d",
+  "artifact_bindings_verified": 16,
+  "source_bindings_verified": 6,
+  "primary_controls": 366,
+  "independent_controls": 63,
+  "author_reproduction_byte_identical": true,
+  "counts_overlap_not_pooled": true,
+  "result": "Conservative gradient and positive mass transport bounds checked under uniform pathwise geometry; real harmonics require factor two. No actual apparatus displacement certificate supplied.",
+  "limits": [
+    "Stipulated scale envelope is loose; actual errors need not be large.",
+    "No empirical covariance, confidence level or scalar exclusion.",
+    "Unconstrained transport infima cannot be inserted without admissible paths."
+  ],
+  "formal_audit": false,
+  "empirical_validation": false
+}

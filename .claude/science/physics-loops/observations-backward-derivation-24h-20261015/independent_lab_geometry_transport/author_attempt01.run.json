@@ -1,0 +1,111 @@
+{
+  "mode": "author",
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_geometry_transport_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "observer_dont_write_bytecode": true,
+  "start_utc": "2026-10-16T07:49:39.385714+00:00",
+  "end_utc": "2026-10-16T07:49:39.751772+00:00",
+  "wall_seconds": 0.36525416700169444,
+  "child_user_seconds": 0.216609,
+  "child_system_seconds": 0.038403,
+  "child_peak_rss_platform_units": 73121792,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "stdout_bytes": 51426,
+  "stdout_sha256": "74730ce6ebf6c899287905fb26a86d6baa3fee417b5ecfe41fde996785572a77",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_binding_before": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_v1.md": {
+      "sha256": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
+      "bytes": 4242
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_geometry_transport/independent_controls_v1.py": {
+      "sha256": "229fd13dc8732b2b17857eb39be0efea1581d41a9aa5ee6b1d81802fcab4dd8c",
+      "bytes": 9568
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_geometry_transport/run_bounded_v1.py": {
+      "sha256": "b6e0c0be861065caa14ddca6b3421a1f2e546ea0d9aa5552427c0c51702f2e63",
+      "bytes": 4957
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_geometry_transport_v1.py": {
+      "sha256": "212ce9574ffc18cbf9cc0a9079d4f1fa1e819b88a71bdaec739733529ebf8c32",
+      "bytes": 4927
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_CONTROLS_v1.json": {
+      "sha256": "74730ce6ebf6c899287905fb26a86d6baa3fee417b5ecfe41fde996785572a77",
+      "bytes": 51426
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_FROZEN_v1.json": {
+      "sha256": "afea74f2f4c384b8a7fa04156afc1ef027212886ea40a10190279f82cb320882",
+      "bytes": 386
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_RUN_v1.json": {
+      "sha256": "b411da153cc97f082e1b9036dcb63dfacf52d56fa64d2d5a0a87b9db14e87792",
+      "bytes": 316
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_geometry_transport/INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "8302ca224cc64e97ff476d4eabe4d2f0059eda5132e07e5c091743775027f164",
+      "bytes": 1414
+    }
+  },
+  "source_binding_after": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_v1.md": {
+      "sha256": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
+      "bytes": 4242
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_geometry_transport/independent_controls_v1.py": {
+      "sha256": "229fd13dc8732b2b17857eb39be0efea1581d41a9aa5ee6b1d81802fcab4dd8c",
+      "bytes": 9568
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_geometry_transport/run_bounded_v1.py": {
+      "sha256": "b6e0c0be861065caa14ddca6b3421a1f2e546ea0d9aa5552427c0c51702f2e63",
+      "bytes": 4957
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_geometry_transport_v1.py": {
+      "sha256": "212ce9574ffc18cbf9cc0a9079d4f1fa1e819b88a71bdaec739733529ebf8c32",
+      "bytes": 4927
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_CONTROLS_v1.json": {
+      "sha256": "74730ce6ebf6c899287905fb26a86d6baa3fee417b5ecfe41fde996785572a77",
+      "bytes": 51426
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_FROZEN_v1.json": {
+      "sha256": "afea74f2f4c384b8a7fa04156afc1ef027212886ea40a10190279f82cb320882",
+      "bytes": 386
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_RUN_v1.json": {
+      "sha256": "b411da153cc97f082e1b9036dcb63dfacf52d56fa64d2d5a0a87b9db14e87792",
+      "bytes": 316
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_geometry_transport/INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "8302ca224cc64e97ff476d4eabe4d2f0059eda5132e07e5c091743775027f164",
+      "bytes": 1414
+    }
+  },
+  "sources_unchanged": true,
+  "output_parse_error": null,
+  "summary": {
+    "passed": 366,
+    "failed": 0
+  },
+  "matches_original_receipt_bytes": true,
+  "matches_original_receipt_json": true,
+  "independent_outputs_frozen_before_author_read": true
+}

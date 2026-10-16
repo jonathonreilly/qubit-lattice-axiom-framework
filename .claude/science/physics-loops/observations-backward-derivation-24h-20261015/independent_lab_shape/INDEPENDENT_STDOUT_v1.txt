@@ -1,0 +1,30 @@
+{
+  "passed": 82,
+  "failed": 0,
+  "distinct_central_separations": 82,
+  "central_pairs": 4480,
+  "interval_pairs": 4190,
+  "optima": {
+    "N120": {
+      "monotone": 1.9354019746121303,
+      "convex": 1.9822475019745318,
+      "partial": 1.8785390713476777,
+      "exact_monotone": "6861/3545",
+      "exact_partial": "6635/3532"
+    },
+    "N18": {
+      "monotone": 2.2584269662921352,
+      "convex": 2.6356148735984624,
+      "partial": 2.2584269662921423,
+      "exact_monotone": "201/89",
+      "exact_partial": "201/89"
+    },
+    "N54": {
+      "monotone": 2.237623762376237,
+      "convex": 2.280778856131359,
+      "partial": 2.2376237623762374,
+      "exact_monotone": "226/101",
+      "exact_partial": "226/101"
+    }
+  }
+}

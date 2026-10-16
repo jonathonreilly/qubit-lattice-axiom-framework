@@ -1,0 +1,5 @@
+{
+  "url": "https://zenodo.org/api/records/10300430",
+  "error": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'))",
+  "retrieved_at": "2026-10-16T07:43:12.456232+00:00"
+}

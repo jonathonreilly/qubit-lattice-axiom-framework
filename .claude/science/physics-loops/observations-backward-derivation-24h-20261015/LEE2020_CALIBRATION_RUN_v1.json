@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-16T07:20:43.944201+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lee2020_calibration_v1.py"
+  ],
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "elapsed_seconds": 1.7175537501461804
+}

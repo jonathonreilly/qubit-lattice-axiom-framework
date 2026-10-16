@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-16T07:34:11.096978+00:00",
+  "author": "/root",
+  "source_hashes": {
+    "LAB_SHAPE_PLAN_v1.json": "c1fb462b0d31817c13739738177817e6c3051d4e2af3b17c265b37d23009a2a4",
+    "LAB_SHAPE_DERIVATION_v1.md": "a459a8fdba87c52ff5e79b14b802333d47788e406c6970ab42a992d3c4d8e8e3",
+    "LEE2020_APPENDIX_A1_v1.csv": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
+    "check_lab_shape_v1.py": "c289f6d9dae7688af8a62fb4d7125ae7ff9d492e68704757a1606e04a96de491"
+  },
+  "data_role": "All95rows already exposed development; no empirical holdout"
+}

@@ -1,0 +1,108 @@
+{
+  "recorded_at_utc": "2026-10-16T07:32:04.759156+00:00",
+  "execution_attempts": {
+    "independent": {
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.4392379578202963,
+      "summary": {
+        "passed": 85,
+        "failed": 0
+      },
+      "sources_unchanged": true
+    },
+    "author": {
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.7130479589104652,
+      "summary": {
+        "passed": 62,
+        "failed": 0
+      },
+      "sources_unchanged": true
+    }
+  },
+  "failed_executions": [],
+  "timeouts": [],
+  "meaning": "No failed or repaired execution; published-model discrepancies are preserved independently of mathematical control success.",
+  "published_model_diagnostics": {
+    "nominal_amplitude_fNm_negative_exponent_candidate": 2.102067455749018,
+    "published_nominal_fNm": 2.1094,
+    "nominal_difference_fNm": -0.007332544250981954,
+    "G_consistency_only": 6.697481301799359e-11,
+    "G_negative_exponent_candidate": 6.6742e-11,
+    "G_literal_printed": 667420000000.0,
+    "nominal_amplitude_fNm_literal_exponent": 2.1020674557490177e+22,
+    "literal_to_candidate_ratio": 1e+22,
+    "corrections": {
+      "radial": {
+        "amplitude_per_G": 3.156604944133501e-05,
+        "correction_fNm": 0.004713816064563278,
+        "quad_error_per_G": 6.199490195802947e-18,
+        "offset_direction": "dx=specified radial offset, dy=0"
+      },
+      "vertical": {
+        "amplitude_per_G": 3.145460627215309e-05,
+        "correction_fNm": -0.0027241239329764493,
+        "quad_error_per_G": 1.1900676989823581e-17,
+        "offset_direction": "dx=specified radial offset, dy=0"
+      },
+      "combined": {
+        "amplitude_per_G": 3.1524878851618763e-05,
+        "correction_fNm": 0.0019660085657217264,
+        "quad_error_per_G": 6.173845720173705e-18,
+        "offset_direction": "dx=specified radial offset, dy=0"
+      }
+    },
+    "published_radial_correction_table": 0.00475,
+    "published_radial_correction_prose": 0.0042,
+    "published_vertical_correction": -0.0027,
+    "single_parameter_sensitivities": {
+      "inner_mass": {
+        "derivative_per_G": 0.06539882889878254,
+        "single_parameter_sigma_fNm": 0.00043648486383625443,
+        "printed_sigma_fNm": 0.000209,
+        "difference_fNm": 0.00022748486383625442,
+        "ratio_to_printed": 2.08844432457538
+      },
+      "outer_mass": {
+        "derivative_per_G": 2.771020764505075e-05,
+        "single_parameter_sigma_fNm": 0.002589208550104368,
+        "printed_sigma_fNm": 0.00125,
+        "difference_fNm": 0.0013392085501043678,
+        "ratio_to_printed": 2.071366840083494
+      },
+      "inner_radius": {
+        "derivative_per_G": 0.0057459907599254085,
+        "single_parameter_sigma_fNm": 0.004218488068288358,
+        "printed_sigma_fNm": 0.00271,
+        "difference_fNm": 0.0015084880682883577,
+        "ratio_to_printed": 1.5566376635750396
+      },
+      "outer_radius": {
+        "derivative_per_G": -0.0006624112846873249,
+        "single_parameter_sigma_fNm": 0.002652639237756086,
+        "printed_sigma_fNm": 0.00333,
+        "difference_fNm": -0.0006773607622439139,
+        "ratio_to_printed": 0.7965883596865123
+      }
+    },
+    "conditional_uncorrelated_four_parameter_sigma_fNm": 0.00563264204971931,
+    "gamma_arithmetic": 1.0119820033151787,
+    "gamma_sigma_conditional_uncorrelated": 0.0047567650544921595,
+    "published_gamma": {
+      "value": 1.012,
+      "uncertainty": 0.0047
+    },
+    "interpretation": "Published-model diagnostics only; no input retuned, covariance inferred or G measured."
+  },
+  "no_retuning": true,
+  "author_discrepancy_note_agrees": true,
+  "source_transcription_scope": "Pinned supplied JSON was used; no independent PDF transcription check performed.",
+  "prohibited_inferences": [
+    "independent measurement of G",
+    "significance or anomalous-force claim from the preserved mismatch",
+    "physical scalar exclusion",
+    "complete apparatus covariance reconstruction"
+  ]
+}

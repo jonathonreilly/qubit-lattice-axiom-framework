@@ -1,0 +1,42 @@
+{
+  "frozen_at_utc": "2026-10-16T07:48:43.639882+00:00",
+  "phase": "Independent implementation and outputs frozen before author runner/results access",
+  "summary": {
+    "passed": 63,
+    "failed": 0
+  },
+  "files": {
+    "PRE_CODE_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "9354cbd0f968c26869af4d5bde648047b269455d40ac094d722172578dc9dd1a",
+      "bytes": 4667
+    },
+    "DERIVATION_BEFORE_CODE_v1.md": {
+      "sha256": "abe76b4b30cb47b97f2f2ece870d1aaa56189c75c94505de658f308dcfaeb2c9",
+      "bytes": 4858
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "7bc5ef4284b006bd26d832258bd1f3e5c87146da6dfa9bff97e55ef3a3d005ff",
+      "bytes": 497
+    },
+    "independent_controls_v1.py": {
+      "sha256": "229fd13dc8732b2b17857eb39be0efea1581d41a9aa5ee6b1d81802fcab4dd8c",
+      "bytes": 9568
+    },
+    "run_bounded_v1.py": {
+      "sha256": "b6e0c0be861065caa14ddca6b3421a1f2e546ea0d9aa5552427c0c51702f2e63",
+      "bytes": 4957
+    },
+    "independent_attempt01.run.json": {
+      "sha256": "75c5b23e8d5e057b5e364d541c08eef915d4e6d0b9557a9cc62595b134b50dc7",
+      "bytes": 2877
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "4b9f6bbecfd7033db6b4ee63e326a11e1c40355f1c086628b71a25579efbbb3a",
+      "bytes": 15684
+    },
+    "independent_attempt01.stderr.txt": {
+      "sha256": "869a363764bd9293c3cad692b62a746774c14bd5888da0bdfbaf7b776be201cf",
+      "bytes": 3946
+    }
+  }
+}

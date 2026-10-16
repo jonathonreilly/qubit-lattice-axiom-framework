@@ -1,3 +1,4 @@
 # The pinned CSV uses CRLF. Preserve its bytes and accept CR only at end of line.
 # Retain the normal trailing-space, blank-EOF and space-before-tab checks.
 LEE2020_APPENDIX_A1_v1.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+independent_lab_shape/PREEXPOSURE__LEE2020_APPENDIX_A1_v1.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

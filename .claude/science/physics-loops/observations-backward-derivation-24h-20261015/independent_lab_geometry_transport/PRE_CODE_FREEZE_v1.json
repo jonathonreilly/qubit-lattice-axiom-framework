@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-16T07:44:51.093975+00:00",
+  "phase": "Independent derivation and fixtures frozen before implementation and before reading author runner/results",
+  "files": {
+    "PRE_CODE_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "9354cbd0f968c26869af4d5bde648047b269455d40ac094d722172578dc9dd1a",
+      "bytes": 4667
+    },
+    "DERIVATION_BEFORE_CODE_v1.md": {
+      "sha256": "abe76b4b30cb47b97f2f2ece870d1aaa56189c75c94505de658f308dcfaeb2c9",
+      "bytes": 4858
+    }
+  }
+}

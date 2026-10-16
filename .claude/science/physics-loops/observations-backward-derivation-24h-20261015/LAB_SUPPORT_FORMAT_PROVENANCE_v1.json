@@ -1,0 +1,23 @@
+{
+  "time": "2026-10-16T07:54:55.497882+00:00",
+  "ordinary_git_diff_check_returncode": 2,
+  "diagnostics": [
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_GEOMETRY_TRANSPORT_v1.md:83: new blank line at EOF.",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_SHAPE_RESULTS_v1.md:77: new blank line at EOF.",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_geometry_transport_v1.py:101: new blank line at EOF.",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_shape_v1.py:218: new blank line at EOF.",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_EXPOSURE__LAB_SHAPE_RESULTS_v1.md:77: new blank line at EOF.",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_EXPOSURE__check_lab_shape_v1.py:218: new blank line at EOF."
+  ],
+  "disposition": "Six already source-bound historical evidence files retain their exact trailing blank line. Unfrozen prose normalized. No whitespace rules weakened or checks reported clean; this is a commits-only evidence checkpoint, not a landing validation.",
+  "preserved_files": {
+    "LAB_GEOMETRY_TRANSPORT_v1.md": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
+    "LAB_SHAPE_RESULTS_v1.md": "2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e",
+    "check_lab_geometry_transport_v1.py": "212ce9574ffc18cbf9cc0a9079d4f1fa1e819b88a71bdaec739733529ebf8c32",
+    "check_lab_shape_v1.py": "c289f6d9dae7688af8a62fb4d7125ae7ff9d492e68704757a1606e04a96de491",
+    "independent_lab_shape/AUTHOR_EXPOSURE__LAB_SHAPE_RESULTS_v1.md": "2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e",
+    "independent_lab_shape/AUTHOR_EXPOSURE__check_lab_shape_v1.py": "c289f6d9dae7688af8a62fb4d7125ae7ff9d492e68704757a1606e04a96de491"
+  },
+  "scientific_results_affected": false,
+  "formal_audit": false
+}

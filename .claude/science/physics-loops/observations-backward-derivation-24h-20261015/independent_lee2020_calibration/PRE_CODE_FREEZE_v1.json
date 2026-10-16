@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-16T07:22:36.328737+00:00",
+  "status": "Independent derivation and numerical fixtures frozen before implementing checks and before reading author runner/results",
+  "files": {
+    "PRE_CODE_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "39374d04053c06503816c50c6929b8e010a1ac8d04560ba336b197d1b6726978",
+      "bytes": 12592
+    },
+    "DERIVATION_BEFORE_CODE_v1.md": {
+      "sha256": "36ad4d112c2215cba705312c453a8bf5a0b45697bd3e1f780aa551df7aa28cba",
+      "bytes": 5927
+    }
+  }
+}

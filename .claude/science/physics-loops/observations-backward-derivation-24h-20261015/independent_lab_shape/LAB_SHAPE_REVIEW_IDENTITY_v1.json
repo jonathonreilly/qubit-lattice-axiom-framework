@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-10-16T07:42:02.452935+00:00",
+  "scope": "Focused mathematical/source/implementation check; no empirical validation, formal audit or publication approval",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_SHAPE_DERIVATION_v1.md",
+      "bytes": 4960,
+      "sha256": "a459a8fdba87c52ff5e79b14b802333d47788e406c6970ab42a992d3c4d8e8e3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_SHAPE_PLAN_v1.json",
+      "bytes": 2555,
+      "sha256": "c1fb462b0d31817c13739738177817e6c3051d4e2af3b17c265b37d23009a2a4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_DERIVATION_v1.md",
+      "bytes": 7020,
+      "sha256": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_APPENDIX_A1_v1.csv",
+      "bytes": 6590,
+      "sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_shape_v1.py",
+      "bytes": 10718,
+      "sha256": "c289f6d9dae7688af8a62fb4d7125ae7ff9d492e68704757a1606e04a96de491"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_SHAPE_CONTROLS_v1.json",
+      "bytes": 2295067,
+      "sha256": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_SHAPE_RESULTS_v1.md",
+      "bytes": 3929,
+      "sha256": "2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e"
+    }
+  ],
+  "review": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/LAB_SHAPE_REVIEW_v1.md",
+    "bytes": 8447,
+    "sha256": "74c95f1a4f8ef2717f45c9a75f093eaaadcf7a9e850edc2ef1b3d56a2ce03668"
+  },
+  "evidence": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_COMPARISON_v1.json",
+      "bytes": 11195,
+      "sha256": "e7b0a6717bbb3113a53dc2c885900654600338e6e06786ab89b9d06803523bac"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_EXPOSURE__LAB_SHAPE_CONTROLS_v1.json",
+      "bytes": 2295067,
+      "sha256": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_EXPOSURE__LAB_SHAPE_RESULTS_v1.md",
+      "bytes": 3929,
+      "sha256": "2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_EXPOSURE__check_lab_shape_v1.py",
+      "bytes": 10718,
+      "sha256": "c289f6d9dae7688af8a62fb4d7125ae7ff9d492e68704757a1606e04a96de491"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_REPRODUCTION_STDERR_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/AUTHOR_REPRODUCTION_STDOUT_v1.txt",
+      "bytes": 2295067,
+      "sha256": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/INDEPENDENT_CODE_FREEZE_v1.json",
+      "bytes": 205,
+      "sha256": "8c68eb6aa44609d5f7a45acd5932a6bac385b8dcb000b5e8a5d96ee14f3a4f6f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/INDEPENDENT_EXECUTION_v1.json",
+      "bytes": 350,
+      "sha256": "34c810d05c296ae96c04fbbc4401050b854959f3b8301aeba080975d8c7fe22e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/INDEPENDENT_RESULTS_v1.json",
+      "bytes": 880854,
+      "sha256": "95fab8cc3efc9751d77eb82a2567d2c7bf685661dac8c80b563f9bb1ce0b74d1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/INDEPENDENT_STDERR_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/INDEPENDENT_STDOUT_v1.txt",
+      "bytes": 739,
+      "sha256": "47aabb17978e6b9b48d6167c8c0098cb6ef16c303d90f20d6c7843b0319fdc56"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/OUTPUT_DISPLAY_TRUNCATION_v1.json",
+      "bytes": 599,
+      "sha256": "9fc1935c0ccfebdea957e747b3980da8e8901441dd4a72e545a6a0c32a475cbf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/PRECHECK_IDENTITY_v1.json",
+      "bytes": 1591,
+      "sha256": "f93f61bf6252d7b8c747461a5237f50fd907435608cc62de579d9c73b9ad65ff"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/PRECHECK_v1.md",
+      "bytes": 4189,
+      "sha256": "a871374ce1e84a42512a72a6a88d97ba77594381539e1ff0b7ab63f2921c8256"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/PREEXPOSURE__LAB_SHAPE_DERIVATION_v1.md",
+      "bytes": 4960,
+      "sha256": "a459a8fdba87c52ff5e79b14b802333d47788e406c6970ab42a992d3c4d8e8e3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/PREEXPOSURE__LAB_SHAPE_PLAN_v1.json",
+      "bytes": 2555,
+      "sha256": "c1fb462b0d31817c13739738177817e6c3051d4e2af3b17c265b37d23009a2a4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/PREEXPOSURE__LEE2020_APPENDIX_A1_v1.csv",
+      "bytes": 6590,
+      "sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/PREEXPOSURE__LEE2020_CALIBRATION_DERIVATION_v1.md",
+      "bytes": 7020,
+      "sha256": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/PRE_AUTHOR_EXPOSURE_FREEZE_v1.json",
+      "bytes": 947,
+      "sha256": "80ed1a7f8ca9131b977acb5434f4ab4343e9801feca45ce64c1bf8b9f4dc345f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/compare_author_v1.py",
+      "bytes": 5887,
+      "sha256": "b6ff30dc1a3ccf418ab9ea860b35ded7b03938278d1ca651f26cf46524d02fca"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_shape/independent_shape_v1.py",
+      "bytes": 10576,
+      "sha256": "905d57739cb64cbd985d36568b69b46d755fb6aab5ad12de160046fb0e6c5f95"
+    }
+  ],
+  "independent_controls": {
+    "passed": 82,
+    "failed": 0
+  },
+  "unchanged_author_reproduction": {
+    "passed": 158,
+    "failed": 0,
+    "byte_identical_output": true
+  },
+  "post_exposure_comparison_controls": {
+    "passed": 47,
+    "failed": 0
+  },
+  "material_findings": [],
+  "solver_library_independence": false,
+  "new_empirical_holdout": false
+}

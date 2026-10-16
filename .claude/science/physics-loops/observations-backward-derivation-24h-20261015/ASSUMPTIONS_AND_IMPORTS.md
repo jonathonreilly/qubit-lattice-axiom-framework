@@ -48,3 +48,15 @@ The protocol uses an explicit one-coordinate passive linear hidden response with
 ## Action reconstruction checkpoint 2026-10-16T05:31:36.754907+00:00
 
 The checked inverse imports a smooth one-hidden-coordinate reciprocal quadratic action with coefficients depending only on visible x, a Rayleigh quadratic form, independently calibrated force conjugacy/time/coordinate, rest response, an isolated underdamped observable mode and ideal continuum functions. It reconstructs relative inertia, stiffness/damping and potential/coupling functions instead of selecting them; integration constants and proved gauge freedoms remain. Nonlinear hidden potentials, multiple hidden modes, state-dependent readout and w-dependent kinetic metrics remain outside the result. Synthetic controls and fitted preparations are explicitly separated from independent empirical data.
+
+## Laboratory calibration, shape and geometry — 2026-10-16T07:51Z
+
+The supplied weak, unscreened scalar action, material stress response, physical matter metric, local background coefficients, source registration and absolute scales remain conditions. The published Lee2020 Appendix A.1 records are processed, already exposed development data. Their torque units incorporate a gravitational calibration; they do not independently identify absolute F or G_T.
+
+Root reconstructed the external-sphere calibration and finite-wedge Green kernel. The pinned equal-sphere inputs with the explicitly labeled negative-exponent G diagnostic predict 2.1020674557490207 fNm versus the source 2.1094 fNm. This partial reproduction is an unresolved source/model correspondence, not evidence of anomalous gravity. The printed positive exponent remains recorded. Rendered Chapter4 tables establish grams and full subtended angles, so beta in the wedge kernel is half the tabulated angle. Runwise offsets, tilt, covariance, interpolation tables and the minimum-separation convention remain unresolved.
+
+Positive-Laplace shape conditions remove common positive gain and common additive separation offset only within the matched-pattern, correct transfer and positive spectral measure premises. The actual patterned bodies differ; positivity for this apparatus has not been established. The 95-row diagnostic is a deterministic standardized-error feasibility calculation, with central-separation and interval-order variants, not a significance test or scalar exclusion.
+
+The geometry transport estimate avoids choosing a detailed density only when actual nonnegative mass correspondences, admissible paths, positive minimum gap and displacement bounds are available. Optimized Wasserstein moments may replace specified coupling costs only if the path hypotheses remain satisfied. The illustrative mass/length values are stipulated and are not a measured apparatus error certificate.
+
+Next-source intake has accessed only published paper summaries and public Zenodo metadata for Fuchs et al.2024. Raw lock-in arrays remain unopened. A physical calibration/measurement map and frozen exposure protocol must precede trace processing; a source-position change is not an independently registered scalar environment.

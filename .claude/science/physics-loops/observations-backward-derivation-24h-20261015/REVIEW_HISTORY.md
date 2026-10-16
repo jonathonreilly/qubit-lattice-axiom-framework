@@ -135,3 +135,15 @@ Root personally derived physical-port calibration and smooth-history tests.28/24
 Root personally derived and implemented the common-action ringdown identity and full conditional action-function inverse.62parent controls and132extension controls passed; the extension reruns62parent controls, so counts are not summed. Focused independent checks passed268and418assertions respectively. Root read complete proofs/code/results and verified31source/dependency/artifact bindings. No physical dataset or empirical holdout was opened. The v1 representation-check failure remains with its v2 correction. New functions are reconstructed within a supplied one-mode reciprocal quadratic class; physical port calibration, rest preparation, mode observability, finite-band certificates and physical identification remain assumptions.
 
 Reports: independent_common_action_ringdown/REPORT.md and independent_ringdown_reconstruction/REPORT.md. No formal audit, physical validation, novelty certification or landing approval.
+
+## Laboratory calibration and shape review — 2026-10-16T07:51Z
+
+Root read the complete independent proofs, runners and result summaries. Calibration: 62 primary and 85 independent controls pass, with unchanged author replay and 17 artifact plus 9 source bindings verified. Receipt LEE2020_CALIBRATION_ROOT_VERIFICATION_v1.json. Published-apparatus calibration reproduction remains partial; the checker used the frozen transcription, not an independent reading of the source PDF.
+
+Shape: 158 primary and 82 independent controls pass, plus 47 explicitly post-exposure comparisons. The exact rational monotonicity certificates and alternate hinge representation agree. Convex checks share the HiGHS solver; independence is not claimed for that numerical engine. Root verified 29 bindings and read the full derivation/code/review. Receipt LAB_SHAPE_ROOT_VERIFICATION_v1.json. Counts are not pooled, and synthetic/exposed-development checks are not empirical validation.
+
+Geometry transport: 366 primary controls pass. Focused independent path/coupling/harmonic check is underway. No audit verdict, landing approval, main mutation or new PR.
+
+## Geometry check closure 2026-10-16T07:52:24.587592+00:00
+
+Root read the full focused derivation, code, report and results and verified 16 artifact plus 6 source bindings. All 63 independent controls and 366 unchanged author controls pass; stdout is byte-identical. Counts are separate. Receipt LAB_GEOMETRY_TRANSPORT_ROOT_VERIFICATION_v1.json. Actual geometry certification remains unresolved; no empirical validation, claim promotion or formal audit.

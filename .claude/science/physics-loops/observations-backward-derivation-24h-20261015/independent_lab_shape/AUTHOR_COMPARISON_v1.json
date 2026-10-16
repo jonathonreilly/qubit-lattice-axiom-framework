@@ -1,0 +1,349 @@
+{
+  "scope": "Post-exposure source/certificate comparison and unchanged reproduction, distinct from frozen independent computation",
+  "started_utc": "2026-10-16T07:40:01.194271+00:00",
+  "elapsed_seconds": 0.5105716246180236,
+  "timeout_seconds": 120,
+  "returncode": 0,
+  "source_before": {
+    "LAB_SHAPE_DERIVATION_v1.md": "a459a8fdba87c52ff5e79b14b802333d47788e406c6970ab42a992d3c4d8e8e3",
+    "LAB_SHAPE_PLAN_v1.json": "c1fb462b0d31817c13739738177817e6c3051d4e2af3b17c265b37d23009a2a4",
+    "LAB_SHAPE_RESULTS_v1.md": "2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e",
+    "check_lab_shape_v1.py": "c289f6d9dae7688af8a62fb4d7125ae7ff9d492e68704757a1606e04a96de491",
+    "LAB_SHAPE_CONTROLS_v1.json": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed",
+    "LEE2020_APPENDIX_A1_v1.csv": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381"
+  },
+  "source_after": {
+    "LAB_SHAPE_DERIVATION_v1.md": "a459a8fdba87c52ff5e79b14b802333d47788e406c6970ab42a992d3c4d8e8e3",
+    "LAB_SHAPE_PLAN_v1.json": "c1fb462b0d31817c13739738177817e6c3051d4e2af3b17c265b37d23009a2a4",
+    "LAB_SHAPE_RESULTS_v1.md": "2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e",
+    "check_lab_shape_v1.py": "c289f6d9dae7688af8a62fb4d7125ae7ff9d492e68704757a1606e04a96de491",
+    "LAB_SHAPE_CONTROLS_v1.json": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed",
+    "LEE2020_APPENDIX_A1_v1.csv": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381"
+  },
+  "stdout_sha256": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "checks": [
+    {
+      "name": "original source byte identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "return code zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact reproduced stdout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parsed reproduced output",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all original CSV fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120central_convex assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120central_convex row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120central_convex independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120central_convex independent optimum",
+      "passed": true,
+      "detail": 3.552713678800501e-15
+    },
+    {
+      "name": "N120central_monotone assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120central_monotone row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120central_monotone independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120central_monotone independent optimum",
+      "passed": true,
+      "detail": -2.220446049250313e-16
+    },
+    {
+      "name": "N120interval_monotone_relaxation assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120interval_monotone_relaxation row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120interval_monotone_relaxation independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120interval_monotone_relaxation exact interval relation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N120interval_monotone_relaxation independent optimum",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "N18central_convex assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18central_convex row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18central_convex independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18central_convex independent optimum",
+      "passed": true,
+      "detail": -3.8191672047105385e-14
+    },
+    {
+      "name": "N18central_monotone assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18central_monotone row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18central_monotone independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18central_monotone independent optimum",
+      "passed": true,
+      "detail": 1.1102230246251565e-14
+    },
+    {
+      "name": "N18interval_monotone_relaxation assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18interval_monotone_relaxation row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18interval_monotone_relaxation independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18interval_monotone_relaxation exact interval relation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N18interval_monotone_relaxation independent optimum",
+      "passed": true,
+      "detail": 3.9968028886505635e-15
+    },
+    {
+      "name": "N54central_convex assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54central_convex row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54central_convex independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54central_convex independent optimum",
+      "passed": true,
+      "detail": -3.9968028886505635e-15
+    },
+    {
+      "name": "N54central_monotone assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54central_monotone row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54central_monotone independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54central_monotone independent optimum",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "N54interval_monotone_relaxation assignments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54interval_monotone_relaxation row readouts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54interval_monotone_relaxation independently rebuilt certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54interval_monotone_relaxation exact interval relation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N54interval_monotone_relaxation independent optimum",
+      "passed": true,
+      "detail": -4.440892098500626e-16
+    },
+    {
+      "name": "all stored constraint slacks",
+      "passed": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "all stored reduced costs",
+      "passed": true,
+      "detail": 0
+    }
+  ],
+  "passed": 47,
+  "failed": 0,
+  "compared_rows": 855,
+  "compared_constraint_records": 15006,
+  "max_slack_identity_error": 4.440892098500626e-16,
+  "max_reduced_cost_identity_error": 0,
+  "max_recomputed_duality_gap": 4.884981308350689e-15,
+  "comparisons": {
+    "N120": {
+      "central_convex": {
+        "objective": 1.9822475019745354,
+        "independent_objective_delta": 3.552713678800501e-15,
+        "max_latent_difference": 0.06708961590750978,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 351
+      },
+      "central_monotone": {
+        "objective": 1.93540197461213,
+        "independent_objective_delta": -2.220446049250313e-16,
+        "max_latent_difference": 0.08693881523272218,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 271
+      },
+      "interval_monotone_relaxation": {
+        "objective": 1.8785390713476784,
+        "independent_objective_delta": 6.661338147750939e-16,
+        "max_latent_difference": 1.3322676295501878e-15,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 4380
+      }
+    },
+    "N18": {
+      "central_convex": {
+        "objective": 2.635614873598424,
+        "independent_objective_delta": -3.8191672047105385e-14,
+        "max_latent_difference": 0.06239505010691107,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 351
+      },
+      "central_monotone": {
+        "objective": 2.2584269662921463,
+        "independent_objective_delta": 1.1102230246251565e-14,
+        "max_latent_difference": 0.05104044943820246,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 271
+      },
+      "interval_monotone_relaxation": {
+        "objective": 2.2584269662921463,
+        "independent_objective_delta": 3.9968028886505635e-15,
+        "max_latent_difference": 5.773159728050814e-15,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 4380
+      }
+    },
+    "N54": {
+      "central_convex": {
+        "objective": 2.280778856131355,
+        "independent_objective_delta": -3.9968028886505635e-15,
+        "max_latent_difference": 0.024396732003529147,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 351
+      },
+      "central_monotone": {
+        "objective": 2.237623762376237,
+        "independent_objective_delta": 0.0,
+        "max_latent_difference": 0.02943861386138613,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 271
+      },
+      "interval_monotone_relaxation": {
+        "objective": 2.237623762376237,
+        "independent_objective_delta": -4.440892098500626e-16,
+        "max_latent_difference": 4.440892098500626e-16,
+        "interpretation": "Primal optimizing curves need not be unique; compare objective and each complete certificate rather than demand same curve",
+        "row_count": 95,
+        "constraint_count": 4380
+      }
+    }
+  }
+}

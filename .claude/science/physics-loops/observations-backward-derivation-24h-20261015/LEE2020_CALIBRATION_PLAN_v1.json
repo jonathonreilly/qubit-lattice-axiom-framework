@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-10-16T07:15:02.914274+00:00",
+  "author": "/root",
+  "input_sha256": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+  "scope": "Published-model calibration consistency and independently normalized finite-source Green kernel; no scalar data fit",
+  "before_execution": true,
+  "calculation": [
+    "Derive nine-pair Newtonian torque and reduce to Eq8.4 in centered geometry; compare direct pair force and independent energy derivative.",
+    "Compute real third harmonic by adaptive angular quadrature and by discrete Fourier sums at multiple grids. Infer G from the published computed Ncal only as a model consistency diagnostic; compare the literal +11 exponent and a labeled -11 typographical candidate.",
+    "Compute metrology sensitivities and vertical/lateral corrections for the declared equal-sphere model; report all discrepancies without retuning uncertainties, geometry or source rows. Compare reported gamma by arithmetic only.",
+    "Derive the cylindrical Yukawa Green identity from point-source normalization and the two-wedge Fourier coefficient. Check independent angular-space versus Bessel-space harmonics and point limits. Never copy the printed extra4pi energy prefactor into a mass-density force law."
+  ],
+  "controls": "Exact algebra, multiple quadratures/FFT grids and finite-difference energy checks; numerical tolerances chosen for consistency only, not acceptance of published experimental claims",
+  "development_data": "All Lee2020 material already exposed under LAB_OBSERVATION_ACCESS_PLAN_v1.json; any newly read thesis/calibration table remains exposed development",
+  "reserved_empirical_data": null,
+  "prohibited_shortcuts": [
+    "No tuning G to call Ncal an independent observation",
+    "No assuming per-run centering, covariance or calibration response zero",
+    "No action/potential fit or physical exclusion from these computations",
+    "No interpreting a source typography or operational failure as new physics"
+  ],
+  "delivery": "commits-only support unless a separate substantive checked scientific result warrants a milestone",
+  "next_route_if_inputs_missing": "Explicit measurement uncertainty envelope or a different source with primitive measurements; do not silently supply the missing data"
+}

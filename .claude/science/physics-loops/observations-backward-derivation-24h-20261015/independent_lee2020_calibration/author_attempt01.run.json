@@ -1,0 +1,127 @@
+{
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lee2020_calibration_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "observer_dont_write_bytecode": true,
+  "start_utc": "2026-10-16T07:29:34.726991+00:00",
+  "end_utc": "2026-10-16T07:29:36.440797+00:00",
+  "wall_seconds": 1.7130479589104652,
+  "child_user_seconds": 1.265625,
+  "child_system_seconds": 0.20183299999999998,
+  "child_peak_rss_platform_units": 147456000,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "stdout_bytes": 13816,
+  "stdout_sha256": "566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_binding_before": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_DERIVATION_v1.md": {
+      "sha256": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
+      "bytes": 7020
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_INPUTS_v1.json": {
+      "sha256": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+      "bytes": 2157
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_PLAN_v1.json": {
+      "sha256": "f30d6f9cbcf76f8313333cd45092a3046ae31241cc858ecb5b714d98a99be9ba",
+      "bytes": 2292
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lee2020_calibration_v1.py": {
+      "sha256": "939fa019d95dad301ac96b2839e914cd385ccea6b9396febd1a11f42d37bd341",
+      "bytes": 13104
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_CONTROLS_v1.json": {
+      "sha256": "566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244",
+      "bytes": 13816
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_FROZEN_v1.json": {
+      "sha256": "7617fdf3f68903df1db979f78805b61028c7eafecbbbf5c910be7b45772fddf3",
+      "bytes": 538
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_RUN_v1.json": {
+      "sha256": "af27bc866d37e162f2650542d25d695a8ae2e96cb2b49c9362146713ef727dfd",
+      "bytes": 314
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_DISCREPANCIES_v1.json": {
+      "sha256": "77a747437276a9b6bf796c54801e74dda016d9189811474cb719ca2ff3df67d1",
+      "bytes": 4022
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lee2020_calibration/INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "a44796c278d5a5b3918307f6a32a5a450f996957c49e0000494e7aa9debd2f7e",
+      "bytes": 1455
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lee2020_calibration/reproduce_author_v1.py": {
+      "sha256": "ea3437882e531a281050d5705d9a21e096b34f5b3dd4b7943c366c998f20f6aa",
+      "bytes": 5265
+    }
+  },
+  "source_binding_after": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_DERIVATION_v1.md": {
+      "sha256": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
+      "bytes": 7020
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_INPUTS_v1.json": {
+      "sha256": "d237e334664e5b97ee7759432e842e60ad14acff20c852d3148a47e75786d0ec",
+      "bytes": 2157
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_PLAN_v1.json": {
+      "sha256": "f30d6f9cbcf76f8313333cd45092a3046ae31241cc858ecb5b714d98a99be9ba",
+      "bytes": 2292
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lee2020_calibration_v1.py": {
+      "sha256": "939fa019d95dad301ac96b2839e914cd385ccea6b9396febd1a11f42d37bd341",
+      "bytes": 13104
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_CONTROLS_v1.json": {
+      "sha256": "566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244",
+      "bytes": 13816
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_FROZEN_v1.json": {
+      "sha256": "7617fdf3f68903df1db979f78805b61028c7eafecbbbf5c910be7b45772fddf3",
+      "bytes": 538
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_RUN_v1.json": {
+      "sha256": "af27bc866d37e162f2650542d25d695a8ae2e96cb2b49c9362146713ef727dfd",
+      "bytes": 314
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/LEE2020_CALIBRATION_DISCREPANCIES_v1.json": {
+      "sha256": "77a747437276a9b6bf796c54801e74dda016d9189811474cb719ca2ff3df67d1",
+      "bytes": 4022
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lee2020_calibration/INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "a44796c278d5a5b3918307f6a32a5a450f996957c49e0000494e7aa9debd2f7e",
+      "bytes": 1455
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lee2020_calibration/reproduce_author_v1.py": {
+      "sha256": "ea3437882e531a281050d5705d9a21e096b34f5b3dd4b7943c366c998f20f6aa",
+      "bytes": 5265
+    }
+  },
+  "sources_unchanged": true,
+  "output_parse_error": null,
+  "summary": {
+    "passed": 62,
+    "failed": 0
+  },
+  "matches_original_receipt_bytes": true,
+  "matches_original_receipt_json": true,
+  "actual_failed_controls": [],
+  "independent_outputs_frozen_before_author_read": true
+}

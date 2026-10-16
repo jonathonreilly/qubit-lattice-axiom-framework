@@ -1,0 +1,8 @@
+{
+  "kind": "Tool display truncation, not a scientific execution failure",
+  "affected_read": "Initial post-freeze display of LAB_SHAPE_CONTROLS_v1.json",
+  "original_bytes": 2295067,
+  "original_sha256": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed",
+  "preserved_copy": "AUTHOR_EXPOSURE__LAB_SHAPE_CONTROLS_v1.json",
+  "recovery": "Complete machine parse; compact inspection of all158 check names/counts and objective values; independent comparison of all855 row assignments and15006 constraint records; exact original-code replay. No file or output was truncated on disk."
+}

@@ -1,0 +1,77 @@
+{
+  "created_at_utc": "2026-10-16T07:32:04.760729+00:00",
+  "kind": "Focused independent calibration evidence, no formal audit status",
+  "self_excluded": true,
+  "report": "REPORT_v1.md",
+  "source_binding": "FINAL_SOURCE_BINDING_v1.json",
+  "files": {
+    "AUTHOR_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "ca1ac243108eee82226f90c002c79202d043d7ac56eb73e2f64c02508f8d7afb",
+      "bytes": 47342
+    },
+    "DERIVATION_BEFORE_CODE_v1.md": {
+      "sha256": "36ad4d112c2215cba705312c453a8bf5a0b45697bd3e1f780aa551df7aa28cba",
+      "bytes": 5927
+    },
+    "FAILURE_AND_DISCREPANCY_RECORD_v1.json": {
+      "sha256": "f5a0154bf971365b31e23a4586d4add2319cbb2f710a9f7edd26ae515c9c67b8",
+      "bytes": 4011
+    },
+    "FINAL_SOURCE_BINDING_v1.json": {
+      "sha256": "a63f6c529c55719e0591725fdb7a4e9a52e04981939af7b85442ba34442d18ca",
+      "bytes": 1600
+    },
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "a44796c278d5a5b3918307f6a32a5a450f996957c49e0000494e7aa9debd2f7e",
+      "bytes": 1455
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "c782fc06ac530c9241e009a828a65256ef9ee458fe3c1c54969ed635a5625fa0",
+      "bytes": 514
+    },
+    "PRE_CODE_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "39374d04053c06503816c50c6929b8e010a1ac8d04560ba336b197d1b6726978",
+      "bytes": 12592
+    },
+    "REPORT_v1.md": {
+      "sha256": "363f00ce3aa006f4c2c1999e531b6bfc337fdf8e23700b7a53bd13f6f1923dbf",
+      "bytes": 6243
+    },
+    "author_attempt01.run.json": {
+      "sha256": "839aabcd5fffb28fb48ae19ad82b9b93f622f3c830aff7e1eabb708430b5f827",
+      "bytes": 6679
+    },
+    "author_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "author_attempt01.stdout.json": {
+      "sha256": "566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244",
+      "bytes": 13816
+    },
+    "independent_attempt01.run.json": {
+      "sha256": "06daa94c49dbec33f3b35e2a20dfadfd5042deb4eba392afe1a00cbad7583c29",
+      "bytes": 3811
+    },
+    "independent_attempt01.stderr.txt": {
+      "sha256": "7919721328c7f172cd10b485f442c48f6db3869e93706f48b2ef7ae05beb6929",
+      "bytes": 5307
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "234b9e87feca465a9fc9e5b304f05d7daff9346fe0fad8bc91af12cd20ac61d5",
+      "bytes": 37918
+    },
+    "independent_controls_v1.py": {
+      "sha256": "e342d7eac7fc67679dfb24994755006b7f355c52f2d04b6e0c1f406db9cb6f42",
+      "bytes": 15308
+    },
+    "reproduce_author_v1.py": {
+      "sha256": "ea3437882e531a281050d5705d9a21e096b34f5b3dd4b7943c366c998f20f6aa",
+      "bytes": 5265
+    },
+    "run_independent_bounded_v1.py": {
+      "sha256": "8ecb0a7607ae99af9ac637ed0686c9a46c829e518cc8651a3de5d505e70ce825",
+      "bytes": 3604
+    }
+  }
+}

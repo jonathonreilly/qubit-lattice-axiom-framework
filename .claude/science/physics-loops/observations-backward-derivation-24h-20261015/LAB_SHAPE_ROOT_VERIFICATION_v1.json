@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-16T07:44:22.315847+00:00",
+  "author": "/root",
+  "complete_independent_derivation_code_report_and_check_results_read": true,
+  "large_array_scope": "All original bytes preserved; exact source-binding and full-row/constraint correspondence checked by inspected checker, with aggregate/control and active-constraint results read.",
+  "manifest": "independent_lab_shape/LAB_SHAPE_REVIEW_IDENTITY_v1.json",
+  "manifest_sha256": "fa1f90303d43fa5791220189beecd3ace820e028409c1c8f537a914e567bc9ec",
+  "bindings_verified": 29,
+  "primary_controls": 158,
+  "independent_controls": 82,
+  "post_exposure_correspondence_controls": 47,
+  "all_row_readouts_compared": 855,
+  "constraint_records_compared": 15006,
+  "author_reproduction_byte_identical": true,
+  "shared_solver_library": true,
+  "counts_overlap_not_pooled": true,
+  "result": "Nine conditional box optima agree; exact rational monotone certificates independent of LP; actual measurement applicability and statistical coverage remain unresolved.",
+  "formal_audit": false,
+  "empirical_validation": false
+}

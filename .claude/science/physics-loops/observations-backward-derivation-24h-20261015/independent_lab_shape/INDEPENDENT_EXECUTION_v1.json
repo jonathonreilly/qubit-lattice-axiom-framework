@@ -1,0 +1,8 @@
+{
+  "source_sha256": "905d57739cb64cbd985d36568b69b46d755fb6aab5ad12de160046fb0e6c5f95",
+  "elapsed_seconds": 0.8844735831953585,
+  "timeout_seconds": 120,
+  "returncode": 0,
+  "stdout_sha256": "47aabb17978e6b9b48d6167c8c0098cb6ef16c303d90f20d6c7843b0319fdc56",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,417 @@
+{
+  "utc": "2026-10-16T00:58:08.627700+00:00",
+  "branch": "physics-loop/toe-restricted-spin-source-20261015",
+  "base_head": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 85165,
+    "sha256": "ed8bb424c2d856aa162f9f5f2d4ab2eda051118422504dcc6a68c88dd81162fe"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+    "bytes": 38570,
+    "sha256": "bde4de1f51bca7983280f3b02b0d06e59f13ec3e65223ce6e2ce97bc76003c05"
+  },
+  "cache": {
+    "utc": "2026-10-16T00:55:22.272806+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+      "bytes": 38570,
+      "sha256": "bde4de1f51bca7983280f3b02b0d06e59f13ec3e65223ce6e2ce97bc76003c05"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/CANONICAL_RESULT.json",
+      "bytes": 1228,
+      "sha256": "5915be2b9ef7ed41b0c6090abf42c9bff52de4eec91073eb64d7de35b974dc45"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/restricted_static_ferromagnetic_spin_source_2026_10_15.txt",
+      "bytes": 1173,
+      "sha256": "89bcd5763e77b6d7c914716a7ce5cc6657a3806ad30f723850af2ce359dae4b5"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "mathematics_or_retention_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "scope": "exact bytes, recovery and captured binding metadata only"
+    },
+    "scope_lines": [
+      "per_element: source coefficient text retained; no physical element was executed",
+      "per_site: declared complete lattice interface retained; no hardware test was executed",
+      "per_mode: restricted plant and conditional lemma remain distinct; no propagation was executed",
+      "per_block: exact spin-source text and original/retrospective receipt metadata checked only",
+      "lattice_wide: native preparation, actual suppliers and independent audit remain separate"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-16T00:55:37.082474+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+      "bytes": 38570,
+      "sha256": "bde4de1f51bca7983280f3b02b0d06e59f13ec3e65223ce6e2ce97bc76003c05"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/MUTATION_RESULTS.json",
+      "bytes": 13124,
+      "sha256": "e30a14c90fdff6f6466fd36cb022659a193b7cd4f478f7410f02b4758da29161"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 77,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-16T00:57:52.134543+00:00",
+    "old_nodes_preserved": 7147,
+    "old_edges_preserved": 16111,
+    "new_node": {
+      "claim_id": "restricted_static_ferromagnetic_spin_source_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "ed8bb424c2d856aa162f9f5f2d4ab2eda051118422504dcc6a68c88dd81162fe",
+      "path": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+      "title": "A bounded-strength weak-coupling route, with a complete one-qubit test case"
+    },
+    "new_edges": [],
+    "old_roots_preserved": true,
+    "new_roots": [
+      "restricted_static_ferromagnetic_spin_source_bounded_theorem_note_2026-10-15"
+    ],
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10467815,
+      "sha256": "3950f8462136a834d71155894b18ad8aacf56b39f9fe06184ca873a2b3348f8a"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1020669,
+      "sha256": "1e689163b42f6f8698ba5baca482538b9aa330bd54333f56149052a8e1ce377b"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "904cc9064a9a7165a52aff1c1367b7af506bb974dd51feef6f96533e4ac83650"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-16T00:55:33.631827+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2273,
+          "sha256": "a864201ca9857b5ed93917d7904d67e7ba580cf6257d2ffc6e7916b8a9be2579"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2330,
+          "sha256": "8382aca54f5b3aaebfee7100d981570295cd3f0b352ceaa8648f51ac46deb11c"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2318,
+          "sha256": "572d717991f5b53d54f96ca28a515e8e0b382156fad72dd1399b1bd4060e140a"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2306,
+          "sha256": "b8a6780f5354929e0ac1d624bb6b6ffdb7a05ab87898becf210fe1fe1f8938d7"
+        }
+      },
+      {
+        "case": "source_body_linkage",
+        "expected_failure": "Source body-map linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_source_body_linkage/EXECUTION.json",
+          "bytes": 2343,
+          "sha256": "5c21a5f2f4844babe2d4e4a055eb67a944d4bc78736020bcc076706a683fb942"
+        }
+      },
+      {
+        "case": "unexpected_parent",
+        "expected_failure": "Exact parent and preparation binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_unexpected_parent/EXECUTION.json",
+          "bytes": 2330,
+          "sha256": "f9e60644cef3882adbe3eb3b3c2bb57fe19d6e9d5cb34aa00a81a0f418d9f626"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical proposal state must remain unchanged",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2336,
+          "sha256": "55ca45d8040b696c2d7913a8320249b9693894f6aedfc88144786433511a8118"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Actual note/base linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2294,
+          "sha256": "21baf999f9e56f0e5ab108ca43887817685bdf044cee23836df388afbcef2430"
+        }
+      },
+      {
+        "case": "root_review_identity",
+        "expected_failure": "Exact root review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_root_review_identity/EXECUTION.json",
+          "bytes": 2349,
+          "sha256": "b5484c4282f0452a23407cb57a8e8e607157bc5b58be4ca353d2f387bbe8512d"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Captured successful execution required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2324,
+          "sha256": "3a1930aa3979c05a881ef4ac4c42b945655b52c41ab39f490d0f522857f3720c"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2355,
+          "sha256": "33a9632c673fc731a1c1dfdf4e68649e07773411932f5bbc5b9c82dcbeedda9d"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2342,
+          "sha256": "fe91eb7cf480f460eca7a9a7adc0d5137e187932ff61bca445a2568db5ac9d91"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2300,
+          "sha256": "8067a70d1064041d343352902ed074395fc397de2734ad14c3b90e5a10d91d9f"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2306,
+          "sha256": "6fa42efa524bad070da61ea0fddab1cd99ed6696e6c889971912bfe6c3345c11"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2336,
+          "sha256": "aa121f0691339ed210df274abd8c0b4c588041639a6f70eed7ae011b05bdbe68"
+        }
+      },
+      {
+        "case": "source_freeze_identity",
+        "expected_failure": "Exact source proposal freeze",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_source_freeze_identity/EXECUTION.json",
+          "bytes": 2359,
+          "sha256": "4be9f4af6eb490ba80cb54410ffe8625fee91d5f785ff078084a03cec2a9b108"
+        }
+      },
+      {
+        "case": "source_body_offsets",
+        "expected_failure": "Original and relocated body binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_source_body_offsets/EXECUTION.json",
+          "bytes": 2342,
+          "sha256": "c1761e433dfb21c4da2bb087dc13fd34cf9e4b82953a4a15d1e4e359be19f8d8"
+        }
+      },
+      {
+        "case": "root_review_command",
+        "expected_failure": "Exact root source-review command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_root_review_command/EXECUTION.json",
+          "bytes": 2342,
+          "sha256": "03c08be93a4e4ef8dfd9738db01687d1d9beeedcc2447aff37b88bab6c96b6b0"
+        }
+      },
+      {
+        "case": "canonical_review_identity",
+        "expected_failure": "Exact canonical review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_canonical_review_identity/EXECUTION.json",
+          "bytes": 2378,
+          "sha256": "72b27ce5f9f1362ae45f1034951fabf197c1a6e135e51a78f96fc317676f40e1"
+        }
+      },
+      {
+        "case": "canonical_output_linkage",
+        "expected_failure": "Canonical review operation linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_canonical_output_linkage/EXECUTION.json",
+          "bytes": 2373,
+          "sha256": "0a37dbde55abba878f9677ea7e2fff66c3af1241a5512e2e1c0956b626301eef"
+        }
+      },
+      {
+        "case": "local_base_identity",
+        "expected_failure": "Actual local base identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_local_base_identity/EXECUTION.json",
+          "bytes": 2342,
+          "sha256": "935410e5b779532e096f0686784ff126168bf7fa1637ebe166f2046521995f20"
+        }
+      },
+      {
+        "case": "source_draft_map_identity",
+        "expected_failure": "Exact frozen draft body-map identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_source_draft_map_identity/EXECUTION.json",
+          "bytes": 2377,
+          "sha256": "b699dcfb2af0e8f146d399fb87085db6c81b4390b69512828e4f42ff39d236eb"
+        }
+      },
+      {
+        "case": "selected_original_identity",
+        "expected_failure": "Selected original/source identity linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_selected_original_identity/EXECUTION.json",
+          "bytes": 2385,
+          "sha256": "6884b8aa84ed43be25bac3b574e9c31bb9305d338a3776deedefd2a16d9be8a0"
+        }
+      },
+      {
+        "case": "author_scope",
+        "expected_failure": "Author scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_author_scope/EXECUTION.json",
+          "bytes": 2300,
+          "sha256": "3438ce2fda13dd81cf0a06a20b3be50df01aa99c9e544be88294276f7a1394c3"
+        }
+      },
+      {
+        "case": "independent_missing_fields",
+        "expected_failure": "Original incomplete provenance qualification",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_independent_missing_fields/EXECUTION.json",
+          "bytes": 2385,
+          "sha256": "5e9097c12d15f429e20a9c3db6a239e548653f970d05abbdf26711c01bda4ab6"
+        }
+      },
+      {
+        "case": "independent_scope",
+        "expected_failure": "Original independent scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_independent_scope/EXECUTION.json",
+          "bytes": 2331,
+          "sha256": "4264005695efc118103753bc482e3644454b7bf260a4d41016abae7f96b505d4"
+        }
+      },
+      {
+        "case": "historical_selection",
+        "expected_failure": "Exact historical check launch selection",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_historical_selection/EXECUTION.json",
+          "bytes": 2349,
+          "sha256": "17a8747e4bc1fdba7db0dabb71be34445045a474c4ec4965906c60ff0ecced49"
+        }
+      },
+      {
+        "case": "historical_recovery",
+        "expected_failure": "Historical check/source recovery linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_historical_recovery/EXECUTION.json",
+          "bytes": 2343,
+          "sha256": "ae34f7a962dd6b69a3f00794915b4374f3049b74c2a2adffaee5f522e3d2d1ae"
+        }
+      },
+      {
+        "case": "controlling_qualification",
+        "expected_failure": "Controlling source qualifications",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/mutation_controlling_qualification/EXECUTION.json",
+          "bytes": 2379,
+          "sha256": "e035d66f4e31b10603299a5c4ba51411fff5737d45f807e6550c168cf7adef21"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 28,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Restricted one-qubit plant with genuinely decoupled spectators, supplied coherent source preparation/phase, geometry, timing, coefficient access and isolation remain premises. Preserve negative-frequency reserves, full old/source/reference output, actual chronological old evolution, fixed-decomposition theta=pi sign, original versus effective parameter recipes and full norm/action/calibration costs. Section 8 remains a separate conditional finite-matrix implication; sections 9-10 are unaccepted proposals/diagnostics. No generic coupled-plant, native preparation or physical-energy result is added."
+  ],
+  "finish_recovery": {
+    "original_finish": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/actions/finish/EXECUTION.json",
+      "bytes": 953,
+      "sha256": "5dff903c38ad59bb54f2d6b65ac7a333e9a714d8ca5002d26483f1f002381dfe"
+    },
+    "original_whitespace": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/runs/staged_whitespace/EXECUTION.json",
+      "bytes": 1609,
+      "sha256": "1c68c3e46373c7fbbd69ecb05a1b8b026436e04f9906e47f1d20794a36ca01b5"
+    },
+    "unchanged_capture": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/26d778ca184624a2017232b6b618b7f713f90f31b0502f41ef7c9b7bbb429405.py",
+      "bytes": 5005,
+      "sha256": "26d778ca184624a2017232b6b618b7f713f90f31b0502f41ef7c9b7bbb429405"
+    },
+    "specific_attribute": "/.claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/26d778ca184624a2017232b6b618b7f713f90f31b0502f41ef7c9b7bbb429405.py -whitespace",
+    "recovery_source": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_restricted_spin_integration_review/recover_finish.py",
+      "bytes": 5110,
+      "sha256": "69d96c7ef61cceb52ecfda16cf49f220b73669e4dfbba6d2777b2e8dd6e7b641"
+    },
+    "scientific_change": false
+  }
+}

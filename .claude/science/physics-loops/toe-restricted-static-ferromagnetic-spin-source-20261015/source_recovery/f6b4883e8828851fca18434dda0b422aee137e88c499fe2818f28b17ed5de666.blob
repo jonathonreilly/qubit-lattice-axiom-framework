@@ -1,0 +1,86 @@
+# Root review of the restricted ferromagnetic-source construction
+
+Source: bounded_strength_runtime_candidate/DERIVATION.md, 31,713 bytes,
+SHA256 47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15.
+The complete source, SOURCE_COVERAGE.md, CHECK_EVIDENCE.md and complete
+finite_check.py were read. This is a source-exposed root reconstruction;
+the separately dispatched checker has the architecture but neither this proof
+nor the source's resource powers. Its result is still pending.
+
+## Scientific reconstruction
+
+1. The full-space gap proof is valid as written. The prefix-only telescoping
+   identity for a word of adjacent swaps is exact. Cauchy--Schwarz and the
+   repeated-edge count yield the conservative transposition comparison.
+   Summing its edge coefficients gives 2N k(N-k)<=N^3/2. On N spin-half
+   factors, the complete-graph exchange operator is N(N+2)I/4-S^2; its
+   complement to the unique maximum-spin symmetric representation has
+   eigenvalue at least N. Combining gives gamma_N=2 J_F/N^2 on the whole
+   source Hilbert space, including its many-excitation sectors. No one-head
+   surrogate is used.
+2. With the stated decoupled old qubit, F=H+omega N_A commutes exactly with
+   L_F and A=2rV+zZ_p. Direct multiplication of Z=P-q R_F QAP gives the
+   q^2(X A_P-A X) residual. Norms of the two bare/corrected endpoints are
+   both charged, giving 6q/gamma_N+18tq^2/gamma_N. There is no assumption
+   that the prepared state is dressed or that qT is small.
+3. On the equatorial source product, the source operators' deviations create
+   the orthogonal sum of N one-spin-flipped product vectors. With the specified
+   raising/lowering convention, the old residual is sigma_+-sigma_- of norm
+   one. Its complete isometry norm is exactly r/sqrt(N). This gives a bound
+   retaining every source output, rather than only a reduced old channel.
+4. The phase sign is consistent: exp(-i omega n T) conjugates the rotation
+   axis from phi to phi-omega T. Thus phi=phi0+omega T produces the target
+   in the order W exp(-iTH), with the explicit exp[-i theta0] comparison
+   factor. The source field motion remains in the output vector. The scalar
+   reserve R and full normalized scalar s_K are different valid ledgers.
+5. Each of the three terms in the source's isometry error is <=epsilon/8
+   under its choices. The conversion to unhalved trace distance plus the
+   single state and generator allowances totals epsilon. N=O(epsilon^-2),
+   gamma_N^-1=O(epsilon^-4), and T=O(epsilon^-5) follow for fixed nonzero
+   theta. Every added local identity reserve is present in the stated common
+   incident norm bound; total norm and total energy need not stay bounded.
+
+## Qualifications for any publication
+
+- This is one controlled old qubit, possibly with genuinely decoupled retained
+  spectators. The general coupled-plant theorem remains open. The augmented
+  polynomial Lie certificate does not imply the exact resonance used here.
+- The source state, phase calculation after selecting T, actual isolation and
+  precision are supplied. No preparation or source-selection law follows.
+  The whole-state preparation allowance includes any correlation with old
+  factors and uses their exact unconditional marginal.
+- The mathematical minimal ceiling in the source is an existence choice. A
+  uniformly terminating implementation for arbitrary computable target angles
+  should use a strict rational upper margin, rather than deciding whether a
+  computable real equals an integer. For rational epsilon, a simple replacement
+  is N=max(2,ceil[(40/epsilon)^2]), since 1+theta<5. It preserves all three
+  error estimates and powers. If a is the minimum of the source's two
+  positive upper constraints, choose a rational q with a/2<q<a by certified
+  interval refinement. The constant-factor lower bound preserves the runtime
+  power; an arbitrarily smaller q would not. This avoids deciding an exact
+  comparison of real inputs. Do not silently replace the original frozen
+  choice or claim the old exact minimal choice was an executed algorithm.
+- The scalar target is handled separately as free old evolution, not by
+  dividing by theta or q. The r=0 and either sign of omega cases are included
+  in the non-scalar proof. Additional fixed-target timing or preparation
+  switching errors need a resplit allowance.
+- Section 8's finite Sylvester/corrector implication has the displayed exact
+  algebra and explicitly supplied spectral/projector data. It does not
+  independently construct those data in the generic setting. Sections 9--10
+  are uncompleted architecture proposals and a diagnostic for a sufficient
+  clock recipe. They are not accepted as a general physical realization or
+  an impossibility theorem.
+
+## Evidence assessment so far
+
+The complete author check source independently assembles physical finite
+matrices, with nonzero/negative frequencies and a pure-Z example. Its
+corrector, fluctuation, scalar and isometry comparisons are substantive finite
+checks, not an implementation of the asymptotic recipe. The full claimed
+scope still rests on the analytic argument. Root has read the implementation
+but has not yet independently verified its recorded streams/freeze or run
+discriminating mutations. No accepted scientific status is declared here.
+
+Root's separate fixed-slew candidate does not imply this static construction;
+it uses externally supplied timing and a different qualitative compiler. The
+two routes may coexist but their resource formulas must not be mixed.

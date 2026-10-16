@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py
+runner_sha256: bde4de1f51bca7983280f3b02b0d06e59f13ec3e65223ce6e2ce97bc76003c05
+input_fingerprint_sha256: 8e326c98a7b7151882cb409def6fb4c0247e7f8f6b2a2a4a6dc78c34e774c7d6
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "exact bytes, recovery and captured binding metadata only"}
+per_element: source coefficient text retained; no physical element was executed
+per_site: declared complete lattice interface retained; no hardware test was executed
+per_mode: restricted plant and conditional lemma remain distinct; no propagation was executed
+per_block: exact spin-source text and original/retrospective receipt metadata checked only
+lattice_wide: native preparation, actual suppliers and independent audit remain separate
+metadata_check_counts_only: source bytes and provenance assertions; no scientific proof or retained status
+TOTAL: PASS=695 FAIL=0
+
+----- stderr -----
+

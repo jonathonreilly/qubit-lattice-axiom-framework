@@ -1,0 +1,3 @@
+# Canonical restricted-spin source handoff
+
+Root must separately review the exact final canonical note, body maps, empty mathematical parent binding, controlling qualifications and prebinding primary, then provide the actual canonical review receipt. The frozen draft review and original offsets remain separate. Historical author and independent check provenance retain their different completeness and no replay is inferred. Source-primary/cache, scoped provenance mutants, vocabulary/evidence, one-root/zero-edge graph delta and final staged review are actual subsequent gates. Independent retained audit and current-main/cumulative-stack landing remain separate.

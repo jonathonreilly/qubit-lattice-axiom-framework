@@ -1,0 +1,27 @@
+{
+  "observed_commit": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/2d1cc758f972302a865cbabc6f1ae9806a8d3908dfb10087a479e0678d783747.json",
+      "bytes": 1596,
+      "sha256": "2d1cc758f972302a865cbabc6f1ae9806a8d3908dfb10087a479e0678d783747"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/903419125264f0e6facf4e8f2d9b3db9c967e06606de646fa02bc2eddb002154.py",
+      "bytes": 55630,
+      "sha256": "903419125264f0e6facf4e8f2d9b3db9c967e06606de646fa02bc2eddb002154"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/382fde32f249326d287662d4d43f96625f0dd6a5bf23b4102ae836335710e319.blob",
+      "bytes": 41,
+      "sha256": "382fde32f249326d287662d4d43f96625f0dd6a5bf23b4102ae836335710e319"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual local stacked base HEAD, separately checked by clean_base; origin/main is separately pinned authority."
+}

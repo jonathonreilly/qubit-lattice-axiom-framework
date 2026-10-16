@@ -1,0 +1,3 @@
+# Recovery scope
+
+The note stores all three complete scientific bodies once, byte-for-byte. Selected original freezes, coverage/manifests, source acceptance, final qualifications, superseded preliminary review and actual check evidence are retained as hash-deduplicated recovery. The original independent pre-check derivation/exposure are included because its launch record names their hashes. Exposed comparison copies alias the same stored objects rather than creating new histories. Unchanged historical instruction snapshots and upstream compiler/clock/mediator bodies are not recursively archived. Their old manifest references record earlier coverage, not a promise of portable recursive recovery. No new bus or correlated-energy source is imported.

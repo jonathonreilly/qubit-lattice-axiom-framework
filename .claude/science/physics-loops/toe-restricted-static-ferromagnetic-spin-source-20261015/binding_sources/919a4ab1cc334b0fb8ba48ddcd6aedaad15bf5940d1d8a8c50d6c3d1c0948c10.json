@@ -1,0 +1,177 @@
+{
+  "kind": "root_installed_canonical_source_review",
+  "utc": "2026-10-16T00:55:10.946974+00:00",
+  "root_read_complete": true,
+  "bound_note_sha256": "ed8bb424c2d856aa162f9f5f2d4ab2eda051118422504dcc6a68c88dd81162fe",
+  "canonical_body_pins": [
+    {
+      "name": "author_restricted_body",
+      "container": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 18982,
+      "end_byte_exclusive": 50695,
+      "bytes": 31713,
+      "sha256": "47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15"
+    },
+    {
+      "name": "independent_restricted_body",
+      "container": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 50872,
+      "end_byte_exclusive": 67655,
+      "bytes": 16783,
+      "sha256": "687a28553a1588265906ca0e64a8a18c8caf18027003343aed5708b43b2a0222"
+    },
+    {
+      "name": "exposed_reconciliation_body",
+      "container": "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 67832,
+      "end_byte_exclusive": 85165,
+      "bytes": 17333,
+      "sha256": "85b54da82b54f7accb199d9c4121e5701f229ab91176ed1b0d249e7ee9b448c9"
+    }
+  ],
+  "parent_binding": {
+    "canonical_parents": [],
+    "transitive_premises": [],
+    "preparation_release_intervals": [],
+    "scope": "The accepted restricted theorem proves its finite spin gap and reduction in these bodies. Historical compiler, mediator and clock references in unaccepted architecture sections are context, not mathematical dependencies of this theorem. Supplied source preparation, geometry, timing and isolation remain assumptions, not parent theorems."
+  },
+  "source_draft_freeze_sha256": "e9529b5bee27df7f1be98418f1b0781b29b4cde279ec348829413791267d6c64",
+  "source_draft_review_sha256": "e9f6b186a1268235bc54ccfbcfee2d2b928c4977870ae486c2db6e2e930b3e2b",
+  "git_base": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+    "bytes": 37134,
+    "sha256": "f71bc962a74626ba61eae7d95a6731daff6c4d271e0aeecf86d13ca374364e74"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/restricted_spin_integration_proposal/restricted_spin_common.py",
+    "bytes": 55630,
+    "sha256": "903419125264f0e6facf4e8f2d9b3db9c967e06606de646fa02bc2eddb002154"
+  },
+  "root_integration_review": {
+    "utc": "2026-10-16T00:54:16.988417+00:00",
+    "kind": "root_integration_source_review",
+    "root_read_complete_for_changed_implementation": true,
+    "proposal_freeze": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/restricted_spin_integration_proposal/FINAL_FREEZE.json",
+      "bytes": 57973,
+      "sha256": "b7296b37ebf8051bfb46f16364c3c5fa8b5b34f3ea082e16b837075c0977a828"
+    },
+    "source_publication_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_restricted_spin_publication_review/REVIEW.json",
+      "bytes": 4431,
+      "sha256": "e9f6b186a1268235bc54ccfbcfee2d2b928c4977870ae486c2db6e2e930b3e2b"
+    },
+    "common": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/restricted_spin_integration_proposal/restricted_spin_common.py",
+      "bytes": 55630,
+      "sha256": "903419125264f0e6facf4e8f2d9b3db9c967e06606de646fa02bc2eddb002154"
+    },
+    "primary_unbound": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/restricted_spin_integration_proposal/proposed_primary_unbound.py",
+      "bytes": 32533,
+      "sha256": "038305d792200905c2696bbea6b46a6f9eb0d822be45d5b05e4cb61d9cd7273c"
+    },
+    "function_comparison": {
+      "common_vs_actual_bounded_slew": {
+        "exact_source": 29,
+        "changed": 5
+      },
+      "primary_vs_frozen_restricted_spin": {
+        "exact_source": 11,
+        "added": 1,
+        "changed": 2
+      },
+      "primary_vs_actual_bounded_slew": {
+        "exact_source": 12,
+        "changed": 2
+      }
+    },
+    "coverage": [
+      "Complete changed prepare, verify, graph, finish and publish functions; complete changed primary main and binding constants; historical_receipt exact from reviewed source draft; other reused functions checked against reviewed actual bounded-slew implementation.",
+      "Complete metadata build, validation, recorder and seal source; actual produced code is authoritative over its authoring patch inputs.",
+      "Complete wrapper and packet text replacements, binding contract, command plan, PR template and integration sections; exact archive membership verified deterministically.",
+      "Oversized combined diff output was truncated and is not claimed as full read. Full changed operational functions were read in later scoped outputs. Scientific body review and source-draft review are reused at unchanged hashes."
+    ],
+    "decision": "Accept frozen integration implementation for sequential execution with actual canonical and staged review gates.",
+    "scientific_programs_run": 0,
+    "retained_audit": false,
+    "editable_prompt_files_changed": []
+  },
+  "prepared_content_review": {
+    "kind": "root_prepared_content_review",
+    "utc": "2026-10-16T00:54:55.045937+00:00",
+    "prepared": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/PREPARED.json",
+      "bytes": 43571,
+      "sha256": "f4751b17f35de794ddbf5a0f56aa25a6d18fb2f676d722a678ec2ebad9eac1eb"
+    },
+    "diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/CANONICALIZATION.diff",
+      "bytes": 234055,
+      "sha256": "3a5c887fa60b52374584a224c8af7d4a03a2ae794b6833949612e3ff24a5c749"
+    },
+    "note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/canonical_source/docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 85165,
+      "sha256": "ed8bb424c2d856aa162f9f5f2d4ab2eda051118422504dcc6a68c88dd81162fe"
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/canonical_source/scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+      "bytes": 37134,
+      "sha256": "f71bc962a74626ba61eae7d95a6731daff6c4d271e0aeecf86d13ca374364e74"
+    },
+    "changed": [
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ACTUAL_BINDING.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/BINDING_CONTRACT.md",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/BODY_MAP.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/INPUT_MANIFEST.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/PR_TITLE.txt",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/SOURCE_MANIFEST.json",
+      "docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py"
+    ],
+    "added": [
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ACTUAL_HANDOFF.md",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/ACTUAL_REFRESH_PROVENANCE.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/CANONICAL_BINDING.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/1924e6cf8eadbe4ed6e5a6259f3dee18107d820beba689fd5a252978aedb5062.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/1c2276e254cfaa6e45ac3f3e91e7bf31e6607a8dff62af0543e7b0c2c4c174b3.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/26d778ca184624a2017232b6b618b7f713f90f31b0502f41ef7c9b7bbb429405.py",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/2d1cc758f972302a865cbabc6f1ae9806a8d3908dfb10087a479e0678d783747.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/382fde32f249326d287662d4d43f96625f0dd6a5bf23b4102ae836335710e319.blob",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/3bfc0337f29c12719238fbbbfecca939ec41da19d1707d76879b95371f7c259e.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/4cd2e1578fdc6069b3dbe75bafcd4d371cac378bb44a8f1da1ac93d05f821ba5.blob",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/4fa10f4ca90f7b34d7ab5a24ae77921b7ec4ee7ac7714a1f59575e64356c61cd.blob",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/5093a239b1b0fca7570ef3e2a144f24a4e82d8a71d43b5c141a42dd530b5c4d4.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/5bfd0675f1f3d65d8c9fefd7a9a5c6e66570eb1923ba24324c9f418cb1e867b2.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/60f86037f608b8e22c9e98252c6df21821d2933ef7ed872927fd28da823b9130.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/61d51004f3c7510ccdf4a6d47562977fb83babede3cddb3de9163d986b0783d2.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/6de6c09b2600f6a328620f4cf38b83425d945934682df18083b971ec739948ba.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/74f063a0891de7e7b9b575f9d80ed3f875e14b7a332d72c41daeff28b535f985.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/8cf3a9a04b5ceb22e440f05da8b8d1fb3bf03ff92b9ca6342b770d859cf5a177.blob",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/903419125264f0e6facf4e8f2d9b3db9c967e06606de646fa02bc2eddb002154.py",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/92a27abfa0921598d9b1b53ee8c3616116b83da767af0412aed3092f7c4279e2.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e9529b5bee27df7f1be98418f1b0781b29b4cde279ec348829413791267d6c64.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/e9f6b186a1268235bc54ccfbcfee2d2b928c4977870ae486c2db6e2e930b3e2b.json",
+      ".claude/science/physics-loops/toe-restricted-static-ferromagnetic-spin-source-20261015/binding_sources/f57f92c98a46c506d51269cd6791e45d71f6c3921d748a9a2d7184b3b4ad5394.json"
+    ],
+    "note_wrapper_matches_fully_read_replacements": true,
+    "three_proof_bodies_unchanged": true,
+    "primary_executable_logic_matches_reviewed_proposal": true,
+    "source_and_canonical_reviews_distinct": true,
+    "historical_publication_nulls_preserved": true,
+    "source_or_binding_metadata_only": true,
+    "scientific_programs_run": 0,
+    "scope": "Full active text/code deltas reviewed through their exact already-read replacements; large copied receipts and manifests verified by identity and schema, not relabeled as new scientific argument reading."
+  },
+  "coverage": "Installed files match the reviewed canonical copy exactly. Frozen source wrapper and complete mathematical bodies were reviewed under their original identities; full final active text replacements and changed integrity logic were read, and canonical byte intervals separately checked. Captured historical receipts and literal inventories are byte/schema evidence, not additional scientific verification.",
+  "decision": "Accept this exact installed canonical source and the reviewed metadata-only binding step for scoped execution and regular PR publication.",
+  "scientific_programs_run": 0,
+  "primary_runs_at_review": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

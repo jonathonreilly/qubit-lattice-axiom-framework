@@ -1,0 +1,3 @@
+# Root integration handoff
+
+Read the complete new wrapper, exact scientific bodies and controlling final qualifications, then review all changed source/receipt logic through REUSE_MAP and CHANGED_CODE. Preserve this directory after FINAL_FREEZE. Integrate a separate copy, bind the actual local base and source-draft review, explicitly review final canonical note and relocated BODY_MAP, and refresh SOURCE_MANIFEST body intervals and declared input/literal pins. No external mathematical parent is asserted for the restricted theorem. Later primary/cache, mutation, syntax, vocabulary, graph/pipeline, publication and retained-audit actions belong to actual root operations, not this source proposal.

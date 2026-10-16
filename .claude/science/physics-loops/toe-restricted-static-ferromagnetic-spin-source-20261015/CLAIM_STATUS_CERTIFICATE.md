@@ -1,0 +1,3 @@
+# Claim status
+
+Claim type: bounded_theorem. Current surface: conditional-support. Author sections 2–6 support the restricted static single-qubit spin-source theorem with full outputs, fixed added incident cap and sufficient resource upper powers. Root acceptance 32d142a2 and final qualifications dcab7a72 govern it. The independent proof has separate constants and same-model/shared-architecture limits. Exposed comparison supplies effective parameter selection and special-case refinements. Author section 8 is only a conditional finite-matrix implication; sections 9–10 are proposals/diagnostics, not accepted general realization. This new wrapper has no source acceptance inferred from the earlier decision. Canonical review, publication and retained audit remain null.

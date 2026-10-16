@@ -1,0 +1,185 @@
+#!/usr/bin/env python3
+"""Supplementary direct-matrix falsification checks, not an all-N proof.
+
+The Hamiltonian builder uses computational-basis bit transitions. It does
+not import a primary runner or propagate only in the symmetric sector.
+The target is a separately constructed two-by-two rotation and full source
+vector. Deliberately broken chain, carrier phase, and port-factor variants
+must be rejected by their respective predeclared checks.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+from pathlib import Path
+import platform
+import sys
+from datetime import datetime, timezone
+
+import numpy as np
+import scipy
+from scipy.linalg import eigh, expm, svdvals
+
+HERE = Path(__file__).resolve().parent
+I2 = np.eye(2, dtype=complex)
+X = np.array([[0, 1], [1, 0]], dtype=complex)
+Y = np.array([[0, -1j], [1j, 0]], dtype=complex)
+Z = np.diag([1.0, -1.0]).astype(complex)
+NP = np.diag([0.0, 1.0]).astype(complex)
+
+
+def source_chain(n: int, jf: float, omit: int | None = None) -> np.ndarray:
+    d = 1 << n
+    h = np.zeros((d, d), dtype=float)
+    for x in range(d):
+        for j in range(n - 1):
+            if j == omit:
+                continue
+            m1, m2 = 1 << (n - 1 - j), 1 << (n - 2 - j)
+            if bool(x & m1) != bool(x & m2):
+                h[x, x] += jf
+                h[x ^ m1 ^ m2, x] -= jf
+    return h
+
+
+def full_hamiltonian(n: int, jf: float, omega: float, hc: float,
+                     r: float, z: float, q: float, rs: float,
+                     port_factor: float = 2.0) -> tuple[np.ndarray, float]:
+    """Source bits precede p, which is the least significant full-space bit."""
+    d = 1 << (n + 1)
+    reserve = rs + n * max(0.0, -omega) + 2.0 * q * r + q * abs(z)
+    h = np.zeros((d, d), dtype=float)
+    for x in range(d):
+        p = x & 1
+        source = x >> 1
+        h[x, x] = hc + omega * (p + source.bit_count()) + reserve
+        h[x, x] += q * z * (1 - 2 * p)
+        for j in range(n - 1):
+            m1, m2 = 1 << (n - j), 1 << (n - 1 - j)
+            if bool(x & m1) != bool(x & m2):
+                h[x, x] += jf
+                h[x ^ m1 ^ m2, x] -= jf
+        source_port_mask = 1 << n
+        if bool(x & source_port_mask) != bool(p):
+            h[x ^ source_port_mask ^ 1, x] += port_factor * q * r
+    return h, reserve
+
+
+def alpha(n: int, phi: float) -> np.ndarray:
+    weights = np.array([x.bit_count() for x in range(1 << n)])
+    return np.exp(1j * phi * weights) / math.sqrt(1 << n)
+
+
+def isometry_errors(case: dict, phase_sign: float = 1.0,
+                    port_factor: float = 2.0) -> dict:
+    n, jf, omega, hc = case['n'], case['jf'], case['omega'], case['hc']
+    r, z, q, theta = case['r'], case['z'], case['q'], case['theta']
+    phi0, theta0, w = case['phi0'], case['theta0'], case['w']
+    rs = max(abs(hc), abs(hc + omega)) + 0.17
+    t_gate = theta / q
+    phi = phi0 + phase_sign * omega * t_gate
+    avec = alpha(n, phi)
+    emb = np.kron(avec[:, None], I2)
+    h, reserve = full_hamiltonian(n, jf, omega, hc, r, z, q, rs,
+                                  port_factor=port_factor)
+    evals, evecs = eigh(h, check_finite=True)
+    coefficients = evecs.conj().T @ emb
+    old_h = hc * I2 + omega * NP
+    axis = r * math.cos(phi0) * X + r * math.sin(phi0) * Y + z * Z
+    gate = np.exp(1j * theta0) * (math.cos(theta) * I2 - 1j * math.sin(theta) * axis)
+    weights = np.array([x.bit_count() for x in range(1 << n)])
+    errors = []
+    for s in sorted(set([0.0, w / 3.0, w])):
+        t = t_gate + s
+        actual = evecs @ (np.exp(-1j * evals * t)[:, None] * coefficients)
+        source_target = np.exp(-1j * omega * t * weights) * avec
+        old_target = expm(-1j * s * old_h) @ gate @ expm(-1j * t_gate * old_h)
+        target = np.exp(-1j * (reserve * t + theta0)) * np.kron(source_target[:, None], old_target)
+        errors.append({'s': s, 'error': float(svdvals(actual - target)[0])})
+    a = math.sqrt(4 * r * r + z * z)
+    delta = 2 * jf / n**2
+    bound = 2 * q * a / delta * (1 + a * (theta + q * w)) + r * (theta + q * w) / math.sqrt(n) + q * w
+    return {'case': case, 'phase_sign': phase_sign, 'port_factor': port_factor,
+            'complete_isometry_errors': errors, 'uniform_proof_bound': bound,
+            'maximum_sampled_error': max(row['error'] for row in errors)}
+
+
+def main() -> int:
+    launch = {
+        'launched_utc': datetime.now(timezone.utc).isoformat(),
+        'argv': sys.argv,
+        'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'derivation_sha256': hashlib.sha256((HERE / 'DERIVATION.md').read_bytes()).hexdigest(),
+        'exposure_sha256': hashlib.sha256((HERE / 'EXPOSURE.json').read_bytes()).hexdigest(),
+        'python': sys.version, 'numpy': np.__version__, 'scipy': scipy.__version__,
+        'platform': platform.platform(),
+        'inputs': 'All literal cases and predicates are in this hashed source before results.',
+    }
+    (HERE / 'FINITE_CHECK_LAUNCH.json').write_text(json.dumps(launch, indent=2) + '\n')
+    records = []
+    checks = []
+    for n in range(2, 9):
+        values = np.linalg.eigvalsh(source_chain(n, 1.0))
+        nullity = int(np.count_nonzero(np.abs(values) < 1e-10))
+        gap = float(min(values[values > 1e-10]))
+        record = {'kind': 'all_source_sectors_gap', 'n': n,
+                  'dimension': 1 << n, 'nullity': nullity,
+                  'minimum_positive_eigenvalue': gap, 'proof_lower_bound': 2 / n**2}
+        records.append(record)
+        checks.append({'name': f'full gap N={n}', 'pass': nullity == n + 1 and gap >= 2 / n**2 - 1e-10})
+
+    # A disconnected source must fail the claimed N+1-dimensional kernel.
+    n = 6
+    broken = np.linalg.eigvalsh(source_chain(n, 1.0, omit=2))
+    broken_nullity = int(np.count_nonzero(np.abs(broken) < 1e-10))
+    records.append({'kind': 'missing_chain_edge_mutation', 'n': n,
+                    'nullity': broken_nullity, 'expected_unbroken_nullity': n + 1})
+    checks.append({'name': 'missing edge rejected', 'pass': broken_nullity != n + 1})
+
+    for n, omega in [(2, 0.13), (4, -0.23), (6, 0.0), (8, -0.07)]:
+        case = dict(n=n, jf=1.0, omega=omega, hc=-0.19, r=0.8, z=0.6,
+                    q=1e-4, theta=0.9, phi0=-0.43, theta0=0.27, w=0.7)
+        result = isometry_errors(case)
+        records.append({'kind': 'literal_full_isometry', **result})
+        checks.append({'name': f'full isometry N={n}',
+                       'pass': result['maximum_sampled_error'] <= result['uniform_proof_bound'] + 2e-8})
+
+    # Fixed, declared carrier angle pi/3 exposes an incorrect sign in phi.
+    case = dict(n=8, jf=1.0, omega=math.pi / 27000.0, hc=0.12, r=0.8, z=0.6,
+                q=1e-4, theta=0.9, phi0=0.31, theta0=-0.37, w=0.4)
+    correct = isometry_errors(case)
+    wrong_phase = isometry_errors(case, phase_sign=-1.0)
+    wrong_factor = isometry_errors(case, port_factor=1.0)
+    records.extend([{'kind': 'mutation_baseline', **correct},
+                    {'kind': 'wrong_carrier_sign_mutation', **wrong_phase},
+                    {'kind': 'missing_port_factor_mutation', **wrong_factor}])
+    checks.append({'name': 'carrier baseline satisfies bound',
+                   'pass': correct['maximum_sampled_error'] <= correct['uniform_proof_bound'] + 2e-8})
+    checks.append({'name': 'wrong carrier sign rejected by unchanged bound',
+                   'pass': wrong_phase['maximum_sampled_error'] > correct['uniform_proof_bound'] + 0.05})
+    checks.append({'name': 'missing port factor rejected by unchanged bound',
+                   'pass': wrong_factor['maximum_sampled_error'] > correct['uniform_proof_bound'] + 0.05})
+
+    for z, theta, omega in [(1.0, 1.1, -0.7), (-1.0, 1.1, 0.7), (1.0, math.pi, 0.31)]:
+        case = dict(n=1, jf=1.0, omega=omega, hc=-0.23, r=0.0, z=z,
+                    q=0.023, theta=theta, phi0=0.2, theta0=0.41, w=1.3)
+        result = isometry_errors(case)
+        discrepancies = [abs(row['error'] - 2 * abs(math.sin(case['q'] * row['s'] / 2)))
+                         for row in result['complete_isometry_errors']]
+        records.append({'kind': 'pure_z_exact_window', **result,
+                        'maximum_exact_formula_discrepancy': max(discrepancies)})
+        checks.append({'name': f'pure Z exact formula z={z} theta={theta}',
+                       'pass': max(discrepancies) < 2e-11})
+
+    output = {'completed_utc': datetime.now(timezone.utc).isoformat(),
+              'scope': 'Finite falsification checks; all source states for gap, all old inputs for sampled isometries. Not an all-N or continuous-time numerical certificate.',
+              'records': records, 'checks': checks,
+              'pass': sum(c['pass'] for c in checks), 'fail': sum(not c['pass'] for c in checks)}
+    (HERE / 'FINITE_CHECK_RESULTS.json').write_text(json.dumps(output, indent=2) + '\n')
+    print(json.dumps(output, indent=2))
+    return 1 if output['fail'] else 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

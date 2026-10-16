@@ -1,0 +1,102 @@
+{
+  "frozen_utc": "2026-10-16T00:11:39.018406+00:00",
+  "status": "Exposed scoped reconciliation; no audit/retained verdict. Original freezes preserved.",
+  "files": [
+    {
+      "path": "COMPARISON.md",
+      "bytes": 17333,
+      "sha256": "85b54da82b54f7accb199d9c4121e5701f229ab91176ed1b0d249e7ee9b448c9"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 13552,
+      "sha256": "9d0edfb643c5744a429ebd83b482d9e573a9bde3a72a137081548b2524d41b8d"
+    },
+    {
+      "path": "sources/author_CHECK_EVIDENCE.md",
+      "bytes": 2448,
+      "sha256": "483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158"
+    },
+    {
+      "path": "sources/author_CHECK_LAUNCH.json",
+      "bytes": 768,
+      "sha256": "d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78"
+    },
+    {
+      "path": "sources/author_CHECK_RESULT.json",
+      "bytes": 929,
+      "sha256": "af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976"
+    },
+    {
+      "path": "sources/author_DERIVATION.md",
+      "bytes": 31713,
+      "sha256": "47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15"
+    },
+    {
+      "path": "sources/author_FREEZE.json",
+      "bytes": 4893,
+      "sha256": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b"
+    },
+    {
+      "path": "sources/author_SOURCE_COVERAGE.md",
+      "bytes": 2807,
+      "sha256": "c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a"
+    },
+    {
+      "path": "sources/author_SOURCE_MANIFEST.json",
+      "bytes": 5172,
+      "sha256": "a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb"
+    },
+    {
+      "path": "sources/author_finite_check.at_launch.py",
+      "bytes": 5153,
+      "sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5"
+    },
+    {
+      "path": "sources/author_finite_check.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/author_finite_check.stdout.log",
+      "bytes": 8135,
+      "sha256": "e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2"
+    },
+    {
+      "path": "sources/author_run_recorded.py",
+      "bytes": 1704,
+      "sha256": "8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a"
+    },
+    {
+      "path": "sources/independent_DERIVATION.md",
+      "bytes": 16783,
+      "sha256": "687a28553a1588265906ca0e64a8a18c8caf18027003343aed5708b43b2a0222"
+    },
+    {
+      "path": "sources/independent_EXPOSURE.json",
+      "bytes": 6009,
+      "sha256": "36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2"
+    },
+    {
+      "path": "sources/independent_FINITE_CHECK_LAUNCH.json",
+      "bytes": 635,
+      "sha256": "b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2"
+    },
+    {
+      "path": "sources/independent_FINITE_CHECK_RESULTS.json",
+      "bytes": 10900,
+      "sha256": "46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c"
+    },
+    {
+      "path": "sources/independent_FREEZE.json",
+      "bytes": 3739,
+      "sha256": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c"
+    }
+  ],
+  "scientific_execution_this_reconciliation": false,
+  "original_freezes_reverified": {
+    "author": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b",
+    "independent": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c"
+  },
+  "editable_prompt_files_changed": []
+}

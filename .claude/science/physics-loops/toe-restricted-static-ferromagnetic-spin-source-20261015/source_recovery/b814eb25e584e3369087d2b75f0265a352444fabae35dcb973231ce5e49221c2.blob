@@ -1,0 +1,14 @@
+{
+  "launched_utc": "2026-10-15T23:57:43.250083+00:00",
+  "argv": [
+    "finite_checks.py"
+  ],
+  "script_sha256": "e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2",
+  "derivation_sha256": "95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020",
+  "exposure_sha256": "4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "inputs": "All literal cases and predicates are in this hashed source before results."
+}

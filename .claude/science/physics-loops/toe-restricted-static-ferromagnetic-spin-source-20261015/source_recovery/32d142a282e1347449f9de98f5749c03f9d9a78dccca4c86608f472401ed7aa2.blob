@@ -1,0 +1,64 @@
+{
+  "accepted_at_utc": "2026-10-16T00:19:01.165638+00:00",
+  "status": "conditional-support; source acceptance only, no retained audit",
+  "primary_scope": "Author sections 2-6, one controlled old qubit and genuinely decoupled spectators, with final qualifications.",
+  "conditional_lemma_scope": "Author section 8 finite second-order implication only under all its stated hypotheses; no realization of them inferred.",
+  "excluded_scope": "Sections 9-10 architecture proposals and new routed bus are not accepted as general realization.",
+  "author_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/DERIVATION.md",
+    "bytes": 31713,
+    "sha256": "47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15"
+  },
+  "independent_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/DERIVATION.md",
+    "bytes": 16783,
+    "sha256": "687a28553a1588265906ca0e64a8a18c8caf18027003343aed5708b43b2a0222"
+  },
+  "exposed_comparison": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/COMPARISON.md",
+    "bytes": 17333,
+    "sha256": "85b54da82b54f7accb199d9c4121e5701f229ab91176ed1b0d249e7ee9b448c9"
+  },
+  "root_final_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 4360,
+    "sha256": "dcab7a72c287fe9cd06b2de4997d35051aa67e425be9d6c8703055edae44ba11"
+  },
+  "root_preliminary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_root_review/PRELIMINARY_REVIEW.md",
+    "bytes": 5522,
+    "sha256": "f6b4883e8828851fca18434dda0b422aee137e88c499fe2818f28b17ed5de666"
+  },
+  "verified_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/FREEZE.json",
+        "bytes": 4893,
+        "sha256": "29d85314d7f00e28733c345be0a04ceef436736dbd2552d0b1e174b6a3a1502b"
+      },
+      "members_verified": 16
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/FREEZE.json",
+        "bytes": 3739,
+        "sha256": "cbbeb30362a70f320919ebc0cbb9c1b4672828a48b1d7222c96630f2f1a9ea3c"
+      },
+      "members_verified": 18
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/ferromagnetic_source_independent_check/exposed_comparison/FREEZE.json",
+        "bytes": 3478,
+        "sha256": "3c3de9fc9a949601697552c2e2e3a62346ef0126eaa0263763b64497ba35f4b0"
+      },
+      "members_verified": 18
+    }
+  ],
+  "independence": "Separate context frozen before primary proof exposure, shared selected model and architecture. Related gap/reduction arguments. No different-model-family status.",
+  "evidence_limits": "Finite floating-point cases only; original independent launch lacks cwd/exit, separately transcribed retrospectively from actual tool record. No replay or formal proof.",
+  "effective_selection": "Certified upper rounding of N and rational q within a constant factor preserve resource powers under additional computable-data premises.",
+  "literal_scalar_qualification": "theta=pi retains -I for fixed decomposition; free-old scalar shortcut is theta=0 only with matching phase.",
+  "publication": "not yet packaged",
+  "editable_prompt_files_changed": []
+}

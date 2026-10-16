@@ -1,0 +1,109 @@
+{
+  "frozen_utc": "2026-10-16T00:01:25.736644+00:00",
+  "scope": "Independent derivation and finite falsification evidence before exposure to primary science or reporting findings.",
+  "files": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 2049,
+      "sha256": "b946eacaef89df7633511d109ac596f7d1ce478401120aeb4e81c0f237ea12b9"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 16783,
+      "sha256": "687a28553a1588265906ca0e64a8a18c8caf18027003343aed5708b43b2a0222"
+    },
+    {
+      "path": "EXPOSURE.json",
+      "bytes": 6009,
+      "sha256": "36a03f21a730ef935d3793251e75b31c99fe2691d346e30f507649607d7ce7d2"
+    },
+    {
+      "path": "FINITE_CHECK_FULL.log",
+      "bytes": 10900,
+      "sha256": "46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c"
+    },
+    {
+      "path": "FINITE_CHECK_LAUNCH.json",
+      "bytes": 635,
+      "sha256": "b814eb25e584e3369087d2b75f0265a352444fabae35dcb973231ce5e49221c2"
+    },
+    {
+      "path": "FINITE_CHECK_RESULTS.json",
+      "bytes": 10900,
+      "sha256": "46d0eeda39b7eddb7ade4984969d346dbb4c4a8112a5c7365bd63706226b828c"
+    },
+    {
+      "path": "finite_checks.py",
+      "bytes": 8979,
+      "sha256": "e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2"
+    },
+    {
+      "path": "source_at_launch/00_sources_AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "source_at_launch/01_planning_AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": "source_at_launch/02_ai_methodology_SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "source_at_launch/03_skills_SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "source_at_launch/04_workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": "source_at_launch/05_references_proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "source_at_launch/06_physics-claim-reviewer_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "source_at_launch/07_workhorse_SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": "source_at_launch/derivation_at_finite_launch.txt",
+      "bytes": 14138,
+      "sha256": "95cbf2e175253d3e5f7e0e2b4122f81686385b18c7b0d84118883bc3d896a020"
+    },
+    {
+      "path": "source_at_launch/exposure_at_finite_launch.json",
+      "bytes": 5565,
+      "sha256": "4793d0558db1789f613f5be6b6155feba1924fdb103e4b468c0cd710f67b2840"
+    },
+    {
+      "path": "source_at_launch/finite_checks_at_launch.py",
+      "bytes": 8979,
+      "sha256": "e9734acd5bfa0a21521fd1ada40710e6ebcda222c0b3ef52932cbe31468992b2"
+    }
+  ],
+  "checks": {
+    "instruction_copy_hashes_verified": 8,
+    "finite_source_launch_hashes_verified": 3,
+    "numerical_source_unchanged_after_run": true,
+    "full_log_equals_results_json": true,
+    "finite_pass": 18,
+    "finite_fail": 0
+  },
+  "open_obligations": [
+    "No inspection/review of primary candidate text. Parent reconciliation remains.",
+    "No external/different-model-family independence or retained status."
+  ],
+  "editable_prompt_files_changed": []
+}

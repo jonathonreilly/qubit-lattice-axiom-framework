@@ -1,0 +1,91 @@
+{
+  "frozen_utc": "2026-10-15T23:48:24.492722+00:00",
+  "status": "author proposal frozen before cross-exposure; not accepted or independently checked",
+  "complete_original_generic_target": false,
+  "completed_scope": "restricted one-qubit common-strength theorem; conditional finite-corrector implication",
+  "other_worker_science_or_new_root_candidate_seen": false,
+  "external_literature_used": false,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/DERIVATION.md",
+      "bytes": 31713,
+      "sha256": "47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECKPOINT.md",
+      "bytes": 3080,
+      "sha256": "0be78f68162cb11495c8231b6b982ee75e6cdb57cad8195a4cef553d26d31dfa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/SOURCE_COVERAGE.md",
+      "bytes": 2807,
+      "sha256": "c4385aa27987e0c209a02fbe308cca33d9cf804b934df8407255fbb42305bd3a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/SOURCE_MANIFEST.json",
+      "bytes": 5172,
+      "sha256": "a94c5b95758e9444cf6caa198ef3a0b2be716aaea9c7f9f729dfd9b2c739eafb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_EVIDENCE.md",
+      "bytes": 2448,
+      "sha256": "483fb05450002667a2deec90a7f42a22c001fc34dba400e7dbd0a9c83dd5c158"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.py",
+      "bytes": 5153,
+      "sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.at_launch.py",
+      "bytes": 5153,
+      "sha256": "317e24380e9f3c942d5a10c667c3c484ccf3108d69979cbc52799def5ba5dab5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.stdout.log",
+      "bytes": 8135,
+      "sha256": "e88c31d5488b07bb1b15ec09bb2c08e0b92d9fd8c2a926d99d20dd4343e357f2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/finite_check.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_LAUNCH.json",
+      "bytes": 768,
+      "sha256": "d33cd8e3bc3f93f9b12abf8dda65d2f21b99b4887f0ded3caa1fd76506eebc78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/CHECK_RESULT.json",
+      "bytes": 929,
+      "sha256": "af2d45e28f2dde8a97112bcbf62f1e456fa0a85687c9b34cc50ac1edfc3bd976"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/run_recorded.py",
+      "bytes": 1704,
+      "sha256": "8051d6d84e1f7f22b5633eb79f4e4c60827cb87e38f36fcbf8ae8ba2839fcf7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/capture_sources.py",
+      "bytes": 2480,
+      "sha256": "f3abfeaf74674ec208ee5ba5cba7a663c5bfdb0027863ca721d0a36c2db0f336"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/source_capture.stdout.log",
+      "bytes": 4742,
+      "sha256": "322786c19bd0a840a7ccf5d22e74973d77383f5890de38ecdb8f26b93dabff19"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/source_capture.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_strength_runtime_candidate/freeze.py",
+      "bytes": 1804,
+      "sha256": "8d55b4f644955d70f5a5da3e40684c2d01809f0b30e60131cd0de6b59559c6d3"
+    }
+  ]
+}

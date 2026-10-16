@@ -323,7 +323,14 @@ D'Ariano and Perinotti (2014) and D'Ariano, Erba and Perinotti (2017) obtained
 Weyl walks on the body-centred-cubic Cayley graph under their isotropy
 definition (a group acting on the generator set with a unitary coin
 representation). Those isotropy notions differ from the framework's full
-soldering. New here: the exact classification on the whole 27-point cell
+soldering. The D2 exhibit above is not new. Expanding q_x q_y q_z leaves
+only the eight body-diagonal hops (+-1,+-1,+-1), and its f = c1c2c3 + s1s2s3
+and g agree with the known BCC Weyl automaton up to conventions. The point
+added here is that this known walk is covariant under the axis half-turns
+D2 with the soldered spin action and under no larger subgroup of O. The
+groups containing D2 are D4, T and O, and Theorems 1 and 2 exclude them. It
+also adds that its leading lattice correction is the handed term
+-n1 n2 n3 |k|^2. New here: the exact classification on the whole 27-point cell
 (axis, face-diagonal and body-diagonal hops together) under the soldered O
 action and its subgroups, the exact T and D4 statements, and the subgroup
 ceiling for motion.

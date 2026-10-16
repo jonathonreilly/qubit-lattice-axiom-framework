@@ -1,11 +1,10 @@
 campaign: observations-backward-derivation-24h-20261015
 status: active
-phase: Publishing joint background/reception calibration and primitive weak test; personally testing finite physical-record
-  rejection budget.
+phase: Direct primitive-photon milestone published for review
 started_at: '2026-10-15T22:36:59+00:00'
 deadline: '2026-10-16T22:36:59+00:00'
 packaging_cutoff: '2026-10-16T22:21:59+00:00'
-updated_at: '2026-10-16T14:06:52.921055+00:00'
+updated_at: '2026-10-16T16:56:44.577417+00:00'
 author: /root in this chat
 worktree: /Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go
 pack: /Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015
@@ -17,18 +16,20 @@ block: common-action reconstruction across environments
 route: Actual clocks/redshift/source response -> registered scalar-history inputs -> cross-environment action constraints
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-hard_residual: Jointly identify a compatible background and calibrated primitive photon/matter inputs without supplying
-  J; action, absolute scale and observational derivative errors remain open.
-next_action: Complete independent FLRW tidal and conformal-family comparisons; derive noncanonical action constraints
-  from independently recorded geometry/stress and state coverage. Preserve source bytes and empirical limits.
-open_imports:
-- canonical single-scalar/conformal pressureless action class
-- known M and normalization
-- flat homogeneous Einstein frame
-- registered Einstein-time H C3, alpha C1, fixed-bare-density mu continuous
-- nonzero scalar velocity and positive dust on connected chart
-- measurement extraction, derivative/error control and actual environmental correspondence
-independent_check: Photon milestone source checks complete; new physical weak probe comparison pending
+hard_residual: Derive or bound the background/calibration and required reception-time information from observables
+  without assuming the candidate evolution.
+next_action: Derive or bound the background/calibration and required reception-time information from observables
+  without assuming the candidate evolution.
+open_imports: &id002
+- action class
+- registered background and geometry
+- gain/observer/source calibration
+- open reception-time coverage
+- harmonic extraction and errors
+- model and quadrature errors
+- initial-state origin and absolute scales
+independent_check: Adjoint, full-action photon path, exact norm, temporal access and final integration complete;
+  exposure history and real failures preserved
 milestones:
 - number: 9628
   url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9628
@@ -37,9 +38,9 @@ milestones:
   head_sha: 40e5030769a9409f0d52d3e4e58e8279a5550e47
   base_branch: main
   base_sha: bbada1fe09b2d10d610560864d86b68c24a59713
-  state: OPEN
+  state: CLOSED
   is_draft: false
-  verified_at: '2026-10-16T00:42:17.344839+00:00'
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
   changed_files: 59
   mergeable: MERGEABLE
   merge_state_status: BLOCKED
@@ -47,6 +48,12 @@ milestones:
   checkpoint_commit: 5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2
   scientific_status: bounded_theorem / conditional-support; no empirical test
   shared_landing_validation: pending
+  headRefName: codex/scalar-observation-inverse-20261016
+  headRefOid: 40e5030769a9409f0d52d3e4e58e8279a5550e47
+  baseRefName: main
+  baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+  mergedAt: null
+  mergeCommit: null
 - baseRefName: main
   baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
   changedFiles: 95
@@ -56,13 +63,15 @@ milestones:
   mergeStateStatus: BLOCKED
   mergeable: MERGEABLE
   number: 9632
-  state: OPEN
+  state: CLOSED
   title: '[physics-loop] neighborhood-intervention bounded_theorem conditional-support'
   url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632
-  verified_at: '2026-10-16T03:03:16.919346+00:00'
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
   attached_to_current_chat: true
   shared_landing_validation: pending
   scientific_status: bounded_theorem / conditional-support; no empirical validation
+  mergedAt: null
+  mergeCommit: null
 - baseRefName: main
   baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
   changedFiles: 108
@@ -72,13 +81,15 @@ milestones:
   mergeStateStatus: BLOCKED
   mergeable: MERGEABLE
   number: 9634
-  state: OPEN
+  state: CLOSED
   title: '[physics-loop] sampled-coupling inverse bounded_theorem conditional-support'
   url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634
-  verified_at: '2026-10-16T04:39:21.109604+00:00'
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
   attached_to_current_chat: true
   shared_landing_validation: pending
   scientific_status: bounded_theorem / conditional-support; synthetic controls only, no empirical validation
+  mergedAt: null
+  mergeCommit: null
 - baseRefName: main
   baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
   changedFiles: 98
@@ -88,14 +99,16 @@ milestones:
   mergeStateStatus: BLOCKED
   mergeable: MERGEABLE
   number: 9637
-  state: OPEN
+  state: CLOSED
   title: '[physics-loop] ringdown-action inverse bounded_theorem conditional-support'
   url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637
-  verified_at: '2026-10-16T05:55:17.727940+00:00'
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
   attached_to_current_chat: true
   shared_landing_validation: pending
   scientific_status: bounded_theorem / conditional-support; exact-class and synthetic controls only, no empirical
     validation
+  mergedAt: null
+  mergeCommit: null
 - baseRefName: main
   baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
   changedFiles: 97
@@ -105,18 +118,93 @@ milestones:
   mergeStateStatus: BLOCKED
   mergeable: MERGEABLE
   number: 9638
-  state: OPEN
+  state: CLOSED
   title: '[physics-loop] scalar-history compatibility bounded_theorem conditional-support'
   url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9638
-  verified_at: '2026-10-16T09:36:59.455687+00:00'
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
   attached_to_current_chat: true
   shared_landing_validation: pending
   scientific_status: bounded_theorem / conditional-support; exact mathematical and constructed controls only
-- number: 9639
-  head: 902f26a03d9fad68f1afec1417a2dad3090b64d7
+  mergedAt: null
+  mergeCommit: null
+- baseRefName: main
+  baseRefOid: 5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472
+  changedFiles: 99
+  headRefName: codex/scalar-metric-inverse-20261016
+  headRefOid: 902f26a03d9fad68f1afec1417a2dad3090b64d7
+  isDraft: false
+  mergeStateStatus: BLOCKED
+  mergeable: MERGEABLE
+  number: 9639
+  state: CLOSED
+  title: '[physics-loop] scalar metric reconstruction bounded_theorem conditional-support'
   url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9639
-  scientific_scope: Metric reconstruction and fixed-background spherical readout
-  shared_landing: pending
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; no empirical validation
+  mergedAt: null
+  mergeCommit: null
+- baseRefName: main
+  baseRefOid: b31c55267a6d617023c9a4d1951385178663e70f
+  changedFiles: 73
+  headRefName: codex/scalar-photon-calibration-20261016
+  headRefOid: e42d363b618e16551e838d268748ac8eeff3dd19
+  isDraft: false
+  mergeStateStatus: UNKNOWN
+  mergeable: UNKNOWN
+  number: 9641
+  state: CLOSED
+  title: '[physics-loop] photon-calibration inverse bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9641
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; no empirical validation
+  mergedAt: null
+  mergeCommit: null
+  main_integration_evidence: Scientific note/helper bytes equal main6ee7a70e; GitHub state CLOSED with null merge
+    fields. Separate landing, no merge here.
+- baseRefName: main
+  baseRefOid: c64cf5df6206bb5363f8b4504999bd72ebe4d85d
+  changedFiles: 40
+  headRefName: codex/scalar-kinetic-response-20261016
+  headRefOid: 1355e4a8e7c7c035acdbb1385b730a3f4bc1da87
+  isDraft: false
+  mergeStateStatus: DIRTY
+  mergeable: CONFLICTING
+  number: 9644
+  state: CLOSED
+  title: '[physics-loop] scalar-kinetic-response bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9644
+  verified_at: '2026-10-16T16:55:27.605525+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; constructed controls only
+  mergedAt: null
+  mergeCommit: null
+  main_integration_evidence: Scientific note/helper bytes equal main6ee7a70e; GitHub state CLOSED with null merge
+    fields. Separate landing, no merge here.
+- &id001
+  number: 9646
+  title: '[physics-loop] scalar-primitive-kinetic bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9646
+  state: OPEN
+  headRefName: codex/scalar-primitive-kinetic-20261016
+  headRefOid: c80e24bcd286674dc69a8c60fc05b9c29a2d5c3c
+  baseRefName: main
+  baseRefOid: de540f645a284854753e19f5b5f954cb41185b6e
+  mergedAt: null
+  mergeCommit: null
+  verified_at: '2026-10-16T16:56:44.577417+00:00'
+  attached_to_current_chat: true
+  changedFiles: 76
+  isDraft: false
+  mergeable: CONFLICTING
+  mergeStateStatus: DIRTY
+  branch_base: 6ee7a70e06216bf248409dc3495e5043e3df36b5
+  shared_landing_validation: Pending; current-main conflict is generated citation_graph_manifest.json only
+  scientific_status: bounded_theorem / conditional-support; constructed controls only
 owned_jobs: []
 supervisor_pid: null
 worker_pid: null
@@ -1464,80 +1552,73 @@ joint_photon_background:
     freeze.
 execution_mode: continuous direct research in this chat; no scheduled author
 direct_progress:
-  time: '2026-10-16T14:46:10.941640+00:00'
-  lead_author: /root personally deriving and implementing; focused independent checks only
-  scheduled_handoff: deleted at user direction; no replacement
-  current_work: Direct kinetic-action and exact FLRW tidal derivations
-  checked_math:
-    canonical_units:
-      common: 48
-      separate: 33
-      conditioning: 12
-      weak: 19
-    canonical_failures: 0
-    weak_independent:
-    - 25
+  at: '2026-10-16T16:56:44.577417+00:00'
+  author: /root personally authored science and code; focused checks orchestrated here
+  execution_mode: direct chat; scheduled heartbeat deleted
+  block: Primitive-photon kinetic-curvature test
+  block_status: published reviewable milestone
+  milestone: *id001
+  controls:
+    original_action:
+    - 82
     - 0
-    weak_comparison_static:
-    - 7
+    primitive:
+    - 78
     - 0
-    weak_canonical_delta:
-    - 6
+    bound:
+    - 42
     - 0
-    separate_generic_comparison:
-    - 20
-    - 0
-    separate_observed_derivative_fixture:
-    - 111
-    - 0
-    new_physical_weak_probe:
-    - 13
-    - 0
-  scope: Conditional constructed mathematics, no measured scalar or empirical validation
-  new_probe: Fixed actual-action l=2 field rejects a wrong constant-gain history; equal pointwise error radius1.134586239e-6
-    guarantees rejection for every bounded perturbed record in unit normalization. Scale with perturbation amplitude.
-    No parameter-family uniqueness.
-  new_probe_failures:
-  - v1 timeout120
-  - v2 serialization TypeError after expressions; no emitted scientific result
-  - v3 only converts SymPy predicates to bool;13/0 in105.983s
-  next_action: Complete independent FLRW tidal and conformal-family comparisons; derive noncanonical action constraints
-    from independently recorded geometry/stress and state coverage. Preserve source bytes and empirical limits.
-  current_main: 403f4b92b34db7eccccb15458401affae19dd2fa
-  deadline: '2026-10-16T22:36:59Z'
-  packaging: '2026-10-16T22:21:59Z'
-  owned_research_jobs: []
-  other_owned_operations: []
-  active_focused_checks:
-  - 'common_action_check: conformal exchange/full action family'
-  - 'network_history_check: exact FLRW tidal readout'
-  - 'inertial_response_check: kinetic state coverage'
-  storage_recovery: Completed clean PR9639 worktree archived through app; needed ignored graph preserved and verified;
-    approximately1.9GiB freed/available. No scientific evidence deleted.
-  seven_fuchs_arrays_unopened: true
+  exact_wrong_candidate_moment: 827093/50599790841600
+  error_radius_harmonic_coefficient_unit_amplitude: 1.0271814436405565e-08
+  observational_status: Exact constructed records only, no empirical validation
+  source_sha256:
+    docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md: 4a24a549df6b53f23768e67ca174638ed360ec18137b874f85b9307cae03dfc3
+    scripts/scalar_primitive_kinetic.py: 978ab14363b55f759e867555dad5b15614056a7053caf4b33fb49abbec50475f
+    scripts/scalar_primitive_kinetic_action.py: 9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de
+    scripts/scalar_primitive_kinetic_core.py: b7fff4c8f1df13adfd4cab76e452722edda848fc814d68af5f6b332df047dee5
+    scripts/scalar_primitive_kinetic_bound.py: f4e3fbbdddb22d23a8611f60bdb7b7cbad064892c918318abdf07b6e75756c82
+  output_sha256: 5e8da3e3ba0f1fe59ee7376172cee450cf826babe3219fe41400faf2f9bd791e
+  independent_checks: Adjoint, full-action photon path, exact norm, temporal access and final integration complete;
+    exposure history and real failures preserved
+  mutations: 11 complete new source-mutation detections;2 full-run timeouts with4 passing scoped source-function
+    controls;3 unchanged action mutations reused with exact source binding
+  portable_replay: Five source files; same environment; exact output equality; no scientific history-file input
+  retired_inputs_for_this_test:
+  - explicit hidden J readout
+  - explicit velocity Z readout
+  - separate density initial value
+  - differentiation of measured records during residual evaluation
+  remaining_suppliers: *id002
+  owned_jobs: []
+  active_subagents: []
+  scheduled_author: false
   older_campaigns_stopped: true
-  physical_weak_probe_independent: 24/0 algebra,10/0 integrals,12/0 correspondence; full proof/code read and28bindings
-    verified
-  kinetic_action_controls:
-    passed: 46
-    failed: 0
-    readout_independent_pre_author: 25
-    readout_scoped_exposed_replay: 18
-    scope: Only principal/readout sections independently compared; finite-history check pending
-  milestone_pr: 9641
-  milestone_head: e42d363b618e16551e838d268748ac8eeff3dd19
-  conformal_exchange_controls:
-    passed: 43
-    failed: 0
-    independent: active
-  flrw_tidal_controls:
-    passed: 32
-    failed: 0
-    independent: active
-  recovery_archive:
-    path: PHOTON_CAMPAIGN_RECOVERY_v1.tar.gz
-    members: 389
-    sha256: 7b31703ebfed654e72f0b3cd1a3f87bf562b0c65581cefdbdfa4e65f0989f77b
-    exact_bytes_verified: true
-current_block: Direct kinetic-action and exact FLRW tidal derivations
-last_checkpoint: '2026-10-16T14:46:10.941640+00:00'
+  seven_fuchs_arrays_unopened: true
+  main_at_refresh: de540f645a284854753e19f5b5f954cb41185b6e
+  deadline: '2026-10-16T22:36:59Z'
+  packaging_cutoff: '2026-10-16T22:21:59Z'
+  next_scientific_question: Derive or bound the background/calibration and required reception-time information from
+    observables without assuming the candidate evolution.
+current_block: Primitive-photon kinetic-curvature test
+last_checkpoint: '2026-10-16T16:56:44.577417+00:00'
+direct_current_block_1514: general-kinetic photon inverse and kinetic-curvature inference
+direct_next_action_1514: weak metric-record rejection and focused independent comparisons
+direct_checkpoint_evidence_1514: DIRECT_RESEARCH_CHECKPOINT_1514_v1.json
+kinetic_response_checkpoint_1538:
+  at: '2026-10-16T15:35:56.586451+00:00'
+  actual_current_surface_status: conditional-support
+  root_authorship: direct
+  scheduled_author: false
+  milestone_branch: codex/scalar-kinetic-response-20261016
+  empirical_status: constructed_controls_only
+  next_action: canonical integration and observation bridge
+direct_checkpoint_1557:
+  at: '2026-10-16T15:56:29.381290+00:00'
+  current_route: primitive photon-record kinetic adjoint
+  milestone_pr: 9644
+  milestone_head: 1355e4a8e7c7c035acdbb1385b730a3f4bc1da87
+  scheduled_author: false
+  owned_jobs: []
+  next_action: derive observation adjoint and bounded-error witness directly
+scheduled_author: false
+scheduled_handoff: false

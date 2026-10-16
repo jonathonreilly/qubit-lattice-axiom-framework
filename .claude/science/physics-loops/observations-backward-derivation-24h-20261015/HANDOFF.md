@@ -621,3 +621,32 @@ Root personally derived and executed43 exact conformal-exchange/full-action cont
 Completed photon source/check/failure files are preserved byte-for-byte in PHOTON_CAMPAIGN_RECOVERY_v1.tar.gz (389members), with a per-file manifest. Extract that archive in this pack to restore original names. Canonical PR9641 remains unchanged and unmerged. Current main403f4b92 adds five finite-record/installed-clock notes without scalar or workflow source overlap; this is scope inspection, not review of their proofs.
 
 Complete independent FLRW tidal and conformal-family comparisons; derive noncanonical action constraints from independently recorded geometry/stress and state coverage. Preserve source bytes and empirical limits. All seven Fuchs arrays remain unopened; literature is exposed development context. Original deadline22:36:59Z and packaging22:21:59Z are unchanged.
+
+
+## Direct research checkpoint 2026-10-16T15:12:47.921584+00:00
+
+Root personally derived a general-Q extension of the photon necessary inverse: canonical kinetics is not needed for its momentum/dust reduction. A full-action noncanonical family shares the background while changing scalar response;82 exact controls pass, including the original scalar and pressure equations. A separate density-eliminating two-record inverse identifies the kinetic second derivative on a nonzero-rank patch;84 controls pass using full-action modes, with explicit tangent/proportional-record failures. These new units remain under focused independent derivation; no empirical validation or global action selection.
+
+The velocity-curvature addendum corrects the one-event kernel qualification and adds the odd-boost derivative measurement;36 controls pass including earlier24. The preserved v1 expected-value failure remains23/1. Root read all preceding independent proofs and comparison reports except the latest velocity/addendum bindings, which remain to be verified. PR9641 stays frozen.
+
+Derive and test a weak primitive metric-record kinetic-curvature rejection with an explicit noise allowance; complete focused independent comparisons; integrate one coherent action-assumption milestone. No scheduled author, owned research job or older campaign restart. Seven Fuchs arrays remain unopened. The original deadline and packaging cutoff are unchanged.
+
+## Direct-author checkpoint 2026-10-16T15:35:56.586451+00:00
+
+Root completed phase-aware sampled-two-jet controls35/0 and weak rejection22/0, keeping the original one-record wording correction visible. Independent weak31/0 agrees in magnitude with opposite overall sign convention; source comparison pending. Canonical worktree scalar-kinetic-response-20261016 is based on current main2dd8eef1. No observational data opened. Next: one coherent packet with focused checks, then observation bridge. No scheduled handoff.
+
+## Direct-author checkpoint 2026-10-16T15:56:29.381290+00:00
+
+PR9644 published and attached at1355e4a8e7c7c035acdbb1385b730a3f4bc1da87. General kinetic response inverse, real-phase/regular-zero mechanisms, sampled two-jet and weak finite-error rejection packaged with focused checks. Canonical counts82/84/18/40/28 all zero failures,14 actual mutations rejected without exceptions, seven-file portable replay byte-identical. These counts overlap. Formal audit and shared landing remain pending. Main advanced during publication; generated-file conflict is being inspected, no science merge. Next: personally derive an adjoint test directly from primitive lensing/redshift, eliminating J and Z. Background, calibration, geometry and actual data access remain explicit. No scheduler.
+
+## Direct-author checkpoint 2026-10-16T16:22:37.865734+00:00
+
+Root personally completed primitive adjoint and exact error enclosure. Old physical ray support failed (crossed eta=0) and is preserved, not counted as a physical witness. New eta[-4,-3],r[1,2] gives whole ray[-4,-1];77/0 primitive controls and42/0 norm controls. Corrected wrong moment827093/50599790841600, true0. The1.0271814436e-8 sufficient radius applies only to normalized Y20 coefficient errors at unit fixture amplitude, not arbitrary fullsky pointwise or instrumental errors. Independent checks address operator, full-action ray coverage and exact norm; no empirical arrays. Next: one coherent primitive-kinetic milestone with actual-source mutations and complete independent comparisons. New worktree scalar-primitive-kinetic-20261016 on current-mainc64cf5. PR9644 unchanged; only generated manifest conflict is recorded for shared landing. No scheduler or older campaign restart. Fixed deadline remains22:36:59Z.
+
+## Direct-author checkpoint 2026-10-16T16:56:44.577417+00:00
+
+Root personally derived, implemented and published primitive photon kinetic test PR9646 at c80e24bcd286674dc69a8c60fc05b9c29a2d5c3c. It eliminates explicit J/Z readouts and the separate density initial value from one necessary candidate test, with all record derivatives on candidate/test weights. Original-action82/0, primitive78/0, exact-bound42/0; counts overlap. Physical ray correction, normalized-harmonic error scope, old mistakes, eleven complete source-mutation detections and two complete-run timeouts with scoped followups are preserved. Independent source/readout/norm/temporal checks and exact five-source replay agree. No empirical arrays opened, no unique action or full-equation sufficiency established.
+
+The branch is based on main6ee7a70e; current mainde540f645a changes no relevant workflow/scalar source. All eight previous campaign PRs are CLOSED with null GitHub merge fields after separate main integration. Exact scientific-file equality was checked for PR9641/9644. This author did not merge or push main. PR9646 is OPEN and attached; only the generated citation manifest conflicts with advancing main, to be regenerated at shared integrated landing. Source checks are complete; shared landing and formal audit remain pending.
+
+Scheduling is deleted. No owned research subprocess or focused agent remains active; no replacement author exists. The published block is complete, while the overall theory remains open. Next scientific question: Derive or bound the background/calibration and required reception-time information from observables without assuming the candidate evolution. Keep all older campaigns stopped and all seven Fuchs arrays unopened. Original deadline22:36:59Z and packaging22:21:59Z are unchanged; this checkpoint does not extend or declare completion of the campaign.

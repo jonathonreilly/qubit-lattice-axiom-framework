@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/heralded_auxiliary_vacuum_preparation_2026_10_14.py
+runner_sha256: 1e28bc6dc3288f6759090a2a022fc33ac37c578c7ef7a0419cb896a9f1e95837
+input_fingerprint_sha256: b72f331b1cbc82f62900e29ba1cbd1b7ea81119eccc397c96227f45d8dbe8a05
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+{"actual_frozen_words": [{"M": 1, "basis_columns": 64, "exact_Toffoli_decompositions": 10, "physical_primitives": 166, "route_blocks": 58, "sites": 27}, {"M": 2, "basis_columns": 1024, "exact_Toffoli_decompositions": 40, "physical_primitives": 808, "route_blocks": 216, "sites": 36}, {"M": 3, "basis_columns": 16384, "exact_Toffoli_decompositions": 72, "physical_primitives": 1680, "route_blocks": 384, "sites": 45}, {"M": 8, "basis_columns": 0, "exact_Toffoli_decompositions": 232, "physical_primitives": 7856, "route_blocks": 1224, "sites": 90}], "decoded_originals": 126, "dirty_ladder_basis_columns": {"1": 4, "2": 8, "3": 32, "6": 2048}, "five_gate_matrix_entries": 64, "generic_route_matrix_entries": 256, "independent_predicate_columns": {"4": 64, "5": 128, "8": 1024}, "limits": "Exact finite circuit checks and immutable-source binding; all-size algebra and state/moment inequalities are analytical. Supplied control, pointer, readout and full-reference error contracts remain premises. No native realization, optimality or retained audit.", "result": "exact_scoped_circuit_and_source_checks_completed", "targeted_wrong_interfaces_detected": ["missing dirty ladder cancellation", "missing final predicate block", "controlled-root relative phase", "reversed routed operands", "missing return swaps"], "whole_proofs_preserved": 3}
+per_element: exact gate entries include phases; supplied net controls and pointer preparation
+per_site: restricted cubic layout and eligible factors; no arbitrary recorded-site compiler
+per_mode: no continuum, mode identification, or physical-energy identification
+per_block: full old/reference conditional guarantee; retain failed outcomes and normalization
+lattice_wide: finite M family with growing resources; all-M proof is not numerical extrapolation
+
+----- stderr -----
+

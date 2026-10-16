@@ -1,0 +1,25 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "vacuum_certificate_candidate/DERIVATION.md",
+      "start": 9901,
+      "end": 28085,
+      "bytes": 18184,
+      "sha256": "88f60f60bc08dbb930810b371d404ac0d2efafddcf8ccf71e3bcfebedaa6694d"
+    },
+    {
+      "alias": "vacuum_certificate_candidate/CHAIN_LAYOUT.md",
+      "start": 28121,
+      "end": 32023,
+      "bytes": 3902,
+      "sha256": "d8926e72e8b4966885d0f64765c7ca31ec2c42f378b0aaaf6576008f570650e9"
+    },
+    {
+      "alias": "vacuum_certificate_independent/DERIVATION.md",
+      "start": 32089,
+      "end": 62714,
+      "bytes": 30625,
+      "sha256": "1ffd740f134bbcfe638b668cb7e6e270d4ddae3c3da60034d3a462c74f683373"
+    }
+  ]
+}

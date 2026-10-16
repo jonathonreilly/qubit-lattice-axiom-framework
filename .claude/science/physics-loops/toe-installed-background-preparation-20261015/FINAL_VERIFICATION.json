@@ -1,0 +1,264 @@
+{
+  "utc": "2026-10-15T01:03:31.527156+00:00",
+  "base_head": "7fa2d130984e52fdac74fc4523278e591bad667f",
+  "branch": "physics-loop/toe-installed-background-preparation-20261015",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/installed_background_auxiliary_preparation_2026_10_15.py",
+    "bytes": 29105,
+    "sha256": "e0779bd7b59335f9793ae3e1ad56f5777608d8303653494af6e4a6cee4c8190f"
+  },
+  "canonical_cache_fresh": true,
+  "declared_timeout_sec": 60,
+  "scientific_programs_run": 0,
+  "compiled_live_python": [
+    "scripts/installed_background_auxiliary_preparation_2026_10_15.py"
+  ],
+  "vocabulary_files": 11,
+  "vocabulary_did_not_change_source": true,
+  "tracked_input_closure": 169,
+  "checked_markdown_links": [
+    {
+      "source": "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "target": "MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "resolved": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    },
+    {
+      "source": "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "target": "CHAIN_PREPARATION_MOMENT_SCALING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "resolved": "docs/CHAIN_PREPARATION_MOMENT_SCALING_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    },
+    {
+      "source": "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "target": "HERALDED_AUXILIARY_VACUUM_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "resolved": "docs/HERALDED_AUXILIARY_VACUUM_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    },
+    {
+      "source": "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "target": "LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "resolved": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "all_archive_originals_decoded": true,
+  "focused_ledger_checker_result": {
+    "base": "HEAD",
+    "changed_path_count": 247,
+    "checked": [],
+    "control_failures": [],
+    "diff_scope": "committed_and_worktree",
+    "failures": [],
+    "schema": "changed_audit_evidence_readiness_v1"
+  },
+  "focused_checker_scope": "Per-unit compatibility; an empty checked set is not scientific audit.",
+  "source_and_graph_checks": "Actual canonical source binding, review pin closure and full graph preservation in publication evidence.",
+  "extra_original_evidence": {
+    "publication_integration/verify_installed_publication.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/verify_installed_publication.py",
+      "bytes": 4482,
+      "sha256": "4406cdb04e39be9884278e28c3a347c5d2b18829d40015a345afefcc21377b89",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/4406cdb04e39be9884278e28c3a347c5d2b18829d40015a345afefcc21377b89.gz"
+    },
+    "publication_integration/installed/python_compile/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/python_compile/EXECUTION.json",
+      "bytes": 1451,
+      "sha256": "a384e07fcb991bd305490f38590a8a4bae2d77e59b1aa4b4205c504b0dc57659",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/a384e07fcb991bd305490f38590a8a4bae2d77e59b1aa4b4205c504b0dc57659.gz"
+    },
+    "publication_integration/installed/python_compile/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/python_compile/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/installed/python_compile/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/python_compile/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/installed/vocab_fix/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_fix/EXECUTION.json",
+      "bytes": 2446,
+      "sha256": "dbff57c742b543f9964ddcbd6916535c6a6a1bcae91b67a866e2ade89006066f",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/dbff57c742b543f9964ddcbd6916535c6a6a1bcae91b67a866e2ade89006066f.gz"
+    },
+    "publication_integration/installed/vocab_fix/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_fix/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/installed/vocab_fix/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_fix/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/installed/vocab_fix/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_fix/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/installed/vocab_report/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_report/EXECUTION.json",
+      "bytes": 2460,
+      "sha256": "3b6da82e7e2eb437d375b07a8c849670d67035b62c9f1904be0609687fdf04f5",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/3b6da82e7e2eb437d375b07a8c849670d67035b62c9f1904be0609687fdf04f5.gz"
+    },
+    "publication_integration/installed/vocab_report/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_report/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/installed/vocab_report/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_report/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/installed/vocab_report/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_report/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/installed/changed_evidence/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/changed_evidence/EXECUTION.json",
+      "bytes": 1557,
+      "sha256": "3b603ff2ff5b9c4648a3e2a8d2e7f925e5442be703b172650f913803cf8bef28",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/3b603ff2ff5b9c4648a3e2a8d2e7f925e5442be703b172650f913803cf8bef28.gz"
+    },
+    "publication_integration/installed/changed_evidence/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/changed_evidence/executed_source.py",
+      "bytes": 7903,
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz"
+    },
+    "publication_integration/installed/changed_evidence/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/changed_evidence/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/installed/changed_evidence/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/changed_evidence/stdout",
+      "bytes": 204,
+      "sha256": "4e48911d2b9a400a333b31548665de9ce36169d3bc17558a2335dff3cb6ec47a",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/4e48911d2b9a400a333b31548665de9ce36169d3bc17558a2335dff3cb6ec47a.gz"
+    },
+    "runs/installed_publication_packaging/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/installed_publication_packaging/EXECUTION.json",
+      "bytes": 1391,
+      "sha256": "7186c2fe09870fdb90fc3b7568d2da88989a2f39228d8be94616b30ce6246ed4",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/7186c2fe09870fdb90fc3b7568d2da88989a2f39228d8be94616b30ce6246ed4.gz"
+    },
+    "runs/installed_publication_packaging/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/installed_publication_packaging/executed_source.py",
+      "bytes": 4313,
+      "sha256": "f5dbbb3b7193285f7f10b25473611ea1c3ed04f53f4e12b2d2a39fc5a44b5ecb",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/f5dbbb3b7193285f7f10b25473611ea1c3ed04f53f4e12b2d2a39fc5a44b5ecb.gz"
+    },
+    "runs/installed_publication_packaging/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/installed_publication_packaging/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/installed_publication_packaging/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/installed_publication_packaging/stdout",
+      "bytes": 372,
+      "sha256": "42707ceb1b075046d59d7381a192639d5e35cc160f1860d2fcf2a655ea7b225a",
+      "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/42707ceb1b075046d59d7381a192639d5e35cc160f1860d2fcf2a655ea7b225a.gz"
+    }
+  },
+  "checks": {
+    "python_compile": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/python_compile/EXECUTION.json",
+        "bytes": 1451,
+        "sha256": "a384e07fcb991bd305490f38590a8a4bae2d77e59b1aa4b4205c504b0dc57659",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/a384e07fcb991bd305490f38590a8a4bae2d77e59b1aa4b4205c504b0dc57659.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/python_compile/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/python_compile/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "vocab_fix": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_fix/EXECUTION.json",
+        "bytes": 2446,
+        "sha256": "dbff57c742b543f9964ddcbd6916535c6a6a1bcae91b67a866e2ade89006066f",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/dbff57c742b543f9964ddcbd6916535c6a6a1bcae91b67a866e2ade89006066f.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_fix/stdout",
+        "bytes": 81,
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_fix/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "vocab_report": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_report/EXECUTION.json",
+        "bytes": 2460,
+        "sha256": "3b6da82e7e2eb437d375b07a8c849670d67035b62c9f1904be0609687fdf04f5",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/3b6da82e7e2eb437d375b07a8c849670d67035b62c9f1904be0609687fdf04f5.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_report/stdout",
+        "bytes": 81,
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/vocab_report/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "changed_evidence": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/changed_evidence/EXECUTION.json",
+        "bytes": 1557,
+        "sha256": "3b603ff2ff5b9c4648a3e2a8d2e7f925e5442be703b172650f913803cf8bef28",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/3b603ff2ff5b9c4648a3e2a8d2e7f925e5442be703b172650f913803cf8bef28.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/changed_evidence/stdout",
+        "bytes": 204,
+        "sha256": "4e48911d2b9a400a333b31548665de9ce36169d3bc17558a2335dff3cb6ec47a",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/4e48911d2b9a400a333b31548665de9ce36169d3bc17558a2335dff3cb6ec47a.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/installed/changed_evidence/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-installed-background-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    }
+  },
+  "outstanding": [
+    "Combined full pipeline, strict audit lint and cumulative changed-evidence on an integrated current-main candidate.",
+    "Independent retained audit.",
+    "Supplied physical interfaces; no actual recurrence certificate."
+  ],
+  "science_merged": false,
+  "editable_prompt_files_changed": []
+}

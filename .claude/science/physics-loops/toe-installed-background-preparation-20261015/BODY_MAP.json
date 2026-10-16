@@ -1,0 +1,32 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "persistent_drift_independent/DERIVATION.md",
+      "start": 14718,
+      "end": 43226,
+      "bytes": 28508,
+      "sha256": "a99cd0def62cdadf7e42670499f8991db4e838311e5deb3845c69204ed7b5218"
+    },
+    {
+      "alias": "coherent_success_calibration_clarification/AFTER.md",
+      "start": 43275,
+      "end": 77825,
+      "bytes": 34550,
+      "sha256": "64b02e115e99b39f7ec387f82355a038be2b0577245c731896102ab530364a09"
+    },
+    {
+      "alias": "persistent_drift_recurrence_application/DERIVATION.md",
+      "start": 77879,
+      "end": 110909,
+      "bytes": 33030,
+      "sha256": "abf4e9c86bfd9c794ecb1bde09c332a0efae25f089764445dc8fc5fac59784d0"
+    },
+    {
+      "alias": "coherent_recurrence_rational_revision/AFTER.md",
+      "start": 110964,
+      "end": 117717,
+      "bytes": 6753,
+      "sha256": "5bef20f5a34676f5e12438b5eef42eca95a6a3bb61584e14bf16b8b8ba774d38"
+    }
+  ]
+}

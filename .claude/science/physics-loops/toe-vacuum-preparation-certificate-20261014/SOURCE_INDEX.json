@@ -1,0 +1,761 @@
+{
+  "schema": "heralded-vacuum-archive-v1",
+  "originals": {
+    "vacuum_certificate_candidate/CHAIN_LAYOUT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/CHAIN_LAYOUT.md",
+      "bytes": 3902,
+      "sha256": "d8926e72e8b4966885d0f64765c7ca31ec2c42f378b0aaaf6576008f570650e9",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/d8926e72e8b4966885d0f64765c7ca31ec2c42f378b0aaaf6576008f570650e9.gz"
+    },
+    "vacuum_certificate_candidate/DERIVATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/DERIVATION.md",
+      "bytes": 18184,
+      "sha256": "88f60f60bc08dbb930810b371d404ac0d2efafddcf8ccf71e3bcfebedaa6694d",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/88f60f60bc08dbb930810b371d404ac0d2efafddcf8ccf71e3bcfebedaa6694d.gz"
+    },
+    "vacuum_certificate_candidate/DERIVATION_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/DERIVATION_FREEZE.json",
+      "bytes": 1898,
+      "sha256": "738a162d999143dc00ff124bb9696bf1e64d11d8129a38f57b089868f2b33bb4",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/738a162d999143dc00ff124bb9696bf1e64d11d8129a38f57b089868f2b33bb4.gz"
+    },
+    "vacuum_certificate_candidate/LAYOUT_AND_EMITTER_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/LAYOUT_AND_EMITTER_FREEZE.json",
+      "bytes": 845,
+      "sha256": "8c09c49e0f2aa9a8289e1b84cf8a46f7e99b56e83f80aea568612bcb456a663a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/8c09c49e0f2aa9a8289e1b84cf8a46f7e99b56e83f80aea568612bcb456a663a.gz"
+    },
+    "vacuum_certificate_candidate/PRIOR_WORK_ROOT_REVIEW.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/PRIOR_WORK_ROOT_REVIEW.json",
+      "bytes": 4471,
+      "sha256": "a275b3eced35ef9d32ad0498526dec720c79dd0e9684aeb633e0f6795bc12556",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/a275b3eced35ef9d32ad0498526dec720c79dd0e9684aeb633e0f6795bc12556.gz"
+    },
+    "vacuum_certificate_candidate/ROOT_ACCEPTANCE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/ROOT_ACCEPTANCE.json",
+      "bytes": 3488,
+      "sha256": "3795816f377f34b502fec675cbd167b481f051c978161cad38ef1e820f25c3f8",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/3795816f377f34b502fec675cbd167b481f051c978161cad38ef1e820f25c3f8.gz"
+    },
+    "vacuum_certificate_candidate/SUBSTANTIVE_REVIEW_STAGE1.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/SUBSTANTIVE_REVIEW_STAGE1.json",
+      "bytes": 1880,
+      "sha256": "be611f96e9e5223b0d2db76787013b3ef9780c6d92ae0fa5dffd3416869c988b",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/be611f96e9e5223b0d2db76787013b3ef9780c6d92ae0fa5dffd3416869c988b.gz"
+    },
+    "vacuum_certificate_candidate/emission_v1/RESULT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/emission_v1/RESULT.json",
+      "bytes": 9325,
+      "sha256": "3163b141c2df7ac22571bcb223339f2070613da6e0f8d8e6326b308d439224b8",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/3163b141c2df7ac22571bcb223339f2070613da6e0f8d8e6326b308d439224b8.gz"
+    },
+    "vacuum_certificate_candidate/emission_v1/word_M1.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/emission_v1/word_M1.json",
+      "bytes": 32928,
+      "sha256": "137146e229a677df3d07f06c08769220bdea3057e6967b8cba3582e869589e74",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/137146e229a677df3d07f06c08769220bdea3057e6967b8cba3582e869589e74.gz"
+    },
+    "vacuum_certificate_candidate/emission_v1/word_M2.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/emission_v1/word_M2.json",
+      "bytes": 142899,
+      "sha256": "e7fef5086c3fe3ab4ff8282ea684570bf36907fa47403193d166f8dd696b0b3e",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e7fef5086c3fe3ab4ff8282ea684570bf36907fa47403193d166f8dd696b0b3e.gz"
+    },
+    "vacuum_certificate_candidate/emission_v1/word_M3.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/emission_v1/word_M3.json",
+      "bytes": 283477,
+      "sha256": "3f9048d1500f181e3312b1501bdaa7a0a8d27e6b475c46b8f1f4c9716a0cad6e",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/3f9048d1500f181e3312b1501bdaa7a0a8d27e6b475c46b8f1f4c9716a0cad6e.gz"
+    },
+    "vacuum_certificate_candidate/emission_v1/word_M8.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/emission_v1/word_M8.json",
+      "bytes": 1211526,
+      "sha256": "84445cdedb3344f8c800ca738f479d8a9e5a027e9cf3beb05902780933083418",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/84445cdedb3344f8c800ca738f479d8a9e5a027e9cf3beb05902780933083418.gz"
+    },
+    "vacuum_certificate_candidate/emit_chain_vacuum.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/emit_chain_vacuum.py",
+      "bytes": 9889,
+      "sha256": "b59e405789a24ea9289630bc47403cc55cfc6445e1fc329bcaf4a22690a9189a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/b59e405789a24ea9289630bc47403cc55cfc6445e1fc329bcaf4a22690a9189a.gz"
+    },
+    "vacuum_certificate_independent/CAPTURE_SOURCES.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/CAPTURE_SOURCES.py",
+      "bytes": 2990,
+      "sha256": "55732c56e6b79bef62d720f35035c58e7993b873aaa71fe153346e791b94ae86",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/55732c56e6b79bef62d720f35035c58e7993b873aaa71fe153346e791b94ae86.gz"
+    },
+    "vacuum_certificate_independent/CHECK_SOURCE_ONLY.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/CHECK_SOURCE_ONLY.py",
+      "bytes": 1904,
+      "sha256": "8be03f5137098eb5ae4ea88cb9031a4b39a3ba6f97ff8e3b65ba6adbd08cc088",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/8be03f5137098eb5ae4ea88cb9031a4b39a3ba6f97ff8e3b65ba6adbd08cc088.gz"
+    },
+    "vacuum_certificate_independent/CONTRACT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/CONTRACT.md",
+      "bytes": 1970,
+      "sha256": "785bc535da04fce31d63a7eafa473ff2bb8399b10e09606e638343571e6f46d6",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/785bc535da04fce31d63a7eafa473ff2bb8399b10e09606e638343571e6f46d6.gz"
+    },
+    "vacuum_certificate_independent/DERIVATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/DERIVATION.md",
+      "bytes": 30625,
+      "sha256": "1ffd740f134bbcfe638b668cb7e6e270d4ddae3c3da60034d3a462c74f683373",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/1ffd740f134bbcfe638b668cb7e6e270d4ddae3c3da60034d3a462c74f683373.gz"
+    },
+    "vacuum_certificate_independent/EXPOSURE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/EXPOSURE.json",
+      "bytes": 2142,
+      "sha256": "dd027a9539db413772b196af330907b1d0f47beeab6769546e68bfc5ba85eed0",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/dd027a9539db413772b196af330907b1d0f47beeab6769546e68bfc5ba85eed0.gz"
+    },
+    "vacuum_certificate_independent/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/FINAL_FREEZE.json",
+      "bytes": 6608,
+      "sha256": "1eef7a686836ec30db706849f4b19305154b87bcba62d4d6eafdcf23c828f2ac",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/1eef7a686836ec30db706849f4b19305154b87bcba62d4d6eafdcf23c828f2ac.gz"
+    },
+    "vacuum_certificate_independent/SOURCE_RECEIPT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/SOURCE_RECEIPT.json",
+      "bytes": 2664,
+      "sha256": "fc3adb33069bd1678855c30576ca0daf3d0eb22bb754e9604e5f2758c1cafb38",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/fc3adb33069bd1678855c30576ca0daf3d0eb22bb754e9604e5f2758c1cafb38.gz"
+    },
+    "vacuum_certificate_independent/history/DERIVATION.before_raw_second_clarification.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/history/DERIVATION.before_raw_second_clarification.md",
+      "bytes": 30273,
+      "sha256": "069f1d19c5f0db47d3161c8c438158226d588d0e5c766b81cacc994f33339871",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/069f1d19c5f0db47d3161c8c438158226d588d0e5c766b81cacc994f33339871.gz"
+    },
+    "vacuum_certificate_independent/history/RAW_SECOND_SCOPE.diff": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/history/RAW_SECOND_SCOPE.diff",
+      "bytes": 1083,
+      "sha256": "f9fb595ebcc67ba1e4c3ba84ae694973c06602c1558aaa2af093ca4dccbdd69e",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/f9fb595ebcc67ba1e4c3ba84ae694973c06602c1558aaa2af093ca4dccbdd69e.gz"
+    },
+    "vacuum_certificate_independent/history/REVISION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/history/REVISION.json",
+      "bytes": 464,
+      "sha256": "87cfd88157c8dcc1533988480adb5778962faf95ba11a6946da097fc2d9dd619",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/87cfd88157c8dcc1533988480adb5778962faf95ba11a6946da097fc2d9dd619.gz"
+    },
+    "vacuum_certificate_independent/record_run.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/record_run.py",
+      "bytes": 1531,
+      "sha256": "0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696.gz"
+    },
+    "vacuum_certificate_independent/runs/capture01/RECEIPT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/capture01/RECEIPT.json",
+      "bytes": 1211,
+      "sha256": "eb059561d4147d115adfb1eedd53b0bb1b9282c553759b01e061c10c72595c74",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/eb059561d4147d115adfb1eedd53b0bb1b9282c553759b01e061c10c72595c74.gz"
+    },
+    "vacuum_certificate_independent/runs/capture01/executed_source.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/capture01/executed_source.py",
+      "bytes": 2990,
+      "sha256": "55732c56e6b79bef62d720f35035c58e7993b873aaa71fe153346e791b94ae86",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/55732c56e6b79bef62d720f35035c58e7993b873aaa71fe153346e791b94ae86.gz"
+    },
+    "vacuum_certificate_independent/runs/capture01/stderr.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/capture01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "vacuum_certificate_independent/runs/capture01/stdout.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/capture01/stdout.txt",
+      "bytes": 2664,
+      "sha256": "fc3adb33069bd1678855c30576ca0daf3d0eb22bb754e9604e5f2758c1cafb38",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/fc3adb33069bd1678855c30576ca0daf3d0eb22bb754e9604e5f2758c1cafb38.gz"
+    },
+    "vacuum_certificate_independent/runs/check01/RECEIPT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check01/RECEIPT.json",
+      "bytes": 1208,
+      "sha256": "ee7d12568d5d4bc0fc1d2c103c88fc264667631432ca4a8140d85ab4bc690c0c",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/ee7d12568d5d4bc0fc1d2c103c88fc264667631432ca4a8140d85ab4bc690c0c.gz"
+    },
+    "vacuum_certificate_independent/runs/check01/executed_source.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check01/executed_source.py",
+      "bytes": 1904,
+      "sha256": "8be03f5137098eb5ae4ea88cb9031a4b39a3ba6f97ff8e3b65ba6adbd08cc088",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/8be03f5137098eb5ae4ea88cb9031a4b39a3ba6f97ff8e3b65ba6adbd08cc088.gz"
+    },
+    "vacuum_certificate_independent/runs/check01/stderr.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "vacuum_certificate_independent/runs/check01/stdout.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check01/stdout.txt",
+      "bytes": 348,
+      "sha256": "2d01d27b1381fa733510f438a6a6463a4ebe1cf1badbabbd18b1968c75cd1d2d",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/2d01d27b1381fa733510f438a6a6463a4ebe1cf1badbabbd18b1968c75cd1d2d.gz"
+    },
+    "vacuum_certificate_independent/runs/check02/RECEIPT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check02/RECEIPT.json",
+      "bytes": 1210,
+      "sha256": "fd87b89e3bc0858cd641471e88948ee1e9a0d1ecd68f57d501600fd38d7ab839",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/fd87b89e3bc0858cd641471e88948ee1e9a0d1ecd68f57d501600fd38d7ab839.gz"
+    },
+    "vacuum_certificate_independent/runs/check02/executed_source.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check02/executed_source.py",
+      "bytes": 1904,
+      "sha256": "8be03f5137098eb5ae4ea88cb9031a4b39a3ba6f97ff8e3b65ba6adbd08cc088",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/8be03f5137098eb5ae4ea88cb9031a4b39a3ba6f97ff8e3b65ba6adbd08cc088.gz"
+    },
+    "vacuum_certificate_independent/runs/check02/stderr.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check02/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "vacuum_certificate_independent/runs/check02/stdout.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/runs/check02/stdout.txt",
+      "bytes": 348,
+      "sha256": "d6d8429511c95662c8c6cf53ed7b1bfb478e2e1e3b677a09ef808db87adc1e71",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/d6d8429511c95662c8c6cf53ed7b1bfb478e2e1e3b677a09ef808db87adc1e71.gz"
+    },
+    "vacuum_certificate_independent/sources/CLAIM_STATUS.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/sources/CLAIM_STATUS.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz"
+    },
+    "vacuum_certificate_independent/sources/DELIVERY.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/sources/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.gz"
+    },
+    "vacuum_certificate_independent/sources/DISCOVERY.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/sources/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7.gz"
+    },
+    "vacuum_certificate_independent/sources/PHYSICS_LOOP_SKILL.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/sources/PHYSICS_LOOP_SKILL.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.gz"
+    },
+    "vacuum_certificate_independent/sources/SCIENCE_WORKFLOW.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/sources/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz"
+    },
+    "vacuum_certificate_independent/sources/chain_scaling_canonical.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/sources/chain_scaling_canonical.md",
+      "bytes": 30252,
+      "sha256": "883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b.gz"
+    },
+    "vacuum_certificate_independent/sources/sharper_moment.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_independent/sources/sharper_moment.md",
+      "bytes": 15982,
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976.gz"
+    },
+    "vacuum_certificate_circuit_check/EMISSION_EXPOSURE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/EMISSION_EXPOSURE.json",
+      "bytes": 1964,
+      "sha256": "72659e2309ef9dacdc45e987d0011f96b72c5dd96a2f4c1e05db96f92789e8ef",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/72659e2309ef9dacdc45e987d0011f96b72c5dd96a2f4c1e05db96f92789e8ef.gz"
+    },
+    "vacuum_certificate_circuit_check/EMISSION_INPUT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/EMISSION_INPUT.json",
+      "bytes": 720,
+      "sha256": "6202f1199ec392a75de23f39d7eb28ad4e18ca59c3a87e0334331e72450e2834",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/6202f1199ec392a75de23f39d7eb28ad4e18ca59c3a87e0334331e72450e2834.gz"
+    },
+    "vacuum_certificate_circuit_check/EMISSION_PRE_RUN_SEAL.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/EMISSION_PRE_RUN_SEAL.json",
+      "bytes": 1300,
+      "sha256": "d02b4f8db6dcf13aec5cd51861a4a54f3c2b50e8f776047007fa0bf706668686",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/d02b4f8db6dcf13aec5cd51861a4a54f3c2b50e8f776047007fa0bf706668686.gz"
+    },
+    "vacuum_certificate_circuit_check/EXPOSURE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/EXPOSURE.json",
+      "bytes": 959,
+      "sha256": "674078bbf0828cb14f75c7a63008a7221f93a33f963873913cb8fdddf146acd7",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/674078bbf0828cb14f75c7a63008a7221f93a33f963873913cb8fdddf146acd7.gz"
+    },
+    "vacuum_certificate_circuit_check/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/FINAL_FREEZE.json",
+      "bytes": 4816,
+      "sha256": "9f3af056ddcb868f869b54964e116d39400bebb29f8baea37a28a64852ac6373",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/9f3af056ddcb868f869b54964e116d39400bebb29f8baea37a28a64852ac6373.gz"
+    },
+    "vacuum_certificate_circuit_check/INPUT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/INPUT.json",
+      "bytes": 746,
+      "sha256": "5a1ebccb723cc2ef5277d75480ef2e339fc5b9ae70ec77e0686f8b9a3b40f99b",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/5a1ebccb723cc2ef5277d75480ef2e339fc5b9ae70ec77e0686f8b9a3b40f99b.gz"
+    },
+    "vacuum_certificate_circuit_check/OWN_CONTROL_SEAL.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/OWN_CONTROL_SEAL.json",
+      "bytes": 1792,
+      "sha256": "ea4f1ba7ea1d9ff0d7d0740d450adb24a82ab0ec3f72153f56299bfa16235d91",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/ea4f1ba7ea1d9ff0d7d0740d450adb24a82ab0ec3f72153f56299bfa16235d91.gz"
+    },
+    "vacuum_certificate_circuit_check/PRE_RUN_PLAN.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/PRE_RUN_PLAN.md",
+      "bytes": 2478,
+      "sha256": "95a41ee90945564581f59c39fbaecfd03fa8cc34d093720b2b1c9c26384f594a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/95a41ee90945564581f59c39fbaecfd03fa8cc34d093720b2b1c9c26384f594a.gz"
+    },
+    "vacuum_certificate_circuit_check/PRE_RUN_SEAL.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/PRE_RUN_SEAL.json",
+      "bytes": 1113,
+      "sha256": "5296d693de98289ef5777a225b65cb8d1b7fc753fa8c64513d9f294e31229d1d",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/5296d693de98289ef5777a225b65cb8d1b7fc753fa8c64513d9f294e31229d1d.gz"
+    },
+    "vacuum_certificate_circuit_check/REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/REPORT.md",
+      "bytes": 13202,
+      "sha256": "cad8399b80adbbdeff5e45c61db5abffcb27c583a556abbd3daceb8f22fd3ca6",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/cad8399b80adbbdeff5e45c61db5abffcb27c583a556abbd3daceb8f22fd3ca6.gz"
+    },
+    "vacuum_certificate_circuit_check/SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/SOURCE_PINS.json",
+      "bytes": 11755,
+      "sha256": "c71a176f3500bdbcefc0ff9848a3f777a9cecb171b2e264253937320d573befb",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/c71a176f3500bdbcefc0ff9848a3f777a9cecb171b2e264253937320d573befb.gz"
+    },
+    "vacuum_certificate_circuit_check/check_circuit.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/check_circuit.py",
+      "bytes": 11203,
+      "sha256": "668f2be08fea81601296b315d92a5fc5382122cfb82277bd5e99ed36cac902cc",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/668f2be08fea81601296b315d92a5fc5382122cfb82277bd5e99ed36cac902cc.gz"
+    },
+    "vacuum_certificate_circuit_check/compare_emitted.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/compare_emitted.py",
+      "bytes": 3473,
+      "sha256": "07ede3e644e593168df17ccb85cbcd3339589e457f5594691d47598d1d71a123",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/07ede3e644e593168df17ccb85cbcd3339589e457f5594691d47598d1d71a123.gz"
+    },
+    "vacuum_certificate_circuit_check/emitted_run_01/LAUNCH.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/emitted_run_01/LAUNCH.json",
+      "bytes": 2332,
+      "sha256": "69af6458c62ed6afa54264f7b4851ee64bc8781184bc8b56e0a6508456c914f7",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/69af6458c62ed6afa54264f7b4851ee64bc8781184bc8b56e0a6508456c914f7.gz"
+    },
+    "vacuum_certificate_circuit_check/emitted_run_01/RECEIPT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/emitted_run_01/RECEIPT.json",
+      "bytes": 4423,
+      "sha256": "e23a1e9d7e69b6fe13f0f05bd5fe71176797328089c3363a026fb50ecc1d1379",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e23a1e9d7e69b6fe13f0f05bd5fe71176797328089c3363a026fb50ecc1d1379.gz"
+    },
+    "vacuum_certificate_circuit_check/emitted_run_01/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/emitted_run_01/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "vacuum_certificate_circuit_check/emitted_run_01/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/emitted_run_01/stdout",
+      "bytes": 1065,
+      "sha256": "999dbbdcf51a9e978c3046b6b053ad66810ef6d20d190032a8b56ce8adbca292",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/999dbbdcf51a9e978c3046b6b053ad66810ef6d20d190032a8b56ce8adbca292.gz"
+    },
+    "vacuum_certificate_circuit_check/inputs/candidate.DERIVATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/inputs/candidate.DERIVATION.md",
+      "bytes": 18184,
+      "sha256": "88f60f60bc08dbb930810b371d404ac0d2efafddcf8ccf71e3bcfebedaa6694d",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/88f60f60bc08dbb930810b371d404ac0d2efafddcf8ccf71e3bcfebedaa6694d.gz"
+    },
+    "vacuum_certificate_circuit_check/inputs/root_emission/CHAIN_LAYOUT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/inputs/root_emission/CHAIN_LAYOUT.md",
+      "bytes": 3902,
+      "sha256": "d8926e72e8b4966885d0f64765c7ca31ec2c42f378b0aaaf6576008f570650e9",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/d8926e72e8b4966885d0f64765c7ca31ec2c42f378b0aaaf6576008f570650e9.gz"
+    },
+    "vacuum_certificate_circuit_check/inputs/root_emission/LAYOUT_AND_EMITTER_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/inputs/root_emission/LAYOUT_AND_EMITTER_FREEZE.json",
+      "bytes": 845,
+      "sha256": "8c09c49e0f2aa9a8289e1b84cf8a46f7e99b56e83f80aea568612bcb456a663a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/8c09c49e0f2aa9a8289e1b84cf8a46f7e99b56e83f80aea568612bcb456a663a.gz"
+    },
+    "vacuum_certificate_circuit_check/inputs/root_emission/emission_v1/RESULT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/inputs/root_emission/emission_v1/RESULT.json",
+      "bytes": 9325,
+      "sha256": "3163b141c2df7ac22571bcb223339f2070613da6e0f8d8e6326b308d439224b8",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/3163b141c2df7ac22571bcb223339f2070613da6e0f8d8e6326b308d439224b8.gz"
+    },
+    "vacuum_certificate_circuit_check/inputs/root_emission/emission_v1/word_M1.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/inputs/root_emission/emission_v1/word_M1.json",
+      "bytes": 32928,
+      "sha256": "137146e229a677df3d07f06c08769220bdea3057e6967b8cba3582e869589e74",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/137146e229a677df3d07f06c08769220bdea3057e6967b8cba3582e869589e74.gz"
+    },
+    "vacuum_certificate_circuit_check/inputs/root_emission/emission_v1/word_M2.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/inputs/root_emission/emission_v1/word_M2.json",
+      "bytes": 142899,
+      "sha256": "e7fef5086c3fe3ab4ff8282ea684570bf36907fa47403193d166f8dd696b0b3e",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e7fef5086c3fe3ab4ff8282ea684570bf36907fa47403193d166f8dd696b0b3e.gz"
+    },
+    "vacuum_certificate_circuit_check/record_emission_run.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/record_emission_run.py",
+      "bytes": 1840,
+      "sha256": "b19555c7602b7ccc01096c96b438f686e5f49636f917eb430b500586bdb8dec6",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/b19555c7602b7ccc01096c96b438f686e5f49636f917eb430b500586bdb8dec6.gz"
+    },
+    "vacuum_certificate_circuit_check/record_run.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/record_run.py",
+      "bytes": 1714,
+      "sha256": "ba235986f71f87b5f965e171ad8f14abbb1accbe402f7a0071dc1d6e52ebf167",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/ba235986f71f87b5f965e171ad8f14abbb1accbe402f7a0071dc1d6e52ebf167.gz"
+    },
+    "vacuum_certificate_circuit_check/run_01/LAUNCH.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/run_01/LAUNCH.json",
+      "bytes": 1404,
+      "sha256": "02114cad25e20136c1a5d9983698995c7aea88bd4be45597fa3a1ec9f435881a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/02114cad25e20136c1a5d9983698995c7aea88bd4be45597fa3a1ec9f435881a.gz"
+    },
+    "vacuum_certificate_circuit_check/run_01/RECEIPT.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/run_01/RECEIPT.json",
+      "bytes": 2570,
+      "sha256": "c4eb9ad86f06e1e1b7a2fe91ef3fd6497762d88cc81250dbec0cdc880d1c7355",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/c4eb9ad86f06e1e1b7a2fe91ef3fd6497762d88cc81250dbec0cdc880d1c7355.gz"
+    },
+    "vacuum_certificate_circuit_check/run_01/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/run_01/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "vacuum_certificate_circuit_check/run_01/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_circuit_check/run_01/stdout",
+      "bytes": 5165,
+      "sha256": "11bd8df0b11c0ccc1c504ad705f724fc2811d2165cb584a1e648ed236514e016",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/11bd8df0b11c0ccc1c504ad705f724fc2811d2165cb584a1e648ed236514e016.gz"
+    },
+    "vacuum_certificate_comparison/EXPOSURE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/EXPOSURE.json",
+      "bytes": 3247,
+      "sha256": "16324af3ddcee860458c9c75387745aaa4517bc92ec55cc5413b1dfc1cf0c1cc",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/16324af3ddcee860458c9c75387745aaa4517bc92ec55cc5413b1dfc1cf0c1cc.gz"
+    },
+    "vacuum_certificate_comparison/FINAL_FREEZE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/FINAL_FREEZE.json",
+      "bytes": 2320,
+      "sha256": "c7c926950084e72d5fc2c7b6201b5b00ffeccc85bff07e6ba7d9046cb9eb3657",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/c7c926950084e72d5fc2c7b6201b5b00ffeccc85bff07e6ba7d9046cb9eb3657.gz"
+    },
+    "vacuum_certificate_comparison/REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/REPORT.md",
+      "bytes": 16427,
+      "sha256": "95ea97ee6ad11583790f31fe28b80ff097c19d635848c8dec60f339b952e2d15",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/95ea97ee6ad11583790f31fe28b80ff097c19d635848c8dec60f339b952e2d15.gz"
+    },
+    "vacuum_certificate_comparison/SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/SOURCE_PINS.json",
+      "bytes": 2904,
+      "sha256": "0840083464e69306992394f2175e95655b8c0054c5a3fd398c7ad6e77da79f95",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/0840083464e69306992394f2175e95655b8c0054c5a3fd398c7ad6e77da79f95.gz"
+    },
+    "vacuum_certificate_comparison/sources/independent_derivation.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/sources/independent_derivation.md",
+      "bytes": 30625,
+      "sha256": "1ffd740f134bbcfe638b668cb7e6e270d4ddae3c3da60034d3a462c74f683373",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/1ffd740f134bbcfe638b668cb7e6e270d4ddae3c3da60034d3a462c74f683373.gz"
+    },
+    "vacuum_certificate_comparison/sources/independent_freeze.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/sources/independent_freeze.json",
+      "bytes": 6608,
+      "sha256": "1eef7a686836ec30db706849f4b19305154b87bcba62d4d6eafdcf23c828f2ac",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/1eef7a686836ec30db706849f4b19305154b87bcba62d4d6eafdcf23c828f2ac.gz"
+    },
+    "vacuum_certificate_comparison/sources/root_chain_layout.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/sources/root_chain_layout.md",
+      "bytes": 3902,
+      "sha256": "d8926e72e8b4966885d0f64765c7ca31ec2c42f378b0aaaf6576008f570650e9",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/d8926e72e8b4966885d0f64765c7ca31ec2c42f378b0aaaf6576008f570650e9.gz"
+    },
+    "vacuum_certificate_comparison/sources/root_derivation.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_comparison/sources/root_derivation.md",
+      "bytes": 18184,
+      "sha256": "88f60f60bc08dbb930810b371d404ac0d2efafddcf8ccf71e3bcfebedaa6694d",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/88f60f60bc08dbb930810b371d404ac0d2efafddcf8ccf71e3bcfebedaa6694d.gz"
+    },
+    "vacuum_certificate_prior_work/REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_prior_work/REPORT.md",
+      "bytes": 17318,
+      "sha256": "f377096028172449af5dc93be1abda978fe6afde5d89386cf7cc328bdcf9b4c2",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/f377096028172449af5dc93be1abda978fe6afde5d89386cf7cc328bdcf9b4c2.gz"
+    },
+    "vacuum_certificate_prior_work/SOURCE_PINS.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_prior_work/SOURCE_PINS.json",
+      "bytes": 20908,
+      "sha256": "c788769855f9630b87463a6704859643a79cd3405f13a08ed3237318fda4ab3a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/c788769855f9630b87463a6704859643a79cd3405f13a08ed3237318fda4ab3a.gz"
+    },
+    "actual_runs/vacuum_chain_emitter_v1/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_chain_emitter_v1/EXECUTION.json",
+      "bytes": 1602,
+      "sha256": "6560a1250282757ecf434005532af71251f3f651794693e2f4cad063be4a96f1",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/6560a1250282757ecf434005532af71251f3f651794693e2f4cad063be4a96f1.gz"
+    },
+    "actual_runs/vacuum_chain_emitter_v1/executed_source.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_chain_emitter_v1/executed_source.py",
+      "bytes": 9889,
+      "sha256": "b59e405789a24ea9289630bc47403cc55cfc6445e1fc329bcaf4a22690a9189a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/b59e405789a24ea9289630bc47403cc55cfc6445e1fc329bcaf4a22690a9189a.gz"
+    },
+    "actual_runs/vacuum_chain_emitter_v1/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_chain_emitter_v1/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "actual_runs/vacuum_chain_emitter_v1/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_chain_emitter_v1/stdout",
+      "bytes": 3289,
+      "sha256": "a522f018635a85ef9e852d465de15e064c3c9c7e86016087a91efbdf7626f94f",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/a522f018635a85ef9e852d465de15e064c3c9c7e86016087a91efbdf7626f94f.gz"
+    },
+    "actual_runs/vacuum_parent_9575/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9575/EXECUTION.json",
+      "bytes": 1216,
+      "sha256": "a7173098f7acaa4170c5b204791c41a13f575ff9ae455a311cca3bbf0987726b",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/a7173098f7acaa4170c5b204791c41a13f575ff9ae455a311cca3bbf0987726b.gz"
+    },
+    "actual_runs/vacuum_parent_9575/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9575/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "actual_runs/vacuum_parent_9575/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9575/stdout",
+      "bytes": 307,
+      "sha256": "6e29f69581dd5d6221889ed773e0a28bc8c21e39a6d15e26fe61a363fd0aed29",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/6e29f69581dd5d6221889ed773e0a28bc8c21e39a6d15e26fe61a363fd0aed29.gz"
+    },
+    "actual_runs/vacuum_parent_9577/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9577/EXECUTION.json",
+      "bytes": 1216,
+      "sha256": "42b8017b0cc8f0a43c5c890bd9fedde199d7d9fbb31580c4aab329fff0de3f1b",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/42b8017b0cc8f0a43c5c890bd9fedde199d7d9fbb31580c4aab329fff0de3f1b.gz"
+    },
+    "actual_runs/vacuum_parent_9577/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9577/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "actual_runs/vacuum_parent_9577/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9577/stdout",
+      "bytes": 315,
+      "sha256": "b2aaa9dc5c377c422e318481c7961e4994175e6608fa30f89175c685aa5a931a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/b2aaa9dc5c377c422e318481c7961e4994175e6608fa30f89175c685aa5a931a.gz"
+    },
+    "actual_runs/vacuum_publication_fetch/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_publication_fetch/EXECUTION.json",
+      "bytes": 1127,
+      "sha256": "99dfacc7cdf903f0aa314413908d972252e5d0495380767566e3c2d33d785eb7",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/99dfacc7cdf903f0aa314413908d972252e5d0495380767566e3c2d33d785eb7.gz"
+    },
+    "actual_runs/vacuum_publication_fetch/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_publication_fetch/stderr",
+      "bytes": 188,
+      "sha256": "bb173e0e2fa575e66cfd8bfb071220f0aea6407fced87b6f3624213b31131d30",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/bb173e0e2fa575e66cfd8bfb071220f0aea6407fced87b6f3624213b31131d30.gz"
+    },
+    "actual_runs/vacuum_publication_fetch/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_publication_fetch/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "actual_runs/vacuum_open_pr_inventory/EXECUTION.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_open_pr_inventory/EXECUTION.json",
+      "bytes": 1265,
+      "sha256": "340e306d5ed6d863723386aad107709f68b082c5ce07f3f7e88441e0c8b65fa1",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/340e306d5ed6d863723386aad107709f68b082c5ce07f3f7e88441e0c8b65fa1.gz"
+    },
+    "actual_runs/vacuum_open_pr_inventory/stderr": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_open_pr_inventory/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "actual_runs/vacuum_open_pr_inventory/stdout": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_open_pr_inventory/stdout",
+      "bytes": 1985,
+      "sha256": "ee95545cdf99858491b9c34c0161e397b11825dcf9399b1343949c961f810ed0",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/ee95545cdf99858491b9c34c0161e397b11825dcf9399b1343949c961f810ed0.gz"
+    },
+    "recorders/root_run.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.gz"
+    },
+    "recorders/publication_common.py": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/common.py",
+      "bytes": 3127,
+      "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b.gz"
+    },
+    "premises/sharper_de7.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_preparation_moment_block_independent/DERIVATION.md",
+      "bytes": 15982,
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976.gz"
+    },
+    "premises/chain_79d.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_multi_port_chain_placement/DERIVATION.md",
+      "bytes": 20897,
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff.gz"
+    },
+    "premises/local_defect_c163.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_defect_preparation_candidate/DERIVATION.md",
+      "bytes": 10134,
+      "sha256": "c163db2da7ea4a26e8c4de0f097e645374e11485494c295d457e0a229c030a10",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/c163db2da7ea4a26e8c4de0f097e645374e11485494c295d457e0a229c030a10.gz"
+    },
+    "prior_work_primary/axioms/MINIMAL_AXIOMS_2026-06-29.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753.gz"
+    },
+    "prior_work_primary/binary_K/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 49402,
+      "sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e.gz"
+    },
+    "prior_work_primary/neutral/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 44806,
+      "sha256": "2722b030adb8b4b4acd061ec252ba9de819e7b26b055070bf1ef1ba14e14a403",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/2722b030adb8b4b4acd061ec252ba9de819e7b26b055070bf1ef1ba14e14a403.gz"
+    },
+    "prior_work_primary/native_Gibbs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md",
+      "bytes": 20957,
+      "sha256": "e62de55f454bc3b57ffacad7aa770fd85fcfed747786553985ffe01cee680878",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/e62de55f454bc3b57ffacad7aa770fd85fcfed747786553985ffe01cee680878.gz"
+    },
+    "prior_work_primary/C240/MEASUREMENT_FEEDFORWARD_SQUARE_PYRAMID_PREPARATION_CYCLE240_NOTE_2026-07-17.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/archive/notes/docs/work_history/repo/review_feedback/MEASUREMENT_FEEDFORWARD_SQUARE_PYRAMID_PREPARATION_CYCLE240_NOTE_2026-07-17.md",
+      "bytes": 27558,
+      "sha256": "fc8acdba1ea7d4552f32ed3ab72540c415696ba0c05c5187e6b9d7f74a8021ee",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/fc8acdba1ea7d4552f32ed3ab72540c415696ba0c05c5187e6b9d7f74a8021ee.gz"
+    },
+    "prior_work_primary/C279/LOCAL_INSTRUMENT_TO_RECORD_CLOSE_TOURNAMENT_CYCLE279_NOTE_2026-07-17.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/archive/notes/docs/work_history/repo/review_feedback/LOCAL_INSTRUMENT_TO_RECORD_CLOSE_TOURNAMENT_CYCLE279_NOTE_2026-07-17.md",
+      "bytes": 29265,
+      "sha256": "de39729d0f845994e04dd0b417ac7d05f90be14790c47d2183d7cb6ae24cd1c1",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/de39729d0f845994e04dd0b417ac7d05f90be14790c47d2183d7cb6ae24cd1c1.gz"
+    },
+    "prior_work_primary/local_defect/DERIVATION.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_defect_preparation_candidate/DERIVATION.md",
+      "bytes": 10134,
+      "sha256": "c163db2da7ea4a26e8c4de0f097e645374e11485494c295d457e0a229c030a10",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/c163db2da7ea4a26e8c4de0f097e645374e11485494c295d457e0a229c030a10.gz"
+    },
+    "prior_work_primary/local_defect_acceptance/LOCAL_DEFECT_PREPARATION_ROOT_ACCEPTANCE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/LOCAL_DEFECT_PREPARATION_ROOT_ACCEPTANCE.json",
+      "bytes": 2322,
+      "sha256": "1749cddfe755b21787856459bad410c3b5a30713356b08a254cb833784e2169d",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/1749cddfe755b21787856459bad410c3b5a30713356b08a254cb833784e2169d.gz"
+    },
+    "prior_work_primary/local_defect_acceptance_read_copy/LOCAL_DEFECT_ROOT_ACCEPTANCE.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_preparation_moment_block_comparison_review/archive/premises/LOCAL_DEFECT_ROOT_ACCEPTANCE.json",
+      "bytes": 2322,
+      "sha256": "1749cddfe755b21787856459bad410c3b5a30713356b08a254cb833784e2169d",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/1749cddfe755b21787856459bad410c3b5a30713356b08a254cb833784e2169d.gz"
+    },
+    "prior_work_primary/record_window/AUTONOMOUS_FINITE_RECORD_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_FINITE_RECORD_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 47425,
+      "sha256": "36a823ad3ca6735cb0d5f7fb60b0aee1a53d101396c74a4eb0ddbaf252fb7913",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/36a823ad3ca6735cb0d5f7fb60b0aee1a53d101396c74a4eb0ddbaf252fb7913.gz"
+    },
+    "prior_work_primary/fixed_background/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42611,
+      "sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0.gz"
+    },
+    "prior_work_primary/autonomous_clock/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 44751,
+      "sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5.gz"
+    },
+    "prior_work_primary/moment_note/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f.gz"
+    },
+    "prior_work_primary/chain_scaling/CHAIN_PREPARATION_MOMENT_SCALING_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CHAIN_PREPARATION_MOMENT_SCALING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 30252,
+      "sha256": "883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b.gz"
+    },
+    "prior_work_primary/open_reset/RECORD_OPEN_SYSTEM_RESET_CHANNEL_INTERFACE_2026-06-05.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RECORD_OPEN_SYSTEM_RESET_CHANNEL_INTERFACE_2026-06-05.md",
+      "bytes": 4737,
+      "sha256": "205f93b32a37ec06f6461ff0214b012c2baed2ed46351c1b512f4d2f3bcc989c",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/205f93b32a37ec06f6461ff0214b012c2baed2ed46351c1b512f4d2f3bcc989c.gz"
+    },
+    "prior_work_primary/sink_reset/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "bytes": 3862,
+      "sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304.gz"
+    },
+    "prior_work_primary/cadence/READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+      "bytes": 11579,
+      "sha256": "a5cee2bc3d8309324aa78f88b0382aa2f370d5e6f2224b4babfeccf468bdd281",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/a5cee2bc3d8309324aa78f88b0382aa2f370d5e6f2224b4babfeccf468bdd281.gz"
+    },
+    "prior_work_primary/C800/FULL_PHYSICAL_LIVE_BANK_TRANSFER_RESET_RECURRENT_G_CYCLE800_BOUNDED_THEOREM_NOTE_2026-07-30.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FULL_PHYSICAL_LIVE_BANK_TRANSFER_RESET_RECURRENT_G_CYCLE800_BOUNDED_THEOREM_NOTE_2026-07-30.md",
+      "bytes": 13711,
+      "sha256": "3f4b3e0787bf435a20d677696c645807758f1d7a65e695db14467b3a463a6d30",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/3f4b3e0787bf435a20d677696c645807758f1d7a65e695db14467b3a463a6d30.gz"
+    },
+    "prior_work_primary/imaginary_time/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "bytes": 11206,
+      "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07.gz"
+    },
+    "prior_work_primary/archive_lock_screen/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "bytes": 50579,
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a.gz"
+    },
+    "prior_work_primary/C278_screen/CONNECTED_EDGE_SAME_CODE_LOCAL_INSTRUMENT_CYCLE278_NOTE_2026-07-17.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/work_history/repo/review_feedback/CONNECTED_EDGE_SAME_CODE_LOCAL_INSTRUMENT_CYCLE278_NOTE_2026-07-17.md",
+      "bytes": 25558,
+      "sha256": "947a98e2b1fd07b02891269286b71d3192d5e4bb1a8350591a71cd4ea09f1966",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/947a98e2b1fd07b02891269286b71d3192d5e4bb1a8350591a71cd4ea09f1966.gz"
+    },
+    "prior_work_primary/old_route_report/REPORT.md": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_preparation_next_route/REPORT.md",
+      "bytes": 23933,
+      "sha256": "a7041d8ada95360a0c8720d1fcc3948b381787edcb2eeab1d72b024d0eebee33",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/a7041d8ada95360a0c8720d1fcc3948b381787edcb2eeab1d72b024d0eebee33.gz"
+    },
+    "prior_work_primary/old_route_index/SOURCE_INDEX.json": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_preparation_next_route/SOURCE_INDEX.json",
+      "bytes": 12523,
+      "sha256": "03723a7083e41e75d8434bb0881830b8a3e261caf690f54d51ad254a098ecefd",
+      "stored_path": ".claude/science/physics-loops/toe-vacuum-preparation-certificate-20261014/archive/03723a7083e41e75d8434bb0881830b8a3e261caf690f54d51ad254a098ecefd.gz"
+    }
+  }
+}

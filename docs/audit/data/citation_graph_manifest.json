@@ -1,6 +1,6 @@
 {
- "edge_count": 16060,
- "node_count": 7120,
+ "edge_count": 16068,
+ "node_count": 7123,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5882,6 +5882,10 @@
    "deps_hash": "7cfaf5ef38ff",
    "out_degree": 7
   },
+  "dyadic_auxiliary_number_filter_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "399fae0391b6",
+   "out_degree": 2
+  },
   "dyadic_even_refinement_bounded_theorem_note_2026-10-12": {
    "deps_hash": "c6cb357c79e6",
    "out_degree": 5
@@ -8761,6 +8765,10 @@
   "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
    "deps_hash": "7b79e2bc121e",
    "out_degree": 3
+  },
+  "heralded_auxiliary_vacuum_preparation_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "399fae0391b6",
+   "out_degree": 2
   },
   "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17": {
    "deps_hash": "df15e3194fcf",
@@ -12469,6 +12477,10 @@
   "input_distribution_dependence_law_cycle975_bounded_theorem_note_2026-08-10": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "installed_background_auxiliary_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "dcaed0b9908a",
+   "out_degree": 4
   },
   "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "4af4136b6493",

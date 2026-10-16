@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/installed_background_auxiliary_preparation_2026_10_15.py
+runner_sha256: e0779bd7b59335f9793ae3e1ad56f5777608d8303653494af6e4a6cee4c8190f
+input_fingerprint_sha256: 454b79d567ed93da97bccb387a141caf1f613519a71e21f6a29101bc0992b97d
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"complete_proofs": 4, "computed_recurrence_certificates": 0, "decoded_originals": 204, "limits": "Supplied finite carrier, K data, control, purity, timing, calibration and reader contracts. No native realization, practical recurrence or retained audit.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Identity/interval verification only. Analytic derivations and selective checks are archived evidence; this runner does not prove their mathematics."}
+per_element: supplied full coherent or complete-output error contracts
+per_site: literal ordinary-neighbor gates and explicit eligible identity extension
+per_mode: no physical energy or continuum-mode identification
+per_block: full reference and both binary outcomes; actual success normalization
+lattice_wide: sufficient finite-M family resources; complete recurrence wait charged
+
+----- stderr -----
+

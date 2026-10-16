@@ -1,0 +1,79 @@
+{
+  "utc": "2026-10-14T23:15:44.442427+00:00",
+  "science_branch": "physics-loop/toe-vacuum-preparation-certificate-20261014",
+  "science_head": "6708b30b3ae16610f7a5061301c38adc356aff75",
+  "science_tree": "99fe389c42c712e0f57964375beefc4b4ee7b1c4",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "actual_parent_observations": [
+    {
+      "actual": {
+        "baseRefName": "physics-loop/toe-multi-port-global-20261014",
+        "headRefName": "physics-loop/toe-preparation-moments-20261014",
+        "headRefOid": "84d28d386cf8d8dbbdd4506387ad18296161fe53",
+        "isDraft": false,
+        "number": 9575,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9575"
+      },
+      "observed_utc": "2026-10-14T23:13:07.596174+00:00",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9575/EXECUTION.json",
+        "bytes": 1216,
+        "sha256": "a7173098f7acaa4170c5b204791c41a13f575ff9ae455a311cca3bbf0987726b"
+      }
+    },
+    {
+      "actual": {
+        "baseRefName": "physics-loop/toe-preparation-moments-20261014",
+        "headRefName": "physics-loop/toe-chain-preparation-scaling-20261014",
+        "headRefOid": "6708b30b3ae16610f7a5061301c38adc356aff75",
+        "isDraft": false,
+        "number": 9577,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9577"
+      },
+      "observed_utc": "2026-10-14T23:13:07.590860+00:00",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/vacuum_parent_9577/EXECUTION.json",
+        "bytes": 1216,
+        "sha256": "42b8017b0cc8f0a43c5c890bd9fedde199d7d9fbb31580c4aab329fff0de3f1b"
+      }
+    }
+  ],
+  "canonical_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CHAIN_PREPARATION_MOMENT_SCALING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 30252,
+      "sha256": "883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b"
+    }
+  ],
+  "exact_parent_clauses": [
+    {
+      "alias": "premises/sharper_de7.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 22794,
+      "end": 38776,
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976"
+    },
+    {
+      "alias": "premises/chain_79d.md",
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "start": 39056,
+      "end": 59953,
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff"
+    }
+  ],
+  "conditional_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/vacuum_certificate_candidate/ROOT_ACCEPTANCE.json",
+    "bytes": 3488,
+    "sha256": "3795816f377f34b502fec675cbd167b481f051c978161cad38ef1e820f25c3f8"
+  },
+  "no_new_pr_yet": true,
+  "no_science_merge": true
+}

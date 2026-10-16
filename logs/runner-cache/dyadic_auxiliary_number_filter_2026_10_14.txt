@@ -1,0 +1,242 @@
+===== runner cache v1 =====
+runner: scripts/dyadic_auxiliary_number_filter_2026_10_14.py
+runner_sha256: 2aa4187873f9d5b2d4f944a343ecb6d1c471b740f5a2bed734ecd531f0dbcdab
+input_fingerprint_sha256: ffd19c60c0f72156828141e53a1f0625560559e89ea18f12142f31715e7223d3
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+BEGIN_SELECTED_N4_QUANTUM_CONTROL
+{
+  "all_actual_outcomes": [
+    {
+      "b_little_endian": "+++",
+      "mean": 21.46977768358689,
+      "mean_unnormalized": 12.883402651696635,
+      "second_unnormalized": 315.53506209562545,
+      "vacuum_weight": 0.5999999999999996,
+      "variance": 64.87771620126284,
+      "weight": 0.6000715443618997
+    },
+    {
+      "b_little_endian": "-++",
+      "mean": 37.4402195942594,
+      "mean_unnormalized": 3.125084634728517,
+      "second_unnormalized": 123.69314273351023,
+      "vacuum_weight": 0.0,
+      "variance": 80.14131835952776,
+      "weight": 0.08346865132189761
+    },
+    {
+      "b_little_endian": "+-+",
+      "mean": 53.43905433767908,
+      "mean_unnormalized": 3.8810896554670187,
+      "second_unnormalized": 213.3977302963668,
+      "vacuum_weight": 0.0,
+      "variance": 82.55901257795722,
+      "weight": 0.0726264658603908
+    },
+    {
+      "b_little_endian": "--+",
+      "mean": 37.443485303694075,
+      "mean_unnormalized": 3.225232775383771,
+      "second_unnormalized": 127.67147791007062,
+      "vacuum_weight": 0.0,
+      "variance": 80.19318671272367,
+      "weight": 0.08613601936958519
+    },
+    {
+      "b_little_endian": "++-",
+      "mean": 85.42720078094447,
+      "mean_unnormalized": 4.260553159002226,
+      "second_unnormalized": 367.18780351164446,
+      "vacuum_weight": 0.0,
+      "variance": 64.5768517558281,
+      "weight": 0.04987349602999742
+    },
+    {
+      "b_little_endian": "-+-",
+      "mean": 37.595969344137536,
+      "mean_unnormalized": 0.5643785762988371,
+      "second_unnormalized": 22.532496849295033,
+      "vacuum_weight": 0.0,
+      "variance": 87.54099432545013,
+      "weight": 0.015011677744833637
+    },
+    {
+      "b_little_endian": "+--",
+      "mean": 53.46014951602121,
+      "mean_unnormalized": 4.13542430991551,
+      "second_unnormalized": 227.51450386361446,
+      "vacuum_weight": 0.0,
+      "variance": 83.17599987688754,
+      "weight": 0.07735527018449855
+    },
+    {
+      "b_little_endian": "---",
+      "mean": 37.45987902119915,
+      "mean_unnormalized": 0.5790126722993194,
+      "second_unnormalized": 22.9334392513219,
+      "vacuum_weight": 0.0,
+      "variance": 80.46222700499311,
+      "weight": 0.015456875126896346
+    }
+  ],
+  "amplitudes": {
+    "a1": 0.005047140927870945,
+    "a2": 0.010872798454365805,
+    "alpha": 0.031214411305209626
+  },
+  "countermodels": {
+    "binary_Q_failure_full_reference_trace_witness": 1.0,
+    "omitted_j0_false_success_on_number_one": 0.4267766952966369
+  },
+  "fixture": {
+    "Delta": 16,
+    "H_L_commutator_on_input_norm": 0.03872983346207415,
+    "H_norm_certificate": 0.6,
+    "angle_error": 0.015625,
+    "k": 3,
+    "n": 4,
+    "scalar": 21.440191387559807
+  },
+  "input": {
+    "eta": 0.6999999999999997,
+    "q": 0.40000000000000013
+  },
+  "moments": {
+    "E1_bound": 15.067563857002135,
+    "E2_bound": 1727.5501134120614,
+    "accepted": {
+      "mean": 21.46977768358689,
+      "mean_unnormalized": 12.883402651696635,
+      "second_unnormalized": 315.53506209562545,
+      "variance": 64.87771620126284,
+      "weight": 0.6000715443618997
+    },
+    "baseline": {
+      "mean": 21.440191387559807,
+      "mean_unnormalized": 21.4401913875598,
+      "second_unnormalized": 523.8218067351936,
+      "variance": 64.1400000000001,
+      "weight": 0.9999999999999997
+    },
+    "missing_PQ_mean": 0.023308966011590826,
+    "missing_PQ_variance": 0.3721075121446802,
+    "observed_centered_second_error": 415.7837927557125,
+    "observed_mean_error": 11.213987047232052,
+    "observed_variance_error": 290.0302872602242,
+    "retained": {
+      "mean": 32.65417843479186,
+      "mean_unnormalized": 32.65417843479183,
+      "second_unnormalized": 1420.465656511449,
+      "variance": 354.1702872602243,
+      "weight": 0.9999999999999992
+    },
+    "success_PQ_dephased_wrong_comparator": {
+      "mean": 21.4464687175753,
+      "mean_unnormalized": 12.86941560446458,
+      "second_unnormalized": 314.71149940070853,
+      "variance": 64.50560868911816,
+      "weight": 0.6000715443618997
+    },
+    "variance_bound": 1954.5815939968984
+  },
+  "residuals": {
+    "actual_vacuum_immunity": 1.1102230246251565e-16,
+    "completeness": 1.1102230246251565e-15,
+    "ideal_number_pinching": 4.440892098500626e-16,
+    "ideal_success_projector": 1.7938686119852001e-16,
+    "old_reference_marginal": 2.220446049250313e-16,
+    "physical_vs_product_kraus": 6.753223014464259e-16,
+    "population_preservation": 2.220446049250313e-16
+  },
+  "scope": "One selected floating n=4 full auxiliary/old/reference fixture; not all-M proof, apparatus simulation, audit or error-model enlargement.",
+  "success": {
+    "conditional_eta": 0.0003923331259682432,
+    "conditional_q": 0.00011922638654056693,
+    "false_acceptance_mass": 7.154436190008681e-05,
+    "probability": 0.6000715443618997
+  }
+}
+CONTROL_SCOPE: one fixed n=4 fixture, no sweep or parent code
+CHANNEL_SCOPE: every X outcome retained; arbitrary-reference theorem remains analytic
+ERROR_SCOPE: diagonal angles only; exact clean pointers/readout and no drift
+MOMENT_SCOPE: actual literal one-cell K including scalar and noncommuting H
+STATUS: selected controls completed; no theorem or audit verdict inferred
+END_SELECTED_N4_QUANTUM_CONTROL
+BEGIN_SELECTED_M5_ROUTING_CONTROL
+{
+  "M": 5,
+  "coherent_gate_count": 2205,
+  "coordinate_sum": 90,
+  "correct_phase_label_mismatches": 0,
+  "correct_return_mismatches": 0,
+  "counts": {
+    "PHASE": 100,
+    "PREP_PLUS": 5,
+    "READ_X": 5,
+    "SWAP": 2100
+  },
+  "deleted_reverse_final_mismatches": [
+    [
+      [
+        6,
+        3,
+        3
+      ],
+      [
+        6,
+        4,
+        3
+      ]
+    ],
+    [
+      [
+        6,
+        4,
+        3
+      ],
+      [
+        6,
+        3,
+        3
+      ]
+    ]
+  ],
+  "deleted_reverse_phase_label_mismatch_count": 19,
+  "k": 5,
+  "max_path_length": 16,
+  "maximum_site_gate_incidence": 400,
+  "nominal_coherent_action_over_pi": [
+    2140,
+    1
+  ],
+  "phase_action_over_pi": [
+    155,
+    4
+  ],
+  "scope": "One exact integer/Fraction monomial-word control; not an all-M proof, amplitude simulation or active-K dynamics test.",
+  "sum_path_lengths": 1150,
+  "total_emitted_records": 2210
+}
+ARTIFACT_IDENTITIES
+{"bytes": 100, "name": "CORRECT_LABEL_RESULT.json", "sha256": "a04037e9b77e6f4c00f7d317e10398e975c63bca11372d7ae0c672e73c257617"}
+{"bytes": 53739, "name": "DELETED_RETURN_RESULT.json", "sha256": "d6c14f1fd5be414315c6fe4c8f8b21e69716dc1bcb4eb8b085d8a81405e62b46"}
+{"bytes": 245079, "name": "DELETED_RETURN_WORD.jsonl", "sha256": "c1308b2399f74e057a2c1be3b96e232a52505557959ba3594a958635bad1e8aa"}
+{"bytes": 2555, "name": "INVENTORY.json", "sha256": "471a2ea1884d894d8b3db2934e5377d63256d98df5e5d0f87605dd81a4c8dc9d"}
+{"bytes": 72415, "name": "PATHS.json", "sha256": "b0ebcd6e512e17c66d26729926f6fab920128b77859ced7e7e364c3bc1087609"}
+{"bytes": 5657, "name": "SITE_USES.json", "sha256": "8d7856f444af09de87b73035a3fdc65cc2d0d6c74cdcd5dbb80e46e13c55a966"}
+{"bytes": 922, "name": "SUMMARY.json", "sha256": "46cc3d8e664329ff59e3ace8547d2038042bae674899577ca5bf91d545b7e1fc"}
+{"bytes": 245195, "name": "WORD.jsonl", "sha256": "e834df10c6d25a0421ca895a650dfca572c8d1d2065bf758086633d35e3db590"}
+END_SELECTED_M5_ROUTING_CONTROL
+{"complete_proofs": 4, "decoded_originals": 92, "limits": "All-M operator/moment estimates and active-background prices remain analytic. Restricted phase errors, full input/readout contracts and growing resource assumptions remain explicit. No apparatus realization, optimum or retained audit.", "result": "two_scoped_controls_and_source_binding_completed", "scientific_controls": ["floating n4 complete-outcome/literal-K/reference fixture", "integer/Fraction M5 ordinary-NN route/label fixture"], "whole_selected_layout_outputs_compared": 8}
+per_element: exact specified phase family; selected floating matrix/control residuals
+per_site: ordinary-neighbor routed controls, eligible region and returned dirty factors
+per_mode: no continuum or physical-mode identification
+per_block: all outcomes and reference factors retained; successful branches use actual normalization
+lattice_wide: finite M family with explicit resources; all-M estimates are analytical
+
+----- stderr -----
+

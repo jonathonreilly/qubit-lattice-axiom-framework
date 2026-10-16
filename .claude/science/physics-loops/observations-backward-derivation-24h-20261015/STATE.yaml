@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "Conditional ringdown/action inverse published; preparation bridge next",
+  "phase": "Preparation bridge checked; scalar endpoint-normalization route next",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T05:55:17.727940+00:00",
+  "updated_at": "2026-10-16T06:18:03.328311+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -14,11 +14,11 @@
   "delivery": "milestone",
   "checkpoint_minutes": 30,
   "block": "common-action reconstruction across environments",
-  "route": "calibrated dynamic stiffness and clamped ringdown -> coefficient functions -> independent moving-history test",
+  "route": "measured preparation -> conditional rest response; return to scalar normalization observations",
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Personally derive the nonstationary response about an observed residual hidden ringdown and test whether measured preparation can replace the rest-preparation premise. Freeze reconstructed coefficient functions before independent moving-history controls. Keep the quadratic one-mode class, physical force/coordinate/time calibration, finite-band inference and empirical applicability explicit; this milestone has not derived them.",
+  "next_action": "Return to the actual scalar-field normalization gap. Personally derive what tensor-wave amplitude transport can identify across measured environments, retaining source generation, detector calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile or call a toy oscillator a gravity test.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -136,31 +136,14 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T05:47:14.751169+00:00",
+      "time": "2026-10-16T05:56:54Z",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "open_pr_count": 66,
-      "inventory_sha256": "d80edd4ca0ce3015d34a9856027a9008e7ae561108e6f527f09488bdcb0d416c",
-      "new_pr_9636": {
-        "head": "cff01f124387b7558213de04b741e85dcd59958f",
-        "sources": [
-          {
-            "path": "docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
-            "sha256": "e83d64a4ec32dfc8405ba850947f69a46985c745e2461574ca704d31ed91246b",
-            "read_scope": "first65lines, declared statement/premises; not full proof review"
-          },
-          {
-            "path": "docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md",
-            "sha256": "89c7d05dc3aada5476226343e019f853bd7dc30dfa68d0f052a2a3b9762a1b86",
-            "read_scope": "first65lines, declared statement/premises; not full proof review"
-          },
-          {
-            "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
-            "sha256": "733a32be7b4961558f478e2828be7d075771dfae3bfba65a71879264da622039",
-            "read_scope": "first65lines, declared statement/premises; not full proof review"
-          }
-        ],
-        "disposition": "Background only; no premise or audit status adopted. These unitary-tick/formation hypotheses are distinct from calibrated force-response inversion."
-      },
+      "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+      "open_pr_count": 67,
+      "inventory_sha256": "c8a49180539ea73a851d0f5bfe1d72b7257b0952e26dc127d609b6149af5e41c",
+      "new_own_pr": 9637,
+      "background_9636_head": "02d5c9dcb3cc27f071b6bcbca6f51e22b7737d65",
+      "read_scope": "Complete metadata delta and30linePR9636 note delta read; existing hypotheses not adopted, no full new proof review.",
       "other_author_work_modified": false
     }
   },
@@ -181,10 +164,10 @@
   ],
   "milestone_status": "PR9628,PR9632,PR9634,PR9637 published and attached; shared integrated landing gates pending; no merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T05:55:17.727940+00:00",
+    "time": "2026-10-16T06:18:03.328311+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Published source-bound conditional action reconstruction and preserved failed mutation/control correction",
+    "checkpoint_scope": "Conditional preparation bridge, signed-weight cost and preserved transition counterexample",
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
@@ -707,5 +690,37 @@
       "physical identification with the scalar or quantum program"
     ],
     "next_action": "Personally derive the nonstationary response about an observed residual hidden ringdown and test whether measured preparation can replace the rest-preparation premise. Freeze reconstructed coefficient functions before independent moving-history controls. Keep the quadratic one-mode class, physical force/coordinate/time calibration, finite-band inference and empirical applicability explicit; this milestone has not derived them."
+  },
+  "preparation_bridge_checkpoint": {
+    "time": "2026-10-16T06:18:03.328311+00:00",
+    "author": "/root personally",
+    "source": "PREPARATION_BRIDGE_v2.md",
+    "source_sha256": "ecb67821847f062a6c13632826beb2a37d4f91d7b72eca4aeb823626decb5d77",
+    "verification_receipt": "PREPARATION_ROOT_VERIFICATION_v1.json",
+    "primary_controls": [
+      133,
+      27
+    ],
+    "focused_independent_checks": [
+      127,
+      17
+    ],
+    "verified_bindings": 34,
+    "result": "Within the supplied affine-hidden/quadratic-force class, measured clamped prefixes and signed moment weights synthesize an exact finite-drive rest-start force functional without choosing hidden initial states. General-k nonstationary tangent and a sharp annulus noise-amplification lower bound are checked.",
+    "retired_conditional_import": "Actual equilibrium reset for this particular force functional, when a calibrated feasible preparation design and continuous no-kick transition are available.",
+    "surviving_imports": [
+      "one-mode quadratic action and dissipation class",
+      "common input history and fixed model",
+      "calibrated force/pole/phase/time and observable prefix",
+      "continuous prefix-to-drive hidden state with no unobserved kick",
+      "finite-band and derivative-error certificates",
+      "physical scalar/quantum identification and absolute scale"
+    ],
+    "failure": "Baseline subtraction is not a rest response; fixed nonzero amplitude phase cycling cannot remove arbitrary quadratic preparation. An unobserved common kick preserves polynomial closure but biases the inferred origin.",
+    "error_cost": "L1 >= (rmax^2+rmin^2)/(rmax^2-rmin^2), sharp over feasible designs; deterministic worst-case error, not variance.",
+    "data_roles": "Frozen synthetic model/development history plus reserved preparations and histories; no measured dataset or independent empirical test.",
+    "prior_art": "Known quadratic-output lifting and polynomial interpolation; Berkane et al. arXiv2312.10684v1 abstract/introduction and displayed closure/lifting equations inspected, not full observer theorem.",
+    "delivery": "commits-only support, no new PR",
+    "next_action": "Return to the actual scalar-field normalization gap. Personally derive what tensor-wave amplitude transport can identify across measured environments, retaining source generation, detector calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile or call a toy oscillator a gravity test."
   }
 }

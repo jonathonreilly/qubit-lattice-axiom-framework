@@ -1,0 +1,157 @@
+{
+  "time": "2026-10-16T06:18:03.328311+00:00",
+  "root_read_complete_independent_proof_code_results": true,
+  "manifest": "independent_preparation_bridge/final_bindings_v2.json",
+  "manifest_sha256": "4c3554b4cd1029a3ff7e69c42ebb4ec93c254f9cd0a3b01351788346c867cf5d",
+  "verified_bindings": [
+    {
+      "path": "PREPARATION_BRIDGE_v2.md",
+      "sha256": "ecb67821847f062a6c13632826beb2a37d4f91d7b72eca4aeb823626decb5d77"
+    },
+    {
+      "path": "check_preparation_cost_v1.py",
+      "sha256": "4fc26c28a85da9b7fa1afa1a8016799b76de0fb989d5e6a44b3081efad436e6e"
+    },
+    {
+      "path": "PREPARATION_COST_CONTROLS_v1.json",
+      "sha256": "1ba3fd7381f1214fb5fc65a4e6fcd7270bda1d271c51b75aafcaf03a83e43baf"
+    },
+    {
+      "path": "PREPARATION_BRIDGE_CONTROLS_v1.json",
+      "sha256": "7d27d26071e40460990731a869d99615a3a887ce9799054f74963c89692241c9"
+    },
+    {
+      "path": "PREPARATION_BRIDGE_v1.md",
+      "sha256": "c7039b5a4b1335e39f679b4f33f22c576d68b93fe76906f5bdae539359d23d4e"
+    },
+    {
+      "path": "PREPARATION_BRIDGE_PLAN_v1.json",
+      "sha256": "9d9e84115a74243a08f3c4ce41f71858b457037553cd8f30b6d00e3049c6201f"
+    },
+    {
+      "path": "check_preparation_bridge_v1.py",
+      "sha256": "e874f3d7f8822bd7817754502d5187dc7ed2c2ae31f3945208ecc5ee62b4fd7e"
+    },
+    {
+      "path": "PREPARATION_BRIDGE_CONTROLS_v1.json",
+      "sha256": "7d27d26071e40460990731a869d99615a3a887ce9799054f74963c89692241c9"
+    },
+    {
+      "path": "independent_preparation_bridge/independent_cost_stdout.json",
+      "sha256": "cbb749159c906c4d8b2954b10be9c11c94609a7fee8a8d328a8126219c3d5863"
+    },
+    {
+      "path": "independent_preparation_bridge/annulus_derivation.md",
+      "sha256": "2ff0f017b273273a5b674ec6806b9a6cf9df9af2861fde4b98bf4994e243c9b9"
+    },
+    {
+      "path": "independent_preparation_bridge/transition_counterexample_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent_preparation_bridge/final_bindings_v1.json",
+      "sha256": "ac3953401a9e96f67787850e4f3dfedd3ec43574f9688247b7a6204fb0440f38"
+    },
+    {
+      "path": "independent_preparation_bridge/check.py",
+      "sha256": "386cce005837b532a01abab47fd8ffdd2c22796be01dac24cf08fd4bb8786963"
+    },
+    {
+      "path": "independent_preparation_bridge/execution_receipts.json",
+      "sha256": "e0e2490bcc012be92a7666be85186b6a97efda152852ff3dfb3c03c1950aeaa7"
+    },
+    {
+      "path": "independent_preparation_bridge/frozen_sources.json",
+      "sha256": "1fe1f9588017a85a5a6987b7ce8144253339ae7fe0995e1d15a4f4570b747bed"
+    },
+    {
+      "path": "independent_preparation_bridge/author_cost_stdout.json",
+      "sha256": "1ba3fd7381f1214fb5fc65a4e6fcd7270bda1d271c51b75aafcaf03a83e43baf"
+    },
+    {
+      "path": "independent_preparation_bridge/note_v1_v2.diff",
+      "sha256": "c049df4458cd8a4d1834561c8adbfcf94c8c1891e99b2330b9a146afda46af7b"
+    },
+    {
+      "path": "independent_preparation_bridge/independent_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent_preparation_bridge/author_cost_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent_preparation_bridge/comparison_v2.json",
+      "sha256": "c64528a451319515e34608b73dd14adaddb6c410b853ac792bafd6da4075e1b1"
+    },
+    {
+      "path": "independent_preparation_bridge/transition_counterexample.py",
+      "sha256": "0e8f502d411f70c9a6377b8d858b3533d9d529e5434a99576771933d4bf6809b"
+    },
+    {
+      "path": "independent_preparation_bridge/comparison.json",
+      "sha256": "6014f59714dbca2ac58343b2575d91a503e7024d5cb4d390b3a4286bb72d4f86"
+    },
+    {
+      "path": "independent_preparation_bridge/frozen_sources_v2.json",
+      "sha256": "cfbca333428905fe298b91d385582b4469676c994fb383d29b34755bb166ab1d"
+    },
+    {
+      "path": "independent_preparation_bridge/REPORT_v2.md",
+      "sha256": "850eca3103911dc3a1c261d158e4f9a25c889041cb8cd85219dddea7fa763369"
+    },
+    {
+      "path": "independent_preparation_bridge/author_stdout.json",
+      "sha256": "7d27d26071e40460990731a869d99615a3a887ce9799054f74963c89692241c9"
+    },
+    {
+      "path": "independent_preparation_bridge/check_cost.py",
+      "sha256": "f0e9caa081a2d9811acb1a14719a719c1af504e9aaa59ee07fc8ee2968ddc8ef"
+    },
+    {
+      "path": "independent_preparation_bridge/transition_counterexample_stdout.json",
+      "sha256": "35c3b00fa0cc9597ead083d6e5d3bc2f8036164251b96d809d3d75a4fb34d98a"
+    },
+    {
+      "path": "independent_preparation_bridge/REPORT_v1.md",
+      "sha256": "df7a5e8a54e025a0d34db2db0b047507e371e0bf9e6500ea905a57c0309199cb"
+    },
+    {
+      "path": "independent_preparation_bridge/execution_receipts_v2.json",
+      "sha256": "47f364500c720f05cf06502be3c50a9f4266c2f5349abd0842e4da3c72b2b14c"
+    },
+    {
+      "path": "independent_preparation_bridge/independent_cost_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "independent_preparation_bridge/independent_stdout.json",
+      "sha256": "254b22e2c444da581f1bb350f50cd99b1ddf6f866f328d10de9de8de8e9eb0b3"
+    },
+    {
+      "path": "independent_preparation_bridge/derivation_before_code.md",
+      "sha256": "983201155168f4732e06d873151856c249e2ee92209bdc431ff305da6bde1005"
+    },
+    {
+      "path": "independent_preparation_bridge/transition_counterexample_receipt.json",
+      "sha256": "20fb2fb5398796009c4b02db050a749bf0c4e699420a33ebfa5378f25936dab7"
+    },
+    {
+      "path": "independent_preparation_bridge/author_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "binding_count": 34,
+  "primary_controls": [
+    133,
+    27
+  ],
+  "focused_independent_checks": [
+    127,
+    17
+  ],
+  "counts_are_synthetic_or_mathematical_not_observations": true,
+  "empirical_validation": false,
+  "transition_issue": "v1 ambiguity resolved in v2 by explicit smooth no-kick transition; preserved counterexample has39/100 bias despite exact quadratic interpolation",
+  "publication_scope": "commits-only conditional support for PR9637; standard interpolation machinery, no new physical action derivation"
+}

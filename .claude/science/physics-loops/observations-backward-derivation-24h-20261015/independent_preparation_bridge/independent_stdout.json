@@ -1,0 +1,648 @@
+{
+  "summary": {
+    "passed": 127,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "measured_prefix_coordinate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed_full_moments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(0.19, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(0.19, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(0.19, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(0.19, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(0.19, 4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(0.19, 5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_drive_rest_0.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved_state_(0.19, (0.24+0.33j))",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved_state_(0.19, (-0.39+0.04j))",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(-0.13, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(-0.13, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(-0.13, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(-0.13, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(-0.13, 4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transition_(-0.13, 5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_drive_rest_-0.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved_state_(-0.13, (0.24+0.33j))",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved_state_(-0.13, (-0.39+0.04j))",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_complexstep_tangent",
+      "passed": true,
+      "detail": 6.518192756377328e-11
+    },
+    {
+      "name": "baseline_not_rest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unmatched_centered_order",
+      "passed": true,
+      "detail": [
+        1.0664376762793346e-05,
+        2.6661912090036183e-06,
+        6.665555675588325e-07
+      ]
+    },
+    {
+      "name": "rank_deficient_feasible_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rank_deficient_feasible_(0.4+0.7j)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rank_deficient_feasible_(-0-2j)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_radius_dual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_70",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_80",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_81",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_82",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_83",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_84",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_85",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_86",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_87",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_88",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_89",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_90",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_91",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_92",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_93",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_94",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_95",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_98",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error_certificate_99",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "empirical_validation": false
+}

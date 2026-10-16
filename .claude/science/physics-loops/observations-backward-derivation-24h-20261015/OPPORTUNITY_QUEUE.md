@@ -36,3 +36,9 @@ Completed support: PHYSICAL_PORT_BRIDGE_v1.md and SMOOTH_HISTORY_BRIDGE_v1.md. T
 Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.
 
 A useful next empirical bridge must bound preparation contamination and moving-history prediction error; more exact synthetic interpolation alone will not establish the physical model.
+
+## Preparation follow-through 2026-10-16T06:18:03.328311+00:00
+
+Return to the actual scalar-field normalization gap. Personally derive what tensor-wave amplitude transport can identify across measured environments, retaining source generation, detector calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile or call a toy oscillator a gravity test.
+
+The preparation bridge removes an actual reset only conditionally. Avoid another block of noiseless oscillator interpolation: the physical field and observation registration remain the highest-value gaps.

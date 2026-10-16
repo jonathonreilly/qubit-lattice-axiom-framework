@@ -1,0 +1,12 @@
+{
+  "exact_author_cost_json_match": true,
+  "author_summary": {
+    "passed": 27,
+    "failed": 0
+  },
+  "independent_summary": {
+    "passed": 17,
+    "failed": 0
+  },
+  "v1_sources_unchanged": true
+}

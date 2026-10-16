@@ -1,0 +1,8 @@
+{
+  "reason": "Preserve exact hash-bound historical diff bytes without committing whitespace-only diff context as source prose. Original local file retained.",
+  "unpacked_path": "note_v1_v2.diff",
+  "unpacked_sha256": "c049df4458cd8a4d1834561c8adbfcf94c8c1891e99b2330b9a146afda46af7b",
+  "stored_path": "note_v1_v2.diff.gz",
+  "stored_sha256": "2fbecb091edad651f446cf2da5ca8bdbe16c7991bf1f43a9d1be4f5334f3a5ae",
+  "decode": "gzip.decompress"
+}

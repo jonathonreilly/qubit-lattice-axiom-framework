@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "passed": 27,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "annulus normalization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "radial-moment matching",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L1 sharp formula",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp moment witness ratio1.01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp norm ratio1.01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attained readout error ratio1.01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp moment witness ratio1.05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp norm ratio1.05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attained readout error ratio1.05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp moment witness ratio1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp norm ratio1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attained readout error ratio1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp moment witness ratio1.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp norm ratio1.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attained readout error ratio1.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp moment witness ratio2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp norm ratio2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attained readout error ratio2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp moment witness ratio5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp norm ratio5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attained readout error ratio5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp moment witness ratio10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sharp norm ratio10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attained readout error ratio10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "author design obeys lower bound0",
+      "passed": true,
+      "detail": {
+        "actual": 2.5188476642462128,
+        "lower": 1.6844626967830252
+      }
+    },
+    {
+      "name": "author design obeys lower bound1",
+      "passed": true,
+      "detail": {
+        "actual": 2.518847664246212,
+        "lower": 1.6844626967830243
+      }
+    },
+    {
+      "name": "author design obeys lower bound2",
+      "passed": true,
+      "detail": {
+        "actual": 2.5188476642462114,
+        "lower": 1.684462696783025
+      }
+    }
+  ],
+  "details": [
+    {
+      "radius_ratio": 1.01,
+      "minimum_L1": 100.50248756218917,
+      "worst_error": 0.010050248756218919
+    },
+    {
+      "radius_ratio": 1.05,
+      "minimum_L1": 20.512195121951223,
+      "worst_error": 0.002051219512195122
+    },
+    {
+      "radius_ratio": 1.1,
+      "minimum_L1": 10.52380952380952,
+      "worst_error": 0.001052380952380952
+    },
+    {
+      "radius_ratio": 1.5,
+      "minimum_L1": 2.5999999999999996,
+      "worst_error": 0.00026
+    },
+    {
+      "radius_ratio": 2,
+      "minimum_L1": 1.6666666666666667,
+      "worst_error": 0.0001666666666666667
+    },
+    {
+      "radius_ratio": 5,
+      "minimum_L1": 1.0833333333333335,
+      "worst_error": 0.00010833333333333336
+    },
+    {
+      "radius_ratio": 10,
+      "minimum_L1": 1.02020202020202,
+      "worst_error": 0.00010202020202020202
+    }
+  ],
+  "source_hashes": {
+    "PREPARATION_BRIDGE_v2.md": "ecb67821847f062a6c13632826beb2a37d4f91d7b72eca4aeb823626decb5d77",
+    "PREPARATION_BRIDGE_CONTROLS_v1.json": "7d27d26071e40460990731a869d99615a3a887ce9799054f74963c89692241c9",
+    "check_preparation_cost_v1.py": "4fc26c28a85da9b7fa1afa1a8016799b76de0fb989d5e6a44b3081efad436e6e"
+  },
+  "empirical_validation": false
+}

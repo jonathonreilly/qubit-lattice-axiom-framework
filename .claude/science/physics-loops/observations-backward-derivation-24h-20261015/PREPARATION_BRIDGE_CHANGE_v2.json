@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-16T06:12:02.603228+00:00",
+  "parent": "PREPARATION_BRIDGE_v1.md",
+  "source": "PREPARATION_BRIDGE_v2.md",
+  "changes": [
+    "Explicit C2 common-input and no-kick transfer domain; equations1-11unchanged.",
+    "Derived necessary sharp annulus lower bound for signed-weight readout-error amplification; new equation12."
+  ],
+  "source_sha256": "ecb67821847f062a6c13632826beb2a37d4f91d7b72eca4aeb823626decb5d77",
+  "old_evidence": "133primary checks remain bound to v1; separate exact cost controls bind v2."
+}

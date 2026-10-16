@@ -1,0 +1,24 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_preparation_bridge/check.py"
+    ],
+    "timeout_seconds": 120,
+    "elapsed_seconds": 1.013861894607544,
+    "returncode": 0,
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_preparation_bridge_v1.py"
+    ],
+    "timeout_seconds": 120,
+    "elapsed_seconds": 2.426903009414673,
+    "returncode": 0,
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+]

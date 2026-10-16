@@ -1,0 +1,105 @@
+{
+  "summary": {
+    "passed": 17,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "dual_witness_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lp_sharp_0",
+      "passed": true,
+      "detail": {
+        "optimum": 10.52380952380952,
+        "bound": 10.523809523809517
+      }
+    },
+    {
+      "name": "noise_attains_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "augmented_lp_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dual_witness_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lp_sharp_1",
+      "passed": true,
+      "detail": {
+        "optimum": 1.380952380952381,
+        "bound": 1.3809523809523812
+      }
+    },
+    {
+      "name": "noise_attains_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "augmented_lp_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dual_witness_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lp_sharp_2",
+      "passed": true,
+      "detail": {
+        "optimum": 1.279202279202279,
+        "bound": 1.2792022792022792
+      }
+    },
+    {
+      "name": "noise_attains_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "augmented_lp_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dual_witness_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lp_sharp_3",
+      "passed": true,
+      "detail": {
+        "optimum": 1.008928571428572,
+        "bound": 1.0089285714285712
+      }
+    },
+    {
+      "name": "noise_attains_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "augmented_lp_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circle_infeasible",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

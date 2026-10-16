@@ -1,0 +1,849 @@
+{
+  "summary": {
+    "passed": 133,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "full hidden equation from variation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full visible equation from variation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonstationary hidden tangent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonstationary visible tangent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full force degree at most two in arbitrary initial coordinates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at -1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at -0.8333333333333334",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at -0.6666666666666667",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at -0.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at -0.33333333333333337",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at -0.16666666666666674",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at 0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at 0.16666666666666652",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at 0.33333333333333326",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at 0.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at 0.6666666666666665",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at 0.8333333333333333",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive class at 1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rest-start force synthesized history0",
+      "passed": true,
+      "detail": 7.441347538161835e-11
+    },
+    {
+      "name": "all six preparations nonzero history0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "moment design certificate history0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed weights necessary realized history0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved preparation force prediction history0",
+      "passed": true,
+      "detail": 6.837996835429294e-11
+    },
+    {
+      "name": "six-point cubic alternative interpolates history0",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "reserved prep rejects constructed cubic output history0",
+      "passed": true,
+      "detail": 0.0004655280194991729
+    },
+    {
+      "name": "rest-start force synthesized history1",
+      "passed": true,
+      "detail": 3.8429148752072706e-11
+    },
+    {
+      "name": "all six preparations nonzero history1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "moment design certificate history1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed weights necessary realized history1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved preparation force prediction history1",
+      "passed": true,
+      "detail": 9.89746062884933e-11
+    },
+    {
+      "name": "six-point cubic alternative interpolates history1",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "reserved prep rejects constructed cubic output history1",
+      "passed": true,
+      "detail": 0.0007111247427887823
+    },
+    {
+      "name": "rest-start force synthesized history2",
+      "passed": true,
+      "detail": 6.881059610996942e-11
+    },
+    {
+      "name": "all six preparations nonzero history2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "moment design certificate history2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "signed weights necessary realized history2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reserved preparation force prediction history2",
+      "passed": true,
+      "detail": 1.2434675511485693e-10
+    },
+    {
+      "name": "six-point cubic alternative interpolates history2",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "reserved prep rejects constructed cubic output history2",
+      "passed": true,
+      "detail": 0.00036436346465262837
+    },
+    {
+      "name": "fixed amplitude has incompatible moment equations",
+      "passed": true,
+      "detail": 0.5773502691896258
+    },
+    {
+      "name": "fixed-amplitude dual polynomial witness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "three collinear amplitudes suffice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic positive-weight contradiction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonstationary tangent matches direct finite drive derivative",
+      "passed": true,
+      "detail": 1.5523891150337477e-07
+    },
+    {
+      "name": "baseline subtraction does not give rest response",
+      "passed": true,
+      "detail": 0.5887921086523189
+    },
+    {
+      "name": "omission rejected tau_input",
+      "passed": true,
+      "detail": 0.23586430809433967
+    },
+    {
+      "name": "omission rejected gamma_gradient",
+      "passed": true,
+      "detail": 0.28405178052745406
+    },
+    {
+      "name": "omission rejected kinetic_gradient_output",
+      "passed": true,
+      "detail": 0.11474357984816663
+    },
+    {
+      "name": "unmatched-preparation centered convergence0",
+      "passed": true,
+      "detail": 3.998236886998633
+    },
+    {
+      "name": "unmatched-preparation centered convergence1",
+      "passed": true,
+      "detail": 3.9995584708414142
+    },
+    {
+      "name": "unmatched-preparation centered convergence2",
+      "passed": true,
+      "detail": 3.9998878465383085
+    },
+    {
+      "name": "correlated error certificate0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate70",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correlated error certificate79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "near-circle feature-error margin refuses certification",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known-pole prefix fundamental error bound",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "histories": [
+      {
+        "role": "development",
+        "x0": -0.2,
+        "amp": 0.12,
+        "frequency": 0.85,
+        "max_rest_error": 7.441347538161835e-11,
+        "max_reserved_error": 6.837996835429294e-11,
+        "altered_output_reserved_error": 0.0004655280194991729,
+        "weights": [
+          1.0090534898348502,
+          0.5414157477111863,
+          0.1587197877327881,
+          0.050234806844281645,
+          -0.37329992864780387,
+          -0.3861239034753025
+        ],
+        "design_condition": 14.124474508001319,
+        "prefix_coordinates": [
+          [
+            -0.43603137096429395,
+            0.24321207341940912
+          ],
+          [
+            0.19987428616731795,
+            -0.5231049702349838
+          ],
+          [
+            -0.7096117848305867,
+            -0.37025541248307403
+          ],
+          [
+            0.5848495066462421,
+            0.5770520123506562
+          ],
+          [
+            -0.20867963598039427,
+            -0.6611020450688743
+          ],
+          [
+            -0.8730705974460787,
+            0.4641186505318582
+          ]
+        ]
+      },
+      {
+        "role": "reserved synthetic drive",
+        "x0": 0.3,
+        "amp": -0.09,
+        "frequency": 1.1,
+        "max_rest_error": 3.8429148752072706e-11,
+        "max_reserved_error": 9.89746062884933e-11,
+        "altered_output_reserved_error": 0.0007111247427887823,
+        "weights": [
+          1.0090534898348502,
+          0.5414157477111862,
+          0.15871978773278803,
+          0.05023480684428151,
+          -0.37329992864780354,
+          -0.38612390347530234
+        ],
+        "design_condition": 11.441040121065228,
+        "prefix_coordinates": [
+          [
+            -0.5131575463580497,
+            0.27540259099125597
+          ],
+          [
+            0.24302562435421904,
+            -0.6063196616302764
+          ],
+          [
+            -0.8206181127233663,
+            -0.4452768320474824
+          ],
+          [
+            0.6711885650908863,
+            0.684103731389742
+          ],
+          [
+            -0.2308634107678531,
+            -0.7750069885245001
+          ],
+          [
+            -1.0270680454285894,
+            0.5247708283083644
+          ]
+        ]
+      },
+      {
+        "role": "reserved synthetic drive",
+        "x0": 0.65,
+        "amp": -0.14,
+        "frequency": 0.7,
+        "max_rest_error": 6.881059610996942e-11,
+        "max_reserved_error": 1.2434675511485693e-10,
+        "altered_output_reserved_error": 0.00036436346465262837,
+        "weights": [
+          1.0090534898348507,
+          0.5414157477111857,
+          0.15871978773278764,
+          0.050234806844281714,
+          -0.373299928647803,
+          -0.38612390347530273
+        ],
+        "design_condition": 10.344726344586418,
+        "prefix_coordinates": [
+          [
+            -0.5648140506690716,
+            0.29522200542768895
+          ],
+          [
+            0.27318023966746535,
+            -0.6605570411495444
+          ],
+          [
+            -0.8926338518618864,
+            -0.4970554631201894
+          ],
+          [
+            0.7262652318835214,
+            0.7566040775603965
+          ],
+          [
+            -0.24335399319431736,
+            -0.8508092704296906
+          ],
+          [
+            -1.1301407005418693,
+            0.5619470087200613
+          ]
+        ]
+      }
+    ],
+    "circle_minimum_moment_residual": 0.5773502691896258,
+    "central_difference": [
+      {
+        "epsilon": 0.04,
+        "max_tangent_error": 0.023524706605291712
+      },
+      {
+        "epsilon": 0.02,
+        "max_tangent_error": 0.005883770089208262
+      },
+      {
+        "epsilon": 0.01,
+        "max_tangent_error": 0.0014711049062299253
+      },
+      {
+        "epsilon": 0.005,
+        "max_tangent_error": 0.00036778653869085076
+      }
+    ],
+    "nonstationary_tangent_error": 1.5523891150337477e-07,
+    "error_bound_max_ratio": 0.024749157128819744,
+    "error_margin_min": 0.9998848981085667,
+    "prefix": {
+      "design_condition": 38.64854243908815,
+      "actual_f_error": 1.529886533266647e-06,
+      "bound": 4.3450761761810056e-05,
+      "pole_errors_included": false
+    }
+  },
+  "empirical_validation": false,
+  "data_roles": {
+    "development": "First finite drive and six preparations",
+    "reserved": "Two additional fixed drives and three additional preparations, declared before computation",
+    "empirical": "none"
+  },
+  "source_hashes": {
+    "PREPARATION_BRIDGE_v1.md": "c7039b5a4b1335e39f679b4f33f22c576d68b93fe76906f5bdae539359d23d4e",
+    "PREPARATION_BRIDGE_PLAN_v1.json": "9d9e84115a74243a08f3c4ce41f71858b457037553cd8f30b6d00e3049c6201f",
+    "check_preparation_bridge_v1.py": "e874f3d7f8822bd7817754502d5187dc7ed2c2ae31f3945208ecc5ee62b4fd7e"
+  },
+  "limit": "Class, common histories, observable prefix and calibrated errors remain premises; no certified finite-band inverse or physical reset is derived."
+}

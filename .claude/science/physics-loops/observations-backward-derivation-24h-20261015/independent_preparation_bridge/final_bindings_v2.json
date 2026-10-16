@@ -1,0 +1,43 @@
+{
+  "final_sources": {
+    "PREPARATION_BRIDGE_v2.md": "ecb67821847f062a6c13632826beb2a37d4f91d7b72eca4aeb823626decb5d77",
+    "check_preparation_cost_v1.py": "4fc26c28a85da9b7fa1afa1a8016799b76de0fb989d5e6a44b3081efad436e6e",
+    "PREPARATION_COST_CONTROLS_v1.json": "1ba3fd7381f1214fb5fc65a4e6fcd7270bda1d271c51b75aafcaf03a83e43baf",
+    "PREPARATION_BRIDGE_CONTROLS_v1.json": "7d27d26071e40460990731a869d99615a3a887ce9799054f74963c89692241c9"
+  },
+  "preserved_v1_sources": {
+    "PREPARATION_BRIDGE_v1.md": "c7039b5a4b1335e39f679b4f33f22c576d68b93fe76906f5bdae539359d23d4e",
+    "PREPARATION_BRIDGE_PLAN_v1.json": "9d9e84115a74243a08f3c4ce41f71858b457037553cd8f30b6d00e3049c6201f",
+    "check_preparation_bridge_v1.py": "e874f3d7f8822bd7817754502d5187dc7ed2c2ae31f3945208ecc5ee62b4fd7e",
+    "PREPARATION_BRIDGE_CONTROLS_v1.json": "7d27d26071e40460990731a869d99615a3a887ce9799054f74963c89692241c9"
+  },
+  "all_sources_unchanged": true,
+  "artifacts": {
+    "independent_cost_stdout.json": "cbb749159c906c4d8b2954b10be9c11c94609a7fee8a8d328a8126219c3d5863",
+    "annulus_derivation.md": "2ff0f017b273273a5b674ec6806b9a6cf9df9af2861fde4b98bf4994e243c9b9",
+    "transition_counterexample_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final_bindings_v1.json": "ac3953401a9e96f67787850e4f3dfedd3ec43574f9688247b7a6204fb0440f38",
+    "check.py": "386cce005837b532a01abab47fd8ffdd2c22796be01dac24cf08fd4bb8786963",
+    "execution_receipts.json": "e0e2490bcc012be92a7666be85186b6a97efda152852ff3dfb3c03c1950aeaa7",
+    "frozen_sources.json": "1fe1f9588017a85a5a6987b7ce8144253339ae7fe0995e1d15a4f4570b747bed",
+    "author_cost_stdout.json": "1ba3fd7381f1214fb5fc65a4e6fcd7270bda1d271c51b75aafcaf03a83e43baf",
+    "note_v1_v2.diff": "c049df4458cd8a4d1834561c8adbfcf94c8c1891e99b2330b9a146afda46af7b",
+    "independent_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "author_cost_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparison_v2.json": "c64528a451319515e34608b73dd14adaddb6c410b853ac792bafd6da4075e1b1",
+    "transition_counterexample.py": "0e8f502d411f70c9a6377b8d858b3533d9d529e5434a99576771933d4bf6809b",
+    "comparison.json": "6014f59714dbca2ac58343b2575d91a503e7024d5cb4d390b3a4286bb72d4f86",
+    "frozen_sources_v2.json": "cfbca333428905fe298b91d385582b4469676c994fb383d29b34755bb166ab1d",
+    "REPORT_v2.md": "850eca3103911dc3a1c261d158e4f9a25c889041cb8cd85219dddea7fa763369",
+    "author_stdout.json": "7d27d26071e40460990731a869d99615a3a887ce9799054f74963c89692241c9",
+    "check_cost.py": "f0e9caa081a2d9811acb1a14719a719c1af504e9aaa59ee07fc8ee2968ddc8ef",
+    "transition_counterexample_stdout.json": "35c3b00fa0cc9597ead083d6e5d3bc2f8036164251b96d809d3d75a4fb34d98a",
+    "REPORT_v1.md": "df7a5e8a54e025a0d34db2db0b047507e371e0bf9e6500ea905a57c0309199cb",
+    "execution_receipts_v2.json": "47f364500c720f05cf06502be3c50a9f4266c2f5349abd0842e4da3c72b2b14c",
+    "independent_cost_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "independent_stdout.json": "254b22e2c444da581f1bb350f50cd99b1ddf6f866f328d10de9de8de8e9eb0b3",
+    "derivation_before_code.md": "983201155168f4732e06d873151856c249e2ee92209bdc431ff305da6bde1005",
+    "transition_counterexample_receipt.json": "20fb2fb5398796009c4b02db050a749bf0c4e699420a33ebfa5378f25936dab7",
+    "author_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

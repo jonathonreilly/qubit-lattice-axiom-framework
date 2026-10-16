@@ -1,0 +1,7 @@
+{
+  "weighted_force": "39/100",
+  "true_unkicked_rest_force": "0",
+  "shifted_reference_force": "39/100",
+  "quadratic_closure_still_exact": true,
+  "origin_bias_detected": true
+}

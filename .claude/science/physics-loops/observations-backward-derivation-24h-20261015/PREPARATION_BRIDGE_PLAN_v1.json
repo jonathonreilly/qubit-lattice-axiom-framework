@@ -1,0 +1,120 @@
+{
+  "created_at": "2026-10-16T06:07:27.932221+00:00",
+  "author": "/root personally; frozen before generating controls",
+  "purpose": "Test whether unknown preparation can be removed from controlled moving-force records within the already declared quadratic one-hidden-mode class.",
+  "classification": "Exploratory bridge using known linear-system and quadratic-output interpolation machinery; commits-only pending a substantive physical test or further new result.",
+  "parent_pr": {
+    "number": 9637,
+    "head": "de4db24e811625eeb059beb341e51a1a8487371a"
+  },
+  "source_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "source_open_prs": {
+    "count": 67,
+    "inventory": "OPEN_PRS_20261016T0557.json",
+    "sha256": "c8a49180539ea73a851d0f5bfe1d72b7257b0952e26dc127d609b6149af5e41c",
+    "pr9636_delta": "02d5c9dcb3cc27f071b6bcbca6f51e22b7737d65; added spinor-criterion search table read; no premise adopted"
+  },
+  "candidate": "General k(x) retained; smooth positive kinetic metric and passive Rayleigh matrix. Hidden motion linear for prescribed x; force quadratic in hidden state.",
+  "models": "tau=1.3 exp(.22x+.05x^2), O=3.2+.3x+.1x^2, Gamma=.55+.05sin(x), C=tau O, gamma=tau Gamma, M=2.1+.2cos(x), k=.16+.04x, nu=.12+.02cos(x), d=.55+.06x^2, w0=.2+.35x+.08sin(1.2x), E=.35x^2+.04x^4",
+  "initial_complex_coefficients": [
+    [
+      0.2,
+      -0.1
+    ],
+    [
+      -0.1,
+      0.23
+    ],
+    [
+      0.31,
+      0.18
+    ],
+    [
+      -0.25,
+      -0.27
+    ],
+    [
+      0.08,
+      0.3
+    ],
+    [
+      0.4,
+      -0.19
+    ]
+  ],
+  "additional_reserved_preparations": [
+    [
+      -0.17,
+      0.12
+    ],
+    [
+      0.27,
+      -0.31
+    ],
+    [
+      0.05,
+      0.08
+    ]
+  ],
+  "prehistory": "101 clamped force samples on [-3,0], independently supplied pole; six-real-exponential fit returns complex fundamental at start. No n, c, equilibrium hidden state or coefficient function supplied to synthesis.",
+  "histories": [
+    {
+      "role": "development",
+      "x0": -0.2,
+      "A": 0.12,
+      "frequency": 0.85
+    },
+    {
+      "role": "reserved synthetic drive",
+      "x0": 0.3,
+      "A": -0.09,
+      "frequency": 1.1
+    },
+    {
+      "role": "reserved synthetic drive",
+      "x0": 0.65,
+      "A": -0.14,
+      "frequency": 0.7
+    }
+  ],
+  "coordinate_formula": "x=x0+A(1-cos(frequency*t))^2; t in [0,5.2], 261 samples; all model functions fixed.",
+  "core_tests": [
+    "derive full general-k Euler-Lagrange equations",
+    "polynomial initial-state dependence and six-moment interpolation",
+    "unmatched plus/minus preparation ensembles",
+    "nonstationary tangent versus direct finite differences",
+    "fixed-amplitude phase averaging failure",
+    "additional preparation prediction and cubic-output failure",
+    "correlated feature/readout perturbation bound",
+    "near-singular design fail-closed"
+  ],
+  "central_difference": {
+    "x0": 0.15,
+    "frequency": 0.9,
+    "epsilons": [
+      0.04,
+      0.02,
+      0.01,
+      0.005
+    ],
+    "minus_preparations": "0.9 exp(0.3i) times the six development coefficients",
+    "test": "Compare synthesized centered response to direct rest variational response; O(epsilon^2) is conditional on bounded third derivatives."
+  },
+  "negative_control": "Add 0.04*xdot*(w-w0(x))^3 to moving force only, so clamped prefix feature calibration is unchanged. Exact six-point interpolation is not by itself a class test; reserved preparations should reveal this constructed alteration.",
+  "test_thresholds": {
+    "exact_symbolic": "SymPy simplify equals zero",
+    "true_force_synthesis_abs": 2e-08,
+    "heldout_true_abs": 3e-08,
+    "finite_difference_tangent_abs_at_epsilon_1e_4": 2e-06,
+    "bound_checks": "deterministic inequalities with 1e-10 roundoff allowance"
+  },
+  "data_separation": "No measured data accessed. Synthetic generator coefficients and zero-state reference are verification only. Development and reserved histories are designated before outputs; they are synthetic mechanism controls, not independent empirical tests.",
+  "prior_art": {
+    "url": "https://arxiv.org/html/2312.10684v1",
+    "authors": "Berkane, Theodosis, Hamel, Dimarogonas",
+    "scope_read": "Abstract, introduction, equations1-2, quadratic closure12 and lifted representation20-22; not complete appendices or an independent verification of observer theorem",
+    "relation": "Linear dynamics with quadratic outputs and finite-dimensional lifting are established; no novelty claimed for interpolation or lifting."
+  },
+  "known_operational_failure": "An unverified v2 HTML URL returned404; linked v1 HTML opened successfully. No scientific inference from route failure.",
+  "no_new_assumption_retired": "The experiment replaces an unobserved reset with observed prefix coordinates and a certified interpolation design only conditional on common prescribed input, class, calibration and observability."
+}

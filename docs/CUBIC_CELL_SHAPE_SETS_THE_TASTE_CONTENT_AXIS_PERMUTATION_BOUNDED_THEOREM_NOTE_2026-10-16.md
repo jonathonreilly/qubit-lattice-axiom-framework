@@ -117,9 +117,19 @@ which the runner checks: they are trivial on the axis half-turns. ∎
 - Staggered-fermion taste counting is standard: 2^(d/2) tastes in d
   Euclidean dimensions, and 2 per eight-site cube in the 3+1 Hamiltonian
   form.
+- In this repository, `STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23`
+  shows the hw=1 triplet of the standard staggered lattice carries an
+  unbroken S3: the eta-convention asymmetry is gauge. The generation lane
+  builds on that triplet.
+  `EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03`
+  finds N_f = 2 identical tastes on the cube with no generation label. The
+  table here is consistent with both: signed corners give 2E, two tastes.
 - New here: the classification of the taste content of every cubic-orbit
-  cell. It shows the taste index is always an axis-permutation
-  representation, with the table above.
+  cell, under signs or phases. It shows the taste index is always an
+  axis-permutation representation, with the table above. This is a
+  statement about copy spaces and is separate from the hw=1 momentum-space
+  triplet of the generation lane. The two-qubit note's light-speed corollary
+  is where the hw=1 triplet appears in the one-tick setting.
 
 ## No-Go Discipline Gate
 

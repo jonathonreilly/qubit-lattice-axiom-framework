@@ -184,6 +184,35 @@ companion note, whose leading correction is linear and handed
 (-n1 n2 n3 |k|^2). That cubic symmetry pushes lattice anisotropy to
 O(a^2) is standard; the new point is the contrast within these tick laws.
 
+## Corollary to Theorem 5 — at light speed the hw=1 triplet becomes massless
+
+At the light-speed member b_gold the three axis points X = (pi,0,0),
+(0,pi,0), (0,0,pi) carry massless Dirac cones at quasienergy pi (exact). Near
+(pi,0,0), writing q_par along the axis and q_perp across it,
+
+    (omega - pi)^2 = q_par^2 + (sqrt5 - 2)^2 q_perp^2 + ...,
+
+a uniaxial cone with v_par = 1 and v_perp = sqrt5 - 2 = phi^-3, where phi is
+the golden ratio. The axis permutations (S3, with C3 cycling x -> y -> z)
+permute the three cones. The face points M and corner point R stay gapped
+(2.665 and 2.455 rad, Theorem 5).
+
+So at light speed the walk has 1 + 3 massless species: one isotropic cone at
+k = 0 and an S3 triplet of uniaxial pi-mode cones at the hw=1 points. For
+s < 1 the triplet is gapped at theta_X = 2 arcsin s, and its splitting from
+the k = 0 cone is fixed by the speed (Theorem 4 and the Wilson-gap
+corollary).
+
+Bearing on the repository's generation lane (information, not a claim). The
+lane takes the hw=1 triplet with an unbroken S3 as the generation candidate
+(`STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23`, positivity
+reducing S3 to C3).
+- In this one-tick family the triplet is massless only at the unique
+  light-speed member.
+- There it is a degenerate S3 triplet of pi-mode Dirac cones, anisotropic
+  with transverse speed phi^-3, and distinct from the k = 0 fermion.
+- Nothing here splits the triplet or attaches charges.
+
 ## Theorem 7 — isotropy at order k^4 and the sqrt(2/3) bound
 
 *Massless dispersion.* At k = 0, g = 0 and the Gram identity give
@@ -508,4 +537,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=40 FAIL=0` (under a minute).
+Expected: `TOTAL: PASS=41 FAIL=0` (under a minute).

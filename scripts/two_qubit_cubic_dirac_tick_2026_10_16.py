@@ -213,6 +213,15 @@ def main() -> int:
     ck.check('at b*: e1, e2, e3 of G are positive, so the three nonzero eigenvalues are positive (G >= 0, rank 3)',
              all(sg == 1 for sg in signs))
 
+    # Corollary to Theorem 5: the hw=1 triplet at the light-speed member
+    q1s, q2s, es = sp.symbols('q1s q2s es')
+    kx = [sp.pi + es * q1s, es * q2s, sp.Integer(0)]
+    cx = [sp.cos(x) for x in kx]
+    phx = sp.Matrix([1, sum(cx), cx[0] * cx[1] + cx[0] * cx[2] + cx[1] * cx[2], cx[0] * cx[1] * cx[2]])
+    fx = (sp.Matrix([1, 3, 3, 1]).T * Gg * phx)[0]
+    c2x = sp.expand(sp.series(1 + fx, es, 0, 3).removeO()).coeff(es, 2)
+    ck.check('light-speed member: at X = (pi,0,0) a massless pi-mode cone, (omega - pi)^2 = q_par^2 + (sqrt5 - 2)^2 q_perp^2 (uniaxial, v_perp = sqrt5 - 2 = phi^-3)',
+             sp.simplify(sp.expand(fx.subs(es, 0)) + 1) == 0 and sp.simplify(2 * c2x - (q1s ** 2 + (r5 - 2) ** 2 * q2s ** 2)) == 0)
     # Theorem 7: quartic isotropy and the sqrt(2/3) bound
     phi0c = sp.Matrix([1, 3, 3, 1])
     ck.check('phi0^T G phi0 = 1 identically in b: the massless member has f = phi0^T G phi(k)',

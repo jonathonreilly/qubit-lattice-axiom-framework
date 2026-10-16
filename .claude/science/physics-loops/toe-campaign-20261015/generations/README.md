@@ -21,3 +21,7 @@
   They are the twisted-pair hits, the massless-constrained twisted hit, a
   flat-band nearest-site block hit and the moving block Dirac walk.
   `coinrep.py` and `coinfast.py` are the search code the scripts import.
+- `twisted_branches/`: Singular line-branch ideals for the E1/2 + E5/2 coin
+  with U(0) = 1. Every branch that moves along an axis is a unit ideal (mod
+  32003; branch 0 also over Q). Only the axis-flat branch has solutions.
+  This is mod-p evidence; see its README.

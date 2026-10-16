@@ -12,15 +12,22 @@ stated in the note.
 | B1 | `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py` (PASS=31) | One qubit per site: no unitary tick on the 27-point cell that is covariant under the proper cubic group (any of the four soldering actions) moves. T also freezes; D4 allows axial shifts only; motion in 3D survives under C3, C4, D2 only. Independent Singular re-derivation agrees. |
 | B2 | `docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py` (PASS=17) | Positive order-blind formation = one consistent 1-dependent record field whose full conditionals are the rule (static = formation); no long-range order, power laws or pinch points. |
 | B3 | `docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/two_qubit_cubic_dirac_tick_2026_10_16.py` (PASS=40) | A two-qubit site (parked M_4(C) fork) admits exactly O-covariant moving ticks; Clifford family classified by a Gram criterion; explicit member with one massless isotropic Dirac cone and gapped doublers; speed <= 1 with axis doublers at 2 arcsin s; unique light-speed member over Q(sqrt 5); exact chirality freezes motion; W3 = 0; quadratic (not linear) anisotropy. Independent check agrees (and corrected one statement). |
+| B6 | `docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py` (PASS=11) | One amplitude per site on staggered 2x2x2 blocks: the spinorial signed corner action is two copies of spin 3/2, and it carries an exactly covariant moving Dirac tick (two Dirac fermions per block). Nearest-site locality is open. |
 
 ## Synthesis for the TOE program (implications, not adoptions)
 
-- **Discrete-time one-qubit matter cannot be exactly cubic covariant at cell
-  range.** Options that do allow covariant motion: continuous time (unbounded
-  range per unit time), breaking the cubic group to order <= 4 (which forces a
-  linear handed dispersion term), or a doubled site (Dirac structure forced).
-  Block B4 tests a fourth option: a 2-site cell (staggering) with one qubit per
-  site.
+- **Where the electron's information can live.** With covariance about
+  every site, one qubit per site cannot move: this is exact at ranges 1-3.
+  No irreducible coin moves either (B3 Theorem 8). Motion needs four complex
+  amplitudes per Dirac fermion, and there are two ways to supply them:
+  - stacked on one site (the two-qubit site, B3);
+  - spread over a staggered 2x2x2 block of one-amplitude sites with the
+    rotations acting about the block centre (B6). This gives two Dirac
+    fermions per block.
+  The second keeps the one-qubit Qubit axiom and is the discrete-time
+  counterpart of the axiom memo's open staggered-Dirac gate. Open: a
+  nearest-site version. Its unitary solutions found so far have flat bands,
+  and a dispersion-constrained search is running.
 - **Chirality wall, sharpened.** On a two-qubit site, exactly chiral covariant
   ticks are frozen; moving ones are vector-like with Wilson-type chirality
   breaking, and every member of the classified family has W3 = 0.
@@ -51,6 +58,9 @@ stated in the note.
 
 ## Next decision
 
-Read the B4 staggered results (`scratchpad/walk/stag_*.log`); if moving
-staggered walks exist, characterize them as in B3 and compare with the
-staggered-Dirac open gate named in the axiom memo.
+- Is there a nearest-site (Kogut–Susskind-type) dispersive block tick?
+  This needs `blockNN2.py` results, then an exact attack if a candidate
+  appears.
+- The spin-1 exact branch recheck is running; when it lands, update B3
+  Theorem 8.
+- Final wrap-up at 23:15Z.

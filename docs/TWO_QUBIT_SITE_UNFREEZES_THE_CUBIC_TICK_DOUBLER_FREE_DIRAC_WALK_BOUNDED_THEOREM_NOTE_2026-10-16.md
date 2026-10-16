@@ -1,7 +1,7 @@
 ---
 claim_id: two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Exact: the cone speed s = b0 + 2 b1 + b2 obeys s^2 <= 1 and the axis doublers sit at quasienergy 2 arcsin|s|, so doubler-free on the axes iff s < 1; the light-speed member is unique up to sign, b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19, (71 - 29 sqrt5)/38), with f(t,0,0) = cos t and pi-mode doublers; a walk commuting with the chirality tau3 (x) 1 splits into two one-qubit covariant cell walks and is frozen, so moving covariant cell walks must break chirality. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2). Within the family nearest-neighbour-only walks are impossible (moving needs corner hops, b2 != 0); isolated rank-two members with h2 = 0 exist at small cone speed (independent Groebner computation). A one-qubit walk with sublattice-dependent coefficients (staggering) folds into this class with an extra twist symmetry and is then frozen (exact within the Clifford class; no staggered moving walk found numerically). Exact (Theorem 7): the massless member of each G(b) has cos omega = phi0^T G(b) phi(k); its k^4 cubic anisotropy is -s (b0 - b1 - 2 b2)/3 sum k^4 and vanishes iff b0 = b1 + 2 b2; there omega^2 = s^2|k|^2 - s^2(1 - s^2)|k|^4/12 + O(k^6) with an unavoidable k^6 anisotropy -(s^2/360)|k|^2 sum k^4, and |s| <= sqrt(2/3) with equality at an explicit rank-three member over Q(sqrt6, sqrt15) (numerically doubler-free)."
+claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Exact: the cone speed s = b0 + 2 b1 + b2 obeys s^2 <= 1 and the axis doublers sit at quasienergy 2 arcsin|s|, so doubler-free on the axes iff s < 1; the light-speed member is unique up to sign, b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19, (71 - 29 sqrt5)/38), with f(t,0,0) = cos t and pi-mode doublers; a walk commuting with the chirality tau3 (x) 1 splits into two one-qubit covariant cell walks and is frozen, so moving covariant cell walks must break chirality. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2). Within the family nearest-neighbour-only walks are impossible (moving needs corner hops, b2 != 0); isolated rank-two members with h2 = 0 exist at small cone speed (independent Groebner computation). A one-qubit walk with parity-dependent coefficients and covariance about every site folds into this class with an extra twist symmetry and is then frozen (exact within the Clifford class; no moving walk found numerically); block-centred staggering on 2x2x2 blocks is a different setting and does move (companion note). Exact (Theorem 8): every O-covariant cell walk with an irreducible coin of the binary octahedral group is a constant phase (E, spin 1/2, spin 1, spin 3/2; one-dimensional and twisted coins reduce to these). Exact (Theorem 7): the massless member of each G(b) has cos omega = phi0^T G(b) phi(k); its k^4 cubic anisotropy is -s (b0 - b1 - 2 b2)/3 sum k^4 and vanishes iff b0 = b1 + 2 b2; there omega^2 = s^2|k|^2 - s^2(1 - s^2)|k|^4/12 + O(k^6) with an unavoidable k^6 anisotropy -(s^2/360)|k|^2 sum k^4, and |s| <= sqrt(2/3) with equality at an explicit rank-three member over Q(sqrt6, sqrt15) (numerically doubler-free)."
 upstream_dependencies:
   - minimal_axioms
   - cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16
@@ -271,7 +271,7 @@ closed torus integrates to zero: W_3 = 0 for every member (numerically
 |W_3| < 1e-17 on a 24^3 grid for the explicit member). No member evades
 fermion doubling through a Floquet (quasienergy pi) imbalance.
 
-## Corollary — staggering one qubit per site does not unfreeze the tick
+## Corollary — parity staggering about every site does not unfreeze the tick
 
 Keep one qubit per site but let the hop coefficients depend on the parity
 p(x) = x1 + x2 + x3 mod 2 of the source site (a two-site cell). Rotations about
@@ -294,8 +294,15 @@ Clifford class staggering is frozen (exact); for general two-qubit walks this
 rests on the universality evidence above. Independent numerical searches of the
 staggered problem itself (two coefficient families; 22 starts at motion bound
 0.05 and 7 at 0.5) found no moving walk, with the same two
-recurring minima (residuals 1.0e-5 at the bound, 9.5e-4). A genuinely doubled
-site, not a two-site cell, is what the unfreezing needs.
+recurring minima (residuals 1.0e-5 at the bound, 9.5e-4).
+
+Scope: this corollary keeps covariance about every site, with a two-site
+parity cell. It does not cover blocks with the rotations acting about block
+centres. The companion note
+`STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16`
+shows that 2x2x2 blocks of one-amplitude sites with staggered signs do admit
+a moving, exactly covariant Dirac tick. So the extra information can live on
+a neighbourhood instead of on a doubled site.
 
 ## Numerical properties of the explicit member (labelled numerical)
 
@@ -315,12 +322,13 @@ optimum sat in the quartic valley of the constant walk):
 
 | coin (rep of the binary cubic group) | as spinor (x) flavor | moving walk found |
 |---|---|---|
-| spin 1/2 | spinor | none (exact freeze, companion note) |
+| spin 1/2 | spinor | none (exact freeze, companion note; Theorem 8) |
 | 2 x spin 1/2 | spinor (x) C^2, trivial flavor action | yes (this note) |
-| spin 3/2 = E (x) spin 1/2 | spinor (x) E | none (16 + 16 starts) |
-| spin 1 | not spinorial | none (20 starts) |
+| spin 3/2 = E (x) spin 1/2 | spinor (x) E | none (exact, Theorem 8) |
+| spin 1 | not spinorial | none (exact, Theorem 8) |
 | spin 1 + spin 0 = spin 1/2 (x) spin 1/2 | spinor (x) spinor | none (16 + 16 starts) |
 | 2 x spin 1 | not spinorial | none (16 + 12 + 12 starts) |
+| E (2-dim, through S3) | not spinorial | none (exact, Theorem 8) |
 
 The "none" entries are weak evidence. In the companion note a 300-start search
 of the same kind missed the two isolated D3-covariant body-diagonal shifts
@@ -341,14 +349,60 @@ one-tick motion appeared exactly when the site is a spin-1/2 doublet, i.e.
 carries Dirac-spinor structure. Coins large enough for two anticommuting
 triples are not covered.
 
+## Theorem 8 — every irreducible coin freezes (exact, computer-assisted)
+
+Let the site carry an irreducible unitary representation D of the binary
+octahedral group 2O, acting by conjugation, A_{Rn} = D(R) A_n D(R)^dagger.
+Then every O-covariant unitary walk with hops in the 27-point cell is a
+constant phase.
+
+*Reduction to five cases.* 2O has eight irreps: A1, A2, E, T1, T2 (through
+O) and the spinorial E_{1/2}, E_{5/2}, H (dimension 4, equal to spin 3/2 and
+to E (x) E_{1/2}). Twisting by the sign character A2 leaves conjugation
+unchanged, so A2 ~ A1, T2 ~ T1 (spin 1) and E_{5/2} ~ E_{1/2} (spin 1/2) give
+the same walks. For a one-dimensional coin, U is a scalar unit Laurent
+polynomial, so U = c e^{i k.m}, and O-invariance forces m = 0. That leaves E,
+spin 1/2, spin 1 and spin 3/2.
+
+*Method (all four).*
+- det U is a unit monomial, and O-invariant, so it is constant.
+- U(0) commutes with D(O), so by Schur's lemma U(0) = phase. Fix the phase
+  to 1.
+- On the axis line (t,0,0) the stabiliser C4 has distinct eigenvalues in each
+  of the four reps. So U(t,0,0) is diagonal in the eigenbasis of D(C4), with
+  unit-monomial entries z^{m_i}, |m_i| <= 1.
+- On the body diagonal, each one-dimensional eigenspace of D(C3) gives
+  another monomial z^{p_j}, |p_j| <= 3.
+- Every choice (m, p) is a linear system on the covariant coefficients. The
+  survivors are closed by Groebner bases of the unitarity equations, with the
+  complex parameters split into real and imaginary parts.
+
+| coin | complex parameters | (m, p) branches | linearly consistent | closure |
+|---|---|---|---|---|
+| E | 7 | 9 x 49 | trivial only | sympy: 2 free, x5 = 0, y5^2 = 0 |
+| spin 1/2 | 7 | 9 x 49 | trivial only | 0 free (also companion note) |
+| spin 1 | 12 | 27 x 343 | trivial only | sympy: 4 free, all nilpotent |
+| spin 3/2 | 19 | 81 x 49 | trivial and (-+1,-+1,+-1,+-1) | Singular over Q(sqrt 3): moving branches have ideal <1>; trivial branch zero-dimensional, all 18 free nilpotent |
+
+In each case the trivial branch's base point is A_0 = 1, so U is a constant
+phase. For E and spin 3/2 the branch filter is also exact: the left null
+space N of the line system is computed over the coefficient field, and the
+vectors N t(m) and N t(p) are compared exactly. For spin 1 that exact
+recheck is still running, and until it lands the spin-1 branch filter is
+numerical. A fresh-context independent check of spin 3/2 (different model
+E (x) E_1/2, two lines) also found only constant walks; its decisive stage
+was modular, over two primes. Scripts and logs are in
+`.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/` and
+`independent_check_B6/`. ∎
+
+Consequence: on the cell, cubic-covariant one-tick motion requires a
+reducible coin. In every case examined, the coin that moves is the spinor
+doublet 2 x E_{1/2}, which is this note's two-qubit site.
+
 ## What did not unfreeze (search evidence, not proof)
 
-- **Irreducible 4-dimensional coin.** Spin 3/2 restricted to the binary
-  octahedral group is its irreducible 4-dimensional representation, equal to
-  E (x) spin 1/2. Analytic-Jacobian searches (16 starts each, with a
-  scale-free lower bound on motion) and polished pinned searches found no
-  moving O-covariant cell walk for either form (best residuals 2.4e-3 and
-  1.3e-3).
+- **Irreducible 4-dimensional coin.** This is now settled exactly by Theorem
+  8: spin 3/2 freezes. The earlier searches had also found none.
 - **One extra square — corrected.** My searches for f^2 + h^2 + |g|^2 = 1
   with a single extra invariant (G of rank <= 2) found none, but they bounded
   the motion below by sum b^2 >= 0.2. The independent check (below) found, by

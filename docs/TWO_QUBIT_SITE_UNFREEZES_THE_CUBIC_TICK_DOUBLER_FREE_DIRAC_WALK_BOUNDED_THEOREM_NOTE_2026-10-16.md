@@ -173,14 +173,40 @@ fermion doubling through a Floquet (quasienergy pi) imbalance.
   scale-free lower bound on motion) and polished pinned searches found no
   moving O-covariant cell walk for either form (best residuals 2.4e-3 and
   1.3e-3).
-- **One extra square.** f^2 + h^2 + |g|^2 = 1 with a single extra invariant
-  h: no solution in 200 starts, versus 117 of 200 with two.
-- **Nearest-neighbour hops only** on the two-qubit site: no moving solution in
-  20 starts; the face- and body-diagonal hops of the cell are used.
+- **One extra square — corrected.** My searches for f^2 + h^2 + |g|^2 = 1
+  with a single extra invariant (G of rank <= 2) found none, but they bounded
+  the motion below by sum b^2 >= 0.2. The independent check (below) found, by
+  an exact Groebner basis of the 3 x 3 minors of G, isolated rank-two points
+  b ≈ (-0.0861, ±0.0272, 0.0144) (b2^2 the smaller root of
+  27x^2 - 153432x + 32), where G ≈ diag-spectrum (0, 0, 0.0077, 0.978); their
+  walks are unitary (4.6e-16) with slow cones (speeds 0.017, 0.126). So
+  h2 ≡ 0 is possible at these points; rank two is confirmed to 40 digits but
+  not proved.
+- **Nearest-neighbour hops only** on the two-qubit site: impossible in the
+  Clifford family (exact, independent check): G ⪰ 0 forces
+  b0^2 >= 2 b1^2 >= 3 b2^2 and 3 b0^2 <= 1, any moving member needs
+  b2 ≠ 0 (corner hops), and with b1 = b2 = 0 the identity forces b0 = 0. A
+  general two-qubit search on the nearest-neighbour stencil also found none in
+  20 starts.
 
 Two unconstrained two-qubit hits were found; the one analysed has exactly the
 Clifford form of Theorem 1 after a flavor rotation. That all two-qubit
 O-covariant cell walks have this form is not claimed.
+
+## Independent check
+
+A fresh agent context, given a neutral statement of the claims and no access
+to this note or runner, rebuilt everything and confirmed: covariance and the
+unitarity reduction (exact); uniqueness of G(b) (exact; the ten products
+phi_i phi_j are independent); existence at b* by interval arithmetic on an
+isolating interval of width 1e-45 for u* (the quartic
+259200000000u^4 - 453744000000u^3 + 12644840000u^2 + 1185396800u - 39225499
+is irreducible over Q); the spectrum, single cone, cone speed 0.9144223 and
+doubler quasienergies (numerical); and the corrected one-extra-square and
+nearest-neighbour statements above. Its scripts are kept in
+`.claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/`.
+Limits of independence: same model family, new context and new
+implementation.
 
 ## Relation to prior work
 

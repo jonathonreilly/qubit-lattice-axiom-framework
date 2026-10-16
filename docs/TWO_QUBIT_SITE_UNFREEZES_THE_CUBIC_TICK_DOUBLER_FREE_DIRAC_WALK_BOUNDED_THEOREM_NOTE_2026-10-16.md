@@ -205,6 +205,36 @@ site, not a two-site cell, is what the unfreezing needs.
 | doubler gaps (rad) at the seven other TRIM points | 2.308 (three axis points), 2.196 (three face points), 2.198 (corner) |
 | band touchings on a 40^3 grid | k = 0 only |
 
+## Which sites unfreeze (search table and a criterion)
+
+Analytic-Jacobian searches of the full O-covariant family on the cell, with a
+scale-free lower bound on motion (δ = 0.05, and δ = 0.5 where the δ = 0.05
+optimum sat in the quartic valley of the constant walk):
+
+| coin (rep of the binary cubic group) | as spinor (x) flavor | moving walk found |
+|---|---|---|
+| spin 1/2 | spinor | none (exact freeze, companion note) |
+| 2 x spin 1/2 | spinor (x) C^2, trivial flavor action | yes (this note) |
+| spin 3/2 = E (x) spin 1/2 | spinor (x) E | none (16 + 16 starts) |
+| spin 1 | not spinorial | none (20 starts) |
+| spin 1 + spin 0 = spin 1/2 (x) spin 1/2 | spinor (x) spinor | none (16 + 16 starts) |
+| 2 x spin 1 | not spinorial | none (16 + 12 starts) |
+
+**Criterion (observed, proved only in part).** In the Clifford mechanism the
+moving part is g.Gamma with Gamma_a a vector triple of anticommuting Hermitian
+involutions (D Gamma_a D^dagger = sum_b R_ba Gamma_b). Such triples generate
+Cl(3), whose representations are spinorial, so they need a spin-1/2 factor in
+the coin; integer-spin coins have none. With one triple and no invariant
+involution anticommuting with it, unitarity reduces to the companion note's
+identity f^2 + |g|^2 = 1, which freezes (exact). The only coin in the table
+with both ingredients, a spinor factor and an invariant anticommuting
+partner, is 2 x spin 1/2: for spin 3/2 the flavor factor E is irreducible
+(no invariant flavor generator, by Schur), and for spin 1/2 (x) spin 1/2 no
+invariant anticommutes with the triple. In every case searched, cubic-covariant
+one-tick motion appeared exactly when the site is a spin-1/2 doublet, i.e.
+carries Dirac-spinor structure. Coins large enough for two anticommuting
+triples are not covered.
+
 ## What did not unfreeze (search evidence, not proof)
 
 - **Irreducible 4-dimensional coin.** Spin 3/2 restricted to the binary

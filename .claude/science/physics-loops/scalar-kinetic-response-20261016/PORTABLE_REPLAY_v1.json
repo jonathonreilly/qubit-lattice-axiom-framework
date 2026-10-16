@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-16T15:41:14.609356+00:00",
+  "copied_file_sha256": {
+    "scripts/scalar_kinetic_response.py": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2",
+    "docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+    "scripts/scalar_kinetic_background.py": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+    "scripts/scalar_kinetic_response_core.py": "2cb9263f0841849bbf393a06c293f8f45169530e2fdfce7f0ceadcf2ac5d0d28",
+    "scripts/scalar_kinetic_zero.py": "69e8f5bec95b2a0c0537a2df2ddf1071ad23de665dd5445dbbb1d4e87be3bc97",
+    "scripts/scalar_kinetic_phase.py": "8e885688bd5a70b15ad06321647df1672c9e7b2abfa01a1069115fa92fce4864",
+    "scripts/scalar_kinetic_weak.py": "dce72839ce95df00cff487bd9a71311d061a4a3f6d3c8852757150d354b69d01"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 1.8399848327971995,
+  "output_byte_identical": true,
+  "output_sha256": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d",
+  "scope": "Fresh seven-file portable closure; same Python/SymPy, not a different CAS",
+  "stdout_sha256": "1980dc5d4806719008f4494d28ea0f9870600167eff7bb71eb61550de59ce5d4",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

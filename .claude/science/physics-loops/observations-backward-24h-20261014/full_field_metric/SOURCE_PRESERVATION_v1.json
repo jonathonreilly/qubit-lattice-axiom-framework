@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-15T21:20:38.450547+00:00",
+  "base": "95609a8f3545258e5494d95f2d012a9e15ab1c14",
+  "preserved": [
+    {
+      "path": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "preserved": true,
+      "sha256": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00"
+    },
+    {
+      "path": "scripts/scalar_vacuum_metric_check.py",
+      "preserved": true,
+      "sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25"
+    },
+    {
+      "path": "scripts/scalar_vacuum_metric_inverse.py",
+      "preserved": true,
+      "sha256": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4"
+    },
+    {
+      "path": "scripts/scalar_vacuum_metric_weak.py",
+      "preserved": true,
+      "sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+    },
+    {
+      "path": "logs/runner-cache/scalar_vacuum_metric_check.txt",
+      "preserved": true,
+      "sha256": "90b5d88607084221580f7189507b187583c77f5c788ae920423c08abd7b8224b"
+    },
+    {
+      "path": "outputs/scalar_vacuum_metric_evidence_v1.tar.gz",
+      "preserved": true,
+      "sha256": "87bf4be7a945984ed444f2ddab6229ad559f391ce86efc4f2bc387539fbe5f3a"
+    }
+  ],
+  "all_preserved": true,
+  "tracked_scientific_deletions": [],
+  "scope": "Exact M19 canonical science/cache/evidence preservation; full-current-main landing not performed"
+}

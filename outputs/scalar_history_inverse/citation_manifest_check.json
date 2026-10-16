@@ -1,0 +1,27 @@
+{
+  "added_nodes": [
+    "scalar_history_compatibility_note_2026-10-16"
+  ],
+  "changed_existing_nodes": [],
+  "edges_after": 16048,
+  "edges_before": 16048,
+  "manifest_sha256": "06a1beeac0a763b80661fc003200563b321d591b43cab729ffa217f130cb33f8",
+  "node": {
+    "claim_id": "scalar_history_compatibility_note_2026-10-16",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/scalar_history_inverse_math.py"
+    ],
+    "note_hash": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+    "path": "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+    "runner_path": "scripts/scalar_history_inverse.py",
+    "title": "Scalar history constrained without minimum tracking"
+  },
+  "nodes_after": 7112,
+  "nodes_before": 7111,
+  "removed_nodes": [],
+  "source_main": "bbada1fe09b2d10d610560864d86b68c24a59713"
+}

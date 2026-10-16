@@ -1,0 +1,15 @@
+{
+  "time_utc": "2026-10-16T09:25:50.544777+00:00",
+  "scope": "Output metadata wording only; no mathematical or control change",
+  "changed_sources": [
+    "scripts/scalar_history_inverse.py",
+    "outputs/scalar_history_inverse/result.json"
+  ],
+  "from_sha256": "d540f1b5a69093afb74950ba101f81aed757495c0e3f5105471318fdf1ccbd4b",
+  "to_sha256": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+  "diff_bytes": 596,
+  "diff_sha256": "1762a6b068796cdf22c50b0d554ff1eb15ac892c6d7387507629bf66faa087dc",
+  "diff_utf8": "--- canonical_attempt01_primary\n+++ canonical_final_primary\n@@ -27,7 +27,7 @@\n         \"scope\": \"Exact conditional identities and constructed controls; no empirical validation\",\n         \"input_roles\": {\n             \"scientific_data\": \"None; all fixtures constructed in code\",\n-            \"repository_reads\": \"Declared note/helper and primary runner for integrity binding only\",\n+            \"repository_reads\": \"Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity\",\n             \"external_reads\": \"None\",\n         },\n         \"source_sha256\": sources,\n",
+  "exact_one_string_replacement": true,
+  "note_and_helper_unchanged": true
+}

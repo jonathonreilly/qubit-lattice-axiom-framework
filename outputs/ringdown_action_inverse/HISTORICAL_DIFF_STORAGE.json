@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-16T05:51:17.479632+00:00",
+  "original_path": "outputs/ringdown_action_inverse/independent/midpoint_v1_v2.diff",
+  "original_sha256": "cbcdcea739828ef52106043bb411b6d9f462a7e2ae9fc58ab9d4d18b45e1a0fe",
+  "stored_path": "outputs/ringdown_action_inverse/independent/midpoint_v1_v2.diff.gz",
+  "stored_sha256": "3682f2c7f6a73482bbbb3f7f99341000f128134c10062081265227432df721de",
+  "reason": "Historical unified diff contains blank context lines rejected by git diff --check. Exact original bytes are retained in deterministic gzip. No source/report/manifest/runner changes. Resolve the original manifest entry through this mapping.",
+  "decompression_verified": true
+}

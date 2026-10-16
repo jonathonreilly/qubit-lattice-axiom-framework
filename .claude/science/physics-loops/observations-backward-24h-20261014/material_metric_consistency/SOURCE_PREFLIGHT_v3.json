@@ -1,0 +1,46 @@
+{
+  "scope": "Formatting-only source refresh; node/dependencies unchanged from v2; current source/cache direct readiness",
+  "row": {
+    "claim_id": "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15",
+    "runner_path": "scripts/scalar_vacuum_metric_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_vacuum_metric_inverse.py",
+      "scripts/scalar_vacuum_metric_weak.py"
+    ],
+    "deps": [
+      "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15",
+      "exponential_scalar_action_scale_bounded_theorem_note_2026-10-14"
+    ],
+    "note_path": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem"
+  },
+  "issue": null,
+  "cache_status": "fresh",
+  "cache_sha256": "90b5d88607084221580f7189507b187583c77f5c788ae920423c08abd7b8224b",
+  "graph_node": {
+    "claim_id": "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15",
+      "exponential_scalar_action_scale_bounded_theorem_note_2026-10-14"
+    ],
+    "helper_runner_paths": [
+      "scripts/scalar_vacuum_metric_inverse.py",
+      "scripts/scalar_vacuum_metric_weak.py"
+    ],
+    "note_hash": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+    "path": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/scalar_vacuum_metric_check.py",
+    "title": "A nonlinear scalar inverse from a static physical vacuum metric"
+  },
+  "manifest_delta": {
+    "added": [
+      "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15"
+    ],
+    "removed": [],
+    "changed": [],
+    "edge_delta": 2
+  }
+}

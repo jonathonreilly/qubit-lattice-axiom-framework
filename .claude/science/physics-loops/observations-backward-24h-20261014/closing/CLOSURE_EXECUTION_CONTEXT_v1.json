@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-15T21:50:05.792594+00:00",
+  "scope": "Administrative closure after discovery frozen; no scientific execution.",
+  "executed_scripts": [
+    {
+      "path": "close_campaign_at_deadline_v2.py",
+      "sha256": "3c9a7b1137ebdcec4ea6d1e33540a87b2a932e826d401f6d579aaf5427e78a5f"
+    },
+    {
+      "path": "finalize_campaign_report.py",
+      "sha256": "4eced9d342c375ea505f78bc05b991d58b951162079d55d284777f6eb9f2b215"
+    }
+  ],
+  "note": "Shutdown v1 script is an unused preparation version. Executed v2 verifies release of exactly this owner/holder and tolerates an unrelated subsequent lock owner. Actual post-release state was free."
+}

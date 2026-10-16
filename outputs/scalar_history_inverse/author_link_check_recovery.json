@@ -1,0 +1,12 @@
+{
+  "kind": "Author link-check packaging error; no scientific source changed",
+  "initial_command_chunk": "dfac1e",
+  "actual_exit_code": 1,
+  "initial_check": "Regex scanned code blocks and misclassified bracketed field-function expressions as Markdown links",
+  "false_target": "phi(t",
+  "false_target_count": 8,
+  "fix": "Exclude fenced and indented code and require a complete Markdown label before resolving actual links",
+  "final_missing_local_links": [],
+  "science_sources_unchanged": true,
+  "discovery_diagnostic": "Earlier scoped rg named two absent .claude/skills directories; direct scripts/vocab_lint.py path recovered without changing files."
+}

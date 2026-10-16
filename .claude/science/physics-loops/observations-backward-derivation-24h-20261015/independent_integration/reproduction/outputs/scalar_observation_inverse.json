@@ -1,0 +1,345 @@
+{
+  "kind": "author conditional mathematical controls",
+  "scientific_inputs": "synthetic symbols, exact constants and analytic envelopes in the runner; no empirical data",
+  "integrity_reads": {
+    "scripts/scalar_observation_inverse_math.py": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f",
+    "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "13e269dc161a9430141264891d261637aa3666f06056834568a57a6dbf5a3224"
+  },
+  "versions": {
+    "python": "3.12.8",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "checks": [
+    {
+      "name": "general lower-derivative transport",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "power metric scalar exponent",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant-lapse kinetic function",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant-lapse potential ratio",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct vacuum scalar equation b=1/2",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct vacuum scalar equation b=1/3",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "general observation pullback from angular equation",
+      "family": "observation_pullback",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "relabeling integral density",
+      "family": "observation_pullback",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "relabeling endpoint ratio",
+      "family": "observation_pullback",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "nonlinear-label power metric",
+      "family": "observation_pullback",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "static coherent carrier turnaround",
+      "family": "observation_pullback",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust metric compared with Cartesian curvature: time",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust metric compared with Cartesian curvature: radial",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust metric compared with Cartesian curvature: angular",
+      "family": "vacuum_geometry",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust multiplier constraint",
+      "family": "material_action",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust temporal stress",
+      "family": "material_action",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust radial stress",
+      "family": "material_action",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust angular stress",
+      "family": "material_action",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust continuity",
+      "family": "material_action",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong dust clock rejected",
+      "family": "material_action",
+      "ok": true
+    },
+    {
+      "name": "regular-center full time equation",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular-center full radial equation",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular-center full angular equation",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular-center full scalar equation",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "known-source affine transport",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "Cartesian scalar Laplacian",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center profile",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center first derivative",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "center second derivative",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "Einstein kinetic sign expression",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed-action center potential slope",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "potential curvature ratio only",
+      "family": "material_solution",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "undivided sphere transport",
+      "family": "sphere_domain",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "equator divergent coefficient",
+      "family": "sphere_domain",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "separate constant branch temporal equation",
+      "family": "sphere_domain",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "separate constant branch spatial equation",
+      "family": "sphere_domain",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "separate constant branch scalar slope",
+      "family": "sphere_domain",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "exact bin refinement surplus",
+      "family": "radar_bins",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "bin equality profile S=amplitude*r",
+      "family": "radar_bins",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "analytic-envelope primitive perturbation ('.002', '.002', '.003', '.004')",
+      "family": "primitive_error",
+      "ok": true,
+      "actual": "0.00558743534231919776193750438416",
+      "bound": "0.0921310093162456654929260592261"
+    },
+    {
+      "name": "analytic-envelope primitive perturbation ('-.003', '-.004', '-.002', '-.006')",
+      "family": "primitive_error",
+      "ok": true,
+      "actual": "0.00830843083723203583891763957292",
+      "bound": "0.150149150869070073419045611959"
+    },
+    {
+      "name": "analytic-envelope primitive perturbation ('0', '.005', '0', '0')",
+      "family": "primitive_error",
+      "ok": true,
+      "actual": "0.00370012034571629682013496217446",
+      "bound": "0.111395490179798904145324151608"
+    },
+    {
+      "name": "analytic-envelope primitive perturbation ('.003', '0', '0', '0')",
+      "family": "primitive_error",
+      "ok": true,
+      "actual": "0.00566094470728666659753939135169",
+      "bound": "0.0161479366856336717602318447055"
+    },
+    {
+      "name": "analytic-envelope primitive perturbation ('0', '0', '.005', '0')",
+      "family": "primitive_error",
+      "ok": true,
+      "actual": "0.00152475360099983838043559642766",
+      "bound": "0.0226605738666666666666666666667"
+    },
+    {
+      "name": "analytic-envelope primitive perturbation ('0', '0', '0', '.005')",
+      "family": "primitive_error",
+      "ok": true,
+      "actual": "0.000710215760939685110691756638148",
+      "bound": "0.0287709696348892168823745211627"
+    },
+    {
+      "name": "shared clock dependence near positive D margin",
+      "family": "primitive_error",
+      "ok": true,
+      "actual": "66.5442851049316894368543818727",
+      "bound": "205.4112032014002",
+      "eD": "0.002002",
+      "scope": "rational functional control, not an asserted radius trajectory"
+    },
+    {
+      "name": "zero D margin rejected",
+      "family": "primitive_error",
+      "ok": true
+    },
+    {
+      "name": "strict and refined constant-slowness bounds",
+      "family": "radar_bins",
+      "ok": true
+    },
+    {
+      "name": "smooth bump normalization and interior support",
+      "family": "radar_bins",
+      "ok": true
+    },
+    {
+      "name": "positive spike baseline",
+      "family": "radar_bins",
+      "ok": true
+    },
+    {
+      "name": "positive finite-bin spike 0.0625",
+      "family": "radar_bins",
+      "ok": true,
+      "increment": "1.0",
+      "integral": "0.752056249294429080358601434051",
+      "lower": "0.0540093450407758023189946568195",
+      "support": [
+        -0.25,
+        0.25
+      ]
+    },
+    {
+      "name": "positive finite-bin spike 0.015625",
+      "family": "radar_bins",
+      "ok": true,
+      "increment": "1.0",
+      "integral": "0.96804091932975293478212512999",
+      "lower": "0.216037380163103209275978627278",
+      "support": [
+        -0.25,
+        0.25
+      ]
+    }
+  ],
+  "passed": true,
+  "scope": "Conditional local reconstruction, deterministic input bounds and explicit constructions. No fitted or tested physical theory, global completion or stability verdict."
+}

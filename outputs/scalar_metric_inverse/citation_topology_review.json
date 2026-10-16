@@ -1,0 +1,34 @@
+{
+  "base": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
+  "added_nodes": [
+    "scalar_metric_reconstruction_note_2026-10-16"
+  ],
+  "removed_nodes": [],
+  "rewired_nodes": [],
+  "edge_delta": 0,
+  "node": {
+    "claim_id": "scalar_metric_reconstruction_note_2026-10-16",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/scalar_metric_coefficients.py",
+      "scripts/scalar_metric_conditioning.py",
+      "scripts/scalar_metric_constraints.py",
+      "scripts/scalar_metric_fixed_background.py",
+      "scripts/scalar_metric_geometry.py",
+      "scripts/scalar_metric_joint_gain.py",
+      "scripts/scalar_metric_local_kernels.py",
+      "scripts/scalar_metric_photon_map.py",
+      "scripts/scalar_metric_transport.py",
+      "scripts/scalar_metric_varying_coupling.py"
+    ],
+    "note_hash": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+    "path": "docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md",
+    "runner_path": "scripts/scalar_metric_inverse.py",
+    "title": "Scalar reconstruction from metric histories and conditional photon records"
+  },
+  "manifest_sha256": "334d9db8db606b2a7ab37e53af1761da1251328c7f952f06570315f6e9cdecb5",
+  "scope": "Exact topology acknowledged; not a full pipeline or scientific audit"
+}

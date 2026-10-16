@@ -140,3 +140,29 @@ Still supplied: complete action and allowed parameters, staticity of all fields,
 Synthetic geometry is openly chosen to test mathematics. The rapidly oscillating family solves prescribed-metric scalar BVPs only; no material/Einstein realization is implied. The separate manufactured sign-class fixture has a prescribed nonnegative source, explicitly incompatible at its center with the positive-Hv candidate source. Neither construction is an observation, fit, held-out test, initial-state derivation or new primitive.
 
 No new calibration or empirical holdout was opened. Earlier observed products remain development-exposed; unopened campaign products remain unopened. Conventional product-rule/elliptic comparison tools are mathematical tools with stated positivity/domain hypotheses, not novel physical laws.
+
+## M19 nonlinear vacuum inverse
+
+# M19 premise ledger
+
+| Item | Role and disposition |
+|---|---|
+| Displayed Jordan action and parameter relations | Supplied candidate family, personally varied here; not derived from observations |
+| x=y=0, zero transverse derivatives | Consistent classical sector checked from the even full action; physical selection/stability not derived |
+| Material vacuum | Supplied identification; null differences alone cannot distinguish vacuum energy |
+| Static spherical physical metric | Given whole interval in calibrated areal radius; no observed supplier in this block |
+| C3 lapse, C2 radial metric and regular chart | Theorem domain, numerical guards not observational enclosures |
+| Scalar boundary value | Removed on the varying chart by metric null differences plus interval compatibility |
+| k,z,Hv,nu | Reconstructed conditionally; exact interval potential identity required after two-point calibration |
+| Initial history and global continuation | Still open; local membership does not supply preparation |
+| f0,Q,Newton identification | Cancel from vacuum equations; no inference of an overall action coefficient |
+| Error envelopes | Reduced ratio bound derived; instrument-to-derivative errors remain supplied |
+| Literature reconstruction | Established method, only fixed-family compatibility is the scoped increment |
+
+No new primitive, authority change or selector is adopted. Exposed synthetic development is separate from empirical tests; there are zero new empirical tests. Existing day169 receiver/count products remain development-exposed, while unopened campaign products stay unopened.
+
+The integral alternative eliminates direct N'''/B'' evaluation for this inverse, replacing it with N''/B' and finite weighted equations. The exact theorem retains C3/C2 and a uniform amplitude margin. Finite weights, sampled support ordering and numerical bracket margins are development choices and limitations. No physical derivative error bound or complete-interval certificate is derived.
+
+## M20 necessary full-field metric test
+
+x=y=0 is unnecessary for the new necessary envelope. It remains required by the unchanged unique one-field inverse. Candidate action, k/Hv/nu, trial amplitude C, static radial material vacuum and calibrated metric through N3/B2 remain supplied; full smooth roots, derivative kinetic and transverse-equation completion remain open. Zero empirical tests.

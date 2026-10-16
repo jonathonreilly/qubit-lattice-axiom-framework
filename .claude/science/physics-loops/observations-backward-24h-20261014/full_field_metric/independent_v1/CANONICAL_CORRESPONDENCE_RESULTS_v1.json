@@ -1,0 +1,263 @@
+{
+  "scope": "Post-exposure source/formula comparison using independently differentiated synthetic metric jets and frozen canonical function ASTs. No author ODE, aggregate or observed data run.",
+  "source_sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+  "oracle_source_sha256": "efeac035840de1a66197a06b359de4ba209a63a2cf80416034897a1de52b598c",
+  "fixtures": [
+    {
+      "r": "1",
+      "k": "1/10",
+      "z": "3/4",
+      "scope": "Supplied synthetic metric jet; no assertion of candidate solution or envelope admission"
+    },
+    {
+      "r": "3/2",
+      "k": "11/50",
+      "z": "7/5",
+      "scope": "Supplied synthetic metric jet; no assertion of candidate solution or envelope admission"
+    }
+  ],
+  "counts": {
+    "passed": 50,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "fixture0:z",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture0:zp",
+      "passed": true,
+      "scaled_error": "1.4749202806859991664742339044429649337234909787383e-51"
+    },
+    {
+      "name": "fixture0:zpp",
+      "passed": true,
+      "scaled_error": "5.7477192774502061050043470338256597863656713563379e-51"
+    },
+    {
+      "name": "fixture0:T",
+      "passed": true,
+      "scaled_error": "7.5684527874957089841953331563767796493353990238013e-51"
+    },
+    {
+      "name": "fixture0:Delta",
+      "passed": true,
+      "scaled_error": "1.5053349548669452637915006156314569823956748904528e-51"
+    },
+    {
+      "name": "fixture0:E",
+      "passed": true,
+      "scaled_error": "1.2077679878383793991693960996815401480997227017053e-50"
+    },
+    {
+      "name": "fixture0:lx",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture0:ly",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture0:Ux",
+      "passed": true,
+      "scaled_error": "1.7720603656088525600584073969831332383755494606239e-51"
+    },
+    {
+      "name": "fixture0:Uy",
+      "passed": true,
+      "scaled_error": "2.0778060909437430024105134787887846025999500302907e-51"
+    },
+    {
+      "name": "fixture0:x2",
+      "passed": true,
+      "scaled_error": "8.5454227703323824343681028198116840607599812905448e-51"
+    },
+    {
+      "name": "fixture0:y2",
+      "passed": true,
+      "scaled_error": "8.2306069104827911638502486675053022601990201117354e-51"
+    },
+    {
+      "name": "fixture0:Jordan_P",
+      "passed": true,
+      "scaled_error": "8.3523897190381113941891764598483808712974902503283e-53"
+    },
+    {
+      "name": "fixture0:Jordan_q0",
+      "passed": true,
+      "scaled_error": "4.0091470651382934692108047007272228182227953201576e-51"
+    },
+    {
+      "name": "fixture0:Jordan_q1",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture0:Jordan_q2",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture0:Einstein_h0",
+      "passed": true,
+      "scaled_error": "5.011433831422866836513505875909028522778494150197e-52"
+    },
+    {
+      "name": "fixture0:Einstein_h1",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture0:Einstein_h2",
+      "passed": true,
+      "scaled_error": "8.3523897190381113941891764598483808712974902503283e-53"
+    },
+    {
+      "name": "fixture1:z",
+      "passed": true,
+      "scaled_error": "3.8182353001317080659150520959306883983074241144358e-51"
+    },
+    {
+      "name": "fixture1:zp",
+      "passed": true,
+      "scaled_error": "5.232499451719738279470753822538361045484156503225e-51"
+    },
+    {
+      "name": "fixture1:zpp",
+      "passed": true,
+      "scaled_error": "2.5502591912553857622674667878973160991230742283894e-50"
+    },
+    {
+      "name": "fixture1:T",
+      "passed": true,
+      "scaled_error": "1.1029858754619284253430232682117015262917439221075e-50"
+    },
+    {
+      "name": "fixture1:Delta",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture1:E",
+      "passed": true,
+      "scaled_error": "1.4612059735298276663093606217912025975418402694458e-50"
+    },
+    {
+      "name": "fixture1:lx",
+      "passed": true,
+      "scaled_error": "2.6362771652207928719397332827390623970356817131921e-51"
+    },
+    {
+      "name": "fixture1:ly",
+      "passed": true,
+      "scaled_error": "3.5653527878804167058408172334574504220476512503894e-51"
+    },
+    {
+      "name": "fixture1:Ux",
+      "passed": true,
+      "scaled_error": "1.4059917219336981174047414155208174857180708619496e-51"
+    },
+    {
+      "name": "fixture1:Uy",
+      "passed": true,
+      "scaled_error": "1.9197961017868832097280050282626046913101226973484e-51"
+    },
+    {
+      "name": "fixture1:x2",
+      "passed": true,
+      "scaled_error": "1.5458142306378125758109345079873390058690084268697e-50"
+    },
+    {
+      "name": "fixture1:y2",
+      "passed": true,
+      "scaled_error": "2.0008304579992000891264522927577679667948328955976e-50"
+    },
+    {
+      "name": "fixture1:Jordan_P",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture1:Jordan_q0",
+      "passed": true,
+      "scaled_error": "3.0068602988537201019081035255454171136670964901182e-51"
+    },
+    {
+      "name": "fixture1:Jordan_q1",
+      "passed": true,
+      "scaled_error": "1.9666745547842876392529370529037818530917442959172e-51"
+    },
+    {
+      "name": "fixture1:Jordan_q2",
+      "passed": true,
+      "scaled_error": "2.6222327397123835190039160705383758041223257278896e-51"
+    },
+    {
+      "name": "fixture1:Einstein_h0",
+      "passed": true,
+      "scaled_error": "3.3409558876152445576756705839393523485189961001313e-52"
+    },
+    {
+      "name": "fixture1:Einstein_h1",
+      "passed": true,
+      "scaled_error": "0.0"
+    },
+    {
+      "name": "fixture1:Einstein_h2",
+      "passed": true,
+      "scaled_error": "3.3409558876152445576756705839393523485189961001313e-52"
+    },
+    {
+      "name": "domain:nan_metric",
+      "passed": true
+    },
+    {
+      "name": "domain:negative_radius",
+      "passed": true
+    },
+    {
+      "name": "domain:negative_B",
+      "passed": true
+    },
+    {
+      "name": "domain:zero_k",
+      "passed": true
+    },
+    {
+      "name": "domain:upper_k",
+      "passed": true
+    },
+    {
+      "name": "domain:zero_Hv",
+      "passed": true
+    },
+    {
+      "name": "domain:negative_nu",
+      "passed": true
+    },
+    {
+      "name": "domain:infinite_nu",
+      "passed": true
+    },
+    {
+      "name": "domain:zero_z",
+      "passed": true
+    },
+    {
+      "name": "domain:complex_amplitude",
+      "passed": true
+    },
+    {
+      "name": "domain:singular_chart",
+      "passed": true
+    },
+    {
+      "name": "current_protocol_precision_and_tolerance_match_source",
+      "passed": true
+    }
+  ]
+}

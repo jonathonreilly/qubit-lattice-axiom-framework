@@ -1,0 +1,15 @@
+{
+  "time_utc": "2026-10-16T08:58:22.508907+00:00",
+  "phase": "Independent proof and decisive fixtures frozen before own implementation and any author artifact access",
+  "files": {
+    "NEUTRAL_CONTRACT_BEFORE_EXPOSURE_v1.json": {
+      "sha256": "6d78ea25ee49fa16fc5f673b2a83859d7758fedf47162831fedbcb380824d580",
+      "bytes": 1351
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "ef323551a5f64592cca1a1b095a86646f0f631b52ffb1c36ef4fa6293d0300da",
+      "bytes": 10392
+    }
+  },
+  "author_artifacts_read": false
+}

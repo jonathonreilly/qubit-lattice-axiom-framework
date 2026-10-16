@@ -1,0 +1,18 @@
+{
+  "scope": "Only the changed midpoint family rerun after its control correction; other23results remain explicitly bound to the earlier source",
+  "source_sha256": "834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df",
+  "mutation": {
+    "name": "midpoint_certificate",
+    "old": "Lq*sum(widths**2)/4",
+    "new": "0*Lq*sum(widths**2)/4",
+    "occurrences": 1,
+    "mutant_sha256": "be6fb78249e725a8ceee3d559ceaf0d46e69dd1e7f23be917ad5a32d13191d4b",
+    "exit_code": 1,
+    "failed_checks": [
+      "FAIL: common action: sharp_midpoint_term_without_readout_cancellation"
+    ],
+    "stderr": "",
+    "stdout_sha256": "185e9bf65ab104c33a15b91dc6f9fd739e63497d72fb72c0a3b10f026343504e",
+    "detected": true
+  }
+}

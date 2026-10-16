@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-16T05:45:09.640549+00:00",
+  "complete_report_proof_code_results_read": true,
+  "checked_manifest": "outputs/ringdown_action_inverse/independent/final_bindings_v2.json",
+  "manifest_sha256": "6b37278350c222554a63d4762903373e68b40890aaa20f68d89b1d3df9f66276",
+  "all_bindings_verified": 57,
+  "report_sha256": "77dc96fa5991ca9781244ee39988841527287dfdf4ce629f58a5780a7bf73aee",
+  "canonical_controls": 195,
+  "independent_assertions_by_set": [
+    268,
+    418,
+    22,
+    6
+  ],
+  "counts_overlap_not_summed": true,
+  "no_formal_audit_or_empirical_validation": true
+}

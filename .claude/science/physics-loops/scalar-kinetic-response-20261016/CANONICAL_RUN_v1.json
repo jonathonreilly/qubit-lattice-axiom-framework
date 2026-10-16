@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-16T15:37:25.750990+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 1.9814282078295946,
+  "timeout_seconds": 120,
+  "source_sha256": {
+    "docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+    "scripts/scalar_kinetic_background.py": "e5c7a3e2b424faef31e3a86ca281e068c1688c42972668073b982d77d1997fbd",
+    "scripts/scalar_kinetic_phase.py": "2a12eb30a0435049faab7aea3791019125ee3c3222f3e1505f4593c4801af2c4",
+    "scripts/scalar_kinetic_response.py": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2",
+    "scripts/scalar_kinetic_response_core.py": "1b0cd136728c9adf4de6ef94c3935afd2bd07160027409a5de413941e86e266f",
+    "scripts/scalar_kinetic_weak.py": "ab1981530d826382b641f9ae5a243cd1cd60ecbada7568d1b3fe1aab402ef0bc",
+    "scripts/scalar_kinetic_zero.py": "12a93681777ec41dfcccde59fd9e25c5e4aaa99472749f2f45cf65c0efe29d7c"
+  },
+  "output_sha256": "6a5eae242d12569bd5bfb39de71ad3d218c000f78379bbfdd6341c536f067bde",
+  "unit_counts": {
+    "general_action": [
+      82,
+      0
+    ],
+    "real_phase_and_jets": [
+      40,
+      0
+    ],
+    "regular_zero": [
+      18,
+      0
+    ],
+    "response_inverse": [
+      84,
+      0
+    ],
+    "weak_rejection": [
+      28,
+      0
+    ]
+  }
+}

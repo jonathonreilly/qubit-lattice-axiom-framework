@@ -1,0 +1,63 @@
+{
+  "kind": "final focused-check source binding; no audit status",
+  "utc_time": "2026-10-16T00:31:06.491265+00:00",
+  "canonical_sources": {
+    "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768",
+    "scripts/scalar_observation_inverse.py": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
+    "scripts/scalar_observation_inverse_math.py": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44"
+  },
+  "exact_reproduction_source_copies": {
+    "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768",
+    "scripts/scalar_observation_inverse.py": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
+    "scripts/scalar_observation_inverse_math.py": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44"
+  },
+  "current_independent_checks": {
+    "successful": 29,
+    "failed": 0
+  },
+  "current_primary_reproduction": {
+    "successful": 56,
+    "failed": 0
+  },
+  "active_checkers": {
+    "check_integrated_math.py": {
+      "sha256": "53070a475de24c4b49cbbcf1f91d1b02199838a7fe80e9402dec70efd644e457",
+      "literal_declarations": {
+        "AUDIT_TIMEOUT_SEC": 120,
+        "AUDIT_INPUT_PATHS": [
+          "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md",
+          "scripts/scalar_observation_inverse.py",
+          "scripts/scalar_observation_inverse_math.py"
+        ]
+      },
+      "execution_receipt": "independent_math_execution.json",
+      "elapsed_seconds": 0.9889713330194354
+    },
+    "observe_runner.py": {
+      "sha256": "e70b5e523b69c17da9bfa51a8a07151c9f2e272a5ee42b0424f414ab65fa44fa",
+      "literal_declarations": {
+        "AUDIT_TIMEOUT_SEC": 120,
+        "AUDIT_INPUT_PATHS": [
+          ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/scalar_observation_inverse.py",
+          ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/scalar_observation_inverse_math.py",
+          ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md"
+        ]
+      },
+      "execution_receipt": "reproduction_execution.json",
+      "elapsed_seconds": 20.388758041895926
+    }
+  },
+  "helper_public_functions_exercised": [
+    "spherical_geometry",
+    "vacuum_inverse",
+    "observation_parts",
+    "primitive_bound",
+    "bin_lower_bound",
+    "dust_family",
+    "sphere_transport_profile"
+  ],
+  "unexpected_repository_open_events": [],
+  "observed_cache_lookup_has_no_file": true,
+  "all_owned_runs_complete": true,
+  "earlier_results": "preserved historical evidence only; not accumulated into final counts"
+}

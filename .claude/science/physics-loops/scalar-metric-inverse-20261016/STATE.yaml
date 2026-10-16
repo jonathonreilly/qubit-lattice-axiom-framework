@@ -1,0 +1,30 @@
+campaign: observations-backward-derivation-24h-20261015
+milestone: scalar-metric-inverse-20261016
+author: root
+branch: codex/scalar-metric-inverse-20261016
+base: 5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+phase: focused review complete; publication prepared
+deadline: '2026-10-16T22:36:59Z'
+packaging_cutoff: '2026-10-16T22:21:59Z'
+primary: scripts/scalar_metric_inverse.py
+independent_review: complete focused source checks; no scoped correction remaining
+shared_landing_validation: pending
+empirical_validation: false
+next_action: Joint background and primitive measurement identification
+created_pr: null
+updated_at: '2026-10-16T12:07:46.560134+00:00'
+primary_counts:
+  coefficients: 40
+  conditioning: 19
+  constraints: 10
+  fixed_background: 24
+  geometry: 42
+  joint_gain: 22
+  local_kernels: 23
+  photon_map: 53
+  transport: 20
+  varying_coupling: 13
+actual_mutations_detected: 12
+actual_mutations_total: 12

@@ -117,3 +117,25 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
 The root author proves a change of variables and comparison inequality, not the revised theory or its measured realization. Spatial curvature, ranging second derivative, central combined-metric coefficient, areal-radius calibration and quantitative errors remain inputs. Qualitative C3 regularity is unchanged. The selected algebraic exponent is forced within the displayed power family; no general uniqueness or fundamental selector follows. No formal audit verdict, effective retained status, full-main landing gate or merge is applied. Focused final-source findings and delivery receipts are recorded separately.
+
+## M19 nonlinear vacuum inverse
+
+# M19 source status
+
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: Local nonlinear metric-to-field/parameter inverse with necessary and sufficient interval conditions on the stated static radial vacuum chart
+hypothetical_axiom_status: null
+admitted_observation_status: Zero newly opened observational arrays and zero independent empirical tests
+proposal_allowed: false
+proposal_allowed_reason: The action family, calibrated physical metric, material vacuum and scalar sector are supplied premises
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+The initial-boundary input is eliminated from this inverse, not selected dynamically. The reconstructed scalar and parameters are synthetic examples, not measured values. No general uniqueness across material/field sectors, global solution, stable history, measured G, action selection or TOE is established. Formal audit and integrated landing remain future activities.
+
+## M20 conditional necessary envelope
+
+actual_current_surface_status: conditional-support; proposal_allowed: false; bare_retained_allowed: false. Supplied action/parameters/amplitude, physical metric/vacuum and full-solution completion remain. Independent34exact and50post-exposure formula checks do not confer formal audit status.

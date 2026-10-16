@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "scripts/sampled_coupling_inverse.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/sampled-coupling-inverse-20261016/New Axioms Lets Go",
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.47503704158589244,
+  "returncode": 0
+}

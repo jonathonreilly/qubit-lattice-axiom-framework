@@ -1,0 +1,398 @@
+{
+  "original_source_sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+  "records": [
+    {
+      "name": "shape_integral_factor",
+      "source_sha256": "ef7dfd7d64f66a32f8af930b3bc9ddf55aa4f6cae7733ffb697cf6770303bea9",
+      "replacements": [
+        [
+          "np.exp(e0-e+integ)",
+          "np.exp(e0-e+1.0001*integ)"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "case0_k",
+          "passed": false
+        },
+        {
+          "name": "case0_Y",
+          "passed": false
+        },
+        {
+          "name": "case0_later_kinetic",
+          "passed": false
+        },
+        {
+          "name": "case0_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case0_nu",
+          "passed": false
+        },
+        {
+          "name": "case0_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case1_k",
+          "passed": false
+        },
+        {
+          "name": "case1_Y",
+          "passed": false
+        },
+        {
+          "name": "case1_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case1_nu",
+          "passed": false
+        },
+        {
+          "name": "case1_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case2_k",
+          "passed": false
+        },
+        {
+          "name": "case2_Y",
+          "passed": false
+        },
+        {
+          "name": "case2_later_kinetic",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 3.218029022216797
+    },
+    {
+      "name": "shape_radial_power",
+      "source_sha256": "3a44dbce4cda37a4900633e3ce26cc0303d82d0013d0638472f19e879586589b",
+      "replacements": [
+        [
+          "(q*np.sqrt(b)*r*r)",
+          "(q*np.sqrt(b)*r**2.0001)"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "case0_k",
+          "passed": false
+        },
+        {
+          "name": "case0_Y",
+          "passed": false
+        },
+        {
+          "name": "case0_later_kinetic",
+          "passed": false
+        },
+        {
+          "name": "case0_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case0_nu",
+          "passed": false
+        },
+        {
+          "name": "case0_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case1_k",
+          "passed": false
+        },
+        {
+          "name": "case1_Y",
+          "passed": false
+        },
+        {
+          "name": "case1_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case1_nu",
+          "passed": false
+        },
+        {
+          "name": "case1_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case2_k",
+          "passed": false
+        },
+        {
+          "name": "case2_Y",
+          "passed": false
+        },
+        {
+          "name": "case2_later_kinetic",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 2.380007028579712
+    },
+    {
+      "name": "kinetic_window_derivative",
+      "source_sha256": "63cf6c480914f4c46b316c7ed4a0a1d0843836272701194a7258a8b730b95ec9",
+      "replacements": [
+        [
+          "+wp*u))",
+          "+1.0001*wp*u))"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "case0_k",
+          "passed": false
+        },
+        {
+          "name": "case0_Y",
+          "passed": false
+        },
+        {
+          "name": "case0_later_kinetic",
+          "passed": false
+        },
+        {
+          "name": "case0_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case0_nu",
+          "passed": false
+        },
+        {
+          "name": "case0_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case1_inverse_admitted",
+          "passed": false,
+          "error": "Outside positive candidate potential domain"
+        },
+        {
+          "name": "case2_k",
+          "passed": false
+        },
+        {
+          "name": "case2_Y",
+          "passed": false
+        },
+        {
+          "name": "case2_later_kinetic",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 2.354398012161255
+    },
+    {
+      "name": "kinetic_normalization",
+      "source_sha256": "24a3762463dc796d9adcc8a126ea8e5a0c6c0c58033b3ec52648ae94929b633d",
+      "replacements": [
+        [
+          "lam=aa(p1,eta)/(2*p1['K'])",
+          "lam=aa(p1,eta)/(2.001*p1['K'])"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "case0_k",
+          "passed": false
+        },
+        {
+          "name": "case0_Y",
+          "passed": false
+        },
+        {
+          "name": "case0_later_kinetic",
+          "passed": false
+        },
+        {
+          "name": "case0_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case0_nu",
+          "passed": false
+        },
+        {
+          "name": "case0_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case1_k",
+          "passed": false
+        },
+        {
+          "name": "case1_Y",
+          "passed": false
+        },
+        {
+          "name": "case1_later_kinetic",
+          "passed": false
+        },
+        {
+          "name": "case1_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case1_nu",
+          "passed": false
+        },
+        {
+          "name": "case1_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case2_k",
+          "passed": false
+        },
+        {
+          "name": "case2_Y",
+          "passed": false
+        },
+        {
+          "name": "case2_later_kinetic",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 2.388087034225464
+    },
+    {
+      "name": "potential_window_derivative",
+      "source_sha256": "5f2216a97f9c765752a1614d1f8e4cee2004682e95509d553918888a7c6125fb",
+      "replacements": [
+        [
+          "+b*u*wp/2",
+          "+1.0001*b*u*wp/2"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "case0_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case0_nu",
+          "passed": false
+        },
+        {
+          "name": "case0_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case1_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case1_nu",
+          "passed": false
+        },
+        {
+          "name": "case1_later_potential",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 2.3647799491882324
+    },
+    {
+      "name": "potential_metric_derivative",
+      "source_sha256": "56e78ecd25fcc5309eac682a1ead65683d18f97973f35a79c2183d30e9f72b4a",
+      "replacements": [
+        [
+          "(bp/4-b*e1/2-2*b/rs)",
+          "(bp/4.001-b*e1/2-2*b/rs)"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "case0_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case0_nu",
+          "passed": false
+        },
+        {
+          "name": "case0_later_potential",
+          "passed": false
+        },
+        {
+          "name": "case1_Hv2",
+          "passed": false
+        },
+        {
+          "name": "case1_nu",
+          "passed": false
+        },
+        {
+          "name": "case1_later_potential",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 2.3624989986419678
+    },
+    {
+      "name": "potential_basis_factor",
+      "source_sha256": "724a9d2a83ed381d7630f9b0ec27b12ee5364ff1f23e63f77cba0bddf9887978",
+      "replacements": [
+        [
+          "np.log(Y)**2/(4*a)",
+          "np.log(Y)**2/(4.001*a)"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "case0_nu",
+          "passed": false
+        },
+        {
+          "name": "case1_nu",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 2.3663437366485596
+    },
+    {
+      "name": "later_potential_replaced_by_fit",
+      "source_sha256": "d2c2cdec397b3aba9a205594b5ccc746382cc60e26a4b52063ce62f03f7369e0",
+      "replacements": [
+        [
+          "result['potential_residuals'][2:]",
+          "result['potential_residuals'][:2]"
+        ]
+      ],
+      "rejected_by_false_controls": true,
+      "failed_controls": [
+        {
+          "name": "changed_potential_later_rejection",
+          "passed": false
+        }
+      ],
+      "exception": null,
+      "elapsed_seconds": 2.5118250846862793
+    }
+  ]
+}

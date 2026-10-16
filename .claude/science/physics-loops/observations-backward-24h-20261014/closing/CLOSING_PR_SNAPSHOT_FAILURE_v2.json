@@ -1,0 +1,5 @@
+{
+  "failure": "KeyError: baseRefOid",
+  "effect": "Earlier comparator expected a key absent in saved metadata; no GitHub state was mutated by that read attempt. Replaced with exact head matching in v3.",
+  "resolved_by": "CLOSING_PR_SNAPSHOT_v3.json"
+}

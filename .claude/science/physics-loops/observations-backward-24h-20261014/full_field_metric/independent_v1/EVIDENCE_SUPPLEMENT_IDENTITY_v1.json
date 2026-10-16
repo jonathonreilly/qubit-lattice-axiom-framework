@@ -1,0 +1,89 @@
+{
+  "at_utc": "2026-10-15T21:21:46.208565+00:00",
+  "scope": "Narrow saved execution/cache/product and exact source-mutation binding, no scientific rerun",
+  "files": [
+    {
+      "path": "EVIDENCE_SUPPLEMENT_v1.md",
+      "sha256": "32518c3850ae5b22f95859e8158ce533e0d14f13ff4b9c6b85ae0726791f4581",
+      "bytes": 5373
+    },
+    {
+      "path": "EVIDENCE_BINDING_RESULTS_v1.json",
+      "sha256": "d72aaf1b81c56ea3e12defee49b7baee769445ef7b03f9da5e6a164ea7da4bb2",
+      "bytes": 17978
+    },
+    {
+      "path": "evidence_binding_v1.py",
+      "sha256": "f9c662b495587d0f0df576e936928ead8a60d29163a6427c4b2883ac6cadbcfb",
+      "bytes": 7497
+    },
+    {
+      "path": "CANONICAL_REVIEW_v1.md",
+      "sha256": "68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919",
+      "bytes": 9007
+    },
+    {
+      "path": "CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "383d8a457d185264d95a2fd9926e1485498d4b1d4b1c65cbfc955813a118daea",
+      "bytes": 3685
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__GUARDED_EXECUTION_v1.json",
+      "sha256": "69355c5e6c1d2ca1e7646b9e8315beae9a10c36b22fe95093088fa90df8f0514",
+      "bytes": 9701
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__MUTATIONS_v1.json",
+      "sha256": "ee67693b15ba17cec3adfae59525b48df78283fb57f9cdd4c08a0602816e0e03",
+      "bytes": 3451
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__HANDOFF.md",
+      "sha256": "a0474e42999ce125eaa2994d654f91261dad84246ed06be5584c5e4a8d4ce5d6",
+      "bytes": 4998
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__EXECUTION_v1.json",
+      "sha256": "e3e960bc096fffd9688a2ffd42b0ea7d974c23b0b81540e79430ea69e2354b59",
+      "bytes": 799
+    },
+    {
+      "path": "outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__RESULTS_v1.json",
+      "sha256": "2e2de12cbaaebc759f95fa16f5701e44dc7bb5ec6b5faa67096557c8e21d3de0",
+      "bytes": 9938
+    },
+    {
+      "path": "outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__SUMMARY_v1.json",
+      "sha256": "e63c3c720e4e79a52209e21a896dd4aac6e61823941c3d6c20cfa2e88d92c7a8",
+      "bytes": 1746
+    },
+    {
+      "path": "logs/runner-cache/scalar_full_field_metric_check.txt",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__scalar_full_field_metric_check.txt",
+      "sha256": "02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995",
+      "bytes": 2540
+    }
+  ],
+  "cache_sha256": "02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995",
+  "source_input_identity": {
+    "runner_sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+    "input_fingerprint_sha256": "996e3febacdc7b856e3afb89ef3e08ba1a304e76613897884ca72062800370e6"
+  },
+  "author_counts_as_saved": {
+    "failed": 0,
+    "passed": 31
+  },
+  "mutations_with_failed_controls": 8,
+  "exception_only_detections": 0,
+  "survivors": 0,
+  "shared_files_edited": false,
+  "formal_audit": false
+}

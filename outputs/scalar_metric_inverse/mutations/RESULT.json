@@ -1,0 +1,366 @@
+{
+  "scope": "Actual source perturbations; failures must be scientific predicates, not exceptions or integrity-only checks",
+  "results": [
+    {
+      "name": "geometry_lapse",
+      "source": "scalar_metric_geometry.py",
+      "source_sha256": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+      "mutant_sha256": "6932ae00ba8d7c58d1cc28e57f435859b954fe2b1e09a4c2fab26fd00824112f",
+      "old": "gtt=-1+2*eps*psi*co",
+      "new": "gtt=-1+3*eps*psi*co",
+      "exit_code": 1,
+      "elapsed_seconds": 0.5165130831301212,
+      "failed_scientific_controls": [
+        {
+          "name": "linear covariant Box from determinant and inverse metric",
+          "pass": false,
+          "residual": "(a(t)*psi(t)*Derivative(ph(t), (t, 2)) + a(t)*Derivative(ph(t), t)*Derivative(psi(t), t) + 3*psi(t)*Derivative(a(t), t)*Derivative(ph(t), t))/a(t)"
+        },
+        {
+          "name": "full scalar equation follows from varied source at fixed bare rho",
+          "pass": false,
+          "residual": "-P*force + Pd*v"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "6254e41eeaea5e2b6edb79b091c765f2b0ab931aa4c060cb815a930e806c2138",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "constraint_raychaudhuri",
+      "source": "scalar_metric_constraints.py",
+      "source_sha256": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+      "mutant_sha256": "98643139b6d811727e38f2f733ddb210da394ce93a197664caf2839b928e93bd",
+      "old": "H:-(r+v*v)/(2*M*M)",
+      "new": "H:-(r+v*v)/(3*M*M)",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2235992499627173,
+      "failed_scientific_controls": [
+        {
+          "name": "Hamiltonian constraint propagated",
+          "pass": false,
+          "residual": "(r + v**2)*(U*r - u*v)/(2*M**2)"
+        },
+        {
+          "name": "spatial trace follows from momentum and original equations",
+          "pass": false,
+          "residual": "P*(r + v**2)/(6*M**2)"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "fa38792fda89146ec22f56596314f2dddab6db0f1d7c156cc8919a2cf9acee3a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "coefficient_coupling",
+      "source": "scalar_metric_coefficients.py",
+      "source_sha256": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+      "mutant_sha256": "abdd0cfa38773b70726bde42f9dade08689f07ab03a2762a0ce22ca4534c2616",
+      "old": "ee = 2*b*b",
+      "new": "ee = 3*b*b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.6738184997811913,
+      "failed_scientific_controls": [
+        {
+          "name": "quotient derivatives give five coefficients",
+          "pass": false,
+          "residual": "kj2*P(tau)*b(tau)**2"
+        },
+        {
+          "name": "coupling magnitude recovered",
+          "pass": false,
+          "residual": "b(tau)**2/2"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "2efc7d534e87faf2b91249b1648b3ee51861d58bddc6b2f7fa8b89fb16f42c15",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "varying_log_derivative",
+      "source": "scalar_metric_varying_coupling.py",
+      "source_sha256": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01",
+      "mutant_sha256": "0b5e732da3b200849baa1665e71d6d2bfeae218a54a521e52ea9935881194f10",
+      "old": "Lval=Bp/(2*BB)",
+      "new": "Lval=Bp/BB",
+      "exit_code": 1,
+      "elapsed_seconds": 1.1219405829906464,
+      "failed_scientific_controls": [
+        {
+          "name": "speed product recovered from registered potential jets",
+          "pass": false,
+          "max_relative_error": 0.07575420862997598
+        },
+        {
+          "name": "fixed-bare-density curvature recovered from registered potential jets",
+          "pass": false,
+          "max_relative_error": 0.30039785318391415
+        },
+        {
+          "name": "source ratio recovered from registered potential jets",
+          "pass": false,
+          "max_relative_error": 0.13723738406245672
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "265772ac6e3b14e301ca8e183dc5de19ebbbb944193cef8536101bc0cb864a9e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "joint_gain_coupling",
+      "source": "scalar_metric_joint_gain.py",
+      "source_sha256": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+      "mutant_sha256": "d729716dd1f4f2f8edab89457aded7b5ecb8202d8b65995ba12e7fd4932893e0",
+      "old": "qq=BB*trace[2];",
+      "new": "qq=trace[2];",
+      "exit_code": 1,
+      "elapsed_seconds": 0.6059646247886121,
+      "failed_scientific_controls": [
+        {
+          "name": "q in critical-coupling gain witness",
+          "pass": false,
+          "max_error": 0.1449489742783172
+        },
+        {
+          "name": "drift in critical-coupling gain witness",
+          "pass": false,
+          "max_error": 0.2381448361039214
+        },
+        {
+          "name": "kappa in critical-coupling gain witness",
+          "pass": false,
+          "max_error": 0.10588344532759755
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "6b02b0f31d84b521639877a044eee41abd49888dc451d248f0ce5e010ef4d214",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "photon_mixed_derivative",
+      "source": "scalar_metric_photon_map.py",
+      "source_sha256": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+      "mutant_sha256": "495e0e8c5b315c4a6aa87b4a371a4d32d9ad4356ed4a0e0151a983df58c72039",
+      "old": "lapcone=lambda f:(s.diff(f,r,2)+2*s.diff(f,r,u)+s.diff(f,u,2)",
+      "new": "lapcone=lambda f:(s.diff(f,r,2)+s.diff(f,r,u)+s.diff(f,u,2)",
+      "exit_code": 1,
+      "elapsed_seconds": 0.9166521248407662,
+      "failed_scientific_controls": [
+        {
+          "name": "coeval_laplacian_cone_chain",
+          "pass": false,
+          "residual": "r*(3*mu**2 - 1)*(3*r - 4*u)/2"
+        },
+        {
+          "name": "observer_time_gain_spatial_product",
+          "pass": false,
+          "residual": "-r*(3*mu**2 - 1)*(5*r**3 - 3*r*u + 2*u**2)*Derivative(g(u), u)/2"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "6566dade3266f306ddc03383efe82358b2b894b4b431a95181fba2ffe478eeb6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "transport_characteristic",
+      "source": "scalar_metric_transport.py",
+      "source_sha256": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+      "mutant_sha256": "c84a68dd8ac69eaf1d9624f7cad709d8127573804ea7f8c81bcb865f00aed8b7",
+      "old": "T=lambda f:s.diff(f,r)+2*s.diff(f,u)+Hc*f",
+      "new": "T=lambda f:s.diff(f,r)+s.diff(f,u)+Hc*f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4827557089738548,
+      "failed_scientific_controls": [
+        {
+          "name": "velocity_potential_residual_transport",
+          "pass": false,
+          "residual": "(3*mu**2 - 1)*(2*r**2 + 2*r*u - r + 2*u**3 - 3*u**2 + 2)*exp(2*r)*exp(-2*u)/2",
+          "expected_zero": true
+        },
+        {
+          "name": "force_transport",
+          "pass": false,
+          "residual": "-(3*mu**2 - 1)*(r + 3*u**2 - 3*u)*exp(2*r)*exp(-2*u)",
+          "expected_zero": true
+        },
+        {
+          "name": "homogeneous_transport_family",
+          "pass": false,
+          "residual": "-(3*mu**2 - 1)*(2*r - u)**2*(4*r - 2*u + 3)*exp(2*r)*exp(-2*u)/2",
+          "expected_zero": true
+        },
+        {
+          "name": "homogeneous_force_transport",
+          "pass": false,
+          "residual": "-3*(3*mu**2 - 1)*(2*r - u)*(2*r - u + 1)*exp(2*r)*exp(-2*u)",
+          "expected_zero": true
+        },
+        {
+          "name": "forced_transport_solution",
+          "pass": false,
+          "residual": "(8*r**3 - 12*r**2*u + 33*r**2 + 6*r*u**2 - 30*r*u + 12*r + 6*u**2 - 6*u + 6)*exp(2*r)*exp(-2*u)/3",
+          "expected_zero": true
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "eed56e3c936161dbf7c3ca59f1a8f37a159284e39cd0417c2934b1334339c542",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "spherical_curvature",
+      "source": "scalar_metric_fixed_background.py",
+      "source_sha256": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+      "mutant_sha256": "3fe9ff9d615eb523f371819bf57c75d954cbd4dab05fa52880ff9ab23d29698f",
+      "old": "D=Lam-C*C-C/r",
+      "new": "D=Lam-C*C",
+      "exit_code": 1,
+      "elapsed_seconds": 0.6538776247762144,
+      "failed_scientific_controls": [
+        {
+          "name": "general_local_reconstruction_identity",
+          "pass": false,
+          "expected_zero": true,
+          "residual": "-C*W(r, mu)/r"
+        },
+        {
+          "name": "exceptional_denominator_simple_radial_zero",
+          "pass": false,
+          "expected_zero": true,
+          "residual": "-C/r**2"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "39b4067029267097f9970a208b6a444c5aa21bd6b1f46c1278b55d55cd5d3f36",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "conditioning_stencil",
+      "source": "scalar_metric_conditioning.py",
+      "source_sha256": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+      "mutant_sha256": "b3c71366e0fb2ddf8626c4adcbc07f9308ce08619f0b898aa2dd5d85d7da3009",
+      "old": "w0=-ri*ri/(dr*dr)",
+      "new": "w0=-ri*ri/(2*dr*dr)",
+      "exit_code": 1,
+      "elapsed_seconds": 0.08403887460008264,
+      "failed_scientific_controls": [
+        {
+          "name": "polynomial_zero_noise_65_0.005",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_65_0.025",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_65_0.1",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_129_0.005",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_129_0.025",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_129_0.1",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_257_0.005",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_257_0.025",
+          "pass": false
+        },
+        {
+          "name": "polynomial_zero_noise_257_0.1",
+          "pass": false
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "37f7c3723c1995b83a15089b74b6051c960e9156880286da71d4a9901eddaf61",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "kernel_polynomial",
+      "source": "scalar_metric_local_kernels.py",
+      "source_sha256": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+      "mutant_sha256": "fef898099e3f8b3d57b7000f86ac0a8c8507ab01eec3e4404fc5f20912b00c4c",
+      "old": "2*ss2/lam**2+ss1*mu/lam",
+      "new": "3*ss2/lam**2+ss1*mu/lam",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4247490828856826,
+      "failed_scientific_controls": [
+        {
+          "name": "polynomial-source radial particular solution",
+          "pass": false,
+          "expected_zero": true,
+          "residual": "s2*(lambda*r - 1)/lambda**2"
+        },
+        {
+          "name": "forbidden inverse-radius coefficient",
+          "pass": false,
+          "expected_zero": true,
+          "residual": "-2*s2/lambda**2"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "6be473e6d386c97cc9befe8db9fa3d363fa5122615b96d224b855aca7081c48f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "nonsingular_reconstruction",
+      "source": "scalar_metric_local_kernels.py",
+      "source_sha256": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+      "mutant_sha256": "ad4cec7726aac41ab7a571ec45bdba292fb4c7337e8d06378db93a63cdd31429",
+      "old": "s.diff(N,r)-cc*N-D*f",
+      "new": "s.diff(N,r)-cc*N+D*f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4397870418615639,
+      "failed_scientific_controls": [
+        {
+          "name": "root reconstruction avoids exceptional D denominator",
+          "pass": false,
+          "expected_zero": true,
+          "residual": "2*r*(C*W(r, mu) - Derivative(W(r, mu), r))*(C**2*r + C - Lambda*r)/C"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "86a7d0db32d67311535a4b4a8001a8e886e0cbd2871ebc0ec133447ae1c7bb63",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "planar_geometry",
+      "source": "scalar_metric_local_kernels.py",
+      "source_sha256": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+      "mutant_sha256": "c2c4f5509b593e819a40acdd859cb1d4e23d8720643555d4491b532ee3156fc3",
+      "old": "s.exp(Z+s.sqrt(14)*X)",
+      "new": "s.exp(Z+s.sqrt(13)*X)",
+      "exit_code": 1,
+      "elapsed_seconds": 0.42856508400291204,
+      "failed_scientific_controls": [
+        {
+          "name": "planar mode bare continuity",
+          "pass": false,
+          "expected_zero": true,
+          "residual": "-exp(Z)*exp(sqrt(13)*X)/(4*tau**(5/2))"
+        },
+        {
+          "name": "planar mode uneliminated scalar",
+          "pass": false,
+          "expected_zero": true,
+          "residual": "exp(Z)*exp(sqrt(13)*X)/(8*tau**(7/2))"
+        }
+      ],
+      "detected_without_crash": true,
+      "stdout_sha256": "379a9cf1bdd2b69ee2871e367b7801db3d399fe6a2da82740aee60ee174afd15",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "detected": 12,
+  "total": 12,
+  "driver_sha256": "6ccace685371532141f27fe325de0ec6bd6e382dfad8b8d10301587ffc0372ab"
+}

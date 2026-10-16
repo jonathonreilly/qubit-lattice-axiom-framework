@@ -1,0 +1,180 @@
+{
+  "compiled_python": [
+    "scripts/scalar_photon_calibration.py",
+    "scripts/scalar_photon_calibration_controls.py",
+    "scripts/scalar_photon_reception_core.py",
+    "scripts/scalar_photon_separate_gains.py",
+    "scripts/scalar_photon_weak_controls.py"
+  ],
+  "local_links": [
+    {
+      "from": "docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "target": "../scripts/scalar_photon_calibration.py",
+      "resolved": "scripts/scalar_photon_calibration.py"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "../../scripts/scalar_photon_calibration.py",
+      "resolved": "scripts/scalar_photon_calibration.py"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "../../docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "resolved": "docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "result.json",
+      "resolved": "outputs/scalar_photon_calibration/result.json"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "../../logs/runner-cache/scalar_photon_calibration.txt",
+      "resolved": "logs/runner-cache/scalar_photon_calibration.txt"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "portable_replay_v1.json",
+      "resolved": "outputs/scalar_photon_calibration/portable_replay_v1.json"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/split_gain_review.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/split_gain_review.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/common_gain_robustness.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/common_gain_robustness.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/weak_independent_review.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/weak_independent_review.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/weak_comparison.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/weak_comparison.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/canonical_initial_review.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/canonical_initial_review.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/canonical_weak_delta.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/canonical_weak_delta.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/canonical_editorial_confirmation.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/canonical_editorial_confirmation.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/cluster_value.md",
+      "resolved": "outputs/scalar_photon_calibration/reviews/cluster_value.md"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "reviews/copy_provenance.json",
+      "resolved": "outputs/scalar_photon_calibration/reviews/copy_provenance.json"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "historical/source_evidence.tar.gz",
+      "resolved": "outputs/scalar_photon_calibration/historical/source_evidence.tar.gz"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "historical/source_evidence_manifest.json",
+      "resolved": "outputs/scalar_photon_calibration/historical/source_evidence_manifest.json"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "historical/integration_evidence.tar.gz",
+      "resolved": "outputs/scalar_photon_calibration/historical/integration_evidence.tar.gz"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "historical/integration_evidence_manifest.json",
+      "resolved": "outputs/scalar_photon_calibration/historical/integration_evidence_manifest.json"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "mutation_RESULTS_attempt01.json",
+      "resolved": "outputs/scalar_photon_calibration/mutation_RESULTS_attempt01.json"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "mutation_RESULTS_v2.json",
+      "resolved": "outputs/scalar_photon_calibration/mutation_RESULTS_v2.json"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "historical/packaging_evidence.tar.gz",
+      "resolved": "outputs/scalar_photon_calibration/historical/packaging_evidence.tar.gz"
+    },
+    {
+      "from": "outputs/scalar_photon_calibration/EVIDENCE_INDEX.md",
+      "target": "historical/packaging_evidence_manifest.json",
+      "resolved": "outputs/scalar_photon_calibration/historical/packaging_evidence_manifest.json"
+    }
+  ],
+  "broken_links": [],
+  "source_sha256": {
+    "docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631",
+    "scripts/scalar_photon_calibration.py": "c22c88bc65a8530301904fa648e154ba841c89c68948a16f7431be6d32b4e1a8",
+    "scripts/scalar_photon_calibration_controls.py": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+    "scripts/scalar_photon_reception_core.py": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+    "scripts/scalar_photon_separate_gains.py": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+    "scripts/scalar_photon_weak_controls.py": "86c759edce2c57f93689352183fdfbf57bb76e3b02cab55a8e38f45a6b07e6d3"
+  },
+  "vocabulary_violations": 0,
+  "shared_landing_validation": "pending; not run here",
+  "formal_audit": "not run",
+  "committed_diff_check": "Run after commit; exact receipt will be in the active campaign publication record and PR body.",
+  "link_recovery": "First regex scan included an indented mathematical expression I0[P](u,r). Fixed scanner excludes fenced, indented and inline code; source unchanged.",
+  "reviewed_base": "b31c55267a6d617023c9a4d1951385178663e70f",
+  "final_vocabulary_fix": "all intended commit paths; no modifications",
+  "graph_delta": {
+    "added_nodes": [
+      "scalar_photon_calibration_note_2026-10-16"
+    ],
+    "removed_nodes": [],
+    "changed_existing_nodes": [],
+    "edge_count_delta": 0,
+    "runner_and_four_helpers_verified": true
+  },
+  "checked_at": "2026-10-16T14:16:04.391816+00:00",
+  "first_staged_diff_attempt": {
+    "exit_code": 2,
+    "output": "outputs/scalar_photon_calibration/cache_before_weak_addition.txt:106: new blank line at EOF.\noutputs/scalar_photon_calibration/cache_under_weak_review.txt:125: new blank line at EOF.\n",
+    "at": "2026-10-16T14:16:17.737535+00:00"
+  },
+  "staged_diff_check": {
+    "exit_code": 0,
+    "at": "2026-10-16T14:17:32.285069+00:00",
+    "scope": "All intended paths after byte-preserving historical archive"
+  },
+  "history_packaging": {
+    "archive_sha256": "6a809f4c8f791d3bc0e9dd0d0d00a1e3670b2bf3eedd0635b5161e87d4f488fd",
+    "entries": {
+      "cache_before_weak_addition.txt": {
+        "bytes": 5309,
+        "sha256": "268e7804e7c1fb591724f9d493d8bae6c03c2dd080cc8b0bf43ceb10814c806d"
+      },
+      "cache_under_weak_review.txt": {
+        "bytes": 6388,
+        "sha256": "1149a46248d4949ac5aa2da20ef4d3ecfd20245a39acf47d099d7eae984f68e0"
+      },
+      "graph_manifest_before_main_refresh.json": {
+        "bytes": 1016503,
+        "sha256": "5cc4b225c316f2152805cd8236401dde424e39bd2eff8aede4250edf0ae497c0"
+      }
+    },
+    "reason": "Preserve exact historical cache terminal blank lines and large previous-base graph snapshot without repeating them in the source diff."
+  }
+}

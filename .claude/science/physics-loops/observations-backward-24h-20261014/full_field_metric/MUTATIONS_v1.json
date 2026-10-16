@@ -1,0 +1,111 @@
+{
+  "canonical_source_sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+  "variants": [
+    {
+      "name": "missing_B_in_transverse_kinetic",
+      "source_sha256": "56e2b8c67dd06f8918ff78ab9ab7cd0daee34517d9bf8853da4334dcdc90f981",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4839375833980739,
+      "failed_controls": 7,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "tt = trial_x*hh/2-b*zp*zp/lam",
+        "tt = trial_x*hh/2-zp*zp/lam"
+      ]
+    },
+    {
+      "name": "wrong_transverse_source_sign",
+      "source_sha256": "5707c22460dde0e27a9b6e52ee7cbb431fd65fc1ddd58bf08c2d7ccff36f1a62",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4904609159566462,
+      "failed_controls": 6,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "z*curv-2*tt/z",
+        "z*curv+2*tt/z"
+      ]
+    },
+    {
+      "name": "half_radial_scalar_operator",
+      "source_sha256": "1e987da17fbe73adb355632a177e3fcf2c71aa31a822512b875f78673826d302",
+      "exit_code": 0,
+      "elapsed_seconds": 0.49250166676938534,
+      "failed_controls": 6,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "ee = 2*lz/lam",
+        "ee = lz/lam"
+      ]
+    },
+    {
+      "name": "reversed_y_share",
+      "source_sha256": "5e75ff0db9b03cb2fa7b3953626e2d91c3c8bee6d378f8466097724d0bdbc8ed",
+      "exit_code": 0,
+      "elapsed_seconds": 0.5516108749434352,
+      "failed_controls": 2,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "uy = (ee-lx*delta)/(ly-lx)",
+        "uy = (lx*delta-ee)/(ly-lx)"
+      ]
+    },
+    {
+      "name": "wrong_y_potential_power",
+      "source_sha256": "fe36d3da27614d704f375b99faebe77d55325b7fd6aadc9f16bb085d5fdd673d",
+      "exit_code": 0,
+      "elapsed_seconds": 0.48578700004145503,
+      "failed_controls": 2,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "ay = 2*hv*hv*k*trial_x**2*z**((1+k)/a)/(3*(1+s))",
+        "ay = 2*hv*hv*k*trial_x**2*z**((1-k)/a)/(3*(1+s))"
+      ]
+    },
+    {
+      "name": "wrong_angular_null_chart",
+      "source_sha256": "e37229927cfd234a1634ff99b424e9d70f93676523b46397d08c84c8a77be587",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4836681252345443,
+      "failed_controls": 12,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "dd = b*(1/r-e1)",
+        "dd = b*(1/r+e1)"
+      ]
+    },
+    {
+      "name": "omit_base_potential_derivative",
+      "source_sha256": "5fc2d02c0bd0a4d175f774cc9f72a0802e571e550367fd7f3347bc0b88dc5b46",
+      "exit_code": 0,
+      "elapsed_seconds": 0.49664166709408164,
+      "failed_controls": 6,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "ee = 2*lz/lam+z*curv-2*tt/z-mp.diff(p0, z)",
+        "ee = 2*lz/lam+z*curv-2*tt/z"
+      ]
+    },
+    {
+      "name": "wrong_Einstein_conformal_kinetic",
+      "source_sha256": "0c37cfbe95b78f2196f494db5cf795dbccb548e3117dc139742eea1d442b4947",
+      "exit_code": 0,
+      "elapsed_seconds": 0.5357045000419021,
+      "failed_controls": 16,
+      "rejected_by_control": true,
+      "exception_only": false,
+      "replacement": [
+        "6*v[0]**2/xx**2",
+        "3*v[0]**2/xx**2"
+      ]
+    }
+  ],
+  "rejected": 8,
+  "survivors": []
+}

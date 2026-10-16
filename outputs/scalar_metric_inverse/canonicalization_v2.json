@@ -1,0 +1,8 @@
+{
+  "reason": "Narrow local-kernel scope correction, attributed stronger J uniqueness, nonsingular equal-sector formula and planar witness",
+  "source": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_metric_kernel_integration_v1.py",
+  "source_sha256": "cbd2ae623bdf2960c191d8cf2467c30e47507ca793527906158b67f67066fd7c",
+  "helper_sha256": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+  "note_sha256": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+  "primary_sha256": "274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708"
+}

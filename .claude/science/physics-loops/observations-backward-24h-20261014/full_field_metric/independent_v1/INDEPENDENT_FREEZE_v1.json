@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-15T21:09:05.349646+00:00",
+  "scope": "Independent new full-field envelope and square reconstruction frozen before any parent full_field_metric derivation or implementation exposure. Inherited M17/M19 action and metric identities previously known.",
+  "counts": {
+    "passed": 34,
+    "failed": 0
+  },
+  "files": [
+    {
+      "path": "INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "e6df6185554db5ddcf1a4dc6328906f61ca02bf29924c266198407ebc50c0e21",
+      "bytes": 10896
+    },
+    {
+      "path": "independent_controls_v1.py",
+      "sha256": "bdecee250afeb1e1fabb113d4127a870688ecc67834bc4872bc739cdba6df4c1",
+      "bytes": 5708
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_v1.json",
+      "sha256": "098f66faa0c262f15ed85053a2f7d5354d588f560ffcf0eebfedfcd8e93f5a04",
+      "bytes": 3961
+    },
+    {
+      "path": "SOURCE_PREEXPOSURE_v1.json",
+      "sha256": "efd9bcd9b81810729fbe9ad6a609750ca375e7d7806f876b8d2b4c6e3108a10b",
+      "bytes": 1551
+    }
+  ],
+  "failed_scratch_route": "Missing B when converting coordinate transverse kinetic density to physical gradient density; corrected before freeze, exact nonzero witness preserved.",
+  "parent_new_source_read": false,
+  "formal_audit": false,
+  "empirical_tests": 0
+}

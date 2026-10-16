@@ -1,0 +1,162 @@
+{
+  "at_utc": "2026-10-15T20:28:26.717621+00:00",
+  "scope": "Immutable v2 later-row repair supplement only; subsequent live extension not reviewed",
+  "disposition": "Reserved-row diagnostic finding repaired in frozen v2; no remaining discrepancy within this scope",
+  "no_author_aggregate_or_ODE_rerun": true,
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_SUPPLEMENT_v1.md",
+      "sha256": "1ee31c1b92d0cc32c6d6fbede888515657df90107aa6c6d7fcb5f890854650ba",
+      "bytes": 6134
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/later_row_binding_v1.py",
+      "sha256": "5d4b67dd7748d48f78188c443dad562fdd1757082b2c703034142e101709498d",
+      "bytes": 8351
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_BINDING_RESULTS_v1.json",
+      "sha256": "e3d61056bb05073925350a93771967c666d1ac6e7bc94439573088e90955c57a",
+      "bytes": 10422
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/CANONICAL_REPAIR_EXPOSURE_v2.json",
+      "sha256": "d0cc314b1e54e29e950b098406b28e7fbf1500e7dd835b3c1682688825724ed0",
+      "bytes": 2376
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_REPAIR_v2.diff",
+      "sha256": "3509c1c0c2e246a3d951c5d454bc3d2639d20f88aa8dc0de0b85e301fe6ad32d",
+      "bytes": 2486
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "83405bcf3704be2afa5bc7add4336f5812fe803ab90a1491bd379d2580fc21c6",
+      "bytes": 8203
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "b981430b05531009abf2d4c4269133c79f48106ba18c7c7e4dbdf3a5cd8bef03",
+      "bytes": 2205
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/INDEPENDENT_FREEZE_v1.json",
+      "sha256": "827da89b4c5d2b2068d6ad7d26c0378be4db7ced039de462a477df6027a78a62",
+      "bytes": 1048
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/AUTHOR_CORRESPONDENCE_v1.md",
+      "sha256": "aeb0932fcef122dbaeac8bafa3fef4b3f7583af3434d25154c881395b632e929",
+      "bytes": 8504
+    }
+  ],
+  "frozen_envelope_files": [
+    {
+      "path": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "88466d293681ea16fbb1f8bc8717a22b6dfbebd6bf8d83a1f5ef57b2c2377b56",
+      "bytes": 17511
+    },
+    {
+      "path": "scripts/scalar_vacuum_metric_inverse.py",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__scalar_vacuum_metric_inverse.py",
+      "sha256": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+      "bytes": 16092
+    },
+    {
+      "path": "scripts/scalar_vacuum_metric_check.py",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__scalar_vacuum_metric_check.py",
+      "sha256": "e1bfa8445b60c20a5c9059c458669f0d03b2fbb0332e19a6039022967f527700",
+      "bytes": 3639
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v2.json",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__CANONICAL_BINDING_v2.json",
+      "sha256": "6c98e0563535831a602e36c89cc96814c6e7e97d7f0c006cbda2e1cbfed2b6c9",
+      "bytes": 7258
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/MUTATIONS_v2.json",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__MUTATIONS_v2.json",
+      "sha256": "415b32044c8fd9724e981ca84dbb16d22b4993e87faa9170117dbcb8476a7609",
+      "bytes": 14048
+    },
+    {
+      "path": "logs/runner-cache/scalar_vacuum_metric_check.txt",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__scalar_vacuum_metric_check.txt",
+      "sha256": "c10dacf64ed3efe44816b4e43d46236fd78b8e5a17a672c2c8c9df7d82ecdf15",
+      "bytes": 2851
+    },
+    {
+      "path": "outputs/scalar_vacuum_metric/RESULTS_v1.json",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__RESULTS_v1.json",
+      "sha256": "e25dc7ae6ae307e1fc7322196591d7d1759a5053244b51331342ce9d9d566069",
+      "bytes": 12871
+    },
+    {
+      "path": "outputs/scalar_vacuum_metric/SUMMARY_v1.json",
+      "snapshot": "CANONICAL_REPAIR_EXPOSURE_v2__SUMMARY_v1.json",
+      "sha256": "671b05c8cb7025ba6322ee3e2937d212a475ecfb7954138bfd9bf92133cbc9e0",
+      "bytes": 1953
+    }
+  ],
+  "current_disk_comparison": [
+    {
+      "path": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "frozen_sha256": "88466d293681ea16fbb1f8bc8717a22b6dfbebd6bf8d83a1f5ef57b2c2377b56",
+      "current_sha256": "78ae6373ba45d6ceb6f7236c58b0a6825da8a35521cf8ff047b52dd6ffbf95b1",
+      "matches_frozen": false
+    },
+    {
+      "path": "scripts/scalar_vacuum_metric_inverse.py",
+      "frozen_sha256": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+      "current_sha256": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+      "matches_frozen": true
+    },
+    {
+      "path": "scripts/scalar_vacuum_metric_check.py",
+      "frozen_sha256": "e1bfa8445b60c20a5c9059c458669f0d03b2fbb0332e19a6039022967f527700",
+      "current_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+      "matches_frozen": false
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v2.json",
+      "frozen_sha256": "6c98e0563535831a602e36c89cc96814c6e7e97d7f0c006cbda2e1cbfed2b6c9",
+      "current_sha256": "6c98e0563535831a602e36c89cc96814c6e7e97d7f0c006cbda2e1cbfed2b6c9",
+      "matches_frozen": true
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/MUTATIONS_v2.json",
+      "frozen_sha256": "415b32044c8fd9724e981ca84dbb16d22b4993e87faa9170117dbcb8476a7609",
+      "current_sha256": "415b32044c8fd9724e981ca84dbb16d22b4993e87faa9170117dbcb8476a7609",
+      "matches_frozen": true
+    },
+    {
+      "path": "logs/runner-cache/scalar_vacuum_metric_check.txt",
+      "frozen_sha256": "c10dacf64ed3efe44816b4e43d46236fd78b8e5a17a672c2c8c9df7d82ecdf15",
+      "current_sha256": "c10dacf64ed3efe44816b4e43d46236fd78b8e5a17a672c2c8c9df7d82ecdf15",
+      "matches_frozen": true
+    },
+    {
+      "path": "outputs/scalar_vacuum_metric/RESULTS_v1.json",
+      "frozen_sha256": "e25dc7ae6ae307e1fc7322196591d7d1759a5053244b51331342ce9d9d566069",
+      "current_sha256": "df175aaf9b6d0940b0ea4e1871f9a7812b69af1b3a8887fbde84f66c7bafdb57",
+      "matches_frozen": false
+    },
+    {
+      "path": "outputs/scalar_vacuum_metric/SUMMARY_v1.json",
+      "frozen_sha256": "671b05c8cb7025ba6322ee3e2937d212a475ecfb7954138bfd9bf92133cbc9e0",
+      "current_sha256": "234b658b1125d8052200395a207acf1c9277bf0ac23587d00dc503bc886dc033",
+      "matches_frozen": false
+    }
+  ],
+  "saved_author_execution": {
+    "counts": {
+      "failed": 0,
+      "passed": 70
+    },
+    "elapsed_sec": 2.1324501037597656,
+    "timeout_sec": 180
+  },
+  "historical_pre_post_stat_comparison_independently_reconstructed": false
+}

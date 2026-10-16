@@ -1,0 +1,66 @@
+{
+  "campaign_id": "observations-backward-24h-20261014",
+  "fixed_deadline": "2026-10-15T21:48:44+00:00",
+  "checked_at": "2026-10-15T21:48:52.616149+00:00",
+  "process_check": "Fresh ps command inventory, excluding this administrative process and its ancestor chain.",
+  "excluded_administrative_ancestor_pids": [
+    1,
+    30617,
+    30657,
+    96367
+  ],
+  "matching_processes": [],
+  "previous_campaigns": [
+    {
+      "campaign": "observations-to-toe-24h-20261012",
+      "status_sha256": "40ce2f721c0f15ae338989198bf066ffdef1c9ac83c9c0b8b7f42a66b1aebc25",
+      "status": "completed",
+      "phase": "completed_at_deadline",
+      "worker_pid": null,
+      "supervisor_pid": null,
+      "completed_at": "2026-10-13T16:53:20.218463+00:00"
+    },
+    {
+      "campaign": "toe-observation-inversion-24h-20261012",
+      "status_sha256": "cc38c60dc3b1da19520fa8672f198b5a4c18bc0c32d7175995247b530751ce74",
+      "status": null,
+      "phase": "cancelled",
+      "worker_pid": null,
+      "supervisor_pid": null,
+      "completed_at": null
+    },
+    {
+      "campaign": "revised-scalar-derivation-24h-20261013",
+      "status_sha256": "d596819861bd64e770ac73e1cb6a14284f68c2b0748f812f5ee4865289302e64",
+      "status": null,
+      "phase": "completed_fixed_deadline",
+      "worker_pid": null,
+      "supervisor_pid": null,
+      "completed_at": null
+    }
+  ],
+  "scope": "Owned-process and saved-status verification only; no scientific calculations or raw observation access.",
+  "lock_before": {
+    "lock": {
+      "expires_at": "2026-10-15T22:05:59.668559+00:00",
+      "holder_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
+      "owner": "direct-author-observations-backward",
+      "pid": 84108,
+      "purpose": "observations-backward-24h-20261014",
+      "started_at": "2026-10-15T21:05:59.668559+00:00"
+    },
+    "status": "held"
+  },
+  "lock_release": {
+    "returncode": 0,
+    "stdout": "{\n  \"lock\": null,\n  \"status\": \"released\"\n}\n",
+    "stderr": ""
+  },
+  "lock_after": {
+    "lock": null,
+    "status": "free"
+  },
+  "status": "no_owned_research_process_found_matching_lock_released",
+  "closure_recorded_at": "2026-10-15T21:48:52.786683+00:00",
+  "automation": "Retirement must be performed by the app tool and recorded separately."
+}

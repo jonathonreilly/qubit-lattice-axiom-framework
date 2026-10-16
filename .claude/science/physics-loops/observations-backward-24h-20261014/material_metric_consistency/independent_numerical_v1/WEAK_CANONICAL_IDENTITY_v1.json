@@ -1,0 +1,106 @@
+{
+  "created_utc": "2026-10-15T20:34:11.628661+00:00",
+  "scope": "Complete canonical weak source and proof correspondence, plus final source/product/cache binding; no aggregate, ODE or independent proof rerun.",
+  "report_sha256": "a084586d4792b9b9532c9285e322c9a6429617bc1384e2832bffc1ca166fa095",
+  "files": [
+    {
+      "path": "WEAK_INVERSE_REVIEW_v1.md",
+      "sha256": "f17626987016760f3bf496bd4ea170bb400684c106c50f9fd2ab51e0b494ddbe",
+      "bytes": 8023
+    },
+    {
+      "path": "WEAK_INVERSE_IDENTITY_v1.json",
+      "sha256": "e499381e2fb08c4c643163fd1d6eb7d375b02abb922c009a602928bcc98679e5",
+      "bytes": 2947
+    },
+    {
+      "path": "WEAK_EXACT_RESULTS_v1.json",
+      "sha256": "373791ab9454098a0cecd9013f4ccf4456996bfd880c2a8e32850f4a2253a856",
+      "bytes": 1710
+    },
+    {
+      "path": "WEAK_CANONICAL_READ_FAILURE_v1.json",
+      "sha256": "a27a4ee51113b8f6dbd0aea952210220aa4e07b1e2cf749a661123d5e6600e3a",
+      "bytes": 343
+    },
+    {
+      "path": "WEAK_CANONICAL_NOTE_v1.md",
+      "sha256": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "bytes": 21992
+    },
+    {
+      "path": "WEAK_CANONICAL_HELPER_v1.py",
+      "sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+      "bytes": 5502
+    },
+    {
+      "path": "WEAK_CANONICAL_PRIMARY_v1.py",
+      "sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+      "bytes": 4005
+    },
+    {
+      "path": "WEAK_CANONICAL_RESULTS_v3.json",
+      "sha256": "11b3dfa9edf0c939606f31f7c458e2236e9b9c5715c6830d945846c6651ca62f",
+      "bytes": 20905
+    },
+    {
+      "path": "WEAK_CANONICAL_SUMMARY_v3.json",
+      "sha256": "b2157235c69ec8dd40eab75287484ab557d1932168b5b0b072c4a3db6262e257",
+      "bytes": 2191
+    },
+    {
+      "path": "WEAK_CANONICAL_CACHE_v3.txt",
+      "sha256": "57061593f789589733b07acb6a24c87732e47b16d8d183ba7b9cca5f7cf538d4",
+      "bytes": 3089
+    },
+    {
+      "path": "WEAK_CANONICAL_BINDING_COPY_v3.json",
+      "sha256": "759d7998a8a176b562e2ed405a5198591c72062450ea8a79ec3db93bc9299543",
+      "bytes": 8463
+    },
+    {
+      "path": "WEAK_CANONICAL_MUTATIONS_COPY_v1.json",
+      "sha256": "58fdcf1e1452d80b941c7898ae530f95eb814719ee1a9ef739ab024b6c9399ce",
+      "bytes": 8999
+    },
+    {
+      "path": "WEAK_WORKING_RESULTS_COPY_v1.json",
+      "sha256": "162eee3cac33e53636a25a9d57e975ddfdb5574359da68b8f30843b74f3cfef7",
+      "bytes": 5694
+    },
+    {
+      "path": "WEAK_CANONICAL_BINDING_CHECK_v1.json",
+      "sha256": "26465ed1a837adf0cefed5278c1ea84f869860b3947c29d618eea67c95541e24",
+      "bytes": 5421
+    },
+    {
+      "path": "WEAK_CANONICAL_REVIEW_v1.md",
+      "sha256": "a084586d4792b9b9532c9285e322c9a6429617bc1384e2832bffc1ca166fa095",
+      "bytes": 8518
+    }
+  ],
+  "canonical_note_sha256": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+  "canonical_weak_sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+  "canonical_primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+  "cache_sha256": "57061593f789589733b07acb6a24c87732e47b16d8d183ba7b9cca5f7cf538d4",
+  "author_checks": 89,
+  "author_weak_checks": 19,
+  "static_correspondence_checks": 30,
+  "static_correspondence_mismatches": 0,
+  "own_new_scientific_runs": 0,
+  "working_numeric_arrays_unchanged": true,
+  "mutation_source_variants_checked": 8,
+  "reported_mutation_numeric_rejections": 8,
+  "formal_audit": false,
+  "empirical_validation": false,
+  "limits": [
+    "Assumed monotone regular chart; endpoint and node checks are not interval certification",
+    "Numerical bracket adds1e-8 interior margins",
+    "Centered ratio derivative is a diagnostic",
+    "No certified quadrature or measurement error budget",
+    "Four finite moments do not establish all weak field equations"
+  ],
+  "failures": [
+    "WEAK_CANONICAL_READ_FAILURE_v1.json"
+  ]
+}

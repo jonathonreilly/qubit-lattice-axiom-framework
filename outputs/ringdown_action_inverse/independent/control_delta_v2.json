@@ -1,0 +1,15 @@
+{
+  "added_controls": [
+    {
+      "name": "sharp_midpoint_term_without_readout_cancellation",
+      "passed": true,
+      "detail": {
+        "integral": 0.5,
+        "midpoint_value": 0.0,
+        "bound": 0.5
+      },
+      "family": "common action"
+    }
+  ],
+  "all_other_values_unchanged_except_summary_source_hashes": true
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "path": "outputs/scalar_observation_inverse_attempt01.json",
+    "sha256": "190f4d49d56af8e215010a238202b09135f0d4f4240754d346dea22a3a01fffd",
+    "kind": "preserved operational failure before repair; no scientific inference",
+    "cause": "min() attempted to order two positive symbolic integrals H and K; replace pairwise ordering by individual positivity checks",
+    "embedded_source_hashes": {
+      "scripts/scalar_observation_inverse.py": {
+        "declared": "bbfe6eb96e8c3a735fa589fc05e9ec78b9b37a6f480fdc70f673a3d142a19d90",
+        "actual": "bbfe6eb96e8c3a735fa589fc05e9ec78b9b37a6f480fdc70f673a3d142a19d90"
+      },
+      "scripts/scalar_observation_inverse_math.py": {
+        "declared": "65bd15923e5b474e322cf6663a57d9ffe1519fb8cadce9cd6c514b1de7eb48f9",
+        "actual": "65bd15923e5b474e322cf6663a57d9ffe1519fb8cadce9cd6c514b1de7eb48f9"
+      },
+      "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": {
+        "declared": "66a53b68cd4e52d6ae795b41693a455aa4aea05f58220f34350fced6ca040c42",
+        "actual": "66a53b68cd4e52d6ae795b41693a455aa4aea05f58220f34350fced6ca040c42"
+      }
+    },
+    "execution_envelope": "===== runner cache v1 =====\nrunner: scripts/scalar_observation_inverse.py\nrunner_sha256: bbfe6eb96e8c3a735fa589fc05e9ec78b9b37a6f480fdc70f673a3d142a19d90\ninput_fingerprint_sha256: 13278df18b73fed208aa70ac13eab890b2001e2dc34533ea176a668720d8e289\ntimeout_sec: 120\nexit_code: 1\nelapsed_sec: 0.61\nstatus: nonzero_exit\n----- stdout -----\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/scripts/scalar_observation_inverse.py\", line 152, in <module>\n    fine = bin_lower_bound([x, yy], [H, K])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/scripts/scalar_observation_inverse_math.py\", line 64, in bin_lower_bound\n    if min(inverse_weight_integrals) <= 0:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/relational.py\", line 519, in __bool__\n    raise TypeError(\nTypeError: cannot determine truth value of Relational: K < H\n\n----- stderr -----\n\n"
+  },
+  {
+    "path": "outputs/scalar_observation_inverse_attempt02.json",
+    "sha256": "9b58cebe88a0aec59f4b5ee4a085ca9f7c0d548da27fd66d0cfb7181edc8cdc3",
+    "kind": "preserved operational failure before repair; no scientific inference",
+    "cause": "positive bin endpoints do not encode b>a; equality check now parameterizes b=a+positive_width",
+    "embedded_source_hashes": {
+      "scripts/scalar_observation_inverse.py": {
+        "declared": "bbfe6eb96e8c3a735fa589fc05e9ec78b9b37a6f480fdc70f673a3d142a19d90",
+        "actual": "bbfe6eb96e8c3a735fa589fc05e9ec78b9b37a6f480fdc70f673a3d142a19d90"
+      },
+      "scripts/scalar_observation_inverse_math.py": {
+        "declared": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f",
+        "actual": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f"
+      }
+    },
+    "execution_envelope": "===== runner cache v1 =====\nrunner: scripts/scalar_observation_inverse.py\nrunner_sha256: bbfe6eb96e8c3a735fa589fc05e9ec78b9b37a6f480fdc70f673a3d142a19d90\ninput_fingerprint_sha256: 0e0f31da0809e899503801d017c240a9ca9d06d2e19692deaff3f8402f0ad406\ntimeout_sec: 120\nexit_code: 1\nelapsed_sec: 0.56\nstatus: nonzero_exit\n----- stdout -----\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/scripts/scalar_observation_inverse.py\", line 157, in <module>\n    zero(\"bin equality profile S=amplitude*r\", amplitude**2 * iw - bin_lower_bound([amplitude * iw], [iw]), \"radar_bins\")\n                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/scripts/scalar_observation_inverse_math.py\", line 64, in bin_lower_bound\n    if any(h <= 0 for h in inverse_weight_integrals):\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/relational.py\", line 519, in __bool__\n    raise TypeError(\nTypeError: cannot determine truth value of Relational: -aa**2/2 + bb**2/2 <= 0\n\n----- stderr -----\n\n"
+  }
+]

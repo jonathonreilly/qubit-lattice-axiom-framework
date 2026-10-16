@@ -1,0 +1,216 @@
+{
+  "kind": "focused independent integration evidence; not formal audit",
+  "created_utc": "2026-10-16T00:31:06.500399+00:00",
+  "canonical_sources": {
+    "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768",
+    "scripts/scalar_observation_inverse.py": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
+    "scripts/scalar_observation_inverse_math.py": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44"
+  },
+  "active_programs": [
+    "check_integrated_math.py",
+    "observe_runner.py"
+  ],
+  "current_evidence": [
+    "INDEPENDENT_CHECK.md",
+    "REPRODUCTION.md",
+    "SESSION_FAILURES.md",
+    "FINAL_BINDING.json",
+    "independent_math_evidence.json",
+    "independent_math_stdout.txt",
+    "independent_math_execution.json",
+    "observed_read_closure.json",
+    "reproduction_stdout.txt",
+    "reproduction_execution.json",
+    "reproduction_repaired/outputs/scalar_observation_inverse.json"
+  ],
+  "historical_scopes": [
+    "reproduction/",
+    "pre_dimension/",
+    "OWN_ATTEMPT01.json",
+    "OWN_ATTEMPT02.json",
+    "HISTORICAL_AUTHOR_FAILURES.json"
+  ],
+  "manifest_excludes_itself_and_generated_bytecode": true,
+  "files": {
+    "AUTHOR_REPAIR_SOURCE_DIFFS.json": {
+      "sha256": "5833a4f260a9b8b2d6f26b66d1e7b92608b313a211c0675a73b408ec4e781982",
+      "bytes": 2825
+    },
+    "DIMENSION_SOURCE_MOVEMENT.json": {
+      "sha256": "7ae11c5d98531031e3b290d416b82e9e4ee54ee46099ed8d7ba4d3382c778b02",
+      "bytes": 22746
+    },
+    "FINAL_BINDING.json": {
+      "sha256": "e8e8c787a3ddc43372a78cb9a7e3c734a2b1d79d45e3a0dd5d3a60a7eee5c6dd",
+      "bytes": 2977
+    },
+    "HISTORICAL_AUTHOR_FAILURES.json": {
+      "sha256": "2842003be1f19b83367061c04ecbd8e24df9ffb82da8c8f93f55607ff2a4861a",
+      "bytes": 4562
+    },
+    "INDEPENDENT_CHECK.md": {
+      "sha256": "8efa8c5f0cf0e53b549dd32c6446b47a4c8f4f11e4050b9cae5c2b172f2561b9",
+      "bytes": 6328
+    },
+    "NOTE_SOURCE_MOVEMENT.json": {
+      "sha256": "1365c652146a863bd81c686a13d75affab548d3120365466ec6d4d4578566bda",
+      "bytes": 23508
+    },
+    "NOTE_SOURCE_MOVEMENT_02.json": {
+      "sha256": "05ad5519cd94bb8e103366e43ab886d11b6d1209f1645eb961d1ecf922abed2a",
+      "bytes": 21751
+    },
+    "ORIGINAL_OBSERVER.json": {
+      "sha256": "79b6483d4a43b773948cd8dddd227f994c90643a7ea889194cc3af5a9bbff258",
+      "bytes": 2884
+    },
+    "OWN_ATTEMPT01.json": {
+      "sha256": "bbb8cba55173760e8670758f69cff37574a5b60675852591a4f8cd77bfbf0cad",
+      "bytes": 10812
+    },
+    "OWN_ATTEMPT02.json": {
+      "sha256": "82174932ac1fc734a38dc2af09e6d1de73840d8faac9c75244a4693e106436c3",
+      "bytes": 10752
+    },
+    "REPRODUCTION.md": {
+      "sha256": "a7855b7757656e5c45bb018fa4e2401eebc3d08dbe771c08e7679030e20bdb4b",
+      "bytes": 2338
+    },
+    "SESSION_FAILURES.md": {
+      "sha256": "e8707e958ccf57fd979a8ac057805e6300acbe6dced7a3934442e0c639096d5d",
+      "bytes": 2644
+    },
+    "SOURCE_SNAPSHOT.json": {
+      "sha256": "4e8b124fa390df7318653b31a000f02c3f7b8898e0bbcf5760552e6de36d1112",
+      "bytes": 1738
+    },
+    "check_integrated_math.py": {
+      "sha256": "53070a475de24c4b49cbbcf1f91d1b02199838a7fe80e9402dec70efd644e457",
+      "bytes": 11231
+    },
+    "independent_math_attempt01_execution.json": {
+      "sha256": "41fd307a4cdb3b16adff1608dc5996177f9922df00711a43597eecac7e8dbd5f",
+      "bytes": 431
+    },
+    "independent_math_attempt01_stdout.txt": {
+      "sha256": "8221ffab0d9d6a7cd6e5f3d563cbfba6ee687a387f29347f6810173a30ffc4f4",
+      "bytes": 1914
+    },
+    "independent_math_attempt02_evidence.json": {
+      "sha256": "7a3eecd4ab8063b81fe99634234d08d0010591eb37f3c69a59f9ddea6635f4e7",
+      "bytes": 4883
+    },
+    "independent_math_attempt02_execution.json": {
+      "sha256": "aef9f9d000574d0bd3b8893cd885f88bf30fe5dfbad4e61f909678ea705f1be6",
+      "bytes": 443
+    },
+    "independent_math_attempt02_stdout.txt": {
+      "sha256": "46f0b4b03076e8a8ed770bb3f17b87308732c2390b2f93f94b201f3ac08b3044",
+      "bytes": 1143
+    },
+    "independent_math_evidence.json": {
+      "sha256": "250a3f50ab28ca308507be32aac2be0e59a9c2a2112c4f7906f2eadfcda3c096",
+      "bytes": 5527
+    },
+    "independent_math_execution.json": {
+      "sha256": "d21dc742b4d61568e97b78fab145c0529e6a9159d19275f623e9dad01c9e953f",
+      "bytes": 431
+    },
+    "independent_math_stdout.txt": {
+      "sha256": "7df9c64efa3513c4595c56fb5677e58f2071913e9f46f5d4d80c726b257d79bf",
+      "bytes": 1359
+    },
+    "observe_runner.py": {
+      "sha256": "e70b5e523b69c17da9bfa51a8a07151c9f2e272a5ee42b0424f414ab65fa44fa",
+      "bytes": 2621
+    },
+    "observed_read_closure.json": {
+      "sha256": "ce765a229798b92c4d9363623daa18e2bf3099bf919addccd5671c96a52a08c1",
+      "bytes": 2513
+    },
+    "original_observed_read_closure.json": {
+      "sha256": "b2edc64a4cf7ea62cfd19c98b6a3c27cadb97bcfc416e7f680d1bcdc85199d69",
+      "bytes": 2441
+    },
+    "original_reproduction_execution.json": {
+      "sha256": "550153641a03125fe65244576e177b444d184bd8def9a186fbfc2678f48806ba",
+      "bytes": 436
+    },
+    "original_reproduction_stdout.txt": {
+      "sha256": "6597c7bc0c30184cd68d354470117ba0d756cf5c1b0ba19551e5d92cb4921f95",
+      "bytes": 111
+    },
+    "pre_dimension/author_reproduction_receipt.json": {
+      "sha256": "e3c15fc67ddae5241dcfaca22638a5b483784bbf85cd2d7faf2be3402b767c3b",
+      "bytes": 9550
+    },
+    "pre_dimension/checker_source.json": {
+      "sha256": "a6e77683e02622dd412a85fd33dd80f553740ba765a8f8ec884bdc903b335002",
+      "bytes": 10101
+    },
+    "pre_dimension/independent_math_evidence.json": {
+      "sha256": "d30a825a8bd90e5c94a73b72ec7ba5cc5b6f5bd7021e0fd4ae388cce6c0f8c28",
+      "bytes": 4958
+    },
+    "pre_dimension/independent_math_execution.json": {
+      "sha256": "56b210b4e90156e33eecb51dfb75d9f668548c96eb3ae9fcdad9cea281fcc4b3",
+      "bytes": 443
+    },
+    "pre_dimension/independent_math_stdout.txt": {
+      "sha256": "0755af0603fa806bbb0b27126df9ba5655f373fd3c5ce22b75df35476433df15",
+      "bytes": 1143
+    },
+    "pre_dimension/observed_read_closure.json": {
+      "sha256": "ce765a229798b92c4d9363623daa18e2bf3099bf919addccd5671c96a52a08c1",
+      "bytes": 2513
+    },
+    "pre_dimension/reproduction_execution.json": {
+      "sha256": "e079f8f999ddc986a7204fcce833962e782934861560f849c69885ff1ae1e658",
+      "bytes": 425
+    },
+    "pre_dimension/reproduction_stdout.txt": {
+      "sha256": "ed61daa014f47426078dead462d7068a3996456c6b63e55e61e4f8bcfa868d85",
+      "bytes": 111
+    },
+    "reproduction/docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": {
+      "sha256": "13e269dc161a9430141264891d261637aa3666f06056834568a57a6dbf5a3224",
+      "bytes": 19926
+    },
+    "reproduction/outputs/scalar_observation_inverse.json": {
+      "sha256": "e8d4ceb1d121186c423792ddcb76f6bfa637232644b8d4f0ffd2ee1a845de8b7",
+      "bytes": 9042
+    },
+    "reproduction/scripts/scalar_observation_inverse.py": {
+      "sha256": "2990d2df8fc07492cc5a20bed2860cedb6590d7342c610237645e5d02cc99df2",
+      "bytes": 13082
+    },
+    "reproduction/scripts/scalar_observation_inverse_math.py": {
+      "sha256": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f",
+      "bytes": 3568
+    },
+    "reproduction_execution.json": {
+      "sha256": "fa29a6c4a48d09921c6e393cf5fd2b5444c8a93eca6ef769113df2a220042e32",
+      "bytes": 425
+    },
+    "reproduction_repaired/docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": {
+      "sha256": "23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768",
+      "bytes": 20421
+    },
+    "reproduction_repaired/outputs/scalar_observation_inverse.json": {
+      "sha256": "ac6f293cf71e4ccf2384a28b9350e0a6a304c83e16798cad5178fae3bb9ca87d",
+      "bytes": 9550
+    },
+    "reproduction_repaired/scripts/scalar_observation_inverse.py": {
+      "sha256": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
+      "bytes": 13563
+    },
+    "reproduction_repaired/scripts/scalar_observation_inverse_math.py": {
+      "sha256": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44",
+      "bytes": 3681
+    },
+    "reproduction_stdout.txt": {
+      "sha256": "ed61daa014f47426078dead462d7068a3996456c6b63e55e61e4f8bcfa868d85",
+      "bytes": 111
+    }
+  }
+}

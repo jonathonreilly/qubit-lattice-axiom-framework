@@ -1,0 +1,13 @@
+{
+  "verified_manifest_files": 128,
+  "archive_file_count": 129,
+  "full_reports_read": true,
+  "full_integration_algebra_read": true,
+  "source_note_sha256": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+  "source_result_sha256": "ca2bddfe6cf3528a78875930b8c9baf02d346e3c227630bc3c7897cdcbcd23dd",
+  "integration_report_sha256": "d8a59044f0522e4a52a7572ee9120912679286ede470212fb43dc9d90fd9fdb2",
+  "fixed_background_report_sha256": "8bfd067a86f0cd2bf095f873e7af3a62f775cb563e8b08f5c2051c7fba690131",
+  "scientific_findings_integrated": "Local polynomial kernel, distinct J versus w scope, actual spherical geometry; no empirical claim",
+  "fixed_background_report_original_archive_path": "independent_metric_fixed_action/REPORT_v2.md",
+  "fixed_background_readable_copy_sha256": "63677df12e10bccbf32d79f7fdc0b8c5ad8ddf4aeccfc17d51fdd04ac0264a75"
+}

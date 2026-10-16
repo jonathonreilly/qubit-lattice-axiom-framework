@@ -1,0 +1,27 @@
+[
+  {
+    "additional_edits": [
+      {
+        "new": "Ac=(-2/eta)**5",
+        "old": "Ac=(-2/eta)**5*(eta+12)/10"
+      }
+    ],
+    "detected": true,
+    "elapsed_seconds": 7.1524229580536485,
+    "exception": null,
+    "exit_code": 1,
+    "expected_failed_check": "omission_rejected_by_Raychaudhuri",
+    "failed_checks": [
+      "omission_rejected_by_Raychaudhuri",
+      "omission_rejected_by_scalar_background",
+      "omission_rejected_by_bare_dust_background"
+    ],
+    "module": "scalar_photon_calibration_controls",
+    "mutant_sha256": "f9ecf75ab7c4aa80d54b7cc9e7f49ea9e2a9bdf1b2a1bf2528429538dbd3ea33",
+    "name": "physical_residual_positive_control_v2",
+    "new": "C=G/2;e=4",
+    "old": "C=G/2-beta;e=4-d*beta",
+    "original_sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+    "scope": "Restore both background coefficients and their integrated A to the original admissible background; prior attempt changed coefficients without A and was not a consistent positive control."
+  }
+]

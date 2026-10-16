@@ -1,0 +1,54 @@
+[
+  {
+    "name": "common",
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent/common_check.py"
+    ],
+    "cwd": "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent",
+    "timeout_seconds": 120,
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "elapsed_seconds": 0.5133492946624756,
+    "returncode": 0
+  },
+  {
+    "name": "reconstruction",
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent/reconstruction_check.py"
+    ],
+    "cwd": "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent",
+    "timeout_seconds": 120,
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "elapsed_seconds": 0.6378741264343262,
+    "returncode": 0
+  },
+  {
+    "name": "integration",
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent/integration_check.py"
+    ],
+    "cwd": "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent",
+    "timeout_seconds": 120,
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "elapsed_seconds": 0.2634761333465576,
+    "returncode": 0
+  },
+  {
+    "name": "primary",
+    "command": [
+      "python3",
+      "-B",
+      "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent/scratch/scripts/ringdown_action_inverse.py"
+    ],
+    "cwd": "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go/outputs/ringdown_action_inverse/independent/scratch",
+    "timeout_seconds": 120,
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "elapsed_seconds": 2.5312867164611816,
+    "returncode": 0
+  }
+]

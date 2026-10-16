@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 15.581874791067094,
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "-c",
+    "import sys,json;sys.path.insert(0,'scripts');import scalar_photon_separate_gains as m;checks,details=m.run_checks();print(json.dumps({'checks':checks,'details':details},sort_keys=True));raise SystemExit(any(not c['pass'] for c in checks))"
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "evidence": "exact identities and synthetic controls; no empirical validation",
+  "input_sha256": {
+    "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "6e28e5afcba4c2557570ae2527c71f9ed1cf5a947c20005fa00e3f345c5da0e5",
+    "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af"
+  },
+  "read_inventory": {
+    "external_scientific_inputs": [],
+    "package_integrity_reads": [
+      "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md",
+      "scripts/sampled_coupling_math.py"
+    ]
+  },
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "checks": [
+    {
+      "name": "affine characteristic polynomial yields recurrence",
+      "passed": true
+    },
+    {
+      "name": "differences obey homogeneous second-order recurrence",
+      "passed": true
+    },
+    {
+      "name": "Cramer inverse recovers both recurrence coefficients",
+      "passed": false
+    },
+    {
+      "name": "coefficient sensitivity formulas are exact",
+      "passed": true
+    },
+    {
+      "name": "passive step-response energy has nonpositive derivative",
+      "passed": true
+    },
+    {
+      "name": "calibration and reserved recurrence omega2=4.0,gamma=0.0",
+      "passed": true,
+      "inferred": [
+        1.529684374568972,
+        0.9999999999999947
+      ],
+      "actual": [
+        1.5296843745689768,
+        1.0
+      ],
+      "condition": 7.201712062507716,
+      "held_sequence_max_error": 8.215650382226158e-14
+    },
+    {
+      "name": "six settled samples recover pulse end omega2=4.0,gamma=0.0",
+      "passed": true,
+      "max_extrapolation_error": 2.6645352591003757e-14,
+      "max_green_error": 2.6575963651964685e-14,
+      "unrelated_preparations": 25
+    },
+    {
+      "name": "relative shapes and positive interaction sign omega2=4.0,gamma=0.0",
+      "passed": true,
+      "anchor": -0.0691640625633898,
+      "step_integral": 0.05878945317887787
+    },
+    {
+      "name": "reserved synthetic pairs omega2=4.0,gamma=0.0",
+      "passed": true,
+      "maximum": 4.268807529683727e-14,
+      "independent_empirical_test": false
+    },
+    {
+      "name": "calibration and reserved recurrence omega2=4.0,gamma=0.7",
+      "passed": true,
+      "inferred": [
+        1.3655547667475787,
+        0.782704538241863
+      ],
+      "actual": [
+        1.3655547667475845,
+        0.7827045382418681
+      ],
+      "condition": 7.212159053894411,
+      "held_sequence_max_error": 3.7414515929867775e-14
+    },
+    {
+      "name": "six settled samples recover pulse end omega2=4.0,gamma=0.7",
+      "passed": true,
+      "max_extrapolation_error": 1.0658141036401503e-14,
+      "max_green_error": 1.0380585280245214e-14,
+      "unrelated_preparations": 25
+    },
+    {
+      "name": "relative shapes and positive interaction sign omega2=4.0,gamma=0.7",
+      "passed": true,
+      "anchor": -0.06388951730894177,
+      "step_integral": 0.054306089712602576
+    },
+    {
+      "name": "reserved synthetic pairs omega2=4.0,gamma=0.7",
+      "passed": true,
+      "maximum": 7.424616477180734e-15,
+      "independent_empirical_test": false
+    },
+    {
+      "name": "calibration and reserved recurrence omega2=4.0,gamma=4.0",
+      "passed": true,
+      "inferred": [
+        0.9931706075828741,
+        0.24659696394165617
+      ],
+      "actual": [
+        0.993170607582819,
+        0.2465969639416065
+      ],
+      "condition": 15.040403513569867,
+      "held_sequence_max_error": 8.992806499463768e-15
+    },
+    {
+      "name": "six settled samples recover pulse end omega2=4.0,gamma=4.0",
+      "passed": true,
+      "max_extrapolation_error": 7.982503547054876e-14,
+      "max_green_error": 7.983197436445266e-14,
+      "unrelated_preparations": 25
+    },
+    {
+      "name": "relative shapes and positive interaction sign omega2=4.0,gamma=4.0",
+      "passed": true,
+      "anchor": -0.045824995163215476,
+      "step_integral": 0.038951245888650954
+    },
+    {
+      "name": "reserved synthetic pairs omega2=4.0,gamma=4.0",
+      "passed": true,
+      "maximum": 1.7236906346695946e-13,
+      "independent_empirical_test": false
+    },
+    {
+      "name": "calibration and reserved recurrence omega2=4.0,gamma=5.0",
+      "passed": true,
+      "inferred": [
+        0.951285053660284,
+        0.17377394345041544
+      ],
+      "actual": [
+        0.9512850536603203,
+        0.17377394345044514
+      ],
+      "condition": 23.59827810847794,
+      "held_sequence_max_error": 1.915134717478395e-15
+    },
+    {
+      "name": "six settled samples recover pulse end omega2=4.0,gamma=5.0",
+      "passed": true,
+      "max_extrapolation_error": 4.929390229335695e-14,
+      "max_green_error": 4.937023012629993e-14,
+      "unrelated_preparations": 25
+    },
+    {
+      "name": "relative shapes and positive interaction sign omega2=4.0,gamma=5.0",
+      "passed": true,
+      "anchor": -0.0419455495163481,
+      "step_integral": 0.03565371708889606
+    },
+    {
+      "name": "reserved synthetic pairs omega2=4.0,gamma=5.0",
+      "passed": true,
+      "maximum": 3.2480962364189736e-14,
+      "independent_empirical_test": false
+    },
+    {
+      "name": "pooled unrelated calibration histories identify common recurrence",
+      "passed": true,
+      "determinant": 0.5662398576524967
+    },
+    {
+      "name": "steady calibration is explicitly inconclusive",
+      "passed": true,
+      "scientific_outcome": "not identifiable; no model falsification"
+    },
+    {
+      "name": "continuous frequency aliases share discrete recurrence",
+      "passed": true,
+      "omega2": [
+        4.1225,
+        398.20312885231715
+      ],
+      "coefficients": [
+        [
+          1.3533207988809535,
+          0.7827045382418681
+        ],
+        [
+          1.3533207988809735,
+          0.7827045382418681
+        ]
+      ]
+    },
+    {
+      "name": "aliased dynamics retain normalized coupling and pulse-end sign",
+      "passed": true,
+      "normalized": [
+        1.3600000000000347,
+        1.3599999999704069
+      ],
+      "step_integrals": [
+        0.05423882158037231,
+        0.0007868887905641392
+      ]
+    },
+    {
+      "name": "full undamped period gives no nonzero response anchor",
+      "passed": true
+    },
+    {
+      "name": "late response sign cannot replace extrapolated pulse-end sign",
+      "passed": true,
+      "late_integral": -0.08345903726131529
+    },
+    {
+      "name": "negative damping can break pulse-end positivity",
+      "passed": true,
+      "excluded_active_integral": -0.0005929696087454503
+    },
+    {
+      "name": "six-sample error norm is sharp",
+      "passed": true,
+      "error": 2.468216997064676e-06,
+      "bound": 2.4682169970158324e-06
+    },
+    {
+      "name": "strong damping makes backward extrapolation ill-conditioned",
+      "passed": true,
+      "p": 8.315287191035679e-07,
+      "minimum_post_gain": 1202604.2841647768
+    },
+    {
+      "name": "calibration perturbation bound covers all correlated sample corners",
+      "passed": true,
+      "max_error": 2.1744861522510206e-07,
+      "max_bound": 2.5770583867543893e-07,
+      "max_fraction": 0.8437863265123897
+    },
+    {
+      "name": "coefficient propagation bound covers all perturbation corners",
+      "passed": true,
+      "max_fraction": 0.05244847081719406
+    },
+    {
+      "name": "unmodeled second mode is exposed by reserved recurrence samples",
+      "passed": true,
+      "reserved_residual": 0.09173319292114535
+    },
+    {
+      "name": "reciprocal potential differentiates to both forces",
+      "passed": true
+    },
+    {
+      "name": "anchor and shape fix positive interaction multiplier sign",
+      "passed": true
+    },
+    {
+      "name": "explicit nonreciprocal functions have varying force ratio",
+      "passed": true
+    },
+    {
+      "name": "coefficient bound matches independently differentiated triangle terms",
+      "passed": true
+    },
+    {
+      "name": "nonpolynomial reciprocal functions include a zero and reversed endpoints",
+      "passed": true,
+      "maximum_residual": 1.6653345369377348e-16
+    },
+    {
+      "name": "normalized ratio bound covers all numerator/anchor error corners",
+      "passed": true
+    },
+    {
+      "name": "shape residual error uses increasing error-integration limits",
+      "passed": true,
+      "orientations": [
+        {
+          "residual": -4.333333333317313e-05,
+          "bound": 0.040323333333333336
+        },
+        {
+          "residual": 0.04004333333333321,
+          "bound": 0.040323333333333336
+        }
+      ]
+    },
+    {
+      "name": "nonreciprocal comparison surface has exact rank-one factorization",
+      "passed": true
+    },
+    {
+      "name": "common gain cancels while a setting-dependent gain changes shape",
+      "passed": true
+    },
+    {
+      "name": "explicit two-direction comparison surface has a nonzero minor",
+      "passed": true
+    },
+    {
+      "name": "invalid inverse margins fail closed",
+      "passed": true,
+      "cases": 6
+    }
+  ],
+  "total": {
+    "passed": 43,
+    "failed": 1
+  },
+  "unresolved": [
+    "physical source/coordinate bridge",
+    "single hidden passive response class",
+    "measurement and pulse-model error budgets",
+    "continuous coupling coverage",
+    "absolute scale and moving-coordinate kinetic action"
+  ]
+}

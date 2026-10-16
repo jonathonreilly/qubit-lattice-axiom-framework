@@ -1,0 +1,12 @@
+# Narrow mutation evidence and timeout metadata addendum
+
+The complete run_mutations.py, mutation manifest and all 21 full stdout/stderr pairs were inspected. Every replacement anchor appears exactly once in the frozen source and changes a consequential algebraic expression, response/control input, normalization or inverse guard. Reconstructed mutant hashes and exact evidence hashes are recorded in mutation_evidence_bindings.json. The author runner creates isolated temporary copies, runs each with bytecode disabled and a 120-second bound, then checks the original source hashes.
+
+All 21 are detected. Twenty runs finish with explicit failed control rows matching the manifest. The calibration_matrix mutation instead exits through the positive-p guard after its wrong design produces invalid recurrence coefficients; its manifest has no failed-check rows, and the complete traceback confirms this meaningful domain rejection rather than an import/syntax failure. Disabling the zero-anchor guard produces invalid division warnings and fails the invalid-margin control. No mutation is merely a forced PASS/FAIL toggle: second_mode_control removes the actual added mode and thereby challenges the negative control's expected discrimination. These are targeted mutation-sensitivity examples, not exhaustive correctness proof. Mutations were inspected and reconstructed, not independently rerun in this addendum.
+
+Added only AUDIT_TIMEOUT_SEC = 120 to independent/check.py and reran under its existing outer 120-second bound. The previous checker bytes and all original run evidence are preserved under before_timeout_metadata/ (checker bytes as .py.txt). The original REPORT.md and frozen source bindings were not edited. The rerun passed all 135 independent assertions and reproduced the same 44-control canonical cache exactly. No new failure or timeout occurred. New evidence hashes are in timeout_metadata_evidence_hashes.json; the receipt records actual command, elapsed time and return code.
+
+Old checker SHA256: e8cbf2e5009c50be1249c5d0ab43c19cf22efccb1b7ccb8bef1c20dcb76a7960
+New checker SHA256: a8aba355f9981564951258a9bc849acf113a84af54f3213a3a13e0937b4605ee
+
+Canonical note, primary, helper and cache hashes remain exactly those in the original frozen_sources.json. No author source, git/PR state or audit authority was changed. This addendum does not supply the shared integrated landing gate.

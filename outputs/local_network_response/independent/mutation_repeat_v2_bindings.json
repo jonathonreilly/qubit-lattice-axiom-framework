@@ -1,0 +1,37 @@
+{
+  "sources": {
+    "scripts/local_network_response.py": "d2fae47522371b3770d7d451ce3945fffa1405be819dfbc23f4dca28880c856b",
+    "scripts/local_network_response_math.py": "7a5199d3f7db9a5b9ded229d2529aa7f748b97f93a161636734c7b484b65f8e1",
+    "docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md": "405eb15fba1d42d8f24f39500ba14375dda3d926b3f0c50919b84c1e954c4699"
+  },
+  "evidence": {
+    "outputs/local_network_response/mutation_repeat_v2/leading_coefficient.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/error_linear_terms.stderr": "9c4eef80c7b2b38ce68e5d03e8f6633460ca00e45ea58602c42149af1b3a2c51",
+    "outputs/local_network_response/mutation_repeat_v2/schur_sign.stderr": "7b8ab7fe50339724a7f5b5fa8520b9beb35c0826679e11acd8f08505e3f35045",
+    "outputs/local_network_response/mutation_repeat_v2/orthogonal_frame.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/rank_two_to_one.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/intervention_denominator.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/memory_sign.stderr": "dca8037c2c41275120a25b686f024b17224adbd06c7f6e28cf4d038c02ab46f2",
+    "outputs/local_network_response/mutation_repeat_v2/intervention_denominator.stderr": "1459bb2180a3060be3ee601df17b5d00a4f9d6f6db15867364dc418bb17200cf",
+    "outputs/local_network_response/mutation_repeat_v2/rank_two_to_one.stderr": "a680c95d1ac1eceb3a5eb6994c277db91d2e54d2286097ec00dc3f49efea55d6",
+    "outputs/local_network_response/mutation_repeat_v2/memory_sign.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/mutation_controls_v1.json": "75fdc8b44787977811780e9c91b0b093c2bf311fb36d1286993d9ae289c20f34",
+    "outputs/local_network_response/mutation_repeat_v2/orthogonal_frame.stderr": "383bb8f44ac5247ec4473eaadd136803ecfec413cd97acd02ec70ae08f202c76",
+    "outputs/local_network_response/mutation_repeat_v2/leading_coefficient.stderr": "e4c4f648fc7938000eeff2937298f54600f97bf0514f7ddf0e94099b04dcece7",
+    "outputs/local_network_response/mutation_repeat_v2/schur_sign.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/error_linear_terms.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/remainder_zero.stderr": "18d10a48bf22f68893938d4dc6531e3e03e6319fb273f6807cebc95cf7facfa5",
+    "outputs/local_network_response/mutation_repeat_v2/factorial_envelope.stderr": "63b9d9c0326b0846e8b9850a802fa26e1b65ff559f2f43413c90a6f1d6d14350",
+    "outputs/local_network_response/mutation_repeat_v2/symmetric_invisibility.stderr": "ea46e235d2d211fe5b5253ab0282b21ab257393573b5dc7dade944a00b68b90d",
+    "outputs/local_network_response/mutation_repeat_v2/error_quadratic_term.stderr": "a8a3b2a9115ceea67b18dce666a173cec0b5bf73da8c2f139a255569073cf35b",
+    "outputs/local_network_response/mutation_repeat_v2/access_degree.stderr": "0385a2d33b3f15cc952e371a40bccc0e5f513705075743728bf0a09c24778dd1",
+    "outputs/local_network_response/mutation_repeat_v2/three_setting_sign.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/three_setting_sign.stderr": "1215f2f271ef47c65b0472e2a2ef3aeaff7556866ccbd3b8138e1bac1fd52cca",
+    "outputs/local_network_response/mutation_repeat_v2/factorial_envelope.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/access_degree.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/symmetric_invisibility.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/error_quadratic_term.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/local_network_response/mutation_repeat_v2/remainder_zero.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "verified_intended_failures": 13
+}

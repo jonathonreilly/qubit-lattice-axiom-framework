@@ -1,0 +1,23 @@
+{
+  "controls_byte_identical": true,
+  "cache_stdout_equal_ignoring_separator_newlines": true,
+  "primary_summary": {
+    "passed": 194,
+    "failed": 0
+  },
+  "independent_summaries": {
+    "common": {
+      "passed": 268,
+      "failed": 0
+    },
+    "reconstruction": {
+      "passed": 418,
+      "failed": 0
+    },
+    "integration": {
+      "passed": 24,
+      "failed": 0
+    }
+  },
+  "all_returncodes_zero": true
+}

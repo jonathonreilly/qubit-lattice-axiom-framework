@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-sywhp0nf/scripts/local_network_response.py", line 104, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-sywhp0nf/scripts/local_network_response.py", line 96, in main
+    rows=controls();payload={'summary':{'passed':len(rows),'failed':0},'checks':rows,'input_sha256':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS},'empirical_validation':False,'scope':'Finite supplied real linear network and calibrated source/readout/intervention. General proofs are in the paired note; finite controls do not derive a physical action.'}
+         ^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-sywhp0nf/scripts/local_network_response.py", line 55, in controls
+    direction=sp.eye(n)[:,i]-sp.eye(n)[:,j];degree,moment=first_access_moment(chain,source,direction);assert degree==i,'access degree'
+                                                                                                             ^^^^^^^^^
+AssertionError: access degree

@@ -1,0 +1,32 @@
+{
+  "time": "2026-10-15T19:53:25.879106+00:00",
+  "author": "/root personally",
+  "base": "b789855264cad2db6dabe73f28ff3618dc58f66f",
+  "target": "Use full metric equations to invert a varying radial scalar from a supplied static spherical vacuum physical metric, then test the candidate potential without an ambient scalar boundary selector. First derive general material residuals and conservation identity; challenge truncation, vacuum and degeneracy explicitly.",
+  "minimal_premises": [
+    "Inherited candidate physical-metric action, conditional; f0>0,0<k<1/3,nu>0,Hv>0",
+    "Static spherical positive regular metric on finite annulus in calibrated areal-radius and clock units",
+    "For inverse only: independently justified material vacuum and consistent x=y=0 truncation",
+    "Nondegenerate metric derivatives and finite smoothness; errors not supplied by function-value samples"
+  ],
+  "forbidden_shortcuts": [
+    "Treat metric-fitted stress as actual matter action",
+    "Use scalar conservation contraction as all three equations",
+    "Count radial truncation or vacuum as derived",
+    "Pick density minimum or scalar boundary and call inverse",
+    "Claim synthetic metric is observational validation"
+  ],
+  "roles": {
+    "development": "All existing empirical and synthetic values already exposed; no new observation values opened",
+    "synthetic_calibration": "Construct local coupled solutions with predetermined parameters/initial data only to exercise inverse; scalar initial data hidden from inverse routine",
+    "synthetic_check": "Additional radial points/candidates withheld from two-coefficient recovery; mathematical consistency tests only",
+    "independent_observation": "None"
+  },
+  "status": "unverified working route",
+  "trace_class": "upstream_support",
+  "consumer": "Missing full metric/scalar consistency and environment/scale supplier in PR9614; earlier action/scale inverse notes",
+  "next": "Derive and execute inverse identities, degeneracy rejection, potential discrimination and coupled vacuum fixtures. Focused independent algebra check.",
+  "previous_search_failure": "Broad git grep session18161 terminated137; narrower root-level scalar-note scan completed. Relevant action-scale and finite-mode notes read; they concern weak/local or linear cosmological inverses, not current nonlinear static metric inversion. New9616 body and full443path inventory inspected: transverse quantum Gibbs memory, no action imported.",
+  "fixed_packaging": "2026-10-15T21:33:44Z",
+  "fixed_deadline": "2026-10-15T21:48:44Z"
+}

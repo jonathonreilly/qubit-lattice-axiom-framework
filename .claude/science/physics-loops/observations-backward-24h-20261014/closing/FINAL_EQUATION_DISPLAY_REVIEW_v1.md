@@ -1,0 +1,17 @@
+# Final equation-display and inventory wording confirmation
+
+This is final packaging/presentation confirmation only. No derivation, scientific calculation, raw-data access, archive rehash, network or Git action was performed. Campaign shutdown remains pending; this receipt does not certify it.
+
+The reviewed FINAL_REPORT.md has SHA-256 `cb07cd621a5ce7276cc14de398a66440c97c6e7a82cafe6fbdbbf9ac35eca5ad`. I compared only its section **The last necessary test in equations** (lines 32–42) with canonical M20 equations (7)–(10), their domain and necessary/sufficient distinction. The canonical note remains `493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a`, the same complete source already reviewed.
+
+The displayed definitions, factors, signs and denominators agree: Delta=P_rec−P0, E=2Lz/lambda+zR−2T/z−P0,z; the positive-potential logarithmic slopes have ly>lx; the positivity envelope and both potential shares/squared amplitudes are correct. The linked domain retains the regular static radial material-vacuum chart, positive supplied action parameters, positive X−s and explicit trial normalization. The relative link resolves to the intended canonical note.
+
+The summary calls these necessary conditions for fixed supplied trials. It says passing does not select C or parameters, establish the remaining transverse equations, or validate the action observationally. It explicitly retains N''' and B'' and denies having supplied measured derivative errors. There is no sufficiency, parameter-uniqueness, lower-derivative, or observed-test claim in the reviewed display. No correction is required for this section.
+
+I separately checked the inventory wording at line 100 against the complete parsed JSON record closing/CAMPAIGN_SCIENCE_INVENTORY_v1.json, SHA-256 `9fa630c5a87ae3f6e43ee71ce1c76a71dfb7183d1048a3d78c5b2d8bffbe3ea3`. Its scope is the committed campaign delta from baseline `92574ffe95192cc0724a27e1acad28e42d325115` to science commit `414856e9c2195680af563678a0844af71de3ddfb`. The list contains exactly 930 unique surviving blob paths, matching all 930 diff paths, no deleted paths, and a summed stored size of 53,139,509 bytes. These arithmetic/list checks agree with the prose. The four false working-match flags exactly equal the recorded operational-document mismatches: HANDOFF.md, PR_BACKLOG.md, REVIEW_HISTORY.md and STATE.yaml.
+
+The paragraph calls these **tracked campaign-delta paths**, distinguishes content identity from scientific audit, and keeps unchanged inherited dependencies pinned by commit. Its four-mismatch wording is supported within that inventoried-path scope at the recorded check time (2026-10-15T21:37:27.662641+00:00). This does not certify every untracked/current file or revalidate individual archived contents. I did not independently rehash the 930 files or scientific archives, query Git, or recheck the separately cited 174-comparison synthesis review. Those are existing receipts, not new checks asserted here.
+
+The presentation and inventory wording are consistent within these exact limits. The JSON receipt preserves the reviewed section and identity/list checks. A first report-writing command had a Python quoting SyntaxError caused by the displayed third-derivative notation in a triple-single-quoted string; it performed no writes or scientific execution. The corrected report writer uses a different string delimiter. This mechanical setup failure does not change the source comparison.
+
+No formal audit, landing approval, completed shutdown, or new scientific result is implied.

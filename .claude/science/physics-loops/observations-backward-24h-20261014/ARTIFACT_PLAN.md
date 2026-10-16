@@ -24,3 +24,11 @@ One coherent canonical projected-covariance note, primary plus3new helpers, exis
 ## M16 delivery
 
 One self-contained finite-pair note, one primary runner and two exact symbolic/sampling helpers. Final paired output/cache binds the current source; eight isolated source mutations and all independent original/correspondence reports remain preserved. The versioned historical archive includes working derivations, failures, source versions and code/results. External paper PDFs/full texts/renders remain local with version/hash/reading-scope records. Stage only this coherent unit and shared campaign state deltas, stacked on M15. No audit verdict or integrated-main landing is part of this author publication.
+
+## M19 delivery
+
+One coherent nonlinear pointwise/weak inverse note, primary plus two helpers, six declared inputs, final paired results/cache, compact premise/status/trace and scope records. Separate pre-exposure math, alternate Einstein generator, post-exposure source review and weak proof remain clearly attributed. Exact source/failure/mutation/output histories go in a deterministic recovery archive with complete per-member identities; selected reports remain plain. Seven third-party PDF/text/render files remain local with explicit omission hashes and source/read-scope receipts. Parent is frozenM18b789855264cad2db6dabe73f28ff3618dc58f66f; no science merge/main push/audit.
+
+## M20 coherent extension
+
+Add one full-field necessary metric note and its runner, exact frozen two-case protocol, results/cache and source/review/mutation archive to existing PR9620. Preserve M19 canonical source/cache/evidence unchanged. No separate PR for the algebraic sub-lemma.

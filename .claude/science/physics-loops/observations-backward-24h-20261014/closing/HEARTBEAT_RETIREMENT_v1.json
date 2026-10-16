@@ -1,0 +1,24 @@
+{
+  "automation_id": "observations-backward-24-hour-campaign",
+  "recorded_at": "2026-10-15T21:48:55Z",
+  "confirmed_deleted": true,
+  "tool": "mcp__codex_app__automation_update",
+  "request": {
+    "mode": "delete",
+    "id": "observations-backward-24-hour-campaign"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Deleted automation in the app."
+      },
+      {
+        "type": "text",
+        "text": "{\"automationId\":\"observations-backward-24-hour-campaign\",\"mode\":\"delete\",\"deleteStatus\":\"deleted\",\"snapshot\":{\"kind\":\"heartbeat\",\"name\":\"Observations backward — 24 hour campaign\",\"rrule\":\"FREQ=MINUTELY;INTERVAL=30;UNTIL=20261015T223000Z\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "reason": "Original fixed campaign deadline reached; no research continuation scheduled."
+}

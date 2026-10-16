@@ -1,0 +1,32 @@
+{
+  "time": "2026-10-16T05:41:15.607061+00:00",
+  "finding": "Removing the Lipschitz quadrature term survived the initial24mutations; positive readout bias partly canceled the existing midpoint error.23mutations detected and1undetected.",
+  "scope": "Control coverage weakness; no counterexample to the derived bound",
+  "repair": "Share the midpoint-bound implementation across the old example and a sharp one-bin symmetric absolute-value example with zero readout error. The integral is separately quadrature-computed, and the elementary analytic value1/2is a further check.",
+  "historical_files": [
+    {
+      "original": "scripts/ringdown_action_math.py",
+      "archive": "outputs/ringdown_action_inverse/history/ringdown_action_math.py.before_midpoint.gz",
+      "original_sha256": "3293be690789f92a09034a4f9573c95cff7480a2669f33cfc4464847e405a950",
+      "archive_sha256": "deab5f3b1b1ce85031768de3fca029556e20f07bf79575f9d59887c4b1da077f"
+    },
+    {
+      "original": "logs/runner-cache/ringdown_action_inverse.txt",
+      "archive": "outputs/ringdown_action_inverse/history/ringdown_action_inverse.txt.before_midpoint.gz",
+      "original_sha256": "ded357c09b66f8fed317e85dae868fa17f97b4fca9a223ca8c9f1d64cd491756",
+      "archive_sha256": "8e3422df2c331ab2b7565f64b131351bf63df4415f482aec5deb8842f777ede9"
+    },
+    {
+      "original": "outputs/ringdown_action_inverse/controls.json",
+      "archive": "outputs/ringdown_action_inverse/history/controls.json.before_midpoint.gz",
+      "original_sha256": "ef0aa86431383e9670beebd183745e5a62c76fe80d825769552d4aa682fdfe9a",
+      "archive_sha256": "93836b30bc49ca9763ec2690bf040d2a832baab96b851631beb4f9090e385de0"
+    },
+    {
+      "original": "outputs/ringdown_action_inverse/mutations.json",
+      "archive": "outputs/ringdown_action_inverse/history/mutations.json.before_midpoint.gz",
+      "original_sha256": "8b5f76bcde659f721d59b672b446c2a0d597e5fb0b3a9197155fd5a1abae9cf2",
+      "archive_sha256": "838fc7b50b3e905cc003e83a026abd15a79f8ae0f568a10440b1a19fe665c300"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "detected": true,
+    "elapsed_seconds": 1.9481484997086227,
+    "exception": null,
+    "exit_code": 1,
+    "expected_failed_check": "complete_twelve_column_expansion",
+    "failed_checks": [
+      "complete_twelve_column_expansion",
+      "proposed_beta_coefficient",
+      "n=0/physical_twelve_column_identity",
+      "n=3/physical_twelve_column_identity",
+      "n=4/physical_twelve_column_identity",
+      "n=5/physical_twelve_column_identity",
+      "actual_observed_coefficient_recovery"
+    ],
+    "module": "scalar_photon_reception_core",
+    "mutant_sha256": "4920cbd5d36dff78326631b1d69d316d250157d75b97717f1b7abdb61457e4a5",
+    "name": "common_coefficient",
+    "new": "MM,L(MM)",
+    "old": "2*MM,L(MM)",
+    "original_sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32"
+  },
+  {
+    "detected": true,
+    "elapsed_seconds": 10.07402874995023,
+    "exception": null,
+    "exit_code": 1,
+    "expected_failed_check": "n=0/hidden_velocity",
+    "failed_checks": [
+      "n=0/hidden_velocity",
+      "n=0/physical_twelve_column_identity",
+      "n=3/hidden_velocity",
+      "n=3/physical_twelve_column_identity",
+      "n=4/hidden_velocity",
+      "n=4/physical_twelve_column_identity",
+      "n=5/hidden_velocity",
+      "n=5/physical_twelve_column_identity",
+      "actual_observed_coefficient_recovery",
+      "recovered_gain_background"
+    ],
+    "module": "scalar_photon_reception_core",
+    "mutant_sha256": "ef723635519a90f3328d084ea30ebc364ff4361f6e2301688efc4eb3991d9727",
+    "name": "common_primitive_path",
+    "new": "W=gain*Y+gain_u*integral",
+    "old": "W=gain*Y+2*gain_u*integral",
+    "original_sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32"
+  },
+  {
+    "detected": true,
+    "elapsed_seconds": 0.3213643333874643,
+    "exception": "IndexError: list index out of range",
+    "exit_code": 1,
+    "expected_failed_check": "background_Friedmann",
+    "failed_checks": [
+      "background_Friedmann",
+      "background_Raychaudhuri",
+      "background_scalar",
+      "generic_original_dust_continuity",
+      "generic_original_scalar"
+    ],
+    "module": "scalar_photon_reception_core",
+    "mutant_sha256": "aaf7dd3402c1404b4dfdb8a9debfe2956d7f5d1830dc70b5faae867f2c4515bb",
+    "name": "physical_background_density",
+    "new": "rr=(2*pp-y+1)/t**2",
+    "old": "rr=(2*pp-y)/t**2",
+    "original_sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32"
+  },
+  {
+    "detected": true,
+    "elapsed_seconds": 1.4804196655750275,
+    "exception": null,
+    "exit_code": 1,
+    "expected_failed_check": "candidate_rank_twelve_attained",
+    "failed_checks": [
+      "candidate_rank_twelve_attained"
+    ],
+    "module": "scalar_photon_reception_core",
+    "mutant_sha256": "212876e9514b443f521b9612605daf05c6cd754eb2a84ba006eba84765e24a02",
+    "name": "actual_rank_loss",
+    "new": "ll=2",
+    "old": "ll=i+2",
+    "original_sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32"
+  },
+  {
+    "detected": true,
+    "elapsed_seconds": 19.51534154219553,
+    "exception": null,
+    "exit_code": 1,
+    "expected_failed_check": "full_observed_coefficient_recovery",
+    "failed_checks": [
+      "n0/full_fourteen_relation",
+      "n3/full_fourteen_relation",
+      "n4/full_fourteen_relation",
+      "n5/full_fourteen_relation",
+      "full_observed_coefficient_recovery"
+    ],
+    "module": "scalar_photon_separate_gains",
+    "mutant_sha256": "2e62e27c01bebde23218b676c681b1f52b079b3d900c897933404a6fbb785361",
+    "name": "separate_coefficient",
+    "new": "ss,3*ss,L(ss)",
+    "old": "ss,2*ss,L(ss)",
+    "original_sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671"
+  },
+  {
+    "detected": true,
+    "elapsed_seconds": 9.91697912523523,
+    "exception": null,
+    "exit_code": 1,
+    "expected_failed_check": "scaled_perturbation_bound_1e-06",
+    "failed_checks": [
+      "scaled_perturbation_bound_1e-12",
+      "scaled_perturbation_bound_1e-09",
+      "scaled_perturbation_bound_1e-06"
+    ],
+    "module": "scalar_photon_calibration_controls",
+    "mutant_sha256": "92a49245da7992b49445ed398a22b29748430e5c1e7c91d83d37b00e7461cd5e",
+    "name": "conditioning_bound",
+    "new": "margin=singular[0]-np.linalg.norm(E,2)",
+    "old": "margin=singular[-1]-np.linalg.norm(E,2)",
+    "original_sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3"
+  },
+  {
+    "detected": false,
+    "elapsed_seconds": 7.555912291165441,
+    "exception": null,
+    "exit_code": 0,
+    "expected_failed_check": "omission_rejected_by_Raychaudhuri",
+    "failed_checks": [],
+    "module": "scalar_photon_calibration_controls",
+    "mutant_sha256": "e99f454d8c861a4bb5974a94d751b3ceb35012b4bcecd7b2bc2ca2ab6ae335c8",
+    "name": "physical_residual_positive_control",
+    "new": "C=G/2;e=4",
+    "old": "C=G/2-beta;e=4-d*beta",
+    "original_sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3"
+  }
+]

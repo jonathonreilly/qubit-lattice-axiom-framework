@@ -1,0 +1,18 @@
+{
+  "scope": "Packaging-only byte-identity verification; no science rerun",
+  "historical_binding_manifest_sha256": "bfc4ee93df4a4f37468dfeeca3a614666e76cacd8933fbce468a5c78bb254263",
+  "storage_mapping_sha256": "d92ca91fa320f61198fdb61fe800e4f0a7a8e5caed71b13c7b85b8f1bf25cc51",
+  "archive_path": "outputs/sampled_coupling/cache_before_runner_label.txt.gz",
+  "archive_sha256": "05e7209ca4723be65119f281d2e6c8a2a869c743736a8b1f04231237e955d414",
+  "uncompressed_sha256": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd",
+  "uncompressed_bytes": 9763,
+  "gzip_mtime": 0,
+  "original_text_path_absent": true,
+  "decompressed_matches_original_binding": true,
+  "four_current_bindings_unchanged": {
+    "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b",
+    "scripts/sampled_coupling_inverse.py": "500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20",
+    "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af",
+    "logs/runner-cache/sampled_coupling_inverse.txt": "8f47d26366060335d7b1fc719b95f26c4dbfe477c21765c59534dd43090b9bd4"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "mathematics_or_read_closure_changed": false,
+  "old_primary_sha256": "d540f1b5a69093afb74950ba101f81aed757495c0e3f5105471318fdf1ccbd4b",
+  "primary_sha256": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+  "reason": "Focused checker distinguished imported helper execution from explicit integrity byte reads."
+}

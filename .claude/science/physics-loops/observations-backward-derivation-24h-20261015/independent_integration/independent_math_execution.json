@@ -1,0 +1,11 @@
+{
+  "runner": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/check_integrated_math.py",
+  "runner_sha256": "53070a475de24c4b49cbbcf1f91d1b02199838a7fe80e9402dec70efd644e457",
+  "timeout_seconds": 120,
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.9889713330194354,
+  "user_seconds": 0.881284,
+  "system_seconds": 0.039768,
+  "max_rss_bytes_macos": 73023488
+}

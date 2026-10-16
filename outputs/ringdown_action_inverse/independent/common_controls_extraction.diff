@@ -1,0 +1,16 @@
+--- check_common_action_ringdown_v2.py
++++ common_controls
+@@ -135,8 +135,11 @@
+ for gx, gr in [(2.3, 0.7), (-1.7, -2.1)]:
+     changed = extract(aa, zz * gr / gx, tt, ff * gr + 3)
+     check('affine_work_orientation_' + str(gx), abs(changed['Q'] - base['Q'] / gx) < 1e-09)
+-check('no_decay_merges_h_with_offset', len(set([0, 0])) == 1)
+-check('unexcited_mode_has_no_force_anchor', abs(0j) ** 2 == 0)
++zero_decay_times = np.linspace(0, 9, 70)
++zero_decay_basis = np.column_stack([np.ones(70), np.cos(2 * zero_decay_times), np.sin(2 * zero_decay_times), np.exp(0 * zero_decay_times), np.cos(4 * zero_decay_times), np.sin(4 * zero_decay_times)])
++check('no_decay_merges_h_with_offset', np.linalg.matrix_rank(zero_decay_basis) == 5)
++_, _, _, unexcited_force, _ = synthetic_records(0.3, (0.0, 0.0))
++check('unexcited_mode_has_no_force_anchor', np.ptp(unexcited_force) < 1e-13)
+ Ncancel = (s - lam) * (s - lb)
+ Zcancel = sy.cancel(pol - Ncancel ** 2 / (ta * (s - lam) * (s - lb)))
+ check('pole_cancellation_is_blind', sy.denom(Zcancel).has(s) == False)

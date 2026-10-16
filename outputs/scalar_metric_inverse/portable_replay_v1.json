@@ -1,0 +1,37 @@
+{
+  "source_sha256": {
+    "scripts/scalar_metric_inverse.py": "274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708",
+    "docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+    "scripts/scalar_metric_coefficients.py": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+    "scripts/scalar_metric_conditioning.py": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+    "scripts/scalar_metric_constraints.py": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+    "scripts/scalar_metric_fixed_background.py": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+    "scripts/scalar_metric_geometry.py": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+    "scripts/scalar_metric_joint_gain.py": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+    "scripts/scalar_metric_local_kernels.py": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+    "scripts/scalar_metric_photon_map.py": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+    "scripts/scalar_metric_transport.py": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+    "scripts/scalar_metric_varying_coupling.py": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01"
+  },
+  "scope": "Two independent disposable file closures, invoked from outside repository; same installed Python/library versions, not independent implementations",
+  "runs": [
+    {
+      "run": 1,
+      "exit_code": 0,
+      "byte_identical": true,
+      "result_sha256": "ca2bddfe6cf3528a78875930b8c9baf02d346e3c227630bc3c7897cdcbcd23dd",
+      "stdout_sha256": "c85333743d789a78fd5aacd3c8dd75cb279cc44a694b536ad4ad579665f22afb",
+      "stderr_utf8": "",
+      "bytecode_created": false
+    },
+    {
+      "run": 2,
+      "exit_code": 0,
+      "byte_identical": true,
+      "result_sha256": "ca2bddfe6cf3528a78875930b8c9baf02d346e3c227630bc3c7897cdcbcd23dd",
+      "stdout_sha256": "c85333743d789a78fd5aacd3c8dd75cb279cc44a694b536ad4ad579665f22afb",
+      "stderr_utf8": "",
+      "bytecode_created": false
+    }
+  ]
+}

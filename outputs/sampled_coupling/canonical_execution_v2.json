@@ -1,0 +1,8 @@
+{
+  "runner": "scripts/sampled_coupling_inverse.py",
+  "status": "ok",
+  "exit_code": 0,
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.7691071247681975,
+  "cache": "/Users/jonBridger/.codex/worktrees/sampled-coupling-inverse-20261016/New Axioms Lets Go/logs/runner-cache/sampled_coupling_inverse.txt"
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "scripts/sampled_coupling_inverse.py"
+  ],
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.7322655417956412,
+  "returncode": 0
+}

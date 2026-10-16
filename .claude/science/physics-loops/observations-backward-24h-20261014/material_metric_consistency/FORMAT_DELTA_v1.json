@@ -1,0 +1,120 @@
+{
+  "created_at": "2026-10-15T20:42:13.451901+00:00",
+  "finding": "git diff --cached --check rejected new blank lines at EOF; stage creation stopped before freeze.",
+  "repair_attempt": "Initial one-extra-LF assertion failed before any source edit; inspected three terminal LF bytes and removed two.",
+  "old_helper_sha256": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+  "new_helper_sha256": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
+  "helper_AST_identical": true,
+  "exact_delta": "Remove exactly two terminal LF bytes; all other bytes unchanged.",
+  "mutation_AST_equivalence": [
+    {
+      "name": "angular_metric_slot",
+      "old_sha256": "f623adb2b1a56844fa3767ea7c0133f5b9fef4939cf5b6a28a7fb3b0312a1bc9",
+      "formatted_sha256": "ca117ba6682565ccd4eb40f52d2e6e5dcb00c4df7b7f33345a305e5ac42cb0f5",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "null_difference_sign",
+      "old_sha256": "51bdfed6f0173fa242007de3e502c3e2fc6f588038095956cfd0fec70576f40d",
+      "formatted_sha256": "3b1e7e0cf189771b975d86c5a5a67d4762bd3fb109227e246fda6ba4266351c9",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "kinetic_ratio_factor",
+      "old_sha256": "34b58d0937b5d86ce6afb6c0799813e63a257fcc5fd4314184a63cc38fcb0c29",
+      "formatted_sha256": "a162003e3b57133dffe7150f4692e42b91e34f6516178b795add77ac3d31a91d",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "pair_inverse_sign",
+      "old_sha256": "ea707da2b70af3f5e597b303d5ea7be82ddf0991d24a2fa59e36da195b5885cb",
+      "formatted_sha256": "ccdc785199a253e147488c9774f32ca95fb314c306a7abefc6d88ee68c7a04f1",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "candidate_k_map",
+      "old_sha256": "a12ec280d52a92eb3e19cedb6e6f5c3c1f87dc94915940d88b35a6bbe0dba334",
+      "formatted_sha256": "d236546b0b96ffd8d9e311508d01990f8ca9c92bb0cabba8418d52941b33e08f",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "potential_log_factor",
+      "old_sha256": "d9081d37f84976236e53d98b749d5082091a3693a3d42efaa54c874edf07a477",
+      "formatted_sha256": "f284f4a0bd95525dfc3cc54179ac74b33057792b8cea49fa6f433cdb87d8aecd",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "potential_kinetic_slot",
+      "old_sha256": "73f033539bc476923f2907482bd4b20b95169d2eea70a7ac517df500f8c20a60",
+      "formatted_sha256": "d69e82c3235f50d714e6e9e44e016d51aa0ae9d0d445fdb16dabfc80ca17a14b",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "interval_identity_sign",
+      "old_sha256": "070ae6a07921fa90de4a23934221b48d7f02275d68c8cbc37977b0abe54c0951",
+      "formatted_sha256": "499075cebd879c7b65fdca5398ed79d10df30db5080b0975ea91b9edff7cb6dc",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "potential_checked_only_at_fit",
+      "old_sha256": "5df207950c52301421c0560b055e2a42d072e317215bc64f88baa50ffadb6efa",
+      "formatted_sha256": "c5b99a7614e2597e45a71392336eac85c378eb8b73908b7857bed3b8028560ef",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "finite_error_term_missing",
+      "old_sha256": "5306733bc511d07eea4f22181fc9b2bbfbedcff12df00b79f637bb184d62f5c1",
+      "formatted_sha256": "3e9b9924cdcbbd7d8f513012624e18416eda32a7eed52e1ea56a6e6b35d3a06e",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "positive_potential_guard_removed",
+      "old_sha256": "c0e38ee1f3f992c03347bf386d4b8d3a996f8230c680f180c3d6cbfb693e9b87",
+      "formatted_sha256": "a8e154985d4375cfd389927bdc3799478aca1de323fe2953f23db67769f118dc",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "nonfinite_guards_removed",
+      "old_sha256": "9840418a45e9739fcfb8daa0df4db8b60d54e668d06b8ed8ad4943d7b4177553",
+      "formatted_sha256": "a09e12e8c343a7d095e4c0f119a4944faed4ef469de67140c90cea8bdaef0a16",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    },
+    {
+      "name": "scalar_curvature_normalization",
+      "old_sha256": "cbf22cf0c325f2f216c6da74aedfe0a8bb9a580dd2b19a65cbe8334ce8e79778",
+      "formatted_sha256": "779f1926e88270a441ca5b0e3b1af27b29c569aee563f7d53b842e1ee704021b",
+      "AST_identical": true,
+      "source_delta": "two extra terminal LF bytes removed",
+      "execution_basis": "Historical MUTATIONS_v2 checks on identical Python AST; not rerun or presented as newly executed bytes."
+    }
+  ],
+  "prior_source_cache_snapshot": "pre_eof_repair_v1/",
+  "old_binding": "CANONICAL_BINDING_v3.json",
+  "new_binding": "CANONICAL_BINDING_v4.json",
+  "no_scientific_claim_change": true,
+  "overstrict_comparison_failure": "Initial raw results equality assertion also compared input hashes and elapsed time and failed after successful guarded execution. Recursive diff found exactly the two source-identity fields and weak elapsed field listed in bindingv4. Excluding these metadata fields yields exact full numerical/result equality; no rerun was needed."
+}

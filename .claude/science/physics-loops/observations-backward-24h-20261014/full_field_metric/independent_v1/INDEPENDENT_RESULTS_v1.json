@@ -1,0 +1,186 @@
+{
+  "scope": "Independent exact algebra and local witnesses only; no full solution, ODE, metric data or author source execution.",
+  "checks": [
+    {
+      "name": "transverse_z_kinetic_x_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse_z_kinetic_y_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive_potential_log_derivative_x",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive_potential_log_derivative_y",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "distinct_log_derivative_gap",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "base_potential_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "z_gradient_source",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric_time_reconstruction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric_radial_reconstruction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric_angular_reconstruction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first_field_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_field_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "residual_without_explicit_second_field_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "potential_sum_inverse",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "potential_z_derivative_inverse",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "recover_Ux",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "recover_Uy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "lower_envelope_remainder",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "upper_envelope_remainder",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "kinetic_compatibility_of_positive_squares",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixture_reconstructed_x_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixture_reconstructed_y_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixture_strict_lower_envelope",
+      "passed": true
+    },
+    {
+      "name": "fixture_strict_upper_envelope",
+      "passed": true
+    },
+    {
+      "name": "below_lower_envelope_negative_y_piece",
+      "passed": true
+    },
+    {
+      "name": "above_upper_envelope_negative_x_piece",
+      "passed": true
+    },
+    {
+      "name": "zero_potential_remainder_y",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "zero_potential_remainder_x",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "negative_remainder_has_empty_envelope",
+      "passed": true
+    },
+    {
+      "name": "constant_nonzero_transverse_amplitudes_have_positive_potential",
+      "passed": true
+    },
+    {
+      "name": "constant_transverse_coordinates_have_zero_kinetic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "missing_B_coordinate_kinetic_witness",
+      "passed": true,
+      "difference": "-6/35"
+    },
+    {
+      "name": "positive_kinetic_inequality_factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "all_fixture_coefficients_positive",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "passed": 34,
+    "failed": 0
+  },
+  "fixture": {
+    "k": "1/10",
+    "a": "117/400",
+    "s": "110/7",
+    "Ax": "117/7000",
+    "Ay": "39/3500",
+    "ellx": "388/117",
+    "elly": "4",
+    "Delta": "117/700",
+    "E": "109/175",
+    "x_squared": 4,
+    "y_squared": 9
+  },
+  "source_sha256": "bdecee250afeb1e1fabb113d4127a870688ecc67834bc4872bc739cdba6df4c1"
+}

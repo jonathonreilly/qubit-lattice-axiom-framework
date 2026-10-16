@@ -1,0 +1,34 @@
+{
+  "kind": "focused_independent_integration_check_not_audit",
+  "snapshot_utc": "2026-10-16T00:15:49.357303+00:00",
+  "root": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
+  "sources": {
+    "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": {
+      "sha256": "13e269dc161a9430141264891d261637aa3666f06056834568a57a6dbf5a3224",
+      "bytes": 19926
+    },
+    "scripts/scalar_observation_inverse.py": {
+      "sha256": "2990d2df8fc07492cc5a20bed2860cedb6590d7342c610237645e5d02cc99df2",
+      "bytes": 13082
+    },
+    "scripts/scalar_observation_inverse_math.py": {
+      "sha256": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f",
+      "bytes": 3568
+    }
+  },
+  "announced_source_movement": [
+    {
+      "path": "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md",
+      "first_read_sha256": "66a53b68cd4e52d6ae795b41693a455aa4aea05f58220f34350fced6ca040c42",
+      "snapshot_sha256": "9eb317199030eb24b60bd78301e8c637b5f2db1ea8251149e846179a26763764",
+      "description": "Parent announced primary-runner citation-label packaging edit; no mathematics changed."
+    },
+    {
+      "path": "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md",
+      "first_read_sha256": "9eb317199030eb24b60bd78301e8c637b5f2db1ea8251149e846179a26763764",
+      "snapshot_sha256": "13e269dc161a9430141264891d261637aa3666f06056834568a57a6dbf5a3224",
+      "description": "Parent announced helper-import/integrity-read wording and checkpoint-provenance clarification; no equations changed; exact old bytes and diff preserved in NOTE_SOURCE_MOVEMENT.json."
+    }
+  ],
+  "updated_utc": "2026-10-16T00:19:41.931584+00:00"
+}

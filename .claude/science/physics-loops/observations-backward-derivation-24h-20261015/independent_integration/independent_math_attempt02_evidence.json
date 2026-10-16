@@ -1,0 +1,196 @@
+{
+  "kind": "focused independent mathematical check, not audit or empirical test",
+  "utc_time": "2026-10-16T00:20:45.713358+00:00",
+  "python": "3.12.8",
+  "sympy": "1.14.0",
+  "source_hashes": {
+    "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "ace17dec892f72714664d10e23c348b49087376247e4e17539babbfd20fe27cd",
+    "scripts/scalar_observation_inverse.py": "2990d2df8fc07492cc5a20bed2860cedb6590d7342c610237645e5d02cc99df2",
+    "scripts/scalar_observation_inverse_math.py": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f"
+  },
+  "checks": [
+    {
+      "name": "frozen current source identities at start",
+      "ok": false,
+      "actual": {
+        "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "ace17dec892f72714664d10e23c348b49087376247e4e17539babbfd20fe27cd",
+        "scripts/scalar_observation_inverse.py": "2990d2df8fc07492cc5a20bed2860cedb6590d7342c610237645e5d02cc99df2",
+        "scripts/scalar_observation_inverse_math.py": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f"
+      }
+    },
+    {
+      "name": "helper Einstein tensor compared with full four-dimensional curvature",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "transport denominator is the actual angular-temporal Hessian difference",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "all metric equations for independent non-power reconstruction",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "direct scalar equation for independent non-power reconstruction",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "non-power transport from independently computed curvature",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "primitive density with arbitrary light speed",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "simultaneous orbit-rate/light-speed unit conversion",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "endpoint multiplicative ratio",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "independent derivative envelope coefficient: r",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "independent derivative envelope coefficient: R",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "independent derivative envelope coefficient: O",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "independent derivative envelope coefficient: q",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "independent derivative envelope coefficient: P",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "pointwise completed-square identity for radar bins",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "bin helper reaches equality for actual integrated profile",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "dust metric equations from independently computed full curvature",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "dust scalar equation from independent curvature and Hessian",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "constant branch scalar slope uses independently computed curvature",
+      "ok": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "zero D guard",
+      "ok": true
+    },
+    {
+      "name": "negative error guard",
+      "ok": true
+    },
+    {
+      "name": "zero light-speed guard",
+      "ok": true
+    },
+    {
+      "name": "empty bins guard",
+      "ok": true
+    },
+    {
+      "name": "zero H guard",
+      "ok": true
+    },
+    {
+      "name": "source identities unchanged during independent calculation",
+      "ok": true,
+      "actual": {
+        "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "ace17dec892f72714664d10e23c348b49087376247e4e17539babbfd20fe27cd",
+        "scripts/scalar_observation_inverse.py": "2990d2df8fc07492cc5a20bed2860cedb6590d7342c610237645e5d02cc99df2",
+        "scripts/scalar_observation_inverse_math.py": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f"
+      }
+    }
+  ],
+  "nonpower_transport": "-r*(5*r**4 + 129*r**2 + 1040)/(40*(r**2 - 8)*(r**2 + 5))",
+  "nonpower_interval": "1 <= r <= 2; d>0 and u>0",
+  "pass": 24,
+  "fail": 1
+}

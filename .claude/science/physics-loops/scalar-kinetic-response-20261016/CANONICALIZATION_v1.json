@@ -1,0 +1,37 @@
+[
+  {
+    "source": "check_general_kinetic_photon_v1.py",
+    "source_sha256": "4246f13b83e1517bf6c5856945ea7a7087925efc7fb1c87e48046a9a86b34bee",
+    "target": "scripts/scalar_kinetic_background.py",
+    "target_sha256": "e5c7a3e2b424faef31e3a86ca281e068c1688c42972668073b982d77d1997fbd",
+    "changes": "Wrap computation in run_checks, omit elapsed from deterministic output, primary owns execution and failure summary. Original development sources preserved."
+  },
+  {
+    "source": "check_kinetic_curvature_inverse_v1.py",
+    "source_sha256": "248063b305ecdb307bc0d22f6ae63abc3d34942ffd8bb9fa047fa39130892eb2",
+    "target": "scripts/scalar_kinetic_response_core.py",
+    "target_sha256": "1b0cd136728c9adf4de6ef94c3935afd2bd07160027409a5de413941e86e266f",
+    "changes": "Wrap computation in run_checks, omit elapsed from deterministic output, primary owns execution and failure summary. Original development sources preserved."
+  },
+  {
+    "source": "check_kinetic_zero_crossing_v1.py",
+    "source_sha256": "c8b3021445d5dfd8262ca889fcef0a9af5f1309b65973bdef35bac7a164b99f6",
+    "target": "scripts/scalar_kinetic_zero.py",
+    "target_sha256": "12a93681777ec41dfcccde59fd9e25c5e4aaa99472749f2f45cf65c0efe29d7c",
+    "changes": "Wrap computation in run_checks, omit elapsed from deterministic output, primary owns execution and failure summary. Original development sources preserved."
+  },
+  {
+    "source": "check_kinetic_real_phase_jets_v1.py",
+    "source_sha256": "13bc654cce52b42bd753a7897a9ac3d20b470170dceafe3ce73471af0574e04b",
+    "target": "scripts/scalar_kinetic_phase.py",
+    "target_sha256": "645a75a7af23ea7c59d5eaf650f1b0b238651d9aed5b18a756631b0133722b9a",
+    "changes": "Wrap computation in run_checks, omit elapsed from deterministic output, primary owns execution and failure summary. Original development sources preserved."
+  },
+  {
+    "source": "check_kinetic_curvature_weak_v1.py",
+    "source_sha256": "57e70c0a2fd8a5f493046651f563344b80d79c784fb3efafac03df58e2cf7944",
+    "target": "scripts/scalar_kinetic_weak.py",
+    "target_sha256": "277f25e6d00d47ebfd5927a30d5f8a6c99d6a115745adbc9a5e2adb4a7025512",
+    "changes": "Wrap computation in run_checks, omit elapsed from deterministic output, primary owns execution and failure summary. Original development sources preserved."
+  }
+]

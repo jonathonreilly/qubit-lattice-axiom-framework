@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-16T04:36:57.838850+00:00",
+  "reason": "Staged whitespace check found the preserved historical cache has a terminal blank line. Preserve exact evidence bytes in deterministic gzip instead of editing the historical output. This is packaging only.",
+  "historical_path": "outputs/sampled_coupling/cache_before_runner_label.txt",
+  "archive_path": "outputs/sampled_coupling/cache_before_runner_label.txt.gz",
+  "uncompressed_sha256": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd",
+  "archive_sha256": "05e7209ca4723be65119f281d2e6c8a2a869c743736a8b1f04231237e955d414",
+  "byte_exact_roundtrip": true,
+  "historical_manifests_unchanged": true
+}

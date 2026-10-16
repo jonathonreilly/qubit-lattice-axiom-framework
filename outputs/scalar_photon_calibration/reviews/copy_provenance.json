@@ -1,0 +1,50 @@
+{
+  "split_gain_review.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_split_reception_gain/REPORT_v3.md",
+    "original_sha256": "0cf07a9aaf478d5e1d7cb9fcbb3dd68938e88581e6070c9708c551438940e093",
+    "readable_copy_sha256": "0cf07a9aaf478d5e1d7cb9fcbb3dd68938e88581e6070c9708c551438940e093",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  },
+  "weak_independent_review.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_primitive_weak/REPORT_BEFORE_AUTHOR_v1.md",
+    "original_sha256": "5c435cb7ec00747596e5b24055ba06f030f0d9679e4c117096a83631dcc81c17",
+    "readable_copy_sha256": "5c435cb7ec00747596e5b24055ba06f030f0d9679e4c117096a83631dcc81c17",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  },
+  "weak_comparison.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_primitive_weak/COMPARISON_REPORT_v1.md",
+    "original_sha256": "fed6444bad1d606d9b2bde876ef0e68327fe47dac09828196a4de753ee363461",
+    "readable_copy_sha256": "fed6444bad1d606d9b2bde876ef0e68327fe47dac09828196a4de753ee363461",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  },
+  "common_gain_robustness.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_reception_gain/ROBUSTNESS_REPORT.md",
+    "original_sha256": "5c78463afbddda12a99b05c68a0c8790bbee4a7253ce7b48276fbeaa341f5736",
+    "readable_copy_sha256": "5c78463afbddda12a99b05c68a0c8790bbee4a7253ce7b48276fbeaa341f5736",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  },
+  "canonical_initial_review.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/outputs/scalar_photon_calibration/independent_integration/REPORT.md",
+    "original_sha256": "aa6da7e91999eb8f9d6b02c8edc25647360063bed14be52c27d06f757d89ecbb",
+    "readable_copy_sha256": "aa6da7e91999eb8f9d6b02c8edc25647360063bed14be52c27d06f757d89ecbb",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  },
+  "canonical_weak_delta.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/outputs/scalar_photon_calibration/independent_integration/DELTA_v2_REPORT.md",
+    "original_sha256": "fe95a7b0db6a6b63671825f639152567aa11f076543467c788b2bee58a174e94",
+    "readable_copy_sha256": "fe95a7b0db6a6b63671825f639152567aa11f076543467c788b2bee58a174e94",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  },
+  "canonical_editorial_confirmation.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/outputs/scalar_photon_calibration/independent_integration/EDITORIAL_v3_REPORT.md",
+    "original_sha256": "4652c5b7e158edac1cfd23aa3c280897c1d8cb775673fc4a80b4671f6ee4ae38",
+    "readable_copy_sha256": "4652c5b7e158edac1cfd23aa3c280897c1d8cb775673fc4a80b4671f6ee4ae38",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  },
+  "cluster_value.md": {
+    "original_path": "/Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/outputs/scalar_photon_calibration/cluster_value_check/REPORT_v1.md",
+    "original_sha256": "e1fc6cae5d868566b92ca222c4afb6c90c900dfcf01b784d483d7f342a312e9e",
+    "readable_copy_sha256": "e1fc6cae5d868566b92ca222c4afb6c90c900dfcf01b784d483d7f342a312e9e",
+    "normalization": "Trailing whitespace and terminal blank lines only; frozen original remains in archive."
+  }
+}

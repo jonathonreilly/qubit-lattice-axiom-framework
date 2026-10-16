@@ -1,0 +1,1281 @@
+{
+  "at_utc": "2026-10-16T15:51:53.547946+00:00",
+  "scope": "Preserved derivations, source/output freezes, focused checks, failed attempts, and actual-source mutations. No empirical input or raw external papers. Absolute paths are historical origins; archive member paths are portable.",
+  "archive": "DEVELOPMENT_EVIDENCE_v1.tar.gz",
+  "archive_sha256": "4957fcef86d51f5ea4b2f1fcfc08fa580767e8862faa65c57b555f73409d6b49",
+  "members": [
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CLUSTER_IDENTITY_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CLUSTER_IDENTITY_v1.json",
+      "bytes": 1651,
+      "sha256": "72fb357a14a7b25019a6cb0c2cca9354db6692d78bcf03c470fb6a7b9386c18c"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CLUSTER_PROCEDURE_SOURCE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CLUSTER_PROCEDURE_SOURCE_v1.json",
+      "bytes": 1225,
+      "sha256": "ea89183fdba897ddb16fc383741cc44c9ca71f16442c76b1c8973161491e99e3"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CLUSTER_VALUE_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CLUSTER_VALUE_v1.md",
+      "bytes": 2831,
+      "sha256": "152aa5a9c9f035a41ffeaac675ee0c5c4507d769fa011f35ec366dae4e18e0c0"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CORRESPONDENCE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CORRESPONDENCE_v1.json",
+      "bytes": 6892,
+      "sha256": "891386697f5d7d34f4c4159a0609c01cbe55104799981e0545120ed0c393fc62"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "bytes": 18234,
+      "sha256": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_result.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_result.json",
+      "bytes": 35477,
+      "sha256": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_background.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_background.py",
+      "bytes": 6124,
+      "sha256": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_phase.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_phase.py",
+      "bytes": 5666,
+      "sha256": "8e885688bd5a70b15ad06321647df1672c9e7b2abfa01a1069115fa92fce4864"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_response.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_response.py",
+      "bytes": 2926,
+      "sha256": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_response_core.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_response_core.py",
+      "bytes": 4338,
+      "sha256": "2cb9263f0841849bbf393a06c293f8f45169530e2fdfce7f0ceadcf2ac5d0d28"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_weak.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_weak.py",
+      "bytes": 5510,
+      "sha256": "dce72839ce95df00cff487bd9a71311d061a4a3f6d3c8852757150d354b69d01"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_zero.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_zero.py",
+      "bytes": 3166,
+      "sha256": "69e8f5bec95b2a0c0537a2df2ddf1071ad23de665dd5445dbbb1d4e87be3bc97"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/EXPOSURE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/EXPOSURE_v1.json",
+      "bytes": 2188,
+      "sha256": "83e44640068b0c6626adf5c1c8b122c922c28f947b5192bdb13993a7ad3db573"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/HISTORICAL_PRE_TIMEOUT_result.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/HISTORICAL_PRE_TIMEOUT_result.json",
+      "bytes": 35477,
+      "sha256": "6a5eae242d12569bd5bfb39de71ad3d218c000f78379bbfdd6341c536f067bde"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/INTEGRATION_IDENTITY_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/INTEGRATION_IDENTITY_v1.json",
+      "bytes": 12284,
+      "sha256": "6febdeaf22e0280490f143b782f85f529c3561e9b1a9812cda880b5368964d2e"
+    },
+    {
+      "member": "focused-checks/independent_canonical_kinetic_response/INTEGRATION_REVIEW_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/INTEGRATION_REVIEW_v1.md",
+      "bytes": 8064,
+      "sha256": "b98fc73afeb9d29c98cff903098b1db3da513a60e5d23c76ee7a7b432a506e55"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/AUTHOR_EXPOSURE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/AUTHOR_EXPOSURE_v1.json",
+      "bytes": 1495,
+      "sha256": "890313083dde002f86fca1af6b3da6176f725b61d03948a7d3238a6c2e4b6309"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/CODE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/CODE_FREEZE_v1.json",
+      "bytes": 332,
+      "sha256": "b90d26aa8cc013bce4cd5d971bebb9e8f43982c4d8a1d5225b2361b629263520"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/COMPARISON_IDENTITY_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/COMPARISON_IDENTITY_v1.json",
+      "bytes": 4961,
+      "sha256": "62e3040950aa75b2bc709b489d6fb8188d238e583f58d69e188da8ea0ef5234f"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/COMPARISON_REPORT_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/COMPARISON_REPORT_v1.md",
+      "bytes": 4705,
+      "sha256": "bb10125292f25c58fca24782ec132dacca06e2d89240df33f5d87adfa4bcb31d"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/EXECUTION_v1.json",
+      "bytes": 515,
+      "sha256": "7e4288e52bfa31956509abe20784c3851d1675104d488acd330b24f7958f2664"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/EXECUTION_v2.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/EXECUTION_v2.json",
+      "bytes": 515,
+      "sha256": "4404a45ebfcf629aee4a0e715d7881197b3f22cc043cce5439d186c740cfd7ca"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/INDEPENDENT_REPORT_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/INDEPENDENT_REPORT_v1.md",
+      "bytes": 3813,
+      "sha256": "72a25529b4765de05e99e66e0668a126bc8e4218054add427070d6f9640ad344"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/NONZERO_K_COMPARISON_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/NONZERO_K_COMPARISON_v1.json",
+      "bytes": 4852,
+      "sha256": "d57289852cf81f83bb16d281b952d86c95008b6a03fc3d1d12087fa5027a422c"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/NORMALIZATION_REPAIR_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/NORMALIZATION_REPAIR_v1.json",
+      "bytes": 928,
+      "sha256": "648dded87279113e4fe6f16d70eba251f7c04c7cd5c04fba2d8c504865906549"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/OUTPUT_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/OUTPUT_FREEZE_v1.json",
+      "bytes": 2796,
+      "sha256": "1bb6b979d0e0dd72c5d7a97fc94683f4ac0250603e81208bf62b8fb3d7c975b4"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/PROOF_BEFORE_CODE_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/PROOF_BEFORE_CODE_v1.md",
+      "bytes": 7208,
+      "sha256": "c9013323a284a120dafc91fae69ee639c41a43490e0e198df619976fc63b802a"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/PROOF_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/PROOF_FREEZE_v1.json",
+      "bytes": 539,
+      "sha256": "398301d1f6d825d5340f0e9e17b56e56c2f2fb5a2e25516a7eced2e233f99f91"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/REAL_PHASE_JETS_CHECK_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_CHECK_FREEZE_v1.json",
+      "bytes": 497,
+      "sha256": "7ba339482ee5e2d4b55f0b9b93f25160122aed20ff86c569ed4fe5ff91025db6"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/REAL_PHASE_JETS_COMPARISON_IDENTITY_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_COMPARISON_IDENTITY_v1.json",
+      "bytes": 6926,
+      "sha256": "4ab8a28dec9a551345eb172eaa204d5cd6ad3f5e1d2f1dbb05cb3204462f0105"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/REAL_PHASE_JETS_COMPARISON_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_COMPARISON_v1.md",
+      "bytes": 6533,
+      "sha256": "aa6db1a1bd5c2e7ca4d1971af515d6323d675be667d31af05d034ab5190b4d23"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/REAL_PHASE_JETS_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_EXECUTION_v1.json",
+      "bytes": 397,
+      "sha256": "50a1098b81ee6a10c20b499e9e63c52c980787b6b9734e72a1e8b648cb8e3e1c"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/REAL_PHASE_JETS_EXPOSURE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_EXPOSURE_v1.json",
+      "bytes": 2238,
+      "sha256": "570cb469405c14c6c7421898db230f33b11bebb2969e0940edbebe21c24fc423"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/REAL_PHASE_JETS_RUN_v1.stderr",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/REAL_PHASE_JETS_RUN_v1.stdout",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_RUN_v1.stdout",
+      "bytes": 1879,
+      "sha256": "95106c686dab7e4e7b9e3c62e2de1027143a6a177cbdad4e70746f9dc5e6e1f9"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/RESULTS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/RESULTS_v1.json",
+      "bytes": 14266,
+      "sha256": "c2b77d02c66791b4c4f9b5c9a38054761f2a7017a0de7469ede58ae0215072da"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/RESULTS_v2.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/RESULTS_v2.json",
+      "bytes": 14171,
+      "sha256": "b2f7880acc0539d98e0029a2f05c8428db60d6617c262192008e328bc7e23929"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/RUN_v1.stderr",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/RUN_v1.stdout",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/RUN_v1.stdout",
+      "bytes": 14266,
+      "sha256": "c2b77d02c66791b4c4f9b5c9a38054761f2a7017a0de7469ede58ae0215072da"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/RUN_v2.stderr",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/RUN_v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/RUN_v2.stdout",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/RUN_v2.stdout",
+      "bytes": 14171,
+      "sha256": "b2f7880acc0539d98e0029a2f05c8428db60d6617c262192008e328bc7e23929"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/check_independent_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/check_independent_v1.py",
+      "bytes": 9557,
+      "sha256": "8acc3c597be687afe3eafeb588f2b0eb6ec7a0db4c7532bbb778c097d708c501"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/check_independent_v2.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/check_independent_v2.py",
+      "bytes": 9567,
+      "sha256": "64a267a1016a2232d4ea5dbc44d86246aae1f8bccb30fa078241912d2db5c596"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_background/check_real_phase_jets_integration_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/check_real_phase_jets_integration_v1.py",
+      "bytes": 3187,
+      "sha256": "3e74c986a6effe68910d524286cfaa19e724a1848e782da875d1ab3e9c6b1ccf"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_geometry.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_geometry.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_geometry.stdout.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_geometry.stdout.txt",
+      "bytes": 1567,
+      "sha256": "f1409e1ca71d5a1c89580fedffa058ec4c63f7fefd58a6936439ed2a7b28bfbc"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_jets.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_jets.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_jets.stdout.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_jets.stdout.txt",
+      "bytes": 3664,
+      "sha256": "a34f0d1ace1efe24c68ec08cb9c1b63a1c959343f0c7b5835443a3493b1e7d14"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_mapping.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_mapping.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_mapping.stdout.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_mapping.stdout.txt",
+      "bytes": 1473,
+      "sha256": "2a7ec33621d2d61ba61ffc820938ac702c3ffdf2e4c05369f95cb6b2b64240e2"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_scalar.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_scalar.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/ATTEMPT01_scalar.stdout.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/ATTEMPT01_scalar.stdout.txt",
+      "bytes": 794,
+      "sha256": "58aaf66655285d8e0c8b49f529e4f1c297cd581812dd473c38430ea3fbb24faa"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/DERIVATION_BEFORE_CODE_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/DERIVATION_BEFORE_CODE_v1.md",
+      "bytes": 12295,
+      "sha256": "852f568b7f5c3d6ce623c38dc66d93584b99a8f454e707c7e0a2d632a5bfae78"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/FAILURES_PRE_AUTHOR_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/FAILURES_PRE_AUTHOR_v1.json",
+      "bytes": 456,
+      "sha256": "ecdb19dae53e08adf09462cfc1228f00a54b798818969f635f7dfc977ffbef3c"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/INDEPENDENT_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/INDEPENDENT_FREEZE_v1.json",
+      "bytes": 3093,
+      "sha256": "7ee8f9ed77f336fd56ec8ffc595497a458c4a8346249444986c21f2f8a514e9a"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/INDEPENDENT_RUN_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/INDEPENDENT_RUN_v1.json",
+      "bytes": 6284,
+      "sha256": "b43bb0121a395200b37c95fb449dd4b8b6e226cc0d34e746519bac705881f0ec"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/MANIFEST_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/MANIFEST_v1.json",
+      "bytes": 5316,
+      "sha256": "99c30927e277c5f5d4d0e06487b8b05f22c1677d472c171a0412039226da715d"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/NEUTRAL_CONTRACT_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/NEUTRAL_CONTRACT_v1.json",
+      "bytes": 1101,
+      "sha256": "c62253aa71abba17bcee1aa2dd7bc339c953318aa0e784e4c8d1d402bd2a7eac"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/POST_EXPOSURE_CLOSURE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/POST_EXPOSURE_CLOSURE_v1.json",
+      "bytes": 1672,
+      "sha256": "dd37658a11d5cd6ba09f88f9f97067789deabe7eb03090924bc475b9b88a72e1"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/POST_EXPOSURE_COMPARISON_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/POST_EXPOSURE_COMPARISON_v1.md",
+      "bytes": 7977,
+      "sha256": "11907287eec3ae1c93eb305147d71fdd239c942ed8e96243f8ae9e1f85fcb487"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/POST_EXPOSURE_RECEIPT_INSPECTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/POST_EXPOSURE_RECEIPT_INSPECTION_v1.json",
+      "bytes": 525,
+      "sha256": "86d7e28890938a34c86c17780efd39f4083571e32659877ba0a63f3562060221"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/POST_EXPOSURE_SOURCE_BINDINGS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/POST_EXPOSURE_SOURCE_BINDINGS_v1.json",
+      "bytes": 1497,
+      "sha256": "4b4791b38483769c69a29b9431a276bbf78199def76576271b626d8435c339f8"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/PRE_AUTHOR_CLOSURE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/PRE_AUTHOR_CLOSURE_v1.json",
+      "bytes": 390,
+      "sha256": "6c4f8c7b9478a5d0100a85ae939195ff0f03589105dd0597f8bbec581dde5187"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/PRE_AUTHOR_FINDINGS_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/PRE_AUTHOR_FINDINGS_v1.md",
+      "bytes": 3981,
+      "sha256": "06acae80e201b6e92ee0812a873ca99382e8a2c49067abd48bcdc604cd8b813a"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/PRE_CODE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/PRE_CODE_FREEZE_v1.json",
+      "bytes": 950,
+      "sha256": "6cdd1b98cb9f267de95a36633d098a696e3f1066fd3c44ab568df6c7235d5e6f"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/check_general_kinetic_independent_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/check_general_kinetic_independent_v1.py",
+      "bytes": 11923,
+      "sha256": "c622f485c908168f1fda49d704d5d3d13b44105ebc53f4eb4002131dfd8f136d"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/permitted_prior_sources_v1/docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/permitted_prior_sources_v1/docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "bytes": 23718,
+      "sha256": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/permitted_prior_sources_v1/scripts/scalar_photon_reception_core.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/permitted_prior_sources_v1/scripts/scalar_photon_reception_core.py",
+      "bytes": 7807,
+      "sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_CONTROLS_v1.json",
+      "bytes": 9325,
+      "sha256": "be7d93cb0f0cbd353c80b9a630f514903504e1c46b7423b2f2899c3c8246c217"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_CONTROLS_v1.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_CONTROLS_v1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_DERIVATION_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_DERIVATION_FREEZE_v1.json",
+      "bytes": 275,
+      "sha256": "afa81ee589240d1b1f8cc27b8402e2c05a04e1e72661a01251233e7d320047e3"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_DERIVATION_v1.md",
+      "bytes": 6829,
+      "sha256": "cb0d42e2a504e411af58fb90d42129a78b0b8e983848f2b17d80069818c8fe8a"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_EXECUTION_v1.json",
+      "bytes": 195,
+      "sha256": "27f0fb2ae739e3c2225e6e8d8c49fbbf7b211c8435ba1d28150eab1a51d8a813"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_SOURCE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/GENERAL_KINETIC_PHOTON_SOURCE_FREEZE_v1.json",
+      "bytes": 264,
+      "sha256": "12dd42d7cc0a0c6aaf93fb0853edcdd3cb69ceb1a90012e61eb900be957d48eb"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/check_general_kinetic_photon_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/post_exposure_author_snapshots_v1/check_general_kinetic_photon_v1.py",
+      "bytes": 5970,
+      "sha256": "4246f13b83e1517bf6c5856945ea7a7087925efc7fb1c87e48046a9a86b34bee"
+    },
+    {
+      "member": "focused-checks/independent_general_kinetic_photon/run_general_kinetic_independent_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_photon/run_general_kinetic_independent_v1.py",
+      "bytes": 3117,
+      "sha256": "3f7de775bc185d2be2e903d23e57233cfe00e47c6ba89573b311e4880d1f19ad"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/COMPARISON_FINAL_BINDINGS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/COMPARISON_FINAL_BINDINGS_v1.json",
+      "bytes": 1921,
+      "sha256": "e2d713b622bc86b200b76d8b583fc49610996d6ef09791e171700269e982f8b0"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/COMPARISON_RECEIPTS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/COMPARISON_RECEIPTS_v1.json",
+      "bytes": 1002,
+      "sha256": "eee0a3221a5ce05c3dccddeaa34fe7af99ad05b4a03765c7b2e42236eb661475"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/COMPARISON_REPORT_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/COMPARISON_REPORT_v1.md",
+      "bytes": 6683,
+      "sha256": "859be225c64a4beb499887a3fa2f7e86a6dadb0033d220c11a383b3ba2004a9b"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/COMPARISON_SOURCES_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/COMPARISON_SOURCES_v1.json",
+      "bytes": 1174,
+      "sha256": "789da4b33f0fb1bc45a0464fd8969ab1fa2ce7a34643f205008052b19788baae"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/COMPLEX_REALIFICATION_ADDENDUM_v2.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/COMPLEX_REALIFICATION_ADDENDUM_v2.md",
+      "bytes": 1942,
+      "sha256": "31f10199095f55bdd3b881972bf08f46b3c4a2efcdc11c88962f9fa072afd20d"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/COMPLEX_REALIFICATION_BINDINGS_v2.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/COMPLEX_REALIFICATION_BINDINGS_v2.json",
+      "bytes": 919,
+      "sha256": "d0a94d6e70456e274fac86d12a4c1a8443ea2ee8ae2ce49b34de81f3352b75ad"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/DERIVATION_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/DERIVATION_FREEZE_v1.json",
+      "bytes": 173,
+      "sha256": "89f060e0f47b9120ce2f5a874682fe2a971bf65ccf79c2b74a84875c72aa5112"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/INDEPENDENT_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/INDEPENDENT_DERIVATION_v1.md",
+      "bytes": 8502,
+      "sha256": "8ee7fc948c28d8f452b27819b88bf9480f8fac39270822be295cb9545c4a3a05"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/OUTPUT_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/OUTPUT_FREEZE_v1.json",
+      "bytes": 1053,
+      "sha256": "0d4d9182af1e6c0e55f025fa69171f503ad37d70ec2a95188e7e29c9df88dc71"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/REPORT_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/REPORT_v1.md",
+      "bytes": 4124,
+      "sha256": "f7c99c3639ccaca80d5ddf41a53c35c2e06108853dad737cd8d19400862c840b"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_CONTROLS_v1.json",
+      "bytes": 8811,
+      "sha256": "b83f358111cb5c0603897fbc4450f33b83ffd7baaf19ebef4cfdea2f08179727"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_DERIVATION_v1.md",
+      "bytes": 5432,
+      "sha256": "a475bdba12494389783b5ba50abc24f3d2bec74b20173ef0fbf91c2400d03e3c"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_EXECUTION_v1.json",
+      "bytes": 175,
+      "sha256": "5ef306fd30c87cbe0e82235e2dead3a41f5f5dbd9fa9b2676df5a44ac33e9206"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_SOURCE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_INVERSE_SOURCE_FREEZE_v1.json",
+      "bytes": 267,
+      "sha256": "77596cb07a7efcb26f6756a6f47050a8eed37d34032209f1680a35cd1eaec810"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_CONTROLS_v1.json",
+      "bytes": 2069,
+      "sha256": "df01353dbe443577b971bfd2fd8fbe73c409b349f98d118acd230a609f43de83"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_EXECUTION_v1.json",
+      "bytes": 175,
+      "sha256": "c2d7a4bb7412e84b54c774ed6ecdffccbea1365e9151c689a13e62a520ab24b4"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_SOURCE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_SOURCE_FREEZE_v1.json",
+      "bytes": 263,
+      "sha256": "e00d0962b93b12fbb99b6c0f7fb236daa92f6c208a5059023290172abeeb9b7c"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/KINETIC_CURVATURE_ZERO_CROSSING_v1.md",
+      "bytes": 3328,
+      "sha256": "ea6d815368ce59a618106a3e4702983c7367aa7a7ca7e4463fa6b8fc0f7adb8c"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/check_kinetic_curvature_inverse_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/check_kinetic_curvature_inverse_v1.py",
+      "bytes": 4285,
+      "sha256": "248063b305ecdb307bc0d22f6ae63abc3d34942ffd8bb9fa047fa39130892eb2"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/author_comparison_v1/check_kinetic_zero_crossing_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/author_comparison_v1/check_kinetic_zero_crossing_v1.py",
+      "bytes": 3001,
+      "sha256": "c8b3021445d5dfd8262ca889fcef0a9af5f1309b65973bdef35bac7a164b99f6"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/check_comparison_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/check_comparison_v1.py",
+      "bytes": 3004,
+      "sha256": "163943f9b60f05553c3471dd6a9fa1359d54d21b8fe1afca4cc0b52b136ba610"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/check_complex_phase_v2.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/check_complex_phase_v2.py",
+      "bytes": 695,
+      "sha256": "aa2d6e1a36a81a0b789b7a3272f44ac47d7551f9e58388682dbc3bf24cb67a76"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/check_complex_rank_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/check_complex_rank_v1.py",
+      "bytes": 1288,
+      "sha256": "9f075eececed232b2e25b34b07abfd7da51970510093d3c3584fb7679c3cc506"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/check_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/check_v1.py",
+      "bytes": 5582,
+      "sha256": "7eb06de0c10a10594d24cb9aae28c2894df2ac504b848c75687930f023e50cf0"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/comparison_independent_receipt_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/comparison_independent_receipt_v1.json",
+      "bytes": 377,
+      "sha256": "123ddba738d60369cff5e9fde5da6128344deb68995accb376a626e47868bd46"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/comparison_independent_stderr_v1.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/comparison_independent_stderr_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/comparison_independent_stdout_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/comparison_independent_stdout_v1.json",
+      "bytes": 5566,
+      "sha256": "7a60d6a1a6669bbddd47772a5a4fab85002f024cef3ee9e47a9c59dd0c371bc0"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/complex_phase_receipt_v2.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/complex_phase_receipt_v2.json",
+      "bytes": 380,
+      "sha256": "5795e2f070c1ef16f4752469b46376eb756ee0bde203be65323b57d9010a9dff"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/complex_phase_stderr_v2.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/complex_phase_stderr_v2.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/complex_phase_stdout_v2.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/complex_phase_stdout_v2.json",
+      "bytes": 211,
+      "sha256": "bd1e8aca9a95fc1cd43b2fe2176ad9e2787a2c1b0e22c0032a603d5304b591d2"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/complex_rank_receipt_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/complex_rank_receipt_v1.json",
+      "bytes": 380,
+      "sha256": "34ceee2697398f74605479ffddcb6785f06f3eaf603450818f06f90dbdcd3e0b"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/complex_rank_stderr_v1.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/complex_rank_stderr_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/complex_rank_stdout_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/complex_rank_stdout_v1.json",
+      "bytes": 412,
+      "sha256": "f22fd66080dcf28b9416125ae15f5590c7aa492aa184a3fc07dabc4fd6dec5c0"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/receipt_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/receipt_v1.json",
+      "bytes": 455,
+      "sha256": "326b09c063c827142fa48020e10f0fb95a82b01825f514948da6ad2638863e17"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/replay_check_kinetic_curvature_inverse_v1.py.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/replay_check_kinetic_curvature_inverse_v1.py.json",
+      "bytes": 8810,
+      "sha256": "4ff2e1b76a5ae8a5760dd9cbb02b0e355e8c3a877acecc97582d475633ef1cc4"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/replay_check_kinetic_curvature_inverse_v1.py.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/replay_check_kinetic_curvature_inverse_v1.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/replay_check_kinetic_zero_crossing_v1.py.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/replay_check_kinetic_zero_crossing_v1.py.json",
+      "bytes": 2069,
+      "sha256": "f517ad21f9c5fc5242954600675d9e1dab0a2b9e007b6e485db53f124b067fa7"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/replay_check_kinetic_zero_crossing_v1.py.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/replay_check_kinetic_zero_crossing_v1.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/stderr_v1.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/stderr_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_inverse/stdout_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_inverse/stdout_v1.json",
+      "bytes": 3056,
+      "sha256": "1eef04221e4e12017812f48a77caad5bf658e3322e6f8c4242e877114885c138"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/COMPARISON_BINDINGS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/COMPARISON_BINDINGS_v1.json",
+      "bytes": 783,
+      "sha256": "b40c6b37aae35608ffd1a7fec7edfdea64e809543e77494cd393057314c8a29d"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/COMPARISON_RECEIPTS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/COMPARISON_RECEIPTS_v1.json",
+      "bytes": 469,
+      "sha256": "725ae05c89e2c3ac950434047c44c9b07efe4cf109bafdddcabf5c6e73abe4a5"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/COMPARISON_REPORT_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/COMPARISON_REPORT_v1.md",
+      "bytes": 2419,
+      "sha256": "de27f2ac0bf3fa20887b7f6827ee78ce44fb146e6fdb17e83b97cd612835dc13"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/COMPARISON_SOURCES_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/COMPARISON_SOURCES_v1.json",
+      "bytes": 337,
+      "sha256": "73a927210ade59d28015c2920e858f49348b6a780094cecd39acc7d0085d93a3"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/DERIVATION_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/DERIVATION_FREEZE_v1.json",
+      "bytes": 173,
+      "sha256": "72076eea9e2d01ee09cb90c3dc6db46be7197a8cadd24accd9885d4765faf575"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/INDEPENDENT_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/INDEPENDENT_DERIVATION_v1.md",
+      "bytes": 6882,
+      "sha256": "cc3b1d032be9870d6742f30212a6037f902f09ae3f394b2e8a27f68cb2a3f246"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/OUTPUT_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/OUTPUT_FREEZE_v1.json",
+      "bytes": 1073,
+      "sha256": "b75cbe42b88cd50a45f793671e8ec92667cc5382241cfd622905901eaa454cc5"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/REPORT_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/REPORT_v1.md",
+      "bytes": 3007,
+      "sha256": "cd93b3dbe54f58159f847cb6049a163c9d29ecb9e26cdb6f1b774ed61935a42e"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/author_stderr_v1.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/author_stderr_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/author_stdout_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/author_stdout_v1.json",
+      "bytes": 2957,
+      "sha256": "db1d130d96d6241c5171c64c8a2a251f4bf2b3bdd82a04e96712867496c8d095"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/check_comparison_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/check_comparison_v1.py",
+      "bytes": 948,
+      "sha256": "a5225270f1fc67c87a5a7b71b9697521246d9299dbdfde102916f34f201b2729"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/check_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/check_v1.py",
+      "bytes": 3243,
+      "sha256": "a4e4c4c3a158949704c141b48a4897ec99970b410622ed23a331c67165c9e659"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/comparison_stderr_v1.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/comparison_stderr_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/comparison_stdout_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/comparison_stdout_v1.json",
+      "bytes": 315,
+      "sha256": "6581a6415a180dd0fb9ff874b763c944f9504b963f11abe5fa90a78a7ba155e9"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/execution_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/execution_v1.json",
+      "bytes": 275,
+      "sha256": "e3af440d2c60285bceb5010155addddb4a9be60cb3f18375285a1cdcbd15bfc4"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/stderr_v1.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/stderr_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "focused-checks/independent_kinetic_curvature_weak/stdout_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/stdout_v1.json",
+      "bytes": 2847,
+      "sha256": "a94b08e7299f1d0da6a4730ba9e27770898a69d118383a2eeb13504a6c813caa"
+    },
+    {
+      "member": "root-development/GENERAL_KINETIC_PHOTON_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_CONTROLS_v1.json",
+      "bytes": 9325,
+      "sha256": "be7d93cb0f0cbd353c80b9a630f514903504e1c46b7423b2f2899c3c8246c217"
+    },
+    {
+      "member": "root-development/GENERAL_KINETIC_PHOTON_CONTROLS_v1.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_CONTROLS_v1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "root-development/GENERAL_KINETIC_PHOTON_DERIVATION_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_DERIVATION_FREEZE_v1.json",
+      "bytes": 275,
+      "sha256": "afa81ee589240d1b1f8cc27b8402e2c05a04e1e72661a01251233e7d320047e3"
+    },
+    {
+      "member": "root-development/GENERAL_KINETIC_PHOTON_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_DERIVATION_v1.md",
+      "bytes": 6829,
+      "sha256": "cb0d42e2a504e411af58fb90d42129a78b0b8e983848f2b17d80069818c8fe8a"
+    },
+    {
+      "member": "root-development/GENERAL_KINETIC_PHOTON_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_EXECUTION_v1.json",
+      "bytes": 195,
+      "sha256": "27f0fb2ae739e3c2225e6e8d8c49fbbf7b211c8435ba1d28150eab1a51d8a813"
+    },
+    {
+      "member": "root-development/GENERAL_KINETIC_PHOTON_SOURCE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_SOURCE_FREEZE_v1.json",
+      "bytes": 264,
+      "sha256": "12dd42d7cc0a0c6aaf93fb0853edcdd3cb69ceb1a90012e61eb900be957d48eb"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_INVERSE_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_INVERSE_CONTROLS_v1.json",
+      "bytes": 8811,
+      "sha256": "b83f358111cb5c0603897fbc4450f33b83ffd7baaf19ebef4cfdea2f08179727"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_INVERSE_CONTROLS_v1.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_INVERSE_CONTROLS_v1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_INVERSE_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_INVERSE_DERIVATION_v1.md",
+      "bytes": 5432,
+      "sha256": "a475bdba12494389783b5ba50abc24f3d2bec74b20173ef0fbf91c2400d03e3c"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_INVERSE_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_INVERSE_EXECUTION_v1.json",
+      "bytes": 175,
+      "sha256": "5ef306fd30c87cbe0e82235e2dead3a41f5f5dbd9fa9b2676df5a44ac33e9206"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_INVERSE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_INVERSE_FREEZE_v1.json",
+      "bytes": 226,
+      "sha256": "a8fb2e892bb9408df351b3e2d6b50b120d72fb8fdc36ac73171131ed9d5ee39d"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_INVERSE_SOURCE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_INVERSE_SOURCE_FREEZE_v1.json",
+      "bytes": 267,
+      "sha256": "77596cb07a7efcb26f6756a6f47050a8eed37d34032209f1680a35cd1eaec810"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_WEAK_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_WEAK_CONTROLS_v1.json",
+      "bytes": 2958,
+      "sha256": "77300a61c4f04f1a50e6b7b83c6db349095d2bb1859fe29c84a26dc1dca1e167"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_WEAK_CONTROLS_v1.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_WEAK_CONTROLS_v1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_WEAK_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_WEAK_DERIVATION_v1.md",
+      "bytes": 4111,
+      "sha256": "3bae004ee1c4cbea6a3f41ca71a5021a6e17ac87191ef5a7c6b19be30781451f"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_WEAK_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_WEAK_EXECUTION_v1.json",
+      "bytes": 174,
+      "sha256": "e1b0bcaa82689891fc61f1e1a96d7553c029e024dcd4a7d0e6634daac2157df3"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_WEAK_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_WEAK_FREEZE_v1.json",
+      "bytes": 206,
+      "sha256": "cbf4bf0e992d223ef36edaa5c7bbd4c13f2cef5725c7c5efd8cc8ed36bab79ca"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_WEAK_SOURCE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_WEAK_SOURCE_FREEZE_v1.json",
+      "bytes": 264,
+      "sha256": "0d2932b959b36c56ded9a9948565f1aa4303c6da48ab46a8332950335ed63a89"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_ZERO_CROSSING_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_ZERO_CROSSING_CONTROLS_v1.json",
+      "bytes": 2069,
+      "sha256": "df01353dbe443577b971bfd2fd8fbe73c409b349f98d118acd230a609f43de83"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_ZERO_CROSSING_CONTROLS_v1.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_ZERO_CROSSING_CONTROLS_v1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_ZERO_CROSSING_EXECUTION_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_ZERO_CROSSING_EXECUTION_v1.json",
+      "bytes": 175,
+      "sha256": "c2d7a4bb7412e84b54c774ed6ecdffccbea1365e9151c689a13e62a520ab24b4"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_ZERO_CROSSING_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_ZERO_CROSSING_FREEZE_v1.json",
+      "bytes": 304,
+      "sha256": "1634f95367c8c29fad8651ad62f11c9818b2eaf65dd5cedc1e948b26e713842a"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_ZERO_CROSSING_SOURCE_FREEZE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_ZERO_CROSSING_SOURCE_FREEZE_v1.json",
+      "bytes": 263,
+      "sha256": "e00d0962b93b12fbb99b6c0f7fb236daa92f6c208a5059023290172abeeb9b7c"
+    },
+    {
+      "member": "root-development/KINETIC_CURVATURE_ZERO_CROSSING_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_CURVATURE_ZERO_CROSSING_v1.md",
+      "bytes": 3328,
+      "sha256": "ea6d815368ce59a618106a3e4702983c7367aa7a7ca7e4463fa6b8fc0f7adb8c"
+    },
+    {
+      "member": "root-development/KINETIC_REAL_PHASE_AND_JETS_DERIVATION_v1.md",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_REAL_PHASE_AND_JETS_DERIVATION_v1.md",
+      "bytes": 4033,
+      "sha256": "8a55b4fdad79790428110067073c106e78652b3581f6b8d9ff88829a9e5e2b6c"
+    },
+    {
+      "member": "root-development/KINETIC_REAL_PHASE_CONTROLS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_REAL_PHASE_CONTROLS_v1.json",
+      "bytes": 3957,
+      "sha256": "ce03ec455701f43a1430fdc59e825598020e59757ac1df7442ca4a4717140a6e"
+    },
+    {
+      "member": "root-development/KINETIC_REAL_PHASE_PRE_CODE_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_REAL_PHASE_PRE_CODE_v1.json",
+      "bytes": 283,
+      "sha256": "946ba26df87069d6e2c057dc2201e72850f93d22080ffbeecf64841cbf326ff4"
+    },
+    {
+      "member": "root-development/KINETIC_REAL_PHASE_RECEIPT_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_REAL_PHASE_RECEIPT_v1.json",
+      "bytes": 582,
+      "sha256": "950ac075e812bb0f531b29eac010dcfdd29b7e0ba9373d2bbdf23e05d10a3e59"
+    },
+    {
+      "member": "root-development/KINETIC_REAL_PHASE_STDERR_v1.txt",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_REAL_PHASE_STDERR_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "root-development/ROOT_FINAL_KINETIC_BINDINGS_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/ROOT_FINAL_KINETIC_BINDINGS_v1.json",
+      "bytes": 23187,
+      "sha256": "cbb0748ff7416774fd1d19a2ae919df4982161f70137d4e0428d5ad9471548de"
+    },
+    {
+      "member": "root-development/ROOT_INDEPENDENT_BINDINGS_1536_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/ROOT_INDEPENDENT_BINDINGS_1536_v1.json",
+      "bytes": 416,
+      "sha256": "9fe1b768e882d42d20bfb99c5a46a51da93ed8b5f88388b16a546674c0da4b48"
+    },
+    {
+      "member": "root-development/ROOT_PHOTON_INDEPENDENT_BINDINGS_1528_v1.json",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/ROOT_PHOTON_INDEPENDENT_BINDINGS_1528_v1.json",
+      "bytes": 999,
+      "sha256": "8b856cd389b4116856540082a8541a985690187ac23570135c8de1238c9676a7"
+    },
+    {
+      "member": "root-development/check_general_kinetic_photon_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_general_kinetic_photon_v1.py",
+      "bytes": 5970,
+      "sha256": "4246f13b83e1517bf6c5856945ea7a7087925efc7fb1c87e48046a9a86b34bee"
+    },
+    {
+      "member": "root-development/check_kinetic_curvature_inverse_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_kinetic_curvature_inverse_v1.py",
+      "bytes": 4285,
+      "sha256": "248063b305ecdb307bc0d22f6ae63abc3d34942ffd8bb9fa047fa39130892eb2"
+    },
+    {
+      "member": "root-development/check_kinetic_curvature_weak_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_kinetic_curvature_weak_v1.py",
+      "bytes": 3752,
+      "sha256": "57e70c0a2fd8a5f493046651f563344b80d79c784fb3efafac03df58e2cf7944"
+    },
+    {
+      "member": "root-development/check_kinetic_real_phase_jets_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_kinetic_real_phase_jets_v1.py",
+      "bytes": 4588,
+      "sha256": "13bc654cce52b42bd753a7897a9ac3d20b470170dceafe3ce73471af0574e04b"
+    },
+    {
+      "member": "root-development/check_kinetic_zero_crossing_v1.py",
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_kinetic_zero_crossing_v1.py",
+      "bytes": 3001,
+      "sha256": "c8b3021445d5dfd8262ca889fcef0a9af5f1309b65973bdef35bac7a164b99f6"
+    },
+    {
+      "member": "source-mutations/action_background.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/action_background.py",
+      "bytes": 6124,
+      "sha256": "5b83c55100a0916ca11cf01b5ed262bd8adf15478c4e090d2e8a1309001c73c8"
+    },
+    {
+      "member": "source-mutations/action_background.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/action_background.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/action_background.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/action_background.stdout.json",
+      "bytes": 6853,
+      "sha256": "c0bc7ec4c04658fd7d33472cc108eb4f13265c4703044b0de2ef4bb558b8ca46"
+    },
+    {
+      "member": "source-mutations/coefficient_inverse.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/coefficient_inverse.py",
+      "bytes": 4338,
+      "sha256": "0619d766ed5bb56f1f13b5e33e94c43352d679e7430b9fd677dd3b884a1acdaa"
+    },
+    {
+      "member": "source-mutations/coefficient_inverse.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/coefficient_inverse.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/coefficient_inverse.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/coefficient_inverse.stdout.json",
+      "bytes": 7750,
+      "sha256": "9984051714d1a490f49747d5079ccb05a9f42d353bfc2e6179c17ba255a30c13"
+    },
+    {
+      "member": "source-mutations/constraint_generator.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/constraint_generator.py",
+      "bytes": 6124,
+      "sha256": "c966238904671a7831b4b3735a949721d2bb9c537d8486dd2b1f0ba0ab51fe43"
+    },
+    {
+      "member": "source-mutations/constraint_generator.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/constraint_generator.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/constraint_generator.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/constraint_generator.stdout.json",
+      "bytes": 7122,
+      "sha256": "906cc6af333f6db740b024f9cd7192f4fd43381182629f72a11369805a00967d"
+    },
+    {
+      "member": "source-mutations/extension_twojet.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/extension_twojet.py",
+      "bytes": 5666,
+      "sha256": "615c522c43bdc5e27ca26769352f958cb98e7c4142de9f77f7280096baf79af2"
+    },
+    {
+      "member": "source-mutations/extension_twojet.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/extension_twojet.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/extension_twojet.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/extension_twojet.stdout.json",
+      "bytes": 3314,
+      "sha256": "2936a4e0a88837551a1c2e2fd5af0cc71a5376b6ccc8d810c492fd1e35c51063"
+    },
+    {
+      "member": "source-mutations/matrix_error_bound.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/matrix_error_bound.py",
+      "bytes": 4346,
+      "sha256": "6c853be88799d08f011657bdb985b41d54364a94076335b72b2bb75aa3c6ce2e"
+    },
+    {
+      "member": "source-mutations/matrix_error_bound.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/matrix_error_bound.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/matrix_error_bound.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/matrix_error_bound.stdout.json",
+      "bytes": 6265,
+      "sha256": "8130b9d6a82ae8eb52d86272bd4f10eab8edddbad93248d01aaa977b759f9f90"
+    },
+    {
+      "member": "source-mutations/mixed_action_jet.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/mixed_action_jet.py",
+      "bytes": 5666,
+      "sha256": "148f4e1fbd99bf8955ec78dbdf2d4be883e0c47310548717a11067a19a1d810e"
+    },
+    {
+      "member": "source-mutations/mixed_action_jet.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/mixed_action_jet.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/mixed_action_jet.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/mixed_action_jet.stdout.json",
+      "bytes": 3267,
+      "sha256": "0ae2445a57cad1664a63745e8b6c1407035e5660e84c7827070191f68365eea7"
+    },
+    {
+      "member": "source-mutations/principal_kinetic.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/principal_kinetic.py",
+      "bytes": 6122,
+      "sha256": "fcdfd5075eefff5bb527529029a0983b6a11968306e65ecab6a3e1637e9eb186"
+    },
+    {
+      "member": "source-mutations/principal_kinetic.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/principal_kinetic.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/principal_kinetic.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/principal_kinetic.stdout.json",
+      "bytes": 6770,
+      "sha256": "da290cd8f3cfaedd5713231cf87aee9546a2e3741a9144fe7c1240bcac6ded08"
+    },
+    {
+      "member": "source-mutations/real_phase_inverse.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/real_phase_inverse.py",
+      "bytes": 5667,
+      "sha256": "281285fe41dc674eee4a80337d443ad17724bd5d887486a9fbdd19fe83baf03f"
+    },
+    {
+      "member": "source-mutations/real_phase_inverse.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/real_phase_inverse.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/real_phase_inverse.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/real_phase_inverse.stdout.json",
+      "bytes": 3303,
+      "sha256": "404bd8505b40848fc4caf809642b75913cd912a101677c4886c3e048856e40df"
+    },
+    {
+      "member": "source-mutations/regular_zero_constant.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/regular_zero_constant.py",
+      "bytes": 3166,
+      "sha256": "951236347f9c80c8c511d55538c75689508cfc875bae8cbf1e8ae87770cd9027"
+    },
+    {
+      "member": "source-mutations/regular_zero_constant.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/regular_zero_constant.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/regular_zero_constant.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/regular_zero_constant.stdout.json",
+      "bytes": 1598,
+      "sha256": "6d2686392dcf140298d7a8395e5135e52a6f48fac2203f7a4a4c1cd543e148b6"
+    },
+    {
+      "member": "source-mutations/resolved_phase_pattern.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/resolved_phase_pattern.py",
+      "bytes": 5666,
+      "sha256": "71fa02a7cf6554cbf8d1f131e10b0a382d626ae9012f4dab2c7aaa607e0af232"
+    },
+    {
+      "member": "source-mutations/resolved_phase_pattern.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/resolved_phase_pattern.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/resolved_phase_pattern.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/resolved_phase_pattern.stdout.json",
+      "bytes": 3264,
+      "sha256": "711c6e908e4cb2f9c12487a0d8b032a5c1b5f268d36c0f436c6b687a690ca111"
+    },
+    {
+      "member": "source-mutations/transverse_density.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/transverse_density.py",
+      "bytes": 4338,
+      "sha256": "129fca38dc445afab24e1f95d560acd74babf085701f696436524c58194605b5"
+    },
+    {
+      "member": "source-mutations/transverse_density.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/transverse_density.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/transverse_density.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/transverse_density.stdout.json",
+      "bytes": 6300,
+      "sha256": "fb5417b462a1598f4b0b1f57d6c95c38efbad3aa5ef5be863e09fe4d447a27fc"
+    },
+    {
+      "member": "source-mutations/weak_error_bound.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_error_bound.py",
+      "bytes": 5519,
+      "sha256": "7d04c3622b5022c9dddececd8df40e42b4397bff35ed51bf6e1d1efdfe5c4f54"
+    },
+    {
+      "member": "source-mutations/weak_error_bound.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_error_bound.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/weak_error_bound.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_error_bound.stdout.json",
+      "bytes": 2506,
+      "sha256": "8f379b465f9df1edd66ac8e083c8375f3db756024d63a48a72aadca3bb8e2d69"
+    },
+    {
+      "member": "source-mutations/weak_spatial_sign.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_spatial_sign.py",
+      "bytes": 5511,
+      "sha256": "7b129dd1a0f202bf536fbb80e586c886ec66ecfc2e4dc3ea31d243bcff615876"
+    },
+    {
+      "member": "source-mutations/weak_spatial_sign.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_spatial_sign.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/weak_spatial_sign.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_spatial_sign.stdout.json",
+      "bytes": 2705,
+      "sha256": "cbf1ecc632dce969e170e44804806b1cbc6007ef610c25cdf3426714567f94ad"
+    },
+    {
+      "member": "source-mutations/weak_time_measure.py",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_time_measure.py",
+      "bytes": 5510,
+      "sha256": "43b080e6c19bdfc67abc1288f3aec7ae159f3be5eca3e815f8012a53753b2778"
+    },
+    {
+      "member": "source-mutations/weak_time_measure.stderr.txt",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_time_measure.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "source-mutations/weak_time_measure.stdout.json",
+      "origin": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/kinetic-source-mutations-1540/weak_time_measure.stdout.json",
+      "bytes": 2807,
+      "sha256": "f4f6a638993aeb9ac16b89aac7be6e5c7aee1eb41335b66b54cc6c93004e17bc"
+    }
+  ],
+  "all_members_byte_verified": true
+}

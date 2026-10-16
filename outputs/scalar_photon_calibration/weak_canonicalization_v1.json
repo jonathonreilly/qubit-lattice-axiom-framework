@@ -1,0 +1,8 @@
+{
+  "scope": "Canonical packaging of frozen exact weak controls; function boundary changed, formulas and controls unchanged.",
+  "historical_source": "check_primitive_weak_v1.py",
+  "historical_source_sha256": "1780eedce0f2812f22219f1745a2d3a85d4a79bbb591869a0abf7915e15ebb90",
+  "canonical_path": "scripts/scalar_photon_weak_controls.py",
+  "canonical_sha256": "86c759edce2c57f93689352183fdfbf57bb76e3b02cab55a8e38f45a6b07e6d3",
+  "historical_output_sha256": "01d51a8e3a73007f2a286e9d09a90e986fcda435137c1ef73188acf1d8460652"
+}

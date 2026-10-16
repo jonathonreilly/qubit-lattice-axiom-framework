@@ -1,0 +1,328 @@
+{
+  "source_hashes": {
+    "scripts/sampled_coupling_inverse.py": "500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20",
+    "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af",
+    "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "6e28e5afcba4c2557570ae2527c71f9ed1cf5a947c20005fa00e3f345c5da0e5"
+  },
+  "unchanged": true,
+  "mutations": [
+    {
+      "name": "affine_characteristic",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "(z-1)*(z*z-s*z+p)",
+      "new": "(z+1)*(z*z-s*z+p)",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "affine characteristic polynomial yields recurrence"
+      ],
+      "elapsed_seconds": 0.6928629167377949,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "difference_recurrence",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "F3 = (1+s)*F2-(s+p)*F1+p*F0",
+      "new": "F3 = (1+s)*F2-(s+p)*F1-p*F0",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "differences obey homogeneous second-order recurrence"
+      ],
+      "elapsed_seconds": 0.4904649998061359,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "cramer_sign",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "(d1*d3-d2*d2)/H-p",
+      "new": "(d1*d3+d2*d2)/H-p",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "Cramer inverse recovers both recurrence coefficients"
+      ],
+      "elapsed_seconds": 0.45298424968495965,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "energy_dissipation",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "-gamma*sp.diff(Z,t)-om2*Z",
+      "new": "gamma*sp.diff(Z,t)-om2*Z",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "passive step-response energy has nonpositive derivative"
+      ],
+      "elapsed_seconds": 0.4450498749502003,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "calibration_matrix",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "[d[2], -d[1]]",
+      "new": "[d[2], d[1]]",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [],
+      "elapsed_seconds": 0.45726541709154844,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "baseline_weight",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "[-p, s+p, -(1+s)",
+      "new": "[p, s+p, -(1+s)",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "six settled samples recover pulse end omega2=4.0,gamma=0.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.0",
+        "reserved synthetic pairs omega2=4.0,gamma=0.0",
+        "six settled samples recover pulse end omega2=4.0,gamma=0.7",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.7",
+        "reserved synthetic pairs omega2=4.0,gamma=0.7",
+        "six settled samples recover pulse end omega2=4.0,gamma=4.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=4.0",
+        "reserved synthetic pairs omega2=4.0,gamma=4.0",
+        "six settled samples recover pulse end omega2=4.0,gamma=5.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=5.0",
+        "reserved synthetic pairs omega2=4.0,gamma=5.0",
+        "aliased dynamics retain normalized coupling and pulse-end sign"
+      ],
+      "elapsed_seconds": 0.4582807500846684,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "backward_weight",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "(s+p)/p, -(1+s)/p, 1/p",
+      "new": "(s+p), -(1+s), 1",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "six settled samples recover pulse end omega2=4.0,gamma=0.7",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.7",
+        "reserved synthetic pairs omega2=4.0,gamma=0.7",
+        "six settled samples recover pulse end omega2=4.0,gamma=4.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=4.0",
+        "reserved synthetic pairs omega2=4.0,gamma=4.0",
+        "six settled samples recover pulse end omega2=4.0,gamma=5.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=5.0",
+        "reserved synthetic pairs omega2=4.0,gamma=5.0",
+        "aliased dynamics retain normalized coupling and pulse-end sign"
+      ],
+      "elapsed_seconds": 0.4539828752167523,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "pulse_duration",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "end = advance(before[-1],DELTA,y,om2,gamma)",
+      "new": "end = advance(before[-1],2*DELTA,y,om2,gamma)",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "six settled samples recover pulse end omega2=4.0,gamma=0.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.0",
+        "reserved synthetic pairs omega2=4.0,gamma=0.0",
+        "six settled samples recover pulse end omega2=4.0,gamma=0.7",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.7",
+        "reserved synthetic pairs omega2=4.0,gamma=0.7",
+        "six settled samples recover pulse end omega2=4.0,gamma=4.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=4.0",
+        "reserved synthetic pairs omega2=4.0,gamma=4.0",
+        "six settled samples recover pulse end omega2=4.0,gamma=5.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=5.0",
+        "reserved synthetic pairs omega2=4.0,gamma=5.0",
+        "aliased dynamics retain normalized coupling and pulse-end sign"
+      ],
+      "elapsed_seconds": 0.4506019582040608,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "green_normalization",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "return expm(np.array([[0.,1.],[-om2,-gamma]])*t)[0,1]",
+      "new": "return 2*expm(np.array([[0.,1.],[-om2,-gamma]])*t)[0,1]",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "six settled samples recover pulse end omega2=4.0,gamma=0.0",
+        "six settled samples recover pulse end omega2=4.0,gamma=0.7",
+        "six settled samples recover pulse end omega2=4.0,gamma=4.0",
+        "six settled samples recover pulse end omega2=4.0,gamma=5.0"
+      ],
+      "elapsed_seconds": 0.4474490419961512,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "surface_centering",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "E = D-D[:, [0]]",
+      "new": "E = D+D[:, [0]]",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.7",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=4.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=5.0",
+        "nonreciprocal comparison surface has exact rank-one factorization"
+      ],
+      "elapsed_seconds": 0.45052833389490843,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "surface_anchor",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "E[:, -1]/anchor, E[0, :]/anchor",
+      "new": "E[:, -1], E[0, :]",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=0.7",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=4.0",
+        "relative shapes and positive interaction sign omega2=4.0,gamma=5.0",
+        "nonreciprocal comparison surface has exact rank-one factorization",
+        "common gain cancels while a setting-dependent gain changes shape"
+      ],
+      "elapsed_seconds": 0.45248995814472437,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "p_sensitivity",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "f4-(1+s)*f3+s*f2",
+      "new": "f4-(1+s)*f3",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "coefficient sensitivity formulas are exact"
+      ],
+      "elapsed_seconds": 0.4494948326610029,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "coefficient_bound",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "(2+2*S)/p_min**2",
+      "new": "(2+S)/p_min**2",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "coefficient bound matches independently differentiated triangle terms"
+      ],
+      "elapsed_seconds": 0.46746120881289244,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "calibration_bound",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "norm/(1-eta)*(2*epsilon_force+4*epsilon_force*np.linalg.norm(theta_hat, np.inf))",
+      "new": ".5*norm/(1-eta)*(2*epsilon_force+4*epsilon_force*np.linalg.norm(theta_hat, np.inf))",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "calibration perturbation bound covers all correlated sample corners"
+      ],
+      "elapsed_seconds": 0.45091108279302716,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "ratio_margin",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "/(abs(anchor)-epsilon_anchor)",
+      "new": "/(abs(anchor)+epsilon_anchor)",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "normalized ratio bound covers all numerator/anchor error corners"
+      ],
+      "elapsed_seconds": 0.4490878749638796,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "shape_error_terms",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "epsilon_B_x+epsilon_B_y+abs(kappa_hat)",
+      "new": "abs(kappa_hat)",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "shape residual error uses increasing error-integration limits"
+      ],
+      "elapsed_seconds": 0.44915387500077486,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "potential_cross_force",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "V=U+lam*C*w*w/2+lam*b*w",
+      "new": "V=U+lam*C*w*w/2-lam*b*w",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "reciprocal potential differentiates to both forces"
+      ],
+      "elapsed_seconds": 0.4475710419937968,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "interaction_sign",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "anchor=-J*ar*d/tau",
+      "new": "anchor=J*ar*d/tau",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "anchor and shape fix positive interaction multiplier sign"
+      ],
+      "elapsed_seconds": 0.45239187497645617,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "nonpolynomial_shape",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "k=2/(np.e-1)",
+      "new": "k=1/(np.e-1)",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "nonpolynomial reciprocal functions include a zero and reversed endpoints"
+      ],
+      "elapsed_seconds": 0.456791833974421,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "second_mode_control",
+      "target": "scripts/sampled_coupling_inverse.py",
+      "old": "mixture=cal+.15*np.exp",
+      "new": "mixture=cal+0*np.exp",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "unmodeled second mode is exposed by reserved recurrence samples"
+      ],
+      "elapsed_seconds": 0.470979374833405,
+      "timeout_seconds": 120
+    },
+    {
+      "name": "zero_anchor_guard",
+      "target": "scripts/sampled_coupling_math.py",
+      "old": "if anchor == 0:",
+      "new": "if False:",
+      "returncode": 1,
+      "detected": true,
+      "failed_checks": [
+        "invalid inverse margins fail closed"
+      ],
+      "elapsed_seconds": 0.48709312500432134,
+      "timeout_seconds": 120
+    }
+  ],
+  "detected": 21,
+  "total": 21
+}

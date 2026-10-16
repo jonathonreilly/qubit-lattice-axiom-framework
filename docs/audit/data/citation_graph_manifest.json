@@ -1,6 +1,6 @@
 {
- "edge_count": 16125,
- "node_count": 7168,
+ "edge_count": 16129,
+ "node_count": 7178,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14458,6 +14458,10 @@
    "deps_hash": "f52127449f6a",
    "out_degree": 4
   },
+  "local_network_intervention_response_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "1e5276f1135b",
    "out_degree": 2
@@ -19118,6 +19122,10 @@
    "deps_hash": "249b8e8adb93",
    "out_degree": 6
   },
+  "ringdown_action_reconstruction_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "rooted_marked_tree_extension_seed_induction_and_relaxed_lifted_tree_certificates_bounded_theorem_note_2026-09-17": {
    "deps_hash": "4b1f4f4b0e8b",
    "out_degree": 4
@@ -19378,6 +19386,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "sampled_coupling_reconstruction_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "scalar_3plus1_temporal_ratio_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -19402,6 +19414,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "scalar_full_field_metric_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "8a167c37b090",
+   "out_degree": 2
+  },
   "scalar_growth_lensing_inverse_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -19409,6 +19425,10 @@
   "scalar_harmonic_tower_theorem_note_2026-04-24": {
    "deps_hash": "6b88b7457bda",
    "out_degree": 5
+  },
+  "scalar_history_compatibility_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08": {
    "deps_hash": "fbe1946357be",
@@ -19422,11 +19442,27 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "scalar_kinetic_response_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "scalar_mass_curvature_count_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "scalar_metric_reconstruction_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "scalar_observation_inverse_and_input_bounds_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "scalar_phase_quotient_integer_history_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "scalar_photon_calibration_note_2026-10-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -19476,6 +19512,10 @@
   },
   "scalar_unequal_pair_bounded_theorem_note_2026-10-15": {
    "deps_hash": "5c45ad74db28",
+   "out_degree": 2
+  },
+  "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "f8150ff62aac",
    "out_degree": 2
   },
   "scale_reference_primitive": {

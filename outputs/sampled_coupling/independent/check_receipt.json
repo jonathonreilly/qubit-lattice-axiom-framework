@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "outputs/sampled_coupling/independent/check.py"
+  ],
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.9297328749671578,
+  "returncode": 0
+}

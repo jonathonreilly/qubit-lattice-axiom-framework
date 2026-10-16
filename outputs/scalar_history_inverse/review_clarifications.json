@@ -1,0 +1,11 @@
+{
+  "changes": [
+    "Focused checker clarification: added C2 regularity for separately supplied r(t), required by K_ddot.",
+    "Clarified absence of general full-history error/conditioning theorem while retaining local algebraic diagnostic.",
+    "Made numerical reference-time/mass units explicit.",
+    "Moved proof-obligation table before the proof for conformance; equations unchanged."
+  ],
+  "checker_or_math_code_changed": false,
+  "note_sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+  "old_note_sha256": "4ca2b5578f8e7f8e29f842628771f09b094456d5673a2f3ec694fcd8b57957ba"
+}

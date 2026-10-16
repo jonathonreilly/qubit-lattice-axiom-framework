@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-10-15T20:18:10.178835+00:00",
+  "scope": "Independent alternative-generator numerical check within supplied action; no author aggregate or empirical validation; no formal audit.",
+  "frozen_source_note_sha256": "97c981752e50c9be3ec9c4686d0d63704a615948567dc793531cc465b3325c70",
+  "postfreeze_author_helper_sha256": "1fc303d42d24f4700b16080db58bfce0a214f9de970033470e05da2469cd08f7",
+  "independent_source_sha256": "88c50bf23033ac444e63a10c2cc875c49f9fd2f49ab4a7465702b8dc6d1c6b53",
+  "report_sha256": "3165093a7b6869dd4b7a484e33ae030772fe814a7fccea791ff174535634b32d",
+  "files": [
+    {
+      "path": "AUTHOR_EXPOSURE_v1.json",
+      "sha256": "354db586ffa07dcba7c6046a0d7581fe37d1f34b4937362693e3600a7c1d2f70",
+      "bytes": 568
+    },
+    {
+      "path": "EINSTEIN_INVERSE_REVIEW_v1.md",
+      "sha256": "3165093a7b6869dd4b7a484e33ae030772fe814a7fccea791ff174535634b32d",
+      "bytes": 10439
+    },
+    {
+      "path": "EINSTEIN_PRIMARY_RESULTS_v1.json",
+      "sha256": "93a312b0b4a53705f01e619083f87ed07896b7285ffd65ad39967877b7022c76",
+      "bytes": 70488
+    },
+    {
+      "path": "EINSTEIN_REFINED_RESULTS_v1.json",
+      "sha256": "c24a2aad4e0e609d440bafb5d88fca83bacee16a1b839ca0b693a6c056ecef8c",
+      "bytes": 70548
+    },
+    {
+      "path": "EINSTEIN_SUMMARY_v1.json",
+      "sha256": "5aaaa24237d90da7007724c34bd10dcb37631c8ea966f5d3511335e139c51acd",
+      "bytes": 6561
+    },
+    {
+      "path": "EXPOSED_AUTHOR_HELPER_v1.py",
+      "sha256": "1fc303d42d24f4700b16080db58bfce0a214f9de970033470e05da2469cd08f7",
+      "bytes": 15870
+    },
+    {
+      "path": "EXPOSED_NOTE_v1.md",
+      "sha256": "97c981752e50c9be3ec9c4686d0d63704a615948567dc793531cc465b3325c70",
+      "bytes": 13417
+    },
+    {
+      "path": "IMPLEMENTATION_FREEZE_v1.json",
+      "sha256": "cc5b5e22cf5080125a4cd38f6fa40889570679b20b51f9a84ff5cc62556114e7",
+      "bytes": 537
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_FREEZE_v1.json",
+      "sha256": "17322b881f2368f615d760dc5036ffbda7ebce233ee69b83ffb0ec4dfbbc80f2",
+      "bytes": 2289
+    },
+    {
+      "path": "PRECHECK_IDENTITY_v1.json",
+      "sha256": "7a38caf8d0119cc37799728ae04408929a80428dc9c2d226ccc7cc6cacc9fc23",
+      "bytes": 561
+    },
+    {
+      "path": "PRECHECK_SETUP_FAILURE_v1.json",
+      "sha256": "5e5c245e4bffeffbaf4d6c832fd4062a9672d775ba10370b34840f1eb5ec9cbd",
+      "bytes": 292
+    },
+    {
+      "path": "PRECHECK_v1.md",
+      "sha256": "d52db2d909102db3d9961750762d06886a84e7be8922f70b5bb3daa140e05c1e",
+      "bytes": 2985
+    },
+    {
+      "path": "RUN_RECEIPT_v1.json",
+      "sha256": "7240f903febe25117405dfb83510291e2b77924fa28a06dcda34bcd23ea28110",
+      "bytes": 80
+    },
+    {
+      "path": "RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "RUN_v1.stdout",
+      "sha256": "c26535ff0c6eaa726b08254c19900bb8ed76ed7800561a095b2f1eb9defc3ca5",
+      "bytes": 5329
+    },
+    {
+      "path": "einstein_generator_v1.py",
+      "sha256": "88c50bf23033ac444e63a10c2cc875c49f9fd2f49ab4a7465702b8dc6d1c6b53",
+      "bytes": 9350
+    }
+  ],
+  "source_exposure_before_implementation": [
+    "complete canonical note including inverse formulas and reported fixture parameters"
+  ],
+  "source_exposure_after_result_freeze": [
+    "complete parent helper text; limited correspondence scope"
+  ],
+  "parent_output_arrays_read": false,
+  "parent_code_executed": false,
+  "synthetic_fixture_count": 1,
+  "trajectory_count": 2,
+  "saved_epochs_each": 21,
+  "calibration_indices": [
+    0,
+    8
+  ],
+  "later_potential_indices": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "own_failures": [
+    "PRECHECK_SETUP_FAILURE_v1.json"
+  ],
+  "numerical_limitations": [
+    "IEEE-double trajectory with50-digit local vector-field jets, not high-precision integration",
+    "sampled domain margins only",
+    "recovered scalar derivative residuals use compatibility identities",
+    "no observational or interval-certified error budget",
+    "source action and original inverse theorem were supplied"
+  ]
+}

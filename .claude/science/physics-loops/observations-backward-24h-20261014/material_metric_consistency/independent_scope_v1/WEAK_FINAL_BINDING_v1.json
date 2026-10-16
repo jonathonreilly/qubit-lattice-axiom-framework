@@ -1,0 +1,429 @@
+{
+  "at_utc": "2026-10-15T20:32:18.405275+00:00",
+  "reviewer": "/root/launch_check",
+  "scope": "Final narrow source/output identity after physical-input supplement, not implementation review or formal audit",
+  "opening_judgment": "OPEN for same one milestone",
+  "execution_binding": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v3.json",
+    "sha256": "759d7998a8a176b562e2ed405a5198591c72062450ea8a79ec3db93bc9299543",
+    "bytes": 8463,
+    "read_scope": "execution scope/result/files/content identity read; filesystem token list not substantively interpreted"
+  },
+  "current_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_vacuum_metric_check.py",
+      "sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+      "bytes": 4005,
+      "read_scope": "identity only; implementation body not read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "bytes": 21992,
+      "read_scope": "complete changed argument read; prior unchanged source reused at bound identities"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_vacuum_metric_inverse.py",
+      "sha256": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+      "bytes": 16092,
+      "read_scope": "identity only; implementation body not read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_vacuum_metric_weak.py",
+      "sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+      "bytes": 5502,
+      "read_scope": "identity only; implementation body not read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "bytes": 22772,
+      "read_scope": "identity only"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "bytes": 23722,
+      "read_scope": "identity only"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+      "bytes": 5015,
+      "read_scope": "complete current checklist including integral paragraph"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_vacuum_metric/RESULTS_v1.json",
+      "sha256": "11b3dfa9edf0c939606f31f7c458e2236e9b9c5715c6830d945846c6651ca62f",
+      "bytes": 20905,
+      "read_scope": "identity only"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_vacuum_metric/SUMMARY_v1.json",
+      "sha256": "b2157235c69ec8dd40eab75287484ab557d1932168b5b0b072c4a3db6262e257",
+      "bytes": 2191,
+      "read_scope": "complete current summary"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_vacuum_metric_check.txt",
+      "sha256": "57061593f789589733b07acb6a24c87732e47b16d8d183ba7b9cca5f7cf538d4",
+      "bytes": 3089,
+      "read_scope": "cache envelope/summary identity and parsing; no scientific acceptance"
+    }
+  ],
+  "bound_summary": {
+    "actual_current_surface_status": "conditional-support",
+    "counts": {
+      "failed": 0,
+      "passed": 89
+    },
+    "empirical_tests": 0,
+    "failed_checks": [],
+    "input_sha256": {
+      ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+      "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "scripts/scalar_vacuum_metric_inverse.py": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+      "scripts/scalar_vacuum_metric_weak.py": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+    },
+    "new_observation_arrays": 0,
+    "primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+    "read_inventory": {
+      "integrity_inputs": "Primary and declared notes/helper/checklist only; no observed arrays, inherited result values or independent-review outputs loaded",
+      "scientific_inputs": "Symbolic action/metric and three fixed synthetic coupled local solutions in the declared helper; inverse routine receives metric jets only"
+    },
+    "remaining_inputs": [
+      "Pointwise route: calibrated metric through lapse third and B second derivatives with error envelopes",
+      "Weak alternative uses lapse second/B first derivatives and complete weighted profiles with calibrated errors",
+      "Justified vacuum, static spherical geometry, and single-scalar sector",
+      "Action selection, physical preparation/global history, and measured Newton/action normalization"
+    ],
+    "scope": "Nondegenerate static spherical material vacuum, supplied candidate action and consistent x=y=0 sector; exact metric-to-field/parameter inverse with full-domain consistency checks",
+    "target_claim_type": "bounded_theorem"
+  },
+  "author_execution": {
+    "runner": "scripts/scalar_vacuum_metric_check.py",
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_sec": 4.366567134857178,
+    "timeout_sec": 180
+  },
+  "content_identity": {
+    "runner_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+    "input_fingerprint_sha256": "401fa7ae0cab79f4e2a1221546b54fdd5acf4fc4c151db902c35f7387763663d"
+  },
+  "cache_status_reported": "fresh",
+  "comparisons": [
+    {
+      "name": "binding current file scripts/scalar_vacuum_metric_check.py",
+      "passed": true,
+      "actual": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+      "expected": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25"
+    },
+    {
+      "name": "binding current file docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true,
+      "actual": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "expected": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00"
+    },
+    {
+      "name": "binding current file scripts/scalar_vacuum_metric_inverse.py",
+      "passed": true,
+      "actual": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+      "expected": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb"
+    },
+    {
+      "name": "binding current file scripts/scalar_vacuum_metric_weak.py",
+      "passed": true,
+      "actual": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+      "expected": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+    },
+    {
+      "name": "binding current file docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true,
+      "actual": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "expected": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6"
+    },
+    {
+      "name": "binding current file docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "passed": true,
+      "actual": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "expected": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25"
+    },
+    {
+      "name": "binding current file .claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "passed": true,
+      "actual": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+      "expected": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04"
+    },
+    {
+      "name": "binding current file outputs/scalar_vacuum_metric/RESULTS_v1.json",
+      "passed": true,
+      "actual": "11b3dfa9edf0c939606f31f7c458e2236e9b9c5715c6830d945846c6651ca62f",
+      "expected": "11b3dfa9edf0c939606f31f7c458e2236e9b9c5715c6830d945846c6651ca62f"
+    },
+    {
+      "name": "binding current file outputs/scalar_vacuum_metric/SUMMARY_v1.json",
+      "passed": true,
+      "actual": "b2157235c69ec8dd40eab75287484ab557d1932168b5b0b072c4a3db6262e257",
+      "expected": "b2157235c69ec8dd40eab75287484ab557d1932168b5b0b072c4a3db6262e257"
+    },
+    {
+      "name": "binding current file logs/runner-cache/scalar_vacuum_metric_check.txt",
+      "passed": true,
+      "actual": "57061593f789589733b07acb6a24c87732e47b16d8d183ba7b9cca5f7cf538d4",
+      "expected": "57061593f789589733b07acb6a24c87732e47b16d8d183ba7b9cca5f7cf538d4"
+    },
+    {
+      "name": "summary declared input .claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "passed": true,
+      "actual": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+      "expected": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04"
+    },
+    {
+      "name": "summary declared input docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "passed": true,
+      "actual": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "expected": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25"
+    },
+    {
+      "name": "summary declared input docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true,
+      "actual": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "expected": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6"
+    },
+    {
+      "name": "summary declared input docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true,
+      "actual": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "expected": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00"
+    },
+    {
+      "name": "summary declared input scripts/scalar_vacuum_metric_inverse.py",
+      "passed": true,
+      "actual": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+      "expected": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb"
+    },
+    {
+      "name": "summary declared input scripts/scalar_vacuum_metric_weak.py",
+      "passed": true,
+      "actual": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+      "expected": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+    },
+    {
+      "name": "summary primary",
+      "passed": true,
+      "actual": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+      "expected": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25"
+    },
+    {
+      "name": "reviewed note identity",
+      "passed": true,
+      "actual": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "expected": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00"
+    },
+    {
+      "name": "cached summary equals current summary",
+      "passed": true,
+      "actual": {
+        "actual_current_surface_status": "conditional-support",
+        "counts": {
+          "failed": 0,
+          "passed": 89
+        },
+        "empirical_tests": 0,
+        "failed_checks": [],
+        "input_sha256": {
+          ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+          "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+          "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+          "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+          "scripts/scalar_vacuum_metric_inverse.py": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+          "scripts/scalar_vacuum_metric_weak.py": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+        },
+        "new_observation_arrays": 0,
+        "primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+        "read_inventory": {
+          "integrity_inputs": "Primary and declared notes/helper/checklist only; no observed arrays, inherited result values or independent-review outputs loaded",
+          "scientific_inputs": "Symbolic action/metric and three fixed synthetic coupled local solutions in the declared helper; inverse routine receives metric jets only"
+        },
+        "remaining_inputs": [
+          "Pointwise route: calibrated metric through lapse third and B second derivatives with error envelopes",
+          "Weak alternative uses lapse second/B first derivatives and complete weighted profiles with calibrated errors",
+          "Justified vacuum, static spherical geometry, and single-scalar sector",
+          "Action selection, physical preparation/global history, and measured Newton/action normalization"
+        ],
+        "scope": "Nondegenerate static spherical material vacuum, supplied candidate action and consistent x=y=0 sector; exact metric-to-field/parameter inverse with full-domain consistency checks",
+        "target_claim_type": "bounded_theorem"
+      },
+      "expected": {
+        "actual_current_surface_status": "conditional-support",
+        "counts": {
+          "failed": 0,
+          "passed": 89
+        },
+        "empirical_tests": 0,
+        "failed_checks": [],
+        "input_sha256": {
+          ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+          "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+          "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+          "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+          "scripts/scalar_vacuum_metric_inverse.py": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+          "scripts/scalar_vacuum_metric_weak.py": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+        },
+        "new_observation_arrays": 0,
+        "primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+        "read_inventory": {
+          "integrity_inputs": "Primary and declared notes/helper/checklist only; no observed arrays, inherited result values or independent-review outputs loaded",
+          "scientific_inputs": "Symbolic action/metric and three fixed synthetic coupled local solutions in the declared helper; inverse routine receives metric jets only"
+        },
+        "remaining_inputs": [
+          "Pointwise route: calibrated metric through lapse third and B second derivatives with error envelopes",
+          "Weak alternative uses lapse second/B first derivatives and complete weighted profiles with calibrated errors",
+          "Justified vacuum, static spherical geometry, and single-scalar sector",
+          "Action selection, physical preparation/global history, and measured Newton/action normalization"
+        ],
+        "scope": "Nondegenerate static spherical material vacuum, supplied candidate action and consistent x=y=0 sector; exact metric-to-field/parameter inverse with full-domain consistency checks",
+        "target_claim_type": "bounded_theorem"
+      }
+    },
+    {
+      "name": "binding stdout equals current summary",
+      "passed": true,
+      "actual": {
+        "actual_current_surface_status": "conditional-support",
+        "counts": {
+          "failed": 0,
+          "passed": 89
+        },
+        "empirical_tests": 0,
+        "failed_checks": [],
+        "input_sha256": {
+          ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+          "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+          "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+          "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+          "scripts/scalar_vacuum_metric_inverse.py": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+          "scripts/scalar_vacuum_metric_weak.py": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+        },
+        "new_observation_arrays": 0,
+        "primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+        "read_inventory": {
+          "integrity_inputs": "Primary and declared notes/helper/checklist only; no observed arrays, inherited result values or independent-review outputs loaded",
+          "scientific_inputs": "Symbolic action/metric and three fixed synthetic coupled local solutions in the declared helper; inverse routine receives metric jets only"
+        },
+        "remaining_inputs": [
+          "Pointwise route: calibrated metric through lapse third and B second derivatives with error envelopes",
+          "Weak alternative uses lapse second/B first derivatives and complete weighted profiles with calibrated errors",
+          "Justified vacuum, static spherical geometry, and single-scalar sector",
+          "Action selection, physical preparation/global history, and measured Newton/action normalization"
+        ],
+        "scope": "Nondegenerate static spherical material vacuum, supplied candidate action and consistent x=y=0 sector; exact metric-to-field/parameter inverse with full-domain consistency checks",
+        "target_claim_type": "bounded_theorem"
+      },
+      "expected": {
+        "actual_current_surface_status": "conditional-support",
+        "counts": {
+          "failed": 0,
+          "passed": 89
+        },
+        "empirical_tests": 0,
+        "failed_checks": [],
+        "input_sha256": {
+          ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+          "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+          "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+          "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+          "scripts/scalar_vacuum_metric_inverse.py": "e3d2dbf5b480d21f4a879a5f75811319dcb9fab7740c7ccf4d2bc126666b17cb",
+          "scripts/scalar_vacuum_metric_weak.py": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583"
+        },
+        "new_observation_arrays": 0,
+        "primary_sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+        "read_inventory": {
+          "integrity_inputs": "Primary and declared notes/helper/checklist only; no observed arrays, inherited result values or independent-review outputs loaded",
+          "scientific_inputs": "Symbolic action/metric and three fixed synthetic coupled local solutions in the declared helper; inverse routine receives metric jets only"
+        },
+        "remaining_inputs": [
+          "Pointwise route: calibrated metric through lapse third and B second derivatives with error envelopes",
+          "Weak alternative uses lapse second/B first derivatives and complete weighted profiles with calibrated errors",
+          "Justified vacuum, static spherical geometry, and single-scalar sector",
+          "Action selection, physical preparation/global history, and measured Newton/action normalization"
+        ],
+        "scope": "Nondegenerate static spherical material vacuum, supplied candidate action and consistent x=y=0 sector; exact metric-to-field/parameter inverse with full-domain consistency checks",
+        "target_claim_type": "bounded_theorem"
+      }
+    },
+    {
+      "name": "cache content fingerprint",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "review immutable WEAK_SCOPE_SUPPLEMENT_v1.md",
+      "passed": true,
+      "actual": "d4e957d612aa6dd6e843a8efd374ae63754f33a4f40b4a035dab8afdfd888edf",
+      "expected": "d4e957d612aa6dd6e843a8efd374ae63754f33a4f40b4a035dab8afdfd888edf"
+    },
+    {
+      "name": "review immutable WEAK_SCOPE_RECEIPT_v1.json",
+      "passed": true,
+      "actual": "410cbeaaef41f38ce59384d421b76ef59726ecba7b4e8d07b320a9d0a05b45d0",
+      "expected": "410cbeaaef41f38ce59384d421b76ef59726ecba7b4e8d07b320a9d0a05b45d0"
+    },
+    {
+      "name": "review immutable WEAK_SCOPE_FREEZE_v1.json",
+      "passed": true,
+      "actual": "ce73f4b23e4f34b90424543978d41b80d9e949eaf11ffae257d3ebab50f18e6e",
+      "expected": "ce73f4b23e4f34b90424543978d41b80d9e949eaf11ffae257d3ebab50f18e6e"
+    },
+    {
+      "name": "review immutable CANONICAL_SCOPE_FREEZE_v1.json",
+      "passed": true,
+      "actual": "3a53521c9bf4a8af6611c845577b53ab6ecc106a9575f2313a1c0aaa70bbf2eb",
+      "expected": "3a53521c9bf4a8af6611c845577b53ab6ecc106a9575f2313a1c0aaa70bbf2eb"
+    }
+  ],
+  "identity_counts": {
+    "passed": 25,
+    "failed": 0
+  },
+  "scientific_or_empirical_tests_run_by_reviewer": 0,
+  "parent_code_body_read": false,
+  "all_weights_vs_finite_windows": "Full exact membership requires all admitted compact weights; four finite synthetic windows establish only partial residual constraints.",
+  "repaired_margin": "Uniform 0<eta<inf h is explicit; pointwise positivity alone on an open annulus is insufficient.",
+  "historical_findings_preserved": [
+    "INTERIM_BINDING_MISMATCH_v1.json",
+    "CANONICAL_SCOPE_FREEZE_v1.json:59/1 with ongoing primary change",
+    "WEAK_PREWRITE_SOURCE_CHANGE_v1.json"
+  ],
+  "reports": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_SCOPE_SUPPLEMENT_v1.md",
+      "sha256": "d4e957d612aa6dd6e843a8efd374ae63754f33a4f40b4a035dab8afdfd888edf",
+      "bytes": 5733,
+      "read_scope": "immutable complete reviewer artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_SCOPE_RECEIPT_v1.json",
+      "sha256": "410cbeaaef41f38ce59384d421b76ef59726ecba7b4e8d07b320a9d0a05b45d0",
+      "bytes": 8702,
+      "read_scope": "immutable complete reviewer artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_SCOPE_FREEZE_v1.json",
+      "sha256": "ce73f4b23e4f34b90424543978d41b80d9e949eaf11ffae257d3ebab50f18e6e",
+      "bytes": 1959,
+      "read_scope": "immutable complete reviewer artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_FINAL_CONFIRMATION_v1.md",
+      "sha256": "9f2851ead2a35ecd4f9b342d57dd66e29d276eccc23812cbcd400b34863d0f08",
+      "bytes": 1625,
+      "read_scope": "immutable complete reviewer artifact"
+    }
+  ],
+  "remaining_scope": "No code/ODE/aggregate rerun, formal audit, Git or PR operation. Parent retains authorship and remaining gates."
+}

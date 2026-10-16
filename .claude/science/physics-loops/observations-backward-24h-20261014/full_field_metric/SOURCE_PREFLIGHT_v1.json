@@ -1,0 +1,42 @@
+{
+  "graph_node": {
+    "claim_id": "scalar_full_field_metric_bounded_theorem_note_2026-10-15",
+    "path": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "title": "A necessary metric test with all three scalar fields active",
+    "claim_type_author_hint_raw": "bounded_theorem.",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "runner_path": "scripts/scalar_full_field_metric_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_full_field_metric.py"
+    ],
+    "note_hash": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+    "deps": [
+      "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15",
+      "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15"
+    ]
+  },
+  "row": {
+    "claim_id": "scalar_full_field_metric_bounded_theorem_note_2026-10-15",
+    "path": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "title": "A necessary metric test with all three scalar fields active",
+    "claim_type_author_hint_raw": "bounded_theorem.",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "runner_path": "scripts/scalar_full_field_metric_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_full_field_metric.py"
+    ],
+    "note_hash": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+    "deps": [
+      "scalar_vacuum_metric_inverse_bounded_theorem_note_2026-10-15",
+      "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15"
+    ],
+    "note_path": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem"
+  },
+  "issue": null,
+  "cache_status": "fresh",
+  "graph_generated_in_memory_only": true,
+  "formal_audit": false
+}

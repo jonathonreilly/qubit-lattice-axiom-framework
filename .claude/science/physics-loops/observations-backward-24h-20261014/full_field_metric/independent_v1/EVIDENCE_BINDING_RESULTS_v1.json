@@ -1,0 +1,474 @@
+{
+  "scope": "Saved evidence correspondence only; no scientific, ODE, mutation or aggregate rerun",
+  "identity": {
+    "runner_sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+    "input_fingerprint_sha256": "996e3febacdc7b856e3afb89ef3e08ba1a304e76613897884ca72062800370e6"
+  },
+  "declared_inputs": {
+    "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+    "scripts/scalar_full_field_metric.py": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+    "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+    "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00"
+  },
+  "cache_sha256": "02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995",
+  "counts_as_saved": {
+    "failed": 0,
+    "passed": 31
+  },
+  "elapsed_sec_as_saved": 0.5140860080718994,
+  "timeout_sec": 120,
+  "guarded_start": "2026-10-15T21:16:34.175712+00:00",
+  "guarded_end": "2026-10-15T21:16:34.700896+00:00",
+  "recorded_before_after_content_and_stat_equality": true,
+  "initial_started_at_disclosed_as_post_run": true,
+  "mutation_records": [
+    {
+      "name": "missing_B_in_transverse_kinetic",
+      "replacement": [
+        "tt = trial_x*hh/2-b*zp*zp/lam",
+        "tt = trial_x*hh/2-zp*zp/lam"
+      ],
+      "source_sha256": "56e2b8c67dd06f8918ff78ab9ab7cd0daee34517d9bf8853da4334dcdc90f981",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "891ab7f41703d6a2ea5ba641d177f059260dec0a714c354b60d245873ac99761",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:recovered_x_squared",
+          "passed": false,
+          "error": "0.51092455164589910587224977208879289168297845397619"
+        },
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "0.60887960327252480889208963334175113231971288456764"
+        },
+        {
+          "name": "0:recovered_transverse_kinetic",
+          "passed": false,
+          "error": "0.00082735911825059279611577402235688208062027174526874"
+        },
+        {
+          "name": "0:strict_nonzero_transverse_chart",
+          "passed": false
+        },
+        {
+          "name": "1:recovered_x_squared",
+          "passed": false,
+          "error": "0.0025180548944431748414300919510523658761249831665502"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "0.0029479947672110433907625632817684398449359575006132"
+        },
+        {
+          "name": "1:recovered_transverse_kinetic",
+          "passed": false,
+          "error": "0.000026583338422483797073849518230741114507536474281772"
+        }
+      ],
+      "passed_count": 24,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    },
+    {
+      "name": "wrong_transverse_source_sign",
+      "replacement": [
+        "z*curv-2*tt/z",
+        "z*curv+2*tt/z"
+      ],
+      "source_sha256": "5707c22460dde0e27a9b6e52ee7cbb431fd65fc1ddd58bf08c2d7ccff36f1a62",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "bbff3e31cc7e2cf56d924fa7818b7a13f98e8f55ea91222870bc886248c720bd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:recovered_x_squared",
+          "passed": false,
+          "error": "15.69353360391512797294336312928404311824443025993"
+        },
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "18.702316191135763813616028025557791950586935314411"
+        },
+        {
+          "name": "0:strict_nonzero_transverse_chart",
+          "passed": false
+        },
+        {
+          "name": "1:recovered_x_squared",
+          "passed": false,
+          "error": "2.9812861051855198807771951040765865603483710965393"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "3.4903193957530471360820428770423482745108025957503"
+        },
+        {
+          "name": "1:strict_nonzero_transverse_chart",
+          "passed": false
+        }
+      ],
+      "passed_count": 25,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    },
+    {
+      "name": "half_radial_scalar_operator",
+      "replacement": [
+        "ee = 2*lz/lam",
+        "ee = lz/lam"
+      ],
+      "source_sha256": "1e987da17fbe73adb355632a177e3fcf2c71aa31a822512b875f78673826d302",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "ccd6b29f6649b2a6cf6c80627e3f1436d743c2368f63950b079c3cb6ba33a3de",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:recovered_x_squared",
+          "passed": false,
+          "error": "3.9402006659561524501002672113145756171102193892109"
+        },
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "4.6956205384395846842310244971987643756977252206906"
+        },
+        {
+          "name": "0:strict_nonzero_transverse_chart",
+          "passed": false
+        },
+        {
+          "name": "1:recovered_x_squared",
+          "passed": false,
+          "error": "0.32365732765119951802196168839488106873252141507199"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "0.37891950266486872297949665964239292939769886478505"
+        },
+        {
+          "name": "1:strict_nonzero_transverse_chart",
+          "passed": false
+        }
+      ],
+      "passed_count": 25,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    },
+    {
+      "name": "reversed_y_share",
+      "replacement": [
+        "uy = (ee-lx*delta)/(ly-lx)",
+        "uy = (lx*delta-ee)/(ly-lx)"
+      ],
+      "source_sha256": "5e75ff0db9b03cb2fa7b3953626e2d91c3c8bee6d378f8466097724d0bdbc8ed",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "b2c44d88be2b1e1003aeb2d250d99979b6b73a271b1badf6c772582b83938751",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "0.020000000000000000000000000000000000000000000023383"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "0.064800000000000000000000000000000000000000000008696"
+        }
+      ],
+      "passed_count": 29,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    },
+    {
+      "name": "wrong_y_potential_power",
+      "replacement": [
+        "ay = 2*hv*hv*k*trial_x**2*z**((1+k)/a)/(3*(1+s))",
+        "ay = 2*hv*hv*k*trial_x**2*z**((1-k)/a)/(3*(1+s))"
+      ],
+      "source_sha256": "fe36d3da27614d704f375b99faebe77d55325b7fd6aadc9f16bb085d5fdd673d",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "afb0853c91ec0d0d7ef42941d4f8bf261f261bdd698ab6e8a081e8257c81c132",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "0.0025868369271983335923031798485993036368024979871656"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "0.0091121048487184922905047592799589439809757725517137"
+        }
+      ],
+      "passed_count": 29,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    },
+    {
+      "name": "wrong_angular_null_chart",
+      "replacement": [
+        "dd = b*(1/r-e1)",
+        "dd = b*(1/r+e1)"
+      ],
+      "source_sha256": "e37229927cfd234a1634ff99b424e9d70f93676523b46397d08c84c8a77be587",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "08ca5a02058b9f2889f52ad7bd42e34c5b1fdf992acc1e33c3aba4089859e51a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:recovered_x_squared",
+          "passed": false,
+          "error": "40.338506255902786609490822207450044735016059186373"
+        },
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "39.591954010662421477596993898938927709881306121397"
+        },
+        {
+          "name": "0:recovered_transverse_kinetic",
+          "passed": false,
+          "error": "0.009626508150978459901720368777143784963522658810194"
+        },
+        {
+          "name": "0:metric_scalar_first_derivative",
+          "passed": false,
+          "error": "0.010476631679027449609811952005535300575000211384083"
+        },
+        {
+          "name": "0:metric_scalar_second_derivative",
+          "passed": false,
+          "error": "0.010594044674719271657927633647146865526904315481704"
+        },
+        {
+          "name": "0:strict_nonzero_transverse_chart",
+          "passed": false
+        },
+        {
+          "name": "1:recovered_x_squared",
+          "passed": false,
+          "error": "2.0114918736772119704348315669941651101333885101181"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "1.0820916720587380252113111924802581132978619622677"
+        },
+        {
+          "name": "1:recovered_transverse_kinetic",
+          "passed": false,
+          "error": "0.013564510571656677114222342218065447559707068634955"
+        },
+        {
+          "name": "1:metric_scalar_first_derivative",
+          "passed": false,
+          "error": "0.0046409491189442658997925625714510849668055648274687"
+        },
+        {
+          "name": "1:metric_scalar_second_derivative",
+          "passed": false,
+          "error": "0.011041694474636593261977002783772507745046991419178"
+        },
+        {
+          "name": "1:strict_nonzero_transverse_chart",
+          "passed": false
+        }
+      ],
+      "passed_count": 19,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    },
+    {
+      "name": "omit_base_potential_derivative",
+      "replacement": [
+        "ee = 2*lz/lam+z*curv-2*tt/z-mp.diff(p0, z)",
+        "ee = 2*lz/lam+z*curv-2*tt/z"
+      ],
+      "source_sha256": "5fc2d02c0bd0a4d175f774cc9f72a0802e571e550367fd7f3347bc0b88dc5b46",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "e90a12dede14b17d58dfbe5bdf62de26c1bafb05a45b8a813ddc219995b96e0b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:recovered_x_squared",
+          "passed": false,
+          "error": "17.741217204503271085227315562155490698956632811655"
+        },
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "21.142584082622538105337858662842774790315731854219"
+        },
+        {
+          "name": "0:strict_nonzero_transverse_chart",
+          "passed": false
+        },
+        {
+          "name": "1:recovered_x_squared",
+          "passed": false,
+          "error": "3.2104659308769693075880180427112197265231848995222"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "3.7586300383763224600763005299163078819106492308417"
+        },
+        {
+          "name": "1:strict_nonzero_transverse_chart",
+          "passed": false
+        }
+      ],
+      "passed_count": 25,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    },
+    {
+      "name": "wrong_Einstein_conformal_kinetic",
+      "replacement": [
+        "6*v[0]**2/xx**2",
+        "3*v[0]**2/xx**2"
+      ],
+      "source_sha256": "0c37cfbe95b78f2196f494db5cf795dbccb548e3117dc139742eea1d442b4947",
+      "wrapper_sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "stdout_sha256": "d415a12a18adc0bd337bc07a241f361f8900de80fc501ee1430f87e76f375d19",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_controls": [
+        {
+          "name": "0:original_full_field_equation_0",
+          "passed": false,
+          "error": "0.0023813999999999999999999999999999999999999999999925"
+        },
+        {
+          "name": "0:original_full_field_equation_1",
+          "passed": false,
+          "error": "0.0023814000000000000000000000000000000000000000000058"
+        },
+        {
+          "name": "0:original_full_field_equation_2",
+          "passed": false,
+          "error": "0.0023814000000000000000000000000000000000000000000005"
+        },
+        {
+          "name": "0:original_full_field_equation_3",
+          "passed": false,
+          "error": "0.013290949126627489880117482908125946679833414081478"
+        },
+        {
+          "name": "0:recovered_x_squared",
+          "passed": false,
+          "error": "7.2159551421184687455774645448760287166897520224703"
+        },
+        {
+          "name": "0:recovered_y_squared",
+          "passed": false,
+          "error": "8.5994064877322359547301667464474904327064096028472"
+        },
+        {
+          "name": "0:recovered_transverse_kinetic",
+          "passed": false,
+          "error": "0.0023813999999999999999999999999999999999999999999989"
+        },
+        {
+          "name": "0:strict_nonzero_transverse_chart",
+          "passed": false
+        },
+        {
+          "name": "1:original_full_field_equation_0",
+          "passed": false,
+          "error": "0.00082079999999999999999999999999999999999999999994033"
+        },
+        {
+          "name": "1:original_full_field_equation_1",
+          "passed": false,
+          "error": "0.00082080000000000000000000000000000000000000000005794"
+        },
+        {
+          "name": "1:original_full_field_equation_2",
+          "passed": false,
+          "error": "0.00082080000000000000000000000000000000000000000000582"
+        },
+        {
+          "name": "1:original_full_field_equation_3",
+          "passed": false,
+          "error": "0.026524552082930622959330630648034547528523044447758"
+        },
+        {
+          "name": "1:recovered_x_squared",
+          "passed": false,
+          "error": "1.5852405632739697085261468952935299550610688210556"
+        },
+        {
+          "name": "1:recovered_y_squared",
+          "passed": false,
+          "error": "1.8559090572708767283667479915249295967683881611468"
+        },
+        {
+          "name": "1:recovered_transverse_kinetic",
+          "passed": false,
+          "error": "0.00082079999999999999999999999999999999999999999995422"
+        },
+        {
+          "name": "1:strict_nonzero_transverse_chart",
+          "passed": false
+        }
+      ],
+      "passed_count": 15,
+      "entire_candidate_matches_single_declared_replacement": true,
+      "exception_only": false
+    }
+  ],
+  "frozen_evidence_files": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__GUARDED_EXECUTION_v1.json",
+      "sha256": "69355c5e6c1d2ca1e7646b9e8315beae9a10c36b22fe95093088fa90df8f0514",
+      "bytes": 9701
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__MUTATIONS_v1.json",
+      "sha256": "ee67693b15ba17cec3adfae59525b48df78283fb57f9cdd4c08a0602816e0e03",
+      "bytes": 3451
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__HANDOFF.md",
+      "sha256": "a0474e42999ce125eaa2994d654f91261dad84246ed06be5584c5e4a8d4ce5d6",
+      "bytes": 4998
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__EXECUTION_v1.json",
+      "sha256": "e3e960bc096fffd9688a2ffd42b0ea7d974c23b0b81540e79430ea69e2354b59",
+      "bytes": 799
+    },
+    {
+      "path": "outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__RESULTS_v1.json",
+      "sha256": "2e2de12cbaaebc759f95fa16f5701e44dc7bb5ec6b5faa67096557c8e21d3de0",
+      "bytes": 9938
+    },
+    {
+      "path": "outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__SUMMARY_v1.json",
+      "sha256": "e63c3c720e4e79a52209e21a896dd4aac6e61823941c3d6c20cfa2e88d92c7a8",
+      "bytes": 1746
+    },
+    {
+      "path": "logs/runner-cache/scalar_full_field_metric_check.txt",
+      "snapshot": "EVIDENCE_EXPOSURE_v1__scalar_full_field_metric_check.txt",
+      "sha256": "02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995",
+      "bytes": 2540
+    }
+  ],
+  "source_sha256": "f9c662b495587d0f0df576e936928ead8a60d29163a6427c4b2883ac6cadbcfb"
+}

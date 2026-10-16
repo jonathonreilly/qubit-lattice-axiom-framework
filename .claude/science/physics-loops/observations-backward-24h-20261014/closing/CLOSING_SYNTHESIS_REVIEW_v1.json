@@ -1,0 +1,165 @@
+{
+  "review": "focused closing-synthesis correspondence",
+  "reviewer": "/root/inertial_response_check",
+  "created_at_utc": "2026-10-15T21:27:17.402778+00:00",
+  "report_path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/CLOSING_SYNTHESIS_REVIEW_v1.md",
+  "report_sha256": "b57e48ad997d761cb2ce7f8ecc5e9b4d55d3cb2376c7b4e55c0520684ab5a6ce",
+  "reviewed_final_draft_sha256": "34ef47f2d3d9c4264b81a6d5f8b33b30f51685caaaa8e3ed16d1f1a7ac8a73be",
+  "inspected_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_REPORT_WORKING_v1.md",
+      "sha256": "322d4cbd2f52f433b46c4506403727b132536d11bcfe72e2ce42835f41e22ad2",
+      "bytes": 14899,
+      "inspected_scope": "Complete original draft read; preserved historical findings"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_REPORT_WORKING_v3.md",
+      "sha256": "c9709be908748b5dcf853ac5afc6d6f5cac6aff8f4c80ced4475eb7c7f942880",
+      "bytes": 15961,
+      "inspected_scope": "Complete v1-to-v3 delta read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_REPORT_WORKING_v5.md",
+      "sha256": "34ef47f2d3d9c4264b81a6d5f8b33b30f51685caaaa8e3ed16d1f1a7ac8a73be",
+      "bytes": 16667,
+      "inspected_scope": "Complete v3-to-v5 delta and complete final draft read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/DEADLINE.json",
+      "sha256": "0056b31b577fe224ea25ed69e72728b9433d36872ecb4cef2b687bf1e4015e4f",
+      "bytes": 533,
+      "inspected_scope": "Complete read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PRS.json",
+      "sha256": "5b6398e42d387cb2c1ec8d7e01e62ab5a2491197315d3acd372802b18004586d",
+      "bytes": 26476,
+      "inspected_scope": "All 18 campaign PR records/head fields compared; local historical inventory only"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/CASSINI_DOPPLER_COUNT_STATION_TIME_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "7665d29d78d2ce302c445bb3f8878e50cb75d89d20bbd14cdb0c4f8d673a0bde",
+      "bytes": 16530,
+      "inspected_scope": "Count/history/source comparison passages, lines 35-135; prior focused review reused"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/INDEPENDENT_REVIEW_v1.md",
+      "sha256": "9139665be855be0ab5c7bfbf28c43eed0b5e3804265fe76c1c600c936908fc1b",
+      "bytes": 7033,
+      "inspected_scope": "Count and duplicate metadata excerpts; prior completed review reused"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v2.md",
+      "sha256": "e919de64201449bd8851a9a599b3aa860e5b5388e7bf4131930cfb389866ad7f",
+      "bytes": 9391,
+      "inspected_scope": "Interval/triple and endpoint-variant excerpts; prior completed review reused"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "ee2c6e46a235de9a2c668d6013dc830eddb160c77d218309431669b8d9ab26f8",
+      "bytes": 18926,
+      "inspected_scope": "Reference, cell and conditional-model sections, lines 1-250; prior numerical review reused"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "sha256": "b611e5d93a85a585d42f1fa239040d9010861bd4d07c4209b51be68995881d4e",
+      "bytes": 6688,
+      "inspected_scope": "Frozen RMS and phase-coefficient correspondence excerpts; prior review reused"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/CASSINI_ERROR_DIRECTION_MODEL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "571c6b8f108de2c4100653f0fd2509bf33745bb02b5bdee1d2c2b2530c7d71b3",
+      "bytes": 25871,
+      "inspected_scope": "Observation table, statistical boundary and failure disclosure passages"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "bytes": 22772,
+      "inspected_scope": "Complete-boundary/lapse qualification passages; prior M17/M18 review reused"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "bytes": 21992,
+      "inspected_scope": "Prior complete M19 canonical/weak review reused; no new numerical run"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/HANDOFF.md",
+      "sha256": "89f00c133ff034c840cec898f161ec680372bc84a37438929c133bcec37b71f3",
+      "bytes": 6795,
+      "inspected_scope": "Complete read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v4.json",
+      "sha256": "e7feaa797b6c6a50378074e30e28643a118b2594f9d4ae52bf844510dc964de8",
+      "bytes": 8831,
+      "inspected_scope": "Selected final cache/execution/formatting fields"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+      "bytes": 10793,
+      "inspected_scope": "Complete read for summary scope, not an independent new proof"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "sha256": "1a34505ce34044d42d79cbf175cfbe5d7d4965e2fc792ae34ce7229084dda617",
+      "bytes": 5598,
+      "inspected_scope": "Complete read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919",
+      "bytes": 9007,
+      "inspected_scope": "Complete read; original reviewer scope retained"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "sha256": "e63c3c720e4e79a52209e21a896dd4aac6e61823941c3d6c20cfa2e88d92c7a8",
+      "bytes": 1746,
+      "inspected_scope": "Selected scope/count/failure/source fields"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_RAW_SOURCE_MANIFEST_v1.json",
+      "sha256": "c16ecb85276f5ce203925acd459f1ca9fbb41ca5c283da49b2a7aeec4856947a",
+      "bytes": 1170,
+      "inspected_scope": "Complete manifest read; raw files not opened or rehashed"
+    }
+  ],
+  "corrected_findings": [
+    "M17/M18 complete boundary versus M19 scalar-boundary elimination",
+    "pre-NSP Block-5 and phase-history premises",
+    "forward count no-reset and increment domain",
+    "ideal ADC-cell premise",
+    "M11 floating diagnostic and six numerical failures",
+    "M20 nonnegative shares and necessary-only scope"
+  ],
+  "saved_pr_inventory_comparison": {
+    "draft_rows": 18,
+    "inventory_rows": 18,
+    "head_mismatches": 0,
+    "live_network_check": false
+  },
+  "remaining_closure": [
+    "final M20 publication/source/cache/review receipt",
+    "live campaign PR-head verification",
+    "owned-process stop evidence and actual stop time",
+    "prior campaigns stopped confirmation",
+    "final heartbeat state",
+    "final report and artifact identities"
+  ],
+  "scope_exclusions": [
+    "new scientific derivation",
+    "raw data re-access",
+    "solver or aggregate rerun",
+    "formal audit",
+    "independent empirical validation",
+    "live PR/remote-main verification",
+    "campaign completion certificate"
+  ],
+  "writes": [
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/CLOSING_SYNTHESIS_REVIEW_v1.md",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/CLOSING_SYNTHESIS_REVIEW_v1.json"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "controls_byte_identical": true,
+  "cache_stdout_equal_ignoring_separator_newlines": true,
+  "all_returncodes_zero": true,
+  "primary_summary": {
+    "passed": 195,
+    "failed": 0
+  },
+  "integration_summary": {
+    "passed": 22,
+    "failed": 0
+  },
+  "sharp_midpoint_summary": {
+    "passed": 6,
+    "failed": 0
+  },
+  "note_and_primary_unchanged": true
+}

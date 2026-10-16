@@ -1,0 +1,3 @@
+# Final-source mutation addendum
+
+The final-source mutation_repeat_v2 manifest and all 13 actual tracebacks were checked. All three source hashes match the original independent report, each deterministic text replacement reproduces its recorded mutant hash, and every run exited 1 at its intended assertion. Exact source/evidence hashes are in mutation_repeat_v2_bindings.json. This closes the earlier note-hash distinction for this repeated batch; it does not replace the preserved v1 evidence or original report. No canonical source change, new mathematical claim, audit verdict or integrated landing validation is implied.

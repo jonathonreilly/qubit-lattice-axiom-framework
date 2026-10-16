@@ -1,0 +1,16 @@
+{
+  "campaign": "observations-backward-derivation-24h-20261015",
+  "publication_unit": "neighborhood-intervention-response-20261016",
+  "deadline": "2026-10-16T22:36:59Z",
+  "updated_at": "2026-10-16T02:48:52.246511+00:00",
+  "branch": "codex/neighborhood-evolution-20261016",
+  "base_sha": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "target_claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "trace_class": "upstream_support",
+  "source_review": "complete; source-bound focused report",
+  "shared_landing_validation": "pending",
+  "pr": null,
+  "empirical_validation": false,
+  "next_action": "Finish focused preflight, verify one-node citation topology change, commit/push this standalone delta and create/attach milestone PR; continue personally on physical response bridge."
+}

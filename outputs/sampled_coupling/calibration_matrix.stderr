@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/coupling-mutation-nlpv47ew/scripts/sampled_coupling_inverse.py", line 343, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/coupling-mutation-nlpv47ew/scripts/sampled_coupling_inverse.py", line 325, in main
+    symbolic(); numerical(); coupling_controls()
+                ^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/coupling-mutation-nlpv47ew/scripts/sampled_coupling_inverse.py", line 144, in numerical
+    inferred = float(weights(*est)@samples)
+                     ^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/coupling-mutation-nlpv47ew/scripts/sampled_coupling_inverse.py", line 101, in weights
+    return extrapolation_weights(s,p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/coupling-mutation-nlpv47ew/scripts/sampled_coupling_math.py", line 17, in extrapolation_weights
+    raise ValueError('positive p is required')
+ValueError: positive p is required

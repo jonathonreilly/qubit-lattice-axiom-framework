@@ -1,0 +1,246 @@
+{
+  "checks": {
+    "app_response_confirms_deleted": true,
+    "current_report_bound_by_closure_receipt": true,
+    "equation_section_unchanged": true,
+    "lock_owner_holder_match": true,
+    "matching_processes_empty": true,
+    "new_network_or_process_scan": false,
+    "recorded_lock_after_free": true,
+    "scientific_body_unchanged": true,
+    "scientific_objective_complete": false,
+    "shutdown_after_fixed_deadline": true
+  },
+  "closure_state_delta": {
+    "active_route": {
+      "closure": null,
+      "packaging": "full_three_field_metric_compatibility"
+    },
+    "checkpoint_scope": {
+      "closure": "Fixed-deadline closure with process/lock/app receipts; no new discovery or scientific execution.",
+      "packaging": "M20 published; discovery frozen. Final campaign synthesis and actual deadline shutdown only."
+    },
+    "closing_draft_scope": {
+      "closure": "Completed campaign report; scientific objective remains unresolved.",
+      "packaging": "Scientific synthesis frozen; actual deadline shutdown verification pending."
+    },
+    "completed_at": {
+      "closure": "2026-10-15T21:49:07.166007+00:00",
+      "packaging": null
+    },
+    "current_block_status": {
+      "closure": "published_conditional_result_campaign_closed",
+      "packaging": "published_science_final_packaging"
+    },
+    "fixed_deadline": {
+      "closure": "2026-10-15T21:48:44Z",
+      "packaging": null
+    },
+    "heartbeat_status": {
+      "closure": "DELETED",
+      "packaging": null
+    },
+    "last_checkpoint_at": {
+      "closure": "2026-10-15T21:49:07.166007+00:00",
+      "packaging": "2026-10-15T21:34:28.918794+00:00"
+    },
+    "last_published_head_scope": {
+      "closure": "Last scientific delivery; closing-document Git HEAD is recorded separately in runtime FINAL_DELIVERY_v1.json.",
+      "packaging": null
+    },
+    "lock_status": {
+      "closure": "matching_lock_released",
+      "packaging": null
+    },
+    "next_action": {
+      "closure": "No automatic research remains. Preserve results and unresolved physical/theoretical suppliers for a future explicitly requested campaign.",
+      "packaging": "No new discovery. Complete final-report evidence packaging and verify actual shutdown at the original deadline 2026-10-15T21:48:44Z."
+    },
+    "next_milestone": {
+      "closure": null,
+      "packaging": "Final deadline shutdown and preserved report."
+    },
+    "phase": {
+      "closure": "completed_fixed_deadline",
+      "packaging": "final_packaging"
+    },
+    "research_window_extended": {
+      "closure": false,
+      "packaging": null
+    },
+    "retirement_receipt": {
+      "closure": "closing/HEARTBEAT_RETIREMENT_v1.json",
+      "packaging": null
+    },
+    "scientific_objective_complete": {
+      "closure": false,
+      "packaging": null
+    },
+    "scientific_outcome": {
+      "closure": "Conditional reconstruction/consistency results; no TOE or independent empirical validation of the scalar action.",
+      "packaging": null
+    },
+    "shutdown_receipt": {
+      "closure": "closing/DEADLINE_SHUTDOWN_v1.json",
+      "packaging": null
+    },
+    "status": {
+      "closure": "completed",
+      "packaging": "final_packaging"
+    },
+    "updated_at": {
+      "closure": "2026-10-15T21:49:07.166007+00:00",
+      "packaging": "2026-10-15T21:34:28.918794+00:00"
+    }
+  },
+  "copied_receipts_identical": [
+    "DEADLINE_SHUTDOWN_v1.json",
+    "HEARTBEAT_RETIREMENT_v1.json",
+    "FINAL_REPORT_CLOSURE_v1.json",
+    "FINAL_EQUATION_DISPLAY_REVIEW_v1.md",
+    "FINAL_EQUATION_DISPLAY_REVIEW_v1.json"
+  ],
+  "created_at_utc": "2026-10-15T21:52:30.181744+00:00",
+  "inspected_sources": [
+    {
+      "bytes": 21886,
+      "inspected_scope": "Complete final report and exact administrative delta read",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/FINAL_REPORT.md",
+      "sha256": "b76582e1f4907064d467764d81bb3a77cb547d4d0d2a3bc030c111f6f02c2876"
+    },
+    {
+      "bytes": 20775,
+      "inspected_scope": "Preserved equation-display baseline; complete delta comparison",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_REPORT_PACKAGING_v2.md",
+      "sha256": "cb07cd621a5ce7276cc14de398a66440c97c6e7a82cafe6fbdbbf9ac35eca5ad"
+    },
+    {
+      "bytes": 18942,
+      "inspected_scope": "Prior synthesis baseline hash reused",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_REPORT_PACKAGING_v1.md",
+      "sha256": "8fd9779e54c4da699e106eff9e533dfc40635c629f4d432367cae25dc9842f23"
+    },
+    {
+      "bytes": 5432,
+      "inspected_scope": "Prior complete scoped synthesis review reused",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/CLOSING_SYNTHESIS_REVIEW_v2.md",
+      "sha256": "bf3ce4ad457092f9d9672d4b487d6410714c16a9d4b7a21a6d4593c4996039d8"
+    },
+    {
+      "bytes": 18364,
+      "inspected_scope": "Prior source identities and metadata field deltas reused",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/CLOSING_SYNTHESIS_REVIEW_v2.json",
+      "sha256": "f6fc4e9517fc1a663dba133c8e5f6f07325d91833597fa0283ec030f113980fa"
+    },
+    {
+      "bytes": 3572,
+      "inspected_scope": "Complete presentation review read",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/closing/FINAL_EQUATION_DISPLAY_REVIEW_v1.md",
+      "sha256": "afa1d0fac71f0fbd1a38c18a742bc24a278390412f0e715eb34c7f3b3b9ca579"
+    },
+    {
+      "bytes": 3732,
+      "inspected_scope": "Complete identity and frozen equation section read",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/closing/FINAL_EQUATION_DISPLAY_REVIEW_v1.json",
+      "sha256": "5e8d07a048a4a1f5471b826ac907a8f8a643dc8b6d8711f9aada95b7b2b553c6"
+    },
+    {
+      "bytes": 2266,
+      "inspected_scope": "Complete saved process/status/lock receipt read",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/closing/DEADLINE_SHUTDOWN_v1.json",
+      "sha256": "8a96220a77416a453ef491109076045c048587902790fdba251812aef433278d"
+    },
+    {
+      "bytes": 847,
+      "inspected_scope": "Complete saved app response parsed",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/closing/HEARTBEAT_RETIREMENT_v1.json",
+      "sha256": "c3a744f2e9112da997be195130ef348cd1815e1e90408ea1722282f7d0308acf"
+    },
+    {
+      "bytes": 620,
+      "inspected_scope": "Complete hash/chronology receipt read",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/closing/FINAL_REPORT_CLOSURE_v1.json",
+      "sha256": "ae83d21379cac4bb1a8b78e01ed43c07d53cc2db13458534c3bda514cb215cb5"
+    },
+    {
+      "bytes": 4196,
+      "inspected_scope": "Complete administrative source read only; not executed",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/close_campaign_at_deadline_v2.py",
+      "sha256": "3c9a7b1137ebdcec4ea6d1e33540a87b2a932e826d401f6d579aaf5427e78a5f"
+    },
+    {
+      "bytes": 533,
+      "inspected_scope": "Complete fixed clock read",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/DEADLINE.json",
+      "sha256": "0056b31b577fe224ea25ed69e72728b9433d36872ecb4cef2b687bf1e4015e4f"
+    },
+    {
+      "bytes": 43551,
+      "inspected_scope": "Owner/holder and closure fields only",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/DIRECT_AUTHOR.json",
+      "sha256": "6758da689fec1271cc1783b61332f8be1bba0a0d7c6a09647dac3a5676bc5bdd"
+    },
+    {
+      "bytes": 46285,
+      "inspected_scope": "Complete changed administrative fields read against prior reviewed packaging state",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/STATE.yaml",
+      "sha256": "115d275a67794da9e9368fea0c9d7426ca5ce5e48a0f224b8e137bcbe78db573"
+    },
+    {
+      "bytes": 95160,
+      "inspected_scope": "Complete packaging and closure additions read; prior history reused",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/HANDOFF.md",
+      "sha256": "370685018a40dfe0482756e2025a800fa56333a89fa4b2fb22c181c17bf6cee8"
+    },
+    {
+      "bytes": 45426,
+      "inspected_scope": "Complete packaging and closure additions read; prior history reused",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/REVIEW_HISTORY.md",
+      "sha256": "9bd166ccaf15cd01094bc5d51b97b993a25e2c8069bb3cb54af8f900cb8dc441"
+    },
+    {
+      "bytes": 21978,
+      "inspected_scope": "Complete packaging and closure additions read; prior history reused",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/PR_BACKLOG.md",
+      "sha256": "53a48a5870050f885fbcfff810bbb7e24f62dbd9674e754c4da7ea6191b26816"
+    }
+  ],
+  "limits": [
+    "Saved historical process/app evidence reviewed, not independently reobserved",
+    "Process result is limited to exact campaign command-line identifiers and excludes administrative ancestors",
+    "Prior-campaign statuses checked at exact saved bytes, not continuous history",
+    "No scientific validation, audit or final document publication check"
+  ],
+  "material_findings": [],
+  "previous_status_checks": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/STATUS.json",
+      "phase": "completed_at_deadline",
+      "sha256": "40ce2f721c0f15ae338989198bf066ffdef1c9ac83c9c0b8b7f42a66b1aebc25"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/STATUS.json",
+      "phase": "cancelled",
+      "sha256": "cc38c60dc3b1da19520fa8672f198b5a4c18bc0c32d7175995247b530751ce74"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/revised-scalar-derivation-24h-20261013/STATUS.json",
+      "phase": "completed_fixed_deadline",
+      "sha256": "d596819861bd64e770ac73e1cb6a14284f68c2b0748f812f5ee4865289302e64"
+    }
+  ],
+  "report_sha256": "d778d44f42b81663a504bb3a875704915ed47c07d69c7a9739d52dbe272c1948",
+  "reviewed_final_report_sha256": "b76582e1f4907064d467764d81bb3a77cb547d4d0d2a3bc030c111f6f02c2876",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Final administrative closure correspondence only",
+  "writer_setup_failure": {
+    "cause": "Third-derivative notation terminated a triple-single-quoted report string",
+    "error": "SyntaxError: unterminated string literal",
+    "prior_writes": false,
+    "repair": "Changed report string quoting; no source or evidence change"
+  },
+  "writes": [
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_CLOSURE_REVIEW_v1.md",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_CLOSURE_REVIEW_v1.json"
+  ]
+}

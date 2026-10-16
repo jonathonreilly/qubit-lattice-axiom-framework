@@ -1,0 +1,16 @@
+{
+  "source_checkpoint": "b37b3432e3993cea4e428fc3201c95e33311e94f",
+  "source_pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
+  "transform": "Extract mathematical bodies into two functions; remove old JSON/source hashing and runpy plumbing; primary runner executes both directly. No mathematical expression or tolerance changed by this transformation.",
+  "old_sources": {
+    "check_common_action_ringdown_v2.py": "b8123f4b9aa3da98a453d9cf43621d4830334f5051941d09716103ff9132fee8",
+    "check_ringdown_action_reconstruction_v1.py": "42711cd3e93c7bc984a0846e28b0604bf5882bc1e4a4dd988dcc8a7a940c60d2"
+  },
+  "new_helper_sha256": "3293be690789f92a09034a4f9573c95cff7480a2669f33cfc4464847e405a950",
+  "canonical_test_strengthening": [
+    "Replace duplicate literal zero exponents with six-basis numerical rank loss at zero decay",
+    "Replace literal zero amplitude predicate with separately integrated unexcited force record",
+    "Recompute unchanged Q from the independent channels in the phase-altered example",
+    "Derive nonaffine rest response by differentiating force/jacobian instead of asserting a definition"
+  ]
+}

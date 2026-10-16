@@ -1,0 +1,129 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/check_nonequilibrium_scalar_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "observer_dont_write_bytecode": true,
+  "start_utc": "2026-10-16T09:07:09.187685+00:00",
+  "end_utc": "2026-10-16T09:07:09.740655+00:00",
+  "wall_seconds": 0.5521842502057552,
+  "child_user_seconds": 0.453296,
+  "child_system_seconds": 0.032431999999999996,
+  "child_peak_rss_platform_units": 67239936,
+  "platform": "darwin",
+  "returncode": 1,
+  "expected_historical_returncode": 1,
+  "timed_out": false,
+  "stdout_bytes": 2166,
+  "stdout_sha256": "20eff3f7010a02966f0263ef02573dda1f9d77675da816c134f3ed6f011c513f",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_binding_before": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": {
+      "sha256": "eb0c9d27aa497caa77adb4fe0f9865517ba2617cd48322ebe6bce8da4a8b3436",
+      "bytes": 12311
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_nonequilibrium_scalar_v1.py": {
+      "sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+      "bytes": 9690
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_nonequilibrium_scalar_v2.py": {
+      "sha256": "7622b4359a1f432760f3540eae7f5720c2f314faea42f6fff8fdc426457ab599",
+      "bytes": 10050
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json": {
+      "sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+      "bytes": 8968
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": {
+      "sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+      "bytes": 9163
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_CONTROL_RECOVERY_v1.json": {
+      "sha256": "6cf0c38265d8c31b152b581916cd26b60f3054391677e94c0a0430a1547ced74",
+      "bytes": 1076
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_REVIEW_INPUT_v1.json": {
+      "sha256": "541d2a5db618acde30b647ab71553f96cbbaa9365a3a1921db78562ae3398c42",
+      "bytes": 846
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": {
+      "sha256": "eb0c9d27aa497caa77adb4fe0f9865517ba2617cd48322ebe6bce8da4a8b3436",
+      "bytes": 12311
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/check_nonequilibrium_scalar_v1.py": {
+      "sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+      "bytes": 9690
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/check_nonequilibrium_scalar_v2.py": {
+      "sha256": "7622b4359a1f432760f3540eae7f5720c2f314faea42f6fff8fdc426457ab599",
+      "bytes": 10050
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/replay_original_unit_bounded_v1.py": {
+      "sha256": "08da8347593e857bc46196455b0070f2c1bb4784a1418f8829236428e84a7976",
+      "bytes": 5103
+    }
+  },
+  "input_binding_after": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": {
+      "sha256": "eb0c9d27aa497caa77adb4fe0f9865517ba2617cd48322ebe6bce8da4a8b3436",
+      "bytes": 12311
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_nonequilibrium_scalar_v1.py": {
+      "sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+      "bytes": 9690
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_nonequilibrium_scalar_v2.py": {
+      "sha256": "7622b4359a1f432760f3540eae7f5720c2f314faea42f6fff8fdc426457ab599",
+      "bytes": 10050
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json": {
+      "sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+      "bytes": 8968
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": {
+      "sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+      "bytes": 9163
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_CONTROL_RECOVERY_v1.json": {
+      "sha256": "6cf0c38265d8c31b152b581916cd26b60f3054391677e94c0a0430a1547ced74",
+      "bytes": 1076
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NON_EQUILIBRIUM_REVIEW_INPUT_v1.json": {
+      "sha256": "541d2a5db618acde30b647ab71553f96cbbaa9365a3a1921db78562ae3398c42",
+      "bytes": 846
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": {
+      "sha256": "eb0c9d27aa497caa77adb4fe0f9865517ba2617cd48322ebe6bce8da4a8b3436",
+      "bytes": 12311
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/check_nonequilibrium_scalar_v1.py": {
+      "sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+      "bytes": 9690
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/check_nonequilibrium_scalar_v2.py": {
+      "sha256": "7622b4359a1f432760f3540eae7f5720c2f314faea42f6fff8fdc426457ab599",
+      "bytes": 10050
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/replay_original_unit_bounded_v1.py": {
+      "sha256": "08da8347593e857bc46196455b0070f2c1bb4784a1418f8829236428e84a7976",
+      "bytes": 5103
+    }
+  },
+  "inputs_unchanged": true,
+  "output_parse_error": null,
+  "summary": {
+    "passed": 42,
+    "failed": 2
+  },
+  "replay_output": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json",
+  "replay_output_sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+  "reference_sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+  "output_byte_identical_to_original": true,
+  "author_sources_executed_in_place": false,
+  "replay_sources_unchanged_copies": true
+}

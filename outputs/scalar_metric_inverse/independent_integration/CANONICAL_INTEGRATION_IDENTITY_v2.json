@@ -1,0 +1,539 @@
+{
+  "created_at": "2026-10-16T11:59:30.390299+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Complete v1 canonical integration plus narrow current note/primary/local-kernel/helper validation correspondence; not audit, empirical validation or landing authorization.",
+  "review_sha256": "d8a59044f0522e4a52a7572ee9120912679286ede470212fb43dc9d90fd9fdb2",
+  "prior_report_sha256": "d70bdf1179db674cd6322dc8d91f3da7a39d0c40e22ba3c5b5855e7ba48bf7bf",
+  "prior_identity_sha256": "7072dd0c90f075fc260bad75666f7e72d49dc7facc28c2cb6e8d5063f1ba402b",
+  "source_hashes": {
+    "docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+    "scripts/scalar_metric_coefficients.py": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+    "scripts/scalar_metric_conditioning.py": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+    "scripts/scalar_metric_constraints.py": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+    "scripts/scalar_metric_fixed_background.py": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+    "scripts/scalar_metric_geometry.py": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+    "scripts/scalar_metric_inverse.py": "274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708",
+    "scripts/scalar_metric_joint_gain.py": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+    "scripts/scalar_metric_local_kernels.py": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+    "scripts/scalar_metric_photon_map.py": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+    "scripts/scalar_metric_transport.py": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+    "scripts/scalar_metric_varying_coupling.py": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01"
+  },
+  "final_mutation_driver_sha256": "6ccace685371532141f27fe325de0ec6bd6e382dfad8b8d10301587ffc0372ab",
+  "final_mutation_result_sha256": "65042bca919a7c99139136765edacc073f6462b527a60c4e8f5aa2649b9f1e7b",
+  "disposition": "No remaining correction requested within the focused integration scope; original pending kernel concern addressed by explicit source qualification plus separately bound independent mathematical review. Surviving physical/measurement premises remain.",
+  "files": {
+    "AFFECTED_SOURCE_DIFF_v2.txt": {
+      "sha256": "4d30c632e06b4305aeb13dbfd8e44ac33c72706d1c927c1eb58ac8113b8a2a1c",
+      "bytes": 14035
+    },
+    "AFFECTED_SOURCE_INTAKE_v2.json": {
+      "sha256": "baae13a7201adcbea300f96488953636ed90a2717b3e58532212c58191254135",
+      "bytes": 563
+    },
+    "AFFECTED_SOURCE_STRUCTURE_v2.json": {
+      "sha256": "ebf22adc3482be3eca3f8d820e56575d96f1e6801e48e97f56b8774a6bedfba1",
+      "bytes": 972
+    },
+    "ARCHIVED_RESULT_CORRESPONDENCE_v1.json": {
+      "sha256": "d02bb7be90e57e7c49a99a7bba7b0f224d234d5b2b5a74e29eeda4796081f764",
+      "bytes": 5214
+    },
+    "AST_CORRESPONDENCE_v1.json": {
+      "sha256": "924aa297a634a48786c7d579233a14bad3eaa7169c2f8215efd84a243033ea04",
+      "bytes": 17324
+    },
+    "CANONICAL_INTEGRATION_IDENTITY_v1.json": {
+      "sha256": "7072dd0c90f075fc260bad75666f7e72d49dc7facc28c2cb6e8d5063f1ba402b",
+      "bytes": 12299
+    },
+    "CANONICAL_INTEGRATION_REVIEW_v1.md": {
+      "sha256": "d70bdf1179db674cd6322dc8d91f3da7a39d0c40e22ba3c5b5855e7ba48bf7bf",
+      "bytes": 11470
+    },
+    "CANONICAL_INTEGRATION_REVIEW_v2.md": {
+      "sha256": "d8a59044f0522e4a52a7572ee9120912679286ede470212fb43dc9d90fd9fdb2",
+      "bytes": 7760
+    },
+    "FINAL_ENVELOPE_BINDING_v2.json": {
+      "sha256": "efe1ec89c032098123ee969886f59f9980d051e5b69e18be66c6f8dba832eb3f",
+      "bytes": 13616
+    },
+    "FINAL_VALIDATION_DELTA_v2.json": {
+      "sha256": "bc2e4a5cf07d04d8248e84c51e899614a73a4d8832a6fc1c5225b0bf262ab477",
+      "bytes": 1745
+    },
+    "IMPORT_READ_CLOSURE_v1.json": {
+      "sha256": "801d0ed88b043e11f470deae0b7a9b9015cb37fdcc14a185bc4150b1147c9556",
+      "bytes": 3225
+    },
+    "IMPORT_READ_CLOSURE_v2.json": {
+      "sha256": "7085c467d8cd00ca189807bd5eb2b0ab2e736cc2526246f5fb5c6d5c31fbbb46",
+      "bytes": 4748
+    },
+    "INTAKE_v1.json": {
+      "sha256": "d87f87d24df3548fa80df549addfcf8b2ac747756e2fbba8af352efd1265a817",
+      "bytes": 4701
+    },
+    "INTEGRATION_ALGEBRA_EXECUTION_v1.json": {
+      "sha256": "4e8a8eda419e46fe3ab4853ab1cceef9492bdfdec4a3626840781cdfe3cd906f",
+      "bytes": 88
+    },
+    "INTEGRATION_ALGEBRA_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "INTEGRATION_ALGEBRA_STDOUT_v1.json": {
+      "sha256": "118566af4f6269cfe61784fccbf2167c0626fe9b34c3f6bc6c7b16d309189934",
+      "bytes": 567
+    },
+    "LOCAL_KERNELS_EXECUTION_v2.json": {
+      "sha256": "07e4c2f3908c74c687875c0c5bfe0807ca69b24c8fc9714135e7c4250c1e1572",
+      "bytes": 184
+    },
+    "LOCAL_KERNELS_REPLAY_v2.json": {
+      "sha256": "e3b5d43314d403f8e6517edcad043af6cf66d495eebf45c3c00d0553ff4ff604",
+      "bytes": 3464
+    },
+    "LOCAL_KERNELS_STDERR_v2.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "PRIOR_REVIEW_BINDINGS_v1.json": {
+      "sha256": "6c42b9692a4a1b956d2e18488ecc71838f6565aabfca5ee5059ee3b886ac476b",
+      "bytes": 660
+    },
+    "REPLAY_EXECUTION_v1.json": {
+      "sha256": "c961faf27b92d1e955816a4d5189a4314170566b3ad3c8ece524ea814f28ed7d",
+      "bytes": 435
+    },
+    "REPLAY_OPEN_EVENTS_v1.json": {
+      "sha256": "cb1965e591fe9e0fe2bdd39544fd798b8cf97066b52283c3dd1279c991226cfb",
+      "bytes": 8762
+    },
+    "REPLAY_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "REPLAY_STDOUT_v1.txt": {
+      "sha256": "7e8a29f4ae42847f2f4aec3fef5207033b8c42212b1843f5bc35f92447d5de8c",
+      "bytes": 13627
+    },
+    "RESULT_CONTENT_CHECK_v1.json": {
+      "sha256": "c44aa42dfe42685ef0fd62af88d399f17c52b6ec7629596202f3202e38ba3078",
+      "bytes": 1327
+    },
+    "changed_snapshot_v2/check_metric_kernel_integration_v1.py": {
+      "sha256": "cbd2ae623bdf2960c191d8cf2467c30e47507ca793527906158b67f67066fd7c",
+      "bytes": 4235
+    },
+    "changed_snapshot_v2/docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": {
+      "sha256": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+      "bytes": 27044
+    },
+    "changed_snapshot_v2/logs/runner-cache/scalar_metric_inverse.txt": {
+      "sha256": "bbb656c3e7e3b5a063d890e85992b77a47372349def105333786483e273dcb42",
+      "bytes": 15380
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/canonicalization_v2.json": {
+      "sha256": "af210693f28ee15774e201a74a7453ecd8901c097612fdd824496ff7cab4c5fb",
+      "bytes": 718
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/challenge_sources.py": {
+      "sha256": "c3744b894f398d5a9618ea43ebf6f9baf2322dfdec546de4aa577f375c63c8a0",
+      "bytes": 3815
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/RESULT.json": {
+      "sha256": "9b7b34ecef9c2cb62c01e10a6bb0c3ebacd6cc02d82fd35370796ca10cff88ac",
+      "bytes": 14322
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/coefficient_coupling.py.gz": {
+      "sha256": "76f4c69d0b501f42fb67fdb79f82655d6dbac4ac7fa9d0cc64e5eae06fccee8b",
+      "bytes": 4044
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/coefficient_coupling.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/coefficient_coupling.stdout.gz": {
+      "sha256": "002bd9db7da17800875e9437831536ab04fbcda3c0da356310d4d5ed180aa1ed",
+      "bytes": 1013
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/conditioning_stencil.py.gz": {
+      "sha256": "02651df250cd35eb8f99533c394d7e654d83a0d7080a7f51530b46c13572ed16",
+      "bytes": 1640
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/conditioning_stencil.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/conditioning_stencil.stdout.gz": {
+      "sha256": "81350f594e1d7f4d2eadea7d45e1bb098ca12a15d27540ebebfae4c92d6d8c67",
+      "bytes": 177
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/constraint_raychaudhuri.py.gz": {
+      "sha256": "6b30c1c14f8741aaa2818a7313d5476e220685ce7947980c01487aa0ad5ac0e8",
+      "bytes": 1295
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/constraint_raychaudhuri.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/constraint_raychaudhuri.stdout.gz": {
+      "sha256": "2ecda8b052be6ab2e26175e5d4c49f1b1188a92a2a87281b99b32da2ac81dcb3",
+      "bytes": 361
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/geometry_lapse.py.gz": {
+      "sha256": "04204192a24158339a9f86672daabfd245a9ec5521903b85b696afecfff4e7b4",
+      "bytes": 2871
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/geometry_lapse.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/geometry_lapse.stdout.gz": {
+      "sha256": "1c4ccf43a3d8cb8836074f51acccb77894bbd00a240a332797e05fcce0e5fbb8",
+      "bytes": 886
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/joint_gain_coupling.py.gz": {
+      "sha256": "5be317abe02a205e46c2e8aa0174f0bd7b600bab6e53a93a53b369f63bb0f99d",
+      "bytes": 2927
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/joint_gain_coupling.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/joint_gain_coupling.stdout.gz": {
+      "sha256": "2ffa420dfd1c0882b9f9e8f3efaf77ddb2b2107bc7451e13a6f924af45c73b5d",
+      "bytes": 653
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/kernel_polynomial.py.gz": {
+      "sha256": "75fdf98e1529bb2cae591c9032f7cc15a7e622903f7f5da2e08d9388c38e2a38",
+      "bytes": 1817
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/kernel_polynomial.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/kernel_polynomial.stdout.gz": {
+      "sha256": "c2aed6d6a4d9317ebcc546a4929727a742427bcb34b621b43e8825e19adb5817",
+      "bytes": 531
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/nonsingular_reconstruction.py.gz": {
+      "sha256": "8b1f61978f25eeb16f7f86a08bb348104753443d2969f78d48fca43c684be1fc",
+      "bytes": 1816
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/nonsingular_reconstruction.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/nonsingular_reconstruction.stdout.gz": {
+      "sha256": "8c5df761273c949731f6f0fed4ce0ff12651bde0371b0650191df8d3b90116ef",
+      "bytes": 548
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/photon_mixed_derivative.py.gz": {
+      "sha256": "85f9c25e0f8524cf386e9fb31491cb49f55c04f506f8ebe1808266de945e622a",
+      "bytes": 3024
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/photon_mixed_derivative.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/photon_mixed_derivative.stdout.gz": {
+      "sha256": "4f8c9c557cf2b3bc48447c935a7bede74ae12ab5f573295ed65967c4ce0f0f5c",
+      "bytes": 963
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/planar_geometry.py.gz": {
+      "sha256": "aa66e4eee412f4321a4f56c954107f275dd73593c1d966b1d05983cb427311d1",
+      "bytes": 1816
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/planar_geometry.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/planar_geometry.stdout.gz": {
+      "sha256": "a8a4312e2f61fc108f140a7e99d71ed1e6cef71ffc10f10470c2e11b1d918a17",
+      "bytes": 529
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/spherical_curvature.py.gz": {
+      "sha256": "02a3cd55f75c26446f019bd46cab2ec20e06513e8cad142e1e86ff2867791252",
+      "bytes": 2317
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/spherical_curvature.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/spherical_curvature.stdout.gz": {
+      "sha256": "3c7a3a19a3e12e3749dd0de6f9281882ce568d7724e1562e033a10fb71a9fe38",
+      "bytes": 542
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/transport_characteristic.py.gz": {
+      "sha256": "a12bc6332c580d8720bf34f97095329ec8d024a012f66b78973234edff2b4d20",
+      "bytes": 1323
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/transport_characteristic.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/transport_characteristic.stdout.gz": {
+      "sha256": "3ea918589ffd69e12d2edb8a70fa7df63964ee69da08c7d2f87fe7fb60f4008e",
+      "bytes": 546
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/varying_log_derivative.py.gz": {
+      "sha256": "244a15a0935751b6bffb3441fd3972cc85af849506dc54b2ea2548cf941dbca9",
+      "bytes": 2983
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/varying_log_derivative.stderr.gz": {
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "bytes": 20
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/mutations/varying_log_derivative.stdout.gz": {
+      "sha256": "89d3fb2e064fdbe6af81703d5d2ae20e01989187038d9e980cc285b4b03c4f07",
+      "bytes": 595
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/portable_replay_v1.json": {
+      "sha256": "29ef01aebd54b5c6ade0f3a309dad9c22bbd73ecb45012394d51fa9a1e03ce47",
+      "bytes": 2208
+    },
+    "changed_snapshot_v2/outputs/scalar_metric_inverse/result.json": {
+      "sha256": "ca2bddfe6cf3528a78875930b8c9baf02d346e3c227630bc3c7897cdcbcd23dd",
+      "bytes": 231725
+    },
+    "changed_snapshot_v2/scripts/scalar_metric_inverse.py": {
+      "sha256": "274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708",
+      "bytes": 3819
+    },
+    "changed_snapshot_v2/scripts/scalar_metric_local_kernels.py": {
+      "sha256": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+      "bytes": 3903
+    },
+    "check_integration_algebra_v1.py": {
+      "sha256": "6fde865a216f2ffd1e3a5ae7e77edd41dead5c4d75871e0e791a46a756af4e2f",
+      "bytes": 1659
+    },
+    "final_validation_snapshot_v2/fixed_background_reviewer/MANIFEST_v1.json": {
+      "sha256": "28151dac6391981e3b25bab30154028427dbf15cfd375133fe42d1b7d7a7b76f",
+      "bytes": 9610
+    },
+    "final_validation_snapshot_v2/fixed_background_reviewer/REPORT_v2.md": {
+      "sha256": "8bfd067a86f0cd2bf095f873e7af3a62f775cb563e8b08f5c2051c7fba690131",
+      "bytes": 7058
+    },
+    "final_validation_snapshot_v2/outputs/scalar_metric_inverse/challenge_sources.py": {
+      "sha256": "6ccace685371532141f27fe325de0ec6bd6e382dfad8b8d10301587ffc0372ab",
+      "bytes": 3839
+    },
+    "final_validation_snapshot_v2/outputs/scalar_metric_inverse/mutations/RESULT.json": {
+      "sha256": "65042bca919a7c99139136765edacc073f6462b527a60c4e8f5aa2649b9f1e7b",
+      "bytes": 14320
+    },
+    "isolated_replay_v1/docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": {
+      "sha256": "2151e6773f5cc2eee70c01fcb0964ec43d749feb37710435b30ddcabd9e86307",
+      "bytes": 22643
+    },
+    "isolated_replay_v1/outputs/scalar_metric_inverse/result.json": {
+      "sha256": "74b5f595acd3dc85bbcbc1f32068987506efe8b85b274c1a5e3c3d07a60142d2",
+      "bytes": 227493
+    },
+    "isolated_replay_v1/scripts/scalar_metric_coefficients.py": {
+      "sha256": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+      "bytes": 10415
+    },
+    "isolated_replay_v1/scripts/scalar_metric_conditioning.py": {
+      "sha256": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+      "bytes": 4297
+    },
+    "isolated_replay_v1/scripts/scalar_metric_constraints.py": {
+      "sha256": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+      "bytes": 2589
+    },
+    "isolated_replay_v1/scripts/scalar_metric_fixed_background.py": {
+      "sha256": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+      "bytes": 5409
+    },
+    "isolated_replay_v1/scripts/scalar_metric_geometry.py": {
+      "sha256": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+      "bytes": 7475
+    },
+    "isolated_replay_v1/scripts/scalar_metric_inverse.py": {
+      "sha256": "4b66a051265f0e9643fa70d8e1e0cc1fd6b21bd5a3d61bd95946b9934002d3d3",
+      "bytes": 3686
+    },
+    "isolated_replay_v1/scripts/scalar_metric_joint_gain.py": {
+      "sha256": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+      "bytes": 6514
+    },
+    "isolated_replay_v1/scripts/scalar_metric_photon_map.py": {
+      "sha256": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+      "bytes": 8163
+    },
+    "isolated_replay_v1/scripts/scalar_metric_transport.py": {
+      "sha256": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+      "bytes": 3145
+    },
+    "isolated_replay_v1/scripts/scalar_metric_varying_coupling.py": {
+      "sha256": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01",
+      "bytes": 7676
+    },
+    "replay_harness_v1.py": {
+      "sha256": "93f5420a2727107a1ab1513bf332dfa9d5395a4df86e47958a0e24ccd91b718c",
+      "bytes": 722
+    },
+    "snapshot_v1/archived_root/METRIC_FIXED_ACTION_CLOSURE_CONTROLS_v1.json": {
+      "sha256": "8f8c9e5e7b52f2363adc2c9c551c0e5fbc799000f3e91f07989e9413f6b40731",
+      "bytes": 4286
+    },
+    "snapshot_v1/archived_root/METRIC_READOUT_CONTROLS_v1.json": {
+      "sha256": "b0a4c8b8b23ef555f6c33da577b93da63805bb705e3c299650332c7b45b13963",
+      "bytes": 6757
+    },
+    "snapshot_v1/archived_root/METRIC_READOUT_NUMERICS_v3.json": {
+      "sha256": "c260ce358697434d206acb0dbb6f8b290635c5d4e2739c2e9f06eb391a7c1a1f",
+      "bytes": 24978
+    },
+    "snapshot_v1/archived_root/METRIC_REDSHIFT_TRANSPORT_CONTROLS_v1.json": {
+      "sha256": "f96367d7547732eb5c75086b123bdb430861479ffbde78aecf84663da1bdda0e",
+      "bytes": 3167
+    },
+    "snapshot_v1/archived_root/MODE_INVERSE_CONTROLS_v1.json": {
+      "sha256": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+      "bytes": 95954
+    },
+    "snapshot_v1/archived_root/MODE_INVERSE_JETS_v1.json": {
+      "sha256": "bf5f2435c854dd55471de850cad11a1948320653a4f162b00879653f16d08492",
+      "bytes": 40177
+    },
+    "snapshot_v1/archived_root/MODE_JOINT_GAIN_CONTROLS_v1.json": {
+      "sha256": "53e52a441a1069ea0ecfedf388ee9dd64173738edba732efbc4b78e8f4458eb0",
+      "bytes": 17431
+    },
+    "snapshot_v1/archived_root/SCALAR_RESPONSE_CLOSURE_CONTROLS_v1.json": {
+      "sha256": "ba5bf0c77e0f4e588bb0d6173e1f0ce2cc819d6f180a713106366021440c84ca",
+      "bytes": 2611
+    },
+    "snapshot_v1/archived_root/SCALAR_RESPONSE_CONTROLS_v1.json": {
+      "sha256": "fa2abf2b924dfd2749eea3354e05d9fa89a8738788bc7e6fa8b9a96f545bc0a8",
+      "bytes": 6192
+    },
+    "snapshot_v1/archived_root/check_metric_fixed_action_closure_v1.py": {
+      "sha256": "157d34a955fb2367cd523ddf760da6d27c803f6532d8160a23500949d9ee9b00",
+      "bytes": 6048
+    },
+    "snapshot_v1/archived_root/check_metric_readout_numerics_v3.py": {
+      "sha256": "d03d218fa43488a9d0c59424b72a561990c6765c7104af95af14ae14103bb9d2",
+      "bytes": 4678
+    },
+    "snapshot_v1/archived_root/check_metric_readout_v1.py": {
+      "sha256": "512e41145cbaf8c9320b4ee41abffedada9bd02777aee7656e447a9642b20e2a",
+      "bytes": 8883
+    },
+    "snapshot_v1/archived_root/check_metric_redshift_transport_v1.py": {
+      "sha256": "1bac771ed115e8ee87e58e2c30b05c06019ec2478ad70c96ab6bcc413c1463f6",
+      "bytes": 3763
+    },
+    "snapshot_v1/archived_root/check_mode_inverse_jets_v1.py": {
+      "sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "bytes": 8456
+    },
+    "snapshot_v1/archived_root/check_mode_inverse_v1.py": {
+      "sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "bytes": 11558
+    },
+    "snapshot_v1/archived_root/check_mode_joint_gain_v1.py": {
+      "sha256": "44d5bd656fa1e42f1f8730c47c638d418ec2c9bb4f16dbedc2afce996541ab91",
+      "bytes": 6831
+    },
+    "snapshot_v1/archived_root/check_scalar_response_closure_v1.py": {
+      "sha256": "129d7573f02e172c6e9407e11429c21b317a8d3f4dd55b3527df4970b92df28f",
+      "bytes": 4493
+    },
+    "snapshot_v1/archived_root/check_scalar_response_v1.py": {
+      "sha256": "72acb13dba4ad125707e3b70ce37c93cc6ce3c05c1b4997ae268b0f10a4f8ed6",
+      "bytes": 8573
+    },
+    "snapshot_v1/cache_attempt01_failure.json": {
+      "sha256": "686e6684f6758f09bff10065cc4285ae1e28c5c920edd748f109639ec0f3cd68",
+      "bytes": 1177
+    },
+    "snapshot_v1/canonicalization.json": {
+      "sha256": "1d3c2a5682782cd85712137e99fc29972a7ee220e13420fb9a02bfdd52f2884f",
+      "bytes": 4906
+    },
+    "snapshot_v1/canonicalization_failure_v1.json": {
+      "sha256": "3b53c859a9dd228a04651fe4feaaea3a0b9fcfa5871c3c8c7626b128bbd8fea3",
+      "bytes": 496
+    },
+    "snapshot_v1/docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": {
+      "sha256": "2151e6773f5cc2eee70c01fcb0964ec43d749feb37710435b30ddcabd9e86307",
+      "bytes": 22643
+    },
+    "snapshot_v1/prior_reviews/independent_metric_readout/METRIC_READOUT_REVIEW_v1.md": {
+      "sha256": "b0159c5034e5efc28d3f84d861197ae90d2a0a2ee2ef62a9f40d45e6831b66b3",
+      "bytes": 10666
+    },
+    "snapshot_v1/prior_reviews/independent_metric_readout/SOURCE_MANIFEST_v1.json": {
+      "sha256": "01b1e8c805838868d6d5819d00e11de7f971a961cbe1a8d4841e66d9f671fe30",
+      "bytes": 8887
+    },
+    "snapshot_v1/prior_reviews/independent_scalar_response/RESPONSE_REVIEW_v1.md": {
+      "sha256": "fbaa4c946b57cd8785068615c22ade9fe50449f22a59e6171ce54ca56dcd901a",
+      "bytes": 6803
+    },
+    "snapshot_v1/prior_reviews/independent_scalar_response/SOURCE_MANIFEST_v1.json": {
+      "sha256": "8127255f0e6c9a748b3d96fe4889394eed4c49f7543ecd09ab82d0f12fa2edce",
+      "bytes": 6626
+    },
+    "snapshot_v1/result.json": {
+      "sha256": "74b5f595acd3dc85bbcbc1f32068987506efe8b85b274c1a5e3c3d07a60142d2",
+      "bytes": 227493
+    },
+    "snapshot_v1/result_attempt01.json": {
+      "sha256": "74b5f595acd3dc85bbcbc1f32068987506efe8b85b274c1a5e3c3d07a60142d2",
+      "bytes": 227493
+    },
+    "snapshot_v1/scripts/scalar_metric_coefficients.py": {
+      "sha256": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+      "bytes": 10415
+    },
+    "snapshot_v1/scripts/scalar_metric_conditioning.py": {
+      "sha256": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+      "bytes": 4297
+    },
+    "snapshot_v1/scripts/scalar_metric_constraints.py": {
+      "sha256": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+      "bytes": 2589
+    },
+    "snapshot_v1/scripts/scalar_metric_fixed_background.py": {
+      "sha256": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+      "bytes": 5409
+    },
+    "snapshot_v1/scripts/scalar_metric_geometry.py": {
+      "sha256": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+      "bytes": 7475
+    },
+    "snapshot_v1/scripts/scalar_metric_inverse.py": {
+      "sha256": "4b66a051265f0e9643fa70d8e1e0cc1fd6b21bd5a3d61bd95946b9934002d3d3",
+      "bytes": 3686
+    },
+    "snapshot_v1/scripts/scalar_metric_joint_gain.py": {
+      "sha256": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+      "bytes": 6514
+    },
+    "snapshot_v1/scripts/scalar_metric_photon_map.py": {
+      "sha256": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+      "bytes": 8163
+    },
+    "snapshot_v1/scripts/scalar_metric_transport.py": {
+      "sha256": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+      "bytes": 3145
+    },
+    "snapshot_v1/scripts/scalar_metric_varying_coupling.py": {
+      "sha256": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01",
+      "bytes": 7676
+    },
+    "snapshot_v1/source_freeze_v1.json": {
+      "sha256": "512894bfc3b0351357c211d2f53462f3766914e90a63ef235a48597f8110c3b4",
+      "bytes": 1503
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-10-15T21:49:07.166007+00:00",
+  "science_commit": "414856e9c2195680af563678a0844af71de3ddfb",
+  "fixed_deadline": "2026-10-15T21:48:44Z",
+  "report_sha256": "b76582e1f4907064d467764d81bb3a77cb547d4d0d2a3bc030c111f6f02c2876",
+  "scope": "Existing scientific report finalized with actual deadline closure; narrow final-delta review and document delivery remain.",
+  "closure_receipts": {
+    "DEADLINE_SHUTDOWN_v1.json": "8a96220a77416a453ef491109076045c048587902790fdba251812aef433278d",
+    "HEARTBEAT_RETIREMENT_v1.json": "c3a744f2e9112da997be195130ef348cd1815e1e90408ea1722282f7d0308acf"
+  }
+}

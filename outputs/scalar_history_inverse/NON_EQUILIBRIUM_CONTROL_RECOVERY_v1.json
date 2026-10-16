@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-16T08:50:14.205759+00:00",
+  "v1_source_and_output_preserved": true,
+  "v1_passed": 42,
+  "v1_failed": 2,
+  "corrections": [
+    {
+      "test": "scale-factor variation",
+      "cause": "Checker subtracted Friedmann residual instead of adding it to the scale-factor Euler-Lagrange residual. The action variation and note equations were unchanged."
+    },
+    {
+      "test": "fixed-density curvature fixture",
+      "cause": "SymPy dictionary substitution replaced the parameter c before substituting phi=c log t, leaving a new c in the expression; v2 substitutes the trajectory then parameter values. Added explicit general and concrete fixed-rho versus fixed-r curvature difference controls."
+    }
+  ],
+  "v1_runner_sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+  "v1_output_sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+  "scientific_conclusion": "No operational or checker failure is interpreted as a physical result; current source proof still requires focused independent examination."
+}

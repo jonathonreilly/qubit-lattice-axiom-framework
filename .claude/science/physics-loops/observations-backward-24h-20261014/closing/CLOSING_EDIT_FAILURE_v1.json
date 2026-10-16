@@ -1,0 +1,5 @@
+{
+  "failure": "Python parser rejected a triple-single-quoted prose literal containing the N third-derivative notation.",
+  "effect": "The script never executed; no file writes occurred.",
+  "repair": "Use a triple-double-quoted literal. No science formula, control or result changed."
+}

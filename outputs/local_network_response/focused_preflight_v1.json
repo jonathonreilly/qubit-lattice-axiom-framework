@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-16T02:53:06.110346+00:00",
+  "python_files_compiled": [
+    "scripts/local_network_response.py",
+    "scripts/local_network_response_math.py",
+    "outputs/local_network_response/independent/check.py"
+  ],
+  "json_files_parsed": 13,
+  "frozen_sources_and_evidence_verified": true,
+  "citation_topology_delta": {
+    "added": [
+      "local_network_intervention_response_note_2026-10-16"
+    ],
+    "removed": [],
+    "rewired": [],
+    "edge_count_unchanged": true
+  },
+  "discovered_packet": {
+    "claim_id": "local_network_intervention_response_note_2026-10-16",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/local_network_response_math.py"
+    ],
+    "note_hash": "405eb15fba1d42d8f24f39500ba14375dda3d926b3f0c50919b84c1e954c4699",
+    "path": "docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md",
+    "runner_path": "scripts/local_network_response.py",
+    "title": "Conditional response to an identified local network intervention"
+  },
+  "vocabulary_stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to outputs/local_network_response/preflight_prose_status.json\n",
+  "shared_integrated_landing_gates": "pending; not claimed passed",
+  "scope": "Focused author preflight; no audit verdict."
+}

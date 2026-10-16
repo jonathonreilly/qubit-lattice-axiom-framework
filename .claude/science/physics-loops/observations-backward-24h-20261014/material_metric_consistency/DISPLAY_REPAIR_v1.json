@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-15T20:54:35.699894+00:00",
+  "scope": "Three historical/current label corrections only; no canonical source, assumptions, equations or numeric results changed.",
+  "changes": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/REVIEW_RECORD_v1.md",
+      "old_sha256": "898a8673c6f4b99cd505bcfef39fb80167b741a13d8f8d5c4f96e25b9936250b",
+      "new_sha256": "25e7dcd22a0ce67101b677baaa2ccadf368e21af9f8f32175f89477f0920e76d",
+      "replacements": [
+        [
+          "The final guarded primary run reports",
+          "The pre-formatting v3 guarded primary run reported"
+        ],
+        [
+          "CANONICAL_BINDING_v3.json binds every current source, declared input, output and cache. SOURCE_PREFLIGHT_v2.json reports fresh source/cache",
+          "CANONICAL_BINDING_v3.json binds the pre-formatting scientific source, declared input, output and cache. SOURCE_PREFLIGHT_v2.json recorded fresh pre-formatting source/cache"
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CONFORMANCE_v1.md",
+      "old_sha256": "25aa54794f144b3e47651dd5c6b2d2045c0e746fcbebbf62b7de621feaac049a",
+      "new_sha256": "afaebbee2984e7799d856a5eb677add2a66467557307ccdabeba0541c96174ff",
+      "replacements": [
+        [
+          "The final runtime envelope and source/input fingerprint are preserved in CANONICAL_BINDING_v3.json.",
+          "The pre-formatting runtime envelope and source/input fingerprint are preserved in CANONICAL_BINDING_v3.json; the final formatting-only refresh is v4, described below."
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/HANDOFF.md",
+      "old_sha256": "d5aef336e2ae7642183e1313e5fc37ff4de2b6e47453bb0777c58ae380d28ae5",
+      "new_sha256": "89f00c133ff034c840cec898f161ec680372bc84a37438929c133bcec37b71f3",
+      "replacements": [
+        [
+          "Current CANONICAL_BINDING_v3.json binds89passing/0failing",
+          "Before the formatting-only repair, CANONICAL_BINDING_v3.json bound89passing/0failing"
+        ]
+      ]
+    }
+  ],
+  "review_report_sha256": "8bb7c1d0a5d61b22fdec43c8df4715cd377b53227f92dfdaa3d4aa9675cee9e8",
+  "review_identity_sha256": "e9fb3cb594d5cdcde028fae0b17d8878bd6db2ca5a7f49c38a5ec8931cf78dbf",
+  "original_mechanical_result": "1240 passes/2 checker-assumption failures, preserved; corrected replacement-semantics3 passes/0 failures",
+  "remaining_scientific_findings": []
+}

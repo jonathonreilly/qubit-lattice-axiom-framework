@@ -1,0 +1,115 @@
+{
+  "checked_at_utc": "2026-10-16T09:33:25.683080+00:00",
+  "scope": "Author-side syntax, local-link and frozen-source checks; no formal audit or integrated landing validation",
+  "python_files_parsed": [
+    "scripts/scalar_history_inverse.py",
+    "scripts/scalar_history_inverse_math.py",
+    "outputs/scalar_history_inverse/replay_bundle.py",
+    "outputs/scalar_history_inverse/check_mutations.py",
+    "outputs/scalar_history_inverse/check_mutations_attempt01.py",
+    "outputs/scalar_history_inverse/independent/replay_original_unit_bounded_v1.py",
+    "outputs/scalar_history_inverse/independent/check_canonical_integration_v2.py",
+    "outputs/scalar_history_inverse/independent/metadata_snapshot_attempt01.py",
+    "outputs/scalar_history_inverse/independent/independent_exact_controls_v1.py",
+    "outputs/scalar_history_inverse/independent/independent_additions_v1.py",
+    "outputs/scalar_history_inverse/independent/observe_canonical_replay_v1.py",
+    "outputs/scalar_history_inverse/independent/run_independent_bounded_v1.py",
+    "outputs/scalar_history_inverse/independent/metadata_snapshot_attempt02.py",
+    "outputs/scalar_history_inverse/independent/run_additions_bounded_v1.py",
+    "outputs/scalar_history_inverse/independent/check_canonical_integration_v1.py",
+    "outputs/scalar_history_inverse/independent/original_replay/check_nonequilibrium_scalar_v1.py",
+    "outputs/scalar_history_inverse/independent/original_replay/check_nonequilibrium_scalar_v2.py",
+    "outputs/scalar_history_inverse/independent/canonical_attempt01_repository/scripts/scalar_history_inverse.py",
+    "outputs/scalar_history_inverse/independent/canonical_attempt01_repository/scripts/scalar_history_inverse_math.py",
+    "outputs/scalar_history_inverse/independent/canonical_attempt02_repository/scripts/scalar_history_inverse.py",
+    "outputs/scalar_history_inverse/independent/canonical_attempt02_repository/scripts/scalar_history_inverse_math.py"
+  ],
+  "json_files_parsed": [
+    "docs/audit/data/citation_graph_manifest.json",
+    "outputs/scalar_history_inverse/prior_art_source_record.json",
+    "outputs/scalar_history_inverse/NON_EQUILIBRIUM_REVIEW_INPUT_v1.json",
+    "outputs/scalar_history_inverse/independent_bundle_verification.json",
+    "outputs/scalar_history_inverse/result.json",
+    "outputs/scalar_history_inverse/portable_replay.json",
+    "outputs/scalar_history_inverse/mutation_attempt01.json",
+    "outputs/scalar_history_inverse/mutations.json",
+    "outputs/scalar_history_inverse/packet_label_recovery.json",
+    "outputs/scalar_history_inverse/read_role_clarification.json",
+    "outputs/scalar_history_inverse/citation_manifest_check.json",
+    "outputs/scalar_history_inverse/review_clarifications.json",
+    "outputs/scalar_history_inverse/NON_EQUILIBRIUM_CONTROL_RECOVERY_v1.json",
+    "outputs/scalar_history_inverse/independent/independent_attempt01.run.json",
+    "outputs/scalar_history_inverse/independent/additions_attempt01.run.json",
+    "outputs/scalar_history_inverse/independent/author_original_v2_attempt01.run.json",
+    "outputs/scalar_history_inverse/independent/additions_attempt01.stdout.json",
+    "outputs/scalar_history_inverse/independent/AUTHOR_ORIGINAL_EXPOSURE_v1.json",
+    "outputs/scalar_history_inverse/independent/author_original_v1_attempt01.run.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt01.read_closure.json",
+    "outputs/scalar_history_inverse/independent/NEUTRAL_CONTRACT_BEFORE_EXPOSURE_v1.json",
+    "outputs/scalar_history_inverse/independent/independent_attempt01.stdout.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt02.read_closure.json",
+    "outputs/scalar_history_inverse/independent/CANONICAL_SOURCE_SNAPSHOT_v2.json",
+    "outputs/scalar_history_inverse/independent/ORIGINAL_STAGE_AND_ADDITIONS_FREEZE_v1.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt02.run.json",
+    "outputs/scalar_history_inverse/independent/MANIFEST_v1.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt01.extraction.json",
+    "outputs/scalar_history_inverse/independent/CANONICAL_SOURCE_SNAPSHOT_v3.json",
+    "outputs/scalar_history_inverse/independent/metadata_snapshot_attempt01.run.json",
+    "outputs/scalar_history_inverse/independent/INDEPENDENT_OUTPUT_FREEZE_v1.json",
+    "outputs/scalar_history_inverse/independent/FINAL_SOURCE_BINDING_v1.json",
+    "outputs/scalar_history_inverse/independent/CANONICAL_NOTE_CHANGE_v1.json",
+    "outputs/scalar_history_inverse/independent/AUTHOR_V1_TO_V2_DIFF_v1.json",
+    "outputs/scalar_history_inverse/independent/CANONICAL_SOURCE_SNAPSHOT_v1.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt02.extraction.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt01.run.json",
+    "outputs/scalar_history_inverse/independent/CANONICAL_PRIMARY_METADATA_CHANGE_v1.json",
+    "outputs/scalar_history_inverse/independent/metadata_snapshot_attempt02.run.json",
+    "outputs/scalar_history_inverse/independent/PRE_CODE_FREEZE_v1.json",
+    "outputs/scalar_history_inverse/independent/original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json",
+    "outputs/scalar_history_inverse/independent/original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt01_repository/outputs/scalar_history_inverse/result.json",
+    "outputs/scalar_history_inverse/independent/canonical_attempt02_repository/outputs/scalar_history_inverse/result.json"
+  ],
+  "local_markdown_links_checked": [
+    [
+      "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "../scripts/scalar_history_inverse.py"
+    ],
+    [
+      "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "../scripts/scalar_history_inverse_math.py"
+    ],
+    [
+      "outputs/scalar_history_inverse/REPRODUCE.md",
+      "independent/REPRODUCTION_v1.md"
+    ],
+    [
+      "outputs/scalar_history_inverse/independent/canonical_attempt01_repository/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "../scripts/scalar_history_inverse.py"
+    ],
+    [
+      "outputs/scalar_history_inverse/independent/canonical_attempt01_repository/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "../scripts/scalar_history_inverse_math.py"
+    ],
+    [
+      "outputs/scalar_history_inverse/independent/canonical_attempt02_repository/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "../scripts/scalar_history_inverse.py"
+    ],
+    [
+      "outputs/scalar_history_inverse/independent/canonical_attempt02_repository/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "../scripts/scalar_history_inverse_math.py"
+    ]
+  ],
+  "vocabulary": {
+    "files": 15,
+    "fix_violations": 0,
+    "report_only_violations": 0
+  },
+  "independent_manifest_sha256": "1fcb1cb4316c71b16b1d999e2e3bee8c0eb3f3c1b5a0ceab390bb731dafd5e00",
+  "independent_files_verified": 69,
+  "final_source_pins_verified": 6,
+  "canonical_passed": 58,
+  "canonical_failed": 0,
+  "portable_replay_cases": 5,
+  "shared_landing_validation": "pending"
+}

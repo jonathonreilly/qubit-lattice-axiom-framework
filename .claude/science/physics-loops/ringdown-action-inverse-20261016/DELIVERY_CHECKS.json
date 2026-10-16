@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-16T05:53:14.767808+00:00",
+  "vocabulary": "pass; no canonical source change",
+  "whitespace": "pass",
+  "cache_freshness": "fresh",
+  "frozen_bindings_verified": 57,
+  "historical_diff_gzip_mapping_verified": true,
+  "staged_scope": "one canonical note, primary/imported helper, cache, exact support evidence, unit pack and generated citation manifest only",
+  "staged_files_before_this_receipt": 97,
+  "source_freeze": "CANONICAL_FROZEN_v2.json",
+  "shared_integrated_main_pipeline": "pending; not run",
+  "shared_strict_lint": "pending; not run",
+  "shared_changed_evidence_landing_gates": "pending; not run",
+  "formal_audit": "not invoked",
+  "merge": "not requested"
+}

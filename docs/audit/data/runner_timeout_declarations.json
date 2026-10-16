@@ -390,6 +390,36 @@
       "source_sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa",
       "timeout_sec": 180,
       "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_full_field_metric.py": {
+      "source_sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+      "timeout_sec": 120,
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
+    },
+    "scripts/scalar_vacuum_metric_weak.py": {
+      "source_sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+      "timeout_sec": 180,
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
+    },
+    "scripts/scalar_vacuum_metric_inverse.py": {
+      "source_sha256": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
+      "timeout_sec": 180,
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
+    },
+    "scripts/scalar_observation_inverse_math.py": {
+      "source_sha256": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44",
+      "timeout_sec": 120,
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
+    },
+    "scripts/ringdown_action_math.py": {
+      "source_sha256": "834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df",
+      "timeout_sec": 120,
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
+    },
+    "scripts/scalar_history_inverse_math.py": {
+      "source_sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+      "timeout_sec": 120,
+      "reason": "Explicit source-bound cap for imported reconstruction helper; covered by the enclosing primary execution limit. No claim or source alteration."
     }
   }
 }

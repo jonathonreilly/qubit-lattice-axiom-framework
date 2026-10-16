@@ -1,0 +1,870 @@
+{
+  "counting_scope": "Controls overlap. The separate-gain unit repeats the original-action fixture; totals are not independent experiments.",
+  "failed": 0,
+  "input_roles": {
+    "computed_inputs": "Original-action local fields, observer-origin integrals and declared synthetic derivative perturbations",
+    "external_scientific_data": "None",
+    "integrity_reads": [
+      "scripts/scalar_photon_calibration.py",
+      "docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "scripts/scalar_photon_reception_core.py",
+      "scripts/scalar_photon_separate_gains.py",
+      "scripts/scalar_photon_calibration_controls.py",
+      "scripts/scalar_photon_weak_controls.py"
+    ]
+  },
+  "scope": "Conditional mathematical identification and constructed diagnostics; no empirical validation",
+  "source_sha256": {
+    "docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631",
+    "scripts/scalar_photon_calibration.py": "c22c88bc65a8530301904fa648e154ba841c89c68948a16f7431be6d32b4e1a8",
+    "scripts/scalar_photon_calibration_controls.py": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+    "scripts/scalar_photon_reception_core.py": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+    "scripts/scalar_photon_separate_gains.py": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+    "scripts/scalar_photon_weak_controls.py": "86c759edce2c57f93689352183fdfbf57bb76e3b02cab55a8e38f45a6b07e6d3"
+  },
+  "units": {
+    "common_reception": {
+      "checks": [
+        {
+          "name": "generic_gained_commutator",
+          "pass": true
+        },
+        {
+          "name": "generic_reception_beta_constraint",
+          "pass": true
+        },
+        {
+          "name": "complete_twelve_column_expansion",
+          "pass": true
+        },
+        {
+          "name": "proposed_beta_coefficient",
+          "pass": true
+        },
+        {
+          "name": "proposed_C_coefficient",
+          "pass": true
+        },
+        {
+          "name": "proposed_e_coefficient",
+          "pass": true
+        },
+        {
+          "name": "background_Friedmann",
+          "pass": true
+        },
+        {
+          "name": "background_Raychaudhuri",
+          "pass": true
+        },
+        {
+          "name": "background_scalar",
+          "pass": true
+        },
+        {
+          "name": "background_dust",
+          "pass": true
+        },
+        {
+          "name": "generic_original_dust_continuity",
+          "pass": true
+        },
+        {
+          "name": "generic_original_scalar",
+          "pass": true
+        },
+        {
+          "name": "generic_original_spatial_pressure",
+          "pass": true
+        },
+        {
+          "name": "eigenmode_0",
+          "pass": true
+        },
+        {
+          "name": "eigenmode_-3/2",
+          "pass": true
+        },
+        {
+          "name": "eigenmode_-2",
+          "pass": true
+        },
+        {
+          "name": "eigenmode_-5/2",
+          "pass": true
+        },
+        {
+          "name": "n=0/original_Euler",
+          "pass": true
+        },
+        {
+          "name": "n=0/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n=0/regular_harmonic",
+          "pass": true
+        },
+        {
+          "name": "n=0/path_identity",
+          "pass": true
+        },
+        {
+          "name": "n=0/path_derivative",
+          "pass": true
+        },
+        {
+          "name": "n=0/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n=0/physical_twelve_column_identity",
+          "pass": true
+        },
+        {
+          "name": "n=3/original_Euler",
+          "pass": true
+        },
+        {
+          "name": "n=3/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n=3/regular_harmonic",
+          "pass": true
+        },
+        {
+          "name": "n=3/path_identity",
+          "pass": true
+        },
+        {
+          "name": "n=3/path_derivative",
+          "pass": true
+        },
+        {
+          "name": "n=3/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n=3/physical_twelve_column_identity",
+          "pass": true
+        },
+        {
+          "name": "n=4/original_Euler",
+          "pass": true
+        },
+        {
+          "name": "n=4/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n=4/regular_harmonic",
+          "pass": true
+        },
+        {
+          "name": "n=4/path_identity",
+          "pass": true
+        },
+        {
+          "name": "n=4/path_derivative",
+          "pass": true
+        },
+        {
+          "name": "n=4/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n=4/physical_twelve_column_identity",
+          "pass": true
+        },
+        {
+          "name": "n=5/original_Euler",
+          "pass": true
+        },
+        {
+          "name": "n=5/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n=5/regular_harmonic",
+          "pass": true
+        },
+        {
+          "name": "n=5/path_identity",
+          "pass": true
+        },
+        {
+          "name": "n=5/path_derivative",
+          "pass": true
+        },
+        {
+          "name": "n=5/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n=5/physical_twelve_column_identity",
+          "pass": true
+        },
+        {
+          "name": "candidate_rank_twelve_attained",
+          "pass": true
+        },
+        {
+          "name": "actual_observed_coefficient_recovery",
+          "pass": true
+        },
+        {
+          "name": "recovered_gain_background",
+          "pass": true
+        }
+      ],
+      "details": {
+        "failures": {},
+        "fixture": {
+          "augmented_rank": 12,
+          "data_role": "Exact constructed original-action solutions; no observed arrays",
+          "eigenvectors": {
+            "0": [
+              "1",
+              "5/2",
+              "0",
+              "-1"
+            ],
+            "3": [
+              "1",
+              "-1/5",
+              "3/10",
+              "-2/5"
+            ],
+            "4": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "5": [
+              "1",
+              "-5/3",
+              "25/6",
+              "2/3"
+            ]
+          },
+          "minor_determinant": "-1958086094738150900811956224/29521763454558375",
+          "mode_ids": [
+            {
+              "ell": 2,
+              "n": 0
+            },
+            {
+              "ell": 3,
+              "n": 3
+            },
+            {
+              "ell": 4,
+              "n": 4
+            },
+            {
+              "ell": 5,
+              "n": 5
+            },
+            {
+              "ell": 6,
+              "n": 0
+            },
+            {
+              "ell": 7,
+              "n": 3
+            },
+            {
+              "ell": 8,
+              "n": 4
+            },
+            {
+              "ell": 9,
+              "n": 5
+            },
+            {
+              "ell": 10,
+              "n": 0
+            },
+            {
+              "ell": 11,
+              "n": 3
+            },
+            {
+              "ell": 12,
+              "n": 4
+            },
+            {
+              "ell": 13,
+              "n": 5
+            }
+          ],
+          "point": {
+            "eta": -2,
+            "r": 1,
+            "t": 1,
+            "u": -1
+          },
+          "rank": 12,
+          "recovered": {
+            "C": "1/2",
+            "G": "1",
+            "R": "1/2",
+            "beta": "1/10",
+            "d": "2",
+            "e": "4",
+            "q": "5/2"
+          },
+          "rows": 48,
+          "selected_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "source_gain": "(u+11)/10",
+          "theta_at_point": [
+            "34/5",
+            "2/5",
+            "721/25",
+            "2",
+            "176/5",
+            "2484/25",
+            "19/5",
+            "1014/25",
+            "6024/125",
+            "-2/5",
+            "-16/25",
+            "77/125"
+          ]
+        }
+      },
+      "failed": 0,
+      "passed": 48
+    },
+    "conditioning_and_omission": {
+      "checks": [
+        {
+          "name": "actual_one_shell_exact_common_rank",
+          "pass": true
+        },
+        {
+          "name": "noiseless_numerical_recovery",
+          "pass": true
+        },
+        {
+          "name": "scaled_perturbation_bound_1e-12",
+          "pass": true
+        },
+        {
+          "name": "scaled_perturbation_bound_1e-09",
+          "pass": true
+        },
+        {
+          "name": "scaled_perturbation_bound_1e-06",
+          "pass": true
+        },
+        {
+          "name": "omission_exactly_survives_one_shell_fit",
+          "pass": true
+        },
+        {
+          "name": "omission_is_bias_not_rejection_by_known_truth",
+          "pass": true
+        },
+        {
+          "name": "omission_rejected_by_inferred_cross_shell_homogeneity",
+          "pass": true
+        },
+        {
+          "name": "omission_rejected_by_Raychaudhuri",
+          "pass": true
+        },
+        {
+          "name": "omission_rejected_by_scalar_background",
+          "pass": true
+        },
+        {
+          "name": "omission_rejected_by_bare_dust_background",
+          "pass": true
+        },
+        {
+          "name": "omission_rejected_by_coefficient_k_consistency",
+          "pass": true
+        }
+      ],
+      "details": {
+        "data_role": "Constructed original-action controls. Derivative-level perturbations, not primitive noise or observed data.",
+        "limits": "The unused angular omission test fails to detect a wrong reconstruction; added cross-shell/original-residual checks are explicitly adaptive. No all-errors robustness claim.",
+        "noise_cases": [
+          {
+            "epsilon": 0.0,
+            "input_error_bound": 0.0,
+            "recovered_beta": 0.09999999999557249,
+            "relative_coefficient_error": 4.135952153369904e-12,
+            "scaled_actual_error": 2.3150108919118275e-17,
+            "unused_angular_relative_residual": 2.2925568485984767e-15
+          },
+          {
+            "epsilon": 1e-12,
+            "input_error_bound": 1.3798270217006662e-11,
+            "recovered_beta": 0.09999999354456993,
+            "relative_coefficient_error": 6.099292917403767e-08,
+            "scaled_actual_error": 9.670158212511353e-13,
+            "unused_angular_relative_residual": 4.798376082387361e-12
+          },
+          {
+            "epsilon": 1e-09,
+            "input_error_bound": 1.3808337673522533e-08,
+            "recovered_beta": 0.099993523692786,
+            "relative_coefficient_error": 6.091190727928597e-05,
+            "scaled_actual_error": 9.657190456615251e-10,
+            "unused_angular_relative_residual": 4.798422663036198e-09
+          },
+          {
+            "epsilon": 1e-06,
+            "input_error_bound": 5.106960296872525e-05,
+            "recovered_beta": 0.06565212613435491,
+            "relative_coefficient_error": 0.03508328130666909,
+            "scaled_actual_error": 5.339979253533014e-07,
+            "unused_angular_relative_residual": 4.706587956280546e-06
+          }
+        ],
+        "omission_cross_shell": {
+          "C_difference": "20/9999",
+          "e_difference": "40/9999"
+        },
+        "omission_one_shell_coefficients": [
+          "34/5",
+          "2/5",
+          "721/25",
+          "2",
+          "176/5",
+          "2489/25",
+          "19/5",
+          "1014/25",
+          "12263/250",
+          "0",
+          "0",
+          "0"
+        ],
+        "omission_original_residuals": {
+          "Raychaudhuri": "-3/5",
+          "bare_dust_background": "-1/50",
+          "coefficient_k_consistency": "-16/65",
+          "scalar_background": "127*sqrt(65)/650"
+        },
+        "protocol": "24 solid harmonics, 48 common-shell Gauss-Legendre angles, alternating train/unused rows; frozen baseline column norms; seed2026101607.",
+        "scaled_condition_number": 729814.6187806218,
+        "scaled_singular_values": [
+          2.813098336981457,
+          1.814746575299505,
+          0.8052963655172038,
+          0.2735277766967672,
+          0.21552557234244588,
+          0.14897309955810797,
+          0.028142328230382086,
+          0.018233549266065373,
+          0.00916648042408146,
+          0.0004420501988460485,
+          5.917630488353713e-05,
+          3.854538213665269e-06
+        ]
+      },
+      "failed": 0,
+      "passed": 12
+    },
+    "primitive_weak_residual": {
+      "checks": [
+        {
+          "name": "adjoint_time",
+          "pass": true
+        },
+        {
+          "name": "adjoint_characteristic",
+          "pass": true
+        },
+        {
+          "name": "adjoint_path",
+          "pass": true
+        },
+        {
+          "name": "adjoint_lensing",
+          "pass": true
+        },
+        {
+          "name": "vanishing_boundary_traces_u",
+          "pass": true
+        },
+        {
+          "name": "vanishing_boundary_traces_r",
+          "pass": true
+        },
+        {
+          "name": "nonzero_operator_witness",
+          "pass": true
+        },
+        {
+          "name": "complete_primitive_identity",
+          "pass": true
+        },
+        {
+          "name": "detected_missing_divergence",
+          "pass": true
+        },
+        {
+          "name": "detected_wrong_composition_order",
+          "pass": true
+        },
+        {
+          "name": "detected_path_adjoint_sign",
+          "pass": true
+        },
+        {
+          "name": "perturbation_identity_1",
+          "pass": true
+        },
+        {
+          "name": "primitive_error_bound_1",
+          "pass": true
+        },
+        {
+          "name": "perturbation_identity_2",
+          "pass": true
+        },
+        {
+          "name": "primitive_error_bound_2",
+          "pass": true
+        },
+        {
+          "name": "perturbation_identity_4",
+          "pass": true
+        },
+        {
+          "name": "primitive_error_bound_4",
+          "pass": true
+        },
+        {
+          "name": "perturbation_identity_8",
+          "pass": true
+        },
+        {
+          "name": "primitive_error_bound_8",
+          "pass": true
+        }
+      ],
+      "details": {
+        "bound_scope": "At each fixed smooth candidate and compact test. Finite moment uniqueness, quadrature enclosure, empirical noise and candidate-family-uniform bounds are not established.",
+        "mutations": {
+          "missing_divergence": "-1345827443/41887678643306496000",
+          "path_adjoint_sign": "483154109/47123638473719808000",
+          "wrong_composition_order": "116999/96451891612876800"
+        },
+        "noise_cases": [
+          {
+            "bound_squared_exact": "3443210131944674761196637989/1414781087547413901163721304047616000000000000000000",
+            "degree": 1,
+            "error_over_bound": "3.371420247556685e-5",
+            "strong_equals_weak": true,
+            "third_u_derivative_at_upper_corner": "3/1000000",
+            "weak_error_exact": "913131419/17361340490317824000000000"
+          },
+          {
+            "bound_squared_exact": "3443210131944674761196637989/1414781087547413901163721304047616000000000000000000",
+            "degree": 2,
+            "error_over_bound": "0.0004630969286010439",
+            "strong_equals_weak": true,
+            "third_u_derivative_at_upper_corner": "3/125000",
+            "weak_error_exact": "8102607732809/11215425956745314304000000000"
+          },
+          {
+            "bound_squared_exact": "3443210131944674761196637989/1414781087547413901163721304047616000000000000000000",
+            "degree": 4,
+            "error_over_bound": "0.0001799133894960850",
+            "strong_equals_weak": true,
+            "third_u_derivative_at_upper_corner": "57/250000",
+            "weak_error_exact": "35272255282631/125670285720453906432000000000"
+          },
+          {
+            "bound_squared_exact": "3443210131944674761196637989/1414781087547413901163721304047616000000000000000000",
+            "degree": 8,
+            "error_over_bound": "1.991429382395930e-5",
+            "strong_equals_weak": true,
+            "third_u_derivative_at_upper_corner": "51/25000",
+            "weak_error_exact": "38484487267901/1238749959244474220544000000000"
+          }
+        ],
+        "scope": "Exact operator identity and bounded primitive-error controls; arbitrary coefficient witness is not a scalar solution or empirical data.",
+        "strong_residual_exact": "-5285312161/62831517964959744000",
+        "weak_residual_exact": "-5285312161/62831517964959744000"
+      },
+      "failed": 0,
+      "passed": 19
+    },
+    "separate_reception": {
+      "checks": [
+        {
+          "name": "generic_complete_fourteen_expansion",
+          "pass": true
+        },
+        {
+          "name": "generic_beta_extraction",
+          "pass": true
+        },
+        {
+          "name": "inherited_original_fixture_all_checks",
+          "pass": true
+        },
+        {
+          "name": "relative_gain_reception_identity",
+          "pass": true
+        },
+        {
+          "name": "relative_gain_time_identity",
+          "pass": true
+        },
+        {
+          "name": "physical_beta_recovery",
+          "pass": true
+        },
+        {
+          "name": "n0/recorded_actual_event_primitive",
+          "pass": true
+        },
+        {
+          "name": "n0/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n0/original_characteristic",
+          "pass": true
+        },
+        {
+          "name": "n0/path_third_derivative",
+          "pass": true
+        },
+        {
+          "name": "n0/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n0/full_fourteen_relation",
+          "pass": true
+        },
+        {
+          "name": "n3/recorded_actual_event_primitive",
+          "pass": true
+        },
+        {
+          "name": "n3/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n3/original_characteristic",
+          "pass": true
+        },
+        {
+          "name": "n3/path_third_derivative",
+          "pass": true
+        },
+        {
+          "name": "n3/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n3/full_fourteen_relation",
+          "pass": true
+        },
+        {
+          "name": "n4/recorded_actual_event_primitive",
+          "pass": true
+        },
+        {
+          "name": "n4/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n4/original_characteristic",
+          "pass": true
+        },
+        {
+          "name": "n4/path_third_derivative",
+          "pass": true
+        },
+        {
+          "name": "n4/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n4/full_fourteen_relation",
+          "pass": true
+        },
+        {
+          "name": "n5/recorded_actual_event_primitive",
+          "pass": true
+        },
+        {
+          "name": "n5/original_momentum",
+          "pass": true
+        },
+        {
+          "name": "n5/original_characteristic",
+          "pass": true
+        },
+        {
+          "name": "n5/path_third_derivative",
+          "pass": true
+        },
+        {
+          "name": "n5/hidden_velocity",
+          "pass": true
+        },
+        {
+          "name": "n5/full_fourteen_relation",
+          "pass": true
+        },
+        {
+          "name": "rank_fourteen_attained",
+          "pass": true
+        },
+        {
+          "name": "full_observed_coefficient_recovery",
+          "pass": true
+        },
+        {
+          "name": "gain_background_recovery",
+          "pass": true
+        }
+      ],
+      "details": {
+        "failures": {},
+        "fixture": {
+          "augmented_rank": 14,
+          "fixture_source_sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+          "inherited_fixture_controls": {
+            "failed": 0,
+            "passed": 48
+          },
+          "minor_determinant": "-585763616521880934023168/3718440741015",
+          "mode_ids": [
+            {
+              "ell": 2,
+              "n": 0
+            },
+            {
+              "ell": 3,
+              "n": 3
+            },
+            {
+              "ell": 4,
+              "n": 4
+            },
+            {
+              "ell": 5,
+              "n": 5
+            },
+            {
+              "ell": 6,
+              "n": 0
+            },
+            {
+              "ell": 7,
+              "n": 3
+            },
+            {
+              "ell": 8,
+              "n": 4
+            },
+            {
+              "ell": 9,
+              "n": 5
+            },
+            {
+              "ell": 10,
+              "n": 0
+            },
+            {
+              "ell": 11,
+              "n": 3
+            },
+            {
+              "ell": 12,
+              "n": 4
+            },
+            {
+              "ell": 13,
+              "n": 5
+            },
+            {
+              "ell": 14,
+              "n": 0
+            },
+            {
+              "ell": 15,
+              "n": 3
+            }
+          ],
+          "rank": 14,
+          "recovered": {
+            "C": "1/2",
+            "beta": "1/10",
+            "d": "2",
+            "e": "4",
+            "rho": "5/4",
+            "sigma": "1/20"
+          },
+          "row_count": 48,
+          "scope": "Exact original-action local solid harmonics, no observed data; independent positive reception gains, actual-event convention",
+          "selected_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "theta_at_point": [
+            "69/10",
+            "9/20",
+            "2941/100",
+            "5/2",
+            "44",
+            "1283/10",
+            "19/4",
+            "507/10",
+            "1506/25",
+            "1/2",
+            "1",
+            "49/10",
+            "-103/25",
+            "37/4"
+          ]
+        }
+      },
+      "failed": 0,
+      "passed": 33
+    }
+  },
+  "versions": {
+    "numpy": "2.4.1",
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  }
+}

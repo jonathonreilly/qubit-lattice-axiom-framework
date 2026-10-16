@@ -24,3 +24,7 @@
     with a unique branch and U = 1.
   - **J = 3/2:** this is the irreducible 4-dimensional coin, with 19 complex
     parameters. It is running.
+- **Irreducible coins (B3 Theorem 8).** E (`specE*.log`), spin 1
+  (`spin1*.log`) and spin 3/2 (`spin32*.log`, Singular outputs
+  `spin32_b*.out` over Q(sqrt 3)) all freeze. Each `*_exact.log` is the exact
+  branch-filter recheck (left null space over the coefficient field).

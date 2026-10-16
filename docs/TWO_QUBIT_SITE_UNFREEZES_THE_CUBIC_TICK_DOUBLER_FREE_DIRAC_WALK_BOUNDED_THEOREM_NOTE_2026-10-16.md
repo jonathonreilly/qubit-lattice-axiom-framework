@@ -385,11 +385,9 @@ spin 1/2, spin 1 and spin 3/2.
 | spin 3/2 | 19 | 81 x 49 | trivial and (-+1,-+1,+-1,+-1) | Singular over Q(sqrt 3): moving branches have ideal <1>; trivial branch zero-dimensional, all 18 free nilpotent |
 
 In each case the trivial branch's base point is A_0 = 1, so U is a constant
-phase. For E and spin 3/2 the branch filter is also exact: the left null
+phase. The branch filter is also exact for all four coins: the left null
 space N of the line system is computed over the coefficient field, and the
-vectors N t(m) and N t(p) are compared exactly. For spin 1 that exact
-recheck is still running, and until it lands the spin-1 branch filter is
-numerical. A fresh-context independent check of spin 3/2 (different model
+vectors N t(m) and N t(p) are compared exactly. A fresh-context independent check of spin 3/2 (different model
 E (x) E_1/2, two lines) also found only constant walks; its decisive stage
 was modular, over two primes. Scripts and logs are in
 `.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/` and

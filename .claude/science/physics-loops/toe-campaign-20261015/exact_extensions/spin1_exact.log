@@ -1,0 +1,10 @@
+[    0.1s] lift checked
+[    0.3s] group 24
+[    4.4s] complex parameters 12
+[   49.5s] real unitarity equations 214 real unknowns 24
+[   49.6s] C3 eigenvalue multiplicities [1, 1, 1]
+[   76.3s] body traces
+[  123.7s] exact left null space (76, 96)
+[  126.3s] axis vectors 27
+[ 4687.4s] body vectors 343
+[ 4969.8s] exactly consistent branches [((0, 0, 0), (0, 0, 0))]

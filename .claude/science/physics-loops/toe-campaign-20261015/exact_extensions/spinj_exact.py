@@ -8,7 +8,8 @@ from sympy.physics.quantum.spin import Rotation
 
 t0 = time.time()
 def log(*a): print(f'[{time.time()-t0:7.1f}s]', *a, flush=True)
-j = sp.Rational(sys.argv[1])
+REP = sys.argv[1]
+j = sp.Rational(REP) if REP != 'E' else sp.Rational(1, 2)
 ms = [j - k for k in range(int(2 * j) + 1)]
 d = len(ms)
 Jz = sp.diag(*ms)
@@ -28,8 +29,14 @@ P, Dg = Jx.diagonalize(normalize=True)
 Dx = (P * sp.diag(*[sp.exp(-sp.I * sp.pi / 2 * Dg[k, k]) for k in range(d)]) * P.H).applyfunc(lambda x: sp.nsimplify(sp.simplify(x)))
 assert (Dx * Dx.H - sp.eye(d)).applyfunc(sp.simplify).is_zero_matrix
 RZ = sp.Matrix([[0, -1, 0], [1, 0, 0], [0, 0, 1]]); RX = sp.Matrix([[1, 0, 0], [0, 0, -1], [0, 1, 0]])
+if REP == 'E':
+    Bs = sp.Matrix([[1, 1], [-1, 1], [0, -2]]) * sp.diag(1 / sp.sqrt(2), 1 / sp.sqrt(6))   # orthonormal basis of sum-zero plane
+    perm = lambda R: R.applyfunc(abs)
+    Dz = (Bs.T * perm(RZ) * Bs).applyfunc(sp.nsimplify); Dx = (Bs.T * perm(RX) * Bs).applyfunc(sp.nsimplify)
+    d = 2
+    assert (Dz * Dz.T - sp.eye(2)).is_zero_matrix and (Dx * Dx.T - sp.eye(2)).is_zero_matrix
 # covariance check of the lift: D J_a D^dag = sum_b R_ba J_b
-for R, D in ((RZ, Dz), (RX, Dx)):
+for R, D in (((RZ, Dz), (RX, Dx)) if REP != 'E' else ()):
     for a, Ja in enumerate((Jx, Jy, Jz)):
         lhs = (D * Ja * D.H).applyfunc(sp.simplify)
         rhs = sum((R[b, a] * Jb for b, Jb in enumerate((Jx, Jy, Jz))), sp.zeros(d))
@@ -99,7 +106,7 @@ eqs = list(eqs)
 log('real unitarity equations', len(eqs), 'real unknowns', 2 * len(params))
 
 # axis-line lemma in the J_x eigenbasis: U(t e_x) = sum_r z^r B_r, B_r = sum_{n_x = r} A_n
-Px, Dgx = Jx.diagonalize(normalize=True)
+Px, Dgx = (Dx if REP == 'E' else Jx).diagonalize(normalize=True)
 Pxs = [Px[:, k] * Px[:, k].H for k in range(d)]   # projectors, eigenvalues Dgx[k,k] distinct
 assert len(set(Dgx[k, k] for k in range(d))) == d
 B = {r: sum((Ac[n] for n in cell if n[0] == r), sp.zeros(d)) for r in (-1, 0, 1)}
@@ -114,6 +121,14 @@ for val, v in ones:
     v = v / sp.sqrt((v.H * v)[0]); Pb.append((v * v.H).applyfunc(sp.simplify))
 Bb = {r: sum((Ac[n] for n in cell if sum(n) == r), sp.zeros(d)) for r in range(-3, 4)}
 lin_axis = {}
+def axis_eqs_raw(mvec):
+    E = []
+    for r in (-1, 0, 1):
+        target = sum((Pxs[k] for k in range(d) if mvec[k] == r), sp.zeros(d))
+        for e in (B[r] - target):
+            e = sp.expand(e)
+            E += [sp.expand(sp.re(e)), sp.expand(sp.im(e))]
+    return E
 def axis_eqs(mvec):
     E = []
     for r in (-1, 0, 1):
@@ -124,6 +139,13 @@ def axis_eqs(mvec):
     return [e for e in E if e != 0]
 Tb = {(k, r): sp.expand(sp.simplify((P1 * Bb[r] * P1).trace())) for k, P1 in enumerate(Pb) for r in range(-3, 4)}
 log('body traces')
+def body_eqs_raw(pvec):
+    E = []
+    for k, p in enumerate(pvec):
+        for r in range(-3, 4):
+            e = sp.expand(Tb[(k, r)] - (1 if r == p else 0))
+            E += [sp.expand(sp.re(e)), sp.expand(sp.im(e))]
+    return E
 def body_eqs(pvec):
     E = []
     for k, p in enumerate(pvec):
@@ -132,6 +154,48 @@ def body_eqs(pvec):
             E += [sp.expand(sp.re(e)), sp.expand(sp.im(e))]
     return [e for e in E if e != 0]
 unk = list(xr) + list(yr)
+
+if len(sys.argv) > 2 and sys.argv[2] == 'exact':
+    # exact recheck: L x = t(branch); branch consistent iff N t = 0 for the left null space N of L
+    allE = []
+    keys = []
+    for mvec in itertools.product((-1, 0, 1), repeat=d):
+        pass
+    def lin_parts(E):
+        rows, rhs = [], []
+        for e in E:
+            P = sp.Poly(e, *unk); row = [0] * len(unk); c0 = 0
+            for mon, c in P.terms():
+                if sum(mon) == 0: c0 = c
+                else: row[mon.index(1)] = c
+            rows.append(row); rhs.append(-c0)
+        return rows, rhs
+    # the coefficient rows do not depend on the branch; only the right-hand side does
+    zero_axis = axis_eqs_raw((0,) * d)
+    zero_body = body_eqs_raw((0,) * len(Pb))
+    rows_a, _ = lin_parts([sp.expand(e) for e in zero_axis]); rows_b, _ = lin_parts([sp.expand(e) for e in zero_body])
+    Lm = sp.Matrix(rows_a + rows_b)
+    Nl = Lm.T.nullspace(); N = sp.Matrix.hstack(*Nl).T
+    log('exact left null space', N.shape)
+    canon = lambda x: sp.nsimplify(sp.radsimp(sp.expand(x)))
+    na = len(zero_axis)
+    va = {}
+    for mvec in itertools.product((-1, 0, 1), repeat=d):
+        _, ra = lin_parts([sp.expand(e) for e in axis_eqs_raw(mvec)])
+        va[mvec] = (N[:, :na] * sp.Matrix(ra)).applyfunc(canon)
+    log('axis vectors', len(va))
+    vb = {}
+    for pvec in itertools.product(range(-3, 4), repeat=len(Pb)):
+        _, rb = lin_parts([sp.expand(e) for e in body_eqs_raw(pvec)])
+        vb[pvec] = (N[:, na:] * sp.Matrix(rb)).applyfunc(canon)
+    log('body vectors', len(vb))
+    ok = []
+    for mvec, a_ in va.items():
+        for pvec, b_ in vb.items():
+            if (a_ + b_).applyfunc(canon).is_zero_matrix:
+                ok.append((mvec, pvec))
+    log('exactly consistent branches', ok)
+    sys.exit(0)
 import numpy as np
 def to_num(E):
     A = np.zeros((len(E), len(unk))); b = np.zeros(len(E))
@@ -170,7 +234,7 @@ for mvec, Ea in axis_cache.items():
             else:
                 log('numerically consistent but exact solve failed', mvec, pvec)
 log('feasible branches', len(feas), [(f[0], f[1]) for f in feas])
-pickle.dump({'eqs': eqs, 'unk': unk, 'feas': feas}, open(f'spinj_{sys.argv[1].replace("/", "_")}.pkl', 'wb'))
+pickle.dump({'eqs': eqs, 'unk': unk, 'feas': feas}, open(f'spinj_{REP.replace("/", "_")}.pkl', 'wb'))
 for mvec, pvec, sol in feas:
     sub = dict(zip(unk, sol))
     free = sorted(set().union(*[sp.sympify(v).free_symbols for v in sol]), key=str)

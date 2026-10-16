@@ -1,0 +1,13 @@
+[    0.1s] lift checked
+[    0.3s] group 24
+[    4.0s] complex parameters 12
+[   47.0s] real unitarity equations 214 real unknowns 24
+[   47.1s] C3 eigenvalue multiplicities [1, 1, 1]
+[   72.5s] body traces
+[   72.8s] axis cache
+[   77.0s] body cache
+[ 4468.6s] numeric caches
+[ 4468.7s] numerically feasible (0, 0, 0) (0, 0, 0)
+[ 4471.4s] feasible branches 1 [((0, 0, 0), (0, 0, 0))]
+[ 4476.1s] branch (0, 0, 0) (0, 0, 0): 4 free, 141 eqs
+[ 4476.5s]    groebner size 5

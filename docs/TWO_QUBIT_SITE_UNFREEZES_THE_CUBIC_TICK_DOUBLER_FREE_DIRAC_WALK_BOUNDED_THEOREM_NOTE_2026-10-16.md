@@ -147,6 +147,14 @@ family this says that h ≡ 0 is impossible for a moving walk; together with
 Nielsen–Ninomiya it explains why the surviving walks are vector-like
 (Dirac) with Wilson-type chirality breaking.
 
+**Remark (no net chirality in the family).** Every Clifford walk has the
+form U = cos theta + i sin theta n.Gamma with n in S^4 (five anticommuting
+Gamma's), so U(k) lies in a copy of S^5 inside U(4). Since H^3(S^5) = 0, the
+three-winding form restricts to an exact form there, and its pullback over the
+closed torus integrates to zero: W_3 = 0 for every member (numerically
+|W_3| < 1e-17 on a 24^3 grid for the explicit member). No member evades
+fermion doubling through a Floquet (quasienergy pi) imbalance.
+
 ## Numerical properties of the explicit member (labelled numerical)
 
 | quantity | value |

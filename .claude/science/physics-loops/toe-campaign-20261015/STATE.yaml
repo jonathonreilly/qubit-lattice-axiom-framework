@@ -4,7 +4,7 @@ base: claude/rules-hygiene-20261015 (from origin/main bbada1fe0)
 window: 2026-10-15T23:30Z .. 2026-10-16T23:00Z
 mode: campaign
 target: best-honest-status
-active_block: B4-staggered-one-qubit-tick
+active_block: B5-exact-range-two (Singular) / milestone PR #9636 open
 blocks:
   B1-covariant-qubit-walks:
     status: in_progress
@@ -48,6 +48,11 @@ blocks:
     - "D2 product walk dispersion: omega = |k| - n1 n2 n3 |k|^2 + O(k^3), parity-odd handed correction (runner PASS=31)"
     - "exact D3 Groebner timed out (83 min); D3 stays numerical"
   B4-staggered-one-qubit-tick:
-    status: in_progress
+    status: delivered_to_branch (corollary in the B3 note; runner PASS=23)
+    result: "sublattice-dependent one-qubit walk folds into a two-qubit cell walk with W(k+Q) = tau1 W tau1; in the Clifford class this forces g = 0 (exact); 29 staggered starts found no moving walk"
     question: "keep one qubit per site but let the walk coefficients depend on sublattice parity (2-site cell): can an O-covariant (rotations about every site) staggered tick move?"
     method: "staggered.py: two O-covariant coefficient families, exact Z^3 coefficient equations for WW^dag and W^dag W"
+milestone_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636 (base claude/rules-hygiene-20261015)"
+  B5-exact-extensions:
+    status: in_progress
+    running: ["Singular slimgb: D3 on the cell (19 vars)", "Singular slimgb: O at range two per axis (25 vars, 149 eqs)"]

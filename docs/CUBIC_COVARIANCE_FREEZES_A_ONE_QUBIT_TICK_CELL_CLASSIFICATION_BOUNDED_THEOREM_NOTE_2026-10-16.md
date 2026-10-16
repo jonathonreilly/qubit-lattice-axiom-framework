@@ -155,12 +155,28 @@ loop pack):
 | C3 | 3 | yes | 3 |
 | C4 | 4 | yes | 1, 2, 3 |
 | D2 (axis half-turns) | 4 | yes (exhibit above) | 3 |
-| D3 | 6 | none (best residual 1.1e-3) | – |
+| D3 | 6 | none in a pinned-norm search (best residual 1.1e-3); rerun with a lower-bound penalty pending | – |
 | D4 | 8 | axial only (Theorem 2) | 1 |
 | T | 12 | none (Theorem 1) | – |
 | O | 24 | none (Theorem 1) | – |
 
 All moving solutions found had numerically zero three-winding.
+
+## Independent check of Theorems 1 and 2
+
+A fresh agent context, given only the problem statement (not the expected
+answer, nor this note or its runner), re-derived the O, T and D4 cases by a
+different route: raw complex coefficients A_n = a_n0 I + a_n.sigma without
+the SU(2) reduction, both U U^dagger = I and U^dagger U = I, the real/imaginary
+split over Q, and Groebner bases in Singular 4.4 (slimgb), with a second
+algorithm (modStd) for T, a sympy re-run over Q(i) for O, and a primary
+decomposition (minAssGTZ) for D4. Results agree exactly: O and T give only
+e^{i theta} I; D4 gives exactly three components, e^{i theta} I and
+e^{i theta} exp(+-i k_z sigma_z). Scripts and outputs are kept in the loop
+pack (`.claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/`).
+Limits of independence: the checker is the same model family in a new
+context; the D4 result rests on one Groebner algorithm plus a hand argument
+for the final one-dimensional step.
 
 ## Range two per axis under O (evidence, not proof)
 

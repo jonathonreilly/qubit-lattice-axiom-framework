@@ -15,3 +15,12 @@ staggered_one_qubit_block_cubic_dirac_tick_2026_10_16: TOTAL: PASS=11 FAIL=0 (16
 cubic_cell_taste_content_axis_permutation_2026_10_16: TOTAL: PASS=9 FAIL=0 (3s)
 cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16: TOTAL: PASS=16 FAIL=0 (462s)
 PASS rows=5631 retained_grade=0 link_violations=0 class_f_violations=0 graph_delta=acknowledged (enforced)
+
+# Rerun on the follow-up branch (main c9a4b623a+ with later campaign commits cherry-picked), 2026-10-16T23:30Z
+cubic_cell_taste_content_axis_permutation_2026_10_16: TOTAL: PASS=10 FAIL=0 (2s)
+cubic_covariant_qubit_walk_cell_classification_2026_10_16: TOTAL: PASS=32 FAIL=0 (501s)
+cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16: TOTAL: PASS=16 FAIL=0 (452s)
+order_blind_formation_one_dependent_record_field_2026_10_16: TOTAL: PASS=18 FAIL=0 (84s)
+staggered_one_qubit_block_cubic_dirac_tick_2026_10_16: TOTAL: PASS=11 FAIL=0 (142s)
+two_qubit_cubic_dirac_tick_2026_10_16: TOTAL: PASS=41 FAIL=0 (60s)
+PASS rows=5631 retained_grade=0 link_violations=0 class_f_violations=0 graph_delta=acknowledged (enforced)

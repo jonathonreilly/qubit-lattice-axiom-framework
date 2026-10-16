@@ -9,7 +9,7 @@ blocks:
   B1-covariant-qubit-walks:
     status: delivered_to_branch (pending list below is historical; see B5 for what closed)
     note: docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md
-    runner: scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py (TOTAL PASS=31 FAIL=0, ~50 s)
+    runner: scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py (TOTAL PASS=32 FAIL=0 on main)
     exact:
       - "O and T covariant 27-point-cell walks are constant (Groebner over Q)."
       - "D4: only axial shifts exp(+-i sigma_z k_z)."
@@ -29,7 +29,7 @@ blocks:
   B2-order-blind-one-dependent-field:
     status: delivered_to_branch
     note: docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md
-    runner: scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py (TOTAL PASS=17)
+    runner: scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py (TOTAL PASS=18 on main)
     result: "positive order-blind rules: consistent finite laws -> one record field; full conditionals = rule (static = formation); 1-dependent; no LRO, power laws or pinch points"
     prior_art_note: "iid-priority (random order) decay is standard (Penrose-Sudbury decreasing paths; cited in the 2026-09-07 priority note); not claimed"
   B3-larger-site-covariant-motion:
@@ -73,4 +73,6 @@ blocks:
     result: "every spinorial cubic-orbit cell = E1/2 (x) F, F an S3 rep; faces A1+E, signed corners 2E, edges A1+A2+2E; singlet pair E1/2+E5/2 moves but only massive/degenerate found"
     six_neighbour: "E1/2+H most likely frozen (numerical; residual rises steeply with motion bound)"
     twisted_pair_branches: "U(0)=1: 8 axis-moving branches unit ideal mod 32003 and over Q (modStd; no cofactor certificate); only axis-flat branch survives (dim 4) -> flat along axes (mod-p evidence; generations/twisted_branches/)"
-milestone_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636 (base claude/rules-hygiene-20261015)"
+milestone_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636 (closed 2026-10-16T17:18Z; landed on main in corrected form as c9a4b623a)"
+review_status: "authority is .claude/science/review-fixes/review-drain-20261016/CUBIC_TICK_SCOPE.md and the current notes; range three and the irreducible-coin freeze are archived proof candidates, not accepted; entries below that say EXACT for them are campaign-time labels"
+followup_branch: "claude/toe-campaign-20261016-followup (work after the landing, rebased onto main)"

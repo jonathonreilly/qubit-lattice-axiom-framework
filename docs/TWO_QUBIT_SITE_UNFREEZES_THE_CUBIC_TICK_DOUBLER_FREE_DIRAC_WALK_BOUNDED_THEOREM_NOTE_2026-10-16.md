@@ -183,7 +183,7 @@ semidefinite, annihilates phi0 and has rank at most 2. Its bands are
     omega^2 = s^2 |k|^2 + alpha(b) |k|^4 + beta(b) sum_a k_a^4 + O(k^6),
     beta(b) = -s (b_0 - b_1 - 2 b_2) / 3,
 
-and alpha(b) is a quartic in b (runner). At b_gold, beta = 7/6 - sqrt5/2,
+and alpha(b) = s (s^3 + 3 b_0 - 6 b_1 - 9 b_2) / 12. At b_gold, beta = 7/6 - sqrt5/2,
 in agreement with Theorem 5. For a moving walk (s != 0) the k^4 anisotropy
 therefore vanishes exactly on the plane b_0 = b_1 + 2 b_2. On that plane
 s = 3(b_1 + b_2), and the coefficients that survive depend on s alone:
@@ -219,6 +219,16 @@ cos theta_X = -1/3 and cos theta_M = -7/9 (exact), the corner doublers at
 2.715 rad, and on a 41^3 grid omega >= 0.9 s |2 sin(k/2)|: a single cone and
 no doublers (numerical). At |k| = 1 its directional spread of omega is about
 0.1%, against about 1.6% for the light-speed member. ∎
+
+*Independent check.* A fresh agent context was given only the problem, not
+this note or its runner. It derived G(b), the massless band, alpha, beta and
+the sextic coefficients itself. It proved the bound by a different
+maximisation argument: on the plane the walk region is compact, its maximiser
+satisfies P = dP/dt = 0, and lex elimination leaves the real roots
+sigma = 0, +-sqrt(2/27). It then made exact sign checks of e1, e2, e3 at
+b_iso. Its results agree, including y = -s^2/360 on the plane and the
+uniqueness of +-b_iso. Its scripts are in
+`.claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/`.
 
 Reading: on the two-qubit site, cubic lattice anisotropy can be tuned away at
 order (k a)^2 relative to the leading term. The price is a cone speed at most
@@ -428,4 +438,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=38 FAIL=0` (under a minute).
+Expected: `TOTAL: PASS=39 FAIL=0` (under a minute).

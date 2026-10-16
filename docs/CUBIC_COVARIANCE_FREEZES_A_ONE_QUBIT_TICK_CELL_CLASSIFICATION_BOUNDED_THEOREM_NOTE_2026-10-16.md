@@ -266,6 +266,12 @@ D3 is the body-diagonal analogue of D4: a group that keeps one distinguished
 axis permits a conditional shift along it and nothing else. This settles the
 D3 entry, which the earlier numerical scan had wrong.
 
+A second fresh agent context, given only the problem, found the same three
+walks by its own route. It used a body-diagonal line lemma with the
+symmetries U -> -U and U -> U^dagger, then Singular eliminants (`finduni`)
+for each exponent case. Its scripts are in
+`.claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/`.
+
 ## What this does not do
 
 - It does not classify walks with hops of range three or more, and at range

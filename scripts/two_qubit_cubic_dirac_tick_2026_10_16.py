@@ -229,6 +229,7 @@ def main() -> int:
     w = omega2_series(G, 4)
     ck.check('massless member: omega^2 = s^2 |k|^2 + alpha(b) |k|^4 + beta(b) sum k_a^4 + O(k^6), beta = -s (b0 - b1 - 2 b2)/3',
              sp.expand(w[2] - s_ ** 2 * nsq) == 0 and sp.expand(w[4] - alpha * nsq ** 2 - beta * N4) == 0)
+    ck.check('alpha(b) = s (s^3 + 3 b0 - 6 b1 - 9 b2)/12', sp.expand(alpha - s_ * (s_ ** 3 + 3 * b[0] - 6 * b[1] - 9 * b[2]) / 12) == 0)
     ck.check('golden member: beta(b_gold) = 7/6 - sqrt5/2 (agrees with Theorem 5)',
              sp.expand(beta.subs(bgold) - kap) == 0)
     Gp = G.subs(b[0], b[1] + 2 * b[2]).applyfunc(sp.expand)

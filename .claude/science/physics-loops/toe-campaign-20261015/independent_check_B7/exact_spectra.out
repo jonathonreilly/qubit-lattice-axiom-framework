@@ -1,0 +1,12 @@
+E1: q(W) == 0 exactly: True
+E1: tr W^1 == 2 * p1(q): True
+E1: tr W^2 == 2 * p2(q): True
+E1: tr W^3 == 2 * p3(q): True
+N1 unitarity exact: True
+N1: q(W) == 0 exactly: True
+N1: tr W^1 == 3 + (-1)^1 + sum r^1: True
+N1: tr W^2 == 3 + (-1)^2 + sum r^2: True
+N1: tr W^3 == 3 + (-1)^3 + sum r^3: True
+N1: tr W^4 == 3 + (-1)^4 + sum r^4: True
+N1: tr W^5 == 3 + (-1)^5 + sum r^5: True
+N1: tr W^6 == 3 + (-1)^6 + sum r^6: True

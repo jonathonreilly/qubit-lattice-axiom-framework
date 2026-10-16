@@ -1,0 +1,164 @@
+start 4: spread 8.56e-14 cov 0.0e+00 unit 3.5e-17 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.84746), '00i': np.float64(0.25025), '0ii': np.float64(0.17695)}
+start 5: spread 1.72e-14 cov 0.0e+00 unit 8.3e-17 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.33205), 'o00': np.float64(0.46959), '000': np.float64(0.08767)}
+start 9: spread 0.00e+00 cov 0.0e+00 unit 5.4e-17 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(0.00199), '00i': np.float64(0.02257), '0ii': np.float64(0.471), 'iii': np.float64(0.57701)}
+start 10: spread 2.70e-13 cov 0.0e+00 unit 1.1e-16 active ['000']
+    |c| = {'000': np.float64(1.0)}
+start 12: spread 0.00e+00 cov 0.0e+00 unit 4.3e-17 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(0.02248), '00i': np.float64(0.42414), '0ii': np.float64(0.38989), 'iii': np.float64(0.06129)}
+start 14: spread 1.87e-14 cov 0.0e+00 unit 4.4e-17 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.31165), 'o00': np.float64(0.44074), '000': np.float64(0.35477)}
+start 15: spread 1.55e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.29084), '00i': np.float64(0.45103), '0ii': np.float64(0.31892)}
+start 16: spread 5.86e-14 cov 0.0e+00 unit 4.3e-17 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.72932), '00i': np.float64(0.32252), '0ii': np.float64(0.22806)}
+start 17: spread 1.96e-14 cov 0.0e+00 unit 2.2e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.44286), 'oo0': np.float64(0.47166), 'o00': np.float64(0.09054), '000': np.float64(0.33452)}
+start 18: spread 7.94e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.99447), '00i': np.float64(0.04952), '0ii': np.float64(0.03501)}
+start 19: spread 9.08e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.99475), '00i': np.float64(0.04826), '0ii': np.float64(0.03413)}
+start 22: spread 1.01e-13 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.7662), '00i': np.float64(0.30293), '0ii': np.float64(0.2142)}
+start 23: spread 1.26e-13 cov 0.0e+00 unit 1.1e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.19964), 'oo0': np.float64(0.18199), 'o00': np.float64(0.08945), '000': np.float64(0.91476)}
+start 25: spread 7.65e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.82559), '00i': np.float64(0.266), '0ii': np.float64(0.18809)}
+start 27: spread 9.53e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.8511), '00i': np.float64(0.24749), '0ii': np.float64(0.175)}
+start 29: spread 2.72e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.28455), 'o00': np.float64(0.40241), '000': np.float64(0.52085)}
+start 30: spread 1.16e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(0.12293), '00i': np.float64(0.05878), '0ii': np.float64(0.23921), 'iii': np.float64(0.89603)}
+start 31: spread 7.42e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.88712), '00i': np.float64(0.21757), '0ii': np.float64(0.15385)}
+start 33: spread 7.63e-14 cov 0.0e+00 unit 1.1e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.32037), 'oo0': np.float64(0.2181), 'o00': np.float64(0.27567), '000': np.float64(0.72572)}
+start 34: spread 2.94e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.4325), '00i': np.float64(0.42503), '0ii': np.float64(0.30054)}
+start 35: spread 2.32e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.38447), '00i': np.float64(0.43517), '0ii': np.float64(0.30771)}
+start 37: spread 4.19e-14 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.29323), 'o00': np.float64(0.41469), '000': np.float64(0.47555)}
+start 38: spread 2.85e-13 cov 0.0e+00 unit 8.2e-18 active ['000']
+    |c| = {'000': np.float64(1.0)}
+start 39: spread 7.65e-14 cov 0.0e+00 unit 5.6e-17 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.20693), 'o00': np.float64(0.29264), '000': np.float64(0.78398)}
+start 40: spread 7.83e-14 cov 0.0e+00 unit 2.8e-17 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.11309), 'o00': np.float64(0.15993), '000': np.float64(0.94069)}
+start 43: spread 2.37e-14 cov 0.0e+00 unit 2.2e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.93591), 'oo0': np.float64(0.04307), 'o00': np.float64(0.01432), '000': np.float64(0.34336)}
+start 44: spread 1.61e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.32663), 'o00': np.float64(0.46192), '000': np.float64(0.19958)}
+start 46: spread 1.27e-13 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.00919), 'o00': np.float64(0.013), '000': np.float64(0.99962)}
+start 47: spread 8.38e-15 cov 0.0e+00 unit 1.1e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.15056), 'oo0': np.float64(0.0101), 'o00': np.float64(0.56431), '000': np.float64(0.14726)}
+start 50: spread 1.70e-14 cov 0.0e+00 unit 1.1e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.00999), 'oo0': np.float64(0.34472), 'o00': np.float64(0.41926), '000': np.float64(0.34069)}
+start 51: spread 1.65e-14 cov 0.0e+00 unit 1.1e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.30915), 'oo0': np.float64(0.27983), 'o00': np.float64(0.4724), '000': np.float64(0.00215)}
+start 53: spread 2.35e-13 cov 0.0e+00 unit 2.7e-17 active ['000']
+    |c| = {'000': np.float64(1.0)}
+start 56: spread 6.86e-14 cov 0.0e+00 unit 2.2e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.16534), 'oo0': np.float64(0.0222), 'o00': np.float64(0.36336), '000': np.float64(0.75834)}
+start 57: spread 1.05e-13 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.18846), 'o00': np.float64(0.26652), '000': np.float64(0.82483)}
+start 59: spread 1.21e-13 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.98533), '00i': np.float64(0.08045), '0ii': np.float64(0.05689)}
+start 60: spread 2.13e-13 cov 0.0e+00 unit 2.9e-18 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.00671), 'oo0': np.float64(0.00102), 'o00': np.float64(0.00156), '000': np.float64(0.99997)}
+start 62: spread 2.01e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.31881), 'o00': np.float64(0.45087), '000': np.float64(0.29196)}
+start 64: spread 1.51e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.24424), '00i': np.float64(0.45713), '0ii': np.float64(0.32324)}
+start 66: spread 1.44e-13 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.99634), '00i': np.float64(0.0403), '0ii': np.float64(0.0285)}
+start 67: spread 9.78e-15 cov 0.0e+00 unit 2.2e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.33926), 'oo0': np.float64(0.5431), 'o00': np.float64(0.0025), '000': np.float64(5e-05)}
+start 68: spread 1.39e-13 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.92191), '00i': np.float64(0.18262), '0ii': np.float64(0.12913)}
+start 69: spread 5.12e-14 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.1989), 'o00': np.float64(0.28129), '000': np.float64(0.80246)}
+start 70: spread 2.29e-14 cov 0.0e+00 unit 3.3e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.32618), 'o00': np.float64(0.46129), '000': np.float64(0.20606)}
+start 71: spread 1.63e-14 cov 0.0e+00 unit 5.6e-17 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.14397), 'oo0': np.float64(0.01227), 'o00': np.float64(0.55961), '000': np.float64(0.19834)}
+start 73: spread 5.12e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(0.70081), '00i': np.float64(0.34983), '0ii': np.float64(0.01234), 'iii': np.float64(0.37585)}
+start 75: spread 3.63e-14 cov 0.0e+00 unit 1.1e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.1923), 'oo0': np.float64(0.46696), 'o00': np.float64(0.15743), '000': np.float64(0.48427)}
+start 76: spread 6.33e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.24984), 'o00': np.float64(0.35333), '000': np.float64(0.66197)}
+start 77: spread 5.36e-14 cov 0.0e+00 unit 5.6e-17 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.29757), 'o00': np.float64(0.42083), '000': np.float64(0.45063)}
+start 78: spread 1.34e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.04164), '00i': np.float64(0.471), '0ii': np.float64(0.33304)}
+start 81: spread 1.10e-13 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.95646), '00i': np.float64(0.13759), '0ii': np.float64(0.09729)}
+start 82: spread 2.44e-13 cov 0.0e+00 unit 1.5e-17 active ['000']
+    |c| = {'000': np.float64(1.0)}
+start 85: spread 3.21e-13 cov 0.0e+00 unit 2.2e-16 active ['000']
+    |c| = {'000': np.float64(1.0)}
+start 86: spread 2.03e-13 cov 0.0e+00 unit 2.2e-16 active ['000']
+    |c| = {'000': np.float64(1.0)}
+start 88: spread 8.06e-14 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.13676), 'o00': np.float64(0.19341), '000': np.float64(0.91196)}
+start 90: spread 5.34e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.55218), '00i': np.float64(0.39302), '0ii': np.float64(0.27791)}
+start 91: spread 0.00e+00 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(3e-05), '00i': np.float64(0.00164), '0ii': np.float64(0.5371), 'iii': np.float64(0.36684)}
+start 92: spread 2.21e-14 cov 0.0e+00 unit 2.2e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.03002), 'oo0': np.float64(0.00031), 'o00': np.float64(0.54368), '000': np.float64(0.33518)}
+start 93: spread 1.26e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.17568), '00i': np.float64(0.46407), '0ii': np.float64(0.32815)}
+start 94: spread 0.00e+00 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(0.35817), '00i': np.float64(0.0513), '0ii': np.float64(0.51091), 'iii': np.float64(0.28413)}
+start 95: spread 4.05e-14 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.27502), 'o00': np.float64(0.38893), '000': np.float64(0.56506)}
+start 97: spread 1.14e-13 cov 0.0e+00 unit 1.9e-17 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.06698), 'o00': np.float64(0.09473), '000': np.float64(0.9796)}
+start 103: spread 0.00e+00 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(0.67903), '00i': np.float64(0.35805), '0ii': np.float64(0.04259), 'iii': np.float64(0.38585)}
+start 105: spread 9.37e-15 cov 0.0e+00 unit 1.1e-16 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.34447), 'oo0': np.float64(0.54183), 'o00': np.float64(0.01375), '000': np.float64(0.00516)}
+start 106: spread 1.03e-14 cov 0.0e+00 unit 8.5e-17 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.05439), 'oo0': np.float64(0.34204), 'o00': np.float64(0.46393), '000': np.float64(0.01967)}
+start 108: spread 6.79e-14 cov 0.0e+00 unit 4.2e-17 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.82444), '00i': np.float64(0.26679), '0ii': np.float64(0.18865)}
+start 112: spread 3.47e-14 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.36648), '00i': np.float64(0.43861), '0ii': np.float64(0.31014)}
+start 113: spread 1.88e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.29761), 'o00': np.float64(0.42089), '000': np.float64(0.45037)}
+start 115: spread 3.28e-14 cov 0.0e+00 unit 6.9e-17 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.29413), 'oo0': np.float64(0.1332), 'o00': np.float64(0.39794), '000': np.float64(0.62063)}
+start 116: spread 1.95e-14 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.34329), '00i': np.float64(0.44276), '0ii': np.float64(0.31308)}
+start 118: spread 7.70e-15 cov 0.0e+00 unit 6.2e-17 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.37839), 'oo0': np.float64(0.51939), 'o00': np.float64(0.12586), '000': np.float64(0.00343)}
+start 119: spread 3.57e-14 cov 0.0e+00 unit 4.4e-17 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(0.42774), '00i': np.float64(0.4261), '0ii': np.float64(0.3013)}
+start 120: spread 7.23e-15 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(4e-05), '00i': np.float64(0.00048), '0ii': np.float64(0.5379), 'iii': np.float64(0.36329)}
+start 122: spread 9.80e-14 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.03788), 'o00': np.float64(0.05357), '000': np.float64(0.99352)}
+start 125: spread 3.45e-13 cov 0.0e+00 unit 2.2e-16 active ['000', '00i', '0ii']
+    |c| = {'000': np.float64(1.0), '00i': np.float64(0.0), '0ii': np.float64(0.0)}
+start 127: spread 4.57e-13 cov 0.0e+00 unit 1.1e-16 active ['000']
+    |c| = {'000': np.float64(1.0)}
+start 129: spread 2.08e-14 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.31947), 'o00': np.float64(0.4518), '000': np.float64(0.2854)}
+start 133: spread 4.44e-16 cov 0.0e+00 unit 1.1e-16 active ['000', '00i', '0ii', 'iii']
+    |c| = {'000': np.float64(0.60806), '00i': np.float64(0.11429), '0ii': np.float64(0.44265), 'iii': np.float64(0.0571)}
+start 136: spread 1.27e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.32947), 'o00': np.float64(0.46594), '000': np.float64(0.15188)}
+start 141: spread 4.98e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.21664), 'o00': np.float64(0.30637), '000': np.float64(0.76)}
+start 144: spread 2.50e-14 cov 0.0e+00 unit 6.5e-17 active ['ooo', 'oo0', 'o00', '000']
+    |c| = {'ooo': np.float64(0.24533), 'oo0': np.float64(0.00908), 'o00': np.float64(0.51848), '000': np.float64(0.36482)}
+start 146: spread 2.46e-14 cov 0.0e+00 unit 1.1e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.30285), 'o00': np.float64(0.4283), '000': np.float64(0.41776)}
+start 148: spread 3.97e-14 cov 0.0e+00 unit 2.2e-16 active ['oo0', 'o00', '000']
+    |c| = {'oo0': np.float64(0.25488), 'o00': np.float64(0.36046), '000': np.float64(0.64445)}

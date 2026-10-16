@@ -1,7 +1,7 @@
 ---
 claim_id: staggered_one_qubit_blocks_carry_a_cubic_covariant_dirac_tick_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "One amplitude per site of Z^3, grouped into 2x2x2 blocks (translations by two sites), with the proper cubic rotations acting about block centres by signed permutations of the eight corners (staggered phases). The signed corner actions fall into three classes. Exactly one class is spinorial (quarter-turn lifts of order 8), and up to phases it is C^2 (x) E (x) E_1/2, i.e. two copies of the spin-3/2 representation. The other classes contain only scalar and spin-1 pieces. For the spinorial class there is a unitary, exactly block-covariant, moving one-tick walk with hops of at most one block, obtained by transporting the two-qubit Dirac walk U_2q (x) 1_E through an intertwiner. Numerically it has a single isotropic massless cone at k = 0 carrying eight components (two Dirac fermions) and no other band touching on a grid. Not claimed: that the integer classes freeze, that a nearest-site (KS-type) version exists, any continuum identification beyond the cone."
+claim_scope: "One amplitude per site of Z^3, grouped into 2x2x2 blocks (translations by two sites), with the proper cubic rotations acting about block centres by signed permutations of the eight corners (staggered phases). Up to diagonal gauge, the signed corner actions are either integer or spinorial (quarter-turn lifts of order 8); the spinorial ones are, up to phases, C^2 (x) E (x) E_1/2, i.e. two copies of the spin-3/2 representation (independently confirmed). The other classes contain only scalar and spin-1 pieces. For the spinorial class there is a unitary, exactly block-covariant, moving one-tick walk with hops of at most one block, obtained by transporting the two-qubit Dirac walk U_2q (x) 1_E through an intertwiner. Numerically it has a single isotropic massless cone at k = 0 carrying eight components (two Dirac fermions) and no other band touching on a grid. Not claimed: that the integer classes freeze, that a nearest-site (KS-type) version exists, any continuum identification beyond the cone."
 upstream_dependencies:
   - minimal_axioms
   - two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
@@ -104,14 +104,40 @@ omega >= 0.63 |2 sin(k/2)|, so the only zero is k = 0. The eight components
 form two Dirac fermions. The pair is the counterpart of the two "tastes" of
 Kogut–Susskind fermions in three spatial dimensions.
 
+## Independent check
+
+A fresh agent context, given only the problem, confirmed the classification
+and found more. The signed corner actions form four diagonal gauge classes
+(H^2(S4, Z2) = Z2^2). Two are integer, one of them projectively the other.
+Two are spinorial, gauge-equivalent to each other and each two copies of
+spin 3/2 (the "one spinorial class" above, up to gauge).
+
+It also found propagating walks by a different construction, the two-layer
+(partitioned) walk W = G(k) qB G(k)^dagger qA. That is a block unitary
+followed by a shifted-block unitary, both in the commutant, with maximum
+displacement two sites. One exact example has
+cos omega = (1/2)[1 +- sqrt((sin^2 k1 + sin^2 k2 + sin^2 k3)/3)] and
+isotropic cones, but it has identical nodes at all eight time-reversal-
+invariant momenta, so unlike Theorem 2's walk it is not doubler-free.
+
+On nearest-site locality:
+- the integer classes have exact dispersive walks, but an antipodal-symmetry
+  argument shows they have no linear cone;
+- the spinorial classes gave only flat, strictly localized solutions in about
+  300 converged runs, which agrees with the search here and is not proved.
+
+Scripts are in `.claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/`.
+
 ## What did not work, or was not tested
 
 - **Nearest-site locality.** Kogut–Susskind fermions hop to nearest sites
   only. Restricting the spinorial block walk to hops of one site per axis
   leaves an 11-dimensional covariant family. Unitary solutions found there
-  so far have flat bands: the spectrum does not depend on k, so nothing
-  propagates. A search that requires dispersion is running. The tick of
-  Theorem 2 needs hops of up to three sites per axis.
+  have flat bands: the spectrum does not depend on k, so nothing propagates.
+  This holds for 20 dispersion-constrained starts here and about 300
+  independent runs; it is numerical, not proved. The tick of Theorem 2 needs
+  hops of up to three sites per axis. The independent check's two-layer walks
+  need two, but they have doublers.
 - **Integer classes.** These have no spinor factor. By the companion note's
   criterion they are not expected to move, but that is not proved here.
 - **Larger blocks, other block origins, interacting rules.** Not considered.

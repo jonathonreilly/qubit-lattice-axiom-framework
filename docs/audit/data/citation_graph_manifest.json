@@ -1,6 +1,6 @@
 {
  "edge_count": 16048,
- "node_count": 7111,
+ "node_count": 7112,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19245,6 +19245,10 @@
   "scalar_harmonic_tower_theorem_note_2026-04-24": {
    "deps_hash": "6b88b7457bda",
    "out_degree": 5
+  },
+  "scalar_history_compatibility_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08": {
    "deps_hash": "fbe1946357be",

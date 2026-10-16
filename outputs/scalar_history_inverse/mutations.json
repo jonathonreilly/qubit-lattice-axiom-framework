@@ -1,0 +1,4076 @@
+{
+  "failed": 0,
+  "method": "Isolated source mutation; a crash without the targeted failed assertion does not count",
+  "mutation_runner_sha256": "9c7c05810684ce39e1054a1a87fd0b2e5c99feaa23ff700ecdb1ebdf16a78577",
+  "mutations": [
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "lapse variation gives Friedmann",
+        "scalar variation fixes density and coupling normalization"
+      ],
+      "label": "particle action source sign",
+      "mutated_helper_sha256": "90c7b09f2111826879be4bed6ae5764e540c09b68a1fd6a9e0d1f03adc10c025",
+      "original": "- N*rho0*A(ph)",
+      "replacement": "+ N*rho0*A(ph)",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": false,
+            "residual": "2*rho0*A(phi(t))/a(t)**3"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": false,
+            "residual": "-2*rho0*Derivative(A(phi(t)), phi(t))/a(t)**3"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 2,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 56,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "90c7b09f2111826879be4bed6ae5764e540c09b68a1fd6a9e0d1f03adc10c025"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "scalar variation fixes density and coupling normalization"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "expanded curvature polynomial agrees with differentiated KG",
+        "dust conservation solves first-order velocity equation",
+        "inverse differential equation recovers forward power-law",
+        "non-power-law inverse velocity",
+        "unique-fixture differential residual"
+      ],
+      "label": "dust exchange sign in velocity flow",
+      "mutated_helper_sha256": "fc8dc841fb729bb00c7cc8b0165a7bd61299c276bc187089566437908760071e",
+      "original": "-al*d*x-3*h*x*x",
+      "replacement": "+al*d*x-3*h*x*x",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": false,
+            "residual": "2*x*(3*D**2*H*alpha + D*Ddot*alpha - 3*D*H*alpha*x**2 - 2*D*alpha**2*x**3 - 2*D*alphadot*x**2 - 2*Ddot*alpha*x**2)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": false,
+            "residual": "-2*D*alpha*x"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": false,
+            "residual": "2*mm**2*q*(3*q - 2)/(c*t**2)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": false,
+            "residual": "8/(t**2*sqrt(8 - t))"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": false,
+            "residual": "2"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 5,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 53,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "fc8dc841fb729bb00c7cc8b0165a7bd61299c276bc187089566437908760071e"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "dust conservation solves first-order velocity equation"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "expanded curvature polynomial agrees with differentiated KG",
+        "inverse polynomial recovers forward power-law",
+        "non-power-law inverse curvature",
+        "unique-fixture curvature factorization",
+        "instantaneous and differential polynomial gcd",
+        "one extra instantaneous physical root exists",
+        "uncoupled dust-era curvature polynomial is identically zero",
+        "near-degenerate family preserves exact velocity",
+        "root slope vanishes in uncoupled limit",
+        "exceptional coefficients all vanish"
+      ],
+      "label": "response curvature in degree-six constraint",
+      "mutated_helper_sha256": "6768628da1493b1abee232570418a902e22e7234f81ca14d20db4cd5b7f9d2e0",
+      "original": "+6*hd+4*mu",
+      "replacement": "+6*hd+3*mu",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "(4*eps**4 - 8*eps**3 + 79*eps**2 + 78*eps - 72)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 3*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": false,
+            "residual": "-mu*x**4"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": false,
+            "residual": "c**2*(9*c**2*q**2 - 12*c**2*q + 2*c**2 - 18*mm**2*q**3 + 12*mm**2*q**2)/t**6"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": false,
+            "residual": "(9*t**2 + 48*t - 1024)/(64*t**6)"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": false,
+            "residual": "-7*x**4"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": false,
+            "residual": "2 - x"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "-184283/250000",
+              "p_right": "-37927/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": false
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": false,
+            "residual": "-2*x**4/t**2"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": false,
+            "residual": "-2*eps**3/3 - 5*eps**2/3 - 8*eps/3 - 2"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": false,
+            "residual": "-8"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "(4*eps**4 - 8*eps**3 + 79*eps**2 + 78*eps - 72)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": false,
+            "residual": "3*x**4*(-3*H**2 + 2*Hdot)/4"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 10,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 48,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "6768628da1493b1abee232570418a902e22e7234f81ca14d20db4cd5b7f9d2e0"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "expanded curvature polynomial agrees with differentiated KG"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "forward power-law Friedmann",
+        "forward power-law scalar equation",
+        "forward power-law curvature",
+        "inverse polynomial recovers forward power-law",
+        "uncoupled family c=1/2 identical curvature",
+        "uncoupled family c=3/4 identical curvature",
+        "uncoupled family c=1 identical curvature",
+        "fixed-conserved-density fixture curvature after ordered substitution"
+      ],
+      "label": "forward potential slope",
+      "mutated_helper_sha256": "97311208268fe47d2cd781fb6bc2d1449d4bd7e07b689f1681924aa55177e87b",
+      "original": ")*s.exp(-2*s.Symbol(\"z\")/c)",
+      "replacement": ")*s.exp(-3*s.Symbol(\"z\")/c)",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": false,
+            "residual": "(t - 1)*(c**2 + 6*mm**2*q**2 - 4*mm**2*q)/(2*t**3)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": false,
+            "residual": "(2*c**2*t - 3*c**2 + 12*mm**2*q**2*t - 18*mm**2*q**2 - 8*mm**2*q*t + 12*mm**2*q)/(2*c*t**3)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": false,
+            "residual": "(-4*c**2*t + 9*c**2 - 24*mm**2*q**2*t + 54*mm**2*q**2 + 16*mm**2*q*t - 36*mm**2*q)/(2*c**2*t**3)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": false,
+            "residual": "2*c**2*(-4*c**2*t + 9*c**2 - 24*mm**2*q**2*t + 54*mm**2*q**2 + 16*mm**2*q*t - 36*mm**2*q)/t**7"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": false,
+            "residual": "(9 - 4*t)/(2*t**3)"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": false,
+            "residual": "(9 - 4*t)/(2*t**3)"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": false,
+            "residual": "(9 - 4*t)/(2*t**3)"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": false,
+            "residual": "3*(9 - 4*t)/(2*t**3)"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 8,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 50,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "97311208268fe47d2cd781fb6bc2d1449d4bd7e07b689f1681924aa55177e87b"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "forward power-law scalar equation"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "expanded curvature polynomial agrees with differentiated KG",
+        "constant coefficient retains density expansion derivative",
+        "inverse polynomial recovers forward power-law",
+        "non-power-law inverse curvature",
+        "unique-fixture curvature factorization",
+        "instantaneous and differential polynomial gcd",
+        "one extra instantaneous physical root exists",
+        "uncoupled dust-era curvature polynomial is identically zero",
+        "near-degenerate family preserves exact velocity",
+        "exceptional coefficients all vanish"
+      ],
+      "label": "density derivative in polynomial constant",
+      "mutated_helper_sha256": "480807a206de95e6e2cc21d3f90cc4152b2d137f9da2d4106078e2a9d4f013e0",
+      "original": "v-(3*d*h+e)**2)",
+      "replacement": "v-(3*d*h+3*e)**2)",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 18*D*Ddot*H - 9*Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": false,
+            "residual": "-4*Ddot*(3*D*H + 2*Ddot)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": false,
+            "residual": "-4*Ddot*(3*D*H + 2*Ddot)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": false,
+            "residual": "32*mm**4*q**2*(3*q - 4)/t**6"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": false,
+            "residual": "-32/t**6"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": false,
+            "residual": "-32"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": false,
+            "residual": "2 - x"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "-1941027/62500",
+              "p_right": "-523752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": false
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": false,
+            "residual": "-256/(9*t**6)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": false,
+            "residual": "32*(eps - 2)*(eps + 2)**2/9"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": false,
+            "residual": "-36*D**2*H**2"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 10,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 48,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "480807a206de95e6e2cc21d3f90cc4152b2d137f9da2d4106078e2a9d4f013e0"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "unique-fixture curvature factorization"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "uncoupled dust-era curvature polynomial is identically zero"
+      ],
+      "label": "uncoupled scaling curvature",
+      "mutated_helper_sha256": "1643ea4286b0421ccf7120159c3f48f690f2ebb59f95d8fee77378310a4f06c8",
+      "original": "8/t**4,0,0,2/t**2))",
+      "replacement": "8/t**4,0,0,3/t**2))",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": false,
+            "residual": "4*x**4/t**2"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 1,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 57,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "1643ea4286b0421ccf7120159c3f48f690f2ebb59f95d8fee77378310a4f06c8"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "uncoupled dust-era curvature polynomial is identically zero"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "registered-density curvature identity"
+      ],
+      "label": "registered density curvature source",
+      "mutated_helper_sha256": "cbcd328ee8012e4d9014d290617f53f87b41d25f2f1d308b683db2df4117fa86",
+      "original": "-3*hh*s.diff(kk,t)/(2*kk)-3*s.diff(hh,t)+3*hh*rr*qq/kk)",
+      "replacement": "-3*hh*s.diff(kk,t)/(2*kk)-3*s.diff(hh,t)+2*hh*rr*qq/kk)",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": false,
+            "residual": "(3*h(t)*r(t) + Derivative(r(t), t))*h(t)/(2*M**2*Derivative(h(t), t) + r(t))"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 1,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 57,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "cbcd328ee8012e4d9014d290617f53f87b41d25f2f1d308b683db2df4117fa86"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "registered-density curvature identity"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "field reflection preserves potential along reflected history",
+        "field reflection preserves fixed-density curvature"
+      ],
+      "label": "field reflection incorrectly negates potential",
+      "mutated_helper_sha256": "46de1462b548e1e84012b9cfb63e6bb88a90ab14cd9abf2f509bfce0a17422f2",
+      "original": "V_ref=V_old.subs(z,-psi)",
+      "replacement": "V_ref=-V_old.subs(z,-psi)",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": false,
+            "residual": "-3/t**2"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": false,
+            "residual": "-12/t**2"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 2,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 56,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "46de1462b548e1e84012b9cfb63e6bb88a90ab14cd9abf2f509bfce0a17422f2"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "field reflection preserves potential along reflected history"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "exceptional coefficients all vanish"
+      ],
+      "label": "exceptional continuum curvature",
+      "mutated_helper_sha256": "8ad368d1c4d94bdeda89d2dedeae855d3e2889b9a5f2b46adb1be65b91e1471a",
+      "original": "mu:(9*h**2-6*j)/4",
+      "replacement": "mu:(9*h**2-6*j)/3",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "eps*(4*eps**3 + 16*eps**2 + 139*eps + 174)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": false,
+            "residual": "x**4*(3*H**2 - 2*Hdot)"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 1,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 57,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "8ad368d1c4d94bdeda89d2dedeae855d3e2889b9a5f2b46adb1be65b91e1471a"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "exceptional coefficients all vanish"
+    },
+    {
+      "detected": true,
+      "exit_code": 1,
+      "failed_assertions": [
+        "near-degenerate family preserves exact velocity",
+        "root slope vanishes in uncoupled limit"
+      ],
+      "label": "near-degenerate family mismatch",
+      "mutated_helper_sha256": "fc508f7200c95b2bec6e9812aaf33e5a988e37e8f4ef0a88895be1f7dd2b765a",
+      "original": "pp=(2+eps)/3",
+      "replacement": "pp=(3+eps)/3",
+      "result": {
+        "algebra": {
+          "near_degenerate_root_slope": "(4*eps**4 + 28*eps**3 + 255*eps**2 + 405*eps + 36)/9",
+          "polynomial": "Poly(2*alpha**2*x**6 + (9*H*alpha + 2*alphadot)*x**5 + (-2*D*alpha**2 - 9*H**2 + 6*Hdot + 4*mu)*x**4 + (-12*D*H*alpha - 2*D*alphadot - Ddot*alpha)*x**3 + (18*D*H**2 + 6*D*Hdot + 2*Dddot + 12*Ddot*H)*x**2 + (3*D**2*H*alpha + D*Ddot*alpha)*x - 9*D**2*H**2 - 6*D*Ddot*H - Ddot**2, x, domain='ZZ[D,Dddot,Ddot,H,Hdot,alpha,alphadot,mu]')"
+        },
+        "checks": [
+          {
+            "method": "exact symbolic identity",
+            "name": "lapse variation gives Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scalar variation fixes density and coupling normalization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "scale-factor variation plus constraint gives Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "particle dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "expanded curvature polynomial agrees with differentiated KG",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "dust conservation solves first-order velocity equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "leading_coefficient": "2*alpha**2"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "nonzero coupling gives exact degree six",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "degree-six coefficient is positive for nonzero real coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant coefficient retains density expansion derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Friedmann",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law Raychaudhuri",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law matter energy",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law signed coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "forward power-law curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse differential equation recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "inverse polynomial recovers forward power-law",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law scalar equation",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law dust exchange",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "non-power-law inverse curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "r=1/(4t)>0 and v^2=(8-t)/(4t^2)>0; interval explicitly restricted to 1<t<4",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "non-power-law fixture has positive dust and kinetic energy on 1<t<4",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture curvature factorization",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "unique-fixture differential residual",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "instantaneous and differential polynomial gcd",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "interval": "(-7/10,-6/10) inside (-sqrt(2),0)",
+              "p_left": "58973/62500",
+              "p_right": "-23752/15625"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "one extra instantaneous physical root exists",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "minimum formula is not the fixture velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "The actual nonzero scalar force balances acceleration; no claim against a minimum-tracking theorem.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "minimum discrepancy is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled dust-era curvature polynomial is identically zero",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1/2 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-4",
+              "r_times_t_squared": "13/12"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1/2 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=3/4 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-8/3",
+              "r_times_t_squared": "37/48"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=3/4 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical coupling",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "uncoupled family c=1 identical curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": {
+              "canonical_slope": "-2",
+              "r_times_t_squared": "1/3"
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled family c=1 positive matter",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-conserved-density fixture curvature after ordered substitution",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "V''=6/t^2; fixed-rho response curvature=7/t^2 in the unique fixture.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "bare potential curvature alone fails fixture",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "fixed-rho versus fixed-r curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "constant signed-coupling fixture curvature difference",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "registered-density curvature identity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "near-degenerate family preserves exact velocity",
+            "pass": false,
+            "residual": "-(2*eps + 3)*(2*eps**2 - eps + 9)/9"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "root slope vanishes in uncoupled limit",
+            "pass": false,
+            "residual": "4"
+          },
+          {
+            "detail": {
+              "dP_dv_at_true_root": "(4*eps**4 + 28*eps**3 + 255*eps**2 + 405*eps + 36)/9",
+              "interpretation": "Algebraic sensitivity only; no observational covariance or statistical coverage."
+            },
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "near-degenerate finite-input root slope is nonzero",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional coefficients all vanish",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional flow is proportional to velocity",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "exceptional kinetic fraction is conserved",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Only when the resulting polynomial is nonzero at some time; the zero case is handled separately.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "uncoupled nonzero polynomial has degree at most four",
+            "pass": true
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "curvature constraint respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "velocity evolution respects canonical field reflection",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative has prescribed beta squared",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "positive coupling representative derivative",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection reverses coupling without changing energy along history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves potential along reflected history",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "method": "exact symbolic identity",
+            "name": "field reflection preserves fixed-density curvature",
+            "pass": true,
+            "residual": "0"
+          },
+          {
+            "detail": "Different magnitudes c produce different registered Einstein dust densities; signed c is field orientation.",
+            "method": "exact algebra or stated numerical diagnostic",
+            "name": "physical dust normalization resolves scaling-family magnitudes",
+            "pass": true
+          }
+        ],
+        "failed": 2,
+        "input_roles": {
+          "external_reads": "None",
+          "repository_reads": "Imported helper executes the algebra; explicit note/primary/helper byte reads bind integrity",
+          "scientific_data": "None; all fixtures constructed in code"
+        },
+        "passed": 56,
+        "python_version": "3.12.8",
+        "schema": "scalar-history-inverse-v1",
+        "scope": "Exact conditional identities and constructed controls; no empirical validation",
+        "source_sha256": {
+          "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+          "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+          "scripts/scalar_history_inverse_math.py": "fc508f7200c95b2bec6e9812aaf33e5a988e37e8f4ef0a88895be1f7dd2b765a"
+        },
+        "sympy_version": "1.14.0"
+      },
+      "stderr": "",
+      "target": "near-degenerate family preserves exact velocity"
+    }
+  ],
+  "passed": 10,
+  "schema": "scalar-history-mutations-v1",
+  "source_sha256": {
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+    "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+    "scripts/scalar_history_inverse_math.py": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b"
+  }
+}

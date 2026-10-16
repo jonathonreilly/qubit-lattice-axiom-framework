@@ -1,0 +1,452 @@
+{
+  "kind": "Independent exact scalar inverse controls before author artifact exposure",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "sympy": "1.14.0",
+  "summary": {
+    "passed": 64,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "pre_code_proof_and_contract_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dust_equation_derives_velocity_flow",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "positive_A_log_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "friedmann_reconstruction_scalar_equation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "polynomial_from_independent_partial_derivatives",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "polynomial_degree_six",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "polynomial_leading_coefficient",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "polynomial_constant_coefficient",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "reconstructed_fixed_density_curvature",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixed_bare_density_force_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "uncoupled_polynomial_even",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "uncoupled_degree_bound_four",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exceptional_polynomial_identically_zero",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "exceptional_velocity_flow",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "exceptional_fraction_conservation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_friedmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_scalar",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_bare_dust",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_einstein_dust",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_signed_alpha",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_potential_curvature",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_dust_curvature",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_input_mu",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_along_history_force_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_missing_density_term",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_fixed_Einstein_r_is_different",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_open_domain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "affine_potential_does_not_change_mu",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "affine_potential_retains_scalar_residual",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "affine_potential_retains_Friedmann_residual",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "constant_potential_shift_invisible_to_scalar_equation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_scaled_compatibility_polynomial",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_flow_for_constant_scaled_velocity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixture_only_common_flow_root",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "spurious_constraint_root_in_admissible_interval",
+      "passed": true,
+      "detail": {
+        "root_count": 1,
+        "interval": [
+          "-3/4",
+          "-1/2"
+        ]
+      }
+    },
+    {
+      "name": "spurious_root_sign_change",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dust_zero_boundaries_not_constraint_roots",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "physical_scaled_velocity_root",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "physical_velocity_flow",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_friedmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_scalar",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_bare_dust",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_Einstein_dust",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_zero_signed_alpha",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_same_mu",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_constant_fraction",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_polynomial_vanishes_for_all_v",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "continuous_family_all_signed_velocities_follow_flow",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "family_member_open_domain_1/2",
+      "passed": true,
+      "detail": {
+        "A": "13/12",
+        "r": "13/(12*t**2)"
+      }
+    },
+    {
+      "name": "family_member_open_domain_1",
+      "passed": true,
+      "detail": {
+        "A": "1/3",
+        "r": "1/(3*t**2)"
+      }
+    },
+    {
+      "name": "family_member_open_domain_-3/4",
+      "passed": true,
+      "detail": {
+        "A": "37/48",
+        "r": "37/(48*t**2)"
+      }
+    },
+    {
+      "name": "calibration_example_A_half",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration_example_A_one",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration_fixes_lambda_squared",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "lambda_zero_is_excluded_by_velocity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "dust_zero_endpoint_is_excluded",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "density_rescaling_preserves_Einstein_energy",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "density_rescaling_preserves_signed_alpha",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "density_rescaling_preserves_fixed_rho_mass",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "velocity_flow_dimensions",
+      "passed": true,
+      "detail": {
+        "J/v": [
+          1,
+          -2
+        ],
+        "H*v": [
+          1,
+          -2
+        ],
+        "alpha*Q": [
+          1,
+          -2
+        ],
+        "alpha*v^2": [
+          1,
+          -2
+        ],
+        "v_dot": [
+          1,
+          -2
+        ]
+      }
+    },
+    {
+      "name": "de_Sitter_excluded_by_positive_kinetic_and_dust",
+      "passed": true,
+      "detail": {
+        "reason": "Raychaudhuri requires Q=v^2+r>0; Q=0 cannot meet the contract."
+      }
+    },
+    {
+      "name": "owned_pre_exposure_inputs_unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "jet_algebra": {
+      "F": "-3*H*v/2 - Q*alpha/2 + alpha*v**2/2 + (3*H*Q + Qd)/(2*v)",
+      "P": "-9*H**2*Q**2 - 6*H*Q*Qd - Qd**2 + 2*alpha**2*v**6 + v**5*(9*H*alpha + 2*alpha_dot) + v**4*(-9*H**2 + 6*Hd - 2*Q*alpha**2 + 4*mu) + v**3*(-12*H*Q*alpha - 2*Q*alpha_dot - Qd*alpha) + v**2*(18*H**2*Q + 12*H*Qd + 6*Hd*Q + 2*Qdd) + v*(3*H*Q**2*alpha + Q*Qd*alpha)",
+      "R_denominator": "4*v**3",
+      "domain": "Q>0 and 0<v^2<Q; denominator multiplication is reversible only for v!=0",
+      "uniqueness": "F_v is continuous on the domain; IVP uniqueness does not guarantee constraint consistency or global interval existence"
+    },
+    "nonzero_coupling_fixture": {
+      "H": "1/t",
+      "phi": "log(t)",
+      "A": "exp(phi)",
+      "V": "3*exp(-2*phi)/2",
+      "r": "t**(-2)",
+      "alpha": "1",
+      "mu": "7/t**2",
+      "polynomial": "(x - 1)*(2*x**5 + 11*x**4 + 20*x**3 + 4)",
+      "flow_defect": "-(x - 1)*(x**2 - 2)/(2*x)",
+      "common_root_gcd": "x - 1",
+      "spurious_root_interval": [
+        "-3/4",
+        "-1/2"
+      ],
+      "spurious_root_statement": "A constant root x in this interval gives smooth v=x/t satisfying pointwise P=0 but not the dust flow; P alone is insufficient."
+    },
+    "continuous_family": {
+      "H": "2/(3*t)",
+      "A": "(4*M**2/3 - lambda**2)/(rho_star*t_star**2)",
+      "V": "lambda**2*exp(-2*phi/lambda)/(2*t_star**2)",
+      "mu": "2/t**2",
+      "fraction": "3*lambda**2/(4*M**2)",
+      "members": [
+        {
+          "lambda": "1/2",
+          "A": "13/12",
+          "potential": "exp(-4*phi)/8"
+        },
+        {
+          "lambda": "1",
+          "A": "1/3",
+          "potential": "exp(-2*phi)/2"
+        },
+        {
+          "lambda": "-3/4",
+          "A": "37/48",
+          "potential": "9*exp(8*phi/3)/32"
+        }
+      ],
+      "physical_difference": "Different |lambda| change the scalar kinetic fraction and canonical potential slope; same given H, alpha, mu, rho_* and scale-factor normalization.",
+      "excluded_endpoints": "lambda=0 or lambda^2=4M^2/3 are not members of the open-domain family"
+    }
+  },
+  "input_binding_before": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/NEUTRAL_CONTRACT_BEFORE_EXPOSURE_v1.json": {
+      "sha256": "6d78ea25ee49fa16fc5f673b2a83859d7758fedf47162831fedbcb380824d580",
+      "bytes": 1351
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "ef323551a5f64592cca1a1b095a86646f0f631b52ffb1c36ef4fa6293d0300da",
+      "bytes": 10392
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/PRE_CODE_FREEZE_v1.json": {
+      "sha256": "d456c24a58d0b18cd9aa4e4744bcea718b40c3773e2c72c6dd22d9c072c97347",
+      "bytes": 544
+    }
+  },
+  "input_binding_after": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/NEUTRAL_CONTRACT_BEFORE_EXPOSURE_v1.json": {
+      "sha256": "6d78ea25ee49fa16fc5f673b2a83859d7758fedf47162831fedbcb380824d580",
+      "bytes": 1351
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "ef323551a5f64592cca1a1b095a86646f0f631b52ffb1c36ef4fa6293d0300da",
+      "bytes": 10392
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/PRE_CODE_FREEZE_v1.json": {
+      "sha256": "d456c24a58d0b18cd9aa4e4744bcea718b40c3773e2c72c6dd22d9c072c97347",
+      "bytes": 544
+    }
+  },
+  "author_artifacts_read": false,
+  "author_code_imported": false,
+  "empirical_validation": false
+}

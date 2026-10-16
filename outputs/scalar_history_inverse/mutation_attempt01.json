@@ -1,0 +1,24 @@
+{
+  "diagnosis": [
+    "Using 2E in the unique fixture changes S from 2 to -2, so its square and targeted factorization accidentally agree. Change challenge to 3E; general expansion still guards the original polynomial.",
+    "Replacement was too broad and also matched the independently rearranged expected expression. Narrow to the candidate formula line, keeping expected expression unchanged."
+  ],
+  "exit_code": 1,
+  "first_driver_sha256": "7db9fa121525a4e87f9615cfd0ae8af8bcd4b2a43b98c7083aa74136b0ad9459",
+  "first_run_completed_mutations": 6,
+  "first_run_detected": 5,
+  "first_run_interruption": "Registered-density replacement matched two sites; driver raised before writing aggregate output.",
+  "first_run_undetected_target": "density derivative in polynomial constant",
+  "no_result_credit_for_interrupted_run": true,
+  "schema": "scalar-history-mutation-recovery-v1",
+  "scientific_source_changed": false,
+  "stdout": [
+    "PASS particle action source sign",
+    "PASS dust exchange sign in velocity flow",
+    "PASS response curvature in degree-six constraint",
+    "PASS forward potential slope",
+    "FAIL density derivative in polynomial constant",
+    "PASS uncoupled scaling curvature"
+  ],
+  "thresholds_changed": false
+}

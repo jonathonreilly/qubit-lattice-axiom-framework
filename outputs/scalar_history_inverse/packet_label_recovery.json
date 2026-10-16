@@ -1,0 +1,10 @@
+{
+  "cause": "Initial graph extraction had runner_path=null; Primary computation label did not match declared runner grammar.",
+  "change": "Use supported Primary runner label; mathematics and code unchanged.",
+  "helper": [
+    "scripts/scalar_history_inverse_math.py"
+  ],
+  "note_sha256": "4ca2b5578f8e7f8e29f842628771f09b094456d5673a2f3ec694fcd8b57957ba",
+  "old_note_sha256": "9958d3d7ee0d0b48476d12a6f90fa4fb90006816a4234e8471da01e9ddca3929",
+  "runner": "scripts/scalar_history_inverse.py"
+}

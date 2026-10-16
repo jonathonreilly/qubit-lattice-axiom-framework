@@ -1,0 +1,375 @@
+{
+  "schema": "focused-scalar-history-check-manifest-v1",
+  "closed_at_utc": "2026-10-16T09:30:03.298937+00:00",
+  "scope": "Focused independent mathematical/source check; no formal audit status or empirical validation",
+  "root_directory": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar",
+  "path_convention": "All listed file paths are relative to this directory; portable by byte-for-byte directory copy",
+  "manifest_self_excluded": true,
+  "runtime": {
+    "python": "3.12.8",
+    "sympy": "1.14.0",
+    "scientific_subprocess_timeout_seconds": 120,
+    "bytecode_disabled": true
+  },
+  "final_source_sha256": {
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+    "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+    "scripts/scalar_history_inverse_math.py": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+    "outputs/scalar_history_inverse/result.json": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+    "outputs/scalar_history_inverse/review_clarifications.json": "b1e03949f66989271d26e44debb873f5e1ab467be6f0059ded0a9418693c2724",
+    "docs/audit/scripts/build_citation_graph.py": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae"
+  },
+  "final_evidence_checks": {
+    "trailing_whitespace": [],
+    "all_final_binding_checks_passed": true
+  },
+  "file_count": 69,
+  "total_bytes_excluding_manifest": 722940,
+  "files": {
+    "ADDITIONS_BEFORE_CANONICAL_READ_v1.md": {
+      "sha256": "41dccf55229ab5364603a94b9143d6fdbdf519edf1321bf1790984c8e4f0379f",
+      "bytes": 5052,
+      "role": "independent additions with declared post-original exposure"
+    },
+    "AUTHOR_ORIGINAL_EXPOSURE_v1.json": {
+      "sha256": "64c1de8a2c45d57b6224974f95186f36f1e48f2a8e5f974f7a7933a7170efd34",
+      "bytes": 56677,
+      "role": "source snapshot with embedded original UTF-8 bytes"
+    },
+    "AUTHOR_V1_TO_V2_DIFF_v1.json": {
+      "sha256": "70e62f06c28eec8d8a370bfa4da6ecae0580c9ad8478f5d5572aa7e7dca02c73",
+      "bytes": 3162,
+      "role": "lossless source change evidence"
+    },
+    "CANONICAL_NOTE_CHANGE_v1.json": {
+      "sha256": "6ddd5fe298507eec456fdae19aabaeada7990f5c5516aa4587e240dbd12c1a9c",
+      "bytes": 6247,
+      "role": "lossless source change evidence"
+    },
+    "CANONICAL_PRIMARY_METADATA_CHANGE_v1.json": {
+      "sha256": "b7964efae0fe1e0f0e0c08d6ab7f2dd83ac022f663b663969c932687b8ee987e",
+      "bytes": 1250,
+      "role": "lossless source change evidence"
+    },
+    "CANONICAL_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "e300dfce18c99f20ed362df0151514dc349d04146767ec1be4fec92050f5f63d",
+      "bytes": 52472,
+      "role": "source snapshot with embedded original UTF-8 bytes"
+    },
+    "CANONICAL_SOURCE_SNAPSHOT_v2.json": {
+      "sha256": "a2784b063be2eb45aaf9af5d7afafedd77cf993b64384a9b07d5438d73f45ee1",
+      "bytes": 136844,
+      "role": "source snapshot with embedded original UTF-8 bytes"
+    },
+    "CANONICAL_SOURCE_SNAPSHOT_v3.json": {
+      "sha256": "9d3b77c2a0c32c68365af373d3e2694722722e06c5247c1e564172faa5c12c35",
+      "bytes": 136870,
+      "role": "source snapshot with embedded original UTF-8 bytes"
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "ef323551a5f64592cca1a1b095a86646f0f631b52ffb1c36ef4fa6293d0300da",
+      "bytes": 10392,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "FAILURE_AND_CHANGE_RECORD_v1.md": {
+      "sha256": "a3d7b4a58a17cb8d6e05a9bc5c0ea291da06019a0f4daa810af5142877f37fc7",
+      "bytes": 3954,
+      "role": "lossless source change evidence"
+    },
+    "FINAL_SOURCE_BINDING_v1.json": {
+      "sha256": "2f5ff7169686c511a112fd720de9f38b2391cab6197b6a5586ae3b18640d94b8",
+      "bytes": 10183,
+      "role": "final findings, reproduction or preservation binding"
+    },
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "582a5aed29ba11968e47d17f2713bd7d08a07e296bfff23cc97e84eff8ed4d95",
+      "bytes": 1719,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "NEUTRAL_CONTRACT_BEFORE_EXPOSURE_v1.json": {
+      "sha256": "6d78ea25ee49fa16fc5f673b2a83859d7758fedf47162831fedbcb380824d580",
+      "bytes": 1351,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "ORIGINAL_STAGE_AND_ADDITIONS_FREEZE_v1.json": {
+      "sha256": "5420404788ce1c22861822fb6c3d0d8397238b57967775296108ac6b6a5e9ca1",
+      "bytes": 2964,
+      "role": "supporting comparison, integration program or freeze record"
+    },
+    "ORIGINAL_UNIT_COMPARISON_v1.md": {
+      "sha256": "3e5ca23855759db3df02098a5a8e0de3bd03703b2f46ad81553e80cb5312676e",
+      "bytes": 3025,
+      "role": "supporting comparison, integration program or freeze record"
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "d456c24a58d0b18cd9aa4e4744bcea718b40c3773e2c72c6dd22d9c072c97347",
+      "bytes": 544,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "REPORT_v1.md": {
+      "sha256": "3e60148735a9a14330e46f7310278f37e98455a98e414a3b5b5f46bdc605b466",
+      "bytes": 7132,
+      "role": "final findings, reproduction or preservation binding"
+    },
+    "REPRODUCTION_v1.md": {
+      "sha256": "9dc0a361f17a58ea4e6de05b61c78ce4eb5606a5e241f3addb0e7612c1260399",
+      "bytes": 2757,
+      "role": "final findings, reproduction or preservation binding"
+    },
+    "additions_attempt01.run.json": {
+      "sha256": "34b1b0985d7a23df804842be9491aa5bfb6560ce785cf0121510b9dc697d9f8d",
+      "bytes": 2210,
+      "role": "independent additions with declared post-original exposure"
+    },
+    "additions_attempt01.stderr.txt": {
+      "sha256": "732543e355d24743c11b302875723dfad4e1156ae8b401f1f119a88d3daf361a",
+      "bytes": 1972,
+      "role": "independent additions with declared post-original exposure"
+    },
+    "additions_attempt01.stdout.json": {
+      "sha256": "696382658eaf2d73f2af41e549ca8bb2513b89fac59462f897a04f5ca7c94d7b",
+      "bytes": 4180,
+      "role": "independent additions with declared post-original exposure"
+    },
+    "author_original_v1_attempt01.run.json": {
+      "sha256": "b4e356af851ad08fc92469e5e9687f91d2bd53f4bfd7a44ab54c0c2dd6a1fcdd",
+      "bytes": 7535,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "author_original_v1_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "author_original_v1_attempt01.stdout.txt": {
+      "sha256": "20eff3f7010a02966f0263ef02573dda1f9d77675da816c134f3ed6f011c513f",
+      "bytes": 2166,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "author_original_v2_attempt01.run.json": {
+      "sha256": "b023d812b3ad33e707e1a05a8f2ae73151af230478cc11ea377f422087a2d826",
+      "bytes": 7523,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "author_original_v2_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "author_original_v2_attempt01.stdout.txt": {
+      "sha256": "a0338eba599234a39af5ca4c83618383d98ce98ceedc667779ec57581c8bab6a",
+      "bytes": 2280,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "canonical_attempt01.extraction.json": {
+      "sha256": "5c2975ccc5ee874c6c5123ba5b0e7e7a91cea90c1faf5d0fcb87017d8669c5fb",
+      "bytes": 936,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01.read_closure.json": {
+      "sha256": "8427e9693fbda25d4d08ab0b7c41cf76fedb53e2865eab3beafc047a79eafe02",
+      "bytes": 2445,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01.run.json": {
+      "sha256": "18073ce1f7b61f7758f0458355f6a203e845a2f41a674e252c4a7ab9d2c0a040",
+      "bytes": 6927,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01.stdout.txt": {
+      "sha256": "0838bb8aeb6eb61746b12e3cd8512df9243ec628c65bc4ac498495e74a8cf559",
+      "bytes": 2993,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01_repository/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": {
+      "sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+      "bytes": 21973,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01_repository/outputs/scalar_history_inverse/result.json": {
+      "sha256": "1d6c170cce2f073eb98b7a0a132fb13312a60cf101f013b72ecebfb97ffe4286",
+      "bytes": 11830,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01_repository/scripts/scalar_history_inverse.py": {
+      "sha256": "d540f1b5a69093afb74950ba101f81aed757495c0e3f5105471318fdf1ccbd4b",
+      "bytes": 1807,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt01_repository/scripts/scalar_history_inverse_math.py": {
+      "sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+      "bytes": 12259,
+      "role": "preserved canonical replay before metadata correction"
+    },
+    "canonical_attempt02.extraction.json": {
+      "sha256": "5c2975ccc5ee874c6c5123ba5b0e7e7a91cea90c1faf5d0fcb87017d8669c5fb",
+      "bytes": 936,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02.read_closure.json": {
+      "sha256": "5adb1c20787eb9178fb740c02dbe5e283650e1475d0d2b587ca2e58d05de0fbd",
+      "bytes": 2445,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02.run.json": {
+      "sha256": "61638c0b1a0cd96fbcb5cb556fa95bdc3fb77d15a961a08b65a92ee0c7efcc14",
+      "bytes": 6973,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02.stdout.txt": {
+      "sha256": "0838bb8aeb6eb61746b12e3cd8512df9243ec628c65bc4ac498495e74a8cf559",
+      "bytes": 2993,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02_repository/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": {
+      "sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+      "bytes": 21973,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02_repository/outputs/scalar_history_inverse/result.json": {
+      "sha256": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+      "bytes": 11856,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02_repository/scripts/scalar_history_inverse.py": {
+      "sha256": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+      "bytes": 1833,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "canonical_attempt02_repository/scripts/scalar_history_inverse_math.py": {
+      "sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+      "bytes": 12259,
+      "role": "final unchanged canonical replay and observation"
+    },
+    "check_canonical_integration_v1.py": {
+      "sha256": "67962ae739af47c3bce7f7a7b889b2541ab513dbc4c8297b08fd8a27c0438fee",
+      "bytes": 8862,
+      "role": "supporting comparison, integration program or freeze record"
+    },
+    "check_canonical_integration_v2.py": {
+      "sha256": "b3117005005073d98689d928d053cd37adcfe1450302ccc4c371fc7c3eaffb7a",
+      "bytes": 9041,
+      "role": "supporting comparison, integration program or freeze record"
+    },
+    "independent_additions_v1.py": {
+      "sha256": "39b579eb188a1ead8684fcf3a203684ba61e7bfc1f68bff85baed7ffdd6b006b",
+      "bytes": 5854,
+      "role": "independent additions with declared post-original exposure"
+    },
+    "independent_attempt01.run.json": {
+      "sha256": "dfaa17f20fe1a67a2975d148a54c64d829e055e11f97b2eb9064c54196820c3c",
+      "bytes": 3919,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "independent_attempt01.stderr.txt": {
+      "sha256": "1124ee76d53fd607237900613c978aa410d51d782938ee2dd25fe14be1a2a7d2",
+      "bytes": 4136,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "845ebebc949fc7b9559666b4b133734a3a4253e292f2870c8a966b755079ef8b",
+      "bytes": 11500,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "independent_exact_controls_v1.py": {
+      "sha256": "adece26a88b16eeaaa71d5759a7df3e3ac546c4be47f3da4dc1ce140b1520acf",
+      "bytes": 10760,
+      "role": "frozen independent pre-author proof and execution"
+    },
+    "metadata_snapshot_attempt01.py": {
+      "sha256": "c857025fa8b1351b3589f15619ba28066b3ef500e6293a18d876383272e516e1",
+      "bytes": 3477,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "metadata_snapshot_attempt01.run.json": {
+      "sha256": "b57a81b7753a67018f9b230b0fcf1c908edf30a28c588a216c34522d69a5d35a",
+      "bytes": 1705,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "metadata_snapshot_attempt01.stderr.txt": {
+      "sha256": "d5d351cf37f28c7218e332e554dbe534057628b2961f5ab64647b3e186a26503",
+      "bytes": 89,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "metadata_snapshot_attempt01.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "metadata_snapshot_attempt02.py": {
+      "sha256": "40fa66e999d859f42aab2c6db1ffbe96ccd47094e3ed7faf0e21a9b3a9ac1414",
+      "bytes": 3488,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "metadata_snapshot_attempt02.run.json": {
+      "sha256": "a50723c5dd4047055195a4e07075dc1832022093bf94802975fba604eb9d953d",
+      "bytes": 1124,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "metadata_snapshot_attempt02.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "metadata_snapshot_attempt02.stdout.txt": {
+      "sha256": "05c5bfde196b9b0101d819e8be41e6591c705ae562d868db61ee0f2b3ba94e23",
+      "bytes": 1224,
+      "role": "historical packaging attempt or recovery; not a scientific runner"
+    },
+    "observe_canonical_replay_v1.py": {
+      "sha256": "656238c9b15b4798acb817e3063136c2959875e5b466e25c726fdc32a3130f7f",
+      "bytes": 3654,
+      "role": "supporting comparison, integration program or freeze record"
+    },
+    "original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json": {
+      "sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+      "bytes": 8968,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": {
+      "sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+      "bytes": 9163,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "original_replay/NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": {
+      "sha256": "eb0c9d27aa497caa77adb4fe0f9865517ba2617cd48322ebe6bce8da4a8b3436",
+      "bytes": 12311,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "original_replay/check_nonequilibrium_scalar_v1.py": {
+      "sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+      "bytes": 9690,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "original_replay/check_nonequilibrium_scalar_v2.py": {
+      "sha256": "7622b4359a1f432760f3540eae7f5720c2f314faea42f6fff8fdc426457ab599",
+      "bytes": 10050,
+      "role": "original author reproduction including historical v1 failures"
+    },
+    "replay_original_unit_bounded_v1.py": {
+      "sha256": "08da8347593e857bc46196455b0070f2c1bb4784a1418f8829236428e84a7976",
+      "bytes": 5103,
+      "role": "supporting comparison, integration program or freeze record"
+    },
+    "run_additions_bounded_v1.py": {
+      "sha256": "a8504a3d357d6ad3207d684f6083d7ebc05f08397b47f16e6b3ab94d508e436f",
+      "bytes": 2592,
+      "role": "independent additions with declared post-original exposure"
+    },
+    "run_independent_bounded_v1.py": {
+      "sha256": "0b79bdcf0c40328cb5b72049475079ff64a1aa3400154bc0387ec8f0b365c788",
+      "bytes": 3331,
+      "role": "frozen independent pre-author proof and execution"
+    }
+  }
+}

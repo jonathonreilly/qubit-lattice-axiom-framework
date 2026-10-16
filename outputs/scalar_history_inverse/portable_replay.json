@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "actual_sha256": "845ebebc949fc7b9559666b4b133734a3a4253e292f2870c8a966b755079ef8b",
+      "byte_identical_output": true,
+      "case": "independent pre-exposure mathematics",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_sha256": "845ebebc949fc7b9559666b4b133734a3a4253e292f2870c8a966b755079ef8b",
+      "passed": true,
+      "stderr": "{\"progress\": \"pre_code_proof_and_contract_unchanged\", \"passed\": true}\n{\"progress\": \"dust_equation_derives_velocity_flow\", \"passed\": true}\n{\"progress\": \"positive_A_log_derivative\", \"passed\": true}\n{\"progress\": \"friedmann_reconstruction_scalar_equation\", \"passed\": true}\n{\"progress\": \"polynomial_from_independent_partial_derivatives\", \"passed\": true}\n{\"progress\": \"polynomial_degree_six\", \"passed\": true}\n{\"progress\": \"polynomial_leading_coefficient\", \"passed\": true}\n{\"progress\": \"polynomial_constant_coefficient\", \"passed\": true}\n{\"progress\": \"reconstructed_fixed_density_curvature\", \"passed\": true}\n{\"progress\": \"fixed_bare_density_force_derivative\", \"passed\": true}\n{\"progress\": \"uncoupled_polynomial_even\", \"passed\": true}\n{\"progress\": \"uncoupled_degree_bound_four\", \"passed\": true}\n{\"progress\": \"exceptional_polynomial_identically_zero\", \"passed\": true}\n{\"progress\": \"exceptional_velocity_flow\", \"passed\": true}\n{\"progress\": \"exceptional_fraction_conservation\", \"passed\": true}\n{\"progress\": \"fixture_friedmann\", \"passed\": true}\n{\"progress\": \"fixture_raychaudhuri\", \"passed\": true}\n{\"progress\": \"fixture_scalar\", \"passed\": true}\n{\"progress\": \"fixture_bare_dust\", \"passed\": true}\n{\"progress\": \"fixture_einstein_dust\", \"passed\": true}\n{\"progress\": \"fixture_signed_alpha\", \"passed\": true}\n{\"progress\": \"fixture_potential_curvature\", \"passed\": true}\n{\"progress\": \"fixture_dust_curvature\", \"passed\": true}\n{\"progress\": \"fixture_input_mu\", \"passed\": true}\n{\"progress\": \"fixture_along_history_force_derivative\", \"passed\": true}\n{\"progress\": \"fixture_missing_density_term\", \"passed\": true}\n{\"progress\": \"fixture_fixed_Einstein_r_is_different\", \"passed\": true}\n{\"progress\": \"fixture_open_domain\", \"passed\": true}\n{\"progress\": \"affine_potential_does_not_change_mu\", \"passed\": true}\n{\"progress\": \"affine_potential_retains_scalar_residual\", \"passed\": true}\n{\"progress\": \"affine_potential_retains_Friedmann_residual\", \"passed\": true}\n{\"progress\": \"constant_potential_shift_invisible_to_scalar_equation\", \"passed\": true}\n{\"progress\": \"fixture_scaled_compatibility_polynomial\", \"passed\": true}\n{\"progress\": \"fixture_flow_for_constant_scaled_velocity\", \"passed\": true}\n{\"progress\": \"fixture_only_common_flow_root\", \"passed\": true}\n{\"progress\": \"spurious_constraint_root_in_admissible_interval\", \"passed\": true}\n{\"progress\": \"spurious_root_sign_change\", \"passed\": true}\n{\"progress\": \"dust_zero_boundaries_not_constraint_roots\", \"passed\": true}\n{\"progress\": \"physical_scaled_velocity_root\", \"passed\": true}\n{\"progress\": \"physical_velocity_flow\", \"passed\": true}\n{\"progress\": \"continuous_family_friedmann\", \"passed\": true}\n{\"progress\": \"continuous_family_raychaudhuri\", \"passed\": true}\n{\"progress\": \"continuous_family_scalar\", \"passed\": true}\n{\"progress\": \"continuous_family_bare_dust\", \"passed\": true}\n{\"progress\": \"continuous_family_Einstein_dust\", \"passed\": true}\n{\"progress\": \"continuous_family_zero_signed_alpha\", \"passed\": true}\n{\"progress\": \"continuous_family_same_mu\", \"passed\": true}\n{\"progress\": \"continuous_family_constant_fraction\", \"passed\": true}\n{\"progress\": \"continuous_family_polynomial_vanishes_for_all_v\", \"passed\": true}\n{\"progress\": \"continuous_family_all_signed_velocities_follow_flow\", \"passed\": true}\n{\"progress\": \"family_member_open_domain_1/2\", \"passed\": true}\n{\"progress\": \"family_member_open_domain_1\", \"passed\": true}\n{\"progress\": \"family_member_open_domain_-3/4\", \"passed\": true}\n{\"progress\": \"calibration_example_A_half\", \"passed\": true}\n{\"progress\": \"calibration_example_A_one\", \"passed\": true}\n{\"progress\": \"calibration_fixes_lambda_squared\", \"passed\": true}\n{\"progress\": \"lambda_zero_is_excluded_by_velocity\", \"passed\": true}\n{\"progress\": \"dust_zero_endpoint_is_excluded\", \"passed\": true}\n{\"progress\": \"density_rescaling_preserves_Einstein_energy\", \"passed\": true}\n{\"progress\": \"density_rescaling_preserves_signed_alpha\", \"passed\": true}\n{\"progress\": \"density_rescaling_preserves_fixed_rho_mass\", \"passed\": true}\n{\"progress\": \"velocity_flow_dimensions\", \"passed\": true}\n{\"progress\": \"de_Sitter_excluded_by_positive_kinetic_and_dust\", \"passed\": true}\n{\"progress\": \"owned_pre_exposure_inputs_unchanged\", \"passed\": true}\n",
+      "stdout_sha256": "845ebebc949fc7b9559666b4b133734a3a4253e292f2870c8a966b755079ef8b"
+    },
+    {
+      "actual_sha256": "696382658eaf2d73f2af41e549ca8bb2513b89fac59462f897a04f5ca7c94d7b",
+      "byte_identical_output": true,
+      "case": "post-exposure independent additions",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_sha256": "696382658eaf2d73f2af41e549ca8bb2513b89fac59462f897a04f5ca7c94d7b",
+      "passed": true,
+      "stderr": "{\"progress\": \"reflection_polynomial_invariant\", \"passed\": true}\n{\"progress\": \"reflection_velocity_flow_odd\", \"passed\": true}\n{\"progress\": \"positive_square_coupling\", \"passed\": true}\n{\"progress\": \"positive_square_derivative\", \"passed\": true}\n{\"progress\": \"nontrivial_action_reflection_A\", \"passed\": true}\n{\"progress\": \"nontrivial_action_reflection_V\", \"passed\": true}\n{\"progress\": \"nontrivial_action_reflection_coupling\", \"passed\": true}\n{\"progress\": \"nontrivial_action_reflection_mass\", \"passed\": true}\n{\"progress\": \"energy_negation_is_not_field_reflection\", \"passed\": true}\n{\"progress\": \"registered_density_mass_sign_1\", \"passed\": true}\n{\"progress\": \"registered_density_dust_sign_1\", \"passed\": true}\n{\"progress\": \"registered_density_mass_sign_-1\", \"passed\": true}\n{\"progress\": \"registered_density_dust_sign_-1\", \"passed\": true}\n{\"progress\": \"registered_density_square_compatibility\", \"passed\": true}\n{\"progress\": \"registered_density_original_scalar_equation\", \"passed\": true}\n{\"progress\": \"variable_coupling_closed_alpha\", \"passed\": true}\n{\"progress\": \"variable_coupling_closed_mass\", \"passed\": true}\n{\"progress\": \"variable_coupling_registered_density_agreement\", \"passed\": true}\n{\"progress\": \"variable_coupling_dust_match\", \"passed\": true}\n{\"progress\": \"variable_coupling_domain_at_end_bounds\", \"passed\": true}\n{\"progress\": \"Jordan_expansion_kinematics\", \"passed\": true}\n{\"progress\": \"Jordan_to_bare_density\", \"passed\": true}\n{\"progress\": \"Jordan_to_Einstein_density\", \"passed\": true}\n{\"progress\": \"near_degenerate_true_root\", \"passed\": true}\n{\"progress\": \"near_degenerate_hand_slope\", \"passed\": true}\n{\"progress\": \"near_degenerate_input_mass\", \"passed\": true}\n{\"progress\": \"polynomial_mass_derivative\", \"passed\": true}\n{\"progress\": \"near_degenerate_sensitivity\", \"passed\": true}\n{\"progress\": \"near_degenerate_scaled_limit\", \"passed\": true}\n{\"progress\": \"unique_fixture_slope_cross_check\", \"passed\": true}\n{\"progress\": \"near_degenerate_positive_domain\", \"passed\": true}\n",
+      "stdout_sha256": "696382658eaf2d73f2af41e549ca8bb2513b89fac59462f897a04f5ca7c94d7b"
+    },
+    {
+      "actual_sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+      "byte_identical_output": true,
+      "case": "preserved exploratory v1",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "expected_sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "20eff3f7010a02966f0263ef02573dda1f9d77675da816c134f3ed6f011c513f"
+    },
+    {
+      "actual_sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+      "byte_identical_output": true,
+      "case": "preserved exploratory v2",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "a0338eba599234a39af5ca4c83618383d98ce98ceedc667779ec57581c8bab6a"
+    },
+    {
+      "actual_sha256": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+      "byte_identical_output": true,
+      "case": "canonical primary",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "expected_sha256": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+      "passed": true,
+      "stderr": "",
+      "stdout_sha256": "0838bb8aeb6eb61746b12e3cd8512df9243ec628c65bc4ac498495e74a8cf559"
+    }
+  ],
+  "failed": 0,
+  "passed": 5,
+  "runner_sha256": "bb7daaa67df63bb919c07dbc11e81e6b97f698d8d18fe726127fab8ae9677d0d",
+  "schema": "scalar-history-portable-replay-v1",
+  "scope": "Root-authored portability/reproduction; no new independent or empirical checks"
+}

@@ -1,0 +1,57 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/independent_additions_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "start_utc": "2026-10-16T09:15:41.928147+00:00",
+  "end_utc": "2026-10-16T09:15:42.270973+00:00",
+  "wall_seconds": 0.342266040854156,
+  "child_user_seconds": 0.238394,
+  "child_system_seconds": 0.029547,
+  "child_peak_rss_platform_units": 60833792,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "stdout_bytes": 4180,
+  "stdout_sha256": "696382658eaf2d73f2af41e549ca8bb2513b89fac59462f897a04f5ca7c94d7b",
+  "stderr_bytes": 1972,
+  "stderr_sha256": "732543e355d24743c11b302875723dfad4e1156ae8b401f1f119a88d3daf361a",
+  "input_binding_before": {
+    "ADDITIONS_BEFORE_CANONICAL_READ_v1.md": {
+      "sha256": "41dccf55229ab5364603a94b9143d6fdbdf519edf1321bf1790984c8e4f0379f",
+      "bytes": 5052
+    },
+    "independent_additions_v1.py": {
+      "sha256": "39b579eb188a1ead8684fcf3a203684ba61e7bfc1f68bff85baed7ffdd6b006b",
+      "bytes": 5854
+    },
+    "run_additions_bounded_v1.py": {
+      "sha256": "a8504a3d357d6ad3207d684f6083d7ebc05f08397b47f16e6b3ab94d508e436f",
+      "bytes": 2592
+    }
+  },
+  "input_binding_after": {
+    "ADDITIONS_BEFORE_CANONICAL_READ_v1.md": {
+      "sha256": "41dccf55229ab5364603a94b9143d6fdbdf519edf1321bf1790984c8e4f0379f",
+      "bytes": 5052
+    },
+    "independent_additions_v1.py": {
+      "sha256": "39b579eb188a1ead8684fcf3a203684ba61e7bfc1f68bff85baed7ffdd6b006b",
+      "bytes": 5854
+    },
+    "run_additions_bounded_v1.py": {
+      "sha256": "a8504a3d357d6ad3207d684f6083d7ebc05f08397b47f16e6b3ab94d508e436f",
+      "bytes": 2592
+    }
+  },
+  "inputs_unchanged": true,
+  "output_parse_error": null,
+  "summary": {
+    "passed": 31,
+    "failed": 0
+  }
+}

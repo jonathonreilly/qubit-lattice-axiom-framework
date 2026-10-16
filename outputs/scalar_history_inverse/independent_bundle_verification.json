@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-10-16T09:31:16.125035+00:00",
+  "checker": "/root/common_action_check",
+  "scope": "Root read proof, all code, outputs, failures and source changes; full closed manifest and source pins verified before byte-for-byte copy.",
+  "independent_manifest_sha256": "1fcb1cb4316c71b16b1d999e2e3bee8c0eb3f3c1b5a0ceab390bb731dafd5e00",
+  "independent_report_sha256": "3e60148735a9a14330e46f7310278f37e98455a98e414a3b5b5f46bdc605b466",
+  "copied_file_count": 70,
+  "listed_file_count_excluding_manifest": 69,
+  "all_bindings_match": true,
+  "final_source_sha256": {
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+    "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+    "scripts/scalar_history_inverse_math.py": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+    "outputs/scalar_history_inverse/result.json": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+    "outputs/scalar_history_inverse/review_clarifications.json": "b1e03949f66989271d26e44debb873f5e1ab467be6f0059ded0a9418693c2724",
+    "docs/audit/scripts/build_citation_graph.py": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae"
+  },
+  "independent_pre_exposure_controls": 64,
+  "independent_post_exposure_additions": 31,
+  "canonical_replay_controls": 58,
+  "integration_checks": 16,
+  "independence_limit": "Same Python/SymPy; no independent empirical data or software/CAS, no formal audit or priority check."
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "Packaging-only snapshot recovery",
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/metadata_snapshot_attempt02.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar",
+  "timeout_seconds": 120,
+  "start_utc": "2026-10-16T09:25:50.520188+00:00",
+  "end_utc": "2026-10-16T09:25:50.548891+00:00",
+  "wall_seconds": 0.028480665758252144,
+  "returncode": 0,
+  "timed_out": false,
+  "script_sha256": "40fa66e999d859f42aab2c6db1ffbe96ccd47094e3ed7faf0e21a9b3a9ac1414",
+  "stdout_sha256": "05c5bfde196b9b0101d819e8be41e6591c705ae562d868db61ee0f2b3ba94e23",
+  "stdout_bytes": 1224,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0,
+  "PYTHONDONTWRITEBYTECODE": "1"
+}

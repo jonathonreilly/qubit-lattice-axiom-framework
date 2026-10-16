@@ -1,0 +1,9 @@
+{
+  "time_utc": "2026-10-16T08:55:26.734699+00:00",
+  "source": "Neutral contract supplied by parent message; no author note/code/results opened",
+  "contract_utf8": "Flat Einstein FLRW, known M>0, canonical scalar, universal conformal pressureless particle action S=integral sqrt(-g)[M^2 R/2-(dphi)^2/2-V(phi)]-sum m_i integral A(phi) ds_i. A>0; conserved bare density rho=rho_* a^-3; Einstein dust r=A rho. Inputs on a connected open interval are H(t) C3, signed alpha(t)=A_phi/A C1, and continuous mu(t)=V_phiphi+rho A_phiphi holding rho fixed. Restrict to v=phi_dot nowhere zero and r>0; rho_* and scale-factor normalization supplied when discussing absolute A. Determine necessity/sufficiency of a velocity compatibility description, any finite or continuous history ambiguity, and role of initial conditions/calibration. Challenge domain, density/frame, differentiated-equation constants and uniqueness. Construct an independent exact fixture and a degeneracy/counterexample where useful.",
+  "contract_sha256": "0317a4bef1bbdeea3d0108998f246a60bdb3153f4f5e89971fd38a9769b54c40",
+  "author_artifacts_read": false,
+  "prior_work": "Earlier independent tasks are background only, not authority for this proof.",
+  "write_boundary": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar"
+}

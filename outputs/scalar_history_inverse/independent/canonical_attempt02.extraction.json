@@ -1,0 +1,34 @@
+{
+  "source_sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+  "isolated_functions": [
+    "_dynamic_loader_param_indexes",
+    "_parse_script_imports",
+    "_path_parts_from_ast",
+    "_script_stem_from_ast",
+    "_script_stem_from_path_parts",
+    "extract_claim_type_hint",
+    "extract_runner",
+    "extract_section",
+    "first_runner_path",
+    "normalize_claim_type",
+    "normalize_runner_path",
+    "resolve_helper_runner_paths",
+    "runner_paths"
+  ],
+  "pipeline_imported_or_run": false,
+  "primary_runner": "scripts/scalar_history_inverse.py",
+  "helper_runners": [
+    "scripts/scalar_history_inverse_math.py"
+  ],
+  "claim_hint": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "declared_primary_contract": {
+    "AUDIT_TIMEOUT_SEC": 120,
+    "AUDIT_INPUT_PATHS": [
+      "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "scripts/scalar_history_inverse_math.py"
+    ]
+  }
+}

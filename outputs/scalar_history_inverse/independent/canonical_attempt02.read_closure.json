@@ -1,0 +1,77 @@
+{
+  "kind": "CPython audit-hook observation of copied primary execution",
+  "repository_root": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/canonical_attempt02_repository",
+  "declared_repository_reads": [
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+    "scripts/scalar_history_inverse.py",
+    "scripts/scalar_history_inverse_math.py"
+  ],
+  "observed_existing_repository_read_paths": [
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+    "scripts/scalar_history_inverse.py",
+    "scripts/scalar_history_inverse_math.py"
+  ],
+  "exact_existing_read_closure": true,
+  "read_attempts": [
+    {
+      "path": "scripts/scalar_history_inverse.py",
+      "exists_before_open": true,
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": "scripts/scalar_history_inverse.py",
+      "exists_before_open": true,
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": "scripts/scalar_history_inverse.py",
+      "exists_before_open": true,
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": "scripts/__pycache__/scalar_history_inverse_math.cpython-312.pyc",
+      "exists_before_open": false,
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": "scripts/scalar_history_inverse_math.py",
+      "exists_before_open": true,
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": "scripts/scalar_history_inverse.py",
+      "exists_before_open": true,
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
+      "exists_before_open": true,
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": "scripts/scalar_history_inverse_math.py",
+      "exists_before_open": true,
+      "mode": "r",
+      "flags": 16777216
+    }
+  ],
+  "writes_inside_bundle": [
+    {
+      "path": "canonical_attempt02_repository/outputs/scalar_history_inverse/result.json",
+      "mode": "w",
+      "flags": 16778753
+    }
+  ],
+  "rejected_outside_writes": [],
+  "returncode": 0,
+  "exception": null,
+  "dont_write_bytecode": true,
+  "scope": "Repository opens during the copied primary only. Installed Python/library imports outside the repository are environment dependencies, not an independent full-system trace."
+}

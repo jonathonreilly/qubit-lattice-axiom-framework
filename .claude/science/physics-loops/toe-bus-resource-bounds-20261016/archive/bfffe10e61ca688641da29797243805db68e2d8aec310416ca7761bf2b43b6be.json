@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-16T12:37:48.616176+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check",
+  "source_sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7",
+  "launcher_sha256": "997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4",
+  "scope": "Metadata source identity capture only; no scientific calculation.",
+  "scientific_executions": 0,
+  "timeout_seconds": 30
+}

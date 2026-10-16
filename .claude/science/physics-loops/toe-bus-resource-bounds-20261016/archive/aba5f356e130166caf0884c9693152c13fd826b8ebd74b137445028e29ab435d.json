@@ -1,0 +1,69 @@
+{
+  "accepted_utc": "2026-10-16T13:01:25.643902+00:00",
+  "status": "qualified conditional source acceptance; unpublished; not retained audit",
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 7701,
+    "sha256": "e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5"
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/DERIVATION.md",
+    "bytes": 37212,
+    "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/FREEZE.json",
+    "bytes": 6956,
+    "sha256": "8b96d1e0790c864a1caefe4a7035740e9c0835ebb943d4f0700d7c1f00aa43e2"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/REVIEW.md",
+    "bytes": 17546,
+    "sha256": "20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/FREEZE.json",
+    "bytes": 1676,
+    "sha256": "f62e621034d56367ebbadadd47048d4bfec90beb4161e8eaa69e4a001859da98"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/SOURCE_MANIFEST.json",
+    "bytes": 11765,
+    "sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583"
+  },
+  "root_pre_result_sketch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_proposal/PRE_RESULT_SKETCH.md",
+    "bytes": 7162,
+    "sha256": "b544c0e4d369977adf91620dfb19628901e24226e83bb1e7430486d6ab931d6a"
+  },
+  "root_sketch_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_proposal/FREEZE.json",
+    "bytes": 459,
+    "sha256": "391df8e6a053694a06a0ec96a48fff13223e6debdcb247ab31043ca4165b72a3"
+  },
+  "initial_source_verification": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/SOURCE_VERIFICATION.json",
+    "bytes": 1392,
+    "sha256": "81ce9ebe010aaeeb218e65feef5baecc170411ef7df85821e1aa96a350aaed76"
+  },
+  "claim": "Uniform nominal runtime and numerical precision requests on the supplied admissible shrinking-bias domain; fixed-plant equation36 discharged conditionally.",
+  "runtime_exponent": "P=2+4p+2*kappa*v; d=2 gives1078",
+  "source_checks": {
+    "candidate_members": 33,
+    "author_sources": 23,
+    "review_members": 9,
+    "review_sources": 3
+  },
+  "scientific_executions": 0,
+  "historical_scientific_replays": 0,
+  "independence": "Root unshared pre-result sketch; same-model author continuation; source-exposed same-model focused polynomial-basis derivative proof and precision recomputation. Not full parent validation or retained audit.",
+  "unresolved": [
+    "supplied admissible attenuable bias and physical access",
+    "native purity/phase/calibration/isolation",
+    "chronological preparation composition",
+    "physical energy identification",
+    "arbitrary oracle wall time",
+    "autonomous halt and reuse"
+  ],
+  "editable_prompt_files_changed": []
+}

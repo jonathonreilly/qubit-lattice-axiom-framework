@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-16T04:01:45.061794+00:00",
+  "kind": "exposed_independent_source_review",
+  "disposition": "Supports qualified restricted-envelope replacement; root acceptance pending",
+  "mandatory_qualification": "Replace the full-source inverse assertion by an explicitly defined inverse on the SU(2)-reducing one-action source envelope. Preserve full residual norms and the original PP support classification.",
+  "source_proposal_sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97",
+  "bus_parent_sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+  "general_arguments_checked": [
+    "full-space Sylvester/residual identities",
+    "G_r invariance and dimension",
+    "V and A2 support",
+    "compressed source resolvent and SU(2) formula",
+    "elementary permutation gap",
+    "hyperplane slab and terminating search"
+  ],
+  "reviewer_refinement": "Exact binomial Gram construction of effective source bases; separate from total compiler complexity.",
+  "actual_new_executions": [
+    {
+      "label": "source_envelope",
+      "execution_path": "runs/source_envelope/EXECUTION.json",
+      "execution_bytes": 2920,
+      "execution_sha256": "94b43911eb01ed0134c83e6526123c9c06e6e759a2227e54256e153ecbd523bd",
+      "source_sha256": "7f5ed52e8f1f445f77c38bdfebb48ebaf647ef8219940b4dd93c9cffe53a884f",
+      "launcher_sha256": "f8e376748d0d4d423236bc1fed1b60e7e9a333980af80969138b06949c3ebfb2",
+      "exit_code": 0,
+      "start_utc": "2026-10-16T03:48:12.608252+00:00",
+      "end_utc": "2026-10-16T03:48:13.789338+00:00",
+      "full_stdout_read": true,
+      "full_stderr_read": true
+    },
+    {
+      "label": "exact_gram",
+      "execution_path": "runs/exact_gram/EXECUTION.json",
+      "execution_bytes": 2891,
+      "execution_sha256": "c143bb67cb2bba4db1f2c5096f92d85574fd327b11c88dd3f2e5d14d2ecb99ea",
+      "source_sha256": "e1319e93a508ebd1460a830e0d9e9e072bbacd44d7d050012e67e67a0bb79548",
+      "launcher_sha256": "63e217ab54c7c2a2b12f027c98b5bf8fc10ffd6b65b00b372e761f6bb00807fd",
+      "exit_code": 0,
+      "start_utc": "2026-10-16T03:52:47.978706+00:00",
+      "end_utc": "2026-10-16T03:52:49.158812+00:00",
+      "full_stdout_read": true,
+      "full_stderr_read": true
+    }
+  ],
+  "retained_audit": false,
+  "root_acceptance": null,
+  "polynomial_total_runtime_established": false,
+  "native_supplier_established": false,
+  "editable_prompt_files_changed": []
+}

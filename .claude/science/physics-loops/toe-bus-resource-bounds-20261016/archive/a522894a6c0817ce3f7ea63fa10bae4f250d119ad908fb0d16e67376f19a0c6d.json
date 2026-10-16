@@ -1,0 +1,55 @@
+{
+  "accepted_utc": "2026-10-16T12:48:26.074854+00:00",
+  "status": "qualified conditional source acceptance; unpublished; not retained audit",
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 4913,
+    "sha256": "0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e"
+  },
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 6805,
+    "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990"
+  },
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_proposal/FREEZE.json",
+    "bytes": 436,
+    "sha256": "417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/REVIEW.md",
+    "bytes": 15735,
+    "sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/FREEZE.json",
+    "bytes": 5636,
+    "sha256": "57657ae8f3568932180c78d6504deae992650eb260e1039eb0d5fce7db7f24d4"
+  },
+  "source_inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/SOURCES.json",
+    "bytes": 6919,
+    "sha256": "bd87994c906a47f71c704602e008e84e171247612106787e9b020ee642a9ea6c"
+  },
+  "metadata_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/metadata_run/EXECUTION.json",
+    "bytes": 1153,
+    "sha256": "dae44f200f62b1485ddb69418bc586a0daa9f671bcc13ca349a40571ef0e9ea9"
+  },
+  "review_members_verified": 33,
+  "current_selected_sources_verified": 15,
+  "scientific_executions": 0,
+  "historical_scientific_replays": 0,
+  "verification_scope": "Root analytic reconstruction and complete final review; source-exposed same-model composition check. Metadata does not certify mathematics.",
+  "result": "Fixed-plant nominal duration exponent survives evolved-memory preparation and release-only moment allowances.",
+  "duration_exponent": "72*q^2+260*q+122",
+  "unresolved": [
+    "native preparation and physical calibration",
+    "shrinking-bias uniformity not provided by this result",
+    "runtime target moment accuracy",
+    "physical amplitude/slew and storage",
+    "arbitrary oracle wall time",
+    "autonomous scheduling and halt/reuse"
+  ],
+  "editable_prompt_files_changed": []
+}

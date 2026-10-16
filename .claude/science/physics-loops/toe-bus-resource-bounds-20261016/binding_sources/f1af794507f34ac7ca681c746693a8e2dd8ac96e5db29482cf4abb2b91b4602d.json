@@ -1,0 +1,73 @@
+{
+  "bodies": [
+    {
+      "bytes": 36324,
+      "end_byte_exclusive": 51788,
+      "label": "Fixed-plant resource derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/DERIVATION.md",
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875",
+      "start_byte": 15464
+    },
+    {
+      "bytes": 7196,
+      "end_byte_exclusive": 59072,
+      "label": "Fixed-plant controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b",
+      "start_byte": 51876
+    },
+    {
+      "bytes": 6805,
+      "end_byte_exclusive": 65964,
+      "label": "Preparation/resource proposed argument",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990",
+      "start_byte": 59159
+    },
+    {
+      "bytes": 15735,
+      "end_byte_exclusive": 81777,
+      "label": "Preparation/resource exposed check",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/REVIEW.md",
+      "sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f",
+      "start_byte": 66042
+    },
+    {
+      "bytes": 4913,
+      "end_byte_exclusive": 86780,
+      "label": "Preparation/resource controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e",
+      "start_byte": 81867
+    },
+    {
+      "bytes": 37212,
+      "end_byte_exclusive": 124069,
+      "label": "Shrinking-bias resource derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/DERIVATION.md",
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74",
+      "start_byte": 86857
+    },
+    {
+      "bytes": 17546,
+      "end_byte_exclusive": 141692,
+      "label": "Shrinking-bias exposed check",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/REVIEW.md",
+      "sha256": "20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356",
+      "start_byte": 124146
+    },
+    {
+      "bytes": 7701,
+      "end_byte_exclusive": 149482,
+      "label": "Shrinking-bias controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5",
+      "start_byte": 141781
+    }
+  ],
+  "note": "docs/BUS_RESOURCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "wrapper": {
+    "bytes": 15388,
+    "sha256": "d9c1c1fde0edd4ec66239443fe5e71564cd40c774ea0a26e06998259ee262d97"
+  }
+}

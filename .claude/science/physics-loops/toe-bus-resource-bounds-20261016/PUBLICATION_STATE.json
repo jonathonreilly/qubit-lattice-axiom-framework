@@ -1,0 +1,22 @@
+{
+  "actual_canonical_binding": null,
+  "actual_new_publication": null,
+  "actual_root_wrapper_code_approval": null,
+  "current_main_or_instructions_refresh": null,
+  "editable_prompt_files_changed": [],
+  "git_base": null,
+  "preparation_attachment_observation": {
+    "bytes": 216,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ATTACHMENT.json",
+    "sha256": "69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531"
+  },
+  "preparation_canonical_commit": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+  "preparation_canonical_path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "preparation_publication_observation": {
+    "bytes": 1542,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/PUBLICATION.json",
+    "sha256": "d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c"
+  },
+  "retained_audit": false,
+  "scientific_reexecutions": 0
+}

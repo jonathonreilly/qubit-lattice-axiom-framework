@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T13:29:30.797270+00:00",
+  "baseRefName": "physics-loop/toe-positive-bias-suppliers-20261016",
+  "headRefName": "physics-loop/toe-bus-preparation-20261016",
+  "headRefOid": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+  "isDraft": false,
+  "number": 9640,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9640",
+  "tree": "3b2f1b30a8eeb1365fc0b62c3d5d9d70a046f691",
+  "base_head": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 115070,
+    "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_installed_preparation_2026_10_16.py",
+    "bytes": 57191,
+    "sha256": "af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/PR_BODY.md",
+    "bytes": 1581,
+    "sha256": "19282aa54291c466f4251abda4d19797ffbb3cbbf3565e6c061143dc3e638f37"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

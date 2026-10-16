@@ -1,0 +1,70 @@
+{
+  "kind": "qualified_mathematical_source_acceptance",
+  "utc": "2026-10-16T03:33:23.276394+00:00",
+  "decision": "Qualified source accepted; unpublished",
+  "scope": "Selected old-plant spectral/transition lower bounds and explicit computational input precision, conditional on fixed strong bias and existing interpolation.",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 5004,
+    "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/FREEZE.json",
+    "bytes": 435,
+    "sha256": "7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812"
+  },
+  "reconciliation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PRIOR_RESULT_RECONCILIATION.md",
+    "bytes": 2334,
+    "sha256": "4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/REVIEW.md",
+    "bytes": 19932,
+    "sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/REVIEW_FREEZE.json",
+    "bytes": 4750,
+    "sha256": "20b193a5a2158f911d27670b713bc8fdabfecd79e2130dc60d7f9ed368506fc6"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 3826,
+    "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+  },
+  "pre_result_root_analysis": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/PRE_REVIEW_ANALYTIC_NOTES.md",
+    "bytes": 5394,
+    "sha256": "8db3a92800a16e369b196444c91be40689b5ee477ca2e186e00d14813e926146"
+  },
+  "pre_result_root_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/PRE_REVIEW_FREEZE.json",
+    "bytes": 462,
+    "sha256": "895059d2212b31324279490d387a004ad08f4b320ab2d9f872cd2e6ff944be17"
+  },
+  "source_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 4440,
+    "sha256": "382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4"
+  },
+  "interpolation_parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 66336,
+    "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+  },
+  "actual_science_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/check_run/EXECUTION.json",
+    "bytes": 1906,
+    "sha256": "e56ff8d79a6d5bec3d4098036128f9c68daac05c7521ba6ce3536ca522cdf5a3"
+  },
+  "verified_frozen_members": 15,
+  "root_read_complete": true,
+  "scientific_programs_run_by_root_this_review": 0,
+  "scientific_replays": 0,
+  "retained_audit": false,
+  "publication": null,
+  "fresh_independent_parent_validation": false,
+  "model_or_reasoning_overrides": false,
+  "editable_prompt_files_changed": []
+}

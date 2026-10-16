@@ -1,0 +1,175 @@
+{
+  "frozen_utc": "2026-10-16T12:40:21.075769+00:00",
+  "kind": "final exposed analytical review freeze",
+  "scientific_executions": 0,
+  "metadata_capture_executions": 1,
+  "member_count": 33,
+  "files": [
+    {
+      "path": "CHECKPOINT.json",
+      "bytes": 1686,
+      "sha256": "aaede3dbd3eb301b511e4f685a4775f58bc9dfef727be41df0f342c6b1ef772e"
+    },
+    {
+      "path": "INTERRUPTION_RECOVERY.json",
+      "bytes": 1783,
+      "sha256": "df42a50f7d4e1a141c33b943d00b1d26b598e84533a955d516dd376c1eafaf67"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 15735,
+      "sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f"
+    },
+    {
+      "path": "SEAL_VALIDATION.json",
+      "bytes": 824,
+      "sha256": "535410d2671e566663c44772860add0a260749b485be773ddddc01ed387e8957"
+    },
+    {
+      "path": "SOURCES.json",
+      "bytes": 6919,
+      "sha256": "bd87994c906a47f71c704602e008e84e171247612106787e9b020ee642a9ea6c"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 3152,
+      "sha256": "b03bfa093bca761959100ff155302e6674bc04a5c11c92ad721fff70ec7c7993"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 4906,
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7"
+    },
+    {
+      "path": "interrupted_original/REVIEW.md",
+      "bytes": 14548,
+      "sha256": "c9174369fd3d3143b570b8708d912c4c3f330871a7d97e561fa35eb1b724eaa4"
+    },
+    {
+      "path": "interrupted_original/SOURCE_COVERAGE.md",
+      "bytes": 2489,
+      "sha256": "1696732b1a09f6ee0fdaf14b0ed6b9dce51db7bb5b7abe46730cab8cdeec13e8"
+    },
+    {
+      "path": "interrupted_original/capture_sources.py",
+      "bytes": 4906,
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7"
+    },
+    {
+      "path": "metadata_run/EXECUTION.json",
+      "bytes": 1153,
+      "sha256": "dae44f200f62b1485ddb69418bc586a0daa9f671bcc13ca349a40571ef0e9ea9"
+    },
+    {
+      "path": "metadata_run/LAUNCH.json",
+      "bytes": 739,
+      "sha256": "bfffe10e61ca688641da29797243805db68e2d8aec310416ca7761bf2b43b6be"
+    },
+    {
+      "path": "metadata_run/executed_launcher.py",
+      "bytes": 2292,
+      "sha256": "997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4"
+    },
+    {
+      "path": "metadata_run/executed_source.py",
+      "bytes": 4906,
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7"
+    },
+    {
+      "path": "metadata_run/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_run/stdout",
+      "bytes": 113,
+      "sha256": "176fe6944c44283142c9ff6ae26c15530f139c66a76f963e3ae5066c36b6669e"
+    },
+    {
+      "path": "record_capture.py",
+      "bytes": 2292,
+      "sha256": "997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 6139,
+      "sha256": "ffd9b6c0d25477182ba8fe79bc8bbfd55748b4ad43d6e8e6fba9787c60ec681b"
+    },
+    {
+      "path": "sources/canonical_bus.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "path": "sources/installed_preparation.md",
+      "bytes": 31003,
+      "sha256": "71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29"
+    },
+    {
+      "path": "sources/preparation_acceptance.json",
+      "bytes": 3462,
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "path": "sources/preparation_qualifications.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "path": "sources/proposal.md",
+      "bytes": 6805,
+      "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990"
+    },
+    {
+      "path": "sources/proposal_freeze.json",
+      "bytes": 436,
+      "sha256": "417eb37260f4391671650b3595e66755b9a301a0de4836ad4a19d44ffcd469c8"
+    },
+    {
+      "path": "sources/resource_acceptance.json",
+      "bytes": 2567,
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd"
+    },
+    {
+      "path": "sources/resource_derivation.md",
+      "bytes": 36324,
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+    },
+    {
+      "path": "sources/resource_freeze.json",
+      "bytes": 4683,
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+    },
+    {
+      "path": "sources/resource_qualifications.md",
+      "bytes": 7196,
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+    },
+    {
+      "path": "sources/slew_acceptance.json",
+      "bytes": 3667,
+      "sha256": "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+    },
+    {
+      "path": "sources/slew_proposal.md",
+      "bytes": 7516,
+      "sha256": "6e09476675188bc8053e2b3b00095db3eb5e1ebf59c816c923da0675a33edc44"
+    },
+    {
+      "path": "sources/slew_qualifications.md",
+      "bytes": 6990,
+      "sha256": "1c3714faadd94da6cc7789eb3472406ea2a5195b453ad941dbb163bb606ecc25"
+    },
+    {
+      "path": "sources/slew_review.md",
+      "bytes": 17568,
+      "sha256": "a1b9ef4621b2a4a420d86f30c16449273d0a0a4bc46f22d078a4b2884cbda1d1"
+    },
+    {
+      "path": "sources/slew_review_freeze.json",
+      "bytes": 3887,
+      "sha256": "6794345fce3b8f11bb990512de09c1f40893f290d00d8e0032005ed783757525"
+    }
+  ],
+  "scope": "All local packet files except this root FREEZE.json. Historical nested freezes are included as provenance only."
+}

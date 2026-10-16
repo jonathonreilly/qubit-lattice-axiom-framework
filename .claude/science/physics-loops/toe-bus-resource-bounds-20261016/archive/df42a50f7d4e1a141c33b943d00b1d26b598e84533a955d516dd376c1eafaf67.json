@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-16T12:39:22.492367+00:00",
+  "earlier_state": "Partial text only: no completed source manifest, capture execution or freeze. The root reported a usage-limit interruption. No scientific execution is inferred from the draft.",
+  "original_files": [
+    {
+      "path": "REVIEW.md",
+      "bytes": 14548,
+      "sha256": "c9174369fd3d3143b570b8708d912c4c3f330871a7d97e561fa35eb1b724eaa4",
+      "root_recovery_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/usage_interruption_recovery_1235/partial_snapshot/bus_preparation_resource_exposed_check/REVIEW.md",
+      "local_preserved_copy": "interrupted_original/REVIEW.md"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 2489,
+      "sha256": "1696732b1a09f6ee0fdaf14b0ed6b9dce51db7bb5b7abe46730cab8cdeec13e8",
+      "root_recovery_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/usage_interruption_recovery_1235/partial_snapshot/bus_preparation_resource_exposed_check/SOURCE_COVERAGE.md",
+      "local_preserved_copy": "interrupted_original/SOURCE_COVERAGE.md"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 4906,
+      "sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7",
+      "root_recovery_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/usage_interruption_recovery_1235/partial_snapshot/bus_preparation_resource_exposed_check/capture_sources.py",
+      "local_preserved_copy": "interrupted_original/capture_sources.py"
+    }
+  ],
+  "resumed_metadata_execution": "metadata_run/EXECUTION.json",
+  "scientific_executions_before_interruption": 0,
+  "scientific_executions_after_resumption": 0
+}

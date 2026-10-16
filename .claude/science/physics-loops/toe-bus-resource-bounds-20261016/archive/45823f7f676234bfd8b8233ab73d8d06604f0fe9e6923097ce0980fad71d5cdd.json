@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-16T03:12:02.159153+00:00",
+  "status": "Unaccepted scoped extension; prior interpolation result explicitly reused",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/FREEZE.json",
+      "bytes": 435,
+      "sha256": "7cf5878a88b72e4bcd3bce017fe7e411a671dd5126d9455e0258ec2888f5c812"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PRIOR_RESULT_RECONCILIATION.md",
+      "bytes": 2334,
+      "sha256": "4978e57f67c30b7c455123d190cdc71bf4f210be19126e304f56158b465f0567"
+    }
+  ]
+}

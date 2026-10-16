@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-10-16T12:57:48.974705+00:00",
+  "status": "source identity verified; analytic root review ongoing and focused exposed check pending",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/DERIVATION.md",
+    "bytes": 37212,
+    "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/FREEZE.json",
+    "bytes": 6956,
+    "sha256": "8b96d1e0790c864a1caefe4a7035740e9c0835ebb943d4f0700d7c1f00aa43e2"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/SOURCE_MANIFEST.json",
+    "bytes": 11765,
+    "sha256": "f1c98369443cf21b9751fbe46296f0c3231850fd3d3bd15552b6c3b290787583"
+  },
+  "members_checked": 33,
+  "current_sources_and_captures_checked": 23,
+  "preserved_originals_match": 3,
+  "scientific_executions": 0,
+  "scope": "Metadata only. Root fully read original interrupted33807-byte derivation and complete final diff; finite-real versus effective access, explicit constants and rational inversion additions checked analytically. No accepted conclusion from this record."
+}

@@ -1,0 +1,112 @@
+{
+  "kind": "qualified_conditional_mathematical_source_acceptance",
+  "utc": "2026-10-16T01:42:42.620513+00:00",
+  "root_read_complete": true,
+  "author_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/DERIVATION.md",
+    "bytes": 29555,
+    "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/REVIEW.md",
+    "bytes": 20568,
+    "sha256": "168ce9f2478bf31d09aaecdcd32edc6a7160dd8d558d98174eb80182f2d351e2"
+  },
+  "root_attributed_appendix": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/APPENDIX_HEISENBERG.md",
+    "bytes": 5329,
+    "sha256": "4db3c5e627558505aa767f4b62d67c1ca809c141506db1a376e5c7cff0579a57"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 4450,
+    "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+  },
+  "bus_parent_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 5321,
+    "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+  },
+  "verified_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/FREEZE.json",
+        "bytes": 6970,
+        "sha256": "3cce08e1453052a8b4db806a939f5b3ecc852afb258f10cdfffb25697e64a8ba"
+      },
+      "verified_members": 30
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/REVIEW_FREEZE.json",
+        "bytes": 12919,
+        "sha256": "763daec5e1b3a28b1011cf43a30e2ce79db900142afd3334d3bbd159dbc60ef6"
+      },
+      "verified_members": 76
+    }
+  ],
+  "actual_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/SOURCE_COVERAGE.md",
+      "bytes": 9445,
+      "sha256": "95e4a0f7db33334e2cd655df3f6c1ba1bb9fd3297440e23ae556bf971647b033"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/CHECK_EVIDENCE.md",
+      "bytes": 5500,
+      "sha256": "88eb609bd24fb7916f9cbb6183838f98c296e5247713b82ed43b4b23257f91a7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 9248,
+      "sha256": "36e81480718ab9850d51c5664ae47b53fb1c2ef2c3b79eb82aebb8f26608d9f7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/run_01/LAUNCH.json",
+      "bytes": 1055,
+      "sha256": "bd345d3aff36eb646da073cda57e46f48cd0031ac26e4f8a8a121bc33ce62ad7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/run_01/RESULT.json",
+      "bytes": 97,
+      "sha256": "6bf06b8a046fe8f71b9ca5ead7b86826622b1ca7821d19340d7d8ac3582667fc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/run_01/stdout.jsonl",
+      "bytes": 3259,
+      "sha256": "c5ad02c3f8d70806c961bb85b39fd64fc031533366acd6d2c0cb1d27bd329b74"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/run_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/appendix_run/LAUNCH.json",
+      "bytes": 1197,
+      "sha256": "8dc124ec4a8574fd4f46197d8de646729c6fee815951ee5d7bdf60fbc2c79c5b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/appendix_run/RESULT.json",
+      "bytes": 97,
+      "sha256": "4589c61970187489381550480294e61210b9bf6da42d9c0bdb98f9adcac434c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/appendix_run/stdout.jsonl",
+      "bytes": 786,
+      "sha256": "e5bcad24bbb544f7019a05eb03484b7c80cacd18170b09c195405a2945f7e7bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/appendix_run/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "accepted_scope": "Attenuated static-bias transfer from a supplied admissible strong point, with explicit computable inputs for effective termination; narrow failed-route evidence preserved without a no-go publication PASS.",
+  "independence": "Same-model source-exposed recomputation, separate matrix implementations; no blind/model-family claim.",
+  "no_go_publication_gate_pass": false,
+  "scientific_programs_run_this_acceptance": 0,
+  "retained_audit": false,
+  "native_realization": false,
+  "editable_prompt_files_changed": []
+}

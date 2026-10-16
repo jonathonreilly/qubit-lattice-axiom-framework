@@ -1,0 +1,163 @@
+{
+  "snapshot_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/usage_interruption_recovery_1235/partial_snapshot/shrinking_bias_resource_candidate",
+  "reported_reason": "Parent reports an account usage-limit interruption; no scientific execution or freeze had occurred. Parent reports ordinaryUsageAllowed restored; this worker did not consume a reset or alter a model.",
+  "resume_source_hash": "eb4bd83b1175bbdd4434dff6e1e9a20e62374959b486755bab20d7b90edfb2f2",
+  "pre_resume_snapshot_comparison": [
+    {
+      "relative_path": "CHECKPOINT.md",
+      "snapshot_bytes": 2215,
+      "snapshot_sha256": "87fd43f6145ad34feeb96870a63e91db12cafce7946a9f93175537de9abfd121",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "DERIVATION.md",
+      "snapshot_bytes": 33807,
+      "snapshot_sha256": "eb4bd83b1175bbdd4434dff6e1e9a20e62374959b486755bab20d7b90edfb2f2",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "SOURCE_MANIFEST.json",
+      "snapshot_bytes": 11194,
+      "snapshot_sha256": "1c2a9e64ba114369db30022b13c611276f0e5f3638b0a2781641aa8c9ce6cc0d",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/01_reachable_bus_resource_candidate_DERIVATION.md",
+      "snapshot_bytes": 36324,
+      "snapshot_sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/02_reachable_bus_resource_candidate_FREEZE.json",
+      "snapshot_bytes": 4683,
+      "snapshot_sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/03_reachable_bus_resource_root_review_QUALIFIED_ACCEPTANCE.json",
+      "snapshot_bytes": 2567,
+      "snapshot_sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/04_reachable_bus_resource_root_review_FINAL_QUALIFICATIONS.md",
+      "snapshot_bytes": 7196,
+      "snapshot_sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/05_quantitative_bias_selection_root_review_QUALIFIED_ACCEPTANCE.json",
+      "snapshot_bytes": 3894,
+      "snapshot_sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/06_quantitative_bias_selection_root_review_FINAL_QUALIFICATIONS.md",
+      "snapshot_bytes": 3826,
+      "snapshot_sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/07_quantitative_bias_selection_exposed_check_REVIEW.md",
+      "snapshot_bytes": 19932,
+      "snapshot_sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/08_quantitative_bias_selection_root_proposal_PROPOSED_LEMMAS.md",
+      "snapshot_bytes": 5004,
+      "snapshot_sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/09_docs_ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot_bytes": 66336,
+      "snapshot_sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/10_docs_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot_bytes": 83919,
+      "snapshot_sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/11_strongly_regular_bus_root_review_QUALIFIED_ACCEPTANCE.json",
+      "snapshot_bytes": 5321,
+      "snapshot_sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/12_strongly_regular_bus_root_review_FINAL_QUALIFICATIONS.md",
+      "snapshot_bytes": 4507,
+      "snapshot_sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/13_reachable_bus_corrector_root_proposal_PROPOSED_LEMMAS.md",
+      "snapshot_bytes": 8361,
+      "snapshot_sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/14_reachable_bus_corrector_exposed_check_REVIEW.md",
+      "snapshot_bytes": 21520,
+      "snapshot_sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/15_reachable_bus_corrector_root_review_QUALIFIED_ACCEPTANCE.json",
+      "snapshot_bytes": 2594,
+      "snapshot_sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/16_reachable_bus_corrector_root_review_FINAL_QUALIFICATIONS.md",
+      "snapshot_bytes": 4734,
+      "snapshot_sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/17_static_bias_transfer_candidate_DERIVATION.md",
+      "snapshot_bytes": 29555,
+      "snapshot_sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/18_static_bias_transfer_root_review_QUALIFIED_ACCEPTANCE.json",
+      "snapshot_bytes": 5915,
+      "snapshot_sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/19_static_bias_transfer_root_review_FINAL_QUALIFICATIONS.md",
+      "snapshot_bytes": 4450,
+      "snapshot_sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/20_planning_AGENTS.md",
+      "snapshot_bytes": 11558,
+      "snapshot_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/21_ai_methodology_SCIENCE_WORKFLOW.md",
+      "snapshot_bytes": 15435,
+      "snapshot_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/22_workhorse_SKILL.md",
+      "snapshot_bytes": 13419,
+      "snapshot_sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "matches_active_before_resume_edits": true
+    },
+    {
+      "relative_path": "sources/23_physics-claim-reviewer_SKILL.md",
+      "snapshot_bytes": 14490,
+      "snapshot_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "matches_active_before_resume_edits": true
+    }
+  ]
+}

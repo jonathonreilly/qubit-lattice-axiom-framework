@@ -1,0 +1,42 @@
+{
+  "direct_canonical_parents": [
+    {
+      "bytes": 83919,
+      "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "scope": "Runtime construction; full-gap inverse replaced only by qualified envelope theorem.",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+    },
+    {
+      "bytes": 66336,
+      "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "scope": "Upper-half coefficient-extraction grid only; sections2-3 and exposed assessment section3.",
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "bytes": 133383,
+      "path": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "scope": "Qualified static transfer and admissible positive-direction domain; no incidental preparation or padding conclusion.",
+      "sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36"
+    },
+    {
+      "bytes": 115070,
+      "path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "scope": "Fixed-plant preparation/resource composition only; evolved U_E memory, complete readiness/control/phase conditions. No shrinking-family preparation.",
+      "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+    }
+  ],
+  "git_base": null,
+  "internal_qualified_refinements": [
+    "reachable_bus_corrector",
+    "quantitative_bias_selection"
+  ],
+  "preparation_attachment_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ATTACHMENT.json",
+  "preparation_canonical_commit": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+  "preparation_canonical_path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "preparation_publication_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/PUBLICATION.json",
+  "preparation_source_acceptances": [
+    "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641",
+    "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+  ],
+  "scope": "Actual mathematical parent source now published; resource integration Git base remains unset."
+}

@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-10-16T12:58:36.163692+00:00",
+  "status": "complete exposed analytical check; root acceptance pending",
+  "reviewed_derivation_sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74",
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "source_identities_reverified": 3,
+  "conclusion": "The two requested steps are supported under the stated post-selection margins and qualified parent premises.",
+  "new_proof": "Weighted orthogonal polynomials give ||partial_i J|| <= M_0/w_i, including normalization and QR regularity.",
+  "precision": "Recomputed pole-to-full-A2 sensitivities and phase costs are dominated by equations36-37.",
+  "qualifications": [
+    "Fixed selected nodes, bias and spectral charts; no differentiated discrete selection.",
+    "Late U_T is certified before choosing exact rational M; no log-branch derivative.",
+    "Full-space counterterms, actual reserves and phase costs remain charged.",
+    "Norm-aware arithmetic and all qualified parent/physical premises remain.",
+    "No full parent validation or retained audit."
+  ],
+  "editable_prompt_files_changed": [],
+  "canonical_or_git_changes": false
+}

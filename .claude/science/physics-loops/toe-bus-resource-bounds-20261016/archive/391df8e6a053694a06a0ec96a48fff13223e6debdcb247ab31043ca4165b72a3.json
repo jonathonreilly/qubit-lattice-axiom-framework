@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-16T05:00:06.461949+00:00",
+  "status": "unaccepted_pre_result_root_sketch",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_proposal/PRE_RESULT_SKETCH.md",
+      "bytes": 7162,
+      "sha256": "b544c0e4d369977adf91620dfb19628901e24226e83bb1e7430486d6ab931d6a"
+    }
+  ],
+  "worker_result_seen": false,
+  "scientific_programs_run": 0
+}

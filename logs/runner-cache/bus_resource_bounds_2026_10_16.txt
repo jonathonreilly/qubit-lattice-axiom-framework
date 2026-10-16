@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/bus_resource_bounds_2026_10_16.py
+runner_sha256: 9640262ed67b2bd3d61e443172837483bf660673edb00751784b5c7eaa9d8b40
+input_fingerprint_sha256: fd70569439e9b6705d52863132ad0766b4b5a063e83c4c7c8af1c2969bbe876c
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: exact source coefficients retained; no physical element tested
+per_site: conditional fixed incident budgets retained; no hardware slew certificate
+per_mode: fixed preparation U_E and shrinking-runtime phase contracts remain distinct
+per_block: full physical A2 and scalar reserves retained; provenance checks only
+lattice_wide: no shrinking-family preparation, arbitrary-oracle wall time, halt/reuse or retained audit
+
+----- stderr -----
+

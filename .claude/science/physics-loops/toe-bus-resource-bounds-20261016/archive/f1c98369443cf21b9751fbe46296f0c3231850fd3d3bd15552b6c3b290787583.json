@@ -1,0 +1,170 @@
+{
+  "created_utc": "2026-10-16T05:04:10.065426+00:00",
+  "scope": "Uniform resource extension on supplied admissible bias with positive discriminant leading certificate; exposed same-model continuation.",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/DERIVATION.md",
+      "bytes": 36324,
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875",
+      "capture": "sources/01_reachable_bus_resource_candidate_DERIVATION.md",
+      "read_coverage": "Complete earlier author argument reused at unchanged identity; its equation36 is this task target."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/FREEZE.json",
+      "bytes": 4683,
+      "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996",
+      "capture": "sources/02_reachable_bus_resource_candidate_FREEZE.json",
+      "read_coverage": "Prior freeze unchanged; not a new verification of all historical members."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2567,
+      "sha256": "d02d9205f451d73da584581970ff333ffd6d87a53a695c1e1b992db9ec615edd",
+      "capture": "sources/03_reachable_bus_resource_root_review_QUALIFIED_ACCEPTANCE.json",
+      "read_coverage": "Complete current-task read."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 7196,
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b",
+      "capture": "sources/04_reachable_bus_resource_root_review_FINAL_QUALIFICATIONS.md",
+      "read_coverage": "Complete current-task read. Fixed-H scope and uniformity boundary preserved."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3894,
+      "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff",
+      "capture": "sources/05_quantitative_bias_selection_root_review_QUALIFIED_ACCEPTANCE.json",
+      "read_coverage": "Complete current-task read including actual source pointers."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 3826,
+      "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386",
+      "capture": "sources/06_quantitative_bias_selection_root_review_FINAL_QUALIFICATIONS.md",
+      "read_coverage": "Complete prior-task read reused at refreshed identity."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_exposed_check/REVIEW.md",
+      "bytes": 19932,
+      "sha256": "b654e30c23a07b7bb66465e28d92a705ffe8a97c1607329d907cdfa1bb9fc701",
+      "capture": "sources/07_quantitative_bias_selection_exposed_check_REVIEW.md",
+      "read_coverage": "Complete current-task read. Sections1-6 supply selected-point lower bounds and precision; historical checker not rerun."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 5004,
+      "sha256": "7fb842e6bcdfab8498c7a336d5fcf6c3701b76b6a588da0e75a10bda14cc4baf",
+      "capture": "sources/08_quantitative_bias_selection_root_proposal_PROPOSED_LEMMAS.md",
+      "read_coverage": "Complete current-task read after correcting a missing toe_leap_20261009 path component. Exposed ancestor; its alternative interpolation grid is not used."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "capture": "sources/09_docs_ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_coverage": "Previously read exact sections2-3 and exposed assessment3 in the quantitative task; unchanged identity reused through accepted quantitative review. No new interpolation invention."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+      "capture": "sources/10_docs_STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_coverage": "Complete argument previously read, with exact relevant sections2-11 refreshed in immediately preceding fixed-H resource task. Same identity reused; source inverse replaced only as qualified by reached-envelope acceptance."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726",
+      "capture": "sources/11_strongly_regular_bus_root_review_QUALIFIED_ACCEPTANCE.json",
+      "read_coverage": "Complete prior read reused at refreshed identity."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880",
+      "capture": "sources/12_strongly_regular_bus_root_review_FINAL_QUALIFICATIONS.md",
+      "read_coverage": "Complete prior read reused at refreshed identity."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 8361,
+      "sha256": "0e95d808de5957b53910dba43beef0fd05e8c47e7d1f5828df795ba739d4ff97",
+      "capture": "sources/13_reachable_bus_corrector_root_proposal_PROPOSED_LEMMAS.md",
+      "read_coverage": "Complete immediately prior task read reused unchanged."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_exposed_check/REVIEW.md",
+      "bytes": 21520,
+      "sha256": "63570fc9f63958d4d59742a24864046e1a6e28dc73a6ccccfc0c1a81d30f4031",
+      "capture": "sources/14_reachable_bus_corrector_exposed_check_REVIEW.md",
+      "read_coverage": "Complete immediately prior task read reused unchanged; historical source/checks not replayed."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2594,
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62",
+      "capture": "sources/15_reachable_bus_corrector_root_review_QUALIFIED_ACCEPTANCE.json",
+      "read_coverage": "Complete immediately prior task read reused unchanged."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 4734,
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21",
+      "capture": "sources/16_reachable_bus_corrector_root_review_FINAL_QUALIFICATIONS.md",
+      "read_coverage": "Complete immediately prior task read reused; restricted source inverse and full residual norms are mandatory."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/DERIVATION.md",
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6",
+      "capture": "sources/17_static_bias_transfer_candidate_DERIVATION.md",
+      "read_coverage": "Complete earlier author argument reused. Current task reread sections3-5 in full and searched exact phase/window/access statements. Preserved whole fixed-bias counterexample and late target order."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b",
+      "capture": "sources/18_static_bias_transfer_root_review_QUALIFIED_ACCEPTANCE.json",
+      "read_coverage": "Complete current-task read."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911",
+      "capture": "sources/19_static_bias_transfer_root_review_FINAL_QUALIFICATIONS.md",
+      "read_coverage": "Complete current-task read. Supplied computable names/access and physical qualifications retained."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "capture": "sources/20_planning_AGENTS.md",
+      "read_coverage": "Applicable instructions already read once in this coherent campaign; reused unchanged."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "capture": "sources/21_ai_methodology_SCIENCE_WORKFLOW.md",
+      "read_coverage": "Applicable workflow previously read; reused unchanged."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "capture": "sources/22_workhorse_SKILL.md",
+      "read_coverage": "Already applied scope; no subagents or model override."
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "capture": "sources/23_physics-claim-reviewer_SKILL.md",
+      "read_coverage": "Already applied selective-review scope reused; no audit workflow invoked."
+    }
+  ],
+  "resumed_utc": "2026-10-16T12:43:24.839080+00:00",
+  "resumed_verification": "All23 live source identities and their exact captures reverified against the pre-interruption manifest. The root recovery snapshot has26 files; every one matched the active directory before resume edits. DERIVATION.md was reread completely after resumption. No source argument changed during this continuation.",
+  "interruption_provenance": "INTERRUPTION_PROVENANCE.json; pre-resume primary files preserved under interrupted_partial/. No prior freeze or scientific execution is asserted."
+}

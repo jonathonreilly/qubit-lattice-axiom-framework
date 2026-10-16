@@ -1,0 +1,97 @@
+{
+  "scope": "Finite floating-point check of actual adjacent-swap source and full-space corrector; not a routed-bus simulation or theorem proof.",
+  "exposure": "Root proposal and 3-level fixture read before design; new N=6 construction and code, same model, no historical checker imports.",
+  "fixture_selection": "Outside-G2 source eigenvalue maximizing computed separation; selected adaptively by declared deterministic rule.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "source": {
+    "N": 6,
+    "physical_dimension": 64,
+    "code_dimension": 7,
+    "one_action_dimension": 32,
+    "two_action_dimension": 59,
+    "one_action_columns": 133,
+    "two_action_columns": 1078,
+    "one_action_in_two": 2.867555580357744e-15,
+    "L_invariance_one": 5.2190863066144875e-15,
+    "L_invariance_two": 1.0082499462173945e-14,
+    "number_invariance_two": 9.7825819174092e-15,
+    "swap_invariance_two": 3.302375273139578e-15,
+    "lowering_one_to_two": 1.485332593183756e-15,
+    "raising_one_to_two": 2.3323217323476793e-15,
+    "counterterm_leak_outside_one": 0.5477225575051662,
+    "counterterm_leak_outside_two": 3.227638873415461e-15
+  },
+  "compressed_resolvent": {
+    "outside_G2_eigenvalues": [
+      0.9302158611949953,
+      2.7121760330568554,
+      4.0,
+      4.870453837972297,
+      7.487154267775853
+    ],
+    "selected_index": 4,
+    "alpha": 7.487154267775853,
+    "c": -7.487154267775853,
+    "distance_from_G2_spectrum": 0.9831635539787911,
+    "full_source_min_singular_value": 1.1695857367781691e-15,
+    "restricted_source_min_singular_value": 3.755103460206976,
+    "one_hole_b_N": -0.16381159122138841,
+    "self_energy_formula_error": 5.570849064448996e-17,
+    "wrong_symmetric_only_formula_error": 0.13650965935115697,
+    "reached_inverse_residual": 6.862731274697583e-16
+  },
+  "permutation_gap": {
+    "ell": 15,
+    "proposed_lower_bound": 0.0044444444444444444,
+    "actual_positive_gap": 0.26794919243112114,
+    "operator_inequality_min_eigenvalue": -3.29147302023141e-16
+  },
+  "full_corrector": {
+    "full_dimension": 256,
+    "H1_dimension": 128,
+    "H2_dimension": 236,
+    "code_dimension": 14,
+    "bus_field": 12.512845732224147,
+    "source_frequency": 20.0,
+    "restricted_gap": 0.2679491924310682,
+    "full_sylvester_error": 8.927222858017015e-14,
+    "VJ_outside_H1": 1.0412327255380042e-15,
+    "VH1_outside_H2": 3.003445753591495e-15,
+    "A2J_outside_H2": 9.287930634796746e-17,
+    "A2J_outside_H1": 0.002236724838272072,
+    "R3_outside_H2": 0.00019434167481587283,
+    "perturbation_not_H2_invariant": 0.6363961030678933,
+    "Z1_norm": 0.17522300969344004,
+    "Z2_norm": 0.22837295798476287,
+    "R3_norm": 0.22554723895046916,
+    "R4_norm": 0.026211497616461833,
+    "C_corr_tstar_point3_window_point1": 0.9078954299831783,
+    "time_checks": [
+      {
+        "xi": 0.02,
+        "t": 750.0999999999999,
+        "full_output_isometry_error": 0.00432377501251483,
+        "direct_Duhamel_bound": 0.008548228424717325,
+        "residual_identity_error": 5.779711245263686e-14
+      },
+      {
+        "xi": 0.01,
+        "t": 3000.0999999999995,
+        "full_output_isometry_error": 0.001874031125931055,
+        "direct_Duhamel_bound": 0.004227585428181048,
+        "residual_identity_error": 4.817255959399301e-14
+      },
+      {
+        "xi": 0.005,
+        "t": 12000.099999999999,
+        "full_output_isometry_error": 0.0014236071880785498,
+        "direct_Duhamel_bound": 0.0021021690104701713,
+        "residual_identity_error": 4.738709449704105e-14
+      }
+    ]
+  }
+}

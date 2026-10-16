@@ -1,0 +1,15 @@
+{
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_resource_publication_review/REVIEW.json",
+    "bytes": 5887,
+    "sha256": "c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_resource_publication_review/FREEZE.json",
+    "bytes": 976,
+    "sha256": "f283d4537fcc1ae5ba99c637df8d27ea37d9e7336165867da9d98907ee177926"
+  },
+  "verified_source_paths": 287,
+  "immutable_bodies": 8,
+  "scientific_executions": 0
+}

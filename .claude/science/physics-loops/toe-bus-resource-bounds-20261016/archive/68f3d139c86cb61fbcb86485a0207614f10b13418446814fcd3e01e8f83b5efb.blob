@@ -1,0 +1,18 @@
+{
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 3894,
+    "sha256": "810d46f26c0883a470c010783fe310e0e0af9ee1a82f025ac32893bf45294fff"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 3826,
+    "sha256": "1aab69f2d3407be3718e91a3b7e61ef0f24426691b69c3d97682de5893106386"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/quantitative_bias_selection_root_review/FREEZE.json",
+    "bytes": 1029,
+    "sha256": "37f588c4790dc695db88e4420da5d5903721837eceac46a0d1e3e50db9b63e09"
+  },
+  "science_replays": 0
+}

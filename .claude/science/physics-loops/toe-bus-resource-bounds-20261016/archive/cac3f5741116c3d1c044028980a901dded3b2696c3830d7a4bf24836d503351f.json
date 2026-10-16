@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-16T04:07:48.262734+00:00",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 4734,
+      "sha256": "fb7c5d7676096ec477fe796a109a92e91f3dc57c4378ccd1b97af85095cd8b21"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/record_acceptance.py",
+      "bytes": 3455,
+      "sha256": "568fb5201f12a717bbeea4842393484b8095176b0f619ce2006c9edce8d88ea4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2594,
+      "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+    }
+  ],
+  "scope": "Qualified source acceptance only; actual enclosing execution captured separately."
+}

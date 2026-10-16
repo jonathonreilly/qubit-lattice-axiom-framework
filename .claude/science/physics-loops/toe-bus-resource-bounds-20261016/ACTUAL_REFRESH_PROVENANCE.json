@@ -1,0 +1,77 @@
+{
+  "kind": "actual_root_refresh_provenance",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/2312ea8fb4b3c114055c34e2372e21ae5f4e1d5c5e3715813f116a7eb1a981aa.json",
+      "bytes": 2222,
+      "sha256": "2312ea8fb4b3c114055c34e2372e21ae5f4e1d5c5e3715813f116a7eb1a981aa"
+    },
+    "root_binding": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/64019e593cd94212a60746c31c01336fdf232dbc3a1c8bc3be017466d9353592.json",
+      "bytes": 1575,
+      "sha256": "64019e593cd94212a60746c31c01336fdf232dbc3a1c8bc3be017466d9353592"
+    },
+    "integration_review": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/fbfe84679bfce734ee2a19b579f7b2a8316917349e86b3f9d60ce5617655daae.json",
+      "bytes": 5402,
+      "sha256": "fbfe84679bfce734ee2a19b579f7b2a8316917349e86b3f9d60ce5617655daae"
+    },
+    "integration_proposal": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/4099c254be3c8f34072da189326d5b266816e13e14f9b0e68f3cde22d374307d.json",
+      "bytes": 110562,
+      "sha256": "4099c254be3c8f34072da189326d5b266816e13e14f9b0e68f3cde22d374307d"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c.json",
+      "bytes": 1542,
+      "sha256": "d9ef878556b10e135b257c41c4b7b4fa54305a74d9302cf4a2428bb465e20a7c"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531.json",
+      "bytes": 216,
+      "sha256": "69ec35414b2550d9c245168a63bba918b9b5056dae21649ff778422c1c7cf531"
+    },
+    "inventory": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/63fae87df2e302378c43efb28d459032015cae6b32484116cad14aecfcc14c1e.blob",
+      "bytes": 24652,
+      "sha256": "63fae87df2e302378c43efb28d459032015cae6b32484116cad14aecfcc14c1e"
+    },
+    "actual_refresh_receipts": [
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/f34c60cfa2ed551ac35066b67817f84ec00636d30a152769222c39581ecefac0.json",
+          "bytes": 1228,
+          "sha256": "f34c60cfa2ed551ac35066b67817f84ec00636d30a152769222c39581ecefac0"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/630aaaf2a1133d62a3ae5b97644c47c48edd5e6f5ff32bc4caa95893b0bd53be.blob",
+          "bytes": 303,
+          "sha256": "630aaaf2a1133d62a3ae5b97644c47c48edd5e6f5ff32bc4caa95893b0bd53be"
+        }
+      },
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/4fb22834cbecb3bc9fe719146905361978b5e43961b389c611cba5641bff79f7.json",
+          "bytes": 1297,
+          "sha256": "4fb22834cbecb3bc9fe719146905361978b5e43961b389c611cba5641bff79f7"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/63fae87df2e302378c43efb28d459032015cae6b32484116cad14aecfcc14c1e.blob",
+          "bytes": 24652,
+          "sha256": "63fae87df2e302378c43efb28d459032015cae6b32484116cad14aecfcc14c1e"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    ]
+  },
+  "scope": "Actual root Git/source refresh; Git ancestry is not a mathematical dependency."
+}

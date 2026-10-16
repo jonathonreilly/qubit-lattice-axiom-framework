@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-10-16T12:40:21.073477+00:00",
+  "kind": "metadata identity and recovery validation only",
+  "current_source_identities_checked": [
+    "proposal",
+    "proposal_freeze",
+    "resource_derivation",
+    "resource_freeze",
+    "resource_acceptance",
+    "resource_qualifications",
+    "slew_acceptance",
+    "slew_qualifications",
+    "slew_proposal",
+    "slew_review",
+    "slew_review_freeze",
+    "installed_preparation",
+    "preparation_acceptance",
+    "preparation_qualifications",
+    "canonical_bus"
+  ],
+  "upstream_source_count": 15,
+  "proposal_freeze_member_matches": true,
+  "metadata_run_source_and_streams_match": true,
+  "interrupted_originals_match_root_recovery": true,
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "transitive_historical_freezes_revalidated": false
+}

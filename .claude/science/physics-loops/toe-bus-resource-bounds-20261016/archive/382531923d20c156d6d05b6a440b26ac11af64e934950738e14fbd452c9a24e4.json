@@ -1,0 +1,79 @@
+{
+  "utc": "2026-10-16T02:21:30.025616+00:00",
+  "status": "qualified_source_acceptance",
+  "retained_audit": false,
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/DERIVATION.md",
+    "bytes": 22051,
+    "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/FREEZE.json",
+    "bytes": 5125,
+    "sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW.md",
+    "bytes": 21138,
+    "sha256": "ac486c1c75de92cd5da05ceeed178ad2fddf2d7a3ddde214f7889df92b084239"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW_FREEZE.json",
+    "bytes": 5073,
+    "sha256": "121e51b2fedb1c69acb133abceee7954103bc8eaa812e4f01a62ab2b9b2169ea"
+  },
+  "root_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 4941,
+    "sha256": "7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb"
+  },
+  "proof_findings_before_code": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/PROOF_FINDINGS_BEFORE_CODE.md",
+    "bytes": 4257,
+    "sha256": "51268b74a4c9bcf82207fe56e6c910050b564e69daac32a970c484bab38b0701"
+  },
+  "candidate_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/EXECUTION.json",
+    "bytes": 1758,
+    "sha256": "c0cdb61ef9596605f204809b51d0027943009b27af5b80c58bade608f888c095"
+  },
+  "reviewer_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/EXECUTION.json",
+    "bytes": 1846,
+    "sha256": "d1277402d3440ac391fcc32b89729cae996da76dc6f4e07812d72eb83e98c8a6"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 3371,
+    "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+  },
+  "verified_members": {
+    "candidate": 22,
+    "review": 15
+  },
+  "parent_acceptances": {
+    "bus": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    "transfer": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    }
+  },
+  "root_read_complete_for_scoped_claim": true,
+  "root_decisive_checks": [
+    "Complete repeated-gap classification and pole residue; special d2 diagonal-square difference.",
+    "Complex resolvent/projector constants, own-disk eigenvalue displacement, even analytic branches, quartic remainders and all strict transition thresholds.",
+    "Positive edge spectrum, literal scalar and two incident edges.",
+    "Complex signed-gap Vandermonde and unique leading coefficient for arbitrary noncommuting H; strict computable selection.",
+    "Exact noncommuting Pauli/Gram polynomial and omitted-adjoint negative discriminator; conditional full-state phase/chronology."
+  ],
+  "inspection_correction": "One preliminary root freeze inspection used nonexistent files key on candidate members schema; it verified nothing and wrote nothing. Corrected member verification and this recorded acceptance succeed without rerunning science.",
+  "scientific_programs_run_this_acceptance": 0,
+  "primary_runs": 0,
+  "padding_extension_imported": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-16T04:34:53.594099+00:00",
+  "status": "Qualified source accepted; fixed-strong-plant nominal duration and precision requests only, unpublished.",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/DERIVATION.md",
+    "bytes": 36324,
+    "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/FREEZE.json",
+    "bytes": 4683,
+    "sha256": "1eb2a662f00fe01c6d2bcee35c8039d0038001ed9a694980f6a5dbc9325a8996"
+  },
+  "independently_frozen_root_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_proposal/CONDITIONAL_LEDGER.md",
+    "bytes": 6999,
+    "sha256": "fbd9c4471e0869bc260f26d608ca96b653cd3295f89c26a8359355fd1964a8a5"
+  },
+  "root_proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_proposal/FREEZE.json",
+    "bytes": 415,
+    "sha256": "d6836428c45b33eb05bcac68f0da85c9e13312fa9346ac5b18861e1bd3335b5f"
+  },
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 7196,
+    "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b"
+  },
+  "reachable_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_corrector_root_review/QUALIFIED_ACCEPTANCE.json",
+    "bytes": 2594,
+    "sha256": "d83e5d3cb587eee08b8195dd40b91eb1e878b4e9e254d7a28be9c740e94e0a62"
+  },
+  "full_new_argument_read": true,
+  "freeze_members_verified": 21,
+  "source_originals_and_captures_verified": 15,
+  "scientific_executions": 0,
+  "historical_science_replayed": 0,
+  "retained_audit": false,
+  "resource_power": "72q^2+260q+122 for q=d(d-1)/2; fixed plant and fixed graph only.",
+  "independent_check_limit": "Same model; separately frozen root resource derivation and full new argument review. Worker authored the earlier bus; no fresh independent parent revalidation.",
+  "open_uniformity": "Equation36: complete constant package for shrinking bias; old spectral bounds alone insufficient.",
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,339 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T14:10:26.893525+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "5f97c4bd3247144f4e62a1f35e7a78dde4ab315a7bbf9e18306591cb34414dc6",
+  "git_base": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+  "base_branch": "physics-loop/toe-bus-preparation-20261016",
+  "source_body_pins": [
+    {
+      "bytes": 36324,
+      "end_byte_exclusive": 51788,
+      "label": "Fixed-plant resource derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/DERIVATION.md",
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875",
+      "start_byte": 15464
+    },
+    {
+      "bytes": 7196,
+      "end_byte_exclusive": 59072,
+      "label": "Fixed-plant controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b",
+      "start_byte": 51876
+    },
+    {
+      "bytes": 6805,
+      "end_byte_exclusive": 65964,
+      "label": "Preparation/resource proposed argument",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990",
+      "start_byte": 59159
+    },
+    {
+      "bytes": 15735,
+      "end_byte_exclusive": 81777,
+      "label": "Preparation/resource exposed check",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/REVIEW.md",
+      "sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f",
+      "start_byte": 66042
+    },
+    {
+      "bytes": 4913,
+      "end_byte_exclusive": 86780,
+      "label": "Preparation/resource controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e",
+      "start_byte": 81867
+    },
+    {
+      "bytes": 37212,
+      "end_byte_exclusive": 124069,
+      "label": "Shrinking-bias resource derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/DERIVATION.md",
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74",
+      "start_byte": 86857
+    },
+    {
+      "bytes": 17546,
+      "end_byte_exclusive": 141692,
+      "label": "Shrinking-bias exposed check",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/REVIEW.md",
+      "sha256": "20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356",
+      "start_byte": 124146
+    },
+    {
+      "bytes": 7701,
+      "end_byte_exclusive": 149482,
+      "label": "Shrinking-bias controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5",
+      "start_byte": 141781
+    }
+  ],
+  "raw_bodies": [
+    {
+      "bytes": 36324,
+      "end_byte_exclusive": 51989,
+      "label": "Fixed-plant resource derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_candidate/DERIVATION.md",
+      "sha256": "ce3ddd3ad376016f391992b30485454378607e6953fddcdeb2ecea702777d875",
+      "start_byte": 15665
+    },
+    {
+      "bytes": 7196,
+      "end_byte_exclusive": 59273,
+      "label": "Fixed-plant controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reachable_bus_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "e50497e74e2022f97e6b1a42ff8bf176c2c7b30cd16b68d22b18f503457e541b",
+      "start_byte": 52077
+    },
+    {
+      "bytes": 6805,
+      "end_byte_exclusive": 66165,
+      "label": "Preparation/resource proposed argument",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "625b1f6f9496fd4acea138f0b25b56afa8f0e90265b5bcdcabcdcd88a660e990",
+      "start_byte": 59360
+    },
+    {
+      "bytes": 15735,
+      "end_byte_exclusive": 81978,
+      "label": "Preparation/resource exposed check",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/REVIEW.md",
+      "sha256": "f4b8ca6c62a2b5a45b2af3e5a00b9d92d9812e5cbe8bf5702cb47875a359b23f",
+      "start_byte": 66243
+    },
+    {
+      "bytes": 4913,
+      "end_byte_exclusive": 86981,
+      "label": "Preparation/resource controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "0dc085304a91fdaf511693eb0c948f48382a0937bdde5a323cb873805fb09e0e",
+      "start_byte": 82068
+    },
+    {
+      "bytes": 37212,
+      "end_byte_exclusive": 124270,
+      "label": "Shrinking-bias resource derivation",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_candidate/DERIVATION.md",
+      "sha256": "2bfb24cce9760be23d750b3b2a190b3110bc0326c035488aae004d1de7849a74",
+      "start_byte": 87058
+    },
+    {
+      "bytes": 17546,
+      "end_byte_exclusive": 141893,
+      "label": "Shrinking-bias exposed check",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_exposed_check/REVIEW.md",
+      "sha256": "20534435e5f9f1994d27caffbdbb8652e90e81fecfe0cfbc538a131bfa6dd356",
+      "start_byte": 124347
+    },
+    {
+      "bytes": 7701,
+      "end_byte_exclusive": 149683,
+      "label": "Shrinking-bias controlling qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/shrinking_bias_resource_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "e37edfd2d7454c6d2ff3a79587d24fba326cd565e9b4b3ffd91a8deb373569c5",
+      "start_byte": 141982
+    }
+  ],
+  "parent_binding": {
+    "direct_canonical_parents": [
+      {
+        "bytes": 83919,
+        "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "scope": "Runtime construction; full-gap inverse replaced only by qualified envelope theorem.",
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+      },
+      {
+        "bytes": 66336,
+        "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "scope": "Upper-half coefficient-extraction grid only; sections2-3 and exposed assessment section3.",
+        "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+      },
+      {
+        "bytes": 133383,
+        "path": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "scope": "Qualified static transfer and admissible positive-direction domain; no incidental preparation or padding conclusion.",
+        "sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36"
+      },
+      {
+        "bytes": 115070,
+        "path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "scope": "Fixed-plant preparation/resource composition only; evolved U_E memory, complete readiness/control/phase conditions. No shrinking-family preparation.",
+        "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+      }
+    ],
+    "git_base": null,
+    "internal_qualified_refinements": [
+      "reachable_bus_corrector",
+      "quantitative_bias_selection"
+    ],
+    "preparation_attachment_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/ATTACHMENT.json",
+    "preparation_canonical_commit": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+    "preparation_canonical_path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "preparation_publication_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/PUBLICATION.json",
+    "preparation_source_acceptances": [
+      "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641",
+      "b237e6550c7b500ff48cdaa2cd30e50cf4895205a610e8feb677da085bf82473"
+    ],
+    "scope": "Actual mathematical parent source now published; resource integration Git base remains unset."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/aca82160f36a6ea453871e9b732c0517c149112fc6147fd018d82b088f28b1db.json",
+    "bytes": 81984,
+    "sha256": "aca82160f36a6ea453871e9b732c0517c149112fc6147fd018d82b088f28b1db"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/f1af794507f34ac7ca681c746693a8e2dd8ac96e5db29482cf4abb2b91b4602d.json",
+    "bytes": 3409,
+    "sha256": "f1af794507f34ac7ca681c746693a8e2dd8ac96e5db29482cf4abb2b91b4602d"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/860d6dbdab283c054a08053e7b8622ad7e441e2335bdd6ddae064f2df6fd5030.md",
+    "bytes": 149482,
+    "sha256": "860d6dbdab283c054a08053e7b8622ad7e441e2335bdd6ddae064f2df6fd5030"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9.json",
+      "bytes": 5887,
+      "sha256": "c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/1b5794326f4aed322091e90cc1d594878039dda9148e5dbc61834cb8ef18efc8.md",
+      "bytes": 5307,
+      "sha256": "1b5794326f4aed322091e90cc1d594878039dda9148e5dbc61834cb8ef18efc8"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/f283d4537fcc1ae5ba99c637df8d27ea37d9e7336165867da9d98907ee177926.json",
+      "bytes": 976,
+      "sha256": "f283d4537fcc1ae5ba99c637df8d27ea37d9e7336165867da9d98907ee177926"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/cf8f512362b5ca46f8c2a2c5136d69bb565287757497a20bc3163aa3463cb39f.json",
+      "bytes": 1491,
+      "sha256": "cf8f512362b5ca46f8c2a2c5136d69bb565287757497a20bc3163aa3463cb39f"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/204a633ca89c7b240a718f3249a2560f0ccf047428a00127edff5fde9b453e32.blob",
+      "bytes": 633,
+      "sha256": "204a633ca89c7b240a718f3249a2560f0ccf047428a00127edff5fde9b453e32"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/718e0bb5df8934504e7d9922926872e1f2a651962573c4e2e32f0d4086e93185.py",
+      "bytes": 5362,
+      "sha256": "718e0bb5df8934504e7d9922926872e1f2a651962573c4e2e32f0d4086e93185"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/2d157009cffee3820c3247a91aafbeeba31920c69cbeef2ef8e1ffed9a3683f6.json",
+      "bytes": 70500,
+      "sha256": "2d157009cffee3820c3247a91aafbeeba31920c69cbeef2ef8e1ffed9a3683f6"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/649f0c3c243729e0460def251e05bf481df2909b7e7d909a31f94ed41eff156b.json",
+      "bytes": 1766,
+      "sha256": "649f0c3c243729e0460def251e05bf481df2909b7e7d909a31f94ed41eff156b"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/504682ec49838a47db0af515d4fe3ff9353b37763b584f56bf5d510b0ee895cf.py",
+      "bytes": 2684,
+      "sha256": "504682ec49838a47db0af515d4fe3ff9353b37763b584f56bf5d510b0ee895cf"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/13e354642dab77a4b5aa3b51973b56c423830ebb99b03e3166fce30367d97e5a.blob",
+      "bytes": 307,
+      "sha256": "13e354642dab77a4b5aa3b51973b56c423830ebb99b03e3166fce30367d97e5a"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/218f31e1864662f13210b0704e974da9ce33cc2503795cef6a0003c5b576ee44.json",
+    "bytes": 1405,
+    "sha256": "218f31e1864662f13210b0704e974da9ce33cc2503795cef6a0003c5b576ee44"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/574f7512c6233eaa4f0eedd23b121ae8a3f3ed5fd793edbed50bbd8fdfb13c8e.json",
+      "bytes": 1714,
+      "sha256": "574f7512c6233eaa4f0eedd23b121ae8a3f3ed5fd793edbed50bbd8fdfb13c8e"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c.py",
+      "bytes": 53373,
+      "sha256": "cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/4a6dba3167787321b04318a6dbb5b219829f803f6766c210f852ce6415f28df9.blob",
+      "bytes": 309,
+      "sha256": "4a6dba3167787321b04318a6dbb5b219829f803f6766c210f852ce6415f28df9"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-positive-bias-suppliers-20261016",
+      "headRefName": "physics-loop/toe-bus-preparation-20261016",
+      "headRefOid": "d0421bc43e396592aa5c66e2858138b1fb02f808",
+      "isDraft": false,
+      "number": 9640,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9640"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/13e354642dab77a4b5aa3b51973b56c423830ebb99b03e3166fce30367d97e5a.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/1b5794326f4aed322091e90cc1d594878039dda9148e5dbc61834cb8ef18efc8.md",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/204a633ca89c7b240a718f3249a2560f0ccf047428a00127edff5fde9b453e32.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/218f31e1864662f13210b0704e974da9ce33cc2503795cef6a0003c5b576ee44.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/2d157009cffee3820c3247a91aafbeeba31920c69cbeef2ef8e1ffed9a3683f6.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/3da72a56938890827df6828d0500e0e745d8586c701e3e988f202762ba799816.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/4a6dba3167787321b04318a6dbb5b219829f803f6766c210f852ce6415f28df9.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/504682ec49838a47db0af515d4fe3ff9353b37763b584f56bf5d510b0ee895cf.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/574f7512c6233eaa4f0eedd23b121ae8a3f3ed5fd793edbed50bbd8fdfb13c8e.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/649f0c3c243729e0460def251e05bf481df2909b7e7d909a31f94ed41eff156b.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/718e0bb5df8934504e7d9922926872e1f2a651962573c4e2e32f0d4086e93185.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/860d6dbdab283c054a08053e7b8622ad7e441e2335bdd6ddae064f2df6fd5030.md",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/8c5facbc4661d179ec883509e25034eaa6cc33ae4b6fb6f000c43f1ef686fba6.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/aca82160f36a6ea453871e9b732c0517c149112fc6147fd018d82b088f28b1db.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/c24d1edf46634d1de6dd5507e29e279a98e9632dff3893aebf5d805e6eff82d9.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/cce6dbb95bebd6672da4bca5aa4b4df0574eeec04155e2eb2f5cba9bbb6ebe4c.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/cf8f512362b5ca46f8c2a2c5136d69bb565287757497a20bc3163aa3463cb39f.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/f1af794507f34ac7ca681c746693a8e2dd8ac96e5db29482cf4abb2b91b4602d.json",
+    ".claude/science/physics-loops/toe-bus-resource-bounds-20261016/binding_sources/f283d4537fcc1ae5ba99c637df8d27ea37d9e7336165867da9d98907ee177926.json"
+  ],
+  "origin_main": "2cf2a218d582458d4d8807cd6196ab72b6a4bff1",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "Exact finite Gram and algebraic pole checks; no complexity claim for total compiler.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "N": 6,
+  "patterns": 154,
+  "spanning_columns": 1078,
+  "all_gram_entries_compared": 1162084,
+  "exact_gram_match": true,
+  "wrong_N_minus_support_plus_one_entries_rejected": 57387,
+  "rank_lower_bound_mod_65521": 59,
+  "exact_annihilator_dimension": 5,
+  "exact_G2_dimension": 59,
+  "exact_L_reduction": true,
+  "outside_polynomial": "x**5 - 20*x**4 + 148*x**3 - 500*x**2 + 748*x - 368",
+  "outside_factorization": "(x - 4)*(x**4 - 16*x**3 + 84*x**2 - 164*x + 92)",
+  "selected_root_isolating_interval": [
+    "190301/25417",
+    "60908/8135"
+  ],
+  "selected_irreducible_factor": "x**4 - 16*x**3 + 84*x**2 - 164*x + 92",
+  "gcd_selected_factor_with_G2_characteristic": "1",
+  "inside_characteristic_factorization": "x**7*(x - 3)**5*(x - 2)**5*(x - 1)**5*(x**2 - 4*x + 1)**5*(x**3 - 10*x**2 + 29*x - 22)**3*(x**6 - 20*x**5 + 155*x**4 - 588*x**3 + 1128*x**2 - 1004*x + 300)**3",
+  "interpretation": "Let alpha be the largest root of the displayed outside polynomial. It is absent from G2 by exact coprimality. Then c=-alpha makes the full source inverse singular while its G1 and G2 compressions are nonsingular. Taking omega=20 and lambda=20-alpha gives a positive bus field and a full Q/P resonance outside H2."
+}

@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-16T12:37:48.616176+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_resource_exposed_check",
+  "source_sha256": "0cabd7ddbd34e1cec99f58a561f9201e418e8c85de8da4a68c2986e21267b5c7",
+  "launcher_sha256": "997d32700349d98ef8983309b6dc5c782bd421d3fbb8d4680f93684d961fd4c4",
+  "scope": "Metadata source identity capture only; no scientific calculation.",
+  "scientific_executions": 0,
+  "timeout_seconds": 30,
+  "completed_utc": "2026-10-16T12:37:48.654804+00:00",
+  "elapsed_seconds": 0.038499957881867886,
+  "exit_code": 0,
+  "timed_out": false,
+  "source_unchanged": true,
+  "launcher_unchanged": true,
+  "stdout_sha256": "176fe6944c44283142c9ff6ae26c15530f139c66a76f963e3ae5066c36b6669e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 113,
+  "stderr_bytes": 0
+}

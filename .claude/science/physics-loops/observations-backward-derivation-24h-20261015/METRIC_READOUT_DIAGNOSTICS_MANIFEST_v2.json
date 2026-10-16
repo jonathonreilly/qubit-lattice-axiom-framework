@@ -1,0 +1,8 @@
+{
+  "source": "METRIC_READOUT_NUMERICS_v3.json",
+  "source_sha256": "c260ce358697434d206acb0dbb6f8b290635c5d4e2739c2e9f06eb391a7c1a1f",
+  "runner_sha256": "7d6dce543e189b0de3a2561059082f8dcc430ed1ca489899acca3a27a34b5736",
+  "plot_sha256": "b465099f36294a396818754ae4cfc95b84bc5152c5c2314e9ed889fb045b432e",
+  "matplotlib": "3.10.8",
+  "scope": "visualization of frozen synthetic results only"
+}

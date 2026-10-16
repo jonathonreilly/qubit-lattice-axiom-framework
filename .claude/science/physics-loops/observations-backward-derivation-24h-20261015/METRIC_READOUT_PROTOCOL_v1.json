@@ -1,0 +1,49 @@
+{
+  "status": "frozen before executing this block's new controls",
+  "author": "/root personally",
+  "data_role": "constructed mathematical and numerical development controls only",
+  "observational_arrays": "none; seven Fuchs arrays remain unopened",
+  "families": [
+    "symbolic Born-Volterra kernel on polynomial metric functions; no action-solution claim",
+    "symbolic cone chain rules, wave operator, instrument gain product rule, clock conversions and endpoint energy signs",
+    "exact scalar/dust full-equation power modes before any use as rank witnesses",
+    "angular-shell algebra and exact trace determinant",
+    "growing-mode rank conditioning for k ratios [1,1.2,1.5,2,3] and k0 [0.1,1,10,100,1000] with high-precision cross-check",
+    "finite-grid lensing inversion and two-time derivatives with additive synthetic noise"
+  ],
+  "symbolic_acceptance": "exact simplified residual zero; incompatible-input and omitted-term witnesses must be nonzero",
+  "numerical_rank": {
+    "row_definition": "trace [m,1,mY,Y], scalar [-mY,-Y,m,k^2/4,1] at tau=1; arbitrary common mode amplitudes removed",
+    "normalization": "each column divided by its Euclidean norm, then each row divided by its Euclidean norm",
+    "report": "all singular values, condition number and floating relative-threshold rank; exact distinct-mode determinant is separate",
+    "threshold": 1e-10,
+    "no_claim": "threshold rank is not a physical likelihood or measured survey rank"
+  },
+  "noise": {
+    "psi": "r^2*(1+u+u^2)/3; gives P_cone=r^2*(1+u+u^2)",
+    "r_range": [0.2,1.2],
+    "grid_counts": [65,129,257],
+    "u_center": 1.6,
+    "u_half_steps": [0.005,0.025,0.1],
+    "absolute_psi_noise_sigma": [0.0,1e-8,1e-6],
+    "generator": "numpy.default_rng(20261016); independent Gaussian samples at three times per grid/case",
+    "inverse": "central radial first and second differences in half*(r^2*psi_rr+2*r*psi_r); central u second difference after inversion",
+    "interior": "exclude one radial boundary cell on each end",
+    "report": "RMS P error, RMS P_uu error, exact stencil noise variance; no smoothing or fitted hyperparameters",
+    "acceptance": "zero-noise polynomial baseline within roundoff bound; noisy cases report errors without pass/fail empirical claims; predicted standard deviations fixed by stencil algebra"
+  },
+  "mutations": [
+    "omit mixed cone radial/time derivative",
+    "replace fixed-time radial derivative by cone radial derivative",
+    "omit matter-clock Hc correction",
+    "treat observer-time gain as emission-time homogeneous gain",
+    "supply only one temporal transfer while asserting angular rank four"
+  ],
+  "evidence_boundaries": [
+    "No new data fit, independent physical test, novelty priority claim or formal audit",
+    "Synthetic rank witnesses choose initial modes; they do not derive them",
+    "Metric restriction null functions are not automatically same-action physical solutions",
+    "Failure of global coeval coverage does not imply failure of local shell inference",
+    "Previous same-emission-time gain theorem does not calibrate arbitrary detector drift"
+  ]
+}

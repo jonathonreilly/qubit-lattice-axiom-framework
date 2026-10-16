@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-16T11:11:23.214241+00:00",
+  "stage": "root pre-control derivation and synthetic protocol; no controls executed yet",
+  "files": {
+    "METRIC_READOUT_DERIVATION_v1.md": "313d0008b97b0ab1b9c9f408e3e835bd9f09c76c940d786fd5d9a45c5e8b514d",
+    "METRIC_READOUT_PROTOCOL_v1.json": "89ffbdab2c7b02c6dcb87e6d9644a3314736a860bc37605250070f3ff84f122e"
+  }
+}

@@ -1,1253 +1,1469 @@
-{
-  "campaign": "observations-backward-derivation-24h-20261015",
-  "status": "active",
-  "phase": "Joint metric inverse checked; deriving the observation input map next",
-  "started_at": "2026-10-15T22:36:59+00:00",
-  "deadline": "2026-10-16T22:36:59+00:00",
-  "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T10:58:43.911428+00:00",
-  "author": "/root in this chat",
-  "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
-  "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
-  "branch": "codex/observations-backward-derivation-20261015",
-  "main_at_launch": "bbada1fe09b2d10d610560864d86b68c24a59713",
-  "delivery": "milestone",
-  "checkpoint_minutes": 30,
-  "block": "common-action reconstruction across environments",
-  "route": "Actual clocks/redshift/source response -> registered scalar-history inputs -> cross-environment action constraints",
-  "target_claim_type": "bounded_theorem",
-  "actual_current_surface_status": "conditional-support",
-  "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.",
-  "open_imports": [
-    "canonical single-scalar/conformal pressureless action class",
-    "known M and normalization",
-    "flat homogeneous Einstein frame",
-    "registered Einstein-time H C3, alpha C1, fixed-bare-density mu continuous",
-    "nonzero scalar velocity and positive dust on connected chart",
-    "measurement extraction, derivative/error control and actual environmental correspondence"
-  ],
-  "independent_check": {
-    "status": "focused check complete; no material mathematical error found within stated chart",
-    "agent": "/root/common_action_check",
-    "source": "BLOCK01_DERIVATION_v5.md",
-    "source_sha256": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
-    "report": "independent_block01/INDEPENDENT_CHECK.md",
-    "report_sha256": "82bdaf95361ea9a6211d3318d05f393eb67e4c8af3cf59f779397d39d9924ece",
-    "core_checks": 28,
-    "relative_map_checks": 27,
-    "failures": 0,
-    "not_formal_audit": true,
-    "readout_intake": "Ideal coherent-carrier cancellation and metric-level ambiguity independently checked in independent_block02/INDEPENDENT_CHECK.md; external Moyer citation and empirical implications were outside that check."
-  },
-  "milestones": [
-    {
-      "number": 9628,
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9628",
-      "title": "[physics-loop] scalar-observation-inverse bounded_theorem conditional-support",
-      "head_branch": "codex/scalar-observation-inverse-20261016",
-      "head_sha": "40e5030769a9409f0d52d3e4e58e8279a5550e47",
-      "base_branch": "main",
-      "base_sha": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "state": "OPEN",
-      "is_draft": false,
-      "verified_at": "2026-10-16T00:42:17.344839+00:00",
-      "changed_files": 59,
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
-      "attached_to_current_chat": true,
-      "checkpoint_commit": "5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2",
-      "scientific_status": "bounded_theorem / conditional-support; no empirical test",
-      "shared_landing_validation": "pending"
-    },
-    {
-      "baseRefName": "main",
-      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "changedFiles": 95,
-      "headRefName": "codex/neighborhood-evolution-20261016",
-      "headRefOid": "e97535fef2ce2da544c288fe81a7cb35a0d8914b",
-      "isDraft": false,
-      "mergeStateStatus": "BLOCKED",
-      "mergeable": "MERGEABLE",
-      "number": 9632,
-      "state": "OPEN",
-      "title": "[physics-loop] neighborhood-intervention bounded_theorem conditional-support",
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632",
-      "verified_at": "2026-10-16T03:03:16.919346+00:00",
-      "attached_to_current_chat": true,
-      "shared_landing_validation": "pending",
-      "scientific_status": "bounded_theorem / conditional-support; no empirical validation"
-    },
-    {
-      "baseRefName": "main",
-      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "changedFiles": 108,
-      "headRefName": "codex/sampled-coupling-inverse-20261016",
-      "headRefOid": "09ee78488eda7950be5e18624678d709e3758fb2",
-      "isDraft": false,
-      "mergeStateStatus": "BLOCKED",
-      "mergeable": "MERGEABLE",
-      "number": 9634,
-      "state": "OPEN",
-      "title": "[physics-loop] sampled-coupling inverse bounded_theorem conditional-support",
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634",
-      "verified_at": "2026-10-16T04:39:21.109604+00:00",
-      "attached_to_current_chat": true,
-      "shared_landing_validation": "pending",
-      "scientific_status": "bounded_theorem / conditional-support; synthetic controls only, no empirical validation"
-    },
-    {
-      "baseRefName": "main",
-      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "changedFiles": 98,
-      "headRefName": "codex/ringdown-action-inverse-20261016",
-      "headRefOid": "de4db24e811625eeb059beb341e51a1a8487371a",
-      "isDraft": false,
-      "mergeStateStatus": "BLOCKED",
-      "mergeable": "MERGEABLE",
-      "number": 9637,
-      "state": "OPEN",
-      "title": "[physics-loop] ringdown-action inverse bounded_theorem conditional-support",
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637",
-      "verified_at": "2026-10-16T05:55:17.727940+00:00",
-      "attached_to_current_chat": true,
-      "shared_landing_validation": "pending",
-      "scientific_status": "bounded_theorem / conditional-support; exact-class and synthetic controls only, no empirical validation"
-    },
-    {
-      "baseRefName": "main",
-      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "changedFiles": 97,
-      "headRefName": "codex/scalar-history-inverse-20261016",
-      "headRefOid": "92b648a0bcaf27cb09cbe3c54bd1fff31ff3e2f0",
-      "isDraft": false,
-      "mergeStateStatus": "BLOCKED",
-      "mergeable": "MERGEABLE",
-      "number": 9638,
-      "state": "OPEN",
-      "title": "[physics-loop] scalar-history compatibility bounded_theorem conditional-support",
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9638",
-      "verified_at": "2026-10-16T09:36:59.455687+00:00",
-      "attached_to_current_chat": true,
-      "shared_landing_validation": "pending",
-      "scientific_status": "bounded_theorem / conditional-support; exact mathematical and constructed controls only"
-    }
-  ],
-  "owned_jobs": [],
-  "supervisor_pid": null,
-  "worker_pid": null,
-  "previous_campaigns": "all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json",
-  "global_stop": null,
-  "strongest_checked_result": "Conditional on the canonical scalar/conformal-dust action and compatible rich smooth matter-metric mode histories, the coupling, scalar velocity product and fixed-bare-density curvature are reconstructed instead of supplied. Local A,V follow on the monotonic positive-dust chart, with full original-equation residuals. A common amplitude drift is recoverable by combining trace and scalar relations, including B=2/3. Action selection, physical input extraction, derivative/rank control and absolute normalization remain open.",
-  "author_computation": {
-    "core_exact_identities": 28,
-    "core_mutations_detected": 3,
-    "observable_symbolic_identities": 6,
-    "deterministic_bound_examples": 24,
-    "observable_mutations_detected": 3,
-    "empirical_validation": false
-  },
-  "source_state": {
-    "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-    "open_pr_count": 53,
-    "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
-    "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
-    "latest_refresh": {
-      "time": "2026-10-16T10:58:43.911428+00:00",
-      "main": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
-      "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
-      "open_pr_count": 68,
-      "inventory": "OPEN_PRS_20261016T1056.json",
-      "inventory_sha256": "b038005a8e55998faab0255df8d49f6b7ff35deba0dd3262b231bd527e8d9670",
-      "changes": "Main changed only docs/audit/data/dispatch_shadow_state.json; science and workflow unchanged. All open PR heads unchanged.",
-      "five_campaign_heads_unchanged": true
-    },
-    "read_only_recheck": {
-      "time": "2026-10-16T07:06:40.835585+00:00",
-      "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
-      "pr9637_head": "de4db24e811625eeb059beb341e51a1a8487371a",
-      "pr9637_state": "OPEN",
-      "pr9637_shared_landing": "pending;mergeStateStatusBLOCKED",
-      "unchanged": true
-    }
-  },
-  "first_block_files": [
-    "BLOCK01_DERIVATION_v5.md",
-    "check_block01.py",
-    "BLOCK01_CONTROLS_v1.json",
-    "check_block01_observables.py",
-    "BLOCK01_OBSERVABLE_CONTROLS_v1.json",
-    "independent_block01/INDEPENDENT_CHECK.md",
-    "BLOCK01_READOUT_INTAKE_v1.md"
-  ],
-  "empirical_limits": [
-    "Hensen original deposited records reproduced using frozen published selection; exposed development data. Synthetic network controls are not empirical validation.",
-    "Existing Cassini products remain exposed development data.",
-    "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
-    "Measured Newton coupling is not identified with 1/F.",
-    "Lee2020 Appendix A.1:95published processed torque rows, all exposed development; dual-engine transcription checked, no model fit or empirical validation. Missing primitive records/corrections and unresolved separation correspondence are retained.",
-    "Lee2020 calibration/geometry/separation correspondence remains incomplete. Fuchs2024 selected3.5cm/48.1cm trace is exposed development; seven other arrays unopened. Physical wiring, force phase, transfer/filter settings, platform acceleration and calibration remain unestablished. No force-law validation."
-  ],
-  "milestone_status": "PR9628,PR9632,PR9634,PR9637,PR9638 published and attached; shared landing validation pending; no science merged or audited.",
-  "checkpoint": {
-    "time": "2026-10-16T10:58:43.911428+00:00",
-    "direct_author_only": true,
-    "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Root-authored metric inverse, common-gain closure, source-bound independent verification and readout plan",
-    "deadline_unchanged": true
-  },
-  "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T08:34:17.750585+00:00",
-    "commit": "d91bc9e9a4e62876c2c8321c6fe04b152df4b3c8",
-    "remote_head": "d91bc9e9a4e62876c2c8321c6fe04b152df4b3c8",
-    "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "Personally checked Fuchs relative-motion/weak identities, one raw development record, original and complex diagnostics, independent checks, figure and next-route prior-art intake",
-    "worktree_clean": true,
-    "ordinary_staged_whitespace_check": 0,
-    "python_files_parsed": 18,
-    "json_files_parsed_before_receipt": 60,
-    "markdown_files_vocabulary_checked": 18,
-    "vocabulary_violations": 0,
-    "new_pr": false,
-    "main_pushed": false,
-    "main_remote": "bbada1fe09b2d10d610560864d86b68c24a59713",
-    "owned_jobs": [],
-    "conflicting_campaign_processes": [],
-    "active_focused_agents": [],
-    "older_campaigns_remain_stopped": true,
-    "formal_audit": false,
-    "empirical_validation": false,
-    "physical_calibration_remaining": true,
-    "selected_raw_files_opened": 1,
-    "other_raw_arrays_unopened": 7,
-    "deadline_unchanged": "2026-10-16T22:36:59Z",
-    "heartbeat_status": "ACTIVE",
-    "notification": "DONT_NOTIFY; conditional support checkpoint, no physical validation or user action"
-  },
-  "block02": {
-    "source": "BLOCK02_DERIVATION_v2.md",
-    "source_sha256": "6af03812dccdf6c77322b20591f5cc72300c84e304f7fff56bf680af7e066c1e",
-    "author_output": "BLOCK02_CONTROLS_v2.json",
-    "author_output_sha256": "28137d9af03e61532e28616053217b38657518e642bc567fd35db785f3d593e1",
-    "symbolic_identities": 7,
-    "mutations_detected": 4,
-    "numeric_controls": 17,
-    "smooth_spike_controls": 3,
-    "independent_check": {
-      "status": "completed; no material mathematical error found in declared scope",
-      "report": "independent_block02/INDEPENDENT_CHECK.md",
-      "report_sha256": "b8093ee62fd45f9dec8a16a04f14a2abb979210f10de4be7725bab677354c9a2",
-      "manifest_sha256": "18d33ca49ebf7084c02a278d88fa7b3abb067ea7c5070344dcbfb37945424d88",
-      "manifest_entries_verified": 12,
-      "checks": 42,
-      "failures": 0,
-      "scope": "Independent finite-difference and completed-square proofs plus synthetic controls; not empirical validation or formal audit."
-    },
-    "data_status": "synthetic mathematics only",
-    "author_runner_sha256": "e51b8a927b4b9264d37be9e76dd0859b5f623ec7949777bb9319c39bfbc6dd71",
-    "author_source": "BLOCK02_DERIVATION_v1.md",
-    "author_source_sha256": "2b65e7cc57f06b145792ab4623dd78d78e9b86f747a2bb5b927cff9295e8f448",
-    "source_version_relation": "Root output binds v1; v2 only restricts the relabeling derivative to be strictly positive. Root relabeling controls already assume that stricter domain. The independent final report directly binds v2.",
-    "control_correction": "Current v2 output corrects the compact bump support to [-1/4,1/4]. Original v1 runner/output preserved; see BLOCK02_ROOT_CORRECTION_v1.md."
-  },
-  "material_candidate": {
-    "source": "BLOCK03_MATERIAL_CANDIDATE_v1.md",
-    "source_sha256": "52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7",
-    "output": "MATERIAL_CANDIDATE_CONTROLS_v2.json",
-    "output_sha256": "9661d79a5d7935fea86ae9b4cc07a3ad505f390f64cfedf9000fce26c797af3c",
-    "root_exact_checks": 20,
-    "mutations_detected": 4,
-    "independent_check": {
-      "status": "completed; no material error found in the stated hypotheses",
-      "agent": "/root/common_action_check",
-      "report": "independent_block03/INDEPENDENT_CHECK.md",
-      "report_sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
-      "manifest_sha256": "8a362eb4b273daeb7e7193a2836eafb5c82a81d5c4e1efd845504e6eda25c034",
-      "manifest_entries_verified": 19,
-      "core_checks": 35,
-      "boundary_checks": 13,
-      "conservation_dimensions_provenance_checks": 3,
-      "failed_completed_checks": 0,
-      "interrupted_attempts": 1,
-      "empirical_validation": false,
-      "not_formal_audit": true
-    },
-    "result": "Affine known-stress field transport plus an explicit regular-center family with common static metric/dust density/kinetic function and varying potential coefficient; not observed data or a global uniqueness/no-go claim."
-  },
-  "material_boundary_probe": {
-    "source": "BLOCK03_BOUNDARY_PROBE_v1.md",
-    "source_sha256": "0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc",
-    "author_output": "BLOCK03_BOUNDARY_CONTROLS_v1.json",
-    "author_output_sha256": "7615cc6db8587940ddd469f8a078e399306964d340fe786ffa42435943957d69",
-    "root_identities": 5,
-    "root_mutations": 2,
-    "scope": "Additional hypothetical round-sphere/dust continuation, not an observed input or a replacement for the local domain. Its constant branch is separately derived, not a singular endpoint substituted in the nonconstant action.",
-    "independent_check": {
-      "status": "completed; no material error found in the stated hypotheses",
-      "agent": "/root/common_action_check",
-      "report": "independent_block03/INDEPENDENT_CHECK.md",
-      "report_sha256": "39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b",
-      "manifest_sha256": "8a362eb4b273daeb7e7193a2836eafb5c82a81d5c4e1efd845504e6eda25c034",
-      "manifest_entries_verified": 19,
-      "core_checks": 35,
-      "boundary_checks": 13,
-      "conservation_dimensions_provenance_checks": 3,
-      "failed_completed_checks": 0,
-      "interrupted_attempts": 1,
-      "empirical_validation": false,
-      "not_formal_audit": true
-    }
-  },
-  "milestone_review_branch": "codex/scalar-history-inverse-20261016",
-  "milestone_publication_strategy": "Standalone selected-file commit from refreshed main; no rewrite or deletion of campaign checkpoint history, and no dependency on excluded archived scripts.",
-  "independent_integration_check": {
-    "status": "completed; no remaining mathematical discrepancy within stated hypotheses",
-    "agent": "/root/common_action_check",
-    "report": "independent_integration/INDEPENDENT_CHECK.md",
-    "report_sha256": "8efa8c5f0cf0e53b549dd32c6446b47a4c8f4f11e4050b9cae5c2b172f2561b9",
-    "manifest_sha256": "c49cdadc68d4da1a9e6c4b0ccb1d8613efb386028561ce9db8dcfa5cdb704add",
-    "manifest_entries_verified": 45,
-    "independent_checks": 29,
-    "primary_reproduction_checks": 56,
-    "failures": 0,
-    "canonical_sources": {
-      "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768",
-      "scripts/scalar_observation_inverse.py": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
-      "scripts/scalar_observation_inverse_math.py": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44"
-    },
-    "empirical_validation": false,
-    "not_formal_audit": true
-  },
-  "canonical_computation": {
-    "primary": "scripts/scalar_observation_inverse.py",
-    "controls": 56,
-    "failures": 0,
-    "scratch_mutations_detected": 8,
-    "canonical_cache_status": "fresh",
-    "timeout_seconds": 120,
-    "empirical_validation": false
-  },
-  "user_steering": {
-    "requested_at_utc": "2026-10-16T00:53:06+00:00",
-    "research_window_end_utc": "2026-10-16T03:53:06+00:00",
-    "campaign_deadline_unchanged": "2026-10-16T22:36:59+00:00",
-    "user_request": "Spend a few hours exploring neighborhood-driven network/record evolution as the missing mechanism behind what is described as superposition; trace intermediate specialization rather than relate only endpoint labels.",
-    "interpretation": "Underlying physical mechanism hypothesis, not merely a research-method analogy. Initial recursive-mechanisms intake v1 is preserved as the earlier, narrower interpretation.",
-    "author": "/root personally in this chat",
-    "first_targets": [
-      "Compare adaptive historical-memory networks with current-trial relational carriers.",
-      "Derive a discriminating intervention without assuming quantum probabilities in the candidate.",
-      "Explore reversible real-valued local transport and expose the cost of its detection rule.",
-      "Separate permanent record content from changing downstream causal role; explicitly label any alternative to current Record premises."
-    ],
-    "observations_first": "Published interference, composition and stable outcome records constrain candidate mechanisms. Synthetic controls are not empirical tests; no raw independent-test dataset opened.",
-    "status": "complete; results and limitations preserved",
-    "completed_at": "2026-10-16T03:54:53.593473+00:00"
-  },
-  "shared_mode_probe": {
-    "note_sha256": "e1fb1ecc9bec148ad8b19b9998422d8984ece82a2109112aa0fd52c15bb8dfa8",
-    "runner_sha256": "9e660c9bf7a8cfd5413c2d8e0424bbc0872443c944a0f26c2b06be829de0203d",
-    "output_sha256": "59898e1dbae95003e002fe767d3300c44e6df403ecd97a56afb954f98ad93e53",
-    "checks": 11,
-    "failures": 0,
-    "independent_check": false,
-    "empirical_validation": false,
-    "scope": "Standard finite-dimensional isolated-pole algebra and counterexamples to applying rank-one claims to full/unresolved responses. Physical operator and readout not yet derived."
-  },
-  "network_exploration": {
-    "time": "2026-10-16T01:23:29.012094+00:00",
-    "author": "/root personally",
-    "source_bindings_verified": [
-      {
-        "path": "NETWORK_EVOLUTION_BLOCK01_v2.md",
-        "sha256": "69d17538be0c02c81a25027958ec2e3cbf2208d5b3b218ef3298c255d0760669"
-      },
-      {
-        "path": "probe_network_history_v2.py",
-        "sha256": "6730e84b0c6148e83130001b586a13e843f62a4fddf9b6c194a0ded99bbe29dd"
-      },
-      {
-        "path": "NETWORK_HISTORY_CONTROLS_v2.json",
-        "sha256": "0b7210c127049eab6a4a5ba31e712cc1b3f4234b6358c27857a1531a0cd7d301"
-      },
-      {
-        "path": "NETWORK_EVOLUTION_BLOCK02_v1.md",
-        "sha256": "7558a13c9d858e219fd825926d899888d956c0b3db4128ce394b2c3259c63c68"
-      },
-      {
-        "path": "probe_flux_records_v1.py",
-        "sha256": "357aab5de2f830da0a3d28ef37c54ca4a660cb2f18dcbe5fe58eaa53b5d28e36"
-      },
-      {
-        "path": "FLUX_RECORD_CONTROLS_v1.json",
-        "sha256": "66e0a17cbd2af50b735d68d8db2bf80e936c9ae6e18a8eb964e5ce9aa8993211"
-      },
-      {
-        "path": "FLUX_RECORD_EXECUTION_v1.json",
-        "sha256": "c91495663caf3f61b54a05d6b89f3358d5f93b1c5a682e184cfd1352650b448e"
-      },
-      {
-        "path": "FLUX_RECORD_EXECUTION_v1.stdout",
-        "sha256": "66e0a17cbd2af50b735d68d8db2bf80e936c9ae6e18a8eb964e5ce9aa8993211"
-      },
-      {
-        "path": "FLUX_RECORD_EXECUTION_v1.stderr",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-      },
-      {
-        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
-        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
-      },
-      {
-        "path": "docs/audit/data/axiom_premise_nodes.json",
-        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
-      },
-      {
-        "path": "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
-        "sha256": "3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8"
-      }
-    ],
-    "root_read_complete_independent_derivations_code_results": true,
-    "exact_author_reproductions_match": true,
-    "not_formal_audit": true,
-    "empirical_data_opened": false,
-    "network_history": {
-      "version": 2,
-      "checks": 19,
-      "failure_preserved": "v1 exception bound needed freshness conditional on exception eligibility; v2 corrects and preserves explicit counterexample",
-      "report_sha256": "76aef9b59be490f1921bed49edfbd1a8e3abe1cfbf4e3f9e3b1489669ef44675"
-    },
-    "flux_records": {
-      "version": 1,
-      "checks": 18,
-      "report_sha256": "e66b7102b249b2b5cd090ffe8c991c86b49671065fac7ea87818381af517eb09",
-      "outcome": "Quadratic flux and average one-count rule derived conditionally; balanced sequence strictly alternates, failing iid mathematical benchmark."
-    },
-    "next": "Personally derive pair-relative orientation transport, phase-sensitive reciprocity, and third-neighbor freedom; known geometric phase is prior art.",
-    "latest_checkpoint": {
-      "time": "2026-10-16T03:45:08.963809+00:00",
-      "author": "/root personally",
-      "status": "Scientific sources frozen; final research-block preservation in progress",
-      "current_network_blocks": 19,
-      "focused_manifest_count": 20,
-      "verified_source_bindings": 59,
-      "report_sha256": "237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a",
-      "manifest_sha256": "36112365574def334c00ddadf5fb4a37f7562505b83d6d914dbf4c176e300cca",
-      "root_read_all_current_independent_derivations_code_results": true,
-      "root_viewed_figure": true,
-      "next_action": "Finish the three-hour research-block preservation at03:53:06Z, then carry the preparation-independent common-response tests into actual calibrated environments; first establish a physical force/coordinate/time bridge and model-error budget without choosing a new action per environment.",
-      "empirical_status": "Hensen exposed development reproduction; all listed network controls synthetic. No independent empirical candidate validation.",
-      "not_formal_audit": true,
-      "campaign_deadline_unchanged": "2026-10-16T22:36:59Z",
-      "exploration_window_end": "2026-10-16T03:53:06Z",
-      "unpublished_extension_status": "Blocks11-19 are checked exploratory evidence; only09/10 are integrated in canonical PR9632. No claim of completed canonical review for later extensions."
-    },
-    "report": {
-      "path": "NETWORK_EXPLORATION_REPORT_2026-10-16.md",
-      "sha256": "237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a",
-      "manifest": "NETWORK_EXPLORATION_MANIFEST_v2.json",
-      "source_commit": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
-      "future_contract": "NEXT_OBSERVATION_CONTRACT_v1.md",
-      "review_status": "19focused source checks complete; PR9632 canonical09/10 only; later extensions exploratory"
-    }
-  },
-  "subwindow_completion": {
-    "completed_at": "2026-10-16T03:54:53.593473+00:00",
-    "subwindow_started_at": "2026-10-16T00:53:06+00:00",
-    "subwindow_end": "2026-10-16T03:53:06+00:00",
-    "elapsed_hours": 3.0298870758333334,
-    "subwindow_status": "complete",
-    "campaign_status": "active",
-    "campaign_deadline_unchanged": "2026-10-16T22:36:59Z",
-    "source_checkpoint": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
-    "final_handoff_commit": "153fc4ae3967615f5d52375ee0301845cc34ea57",
-    "remote_head_verified": "153fc4ae3967615f5d52375ee0301845cc34ea57",
-    "worktree_clean": true,
-    "report_sha256": "237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a",
-    "owned_research_jobs": [],
-    "conflicting_owned_processes": [],
-    "milestone_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632",
-    "empirical_validation": false,
-    "next_action": "Continue from NEXT_OBSERVATION_CONTRACT_v1.md; establish the observable and source bridge, with reserved histories and test functions, before testing the supplied adaptive-action class."
-  },
-  "coupling_reconstruction": {
-    "status": "v2 focused check complete; source and full reproduction personally read/verified",
-    "note": "COUPLING_RECONSTRUCTION_v2.md",
-    "primary_checks": 26,
-    "independent_assertions": 31,
-    "failures": 0,
-    "scope": "conditional relative coupling and potential consistency; synthetic controls only",
-    "source_hashes": {
-      "COUPLING_RECONSTRUCTION_v2.md": "42498cb335c85568c2358981f8563e9958f8994c61adcf6562cc1fcff9d7c909",
-      "check_coupling_reconstruction_v2.py": "17b6efb074bf435d4346a0203fdb951d78181155ac6316eeb182b892f553f235",
-      "COUPLING_CONTROLS_v2.json": "6d084582bdcb470e00346ca54efe87dc607384c1d9dd3e44374b727bc0627c7c"
-    }
-  },
-  "sampled_coupling_inverse": {
-    "note": "SAMPLED_COUPLING_INVERSE_v2.md",
-    "status": "v2 checked:33primary and275focused assertions, all source bindings verified",
-    "v1_failure": "missing s*F2 term in p sensitivity corrected; original31pass2fail preserved",
-    "source_hashes": {
-      "SAMPLED_COUPLING_INVERSE_v2.md": "f353fa17d30ae96e286d12379b5393daefae58816198323c12001de65251b2f7",
-      "check_sampled_coupling_inverse_v2.py": "7305a8f7daef0d7598bdd288b4e6f4298e6c708e91250a0628f329ce25a95823",
-      "SAMPLED_COUPLING_CONTROLS_v2.json": "1301bf184592aba51a55f9cfaa9203b01711866940a6ece03e05ccb701f8114b"
-    },
-    "empirical_validation": false,
-    "independent_report": "independent_sampled_coupling/REPORT.md",
-    "independent_report_sha256": "42276d4094879d7f6aba9b2fe71fef4914f9b97cbf41bab75b1bc636a804484d"
-  },
-  "sampled_publication": {
-    "worktree": "/Users/jonBridger/.codex/worktrees/sampled-coupling-inverse-20261016/New Axioms Lets Go",
-    "branch": "codex/sampled-coupling-inverse-20261016",
-    "primary_controls": 44,
-    "independent_assertions": 135,
-    "detected_mutations": 21,
-    "status": "published and attached",
-    "empirical_validation": false,
-    "cache_status": "fresh",
-    "final_bindings": {
-      "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b",
-      "scripts/sampled_coupling_inverse.py": "500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20",
-      "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af",
-      "logs/runner-cache/sampled_coupling_inverse.txt": "8f47d26366060335d7b1fc719b95f26c4dbfe477c21765c59534dd43090b9bd4",
-      "outputs/sampled_coupling/cache_before_runner_label.txt": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd"
-    },
-    "historical_cache_storage": {
-      "checked_at": "2026-10-16T04:36:57.838850+00:00",
-      "reason": "Staged whitespace check found the preserved historical cache has a terminal blank line. Preserve exact evidence bytes in deterministic gzip instead of editing the historical output. This is packaging only.",
-      "historical_path": "outputs/sampled_coupling/cache_before_runner_label.txt",
-      "archive_path": "outputs/sampled_coupling/cache_before_runner_label.txt.gz",
-      "uncompressed_sha256": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd",
-      "archive_sha256": "05e7209ca4723be65119f281d2e6c8a2a869c743736a8b1f04231237e955d414",
-      "byte_exact_roundtrip": true,
-      "historical_manifests_unchanged": true
-    },
-    "focused_preflight": {
-      "checked_at": "2026-10-16T04:37:54.564069+00:00",
-      "canonical_bindings_verified": true,
-      "historical_cache_roundtrip_verified": true,
-      "cache_status": "fresh",
-      "staged_whitespace_exit_code": 0,
-      "staged_path_count_before_this_receipt": 107,
-      "scope_guard": "only declared source, outputs, campaign pack, runner cache and citation manifest",
-      "publication_validation": "focused checks passed; shared integrated landing validation remains pending"
-    },
-    "publication_worktree_clean": true,
-    "review": "Root read complete focused proof/code/results and verified final bindings; no formal audit verdict.",
-    "pr": {
-      "baseRefName": "main",
-      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "changedFiles": 108,
-      "headRefName": "codex/sampled-coupling-inverse-20261016",
-      "headRefOid": "09ee78488eda7950be5e18624678d709e3758fb2",
-      "isDraft": false,
-      "mergeStateStatus": "BLOCKED",
-      "mergeable": "MERGEABLE",
-      "number": 9634,
-      "state": "OPEN",
-      "title": "[physics-loop] sampled-coupling inverse bounded_theorem conditional-support",
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634",
-      "verified_at": "2026-10-16T04:39:21.109604+00:00",
-      "attached_to_current_chat": true,
-      "shared_landing_validation": "pending",
-      "scientific_status": "bounded_theorem / conditional-support; synthetic controls only, no empirical validation"
-    },
-    "remaining_assumptions": [
-      "one linear hidden coordinate with common clamped dynamics",
-      "positive inertia and stiffness, nonnegative damping",
-      "identified source conjugacy, force readout and controlled coordinate/time",
-      "pulse fidelity and no derivative impulses",
-      "calibration rank/conditioning and nonzero response anchor",
-      "absolute normalization, visible potential, physical realization"
-    ],
-    "inputs_not_assigned_within_class": [
-      "hidden initial preparation per trial",
-      "a fixed quadratic coupling function",
-      "continuous-frequency alias choice"
-    ]
-  },
-  "physical_bridge_checkpoint": {
-    "time": "2026-10-16T05:07:48.595187+00:00",
-    "author": "/root personally",
-    "scope": "physical force/coordinate calibration and smooth-history compatibility; exploratory supporting calculations",
-    "physical_port": {
-      "primary_controls": 28,
-      "independent_assertions": 137,
-      "frozen_sources": {
-        "PHYSICAL_PORT_BRIDGE_v1.md": "17f694e8770bd22190dc9d3e5a589b1dfd37f12f9341369801be8c167e6e815a",
-        "PHYSICAL_PORT_INTAKE_v1.json": "0db561698358d8f5248f58e87807d34838f0968f0e3f83b7bc4ac9e3a05b3d7e",
-        "check_physical_port_bridge_v1.py": "6043347258b23d987b4bbce3dfbc6aee8347cf9df1666c000c34cc4e5486a9c8",
-        "PHYSICAL_PORT_CONTROLS_v1.json": "30fe2cbe48eae60a1ed441ad144c4a89679158010653eb0e9fa5087da4fe1a9a"
-      }
-    },
-    "smooth_history": {
-      "primary_controls": 24,
-      "independent_assertions": 112,
-      "frozen_sources": {
-        "SMOOTH_HISTORY_BRIDGE_v1.md": "cd443c52c1fe9a5cb9ccd7d517bd689a969b839fdb0a942272449ea9deaefcd5",
-        "check_smooth_history_bridge_v1.py": "570e2af0084a638cb0cd46facef78d30243a4a232f8f49bb3297c028978e6cab",
-        "SMOOTH_HISTORY_CONTROLS_v1.json": "a1dd8ed6d554f17e02ba308ca13a4e6168265ae47c166e1fdfea93dda6c73159"
-      }
-    },
-    "root_read_complete_independent_proof_code_results": true,
-    "independent_artifact_bindings_verified": 9,
-    "empirical_validation": false,
-    "source_intake": "PHYSICAL_PORT_INTAKE_v1.json",
-    "new_measured_dataset_accessed": false,
-    "independent_test_data": "none; synthetic reserved histories only",
-    "prior_art": "standard coenergy calibration and weak identification; no broad novelty claim",
-    "operational_failures": [
-      "Python default TLS CA error recovered with certificate-verifying system curl",
-      "web screenshot returned no image pixels; no visual inspection claimed",
-      "checkpoint read expected results.json but actual smooth checker output is independent_stdout.json; recovered by reading actual file"
-    ],
-    "remaining_imports": [
-      "physical actuator coenergy and calibration",
-      "known moving-load correction",
-      "one passive hidden mode and smooth couplings",
-      "continuum coordinate/force/time and derivative-error certificates",
-      "actual field or gravity identification",
-      "absolute scale"
-    ],
-    "next_route": "Test an environment-dependent quadratic hidden-mode action via force-ringdown/linear-response pole identities; provisional derivation not yet checked."
-  },
-  "ringdown_reconstruction_checkpoint": {
-    "time": "2026-10-16T05:31:36.754907+00:00",
-    "author": "/root personally",
-    "scope": "Conditional action-function reconstruction from ideal calibrated rest response and clamped ringdown across environments",
-    "common_action": {
-      "source": "COMMON_ACTION_RINGDOWN_v1.md",
-      "primary_controls": 62,
-      "focused_independent_assertions": 268,
-      "manifest_sha256": "ce067b308141b9693f4e8d33f55a9557192ba9f77428628846d124a5655f870d"
-    },
-    "action_inverse": {
-      "source": "RINGDOWN_ACTION_RECONSTRUCTION_v1.md",
-      "primary_extension_controls": 132,
-      "embedded_parent_controls": 62,
-      "focused_independent_assertions": 418,
-      "manifest_sha256": "056b74314366272c1fa493af113529e006acf4a383a1eeec115b369a624bccd3"
-    },
-    "frozen_bindings_verified": 31,
-    "binding_note": "3+3 source rows,3 repeated parent dependencies,22 independent artifacts. Counts overlap and are not pooled.",
-    "root_read_complete_independent_proof_code_results": true,
-    "verification_receipt": "RINGDOWN_SOURCE_VERIFICATION_v1.json",
-    "new_physical_data_accessed": false,
-    "empirical_validation": false,
-    "reserved_data_status": "Synthetic initial states only; first60samples fit preparation and last541are predicted at existing environments. No independent empirical test.",
-    "result": "Within one supplied reciprocal quadratic hidden-mode action class, Q reconstructs the stiffness/inertia ratio derivative; the phase-sensitive second harmonic reconstructs log-inertia derivative. These, response residues, polynomial closure and static-force consistency reconstruct a canonical action and Rayleigh functions up to demonstrated coordinate/constant freedoms.",
-    "not_derived": [
-      "one-mode quadratic action and Rayleigh class",
-      "physical conjugate force/coordinate/time calibration",
-      "rest state for linear response",
-      "isolated nonzero underdamped mode",
-      "ideal continuum functions or adequate error/regularity certificates",
-      "absolute physical hidden scale",
-      "quantum or gravitational identification"
-    ],
-    "failure_preserved": "v1 common-action control inspected unsimplified SymPy free_symbols; the residue identity already held. v2 simplifies before the representation assertion; original61pass1fail remains.",
-    "prior_art": "Classical frequency-force/Hellmann-Feynman relation acknowledged; no broad novelty claim. Optomechanics review SecIII.A-B read; Perkins/Bellan abstract only.",
-    "operational_recovery": [
-      "wrong remote execution ref recovered with exact ai/execution",
-      "broad prior-art git grep terminated137; narrowed docs root search completed, no absence theorem"
-    ],
-    "next_action": "Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.",
-    "deadline_unchanged": "2026-10-16T22:36:59Z",
-    "packaging_unchanged": "2026-10-16T22:21:59Z"
-  },
-  "ringdown_publication": {
-    "time": "2026-10-16T05:55:17.727940+00:00",
-    "receipt": {
-      "baseRefName": "main",
-      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "changedFiles": 98,
-      "headRefName": "codex/ringdown-action-inverse-20261016",
-      "headRefOid": "de4db24e811625eeb059beb341e51a1a8487371a",
-      "isDraft": false,
-      "mergeStateStatus": "BLOCKED",
-      "mergeable": "MERGEABLE",
-      "number": 9637,
-      "state": "OPEN",
-      "title": "[physics-loop] ringdown-action inverse bounded_theorem conditional-support",
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637",
-      "verified_at": "2026-10-16T05:55:17.727940+00:00",
-      "attached_to_current_chat": true,
-      "shared_landing_validation": "pending",
-      "scientific_status": "bounded_theorem / conditional-support; exact-class and synthetic controls only, no empirical validation"
-    },
-    "worktree": "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go",
-    "branch": "codex/ringdown-action-inverse-20261016",
-    "source_head": "de4db24e811625eeb059beb341e51a1a8487371a",
-    "canonical_sources": {
-      "docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md": "980512d7d9a5fb2f19583fbdeb7e849d0861c0299a13fa52f7bf51a059acdd86",
-      "scripts/ringdown_action_inverse.py": "1be664a62d9c1656172aa4a45f48a5cc094212d9a2a3cc7d4dd88eaae0419047",
-      "scripts/ringdown_action_math.py": "834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df",
-      "logs/runner-cache/ringdown_action_inverse.txt": "fa83203bb47579b2a9d1fad50787f3507339bb817bae5ecd34714e0da2ba7d83",
-      "outputs/ringdown_action_inverse/controls.json": "ba6be1f8c017e89b71b97bd7559103dbd09c17b4b6cba79ad2a13823d84d3c6b"
-    },
-    "primary_controls": 195,
-    "independent_assertions_by_set": [
-      268,
-      418,
-      22,
-      6
-    ],
-    "counts_overlap_not_summed": true,
-    "root_review": {
-      "checked_at": "2026-10-16T05:45:09.640549+00:00",
-      "complete_report_proof_code_results_read": true,
-      "checked_manifest": "outputs/ringdown_action_inverse/independent/final_bindings_v2.json",
-      "manifest_sha256": "6b37278350c222554a63d4762903373e68b40890aaa20f68d89b1d3df9f66276",
-      "all_bindings_verified": 57,
-      "report_sha256": "77dc96fa5991ca9781244ee39988841527287dfdf4ce629f58a5780a7bf73aee",
-      "canonical_controls": 195,
-      "independent_assertions_by_set": [
-        268,
-        418,
-        22,
-        6
-      ],
-      "counts_overlap_not_summed": true,
-      "no_formal_audit_or_empirical_validation": true
-    },
-    "preflight": {
-      "checked_at": "2026-10-16T05:53:14.767808+00:00",
-      "vocabulary": "pass; no canonical source change",
-      "whitespace": "pass",
-      "cache_freshness": "fresh",
-      "frozen_bindings_verified": 57,
-      "historical_diff_gzip_mapping_verified": true,
-      "staged_scope": "one canonical note, primary/imported helper, cache, exact support evidence, unit pack and generated citation manifest only",
-      "staged_files_before_this_receipt": 97,
-      "source_freeze": "CANONICAL_FROZEN_v2.json",
-      "shared_integrated_main_pipeline": "pending; not run",
-      "shared_strict_lint": "pending; not run",
-      "shared_changed_evidence_landing_gates": "pending; not run",
-      "formal_audit": "not invoked",
-      "merge": "not requested"
-    },
-    "mutation_scope": "Initial24mutations:23detected; midpoint miss preserved. Sharper final control detects corrected midpoint mutation; other23remain bound to original helper. Final focused check verified narrow change.",
-    "data_roles": "61synthetic development environments;3additional initial states at existing environments,60preparation-fit samples and541prediction samples each. No measured data or empirical holdout.",
-    "newly_reconstructed": "Relative hidden inertia and other action/Rayleigh coefficient functions within a supplied regular reciprocal quadratic class, up to proved coordinate and constant freedoms.",
-    "remaining_premises": [
-      "action and dissipation class",
-      "one visible coordinate and one passive hidden mode",
-      "calibrated conjugate force/coordinate/time",
-      "rest response or an independently bounded preparation bridge",
-      "mode observability and continuous feature certificates",
-      "physical identification with the scalar or quantum program"
-    ],
-    "next_action": "Personally derive the nonstationary response about an observed residual hidden ringdown and test whether measured preparation can replace the rest-preparation premise. Freeze reconstructed coefficient functions before independent moving-history controls. Keep the quadratic one-mode class, physical force/coordinate/time calibration, finite-band inference and empirical applicability explicit; this milestone has not derived them."
-  },
-  "preparation_bridge_checkpoint": {
-    "time": "2026-10-16T06:18:03.328311+00:00",
-    "author": "/root personally",
-    "source": "PREPARATION_BRIDGE_v2.md",
-    "source_sha256": "ecb67821847f062a6c13632826beb2a37d4f91d7b72eca4aeb823626decb5d77",
-    "verification_receipt": "PREPARATION_ROOT_VERIFICATION_v1.json",
-    "primary_controls": [
-      133,
-      27
-    ],
-    "focused_independent_checks": [
-      127,
-      17
-    ],
-    "verified_bindings": 34,
-    "result": "Within the supplied affine-hidden/quadratic-force class, measured clamped prefixes and signed moment weights synthesize an exact finite-drive rest-start force functional without choosing hidden initial states. General-k nonstationary tangent and a sharp annulus noise-amplification lower bound are checked.",
-    "retired_conditional_import": "Actual equilibrium reset for this particular force functional, when a calibrated feasible preparation design and continuous no-kick transition are available.",
-    "surviving_imports": [
-      "one-mode quadratic action and dissipation class",
-      "common input history and fixed model",
-      "calibrated force/pole/phase/time and observable prefix",
-      "continuous prefix-to-drive hidden state with no unobserved kick",
-      "finite-band and derivative-error certificates",
-      "physical scalar/quantum identification and absolute scale"
-    ],
-    "failure": "Baseline subtraction is not a rest response; fixed nonzero amplitude phase cycling cannot remove arbitrary quadratic preparation. An unobserved common kick preserves polynomial closure but biases the inferred origin.",
-    "error_cost": "L1 >= (rmax^2+rmin^2)/(rmax^2-rmin^2), sharp over feasible designs; deterministic worst-case error, not variance.",
-    "data_roles": "Frozen synthetic model/development history plus reserved preparations and histories; no measured dataset or independent empirical test.",
-    "prior_art": "Known quadratic-output lifting and polynomial interpolation; Berkane et al. arXiv2312.10684v1 abstract/introduction and displayed closure/lifting equations inspected, not full observer theorem.",
-    "delivery": "commits-only support, no new PR",
-    "next_action": "Return to the actual scalar-field normalization gap. Personally derive what tensor-wave amplitude transport can identify across measured environments, retaining source generation, detector calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile or call a toy oscillator a gravity test."
-  },
-  "scalar_bridge_checkpoint": {
-    "time": "2026-10-16T06:42:20.467110+00:00",
-    "author": "/root personally",
-    "siren_source": "SCALAR_SIREN_BRIDGE_v1.md",
-    "siren_source_sha256": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
-    "root_verification": {
-      "checked_at": "2026-10-16T06:42:20.467110+00:00",
-      "author": "/root",
-      "complete_independent_proof_code_results_read": true,
-      "manifest": "independent_scalar_siren_bridge/SCALAR_SIREN_REVIEW_IDENTITY_v1.json",
-      "manifest_sha256": "a1af36b0745a5c9e03e7cfb1b9896c443a2c64a61f369fb5efe6912b7c2ad83f",
-      "all_bindings_verified": 30,
-      "primary_controls": 207,
-      "independent_pre_runner_controls": 96,
-      "post_exposure_comparison_rows": 16,
-      "author_reproduction_byte_identical": true,
-      "counts_overlap_not_pooled": true,
-      "formal_audit": false,
-      "empirical_validation": false
-    },
-    "source_closure_source": "SCALAR_SOURCE_CLOSURE_v2.md",
-    "source_closure_source_sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd",
-    "source_closure_primary_controls": 174,
-    "source_closure_independent_check": {
-      "checked_at": "2026-10-16T07:00:01.326626+00:00",
-      "author": "/root",
-      "complete_independent_proof_code_results_read": true,
-      "manifest": "independent_scalar_source_closure/MANIFEST_v1.json",
-      "manifest_sha256": "45d5af9634725fc7ef2d89e16044cec0a6c230cdf19b4e146bde779d699331af",
-      "all_artifact_bindings_verified": 19,
-      "all_source_bindings_verified": 7,
-      "independent_controls": 72,
-      "primary_controls": 174,
-      "primary_reproduction_byte_identical": true,
-      "current_source": "SCALAR_SOURCE_CLOSURE_v2.md",
-      "primary_reproduction_source": "SCALAR_SOURCE_CLOSURE_v1.md",
-      "version_relation": "Scope-only correction: a negative scalar mass squared is not alone a general curved-vacuum instability test. V1 and its unchanged runner/output remain preserved. Independent AdS counterexample and corrected v2 are checked.",
-      "counts_overlap_not_pooled": true,
-      "formal_audit": false,
-      "empirical_validation": false
-    },
-    "result": "Leading tensor transport weights endpoint F, but chirp-distance inference also depends on source loss. Within a weak unscreened point-body class, universal scalar charges and scalar radiation can be derived from the supplied action instead of setting the loss to zero. A separate finite-wavelength proxy bounds transport only with interior regularity data.",
-    "conditional_equations": [
-      "D_chirp/DL=(1+eta)/sqrt(Fs/Fo)",
-      "alpha_weak^2=1/(2omega+3)",
-      "eta_quadrupole=alpha_weak^2/6 in massless weak equal-charge limit",
-      "vacuum W_x=W and m_s^2=2(W_xx-W)/(2omega+3) independent of chart normalization C"
-    ],
-    "surviving_premises": [
-      "scalar action class",
-      "actual on-shell endpoint/background and material state",
-      "weak unscreened body approximation, not compact-source sensitivity",
-      "calibrated distance, geometry, inclination and amplitude",
-      "finite-wavelength validity and regularity",
-      "common absolute scale and cross-environment registration"
-    ],
-    "data_roles": "Exact mathematics and frozen synthetic controls only; primary papers exposed for development, no raw new dataset or independent empirical test.",
-    "prior_art": "Known scalar-tensor/siren and multipole physics, rederived as support; no novelty claim or new PR.",
-    "next_action": "Finish the focused weak-source check and checkpoint both scalar support derivations. Then establish a measured weak-body laboratory bridge: derive extended-source scalar response and normalization bounds from measured mass/geometry without choosing a density profile; inspect Lee et al.2020 primary measurement/calibration and data availability before a frozen data-access plan. Keep screening, material stress, source registration and apparatus transfer explicit. No transfer of weak charges to compact objects by assumption.",
-    "source_scope_correction": "V1 overbroad negative-mass claim corrected to flat constant vacuum; curved stability needs background/spectrum/boundary conditions. Explicit AdS counterexample preserved; original174control evidence unchanged."
-  },
-  "lab_bridge_checkpoint": {
-    "time": "2026-10-16T07:06:40.835585+00:00",
-    "author": "/root personally",
-    "source": "LAB_YUKAWA_BRIDGE_v1.md",
-    "source_sha256": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6",
-    "verification": {
-      "checked_at": "2026-10-16T07:05:09.602402+00:00",
-      "author": "/root",
-      "complete_independent_proof_code_results_read": true,
-      "manifest": "independent_lab_yukawa_bridge/LAB_YUKAWA_REVIEW_IDENTITY_v1.json",
-      "manifest_sha256": "a59cd42b47758fd751b9804cc273272790057f76505f9f2db33c12f76756384c",
-      "all_bindings_verified": 23,
-      "primary_controls": 151,
-      "independent_controls": 193,
-      "author_reproduction_byte_identical": true,
-      "counts_overlap_not_pooled": true,
-      "numerical_status": "Floating quadrature and finite differences, not certified enclosures; analytic bounds checked separately",
-      "formal_audit": false,
-      "empirical_validation": false
-    },
-    "result": "Derived the finite-source trace response and geometry-dependent signed torque kernel within the supplied weak unscreened action class. Source support/stress bounds replace a chosen radial density only for a conditional exterior bound. Complex calibration ratios constrain a common scalar strength without fixing gain, but leave absolute GT unidentified. Calibration leakage, zero-channel branches and noise margins are explicit.",
-    "data_source": "Lee2020 thesis Appendix A.1",
-    "data_identity": "LEE2020_DATA_IDENTITY_v1.json",
-    "data_csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
-    "rows": 95,
-    "torque_channels": 3,
-    "transcription_check": {
-      "checked_at": "2026-10-16T07:02:07.819656+00:00",
-      "source_pdf_sha256": "00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a",
-      "csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
-      "extractor_sha256": "fb9634d6a6f818bcbf377092dd25e2eea608844b83b64f0ddce3be45d3afc002",
-      "pypdf_version": "6.11.0",
-      "pymupdf_version": "1.27.2.3",
-      "rows": 95,
-      "numeric_table_cells_compared": 760,
-      "run_and_page_identifiers_compared": true,
-      "cross_engine_exact_decimal_agreement": true,
-      "original_csv_byte_identical": true,
-      "separation_range_um": [
-        46.2,
-        3036.3
-      ],
-      "all_printed_rows_kept": true,
-      "new_selection_or_model_fitting": false,
-      "data_role": "Exposed processed development data; not an empirical holdout",
-      "empirical_validation": false
-    },
-    "source_review": "LEE2020_VISUAL_AND_SOURCE_REVIEW_v1.json",
-    "data_roles": "Exposed processed development data; no new model fit, no raw records, no empirical holdout",
-    "empirical_validation": false,
-    "surviving_premises": [
-      "fixed weak unscreened action and environmental coefficients",
-      "source stress and material response",
-      "finite-geometry and boundary data",
-      "physical gain and frequency transfer",
-      "actual covariance/uncertainty and per-run corrections",
-      "absolute scale and cross-environment scalar registration"
-    ],
-    "source_correspondence_issues": [
-      "Appendix46.2um minimum versus Chapter11 stated52um, convention unresolved",
-      "Table8.1 prints positive11 exponent forG; no silent input correction"
-    ],
-    "delivery": "commits-only support and source intake; no new PR or formal audit",
-    "next_action": "Reconstruct and check the Lee thesis external-sphere calibration formula and units before any scalar fit, retaining measured versus calculated quantities and the printed G-exponent issue. Then obtain the public finite-geometry kernel and identify required per-run corrections, resolving the Appendix A.1 separation convention before a Newtonian reference reproduction. Freeze computations, keep these95processed rows exposed development, and do not replace unavailable positions, covariances, geometry or calibration leakage with chosen zeros/profiles. If required inputs remain unavailable, derive controlled uncertainty envelopes or pivot to a dataset with the primitive channels. Absolute F and physical environmental registration remain unresolved."
-  },
-  "calibration_checkpoint": {
-    "time": "2026-10-16T07:31:56.058210+00:00",
-    "author": "/root personally",
-    "source": "LEE2020_CALIBRATION_DERIVATION_v1.md",
-    "source_sha256": "f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04",
-    "controls": "LEE2020_CALIBRATION_CONTROLS_v1.json",
-    "controls_sha256": "566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244",
-    "primary_controls": 62,
-    "failures": 0,
-    "independent_check": {
-      "checked_at": "2026-10-16T07:35:25.231651+00:00",
-      "author": "/root",
-      "complete_independent_derivation_code_report_and_results_read": true,
-      "manifest": "independent_lee2020_calibration/MANIFEST_v1.json",
-      "manifest_sha256": "895d10e1bde4fb0fb4d8f88d335609f515072ccb7f26060de0b85da566fe4d24",
-      "artifact_bindings_verified": 17,
-      "source_bindings_verified": 9,
-      "primary_controls": 62,
-      "independent_controls": 85,
-      "author_reproduction_byte_identical": true,
-      "counts_overlap_not_pooled": true,
-      "calibration_reproduction": "Partial; source nominal and sensitivity discrepancies preserved. No retuning or physical significance assigned.",
-      "source_transcription_scope": "Root read and rendered primary source; focused checker used frozen transcription and did not independently reread PDF.",
-      "formal_audit": false,
-      "empirical_validation": false
-    },
-    "published_model_reproduction": "Partial, not successful: pinned equal-sphere inputs with labeled G=6.6742e-11 predict2.1020674557490207fNm versus source2.1094; sensitivity conventions also unresolved. No values retuned and no physical significance assigned.",
-    "result": "Nine-pair forces, torque sign, Fourier coefficients and normalized three-dimensional Green/finite-wedge representation checked under explicitly supplied geometry and field premises.",
-    "diagnostic_receipt": "LEE2020_CALIBRATION_DISCREPANCIES_v1.json",
-    "diagnostic_sha256": "77a747437276a9b6bf796c54801e74dda016d9189811474cb719ca2ff3df67d1",
-    "data_roles": "Published calibration/model inputs exposed development; synthetic quadrature controls. No empirical test.",
-    "shape_plan": "LAB_SHAPE_PLAN_v1.json",
-    "shape_plan_sha256": "c1fb462b0d31817c13739738177817e6c3051d4e2af3b17c265b37d23009a2a4",
-    "shape_status": "Completed; details in lab_shape_checkpoint",
-    "delivery": "commits-only support, no new PR",
-    "next_action": "Read the full primary Fuchs2024 measurement and calibration model, identify instrument readings versus calibrated/fitted/gravity-dependent products, and freeze a minimal raw-file access and analysis protocol before opening the public lock-in arrays. Derive the observed transfer/geometry mapping conditionally, preserving source registration, absolute calibration, noise covariance and background-field assumptions. Published summaries are exposed; any reserved raw-record check is not an unseen physical prediction. Preserve Lee2020's unresolved calibration/geometry/separation correspondence without substituting chosen values.",
-    "completed_at": "2026-10-16T07:53:26.580349+00:00"
-  },
-  "lab_shape_checkpoint": {
-    "time": "2026-10-16T07:53:26.580349+00:00",
-    "author": "/root personally",
-    "source": "LAB_SHAPE_DERIVATION_v1.md",
-    "source_sha256": "a459a8fdba87c52ff5e79b14b802333d47788e406c6970ab42a992d3c4d8e8e3",
-    "output": "LAB_SHAPE_CONTROLS_v1.json",
-    "output_sha256": "ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed",
-    "results": "LAB_SHAPE_RESULTS_v1.md",
-    "results_sha256": "2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e",
-    "verification": {
-      "checked_at": "2026-10-16T07:44:22.315847+00:00",
-      "author": "/root",
-      "complete_independent_derivation_code_report_and_check_results_read": true,
-      "large_array_scope": "All original bytes preserved; exact source-binding and full-row/constraint correspondence checked by inspected checker, with aggregate/control and active-constraint results read.",
-      "manifest": "independent_lab_shape/LAB_SHAPE_REVIEW_IDENTITY_v1.json",
-      "manifest_sha256": "fa1f90303d43fa5791220189beecd3ace820e028409c1c8f537a914e567bc9ec",
-      "bindings_verified": 29,
-      "primary_controls": 158,
-      "independent_controls": 82,
-      "post_exposure_correspondence_controls": 47,
-      "all_row_readouts_compared": 855,
-      "constraint_records_compared": 15006,
-      "author_reproduction_byte_identical": true,
-      "shared_solver_library": true,
-      "counts_overlap_not_pooled": true,
-      "result": "Nine conditional box optima agree; exact rational monotone certificates independent of LP; actual measurement applicability and statistical coverage remain unresolved.",
-      "formal_audit": false,
-      "empirical_validation": false
-    },
-    "data_csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
-    "rows": 95,
-    "role": "All exposed processed development data; no scalar fit or empirical holdout",
-    "result": "Exact positive-measure implications and nine deterministic error-box optima checked. Actual matched-pattern/transfer applicability and statistical coverage remain unresolved.",
-    "source_review": "LEE2020_METROLOGY_SOURCE_REVIEW_v1.json",
-    "source_review_sha256": "3364ed4127374ad1da1cd0a74e62d195fb08a9281095b5aa993b5755f04e9ced",
-    "empirical_validation": false
-  },
-  "lab_geometry_transport_checkpoint": {
-    "time": "2026-10-16T07:53:26.580349+00:00",
-    "author": "/root personally",
-    "source": "LAB_GEOMETRY_TRANSPORT_v1.md",
-    "source_sha256": "ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991",
-    "output": "LAB_GEOMETRY_TRANSPORT_CONTROLS_v1.json",
-    "output_sha256": "74730ce6ebf6c899287905fb26a86d6baa3fee417b5ecfe41fde996785572a77",
-    "verification": {
-      "checked_at": "2026-10-16T07:52:24.587592+00:00",
-      "author": "/root",
-      "complete_independent_derivation_code_report_and_results_read": true,
-      "manifest": "independent_lab_geometry_transport/MANIFEST_v1.json",
-      "manifest_sha256": "d1983b409f09dd78d90a7d332c372355beb0a926aaff0ca6898ddcf48156b23d",
-      "artifact_bindings_verified": 16,
-      "source_bindings_verified": 6,
-      "primary_controls": 366,
-      "independent_controls": 63,
-      "author_reproduction_byte_identical": true,
-      "counts_overlap_not_pooled": true,
-      "result": "Conservative gradient and positive mass transport bounds checked under uniform pathwise geometry; real harmonics require factor two. No actual apparatus displacement certificate supplied.",
-      "limits": [
-        "Stipulated scale envelope is loose; actual errors need not be large.",
-        "No empirical covariance, confidence level or scalar exclusion.",
-        "Unconstrained transport infima cannot be inserted without admissible paths."
-      ],
-      "formal_audit": false,
-      "empirical_validation": false
-    },
-    "result": "Derived admissible mass-transport uncertainty envelope without choosing a density profile; actual displacement/gap/lever certificate remains required.",
-    "illustration": "Stipulated micrometre movements give loose global envelopes, not an apparatus error bound or proof of large actual corrections.",
-    "empirical_validation": false
-  },
-  "dynamic_gravity_intake": {
-    "time": "2026-10-16T07:53:26.580349+00:00",
-    "source": "DYNAMIC_GRAVITY_INTAKE_v1.md",
-    "source_sha256": "7fd2cd4c2fad55b0eda18d35152c3f22e939301d6fcd4b401a0e3f4902079e8a",
-    "selected_primary": "https://arxiv.org/abs/2303.03545v2",
-    "selected_dataset": "https://zenodo.org/records/10300430",
-    "receipt": "DYNAMIC_GRAVITY_METADATA_RECOVERY_v1.json",
-    "receipt_sha256": "36c63ce7d399fd9977c1a67b6a3740ab99c98af9eace3f1ab10c7d7d4ce953bd",
-    "raw_arrays_opened": true,
-    "published_aggregate_exposure": true,
-    "stage": "One raw record analyzed under frozen development protocols; full parser and one original regression independently checked",
-    "next_action": "Refresh relevant main/open-PR science, then personally derive or delimit a non-equilibrium scalar reconstruction from response mass/coupling functions and expansion/matter observations. Read the full matter-density/frame and stability sections of pinned Brax1203.4812v2 and earlier reconstruction prior art first. Retain scalar acceleration, Einstein constraints, normalization and coordinate/source calibration; determine which histories are constrained or free rather than imposing minimum tracking, A=1 or a chosen initial field. Seek an exact consistency identity or counterexample and focused check before any new observation fit. Keep seven Fuchs arrays unopened; source-position changes are not registered scalar environments.",
-    "raw_arrays_opened_count": 1
-  },
-  "delivery_current": "commits-only support; prior five milestone PRs frozen",
-  "fuchs_weak_checkpoint": {
-    "time": "2026-10-16T08:32:23.807043+00:00",
-    "author": "/root personally",
-    "source": "FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v2.md",
-    "source_sha256": "87c88650707c10c204a106a86749a9fa42d037ee670e4d1093caa75895538d51",
-    "extension": "FUCHS_COMPLEX_PROBE_EXTENSION_v1.md",
-    "extension_sha256": "5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd",
-    "root_weak_controls": 25,
-    "root_complex_current_controls": 23,
-    "root_original_development_cases": 24,
-    "root_complex_development_cases": 12,
-    "original_development_sha256": "84c6481edd29c155eb07ab854bd4ff879a69c664b5a180b1e6435e9e6fda1351",
-    "complex_development_sha256": "0e747b940174657fdacae344912e075c3882fdf834608e53aa3a25e871cd6e9a",
-    "selected_trace_sha256": "6caefb32f687e479d832a28ffa18a2125484acc3783ee12d42e602e15f1d9c67",
-    "mathematics_check": {
-      "checked_at": "2026-10-16T08:31:16.175570+00:00",
-      "author": "/root",
-      "complete_independent_derivations_code_reports_read": true,
-      "all_control_names_and_detailed_results_inspected": true,
-      "manifest": "independent_fuchs_weak/MANIFEST_v1.json",
-      "manifest_sha256": "412cd463c7df394e37537d385dcd1f74f7a5fa9532f9e6ff9d9156a3d0c4f7d0",
-      "report_sha256": "2e30aae4ad0ea263a8370b8ef76a9181725277fca5e3cc4d1f347153d2d3f75d",
-      "artifact_bindings_verified": 31,
-      "author_source_bindings_verified": 15,
-      "independent_first_pass_controls": 60,
-      "independent_complex_controls": 85,
-      "root_weak_controls": 25,
-      "root_complex_current_controls": 23,
-      "author_replays_byte_identical": true,
-      "counts_overlap_not_pooled": true,
-      "historical_failed_control_preserved": true,
-      "raw_data_outside_this_check": true,
-      "development_extension_runner_not_independently_reviewed": true,
-      "ordinary_recovery": "Initial verification command used unresolved Path parents and exited before writing; rerun with absolute resolved pack path. No evidence changed.",
-      "formal_audit": false,
-      "empirical_validation": false
-    },
-    "data_check": {
-      "checked_at": "2026-10-16T08:24:35.044383+00:00",
-      "author": "/root",
-      "proof_report_and_code_read_completely": true,
-      "independent_control_and_correspondence_results_inspected": true,
-      "identity_manifest": "independent_fuchs_development/FUCHS_DEVELOPMENT_REVIEW_IDENTITY_v1.json",
-      "identity_manifest_sha256": "f6caf80c1ddb0004d518d69c8622f0fd888f40db43d23993c227dd504e3a0bc5",
-      "bindings_verified": 44,
-      "independent_controls": 44,
-      "post_exposure_correspondence_controls": 21,
-      "root_math_controls": 25,
-      "root_development_cases": 24,
-      "independent_real_regression_cases": 1,
-      "all_selected_rows_independently_parsed": 678861,
-      "unchanged_author_outputs_byte_identical": true,
-      "counts_overlap_not_pooled": true,
-      "shared_numpy_lstsq_library": true,
-      "other_raw_arrays_opened": false,
-      "complex_extension_outside_this_check": true,
-      "empirical_validation": false,
-      "formal_audit": false
-    },
-    "historical_failure": "Complex synthetic v1:19pass1fail at fixed1e-10 threshold; step halved without relaxing threshold, v2 adds three convergence checks and23pass0fail. All original bytes preserved.",
-    "result": "Initial homogeneous history eliminated only from a supplied linear necessary observation equation. Complex probes preserve forcing moments; conditional coefficients stabilize but residuals and physical transfer/registration gaps remain.",
-    "data_role": "Selected trace exposed development, published aggregates exposed, seven other arrays unopened; no independent physical prediction",
-    "complex_numerical_review_scope": "Root implemented and structurally inspected all12cases; independent mathematics and synthetic replay cover the complex helper; distinct raw numerical implementation covers one original real-probe case, not the12extension cases.",
-    "figure": "FUCHS_DEVELOPMENT_DIAGNOSTIC_v1.png",
-    "figure_sha256": "2809244c06a1fdf8f5baae515a9444a400a99f06412a9c0559886539527d3d1a",
-    "figure_visually_checked": true,
-    "prior_art_intake": "DENSITY_TOMOGRAPHY_PRIOR_ART_INTAKE_v2.json",
-    "prior_art_sha256": "16fee9b23c9524828be54f0fddc31e6e40cd870d27aaa38ec43035349d033900",
-    "empirical_validation": false,
-    "formal_audit": false,
-    "next_action": "Refresh relevant main/open-PR science, then personally derive or delimit a non-equilibrium scalar reconstruction from response mass/coupling functions and expansion/matter observations. Read the full matter-density/frame and stability sections of pinned Brax1203.4812v2 and earlier reconstruction prior art first. Retain scalar acceleration, Einstein constraints, normalization and coordinate/source calibration; determine which histories are constrained or free rather than imposing minimum tracking, A=1 or a chosen initial field. Seek an exact consistency identity or counterexample and focused check before any new observation fit. Keep seven Fuchs arrays unopened; source-position changes are not registered scalar environments."
-  },
-  "non_equilibrium_checkpoint": {
-    "time": "2026-10-16T09:36:59.455687+00:00",
-    "author": "root personally",
-    "stage": "Checked scalar-history milestone published and attached",
-    "source": "/Users/jonBridger/.codex/worktrees/scalar-history-inverse-20261016/New Axioms Lets Go/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md",
-    "source_sha256": {
-      "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
-      "scripts/scalar_history_inverse.py": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
-      "scripts/scalar_history_inverse_math.py": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b"
-    },
-    "result_sha256": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
-    "primary_controls": 58,
-    "primary_failures": 0,
-    "mutations_detected": 10,
-    "independent_pre_author_controls": 64,
-    "independent_post_original_exposure_additions": 31,
-    "independent_canonical_integration_checks": 16,
-    "portable_replay_cases": 5,
-    "counts_separate_not_pooled": true,
-    "independent_manifest_sha256": "1fcb1cb4316c71b16b1d999e2e3bee8c0eb3f3c1b5a0ceab390bb731dafd5e00",
-    "independent_report_sha256": "3e60148735a9a14330e46f7310278f37e98455a98e414a3b5b5f46bdc605b466",
-    "independent_files_verified": 69,
-    "root_complete_review": true,
-    "review_scope": "Independent proof/code/all control results, final report, failures and final bindings read; same Python/SymPy, no independent data or CAS, no priority audit",
-    "result": "Within the supplied canonical scalar/conformal-dust action on a monotonic positive-dust chart, H,alpha,mu are compatible exactly when a velocity satisfies the derived ODE and sixth-degree constraint throughout the interval. Outside a precisely classified uncoupled exceptional continuum there are at most six histories; local A,V follow per surviving history. No minimum, potential shape or preferred initial velocity is selected. Physical input extraction remains open.",
-    "remaining_imports": [
-      "canonical single-scalar/conformal pressureless action class",
-      "known M and normalization",
-      "flat homogeneous Einstein frame",
-      "registered Einstein-time H C3, alpha C1, fixed-bare-density mu continuous",
-      "nonzero scalar velocity and positive dust on connected chart",
-      "measurement extraction, derivative/error control and actual environmental correspondence"
-    ],
-    "historical_failures": "Original v1 42 pass/2 fail preserved and replayed; v2 46/0. First mutation choices, unsupported runner label, review clarifications and packaging/link-check failures remain recorded.",
-    "empirical_validation": false,
-    "new_observations_read": false,
-    "worktree": "/Users/jonBridger/.codex/worktrees/scalar-history-inverse-20261016/New Axioms Lets Go",
-    "branch": "codex/scalar-history-inverse-20261016",
-    "formal_audit": false,
-    "pr": {
-      "baseRefName": "main",
-      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "changedFiles": 97,
-      "headRefName": "codex/scalar-history-inverse-20261016",
-      "headRefOid": "92b648a0bcaf27cb09cbe3c54bd1fff31ff3e2f0",
-      "isDraft": false,
-      "mergeStateStatus": "BLOCKED",
-      "mergeable": "MERGEABLE",
-      "number": 9638,
-      "state": "OPEN",
-      "title": "[physics-loop] scalar-history compatibility bounded_theorem conditional-support",
-      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9638",
-      "verified_at": "2026-10-16T09:36:59.455687+00:00",
-      "attached_to_current_chat": true,
-      "shared_landing_validation": "pending",
-      "scientific_status": "bounded_theorem / conditional-support; exact mathematical and constructed controls only"
-    },
-    "next_action": "Refresh relevant main and open-PR science, then derive the matter-clock/frame and coupled matter/scalar response correspondence for the scalar-history inverse. Start with primitive redshift/clock and perturbative source/readout definitions; retain dust response and metric constraints before deciding whether any observable pole identifies fixed-bare-density mu. Keep clock, scale, action, gauge, background and approximation assumptions explicit; derive or eliminate them where possible. Compare with pinned Boisseau/Tsujikawa prior art. No minimum tracking, arbitrary scalar-state selector or fitted pole-to-mass identification. Keep seven Fuchs arrays unopened; do not fit a cosmological model before freezing a physical input map and data roles.",
-    "deadline_unchanged": "2026-10-16T22:36:59Z"
-  },
-  "last_checked_main": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
-  "scalar_history_publication": {
-    "baseRefName": "main",
-    "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
-    "changedFiles": 97,
-    "headRefName": "codex/scalar-history-inverse-20261016",
-    "headRefOid": "92b648a0bcaf27cb09cbe3c54bd1fff31ff3e2f0",
-    "isDraft": false,
-    "mergeStateStatus": "BLOCKED",
-    "mergeable": "MERGEABLE",
-    "number": 9638,
-    "state": "OPEN",
-    "title": "[physics-loop] scalar-history compatibility bounded_theorem conditional-support",
-    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9638",
-    "verified_at": "2026-10-16T09:36:59.455687+00:00",
-    "attached_to_current_chat": true,
-    "shared_landing_validation": "pending",
-    "scientific_status": "bounded_theorem / conditional-support; exact mathematical and constructed controls only"
-  },
-  "matter_clock_response_checkpoint": {
-    "time": "2026-10-16T10:13:06.736001+00:00",
-    "status": "root authored support complete; focused source-bound checks personally verified",
-    "root_report": "MATTER_RESPONSE_ROOT_REVIEW_v1.md",
-    "root_report_sha256": "672005f3abb6a429449a5c54b8e3b4875b1c677220d326dc0338738eb37656c4",
-    "binding_receipt": "MATTER_RESPONSE_ROOT_BINDINGS_v1.json",
-    "binding_receipt_sha256": "695da1757d8c4497fb8d01089e18b24ba585607be106c31d6e2983e2cf649765",
-    "counts_separate": {
-      "matter_clock_root": 55,
-      "matter_clock_independent": 99,
-      "matter_clock_post_correspondence": 15,
-      "matter_clock_root_post_witness": 15,
-      "response_root": 42,
-      "response_independent": 27,
-      "response_post_correspondence": 7,
-      "response_root_post_closure": 14
-    },
-    "failed_completed_controls": 0,
-    "scope": "Exact conditional mathematics and synthetic controls; no empirical validation or formal audit",
-    "sources": {
-      "MATTER_CLOCK_DERIVATION_v2.md": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
-      "SCALAR_RESPONSE_DERIVATION_v1.md": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
-      "SCALAR_RESPONSE_CLOSURE_v1.md": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
-      "MATTER_CLOCK_PRIOR_ART_v1.json": "b4a45a4445a24694c835cbea6be2adc52b2179f5b003217a421e142c430d7b73",
-      "NEXT_RESPONSE_INVERSE_PLAN_v1.md": "b835727aa83c00b6db4a6ccbc93b5c28cd27f8ca94d31adeec8baa9f78b71118",
-      "independent_matter_clock/REPORT_v1.md": "200511d0b90bf630366cad72f3ead1807f26b3276024442ef3e11c2f70d7f8df",
-      "independent_matter_clock/MANIFEST_v1.json": "3dfb5c3785f47ed4ed7c90ebb9c0f1d3e6082f15283bbe27b5cef6e82720da66",
-      "independent_scalar_response/RESPONSE_REVIEW_v1.md": "fbaa4c946b57cd8785068615c22ade9fe50449f22a59e6171ce54ca56dcd901a",
-      "independent_scalar_response/SOURCE_MANIFEST_v1.json": "8127255f0e6c9a748b3d96fe4889394eed4c49f7543ecd09ab82d0f12fa2edce",
-      "independent_scalar_response/CLOSURE_COMPARISON_v1.md": "906b40b94a92a1dacb1094ba84318bebdc7ad4ba0a8244eb7fb77e47f02a7eec",
-      "independent_scalar_response/CLOSURE_IDENTITY_v1.json": "8792744cba61758f6f4673379e9621622814c9f14d2f0cb270ae53b6081e8e63"
-    },
-    "limitations": [
-      "Matter clock/direct system still assumes canonical universal conformal scalar/dust class and registered h,b,kappa",
-      "Six bound counts velocity histories only on C!=0; valid C=N=0 witness and continuous A0 retained",
-      "Source elimination is necessary, not full mode solution or empirical pole identity",
-      "Independent response trajectory crosses v=0; not one monotonic inverse chart",
-      "Seven Fuchs arrays unopened; no new data"
-    ],
-    "delivery": "commits-only; five prior milestone PRs unchanged",
-    "next_action": "Personally execute NEXT_RESPONSE_INVERSE_PLAN_v1.md: from ideal registered matter-metric potentials across common-background Fourier modes, derive or refute the proposed five-coefficient response inverse and whether it eliminates supplied b,kappa. Refresh relevant main/open PR science first and compare reconstruction prior art. Test rank on full original-equation forward solutions, retain background/matter/metric constraints, critical coupling values, scale/orientation/initial-state freedom and derivative/noise obligations. Proposed formulas are not yet verified or load-bearing. Keep seven Fuchs arrays unopened; do not insert fitted ranges, a minimum or selected initial scalar state.",
-    "deadline_unchanged": "2026-10-16T22:36:59Z"
-  },
-  "mode_inverse_checkpoint": {
-    "time": "2026-10-16T10:58:43.911428+00:00",
-    "status": "source-bound focused check complete and personally verified; conditional research support",
-    "root_review": "MODE_INVERSE_ROOT_REVIEW_v1.md",
-    "root_review_sha256": "7b75b2bde0df6e4c6f601bc14c81d72cf8983e549329851af4087322dfcf7386",
-    "bindings": "MODE_INVERSE_ROOT_BINDINGS_v1.json",
-    "bindings_sha256": "764588c747d485234818f28b2ddd78fea3092d8de45cd386bbd4d126b814e2e6",
-    "counts_separate": {
-      "primary_root": 40,
-      "variable_coupling_root": 13,
-      "common_gain_root": 15,
-      "gain_jets_root": 8,
-      "trace_root_post_exposure": 12,
-      "joint_gain_root": 22,
-      "independent_pre_author": 111,
-      "independent_post_author": 38,
-      "independent_joint_correspondence": 62,
-      "source_mutations_detected": 8
-    },
-    "counts_are_not_independent_experiments": true,
-    "independent_manifest_files": 85,
-    "actual_author_bindings": 26,
-    "copied_byte_identical_author_replays": 6,
-    "failed_completed_scientific_controls": 0,
-    "independent_report": "independent_mode_inverse/REPORT_v2.md",
-    "independent_report_sha256": "7290d368bc5b1d62c1313299d474c737ed8638ef539e5ab268b2bd061461ab02",
-    "independent_manifest_sha256": "669181ed61c60474880d619cdf06d17a0f3bb98c8f7a424827ef40a1c239e642",
-    "result": "Conditional on the canonical scalar/conformal-dust action and compatible rich smooth matter-metric mode histories, the coupling, scalar velocity product and fixed-bare-density curvature are reconstructed instead of supplied. Local A,V follow on the monotonic positive-dust chart, with full original-equation residuals. A common amplitude drift is recoverable by combining trace and scalar relations, including B=2/3. Action selection, physical input extraction, derivative/rank control and absolute normalization remain open.",
-    "empirical_validation": false,
-    "formal_audit": false,
-    "new_observational_arrays_read": false,
-    "unopened_fuchs_arrays": 7,
-    "delivery": "commits-only support toward one combined milestone; conformance not yet asserted",
-    "next_action": "Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.",
-    "deadline_unchanged": "2026-10-16T22:36:59Z"
-  }
-}
+campaign: observations-backward-derivation-24h-20261015
+status: active
+phase: Metric-history and spherical readout milestone published; joint background identification next
+started_at: '2026-10-15T22:36:59+00:00'
+deadline: '2026-10-16T22:36:59+00:00'
+packaging_cutoff: '2026-10-16T22:21:59+00:00'
+updated_at: '2026-10-16T12:11:55.390870+00:00'
+author: /root in this chat
+worktree: /Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms
+  Lets Go
+pack: /Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets
+  Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015
+branch: codex/observations-backward-derivation-20261015
+main_at_launch: bbada1fe09b2d10d610560864d86b68c24a59713
+delivery: milestone
+checkpoint_minutes: 30
+block: common-action reconstruction across environments
+route: Actual clocks/redshift/source response -> registered scalar-history inputs -> cross-environment
+  action constraints
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+hard_residual: Jointly identify a compatible background and calibrated primitive photon/matter inputs
+  without supplying J; action, absolute scale and observational derivative errors remain open.
+next_action: 'Personally execute NEXT_JOINT_PHOTON_BACKGROUND_PLAN_v1.md: derive the joint compatibility
+  problem for registered h, spherical Weyl P and corrected radial redshift Rz without supplying J, b,
+  kappa or a preferred background. Freeze exact synthetic inputs and conventions before controls; retain
+  all source equations, local metric kernels, clock/distance calibration and rank/error conditions. Seek
+  a conditional identification theorem or an exact distinct-background same-record witness, preserving
+  failed routes. Keep six earlier PRs frozen and seven Fuchs arrays unopened.'
+open_imports:
+- canonical single-scalar/conformal pressureless action class
+- known M and normalization
+- flat homogeneous Einstein frame
+- registered Einstein-time H C3, alpha C1, fixed-bare-density mu continuous
+- nonzero scalar velocity and positive dust on connected chart
+- measurement extraction, derivative/error control and actual environmental correspondence
+independent_check: Focused checks complete, source bindings verified; no active agent
+milestones:
+- number: 9628
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9628
+  title: '[physics-loop] scalar-observation-inverse bounded_theorem conditional-support'
+  head_branch: codex/scalar-observation-inverse-20261016
+  head_sha: 40e5030769a9409f0d52d3e4e58e8279a5550e47
+  base_branch: main
+  base_sha: bbada1fe09b2d10d610560864d86b68c24a59713
+  state: OPEN
+  is_draft: false
+  verified_at: '2026-10-16T00:42:17.344839+00:00'
+  changed_files: 59
+  mergeable: MERGEABLE
+  merge_state_status: BLOCKED
+  attached_to_current_chat: true
+  checkpoint_commit: 5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2
+  scientific_status: bounded_theorem / conditional-support; no empirical test
+  shared_landing_validation: pending
+- baseRefName: main
+  baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+  changedFiles: 95
+  headRefName: codex/neighborhood-evolution-20261016
+  headRefOid: e97535fef2ce2da544c288fe81a7cb35a0d8914b
+  isDraft: false
+  mergeStateStatus: BLOCKED
+  mergeable: MERGEABLE
+  number: 9632
+  state: OPEN
+  title: '[physics-loop] neighborhood-intervention bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632
+  verified_at: '2026-10-16T03:03:16.919346+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; no empirical validation
+- baseRefName: main
+  baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+  changedFiles: 108
+  headRefName: codex/sampled-coupling-inverse-20261016
+  headRefOid: 09ee78488eda7950be5e18624678d709e3758fb2
+  isDraft: false
+  mergeStateStatus: BLOCKED
+  mergeable: MERGEABLE
+  number: 9634
+  state: OPEN
+  title: '[physics-loop] sampled-coupling inverse bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634
+  verified_at: '2026-10-16T04:39:21.109604+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; synthetic controls only, no empirical validation
+- baseRefName: main
+  baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+  changedFiles: 98
+  headRefName: codex/ringdown-action-inverse-20261016
+  headRefOid: de4db24e811625eeb059beb341e51a1a8487371a
+  isDraft: false
+  mergeStateStatus: BLOCKED
+  mergeable: MERGEABLE
+  number: 9637
+  state: OPEN
+  title: '[physics-loop] ringdown-action inverse bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637
+  verified_at: '2026-10-16T05:55:17.727940+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; exact-class and synthetic controls only, no
+    empirical validation
+- baseRefName: main
+  baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+  changedFiles: 97
+  headRefName: codex/scalar-history-inverse-20261016
+  headRefOid: 92b648a0bcaf27cb09cbe3c54bd1fff31ff3e2f0
+  isDraft: false
+  mergeStateStatus: BLOCKED
+  mergeable: MERGEABLE
+  number: 9638
+  state: OPEN
+  title: '[physics-loop] scalar-history compatibility bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9638
+  verified_at: '2026-10-16T09:36:59.455687+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; exact mathematical and constructed controls
+    only
+- number: 9639
+  head: 902f26a03d9fad68f1afec1417a2dad3090b64d7
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9639
+  scientific_scope: Metric reconstruction and fixed-background spherical readout
+  shared_landing: pending
+owned_jobs: []
+supervisor_pid: null
+worker_pid: null
+previous_campaigns: all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json
+global_stop: null
+strongest_checked_result: Within the supplied class, rich ideal matter-metric histories reconstruct coupling/speed
+  product and fixed-bare-density curvature. Separately, a fixed compatible background plus ideal spherical
+  P,Rz determines actual J locally even with metric integration kernels. The two statements do not yet
+  yield unknown-background identification.
+author_computation:
+  core_exact_identities: 28
+  core_mutations_detected: 3
+  observable_symbolic_identities: 6
+  deterministic_bound_examples: 24
+  observable_mutations_detected: 3
+  empirical_validation: false
+source_state:
+  main: bbada1fe09b2d10d610560864d86b68c24a59713
+  open_pr_count: 53
+  inventory_sha256: 4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148
+  scope: complete metadata/path inventory; latest declared science interfaces read; not complete independent
+    review of every PR proof
+  latest_refresh:
+    time: '2026-10-16T11:06:09.187731+00:00'
+    main: 5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472
+    execution: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
+    open_pr_count: 68
+    inventory: OPEN_PRS_20261016T1106.json
+    inventory_sha256: a18e60e8c9e7f84b839cba21fcca9ca6f37677d35ce2ada1f53bed9bac5d0e52
+    changes: No ref or open-PR head change
+    five_campaign_heads_unchanged: true
+  read_only_recheck:
+    time: '2026-10-16T07:06:40.835585+00:00'
+    main: bbada1fe09b2d10d610560864d86b68c24a59713
+    execution: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
+    pr9637_head: de4db24e811625eeb059beb341e51a1a8487371a
+    pr9637_state: OPEN
+    pr9637_shared_landing: pending;mergeStateStatusBLOCKED
+    unchanged: true
+first_block_files:
+- BLOCK01_DERIVATION_v5.md
+- check_block01.py
+- BLOCK01_CONTROLS_v1.json
+- check_block01_observables.py
+- BLOCK01_OBSERVABLE_CONTROLS_v1.json
+- independent_block01/INDEPENDENT_CHECK.md
+- BLOCK01_READOUT_INTAKE_v1.md
+empirical_limits:
+- Hensen original deposited records reproduced using frozen published selection; exposed development data.
+  Synthetic network controls are not empirical validation.
+- Existing Cassini products remain exposed development data.
+- Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.
+- Measured Newton coupling is not identified with 1/F.
+- Lee2020 Appendix A.1:95published processed torque rows, all exposed development; dual-engine transcription
+  checked, no model fit or empirical validation. Missing primitive records/corrections and unresolved
+  separation correspondence are retained.
+- Lee2020 calibration/geometry/separation correspondence remains incomplete. Fuchs2024 selected3.5cm/48.1cm
+  trace is exposed development; seven other arrays unopened. Physical wiring, force phase, transfer/filter
+  settings, platform acceleration and calibration remain unestablished. No force-law validation.
+milestone_status: PR9628,PR9632,PR9634,PR9637,PR9638 published and attached; shared landing validation
+  pending; no science merged or audited.
+checkpoint:
+  time: '2026-10-16T12:11:55.390870+00:00'
+  direct_author_only: true
+  lock_holder: 01a130f9-fd7f-7d31-9f8f-ac05cdf2c617
+  checkpoint_scope: Published metric and readout milestone; exact evidence archive and next joint-input
+    plan
+  deadline_unchanged: true
+last_pushed_checkpoint:
+  checked_at: '2026-10-16T11:00:52.444725+00:00'
+  commit: 7cf99c198102de338a2c584d9d1c800cf94aaebc
+  scientific_commit: 0124adef99
+  remote_head: 7cf99c198102de338a2c584d9d1c800cf94aaebc
+  branch: codex/observations-backward-derivation-20261015
+  scope: Joint potential inverse, common-gain reconstruction, independent trace integration, preserved
+    executions and measurement-input plan
+  worktree_clean: true
+  main_remote: 5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472
+  main_pushed: false
+  new_pr: null
+  prior_campaign_prs:
+  - 9628
+  - 9632
+  - 9634
+  - 9637
+  - 9638
+  prior_heads_unchanged: true
+  main_changes: Automated audit dispatch state only; science and workflow unchanged
+  open_pr_count: 68
+  source_bindings_verified: 26
+  independent_manifest_files_verified: 85
+  python_files_parsed: 22
+  json_yaml_files_parsed: 61
+  vocabulary_violations: 0
+  ordinary_whitespace_check: 2
+  whitespace_detail: Twelve extra terminal blank lines in immutable bound independent evidence; scoped
+    whitespace check passes. Full original outcome is committed.
+  root_review: MODE_INVERSE_ROOT_REVIEW_v1.md
+  owned_jobs: []
+  active_focused_agents: []
+  older_campaigns_stopped: true
+  deadline_unchanged: '2026-10-16T22:36:59Z'
+  packaging_unchanged: '2026-10-16T22:21:59Z'
+block02:
+  source: BLOCK02_DERIVATION_v2.md
+  source_sha256: 6af03812dccdf6c77322b20591f5cc72300c84e304f7fff56bf680af7e066c1e
+  author_output: BLOCK02_CONTROLS_v2.json
+  author_output_sha256: 28137d9af03e61532e28616053217b38657518e642bc567fd35db785f3d593e1
+  symbolic_identities: 7
+  mutations_detected: 4
+  numeric_controls: 17
+  smooth_spike_controls: 3
+  independent_check:
+    status: completed; no material mathematical error found in declared scope
+    report: independent_block02/INDEPENDENT_CHECK.md
+    report_sha256: b8093ee62fd45f9dec8a16a04f14a2abb979210f10de4be7725bab677354c9a2
+    manifest_sha256: 18d33ca49ebf7084c02a278d88fa7b3abb067ea7c5070344dcbfb37945424d88
+    manifest_entries_verified: 12
+    checks: 42
+    failures: 0
+    scope: Independent finite-difference and completed-square proofs plus synthetic controls; not empirical
+      validation or formal audit.
+  data_status: synthetic mathematics only
+  author_runner_sha256: e51b8a927b4b9264d37be9e76dd0859b5f623ec7949777bb9319c39bfbc6dd71
+  author_source: BLOCK02_DERIVATION_v1.md
+  author_source_sha256: 2b65e7cc57f06b145792ab4623dd78d78e9b86f747a2bb5b927cff9295e8f448
+  source_version_relation: Root output binds v1; v2 only restricts the relabeling derivative to be strictly
+    positive. Root relabeling controls already assume that stricter domain. The independent final report
+    directly binds v2.
+  control_correction: Current v2 output corrects the compact bump support to [-1/4,1/4]. Original v1 runner/output
+    preserved; see BLOCK02_ROOT_CORRECTION_v1.md.
+material_candidate:
+  source: BLOCK03_MATERIAL_CANDIDATE_v1.md
+  source_sha256: 52b32068d094aea7c13d60ede00423bafcd384ac1c4107908ad3d51a842340b7
+  output: MATERIAL_CANDIDATE_CONTROLS_v2.json
+  output_sha256: 9661d79a5d7935fea86ae9b4cc07a3ad505f390f64cfedf9000fce26c797af3c
+  root_exact_checks: 20
+  mutations_detected: 4
+  independent_check:
+    status: completed; no material error found in the stated hypotheses
+    agent: /root/common_action_check
+    report: independent_block03/INDEPENDENT_CHECK.md
+    report_sha256: 39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b
+    manifest_sha256: 8a362eb4b273daeb7e7193a2836eafb5c82a81d5c4e1efd845504e6eda25c034
+    manifest_entries_verified: 19
+    core_checks: 35
+    boundary_checks: 13
+    conservation_dimensions_provenance_checks: 3
+    failed_completed_checks: 0
+    interrupted_attempts: 1
+    empirical_validation: false
+    not_formal_audit: true
+  result: Affine known-stress field transport plus an explicit regular-center family with common static
+    metric/dust density/kinetic function and varying potential coefficient; not observed data or a global
+    uniqueness/no-go claim.
+material_boundary_probe:
+  source: BLOCK03_BOUNDARY_PROBE_v1.md
+  source_sha256: 0689282625c3663026b29b8fe71f05de13f5cba1f774a6c423d6f8391bef99bc
+  author_output: BLOCK03_BOUNDARY_CONTROLS_v1.json
+  author_output_sha256: 7615cc6db8587940ddd469f8a078e399306964d340fe786ffa42435943957d69
+  root_identities: 5
+  root_mutations: 2
+  scope: Additional hypothetical round-sphere/dust continuation, not an observed input or a replacement
+    for the local domain. Its constant branch is separately derived, not a singular endpoint substituted
+    in the nonconstant action.
+  independent_check:
+    status: completed; no material error found in the stated hypotheses
+    agent: /root/common_action_check
+    report: independent_block03/INDEPENDENT_CHECK.md
+    report_sha256: 39335cb1710db25ff14b1c3ec3f17eef8af2a4c9658d0375440d6671af72fb6b
+    manifest_sha256: 8a362eb4b273daeb7e7193a2836eafb5c82a81d5c4e1efd845504e6eda25c034
+    manifest_entries_verified: 19
+    core_checks: 35
+    boundary_checks: 13
+    conservation_dimensions_provenance_checks: 3
+    failed_completed_checks: 0
+    interrupted_attempts: 1
+    empirical_validation: false
+    not_formal_audit: true
+milestone_review_branch: codex/scalar-history-inverse-20261016
+milestone_publication_strategy: Standalone selected-file commit from refreshed main; no rewrite or deletion
+  of campaign checkpoint history, and no dependency on excluded archived scripts.
+independent_integration_check:
+  status: completed; no remaining mathematical discrepancy within stated hypotheses
+  agent: /root/common_action_check
+  report: independent_integration/INDEPENDENT_CHECK.md
+  report_sha256: 8efa8c5f0cf0e53b549dd32c6446b47a4c8f4f11e4050b9cae5c2b172f2561b9
+  manifest_sha256: c49cdadc68d4da1a9e6c4b0ccb1d8613efb386028561ce9db8dcfa5cdb704add
+  manifest_entries_verified: 45
+  independent_checks: 29
+  primary_reproduction_checks: 56
+  failures: 0
+  canonical_sources:
+    docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md: 23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768
+    scripts/scalar_observation_inverse.py: d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405
+    scripts/scalar_observation_inverse_math.py: 6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44
+  empirical_validation: false
+  not_formal_audit: true
+canonical_computation:
+  primary: scripts/scalar_observation_inverse.py
+  controls: 56
+  failures: 0
+  scratch_mutations_detected: 8
+  canonical_cache_status: fresh
+  timeout_seconds: 120
+  empirical_validation: false
+user_steering:
+  requested_at_utc: '2026-10-16T00:53:06+00:00'
+  research_window_end_utc: '2026-10-16T03:53:06+00:00'
+  campaign_deadline_unchanged: '2026-10-16T22:36:59+00:00'
+  user_request: Spend a few hours exploring neighborhood-driven network/record evolution as the missing
+    mechanism behind what is described as superposition; trace intermediate specialization rather than
+    relate only endpoint labels.
+  interpretation: Underlying physical mechanism hypothesis, not merely a research-method analogy. Initial
+    recursive-mechanisms intake v1 is preserved as the earlier, narrower interpretation.
+  author: /root personally in this chat
+  first_targets:
+  - Compare adaptive historical-memory networks with current-trial relational carriers.
+  - Derive a discriminating intervention without assuming quantum probabilities in the candidate.
+  - Explore reversible real-valued local transport and expose the cost of its detection rule.
+  - Separate permanent record content from changing downstream causal role; explicitly label any alternative
+    to current Record premises.
+  observations_first: Published interference, composition and stable outcome records constrain candidate
+    mechanisms. Synthetic controls are not empirical tests; no raw independent-test dataset opened.
+  status: complete; results and limitations preserved
+  completed_at: '2026-10-16T03:54:53.593473+00:00'
+shared_mode_probe:
+  note_sha256: e1fb1ecc9bec148ad8b19b9998422d8984ece82a2109112aa0fd52c15bb8dfa8
+  runner_sha256: 9e660c9bf7a8cfd5413c2d8e0424bbc0872443c944a0f26c2b06be829de0203d
+  output_sha256: 59898e1dbae95003e002fe767d3300c44e6df403ecd97a56afb954f98ad93e53
+  checks: 11
+  failures: 0
+  independent_check: false
+  empirical_validation: false
+  scope: Standard finite-dimensional isolated-pole algebra and counterexamples to applying rank-one claims
+    to full/unresolved responses. Physical operator and readout not yet derived.
+network_exploration:
+  time: '2026-10-16T01:23:29.012094+00:00'
+  author: /root personally
+  source_bindings_verified:
+  - path: NETWORK_EVOLUTION_BLOCK01_v2.md
+    sha256: 69d17538be0c02c81a25027958ec2e3cbf2208d5b3b218ef3298c255d0760669
+  - path: probe_network_history_v2.py
+    sha256: 6730e84b0c6148e83130001b586a13e843f62a4fddf9b6c194a0ded99bbe29dd
+  - path: NETWORK_HISTORY_CONTROLS_v2.json
+    sha256: 0b7210c127049eab6a4a5ba31e712cc1b3f4234b6358c27857a1531a0cd7d301
+  - path: NETWORK_EVOLUTION_BLOCK02_v1.md
+    sha256: 7558a13c9d858e219fd825926d899888d956c0b3db4128ce394b2c3259c63c68
+  - path: probe_flux_records_v1.py
+    sha256: 357aab5de2f830da0a3d28ef37c54ca4a660cb2f18dcbe5fe58eaa53b5d28e36
+  - path: FLUX_RECORD_CONTROLS_v1.json
+    sha256: 66e0a17cbd2af50b735d68d8db2bf80e936c9ae6e18a8eb964e5ce9aa8993211
+  - path: FLUX_RECORD_EXECUTION_v1.json
+    sha256: c91495663caf3f61b54a05d6b89f3358d5f93b1c5a682e184cfd1352650b448e
+  - path: FLUX_RECORD_EXECUTION_v1.stdout
+    sha256: 66e0a17cbd2af50b735d68d8db2bf80e936c9ae6e18a8eb964e5ce9aa8993211
+  - path: FLUX_RECORD_EXECUTION_v1.stderr
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  - path: docs/MINIMAL_AXIOMS_2026-06-29.md
+    sha256: 93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753
+  - path: docs/audit/data/axiom_premise_nodes.json
+    sha256: 615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37
+  - path: docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md
+    sha256: 3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8
+  root_read_complete_independent_derivations_code_results: true
+  exact_author_reproductions_match: true
+  not_formal_audit: true
+  empirical_data_opened: false
+  network_history:
+    version: 2
+    checks: 19
+    failure_preserved: v1 exception bound needed freshness conditional on exception eligibility; v2 corrects
+      and preserves explicit counterexample
+    report_sha256: 76aef9b59be490f1921bed49edfbd1a8e3abe1cfbf4e3f9e3b1489669ef44675
+  flux_records:
+    version: 1
+    checks: 18
+    report_sha256: e66b7102b249b2b5cd090ffe8c991c86b49671065fac7ea87818381af517eb09
+    outcome: Quadratic flux and average one-count rule derived conditionally; balanced sequence strictly
+      alternates, failing iid mathematical benchmark.
+  next: Personally derive pair-relative orientation transport, phase-sensitive reciprocity, and third-neighbor
+    freedom; known geometric phase is prior art.
+  latest_checkpoint:
+    time: '2026-10-16T03:45:08.963809+00:00'
+    author: /root personally
+    status: Scientific sources frozen; final research-block preservation in progress
+    current_network_blocks: 19
+    focused_manifest_count: 20
+    verified_source_bindings: 59
+    report_sha256: 237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a
+    manifest_sha256: 36112365574def334c00ddadf5fb4a37f7562505b83d6d914dbf4c176e300cca
+    root_read_all_current_independent_derivations_code_results: true
+    root_viewed_figure: true
+    next_action: Finish the three-hour research-block preservation at03:53:06Z, then carry the preparation-independent
+      common-response tests into actual calibrated environments; first establish a physical force/coordinate/time
+      bridge and model-error budget without choosing a new action per environment.
+    empirical_status: Hensen exposed development reproduction; all listed network controls synthetic.
+      No independent empirical candidate validation.
+    not_formal_audit: true
+    campaign_deadline_unchanged: '2026-10-16T22:36:59Z'
+    exploration_window_end: '2026-10-16T03:53:06Z'
+    unpublished_extension_status: Blocks11-19 are checked exploratory evidence; only09/10 are integrated
+      in canonical PR9632. No claim of completed canonical review for later extensions.
+  report:
+    path: NETWORK_EXPLORATION_REPORT_2026-10-16.md
+    sha256: 237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a
+    manifest: NETWORK_EXPLORATION_MANIFEST_v2.json
+    source_commit: ad9f8e62abb3685a718dd7f95c7efe3b924aaf21
+    future_contract: NEXT_OBSERVATION_CONTRACT_v1.md
+    review_status: 19focused source checks complete; PR9632 canonical09/10 only; later extensions exploratory
+subwindow_completion:
+  completed_at: '2026-10-16T03:54:53.593473+00:00'
+  subwindow_started_at: '2026-10-16T00:53:06+00:00'
+  subwindow_end: '2026-10-16T03:53:06+00:00'
+  elapsed_hours: 3.0298870758333334
+  subwindow_status: complete
+  campaign_status: active
+  campaign_deadline_unchanged: '2026-10-16T22:36:59Z'
+  source_checkpoint: ad9f8e62abb3685a718dd7f95c7efe3b924aaf21
+  final_handoff_commit: 153fc4ae3967615f5d52375ee0301845cc34ea57
+  remote_head_verified: 153fc4ae3967615f5d52375ee0301845cc34ea57
+  worktree_clean: true
+  report_sha256: 237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a
+  owned_research_jobs: []
+  conflicting_owned_processes: []
+  milestone_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632
+  empirical_validation: false
+  next_action: Continue from NEXT_OBSERVATION_CONTRACT_v1.md; establish the observable and source bridge,
+    with reserved histories and test functions, before testing the supplied adaptive-action class.
+coupling_reconstruction:
+  status: v2 focused check complete; source and full reproduction personally read/verified
+  note: COUPLING_RECONSTRUCTION_v2.md
+  primary_checks: 26
+  independent_assertions: 31
+  failures: 0
+  scope: conditional relative coupling and potential consistency; synthetic controls only
+  source_hashes:
+    COUPLING_RECONSTRUCTION_v2.md: 42498cb335c85568c2358981f8563e9958f8994c61adcf6562cc1fcff9d7c909
+    check_coupling_reconstruction_v2.py: 17b6efb074bf435d4346a0203fdb951d78181155ac6316eeb182b892f553f235
+    COUPLING_CONTROLS_v2.json: 6d084582bdcb470e00346ca54efe87dc607384c1d9dd3e44374b727bc0627c7c
+sampled_coupling_inverse:
+  note: SAMPLED_COUPLING_INVERSE_v2.md
+  status: v2 checked:33primary and275focused assertions, all source bindings verified
+  v1_failure: missing s*F2 term in p sensitivity corrected; original31pass2fail preserved
+  source_hashes:
+    SAMPLED_COUPLING_INVERSE_v2.md: f353fa17d30ae96e286d12379b5393daefae58816198323c12001de65251b2f7
+    check_sampled_coupling_inverse_v2.py: 7305a8f7daef0d7598bdd288b4e6f4298e6c708e91250a0628f329ce25a95823
+    SAMPLED_COUPLING_CONTROLS_v2.json: 1301bf184592aba51a55f9cfaa9203b01711866940a6ece03e05ccb701f8114b
+  empirical_validation: false
+  independent_report: independent_sampled_coupling/REPORT.md
+  independent_report_sha256: 42276d4094879d7f6aba9b2fe71fef4914f9b97cbf41bab75b1bc636a804484d
+sampled_publication:
+  worktree: /Users/jonBridger/.codex/worktrees/sampled-coupling-inverse-20261016/New Axioms Lets Go
+  branch: codex/sampled-coupling-inverse-20261016
+  primary_controls: 44
+  independent_assertions: 135
+  detected_mutations: 21
+  status: published and attached
+  empirical_validation: false
+  cache_status: fresh
+  final_bindings:
+    docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md: d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b
+    scripts/sampled_coupling_inverse.py: 500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20
+    scripts/sampled_coupling_math.py: 0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af
+    logs/runner-cache/sampled_coupling_inverse.txt: 8f47d26366060335d7b1fc719b95f26c4dbfe477c21765c59534dd43090b9bd4
+    outputs/sampled_coupling/cache_before_runner_label.txt: dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd
+  historical_cache_storage:
+    checked_at: '2026-10-16T04:36:57.838850+00:00'
+    reason: Staged whitespace check found the preserved historical cache has a terminal blank line. Preserve
+      exact evidence bytes in deterministic gzip instead of editing the historical output. This is packaging
+      only.
+    historical_path: outputs/sampled_coupling/cache_before_runner_label.txt
+    archive_path: outputs/sampled_coupling/cache_before_runner_label.txt.gz
+    uncompressed_sha256: dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd
+    archive_sha256: 05e7209ca4723be65119f281d2e6c8a2a869c743736a8b1f04231237e955d414
+    byte_exact_roundtrip: true
+    historical_manifests_unchanged: true
+  focused_preflight:
+    checked_at: '2026-10-16T04:37:54.564069+00:00'
+    canonical_bindings_verified: true
+    historical_cache_roundtrip_verified: true
+    cache_status: fresh
+    staged_whitespace_exit_code: 0
+    staged_path_count_before_this_receipt: 107
+    scope_guard: only declared source, outputs, campaign pack, runner cache and citation manifest
+    publication_validation: focused checks passed; shared integrated landing validation remains pending
+  publication_worktree_clean: true
+  review: Root read complete focused proof/code/results and verified final bindings; no formal audit verdict.
+  pr:
+    baseRefName: main
+    baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+    changedFiles: 108
+    headRefName: codex/sampled-coupling-inverse-20261016
+    headRefOid: 09ee78488eda7950be5e18624678d709e3758fb2
+    isDraft: false
+    mergeStateStatus: BLOCKED
+    mergeable: MERGEABLE
+    number: 9634
+    state: OPEN
+    title: '[physics-loop] sampled-coupling inverse bounded_theorem conditional-support'
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634
+    verified_at: '2026-10-16T04:39:21.109604+00:00'
+    attached_to_current_chat: true
+    shared_landing_validation: pending
+    scientific_status: bounded_theorem / conditional-support; synthetic controls only, no empirical validation
+  remaining_assumptions:
+  - one linear hidden coordinate with common clamped dynamics
+  - positive inertia and stiffness, nonnegative damping
+  - identified source conjugacy, force readout and controlled coordinate/time
+  - pulse fidelity and no derivative impulses
+  - calibration rank/conditioning and nonzero response anchor
+  - absolute normalization, visible potential, physical realization
+  inputs_not_assigned_within_class:
+  - hidden initial preparation per trial
+  - a fixed quadratic coupling function
+  - continuous-frequency alias choice
+physical_bridge_checkpoint:
+  time: '2026-10-16T05:07:48.595187+00:00'
+  author: /root personally
+  scope: physical force/coordinate calibration and smooth-history compatibility; exploratory supporting
+    calculations
+  physical_port:
+    primary_controls: 28
+    independent_assertions: 137
+    frozen_sources:
+      PHYSICAL_PORT_BRIDGE_v1.md: 17f694e8770bd22190dc9d3e5a589b1dfd37f12f9341369801be8c167e6e815a
+      PHYSICAL_PORT_INTAKE_v1.json: 0db561698358d8f5248f58e87807d34838f0968f0e3f83b7bc4ac9e3a05b3d7e
+      check_physical_port_bridge_v1.py: 6043347258b23d987b4bbce3dfbc6aee8347cf9df1666c000c34cc4e5486a9c8
+      PHYSICAL_PORT_CONTROLS_v1.json: 30fe2cbe48eae60a1ed441ad144c4a89679158010653eb0e9fa5087da4fe1a9a
+  smooth_history:
+    primary_controls: 24
+    independent_assertions: 112
+    frozen_sources:
+      SMOOTH_HISTORY_BRIDGE_v1.md: cd443c52c1fe9a5cb9ccd7d517bd689a969b839fdb0a942272449ea9deaefcd5
+      check_smooth_history_bridge_v1.py: 570e2af0084a638cb0cd46facef78d30243a4a232f8f49bb3297c028978e6cab
+      SMOOTH_HISTORY_CONTROLS_v1.json: a1dd8ed6d554f17e02ba308ca13a4e6168265ae47c166e1fdfea93dda6c73159
+  root_read_complete_independent_proof_code_results: true
+  independent_artifact_bindings_verified: 9
+  empirical_validation: false
+  source_intake: PHYSICAL_PORT_INTAKE_v1.json
+  new_measured_dataset_accessed: false
+  independent_test_data: none; synthetic reserved histories only
+  prior_art: standard coenergy calibration and weak identification; no broad novelty claim
+  operational_failures:
+  - Python default TLS CA error recovered with certificate-verifying system curl
+  - web screenshot returned no image pixels; no visual inspection claimed
+  - checkpoint read expected results.json but actual smooth checker output is independent_stdout.json;
+    recovered by reading actual file
+  remaining_imports:
+  - physical actuator coenergy and calibration
+  - known moving-load correction
+  - one passive hidden mode and smooth couplings
+  - continuum coordinate/force/time and derivative-error certificates
+  - actual field or gravity identification
+  - absolute scale
+  next_route: Test an environment-dependent quadratic hidden-mode action via force-ringdown/linear-response
+    pole identities; provisional derivation not yet checked.
+ringdown_reconstruction_checkpoint:
+  time: '2026-10-16T05:31:36.754907+00:00'
+  author: /root personally
+  scope: Conditional action-function reconstruction from ideal calibrated rest response and clamped ringdown
+    across environments
+  common_action:
+    source: COMMON_ACTION_RINGDOWN_v1.md
+    primary_controls: 62
+    focused_independent_assertions: 268
+    manifest_sha256: ce067b308141b9693f4e8d33f55a9557192ba9f77428628846d124a5655f870d
+  action_inverse:
+    source: RINGDOWN_ACTION_RECONSTRUCTION_v1.md
+    primary_extension_controls: 132
+    embedded_parent_controls: 62
+    focused_independent_assertions: 418
+    manifest_sha256: 056b74314366272c1fa493af113529e006acf4a383a1eeec115b369a624bccd3
+  frozen_bindings_verified: 31
+  binding_note: 3+3 source rows,3 repeated parent dependencies,22 independent artifacts. Counts overlap
+    and are not pooled.
+  root_read_complete_independent_proof_code_results: true
+  verification_receipt: RINGDOWN_SOURCE_VERIFICATION_v1.json
+  new_physical_data_accessed: false
+  empirical_validation: false
+  reserved_data_status: Synthetic initial states only; first60samples fit preparation and last541are predicted
+    at existing environments. No independent empirical test.
+  result: Within one supplied reciprocal quadratic hidden-mode action class, Q reconstructs the stiffness/inertia
+    ratio derivative; the phase-sensitive second harmonic reconstructs log-inertia derivative. These,
+    response residues, polynomial closure and static-force consistency reconstruct a canonical action
+    and Rayleigh functions up to demonstrated coordinate/constant freedoms.
+  not_derived:
+  - one-mode quadratic action and Rayleigh class
+  - physical conjugate force/coordinate/time calibration
+  - rest state for linear response
+  - isolated nonzero underdamped mode
+  - ideal continuum functions or adequate error/regularity certificates
+  - absolute physical hidden scale
+  - quantum or gravitational identification
+  failure_preserved: v1 common-action control inspected unsimplified SymPy free_symbols; the residue identity
+    already held. v2 simplifies before the representation assertion; original61pass1fail remains.
+  prior_art: Classical frequency-force/Hellmann-Feynman relation acknowledged; no broad novelty claim.
+    Optomechanics review SecIII.A-B read; Perkins/Bellan abstract only.
+  operational_recovery:
+  - wrong remote execution ref recovered with exact ai/execution
+  - broad prior-art git grep terminated137; narrowed docs root search completed, no absence theorem
+  next_action: Prepare one coherent canonical milestone for the force-response/ringdown action-function
+    inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation
+    and the calibrated measurement bridge using reserved moving histories or real data only after a frozen
+    access plan. Do not supply an action selector or call a synthetic fit a physical derivation.
+  deadline_unchanged: '2026-10-16T22:36:59Z'
+  packaging_unchanged: '2026-10-16T22:21:59Z'
+ringdown_publication:
+  time: '2026-10-16T05:55:17.727940+00:00'
+  receipt:
+    baseRefName: main
+    baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+    changedFiles: 98
+    headRefName: codex/ringdown-action-inverse-20261016
+    headRefOid: de4db24e811625eeb059beb341e51a1a8487371a
+    isDraft: false
+    mergeStateStatus: BLOCKED
+    mergeable: MERGEABLE
+    number: 9637
+    state: OPEN
+    title: '[physics-loop] ringdown-action inverse bounded_theorem conditional-support'
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637
+    verified_at: '2026-10-16T05:55:17.727940+00:00'
+    attached_to_current_chat: true
+    shared_landing_validation: pending
+    scientific_status: bounded_theorem / conditional-support; exact-class and synthetic controls only,
+      no empirical validation
+  worktree: /Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go
+  branch: codex/ringdown-action-inverse-20261016
+  source_head: de4db24e811625eeb059beb341e51a1a8487371a
+  canonical_sources:
+    docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md: 980512d7d9a5fb2f19583fbdeb7e849d0861c0299a13fa52f7bf51a059acdd86
+    scripts/ringdown_action_inverse.py: 1be664a62d9c1656172aa4a45f48a5cc094212d9a2a3cc7d4dd88eaae0419047
+    scripts/ringdown_action_math.py: 834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df
+    logs/runner-cache/ringdown_action_inverse.txt: fa83203bb47579b2a9d1fad50787f3507339bb817bae5ecd34714e0da2ba7d83
+    outputs/ringdown_action_inverse/controls.json: ba6be1f8c017e89b71b97bd7559103dbd09c17b4b6cba79ad2a13823d84d3c6b
+  primary_controls: 195
+  independent_assertions_by_set:
+  - 268
+  - 418
+  - 22
+  - 6
+  counts_overlap_not_summed: true
+  root_review:
+    checked_at: '2026-10-16T05:45:09.640549+00:00'
+    complete_report_proof_code_results_read: true
+    checked_manifest: outputs/ringdown_action_inverse/independent/final_bindings_v2.json
+    manifest_sha256: 6b37278350c222554a63d4762903373e68b40890aaa20f68d89b1d3df9f66276
+    all_bindings_verified: 57
+    report_sha256: 77dc96fa5991ca9781244ee39988841527287dfdf4ce629f58a5780a7bf73aee
+    canonical_controls: 195
+    independent_assertions_by_set:
+    - 268
+    - 418
+    - 22
+    - 6
+    counts_overlap_not_summed: true
+    no_formal_audit_or_empirical_validation: true
+  preflight:
+    checked_at: '2026-10-16T05:53:14.767808+00:00'
+    vocabulary: pass; no canonical source change
+    whitespace: pass
+    cache_freshness: fresh
+    frozen_bindings_verified: 57
+    historical_diff_gzip_mapping_verified: true
+    staged_scope: one canonical note, primary/imported helper, cache, exact support evidence, unit pack
+      and generated citation manifest only
+    staged_files_before_this_receipt: 97
+    source_freeze: CANONICAL_FROZEN_v2.json
+    shared_integrated_main_pipeline: pending; not run
+    shared_strict_lint: pending; not run
+    shared_changed_evidence_landing_gates: pending; not run
+    formal_audit: not invoked
+    merge: not requested
+  mutation_scope: Initial24mutations:23detected; midpoint miss preserved. Sharper final control detects
+    corrected midpoint mutation; other23remain bound to original helper. Final focused check verified
+    narrow change.
+  data_roles: 61synthetic development environments;3additional initial states at existing environments,60preparation-fit
+    samples and541prediction samples each. No measured data or empirical holdout.
+  newly_reconstructed: Relative hidden inertia and other action/Rayleigh coefficient functions within
+    a supplied regular reciprocal quadratic class, up to proved coordinate and constant freedoms.
+  remaining_premises:
+  - action and dissipation class
+  - one visible coordinate and one passive hidden mode
+  - calibrated conjugate force/coordinate/time
+  - rest response or an independently bounded preparation bridge
+  - mode observability and continuous feature certificates
+  - physical identification with the scalar or quantum program
+  next_action: Personally derive the nonstationary response about an observed residual hidden ringdown
+    and test whether measured preparation can replace the rest-preparation premise. Freeze reconstructed
+    coefficient functions before independent moving-history controls. Keep the quadratic one-mode class,
+    physical force/coordinate/time calibration, finite-band inference and empirical applicability explicit;
+    this milestone has not derived them.
+preparation_bridge_checkpoint:
+  time: '2026-10-16T06:18:03.328311+00:00'
+  author: /root personally
+  source: PREPARATION_BRIDGE_v2.md
+  source_sha256: ecb67821847f062a6c13632826beb2a37d4f91d7b72eca4aeb823626decb5d77
+  verification_receipt: PREPARATION_ROOT_VERIFICATION_v1.json
+  primary_controls:
+  - 133
+  - 27
+  focused_independent_checks:
+  - 127
+  - 17
+  verified_bindings: 34
+  result: Within the supplied affine-hidden/quadratic-force class, measured clamped prefixes and signed
+    moment weights synthesize an exact finite-drive rest-start force functional without choosing hidden
+    initial states. General-k nonstationary tangent and a sharp annulus noise-amplification lower bound
+    are checked.
+  retired_conditional_import: Actual equilibrium reset for this particular force functional, when a calibrated
+    feasible preparation design and continuous no-kick transition are available.
+  surviving_imports:
+  - one-mode quadratic action and dissipation class
+  - common input history and fixed model
+  - calibrated force/pole/phase/time and observable prefix
+  - continuous prefix-to-drive hidden state with no unobserved kick
+  - finite-band and derivative-error certificates
+  - physical scalar/quantum identification and absolute scale
+  failure: Baseline subtraction is not a rest response; fixed nonzero amplitude phase cycling cannot remove
+    arbitrary quadratic preparation. An unobserved common kick preserves polynomial closure but biases
+    the inferred origin.
+  error_cost: L1 >= (rmax^2+rmin^2)/(rmax^2-rmin^2), sharp over feasible designs; deterministic worst-case
+    error, not variance.
+  data_roles: Frozen synthetic model/development history plus reserved preparations and histories; no
+    measured dataset or independent empirical test.
+  prior_art: Known quadratic-output lifting and polynomial interpolation; Berkane et al. arXiv2312.10684v1
+    abstract/introduction and displayed closure/lifting equations inspected, not full observer theorem.
+  delivery: commits-only support, no new PR
+  next_action: Return to the actual scalar-field normalization gap. Personally derive what tensor-wave
+    amplitude transport can identify across measured environments, retaining source generation, detector
+    calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior
+    art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile
+    or call a toy oscillator a gravity test.
+scalar_bridge_checkpoint:
+  time: '2026-10-16T06:42:20.467110+00:00'
+  author: /root personally
+  siren_source: SCALAR_SIREN_BRIDGE_v1.md
+  siren_source_sha256: 13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709
+  root_verification:
+    checked_at: '2026-10-16T06:42:20.467110+00:00'
+    author: /root
+    complete_independent_proof_code_results_read: true
+    manifest: independent_scalar_siren_bridge/SCALAR_SIREN_REVIEW_IDENTITY_v1.json
+    manifest_sha256: a1af36b0745a5c9e03e7cfb1b9896c443a2c64a61f369fb5efe6912b7c2ad83f
+    all_bindings_verified: 30
+    primary_controls: 207
+    independent_pre_runner_controls: 96
+    post_exposure_comparison_rows: 16
+    author_reproduction_byte_identical: true
+    counts_overlap_not_pooled: true
+    formal_audit: false
+    empirical_validation: false
+  source_closure_source: SCALAR_SOURCE_CLOSURE_v2.md
+  source_closure_source_sha256: c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd
+  source_closure_primary_controls: 174
+  source_closure_independent_check:
+    checked_at: '2026-10-16T07:00:01.326626+00:00'
+    author: /root
+    complete_independent_proof_code_results_read: true
+    manifest: independent_scalar_source_closure/MANIFEST_v1.json
+    manifest_sha256: 45d5af9634725fc7ef2d89e16044cec0a6c230cdf19b4e146bde779d699331af
+    all_artifact_bindings_verified: 19
+    all_source_bindings_verified: 7
+    independent_controls: 72
+    primary_controls: 174
+    primary_reproduction_byte_identical: true
+    current_source: SCALAR_SOURCE_CLOSURE_v2.md
+    primary_reproduction_source: SCALAR_SOURCE_CLOSURE_v1.md
+    version_relation: 'Scope-only correction: a negative scalar mass squared is not alone a general curved-vacuum
+      instability test. V1 and its unchanged runner/output remain preserved. Independent AdS counterexample
+      and corrected v2 are checked.'
+    counts_overlap_not_pooled: true
+    formal_audit: false
+    empirical_validation: false
+  result: Leading tensor transport weights endpoint F, but chirp-distance inference also depends on source
+    loss. Within a weak unscreened point-body class, universal scalar charges and scalar radiation can
+    be derived from the supplied action instead of setting the loss to zero. A separate finite-wavelength
+    proxy bounds transport only with interior regularity data.
+  conditional_equations:
+  - D_chirp/DL=(1+eta)/sqrt(Fs/Fo)
+  - alpha_weak^2=1/(2omega+3)
+  - eta_quadrupole=alpha_weak^2/6 in massless weak equal-charge limit
+  - vacuum W_x=W and m_s^2=2(W_xx-W)/(2omega+3) independent of chart normalization C
+  surviving_premises:
+  - scalar action class
+  - actual on-shell endpoint/background and material state
+  - weak unscreened body approximation, not compact-source sensitivity
+  - calibrated distance, geometry, inclination and amplitude
+  - finite-wavelength validity and regularity
+  - common absolute scale and cross-environment registration
+  data_roles: Exact mathematics and frozen synthetic controls only; primary papers exposed for development,
+    no raw new dataset or independent empirical test.
+  prior_art: Known scalar-tensor/siren and multipole physics, rederived as support; no novelty claim or
+    new PR.
+  next_action: 'Finish the focused weak-source check and checkpoint both scalar support derivations. Then
+    establish a measured weak-body laboratory bridge: derive extended-source scalar response and normalization
+    bounds from measured mass/geometry without choosing a density profile; inspect Lee et al.2020 primary
+    measurement/calibration and data availability before a frozen data-access plan. Keep screening, material
+    stress, source registration and apparatus transfer explicit. No transfer of weak charges to compact
+    objects by assumption.'
+  source_scope_correction: V1 overbroad negative-mass claim corrected to flat constant vacuum; curved
+    stability needs background/spectrum/boundary conditions. Explicit AdS counterexample preserved; original174control
+    evidence unchanged.
+lab_bridge_checkpoint:
+  time: '2026-10-16T07:06:40.835585+00:00'
+  author: /root personally
+  source: LAB_YUKAWA_BRIDGE_v1.md
+  source_sha256: 2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6
+  verification:
+    checked_at: '2026-10-16T07:05:09.602402+00:00'
+    author: /root
+    complete_independent_proof_code_results_read: true
+    manifest: independent_lab_yukawa_bridge/LAB_YUKAWA_REVIEW_IDENTITY_v1.json
+    manifest_sha256: a59cd42b47758fd751b9804cc273272790057f76505f9f2db33c12f76756384c
+    all_bindings_verified: 23
+    primary_controls: 151
+    independent_controls: 193
+    author_reproduction_byte_identical: true
+    counts_overlap_not_pooled: true
+    numerical_status: Floating quadrature and finite differences, not certified enclosures; analytic bounds
+      checked separately
+    formal_audit: false
+    empirical_validation: false
+  result: Derived the finite-source trace response and geometry-dependent signed torque kernel within
+    the supplied weak unscreened action class. Source support/stress bounds replace a chosen radial density
+    only for a conditional exterior bound. Complex calibration ratios constrain a common scalar strength
+    without fixing gain, but leave absolute GT unidentified. Calibration leakage, zero-channel branches
+    and noise margins are explicit.
+  data_source: Lee2020 thesis Appendix A.1
+  data_identity: LEE2020_DATA_IDENTITY_v1.json
+  data_csv_sha256: de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381
+  rows: 95
+  torque_channels: 3
+  transcription_check:
+    checked_at: '2026-10-16T07:02:07.819656+00:00'
+    source_pdf_sha256: 00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a
+    csv_sha256: de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381
+    extractor_sha256: fb9634d6a6f818bcbf377092dd25e2eea608844b83b64f0ddce3be45d3afc002
+    pypdf_version: 6.11.0
+    pymupdf_version: 1.27.2.3
+    rows: 95
+    numeric_table_cells_compared: 760
+    run_and_page_identifiers_compared: true
+    cross_engine_exact_decimal_agreement: true
+    original_csv_byte_identical: true
+    separation_range_um:
+    - 46.2
+    - 3036.3
+    all_printed_rows_kept: true
+    new_selection_or_model_fitting: false
+    data_role: Exposed processed development data; not an empirical holdout
+    empirical_validation: false
+  source_review: LEE2020_VISUAL_AND_SOURCE_REVIEW_v1.json
+  data_roles: Exposed processed development data; no new model fit, no raw records, no empirical holdout
+  empirical_validation: false
+  surviving_premises:
+  - fixed weak unscreened action and environmental coefficients
+  - source stress and material response
+  - finite-geometry and boundary data
+  - physical gain and frequency transfer
+  - actual covariance/uncertainty and per-run corrections
+  - absolute scale and cross-environment scalar registration
+  source_correspondence_issues:
+  - Appendix46.2um minimum versus Chapter11 stated52um, convention unresolved
+  - Table8.1 prints positive11 exponent forG; no silent input correction
+  delivery: commits-only support and source intake; no new PR or formal audit
+  next_action: Reconstruct and check the Lee thesis external-sphere calibration formula and units before
+    any scalar fit, retaining measured versus calculated quantities and the printed G-exponent issue.
+    Then obtain the public finite-geometry kernel and identify required per-run corrections, resolving
+    the Appendix A.1 separation convention before a Newtonian reference reproduction. Freeze computations,
+    keep these95processed rows exposed development, and do not replace unavailable positions, covariances,
+    geometry or calibration leakage with chosen zeros/profiles. If required inputs remain unavailable,
+    derive controlled uncertainty envelopes or pivot to a dataset with the primitive channels. Absolute
+    F and physical environmental registration remain unresolved.
+calibration_checkpoint:
+  time: '2026-10-16T07:31:56.058210+00:00'
+  author: /root personally
+  source: LEE2020_CALIBRATION_DERIVATION_v1.md
+  source_sha256: f4d4e11a139c3ffa18ead244778a9f14b5f4ddde0f2ebb283463578d65832b04
+  controls: LEE2020_CALIBRATION_CONTROLS_v1.json
+  controls_sha256: 566ea4bde7a09ddacf5df921c7f7212923c26929481bf02fd07fd675aca07244
+  primary_controls: 62
+  failures: 0
+  independent_check:
+    checked_at: '2026-10-16T07:35:25.231651+00:00'
+    author: /root
+    complete_independent_derivation_code_report_and_results_read: true
+    manifest: independent_lee2020_calibration/MANIFEST_v1.json
+    manifest_sha256: 895d10e1bde4fb0fb4d8f88d335609f515072ccb7f26060de0b85da566fe4d24
+    artifact_bindings_verified: 17
+    source_bindings_verified: 9
+    primary_controls: 62
+    independent_controls: 85
+    author_reproduction_byte_identical: true
+    counts_overlap_not_pooled: true
+    calibration_reproduction: Partial; source nominal and sensitivity discrepancies preserved. No retuning
+      or physical significance assigned.
+    source_transcription_scope: Root read and rendered primary source; focused checker used frozen transcription
+      and did not independently reread PDF.
+    formal_audit: false
+    empirical_validation: false
+  published_model_reproduction: 'Partial, not successful: pinned equal-sphere inputs with labeled G=6.6742e-11
+    predict2.1020674557490207fNm versus source2.1094; sensitivity conventions also unresolved. No values
+    retuned and no physical significance assigned.'
+  result: Nine-pair forces, torque sign, Fourier coefficients and normalized three-dimensional Green/finite-wedge
+    representation checked under explicitly supplied geometry and field premises.
+  diagnostic_receipt: LEE2020_CALIBRATION_DISCREPANCIES_v1.json
+  diagnostic_sha256: 77a747437276a9b6bf796c54801e74dda016d9189811474cb719ca2ff3df67d1
+  data_roles: Published calibration/model inputs exposed development; synthetic quadrature controls. No
+    empirical test.
+  shape_plan: LAB_SHAPE_PLAN_v1.json
+  shape_plan_sha256: c1fb462b0d31817c13739738177817e6c3051d4e2af3b17c265b37d23009a2a4
+  shape_status: Completed; details in lab_shape_checkpoint
+  delivery: commits-only support, no new PR
+  next_action: Read the full primary Fuchs2024 measurement and calibration model, identify instrument
+    readings versus calibrated/fitted/gravity-dependent products, and freeze a minimal raw-file access
+    and analysis protocol before opening the public lock-in arrays. Derive the observed transfer/geometry
+    mapping conditionally, preserving source registration, absolute calibration, noise covariance and
+    background-field assumptions. Published summaries are exposed; any reserved raw-record check is not
+    an unseen physical prediction. Preserve Lee2020's unresolved calibration/geometry/separation correspondence
+    without substituting chosen values.
+  completed_at: '2026-10-16T07:53:26.580349+00:00'
+lab_shape_checkpoint:
+  time: '2026-10-16T07:53:26.580349+00:00'
+  author: /root personally
+  source: LAB_SHAPE_DERIVATION_v1.md
+  source_sha256: a459a8fdba87c52ff5e79b14b802333d47788e406c6970ab42a992d3c4d8e8e3
+  output: LAB_SHAPE_CONTROLS_v1.json
+  output_sha256: ea4391714161b8139290d4cd8c580aaaf5df3e7bea2923239e53f9075b2ee0ed
+  results: LAB_SHAPE_RESULTS_v1.md
+  results_sha256: 2b6aba5ebed4d0f72fc3bbb68fc7900a599f99adc1bb1821115824d8e833492e
+  verification:
+    checked_at: '2026-10-16T07:44:22.315847+00:00'
+    author: /root
+    complete_independent_derivation_code_report_and_check_results_read: true
+    large_array_scope: All original bytes preserved; exact source-binding and full-row/constraint correspondence
+      checked by inspected checker, with aggregate/control and active-constraint results read.
+    manifest: independent_lab_shape/LAB_SHAPE_REVIEW_IDENTITY_v1.json
+    manifest_sha256: fa1f90303d43fa5791220189beecd3ace820e028409c1c8f537a914e567bc9ec
+    bindings_verified: 29
+    primary_controls: 158
+    independent_controls: 82
+    post_exposure_correspondence_controls: 47
+    all_row_readouts_compared: 855
+    constraint_records_compared: 15006
+    author_reproduction_byte_identical: true
+    shared_solver_library: true
+    counts_overlap_not_pooled: true
+    result: Nine conditional box optima agree; exact rational monotone certificates independent of LP;
+      actual measurement applicability and statistical coverage remain unresolved.
+    formal_audit: false
+    empirical_validation: false
+  data_csv_sha256: de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381
+  rows: 95
+  role: All exposed processed development data; no scalar fit or empirical holdout
+  result: Exact positive-measure implications and nine deterministic error-box optima checked. Actual
+    matched-pattern/transfer applicability and statistical coverage remain unresolved.
+  source_review: LEE2020_METROLOGY_SOURCE_REVIEW_v1.json
+  source_review_sha256: 3364ed4127374ad1da1cd0a74e62d195fb08a9281095b5aa993b5755f04e9ced
+  empirical_validation: false
+lab_geometry_transport_checkpoint:
+  time: '2026-10-16T07:53:26.580349+00:00'
+  author: /root personally
+  source: LAB_GEOMETRY_TRANSPORT_v1.md
+  source_sha256: ebecac4abf41d8757eeefc3c188498d4acfa3419a093b32f3bf19c49df885991
+  output: LAB_GEOMETRY_TRANSPORT_CONTROLS_v1.json
+  output_sha256: 74730ce6ebf6c899287905fb26a86d6baa3fee417b5ecfe41fde996785572a77
+  verification:
+    checked_at: '2026-10-16T07:52:24.587592+00:00'
+    author: /root
+    complete_independent_derivation_code_report_and_results_read: true
+    manifest: independent_lab_geometry_transport/MANIFEST_v1.json
+    manifest_sha256: d1983b409f09dd78d90a7d332c372355beb0a926aaff0ca6898ddcf48156b23d
+    artifact_bindings_verified: 16
+    source_bindings_verified: 6
+    primary_controls: 366
+    independent_controls: 63
+    author_reproduction_byte_identical: true
+    counts_overlap_not_pooled: true
+    result: Conservative gradient and positive mass transport bounds checked under uniform pathwise geometry;
+      real harmonics require factor two. No actual apparatus displacement certificate supplied.
+    limits:
+    - Stipulated scale envelope is loose; actual errors need not be large.
+    - No empirical covariance, confidence level or scalar exclusion.
+    - Unconstrained transport infima cannot be inserted without admissible paths.
+    formal_audit: false
+    empirical_validation: false
+  result: Derived admissible mass-transport uncertainty envelope without choosing a density profile; actual
+    displacement/gap/lever certificate remains required.
+  illustration: Stipulated micrometre movements give loose global envelopes, not an apparatus error bound
+    or proof of large actual corrections.
+  empirical_validation: false
+dynamic_gravity_intake:
+  time: '2026-10-16T07:53:26.580349+00:00'
+  source: DYNAMIC_GRAVITY_INTAKE_v1.md
+  source_sha256: 7fd2cd4c2fad55b0eda18d35152c3f22e939301d6fcd4b401a0e3f4902079e8a
+  selected_primary: https://arxiv.org/abs/2303.03545v2
+  selected_dataset: https://zenodo.org/records/10300430
+  receipt: DYNAMIC_GRAVITY_METADATA_RECOVERY_v1.json
+  receipt_sha256: 36c63ce7d399fd9977c1a67b6a3740ab99c98af9eace3f1ab10c7d7d4ce953bd
+  raw_arrays_opened: true
+  published_aggregate_exposure: true
+  stage: One raw record analyzed under frozen development protocols; full parser and one original regression
+    independently checked
+  next_action: Refresh relevant main/open-PR science, then personally derive or delimit a non-equilibrium
+    scalar reconstruction from response mass/coupling functions and expansion/matter observations. Read
+    the full matter-density/frame and stability sections of pinned Brax1203.4812v2 and earlier reconstruction
+    prior art first. Retain scalar acceleration, Einstein constraints, normalization and coordinate/source
+    calibration; determine which histories are constrained or free rather than imposing minimum tracking,
+    A=1 or a chosen initial field. Seek an exact consistency identity or counterexample and focused check
+    before any new observation fit. Keep seven Fuchs arrays unopened; source-position changes are not
+    registered scalar environments.
+  raw_arrays_opened_count: 1
+delivery_current: commits-only support; prior five milestone PRs frozen
+fuchs_weak_checkpoint:
+  time: '2026-10-16T08:32:23.807043+00:00'
+  author: /root personally
+  source: FUCHS_RELATIVE_MOTION_AND_WEAK_INVERSE_v2.md
+  source_sha256: 87c88650707c10c204a106a86749a9fa42d037ee670e4d1093caa75895538d51
+  extension: FUCHS_COMPLEX_PROBE_EXTENSION_v1.md
+  extension_sha256: 5fbb6ac65f01c4dc16b7cddd8dba6347581f1444b856de239dfe68698a4b73dd
+  root_weak_controls: 25
+  root_complex_current_controls: 23
+  root_original_development_cases: 24
+  root_complex_development_cases: 12
+  original_development_sha256: 84c6481edd29c155eb07ab854bd4ff879a69c664b5a180b1e6435e9e6fda1351
+  complex_development_sha256: 0e747b940174657fdacae344912e075c3882fdf834608e53aa3a25e871cd6e9a
+  selected_trace_sha256: 6caefb32f687e479d832a28ffa18a2125484acc3783ee12d42e602e15f1d9c67
+  mathematics_check:
+    checked_at: '2026-10-16T08:31:16.175570+00:00'
+    author: /root
+    complete_independent_derivations_code_reports_read: true
+    all_control_names_and_detailed_results_inspected: true
+    manifest: independent_fuchs_weak/MANIFEST_v1.json
+    manifest_sha256: 412cd463c7df394e37537d385dcd1f74f7a5fa9532f9e6ff9d9156a3d0c4f7d0
+    report_sha256: 2e30aae4ad0ea263a8370b8ef76a9181725277fca5e3cc4d1f347153d2d3f75d
+    artifact_bindings_verified: 31
+    author_source_bindings_verified: 15
+    independent_first_pass_controls: 60
+    independent_complex_controls: 85
+    root_weak_controls: 25
+    root_complex_current_controls: 23
+    author_replays_byte_identical: true
+    counts_overlap_not_pooled: true
+    historical_failed_control_preserved: true
+    raw_data_outside_this_check: true
+    development_extension_runner_not_independently_reviewed: true
+    ordinary_recovery: Initial verification command used unresolved Path parents and exited before writing;
+      rerun with absolute resolved pack path. No evidence changed.
+    formal_audit: false
+    empirical_validation: false
+  data_check:
+    checked_at: '2026-10-16T08:24:35.044383+00:00'
+    author: /root
+    proof_report_and_code_read_completely: true
+    independent_control_and_correspondence_results_inspected: true
+    identity_manifest: independent_fuchs_development/FUCHS_DEVELOPMENT_REVIEW_IDENTITY_v1.json
+    identity_manifest_sha256: f6caf80c1ddb0004d518d69c8622f0fd888f40db43d23993c227dd504e3a0bc5
+    bindings_verified: 44
+    independent_controls: 44
+    post_exposure_correspondence_controls: 21
+    root_math_controls: 25
+    root_development_cases: 24
+    independent_real_regression_cases: 1
+    all_selected_rows_independently_parsed: 678861
+    unchanged_author_outputs_byte_identical: true
+    counts_overlap_not_pooled: true
+    shared_numpy_lstsq_library: true
+    other_raw_arrays_opened: false
+    complex_extension_outside_this_check: true
+    empirical_validation: false
+    formal_audit: false
+  historical_failure: Complex synthetic v1:19pass1fail at fixed1e-10 threshold; step halved without relaxing
+    threshold, v2 adds three convergence checks and23pass0fail. All original bytes preserved.
+  result: Initial homogeneous history eliminated only from a supplied linear necessary observation equation.
+    Complex probes preserve forcing moments; conditional coefficients stabilize but residuals and physical
+    transfer/registration gaps remain.
+  data_role: Selected trace exposed development, published aggregates exposed, seven other arrays unopened;
+    no independent physical prediction
+  complex_numerical_review_scope: Root implemented and structurally inspected all12cases; independent
+    mathematics and synthetic replay cover the complex helper; distinct raw numerical implementation covers
+    one original real-probe case, not the12extension cases.
+  figure: FUCHS_DEVELOPMENT_DIAGNOSTIC_v1.png
+  figure_sha256: 2809244c06a1fdf8f5baae515a9444a400a99f06412a9c0559886539527d3d1a
+  figure_visually_checked: true
+  prior_art_intake: DENSITY_TOMOGRAPHY_PRIOR_ART_INTAKE_v2.json
+  prior_art_sha256: 16fee9b23c9524828be54f0fddc31e6e40cd870d27aaa38ec43035349d033900
+  empirical_validation: false
+  formal_audit: false
+  next_action: Refresh relevant main/open-PR science, then personally derive or delimit a non-equilibrium
+    scalar reconstruction from response mass/coupling functions and expansion/matter observations. Read
+    the full matter-density/frame and stability sections of pinned Brax1203.4812v2 and earlier reconstruction
+    prior art first. Retain scalar acceleration, Einstein constraints, normalization and coordinate/source
+    calibration; determine which histories are constrained or free rather than imposing minimum tracking,
+    A=1 or a chosen initial field. Seek an exact consistency identity or counterexample and focused check
+    before any new observation fit. Keep seven Fuchs arrays unopened; source-position changes are not
+    registered scalar environments.
+non_equilibrium_checkpoint:
+  time: '2026-10-16T09:36:59.455687+00:00'
+  author: root personally
+  stage: Checked scalar-history milestone published and attached
+  source: /Users/jonBridger/.codex/worktrees/scalar-history-inverse-20261016/New Axioms Lets Go/docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md
+  source_sha256:
+    docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md: e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e
+    scripts/scalar_history_inverse.py: b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5
+    scripts/scalar_history_inverse_math.py: 3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b
+  result_sha256: 6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3
+  primary_controls: 58
+  primary_failures: 0
+  mutations_detected: 10
+  independent_pre_author_controls: 64
+  independent_post_original_exposure_additions: 31
+  independent_canonical_integration_checks: 16
+  portable_replay_cases: 5
+  counts_separate_not_pooled: true
+  independent_manifest_sha256: 1fcb1cb4316c71b16b1d999e2e3bee8c0eb3f3c1b5a0ceab390bb731dafd5e00
+  independent_report_sha256: 3e60148735a9a14330e46f7310278f37e98455a98e414a3b5b5f46bdc605b466
+  independent_files_verified: 69
+  root_complete_review: true
+  review_scope: Independent proof/code/all control results, final report, failures and final bindings
+    read; same Python/SymPy, no independent data or CAS, no priority audit
+  result: Within the supplied canonical scalar/conformal-dust action on a monotonic positive-dust chart,
+    H,alpha,mu are compatible exactly when a velocity satisfies the derived ODE and sixth-degree constraint
+    throughout the interval. Outside a precisely classified uncoupled exceptional continuum there are
+    at most six histories; local A,V follow per surviving history. No minimum, potential shape or preferred
+    initial velocity is selected. Physical input extraction remains open.
+  remaining_imports:
+  - canonical single-scalar/conformal pressureless action class
+  - known M and normalization
+  - flat homogeneous Einstein frame
+  - registered Einstein-time H C3, alpha C1, fixed-bare-density mu continuous
+  - nonzero scalar velocity and positive dust on connected chart
+  - measurement extraction, derivative/error control and actual environmental correspondence
+  historical_failures: Original v1 42 pass/2 fail preserved and replayed; v2 46/0. First mutation choices,
+    unsupported runner label, review clarifications and packaging/link-check failures remain recorded.
+  empirical_validation: false
+  new_observations_read: false
+  worktree: /Users/jonBridger/.codex/worktrees/scalar-history-inverse-20261016/New Axioms Lets Go
+  branch: codex/scalar-history-inverse-20261016
+  formal_audit: false
+  pr:
+    baseRefName: main
+    baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+    changedFiles: 97
+    headRefName: codex/scalar-history-inverse-20261016
+    headRefOid: 92b648a0bcaf27cb09cbe3c54bd1fff31ff3e2f0
+    isDraft: false
+    mergeStateStatus: BLOCKED
+    mergeable: MERGEABLE
+    number: 9638
+    state: OPEN
+    title: '[physics-loop] scalar-history compatibility bounded_theorem conditional-support'
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9638
+    verified_at: '2026-10-16T09:36:59.455687+00:00'
+    attached_to_current_chat: true
+    shared_landing_validation: pending
+    scientific_status: bounded_theorem / conditional-support; exact mathematical and constructed controls
+      only
+  next_action: Refresh relevant main and open-PR science, then derive the matter-clock/frame and coupled
+    matter/scalar response correspondence for the scalar-history inverse. Start with primitive redshift/clock
+    and perturbative source/readout definitions; retain dust response and metric constraints before deciding
+    whether any observable pole identifies fixed-bare-density mu. Keep clock, scale, action, gauge, background
+    and approximation assumptions explicit; derive or eliminate them where possible. Compare with pinned
+    Boisseau/Tsujikawa prior art. No minimum tracking, arbitrary scalar-state selector or fitted pole-to-mass
+    identification. Keep seven Fuchs arrays unopened; do not fit a cosmological model before freezing
+    a physical input map and data roles.
+  deadline_unchanged: '2026-10-16T22:36:59Z'
+last_checked_main: 5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472
+scalar_history_publication:
+  baseRefName: main
+  baseRefOid: bbada1fe09b2d10d610560864d86b68c24a59713
+  changedFiles: 97
+  headRefName: codex/scalar-history-inverse-20261016
+  headRefOid: 92b648a0bcaf27cb09cbe3c54bd1fff31ff3e2f0
+  isDraft: false
+  mergeStateStatus: BLOCKED
+  mergeable: MERGEABLE
+  number: 9638
+  state: OPEN
+  title: '[physics-loop] scalar-history compatibility bounded_theorem conditional-support'
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9638
+  verified_at: '2026-10-16T09:36:59.455687+00:00'
+  attached_to_current_chat: true
+  shared_landing_validation: pending
+  scientific_status: bounded_theorem / conditional-support; exact mathematical and constructed controls
+    only
+matter_clock_response_checkpoint:
+  time: '2026-10-16T10:13:06.736001+00:00'
+  status: root authored support complete; focused source-bound checks personally verified
+  root_report: MATTER_RESPONSE_ROOT_REVIEW_v1.md
+  root_report_sha256: 672005f3abb6a429449a5c54b8e3b4875b1c677220d326dc0338738eb37656c4
+  binding_receipt: MATTER_RESPONSE_ROOT_BINDINGS_v1.json
+  binding_receipt_sha256: 695da1757d8c4497fb8d01089e18b24ba585607be106c31d6e2983e2cf649765
+  counts_separate:
+    matter_clock_root: 55
+    matter_clock_independent: 99
+    matter_clock_post_correspondence: 15
+    matter_clock_root_post_witness: 15
+    response_root: 42
+    response_independent: 27
+    response_post_correspondence: 7
+    response_root_post_closure: 14
+  failed_completed_controls: 0
+  scope: Exact conditional mathematics and synthetic controls; no empirical validation or formal audit
+  sources:
+    MATTER_CLOCK_DERIVATION_v2.md: c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5
+    SCALAR_RESPONSE_DERIVATION_v1.md: 401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d
+    SCALAR_RESPONSE_CLOSURE_v1.md: 0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818
+    MATTER_CLOCK_PRIOR_ART_v1.json: b4a45a4445a24694c835cbea6be2adc52b2179f5b003217a421e142c430d7b73
+    NEXT_RESPONSE_INVERSE_PLAN_v1.md: b835727aa83c00b6db4a6ccbc93b5c28cd27f8ca94d31adeec8baa9f78b71118
+    independent_matter_clock/REPORT_v1.md: 200511d0b90bf630366cad72f3ead1807f26b3276024442ef3e11c2f70d7f8df
+    independent_matter_clock/MANIFEST_v1.json: 3dfb5c3785f47ed4ed7c90ebb9c0f1d3e6082f15283bbe27b5cef6e82720da66
+    independent_scalar_response/RESPONSE_REVIEW_v1.md: fbaa4c946b57cd8785068615c22ade9fe50449f22a59e6171ce54ca56dcd901a
+    independent_scalar_response/SOURCE_MANIFEST_v1.json: 8127255f0e6c9a748b3d96fe4889394eed4c49f7543ecd09ab82d0f12fa2edce
+    independent_scalar_response/CLOSURE_COMPARISON_v1.md: 906b40b94a92a1dacb1094ba84318bebdc7ad4ba0a8244eb7fb77e47f02a7eec
+    independent_scalar_response/CLOSURE_IDENTITY_v1.json: 8792744cba61758f6f4673379e9621622814c9f14d2f0cb270ae53b6081e8e63
+  limitations:
+  - Matter clock/direct system still assumes canonical universal conformal scalar/dust class and registered
+    h,b,kappa
+  - Six bound counts velocity histories only on C!=0; valid C=N=0 witness and continuous A0 retained
+  - Source elimination is necessary, not full mode solution or empirical pole identity
+  - Independent response trajectory crosses v=0; not one monotonic inverse chart
+  - Seven Fuchs arrays unopened; no new data
+  delivery: commits-only; five prior milestone PRs unchanged
+  next_action: 'Personally execute NEXT_RESPONSE_INVERSE_PLAN_v1.md: from ideal registered matter-metric
+    potentials across common-background Fourier modes, derive or refute the proposed five-coefficient
+    response inverse and whether it eliminates supplied b,kappa. Refresh relevant main/open PR science
+    first and compare reconstruction prior art. Test rank on full original-equation forward solutions,
+    retain background/matter/metric constraints, critical coupling values, scale/orientation/initial-state
+    freedom and derivative/noise obligations. Proposed formulas are not yet verified or load-bearing.
+    Keep seven Fuchs arrays unopened; do not insert fitted ranges, a minimum or selected initial scalar
+    state.'
+  deadline_unchanged: '2026-10-16T22:36:59Z'
+mode_inverse_checkpoint:
+  time: '2026-10-16T10:58:43.911428+00:00'
+  status: source-bound focused check complete and personally verified; conditional research support
+  root_review: MODE_INVERSE_ROOT_REVIEW_v1.md
+  root_review_sha256: 7b75b2bde0df6e4c6f601bc14c81d72cf8983e549329851af4087322dfcf7386
+  bindings: MODE_INVERSE_ROOT_BINDINGS_v1.json
+  bindings_sha256: 764588c747d485234818f28b2ddd78fea3092d8de45cd386bbd4d126b814e2e6
+  counts_separate:
+    primary_root: 40
+    variable_coupling_root: 13
+    common_gain_root: 15
+    gain_jets_root: 8
+    trace_root_post_exposure: 12
+    joint_gain_root: 22
+    independent_pre_author: 111
+    independent_post_author: 38
+    independent_joint_correspondence: 62
+    source_mutations_detected: 8
+  counts_are_not_independent_experiments: true
+  independent_manifest_files: 85
+  actual_author_bindings: 26
+  copied_byte_identical_author_replays: 6
+  failed_completed_scientific_controls: 0
+  independent_report: independent_mode_inverse/REPORT_v2.md
+  independent_report_sha256: 7290d368bc5b1d62c1313299d474c737ed8638ef539e5ab268b2bd061461ab02
+  independent_manifest_sha256: 669181ed61c60474880d619cdf06d17a0f3bb98c8f7a424827ef40a1c239e642
+  result: Conditional on the canonical scalar/conformal-dust action and compatible rich smooth matter-metric
+    mode histories, the coupling, scalar velocity product and fixed-bare-density curvature are reconstructed
+    instead of supplied. Local A,V follow on the monotonic positive-dust chart, with full original-equation
+    residuals. A common amplitude drift is recoverable by combining trace and scalar relations, including
+    B=2/3. Action selection, physical input extraction, derivative/rank control and absolute normalization
+    remain open.
+  empirical_validation: false
+  formal_audit: false
+  new_observational_arrays_read: false
+  unopened_fuchs_arrays: 7
+  delivery: commits-only support toward one combined milestone; conformance not yet asserted
+  next_action: 'Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records
+    supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source
+    calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it;
+    no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse
+    milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap
+    value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.'
+  deadline_unchanged: '2026-10-16T22:36:59Z'
+metric_readout_checkpoint:
+  time: '2026-10-16T11:49:51.330008+00:00'
+  root_sets:
+    exact_readout: 53
+    growing_rank_and_noise: 19
+    transport: 20
+    fixed_branch_closure: 24
+    post_independent_kernel_integration: 23
+  independent_readout:
+    pre_author: 41
+    post_author_extensions: 25
+    full_root_read: true
+    manifest_verified: 50
+    current_root_notes_verified: 3
+    source_bindings_verified: 18
+  independent_fixed_action:
+    pre_author_controls: 55
+    proof_read_by_root: true
+    complete_code_read_pending: true
+    post_exposure_comparison_active: true
+  canonical_integration:
+    controls: 243
+    replay_byte_identical: true
+    kernel_correction_pending: true
+  files:
+    METRIC_READOUT_DERIVATION_v2.md: 4255600fc15f352a944b417a0aee87dca1e29f48830950a5211e2ef4441960ea
+    METRIC_REDSHIFT_TRANSPORT_DERIVATION_v2.md: dad79a62c7e4e1fae9117c3ea5d397ca38e62ea1becfc6f3f6dbc88e05573d16
+    METRIC_FIXED_ACTION_CLOSURE_DERIVATION_v1.md: 419b98cad87d7c99ff3859326796e0e48fc5101a53d5ae1875e55c80556778f7
+    METRIC_FIXED_ACTION_CLOSURE_CONTROLS_v1.json: 8f8c9e5e7b52f2363adc2c9c551c0e5fbc799000f3e91f07989e9413f6b40731
+    METRIC_FIXED_BACKGROUND_ROOT_INTEGRATION_v1.md: 3a4024db3e426bba8ad7487c67ac0128823c2a51754de7655434ad3972fae803
+    METRIC_KERNEL_INTEGRATION_CONTROLS_v1.json: 2d844966a5c76b7b34006a31bcab432ff4cbc1c825bbdb289128b33c388cf51b
+  empirical_validation: false
+  new_observed_arrays: false
+  unopened_fuchs_arrays: 7
+  next_action: Integrate the independently identified local traceless-Hessian kernel qualification and
+    root nonsingular inverse, complete frozen-source focused review and source mutations, then publish
+    one coherent metric-history/readout milestone. Do not identify conditional fixed-background observability
+    with joint unknown-background uniqueness. Keep five earlier PRs frozen and seven Fuchs arrays unopened.
+metric_milestone_publication:
+  time: '2026-10-16T12:11:55.390870+00:00'
+  pr:
+    baseRefName: main
+    baseRefOid: 5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472
+    changedFiles: 99
+    headRefName: codex/scalar-metric-inverse-20261016
+    headRefOid: 902f26a03d9fad68f1afec1417a2dad3090b64d7
+    isDraft: false
+    mergeStateStatus: BLOCKED
+    mergeable: MERGEABLE
+    number: 9639
+    state: OPEN
+    title: '[physics-loop] scalar metric reconstruction bounded_theorem conditional-support'
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9639
+    verified_at: '2026-10-16T12:11:55.390870+00:00'
+    attached_to_current_chat: true
+    shared_landing_validation: pending
+    scientific_status: bounded_theorem / conditional-support; no empirical validation
+  primary_counts:
+    coefficients:
+      passed: 40
+      failed: 0
+    conditioning:
+      passed: 19
+      failed: 0
+    constraints:
+      passed: 10
+      failed: 0
+    fixed_background:
+      passed: 24
+      failed: 0
+    geometry:
+      passed: 42
+      failed: 0
+    joint_gain:
+      passed: 22
+      failed: 0
+    local_kernels:
+      passed: 23
+      failed: 0
+    photon_map:
+      passed: 53
+      failed: 0
+    transport:
+      passed: 20
+      failed: 0
+    varying_coupling:
+      passed: 13
+      failed: 0
+  counting_scope: Unit counts overlap and are not independent experiments; 27 noise cases are diagnostics,
+    not additional pass/fail tests.
+  source_sha256:
+    docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md: 1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63
+    scripts/scalar_metric_coefficients.py: 7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78
+    scripts/scalar_metric_conditioning.py: 03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3
+    scripts/scalar_metric_constraints.py: 5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e
+    scripts/scalar_metric_fixed_background.py: 8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69
+    scripts/scalar_metric_geometry.py: 475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30
+    scripts/scalar_metric_inverse.py: 274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708
+    scripts/scalar_metric_joint_gain.py: 9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3
+    scripts/scalar_metric_local_kernels.py: 12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021
+    scripts/scalar_metric_photon_map.py: 76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877
+    scripts/scalar_metric_transport.py: 5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348
+    scripts/scalar_metric_varying_coupling.py: 1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01
+  artifact_sha256:
+    docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md: 1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63
+    scripts/scalar_metric_inverse.py: 274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708
+    outputs/scalar_metric_inverse/result.json: ca2bddfe6cf3528a78875930b8c9baf02d346e3c227630bc3c7897cdcbcd23dd
+    logs/runner-cache/scalar_metric_inverse.txt: bbb656c3e7e3b5a063d890e85992b77a47372349def105333786483e273dcb42
+    outputs/scalar_metric_inverse/mutations/RESULT.json: 65042bca919a7c99139136765edacc073f6462b527a60c4e8f5aa2649b9f1e7b
+    outputs/scalar_metric_inverse/portable_replay_v1.json: 29ef01aebd54b5c6ade0f3a309dad9c22bbd73ecb45012394d51fa9a1e03ce47
+    outputs/scalar_metric_inverse/independent_integration/CANONICAL_INTEGRATION_REVIEW_v2.md: d8a59044f0522e4a52a7572ee9120912679286ede470212fb43dc9d90fd9fdb2
+    outputs/scalar_metric_inverse/historical/source_evidence.tar.gz: d7ee9c4c59cbedb53bd0bdf52325cc1ef4d426d159f2e2613be1b5e7a54bc541
+    outputs/scalar_metric_inverse/historical/integration_evidence.tar.gz: 0c84e736ce35f416cf34fe8eb0f0bb125c990ff6e4dcc375996c56ffb7ebe120
+  focused_checks:
+    fixed_background_pre_author:
+      passed: 55
+      failed: 0
+      preserved_first_attempt: 54/1; coordinate-representation comparison repaired
+    fixed_background_post_exposure:
+      passed: 27
+      failed: 0
+    fixed_background_author_replays:
+    - 24
+    - 23
+    readout_pre_author: 41
+    readout_post_exposure: 25
+    canonical_independent_replay: 243 unchanged controls plus separate23 new-helper controls; not a pooled
+      independent266 run
+    all_source_bound_reports_personally_read: true
+    manifest_counts_verified:
+      scalar_response: 32
+      mode_inverse: 85
+      metric_readout: 50
+      fixed_background: 57
+      canonical_integration: 128
+  actual_source_mutations:
+    detected: 12
+    total: 12
+    exceptions: 0
+  portable_replays:
+    runs: 2
+    byte_identical: true
+    different_cas: false
+  archived_campaign_focused_checks:
+    path: METRIC_FOCUSED_CHECKS_ARCHIVE_v1.tar.gz
+    sha256: 579e3f3b2349fc3f26ac4cf74b9ab653a87fc9ce8e6182a8cbcea54731a59f1d
+    members: 109
+    raw_evidence_unchanged: true
+  validation:
+    vocabulary_findings: 0
+    staged_diff_check_exit: 0
+    committed_diff_check_exit: 0
+    local_markdown_link_failures: 0
+    milestone_tree_clean: true
+    shared_landing: pending
+    formal_audit_applied: false
+  empirical_data_access: None in this block; seven Fuchs arrays remain unopened
+  campaign_deadline: '2026-10-16T22:36:59Z'
+  packaging_at: '2026-10-16T22:21:59Z'
+  prior_prs_unchanged:
+  - 9628
+  - 9632
+  - 9634
+  - 9637
+  - 9638

@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-16T11:44:21.324588+00:00",
+  "source": "METRIC_FIXED_BACKGROUND_ROOT_INTEGRATION_v1.md",
+  "sha256": "3a4024db3e426bba8ad7487c67ac0128823c2a51754de7655434ad3972fae803",
+  "stage": "Root post-independent-proof exposure, before new root control execution",
+  "independent_origin": "independent_metric_fixed_action/DERIVATION_BEFORE_AUTHOR_v1.md"
+}

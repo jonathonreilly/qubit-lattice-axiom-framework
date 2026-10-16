@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-16T11:17:52.883183+00:00",
+  "stage": "root derivation plus control protocol frozen before new transport controls",
+  "file": "METRIC_REDSHIFT_TRANSPORT_DERIVATION_v1.md",
+  "sha256": "a648d00cf95b46d10d7ac1e27d120540eb0e92db93c4458b55f3a8934302b884",
+  "evidence": "kinematic metric/geodesic transport, not a full scalar-action ambiguity"
+}

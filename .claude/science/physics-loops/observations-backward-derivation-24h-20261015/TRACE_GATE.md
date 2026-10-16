@@ -4,7 +4,7 @@ target_blocker_text: "derive the remaining assumptions rather than supplying the
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: frontier_probe
-next_trace_action: "Derive or refute a joint metric-response inverse eliminating supplied coupling/curvature functions, with full physical mode and observation constraints."
+next_trace_action: "Jointly identify compatible backgrounds and primitive photon inputs without supplying J, coupling, curvature or a preferred scalar history."
 
 ## Neighborhood-evolution subcampaign
 
@@ -66,3 +66,19 @@ Root40/13/15/8/12/22control sets and independent111/38/62sets pass, separately c
 Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.
 
 Five previous PRs remain open and unchanged. Current checkpoint is commits-only; canonical milestone conformance remains to be completed. Main now5eeadf3f differs only in automated audit dispatch state; all68openPRheads unchanged. No active focused agent, detached author or owned job. Four older campaigns remain stopped. Matching lock refreshed10:57:05UTC; deadline22:36:59Z and packaging22:21:59Z unchanged.
+
+
+## Observation map checkpoint 2026-10-16T11:23:07.661973+00:00
+
+Root personally derived repeated-cone/local-shell identities and a corrected redshift/Euler transport. Exact53, numerical19, transport20 controls pass; two code/export failures are preserved. Independent41-control pre-exposure derivation is frozen and source comparison is active. The transport family is only kinematic on an annulus; no same-action ambiguity is established. Known growing full-field modes show severe rank conditioning, not measured survey performance.
+
+Finish independent input-map comparison, qualify the transport ambiguity on an annulus, and personally test whether full fixed-action scalar/dust constraints determine the transport boundary instead of supplying it. Root has proposed a local Laplacian/radial compatibility inverse; it is not yet tested or load-bearing. Then package one coherent matter-clock/response/metric-observation milestone after final focused check and conformance. Keep earlier PRs frozen and seven Fuchs arrays unopened.
+
+No new observations, no formal audit, no detached author, older campaigns remain stopped. Deadline and packaging cutoff unchanged. Trace remains upstream_support with conditional reachability.
+
+
+## Published metric/readout milestone — 2026-10-16T12:11Z
+
+PR9639 carries the checked metric-history inverse and a separate fixed-background spherical observation theorem. In the latter, field compatibility determines actual J without choosing the kinematic transport boundary, even with local metric integration kernels. The explicit w formula has a narrower stated domain. Trace remains upstream_support with conditional reachability; action, physical input registration, absolute scale and error control remain open. No existing claim is promoted and no empirical validation is inferred.
+
+Next trace action: execute NEXT_JOINT_PHOTON_BACKGROUND_PLAN_v1.md. Do not compose the two distinct theorems into unknown-background uniqueness. Six milestone PRs and the neighborhood side study are frozen; seven Fuchs arrays remain unopened.

@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-16T11:16:28.872662+00:00",
+  "failed_runner": "check_metric_readout_numerics_v1.py",
+  "failed_runner_sha256": "10b0fce2c8b9b1112e9e3176cab2a7b63dc187ebe7d44f52eb80ceb416dd52a4",
+  "exit_code": 1,
+  "exception": "ZeroDivisionError in spectrum at svmp[0]/svmp[-1,0]",
+  "cause": "mpmath matrix negative row indexing returns an out-of-range zero rather than the final singular value; this is an indexing failure, not evidence of zero mathematical rank",
+  "repair": "v2 uses svmp.rows-1 explicitly; frozen numerical protocol unchanged",
+  "partial_stdout": "METRIC_READOUT_NUMERICS_FAILED_v1.stdout.txt",
+  "scientific_conclusion_from_failure": null
+}

@@ -1,0 +1,447 @@
+{
+  "archived_at": "2026-10-16T12:10:21.980644+00:00",
+  "reason": "Preserve immutable focused-check evidence, including exact diff text and terminal newlines, as raw archived bytes rather than modifying source-bound originals for Git whitespace formatting. Both agents finished before archival.",
+  "archive": "METRIC_FOCUSED_CHECKS_ARCHIVE_v1.tar.gz",
+  "archive_sha256": "579e3f3b2349fc3f26ac4cf74b9ab653a87fc9ce8e6182a8cbcea54731a59f1d",
+  "member_count": 109,
+  "members": {
+    "independent_metric_fixed_action/ATTEMPT_RECOVERY_v1.json": {
+      "sha256": "b32a2f6a69e9f5224f6bab091239dc94f02718c42d67a8aa2fd50383ddc133c4",
+      "bytes": 1451
+    },
+    "independent_metric_fixed_action/AUTHOR_INTEGRATION_SNAPSHOT_v1.json": {
+      "sha256": "97978aa0e1c336ddc3fd692c6e24f492c580247f2a510607e6a184bf370ae4db",
+      "bytes": 1587
+    },
+    "independent_metric_fixed_action/AUTHOR_SNAPSHOT_v1.json": {
+      "sha256": "04bd3aacaab067c4486ca9686c13b68b64f2c74b511a0e1bd015c9d4fa0d2d48",
+      "bytes": 6029
+    },
+    "independent_metric_fixed_action/CANONICAL_DELTA_v1.json": {
+      "sha256": "10dab052af9fc7a941b4c52195f374a458132b5ffb32bbfdf6bf9a990441750e",
+      "bytes": 9821
+    },
+    "independent_metric_fixed_action/CLOSEOUT_v1.json": {
+      "sha256": "b7407e2fa8fdfd4433b20d14d943c75bc4aa97ae84c0b62cc22c80a72ab27c3f",
+      "bytes": 8527
+    },
+    "independent_metric_fixed_action/DERIVATION_BEFORE_AUTHOR_v1.md": {
+      "sha256": "d3b0f8120f4cb95ff973b3f47069afcaa7f0fd1cddc23a5c713da6622e98947e",
+      "bytes": 9567
+    },
+    "independent_metric_fixed_action/INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "8d8020527879601f1aafdad5c4b17e0eaeebc7e81f9e03231c30cd1a93ddb9cc",
+      "bytes": 2570
+    },
+    "independent_metric_fixed_action/INTEGRATION_REPLAY_INPUTS_v1.json": {
+      "sha256": "9d9c15cb9846eac8829bc3bc7e2e9f5d4732b570737c2fe4bea8c4ed9dfb5a25",
+      "bytes": 804
+    },
+    "independent_metric_fixed_action/MANIFEST_v1.json": {
+      "sha256": "28151dac6391981e3b25bab30154028427dbf15cfd375133fe42d1b7d7a7b76f",
+      "bytes": 9610
+    },
+    "independent_metric_fixed_action/NEUTRAL_CONTRACT_v1.json": {
+      "sha256": "97e72536b3d844dc37b83ab7326949c430d6f0a5ff3d8ece1f0429660eca9951",
+      "bytes": 1342
+    },
+    "independent_metric_fixed_action/POST_EXPOSURE_CORRESPONDENCE_v1.md": {
+      "sha256": "40772f604a074d1cb1f963d978e92b1925203cf2b1a791ea8327a2704cc8d1b9",
+      "bytes": 4410
+    },
+    "independent_metric_fixed_action/PRE_AUTHOR_FINDINGS_v1.md": {
+      "sha256": "dab9c2bb13dfc7fd35662852fd18a9a5646e74f524633c213d374b5cfb0e93cd",
+      "bytes": 2796
+    },
+    "independent_metric_fixed_action/PRE_CODE_FREEZE_v1.json": {
+      "sha256": "e5c71c184987f97b78399fcab5336aee34d08ac4f1942e72f70434e39be75a91",
+      "bytes": 506
+    },
+    "independent_metric_fixed_action/REPORT_v1.md": {
+      "sha256": "07fabe9d11d593e4e80bc25d419d866be63bc7f06821eb2f388239d0880dec58",
+      "bytes": 7200
+    },
+    "independent_metric_fixed_action/REPORT_v2.md": {
+      "sha256": "8bfd067a86f0cd2bf095f873e7af3a62f775cb563e8b08f5c2051c7fba690131",
+      "bytes": 7058
+    },
+    "independent_metric_fixed_action/REPRODUCTION_v1.md": {
+      "sha256": "866aca412a5ecfb29662cf3c15e5001786dcc791c9972f99adfd062a9d77273b",
+      "bytes": 1745
+    },
+    "independent_metric_fixed_action/REPRODUCTION_v2.md": {
+      "sha256": "c1a2ac4e5a4dadad4a1d3d045685ca79f1bf51e9728e1048e442a107f8fd0309",
+      "bytes": 2054
+    },
+    "independent_metric_fixed_action/SOURCE_STATUS_v1.json": {
+      "sha256": "9450ac16d68d10fc91f059cd68c1d4599d3ef38e432bebdead88136c307faa63",
+      "bytes": 2178
+    },
+    "independent_metric_fixed_action/SOURCE_STATUS_v2.json": {
+      "sha256": "e766468e66a322aed33d029e8a5cf81f95db44872066e75de0b2af38b34ab48a",
+      "bytes": 8130
+    },
+    "independent_metric_fixed_action/author_integration_snapshot_v1/METRIC_FIXED_BACKGROUND_ROOT_INTEGRATION_v1.md": {
+      "sha256": "3a4024db3e426bba8ad7487c67ac0128823c2a51754de7655434ad3972fae803",
+      "bytes": 5501
+    },
+    "independent_metric_fixed_action/author_integration_snapshot_v1/METRIC_KERNEL_INTEGRATION_CONTROLS_v1.json": {
+      "sha256": "2d844966a5c76b7b34006a31bcab432ff4cbc1c825bbdb289128b33c388cf51b",
+      "bytes": 3739
+    },
+    "independent_metric_fixed_action/author_integration_snapshot_v1/METRIC_KERNEL_INTEGRATION_CONTROLS_v1.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_fixed_action/author_integration_snapshot_v1/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": {
+      "sha256": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+      "bytes": 27044
+    },
+    "independent_metric_fixed_action/author_integration_snapshot_v1/check_metric_kernel_integration_v1.py": {
+      "sha256": "cbd2ae623bdf2960c191d8cf2467c30e47507ca793527906158b67f67066fd7c",
+      "bytes": 4235
+    },
+    "independent_metric_fixed_action/author_integration_snapshot_v1/scalar_metric_local_kernels.py": {
+      "sha256": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+      "bytes": 3903
+    },
+    "independent_metric_fixed_action/author_replay_attempt01.run.json": {
+      "sha256": "c06c9f4835bce547103203a9c73bad1e8377b9225cb5f359148aba43da2e1bfd",
+      "bytes": 5515
+    },
+    "independent_metric_fixed_action/author_replay_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_fixed_action/author_replay_attempt01.stdout.json": {
+      "sha256": "8f8c9e5e7b52f2363adc2c9c551c0e5fbc799000f3e91f07989e9413f6b40731",
+      "bytes": 4286
+    },
+    "independent_metric_fixed_action/author_snapshot_v1/METRIC_FIXED_ACTION_CLOSURE_CONTROLS_v1.json": {
+      "sha256": "8f8c9e5e7b52f2363adc2c9c551c0e5fbc799000f3e91f07989e9413f6b40731",
+      "bytes": 4286
+    },
+    "independent_metric_fixed_action/author_snapshot_v1/METRIC_FIXED_ACTION_CLOSURE_DERIVATION_v1.md": {
+      "sha256": "419b98cad87d7c99ff3859326796e0e48fc5101a53d5ae1875e55c80556778f7",
+      "bytes": 7792
+    },
+    "independent_metric_fixed_action/author_snapshot_v1/METRIC_FIXED_ACTION_CLOSURE_FREEZE_v1.json": {
+      "sha256": "40ee55ffab1b6fa694f9a7b5bbc30c4f068046a81d2c706f7cd9c139ba3a5761",
+      "bytes": 297
+    },
+    "independent_metric_fixed_action/author_snapshot_v1/METRIC_READOUT_CONTROLS_v1.json": {
+      "sha256": "b0a4c8b8b23ef555f6c33da577b93da63805bb705e3c299650332c7b45b13963",
+      "bytes": 6757
+    },
+    "independent_metric_fixed_action/author_snapshot_v1/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": {
+      "sha256": "2151e6773f5cc2eee70c01fcb0964ec43d749feb37710435b30ddcabd9e86307",
+      "bytes": 22643
+    },
+    "independent_metric_fixed_action/author_snapshot_v1/check_metric_fixed_action_closure_v1.py": {
+      "sha256": "157d34a955fb2367cd523ddf760da6d27c803f6532d8160a23500949d9ee9b00",
+      "bytes": 6048
+    },
+    "independent_metric_fixed_action/author_snapshot_v1/check_metric_readout_v1.py": {
+      "sha256": "512e41145cbaf8c9320b4ee41abffedada9bd02777aee7656e447a9642b20e2a",
+      "bytes": 8883
+    },
+    "independent_metric_fixed_action/canonical_helper_attempt01.run.json": {
+      "sha256": "5042641973cb3036212d6a1f42cb1f8a9fa0b02d9c91aa4e48f3c2c6eb5bcb3d",
+      "bytes": 5357
+    },
+    "independent_metric_fixed_action/canonical_helper_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_fixed_action/canonical_helper_attempt01.stdout.json": {
+      "sha256": "3950aad98d973fc58df2f658ca0826524adc75216bf2fc14775f409bcc8076e9",
+      "bytes": 4620
+    },
+    "independent_metric_fixed_action/check_integration_correspondence_v1.py": {
+      "sha256": "02c4bc1d02dcf5243450b9961ce048c770d485d6a446a587b426c8f1f9227515",
+      "bytes": 2584
+    },
+    "independent_metric_fixed_action/correspondence_attempt01.run.json": {
+      "sha256": "6dfc4dbb5beff6bb989f61074294a1040fae569475ad2bf7b55f50fa75ca478a",
+      "bytes": 5490
+    },
+    "independent_metric_fixed_action/correspondence_attempt01.stderr.txt": {
+      "sha256": "2cb7f532bc2b3d2679c86baa6900c934b26ee55d06467cf22d62491a8ab39fc3",
+      "bytes": 1283
+    },
+    "independent_metric_fixed_action/correspondence_attempt01.stdout.json": {
+      "sha256": "8c9a774ff36088cbde4f458c25d7167e42c6c9591c182988b3848bf78cf60202",
+      "bytes": 3763
+    },
+    "independent_metric_fixed_action/independent_attempt01.run.json": {
+      "sha256": "e54b0e0d82fb10d879e9b0d2765be53a8d529fe357fa8808c080618e8f7b261f",
+      "bytes": 2812
+    },
+    "independent_metric_fixed_action/independent_attempt01.stderr.txt": {
+      "sha256": "9e485d3bffcb90b5034d7032008ac74618ef8e175b97e04991f9ec77466e6ae3",
+      "bytes": 2313
+    },
+    "independent_metric_fixed_action/independent_attempt01.stdout.json": {
+      "sha256": "52b6f8e5baf07bfb51c4cb50f75224786fcfbfa89630f18cff115e3aba0eda24",
+      "bytes": 6780
+    },
+    "independent_metric_fixed_action/independent_attempt02.run.json": {
+      "sha256": "785c7424300a540a94378477a7cd003c48a4a5375f33a47ab207e25b3e0fef21",
+      "bytes": 2812
+    },
+    "independent_metric_fixed_action/independent_attempt02.stderr.txt": {
+      "sha256": "d55c4d840acbb1befcd986a4fb9cba1e1ef29a6f01442d21685d7dc50c05a402",
+      "bytes": 2313
+    },
+    "independent_metric_fixed_action/independent_attempt02.stdout.json": {
+      "sha256": "2eb59225794b9bf73a4b60097d76b73a12e77daa1484cb260e7d63f725251caa",
+      "bytes": 6682
+    },
+    "independent_metric_fixed_action/independent_controls_v1.py": {
+      "sha256": "36d1626d6581b5295d44d966bcf3c0baa9e5379bcfebb963f85e537c321d391a",
+      "bytes": 8653
+    },
+    "independent_metric_fixed_action/independent_controls_v2.py": {
+      "sha256": "107262959f629c598839d4dd3de81f0ef6ac771d13ae0bea6b8911f1167206f0",
+      "bytes": 8654
+    },
+    "independent_metric_fixed_action/post_exposure_controls_v1.py": {
+      "sha256": "a26634d385ed329250bb618ad43ff716f8fcf469cd37555710a6383282963323",
+      "bytes": 6117
+    },
+    "independent_metric_fixed_action/root_integration_replay_attempt01.run.json": {
+      "sha256": "546a8d5bf6da239690126703f8311d0a3a190f36a5cd201bede2f468eee83f94",
+      "bytes": 5396
+    },
+    "independent_metric_fixed_action/root_integration_replay_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_fixed_action/root_integration_replay_attempt01.stdout.json": {
+      "sha256": "2d844966a5c76b7b34006a31bcab432ff4cbc1c825bbdb289128b33c388cf51b",
+      "bytes": 3739
+    },
+    "independent_metric_fixed_action/run_comparison_bounded_v1.py": {
+      "sha256": "173b10e89efc940fde8696b0451618cbbac3d8e143794317a04ae6792da95532",
+      "bytes": 4149
+    },
+    "independent_metric_fixed_action/run_independent_bounded_v1.py": {
+      "sha256": "181b5e626310f4498c4da8659093d8d91418537c1154f13e51023235341c3507",
+      "bytes": 2849
+    },
+    "independent_metric_fixed_action/run_independent_bounded_v2.py": {
+      "sha256": "95ddcf1075913d2fcc47561f23264648050a1e45edc761e033dfd33a84388500",
+      "bytes": 2849
+    },
+    "independent_metric_fixed_action/run_integration_bounded_v1.py": {
+      "sha256": "3c9c75722fa821faf3f10c59008ae5c727834019e6b97867fa2b9e304c6cc183",
+      "bytes": 4159
+    },
+    "independent_metric_readout/AUTHOR_EXPOSURE_v1.json": {
+      "sha256": "39095131a20553c58d7b23d8b4e3855354ee787c38d80c19462e9bf8846c9a47",
+      "bytes": 3106
+    },
+    "independent_metric_readout/AUTHOR_REPLAY_RECEIPTS_v1.json": {
+      "sha256": "5f85a1131683a9683ac31210908c749da246aec3a1366ec76e36b40a920f2fbc",
+      "bytes": 1531
+    },
+    "independent_metric_readout/CODE_FREEZE_v1.json": {
+      "sha256": "95099b7953e41080d1fc98228621476647bda18946dc6b000c6dac72a6a608c8",
+      "bytes": 233
+    },
+    "independent_metric_readout/EXECUTION_v1.json": {
+      "sha256": "547e0fce061235743176cec9e5ef3b1c32e3df64ddd7c63370044ee27da5ac9c",
+      "bytes": 349
+    },
+    "independent_metric_readout/EXTENSION_EXECUTION_v1.json": {
+      "sha256": "a27f0f4cc0d96c2183f75ce52158cb14e91cdbb2d0cecd096d1bdd278616f077",
+      "bytes": 351
+    },
+    "independent_metric_readout/EXTENSION_RESULTS_v1.json": {
+      "sha256": "84ac08b1a762d8888c1c50c8eb2192604ab890e0692d9c72651abb10d7e1eec4",
+      "bytes": 3608
+    },
+    "independent_metric_readout/EXTENSION_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/EXTENSION_STDOUT_v1.txt": {
+      "sha256": "5a09b81a16c72b141cc5d7478f60e012c6fde1feb05891e4dbe979c8c9c6544b",
+      "bytes": 212
+    },
+    "independent_metric_readout/INDEPENDENT_DERIVATION_v1.md": {
+      "sha256": "12eb20e092cb744ecded43eb77e56e2ba9d05a17a91f3c0f54c6662b61752519",
+      "bytes": 8396
+    },
+    "independent_metric_readout/INDEPENDENT_RESULTS_v1.json": {
+      "sha256": "05190b79a495e827a1fad4953f08b8fbb226c3deca5cc76ba5875e2e72c0f48d",
+      "bytes": 6101
+    },
+    "independent_metric_readout/INDEPENDENT_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/INDEPENDENT_STDOUT_v1.txt": {
+      "sha256": "6ee5c00c5d79711553e50910b4d0f23368187942b292601e22669829ebc89bfc",
+      "bytes": 108
+    },
+    "independent_metric_readout/METRIC_READOUT_DERIVATION_DIFF_v1_v2.txt": {
+      "sha256": "a77766ffe04a068e73a3d093b91cbfb3ef855594073ee6c4f99ddcbccfd230ec",
+      "bytes": 3717
+    },
+    "independent_metric_readout/METRIC_READOUT_REVIEW_v1.md": {
+      "sha256": "b0159c5034e5efc28d3f84d861197ae90d2a0a2ee2ef62a9f40d45e6831b66b3",
+      "bytes": 10666
+    },
+    "independent_metric_readout/METRIC_REDSHIFT_TRANSPORT_DERIVATION_DIFF_v1_v2.txt": {
+      "sha256": "d420683c4fc200e29f71b851cd7c2d80a2ff5639ff6ed55b3b5e3f057cfbafc6",
+      "bytes": 2789
+    },
+    "independent_metric_readout/MODE_INVERSE_DERIVATION_v1.md": {
+      "sha256": "5fa2865362829cfa36edc40b2af5cc7e2dcad682b5122db4c364ab436549599b",
+      "bytes": 10966
+    },
+    "independent_metric_readout/MODE_TRACE_ROOT_DERIVATION_v1.md": {
+      "sha256": "5f428fd394f9111dc7c17da26abc5815285e71ffb81b209a4f0a094517332b86",
+      "bytes": 4305
+    },
+    "independent_metric_readout/NUMERICAL_REPLAY_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/NUMERICAL_REPLAY_STDOUT_v1.json": {
+      "sha256": "c260ce358697434d206acb0dbb6f8b290635c5d4e2739c2e9f06eb391a7c1a1f",
+      "bytes": 24978
+    },
+    "independent_metric_readout/NUMERIC_REPAIR_DIFF_v1_v2.txt": {
+      "sha256": "867399f0125fdd1713bb9a08c29424e13194556cd52503eb211345f5fdb28f24",
+      "bytes": 701
+    },
+    "independent_metric_readout/NUMERIC_REPAIR_DIFF_v2_v3.txt": {
+      "sha256": "e74b54c66575bd81c95a5fb39ef0008c6f8c8eb3060b3f5097ffe87644ddf540",
+      "bytes": 575
+    },
+    "independent_metric_readout/PREEXPOSURE_FREEZE_v1.json": {
+      "sha256": "6da4d630491b78e993a36997019fbfec18cefd12107c993bfe546385d615d218",
+      "bytes": 1843
+    },
+    "independent_metric_readout/PRIMARY_REPLAY_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/PRIMARY_REPLAY_STDOUT_v1.json": {
+      "sha256": "b0a4c8b8b23ef555f6c33da577b93da63805bb705e3c299650332c7b45b13963",
+      "bytes": 6757
+    },
+    "independent_metric_readout/PROOF_FREEZE_v1.json": {
+      "sha256": "3993a1c3425a7335d715bea96b6e3479577ef8a779153136185e13361b1d1556",
+      "bytes": 704
+    },
+    "independent_metric_readout/SOURCE_MANIFEST_v1.json": {
+      "sha256": "01b1e8c805838868d6d5819d00e11de7f971a961cbe1a8d4841e66d9f671fe30",
+      "bytes": 8887
+    },
+    "independent_metric_readout/TRANSPORT_REPLAY_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/TRANSPORT_REPLAY_STDOUT_v1.json": {
+      "sha256": "f96367d7547732eb5c75086b123bdb430861479ffbde78aecf84663da1bdda0e",
+      "bytes": 3167
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_CONTROLS_v1.json": {
+      "sha256": "b0a4c8b8b23ef555f6c33da577b93da63805bb705e3c299650332c7b45b13963",
+      "bytes": 6757
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_DERIVATION_v1.md": {
+      "sha256": "313d0008b97b0ab1b9c9f408e3e835bd9f09c76c940d786fd5d9a45c5e8b514d",
+      "bytes": 12105
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_NUMERICS_FAILED_v1.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_NUMERICS_FAILED_v2.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_NUMERICS_FAILURE_v1.json": {
+      "sha256": "fdbeeaca5e912a2cefea946b91444c8719b9878f8ab47ea1ad09b89f0d2956d5",
+      "bytes": 671
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_NUMERICS_FAILURE_v2.json": {
+      "sha256": "3dc96543eccd096ba318a130d4b9325bdb3b5112b74744a9e2a64a71a1c34ed7",
+      "bytes": 648
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_NUMERICS_v3.json": {
+      "sha256": "c260ce358697434d206acb0dbb6f8b290635c5d4e2739c2e9f06eb391a7c1a1f",
+      "bytes": 24978
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_NUMERICS_v3.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_PRECONTROL_FREEZE_v1.json": {
+      "sha256": "50cd5223ac315043fe21498fbd397db57d56c8d11c1deffd272d52a18c62477b",
+      "bytes": 371
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_READOUT_PROTOCOL_v1.json": {
+      "sha256": "89ffbdab2c7b02c6dcb87e6d9644a3314736a860bc37605250070f3ff84f122e",
+      "bytes": 3126
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_REDSHIFT_TRANSPORT_CONTROLS_v1.json": {
+      "sha256": "f96367d7547732eb5c75086b123bdb430861479ffbde78aecf84663da1bdda0e",
+      "bytes": 3167
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_REDSHIFT_TRANSPORT_DERIVATION_v1.md": {
+      "sha256": "a648d00cf95b46d10d7ac1e27d120540eb0e92db93c4458b55f3a8934302b884",
+      "bytes": 5459
+    },
+    "independent_metric_readout/author_snapshot_v1/METRIC_REDSHIFT_TRANSPORT_FREEZE_v1.json": {
+      "sha256": "68fb8d74ee3de41946c7e2d48415233a81aaf1ae55f27d8b298bf71124e04c7e",
+      "bytes": 363
+    },
+    "independent_metric_readout/author_snapshot_v1/check_metric_readout_numerics_v1.py": {
+      "sha256": "10b0fce2c8b9b1112e9e3176cab2a7b63dc187ebe7d44f52eb80ceb416dd52a4",
+      "bytes": 4604
+    },
+    "independent_metric_readout/author_snapshot_v1/check_metric_readout_numerics_v2.py": {
+      "sha256": "6e1ad1d718967ef5efce79a44cd0d144436bf1235587f3faffe024137a245e00",
+      "bytes": 4622
+    },
+    "independent_metric_readout/author_snapshot_v1/check_metric_readout_numerics_v3.py": {
+      "sha256": "d03d218fa43488a9d0c59424b72a561990c6765c7104af95af14ae14103bb9d2",
+      "bytes": 4678
+    },
+    "independent_metric_readout/author_snapshot_v1/check_metric_readout_v1.py": {
+      "sha256": "512e41145cbaf8c9320b4ee41abffedada9bd02777aee7656e447a9642b20e2a",
+      "bytes": 8883
+    },
+    "independent_metric_readout/author_snapshot_v1/check_metric_redshift_transport_v1.py": {
+      "sha256": "1bac771ed115e8ee87e58e2c30b05c06019ec2478ad70c96ab6bcc413c1463f6",
+      "bytes": 3763
+    },
+    "independent_metric_readout/author_snapshot_v2/METRIC_READOUT_DERIVATION_v2.md": {
+      "sha256": "4255600fc15f352a944b417a0aee87dca1e29f48830950a5211e2ef4441960ea",
+      "bytes": 13964
+    },
+    "independent_metric_readout/author_snapshot_v2/METRIC_READOUT_INTAKE_v2.json": {
+      "sha256": "b4e1fcd319fd6359cbbe54a5c392d1c6d13415070dd55286d347d304afa453a3",
+      "bytes": 2077
+    },
+    "independent_metric_readout/author_snapshot_v2/METRIC_REDSHIFT_TRANSPORT_DERIVATION_v2.md": {
+      "sha256": "dad79a62c7e4e1fae9117c3ea5d397ca38e62ea1becfc6f3f6dbc88e05573d16",
+      "bytes": 6331
+    },
+    "independent_metric_readout/check_extension_v1.py": {
+      "sha256": "a339946d309ccc774c61f84a55f5a53839233e23730cc34e26914eac1c8a4065",
+      "bytes": 4686
+    },
+    "independent_metric_readout/check_independent_v1.py": {
+      "sha256": "af64d0eeeebb1c72dce9eb92afb1993b2a998be6b57f502d20f1ea769f18e9ee",
+      "bytes": 8466
+    }
+  },
+  "loose_originals_replaced_by_readme_after_byte_verification": true,
+  "restore": "From campaign pack: tar -xzf METRIC_FOCUSED_CHECKS_ARCHIVE_v1.tar.gz. This restores the original relative paths and bytes; no remote data access."
+}

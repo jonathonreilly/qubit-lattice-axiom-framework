@@ -1,0 +1,39 @@
+{
+  "time": "2026-10-16T11:26:39.920923+00:00",
+  "previous_intake": "METRIC_READOUT_INTAKE_v1.json",
+  "sources": [
+    {
+      "name": "oestreicher2025-2505.04731v2",
+      "url": "https://arxiv.org/pdf/2505.04731v2",
+      "local_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/oestreicher2025-2505.04731v2.pdf",
+      "sha256": "8599d019cb57256b32e48d84019ef4682da0b032870503048607a139a1b2c535",
+      "bytes": 4300708,
+      "pages": 13,
+      "read_scope": "Full section3.1 and its stated approximations read via primary HTML; potentials omitted in that derivation. No simulation arrays or fitted values used.",
+      "role": "prior-art comparator, not empirical validation"
+    },
+    {
+      "name": "bessa2023-2306.13911v3",
+      "url": "https://arxiv.org/pdf/2306.13911v3",
+      "local_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/bessa2023-2306.13911v3.pdf",
+      "sha256": "54d8f9350e7778b0723fc8daa9c4304b11a4e695f96960a7f3c142258eebbc83",
+      "bytes": 1294981,
+      "pages": 19,
+      "read_scope": "Primary HTML sections2 and3.2 read through equation35; energy ratio, endpoint/observed-redshift conversion comparator only; remainder not reviewed.",
+      "role": "prior-art comparator, not empirical validation"
+    },
+    {
+      "name": "challinor-lewis2011-1105.5292v2",
+      "url": "https://arxiv.org/pdf/1105.5292v2",
+      "local_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/challinor-lewis2011-1105.5292v2.pdf",
+      "sha256": "79093d4d9281fc6a978dbc74c5ab2121795234056ad7bd101ab4861650955901",
+      "bytes": 381864,
+      "pages": 17,
+      "read_scope": "PDF pages3-4 completely read and visually checked; equations8-15 sign and source-time comparator. Other cosmology/number-count sections not adopted.",
+      "role": "prior-art comparator, not empirical validation"
+    }
+  ],
+  "new_observational_arrays_read": false,
+  "empirical_validation": false,
+  "novelty_priority_claim": false
+}

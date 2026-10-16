@@ -1,0 +1,3 @@
+# Synthetic diagnostic figure QA
+
+Root visually inspected the v1 render. Its right-panel caption overlaps the x-axis label and a minor logarithmic tick duplicates the intended three sample-count labels. The numerical values and source remain unchanged. v2 changes the plot margins, caption position and minor-label formatter only. v1 script, image and manifest remain preserved. Root then visually inspected v2: caption and labels are separated, the three radial counts are legible, and no overlap or clipping was observed. The numerical source is unchanged (SHA c260ce358697434d206acb0dbb6f8b290635c5d4e2739c2e9f06eb391a7c1a1f). Approved render SHA b465099f36294a396818754ae4cfc95b84bc5152c5c2314e9ed889fb045b432e.

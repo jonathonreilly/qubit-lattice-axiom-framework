@@ -1,0 +1,17 @@
+{
+  "time": "2026-10-16T12:12:20.628118+00:00",
+  "files_in_checkpoint": 47,
+  "text_files": 44,
+  "vocab_fix_exit": 0,
+  "vocab_report_exit": 0,
+  "vocab_changed": [],
+  "vocab_stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+  "parsed": {
+    "python": 9,
+    "json": 18,
+    "yaml": 1
+  },
+  "scope": "Changed campaign files only; no inference about old history whitespace",
+  "frozen_focused_files": "109 original files preserved byte-identically in the checked archive",
+  "science_validation": "Current sources and final scope bound to publishedPR9639; no revalidation claim for unchanged old material"
+}

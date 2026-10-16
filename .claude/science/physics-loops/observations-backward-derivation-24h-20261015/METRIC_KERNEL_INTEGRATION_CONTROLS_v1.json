@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "expected_zero": true,
+      "name": "traceless Hessian kernel component 00",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "traceless Hessian kernel component 01",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "traceless Hessian kernel component 02",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "traceless Hessian kernel component 11",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "traceless Hessian kernel component 12",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "traceless Hessian kernel component 22",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "Hamiltonian hidden velocity coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "polynomial-source radial particular solution",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "fifth derivative leading exponential coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "fifth derivative removes resonant spectral exception",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "polynomial forcing killed by five radial derivatives",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "forbidden inverse-square radial coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "forbidden inverse-radius coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "surviving velocity potential is spatially constant",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "root reconstruction avoids exceptional D denominator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "planar mode momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "planar mode Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "planar mode Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "planar mode bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "planar mode uneliminated scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "planar mode spatial pressure trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "planar mode corrected planar redshift zero",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": false,
+      "name": "planar mode fails actual spherical radial redshift",
+      "pass": true,
+      "residual": "E*(-3 + sqrt(3) + sqrt(42))*exp(sqrt(14))/(6*tau**(3/2))"
+    }
+  ],
+  "failed": 0,
+  "passed": 23,
+  "scope": "Attributed root rederivation; fixed compatible background, local spherical geometry; no observations or new empirical validation",
+  "source_sha256": {
+    "METRIC_FIXED_BACKGROUND_ROOT_INTEGRATION_v1.md": "3a4024db3e426bba8ad7487c67ac0128823c2a51754de7655434ad3972fae803",
+    "check_metric_kernel_integration_v1.py": "cbd2ae623bdf2960c191d8cf2467c30e47507ca793527906158b67f67066fd7c"
+  }
+}

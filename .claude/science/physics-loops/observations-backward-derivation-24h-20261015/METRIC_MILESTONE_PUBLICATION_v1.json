@@ -1,0 +1,150 @@
+{
+  "time": "2026-10-16T12:11:55.390870+00:00",
+  "pr": {
+    "baseRefName": "main",
+    "baseRefOid": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
+    "changedFiles": 99,
+    "headRefName": "codex/scalar-metric-inverse-20261016",
+    "headRefOid": "902f26a03d9fad68f1afec1417a2dad3090b64d7",
+    "isDraft": false,
+    "mergeStateStatus": "BLOCKED",
+    "mergeable": "MERGEABLE",
+    "number": 9639,
+    "state": "OPEN",
+    "title": "[physics-loop] scalar metric reconstruction bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9639",
+    "verified_at": "2026-10-16T12:11:55.390870+00:00",
+    "attached_to_current_chat": true,
+    "shared_landing_validation": "pending",
+    "scientific_status": "bounded_theorem / conditional-support; no empirical validation"
+  },
+  "primary_counts": {
+    "coefficients": {
+      "passed": 40,
+      "failed": 0
+    },
+    "conditioning": {
+      "passed": 19,
+      "failed": 0
+    },
+    "constraints": {
+      "passed": 10,
+      "failed": 0
+    },
+    "fixed_background": {
+      "passed": 24,
+      "failed": 0
+    },
+    "geometry": {
+      "passed": 42,
+      "failed": 0
+    },
+    "joint_gain": {
+      "passed": 22,
+      "failed": 0
+    },
+    "local_kernels": {
+      "passed": 23,
+      "failed": 0
+    },
+    "photon_map": {
+      "passed": 53,
+      "failed": 0
+    },
+    "transport": {
+      "passed": 20,
+      "failed": 0
+    },
+    "varying_coupling": {
+      "passed": 13,
+      "failed": 0
+    }
+  },
+  "counting_scope": "Unit counts overlap and are not independent experiments; 27 noise cases are diagnostics, not additional pass/fail tests.",
+  "source_sha256": {
+    "docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+    "scripts/scalar_metric_coefficients.py": "7e288d6a23a1e2564dc83bc9e576a5eedac0257848434a17c468558e82a28f78",
+    "scripts/scalar_metric_conditioning.py": "03e57704174cae749f074610e6ac65b7007e4519bc8730a0248c9538b0a9eef3",
+    "scripts/scalar_metric_constraints.py": "5ddb8ac0c8b94a0e415f38147085135e5517baaa4d3f797f385332873732f75e",
+    "scripts/scalar_metric_fixed_background.py": "8ef4428787d56af5edc8abd031453b1a95505d92ee9acb818caa1abd49743c69",
+    "scripts/scalar_metric_geometry.py": "475453cfb3fdf08db126f55c7059eeaf59627b24f79d0c81974b0b9b8b7a2b30",
+    "scripts/scalar_metric_inverse.py": "274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708",
+    "scripts/scalar_metric_joint_gain.py": "9e941efc4908d1c1820f966071a3f354df1aeb37f55b7b07750fcc440efbd3d3",
+    "scripts/scalar_metric_local_kernels.py": "12bd022f297d965c1c58ef87d118e14a02e64fb2fd473af5a67609db1c37d021",
+    "scripts/scalar_metric_photon_map.py": "76a7e72f4d8e8d5f5b2f3341e24d342903c41d600b4d53cd7d330c7392260877",
+    "scripts/scalar_metric_transport.py": "5008f60177ec127a139e00aea10c1b7999c48c0957356a20868f834891364348",
+    "scripts/scalar_metric_varying_coupling.py": "1449d4b17fefc3e85776458146bb10072dff3d0232a92e6d041a6a5c591f1c01"
+  },
+  "artifact_sha256": {
+    "docs/SCALAR_METRIC_RECONSTRUCTION_NOTE_2026-10-16.md": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+    "scripts/scalar_metric_inverse.py": "274d58530735d73f3529abb8728eed9518362cdeb43399218928db0fd9704708",
+    "outputs/scalar_metric_inverse/result.json": "ca2bddfe6cf3528a78875930b8c9baf02d346e3c227630bc3c7897cdcbcd23dd",
+    "logs/runner-cache/scalar_metric_inverse.txt": "bbb656c3e7e3b5a063d890e85992b77a47372349def105333786483e273dcb42",
+    "outputs/scalar_metric_inverse/mutations/RESULT.json": "65042bca919a7c99139136765edacc073f6462b527a60c4e8f5aa2649b9f1e7b",
+    "outputs/scalar_metric_inverse/portable_replay_v1.json": "29ef01aebd54b5c6ade0f3a309dad9c22bbd73ecb45012394d51fa9a1e03ce47",
+    "outputs/scalar_metric_inverse/independent_integration/CANONICAL_INTEGRATION_REVIEW_v2.md": "d8a59044f0522e4a52a7572ee9120912679286ede470212fb43dc9d90fd9fdb2",
+    "outputs/scalar_metric_inverse/historical/source_evidence.tar.gz": "d7ee9c4c59cbedb53bd0bdf52325cc1ef4d426d159f2e2613be1b5e7a54bc541",
+    "outputs/scalar_metric_inverse/historical/integration_evidence.tar.gz": "0c84e736ce35f416cf34fe8eb0f0bb125c990ff6e4dcc375996c56ffb7ebe120"
+  },
+  "focused_checks": {
+    "fixed_background_pre_author": {
+      "passed": 55,
+      "failed": 0,
+      "preserved_first_attempt": "54/1; coordinate-representation comparison repaired"
+    },
+    "fixed_background_post_exposure": {
+      "passed": 27,
+      "failed": 0
+    },
+    "fixed_background_author_replays": [
+      24,
+      23
+    ],
+    "readout_pre_author": 41,
+    "readout_post_exposure": 25,
+    "canonical_independent_replay": "243 unchanged controls plus separate23 new-helper controls; not a pooled independent266 run",
+    "all_source_bound_reports_personally_read": true,
+    "manifest_counts_verified": {
+      "scalar_response": 32,
+      "mode_inverse": 85,
+      "metric_readout": 50,
+      "fixed_background": 57,
+      "canonical_integration": 128
+    }
+  },
+  "actual_source_mutations": {
+    "detected": 12,
+    "total": 12,
+    "exceptions": 0
+  },
+  "portable_replays": {
+    "runs": 2,
+    "byte_identical": true,
+    "different_cas": false
+  },
+  "archived_campaign_focused_checks": {
+    "path": "METRIC_FOCUSED_CHECKS_ARCHIVE_v1.tar.gz",
+    "sha256": "579e3f3b2349fc3f26ac4cf74b9ab653a87fc9ce8e6182a8cbcea54731a59f1d",
+    "members": 109,
+    "raw_evidence_unchanged": true
+  },
+  "validation": {
+    "vocabulary_findings": 0,
+    "staged_diff_check_exit": 0,
+    "committed_diff_check_exit": 0,
+    "local_markdown_link_failures": 0,
+    "milestone_tree_clean": true,
+    "shared_landing": "pending",
+    "formal_audit_applied": false
+  },
+  "empirical_data_access": "None in this block; seven Fuchs arrays remain unopened",
+  "campaign_deadline": "2026-10-16T22:36:59Z",
+  "packaging_at": "2026-10-16T22:21:59Z",
+  "prior_prs_unchanged": [
+    9628,
+    9632,
+    9634,
+    9637,
+    9638
+  ]
+}

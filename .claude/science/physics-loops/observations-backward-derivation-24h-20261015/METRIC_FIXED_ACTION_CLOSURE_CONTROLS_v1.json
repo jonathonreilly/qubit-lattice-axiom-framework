@@ -1,0 +1,168 @@
+{
+  "checks": [
+    {
+      "expected_zero": true,
+      "name": "general_spherical_commutator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "general_local_reconstruction_identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "exceptional_denominator_simple_radial_zero",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "general_compatibility_residual_identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": false,
+      "name": "dropping_spherical_curvature_changes_inverse",
+      "pass": true,
+      "residual": "C*W(r, mu)/r"
+    },
+    {
+      "expected_zero": false,
+      "name": "wrong_commutator_sign_changes_inverse",
+      "pass": true,
+      "residual": "2*(-mu**2*Derivative(W(r, mu), (mu, 2)) - 2*mu*Derivative(W(r, mu), mu) + r*Derivative(W(r, mu), r) + Derivative(W(r, mu), (mu, 2)))/r**2"
+    },
+    {
+      "expected_zero": true,
+      "name": "scalar_hamiltonian_source_elimination",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "trace_to_hidden_scalar_source",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "trace_scalar_to_elliptic_identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "momentum_redshift_to_radial_identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "witness_C",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "witness_Lambda",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "witness_trace_source",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "witness_elliptic_source",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "witness_radial_source",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "witness_full_matter_euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "witness_reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "compatible_exceptional_radius_numerator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "compatible_exceptional_radius_derivative",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "regular_radial_helmholtz_completion",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "origin_regular_radial_limit",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "annular_null_candidate_trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "annular_null_candidate_radial",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": false,
+      "name": "annular_null_candidate_rejected_by_field",
+      "pass": true,
+      "residual": "-2*(7*r**2 - r + 3)*exp(r)/(r**2*tau**(3/2))"
+    }
+  ],
+  "details": {
+    "C": "1",
+    "Lambda": "15",
+    "Y": "143/85",
+    "annular_candidate_failure_ratio": "-2*(7*r**2 - r + 3)/r**2",
+    "k2": "728/75",
+    "m": "1/5",
+    "nu": "-3/(2*tau)"
+  },
+  "failed": 0,
+  "new_observational_arrays_read": false,
+  "passed": 24,
+  "scope": "fixed compatible background; ideal registered P and corrected Rz; no action-selection or observational validation",
+  "source_sha256": {
+    "METRIC_FIXED_ACTION_CLOSURE_DERIVATION_v1.md": "419b98cad87d7c99ff3859326796e0e48fc5101a53d5ae1875e55c80556778f7",
+    "METRIC_READOUT_CONTROLS_v1.json": "b0a4c8b8b23ef555f6c33da577b93da63805bb705e3c299650332c7b45b13963",
+    "check_metric_fixed_action_closure_v1.py": "157d34a955fb2367cd523ddf760da6d27c803f6532d8160a23500949d9ee9b00",
+    "check_metric_readout_v1.py": "512e41145cbaf8c9320b4ee41abffedada9bd02777aee7656e447a9642b20e2a"
+  },
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,34 @@
+{
+  "time": "2026-10-16T11:23:07.661973+00:00",
+  "status": "root observation map controls complete; focused comparison active; full-field boundary-elimination extension proposed",
+  "root_sets": {
+    "exact_readout": 53,
+    "growing_rank_and_noise_controls": 19,
+    "kinematic_transport": 20
+  },
+  "failed_completed_scientific_controls": 0,
+  "operational_failures": [
+    "v1 mpmath negative index",
+    "v2 NumPy bool JSON export; both preserved and repaired without changing frozen protocol"
+  ],
+  "files": {
+    "METRIC_READOUT_DERIVATION_v1.md": "313d0008b97b0ab1b9c9f408e3e835bd9f09c76c940d786fd5d9a45c5e8b514d",
+    "METRIC_READOUT_PROTOCOL_v1.json": "89ffbdab2c7b02c6dcb87e6d9644a3314736a860bc37605250070f3ff84f122e",
+    "check_metric_readout_v1.py": "512e41145cbaf8c9320b4ee41abffedada9bd02777aee7656e447a9642b20e2a",
+    "METRIC_READOUT_CONTROLS_v1.json": "b0a4c8b8b23ef555f6c33da577b93da63805bb705e3c299650332c7b45b13963",
+    "check_metric_readout_numerics_v3.py": "d03d218fa43488a9d0c59424b72a561990c6765c7104af95af14ae14103bb9d2",
+    "METRIC_READOUT_NUMERICS_v3.json": "c260ce358697434d206acb0dbb6f8b290635c5d4e2739c2e9f06eb391a7c1a1f",
+    "METRIC_REDSHIFT_TRANSPORT_DERIVATION_v1.md": "a648d00cf95b46d10d7ac1e27d120540eb0e92db93c4458b55f3a8934302b884",
+    "check_metric_redshift_transport_v1.py": "1bac771ed115e8ee87e58e2c30b05c06019ec2478ad70c96ab6bcc413c1463f6",
+    "METRIC_REDSHIFT_TRANSPORT_CONTROLS_v1.json": "f96367d7547732eb5c75086b123bdb430861479ffbde78aecf84663da1bdda0e"
+  },
+  "independent_preexposure_controls": 41,
+  "independent_complete_root_review": false,
+  "physical_scope": "Local shell inverse avoids a global coeval volume premise, but calibrated P and separate J, derivative errors, rank and action assumptions remain. Redshift/Euler transport has an explicit kinematic boundary function; arbitrary-angle null family is annular, not globally regular through observer.",
+  "new_observational_arrays_read": false,
+  "unopened_fuchs_arrays": 7,
+  "empirical_validation": false,
+  "formal_audit": false,
+  "next_action": "Finish independent input-map comparison, qualify the transport ambiguity on an annulus, and personally test whether full fixed-action scalar/dust constraints determine the transport boundary instead of supplying it. Root has proposed a local Laplacian/radial compatibility inverse; it is not yet tested or load-bearing. Then package one coherent matter-clock/response/metric-observation milestone after final focused check and conformance. Keep earlier PRs frozen and seven Fuchs arrays unopened.",
+  "deadline_unchanged": "2026-10-16T22:36:59Z"
+}

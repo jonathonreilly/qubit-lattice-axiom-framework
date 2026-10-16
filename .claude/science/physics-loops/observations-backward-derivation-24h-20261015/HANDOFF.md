@@ -506,3 +506,36 @@ Root40/13/15/8/12/22control sets and independent111/38/62sets pass, separately c
 Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.
 
 Five previous PRs remain open and unchanged. Current checkpoint is commits-only; canonical milestone conformance remains to be completed. Main now5eeadf3f differs only in automated audit dispatch state; all68openPRheads unchanged. No active focused agent, detached author or owned job. Four older campaigns remain stopped. Matching lock refreshed10:57:05UTC; deadline22:36:59Z and packaging22:21:59Z unchanged.
+
+
+## Observation map checkpoint 2026-10-16T11:23:07.661973+00:00
+
+Root personally derived repeated-cone/local-shell identities and a corrected redshift/Euler transport. Exact53, numerical19, transport20 controls pass; two code/export failures are preserved. Independent41-control pre-exposure derivation is frozen and source comparison is active. The transport family is only kinematic on an annulus; no same-action ambiguity is established. Known growing full-field modes show severe rank conditioning, not measured survey performance.
+
+Finish independent input-map comparison, qualify the transport ambiguity on an annulus, and personally test whether full fixed-action scalar/dust constraints determine the transport boundary instead of supplying it. Root has proposed a local Laplacian/radial compatibility inverse; it is not yet tested or load-bearing. Then package one coherent matter-clock/response/metric-observation milestone after final focused check and conformance. Keep earlier PRs frozen and seven Fuchs arrays unopened.
+
+No new observations, no formal audit, no detached author, older campaigns remain stopped. Deadline and packaging cutoff unchanged. Trace remains upstream_support with conditional reachability.
+
+
+## Kernel-qualified metric closure checkpoint 2026-10-16T11:49:51.330008+00:00
+
+Root personally derived a fixed-background spherical readout inverse and nonsingular differentiated reconstruction. The independent proof identified the local traceless-Hessian metric kernel: the equal-potential reconstruction needs its stated sector, while J uniqueness survives that kernel. Root has rederived the stronger uniqueness and checked23post-exposure integration identities, including a full-action planar null counterexample. The independent55-control fixed-action proof is frozen; complete source review is pending. Readout independent41/25 controls and byte-identical root53/19/20 replays have been completely inspected. Counts overlap and are not empirical validation.
+
+Integrate the independently identified local traceless-Hessian kernel qualification and root nonsingular inverse, complete frozen-source focused review and source mutations, then publish one coherent metric-history/readout milestone. Do not identify conditional fixed-background observability with joint unknown-background uniqueness. Keep five earlier PRs frozen and seven Fuchs arrays unopened.
+
+New main-based branch codex/scalar-metric-inverse-20261016 is uncommitted and under focused integration review; initial243 canonical controls pass and replay byte-identically. One AST slicing error and a bytecode-caused cache identity failure are preserved and repaired. No PR yet, no main change, no other author, older campaigns stopped; deadline and packaging cutoff unchanged.
+
+
+## Metric/readout milestone — 2026-10-16T12:11:55.390870+00:00
+
+Root personally derived and integrated the matter-clock, full scalar/dust response, metric-history coefficient inverse, photon map and fixed-background closure. PR9639 at902f26a03d9fad68f1afec1417a2dad3090b64d7 is OPEN, attached and MERGEABLE; shared landing remains BLOCKED/pending. The main-based milestone tree is clean. Five previous PR heads remain unchanged, no science merged or formal audit performed.
+
+The metric inverse reconstructs coupling and fixed-density curvature within a supplied class. The separate fixed-background spherical result determines actual J without a chosen transport boundary, even with local metric integration kernels; explicit w reconstruction has a narrower sector. An exact planar full-action null demonstrates the geometry restriction. Neither theorem jointly identifies unknown backgrounds from measured records. Action, calibration, scale and controlled derivative errors remain open; no empirical validation.
+
+Primary266 controls pass, with separate unit counts; focused independent55/27 fixed-background and41/25 readout controls are separately recorded. Canonical integration replays243 unchanged plus23 new-helper controls, not an independent pooled266. Twelve actual source mutations reject scientific changes without exceptions; two portable closures reproduce current output byte-for-byte. Root read complete final proofs/code/reports and verified all recorded bindings. Early symbolic, numeric, export and cache failures remain preserved.
+
+The109 frozen files from the two completed focused checks are byte-verified in METRIC_FOCUSED_CHECKS_ARCHIVE_v1.tar.gz; extract from this directory to restore original paths. This preserves exact source/diff/newline bytes without changing frozen evidence for Git formatting. Canonical PR evidence also includes the originals in its source archive. Publication bindings are in METRIC_MILESTONE_PUBLICATION_v1.json.
+
+Personally execute NEXT_JOINT_PHOTON_BACKGROUND_PLAN_v1.md: derive the joint compatibility problem for registered h, spherical Weyl P and corrected radial redshift Rz without supplying J, b, kappa or a preferred background. Freeze exact synthetic inputs and conventions before controls; retain all source equations, local metric kernels, clock/distance calibration and rank/error conditions. Seek a conditional identification theorem or an exact distinct-background same-record witness, preserving failed routes. Keep six earlier PRs frozen and seven Fuchs arrays unopened.
+
+No active focused agent, detached author or owned research job. All older campaigns remain stopped; network exploration remains frozen. Deadline22:36:59Z and packaging22:21:59Z unchanged.

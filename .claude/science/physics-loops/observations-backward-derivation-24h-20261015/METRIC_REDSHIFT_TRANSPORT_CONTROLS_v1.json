@@ -1,0 +1,132 @@
+{
+  "checks": [
+    {
+      "expected_zero": true,
+      "name": "velocity_potential_residual_transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "radial_euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "force_transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": false,
+      "name": "omitting_radial_transport_detected",
+      "pass": true,
+      "residual": "(3*mu**2 - 1)*(2*r + 6*u**2 + 1)*exp(2*r)*exp(-2*u)/2"
+    },
+    {
+      "expected_zero": true,
+      "name": "integrating_factor_characteristic",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "commutator_zero_for_homogeneous_background",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "homogeneous_transport_family",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "same_corrected_redshift",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": false,
+      "name": "nonzero_lapse_change",
+      "pass": true,
+      "residual": "-3*(3*mu**2 - 1)*(2*r - u)**2*exp(2*r)*exp(-2*u)/2"
+    },
+    {
+      "expected_zero": true,
+      "name": "homogeneous_force_transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "homogeneous_expected_lapse",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "homogeneous_full_radial_euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "homogeneous_full_angular_euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "homogeneous_same_lensing_sum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "forced_transport_solution",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "forced_boundary_supplied",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "radial_null_time_sign",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "background_redshift_registration",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "expected_zero": true,
+      "name": "corrected_residual_shapiro_term",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "boundary_u": "-21/4",
+      "name": "remote_characteristic_boundary_outside_observing_strip",
+      "pass": true
+    }
+  ],
+  "failed": 0,
+  "new_observational_arrays_read": false,
+  "passed": 20,
+  "scope": "constructed metric and tracer Euler equations only; no Einstein/scalar compatibility claim",
+  "source_sha256": {
+    "METRIC_REDSHIFT_TRANSPORT_DERIVATION_v1.md": "a648d00cf95b46d10d7ac1e27d120540eb0e92db93c4458b55f3a8934302b884",
+    "check_metric_redshift_transport_v1.py": "1bac771ed115e8ee87e58e2c30b05c06019ec2478ad70c96ab6bcc413c1463f6"
+  },
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,6 @@
+{
+  "checks": 52,
+  "failures": [],
+  "passed": true,
+  "receipt": "outputs/scalar_observation_inverse.json"
+}

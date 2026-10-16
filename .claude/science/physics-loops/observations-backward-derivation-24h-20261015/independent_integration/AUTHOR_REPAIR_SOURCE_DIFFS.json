@@ -1,0 +1,20 @@
+[
+  {
+    "path": "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md",
+    "old_sha256": "13e269dc161a9430141264891d261637aa3666f06056834568a57a6dbf5a3224",
+    "new_sha256": "ace17dec892f72714664d10e23c348b49087376247e4e17539babbfd20fe27cd",
+    "diff_utf8": "--- reproduced-original\n+++ repaired-current\n@@ -1,4 +1,6 @@\n # Conditional scalar reconstruction from identified observation channels\n+\n+Claim type: bounded_theorem\n \n The result is a local inverse formula, a deterministic error bound, and explicit\n families illustrating which action and boundary data remain free. It supplies\n"
+  },
+  {
+    "path": "scripts/scalar_observation_inverse.py",
+    "old_sha256": "2990d2df8fc07492cc5a20bed2860cedb6590d7342c610237645e5d02cc99df2",
+    "new_sha256": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
+    "diff_utf8": "--- reproduced-original\n+++ repaired-current\n@@ -158,6 +158,15 @@\n aa, width, amplitude = s.symbols(\"aa width amplitude\", positive=True)\n iw = width * (2 * aa + width) / 2  # b=a+width, so the bin is ordered.\n zero(\"bin equality profile S=amplitude*r\", amplitude**2 * iw - bin_lower_bound([amplitude * iw], [iw]), \"radar_bins\")\n+unfactored_integral = ((aa + width)**2 - aa**2) / 2\n+zero(\"unfactored positive bin integral\", bin_lower_bound([x], [unfactored_integral]) - x**2 / iw, \"radar_bins\")\n+for invalid_integral in (0, -1, s.symbols(\"unknown_sign\", real=True)):\n+    try:\n+        bin_lower_bound([1], [invalid_integral])\n+        rejected_bin = False\n+    except ValueError:\n+        rejected_bin = True\n+    truth(\"invalid or uncertified bin sign rejected: \" + str(invalid_integral), rejected_bin, \"radar_bins\")\n \n # High-precision functional comparisons use analytic, never grid-max, envelopes.\n mp.mp.dps = 45\n"
+  },
+  {
+    "path": "scripts/scalar_observation_inverse_math.py",
+    "old_sha256": "86fe98439979cd7bbd01c220b2a738c7b8d006fa0b78bc1fd7731b971b466b2f",
+    "new_sha256": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44",
+    "diff_utf8": "--- reproduced-original\n+++ repaired-current\n@@ -61,8 +61,10 @@\n def bin_lower_bound(increments, inverse_weight_integrals):\n     if len(increments) != len(inverse_weight_integrals) or not increments:\n         raise ValueError(\"matching nonempty bins required\")\n-    if any(h <= 0 for h in inverse_weight_integrals):\n-        raise ValueError(\"positive inverse-weight integrals required\")\n+    for h in inverse_weight_integrals:\n+        positive = s.factor(h).is_positive if isinstance(h, s.Basic) else h > 0\n+        if not positive:\n+            raise ValueError(\"inverse-weight integral must have a certifiably positive sign\")\n     return sum(x**2 / h for x, h in zip(increments, inverse_weight_integrals))\n \n \n"
+  }
+]

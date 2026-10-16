@@ -1,0 +1,59 @@
+{
+  "scope": "isolated byte-identical author reproduction, not an audit",
+  "repository_open_events": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/scalar_observation_inverse.py",
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/scalar_observation_inverse.py",
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/scalar_observation_inverse.py",
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/__pycache__/scalar_observation_inverse_math.cpython-312.pyc",
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/scalar_observation_inverse_math.py",
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/scripts/scalar_observation_inverse_math.py",
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md",
+      "mode": "r",
+      "flags": 16777216
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/reproduction_repaired/outputs/scalar_observation_inverse.json",
+      "mode": "w",
+      "flags": 16778753
+    }
+  ],
+  "runtime_open_events_outside_repository": 543,
+  "helper_function_call_counts": {
+    "<module>": 1,
+    "vacuum_inverse": 3,
+    "spherical_geometry": 4,
+    "observation_parts": 4,
+    "dust_family": 1,
+    "sphere_transport_profile": 1,
+    "bin_lower_bound": 7,
+    "<genexpr>": 128,
+    "primitive_bound": 8
+  },
+  "exit_code": 0,
+  "caveat": "Open audit events include attempted opens; non-repository Python/runtime reads are counted, not scientific inputs."
+}

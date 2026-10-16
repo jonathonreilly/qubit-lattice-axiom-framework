@@ -1,7 +1,7 @@
 ---
 claim_id: cubic_cell_shape_sets_the_taste_content_axis_permutation_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Cells formed by an orbit of the proper cubic group around a centre (6 face centres, 8 corners, 12 edge midpoints), one amplitude per point, with the binary octahedral group acting by monomial matrices (signs or phases). Exact (characters): every spinorial such representation contains only E1/2, E5/2 and H = E (x) E1/2, so it equals E1/2 (x) F with F a representation of S3, the permutation group of the three axes. The copy ('taste') content is F = A1 + E or A2 + E for face centres (the axis triplet, no repeated summand), 2E for signed corners, A1 + A2 + E for phased corners, and A1 + A2 + 2E for edges (phased only). Under the threefold axis cycle C3, A1 and A2 carry 1 and E carries omega + omega-bar. Exact: wherever F contains F' + F', the two-qubit Dirac walk tensored with 1_F' is a moving covariant tick with dim F' Dirac copies. Numerical: the pair E1/2 + E5/2 admits moving unitary walks, but those found are massive, and with U(0) = 1 imposed the solution found is degenerate (zero quasienergy along axis lines); no clean massless singlet copy was found. This is not a derivation of three generations."
+claim_scope: "Cells formed by an orbit of the proper cubic group around a centre (6 face centres, 8 corners, 12 edge midpoints), one amplitude per point, with the binary octahedral group acting by monomial matrices (signs or phases). Exact (characters): every spinorial such representation contains only E1/2, E5/2 and H = E (x) E1/2, so it equals E1/2 (x) F with F a representation of S3, the permutation group of the three axes. The copy ('taste') content is F = A1 + E or A2 + E for face centres (the axis triplet, no repeated summand), 2E for signed corners, A1 + A2 + E for phased corners, and A1 + A2 + 2E for edges (phased only). Under the threefold axis cycle C3, A1 and A2 carry 1 and E carries omega + omega-bar. Exact: wherever F contains F' + F', the two-qubit Dirac walk tensored with 1_F' is a moving covariant tick with dim F' Dirac copies. Numerical: the pair E1/2 + E5/2 admits moving unitary walks, but those found are massive, and with U(0) = 1 imposed the solution found is degenerate (zero quasienergy along axis lines); no clean massless singlet copy was found. The six-neighbour coin E1/2 + H showed no moving walk (residuals rise steeply with the motion bound, a high-order valley). This is not a derivation of three generations."
 upstream_dependencies:
   - staggered_one_qubit_blocks_carry_a_cubic_covariant_dirac_tick_bounded_theorem_note_2026-10-16
   - two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
@@ -77,8 +77,17 @@ hypothesis is that three generations might be the three spatial axes.
   - No cell gives exactly three clean, light, doubler-free Dirac copies with
     the triplet labels.
   - The six-neighbour cell has the triplet but no repeated summand, so the
-    U_2q mechanism does not apply. Whether another mechanism moves it is
-    being searched numerically; nothing has been found yet.
+    U_2q mechanism does not apply. Searches with the coin E1/2 + H found no
+    moving walk (numerical). The best residuals rise steeply with the lower
+    bound on motion:
+
+    | motion bound | 0.02 | 0.05 | 0.2 | 0.4 |
+    |---|---|---|---|---|
+    | best residual | 2e-10 | 4e-10 | 7.9e-5 | 1.3e-3 |
+
+    This is a flat, high-order valley at the constant walk. A family of
+    moving walks would reach machine zero, as the two-qubit family does.
+    So the triplet cell most likely does not move by itself (not proved).
   - The twelve-link cell has the right C3 labels, but its singlet looks
     massive or degenerate. This could be read as "one heavy plus two light",
     but nothing here fixes masses or rules out other cells.

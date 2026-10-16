@@ -1,7 +1,7 @@
 ---
 claim_id: cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Discrete-time unitary walks on l2(Z^3) (x) C^2 with hops inside the 27-point cell {-1,0,1}^3, translation covariant and covariant under a subgroup H of the proper cubic group with the full-soldered spin-1/2 coin action A_{Rn} = D(R) A_n D(R)^dagger. Exact (Groebner over Q, valid over C): for H = O and H = T every such walk is a constant phase times +-1; for H = D4 the only moving walks are axial shifts exp(+-i sigma_z k_z) up to phase. Exhibit: the D2-covariant product walk moves in all three directions with an isotropic unit-speed Weyl cone at k = 0. Numerical (not proof): D3 admits no moving walk in the searched family; C3, C4 and D2 admit three-dimensional moving walks; every moving walk found has three-winding zero. Larger stencils, other coin actions and larger coins are stated separately with their evidence level."
+claim_scope: "Discrete-time unitary walks on l2(Z^3) (x) C^2 with hops inside the 27-point cell {-1,0,1}^3, translation covariant and covariant under a subgroup H of the proper cubic group with the full-soldered spin-1/2 coin action A_{Rn} = D(R) A_n D(R)^dagger. Exact (Groebner over Q, valid over C): for H = O and H = T every such walk is a constant phase times +-1; for H = D4 the only moving walks are axial shifts exp(+-i sigma_z k_z) up to phase; under the other three soldering-menu coin actions (trivial, sign twist, axis) an O-covariant cell walk is a constant on-site coin. Exhibit: the D2-covariant product walk moves in all three directions with an isotropic unit-speed Weyl cone at k = 0. Numerical (not proof): D3 admits no moving walk in the searched family; C3, C4 and D2 admit three-dimensional moving walks; every moving walk found has three-winding zero. Larger stencils, other coin actions and larger coins are stated separately with their evidence level."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py
@@ -23,7 +23,10 @@ primitive or dynamics clause.
    each axis (the 26 surrounding sites and the site itself), and which is
    covariant under lattice translations and the proper cubic rotations with
    the coin rotated by the spin-1/2 lift, is a constant: U = e^{i theta} (+-1).
-   The same holds with only the tetrahedral subgroup T (order 12).
+   The same holds with only the tetrahedral subgroup T (order 12). Under the
+   other three coin actions of the soldering menu (trivial, sign twist, axis)
+   the walk is a constant on-site coin: nothing moves under any of the four
+   actions.
 2. **Keeping a fourfold axis and a perpendicular half-turn (D4, order 8)
    permits motion along that axis only:** U = e^{i theta} exp(+-i sigma_z k_z).
 3. **Three-dimensional motion survives only below order 6 on this cell.**
@@ -98,6 +101,29 @@ basis places every coefficient except a_0, a_1 (of c_3) and b_0 (of
 a_0^2 + b_0^2 = 1. Moving solutions are a_0 = 0, a_1 = +-1, b_0 = +-1, that
 is V = +-exp(+-i sigma_z k_z): a conditional shift along the axis.
 
+## Theorem 3 — the rest of the soldering menu
+
+Let the coin transform by one of the other three homomorphisms O -> SO(3) of
+the soldering menu, Q(R) = 1 (trivial), diag(1, s, s) (sign twist, s the sign
+of the axis permutation of R) or s|R| (axis), so that f(Rk) = f(k) and
+g(Rk) = Q(R) g(k). Momentum still rotates by R, so Theorem 0 applies.
+
+- *Trivial.* f and each g_j are O-invariant; on the cell these are
+  polynomials in c_1, c_2, c_3 of degree at most three. The identity
+  f^2 + sum_j g_j^2 = 1 then holds on [-1, 1]^3 and so in R[c]; the top-degree
+  homogeneous parts form a vanishing sum of real squares, so every function is
+  constant.
+- *Axis.* The Groebner basis places every k-dependent coefficient in the
+  radical; U is a constant coin.
+- *Sign twist.* Every k-dependent coefficient of f, and all but two of g,
+  lie in the radical. The two survivors multiply (0, s_1 s_2 s_3, 0) and
+  (0, 0, s_1 s_2 s_3); the residual identity contains b_4^2 + b_5^2 = 0, which
+  for a real walk forces both to vanish (the complex branch b_4 = +-i b_5 is
+  not a real walk). U is the constant coin cos theta + i sin theta sigma_x.
+
+So under every coin action of the menu an O-covariant one-qubit walk on the
+cell does not move.
+
 ## Exhibit — a D2-covariant walk that moves in three directions
 
 With q_a = cos k_a + i sigma_a sin k_a (the conditional shift along axis a),
@@ -153,8 +179,9 @@ general theorem for every finite range remains open.
 - It does not classify walks with hops beyond the 27-point cell. A
   range-two-per-axis search under O is reported separately below with its
   evidence level.
-- It does not exclude O-covariant motion with a different coin action or a
-  larger site; those are separate questions reported below.
+- It does not exclude O-covariant motion with a larger site (two qubits or a
+  spin-3/2 coin); that is outside the Qubit axiom's one-site algebra and is a
+  separate question.
 - It does not derive a dynamics clause, a tick, a clock or a light cone, and
   it does not select a subgroup, an axis or a handedness.
 - It does not claim that continuous-time covariant dynamics is excluded.
@@ -182,7 +209,8 @@ ceiling for motion.
 3. *Nonconstant determinant*: ATTEMPTED; Theorem 0 excludes it for every
    group without fixed vectors, which includes all groups for which a
    negative claim is made.
-4. *Other coin actions of the soldering menu*: ATTEMPTED; reported below.
+4. *Other coin actions of the soldering menu*: ATTEMPTED; Theorem 3 closes
+   all four actions on the cell.
 5. *Larger coin (two qubits, spin 3/2)*: ATTEMPTED; reported below as a
    separate question outside the Qubit axiom's one-site algebra.
 6. *Continuous time*: RULED OUT AS A COUNTERROUTE by scope: the
@@ -223,4 +251,4 @@ No earlier repository claim is narrowed or contradicted.
 python3 scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=22 FAIL=0` (about 20 s).
+Expected: `TOTAL: PASS=30 FAIL=0` (under a minute).

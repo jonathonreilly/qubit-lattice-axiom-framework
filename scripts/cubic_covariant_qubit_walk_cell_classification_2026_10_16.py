@@ -135,7 +135,14 @@ def scalar_basis(group, funcs):
     return [avgs[i] for i in independent_rows(coeff)]
 
 
-def vector_basis(group, funcs):
+def coin_action(R, kind='full'):
+    """Soldering-menu actions O -> SO(3): trivial, sign twist, axis, full."""
+    P = R.applyfunc(abs)
+    sg = int(P.det())
+    return {'trivial': sp.eye(3), 'sign': sp.diag(1, sg, sg), 'axis': sg * P, 'full': R}[kind]
+
+
+def vector_basis(group, funcs, kind='full'):
     vecs = []
     for m in funcs:
         for a in range(3):
@@ -143,7 +150,7 @@ def vector_basis(group, funcs):
             h[a] = m
             tot = sp.zeros(3, 1)
             for M in group:
-                tot += M.T * sp.Matrix([act(x, M) for x in h])
+                tot += coin_action(M, kind).T * sp.Matrix([act(x, M) for x in h])
             tot = sp.expand(tot / len(group))
             if any(t != 0 for t in tot):
                 vecs.append(tot)
@@ -157,10 +164,10 @@ def vector_basis(group, funcs):
     return [vecs[i] for i in independent_rows(coeff)]
 
 
-def unitarity_ideal(group):
+def unitarity_ideal(group, kind='full'):
     funcs = cell_functions()
     fb = scalar_basis(group, funcs)
-    gb = vector_basis(group, funcs)
+    gb = vector_basis(group, funcs, kind)
     a = sp.symbols(f'a0:{len(fb)}')
     b = sp.symbols(f'b0:{len(gb)}')
     f = sum(x * e for x, e in zip(a, fb))
@@ -211,6 +218,44 @@ def main() -> int:
     axial = [s_ for s_ in sol if s_.get(b0, 0) != 0]
     checks.check('D4 residual system: moving solutions are exactly a0 = 0, a1 = +-1, b0 = +-1',
                  len(axial) == 4 and all(s_[a0] == 0 and abs(s_[a1]) == 1 and abs(s_[b0]) == 1 for s_ in axial))
+
+    # Theorem 3: the other soldering-menu coin actions under O.
+    # Trivial action: f and every g_j are O-invariant scalars. The invariant
+    # scalars on the cell are polynomials in c_1, c_2, c_3 only, so the identity
+    # f^2 + sum_j g_j^2 = 1 holds on [-1, 1]^3 and hence in R[c]; comparing the
+    # real top-degree homogeneous parts (a sum of real squares vanishes only if
+    # each vanishes) forces every polynomial to be constant.
+    inv = scalar_basis(groups['O'], cell_functions())
+    checks.check('trivial: every O-invariant cell function is a polynomial in cosines only',
+                 all(not sp.sympify(e).has(*S) for e in inv))
+    checks.check('trivial: the invariant cosine polynomials have degrees 0..3 (no constant combination besides 1)',
+                 sorted(sp.Poly(e, *C).total_degree() for e in inv) == [0, 1, 2, 3])
+    for kind in ('sign', 'axis'):
+        homo = all(coin_action(A_ * B_, kind) == coin_action(A_, kind) * coin_action(B_, kind) for A_ in O for B_ in O)
+        checks.check(f'{kind} coin action is a homomorphism O -> SO(3)',
+                     homo and all(coin_action(R, kind).det() == 1 for R in O))
+        fb, gb, a, b, eqs = unitarity_ideal(groups['O'], kind)
+        G = sp.groebner(eqs, *b, *a[1:], a[0], order='grevlex')
+        moving = [j for j, v in enumerate(gb) if any(x.has(*C) or x.has(*S) for x in v)]
+        constant = [j for j in range(len(gb)) if j not in moving]
+        checks.check(f'{kind}: every k-dependent coefficient of f vanishes on the variety',
+                     all(in_radical(G, v) for v in a[1:]))
+        killed = []
+        for j in moving:
+            if in_radical(G, b[j]):
+                killed.append(j)
+        if len(killed) == len(moving):
+            checks.check(f'{kind}: every k-dependent coefficient of g vanishes, so U is a constant coin', True)
+        else:
+            # remaining k-dependent pieces: solve the residual real system
+            rest = [b[j] for j in moving if j not in killed]
+            fres = a[0]
+            gres = [sum(b[j] * gb[j][i] for j in constant + [m for m in moving if m not in killed]) for i in range(3)]
+            res_eqs = list(sp.Poly(reduce_trig(fres ** 2 + sum(x ** 2 for x in gres) - 1), *C, *S).as_dict().values())
+            # real solutions require the sum of squares of the surviving moving coefficients to vanish
+            sq = sum(v ** 2 for v in rest)
+            checks.check(f'{kind}: residual identity forces sum of squares of k-dependent g-coefficients to 0 (real walks are constant coins)',
+                         any(sp.expand(e - sq) == 0 or sp.expand(e + sq) == 0 for e in res_eqs))
 
     # Exhibit: the D2-covariant product walk q_x q_y q_z moves in all three directions.
     c1, c2, c3 = C

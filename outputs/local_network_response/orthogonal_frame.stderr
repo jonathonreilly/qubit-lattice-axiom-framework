@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-5jdwmi5y/scripts/local_network_response.py", line 104, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-5jdwmi5y/scripts/local_network_response.py", line 96, in main
+    rows=controls();payload={'summary':{'passed':len(rows),'failed':0},'checks':rows,'input_sha256':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS},'empirical_validation':False,'scope':'Finite supplied real linear network and calibrated source/readout/intervention. General proofs are in the paired note; finite controls do not derive a physical action.'}
+         ^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-5jdwmi5y/scripts/local_network_response.py", line 31, in controls
+    check('positive spring chain and triangle share boundary response',O*O.T==sp.eye(3) and all(Kp[i,j]<0 for i in range(3) for j in range(i)) and all(sum(Kp.row(i))>0 for i in range(3)) and all(K[:i,:i].det()>0 for i in range(1,4)) and sp.simplify(((y*sp.eye(3)+K).inv()-(y*sp.eye(3)+Kp).inv())[0,0])==0)
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-5jdwmi5y/scripts/local_network_response.py", line 18, in check
+    assert bool(condition),name
+           ^^^^^^^^^^^^^^^
+AssertionError: positive spring chain and triangle share boundary response

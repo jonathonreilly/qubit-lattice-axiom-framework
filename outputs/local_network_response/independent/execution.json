@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "scripts/local_network_response.py",
+    "--json"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/neighborhood-evolution-20261016/New Axioms Lets Go",
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.8188246660865843,
+  "returncode": 0
+}

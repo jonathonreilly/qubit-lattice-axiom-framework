@@ -1,0 +1,94 @@
+===== runner cache v1 =====
+runner: scripts/local_network_response.py
+runner_sha256: d2fae47522371b3770d7d451ce3945fffa1405be819dfbc23f4dca28880c856b
+input_fingerprint_sha256: 5eaeb44bb50c3a5e55292777fedf1c97498c01acf07ee20ee9b71f5f448b56e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+{
+  "checks": [
+    {
+      "name": "hidden memory equation and initial conditions",
+      "passed": true
+    },
+    {
+      "name": "Schur response sign",
+      "passed": true
+    },
+    {
+      "name": "positive spring chain and triangle share boundary response",
+      "passed": true
+    },
+    {
+      "name": "rank-one full response identity",
+      "passed": true
+    },
+    {
+      "name": "division-free three-setting relation",
+      "passed": true
+    },
+    {
+      "name": "visible rank-two counterexample",
+      "passed": true,
+      "residual": "3/5600"
+    },
+    {
+      "maximum_fraction": 0.7151012408,
+      "name": "correlated complex error controls",
+      "passed": true
+    },
+    {
+      "name": "quadratic error term at zero measured differences",
+      "passed": true
+    },
+    {
+      "cases": 28,
+      "name": "weighted-chain moment orders and coefficients",
+      "passed": true
+    },
+    {
+      "edges": 12,
+      "name": "bipartite grid distance",
+      "passed": true
+    },
+    {
+      "name": "equal-distance cancellation and invisible response",
+      "passed": true
+    },
+    {
+      "name": "labeled intervention distinguishes the two boundary-equivalent networks",
+      "passed": true
+    },
+    {
+      "maximum_fraction": 0.0015116827,
+      "name": "finite-time spectral remainder controls",
+      "passed": true
+    },
+    {
+      "degrees": 5,
+      "name": "Taylor factorial envelope",
+      "passed": true,
+      "tail_terms": 12
+    }
+  ],
+  "empirical_validation": false,
+  "input_sha256": {
+    "docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md": "405eb15fba1d42d8f24f39500ba14375dda3d926b3f0c50919b84c1e954c4699",
+    "scripts/local_network_response_math.py": "7a5199d3f7db9a5b9ded229d2529aa7f748b97f93a161636734c7b484b65f8e1"
+  },
+  "scope": "Finite supplied real linear network and calibrated source/readout/intervention. General proofs are in the paired note; finite controls do not derive a physical action.",
+  "summary": {
+    "failed": 0,
+    "passed": 14
+  }
+}
+per_element: exact matrix and response expressions checked in finite synthetic examples.
+per_site: finite chains and a nine-site grid checked under supplied positive spring dynamics.
+per_mode: finite spectral response and Taylor bounds checked; no microscopic mode identification.
+per_block: finite observed/hidden partitions and rank-one interventions checked algebraically.
+lattice_wide: checked and not executed — no infinite-lattice dynamics or physical light-cone claim.
+
+----- stderr -----
+

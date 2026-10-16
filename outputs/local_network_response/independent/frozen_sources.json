@@ -1,0 +1,7 @@
+{
+  "docs/LOCAL_NETWORK_INTERVENTION_RESPONSE_NOTE_2026-10-16.md": "405eb15fba1d42d8f24f39500ba14375dda3d926b3f0c50919b84c1e954c4699",
+  "scripts/local_network_response_math.py": "7a5199d3f7db9a5b9ded229d2529aa7f748b97f93a161636734c7b484b65f8e1",
+  "scripts/local_network_response.py": "d2fae47522371b3770d7d451ce3945fffa1405be819dfbc23f4dca28880c856b",
+  "logs/runner-cache/local_network_response.txt": "c57a8ba721f420dce66ea542ba88c7592eb8f10d6386ded38dbee21a646767ce",
+  "outputs/local_network_response/mutation_controls_v1.json": "dde68d187f70d8889d2e9b3c1a062ce53d33b12bffd70654c7fc28977b4dd905"
+}

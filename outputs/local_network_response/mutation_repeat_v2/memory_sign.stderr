@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-d8o5upfn/scripts/local_network_response.py", line 104, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-d8o5upfn/scripts/local_network_response.py", line 96, in main
+    rows=controls();payload={'summary':{'passed':len(rows),'failed':0},'checks':rows,'input_sha256':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS},'empirical_validation':False,'scope':'Finite supplied real linear network and calibrated source/readout/intervention. General proofs are in the paired note; finite controls do not derive a physical action.'}
+         ^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-d8o5upfn/scripts/local_network_response.py", line 25, in controls
+    check('hidden memory equation and initial conditions',sp.simplify(sp.diff(x,t,2)+c*x+b*t**2)==0 and sp.simplify(x.subs(t,0)-x0)==0 and sp.simplify(sp.diff(x,t).subs(t,0)-v0)==0)
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/network-mutation-d8o5upfn/scripts/local_network_response.py", line 18, in check
+    assert bool(condition),name
+           ^^^^^^^^^^^^^^^
+AssertionError: hidden memory equation and initial conditions

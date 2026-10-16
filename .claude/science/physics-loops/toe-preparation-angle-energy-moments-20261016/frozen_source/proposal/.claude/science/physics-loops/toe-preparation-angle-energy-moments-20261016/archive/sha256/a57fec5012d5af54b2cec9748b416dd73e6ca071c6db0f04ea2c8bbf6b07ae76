@@ -1,0 +1,43 @@
+"""Capture exact review sources and metadata only; no mathematical/scientific program execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,sys
+R=Path(sys.argv[1]).resolve();N=R.parent;P=N/'preparation_angle_moment_root_proposal';W=N.parent/'correlation_worktree'
+assert R.name=='preparation_angle_moment_exposed_check' and Path.cwd()==R
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_text())
+def same(p,row):assert all(pin(p)[k]==row[k] for k in ['bytes','sha256']),str(p)
+def write(p,value):
+ with Path(p).open('x') as f:f.write(json.dumps(value,indent=2)+'\n')
+assert pin(P/'FREEZE.json')['sha256']=='b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef'
+freeze=read(P/'FREEZE.json');assert len(freeze['members'])==2
+assert freeze['status']=='proposed_pending_separate_check' and freeze['scientific_executions']==0 and freeze['retained_audit'] is False and freeze['canonical_publication'] is None
+for row in freeze['members']:same(P/row['path'],row)
+assert pin(P/'PROPOSED_LEMMAS.md')['sha256']=='fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced'
+assert pin(P/'SOURCE_MANIFEST.json')['sha256']=='f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a'
+manifest=read(P/'SOURCE_MANIFEST.json');parent=manifest['direct_mathematical_parent']
+assert parent['sha256']=='6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f'
+same(parent['path'],parent)
+rows=[]
+def capture(source,relative,scope):
+ source=Path(source);destination=R/relative;destination.parent.mkdir(parents=True,exist_ok=True)
+ with destination.open('xb') as f:f.write(source.read_bytes())
+ row=dict(original=pin(source),captured={**pin(destination),'path':str(destination.relative_to(R))},scope=scope)
+ assert row['original']['sha256']==row['captured']['sha256'];rows.append(row)
+for name in ['FREEZE.json','PROPOSED_LEMMAS.md','SOURCE_MANIFEST.json']:capture(P/name,'sources/proposal/'+name,'Complete unchanged proposed source packet; historical pending status preserved')
+capture(parent['path'],'sources/parent/LOCAL_CONSERVING_PREPARATION_NOTE.md','Sole mathematical parent; full byte capture, preparation-specific proof coverage stated separately')
+methodology=[('physics-claim-reviewer/SKILL.md','physics_claim_reviewer.md'),('review-loop/SKILL.md','focused_review_contract.md'),('SKILL_FRESHNESS_CHECK.md','skill_freshness.md'),('physics-loop/references/proof-search-governance.md','proof_search_governance.md')]
+for relative,name in methodology:
+ source=W/'docs/ai_methodology/skills'/relative
+ if relative.endswith('/SKILL.md'):assert source.read_bytes()==(Path('/Users/jonreilly/.codex/skills')/relative).read_bytes()
+ capture(source,'methodology/'+name,'Methodology source identity; explicit root task restricts this to one source-exposed check with no model override or publication')
+capture_record=dict(utc=datetime.now(timezone.utc).isoformat(),source_freeze=pin(P/'FREEZE.json'),members=rows,direct_mathematical_parent=parent,context_only_not_read_or_imported=manifest['context_only_not_mathematical_premises'],read_coverage=dict(new_proposal='Complete 158 lines',parent='Relevant original preparation source, exposed calculation and controlling qualifications; earlier parent packet exposure explicitly disclosed',methodology='Claim-reviewer and proof/freshness references; focused review-loop contract only, no execution of a PR/audit loop'),prior_source_exposure=True,blind_independence=False,scientific_executions=0,historical_replays=0)
+write(R/'SOURCE_CAPTURE.json',capture_record)
+for row in rows:same(R/row['captured']['path'],row['original'])
+for name in ['REVIEW.md','EXPOSURE.md','README.md']:
+ text=(R/name).read_text();assert text.endswith('\n') and all(line.rstrip()==line for line in text.splitlines()),name
+assert len((P/'PROPOSED_LEMMAS.md').read_text().splitlines())==158
+result=dict(utc=datetime.now(timezone.utc).isoformat(),kind='source_exposed_analytical_review_record',source_freeze=pin(P/'FREEZE.json'),source_manifest=pin(P/'SOURCE_MANIFEST.json'),proposal=pin(P/'PROPOSED_LEMMAS.md'),parent=parent,review=pin(R/'REVIEW.md'),exposure=pin(R/'EXPOSURE.md'),capture=pin(R/'SOURCE_CAPTURE.json'),mathematical_observation='No blocking algebraic defect identified in equations (1)-(7) under the stated model; positive angle versus positive additive operator requires explicit wording clarification',required_wording_clarification='Line150: delta is positive and actual Q remains positive; delta nY is indefinite',quantitative_reuse_limits=['Equation5 prices raw moments; use equation4 constants for variance','Sufficient uniform per-angle and higher-moment exponents are not proved necessary by the single-angle mean witness','Exact vacuum and deterministic angle-only errors are retained'],source_proposal_unchanged=True,scientific_executions=0,historical_replays=0,metadata_only=True,root_acceptance=None,canonical_integration=None,publication=None,retained_audit=False,editable_prompt_files_changed=[])
+write(R/'RESULT.json',result)
+print(json.dumps(dict(result=pin(R/'RESULT.json'),review=pin(R/'REVIEW.md'),captured_sources=len(rows),scientific_executions=0,source_unchanged=True,root_acceptance=None)))

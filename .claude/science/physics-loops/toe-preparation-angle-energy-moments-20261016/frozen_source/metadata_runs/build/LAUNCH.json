@@ -1,0 +1,38 @@
+{
+  "kind": "publication_packaging_metadata_only",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/build/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft",
+  "started_utc": "2026-10-16T18:22:28.334272+00:00",
+  "timeout_seconds": 60,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/build/executed_source.py",
+    "bytes": 6917,
+    "sha256": "8e0079c0266317ae903ee0e9a94bfcac77884ea34ba319d29f8a81e90477ebda"
+  },
+  "original_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/build_packet.py",
+    "bytes": 6917,
+    "sha256": "8e0079c0266317ae903ee0e9a94bfcac77884ea34ba319d29f8a81e90477ebda"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/build/executed_source.py",
+    "bytes": 6917,
+    "sha256": "8e0079c0266317ae903ee0e9a94bfcac77884ea34ba319d29f8a81e90477ebda"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/build/recorder_at_launch.py",
+    "bytes": 4150,
+    "sha256": "36245c149b62e5e0c845621572e6e6cc30890414afd67b7a41748233e801f74f"
+  },
+  "input_identities_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/build/INPUT_IDENTITIES_AT_LAUNCH.json",
+    "bytes": 16763,
+    "sha256": "4ebbf1879f59de7b38b8302b653c6f1cd693ab4f1e55fa9d5742e32518696b8b"
+  },
+  "scientific_programs_run": 0
+}

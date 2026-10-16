@@ -1,0 +1,36 @@
+{
+  "argv": [
+    "gh",
+    "pr",
+    "list",
+    "--repo",
+    "jonathonreilly/qubit-lattice-axiom-framework",
+    "--state",
+    "open",
+    "--limit",
+    "100",
+    "--json",
+    "number,title,headRefName,headRefOid,baseRefName,isDraft,url"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-16T19:29:12.836223+00:00",
+  "end_utc": "2026-10-16T19:29:14.021723+00:00",
+  "elapsed_seconds": 1.1853108331561089,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1929/stdout",
+    "bytes": 1218,
+    "sha256": "99e9cdd8514368ad557965eb7de7a4f7acfcde24cdb33b8d2a6aa8fe296e0252"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1929/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": null,
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/run.py",
+    "bytes": 1342,
+    "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+  }
+}

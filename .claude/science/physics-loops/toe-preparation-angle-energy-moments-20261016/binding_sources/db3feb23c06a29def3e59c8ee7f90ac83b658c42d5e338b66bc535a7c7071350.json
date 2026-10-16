@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T18:59:28.293950+00:00",
+  "baseRefName": "physics-loop/toe-inhomogeneous-comb-local-control-20261016",
+  "headRefName": "physics-loop/toe-interacting-preparation-control-work-20261016",
+  "headRefOid": "ff46be4883eb97457adc4d4c17af08ddbb05f20c",
+  "isDraft": false,
+  "number": 9649,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9649",
+  "tree": "ca0b288f84bc004590fba03e913817912b2826b5",
+  "base_head": "7cce8eaa5a72862e0ba884028a21e792c04a6df7",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 182128,
+    "sha256": "5534ecadb61b9b7703a91cdd30f8269f2b92f9f84cdf1b92f28c9c64f6a4b076"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/interacting_preparation_control_work_2026_10_16.py",
+    "bytes": 98872,
+    "sha256": "c8da226920fd3571e351312b41989348b5d4c056b3f592af63b8c2d63f83f239"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/PR_BODY.md",
+    "bytes": 2202,
+    "sha256": "0b9698730e13ca6a128d09d7f6956f72ef0e50db249c4eafb24944669c54c064"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

@@ -1,0 +1,650 @@
+{
+  "kind": "root_canonical_source_review",
+  "utc": "2026-10-16T19:32:33.766999+00:00",
+  "root_read_complete": true,
+  "git_base": "ff46be4883eb97457adc4d4c17af08ddbb05f20c",
+  "bound_note_sha256": "4b50362515e7a33c75e594be4bcf9c4e2191906d252b714cdb91aa610b33445a",
+  "canonical_body_pins": [
+    {
+      "name": "original_proposal",
+      "source": "preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 22475,
+      "bytes": 14391,
+      "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced",
+      "start_byte": 8084
+    },
+    {
+      "name": "exposed_analytical_review",
+      "source": "preparation_angle_moment_exposed_check/REVIEW.md",
+      "container": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 42511,
+      "bytes": 19971,
+      "sha256": "2c12dc8f0e3ab8f607f7681124fe0244c330c264414a2b2bc497adaf42cf1a49",
+      "start_byte": 22540
+    },
+    {
+      "name": "controlling_root_qualifications",
+      "source": "preparation_angle_moment_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 50662,
+      "bytes": 8080,
+      "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a",
+      "start_byte": 42582
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [
+      {
+        "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      }
+    ],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "scope": "The local conserving preparation prefix construction is the sole direct mathematical parent. Finite-lift dependencies are transitive; interacting candidates and Git ancestors are not premises."
+  },
+  "source_draft_freeze_sha256": "6c55ee7b38717a52a8784d058d996989eecf6b1e3171bf88adacf168a1a007a3",
+  "source_draft_review_sha256": "c5b71bbf62eeffeb26d4a0ba0c51690eac3e5d4600b78897675daa7d4846eb90",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/preparation_angle_energy_moments_2026_10_16.py",
+    "bytes": 59257,
+    "sha256": "756a62d2701f2ed2ace384b63576d7ce4be9007359d7e57f34ff789dbc48e35f"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/preparation_angle_moment_common.py",
+    "bytes": 61464,
+    "sha256": "243618e0a54b9c0b74c92a615423123814bcc2988281b93b2f9e5d909d9d193e"
+  },
+  "prepared": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/PREPARED.json",
+    "bytes": 97016,
+    "sha256": "338873fbce69ae635c3e3a3ac02142aff46be1691ffe9a2ae61e935dee7fcdce"
+  },
+  "installed": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/INSTALLED.json",
+    "bytes": 95909,
+    "sha256": "298ab85e12e24666ec61e944360a145d54565a04f01944905256f2f30868fed6"
+  },
+  "root_diff_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ROOT_DIFF_REVIEW.json",
+    "bytes": 38056,
+    "sha256": "0b56ef7b68b6c43bf9b7ebb9e52e75f36f9b5daeda7b5bcd987671feacd71033"
+  },
+  "canonical_file_count": 150,
+  "root_diff_review_payload": {
+    "kind": "root_prepared_diff_review",
+    "utc": "2026-10-16T19:32:14.054511+00:00",
+    "diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/CANONICALIZATION.diff",
+      "bytes": 488340,
+      "sha256": "fa81e809ce7ae67b53d2625315266831cf0453667d2db719443789df3a3a5913"
+    },
+    "canonical_files": 150,
+    "unchanged_bodies": 3,
+    "primary_changed_literal_assignments": [
+      "AUDIT_INPUT_PATHS",
+      "MANIFEST_SHA256",
+      "EXPECTED_GIT_BASE",
+      "EXPECTED_BASE_PR",
+      "EXPECTED_BASE_BRANCH",
+      "EXPECTED_BASE_PARENT_BRANCH",
+      "EXPECTED_ROOT_REVIEW_SHA",
+      "EXPECTED_ROOT_REVIEW_COMMAND",
+      "EXPECTED_ROOT_EXECUTION_SHA",
+      "EXPECTED_ROOT_RECORDER_SHA"
+    ],
+    "binding_copies": [
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/f9ab65c31e9a8daea0c368dd9acb99b055132aa2504c4c567df92a363078a9d5.md",
+          "bytes": 50484,
+          "sha256": "f9ab65c31e9a8daea0c368dd9acb99b055132aa2504c4c567df92a363078a9d5"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "bytes": 50484,
+          "sha256": "f9ab65c31e9a8daea0c368dd9acb99b055132aa2504c4c567df92a363078a9d5"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/c413e31596b689dd6aeff314a42a70245a9260f6c6aadb4ba24d5f1926594a49.blob",
+          "bytes": 174,
+          "sha256": "c413e31596b689dd6aeff314a42a70245a9260f6c6aadb4ba24d5f1926594a49"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_1929/stderr",
+          "bytes": 174,
+          "sha256": "c413e31596b689dd6aeff314a42a70245a9260f6c6aadb4ba24d5f1926594a49"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/687deeb936df08dbc27d54d1544f03f0d206ede9f06bf3e58a5e80c1769b9397.json",
+          "bytes": 1243,
+          "sha256": "687deeb936df08dbc27d54d1544f03f0d206ede9f06bf3e58a5e80c1769b9397"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_refs/EXECUTION.json",
+          "bytes": 1243,
+          "sha256": "687deeb936df08dbc27d54d1544f03f0d206ede9f06bf3e58a5e80c1769b9397"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/13840c7357cdd4340963dfac5dab4b7d69bf9658868f098def6847dba6921dff.blob",
+          "bytes": 339,
+          "sha256": "13840c7357cdd4340963dfac5dab4b7d69bf9658868f098def6847dba6921dff"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/prepare_parent_base/stdout",
+          "bytes": 339,
+          "sha256": "13840c7357cdd4340963dfac5dab4b7d69bf9658868f098def6847dba6921dff"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1.py",
+          "bytes": 11513,
+          "sha256": "daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_moment_source_publication_review/executed_source.py",
+          "bytes": 11513,
+          "sha256": "daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/c5b71bbf62eeffeb26d4a0ba0c51690eac3e5d4600b78897675daa7d4846eb90.json",
+          "bytes": 3737,
+          "sha256": "c5b71bbf62eeffeb26d4a0ba0c51690eac3e5d4600b78897675daa7d4846eb90"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/REVIEW.json",
+          "bytes": 3737,
+          "sha256": "c5b71bbf62eeffeb26d4a0ba0c51690eac3e5d4600b78897675daa7d4846eb90"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/26323f707dd4e31a435a777d32a0eb411c7963febc7a8f007af43bf138f4b4ab.blob",
+          "bytes": 164,
+          "sha256": "26323f707dd4e31a435a777d32a0eb411c7963febc7a8f007af43bf138f4b4ab"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_refs/stdout",
+          "bytes": 164,
+          "sha256": "26323f707dd4e31a435a777d32a0eb411c7963febc7a8f007af43bf138f4b4ab"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/f5760588f11e1e70a413304d730f30bc66095714a296c5276e50a0961f6c6913.json",
+          "bytes": 2865,
+          "sha256": "f5760588f11e1e70a413304d730f30bc66095714a296c5276e50a0961f6c6913"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ACTUAL_BASE_BINDING_INPUT.json",
+          "bytes": 2865,
+          "sha256": "f5760588f11e1e70a413304d730f30bc66095714a296c5276e50a0961f6c6913"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/243618e0a54b9c0b74c92a615423123814bcc2988281b93b2f9e5d909d9d193e.py",
+          "bytes": 61464,
+          "sha256": "243618e0a54b9c0b74c92a615423123814bcc2988281b93b2f9e5d909d9d193e"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/preparation_angle_moment_common.py",
+          "bytes": 61464,
+          "sha256": "243618e0a54b9c0b74c92a615423123814bcc2988281b93b2f9e5d909d9d193e"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/661bd272e35e7fd1959ecb22dd8b990524671e85193c48e2cd50de5f656fe148.blob",
+          "bytes": 918,
+          "sha256": "661bd272e35e7fd1959ecb22dd8b990524671e85193c48e2cd50de5f656fe148"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_integration_source_review/stdout",
+          "bytes": 918,
+          "sha256": "661bd272e35e7fd1959ecb22dd8b990524671e85193c48e2cd50de5f656fe148"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/6c55ee7b38717a52a8784d058d996989eecf6b1e3171bf88adacf168a1a007a3.json",
+          "bytes": 20808,
+          "sha256": "6c55ee7b38717a52a8784d058d996989eecf6b1e3171bf88adacf168a1a007a3"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/FINAL_FREEZE.json",
+          "bytes": 20808,
+          "sha256": "6c55ee7b38717a52a8784d058d996989eecf6b1e3171bf88adacf168a1a007a3"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/9070be368c3fa0a5bbcaebea2ef0b69ad59679817f8cda1e3923ab8a668f5c29.py",
+          "bytes": 7780,
+          "sha256": "9070be368c3fa0a5bbcaebea2ef0b69ad59679817f8cda1e3923ab8a668f5c29"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_integration_source_review/executed_source.py",
+          "bytes": 7780,
+          "sha256": "9070be368c3fa0a5bbcaebea2ef0b69ad59679817f8cda1e3923ab8a668f5c29"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/f73e5d1296834362a2c432c0f77922e6d33adc187360f19f5fafaa6c78df547b.blob",
+          "bytes": 41,
+          "sha256": "f73e5d1296834362a2c432c0f77922e6d33adc187360f19f5fafaa6c78df547b"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/readonly_observations/head/stdout",
+          "bytes": 41,
+          "sha256": "f73e5d1296834362a2c432c0f77922e6d33adc187360f19f5fafaa6c78df547b"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/6578009d6c58882d4cb05d417e5e876eff49e29307941cb36af396ece9ab37ae.json",
+          "bytes": 1163,
+          "sha256": "6578009d6c58882d4cb05d417e5e876eff49e29307941cb36af396ece9ab37ae"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_1929/EXECUTION.json",
+          "bytes": 1163,
+          "sha256": "6578009d6c58882d4cb05d417e5e876eff49e29307941cb36af396ece9ab37ae"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/bfd191dce0f255370b89ba73a426a9635ac22daeaa0b432011e11d5ae504f587.json",
+          "bytes": 1457,
+          "sha256": "bfd191dce0f255370b89ba73a426a9635ac22daeaa0b432011e11d5ae504f587"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/BASE_OBSERVATION.json",
+          "bytes": 1457,
+          "sha256": "bfd191dce0f255370b89ba73a426a9635ac22daeaa0b432011e11d5ae504f587"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/e5b8788b1f2992586e7f24b091fcc921396eccbdac079514844ca262c6ac2935.blob",
+          "bytes": 63,
+          "sha256": "e5b8788b1f2992586e7f24b091fcc921396eccbdac079514844ca262c6ac2935"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_branch/stdout",
+          "bytes": 63,
+          "sha256": "e5b8788b1f2992586e7f24b091fcc921396eccbdac079514844ca262c6ac2935"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/0fa8a4f61fb7a9cc138d085f240f078dc42b3adb2dadfea8bbb4dcb7477fc9cc.json",
+          "bytes": 1328,
+          "sha256": "0fa8a4f61fb7a9cc138d085f240f078dc42b3adb2dadfea8bbb4dcb7477fc9cc"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/BODY_MAP.json",
+          "bytes": 1328,
+          "sha256": "0fa8a4f61fb7a9cc138d085f240f078dc42b3adb2dadfea8bbb4dcb7477fc9cc"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/a4887943bf998691351bad3b85dedcf508be7f642f834187ecaab2d75e1c75a7.json",
+          "bytes": 1260,
+          "sha256": "a4887943bf998691351bad3b85dedcf508be7f642f834187ecaab2d75e1c75a7"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1929/EXECUTION.json",
+          "bytes": 1260,
+          "sha256": "a4887943bf998691351bad3b85dedcf508be7f642f834187ecaab2d75e1c75a7"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/b464293c99ea77a92e7357237ccd20fafe1f842d1eb1b1cdf08d3d2ffcbac893.json",
+          "bytes": 516,
+          "sha256": "b464293c99ea77a92e7357237ccd20fafe1f842d1eb1b1cdf08d3d2ffcbac893"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/FREEZE.json",
+          "bytes": 516,
+          "sha256": "b464293c99ea77a92e7357237ccd20fafe1f842d1eb1b1cdf08d3d2ffcbac893"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/f77dd31670c1ef293d4ecab7b2a00753bddb1bae092d3b02118325b9c86bf112.json",
+          "bytes": 1814,
+          "sha256": "f77dd31670c1ef293d4ecab7b2a00753bddb1bae092d3b02118325b9c86bf112"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_moment_source_publication_review/EXECUTION.json",
+          "bytes": 1814,
+          "sha256": "f77dd31670c1ef293d4ecab7b2a00753bddb1bae092d3b02118325b9c86bf112"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982.json",
+          "bytes": 326,
+          "sha256": "cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/PUBLICATION_STATE.json",
+          "bytes": 326,
+          "sha256": "cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/db3feb23c06a29def3e59c8ee7f90ac83b658c42d5e338b66bc535a7c7071350.json",
+          "bytes": 1598,
+          "sha256": "db3feb23c06a29def3e59c8ee7f90ac83b658c42d5e338b66bc535a7c7071350"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/PUBLICATION.json",
+          "bytes": 1598,
+          "sha256": "db3feb23c06a29def3e59c8ee7f90ac83b658c42d5e338b66bc535a7c7071350"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/ea45671764d90c7b0b646473e6b8802408bf66f75b72d75563fc3bc5ae2d2227.json",
+          "bytes": 2875,
+          "sha256": "ea45671764d90c7b0b646473e6b8802408bf66f75b72d75563fc3bc5ae2d2227"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ROOT_BINDING_INPUT.json",
+          "bytes": 2875,
+          "sha256": "ea45671764d90c7b0b646473e6b8802408bf66f75b72d75563fc3bc5ae2d2227"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/cc9c2e7028a4c8e3bda30c2a8ac70a2cb77fd5c34da935866b2b9d1569fd32aa.blob",
+          "bytes": 871,
+          "sha256": "cc9c2e7028a4c8e3bda30c2a8ac70a2cb77fd5c34da935866b2b9d1569fd32aa"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_moment_source_publication_review/stdout",
+          "bytes": 871,
+          "sha256": "cc9c2e7028a4c8e3bda30c2a8ac70a2cb77fd5c34da935866b2b9d1569fd32aa"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+          "bytes": 1536,
+          "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+          "bytes": 1536,
+          "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/01ee69a47f63b4bbf0318196051747e1f70ea18fefee0ae6cc3dce50646d749f.blob",
+          "bytes": 41,
+          "sha256": "01ee69a47f63b4bbf0318196051747e1f70ea18fefee0ae6cc3dce50646d749f"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_tree/stdout",
+          "bytes": 41,
+          "sha256": "01ee69a47f63b4bbf0318196051747e1f70ea18fefee0ae6cc3dce50646d749f"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/735041bb46ddf510b3971985485951d70891c924218cbca5cd6477c7ab8e6218.json",
+          "bytes": 90117,
+          "sha256": "735041bb46ddf510b3971985485951d70891c924218cbca5cd6477c7ab8e6218"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/FINAL_FREEZE.json",
+          "bytes": 90117,
+          "sha256": "735041bb46ddf510b3971985485951d70891c924218cbca5cd6477c7ab8e6218"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/36e5adf9fa3f9b70713cf1ada66e72b8062e335d4dc1f963e169d2acdeba9a5a.json",
+          "bytes": 446,
+          "sha256": "36e5adf9fa3f9b70713cf1ada66e72b8062e335d4dc1f963e169d2acdeba9a5a"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/ATTACHMENT.json",
+          "bytes": 446,
+          "sha256": "36e5adf9fa3f9b70713cf1ada66e72b8062e335d4dc1f963e169d2acdeba9a5a"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/b1c0342d8784ce92fb4675326cb937754aa85a92d4a36066404678cdcbbc7cb1.json",
+          "bytes": 1471,
+          "sha256": "b1c0342d8784ce92fb4675326cb937754aa85a92d4a36066404678cdcbbc7cb1"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_branch/EXECUTION.json",
+          "bytes": 1471,
+          "sha256": "b1c0342d8784ce92fb4675326cb937754aa85a92d4a36066404678cdcbbc7cb1"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/d951b7d6d2666f0d43a2103070e693991a122188584ff733b2f342e54c948d88.json",
+          "bytes": 1624,
+          "sha256": "d951b7d6d2666f0d43a2103070e693991a122188584ff733b2f342e54c948d88"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_parent_pr/EXECUTION.json",
+          "bytes": 1624,
+          "sha256": "d951b7d6d2666f0d43a2103070e693991a122188584ff733b2f342e54c948d88"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/7d9125a8e0f7e632d2a50ba57d7bea576a51882c5cef6207471d2a6ab68a99f4.json",
+          "bytes": 1476,
+          "sha256": "7d9125a8e0f7e632d2a50ba57d7bea576a51882c5cef6207471d2a6ab68a99f4"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_status/EXECUTION.json",
+          "bytes": 1476,
+          "sha256": "7d9125a8e0f7e632d2a50ba57d7bea576a51882c5cef6207471d2a6ab68a99f4"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/e7edc6ff14d3bd141c15fa1a6d16f1a0716f5e878a7a052a35cc627dc31f1f77.json",
+          "bytes": 1786,
+          "sha256": "e7edc6ff14d3bd141c15fa1a6d16f1a0716f5e878a7a052a35cc627dc31f1f77"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_integration_source_review/EXECUTION.json",
+          "bytes": 1786,
+          "sha256": "e7edc6ff14d3bd141c15fa1a6d16f1a0716f5e878a7a052a35cc627dc31f1f77"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/2c583e959d7cd77da6215fca0b76e5f44062688bfef4e1725b14b072ed262cc2.md",
+          "bytes": 2995,
+          "sha256": "2c583e959d7cd77da6215fca0b76e5f44062688bfef4e1725b14b072ed262cc2"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/REVIEW.md",
+          "bytes": 2995,
+          "sha256": "2c583e959d7cd77da6215fca0b76e5f44062688bfef4e1725b14b072ed262cc2"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/3e2465e8fb4856f55011a715ec1a922c69da8dad1a59f249a374e07508811504.json",
+          "bytes": 27162,
+          "sha256": "3e2465e8fb4856f55011a715ec1a922c69da8dad1a59f249a374e07508811504"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/SOURCE_MANIFEST.json",
+          "bytes": 27162,
+          "sha256": "3e2465e8fb4856f55011a715ec1a922c69da8dad1a59f249a374e07508811504"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/99e9cdd8514368ad557965eb7de7a4f7acfcde24cdb33b8d2a6aa8fe296e0252.blob",
+          "bytes": 1218,
+          "sha256": "99e9cdd8514368ad557965eb7de7a4f7acfcde24cdb33b8d2a6aa8fe296e0252"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1929/stdout",
+          "bytes": 1218,
+          "sha256": "99e9cdd8514368ad557965eb7de7a4f7acfcde24cdb33b8d2a6aa8fe296e0252"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+          "bytes": 1342,
+          "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/run.py",
+          "bytes": 1342,
+          "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/267b77c5a59018219d434b2445e1a99b7ebc036f93f4fd6f86c016d41e8825a0.json",
+          "bytes": 3158,
+          "sha256": "267b77c5a59018219d434b2445e1a99b7ebc036f93f4fd6f86c016d41e8825a0"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/MECHANICAL_EVIDENCE.json",
+          "bytes": 3158,
+          "sha256": "267b77c5a59018219d434b2445e1a99b7ebc036f93f4fd6f86c016d41e8825a0"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/7ad9f255c7072474abce89edb76c10cbdabe7f9c25712af2ef19ce34c78f2997.json",
+          "bytes": 1458,
+          "sha256": "7ad9f255c7072474abce89edb76c10cbdabe7f9c25712af2ef19ce34c78f2997"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_head/EXECUTION.json",
+          "bytes": 1458,
+          "sha256": "7ad9f255c7072474abce89edb76c10cbdabe7f9c25712af2ef19ce34c78f2997"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103.py",
+          "bytes": 1577,
+          "sha256": "876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_head/recorder_at_launch.py",
+          "bytes": 1577,
+          "sha256": "876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/9137a0d75bcfff2cbdc9f06ad1de1c29b088ee183932c3b3aed355054978af01.json",
+          "bytes": 1547,
+          "sha256": "9137a0d75bcfff2cbdc9f06ad1de1c29b088ee183932c3b3aed355054978af01"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/FRESH_REFRESH.json",
+          "bytes": 1547,
+          "sha256": "9137a0d75bcfff2cbdc9f06ad1de1c29b088ee183932c3b3aed355054978af01"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/d9c41df4e5df77832261ef416a54e7a0549ca614a799d6ef4e9a2bebe0c8255c.json",
+          "bytes": 1818,
+          "sha256": "d9c41df4e5df77832261ef416a54e7a0549ca614a799d6ef4e9a2bebe0c8255c"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/prepare_parent_base/EXECUTION.json",
+          "bytes": 1818,
+          "sha256": "d9c41df4e5df77832261ef416a54e7a0549ca614a799d6ef4e9a2bebe0c8255c"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/4cc46428174c34bea564b3bd36fc2dbfad3261a17dfe601bc825355a01dfdf4a.json",
+          "bytes": 1465,
+          "sha256": "4cc46428174c34bea564b3bd36fc2dbfad3261a17dfe601bc825355a01dfdf4a"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_tree/EXECUTION.json",
+          "bytes": 1465,
+          "sha256": "4cc46428174c34bea564b3bd36fc2dbfad3261a17dfe601bc825355a01dfdf4a"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/04bf801dfb399b181e42c00cfb97d7785e497736d5ed652a3e682e187f9a147a.json",
+          "bytes": 1665,
+          "sha256": "04bf801dfb399b181e42c00cfb97d7785e497736d5ed652a3e682e187f9a147a"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/prepare_local_base/EXECUTION.json",
+          "bytes": 1665,
+          "sha256": "04bf801dfb399b181e42c00cfb97d7785e497736d5ed652a3e682e187f9a147a"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/canonical_source/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/9b6b4046bb6353e03c6f98afc56148b193e35b294275e275664ee1d37a5cdd01.json",
+          "bytes": 5009,
+          "sha256": "9b6b4046bb6353e03c6f98afc56148b193e35b294275e275664ee1d37a5cdd01"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ROOT_INTEGRATION_REVIEW.json",
+          "bytes": 5009,
+          "sha256": "9b6b4046bb6353e03c6f98afc56148b193e35b294275e275664ee1d37a5cdd01"
+        }
+      }
+    ],
+    "scope": "All changed angle note wrapper, explicit runner label, exact parser preflight and executable source reviewed. Prior failed graph and exact owned-file recovery remain historical evidence. The complete prepared diff is accounted for through exact preview/source bodies, copied original evidence, all added binding fields and all ten literal assignments. Immutable source records retain nulls and failures. No scientific execution or new proof acceptance is implied by these metadata checks.",
+    "scientific_executions": 0,
+    "retained_audit": false
+  },
+  "scope": "All changed angle note wrapper, explicit runner label, exact parser preflight and executable source reviewed. Prior failed graph and exact owned-file recovery remain historical evidence. The complete prepared diff is accounted for through exact preview/source bodies, copied original evidence, all added binding fields and all ten literal assignments. Immutable source records retain nulls and failures. No scientific execution or new proof acceptance is implied by these metadata checks.",
+  "qualifications": "Independent vacuum, exact old isolation, ordered prefix rotations, complete positive pulses, absolute carrier and final phase remain supplied. Three unchanged bodies retain full F0 cross moments and the separate mean, second-moment and variance bounds. Positive angle increment is not a positive additive generator residual. Finite mean lower family does not establish universal necessity of sufficient input precision. There is no new scientific run, physical controller, native supply, retained audit, autonomous halt or indefinite reuse.",
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

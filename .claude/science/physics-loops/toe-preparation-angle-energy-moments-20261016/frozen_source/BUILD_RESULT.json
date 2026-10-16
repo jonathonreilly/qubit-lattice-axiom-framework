@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-16T18:22:28.400653+00:00",
+  "note": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "note_sha256": "f9ab65c31e9a8daea0c368dd9acb99b055132aa2504c4c567df92a363078a9d5",
+  "primary_sha256": "acd213df3c04b213a571042efdb271feb4ac5693eebb0a6bbccb39082a132213",
+  "unchanged_bodies": 3,
+  "source_aliases": 45,
+  "unique_archive_objects": 32,
+  "input_manifest_sha256": "e92f416e9d5aeaaeacb2e4e86f152a9f6c3de6752a09b45bf65496c3982d8f1b",
+  "science_executions": 0,
+  "canonical_execution": null
+}

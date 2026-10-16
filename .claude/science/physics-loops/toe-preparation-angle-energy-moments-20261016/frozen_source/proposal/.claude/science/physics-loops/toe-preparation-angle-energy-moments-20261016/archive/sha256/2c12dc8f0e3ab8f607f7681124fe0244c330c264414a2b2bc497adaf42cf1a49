@@ -1,0 +1,256 @@
+# Source-exposed check: preparation angle errors, work and moments
+
+The proposed moment upper bounds, variance constants, positive actual pulse realization and first-order lower-bound family survive this analytical check under the declared independent-vacuum and deterministic angle-error model. I found no blocking algebraic defect in equations (1)–(7). This supports a conditional preparation-specific result, subject to root's disposition; it is not a retained audit or a physical supplier certificate.
+
+One wording correction should accompany further use. Source line 150 calls the witness a “positive ... perturbation.” The angle increment is positive, and the **complete actual pulse generator** is positive, but the additive difference `delta nY` is indefinite: its nonzero eigenvalues are `+delta` and `-delta`. A precise replacement is: “one positive angle increment of an onsite-controlled rotation, with the complete actual integrated generator remaining positive.” The witness does not establish the same obstruction in a class requiring the additive Hamiltonian perturbation itself to be positive. No source file was edited.
+
+Two quantitative boundaries also matter in reuse. Equation (5) prices raw moments; a variance tolerance needs the constants from equation (4), given explicitly below. The single-angle witness matches the first-mean coefficient's `sqrt(L)` growth in the small-error worst-case class. It does not establish necessity of the stated uniform per-angle allocation, raw-second-moment allocation, or variance allocation, nor rule out other preparation methods.
+
+## Source and exposure
+
+The complete 158-line proposal is `PROPOSED_LEMMAS.md`, 14391 bytes, SHA256 **fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced**, in source freeze **b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef**. Its source manifest is **f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a**. Line references below refer to that unchanged captured proposal.
+
+The sole mathematical parent is the existing local conserving preparation note, 170504 bytes, SHA256 **6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f**. The relevant preparation construction, exposed review and controlling qualifications were reread, including the carrier sign, `[n,Y]=iX`, phase slot, exact input domain and drive-work distinction. The parent's runtime synthesis theorem is unnecessary for this new proof. Its two context candidates are not imported, and their derivations were not newly read or checked here.
+
+This reviewer already participated in the earlier preparation exposed check and subsequent packet/integration work. The new proposal was read before this reconstruction. This is a same-selected-model, source-exposed mathematical check, not blind independence, independent experimental evidence or an independent reexecution of the parent's fixture. No new scientific computation and no historical scientific replay were needed. The evidence is the analytic reconstruction below; metadata execution verifies only identities, capture and review scope.
+
+## 1. Domain, complete amplitudes and arbitrary reference input
+
+Use `Y|0>=i|1>`, so `exp(-iaY)|0>=cos(a)|0>+sin(a)|1>`. Put `a_i=theta_i+delta_i` for the conditional gates. With the first flip still correct, the actual ordered circuit on vacuum produces
+
+```
+sum_(m=1)^L t_m(a) p_m,
+t_m(a) = cos(a_m) product_(j<m) sin(a_j),        m<L,
+t_L(a) = product_(j<L) sin(a_j).
+```
+
+At each step only the continuing branch has the active control site occupied and its target initially empty. A branch stopped at an earlier position has zero on every later control site and is left alone. The amplitudes can be negative; distinct stopped prefixes are orthogonal eigenvectors of B, so their probabilities are squares, not an incoherent approximation. The normalization telescopes: if `T_m=product_(j<m) sin^2(a_j)`, then `t_m^2=T_m-T_(m+1)` for `m<L`, while `t_L^2=T_L` and `T_1=1`.
+
+The faulty first flip adds exactly
+
+```
+C_actual p_0 = -sin(delta_0) p_0
+                +cos(delta_0) sum_(m=1)^L t_m(a) p_m.
+```
+
+All later controlled rotations leave `p_0` alone. Thus its probability is `sin^2(delta_0)` and every nonvacuum-prefix probability is multiplied by `cos^2(delta_0)`, as stated at lines 41–46. For `L=1` the conditional product is empty and this two-state formula is exact. The states beyond site L remain vacant throughout this ordered preparation from vacuum.
+
+This is a statement about the reachable states from the specified vacuum. It need not assert that the entire prefix subspace is invariant under each conditional gate on arbitrary battery inputs: flipping a target inside a longer initially occupied prefix can create a nonprefix string. The actual gates remain unitary on the whole battery, and their full operators are used in the error estimate. No off-prefix output is traced out or declared absent for generic faults.
+
+During preparation the actual Hamiltonian is a sum of a fixed old operator and battery-only controls. Hence, for every old/reference density operator, including entangled ones,
+
+```
+rho_SBR(tau_p) = (E_p tensor I_R) rho_SR (E_p* tensor I_R)
+                  tensor |beta_actual><beta_actual|,
+E_p = exp(-i tau_p K/hbar).
+```
+
+The arbitrary-input quantifier is on the old/reference factor, not on the battery preparation input. Arbitrary finite decoupled self-adjoint K is sufficient for factorization; K>=0 is additionally needed when asserting positivity of the complete free-plus-control generator. The equal-gap runtime assumptions and runtime buffers are not imported. The preparation itself uses only L sites plus idle sites, so `M>=L` is enough for this standalone calculation; it does not establish a conserving runtime with that smaller buffer.
+
+## 2. Full-output error and the literal positive pulse model
+
+For either `A=Y` or `A=nY`, `||A||=1` and
+
+```
+||exp[-i(theta+delta)A]-exp(-i theta A)|| <= |delta|.
+```
+
+Unitary product telescoping on the complete physical space gives `||C_actual-C_nominal||<=eta`. The same exact old propagator and final battery phase convention apply to both circuits. Restriction to the vacuum-input isometry and extension by any passive reference preserve the bound. For the induced channels the unhalved trace error is at most `2eta` (and at most two trivially). Thus source lines 48–52 have the correct vector and trace constants. A trace statement with tolerance epsilon rather than vector tolerance epsilon must retain that factor two.
+
+The pulse reserve has not been removed in this calculation. Onsite blocks are
+
+```
+Q_0(delta)=2pi I+(pi/2+delta_0)Y,
+```
+
+with eigenvalues `2pi +/- (pi/2+delta_0)`. A conditional block has a zero control-zero block and the two eigenvalues `2pi +/- (theta_i+delta_i)` on its control-one block. For `|delta_i|<=1`,
+
+```
+|theta_i+delta_i| <= pi/2+1 < pi,
+Q_actual >= 0,
+||Q_actual|| <= 5pi/2+1 < 6pi = Q_*.
+```
+
+The same inequalities cover the first flip. The reserve commutes with its rotation, and `exp(-i2pi I)=exp(-i2pi n)=I` on the entire local spaces. Actual angle changes therefore create no additional reserve scalar. In contrast, the additive error block `delta_i nY` is generally indefinite, as noted above.
+
+Let `R_B(t)=exp(-it Delta B/hbar)`. The actual laboratory pulse is
+
+```
+H_c(t)=hbar f_h(t-t_j) R_B(t) Q_actual R_B(t)*.
+```
+
+Conjugating by the adjoint free propagator gives interaction-picture control `hbar f_h Q_actual`, with the literal free term still installed. Directly `[n,Y]=iX`, and the conditional reserve commutes with B, so
+
+```
+||[B,Q_actual]|| = |theta_i+delta_i| <= pi
+```
+
+(replace theta_i by pi/2 for the first flip). Consequently
+
+```
+dot H_c = hbar f_h' R_B Q_actual R_B*
+             - i f_h R_B [Delta B,Q_actual] R_B*,
+||H_c|| <= 2 hbar Q_*/h,
+||dot H_c|| <= 2pi hbar Q_*/h^2 + 2pi Delta/h.
+```
+
+The three lower bounds in source lines 32–33 give respectively `g/2`, `sigma/4` and `sigma/4`. Their sum is `sigma/2`; the new `8pi Delta/sigma` requirement correctly enlarges the parent's nominal carrier allowance. The cosine envelope has integral one, maximum `2/h`, derivative maximum `2pi/h^2`, and both it and its derivative vanish at each endpoint. Positivity, support and actual derivative bounds follow from this particular family, not from Duhamel smallness.
+
+For this q=1 preparation there are L rotation slots and one final simultaneous M-site phase slot, so `tau_p=(L+1)h` is fixed before the phase coefficient is chosen. The parent's rational-enclosure choice gives `lambda in (3pi/2,9pi/2]` and `Delta tau_p/hbar+lambda=2pi k`. The phase layer therefore gives
+
+```
+exp[-i(Delta tau_p/hbar)B] exp(-i lambda B) C_actual = C_actual
+```
+
+on the full battery. No commutation of the number-changing C_actual with B is used. Its duration is unchanged by the angle errors. The simultaneous phase-layer norm scales with M; local caps do not turn that into a constant global load. The input vacuum, isolation, rotating quadratures, clock, physical Delta and exact phase correction remain supplied.
+
+Finally, the actual-minus-nominal Hamiltonian in one rotation slot is exactly `hbar f_h delta_i R_B A_i R_B*`. Because `f_h>=0`, `integral f_h=1` and `||A_i||=1`, its dimensionless integrated full-operator norm is `|delta_i|`. Nonoverlapping slots sum to eta. This establishes the claimed residual action and its support/bandwidth without replacing physical operators by a prefix-space proxy.
+
+## 3. Reverse hybrid identity and moment constants
+
+For a conditional gate i, retain all earlier gates nominal and all later gates actual. Immediately before gate i the nominal state is
+
+```
+sum_(m<i) b_m p_m + sqrt(w_i) p_i.
+```
+
+The later actual suffix fixes every `p_m` with `m<=i`. Applied to `p_(i+1)`, it yields a normalized vector `chi_i` supported on `p_(i+1),...,p_L`. Define `A_i=<chi_i|f(B)|chi_i>`. These supports are disjoint eigenspaces for diagonal f(B), so no cross term survives in this expectation. The contribution of the continuing branch after angle a is exactly
+
+```
+w_i [ f(i) cos^2(a) + A_i sin^2(a) ].
+```
+
+Subtracting a=theta_i from a=theta_i+delta_i proves equation (1), including its sign. A_i depends on the actual suffix, not on the changed angle a or an artificially reset ideal battery. Comparing all nominal gates to all actual gates in order `L-1,L-2,...,1,0` produces precisely these hybrids.
+
+Taylor's theorem gives
+
+```
+|sin^2(theta+delta)-sin^2(theta)|
+ <= |sin(2theta)| |delta| + delta^2,
+```
+
+since the second derivative is `2cos(2theta)` and its absolute value is at most two. The coefficient for a nominal gate is
+
+```
+w_i sin(2theta_i)=2 b_i sqrt(w_(i+1))
+                 <=2 sqrt[2/(L+1)].
+```
+
+Together with `|A_i-f(i)|<=F` and `w_i<=1`, this gives the contribution in line 69. At the final hybrid comparison, only the first flip changes: if `E_a f` is the actual conditional circuit's nonvacuum f-expectation, the exact difference is `-sin^2(delta_0) E_a f`. It is bounded by `F delta_0^2`, since f(0)=0. Therefore
+
+```
+|Delta<f(B)>|
+ <=2F sqrt[2/(L+1)] sum_(i>=1)|delta_i| + F sum_i delta_i^2
+ <=2F sqrt[2/(L+1)] eta + F eta^2.
+```
+
+This proves equation (2) for arbitrary real angle errors; the separate physical cap certificate uses `|delta_i|<=1`. No cancellation of different errors is assumed. Setting `f(m)=m^r`, `F=L^r`, and replacing `sqrt(L+1)` by the smaller `sqrt(L)` proves equation (3) with the displayed `2sqrt(2)` constant. For L=1 the actual raw moment difference is exactly `-sin^2(delta_0)` for every positive integer r; the displayed linear term is merely conservative.
+
+As a second analytical check, the same exact distribution has tail probabilities
+
+```
+P_actual(B>=k)=cos^2(delta_0) product_(j<k) sin^2(a_j), 1<=k<=L,
+E_actual f(B)=sum_(k=1)^L [f(k)-f(k-1)] P_actual(B>=k).
+```
+
+For f(m)=m this reconstructs the mean as a sum of continuation probabilities. It gives the same first-flip factor and the same single-angle tail response used in the lower witness, without a moment comparison inferred solely from a target state.
+
+Let mu and nu denote the first and second raw number moments. Since both means are in [0,L],
+
+```
+|Delta Var(B)| <= |Delta nu| + |mu_actual+mu_ideal| |Delta mu|
+                <= B_2+2L B_1
+                =6sqrt(2) L^(3/2) eta+3L^2 eta^2.
+```
+
+Thus equation (4) is correct. Raw physical-energy moments multiply B_r by `Delta^r`, and variance multiplies by `Delta^2`. Under this exact product dynamics the old K distribution is unchanged and its covariance with B is zero, even when the old register is entangled with R. For clarity, the full endpoint raw-moment error obeys
+
+```
+|Delta <(K+Delta B)^r>|
+ <=sum_(k=1)^r binom(r,k) |<K^(r-k)>| Delta^k B_k(L,eta).
+```
+
+This uses product structure and commuting factors; it is not a replacement of the full generator by its battery part. In particular the full F0 variance error here equals `Delta^2 Delta Var(B)`, since the old variance is identical and the covariance vanishes. Neither simplification applies to a generic coupled or initially correlated preparation fault.
+
+## 4. Work, calibration and what is sufficient
+
+For the closed finite quantum model driven by the prescribed classical H(t), the Schrödinger equation gives `d Tr[rho(t)H(t)]/dt=Tr[rho(t) dot H(t)]`. With controls zero at both endpoints, the actual work functional is the change of the same F0 expectation. The old contribution is unchanged and the initial battery is vacuum, so
+
+```
+W_actual = Delta <B>_actual,
+W_actual-W_ideal = Delta Delta<B>.
+```
+
+This is a signed net preparation-work identity. The integral of the absolute instantaneous work rate, temporary control-energy loads and microscopic actuator energy are different quantities. Identity and controlled reserves remain installed and paid in the parent's load/variation bounds, even though their integrated endpoint phases are one. None of these formulas includes a microscopic clock/controller output that the model does not supply.
+
+Equation (5) correctly allocates half the raw-moment tolerance to each term of B_r. For a **dimensionless variance tolerance** t_v, an explicit corresponding sufficient request is
+
+```
+eta <= min(t_v/[12sqrt(2) L^(3/2)], sqrt[t_v/(6L^2)]).
+```
+
+For a physical mean/work allowance t_E use `t_1=t_E/Delta`; for a physical raw rth-moment allowance t_(E,r) use `t_r=t_(E,r)/Delta^r`; for a physical variance allowance use `t_v=t_(Var,E)/Delta^2`. Retain the standing per-angle condition `|delta_i|<=1` for the concrete pulse caps; equation (5) alone does not impose it for an arbitrarily large tolerance. Intersecting with `eta<=1` is one simple sufficient way to guarantee it.
+
+When `L=Theta(epsilon^-1)`, Delta is fixed and the requested physical allowance is O(epsilon), the linear term asks for total eta of order at most `epsilon^(r+1/2)`. The quadratic condition asks for `epsilon^((r+1)/2)` and is weaker at small epsilon for r>=1. Thus the proposed mean/work `epsilon^(3/2)` and second-moment/variance `epsilon^(5/2)` sufficient total requests are correct. With L angle parameters, a common bound satisfying `L max_i |delta_i|<=eta` adds one epsilon power, giving the stated `epsilon^(5/2)` and `epsilon^(7/2)` sufficient per-angle requests. These are worst-case allocations with appropriately small constants, not universal optimality statements.
+
+The same eta is already spent in the full-output error. It is not an additional independent budget to add a second time. A final exact-in-form diagonal phase error preserves B's distribution, but can violate the coherent packet/output target. Vacuum, carrier, timing, reserve, isolation or coupled-controller errors that leave this angle class require their own complete error and growing-observable-width estimates. For such faults the physical width can be M, not the vacuum-prefix support width L.
+
+## 5. Explicit growth witness and all constants
+
+For `L=2n`, reflection `b_m=b_(2n+1-m)` splits the probabilities equally into the first and last n indices, so `w_(n+1)=1/2`. Also
+
+```
+b_n=sqrt[2/(2n+1)] sin[pi n/(2n+1)] >=1/sqrt(2n+1),
+```
+
+because `n/(2n+1)>=1/4` and is below 1/2. The proposed tail-displacement D is positive.
+
+For n>=8, the integer interval from `ceil(3n/2)` through `floor(7n/4)` has cardinality at least `n/4-1>=n/8`. Each such index lies between n+1 and 2n and satisfies `m-n>=n/2`. Its angle is between pi/2 and 7pi/8, so
+
+```
+sin^2[pi m/(2n+1)] >= sin^2(pi/8)
+                      =(2-sqrt(2))/4 >1/8,
+b_m^2 >=1/[4(2n+1)].
+```
+
+Multiplying these three bounds gives exactly
+
+```
+sum_(m>n) (m-n)b_m^2 >=(n/8)(n/2)/[4(2n+1)]
+                       =n^2/[64(2n+1)] >=n/192.
+```
+
+The last inequality uses `3n>=2n+1`, valid already for n>=1. Dividing by `w_(n+1)=1/2` yields `D>=n/96=L/192`.
+
+Only gate n is altered, so all prefix and suffix factors in the hybrid calculation are nominal. Equation (6) is exact, with `A_n-n=D`. Its derivative is
+
+```
+a=2 b_n sqrt(w_(n+1)) D
+ >=sqrt(2) L/[192sqrt(L+1)] >=sqrt(L)/192,
+```
+
+where the final inequality is `2L>=L+1`. Taylor's lower bound and `0<w_n D<=L` now give
+
+```
+Delta_mu >=sqrt(L)delta/192-L delta^2.
+```
+
+For `0<delta<=1/[384sqrt(L)]`, the subtracted term is at most `sqrt(L)delta/384`. Equation (7), including its positive sign and constant 384, follows. No asymptotic integral or numerical estimate was substituted for the finite sums. The positivity/cap certificate above applies because these deltas are below one.
+
+With even `L>=384^2`, `epsilon=1/L` and `delta=epsilon`, the small-delta condition is exactly `sqrt(L)>=384`. The full vector error is at most epsilon, eta equals epsilon, and
+
+```
+W_actual-W_ideal >=Delta sqrt(epsilon)/384.
+```
+
+If instead one fixes the unhalved trace target to epsilon, choosing `delta=epsilon/2` under the same L restriction yields trace error at most epsilon and work error at least `Delta sqrt(epsilon)/768`. Either version rules out a reservoir-size-independent first-energy coefficient for this fault interface. It does not challenge a nominal-runtime theorem assuming charge conservation: the preparation suffix changes number and amplifies a continuation-probability error.
+
+For sufficiently small total budgets, taking the single allowed delta equal to eta shows why the mean coefficient's `sqrt(L)` dependence is needed in a uniform worst-case guarantee for this circuit. The witness alone supplies no matching necessity theorem for every gate's precision, variance, higher moments or different algorithms. Known signed errors, other schedules, feedback, different ready resources and conserving errors remain outside that claimed obstruction.
+
+## Disposition and limits
+
+The proof is complete for the stated deterministic angle family and exact vacuum product domain, including arbitrary passive references, L=1 for the upper bounds, and the explicit even-L lower-bound family. Preserve the positive-angle-versus-positive-operator distinction at line 150. Use the variance-specific constants when prescribing a variance tolerance. No other correction to the displayed bounds is identified here.
+
+No numerical experiment, general fault simulator, historical fixture, audit runner, canonical integration phase, Git mutation, publication, prompt edit or axiom edit was performed. No claim of independent blind replication, formal verification, hardware calibration, microscopic work-device closure, arbitrary interacting preparation faults, autonomous timing/release or indefinite reuse follows. The raw packet retains its original pending status; root source acceptance and any later publication remain separate actual decisions.
+
+Reopen this check if the input readiness, angle-only error model, old/battery isolation, prefix order, reserve coefficients, rotating-carrier sign, endpoint phase/timing, supplied strength/slew, observable, or requested necessity quantifier changes. The source manifest's two context candidates were not proof premises, so this check neither accepts nor rejects them.

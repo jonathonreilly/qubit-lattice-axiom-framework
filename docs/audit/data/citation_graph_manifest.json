@@ -1,6 +1,6 @@
 {
- "edge_count": 16153,
- "node_count": 7196,
+ "edge_count": 16154,
+ "node_count": 7197,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17833,6 +17833,10 @@
   "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15": {
    "deps_hash": "116e59c3d1df",
    "out_degree": 2
+  },
+  "preparation_angle_energy_moments_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "b4fc7f0460f7",
+   "out_degree": 1
   },
   "prepared_driven_state_bounded_theorem_note_2026-10-13": {
    "deps_hash": "4315a3953007",

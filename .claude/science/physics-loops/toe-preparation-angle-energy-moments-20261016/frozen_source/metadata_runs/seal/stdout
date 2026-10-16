@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-16T18:25:26.953438+00:00",
+  "kind": "completed_metadata_verification_before_parent_recorded_seal",
+  "proposal_inputs": 45,
+  "immutable_bodies": 3,
+  "packaging_metadata_receipts_verified": [
+    "build",
+    "inspection"
+  ],
+  "metadata_mutants_rejected": 14,
+  "generated_primary_matches_template": true,
+  "scientific_programs_run": 0,
+  "canonical_primary_executed": false,
+  "root_wrapper_review": null
+}

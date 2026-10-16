@@ -1,0 +1,25 @@
+{
+  "roots": [
+    {
+      "folder": "preparation_angle_moment_root_proposal",
+      "alias": "preparation_angle_moment_root_proposal/FREEZE.json",
+      "key": "members",
+      "members": 2,
+      "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+    },
+    {
+      "folder": "preparation_angle_moment_exposed_check",
+      "alias": "preparation_angle_moment_exposed_check/FINAL_FREEZE.json",
+      "key": "members",
+      "members": 26,
+      "sha256": "be6b88899f262bc5961fc5ad1916d69185aad53ca84ce6909269afdc0a82c4be"
+    },
+    {
+      "folder": "preparation_angle_moment_root_review",
+      "alias": "preparation_angle_moment_root_review/FREEZE.json",
+      "key": "members",
+      "members": 2,
+      "sha256": "2960f00e3b45f2c38bd4ccf4a673d5d2f610fecf43a82f40c39e239a33303e51"
+    }
+  ]
+}

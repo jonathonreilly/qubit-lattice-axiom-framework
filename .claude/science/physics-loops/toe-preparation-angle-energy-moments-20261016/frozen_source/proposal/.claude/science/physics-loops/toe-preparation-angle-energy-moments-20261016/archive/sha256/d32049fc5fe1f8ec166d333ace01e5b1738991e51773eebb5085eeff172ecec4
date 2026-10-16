@@ -1,0 +1,45 @@
+{
+  "prior_failed_metadata_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance/EXECUTION.json",
+    "bytes": 1772,
+    "sha256": "66228959ca28222a2fa07a5fce462822ec9e7252e7e88d402ea51c0dc4974486"
+  },
+  "metadata_correction": "Reviewer seal is FINAL_FREEZE.json; original lookup failure preceded output writes, preserved with source and full streams.",
+  "utc": "2026-10-16T18:14:51.256169+00:00",
+  "disposition": "QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 14391,
+    "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/FREEZE.json",
+    "bytes": 513,
+    "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/REVIEW.md",
+    "bytes": 19971,
+    "sha256": "2c12dc8f0e3ab8f607f7681124fe0244c330c264414a2b2bc497adaf42cf1a49"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/FINAL_FREEZE.json",
+    "bytes": 6134,
+    "sha256": "be6b88899f262bc5961fc5ad1916d69185aad53ca84ce6909269afdc0a82c4be"
+  },
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 8080,
+    "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a"
+  },
+  "root_read_complete": true,
+  "corrections": [
+    "Positive angle increment and positive actual complete generator; additive delta nY is indefinite.",
+    "Use separate variance constants; sufficient per-angle and higher-moment exponents are not proved necessary."
+  ],
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "canonical_acceptance": null,
+  "publication": null,
+  "editable_prompt_files_changed": []
+}

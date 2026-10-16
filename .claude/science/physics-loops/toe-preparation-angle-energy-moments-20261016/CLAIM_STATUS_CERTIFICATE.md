@@ -1,0 +1,7 @@
+# Claim status certificate
+
+Conditional-support bounded analytical result for the specified independent-vacuum, exactly isolated, deterministic angle-only sine preparation. Three complete original proposal/review/controlling-qualification bodies remain unchanged. The original positive-perturbation phrase is controlled by the later correction: positive angle increment and positive complete reserved pulse, but indefinite additive delta nY residual.
+
+Full reference output retains vector eta versus unhalved trace2eta. Raw moments and variance have distinct constants; full F0 moments retain old-energy cross terms. Calibration allocations are sufficient, with only the finite middle-angle mean family establishing its stated sharpness. Signed net modeled work is not absolute work or microscopic controller work. Exact carriers, reserves, timing, phase and vacuum/isolation are supplied. Generic faults, native source/controller, autonomous release/halt and indefinite reuse remain outside scope.
+
+The exposed analytical check used the same selected model and prior source exposure; it is not blind replication or retained audit. No scientific execution or fixture replay was performed. The failed root metadata seal-path lookup and distinct successful v2 remain historical evidence, not new wrapper approval. Original source nulls remain unchanged; actual source/canonical/staged decisions and base evidence are separately required.

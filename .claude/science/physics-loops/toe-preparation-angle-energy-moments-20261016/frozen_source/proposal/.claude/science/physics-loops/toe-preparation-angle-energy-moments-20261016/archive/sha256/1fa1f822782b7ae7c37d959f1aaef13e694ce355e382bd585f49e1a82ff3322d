@@ -1,0 +1,28 @@
+{
+  "start_utc": "2026-10-16T18:10:21.896197+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/source_at_launch.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check",
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/capture_and_check.py",
+    "bytes": 5311,
+    "sha256": "a57fec5012d5af54b2cec9748b416dd73e6ca071c6db0f04ea2c8bbf6b07ae76"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/source_at_launch.py",
+    "bytes": 5311,
+    "sha256": "a57fec5012d5af54b2cec9748b416dd73e6ca071c6db0f04ea2c8bbf6b07ae76"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/recorder_at_launch.py",
+    "bytes": 1912,
+    "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+  },
+  "expected_exit": 0,
+  "timeout_seconds": 60,
+  "scope": "New source-only packaging metadata; no historical science execution"
+}

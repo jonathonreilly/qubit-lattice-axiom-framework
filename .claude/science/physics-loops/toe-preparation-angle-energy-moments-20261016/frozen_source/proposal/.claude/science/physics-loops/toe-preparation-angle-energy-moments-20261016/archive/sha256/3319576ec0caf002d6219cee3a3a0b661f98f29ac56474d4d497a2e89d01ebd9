@@ -1,0 +1,41 @@
+"""Seal the completed analytical review and actual metadata evidence without scientific execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json,sys
+R=Path(sys.argv[1]).resolve()
+assert R.name=='preparation_angle_moment_exposed_check' and Path.cwd()==R
+assert Path(__file__).resolve()==R/'seal_source_at_launch.py'
+assert Path(__file__).read_bytes()==(R/'seal_review.py').read_bytes()
+def pin(p,relative=False):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p.relative_to(R)) if relative else str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_text())
+def same(p,row):assert all(pin(p)[k]==row[k] for k in ['bytes','sha256']),str(p)
+def write(p,value):
+ with Path(p).open('x') as f:f.write(json.dumps(value,indent=2)+'\n')
+assert not (R/'FINAL_FREEZE.json').exists()
+receipt=read(R/'metadata_runs/source_capture/EXECUTION.json');launch=read(R/'metadata_runs/source_capture/LAUNCH.json')
+assert receipt['exit_code']==receipt['expected_exit']==0 and not receipt['timed_out']
+assert all(receipt[key]==value for key,value in launch.items())
+assert receipt['start_utc']<=receipt['end_utc'] and receipt['elapsed_seconds']>=0
+assert receipt['argv'][1]=='-B' and receipt['argv'][2]==receipt['source_at_launch']['path']
+assert receipt['source_original']['path']!=receipt['source_at_launch']['path']
+assert receipt['source_original']['sha256']==receipt['source_at_launch']['sha256']
+for key in ['source_original','source_at_launch','recorder_at_launch','stdout','stderr']:same(receipt[key]['path'],receipt[key])
+assert Path(receipt['stderr']['path']).read_bytes()==b''
+result=read(R/'RESULT.json');stdout=read(receipt['stdout']['path']);same(R/'RESULT.json',stdout['result'])
+for key in ['review','exposure','capture','proposal','source_manifest','source_freeze','parent']:same(result[key]['path'],result[key])
+assert result['scientific_executions']==result['historical_replays']==0 and result['source_proposal_unchanged'] is True
+assert result['root_acceptance'] is result['canonical_integration'] is result['publication'] is None and result['retained_audit'] is False
+for row in read(R/'SOURCE_CAPTURE.json')['members']:
+ same(row['original']['path'],row['original']);same(R/row['captured']['path'],row['original'])
+for p in R.glob('*.py'):
+ text=p.read_text();ast.parse(text);assert all(line.rstrip()==line for line in text.splitlines()),str(p)
+for name in ['seal.stdout','seal.stderr']:assert (R/name).read_bytes()==b''
+write(R/'SEAL_OPERATION.json',dict(utc=datetime.now(timezone.utc).isoformat(),argv=sys.orig_argv,cwd=str(R),source_original=pin(R/'seal_review.py'),source_at_launch=pin(Path(__file__)),stdout=pin(R/'seal.stdout'),stderr=pin(R/'seal.stderr'),process_exit=None,expected_process_exit=0,scope='Actual metadata seal launch; process completion is evidenced by the invoking tool, not self-certified',completed_metadata_receipt=pin(R/'metadata_runs/source_capture/EXECUTION.json')))
+rows=[]
+for p in sorted(R.rglob('*')):
+ assert not p.is_symlink(),str(p)
+ if p.is_file():rows.append(pin(p,True))
+write(R/'FINAL_FREEZE.json',dict(utc=datetime.now(timezone.utc).isoformat(),kind='source_exposed_analytic_review',status='review_complete_root_disposition_pending',members=rows,source_packet_freeze=result['source_freeze'],new_proposal=result['proposal'],direct_mathematical_parent=result['parent'],review=result['review'],metadata_receipt=pin(R/'metadata_runs/source_capture/EXECUTION.json'),source_exposed=True,blind_independence=False,new_scientific_executions=0,historical_replays=0,root_acceptance=None,canonical_integration=None,publication=None,retained_audit=False,editable_prompt_files_changed=[]))
+for row in rows:same(R/row['path'],row)
+assert {str(p.relative_to(R)) for p in R.rglob('*') if p.is_file()}=={r['path'] for r in rows}|{'FINAL_FREEZE.json'}

@@ -190,8 +190,8 @@ odd and v1 is even (exact). For eps = -1, b1 = 0 and G >= 0 gives G22 = -b2^2
 and G13 = -b1^2 forces b1 = 0. Either way g = 0: no motion. So within the
 Clifford class staggering is frozen (exact); for general two-qubit walks this
 rests on the universality evidence above. Independent numerical searches of the
-staggered problem itself (two coefficient families, 40 starts at motion bounds
-0.05 and 0.5, single-threaded rerun) found no moving walk, with the same two
+staggered problem itself (two coefficient families; 22 starts at motion bound
+0.05 and 7 at 0.5) found no moving walk, with the same two
 recurring minima (residuals 1.0e-5 at the bound, 9.5e-4). A genuinely doubled
 site, not a two-site cell, is what the unfreezing needs.
 

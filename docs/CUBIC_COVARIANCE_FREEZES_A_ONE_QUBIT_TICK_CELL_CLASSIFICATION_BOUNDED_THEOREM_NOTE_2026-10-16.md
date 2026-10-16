@@ -41,7 +41,11 @@ Consequence for the framework, stated as an implication and not adopted: a
 one-qubit discrete-time motion law on the 27-point cell must give up exact
 proper-cubic covariance (keeping at most an axis, a body diagonal or the
 three axis half-turns), or leave this cell, or leave the declared coin action
-or site algebra. Continuous-time Hamiltonian walks such as
+or site algebra. The companion note
+`TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16`
+shows that a two-qubit site (the parked M_4(C) fork) does admit exactly
+covariant moving cell walks, with a forced Dirac structure. Continuous-time
+Hamiltonian walks such as
 `H = sum_a sigma_a S_a` are O-covariant but their unit-time propagators have
 unbounded range, so they are not in this class.
 

@@ -1,0 +1,164 @@
+---
+claim_id: two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
+claim_type: bounded_theorem
+claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2), with one extra square, or with nearest-neighbour hops only."
+upstream_dependencies:
+  - minimal_axioms
+  - cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16
+runner: scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
+---
+
+# A two-qubit site unfreezes the cubic tick: a doubler-free Dirac walk
+
+**Date:** 2026-10-16
+**Type:** bounded_theorem
+**Status:** bounded-support; exact existence and characterization of a
+declared walk family on a declared (non-axiom) site; numerical spectral
+statements labelled; unaudited.
+
+## Result up front
+
+The companion note shows that on one qubit per site no unitary tick on the
+27-point cell can be exactly covariant under the proper cubic group and move.
+Doubling the site removes the obstruction, and the walks it admits have a
+forced Dirac structure.
+
+1. **Exact covariant motion on a two-qubit site.** With the cubic group acting
+   on the spin factor only, the walks
+
+       U(k) = f(k) + i (h1(k) tau1 + h2(k) tau2) (x) 1 + i tau3 (x) g(k).sigma
+
+   are exactly O-covariant whenever f, h1, h2 are cubic-invariant and g is
+   cubic-equivariant. Because the five matrices tau1, tau2, tau3 sigma_a
+   anticommute, U is unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1.
+2. **A one-condition classification of this family.** Writing
+   g = b_0 (s_a) + b_1 (s_a(c_b + c_c)) + b_2 (s_a c_b c_c), the identity
+   fixes the Gram matrix G of (f, h1, h2) over the invariant basis
+   {1, sum c, sum cc, c1c2c3} uniquely in terms of b. The family is nonempty
+   for b exactly when G(b) is positive semidefinite of rank at most three;
+   rank three needs det G(b) = 0, a degree-eight equation even in b_1. The
+   triple (f, h1, h2) is then a factor of G, unique up to a constant SO(3)
+   rotation.
+3. **An explicit member with one light Dirac fermion.** At
+   b* = (11/30, sqrt(u*), 3/20), with u* the smallest positive root of the
+   quartic det G = 0, G is positive semidefinite of rank three (exact). Using
+   the rotation freedom to set (f, h1, h2)(0) = (1, 0, 0):
+   - the bands are cos omega = f(k), each doubly degenerate;
+   - at k = 0 the walk is a massless Dirac fermion with an isotropic cone,
+     omega = 0.914 |k| + O(k^2) (g = (b_0 + 2 b_1 + b_2) k + O(k^3), and
+     invariant h have zero gradient at k = 0);
+   - the seven other time-reversal-invariant momenta, where g vanishes by
+     symmetry, are gapped by 2.20–2.31 rad (numerical);
+   - tau3 is the chirality; the h terms break it at O(k^2), as a Wilson term
+     does, so the absence of doublers is consistent with Nielsen–Ninomiya.
+
+## Premises and declared objects
+
+- **Not framework content.** The two-qubit site C^2 (x) C^2 and the action
+  1 (x) D(R) are hypotheses. The Qubit axiom fixes the one-site algebra M_2(C);
+  enlarging it to M_4(C) is a parked owner decision
+  (`docs/repo/DEFERRED_DECISIONS.md`, fork 4) that this note does not adopt.
+  The result says what that enlargement would buy kinematically.
+- **Walk and covariance** as in the companion note, with D(R) replaced by
+  1 (x) D(R) on the doubled coin.
+- **Cell functions.** c_a = cos k_a, s_a = sin k_a; the O-invariant cell
+  functions are spanned by phi = (1, sum c_a, sum_{a<b} c_a c_b, c1 c2 c3) and
+  the O-equivariant cell vectors by v_0 = (s_a), v_1 = (s_a (c_b + c_c)),
+  v_2 = (s_a c_b c_c) (companion note, Theorem 1).
+
+## Theorem 1 — covariance and unitarity of the Clifford family
+
+Conjugation by 1 (x) D(R) fixes tau_j (x) 1 and maps tau3 (x) sigma.v to
+tau3 (x) sigma.(Rv); with f, h invariant and g equivariant this gives
+U(Rk) = W U(k) W^dagger, W = 1 (x) D(R). Write U = f + i X with
+X = h1 Gamma_1 + h2 Gamma_2 + sum_a g_a Gamma_{2+a}; the Gamma's are Hermitian,
+square to one and anticommute pairwise, so X^2 = h1^2 + h2^2 + |g|^2 and
+U U^dagger = f^2 + X^2. ∎ (runner: exact matrix identities)
+
+## Theorem 2 — the Gram criterion
+
+For real coefficients, f^2 + h1^2 + h2^2 = phi^T G phi with G = F^T F, F the
+3 x 4 coefficient matrix of (f, h1, h2). The map G -> phi^T G phi from
+symmetric 4 x 4 matrices to cell functions is injective, and
+phi^T G phi = 1 - |g|^2 has the unique solution
+
+    G00 = 1 - 3 b0^2,   G01 = -2 b0 b1,   G02 = b1^2 - b0^2 - b0 b2,   G03 = -3 b1 (b0 - b2),
+    G11 = b0^2 - 2 b1^2,  G12 = b1 (b0 - b2),  G13 = b0 b2 - b1^2 + b2^2,
+    G22 = 2 b1^2 - b2^2,  G23 = 2 b1 b2,   G33 = 3 b2^2.
+
+A real F exists iff G(b) is positive semidefinite of rank at most 3, and then
+F is unique up to left multiplication by O(3). ∎ (runner: exact identity and
+injectivity)
+
+## Theorem 3 — an explicit algebraic member
+
+With b0 = 11/30 and b2 = 3/20, det G is a quartic in u = b1^2 with three
+positive roots; at the smallest, u* ≈ 0.0395524, det G = 0 and the coefficients
+e1, e2, e3 of the characteristic polynomial are positive, so the three
+remaining eigenvalues are positive (approximately 0.0173, 0.0529, 0.706).
+Hence G(b*) is positive semidefinite of rank three and an O-covariant moving
+walk exists. ∎ (runner: exact root-divisibility and sign evaluation)
+
+## Numerical properties of the explicit member (labelled numerical)
+
+| quantity | value |
+|---|---|
+| max ‖U U† − 1‖ over 2000 random k | 1.3e-15 |
+| U(0) | 1 (massless point) |
+| cone speed b0 + 2 b1 + b2 | 0.9144 |
+| doubler gaps (rad) at the seven other TRIM points | 2.308 (three axis points), 2.196 (three face points), 2.198 (corner) |
+| band touchings on a 40^3 grid | k = 0 only |
+
+## What did not unfreeze (search evidence, not proof)
+
+- **Irreducible 4-dimensional coin.** Spin 3/2 restricted to the binary
+  octahedral group is its irreducible 4-dimensional representation, equal to
+  E (x) spin 1/2. Analytic-Jacobian searches (16 starts each, with a
+  scale-free lower bound on motion) and polished pinned searches found no
+  moving O-covariant cell walk for either form (best residuals 2.4e-3 and
+  1.3e-3).
+- **One extra square.** f^2 + h^2 + |g|^2 = 1 with a single extra invariant
+  h: no solution in 200 starts, versus 117 of 200 with two.
+- **Nearest-neighbour hops only** on the two-qubit site: no moving solution in
+  20 starts; the face- and body-diagonal hops of the cell are used.
+
+Two unconstrained two-qubit hits were found; the one analysed has exactly the
+Clifford form of Theorem 1 after a flavor rotation. That all two-qubit
+O-covariant cell walks have this form is not claimed.
+
+## Relation to prior work
+
+Wilson-type mass terms in discrete-time quantum walks, which lift doublers
+at the price of chiral symmetry, are known (e.g. arXiv:1807.08303; doubling
+in 3+1-dimensional Dirac walks is analysed in arXiv:2601.15885).
+D'Ariano–Perinotti Dirac automata couple two Weyl automata on the
+body-centred-cubic Cayley graph with a constant mass. New here, within the
+framework's conventions: exact soldered cubic covariance of a single tick on
+the simple cubic cell; the Gram-matrix characterization of the anticommuting
+family; that this doubling is what lifts the one-qubit freeze, while the
+irreducible 4-dimensional coin did not in the searches; and an explicit
+member with exactly one light Dirac fermion.
+
+## What this does not do
+
+- It does not adopt a two-qubit site, a dynamics clause or a tick.
+- It does not classify all two-qubit O-covariant walks, or walks beyond the
+  cell.
+- It does not identify the walk with a physical fermion, fix its mass or
+  speed, or couple it to anything.
+
+## No-Go Discipline Gate
+
+The only negative statements are search results, labelled as such in
+"What did not unfreeze". N1–N8 do not apply to the positive theorems; the
+negative searches name their routes (irreducible coin, single extra square,
+nearest-neighbour stencil) and their evidence level, and make no
+impossibility claim.
+
+## Verification
+
+```bash
+python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
+```
+
+Expected: `TOTAL: PASS=11 FAIL=0` (a few seconds).

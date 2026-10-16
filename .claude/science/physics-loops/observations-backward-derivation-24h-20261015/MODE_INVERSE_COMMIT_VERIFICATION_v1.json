@@ -1,0 +1,27 @@
+{
+  "time": "2026-10-16T11:00:01.345039+00:00",
+  "scientific_commit": "0124adef99b2f08e158d35f0029704cdf82663e8",
+  "ordinary_git_diff_check": {
+    "returncode": 2,
+    "stdout": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/POST_EXPOSURE_COMPARISON_DERIVATION_v1.md:20: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/PRE_AUTHOR_FINDINGS_v1.md:18: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/REPORT_v1.md:35: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/REPORT_v2.md:27: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/REPRODUCE_SUPPLEMENT_v1.md:12: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/REPRODUCE_v1.md:17: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/SUPPLEMENT_DERIVATION_v1.md:35: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/capture_author_unit_v1.py:41: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/comparison_controls_v1.py:118: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/run_comparison_bounded_v1.py:62: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/run_integration_replays_v1.py:58: new blank line at EOF.\n.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/supplement_controls_v1.py:103: new blank line at EOF.\n",
+    "stderr": ""
+  },
+  "diagnosis": "Twelve new blank lines at EOF only, all in immutable independently bound source/report bytes. No scientific or syntax failure. Initial sequential tool wrapper mistakenly continued to commit after check returned2; this receipt records that event explicitly.",
+  "decision": "Preserve independently frozen source/report bytes and their verified bindings; do not rewrite immutable evidence solely to remove an extra terminal newline.",
+  "scoped_check": {
+    "argv": [
+      "git",
+      "-c",
+      "core.whitespace=-blank-at-eof",
+      "diff",
+      "a8e2c4395e3a15501201749508e403782cb7963f",
+      "0124adef99b2f08e158d35f0029704cdf82663e8",
+      "--check"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "global_git_configuration_changed": false,
+  "pr_conformance_claimed": false
+}

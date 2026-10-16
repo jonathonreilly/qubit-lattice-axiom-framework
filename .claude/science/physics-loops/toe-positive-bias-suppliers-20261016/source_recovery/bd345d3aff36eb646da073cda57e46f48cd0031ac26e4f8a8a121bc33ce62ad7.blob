@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-10-16T01:25:28.768138+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/run_01/transfer_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/run_01",
+  "timeout_seconds": 120,
+  "sources_at_launch": [
+    {
+      "path": "transfer_check.py",
+      "bytes": 9098,
+      "sha256": "571571a98855200842ef1606f1f34a4b6466d23f434aca956d20154ab27dddf6"
+    },
+    {
+      "path": "run_recorded.py",
+      "bytes": 1607,
+      "sha256": "c38935f82b90a3b293892a5fd05970e5fe9cd81b8202031c6198d5f6dae84a24"
+    }
+  ],
+  "limits": {
+    "largest_exact_Gram_dimension": 12,
+    "largest_one_particle_matrix_dimension": 6,
+    "largest_log_matrix_dimension": 2
+  },
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

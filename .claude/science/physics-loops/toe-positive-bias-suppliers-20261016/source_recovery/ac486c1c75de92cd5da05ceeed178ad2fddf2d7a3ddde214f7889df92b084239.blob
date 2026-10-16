@@ -1,0 +1,150 @@
+# Exposed adversarial review of the positive occupied-path supplier
+
+**Verdict: no material mathematical defect found in the sealed argument. Recommend accepting it as a conditional mathematical source result on its stated old-path interaction domain.** No source correction is required by this review. This is not retained audit status, a physical supplier, or a proof that the original single-port access domain permits the new old-site and old-edge additions.
+
+The complete reviewed source is `positive_chain_strong_point_candidate/DERIVATION.md`, 22,051 bytes, SHA256 `54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12`; its supplied freeze SHA256 is `f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7`. Line references below refer to that unchanged file. The root ancestor `positive_chain_root_proposal/PROPOSED_LEMMAS.md` has SHA256 `7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb` and was read as an exposed proposal, not an accepted premise.
+
+The successful scope is precise: for a specified nearest-neighbor path through all existing old qubits, ending at the designated old port, and permission to add the displayed scalable positive blocks on every path site and edge, the construction produces one rational positive bias `C_n` and local `B_n=I+X_n+Z_n`, independent of the later original `H`. For every supplied computable Hermitian `H` on those factors, arbitrarily small positive rational `s` can then be effectively selected so that `H+sC_n` is simple, has distinct positive gaps, and has every off-diagonal `B_n` transition nonzero. The spectral statement allows arbitrary Hermitian `H`; physical bus composition additionally retains the parent's onsite/NN requirement on the literal original `H` and all its other premises.
+
+## 1. Exposure, review sequence, and dependency boundary
+
+This is a same-model, source-exposed adversarial check, not blind discovery or independent-model-family confirmation. This reviewer authored the earlier bus and static-bias transfer proposals; therefore this review cannot serve as an independent check of those parent proofs. Their current qualified source acceptances are imported only within their stated domains.
+
+The complete candidate argument was read and the load-bearing calculations were reconstructed before the candidate scientific executable or root ancestor body was read. The initial findings were saved in `PROOF_FINDINGS_BEFORE_CODE.md`, SHA256 `51268b74a4c9bcf82207fe56e6c910050b564e69daac32a970c484bab38b0701`, and frozen at `2026-10-16T02:11:10.556129+00:00`. The candidate's own section 9 summary had necessarily been seen during the complete argument read; that exposure is not hidden. The root ancestor and exact qualified parent premises were subsequently read. Only after recording those proof findings were the candidate's complete check source, launcher, receipt and streams read.
+
+The qualified static-bias acceptance has SHA256 `8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b`; its final qualifications have SHA256 `1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911`. The qualified bus final qualifications have SHA256 `a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880`. These were read completely from the candidate's pinned snapshots. The unchanged transfer derivation `50079791...` had already been read completely and is reused at its verified identity. Historical parent reviewer programs and executions were not newly inspected or rerun. No later padding or vacant-box filling extension was read or imported.
+
+The physics-claim-reviewer skill was applied as a focused content review. Its installed source and the selected worktree source both have SHA256 `9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455`. Freshness and proof-search governance were read from that same worktree snapshot, and the relevant focused review contract was read through line 145. The task's explicit inherited-model/no-override and no-canonical-write restrictions control over older default profile instructions. No audit workflow, model change, subagent, publication, or prompt edit occurred.
+
+## 2. Induction: every repeated gap and its nonzero splitting
+
+The zero-coupling classification at source lines 21–42 is complete. Let the old range be `r`, with `omega>r`. The energies `E_a+sigma omega` are simple; all plus-to-minus gaps are `2omega+E_a-E_b>r`, while same-sign positive gaps are at most `r`. Thus no cross-sign gap equals a same-sign one. Among the cross-sign gaps, each nonzero signed old difference appears once, while the zero old differences give exactly `d` copies of `2omega`. Within the same-sign class, each old positive gap appears exactly twice. Strong old positive gaps ensure there are no other repeats.
+
+The second-order coefficient follows directly by solving the first correction equation for the simple zero-coupling eigenvector:
+
+    |a,sigma>'=sum_b B_ba/(E_a-E_b+2sigma omega) |b,-sigma>,
+    d_(a,sigma)=sum_b |B_ab|^2/(E_a-E_b+2sigma omega).
+
+There is no first-order shift. The two copies of an old gap differ at second order by `D_a-D_b`; the repeated diagonal cross gaps have coefficients `D_a`. Therefore distinct `D_a` resolve every repeated class, not merely a selected subset.
+
+For `d>=3`, choose `c` distinct from `a,b`. At `omega_0=|E_a-E_c|/2`, the row-a term
+
+    4omega |B_ac|^2 / [4omega^2-(E_a-E_c)^2]
+
+has residue `|B_ac|^2/2`. It is nonzero by the port hypothesis. Uniqueness of positive old gaps prevents any other unordered pair from having that pole. Since `b` belongs to neither endpoint of `{a,c}`, row b has no cancelling pole. Thus every `D_a-D_b` is a nonzero rational function. The pole need not lie in the operating interval; its role is solely to exclude a rational-function identity. Finitely many such functions have only finitely many bad values in an interval above `r`.
+
+The `d=2` exception in lines 50–54 is necessary and correctly resolved. For `A_1=Z`, the diagonal values of `I+X+Z` are `2,0`; the off-diagonal contributions cancel in `D_+-D_-`, leaving `4/omega`. Without the unequal squared diagonal entries this argument would fail. After the first step the qubit dimensions are at least four, so the pole proof applies. No general false two-level lemma is being used.
+
+The rational-frequency choice is effective: old `A` is rational symmetric and already certified simple, so its spectral projectors and the weights `Tr(P_a B P_b B)` are computable. Dovetailing strict nonzero tests over rational points of an interval above `r` terminates at a good point; no test at a bad zero needs to terminate. Bounds on the finitely many strict splitting differences can then be refined. This is existence and effective termination, not a precision or complexity guarantee.
+
+## 3. Complex projectors and quantitative energy remainders
+
+The estimates at lines 60–90 survive a full complex-parameter check. With `rho=gamma/(16beta)`, each contour radius is `gamma/3`, and the normal `H_0` resolvent has norm at most `3/gamma`. Hence
+
+    ||g V (z-H_0)^(-1)||<=3/16,
+    ||(z-A'(g))^(-1)||<=48/(13gamma).
+
+Multiplying by the contour radius gives `||P_i(g)||<=16/13`. The resolvent identity gives
+
+    ||P_i(g)-P_i(0)||
+      <=(gamma/3)(3/gamma)(gamma/16)(48/(13gamma))
+      =3/13.
+
+These bounds do not assume the complex-parameter perturbed matrix remains normal. Normality is used only for `H_0`; the perturbed inverse is obtained by Neumann series. The disjoint contours keep algebraic multiplicity one and give analytic branches. The same normal-background inverse criterion confines the spectrum to radius `beta|g|` disks around the old eigenvalues. The branch in contour i belongs to its own disk because all other disks remain outside that contour. Thus the stated branch displacement bound is valid for complex `g` as required by Cauchy's estimate.
+
+Conjugation by `I tensor Z` maps `g` to `-g` and preserves each zero-coupling label. The isolated analytic branch is therefore even. On `|g|=rho`, its displacement is at most `beta rho`; after removing the quadratic term, the even tail at `|g|<=rho/2` is bounded by
+
+    beta rho (|g|/rho)^4/[1-(|g|/rho)^2]
+       <=(4/3) beta |g|^4/rho^3
+       <=2 beta |g|^4/rho^3.
+
+The published `C_E` is conservative. A difference of two gaps uses at most four such remainders, so `g^2<delta_D/(8C_E)` leaves at least half the leading splitting. Previously different gap values remain separated because their change is at most `4beta|g|<tau/2`. The zero-coupling class labels decide which comparisons are repeated; no arbitrary equality oracle is smuggled into the definition of `tau`. The radius condition independently preserves simple energy order.
+
+## 4. Every endpoint transition and its analytic remainder
+
+The bra conjugation at source lines 94–109 is correct. With `Delta=E_a-E_b`, the bra correction contributes `B_ab/(Delta+2sigma omega)`; the ket correction also contains `B_ab`, with the appropriate opposite denominator. For `a!=b` the resulting slopes are
+
+    same sign:      B_ab 4sigma omega/(4omega^2-Delta^2),
+    opposite signs: -2sigma B_ab/(Delta+2sigma omega).
+
+Both are nonzero. In the opposite-sign calculation the local diagonal entries `1-sigma` and `1+sigma` subtract; the identity's contributions cancel. For equal old label and opposite signs the zeroth-order matrix element is one. These cases exhaust all off-diagonal transitions of the doubled space.
+
+The scalar `h_ij(g)=<i|P_i(g) O P_j(g)|j>` is genuinely holomorphic; it uses no adjoint depending on the complex parameter. Its bound `4o` follows from the projector norms. Its derivative at zero is exactly the bra/ket calculation above. For real `g`, the projectors are orthogonal and rank one, and
+
+    <i|P_i(g)|i> >= 1-3/13=10/13.
+
+Thus both anchoring overlaps are nonzero, and `h_ij!=0` is equivalent to a nonzero normalized energy-basis transition. Cauchy's geometric tails give precisely `8o|g|^2/rho^2` after the linear term, and `8o|g|/rho` after the constant term. The two corresponding restrictions in (8) leave respectively half the linear magnitude and half the original unit magnitude. All denominators and lower bounds in the finite minimum are positive and computable after `omega` is fixed.
+
+This also checks the quantifier in the induction: every sufficiently small positive `g` below the displayed bound works, so a strictly smaller rational can be selected. Rational entries and the fixed endpoint norm `1+sqrt(2)<3` are preserved at every finite stage. There is no numerical-genericity substitution for the all-n argument.
+
+## 5. Positive blocks, local support, and complete scalar cost
+
+The positive decomposition at source lines 133–155 is correct. `B=I+X+Z` has eigenvalues `1+sqrt(2),1-sqrt(2)`. Therefore `B tensor X` has eigenvalues `+(1+sqrt(2)), -(1+sqrt(2)), +(1-sqrt(2)), -(1-sqrt(2))`. The edge bracket `3I+B tensor X` has minimum `2-sqrt(2)>0` and maximum `4+sqrt(2)`. All onsite coefficients are positive, with block norm `2w_j`.
+
+The `I tensor X_j` summand is supported within the declared edge and is paid in that edge block. Nothing of longer range has been omitted. Both incident edges are included at each old site, giving exactly the decomposition norm sum
+
+    max_j [2w_j+(4+sqrt(2))(e_j+e_(j+1))].
+
+The chain trace vanishes before the reserves, so its normalized trace after them is `R_n=1+sum omega_j+3 sum g_j`. Treating these already positive blocks as `C_n` and setting the transfer's extra `R_C=0` is consistent; the reserve has not disappeared, and must not be added twice. Under `sC_n` the actual scalar is `sR_n` for the whole runtime. The fixed chain is chosen before `H` and before target accuracy; its finite incident cap may grow with `n` and its selected coefficients. No common bound in the number of old qubits is proved or needed for the stated fixed-plant contract.
+
+The original source is explicit that access to every occupied path edge/site and a specified Hamiltonian path are additional premises. Neither one-port controllability nor empty exterior sites implies them. The separate exterior embedding and isolation contract for a bus remains necessary. This review has not read or accepted a later filling/padding extension.
+
+## 6. Leading Gram coefficient: complex rank and arbitrary H
+
+The argument at source lines 159–182 is valid without `[H,C_n]=0`. If
+
+    F_j(s)=ad_(H+sC_n)^(j+1)(B),
+
+then its unique coefficient of `s^(j+1)` is `G_j=ad_Cn^(j+1)(B)`. Every word involving an `H` has a lower power. The degree bound on Gram entry `(i,j)` is `i+j+2`; every determinant permutation has maximum total degree `D=m(m+1)`. Reaching that total requires taking the highest coefficient in every selected entry. The coefficient of `s^D` is therefore exactly `det Gram(G_0,...,G_(m-1))`. It is not an assumption that the mixed terms cancel: they cannot reach that degree.
+
+At a strong `C_n` point the nonzero adjoint eigenvalues are all signed gaps. There are `m=d(d-1)` distinct real nodes. The rows of the column matrix are `Delta_ab B_ab(1,Delta_ab,...,Delta_ab^(m-1))`; all prefactors are nonzero and the Vandermonde is invertible. Hence the leading Gram coefficient is strictly positive and the degree is exactly `D` for every Hermitian `H`, including complex noncommuting ones.
+
+The rank is over the **complex** Hilbert-Schmidt space. The alternating Hermitian/anti-Hermitian parity of commutators is not a dependence. Opposite signed gaps are different nodes. Conversely, an old energy degeneracy reduces the nonzero-adjoint space below `m`; repeated nonzero differences reduce the number of directions generated by a single starting vector; a missing `B_ab` removes a row when differences are simple. Thus positivity is equivalent to the three strong conditions, not merely a necessary check.
+
+For real `s`, the Gram determinant is a nonnegative real polynomial with computable coefficients. At least one of the `D+1` strictly interior rational nodes is positive. Certified evaluations can be dovetailed until a positive lower bound appears, avoiding zero decisions at all other nodes. A computable input name for `H` is essential and is present in the source and qualified parent. A norm bound alone would not suffice. The resulting strict spectral and port certificates can be refined effectively. The source makes no uniform oracle-time or conditioning claim.
+
+## 7. A different exact reviewer check of noncommuting H
+
+One fresh bounded reviewer execution supplements the analytic reconstruction. It does not rerun the candidate's `H=-C_2` homogeneity fixture or its induction matrices. Use
+
+    C=I+Z,      B=I+X+Z,      H=2X+Y+3Z.
+
+Here `[H,C]=2iX-4iY!=0`, and `H` has genuinely complex matrix entries. Independently of a matrix Gram calculation, write the nonscalar parts of `G=H+sC` and `B` as `h=(2,1,3+s)` and `b=(1,0,1)`. The Pauli product identity gives
+
+    F_0=2i(h cross b).sigma,
+    F_1=-4[h cross (h cross b)].sigma,
+    ||h||^2=s^2+6s+14,
+    ||h cross b||^2=s^2+2s+3.
+
+The two Hilbert-Schmidt columns are orthogonal, with squared norms `8||h cross b||^2` and `32||h||^2||h cross b||^2`. Therefore the independent prediction is
+
+    p_H(s)=256(s^2+6s+14)(s^2+2s+3)^2,
+    degree=6=m(m+1),       leading coefficient=p_C=256.    (R1)
+
+The saved program constructs the actual `2x2` complex matrices and their commutators and Gram, and obtains (R1) exactly. As a discriminator it replaces `Tr(F_i^*F_j)` by `Tr(F_iF_j)`; the resulting determinant is `-p_H(s)`, with value `-32256` at zero. Thus the correct complex-adjoint gate would reject that mistaken form. No numerical fitting or eigenvalue tolerance is used.
+
+The source `check_noncommuting_leading_term.py` is 2,201 bytes, SHA256 `10b59ff26e2a4120b4a575b0cd592303506c3cc26516d5f5212082bb907f90a5`. The recorder copied both it and its launcher before execution. The child used Python 3.13.5 and SymPy 1.14.0, began `2026-10-16T02:12:38.594454+00:00`, ended `2026-10-16T02:12:39.135408+00:00`, and exited zero after about 0.5404 seconds. Limits were a 20-second child alarm, 30-second outer timeout, and matrices of dimension two. Full command/cwd and source identities are in `noncommuting_check/EXECUTION.json`; complete stdout and stderr were read. Stdout SHA256 is `d2fae998b1627bbabe1c31d56474bbf5a8a5ff55081d0ea6520ff66dcb793154`; stderr is empty. No failed scientific run or rerun occurred.
+
+This finite check tests a consequential hypothesis that the author's commuting fixture does not exercise. The general noncommuting-H proof is the degree argument in section 6, not this example.
+
+## 8. Candidate evidence, counterexamples, and discriminating power
+
+After the proof checkpoint, the candidate's complete executable `e2cd05674e2a811709f901d2ec7537bca20b4a235dd9f4a73f4a701c0683e55e`, launcher `745bf52b886b72daf47a318c071ffad18948bf4ecf054940af23f6e24f8132fb`, launch/exit receipts and full streams were inspected. No identical program was run. The saved source copies and streams match the freeze.
+
+The six-dimensional characteristic determinant extracts energy coefficients before comparing them to the displayed sum formula. Dropping the diagonal summands yields the reported nonzero residuals. The full projector derivative matrices test complex transition slopes and reject the reversed-sign mutant. These are discriminating calculations, not inverses multiplied by themselves or literal success flags without preceding calculations. The reported 80-digit samples independently use an eigensolver but are not interval certificates and prove no uniform remainder bound.
+
+The four-dimensional rational witness at `omega=3,g=1/10` is certified by its full complex Gram; it is not asserted to meet the much smaller sufficient perturbative bound. Its identity-deleted mutant has rank eight instead of twelve and an even characteristic polynomial. That failure is consistent with the exact anticommutation of `Z tensor I+omega I tensor Z+g(X+Z) tensor X` with `Y tensor X`: a simple four-level spectrum paired about zero repeats positive gaps. Adding the positive scalar reserve preserves those gap repetitions. This is a failure of that particular identity-deleted construction, not of other positive paths or other control architectures.
+
+The example `H=-C_n` is also correctly preserved: it makes the coefficient-one point scalar, but `p_H(s)=(s-1)^D p_C` is positive away from one. It disproves a needless requirement that `H+C_n` itself be strong. It is not the actual design procedure and does not introduce `-H` cancellation into the independently chosen positive `C_n`.
+
+The candidate source/launcher/streams support exactly the finite statements attributed to them. Their numeric samples and finite witnesses do not establish the all-n result; the analytic induction does. No material evidence/prose mismatch was found.
+
+## 9. Qualified composition and final recommendation
+
+The candidate changes the input to the qualified static-bias result in a legitimate way: its positive leading coefficient proves arbitrarily small strong `H+sC_n` without assuming a strong coefficient-one point. The subsequent transfer needs only a selected strong drift and the fixed bias norm/load bounds, so the source's target-uniform choice order remains noncircular. Select `s`, source size and full bounds; select `xi,T`; only then approximate `exp(iTH_s)Wexp(-iTH)` by a bounded rational Hermitian exponential and calibrate inside the already bounded domain.
+
+The old/reference comparator remains `exp(-iuH) W exp(-iTH)`, with every controller output retained. The continuing bias costs `s w a_C` over the observation window; it is attenuated to meet the budget. The explicit scalar `R_total(T+u)+c_M xi^2(T+u)+s c_C u` is consistent with the actual reserve convention. The additional scalar through `T` is handled in the target, not removed physically. No fixed full-strength nonscalar bias is declared harmless over a positive window. The common cap includes `J_C` plus the parent's complete reserve and interaction accounting; integrated error alone remains insufficient to establish a pointwise incident cap.
+
+Acceptable claim: a constructive finite positive occupied-path bias supplying the strong spectral datum and arbitrarily small strong perturbations of arbitrary computable old `H`, with the explicitly stronger path/site/edge access. Conditional bus composition requires the qualified parent's locality, vacant exterior geometry, complete computable inputs, state, timing, phase, isolation and calibration conditions. There is no graph reduction, padding extension, native realization, efficient runtime, operational energy identification, permanent record or reset/reuse result here.
+
+No mathematical blocker was left unresolved within the candidate's stated domain. Root retains the acceptance/publication decision; this review does not alter a canonical claim, apply an audit verdict, or confer retained status. Only this assigned review directory was written. The exact manifest, checkpoint, initial pre-code finding freeze, execution evidence and final review freeze preserve the result and its limits.

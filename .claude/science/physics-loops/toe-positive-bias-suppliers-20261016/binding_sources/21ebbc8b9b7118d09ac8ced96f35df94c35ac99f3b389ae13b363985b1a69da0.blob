@@ -1,0 +1,11 @@
+{
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_positive_bias_publication_review/REVIEW.json",
+    "bytes": 8774,
+    "sha256": "599f13b41038fb53b326e766ad772305dfc4f0501721d52a51534ca86bc3ac42"
+  },
+  "freeze_members": 206,
+  "original_members": 217,
+  "body_count": 9,
+  "canonical_binding": null
+}

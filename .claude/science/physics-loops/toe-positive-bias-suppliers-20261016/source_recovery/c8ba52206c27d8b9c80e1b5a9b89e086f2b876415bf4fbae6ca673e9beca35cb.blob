@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-10-16T00:14:52.174892+00:00",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/resonant_bus_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 9905,
+      "sha256": "08e4b164c2b8443b5ab2d826e91afe016679a66a922ab571cc0151b244028fde"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/resonant_bus_root_proposal/ROUTED_BUS_ADDENDUM.md",
+      "bytes": 7618,
+      "sha256": "64c35e0f33e44e0815e8bfb34cd1b9b9cb7286fb1cde5709dae0192cb93be89d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/resonant_bus_root_proposal/INITIAL_FREEZE.json",
+      "bytes": 567,
+      "sha256": "0040808bf79f4dbf660a61064b65cee604e4197f6746aad14a801a94590a09e2"
+    }
+  ],
+  "status": "Unaccepted root derivation after original author bus proposal; frozen before new worker exposure."
+}

@@ -1,0 +1,51 @@
+"""Small author checks of the new transfer algebra, not its general proof.
+Limits: all complex matrices 2x2; exact Fraction Gram example at six biases;
+six noncommuting window comparisons; one endpoint identity/counterexample.
+"""
+from fractions import Fraction as F
+import json
+import math
+import numpy as np
+
+def mul(a,b):return [[sum(a[i][k]*b[k][j] for k in range(2)) for j in range(2)] for i in range(2)]
+def sub(a,b):return [[a[i][j]-b[i][j] for j in range(2)] for i in range(2)]
+def comm(a,b):return sub(mul(a,b),mul(b,a))
+def inner(a,b):return sum(a[i][j]*b[i][j] for i in range(2) for j in range(2))
+B=[[F(1,3),F(1)],[F(1),-F(1,3)]]
+for denominator in (1,2,4,16,256,4096):
+    lam=F(1,denominator)
+    drift=[[F(0),F(0)],[F(0),lam]]
+    first=comm(drift,B);second=comm(drift,first)
+    p=inner(first,first)*inner(second,second)-inner(first,second)**2
+    expected=4*lam**6
+    assert p==expected and p>0
+    print(json.dumps(dict(check='exact_Krylov_Gram_example',lambda_value=str(lam),p=str(p),expected=str(expected),passed=True)),flush=True)
+
+X=np.array([[0.,1.],[1.,0.]])
+Y=np.array([[0.,-1j],[1j,0.]])
+Z=np.diag([1.,-1.]);I=np.eye(2)
+def unitary(h,t):
+    e,v=np.linalg.eigh(h)
+    return (v*np.exp(-1j*t*e))@v.conj().T
+H=.3*X+.2*Z;C=.7*I+.4*Z;c=.7;a=.4
+for lam in (.02,1.):
+    for s in (.1,.3,1.):
+        error=np.linalg.norm(unitary(H+lam*C,s)-np.exp(-1j*lam*c*s)*unitary(H,s),2)
+        bound=lam*s*a
+        assert error<=bound+1e-13
+        print(json.dumps(dict(check='noncommuting_window_bound',lambda_value=lam,s=s,error=float(error),bound=bound,passed=True)),flush=True)
+T=713.123;lam=.013
+W=unitary(.31*X-.22*Y+.15*Z,1.)
+U=unitary(H+lam*C,-T)@W@unitary(H,T)
+endpoint=unitary(H+lam*C,T)@U
+error=np.linalg.norm(endpoint-W@unitary(H,T),2)
+assert error<1e-10
+print(json.dumps(dict(check='actual_time_endpoint_order',T=T,lambda_value=lam,error=float(error),passed=True)),flush=True)
+plus=np.array([1.,1.])/math.sqrt(2)
+n=np.diag([0.,1.])
+after=unitary(n,math.pi)@plus
+rho0=np.outer(plus,plus.conj());rho1=np.outer(after,after.conj())
+distance=np.sum(np.abs(np.linalg.eigvalsh(rho1-rho0)))
+assert abs(distance-2)<1e-12
+print(json.dumps(dict(check='unchanged_bias_window_counterexample',trace_distance=float(distance),minimax_lower_bound=float(distance/2),passed=True)),flush=True)
+print(json.dumps(dict(summary='14 bounded author checks passed',max_matrix_dimension=2,exact_example_only=True,bounded_log_search_executed=False,full_bus_simulation=False,independent=False)),flush=True)

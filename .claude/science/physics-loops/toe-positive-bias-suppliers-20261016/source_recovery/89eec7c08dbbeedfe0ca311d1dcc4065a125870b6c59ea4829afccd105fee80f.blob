@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-16T02:30:52.932441+00:00",
+  "status": "qualified_source_acceptance",
+  "retained_audit": false,
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 4199,
+    "sha256": "09e43a6822cd08059419998a314f9289b5921ad5380ebb89c15a4ddc70e76106"
+  },
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_proposal/FREEZE.json",
+    "bytes": 407,
+    "sha256": "2a33df38d9d653f2f86a4d8208bcdab102b138c7bba9bff1a6be2bf48af00dd7"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/REVIEW.md",
+    "bytes": 16581,
+    "sha256": "a747876323915e61a3b506f2d91380da6c365e002c089f32ed0a03bc453ff414"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/FREEZE.json",
+    "bytes": 5008,
+    "sha256": "0b41479ebfc464c56becc82fe296e75f80c8bf1545c2efba988ec54cf530f074"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 4360,
+    "sha256": "766121bc9ab9d91b2f29744723560b4f2113bee7df262f88029171e021dc75a2"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/run_01/EXECUTION.json",
+    "bytes": 1495,
+    "sha256": "d53d04675ca8689ee6668ed0d5ed75279d5f4b0adf9ef990dbd6dbbc8d17094f"
+  },
+  "source_exposure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/SOURCE_EXPOSURE.md",
+    "bytes": 2631,
+    "sha256": "1782a2bc91a78da2d37558393919b99eaf1713413b45430d9dc49019f1d13b76"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/SOURCE_MANIFEST.json",
+    "bytes": 3144,
+    "sha256": "ca33fa1582bc874341f37ac56f4ee0c3d35bec9f09075fb17ea1756720d3e5e4"
+  },
+  "verified_members": {
+    "proposal": 1,
+    "review": 22
+  },
+  "verified_source_snapshots": 7,
+  "parent_acceptances": {
+    "chain": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 4440,
+      "sha256": "382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4"
+    },
+    "transfer": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    "bus": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    }
+  },
+  "root_read_complete_for_scoped_claim": true,
+  "historical_pending_dependency_preserved": true,
+  "root_decisive_checks": [
+    "All positive box side lengths, layer joins, endpoint reflection/reversal and singleton axes.",
+    "Arbitrary-corner signed outward direction and actual corner-port interface are distinct from physical vacancy.",
+    "Full operator identity without H/W commutation, arbitrary correlated mixed inputs and uniform 2 delta trace bound.",
+    "Known decoupled filler drift changes the full comparator; GHZ counterexample forbids silently dropping it.",
+    "Compose only the separately qualified full-plant chain source, all costs and actual-time parent premises."
+  ],
+  "scientific_programs_run_this_acceptance": 0,
+  "editable_prompt_files_changed": []
+}

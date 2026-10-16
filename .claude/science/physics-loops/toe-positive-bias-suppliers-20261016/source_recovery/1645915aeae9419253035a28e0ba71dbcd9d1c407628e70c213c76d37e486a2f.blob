@@ -1,0 +1,60 @@
+"""Independent matrix check of the root-exposed Heisenberg certificate.
+Also resolve a structural-equality diagnostic in the first reviewer script.
+No imports or execution of the root's scientific program.
+"""
+from pathlib import Path
+import json
+import sympy as s
+
+root=Path(__file__).resolve().parent
+source=json.loads((root/'root_probe.stdout.json').read_text())
+I=s.eye(2);X=s.Matrix([[0,1],[1,0]]);Y=s.Matrix([[0,-s.I],[s.I,0]]);Z=s.diag(1,-1)
+axes={'I':I,'X':X,'Y':Y,'Z':Z}
+labels=[a+b for a in 'IXYZ' for b in 'IXYZ']
+P={a+b:s.kronecker_product(axes[a],axes[b]) for a,b in [tuple(w) for w in labels]}
+H=3*P['II']+P['XX']+P['YY']+P['ZZ']
+names={'Hpos':H,'Hpos+II+XI':H+P['II']+P['XI'],'Hpos+II+ZI':H+P['II']+P['ZI']}
+def bracket(a,b):return s.I*(a*b-b*a)/2
+def expression(word):
+    if word in names:return names[word]
+    assert word.startswith('i[') and word.endswith(']/2')
+    inner=word[2:-3];depth=0;split=None
+    for j,char in enumerate(inner):
+        if char=='[':depth+=1
+        elif char==']':depth-=1
+        elif char==',' and depth==0:split=j;break
+    assert split is not None
+    return bracket(expression(inner[:split]),expression(inner[split+1:]))
+actual=[]
+for word,expected in zip(source['words'],source['coefficient_columns']):
+    matrix=expression(word)
+    assert matrix==matrix.conjugate().T
+    coefficients=s.Matrix([s.simplify(s.trace(P[label]*matrix)/4) for label in labels])
+    assert coefficients==s.Matrix([s.sympify(x) for x in expected])
+    actual.append(coefficients)
+certificate=s.Matrix.hstack(*actual)
+determinant=certificate.det(method='domain-ge')
+assert determinant==-4 and certificate.rank()==16
+assert H.eigenvals()=={s.Integer(0):1,s.Integer(4):3}
+for word in ['XI','ZI']:
+    assert (P['II']+P[word]).eigenvals()=={s.Integer(0):2,s.Integer(2):2}
+for axis in 'XYZ':assert bracket(H,P[axis+'I']+P['I'+axis])==s.zeros(4)
+c,r=s.symbols('c r',real=True)
+up=s.eye(4)[:,0];down=s.eye(4)[:,3]
+biased=H+c*P['II']+r*P['ZI']
+assert biased*up==(4+c+r)*up
+assert biased*down==(4+c-r)*down
+for word in ['II','XI','YI','ZI','IX','IY','IZ']:
+    assert (up.T*P[word]*down)[0]==0
+print(json.dumps({'check':'root_Heisenberg_certificate_reconstructed_by_exact_4x4_matrices','all_16_columns_match':True,'determinant':str(determinant),'rank':certificate.rank(),'positive_H_spectrum':{'0':1,'4':3},'positive_control_ray_spectrum':{'0':2,'2':2},'global_SU2_generators_commute':True,'aligned_product_eigenvectors_exact':True,'every_one_qubit_transition_zero':True,'scope':'static Hermitian bias confined to one designated qubit; one-qubit port only; no statement about other architectures'}),flush=True)
+
+l=s.symbols('lambda',real=True)
+h=s.Rational(3,10)*X+s.Rational(1,5)*Z
+b=X+Y/3+Z/5
+cc=s.Rational(7,10)*I+s.Rational(2,5)*Z
+full=(h+l*cc)*b-b*(h+l*cc)
+removed=(h+l*(cc-s.Rational(7,10)*I))*b-b*(h+l*(cc-s.Rational(7,10)*I))
+structural=bool(full==removed)
+difference=(full-removed).applyfunc(s.simplify)
+assert difference==s.zeros(2)
+print(json.dumps({'check':'resolve_prior_scalar_bias_diagnostic','prior_structural_equality':structural,'entrywise_symbolic_difference_zero':True,'meaning':'The first script printed a false structural-equality diagnostic; simplification proves mathematical equality. No polynomial assertion or certificate changes.'}),flush=True)

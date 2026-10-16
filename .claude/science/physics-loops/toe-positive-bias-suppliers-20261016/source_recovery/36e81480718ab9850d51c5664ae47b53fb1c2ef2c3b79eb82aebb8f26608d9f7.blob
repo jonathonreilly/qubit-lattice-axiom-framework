@@ -1,0 +1,63 @@
+# No-Go Discipline Gate — scoped review, no publication PASS
+
+Applied source: `instructions/no-go-discipline.SKILL.md`, SHA256 `9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc`, byte-identical to the supplied repository copy. The review used the same captured proof-search-governance reference. No Git command or remote freshness claim was made. The user's bounded task forbids publication, commits, audit/cache writes and a campaign expansion; those limits control this review.
+
+**Packet status: FAIL / partial-narrowing for publication readiness.** The two narrow mathematical arguments are assessed on their proofs in REVIEW.md and APPENDIX_HEISENBERG.md. This packet does not claim five independently closed route families, a completed historical echo audit, a committed artifact or canonical cached N5 certificate. Those procedural limitations are not evidence that either finite mathematical argument is false. No broad impossibility conclusion is issued, and no missing route is manufactured to obtain PASS. This is a bounded review deliverable, not a negative-claim publication action.
+
+## N1 — Alternative routes
+
+The actual claims are (A) a fixed nonscalar bias cannot be removed over a positive window merely by endpoint correction followed by passive continuation under that bias, and (B) the particular two-qubit Heisenberg plant has no all-transition one-qubit port after any static bias confined to one designated qubit. Their proofs exhaust the respective defined comparator/bias families. They are not five distinct architecture closures.
+
+| Route | Assessment and honest scope |
+|---|---|
+| Adjust the endpoint channel while retaining the same biased continuation | ATTEMPTED analytically in source A: the triangle inequality gives a minimax lower bound. Its exact one-qubit counterexample is retained. |
+| Change scalar part, direction, amplitude or local B within the Heisenberg single-port bias family | ATTEMPTED analytically and by exact identities in source B: scalar bias preserves degeneracy; every nonscalar direction rotates to the product-eigenvector selection rule. These are parameter cases of one route, not several normalized families. |
+| Attenuate an added bias from a supplied strong point | Positive alternative proved conditionally in the transfer source; it escapes A's fixed-coefficient hypothesis. It does not supply a strong point in B's restricted counterexample. |
+| Add biases on other old sites or a genuine two-qubit bias | OUTSIDE the quantified B family; not ruled out or executed. Terminal obligation: exhibit a strong point with admissible support and paid reserves. |
+| Use a multi-qubit port | OUTSIDE the B hypothesis. The XX transition between the product states is nonzero, so the stated selection rule disappears; a complete all-transition/geometry construction remains unproved here. |
+| Use time-dependent controls or an autonomous switch/continuing compensator | OUTSIDE passive continuation A and static-spectrum reduction B. The full Lie certificate supports access to noncommuting mechanisms, but no complete autonomous implementation is derived here. |
+| Use a realization not requiring the all-transition bus hypothesis | OPEN alternative; no exclusion from either argument. Terminal obligation is its own complete output, timing, error and incident-cap theorem. |
+
+No retained-authority citation is substituted for these new proofs. The five-closed-family schema is unmet; PASS is not claimed. The bounded task did not authorize closing the broader alternatives.
+
+## N2 — Relations between boundaries
+
+These are two different residuals, not a count of independent walls for one universal no-go. Attenuation can remove A's window defect while failing to produce a strong point for B's Heisenberg plant. Conversely H=0,C=Omega n supplies the strong point but leaves A's fixed-bias window defect. Thus neither fact alone resolves the other's distinct obligation. Geometry, input computability and physical calibration remain hypotheses of the positive transfer, not asserted independent impossibility walls.
+
+## N3 — Hidden conditions
+
+The proofs were reread for hidden restrictions. A requires passive continuation under H+C and vanishing extra holding action; active compensation is explicitly excluded from its conclusion. B requires the exact isotropic two-qubit H, bias supported on the designated first qubit, and a one-qubit B; common SU(2) rotation preserves these supports. The positive transfer requires scalable added blocks, a supplied strong point, vacant geometry, computable input names for its effective version, and the qualified bus's preparation/calibration/isolation data. These conditions are stated explicitly. No convention, audit registration or physical primitive is used to close them.
+
+## N4 — Residual matching
+
+| Witness | Residual actually attacked | Residual claimed here | Match |
+|---|---|---|---|
+| Author DERIVATION section 2, lines 36–70 | Endpoint correction plus passive full-bias continuation over positive window | Exactly that route | Yes |
+| Parent Heisenberg source and exact reviewer appendix | All-transition local port after single-designated-qubit static bias for this two-qubit H | Exactly that implication counterexample | Yes |
+| Older bus qualification | Validity and effective-input limits of a supplied strongly regular controller construction | Dependency only; not a negative witness against other realizations | Not used as a no-go witness |
+
+The earlier two-axis probe was not read, executed or cited. Generic repository Heisenberg matches found by the bounded echo search were not imported as witnesses.
+
+## N5 — Resolution audit
+
+* Per element: the forbidden transition is the specific |up up> to |down down> matrix element of any one-qubit B after the stated rotation; no statement about every matrix element is made.
+* Per site: all scalar and Bloch-vector biases on one designated qubit are covered analytically; multiple-site biases are not covered.
+* Per mode: no continuum or field-mode statement was tested. The four finite energy levels are the complete old spectrum in the counterexample.
+* Per block: the complete two-qubit Hamiltonian, all 16 Lie-certificate columns and the selected transition were checked with exact matrices.
+* Lattice wide: the old plant in the counterexample is exactly two adjacent qubits. No arbitrary-size lattice obstruction is inferred. The transfer theorem retains its supplied finite plant/geometry hypotheses.
+
+These are written scope statements, not a claim that the required primary canonical runner cache contains an N5 publication certificate. No canonical cache mutation was authorized. That gate obligation remains open.
+
+## N6 — Partial closure and conventions
+
+No new axiom is claimed necessary. Attenuation is an explicit positive route when allowed. A scalar bias is absorbed by the retained comparison phase. A stronger supplied static bias/port may satisfy the positive theorem in another allowed family. A switch or continuing compensator is a separate concrete construction problem. The vanishing local matrix element and drift-channel mismatch are algebraic facts, so a relabeling of reserves or phase conventions cannot change them; changing the allowed operator support or dynamics can. No primitive-registry absence claim is made, so no registry scan is invoked as an impossibility argument.
+
+## N7 — Steelman
+
+The strongest objection to a broad reading is that full local-control Lie accessibility already supplies noncommuting mechanisms unavailable to one static biased eigenbasis. A two-qubit port directly connects the missing product pair, and a bias on another site can break the residual symmetry used in the proof. For the window problem, an autonomous compensator could supply the relative drift after the endpoint rather than allowing free H+C continuation. The terminal obligations are explicit complete-space constructions, with their controller outputs, calibration, timing and incident costs. These are real unclosed alternatives to a universal impossibility claim. They lie outside the two quantified narrow statements and therefore narrow the conclusion without refuting those statements. The narrow conclusions rest on exact proofs, not inability to imagine another route.
+
+## N8 — Bounded cross-cycle echo
+
+A read-only rg search over the supplied repository's methodology directory and bounded-theorem files used `Heisenberg|static bias|bias.{0,20}window`. The first tool display was truncated; a complete rerun was saved in ECHO_SEARCH.stdout.txt (36,204 bytes, 107 lines), with receipt and hash in ECHO_SEARCH_RECEIPT.json. There were no direct static-bias/window matches among the returned lines. The generic Heisenberg results were not fully inspected and are not authorities. This search is not an exhaustive walk of historical no-go ledgers, and absence of a matching title is not evidence of impossibility. The broader historical publication gate is explicitly pending; it was not expanded into a campaign under this bounded task.
+
+The authorized outcome is a mathematically checked narrow review and explicit alternatives. No no-go gate PASS, committed/retained result or universal closure is asserted.

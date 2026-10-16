@@ -1,0 +1,43 @@
+"""Capture executable bytes and actual subprocess invocation before one check."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+root=Path(__file__).resolve().parent
+run=root/'check_run_01'
+run.mkdir(exist_ok=False)
+sha=lambda b:hashlib.sha256(b).hexdigest()
+source=root/'check_induction.py'
+source_bytes=source.read_bytes()
+launch_bytes=Path(__file__).read_bytes()
+manifest_bytes=(root/'SOURCE_MANIFEST.json').read_bytes()
+(run/'check_induction.at_launch.py').write_bytes(source_bytes)
+(run/'launcher.at_launch.py').write_bytes(launch_bytes)
+(run/'SOURCE_MANIFEST.at_launch.json').write_bytes(manifest_bytes)
+argv=[sys.executable,'-B',str(run/'check_induction.at_launch.py')]
+receipt={'argv':argv,'cwd':str(run),'source_original':str(source),
+         'source_at_launch':str(run/'check_induction.at_launch.py'),
+         'source_sha256':sha(source_bytes),'launcher_source_sha256':sha(launch_bytes),
+         'launcher_orig_argv':sys.orig_argv,'launcher_cwd':str(Path.cwd()),
+         'source_manifest_sha256':sha(manifest_bytes),
+         'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+         'timeout_seconds':120}
+(run/'LAUNCH.json').write_text(json.dumps(receipt,indent=2)+'\n')
+start=time.monotonic()
+try:
+    with (run/'stdout.json').open('wb') as out,(run/'stderr.txt').open('wb') as err:
+        completed=subprocess.run(argv,cwd=run,stdin=subprocess.DEVNULL,stdout=out,stderr=err,timeout=120)
+    receipt['exit_code']=completed.returncode
+except subprocess.TimeoutExpired:
+    receipt['exit_code']=None;receipt['timed_out']=True
+receipt['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+receipt['elapsed_seconds']=time.monotonic()-start
+receipt['stdout_sha256']=sha((run/'stdout.json').read_bytes())
+receipt['stderr_sha256']=sha((run/'stderr.txt').read_bytes())
+(run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2))
+sys.exit(0 if receipt['exit_code']==0 else 1)

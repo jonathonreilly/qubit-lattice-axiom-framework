@@ -1,0 +1,77 @@
+{
+  "characteristic_second_order": {
+    "D": [
+      "103736/45045",
+      "13117/3960",
+      "42121/10920"
+    ],
+    "all_exact_formula_residuals_zero": true,
+    "coefficients": [
+      "421/315",
+      "-691/715",
+      "839/440",
+      "-253/180",
+      "2329/1560",
+      "-331/140"
+    ],
+    "omitted_diagonal_mutant_residuals": [
+      "2/5",
+      "-2/5",
+      "1/10",
+      "-1/10",
+      "1/40",
+      "-1/40"
+    ]
+  },
+  "leading_coefficient_stress": {
+    "H": "-C2",
+    "degree": 156,
+    "exact_homogeneity_residual": "0",
+    "p_H(1)": "0",
+    "positive_at_small_node": true,
+    "small_node": "1/7",
+    "small_value_sha256": "aef7d5d55e87a5940427fdc640c738f2d4667cee4c6aaa8c6da41edd16dd011d"
+  },
+  "mpmath": "1.3.0",
+  "numerical_samples": {
+    "precision_digits": 80,
+    "rigorous_interval_claim": false,
+    "samples": [
+      {
+        "g": "0.001",
+        "max_energy_remainder_over_g4": "1.65844727861111516933133832477",
+        "max_transition_slope_error": "0.00186152696125851751481907298942"
+      },
+      {
+        "g": "0.0005",
+        "max_energy_remainder_over_g4": "1.65844858434090431721546136364",
+        "max_transition_slope_error": "0.000930819407910224237404666009707"
+      },
+      {
+        "g": "0.00025",
+        "max_energy_remainder_over_g4": "1.65844891077345762257254122129",
+        "max_transition_slope_error": "0.000465423605512178712642524624836"
+      }
+    ]
+  },
+  "projector_transition_check": {
+    "complex_example": "-2/9 - 2*I/9",
+    "exact_residuals_zero": true,
+    "opposite_sign_mutant_example": "-4/9 - 4*I/9",
+    "tested_pairs": 24
+  },
+  "python": "3.13.5",
+  "rational_two_qubit_witness": {
+    "edge_minimum_eigenvalue": "1/5 - sqrt(2)/10",
+    "g": "1/10",
+    "identity_deleted_charpoly": "lam**4 - 501*lam**2/25 + 160901/2500",
+    "identity_deleted_krylov_rank": 8,
+    "krylov_gram": "2681211115051616617516021406289993735331499439701824158261121232200197256671949371949202335241425958513703754167892903957045012838772122039453986493325901824/470197740328915003187494614888898271127466222708835008603500682511366903781890869140625",
+    "omega": "3",
+    "positive": true,
+    "positive_bias_scalar_reserve": "43/10",
+    "required_rank": 12
+  },
+  "scope": "Exact dimensions 4 and 6 plus nonrigorous high-precision coefficient samples; no all-n or physical validation.",
+  "sympy": "1.14.0"
+}

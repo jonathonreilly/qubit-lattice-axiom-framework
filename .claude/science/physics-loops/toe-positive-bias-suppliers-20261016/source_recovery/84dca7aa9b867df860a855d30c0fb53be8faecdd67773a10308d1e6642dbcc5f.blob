@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T02:10:35.131795+00:00",
+  "baseRefName": "physics-loop/toe-correlated-energy-comparator-20261015",
+  "headRefName": "physics-loop/toe-strongly-regular-bus-20261015",
+  "headRefOid": "68c531309ac6dae96289aab964213b8c5f55969b",
+  "isDraft": false,
+  "number": 9631,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9631",
+  "tree": "f42fc77302946270d8419a16f01ae7ded96d1550",
+  "base_head": "058724b51948962713d764781fcb4b99802f5410",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 83919,
+    "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/strongly_regular_bus_2026_10_15.py",
+    "bytes": 43600,
+    "sha256": "1ed6dea485d3c3968e0e8a03db54499ce294f2ec9f5749a8574e2ff7bd7ef005"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/PR_BODY.md",
+    "bytes": 3395,
+    "sha256": "022a3ea6cec6f894dadc8d70531614f7033b199205ce57ae797441783fa4b919"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

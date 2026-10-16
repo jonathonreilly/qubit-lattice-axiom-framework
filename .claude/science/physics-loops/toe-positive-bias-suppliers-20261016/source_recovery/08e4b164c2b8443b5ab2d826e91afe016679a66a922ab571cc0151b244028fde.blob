@@ -1,0 +1,82 @@
+# Proposed closure of two resonant-bus equations
+
+Root proposal after reading the complete `bounded_strength_runtime_candidate/DERIVATION.md`, SHA256 `47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15`. This is exposed new reasoning, not an independent confirmation of that source and not accepted science. It targets its sections 8–9. No new computation, physical construction or retained status is claimed here.
+
+The general coupled-plant contract remains open. The extra assumptions below are deliberately stronger than the existing augmented Lie certificate. A possible construction under these assumptions would be a useful restricted theorem, not a replacement for that certificate's entire plant domain.
+
+## 1. Supplied spectral conditions and the exact question
+
+Let the complete finite plant have simple energies `E_0<...<E_(d-1)`, all positive pair gaps distinct, and a supplied Hermitian operator `B` supported on its one accessible qubit, with `B_ab != 0` for every distinct pair. Fix a target Hermitian logarithm `L_W`, with `W=exp(i theta0) exp(-i L_W)`. All old outputs and arbitrary references remain. The literal H is retained with coefficient one.
+
+The candidate bus has a positive one-excitation Jacobi matrix with energies `mu_j>0`, root spectral weights `p_j>0`, and coupling `v_p B X_root`. Write `w_j=v_p^2 p_j`. The candidate diagonal second-order plant correction is
+
+    d_a = sum_j w_j f_a(mu_j),
+    f_a(mu)=sum_b |B_ba|^2/(E_a-E_b-mu).
+
+The calibration target is `d_a-d_0 = [(L_W)_aa-(L_W)_00]/t_*`. This formula, its full-space origin and the signs of its denominator still require an independent check. The following argument assumes that displayed formula and proposes an exact positive-weight solution.
+
+## 2. A positive-cone calibration argument
+
+For each a>0 put `Delta_a=E_a-E_0` and `b_a=|B_0a|^2>0`. Because positive gaps are distinct, only component a of the difference vector
+
+    F(mu)=(f_1(mu)-f_0(mu),...,f_(d-1)(mu)-f_0(mu))
+
+has a pole at `mu=Delta_a`, with residue in the convention
+
+    F(Delta_a-delta) = (b_a/delta)e_a + O(1),
+    F(Delta_a+delta) = -(b_a/delta)e_a + O(1).
+
+Choose one sufficiently small positive delta so every chosen energy is positive and distinct, lies away from all other gaps, and the normalized columns
+
+    Vplus[:,a]=(delta/b_a) F(Delta_a-delta),
+    Vminus[:,a]=(delta/b_a) F(Delta_a+delta)
+
+satisfy `Vplus -> I`, `Vminus -> -I`. Set `M=-inverse(Vplus)Vminus`. For small enough delta, `M 1` is entrywise positive, for example above 1/2. Then
+
+    Vplus (M 1) + Vminus 1 = 0
+
+is a strictly positive dependence among the 2(d-1) columns. For any target vector y, `(inverse(Vplus)y,0)` is a real signed solution. Add `t (M1,1)` with t sufficiently large to make every coordinate strictly positive. Multiplying coordinate a of each half by `delta/b_a` gives strictly positive physical weights w at the two selected energies. Their sum is finite. Normalize to root weights and choose `v_p=sqrt(sum_j w_j)`.
+
+This is an exact finite-dimensional positive-cone argument, rather than the informal claim that poles 'suggest spanning'. It also leaves room for extra fixed positive spectral weights at additional distinct positive energies: subtract their finite contribution from y before solving. Extra support can supply enough bus sites for distinct source attachments. All energies can stay in fixed compact neighborhoods and the constructive choice of t can remain bounded on a sufficiently small closed neighborhood of the initial parameters. Consequently the proposed bus's base local coefficients need not grow with source length merely because extra spectral noncoincidences must be selected later.
+
+Open checks: the inverse spectral construction must produce actual finite nearest-neighbor qubit blocks with the chosen root measure; all selected root-to-attachment responses at the Bohr frequencies must be nonzero simultaneously; the calibration formula must be checked on the full proposed architecture. A Jacobi root-to-endpoint Green entry is nonzero away from poles, but the corresponding assertion for many interior attachments is not automatic. In particular, positivity of the root weights alone does not prove all required numerator minors avoid zero on the calibrated family. This response/geometry issue is not closed by the cone argument.
+
+## 3. Proposed exact source self-energy form
+
+Consider one N-qubit ferromagnetic source with symmetric spin S=N/2 code. Let `|k>` denote its normalized symmetric k-excitation vector. A boundary lowering operator has
+
+    ||sigma_-^1 |k>||^2 = k/N,
+    ||P sigma_-^1 |k>||^2 = k(N-k+1)/N^2,
+    ||Q sigma_-^1 |k>||^2 = k(k-1)/N^2.
+
+The first two identities follow directly from the symmetric basis and `P sigma_-^1 P=S_-/N`; the last is their difference. A single local spin operator applied to the maximal-spin irreducible representation reaches only spin S and S-1. Since the ferromagnetic Laplacian commutes with global SU(2), its resolvent acts identically on the magnetic index within each fixed multiplicity space. This suggests the following exact form for the boundary resolvent contraction, for each fixed bus mode and a nonzero separation from its spectrum:
+
+    P sigma_+^1 (L_F + c)^(-1) sigma_-^1 P
+       = a_N k(N-k+1)/N^2 + b_N k(k-1)/N^2
+
+as a diagonal operator on `|k>`. Here `a_N=1/c`; `b_N` is a fixed matrix element of the reduced spin-S-1 resolvent, independent of k. The normalization can be defined from k=N, where the nonsymmetric boundary vector has norm squared `(N-1)/N`; the ratio to the general k squared norm is `k(k-1)/(N(N-1))`. This is a proposed representation-theoretic derivation; the identification of a common multiplicity vector across k and the precise denominators must be proved, not asserted from the squared norms alone.
+
+If the formula holds, the source self-energy is a polynomial of degree at most two in k. It can be canceled *exactly on the symmetric code* with actual source onsite and nearest-neighbor density blocks, because
+
+    P sum_j n_j P = k,
+    P sum_(j=1)^(N-1) n_j n_(j+1) P = k(k-1)/N.
+
+The second-order physical counterterms are multiplied by xi^2. Their N-dependent coefficients and full-space norms must be included when xi is chosen, and negative coefficients require their real positive block reserves. The effective cancellation is not permission to delete the installed reserve phase. Such counterterms need not preserve the code off shell; that is allowed by the finite second-order corrector but must be accounted for in Z2 and its residual.
+
+Different-frequency source transfers generated at second order have zero secular projection when all Bohr frequencies are distinct. The old-plant self-energy is diagonal for simple H. Old/source cross terms can survive only at matching Bohr gaps. These statements concern the actual two-step matrix elements; a degeneracy of the total code F alone must not be mistaken for permission to discard additional allowed processes without inspecting those matrix elements.
+
+## 4. Separation and phase-independent choices
+
+The full Q/P spectrum condition must cover every bus excitation sector and every nonsymmetric source sector. A qubit XY Jacobi bus is a free-fermion path; if the boundary convention is checked, its many-body energies are sums of its one-particle energies. For fixed finite source lengths, the forbidden equalities between code and Q energies then involve finite sums of bus energies, old energies, source fields and ferromagnetic eigenvalues. With independently variable positive ferromagnetic scales, any equality involving a nonsymmetric source excitation has a nonzero coefficient on at least one such scale. An equality involving a bus excitation depends on at least one bus energy.
+
+This motivates selecting bus energies and ferromagnetic scales inside fixed open compact intervals after N is chosen, avoiding finitely many spectral equalities. A proof must show that the calibrated family has enough free parameters that none of the required exclusions is identically imposed by calibration. In addition, the response nonzeros in section 2 must hold. A finite search using certified eigenvalue intervals can verify strict separation once found; an unproved genericity claim is not a termination proof.
+
+If the response/calibration/separation requirements can be met, all inverse gaps may depend badly on N but are finite and known before xi is chosen. The original section-8 implication then permits xi to be reduced after computing every correction and local-load bound. This gives a bounded incident load with no polynomial runtime promise. It does not assume a gap uniform in N.
+
+Initial coherent phases are set only after T=t_*/xi^2 is fixed, to reproduce the factors exp[i(E_a-E_b)T] in the target's actual-time aging. Their choice must change neither the selected Hamiltonian nor the constants used to choose xi. The mean-field fluctuation coefficient should then depend only on the fixed target matrix entries: a sum of fixed coefficients times `1/sqrt(N_l)`, after exact source-self-energy cancellation. This last statement needs a complete operator proof retaining every source output.
+
+## 5. Disposition
+
+The positive-cone algebra is a concrete candidate lemma. The source self-energy tensor argument is a candidate lemma with an identified multiplicity-vector step. The simultaneous interior Green responses, calibrated-family full separation, actual bounded-degree geometry, complete fluctuation estimate and all phase/reserve accounting remain open. Even their resolution would cover only the additional strong spectral assumptions, not every plant admitted by the prior polynomial certificate.
+
+No edits to physical axioms or editable prompts; no science merge, audit, or external message. This document should be frozen before any exposed worker comparison, and its unsuccessful routes must remain recoverable.

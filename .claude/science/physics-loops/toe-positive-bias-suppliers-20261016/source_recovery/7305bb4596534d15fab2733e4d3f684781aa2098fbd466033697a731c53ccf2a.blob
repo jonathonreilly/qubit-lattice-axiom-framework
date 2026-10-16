@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-16T02:03:01.597195+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/original/execution_02/check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/original/execution_02",
+  "timeout_seconds": 60,
+  "max_matrix_dimension": 4,
+  "sources_at_launch": [
+    {
+      "path": "check.py",
+      "bytes": 3089,
+      "sha256": "4bfec02501fb685719b9ac202ad1bbbec8d93c8b8485488cf86acae75420eb1e"
+    },
+    {
+      "path": "run.py",
+      "bytes": 1547,
+      "sha256": "d3a96ae91bbcb7c1a5fc6eb3a031548a427013e2bebcba332b5ccd25f5f78b6a"
+    }
+  ],
+  "candidate_read_before_launch": false,
+  "known_exposure": "parent equations and intent to test an escape from the first-site-only obstruction",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

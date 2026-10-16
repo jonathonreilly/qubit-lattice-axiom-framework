@@ -1,0 +1,67 @@
+{
+  "kind": "actual_root_refresh_provenance",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e45b2fb1a398a8dff54f063c67290c81b66d03ca928a6ffff7de35ab41d1f9b0.json",
+      "bytes": 2455,
+      "sha256": "e45b2fb1a398a8dff54f063c67290c81b66d03ca928a6ffff7de35ab41d1f9b0"
+    },
+    "root_binding": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/b0d3301ec74501352507914a4d8044f1437d46d31a5ce307b3e536412e2b6752.json",
+      "bytes": 1660,
+      "sha256": "b0d3301ec74501352507914a4d8044f1437d46d31a5ce307b3e536412e2b6752"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/dec887c8cf29126b35f704bf9c2a0005c47463e82e56c113ab0c188f12b31a88.json",
+      "bytes": 1564,
+      "sha256": "dec887c8cf29126b35f704bf9c2a0005c47463e82e56c113ab0c188f12b31a88"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/bfafe612882d53685a742cb40f7dc76e17674c5cf25e42597e1410feee606b72.json",
+      "bytes": 439,
+      "sha256": "bfafe612882d53685a742cb40f7dc76e17674c5cf25e42597e1410feee606b72"
+    },
+    "inventory": {
+      "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/43f8671ba3bafa70dec623441e814e8b228878c3c1c7b5a44cc551005660ce61.blob",
+      "bytes": 24400,
+      "sha256": "43f8671ba3bafa70dec623441e814e8b228878c3c1c7b5a44cc551005660ce61"
+    },
+    "actual_refresh_receipts": [
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/42dfa1456206975704cf3914fbb95203e21a0ecfc2551f4f80ccab6d7e2c8f2c.json",
+          "bytes": 1234,
+          "sha256": "42dfa1456206975704cf3914fbb95203e21a0ecfc2551f4f80ccab6d7e2c8f2c"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+          "bytes": 179,
+          "sha256": "3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44"
+        }
+      },
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/26cc23ed369a2559e6053c469bbee1562371e0b1f31d1cd18415a55f52b06292.json",
+          "bytes": 1303,
+          "sha256": "26cc23ed369a2559e6053c469bbee1562371e0b1f31d1cd18415a55f52b06292"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/43f8671ba3bafa70dec623441e814e8b228878c3c1c7b5a44cc551005660ce61.blob",
+          "bytes": 24400,
+          "sha256": "43f8671ba3bafa70dec623441e814e8b228878c3c1c7b5a44cc551005660ce61"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-positive-bias-suppliers-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    ]
+  },
+  "scope": "Actual Git observation and historical publication receipts. Git ancestry does not add a mathematical premise."
+}

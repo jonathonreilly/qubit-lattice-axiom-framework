@@ -1,0 +1,131 @@
+{
+  "frozen_utc": "2026-10-16T02:05:22.211178+00:00",
+  "status": "Exposed conditional proof candidate completing root-proposed positive-chain induction; pending supervising scientific review, not retained/audited/native.",
+  "claim_scope": "Specified occupied nearest-neighbor Hamiltonian path with ability to add the displayed positive onsite/edge blocks; arbitrary computable original H retained coefficient one; leading Gram coefficient supplies arbitrarily small strong biases.",
+  "core_result": "Explicit analytic remainder and rational omega/g selection; exact positive block scalar/load accounting; positive degree m(m+1) leading Gram coefficient independent of H; qualified static-bias composition.",
+  "not_claimed": [
+    "Original single-port hypotheses imply old path interaction access",
+    "Every occupied graph has a Hamiltonian path",
+    "Vacant-box filling extension",
+    "Efficient runtime or precision",
+    "Native preparation/calibration/timing/energy/records/reset",
+    "Blind or independent-model-family proof",
+    "Retained audit status"
+  ],
+  "scientific_run_count": 1,
+  "scientific_execution_source_sha256": "e2cd05674e2a811709f901d2ec7537bca20b4a235dd9f4a73f4a701c0683e55e",
+  "source_verification_utc": "2026-10-16T02:05:22.208655+00:00",
+  "editable_prompts_changed": [],
+  "members": [
+    {
+      "path": "AUTHOR_CHECK.md",
+      "bytes": 4779,
+      "sha256": "991d79ebf3ff326c11e840af932c0052d0f6a2fb7881ee8e9354c166eda1d0ae"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1489,
+      "sha256": "1ce23123903b3f86c0abf182b608b8e7b3e24e5a96c6c3291a9f11cccebbb59b"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+    },
+    {
+      "path": "SOURCE_EXPOSURE.md",
+      "bytes": 3270,
+      "sha256": "ebeeb488ccdce7dc970563880b0ebc098bb9f53e13cb66affed190d47a417c52"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 3166,
+      "sha256": "5260ff81a10d2bacd6f97746ac21269b6a5408090b993cc3ee383a3be815660c"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 3628,
+      "sha256": "97a23b12ff544523d59dd60b3f8943e395eb61d2496e59d7eaa127596000d1bc"
+    },
+    {
+      "path": "check_induction.py",
+      "bytes": 6079,
+      "sha256": "e2cd05674e2a811709f901d2ec7537bca20b4a235dd9f4a73f4a701c0683e55e"
+    },
+    {
+      "path": "check_run_01/EXECUTION.json",
+      "bytes": 1758,
+      "sha256": "c0cdb61ef9596605f204809b51d0027943009b27af5b80c58bade608f888c095"
+    },
+    {
+      "path": "check_run_01/LAUNCH.json",
+      "bytes": 1471,
+      "sha256": "bd6cff4dca7c0f88dd02b27f0203f5eb7e3c3009890a98d10c15a612e05c2ea5"
+    },
+    {
+      "path": "check_run_01/SOURCE_MANIFEST.at_launch.json",
+      "bytes": 3166,
+      "sha256": "5260ff81a10d2bacd6f97746ac21269b6a5408090b993cc3ee383a3be815660c"
+    },
+    {
+      "path": "check_run_01/check_induction.at_launch.py",
+      "bytes": 6079,
+      "sha256": "e2cd05674e2a811709f901d2ec7537bca20b4a235dd9f4a73f4a701c0683e55e"
+    },
+    {
+      "path": "check_run_01/launcher.at_launch.py",
+      "bytes": 2035,
+      "sha256": "745bf52b886b72daf47a318c071ffad18948bf4ecf054940af23f6e24f8132fb"
+    },
+    {
+      "path": "check_run_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "check_run_01/stdout.json",
+      "bytes": 2385,
+      "sha256": "fc36b8dbbac46b93e7216b20ce6135dddf108443e069267b0f85e650d7a389e5"
+    },
+    {
+      "path": "run_check.py",
+      "bytes": 2035,
+      "sha256": "745bf52b886b72daf47a318c071ffad18948bf4ecf054940af23f6e24f8132fb"
+    },
+    {
+      "path": "source_snapshots/positive_chain_root_proposal__FREEZE.json",
+      "bytes": 421,
+      "sha256": "6cec718597b8c7a16b013768253596e9e3aff91f141b5796fde67fc1e60f9424"
+    },
+    {
+      "path": "source_snapshots/positive_chain_root_proposal__PROPOSED_LEMMAS.md",
+      "bytes": 4941,
+      "sha256": "7ea5ccf8026d1cc7338e20617ceb90e4d5908c8ec5aeab01cf1c96bf05b726fb"
+    },
+    {
+      "path": "source_snapshots/static_bias_transfer_candidate__DERIVATION.md",
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "path": "source_snapshots/static_bias_transfer_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "path": "source_snapshots/static_bias_transfer_root_review__QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    {
+      "path": "source_snapshots/strongly_regular_bus_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    },
+    {
+      "path": "source_snapshots/strongly_regular_bus_root_review__QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    }
+  ]
+}

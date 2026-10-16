@@ -1,0 +1,93 @@
+{
+  "frozen_utc": "2026-10-16T02:19:02.114738+00:00",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW.md",
+    "bytes": 21138,
+    "sha256": "ac486c1c75de92cd5da05ceeed178ad2fddf2d7a3ddde214f7889df92b084239"
+  },
+  "verdict": "No material defect found; recommend conditional mathematical source acceptance on the explicit occupied-path interaction domain",
+  "candidate_derivation_sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12",
+  "candidate_freeze_sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7",
+  "independence": "Exposed same-model review; no independent claim for reviewer-authored parents",
+  "scientific_runs": 1,
+  "retained_audit": false,
+  "native_realization": false,
+  "padding_extension_imported": false,
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/CHECKPOINT.md",
+      "bytes": 2051,
+      "sha256": "3414e130addf23b951dcbd23c685d9a926b75d080fd8945bc12c5735135d73ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/PROOF_FINDINGS_BEFORE_CODE.md",
+      "bytes": 4257,
+      "sha256": "51268b74a4c9bcf82207fe56e6c910050b564e69daac32a970c484bab38b0701"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/PROOF_FINDINGS_FREEZE.json",
+      "bytes": 385,
+      "sha256": "ba5023e8f2a9b649e92bf58ad2547ef8021e9d44237c5f5a23cbb6e56bbac3b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/REVIEW.md",
+      "bytes": 21138,
+      "sha256": "ac486c1c75de92cd5da05ceeed178ad2fddf2d7a3ddde214f7889df92b084239"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/SOURCE_MANIFEST.json",
+      "bytes": 10418,
+      "sha256": "5db99127fa3b389c181fb7a58e7f2aea1dd13f83515b4609515832979726733f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/VERIFICATION.json",
+      "bytes": 5731,
+      "sha256": "ef85024af6ffbcffc9e3dd478b6e0977b7427cde859e24f3ffe9771950d0b344"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/check_noncommuting_leading_term.py",
+      "bytes": 2201,
+      "sha256": "10b59ff26e2a4120b4a575b0cd592303506c3cc26516d5f5212082bb907f90a5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/EXECUTION.json",
+      "bytes": 1846,
+      "sha256": "d1277402d3440ac391fcc32b89729cae996da76dc6f4e07812d72eb83e98c8a6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/LAUNCH.json",
+      "bytes": 1149,
+      "sha256": "917ceb11e081585b89da5a18af2feae877711331f7d6faf6af08abac3bd710ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/executed_source.py",
+      "bytes": 2201,
+      "sha256": "10b59ff26e2a4120b4a575b0cd592303506c3cc26516d5f5212082bb907f90a5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/launcher_at_launch.py",
+      "bytes": 1980,
+      "sha256": "0248c2db9a9ce1cc233a345a8333c4ea72a2b681afe6a460fb6212398962a295"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/noncommuting_check/stdout.json",
+      "bytes": 1062,
+      "sha256": "d2fae998b1627bbabe1c31d56474bbf5a8a5ff55081d0ea6520ff66dcb793154"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/run_reviewer_check.py",
+      "bytes": 1980,
+      "sha256": "0248c2db9a9ce1cc233a345a8333c4ea72a2b681afe6a460fb6212398962a295"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_exposed_check/seal_review.py",
+      "bytes": 10955,
+      "sha256": "526e47d1952e6de375caebcffb865682d0591869ca34d0aa8b46996ac10abf6b"
+    }
+  ]
+}

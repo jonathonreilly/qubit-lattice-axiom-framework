@@ -1,0 +1,9 @@
+# Recovery and exposure scope
+
+The nine unchanged bodies are the transfer proof, chain proof, edge proof, padding review, separately attributed onsite obstruction appendix, and four controlling qualifications. They occur once each in the note. SOURCE_MANIFEST records exact zero-based half-open intervals or content-addressed archive blobs. All members of eight selected author/reviewer/proposal freezes are freshly checked and recovered, together with their original freezes. Direct source records pinned by each acceptance are also checked. The exact parent note and publication record are recovered as snapshots.
+
+Nested historical manifests are retained as bytes, not recursively expanded into every upstream workspace or publication archive. The archive map gives the precise closure actually recovered. An archived source is not necessarily newly read scientifically by this packaging worker. Historical sources and receipt schemas, missing-field limitations, failed runs, status text and no-go diagnostics remain unchanged. The primary verifies provenance only and does not replay or certify historical science.
+
+This worker reuses its own completed immutable chain and padding proof/evidence reads and the previously read transfer/qualified-bus arguments at unchanged hashes. The current task freshly reads the four actual acceptances and qualifications, complete explicit-edge author/reviewer arguments, the narrow onsite appendix and bounded packaging templates. The parent source hash is refreshed without claiming a current HEAD check. The exposed chain reviewer was not newly independently re-reviewed here; its source and evidence are archived and its exact root qualifications control the wrapper.
+
+Source examples use the same model/effort and have documented task/equation exposure. No independent model family, blind example discovery, native physical implementation, favorable runtime or measured-energy result is inferred from this packaging.

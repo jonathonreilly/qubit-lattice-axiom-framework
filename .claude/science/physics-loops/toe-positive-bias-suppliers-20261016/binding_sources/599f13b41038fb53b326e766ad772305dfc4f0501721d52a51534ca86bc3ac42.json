@@ -1,0 +1,180 @@
+{
+  "kind": "root_source_publication_review",
+  "utc": "2026-10-16T03:31:16.509573+00:00",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/FINAL_FREEZE.json",
+    "bytes": 55240,
+    "sha256": "8b8c172a101b5cf35a4f542b55d7c5c3249da99dd78a896078805518dfe12d53"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/proposal/docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 133385,
+    "sha256": "414462de1db5e7d695bdfdb962dbd01861717c3e746ee097c96ea85723849452"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/proposal/scripts/positive_bias_suppliers_2026_10_16.py",
+    "bytes": 32369,
+    "sha256": "e794e135cb1774767a6f6185e84539645fdce51bb289e29a7c9572b439ffa694"
+  },
+  "body_pins": [
+    {
+      "name": "transfer_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 19219,
+      "end_byte_exclusive": 48774,
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "name": "occupied_path_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 48936,
+      "end_byte_exclusive": 70987,
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12"
+    },
+    {
+      "name": "explicit_edge_author",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 71149,
+      "end_byte_exclusive": 95935,
+      "bytes": 24786,
+      "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+    },
+    {
+      "name": "box_exposed_review",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 96095,
+      "end_byte_exclusive": 112676,
+      "bytes": 16581,
+      "sha256": "a747876323915e61a3b506f2d91380da6c365e002c089f32ed0a03bc453ff414"
+    },
+    {
+      "name": "narrow_onsite_obstruction_appendix",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 112852,
+      "end_byte_exclusive": 118181,
+      "bytes": 5329,
+      "sha256": "4db3c5e627558505aa767f4b62d67c1ca809c141506db1a376e5c7cff0579a57"
+    },
+    {
+      "name": "transfer_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 118357,
+      "end_byte_exclusive": 122807,
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911"
+    },
+    {
+      "name": "edge_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 122979,
+      "end_byte_exclusive": 125310,
+      "bytes": 2331,
+      "sha256": "fad54208ad4fe2aaeaa81f3699231cd1ab8e7a0fbbad9d28fc193fdb7ae63d0e"
+    },
+    {
+      "name": "chain_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 125483,
+      "end_byte_exclusive": 128854,
+      "bytes": 3371,
+      "sha256": "bf868c7fa27b24cae2586a1cb1dfb1c56a55778b1817879ef6e3445f23537a5f"
+    },
+    {
+      "name": "box_acceptance_qualifications",
+      "container": "docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 129025,
+      "end_byte_exclusive": 133385,
+      "bytes": 4360,
+      "sha256": "766121bc9ab9d91b2f29744723560b4f2113bee7df262f88029171e021dc75a2"
+    }
+  ],
+  "parent_binding": {
+    "direct_mathematical_parents": [
+      {
+        "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 83919,
+        "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+        "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+        "source_use": "qualified complete routed-bus theorem including rational-target repair, resources and supplied implementation premises"
+      }
+    ],
+    "parent_publication_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/PUBLICATION.json",
+    "supplied_parent_head": "68c531309ac6dae96289aab964213b8c5f55969b",
+    "current_local_head_observation": null,
+    "git_ancestry_is_not_dependency_rule": true,
+    "older_compiler_mediator_sources": "context and supplied-interface quotations, not imported theorem conclusions for this composition",
+    "standalone_transitive_theorem_files": [],
+    "scope": "The qualified bus source supplies its complete finite argument; later native physical supplies remain assumptions."
+  },
+  "source_acceptances": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3600,
+      "sha256": "440ae5bf806f3487a273e3c1092f9b65c1c186afccb649323996805d09881357"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 4440,
+      "sha256": "382531923d20c156d6d05b6a440b26ac11af64e934950738e14fbd452c9a24e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 4067,
+      "sha256": "89eec7c08dbbeedfe0ca311d1dcc4065a125870b6c59ea4829afccd105fee80f"
+    }
+  ],
+  "read_coverage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_positive_bias_publication_review/READ_COVERAGE.md",
+    "bytes": 2701,
+    "sha256": "d7539d99ddd4bfe5797636d54c15baaa5e21096c3a35aca6b8c2a9a9f3c69622"
+  },
+  "verified_freeze_members": 206,
+  "verified_original_members": 217,
+  "source_records": 284,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/metadata_runs/build_01/EXECUTION.json",
+      "bytes": 2370,
+      "sha256": "7ee594dfc112e0d77dfbe03c20b5b5da58253587c6ea83f24e123ec9529c6667"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/metadata_runs/controls_01/EXECUTION.json",
+      "bytes": 2521,
+      "sha256": "8499b04cc1ca8d9074c9dab3dcddc19cad0ef38147bd9aacf235b0a50b0cbea1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/metadata_runs/default_refusal_01/EXECUTION.json",
+      "bytes": 2522,
+      "sha256": "c9b0cad7309adf7aa9ac866991a6c5d868d6be209b9e97486d8310e87b7e5b05"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/metadata_runs/inspection_01/EXECUTION.json",
+      "bytes": 2386,
+      "sha256": "8bdd9047c77f03a81419fa02f43ccec2ea1d9c186c8d62e1665008afb10021c8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_publication_draft/metadata_runs/integrity_01/EXECUTION.json",
+      "bytes": 2518,
+      "sha256": "6178d0a4a0a3da1a3aa26af7ffc05298e7ecb795326aeed0ff20cd962b08f1fd"
+    }
+  ],
+  "decision": "Accept reviewed source-preserving positive conditional theorem package for separate root integration; canonical binding remains pending.",
+  "static_bias_no_go_submission": "FAIL/partial-narrowing",
+  "scientific_programs_run_this_review": 0,
+  "historical_programs_replayed": 0,
+  "canonical_primary_runs": 0,
+  "limits": [
+    "New source-only code checks identity, not mathematics.",
+    "No blind replication, native device supplier, measured energy or retained audit.",
+    "Actual Git base and canonical changed content remain to be reviewed and bound."
+  ],
+  "editable_prompt_files_changed": []
+}

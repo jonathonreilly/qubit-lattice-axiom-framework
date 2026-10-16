@@ -1,0 +1,10 @@
+{
+  "verified_utc": "2026-10-16T02:03:38.062899+00:00",
+  "prior_transfer_review_freeze": {
+    "bytes": 12919,
+    "sha256": "763daec5e1b3a28b1011cf43a30e2ce79db900142afd3334d3bbd159dbc60ef6"
+  },
+  "prior_transfer_members_unchanged": 76,
+  "candidate_files_read": false,
+  "both_execution_source_and_launcher_captures_verified": true
+}

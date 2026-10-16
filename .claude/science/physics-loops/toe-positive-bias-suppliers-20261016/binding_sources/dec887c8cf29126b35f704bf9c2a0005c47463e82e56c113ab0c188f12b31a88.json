@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T04:24:18.346777+00:00",
+  "baseRefName": "physics-loop/toe-strongly-regular-bus-20261015",
+  "headRefName": "physics-loop/toe-bus-joint-energy-moments-20261016",
+  "headRefOid": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+  "isDraft": false,
+  "number": 9633,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9633",
+  "tree": "cf1f6b8660870146a2c38a6c29bafe9a747b31ed",
+  "base_head": "68c531309ac6dae96289aab964213b8c5f55969b",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 36025,
+    "sha256": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_joint_energy_moments_2026_10_16.py",
+    "bytes": 28920,
+    "sha256": "77661a31635bf2faa2680febc570f1f9222068346aaaa3a00d2e3dc719f90db4"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/PR_BODY.md",
+    "bytes": 1836,
+    "sha256": "51cbbee1306c6f817fb80b0142cc2294dd392eaf52a7d6a75201750017edea82"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

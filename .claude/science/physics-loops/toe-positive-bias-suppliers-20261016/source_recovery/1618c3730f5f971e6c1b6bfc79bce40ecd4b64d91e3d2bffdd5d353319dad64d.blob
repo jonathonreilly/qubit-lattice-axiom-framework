@@ -1,0 +1,51 @@
+"""Record one bounded exact check and preserve its source before launch."""
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+base = Path(__file__).resolve().parent
+run = base / "runs" / "exact_bell_probe"
+run.mkdir(parents=True, exist_ok=False)
+source = base / "exact_bell_probe.py"
+captured = run / "executed_source.py"
+captured.write_bytes(source.read_bytes())
+
+def identity(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+argv = [sys.executable, str(captured)]
+started = datetime.now(timezone.utc).isoformat()
+t0 = time.monotonic()
+timeout = False
+with (run / "stdout.txt").open("wb") as stdout, (run / "stderr.txt").open("wb") as stderr:
+    try:
+        result = subprocess.run(argv, cwd=base, stdout=stdout, stderr=stderr, timeout=50, check=False)
+        code = result.returncode
+    except subprocess.TimeoutExpired:
+        timeout = True
+        code = None
+ended = datetime.now(timezone.utc).isoformat()
+record = {
+    "argv": argv,
+    "cwd": str(base),
+    "start_utc": started,
+    "end_utc": ended,
+    "elapsed_seconds": time.monotonic() - t0,
+    "exit_code": code,
+    "timed_out": timeout,
+    "limits": {"outer_timeout_seconds": 50, "child_alarm_seconds": 40, "largest_matrix_dimension": 4, "no_child_processes_or_network": True},
+    "source_at_launch": identity(source),
+    "executed_source": identity(captured),
+    "recorder": identity(Path(__file__).resolve()),
+    "stdout": identity(run / "stdout.txt"),
+    "stderr": identity(run / "stderr.txt"),
+    "interpretation": "Author consistency check, not independent proof or physical supply evidence"
+}
+(run / "EXECUTION.json").write_text(json.dumps(record, indent=2) + "\n")
+print(json.dumps(record, indent=2))
+sys.exit(code if code is not None else 124)

@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/run_01/check_padding.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/run_01",
+  "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check/check_padding.py",
+  "source_sha256": "d97d9f2c1ccd25f14063ca1346b60b27fd93f79d18050124735abb4c9cfd3b50",
+  "launcher_source_sha256": "86fcaaa081577fa97cfde37ca18ea4b9cd66747b2e351c57c97b70c468c76315",
+  "launcher_orig_argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "run_check.py"
+  ],
+  "launcher_cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_exposed_check",
+  "source_manifest_sha256": "ca33fa1582bc874341f37ac56f4ee0c3d35bec9f09075fb17ea1756720d3e5e4",
+  "started_utc": "2026-10-16T02:15:38.304831+00:00",
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "finished_utc": "2026-10-16T02:15:38.919483+00:00",
+  "elapsed_seconds": 0.6094479998573661,
+  "stdout_sha256": "498d0d07e1d8be28b945ba2966939ed592a8d364132ff3ee2c0ce1e44e2082d9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,25 @@
+"""Seal pre-candidate original derivation and exact execution attempts."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+root=Path(__file__).resolve().parent
+def identity(p):
+    d=p.read_bytes();return {'bytes':len(d),'sha256':hashlib.sha256(d).hexdigest()}
+def verify(base,rows):
+    for row in rows:
+        actual=identity(base/row['path']);assert actual['bytes']==row['bytes'] and actual['sha256']==row['sha256'],row['path']
+prior=root.parent.parent/'static_bias_transfer_exposed_check'
+assert identity(prior/'REVIEW_FREEZE.json')['sha256']=='763daec5e1b3a28b1011cf43a30e2ce79db900142afd3334d3bbd159dbc60ef6'
+old=json.loads((prior/'REVIEW_FREEZE.json').read_text());verify(prior,old['members'])
+for name in ['execution','execution_02']:
+    launch=json.loads((root/name/'LAUNCH.json').read_text());verify(root/name,launch['sources_at_launch'])
+assert json.loads((root/'execution/RESULT.json').read_text())['exit_code']==1
+assert json.loads((root/'execution_02/RESULT.json').read_text())['exit_code']==0
+(root/'SOURCE_REFRESH.json').write_text(json.dumps({'verified_utc':datetime.now(timezone.utc).isoformat(),'prior_transfer_review_freeze':identity(prior/'REVIEW_FREEZE.json'),'prior_transfer_members_unchanged':len(old['members']),'candidate_files_read':False,'both_execution_source_and_launcher_captures_verified':True},indent=2)+'\n')
+excluded={'ORIGINAL_FREEZE.json','ORIGINAL_FREEZE.sha256'}
+members=[{'path':str(p.relative_to(root)),**identity(p)} for p in sorted(root.rglob('*')) if p.is_file() and str(p.relative_to(root)) not in excluded]
+freeze={'frozen_utc':datetime.now(timezone.utc).isoformat(),'candidate_exposed':False,'known_exposure':'Parent-supplied equations and escape-search purpose; inherited prior transfer/Heisenberg context; same model.','members':members}
+path=root/'ORIGINAL_FREEZE.json';assert not path.exists();path.write_text(json.dumps(freeze,indent=2)+'\n')
+seal=identity(path);(root/'ORIGINAL_FREEZE.sha256').write_text(seal['sha256']+'  ORIGINAL_FREEZE.json\n')
+verify(root,members)
+print(json.dumps({'original_derivation':identity(root/'DERIVATION.md'),'original_freeze':seal,'members_verified':len(members),'frozen_utc':freeze['frozen_utc']},indent=2))

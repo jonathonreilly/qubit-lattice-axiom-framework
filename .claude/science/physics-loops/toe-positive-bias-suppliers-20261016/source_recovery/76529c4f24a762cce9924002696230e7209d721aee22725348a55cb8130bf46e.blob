@@ -1,0 +1,141 @@
+{
+  "created_utc": "2026-10-16T01:51:57.909476+00:00",
+  "status": "Frozen exposed author candidate; not independent scientific acceptance",
+  "supplied_source_context": {
+    "worktree_commit": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+    "main_commit": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+    "note": "Commit identities supplied by parent; no Git command run for this task. Actual source content identities verified individually."
+  },
+  "exposure": "The root task supplied H=3I+XX+YY+ZZ, C=10I+2YY+8ZZ, and B=X+2Y+3Z on the first qubit as a proposed candidate, not an accepted result. No other new candidate or worker derivation was inspected.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_pencil_counterexample_probe/heisenberg_static_port_probe.py",
+      "bytes": 3667,
+      "sha256": "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22",
+      "id": "parent_onsite_probe",
+      "expected_sha256": "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22",
+      "read_coverage": "Complete current source read; exact onsite-obstruction mechanism restated. Lie rank computation not rerun or independently revalidated."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/EXECUTION.json",
+      "bytes": 1787,
+      "sha256": "cd4ba4a21af2ecb9e21203f1baeaf8b112de3d3f49ef0cb22fd89a7749e0e386",
+      "id": "parent_probe_receipt",
+      "expected_sha256": null,
+      "read_coverage": "Complete current receipt read and its named source/stream identities verified."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/executed_source.py",
+      "bytes": 3667,
+      "sha256": "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22",
+      "id": "parent_probe_executed_source",
+      "expected_sha256": "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22",
+      "read_coverage": "Hash verified equal to the completely read current source and recorded source-at-launch."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/stdout",
+      "bytes": 5038,
+      "sha256": "e88c992762f2ad7e0f746d2d5d8adf0bbba5bd61690197241addae9007c32dd4",
+      "id": "parent_probe_stdout",
+      "expected_sha256": "e88c992762f2ad7e0f746d2d5d8adf0bbba5bd61690197241addae9007c32dd4",
+      "read_coverage": "Complete current stream read; root author evidence, not independent evidence."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/heisenberg_static_port_probe/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "id": "parent_probe_stderr",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_coverage": "Complete current stream read; empty."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/DERIVATION.md",
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6",
+      "id": "frozen_bias_transfer",
+      "expected_sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6",
+      "read_coverage": "Complete original author source reused unchanged; all current 309 lines reread in two overlapping chunks. Only conditional substitution is claimed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/FREEZE.json",
+      "bytes": 6970,
+      "sha256": "3cce08e1453052a8b4db806a939f5b3ecc852afb258f10cdfffb25697e64a8ba",
+      "id": "frozen_bias_transfer_freeze",
+      "expected_sha256": null,
+      "read_coverage": "Prior freeze metadata identity retained; no changes to the previous packet."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/DERIVATION.md",
+      "bytes": 40500,
+      "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2",
+      "id": "frozen_strong_bus",
+      "expected_sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2",
+      "read_coverage": "Complete original author proof previously read and reused at unchanged identity; current lines 1-95 reread for exact spectral and exterior-geometry premises. No new independent validation."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/FREEZE.json",
+      "bytes": 9215,
+      "sha256": "2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508",
+      "id": "frozen_strong_bus_freeze",
+      "expected_sha256": null,
+      "read_coverage": "Prior freeze metadata identity retained; no changes to the previous packet."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "id": "accuracy_scaled_geometry",
+      "expected_sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "read_coverage": "Current lines 1-205 read completely, including existing-edge clause line 38. Other bodies not completely read in this task; no import of their compiler proof."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "id": "polynomial_mediator_geometry",
+      "expected_sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "read_coverage": "Current lines 350-407 read completely, including full root geometry contract. Prior root argument lines 364-584 read completely at the same identity. Other bodies not claimed read or imported."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "id": "composition_context",
+      "expected_sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "read_coverage": "Prior complete lines 1-684 reading reused at unchanged identity; current geometry text search only. Context, not a load-bearing premise of the Bell calculation."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "id": "captured_AGENTS",
+      "expected_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "read_coverage": "Complete instruction read in coherent campaign reused at verified identity, together with latest inline user instructions and bounded task restrictions."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "id": "captured_science_workflow",
+      "expected_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "read_coverage": "Complete prior instruction reading reused at verified identity; no generic backlog or audit workflow invoked."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "id": "captured_workhorse",
+      "expected_sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "read_coverage": "Complete prior instruction reading reused at verified identity; same inherited model/effort, no further delegation."
+    }
+  ],
+  "own_execution_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/EXECUTION.json",
+    "bytes": 2245,
+    "sha256": "5f83de1c10687813b657ba7df344f0103ae3d31292ee04761a4885a0d09b8f28"
+  },
+  "scope": "One specified two-qubit old plant and explicitly allowed scalable positive anisotropic bias on its existing edge; no generic-domain inference",
+  "editable_prompt_files_changed": [],
+  "scientific_checks": "One exact same-author run, matrices at most four by four; complete source-at-launch and streams preserved; not independent review"
+}

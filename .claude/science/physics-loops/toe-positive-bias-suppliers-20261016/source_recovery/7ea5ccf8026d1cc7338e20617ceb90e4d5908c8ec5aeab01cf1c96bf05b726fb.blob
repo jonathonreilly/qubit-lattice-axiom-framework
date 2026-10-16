@@ -1,0 +1,30 @@
+# Proposed positive chain supplier for a strong static spectrum
+
+Root proposal, 2026-10-16, dispatched for an exposed independent mathematical check. This is not accepted mathematics, a retained theorem or a physical supplier. It explicitly adds the ability to install positive blocks on existing old onsite/path edges; that permission is not derived from one accessible port. The occupied old graph must have a specified Hamiltonian path, with the chosen endpoint available for the parent's separate exterior geometry. No general graph reduction or native preparation is claimed.
+
+In fixed units, seek a computable nearest-neighbor n-qubit chain A_n with simple eigenvalues, distinct positive gaps, and every offdiagonal energy-basis entry of the endpoint operator B_n=I+X_n+Z_n nonzero. Start A_1=Z, B_1=I+X+Z. Given A with eigenvalues E_a and the required local B, attach one qubit:
+
+    A'(g)=A tensor I+omega I tensor Z+g B tensor X.
+
+Choose omega strictly larger than the old spectral range. At g=0 the simple energies are E_a+sigma omega. All positive cross-sign gaps exceed the old range and their nonzero E_a-E_b labels are distinct. The only repeated positive gaps are two copies of each old positive gap and the d copies of 2omega. The first energy derivative vanishes. The second-order coefficient is
+
+    d_(a,sigma)=sum_b |B_ab|^2/(E_a-E_b+2sigma omega),
+    D_a=d_(a,+)-d_(a,-)
+       =sum_b 4omega |B_ab|^2/[4omega^2-(E_a-E_b)^2].
+
+Splitting all those repeated gaps to second order reduces to D_a!=D_b for every a!=b. For d>=3, choose c distinct from a,b. The rational function D_a-D_b has a pole at |E_a-E_c|/2 with nonzero coefficient, absent from row b because all positive old gaps are distinct. Thus it is not identically zero. The initial d=2 step has diagonal B entries 2 and 0, giving difference 4/omega. A finite collection of nonzero rational functions has finitely many zeros, so some omega in any open interval above the old range avoids them all. A rational choice is possible. Analytic finite-matrix perturbation should then give strong spectral gaps at every sufficiently small positive g; the check must make this remainder/existence inference precise.
+
+For the new endpoint B'=I+X+Z, same-a opposite-sign transitions are nonzero already at g=0. For a!=b, with Delta=E_a-E_b, proposed first-order matrix elements are
+
+    same sign sigma: g B_ab *4sigma omega/(4omega^2-Delta^2),
+    opposite signs: -2sigma g B_ab/(Delta+2sigma omega).
+
+Check the conjugation and sign conventions. Both coefficients should be nonzero, which would maintain all endpoint transitions for sufficiently small g. Rational g can be found by strict Krylov-Gram positivity testing; mere floating genericity is insufficient.
+
+Make a fixed positive-block bias C_n=A_n+R_n I using onsite I+Z at the first site, omega(I+Z) at each added site and edge blocks g(3I+B tensor X). The latter is positive since ||I+X+Z||=1+sqrt(2)<3. Its g I tensor X contribution is part of the permitted edge operator, with support contained in that edge. All coefficients are finite, and the added incident cap is finite for each fixed chain. No -H cancellation or rescaling of any literal old term occurs.
+
+For arbitrary computable old H on those sites, consider the complex Hilbert-Schmidt Gram determinant of ad_(H+sC_n)^(j+1) B_n, j=0,...,m-1, m=d(d-1). It is a real nonnegative polynomial of degree at most m(m+1). Its highest coefficient is the positive Gram determinant for C_n, since each column has leading power s^(j+1). Hence the polynomial is nonzero even when H+C_n happens not to be strong. In any interval (0,Lambda), m(m+1)+1 distinct rational nodes cannot all vanish. Dovetailed strict lower bounds find a positive node under computable input names. This leading-coefficient argument could supply arbitrarily weak strong H+sC_n without separately assuming p(1)>0.
+
+If all steps hold, the already qualified static-bias transfer can use this supplied positive C_n, the selected small s and its pre-target uniform bounds. The original H remains installed with coefficient one and both literal old-time flows remain in the comparator. The new result would be conditional on the stated old-path interaction access, qualified bus geometry and physical preparation/calibration/timing suppliers. It would not establish efficient construction, native control access, favorable coefficient precision, measured-energy identification, records or reset/reuse.
+
+Exact existing premises are static_bias_transfer_candidate/DERIVATION.md SHA500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6 and static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json SHA8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b, including its full computable-input qualification. The agent positive_chain_strong_point_candidate must preserve failures, correct the proposal if necessary and distinguish exposed recomputation from blind independence.

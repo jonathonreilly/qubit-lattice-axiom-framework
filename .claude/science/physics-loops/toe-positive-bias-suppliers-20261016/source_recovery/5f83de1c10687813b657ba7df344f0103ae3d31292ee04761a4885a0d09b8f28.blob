@@ -1,0 +1,44 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate",
+  "start_utc": "2026-10-16T01:43:45.787554+00:00",
+  "end_utc": "2026-10-16T01:43:46.781448+00:00",
+  "elapsed_seconds": 0.9934081668034196,
+  "exit_code": 0,
+  "timed_out": false,
+  "limits": {
+    "outer_timeout_seconds": 50,
+    "child_alarm_seconds": 40,
+    "largest_matrix_dimension": 4,
+    "no_child_processes_or_network": true
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/exact_bell_probe.py",
+    "bytes": 8038,
+    "sha256": "c2729513574cf2695180cb946b6f3674d360814a5eec83c48f7af12a80b7fc74"
+  },
+  "executed_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/executed_source.py",
+    "bytes": 8038,
+    "sha256": "c2729513574cf2695180cb946b6f3674d360814a5eec83c48f7af12a80b7fc74"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/run_exact_check.py",
+    "bytes": 1900,
+    "sha256": "1618c3730f5f971e6c1b6bfc79bce40ecd4b64d91e3d2bffdd5d353319dad64d"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/stdout.txt",
+    "bytes": 6207,
+    "sha256": "eef262f0a6c2793346ef187364b9e6fd5bceaed76e1ea2d281d746cfa6898751"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "interpretation": "Author consistency check, not independent proof or physical supply evidence"
+}

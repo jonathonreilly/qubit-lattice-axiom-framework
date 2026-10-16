@@ -1,0 +1,383 @@
+# A bounded-strength weak-coupling route, with a complete one-qubit test case
+
+Status: original source proposal, author-checked only. This is not an independent check, accepted result, retained audit, native state supplier, or proof of the full arbitrary-plant target. The complete theorem below is restricted to one controlled old qubit with a single Bohr frequency (and arbitrary decoupled old spectators). The final sections expose the equations still needed for the general coupled plant. A restricted construction is a discriminator for a mechanism; it does not replace the task's general compiler contract.
+
+The source boundary is the composition at W commit `9ca474a32b3a4799d2d14cfee7580d77750422b4`, canonical SHA256 `baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007`. The frozen main and instruction identities supplied by the root are `bbada1fe09b2d10d610560864d86b68c24a59713` and `3a4b2c66a1ead7a1c48b4359627e968f681e3c39`. SOURCE_COVERAGE.md records exact read scope. No new root candidate or other worker's derivation has been consulted before freezing this proposal.
+
+## 1. Task and mechanism
+
+The requested general target, for a fixed finite plant and target W, is a family K_epsilon of static ordinary nearest-neighbor qubit Hamiltonians, with every literal old term in H physically present and one accessible old/new adjacency. At its own actual returned duration T and for all 0<=s<=w, the complete output must approximate a stated controller vector tensored with
+
+    exp(-isH) W exp(-iTH),
+
+including an explicit scalar phase, uniformly over arbitrary old/reference inputs. All added local blocks, counterterms and positive reserves must obey one incident-load cap J_* independent of epsilon. Added sites and runtime may grow. Supplied initialization, coefficients and calibration do not become native physical suppliers.
+
+The proposed change of mechanism is to use a large, low-energy ferromagnetic spin register as a coherent source and make its one physical port coupling weak. The source's collective signal remains finite after projection, while its fluctuation on a spin-coherent product state is O(N^-1/2). A shrinking ferromagnetic gap is paid by making the port coupling smaller, rather than increasing any edge penalty. In the exactly resonant one-qubit test case, useful rotation time is O(q^-1), so leakage error is O(q/gamma_N), not O(q^2 T) with an independently faster-growing compiler duration. The full accuracy inequalities can then be solved.
+
+This is different from rescaling H. The old generator has exactly its original coefficient, and a uniform source field at the same frequency keeps the old/source exchange resonant. The output is at the actual physical time T; only added couplings are weakened.
+
+## 2. Restricted theorem: hypotheses, geometry and installed terms
+
+Fix physical time unit t0>0, ferromagnetic coefficient J_F>0, window w>=0 and literal old qubit Hamiltonian
+
+    H = h_c I + omega n_p,   n_p=(I-Z_p)/2,
+
+with arbitrary real h_c, omega. Arbitrary additional old factors may be retained provided H=H_rest+omega n_p with H_rest acting on those factors alone, and W=W_p tensor I_rest. The proof uses this actual decoupling condition; an interaction between p and the rest is not covered. Every old/reference input, including entangled inputs, is allowed.
+
+Supply a target decomposition
+
+    W = exp(i theta0) exp[-i theta (r cos(phi0) X_p
+                                   + r sin(phi0) Y_p + z Z_p)],
+    0<theta<=pi,  r>=0,  r^2+z^2=1.
+
+This is a fixed target datum. The scalar case theta=0 has the exact free-old solution, with comparison phase theta0 and no source; it is handled separately and is never inserted into a division by T. A pure Z target r=0 is permitted by the formulas below.
+
+The occupied old set has an accessible exterior neighbor of p, and an unoccupied exterior ray extending from it. Append N qubits a_1,...,a_N on that ray, with only edges p-a_1 and a_j-a_(j+1). Existing sites are not moved, vacated, reset or identified with new ones. For the single-qubit plant an empty ray is automatic in the admitted infinite lattice; with spectators it is an explicit geometry condition. The added graph has N new sites, N new edges, new degree at most two, and exactly one old/new adjacency. All unlisted interactions are actually isolated or charged in the full-space calibration bound.
+
+Let sigma_+=|1><0|=(X-iY)/2, sigma_-=|0><1|=(X+iY)/2, and
+
+    N_A = sum_j n_(a_j),
+    L_F = J_F sum_(j=1)^(N-1) (I-SWAP_(a_j,a_(j+1))),
+    V = sigma_+^p sigma_-^(a_1) + sigma_-^p sigma_+^(a_1),
+    A = 2r V + z Z_p.
+
+Thus ||V||=1, ||A||<=2r+|z|<=3. Fix R_s>=||H|| if whole-generator positivity is wanted; it is an explicitly installed scalar onsite on p. If that additional positivity is not required, R_s=0 is allowed. Put r_omega=max(0,-omega). For a positive q selected below, install
+
+    K = H + R_s I
+        + L_F + sum_j [omega n_(a_j)+r_omega I_(a_j)]
+        + 2qr (V+I_(p,a_1))
+        + q(z Z_p+|z|I_p).                              (1)
+
+Every added block in (1) is positive. Source onsite blocks have norm |omega|; ferromagnetic edges have norm 2J_F; the port edge has norm 4qr; and the added nonscalar old onsite block has norm 2q|z|. R_s has norm R_s and is counted at p. Every literal old H term remains, and no -H compensation is present.
+
+The actual extracted scalar reserve is
+
+    R = R_s + N r_omega + 2qr + q|z|.                   (2)
+
+It is not an upper bound substituted for a phase. The full normalized scalar of the installed generator is
+
+    s_K = s_H + R_s + N|omega|/2
+          + (N-1)J_F/2 + 2qr + q|z|,                 (3)
+
+where s_H is the normalized trace of the complete literal H. The scalar (N-1)J_F/2 in the edge decomposition is physically present; its action cancels with the nonidentity part on the symmetric comparison state, because L_F annihilates that state. Equation (2) does not erase the other scalar terms in (3).
+
+## 3. A full-space ferromagnetic gap bound
+
+Let P_sym project the N source qubits onto their completely symmetric subspace and Q_sym=I-P_sym. The following bound is on the entire qubit Hilbert space:
+
+    L_F >= gamma_N Q_sym,       gamma_N=2J_F/N^2,      N>=2.   (4)
+
+Here is a self-contained comparison proof. Write s_k for the adjacent swap k,k+1 and s_ij for a general transposition. The latter is a product of 2(j-i)-1 adjacent swaps, each used at most twice. For any product U_1...U_L of unitaries,
+
+    U_1...U_L-I = sum_r U_1...U_(r-1)(U_r-I).
+
+Cauchy-Schwarz on this telescoping sum, together with
+||(I-s)psi||^2=2<psi,(I-s)psi>, gives
+
+    I-s_ij <= 4(j-i) sum_(k=i)^(j-1) (I-s_k)          (5)
+
+as a quadratic-form inequality. The coefficient of an edge k after summing (5) over i<j is
+
+    4 sum_(i<=k<j)(j-i) = 2N k(N-k) <= N^3/2.
+
+Consequently
+
+    C_N := sum_(i<j)(I-s_ij) <= (N^3/2) sum_k(I-s_k). (6)
+
+For S=(1/2)sum_j (X_j,Y_j,Z_j), direct Pauli expansion gives
+
+    C_N = [N(N+2)/4]I-S^2.
+
+The N spin-1/2 tensor representation has total spins S=N/2,N/2-1,...; this follows by successively adding one spin-1/2. The S=N/2 representation is exactly the symmetric subspace. On its orthogonal complement the largest Casimir is (N/2-1)(N/2), so C_N>=N Q_sym. Combining with (6) proves (4). The common kernel is also directly seen to be symmetric: every positive adjacent-swap block must annihilate a zero vector, and adjacent swaps generate all permutations.
+
+The proof does not use a one-excitation gap or presume that the source remains in one excitation sector. The prepared coherent state occupies many sectors. The bound is deliberately loose; no exact chain-gap formula is imported.
+
+## 4. Exact resonance and a bare-input corrector
+
+Set F=H+omega N_A, with identity factors understood. Then
+
+    [F,L_F]=[F,A]=0.                                  (7)
+
+Indeed the port exchange conserves n_p+N_A, every source swap conserves N_A, and Z_p commutes with both field parts. H_rest commutes because it is actually disjoint from p. Thus
+
+    exp(-itK)=exp(-itR) exp(-itF) exp[-it(L_F+qA)].      (8)
+
+No large-field approximation, rotating-wave approximation, rescaling of H or limit omega->0 is used.
+
+Now put P=I_old tensor P_sym, Q=I-P, and define R_F as the inverse of L_F on Q, extended by zero on P. From (4), ||R_F||<=1/gamma_N. Regard P as the inclusion of its range. Define
+
+    A_P=PAP restricted to Ran(P),
+    X=R_F Q A P,       Z=P-qX.
+
+Since L_F X=QAP and L_F P=0, direct multiplication yields the exact residual
+
+    (L_F+qA) Z - Z q A_P = q^2 (X A_P-A X).            (9)
+
+With v=3, ||X||<=v/gamma_N, ||A_P||<=v. Integrating (9) and retaining both corrected-versus-bare endpoints gives, for every t>=0,
+
+    ||exp[-it(L_F+qA)]P-P exp(-itq A_P)||
+      <= 2qv/gamma_N + 2tq^2 v^2/gamma_N
+      <= 6q/gamma_N + 18tq^2/gamma_N.                 (10)
+
+This is a finite bare-input estimate. It does not require preparation of Z or a dressed state and does not claim a full-space effective Hamiltonian. Its domain is every old state tensored with a symmetric source; the inverse and installed blocks remain full-space objects.
+
+## 5. Complete controller output and collective fluctuation
+
+For a phase phi define the normalized source product
+
+    |alpha_phi>=(|0>+exp(i phi)|1>)/sqrt(2),
+    |Alpha_phi>=|alpha_phi>^tensor N,
+    |Alpha_phi(t)>=exp(-it omega N_A)|Alpha_phi>.
+
+This state is supplied. It is not the output of an inferred cooling or preparation process. As operators on the symmetric code, permutation symmetry gives the exact projected boundary operators
+
+    P_sym sigma_+^(a_1) P_sym = S_+/N,
+    P_sym sigma_-^(a_1) P_sym = S_-/N,
+    S_+=sum_j sigma_+^(a_j),  S_-=sum_j sigma_-^(a_j).
+
+Hence the mean-field old generator is
+
+    G_phi = r cos(phi) X_p+r sin(phi)Y_p+z Z_p,
+    ||G_phi||=1.                                     (11)
+
+The useful residual estimate is a bound on the entire source/output vector, not only on a reduced old channel:
+
+    ||(A_P-G_phi)(|Alpha_phi> tensor I_old)||
+       = r/sqrt(N) <= 1/sqrt(N).                     (12)
+
+For phi=0, write e_j for the product with the jth |+> replaced by |->. The e_j are orthonormal, and
+
+    (S_--N/2)|+>^N = (1/2)sum_j e_j,
+    (S_+-N/2)|+>^N = -(1/2)sum_j e_j.
+
+The source residual in A_P is therefore r/N times sum_j e_j tensored with sigma_+-sigma_-, whose old operator norm is one. This proves (12) at phi=0. A uniform Z rotation on source and old qubit gives the same norm for any phi. The z Z_p term is exact and contributes no residual. Duhamel then gives
+
+    ||exp(-itq A_P)(|Alpha_phi> tensor I_old)
+       - |Alpha_phi> tensor exp(-itqG_phi)|| <= tq/sqrt(N). (13)
+
+Choose T=theta/q and phi=phi0+omega T, modulo 2pi, as supplied initial-state data. This choice is made after q and T are fixed; it does not change any coefficient magnitude or bound used to choose q. Exact conjugation gives
+
+    exp(-iHT) exp(-i theta G_phi)
+       = exp(-i theta0) W exp(-iHT).                  (14)
+
+The order is important. At t=T+s, (8), (10), (13) and the additional rotation over s imply a complete-isometry comparison with
+
+    V_s = exp[-i(R(T+s)+theta0)] |Alpha_phi(T+s)>
+              tensor exp(-isH) W exp(-iTH),          (15)
+
+and error
+
+    E_iso <= (6+18q(T+w))q/gamma_N
+             + q(T+w)/sqrt(N) + qw.                 (16)
+
+Equation (15) retains every source qubit and its full phase. Its source factor generally moves during the observation window. The old h_c scalar, or H_rest scalar, is already in the two literal H flows; it is not dropped or counted again. There is no postselection, discarded output, permanent stopping or returned initial source claim.
+
+## 6. Solved accuracy, resource and incident-load inequalities
+
+Fix 0<epsilon<=1 and write A_theta=1+theta. Choose exactly
+
+    N = max(2, ceil[(8 A_theta/epsilon)^2]),
+    gamma_N=2J_F/N^2,
+    q = min{ epsilon/[8(t0+w)],
+             epsilon gamma_N/[8(6+18A_theta)] },
+    T=theta/q,       tau=T+w.                        (17)
+
+All choices are strictly positive for theta>0. Because qw<=epsilon/8<=1,
+q(T+w)=theta+qw<=A_theta. The three terms in (16) are each at most epsilon/8. Therefore
+
+    sup_(0<=s<=w) ||actual isometry - V_s|| <=3epsilon/8. (18)
+
+Tensoring any retained passive reference preserves this operator bound. Conversion to complete unhalved trace distance costs at most two, so ideal-input/ideal-generator error is <=3epsilon/4. If the actual initial complete state differs by at most epsilon/8 in unhalved trace distance from |Alpha_phi><Alpha_phi| tensored with its exact unconditional old/reference marginal, and the actual-minus-nominal generator defect satisfies
+
+    integral_0^tau ||K_actual(t)-K|| dt <=epsilon/16,  (19)
+
+then contractivity and full-space Duhamel give total unhalved trace error
+
+    3epsilon/4 + epsilon/8 + 2(epsilon/16) = epsilon. (20)
+
+All state/calibration quantities in this statement are supplied conditions. Any fixed-target timing error or preparation-to-runtime switch needs its own resplit allowance; it is not free in (20).
+
+The minimal ceiling and minimum in (17) give finite sufficient upper prices
+
+    N=O(epsilon^-2),
+    T=theta max{8(t0+w)/epsilon,
+                8(6+18A_theta)/(epsilon gamma_N)}=O(epsilon^-5),
+    ||K|| <= ||H||+R_s+N|omega|+2J_F(N-1)+6q=O(epsilon^-2),
+    tau ||K||=O(epsilon^-7),                        (21)
+
+with fixed-data constants. These are construction upper bounds, not lower bounds or optimality claims. For example N<=C_N epsilon^-2 with C_N=64A_theta^2+2, and substituting this upper bound into the displayed maximum proves the runtime power. No source-design oracle-time bound is inferred.
+
+Since q<=1/t0, the incident added block-norm sum at old p is at most R_s+6/t0. At an interior source site it is at most |omega|+4J_F. At a_1 it is at most |omega|+2J_F+4/t0. Thus the single fixed cap
+
+    J_* = R_s+|omega|+4J_F+6/t0                     (22)
+
+bounds every added incident load for every epsilon. Each physical identity reserve is included. Dividing one large interaction into counted channels is not used. The total number of sites, total source field energy and full norm may diverge while (22) remains fixed.
+
+For an explicit coefficient precision allowance, a conservative count of 8N+8 new physical Pauli/identity slots covers (1) and its collected representations. Giving these slots absolute errors at most epsilon/[16 tau(8N+8)] suffices for (19) when no other defect spends it. The inverse allowance has sufficient order epsilon^-8. Old-background, scalar, omitted-edge or state-preparation faults must share the appropriate existing budget. Positivity under faults requires positive parameterizations or separately paid local margins; the integral norm condition by itself does not guarantee positive actual blocks.
+
+The theorem proves a conditional, common-strength, complete-output runtime construction on its stated restricted plant. It supplies no physical state-selection law, source cooling, formation time, detector identity, reuse or general arbitrary-plant compilation.
+
+## 7. Why this proof does not already solve the arbitrary coupled plant
+
+The decisive exact identity is (7). For a coupled plant it becomes
+
+    [H+omega N_A, V]
+      = ([H,sigma_+^p]-omega sigma_+^p) sigma_-^(a_1)
+        + ([H,sigma_-^p]+omega sigma_-^p) sigma_+^(a_1), (23)
+
+which need not vanish. A one-qubit port operator generally has several Bohr-frequency components and can couple to nonsymmetric source excitations. Simply applying (10) with the original H in the slow block would introduce duration-dependent commutator costs, and it is not the proof above. The old polynomial Lie certificate does not assert the single-frequency relation in (23).
+
+Nor can the existing waveform compiler simply be run at a small port amplitude and inserted into (17). Its runtime, conditioning and slew must then be rederived as functions of that amplitude. The scale separation used in (17) depends on the fixed accumulated action qT=theta. A compiler with T growing faster than q^-1 can invalidate it.
+
+The unresolved generic statement is therefore not a claim that bounded-strength controllers are impossible. It is the missing construction for simultaneous, controlled Bohr-frequency components with a one-edge old port and all controller outputs retained. The next section gives a finite algebraic target for such a construction, rather than hiding it inside an asserted source law.
+
+## 8. A precise general reduction: second-order resonant collective sources
+
+This section separates a proved finite-matrix implication from an uncompleted physical design. The implication is useful because its small-parameter choice is made after the finite source size and all inverse gaps are known. A small inverse gap then makes runtime large; it need not make a local coefficient large.
+
+Use a dimensionless weak parameter xi, distinct from the energy q in sections 2–6. Suppose a proposed finite NN controller has
+
+    K(xi)=K0+xi V+xi^2 A2+R(xi)I,                   (24)
+
+where K0 has an invariant code inclusion J, with K0 J=J F and
+F=H+H_C on that code. The literal old H is contained with coefficient one in K0. All matrices in the following conditions are actual finite complete matrices, not projected replacements for physical generators. Suppose:
+
+1. J is an isometry, J^* V J=0, and the spectrum of QK0Q restricted to Ran(Q) is disjoint from the spectrum of F, where Q=I-JJ^*. Exact degeneracies inside F are allowed and retained. Every Q resolvent below means that restriction, extended by zero off Ran(Q).
+2. A Hermitian D commuting with F and maps Z1,Z2 solve the finite equations
+
+       K0 Z1-Z1 F = -VJ,
+       K0 Z2-Z2 F = JD-VZ1-A2J.                    (25)
+
+3. There are supplied pure controller states |Alpha_phi> in the code and a known scalar c such that, uniformly over the needed phase choices and all old inputs,
+
+       ||[D-cI-G_phi](|Alpha_phi> tensor I_old)|| <=delta_N,
+       G_phi=(1/t_*) exp(iHT) L_W exp(-iHT),
+       W=exp(i theta0)exp(-iL_W),                  (26)
+
+   with t_*>0 fixed, bounded Hermitian L_W, and T=t_*/xi^2. The hardware and bounds used to choose xi must be independent of those final phase choices. H_C's free evolution and every output factor are retained.
+4. The base incident load of K0-H is at most a fixed J0 independent of N and epsilon. The actual V and A2 have known finite incident-load bounds ell_V(N), ell_2(N). Their positive block reserves are represented by the actual R(xi), and included in those load bounds; any source-code scalar canceled in an effective calculation is still physically charged.
+
+Condition (25) is a finite algebra problem, not a simulated-time promise. Let Pi_E be F's exact eigenspace projectors. The first equation has the explicit solution
+
+    Z1 Pi_E = (E-QK0Q)^(-1) Q V J Pi_E.             (27)
+
+The necessary diagonal-block choice in the second is
+
+    D = sum_E Pi_E J^*(VZ1+A2J) Pi_E.              (28)
+
+For Hermitian V,A2 the displayed D is Hermitian: each block uses one Hermitian resolvent at real E. Once (28) is chosen, the second equation has zero right-hand side in equal-energy P/P blocks; its Q/P and unequal-energy P/P blocks are solved by the nonzero corresponding energy differences. Choosing the equal-energy P/P part of Z2 to be zero gives a finite computable solution when the spectral data and separation certificates are supplied. No polynomial complexity or large gap is asserted.
+
+For Z(xi)=J+xi Z1+xi^2 Z2, exact multiplication gives
+
+    [K(xi)-R(xi)I] Z(xi)-Z(xi)[F+xi^2D]
+      =xi^3 R3+xi^4 R4,
+    R3=VZ2+A2Z1-Z1D,
+    R4=A2Z2-Z2D.                                  (29)
+
+Set x_j=||Z_j||, r_j=||R_j||. The same two-endpoint Duhamel argument as (10) now gives the complete bare-code error through T+w:
+
+    E_red <=2xi x1+2xi^2 x2+(T+w)(xi^3 r3+xi^4 r4)
+           <=xi C_corr,N,
+    C_corr,N=2(x1+x2)+(t_*+w)(r3+r4),  0<xi<=1.  (30)
+
+The explicitly evaluated corrector constant C_corr,N may be enormous and depend on N, the fixed plant and a spectral certificate.
+
+Because [F,D]=0, free old/source evolution can be factored before applying (26). The mean-field error through T+w is at most (t_*+w)delta_N. Stopping the additional effective old evolution at T costs at most xi^2 w ||L_W||/t_*. The controller comparator is its exact free vector exp(-iH_C(T+s))|Alpha_phi>; its phase contains R(xi)(T+s), c xi^2(T+s), and theta0. At endpoint (26) gives exactly the required old ordering. The source initial phases may depend on the already selected T, as in (14), but the proof constants must not acquire a hidden T dependence through that choice.
+
+In particular, if the missing physical design supplies delta_N<=B/sqrt(N), with B fixed independently of N and xi after the plant/bus certificate is selected, one may first choose
+
+    N >= [8(t_*+w)B/epsilon]^2,
+
+then evaluate all finite matrices and constants, and finally choose xi>0 satisfying
+
+    xi C_corr,N <=epsilon/8,
+    xi^2 w ||L_W||/t_* <=epsilon/8,
+    xi ell_V(N) <=J1,
+    xi^2 ell_2(N) <=J2,
+    xi<=1,                                        (31)
+
+for any fixed J1,J2>0, with zero-denominator cases omitted. These are finitely many upper constraints on xi and have a strictly positive solution. The resulting cap is J0+J1+J2, and runtime is t_*/xi^2. The three ideal isometry errors are <=3epsilon/8; the same state and full-generator allowances as (19)–(20) finish the trace contract. Thus small denominators are compatible with a common local cap in this finite-matrix implication. No favorable runtime power is promised for (31).
+
+This conditional reduction is not itself the missing construction. Conditions (26) and the uniform-base part of condition 4 must be established for actual qubit NN blocks, and the source phases must realize the full target without changing the constants after xi was selected.
+
+## 9. Proposed NN realization of the reduction, and the exact open equation
+
+One candidate begins with a coupled plant H whose eigenvalues E_a are simple, whose positive gaps E_a-E_b are all distinct, and whose one local Hermitian port operator B_p has nonzero matrix elements B_ab between every pair. These are additional mathematical conditions on H, not consequences established here from the supplied polynomial Lie certificate. The original task includes plants where they fail. Even a proof under them would therefore need an additional spectral regularization argument before replacing the generic compiler theorem.
+
+For each positive Bohr gap omega_l=E_a-E_b, append a long ferromagnetic source chain with uniform field omega_l and a coherent symmetric input. Append a fixed finite qubit XY bus, with vacuum input, between p and the source endpoints. A comb layout in three dimensions can have exactly one old/new adjacency, source chains on disjoint exterior rays and degree at most three. All bus coefficients and source fields are bounded by fixed plant-dependent constants; chain lengths grow. The common old/bus coupling and bus/source couplings are multiplied by xi. Positive reserves must be added locally. This is a proposed architecture, not a checked layout/calibration certificate.
+
+Let B_bus be the bus's positive one-excitation matrix, with a root a adjacent to p and source attachment sites u_l. The interaction is schematically
+
+    V = v_p B_p X_a
+        + sum_l r_l [sigma_+^(u_l)sigma_-^(source_l,1)
+                     +sigma_-^(u_l)sigma_+^(source_l,1)].     (32)
+
+Each term is an actual two-qubit edge. r_l may be real with sign carried by the supplied coherent source phase. Projection of a source boundary lowering operator is S_(l,-)/N_l. At exact old/source resonance, the second-order plant/source cross coefficient contains
+
+    beta_l = -v_p r_l B_ab
+                    [(B_bus-omega_l I)^(-1)]_(a,u_l).       (33)
+
+The convention in (32) has one allowed ordering for source lowering/bus creation followed by bus annihilation/plant raising, so (33) has no automatic factor of two. Its Hermitian reverse is supplied by the reverse transition. This coefficient formula still needs to be checked against the full chosen bus/source spectrum, rather than against a one-excitation inverse alone. Nonsymmetric source sectors and every bus excitation sector are included in (25)–(28).
+
+Plant self-energies, which cannot be discarded, have diagonal entries of the form
+
+    d_a = v_p^2 sum_(b,j)
+                  w_j |B_ba|^2/(E_a-E_b-mu_j),              (34)
+
+where mu_j and w_j>0 are the bus energies and root spectral weights. Source self-energies must either be retained in the controller comparison and analyzed or canceled by actual paid xi^2 A2 blocks. For an SU(2)-invariant ferromagnetic chain, a plausible route is to show that the projected source self-energy is a quadratic polynomial in its total excitation number. Such a polynomial can be represented by projected onsite and NN density interactions because
+
+    P_sym sum_j n_j P_sym = N_A,
+    P_sym sum_(j=1)^(N-1) n_j n_(j+1) P_sym
+          = N_A(N_A-1)/N.                                (35)
+
+These are identities on the symmetric code. The second follows by averaging every distinct pair in a symmetric state. It does not prove the asserted degree-two form of the resolvent self-energy; that is an explicit remaining lemma, including all coefficients and scalar reserves. A large effective source counterterm is not ignored: xi^2 times its actual physical local coefficients must satisfy (31), and its full-space norm enters (29)–(30).
+
+For a target logarithm L_W, the concrete unclosed calibration equation is
+
+    sum_E Pi_E J^*[V Q(E-QK0Q)^(-1)Q V+A2]J Pi_E
+       = cI + sum_a (L_W)_(aa)/t_* |a><a|
+           + sum_(a>b) [g_ab |a><b| S_(ab,-)/N_ab + h.c.]
+           + E_N,                                      (36)
+
+with |g_ab|/2=|(L_W)_(ab)|/t_* and
+
+    ||E_N (|Alpha_phi> tensor I_old)|| <=B/sqrt(N),        (37)
+
+uniformly in the phase choices needed at the actual time T. Here Pi_E is F's exact code eigenspace projector at energy E, as in (27)–(28). The left side is exactly D from (28); the right side is an operator on the same code. Controller-only scalars and all physical block reserves must be listed separately. Initial phases can then give the factors exp[i(E_a-E_b)T] needed in (26); they change no interaction magnitude.
+
+The diagonal part of (36) asks whether a positive root spectral measure can produce every requested difference d_a-d_0 while keeping all response factors in (33) nonzero and the complete P/Q separation positive. Near a distinct gap E_a-E_0, the corresponding column of (34) has a pole in its a component. Taking bus energies on both sides suggests spanning the diagonal differences by positive weights plus a scalar. That suggestion is not a solved simultaneous inverse-spectral/geometry theorem. A root-to-endpoint Green entry of an irreducible Jacobi chain is nonzero away from its poles, but attaching many sources at different sites and satisfying (34) at the same time needs an actual certificate; one cannot attach arbitrarily many counted source edges to a single bus qubit.
+
+The complete remaining obligations for this route are therefore:
+
+- Derive the strong spectral addressability needed above, or replace it by a degeneracy-aware construction that works for every admitted polynomial Lie certificate, while retaining the original H and any added perturbation's final-window action.
+- Solve (33)–(37) with actual finite ordinary NN qubit blocks, one old port, bounded base coefficients, all source self-energies and scalar/positive reserves paid, and a full-spectrum separation certificate for (25).
+- Prove a fluctuation bound with B fixed before xi is selected. In particular, do not let an uncharged N-dependent small denominator destroy (37).
+- Check the complete corrected operator algebra and its phase convention independently before any downstream acceptance.
+
+Once those obligations are met, (27)–(31) supply a concrete accuracy/runtime/local-strength recipe. They are not met by merely naming the source “classical,” by a first-order rotating-wave statement, or by the one-particle transfer coefficient alone. The present note leaves them open.
+
+## 10. A separate alternative and the inherited clock diagnostic
+
+A different possible route is an autonomous program tape whose weak port contacts each deliver a small coherent action. A useful target would be a complete-output fluctuation estimate proportional to the square root of the number of contacts, while the desired action is linear in that number. For arbitrary coupled H, the contacts also need resonant phase control or a full augmented actual-time compilation. No finite qubit NN tape Hamiltonian with that complete retained-output estimate is supplied here. This is an alternative mechanism and an exact proof target, not a claimed construction or native supplier.
+
+There is also a simple diagnostic for attempts to reuse the parent binomial clock unchanged. Each positive parent clock edge has norm Omega(n+1), Omega=pi/(2tau). A common incident cap therefore requires at least
+
+    pi(n+1)/(2tau) <=J_*.
+
+The parent's sufficient global clock choice also requires
+
+    n >= L_C^2 tau^4/(2eta_X^2).
+
+Together they require
+
+    L_C^2 tau^3 <= (4J_*/pi) eta_X^2,                (38)
+
+up to the harmless stronger integer endpoint term. Thus lengthening that clock does not alone solve the resource problem; the actual waveform's L_C and tau must satisfy (38) jointly. For example a truly slow weak envelope with L_C=O(tau^-2) can satisfy this inequality as tau grows, whereas blindly padding a fixed-slew waveform cannot. This is a compatibility test for those sufficient estimates. It is not a necessary error lower bound for every binomial clock, every waveform placement, or every possible autonomous architecture. No universal impossibility claim is made.
+
+## 11. Evidence, scope and freeze boundary
+
+The one-qubit argument in sections 2–6 and the finite-corrector implication in section 8 were derived here from displayed finite-dimensional identities. Their checks are author algebra and a complete cold read. One bounded dense author sanity run also checked twelve restricted cases, N=2 through 6, total Hilbert dimension at most 128, including omega<0 and a pure Z target. All 36 complete-isometry comparisons lay below the displayed bounds; direct physical scalar, exact-resonance, corrector-identity and fluctuation checks had no recorded failure. The raw results, executable source at launch, exact command, streams and limits are in CHECK_EVIDENCE.md and its linked files. These finite floating-point cases do not prove the asymptotic recipe, the gap for arbitrary N, the general reduction or the proposed bus equations. Source hashes and copying establish provenance only. No independent checker, retained audit, native physical implementation or general source-state formation law has been supplied by this note.
+
+The exact original generic target remains open in this proposal. The useful completed result is a common-strength, all-output, finite-window test construction with a solved epsilon recipe and literal old aging. The useful general reduction is a finite Sylvester/coupling/collective-fluctuation certificate with a solved small-parameter implication. A failed candidate equation, missing spectral premise or future counterexample must be preserved; it cannot be replaced by a claim that the requested universal construction exists or is impossible.
+
+This worker writes only its assigned directory. It does not modify W/C source, Git state, PRs, canonical runners/caches/graphs, locks, audit verdicts, axioms or editable prompt files. All source comparison with the root or other workers is deferred until this argument is frozen.

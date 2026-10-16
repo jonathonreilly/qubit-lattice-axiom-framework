@@ -1,0 +1,82 @@
+from pathlib import Path
+import hashlib
+import json
+from datetime import datetime, timezone
+
+BASE = Path(__file__).resolve().parent
+N = BASE.parent
+WT = N.parent / 'correlation_worktree'
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+def ident(path):
+    data = path.read_bytes()
+    return {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+def expect(path, sha):
+    value = ident(path)
+    assert value['sha256'] == sha, (str(path), value)
+    return {'path': str(path), **value}
+
+def verify_members(root, manifest):
+    for row in manifest['members']:
+        assert ident(root / row['path']) == {'bytes': row['bytes'], 'sha256': row['sha256']}, row['path']
+    return len(manifest['members'])
+
+original = BASE / 'original'
+original_freeze = expect(original / 'ORIGINAL_FREEZE.json', 'baeafe9ce9e754ce503d53685a76fe2cf0931c8481b46e10654525d5cd9bf73c')
+original_count = verify_members(original, json.loads((original / 'ORIGINAL_FREEZE.json').read_text()))
+exposure = json.loads((BASE / 'CANDIDATE_EXPOSURE.json').read_text())
+candidate = Path(exposure['candidate_path'])
+expect(candidate / 'FREEZE.json', exposure['candidate_freeze_sha256'])
+expect(BASE / 'candidate_at_launch/FREEZE.json', exposure['candidate_freeze_sha256'])
+for row in exposure['candidate_artifacts']:
+    for path in (Path(row['original']), BASE / 'candidate_at_launch' / row['path']):
+        assert ident(path) == {'bytes': row['bytes'], 'sha256': row['sha256']}, str(path)
+
+prior = N / 'static_bias_transfer_exposed_check'
+prior_freeze = expect(prior / 'REVIEW_FREEZE.json', '763daec5e1b3a28b1011cf43a30e2ce79db900142afd3334d3bbd159dbc60ef6')
+prior_count = verify_members(prior, json.loads((prior / 'REVIEW_FREEZE.json').read_text()))
+
+sources = [
+    (N / 'static_bias_transfer_candidate/DERIVATION.md', '500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6'),
+    (N / 'strongly_regular_bus_candidate/DERIVATION.md', '855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2'),
+    (WT / 'docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md', 'c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2'),
+    (N / 'bootstrap/planning/AGENTS.md', '3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9'),
+    (N / 'bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md', '05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce'),
+    (N / 'bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md', '9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb'),
+    (Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'), '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455'),
+]
+source_rows = [expect(path, sha) for path, sha in sources]
+refresh = {
+    'verified_utc': now(),
+    'original_freeze': original_freeze,
+    'original_members_unchanged': original_count,
+    'candidate_named_files_and_captures_unchanged': len(exposure['candidate_artifacts']),
+    'prior_transfer_review_freeze': prior_freeze,
+    'prior_transfer_review_members_unchanged': prior_count,
+    'fresh_source_identities': source_rows,
+    'editable_prompt_files_changed': [],
+}
+(BASE / 'SOURCE_REFRESH.json').write_text(json.dumps(refresh, indent=2) + '\n')
+excluded = {'REVIEW_FREEZE.json', 'REVIEW_FREEZE.sha256'}
+members = []
+for path in sorted(BASE.rglob('*')):
+    if path.is_file():
+        rel = str(path.relative_to(BASE))
+        if rel not in excluded:
+            members.append({'path': rel, **ident(path)})
+freeze = {
+    'frozen_utc': now(),
+    'scope': 'Same-model pre-candidate equation reconstruction, then exposed conditional old-edge review; no publication or retained decision',
+    'candidate_derivation_sha256': 'cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950',
+    'original_freeze_sha256': original_freeze['sha256'],
+    'members': members,
+}
+out = BASE / 'REVIEW_FREEZE.json'
+assert not out.exists(), 'Do not overwrite a prior review freeze'
+out.write_text(json.dumps(freeze, indent=2) + '\n')
+(BASE / 'REVIEW_FREEZE.sha256').write_text(ident(out)['sha256'] + '  REVIEW_FREEZE.json\n')
+assert verify_members(BASE, freeze) == len(members)
+print(json.dumps({'frozen_utc': freeze['frozen_utc'], 'members': len(members), 'review': ident(BASE / 'REVIEW.md'), 'freeze': ident(out), 'original_preserved': original_count, 'prior_transfer_preserved': prior_count}, indent=2))

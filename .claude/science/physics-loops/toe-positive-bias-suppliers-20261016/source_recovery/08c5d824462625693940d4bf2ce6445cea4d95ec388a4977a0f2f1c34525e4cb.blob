@@ -1,0 +1,54 @@
+{
+  "verified_utc": "2026-10-16T02:11:22.924551+00:00",
+  "original_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/original/ORIGINAL_FREEZE.json",
+    "bytes": 3145,
+    "sha256": "baeafe9ce9e754ce503d53685a76fe2cf0931c8481b46e10654525d5cd9bf73c"
+  },
+  "original_members_unchanged": 19,
+  "candidate_named_files_and_captures_unchanged": 11,
+  "prior_transfer_review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_exposed_check/REVIEW_FREEZE.json",
+    "bytes": 12919,
+    "sha256": "763daec5e1b3a28b1011cf43a30e2ce79db900142afd3334d3bbd159dbc60ef6"
+  },
+  "prior_transfer_review_members_unchanged": 76,
+  "fresh_source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/DERIVATION.md",
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_candidate/DERIVATION.md",
+      "bytes": 40500,
+      "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/planning/AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "editable_prompt_files_changed": []
+}

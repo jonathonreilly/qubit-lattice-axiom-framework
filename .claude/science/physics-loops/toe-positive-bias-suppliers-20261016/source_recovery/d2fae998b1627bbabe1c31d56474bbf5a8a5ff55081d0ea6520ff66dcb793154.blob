@@ -1,0 +1,47 @@
+{
+  "role": "Fresh exact same-model reviewer check after proof findings were recorded; not all-n proof",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sympy": "1.14.0",
+  "dimension": 2,
+  "child_alarm_seconds": 20,
+  "H": "2X+Y+3Z",
+  "C": "I+Z",
+  "B": "I+X+Z",
+  "H_C_commutator": [
+    [
+      "0",
+      "-4 + 2*I"
+    ],
+    [
+      "4 + 2*I",
+      "0"
+    ]
+  ],
+  "direct_complex_Gram": [
+    [
+      "8*(s**2 + 2*s + 3)",
+      "0"
+    ],
+    [
+      "0",
+      "32*(s**2 + 2*s + 3)*(s**2 + 6*s + 14)"
+    ]
+  ],
+  "direct_determinant": "256*(s**2 + 2*s + 3)**2*(s**2 + 6*s + 14)",
+  "Pauli_cross_product_prediction": "256*(s**2 + 2*s + 3)**2*(s**2 + 6*s + 14)",
+  "polynomial_coefficients_descending": [
+    256,
+    2560,
+    12288,
+    32768,
+    56576,
+    56832,
+    32256
+  ],
+  "exact_degree": 6,
+  "leading_coefficient": 256,
+  "pure_C_Gram_determinant": 256,
+  "no_adjoint_mutant_equals_minus_correct_polynomial": true,
+  "no_adjoint_mutant_value_at_zero": -32256,
+  "all_assertions_passed": true
+}

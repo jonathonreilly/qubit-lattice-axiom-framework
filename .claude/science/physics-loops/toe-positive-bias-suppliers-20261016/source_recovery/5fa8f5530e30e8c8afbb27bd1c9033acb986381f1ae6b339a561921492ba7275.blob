@@ -1,0 +1,14 @@
+{
+  "start_utc": "2026-10-16T01:11:26.221212+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate/finite_check.at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate",
+  "source_sha256": "4558a15b63e5aedea552af6fc0818f8e12251173ae7ef869cae9d4e3ca68b638",
+  "source_bytes": 2503,
+  "timeout_seconds": 30,
+  "max_matrix_dimension": 2,
+  "scientific_role": "bounded author algebra only",
+  "launcher_sha256": "c2042f3f9a5320da27ce0d756d552c1705980afd33971b9bc3e2407c0a003318"
+}

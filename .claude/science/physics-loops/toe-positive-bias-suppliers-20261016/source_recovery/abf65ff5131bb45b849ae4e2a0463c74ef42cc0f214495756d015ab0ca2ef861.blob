@@ -1,0 +1,64 @@
+{
+  "verified_utc": "2026-10-16T02:21:41.447470+00:00",
+  "kind": "hash/receipt bookkeeping only; no scientific rerun",
+  "sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_proposal/PROPOSED_LEMMAS.md",
+      "snapshot": "source_snapshots/padded_box_root_proposal__PROPOSED_LEMMAS.md",
+      "bytes": 4199,
+      "sha256": "09e43a6822cd08059419998a314f9289b5921ad5380ebb89c15a4ddc70e76106",
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/padded_box_root_proposal/FREEZE.json",
+      "snapshot": "source_snapshots/padded_box_root_proposal__FREEZE.json",
+      "bytes": 407,
+      "sha256": "2a33df38d9d653f2f86a4d8208bcdab102b138c7bba9bff1a6be2bf48af00dd7",
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/DERIVATION.md",
+      "snapshot": "source_snapshots/positive_chain_strong_point_candidate__DERIVATION.md",
+      "bytes": 22051,
+      "sha256": "54cdf957111f03d6efadd2d6df91a871ea943859dea8639c47343022bfab0d12",
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/FREEZE.json",
+      "snapshot": "source_snapshots/positive_chain_strong_point_candidate__FREEZE.json",
+      "bytes": 5125,
+      "sha256": "f507ca272de325aada74b249e8eae9881791979a9ee2374bce2828fe1e1e86c7",
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/FINAL_QUALIFICATIONS.md",
+      "snapshot": "source_snapshots/static_bias_transfer_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4450,
+      "sha256": "1bf4bd88f308a6faf5b33edbf409227ca4dfa7ff8cf6618f13b7edcc3f982911",
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "snapshot": "source_snapshots/static_bias_transfer_root_review__QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b",
+      "matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+      "snapshot": "source_snapshots/strongly_regular_bus_root_review__FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880",
+      "matches": true
+    }
+  ],
+  "root_proposal_and_chain_derivation_freeze_links_match": true,
+  "original_chain_derivation_and_freeze_unchanged": true,
+  "current_scientific_source_launcher_and_manifest_match_at_launch": true,
+  "complete_stream_hashes_match": true,
+  "scientific_runs": 1,
+  "scientific_exit_code": 0,
+  "source_coverage_qualification": "SOURCE_EXPOSURE gives exact fresh chain read ranges 1-85 and 127-225; other necessary chain argument reused from immediately preceding complete read at same hash. Launch-manifest section shorthand is not full fresh proof coverage.",
+  "no_current_git_head_claim": true,
+  "older_parent_all_member_verification": false
+}

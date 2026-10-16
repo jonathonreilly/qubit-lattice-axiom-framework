@@ -1,0 +1,43 @@
+"""Save source-at-launch and record one bounded fresh reviewer execution."""
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+base = Path(__file__).resolve().parent
+run = base / "noncommuting_check"
+run.mkdir(exist_ok=False)
+source = base / "check_noncommuting_leading_term.py"
+(run / "executed_source.py").write_bytes(source.read_bytes())
+(run / "launcher_at_launch.py").write_bytes(Path(__file__).read_bytes())
+
+def identity(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+argv = [sys.executable, "-B", str(run / "executed_source.py")]
+start = datetime.now(timezone.utc).isoformat()
+receipt = {"argv": argv, "cwd": str(base), "started_utc": start,
+           "source_at_launch": identity(run / "executed_source.py"),
+           "launcher_at_launch": identity(run / "launcher_at_launch.py"),
+           "limits": {"outer_timeout_seconds": 30, "child_alarm_seconds": 20, "largest_matrix_dimension": 2}}
+(run / "LAUNCH.json").write_text(json.dumps(receipt, indent=2) + "\n")
+t0 = time.monotonic()
+with (run / "stdout.json").open("wb") as stdout, (run / "stderr.txt").open("wb") as stderr:
+    try:
+        result = subprocess.run(argv, cwd=base, stdin=subprocess.DEVNULL, stdout=stdout, stderr=stderr, timeout=30)
+        receipt["exit_code"] = result.returncode
+        receipt["timed_out"] = False
+    except subprocess.TimeoutExpired:
+        receipt["exit_code"] = None
+        receipt["timed_out"] = True
+receipt["elapsed_seconds"] = time.monotonic() - t0
+receipt["finished_utc"] = datetime.now(timezone.utc).isoformat()
+receipt["stdout"] = identity(run / "stdout.json")
+receipt["stderr"] = identity(run / "stderr.txt")
+(run / "EXECUTION.json").write_text(json.dumps(receipt, indent=2) + "\n")
+print(json.dumps(receipt, indent=2))
+sys.exit(receipt["exit_code"] if receipt["exit_code"] is not None else 124)

@@ -1,0 +1,67 @@
+"""Refresh exact sources and seal only the assigned review directory.
+Run with stdout going to the tool, not to a live file under this directory.
+"""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+
+root=Path(__file__).resolve().parent
+def identity(path):
+    data=path.read_bytes()
+    return {'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+def verify(base,rows):
+    for row in rows:
+        got=identity(base/row['path'])
+        assert got['bytes']==row['bytes'] and got['sha256']==row['sha256'],(str(base),row['path'],got)
+    return len(rows)
+
+manifest=json.loads((root/'SOURCE_MANIFEST.json').read_text())
+author=Path(manifest['author_path']);capture=root/'author_at_launch'
+assert identity(author/'FREEZE.json')['sha256']==manifest['author_freeze_sha256']
+assert identity(capture/'FREEZE.json')['sha256']==manifest['author_freeze_sha256']
+original_count=verify(author,manifest['artifacts'])
+captured_count=verify(capture,manifest['artifacts'])
+for row in manifest['supplemental_streams']:
+    assert identity(author/row['path'])==identity(capture/row['path'])
+    assert identity(capture/row['path'])['sha256']==row['sha256']
+for row in manifest['parent_qualifications']:
+    assert identity(Path(row['path']))==identity(root/row['capture'])
+    assert identity(root/row['capture'])['sha256']==row['sha256']
+root_capture=json.loads((root/'ROOT_PROBE_CAPTURE.json').read_text())
+for row in root_capture['files']:
+    assert identity(Path(row['original']))==identity(root/row['capture'])
+    assert identity(root/row['capture'])['sha256']==row['sha256']
+prior=root.parent/'strongly_regular_bus_exposed_check'
+prior_freeze=json.loads((prior/'REVIEW_FREEZE.json').read_text())
+prior_count=verify(prior,prior_freeze['members'])
+assert identity(prior/'REVIEW_FREEZE.json')['sha256']=='e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c'
+for run,key in [('run_01','sources_at_launch'),('appendix_run','sources_and_input_at_launch')]:
+    launch=json.loads((root/run/'LAUNCH.json').read_text())
+    verify(root/run,launch[key])
+    assert json.loads((root/run/'RESULT.json').read_text())['exit_code']==0
+for name,run in [('transfer_check.py','run_01'),('run_recorded.py','run_01'),('appendix_check.py','appendix_run'),('run_appendix.py','appendix_run')]:
+    assert identity(root/name)==identity(root/run/name)
+
+refresh={'verified_utc':datetime.now(timezone.utc).isoformat(),
+         'author_path':str(author),'author_derivation':identity(author/'DERIVATION.md'),
+         'author_freeze':identity(author/'FREEZE.json'),'original_author_members_verified':original_count,
+         'captured_author_members_verified':captured_count,
+         'parent_qualification_files_reverified':len(manifest['parent_qualifications']),
+         'root_probe_files_reverified':len(root_capture['files']),
+         'prior_bus_review_freeze':identity(prior/'REVIEW_FREEZE.json'),
+         'prior_bus_review_members_unchanged':prior_count,
+         'reviewer_source_launcher_input_captures_verified':True,
+         'scientific_status_conferred_by_hashes':False}
+(root/'SOURCE_REFRESH.json').write_text(json.dumps(refresh,indent=2)+'\n')
+exclude={'REVIEW_FREEZE.json','REVIEW_FREEZE.sha256'}
+members=[{'path':str(p.relative_to(root)),**identity(p)} for p in sorted(root.rglob('*')) if p.is_file() and str(p.relative_to(root)) not in exclude]
+freeze={'frozen_utc':datetime.now(timezone.utc).isoformat(),
+        'scope':'Same-model exposed bounded transfer review plus separately attributed root counterexample appendix; no audit, publication or no-go gate PASS.',
+        'author_derivation_sha256':refresh['author_derivation']['sha256'],
+        'members':members}
+path=root/'REVIEW_FREEZE.json';assert not path.exists(),'Do not overwrite a freeze.'
+path.write_text(json.dumps(freeze,indent=2)+'\n')
+seal=identity(path)
+(root/'REVIEW_FREEZE.sha256').write_text(seal['sha256']+'  REVIEW_FREEZE.json\n')
+verify(root,members)
+print(json.dumps({'review':identity(root/'REVIEW.md'),'appendix':identity(root/'APPENDIX_HEISENBERG.md'),'freeze':seal,'members_verified':len(members),'source_refresh':refresh},indent=2))

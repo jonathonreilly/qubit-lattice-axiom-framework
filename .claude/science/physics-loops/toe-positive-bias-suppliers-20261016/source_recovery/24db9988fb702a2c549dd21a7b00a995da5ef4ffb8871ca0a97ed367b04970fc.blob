@@ -1,0 +1,123 @@
+"""Deterministic source/receipt inventory and freeze; no scientific calculation."""
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+
+base = Path(__file__).resolve().parent
+N = base.parent
+W = N.parent / "correlation_worktree"
+
+def identity(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+source_specs = [
+    ("parent_onsite_probe", N / "static_pencil_counterexample_probe/heisenberg_static_port_probe.py", "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22", "Complete current source read; exact onsite-obstruction mechanism restated. Lie rank computation not rerun or independently revalidated."),
+    ("parent_probe_receipt", N / "runs/heisenberg_static_port_probe/EXECUTION.json", None, "Complete current receipt read and its named source/stream identities verified."),
+    ("parent_probe_executed_source", N / "runs/heisenberg_static_port_probe/executed_source.py", "5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22", "Hash verified equal to the completely read current source and recorded source-at-launch."),
+    ("parent_probe_stdout", N / "runs/heisenberg_static_port_probe/stdout", "e88c992762f2ad7e0f746d2d5d8adf0bbba5bd61690197241addae9007c32dd4", "Complete current stream read; root author evidence, not independent evidence."),
+    ("parent_probe_stderr", N / "runs/heisenberg_static_port_probe/stderr", "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "Complete current stream read; empty."),
+    ("frozen_bias_transfer", N / "static_bias_transfer_candidate/DERIVATION.md", "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6", "Complete original author source reused unchanged; all current 309 lines reread in two overlapping chunks. Only conditional substitution is claimed."),
+    ("frozen_bias_transfer_freeze", N / "static_bias_transfer_candidate/FREEZE.json", None, "Prior freeze metadata identity retained; no changes to the previous packet."),
+    ("frozen_strong_bus", N / "strongly_regular_bus_candidate/DERIVATION.md", "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2", "Complete original author proof previously read and reused at unchanged identity; current lines 1-95 reread for exact spectral and exterior-geometry premises. No new independent validation."),
+    ("frozen_strong_bus_freeze", N / "strongly_regular_bus_candidate/FREEZE.json", None, "Prior freeze metadata identity retained; no changes to the previous packet."),
+    ("accuracy_scaled_geometry", W / "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md", "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2", "Current lines 1-205 read completely, including existing-edge clause line 38. Other bodies not completely read in this task; no import of their compiler proof."),
+    ("polynomial_mediator_geometry", W / "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md", "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f", "Current lines 350-407 read completely, including full root geometry contract. Prior root argument lines 364-584 read completely at the same identity. Other bodies not claimed read or imported."),
+    ("composition_context", W / "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md", "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007", "Prior complete lines 1-684 reading reused at unchanged identity; current geometry text search only. Context, not a load-bearing premise of the Bell calculation."),
+    ("captured_AGENTS", N / "bootstrap/planning/AGENTS.md", "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9", "Complete instruction read in coherent campaign reused at verified identity, together with latest inline user instructions and bounded task restrictions."),
+    ("captured_science_workflow", N / "bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md", "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce", "Complete prior instruction reading reused at verified identity; no generic backlog or audit workflow invoked."),
+    ("captured_workhorse", N / "bootstrap/sources/docs/ai_methodology/skills/workhorse/SKILL.md", "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb", "Complete prior instruction reading reused at verified identity; same inherited model/effort, no further delegation.")
+]
+sources = []
+for source_id, path, expected, coverage in source_specs:
+    item = identity(path)
+    if expected is not None:
+        assert item["sha256"] == expected, source_id
+    item.update({"id": source_id, "expected_sha256": expected, "read_coverage": coverage})
+    sources.append(item)
+
+parent_receipt = json.loads((N / "runs/heisenberg_static_port_probe/EXECUTION.json").read_text())
+for key in ("stdout", "stderr", "child_source_at_launch", "source_capture"):
+    saved = parent_receipt[key]
+    actual = identity(Path(saved["path"]))
+    assert actual["sha256"] == saved["sha256"] and actual["bytes"] == saved["bytes"], key
+assert parent_receipt["exit_code"] == 0
+
+own_receipt_path = base / "runs/exact_bell_probe/EXECUTION.json"
+own_receipt = json.loads(own_receipt_path.read_text())
+for key in ("source_at_launch", "executed_source", "recorder", "stdout", "stderr"):
+    saved = own_receipt[key]
+    actual = identity(Path(saved["path"]))
+    assert actual["sha256"] == saved["sha256"] and actual["bytes"] == saved["bytes"], key
+assert own_receipt["exit_code"] == 0 and not own_receipt["timed_out"]
+check_result = json.loads((base / "runs/exact_bell_probe/stdout.txt").read_text())
+assert check_result["all_checks_passed"] and check_result["checks_count"] == 62
+
+now = datetime.now(timezone.utc).isoformat()
+manifest = {
+    "created_utc": now,
+    "status": "Frozen exposed author candidate; not independent scientific acceptance",
+    "supplied_source_context": {
+        "worktree_commit": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+        "main_commit": "bbada1fe09b2d10d610560864d86b68c24a59713",
+        "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+        "note": "Commit identities supplied by parent; no Git command run for this task. Actual source content identities verified individually."
+    },
+    "exposure": "The root task supplied H=3I+XX+YY+ZZ, C=10I+2YY+8ZZ, and B=X+2Y+3Z on the first qubit as a proposed candidate, not an accepted result. No other new candidate or worker derivation was inspected.",
+    "sources": sources,
+    "own_execution_receipt": identity(own_receipt_path),
+    "scope": "One specified two-qubit old plant and explicitly allowed scalable positive anisotropic bias on its existing edge; no generic-domain inference",
+    "editable_prompt_files_changed": [],
+    "scientific_checks": "One exact same-author run, matrices at most four by four; complete source-at-launch and streams preserved; not independent review"
+}
+(base / "SOURCE_MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
+
+coverage = """# Source coverage and exposure
+
+The source manifest contains exact current paths, byte lengths, SHA256 identities and per-source read coverage. Every supplied expected identity matched. The root's candidate triple was exposed task input; this work is not an independent pre-exposure discovery or review.
+
+The complete current parent Heisenberg probe and complete receipt/stdout/stderr were read. Its executed-source copy matches the read source. Its onsite-only mechanism is restated analytically; its Lie-rank computation was not rerun and is not a premise of the new Bell-basis proof.
+
+The unchanged prior bias-transfer source was reread completely (309 lines). The unchanged prior bus source was already read completely, with current lines 1-95 reread for exact premises and geometry. Their author proposals remain conditional dependencies, not accepted facts established by the present check.
+
+The accuracy-scaled note was read currently through line 205, including the precise existing-old-edge path permission. The mediator root interface/geometry was read currently in lines 350-407; its root argument 364-584 was previously read at the same identity. No claim of reading the other immutable bodies is made. The composition source is context, previously read completely and currently hash-verified; the current pass searched geometry clauses only. No compiler or mediator proof is required for the four-dimensional spectral proposition.
+
+The campaign's captured AGENTS, SCIENCE_WORKFLOW and workhorse instructions were completely read earlier and their identities are verified again. The latest inline user instruction and bounded parent task restrict all writes to this directory. No prompt file changed, no model override/delegation occurred, and no canonical/Git/PR/audit/cache/graph/lock operation was performed.
+
+One actual scientific check was run from its preserved source copy with a 40-second child alarm and 50-second outer timeout; exit zero, 62 assertions, complete streams read. It checks exact finite algebra, not a full controller, physical supply or independent acceptance. The failed read of an incorrect parent receipt path is acknowledged in DERIVATION.md; the correct file was then read and verified.
+"""
+(base / "SOURCE_COVERAGE.md").write_text(coverage)
+
+derivation = identity(base / "DERIVATION.md")
+checkpoint = f"""# Current checkpoint
+
+Frozen at {now}. Deliverable: DERIVATION.md, {derivation['bytes']} bytes, SHA256 `{derivation['sha256']}`. This is an exposed author result for one explicitly stronger physical domain, not an independent audit or generic compiler claim.
+
+The specified positive existing-edge bias succeeds. At lambda=1 the complete energies are 0,8,20,24 and positive gaps are 4,8,12,16,20,24. All six off-diagonal entries of the designated one-qubit port are nonzero; its diagonals are zero. The full positive interval except lambda=1/3,1/2 works. On 0<lambda<=1/4, the smallest gap and distinct-gap separation are exactly 4lambda, and the minimum transition magnitude is one.
+
+Both positive added blocks are counted at both old endpoints: incident load 20lambda, at most five on the small interval, with actual added scalar rate 10lambda. The literal old H is unchanged. The supplied old geometry admits the support, but installing these anisotropic blocks and attenuating them is a separate physical permission from onsite-only controls or a particular isotropic path.
+
+One bounded same-author exact run completed at 2026-10-16T01:43:46.781448+00:00, exit zero, 62 assertions. Full source-at-launch and streams are in runs/exact_bell_probe/. The exact execution receipt, source identity inventory and read limits are preserved. No failed scientific execution occurred.
+
+Preserved failed/boundary cases: lambda=0 keeps the triplet degeneracy; lambda=1/3 and 1/2 repeat positive gaps; unshifted B has zero diagonals if a stronger all-entries wording is imposed; an isotropic old path is not the proposed anisotropy; endpoint correction alone does not cancel a continuing full-strength nonscalar bias over a positive window.
+
+Remaining obligations: permission for old-edge additions/attenuation; actual vacant exterior geometry and isolation; independent examination of the frozen full bus and transfer proofs; supplied controller state, coefficients, timing and complete-lifetime calibration. The generic Lie-to-static-bias premise is not solved. No other new-candidate source was inspected before this freeze. Root owns acceptance/publication. Prior freezes are unchanged.
+"""
+(base / "CHECKPOINT.md").write_text(checkpoint)
+
+files = [identity(path) for path in sorted(base.rglob("*")) if path.is_file() and path.name != "FREEZE.json"]
+freeze = {
+    "frozen_utc": now,
+    "claim_status": "Exposed author spectral proposition plus expressly conditional transfer substitution",
+    "derivation": derivation,
+    "files": files,
+    "source_manifest": identity(base / "SOURCE_MANIFEST.json"),
+    "scientific_execution_count": 1,
+    "independent_review_claimed": False,
+    "prior_freezes_modified": False,
+    "new_candidate_exposure_after_own_freeze": None,
+    "write_boundary": str(base)
+}
+(base / "FREEZE.json").write_text(json.dumps(freeze, indent=2) + "\n")
+print(json.dumps({"freeze": identity(base / "FREEZE.json"), "derivation": derivation, "frozen_utc": now, "files_frozen": len(files), "source_identities_verified": len(sources)}, indent=2))

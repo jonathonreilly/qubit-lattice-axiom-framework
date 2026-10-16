@@ -1,0 +1,55 @@
+# Exact source and exposure coverage
+
+Primary author source and all actual execution evidence were read without truncation. Capturing or hashing a file is distinguished below from reading its scientific content. SOURCE_MANIFEST.json records exact original/capture paths, byte lengths and SHA256 identities. SOURCE_REFRESH.json rechecks the identities before the final review seal.
+
+## New transfer argument
+
+`author_at_launch/DERIVATION.md`, 29,555 bytes, 309 lines, SHA256 `500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6`: complete lines 1–309 read in two bounded ranges. All changed scientific arguments and their necessary bus interfaces were inspected.
+
+| Lines | Coverage |
+|---|---|
+| 1–6 | Status, exact parent and exposure history; chronological pending-parent wording does not supersede the later controlling qualification |
+| 7–35 | Literal-H, bias decomposition/reserves, admissible attenuation and scalar separation; identified computable-input clarification |
+| 36–70 | Gate versus interaction-frame target, noncommuting window upper bound, channel triangle lower bound, explicit qubit counterexample and narrow scope |
+| 71–86 | Existential bounded logarithm, dense rational search, certified strict tests and decidable support |
+| 87–161 | Uniform positive cone, dummy-weight full gap, common contraction, explicit cofactor lower bound, source/counterterm/corrector bounds and row-norm fluctuation bound |
+| 162–216 | Direct source phases, actual order of design choices, post-T calibration, full scalar/output equation and five isometry contributions |
+| 217–258 | Complex-HS Krylov rank equivalence, polynomial degree, D+1 rational-node selection and computable eigenbasis/certificates |
+| 259–300 | Uniform base coefficient ceiling, actual incident cap, epsilon allocation, initialization and complete-generator calibration |
+| 301–309 | Separate fixed/scalable conclusions, missing broad strong-point supplier and unconstructed alternative mechanisms |
+
+Author `CHECK_EVIDENCE.md` (2,093 bytes, 14 lines, SHA `571b661e43ff55a92f15c420f765f4fdee4cae1c5a27883a5124287d1ee03d89`), `SOURCE_COVERAGE.md` (3,272 bytes, 22 lines, SHA `35debefc500d8bb57e1ce64761e601438e81057f1ffeb3ffcc873cd3bb20fe76`) and `CHECKPOINT.md` (3,247 bytes, 19 lines, SHA `cdc7d6f85070548f966e729bc4b6383ad872ccf3f99a46c2ee00e7a04ed3c60d`) were read completely.
+
+## Actual author and reviewer programs
+
+The complete author `finite_check.at_launch.py` / `finite_check.py` was read: 2,503 bytes, 51 lines, SHA `4558a15b63e5aedea552af6fc0818f8e12251173ae7ef869cae9d4e3ca68b638`. The complete launcher was read: 1,409 bytes, 19 lines, SHA `c2042f3f9a5320da27ce0d756d552c1705980afd33971b9bc3e2407c0a003318`. Its hash agrees with the recorded launcher hash. CHECK_LAUNCH.json, CHECK_RESULT.json, complete 2,030-byte stdout and empty stderr were read. Both post-freeze streams were also read; they are captured as supplemental evidence rather than retroactively called members of the author's original freeze.
+
+The full author FREEZE.json was read as identity metadata, and all 30 referenced members were verified programmatically before copying. The capture/freeze bookkeeping scripts and transitive source-capture stream were preserved and hashed, but not independently audited line by line as scientific algorithms. Hash verification does not establish theorem correctness.
+
+Reviewer programs were written after the author's proof **and code** were exposed. `transfer_check.py` is a separate implementation with no author-code import: exact complex-HS and Vandermonde calculations, different target-box fixture, rational candidate enumeration with exact Taylor certification, and complete phase comparison. `run_01` preserves source and launcher bytes at launch, dimensions, command/cwd, timeout, environment, result and full streams. `appendix_check.py` likewise uses direct exact Kronecker matrices rather than the root probe's Pauli multiplication table. Its source, launcher and exact root-output input are preserved in `appendix_run`. All reviewer sources, receipts and complete streams were inspected. CHECK_EVIDENCE.md records executed scope and limits. No run of the complete controller family is claimed.
+
+The first reviewer's structural-equality diagnostic false value is retained. The second execution explicitly computes and simplifies its mathematical difference to zero. This is a resolved diagnostic defect, not an overwritten output or a changed mathematical result.
+
+## Qualified bus dependency and reused coverage
+
+The complete new bus proof SHA `855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2` and its complete finite corrector were read and independently recomputed in this reviewer's preceding coherent task. That exact coverage is frozen in `../strongly_regular_bus_exposed_check/REVIEW.md`, SHA `cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7`, and its REVIEW_FREEZE.json SHA `e606b072b006026700c4b951786636efd03bf1d973e77627ef342705fab0a29c`. The same bus bytes are captured here as `author_at_launch/sources/bus_derivation.md`. Coverage was reused at unchanged identities rather than falsely described as a new independent read of every old body.
+
+The controlling root `QUALIFIED_ACCEPTANCE.json` (5,321 bytes, SHA `cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726`) and `FINAL_QUALIFICATIONS.md` (4,507 bytes, SHA `a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880`) were read completely and copied under `parent_qualification_at_launch`. Their exact-target/support, all-output, full-gap, incident-cap and provenance qualifications remain controlling. Their acceptance was not used as evidence that the new uniformization and polynomial transfer claims were already checked.
+
+Other transitive scientific captures—accuracy_scaled, conditioned_compiler, composition, mediator, previous_derivation, root_lemmas, root_routing and selection—were hashed and preserved but not newly read in full in this transfer review. No newly checked scientific claim is attributed to their unread historical bodies. Their wrapper/historical distinction and earlier coverage remain where the prior packets recorded them; this review does not broaden that coverage.
+
+## Exposed Heisenberg appendix
+
+The parent requested the appendix during the main review, after the main reviewer run had completed. `root_probe_at_launch/heisenberg_static_port_probe.py` and `executed_source.py` are byte-identical: 3,667 bytes, SHA `5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22`. The full source, 1,787-byte EXECUTION.json, 5,038-byte stdout and empty stderr were read completely. Exact original/capture identities are in ROOT_PROBE_CAPTURE.json. The root recorder is named/hashed by the receipt but not recovered as source in this packet; no claim of complete recorder-byte recovery is made.
+
+The reviewer analytically checked global SU(2), the exhaustive scalar/nonscalar bias split and the support-selection argument, then reconstructed every integer Lie-word column in a separate exact 4-by-4 implementation. The root conclusion is explicitly attributed. The earlier two-axis probe was neither read nor executed nor imported as a dependency. No unrelated worker science was accessed.
+
+## Instructions, limited searches and status
+
+The installed physics-claim-reviewer skill was previously read completely and reused at SHA `9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455`. The no-go-discipline skill was read completely for the narrowed negative claims at SHA `9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc`. Both installed files were compared byte for byte with the supplied repository copies and captured in `instructions/`. The freshness rule was read completely and captured at SHA `b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0`; complete proof-search-governance coverage was reused at unchanged SHA `be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258` and captured. No Git/fetch or remote-main freshness assertion was made under the task's no-Git instruction.
+
+Complete applicable AGENTS/workflow/workhorse instruction reads were reused at unchanged captured identities: planning agents `3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9`, workflow `05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce`, workhorse `9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb`. User AGENTS and the parent's latest bounded tasks control scope. No model or reasoning override was set.
+
+The initial broad echo-search display was truncated and is not treated as a completed verification. Its complete rerun was archived. A deterministic filter found no direct static-bias/window phrase among its 107 returned lines; generic Heisenberg matches were not fully read or cited as authorities. The no-go publication gate remains explicitly unpassed for the reasons in its checklist. No repository-wide impossibility or historical-retirement conclusion is inferred from this limited search.
+
+Only this assigned directory was written. No editable prompt file changed, and no platform instruction modification is claimed. All author, canonical and previously frozen packets remain unchanged. This packet reports bounded mathematical review, not publication, retained status, a physical supplier, or blind/different-model-family replication.

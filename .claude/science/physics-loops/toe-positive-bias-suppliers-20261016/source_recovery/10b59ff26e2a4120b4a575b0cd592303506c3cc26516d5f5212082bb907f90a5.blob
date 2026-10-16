@@ -1,0 +1,65 @@
+"""Fresh exact reviewer discriminator for the arbitrary noncommuting H step.
+
+The expected polynomial is derived separately using Pauli cross products in
+REVIEW.md. This is not a rerun of the candidate's commuting H=-C fixture.
+"""
+import json
+import signal
+import sys
+import sympy as s
+
+signal.alarm(20)
+x = s.Symbol("s", real=True)
+I = s.eye(2)
+X = s.Matrix([[0, 1], [1, 0]])
+Y = s.Matrix([[0, -s.I], [s.I, 0]])
+Z = s.diag(1, -1)
+C = I + Z
+B = I + X + Z
+H = 2 * X + Y + 3 * Z
+G = H + x * C
+
+def comm(A, D):
+    return A * D - D * A
+
+F1 = comm(G, B)
+F2 = comm(G, F1)
+gram = s.Matrix([[s.trace(A.H * D) for D in (F1, F2)] for A in (F1, F2)])
+p = s.factor(gram.det())
+expected = 256 * (x * x + 6 * x + 14) * (x * x + 2 * x + 3) ** 2
+assert s.expand(p - expected) == 0
+assert comm(H, C) != s.zeros(2)
+assert s.Poly(p, x).degree() == 6
+assert s.Poly(p, x).LC() == 256
+FC1 = comm(C, B)
+FC2 = comm(C, FC1)
+pC = s.Matrix([[s.trace(A.H * D) for D in (FC1, FC2)] for A in (FC1, FC2)]).det()
+assert pC == 256
+
+# A bilinear transpose-free expression is not the complex Hilbert-Schmidt Gram.
+wrong = s.factor(s.Matrix([[s.trace(A * D) for D in (F1, F2)] for A in (F1, F2)]).det())
+assert s.expand(wrong + p) == 0
+assert wrong.subs(x, 0) < 0
+assert all(p.subs(x, node) > 0 for node in (0, 1, s.Rational(1, 7)))
+
+print(json.dumps({
+    "role": "Fresh exact same-model reviewer check after proof findings were recorded; not all-n proof",
+    "python": sys.version,
+    "sympy": s.__version__,
+    "dimension": 2,
+    "child_alarm_seconds": 20,
+    "H": "2X+Y+3Z",
+    "C": "I+Z",
+    "B": "I+X+Z",
+    "H_C_commutator": [[str(z) for z in row] for row in comm(H, C).tolist()],
+    "direct_complex_Gram": [[str(s.factor(z)) for z in row] for row in gram.tolist()],
+    "direct_determinant": str(p),
+    "Pauli_cross_product_prediction": str(s.factor(expected)),
+    "polynomial_coefficients_descending": [int(c) for c in s.Poly(p, x).all_coeffs()],
+    "exact_degree": 6,
+    "leading_coefficient": 256,
+    "pure_C_Gram_determinant": int(pC),
+    "no_adjoint_mutant_equals_minus_correct_polynomial": True,
+    "no_adjoint_mutant_value_at_zero": int(wrong.subs(x, 0)),
+    "all_assertions_passed": True
+}, indent=2))

@@ -1,0 +1,33 @@
+# Source and exposure coverage
+
+This is the reviewer's coverage, distinct from the captured author's SOURCE_COVERAGE.md. Paths below are relative to this review directory unless stated otherwise. The final freeze records every local byte identity; CANDIDATE_EXPOSURE.json records each captured author's absolute original path and exact SHA256. Hashes bind bytes, not truth or independence.
+
+## Pre-candidate calculation
+
+The parent supplied H=3I+XX+YY+ZZ, C=2(I+YY)+8(I+ZZ), B=(X+2Y+3Z) tensor I, and the intended comparison with the earlier onsite-only obstruction. Prior qualified transfer and onsite-obstruction review context was inherited. No candidate file was read before original/ORIGINAL_FREEZE.json was sealed at 02:03:38.067736Z, SHA256 baeafe9ce9e754ce503d53685a76fe2cf0931c8481b46e10654525d5cd9bf73c.
+
+The complete original 57-line derivation, scientific sources and both launcher versions were authored and inspected. Both actual runs' LAUNCH.json, RESULT.json and full streams were read; the failed assertion and corrected simplification are retained. The corrected scientific source SHA256 is 4bfec02501fb685719b9ac202ad1bbbec8d93c8b8485488cf86acae75420eb1e; corrected launcher SHA256 d3a96ae91bbcb7c1a5fc6eb3a031548a427013e2bebcba332b5ccd25f5f78b6a. All nineteen original freeze members remain immutable.
+
+## Post-seal author exposure
+
+The first exposed file was candidate FREEZE metadata after the original seal. The recorded first-exposure interval is (02:03:38.067736Z,02:04:15Z]; full capture occurred at 02:04:35.990237Z. A failed schema assumption is documented in BOOKKEEPING.md. Neither a blind task nor model-family independence is claimed.
+
+Fully read after seal:
+
+- Candidate DERIVATION.md, all 270 lines, 24,786 bytes, SHA256 cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950; first read in complete consecutive ranges, with sections 6–7 reread for timing/phase/geometry.
+- Candidate exact_bell_probe.py, all 146 lines, 8,038 bytes, SHA256 c2729513574cf2695180cb946b6f3674d360814a5eec83c48f7af12a80b7fc74. The executed copy is byte-identical.
+- Candidate run_exact_check.py, all 51 lines, 1,900 bytes, SHA256 1618c3730f5f971e6c1b6bfc79bce40ecd4b64d91e3d2bffdd5d353319dad64d.
+- Complete author EXECUTION.json, 2,245 bytes, SHA256 5f83de1c10687813b657ba7df344f0103ae3d31292ee04761a4885a0d09b8f28; complete stdout, 6,207 bytes, SHA256 eef262f0a6c2793346ef187364b9e6fd5bceaed76e1ea2d281d746cfa6898751; complete empty stderr.
+- Candidate SOURCE_COVERAGE.md, SOURCE_MANIFEST.json, CHECKPOINT.md and FREEZE.json in full. Candidate finalize_packet.py was captured and hashed but not fully read and is not scientific evidence.
+
+No author execution was replayed. The pre-exposure check supplies the separately reconstructed finite algebra. The post-exposure interval bounds, optional port shifts and conditional cap/phase substitution were checked analytically in REVIEW.md. PASS counts are not additional scientific premises.
+
+## Reused and refreshed dependencies
+
+The prior complete qualified transfer review is reused at REVIEW SHA256 168ce9f2478bf31d09aaecdcd32edc6a7160dd8d558d98174eb80182f2d351e2, freeze SHA256 763daec5e1b3a28b1011cf43a30e2ce79db900142afd3334d3bbd159dbc60ef6. Its complete 76-member packet was verified unchanged before the original seal and is refreshed at the final seal. That review fully examined the transfer source SHA256 500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6 and its execution evidence. The present review imports its qualified theorem, including computable-data requirements; it does not declare that theorem newly independently verified by a 4x4 calculation.
+
+The prior bus review is likewise reused with its support/phase computability qualifications, rational-target repair, complete output and scalar ledger, common incident cap and supplied geometry/preparation/calibration/isolation premises. Its author proof SHA256 is 855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2. The onsite-only Heisenberg obstruction was independently checked in the prior transfer review appendix SHA256 4db3c5e627558505aa767f4b62d67c1ca809c141506db1a376e5c7cff0579a57. Its exact scope is preserved; no new no-go publication claim is made.
+
+Current source lines 1–110 of the accuracy-scaled compiler note were read in this task, including the complete supplied-interface passage and old-edge/path limitation at line 38, SHA256 c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2. Other historical bodies are not newly imported as proof premises. The bus exterior geometry is reused from the previous complete qualified parent review. The candidate's mediator geometry citation was inspected in its proof but the full mediator source was not reread here and is not needed for this explicit two-site geometry argument.
+
+Applicable AGENTS, SCIENCE_WORKFLOW, workhorse and physics-claim-reviewer instructions were already read completely for the coherent task and are reused at verified identities. SOURCE_REFRESH.json records the fresh hash comparisons. Latest inline user and parent task restrictions control this bounded review. No new agent, model override, publication, Git, audit, cache, graph, prompt or canonical edit occurred. All writes stayed in this review directory; editable prompt files changed: none.

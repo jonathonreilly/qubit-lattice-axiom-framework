@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/original/execution/check.py", line 17, in <module>
+    assert port==expected and B*B==14*II
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

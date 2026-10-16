@@ -1,0 +1,76 @@
+{
+  "frozen_utc": "2026-10-16T01:51:57.909476+00:00",
+  "claim_status": "Exposed author spectral proposition plus expressly conditional transfer substitution",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/DERIVATION.md",
+    "bytes": 24786,
+    "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+  },
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/CHECKPOINT.md",
+      "bytes": 2233,
+      "sha256": "617c0beafb2f1cf1f0c0221bce63944bd7e22d61989c0dbd8b27e9094677789c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/DERIVATION.md",
+      "bytes": 24786,
+      "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/SOURCE_COVERAGE.md",
+      "bytes": 2228,
+      "sha256": "36c6e9c97e97109e84048329b18b70772a11c618ac5614635482241934863f77"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/SOURCE_MANIFEST.json",
+      "bytes": 9492,
+      "sha256": "76529c4f24a762cce9924002696230e7209d721aee22725348a55cb8130bf46e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/exact_bell_probe.py",
+      "bytes": 8038,
+      "sha256": "c2729513574cf2695180cb946b6f3674d360814a5eec83c48f7af12a80b7fc74"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/finalize_packet.py",
+      "bytes": 12473,
+      "sha256": "24db9988fb702a2c549dd21a7b00a995da5ef4ffb8871ca0a97ed367b04970fc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/run_exact_check.py",
+      "bytes": 1900,
+      "sha256": "1618c3730f5f971e6c1b6bfc79bce40ecd4b64d91e3d2bffdd5d353319dad64d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/EXECUTION.json",
+      "bytes": 2245,
+      "sha256": "5f83de1c10687813b657ba7df344f0103ae3d31292ee04761a4885a0d09b8f28"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/executed_source.py",
+      "bytes": 8038,
+      "sha256": "c2729513574cf2695180cb946b6f3674d360814a5eec83c48f7af12a80b7fc74"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/runs/exact_bell_probe/stdout.txt",
+      "bytes": 6207,
+      "sha256": "eef262f0a6c2793346ef187364b9e6fd5bceaed76e1ea2d281d746cfa6898751"
+    }
+  ],
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/SOURCE_MANIFEST.json",
+    "bytes": 9492,
+    "sha256": "76529c4f24a762cce9924002696230e7209d721aee22725348a55cb8130bf46e"
+  },
+  "scientific_execution_count": 1,
+  "independent_review_claimed": false,
+  "prior_freezes_modified": false,
+  "new_candidate_exposure_after_own_freeze": null,
+  "write_boundary": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate"
+}

@@ -1,0 +1,10 @@
+{
+  "command": "rg -n -i --max-count 3 'Heisenberg|static bias|bias.{0,20}window' docs/ai_methodology docs/*BOUNDED_THEOREM*",
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "exit_code": 0,
+  "raw_stdout_bytes": 36204,
+  "raw_stdout_sha256": "3af171d81f980a17eafd0980eb0754446a609235cf066d5446ba4c4a45f2734e",
+  "total_returned_lines": 107,
+  "non_generic_bias_matches": [],
+  "coverage": "Initial display was truncated; complete rerun archived. Generic Heisenberg matches were not fully inspected or used as authority. This is a bounded echo search, not a repository-wide negative proof."
+}

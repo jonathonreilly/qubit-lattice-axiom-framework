@@ -1,0 +1,37 @@
+# Actual bounded execution evidence
+
+All sources, launchers, input captures, launch/result receipts and complete streams are retained. The reviewer does not convert author checks or source-exposed recomputations into blind independence. The following are actual runs, not planned checks.
+
+## Author run
+
+`author_at_launch/finite_check.at_launch.py`: 2,503 bytes, SHA256 `4558a15b63e5aedea552af6fc0818f8e12251173ae7ef869cae9d4e3ca68b638`. The captured launcher SHA `c2042f3f9a5320da27ce0d756d552c1705980afd33971b9bc3e2407c0a003318` matches the launch receipt. Started 01:11:26.221212 and finished 01:11:26.648791 UTC, exit 0, 30-second limit, empty stderr. All 14 displayed checks are dimension-two examples: six exact commuting Gram values, six noncommuting window bounds, one endpoint order identity and the fixed-bias trace-distance counterexample. No general log enumeration, uniform bus construction or full many-body controller was run.
+
+## Reviewer transfer run
+
+`run_01/LAUNCH.json` records exact command/cwd, interpreter, source and launcher captures, dimensions and 120-second timeout. Started 01:25:28.768138 and finished 01:25:32.431121 UTC, exit 0, empty stderr. Main source: 9,098 bytes, SHA `571571a98855200842ef1606f1f34a4b6466d23f434aca956d20154ab27dddf6`. Launcher: 1,607 bytes, SHA `c38935f82b90a3b293892a5fd05970e5fe9cd81b8202031c6198d5f6dae84a24`.
+
+| Check | Result | Scope |
+|---|---|---|
+| Noncommuting complex two-level Gram polynomial | Exact degree-six polynomial agrees with 256|h|^2|h cross b|^4 | Exact symbolic example, including complex HS conjugation |
+| Four-level Krylov rank and Vandermonde determinant | Degree 102<=156; ranks 12 at 1 and 1/16, rank 10 at 1/2; zero port pair rank 10; strict positive grid witness 1/2528 | Exact finite examples using a physical local port in a rational energy basis |
+| Target-box calibration and response | Five targets across [-8,8], residual <=6.4e-14; common lower bound 8.78e-16 below all sampled responses | Six-dimensional one-particle fixture; no complete Q/P gap or contraction certificate |
+| Rational log witness after T | T=23, lambda=1/5, 30,976 numerical candidate screens; selected rational M; exact rational norm/error certification with eta=1/4 | One coarse witness, not an all-accuracy search or full controller |
+| Complete old phase/order budget | Errors .17424–.21713 under .25–.42774 bounds; erroneous extra lambda c_C T phase gives about 1.996–1.998 | Old-space phase discriminator; full controller factors inherited analytically |
+
+Numerical candidate screening in the log test is followed by exact rational Taylor and Sylvester tests; it is not itself a certified search predicate. The exact comparison proves the selected witness meets its stated eta. The finite eta=1/4 example is not represented as a run of the theorem's epsilon/16 budget.
+
+One diagnostic field printed `scalar_bias_cancels: false` because it used structural SymPy equality. This output remains unchanged. The later exact entrywise simplification in the appendix run proves the difference zero, resolving the diagnostic without altering this source or its polynomial result. No assertion failure or failed execution was hidden.
+
+## Parent root probe and reviewer appendix run
+
+The parent root probe's exact scientific source is SHA `5e8b4df1f4e341df3d54eeccb436765c7422331fd2911c9b63fc0807e245af22`, 3,667 bytes. Its actual receipt reports start 01:24:08.624577, end 01:24:09.338287 UTC, exit 0; complete stdout SHA `e88c992762f2ad7e0f746d2d5d8adf0bbba5bd61690197241addae9007c32dd4`. The supplied source and executed_source.py match. The recorder is identified in that receipt but its bytes are not captured here; no recorder recovery is claimed. This is exposed input, not reviewer execution.
+
+`appendix_run/LAUNCH.json` records the separate reviewer execution: exact direct-matrix source, launcher and root-output input captured before launch, 60-second limit, start 01:27:46.404648, end 01:27:47.005145 UTC, exit 0, empty stderr. Source SHA `1645915aeae9419253035a28e0ba71dbcd9d1c407628e70c213c76d37e486a2f`, 3,297 bytes; launcher SHA `0908f2d3b6f5f0e9a99449b47217ce39495cbcab346001fd423ce30f4fe17b2f`, 1,698 bytes.
+
+The reviewer reconstructs all 16 root Lie-word columns with exact 4-by-4 Kronecker multiplication and trace projection, obtains determinant -4/rank 16, checks H and positive-ray spectra, the three global SU(2) commutators, product eigenvectors and all one-site Pauli transition elements. It also resolves the scalar-commutator structural-equality diagnostic. No root program is imported or rerun, and no earlier two-axis probe enters the evidence.
+
+## Read-only searches and final bookkeeping
+
+The full repeated echo search is archived because its initial tool display was truncated. It is not a completed scientific read of every generic match. ECHO_SEARCH_RECEIPT.json states the actual command, limited corpus, bytes, hash and coverage limit. SOURCE_REFRESH.json rechecks author source/capture identities, controlling parent qualification and the preserved prior bus freeze. REVIEW_FREEZE.json seals this packet; an independent post-execution verification checks every member and detects unsealed files. The sealing process prints outside the sealed directory, avoiding the earlier task's live-stdout sealing error.
+
+No additional full controller simulation, N-to-infinity check, efficient-search proof or physical realization was executed. Exact source identity is provenance, not a mathematical verdict.

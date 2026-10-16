@@ -1,0 +1,186 @@
+{
+  "captured_utc": "2026-10-16T01:19:11.433298+00:00",
+  "author_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_candidate",
+  "author_freeze_sha256": "3cce08e1453052a8b4db806a939f5b3ecc852afb258f10cdfffb25697e64a8ba",
+  "verified_author_members": 30,
+  "artifacts": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 3247,
+      "sha256": "cdc7d6f85070548f966e729bc4b6383ad872ccf3f99a46c2ee00e7a04ed3c60d"
+    },
+    {
+      "path": "CHECK_EVIDENCE.md",
+      "bytes": 2093,
+      "sha256": "571b661e43ff55a92f15c420f765f4fdee4cae1c5a27883a5124287d1ee03d89"
+    },
+    {
+      "path": "CHECK_LAUNCH.json",
+      "bytes": 716,
+      "sha256": "5fa8f5530e30e8c8afbb27bd1c9033acb986381f1ae6b339a561921492ba7275"
+    },
+    {
+      "path": "CHECK_RESULT.json",
+      "bytes": 98,
+      "sha256": "cceb5134ca097eaaf82818e0bf8909ba9896be2bb21ff8b496bfd8696f6c583d"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 29555,
+      "sha256": "500797910300ef142abfeaf9d74ad93a418d770829818ca87db748d4759425a6"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 3272,
+      "sha256": "35debefc500d8bb57e1ce64761e601438e81057f1ffeb3ffcc873cd3bb20fe76"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 9234,
+      "sha256": "e871a5ede6dd2a295799d1804bd478880e0c6b0492228ce8d2ccdf36155b892f"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 1441,
+      "sha256": "d088dcb0f2302ee305ba6996ff0bf438340c149b9ffc003c5db458098f7fb3e7"
+    },
+    {
+      "path": "finite_check.at_launch.py",
+      "bytes": 2503,
+      "sha256": "4558a15b63e5aedea552af6fc0818f8e12251173ae7ef869cae9d4e3ca68b638"
+    },
+    {
+      "path": "finite_check.py",
+      "bytes": 2503,
+      "sha256": "4558a15b63e5aedea552af6fc0818f8e12251173ae7ef869cae9d4e3ca68b638"
+    },
+    {
+      "path": "finite_check.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "finite_check.stdout.log",
+      "bytes": 2030,
+      "sha256": "f8274056683025ccba353f54748193b95b7a25d7bedf7f36e637bd08c592ec19"
+    },
+    {
+      "path": "freeze.py",
+      "bytes": 1627,
+      "sha256": "b5ca239dcd5feeac0e4934c5138487cf9cce53dd02ea85498f2187f8a7e9a3a7"
+    },
+    {
+      "path": "run_recorded.py",
+      "bytes": 1409,
+      "sha256": "c2042f3f9a5320da27ce0d756d552c1705980afd33971b9bc3e2407c0a003318"
+    },
+    {
+      "path": "source_capture.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source_capture.stdout.log",
+      "bytes": 8492,
+      "sha256": "ef9dc9a801994793f156d7dc9cffad215fdd6a6276ae65788377cf2cade8a68f"
+    },
+    {
+      "path": "sources/accuracy_scaled.md",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2"
+    },
+    {
+      "path": "sources/bus_derivation.md",
+      "bytes": 40500,
+      "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2"
+    },
+    {
+      "path": "sources/bus_freeze.json",
+      "bytes": 9215,
+      "sha256": "2d47b5930fa0ecc86d994fc9369e1702922f6c2607b42bc6d349172024c99508"
+    },
+    {
+      "path": "sources/composition.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+    },
+    {
+      "path": "sources/conditioned_compiler.md",
+      "bytes": 97212,
+      "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a"
+    },
+    {
+      "path": "sources/mediator.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+    },
+    {
+      "path": "sources/planning_agents.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": "sources/previous_derivation.md",
+      "bytes": 31713,
+      "sha256": "47cda48195580320d92851332bce37d09f8703294acadb571b69d0dc23a48c15"
+    },
+    {
+      "path": "sources/root_lemmas.md",
+      "bytes": 9905,
+      "sha256": "08e4b164c2b8443b5ab2d826e91afe016679a66a922ab571cc0151b244028fde"
+    },
+    {
+      "path": "sources/root_routing.md",
+      "bytes": 7618,
+      "sha256": "64c35e0f33e44e0815e8bfb34cd1b9b9cb7286fb1cde5709dae0192cb93be89d"
+    },
+    {
+      "path": "sources/root_routing_freeze.json",
+      "bytes": 998,
+      "sha256": "c8ba52206c27d8b9c80e1b5a9b89e086f2b876415bf4fbae6ca673e9beca35cb"
+    },
+    {
+      "path": "sources/selection.md",
+      "bytes": 6974,
+      "sha256": "9ca4870b7aa0e2a63d7995227a19391d1b3ec314f0b9997b503e26865f0cb1e9"
+    },
+    {
+      "path": "sources/workflow.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "sources/workhorse.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    }
+  ],
+  "supplemental_streams": [
+    {
+      "path": "freeze.stdout.log",
+      "bytes": 373,
+      "sha256": "a1dbac65874f236742f0fe89fc57cae6ae75b71fd8eff67689b6b92e74fbcece",
+      "status": "post-freeze supplemental stream, not covered by author manifest"
+    },
+    {
+      "path": "freeze.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "post-freeze supplemental stream, not covered by author manifest"
+    }
+  ],
+  "parent_qualifications": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "parent_qualification_at_launch/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "parent_qualification_at_launch/FINAL_QUALIFICATIONS.md",
+      "bytes": 4507,
+      "sha256": "a182e0074ac9b8ed1d9e9e57627d289754252e2969446099ed502e229bf61880"
+    }
+  ]
+}

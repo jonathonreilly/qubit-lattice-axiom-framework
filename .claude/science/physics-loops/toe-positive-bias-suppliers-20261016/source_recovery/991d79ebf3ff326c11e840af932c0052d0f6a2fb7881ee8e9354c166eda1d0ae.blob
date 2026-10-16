@@ -1,0 +1,42 @@
+# Bounded author check and actual execution evidence
+
+One scientific execution was made, with no failures or reruns. It is an author check after exposure to the root formulas. No parent executable was read, imported, or executed. Agreement does not establish blind or model-family independence. The exact determinant/projector calculations and the eigensolver use different finite routes from the coefficient derivation, while sharing the disclosed proposed formulas as comparison targets.
+
+The actual launch was `python3 -B run_check.py` with cwd equal to this packet directory. The tool returned session 77065, chunk 52a3c9; the completion poll returned chunk bb750f and exit 0. The launch-time receipt captures `sys.orig_argv`, including the launcher's `-B`, and the exact child argv:
+
+```
+/opt/homebrew/opt/python@3.13/bin/python3.13 -B /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_chain_strong_point_candidate/check_run_01/check_induction.at_launch.py
+```
+
+The child's cwd was that `check_run_01` directory. Started UTC: 2026-10-16T01:57:19.863356+00:00. Finished UTC: 2026-10-16T01:57:21.145399+00:00. Elapsed: 1.2790604578331113 seconds. Exit: 0. Stderr is empty. The actual executable, launcher and mathematical-source manifest were copied before the science launch. No receipt was reconstructed or overwritten. This paragraph's tool chunk/session identifiers are a retrospective transcription of the tool record; the separate child launch receipt was written before execution.
+
+Source SHA-256: `e2cd05674e2a811709f901d2ec7537bca20b4a235dd9f4a73f4a701c0683e55e`.
+Launcher SHA-256: `745bf52b886b72daf47a318c071ffad18948bf4ecf054940af23f6e24f8132fb`.
+Complete stdout SHA-256: `fc36b8dbbac46b93e7216b20ce6135dddf108443e069267b0f85e650d7a389e5`.
+Python 3.13.5, SymPy 1.14.0, mpmath 1.3.0 were used. The exact checks use rational/Gaussian-rational matrices; the separate eigensolver samples use 80 decimal digits without an interval-certification claim.
+
+## Exact tests and discriminators
+
+The six-level fixture has old energies 0,1,3, appended frequency 5, and old port
+
+    [[2, 1+i, 2-i],
+     [1-i, -1, 3+2i],
+     [2+i, 3-2i, 1/2]].
+
+From the full characteristic polynomial P(lambda,g), the program computes each second-order coefficient as -[g^2]P(e,g)/P_0'(e). In label order (a,+),(a,-), the values are
+
+    421/315, -691/715, 839/440, -253/180, 2329/1560, -331/140.
+
+They agree exactly with the separately evaluated sum formula. Dropping its b=a terms leaves residuals 2/5,-2/5,1/10,-1/10,1/40,-1/40. The three splitting coefficients are 103736/45045, 13117/3960, 42121/10920 and are pairwise distinct in this fixture.
+
+Full first projector-derivative matrices yield the 24 transition slopes with a!=b. All exact residuals against the two proposed formulas vanish. Reversing the opposite-sign coefficient gives, for example, residual -4/9-4i/9. The eigensolver separately aligns each eigenvector to its nonzero original coordinate; its largest transition-slope error at g=0.001,0.0005,0.00025 is approximately 0.00186153,0.000930819,0.000465424. The maximum energy remainder divided by g^4 is approximately 1.65844728,1.65844858,1.65844891. These samples check the displayed orders and signs at these points only; the analytic Cauchy estimate proves the uniform assertion.
+
+The two-qubit fixture uses omega=3 and g=1/10, full dimension 4, with the complete 12-column complex Hilbert-Schmidt Krylov matrix. Its Gram determinant is an exactly positive rational; the complete numerator and denominator are in stdout. The positive bias reserve is 43/10. Deleting the identity from the old coupling port gives rank 8, below 12, and characteristic polynomial
+
+    lambda^4-(501/25)lambda^2+160901/2500.
+
+This mutation refutes a natural weakened base construction, not the supplied induction and not other architectures. For H=-C_2, direct Grams at s=1 and s=1/7 are respectively zero and positive. The latter agrees exactly with (s-1)^156 p_C. Thus the check distinguishes the leading-coefficient argument from an incorrect requirement that H+C itself be strong.
+
+## Limits
+
+The fixture is not a full n-qubit enumeration, a physical implementation, an execution of the old-path-to-bus composition, or a precision/runtime theorem. Its three-level old fixture is an algebraic stress test for complex conjugation; the physical qubit induction uses dimensions 2,4,8,... . The rational two-qubit witness is directly certified by a Gram; it was not selected by the conservative threshold (8). No data fitting, numerical genericity assertion, or favorable asymptotic claim is used to establish the theorem. All scientific source and complete streams were read after execution and their hashes are verified in the final freeze.

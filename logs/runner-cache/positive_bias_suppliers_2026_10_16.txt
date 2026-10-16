@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/positive_bias_suppliers_2026_10_16.py
+runner_sha256: 6ed8d187ab1f55bead5fe289ce96a7e96806ab349d2230c415444e349314c64b
+input_fingerprint_sha256: ccc050f3b8251832dd7bcf0b2e6a525af6e3a61f134fd7905ff8efac04221098
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "exact bytes, recovery and captured binding metadata only"}
+per_element: source coefficient text retained; no physical element was executed
+per_site: declared complete lattice interface retained; no hardware test was executed
+per_mode: exact-target existence and rational-target effectiveness remain distinct; no scientific program executed
+per_block: positive-bias source text and historical success/failure/provenance metadata checked only
+lattice_wide: native preparation, actual suppliers and independent audit remain separate
+metadata_check_counts_only: provenance assertions, no scientific certification
+TOTAL: PASS=1848 FAIL=0
+
+----- stderr -----
+

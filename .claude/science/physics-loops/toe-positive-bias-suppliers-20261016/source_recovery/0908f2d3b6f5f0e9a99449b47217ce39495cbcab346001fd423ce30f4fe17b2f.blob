@@ -1,0 +1,19 @@
+"""Capture appendix scientific source, launcher and exact exposed input."""
+from pathlib import Path
+import datetime,hashlib,json,os,subprocess,sys
+root=Path(__file__).resolve().parent;run=root/'appendix_run';run.mkdir(exist_ok=False)
+items=[]
+for original,name in [(root/'appendix_check.py','appendix_check.py'),(root/'run_appendix.py','run_appendix.py'),(root/'root_probe_at_launch/stdout','root_probe.stdout.json')]:
+    data=original.read_bytes();(run/name).write_bytes(data);items.append({'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+cmd=[sys.executable,str(run/'appendix_check.py')]
+env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1')
+launch={'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'argv':cmd,'cwd':str(run),'timeout_seconds':60,'sources_and_input_at_launch':items,'limits':{'largest_Hilbert_matrix_dimension':4,'largest_coefficient_matrix_dimension':16},'environment_overrides':{k:env[k] for k in ['OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','PYTHONDONTWRITEBYTECODE']}}
+(run/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+with (run/'stdout.jsonl').open('w') as out,(run/'stderr.txt').open('w') as err:
+    try:
+        proc=subprocess.run(cmd,cwd=run,env=env,stdout=out,stderr=err,timeout=60,check=False)
+        result={'exit_code':proc.returncode,'timed_out':False}
+    except subprocess.TimeoutExpired:result={'exit_code':None,'timed_out':True}
+result['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+(run/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result));sys.exit(0 if result['exit_code']==0 else 1)

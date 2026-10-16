@@ -1,0 +1,13 @@
+# Current checkpoint
+
+Frozen at 2026-10-16T01:51:57.909476+00:00. Deliverable: DERIVATION.md, 24786 bytes, SHA256 `cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950`. This is an exposed author result for one explicitly stronger physical domain, not an independent audit or generic compiler claim.
+
+The specified positive existing-edge bias succeeds. At lambda=1 the complete energies are 0,8,20,24 and positive gaps are 4,8,12,16,20,24. All six off-diagonal entries of the designated one-qubit port are nonzero; its diagonals are zero. The full positive interval except lambda=1/3,1/2 works. On 0<lambda<=1/4, the smallest gap and distinct-gap separation are exactly 4lambda, and the minimum transition magnitude is one.
+
+Both positive added blocks are counted at both old endpoints: incident load 20lambda, at most five on the small interval, with actual added scalar rate 10lambda. The literal old H is unchanged. The supplied old geometry admits the support, but installing these anisotropic blocks and attenuating them is a separate physical permission from onsite-only controls or a particular isotropic path.
+
+One bounded same-author exact run completed at 2026-10-16T01:43:46.781448+00:00, exit zero, 62 assertions. Full source-at-launch and streams are in runs/exact_bell_probe/. The exact execution receipt, source identity inventory and read limits are preserved. No failed scientific execution occurred.
+
+Preserved failed/boundary cases: lambda=0 keeps the triplet degeneracy; lambda=1/3 and 1/2 repeat positive gaps; unshifted B has zero diagonals if a stronger all-entries wording is imposed; an isotropic old path is not the proposed anisotropy; endpoint correction alone does not cancel a continuing full-strength nonscalar bias over a positive window.
+
+Remaining obligations: permission for old-edge additions/attenuation; actual vacant exterior geometry and isolation; independent examination of the frozen full bus and transfer proofs; supplied controller state, coefficients, timing and complete-lifetime calibration. The generic Lie-to-static-bias premise is not solved. No other new-candidate source was inspected before this freeze. Root owns acceptance/publication. Prior freezes are unchanged.

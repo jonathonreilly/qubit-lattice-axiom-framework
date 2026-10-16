@@ -1,0 +1,30 @@
+{
+  "status": "bound_actual_root_publication_review",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_positive_bias_publication_review/REVIEW.json",
+    "bytes": 8774,
+    "sha256": "599f13b41038fb53b326e766ad772305dfc4f0501721d52a51534ca86bc3ac42"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/positive_bias_publication_review/EXECUTION.json",
+    "bytes": 1775,
+    "sha256": "792c7c7142442ba82eaf2bcffc903d9c4cfd9e9765c1b7e6654c3bda5fbd742b"
+  },
+  "decision": "Accept reviewed source-preserving positive conditional theorem package for separate root integration; canonical binding remains pending.",
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/refresh_after_joint_energy_publication/BINDING_REFS.json",
+    "bytes": 2455,
+    "sha256": "e45b2fb1a398a8dff54f063c67290c81b66d03ca928a6ffff7de35ab41d1f9b0"
+  },
+  "integration_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_positive_bias_integration_review/REVIEW.json",
+    "bytes": 9049,
+    "sha256": "9c9bdc800ff76eb0da2524a048c7ccf3f3a32a8e6a8ee4f7e18ab347b96311d2"
+  },
+  "integration_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/positive_bias_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 635017,
+    "sha256": "fcce1f1eded1ca0b0b7f21d1a5721862fba733133cb870bc77fd7b80f1a7141a"
+  },
+  "separate_source_review_freeze": null
+}

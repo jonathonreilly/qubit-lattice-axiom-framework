@@ -1,0 +1,18 @@
+{
+  "direct_mathematical_parents": [
+    {
+      "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 83919,
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+      "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+      "source_use": "qualified complete routed-bus theorem including rational-target repair, resources and supplied implementation premises"
+    }
+  ],
+  "parent_publication_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/strongly_regular_bus/PUBLICATION.json",
+  "supplied_parent_head": "68c531309ac6dae96289aab964213b8c5f55969b",
+  "current_local_head_observation": null,
+  "git_ancestry_is_not_dependency_rule": true,
+  "older_compiler_mediator_sources": "context and supplied-interface quotations, not imported theorem conclusions for this composition",
+  "standalone_transitive_theorem_files": [],
+  "scope": "The qualified bus source supplies its complete finite argument; later native physical supplies remain assumptions."
+}

@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-16T02:13:12.762354+00:00",
+  "status": "qualified_source_acceptance",
+  "retained_audit": false,
+  "author": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/DERIVATION.md",
+    "bytes": 24786,
+    "sha256": "cb2407b0d738d798397dee3bcabb0c50961f3817728ebba401ac9e8379e05950"
+  },
+  "author_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_candidate/FREEZE.json",
+    "bytes": 4101,
+    "sha256": "1138e75d7861218cc4ddb77b8c00e116ce7753648b3796d1d006f1bc6f2743fb"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/REVIEW.md",
+    "bytes": 12450,
+    "sha256": "e453b820ba45ce8f2ec2315c294b8e46fc54db6e7849668b95aaa6d076ac047e"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/REVIEW_FREEZE.json",
+    "bytes": 7005,
+    "sha256": "b49729b4e40c1b6a0879b438d794a7bc0df8903b091129e67d375e95ed5f6be2"
+  },
+  "protected_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/original/DERIVATION.md",
+    "bytes": 6035,
+    "sha256": "740ee398b3fe557eb5aed2a0c3a0abd77cfd83d19ff3e65ff79fad836a9dd938"
+  },
+  "protected_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_independent_check/original/ORIGINAL_FREEZE.json",
+    "bytes": 3145,
+    "sha256": "baeafe9ce9e754ce503d53685a76fe2cf0931c8481b46e10654525d5cd9bf73c"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/heisenberg_edge_bias_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 2331,
+    "sha256": "fad54208ad4fe2aaeaa81f3699231cd1ab8e7a0fbbad9d28fc193fdb7ae63d0e"
+  },
+  "verified_members": {
+    "author": 11,
+    "review": 40
+  },
+  "root_read_coverage": [
+    "Complete author and reviewer arguments, original pre-candidate derivation and exposure records.",
+    "Complete author check/launcher/receipt/streams; complete corrected reviewer check/launcher, exact failed-to-corrected source diffs, both launch/result records and full streams.",
+    "Independent root algebra check of all gap collisions, transition entries, whole-interval affine separation, positive blocks, phase ordering and conditional cap substitution.",
+    "Previously qualified static-bias and bus arguments reused at exact identities; no new all-device verification claimed."
+  ],
+  "parents": {
+    "static_bias": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_bias_transfer_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5915,
+      "sha256": "8353563cf50ce83eaf16c1fcb68776051721f95d58ccf5804733869947c7bc0b"
+    },
+    "bus": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5321,
+      "sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726"
+    }
+  },
+  "scientific_programs_run_this_acceptance": 0,
+  "primary_runs": 0,
+  "editable_prompt_files_changed": [],
+  "not_imported": [
+    "Unaccepted general positive-chain or padding continuations."
+  ]
+}

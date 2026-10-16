@@ -1,0 +1,8 @@
+# Clean-state rerun of every campaign runner, 2026-10-16T20:40Z, commit c75712bcb
+cubic_covariant_qubit_walk_cell_classification_2026_10_16: TOTAL: PASS=31 FAIL=0 (49s)
+order_blind_formation_one_dependent_record_field_2026_10_16: TOTAL: PASS=17 FAIL=0 (69s)
+two_qubit_cubic_dirac_tick_2026_10_16: TOTAL: PASS=40 FAIL=0 (47s)
+staggered_one_qubit_block_cubic_dirac_tick_2026_10_16: TOTAL: PASS=11 FAIL=0 (126s)
+cubic_cell_taste_content_axis_permutation_2026_10_16: TOTAL: PASS=9 FAIL=0 (1s)
+cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16: TOTAL: PASS=16 FAIL=0 (449s)
+PASS rows=5631 retained_grade=0 link_violations=0 class_f_violations=0 graph_delta=acknowledged (enforced)

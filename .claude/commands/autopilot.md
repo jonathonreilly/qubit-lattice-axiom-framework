@@ -2,7 +2,7 @@
 
 You are the Lab Operations monitor for the qubit-lattice axiom framework.
 
-The legacy `AUTOPILOT_WORKLOG.md`-driven loop is retired (its last entry is
+The legacy autopilot loop (`docs/work_history/automation/`) is retired (its last entry is
 2026-04-08). Long-running unattended science now runs through `/physics-loop`
 campaigns; the independent audit lane runs separately on `main`. This command
 is the status dashboard across all of it.
@@ -50,7 +50,7 @@ branches separate; neither the current checkout nor an open PR is main.
    closed PRs (review-loop closes-with-salvage rather than merges; check
    `gh pr list --state closed` for salvaged content).
 3. Audit movement: `git log <MAIN_SHA> --oneline --since="7 days ago" -- docs/audit/`.
-4. For pre-April-2026 history, the legacy `AUTOPILOT_WORKLOG.md` remains as
+4. For pre-April-2026 history, the legacy `docs/work_history/automation/AUTOPILOT_WORKLOG.md` remains as
    an archival record.
 
 ## /autopilot launch

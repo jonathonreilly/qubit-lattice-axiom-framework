@@ -1,6 +1,6 @@
 {
- "edge_count": 16048,
- "node_count": 7111,
+ "edge_count": 16056,
+ "node_count": 7116,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1667,8 +1667,8 @@
    "out_degree": 0
   },
   "ai_methodology.readme": {
-   "deps_hash": "cb89b937d1f1",
-   "out_degree": 30
+   "deps_hash": "31e49290c6b2",
+   "out_degree": 33
   },
   "ai_methodology.repo_trajectory_and_governance_evidence_2026-04-25": {
    "deps_hash": "e3b0c44298fc",
@@ -1835,8 +1835,8 @@
    "out_degree": 0
   },
   "ai_methodology_note_2026-04-25": {
-   "deps_hash": "2360df800df3",
-   "out_degree": 16
+   "deps_hash": "d9d9486f55b0",
+   "out_degree": 19
   },
   "all_time_energy_comparison_bounded_theorem_note_2026-10-13": {
    "deps_hash": "ddd47276b74a",
@@ -18735,8 +18735,8 @@
    "out_degree": 7
   },
   "repo.root_file_guide": {
-   "deps_hash": "121de915730c",
-   "out_degree": 3
+   "deps_hash": "1ca210e441e6",
+   "out_degree": 4
   },
   "repo.science_census_full_history_2026-08-05": {
    "deps_hash": "e3b0c44298fc",
@@ -22564,6 +22564,26 @@
   },
   "work_history.atomic.readme": {
    "deps_hash": "1ed96b7ffdf3",
+   "out_degree": 1
+  },
+  "work_history.automation.autopilot_janitor_protocol": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.automation.autopilot_protocol": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.automation.autopilot_summary_protocol": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.automation.autopilot_worklog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.automation.readme": {
+   "deps_hash": "851e45d34524",
    "out_degree": 1
   },
   "work_history.ckm.cabibbo_bound_note": {

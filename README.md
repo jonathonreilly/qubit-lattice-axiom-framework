@@ -76,9 +76,10 @@ shard for that claim shows a retained-grade `effective_status`.
 ## If you opened the file list
 
 [`docs/repo/ROOT_FILE_GUIDE.md`](docs/repo/ROOT_FILE_GUIDE.md) says what the
-root files are. `AUTOPILOT_*`, `SCALING_*`, and `toy_event_physics.py` are
-legacy. [`AGENTS.md`](AGENTS.md) and [`CLAUDE.md`](CLAUDE.md) send agents to
-the `ai/execution` branch, which does not merge into `main`.
+root files are. `SCALING_*` and `toy_event_physics.py` are legacy.
+[`AGENTS.md`](AGENTS.md) and [`CLAUDE.md`](CLAUDE.md) send agents to the
+science workflow and the `ai/execution` planning branch, which does not merge
+into `main`.
 
 Leave these directories until a specific note sends you there: `archive/`,
 `archive_unlanded/`, `docs/work_history/`, `docs/audit/data/ledger/`,

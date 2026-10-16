@@ -122,9 +122,9 @@ grants it.
   [`../UNPROMOTED_BRANCH_RETAINABILITY_AUDIT_NOTE.md`](../UNPROMOTED_BRANCH_RETAINABILITY_AUDIT_NOTE.md)
 - historical automation / hygiene protocols (earlier setup; current operations
   follow the lifecycle and refreshed skills above):
-  [`../../AUTOPILOT_PROTOCOL.md`](../../AUTOPILOT_PROTOCOL.md),
-  [`../../AUTOPILOT_JANITOR_PROTOCOL.md`](../../AUTOPILOT_JANITOR_PROTOCOL.md),
-  [`../../AUTOPILOT_SUMMARY_PROTOCOL.md`](../../AUTOPILOT_SUMMARY_PROTOCOL.md)
+  [`../work_history/automation/AUTOPILOT_PROTOCOL.md`](../work_history/automation/AUTOPILOT_PROTOCOL.md),
+  [`../work_history/automation/AUTOPILOT_JANITOR_PROTOCOL.md`](../work_history/automation/AUTOPILOT_JANITOR_PROTOCOL.md),
+  [`../work_history/automation/AUTOPILOT_SUMMARY_PROTOCOL.md`](../work_history/automation/AUTOPILOT_SUMMARY_PROTOCOL.md)
 - reusable methodology skills:
   [`skills/ai-physics-lane-builder/SKILL.md`](./skills/ai-physics-lane-builder/SKILL.md),
   [`skills/physics-loop/SKILL.md`](./skills/physics-loop/SKILL.md),

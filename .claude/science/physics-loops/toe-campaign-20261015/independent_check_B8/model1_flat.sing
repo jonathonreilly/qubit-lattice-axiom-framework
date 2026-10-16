@@ -1,0 +1,21 @@
+ring r0=0,(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,cb1,cb2,cb3,cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11),dp;
+link l="ssi:r model1_stable.ssi"; list fin=read(l); close(l);
+def RR=basering; list fin0=fin;
+ring r=0,(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,cb1,cb2,cb3,cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,z1,z2,z3),dp;
+option(redSB);
+list fin=imap(RR,fin0);
+matrix V[8][8]=c8*z1*z2*z3,-c4*z1*z2 + c9*z1*z2*z3,c4*z1*z3 - c9*z1*z2*z3,c10*z1*z2*z3 + c2*z1 - c5*z1*z2 + c6*z1*z3,c4*z2*z3 - c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z2 + c5*z2*z3 - c6*z1*z2,c10*z1*z2*z3 + c2*z3 - c5*z1*z3 + c6*z2*z3,c1 + c11*z1*z2*z3 + c3*z1 + c3*z2 + c3*z3 + c7*z1*z2 + c7*z1*z3 + c7*z2*z3,-c4*z1*z2*z3^2 + c9*z1*z2*z3,c8*z1*z2*z3,c10*z1*z2*z3 + c2*z1*z3^2 - c5*z1*z3 + c6*z1*z2*z3^2,-c4*z1*z3 + c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z2*z3^2 + c5*z1*z2*z3^2 - c6*z2*z3,-c4*z2*z3 + c9*z1*z2*z3,-c1*z3^2 - c11*z1*z2*z3 - c3*z1*z3^2 - c3*z2*z3^2 - c3*z3 - c7*z1*z2*z3^2 - c7*z1*z3 - c7*z2*z3,-c10*z1*z2*z3 - c2*z3 + c5*z2*z3 - c6*z1*z3,c4*z1*z2^2*z3 - c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z1*z2^2 + c5*z1*z2^2*z3 - c6*z1*z2,c8*z1*z2*z3,-c4*z1*z2 + c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z2^2*z3 + c5*z2*z3 - c6*z1*z2^2*z3,-c1*z2^2 - c11*z1*z2*z3 - c3*z1*z2^2 - c3*z2^2*z3 - c3*z2 - c7*z1*z2^2*z3 - c7*z1*z2 - c7*z2*z3,c4*z2*z3 - c9*z1*z2*z3,c10*z1*z2*z3 + c2*z2 - c5*z1*z2 + c6*z2*z3,-c10*z1*z2*z3 - c2*z1*z2^2*z3^2 + c5*z1*z2*z3^2 - c6*z1*z2^2*z3,-c4*z1*z2^2*z3 + c9*z1*z2*z3,-c4*z1*z2*z3^2 + c9*z1*z2*z3,c8*z1*z2*z3,c1*z2^2*z3^2 + c11*z1*z2*z3 + c3*z1*z2^2*z3^2 + c3*z2^2*z3 + c3*z2*z3^2 + c7*z1*z2^2*z3 + c7*z1*z2*z3^2 + c7*z2*z3,c10*z1*z2*z3 + c2*z2^2*z3 - c5*z1*z2^2*z3 + c6*z2*z3,c10*z1*z2*z3 + c2*z2*z3^2 - c5*z2*z3 + c6*z1*z2*z3^2,-c4*z2*z3 + c9*z1*z2*z3,c4*z1^2*z2*z3 - c9*z1*z2*z3,c10*z1*z2*z3 + c2*z1^2*z2 - c5*z1*z2 + c6*z1^2*z2*z3,c10*z1*z2*z3 + c2*z1^2*z3 - c5*z1^2*z2*z3 + c6*z1*z3,c1*z1^2 + c11*z1*z2*z3 + c3*z1^2*z2 + c3*z1^2*z3 + c3*z1 + c7*z1^2*z2*z3 + c7*z1*z2 + c7*z1*z3,c8*z1*z2*z3,-c4*z1*z2 + c9*z1*z2*z3,-c4*z1*z3 + c9*z1*z2*z3,c10*z1*z2*z3 + c2*z1 - c5*z1*z3 + c6*z1*z2,c10*z1*z2*z3 + c2*z1^2*z2*z3^2 - c5*z1^2*z2*z3 + c6*z1*z2*z3^2,-c4*z1^2*z2*z3 + c9*z1*z2*z3,-c1*z1^2*z3^2 - c11*z1*z2*z3 - c3*z1^2*z2*z3^2 - c3*z1^2*z3 - c3*z1*z3^2 - c7*z1^2*z2*z3 - c7*z1*z2*z3^2 - c7*z1*z3,-c10*z1*z2*z3 - c2*z1^2*z3 + c5*z1*z3 - c6*z1^2*z2*z3,-c4*z1*z2*z3^2 + c9*z1*z2*z3,c8*z1*z2*z3,c10*z1*z2*z3 + c2*z1*z3^2 - c5*z1*z2*z3^2 + c6*z1*z3,c4*z1*z3 - c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z1^2*z2^2*z3 + c5*z1*z2^2*z3 - c6*z1^2*z2*z3,-c1*z1^2*z2^2 - c11*z1*z2*z3 - c3*z1^2*z2^2*z3 - c3*z1^2*z2 - c3*z1*z2^2 - c7*z1^2*z2*z3 - c7*z1*z2^2*z3 - c7*z1*z2,c4*z1^2*z2*z3 - c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z1^2*z2 + c5*z1^2*z2*z3 - c6*z1*z2,-c4*z1*z2^2*z3 + c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z1*z2^2 + c5*z1*z2 - c6*z1*z2^2*z3,c8*z1*z2*z3,-c4*z1*z2 + c9*z1*z2*z3,c1*z1^2*z2^2*z3^2 + c11*z1*z2*z3 + c3*z1^2*z2^2*z3 + c3*z1^2*z2*z3^2 + c3*z1*z2^2*z3^2 + c7*z1^2*z2*z3 + c7*z1*z2^2*z3 + c7*z1*z2*z3^2,c10*z1*z2*z3 + c2*z1^2*z2^2*z3 - c5*z1^2*z2*z3 + c6*z1*z2^2*z3,-c10*z1*z2*z3 - c2*z1^2*z2*z3^2 + c5*z1*z2*z3^2 - c6*z1^2*z2*z3,-c4*z1^2*z2*z3 + c9*z1*z2*z3,-c10*z1*z2*z3 - c2*z1*z2^2*z3^2 + c5*z1*z2^2*z3 - c6*z1*z2*z3^2,c4*z1*z2^2*z3 - c9*z1*z2*z3,-c4*z1*z2*z3^2 + c9*z1*z2*z3,c8*z1*z2*z3;
+int ip,p,t,bad,ii; ideal G; matrix X[8][8]; poly f; intvec e;
+for(ip=1;ip<=size(fin);ip++){
+  G=std(fin[ip]);
+  X=reduce(V,G);
+  bad=0;
+  for(p=1;p<=8;p++){
+    if(p>1){X=reduce(X*V,G);}
+    f=reduce(trace(X),G);
+    for(t=1;t<=size(f);t++){ e=leadexp(f[t]); if(e[23]!=p || e[24]!=p || e[25]!=p){bad=1;} }
+    if(bad){ "prime",ip,": tr V^p has k-dependence at p=",p; break; }
+  }
+  if(!bad){ "prime",ip,": FLAT (tr W^p k-independent mod prime, p=1..8)"; }
+}
+quit;

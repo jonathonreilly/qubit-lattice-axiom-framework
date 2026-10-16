@@ -1,0 +1,14 @@
+{
+  "scope": "One trailing blank line removed after git diff --check; no AST or science change. STATE restored to prior JSON-as-YAML presentation, with current scope fields updated.",
+  "forward_before_sha256": "6cb64d4e44635877e13e75062e1239691da3c9dbb9ec246c2f85688b1216db03",
+  "forward_after_sha256": "83761632bef726dd562bb8f323f8d14714487862dfa3bdf702e59835dbd56b08",
+  "forward_ast_identical": true,
+  "all_nonidentity_results_unchanged": true,
+  "counts": {
+    "failed": 0,
+    "passed": 29
+  },
+  "exit_code": 0,
+  "elapsed_sec": 6.3493170738220215,
+  "cache_sha256": "7c64ddc501eddc141d07f952e782eb8a9957939c59948b243492c10e6b7388bd"
+}

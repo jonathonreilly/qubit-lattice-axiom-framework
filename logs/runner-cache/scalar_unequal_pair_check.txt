@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/scalar_unequal_pair_check.py
+runner_sha256: f313d5874c1fff25e4c509ac4ffb9c3f2860d1897899d832d615f2f8c2d6105c
+input_fingerprint_sha256: 4112a5477fa540d7755b5278ed608c793c551cccc323b90e16b9666dcc201206
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 4.69
+status: ok
+----- stdout -----
+per_element: checked: Cartesian signs, ordered commutator, angular nuisance, weak adjoints and pair normalization
+per_site: checked and not executed: no physical source/environment solution or survey calibration
+per_mode: checked: exact radial polynomial controls, positive random-wave covariance, spin ell2..5
+per_block: checked: unequal-distance chart, full ordered weak composition and finite catalogue enumeration
+lattice_wide: checked and not executed: no action/state/scale selection, parameter uniqueness or empirical validation
+{
+  "actual_current_surface_status": "conditional-support",
+  "counts": {
+    "failed": 0,
+    "passed": 89
+  },
+  "empirical_tests": 0,
+  "failed_checks": [],
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/NO_GO_DISCIPLINE_CHECKLIST.md": "eae8df85aa41dad39a5bd00e4a251f79577dc810a1f6cbb7bbe921cd9de49c3b",
+    "docs/SCALAR_UNEQUAL_PAIR_BOUNDED_THEOREM_NOTE_2026-10-15.md": "85b1d9203f70a0e5d571880baa94fd15e898bcb4482e028283e5df6676fd55dc",
+    "scripts/scalar_unequal_geometry.py": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+    "scripts/scalar_unequal_sampling.py": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a"
+  },
+  "observational_datasets_opened": 0,
+  "primary_sha256": "f313d5874c1fff25e4c509ac4ffb9c3f2860d1897899d832d615f2f8c2d6105c",
+  "read_inventory": {
+    "integrity_reads": [
+      "This source and declared inputs for SHA256; no external observations or inherited output arrays read"
+    ],
+    "scientific_inputs": [
+      "Explicit symbolic operators and fixed synthetic fixtures in declared helpers"
+    ]
+  },
+  "remaining_inputs": [
+    "Actual field law and calibrated distance/velocity/shear identification",
+    "Actual pair selection and conditional mark/noise law",
+    "Actual survey masks, distance windows, error and variance bounds",
+    "Action, initial state, absolute scales and environmental gravity bridge"
+  ],
+  "scope": "Necessary scalar constraint and finite-pair ensemble expectation under supplied field, geometry, statistics, sampling and calibration premises",
+  "target_claim_type": "bounded_theorem"
+}
+TOTAL: PASS=89 FAIL=0
+
+----- stderr -----
+

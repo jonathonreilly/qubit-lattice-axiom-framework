@@ -1,0 +1,20 @@
+{
+  "scope": "Direct generated-graph source readiness; no formal audit or integrated-main landing check",
+  "row": {
+    "claim_id": "scalar_dynamical_momentum_inverse_bounded_theorem_note_2026-10-15",
+    "note_path": "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem",
+    "runner_path": "scripts/scalar_dynamical_momentum_inverse_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_dynamical_covariance.py",
+      "scripts/scalar_dynamical_domains.py",
+      "scripts/scalar_dynamical_extensions.py",
+      "scripts/scalar_dynamical_forward.py",
+      "scripts/scalar_dynamical_geometry.py"
+    ]
+  },
+  "issue": null,
+  "cache_status": "fresh",
+  "cache_sha256": "4cc15dc73aa8ab18e28e6117ab48eb34e97e1fd8bd48293245f8daa65bdce7c8",
+  "all_five_resolution_lines": true
+}

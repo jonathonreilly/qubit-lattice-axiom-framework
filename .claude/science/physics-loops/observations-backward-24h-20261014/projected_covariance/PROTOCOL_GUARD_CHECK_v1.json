@@ -1,0 +1,30 @@
+{
+  "scope": "Six incompatible declarations rejected; no dynamical case changed",
+  "source_sha256": "6cb64d4e44635877e13e75062e1239691da3c9dbb9ec246c2f85688b1216db03",
+  "checks": [
+    {
+      "key": "Q",
+      "rejected": true
+    },
+    {
+      "key": "Hv",
+      "rejected": true
+    },
+    {
+      "key": "inverse_rows",
+      "rejected": true
+    },
+    {
+      "key": "reserved_row",
+      "rejected": true
+    },
+    {
+      "key": "comoving_wavenumbers_over_initial_aE_HE",
+      "rejected": true
+    },
+    {
+      "key": "separation_fractions_of_chi",
+      "rejected": true
+    }
+  ]
+}

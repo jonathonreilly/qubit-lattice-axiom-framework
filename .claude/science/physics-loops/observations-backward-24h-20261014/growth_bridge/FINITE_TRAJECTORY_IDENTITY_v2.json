@@ -1,0 +1,44 @@
+[
+  {
+    "case": 0,
+    "mode": 0,
+    "rows_exactly_equal": true,
+    "inverse_exactly_equal": true,
+    "later_exactly_equal": true
+  },
+  {
+    "case": 0,
+    "mode": 1,
+    "rows_exactly_equal": true,
+    "inverse_exactly_equal": true,
+    "later_exactly_equal": true
+  },
+  {
+    "case": 1,
+    "mode": 0,
+    "rows_exactly_equal": true,
+    "inverse_exactly_equal": true,
+    "later_exactly_equal": true
+  },
+  {
+    "case": 1,
+    "mode": 1,
+    "rows_exactly_equal": true,
+    "inverse_exactly_equal": true,
+    "later_exactly_equal": true
+  },
+  {
+    "case": 2,
+    "mode": 0,
+    "rows_exactly_equal": true,
+    "inverse_exactly_equal": true,
+    "later_exactly_equal": true
+  },
+  {
+    "case": 2,
+    "mode": 1,
+    "rows_exactly_equal": true,
+    "inverse_exactly_equal": true,
+    "later_exactly_equal": true
+  }
+]

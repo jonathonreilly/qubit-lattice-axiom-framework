@@ -131,3 +131,87 @@ M10 final delivery report2401cd64 and identity02071f13 were read completely. The
 ## Error-direction scientific checks complete
 
 The complete11 scoped independent reports are read and indexed in calibration_supplier/REVIEW_RECORD_v1.md. Canonical51 controls,13 rejected implementation mutations and independent math/data/source checks support the conditional result. Six original Ka numerical comparisons remain failed; source terminology and signal-center interpretation were repaired and independently confirmed. Final v2 cache is fresh. Cluster judgment OPEN concerns content only. No formal audit or integrated landing.
+
+M11 publication 2026-10-15T11:07:17.193934+00:00: root read the complete final delivery report SHA `c4b1909e037a0210fe59b0a293f9518f574234506f1b73fb90b50d309bee1522` and inspected the 38 satisfied delivery assertions in identity `23ade77b9a01be6444d28a34c70aa395183472b6ffd6e12525e612185fa3d4a8`. All reviewed source/worktree/index bytes match published commit `5a73333518a13640c6a99cbcb01c31342c519fd3`. Six scientific numerical comparison failures remain preserved; the delivery check introduces no mathematical or empirical validation. Main refresh changes audit/front-door records only; current-main integration was not performed.
+
+
+## Cosmological inverse: completed scoped source checks, integrated landing pending
+
+Root read the complete twelve-section `REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` and current main physics-loop delivery policy. The new conditional metric/scalar theorem is self-contained in the note and primary/helper pair; all four declared inputs are included. The proposal status is proposed_retained, actual status conditional-support. No empirical test, derived observed action, chosen physical state or formal audit result is asserted. Root read the complete eleven reports linked in action_selection/REVIEW_RECORD_v1.md, including independent source, mathematical and numerical work plus final affected-source supplements. The cluster review says OPEN only for a coherent review PR, not for landing or retained authority.
+
+| Conformance section | Disposition and evidence |
+|---|---|
+| 1 Self-containment | Supplied action restated; primary/helper/protocol/checklist and outputs co-land. No prior decoder result or unmerged scalar calculation is needed by the computation. Stacking preserves shared campaign files only. |
+| 2 Cache | Final envelope exit0, fresh input fingerprint, declared120-second cap,102 controls. Original failed scientific run and tooling errors remain separately identified. No hand-edited cache. |
+| 3 Scope | Conditional supplied-action solution membership; finite synthetic controls and missing physical input map explicit. Proposal label and actual status separate. |
+| 4 Negative claims | Committed full N1-N8 checklist and five substantive N5 stdout lines. Domain/failure witnesses do not imply a universal no-go. |
+| 5 Proof obligations | Exact target and acyclic sequence in note section8; monotonicity, rank, conservation, curvature and full matter-solution limitations explicit. |
+| 6 Runner validity | Nineteen real altered sources:12 assertion rejections,6 domain refusals,1 arithmetic exception. Independent42-control proof and separate12-case ODE; original failure retained. No empirical interpretation. |
+| 7 Packet | Actual citation graph discovers the primary and sole imported helper. No helper-registry or dependency-policy edit is needed or proposed. |
+| 8 Graph/links | Final graph built with serialized launcher; only one intended zero-edge node added. Manifest regenerated, not hand-edited. Explicit tracked-target link and staged-set checks at packaging. |
+| 9 Note/records | Complete machine fields, import table, review record and source-bound evidence; hypothetical physical-input supplier remains unadopted. |
+| 10 Propose/ratify | No audit verdict, audit-state transfer, merge or push to main. Citation manifest is the sole generated authority-directory exception. |
+| 11 Sources/counts | Current machine outputs recomputed; original and repaired evidence separated. Six exact-version primary publications, scoped reading and exposed-development status recorded. |
+| 12 Focused/combined | Focused compilation, vocabulary, source/cache, graph, links and constituent diff checks run on this unit. Full pipeline, strict lint and changed-evidence checks are deferred, not passed, pending the shared integrated-current-main landing pass. |
+
+Final publication identity is recorded in the runtime delivery receipt after staging. Unchanged historical evidence is not relabeled as current author execution; compressed snapshots are archival evidence. All three earlier campaigns stay stopped and the fixed deadline is unchanged.
+
+## M12 final delivery and publication — 2026-10-15T12:29:43.754333+00:00
+
+The complete final report `79ff46441be17d780cd0602a2b832c47b35b8e9b03919b22e5ec46196d75e4f3` and identity `cdf65dd6b2e7b497b8d8c41823b244f982b1e7f91e5909a065a5dc00219894b3` were read by root and bind the reviewed tree `da5141a83591572945caf29f5eaf95c176c6be27` to committed head `e2873beca6af9954be49c4a9bbe8d98f05c9e69b`. No discrepancy was reported. The frozen 73-path constituent is published as [PR #9603](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9603) and attached. This is a mechanical delivery check plus prior scoped scientific reviews, not integrated landing validation or a formal audit. The original numerical and tooling failures remain preserved. Postpublication state is recorded only on the new continuation branch `codex/observations-backward-growth-20261015`.
+
+### Growth/lensing focused source review — 2026-10-15
+
+Root read complete independent mathematics, background, forward, primary-source and cluster reports. The exact negative-q witness, rounded boundary/infinite B-C admission, evaluated rejected pole and nonfinite later-P false acceptance were preserved and repaired. The final mathematical helper has143 passing controls and23 rejected mutations (18 explicit check failures,5 exceptions). A separate six-case implementation agrees with all36 synthetic rows. The cluster judgment is OPEN for one coherent theorem chain; final source/cache and artifact delivery binding follow separately. These focused checks apply no audit verdict and do not replace shared integrated-current-main landing validation.
+
+## M13 final delivery and publication — 2026-10-15T14:11:06.477049+00:00
+
+Root read the complete focused delivery report `bad9a13bf1dde64e35aa85b010ed26f9f801de03f90165bbf6ad7ab4e8820df7`; identity `60cdb8f39eb1a8fe19bd799fba4a03e136408d1c17bbdbd1e5178af87b6a9c29`. Exact65path tree `ac4defe813df7ea7029299e7dc15f3389f45738c`,397+13 archive members,280 receipt references and final source/cache/output bindings agree. Reviewer-only historical timing/classification and import-parser comparison errors are preserved with explicit corrections; no author source changed to close them. Scientific reports were reused only within their recorded source scope; final helper delta is one terminal newline and final note delta two inline-code delimiters. Published [PR #9605](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9605), attached and verified. No whole-science rerun, integrated-main landing verdict or formal audit.
+
+## M14 final source and opening disposition
+
+Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded_theorem target, actual conditional-support. Final85 controls0fail; independent equations, canonical-state forward solution, covariance proof, source and cache checks complete. Root read complete closing reports. Two original mutation survivors repaired by independently checked sharp fixtures; invalidv2 retained; finalv3 has21 failed-check rejections and3 exceptions. One coherent M14 OPEN content judgment; final indexed evidence/tree binding precedes publication. No observation fit, action selection, integrated-main landing validation or formal audit. See dynamical_response/REVIEW_RECORD_v1.md.
+
+## M14 final delivery and publication — 2026-10-15T15:58:59.402386+00:00
+
+Root read full final report `1a1c6162aa39edc507356599bef981652c2119b2dbb1fa7e40cfe2112bcb72eb` and identity `959becb7d7a41d848a08d8cb28199528a1d02f88e5d907993557915ae589c050`: 2,823 mechanical comparisons, zero mismatches, 76-path tree `fcfba0674309efabb284a2d573b975e4423de22b`, 568 archive versions, 566 latest paths, 49 plain copies, nine omissions; every current evidence reference resolves. No science rerun or formal verdict. Published and attached PR9608 at head `f3637a4eba3fb18690fe6a2b03d9455c60cc6363`. Final source/cache and independent science receipts stay in the frozen M14 constituent.
+
+## M15 projected-covariance milestone
+
+Root read complete geometry, weak and primary-source reports and all final canonical correspondence. Matrix norm, moving-boundary qualification and ignored protocol declaration findings were repaired and prior versions preserved.29 current controls pass;8 mathematical mutations rejected;0 empirical tests. Conformance sections1–12 checked in projected_covariance/CONFORMANCE_v1.md, including explicit scopes for formal audit/integrated landing not performed. Independent coherent-opening judgment is OPEN. Frozen staged-tree and publication receipts remain separate.
+
+## M15 final delivery and publication — 2026-10-15T17:04:49.530051+00:00
+
+Root read complete frozen delivery report `324dc7b47905c5dac14c21d4dc81d75227cd9ff71c92aa131cca37ed31daaf73` and identity `1c477de10b301c3e03d59c77ca67100ffbbf05f40bf2f8828422d29abd2a820a`:1107 mechanical checks pass,0fail; exact57-path tree,197 archive versions,29 plain views,17 external omissions and97 scoped references bound. Only final EOF formatting differs from reviewed forward source; every AST and scientific output preserved, fresh final source/cache attached. Published and attached [PR #9610](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9610) at `44c7d3309c17380474ec253a924af6891d438b02`. Independent science checks retain their recorded scope; this correspondence is no science rerun, integrated-main validation or formal audit.
+
+## M16 final scoped correspondence
+
+Complete independent geometry, weak/sampling and primary-source reports read personally by root. Mathematical geometry27pre-exposure plus33post-exposure controls; weak25pre-executable-exposure controls; source findings frozen before author theory exposure. Final canonical bindings agree. Original raw-monopole/noise/selection findings and current-version mismatches remain preserved; precise qualifications were rechecked. One coherent OPEN content recommendation, no formal audit or merge judgment. Root89primary checks and8failed-control source mutants are implementation evidence, not observations. See unequal_window/REVIEW_RECORD_v1.md and CONFORMANCE_v1.md; delivery verification follows separately.
+
+## M16 publication and next route — 2026-10-15T18:03:10.144354+00:00
+
+M16 regular PR9612, frozen cdf67b716d/tree26a6,49paths, attached. Necessary finite shear/velocity pair expectation derived with explicit local law, geometry and calibrated sampling premises.89 author controls and8 failed-control mutation rejections; focused independent geometry/weak/source reviews and842 mechanical comparisons0mismatches.199member archive/25plain views/24explicit omissions preserve failures and review history. No observed data, variance bound, coefficient uniqueness or full-gravity sensitivity witness.
+
+Direct author continues on codex/observations-backward-environment-20261015. M17 asks whether finite size, boundary values and the complete stress trace bound a regular static body's scalar displacement. The homogeneous density minimum is not accepted as the realized interior. Initial working comparison argument remains unverified; no measured-gravity identification or action/state/scale choice is retired. Preserve all earlier development exposure and unopened products. Main and changed-PR refresh recorded in runtime M17 files. No owned research jobs or old campaign restart. Matching lock refreshed17:58Z; packaging21:33:44Z and deadline21:48:44Z unchanged.
+
+## M17 physical environment — 2026-10-15T18:40:00.221441+00:00
+
+One coherent complete-field physical-metric bound and measurement-prerequisite unit. Scientific source review complete and OPEN judgment;82author controls,10mutations rejected,0empirical tests. All findings resolved within their scopes; frozen delivery and publication pending. Exact source and complete reports are in finite_environment/CHECKPOINT_v3.json and REVIEW_RECORD_v1.md.
+
+## M17 publication and next working probe — 2026-10-15T19:01:04.294889+00:00
+
+[PR #9614](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614), regular/open/mergeable against its declared stacked base, frozen head `9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db`, tree `bd2c27a4ddb21ae4d44a1cb23d0a5bdf5ea4a410`,41paths; attached.82author controls,10failed-control mutation rejections,6synthetic profiles and zero empirical tests. The exact physical-frame ceiling retains all three fields and replaces a chosen homogeneous environment with conditional geometric and complete-boundary inputs; it does not construct a realized static body or derive the action/state/scales.
+
+Final canonical source/checklist binding is finite_environment/CHECKPOINT_v4.json, cache `b05f98972c9b3f9ec9299d9d29eec109ac9a420a8da12f262a9d878120e16b64`. Earlier v3 entries remain historical. Root read complete delivery reports v1/v2;201archive members,27plain views,28explicit omissions and all41paths verified. Three stale STATE display fields were the only v1→v2 change;146mechanical delta comparisons0mismatches. Runtime exact reports are M17_DELIVERY_REVIEW_v1/v2.md/json; original findings and versions preserved. No formal audit, main push or merge.
+
+Next: Independently challenge the unreviewed lapse-conjugation bound and its whole-domain threshold, then personally test whether first-clock-derivative error envelopes are useful. Investigate a smooth rapidly oscillating synthetic lapse with bounded first derivative; label it kinematic, not a full candidate solution or observation. Package any valid result as a coherent M17 extension, not a new PR for each inequality.
+
+The initial probe is preserved in lapse_derivative_probe/CHECKPOINT_v1.json with exact source/result identities. It is unreviewed and not part of the published M17 unit. Preserve development/independent-test separation; no new data were opened. No owned research jobs; all three older campaigns remain stopped. Matching lock refreshed18:55:59Z. Fixed packaging21:33:44Z and deadline21:48:44Z unchanged.
+
+## M18 final science checkpoint — 2026-10-15T19:36:21.313185+00:00
+
+M18 final science: power-conjugation removes the direct lapse Laplacian from a necessary physical-metric scalar ceiling; exact smooth family proves criterion separation.149canonical controls0fail,8extension source mutants rejected; original60/3numerical failures,7/1mutation outcome and checklist/version findings preserved. Complete final independent mathematics and measurement/source reports read. No observed test or coupled environment; coherent PR9614 extension ready for frozen delivery.
+
+Verify the frozen M18 stage/evidence, commit and push only the existing campaign branch, update and attach PR9614. Then pursue a physical input supplier or action/scale discriminator with no chosen state/selector; final packaging21:33:44Z, fixed deadline21:48:44Z.
+
+Exact current identities: lapse_derivative_probe/CHECKPOINT_v3.json. The original finite_environment evidence remains frozen at M17. All final scientific reports were read in full; final stage verification remains separate. No new observed data or prior-campaign restart. Matching lock refreshed19:26:07Z.

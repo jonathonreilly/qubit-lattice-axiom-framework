@@ -1,0 +1,72 @@
+{
+  "timestamp_utc": "2026-10-15T13:35:02.775799+00:00",
+  "scope": "Narrow original-reviewer confirmation of nonfinite-input repair; 45 focused controls, no ODE/aggregate rerun, no current cache binding.",
+  "original_finding_disposition": "Resolved for helper 9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4; originals preserved.",
+  "artifacts": [
+    {
+      "path": "CANONICAL_FORWARD_REPAIR_CONFIRMATION_v2.md",
+      "bytes": 3510,
+      "sha256": "0be47c67165b358389282854fb17693e49062e7d24799294c43cb998732100cc"
+    },
+    {
+      "path": "CANONICAL_SOURCE_SNAPSHOT_v2.json",
+      "bytes": 389,
+      "sha256": "4a866b1c32282691449d0748f1d124930c1c0d37994f36644c0eb708644d155e"
+    },
+    {
+      "path": "canonical_source_v2/scalar_growth_lensing_inverse.py",
+      "bytes": 28918,
+      "sha256": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4"
+    },
+    {
+      "path": "NONFINITE_REPAIR_DELTA_v2.patch",
+      "bytes": 3902,
+      "sha256": "e3c8c3ac157e6f5d4b004d31304c4067dbbb00c87c670f00a552da4099e80d33"
+    },
+    {
+      "path": "NONFINITE_REPAIR_CHECK_FREEZE_v2.json",
+      "bytes": 230,
+      "sha256": "a2f1dc18b4cb18faeb8984ee2a25638123fe48d1890fc11ed15dbd1b5e281345"
+    },
+    {
+      "path": "nonfinite_repair_check_v2.py",
+      "bytes": 5507,
+      "sha256": "e6dbd0139925231ad69417d5b32de1aeb694e16ba875b11918a38c3c87a82d5e"
+    },
+    {
+      "path": "NONFINITE_REPAIR_RESULTS_v2.json",
+      "bytes": 7048,
+      "sha256": "ccd4633bb009e1b2d04bc3a78f261c4964b80910b19f3ed449484a8c3b26eb5b"
+    },
+    {
+      "path": "CANONICAL_FORWARD_REVIEW_v1.md",
+      "bytes": 7807,
+      "sha256": "de3d6be270282b89f16f16b9e1cbc022974ed48f4dd7a778b9130dd5b81718c3"
+    },
+    {
+      "path": "CANONICAL_FORWARD_IDENTITY_v1.json",
+      "bytes": 2672,
+      "sha256": "d5d021ec840c77f4bcfba2a294f04752615da685f41262656a5bfb28a557a464"
+    },
+    {
+      "path": "NONFINITE_READOUT_WITNESS_v1.json",
+      "bytes": 919,
+      "sha256": "95cc0ef7c051015488ac6f5ddf0d34b3a0bd1ca66434e06124fa59e35df0a6c3"
+    },
+    {
+      "path": "nonfinite_readout_witness_v1.py",
+      "bytes": 1964,
+      "sha256": "0b881c193130f8843e323bc59905182017cfd396c94b5df3a1e78493e22229c5"
+    },
+    {
+      "path": "FORWARD_REVIEW_v1.md",
+      "bytes": 9292,
+      "sha256": "f0cfd9e33c8550e8a841ce30c77093fb4eb2ebc8a6592cef6f98d4995a7b90c2"
+    },
+    {
+      "path": "FORWARD_IDENTITY_v1.json",
+      "bytes": 9946,
+      "sha256": "ebdfebf861f9687f39df8dfc83b11ce5aff6bdadcfbaf8f230e51b67ed403fa2"
+    }
+  ]
+}

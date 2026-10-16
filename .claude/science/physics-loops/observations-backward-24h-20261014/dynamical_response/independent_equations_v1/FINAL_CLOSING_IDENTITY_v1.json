@@ -1,0 +1,143 @@
+{
+  "created_utc": "2026-10-15T15:28:34.238960+00:00",
+  "reviewer": "/root/force_energy_bridge_check",
+  "scope": "Narrow final note delta and saved mutation/source/execution identity correspondence; no scientific rerun or formal audit",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/FINAL_CLOSING_REVIEW_v1.md",
+    "sha256": "bf066c03bf85225e9cc89cde526b03cebf7088028c2fe6de088d411dc6800ae4",
+    "bytes": 4756
+  },
+  "files": {
+    "FINAL_CLOSING_REVIEW_v1.md": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/FINAL_CLOSING_REVIEW_v1.md",
+      "sha256": "bf066c03bf85225e9cc89cde526b03cebf7088028c2fe6de088d411dc6800ae4",
+      "bytes": 4756
+    },
+    "CLOSING_MUTATION_BINDING_v1.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_MUTATION_BINDING_v1.json",
+      "sha256": "69ee745fa0816f657d5e953a2183ea08589addf80cafdaa59fca34661433a4ad",
+      "bytes": 96572
+    },
+    "closing_mutation_binding_v1.py": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/closing_mutation_binding_v1.py",
+      "sha256": "2dfb6603faf035a1dbb852b050cbe2f3a4091187ceb619f2af3bc0404874e182",
+      "bytes": 10161
+    },
+    "FINAL_NOTE_EXPOSURE_v3.md": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/FINAL_NOTE_EXPOSURE_v3.md",
+      "sha256": "952a82662a01ea1af31da281a45f14a1818c365d789f20784725a11013017b9f",
+      "bytes": 25885
+    },
+    "FINAL_NOTE_DELTA_v3.diff": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/FINAL_NOTE_DELTA_v3.diff",
+      "sha256": "8faf342c8a1d1bd8a76de3572f9cfa5fecdf723a35003d88a61ac30109d6e9a9",
+      "bytes": 1377
+    },
+    "CANONICAL_REVIEW_v1.md": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "6be15d4001a91da4951071804697e5d48fda10d0416ebe22dbff1e4b8d1430f6",
+      "bytes": 13376
+    },
+    "CANONICAL_AFFECTED_REVIEW_v2.md": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CANONICAL_AFFECTED_REVIEW_v2.md",
+      "sha256": "3240916f0901bf47b7d9e34c869a8535044e7d05b5955645646cad3ae611f21e",
+      "bytes": 5144
+    },
+    "SHARP_ENVELOPE_REVIEW_v1.md": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/SHARP_ENVELOPE_REVIEW_v1.md",
+      "sha256": "803d4ef7a220850f4cac23eaa6afb73478d567cfb9e75060389c20f5cb770599",
+      "bytes": 4321
+    },
+    "CLOSING_EVIDENCE_v1__CANONICAL_SOURCE_FREEZE_v2.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__CANONICAL_SOURCE_FREEZE_v2.json",
+      "sha256": "5cffcef0422fa745c180a65959813aac9e1d975769eb48fb61e15d45a9446547",
+      "bytes": 9783
+    },
+    "CLOSING_EVIDENCE_v1__MUTATION_V2_COMPLETION_CORRECTION.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__MUTATION_V2_COMPLETION_CORRECTION.json",
+      "sha256": "ad491e9523a2a4a3292c5136418adc4d990921bf36e413eb940454024b4e3c8c",
+      "bytes": 717
+    },
+    "CLOSING_EVIDENCE_v1__MUTATION_V2_INTERRUPTED.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__MUTATION_V2_INTERRUPTED.json",
+      "sha256": "f3de996e0c314c0bc09e92bb94f7a0ce65980d35b392d39acf3a158456d6933d",
+      "bytes": 372
+    },
+    "CLOSING_EVIDENCE_v1__mutation_check_v3.py": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__mutation_check_v3.py",
+      "sha256": "98913b5a254e7aa5a182da25b4dab1f1b539d03dff2b6f97f33599c719356c29",
+      "bytes": 5747
+    },
+    "CLOSING_EVIDENCE_v1__mutation_v1__RESULTS.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__mutation_v1__RESULTS.json",
+      "sha256": "577d708011abf8568b1ea8d7a7ca33ad95fde001c17e1dafec837b0f0c8eea2d",
+      "bytes": 10765
+    },
+    "CLOSING_EVIDENCE_v1__mutation_v2__RESULTS.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__mutation_v2__RESULTS.json",
+      "sha256": "b28fe62bc956392e8c40ac0b4b404b4b0898199685e1b917ec253cc37b474b51",
+      "bytes": 12210
+    },
+    "CLOSING_EVIDENCE_v1__mutation_v3__RESULTS.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__mutation_v3__RESULTS.json",
+      "sha256": "33c0b80bb555f3027901a696322e091cd0c2807d8db4e68b1771e69d1d9a03a0",
+      "bytes": 11470
+    },
+    "CLOSING_EVIDENCE_v1__mutation_v3__SOURCE_FREEZE.json": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_equations_v1/CLOSING_EVIDENCE_v1__mutation_v3__SOURCE_FREEZE.json",
+      "sha256": "96dcd4eb58f7ed2a744e0a11d0b9b1749dce05fe1897eaeb486e42b312cd20b6",
+      "bytes": 1274
+    }
+  },
+  "saved_files_bound": 238,
+  "mutation_counts": {
+    "v1": {
+      "failed_checks": 18,
+      "exception": 2,
+      "survived": 2,
+      "selector_setup_failure": 2
+    },
+    "v2": {
+      "failed_checks": 21,
+      "exception": 3,
+      "survived": 0,
+      "selector_setup_failure": 0
+    },
+    "v3": {
+      "failed_checks": 21,
+      "exception": 3,
+      "survived": 0,
+      "selector_setup_failure": 0
+    }
+  },
+  "v2_valid_rejection_evidence": false,
+  "v3_baseline": {
+    "counts": {
+      "failed": 0,
+      "passed": 85
+    },
+    "stdout_summary_equal": true,
+    "stderr_empty": true
+  },
+  "final_source": {
+    "note_sha256": "952a82662a01ea1af31da281a45f14a1818c365d789f20784725a11013017b9f",
+    "primary_sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+    "counts": {
+      "failed": 0,
+      "passed": 85
+    },
+    "cache_sha256": "4cc15dc73aa8ab18e28e6117ab48eb34e97e1fd8bd48293245f8daa65bdce7c8",
+    "cache_status_from_receipt": "fresh",
+    "elapsed_sec": 2.2028229236602783,
+    "timeout_sec": 180
+  },
+  "findings": [],
+  "operations_excluded": [
+    "science/ODE/aggregate execution",
+    "mutation harness execution",
+    "Git/index changes",
+    "canonical source edits",
+    "formal audit",
+    "publication approval"
+  ]
+}

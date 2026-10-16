@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-15T19:11:46.984739+00:00",
+  "kind": "Author synthetic protocol frozen before numerical output",
+  "candidate": {
+    "k": "1/10",
+    "epsilon": "3/20",
+    "n": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "K": "2*pi*n",
+    "L": 1,
+    "B": 1,
+    "log_N": "epsilon*(cos(K*r)-1)/K",
+    "Hv": 0.005,
+    "nu": 0.0001,
+    "z_boundary": 1
+  },
+  "green_ivp": {
+    "method": "DOP853",
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "max_step": "1/(32*n)",
+    "repeat_rtol": 2e-12,
+    "repeat_atol": 2e-14,
+    "repeat_max_step": "1/(64*n)",
+    "source_splitting": "brentq one bracket per half period, preserve piecewise IVP dense output"
+  },
+  "field_bvp": {
+    "tol": 1e-09,
+    "max_nodes": 120000,
+    "mesh": "max(257,64*n+1)",
+    "comparison_tolerance": 2e-08,
+    "relative_original_equation_tolerance": 2e-06,
+    "flux_gauss_orders": [
+      12,
+      24
+    ],
+    "flux_tolerance": 1e-08
+  },
+  "empirical_tests": 0,
+  "scope": "Prescribed synthetic metrics and scalar equation, not full Einstein/matter solutions. Analytic uniform bounds are separate from finite numerical diagnostics. No parameters fitted or observed arrays opened.",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "parent_commit": "9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db",
+  "revision_reason": "v3 retained60pass3fail. Split original positive-part curvature source at bracketed roots; increase scalar BVP node budget from40000to120000. Tolerances and scientific acceptance thresholds unchanged."
+}

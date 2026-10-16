@@ -1,0 +1,120 @@
+{
+  "frozen_at": "2026-10-15T11:46:03.573162+00:00",
+  "scope": "post-exposure focused mathematical and source correspondence; not formal audit or publication approval",
+  "report": {
+    "path": "CANONICAL_REVIEW_v1.md",
+    "sha256": "84c0837516cb0776f9af5f688eb20396783e5ff6dbc2e8526ced94303563fbc2",
+    "bytes": 16331
+  },
+  "sources": [
+    {
+      "source": "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "copy": "CANONICAL_SOURCE_v2_SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+      "bytes": 20906,
+      "line_count": 375,
+      "read_scope": "complete initial note plus complete final byte delta; all final text covered",
+      "live_source_matches_snapshot": true
+    },
+    {
+      "source": "scripts/scalar_cosmological_inverse.py",
+      "copy": "CANONICAL_SOURCE_v3_scalar_cosmological_inverse.py",
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "bytes": 20416,
+      "line_count": 434,
+      "read_scope": "complete first helper plus both complete added-fixture deltas; all final source covered",
+      "live_source_matches_snapshot": true
+    },
+    {
+      "source": "scripts/scalar_cosmological_inverse_check.py",
+      "copy": "CANONICAL_SOURCE_v1_scalar_cosmological_inverse_check.py",
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca",
+      "bytes": 3087,
+      "line_count": 60,
+      "read_scope": "complete source, unchanged",
+      "live_source_matches_snapshot": true
+    },
+    {
+      "source": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "copy": "CANONICAL_INPUT_PROTOCOL_v1.json",
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "bytes": 3148,
+      "line_count": 147,
+      "read_scope": "complete fixed synthetic protocol",
+      "live_source_matches_snapshot": true
+    }
+  ],
+  "evidence": [
+    {
+      "path": "INDEPENDENT_MATH_v1.md",
+      "sha256": "aa6f275dd043529fc824a00b0ebdbb190abf610a6ddfb9fc1e4ecad81edaa21a",
+      "bytes": 19457
+    },
+    {
+      "path": "INDEPENDENT_MATH_IDENTITY_v1.json",
+      "sha256": "50a88fbcc91f8ca007e1ba7d7f2d96c4aa3c5dbf1dc0c439722d7a06be612efa",
+      "bytes": 4483
+    },
+    {
+      "path": "CONTROL_RESULTS_v1.json",
+      "sha256": "c860bf5331c7f03f5d317a9b7ec41d54c4a57c5bed01ffbb8125efb12b48f0bf",
+      "bytes": 11028
+    },
+    {
+      "path": "AUTHOR_NOTE_COMPARISON_v1.md",
+      "sha256": "8b785b2a52d6d42dd8f4fe5e17d5af41bc8acbc41a9899b027de04eeb393f05f",
+      "bytes": 6894
+    },
+    {
+      "path": "AUTHOR_NOTE_COMPARISON_IDENTITY_v1.json",
+      "sha256": "de25bdc2bc55d680be3c970aafd0b7336891b5d5f894adc7207d72e19f29ac9e",
+      "bytes": 2805
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v1.json",
+      "sha256": "926381ef4aae30f7783d01b2f5cee5e693cb5469188f52a7745ce8ecb0b166ea",
+      "bytes": 2146
+    },
+    {
+      "path": "CANONICAL_HELPER_FREEZE_v2.json",
+      "sha256": "cbf74424437f0a3357d5a8ed7461e75b25daf38868eecebbc67a8fe747060fb4",
+      "bytes": 762
+    },
+    {
+      "path": "CANONICAL_FINAL_DELTA_FREEZE_v1.json",
+      "sha256": "28490d9f661a08ffa9885b68869ab36835cdc8b6c267d092011674c3762d6616",
+      "bytes": 1438
+    },
+    {
+      "path": "CANONICAL_INPUT_PROTOCOL_FREEZE_v1.json",
+      "sha256": "bb8dbf83c4ecc2638aa58440025c1b1b9b333da8e2a4959e7131c80588bd93c9",
+      "bytes": 601
+    },
+    {
+      "path": "CANONICAL_FINDING_C1_v1.json",
+      "sha256": "c1cc34969f28fe6b31ceddb1f40de7f9c68c84d03042310d81d1f9ef491a4ee7",
+      "bytes": 1274
+    }
+  ],
+  "independent_controls": {
+    "previous_run_only": true,
+    "passed": 42,
+    "exact": 39,
+    "ordinary_float": 3
+  },
+  "canonical_aggregate_executed": false,
+  "new_science_execution": false,
+  "raw_data_or_network_access": false,
+  "new_finding": {
+    "id": "C1",
+    "repaired": true,
+    "detail": "Conserved supplied fluid does not construct matter fields for arbitrary S_m; final converse scoped accordingly."
+  },
+  "earlier_findings_confirmed_repaired": [
+    "q_rec versus q_geom under transverse motion",
+    "dimensionless K-distance versus dimensionful canonical field"
+  ],
+  "unresolved_mathematical_source_findings": [],
+  "numerical_receipts_or_literature_revalidated": false,
+  "canonical_or_shared_edits": false
+}

@@ -41,3 +41,22 @@ All1200 fixed development blocks exclude constant total analog modulus with idea
 ## Error-direction attempt: bounded result and surviving routes
 
 The attempted scale-elimination route succeeds mathematically only with the explicit conditional angular law. The fixed exposed records challenge the full candidate tone/direction/measurement model numerically. They do not isolate a failing component or close all calibration routes. Axis-supported equal-covariance, validation-selected-reference and FIR examples target only their named substitutions. Actual monitor/transfer-response data, a justified varying signal and independent physical tests remain live. Canonical note contains N1–N8; no theory-wide no-go or independent-wall count is asserted.
+
+## M12 preserved failures and reopening conditions
+
+- A single published GW170817/host-distance pair cannot enter the continuous derivative inverse. This is an input-domain failure; reopen with a controlled joint likelihood, endpoint-to-background map and adequate reconstruction data, not a chosen interpolating curve.
+- Bianchi does not supply the scalar equation on a constant-F interval. An exact dust-plus-Lambda metric witness exposes the missing trace equation. This is not an observed cosmological exclusion and does not rule out radiation/vacuum plateaus or full transverse motion.
+- Binary64 parameter recovery fails original case9 for nu despite passing later synthetic residuals. The original90/1 result remains immutable. Higher-precision arithmetic on rounded inputs still fails. Higher-precision source assembly diagnoses lost input digits; it is not a source of measured precision or a certified trajectory.
+- Two fitted epochs neither test the full kinetic/potential shape nor establish the exact whole-interval truncation. Approximate equality needs a new quantitative result before inferring small transverse fields.
+
+### Growth/lensing inverse — 2026-10-15
+
+No theory-wide no-go is asserted. The explicit two-shape interval witness refutes uniqueness only for the named reduced readouts and hypotheses. Its full-background failure is separately derived under r=q. A non-Mobius q(J) gives at most one shape under the exact varying-J chart assumptions, without a finite-noise identifiability theorem. Large K/H alone does not bound free scalar oscillations; the controlled dynamical route remains open. Five materially different attempted routes and complete N1-N8 scope answers are preserved in growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md.
+
+## M15 local failed routes and live alternatives
+
+Unqualified moving radial boundaries invalidate the finite six-jet weak alternative; fixed bounds or the exact extra flux repair it. Direct potential inversion needs domain information; ordered compatibility avoids it for a necessary test. Synthetic rank is attainable but severely ill-conditioned. None is a universal measurement no-go. Unequal-time correlations, calibrated finite weightings and explicit window/error models remain live routes.
+
+## M16 negative witnesses and local pivot
+
+The unquotiented angular representative fails; preserve the independently found monopole counterexample and its repair by the explicit annihilator. Unconditional zero noise product does not justify weighted unbiasedness; require the conditional law. A known marginal pair intensity does not remove field-dependent selection (target2 versus weighted5/2). A finite fixed grid misses some smooth functionals; this is not a no-go for physical covariance classes or randomized expectation estimates. Positive sampling density alone need not give finite variance. None excludes other measurement routes. The expanded Gaussian symbolic calculation was terminated after172seconds without an assertion/result; the algebraically equivalent polynomial conjugation route completed. This was an implementation failure, not a rejected physical candidate. Original code/timing evidence is preserved.

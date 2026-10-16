@@ -1,0 +1,33 @@
+{
+  "scope": "Only trailing Markdown whitespace and terminal empty lines removed; all prior source bytes preserved in v2 snapshots and work-history archive",
+  "changes": [
+    {
+      "path": "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "before_sha256": "952a82662a01ea1af31da281a45f14a1818c365d789f20784725a11013017b9f",
+      "after_sha256": "592df22cbc7421da970842b42157129ba65e8f0c71d6928ca90fa189474702ce",
+      "word_tokens_identical": true,
+      "diff": "--- before/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md\n+++ after/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md\n@@ -1,8 +1,8 @@\n # Scalar reconstruction with the free dynamical wave retained\n \n-**Date:** 2026-10-15  \n-**Status:** conditional-support  \n-**Claim type:** bounded_theorem  \n+**Date:** 2026-10-15\n+**Status:** conditional-support\n+**Claim type:** bounded_theorem\n **Primary runner:** [scalar_dynamical_momentum_inverse_check.py](../scripts/scalar_dynamical_momentum_inverse_check.py)\n \n ```yaml\n"
+    },
+    {
+      "path": "scripts/scalar_dynamical_covariance.py",
+      "before_sha256": "091fb733a5529c3b5ea0e7f05814c00fb5a2835c31a8096619dd3170cade9d20",
+      "after_sha256": "af688b94f90de2532df5a3544bbacce25b72e474ebc59465b15d6ebb26db4707",
+      "AST_identical": true,
+      "diff": "--- before/scripts/scalar_dynamical_covariance.py\n+++ after/scripts/scalar_dynamical_covariance.py\n@@ -81,4 +81,3 @@\n             'checks':checks,'counts':{'passed':sum(c['passed'] for c in checks),'failed':sum(not c['passed'] for c in checks)},\n             'event':{str(k):str(v) for k,v in vals.items()},'six_covariance_inputs':[[str(v) for v in d] for d in data],\n             'reconstruction':{k:([str(w) for w in v] if isinstance(v,list) else str(v)) for k,v in got.items()}}\n-\n"
+    },
+    {
+      "path": "scripts/scalar_dynamical_domains.py",
+      "before_sha256": "595eb5d19ad4891021078f377464583f722bc4b8e8646a8dd13d3b5e136ba1c1",
+      "after_sha256": "bafe3ab7ef0018206d7d9c5718f8742ef9bd96034460c160b75b2218425cd25f",
+      "AST_identical": true,
+      "diff": "--- before/scripts/scalar_dynamical_domains.py\n+++ after/scripts/scalar_dynamical_domains.py\n@@ -153,5 +153,3 @@\n     actual_error=abs(actual['q']-sp.Rational(1,2))\n     check('sharp_ratio_error',actual_error==sp.Rational(1,16) and actual_error==bound['q_error'])\n     return rows\n-\n-\n"
+    },
+    {
+      "path": "scripts/scalar_dynamical_forward.py",
+      "before_sha256": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+      "after_sha256": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+      "AST_identical": true,
+      "diff": "--- before/scripts/scalar_dynamical_forward.py\n+++ after/scripts/scalar_dynamical_forward.py\n@@ -113,5 +113,3 @@\n             ('candidate_kappa',abs(kap-kaptrue)<protocol['checks']['candidate_absolute_max']),\n             ('candidate_later',max(map(abs,candidate_res))<protocol['checks']['reserved_scaled_max'])]\n     return {'case':case,'initial_state':state,'comoving_modes':ki.tolist(),'duration':T,'epochs':epochs,'candidate':{'beta_inferred':beta,'beta_true':par['beta'],'kappa_inferred':kap,'kappa_true':kaptrue,'matrix':ma,'reserved_residuals':candidate_res},'constraint_max':max(all_constraint),'maximum_abs_r_minus_q':mx(lambda e:max(abs(r['r']-e['q_true']) for r in e['rows'])),'checks':[{'name':n,'passed':bool(x)} for n,x in checks],'solver':{'nfev':sol.nfev,'steps':len(sol.t),'success':sol.success}}\n-\n-\n"
+    }
+  ]
+}

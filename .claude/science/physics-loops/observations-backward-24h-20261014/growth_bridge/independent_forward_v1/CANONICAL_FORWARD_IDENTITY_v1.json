@@ -1,0 +1,76 @@
+{
+  "timestamp_utc": "2026-10-15T13:31:51.725125+00:00",
+  "scope": "Focused canonical forward source check; one material invalid-input finding open at frozen v1. No ODE or aggregate rerun; stale cache not bound.",
+  "artifacts": [
+    {
+      "path": "CANONICAL_FORWARD_REVIEW_v1.md",
+      "bytes": 7807,
+      "sha256": "de3d6be270282b89f16f16b9e1cbc022974ed48f4dd7a778b9130dd5b81718c3"
+    },
+    {
+      "path": "CANONICAL_SOURCE_SNAPSHOT_v1.json",
+      "bytes": 734,
+      "sha256": "f1983df5e41953f4b9762d06de396f84f8162c5592fef9aaa6192a59cf69f99e"
+    },
+    {
+      "path": "CANONICAL_CHECK_IMPLEMENTATION_FREEZE_v1.json",
+      "bytes": 218,
+      "sha256": "f3bc505ca424bff94f4960b65f3a0abac9be411f17bac254c170e7963dbb8dde"
+    },
+    {
+      "path": "canonical_source_check_v1.py",
+      "bytes": 5260,
+      "sha256": "a0aa6e2a1b3925ed884add5afbb1763a8f2fbada787bbf5214785d844d5ca1df"
+    },
+    {
+      "path": "CANONICAL_SOURCE_CHECK_RESULTS_v1.json",
+      "bytes": 6824,
+      "sha256": "5ebdbe6a7efebeee87f9b90c04eaccc24e3fa5d064fc9438140ad600b3144798"
+    },
+    {
+      "path": "CANONICAL_FORWARD_DELTA_v1.patch",
+      "bytes": 2981,
+      "sha256": "86990cb16a44e095e1ce042c98657b9af61cbe12a2a03506c776f2a7ebf6a404"
+    },
+    {
+      "path": "nonfinite_readout_witness_v1.py",
+      "bytes": 1964,
+      "sha256": "0b881c193130f8843e323bc59905182017cfd396c94b5df3a1e78493e22229c5"
+    },
+    {
+      "path": "NONFINITE_WITNESS_SOURCE_FREEZE_v1.json",
+      "bytes": 234,
+      "sha256": "2553fac962c38bc745d0050b9f7869ff03f1c6066245ee009d2ffa753c71ccbd"
+    },
+    {
+      "path": "NONFINITE_READOUT_WITNESS_v1.json",
+      "bytes": 919,
+      "sha256": "95cc0ef7c051015488ac6f5ddf0d34b3a0bd1ca66434e06124fa59e35df0a6c3"
+    },
+    {
+      "path": "FORWARD_REVIEW_v1.md",
+      "bytes": 9292,
+      "sha256": "f0cfd9e33c8550e8a841ce30c77093fb4eb2ebc8a6592cef6f98d4995a7b90c2"
+    },
+    {
+      "path": "FORWARD_IDENTITY_v1.json",
+      "bytes": 9946,
+      "sha256": "ebdfebf861f9687f39df8dfc83b11ce5aff6bdadcfbaf8f230e51b67ed403fa2"
+    },
+    {
+      "path": "canonical_source_v1/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20485,
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7"
+    },
+    {
+      "path": "canonical_source_v1/scalar_growth_lensing_inverse.py",
+      "bytes": 27308,
+      "sha256": "5561f381fd2fd82ae1a979dcd8d79f275f8b4a500f3fbbc607c8a82ad63efecf"
+    },
+    {
+      "path": "canonical_source_v1/scalar_growth_lensing_inverse_check.py",
+      "bytes": 3465,
+      "sha256": "9b229daa53db4d896709f4741b4499d59e2440b191d5305143196ea6ff4a0fae"
+    }
+  ]
+}

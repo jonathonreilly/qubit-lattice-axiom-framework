@@ -1,0 +1,214 @@
+{
+  "created_utc": "2026-10-15T18:28:10.465519+00:00",
+  "scope": "Actual source mutations in isolated copies; failure detection does not prove the theorem",
+  "baselines": [
+    {
+      "case": "baseline_action",
+      "base_source": "scripts/scalar_physical_curvature_action.py",
+      "base_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "variant_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "selector": null,
+      "replacement": null,
+      "expected_matches": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.6561998343095183,
+      "checks": 27,
+      "failed_checks": [],
+      "classification": "baseline_pass"
+    },
+    {
+      "case": "baseline_geometry",
+      "base_source": "scripts/scalar_physical_curvature_geometry.py",
+      "base_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "variant_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "selector": null,
+      "replacement": null,
+      "expected_matches": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.8678187080658972,
+      "checks": 55,
+      "failed_checks": [],
+      "classification": "baseline_pass"
+    }
+  ],
+  "mutations": [
+    {
+      "case": "weyl_factor",
+      "base_source": "scripts/scalar_physical_curvature_action.py",
+      "base_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "variant_sha256": "56394653f9104037085eeed2c0f61a8d3d95fad7f5fbb25917ca99b5acec8c56",
+      "selector": "K - 3 * ell_u ** 2",
+      "replacement": "K - 6 * ell_u ** 2",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.6270977496169508,
+      "checks": 27,
+      "failed_checks": [
+        "Weyl radial kinetic constant"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "transverse_y_potential",
+      "base_source": "scripts/scalar_physical_curvature_action.py",
+      "base_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "variant_sha256": "5e041dc381f7d426beb18a3d85329668625ef9449416422ab040396e2bb9c233",
+      "selector": "Vy = 2 * Q * H ** 2 * k",
+      "replacement": "Vy = Q * H ** 2 * k",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.6352498331107199,
+      "checks": 27,
+      "failed_checks": [
+        "physical y potential"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "regulator_potential",
+      "base_source": "scripts/scalar_physical_curvature_action.py",
+      "base_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "variant_sha256": "efe45757e1279a351939d13ff1da275e4978e0e7e0ca6ff0ca76bc556adcaa49",
+      "selector": "Vreg = Q * H ** 2 * nu",
+      "replacement": "Vreg = 2 * Q * H ** 2 * nu",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.6412397907115519,
+      "checks": 27,
+      "failed_checks": [
+        "physical regulator",
+        "radial potential derivative below boundary domain",
+        "potential maximum threshold"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "curvature_source_sign",
+      "base_source": "scripts/scalar_physical_curvature_action.py",
+      "base_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "variant_sha256": "cc62f6a05872b8d3d8aa5989e3cf7487cf9c92b30a929bf6fa881cb538abd247",
+      "selector": "rhs = -lam * R * z / 2",
+      "replacement": "rhs = lam * R * z / 2",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.6186539996415377,
+      "checks": 27,
+      "failed_checks": [
+        "Euler variation all static channels",
+        "exact vacuum curvature balance"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "bootstrap_denominator",
+      "base_source": "scripts/scalar_physical_curvature_action.py",
+      "base_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "variant_sha256": "4bbdd663611d4114a2339f685b4b3b76f4896f0bf8ce7290cee07f5443b2b40c",
+      "selector": "bound = b / (1 - lam * p)",
+      "replacement": "bound = b * (1 + lam * p)",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.6257801670581102,
+      "checks": 27,
+      "failed_checks": [
+        "bootstrap equality"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "coupling_boundary_scaling",
+      "base_source": "scripts/scalar_physical_curvature_action.py",
+      "base_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "variant_sha256": "41a1ae8e9539002509ce04b9624eac1a79d97a1443ef62321549fb0bb9b6a016",
+      "selector": "((a - qb) * (1 - t) ** 2)",
+      "replacement": "((a - qb) * (1 - t))",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.6454807501286268,
+      "checks": 27,
+      "failed_checks": [
+        "boundary coupling propagation"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "ricci_angular_curvature",
+      "base_source": "scripts/scalar_physical_curvature_geometry.py",
+      "base_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "variant_sha256": "642474f3ff4eb4d8a6e22a5c88f7bf2c491242a19aaa6d51270d6072b90bd9c3",
+      "selector": "+ 2 * (1 - B) / r ** 2",
+      "replacement": "+ (1 - B) / r ** 2",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.9114020001143217,
+      "checks": 55,
+      "failed_checks": [
+        "Ricci from full Christoffel contraction",
+        "clock and radial range curvature map",
+        "Schwarzschild Ricci scalar",
+        "de Sitter Ricci scalar",
+        "anti de Sitter Ricci scalar"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "clock_range_roundtrip",
+      "base_source": "scripts/scalar_physical_curvature_geometry.py",
+      "base_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "variant_sha256": "0002773a76c413dcb1568a25d643f93dfc8a7e7ab1cda0cb134135004543f7f8",
+      "selector": "physical_B = 4 /",
+      "replacement": "physical_B = 1 /",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.8829614580608904,
+      "checks": 55,
+      "failed_checks": [
+        "flat clock and range limit"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "green_volume_measure",
+      "base_source": "scripts/scalar_physical_curvature_geometry.py",
+      "base_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "variant_sha256": "33400e51efbf012d7974e3cd4d98e6883647e113a1ad35b841254e2fe9b5b44b",
+      "selector": "nn(tt) * tt * tt * cc(tt) / np.sqrt(bb(tt))",
+      "replacement": "nn(tt) * tt * tt * cc(tt) * np.sqrt(bb(tt))",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.890984124969691,
+      "checks": 55,
+      "failed_checks": [
+        "weak: independent nested quadrature",
+        "medium: independent nested quadrature",
+        "lapse_rising: independent nested quadrature",
+        "lapse_rising: global ceiling Hv=0.005"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "pointwise_first_iterate",
+      "base_source": "scripts/scalar_physical_curvature_geometry.py",
+      "base_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "variant_sha256": "ab4917843b8c59e920a242b692c839ae908ccdfd034c66ab16a9521d2f0e0b54",
+      "selector": "pointcap = 1 + lam * Pgrid / (1 - lam * P)",
+      "replacement": "pointcap = 1 + lam * Pgrid",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 0.8852474172599614,
+      "checks": 55,
+      "failed_checks": [
+        "weak: pointwise ceiling Hv=0.005",
+        "medium: pointwise ceiling Hv=0.005",
+        "medium: pointwise ceiling Hv=0.05",
+        "lapse_rising: pointwise ceiling Hv=0.005"
+      ],
+      "classification": "detected_by_failed_controls"
+    }
+  ],
+  "counts": {
+    "mutations": 10,
+    "failed_controls": 10,
+    "exceptions": 0
+  }
+}

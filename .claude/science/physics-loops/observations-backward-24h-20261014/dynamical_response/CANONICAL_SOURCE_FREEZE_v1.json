@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-15T14:58:56.488828+00:00",
+  "phase": "before canonical execution and source review",
+  "files": {
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "326ad86376122e55c9ff2804d91b7ec95e7e5fa7b43e349a0b834257f0fd810f",
+    "scripts/scalar_dynamical_covariance.py": "060d282e64eb8ead9ebd55614cdda8bc4dd2db33bb51ee2ef56fcca9083cf9f6",
+    "scripts/scalar_dynamical_domains.py": "17136ce5e6296b569e1786836004c1564f6f80d229e828d29c12c02b090facbf",
+    "scripts/scalar_dynamical_extensions.py": "935f99266dc7b93ea90589c60a5c35e71accec69bac4592dd11a333d19798f14",
+    "scripts/scalar_dynamical_forward.py": "b7ece5a9ea1e48334c1ee9301b4ca3b5e59f7246f6837ec5b9e0c2b47e64f005",
+    "scripts/scalar_dynamical_geometry.py": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+    "scripts/scalar_dynamical_momentum_inverse_check.py": "cea1f8f345aa64adf0c2a903b25133418e0389c06b48691e50b553a5d7e341b4",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json": "22084105058cd2d2b94edb0d7c272198cac9ef196477966bf8fd01e32355d656",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md": "067675f6befed554b11530ad8423af7bdce28a21744f06fba4ab0924b792c4d7"
+  }
+}

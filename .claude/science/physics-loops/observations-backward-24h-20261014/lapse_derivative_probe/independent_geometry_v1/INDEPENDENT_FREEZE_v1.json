@@ -1,0 +1,53 @@
+{
+  "frozen_at_utc": "2026-10-15T19:09:53.642117+00:00",
+  "stage": "independent proof and controls before new root extension derivation/source access",
+  "prior_exposure": "M17 full action, source review and own proof; parent task disclosed positive-rescaling goal and curvature identity but no new formula",
+  "root_extension_sources_read": false,
+  "empirical_data_opened": false,
+  "counts": {
+    "passed": 37,
+    "failed": 0
+  },
+  "files": [
+    {
+      "path": "INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "308cd3213b37433bc6df76c312c9fd6c102d7caee307c5b07e2eefda324b66e6",
+      "bytes": 11181
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_v1.json",
+      "sha256": "f0a207cc2c01c22d34596ac980eafe313f2c73a006523c7f42297edb0bafc086",
+      "bytes": 5154
+    },
+    {
+      "path": "INHERITED_EXPOSURE_v1.json",
+      "sha256": "bbe8f05da5fb99cdd49fa2631a6c69cf22be13bab724396c482b50a0dd819476",
+      "bytes": 1480
+    },
+    {
+      "path": "INHERITED__CANONICAL_REVIEW_v1.md",
+      "sha256": "a1de35a50d53ee84b0d009250e8d50e9c98864a3e571f264ec1ba2d195b26be2",
+      "bytes": 9282
+    },
+    {
+      "path": "INHERITED__INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "69c3f165d096d64d9b5b3f0d80afd7c01e1fd1bbdabdf8d15118ee1a171f69a0",
+      "bytes": 11188
+    },
+    {
+      "path": "INHERITED__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+      "bytes": 14511
+    },
+    {
+      "path": "INHERITED__scalar_physical_curvature_action.py",
+      "sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "bytes": 5030
+    },
+    {
+      "path": "independent_controls_v1.py",
+      "sha256": "d2c0fe72520d132b713165543c079ce6d25f268873e1d67236941221c88f3651",
+      "bytes": 6424
+    }
+  ]
+}

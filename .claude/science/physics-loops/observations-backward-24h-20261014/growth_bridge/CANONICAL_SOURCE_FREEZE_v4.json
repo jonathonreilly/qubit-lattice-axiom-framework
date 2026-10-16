@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-15T13:51:49.691183+00:00",
+  "files": {
+    "scripts/scalar_growth_lensing_inverse_check.py": "fdd2279ac3315d909b44aa65ce8e2989933908d6c874ed6abc588ab588ac3c11",
+    "scripts/scalar_growth_lensing_inverse.py": "8411d1eb3ad2d3fcc5e4549684e3136e872e5cabb891e9da5ab4a671c6db718a",
+    "docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd",
+    "outputs/scalar_growth_lensing_inverse/RESULTS_v1.json": "d72211eb2344ea07ae0b7b117b6261a7c187a0ca815dff23daeb47fe9f754553",
+    "outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json": "792393456462803df9380f3ebcc680dfc5cee71c397a323df4cd723ba85aa4b6",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_growth_lensing_inverse_check.txt": "2a13c55a1282b6b2bf12111a846335b36271f3a3255558cbcdf6646e194c685d"
+  },
+  "canonical_controls": 143,
+  "failed": 0,
+  "empirical_tests": 0,
+  "full_perturbation_solver": false
+}

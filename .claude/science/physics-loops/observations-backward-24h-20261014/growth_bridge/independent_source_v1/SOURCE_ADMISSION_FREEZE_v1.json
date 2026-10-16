@@ -1,0 +1,111 @@
+{
+  "frozen_utc": "2026-10-15T12:49:10.646829+00:00",
+  "reviewer": "/root/launch_check",
+  "author_new_theory_read": false,
+  "scope": "Primary empirical-source admission only; no formal audit, fits, parameter inference or raw data acquisition",
+  "conclusions": [
+    "ACT DR6 plus BOSS supplies finite, correlated, angular/window-weighted E_G estimates for CMASS and LOWZ at effective redshifts 0.555 and 0.316; it does not directly supply a continuous local E_G(N,k).",
+    "The paper reports scale-binned E_G and two combined amplitudes, with additional correlated ACT+Planck combinations; these are not four independent redshift measurements.",
+    "The imported beta is a galaxy-sample RSD fit using fiducial power shape/amplitude, nonlinear-bias and effective-theory modeling and free Alcock-Paczynski parameters; it is not continuous R or P3.",
+    "1210.0439v2 is an ideal-observability analysis under explicit matter, bias, frame and linear assumptions, with further quasistatic/sound-horizon assumptions for its Horndeski shape tests; it contains no released P3 measurements.",
+    "Sigma_A=Y(1+eta), L_A and P2_A=L_A/R in 1210.0439v2 have twice the normalization of the standard lensing Sigma, L and ACT E_G. P2_A=2 E_G; P3 is invariant under the constant rescaling.",
+    "Source velocity symbols have different printed signs. Use an explicit metric/Fourier/velocity dictionary anchored to E_G^GR=Omega_m0/f before importing formulas.",
+    "Neither the two amplitudes nor the binned projected statistics supply the required time derivatives, continuous same-mode scale derivatives, or a physical F history without an additional model, boundary data, calibrations and a likelihood/window reconstruction.",
+    "Public underlying catalogue/map products and named analysis packages were located. Article-specific numerical E_G/cross-spectrum bandpower arrays, exact window matrices, joint covariance and beta likelihood release were not independently verified in this bounded documentation search; the paper promises availability upon publication. This is not a claim that such products do not exist.",
+    "All published summaries read here are exposed development information, not holdouts. The result is a bounded input-admission limitation, not a universal no-go for lensing/growth or an exclusion/confirmation of the root candidate."
+  ],
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/act_boss_eg.pdf",
+      "relative_path": "primary_sources/act_boss_eg.pdf",
+      "bytes": 1645611,
+      "sha256": "cd068e0555f7f1dc3a65ecae728ae26400a24cfd58965fd7ca9301b105fc9664"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/act_boss_eg_abs.html",
+      "relative_path": "primary_sources/act_boss_eg_abs.html",
+      "bytes": 48268,
+      "sha256": "458c4866455840a5dcc05d294510ec8b528f8543f86fb5b76d3168c5dfacfc0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/act_boss_eg_text.txt",
+      "relative_path": "primary_sources/act_boss_eg_text.txt",
+      "bytes": 146449,
+      "sha256": "5788d2c60931add43d9d60a2b6c9ab17ad6c70dcfe9653f743581f25f69e5f73"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/lambda_act_lensing_map_info.html",
+      "relative_path": "primary_sources/lambda_act_lensing_map_info.html",
+      "bytes": 19129,
+      "sha256": "c01ac68fdc4a66fb737d6d1e80bee9cdb17f5db1e9db9b8ef249a7bc67555c7f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/lambda_act_product_table.html",
+      "relative_path": "primary_sources/lambda_act_product_table.html",
+      "bytes": 31245,
+      "sha256": "e52192ba86c71aa601518e220c5b0d46c2675fdb3bc98deb4b6b92d39771225b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/namaster_readme.md",
+      "relative_path": "primary_sources/namaster_readme.md",
+      "bytes": 6766,
+      "sha256": "7b8075611dadf4ea348085d022dabc41e18fe8b939959ed11ff88be8f618758a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/observables.pdf",
+      "relative_path": "primary_sources/observables.pdf",
+      "bytes": 216957,
+      "sha256": "86757eab1e9d1d89177c231b544510b746bd83c0fdc78331f5ffda2b37c867fb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/observables_abs.html",
+      "relative_path": "primary_sources/observables_abs.html",
+      "bytes": 44254,
+      "sha256": "bb53848ab10c9542a4448885ffa6cb57ee089ccd40c85bc3b08207f1357528d5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/observables_text.txt",
+      "relative_path": "primary_sources/observables_text.txt",
+      "bytes": 40169,
+      "sha256": "f7e683eb08008f8d547451cc1c77a0064517ed5929f946a49a84572cd12d0416"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/planck_pr4_readme.md",
+      "relative_path": "primary_sources/planck_pr4_readme.md",
+      "bytes": 1391,
+      "sha256": "a54d2753b5cba75e3fd913b712b137eba747c86beb64fe2aa9a603a3925bd892"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/precision_estimator.pdf",
+      "relative_path": "primary_sources/precision_estimator.pdf",
+      "bytes": 1852417,
+      "sha256": "fc5ecd1a8858ad7e9c2de89f0f5f04603c7e8704ddd3321e17c16aba45523a02"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/precision_estimator_abs.html",
+      "relative_path": "primary_sources/precision_estimator_abs.html",
+      "bytes": 47383,
+      "sha256": "e9984773547691fc9879b8724573e7675d5a4b18e39e490028fdb3be238b9d01"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/precision_estimator_text.txt",
+      "relative_path": "primary_sources/precision_estimator_text.txt",
+      "bytes": 174532,
+      "sha256": "b9945de91254117cde2b1462f8c3e8e0f1234d9ea312c4a5b473dd278c0a99d9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/sdss_dr12_lss_index.html",
+      "relative_path": "primary_sources/sdss_dr12_lss_index.html",
+      "bytes": 15346,
+      "sha256": "074115bad84b5c3f6ec97375b404f51bf24a258ece5086816f0f197c26a3f379"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_source_v1/primary_sources/velocileptors_readme.md",
+      "relative_path": "primary_sources/velocileptors_readme.md",
+      "bytes": 5918,
+      "sha256": "355eabbbf62ab268a1a648d912c5a21f29743711874853c9608961e794f58fa9"
+    }
+  ],
+  "prohibited_actions_performed": [],
+  "remaining_for_report": "Precisely document read scope, estimator/calibration details, conventions, links, retrieval limitations and source identities. Do not need author theory for this conclusion."
+}

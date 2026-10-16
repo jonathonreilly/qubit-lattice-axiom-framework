@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "Bianchi_matter_trace",
+      "before": "-(rho-3*p)+2*F*derivative(V)/Fd",
+      "after": "-(rho-p)+2*F*derivative(V)/Fd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/Bianchi_matter_trace.py",
+      "sha256": "cef88557ab18d68ec2f1f3809bcc02db56bb4ebb7597b8cec025e311e99a4c79",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.211566041689366,
+      "stdout": "{\"failed\": [\"Bianchi_scalar_equation_nonzero_Fdot\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "tensor_endpoint_orientation",
+      "before": "sp.sqrt(Fsrc/Fmid)*sp.sqrt(Fmid/Fobs)-sp.sqrt(Fsrc/Fobs)",
+      "after": "sp.sqrt(Fmid/Fsrc)*sp.sqrt(Fmid/Fobs)-sp.sqrt(Fsrc/Fobs)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/tensor_endpoint_orientation.py",
+      "sha256": "0d467f1ab31e64fd9848f9b8b04d4ceefbd5b4558d8b8da2ba947e74b96d977d",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.042937083169818,
+      "stdout": "{\"failed\": [\"smooth_endpoint_telescope\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "sharp_interface_transmission",
+      "before": "transmission = 2*Fsrc/(Fsrc+Fmid)",
+      "after": "transmission = 2*Fmid/(Fsrc+Fmid)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/sharp_interface_transmission.py",
+      "sha256": "3ef74f92033e4ce5246b0fcd0f3c06688a1a84bbb162e9d9f09b43bafa0f1e9f",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.0004835417494178,
+      "stdout": "{\"failed\": [\"sharp_interface_flux_conservation\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "transverse_potential_force",
+      "before": "Uxy = k*x*x*sp.exp(-(1-k)*u/alpha)/2",
+      "after": "Uxy = k*x*x*sp.exp(-(1-k)*u/alpha)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/transverse_potential_force.py",
+      "sha256": "015c1750c96d24be23916d3a77be428d3d822464ddb717df1c0ddbc9ae7cbcb7",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.0099810841493309,
+      "stdout": "{\"failed\": [\"transverse_x_stationary_equation\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "transverse_kinetic_factor",
+      "before": "full_D = radial_D+2*tensor*Tperp",
+      "after": "full_D = radial_D+tensor*Tperp",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_supplement_v1/transverse_kinetic_factor.py",
+      "sha256": "6ae66c85454b8ed97fd399fa640cbf21ff85ef77c1b411ae150f1a56156a275a",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 0.9577735001221299,
+      "stdout": "{\"failed\": [\"background_geometric_coupling_distinction\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    }
+  ]
+}

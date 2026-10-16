@@ -1,0 +1,19 @@
+{
+  "scope": "Two EOF whitespace errors; no scientific text, expression, helper or protocol change",
+  "files": [
+    {
+      "path": "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "before_sha256": "5ab35d877647f97949adf0712ddff833dfa84d286bcec6abddc675bb635eab51",
+      "after_sha256": "7393fe28d957358c22fdc1915eeca7c6564ad3b83f3f1355ea2628722fc94fda",
+      "exact_change": "removed one excess EOF newline",
+      "ast_equal": null
+    },
+    {
+      "path": "scripts/scalar_physical_curvature_check.py",
+      "before_sha256": "662b71a11a02b08dea681949a0efa60672c0fe8ab38b6f0236131740e39adb27",
+      "after_sha256": "61286432a5d19c861dda47a0dbbdf7258b4d0d77ad0513af5d667fd4edb52792",
+      "exact_change": "removed one excess EOF newline",
+      "ast_equal": true
+    }
+  ]
+}

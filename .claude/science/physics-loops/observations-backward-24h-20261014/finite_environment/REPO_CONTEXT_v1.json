@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-10-15T17:58:47Z",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "main_unchanged": true,
+  "constituent_base": "cdf67b716d61b49d03313e8c21132babddaeca51",
+  "base_pr": 9612,
+  "planning_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "new_or_changed_other_pr": 9611,
+  "snapshot": "OPEN_PRS_v1.json",
+  "changed_pr_body": "PR9611_v1.json",
+  "complete_changed_pr_files": "PR9611_FILES_v1.json",
+  "scope": "Root read complete new9611body and paginated380path inventory: unrelated quantum correlated-memory route, no mathematical import or attachment. Main/planning and relevant scalar notes unchanged; exact older source reading reused. M16 personally authored, independently checked and published. No merge, main mutation or other-author edits."
+}

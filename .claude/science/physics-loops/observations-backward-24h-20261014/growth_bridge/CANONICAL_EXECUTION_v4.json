@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-15T13:51:49.691183+00:00",
+  "runner": "scripts/scalar_growth_lensing_inverse_check.py",
+  "result": {
+    "runner": "scripts/scalar_growth_lensing_inverse_check.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "per_element: checked: exact response equations, chart domains, factors and candidate admission\nper_site: checked and not executed: no lattice site dynamics or local screening field solved\nper_mode: checked: coherent dust modes with exact continuity and supplied light scalar response\nper_block: checked: three synthetic full radial backgrounds with two reduced perturbation modes each\nlattice_wide: checked and not executed: no unconditional framework action, state or empirical scalar conclusion\n{\n  \"actual_current_surface_status\": \"conditional-support\",\n  \"background_failures\": [\n    {\n      \"B\": \"1/5\",\n      \"Euler_residual_at_0\": \"-43561803701691/156212523334720\",\n      \"beta\": \"29/100\",\n      \"meaning\": \"Manufactured reduced identity is not a full background solution.\",\n      \"necessary_Y0\": \"13384899/30100376\"\n    },\n    {\n      \"B\": \"26/145\",\n      \"Euler_residual_at_0\": \"-541963083069/1855997211505\",\n      \"beta\": \"13/50\",\n      \"meaning\": \"Manufactured reduced identity is not a full background solution.\",\n      \"necessary_Y0\": \"7664652/16404865\"\n    }\n  ],\n  \"exceptional_pairs\": [\n    {\n      \"B2\": \"26/145\",\n      \"C2\": \"11/4\",\n      \"beta1\": \"29/100\",\n      \"beta2\": \"13/50\",\n      \"tensor_ratios\": [\n        \"319/345\",\n        \"58/69\"\n      ]\n    },\n    {\n      \"B2\": \"13/80\",\n      \"C2\": \"7/2\",\n      \"beta1\": \"8/25\",\n      \"beta2\": \"13/50\",\n      \"tensor_ratios\": [\n        \"203/207\",\n        \"58/69\"\n      ]\n    }\n  ],\n  \"failed\": 0,\n  \"failed_checks\": [],\n  \"full_action_perturbations_solved\": false,\n  \"independent_empirical_tests\": 0,\n  \"input_sha256\": {\n    \".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json\": \"1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088\",\n    \".claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/NO_GO_DISCIPLINE_CHECKLIST.md\": \"a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd\",\n    \"docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md\": \"98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719\",\n    \"scripts/scalar_growth_lensing_inverse.py\": \"8411d1eb3ad2d3fcc5e4549684e3136e872e5cabb891e9da5ab4a671c6db718a\"\n  },\n  \"numerical_scope\": \"Double-precision synthetic ODE and 60-digit inverse arithmetic on its rounded readouts; no rigorous integration enclosure or observed high-precision digits.\",\n  \"original_failures\": [\n    \"Working v1 omitted q>0 software gate; exact reviewer witness and original returns retained.\",\n    \"Working forward v1 output serialization failed; partial file preserved and unchanged physics rerun in v2.\",\n    \"Initial canonical sampled gate rounded an exact chart boundary and admitted infinite B/C; source and reviewer witnesses preserved.\",\n    \"Initial later assessment evaluated a rejected pole; source and witness preserved.\",\n    \"Nonfinite later readout could falsely pass via max([0, NaN]); original source/witness retained, finite input and residual gates added.\"\n  ],\n  \"passed\": 143,\n  \"primary_sha256\": \"fdd2279ac3315d909b44aa65ce8e2989933908d6c874ed6abc588ab588ac3c11\",\n  \"read_inventory\": {\n    \"integrity_reads\": [\n      \"Primary source plus every declared input for SHA256; no raw observations or unmerged scientific source loaded\"\n    ],\n    \"scientific_inputs\": [\n      \"Fixed protocol in AUDIT_INPUT_PATHS; supplied action/response equations implemented explicitly in the imported helper\"\n    ]\n  },\n  \"scope\": \"Supplied full radial background plus an explicitly conditional light, quasistatic single-mode perturbation closure. Exact dust continuity term retained. Synthetic computational checks, never observations or exact full-action perturbations.\",\n  \"status\": \"conditional-support\"\n}\n",
+    "stderr": "",
+    "elapsed_sec": 1.3304717540740967,
+    "timeout_sec": 120,
+    "live_log": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/.in-progress/scalar_growth_lensing_inverse_check.txt"
+  },
+  "execution_header": {
+    "runner": "scripts/scalar_growth_lensing_inverse_check.py",
+    "runner_sha256": "fdd2279ac3315d909b44aa65ce8e2989933908d6c874ed6abc588ab588ac3c11",
+    "input_fingerprint_sha256": "173885dff7b392d7aad1464e4260f272cab86f23b67348d048dc1a460f482c4d",
+    "timeout_sec": "120",
+    "exit_code": "0",
+    "elapsed_sec": "1.33",
+    "status": "ok"
+  },
+  "cache": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_growth_lensing_inverse_check.txt",
+  "cache_sha256": "2a13c55a1282b6b2bf12111a846335b36271f3a3255558cbcdf6646e194c685d"
+}

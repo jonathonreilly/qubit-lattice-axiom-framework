@@ -1,0 +1,172 @@
+{
+  "results": [
+    {
+      "name": "curvature_sign",
+      "before": "(Hd - curvature)",
+      "after": "(Hd + curvature)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/curvature_sign.py",
+      "sha256": "8e70ee088af1455ec91c1cea4f9169b1b6eec8c0a74f49d74267dd2dbb0c71cc",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.114825792144984,
+      "stdout": "{\"failed\": [\"implemented_curved_manufactured_history\", \"implemented_nonzero_pressure_metric\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "pressure_in_kinetic",
+      "before": "- rho - pressure - Fdd",
+      "after": "- rho + pressure - Fdd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/pressure_in_kinetic.py",
+      "sha256": "e49a95abcc31098499afcf79785d7600aff41250b02ecce9259d99fae32817d3",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 0.9331535408273339,
+      "stdout": "{\"failed\": [\"implemented_nonzero_pressure_metric\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "pressure_in_potential",
+      "before": "(rho - pressure) / 2",
+      "after": "(rho + pressure) / 2",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/pressure_in_potential.py",
+      "sha256": "91249a424a062579e80e391f3a7fe859de4cefbffbddc2b4ef4c7f0bdf788146",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.0550779588520527,
+      "stdout": "{\"failed\": [\"implemented_nonzero_pressure_metric\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "kinetic_second_derivative",
+      "before": "- Fdd + H * Fd",
+      "after": "+ Fdd + H * Fd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/kinetic_second_derivative.py",
+      "sha256": "151354eeb0d38ac3b4368093a4ccf3b8d7e8e0a146acb5809d5c1406eb819fda",
+      "exit_code": 1,
+      "rejection_kind": "guard_or_numeric_exception",
+      "elapsed_seconds": 0.9459625408053398,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/kinetic_second_derivative.py\", line 426, in run\n    return _run(protocol)\n           ^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/kinetic_second_derivative.py\", line 356, in _run\n    result = synthetic_history(case,evaluate)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/kinetic_second_derivative.py\", line 226, in synthetic_history\n    rounded_kinetic = kinetic_inverse(rounded_rows[0], rounded_rows[6])\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/kinetic_second_derivative.py\", line 40, in kinetic_inverse\n    raise ValueError(\"kinetic inverse requires positive F,D and changing F\")\nValueError: kinetic inverse requires positive F,D and changing F\n"
+    },
+    {
+      "name": "potential_friction",
+      "before": "2.5 * H * Fd",
+      "after": "1.5 * H * Fd",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_friction.py",
+      "sha256": "358b407191aff3b48a9e6a33bb924c70c1d4a8fabc12bca003a0463379de9780",
+      "exit_code": 1,
+      "rejection_kind": "guard_or_numeric_exception",
+      "elapsed_seconds": 0.9641357497312129,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_friction.py\", line 426, in run\n    return _run(protocol)\n           ^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_friction.py\", line 356, in _run\n    result = synthetic_history(case,evaluate)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_friction.py\", line 227, in synthetic_history\n    rounded_potential = potential_inverse(rounded_rows[0], rounded_rows[6], rounded_kinetic)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_friction.py\", line 80, in potential_inverse\n    raise ValueError(\"candidate potential coefficient positivity failed\")\nValueError: candidate potential coefficient positivity failed\n"
+    },
+    {
+      "name": "background_coupling",
+      "before": "2 * F * D + 3 * Fd**2",
+      "after": "2 * F * D + 6 * Fd**2",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/background_coupling.py",
+      "sha256": "6f272c05c16221a3a3cf22968d4f7118ee3544a570744f4dc627260178b30f78",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.079095957800746,
+      "stdout": "{\"failed\": [\"implemented_curved_manufactured_history\", \"case0_action_metric_closure\", \"case1_action_metric_closure\", \"case2_action_metric_closure\", \"case3_action_metric_closure\", \"case4_action_metric_closure\", \"case5_action_metric_closure\", \"case6_action_metric_closure\", \"case7_action_metric_closure\", \"case8_action_metric_closure\", \"case9_action_metric_closure\", \"case10_action_metric_closure\", \"case11_action_metric_closure\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "candidate_root_branch",
+      "before": "1 - 2 * mp.sqrt(2 * coefficient",
+      "after": "1 + 2 * mp.sqrt(2 * coefficient",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_root_branch.py",
+      "sha256": "b85e8fa9f5ece91916ebaf5321612f8274d191145e3ffbc6a717115eebac5c62",
+      "exit_code": 1,
+      "rejection_kind": "guard_or_numeric_exception",
+      "elapsed_seconds": 0.9721144172362983,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_root_branch.py\", line 426, in run\n    return _run(protocol)\n           ^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_root_branch.py\", line 356, in _run\n    result = synthetic_history(case,evaluate)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_root_branch.py\", line 227, in synthetic_history\n    rounded_potential = potential_inverse(rounded_rows[0], rounded_rows[6], rounded_kinetic)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_root_branch.py\", line 79, in potential_inverse\n    if not (L > 0 and T > 0):\n            ^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/ctx_mp_python.py\", line 458, in _compare\n    raise TypeError(\"no ordering relation is defined for complex numbers\")\nTypeError: no ordering relation is defined for complex numbers\n"
+    },
+    {
+      "name": "candidate_boundary",
+      "before": "Fc = F1 - coefficient * Y1",
+      "after": "Fc = F1 + coefficient * Y1",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_boundary.py",
+      "sha256": "5fd36b19eb42d6a771cc96c9f564a4a4790acca01cea50c7f5f6ba49dae5f911",
+      "exit_code": 1,
+      "rejection_kind": "guard_or_numeric_exception",
+      "elapsed_seconds": 0.9718841249123216,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_boundary.py\", line 426, in run\n    return _run(protocol)\n           ^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_boundary.py\", line 356, in _run\n    result = synthetic_history(case,evaluate)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_boundary.py\", line 226, in synthetic_history\n    rounded_kinetic = kinetic_inverse(rounded_rows[0], rounded_rows[6])\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/candidate_boundary.py\", line 48, in kinetic_inverse\n    raise ValueError(\"candidate kinetic parameter domain failed\")\nValueError: candidate kinetic parameter domain failed\n"
+    },
+    {
+      "name": "potential_Hv_normalization",
+      "before": "mp.sqrt(L * parameters[\"Q\"] / 2)",
+      "after": "mp.sqrt(L * parameters[\"Q\"])",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_Hv_normalization.py",
+      "sha256": "37bbf3b5b17f4579f5d901cb0b30ff5aaa9c2c527b5bb76a1db48ec4e6569b63",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.0709337913431227,
+      "stdout": "{\"failed\": [\"case0_parameter_recovery\", \"case1_parameter_recovery\", \"case2_parameter_recovery\", \"case3_parameter_recovery\", \"case4_parameter_recovery\", \"case5_parameter_recovery\", \"case6_parameter_recovery\", \"case7_parameter_recovery\", \"case8_parameter_recovery\", \"case9_parameter_recovery\", \"case10_parameter_recovery\", \"case11_parameter_recovery\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "Jordan_first_time",
+      "before": "Fdot = -2*F*b*velocity/A\n    Fddot",
+      "after": "Fdot = -2*F*b*velocity\n    Fddot",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_first_time.py",
+      "sha256": "f5317ea9f66e9cc349b9a0c421d7706989c6d619fe72eb605268fd87f48a5534",
+      "exit_code": 1,
+      "rejection_kind": "guard_or_numeric_exception",
+      "elapsed_seconds": 0.9768239161930978,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_first_time.py\", line 426, in run\n    return _run(protocol)\n           ^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_first_time.py\", line 356, in _run\n    result = synthetic_history(case,evaluate)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_first_time.py\", line 229, in synthetic_history\n    kinetic = kinetic_inverse(rows[0],rows[6])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_first_time.py\", line 48, in kinetic_inverse\n    raise ValueError(\"candidate kinetic parameter domain failed\")\nValueError: candidate kinetic parameter domain failed\n"
+    },
+    {
+      "name": "Jordan_second_time",
+      "before": "Fddot = -2*F/A**2*(b*acceleration+(bu-",
+      "after": "Fddot = -2*F/A*(b*acceleration+(bu-",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_second_time.py",
+      "sha256": "ae717d3db264fe5a36da6999915756cbd9acce9dddfa7c628aae5726889841e5",
+      "exit_code": 1,
+      "rejection_kind": "guard_or_numeric_exception",
+      "elapsed_seconds": 1.00183383282274,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_second_time.py\", line 426, in run\n    return _run(protocol)\n           ^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_second_time.py\", line 356, in _run\n    result = synthetic_history(case,evaluate)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_second_time.py\", line 229, in synthetic_history\n    kinetic = kinetic_inverse(rows[0],rows[6])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/Jordan_second_time.py\", line 40, in kinetic_inverse\n    raise ValueError(\"kinetic inverse requires positive F,D and changing F\")\nValueError: kinetic inverse requires positive F,D and changing F\n"
+    },
+    {
+      "name": "source_kinetic_factor",
+      "before": "source_D':2*F*(K-3*b*b)",
+      "after": "source_D':F*(K-3*b*b)",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/source_kinetic_factor.py",
+      "sha256": "6ebe4fc2749e4cf3f890d8714b95f9d2e2b47989a5f5005775c521c2ae1ebb79",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.16644670907408,
+      "stdout": "{\"failed\": [\"case0_action_metric_closure\", \"case1_action_metric_closure\", \"case2_action_metric_closure\", \"case3_action_metric_closure\", \"case4_action_metric_closure\", \"case5_action_metric_closure\", \"case6_action_metric_closure\", \"case7_action_metric_closure\", \"case8_action_metric_closure\", \"case9_action_metric_closure\", \"case10_action_metric_closure\", \"case11_action_metric_closure\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "source_potential_factor",
+      "before": "source_V':2*Q*Hv**2",
+      "after": "source_V':Q*Hv**2",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/source_potential_factor.py",
+      "sha256": "402426cf0973ee154791783e698b8353ebf52365990d33843402d33fd3567c02",
+      "exit_code": 1,
+      "rejection_kind": "assertion",
+      "elapsed_seconds": 1.0649339579977095,
+      "stdout": "{\"failed\": [\"case0_action_metric_closure\", \"case1_action_metric_closure\", \"case2_action_metric_closure\", \"case3_action_metric_closure\", \"case4_action_metric_closure\", \"case5_action_metric_closure\", \"case6_action_metric_closure\", \"case7_action_metric_closure\", \"case8_action_metric_closure\", \"case9_action_metric_closure\", \"case10_action_metric_closure\", \"case11_action_metric_closure\"]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 7, in <module>\nAssertionError: scientific control rejected variant\n"
+    },
+    {
+      "name": "potential_u_origin",
+      "before": "E = Fc / (s * (F - Fc))",
+      "after": "E = 2 * Fc / (s * (F - Fc))",
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_u_origin.py",
+      "sha256": "29b72892e9c13a5fc62f99b7796d29d1565cedc372a0305e887ce16d770f4f2f",
+      "exit_code": 1,
+      "rejection_kind": "guard_or_numeric_exception",
+      "elapsed_seconds": 0.9725847500376403,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_u_origin.py\", line 426, in run\n    return _run(protocol)\n           ^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_u_origin.py\", line 356, in _run\n    result = synthetic_history(case,evaluate)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_u_origin.py\", line 227, in synthetic_history\n    rounded_potential = potential_inverse(rounded_rows[0], rounded_rows[6], rounded_kinetic)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/mutation_variants_v2/potential_u_origin.py\", line 80, in potential_inverse\n    raise ValueError(\"candidate potential coefficient positivity failed\")\nValueError: candidate potential coefficient positivity failed\n"
+    }
+  ]
+}

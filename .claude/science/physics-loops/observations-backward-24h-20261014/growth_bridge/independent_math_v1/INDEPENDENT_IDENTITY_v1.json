@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-15T12:55:35.120755+00:00",
+  "independent_controls": 43,
+  "failed_controls": 0,
+  "new_author_growth_source_read": false,
+  "files": {
+    "SUPPLIED_M12_NOTE_v1.md": {
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "bytes": 25119
+    },
+    "SOURCE_FREEZE_v1.json": {
+      "sha256": "2f8615d39cd2fa00692f364bd27c09b05f51bccf2535e9709fe1aee40ed9f176",
+      "bytes": 675
+    },
+    "PRECHECK_v1.md": {
+      "sha256": "6f10216bad8fa408293369eae4b572a10972cf7ae72489c0096b799577ca5069",
+      "bytes": 12388
+    },
+    "PRECHECK_FREEZE_v1.json": {
+      "sha256": "493ab75d7e76dbc52b14ce3584062f9cd3108b5a1d3e0b737b15d705d475c7e7",
+      "bytes": 472
+    },
+    "INTERVAL_EXTENSION_v1.md": {
+      "sha256": "bf85e7939b48a8955cdd28f4c556b302ed6ca393edf211c491de876110e6dc10",
+      "bytes": 4544
+    },
+    "independent_controls_v1.py": {
+      "sha256": "a7f3b8330be15db30b363b595fe9daed3fea88f83b51535cf5628ed2702dee74",
+      "bytes": 6093
+    },
+    "EXTENSION_CONTROL_FREEZE_v1.json": {
+      "sha256": "72e2c8389b3b8f5daefe7c70861dc81fa19221e382b64310a4ae2bad57818e07",
+      "bytes": 407
+    },
+    "CONTROL_RESULTS_v1.json": {
+      "sha256": "f54f236ef268229a665ac77eaf66c7d546eaac1e7a17a0d40eb87dcb51d5e8db",
+      "bytes": 5249
+    },
+    "CONTINUITY_EXTENSION_v1.md": {
+      "sha256": "6cdcc523456387a6bbc24e76e4daa1dd078a8f504cf76d0de8703bd7e61efcb1",
+      "bytes": 3199
+    },
+    "continuity_controls_v1.py": {
+      "sha256": "dc9fb8e9ff10d63a0178621ffe971679cbdf383871793a4bd436b0b6b1092afa",
+      "bytes": 1650
+    },
+    "CONTINUITY_FREEZE_v1.json": {
+      "sha256": "90c99e6e83b011fe14537bfffdb1eb69f1c080d4933346bb3ee70688d2ee12f1",
+      "bytes": 319
+    },
+    "CONTINUITY_RESULTS_v1.json": {
+      "sha256": "3333910144be3501732e5c03230e43d4b6a1095c823d4c3834fbfc69e3f9c2bb",
+      "bytes": 1054
+    },
+    "INDEPENDENT_MATH_v1.md": {
+      "sha256": "1749b967ce04da922f903e3810f94f4dc08581237cf712a0cc7eee356046678d",
+      "bytes": 2997
+    }
+  }
+}

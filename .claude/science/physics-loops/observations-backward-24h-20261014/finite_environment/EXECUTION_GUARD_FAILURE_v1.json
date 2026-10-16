@@ -1,0 +1,6 @@
+{
+  "execution_result": "CANONICAL_EXECUTION_v1.json",
+  "status": "82 controls pass but execution identity guard refused cache",
+  "cause": "Driver saved its raw result into the directory containing a declared checklist before capturing after-identity; this changes a checked ancestor directory metadata generation. No pre/post record was saved, so exact token diff is unavailable. Current output hashes all matched current inputs before the later reviewed prose correction.",
+  "repair": "Capture before/after and raw return in runtime outside declared-input ancestors; retain rejected execution and outputs, then rerun final changed note."
+}

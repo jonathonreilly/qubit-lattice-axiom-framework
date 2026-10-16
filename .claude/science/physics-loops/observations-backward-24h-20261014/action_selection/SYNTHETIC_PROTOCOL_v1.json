@@ -1,0 +1,147 @@
+{
+  "frozen_at": "2026-10-15T11:24:25.919232+00:00",
+  "role": "Exposed synthetic model-development controls, not independent empirical data",
+  "synthetic_cases": [
+    {
+      "k": 0.05,
+      "nu": 0.2,
+      "Q0": 3.0,
+      "Hv": 0.1,
+      "u0": -0.6,
+      "velocity_over_Hv": 0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.05,
+      "nu": 1.0,
+      "Q0": 4.0,
+      "Hv": 0.11,
+      "u0": 0.6,
+      "velocity_over_Hv": -0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.05,
+      "nu": 4.0,
+      "Q0": 5.0,
+      "Hv": 0.12000000000000001,
+      "u0": -0.6,
+      "velocity_over_Hv": 0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.1,
+      "nu": 0.2,
+      "Q0": 6.0,
+      "Hv": 0.13,
+      "u0": 0.6,
+      "velocity_over_Hv": -0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.1,
+      "nu": 1.0,
+      "Q0": 7.0,
+      "Hv": 0.14,
+      "u0": -0.6,
+      "velocity_over_Hv": 0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.1,
+      "nu": 4.0,
+      "Q0": 8.0,
+      "Hv": 0.15000000000000002,
+      "u0": 0.6,
+      "velocity_over_Hv": -0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.2,
+      "nu": 0.2,
+      "Q0": 9.0,
+      "Hv": 0.16,
+      "u0": -0.6,
+      "velocity_over_Hv": 0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.2,
+      "nu": 1.0,
+      "Q0": 10.0,
+      "Hv": 0.17,
+      "u0": 0.6,
+      "velocity_over_Hv": -0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.2,
+      "nu": 4.0,
+      "Q0": 11.0,
+      "Hv": 0.18,
+      "u0": -0.6,
+      "velocity_over_Hv": 0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.29,
+      "nu": 0.2,
+      "Q0": 12.0,
+      "Hv": 0.19,
+      "u0": 0.6,
+      "velocity_over_Hv": -0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.29,
+      "nu": 1.0,
+      "Q0": 13.0,
+      "Hv": 0.2,
+      "u0": -0.6,
+      "velocity_over_Hv": 0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    },
+    {
+      "k": 0.29,
+      "nu": 4.0,
+      "Q0": 14.0,
+      "Hv": 0.21000000000000002,
+      "u0": 0.6,
+      "velocity_over_Hv": -0.1,
+      "rhoE_over_QHv2": 0.2,
+      "duration_Hv": 0.02
+    }
+  ],
+  "parameter_relative_tolerance": 5e-07,
+  "residual_relative_tolerance": 1e-08,
+  "sample_count": 17,
+  "calibration_indices": [
+    0,
+    6
+  ],
+  "later_synthetic_residual_indices": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "source_readouts": "Exact analytic Jordan derivatives from numerical original Einstein action histories; finite differences are separate validation controls, not data differentiation",
+  "empirical_protocol": "Only published GW170817 and SBF summaries inspected; no raw data/posterior or new likelihood. The one-event continuous-input admission attempt must fail explicitly. No scalar parameter estimate from published summaries."
+}

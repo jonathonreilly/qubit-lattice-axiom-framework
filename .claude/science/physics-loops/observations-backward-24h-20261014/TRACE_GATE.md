@@ -103,3 +103,85 @@ artifact_role: theorem
 next_trace_action: Prefer a distinct observation-driven action/potential/scale reconstruction unless an actual track-specific receiver transfer/calibration supplier supplies a new physical discriminator.
 
 The new construction conditionally removes the radial-scale input and challenges its angular replacement. Its downstream consumer is physically calibrated scalar inference. It does not identify a scalar signal or derive the real joint signal/error/measurement model.
+
+## M12 cosmological action reconstruction
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate remaining action, state, scale and measured-gravity assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Derive an independently identifiable physical tensor-coefficient history or a complementary growth/lensing discriminator with explicit environmental and source assumptions.
+
+The inverse converts a continuous physical history into candidate function tests and conditionally infers the coupled truncation from full-interval equality. It does not obtain that history from a distance pair, choose the fundamental action, or explain the hierarchy. The observational admission failure is local, not a universal no-go.
+
+### Growth/lensing inverse — 2026-10-15
+
+Target: reconstruct missing physical gravity histories from observations without supplying an initial dust offset. `trace_class: upstream_support`; `reachability_to_target: supports`; `artifact_role: support_lemma`. The downstream consumer is the conditional cosmological action-membership test, restated locally. Endpoint subtraction removes C, while the exact interval classification prevents choosing among indistinguishable shapes. Strongest missing bridge: controlled full perturbation response and actual calibrated survey likelihood. No claim that the supplied action or initial scalar history was derived.
+
+## M14 full dynamical inverse
+
+```yaml
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate the remaining scalar action, state, scale and measurement assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Test a concrete physical operator for the joint equal-time covariance inputs and full-history consistency
+```
+
+The named downstream consumer is the revised-scalar action/potential/scale reconstruction. Momentum and covariance equations eliminate specified input assumptions inside the supplied dynamical class. They do not close the theory, select an action, measure physical F, or supply an empirical likelihood. The exact proof and source-bound computation are self-contained in the new note/primary; earlier unmerged conclusions are provenance, not proof inputs.
+
+## Projected covariance route — 2026-10-15
+
+M15 expected trace: upstream_support/supports; target consumer is M14 full dynamical covariance inverse. Source blocker: M14 physical measurement/error operator is open. Planned artifact derives the shear/radial-velocity projection and null-mode elimination under explicit continuum/calibration conditions. It does not retire actual survey windows, noise, initial cosmic state, action or environment. Current status open pending independent checks; intended type bounded_theorem.
+
+## M15 projected observation constraint
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate the remaining scalar action, state, scale and measurement assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Establish a finite measured window functional without supplying an initial covariance.
+
+This eliminates potential boundary and ell0/1 choices only for the stated necessary constraint. It does not close actual finite-input, action, state, scale or environmental identification.
+
+## M16 working trace
+
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Finite-window supplier remains open for ideal shear/radial-velocity constraints."
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Prove or reject a finite-pair expectation functional; independently check geometry, weak pullback and physical sampling scope. This cannot select the scalar action/state or establish observed gravity.
+
+## M16 checked trace (supersedes working trace for current disposition)
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_action_potential_scale
+target_blocker_text: Derive or eliminate the remaining scalar action, state, scale and measurement assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Establish actual calibrated pair response and uncertainty or a distinct normalization/environment discriminator.
+
+The finite expectation bridge is derived conditionally; its actual sampling/response supplier is not selected or retired. Physical action, state, scale and environment assumptions remain open.
+
+## M18 complementary metric comparison
+
+# M18 trace: reduce the environmental derivative supplier
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_measured_environment
+target_blocker_text: Derive remaining assumptions rather than supplying them
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Establish calibrated complete-domain metric/boundary envelopes or a physically realized coupled environment; do not choose them by fitting a homogeneous minimum.
+
+The direct downstream consumer is the necessary scalar environment ceiling in the same canonical note and PR9614. Setting z=N^lambda w eliminates the standalone lapse Laplacian from that comparison equation. This is derived algebra, not a new action or state selector. The alternative sufficient criterion is provably usable on a smooth family for which the original criterion fails its hypothesis. It neither disproves the original theorem nor supplies a complete matter/metric solution. Actual action, state, scales, boundary, spatial curvature and measurement errors remain conditional.

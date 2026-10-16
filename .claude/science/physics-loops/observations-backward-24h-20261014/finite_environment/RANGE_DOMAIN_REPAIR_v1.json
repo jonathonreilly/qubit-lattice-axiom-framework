@@ -1,0 +1,8 @@
+{
+  "origin": "Focused independent final-source review: force_energy_bridge_check",
+  "problem": "Positive roundtrip integral required outward endpoints; original prose did not specify side of fixed emitter.",
+  "repair": "Declare r>r0 and center-emitter regular limit. Incoming endpoints would require absolute integral; no claim there in equation10.",
+  "equations_changed": false,
+  "old_sha256": "9e8d265f4a5a30135b3bb8aeb3be2939c538c1f185fbc2d8d134b47e4624cca1",
+  "new_sha256": "5ab35d877647f97949adf0712ddff833dfa84d286bcec6abddc675bb635eab51"
+}

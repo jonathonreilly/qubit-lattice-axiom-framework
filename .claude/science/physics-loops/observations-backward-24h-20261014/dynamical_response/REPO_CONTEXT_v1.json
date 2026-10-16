@@ -1,0 +1,323 @@
+{
+  "at_utc": "2026-10-15T14:18:37.313760+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "base": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+  "branch": "codex/observations-backward-dynamics-20261015",
+  "prior_comparison": "Read complete finite-mode vacuum inverse and fixed-patch material/dynamical inverse notes. Neither supplies full rolling cosmological scalar+metric+dust dynamics. Earlier vacuum physical potential symbols are not explicitly assigned to metric time/spatial slots; do not label its sign an established error. Current calculation will give explicit metric conventions.",
+  "pr9604_scope": "Complete body and file metadata read; unrelated conditional mediator programming, no physical scalar equations adopted.",
+  "workflow_revision": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "workflow_reuse": "Current main unchanged. Required skill/claim/delivery texts read; existing same-revision grounding and source scopes retained.",
+  "empirical_admission": "Existing ACT/BOSS summaries remain exposed development context only; no new empirical history admitted.",
+  "open_prs": [
+    {
+      "baseRefName": "codex/observations-backward-selection-20261015",
+      "headRefName": "codex/observations-backward-growth-20261015",
+      "headRefOid": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+      "number": 9605,
+      "title": "[physics-loop] growth/lensing inverse: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T14:09:42Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-compensated-reservoir-preparation-20261015",
+      "headRefName": "physics-loop/toe-shared-mediator-programming-20261015",
+      "headRefOid": "60d0ac6642802cdbdea27c6c2c49d0825cba48cd",
+      "number": 9604,
+      "title": "[physics-loop] shared-mediator-programming: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T13:51:21Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-discrepancy-20261015",
+      "headRefName": "codex/observations-backward-selection-20261015",
+      "headRefOid": "e2873beca6af9954be49c4a9bbe8d98f05c9e69b",
+      "number": 9603,
+      "title": "[physics-loop] cosmological inverse: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T12:27:00Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-clock-memory-resources-20261015",
+      "headRefName": "physics-loop/toe-compensated-reservoir-preparation-20261015",
+      "headRefOid": "3e647b40c1f554205aa63d97fe0b5c9bf97a9917",
+      "number": 9602,
+      "title": "[physics-loop] compensated-reservoir-preparation: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T12:12:21Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+      "headRefName": "physics-loop/toe-local-clock-memory-resources-20261015",
+      "headRefOid": "93ac27f053e952e811bc07a7130bbdc44af8e2c8",
+      "number": 9601,
+      "title": "[physics-loop] local-clock-memory-resources: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T11:24:15Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-receiver-20261015",
+      "headRefName": "codex/observations-backward-discrepancy-20261015",
+      "headRefOid": "5a73333518a13640c6a99cbcb01c31342c519fd3",
+      "number": 9600,
+      "title": "[physics-loop] error-direction inference: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T11:05:02Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-installed-clock-reset-20261015",
+      "headRefName": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+      "headRefOid": "94390940f270a7a3db8ca832206ab6076e21025b",
+      "number": 9599,
+      "title": "[physics-loop] finite-reservoir-clock-preparation: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T10:20:07Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-static-historical-reader-20261015",
+      "headRefName": "physics-loop/toe-installed-clock-reset-20261015",
+      "headRefOid": "294d3e762232aeec754e94b0b2da5b011f682b44",
+      "number": 9598,
+      "title": "[physics-loop] installed-clock reset: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T10:07:37Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-channels-20261015",
+      "headRefName": "codex/observations-backward-receiver-20261015",
+      "headRefOid": "18c1fe25210d3a19a8f77530937ae7af124084f0",
+      "number": 9597,
+      "title": "[physics-loop] receiver-reference: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T09:35:02Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-driven-readers-20261015",
+      "headRefName": "physics-loop/toe-static-historical-reader-20261015",
+      "headRefOid": "88b08187750d0ffa795f166c1d94cd2245b048c9",
+      "number": 9596,
+      "title": "[physics-loop] static historical Pauli reader: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T09:25:12Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-clock-windows-20261015",
+      "headRefName": "physics-loop/toe-local-driven-readers-20261015",
+      "headRefOid": "9054ebdc341b7fb593e38dab3880eddcd20354f7",
+      "number": 9595,
+      "title": "[physics-loop] toe-local-driven-readers: bounded_theorem / conditional-support coherent readers",
+      "updatedAt": "2026-10-15T08:49:25Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-calibration-20261015",
+      "headRefName": "codex/observations-backward-channels-20261015",
+      "headRefOid": "e143a32663ad58483efa73050d9344a700d91508",
+      "number": 9594,
+      "title": "[physics-loop] integer channel calibration: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T08:09:53Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-clock-word-20261015",
+      "headRefName": "physics-loop/toe-local-clock-windows-20261015",
+      "headRefOid": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+      "number": 9593,
+      "title": "[physics-loop] toe-local-clock-windows: bounded_theorem / conditional-support finite windows",
+      "updatedAt": "2026-10-15T07:42:54Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-physical-20261015",
+      "headRefName": "codex/observations-backward-calibration-20261015",
+      "headRefOid": "f2fdc425b4a18341c95a076e58fec2d56ebc3cfa",
+      "number": 9592,
+      "title": "[physics-loop] phase-history quotient: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:20:09Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-accelerated-20261015",
+      "headRefName": "codex/observations-backward-physical-20261015",
+      "headRefOid": "917e147109e58c5bf8b5d4a9d546077d20cfe41c",
+      "number": 9591,
+      "title": "[physics-loop] observations-backward: conditional mass and curvature bounds for coherent counts",
+      "updatedAt": "2026-10-15T05:23:16Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-entangling-clock-cell-20261015",
+      "headRefName": "physics-loop/toe-local-clock-word-20261015",
+      "headRefOid": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+      "number": 9590,
+      "title": "[physics-loop] toe-local-clock-word: bounded_theorem / conditional-support ordered maps",
+      "updatedAt": "2026-10-15T05:00:57Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-energy-20261015",
+      "headRefName": "codex/observations-backward-accelerated-20261015",
+      "headRefOid": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+      "number": 9589,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support accelerated coherent counts",
+      "updatedAt": "2026-10-15T04:25:32Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-local-pauli-clock-cell-20261015",
+      "headRefName": "physics-loop/toe-local-entangling-clock-cell-20261015",
+      "headRefOid": "0393ca788f8bf87f9201e3f3dab911da9de162e7",
+      "number": 9588,
+      "title": "[physics-loop] toe-local-entangling-clock: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:56:28Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-energy-preparation-readiness-20261015",
+      "headRefName": "physics-loop/toe-local-pauli-clock-cell-20261015",
+      "headRefOid": "53be395f790a96a42f2d58c448f7a95b193580d7",
+      "number": 9587,
+      "title": "[physics-loop] toe-local-pauli-clock: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:56:26Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-history-20261015",
+      "headRefName": "codex/observations-backward-energy-20261015",
+      "headRefOid": "ff4a63b6f0407d40ab925ac4bc83011546886217",
+      "number": 9586,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support count-derived energy",
+      "updatedAt": "2026-10-15T03:14:39Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-two-reader-pointer-20261015",
+      "headRefName": "physics-loop/toe-energy-preparation-readiness-20261015",
+      "headRefOid": "f6ad0ea049d121fa698fd1adaf9f28913d22d819",
+      "number": 9585,
+      "title": "[physics-loop] toe-energy-readiness: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:56:24Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-installed-background-preparation-20261015",
+      "headRefName": "physics-loop/toe-two-reader-pointer-20261015",
+      "headRefOid": "5574383f4893f9412b1d58faf988cc0fd3ad8084",
+      "number": 9584,
+      "title": "[physics-loop] toe-two-reader-pointer: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:56:21Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-plasma-20261014",
+      "headRefName": "codex/observations-backward-history-20261015",
+      "headRefOid": "444fddc785280eb01898986edfc301bda9e8d9df",
+      "number": 9583,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support scalar history",
+      "updatedAt": "2026-10-15T02:07:10Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-dyadic-population-filter-20261014",
+      "headRefName": "physics-loop/toe-installed-background-preparation-20261015",
+      "headRefOid": "9373daa6b08f90d675045ef8bd79108c78545255",
+      "number": 9582,
+      "title": "[physics-loop] toe-installed-background: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:56:19Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-doppler-20261014",
+      "headRefName": "codex/observations-backward-plasma-20261014",
+      "headRefOid": "b8f83e344b3ba756cc31fe24f83b4dec71b199d0",
+      "number": 9581,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support initial-phase elimination",
+      "updatedAt": "2026-10-15T00:20:11Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-vacuum-preparation-certificate-20261014",
+      "headRefName": "physics-loop/toe-dyadic-population-filter-20261014",
+      "headRefOid": "7fa2d130984e52fdac74fc4523278e591bad667f",
+      "number": 9580,
+      "title": "[physics-loop] toe-dyadic-population: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:56:16Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-chain-preparation-scaling-20261014",
+      "headRefName": "physics-loop/toe-vacuum-preparation-certificate-20261014",
+      "headRefOid": "bf3ecf67438816b28634282361428ad096245ed1",
+      "number": 9579,
+      "title": "[physics-loop] toe-vacuum-preparation: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T06:56:13Z"
+    },
+    {
+      "baseRefName": "codex/observations-backward-24h-20261014",
+      "headRefName": "codex/observations-backward-doppler-20261014",
+      "headRefOid": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+      "number": 9578,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support count and clock bridge",
+      "updatedAt": "2026-10-14T23:26:04Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-preparation-moments-20261014",
+      "headRefName": "physics-loop/toe-chain-preparation-scaling-20261014",
+      "headRefOid": "6708b30b3ae16610f7a5061301c38adc356aff75",
+      "number": 9577,
+      "title": "[physics-loop] toe-chain-preparation-scaling: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-14T22:42:42Z"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/observations-backward-24h-20261014",
+      "headRefOid": "32d613c0f1361523f1d5dd85275fa945bc87cab0",
+      "number": 9576,
+      "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support orbit and radio inverse",
+      "updatedAt": "2026-10-14T22:34:10Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-multi-port-global-20261014",
+      "headRefName": "physics-loop/toe-preparation-moments-20261014",
+      "headRefOid": "84d28d386cf8d8dbbdd4506387ad18296161fe53",
+      "number": 9575,
+      "title": "[physics-loop] toe-preparation-moments: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-14T22:23:56Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-autonomous-record-window-20261014",
+      "headRefName": "physics-loop/toe-multi-port-global-20261014",
+      "headRefOid": "463fa381d9fe9403b6b6f3e3ce19505aa947edf2",
+      "number": 9574,
+      "title": "Add conditional simultaneous multi-port three-Pauli theorem",
+      "updatedAt": "2026-10-14T21:30:36Z"
+    },
+    {
+      "baseRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+      "headRefName": "physics-loop/toe-autonomous-record-window-20261014",
+      "headRefOid": "103cb68b6541e5f9419463d68ac41d311e3c404d",
+      "number": 9573,
+      "title": "Add conditional finite autonomous admission record window",
+      "updatedAt": "2026-10-14T21:13:29Z"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+      "headRefOid": "b50d97052f1b9dd3277eec137208b454fa609337",
+      "number": 9572,
+      "title": "Add balanced critical mediator sufficient resource corollary",
+      "updatedAt": "2026-10-14T20:51:01Z"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "claude/strain-hot-matter-twins-20261013",
+      "headRefOid": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "number": 9571,
+      "title": "exercise (gravity follow-up): hot-matter strain law, panel F, staggered twins \u2014 self-contained packet",
+      "updatedAt": "2026-10-14T20:46:58Z"
+    }
+  ],
+  "searches": [
+    {
+      "argv": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(rolling.*(perturb|slip)|((perturb|slip).*(rolling|momentum.constraint))|quasistatic|quasi.static)",
+        "origin/main",
+        "--",
+        "docs/*SCALAR*md"
+      ],
+      "returncode": 0,
+      "stdout": "origin/main:docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md:130:the full rolling-background perturbation system.\norigin/main:docs/EXPONENTIAL_SCALAR_CALIBRATED_GRAVITY_TURNING_BOUNDED_THEOREM_NOTE_2026-10-14.md:95:assertion that arbitrarily rapid fields remain inside the quasistatic regime.\norigin/main:docs/EXPONENTIAL_SCALAR_CALIBRATION_BRANCH_BOUNDED_THEOREM_NOTE_2026-10-14.md:31:Assume an unscreened linear scalar with constant physical range lambda=1/mu, positive weight q and a single frozen background shared by calibration and science configurations. Take rigid density distributions, a weak quasistatic metric, pressure-negligible rest sources, and a linear torque readout. These are strong bridge premises, not consequences of the current environmental stationary family.\n"
+    },
+    {
+      "argv": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(scalar.*(momentum constraint|density contrast|free mode)|((dust|rolling|dynamical).*(inverse|reconstruct)))",
+        "origin/main",
+        "--",
+        "docs/*SCALAR*md"
+      ],
+      "returncode": 0,
+      "stdout": "origin/main:docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md:5:Primary runner: `scripts/exponential_scalar_dynamical_inverse_check.py`.\norigin/main:docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md:292:the [recovery archive](work_history/physics/revised-scalar-dynamical-inverse-20261014/README.txt).\norigin/main:docs/EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md:27:the recovered source `rolling_local_response/covariance_inverse_v1/independent_v1/sources/OBSERVABLE_DERIVATION_v2.md`. Here I ask what even an ideal complete\norigin/main:docs/EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md:73:the recovered source `rolling_local_response/covariance_inverse_v1/independent_v1/sources/KINETIC_DERIVATION_v3.md`. Choose a regular event of the supplied\n"
+    }
+  ]
+}

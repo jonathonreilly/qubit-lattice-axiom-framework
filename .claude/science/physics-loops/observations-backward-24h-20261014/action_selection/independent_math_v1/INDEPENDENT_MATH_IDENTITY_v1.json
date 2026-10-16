@@ -1,0 +1,76 @@
+{
+  "frozen_at": "2026-10-15T11:33:41.578011+00:00",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/INDEPENDENT_MATH_v1.md",
+    "sha256": "aa6f275dd043529fc824a00b0ebdbb190abf610a6ddfb9fc1e4ecad81edaa21a",
+    "bytes": 19457
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/SUPPLIED_ACTION_NOTE_v1.md",
+      "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000",
+      "bytes": 11646
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/SUPPLIED_ACTION_SOURCE_FREEZE_v1.json",
+      "sha256": "eb8e3527655381c7eebfa886a856f621289875cbae1b0d5cce324ea7faa424c5",
+      "bytes": 695
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/PRECHECK_v1.md",
+      "sha256": "8838cf6e29c77e7804b93c61637ce4d75ba3949b50ddd3794b42923352b29141",
+      "bytes": 13872
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "sha256": "0d803dd26cd322041365f15f77c4c41415816044f2df87d468f7bf18fd035caa",
+      "bytes": 582
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/independent_reconstruction_controls_v1.py",
+      "sha256": "c043596f9cf7c76c7b67eaf2745ee246c2c1950a3b247c52a6fafb1fabb63979",
+      "bytes": 11789
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CONTROL_SOURCE_FREEZE_v1.json",
+      "sha256": "c038cd94faaa93876af21be5609f737e5ec71d472cfa6a83582afbf9cd5735cd",
+      "bytes": 501
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CONTROL_RESULTS_v1.json",
+      "sha256": "c860bf5331c7f03f5d317a9b7ec41d54c4a57c5bed01ffbb8125efb12b48f0bf",
+      "bytes": 11028
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CONTROL_STDERR_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CONTROL_EXECUTION_v1.json",
+      "sha256": "ea24d37b71e92a0d1b49c8cbd4019c0d2d9fdeb6587211b170792fa14731971f",
+      "bytes": 1438
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/INDEPENDENT_MATH_v1.md",
+      "sha256": "aa6f275dd043529fc824a00b0ebdbb190abf610a6ddfb9fc1e4ecad81edaa21a",
+      "bytes": 19457
+    }
+  ],
+  "full_supplied_action_read": {
+    "lines": 241,
+    "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000"
+  },
+  "checks": {
+    "total": 42,
+    "exact": 39,
+    "floating": 3,
+    "failed": 0
+  },
+  "root_working_note_or_new_code_opened": false,
+  "parent_message_exposure": "Research target, open-interval consequence and author case9 conditioning summary; no source/result file read",
+  "observations_opened": false,
+  "network_used": false,
+  "formal_audit": false,
+  "writes_outside_assigned_directory": false
+}

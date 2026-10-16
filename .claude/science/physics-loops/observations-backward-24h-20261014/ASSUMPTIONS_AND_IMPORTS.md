@@ -96,3 +96,47 @@ The finite sampled tone and arbitrary additive discrepancy are a declared candid
 ## Conditional direction model disposition
 
 Unknown radial law and scale cancel from the proved ratios under conditional uniform error direction. That direction law is a new supplied and challenged premise, not retired physics. A constant tone location, actual cadence, ideal ADC enclosure and conditioning on training remain explicit. A direction-dependent radius need not give zero mean: the canonical note proves a bounded-radius nonzero-mean witness, so c*u_f is a signal/location center rather than necessarily E[y]. The observations are the same exposed first600records per band. Neither expected FGAIN settings nor fitted residuals calibrate physical noise. Scalar action, state, absolute scales and environment remain open.
+
+## M12: cosmological reconstruction
+
+The action convention, finite-field domain, conformal universal matter coupling, homogeneous physical FLRW metric and conserved physical fluid are explicit. Continuous calibrated H,F,rho,p, curvature and derivatives are hypothetical input functions, not acquired observations. Nonzero Fdot is the inverse chart domain; D>0 is candidate-specific, not universal scalar-tensor health. With exact whole-interval kinetic equality and the full candidate equations, transverse coordinates vanish; equality at two fitted epochs does not establish this. Background q_rec differs from geometric q_geom when transverse velocities are nonzero. A supplied matter solution is still needed for complete S_m membership.
+
+The coupled branch supplies two potential basis functions. Inverting their coefficients calibrates parameters conditional on the inputs and action class; it does not derive a fundamental scale. Relative histories leave absolute Fref and Hv²/Q0 free. Tensor propagation constrains local endpoints under adiabatic, source/detector and electromagnetic calibration premises, not automatically homogeneous cosmological F. Published distance summaries are development-exposed and cannot supply required functions or a joint likelihood. No physical assumption is retired by treating a desired input map as a selector.
+
+### Growth/lensing inverse — 2026-10-15
+
+The single-pole scalar response, light-limit r=q used in synthetic perturbations, candidate beta/q/F chart, minimally coupled pressureless matter and shared physical mode calibration are explicit premises. The exact continuity metric term is retained. Candidate geometry is derived from the supplied action, not selected by observations. Three supplied backgrounds and two normalized modes each are synthetic development/calibration tests; later three epochs are fixed synthetic tests. Root eliminates the initial density offset from the inverse without selecting it, but cannot count this as elimination of arbitrary scalar initial preparation. Every absolute F/Fc/rho0/Q0 common rescaling remains possible. A calibrated tensor ratio can break a shape ambiguity only if its endpoint and propagation supplier exists.
+
+## M14 premise refinement
+
+Candidate canonical Einstein scalar, universal conformal dust, flat rolling background and linear perturbation theory remain supplied. The revised radial candidate is a particular conditional family; neither its action nor observed realization is derived. Registered scale-reference, kinetic-isotropy and realized-state primitives have unchanged narrow roles as recorded in growth_bridge/PRIMITIVE_IDENTITY_REUSE_v1.json; no registration/status is changed. The new momentum route retains arbitrary scalar perturbation preparation and removes the light/quasistatic closure from the inverse. Measured rank, ideal same-mode/cross-correlation histories, background/velocity/lensing calibration and valid differential information remain inputs. For the initial smaller statistical input set an unequal-time cross derivative replaces any hidden common-transfer assumption; the later five-row construction below eliminates that extra input using a larger collection. No actual E_G summary is promoted to that full input.
+
+## M14 assumption movement
+
+The inverse no longer needs the M13 quasistatic response, an imposed scalar homogeneous initial state, or a common deterministic transfer. Its five-row covariance construction also eliminates the separate mixed time-leg derivative, using a larger set of same-time auto/cross powers and total derivatives. These are mathematical input eliminations, not derivations of the realized state. Supplied premises remain a canonical scalar, universal conformal pressureless matter, smooth flat expanding background, linearity, a radial background when applying the revised family, calibrated physical modes/clocks/powers and derivative errors, and observed rank. The candidate geometry/potential and absolute environment/gravity bridge remain conditional. Current primitive identity check: `dynamical_response/PRIMITIVE_IDENTITY_REUSE_v1.json`; no registry change or new framework grant.
+
+## M15 — projected scalar correlations
+
+Derived conditionally: radial Hessian map, fixed-separation light-cone derivative, potential elimination without boundary selection, full-sky ell0/1 cancellation and weak error functional. Supplied: field law, flat calibrated H/chi, Born geometry, scalar flow, smooth homogeneous/isotropic signal correlations, separated noise. No initial covariance is needed for the implication; synthetic ensembles are explicit examples only. Actual source/velocity windows, kernel uncertainty, action, potential, state/history, scales and environment remain open. Severe synthetic conditioning prevents a practical precision claim.
+
+## M16 measurement assumptions under challenge
+
+Retain the supplied M14 scalar local law, flat Jordan geometry and scalar peculiar-velocity identification. Homogeneity/isotropy and smooth correlation derivatives are statistical conditions, not derived cosmic initial data. Root is eliminating a potential boundary value, the shear ell0/1 representative and the continuous equal-time diagonal from a necessary test. Finite sampling introduces explicitly conditional known densities relative to dchi dOmega, field-independent catalogue positions, conditionally unbiased marks and zero conditional cross-noise products (or supplied subtraction). These conditions are not retired imports or observationally certified. Arbitrary masks, density-biased tracers, intrinsic alignments, true-distance/redshift calibration, cosmic variance and action/scale/environment selection remain open. A bounded random-wave covariance is an existence witness only.
+
+## M16 checked assumption accounting
+
+The continuous equal-epoch diagonal and potential-boundary/angular representative choices are eliminated for the necessary finite-pair expectation test. The construction does not choose a physical initial covariance. Supplied sampling premises are sufficient conditions, not derived properties of galaxies: known positive density on the entire pulled-back support, absolute first-moment integrability, correct conditional mark response and conditional noise products. General selected pairs require their joint intensity and selected-mark relation; the marginal intensity is insufficient. No finite variance or confidence threshold follows from unbiasedness. Core action/state/scale/environment and actual measurement identification remain imports.
+
+## M18 supplier reduction
+
+# M18 assumption movement
+
+Personally rechecked from the complete conditional action: the physical-frame scalar equation, sign S_z>=0 on z>=1, lambda>0, static curvature decomposition, and power-conjugation identity. Independent derivation and correspondence remain separately attributed.
+
+Eliminated for the alternative necessary ceiling: direct numerical input of Delta_h N/N (or a standalone second clock-rate derivative), and arbitrary choice of the conjugating exponent. Constant coordinate-time normalization cancels. This does not derive a physical clock calibration, choose initial/ambient data, determine a mass, or select an action.
+
+Still supplied: complete action and allowed parameters, staticity of all fields, positive C3 lapse/metric and regular C2 fields on a smooth bounded domain, ellipticity, complete boundary z<=zB>=1, spatial curvature and lapse-gradient/range envelopes, actual measurement coverage/error and independently calibrated areal radius. The spherical readout still contains tau'' and center limits R3(0)=-6b2. Finite function samples alone do not certify those suppliers. All complete boundary components are required; an exterior annulus does not measure an interior.
+
+Synthetic geometry is openly chosen to test mathematics. The rapidly oscillating family solves prescribed-metric scalar BVPs only; no material/Einstein realization is implied. The separate manufactured sign-class fixture has a prescribed nonnegative source, explicitly incompatible at its center with the positive-Hv candidate source. Neither construction is an observation, fit, held-out test, initial-state derivation or new primitive.
+
+No new calibration or empirical holdout was opened. Earlier observed products remain development-exposed; unopened campaign products remain unopened. Conventional product-rule/elliptic comparison tools are mathematical tools with stated positivity/domain hypotheses, not novel physical laws.

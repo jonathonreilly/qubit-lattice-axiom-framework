@@ -1,0 +1,137 @@
+{
+  "at": "2026-10-15T13:19:09.876938+00:00",
+  "scope": "Pre-exposure ODE derivation; post-exposure independent six-case implementation and full source/data correspondence. Conditional reduced perturbations only.",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/FORWARD_REVIEW_v1.md",
+      "bytes": 9292,
+      "sha256": "f0cfd9e33c8550e8a841ce30c77093fb4eb2ebc8a6592cef6f98d4995a7b90c2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/PRECHECK_v1.md",
+      "bytes": 3078,
+      "sha256": "48c4c99515b7b7f5d5d3bb5e9b663824580fed0dbfa7b63d8e622599391fad33"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/PRECHECK_FREEZE_v1.json",
+      "bytes": 490,
+      "sha256": "3e86e6b08e37b4349f24208654432ffae3fc2f91b0d9c06773bfe67a90531b78"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/AUTHOR_INPUTS_v1.json",
+      "bytes": 2968,
+      "sha256": "1a0dae26ffd3f743508296e79389e225e1460245ee5629f0dd82d2d42b534055"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/IMPLEMENTATION_FREEZE_v1.json",
+      "bytes": 487,
+      "sha256": "a70aa364f72715c972637a3519ce46a18771038a830054ccecade4e88e64de51"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/independent_forward_v1.py",
+      "bytes": 6136,
+      "sha256": "4a229edc2ce9d0f4f14fc0b6a4dd28bbb29ea46e185c6c33a35295a4e546509d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/independent_forward_v2.py",
+      "bytes": 6188,
+      "sha256": "a78f476a76ea4d306692810757dcaafa9577bd41faccb1d35a7250f889e4abe9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/INDEPENDENT_RUN_v1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/INDEPENDENT_RUN_v1.stderr",
+      "bytes": 2066,
+      "sha256": "a67ea6d97f5556c02ca3ac174ed871414235481fd0d3ef4547a8f8834fc32d71"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/INDEPENDENT_RUN_v2.stdout",
+      "bytes": 2209,
+      "sha256": "44ccd14455c748fdc33115366858b64edc1e8b07cff52f70df00129c298d919d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/INDEPENDENT_RUN_v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/SERIALIZATION_FAILURE_v1.json",
+      "bytes": 625,
+      "sha256": "671f00dd577dcd678d93b74281c03042bce4f7a0cde282768a8452c9c40b41c0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/INDEPENDENT_FORWARD_RESULTS_v2.json",
+      "bytes": 34199,
+      "sha256": "f2dff01ecb2ab04cfaec2f092a48b55e52f9aecad22966b79743dd3df47eccfc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/forward_correspondence_v1.py",
+      "bytes": 4532,
+      "sha256": "8b581b81d053d4a5ceab7f50bcb617d5356b5be3d504edcf38fdcf8a07ea5715"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/FORWARD_CORRESPONDENCE_RESULTS_v1.json",
+      "bytes": 2079,
+      "sha256": "6ad4d09d67bcd1cacb94d3f3b11dfd6a7f5a6d3f3d03473d54bb55f4196a5331"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/AUTHOR_SERIALIZATION_DELTA_v1.patch",
+      "bytes": 817,
+      "sha256": "4bfdd7d3cf1077eb18f49e9055cc3957ca8ec415333feca87c4d60748e09fa94"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/REUSED_BACKGROUND_SOURCE.py",
+      "bytes": 20416,
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/CANDIDATE_DOMAIN_CHECK_v1.json",
+      "bytes": 1248,
+      "sha256": "83c3572b3a9b34addd94c532860c2914bd91d0d8e5d4722a13408eca229a040c"
+    }
+  ],
+  "author_snapshots": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_PROTOCOL_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/author_v2/FORWARD_PROTOCOL_v1.json",
+      "bytes": 1689,
+      "sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/forward_controls_v1.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/author_v2/forward_controls_v1.py",
+      "bytes": 10408,
+      "sha256": "ff691cf553b9f1c56f0ad757de5e832e68669a9c25d3f05b98c0b1aaa6f4c563"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/forward_controls_v2.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/author_v2/forward_controls_v2.py",
+      "bytes": 10475,
+      "sha256": "f72a91a02850a149bd0d002aadac6647039838cbb1c85e6b8b26a551fddad8fa"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/author_v2/FORWARD_RESULTS_v1.json",
+      "bytes": 1816,
+      "sha256": "f5836e1fc200c16d948219560fa6e4117962358259ac59555fb8a94062080e6c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/FORWARD_RESULTS_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/growth_bridge/independent_forward_v1/author_v2/FORWARD_RESULTS_v2.json",
+      "bytes": 49388,
+      "sha256": "40d81c2633ea1c304dde2200edb6a066889c26ef3ed628118c61446130dcf130"
+    }
+  ],
+  "original_serialization_failures_preserved": true,
+  "scientific_discrepancy_found_in_present_six_cases": false,
+  "scope_findings": [
+    "Continuity test is absolute in normalized delta despite relative tolerance key",
+    "Later loop lacks explicit candidate-specific domain gates; all current returned candidates pass those gates at saved epochs",
+    "No exact full-action perturbation or empirical validation"
+  ],
+  "formal_audit": false,
+  "independent_empirical_tests": 0
+}

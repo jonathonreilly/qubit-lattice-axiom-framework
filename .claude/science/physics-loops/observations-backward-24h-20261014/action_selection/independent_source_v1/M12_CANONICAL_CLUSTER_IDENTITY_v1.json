@@ -1,0 +1,306 @@
+{
+  "schema": "m12-canonical-source-and-cluster-opening-review-v1",
+  "completed_at_utc": "2026-10-15T11:50:55.252337+00:00",
+  "reviewer": "/root/launch_check",
+  "verdict": "OPEN",
+  "verdict_scope": "PR-opening judgment only; no audit outcome, retained grade, mathematical certification or integrated-main validation",
+  "verdict_word_count": 320,
+  "final_note_sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+  "current_main_brief": {
+    "at_utc": "2026-10-15T11:43:48.408132+00:00",
+    "provenance": "Parent /root direct collaboration message: verified using git show origin/main:docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md. Reviewer did not run Git.",
+    "origin_main_commit": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "attested_campaign_sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+    "reviewer_local_campaign_sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+    "final_note_sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+    "refresh_receipt_sha256": "3a3fc083721ea0892a6d2f0f95ab05199f1d3d379f8365c678bbbabe13d1bf1f"
+  },
+  "checks_passed": 61,
+  "checks_failed": 0,
+  "science_executions": 0,
+  "new_external_source_acquisitions": 0,
+  "read_scope": "Complete canonical note and all final deltas; complete three prior action-scale/density/dynamical notes; full M1-M11 local PR bodies/registry and M8-M11 review records; complete current brief; complete primary wrapper/protocol/final short output and receipts; helper imports/structure only; saved check metadata and case summaries, not all trajectory arrays. Earlier six-paper source read scope is reused exactly.",
+  "identities": [
+    {
+      "path": "m12_canonical_cluster_v1/ADDITIONAL_SOURCE_IDENTITIES_v1.json",
+      "bytes": 917,
+      "sha256": "007010d73dfd42f43bcf3b0ccb47b78212e2efe9795e1c940561b241e351f085"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/CURRENT_MAIN_BRIEF_PROVENANCE_v1.json",
+      "bytes": 696,
+      "sha256": "15d571e97b2d76fc451ee534ee0babc3f998351408386a0d999dbe64467ab4e0"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/FINAL_COMPARISONS_v1.json",
+      "bytes": 23961,
+      "sha256": "9d5fc7be450bf7fd48d7bca5db1bacac97ae74e6c9000b156113e0c4d16debcc"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/FINAL_EXECUTION_IDENTITIES_v1.json",
+      "bytes": 2553,
+      "sha256": "a5fe922d5ef33050c4a71ae0c440de0fe9f4bf8f639c85409e2f46254f838e9f"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/FINAL_NOTE_DIFF_v1.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/FIRST_READ_CANONICAL_EXACT_v1.md",
+      "bytes": 20678,
+      "sha256": "e4025969133e49394328cf628dc2797d041cd643ba7785953f5bc495fbdef53a"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/FIRST_TO_FINAL_NOTE_DIFF_v1.diff",
+      "bytes": 3078,
+      "sha256": "be5dc5364ea8022e3c1ad5810bf7749504d29583f90bdefd64f5c1a24635290e"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/INITIAL_SNAPSHOT_RECEIPT_v1.json",
+      "bytes": 13085,
+      "sha256": "716731df8a1b833181bcea62321843fe9f4dd0c15337fc17f7e68dae16c6a73f"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/NOTE_READ_CHRONOLOGY_v1.json",
+      "bytes": 1256,
+      "sha256": "cfa520e0bf6e2e74652074130d2969505df889d62ca7b2761b2bdc635e476695"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/additional_sources/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "bytes": 3148,
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/additional_sources/scripts/scalar_cosmological_inverse.py",
+      "bytes": 20416,
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/final_execution/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_EXECUTION_v3.json",
+      "bytes": 2764,
+      "sha256": "aded934333f5ad9094a12a69933c3c4e28797304c6275be000254e3c28084fb4"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/final_execution/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_SOURCE_FREEZE_v3.json",
+      "bytes": 658,
+      "sha256": "b9d14f8030832bfca46945c6e4c50525a2cc5251f449e8692eb1e0711967377e"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/final_execution/logs/runner-cache/scalar_cosmological_inverse_check.txt",
+      "bytes": 2359,
+      "sha256": "c7ce3b03682676886b3ccdf3c587492809f6ebc3726c6cccc3122a13796173bd"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/final_execution/outputs/scalar_cosmological_inverse/RESULTS_v1.json",
+      "bytes": 409307,
+      "sha256": "e8a551d346094e7333bbb7ed9ece8b662836b743fd2ba6613b45f082b2875105"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/final_execution/outputs/scalar_cosmological_inverse/SUMMARY_v1.json",
+      "bytes": 1496,
+      "sha256": "5d2935fdc7fb62dfbcf42889ddeff6d870c7255828fd95bd785992b72f41872b"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/final_execution/scripts/scalar_cosmological_inverse.py",
+      "bytes": 20416,
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/HANDOFF.md",
+      "bytes": 52413,
+      "sha256": "f346ce017ac4cbc3ffbd89cc18178b184b5879910c4eb59d7391de3836fdb4cf"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/REVIEW_HISTORY.md",
+      "bytes": 24561,
+      "sha256": "ae095e08202167de79ce00bcbfb497959a66e839b7238e3dd4f29d253b7fd950"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/action_selection/CANONICAL_EXECUTION_v2.json",
+      "bytes": 2763,
+      "sha256": "b6f6fd5120512f97c352e74c86f03623255f14aceb57d462afa7dc88fa5177b0"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/action_selection/CANONICAL_RESULTS_v2.json",
+      "bytes": 408896,
+      "sha256": "1eed4a595430b053f0061741ab20e0dda0663810f577aca351d76725a9bbd8d3"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/action_selection/CANONICAL_SOURCE_FREEZE_v2.json",
+      "bytes": 658,
+      "sha256": "63dc520dcb9b5b5c6c582ab1fcb746fecd3657aba4bf03eb492362527580c885"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/action_selection/CANONICAL_SUMMARY_v2.json",
+      "bytes": 1496,
+      "sha256": "f86d980f97c3dd4e17604afbb5a2781bfa56b509823749e9ac5381e6d0d9d26c"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/calibration_error/REVIEW_RECORD_v1.md",
+      "bytes": 6948,
+      "sha256": "4a1dc26147f0cf54ef2d60ce02ec600463d0fcfe2dd6181be408cbe18050f2bd"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/calibration_supplier/REVIEW_RECORD_v1.md",
+      "bytes": 5076,
+      "sha256": "50042e3dd1659f5ed2ec6906c03b700042d1f7c678ea93be5765d83d23ecaf2b"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/channel_quotient/REVIEW_RECORD_v1.md",
+      "bytes": 7835,
+      "sha256": "c033e23237f4e6e3a8d7f23363623c9f38eb70f302aceb8fb042b59f2ecc3596"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/pack/receiver_reference/REVIEW_RECORD_v1.md",
+      "bytes": 11383,
+      "sha256": "9fc805c35eee8764d598d980dc193053192491f2b7e3b9678e5923bea372cb5a"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo/docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 23722,
+      "sha256": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo/docs/EXPONENTIAL_SCALAR_DENSITY_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 20118,
+      "sha256": "40f112537627dd19ea0090a673f355f0d122c52844853798287f55e5b671e3fb"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo/docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 18501,
+      "sha256": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20906,
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo/docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "bytes": 9827,
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo/logs/runner-cache/scalar_cosmological_inverse_check.txt",
+      "bytes": 2359,
+      "sha256": "e2a6fe70c628002758225cc160ca471486110e14b8df70d33771ec28fcfe3785"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo/scripts/scalar_cosmological_inverse_check.py",
+      "bytes": 3087,
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo_final/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20906,
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/repo_first_read_e402/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20679,
+      "sha256": "c7d132096fd2c4f84cbfd484e2453054d266f6e4a870828b7caa04c4af20369c"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/ACCELERATED_PR_BODY_v1.md",
+      "bytes": 4224,
+      "sha256": "c5621ddfa2ddad26a90186348dc8fbe71741c71f1779f960266f7d7f5e21111b"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/DOPPLER_PR_BODY_v1.md",
+      "bytes": 4517,
+      "sha256": "f4eeece6fe07eb8e8e92887505b1bb5f6570f5bc6a1d4d7d4877da82110c68bb"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/ENERGY_PR_BODY_v2.md",
+      "bytes": 6828,
+      "sha256": "d59d87a9f344daf6f9c5fccce0cfce3c7f28a23344c7d32a968e885aa6e79e29"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/HISTORY_PR_BODY_v1.md",
+      "bytes": 6991,
+      "sha256": "5d54d7eb4bd22dfd73e17ea080703a606100f25786eadd9eee0b36463778de6f"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/M10_PR_BODY.md",
+      "bytes": 4811,
+      "sha256": "098b39cf0fa08fbfc88ace6f8278518d165e06ce277ba54ba2914ce89720d673"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/M11_POSTFREEZE_REPO_REFRESH_v1.json",
+      "bytes": 110202,
+      "sha256": "3a3fc083721ea0892a6d2f0f95ab05199f1d3d379f8365c678bbbabe13d1bf1f"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/M11_PR_BODY_v1.md",
+      "bytes": 3855,
+      "sha256": "704cbf5be375af3066815e3a70646c072066db4ebb1980e2c00b8757cff0524a"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/M7_PR_BODY_v1.md",
+      "bytes": 1715,
+      "sha256": "b2e7318aaf48ae80fb2e1ae7e21dfb5fd5eb2c22d956cf0dbdfc615929c732e0"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/M8_PR_BODY_v1.md",
+      "bytes": 2955,
+      "sha256": "12a4546c1886a1b830c5373039b7ae0e4068b4070f1a262bb0401445a1068913"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/M9_PR_BODY_v1.md",
+      "bytes": 4774,
+      "sha256": "ea423c63daa0c8dcf7d36e7dbdd58969e0cef909c988a73a83af0838b7e2ebc1"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/PHASE_PR_BODY_v1.md",
+      "bytes": 5260,
+      "sha256": "be8eedd682121c294c0622f7fdfe6a4170a6dcdcf553ecf23e62e9f446939ee5"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/PRS.json",
+      "bytes": 11388,
+      "sha256": "2788de7f3b383cbb539841f1a79fdf35e1dd0e4bf0cc1634793d27002240c719"
+    },
+    {
+      "path": "m12_canonical_cluster_v1/runtime/PR_BODY_M1.md",
+      "bytes": 4010,
+      "sha256": "873f7374c09a26ab74b3d8da45a996187cd10392b746632b067bab2f6d3857f6"
+    },
+    {
+      "path": "M12_CLUSTER_CAP_VERDICT_v1.md",
+      "bytes": 2412,
+      "sha256": "d072bee2fad81757d47397225adda9e435b4dde20f38af20245f244561c85696"
+    },
+    {
+      "path": "M12_CANONICAL_CLUSTER_REVIEW_v1.md",
+      "bytes": 8800,
+      "sha256": "1fa91a6f32e486e0fb229c1b6bbebe4d86e00bf19a1188937f6460dec6f6757d"
+    },
+    {
+      "path": "FINAL_RECEIPT_v1.json",
+      "bytes": 10615,
+      "sha256": "a4bca338c54ce76ae00fc7060eb548152ca40753477f72ec44a2f31c4a720895"
+    },
+    {
+      "path": "SOURCE_ACQUISITION_v1.json",
+      "bytes": 10571,
+      "sha256": "34ac84932906f33a270203da67487a211c85994c9d7175625847fdc9cca4ba8a"
+    },
+    {
+      "path": "INDEPENDENT_ADMISSION_FREEZE_v1.json",
+      "bytes": 6478,
+      "sha256": "7ce4081bd8924a45ae21636f71ed5b7bbdb8e8e81bd0eccda8f098fb01dd6e99"
+    },
+    {
+      "path": "INDEPENDENT_ADMISSION_v1.md",
+      "bytes": 8809,
+      "sha256": "4b9f0c6367dd95a2060ae0741768c0102aa1f7266d5adfd533f53a9929d6e9c8"
+    },
+    {
+      "path": "REPORT_v1.md",
+      "bytes": 6540,
+      "sha256": "4ad62277a3006254867bd8da501da9cb271dbb220b1b5a2f7d2df41a55ca0f95"
+    }
+  ],
+  "receipt_self_hash_excluded": true
+}

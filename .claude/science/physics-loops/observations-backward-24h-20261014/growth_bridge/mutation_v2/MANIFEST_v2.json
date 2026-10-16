@@ -1,0 +1,144 @@
+{
+  "source_sha256": "9c310f719998519c476aa2a28bc79860ff9b11ab59806288f452cf50336a1ae4",
+  "protocol_sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088",
+  "variants": [
+    {
+      "name": "metric_slip_sign",
+      "old": "-2*F*x*Psi-dr-x*df",
+      "new": "-2*F*x*Psi-dr+x*df",
+      "sha256": "611672eac1241d5a053b85883066c5ea49ac3cf965a0a21ba456af26f74050e0"
+    },
+    {
+      "name": "scalar_pole_mass",
+      "old": "q*dr/(x+mu)",
+      "new": "q*dr/(x+2*mu)",
+      "sha256": "60081d2a757ed1ddbc782903b22de537833accb57c9b9cd35b85eba33a9936d2"
+    },
+    {
+      "name": "coupling_chart",
+      "old": "return beta * (1 - 3*q) / (beta-q)",
+      "new": "return beta * (1 - 2*q) / (beta-q)",
+      "sha256": "c5dea7161652059ae1169d5de247f6f5629e5ee37f352f06f4d3c4cb79810e1f"
+    },
+    {
+      "name": "positive_q_gate",
+      "old": "if not 0 < value < s.Rational(1, 3):",
+      "new": "if not -1 < value < s.Rational(1, 3):",
+      "sha256": "8e53cdcaa3629f4ea5ac55823d4ad84b9d66760aa2842adc8013ad5e0005d9cb"
+    },
+    {
+      "name": "density_elimination_coefficient",
+      "old": "-t[1]*J[2], t[2]*J[1]",
+      "new": "-t[1]*J[2], 2*t[2]*J[1]",
+      "sha256": "da9b60fca1d7abafebe69f0959222916709c28005b4a56959f39a42962bbfbea"
+    },
+    {
+      "name": "lift_compatibility",
+      "old": "compatibility = s.factor(w-u*C)",
+      "new": "compatibility = s.factor(w+u*C)",
+      "sha256": "39aac3eb0c551dfefe7dda48ab95ce44a8763978ff4b98849a0c3853f409eecd"
+    },
+    {
+      "name": "tensor_orientation",
+      "old": "U = F_ratio*(1-3*qi)/(1-3*qj)",
+      "new": "U = (1/F_ratio)*(1-3*qi)/(1-3*qj)",
+      "sha256": "3e373ae64016ea7278f47b0bd21f72ffb953b749ad2d1bc6ba4c4c010caf45fa"
+    },
+    {
+      "name": "mobius_second_offset",
+      "old": "C2=(bb*z-v)/(bb*w-u)",
+      "new": "C2=(bb*z+v)/(bb*w-u)",
+      "sha256": "467924510ad61722c608d713212c9ab6160f5c21f76698dd584778b04dbdf679"
+    },
+    {
+      "name": "metric_kinetic_density",
+      "old": "3*B*s.exp(-3*N))",
+      "new": "2*B*s.exp(-3*N))",
+      "sha256": "9649cf654962b7acc11318788b411beb88f8f286a53cfc362e3196b8f1dc4655"
+    },
+    {
+      "name": "potential_rolling_coefficient",
+      "old": "5*Y*s.diff(Z, N)/2)",
+      "new": "4*Y*s.diff(Z, N)/2)",
+      "sha256": "5dd2dd21de8febc924a34d457372cec960b83017cebf35bfbe00f5a56fe1fc84"
+    },
+    {
+      "name": "finite_pole_slope",
+      "old": "slope = x1*(1/r1-intercept)",
+      "new": "slope = -x1*(1/r1-intercept)",
+      "sha256": "91ac841277000b6e3d10ae46608778b2a105f81c5c2f0a2c498044d0424ae132"
+    },
+    {
+      "name": "dust_metric_continuity",
+      "old": "dp=(W-3*cphip*delta)/(1+3*cphi)",
+      "new": "dp=W",
+      "sha256": "e5f2eed20df508c450c95340b2b5d77318b0c9057996529278b00de07cd87b65"
+    },
+    {
+      "name": "potential_time_derivative",
+      "old": "cphip=cphi*(-1-bg['qp']/(1-bg['q'])-bg['Fp']/bg['F'])",
+      "new": "cphip=cphi*(-1+bg['qp']/(1-bg['q'])-bg['Fp']/bg['F'])",
+      "sha256": "14915811fceb5a6b41bc7026769822a50080a18fa013eac7ff177bcf1d38bec5"
+    },
+    {
+      "name": "Jordan_clock",
+      "old": "ndot=HE+b*v;H=ndot/A",
+      "new": "ndot=HE;H=ndot/A",
+      "sha256": "92b7948781ee4c9b631d4852089cba064c7188faed5256b7250b1d7ce9d6b7a2"
+    },
+    {
+      "name": "metric_primitive",
+      "old": "J=(I+3*(Phi-Phi0))/W0",
+      "new": "J=I/W0",
+      "sha256": "38556a9294a254b3e310c187a344b17218391fb6956c227a29d4e1fbef1c139a"
+    },
+    {
+      "name": "Euler_force_normalization",
+      "old": "bg['rho']*delta*(1+bg['q'])/(2*bg['F']*bg['H']**2)",
+      "new": "bg['rho']*delta*(1+bg['q'])/(4*bg['F']*bg['H']**2)",
+      "sha256": "7af015649a1e091cf253b62d04d187754c262e8bfbb79fe36363d76c1e4aed61"
+    },
+    {
+      "name": "observed_slip_normalization",
+      "old": "qobs=2*Y*aa**3*(P3+2+h)/(3*P)-1",
+      "new": "qobs=Y*aa**3*(P3+2+h)/(3*P)-1",
+      "sha256": "47972885a9eecc6d622669a4c7106f71faf5be4b8f8329a566ebd239ac163aad"
+    },
+    {
+      "name": "sampled_exact_boundary",
+      "old": "s.Rational(1,4)<beta<s.Rational(1,3)",
+      "new": "1/4<beta<1/3",
+      "sha256": "8c5d773229978981feeb0b9791ff285b698fdab5d568c1cfa4bd175007ebd18f"
+    },
+    {
+      "name": "sampled_pole_gate",
+      "old": "if not candidate_domain(rows,candidate):",
+      "new": "if False:",
+      "sha256": "8bf5cef68c39d9a55dfc2696b46ca561abb5157f9093577dc3711efc6a00d297"
+    },
+    {
+      "name": "sampled_density_gate",
+      "old": "0<q<beta and J+C>0 for q,J in values",
+      "new": "0<q<beta for q,J in values",
+      "sha256": "44540a351331d2c0730fc7c7d42e4133a4d8546ffae0116ec84fda4f84f93f8e"
+    },
+    {
+      "name": "later_finite_readout_gate",
+      "old": "if real_number(row['P'])<=0 or real_number(row['What'])<=0:",
+      "new": "if False:",
+      "sha256": "67196a44f94e2abd32bae67541bc36a9b23aa0ee15855476aab9efdbfe400e1c"
+    },
+    {
+      "name": "finite_residual_gate",
+      "old": "            real_number(residual)",
+      "new": "            pass",
+      "sha256": "3208c7462244e1b8a56ca2dfdce79de42399994db9e440c273f3e5a5ce84b73c"
+    },
+    {
+      "name": "finite_calibration_gate",
+      "old": "not all(mp.isfinite(v) for v in x.values())",
+      "new": "False",
+      "sha256": "0c26d3cb9915c570eb15bd9702ad390be66ec9305d036f214581dc20332c9623"
+    }
+  ]
+}

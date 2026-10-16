@@ -33,3 +33,24 @@ The original 2001 DSN 0159-Science PDF has SHA256 1161d5d7f50134cf3994c52674af4a
 ## M10 primary receiver/count reconstruction
 
 Moyer2000 section13.2.4 and13.3.1.2, TRK-2-18(2000), TRK-2-25(1996), the2001 RSR specification and Border/Paik2009 support separately scoped counter, band, NCO and complex-sign conventions. Exact originals, URLs and read ranges are in receiver_reference/independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json. The2009 experiment is later than the2002 data and does not certify software2632. Root checked the relevant Moyer text and visually inspected177C page10; the source reviewer had its own broader page scope. Historical implementation, LO phase fluctuations and actual noise remain open. These sources reconstruct measurement conventions; they do not derive the scalar theory.
+
+
+## Cosmological inverse primary-source bridge
+
+The six exact-version primary sources and their acquisition hashes are in action_selection/independent_source_v1/SOURCE_ACQUISITION_v1.json. Boisseau gr-qc/0001066v1 supplies established reconstruction context; Dalang–Lombriser1906.12333v2 and Dalang–Fleury–Lombriser2009.11827v3 distinguish local tensor endpoints from homogeneous cosmological coefficients. GW1708171710.05832v1 and1710.05835v1 use different GR inference and interval conventions; Cantiello1801.06080v2 uses a Cepheid-calibrated host SBF distance. These exposed summaries are route-development material, not a continuous F history or a new-theory likelihood. No raw GW/posterior or fresh independent empirical test was used. All actual paper read scopes, original source-acquisition setup failure and environmental/matter calibration limits are retained. Full downloaded papers stay local; version URLs and hashes accompany publication.
+
+### Growth/lensing source bridge — 2026-10-15
+
+Versioned primary sources 1210.0439v2, 2405.12795v2 and 2401.12971v2 were inspected for the observable convention, ACT/BOSS estimator and RSD/covariance supplier. The older P2 convention is twice the adopted ACT E_G-normalized P. Projected spectra at two effective redshifts do not supply this note's continuous coherent-mode P3 and integrals. Read scopes, exact downloaded-source identities and the bounded unsuccessful likelihood-release search remain recorded; the limited search is not an assertion that a release does not exist. No observational parameter value was fitted.
+
+## M14 primary-source scope
+
+Rondeau–Li1709.07087v1 §§IV–V supplies classical conformal-observable conventions; A_paper=A_campaign² and time-coordinate dictionaries are explicit. Assisted coupled quintessence1407.2156v1 §§II,VI is a constant-coupling comparator; its small-scale approximation is not imported. ACT2405.12795v2 and estimator2401.12971v2 supply projected-spectrum/velocity-bias context; no raw maps, likelihood or continuous covariance collection admitted. Complete independent source report, version/page/hash inventories and root read scopes are in dynamical_response. The exact rolling inverse and equal-time covariance algebra are derived here, not attributed to an unread source or claimed globally novel.
+
+## M15 source bridge
+
+Taylor astro-ph/0111605v1 (Born inversion), Heavens astro-ph/0304151v2 (windows/noise), and Wang1808.07543v1 (radial pair geometry/calibration) were checked in the exact scopes recorded in projected_covariance/independent_observation_v1/SOURCE_RECORD_v1.json. Root read the complete independent derivation and comparisons. No Poisson/growth forecast, fitted calibration, observed covariance history or raw catalogue is imported. Full third-party texts and renders remain local with identities in the evidence map.
+
+## M16 primary-source boundary
+
+The frozen independent_observation_v1 report distinguishes established Born/spin inversion, finite weighted ellipticity/velocity estimators, lensing selection bias and distance/redshift velocity mapping. Schneider astro-ph/0206182v1, Schmidt0904.4703v3, Wang2108.08036v1 and Davis/Scrimgeour1405.0105v2 were read in recorded scopes; three earlier Taylor/Heavens/Wang sources were reused at exact archived identities. Gaussian covariance closures, source distributions, masks and calibrated distances in those papers are not derived premises here. Standard importance weighting is used as a conditional theorem. The general pair-intensity argument is independently derived and source-scoped, not evidence that a real survey supplies the required marked process.

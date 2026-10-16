@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-15T16:40:50.519867+00:00",
+  "author": "/root",
+  "ownership": "matching direct-author cooperative lock refreshed16:29Z; no conflicting campaign research processes",
+  "deadline_unchanged": "2026-10-15T21:48:44Z",
+  "files": [
+    {
+      "path": "docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "d2edccd39d714b645ac5c2772aca000b21ef66b68843c2c0c943f14ae5fe7c34",
+      "bytes": 14948
+    },
+    {
+      "path": "scripts/scalar_projected_covariance_check.py",
+      "sha256": "4259e61f17ce8d990621cbf0d73a10b988a06b08224f26ee8f0c062f19c92233",
+      "bytes": 4416
+    },
+    {
+      "path": "scripts/scalar_projected_geometry.py",
+      "sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+      "bytes": 6331
+    },
+    {
+      "path": "scripts/scalar_projected_forward.py",
+      "sha256": "6cb64d4e44635877e13e75062e1239691da3c9dbb9ec246c2f85688b1216db03",
+      "bytes": 6642
+    },
+    {
+      "path": "scripts/scalar_projected_weak.py",
+      "sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+      "bytes": 3261
+    },
+    {
+      "path": "logs/runner-cache/scalar_projected_covariance_check.txt",
+      "sha256": "a7ec9d7aa4b8fd6e21b236643e096a76264a67da3e6a8c38bce9a1dcf303f742",
+      "bytes": 3408
+    },
+    {
+      "path": "outputs/scalar_projected_covariance/RESULTS_v1.json",
+      "sha256": "a2b79dffb2397c0b745c757165b682fd06aab7f96d375eb97a4628bbdc024f34",
+      "bytes": 50915
+    },
+    {
+      "path": "outputs/scalar_projected_covariance/SUMMARY_v1.json",
+      "sha256": "f327e0dff2fee82750618948d397c804e0efac1a582bdb7572a1f7ec4f8b5266",
+      "bytes": 2539
+    }
+  ],
+  "progress": "Root canonical projected-covariance construction:29 controls pass,0 fail,5.6546s/180; eight isolated mathematical mutations rejected by failed checks,0 survivors/exceptions. Exact ordered elimination, changing-distance correction, full-sky ell0/1 cancellation and weak kernels personally derived. Independent geometry23+13, weak25 and measurement43 controls with complete reports read. Real boundary qualification and matrix-norm label repaired; root/independent Laurent failures and serialization failure preserved. Guarded fixed synthetic protocol; all admitted scientific results unchanged. Severe condition numbers up to7.9e12 remain; no empirical test or finite-survey supplier. Final source confirmations and coherent-opening judgment pending.",
+  "next_action": "Finish focused final-source confirmations and opening judgment; publish one coherent projected covariance milestone after graph/cache/packet checks. Then test finite-window observability of weak constraints without inserting an initial covariance or background selector."
+}

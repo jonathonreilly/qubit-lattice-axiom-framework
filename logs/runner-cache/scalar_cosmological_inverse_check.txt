@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/scalar_cosmological_inverse_check.py
+runner_sha256: 810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e
+input_fingerprint_sha256: fcfb406f0648de3048e873c98c85718d8fa95894b9490f11722b40b16fa80eba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.21
+status: ok
+----- stdout -----
+per_element: checked: physical metric input combinations and candidate inverse domains
+per_site: checked and not executed: no spatial lattice or local screening solution inferred
+per_mode: checked: conditional tensor endpoint transport; transverse equations in the supplied action
+per_block: checked: fixed12 synthetic histories; algebraic input precision and original failed recovery distinguished
+lattice_wide: checked and not executed: no action selection from actual observations or realized-state principle
+{
+  "status": "conditional_synthetic_reconstruction",
+  "passed": 102,
+  "failed": 0,
+  "independent_empirical_tests": 0,
+  "physical_input_functions_acquired": false,
+  "interpretation": "Parameter reconstruction inside a supplied action class from exact-model synthetic readouts, not observed action or state selection.",
+  "actual_current_surface_status": "conditional-support",
+  "primary_sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+  "input_sha256": {
+    "docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": "01bb4997d3e032fbf2e934861a7bc3c13c6fb061316f1fcde0ab31e6b8c14a0c",
+    "scripts/scalar_cosmological_inverse.py": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/NO_GO_DISCIPLINE_CHECKLIST.md": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329"
+  },
+  "observed_action_selected": false,
+  "initial_state_principle_derived": false,
+  "absolute_gravity_calibrated": false,
+  "uncertainty_scope": "Synthetic readouts assembled at50 digits from a double-precision ODE. No high-precision trajectory, measured derivative accuracy or rigorous numerical enclosure is claimed.",
+  "original_failure": "Working v1 case9 nu recovery failed5e-7 threshold. Original91 controls (90 pass,1 fail) and all inputs retained. Precision reassembly is a separate diagnostic; thresholds and cases unchanged.",
+  "failed_checks": []
+}
+
+----- stderr -----
+

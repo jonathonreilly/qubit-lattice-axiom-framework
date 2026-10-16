@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-15T15:12:24.657947+00:00",
+  "corrected_record": "MUTATION_V2_INTERRUPTED.json describes the attempted interruption, not an actual stop. The run had completed before ps recheck; no process was killed.",
+  "disposition": "Entire v2 mutation run invalid as rejection evidence because sharp_ratio_error failed on unchanged baseline. Preserve all outputs without counting rejections.",
+  "original_baseline": {
+    "passed": 25,
+    "failed": 1,
+    "failure": "sharp_ratio_error",
+    "wrong_fixture_actual_q_error": "1/98",
+    "intended_q_error": "1/16"
+  },
+  "repair": "r1 sign changed from -6/7 to +6/7 to produce intended inverse matrix; no physical/error-bound formula or threshold changed."
+}

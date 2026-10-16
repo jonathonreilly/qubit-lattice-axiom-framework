@@ -61,3 +61,29 @@ The receiver route was checked using stored I/Q and conditional ADC preimages. T
 ## M10: coherent waveform feasibility and receiver reference
 
 Projection geometry gives an exact feasible set for a supplied discrepancy ball; cell geometry rejects the quantization-only constant-modulus class on all1200 exposed blocks. Documentary reconstruction supplies a conditional receiver-reference relation, not a new physical law. Independent local-search disagreement on Ka49112 blocks a global-estimator claim. The physical discrepancy/time supplier is still blocked-equivalent to the measurement-identification obligation unless new independent calibration information constrains it. Candidate next families are redundant receiver dynamics, calibrated noise/state-space models with falsifiable innovations, or a cross-domain action/scale discriminator; none is presumed true.
+
+## M12 family: physical FLRW function reconstruction
+
+| Family | Object | Mechanism | Terminal obligation | Strength versus target | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| Cosmological action membership | Calibrated Jordan expansion and tensor-coefficient histories | Metric/Bianchi inverse; candidate affine kinetic shape; two potential basis coefficients | Supply physically identified functions and uncertainties, then compare alternatives | weaker | candidate-complete for conditional mathematical result; physical inference blocked-local | Self-contained note,102 author controls and separately frozen math/numeric/source checks | Actual endpoint or complementary observation map, with error propagation |
+| Static local density response | Response and density on a stationary branch | First-order inverse with vacuum integration constant | Calibrated density/response environment and independent potential value | weaker | provisional prior result | Prior density-inverse note | New stationary data/environment supplier |
+| Receiver-based scalar residual | Calibrated phase and proper count contrasts | Instrument reference reconstruction and energy quotient | Physical discrepancy and scalar attribution | weaker | blocked-local | Prior11 campaign milestones | Track-specific independent transfer/error calibration |
+
+The new route uses an independently different physical channel and derives action membership along a curve, not a renamed receiver error bound. General scalar-tensor reconstruction is established literature; only the supplied-candidate specialization and precise gates are advanced here.
+
+### Growth/lensing inverse — 2026-10-15
+
+Completed one coherent chain: reconstruct slip from ideal Euler/Weyl quotients; invert a two-scale response pole; eliminate the dust offset with the metric-corrected density primitive; retain all finite-epoch shapes; characterize the exact interval second tuple; test tensor discrimination and full-background/Euler compatibility. Two manufactured reduced histories fail the latter test. Six conditional synthetic forward histories recover their generating parameters, independently checked. These do not validate a full perturbation solver or observation likelihood. Ordinary invalid-input and serialization failures were preserved and repaired, with unchanged tolerances.
+
+## M14 approach update
+
+Full variational/constraint formulation: completed conditional equations, Cdot=-3HC and full-wave momentum inverse; numerical dynamics use supplied radial action. Moment elimination: completed five-row equal-time lift with two nonlinear consistency tests and attainable positive covariance rank; no common transfer or separate time leg supplied. Background geometry formulation: relative F, normalized potential and specific two-epoch family tests; absolute scales and action selection still open. Matrix-error formulation: exact coefficient bounds with sharp equality examples; errors and observable denominators remain supplied. Measurement-operator formulation: reviewed primary estimator scopes, actual projected covariance supplier remains the strongest unresolved lemma. No arbitrary history or fitted selector is promoted.
+
+## Projected covariance route — 2026-10-15
+
+M15 family: differential elimination of the radial potential after the shell geometry is derived. New mechanism: radial projection changes with time; retain its commutator, then eliminate the undetermined potential derivative without a boundary condition. Fixed Euler-operator polynomial removes only the full-sky shear/velocity ell0/1 ambiguity. Mathematical support for a physical input bridge, not a supplied observational selector. Closest M14 result assumes potential covariances; this construction addresses its measurement-input residual. Other approach families remain unexcluded.
+
+## M16 completed conditional mechanism
+
+Unequal-time local elimination: the commutator produces bUR and a spatial compatibility relation without dividing by b or U. Angular quotient: a fixed seven-factor Euler operator kills the full-sky shear monopole/dipole nuisance and its one-leg time derivative. Weak measurement formulation: move every derivative onto a smooth compact weight, change to the true source-pair measure, then pull the first leg through Born/spin adjoints. Sampling formulation: an exactly normalized finite cross-pair plus distinct auto-pair statistic has zero ensemble mean under the admitted law and sampling assumptions. A bounded positive-covariance witness proves nonzero sensitivity, not a complete gravitational solution or practical precision. General selected pairs require positive known joint intensity and the correct conditional mark law; marginal weighting alone fails in a two-state counterexample. Remaining actual calibration/selection supplier is blocked-local, not theory-wide impossibility.

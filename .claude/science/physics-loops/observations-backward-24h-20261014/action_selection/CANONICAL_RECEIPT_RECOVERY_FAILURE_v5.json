@@ -1,0 +1,5 @@
+{
+  "failure": "Author misinterpreted load_cache third return as issue; it is body text",
+  "stage": "read-only receipt recovery, no new scientific execution or cache mutation",
+  "repair": "read actual API and use (path, header, body)"
+}

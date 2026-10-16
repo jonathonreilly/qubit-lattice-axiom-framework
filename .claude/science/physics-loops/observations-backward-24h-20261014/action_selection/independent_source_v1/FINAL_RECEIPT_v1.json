@@ -1,0 +1,285 @@
+{
+  "schema": "focused-source-input-admission-receipt-v1",
+  "completed_at_utc": "2026-10-15T11:29:19.450599+00:00",
+  "reviewer": "/root/launch_check",
+  "write_scope": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1",
+  "disposition": "No material source or input-admission overclaim found in frozen author note; conditional construction only; observed continuous F not admitted",
+  "formal_audit": false,
+  "candidate_math_or_numerical_verdict": null,
+  "independent_freeze_before_author_read": true,
+  "author": {
+    "read_after_independent_freeze": true,
+    "read_at_utc": "2026-10-15T11:27:25.747496+00:00",
+    "source_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/WORKING_v1.md",
+    "source_sha256": "bd8b22a0343fafad71a38028cefa005d16ffa46114e2eace64b66fb60dd25e2c",
+    "source_bytes": 12298,
+    "snapshot_path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/AUTHOR_WORKING_FROZEN_v1.md",
+    "independent_freeze_sha256": "7ce4081bd8924a45ae21636f71ed5b7bbdb8e8e81bd0eccda8f098fb01dd6e99"
+  },
+  "report_sha256": "4ad62277a3006254867bd8da501da9cb271dbb220b1b5a2f7d2df41a55ca0f95",
+  "identity_checks": {
+    "passed": 68,
+    "failed": 0
+  },
+  "scientific_runs": 0,
+  "raw_data_or_posterior_downloads": 0,
+  "sources": [
+    {
+      "key": "boisseau",
+      "version": "gr-qc/0001066v1",
+      "url": "https://arxiv.org/pdf/gr-qc/0001066v1",
+      "accessed_at_utc": "2026-10-15T11:20:17.105035+00:00",
+      "sha256": "11a0c92d8fb925a4f7c2a5308a6581206ff3572937bab42e047143fe889d896d",
+      "pages": 4
+    },
+    {
+      "key": "dalang_lombriser",
+      "version": "1906.12333v2",
+      "url": "https://arxiv.org/pdf/1906.12333v2",
+      "accessed_at_utc": "2026-10-15T11:20:17.091989+00:00",
+      "sha256": "0100c7c6fb953ab3eb76414c5b813845e04672d2926ea8a06a4afd1d88d39f20",
+      "pages": 43
+    },
+    {
+      "key": "dalang_fleury_lombriser",
+      "version": "2009.11827v3",
+      "url": "https://arxiv.org/pdf/2009.11827v3",
+      "accessed_at_utc": "2026-10-15T11:20:17.099822+00:00",
+      "sha256": "19f0a86f49b01987dc80d8b2acf27f19583e49e5091dc6bb75ccd7cfcd403dc9",
+      "pages": 18
+    },
+    {
+      "key": "cantiello",
+      "version": "1801.06080v2",
+      "url": "https://arxiv.org/pdf/1801.06080v2",
+      "accessed_at_utc": "2026-10-15T11:20:17.856721+00:00",
+      "sha256": "b2a9f624db5d8f63a3e3fc930f11577c964b3afd89ee40b8c9099547d03bc41a",
+      "pages": 10
+    },
+    {
+      "key": "gw170817_siren",
+      "version": "1710.05835v1",
+      "url": "https://arxiv.org/pdf/1710.05835v1",
+      "accessed_at_utc": "2026-10-15T11:20:18.158182+00:00",
+      "sha256": "092484465d79492675bdc69e7dbcc9ea1511cfb8b1e4eddf18dc78f9b31c92ed",
+      "pages": 26
+    },
+    {
+      "key": "gw170817_detection",
+      "version": "1710.05832v1",
+      "url": "https://arxiv.org/pdf/1710.05832v1",
+      "accessed_at_utc": "2026-10-15T11:20:18.223181+00:00",
+      "sha256": "0fcadae9d35e72c6c903ce6466e105e6ea84358397384a88471080acfbd2d024",
+      "pages": 18
+    }
+  ],
+  "identities": [
+    {
+      "path": "ACQUISITION_SETUP_FAILURE_v1.json",
+      "bytes": 227,
+      "sha256": "165257a260a28ee1f375951510760bef9eec8d23b0ff1e5b7f37db217935094f"
+    },
+    {
+      "path": "AUTHOR_READ_RECEIPT_v1.json",
+      "bytes": 756,
+      "sha256": "d5aca7af04f17037bb607d22c2bc6cffd59bbb54922df0b06cb7bc048f2fb70a"
+    },
+    {
+      "path": "AUTHOR_WORKING_FROZEN_v1.md",
+      "bytes": 12298,
+      "sha256": "bd8b22a0343fafad71a38028cefa005d16ffa46114e2eace64b66fb60dd25e2c"
+    },
+    {
+      "path": "FINAL_IDENTITY_CHECKS_v1.json",
+      "bytes": 16717,
+      "sha256": "c5c2906cd20d6a8f7643aa334adefddd80e56c26869f08ed84314a9633c87f38"
+    },
+    {
+      "path": "INDEPENDENT_ADMISSION_FREEZE_v1.json",
+      "bytes": 6478,
+      "sha256": "7ce4081bd8924a45ae21636f71ed5b7bbdb8e8e81bd0eccda8f098fb01dd6e99"
+    },
+    {
+      "path": "INDEPENDENT_ADMISSION_v1.md",
+      "bytes": 8809,
+      "sha256": "4b9f0c6367dd95a2060ae0741768c0102aa1f7266d5adfd533f53a9929d6e9c8"
+    },
+    {
+      "path": "PAGE_RENDER_IDENTITIES_v1.json",
+      "bytes": 4647,
+      "sha256": "ac1b3fb2ef8cfa642a9da4097316d58c29f3e389b65b83fcf22b1d8b38edacb6"
+    },
+    {
+      "path": "PRE_ACCESS_PLAN_v1.json",
+      "bytes": 1295,
+      "sha256": "2e77a6a33bbc297c7632f01ee23faa1e07b3391a87cfe55cc739e1f960b3c8c5"
+    },
+    {
+      "path": "REPORT_v1.md",
+      "bytes": 6540,
+      "sha256": "4ad62277a3006254867bd8da501da9cb271dbb220b1b5a2f7d2df41a55ca0f95"
+    },
+    {
+      "path": "SOURCE_ACQUISITION_v1.json",
+      "bytes": 10571,
+      "sha256": "34ac84932906f33a270203da67487a211c85994c9d7175625847fdc9cca4ba8a"
+    },
+    {
+      "path": "page_renders/boisseau_page_2.png",
+      "bytes": 275476,
+      "sha256": "30e2a1e57344f2e0276f57018b6b6124f231e771674ff9991d8ca1efea8ffde7"
+    },
+    {
+      "path": "page_renders/boisseau_page_4.png",
+      "bytes": 310970,
+      "sha256": "c5a7258b8e32c5202645a283729ea69d05b071f053a5b950d02760acfe8c7f38"
+    },
+    {
+      "path": "page_renders/cantiello_page_5.png",
+      "bytes": 350478,
+      "sha256": "34f4a55dba0992d53c4c78d48f8e0e7804fbdf18be657819ffe9af6b22797208"
+    },
+    {
+      "path": "page_renders/cantiello_page_7.png",
+      "bytes": 340570,
+      "sha256": "e19055902057a001bcfd55ab49c4612d33fc00860d3a505cfaf2a1952d8c1585"
+    },
+    {
+      "path": "page_renders/cantiello_page_8.png",
+      "bytes": 218955,
+      "sha256": "9ed39262339f31f95797c70f6b57f6a702663274c9e649822a932a34808ab62e"
+    },
+    {
+      "path": "page_renders/dalang_fleury_lombriser_page_10.png",
+      "bytes": 278987,
+      "sha256": "5fa16d21237e1fcf147911acbf0b77cb7a7fb3732820eacef62053fe87b55a02"
+    },
+    {
+      "path": "page_renders/dalang_lombriser_page_16.png",
+      "bytes": 174747,
+      "sha256": "3c9da4ea072dbf0bbbb466338fade091dea7c577cdc4b34b0b036376aff3e366"
+    },
+    {
+      "path": "page_renders/dalang_lombriser_page_30.png",
+      "bytes": 176179,
+      "sha256": "f634c4869b7379386154e9a48a39ff2c8396daa9432a30fccbc80c295f744211"
+    },
+    {
+      "path": "page_renders/gw170817_detection_page_4.png",
+      "bytes": 350357,
+      "sha256": "eae83b411ab62806bd5de6f2f5082efa641996d846353b31a15a5b0548b2f767"
+    },
+    {
+      "path": "page_renders/gw170817_siren_page_12.png",
+      "bytes": 237170,
+      "sha256": "abdead416307052e3eb751356b74ec239e6236f2c4e4b1679398cc6a2052bd87"
+    },
+    {
+      "path": "page_renders/gw170817_siren_page_7.png",
+      "bytes": 295313,
+      "sha256": "4e3177d73c488078df580e177a4323179b2aac977e4e58a030b8969d538e44a5"
+    },
+    {
+      "path": "page_renders/gw170817_siren_page_8.png",
+      "bytes": 269831,
+      "sha256": "c60ceb3f43ed45ec5135066e3916a3d645ba1e76f5b48fcc3abb51523f929042"
+    },
+    {
+      "path": "primary_sources/boisseau.pdf",
+      "bytes": 124111,
+      "sha256": "11a0c92d8fb925a4f7c2a5308a6581206ff3572937bab42e047143fe889d896d"
+    },
+    {
+      "path": "primary_sources/boisseau_abs.html",
+      "bytes": 42739,
+      "sha256": "a522ae966edf11d79019229c9030ec3652d8057d821053bfde9188520dbe0dc0"
+    },
+    {
+      "path": "primary_sources/boisseau_text.txt",
+      "bytes": 27700,
+      "sha256": "196f2e041b5475c45b028852422d1e8cd94ca50e09f2e14e43127549b337a12e"
+    },
+    {
+      "path": "primary_sources/cantiello.pdf",
+      "bytes": 392324,
+      "sha256": "b2a9f624db5d8f63a3e3fc930f11577c964b3afd89ee40b8c9099547d03bc41a"
+    },
+    {
+      "path": "primary_sources/cantiello_abs.html",
+      "bytes": 50401,
+      "sha256": "b920e0d3039774773d3ca3b20e74325081bc2d119e5d82e71a7054d4f88c8266"
+    },
+    {
+      "path": "primary_sources/cantiello_text.txt",
+      "bytes": 53417,
+      "sha256": "6fc7d52832126798d450ac9e7dc5acc3c81158a74bd51b952b358dec82a9c597"
+    },
+    {
+      "path": "primary_sources/dalang_fleury_lombriser.pdf",
+      "bytes": 7096132,
+      "sha256": "19f0a86f49b01987dc80d8b2acf27f19583e49e5091dc6bb75ccd7cfcd403dc9"
+    },
+    {
+      "path": "primary_sources/dalang_fleury_lombriser_abs.html",
+      "bytes": 44320,
+      "sha256": "5c1de6e07a8118419477b68111912fe5d3fd5815c22922d98c6ce1fcd35d5212"
+    },
+    {
+      "path": "primary_sources/dalang_fleury_lombriser_text.txt",
+      "bytes": 133954,
+      "sha256": "2d30e7a437f91f6e066fa7284491cc67acc2f17b27f16ed1d3cfaa01183da420"
+    },
+    {
+      "path": "primary_sources/dalang_lombriser.pdf",
+      "bytes": 642254,
+      "sha256": "0100c7c6fb953ab3eb76414c5b813845e04672d2926ea8a06a4afd1d88d39f20"
+    },
+    {
+      "path": "primary_sources/dalang_lombriser_abs.html",
+      "bytes": 45479,
+      "sha256": "d6b8605c1f37acc5f67235a8e51c1fadd59ff9aaa09ba12d7b4e597bda91781f"
+    },
+    {
+      "path": "primary_sources/dalang_lombriser_text.txt",
+      "bytes": 152572,
+      "sha256": "29822a9f1734835ab68a352993c2a55d7398651b65c5f15832955629994cbe3f"
+    },
+    {
+      "path": "primary_sources/gw170817_detection.pdf",
+      "bytes": 1599186,
+      "sha256": "0fcadae9d35e72c6c903ce6466e105e6ea84358397384a88471080acfbd2d024"
+    },
+    {
+      "path": "primary_sources/gw170817_detection_abs.html",
+      "bytes": 45041,
+      "sha256": "4973e95fe3c82b0604f90292c309dd4caaf05ea5ba51c637cf3b8524e02dee12"
+    },
+    {
+      "path": "primary_sources/gw170817_detection_text.txt",
+      "bytes": 113875,
+      "sha256": "f5527cdffda71484c6889d674ed9665a61b615ffb13de15cdc85169952f10cde"
+    },
+    {
+      "path": "primary_sources/gw170817_siren.pdf",
+      "bytes": 555789,
+      "sha256": "092484465d79492675bdc69e7dbcc9ea1511cfb8b1e4eddf18dc78f9b31c92ed"
+    },
+    {
+      "path": "primary_sources/gw170817_siren_abs.html",
+      "bytes": 269877,
+      "sha256": "40f684e824b3519b87be770e52e71e50a542ca62a1173bbd338310d7f2fcb24d"
+    },
+    {
+      "path": "primary_sources/gw170817_siren_text.txt",
+      "bytes": 115856,
+      "sha256": "2e7d7e8d67c98853f732cb26066b95e53938b613f55bba883b8680a2112df173"
+    }
+  ],
+  "receipt_self_hash_excluded": true,
+  "limits": [
+    "Source and input-admission scope only.",
+    "No universal screening no-go and no observed-action reconstruction.",
+    "No certification of candidate equations or implementation.",
+    "No source files outside this new review directory modified."
+  ]
+}

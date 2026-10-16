@@ -1,0 +1,114 @@
+{
+  "at": "2026-10-15T11:42:31.646334+00:00",
+  "scope": "Independent numerical source/results frozen before exposure, then complete canonical source correspondence. Final cache not included.",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/NUMERICAL_REVIEW_v1.md",
+      "bytes": 10815,
+      "sha256": "c3cfd208126aec9f1c8c27d7e02f663446ce5e58b9616ca69f1d1b2e782149f8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/PRECHECK_v1.md",
+      "bytes": 3963,
+      "sha256": "6c4c73f419ba07a696927a801ba3e28bcc316382ecb528b7cbc135beb6b93dae"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/independent_inverse_v1.py",
+      "bytes": 6198,
+      "sha256": "1efbecdf27dcdc429cdbb49ccad1293ea4f2b91c774da9945fe3f73b5267c612"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/PRECOMPUTE_FREEZE_v1.json",
+      "bytes": 1480,
+      "sha256": "785a1d366ae6381d3ad037ba1e712c882b266a5154009a234afc02da121d085a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/RESULT_FREEZE_v1.json",
+      "bytes": 2604,
+      "sha256": "aa7c370235f358517af191a02b3116b1b80538c1485cd993ba9881513efe4b5b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/INDEPENDENT_RESULTS_v1.json",
+      "bytes": 418729,
+      "sha256": "68f721bb4723936d666b43770c3b1477944fc6d71ba6a75855c1bcbcad3edf8a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/INDEPENDENT_SUMMARY_v1.json",
+      "bytes": 22021,
+      "sha256": "92da40dc0d477d785ccc3b15f7ce2380e56108c862de6466c917600c6d5db252"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/RUN_v1.stdout",
+      "bytes": 22021,
+      "sha256": "92da40dc0d477d785ccc3b15f7ce2380e56108c862de6466c917600c6d5db252"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/AUTHOR_RESULT_FREEZE_v1.json",
+      "bytes": 1236,
+      "sha256": "e851bc1ffc089a3968f8de31cf6a28dc72eda555172e75947ce3969265f55473"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/result_correspondence_v1.py",
+      "bytes": 3665,
+      "sha256": "a8b409222df374ad8c8a5d6032a76ee7b7f0c36bfaf325bbe2540fb1a29e42f3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/RESULT_CORRESPONDENCE_v1.json",
+      "bytes": 11192,
+      "sha256": "00ac14706933257481b318d74338d4219d00ca09847f390d2189ae2329d5586c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/CANONICAL_SOURCE_INPUTS_v1.json",
+      "bytes": 1826,
+      "sha256": "780c2e3aa236bc26f7e2ee063e0426a4d3e14f69bd26a0088f733222ed772117"
+    }
+  ],
+  "canonical_source": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_cosmological_inverse.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/canonical_source_v1/scripts/scalar_cosmological_inverse.py",
+      "bytes": 19988,
+      "sha256": "435d7b03a8038a8bf2eddef1122e7123953d046071df2136f23f359412f27bd7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_cosmological_inverse_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/canonical_source_v1/scripts/scalar_cosmological_inverse_check.py",
+      "bytes": 3087,
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/canonical_source_v1/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 20678,
+      "sha256": "e4025969133e49394328cf628dc2797d041cd643ba7785953f5bc495fbdef53a"
+    }
+  ],
+  "author_result_snapshots": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/author_results_v1/RESULTS_v1.json",
+      "bytes": 221299,
+      "sha256": "b8a3721a16dae081bf16aa342451aa85d3dc5bfa0b0fe7408031f131a884f822"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/PRECISION_DIAGNOSIS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/author_results_v1/PRECISION_DIAGNOSIS_v1.json",
+      "bytes": 60539,
+      "sha256": "cf4f5f7dd99b9a079244c203aacbb5370a1da7be53a47e7afc2948a4b4b1d515"
+    }
+  ],
+  "preserved_independent_failures": {
+    "case": 9,
+    "float64_relative_nu_error": 4.804360541399433e-06,
+    "lifted_50_relative_nu_error": 6.083588374789427e-06,
+    "threshold": 5e-07
+  },
+  "open_prose_finding": "Note maximum cancellation ratio is case 9; global twelve-case maximum is case 11 and 3.5043496545e6.",
+  "formal_audit": false,
+  "independent_empirical_tests": 0
+}

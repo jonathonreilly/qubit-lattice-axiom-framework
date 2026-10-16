@@ -1,0 +1,8 @@
+{
+  "old_note_sha256": "c8405a33a79a85f8c2d5cee84366899714ecdb214558e99d5411ea71beb1339c",
+  "new_note_sha256": "14c63ad63813ce535e27dd6b06a4e994d191dd55ccce9e1b8e8adbdd3ec71ca9",
+  "change": "Make partial_1 derivative notation explicit in local field-law premise; no source mathematics or execution changed",
+  "original_elapsed_sec": 5.221273899078369,
+  "original_exit_code": 0,
+  "original_controls": 89
+}

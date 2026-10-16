@@ -1,0 +1,6 @@
+{
+  "failure": "TypeError: can only concatenate list (not tuple) to list",
+  "stage": "local freeze assembly before any cache execution",
+  "repair": "convert declared_input_paths tuple to list",
+  "scientific_execution_started": false
+}

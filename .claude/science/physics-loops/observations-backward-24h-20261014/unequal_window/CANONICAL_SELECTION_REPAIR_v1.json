@@ -1,0 +1,7 @@
+{
+  "finding": "Independent observation source comparison: general pair-intensity identity must explicitly retain known positive intensity on kernel support and absolute first-moment integrability, including the field-conditional alternative",
+  "before_sha256": "14c63ad63813ce535e27dd6b06a4e994d191dd55ccce9e1b8e8adbdd3ec71ca9",
+  "after_sha256": "ca32dbcd31b0776e45393b3e9c363ef0b66ec6aaf6b0f000f03e2710c048364f",
+  "math_or_helper_change": false,
+  "old_source_output_cache": "canonical_v2"
+}

@@ -71,3 +71,42 @@ M10 source packaging is finishing; its independent science checks are complete. 
 3. Keep all current raw products development-exposed; later16:56/16:57 products remain unopened. A new empirical test needs a frozen model and declared input protocol before access.
 
 Do not generate another variant of the receiver geometry solely to refine spectral digits. This campaign remains active until its original deadline; all three older campaigns remain stopped.
+
+## Queue after M12 cosmological inverse
+
+1. Derive a complementary physical F constraint from jointly measured lensing, growth and tensor propagation, keeping source, force-range and endpoint-environment assumptions explicit. Exact target: determine which new observable breaks the current input-map degeneracy; do not prescribe F(t).
+2. Derive quantitative consequences of approximate kinetic equality for transverse motion and potential contributions using full field equations, rather than replacing exact interval equality with a fit. Need an observation-error supplier and a stability statement; no near-equality claim yet.
+3. Test whether candidate action symmetries or radiative consistency eliminate potential/scale freedom without importing a UV selector. Preserve distinct action classes and any no-go scope; no symmetry is presumed realized.
+4. Reopen receiver calibration only if a track-specific measured transfer/noise supplier adds physical information. More fitted spectral variants alone do not reopen it.
+
+### Growth/lensing next obligations — 2026-10-15
+
+Priority: derive response dynamics while retaining the homogeneous scalar mode and a quantitative approximation residual. Check the unresolved prior conformal potential-sign question from the action before adopting its formulas. Next connect the derived histories to a windowed lensing/RSD forward likelihood, rather than differentiating two survey summary points. Distinguish calibration data, exposed model development and genuine independent tests. Potential/scale selection remains a separate terminal obligation; do not introduce an assumed selector and call it derived.
+
+## Ranked next opportunities after M14
+
+1. Physical observation operator for joint Weyl/velocity covariance: derive how redshift/time and scale windows act on the exact equal-time identity, and what can be constrained without supplying an unprojected history. This attacks the new theorem's highest-impact open supplier; first decisive check is an explicit forward projection retaining coefficient variation and known noise terms.
+2. Full-history compatibility from inferred coefficients: determine which remaining scalar/matter constraints test an apparent covariance fit without choosing a preparation. Local rank alone is insufficient. First check is a constraint-compatible reconstruction or counterexample with fixed observable histories.
+3. Independent normalization/environment bridge: connect a reconstructed relative F to a measured same-environment gravitational coefficient, retaining source, range and endpoint assumptions. Avoid a supplied numerical Newton constant being treated as a derivation.
+
+Priorities reflect new evidence value, not PR counts. Do not repeat receiver or scalar algebra variants that supply no new discriminator. Fixed deadline and final packaging time remain unchanged.
+
+## Re-ranked after M15
+
+Highest next target: derive a finite measured correlation functional from actual source/velocity window operators, challenging the equal-epoch diagonal and calibration rather than interpolating them. First discriminator: determine whether an unequal-time compatibility identity admits smooth two-source weights and a finite unbiased pair estimator. Preserve the prior conditional projected constraint if this fails. Secondary target: measured-gravity normalization/environment, avoiding another synthetic inverse relabel. Action/state/scale selectors remain unsolved.
+
+## Re-ranked after M16
+
+1. Establish an actual calibrated pair-response or a different observable that eliminates the measured-gravity/environment input. The next block must add new physical information, a checkable supplier or a genuinely distinct cross-domain constraint; do not generate further annihilator variants solely for more algebra.
+2. Derive what operational measurements can fix the absolute normalization left free by the cosmological shape inverses, keeping source mass, same-environment force range and matter clocks explicit. First decisive check: characterize a physical observable combination or a symmetry of all admitted observables, without inserting measured G as a derived number.
+3. Action/potential and initial-state selection remain open. Challenge a concrete symmetry or finite-history candidate against the earlier field equations; no chosen selector counts as a derivation.
+
+Actual observed Cassini products stay development-exposed. M16 uses no observation arrays. An empirical test still requires a frozen candidate/input protocol, selection/window model and uncertainty. Deadline and packaging time remain unchanged.
+
+## Ranked after the lapse-derivative extension
+
+1. Seek a calibrated weak geometric certificate or actual metric/boundary envelope that supplies a useful environment constraint; do not manufacture derivative errors from sparse samples. First discriminator: whether the actual available measurement operator bounds the positive Green functional, with explicit admissible geometry.
+2. Test a full coupled material/metric environment or cross-domain normalization relation. Candidate action/state/scales and complete boundary remain open. A prescribed synthetic lapse alone is insufficient.
+3. Action/potential selection remains a distinct priority: challenge a concrete symmetry/consistency mechanism without installing a fitted selector. Do not produce further conjugation variants solely for result counts.
+
+Original packaging21:33:44Z and deadline21:48:44Z unchanged. Earlier development exposure and unopened products are preserved.

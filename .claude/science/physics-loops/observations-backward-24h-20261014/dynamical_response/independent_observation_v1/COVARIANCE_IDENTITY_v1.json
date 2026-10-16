@@ -1,0 +1,105 @@
+{
+  "at_utc": "2026-10-15T14:57:51.253557+00:00",
+  "reviewer": "/root/launch_check",
+  "scope": "Focused mathematical covariance/supplier check from the frozen exact momentum and Euler equations, followed by complete affected source comparison. Not a formal audit or scientific-authoring replacement.",
+  "outcome": "Positive conditional result: equal-time auto/cross powers and their total first derivatives admit an identifiable five-row lift, with attainable free-state rank and essential nonlinear lift compatibility. Five sufficient, not minimal.",
+  "source": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/COVARIANCE_LIFT_v1.md",
+    "sha256": "3af34348187408767f12cd604f969f3b22475a4aa493622b8c66843c2ce28e18",
+    "bytes": 3742
+  },
+  "source_unchanged_since_read": true,
+  "independent_derivation_frozen_before_new_author_source_read": true,
+  "independent_controls": {
+    "matched": 39,
+    "failed": 0
+  },
+  "affected_comparison_controls": {
+    "matched": 16,
+    "failed": 0
+  },
+  "rank_witness": "Positive-definite covariance epsilon^2(tt^T+delta I_3); author row determinant(1+delta)epsilon^10 for the five explicit preparations.",
+  "required_conditions": [
+    "Same physical epoch/background and fixed comoving-mode derivatives",
+    "Real ensemble covariances and derivative/expectation regularity",
+    "Known common h,J with J>0",
+    "Five-row full rank and exact monomial compatibility",
+    "rho>0,b!=0 for the stated free-state realization",
+    "R>0 and y!=0,x/y>0 for rolling q reconstruction"
+  ],
+  "limitations": [
+    "No empirical admission of the required covariance histories.",
+    "No minimum mode-count claim.",
+    "No full-history or nonlinear-realization result.",
+    "No author full-operator/ODE recheck.",
+    "No formal audit or canonical packaging verdict."
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_PRECHECK_v1.md",
+      "sha256": "f97ab61b4543e7fb42a44a6ecd454e4d4557787406dc6b8a592e78c7ac61cd35",
+      "bytes": 938
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_DERIVATION_v1.md",
+      "sha256": "f2150ce1e33898c3790b73ce4ccdf8a07ce79029745750289c2065d38b19157b",
+      "bytes": 7633
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_CONTROL_v1.py",
+      "sha256": "20beccb9b08ba43302bdf56f7a197fd453e0e29fc924036f98f96caa30639236",
+      "bytes": 4251
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_CONTROL_RESULTS_v1.json",
+      "sha256": "415d2d48a831c324e03cfd49018c2911b26b7c633674b78d798eade5016ee882",
+      "bytes": 7690
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_FREEZE_v1.json",
+      "sha256": "fc15a3b9481705981dedb11d0f7f7861bab81c4b6217ed86ece39896f7d132fa",
+      "bytes": 2856
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_AUTHOR_SOURCE_SEEN_v1.json",
+      "sha256": "275da3a9635a652096a9c15046856431d5d58b2bc7618d57eb91db0ecefe2064",
+      "bytes": 723
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_CHECK_v1.py",
+      "sha256": "0a60951f8dc13294eb5eb72babbdf680e752c9c2adb563cba7718350f9b305b6",
+      "bytes": 2410
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_RESULTS_v1.json",
+      "sha256": "b22fe657b67fdf752c346493b441bf25d2fba2d899bc21d0c6b57ac1507175fa",
+      "bytes": 2161
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/COVARIANCE_COMPARISON_v1.md",
+      "sha256": "a9b68d3ee6bd86d86fa3278f814469a7f5bfbf56404c43e9d6425281b0e7ab8e",
+      "bytes": 4282
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/COVARIANCE_LIFT_v1.md",
+      "sha256": "3af34348187408767f12cd604f969f3b22475a4aa493622b8c66843c2ce28e18",
+      "bytes": 3742
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/WORKING_v1.md",
+      "sha256": "637fdbfbead8d4566bf0e99e046a26cae28123b73f88f60d4e768ee5584cdff1",
+      "bytes": 5859
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1/author_source_seen_v1/STATISTICAL_INPUT_v1.md",
+      "sha256": "79604dea5cd68201d2216a7f085f64c496daec0821bace3da6fe2d1c85312c86",
+      "bytes": 2417
+    }
+  ],
+  "artifact_count": 12,
+  "author_ODE_runs": 0,
+  "new_external_source_acquisitions": 0,
+  "git_mutations": 0,
+  "author_source_edits": 0,
+  "allowed_write_root": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/independent_observation_v1"
+}

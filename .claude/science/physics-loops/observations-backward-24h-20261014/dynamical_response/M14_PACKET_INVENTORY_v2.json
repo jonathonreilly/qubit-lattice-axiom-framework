@@ -1,0 +1,472 @@
+{
+  "scope": "Read-only exact evidence inventory; no audit execution",
+  "scientific_entries": {
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "path": "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "roles": [
+        "source"
+      ],
+      "effective_status": null,
+      "accepted_premise_type": null,
+      "full_content_sha256": "592df22cbc7421da970842b42157129ba65e8f0c71d6928ca90fa189474702ce",
+      "full_phrase_groups": [
+        {
+          "phrase": "are not",
+          "occurrence_group_id": "0b3137c043585f2e",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "f9ec74d84c433bbf86273cbbcb60e2d8cb17f72880720ec541eb4ba3def9c167",
+          "evidence_locator": "transformations and matrix perturbation bounds are not claimed as new. The"
+        },
+        {
+          "phrase": "are not",
+          "occurrence_group_id": "836554145f29e905",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "065d153a2729d49de6541f0212c4ba78d95d52bf47baa5c3c61e7296c9d2e2c6",
+          "evidence_locator": "among 24 variants, with no survivor or selector failure. These are not 24"
+        },
+        {
+          "phrase": "are not",
+          "occurrence_group_id": "afe76f3e7527cdc8",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "7291397b5f59953f3886f91b557e3cb7c4cd211a0a6da90ef387dc9abd629f1f",
+          "evidence_locator": "epochs per background. Numerical samples are not rigorous integration enclosures."
+        },
+        {
+          "phrase": "are not",
+          "occurrence_group_id": "ba7abdacf1487f57",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "ed9b35b57a072afd9a4a4d55eb20b6610aa7924c83d9add68b050763d7eddf45",
+          "evidence_locator": "Individual Fourier ratios are not survey spectrum ratios. Write"
+        },
+        {
+          "phrase": "axiom",
+          "occurrence_group_id": "4f5971784c296534",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "cd418a7dc4d571ca0bf6615af9140b3ac2e414025dd5f7d300caed6bffebd757",
+          "evidence_locator": "measured histories or probability covariances. No registry or axiom is amended."
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "06b379705190eafd",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "54bd16790e52f0943553dc7d39d57f5d82ff09d437c82802d977dfcb3d62c303",
+          "evidence_locator": "The action, actual background, physical measurements and absolute normalization"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "0e73b459b1d5a9d7",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "55b95185ad38af138b05ae9a12342c5d8c1c2c2cd142c320341a7210b8031a6f",
+          "evidence_locator": "It computes exact symbolic geometry, constraint/background identities, rank and"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "104047fa213b3658",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "235295fde183dde24cd7516a8ae30a0f3183e156a88f26a4739e5ab64ca5f5ce",
+          "evidence_locator": "The identities are checked directly from the Einstein background, with"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "1ac31495c4d3aa81",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "660e002b0b326b8fb5364f7e37021e39dea9dcbc572e19b460a15891778eccf8",
+          "evidence_locator": "four modes per background and seven saved epochs. Initial X and Z are both"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "20e584ebc2471b08",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "39da4cd8054c8093d4f711989b3df7f380a848baf13c1755688f771c07bc53bc",
+          "evidence_locator": "mass term Hv^2 U_perpperp/K_perp. This is linear decoupling about that background,"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "22ad4a4d7f6e4369",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "338e5589b9435578cb410b5af485e487f61bf5b2b0a5002b1df6633cdde170d2",
+          "evidence_locator": "claim_type_reason: A conditional inverse with explicit action, background, rank and physical measurement premises"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "272678d2ed992359",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "11d342683934413f051288a7ed62c18f321e192001d232610663d3a2e1d24c3b",
+          "evidence_locator": "inputs to the inverse. It leaves action selection, the actual background and"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "3c3e5b6db74782ed",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "ee4e74bca232cd1a19a6ec6f014bcb5523a04871bdd3c1ff7dbc2a476963d0de",
+          "evidence_locator": "or stability inferred from potential curvature alone. A nonradial background"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "471e6ebe9d53cf89",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "116731671bdb30383adae568e13fef37afae3de481cfa25234e6f57b31df756b",
+          "evidence_locator": "dust, and the homogeneous background is spatially flat. Write b=d ln A/dchi,"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "5cf69f29556baf53",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "2e039a8c9835afbba5affe7d7b45a660eb5f5dc1dd67817a9f529e7bbae4b79f",
+          "evidence_locator": "identification of F remain open. These necessary background identities,"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "5ff2e7b641e0a4ac",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "245f3ba9a69e69190d7ff6ce86ea2c63ac171199e8a8c86ed88f5a1f5bdbec23",
+          "evidence_locator": "propagation and relative background identities, is proved in section 5."
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "6c254a16415b8ea8",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "06dbfd8123e40f0e0a4108b8f35d468549a5dd4d32d32659c959cc2185404c03",
+          "evidence_locator": "## 5. Coefficient error enclosure and whole-background obligations"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "70941c708a8c30c5",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "8555fbfabffa533690d5364dde778481bb74a9c1406c623ad05cd00a91c7437e",
+          "evidence_locator": "The homogeneous radial background xi=zeta=0 is an invariant truncation."
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "72d7c0eda8914994",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "df0281029087dd09c5811babe1a497f134dc0b38682d96f2baf30756220a8bd0",
+          "evidence_locator": "different background/source premises. Their complete notes were read. The old"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "8d2c9731b80cdf79",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "794891653dbbe986eeb36a08251f6af5c71c5b784265136c20fea3bc522e9942",
+          "evidence_locator": "Background variation gives"
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "afe76f3e7527cdc8",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "c68baf31d6db9b5f3821f1abc9f9f37024c79fb3290cca7a1d3dd9ee09b58042",
+          "evidence_locator": "epochs per background. Numerical samples are not rigorous integration enclosures."
+        },
+        {
+          "phrase": "background",
+          "occurrence_group_id": "fe9f03d937d1ff58",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "df6c6ec5a25fbe7ec5bf7fe2f4dfc3e0df65eae844468f58b955b266f0d7a430",
+          "evidence_locator": "canonical-scalar/conformal-dust action on a flat expanding background, identify"
+        },
+        {
+          "phrase": "canonical",
+          "occurrence_group_id": "727bc9330d0bb6a0",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "845d6549befc7b31874825dcc756a2f5687e1e4b4f939d697411d391e8c33f55",
+          "evidence_locator": "The canonical equations remain regular. A smooth limiting inference through a"
+        },
+        {
+          "phrase": "canonical",
+          "occurrence_group_id": "82db30e777b9b393",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "0e26d78cee534a2aecc62bc9d2a172bd1361802f96663f3905a3967ba2da3b2f",
+          "evidence_locator": "conditional_surface_status: Exact momentum identification and equal-time covariance lift under a supplied canonical scalar and conformal dust action"
+        },
+        {
+          "phrase": "canonical",
+          "occurrence_group_id": "d4fe8e72e55982fa",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "6a1cece7c0a119e7ae019ce3d841e76e92d4cd683079e0e6b27c6514399edc6c",
+          "evidence_locator": "reconstruction does not rely on r=q. Independent canonical-state/log-aE Radau"
+        },
+        {
+          "phrase": "canonical",
+          "occurrence_group_id": "e09bda2306d69f35",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "cc9697734e871a185b2f76295f42c4b470fdfc652393722768d90b0f5663834b",
+          "evidence_locator": "canonical-source confirmation and delivery checks. Their individual scopes and"
+        },
+        {
+          "phrase": "canonical",
+          "occurrence_group_id": "e2c4c2bb69a9dc7e",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "600f117d89276eff91f71b1609b7a108526006ed0c376acd4622692efa4a4bac",
+          "evidence_locator": "The dimensionful canonical coordinate satisfies chi_u=sqrt(2QK_uu),"
+        },
+        {
+          "phrase": "canonical",
+          "occurrence_group_id": "fe9f03d937d1ff58",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "df6c6ec5a25fbe7ec5bf7fe2f4dfc3e0df65eae844468f58b955b266f0d7a430",
+          "evidence_locator": "canonical-scalar/conformal-dust action on a flat expanding background, identify"
+        },
+        {
+          "phrase": "convention",
+          "occurrence_group_id": "0dc7536c85b1b829",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "74bf3c252f61ec2a356d0ef909e9ba6b3afbedc65d1cc7ce70ec8a46185a4d70",
+          "evidence_locator": "vacuum Phi/Psi pair does not specify metric slots; a different naming convention"
+        },
+        {
+          "phrase": "convention",
+          "occurrence_group_id": "27df39829d61a8a3",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "8655aecdf76297a3c0ea6e3eaae0008e297379f139ab4e00539b1da2afe6a7aa",
+          "evidence_locator": "envelopes. The implemented exact-decimal convention does not turn rounded"
+        },
+        {
+          "phrase": "convention",
+          "occurrence_group_id": "6ecb983ee7f8e03a",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "6af8df8eb4d0b6104898aaa409ee077a2a6fc94500121a5930f9936a762b8983",
+          "evidence_locator": "equation, not a choice of density convention with the rest held fixed."
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "0dc7536c85b1b829",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "d0fbf014998d4c937bc24dbd5b85a83e883751e40a3736188e95a6290bc851ca",
+          "evidence_locator": "vacuum Phi/Psi pair does not specify metric slots; a different naming convention"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "1ab50226888f685b",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "2af89ddd68b8af922391176bcf14dc80de47cf675256ef459c7070c3bcceca3d",
+          "evidence_locator": "physical coefficients; passing this necessary relation alone does not establish"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "27df39829d61a8a3",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "08ec0e2763be326f0977b888ecc5751e1e9afbd6c6cad5eeae492076f693a77a",
+          "evidence_locator": "envelopes. The implemented exact-decimal convention does not turn rounded"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "3144b27da706039e",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "75bfbe96e3055064a3cbc860882f91ee3662757636e371fbfc2c10fab09d76cb",
+          "evidence_locator": "**coefficients**, conditional on defined physical readouts. This does not"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "3a394a5d6b41f61f",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "f3d5d0daaa8079bd30f12609426cf6e942a46598e88b24ea131de1e673920d82",
+          "evidence_locator": "agreement does not prove an interval identity."
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "4a5131bfe1406c4b",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "b922c24d55458fd0ea6755a7d4d54ba8a29df26ad9d17ed2db09d3afe0997fa2",
+          "evidence_locator": "At s=0 and b!=0, x=y=0 and this instantaneous inverse does not identify q."
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "75fd01ad44535d24",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "3ec96e48bdd190348c001a4bc756e61cee0c7de044468f5a6b65c3628481f5bb",
+          "evidence_locator": "epochs with the same pair. Constant q does not select a pair; finite-epoch"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "ba851144c379583f",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "ba258c5284707c8d856422808f1af7f0334531610a553a2467cdd1a031712289",
+          "evidence_locator": "must enter an actual measurement error model. The proof does not promise"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "d4fe8e72e55982fa",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "0c8d3a57e871dcc1e5e9164b799d5d09562141f830be2ad3c4732f5f166ddabf",
+          "evidence_locator": "reconstruction does not rely on r=q. Independent canonical-state/log-aE Radau"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "e9e4add1b8a9d10f",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "163f9e42bcff1343b8c05d02d5a33a0ec517bf7939e04df5314ccdff19cdce49",
+          "evidence_locator": "radial action is restated in section 6 so this proof does not depend on an"
+        },
+        {
+          "phrase": "does not",
+          "occurrence_group_id": "eb107b4bb0928257",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "8aec1941e560e6d352434dd6e357c9bbaf87e0674ee1966877691e2cc58401d9",
+          "evidence_locator": "severely ill-conditioned. It does not explain why this action, potential or"
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "09861a9d17809599",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "87a25e08ba0e7d8f3f79bc1fa86d54f01aeb463fbfbed020ba302dc7ad5fa46a",
+          "evidence_locator": "linear solution without the monomial checks is not a physical identification."
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "09945e46cdf85d53",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "1520431419fd30767b661c1d2d19f3bc93a3718354233160142af5b1057ecd65",
+          "evidence_locator": "Thus W is not automatically f deltaJ in the full dynamics. The common Weyl"
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "2b305dfe34af118c",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "d4cac45c94e368c680348da1a4c094dcc4d2a417730ffc92d34f3954f43ae8e9",
+          "evidence_locator": "Prime is d/dN along the same comoving mode. It is not a derivative at fixed"
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "2bd3d86d0c5b40b8",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "91fc519f823abdcd6f30a68e90738784201090cb3ba45c7e62726a4d4292ece1",
+          "evidence_locator": "set; it is not a universal observational impossibility."
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "2d417a37c4cd8658",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "7f8059ce57a73533aec4de82c4bcf77158effaa66e8b6085ea58a2f14550d14c",
+          "evidence_locator": "\u00a7II and \u00a7VI, Eqs. 77\u201381. Its later small-scale approximation is not used here."
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "426cfb76c4806e3f",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "61035576d3de7bfc83532dc4a6ae73f7c4fcc69fc750549c3c32b6affe28953a",
+          "evidence_locator": "17 later correspondence checks. Root's 301-time constraint diagnostic is not"
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "84566c2e7f0efe91",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "47d275a6ab38d171d8d7c6119ccf51996b25ca62f4069b30d1c6ed048c8e3e58",
+          "evidence_locator": "the exact monomial test is not a statistical rejection rule for noisy data."
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "a2a09eb045ee6a83",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "fa073eb09b037bcb6c4edee20ad14ae55a7bd5674b8441667003c50a54dfcaad",
+          "evidence_locator": "That lemma is not claimed solved by these finite algebraic inverses."
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "cfeb2e361c3f3b88",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "68ad34faf9c322d675ddf002e945a9392047830729a3341731b116a7a49699c8",
+          "evidence_locator": "slices**; it is not the coordinate-volume contrast n-3phi. Thus delta_E=n+bX."
+        },
+        {
+          "phrase": "is not",
+          "occurrence_group_id": "eaff363c37bb905a",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "a04b8a84706a3f79a8dea683324aafc957ff74fa07509e72f5f38cb92f987488",
+          "evidence_locator": "symmetric derivative pairs. At this epoch y is a coefficient; it is not being"
+        },
+        {
+          "phrase": "normalization",
+          "occurrence_group_id": "06b379705190eafd",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "0c85d389670c98c08f899f506a9ff623f79700b41d6db64fc5de4129f6dd3be6",
+          "evidence_locator": "The action, actual background, physical measurements and absolute normalization"
+        },
+        {
+          "phrase": "normalization",
+          "occurrence_group_id": "25451273c882afb9",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "da81dd07bfc8131cf7769ca7caed6f90c54e82e1508651733180575eb9c7b745",
+          "evidence_locator": "initial scalar state. Its absolute normalization stays tied to rhoJ0."
+        },
+        {
+          "phrase": "sector",
+          "occurrence_group_id": "6f7036bc5e5373d6",
+          "occurrence_count": 1,
+          "occurrence_locator_sha256": "2a5575b1c04799bd005c4cbce4b7fddd6de4db020c1863d2d46c25490c77f5b8",
+          "evidence_locator": "The complete first-order perturbation system in this sector is"
+        }
+      ]
+    },
+    "scripts/scalar_dynamical_momentum_inverse_check.py": {
+      "path": "scripts/scalar_dynamical_momentum_inverse_check.py",
+      "roles": [
+        "runner"
+      ],
+      "effective_status": null,
+      "accepted_premise_type": null,
+      "full_content_sha256": "cb233af6423d3dae7f35f2bc079df2b62c4720d599472326ff191026a645a8d0",
+      "full_phrase_groups": []
+    },
+    "scripts/scalar_dynamical_covariance.py": {
+      "path": "scripts/scalar_dynamical_covariance.py",
+      "roles": [
+        "helper"
+      ],
+      "effective_status": null,
+      "accepted_premise_type": null,
+      "full_content_sha256": "af688b94f90de2532df5a3544bbacce25b72e474ebc59465b15d6ebb26db4707",
+      "full_phrase_groups": []
+    },
+    "scripts/scalar_dynamical_domains.py": {
+      "path": "scripts/scalar_dynamical_domains.py",
+      "roles": [
+        "helper"
+      ],
+      "effective_status": null,
+      "accepted_premise_type": null,
+      "full_content_sha256": "bafe3ab7ef0018206d7d9c5718f8742ef9bd96034460c160b75b2218425cd25f",
+      "full_phrase_groups": []
+    },
+    "scripts/scalar_dynamical_extensions.py": {
+      "path": "scripts/scalar_dynamical_extensions.py",
+      "roles": [
+        "helper"
+      ],
+      "effective_status": null,
+      "accepted_premise_type": null,
+      "full_content_sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "full_phrase_groups": []
+    },
+    "scripts/scalar_dynamical_forward.py": {
+      "path": "scripts/scalar_dynamical_forward.py",
+      "roles": [
+        "helper"
+      ],
+      "effective_status": null,
+      "accepted_premise_type": null,
+      "full_content_sha256": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+      "full_phrase_groups": []
+    },
+    "scripts/scalar_dynamical_geometry.py": {
+      "path": "scripts/scalar_dynamical_geometry.py",
+      "roles": [
+        "helper"
+      ],
+      "effective_status": null,
+      "accepted_premise_type": null,
+      "full_content_sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "full_phrase_groups": []
+    }
+  },
+  "declared_inputs": [
+    "docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "scripts/scalar_dynamical_forward.py",
+    "scripts/scalar_dynamical_geometry.py",
+    "scripts/scalar_dynamical_extensions.py",
+    "scripts/scalar_dynamical_domains.py",
+    "scripts/scalar_dynamical_covariance.py",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/FORWARD_PROTOCOL_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/dynamical_response/NO_GO_DISCIPLINE_CHECKLIST.md"
+  ],
+  "all_declared_inputs_exist": true
+}

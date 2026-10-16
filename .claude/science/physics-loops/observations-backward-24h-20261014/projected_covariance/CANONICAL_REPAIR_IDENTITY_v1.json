@@ -1,0 +1,10 @@
+{
+  "all_nonidentity_results_unchanged": true,
+  "counts": {
+    "failed": 0,
+    "passed": 29
+  },
+  "elapsed_sec": 5.654582977294922,
+  "exit_code": 0,
+  "cache_sha256": "a7ec9d7aa4b8fd6e21b236643e096a76264a67da3e6a8c38bce9a1dcf303f742"
+}

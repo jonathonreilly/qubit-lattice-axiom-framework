@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-15T11:46:34.340281+00:00",
+  "scope": "Final receipt and source/output comparisons only; no ODE, inverse, sampling or aggregate rerun.",
+  "cache_sha256": "c7ce3b03682676886b3ccdf3c587492809f6ebc3726c6cccc3122a13796173bd",
+  "input_fingerprint_sha256": "e9c7e049c0fa0019adf66eca16ff1e2ee24f31a51ddca197dfedbe374fef309b",
+  "execution": {
+    "status": "ok",
+    "exit_code": 0,
+    "timeout_sec": 120,
+    "elapsed_sec": 1.3328142166137695
+  },
+  "summary_sha256": "5d2935fdc7fb62dfbcf42889ddeff6d870c7255828fd95bd785992b72f41872b",
+  "results_sha256": "e8a551d346094e7333bbb7ed9ece8b662836b743fd2ba6613b45f082b2875105",
+  "control_count": 102,
+  "failed": 0,
+  "control_additions_relative_to_original91": [
+    "background_geometric_coupling_distinction",
+    "implemented_curved_manufactured_history",
+    "implemented_nonzero_pressure_metric",
+    "repeated_potential_epoch_refused",
+    "rounded_measurements_do_not_gain_information_from_precision",
+    "transverse_connection_x_uu",
+    "transverse_connection_y_uu",
+    "transverse_source_x",
+    "transverse_source_y",
+    "transverse_x_stationary_equation",
+    "transverse_y_stationary_equation"
+  ],
+  "all_204_saved_field_velocity_and_time_coordinates_match_exact_50_digit_conversion_and_original_float": true,
+  "canonical_vs_independent_source_assembled_parameter_max_relative_difference": "5.8117386605208000000E-41",
+  "canonical_rounded_case9_error_preserved": {
+    "interpretation": "The original numerical failure remains; more arithmetic precision cannot restore information lost in rounded input functions.",
+    "relative_nu_error": "0.000002550157293603847011821368631140015077674650944466053695"
+  },
+  "reviewed_source_v2_equals_final": true,
+  "production_functions_AST_unchanged_since_initial_canonical_review": true,
+  "author_original_failure_and_independent_failures_preserved": true,
+  "open_prose_finding_resolved": true,
+  "formal_audit": false,
+  "independent_empirical_tests": 0
+}

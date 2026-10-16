@@ -325,6 +325,71 @@
       "source_sha256": "b0acac7225015e3d93f90216ee2942d578e644f28bff3656454d94f9d8108b0e",
       "timeout_sec": 120,
       "reason": "Explicit bounded invocation cap for the imported matched-population kernel helper. The full numerical experiment is executed only by its separately declared 14400-second primary; source changes invalidate this helper declaration."
+    },
+    "scripts/scalar_dynamical_covariance.py": {
+      "source_sha256": "af688b94f90de2532df5a3544bbacce25b72e474ebc59465b15d6ebb26db4707",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_dynamical_domains.py": {
+      "source_sha256": "bafe3ab7ef0018206d7d9c5718f8742ef9bd96034460c160b75b2218425cd25f",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_dynamical_extensions.py": {
+      "source_sha256": "d74ae0ecf222446ae939b19d7e78b63cf7fda454c2a3fef3138037f7706d7a3a",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_dynamical_forward.py": {
+      "source_sha256": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_dynamical_geometry.py": {
+      "source_sha256": "e88694b30d4e9557ebf9272423556f4c6f01c63f3b569556a99395c1a3b4b834",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_projected_forward.py": {
+      "source_sha256": "83761632bef726dd562bb8f323f8d14714487862dfa3bdf702e59835dbd56b08",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_projected_geometry.py": {
+      "source_sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_projected_weak.py": {
+      "source_sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_unequal_geometry.py": {
+      "source_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_unequal_sampling.py": {
+      "source_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_physical_curvature_action.py": {
+      "source_sha256": "dc584405e9e77726ab2c40371a646d4b1adcf5bd022b51dd7ac04887b309c15a",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_physical_curvature_geometry.py": {
+      "source_sha256": "17df25aa6257363c4511fd9bb9b839765fd77bf4ef37aba9b0bee14462f23768",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
+    },
+    "scripts/scalar_physical_lapse.py": {
+      "source_sha256": "b7e4d8e64d1f92d38e3faa418c3604a52c144cf9ab8867fc097984f5b8f89efa",
+      "timeout_sec": 180,
+      "reason": "Explicit review cap for imported scalar inverse helper. Executes within its primary runner cap; no standalone execution or audit-policy change. Source changes invalidate this declaration."
     }
   }
 }

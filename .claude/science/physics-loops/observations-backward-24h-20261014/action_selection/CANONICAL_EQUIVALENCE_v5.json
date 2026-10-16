@@ -1,0 +1,10 @@
+{
+  "v3_v5_scientific_results_identical": true,
+  "excluded_identity_fields": [
+    "input_sha256",
+    "primary_sha256"
+  ],
+  "unchanged_helper_sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+  "v3_results_sha256": "e8a551d346094e7333bbb7ed9ece8b662836b743fd2ba6613b45f082b2875105",
+  "v5_results_sha256": "2b756409b2017263494901308f0ba4475512241783a594719db86d74655da3c1"
+}

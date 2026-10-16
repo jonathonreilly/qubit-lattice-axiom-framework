@@ -1,0 +1,74 @@
+[
+  {
+    "source": "boisseau",
+    "pdf_page": 2,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/boisseau_page_2.png",
+    "sha256": "30e2a1e57344f2e0276f57018b6b6124f231e771674ff9991d8ca1efea8ffde7"
+  },
+  {
+    "source": "boisseau",
+    "pdf_page": 4,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/boisseau_page_4.png",
+    "sha256": "c5a7258b8e32c5202645a283729ea69d05b071f053a5b950d02760acfe8c7f38"
+  },
+  {
+    "source": "dalang_lombriser",
+    "pdf_page": 16,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/dalang_lombriser_page_16.png",
+    "sha256": "3c9da4ea072dbf0bbbb466338fade091dea7c577cdc4b34b0b036376aff3e366"
+  },
+  {
+    "source": "dalang_lombriser",
+    "pdf_page": 30,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/dalang_lombriser_page_30.png",
+    "sha256": "f634c4869b7379386154e9a48a39ff2c8396daa9432a30fccbc80c295f744211"
+  },
+  {
+    "source": "dalang_fleury_lombriser",
+    "pdf_page": 10,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/dalang_fleury_lombriser_page_10.png",
+    "sha256": "5fa16d21237e1fcf147911acbf0b77cb7a7fb3732820eacef62053fe87b55a02"
+  },
+  {
+    "source": "gw170817_siren",
+    "pdf_page": 7,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/gw170817_siren_page_7.png",
+    "sha256": "4e3177d73c488078df580e177a4323179b2aac977e4e58a030b8969d538e44a5"
+  },
+  {
+    "source": "gw170817_siren",
+    "pdf_page": 8,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/gw170817_siren_page_8.png",
+    "sha256": "c60ceb3f43ed45ec5135066e3916a3d645ba1e76f5b48fcc3abb51523f929042"
+  },
+  {
+    "source": "gw170817_siren",
+    "pdf_page": 12,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/gw170817_siren_page_12.png",
+    "sha256": "abdead416307052e3eb751356b74ec239e6236f2c4e4b1679398cc6a2052bd87"
+  },
+  {
+    "source": "gw170817_detection",
+    "pdf_page": 4,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/gw170817_detection_page_4.png",
+    "sha256": "eae83b411ab62806bd5de6f2f5082efa641996d846353b31a15a5b0548b2f767"
+  },
+  {
+    "source": "cantiello",
+    "pdf_page": 5,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/cantiello_page_5.png",
+    "sha256": "34f4a55dba0992d53c4c78d48f8e0e7804fbdf18be657819ffe9af6b22797208"
+  },
+  {
+    "source": "cantiello",
+    "pdf_page": 7,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/cantiello_page_7.png",
+    "sha256": "e19055902057a001bcfd55ab49c4612d33fc00860d3a505cfaf2a1952d8c1585"
+  },
+  {
+    "source": "cantiello",
+    "pdf_page": 8,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/page_renders/cantiello_page_8.png",
+    "sha256": "9ed39262339f31f95797c70f6b57f6a702663274c9e649822a932a34808ab62e"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "searches": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(shear.*radial.velocity|radial.velocity.*shear)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json"
+      ],
+      "exit": 1,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(light.cone.*covariance|covariance.*light.cone)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json"
+      ],
+      "exit": 0,
+      "output": "origin/main:docs/ADMISSIBILITY_DIRAC_KAHLER_COVARIANT_CURVED_CELL_CONE_BOUNDED_THEOREM_NOTE_2026-09-05.md:86:At each rule-A mask the transported named curve point is positive definite and has one strict `S3_body` stabilizer in the finite covariance sense. The Hodge readings are proportional with ratios `32/27` or `27/32`; on the star line the determinant is the fourth power of the corresponding supplied quadric times `64/81` or `9/16`. \u201cOne metric's cone\u201d is only shorthand for this polynomial proportionality and names no physical metric or light cone.\norigin/main:docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md:153:| \"under a record-per-tick clause the static law is stationary for the axioms' rule, the light-cone variant is a bilayer ferromagnet with long-range order, and the response to a source is the lattice Green function\" | executed: detailed balance at one site; the conditional of a class; the band, response and covariance symbols | executed: every configuration of the four-cycle; all 256 pairs for the seven-site stencil; the `3\u00b3` propagation | executed: the infrared bound on every mode of both bands of a small two-valued instance | executed: the doubled graph onto the bilayer for `L = 4, 6`; the reflections' crossing edges and their cover | proved for every even torus under the clause; the clause contradicts the memo and is not adopted; executed numbers not claimed |\norigin/main:docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md:27:The inverse is bounded by the L1 norm of the sawtooth Fourier kernel. Onsite conjugation preserves supports. Color the bounded-degree support-intersection graph, and apply the local gates exp(epsilon^r I_W(A_(r,Z))) in a fixed color order. Their order-r contribution cancels the off-grade coefficient; later ordering terms stay in later recursion coefficients. Each fixed finite sequence has bounded depth/range and a bounded light cone per initial term. Analytic Taylor bounds on a common epsilon disk control the remainder per term independently of volume, S and local matrix dimension. The covariance Xi=(-1)^W, epsilon->-epsilon makes every odd diagonal coefficient vanish, also with epsilon^2 C present.\n"
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(lensing.*Volterra|Volterra.*lensing)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json"
+      ],
+      "exit": 1,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(velocity.potential.*eliminat|eliminat.*velocity.potential)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json"
+      ],
+      "exit": 1,
+      "output": ""
+    }
+  ]
+}

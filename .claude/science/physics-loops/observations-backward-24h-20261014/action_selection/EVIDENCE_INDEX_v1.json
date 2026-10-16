@@ -1,0 +1,1763 @@
+{
+  "created_at": "2026-10-15T12:08:36.388195+00:00",
+  "base_head": "5a73333518a13640c6a99cbcb01c31342c519fd3",
+  "scope": "preservation of exact working, failed, independent and canonical evidence; not an additional scientific execution",
+  "member_paths_relative_to": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection",
+  "archive": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/EVIDENCE_v1.tar.gz",
+    "sha256": "eeffb901d7933b90333129c2cf275b3ec4191683aaadbd1de5b15a573806dcbf",
+    "size": 1559124,
+    "member_count": 239
+  },
+  "members": [
+    {
+      "path": "CANONICAL_EQUIVALENCE_v5.json",
+      "sha256": "5bd85d7fad11adb9a08020f6a0843a6174260ddbe3f24ea789ea653b02036d39",
+      "size": 406
+    },
+    {
+      "path": "CANONICAL_EXECUTION_SETUP_FAILURE_v5.json",
+      "sha256": "1b5fa91796df3f840021b7e7112a98ada80657eba9858f4acc4d46a88ceaaeac",
+      "size": 238
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v1.json",
+      "sha256": "b5837b6cf4630a41511355eca6855da3d344eb22e89323bd4702c3928847519b",
+      "size": 2301
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v2.json",
+      "sha256": "b6f6fd5120512f97c352e74c86f03623255f14aceb57d462afa7dc88fa5177b0",
+      "size": 2763
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v3.json",
+      "sha256": "aded934333f5ad9094a12a69933c3c4e28797304c6275be000254e3c28084fb4",
+      "size": 2764
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v4.json",
+      "sha256": "15474c4a0d49329e0b7d76cfb74b9924e6e864998ad6b8c643cd02b05838e65f",
+      "size": 2955
+    },
+    {
+      "path": "CANONICAL_EXECUTION_v5.json",
+      "sha256": "d25aa3825683e864ef88834618f6b28f9329d7246a29a164a1e76fa0917cc44f",
+      "size": 1007
+    },
+    {
+      "path": "CANONICAL_HELPER_v1.py",
+      "sha256": "499dd9619f8e773fbdefb6b653722313be4a484c41e357c374161cf4c9e1afc8",
+      "size": 19254
+    },
+    {
+      "path": "CANONICAL_HELPER_v2.py",
+      "sha256": "435d7b03a8038a8bf2eddef1122e7123953d046071df2136f23f359412f27bd7",
+      "size": 19988
+    },
+    {
+      "path": "CANONICAL_HELPER_v2_pre_curvature.py",
+      "sha256": "d3b96bb4d5530aee99805cfc1515b694da58e713441c5e19c08068dc3668eb66",
+      "size": 19552
+    },
+    {
+      "path": "CANONICAL_NOTE_v1.md",
+      "sha256": "b8b06157150f3829b9ede9a507d9642253fbbd8fcab0377cd8b71c4e486d00bd",
+      "size": 20004
+    },
+    {
+      "path": "CANONICAL_NOTE_v2.md",
+      "sha256": "e4025969133e49394328cf628dc2797d041cd643ba7785953f5bc495fbdef53a",
+      "size": 20678
+    },
+    {
+      "path": "CANONICAL_NOTE_v3.md",
+      "sha256": "bc29b2e46b0ec3d1aae2b1300b1b7a0e5353c7d84308f9ed2e8d31f4eaf943a7",
+      "size": 20682
+    },
+    {
+      "path": "CANONICAL_NOTE_v4_pre_conformance.md",
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+      "size": 20906
+    },
+    {
+      "path": "CANONICAL_NOTE_v5_pre_status_and_mutation.md",
+      "sha256": "020558ea3f1f41928a485ef19421ebf25a05188a0de4c292c10fc11d6d19d37e",
+      "size": 24656
+    },
+    {
+      "path": "CANONICAL_PRIMARY_v3_pre_conformance.py",
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca",
+      "size": 3087
+    },
+    {
+      "path": "CANONICAL_RECEIPT_RECOVERY_FAILURE_v5.json",
+      "sha256": "ba146885f3ecc34e1fda1a2c3e3c5bd2fb1a0334b282ff30983489ae297bfa0a",
+      "size": 239
+    },
+    {
+      "path": "CANONICAL_RECEIPT_SERIALIZATION_FAILURE_v5.json",
+      "sha256": "9c3798eb2442d8a894dbabe3ea4df0101ab87200f08c2af443704b22339d3d67",
+      "size": 359
+    },
+    {
+      "path": "CANONICAL_RESULTS_v2.json",
+      "sha256": "1eed4a595430b053f0061741ab20e0dda0663810f577aca351d76725a9bbd8d3",
+      "size": 408896
+    },
+    {
+      "path": "CANONICAL_RESULTS_v3.json",
+      "sha256": "e8a551d346094e7333bbb7ed9ece8b662836b743fd2ba6613b45f082b2875105",
+      "size": 409307
+    },
+    {
+      "path": "CANONICAL_RESULTS_v4.json",
+      "sha256": "012cced95c79aa55b1521ec2e519af9802f309280195688dadcccf6a8bb481a0",
+      "size": 409494
+    },
+    {
+      "path": "CANONICAL_RESULTS_v5.json",
+      "sha256": "2b756409b2017263494901308f0ba4475512241783a594719db86d74655da3c1",
+      "size": 409494
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v1.json",
+      "sha256": "ea6c989d5cba1e5cf716d7da3c6e0c3fdd623ab3d171065e38eac88afa9db8bd",
+      "size": 658
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v2.json",
+      "sha256": "63dc520dcb9b5b5c6c582ab1fcb746fecd3657aba4bf03eb492362527580c885",
+      "size": 658
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v3.json",
+      "sha256": "b9d14f8030832bfca46945c6e4c50525a2cc5251f449e8692eb1e0711967377e",
+      "size": 658
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v4.json",
+      "sha256": "d398caf94ff75f863994f7a699e4858f812ce4917587905ee38b555acf3eca5c",
+      "size": 845
+    },
+    {
+      "path": "CANONICAL_SOURCE_FREEZE_v5.json",
+      "sha256": "cfe424db2bfae82219e40af410ac8f5d149f8c491ba8cbf699fdb46b9805fc58",
+      "size": 845
+    },
+    {
+      "path": "CANONICAL_SUMMARY_v2.json",
+      "sha256": "f86d980f97c3dd4e17604afbb5a2781bfa56b509823749e9ac5381e6d0d9d26c",
+      "size": 1496
+    },
+    {
+      "path": "CANONICAL_SUMMARY_v3.json",
+      "sha256": "5d2935fdc7fb62dfbcf42889ddeff6d870c7255828fd95bd785992b72f41872b",
+      "size": 1496
+    },
+    {
+      "path": "CANONICAL_SUMMARY_v4.json",
+      "sha256": "a7295b3a0ece4c7b4d0dcf0f582c9c764f4447f16204f5063ad49a8461f5ee83",
+      "size": 1683
+    },
+    {
+      "path": "CANONICAL_SUMMARY_v5.json",
+      "sha256": "dd83ba99eed5d250ae005480bd9f25edff313e80f4011d697e1c7201270450da",
+      "size": 1683
+    },
+    {
+      "path": "CHECKPOINT_v1.json",
+      "sha256": "05222425e94eb47d7ef55afbff0c82eb5d25e7f3051b3895ef6bf1c471ef4ae5",
+      "size": 2620
+    },
+    {
+      "path": "CHECKPOINT_v2.json",
+      "sha256": "005070ce5ea5cfb9fd82f58445ae2dcd4d62587dfb71a24cad0a706e4ea23f35",
+      "size": 458
+    },
+    {
+      "path": "CHECKPOINT_v3.json",
+      "sha256": "cadbeb3746dee5e7c37446fa2b80d6f2d09156cb396360ede5ae16614af41943",
+      "size": 887
+    },
+    {
+      "path": "EVIDENCE_README.md",
+      "sha256": "9ebe39b053f5ac13f5ab45f39cb1bebf0b8840c092c3cabd5fd7ba45eca4f78c",
+      "size": 1393
+    },
+    {
+      "path": "EXECUTION_v1.json",
+      "sha256": "d4e1a24e7a7510d5a8d4a85c07b17a70c8322cc853e3330d5977748bb4c7b7a8",
+      "size": 1047
+    },
+    {
+      "path": "MECHANICAL_SOURCE_PREFLIGHT_v1.json",
+      "sha256": "3b1d1af2f61112d9e7652d26dfbcbb496b46a48152b8cf7b28711018f8aba031",
+      "size": 1668
+    },
+    {
+      "path": "MUTATION_FREEZE_v2.json",
+      "sha256": "15451277de83fb2f5de373d1382193018f0e730c66938b216cc621a7b3f5f255",
+      "size": 5374
+    },
+    {
+      "path": "MUTATION_RESULTS_v2.json",
+      "sha256": "382e93c4158ff59346a3749eb84cae27f282c37735f37a3c80e6ab81cd6ca08d",
+      "size": 20879
+    },
+    {
+      "path": "MUTATION_SETUP_FAILURE_v1.json",
+      "sha256": "455433f61c1010b175eff8aa105cc6ae19bbc8fee0029dfa8cc62614edced3c0",
+      "size": 376
+    },
+    {
+      "path": "MUTATION_SUPPLEMENT_FREEZE_v1.json",
+      "sha256": "deab562eb71510c11a6d5095f87101256a2ecb690162697accd4222c9c81a5aa",
+      "size": 2343
+    },
+    {
+      "path": "MUTATION_SUPPLEMENT_RESULTS_v1.json",
+      "sha256": "b19746508248d42a39b8c711a07d53129dd722b52d2d76d6905475788df0c1a7",
+      "size": 3734
+    },
+    {
+      "path": "NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "size": 8266
+    },
+    {
+      "path": "PRECISION_DIAGNOSIS_v1.json",
+      "sha256": "cf4f5f7dd99b9a079244c203aacbb5370a1da7be53a47e7afc2948a4b4b1d515",
+      "size": 60539
+    },
+    {
+      "path": "PRE_EXECUTION_FREEZE_v1.json",
+      "sha256": "06067f96784486aa174e49b88189406ef2a8e9ea825a5ca64190f92fb5c2acd5",
+      "size": 782
+    },
+    {
+      "path": "RESULTS_v1.json",
+      "sha256": "b8a3721a16dae081bf16aa342451aa85d3dc5bfa0b0fe7408031f131a884f822",
+      "size": 221299
+    },
+    {
+      "path": "REVIEW_RECORD_v1.md",
+      "sha256": "e2363a039f43dde8442240512f53feab0130ea60615a9bb703cc57ac6c2ae4c9",
+      "size": 12109
+    },
+    {
+      "path": "ROUTE_CONTEXT_v1.json",
+      "sha256": "87fa5dd300b940ac79502ae540feba5acbadd6bf15a3b178b5926460cb3ddb15",
+      "size": 7071
+    },
+    {
+      "path": "SYNTHETIC_PROTOCOL_v1.json",
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "size": 3148
+    },
+    {
+      "path": "WORKING_v1.md",
+      "sha256": "bd8b22a0343fafad71a38028cefa005d16ffa46114e2eace64b66fb60dd25e2c",
+      "size": 12298
+    },
+    {
+      "path": "WORKING_v2.md",
+      "sha256": "cc933b1e52083ea64867408ffc5e3d74910b3e49b7ca66f5c9c8ed2f0a158d7a",
+      "size": 15599
+    },
+    {
+      "path": "canonical_output_v1/RESULTS_v1.json",
+      "sha256": "6f9b9be5c2adc9ce684d3edd4b38c6df296692913b3a61a517d288497bf087a7",
+      "size": 408522
+    },
+    {
+      "path": "canonical_output_v1/SUMMARY_v1.json",
+      "sha256": "71865378b7838a7b1b84036a64a6ad2568d0d1dbb246cf25ad93efce06fafd20",
+      "size": 1495
+    },
+    {
+      "path": "cosmological_inverse_v1.py",
+      "sha256": "fcfdc680cab10ec21788957ae2d8a75abdcf6f11f1da14015b92c836b61ed8d8",
+      "size": 15373
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_NOTE_COMPARISON_IDENTITY_v1.json",
+      "sha256": "de25bdc2bc55d680be3c970aafd0b7336891b5d5f894adc7207d72e19f29ac9e",
+      "size": 2805
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_NOTE_COMPARISON_v1.md",
+      "sha256": "8b785b2a52d6d42dd8f4fe5e17d5af41bc8acbc41a9899b027de04eeb393f05f",
+      "size": 6894
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_NOTE_EXPOSURE_v1.json",
+      "sha256": "2aa2da75285f5fafe5d9972977d4c6e6b486d676d07ff7f2fa46795b9c4167c8",
+      "size": 767
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_NOTE_FINDINGS_v1.json",
+      "sha256": "6a09206538542dcbe1add4d6fb6cae538b3c872ac382da58885774e41e96874b",
+      "size": 1461
+    },
+    {
+      "path": "independent_math_v1/AUTHOR_WORKING_v1.md",
+      "sha256": "bd8b22a0343fafad71a38028cefa005d16ffa46114e2eace64b66fb60dd25e2c",
+      "size": 12298
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_FINAL_DELTA_FREEZE_v1.json",
+      "sha256": "28490d9f661a08ffa9885b68869ab36835cdc8b6c267d092011674c3762d6616",
+      "size": 1438
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_FINDING_C1_v1.json",
+      "sha256": "c1cc34969f28fe6b31ceddb1f40de7f9c68c84d03042310d81d1f9ef491a4ee7",
+      "size": 1274
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_HELPER_DELTA_v2.diff",
+      "sha256": "d8ad036db5b5ee71c402578a5b0ec744bd5344247b80568e5b61edabd863cf53",
+      "size": 764
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_HELPER_FREEZE_v2.json",
+      "sha256": "cbf74424437f0a3357d5a8ed7461e75b25daf38868eecebbc67a8fe747060fb4",
+      "size": 762
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_INPUT_PROTOCOL_FREEZE_v1.json",
+      "sha256": "bb8dbf83c4ecc2638aa58440025c1b1b9b333da8e2a4959e7131c80588bd93c9",
+      "size": 601
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_INPUT_PROTOCOL_v1.json",
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "size": 3148
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "3e65813d8678f8ef1791fa55abfc383cec471d7d848785efe99436b312f634b5",
+      "size": 4457
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "84c0837516cb0776f9af5f688eb20396783e5ff6dbc2e8526ced94303563fbc2",
+      "size": 16331
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_FREEZE_v1.json",
+      "sha256": "926381ef4aae30f7783d01b2f5cee5e693cb5469188f52a7745ce8ecb0b166ea",
+      "size": 2146
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v1_SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "e4025969133e49394328cf628dc2797d041cd643ba7785953f5bc495fbdef53a",
+      "size": 20678
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v1_scalar_cosmological_inverse.py",
+      "sha256": "d3b96bb4d5530aee99805cfc1515b694da58e713441c5e19c08068dc3668eb66",
+      "size": 19552
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v1_scalar_cosmological_inverse_check.py",
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca",
+      "size": 3087
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v2_SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+      "size": 20906
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v2_SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "sha256": "374cb7a32ede2511f6760035afae040fa6a20b10bcc5e243acb8397632500094",
+      "size": 3114
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v2_scalar_cosmological_inverse.py",
+      "sha256": "435d7b03a8038a8bf2eddef1122e7123953d046071df2136f23f359412f27bd7",
+      "size": 19988
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v3_scalar_cosmological_inverse.py",
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "size": 20416
+    },
+    {
+      "path": "independent_math_v1/CANONICAL_SOURCE_v3_scalar_cosmological_inverse.py.diff",
+      "sha256": "abf32fab4878001710831481d77e63e38a6ac17c14eb3fd2a595ff34b7e686e5",
+      "size": 872
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SOURCE_FREEZE_v1.json",
+      "sha256": "c43fa0c2e2b452c30b0de1618d2379729e2c4f620dde5c5bc8bd167dd386d2d2",
+      "size": 1700
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SOURCE_v1_NOTE.md",
+      "sha256": "020558ea3f1f41928a485ef19421ebf25a05188a0de4c292c10fc11d6d19d37e",
+      "size": 24656
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SOURCE_v1_NOTE.md.diff",
+      "sha256": "aebd0c6d85a3257ef7fb5fcda7be3a251769130c60778ffe18ed027d6d116f40",
+      "size": 4547
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SOURCE_v1_NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "size": 8266
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SOURCE_v1_PRIMARY.py",
+      "sha256": "810882ad6271e53e5275905540beedcfc87ec963ac84e559d17c07006150ed0e",
+      "size": 3206
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SOURCE_v1_PRIMARY.py.diff",
+      "sha256": "06166feb035b24fbf447ee6950a75a29d836ddcb6527d3f6cc631b2da5b2426b",
+      "size": 496
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SUPPLEMENT_IDENTITY_v1.json",
+      "sha256": "b7b7629df40a6ce98a56e8cb9b16f18c577800c7852a437f787dcd15064c394f",
+      "size": 3502
+    },
+    {
+      "path": "independent_math_v1/CONFORMANCE_SUPPLEMENT_v1.md",
+      "sha256": "94d91975510ad84040e4c22230c60da0b1b9c8ca46c96e4f0ee002eb4e9e5a10",
+      "size": 6271
+    },
+    {
+      "path": "independent_math_v1/CONTROL_EXECUTION_v1.json",
+      "sha256": "ea24d37b71e92a0d1b49c8cbd4019c0d2d9fdeb6587211b170792fa14731971f",
+      "size": 1438
+    },
+    {
+      "path": "independent_math_v1/CONTROL_RESULTS_v1.json",
+      "sha256": "c860bf5331c7f03f5d317a9b7ec41d54c4a57c5bed01ffbb8125efb12b48f0bf",
+      "size": 11028
+    },
+    {
+      "path": "independent_math_v1/CONTROL_SOURCE_FREEZE_v1.json",
+      "sha256": "c038cd94faaa93876af21be5609f737e5ec71d472cfa6a83582afbf9cd5735cd",
+      "size": 501
+    },
+    {
+      "path": "independent_math_v1/CONTROL_STDERR_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "independent_math_v1/INDEPENDENT_MATH_IDENTITY_v1.json",
+      "sha256": "50a88fbcc91f8ca007e1ba7d7f2d96c4aa3c5dbf1dc0c439722d7a06be612efa",
+      "size": 4483
+    },
+    {
+      "path": "independent_math_v1/INDEPENDENT_MATH_v1.md",
+      "sha256": "aa6f275dd043529fc824a00b0ebdbb190abf610a6ddfb9fc1e4ecad81edaa21a",
+      "size": 19457
+    },
+    {
+      "path": "independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "sha256": "0d803dd26cd322041365f15f77c4c41415816044f2df87d468f7bf18fd035caa",
+      "size": 582
+    },
+    {
+      "path": "independent_math_v1/PRECHECK_v1.md",
+      "sha256": "8838cf6e29c77e7804b93c61637ce4d75ba3949b50ddd3794b42923352b29141",
+      "size": 13872
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_BINDINGS_v1.json",
+      "sha256": "ece6cac1a2d12fcc13232244258ce174fb2850cc9980e1d31c16de8c7ce18117",
+      "size": 2723
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_NOTE_DELTA_v1.diff",
+      "sha256": "8cc9472ddff9de333dea022609dedddfa79c58ee1b95dbd11484c7f0b5edc4b3",
+      "size": 1365
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_SOURCE_FREEZE_v1.json",
+      "sha256": "28f6162b3012bc6a58edd45a613434ff1a2d7c21d0e12faf0bea39e6b99044d4",
+      "size": 1400
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_SOURCE_v1_FREEZE.json",
+      "sha256": "deab562eb71510c11a6d5095f87101256a2ecb690162697accd4222c9c81a5aa",
+      "size": 2343
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_SOURCE_v1_NOTE.md",
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "size": 25119
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_SOURCE_v1_RESULTS.json",
+      "sha256": "b19746508248d42a39b8c711a07d53129dd722b52d2d76d6905475788df0c1a7",
+      "size": 3734
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_SOURCE_v1_mutation_supplement.py",
+      "sha256": "37ac6013dd644f727508f0884f5b42bd629d3aa750cb70ec38bca868e69b2b21",
+      "size": 3597
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_SUPPLEMENT_IDENTITY_v1.json",
+      "sha256": "caeb6d106615b30f95de6628cdb2e0117e77ec147a548d756a8d1ec042b36bb9",
+      "size": 3806
+    },
+    {
+      "path": "independent_math_v1/STATUS_MUTATION_SUPPLEMENT_v1.md",
+      "sha256": "4647af19cd1b688448465f524580ccf12ac68a02ee97ca4e7b449d7c0b5f4919",
+      "size": 5407
+    },
+    {
+      "path": "independent_math_v1/SUPPLIED_ACTION_NOTE_v1.md",
+      "sha256": "39a0dd9e107edba23adbfe8cf070f8f279190c40c651dc905af9d59911cad000",
+      "size": 11646
+    },
+    {
+      "path": "independent_math_v1/SUPPLIED_ACTION_SOURCE_FREEZE_v1.json",
+      "sha256": "eb8e3527655381c7eebfa886a856f621289875cbae1b0d5cce324ea7faa424c5",
+      "size": 695
+    },
+    {
+      "path": "independent_math_v1/independent_reconstruction_controls_v1.py",
+      "sha256": "c043596f9cf7c76c7b67eaf2745ee246c2c1950a3b247c52a6fafb1fabb63979",
+      "size": 11789
+    },
+    {
+      "path": "independent_numeric_v1/AUTHOR_RESULT_FREEZE_v1.json",
+      "sha256": "e851bc1ffc089a3968f8de31cf6a28dc72eda555172e75947ce3969265f55473",
+      "size": 1236
+    },
+    {
+      "path": "independent_numeric_v1/BINDING_SERIALIZATION_FAILURE_v3.json",
+      "sha256": "879c5894e758a4366ba16095538021dc803a7afb81960b4d6122d38a521f4d24",
+      "size": 1428
+    },
+    {
+      "path": "independent_numeric_v1/CANONICAL_SOURCE_DELTA_v2.patch",
+      "sha256": "225d1e1a1a31c5d4a796b9c37a2e41698fc0eab8fc2afe6797a5c75c49176e23",
+      "size": 3978
+    },
+    {
+      "path": "independent_numeric_v1/CANONICAL_SOURCE_INPUTS_v1.json",
+      "sha256": "780c2e3aa236bc26f7e2ee063e0426a4d3e14f69bd26a0088f733222ed772117",
+      "size": 1826
+    },
+    {
+      "path": "independent_numeric_v1/CANONICAL_SOURCE_INPUTS_v2.json",
+      "sha256": "527f1ed0f1fabb2d6ab514cda7d84e8df51ecda33a6b27fd4ad7338c6a19aa2d",
+      "size": 1829
+    },
+    {
+      "path": "independent_numeric_v1/FINAL_BINDING_RESULTS_v3.json",
+      "sha256": "844c28b58a5d986fb2b937ba57087c28ed35a8b23ae94fc4c5609b3736a61226",
+      "size": 1985
+    },
+    {
+      "path": "independent_numeric_v1/FINAL_CONFIRMATION_v3.md",
+      "sha256": "03b965d782254af948551e35e9a63d1cf7f33596372f404384a2da9143b6e5c2",
+      "size": 4441
+    },
+    {
+      "path": "independent_numeric_v1/FINAL_IDENTITY_v3.json",
+      "sha256": "dd88fa251f7763b1b42111f69c6ac5fbf90936b9684a0b68122b54abd0d64390",
+      "size": 10431
+    },
+    {
+      "path": "independent_numeric_v1/FINAL_INPUT_FREEZE_v3.json",
+      "sha256": "78c7ed6b65badf15ff988ed4babcf7117767714749634178cddc35e7c61dc264",
+      "size": 5545
+    },
+    {
+      "path": "independent_numeric_v1/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "68f721bb4723936d666b43770c3b1477944fc6d71ba6a75855c1bcbcad3edf8a",
+      "size": 418729
+    },
+    {
+      "path": "independent_numeric_v1/INDEPENDENT_SUMMARY_v1.json",
+      "sha256": "92da40dc0d477d785ccc3b15f7ce2380e56108c862de6466c917600c6d5db252",
+      "size": 22021
+    },
+    {
+      "path": "independent_numeric_v1/NUMERICAL_IDENTITY_v1.json",
+      "sha256": "6eb433215c4de492603d44355bbc797602062bfe9368a97b6e06fd4b45c5e268",
+      "size": 8088
+    },
+    {
+      "path": "independent_numeric_v1/NUMERICAL_REVIEW_v1.md",
+      "sha256": "c3cfd208126aec9f1c8c27d7e02f663446ce5e58b9616ca69f1d1b2e782149f8",
+      "size": 10815
+    },
+    {
+      "path": "independent_numeric_v1/PRECHECK_v1.md",
+      "sha256": "6c4c73f419ba07a696927a801ba3e28bcc316382ecb528b7cbc135beb6b93dae",
+      "size": 3963
+    },
+    {
+      "path": "independent_numeric_v1/PRECOMPUTE_FREEZE_v1.json",
+      "sha256": "785a1d366ae6381d3ad037ba1e712c882b266a5154009a234afc02da121d085a",
+      "size": 1480
+    },
+    {
+      "path": "independent_numeric_v1/RESULT_CORRESPONDENCE_v1.json",
+      "sha256": "00ac14706933257481b318d74338d4219d00ca09847f390d2189ae2329d5586c",
+      "size": 11192
+    },
+    {
+      "path": "independent_numeric_v1/RESULT_FREEZE_v1.json",
+      "sha256": "aa7c370235f358517af191a02b3116b1b80538c1485cd993ba9881513efe4b5b",
+      "size": 2604
+    },
+    {
+      "path": "independent_numeric_v1/RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "independent_numeric_v1/RUN_v1.stdout",
+      "sha256": "92da40dc0d477d785ccc3b15f7ce2380e56108c862de6466c917600c6d5db252",
+      "size": 22021
+    },
+    {
+      "path": "independent_numeric_v1/author_results_v1/PRECISION_DIAGNOSIS_v1.json",
+      "sha256": "cf4f5f7dd99b9a079244c203aacbb5370a1da7be53a47e7afc2948a4b4b1d515",
+      "size": 60539
+    },
+    {
+      "path": "independent_numeric_v1/author_results_v1/RESULTS_v1.json",
+      "sha256": "b8a3721a16dae081bf16aa342451aa85d3dc5bfa0b0fe7408031f131a884f822",
+      "size": 221299
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_EXECUTION_v3.json",
+      "sha256": "aded934333f5ad9094a12a69933c3c4e28797304c6275be000254e3c28084fb4",
+      "size": 2764
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_SOURCE_FREEZE_v3.json",
+      "sha256": "b9d14f8030832bfca46945c6e4c50525a2cc5251f449e8692eb1e0711967377e",
+      "size": 658
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "size": 3148
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+      "size": 20906
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/logs/runner-cache/scalar_cosmological_inverse_check.txt",
+      "sha256": "c7ce3b03682676886b3ccdf3c587492809f6ebc3726c6cccc3122a13796173bd",
+      "size": 2359
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/outputs/scalar_cosmological_inverse/RESULTS_v1.json",
+      "sha256": "e8a551d346094e7333bbb7ed9ece8b662836b743fd2ba6613b45f082b2875105",
+      "size": 409307
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/outputs/scalar_cosmological_inverse/SUMMARY_v1.json",
+      "sha256": "5d2935fdc7fb62dfbcf42889ddeff6d870c7255828fd95bd785992b72f41872b",
+      "size": 1496
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/scripts/scalar_cosmological_inverse.py",
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "size": 20416
+    },
+    {
+      "path": "independent_numeric_v1/canonical_final_v3/scripts/scalar_cosmological_inverse_check.py",
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca",
+      "size": 3087
+    },
+    {
+      "path": "independent_numeric_v1/canonical_source_v1/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "e4025969133e49394328cf628dc2797d041cd643ba7785953f5bc495fbdef53a",
+      "size": 20678
+    },
+    {
+      "path": "independent_numeric_v1/canonical_source_v1/scripts/scalar_cosmological_inverse.py",
+      "sha256": "435d7b03a8038a8bf2eddef1122e7123953d046071df2136f23f359412f27bd7",
+      "size": 19988
+    },
+    {
+      "path": "independent_numeric_v1/canonical_source_v1/scripts/scalar_cosmological_inverse_check.py",
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca",
+      "size": 3087
+    },
+    {
+      "path": "independent_numeric_v1/canonical_source_v2/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+      "size": 20906
+    },
+    {
+      "path": "independent_numeric_v1/canonical_source_v2/scripts/scalar_cosmological_inverse.py",
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "size": 20416
+    },
+    {
+      "path": "independent_numeric_v1/canonical_source_v2/scripts/scalar_cosmological_inverse_check.py",
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca",
+      "size": 3087
+    },
+    {
+      "path": "independent_numeric_v1/final_binding_v3.py",
+      "sha256": "1ee8cf4ac630ee585b1e56093c27a539ba675b7d61daab57e19563b641d68895",
+      "size": 6470
+    },
+    {
+      "path": "independent_numeric_v1/final_binding_v3_serialization_repair.py",
+      "sha256": "20992aa14362aa8d7d2002b27a56e31b8653a401d2817d34f3b331a4127e6677",
+      "size": 6609
+    },
+    {
+      "path": "independent_numeric_v1/independent_inverse_v1.py",
+      "sha256": "1efbecdf27dcdc429cdbb49ccad1293ea4f2b91c774da9945fe3f73b5267c612",
+      "size": 6198
+    },
+    {
+      "path": "independent_numeric_v1/result_correspondence_v1.py",
+      "sha256": "a8b409222df374ad8c8a5d6032a76ee7b7f0c36bfaf325bbe2540fb1a29e42f3",
+      "size": 3665
+    },
+    {
+      "path": "independent_source_v1/ACQUISITION_SETUP_FAILURE_v1.json",
+      "sha256": "165257a260a28ee1f375951510760bef9eec8d23b0ff1e5b7f37db217935094f",
+      "size": 227
+    },
+    {
+      "path": "independent_source_v1/AUTHOR_READ_RECEIPT_v1.json",
+      "sha256": "d5aca7af04f17037bb607d22c2bc6cffd59bbb54922df0b06cb7bc048f2fb70a",
+      "size": 756
+    },
+    {
+      "path": "independent_source_v1/AUTHOR_WORKING_FROZEN_v1.md",
+      "sha256": "bd8b22a0343fafad71a38028cefa005d16ffa46114e2eace64b66fb60dd25e2c",
+      "size": 12298
+    },
+    {
+      "path": "independent_source_v1/FINAL_IDENTITY_CHECKS_v1.json",
+      "sha256": "c5c2906cd20d6a8f7643aa334adefddd80e56c26869f08ed84314a9633c87f38",
+      "size": 16717
+    },
+    {
+      "path": "independent_source_v1/FINAL_RECEIPT_v1.json",
+      "sha256": "a4bca338c54ce76ae00fc7060eb548152ca40753477f72ec44a2f31c4a720895",
+      "size": 10615
+    },
+    {
+      "path": "independent_source_v1/INDEPENDENT_ADMISSION_FREEZE_v1.json",
+      "sha256": "7ce4081bd8924a45ae21636f71ed5b7bbdb8e8e81bd0eccda8f098fb01dd6e99",
+      "size": 6478
+    },
+    {
+      "path": "independent_source_v1/INDEPENDENT_ADMISSION_v1.md",
+      "sha256": "4b9f0c6367dd95a2060ae0741768c0102aa1f7266d5adfd533f53a9929d6e9c8",
+      "size": 8809
+    },
+    {
+      "path": "independent_source_v1/M12_CANONICAL_CLUSTER_IDENTITY_v1.json",
+      "sha256": "939766526ed8235b835349a0d8ed57d076283465afc74050d3197a68479d9269",
+      "size": 13147
+    },
+    {
+      "path": "independent_source_v1/M12_CANONICAL_CLUSTER_REVIEW_v1.md",
+      "sha256": "1fa91a6f32e486e0fb229c1b6bbebe4d86e00bf19a1188937f6460dec6f6757d",
+      "size": 8800
+    },
+    {
+      "path": "independent_source_v1/M12_CLUSTER_CAP_VERDICT_v1.md",
+      "sha256": "d072bee2fad81757d47397225adda9e435b4dde20f38af20245f244561c85696",
+      "size": 2412
+    },
+    {
+      "path": "independent_source_v1/PAGE_RENDER_IDENTITIES_v1.json",
+      "sha256": "ac1b3fb2ef8cfa642a9da4097316d58c29f3e389b65b83fcf22b1d8b38edacb6",
+      "size": 4647
+    },
+    {
+      "path": "independent_source_v1/PRE_ACCESS_PLAN_v1.json",
+      "sha256": "2e77a6a33bbc297c7632f01ee23faa1e07b3391a87cfe55cc739e1f960b3c8c5",
+      "size": 1295
+    },
+    {
+      "path": "independent_source_v1/REPORT_v1.md",
+      "sha256": "4ad62277a3006254867bd8da501da9cb271dbb220b1b5a2f7d2df41a55ca0f95",
+      "size": 6540
+    },
+    {
+      "path": "independent_source_v1/SOURCE_ACQUISITION_v1.json",
+      "sha256": "34ac84932906f33a270203da67487a211c85994c9d7175625847fdc9cca4ba8a",
+      "size": 10571
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/ADDITIONAL_SOURCE_IDENTITIES_v1.json",
+      "sha256": "007010d73dfd42f43bcf3b0ccb47b78212e2efe9795e1c940561b241e351f085",
+      "size": 917
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/CURRENT_MAIN_BRIEF_PROVENANCE_v1.json",
+      "sha256": "15d571e97b2d76fc451ee534ee0babc3f998351408386a0d999dbe64467ab4e0",
+      "size": 696
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/FINAL_COMPARISONS_v1.json",
+      "sha256": "9d5fc7be450bf7fd48d7bca5db1bacac97ae74e6c9000b156113e0c4d16debcc",
+      "size": 23961
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/FINAL_EXECUTION_IDENTITIES_v1.json",
+      "sha256": "a5fe922d5ef33050c4a71ae0c440de0fe9f4bf8f639c85409e2f46254f838e9f",
+      "size": 2553
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/FINAL_NOTE_DIFF_v1.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/FIRST_READ_CANONICAL_EXACT_v1.md",
+      "sha256": "e4025969133e49394328cf628dc2797d041cd643ba7785953f5bc495fbdef53a",
+      "size": 20678
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/FIRST_TO_FINAL_NOTE_DIFF_v1.diff",
+      "sha256": "be5dc5364ea8022e3c1ad5810bf7749504d29583f90bdefd64f5c1a24635290e",
+      "size": 3078
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/INITIAL_SNAPSHOT_RECEIPT_v1.json",
+      "sha256": "716731df8a1b833181bcea62321843fe9f4dd0c15337fc17f7e68dae16c6a73f",
+      "size": 13085
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/NOTE_READ_CHRONOLOGY_v1.json",
+      "sha256": "cfa520e0bf6e2e74652074130d2969505df889d62ca7b2761b2bdc635e476695",
+      "size": 1256
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/additional_sources/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "size": 3148
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/additional_sources/scripts/scalar_cosmological_inverse.py",
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "size": 20416
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/final_execution/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_EXECUTION_v3.json",
+      "sha256": "aded934333f5ad9094a12a69933c3c4e28797304c6275be000254e3c28084fb4",
+      "size": 2764
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/final_execution/.claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_SOURCE_FREEZE_v3.json",
+      "sha256": "b9d14f8030832bfca46945c6e4c50525a2cc5251f449e8692eb1e0711967377e",
+      "size": 658
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/final_execution/logs/runner-cache/scalar_cosmological_inverse_check.txt",
+      "sha256": "c7ce3b03682676886b3ccdf3c587492809f6ebc3726c6cccc3122a13796173bd",
+      "size": 2359
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/final_execution/outputs/scalar_cosmological_inverse/RESULTS_v1.json",
+      "sha256": "e8a551d346094e7333bbb7ed9ece8b662836b743fd2ba6613b45f082b2875105",
+      "size": 409307
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/final_execution/outputs/scalar_cosmological_inverse/SUMMARY_v1.json",
+      "sha256": "5d2935fdc7fb62dfbcf42889ddeff6d870c7255828fd95bd785992b72f41872b",
+      "size": 1496
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/final_execution/scripts/scalar_cosmological_inverse.py",
+      "sha256": "1bf2d30207b99cea8508a612a739ed8b82dc7d6860920e101fb4e1374eccd9be",
+      "size": 20416
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/HANDOFF.md",
+      "sha256": "f346ce017ac4cbc3ffbd89cc18178b184b5879910c4eb59d7391de3836fdb4cf",
+      "size": 52413
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/REVIEW_HISTORY.md",
+      "sha256": "ae095e08202167de79ce00bcbfb497959a66e839b7238e3dd4f29d253b7fd950",
+      "size": 24561
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/action_selection/CANONICAL_EXECUTION_v2.json",
+      "sha256": "b6f6fd5120512f97c352e74c86f03623255f14aceb57d462afa7dc88fa5177b0",
+      "size": 2763
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/action_selection/CANONICAL_RESULTS_v2.json",
+      "sha256": "1eed4a595430b053f0061741ab20e0dda0663810f577aca351d76725a9bbd8d3",
+      "size": 408896
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/action_selection/CANONICAL_SOURCE_FREEZE_v2.json",
+      "sha256": "63dc520dcb9b5b5c6c582ab1fcb746fecd3657aba4bf03eb492362527580c885",
+      "size": 658
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/action_selection/CANONICAL_SUMMARY_v2.json",
+      "sha256": "f86d980f97c3dd4e17604afbb5a2781bfa56b509823749e9ac5381e6d0d9d26c",
+      "size": 1496
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/calibration_error/REVIEW_RECORD_v1.md",
+      "sha256": "4a1dc26147f0cf54ef2d60ce02ec600463d0fcfe2dd6181be408cbe18050f2bd",
+      "size": 6948
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/calibration_supplier/REVIEW_RECORD_v1.md",
+      "sha256": "50042e3dd1659f5ed2ec6906c03b700042d1f7c678ea93be5765d83d23ecaf2b",
+      "size": 5076
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/channel_quotient/REVIEW_RECORD_v1.md",
+      "sha256": "c033e23237f4e6e3a8d7f23363623c9f38eb70f302aceb8fb042b59f2ecc3596",
+      "size": 7835
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/pack/receiver_reference/REVIEW_RECORD_v1.md",
+      "sha256": "9fc805c35eee8764d598d980dc193053192491f2b7e3b9678e5923bea372cb5a",
+      "size": 11383
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo/docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "b54006b786e57dba1b2b5115f96d460485c9b9a86c6afb3ea275401ad3f12a25",
+      "size": 23722
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo/docs/EXPONENTIAL_SCALAR_DENSITY_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "40f112537627dd19ea0090a673f355f0d122c52844853798287f55e5b671e3fb",
+      "size": 20118
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo/docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "c66c3366d6ac0f3f371fc5067b18fa39ff7df2670d51d5a7e2add0468684bd50",
+      "size": 18501
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+      "size": 20906
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo/docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "size": 9827
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo/logs/runner-cache/scalar_cosmological_inverse_check.txt",
+      "sha256": "e2a6fe70c628002758225cc160ca471486110e14b8df70d33771ec28fcfe3785",
+      "size": 2359
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo/scripts/scalar_cosmological_inverse_check.py",
+      "sha256": "df487184eb73a347b1c5c6aacc641d49ea482cac75e2494dac15dcd6d07923ca",
+      "size": 3087
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo_final/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c8e52d53d2e2a4c02bc784668665e7d0c635c208492d32ebe968dd0e73bc8078",
+      "size": 20906
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/repo_first_read_e402/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c7d132096fd2c4f84cbfd484e2453054d266f6e4a870828b7caa04c4af20369c",
+      "size": 20679
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/ACCELERATED_PR_BODY_v1.md",
+      "sha256": "c5621ddfa2ddad26a90186348dc8fbe71741c71f1779f960266f7d7f5e21111b",
+      "size": 4224
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/DOPPLER_PR_BODY_v1.md",
+      "sha256": "f4eeece6fe07eb8e8e92887505b1bb5f6570f5bc6a1d4d7d4877da82110c68bb",
+      "size": 4517
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/ENERGY_PR_BODY_v2.md",
+      "sha256": "d59d87a9f344daf6f9c5fccce0cfce3c7f28a23344c7d32a968e885aa6e79e29",
+      "size": 6828
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/HISTORY_PR_BODY_v1.md",
+      "sha256": "5d54d7eb4bd22dfd73e17ea080703a606100f25786eadd9eee0b36463778de6f",
+      "size": 6991
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/M10_PR_BODY.md",
+      "sha256": "098b39cf0fa08fbfc88ace6f8278518d165e06ce277ba54ba2914ce89720d673",
+      "size": 4811
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/M11_POSTFREEZE_REPO_REFRESH_v1.json",
+      "sha256": "3a3fc083721ea0892a6d2f0f95ab05199f1d3d379f8365c678bbbabe13d1bf1f",
+      "size": 110202
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/M11_PR_BODY_v1.md",
+      "sha256": "704cbf5be375af3066815e3a70646c072066db4ebb1980e2c00b8757cff0524a",
+      "size": 3855
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/M7_PR_BODY_v1.md",
+      "sha256": "b2e7318aaf48ae80fb2e1ae7e21dfb5fd5eb2c22d956cf0dbdfc615929c732e0",
+      "size": 1715
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/M8_PR_BODY_v1.md",
+      "sha256": "12a4546c1886a1b830c5373039b7ae0e4068b4070f1a262bb0401445a1068913",
+      "size": 2955
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/M9_PR_BODY_v1.md",
+      "sha256": "ea423c63daa0c8dcf7d36e7dbdd58969e0cef909c988a73a83af0838b7e2ebc1",
+      "size": 4774
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/PHASE_PR_BODY_v1.md",
+      "sha256": "be8eedd682121c294c0622f7fdfe6a4170a6dcdcf553ecf23e62e9f446939ee5",
+      "size": 5260
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/PRS.json",
+      "sha256": "2788de7f3b383cbb539841f1a79fdf35e1dd0e4bf0cc1634793d27002240c719",
+      "size": 11388
+    },
+    {
+      "path": "independent_source_v1/m12_canonical_cluster_v1/runtime/PR_BODY_M1.md",
+      "sha256": "873f7374c09a26ab74b3d8da45a996187cd10392b746632b067bab2f6d3857f6",
+      "size": 4010
+    },
+    {
+      "path": "mutation_check_v1.py",
+      "sha256": "4737366a135928b24cd083514f9656dc4d7b134095001208708c6ef0686c803b",
+      "size": 4098
+    },
+    {
+      "path": "mutation_check_v2.py",
+      "sha256": "ee3ce5b905d1853ce428f5008afe85895bdfa703f77d0104d6b9aeeaaa0a060a",
+      "size": 4160
+    },
+    {
+      "path": "mutation_supplement_v1.py",
+      "sha256": "37ac6013dd644f727508f0884f5b42bd629d3aa750cb70ec38bca868e69b2b21",
+      "size": 3597
+    },
+    {
+      "path": "mutation_variants_supplement_v1/Bianchi_matter_trace.py",
+      "sha256": "cef88557ab18d68ec2f1f3809bcc02db56bb4ebb7597b8cec025e311e99a4c79",
+      "size": 20414
+    },
+    {
+      "path": "mutation_variants_supplement_v1/sharp_interface_transmission.py",
+      "sha256": "3ef74f92033e4ce5246b0fcd0f3c06688a1a84bbb162e9d9f09b43bafa0f1e9f",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_supplement_v1/tensor_endpoint_orientation.py",
+      "sha256": "0d467f1ab31e64fd9848f9b8b04d4ceefbd5b4558d8b8da2ba947e74b96d977d",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_supplement_v1/transverse_kinetic_factor.py",
+      "sha256": "6ae66c85454b8ed97fd399fa640cbf21ff85ef77c1b411ae150f1a56156a275a",
+      "size": 20414
+    },
+    {
+      "path": "mutation_variants_supplement_v1/transverse_potential_force.py",
+      "sha256": "015c1750c96d24be23916d3a77be428d3d822464ddb717df1c0ddbc9ae7cbcb7",
+      "size": 20414
+    },
+    {
+      "path": "mutation_variants_v1/background_coupling.py",
+      "sha256": "6f272c05c16221a3a3cf22968d4f7118ee3544a570744f4dc627260178b30f78",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v1/candidate_boundary.py",
+      "sha256": "5fd36b19eb42d6a771cc96c9f564a4a4790acca01cea50c7f5f6ba49dae5f911",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v1/candidate_root_branch.py",
+      "sha256": "b85e8fa9f5ece91916ebaf5321612f8274d191145e3ffbc6a717115eebac5c62",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v1/curvature_sign.py",
+      "sha256": "8e70ee088af1455ec91c1cea4f9169b1b6eec8c0a74f49d74267dd2dbb0c71cc",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v1/kinetic_second_derivative.py",
+      "sha256": "151354eeb0d38ac3b4368093a4ccf3b8d7e8e0a146acb5809d5c1406eb819fda",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v1/potential_Hv_normalization.py",
+      "sha256": "37bbf3b5b17f4579f5d901cb0b30ff5aaa9c2c527b5bb76a1db48ec4e6569b63",
+      "size": 20412
+    },
+    {
+      "path": "mutation_variants_v1/potential_friction.py",
+      "sha256": "358b407191aff3b48a9e6a33bb924c70c1d4a8fabc12bca003a0463379de9780",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v1/pressure_in_kinetic.py",
+      "sha256": "e49a95abcc31098499afcf79785d7600aff41250b02ecce9259d99fae32817d3",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v1/pressure_in_potential.py",
+      "sha256": "91249a424a062579e80e391f3a7fe859de4cefbffbddc2b4ef4c7f0bdf788146",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/Jordan_first_time.py",
+      "sha256": "f5317ea9f66e9cc349b9a0c421d7706989c6d619fe72eb605268fd87f48a5534",
+      "size": 20414
+    },
+    {
+      "path": "mutation_variants_v2/Jordan_second_time.py",
+      "sha256": "ae717d3db264fe5a36da6999915756cbd9acce9dddfa7c628aae5726889841e5",
+      "size": 20413
+    },
+    {
+      "path": "mutation_variants_v2/background_coupling.py",
+      "sha256": "6f272c05c16221a3a3cf22968d4f7118ee3544a570744f4dc627260178b30f78",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/candidate_boundary.py",
+      "sha256": "5fd36b19eb42d6a771cc96c9f564a4a4790acca01cea50c7f5f6ba49dae5f911",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/candidate_root_branch.py",
+      "sha256": "b85e8fa9f5ece91916ebaf5321612f8274d191145e3ffbc6a717115eebac5c62",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/curvature_sign.py",
+      "sha256": "8e70ee088af1455ec91c1cea4f9169b1b6eec8c0a74f49d74267dd2dbb0c71cc",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/kinetic_second_derivative.py",
+      "sha256": "151354eeb0d38ac3b4368093a4ccf3b8d7e8e0a146acb5809d5c1406eb819fda",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/potential_Hv_normalization.py",
+      "sha256": "37bbf3b5b17f4579f5d901cb0b30ff5aaa9c2c527b5bb76a1db48ec4e6569b63",
+      "size": 20412
+    },
+    {
+      "path": "mutation_variants_v2/potential_friction.py",
+      "sha256": "358b407191aff3b48a9e6a33bb924c70c1d4a8fabc12bca003a0463379de9780",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/potential_u_origin.py",
+      "sha256": "29b72892e9c13a5fc62f99b7796d29d1565cedc372a0305e887ce16d770f4f2f",
+      "size": 20420
+    },
+    {
+      "path": "mutation_variants_v2/pressure_in_kinetic.py",
+      "sha256": "e49a95abcc31098499afcf79785d7600aff41250b02ecce9259d99fae32817d3",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/pressure_in_potential.py",
+      "sha256": "91249a424a062579e80e391f3a7fe859de4cefbffbddc2b4ef4c7f0bdf788146",
+      "size": 20416
+    },
+    {
+      "path": "mutation_variants_v2/source_kinetic_factor.py",
+      "sha256": "6ebe4fc2749e4cf3f890d8714b95f9d2e2b47989a5f5005775c521c2ae1ebb79",
+      "size": 20414
+    },
+    {
+      "path": "mutation_variants_v2/source_potential_factor.py",
+      "sha256": "402426cf0973ee154791783e698b8353ebf52365990d33843402d33fd3567c02",
+      "size": 20414
+    },
+    {
+      "path": "precision_diagnosis_v1.py",
+      "sha256": "a96be8d4a855ef7ec753903d46d133538afe604fe89d8792fab2e14bff3f1649",
+      "size": 5744
+    }
+  ],
+  "excluded": [
+    {
+      "path": "independent_source_v1/page_renders/boisseau_page_2.png",
+      "sha256": "30e2a1e57344f2e0276f57018b6b6124f231e771674ff9991d8ca1efea8ffde7",
+      "size": 275476,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/boisseau_page_4.png",
+      "sha256": "c5a7258b8e32c5202645a283729ea69d05b071f053a5b950d02760acfe8c7f38",
+      "size": 310970,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/cantiello_page_5.png",
+      "sha256": "34f4a55dba0992d53c4c78d48f8e0e7804fbdf18be657819ffe9af6b22797208",
+      "size": 350478,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/cantiello_page_7.png",
+      "sha256": "e19055902057a001bcfd55ab49c4612d33fc00860d3a505cfaf2a1952d8c1585",
+      "size": 340570,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/cantiello_page_8.png",
+      "sha256": "9ed39262339f31f95797c70f6b57f6a702663274c9e649822a932a34808ab62e",
+      "size": 218955,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/dalang_fleury_lombriser_page_10.png",
+      "sha256": "5fa16d21237e1fcf147911acbf0b77cb7a7fb3732820eacef62053fe87b55a02",
+      "size": 278987,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/dalang_lombriser_page_16.png",
+      "sha256": "3c9da4ea072dbf0bbbb466338fade091dea7c577cdc4b34b0b036376aff3e366",
+      "size": 174747,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/dalang_lombriser_page_30.png",
+      "sha256": "f634c4869b7379386154e9a48a39ff2c8396daa9432a30fccbc80c295f744211",
+      "size": 176179,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/gw170817_detection_page_4.png",
+      "sha256": "eae83b411ab62806bd5de6f2f5082efa641996d846353b31a15a5b0548b2f767",
+      "size": 350357,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/gw170817_siren_page_12.png",
+      "sha256": "abdead416307052e3eb751356b74ec239e6236f2c4e4b1679398cc6a2052bd87",
+      "size": 237170,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/gw170817_siren_page_7.png",
+      "sha256": "4e3177d73c488078df580e177a4323179b2aac977e4e58a030b8969d538e44a5",
+      "size": 295313,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/page_renders/gw170817_siren_page_8.png",
+      "sha256": "c60ceb3f43ed45ec5135066e3916a3d645ba1e76f5b48fcc3abb51523f929042",
+      "size": 269831,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/boisseau.pdf",
+      "sha256": "11a0c92d8fb925a4f7c2a5308a6581206ff3572937bab42e047143fe889d896d",
+      "size": 124111,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/boisseau_abs.html",
+      "sha256": "a522ae966edf11d79019229c9030ec3652d8057d821053bfde9188520dbe0dc0",
+      "size": 42739,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/boisseau_text.txt",
+      "sha256": "196f2e041b5475c45b028852422d1e8cd94ca50e09f2e14e43127549b337a12e",
+      "size": 27700,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/cantiello.pdf",
+      "sha256": "b2a9f624db5d8f63a3e3fc930f11577c964b3afd89ee40b8c9099547d03bc41a",
+      "size": 392324,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/cantiello_abs.html",
+      "sha256": "b920e0d3039774773d3ca3b20e74325081bc2d119e5d82e71a7054d4f88c8266",
+      "size": 50401,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/cantiello_text.txt",
+      "sha256": "6fc7d52832126798d450ac9e7dc5acc3c81158a74bd51b952b358dec82a9c597",
+      "size": 53417,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/dalang_fleury_lombriser.pdf",
+      "sha256": "19f0a86f49b01987dc80d8b2acf27f19583e49e5091dc6bb75ccd7cfcd403dc9",
+      "size": 7096132,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/dalang_fleury_lombriser_abs.html",
+      "sha256": "5c1de6e07a8118419477b68111912fe5d3fd5815c22922d98c6ce1fcd35d5212",
+      "size": 44320,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/dalang_fleury_lombriser_text.txt",
+      "sha256": "2d30e7a437f91f6e066fa7284491cc67acc2f17b27f16ed1d3cfaa01183da420",
+      "size": 133954,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/dalang_lombriser.pdf",
+      "sha256": "0100c7c6fb953ab3eb76414c5b813845e04672d2926ea8a06a4afd1d88d39f20",
+      "size": 642254,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/dalang_lombriser_abs.html",
+      "sha256": "d6b8605c1f37acc5f67235a8e51c1fadd59ff9aaa09ba12d7b4e597bda91781f",
+      "size": 45479,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/dalang_lombriser_text.txt",
+      "sha256": "29822a9f1734835ab68a352993c2a55d7398651b65c5f15832955629994cbe3f",
+      "size": 152572,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/gw170817_detection.pdf",
+      "sha256": "0fcadae9d35e72c6c903ce6466e105e6ea84358397384a88471080acfbd2d024",
+      "size": 1599186,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/gw170817_detection_abs.html",
+      "sha256": "4973e95fe3c82b0604f90292c309dd4caaf05ea5ba51c637cf3b8524e02dee12",
+      "size": 45041,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/gw170817_detection_text.txt",
+      "sha256": "f5527cdffda71484c6889d674ed9665a61b615ffb13de15cdc85169952f10cde",
+      "size": 113875,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/gw170817_siren.pdf",
+      "sha256": "092484465d79492675bdc69e7dbcc9ea1511cfb8b1e4eddf18dc78f9b31c92ed",
+      "size": 555789,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/gw170817_siren_abs.html",
+      "sha256": "40f684e824b3519b87be770e52e71e50a542ca62a1173bbd338310d7f2fcb24d",
+      "size": 269877,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "independent_source_v1/primary_sources/gw170817_siren_text.txt",
+      "sha256": "2e7d7e8d67c98853f732cb26066b95e53938b613f55bba883b8680a2112df173",
+      "size": 115856,
+      "reason": "external full-text/image reading asset retained locally; exact version URL and acquisition/read-scope records published"
+    },
+    {
+      "path": "mutation_variants_supplement_v1/__pycache__/Bianchi_matter_trace.cpython-312.pyc",
+      "sha256": "ddcbd9a7ae8a57ae206f516444e3df611074944e8b4d035d7d5e45db8e0b6853",
+      "size": 39117,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_supplement_v1/__pycache__/sharp_interface_transmission.cpython-312.pyc",
+      "sha256": "3f2f09fc7082788198673c85687543baae9d87a022a8116cfb0b5b24db9a40ee",
+      "size": 39135,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_supplement_v1/__pycache__/tensor_endpoint_orientation.cpython-312.pyc",
+      "sha256": "47059cc6bde3f6f0714deaac1089bacd8ea3201162c67648fae516a711eb8eaa",
+      "size": 39134,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_supplement_v1/__pycache__/transverse_kinetic_factor.cpython-312.pyc",
+      "sha256": "2e3881d1a67e61a10e2ad9820f74e92925c0310903a5bf914d35296437eac35e",
+      "size": 39122,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_supplement_v1/__pycache__/transverse_potential_force.cpython-312.pyc",
+      "sha256": "016b85f0631845b0d3773b8cee14cf3ccf621128ffe81ed285217c67185b3954",
+      "size": 39122,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/Jordan_first_time.cpython-312.pyc",
+      "sha256": "43dce4b7dca1cc71b9c48690827552b36609a980ff83770d61187107f9a46c89",
+      "size": 39102,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/Jordan_second_time.cpython-312.pyc",
+      "sha256": "c537b40eed9c00f427badaa108c811acd382aeca464e60b8167b31cb0a4998cf",
+      "size": 39104,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/background_coupling.cpython-312.pyc",
+      "sha256": "b633e455cbc453da42f2aab6bd3b718bbbc5f71f5412435b67cd43be7dc43ee3",
+      "size": 39120,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/candidate_boundary.cpython-312.pyc",
+      "sha256": "69827e172863d344c3bd2c590469fea5fd5fe16310e0b0f7a669705b502ec111",
+      "size": 39114,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/candidate_root_branch.cpython-312.pyc",
+      "sha256": "e30fb0637fff3db0511cd78ffe614ee93ca4e88acd8472d01600d3b41ff33521",
+      "size": 39117,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/curvature_sign.cpython-312.pyc",
+      "sha256": "731008bb47c466341f3bf3a331a13a1dd77dd7545aa140c6aa46301e75a9d350",
+      "size": 39110,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/kinetic_second_derivative.cpython-312.pyc",
+      "sha256": "d9a714863b4d1add02ce1e7f79ddbd20f92019426f739a7c69801ae3725415a3",
+      "size": 39121,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/potential_Hv_normalization.cpython-312.pyc",
+      "sha256": "b6af07f272366ee5bfc7098162dd1dabcd62eb2133cec59d59de2c4456e570d8",
+      "size": 39111,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/potential_friction.cpython-312.pyc",
+      "sha256": "0f1ff1c85afcc197640fb19406f514c11474e2cbf770792d04853178111cc945",
+      "size": 39110,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/potential_u_origin.cpython-312.pyc",
+      "sha256": "79cd4404bd5dcad8ce20f7e929a80811dda0491587758de291ad9a51cecb8f87",
+      "size": 39124,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/pressure_in_kinetic.cpython-312.pyc",
+      "sha256": "a0a128ebe43ade02246687228852cd1699a4d0b101358127a2023059a7ed945d",
+      "size": 39115,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/pressure_in_potential.cpython-312.pyc",
+      "sha256": "0663705597a6e11228250928ea63953bcd69f1e491deebf65e0814a0bc9b3d8c",
+      "size": 39117,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/source_kinetic_factor.cpython-312.pyc",
+      "sha256": "6ebaf2a970b0fc2a784ef3dbc6bc573b6e7749f3d3aeaf58e1dbb2b74f0f6cbd",
+      "size": 39107,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    },
+    {
+      "path": "mutation_variants_v2/__pycache__/source_potential_factor.cpython-312.pyc",
+      "sha256": "cd54cf9b05e501fa9e6109d054dedf7f1f54c595902296a5ea22e5edf1053794",
+      "size": 39108,
+      "reason": "generated Python bytecode; reproducible non-evidence"
+    }
+  ],
+  "selected_plain_files": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_EQUIVALENCE_v5.json",
+      "sha256": "5bd85d7fad11adb9a08020f6a0843a6174260ddbe3f24ea789ea653b02036d39",
+      "size": 406
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_EXECUTION_SETUP_FAILURE_v5.json",
+      "sha256": "1b5fa91796df3f840021b7e7112a98ada80657eba9858f4acc4d46a88ceaaeac",
+      "size": 238
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_EXECUTION_v5.json",
+      "sha256": "d25aa3825683e864ef88834618f6b28f9329d7246a29a164a1e76fa0917cc44f",
+      "size": 1007
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_RECEIPT_RECOVERY_FAILURE_v5.json",
+      "sha256": "ba146885f3ecc34e1fda1a2c3e3c5bd2fb1a0334b282ff30983489ae297bfa0a",
+      "size": 239
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_RECEIPT_SERIALIZATION_FAILURE_v5.json",
+      "sha256": "9c3798eb2442d8a894dbabe3ea4df0101ab87200f08c2af443704b22339d3d67",
+      "size": 359
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_RESULTS_v5.json",
+      "sha256": "2b756409b2017263494901308f0ba4475512241783a594719db86d74655da3c1",
+      "size": 409494
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_SOURCE_FREEZE_v5.json",
+      "sha256": "cfe424db2bfae82219e40af410ac8f5d149f8c491ba8cbf699fdb46b9805fc58",
+      "size": 845
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CANONICAL_SUMMARY_v5.json",
+      "sha256": "dd83ba99eed5d250ae005480bd9f25edff313e80f4011d697e1c7201270450da",
+      "size": 1683
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/CHECKPOINT_v3.json",
+      "sha256": "cadbeb3746dee5e7c37446fa2b80d6f2d09156cb396360ede5ae16614af41943",
+      "size": 887
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/EVIDENCE_README.md",
+      "sha256": "9ebe39b053f5ac13f5ab45f39cb1bebf0b8840c092c3cabd5fd7ba45eca4f78c",
+      "size": 1393
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/EXECUTION_v1.json",
+      "sha256": "d4e1a24e7a7510d5a8d4a85c07b17a70c8322cc853e3330d5977748bb4c7b7a8",
+      "size": 1047
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/MECHANICAL_SOURCE_PREFLIGHT_v1.json",
+      "sha256": "3b1d1af2f61112d9e7652d26dfbcbb496b46a48152b8cf7b28711018f8aba031",
+      "size": 1668
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/MUTATION_FREEZE_v2.json",
+      "sha256": "15451277de83fb2f5de373d1382193018f0e730c66938b216cc621a7b3f5f255",
+      "size": 5374
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/MUTATION_RESULTS_v2.json",
+      "sha256": "382e93c4158ff59346a3749eb84cae27f282c37735f37a3c80e6ab81cd6ca08d",
+      "size": 20879
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/MUTATION_SETUP_FAILURE_v1.json",
+      "sha256": "455433f61c1010b175eff8aa105cc6ae19bbc8fee0029dfa8cc62614edced3c0",
+      "size": 376
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/MUTATION_SUPPLEMENT_FREEZE_v1.json",
+      "sha256": "deab562eb71510c11a6d5095f87101256a2ecb690162697accd4222c9c81a5aa",
+      "size": 2343
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/MUTATION_SUPPLEMENT_RESULTS_v1.json",
+      "sha256": "b19746508248d42a39b8c711a07d53129dd722b52d2d76d6905475788df0c1a7",
+      "size": 3734
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "0cb89a9f341c5e1db27d7a67b4b8a063626522659b6700210565e27c276de329",
+      "size": 8266
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/PRECISION_DIAGNOSIS_v1.json",
+      "sha256": "cf4f5f7dd99b9a079244c203aacbb5370a1da7be53a47e7afc2948a4b4b1d515",
+      "size": 60539
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/PRE_EXECUTION_FREEZE_v1.json",
+      "sha256": "06067f96784486aa174e49b88189406ef2a8e9ea825a5ca64190f92fb5c2acd5",
+      "size": 782
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/RESULTS_v1.json",
+      "sha256": "b8a3721a16dae081bf16aa342451aa85d3dc5bfa0b0fe7408031f131a884f822",
+      "size": 221299
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/REVIEW_RECORD_v1.md",
+      "sha256": "e2363a039f43dde8442240512f53feab0130ea60615a9bb703cc57ac6c2ae4c9",
+      "size": 12109
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/ROUTE_CONTEXT_v1.json",
+      "sha256": "87fa5dd300b940ac79502ae540feba5acbadd6bf15a3b178b5926460cb3ddb15",
+      "size": 7071
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/SYNTHETIC_PROTOCOL_v1.json",
+      "sha256": "7f504a86f3e82cbcc7129ba7c2233b044430e70b7ede1ad82564c298f9ea3ab1",
+      "size": 3148
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/AUTHOR_NOTE_COMPARISON_IDENTITY_v1.json",
+      "sha256": "de25bdc2bc55d680be3c970aafd0b7336891b5d5f894adc7207d72e19f29ac9e",
+      "size": 2805
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/AUTHOR_NOTE_COMPARISON_v1.md",
+      "sha256": "8b785b2a52d6d42dd8f4fe5e17d5af41bc8acbc41a9899b027de04eeb393f05f",
+      "size": 6894
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "3e65813d8678f8ef1791fa55abfc383cec471d7d848785efe99436b312f634b5",
+      "size": 4457
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "84c0837516cb0776f9af5f688eb20396783e5ff6dbc2e8526ced94303563fbc2",
+      "size": 16331
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CONFORMANCE_SUPPLEMENT_IDENTITY_v1.json",
+      "sha256": "b7b7629df40a6ce98a56e8cb9b16f18c577800c7852a437f787dcd15064c394f",
+      "size": 3502
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CONFORMANCE_SUPPLEMENT_v1.md",
+      "sha256": "94d91975510ad84040e4c22230c60da0b1b9c8ca46c96e4f0ee002eb4e9e5a10",
+      "size": 6271
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/CONTROL_RESULTS_v1.json",
+      "sha256": "c860bf5331c7f03f5d317a9b7ec41d54c4a57c5bed01ffbb8125efb12b48f0bf",
+      "size": 11028
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/INDEPENDENT_MATH_IDENTITY_v1.json",
+      "sha256": "50a88fbcc91f8ca007e1ba7d7f2d96c4aa3c5dbf1dc0c439722d7a06be612efa",
+      "size": 4483
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/INDEPENDENT_MATH_v1.md",
+      "sha256": "aa6f275dd043529fc824a00b0ebdbb190abf610a6ddfb9fc1e4ecad81edaa21a",
+      "size": 19457
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/STATUS_MUTATION_SUPPLEMENT_IDENTITY_v1.json",
+      "sha256": "caeb6d106615b30f95de6628cdb2e0117e77ec147a548d756a8d1ec042b36bb9",
+      "size": 3806
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_math_v1/STATUS_MUTATION_SUPPLEMENT_v1.md",
+      "sha256": "4647af19cd1b688448465f524580ccf12ac68a02ee97ca4e7b449d7c0b5f4919",
+      "size": 5407
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/BINDING_SERIALIZATION_FAILURE_v3.json",
+      "sha256": "879c5894e758a4366ba16095538021dc803a7afb81960b4d6122d38a521f4d24",
+      "size": 1428
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/FINAL_BINDING_RESULTS_v3.json",
+      "sha256": "844c28b58a5d986fb2b937ba57087c28ed35a8b23ae94fc4c5609b3736a61226",
+      "size": 1985
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/FINAL_CONFIRMATION_v3.md",
+      "sha256": "03b965d782254af948551e35e9a63d1cf7f33596372f404384a2da9143b6e5c2",
+      "size": 4441
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/FINAL_IDENTITY_v3.json",
+      "sha256": "dd88fa251f7763b1b42111f69c6ac5fbf90936b9684a0b68122b54abd0d64390",
+      "size": 10431
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/INDEPENDENT_SUMMARY_v1.json",
+      "sha256": "92da40dc0d477d785ccc3b15f7ce2380e56108c862de6466c917600c6d5db252",
+      "size": 22021
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/NUMERICAL_IDENTITY_v1.json",
+      "sha256": "6eb433215c4de492603d44355bbc797602062bfe9368a97b6e06fd4b45c5e268",
+      "size": 8088
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_numeric_v1/NUMERICAL_REVIEW_v1.md",
+      "sha256": "c3cfd208126aec9f1c8c27d7e02f663446ce5e58b9616ca69f1d1b2e782149f8",
+      "size": 10815
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/FINAL_RECEIPT_v1.json",
+      "sha256": "a4bca338c54ce76ae00fc7060eb548152ca40753477f72ec44a2f31c4a720895",
+      "size": 10615
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/INDEPENDENT_ADMISSION_FREEZE_v1.json",
+      "sha256": "7ce4081bd8924a45ae21636f71ed5b7bbdb8e8e81bd0eccda8f098fb01dd6e99",
+      "size": 6478
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/INDEPENDENT_ADMISSION_v1.md",
+      "sha256": "4b9f0c6367dd95a2060ae0741768c0102aa1f7266d5adfd533f53a9929d6e9c8",
+      "size": 8809
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/M12_CANONICAL_CLUSTER_IDENTITY_v1.json",
+      "sha256": "939766526ed8235b835349a0d8ed57d076283465afc74050d3197a68479d9269",
+      "size": 13147
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/M12_CANONICAL_CLUSTER_REVIEW_v1.md",
+      "sha256": "1fa91a6f32e486e0fb229c1b6bbebe4d86e00bf19a1188937f6460dec6f6757d",
+      "size": 8800
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/M12_CLUSTER_CAP_VERDICT_v1.md",
+      "sha256": "d072bee2fad81757d47397225adda9e435b4dde20f38af20245f244561c85696",
+      "size": 2412
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/PAGE_RENDER_IDENTITIES_v1.json",
+      "sha256": "ac1b3fb2ef8cfa642a9da4097316d58c29f3e389b65b83fcf22b1d8b38edacb6",
+      "size": 4647
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/REPORT_v1.md",
+      "sha256": "4ad62277a3006254867bd8da501da9cb271dbb220b1b5a2f7d2df41a55ca0f95",
+      "size": 6540
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/action_selection/independent_source_v1/SOURCE_ACQUISITION_v1.json",
+      "sha256": "34ac84932906f33a270203da67487a211c85994c9d7175625847fdc9cca4ba8a",
+      "size": 10571
+    }
+  ],
+  "self_exclusion": "archive and index do not include themselves; generated bytecode and external full-paper assets excluded with hashes"
+}

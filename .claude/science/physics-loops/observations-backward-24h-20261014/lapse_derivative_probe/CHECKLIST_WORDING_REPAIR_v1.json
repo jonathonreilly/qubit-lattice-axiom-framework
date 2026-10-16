@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-15T19:22:50.327763+00:00",
+  "finding": "N7 incorrectly excluded spatially variable lapse despite the theorem and witness admitting it. Reviewer launch_check found this; no theorem/helper defect.",
+  "old_sha256": "6b19e478f9fce02f46cc191772d50e34ea99478956bfb01241f415caf2841291",
+  "new_sha256": "7022a833cf7ac076ac2418ff2073e816dcf65e69f055059f199350f38c77fb13",
+  "old_copy": "NO_GO_DISCIPLINE_CHECKLIST_historical_v1.md",
+  "repair": "variable/negative lapse -> vanishing/nonpositive lapse",
+  "action": "Repeat source-bound aggregate because declared checklist bytes changed; all scientific sources unchanged."
+}

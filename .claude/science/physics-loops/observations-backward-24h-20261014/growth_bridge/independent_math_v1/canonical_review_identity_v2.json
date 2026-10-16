@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-15T13:27:52.290037+00:00",
+  "type": "Final focused canonical source closure; no formal audit",
+  "complete_review": "canonical_review_v1.md",
+  "affected_closure": "canonical_review_v2.md",
+  "note_sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7",
+  "helper_sha256": "5561f381fd2fd82ae1a979dcd8d79f275f8b4a500f3fbbc607c8a82ad63efecf",
+  "primary_sha256": "9b229daa53db4d896709f4741b4499d59e2440b191d5305143196ea6ff4a0fae",
+  "protocol_sha256": "1a3e541a71573b43b6c7ffc26d8a61680cc75d4f8fa96403f31937cc62edc088",
+  "checklist_sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd",
+  "exact_core_AST_matches": {
+    "real_number": true,
+    "positive_q": true,
+    "coupling_shape": true,
+    "validate_rows": true,
+    "integrated_inverse": true,
+    "lift_inverse": true,
+    "tensor_inverse": true
+  },
+  "affected_regression_controls": 5,
+  "affected_failures": 0,
+  "closed_findings": [
+    "F1 positive-q gate",
+    "F2 exact finite sampled domain",
+    "F3 singular residual after rejected domain"
+  ],
+  "aggregate_or_ode_run": false,
+  "empirical_data_opened": false,
+  "background_numerical_verification_claimed": false,
+  "files": {
+    "canonical_review_v1.md": {
+      "sha256": "56885c895c7ff06ff10c45667060766ade713ba7dd49545a9e7960e8106a5d44",
+      "bytes": 11131
+    },
+    "canonical_review_identity_v1.json": {
+      "sha256": "7dc25fb7f5b742403196391fc302dbe1528175bfbd8cf2ab75a9ba686d343732",
+      "bytes": 1756
+    },
+    "canonical_review_v2.md": {
+      "sha256": "5cb5cacdd97d8ae7992bfb606ea0688dec967ef5511208eccd5728fe2d56bdc1",
+      "bytes": 4911
+    },
+    "canonical_affected_freeze_v3.json": {
+      "sha256": "0f7523ad764e5903631e3dc4371ad699331468d07e79fc0c3b30b1a8f3722163",
+      "bytes": 1069
+    },
+    "canonical_affected_diff_v3.txt": {
+      "sha256": "aa3ac58f37c188e77b98524a933ce1e5698d169cd831924ce34e3c7ef21f8413",
+      "bytes": 6001
+    },
+    "canonical_helper_v3.py": {
+      "sha256": "5561f381fd2fd82ae1a979dcd8d79f275f8b4a500f3fbbc607c8a82ad63efecf",
+      "bytes": 27308
+    },
+    "canonical_note_v3.md": {
+      "sha256": "28b28d2a9da9c7682bc225f8b97e122bac638059cf88c5f4986876b2d20df9a7",
+      "bytes": 20485
+    },
+    "canonical_checklist_v3.md": {
+      "sha256": "a97de6650bab6906de68804777c5137ad368eef43439ab04c1c9a44a96fac9dd",
+      "bytes": 8087
+    },
+    "canonical_domain_repair_checks_v1.py": {
+      "sha256": "944ae9c116f5286d40d634f6c3165dee0d432609dea102a4b05fa3598e6ca8f6",
+      "bytes": 2239
+    },
+    "canonical_domain_repair_freeze_v1.json": {
+      "sha256": "2457d01578556748f99131abbbc6b908aeaa4c0d454c245b4d5fd8b3c4e92b9b",
+      "bytes": 313
+    },
+    "canonical_domain_repair_results_v1.json": {
+      "sha256": "6c6d00b25692fc653047a42ab2de1663317683c4778f59dcb8c5617ebbff919a",
+      "bytes": 1458
+    }
+  }
+}

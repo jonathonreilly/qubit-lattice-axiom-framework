@@ -1,0 +1,22 @@
+{
+  "scope": "Mechanical graph and source/cache readiness only; no formal audit",
+  "row": {
+    "claim_id": "scalar_projected_covariance_bounded_theorem_note_2026-10-15",
+    "note_path": "docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem",
+    "runner_path": "scripts/scalar_projected_covariance_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_dynamical_forward.py",
+      "scripts/scalar_projected_forward.py",
+      "scripts/scalar_projected_geometry.py",
+      "scripts/scalar_projected_weak.py"
+    ],
+    "deps": [
+      "scalar_dynamical_momentum_inverse_bounded_theorem_note_2026-10-15"
+    ]
+  },
+  "issue": null,
+  "cache_status": "fresh",
+  "cache_sha256": "a7ec9d7aa4b8fd6e21b236643e096a76264a67da3e6a8c38bce9a1dcf303f742",
+  "initial_probe": "Tool330d33 used note_path on graph node whose actual field is path; StopIteration before any output/write. Corrected schema mapping here."
+}

@@ -1,0 +1,184 @@
+{
+  "created_utc": "2026-10-15T17:33:18.964221+00:00",
+  "scope": "Actual source mutations in isolated copies; failure detection does not prove the theorem",
+  "baselines": [
+    {
+      "case": "baseline_geometry",
+      "base_source": "scripts/scalar_unequal_geometry.py",
+      "base_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "variant_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "selector": null,
+      "replacement": null,
+      "expected_matches": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 2.9888762910850346,
+      "checks": 43,
+      "failed_checks": [],
+      "classification": "baseline_pass"
+    },
+    {
+      "case": "baseline_sampling",
+      "base_source": "scripts/scalar_unequal_sampling.py",
+      "base_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "variant_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "selector": null,
+      "replacement": null,
+      "expected_matches": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 2.3704540417529643,
+      "checks": 46,
+      "failed_checks": [],
+      "classification": "baseline_pass"
+    }
+  ],
+  "mutations": [
+    {
+      "case": "geometry_U_sign",
+      "base_source": "scripts/scalar_unequal_geometry.py",
+      "base_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "variant_sha256": "9b75baae6a336918c777f271a8385c747944fecf3730478b8ce8349de759cc1c",
+      "selector": "U = s.factor(s.diff(gamma, A))",
+      "replacement": "U = -s.factor(s.diff(gamma, A))",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 3.0077954581938684,
+      "checks": 43,
+      "failed_checks": [
+        "PSD_gaussian_leading_coefficient",
+        "PSD_annihilated_response_leading"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "geometry_six_annihilators",
+      "base_source": "scripts/scalar_unequal_geometry.py",
+      "base_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "variant_sha256": "62e8da81d255c6b80868483e6c2acc9aab0bfab8a469331f9767b735f30ff0ea",
+      "selector": "range(7)",
+      "replacement": "range(6)",
+      "expected_matches": 3,
+      "exit_code": 1,
+      "elapsed_seconds": 2.8729438330046833,
+      "checks": 43,
+      "failed_checks": [
+        "lowmode_annihilator_0",
+        "PSD_annihilated_response_degree",
+        "PSD_annihilated_response_leading"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "geometry_spatial_missing_product_term",
+      "base_source": "scripts/scalar_unequal_geometry.py",
+      "base_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+      "variant_sha256": "567f795955ad28b926aed30ad40eada91e0b4173d8a404626affee6d2a82ef21",
+      "selector": "kap*pg(ff)-s.diff(kap,r)*ff-kap*kap*pg(rr)",
+      "replacement": "kap*pg(ff)-kap*kap*pg(rr)",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 2.9629345000721514,
+      "checks": 43,
+      "failed_checks": [
+        "generic_spatial_constraint"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "sampling_frozen_y_adjoint",
+      "base_source": "scripts/scalar_unequal_sampling.py",
+      "base_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "variant_sha256": "5682aa96f71f80d11fc4ea5ce4f20cbdb758693abd20f276d1a424442daca75f",
+      "selector": "Ts=lambda f:-s.diff(y*f,n)+c*f",
+      "replacement": "Ts=lambda f:-y*s.diff(f,n)+c*f",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 2.327350249979645,
+      "checks": 46,
+      "failed_checks": [
+        "T_adjoint",
+        "full_ordered_weak_composition"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "sampling_reversed_spatial_adjoint",
+      "base_source": "scripts/scalar_unequal_sampling.py",
+      "base_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "variant_sha256": "05ba6696b2d91c7a84f9c899826a152660432ebf22b290e04bc635bc7a089556",
+      "selector": "ksu=-Ds(Ps(Ls(z)))",
+      "replacement": "ksu=-Ds(Ls(Ps(z)))",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 2.39320412511006,
+      "checks": 46,
+      "failed_checks": [
+        "full_ordered_weak_composition"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "sampling_born_factor_two",
+      "base_source": "scripts/scalar_unequal_sampling.py",
+      "base_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "variant_sha256": "cd0ddf0ceae1e828766d33b5bee11fe5c2c2b3ec96eb6d2dc22be7d0f9366530",
+      "selector": "psi=s.integrate((1/t-1/q)*t**degree,(t,0,q))",
+      "replacement": "psi=s.integrate(2*(1/t-1/q)*t**degree,(t,0,q))",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 2.3756781672127545,
+      "checks": 46,
+      "failed_checks": [
+        "born_inverse_degree_2",
+        "born_adjoint_degree_2",
+        "born_inverse_degree_3",
+        "born_adjoint_degree_3",
+        "born_inverse_degree_5",
+        "born_adjoint_degree_5",
+        "born_inverse_degree_7",
+        "born_adjoint_degree_7"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "sampling_spin_factor_half",
+      "base_source": "scripts/scalar_unequal_sampling.py",
+      "base_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "variant_sha256": "a9db9c2b2f862df0ff2e9aa32fe6a7b39b5bc121e59e5c3a3d5af3274fcd09d4",
+      "selector": "Q=s.Rational(2,M)",
+      "replacement": "Q=s.Rational(1,M)",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 2.427636000327766,
+      "checks": 46,
+      "failed_checks": [
+        "spin_adjoint_2_2",
+        "spin_adjoint_3_3",
+        "spin_adjoint_4_4",
+        "spin_adjoint_5_5"
+      ],
+      "classification": "detected_by_failed_controls"
+    },
+    {
+      "case": "sampling_auto_including_self_normalization",
+      "base_source": "scripts/scalar_unequal_sampling.py",
+      "base_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a",
+      "variant_sha256": "6f846dd6780e14f95b2fb61c914799bca2f424752110c9ead068cc6cde33a7e5",
+      "selector": "if i!=j)/6",
+      "replacement": "if i!=j)/9",
+      "expected_matches": 1,
+      "exit_code": 1,
+      "elapsed_seconds": 2.383863582741469,
+      "checks": 46,
+      "failed_checks": [
+        "distinct_pair_expectation_latent_-1",
+        "distinct_pair_expectation_latent_1"
+      ],
+      "classification": "detected_by_failed_controls"
+    }
+  ],
+  "counts": {
+    "mutations": 8,
+    "failed_controls": 8,
+    "exceptions": 0
+  }
+}

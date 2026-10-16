@@ -1,0 +1,1117 @@
+{
+  "cache_fingerprint_recorded_not_pipeline_revalidated": "0c71f08559a48025c2dd6e9254798421449dda292ee88c70514f891418489539",
+  "canonical_counts": {
+    "failed": 0,
+    "passed": 29
+  },
+  "canonical_execution_reported_seconds": 5.654582977294922,
+  "complete_scientific_read_scope": [
+    "M12, M13, M14 and final M15 notes, all sections and equations",
+    "All four paired summaries",
+    "M15 scope checklist",
+    "Reused original source report/derivation and post-exposure comparison at unchanged source identities"
+  ],
+  "disposition": "No material physical-source/measurement overclaim or required correction within stated scope.",
+  "empirical_tests": 0,
+  "external_messages": 0,
+  "frozen_utc": "2026-10-15T16:43:57.147201+00:00",
+  "git_mutations": 0,
+  "identity_check_count": 93,
+  "identity_checks": [
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "M12_summary_note_identity"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "M13_summary_note_identity"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "M14_summary_note_identity"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "M15_summary_note_identity"
+    },
+    {
+      "detail": {
+        "actual": "51b940a11b426e2ca572c9a765c76ca0b47cdc516841a50a9d09d09ac43c4ac0",
+        "expected": "51b940a11b426e2ca572c9a765c76ca0b47cdc516841a50a9d09d09ac43c4ac0",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/CHECK_RESULTS_v1.json"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "efd9cfdd789ffac827d138e590e93412cd1798e1a1dc72d661ca0b5d59ddb254",
+        "expected": "efd9cfdd789ffac827d138e590e93412cd1798e1a1dc72d661ca0b5d59ddb254",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/DERIVATION_v1.md"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "3a440877d492e25d37aa04510619dd444a2c2947cbd305b5c1ab255138be9889",
+        "expected": "3a440877d492e25d37aa04510619dd444a2c2947cbd305b5c1ab255138be9889",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/EXECUTION_RECEIPT_v1.json"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "778ebe05ffdf4b58b5e650914d1f694c18945d0827e0620a950d7d6cb80dbeb7",
+        "expected": "778ebe05ffdf4b58b5e650914d1f694c18945d0827e0620a950d7d6cb80dbeb7",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/PRE_EXECUTION_PLAN_v1.md"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "8c547f6191b8f1e2c795b1824380c171eb9ab6b1dd8dc36f3e708d4ee0204f3e",
+        "expected": "8c547f6191b8f1e2c795b1824380c171eb9ab6b1dd8dc36f3e708d4ee0204f3e",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/REPORT_v1.md"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "5f2eea729d5ca771119848fcb91b26f7dfdd7d4684ad2cff7fcd2428c3783bc4",
+        "expected": "5f2eea729d5ca771119848fcb91b26f7dfdd7d4684ad2cff7fcd2428c3783bc4",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_ACQUISITION_v1.json"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "bc7c9a36f60ee2fb039cedf65d49dc19b7a5c32a61df0f0c9678f6edc78404b9",
+        "expected": "bc7c9a36f60ee2fb039cedf65d49dc19b7a5c32a61df0f0c9678f6edc78404b9",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_ACQUISITION_v2.json"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "e760c988e368bf9ae3775cf6f6178c58baf9572839212e22028ad41e90760bb2",
+        "expected": "e760c988e368bf9ae3775cf6f6178c58baf9572839212e22028ad41e90760bb2",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_RECORD_v1.json"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "35018cfdd4091acbf2c3b60ecce5193891302151ffab5931517ce0ea224201ea",
+        "expected": "35018cfdd4091acbf2c3b60ecce5193891302151ffab5931517ce0ea224201ea",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/check_projection_v1.py"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "5f6cfb4234fdf12689aa8f1fa9ede30d120d698f7f68939c196ef52c6b84df0e",
+        "expected": "5f6cfb4234fdf12689aa8f1fa9ede30d120d698f7f68939c196ef52c6b84df0e",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p2.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "954cf9be170263034d9b14813b32b1271639ba8bbc12edd7f196f1ce4f77c4bd",
+        "expected": "954cf9be170263034d9b14813b32b1271639ba8bbc12edd7f196f1ce4f77c4bd",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p3.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "c8f88b28b2c8fb33b0c5742797c4424fd9cd386213929ce927c82498685c0484",
+        "expected": "c8f88b28b2c8fb33b0c5742797c4424fd9cd386213929ce927c82498685c0484",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p4.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "65ec5b6aae2aad3498b3d4f3de41b75247ed4c2a8620082b3063307124646d94",
+        "expected": "65ec5b6aae2aad3498b3d4f3de41b75247ed4c2a8620082b3063307124646d94",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p5.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "71b8e602f51828e85fdab43e34542f6be990353b23a0f1b38c548719f8c1702f",
+        "expected": "71b8e602f51828e85fdab43e34542f6be990353b23a0f1b38c548719f8c1702f",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p1.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "5bfe2f29fc2bf99b57ec3436dbc3ea9ac1a163710b910b6cb5999e096495cb32",
+        "expected": "5bfe2f29fc2bf99b57ec3436dbc3ea9ac1a163710b910b6cb5999e096495cb32",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p2.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "ea7079a8ce6a3449c4c9976d8c8de82358168916802f467c2e76ade3abe62617",
+        "expected": "ea7079a8ce6a3449c4c9976d8c8de82358168916802f467c2e76ade3abe62617",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p3.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "859313f5cd26b163d60a9132861735e2cf3fcc1412010b0577eeb5991557d11d",
+        "expected": "859313f5cd26b163d60a9132861735e2cf3fcc1412010b0577eeb5991557d11d",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p3.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "0d9605ba03d64244f102c6d44b469c030eea4613a33ca4d6dfd2e2e2ea8729d0",
+        "expected": "0d9605ba03d64244f102c6d44b469c030eea4613a33ca4d6dfd2e2e2ea8729d0",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p4.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "1f070014e3accf7f8189da5e40dd51dd3b0e3542fbdeb3c627f4892e4d36b613",
+        "expected": "1f070014e3accf7f8189da5e40dd51dd3b0e3542fbdeb3c627f4892e4d36b613",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p6.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "afb430e26b76658e7d1b1d77c049f73b45583261d03c7a529a6155607454b343",
+        "expected": "afb430e26b76658e7d1b1d77c049f73b45583261d03c7a529a6155607454b343",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p7.png"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "656e5d0e05bf1e78a3b3b460a424835c5d0f2e2c008cf8a7dfa61522dbdfae7e",
+        "expected": "656e5d0e05bf1e78a3b3b460a424835c5d0f2e2c008cf8a7dfa61522dbdfae7e",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.pdf"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "85504fbbb42bc70fc99e91485724ed9c97da3ced795824b2f07809cc7a2011af",
+        "expected": "85504fbbb42bc70fc99e91485724ed9c97da3ced795824b2f07809cc7a2011af",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.txt"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "7195d9506d556dffc0e85f53e6399943833218a4095fe6229f6887e72bf1b3c9",
+        "expected": "7195d9506d556dffc0e85f53e6399943833218a4095fe6229f6887e72bf1b3c9",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.pdf"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "4893e37f8c1913b7dee61ecc933aca9fe2f15264db84075f6c213d876d812341",
+        "expected": "4893e37f8c1913b7dee61ecc933aca9fe2f15264db84075f6c213d876d812341",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.txt"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "1d1fa83aca8c8c0e19d0a15a5aab4d1f308e1377d93565e68766e00f3e1eb568",
+        "expected": "1d1fa83aca8c8c0e19d0a15a5aab4d1f308e1377d93565e68766e00f3e1eb568",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.pdf"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "1fc720a6be9642ec654f9eea2f195a38a651e819446db36ac0a8b5c4b7fa48c8",
+        "expected": "1fc720a6be9642ec654f9eea2f195a38a651e819446db36ac0a8b5c4b7fa48c8",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.txt"
+      },
+      "matches": true,
+      "name": "original_independent_freeze"
+    },
+    {
+      "detail": {
+        "actual": "51b940a11b426e2ca572c9a765c76ca0b47cdc516841a50a9d09d09ac43c4ac0",
+        "expected": "51b940a11b426e2ca572c9a765c76ca0b47cdc516841a50a9d09d09ac43c4ac0",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/CHECK_RESULTS_v1.json"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "efd9cfdd789ffac827d138e590e93412cd1798e1a1dc72d661ca0b5d59ddb254",
+        "expected": "efd9cfdd789ffac827d138e590e93412cd1798e1a1dc72d661ca0b5d59ddb254",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/DERIVATION_v1.md"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "3a440877d492e25d37aa04510619dd444a2c2947cbd305b5c1ab255138be9889",
+        "expected": "3a440877d492e25d37aa04510619dd444a2c2947cbd305b5c1ab255138be9889",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/EXECUTION_RECEIPT_v1.json"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "778ebe05ffdf4b58b5e650914d1f694c18945d0827e0620a950d7d6cb80dbeb7",
+        "expected": "778ebe05ffdf4b58b5e650914d1f694c18945d0827e0620a950d7d6cb80dbeb7",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/PRE_EXECUTION_PLAN_v1.md"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "8c547f6191b8f1e2c795b1824380c171eb9ab6b1dd8dc36f3e708d4ee0204f3e",
+        "expected": "8c547f6191b8f1e2c795b1824380c171eb9ab6b1dd8dc36f3e708d4ee0204f3e",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/REPORT_v1.md"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "5f2eea729d5ca771119848fcb91b26f7dfdd7d4684ad2cff7fcd2428c3783bc4",
+        "expected": "5f2eea729d5ca771119848fcb91b26f7dfdd7d4684ad2cff7fcd2428c3783bc4",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_ACQUISITION_v1.json"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "bc7c9a36f60ee2fb039cedf65d49dc19b7a5c32a61df0f0c9678f6edc78404b9",
+        "expected": "bc7c9a36f60ee2fb039cedf65d49dc19b7a5c32a61df0f0c9678f6edc78404b9",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_ACQUISITION_v2.json"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "e760c988e368bf9ae3775cf6f6178c58baf9572839212e22028ad41e90760bb2",
+        "expected": "e760c988e368bf9ae3775cf6f6178c58baf9572839212e22028ad41e90760bb2",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_RECORD_v1.json"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "35018cfdd4091acbf2c3b60ecce5193891302151ffab5931517ce0ea224201ea",
+        "expected": "35018cfdd4091acbf2c3b60ecce5193891302151ffab5931517ce0ea224201ea",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/check_projection_v1.py"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "5f6cfb4234fdf12689aa8f1fa9ede30d120d698f7f68939c196ef52c6b84df0e",
+        "expected": "5f6cfb4234fdf12689aa8f1fa9ede30d120d698f7f68939c196ef52c6b84df0e",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p2.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "954cf9be170263034d9b14813b32b1271639ba8bbc12edd7f196f1ce4f77c4bd",
+        "expected": "954cf9be170263034d9b14813b32b1271639ba8bbc12edd7f196f1ce4f77c4bd",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p3.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "c8f88b28b2c8fb33b0c5742797c4424fd9cd386213929ce927c82498685c0484",
+        "expected": "c8f88b28b2c8fb33b0c5742797c4424fd9cd386213929ce927c82498685c0484",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p4.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "65ec5b6aae2aad3498b3d4f3de41b75247ed4c2a8620082b3063307124646d94",
+        "expected": "65ec5b6aae2aad3498b3d4f3de41b75247ed4c2a8620082b3063307124646d94",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/heavens_astro_ph_0304151v2_p5.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "71b8e602f51828e85fdab43e34542f6be990353b23a0f1b38c548719f8c1702f",
+        "expected": "71b8e602f51828e85fdab43e34542f6be990353b23a0f1b38c548719f8c1702f",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p1.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "5bfe2f29fc2bf99b57ec3436dbc3ea9ac1a163710b910b6cb5999e096495cb32",
+        "expected": "5bfe2f29fc2bf99b57ec3436dbc3ea9ac1a163710b910b6cb5999e096495cb32",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p2.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "ea7079a8ce6a3449c4c9976d8c8de82358168916802f467c2e76ade3abe62617",
+        "expected": "ea7079a8ce6a3449c4c9976d8c8de82358168916802f467c2e76ade3abe62617",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/taylor_astro_ph_0111605v1_p3.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "859313f5cd26b163d60a9132861735e2cf3fcc1412010b0577eeb5991557d11d",
+        "expected": "859313f5cd26b163d60a9132861735e2cf3fcc1412010b0577eeb5991557d11d",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p3.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "0d9605ba03d64244f102c6d44b469c030eea4613a33ca4d6dfd2e2e2ea8729d0",
+        "expected": "0d9605ba03d64244f102c6d44b469c030eea4613a33ca4d6dfd2e2e2ea8729d0",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p4.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "1f070014e3accf7f8189da5e40dd51dd3b0e3542fbdeb3c627f4892e4d36b613",
+        "expected": "1f070014e3accf7f8189da5e40dd51dd3b0e3542fbdeb3c627f4892e4d36b613",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p6.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "afb430e26b76658e7d1b1d77c049f73b45583261d03c7a529a6155607454b343",
+        "expected": "afb430e26b76658e7d1b1d77c049f73b45583261d03c7a529a6155607454b343",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/page_renders/wang_1808_07543v1_p7.png"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "656e5d0e05bf1e78a3b3b460a424835c5d0f2e2c008cf8a7dfa61522dbdfae7e",
+        "expected": "656e5d0e05bf1e78a3b3b460a424835c5d0f2e2c008cf8a7dfa61522dbdfae7e",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.pdf"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "85504fbbb42bc70fc99e91485724ed9c97da3ced795824b2f07809cc7a2011af",
+        "expected": "85504fbbb42bc70fc99e91485724ed9c97da3ced795824b2f07809cc7a2011af",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.txt"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "7195d9506d556dffc0e85f53e6399943833218a4095fe6229f6887e72bf1b3c9",
+        "expected": "7195d9506d556dffc0e85f53e6399943833218a4095fe6229f6887e72bf1b3c9",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.pdf"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "4893e37f8c1913b7dee61ecc933aca9fe2f15264db84075f6c213d876d812341",
+        "expected": "4893e37f8c1913b7dee61ecc933aca9fe2f15264db84075f6c213d876d812341",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.txt"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "1d1fa83aca8c8c0e19d0a15a5aab4d1f308e1377d93565e68766e00f3e1eb568",
+        "expected": "1d1fa83aca8c8c0e19d0a15a5aab4d1f308e1377d93565e68766e00f3e1eb568",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.pdf"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "1fc720a6be9642ec654f9eea2f195a38a651e819446db36ac0a8b5c4b7fa48c8",
+        "expected": "1fc720a6be9642ec654f9eea2f195a38a651e819446db36ac0a8b5c4b7fa48c8",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.txt"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "641a730694795f2e18af4b57e3083f82bd62f4a89902ac0dbc25aab1dd33d92d",
+        "expected": "641a730694795f2e18af4b57e3083f82bd62f4a89902ac0dbc25aab1dd33d92d",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/WORKING_v1.md"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "641a730694795f2e18af4b57e3083f82bd62f4a89902ac0dbc25aab1dd33d92d",
+        "expected": "641a730694795f2e18af4b57e3083f82bd62f4a89902ac0dbc25aab1dd33d92d",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/post_exposure_inputs_v1/WORKING_v1.md"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "30a62389ff52fcc0ddbf48f096a448d12219b32d892677bf1e59e7724a841b76",
+        "expected": "30a62389ff52fcc0ddbf48f096a448d12219b32d892677bf1e59e7724a841b76",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/WEAK_FORM_v2.md"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "30a62389ff52fcc0ddbf48f096a448d12219b32d892677bf1e59e7724a841b76",
+        "expected": "30a62389ff52fcc0ddbf48f096a448d12219b32d892677bf1e59e7724a841b76",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/post_exposure_inputs_v1/WEAK_FORM_v2.md"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+        "expected": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/FORWARD_PROTOCOL_v1.json"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+        "expected": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/post_exposure_inputs_v1/FORWARD_PROTOCOL_v1.json"
+      },
+      "matches": true,
+      "name": "post_exposure_bound_identity"
+    },
+    {
+      "detail": {
+        "actual": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+        "expected": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/FORWARD_PROTOCOL_v1.json"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "actual": "e14ecf6536684f69856727e389c198a638b7fd213f792fdddf0ab8b9fb455c63",
+        "expected": "e14ecf6536684f69856727e389c198a638b7fd213f792fdddf0ab8b9fb455c63",
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "actual": "d2edccd39d714b645ac5c2772aca000b21ef66b68843c2c0c943f14ae5fe7c34",
+        "expected": "d2edccd39d714b645ac5c2772aca000b21ef66b68843c2c0c943f14ae5fe7c34",
+        "path": "docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "actual": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+        "expected": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4",
+        "path": "scripts/scalar_dynamical_forward.py"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "actual": "6cb64d4e44635877e13e75062e1239691da3c9dbb9ec246c2f85688b1216db03",
+        "expected": "6cb64d4e44635877e13e75062e1239691da3c9dbb9ec246c2f85688b1216db03",
+        "path": "scripts/scalar_projected_forward.py"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "actual": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+        "expected": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac",
+        "path": "scripts/scalar_projected_geometry.py"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "actual": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+        "expected": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227",
+        "path": "scripts/scalar_projected_weak.py"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "actual": "4259e61f17ce8d990621cbf0d73a10b988a06b08224f26ee8f0c062f19c92233",
+        "expected": "4259e61f17ce8d990621cbf0d73a10b988a06b08224f26ee8f0c062f19c92233",
+        "path": "scripts/scalar_projected_covariance_check.py"
+      },
+      "matches": true,
+      "name": "current_output_source_identity"
+    },
+    {
+      "detail": {
+        "aggregate_records": 29,
+        "computed": {
+          "failed": 0,
+          "passed": 29
+        }
+      },
+      "matches": true,
+      "name": "actual_aggregate_controls"
+    },
+    {
+      "detail": {
+        "results": 0,
+        "summary": 0
+      },
+      "matches": true,
+      "name": "zero_empirical_tests"
+    },
+    {
+      "detail": "Exact JSON equality with current paired summary.",
+      "matches": true,
+      "name": "cache_embedded_summary"
+    },
+    {
+      "detail": "v2 execution summary exactly matches current summary; reported exit code zero.",
+      "matches": true,
+      "name": "execution_embedded_summary"
+    },
+    {
+      "detail": "SUMMARY_v1.json historical v1 versus current v2, omitting only top-level source identity fields.",
+      "matches": true,
+      "name": "canonical_nonidentity_result_equality"
+    },
+    {
+      "detail": "RESULTS_v1.json historical v1 versus current v2, omitting only top-level source identity fields.",
+      "matches": true,
+      "name": "canonical_nonidentity_result_equality"
+    },
+    {
+      "detail": {
+        "bytes": 14791,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/canonical_v1/docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "sha256": "70bbad56f14ea37a2624bd5edd7c589408eddc7e2930078cb8789d2ae5b7b86c"
+      },
+      "matches": true,
+      "name": "historical_note_identity"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_cosmological_inverse/SUMMARY_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_projected_covariance/SUMMARY_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_projected_covariance/RESULTS_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_projected_covariance_check.txt",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/FORWARD_PROTOCOL_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/CANONICAL_EXECUTION_v2.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/CANONICAL_REPAIR_IDENTITY_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/CANONICAL_SOURCE_FREEZE_v1.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    },
+    {
+      "detail": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PRS.json",
+      "matches": true,
+      "name": "snapshot_current_at_receipt"
+    }
+  ],
+  "identity_mismatches": 0,
+  "inputs": [
+    {
+      "bytes": 25119,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Complete note read; scientific comparison, not a new full proof audit.",
+      "sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M12/SCALAR_COSMOLOGICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot_sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122"
+    },
+    {
+      "bytes": 1683,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_cosmological_inverse/SUMMARY_v1.json",
+      "read_scope": "Complete paired summary read. Author-reported internal results, not independently rerun here.",
+      "sha256": "dd83ba99eed5d250ae005480bd9f25edff313e80f4011d697e1c7201270450da",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M12/SUMMARY_v1.json",
+      "snapshot_sha256": "dd83ba99eed5d250ae005480bd9f25edff313e80f4011d697e1c7201270450da"
+    },
+    {
+      "bytes": 20487,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Complete note read; scientific comparison, not a new full proof audit.",
+      "sha256": "98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M13/SCALAR_GROWTH_LENSING_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot_sha256": "98751fa04e04fd62d06270010b74008a9ae0bad6f733730a4cd4235183023719"
+    },
+    {
+      "bytes": 3238,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_growth_lensing_inverse/SUMMARY_v1.json",
+      "read_scope": "Complete paired summary read. Author-reported internal results, not independently rerun here.",
+      "sha256": "792393456462803df9380f3ebcc680dfc5cee71c397a323df4cd723ba85aa4b6",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M13/SUMMARY_v1.json",
+      "snapshot_sha256": "792393456462803df9380f3ebcc680dfc5cee71c397a323df4cd723ba85aa4b6"
+    },
+    {
+      "bytes": 25879,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Complete note read; scientific comparison, not a new full proof audit.",
+      "sha256": "592df22cbc7421da970842b42157129ba65e8f0c71d6928ca90fa189474702ce",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M14/SCALAR_DYNAMICAL_MOMENTUM_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot_sha256": "592df22cbc7421da970842b42157129ba65e8f0c71d6928ca90fa189474702ce"
+    },
+    {
+      "bytes": 5947,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_dynamical_momentum_inverse/SUMMARY_v1.json",
+      "read_scope": "Complete paired summary read. Author-reported internal results, not independently rerun here.",
+      "sha256": "8338854faa67d1cd912e4539a4b257f1a29e3ef291ffe46af5346e62ace0285d",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M14/SUMMARY_v1.json",
+      "snapshot_sha256": "8338854faa67d1cd912e4539a4b257f1a29e3ef291ffe46af5346e62ace0285d"
+    },
+    {
+      "bytes": 14948,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Complete note read; scientific comparison, not a new full proof audit.",
+      "sha256": "d2edccd39d714b645ac5c2772aca000b21ef66b68843c2c0c943f14ae5fe7c34",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot_sha256": "d2edccd39d714b645ac5c2772aca000b21ef66b68843c2c0c943f14ae5fe7c34"
+    },
+    {
+      "bytes": 2539,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_projected_covariance/SUMMARY_v1.json",
+      "read_scope": "Complete paired summary read. Author-reported internal results, not independently rerun here.",
+      "sha256": "f327e0dff2fee82750618948d397c804e0efac1a582bdb7572a1f7ec4f8b5266",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/SUMMARY_v1.json",
+      "snapshot_sha256": "f327e0dff2fee82750618948d397c804e0efac1a582bdb7572a1f7ec4f8b5266"
+    },
+    {
+      "bytes": 50915,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_projected_covariance/RESULTS_v1.json",
+      "read_scope": "All 29 aggregate check records read and counted; remaining serialized scientific arrays bound by hash only, not independently recomputed.",
+      "sha256": "a2b79dffb2397c0b745c757165b682fd06aab7f96d375eb97a4628bbdc024f34",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/RESULTS_v1.json",
+      "snapshot_sha256": "a2b79dffb2397c0b745c757165b682fd06aab7f96d375eb97a4628bbdc024f34"
+    },
+    {
+      "bytes": 3408,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_projected_covariance_check.txt",
+      "read_scope": "Complete cache record and embedded summary parsed; no invocation of runner_cache or freshness pipeline.",
+      "sha256": "a7ec9d7aa4b8fd6e21b236643e096a76264a67da3e6a8c38bce9a1dcf303f742",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/scalar_projected_covariance_check.txt",
+      "snapshot_sha256": "a7ec9d7aa4b8fd6e21b236643e096a76264a67da3e6a8c38bce9a1dcf303f742"
+    },
+    {
+      "bytes": 1371,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/FORWARD_PROTOCOL_v1.json",
+      "read_scope": "Complete protocol read in the prior frozen comparison; unchanged bytes confirmed.",
+      "sha256": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/FORWARD_PROTOCOL_v1.json",
+      "snapshot_sha256": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab"
+    },
+    {
+      "bytes": 2874,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "read_scope": "Complete current scope checklist read.",
+      "sha256": "e14ecf6536684f69856727e389c198a638b7fd213f792fdddf0ab8b9fb455c63",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "snapshot_sha256": "e14ecf6536684f69856727e389c198a638b7fd213f792fdddf0ab8b9fb455c63"
+    },
+    {
+      "bytes": 3767,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/CANONICAL_EXECUTION_v2.json",
+      "read_scope": "Complete execution receipt read; author run only.",
+      "sha256": "683f68b6357c6d73d1227cd7ea0da3f58dfbff6610973f82d4f4a7b76b542896",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/CANONICAL_EXECUTION_v2.json",
+      "snapshot_sha256": "683f68b6357c6d73d1227cd7ea0da3f58dfbff6610973f82d4f4a7b76b542896"
+    },
+    {
+      "bytes": 241,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/CANONICAL_REPAIR_IDENTITY_v1.json",
+      "read_scope": "Complete parent repair receipt read; its equality claim separately compared below.",
+      "sha256": "235faa8307be5d90170fa9a5901fdf8aec3510c21fa0492d2f6a1c2f2473fa48",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/CANONICAL_REPAIR_IDENTITY_v1.json",
+      "snapshot_sha256": "235faa8307be5d90170fa9a5901fdf8aec3510c21fa0492d2f6a1c2f2473fa48"
+    },
+    {
+      "bytes": 2840,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/CANONICAL_SOURCE_FREEZE_v1.json",
+      "read_scope": "Complete historical freeze read; not treated as the current source freeze.",
+      "sha256": "812daf7ffde78ba096f6c65a2bd625cf286dd9044fe3e930641cc6a964332f12",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/M15/CANONICAL_SOURCE_FREEZE_v1.json",
+      "snapshot_sha256": "812daf7ffde78ba096f6c65a2bd625cf286dd9044fe3e930641cc6a964332f12"
+    },
+    {
+      "bytes": 17036,
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/PRS.json",
+      "read_scope": "Cached campaign metadata: relevant M12/M13/M14 entries fully read; earlier entries used only as campaign inventory, not a current GitHub-state check or renewed science review.",
+      "sha256": "16b99de4978ee6a4b40d4a5b47386fde2d180b53466126238b994cd821bff939",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/context/PRS.json",
+      "snapshot_sha256": "16b99de4978ee6a4b40d4a5b47386fde2d180b53466126238b994cd821bff939"
+    }
+  ],
+  "limitations": [
+    "No new global novelty survey or renewed M1-M11 science review.",
+    "Cached PR metadata, no current remote status verification.",
+    "Source hashes do not supply implementation or exact-rank proof coverage.",
+    "No publication, integration, formal audit or measured-data gate executed."
+  ],
+  "new_author_code_runs": 0,
+  "new_science_runs": 0,
+  "new_source_acquisitions": 0,
+  "opening_judgment": "OPEN",
+  "origin_main_observed": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "outputs": [
+    {
+      "bytes": 5076,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/M15_CANONICAL_SOURCE_COMPARISON_v1.md",
+      "sha256": "66db58ba69b480cb869c9c3eea7b7a32a312a8b34bbc2200100305b90e15fde0"
+    },
+    {
+      "bytes": 2367,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/M15_CLUSTER_CAP_v1.md",
+      "sha256": "328fa8d2c59f3c1125e9310774c4f626bb044752af3764bb5d0698124e0f2568"
+    },
+    {
+      "bytes": 868,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/M15_CANONICAL_NOTE_DELTA_v1.diff",
+      "sha256": "dad85645cde8f1aa7f14ea2e9982d05bff86251dfe1fdd7618a959f781da54a1"
+    },
+    {
+      "bytes": 17725,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/M15_CANONICAL_BIND_v1.py",
+      "sha256": "7db39bdd6ce52f82d8867582f573efef2b141203b2324ebd1944e16914feb579"
+    }
+  ],
+  "planning_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "policies": [
+    {
+      "bytes": 9827,
+      "commit": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "read_scope": "Complete document; only the task-applicable independent source and cluster-cap operation applied.",
+      "ref": "origin/main",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/policy/origin_main/docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md"
+    },
+    {
+      "bytes": 9276,
+      "commit": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "read_scope": "Complete document; only the task-applicable independent source and cluster-cap operation applied.",
+      "ref": "origin/main",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/policy/origin_main/docs/ai_methodology/skills/physics-loop/SKILL.md"
+    },
+    {
+      "bytes": 15435,
+      "commit": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "read_scope": "Complete document; only the task-applicable independent source and cluster-cap operation applied.",
+      "ref": "origin/main",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/policy/origin_main/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "bytes": 11558,
+      "commit": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+      "path": "AGENTS.md",
+      "read_scope": "Complete document; only the task-applicable independent source and cluster-cap operation applied.",
+      "ref": "origin/ai/execution",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/m15_canonical_inputs_v1/policy/origin_ai_execution/AGENTS.md"
+    }
+  ],
+  "primary_sources": [
+    {
+      "key": "Taylor2001v1",
+      "pdf": {
+        "bytes": 123166,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.pdf",
+        "sha256": "7195d9506d556dffc0e85f53e6399943833218a4095fe6229f6887e72bf1b3c9"
+      },
+      "read_scope": [
+        "PDF pp. 1-3: Introduction and Method, Eqs. (1)-(27), including flat-Born inverse, shear inversion, spherical angular relation and illustrative noise discussion.",
+        "PDF p. 4: Summary and figure caption read in web-rendered text; reference list consulted only as displayed, not an acquisition/review of those references."
+      ],
+      "scope_reused_without_new_acquisition": true,
+      "text": {
+        "bytes": 26137,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/taylor_astro_ph_0111605v1.txt",
+        "sha256": "4893e37f8c1913b7dee61ecc933aca9fe2f15264db84075f6c213d876d812341"
+      },
+      "url": "https://arxiv.org/pdf/astro-ph/0111605v1",
+      "version": "astro-ph/0111605v1"
+    },
+    {
+      "key": "Wang2018v1",
+      "pdf": {
+        "bytes": 1470357,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.pdf",
+        "sha256": "1d1fa83aca8c8c0e19d0a15a5aab4d1f308e1377d93565e68766e00f3e1eb568"
+      },
+      "read_scope": [
+        "Abstract/introduction and Sec. 2 catalogue/selection context, including Eq. (1), PDF pp. 1-3; no catalogue acquisition.",
+        "Complete Sec. 3, PDF pp. 3-4, Eqs. (2)-(11): radial pair statistics, sightline/separation geometry and inverse.",
+        "Secs. 4.1-4.3 and 5, PDF pp. 4-7: variance, distance-modulus errors, calibration dependence.",
+        "Sec. 6 introduction and Eqs. (12)-(13), PDF p. 7, read only to separate the subsequent density/growth model from the geometric estimator. Later fitting/results sections not reviewed or reused."
+      ],
+      "scope_reused_without_new_acquisition": true,
+      "text": {
+        "bytes": 73408,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/wang_1808_07543v1.txt",
+        "sha256": "1fc720a6be9642ec654f9eea2f195a38a651e819446db36ac0a8b5c4b7fa48c8"
+      },
+      "url": "https://arxiv.org/pdf/1808.07543v1",
+      "version": "1808.07543v1"
+    },
+    {
+      "key": "Heavens2003v2",
+      "pdf": {
+        "bytes": 293672,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.pdf",
+        "sha256": "656e5d0e05bf1e78a3b3b460a424835c5d0f2e2c008cf8a7dfa61522dbdfae7e"
+      },
+      "read_scope": [
+        "Introduction, PDF pp. 1-2, source-distance and systematic context.",
+        "Complete Secs. 2.1-2.5, PDF pp. 2-4, Eqs. (1)-(32), including growth/Poisson premises, discrete estimator, photometric-error mixing, angular mask, source weights, covariance and shape noise.",
+        "PDF p. 5 visually inspected: likelihood/finite-forecast assumptions through Sec. 3.2 opening. No numerical forecast reused."
+      ],
+      "scope_reused_without_new_acquisition": true,
+      "text": {
+        "bytes": 52257,
+        "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/primary_sources/heavens_astro_ph_0304151v2.txt",
+        "sha256": "85504fbbb42bc70fc99e91485724ed9c97da3ced795824b2f07809cc7a2011af"
+      },
+      "url": "https://arxiv.org/pdf/astro-ph/0304151v2",
+      "version": "astro-ph/0304151v2"
+    }
+  ],
+  "prior_frozen_evidence": [
+    {
+      "bytes": 11182,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_FREEZE_v1.json",
+      "sha256": "e5712f1754d2046f8d84375765ae0066e5f83129d3e2789b3962f6435211f92e"
+    },
+    {
+      "bytes": 13921,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/SOURCE_RECORD_v1.json",
+      "sha256": "e760c988e368bf9ae3775cf6f6178c58baf9572839212e22028ad41e90760bb2"
+    },
+    {
+      "bytes": 5456,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/REPORT_v1.md",
+      "sha256": "8c547f6191b8f1e2c795b1824380c171eb9ab6b1dd8dc36f3e708d4ee0204f3e"
+    },
+    {
+      "bytes": 16399,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/DERIVATION_v1.md",
+      "sha256": "efd9cfdd789ffac827d138e590e93412cd1798e1a1dc72d661ca0b5d59ddb254"
+    },
+    {
+      "bytes": 6614,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/POST_EXPOSURE_COMPARISON_v1.md",
+      "sha256": "f16cd7189d7867a36a8b6ad946d2c9d8771bb07f83c3ed2bb17bd9ef42a9ce18"
+    },
+    {
+      "bytes": 20768,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/independent_observation_v1/POST_EXPOSURE_RECEIPT_v1.json",
+      "sha256": "daae85ed53526e32203b250e40a6575c08de86ebfdf97a5b68ed8ed898146e84"
+    }
+  ],
+  "reviewer": "/root/launch_check",
+  "scope": "Focused final canonical physical-source/measurement correspondence and separate cluster-cap PR-opening judgment; no formal audit.",
+  "source_base": "f3637a4eba3fb18690fe6a2b03d9455c60cc6363",
+  "source_hash_only": [
+    {
+      "bytes": 1371,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/FORWARD_PROTOCOL_v1.json",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "d3a09436fde3810e09a82a48b79612fd1a0ecd7c0911b40591675053c5173fab"
+    },
+    {
+      "bytes": 2874,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/projected_covariance/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "e14ecf6536684f69856727e389c198a638b7fd213f792fdddf0ab8b9fb455c63"
+    },
+    {
+      "bytes": 14948,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PROJECTED_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "d2edccd39d714b645ac5c2772aca000b21ef66b68843c2c0c943f14ae5fe7c34"
+    },
+    {
+      "bytes": 8112,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_dynamical_forward.py",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "82af18303934e233162a69ff22110ec1d4fc0c705db1b07cda6ca1c5100916d4"
+    },
+    {
+      "bytes": 6642,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_projected_forward.py",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "6cb64d4e44635877e13e75062e1239691da3c9dbb9ec246c2f85688b1216db03"
+    },
+    {
+      "bytes": 6331,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_projected_geometry.py",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "2fbd617ee2fc1609a690b5beeaa46411935f915469aa45053e4bb030e87515ac"
+    },
+    {
+      "bytes": 3261,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_projected_weak.py",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "c17b18247147d6962a06f3160715413c622c00961e91ff44761a82919d04d227"
+    },
+    {
+      "bytes": 4416,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_projected_covariance_check.py",
+      "read_scope": "Hash verification only, unless separately listed as fully read; no author-code execution or implementation approval.",
+      "sha256": "4259e61f17ce8d990621cbf0d73a10b988a06b08224f26ee8f0c062f19c92233"
+    }
+  ]
+}

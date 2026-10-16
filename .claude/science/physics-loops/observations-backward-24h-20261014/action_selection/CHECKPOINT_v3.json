@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-15T12:04:14.564392+00:00",
+  "note_sha256": "dde833e8bcb69f4ab5e03eb911aa534dbf23647d5fb03cd1be469bac2e977122",
+  "review_record_sha256": "6af3fe59e01a6307689cab3629b4af02332bb4466f9eb35798c48a98c18598dd",
+  "cache_sha256": "6e7388c8c1966f650b8b6fcd7c818c7bd98cd0407e7ffba1eb5721ae0ddf9c17",
+  "mutations": {
+    "assertion": 12,
+    "domain_refusal": 6,
+    "arithmetic_exception": 1
+  },
+  "independent_modes": {
+    "float64": 11,
+    "rounded_input_lift_50": 11,
+    "source_assembled_50": 12
+  },
+  "next_action": "Finish final affected-source check, explicit evidence archive and staged-source binding; publish one coherent cosmological inverse PR, then pursue a physical input-map discriminator.",
+  "owned_processes": "Root bounded citation graph generation only; no detached author; older campaigns stopped",
+  "fixed_deadline": "2026-10-15T21:48:44+00:00"
+}

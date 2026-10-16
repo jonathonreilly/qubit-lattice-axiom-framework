@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-15T17:06:44.312929+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "main_unchanged": true,
+  "new_or_changed_heads": [
+    {
+      "baseRefName": "codex/observations-backward-dynamics-20261015",
+      "headRefName": "codex/observations-backward-covariance-20261015",
+      "headRefOid": "44c7d3309c17380474ec253a924af6891d438b02",
+      "number": 9610,
+      "title": "[physics-loop] projected scalar constraints: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T17:03:19Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9610"
+    },
+    {
+      "baseRefName": "physics-loop/toe-joint-readiness-20261015",
+      "headRefName": "physics-loop/toe-readiness-resources-20261015",
+      "headRefOid": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+      "number": 9609,
+      "title": "[physics-loop] readiness-resources: bounded_theorem / conditional-support",
+      "updatedAt": "2026-10-15T16:18:45Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9609"
+    }
+  ],
+  "scope": "M15 publication personally authored and checked. PR9609 body read: different quantum-readiness resource route, not an input to this observation operator. Other exact heads unchanged; earlier scoped reading reused. No merge or main mutation.",
+  "planning_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "planning_scope": "Exact unchanged planning surfaces reused from prior block; current AGENTS and main workflow read. No new instruction revision."
+}

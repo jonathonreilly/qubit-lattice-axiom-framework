@@ -11,3 +11,16 @@ One canonical carrier-feasibility note, one primary and three helpers; exact pro
 ## Error-direction evidence unit
 
 Canonical source note and four Python files plus pinned input manifest, two protocols, source-bound cache and coherent evidence pack will form the next constituent PR against frozen M10. The pack includes original failures, independent pre-source mathematics and raw reconstruction, subsequent correspondence, both canonical executions and final source/output identities. Plain reports are supplemented by a deterministic archive of source/calculation detail; downloaded third-party excerpts/renderings are omitted from publication with identities retained. No formal audit or integrated landing is performed.
+
+
+## Cosmological inverse review unit
+
+Publish the self-contained conditional note, one primary/helper pair, four declared inputs, paired result/summary and genuine runner cache. The action_selection evidence archive preserves exact earlier source, failed90/1 run, precision diagnosis, mutation variants, independently frozen work and source correspondence; its index lists per-member hashes and excluded external paper assets. Selected complete review reports remain plain files. The shared campaign pack records dependencies and remaining physical suppliers. No formal audit or integrated landing is part of this publication.
+
+## M15 delivery
+
+One coherent canonical projected-covariance note, primary plus3new helpers, existing supplied candidate helper, fresh paired output/cache, exact protocol and scope checklist. Independent reports remain readable; indexed historical evidence preserves all code/result/failure versions while omitting external full papers/renders from publication. Base is frozen M14 f3637a4eba. No authority weaving or audit-state update.
+
+## M16 delivery
+
+One self-contained finite-pair note, one primary runner and two exact symbolic/sampling helpers. Final paired output/cache binds the current source; eight isolated source mutations and all independent original/correspondence reports remain preserved. The versioned historical archive includes working derivations, failures, source versions and code/results. External paper PDFs/full texts/renders remain local with version/hash/reading-scope records. Stage only this coherent unit and shared campaign state deltas, stacked on M15. No audit verdict or integrated-main landing is part of this author publication.

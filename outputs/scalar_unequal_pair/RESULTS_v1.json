@@ -1,0 +1,963 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "checks": [
+    {
+      "name": "geometry.radial_product",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.gamma_rational",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.fixed_r_angle_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.lowmode_constant_basis",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.lowmode_dipole_basis",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.time_derivative_extra_basis",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_0_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_0_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_0_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_0_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_0_6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_0_6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_0_8",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_0_8",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_1_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_1_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_1_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_1_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_1_6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_1_6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_1_8",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_1_8",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_2_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_2_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_2_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_2_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_2_6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_2_6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_cross_2_8",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.cartesian_auto_2_8",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.generic_commutator",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.generic_spatial_constraint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.generic_temporal_constraint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.lowmode_annihilator_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.lowmode_annihilator_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.lowmode_annihilator_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.operator_not_identically_zero",
+      "passed": true,
+      "residual": "-83536676235673427581787109375/8192"
+    },
+    {
+      "name": "geometry.geometry_U_not_identically_zero",
+      "passed": true,
+      "residual": "1216/225"
+    },
+    {
+      "name": "geometry.PSD_gaussian_leading_degree",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.PSD_gaussian_leading_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.PSD_annihilated_response_degree",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.PSD_annihilated_response_leading",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "geometry.PSD_response_in_chart",
+      "passed": true,
+      "residual": "10740842923919677734375/134217728"
+    },
+    {
+      "name": "sampling.P_adjoint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.L_adjoint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.T_adjoint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.D_adjoint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.Z_adjoint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.full_ordered_weak_composition",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_inverse_degree_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_adjoint_degree_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_inverse_degree_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_adjoint_degree_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_inverse_degree_5",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_adjoint_degree_5",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_inverse_degree_7",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.born_adjoint_degree_7",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.cross_pair_expectation_latent_-1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.distinct_pair_expectation_latent_-1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.cross_pair_expectation_latent_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.distinct_pair_expectation_latent_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.latent_variance_nonzero",
+      "passed": true,
+      "value": "73984/625"
+    },
+    {
+      "name": "sampling.independent_noise_product_0_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.independent_noise_product_1_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.independent_noise_product_2_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.independent_noise_product_3_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.self_noise_variance_is_one",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.unweighted_correlated_noise_product",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.weighted_noise_bias_counterexample",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.finite_grid_zero_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.finite_grid_zero_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.finite_grid_zero_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.finite_grid_nonzero_integral",
+      "passed": true,
+      "value": "1/840"
+    },
+    {
+      "name": "sampling.spin_adjoint_2_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_2_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_2_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_2_5",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_3_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_3_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_3_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_3_5",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_4_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_4_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_4_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_4_5",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_5_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_5_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_5_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sampling.spin_adjoint_5_5",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "components": {
+    "geometry": {
+      "annihilator_polynomials": [
+        {
+          "basis": "r",
+          "degree_r": 12,
+          "polynomial": "-32*A*(-A**2 + B**2 + r**2)**2*(A**8 - 4*A**6*r**2 + 4*A**4*B**4 - 6*A**4*B**2*r**2 + 6*A**4*r**4 - 4*A**2*B**6 + 4*A**2*B**4*r**2 + 4*A**2*B**2*r**4 - 4*A**2*r**6 - B**8 + 6*B**6*r**2 - 8*B**4*r**4 + 2*B**2*r**6 + r**8)"
+        },
+        {
+          "basis": "r/(-A**2 + B**2 + r**2)",
+          "degree_r": 6,
+          "polynomial": "-64*A**3*(-A**2 + B**2 + r**2)*(2*A**6 - A**4*B**2 - 4*A**4*r**2 + 2*A**2*B**2*r**2 + 2*A**2*r**4 - B**6 + 2*B**4*r**2 - B**2*r**4)"
+        },
+        {
+          "basis": "r/(-A**2 + B**2 + r**2)**2",
+          "degree_r": 6,
+          "polynomial": "-64*A*(4*A**8 - 2*A**6*B**2 - 6*A**6*r**2 - 5*A**4*B**4 + 11*A**4*B**2*r**2 + 4*A**2*B**6 - 6*A**2*B**4*r**2 + 2*A**2*r**6 - B**8 + B**6*r**2 + B**4*r**4 - B**2*r**6)"
+        }
+      ],
+      "checks": [
+        {
+          "name": "radial_product",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "gamma_rational",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "fixed_r_angle_derivative",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "lowmode_constant_basis",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "lowmode_dipole_basis",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "time_derivative_extra_basis",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_0_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_0_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_0_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_0_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_0_6",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_0_6",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_0_8",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_0_8",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_1_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_1_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_1_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_1_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_1_6",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_1_6",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_1_8",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_1_8",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_2_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_2_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_2_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_2_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_2_6",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_2_6",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_cross_2_8",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cartesian_auto_2_8",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "generic_commutator",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "generic_spatial_constraint",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "generic_temporal_constraint",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "lowmode_annihilator_0",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "lowmode_annihilator_1",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "lowmode_annihilator_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "operator_not_identically_zero",
+          "passed": true,
+          "residual": "-83536676235673427581787109375/8192"
+        },
+        {
+          "name": "geometry_U_not_identically_zero",
+          "passed": true,
+          "residual": "1216/225"
+        },
+        {
+          "name": "PSD_gaussian_leading_degree",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "PSD_gaussian_leading_coefficient",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "PSD_annihilated_response_degree",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "PSD_annihilated_response_leading",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "PSD_response_in_chart",
+          "passed": true,
+          "residual": "10740842923919677734375/134217728"
+        }
+      ],
+      "expressions": {
+        "U": "-4*A*r*(A**4 + 2*A**2*B**2 - 2*A**2*r**2 - 3*B**4 + 2*B**2*r**2 + r**4)/((-A**2 + B**2 + r**2)**2*(A**2 - B**2 + r**2)**2)",
+        "W": "(-A**2 + B**2 + r**2)**6*(A**2 - B**2 + r**2)**4/r**4",
+        "gamma": "(-A - B + r)*(-A + B + r)*(A - B + r)*(A + B + r)/(r*(-A**2 + B**2 + r**2)*(A**2 - B**2 + r**2))"
+      },
+      "positive_covariance_witness": {
+        "base_polynomial": "32*A*rate*(-A**2 + B**2 + r**2)**2*(A**12*rate**2 - 2*A**10*B**2*rate**2 - 2*A**10*r**2*rate**2 - 4*A**10*rate - 5*A**8*B**4*rate**2 + 10*A**8*B**2*r**2*rate**2 + 8*A**8*B**2*rate - A**8*r**4*rate**2 + 12*A**8*r**2*rate + 2*A**8 + 20*A**6*B**6*rate**2 - 20*A**6*B**4*r**2*rate**2 - 8*A**6*B**4*rate - 4*A**6*B**2*r**4*rate**2 - 16*A**6*B**2*r**2*rate + 4*A**6*r**6*rate**2 - 8*A**6*r**4*rate - 8*A**6*r**2 - 25*A**4*B**8*rate**2 + 20*A**4*B**6*r**2*rate**2 + 16*A**4*B**6*rate + 18*A**4*B**4*r**4*rate**2 - 24*A**4*B**4*r**2*rate + 8*A**4*B**4 - 12*A**4*B**2*r**6*rate**2 + 32*A**4*B**2*r**4*rate - 12*A**4*B**2*r**2 - A**4*r**8*rate**2 - 8*A**4*r**6*rate + 12*A**4*r**4 + 14*A**2*B**10*rate**2 - 10*A**2*B**8*r**2*rate**2 - 20*A**2*B**8*rate - 20*A**2*B**6*r**4*rate**2 + 48*A**2*B**6*r**2*rate - 8*A**2*B**6 + 12*A**2*B**4*r**6*rate**2 - 24*A**2*B**4*r**4*rate + 8*A**2*B**4*r**2 + 6*A**2*B**2*r**8*rate**2 - 16*A**2*B**2*r**6*rate + 8*A**2*B**2*r**4 - 2*A**2*r**10*rate**2 + 12*A**2*r**8*rate - 8*A**2*r**6 - 3*B**12*rate**2 + 2*B**10*r**2*rate**2 + 8*B**10*rate + 7*B**8*r**4*rate**2 - 20*B**8*r**2*rate - 2*B**8 - 4*B**6*r**6*rate**2 + 12*B**6*r**2 - 5*B**4*r**8*rate**2 + 24*B**4*r**6*rate - 16*B**4*r**4 + 2*B**2*r**10*rate**2 - 8*B**2*r**8*rate + 4*B**2*r**6 + r**12*rate**2 - 4*r**10*rate + 2*r**8)",
+        "response_polynomial": "-4096*A**17*r**14*rate**10 + 16384*A**15*B**2*r**14*rate**10 + 16384*A**15*r**16*rate**10 - 98304*A**15*r**14*rate**9 - 81920*A**13*B**2*r**16*rate**10 + 507904*A**13*B**2*r**14*rate**9 - 16384*A**13*r**18*rate**10 + 147456*A**13*r**16*rate**9 - 122880*A**13*r**14*rate**8 - 114688*A**11*B**6*r**14*rate**10 + 147456*A**11*B**4*r**16*rate**10 - 917504*A**11*B**4*r**14*rate**9 + 114688*A**11*B**2*r**18*rate**10 - 1343488*A**11*B**2*r**16*rate**9 + 2998272*A**11*B**2*r**14*rate**8 - 16384*A**11*r**20*rate**10 + 491520*A**11*r**18*rate**9 - 4079616*A**11*r**16*rate**8 + 9289728*A**11*r**14*rate**7 + 286720*A**9*B**8*r**14*rate**10 - 81920*A**9*B**6*r**16*rate**10 + 409600*A**9*B**6*r**14*rate**9 - 327680*A**9*B**4*r**18*rate**10 + 4374528*A**9*B**4*r**16*rate**9 - 12312576*A**9*B**4*r**14*rate**8 + 16384*A**9*B**2*r**20*rate**10 - 802816*A**9*B**2*r**18*rate**9 + 8454144*A**9*B**2*r**16*rate**8 - 22478848*A**9*B**2*r**14*rate**7 + 40960*A**9*r**22*rate**10 - 1228800*A**9*r**20*rate**9 + 11919360*A**9*r**18*rate**8 - 43008000*A**9*r**16*rate**7 + 46448640*A**9*r**14*rate**6 - 344064*A**7*B**10*r**14*rate**10 - 81920*A**7*B**8*r**16*rate**10 + 819200*A**7*B**8*r**14*rate**9 + 491520*A**7*B**6*r**18*rate**10 - 7012352*A**7*B**6*r**16*rate**9 + 21659648*A**7*B**6*r**14*rate**8 + 98304*A**7*B**4*r**20*rate**10 - 1703936*A**7*B**4*r**18*rate**9 + 7307264*A**7*B**4*r**16*rate**8 - 5275648*A**7*B**4*r**14*rate**7 - 147456*A**7*B**2*r**22*rate**10 + 4521984*A**7*B**2*r**20*rate**9 - 45383680*A**7*B**2*r**18*rate**8 + 172949504*A**7*B**2*r**16*rate**7 - 205062144*A**7*B**2*r**14*rate**6 - 16384*A**7*r**24*rate**10 + 491520*A**7*r**22*rate**9 - 4423680*A**7*r**20*rate**8 + 10321920*A**7*r**18*rate**7 + 20643840*A**7*r**16*rate**6 - 61931520*A**7*r**14*rate**5 + 229376*A**5*B**12*r**14*rate**10 + 147456*A**5*B**10*r**16*rate**10 - 1294336*A**5*B**10*r**14*rate**9 - 409600*A**5*B**8*r**18*rate**10 + 6012928*A**5*B**8*r**16*rate**9 - 19243008*A**5*B**8*r**14*rate**8 - 229376*A**5*B**6*r**20*rate**10 + 5013504*A**5*B**6*r**18*rate**9 - 31719424*A**5*B**6*r**16*rate**8 + 56885248*A**5*B**6*r**14*rate**7 + 196608*A**5*B**4*r**22*rate**10 - 6062080*A**5*B**4*r**20*rate**9 + 61456384*A**5*B**4*r**18*rate**8 - 238321664*A**5*B**4*r**16*rate**7 + 291078144*A**5*B**4*r**14*rate**6 + 81920*A**5*B**2*r**24*rate**10 - 2932736*A**5*B**2*r**22*rate**9 + 36175872*A**5*B**2*r**20*rate**8 - 187170816*A**5*B**2*r**18*rate**7 + 390856704*A**5*B**2*r**16*rate**6 - 247726080*A**5*B**2*r**14*rate**5 - 16384*A**5*r**26*rate**10 + 835584*A**5*r**24*rate**9 - 15605760*A**5*r**22*rate**8 + 134184960*A**5*r**20*rate**7 - 547061760*A**5*r**18*rate**6 + 970260480*A**5*r**16*rate**5 - 557383680*A**5*r**14*rate**4 - 81920*A**3*B**14*r**14*rate**10 - 81920*A**3*B**12*r**16*rate**10 + 720896*A**3*B**12*r**14*rate**9 + 180224*A**3*B**10*r**18*rate**10 - 2654208*A**3*B**10*r**16*rate**9 + 8503296*A**3*B**10*r**14*rate**8 + 180224*A**3*B**8*r**20*rate**10 - 4161536*A**3*B**8*r**18*rate**9 + 28098560*A**3*B**8*r**16*rate**8 - 54476800*A**3*B**8*r**14*rate**7 - 114688*A**3*B**6*r**22*rate**10 + 3473408*A**3*B**6*r**20*rate**9 - 34504704*A**3*B**6*r**18*rate**8 + 130744320*A**3*B**6*r**16*rate**7 - 155516928*A**3*B**6*r**14*rate**6 - 114688*A**3*B**4*r**24*rate**10 + 4325376*A**3*B**4*r**22*rate**9 - 57049088*A**3*B**4*r**20*rate**8 + 322732032*A**3*B**4*r**18*rate**7 - 763822080*A**3*B**4*r**16*rate**6 + 584908800*A**3*B**4*r**14*rate**5 + 16384*A**3*B**2*r**26*rate**10 - 819200*A**3*B**2*r**24*rate**9 + 14991360*A**3*B**2*r**22*rate**8 - 126156800*A**3*B**2*r**20*rate**7 + 502333440*A**3*B**2*r**18*rate**6 - 867041280*A**3*B**2*r**16*rate**5 + 481689600*A**3*B**2*r**14*rate**4 + 16384*A**3*r**28*rate**10 - 884736*A**3*r**26*rate**9 + 17940480*A**3*r**24*rate**8 - 173752320*A**3*r**22*rate**7 + 846397440*A**3*r**20*rate**6 - 2002452480*A**3*r**18*rate**5 + 2023096320*A**3*r**16*rate**4 - 619315200*A**3*r**14*rate**3 + 12288*A*B**16*r**14*rate**10 + 16384*A*B**14*r**16*rate**10 - 147456*A*B**14*r**14*rate**9 - 32768*A*B**12*r**18*rate**10 + 475136*A*B**12*r**16*rate**9 - 1482752*A*B**12*r**14*rate**8 - 49152*A*B**10*r**20*rate**10 + 1163264*A*B**10*r**18*rate**9 - 8060928*A*B**10*r**16*rate**8 + 16056320*A*B**10*r**14*rate**7 + 24576*A*B**8*r**22*rate**10 - 704512*A*B**8*r**20*rate**9 + 6512640*A*B**8*r**18*rate**8 - 22364160*A*B**8*r**16*rate**7 + 23052288*A*B**8*r**14*rate**6 + 49152*A*B**6*r**24*rate**10 - 1884160*A*B**6*r**22*rate**9 + 25296896*A*B**6*r**20*rate**8 - 145883136*A*B**6*r**18*rate**7 + 352321536*A*B**6*r**16*rate**6 - 275251200*A*B**6*r**14*rate**5 - 16384*A*B**4*r**24*rate**9 + 598016*A*B**4*r**22*rate**8 - 7569408*A*B**4*r**20*rate**7 + 40599552*A*B**4*r**18*rate**6 - 89456640*A*B**4*r**16*rate**5 + 61931520*A*B**4*r**14*rate**4 - 16384*A*B**2*r**28*rate**10 + 868352*A*B**2*r**26*rate**9 - 17235968*A*B**2*r**24*rate**8 + 162856960*A*B**2*r**22*rate**7 - 770703360*A*B**2*r**20*rate**6 + 1761607680*A*B**2*r**18*rate**5 - 1706557440*A*B**2*r**16*rate**4 + 495452160*A*B**2*r**14*rate**3 - 4096*A*r**30*rate**10 + 245760*A*r**28*rate**9 - 5627904*A*r**26*rate**8 + 62963712*A*r**24*rate**7 - 366428160*A*r**22*rate**6 + 1094123520*A*r**20*rate**5 - 1548288000*A*r**18*rate**4 + 867041280*A*r**16*rate**3 - 123863040*A*r**14*rate**2",
+        "scope": "A bounded homogeneous isotropic covariance witness for local-law sensitivity, not a full gravitational solution or selected cosmic initial state"
+      },
+      "scope": "Exact conditional geometry and annihilator controls; no empirical test, parameter-identification or PSD sufficiency claim",
+      "source_sha256": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e"
+    },
+    "sampling": {
+      "checks": [
+        {
+          "name": "P_adjoint",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "L_adjoint",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "T_adjoint",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "D_adjoint",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "Z_adjoint",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "full_ordered_weak_composition",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_inverse_degree_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_adjoint_degree_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_inverse_degree_3",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_adjoint_degree_3",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_inverse_degree_5",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_adjoint_degree_5",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_inverse_degree_7",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "born_adjoint_degree_7",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cross_pair_expectation_latent_-1",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "distinct_pair_expectation_latent_-1",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "cross_pair_expectation_latent_1",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "distinct_pair_expectation_latent_1",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "latent_variance_nonzero",
+          "passed": true,
+          "value": "73984/625"
+        },
+        {
+          "name": "independent_noise_product_0_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "independent_noise_product_1_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "independent_noise_product_2_3",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "independent_noise_product_3_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "self_noise_variance_is_one",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "unweighted_correlated_noise_product",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "weighted_noise_bias_counterexample",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "finite_grid_zero_0",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "finite_grid_zero_1",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "finite_grid_zero_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "finite_grid_nonzero_integral",
+          "passed": true,
+          "value": "1/840"
+        },
+        {
+          "name": "spin_adjoint_2_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_2_3",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_2_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_2_5",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_3_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_3_3",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_3_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_3_5",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_4_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_4_3",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_4_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_4_5",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_5_2",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_5_3",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_5_4",
+          "passed": true,
+          "residual": "0"
+        },
+        {
+          "name": "spin_adjoint_5_5",
+          "passed": true,
+          "residual": "0"
+        }
+      ],
+      "latent_conditional_targets": [
+        "-8",
+        "344/25"
+      ],
+      "scope": "Exact adjoint and finite-sampling mathematical controls; no empirical data or physical selection calibration",
+      "source_sha256": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a"
+    }
+  },
+  "counts": {
+    "failed": 0,
+    "passed": 89
+  },
+  "empirical_tests": 0,
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-24h-20261014/unequal_window/NO_GO_DISCIPLINE_CHECKLIST.md": "eae8df85aa41dad39a5bd00e4a251f79577dc810a1f6cbb7bbe921cd9de49c3b",
+    "docs/SCALAR_UNEQUAL_PAIR_BOUNDED_THEOREM_NOTE_2026-10-15.md": "ca32dbcd31b0776e45393b3e9c363ef0b66ec6aaf6b0f000f03e2710c048364f",
+    "scripts/scalar_unequal_geometry.py": "fcc8997fed4d410dd5ccb711ad8f7d3654be7fc80789b403c965a48e191a273e",
+    "scripts/scalar_unequal_sampling.py": "94706b997f4eb2c2caa84c7321f7dabfa4bc4f1570c8615240d89a7f77501a9a"
+  },
+  "observational_datasets_opened": 0,
+  "primary_sha256": "f313d5874c1fff25e4c509ac4ffb9c3f2860d1897899d832d615f2f8c2d6105c",
+  "read_inventory": {
+    "integrity_reads": [
+      "This source and declared inputs for SHA256; no external observations or inherited output arrays read"
+    ],
+    "scientific_inputs": [
+      "Explicit symbolic operators and fixed synthetic fixtures in declared helpers"
+    ]
+  },
+  "scope": "Necessary scalar constraint and finite-pair ensemble expectation under supplied field, geometry, statistics, sampling and calibration premises",
+  "target_claim_type": "bounded_theorem"
+}

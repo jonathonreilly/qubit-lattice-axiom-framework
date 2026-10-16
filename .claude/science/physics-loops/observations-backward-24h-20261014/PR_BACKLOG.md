@@ -58,3 +58,59 @@ M10 delivered 2026-10-15T09:36:41.401991+00:00: [PR#9597](https://github.com/jon
 ## Error-direction unit ready for publication
 
 M11 is prepared against frozenM10head18c1fe25210d3a19a8f77530937ae7af124084f0 on codex/observations-backward-discrepancy-20261015. Source and empirical checks are complete; final explicit staging/delivery check and regular PR creation follow. No science is merged. The independent cluster judgment is OPEN. Physical supplier remains open.
+
+M11 published 2026-10-15T11:07:17.193934+00:00: [PR #9600](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9600), regular/open, head `5a73333518a13640c6a99cbcb01c31342c519fd3`, base M10, 56 paths. Attached. Current continuation branch: `codex/observations-backward-selection-20261015`. Next unit requires a distinct action/potential/scale discriminator; no new PR prepared yet.
+
+## M12 proposed review unit
+
+Current branch codex/observations-backward-selection-20261015 is stacked on frozen M11 codex/observations-backward-discrepancy-20261015 at5a73333518a13640c6a99cbcb01c31342c519fd3. The mathematics is self-contained; the stack preserves the shared campaign history rather than treating receiver inference as an action premise. New note and two scripts, frozen synthetic protocol, original failures and scoped evidence form a coherent conditional-support unit. Source/evidence conformance and cluster judgment precede PR creation. No merge or main push.
+
+M12 published 2026-10-15T12:29:43.754333+00:00: [PR #9603](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9603), regular/open/mergeable,73 paths,head `e2873beca6af9954be49c4a9bbe8d98f05c9e69b`,base M11 `5a73333518a13640c6a99cbcb01c31342c519fd3`. Attached. No M12 publication backlog. Current continuation: `codex/observations-backward-growth-20261015`; next physical-history input-map block is planned, with no new discovery result yet.
+
+## M13 publication — 2026-10-15T14:11:06.477049+00:00
+
+[PR #9605](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9605) — regular/open,65paths,head `4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137`, frozen M12 base `e2873beca6af9954be49c4a9bbe8d98f05c9e69b`, attached. Conditional growth/lensing inverse;143 controls, independent six-case comparison, final exact-tree delivery review complete. Integrated-current-main gates and independent audit remain landing obligations. No merge.
+
+## M14 final source and opening disposition
+
+Full rolling scalar/dust momentum and five-row total-covariance inverse: bounded_theorem target, actual conditional-support. Final85 controls0fail; independent equations, canonical-state forward solution, covariance proof, source and cache checks complete. Root read complete closing reports. Two original mutation survivors repaired by independently checked sharp fixtures; invalidv2 retained; finalv3 has21 failed-check rejections and3 exceptions. One coherent M14 OPEN content judgment; final indexed evidence/tree binding precedes publication. No observation fit, action selection, integrated-main landing validation or formal audit. See dynamical_response/REVIEW_RECORD_v1.md.
+
+## M14 published — 2026-10-15T15:58:59.402386+00:00
+
+[PR #9608](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9608), regular/open, 76 paths, head `f3637a4eba3fb18690fe6a2b03d9455c60cc6363`, tree `fcfba0674309efabb284a2d573b975e4423de22b`, stacked on frozen M13. Attached; independent full delivery read. Conditional-support target bounded_theorem; no integrated-main or formal audit claim. Next block: projected physical covariance operator on `codex/observations-backward-covariance-20261015`.
+
+## M15 review-ready projected construction
+
+Coherent-opening judgment OPEN; base codex/observations-backward-dynamics-20261015 at f3637a4eba. Canonical29checks0fail, source confirmations complete, mechanical delivery being frozen. Final verified URL and head will be recorded in runtime PRS.json and attached to the chat. No request to merge.
+
+## M15 published — 2026-10-15T17:04:49.530051+00:00
+
+[PR #9610](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9610), regular/open,57paths,head `44c7d3309c17380474ec253a924af6891d438b02`,tree `52c7970632dc82451847c55681e92e881ecee79c`, stacked on frozen M14. Attached; final independent delivery read. No M15 publication backlog. Next direct working route: unequal-time observation windows, only a root working probe so far. No merge or formal audit.
+
+## M16 ready for frozen delivery
+
+One regular constituent planned from codex/observations-backward-windows-20261015 against codex/observations-backward-covariance-20261015 at44c7d3309c17380474ec253a924af6891d438b02 (#9610). Content OPEN; canonical source and scoped independent correspondence complete. Package only the finite-pair theorem, its exact runner/helpers/results/cache, intentional graph delta and indexed campaign evidence. Final staged delivery precedes publication. No merge or main push.
+
+## M16 publication and next route — 2026-10-15T18:03:10.144354+00:00
+
+M16 regular PR9612, frozen cdf67b716d/tree26a6,49paths, attached. Necessary finite shear/velocity pair expectation derived with explicit local law, geometry and calibrated sampling premises.89 author controls and8 failed-control mutation rejections; focused independent geometry/weak/source reviews and842 mechanical comparisons0mismatches.199member archive/25plain views/24explicit omissions preserve failures and review history. No observed data, variance bound, coefficient uniqueness or full-gravity sensitivity witness.
+
+Direct author continues on codex/observations-backward-environment-20261015. M17 asks whether finite size, boundary values and the complete stress trace bound a regular static body's scalar displacement. The homogeneous density minimum is not accepted as the realized interior. Initial working comparison argument remains unverified; no measured-gravity identification or action/state/scale choice is retired. Preserve all earlier development exposure and unopened products. Main and changed-PR refresh recorded in runtime M17 files. No owned research jobs or old campaign restart. Matching lock refreshed17:58Z; packaging21:33:44Z and deadline21:48:44Z unchanged.
+
+## M17 physical environment — 2026-10-15T18:40:00.221441+00:00
+
+One coherent complete-field physical-metric bound and measurement-prerequisite unit. Scientific source review complete and OPEN judgment;82author controls,10mutations rejected,0empirical tests. All findings resolved within their scopes; frozen delivery and publication pending. Exact source and complete reports are in finite_environment/CHECKPOINT_v3.json and REVIEW_RECORD_v1.md.
+
+## M17 publication and next working probe — 2026-10-15T19:01:04.294889+00:00
+
+[PR #9614](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614), regular/open/mergeable against its declared stacked base, frozen head `9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db`, tree `bd2c27a4ddb21ae4d44a1cb23d0a5bdf5ea4a410`,41paths; attached.82author controls,10failed-control mutation rejections,6synthetic profiles and zero empirical tests. The exact physical-frame ceiling retains all three fields and replaces a chosen homogeneous environment with conditional geometric and complete-boundary inputs; it does not construct a realized static body or derive the action/state/scales.
+
+Final canonical source/checklist binding is finite_environment/CHECKPOINT_v4.json, cache `b05f98972c9b3f9ec9299d9d29eec109ac9a420a8da12f262a9d878120e16b64`. Earlier v3 entries remain historical. Root read complete delivery reports v1/v2;201archive members,27plain views,28explicit omissions and all41paths verified. Three stale STATE display fields were the only v1→v2 change;146mechanical delta comparisons0mismatches. Runtime exact reports are M17_DELIVERY_REVIEW_v1/v2.md/json; original findings and versions preserved. No formal audit, main push or merge.
+
+Next: Independently challenge the unreviewed lapse-conjugation bound and its whole-domain threshold, then personally test whether first-clock-derivative error envelopes are useful. Investigate a smooth rapidly oscillating synthetic lapse with bounded first derivative; label it kinematic, not a full candidate solution or observation. Package any valid result as a coherent M17 extension, not a new PR for each inequality.
+
+The initial probe is preserved in lapse_derivative_probe/CHECKPOINT_v1.json with exact source/result identities. It is unreviewed and not part of the published M17 unit. Preserve development/independent-test separation; no new data were opened. No owned research jobs; all three older campaigns remain stopped. Matching lock refreshed18:55:59Z. Fixed packaging21:33:44Z and deadline21:48:44Z unchanged.
+
+## M18 coherent extension
+
+Scientific checks complete for the physical-metric lapse extension; update existing PR9614 on codex/observations-backward-environment-20261015 after frozen delivery verification. No separate PR, merge or main push. Published M17 head remains9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db until verified publication.

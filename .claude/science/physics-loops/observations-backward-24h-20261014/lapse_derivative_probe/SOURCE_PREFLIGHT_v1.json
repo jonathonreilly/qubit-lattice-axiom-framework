@@ -1,0 +1,44 @@
+{
+  "scope": "Direct mechanical source/cache readiness; no audit or integrated-main landing",
+  "row": {
+    "claim_id": "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15",
+    "note_path": "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "claim_type": "bounded_theorem",
+    "runner_path": "scripts/scalar_physical_curvature_check.py",
+    "helper_runner_paths": [
+      "scripts/scalar_physical_curvature_action.py",
+      "scripts/scalar_physical_curvature_geometry.py",
+      "scripts/scalar_physical_lapse.py"
+    ],
+    "deps": [
+      "exponential_scalar_finite_body_bounded_theorem_note_2026-10-14",
+      "exponential_scalar_future_confinement_bounded_theorem_note_2026-10-13",
+      "exponential_scalar_local_response_bounded_theorem_note_2026-10-13"
+    ]
+  },
+  "issue": null,
+  "cache_sha256": "8010647b91a4ec18bdb69d812bcd98171d9966359ee5bebdfaa9a6b9e93e7d28",
+  "manifest_delta_from_published_M17": "No change in manifest bytes or topology",
+  "vocabulary": "report-only0violations",
+  "graph_node": {
+    "claim_id": "scalar_physical_curvature_environment_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "exponential_scalar_finite_body_bounded_theorem_note_2026-10-14",
+      "exponential_scalar_future_confinement_bounded_theorem_note_2026-10-13",
+      "exponential_scalar_local_response_bounded_theorem_note_2026-10-13"
+    ],
+    "helper_runner_paths": [
+      "scripts/scalar_physical_curvature_action.py",
+      "scripts/scalar_physical_curvature_geometry.py",
+      "scripts/scalar_physical_lapse.py"
+    ],
+    "note_hash": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+    "path": "docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/scalar_physical_curvature_check.py",
+    "title": "Bounding the scalar environment from the physical static metric"
+  },
+  "cache_status": "fresh"
+}

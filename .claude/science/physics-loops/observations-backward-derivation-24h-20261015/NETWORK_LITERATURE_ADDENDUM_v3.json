@@ -1,0 +1,10 @@
+{
+  "read_at": "2026-10-16T03:49:29.973883+00:00",
+  "source": "https://arxiv.org/html/1612.00490v3",
+  "version": "arXiv:1612.00490v3",
+  "read_scope": "Main text through concluding discussion, including experiment, equation1 and ringdown; references/figure captions visible. Supplement and raw data not read.",
+  "development_status": "Exposed prior-art/physical-bridge comparison; no empirical test of our action.",
+  "findings_scope": "Observed1:3internal resonance differs from the2omega forcing of our chosen w*q\u00b2 coupling. Damping/feedback/readout bridges must be derived or justified before applying the candidate.",
+  "operational_failure": "Nature publisher find calls returned internal retrieval errors; no claim that raw data are absent.",
+  "contract_sha256": "7a348c4fde784ba24be112af40a0e1e310b8f94a88c7df782a3ccf48bd4bca4e"
+}

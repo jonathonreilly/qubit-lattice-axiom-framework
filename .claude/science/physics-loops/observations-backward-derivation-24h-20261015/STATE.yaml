@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "personal research; neighborhood exploration checked and packaging",
+  "phase": "active campaign; neighborhood subblock preserved",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T03:45:08.963809+00:00",
+  "updated_at": "2026-10-16T03:50:31.645102+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -18,7 +18,7 @@
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Finish the three-hour research-block preservation at03:53:06Z, then carry the preparation-independent common-response tests into actual calibrated environments; first establish a physical force/coordinate/time bridge and model-error budget without choosing a new action per environment.",
+  "next_action": "Continue the fixed24hour campaign from NEXT_OBSERVATION_CONTRACT_v1.md. Establish the physical observable/source bridge before testing the adaptive candidate; preserve19checked network units and PR9632, do not treat fitted or chosen actions as derived. Prioritize common-action tests across environments with explicit model-error and calibration bounds.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -124,10 +124,10 @@
   ],
   "milestone_status": "PR9628 scalar inverse and PR9632 neighborhood intervention both published and attached; shared integrated landing gates pending. No merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T03:45:08.963809+00:00",
+    "time": "2026-10-16T03:50:31.645102+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "All19network units and full synthesis source-checked; freeze and preservation in progress.",
+    "checkpoint_scope": "All19network research units and report pushed; final ownership/continuation handoff. Original24hour clock unchanged.",
     "failures": [
       "symbolic min ordering in first canonical run",
       "unordered symbolic endpoints in second canonical run",
@@ -142,10 +142,10 @@
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T02:18:58.903973+00:00",
-    "commit": "c112da108315fc715454f85801c56aa8f7582b26",
+    "checked_at": "2026-10-16T03:50:31.645102+00:00",
+    "commit": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
     "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "Network blocks01-04 and their focused evidence, plus prior campaign state; blocks05 onward currently uncommitted."
+    "scope": "All19network units, focused source checks, synthesis, source identities and figure. Later metadata/observation-contract follow-up is separate."
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -264,7 +264,7 @@
       "Separate permanent record content from changing downstream causal role; explicitly label any alternative to current Record premises."
     ],
     "observations_first": "Published interference, composition and stable outcome records constrain candidate mechanisms. Synthetic controls are not empirical tests; no raw independent-test dataset opened.",
-    "status": "active exploration"
+    "status": "scientific exploration complete; end-of-window preservation and handoff in progress"
   },
   "shared_mode_probe": {
     "note_sha256": "e1fb1ecc9bec148ad8b19b9998422d8984ece82a2109112aa0fd52c15bb8dfa8",
@@ -363,6 +363,14 @@
       "campaign_deadline_unchanged": "2026-10-16T22:36:59Z",
       "exploration_window_end": "2026-10-16T03:53:06Z",
       "unpublished_extension_status": "Blocks11-19 are checked exploratory evidence; only09/10 are integrated in canonical PR9632. No claim of completed canonical review for later extensions."
+    },
+    "report": {
+      "path": "NETWORK_EXPLORATION_REPORT_2026-10-16.md",
+      "sha256": "237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a",
+      "manifest": "NETWORK_EXPLORATION_MANIFEST_v2.json",
+      "source_commit": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
+      "future_contract": "NEXT_OBSERVATION_CONTRACT_v1.md",
+      "review_status": "19focused source checks complete; PR9632 canonical09/10 only; later extensions exploratory"
     }
   }
 }

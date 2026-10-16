@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-16T03:50:31.645102+00:00",
+  "source_commit": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
+  "remote_verified": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21",
+  "report_sha256": "237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a",
+  "manifest_sha256": "d3772d16fcdaeb3a3fbcdbece109b4de53c131fafbc09eb858f6b83c7416c324",
+  "next_contract_sha256": "7a348c4fde784ba24be112af40a0e1e310b8f94a88c7df782a3ccf48bd4bca4e",
+  "lock": {
+    "expires_at": "2026-10-16T04:49:30.086119+00:00",
+    "holder_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
+    "owner": "direct-author-observations-backward-derivation",
+    "pid": 90681,
+    "purpose": "observations-backward-derivation-24h-20261015",
+    "started_at": "2026-10-16T03:49:30.086119+00:00"
+  },
+  "owned_research_jobs": [],
+  "previous_campaigns": "remain stopped",
+  "campaign_deadline_unchanged": "2026-10-16T22:36:59Z",
+  "scientific_status": "Conditional mathematical results and exposed-data reproduction; no derivation of quantum outcomes, actual scalar action, scale or measurement bridge.",
+  "next": "Continue the fixed24hour campaign from NEXT_OBSERVATION_CONTRACT_v1.md. Establish the physical observable/source bridge before testing the adaptive candidate; preserve19checked network units and PR9632, do not treat fitted or chosen actions as derived. Prioritize common-action tests across environments with explicit model-error and calibration bounds."
+}

@@ -224,7 +224,7 @@ optimum sat in the quartic valley of the constant walk):
 | spin 3/2 = E (x) spin 1/2 | spinor (x) E | none (16 + 16 starts) |
 | spin 1 | not spinorial | none (20 starts) |
 | spin 1 + spin 0 = spin 1/2 (x) spin 1/2 | spinor (x) spinor | none (16 + 16 starts) |
-| 2 x spin 1 | not spinorial | none (16 + 12 starts) |
+| 2 x spin 1 | not spinorial | none (16 + 12 + 12 starts) |
 
 **Criterion (observed, proved only in part).** In the Clifford mechanism the
 moving part is g.Gamma with Gamma_a a vector triple of anticommuting Hermitian

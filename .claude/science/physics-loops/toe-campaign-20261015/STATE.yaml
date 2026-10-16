@@ -4,7 +4,7 @@ base: claude/rules-hygiene-20261015 (from origin/main bbada1fe0)
 window: 2026-10-15T23:30Z .. 2026-10-16T23:00Z
 mode: campaign
 target: best-honest-status
-active_block: B5-exact-range-two (Singular) / milestone PR #9636 open
+active_block: B5-exact-extensions (range three line branches; D3 Singular) / milestone PR #9636 open
 blocks:
   B1-covariant-qubit-walks:
     status: in_progress
@@ -52,7 +52,10 @@ blocks:
     result: "sublattice-dependent one-qubit walk folds into a two-qubit cell walk with W(k+Q) = tau1 W tau1; in the Clifford class this forces g = 0 (exact); 29 staggered starts found no moving walk"
     question: "keep one qubit per site but let the walk coefficients depend on sublattice parity (2-site cell): can an O-covariant (rotations about every site) staggered tick move?"
     method: "staggered.py: two O-covariant coefficient families, exact Z^3 coefficient equations for WW^dag and W^dag W"
-milestone_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636 (base claude/rules-hygiene-20261015)"
   B5-exact-extensions:
     status: in_progress
-    running: ["Singular slimgb: D3 on the cell (19 vars)", "Singular slimgb: O at range two per axis (25 vars, 149 eqs)"]
+    running: ["Singular slimgb: D3 on the cell (19 vars)", "line-branch method at range three (scratchpad/walk/rangeR.py RANGE=3)"]
+    done:
+      - "O, range two per axis, full action: EXACT freeze (Theorem 4 of the B1 note). Line restriction makes f + i|g| a unit Laurent monomial on axis/face/body lines; 584 of 585 exponent branches are linearly inconsistent; trivial branch radical forces V = 1. Runner scripts/cubic_covariant_qubit_walk_range_two_freeze_2026_10_16.py PASS=14 (~3 min); scratch branch_o2.py agrees. Singular O_axis2 job stopped as superseded."
+      - "doubled spin-1 site at delta 0.5: 0/12 moving, best residual 5.5e-2"
+milestone_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9636 (base claude/rules-hygiene-20261015)"

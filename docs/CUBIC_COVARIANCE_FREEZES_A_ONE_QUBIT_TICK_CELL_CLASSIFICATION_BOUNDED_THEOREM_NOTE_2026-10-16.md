@@ -1,7 +1,7 @@
 ---
 claim_id: cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Discrete-time unitary walks on l2(Z^3) (x) C^2 with hops inside the 27-point cell {-1,0,1}^3, translation covariant and covariant under a subgroup H of the proper cubic group with the full-soldered spin-1/2 coin action A_{Rn} = D(R) A_n D(R)^dagger. Exact (Groebner over Q, valid over C): for H = O and H = T every such walk is a constant phase times +-1; for H = D4 the only moving walks are axial shifts exp(+-i sigma_z k_z) up to phase; under the other three soldering-menu coin actions (trivial, sign twist, axis) an O-covariant cell walk is a constant on-site coin. Exhibit: the D2-covariant product walk moves in all three directions with an isotropic unit-speed Weyl cone at k = 0. Numerical (not proof): D3 admits no moving walk in the searched family; C3, C4 and D2 admit three-dimensional moving walks; every moving walk found has three-winding zero. Larger stencils, other coin actions and larger coins are stated separately with their evidence level."
+claim_scope: "Discrete-time unitary walks on l2(Z^3) (x) C^2 with hops inside the 27-point cell {-1,0,1}^3, translation covariant and covariant under a subgroup H of the proper cubic group with the full-soldered spin-1/2 coin action A_{Rn} = D(R) A_n D(R)^dagger. Exact (Groebner over Q, valid over C): for H = O and H = T every such walk is a constant phase times +-1; for H = D4 the only moving walks are axial shifts exp(+-i sigma_z k_z) up to phase; under the other three soldering-menu coin actions (trivial, sign twist, axis) an O-covariant cell walk is a constant on-site coin; on the 125-point stencil {-2,...,2}^3 (range two per axis) with the full-soldered action every O-covariant walk is a constant phase (line-branch certificate, second runner). Exhibit: the D2-covariant product walk moves in all three directions with an isotropic unit-speed Weyl cone at k = 0. Numerical (not proof): D3 admits no moving walk in the searched family; C3, C4 and D2 admit three-dimensional moving walks; every moving walk found has three-winding zero. Larger stencils, other coin actions and larger coins are stated separately with their evidence level."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py
@@ -26,7 +26,8 @@ primitive or dynamics clause.
    The same holds with only the tetrahedral subgroup T (order 12). Under the
    other three coin actions of the soldering menu (trivial, sign twist, axis)
    the walk is a constant on-site coin: nothing moves under any of the four
-   actions.
+   actions. With the full-soldered action the freeze persists when the hop
+   range is doubled to two sites along each axis (the 125-point stencil).
 2. **Keeping a fourfold axis and a perpendicular half-turn (D4, order 8)
    permits motion along that axis only:** U = e^{i theta} exp(+-i sigma_z k_z).
 3. **Three-dimensional motion survives only below order 6 on this cell.**
@@ -40,7 +41,7 @@ primitive or dynamics clause.
 Consequence for the framework, stated as an implication and not adopted: a
 one-qubit discrete-time motion law on the 27-point cell must give up exact
 proper-cubic covariance (keeping at most an axis, a body diagonal or the
-three axis half-turns), or leave this cell, or leave the declared coin action
+three axis half-turns), or use hops of range three or more, or leave the declared coin action
 or site algebra. The companion note
 `TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16`
 shows that a two-qubit site (the parked M_4(C) fork) does admit exactly
@@ -183,32 +184,45 @@ Limits of independence: the checker is the same model family in a new
 context; the D4 result rests on one Groebner algorithm plus a hand argument
 for the final one-dimensional step.
 
-## Range two per axis under O (evidence, not proof)
+## Theorem 4 — range two per axis under O: still frozen (exact)
 
-On the 125-point stencil (hops up to two along each axis, products over
-axes) the O-covariant families have 10 invariant scalars and 15 equivariant
-vectors; the identity f^2 + |g|^2 = 1 gives 149 coefficient equations. An
-exact Groebner computation did not finish within 35 minutes and is not
-claimed. Numerically:
+On the 125-point stencil {-2,...,2}^3 with the full-soldered action every
+O-covariant one-qubit walk is a constant phase.
 
-- with the motion coefficients bounded below by sum b^2 >= delta, the best
-  residual over 30–1500 starts scales like delta^2 for small delta
-  (9.8e-6 at 0.05, 1.6e-4 at 0.2): the quartic valley of the constant walk,
-  not a family of moving solutions;
-- for delta >= 0.5 the searches converge to one interior local minimum
-  (sum b^2 = 3.09, max |g| = 0.999) with residual 4.57e-4 and pointwise
-  unitarity defect 1.7e-3; Levenberg–Marquardt polishing leaves it there
-  with gradient norm 3e-13 and a nonsingular Jacobian (smallest singular
-  value 2.8e-3). It is an isolated near-miss, not an exact walk.
+*Proof.* By Theorem 0, U = e^{i theta} V with V = f + i g.sigma; the
+families have 10 invariant scalars and 15 equivariant vectors, and
+f^2 + |g|^2 = 1 gives 149 coefficient equations. Restrict to the three
+symmetry lines k = t e with e = (1,0,0), (1,1,0), (1,1,1). The stabiliser of
+e in O (C4, C2, C3) fixes only the multiples of e, so along the line
+g(t e) = gamma(t) e/|e| with gamma real. Then P = f + i gamma is a Laurent
+polynomial in z = e^{it} with P(z) conj(P)(1/z) = f^2 + gamma^2 = 1, hence a
+unit monomial lambda z^n. At t = 0 equivariance gives g(0) = 0 and
+f(0) = +-1; absorbing the sign into the phase, lambda = 1, so
+f = cos(n t) and gamma = sin(n t) on that line, with |n| bounded by the line
+degree: 2, 4 and 6 on the axis, face diagonal and body diagonal. Each of the
+5 x 9 x 13 = 585 choices (m, q, p) of the three exponents is a linear system
+on the 25 coefficients. Exact linear algebra over Q(i, sqrt 2, sqrt 3) shows
+all of them except (0, 0, 0) are inconsistent. On (0, 0, 0) the linear system
+fixes f's coefficients (a_0 = 1, the rest 0) and leaves six g-coefficients
+free; the Groebner basis over Q of the remaining unitarity equations places
+a power (at most the third) of each of the six in the ideal. So the variety
+is one point and V = 1.
 
-No moving O-covariant range-two walk was found. This is search evidence; a
-general theorem for every finite range remains open.
+The certificate is exact and holds over C. Two separate implementations
+agree: the second runner (Laurent restriction and linsolve) and a scratch
+version (trigonometric restriction and solve). The earlier numerical
+searches are consistent with it. Their best residuals scale like delta^2
+as the lower bound delta on the motion coefficients shrinks. For delta >= 0.5
+they reach one isolated interior near-miss (residual 4.6e-4, nonsingular
+Jacobian), which the theorem shows is not a walk.
+
+The line-branch method is not specific to range two; whether it closes every
+finite range is open (range three is being computed).
 
 ## What this does not do
 
-- It does not classify walks with hops beyond the 27-point cell. A
-  range-two-per-axis search under O is reported separately below with its
-  evidence level.
+- It does not classify walks with hops of range three or more, and at range
+  two it covers only H = O with the full-soldered action.
 - It does not exclude O-covariant motion with a larger site (two qubits or a
   spin-3/2 coin); that is outside the Qubit axiom's one-site algebra and is a
   separate question.
@@ -232,8 +246,8 @@ ceiling for motion.
 ## No-Go Discipline Gate
 
 ### N1 — Routes that could evade the claim
-1. *Larger stencil* (range two per axis, 125 points): ATTEMPTED; see the
-   range-two section below. Not covered by the theorem.
+1. *Larger stencil*: ATTEMPTED; Theorem 4 closes range two per axis under O
+   with the full action. Range three and beyond are not covered.
 2. *Smaller symmetry group*: ATTEMPTED; Theorems 1–2 and the scan show which
    subgroups permit motion.
 3. *Nonconstant determinant*: ATTEMPTED; Theorem 0 excludes it for every
@@ -261,7 +275,8 @@ are not used as witnesses.
 
 ### N5 — Rhetoric audit
 "Cannot move" is claimed only for the 27-point cell and the declared coin
-action, for H = O and T; for D4 only "axial only". Statements about larger
+actions, for H = O and T, and for the 125-point stencil with H = O and the
+full action; for D4 only "axial only". Statements about larger
 stencils, other actions or larger coins are reported at their own evidence
 level.
 
@@ -269,8 +284,8 @@ level.
 Breaking O to C3, C4 or D2 permits three-dimensional motion on the cell.
 
 ### N7 — Strongest objection
-A moving O-covariant walk might exist at larger range. The theorem is scoped
-to the 27-point cell for that reason.
+A moving O-covariant walk might exist at range three or more. The theorems
+are scoped to ranges one and two for that reason.
 
 ### N8 — Earlier claims
 No earlier repository claim is narrowed or contradicted.
@@ -282,3 +297,9 @@ python3 scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py
 ```
 
 Expected: `TOTAL: PASS=31 FAIL=0` (under a minute).
+
+```bash
+python3 scripts/cubic_covariant_qubit_walk_range_two_freeze_2026_10_16.py
+```
+
+Expected: `TOTAL: PASS=14 FAIL=0` (about three minutes; Theorem 4).

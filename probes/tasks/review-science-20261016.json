@@ -1,0 +1,596 @@
+[
+  {
+    "id": "J:derive:review-20261016-range-three-certificate:a1",
+    "problem": "review-20261016-range-three-certificate",
+    "title": "Certify the range-three cubic walk obstruction",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Reconstruct the range-three coefficient ideal and provide characteristic-zero ideal membership or radical certificates with exact independently checkable identities. Cover all algebraic branches and the stated support/covariance hypotheses. Existing modular/numerical searches and archived logs do not prove universal freezing. Start from the corrected finite-cell note; do not reintroduce its withdrawn range-three theorem.",
+    "what": "Reconstruct the range-three coefficient ideal and provide characteristic-zero ideal membership or radical certificates with exact independently checkable identities. Cover all algebraic branches and the stated support/covariance hypotheses. Existing modular/numerical searches and archived logs do not prove universal freezing. Start from the corrected finite-cell note; do not reintroduce its withdrawn range-three theorem. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/toe-campaign-24h-20261015",
+      "head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/exact_recheck_R3.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/fastR3.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv_p.sing",
+      "docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/exact_recheck_R3.py",
+        "sha256": "181f794a9c636f2c417586e60c023fdd3e020e6b068a85474e28c2ae417fe3cd",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/fastR3.py",
+        "sha256": "c6fec7be5a7ce4e4c84399426ea8c341fd913d84db71331fdce29cec3fd88a69",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv.sing",
+        "sha256": "6099e662552c45af78d536f09a5b230ff579ceb2a2744e0d0e295391dcf57672",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv_p.sing",
+        "sha256": "0f104c101c7e0151a41bdf0b7272c6d6afa27dec57431a9e96460f264c26add3",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": "docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "70a7cf051a7b0b96d60b6e4be9ca0743ce676d8c90d1bf38d5747b37c98fff3c",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261004-cubic-unfolding:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-irreducible-coin-certificate:a1",
+    "problem": "review-20261016-irreducible-coin-certificate",
+    "title": "Resolve the unproved general irreducible-coin boundary",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "For one E, spin-one or spin-three-halves coin, reconstruct the exact representation and Laurent unitarity equations and close all characteristic-zero branches, or provide an exact dispersive counterexample. Scalar and spin-half statements do not imply freezing for general irreducible coins; archived CAS outputs are not current certificates. Keep Clifford spinor times projective flavour possibilities explicit.",
+    "what": "For one E, spin-one or spin-three-halves coin, reconstruct the exact representation and Laurent unitarity equations and close all characteristic-zero branches, or provide an exact dispersive counterexample. Scalar and spin-half statements do not imply freezing for general irreducible coins; archived CAS outputs are not current certificates. Keep Clifford spinor times projective flavour possibilities explicit. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/toe-campaign-24h-20261015",
+      "head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_branch.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_exact.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_alg.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py",
+      "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_branch.py",
+        "sha256": "61528a3bc11e87ffeb544e533b6b5d625aa1d8007bd3938ab80f65e7c27b14d6",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_exact.py",
+        "sha256": "437b81be7244bc5dcab46c2d6268eef2469a2a1b5ebbbc91cf61be453db78785",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_alg.py",
+        "sha256": "dfc40b6aa8ac97f7183cf1efff0a4f69edeac4f356d571a908f6a54d72613f9a",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py",
+        "sha256": "be9b05c78080150323d2df2b196cba29388a9c38dbd1ef9bdc1d1ad54d4b810b",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "58723d2c9fd65eda81cf8b1859c5aff7ea62b0f129055d3753888a8c5811156c",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261004-cubic-unfolding:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-global-dirac-torus:a1",
+    "problem": "review-20261016-global-dirac-torus",
+    "title": "Establish the global quasienergy zeros of the supplied Dirac family",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Prove or refute the complete Brillouin-torus zero/pi-touching set of the corrected explicit walk family, retaining parameter endpoints and Gram PSD/rank restrictions. A finite mesh with no other zero is not a doubler-free proof. Local Dirac expansion, numerical rank-two candidates and tangent-space dimensions cannot replace global algebraic exclusion.",
+    "what": "Prove or refute the complete Brillouin-torus zero/pi-touching set of the corrected explicit walk family, retaining parameter endpoints and Gram PSD/rank restrictions. A finite mesh with no other zero is not a doubler-free proof. Local Dirac expansion, numerical rank-two candidates and tangent-space dimensions cannot replace global algebraic exclusion. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/toe-campaign-24h-20261015",
+      "head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+      "on_origin": true
+    },
+    "source_paths": [
+      "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "scripts/two_qubit_cubic_dirac_tick_2026_10_16.py"
+    ],
+    "source_objects": [
+      {
+        "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "58723d2c9fd65eda81cf8b1859c5aff7ea62b0f129055d3753888a8c5811156c",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": "scripts/two_qubit_cubic_dirac_tick_2026_10_16.py",
+        "sha256": "10a87c0b6902abdeaad856762e3b7a3a1eb5e5c59109dfacccd0e7c9ebc6539f",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261004-cubic-unfolding:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-signed-corner-extensions:a1",
+    "problem": "review-20261016-signed-corner-extensions",
+    "title": "Classify the signed corner actions beyond the prescribed 2O lift",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "The landed statement covers a monomial representation of the prescribed binary octahedral group with central minus one and the real odd C6 character. Determine which other central extensions, cocycles or allowed gauge equivalences actually exist, and classify ONE precise extension class with exact representatives and induced characters. Three numerical trace signatures and sample nullspaces are not an exhaustive projective or gauge classification; do not infer physical generations.",
+    "what": "The landed statement covers a monomial representation of the prescribed binary octahedral group with central minus one and the real odd C6 character. Determine which other central extensions, cocycles or allowed gauge equivalences actually exist, and classify ONE precise extension class with exact representatives and induced characters. Three numerical trace signatures and sample nullspaces are not an exhaustive projective or gauge classification; do not infer physical generations. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/toe-campaign-24h-20261015",
+      "head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/README.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/blockrep.py",
+      "docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py",
+      "scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/README.md",
+        "sha256": "556cb52473b506bce49482493fb9855d2f467e1c2d6dfa205ad36ae415c51e65",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockrep.py",
+        "sha256": "ed714bbaa7d5120ad7431b1444bd90e82e5f7040283160a018222e41ac6dbd45",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": "docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "38a0c2adb8e7e7e9bae446cc8f310693e391b795f87824e7741e6960d3408f77",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": "docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "d3b8c4021fecae0555379efadb1136bee70a25d1eb03edd6af187b699bb33735",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": "scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py",
+        "sha256": "067e1cee3ec3b5b2a21c15c359f780023ea662038297102ae6f9fa0f05fbc932",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      },
+      {
+        "path": "scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py",
+        "sha256": "764295007b83fc16df401474b21595e63aabe6e1c1aafc84b6d2c2d61c4944cf",
+        "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261004-cubic-unfolding:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-strain-path-and-retuning:a1",
+    "problem": "review-20261016-strain-path-and-retuning",
+    "title": "Resolve the physical strain path and interacting retuning obligation",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Compare the literal deformed symbol with spectrum-preserving Hamiltonian dressing and positive local loop ensembles. Derive which path follows from registered premises before assigning a universal Hessian. The packet contains zero-Hessian tunings; a local implicit-function retuning argument is not global, and changing observables is not a no-effect result. Advance one interacting critical-surface/retuning bridge with explicit observables and exact controls; no universal SF-Hazard claim from one supplied strain path.",
+    "what": "Compare the literal deformed symbol with spectrum-preserving Hamiltonian dressing and positive local loop ensembles. Derive which path follows from registered premises before assigning a universal Hessian. The packet contains zero-Hessian tunings; a local implicit-function retuning argument is not global, and changing observables is not a no-effect result. Advance one interacting critical-surface/retuning bridge with explicit observables and exact controls; no universal SF-Hazard claim from one supplied strain path. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/strain-hot-matter-twins-20261013",
+      "head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_report.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_report.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_report.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_report.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_referee_verdict.md",
+        "sha256": "178624da4f86289465244a58a64b77131c8714d43f69b482bfcdf90434f3be2f",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_report.md",
+        "sha256": "aa464d4e4e39b4ac12a012df327291d1dae74adc518dd7bb13bfa96d3b4b049f",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_referee_verdict.md",
+        "sha256": "5ec1de4f05b9014c04fcd0382681e9da413fad549116ee6125bbd12a23e2113f",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_report.md",
+        "sha256": "df55ab86a7ee2395538c5a3569102f7ec763054e89bfda3fba9bed9e70df6611",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_referee_verdict.md",
+        "sha256": "cc171b3a9f42dd03133fc3012e628ab97fb442faaee5a6b1612affe2dc2476e5",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_report.md",
+        "sha256": "64ed41e507381c60cf3c4b9bdb90e3b92263affba3595816a9b2ec9a4dabe64c",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_referee_verdict.md",
+        "sha256": "a21bd78b865cec837fc7776d17506bed03076f343b7ef98f7b12d4c871c3be64",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_report.md",
+        "sha256": "5996a5789d1489f88a3054087945244b6bd746ce46697af9d0ee6823618b79e6",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261014-flavour-strain-scope:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-medium-mass-interpretation:a1",
+    "problem": "review-20261016-medium-mass-interpretation",
+    "title": "Derive the missing medium-to-observation bridge",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Reconstruct the finite-layer wave problem with mixing and appropriate boundary data, then determine the exact scope of a strain-induced mass or instability inference. The stated Earth 1e-29 sensitivity is a one-dimensional medium estimate, not a published environmental mass bound. Positive graviton-mass observational limits do not automatically constrain a negative/tachyonic coefficient; include finite-layer resonances and distinguish hot-era assumptions. Supply a controlled bridge or counterexample, not a numerical restatement.",
+    "what": "Reconstruct the finite-layer wave problem with mixing and appropriate boundary data, then determine the exact scope of a strain-induced mass or instability inference. The stated Earth 1e-29 sensitivity is a one-dimensional medium estimate, not a published environmental mass bound. Positive graviton-mass observational limits do not automatically constrain a negative/tachyonic coefficient; include finite-layer resonances and distinguish hot-era assumptions. Supply a controlled bridge or counterexample, not a numerical restatement. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/strain-hot-matter-twins-20261013",
+      "head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_report.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_referee_verdict.md",
+        "sha256": "59b35aad589e068bc9d13e22f70e38a46ee998c6929256a2b090bac79db8b1e7",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_report.md",
+        "sha256": "2e0bb068f15af97904361083c04e4fac86be771721095393d37777bde51d0df3",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261014-flavour-strain-scope:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-composite-clock-strain:a1",
+    "problem": "review-20261016-composite-clock-strain",
+    "title": "Resolve the composite and clock coefficient-transfer assumption",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Separate fine/coarse toy gap response from a derived Standard Model or composite-Higgs coefficient. Reconstruct the toy calculations but advance one actual coarse/composite matching or physical clock readout bridge. The 5.6e11 composite claim uses a transfer ansatz; the toy 5.9e7 calculation does not establish it. A linearized clock expression with order-1000 relative response lies outside its small-response regime. Keep scale, strain and species identifications explicit and unadopted.",
+    "what": "Separate fine/coarse toy gap response from a derived Standard Model or composite-Higgs coefficient. Reconstruct the toy calculations but advance one actual coarse/composite matching or physical clock readout bridge. The 5.6e11 composite claim uses a transfer ansatz; the toy 5.9e7 calculation does not establish it. A linearized clock expression with order-1000 relative response lies outside its small-response regime. Keep scale, strain and species identifications explicit and unadopted. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/strain-hot-matter-twins-20261013",
+      "head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_report.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_report.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/DOSSIER.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/SYNTHESIS.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/condmat_statement.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/gr_statement.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/lattice_statement.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/pheno_statement.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/skeptic_statement.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_referee_verdict.md",
+        "sha256": "932ace7b637106cb89d67babf6fc1cc15b2aed89bed5875eddf7505c01b9deaa",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_report.md",
+        "sha256": "5349a78832efa473d419237e96ffcfce9bc3676e37e16ecef4997da2ac24a845",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_referee_verdict.md",
+        "sha256": "fdc753260d52e78ffa0ac8a20b8bc139ec9a3a095527f7e6146d350126fc4f33",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_report.md",
+        "sha256": "94ae8da373b52a0f1e3baee70f5c21d3f0523da1279e07df4ffde894c0fe4647",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/DOSSIER.md",
+        "sha256": "d3ea58e84b66231a4e52ab6ac30c5922ff34005b69b16b929ac72a5d9628dcdf",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/SYNTHESIS.md",
+        "sha256": "4b8318b1faf7439c2998a86d071fd0df464bc5d228743fcb7b66bd173d0f5b01",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/condmat_statement.md",
+        "sha256": "6c7b993c6739d79868b486b155af666932a667ceea15839e2c6471e1d55cb3f7",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/gr_statement.md",
+        "sha256": "0dd567186d84efdc0235857179f3fc9020cc2453ff362c0bc80b410abeff291f",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/lattice_statement.md",
+        "sha256": "25c3c68970da46fd2dc311403e82607c43e405122872f475a434176ec5f2fb29",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/pheno_statement.md",
+        "sha256": "18577dbb707a34e30413877f4e5e31673a368044e9734cb5f9f71019580dde7e",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/skeptic_statement.md",
+        "sha256": "22f248ea7785b95ac281d63a2b45bc72396c77cb0d06b862549492ffd495bcca",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261014-flavour-strain-scope:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-staggered-symmetry-mass:a1",
+    "problem": "review-20261016-staggered-symmetry-mass",
+    "title": "Establish the exact staggered mass-protection symmetry",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Build the actual covariant regulator and link action and classify permitted mass terms under Theta plus the needed staggered parity/shift symmetries. Anticommutation with epsilon is not the claimed literal continuous U1 commutation. Theta alone does not forbid all masses; reconcile the reported 64-entry and corrected row-normalization calculations with exact algebra. Decide one interacting/gauged protection statement while retaining two-Dirac-taste and physical embedding obligations.",
+    "what": "Build the actual covariant regulator and link action and classify permitted mass terms under Theta plus the needed staggered parity/shift symmetries. Anticommutation with epsilon is not the claimed literal continuous U1 commutation. Theta alone does not forbid all masses; reconcile the reported 64-entry and corrected row-normalization calculations with exact algebra. Decide one interacting/gauged protection statement while retaining two-Dirac-taste and physical embedding obligations. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/strain-hot-matter-twins-20261013",
+      "head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_report.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_referee_verdict.md",
+        "sha256": "85ae0cd85151a5fb370b4960757706348b951fe6444cb1c5d50fd8dfa3aa742f",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_report.md",
+        "sha256": "24a5a262b25ede2fe8c67007317cb8f40d465855bfbf73e5420219338b2915e0",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_referee_verdict.md",
+        "sha256": "d6257dae115673fd0f632caa0e32752eace2ef3b493cdd7cc43a0e383f549410",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md",
+        "sha256": "69f8a151d1232a873182e9b034f8d40cd640de90fa099ac143313861a62bbc6e",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261014-flavour-strain-scope:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-mirror-carrier-and-gap:a1",
+    "problem": "review-20261016-mirror-carrier-and-gap",
+    "title": "Resolve the carrier count and interacting mirror-gap bridge",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Reconstruct the real/quaternionic carrier count: real reduced two Majoranas form one Dirac, quaternionic even pairing supplies no automatic gain, and three right-handed-neutrino labels do not fit an unsupported three-Majorana identification. SO(N) is not an established Standard Model carrier. Advance one precisely defined interacting mirror-gap or taste-selection result, checking that the finite eight-Majorana 14W gap and large-W asymptotics do not prove a chiral lattice phase. State the unbroken-shift hypothesis and spontaneous-breaking alternatives.",
+    "what": "Reconstruct the real/quaternionic carrier count: real reduced two Majoranas form one Dirac, quaternionic even pairing supplies no automatic gain, and three right-handed-neutrino labels do not fit an unsupported three-Majorana identification. SO(N) is not an established Standard Model carrier. Advance one precisely defined interacting mirror-gap or taste-selection result, checking that the finite eight-Majorana 14W gap and large-W asymptotics do not prove a chiral lattice phase. State the unbroken-shift hypothesis and spontaneous-breaking alternatives. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/strain-hot-matter-twins-20261013",
+      "head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_report.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_referee_verdict.md",
+        "sha256": "d380b817bcbfe6d6b5d874f1be069b379405969c6cf0b700d646b935454c3c96",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_report.md",
+        "sha256": "25867a7ceacdfdf98aff329b5219f393a49b785c68f3fcedba2a0b89a352292c",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_referee_verdict.md",
+        "sha256": "d6257dae115673fd0f632caa0e32752eace2ef3b493cdd7cc43a0e383f549410",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md",
+        "sha256": "69f8a151d1232a873182e9b034f8d40cd640de90fa099ac143313861a62bbc6e",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261014-flavour-strain-scope:a1"
+    ]
+  },
+  {
+    "id": "J:derive:review-20261016-taste-split-linear-strain:a1",
+    "problem": "review-20261016-taste-split-linear-strain",
+    "title": "Resolve first-order strain after a supplied taste split",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "The preregistered safe Hessian test does not constrain a first derivative. Reconstruct the branch-dependent linear responses and determine whether a physical symmetry forces a vanishing coefficient, or provide a controlled explicit counterexample. Keep the fixed-axis selector and Hamming-splitting scale supplied; no grid-scale lambda is forced. A finite response in one model is not an experimental exclusion or a full flavour derivation.",
+    "what": "The preregistered safe Hessian test does not constrain a first derivative. Reconstruct the branch-dependent linear responses and determine whether a physical symmetry forces a vanishing coefficient, or provide a controlled explicit counterexample. Keep the fixed-axis selector and Hamming-splitting scale supplied; no grid-scale lambda is forced. A finite response in one model is not an experimental exclusion or a full flavour derivation. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "claude/strain-hot-matter-twins-20261013",
+      "head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_referee_verdict.md",
+      ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_report.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_referee_verdict.md",
+        "sha256": "dacc968ff1da7817bcbb944220af3129fd1ee17d78e3c8a68e631b873ee08751",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      },
+      {
+        "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_report.md",
+        "sha256": "3dc6105c233bfdb35d9ed34349142d91c4b88279dc58e32672c310675d4b8fac",
+        "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261014-flavour-strain-scope:a1"
+    ]
+  }
+]

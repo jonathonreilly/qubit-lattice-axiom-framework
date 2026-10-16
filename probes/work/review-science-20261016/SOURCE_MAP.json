@@ -1,0 +1,2235 @@
+{
+  "kind": "source addresses and disposition only; no copied PR snapshots",
+  "sources": [
+    {
+      "pr": 9571,
+      "branch": "claude/strain-hot-matter-twins-20261013",
+      "head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "delta_base": "92574ffe95192cc0724a27e1acad28e42d325115",
+      "disposition": "unlanded exercise; unresolved source candidates routed as research, historical verdicts confer no authority",
+      "paths": [
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/README.md",
+          "sha256": "f76dd4ba7b6e31d0bb0da91daa0c568fd40563dd5a518cfb7dd53a3e58a2a76b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/TESTS.md",
+          "sha256": "1dc095d538e7b2fa291bf8f0cd08170d1724f29c327d01e4bdfc8aadb18bb99b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_referee_verdict.md",
+          "sha256": "932ace7b637106cb89d67babf6fc1cc15b2aed89bed5875eddf7505c01b9deaa"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_report.md",
+          "sha256": "5349a78832efa473d419237e96ffcfce9bc3676e37e16ecef4997da2ac24a845"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_referee_verdict.md",
+          "sha256": "178624da4f86289465244a58a64b77131c8714d43f69b482bfcdf90434f3be2f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_report.md",
+          "sha256": "aa464d4e4e39b4ac12a012df327291d1dae74adc518dd7bb13bfa96d3b4b049f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_referee_verdict.md",
+          "sha256": "59b35aad589e068bc9d13e22f70e38a46ee998c6929256a2b090bac79db8b1e7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_report.md",
+          "sha256": "2e0bb068f15af97904361083c04e4fac86be771721095393d37777bde51d0df3"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_referee_verdict.md",
+          "sha256": "5ec1de4f05b9014c04fcd0382681e9da413fad549116ee6125bbd12a23e2113f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_report.md",
+          "sha256": "df55ab86a7ee2395538c5a3569102f7ec763054e89bfda3fba9bed9e70df6611"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_referee_verdict.md",
+          "sha256": "cc171b3a9f42dd03133fc3012e628ab97fb442faaee5a6b1612affe2dc2476e5"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_report.md",
+          "sha256": "64ed41e507381c60cf3c4b9bdb90e3b92263affba3595816a9b2ec9a4dabe64c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_referee_verdict.md",
+          "sha256": "a21bd78b865cec837fc7776d17506bed03076f343b7ef98f7b12d4c871c3be64"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_report.md",
+          "sha256": "5996a5789d1489f88a3054087945244b6bd746ce46697af9d0ee6823618b79e6"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_referee_verdict.md",
+          "sha256": "fdc753260d52e78ffa0ac8a20b8bc139ec9a3a095527f7e6146d350126fc4f33"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_report.md",
+          "sha256": "94ae8da373b52a0f1e3baee70f5c21d3f0523da1279e07df4ffde894c0fe4647"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_referee_verdict.md",
+          "sha256": "85ae0cd85151a5fb370b4960757706348b951fe6444cb1c5d50fd8dfa3aa742f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_report.md",
+          "sha256": "24a5a262b25ede2fe8c67007317cb8f40d465855bfbf73e5420219338b2915e0"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_referee_verdict.md",
+          "sha256": "d380b817bcbfe6d6b5d874f1be069b379405969c6cf0b700d646b935454c3c96"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_report.md",
+          "sha256": "25867a7ceacdfdf98aff329b5219f393a49b785c68f3fcedba2a0b89a352292c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_referee_verdict.md",
+          "sha256": "dacc968ff1da7817bcbb944220af3129fd1ee17d78e3c8a68e631b873ee08751"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_report.md",
+          "sha256": "3dc6105c233bfdb35d9ed34349142d91c4b88279dc58e32672c310675d4b8fac"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_referee_verdict.md",
+          "sha256": "d6257dae115673fd0f632caa0e32752eace2ef3b493cdd7cc43a0e383f549410"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md",
+          "sha256": "69f8a151d1232a873182e9b034f8d40cd640de90fa099ac143313861a62bbc6e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/DOSSIER.md",
+          "sha256": "d3ea58e84b66231a4e52ab6ac30c5922ff34005b69b16b929ac72a5d9628dcdf"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/SYNTHESIS.md",
+          "sha256": "4b8318b1faf7439c2998a86d071fd0df464bc5d228743fcb7b66bd173d0f5b01"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/condmat_statement.md",
+          "sha256": "6c7b993c6739d79868b486b155af666932a667ceea15839e2c6471e1d55cb3f7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/gr_statement.md",
+          "sha256": "0dd567186d84efdc0235857179f3fc9020cc2453ff362c0bc80b410abeff291f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/lattice_statement.md",
+          "sha256": "25c3c68970da46fd2dc311403e82607c43e405122872f475a434176ec5f2fb29"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/pheno_statement.md",
+          "sha256": "18577dbb707a34e30413877f4e5e31673a368044e9734cb5f9f71019580dde7e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/skeptic_statement.md",
+          "sha256": "22f248ea7785b95ac281d63a2b45bc72396c77cb0d06b862549492ffd495bcca"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_graphene.out",
+          "sha256": "c49b3928c901d15fa6377deedc8382b7008f75b66d30d74615e3209fccdd8fa2"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_graphene.py",
+          "sha256": "c343bb0370138139e575f44a18c779af28f08d0217b2de745375ffa712878446"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_extra.out",
+          "sha256": "a1bc4f63b01ffc69dd0f07a8d815b9bb43004d1af8e8bc0c72c0b553741b314e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_extra.py",
+          "sha256": "412cd2e6ea337b2642db1267d9691dcd3dba8724e83de84ff583506080e05d8d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_leak.out",
+          "sha256": "b003fe7894abcef326fea317fa2d96098ba9b3f6bbce7282473757354586876b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_leak.py",
+          "sha256": "1acc90d057b18358477a7878ad84bbdbde5844344315857be2c0576703c1e0bf"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_stretch.out",
+          "sha256": "61582dcca11e0164b45ee4572216513ff568f2f5af30d01f40070e2e7ea26749"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_stretch.py",
+          "sha256": "f26a223176213d47b151b6531d75de2f8aa763ca163b3479727d3628366fe1a7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_tm.out",
+          "sha256": "612b96d1ab4bef26a6433f889833c7c1c66699daf96785affcc20e9773bf8782"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_ising_tm.py",
+          "sha256": "a55a11adae43011ac6dbd984c12c260a27bd8e2ceb2fc567991891f96368aa71"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_onN.out",
+          "sha256": "8ca7e7c1845b693538c9d08ea49532b5b0d66a1fc8e490af5dffa36bcf7dbd3d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_onN.py",
+          "sha256": "378a815503e24dfb1b39c3b32ddc03473ff2ccfeaf799c49a59d8a312a467bc1"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_phi4.out",
+          "sha256": "c6467f2c36bbff35a5d210215cceda5553da64b6e5c2afb178e3e0b168216a16"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_phi4.py",
+          "sha256": "9efd9fecfcdcd3888569901099dc4d4eaad30f7e3f6224236e03093f2e8f1c44"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_xy_fabric.out",
+          "sha256": "a29198a413e501be67a79e53f20222b287306ea6076d21a99934e2610ffd7983"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/e1_xy_fabric.py",
+          "sha256": "03d8105920281d5af6f7d1c92d7a5c06514a13a9bbacc4274ca74a62070190ed"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_independent_check.err",
+          "sha256": "3f9cac96ba0ac2dbfda0e022a4915ced65a217c954d57736763b297c7f1f8ab7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_independent_check.out",
+          "sha256": "0562c030fe88cfa7b22069e87c24d83127c1ca1e82dea62f6436999d6510b288"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_independent_check.py",
+          "sha256": "69084328db997f4c0445831b6ae428072e563461959b26e683e0467640ed1f54"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_mutation_test.err",
+          "sha256": "e1e56be717c8ee6bd346c0de2a5f8bf514a6dd0c4834dccdef11d646d9015dfb"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_graphene.err",
+          "sha256": "0c7c3879c2d3eeb8f7ef3d1c890ddcb626545fd09ef26b4fac5d16b1e3210103"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_graphene.out",
+          "sha256": "c49b3928c901d15fa6377deedc8382b7008f75b66d30d74615e3209fccdd8fa2"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_extra.err",
+          "sha256": "71fb5a3a8591d1d04ba54a635caf55201f36adc6f26b19bfd5eb3caf7476e2dd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_extra.out",
+          "sha256": "a1bc4f63b01ffc69dd0f07a8d815b9bb43004d1af8e8bc0c72c0b553741b314e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_leak.err",
+          "sha256": "65ac57623d75b2925dc309dfb47871f0a00711ef0fba454c87adb37d34b7d506"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_leak.out",
+          "sha256": "b003fe7894abcef326fea317fa2d96098ba9b3f6bbce7282473757354586876b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_stretch.err",
+          "sha256": "bef7802cdcb2f32be4a881e6ef3afff879d6592bc266827fea397195ccf04c98"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_stretch.out",
+          "sha256": "61582dcca11e0164b45ee4572216513ff568f2f5af30d01f40070e2e7ea26749"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_tm.err",
+          "sha256": "31fcb8b8a2154e9187e76d4393eb3716b11ab7b211ceede0af92b57657ddc67b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_ising_tm.out",
+          "sha256": "612b96d1ab4bef26a6433f889833c7c1c66699daf96785affcc20e9773bf8782"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_onN.err",
+          "sha256": "7b73ed7f6393faa49996e0d5efd7fdc0dba441d9927f2527b485483acc6ea9cd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_onN.out",
+          "sha256": "8ca7e7c1845b693538c9d08ea49532b5b0d66a1fc8e490af5dffa36bcf7dbd3d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_phi4.err",
+          "sha256": "50d7760eb90c1fe54960c94bd83f9be33d14e3e3e46ec6af40f7d9d5147100dc"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_phi4.out",
+          "sha256": "c6467f2c36bbff35a5d210215cceda5553da64b6e5c2afb178e3e0b168216a16"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_xy_fabric.err",
+          "sha256": "9f8b3f2081eef0fb3b01f8a882c60e2df6d72c886ed47b995b55f534457edb27"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/E1/referee/referee_rerun_xy_fabric.out",
+          "sha256": "a29198a413e501be67a79e53f20222b287306ea6076d21a99934e2610ffd7983"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_branches.out",
+          "sha256": "90aa066546dfe121d59ebd5601c52bf103ded8acd81dff984124563378958556"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_branches.py",
+          "sha256": "110cd68e9ce10fba33b9f0a3f65051c8ede660bb1576a73f810b2e09796dbcee"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_controls.out",
+          "sha256": "77dca595251dc4d6a4ddb4be587ad3c327811fc2d8fc7e2e2fccd039bd28f18b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_envscale.out",
+          "sha256": "e64a93103eee842478f5172685039394f8c9e5a68631316c0a97e111ef941aa9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_envscale.py",
+          "sha256": "232b1fbacdfb7685ec40f306db8ca79dee34f4be80fc4e381cd15d472b882910"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_lib.py",
+          "sha256": "c59557ce2e899d4cc502e7f79267942067c70847d6e307e8886f5c4daa540488"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_locality.out",
+          "sha256": "4f4d138bee4b86869007f430d15ffd75db106d1a0110a34ba7df11f4430d3f65"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_locality.py",
+          "sha256": "864d7869fea6192bed70b54497a1d3b23c6b6435b0e2488254ba231b8fa706d0"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_orders.out",
+          "sha256": "e2ec8bbe282d71e8d6c187d38c2d7c4c4574965953021bc2e4c8b5603347836d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_root.py",
+          "sha256": "4e6f4926c34ebdbf873b034bff1d89d6c742a207d9a70586cef0e91c9e815c74"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_root_conv.out",
+          "sha256": "85759aa9a8f8e87e2f5a172feff8fda6f45dcb93f569cf57f17e39cfe653f739"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_root_conv2.out",
+          "sha256": "7196bf6320f67814d02d2246c7df8983be8b08d901400764602da1bc6e8b797c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_sizes.out",
+          "sha256": "6ad7121026f7b51e77c44d599675dca448c0724bdbaf21c66092039a228ab234"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_sizes.py",
+          "sha256": "12b9852ededad28f3fae913fc4de3218bb3f9a47cb7a58591ce647705e6f1957"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_timing.out",
+          "sha256": "6bed99421210cd8bf7d1d8c54a3e637cea2914497c19e9a178fa13a24c3cbcf5"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_timing.py",
+          "sha256": "0b2c3de10cc2eeb3ad40e756fe21de633744a8c5f3f1e7a40d89d44f156a6cc3"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_validate.out",
+          "sha256": "fd5afc19d63695982a5ecfbce9b5afd4adb4badf1ecc440f032844848af58cc9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_validate.py",
+          "sha256": "49fadbfcacfc6840251e253c492c96e8ddff9d91723ddf03231d33bbd46eb3b0"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_validate2.out",
+          "sha256": "35d9e067bc6ba542dcaa476896cf6bebd301e3745fe1348e558ee912b4bf8126"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_validate2.py",
+          "sha256": "f1b1f1d34126ca9ee25fad0143c7fcfe6aaeb9e9b1aacdb57b634eee413eff95"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/f1_validate_v0_buggycheck.out",
+          "sha256": "dc78a60e0d957d631277ac2d6be4e8d38f92375bda9219435d8d3149be652eae"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/referee/referee_f1_arithmetic.py",
+          "sha256": "78233aa1e157dcd026bc249dd8244bb06d97d94a7c018291bee3ea15683c2db8"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/referee/referee_f1_earth_geometry.py",
+          "sha256": "52d238e590838e0ca839258e085a3650d64f3b0003a37d6364dc711789bd4f4b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F1/referee/referee_f1_independent.py",
+          "sha256": "478c82f536f5dc38d2c1c3f0e368c4d215fd03033fdc45c43d852045ebf17e32"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_common.out",
+          "sha256": "282a03978715ef95fe162820cde3771fdf1e65ec70aed011c15c4dfba0bfb715"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_common.py",
+          "sha256": "9de72a6d667866c71653367af7334d03654623ab659131f01739e0ca91a98acb"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_cosmo.out",
+          "sha256": "fec2eefefb7ace12d5c23980aa5e9be6e879df35385eca4052f5d53a820dcd07"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_cosmo.py",
+          "sha256": "3d40b405a42fdd71ca1ae854ad712b0590449bc3d943cfb428e49ac03ead9b90"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_earth.out",
+          "sha256": "324b79c6f370b6ebf36a997ab04d2f753de3a5637382aca6b3e9a23b70cc0104"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_earth.py",
+          "sha256": "d223ae28e6677cadf18d0d4652e44ff151edc172bbf7d316e10edf0dc8536eca"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_galaxy_ns.out",
+          "sha256": "765c7e3cb135eacffbf911395919fa25ad470953a513bd57df1088301805a29d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/f2_galaxy_ns.py",
+          "sha256": "e9c26e8e1f3ad2cd744ba96f7b6c96d5846d2275b59bd0d11f2d0bf248baec3f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F2/referee/independent_checks.py",
+          "sha256": "f10cc429cdc73d52c8b771e6490c83c51e9c94d1cb0c2afc5960ccbdb920e63c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f1_lib.py",
+          "sha256": "c59557ce2e899d4cc502e7f79267942067c70847d6e307e8886f5c4daa540488"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_astar.out",
+          "sha256": "842ad80d75ee2a613bdf7a232e645f47d5f38c6216e51ce8482eb04aa884fc83"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_astar.py",
+          "sha256": "73d33f474ab7ea1a4805bdfa5e1e73e5fae8702703b9c926a34d738747f4f040"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_dirac.py",
+          "sha256": "766c0094aa79a3d95bfa6505ccf27114f6d5017b6121bb31212b1db92d9e5065"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_even.out",
+          "sha256": "fc2a7a0032577cbe8bf1ac7ecfe7758ee587ed708dcc418a7720270fa057c57f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_lib.py",
+          "sha256": "02afef330ba3482f4cf14b09acc8e09e29068e174ef937640f294324157be1f9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_lit.out",
+          "sha256": "ad156988e9afe139f0d111397e871124a8d5120bb4313ca62ae6a0829bddbcca"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_lit.py",
+          "sha256": "59451a52948a03fc5c5e4e10e2bb7cef342668d8b5ecc1433eee55fea94def35"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_mat.py",
+          "sha256": "07f0f242de8d302976253df42cf92bd53bac732d7d390a6413e21e596bd74354"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_mat_N16.out",
+          "sha256": "70c838d65836c982e65949d538005d8b1c210ddfd44d21ad694512c479c040b4"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_resp.py",
+          "sha256": "49185bfee8037d6b92efc5734d094900a851b167a7611591b51f2759b387302b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_resp_main.out",
+          "sha256": "2a1e26409a4cbc89c0572e87a27faf583b7cc90655a4a85f1a5d47c075848445"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_resp_parts.out",
+          "sha256": "f75911604e01feaf17fe200ca0a7751cba9e2150b453e8d5cfa8f030236d6612"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_resp_root0.out",
+          "sha256": "64c6f7b1011a85667f0369e38bc25eedb0fe583098b4e9bfdb3239cfddba7ed5"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_split.out",
+          "sha256": "3b135ee2efbe98a3bccc2753d51075dfba1da9aeb4b99a4f573ad4d6bf914ead"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_split.py",
+          "sha256": "690cdff94f5a71011a190b49aa5b1df3abc94afaa941721834b1ec8005039cb7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_sym.out",
+          "sha256": "643c9fe499f0bc92b15804467b6aed6069cfc09e53d732c8fc2e88ecf89291cc"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_sym.py",
+          "sha256": "b010c10f17c915e146fe7d5f493dfa3df4dde15e6a663f29024146d0f733a980"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_tcheck.py",
+          "sha256": "1b260282f5830d0e37731320aacee47f73f281a6f6d9efb6399477d7bff1c6be"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/f3_tcheck_156.out",
+          "sha256": "1f9843efbd2eecaf8f11a144b22b61a32ddfcc617f209445fb560469fde7422a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/referee/referee_f3_independent.out",
+          "sha256": "a7596f1a163d2ccd6753c046f816aad920ca3287b0123c2d914797eb08b91856"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/referee/referee_f3_independent.py",
+          "sha256": "d32e14fdfcc883f54be0af4f562b4d4f6aea482bcb96647f0f88607cb12bd82c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F3/referee/referee_f3_independent.time",
+          "sha256": "1f990b75d5671c80c94590b4310bfa79d4e80c94eed38f1b5164ceb12ff15edf"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_branches.py",
+          "sha256": "110cd68e9ce10fba33b9f0a3f65051c8ede660bb1576a73f810b2e09796dbcee"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_envscale.py",
+          "sha256": "232b1fbacdfb7685ec40f306db8ca79dee34f4be80fc4e381cd15d472b882910"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_lib.py",
+          "sha256": "c59557ce2e899d4cc502e7f79267942067c70847d6e307e8886f5c4daa540488"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_locality.py",
+          "sha256": "864d7869fea6192bed70b54497a1d3b23c6b6435b0e2488254ba231b8fa706d0"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_root.py",
+          "sha256": "4e6f4926c34ebdbf873b034bff1d89d6c742a207d9a70586cef0e91c9e815c74"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_sizes.py",
+          "sha256": "12b9852ededad28f3fae913fc4de3218bb3f9a47cb7a58591ce647705e6f1957"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_timing.py",
+          "sha256": "0b2c3de10cc2eeb3ad40e756fe21de633744a8c5f3f1e7a40d89d44f156a6cc3"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_validate.py",
+          "sha256": "49fadbfcacfc6840251e253c492c96e8ddff9d91723ddf03231d33bbd46eb3b0"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f1_validate2.py",
+          "sha256": "f1b1f1d34126ca9ee25fad0143c7fcfe6aaeb9e9b1aacdb57b634eee413eff95"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_A120.out",
+          "sha256": "978cfe7cf1904d4ef761ce43b8a0838ae810f008f055831e5e83080547699024"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_B150.out",
+          "sha256": "789332eba830604e8fceaf454f85beed94f76e817062d72e1b44b6d74f737fb8"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_C0p.out",
+          "sha256": "46c31198d6bed424f4b0d33428634f1b2389b36bbeb33ec4c531f961293a2507"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_D2.out",
+          "sha256": "17a5b1f6ef24020da12fc7fe135a3d34a1af2c931dbb72dc9280939278d826c2"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_Dnrk4.out",
+          "sha256": "03fe70cfdf8488cb0d24b0eedf137d32e2ae4e877bcfa0b9a49be83b4183d017"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_J240.out",
+          "sha256": "54cce1c2e990789db0a1b9dd9a54e02f65a065fa08baa7628b376567b6808d79"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_J344.out",
+          "sha256": "13d5866f7084594efdf70ecba062b6a84e679b96419ed00b02e14c7f69ce3d9c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_SL68.out",
+          "sha256": "a5fc910d0829cefb9a3fe7384a5c84bd1b1a761b1a7f983dc0f47f099f27520b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_SL88.out",
+          "sha256": "a75de55438f66d3ce1e33023a74bb96dfe1d904da29a7c9c4a01d73a40c48bef"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_c68fb.out",
+          "sha256": "d55638e46e85dfb39343c5493501e38a4832ff8099d47d941b684a4440612fc3"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_coarse68.out",
+          "sha256": "5b9c9106e9954aba90a6afa0bbc8ac825cb13ff7a59d86856bf045542ca95c6c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_face.out",
+          "sha256": "a006bd25c0e91d7603b8b66e5b62662627af5640667e7c4d15ab2a66cacb16a5"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_face.py",
+          "sha256": "94262235098d045662449f62667fe9651e5dd5759b62c40d71233bf60ff098a2"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_lib.py",
+          "sha256": "58a595fbae847e5ede4af1d39964e7a678678ac40ab2b5201593a3df7227215b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_run.py",
+          "sha256": "d933a894c3c6c42513a4f645afe29957bc1e4149cba2bfb00eebc2d73a19c82d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_slcheck.out",
+          "sha256": "655b3099445f2b34246401bbdbcee6c8df4e44e3e41f7ac14cde07053d30d1d4"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_slcheck.py",
+          "sha256": "719daa4332a7fff59b0dedc1e4ecf7eb16f6718e060fcf466c9f2a6d31fa6068"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_validate.out",
+          "sha256": "e98a9a9e53fbdc6970d71a463acc346468ae16f23dd7b459377e318a4a328834"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/f4_validate.py",
+          "sha256": "cc9687e68d29393f4fcf69f15c0a115f46c04588843463e2e3902008b81df8f7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/queue.sh",
+          "sha256": "d8ca2c99b920410221a50dbae3cd34ced2f2e4be97550bcd8d40d1909cc150e9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/queue2.sh",
+          "sha256": "a4227dd43639b95cdb302806e255a31e277010862ff0220babe2bea106e6e4ab"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/queue3.sh",
+          "sha256": "f32830512102503818acc1807d5045d4aad49095ec74b9d43b0779461353f816"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/queue3b.sh",
+          "sha256": "a0cfab66c2c7176c18b24eb1524a826fedd476ac904f4cabd9a20b2f91795901"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/referee/referee_f4_independent.out",
+          "sha256": "b130b817d905d9d1d070f5ceabd079cd35207257c6f8307cf863c53a45ec396c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/referee/referee_f4_independent.py",
+          "sha256": "3ae7960efae6b51eaad218efb07af54cb5ba312e08215db757ed1a8ac439e4c1"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/referee/referee_f4_mixture_check.out",
+          "sha256": "2e0ac141ae3bbbc882645da8628b898537f1b9fd5f26a70191bd293faae90f66"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/referee/referee_f4_mixture_check.py",
+          "sha256": "f7b6ed369aa63b3de0e2089ffd57b5c39ddb68bfc870c5cc1eae8f7154261270"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F4/t_flow.py",
+          "sha256": "d97b93834cff00455ba09d72daaa718bedc80ea5dbface1fe6b8ee4076e2ea2a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f1_lib.py",
+          "sha256": "c59557ce2e899d4cc502e7f79267942067c70847d6e307e8886f5c4daa540488"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f3_dirac.py",
+          "sha256": "766c0094aa79a3d95bfa6505ccf27114f6d5017b6121bb31212b1db92d9e5065"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f3_lib.py",
+          "sha256": "02afef330ba3482f4cf14b09acc8e09e29068e174ef937640f294324157be1f9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f3_mat.py",
+          "sha256": "07f0f242de8d302976253df42cf92bd53bac732d7d390a6413e21e596bd74354"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f4_lib.py",
+          "sha256": "58a595fbae847e5ede4af1d39964e7a678678ac40ab2b5201593a3df7227215b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_c1.out",
+          "sha256": "93cc2c23f8b7e7b2e8957992786ed224230db981b457c108ffa29c8ef8b3eb36"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_c1.py",
+          "sha256": "07756eb1c457fbf8da739b62b88f55841195ae6e16bf04f2794b13e15c4eb2f3"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_lib.py",
+          "sha256": "d7a3eab0b21976eda01e5dcf4c6cf86b6c9d6348b2a976449868d0d692cbdb05"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mf.py",
+          "sha256": "cae40bec6b40774c5c3bd0fa087217ecffc310f9190d5a0df50accc304734a9c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mf_Eg156.out",
+          "sha256": "4abda3941a348f2d4e9d5fe156e6b64abfc9d1058cbd9aacf9def7ca4947ab01"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mf_T2g156.out",
+          "sha256": "6da7adb14f02089c7104e94d2e95d28b476c8261c0be3365343d521e66921081"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mf_T2g240.out",
+          "sha256": "a6374845ee35aab0a728e992974d3d6e7b979470c499a7be200130c018d82bdc"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mf_ward.out",
+          "sha256": "69bcf4804cca0eab5f0beebefa00058ee6682ab3d3bbfacef517fca5de29f66a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mult.py",
+          "sha256": "e7a4c8bc338c12aad2646cd710c0e5292592838de269092ef725e20d5df08b0b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mult_156.out",
+          "sha256": "e07e47513144a81376a390f6cbeff26b47093a8b9cbc6a6bc6d9d106393dbc4c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_mult_240.out",
+          "sha256": "8544595730a9d41f2af8afd1ac6ae3cd78a1c1e120a3b8e537d95feb1fdbd986"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_nn.py",
+          "sha256": "cae5b959373ce18735258410edf85fdac0c7db8a0c59688dabb3f8409545515b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_nn_156.out",
+          "sha256": "01e347c6a5e30a8b0f515e66e23a3b3da0cca9a49c0a4a53f5496499845bb589"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_nncheck.out",
+          "sha256": "688179a1d1f057cf243ccbc365f77ab5e8eb337f0e5aecba76cb3297c765f27d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_nncheck.py",
+          "sha256": "d0b82b1e13b6d8b49b24fc7eae8c8e0caf0e28ba9c128614d892a34874c1ed84"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_nncheck2.out",
+          "sha256": "0a6a7879b3d20689f6360113094b8d649d49c1b46bb82133e84626ec3376d72e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_nncheck2.py",
+          "sha256": "1e3d044bbd6e6e119ee46def09b08dbaba67686c59239a592bc57067ea0910f0"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_sizes.out",
+          "sha256": "29cf56fe1d854083960904180165ac85f972ca6b6714debe43b477407fbbeacb"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_sizes.py",
+          "sha256": "2aa39307670e47a1c33306389704e3d78ddd24a135ea98c1be5decded59c8789"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_t2g.py",
+          "sha256": "b546e39d5073645c4c890240ad1a34c8ae3a8d41ae4e93295a0ed8515ef3f510"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_t2g_diag.out",
+          "sha256": "9e0d241389fd2ef45c0860111de9ccf0f5e30f03f5d1d7d34fcf78852f656fd7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_t2g_diag.py",
+          "sha256": "95211f06b00c99603dc14c530fb1d1b7a91e79e8c397da9d4409968a807422b1"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_validate.out",
+          "sha256": "2034f5f0930d0b1232239e1a81d23ba69cfde69fcba6a2b0f3a41db42cd19062"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F5/f5_validate.py",
+          "sha256": "a52f70e57c200eea98c4f19796aa178481927177c5fd57205f5d03c0df0c6617"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f1_lib.py",
+          "sha256": "c59557ce2e899d4cc502e7f79267942067c70847d6e307e8886f5c4daa540488"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_controls.out",
+          "sha256": "cb593f4513cf540c1a1dbd1f921d8d3e10d509e5fa9f9638b3e26740e69ae164"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_controls.py",
+          "sha256": "0ef45e6e93292410faa97233e68cd6555d50d6e9a2abc11e179c8dbc3bf1d7fb"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_drift.out",
+          "sha256": "39d704605987d91d8dd48d9858a2c9d9c434a3afc9ee3d7642dc20473e462c93"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_drift.py",
+          "sha256": "36d523baa1edb1c4e87172a601a4601f159df3016a6aa6895b7089de07af11cd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_gauge.out",
+          "sha256": "18eb5d9bb93c0dab09b6ab7e4d564d339d9511dfaaba2122adadf498d1a95271"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_gauge.py",
+          "sha256": "df09f2879aee3739a537229a1c8f376b2572747f3b583325b5039fb91656a4a8"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_lib.py",
+          "sha256": "e047c1311f764264082072eb1c34a2e4de4b9ae187cc9c21621f5f49e6523830"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_nn.out",
+          "sha256": "2921dc253f2d9eca700cc759391be257c10ff65127de9fdeec1d1e27416f53a8"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_nn.py",
+          "sha256": "8bd31601064dfb0bad3323916b98025ab451d7887a635ed4c3f071aaa599f80e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_quick.py",
+          "sha256": "f740eb6f94bc7a56259a95f79d22a021c69b85942008d880af74b67674d955d4"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_scan.out",
+          "sha256": "53a6bd663199b470c42d1a01fe7dff37691dc49b1a03b0cfa7a3887f05d5f0ec"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_scan.py",
+          "sha256": "c405db9f6cd0105073a9aade8adc1385bdc3d37b087769a60e6432b22e95fd6d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_sizes.out",
+          "sha256": "c40af709933399481ea17db74283ed3b8af5a6f1c0ca8847d10867203b9195e4"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_sizes.py",
+          "sha256": "3049b9682443c257fae766439b2d1ab756faf732863707b453fcafe1f3475a0e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_yuk.py",
+          "sha256": "dfba8943b146811240540079861f4345e5f2723696867832a2592e45bd1eb928"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_yuk_a.out",
+          "sha256": "e77e49c0c5547e2d46d396971064fde664ac3efcaf6a0d872fede0626ef22f0a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/f6_yuk_b.out",
+          "sha256": "5c6f3842a0a9707ef53dd1d343fbb7c57e2d0d83ce892830b926e481c4170aee"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/referee/referee_independent_check.err",
+          "sha256": "2ee244dc2088049ca2b7aebb2b2bd5cab769b3a0e1a20a20900824c551c42980"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/referee/referee_independent_check.out",
+          "sha256": "49476a9cbee3cf5abe594c3da75b992e86ff0f4f15708e5cdd7f7edf56f5d754"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/F6/referee/referee_independent_check.py",
+          "sha256": "a7d4691a54d2901454df4728bcf8f2e14f06f1d0f732cae684b17bb7d8f42c0d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/f1_lib.py",
+          "sha256": "1cf3c0c1a9faddfce482d25374de041bf278ea20ecc7dc7b751b15848f1eb09d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/f3_dirac.py",
+          "sha256": "766c0094aa79a3d95bfa6505ccf27114f6d5017b6121bb31212b1db92d9e5065"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/f3_lib.py",
+          "sha256": "7891fc65f453b37dbb3b77514a732345deffe4d691c4d44d1aa783ea81c3da10"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/f5_sizes_copy.py",
+          "sha256": "2aa39307670e47a1c33306389704e3d78ddd24a135ea98c1be5decded59c8789"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_alg.out",
+          "sha256": "fe5181e0a03e000d3cb1345757e34e38394719252158e84961c87d2a34a64c24"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_alg.py",
+          "sha256": "2db9409bdab4229460edef85f5473aec57e15508d0c49104ac2d7f74da5a475d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv.py",
+          "sha256": "e5bfabd87d2055dcdc0b4535b96c6818ee85fc200c154eb9b41f2181985a311f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_A_156.out",
+          "sha256": "b14ce3fc521e6d0adf4749476c366ee298748c1639934a3b10005b8572ee3505"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_A_240.out",
+          "sha256": "4f21f3e269537ef8ee281c01a8f34a76fb9871472cc1d9f0f45c8bc494612c6b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_B_156.out",
+          "sha256": "c1f86e36bcf490980a947aba273ede5844bd87608598b1cd0d2a4fb9821c8ee4"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_B_240.out",
+          "sha256": "38c6e1827a5e8fbf0884fd87166dc7f4c0b25fba7da6f29ed6826cabd22f7b7a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_C_156.out",
+          "sha256": "d71825cccf065e3f6deab93c4c89bb731cb63b9a400b7109cfdf12d8435844f1"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_C_240.out",
+          "sha256": "96c8c87872a1cf6e4675072f1a056c242d6035e7565e0199b3e9708f9a23f3ac"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_M_156.out",
+          "sha256": "0d618a86b34fa2391e63afa78387c68dbbe9d759f38ead8d59030d301f19d916"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_conv_M_240.out",
+          "sha256": "bab1a3d96e11bfc60519a095568464650eee15ffaebc58e17a059bc2413682cf"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_poslib.py",
+          "sha256": "f1403aa1e340db9d184b5712ce81bfa2faddcf7f8a9215e4dc89a0724d0e44fd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_pstag.out",
+          "sha256": "d503c4d54e7c74d9544ffccc3f12ee4e7116fcdd4899e09db242fe7cd419882e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_pstag.py",
+          "sha256": "91e62ae729b04a2fa309a023a2ee8076bade5d88f88ce68a30a50e2cbc413ce5"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_rows.out",
+          "sha256": "6afc5f0082b7dea827c95373081a42573411963a1502a159b2291b9f6a714d3f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_rows.py",
+          "sha256": "ff127ed2dee38b80c113f1b5a469c06dea162a67c2b05394d4de439a0024ed88"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_sigma8.py",
+          "sha256": "45b5c06dddadfd075c148a4bd46e4fe7509dcb1e453cc08c2157c75bd4bace9e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_sigma8_N24.out",
+          "sha256": "abd2a0569a4759442a926483fa88595bdec73452e468bc85d40e89a27ac4db05"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_sigma8_N32.out",
+          "sha256": "7b9057f5aa599f05de489b876a1d89e335d0a349d8950a782b3a985070b32178"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_sizes.out",
+          "sha256": "41b8c1b61c83668d1764e0cfeb9530c499ad02583b858e0c7b5af76ae71f2373"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_sizes.py",
+          "sha256": "332d218eba487f2b7ea6d7ee272e3440b346a5428368ee9f5fe6ede9f647249b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_solve3.py",
+          "sha256": "ab0e8e890a152fa9b314bd02146ed8e578371615e1220b865d33f006a4f301cc"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_solve3_Ns11.25_N48.out",
+          "sha256": "fd15f727c6b839c1f3a7dd4f54b1e19469bc3ae0ccb130295fcc4bbd221b7e07"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_solve3_Ns11.25_N96.out",
+          "sha256": "ef78cf87da2638b229270dff0f920608d2441f460531d6da0951138837444d9b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_solve3_Ns16_N48.out",
+          "sha256": "0dff17d11960cbc31a3564439f8d953b557114dfdc976bdf53fdded549724028"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_solve3_Ns22.5_N48.out",
+          "sha256": "5b1132ef0f5dfe39c6ec37bab41dfb693f22201b675f948fd2fc053d6e3b7fc1"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_t2g.py",
+          "sha256": "1ef8fbe1a94e90d315977ba553c429d7dbd3399e126adcb8ff7fb08499f32b3e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/nf1_t2g_N24.out",
+          "sha256": "4cec5fab4b8fa5383e92c7fa770ba4a75094480b65b72548133b50b47b8dac7a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_checks.out",
+          "sha256": "d6e57883cbb992e5f43ca85e7154c4bc96546137459986f726fa58ef4e5f2aa3"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_checks.py",
+          "sha256": "debe39c796a6296ba3a19c590ccc28d432f3f1569316269c51c25f3f8ea42725"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_checks.time",
+          "sha256": "e22c2768928e42e29b61df1125ccde4d3a48ab754fb267b5240431986725b377"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_resolve.out",
+          "sha256": "caec5b1782f822870d7ffd29147a0c37bbd983e5fcc70240be8c6a1220a8b0e2"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_resolve.py",
+          "sha256": "f410b9e0148bd876b58e81eec20316ec4a7d90fd1bddca82f61117a099e638fd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_resolve.time",
+          "sha256": "d9a27026c62b6c8ca0cf3f809bf58854c3f9179f992069bc45ee61b731785b3c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_resolve_N48.out",
+          "sha256": "048af50383bf55b5f95f3fafcb40b817229967ff9f2809c64c377c1b594d43da"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/NF1/referee/ref_nf1_resolve_N48.time",
+          "sha256": "651fabe76421069038a72770d689b82d02be627bb61dd1b4bd10d7a58e6e2139"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/f1_lib.py",
+          "sha256": "1cf3c0c1a9faddfce482d25374de041bf278ea20ecc7dc7b751b15848f1eb09d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/f3_dirac.py",
+          "sha256": "766c0094aa79a3d95bfa6505ccf27114f6d5017b6121bb31212b1db92d9e5065"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/f3_lib.py",
+          "sha256": "7891fc65f453b37dbb3b77514a732345deffe4d691c4d44d1aa783ea81c3da10"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/nf1_poslib.py",
+          "sha256": "f1403aa1e340db9d184b5712ce81bfa2faddcf7f8a9215e4dc89a0724d0e44fd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_alg.out",
+          "sha256": "6acd9d5f48c84812c0a9e4590a0ecb855375681a2fad4c7c948c6369d8028eee"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_alg.py",
+          "sha256": "d4846df591f8f9779416133bca0fff59939a3ccf5c6991bfd6a2b68e9bfcf6ab"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_count.out",
+          "sha256": "400ec696610617c8ebf5daf8a501a89dbf289ea1b76b1fff7cd47f1001f964af"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_count.py",
+          "sha256": "6849fa5b5000cee876019f990f516e66f9a83ef08c673f0994c3d42ade2cf636"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_sigma.py",
+          "sha256": "44b4995b62f9731f13834f72b48d76466ac352d3f915ccc54094289f8ffeaabb"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_sigma_N24.out",
+          "sha256": "c79bb1b4464504f999108171428bfe4cf97e007c48a7b506fb8746a1dd3af826"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_sigma_N32.out",
+          "sha256": "0cc0a12d36b3df033956557aa866f49420c23d29faf381eccad6eba7dd0a0197"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_sigma_N48.out",
+          "sha256": "09e9ef2b754dda4c5141d08461c57099a7bdcda4b327cdab44416a8763cdb500"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW1/tw1_sigma_N64.out",
+          "sha256": "7e4e900ffce1cb450bbbe000b2e811c6dedd2c9b80b76b6601de2e7ee989c157"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/f1_lib.py",
+          "sha256": "1cf3c0c1a9faddfce482d25374de041bf278ea20ecc7dc7b751b15848f1eb09d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/f3_dirac.py",
+          "sha256": "766c0094aa79a3d95bfa6505ccf27114f6d5017b6121bb31212b1db92d9e5065"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/f3_lib.py",
+          "sha256": "7891fc65f453b37dbb3b77514a732345deffe4d691c4d44d1aa783ea81c3da10"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/nf1_alg.out",
+          "sha256": "fe5181e0a03e000d3cb1345757e34e38394719252158e84961c87d2a34a64c24"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/nf1_alg.py",
+          "sha256": "2db9409bdab4229460edef85f5473aec57e15508d0c49104ac2d7f74da5a475d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/nf1_sigma8.py",
+          "sha256": "45b5c06dddadfd075c148a4bd46e4fe7509dcb1e453cc08c2157c75bd4bace9e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/referee/referee_tw2_algebra.out",
+          "sha256": "5605c12bf29fd1227244087acb9ba8b2de51c19a1e0efa76a939817e26e9a55a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/referee/referee_tw2_algebra.py",
+          "sha256": "4eb4ca6225a87a9f43320c197dcf350386da7819a4f2a761be8ebe8965df9831"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/referee/referee_tw2_independent.out",
+          "sha256": "ed8f3c881aa84de6486cb446fc2cc5967d20b05ebc70c36278a3256fde9fc5b7"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/referee/referee_tw2_independent.py",
+          "sha256": "d9a35b04f69aaea3075596613a33e24bd11cfd4c09397911e9a2a62932e67635"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/run_conv.sh",
+          "sha256": "d5c6ad384b2d08a3ae30bfb1e9f4d1e7013153f7b16591ba7feeaf982785a505"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_alg.out",
+          "sha256": "aa64c338934bce600dd3d733263e066fbd8ecf38253915a3e2dcc8ec114887b6"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_alg.py",
+          "sha256": "eb368dce6904b2d01179af250909ce1f283a46504e481aadcbc9c55b822daac9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv.py",
+          "sha256": "a1b0c8719c513537f47ab870d9856da8704b6f5b0a1e881758078c04681603cb"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_EV_168.out",
+          "sha256": "64937aa2bc1cc4bc298dda9b76948e88695d5ce65756eddb7415b598e961b37c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_L_168.out",
+          "sha256": "507a942b0dc93358f755bc3d15fcb45669abe7e584713437929ff419c0e8b70f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_L_240.out",
+          "sha256": "8f60b986594874fd23e86a4ecc806ea1ff15a5c43f9e35d0cca9d1607feb4831"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_L_340.out",
+          "sha256": "f287ed665440de6c11c025a811022d1fa983df0a2ea58f23c96738c805c979e5"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_RV_240.out",
+          "sha256": "8c983ec21d609de0f1cf6f31a0e97284479fabb8189878175c67a76cbc8e2fb1"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_S_168.out",
+          "sha256": "1487e17e2cb4252fc231fd268020530fb8a132bc0e3dc9a05563e8c8199575bd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_S_240.out",
+          "sha256": "1a9658c3d032c55ad2817546fa78f179dd5f9353540cffc8a53e70961904821c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_S_340.out",
+          "sha256": "fae4d04bb574e8d9dcf597a297542f8d550c7dbcd4ec996aca517e566840b9a8"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_T_168.out",
+          "sha256": "174920bf1ac7623fe048092955d2df8c0fc3e093f082505c021a11fb84e72966"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_T_240.out",
+          "sha256": "baf8be667a1464953d86e04e8c754125392aebac8b8d60c0e1ffb0b040476650"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_conv_T_340.out",
+          "sha256": "5377b1c02466de3ddc0774df63609dd170fd5aa9e435fc2345d8d0175e5bec15"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_sigma8.py",
+          "sha256": "82671a680b54279baa5c917950c25d518cef34a7290877bf9e25e0a6967b213e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_sigma8_N24.out",
+          "sha256": "8054f6b98faf3b6490ba6d03cc93542e4eb8a3aedb18cb30769d68e5dd736cfa"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_sigma8_N32.out",
+          "sha256": "50b0a7083be9f9c26a188ac038e4017dcf315520730e9c7d474a40c45b321b69"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_sizes.out",
+          "sha256": "2b7bb4bc18aff2131166c4bafae303d0a2b2a8aef206ea39563c4e1f39e2768e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW2/tw2_sizes.py",
+          "sha256": "44dc07733bc9ea4fcaa294f527be72914b988295b2dd49cf7c1fc0c812f3e71d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_count.out",
+          "sha256": "ec63997dd7865f113bc945b1bf3d5987b03aa2c5f9c26a4d915568be7cb84bcd"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_count.py",
+          "sha256": "684df0088a5f06f3670736b8b380b119ebb95243b7a9eec8b92d7f15fe51c30e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_fk.out",
+          "sha256": "109d6833afe2d66297ee2ee60e2eaa2c8a048f388f793d4aa07554f43d9e00a9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_fk.py",
+          "sha256": "fe7b585d715e8ea1c5a02244da7cb566351c540c2ca8f99cbcf3d8601b2fab0b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_gen.out",
+          "sha256": "e78732d927d40d31807560106d02b3480fb2e7b01c863e5d6425f9279d47ea38"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_gen.py",
+          "sha256": "1a58125d1e8261d2a990cc91d53aee198a573a4e187f2d3326c8d41497923b9f"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lat_L3.out",
+          "sha256": "d0b574431ad72b4e846cd838a1247ec750f04120aa3d827d5baa3888ee28664c"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lat_L3_light.out",
+          "sha256": "4a6c633f3e06726be909d378ff4e84338a384de5945b86f8f8f7fcc06c586d53"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lat_L3_randT.out",
+          "sha256": "ba0548da0cd1f3b6f20ce80ac3a9bb4ec28069d52b3daf4e41baf89bbbef4dab"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lat_dimer.out",
+          "sha256": "e60af883922f7c26d522268a3c5d584d26635f4452e78c38410ef6ba800b9359"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lat_plaqpi.out",
+          "sha256": "17c47a0c44ce5ca3e2d15b6a6a8efd1828417e35c6fe6f65118201313c03712e"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lattice.py",
+          "sha256": "088a68adfdfde6fc4dbf9df132bdbd6d8b99ab1de4a223cdf9a9299f427f8548"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/TW3/tw3_lib.py",
+          "sha256": "4398b6912c80097d84b2952b01ed1533f514c369e9cd8a140329322f6fffe719"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_condensate.out",
+          "sha256": "bd3ff0b5fa513acb5527d201f36e90c02d39a0215d0b16b244da19cdf8cd7ca9"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_condensate.py",
+          "sha256": "35694342c3a54ab4eedc310db209770c199ffde5ef09cfa520da8edab1680e32"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_hops.out",
+          "sha256": "ff5f0bbe220e0901a6a559718b72f037d449fb220f9c698328fe0e4cb3d0de79"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_hops.py",
+          "sha256": "a36332d0e2c5af382bda3ac2b2473a0af7b951445c52942600defa6aace40577"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_powercount.out",
+          "sha256": "899e4dd35aef7847b652967c083c9475ca43f8283c1fa8d6c4f34c313499c5c8"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_sizes.out",
+          "sha256": "78cefe2b755d012dc28becca28aa06e31bb2312b149545ad7dbed6d804e3429b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_sizes.py",
+          "sha256": "cf11dad58bbb62919f33bf16675563111733fee4d3fdb4cc3918da8968091455"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_solid.out",
+          "sha256": "321c89d570658788146be3ada70dc2a5e71486c8f3a8c89f9f5dd9a5d53a2de8"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/condmat/cm_solid.py",
+          "sha256": "cac022844945ed1970a4e27d3a54b17c4e76a34f8ae64830e39db483676e53f4"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/gr/gr_numbers.out",
+          "sha256": "a040b5b23d166a70575506a24900a1051bdacab7b156705f821f446e10c70391"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/gr/gr_numbers.py",
+          "sha256": "59dbb528f09f5e540185a4fed5f7d7007f5e8aed67d6a074d0385170adad998a"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/lattice/sizes.out",
+          "sha256": "521b374309f71f21afde527e78f1f75350a91d9b1b6ac9e2ed2c483713448c87"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/lattice/sizes.py",
+          "sha256": "2780286fd8ce5e82213575834038cd210830a1b4db055ca4e157f55af3a7b92d"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/pheno/pheno_sizes.out",
+          "sha256": "8f76eb4145f127533c33c6dee28cfc5d359abe21b7880f4cec805a15ad1c8619"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/pheno/pheno_sizes.py",
+          "sha256": "73ee3e59a9cf7f6b790c20fd64f4dac86c653419c50f568055661646df36fed4"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/skeptic/sk_checks.out",
+          "sha256": "89d3df070a74453f53d360328fea30b3882bfd2a33e3e4eed92dad3c239af160"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/skeptic/sk_checks.py",
+          "sha256": "9fab63b62e39f8493b15bdead987ddf3af64e825a50bf07d6a11b51f87ac6286"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/skeptic/sk_eps.out",
+          "sha256": "08d08894697cd0191093471ac7e4259e1034e034266b78618c42faa6ea83aa8b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/skeptic/sk_eps.py",
+          "sha256": "1c058df69832d0812a7deceff1f700a501edfd0809172380e15f4663e7b64d4b"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/skeptic/sk_range.out",
+          "sha256": "9a2f9de48e776d1a2e354e7f56712cf61861251c32e2ebd6b74f2eb9d6e2f0b1"
+        },
+        {
+          "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/scripts/panel_F/skeptic/sk_range.py",
+          "sha256": "becc40e34ccd2f44e0f6ca0276ac29f98522338611e20497c11a734cdfa63c29"
+        }
+      ]
+    },
+    {
+      "pr": 9636,
+      "branch": "claude/toe-campaign-24h-20261015",
+      "head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+      "delta_base": "9a1da8d7c72501f4609f547ad6384856cbccdf9a",
+      "disposition": "corrected finite results land on main; stronger claims remain research",
+      "paths": [
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+          "sha256": "14916ae8fc7edfa88ffffa85103a8aeca1af98e2a31d04d1feb2e2c8e73ee32a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/OPPORTUNITY_QUEUE.md",
+          "sha256": "b77f86306078e33831043eb4dad665b3359bf174a7dae44e552e9bdfeea12837"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/STATE.yaml",
+          "sha256": "ad50e09c64028f088b52e9d8dcf1994d24afbcd896fdd13dcfc2cae99b01994c"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md",
+          "sha256": "151d8c0560d379252e3c64eb7e27005789274b08fbcd58fe2930c21ad1bd4871"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/exact_recheck_R3.log",
+          "sha256": "49cc9e419d917ffcdb9665198a5c382c312d07447ca32122434af465210962c6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/exact_recheck_R3.py",
+          "sha256": "181f794a9c636f2c417586e60c023fdd3e020e6b068a85474e28c2ae417fe3cd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/fastR3.py",
+          "sha256": "c6fec7be5a7ce4e4c84399426ea8c341fd913d84db71331fdce29cec3fd88a69"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/fastR3_3.log",
+          "sha256": "6585830a10221cd0e449abdba2418c8027b4aeedc1e00d6d4a48bb4119fd90d5"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/fastR3_4.log",
+          "sha256": "3ec1f4aca1bbb1d3397fc26663d75d989c97fce08dfb42c36db20d34f5e20b2f"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv.out",
+          "sha256": "883399a5fc3e1016d9c698731ad174f387170dc5d82f712864751796692496e1"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv.sing",
+          "sha256": "6099e662552c45af78d536f09a5b230ff579ceb2a2744e0d0e295391dcf57672"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv_p.sing",
+          "sha256": "0f104c101c7e0151a41bdf0b7272c6d6afa27dec57431a9e96460f264c26add3"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/specE.log",
+          "sha256": "363de9608cd8046a4cdfcb18120f730d87d5d37539c1cb40b6cb662073dbb435"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/specE_exact2.log",
+          "sha256": "2cdbb7ad5cae6d9afb5d3aa93cebf9a525dbbf5f9f0df3cca4c1b6bd97cb8822"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin1.log",
+          "sha256": "7395a0197bfac0eecb45142246e50adb4763007f890ff8852c9391c60813ed71"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin1_exact.log",
+          "sha256": "835ac0b480ae0e3af98e95c9a5a4863f1884565425dd56ad0692061a84128956"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32.log",
+          "sha256": "9e494ba857903c7e9922007be0165b60d6c05e69a35195bec01ee919c766c89b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_b0.out",
+          "sha256": "27adcea8b5341b43c79da6e3080554e35ae1ecbffda7c95b21ba22544ce26d08"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_b1.out",
+          "sha256": "9ea87cf221ae0974adea8cdb2c83edff18f7e898f37d6b906f47a612408ae118"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_b2.out",
+          "sha256": "27adcea8b5341b43c79da6e3080554e35ae1ecbffda7c95b21ba22544ce26d08"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_branch.py",
+          "sha256": "61528a3bc11e87ffeb544e533b6b5d625aa1d8007bd3938ab80f65e7c27b14d6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_exact.log",
+          "sha256": "788d26da3a0382810274b95ae39119c7cd2ba64e9c63b1aa27c1a14c920558bb"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_1_2.log",
+          "sha256": "bb0212a976e8e860b622b2b75d9df6c5f5e3de4050dfd062cb01ee3c9a83f834"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_exact.py",
+          "sha256": "437b81be7244bc5dcab46c2d6268eef2469a2a1b5ebbbc91cf61be453db78785"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_alg.py",
+          "sha256": "dfc40b6aa8ac97f7183cf1efff0a4f69edeac4f356d571a908f6a54d72613f9a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py",
+          "sha256": "be9b05c78080150323d2df2b196cba29388a9c38dbd1ef9bdc1d1ad54d4b810b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/README.md",
+          "sha256": "556cb52473b506bce49482493fb9855d2f467e1c2d6dfa205ad36ae415c51e65"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockNN.py",
+          "sha256": "59d97260babce33720eb1aadd4e9faa76b326bb710096e2877c2e851c906596b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockNN2.py",
+          "sha256": "f458dd295967e6d41bde2a5074905ffa55f9850ec202b461bafd2d1c2f645a2b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockNN2_3.log",
+          "sha256": "0b385f202b866bd1a2cffb3c931749d0fa5123effa7bb031c218ac49b99a48b6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockNN2_4.log",
+          "sha256": "aa0cba886b4027755504296b18d62868f484e87a130d8a91f00031f162b371f6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/block_embed.py",
+          "sha256": "833c42046a8386decb3f52904b341fd0ab46aeebe625ca09182c4e5a62441708"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockhom.py",
+          "sha256": "d820c700bf302bff02397afbc0a738cb50ff076a95765cfbe5f1198f394ba891"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockrep.py",
+          "sha256": "ed714bbaa7d5120ad7431b1444bd90e82e5f7040283160a018222e41ac6dbd45"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/fast_E12_E52.log",
+          "sha256": "0d7b8e3934b4f734f59b837f436ae5779bc2eff1a01dd428f607d5658f2a1ac6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/nn_analyze.py",
+          "sha256": "0e9d5217e8f585732dd2675c6bff1db21802445dec78dfb8b2d2b6822b84da71"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/orbits.py",
+          "sha256": "09560f6204cebecccdffe7a64baa7462c3c7b7d7171a045752669f4346370ebd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_hits.py",
+          "sha256": "6532e2401efac57a5840c2d149feeae0f1025991f3dea21ac2859bdf0dad520e"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_massless.log",
+          "sha256": "884eff9d026a80e9f51574c89501b10882aacdbf094f7560e5bb1ffaa5c7a0d6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_massless.py",
+          "sha256": "1a6984aaaf0282daf93d4f953a28e90d219bd8f76682adb428255bcbfd1bf19a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/certR.sing",
+          "sha256": "e5d5e6b78397a3c37835a29d5428b579ec8e9df28649d500d4cb284d44d676ac"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/cmp_T.sing",
+          "sha256": "c8dd5a4d080c53b53c084fe51511342c993ccd54dc7a83bd91370f0e9cbd77a9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/comp_D4.sing",
+          "sha256": "df553b95a9be2597bdae1fe7a6782863c8c35c3ca4f5d6b95217e071ee560902"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/gbO.out",
+          "sha256": "5e53b525cf0e99d21d4aa7a99dfce158490eabdae57c695171f37e0eceb26993"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/gbO.py",
+          "sha256": "68fb6ec520736e328cac4eed715bf132ee0434136d9c82e53797c642c808e4ee"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/gbT.out",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/outR_D4.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/outR_T.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/peel.py",
+          "sha256": "e335abdf57777cd4efcca7827b39fceb8846250b51382784ff93aecbd14accab"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/radO.py",
+          "sha256": "3d26e05dcfce5aeec8b69680455c840f35ab9a9e585b8c5bc70a9f75da831613"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/run_all.sh",
+          "sha256": "365b13e15753d8c014e61c2672fce30cd4b717343712a9cef502cdf9774ab273"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/runsing.sh",
+          "sha256": "9423ac07e0608c7bf271663c47e04cdd59bf8dcc8cb6cf6c826f3b56524c862e"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/setup.py",
+          "sha256": "411eb51eb58a4b43f9dac6ed5234bf4494166a8c5cd0f3222407dcaca1430383"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/t0.py",
+          "sha256": "8714efff5d056708013b52f0ae2e7797ce8214bf88e94982fcab9b46211fa753"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B1/tosing_real.py",
+          "sha256": "1bc88cc5c08cebf4509fc6ac734b6ce43d53e5ccb008138729510d7747b96cca"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s10_h2zero.py",
+          "sha256": "1e985908ab4d69c2a46d8cb0e4ed819a923d77950678164597f92d640994b040"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s11_touchmin.py",
+          "sha256": "dbaaa12c9c3a8845e66aaef9e8f2fc0ece2624cc9cf76d6867fb0159a3d8e0a1"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s1_invariants.py",
+          "sha256": "ae468c801fdb633a98afcb1f9d700381597e3ac06e0728342f34bb601cec7d70"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s2_gram.py",
+          "sha256": "c9aa4839b848d98e8884a42b19ddeb1504536320533f539d1383ae355fb97e9d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s3_psd.py",
+          "sha256": "46e875b4d425683f346a29f7349c5f69e4d9450714d4e23dbb163132b80f99d6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s4_rank2.py",
+          "sha256": "cfbced2357a95d7f0d17f3ba1de95bfead9de7f9172e5f72930e2aa64b6ce133"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s5_rank2_num.py",
+          "sha256": "02c9f717fc607d431a82c7d7486bc42a196e31819378d0244340cf5aa7450d44"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s6_walk.py",
+          "sha256": "41fb98da593076994ffa5b4efaafc8eeaf720604834c2afd7e56c16493b95d69"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s7_touch.py",
+          "sha256": "3d0188ad9957604444870ddd324ce45f6d89ab3973704da8847b90b9ffdfd045"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s8_rank2_pts.py",
+          "sha256": "811007f20db2c3a925d7e230c2941b27355c9647414c72ffcfbd54abc50140ad"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B3/s9_rank2_quick.py",
+          "sha256": "f02c657f8308d73e25e47fdaac724413dd9c8ef277651d0671241bb02085912b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/README.md",
+          "sha256": "e0a940ac8802cc049d92b0b5b8da638eec125db2c776c24a47739a4e748b3b3c"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1.sing",
+          "sha256": "a0b45d0b76a6f63c9d0a4592c786c45f20bfaa2dac3929171b723af4bec75c99"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_cases.py",
+          "sha256": "068bcf8158e3ae8631ef73641daa7988edd6e36e295d0c2a44d6d1924ae57dd3"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m0.out",
+          "sha256": "6ca9191582dad1b8d791b343805c5d79edc9cbe1fb9676c5d4ac7f2db8746397"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m0.sing",
+          "sha256": "e609a14923525026806afb44553fd6a3057e3ade523c60f4aca16b4f42d8724c"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m1.out",
+          "sha256": "10a9bb63cb7a62c227101a6777d58d0c4707d5b279c7eb8800cfeedb2670c6e0"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m1.sing",
+          "sha256": "4c48e1c5371fcbb29586575f42a346f5ef5a2f73ad68df4cb31d48a2462621cb"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m2.out",
+          "sha256": "10a9bb63cb7a62c227101a6777d58d0c4707d5b279c7eb8800cfeedb2670c6e0"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m2.sing",
+          "sha256": "8acf12e6670a55da747d149f1192083ac2da99f6d6136d03edd0d7a953f3e8a4"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m3.out",
+          "sha256": "b6ad55eb529c253ada007b7d702bc88ce60f4956dd0e95897ce468be7cb0f6eb"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_diag_m3.sing",
+          "sha256": "57bab6b2b1518a9f6497d7b006df6cb7ca85a44ef45de57067d5c72b7e94445e"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_mkdiag.py",
+          "sha256": "179542645e424ef3731dd37a3a3298573a3402716457ef46514f16d56b7cb6a5"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_mkdiag2.py",
+          "sha256": "7b35a6c4a84a8ea1560b648e5c638dbf40e862e4e0d546b5418034e466573c0f"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_num.py",
+          "sha256": "4e92925fc1e7cc4ad64c98e27264ab222efbf1d70253ef54b1fc6865e594fa1d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_num2.py",
+          "sha256": "3411b89be2d35940c19de9543d4d02521f6bcbe4f43f52b769a012262b1d3e67"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_num3.py",
+          "sha256": "01f974e5a9f1145c60564c6338c4e3644ba01053d7c593a60ee694fee94597b3"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_probe.py",
+          "sha256": "c20943bdc93f3651e798ec4c38ff3516a7698d9092dbffb61aa1da97067bd6a6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_real_m0.out",
+          "sha256": "8b9893e38d041591295dfb668090f137984151aaabd0cf305fce1838a03f1919"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_real_m0.sing",
+          "sha256": "2c22344b7100adae49a8bd66e5a2ee34420d1f1c7f2aa4fe27dc6939014e4d30"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_real_m3.out",
+          "sha256": "6a100800aa1521b7ecdbf3d9752db076c6abfa14a704515f48d0d897dfdb0f8d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_real_m3.sing",
+          "sha256": "0f867f9d04d15f5152000b1ca4e80e56dfee631ec236b807763780dbc9eca36d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_setup.py",
+          "sha256": "94b632a17d596a12decb9c50c67b96dc0f4f0eb3b98e4589bf238c2e081078e1"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_std.out",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_trig.py",
+          "sha256": "c32d2891a2f175db513694272f84425e8c624cdf8b7eadd26d2f3cc8f904577a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_uni_m0.out",
+          "sha256": "d038a9899510dff4d6048cd53532f12934aff09fca2c78464577d963370376f1"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_uni_m0.sing",
+          "sha256": "14fe8afc0c086291c7c1a694d0fda69ac0a0acedcb5163171ae69087cccdbd6f"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_uni_m3.out",
+          "sha256": "ec793e5947f96fc5bc7fd025dc25ae504150647231a9480a01eaabac42da8f9a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q1_uni_m3.sing",
+          "sha256": "42cdfbd0d00a9415ba619494f80faba195f5bfe3182433e9d8c56a28f3b259ae"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q2_G.py",
+          "sha256": "eb67fb5918a13445d84b35e35f910280f06d70aed04345b48da4e69d393d0bed"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q2_max.py",
+          "sha256": "77c93d5afe76700f3fa7c73c41cbb464100b6874e1f33e34d2ee32ed5f9bc9a0"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q2_numcheck.py",
+          "sha256": "b322c98b60339456beefbb069d7a24f282fd4fa92bce866f0ffab5825f3e678d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q2_opt.py",
+          "sha256": "04b4ea359ba7f4b8d09fc7193da370b01aba202e8b47cc28635afd792575ec57"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q2_plane.py",
+          "sha256": "18c6cdb20effba5a2c8063db23d4aad529b961d8580db2f395e5ca55a3b11835"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q2_psd.py",
+          "sha256": "99f2d718f076acb29e48e472ba7d84cee5432923eb38fc04a3ecaf945d0c3aa9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B5/q2_series.py",
+          "sha256": "cc91eee9439fed88f0d7e52116707be6ef4978bb2b0445a23cb9d44080d228b8"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/README.md",
+          "sha256": "1d995c91f7507f534b86a6586fd023633c8b489ceb4e165742520ea812c3704d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/common.py",
+          "sha256": "19d887f342cd807db59176145f2f1758f4ddd5a393565a5483a495e2d5f6bba8"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/cplx_num.py",
+          "sha256": "478625fb060246d08561484307968d5fa5793ad3062bee373167200bb25babcb"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/exact_setup.py",
+          "sha256": "0f48c1981457873738febdeaaef2c703795895ecdbea5708d9f37873bc0319fe"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/fastnum.py",
+          "sha256": "288a5ffe9f0da663de3125a90bdd86dad019681644637fdf94fc715b6cd439cf"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/lines.py",
+          "sha256": "bdd85bad0016cbc377d4cf8c12cef338795cd2271261390830b16f5ef82225f2"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/numsearch.py",
+          "sha256": "a9d8e01fbe3d88eaddd15c81558977d031f2f7da7ad42a97979a557fd024c361"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/plane_build.py",
+          "sha256": "14285481fa12083e18f58b243afc8a7abc98adddc33b6a534be8460e35a46783"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/plane_cases.py",
+          "sha256": "e142e022b3d03e401625a6bcf0fb9cbdb8dc8035eca03ea27e66c3ab875f880b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/plane_cases.sing",
+          "sha256": "25de1c2da15abc1ee697455088d568f3bb5bfc254be29faa242de183a40facb4"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/plane_cases_verify.sing",
+          "sha256": "9c58b8624928aaaa45d643026369f96a413fa3447cd4119ec6b9d047e1ec7fac"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/polysys.py",
+          "sha256": "306d2aafc148acf6958d4aaaa7e9caf6c7a101b186a53405572b34956f1e9cf0"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_3d_after_planes.py",
+          "sha256": "636d21b12a80016db4707adcc5297592bb421beda34c69b7453f2214349985a9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_build.py",
+          "sha256": "44fe572bb4e3e3e5892bb5f40909dbae4b938cabcf40786a30e3a7d83e7980f3"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_num_r3.log",
+          "sha256": "97dab28a1b07a101209dc66d3afebde88b01b9579882aab8a496be839176d1e9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_r3_unit.log",
+          "sha256": "000f5d4005fdf95085df7d6517a2ae90dad1d0f809c13a8632d8246df50c3e09"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_stage2.py",
+          "sha256": "1f1e445d396960556c1d4b0a05a336022882b861347cc5b052fef72d68fc80e4"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_stage2.sing",
+          "sha256": "64db3d4d69a967368509b439b795f99297209cb5e19755dcd74d049009a7a1a5"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_stage2_gen.log",
+          "sha256": "804723ec054d4dc12bf5f8c5ac9f08cf0f744d18e9efee5622df5baad5f46a4b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1_stage3_check.py",
+          "sha256": "1c5644339d818df36c6562e0a6aecb92089007679c5b106ebb8659b409240f87"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q1real.py",
+          "sha256": "dc8e5867a1131930ebd94b20edfe74fa758dc3efcf2c5bfc594e51b6b9a29263"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_O_r1.log",
+          "sha256": "d183155dfae3bb7de20114ce1793b09096f2c08c5419c4941c65435c76473653"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_build.py",
+          "sha256": "63985c782211cfdc0e8b4dcf8d0ba56c6485a2f54ebf5218c81ba1720ab4e2b0"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_case_test.sing",
+          "sha256": "9f168d1169e19216e152be7b37cc54083139b22f7e062b99475b883a6b595e63"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_cases.py",
+          "sha256": "cd6b0dbffb58fc0cc35d21125cb7cdfc9693673432022b0f09f623342ddd9893"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_cases2.py",
+          "sha256": "caa72a7314cf82df9454e8f9e98a81badb25c57a5cdeef0a5f026ba62ca82e7f"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_cases2_gen.log",
+          "sha256": "4abe3c6b5138496ea178651c2d238e1877d631649e86202d59bdcb8a77b838af"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_full.sing",
+          "sha256": "66867759a83ceba1d7db11e6b8acf44ffa826b2956216557543ffa8540b6775d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_lines.py",
+          "sha256": "469a3e77d0fb6427067381c13be25c9163f7b826555caaf5d5b21d7a17d77d44"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2_sys.py",
+          "sha256": "255bece7fd97b1015ac5acb72e6712e55c38cc8072e7ee3a6ae3477eadaf0307"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2c2/w0.log",
+          "sha256": "6cc7e3ccf675307c292916fd22aa3f65782706cd2bd2351cf93830c336c7b124"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2c2/w1.log",
+          "sha256": "c4125082714b98331ca4491b155116df5566e89cb7661258eff2317d9916fefb"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2fp/w0.log",
+          "sha256": "e3c734692835abde13cb4fef3ea7d07ff2d1f11e9085c367ac6cd115438cf0e7"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2fp/w1.log",
+          "sha256": "7dbaae8ed38cca847f33cb10f5d308aff542ee9289068567b215a3638b522765"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2fp/wp.log",
+          "sha256": "0daf90319de60d956622ab593a029a42d17052b48492cafec0665859f38ffdcf"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2fp/wq.log",
+          "sha256": "0fc50c86a1de9dd40a0a8f62e135e8e9d6e078d8d9fb93e54e7d9c49655c4f57"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/q2fp/ws.log",
+          "sha256": "bf2d08d6b42e1f2f4f2946ec835f5edc343bfc823ef86347e2b5cd6a9c20ad67"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/realbasis.py",
+          "sha256": "6369b9fcfe45c8c0897bc0c2bff8b3d65664b38f11d381df4751ed58e9660dc9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/sysgen.py",
+          "sha256": "42789430a08bc449207382b545a8f96bee253b9bbfa452e50df79b0563783445"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/unit_num.py",
+          "sha256": "b19ceea730bd25a951f84fa2d993fa3fcf07883ed7c9144e123fdee86f440cae"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/README.md",
+          "sha256": "3822a671e270bdf149bba5f889647fd32f10b33f894a1ad1f00f8796e10f7049"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/ans3_o00,o0i,oi0,oii,000,00i,0ii,iii.txt",
+          "sha256": "40317c115dd784fcb4b9bf670d652f40914a4ed456d173fde0276a581a471ffb"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/ans3_ooo,oo0,o00,o0i,oi0,oii,000,0ii.txt",
+          "sha256": "2618b0b437c16200f70485c75d793e75a35b30b1a4fd403f3e533055c9540364"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/ans3_ooo,oo0,ooi,o00,o0i,oi0,000,00i.txt",
+          "sha256": "1ccc88501f8580eb0d43890a952a3e6f319e80c917b824f01b65c955d0b1014b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/classes.json",
+          "sha256": "3ec64dbb5313bbb995d9981adec1dd5a828686fc0c3cd19de75aa807c8461de1"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/common.py",
+          "sha256": "77db95246b9232b0fb23f21595fedce14bf5c1e70e33b4623e62a44f35bd438d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/eqs0.txt",
+          "sha256": "6937baff16f0650032c3ba36e2b6ef4fa089ce6ac91218d702125b29ad65cbe2"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/eqs3.txt",
+          "sha256": "a284b37d4977a2fd4cdbea7dba5ea6d4ef1905fcea845e0d11b860bae97aef87"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/exact_charpolys.py",
+          "sha256": "8d4736d432c2d5df8d8e0c72e08768b57729a736a55b81976c0d9fb7ab776d0c"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/exact_spectra.out",
+          "sha256": "27ca66475140b946ae9b8cf66284e2177da2508ad97be8193114db3bda04e7bd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/exact_spectra.py",
+          "sha256": "5090ba2ebe84fb1b45f47c6f90dd9cf9be1f167abed00556a66c13c01dfe01db"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/iso.txt",
+          "sha256": "0589374a4b10cca74cf66c4d19ca57ab5c9aed6a40641be3fd7365ddd7815890"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/leaves3.txt",
+          "sha256": "d4aaa7f6be7e4c6c9fe5c7f316cccb4e2942087cf5d3d8705b1965382c7a8d69"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/p3_c0.txt",
+          "sha256": "3ae81a12a60bfd8628cf58dfeb215faf80a72b03da853d0184bab162c8d796e4"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/p3_c3.txt",
+          "sha256": "8e29d8a92b5b2145b4dea4b2279d43b39848fca233b6955fa327603517d7b1da"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/p3an_c3.txt",
+          "sha256": "f78d02b94a63eaccae9ea998cbea8b96cb13a01b8f599941dc331c7fbb8bbd83"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part1_classify.py",
+          "sha256": "0cdf349a1aa43ac92fb25fef91421cf5e7251249b20cf2f5597bba5c2d4160d9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part1_decompose.py",
+          "sha256": "ad84faefd54b3717ab17f69207530ba6b7ae96c90a4402f1f2e3b7cd2a8baa36"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_E1_dispersion.py",
+          "sha256": "2e6919a9aa773328bb70e605c644c3346a957bad3529c35384182fe3bc466c2d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_beta0.py",
+          "sha256": "32738dfef92ebce078c2fc962df6d4fb81d425f65476442923c5a8e4b3f05121"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_boson.py",
+          "sha256": "b07fb610f0ef82422a57f829193bd751ba452e167b8beccf25ae1645f33f287b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_cone.py",
+          "sha256": "0de66d62ccd8bec467b6636f3b4d8ff8962b55344e3ab28966dbb0308bcf3495"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_families.py",
+          "sha256": "d41b1b441196ad16f33896eb65ee1e0a29bf203218232b4e153672d11215e063"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_isotropy.py",
+          "sha256": "fb41de2061785df2196038f4b2b1d7eda84e182222656c3eb926f695ce483b94"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_scan.py",
+          "sha256": "9f76812d16bcd1605d24e5a52e49c6735ee01ae415b99762d152cdfc34709161"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_touch.py",
+          "sha256": "3d0ac509b4c81f1b1087eab41fb5fd5164dbb17668add237431121bd29c873dc"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part2_twolayer.py",
+          "sha256": "5f60dd5548dfb9cdcff0e87b2be9017e58184d6e5ae1c3eed6ccee7d92a93377"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_N1_dispersion.py",
+          "sha256": "6d07f567929b6eedf91dfa07d78f968a5ce6b012fc37af21cabf2ddbdd8da4dd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_analyze.py",
+          "sha256": "734b94f62a6401e325b6cb627fe7f58463144aef088c9d104a0ee98091f82f8a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_ansatz.py",
+          "sha256": "2d76b234cbf45e3e10c8671fd84185b1776a39a512275a1787261a01177cf5ff"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_boson_example.py",
+          "sha256": "56b6f38f2fc2f9e695531751d8e2e5ac31d19e432a99de4ed00335fc94fbb4f7"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_branch.py",
+          "sha256": "796b41b1c3f947c09d5e9ab51ccebe8da4a91049eb1689a7bdbe8a2a1cc231f5"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_exact_eqs.py",
+          "sha256": "f6623d2c44036e2a73c6e38730362844ef4b2bcd9a950a7286e6a37077ffa3c7"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_exact_example.py",
+          "sha256": "1094a47c6f310eedb91ce6b2777f43bf05e82b23d92d4a34caff5d1639f8d449"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_localdim.py",
+          "sha256": "9a59f843cede0c4740969b88dd929df1740c04376abdfc5a4d82c8573afa3ab0"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/part3_nn_search.py",
+          "sha256": "8dd9f30ab17f35609f00b3635a46e88100f4070a898a6961688ba2a60f35f610"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/probe1.py",
+          "sha256": "5a2c9683ca1b1251596ebc7bcff4b84f09174d2d1ef03a22da76a9308445ac9f"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/probe2.py",
+          "sha256": "9271d0a68f209d692edc49aa1c40cd3183df68d74bd044529999ce550c9c18bd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/probe3.py",
+          "sha256": "20a393f163f559b1fb31e2102d5d63ef5a6fedc6d876c9fd01d6d6145ad759b6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/probe4.py",
+          "sha256": "21c886891dce9e0d0f90bd5bbac67f9d784c593369e81b0faad186a4adc84be4"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/probe5.py",
+          "sha256": "7228992a6fdf728df6854acac783057540af4c51e2a7fdb18f3c5ad92924be26"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/probe6.py",
+          "sha256": "91c190538448ba15ed83e3fbfd35ce1433e0b32d57e37f2255f7a2683aaa9bfa"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/quat.py",
+          "sha256": "8998d010a59743db841bac33e69aafd54029bea3dcd50d2dc3ff1685e9b0e80d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/touch_E1.txt",
+          "sha256": "1f28d043b39edee3c6ec593736db6888558e8acca78fb9d6d354452d3bf89785"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/touch_E2iso.txt",
+          "sha256": "27e92620b121e97c1c1ee3c2b18c523139581d9772373967b8df9f591d76f3d6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/walks.py",
+          "sha256": "e27a4924308b260bd4326fc967a384ac37d03891e0c7fdb00fde3c16a9c37bb7"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/README.md",
+          "sha256": "094825e614ed68997d13ceb65c6fcaf57b0b8d81532d662f921afa824171c152"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/equations.py",
+          "sha256": "8083f70f19db6082b1ab0d921a5448e59bd6b084fc431cc041600307c89b6359"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/gb_p.sing",
+          "sha256": "b7270a9c966a8552e072846d18d3e241408a0c403f7ba48848d1321b4e615bcf"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/gbh_p.sing",
+          "sha256": "02888eb6eba8ffe7a7f2fa97013edd8bc3a2b116e5bbf1eba97fd82ab033c6f9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/mksing.py",
+          "sha256": "1e8a95b2f6bedd4d1486ab030633ea62491988fb39fcf12f3a337d27480aa6ce"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/mksing2d.py",
+          "sha256": "01388ed8b70ae6f70fa9d4dadb0e5f9d592993e942cf96a657260c0cc81479b6"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/nearmiss.py",
+          "sha256": "7583a2eded06d6dcf327b4ae6f30b673c9521b492a922eec19c36d80577bc044"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/numcheck.py",
+          "sha256": "82c494e81352f3e2768c32817a39093ff092541270b29d8bac35d7dbee3f4d77"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/numsearch.py",
+          "sha256": "d82bde3ba6912ab96b11dcab598caaa98de3c67a69b5d9c1e42c7669fc0f00ca"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/numsearch2.py",
+          "sha256": "c4fe82635b5fccc63abceb74c81cc56e5843aa6344f2332a875f92686ea4dd4f"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/numsearch_deg1.py",
+          "sha256": "137a6163316ab12ac23a0bd24b00123716cd850dd3d52369ffbd253719f2d932"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/red3d_mm_0.sing",
+          "sha256": "646ff73ace7a05944986d41cc05731c2f2b128fb6829093f91a7bb892ccd287e"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/red3d_mm_32003.sing",
+          "sha256": "d2701dd03be2d866f724069314351b2094145188f61143c7749b354681163aae"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/red3d_pp_0.sing",
+          "sha256": "42695aad12e1c23e5ff06cc2ff12e428a5f44d7dd701e3c90006603e3f510484"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/red3d_pp_32003.sing",
+          "sha256": "668546867448a9534448852947def8f814d81c99bcabe5941fcb87cc6c328129"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/reduce3d.py",
+          "sha256": "b0fb1c6c3d6eab9b9cbb51f7186d0542f2d8bce21775e02e67c5611b385e819e"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/refine.py",
+          "sha256": "79ddfedd9f0630df2c603b5af18e195d434d76854314181dbeb1045b7b602e92"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/setup.py",
+          "sha256": "fd5ecabd6bf01605f38380e0963a4e9710978d7d2dc53f1253e78237a19555a2"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d.py",
+          "sha256": "05357134f7f6b34c34468afe7e74b21decf1eda31154dceed57f57eb105e13ac"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d.sing",
+          "sha256": "22de8a54d946872ad04f09ada9961a7e73931fe5e37e161f1a5a2c468bd5d919"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d_cases.py",
+          "sha256": "68433c2d278d8f4278686494ad50a9823d63fdf0da42a3fd003ab516da28a667"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d_modstd.sing",
+          "sha256": "ae83906c4fa867628de61d318563e9dfc6486dce5b7de633ed28e97da62667e7"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d_num.py",
+          "sha256": "62f623c578535b68677577a924abd30d1acd7862275a110d54eb73311b21aa19"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d_p.sing",
+          "sha256": "07220e3fa81b77b1944521d74c5482e097a2b31d6d194d5296a77ae2b0384b15"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d_p2.sing",
+          "sha256": "7d50a48166d82ae825bbbed7693e6a93d714d0c8c490d9eba04767dc1e0a847a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d_q.sing",
+          "sha256": "466e25835c368964a3fab5b2717740b8dcc45d2a31607e8636ce74f2aa0c9fbf"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_R2/slice2d_radcheck.sing",
+          "sha256": "9645a82ea64203f6c6deb6f9d186d4f74b337624cb8a8d2b6589e434ddacd76c"
+        },
+        {
+          "path": "docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "sha256": "38a0c2adb8e7e7e9bae446cc8f310693e391b795f87824e7741e6960d3408f77"
+        },
+        {
+          "path": "docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "sha256": "70a7cf051a7b0b96d60b6e4be9ca0743ce676d8c90d1bf38d5747b37c98fff3c"
+        },
+        {
+          "path": "docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "sha256": "89c7d05dc3aada5476226343e019f853bd7dc30dfa68d0f052a2a3b9762a1b86"
+        },
+        {
+          "path": "docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "sha256": "d3b8c4021fecae0555379efadb1136bee70a25d1eb03edd6af187b699bb33735"
+        },
+        {
+          "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "sha256": "58723d2c9fd65eda81cf8b1859c5aff7ea62b0f129055d3753888a8c5811156c"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "8668629982475c475953bb2fac7ab9e8353d6eb383a9b8e2c1d5142e6a7b32ac"
+        },
+        {
+          "path": "scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py",
+          "sha256": "067e1cee3ec3b5b2a21c15c359f780023ea662038297102ae6f9fa0f05fbc932"
+        },
+        {
+          "path": "scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py",
+          "sha256": "952f8eda98a5b29d19a7bb3af204bcb0310dfa5f0409a66c4870ff60319df073"
+        },
+        {
+          "path": "scripts/cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16.py",
+          "sha256": "d5ebbc833c8e12cfe258d2af0d13552dcc03bb8228d9922136d2346d4598ef70"
+        },
+        {
+          "path": "scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py",
+          "sha256": "3efdb8b5134685de99bc961f49cd66fe88817e5fef917bf6f0e97c701516d027"
+        },
+        {
+          "path": "scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py",
+          "sha256": "764295007b83fc16df401474b21595e63aabe6e1c1aafc84b6d2c2d61c4944cf"
+        },
+        {
+          "path": "scripts/two_qubit_cubic_dirac_tick_2026_10_16.py",
+          "sha256": "10a87c0b6902abdeaad856762e3b7a3a1eb5e5c59109dfacccd0e7c9ebc6539f"
+        }
+      ]
+    }
+  ]
+}

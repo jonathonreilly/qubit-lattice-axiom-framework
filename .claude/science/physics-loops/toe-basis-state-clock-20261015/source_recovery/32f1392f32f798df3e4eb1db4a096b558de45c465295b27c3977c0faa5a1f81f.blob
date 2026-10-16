@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-15T19:41:56.570775+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_review/ACCEPTANCE.md",
+      "bytes": 2495,
+      "sha256": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_review/ACCEPTANCE_PROVENANCE.json",
+      "bytes": 1601,
+      "sha256": "a1bf65adc47df4d744be70319fbd828471666b747fe8a8b8a92b68954007791c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/basis_state_clock_root_review/PRE_EXPOSURE_READ.json",
+      "bytes": 1620,
+      "sha256": "5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149"
+    }
+  ],
+  "scope": "Qualified root source acceptance; publication remains separate"
+}

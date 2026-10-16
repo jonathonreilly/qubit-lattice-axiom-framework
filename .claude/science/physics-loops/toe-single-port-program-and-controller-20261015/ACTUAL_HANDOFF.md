@@ -1,0 +1,11 @@
+# Bound program/controller handoff
+
+The actual root source-publication decision60774538 is distinct from compiler acceptance bbe2e9c9 and controller/composition acceptance134cbee6. Four immutable bodies remain exact. Current ACTUAL_BINDING identifies the selected transverse-field Git base, real review source/streams/seal and live base observation. Historical PUBLICATION_STATE nulls remain untouched. Binding does not assert an execution or publication result.
+
+The sole mathematical parent is unary-clock note fa7028e0 with proof c7a at [8789,41808). Its canonical gzip736e2741 must decode to the complete29118-byte review8d76345b at [0,29118). Both external inputs are declared, but the gzip is review evidence rather than a second theorem edge. No Gibbs-source theorem is imported through the Git stack.
+
+Keep the corrected double-commutator induction; nonempty finite plant and complete computable coefficients/target/phase lift; existential successful weak coupling and unrestricted returned time; exact actual H aging; arbitrary filler/reference inputs; finite output window and every scalar. Whole-generator positivity does not imply positive old local blocks. Keep the endpoint-or-variation work contract and any pure-memory premise at the actual aged time.
+
+The static controller retains the prepared independent coherent one-head clock and bare auxiliary vacuum, exact complex-source convention, actual nonscalar port counterterm, complete reduced inverse and two-excitation corrector, full-space fault budget, every output, full enlarged geometry, positive new-block reserves, covariance and all finite strength/time/precision/energy prices. No runtime external drive is needed in this supplied model; native initialization, installation/isolation, readout, common caps, efficient synthesis and reuse remain open.
+
+Root must review the complete generated canonicalization diff, then execute actual source-integrity/cache/mutations, focused compatibility, exact one-node/one-edge graph preservation and exact staging. After regular PR creation root immediately attaches its URL. Full landing pipeline/current-main/cumulative-stack and independent retained audit remain separate. No science fixture or historical replay is introduced.

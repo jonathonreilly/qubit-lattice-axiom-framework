@@ -1,0 +1,19 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "target_claim_type": "bounded_theorem",
+  "trace_class": "frontier_discovery",
+  "reachability_to_target": "partially_closes",
+  "conditional_surface_status": "externally driven one-port endpoint/window reduction",
+  "hypothetical_axiom_status": null,
+  "admitted_observation_status": null,
+  "claim_type_reason": "New analytic finite compiler under explicit known-background, supplied static-path and external-waveform premises; prepared autonomous controller interface remains open.",
+  "independent_review": "pending",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "science_executions": 0,
+  "selected_fixture": null,
+  "model_override": false,
+  "delegation": false,
+  "editable_prompt_changes": [],
+  "publication_status": "not proposed by this bounded worker task"
+}

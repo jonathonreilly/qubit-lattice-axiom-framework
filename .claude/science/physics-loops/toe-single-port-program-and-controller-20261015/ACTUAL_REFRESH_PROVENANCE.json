@@ -1,0 +1,55 @@
+{
+  "kind": "captured_root_refresh_and_ancestry_metadata",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/c9ba0902afde97941d2156ca2ee79be31656b18be647d83c8503b3dfca4199fb.json",
+      "bytes": 2821,
+      "sha256": "c9ba0902afde97941d2156ca2ee79be31656b18be647d83c8503b3dfca4199fb"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/dfb2d10713db8efe0f591fde30db425fade2120b66b5476253a7c568b054a2a0.json",
+      "bytes": 1559,
+      "sha256": "dfb2d10713db8efe0f591fde30db425fade2120b66b5476253a7c568b054a2a0"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/c3496c910e735e21369eb3b78938b2618bfbc6362ca3877988549219da30c53d.json",
+      "bytes": 374,
+      "sha256": "c3496c910e735e21369eb3b78938b2618bfbc6362ca3877988549219da30c53d"
+    },
+    "fetch": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/595bc5ac321759aa883a0a0a8ed89f7192ac48aac16776f9dfef3bd62dd8decf.json",
+        "bytes": 1176,
+        "sha256": "595bc5ac321759aa883a0a0a8ed89f7192ac48aac16776f9dfef3bd62dd8decf"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d.blob",
+        "bytes": 121,
+        "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+      }
+    },
+    "inventory": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/51bea7edd9222b8217d29f03270712d579941ecedaa0b7db3a06ced0494d8ef5.json",
+        "bytes": 1261,
+        "sha256": "51bea7edd9222b8217d29f03270712d579941ecedaa0b7db3a06ced0494d8ef5"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/91697189a3cd89c90fe1b5a36a87132c8d89e7f907746c61a27046c3176a7144.blob",
+        "bytes": 17907,
+        "sha256": "91697189a3cd89c90fe1b5a36a87132c8d89e7f907746c61a27046c3176a7144"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "scope": "Historical fetch/inventory and base-publication provenance; the observed transverse-field PR is Git ancestry only; the unary-clock note and compressed separate review are the sole mathematical import/evidence."
+}

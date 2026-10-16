@@ -1,0 +1,155 @@
+{
+  "utc": "2026-10-15T19:01:06.089230+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_autonomous_preparation_candidate/DERIVATION.md",
+      "bytes": 31689,
+      "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7",
+      "role": "clock_definition_geometry_and_scope",
+      "read_scope": "Complete prior coverage reused; current sections1,4,6,7,8 completely reread. No program theorem import.",
+      "recovery": {
+        "path": "source_recovery/b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7.md",
+        "bytes": 31689,
+        "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7"
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "role": "instruction",
+      "read_scope": "Complete current read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "role": "instruction",
+      "read_scope": "Complete current read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "instruction",
+      "read_scope": "Complete current read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "premise_registry_scope",
+      "read_scope": "Previous complete read reused at matching identity; no new primitive imported"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "role": "instruction",
+      "read_scope": "Complete current entry read"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "role": "instruction",
+      "read_scope": "Prior complete selected-revision coverage reused; current aggregate truncation not credited as complete"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "role": "instruction",
+      "read_scope": "Prior complete selected-revision coverage reused; current aggregate truncation not credited as complete"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "role": "instruction",
+      "read_scope": "Prior complete selected-revision coverage reused; current aggregate truncation not credited as complete"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/READ_COVERAGE.md",
+      "bytes": 4061,
+      "sha256": "6ce79f06293c9181470b133e666ba60003fc0f64f0675609667ae66e3d6cc6fa",
+      "role": "prior_read_provenance",
+      "read_scope": "Complete current read; no mathematical theorem import"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/SOURCE_IDENTITIES.initial.json",
+      "bytes": 2506,
+      "sha256": "a2ac0f77d5d0daf6278144a71c980e43210a21c4c7dce6699ae765e1ac8bcf92",
+      "role": "prior_identity_provenance",
+      "read_scope": "Complete current read; no mathematical theorem import"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1832/REFS.json",
+      "bytes": 5882,
+      "sha256": "45ca48ff9e7cc2e5cb23b13a046e67be4bfb9e58fe180174dbebf1a1e5e6d810",
+      "role": "dated_repository_context",
+      "read_scope": "Complete current metadata read; not a current W HEAD or science certificate"
+    }
+  ],
+  "instruction_distribution_identity": [
+    {
+      "relative_path": "SKILL.md",
+      "installed": {
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+        "bytes": 9276,
+        "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+      },
+      "canonical": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/SKILL.md",
+        "bytes": 9276,
+        "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+      },
+      "exact_match": true
+    },
+    {
+      "relative_path": "references/DISCOVERY.md",
+      "installed": {
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md",
+        "bytes": 30709,
+        "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+      },
+      "canonical": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+        "bytes": 30709,
+        "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+      },
+      "exact_match": true
+    },
+    {
+      "relative_path": "references/CLAIM_STATUS.md",
+      "installed": {
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+        "bytes": 16755,
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      "canonical": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "bytes": 16755,
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      "exact_match": true
+    },
+    {
+      "relative_path": "references/DELIVERY.md",
+      "installed": {
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+        "bytes": 16454,
+        "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+      },
+      "canonical": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+        "bytes": 16454,
+        "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+      },
+      "exact_match": true
+    }
+  ],
+  "root_candidate_accessed": false,
+  "scientific_programs_run": 0,
+  "scope": "Exact source identity and selected recovery only; no new mathematical check by this program"
+}

@@ -1,0 +1,161 @@
+{
+  "utc": "2026-10-15T19:17:49.362112+00:00",
+  "kind": "root_source_publication_review",
+  "root_read_complete": true,
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_and_controller_publication_draft/FINAL_FREEZE.json",
+    "bytes": 42411,
+    "sha256": "c2c576011f10bf011139756ee0ab96e5dedf609a4f354242d9c653198ca7b3c2"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_and_controller_publication_draft/proposal/docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 135507,
+    "sha256": "74968df4ceed3276e67dddb3f72acc013a15c415f0e87c58370a52ec8149c81f"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_and_controller_publication_draft/proposal/scripts/single_port_program_and_autonomous_controller_2026_10_15.py",
+    "bytes": 28184,
+    "sha256": "499e0f37cf2b46d57ca7890e950700d9e0e68a534934a8848df26fda7592543d"
+  },
+  "body_pins": [
+    {
+      "name": "compiler_author",
+      "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 17076,
+      "end_byte_exclusive": 50833,
+      "bytes": 33757,
+      "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+    },
+    {
+      "name": "compiler_assessment",
+      "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 50995,
+      "end_byte_exclusive": 78421,
+      "bytes": 27426,
+      "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+    },
+    {
+      "name": "controller_author",
+      "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 78581,
+      "end_byte_exclusive": 102651,
+      "bytes": 24070,
+      "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+    },
+    {
+      "name": "controller_assessment",
+      "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 102815,
+      "end_byte_exclusive": 135507,
+      "bytes": 32692,
+      "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d"
+    }
+  ],
+  "parents": [
+    {
+      "path": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42367,
+      "sha256": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542",
+      "claim_id": "positive_unary_cycle_clock_bounded_theorem_note_2026-10-14",
+      "accepted_body_intervals": [
+        {
+          "name": "unary_clock_proof",
+          "container": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "start_byte_inclusive": 8789,
+          "end_byte_exclusive": 41808,
+          "bytes": 33019,
+          "sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "unary_clock_proof"
+      ],
+      "review_evidence": [
+        {
+          "name": "unary_clock_separate_review",
+          "container": ".claude/science/physics-loops/toe-unary-cycle-clock-20261014/objects/8d76345b8a28d7d9a80675dda5ee8b1d3f9964994375bae852f02ea084a9a7b3.gz",
+          "encoding": "gzip",
+          "start_byte_inclusive": 0,
+          "end_byte_exclusive": 29118,
+          "bytes": 29118,
+          "sha256": "8d76345b8a28d7d9a80675dda5ee8b1d3f9964994375bae852f02ea084a9a7b3",
+          "stored_bytes": 12394,
+          "stored_sha256": "736e2741a361d4630c8a62be986382fb607711889745ee1a2fdaba882a2b6cee"
+        }
+      ],
+      "role": "direct_mathematical_parent",
+      "import_scope": "Generic finite-step waveform, arbitrary fixed finite background, prepared one-head clock estimate only; no old L4, geometry, memory or native-state application imported"
+    }
+  ],
+  "existing_source_acceptances": {
+    "external_compiler": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_root_review/ACCEPTANCE.md",
+      "bytes": 4801,
+      "sha256": "bbe2e9c911e3323f840855fb2e77cc5e86d1669486eb8c8dda2e8cdec3ff53eb"
+    },
+    "autonomous_controller": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_review/ACCEPTANCE.md",
+      "bytes": 4724,
+      "sha256": "134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f"
+    }
+  },
+  "read_coverage": "Entire current wrapper, nine packet texts, entire builder/inspector/seal helpers and primary template. Metadata recorder byte-exact reuse verified; every mapped reused function byte interval verified. Four immutable scientific bodies and canonical unary proof/review reuse prior complete source reading at unchanged identities and two actual source acceptances. Generated payload index/source/recovery/manifest and complete code diff reconstructed; no claim of linear rereading of duplicated full payload patch.",
+  "reviewed_qualifications": [
+    "Correct double-commutator Lie induction and nonempty computable-input domain; some weak rational coupling, not every coupling.",
+    "Actual-time aging, complete retained outputs and phase/scalar prices; pure-memory resource premise at actual aged time.",
+    "Endpoint-or-variation work price and whole-generator positivity versus positive old local blocks.",
+    "Bare vacuum, full reduced inverse/two-excitation corrector, actual nonscalar port counterterm, complex source sign and nominal one-head restriction.",
+    "Prepared pure clock and vacuum, unbounded finite resources, no native supply/detector/common cap/reuse."
+  ],
+  "exact_function_reuse": [
+    "build_proposal.py:sha",
+    "build_proposal.py:dump",
+    "build_proposal.py:write",
+    "build_proposal.py:checked",
+    "build_proposal.py:packet_json",
+    "primary_template.py:require",
+    "primary_template.py:digest",
+    "primary_template.py:safe",
+    "primary_template.py:identity",
+    "primary_template.py:read_json",
+    "primary_template.py:interval",
+    "primary_template.py:bound_blob",
+    "primary_template.py:execution_evidence",
+    "inspect_proposal.py:sha",
+    "inspect_proposal.py:read",
+    "inspect_proposal.py:identity",
+    "inspect_proposal.py:container",
+    "inspect_proposal.py:literal_assignments",
+    "inspect_proposal.py:file_pin",
+    "inspect_proposal.py:dump",
+    "inspect_proposal.py:functions",
+    "record_metadata.py:ident",
+    "seal_packet.py:sha",
+    "seal_packet.py:identity",
+    "seal_packet.py:verify"
+  ],
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_and_controller_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 1863,
+      "sha256": "13bf709cd42981736720709ada6739212bbab89292005d2894fbbcefd751aeee"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_and_controller_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 1880,
+      "sha256": "7de7e9a368ec3191e30f5c7a2385a59d50848b88ce28cef53c72913b7a5c1966"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_and_controller_publication_draft/metadata_runs/inspection_final/EXECUTION.json",
+      "bytes": 1899,
+      "sha256": "d5c8953fdd5a8093a9556fb37e688172729651f6e61f63397b34e683f3c8332d"
+    }
+  ],
+  "preserved_metadata_failure": "First inspection rejected extra template trailing newline. Frozen draft preserves failed receipt/source and final successful inspection. No science failure or repeated scientific execution.",
+  "integration_obligations": "Choose and actually observe reviewed base; bind real source-review execution and proposal; relocate every interval including RECOVERY_SELECTION with semantic primary linkage; keep historical nulls. Run bounded source/cache/mutations/focused/graph checks, preserve old graph and sole unary parent edge, then regular PR/attachment.",
+  "scientific_programs_run": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": []
+}

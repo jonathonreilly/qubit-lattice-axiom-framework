@@ -1,0 +1,68 @@
+"""Seal the exposed comparison after actual metadata receipts are verified."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import sys
+
+D = Path(__file__).resolve().parent
+assert not (D/'FINAL_FREEZE.json').exists()
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data),
+            'sha256': hashlib.sha256(data).hexdigest()}
+
+
+def check(row, path=None):
+    actual = pin(Path(path or row['path']))
+    assert actual['bytes'] == row['bytes'] and actual['sha256'] == row['sha256']
+
+
+verified = json.loads((D/'VERIFICATION.json').read_text())
+check(verified['report'])
+for row in verified['script_syntax']:
+    check(row)
+manifest = json.loads((D/'SOURCE_MANIFEST.json').read_text())
+for row in manifest['sources']:
+    check(row, row['original_path'])
+    check(row, D/row['recovery'])
+receipts = []
+for label, script in (('capture','capture_sources.py'),('verify','verify_metadata.py')):
+    path = D/'metadata_runs'/label/'EXECUTION.json'
+    receipt = json.loads(path.read_text())
+    assert receipt['exit_code'] == 0 and receipt['timed_out'] is False
+    assert receipt['scientific_programs_run'] == 0 and receipt['timeout_seconds'] == 60
+    assert receipt['argv'][1] == str(D/script)
+    for key in ('child_source_at_launch','source_capture','recorder','stdout','stderr'):
+        check(receipt[key])
+    assert (path.parent/'executed_source.py').read_bytes() == (D/script).read_bytes()
+    receipts.append(pin(path))
+now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+(D/'SEAL_OPERATION.json').write_text(json.dumps({
+    'actual_in_process_utc': now, 'argv': sys.argv,
+    'seal_source': pin(Path(__file__)), 'metadata_receipts': receipts,
+    'kind': 'Direct metadata seal; not an invented third subprocess receipt',
+    'scientific_programs_run_by_this_checker': 0,
+}, indent=2)+'\n')
+files = []
+for path in sorted(D.rglob('*')):
+    if path.is_file():
+        row = pin(path)
+        row['path'] = str(path.relative_to(D))
+        files.append(row)
+freeze = {
+    'schema': 'polynomial-path-exposed-comparison-freeze-v1',
+    'frozen_utc': now, 'report': pin(D/'REPORT.md'),
+    'scope': 'Conditional support for two separate families; minimal clock-size recipe qualification',
+    'source_exposed_same_model': True, 'original_proofs_modified': False,
+    'scientific_programs_run_by_this_checker': 0,
+    'root_fixture_files_inspected': False, 'actual_metadata_subprocesses': 2,
+    'root_final_acceptance': None, 'editable_prompt_files_changed': [], 'files': files,
+}
+(D/'FINAL_FREEZE.json').write_text(json.dumps(freeze, indent=2)+'\n')
+for row in files:
+    check(row, D/row['path'])
+print(json.dumps({'freeze': pin(D/'FINAL_FREEZE.json'), 'members': len(files),
+                  'report': pin(D/'REPORT.md'), 'scientific_programs_run_by_this_checker': 0}))

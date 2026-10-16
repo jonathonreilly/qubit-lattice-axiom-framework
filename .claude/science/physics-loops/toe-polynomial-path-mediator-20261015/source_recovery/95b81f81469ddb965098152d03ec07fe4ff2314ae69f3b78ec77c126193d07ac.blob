@@ -1,0 +1,40 @@
+{
+  "scope": "source/recovery metadata only; no scientific program",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent",
+  "start_utc": "2026-10-15T19:55:54.707603+00:00",
+  "end_utc": "2026-10-15T19:55:54.816948+00:00",
+  "elapsed_seconds": 0.10840508388355374,
+  "timeout_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/capture_sources.py",
+    "bytes": 4395,
+    "sha256": "a458606f9fd7c090166107f0da7636cd89abe0c7a2fcd08da3416d76c5465ac0"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/metadata_runs/capture/executed_source.py",
+    "bytes": 4395,
+    "sha256": "a458606f9fd7c090166107f0da7636cd89abe0c7a2fcd08da3416d76c5465ac0"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/record_metadata.py",
+    "bytes": 2123,
+    "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/metadata_runs/capture/stdout",
+    "bytes": 887,
+    "sha256": "733fc6879d9e0e8e43d3471699a820919ddecd7f8d922fb010e4bac0f07e9710"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/metadata_runs/capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_programs_run": 0
+}

@@ -1,0 +1,9 @@
+# Assumptions and imports
+
+The sole mathematical parent is canonical9b08b7a7, raw compiler proof bda0be88 and complete qualified assessment3ad0ab65. It supplies the finite filled-box path/control setting, generic qualitative controllability and actual-aging framework with its corrected algebra/work contracts. The new recipes prove their quantitative estimates locally. The controller half of that canonical note and all other Git ancestors are provenance only.
+
+The admitted plant is finite and nonempty; every old/filler/reference output remains. H contains the literal original H0 and any declared K_X; exact computable coefficients and full norm bounds are supplied. The actual lambda, g, time unit and quantitative zero-second-block commutator basis/conditioning are fixed. Root additionally supplies a logarithm Q and its bound; the protected alternative supplies W and a determinant lift and conducts its own finite grid search. Classical design precedes execution, or its aging must be separately contracted.
+
+Positive static path blocks, external onsite controls, scalar reserves, timing/slew, full-space isolation/calibration and input state restrictions remain supplied physical data. A peak fault bound is needed for robust positivity; endpoint or variation control is needed for actual work. Every optional local-block reserve changes scalar/action/phase prices. Registered units, kinetic-isotropy and realized-state primitives neither supply nor invalidate these extra data. No primitive or axiom changes.
+
+Fixed-certificate inverse-tolerance polynomial recipes do not imply polynomial scaling in d, qubits, certificate discovery, arbitrary computable-oracle runtime or varying lambda. Pure-memory/reset consequences use the actually aged input. No autonomous controller theorem or native source is inferred.

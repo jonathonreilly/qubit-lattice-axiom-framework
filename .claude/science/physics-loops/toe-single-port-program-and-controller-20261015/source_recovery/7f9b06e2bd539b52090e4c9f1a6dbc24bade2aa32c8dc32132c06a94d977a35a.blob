@@ -1,0 +1,21 @@
+"""Verify source and receipt identities; no control, matrix or pulse computation."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent
+def verify(row):
+    p=Path(row['path']);b=p.read_bytes();assert (len(b),hashlib.sha256(b).hexdigest())==(row['bytes'],row['sha256']),str(p)
+m=json.loads((D/'SOURCE_MANIFEST.json').read_text());count=0
+verify(m['candidate_freeze']);count+=1
+for row in m['candidate_members']:verify(row);count+=1
+for row in m['sources']:
+    verify(row['original']);verify(row['captured']);count+=2
+for row in m['local_sources']:verify(row);count+=1
+for row in m['author_context_origins']:
+    if row['actual_at_capture'] is not None:verify(row['actual_at_capture']);count+=1
+r=json.loads((D/'metadata_runs/capture/EXECUTION.json').read_text());assert r['exit_code']==0 and r['failure'] is None and r['scientific_execution'] is False
+for key in ['child_source_at_launch','recorder_at_launch','launch','stdout','stderr']:verify(r[key]);count+=1
+v={'verified_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'file/source/receipt metadata only, not theorem validation by execution','identity_checks':count,'candidate_freeze_members':34,'source_snapshots':len(m['sources']),'author_context_current_matches':sum(r['matches'] for r in m['author_context_origins']),'author_context_origins':len(m['author_context_origins']),'scientific_programs_run':0,'historical_programs_replayed':0,'candidate_originals_unchanged':True,'publication_or_audit':None}
+(D/'VERIFICATION.json').write_text(json.dumps(v,indent=2)+'\n');print(json.dumps(v,indent=2))

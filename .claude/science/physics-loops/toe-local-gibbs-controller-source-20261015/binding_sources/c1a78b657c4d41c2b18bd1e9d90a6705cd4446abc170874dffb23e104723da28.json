@@ -1,0 +1,702 @@
+{
+  "frozen_utc": "2026-10-15T19:43:56.208936+00:00",
+  "scope": "Complete source-only draft, actual metadata evidence and exact selected recovery; no science execution",
+  "immutable_bodies": 3,
+  "mathematical_parents": 1,
+  "actual_binding": null,
+  "primary_execution": null,
+  "scientific_programs_run": 0,
+  "future_base_supplied": false,
+  "files": [
+    {
+      "path": "BUILD_RESULT.json",
+      "bytes": 590,
+      "sha256": "6e7d9383beb3ef7b92d808fa9e85a1562240f22928fdd21e52507f4b10e9733c"
+    },
+    {
+      "path": "CHANGED_CODE.patch",
+      "bytes": 59441,
+      "sha256": "10cb7cf3d5112f9f59071a6065a4d8e11a126ca74adce96dbde7995a9263649b"
+    },
+    {
+      "path": "CHANGED_PAYLOAD.patch",
+      "bytes": 141967,
+      "sha256": "88ec97dbaf837b1d8ad9a6356ed3845cdbf20fa3da65960aaabc153b21ee4aa0"
+    },
+    {
+      "path": "DELIVERY.json",
+      "bytes": 1249,
+      "sha256": "1e88bdcc80f122e5f5480d17d9c476910e019ba26229539e4f7d45986ed41a0d"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 2432,
+      "sha256": "3bb66e1c803fbff26dce129b8985aafd799a897ad82b915cde943a715f3a30e0"
+    },
+    {
+      "path": "PAYLOAD_CHANGE_INDEX.json",
+      "bytes": 61542,
+      "sha256": "672dac43228b95c58e64d36809e1f4671f2e7c602c41974f577cd724277ac1ef"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 6127,
+      "sha256": "4f3d3ca05401bb3264da1d39acf5e5bf9e7fe10ee5faf0f953bf9b2835644871"
+    },
+    {
+      "path": "REFERENCE_PINS.initial.json",
+      "bytes": 1860,
+      "sha256": "cb8deda1d25ae131be7f8c1aaf833f54235266e528436a491e879b52dbd2e44c"
+    },
+    {
+      "path": "REUSE_MAP.json",
+      "bytes": 23212,
+      "sha256": "ef62df43cb266470b75dcd3da25396f5075b5e766635574649c599c270bfffa6"
+    },
+    {
+      "path": "ROOT_READ_GUIDE.md",
+      "bytes": 5872,
+      "sha256": "b8d4f41e9980b733d475aa81461f4dfa3ef54bd0c47a8025981279b336ce7270"
+    },
+    {
+      "path": "SCRIPT_MAP.json",
+      "bytes": 1229,
+      "sha256": "70c490429053c65cbb08aa8cd3333caa897003fa8a6f3f16d4783c3392c4a82a"
+    },
+    {
+      "path": "SEAL_OPERATION.json",
+      "bytes": 434,
+      "sha256": "4d029cc76bda155c023731c27389acc0dc2e7e2abc9425fd7475ea4d37193b17"
+    },
+    {
+      "path": "SOURCE_FRESHNESS.json",
+      "bytes": 22168,
+      "sha256": "83c459fd4e960e5a3d5f26347173048b25700ce15fab77f3e1aa3a958dfb30bb"
+    },
+    {
+      "path": "START.md",
+      "bytes": 1393,
+      "sha256": "b291bcddaa970153bbedaeb9bc331ec6602ff6f892bbffdd6d9a390357a3d69a"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 2269,
+      "sha256": "006e184bec1884289f5a96aabf4cf5ce7771d31b62e8851656a5b86eb19fff56"
+    },
+    {
+      "path": "build_proposal.py",
+      "bytes": 16204,
+      "sha256": "4b54b18845d4be9068714a3205c2525f64d437b736f8c4bbf5f9f79f75904769"
+    },
+    {
+      "path": "inspect_proposal.py",
+      "bytes": 15538,
+      "sha256": "b89b55533cd48d51912512e3f1365074191303be60aacf0bdbc4b618cd52dc29"
+    },
+    {
+      "path": "metadata_runs/build/EXECUTION.json",
+      "bytes": 1791,
+      "sha256": "b3b5b097ea9429a8263ff8418cc2e8baaf87cc479d2ce9ff1dfc0da358503030"
+    },
+    {
+      "path": "metadata_runs/build/LAUNCH.json",
+      "bytes": 8101,
+      "sha256": "fe4caf286fd4f05869b29553c1ce6492ee211ce7ca9249af33fc09af9f93a89d"
+    },
+    {
+      "path": "metadata_runs/build/executed_source.py",
+      "bytes": 16204,
+      "sha256": "4b54b18845d4be9068714a3205c2525f64d437b736f8c4bbf5f9f79f75904769"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2059,
+      "sha256": "2090bbfa0e31c6d959b73c52eb76f3869f0f3453371954b096f79df9f6b9576c"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2554,
+      "sha256": "597e197783d25de351d8fafd4415a732c914db6378df9589b2f09e0325c62829"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1437,
+      "sha256": "93f1bcd3d72b1c25bc373cc932722f990dc76981432761e50fd9afb869e5d350"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 2250,
+      "sha256": "ce612c091e899bad5079fd2d78c1a45586b2bdefb5ba6302d920fd460a7d564c"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/HANDOFF.md",
+      "bytes": 1857,
+      "sha256": "6f16d3a51595ddfde36ad5c78091895ae08e6b5748c2c65185fd67980fd28568"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/PR_BODY.md",
+      "bytes": 1873,
+      "sha256": "4e607f723a4b474eca410efb5f04cb109d62163b1806d3943a22f7090e419c26"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1961,
+      "sha256": "a87e8c0c24891979e85b11f1b9cdd901a5e7ad23a4cad8d976878602515c9c45"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3086,
+      "sha256": "8c930518fc6a38988ac3416fff5a2ab28cec1847deabb8e5d74afc63bcae8ee0"
+    },
+    {
+      "path": "metadata_runs/build/inputs/packet_text/TRACE_GATE.md",
+      "bytes": 1084,
+      "sha256": "8b40081f3e8cf97e9842cd7850aff5a29e0e0ed27f92382d392ce9d0ea4cc022"
+    },
+    {
+      "path": "metadata_runs/build/inputs/primary_template.py",
+      "bytes": 13508,
+      "sha256": "c1a8be6bb6b835dd344f1d3887a789a4864dff1bd6080c78ff2d80e174675f37"
+    },
+    {
+      "path": "metadata_runs/build/inputs/wrapper.md",
+      "bytes": 23076,
+      "sha256": "947d89e52f41702f6bc03c8adbf17fcb24ff7ad6b5ac54ba9b11c4d86f913f28"
+    },
+    {
+      "path": "metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/build/stdout",
+      "bytes": 591,
+      "sha256": "cf145fcc55f61e633b9c0a61a3dbd50ce843cd92db1a857c1323c17e624f9a08"
+    },
+    {
+      "path": "metadata_runs/inspection/EXECUTION.json",
+      "bytes": 1809,
+      "sha256": "5d6b35bfa80b095c99999bcf46568cfabec36b63a641c5b44738fcc1a38eaf45"
+    },
+    {
+      "path": "metadata_runs/inspection/LAUNCH.json",
+      "bytes": 8163,
+      "sha256": "e2c3e3b6aee89563b260cc4178309488256258ea82efef64553f2ca419c44d7d"
+    },
+    {
+      "path": "metadata_runs/inspection/executed_source.py",
+      "bytes": 15538,
+      "sha256": "b89b55533cd48d51912512e3f1365074191303be60aacf0bdbc4b618cd52dc29"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2059,
+      "sha256": "2090bbfa0e31c6d959b73c52eb76f3869f0f3453371954b096f79df9f6b9576c"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2554,
+      "sha256": "597e197783d25de351d8fafd4415a732c914db6378df9589b2f09e0325c62829"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1437,
+      "sha256": "93f1bcd3d72b1c25bc373cc932722f990dc76981432761e50fd9afb869e5d350"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 2250,
+      "sha256": "ce612c091e899bad5079fd2d78c1a45586b2bdefb5ba6302d920fd460a7d564c"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/HANDOFF.md",
+      "bytes": 1857,
+      "sha256": "6f16d3a51595ddfde36ad5c78091895ae08e6b5748c2c65185fd67980fd28568"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/PR_BODY.md",
+      "bytes": 1873,
+      "sha256": "4e607f723a4b474eca410efb5f04cb109d62163b1806d3943a22f7090e419c26"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1961,
+      "sha256": "a87e8c0c24891979e85b11f1b9cdd901a5e7ad23a4cad8d976878602515c9c45"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3086,
+      "sha256": "8c930518fc6a38988ac3416fff5a2ab28cec1847deabb8e5d74afc63bcae8ee0"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/packet_text/TRACE_GATE.md",
+      "bytes": 1084,
+      "sha256": "8b40081f3e8cf97e9842cd7850aff5a29e0e0ed27f92382d392ce9d0ea4cc022"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/primary_template.py",
+      "bytes": 13508,
+      "sha256": "c1a8be6bb6b835dd344f1d3887a789a4864dff1bd6080c78ff2d80e174675f37"
+    },
+    {
+      "path": "metadata_runs/inspection/inputs/wrapper.md",
+      "bytes": 23076,
+      "sha256": "947d89e52f41702f6bc03c8adbf17fcb24ff7ad6b5ac54ba9b11c4d86f913f28"
+    },
+    {
+      "path": "metadata_runs/inspection/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/inspection/stdout",
+      "bytes": 2269,
+      "sha256": "006e184bec1884289f5a96aabf4cf5ce7771d31b62e8851656a5b86eb19fff56"
+    },
+    {
+      "path": "packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2059,
+      "sha256": "2090bbfa0e31c6d959b73c52eb76f3869f0f3453371954b096f79df9f6b9576c"
+    },
+    {
+      "path": "packet_text/BINDING_CONTRACT.md",
+      "bytes": 2554,
+      "sha256": "597e197783d25de351d8fafd4415a732c914db6378df9589b2f09e0325c62829"
+    },
+    {
+      "path": "packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1437,
+      "sha256": "93f1bcd3d72b1c25bc373cc932722f990dc76981432761e50fd9afb869e5d350"
+    },
+    {
+      "path": "packet_text/COUNTEREXAMPLES.md",
+      "bytes": 2250,
+      "sha256": "ce612c091e899bad5079fd2d78c1a45586b2bdefb5ba6302d920fd460a7d564c"
+    },
+    {
+      "path": "packet_text/HANDOFF.md",
+      "bytes": 1857,
+      "sha256": "6f16d3a51595ddfde36ad5c78091895ae08e6b5748c2c65185fd67980fd28568"
+    },
+    {
+      "path": "packet_text/PR_BODY.md",
+      "bytes": 1873,
+      "sha256": "4e607f723a4b474eca410efb5f04cb109d62163b1806d3943a22f7090e419c26"
+    },
+    {
+      "path": "packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1961,
+      "sha256": "a87e8c0c24891979e85b11f1b9cdd901a5e7ad23a4cad8d976878602515c9c45"
+    },
+    {
+      "path": "packet_text/REVIEW_HISTORY.md",
+      "bytes": 3086,
+      "sha256": "8c930518fc6a38988ac3416fff5a2ab28cec1847deabb8e5d74afc63bcae8ee0"
+    },
+    {
+      "path": "packet_text/TRACE_GATE.md",
+      "bytes": 1084,
+      "sha256": "8b40081f3e8cf97e9842cd7850aff5a29e0e0ed27f92382d392ce9d0ea4cc022"
+    },
+    {
+      "path": "primary_template.py",
+      "bytes": 13508,
+      "sha256": "c1a8be6bb6b835dd344f1d3887a789a4864dff1bd6080c78ff2d80e174675f37"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/ACTUAL_BINDING.json",
+      "bytes": 331,
+      "sha256": "1d3f1e07317131a0ae82240385336a1dfd147055f7c70b8ec80ef1092624fd5a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/ARCHIVE_INDEX.json",
+      "bytes": 20791,
+      "sha256": "9017cbc19898d0049e9d4812a1b6684d74d19a2db1caeadb98d03b143192bead"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2059,
+      "sha256": "2090bbfa0e31c6d959b73c52eb76f3869f0f3453371954b096f79df9f6b9576c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/BINDING_CONTRACT.md",
+      "bytes": 2554,
+      "sha256": "597e197783d25de351d8fafd4415a732c914db6378df9589b2f09e0325c62829"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/BODY_MAP.json",
+      "bytes": 1069,
+      "sha256": "402961449b03c52220c07bef0c579a25bf8f23b76968605a442d6fb5a79fc9b2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/CANONICAL_BINDING.json",
+      "bytes": 482,
+      "sha256": "0428587549270df53b750dd9d09dfc49e3803a3dc4639601ba62ac23d8b3cf57"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1437,
+      "sha256": "93f1bcd3d72b1c25bc373cc932722f990dc76981432761e50fd9afb869e5d350"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/COUNTEREXAMPLES.md",
+      "bytes": 2250,
+      "sha256": "ce612c091e899bad5079fd2d78c1a45586b2bdefb5ba6302d920fd460a7d564c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/DEPENDENCIES.json",
+      "bytes": 1005,
+      "sha256": "2cf0cfed059eb51e514ce300cf011c43f34a83535ca805b9f5dbc7e1ea098daa"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/HANDOFF.md",
+      "bytes": 1857,
+      "sha256": "6f16d3a51595ddfde36ad5c78091895ae08e6b5748c2c65185fd67980fd28568"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/INPUT_MANIFEST.json",
+      "bytes": 18243,
+      "sha256": "48785f3b7c7302647eebcbd75f45c66c1586d2fa31b48a153b832070b4baca09"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/PARENT_REVIEW_BINDING.json",
+      "bytes": 998,
+      "sha256": "5626f4f2be529350f7cd9bec565bff215f9adee6b7480a30920472464465739e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/PR_BODY.md",
+      "bytes": 1873,
+      "sha256": "4e607f723a4b474eca410efb5f04cb109d62163b1806d3943a22f7090e419c26"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/PR_TITLE.txt",
+      "bytes": 84,
+      "sha256": "8e62866b45569583c5b0666df6811b3f4074581d79c7a4550270213b20255abe"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/PUBLICATION_STATE.json",
+      "bytes": 558,
+      "sha256": "c349de228fe4e8f52b7af4d8797e845e6dbdbaeb35b495c54e6f350caaab3b47"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/RECOVERY_SCOPE.md",
+      "bytes": 1961,
+      "sha256": "a87e8c0c24891979e85b11f1b9cdd901a5e7ad23a4cad8d976878602515c9c45"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/RECOVERY_SELECTION.json",
+      "bytes": 49331,
+      "sha256": "a28c2f38d740a77fef1730ad46d902265e0b835d163ddeb9dd12655a464df5a3"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/REVIEW_HISTORY.md",
+      "bytes": 3086,
+      "sha256": "8c930518fc6a38988ac3416fff5a2ab28cec1847deabb8e5d74afc63bcae8ee0"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/SOURCE_MANIFEST.json",
+      "bytes": 36763,
+      "sha256": "79daacdd8e2be75a1d65cc8feb1f69ad3b6efaec2fc99504c016ce2a070e9602"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/TRACE_GATE.md",
+      "bytes": 1084,
+      "sha256": "8b40081f3e8cf97e9842cd7850aff5a29e0e0ed27f92382d392ce9d0ea4cc022"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/0c0e6299eb8ce1f33fb6326c74013a22bc0fc5d1c4bf2b9433bca2016ebeef08.blob",
+      "bytes": 2951,
+      "sha256": "0c0e6299eb8ce1f33fb6326c74013a22bc0fc5d1c4bf2b9433bca2016ebeef08"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/1134a35c531f39848e04bab2185c59a2aacd2f867a6142a8c73d4eefbbbd189b.blob",
+      "bytes": 5147,
+      "sha256": "1134a35c531f39848e04bab2185c59a2aacd2f867a6142a8c73d4eefbbbd189b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302.blob",
+      "bytes": 3705,
+      "sha256": "1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/1a7f61fe09c729f35943e73c596ea3564ebcc833037475332921b66d9099bbab.blob",
+      "bytes": 3680,
+      "sha256": "1a7f61fe09c729f35943e73c596ea3564ebcc833037475332921b66d9099bbab"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5.blob",
+      "bytes": 7690,
+      "sha256": "1dc70fe970de23533ad5604d4cb85d94ddf3e9dcbd4ca3368aba04fe464e16e5"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/27cf1cef03cdac9914e503731b0f053eea993b55f862f7df40a85336a40f1859.blob",
+      "bytes": 2006,
+      "sha256": "27cf1cef03cdac9914e503731b0f053eea993b55f862f7df40a85336a40f1859"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87.blob",
+      "bytes": 804,
+      "sha256": "2a61c069caae5e7d3a4a63d2f7595eb92e9e54a2bffcc054f7cee3a586df1a87"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.blob",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/3296ddaa7ce6c97e45cee7e1654467633685f75a944daab4e424e825b439b19d.blob",
+      "bytes": 1044,
+      "sha256": "3296ddaa7ce6c97e45cee7e1654467633685f75a944daab4e424e825b439b19d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/32f18faf93644d5b32e35b9a60787297c00e07e612d4b8426a9ed5957b8d2db8.blob",
+      "bytes": 10987,
+      "sha256": "32f18faf93644d5b32e35b9a60787297c00e07e612d4b8426a9ed5957b8d2db8"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/369360e11586200f363bb9087a6e2880255700eab2821ff5198950e72c85a567.blob",
+      "bytes": 1017,
+      "sha256": "369360e11586200f363bb9087a6e2880255700eab2821ff5198950e72c85a567"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/395deb75d4d733683c51ba18a53fa3d1735cc86f62112c2f0c5d7fb2e94a4273.blob",
+      "bytes": 1811,
+      "sha256": "395deb75d4d733683c51ba18a53fa3d1735cc86f62112c2f0c5d7fb2e94a4273"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/3c76519db1ee43435446f62d78880f4a078338591a75f493c581bb4aa88defbe.blob",
+      "bytes": 2243,
+      "sha256": "3c76519db1ee43435446f62d78880f4a078338591a75f493c581bb4aa88defbe"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.blob",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/4616ac0e6ec7df04f063f6aa1b50c0bb09b45fe04f7026a958bbc76ccd2b7fb6.blob",
+      "bytes": 7354,
+      "sha256": "4616ac0e6ec7df04f063f6aa1b50c0bb09b45fe04f7026a958bbc76ccd2b7fb6"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/48267575a9d77db69bf1eea0d73050262051429fecec585dfbc09a1a08a71863.blob",
+      "bytes": 2124,
+      "sha256": "48267575a9d77db69bf1eea0d73050262051429fecec585dfbc09a1a08a71863"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/500621a53201e6dee054b6cf01d24647d952554016c3c340777ea8aada612679.blob",
+      "bytes": 439,
+      "sha256": "500621a53201e6dee054b6cf01d24647d952554016c3c340777ea8aada612679"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/5282fdefb2c4ad07378651132923865dfca4679680b588a9337267ff0acfa6ab.blob",
+      "bytes": 5013,
+      "sha256": "5282fdefb2c4ad07378651132923865dfca4679680b588a9337267ff0acfa6ab"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/53eb8ab72f253269f654ec45a6dea92c5d112cec14264484d7e652fb46010306.blob",
+      "bytes": 2414,
+      "sha256": "53eb8ab72f253269f654ec45a6dea92c5d112cec14264484d7e652fb46010306"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/656357ca8416febc385119582e14dd1640fca84d30659d0509c3cef4f36cff53.blob",
+      "bytes": 4549,
+      "sha256": "656357ca8416febc385119582e14dd1640fca84d30659d0509c3cef4f36cff53"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/70264c3a9c76dccd9a5b561af70d3963a733b450cfdbb6394e6d06474ae4ee0e.blob",
+      "bytes": 8145,
+      "sha256": "70264c3a9c76dccd9a5b561af70d3963a733b450cfdbb6394e6d06474ae4ee0e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/736e2741a361d4630c8a62be986382fb607711889745ee1a2fdaba882a2b6cee.blob",
+      "bytes": 12394,
+      "sha256": "736e2741a361d4630c8a62be986382fb607711889745ee1a2fdaba882a2b6cee"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/73f5f53d2cddb066295a8042816060f95a9769e48a2079e56a3636f4c8905645.blob",
+      "bytes": 3369,
+      "sha256": "73f5f53d2cddb066295a8042816060f95a9769e48a2079e56a3636f4c8905645"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e.blob",
+      "bytes": 1418,
+      "sha256": "75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/76774c73b07811df42460612bd104e0c9d64279871005a7e5ba5bee95e9dcf6c.blob",
+      "bytes": 1320,
+      "sha256": "76774c73b07811df42460612bd104e0c9d64279871005a7e5ba5bee95e9dcf6c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/7b58d56405a7807b67039577b65ae3539a2221e42575b08e6ec639fe6f039d74.blob",
+      "bytes": 6904,
+      "sha256": "7b58d56405a7807b67039577b65ae3539a2221e42575b08e6ec639fe6f039d74"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/8d76345b8a28d7d9a80675dda5ee8b1d3f9964994375bae852f02ea084a9a7b3.blob",
+      "bytes": 29118,
+      "sha256": "8d76345b8a28d7d9a80675dda5ee8b1d3f9964994375bae852f02ea084a9a7b3"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/931a7565eb1d9c892c268898aa1b09df96e02db3b90dde196eba2b90048de1f1.blob",
+      "bytes": 1977,
+      "sha256": "931a7565eb1d9c892c268898aa1b09df96e02db3b90dde196eba2b90048de1f1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/977834884667414b48ab0501eabf8d4ad58df5d4e587040995b170eca8634133.blob",
+      "bytes": 2307,
+      "sha256": "977834884667414b48ab0501eabf8d4ad58df5d4e587040995b170eca8634133"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/a1bf5c76cd0f2fabf678251d869523b6480788767cc2d35987165d8ed8251e84.blob",
+      "bytes": 1988,
+      "sha256": "a1bf5c76cd0f2fabf678251d869523b6480788767cc2d35987165d8ed8251e84"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/a7481d0fcd7db9e692fe48b6c021883607582aa1f7a3f22e0902a9c6a6f46b30.blob",
+      "bytes": 1106,
+      "sha256": "a7481d0fcd7db9e692fe48b6c021883607582aa1f7a3f22e0902a9c6a6f46b30"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7.blob",
+      "bytes": 31689,
+      "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/b75159cd4f985feb6faf76863a7b279e26a93160aff5be9e9bc32e85bc9449bd.blob",
+      "bytes": 3287,
+      "sha256": "b75159cd4f985feb6faf76863a7b279e26a93160aff5be9e9bc32e85bc9449bd"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/bbbd8f683c94a3feff8aaa25372f12d5ca3c2494fb50dac9e10f2413119aa3a5.blob",
+      "bytes": 1612,
+      "sha256": "bbbd8f683c94a3feff8aaa25372f12d5ca3c2494fb50dac9e10f2413119aa3a5"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/c2e7680d5a133ca950483f07036e7ef5879871a83e439c490c4bd1c919833537.blob",
+      "bytes": 3238,
+      "sha256": "c2e7680d5a133ca950483f07036e7ef5879871a83e439c490c4bd1c919833537"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/c36218bb3e5e096caebfb520212907f90c6851572528d10165d5b4fd1e27aa0f.blob",
+      "bytes": 1605,
+      "sha256": "c36218bb3e5e096caebfb520212907f90c6851572528d10165d5b4fd1e27aa0f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/c60a81d7fa057c0e99d3a33f3beb0682878e38b10ac118ffff60569b3b5207d9.blob",
+      "bytes": 1108,
+      "sha256": "c60a81d7fa057c0e99d3a33f3beb0682878e38b10ac118ffff60569b3b5207d9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/c9c5e17680702e1dbafe8d8ecce823602dc717b674fa9f3abc8698b83ccaa77f.blob",
+      "bytes": 1612,
+      "sha256": "c9c5e17680702e1dbafe8d8ecce823602dc717b674fa9f3abc8698b83ccaa77f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.blob",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/ceca11900946ddb6b4e9e542b1af3a2ac2c98eab167b90f89e9bdd403bab335c.blob",
+      "bytes": 1747,
+      "sha256": "ceca11900946ddb6b4e9e542b1af3a2ac2c98eab167b90f89e9bdd403bab335c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/d06649c8b8d9579fd8bd21c0a5e196975ce0d8ff2d869247829448aec6aceab8.blob",
+      "bytes": 21105,
+      "sha256": "d06649c8b8d9579fd8bd21c0a5e196975ce0d8ff2d869247829448aec6aceab8"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/eb08af71fdb97c736a17579a043c68ef7e917437ca8eeba3c06015126f978ede.blob",
+      "bytes": 972,
+      "sha256": "eb08af71fdb97c736a17579a043c68ef7e917437ca8eeba3c06015126f978ede"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "proposal/docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 102358,
+      "sha256": "045da0d7138ff59b26a1949bcd1c3f097cc94e2fca36b81482d08919529897ce"
+    },
+    {
+      "path": "proposal/scripts/local_gibbs_controller_source_2026_10_15.py",
+      "bytes": 23530,
+      "sha256": "453e919787a0b0fa13c3602843065f70a21eb131fcf0acce5c4f9f70b84152c2"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2433,
+      "sha256": "96c5ebbdcbe83ec482e8e5d3f10e42b9d738557dcb6c04c42e089e0d8fc686ed"
+    },
+    {
+      "path": "reference_scripts/REFERENCE_FINAL_FREEZE.json",
+      "bytes": 42844,
+      "sha256": "520767eb22da03e4348edb27fa2c60550e7869aff92c3381e5d012c5192ff4f5"
+    },
+    {
+      "path": "reference_scripts/REFERENCE_ROOT_REVIEW.json",
+      "bytes": 14370,
+      "sha256": "0cada325dcafb01ef8abe22a0c391a88a292e6ad81c5f8e9d79b3494f9692a49"
+    },
+    {
+      "path": "reference_scripts/build_proposal.py",
+      "bytes": 17036,
+      "sha256": "35f0a87bdb22bf7177e1490fc7bab772a7b17e8659125293ce72384331942b67"
+    },
+    {
+      "path": "reference_scripts/inspect_proposal.py",
+      "bytes": 12686,
+      "sha256": "536dfea53af8e91fdcbf4e2edd64b67b9e1d0ebee8011c5c5ca48a2885038727"
+    },
+    {
+      "path": "reference_scripts/primary_template.py",
+      "bytes": 12042,
+      "sha256": "d298eb13370fb5494c18b69fe09202e528f9a9303ef89552cb157befae5c3a12"
+    },
+    {
+      "path": "reference_scripts/record_metadata.py",
+      "bytes": 2433,
+      "sha256": "96c5ebbdcbe83ec482e8e5d3f10e42b9d738557dcb6c04c42e089e0d8fc686ed"
+    },
+    {
+      "path": "reference_scripts/seal_packet.py",
+      "bytes": 4812,
+      "sha256": "7226561a1dae5efbabc61f9ac941f0ec4fb31f7d5a56f2e28055ed51d2466d4d"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 4779,
+      "sha256": "521a406921e5578fad62f760ca8ef92e2bccdbdee20611ec4c22f2cf6f6ba989"
+    },
+    {
+      "path": "wrapper.md",
+      "bytes": 23076,
+      "sha256": "947d89e52f41702f6bc03c8adbf17fcb24ff7ad6b5ac54ba9b11c4d86f913f28"
+    }
+  ]
+}

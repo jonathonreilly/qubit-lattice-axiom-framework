@@ -1,0 +1,396 @@
+{
+  "utc": "2026-10-15T21:15:42.577745+00:00",
+  "branch": "physics-loop/toe-polynomial-path-mediator-20261015",
+  "base_head": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 115781,
+    "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/polynomial_path_mediator_2026_10_15.py",
+    "bytes": 39140,
+    "sha256": "0c96846b6fc146679c79fadc8438e626d45f3cc59a6185353606a83b9f270fc7"
+  },
+  "cache": {
+    "utc": "2026-10-15T21:12:03.303426+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/polynomial_path_mediator_2026_10_15.py",
+      "bytes": 39140,
+      "sha256": "0c96846b6fc146679c79fadc8438e626d45f3cc59a6185353606a83b9f270fc7"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/CANONICAL_RESULT.json",
+      "bytes": 1176,
+      "sha256": "a6c56dcc4fd8a986cb603a60e7864ceaa25669eeb22b5f493fb2ce34760b8c81"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/polynomial_path_mediator_2026_10_15.txt",
+      "bytes": 1140,
+      "sha256": "3b843ba73524a51a0dfad68bb103bf257c5b7ffb5b84677e48986680b5c1cc59"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "historical_root_scientific_fixtures": 1,
+      "publication_or_retained_status_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"
+    },
+    "scope_lines": [
+      "per_element: exact coefficient text retained; no physical element or gate executed",
+      "per_site: fixed path and supplied isolation are preserved; no hardware test executed",
+      "per_mode: full-sector path proofs retained; historical fixture read only, no mode simulation executed here",
+      "per_block: three exact bodies, one parent and captured binding evidence checked",
+      "lattice_wide: source integrity only; native source, release hardware, compiler complexity and audit remain open"
+    ],
+    "scientific_programs_run_this_integration": 0,
+    "historical_root_scientific_fixtures": 1,
+    "historical_programs_replayed": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-15T21:12:15.510284+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/polynomial_path_mediator_2026_10_15.py",
+      "bytes": 39140,
+      "sha256": "0c96846b6fc146679c79fadc8438e626d45f3cc59a6185353606a83b9f270fc7"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/MUTATION_RESULTS.json",
+      "bytes": 12771,
+      "sha256": "b2f1d7e67367524297854660d29078ab8aca0198528f6ac0686e24dda1b9c42d"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 107,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run_this_integration": 0,
+    "historical_root_scientific_fixtures": 1,
+    "historical_programs_replayed": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-15T21:14:47.929623+00:00",
+    "old_nodes_preserved": 7142,
+    "old_edges_preserved": 16103,
+    "new_node": {
+      "claim_id": "polynomial_path_mediator_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "basis_state_waveform_clock_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "path": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/polynomial_path_mediator_2026_10_15.py",
+      "title": "A positive auxiliary path with polynomial one-port controller prices"
+    },
+    "new_edges": [
+      {
+        "from": "polynomial_path_mediator_bounded_theorem_note_2026-10-15",
+        "to": "basis_state_waveform_clock_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "roots_unchanged": true,
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10462360,
+      "sha256": "1d0ec50575c269039974812fa76ed709392871f48108385b2a4103613c41cae3"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1020022,
+      "sha256": "f0376db62658a7d39fa47025422fb46fd9db823fbcb036e9c28e612f515742f3"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "986586056c6004f9dc4c96ace448fa9b0d8b38d5dc30d954038798e43bedf268"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-15T21:12:12.803371+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2251,
+          "sha256": "faff0fcd5e0c40eb0141a881f650e823c254bdb8602263d5a1dde47d023e89bf"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2306,
+          "sha256": "3808a58ea3ef6d5f37659c534d495c0aa11fa588ce95bbddd2c55028398cdf8e"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2295,
+          "sha256": "5f1f135c69223fef48169fdc3701b3eab4fe96490efb4acede0be151d2c84106"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2282,
+          "sha256": "8fd9269b668e53075381777cfd35a7368296dfcf8641bcee765ca284f4f04dad"
+        }
+      },
+      {
+        "case": "source_interval",
+        "expected_failure": "Source body-map linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_source_interval/EXECUTION.json",
+          "bytes": 2294,
+          "sha256": "3eb2eda9bf68a7e32b968a45a03ab92fc193f1dfe62bc29f12a978a810ad1502"
+        }
+      },
+      {
+        "case": "parent_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_parent_interval/EXECUTION.json",
+          "bytes": 2294,
+          "sha256": "c72421218238ec5cebd3d96a6c0803b7585268c900b0d3a25541ef00879b5cf8"
+        }
+      },
+      {
+        "case": "dependency_role",
+        "expected_failure": "Exactly one direct mathematical parent",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_dependency_role/EXECUTION.json",
+          "bytes": 2295,
+          "sha256": "6d2bc00c706921259ef65380a130597a42af291ca3b6b79fa66f09895364cb10"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical null state must remain null:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2312,
+          "sha256": "24755fbed02f0ce666469982d753fedd2b4a7e9434ff8c0d678d5335e438a102"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Bound canonical note identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2270,
+          "sha256": "6ae9f9d20df7d8570899979fde217714081880697231b1e610dce29ebacaca22"
+        }
+      },
+      {
+        "case": "root_review_scope",
+        "expected_failure": "Actual source-publication review schema",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_root_review_scope/EXECUTION.json",
+          "bytes": 2306,
+          "sha256": "5af32ddb447341ba99d71dfbe1dabf43cdfa9d68005a35d07e17da1f9db80ffe"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Captured successful execution required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2300,
+          "sha256": "f919068cf30dacc752a53bf810a618ecf56d33c24a7f93a6ca60781c5058f602"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2330,
+          "sha256": "0829691f468e149a801f19778357f29a074c85ab25089304e524dc5a40b1b583"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2318,
+          "sha256": "410ca31399ed03f4fac8aa835b4fea3f9d2c09b927590e0562937485ef1643fd"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2276,
+          "sha256": "e58dc4eeba2f4da465508ff303960fe01968afd244b56d4ca1ccc2fff7af7bb9"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2282,
+          "sha256": "aae4fdf963cdcc921f3a257058811e8c98b3eb070352ec128f0b18e115ca5f54"
+        }
+      },
+      {
+        "case": "recovery_selection_offset",
+        "expected_failure": "Selected member/source recovery linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_recovery_selection_offset/EXECUTION.json",
+          "bytes": 2353,
+          "sha256": "217279e02a92722cf13ee4146e59d072b09ef1d8cbec049af7910ad0e5e2528b"
+        }
+      },
+      {
+        "case": "source_body_linkage",
+        "expected_failure": "Source body-map linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_source_body_linkage/EXECUTION.json",
+          "bytes": 2318,
+          "sha256": "3e553c8912c17822e96d737764623c07bfa593597a3bab9ab96bdaff7ed93ca9"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2311,
+          "sha256": "4d04dcacc84b2d7a36c6ef92d3e0de459598f3c24f3a607ffbf6cf28e710761f"
+        }
+      },
+      {
+        "case": "seal_scope",
+        "expected_failure": "Historical proposal seal scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_seal_scope/EXECUTION.json",
+          "bytes": 2264,
+          "sha256": "ac9651800b31cf2b497be2d742ef01d4709364d7045f1c953f48c84e53cbac67"
+        }
+      },
+      {
+        "case": "historical_science_count",
+        "expected_failure": "Historical execution and pending-base scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_historical_science_count/EXECUTION.json",
+          "bytes": 2348,
+          "sha256": "32950b5e9b64ec5ef086ab8c5623c5382f1fb13f903d15b3321b8903539b4af5"
+        }
+      },
+      {
+        "case": "parent_review_binding",
+        "expected_failure": "Exact parent proof/review/publication binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_parent_review_binding/EXECUTION.json",
+          "bytes": 2331,
+          "sha256": "48df90fa53bbc4f625a4f35e14f5c275081dddb7bc1fdcb1d6a4a51bf6c856c0"
+        }
+      },
+      {
+        "case": "fixture_count",
+        "expected_failure": "One historical fixture, no replay",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_fixture_count/EXECUTION.json",
+          "bytes": 2282,
+          "sha256": "ce9cde851b8501d576f990ae623a4bc2740bbd758ec6d7f0c169f2716afa4d10"
+        }
+      },
+      {
+        "case": "fixture_exposure",
+        "expected_failure": "Honest comparison exposure scope",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_fixture_exposure/EXECUTION.json",
+          "bytes": 2300,
+          "sha256": "02cdcb862ef2127275aedcf1ca0e41b550fdf8e437a48de2284c9c1a7001ffd7"
+        }
+      },
+      {
+        "case": "fixture_receipt_exit",
+        "expected_failure": "Actual historical scientific execution",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_fixture_receipt_exit/EXECUTION.json",
+          "bytes": 2324,
+          "sha256": "08419c56f84060da2ec807a273c3e69f067429e6ac26ca3feda26454a1b3da30"
+        }
+      },
+      {
+        "case": "fixture_source_linkage",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_fixture_source_linkage/EXECUTION.json",
+          "bytes": 2335,
+          "sha256": "a7e3923dad355902ea6e741deb7f543bba9dddf06d2fb725f8a7bc746360a668"
+        }
+      },
+      {
+        "case": "fixture_source_identity",
+        "expected_failure": "Exact historical fixture code, not executed",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_fixture_source_identity/EXECUTION.json",
+          "bytes": 2342,
+          "sha256": "c853fb1769c1c5ffb4ebbf2d3bb0f4cc3e36ebc44957ed4a57f8b8be7889fcd6"
+        }
+      },
+      {
+        "case": "fixture_result_identity",
+        "expected_failure": "Exact historical fixture results",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_fixture_result_identity/EXECUTION.json",
+          "bytes": 2342,
+          "sha256": "737b75732821ca8aa9ab1d9947bc33ce372d75d1af9074abe75daa2ff2650c7b"
+        }
+      },
+      {
+        "case": "fixture_output_linkage",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/runs/mutation_fixture_output_linkage/EXECUTION.json",
+          "bytes": 2336,
+          "sha256": "556887e4e141c713deb0c85c20ca8adb28f1e706dc3977bb317b56d8770a0a02"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 27,
+    "scientific_programs_run_this_integration": 0,
+    "historical_root_scientific_fixtures": 1,
+    "historical_programs_replayed": 0
+  },
+  "scientific_programs_run_this_integration": 0,
+  "historical_root_scientific_fixtures": 1,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Supplied finite computable Lipschitz one-port waveform and positive finite plant; separate mu=m^-3/q=1/m and mu=m^-2/q=sqrt(G) families. Minimal-ceiling n and bounded sufficient Delta are required for the displayed accuracy powers. Keep exposed root-majorant attribution; full-sector inverse and two-excitation corrector, nonscalar counterterms, scalar reserves, bare endpoint costs, all output/reference factors, exact retained marginal, actual release H_P aging and norm-weighted moments. Historical root fixture1 is finite exposed sanity evidence; no replay. Native state/cooling/release/calibration/isolation hardware, full compiler complexity, physical identifications, common caps, permanent stop and reuse remain open. Sole mathematical parent is canonical basis-clock0c3f1b56 with all three proof/review intervals; no additional ancestry theorem imported."
+  ]
+}

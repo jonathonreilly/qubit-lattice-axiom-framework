@@ -1,0 +1,29 @@
+{
+  "note": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "root_degree_D",
+      "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 19188,
+      "end_byte_exclusive": 31871,
+      "bytes": 12683,
+      "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+    },
+    {
+      "name": "separately_attributed_k0_readout",
+      "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 32026,
+      "end_byte_exclusive": 33881,
+      "bytes": 1855,
+      "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+    },
+    {
+      "name": "source_exposed_assessment",
+      "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 34029,
+      "end_byte_exclusive": 66336,
+      "bytes": 32307,
+      "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+    }
+  ]
+}

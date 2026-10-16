@@ -1,0 +1,55 @@
+{
+  "kind": "captured_root_refresh_and_ancestry_metadata",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/48302bf348db0cf8aa46dac36e7155e322e6c4cc00c04137ea94f5af704aa266.json",
+      "bytes": 2920,
+      "sha256": "48302bf348db0cf8aa46dac36e7155e322e6c4cc00c04137ea94f5af704aa266"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/7ee919bfe0e3c1c318d51d7e38c2363e7eb53daee2815800a9223cc48820a8da.json",
+      "bytes": 1582,
+      "sha256": "7ee919bfe0e3c1c318d51d7e38c2363e7eb53daee2815800a9223cc48820a8da"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/375aad4f021790bb4935f6ea5471d4ca96c20dfd85039a143c0c7ed385d1ca40.json",
+      "bytes": 216,
+      "sha256": "375aad4f021790bb4935f6ea5471d4ca96c20dfd85039a143c0c7ed385d1ca40"
+    },
+    "fetch": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/62e87a98350226701e84907a2d4eb2139fc82da073747af35d4660752fc67821.json",
+        "bytes": 1176,
+        "sha256": "62e87a98350226701e84907a2d4eb2139fc82da073747af35d4660752fc67821"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d.blob",
+        "bytes": 121,
+        "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+      }
+    },
+    "inventory": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/44b047f949494c18c3be903863dbc1d086d26c43e931ce927aeb08032e572f01.json",
+        "bytes": 1261,
+        "sha256": "44b047f949494c18c3be903863dbc1d086d26c43e931ce927aeb08032e572f01"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/c4cf329ed0296e683768ea4713149bf684d38dbbfb2176b0a7dc41c34cd37617.blob",
+        "bytes": 18732,
+        "sha256": "c4cf329ed0296e683768ea4713149bf684d38dbbfb2176b0a7dc41c34cd37617"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "scope": "Historical fetch/inventory and base-publication provenance; the observed predecessor PR is Git ancestry only; the canonical controller note and its raw proof/review intervals are the sole mathematical import/evidence."
+}

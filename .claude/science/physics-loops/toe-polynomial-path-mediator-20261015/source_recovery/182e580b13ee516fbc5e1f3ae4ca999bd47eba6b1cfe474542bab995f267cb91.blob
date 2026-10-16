@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-15T19:43:43.464376+00:00",
+  "scope": "Pre-exposure analytical polynomial one-port path-mediator construction",
+  "permitted_science_sources": [
+    "basis_state_clock_comparison/REPORT.md",
+    "single_port_autonomous_root_candidate/DERIVATION.md",
+    "single_port_autonomous_decisive_check/REPORT.md"
+  ],
+  "root_polynomial_candidate_accessed": false,
+  "other_worker_or_new_unpublished_sources_accessed": false,
+  "scientific_programs_run": 0,
+  "model_or_effort_override": false,
+  "delegation": false,
+  "write_scope": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent",
+  "historical_exposure": "Earlier campaign mass-scaled Laplacian/resolvent work was source-exposed; this derivation is independent of the current unseen root polynomial-path candidate, not a first encounter with mass regularization."
+}

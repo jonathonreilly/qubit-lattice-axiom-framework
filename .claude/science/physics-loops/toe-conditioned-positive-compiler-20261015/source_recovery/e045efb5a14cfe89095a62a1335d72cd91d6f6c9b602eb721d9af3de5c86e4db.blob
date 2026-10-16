@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T19:53:48.977426+00:00",
+  "baseRefName": "physics-loop/toe-transverse-field-memory-20261015",
+  "headRefName": "physics-loop/toe-single-port-program-and-controller-20261015",
+  "headRefOid": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "isDraft": false,
+  "number": 9617,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9617",
+  "tree": "8ed4a93cf377480ce87bfc024dd9f371ca13b7c5",
+  "base_head": "e93bc2b057492d0eef909907708871cb1920fdc6",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 136036,
+    "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/single_port_program_and_autonomous_controller_2026_10_15.py",
+    "bytes": 33109,
+    "sha256": "96625427dea6fb727bfe51129765ec0ed087090a09440f293f601eb7b104bc1b"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/PR_BODY.md",
+    "bytes": 3213,
+    "sha256": "f6c52f9bb874d160817afc17dc25e7bcf5462bf6499d0db50ec9a4c3557e2855"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

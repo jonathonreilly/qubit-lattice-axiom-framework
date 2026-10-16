@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/autonomous_compiler_composition_2026_10_15.py
+runner_sha256: 1b688278d4782ce1523fba3b8e173752f4f4e0ef80af8b9690678137a69538c5
+input_fingerprint_sha256: 6630116ce7be7361affb00ecc973dfa98c7877084366f6930f6c1457afcc4db0
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "exact bytes, recovery and captured binding metadata only"}
+per_element: source coefficient text retained; no physical element was executed
+per_site: declared complete lattice interface retained; no hardware test was executed
+per_mode: two mediator families retained separately; no mode simulation was executed
+per_block: exact composition sources and actual binding metadata checked only
+lattice_wide: native preparation, actual suppliers and independent audit remain separate
+metadata_check_counts_only: source bytes and provenance assertions; no scientific proof or retained status
+TOTAL: PASS=804 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-15T18:16:48.066595+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_autonomous_preparation_candidate/DERIVATION.md",
+      "bytes": 31689,
+      "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_preparation_root_review/ACCEPTANCE.md",
+      "bytes": 3948,
+      "sha256": "274119dd43f5ad046a9f532e4d2229150c72fb6f2f00fa3fec6550f69716815e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_mediator_root_review/ACCEPTANCE.md",
+      "bytes": 4763,
+      "sha256": "374139d56c7217ab52c59b1f94fcec8808fc29a1753fadc2428bf39de1009ec4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/DERIVATION.md",
+      "bytes": 33757,
+      "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/FINAL_FREEZE.json",
+      "bytes": 6408,
+      "sha256": "15d6ad5e756548ddd1437624513b0d3b43060ba99a735b8a2ea9036449f7ba4c"
+    }
+  ],
+  "scope": "Exact existing source identities. Unary-cycle analytic clock estimate imported with full hypotheses; old distributed geometry/preparation claims are not imported. Prior pair mediator is technique context. Single-port controllability source is optional conditional composition and still under separate checking.",
+  "root_coverage": "Root authored the new proposal; reread complete required clock sections and pair-mediator algebra/geometry, reused prior full readings at unchanged source identities. Fully read new single-port33757-byte source before this construction. No scientific execution.",
+  "known_pending_single_port_qualifications": "Separate reviewer reports a Pauli-induction wording correction and a sharper endpoint-defect work comparison; final report pending. The new standalone schedule-to-controller theorem does not rely on that controllability proof or work claim.",
+  "scientific_programs_run": 0,
+  "model_override": false,
+  "editable_prompts_changed": []
+}

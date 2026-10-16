@@ -1,0 +1,292 @@
+{
+  "canonical_parent": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "canonical_parent_sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+  "reviewed_body_sha256": {
+    "independent_author": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04",
+    "comparison": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+  },
+  "records": [
+    {
+      "role": "parent_canonical_body_map",
+      "source": "repository/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/BODY_MAP.json",
+      "bytes": 1063,
+      "sha256": "04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a.blob"
+      }
+    },
+    {
+      "role": "parent_source_acceptance",
+      "source": "campaign/conditioned_positive_compiler_root_review/ACCEPTANCE.md",
+      "bytes": 2939,
+      "sha256": "9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d.blob"
+      }
+    },
+    {
+      "role": "parent_source_review_metadata",
+      "source": "campaign/conditioned_positive_compiler_root_review/REVIEW.json",
+      "bytes": 4651,
+      "sha256": "ac640003d9322cb9d890b574ad7a7456ec30e4bf2c6a569f9c7eaf9f2a9afa44",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/ac640003d9322cb9d890b574ad7a7456ec30e4bf2c6a569f9c7eaf9f2a9afa44.blob"
+      }
+    },
+    {
+      "role": "parent_source_acceptance_freeze",
+      "source": "campaign/conditioned_positive_compiler_root_review/FINAL_FREEZE.json",
+      "bytes": 653,
+      "sha256": "e6e1c8e0884b669aff569787685c5b12b1186ae2114428ac04015bb4a89442b8",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/e6e1c8e0884b669aff569787685c5b12b1186ae2114428ac04015bb4a89442b8.blob"
+      }
+    },
+    {
+      "role": "parent_publication_wrapper_review",
+      "source": "campaign/conditioned_positive_compiler_publication_root_review/ACCEPTANCE.json",
+      "bytes": 14055,
+      "sha256": "0cdc01cd5b26bc48f250e5a854d93cb41ed3c135ae1a7dfed24be9d0e7d8c8fd",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/0cdc01cd5b26bc48f250e5a854d93cb41ed3c135ae1a7dfed24be9d0e7d8c8fd.blob"
+      }
+    },
+    {
+      "role": "parent_publication_wrapper_review_freeze",
+      "source": "campaign/conditioned_positive_compiler_publication_root_review/FINAL_FREEZE.json",
+      "bytes": 416,
+      "sha256": "9325a8bef9e59a6d539154deb5d04df7c95c568bb9819f3a2736bb19faa5672b",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/9325a8bef9e59a6d539154deb5d04df7c95c568bb9819f3a2736bb19faa5672b.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_execution",
+      "source": "campaign/runs/conditioned_source_acceptance_2104/EXECUTION.json",
+      "bytes": 1464,
+      "sha256": "baebd00dc3a9e597c36e66a0a8ebc9d3a74c842d371b3ccf5ea8008441e00e21",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/baebd00dc3a9e597c36e66a0a8ebc9d3a74c842d371b3ccf5ea8008441e00e21.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_child_source_at_launch",
+      "source": "campaign/bootstrap/review_conditioned_sources_2104.py",
+      "bytes": 6490,
+      "sha256": "01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_recorder",
+      "source": "campaign/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_stdout",
+      "source": "campaign/runs/conditioned_source_acceptance_2104/stdout",
+      "bytes": 789,
+      "sha256": "c16cda8db86834ee4cc00bd73fe3bc283073bdf38debffb1201c6b46e6eec025",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/c16cda8db86834ee4cc00bd73fe3bc283073bdf38debffb1201c6b46e6eec025.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_stderr",
+      "source": "campaign/runs/conditioned_source_acceptance_2104/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_captured_source",
+      "source": "campaign/runs/conditioned_source_acceptance_2104/executed_source.py",
+      "bytes": 6490,
+      "sha256": "01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/01283fc08f7ed41d1e2525823043773c344f494adebc968069fce4c47a5ee790.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_execution",
+      "source": "campaign/runs/conditioned_publication_review_2114/EXECUTION.json",
+      "bytes": 1474,
+      "sha256": "6115a3e6170855873d90fef2cd85f34dd8fa80e3f791defda585b6139f73abf4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/6115a3e6170855873d90fef2cd85f34dd8fa80e3f791defda585b6139f73abf4.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_child_source_at_launch",
+      "source": "campaign/bootstrap/review_conditioned_publication_2114.py",
+      "bytes": 8544,
+      "sha256": "dc9b107da542e9e3217f723d0d75fff7adf9d60908d2ce33fe22d27433b5bdd4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/dc9b107da542e9e3217f723d0d75fff7adf9d60908d2ce33fe22d27433b5bdd4.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_recorder",
+      "source": "campaign/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_stdout",
+      "source": "campaign/runs/conditioned_publication_review_2114/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_stderr",
+      "source": "campaign/runs/conditioned_publication_review_2114/stderr",
+      "bytes": 364,
+      "sha256": "5b4bfd031c00a6727b4062419ebfe6a14066321d41db80ec0b105031fa54d08d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/5b4bfd031c00a6727b4062419ebfe6a14066321d41db80ec0b105031fa54d08d.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_captured_source",
+      "source": "campaign/runs/conditioned_publication_review_2114/executed_source.py",
+      "bytes": 8544,
+      "sha256": "dc9b107da542e9e3217f723d0d75fff7adf9d60908d2ce33fe22d27433b5bdd4",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/dc9b107da542e9e3217f723d0d75fff7adf9d60908d2ce33fe22d27433b5bdd4.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_execution",
+      "source": "campaign/runs/conditioned_publication_review_2114_v2/EXECUTION.json",
+      "bytes": 1486,
+      "sha256": "58be88b6b396bb2cb30017819e083acf6932a1ed43b51ccebdb3d7a768887c4a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/58be88b6b396bb2cb30017819e083acf6932a1ed43b51ccebdb3d7a768887c4a.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_child_source_at_launch",
+      "source": "campaign/bootstrap/review_conditioned_publication_2114_v2.py",
+      "bytes": 8900,
+      "sha256": "f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_recorder",
+      "source": "campaign/run.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_stdout",
+      "source": "campaign/runs/conditioned_publication_review_2114_v2/stdout",
+      "bytes": 607,
+      "sha256": "51ffee6b82f62b65ae08940ad05b60cac4c39fe83588ccc0b2d3783ec949506f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/51ffee6b82f62b65ae08940ad05b60cac4c39fe83588ccc0b2d3783ec949506f.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_stderr",
+      "source": "campaign/runs/conditioned_publication_review_2114_v2/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      }
+    },
+    {
+      "role": "parent_actual_metadata_captured_source",
+      "source": "campaign/runs/conditioned_publication_review_2114_v2/executed_source.py",
+      "bytes": 8900,
+      "sha256": "f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb.blob"
+      }
+    },
+    {
+      "role": "parent_actual_regular_publication",
+      "source": "campaign/publication_integration/conditioned_positive_compiler/PUBLICATION.json",
+      "bytes": 1588,
+      "sha256": "1c41a347201995b15a4ebf59e96c0df24ecf235732039e6a0abea77098284b14",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/1c41a347201995b15a4ebf59e96c0df24ecf235732039e6a0abea77098284b14.blob"
+      }
+    },
+    {
+      "role": "parent_actual_attachment",
+      "source": "campaign/publication_integration/conditioned_positive_compiler/ATTACHMENT.json",
+      "bytes": 178,
+      "sha256": "fe292db3590a1c719f081ca61bf75c82a549af8749d9011931a96ab6b0e95f0d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/source_recovery/fe292db3590a1c719f081ca61bf75c82a549af8749d9011931a96ab6b0e95f0d.blob"
+      }
+    }
+  ],
+  "gzip_reviews": [],
+  "publication": {
+    "number": 9622,
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9622",
+    "state": "OPEN",
+    "isDraft": false,
+    "headRefOid": "70676cfdaa37280254c95e55c8d550816daf0040",
+    "headRefName": "physics-loop/toe-conditioned-positive-compiler-20261015",
+    "tree": "fad5ca3afbe33a9a2914a129d7e44f8c9bde1383",
+    "publication_record": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/conditioned_positive_compiler/PUBLICATION.json",
+      "bytes": 1588,
+      "sha256": "1c41a347201995b15a4ebf59e96c0df24ecf235732039e6a0abea77098284b14"
+    },
+    "attachment_record": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/conditioned_positive_compiler/ATTACHMENT.json",
+      "bytes": 178,
+      "sha256": "fe292db3590a1c719f081ca61bf75c82a549af8749d9011931a96ab6b0e95f0d"
+    },
+    "scope": "Actual parent publication only; this claim own future base and publication remain null"
+  },
+  "scope": "Exact parent bodies and actual supplied acceptance/publication evidence; provenance is not another theorem edge"
+}

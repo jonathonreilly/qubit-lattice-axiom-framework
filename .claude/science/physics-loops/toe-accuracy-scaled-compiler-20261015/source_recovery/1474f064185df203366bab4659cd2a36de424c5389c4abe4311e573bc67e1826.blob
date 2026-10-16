@@ -1,0 +1,48 @@
+from pathlib import Path
+import datetime, hashlib, json
+N=Path(__file__).resolve().parents[1]
+D=N/'accuracy_scaled_compiler_decisive_check'
+O=N/'accuracy_scaled_compiler_root_review'
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):return json.loads(p.read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def write(p,v):
+ assert not p.exists();p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,indent=2)+'\n')
+assert pin(D/'FINAL_FREEZE.json')['sha256']=='2e406f3b743b729ed2bfa33833e4e51edce68c429ea453826615ab39d07aa579'
+f=read(D/'FINAL_FREEZE.json');assert len(f['members'])==44
+for r in f['members']:same(D/r['path'],r)
+assert {str(p.relative_to(D)) for p in D.rglob('*') if p.is_file()}=={r['path'] for r in f['members']}|{'FINAL_FREEZE.json'}
+assert pin(D/'REPORT.md')['sha256']=='c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8'
+m=read(D/'SOURCE_MANIFEST.json');assert len(m['sources'])==26 and m['source_blobs']==25
+for r in m['sources']:same(Path(r['path']),r);same(D/r['recovery'],r)
+candidate=N/'accuracy_scaled_compiler_root_candidate';c=read(candidate/'PROPOSAL_FREEZE.json')
+for r in c['files']:same(candidate/r['path'],r)
+assert pin(candidate/'DERIVATION.md')['sha256']=='6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b'
+sharpening=N/'accuracy_scaled_compiler_root_readout/READOUT.md'
+assert pin(sharpening)['sha256']=='899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5'
+receipts=[]
+for name in ('capture','verify'):
+ p=D/'metadata_runs'/name/'EXECUTION.json';r=read(p)
+ assert r['exit_code']==0 and r['scientific_programs_run']==0 and not r['timed_out']
+ for k in ('child_source_at_launch','source_capture','recorder','stdout','stderr'):same(Path(r[k]['path']),r[k])
+ assert Path(r['stderr']['path']).read_bytes()==b'';receipts.append(pin(p))
+parent=N/'conditioned_positive_compiler_root_review/ACCEPTANCE.md'
+assert pin(parent)['sha256']=='9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d'
+utc=datetime.datetime.now(datetime.timezone.utc).isoformat()
+text='''# Qualified accuracy-scaled compiler source acceptance
+
+Root accepts the frozen degree-D construction 6cae05fe and separately attributed k0 sharpening 899a28b9 as conditional mathematical source results, with the exposed assessment c9c09872 and its explicit sufficient constants. This decision follows complete reading of all ten assessment sections and exposure statement, reuse of the unchanged complete candidate/readout and accepted parent arguments, and inspection of the changed metadata helpers. The supplied polynomial-coordinate data must be computable and consistent with the actual fixed augmented primitive family.
+
+The load-bearing estimate is coefficient extraction from exact interpolation: max_j |p(Lambda*x_j)| >= a*Lambda^k0/A_V. The original degree bound weakens this to Lambda^D; the sharpening retains k0 without asserting that any smaller coefficient vanishes. The strict b/8 enclosure and b/2 acceptance test has a witness margin. Singular-value products then supply the actual coordinate-conditioning bound. D still determines the D+1 node set and its Vandermonde constants.
+
+The fixed supplied certificate gives uniform explicit repetition, pulse, recurrence, time and ramp bounds after substitution. For nu=D or separately nu=k0, R=ell*(2nu+1) and P=R+2d*(R+1); these are sufficient recipes with the displayed ceilings, not lower bounds or bounds for arbitrary inflated choices. The full actual-time comparator is exp(-i*chi(T+s))*exp(-isH)*W*exp(-iTH), for every retained plant/reference state and the fixed finite window. The selected coupling pays the window drift, while all implemented defects share one total integrated allowance. No lambda*T smallness premise is used.
+
+The certificate/tree list, coefficient lower bound, dimension, uniform matrix bounds, time unit, port strength and window are fixed supplied data. Tree/certificate discovery, arbitrary computable-oracle runtime, native controls and timing, installation/isolation, physical energy or detector identification, common caps, permanent stopping and reuse remain open. Whole-generator positivity requires a peak reserve; actual work requires endpoint control. Literal old-block positivity is a separate decomposition contract. Memory consequences require the actual aged-input premise. Later autonomous substitution must reprice duration, slew, controller state supply, growing norms and moments.
+
+The assessment is source-exposed, from the same model and inherited parent machinery. Its explicit constants are an exposed rederivation, not a protected discovery. No compiler search, scientific program, numerical fixture, hardware test, Lean proof or independent retained audit was executed here. The metadata process checks exact source/recovery/receipt identities and records this analytic decision; it does not prove the theorem. Original pending wording, counterexamples and the two recorded read-only access errors remain unchanged. Publication-wrapper interpretation and actual regular-PR integration remain separate pending work. No editable prompt, physical axiom, audit verdict or main branch was changed.
+'''
+O.mkdir(exist_ok=False);(O/'ACCEPTANCE.md').write_text(text)
+r={'utc':utc,'decision':'Qualified conditional source acceptance, original and separately attributed sharpening','candidate':pin(candidate/'DERIVATION.md'),'sharpening':pin(sharpening),'assessment':pin(D/'REPORT.md'),'assessment_freeze':pin(D/'FINAL_FREEZE.json'),'parent_acceptance':pin(parent),'acceptance':pin(O/'ACCEPTANCE.md'),'complete_report_sections_read':10,'source_rows_verified':26,'recovery_blobs':25,'frozen_members_verified':44,'metadata_receipts':receipts,'source_exposed_check':True,'scientific_programs_run':0,'publication_wrapper_accepted':False,'regular_publication':None,'retained_audit':False,'editable_prompt_files_changed':[]}
+write(O/'REVIEW.json',r);write(O/'FINAL_FREEZE.json',{'utc':utc,'files':[pin(O/'ACCEPTANCE.md'),pin(O/'REVIEW.json')],'scientific_programs_run':0})
+print(json.dumps({'acceptance':pin(O/'ACCEPTANCE.md'),'review':pin(O/'REVIEW.json'),'freeze':pin(O/'FINAL_FREEZE.json')}))

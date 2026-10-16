@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/DERIVATION.md",
+      "bytes": 33757,
+      "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_decisive_check/REPORT.md",
+      "bytes": 27426,
+      "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/single_port_program_and_controller/PUBLICATION.json",
+      "bytes": 1620,
+      "sha256": "e045efb5a14cfe89095a62a1335d72cd91d6f6c9b602eb721d9af3de5c86e4db"
+    }
+  ],
+  "scope": "Exact inherited compiler and assessment. Root reused prior complete readings; relevant augmented-aging/positive-time/smoothing sections reread. New protected compiler proof not opened.",
+  "scientific_programs_run": 0,
+  "pre_freeze_corrections": [
+    "Use rational numerical certificate bounds and rational exponential majorants so repetition ceilings are computable without exact real-equality tests.",
+    "Use q=ceil(16L/eta) as a fully rational recurrence ceiling."
+  ]
+}

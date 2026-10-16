@@ -1,0 +1,29 @@
+{
+  "status": "actual_frozen_comparison_and_source_acceptance",
+  "comparison": {
+    "path": "conditioned_positive_compiler_comparison/REPORT.md",
+    "bytes": 26979,
+    "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+  },
+  "comparison_freeze": {
+    "path": "conditioned_positive_compiler_comparison/FINAL_FREEZE.json",
+    "bytes": 7548,
+    "sha256": "db7b2b696bbbb59e09f9b5c9bf41df61f0f95f66cbe31bc357ed363929bc64e0"
+  },
+  "acceptance": {
+    "path": "conditioned_positive_compiler_root_review/ACCEPTANCE.md",
+    "bytes": 2939,
+    "sha256": "9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d"
+  },
+  "acceptance_freeze": {
+    "path": "conditioned_positive_compiler_root_review/FINAL_FREEZE.json",
+    "bytes": 653,
+    "sha256": "e6e1c8e0884b669aff569787685c5b12b1186ae2114428ac04015bb4a89442b8"
+  },
+  "root_receipts": [
+    "runs/conditioned_source_acceptance_2104/EXECUTION.json"
+  ],
+  "git_base": null,
+  "publication": null,
+  "refresh": null
+}

@@ -1,0 +1,41 @@
+from pathlib import Path
+import json,datetime,hashlib
+N=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309');A=N/'single_port_autonomous_root_candidate';R=N/'single_port_autonomous_decisive_check';D=N/'single_port_autonomous_root_review';D.mkdir(exist_ok=False)
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def read(p):return json.loads(p.read_text())
+freezes=[]
+for p,h in [(A/'PROPOSAL_FREEZE.json','f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10'),(R/'FINAL_FREEZE.json','6d0eb6e19a96167e3bb967a16f3a38f80daf2077563ac98195631c4622be6fe4')]:
+ assert pin(p)['sha256']==h
+ for r in read(p)['files']:
+  q=Path(r['path']);check(q if q.is_absolute() else p.parent/q,r)
+ freezes.append({'freeze':pin(p),'members':len(read(p)['files'])})
+m=read(R/'SOURCE_MANIFEST.json')
+for row in m['sources']:check(Path(row['path']),row);check(R/row['recovery'],row)
+receipts=[]
+for phase in ('capture','verification'):
+ p=R/'metadata_runs'/phase/'EXECUTION.json';r=read(p);assert r['exit_code']==0 and r['timed_out'] is False and r['scientific_programs_run']==0
+ for k in ('child_source_at_launch','archived_child_source','recorder_at_launch','stdout','stderr'):check(Path(r[k]['path']),r[k])
+ receipts.append(pin(p))
+text='''# Root conditional acceptance: autonomous single-port NN controller
+
+The complete root candidate0e91f936 and separate source-exposed analytic review52eb2e2d support the finite same-time schedule-to-controller theorem. Root authored the candidate and read the entire new review, all current metadata helpers and relevant records; exact source/recovery/receipt identities have been refreshed. No mathematical repair to the candidate is required. This decision gives conditional source acceptance only, not an independent retained audit or native physical realization.
+
+The proof uses the exact accepted unary-clock argumentc7a with both Dyson tails, ordinary-band alias guard, actual free-clock phase and full variation/dispersion costs. Positive step approximation fits that existing domain at the complete horizon tau; no unproved arbitrary-BV extension is used. The explicit exterior clock/auxiliary graph retains every old coordinate and requires one additional plant port edge. The auxiliary penalty has a full-sector gap by positive local blocks, so its complete reduced resolvent also controls the two-excitation correction.
+
+The q(XX+YY) port and complex clock sources give Sigma=C0-W only on the nominal one-head clock sector. C0 includes the essential positive non-scalar4q^2 gamma_a n_p term. Every counterterm and reserve is actually installed and priced. The finite bare-input residual uses Z=J-epsilon X1+epsilon^2Y2, both endpoint differences, and all noncommuting background terms; no dressed state, global spectral approximation or discarded leakage is substituted. The resulting uniform isometry error is eta_step+eta_clk+eta_med. Full retained trace error is at most twice that, including arbitrary plant/reference inputs and all new clock/auxiliary outputs.
+
+The complete static generator is positive after its explicit R_pos reserve. The new blocks have local positive decompositions. H_P itself is only required positive as a whole finite NN generator; a stronger consumer demanding separately positive old/faulty blocks must supply the additional decomposition/reserves. The full normalized scalar, source norms, physical clock norm, penalty and initial mean/variance are retained. Leakage close to vacuum does not establish returned energy, reusable preparation, or small energy variance. Integrated physical generator defects, all undeclared edges, initial full-state error and actual timing each keep their full-space prices; faulty positivity and work require their separate peak/endpoint/variation contracts.
+
+The external compiler source is separately accepted at bbe2e9c9 with the corrected double-commutator step, endpoint-or-variation work contract, nonempty plant, complete computable background and determinant lift. Its supplied smooth waveform can be substituted here with H_P=H+rI+lambda J. The endpoint/window target remains exp(-isH) W exp(-iTH) at the actual time T+s, with phase R_pos(T+s)+chi(T+s). Compilation and autonomous approximation errors add. This does not assert the old distributed controller's entire intermediate trajectory or that every weak lambda is controllable. Any reset/compression corollary retains its explicit aged-memory premise.
+
+Preserve all analytic shortcut witnesses: omitted n_p counterterm, extra multi-head cross terms, one-XX-axis failure, lost a_j scalar samples, and bare-versus-dressed initialization. The pure coherent clock and auxiliary vacuum are independent supplied inputs at runtime start. Positivity and static geometry do not prepare them. The optional initial imperfect-state interface is a comparison bound, not a native source. The clock and mediator are retained outputs and are not proved restored for reuse.
+
+This review used the same selected model/effort, source exposure and shared earlier machinery. Its load-bearing reconstruction is analytic; two actual metadata processes and their complete source/stream evidence were checked, with zero scientific executions, numerical simulations, historical science replays or formal proof checks. The compiler acceptance arrived after the standalone assessment and remains a separately attributed dependency. No physical axioms, editable prompts, audit verdicts or model settings changed.
+
+Supported progress: ordinary nearest-neighbor two-qubit static support now realizes the supplied one-port drive, within finite unbounded resource allowances and the prepared-input contract. Native state supply and initialization/installation, microscopic energy/work identification, a finite detector/readout mechanism, common hardware/temperature/precision caps, efficient compilation and recycling remain open. The separate new Gibbs-parent research is not imported or accepted by this decision.
+'''
+(D/'ACCEPTANCE.md').write_text(text)
+x={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'decision':'Standalone conditional static nearest-neighbor single-port controller accepted; qualified external compiler composition supported. Native initialization and physical-identification obligations remain open.','acceptance':pin(D/'ACCEPTANCE.md'),'source':pin(A/'DERIVATION.md'),'review':pin(R/'REPORT.md'),'freeze_checks':freezes,'source_rows':len(m['sources']),'actual_metadata_receipts':receipts,'root_full_read':True,'external_compiler_acceptance':pin(N/'single_port_program_root_review/ACCEPTANCE.md'),'scientific_programs_run':0,'historical_programs_replayed':0,'retained_audit':False,'editable_prompt_files_changed':[]}
+(D/'VERIFICATION.json').write_text(json.dumps(x,indent=2)+'\n');(D/'FINAL_FREEZE.json').write_text(json.dumps({'utc':x['utc'],'files':[pin(p) for p in sorted(D.iterdir()) if p.is_file()]},indent=2)+'\n');print(json.dumps({'acceptance':pin(D/'ACCEPTANCE.md'),'freeze':pin(D/'FINAL_FREEZE.json'),'verified_members':[r['members'] for r in freezes]}))

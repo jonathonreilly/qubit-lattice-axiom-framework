@@ -1,0 +1,27 @@
+"""Bounded metadata validation only; does not execute or prove the new composition."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json
+D=Path(__file__).resolve().parent;N=D.parent
+def read(p):return json.loads(p.read_text())
+def pin(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def same(p,r):
+    q=pin(p);assert all(q[k]==r[k] for k in ['bytes','sha256']),(str(p),q)
+x=read(D/'SOURCE_MANIFEST.json')
+assert x['scientific_programs_run']==0 and x['source_exposed'] and not x['new_root_exponent_calculation_seen']
+for r in x['sources']:same(Path(r['path']),r);same(D/r['recovery'],r)
+same(Path(x['assembled_publication_identity_only']['path']),x['assembled_publication_identity_only'])
+seals=[]
+for folder,key in [('accuracy_scaled_compiler_decisive_check','members'),('accuracy_scaled_compiler_root_review','files'),('polynomial_path_mediator_root_review','files')]:
+    f=read(N/folder/'FINAL_FREEZE.json')
+    for r in f[key]:
+        p=Path(r['path']);same(p if p.is_absolute() else N/folder/p,r)
+    seals.append({'path':str(N/folder/'FINAL_FREEZE.json'),'members':len(f[key])})
+c=read(D/'metadata_runs/capture/EXECUTION.json');assert c['exit_code']==0 and c['scientific_programs_run']==0 and not c['timed_out']
+for key in ['child_source_at_launch','source_capture','recorder','stdout','stderr']:same(Path(c[key]['path']),c[key])
+for name in ['capture_sources.py','verify_metadata.py','record_metadata.py','seal.py']:ast.parse((D/name).read_text(),filename=name)
+for name in ['DERIVATION.md','EXPOSURE.md']:
+    b=(D/name).read_bytes();assert b.endswith(b'\n') and not b.endswith(b'\n\n');b.decode('utf-8')
+out={'utc':datetime.now(timezone.utc).isoformat(),'derivation':pin(D/'DERIVATION.md'),'source_rows':len(x['sources']),'source_blobs':x['source_blobs'],'seals_verified':seals,'metadata_only':True,'scientific_programs_run':0,'limits':'Exact source/recovery identity, selected seals, syntax and actual capture receipt only. No numerical calculation or independent analytic verification.'}
+(D/'VERIFICATION.json').write_text(json.dumps(out,indent=2,sort_keys=True)+'\n');print(json.dumps(out,sort_keys=True))

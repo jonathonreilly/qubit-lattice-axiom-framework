@@ -1,0 +1,156 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T20:10:53.644887+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+  "parent_sha256": {
+    "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542"
+  },
+  "source_acceptances": {
+    "local_gibbs_controller": "c2e7680d5a133ca950483f07036e7ef5879871a83e439c490c4bd1c919833537"
+  },
+  "git_base": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "base_branch": "physics-loop/toe-single-port-program-and-controller-20261015",
+  "planned_feature_branch": "physics-loop/toe-local-gibbs-controller-source-20261015",
+  "observed_parent_prs": {
+    "stack": {
+      "baseRefName": "physics-loop/toe-transverse-field-memory-20261015",
+      "headRefName": "physics-loop/toe-single-port-program-and-controller-20261015",
+      "headRefOid": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+      "isDraft": false,
+      "number": 9617,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9617"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "raw_bodies": [
+    {
+      "name": "independent_normalized",
+      "container": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 23594,
+      "end_byte_exclusive": 55160,
+      "bytes": 31566,
+      "sha256": "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40"
+    },
+    {
+      "name": "root_unnormalized",
+      "container": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 55300,
+      "end_byte_exclusive": 71142,
+      "bytes": 15842,
+      "sha256": "5a278bbd0f96eff93a2c506573898a9cb4b8cc2ffd8ac5d42d4ea2bcd17e712e"
+    },
+    {
+      "name": "source_exposed_comparison",
+      "container": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 71290,
+      "end_byte_exclusive": 102731,
+      "bytes": 31441,
+      "sha256": "e36f9dd364a5846d66d2bc1a2e2529e39cfc5cff83b25b1a0e17bdfe1a87894c"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42367,
+      "sha256": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542",
+      "claim_id": "positive_unary_cycle_clock_bounded_theorem_note_2026-10-14",
+      "accepted_body_intervals": [
+        {
+          "name": "unary_cycle_proof",
+          "container": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "start_byte_inclusive": 8789,
+          "end_byte_exclusive": 41808,
+          "bytes": 33019,
+          "sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "unary_cycle_proof"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/07fe994aa80009c71c6d868c3b3f48e1b0d1bed3ad60e7e639cd0ad2d1f5a8ce.json",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/2efa0c4821c9d3ccc01bf61afbe537c10a16b2ffc5029d93db9fa56e8dc978bd.py",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/bf8a0ef9aeea39ee2fa902ae70cd5c5a1c3e4e514f4652d7756acfc0e8454c03.py",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/c1a78b657c4d41c2b18bd1e9d90a6705cd4446abc170874dffb23e104723da28.json",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d4dd8e003d0870bf93a6a8d1ce5b07f82e1010b1d5eeaeb06f9c5d30c577a6cd.blob",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d54a4a8b37085ed737df451e55e0f202d5b0f95d8287a4ceccfd88148b2b6676.json",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/e729fa28ed25d833e54c95d828be5bec6fee93711692b0e39352aaadfb7ce440.blob",
+    ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/f48dc581b628b01203bae933c8d768d12f2116e6207cd8e702bf06a3afa11c14.json"
+  ],
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/c1a78b657c4d41c2b18bd1e9d90a6705cd4446abc170874dffb23e104723da28.json",
+    "bytes": 31461,
+    "sha256": "c1a78b657c4d41c2b18bd1e9d90a6705cd4446abc170874dffb23e104723da28"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/07fe994aa80009c71c6d868c3b3f48e1b0d1bed3ad60e7e639cd0ad2d1f5a8ce.json",
+      "bytes": 11059,
+      "sha256": "07fe994aa80009c71c6d868c3b3f48e1b0d1bed3ad60e7e639cd0ad2d1f5a8ce"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d54a4a8b37085ed737df451e55e0f202d5b0f95d8287a4ceccfd88148b2b6676.json",
+      "bytes": 1449,
+      "sha256": "d54a4a8b37085ed737df451e55e0f202d5b0f95d8287a4ceccfd88148b2b6676"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/d4dd8e003d0870bf93a6a8d1ce5b07f82e1010b1d5eeaeb06f9c5d30c577a6cd.blob",
+      "bytes": 593,
+      "sha256": "d4dd8e003d0870bf93a6a8d1ce5b07f82e1010b1d5eeaeb06f9c5d30c577a6cd"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/2efa0c4821c9d3ccc01bf61afbe537c10a16b2ffc5029d93db9fa56e8dc978bd.py",
+      "bytes": 6948,
+      "sha256": "2efa0c4821c9d3ccc01bf61afbe537c10a16b2ffc5029d93db9fa56e8dc978bd"
+    }
+  },
+  "base_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/f48dc581b628b01203bae933c8d768d12f2116e6207cd8e702bf06a3afa11c14.json",
+      "bytes": 1761,
+      "sha256": "f48dc581b628b01203bae933c8d768d12f2116e6207cd8e702bf06a3afa11c14"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/bf8a0ef9aeea39ee2fa902ae70cd5c5a1c3e4e514f4652d7756acfc0e8454c03.py",
+      "bytes": 45867,
+      "sha256": "bf8a0ef9aeea39ee2fa902ae70cd5c5a1c3e4e514f4652d7756acfc0e8454c03"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/e729fa28ed25d833e54c95d828be5bec6fee93711692b0e39352aaadfb7ce440.blob",
+      "bytes": 328,
+      "sha256": "e729fa28ed25d833e54c95d828be5bec6fee93711692b0e39352aaadfb7ce440"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T20:10:53.644939+00:00",
+    "reviewed_source_sha256": "c1a78b657c4d41c2b18bd1e9d90a6705cd4446abc170874dffb23e104723da28"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "stack_mathematics_imported": false,
+  "retained_audit": false
+}

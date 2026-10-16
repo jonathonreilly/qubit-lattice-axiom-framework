@@ -1,0 +1,11 @@
+# Bound basis-clock handoff
+
+Scientific source acceptance 174ff7dc and actual publication review eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708 are distinct. Three original bodies remain exact. Current ACTUAL_BINDING records the separately selected PR 9618 stack base, actual root review/seal/source/streams and live base observation. Historical PUBLICATION_STATE nulls remain unchanged; binding alone certifies no execution or publication.
+
+The sole mathematical parent is canonical controller note 9b08b7a7. Its complete controller proof 0e91f936 occupies [79110,103180); its separate assessment 52eb2e2d occupies [103344,136036). Both are raw byte intervals in one canonical input, with no gzip parent. The general exact-old-marginal g(delta) lemma is proved locally. The stack supplies no Markov, Gibbs-delivery or polynomial-mediator premise.
+
+Keep the declared geometric edge count, the exposed positive-edge substitution and its changed phase/norm/scalar/mean/F1/F2, the marginal 2delta versus full joint g(delta) distinction, and the exact unconditioned old/reference marginal. Every plant, clock, auxiliary and reference output remains. The positive one-port completion retains the actual n_p counterterm, full auxiliary inverse and two-excitation corrector, both endpoint corrections and whole-space positivity/fault bounds. Whole-positive old H_P does not imply positive old blocks.
+
+Preparation, known basis/energy coherence, actual release duration and H_P aging, work/variation, growing-norm moment errors, whole-lifetime isolation and potentially exponential mediator costs remain supplied or explicitly priced. No native cooling, common cap, permanent halt, efficient synthesis, detector/readout or restoration/recycling is proved.
+
+Root must inspect the full generated canonicalization diff, including all three live interval indexes, before installation. Execute actual source-integrity/cache, semantic provenance mutations, focused compatibility, exact one-node/one-edge graph preservation and exact staging. Create a regular PR and immediately attach its URL. Full current-main/cumulative-stack landing review and independent retained audit remain separate. No new science execution or historical replay is introduced.

@@ -1,0 +1,173 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T21:27:11.319048+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+  "parent_sha256": {
+    "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e"
+  },
+  "source_acceptances": {
+    "conditioned_compiler": "9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d"
+  },
+  "git_base": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+  "base_branch": "physics-loop/toe-polynomial-path-mediator-20261015",
+  "planned_feature_branch": "physics-loop/toe-conditioned-positive-compiler-20261015",
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-basis-state-clock-20261015",
+      "headRefName": "physics-loop/toe-polynomial-path-mediator-20261015",
+      "headRefOid": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+      "isDraft": false,
+      "number": 9621,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9621"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+  "raw_bodies": [
+    {
+      "name": "root_author",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20853,
+      "end_byte_exclusive": 39049,
+      "bytes": 18196,
+      "sha256": "2de387eb501aa8ead91afa1f5a26f7d3a0bbf11e51285d99786715152ad5b6d6"
+    },
+    {
+      "name": "independent_author",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 39210,
+      "end_byte_exclusive": 70080,
+      "bytes": 30870,
+      "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+    },
+    {
+      "name": "comparison",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 70233,
+      "end_byte_exclusive": 97212,
+      "bytes": 26979,
+      "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 136036,
+      "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+      "claim_id": "single_port_program_and_autonomous_controller_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "compiler_author",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 17605,
+          "end_byte_exclusive": 51362,
+          "bytes": 33757,
+          "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "compiler_author"
+      ],
+      "review_evidence": [
+        {
+          "name": "compiler_assessment",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 51524,
+          "end_byte_exclusive": 78950,
+          "bytes": 27426,
+          "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+        }
+      ],
+      "role": "direct_mathematical_parent",
+      "import_scope": "Fixed full-plant geometry, positive NN path, one-port alphabet and qualified augmented actual-aging compiler context. The new quantitative recipes are proved in the three preserved bodies; autonomous controller, clock, memory and other stack milestones are not mathematical imports."
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/0cdc01cd5b26bc48f250e5a854d93cb41ed3c135ae1a7dfed24be9d0e7d8c8fd.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/137a053a187876c9540c9a2f3efcc60d03af6cb2b5da28398c86b86d8981e3fa.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/283c0c87214ed8fa4d863ce217026f306c104ca011ba9868d82d4e3ff42e5f54.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/4473e20fa0b91406fe1c8706dd906143ceae6ba6dbb6eedaf700c47cbc08521c.blob",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/51ffee6b82f62b65ae08940ad05b60cac4c39fe83588ccc0b2d3783ec949506f.blob",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/58be88b6b396bb2cb30017819e083acf6932a1ed43b51ccebdb3d7a768887c4a.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/9325a8bef9e59a6d539154deb5d04df7c95c568bb9819f3a2736bb19faa5672b.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/b6b640a56c07a0a807e9c06ee4e56bae223b187a65ced63e07da60cb13e880ef.py",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb.py"
+  ],
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/137a053a187876c9540c9a2f3efcc60d03af6cb2b5da28398c86b86d8981e3fa.json",
+    "bytes": 87429,
+    "sha256": "137a053a187876c9540c9a2f3efcc60d03af6cb2b5da28398c86b86d8981e3fa"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/0cdc01cd5b26bc48f250e5a854d93cb41ed3c135ae1a7dfed24be9d0e7d8c8fd.json",
+      "bytes": 14055,
+      "sha256": "0cdc01cd5b26bc48f250e5a854d93cb41ed3c135ae1a7dfed24be9d0e7d8c8fd"
+    },
+    "review_freeze": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/9325a8bef9e59a6d539154deb5d04df7c95c568bb9819f3a2736bb19faa5672b.json",
+      "bytes": 416,
+      "sha256": "9325a8bef9e59a6d539154deb5d04df7c95c568bb9819f3a2736bb19faa5672b"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/58be88b6b396bb2cb30017819e083acf6932a1ed43b51ccebdb3d7a768887c4a.json",
+      "bytes": 1486,
+      "sha256": "58be88b6b396bb2cb30017819e083acf6932a1ed43b51ccebdb3d7a768887c4a"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/51ffee6b82f62b65ae08940ad05b60cac4c39fe83588ccc0b2d3783ec949506f.blob",
+      "bytes": 607,
+      "sha256": "51ffee6b82f62b65ae08940ad05b60cac4c39fe83588ccc0b2d3783ec949506f"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb.py",
+      "bytes": 8900,
+      "sha256": "f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb"
+    }
+  },
+  "base_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/283c0c87214ed8fa4d863ce217026f306c104ca011ba9868d82d4e3ff42e5f54.json",
+      "bytes": 1778,
+      "sha256": "283c0c87214ed8fa4d863ce217026f306c104ca011ba9868d82d4e3ff42e5f54"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/b6b640a56c07a0a807e9c06ee4e56bae223b187a65ced63e07da60cb13e880ef.py",
+      "bytes": 46288,
+      "sha256": "b6b640a56c07a0a807e9c06ee4e56bae223b187a65ced63e07da60cb13e880ef"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/4473e20fa0b91406fe1c8706dd906143ceae6ba6dbb6eedaf700c47cbc08521c.blob",
+      "bytes": 312,
+      "sha256": "4473e20fa0b91406fe1c8706dd906143ceae6ba6dbb6eedaf700c47cbc08521c"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T21:27:11.319107+00:00",
+    "reviewed_source_sha256": "137a053a187876c9540c9a2f3efcc60d03af6cb2b5da28398c86b86d8981e3fa"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "autonomous_clock_imported": false,
+  "retained_audit": false
+}

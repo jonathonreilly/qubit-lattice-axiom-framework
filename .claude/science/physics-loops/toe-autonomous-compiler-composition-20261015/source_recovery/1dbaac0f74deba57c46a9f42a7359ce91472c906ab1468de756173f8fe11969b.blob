@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-15T21:21:41.541190+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/DERIVATION.md",
+      "bytes": 7415,
+      "sha256": "f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/SOURCE_PINS.json",
+      "bytes": 2382,
+      "sha256": "9bcd36124fec16a5d03783f3f4a3e48c09d248d4327760cc1f92a5430f91fbd9"
+    }
+  ],
+  "status": "Provisional root composition candidate, independent comparison pending",
+  "scientific_programs_run": 0
+}

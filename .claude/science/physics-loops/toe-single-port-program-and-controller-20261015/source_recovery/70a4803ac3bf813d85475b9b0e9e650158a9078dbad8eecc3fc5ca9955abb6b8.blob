@@ -1,0 +1,7 @@
+# Actual review scope
+
+This plan was written after reading the complete current candidate and the complete original unary-clock argument. It is not a pre-exposure registration. No scientific execution is currently needed.
+
+Reconstruct the vacuum Schur complement with operator-valued sources; check the complete two-excitation resolvent and a bare-input Duhamel estimate; derive the moment identity directly by projecting KJ onto orthogonal auxiliary sectors. Verify the explicit lattice embedding and all counted supports. Match the finite positive step approximation to the exact accepted unary-clock domain, preserving both Dyson tails, strict nonaliasing, sine dispersion, clock phase and unchanged background. Test the omitted counterterm, a multi-head clock, dropped scalar samples and bare versus dressed initialization as analytic failure routes. Keep the supplied-waveform theorem separate from the not-yet-sealed external controllability source.
+
+No numeric fixture is predeclared: the load-bearing risks are resolved by finite algebra and operator estimates unless a specific unresolved issue emerges. Metadata hashing/recording does not count as a scientific run or a proof.

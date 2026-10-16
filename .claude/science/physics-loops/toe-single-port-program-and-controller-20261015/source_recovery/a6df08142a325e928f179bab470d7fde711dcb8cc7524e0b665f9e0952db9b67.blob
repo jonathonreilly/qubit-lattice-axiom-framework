@@ -1,0 +1,92 @@
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+O = Path(__file__).resolve().parent
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+
+def main():
+    assert len(sys.argv) == 3
+    phase, script_name = sys.argv[1:]
+    assert phase in ('capture', 'verification')
+    assert script_name == {'capture': 'capture_sources.py', 'verification': 'verify_metadata.py'}[phase]
+    assert not (O / 'FINAL_FREEZE.json').exists(), 'Frozen output is immutable'
+    source = O / script_name
+    run = O / 'metadata_runs' / phase
+    run.mkdir(parents=True, exist_ok=False)
+    source_pin = pin(source)
+    recorder_pin = pin(Path(__file__).resolve())
+    (run / 'executed_source.py').write_bytes(source.read_bytes())
+    argv = [sys.executable, str(source)]
+    started = datetime.now(timezone.utc).isoformat()
+    start = time.monotonic()
+    timed_out = False
+    try:
+        result = subprocess.run(argv, cwd=O, capture_output=True, timeout=60)
+        out, err, returncode = result.stdout, result.stderr, result.returncode
+    except subprocess.TimeoutExpired as exc:
+        out, err, returncode = exc.stdout or b'', exc.stderr or b'', 124
+        timed_out = True
+    (run / 'stdout').write_bytes(out)
+    (run / 'stderr').write_bytes(err)
+    receipt = {
+        'schema': 'bounded-metadata-execution-v1', 'phase': phase,
+        'argv': argv, 'cwd': str(O), 'start_utc': started,
+        'end_utc': datetime.now(timezone.utc).isoformat(),
+        'elapsed_seconds': time.monotonic() - start,
+        'timeout_seconds': 60, 'timed_out': timed_out, 'exit_code': returncode,
+        'child_source_at_launch': source_pin,
+        'archived_child_source': pin(run / 'executed_source.py'),
+        'recorder_at_launch': recorder_pin,
+        'stdout': pin(run / 'stdout'), 'stderr': pin(run / 'stderr'),
+        'scientific_programs_run': 0,
+        'purpose': 'Source/recovery/report metadata consistency only; no mathematical computation or scientific replay.',
+    }
+    (run / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+    print(json.dumps(receipt))
+    if out:
+        print(out.decode(errors='replace'))
+    if err:
+        print(err.decode(errors='replace'))
+    if returncode:
+        raise SystemExit(returncode)
+    if phase == 'verification':
+        assert pin(source) == source_pin and pin(Path(__file__).resolve()) == recorder_pin
+        files = []
+        for path in sorted(O.rglob('*')):
+            if path.is_file():
+                assert not path.is_symlink()
+                row = pin(path)
+                row['path'] = str(path.relative_to(O))
+                files.append(row)
+        freeze = {
+            'schema': 'single-port-autonomous-review-freeze-v1',
+            'sealed_utc': datetime.now(timezone.utc).isoformat(),
+            'output_directory': str(O),
+            'disposition': 'Conditional standalone construction supported; no candidate repair requested; optional compiler composition uses separately qualified acceptance.',
+            'source_exposed_same_model_review': True,
+            'scientific_programs_run': 0,
+            'metadata_subprocess_runs': 2,
+            'retained_audit': False,
+            'editable_prompt_files_changed': [],
+            'files': files,
+        }
+        final = O / 'FINAL_FREEZE.json'
+        final.write_text(json.dumps(freeze, indent=2) + '\n')
+        for row in files:
+            actual = pin(O / row['path'])
+            assert actual['sha256'] == row['sha256'] and actual['bytes'] == row['bytes']
+        print(json.dumps({'final_freeze': pin(final), 'verified_frozen_members': len(files), 'report': pin(O / 'REPORT.md')}))
+
+
+if __name__ == '__main__':
+    main()

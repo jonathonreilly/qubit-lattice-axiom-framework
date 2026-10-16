@@ -1,0 +1,182 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T21:11:19.336342+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+  "parent_sha256": {
+    "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1"
+  },
+  "source_acceptances": {
+    "polynomial_path_mediator": "8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2"
+  },
+  "git_base": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+  "base_branch": "physics-loop/toe-basis-state-clock-20261015",
+  "planned_feature_branch": "physics-loop/toe-polynomial-path-mediator-20261015",
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-local-gibbs-controller-source-20261015",
+      "headRefName": "physics-loop/toe-basis-state-clock-20261015",
+      "headRefOid": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+      "isDraft": false,
+      "number": 9619,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9619"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+  "raw_bodies": [
+    {
+      "name": "root_mass_m3",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 30425,
+      "end_byte_exclusive": 48979,
+      "bytes": 18554,
+      "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893"
+    },
+    {
+      "name": "independent_mass_m2",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 49121,
+      "end_byte_exclusive": 84178,
+      "bytes": 35057,
+      "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+    },
+    {
+      "name": "source_exposed_comparison",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 84326,
+      "end_byte_exclusive": 115781,
+      "bytes": 31455,
+      "sha256": "3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110611,
+      "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+      "claim_id": "basis_state_waveform_clock_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "root_author",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 23221,
+          "end_byte_exclusive": 46477,
+          "bytes": 23256,
+          "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46"
+        },
+        {
+          "name": "independent_author",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 46638,
+          "end_byte_exclusive": 75811,
+          "bytes": 29173,
+          "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+        },
+        {
+          "name": "comparison",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 75964,
+          "end_byte_exclusive": 110611,
+          "bytes": 34647,
+          "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "root_author",
+        "independent_author",
+        "comparison"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/1044880b42acb6830366c27da99969c2e9b62de5904ef149dc03c92100e51bc3.blob",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2e2cbd31fe6c8ed92c80286f9cf32ca2bf553ad37ad569f561c3d29340f995e6.blob",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/47f80d0950f11be804f0b67405fd2c46512164da57dae68befc80551e9be9ff0.py",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/a7d5d8d63a9b26f49b6065d82cd62ad93146f3e2503aeb3fd90daa4d4ecd26e1.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/acac29fb6a92fcbf4a14cd375f8c80525c171d8d159a710c62a196b5863d8b12.py",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/b859501f0dec81dc34b1f3dd48bf0ebcad2f5ada77a2846164bb4498826f63f7.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d78856437e14673ea7c0a444c645527b2ca6a97fd4f99e81d9101b454cbff25f.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d9603a48b4afcf830617821b535d830f87cad2d63f1302c4ad22ff86f2b55fe3.json",
+    ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+  ],
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56.json",
+    "bytes": 37408,
+    "sha256": "922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d78856437e14673ea7c0a444c645527b2ca6a97fd4f99e81d9101b454cbff25f.json",
+      "bytes": 18461,
+      "sha256": "d78856437e14673ea7c0a444c645527b2ca6a97fd4f99e81d9101b454cbff25f"
+    },
+    "review_freeze": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/a7d5d8d63a9b26f49b6065d82cd62ad93146f3e2503aeb3fd90daa4d4ecd26e1.json",
+      "bytes": 431,
+      "sha256": "a7d5d8d63a9b26f49b6065d82cd62ad93146f3e2503aeb3fd90daa4d4ecd26e1"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/b859501f0dec81dc34b1f3dd48bf0ebcad2f5ada77a2846164bb4498826f63f7.json",
+      "bytes": 1471,
+      "sha256": "b859501f0dec81dc34b1f3dd48bf0ebcad2f5ada77a2846164bb4498826f63f7"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2e2cbd31fe6c8ed92c80286f9cf32ca2bf553ad37ad569f561c3d29340f995e6.blob",
+      "bytes": 597,
+      "sha256": "2e2cbd31fe6c8ed92c80286f9cf32ca2bf553ad37ad569f561c3d29340f995e6"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/acac29fb6a92fcbf4a14cd375f8c80525c171d8d159a710c62a196b5863d8b12.py",
+      "bytes": 10420,
+      "sha256": "acac29fb6a92fcbf4a14cd375f8c80525c171d8d159a710c62a196b5863d8b12"
+    }
+  },
+  "base_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d9603a48b4afcf830617821b535d830f87cad2d63f1302c4ad22ff86f2b55fe3.json",
+      "bytes": 1760,
+      "sha256": "d9603a48b4afcf830617821b535d830f87cad2d63f1302c4ad22ff86f2b55fe3"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/47f80d0950f11be804f0b67405fd2c46512164da57dae68befc80551e9be9ff0.py",
+      "bytes": 49413,
+      "sha256": "47f80d0950f11be804f0b67405fd2c46512164da57dae68befc80551e9be9ff0"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/1044880b42acb6830366c27da99969c2e9b62de5904ef149dc03c92100e51bc3.blob",
+      "bytes": 317,
+      "sha256": "1044880b42acb6830366c27da99969c2e9b62de5904ef149dc03c92100e51bc3"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T21:11:19.336408+00:00",
+    "reviewed_source_sha256": "922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "historical_root_scientific_fixtures": 1,
+  "scientific_programs_run_this_integration": 0,
+  "historical_programs_replayed": 0,
+  "retained_audit": false
+}

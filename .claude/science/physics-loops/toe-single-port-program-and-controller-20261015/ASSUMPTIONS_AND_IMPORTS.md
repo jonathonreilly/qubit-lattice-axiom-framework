@@ -1,0 +1,9 @@
+# Assumptions and exact imports
+
+The external compiler needs a nonempty finite fixed inventory, complete computable ordinary-NN/onsite H and full norm bound, computable target W with determinant lift, positive g and tolerances, finite window w, extra arbitrary retained box fillers, a selected weak static positive path, an adequate reserve, supplied coefficients/isolation and unrestricted finite search/physical duration. It acts on the full plant/reference input. Some successful rational lambda exists; not every weak lambda works.
+
+The controller accepts a positive whole plant generator H_P, an effectively approximable finite serial positive X/Y waveform with endpoint/variation certificates, a finite horizon tau, specified independent coherent one-head clock and fresh auxiliary vacuum, all source/counterterm/reserve coefficients, exact nominal number conservation and full-space fault control. It does not require separately positive old local blocks; any stronger consumer must provide/reprice that decomposition. Clock/auxiliary outputs are retained.
+
+Exactly one direct mathematical parent: canonical positive unary-cycle clock fa7028e0, complete c7a proof at [8789,41808). The separate parent review8d76345b is recovered from its exact canonical gzip object736e2741, decompressed [0,29118). DEPENDENCIES binds both. Only the generic finite step-waveform scheduling estimate is imported. Its strict alias guard, two Dyson tails, packet/smoothing/dispersion costs, actual free-clock phase and arbitrary finite background remain required.
+
+The new compiler proof and reviews are embedded in this note. The b726 restatement, d4ed mediator and previous publication template are provenance or process context, not additional direct mathematical imports. Git ancestry is not an import. No memory/Gibbs frontier theorem is used. Any reset/compression corollary needs its independent contract on the actually aged input and retains every displaced record.

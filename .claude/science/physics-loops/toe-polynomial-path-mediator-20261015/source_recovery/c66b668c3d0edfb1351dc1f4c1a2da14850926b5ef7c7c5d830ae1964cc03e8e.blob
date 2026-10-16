@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-15T20:22:07.543921+00:00",
+  "canonical_parent": null,
+  "parent_publication": null,
+  "parent_review": null,
+  "actual_git_base": null,
+  "actual_binding": null,
+  "actual_primary_run": null,
+  "publication": null,
+  "root_publication_review": null,
+  "note": "Forthcoming basis-clock canonical parent is intended; no guessed future identity or outcome."
+}

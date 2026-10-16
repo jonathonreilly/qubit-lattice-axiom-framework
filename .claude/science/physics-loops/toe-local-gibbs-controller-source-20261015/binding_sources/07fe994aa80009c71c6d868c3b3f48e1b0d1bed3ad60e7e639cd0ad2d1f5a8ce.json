@@ -1,0 +1,190 @@
+{
+  "utc": "2026-10-15T19:52:29.754562+00:00",
+  "kind": "root_source_publication_review",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/FINAL_FREEZE.json",
+    "bytes": 31461,
+    "sha256": "c1a78b657c4d41c2b18bd1e9d90a6705cd4446abc170874dffb23e104723da28"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 102358,
+    "sha256": "045da0d7138ff59b26a1949bcd1c3f097cc94e2fca36b81482d08919529897ce"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/scripts/local_gibbs_controller_source_2026_10_15.py",
+    "bytes": 23530,
+    "sha256": "453e919787a0b0fa13c3602843065f70a21eb131fcf0acce5c4f9f70b84152c2"
+  },
+  "body_pins": [
+    {
+      "name": "independent_normalized",
+      "container": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 23221,
+      "end_byte_exclusive": 54787,
+      "bytes": 31566,
+      "sha256": "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40"
+    },
+    {
+      "name": "root_unnormalized",
+      "container": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 54927,
+      "end_byte_exclusive": 70769,
+      "bytes": 15842,
+      "sha256": "5a278bbd0f96eff93a2c506573898a9cb4b8cc2ffd8ac5d42d4ea2bcd17e712e"
+    },
+    {
+      "name": "source_exposed_comparison",
+      "container": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 70917,
+      "end_byte_exclusive": 102358,
+      "bytes": 31441,
+      "sha256": "e36f9dd364a5846d66d2bc1a2e2529e39cfc5cff83b25b1a0e17bdfe1a87894c"
+    }
+  ],
+  "parents": [
+    {
+      "path": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42367,
+      "sha256": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542",
+      "claim_id": "positive_unary_cycle_clock_bounded_theorem_note_2026-10-14",
+      "accepted_body_intervals": [
+        {
+          "name": "unary_cycle_proof",
+          "container": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "start_byte_inclusive": 8789,
+          "end_byte_exclusive": 41808,
+          "bytes": 33019,
+          "sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "unary_cycle_proof"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "parent_review_binding": {
+    "canonical_parent": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "canonical_parent_sha256": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542",
+    "reviewed_proof_sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135",
+    "compressed": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/736e2741a361d4630c8a62be986382fb607711889745ee1a2fdaba882a2b6cee.blob",
+      "bytes": 12394,
+      "sha256": "736e2741a361d4630c8a62be986382fb607711889745ee1a2fdaba882a2b6cee"
+    },
+    "decompressed": {
+      "path": ".claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/source_recovery/8d76345b8a28d7d9a80675dda5ee8b1d3f9964994375bae852f02ea084a9a7b3.blob",
+      "bytes": 29118,
+      "sha256": "8d76345b8a28d7d9a80675dda5ee8b1d3f9964994375bae852f02ea084a9a7b3"
+    },
+    "format": "gzip",
+    "scope": "Exact complete parent review read; provenance only, no new direct theorem edge"
+  },
+  "existing_source_acceptances": {
+    "local_gibbs_controller": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_review/ACCEPTANCE.md",
+      "bytes": 3238,
+      "sha256": "c2e7680d5a133ca950483f07036e7ef5879871a83e439c490c4bd1c919833537"
+    }
+  },
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "full_current_files_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/wrapper.md",
+      "bytes": 23076,
+      "sha256": "947d89e52f41702f6bc03c8adbf17fcb24ff7ad6b5ac54ba9b11c4d86f913f28"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/build_proposal.py",
+      "bytes": 16204,
+      "sha256": "4b54b18845d4be9068714a3205c2525f64d437b736f8c4bbf5f9f79f75904769"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/primary_template.py",
+      "bytes": 13508,
+      "sha256": "c1a8be6bb6b835dd344f1d3887a789a4864dff1bd6080c78ff2d80e174675f37"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/inspect_proposal.py",
+      "bytes": 15538,
+      "sha256": "b89b55533cd48d51912512e3f1365074191303be60aacf0bdbc4b618cd52dc29"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/seal_packet.py",
+      "bytes": 4779,
+      "sha256": "521a406921e5578fad62f760ca8ef92e2bccdbdee20611ec4c22f2cf6f6ba989"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2059,
+      "sha256": "2090bbfa0e31c6d959b73c52eb76f3869f0f3453371954b096f79df9f6b9576c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/BINDING_CONTRACT.md",
+      "bytes": 2554,
+      "sha256": "597e197783d25de351d8fafd4415a732c914db6378df9589b2f09e0325c62829"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1437,
+      "sha256": "93f1bcd3d72b1c25bc373cc932722f990dc76981432761e50fd9afb869e5d350"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/COUNTEREXAMPLES.md",
+      "bytes": 2250,
+      "sha256": "ce612c091e899bad5079fd2d78c1a45586b2bdefb5ba6302d920fd460a7d564c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/HANDOFF.md",
+      "bytes": 1857,
+      "sha256": "6f16d3a51595ddfde36ad5c78091895ae08e6b5748c2c65185fd67980fd28568"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/PR_BODY.md",
+      "bytes": 1873,
+      "sha256": "4e607f723a4b474eca410efb5f04cb109d62163b1806d3943a22f7090e419c26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/RECOVERY_SCOPE.md",
+      "bytes": 1961,
+      "sha256": "a87e8c0c24891979e85b11f1b9cdd901a5e7ad23a4cad8d976878602515c9c45"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/REVIEW_HISTORY.md",
+      "bytes": 3086,
+      "sha256": "8c930518fc6a38988ac3416fff5a2ab28cec1847deabb8e5d74afc63bcae8ee0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/proposal/.claude/science/physics-loops/toe-local-gibbs-controller-source-20261015/TRACE_GATE.md",
+      "bytes": 1084,
+      "sha256": "8b40081f3e8cf97e9842cd7850aff5a29e0e0ed27f92382d392ce9d0ea4cc022"
+    }
+  ],
+  "read_scope": "Complete current wrapper, nine packet texts, primary template, builder/inspector/seal code read. Original three bodies and canonical parent proof/review reused at exact previously complete read identities. Recorder byte-exact reuse; generated primary rendered exactly. All138members73sources and recovery links verified. Source-only interpretation; no new independent scientific vote.",
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 1791,
+      "sha256": "b3b5b097ea9429a8263ff8418cc2e8baaf87cc479d2ce9ff1dfc0da358503030"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 1809,
+      "sha256": "5d6b35bfa80b095c99999bcf46568cfabec36b63a641c5b44738fcc1a38eaf45"
+    }
+  ],
+  "exact_helper_functions": 27,
+  "qualification_scope": [
+    "Normalized versus unnormalized physical edges and distinct M^4/M^8 certificates; full-sector spectrum/gap and complex phases.",
+    "Exact norm/scalar versus block/Pauli/positive-channel costs; actual extra C_gamma identity reserve.",
+    "Full Gibbs marginal and exact unconditioned retained output; sharp g and separate continuity/actual-gap calibrations.",
+    "Fixed geometry and design-only power-of-two choice, actual source-local and plant-coupling distinction, paid clock compensation and old aging.",
+    "No cooling time, native source, efficient general synthesis, complete runtime handoff, common cap, detector/energy identification, reuse or retained audit."
+  ],
+  "scientific_programs_run": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": []
+}

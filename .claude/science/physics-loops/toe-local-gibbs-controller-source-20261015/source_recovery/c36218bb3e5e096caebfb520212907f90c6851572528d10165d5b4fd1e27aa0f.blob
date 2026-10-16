@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-15T19:21:11.319248+00:00",
+  "comparison_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/FINAL_FREEZE.json",
+    "bytes": 6904,
+    "sha256": "7b58d56405a7807b67039577b65ae3539a2221e42575b08e6ec639fe6f039d74"
+  },
+  "comparison": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/REPORT.md",
+    "bytes": 31441,
+    "sha256": "e36f9dd364a5846d66d2bc1a2e2529e39cfc5cff83b25b1a0e17bdfe1a87894c"
+  },
+  "independent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_independent/DERIVATION.md",
+    "bytes": 31566,
+    "sha256": "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40"
+  },
+  "root_candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_candidate/DERIVATION.md",
+    "bytes": 15842,
+    "sha256": "5a278bbd0f96eff93a2c506573898a9cb4b8cc2ffd8ac5d42d4ea2bcd17e712e"
+  },
+  "members_verified": [
+    34,
+    23,
+    3
+  ],
+  "metadata_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/metadata_run/EXECUTION.json",
+    "bytes": 2124,
+    "sha256": "48267575a9d77db69bf1eea0d73050262051429fecec585dfbc09a1a08a71863"
+  },
+  "scientific_runs": 0,
+  "source_rows": 20,
+  "full_comparison_and_helpers_read": true
+}

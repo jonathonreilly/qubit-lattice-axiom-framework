@@ -1,0 +1,77 @@
+{
+  "captured_utc": "2026-10-15T10:07:31.793918+00:00",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_finite_reservoir_candidate/DERIVATION.md",
+      "copy": "sources/finite_reservoir.md",
+      "bytes": 27222,
+      "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+      "role": "Accepted mathematical parent: full-space H0 and retained SWAP endpoint",
+      "coverage": "Complete prior read reused at exact identity; sections1,3-5 fully refreshed in this task."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_finite_reservoir_root_review/ACCEPTANCE.md",
+      "copy": "sources/finite_reservoir_acceptance.md",
+      "bytes": 5374,
+      "sha256": "51a1622784a86aac00ef24e5a97af364ccf9034f323a532f8ca0938ddb516e2f",
+      "role": "Actual conditional source disposition",
+      "coverage": "Complete current read."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/DERIVATION.md",
+      "copy": "sources/biased_memory.md",
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "role": "Explicit provisional composition dependency, not accepted by this task",
+      "coverage": "Own complete frozen derivation known; complete body refreshed with the initially truncated sections8-9 recovered."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/FINAL_FREEZE.json",
+      "copy": "sources/biased_memory_freeze.json",
+      "bytes": 18431,
+      "sha256": "428e12212a7feb5bf119bcf8f04b97475600be791efb3bcaf4b29980ea1d1e01",
+      "role": "Historical source identity, not mathematical proof",
+      "coverage": "Identity/source map only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock/DERIVATION.md",
+      "copy": "sources/unary_cycle.md",
+      "bytes": 33019,
+      "sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135",
+      "role": "Accepted arbitrary-H waveform theorem, mathematical import",
+      "coverage": "Complete current raw read before compaction; sections2-9 refreshed from exact canonical copy."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNARY_CYCLE_CLOCK_ROOT_ACCEPTANCE.json",
+      "copy": "sources/unary_cycle_acceptance.json",
+      "bytes": 3975,
+      "sha256": "4dd58d6860a2a2a0e73930ea2298210059a4f99e52d569846735ba3bc4cf1d07",
+      "role": "Actual conditional source disposition",
+      "coverage": "Complete read after capture; no independent retained/audit authority inferred."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "copy": "sources/canonical_unary_cycle.md",
+      "bytes": 42367,
+      "sha256": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542",
+      "role": "Current canonical exposure and exact mathematical body binding",
+      "coverage": "Complete current wrapper; unchanged complete raw proof reused after unique-byte check; refreshed sections2-9."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "copy": "sources/canonical_windows.md",
+      "bytes": 80595,
+      "sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Boundary H_app definitions via finite parent; other windows overlap context only",
+      "coverage": "Complete framing and complete b3b6 boundary body refreshed; other two bodies prior coverage only, no new theorem import."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STATIC_HISTORICAL_PAULI_READER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "copy": "sources/canonical_static_reader.md",
+      "bytes": 40578,
+      "sha256": "6f8547919c8e21a5d600f293f394565f2f0021bedc5f1910954c1ddd31b75c47",
+      "role": "Overlap/context only: replacement historical premeasurement, not preparation supplier",
+      "coverage": "Complete framing, raw sections1-2 and6-11 refreshed; exact previously fully assessed fdb9 body reused, no theorem imported."
+    }
+  ]
+}

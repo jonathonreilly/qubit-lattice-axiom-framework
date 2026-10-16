@@ -1,0 +1,132 @@
+{
+  "frozen_utc": "2026-10-15T19:02:45.702456+00:00",
+  "kind": "independent_analytic_candidate_before_root_exposure",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 31566,
+      "sha256": "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 2243,
+      "sha256": "3c76519db1ee43435446f62d78880f4a078338591a75f493c581bb4aa88defbe"
+    },
+    {
+      "path": "METADATA_VERIFICATION.json",
+      "bytes": 1106,
+      "sha256": "a7481d0fcd7db9e692fe48b6c021883607582aa1f7a3f22e0902a9c6a6f46b30"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 1612,
+      "sha256": "bbbd8f683c94a3feff8aaa25372f12d5ca3c2494fb50dac9e10f2413119aa3a5"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 2951,
+      "sha256": "0c0e6299eb8ce1f33fb6326c74013a22bc0fc5d1c4bf2b9433bca2016ebeef08"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 3705,
+      "sha256": "1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 7354,
+      "sha256": "4616ac0e6ec7df04f063f6aa1b50c0bb09b45fe04f7026a958bbc76ccd2b7fb6"
+    },
+    {
+      "path": "metadata_run/EXECUTION.json",
+      "bytes": 1988,
+      "sha256": "a1bf5c76cd0f2fabf678251d869523b6480788767cc2d35987165d8ed8251e84"
+    },
+    {
+      "path": "metadata_run/LAUNCH.json",
+      "bytes": 5013,
+      "sha256": "5282fdefb2c4ad07378651132923865dfca4679680b588a9337267ff0acfa6ab"
+    },
+    {
+      "path": "metadata_run/executed_source.py",
+      "bytes": 3680,
+      "sha256": "1a7f61fe09c729f35943e73c596ea3564ebcc833037475332921b66d9099bbab"
+    },
+    {
+      "path": "metadata_run/inputs/0c0e6299eb8ce1f33fb6326c74013a22bc0fc5d1c4bf2b9433bca2016ebeef08.md",
+      "bytes": 2951,
+      "sha256": "0c0e6299eb8ce1f33fb6326c74013a22bc0fc5d1c4bf2b9433bca2016ebeef08"
+    },
+    {
+      "path": "metadata_run/inputs/1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302.md",
+      "bytes": 3705,
+      "sha256": "1217498d36a7bc38d92a9b2cf2a2e29ec453bd53373112810315dbe0349ab302"
+    },
+    {
+      "path": "metadata_run/inputs/3c76519db1ee43435446f62d78880f4a078338591a75f493c581bb4aa88defbe.md",
+      "bytes": 2243,
+      "sha256": "3c76519db1ee43435446f62d78880f4a078338591a75f493c581bb4aa88defbe"
+    },
+    {
+      "path": "metadata_run/inputs/4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40.md",
+      "bytes": 31566,
+      "sha256": "4e0c90fb7fa515868aaa491525e89c1e80014180e2e88189b32c07f04d2eeb40"
+    },
+    {
+      "path": "metadata_run/inputs/977834884667414b48ab0501eabf8d4ad58df5d4e587040995b170eca8634133.py",
+      "bytes": 2307,
+      "sha256": "977834884667414b48ab0501eabf8d4ad58df5d4e587040995b170eca8634133"
+    },
+    {
+      "path": "metadata_run/inputs/bbbd8f683c94a3feff8aaa25372f12d5ca3c2494fb50dac9e10f2413119aa3a5.md",
+      "bytes": 1612,
+      "sha256": "bbbd8f683c94a3feff8aaa25372f12d5ca3c2494fb50dac9e10f2413119aa3a5"
+    },
+    {
+      "path": "metadata_run/recorder_source.py",
+      "bytes": 2006,
+      "sha256": "27cf1cef03cdac9914e503731b0f053eea993b55f862f7df40a85336a40f1859"
+    },
+    {
+      "path": "metadata_run/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_run/stdout",
+      "bytes": 1106,
+      "sha256": "a7481d0fcd7db9e692fe48b6c021883607582aa1f7a3f22e0902a9c6a6f46b30"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2006,
+      "sha256": "27cf1cef03cdac9914e503731b0f053eea993b55f862f7df40a85336a40f1859"
+    },
+    {
+      "path": "seal_metadata.py",
+      "bytes": 2307,
+      "sha256": "977834884667414b48ab0501eabf8d4ad58df5d4e587040995b170eca8634133"
+    },
+    {
+      "path": "source_recovery/b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7.md",
+      "bytes": 31689,
+      "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7"
+    },
+    {
+      "path": "verify_metadata.py",
+      "bytes": 3680,
+      "sha256": "1a7f61fe09c729f35943e73c596ea3564ebcc833037475332921b66d9099bbab"
+    }
+  ],
+  "excluded_exact_root_paths": [
+    "FINAL_FREEZE.json",
+    "SEAL_OPERATION.json"
+  ],
+  "scope": "Complete independent derivation and actual identity metadata; no root-candidate comparison or acceptance yet",
+  "root_candidate_accessed": false,
+  "science_runs": 0,
+  "historical_science_replays": 0,
+  "model_or_effort_override": false,
+  "delegation": false,
+  "editable_prompt_changes": []
+}

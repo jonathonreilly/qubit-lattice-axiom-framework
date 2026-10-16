@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-15T18:42:04.075918+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_candidate/DERIVATION.md",
+      "bytes": 15842,
+      "sha256": "5a278bbd0f96eff93a2c506573898a9cb4b8cc2ffd8ac5d42d4ea2bcd17e712e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_candidate/PRIMARY_CONTEXT_TOOL_RESPONSE.json",
+      "bytes": 10987,
+      "sha256": "32f18faf93644d5b32e35b9a60787297c00e07e612d4b8426a9ed5957b8d2db8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_candidate/SOURCE_PINS.json",
+      "bytes": 1811,
+      "sha256": "395deb75d4d733683c51ba18a53fa3d1735cc86f62112c2f0c5d7fb2e94a4273"
+    }
+  ],
+  "status": "root candidate pending pre-exposure independent derivation and source comparison",
+  "scientific_programs_run": 0
+}

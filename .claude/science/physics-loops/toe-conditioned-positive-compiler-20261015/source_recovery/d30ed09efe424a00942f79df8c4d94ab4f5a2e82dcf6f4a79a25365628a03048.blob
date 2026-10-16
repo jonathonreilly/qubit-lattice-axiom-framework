@@ -1,0 +1,8 @@
+# Root readout before viewing protected derivation
+
+The immutable root proposal 2de387eb is still proposed and independently unchecked. A fresh complete root read after compaction found two wording qualifications for the future exposed comparison; neither changes the endpoint proof or its constants.
+
+1. Repeated target-exponential invocations must compose their augmented pairs approximating (exp(Q_j), I), with summed pair errors and durations, before deriving the final actual-aging endpoint. Naively multiplying only the separate endpoint formulas exp(Q_j) exp(-i T_j Hbar) would interleave background evolutions. The text's finite-product extension is correct with the augmented-pair construction. Publication should spell this out.
+2. The zero-control output window comparator must explicitly be exp(-i s H) W exp(-i T H), 0<=s<=w, with chi(T+s)=chi(T)+(r0+lambda*j0)*s. It must not be read as W exp[-i(T+s)H]. The inherited compiler source equation(2)/(14) gives the correct chronology. The root proposal refers to that inherited bound without printing the formula. Publication should print it.
+
+The bracket-series remainder, rational certified constants and ceiling inputs, signed-word telescoping, simultaneous 2d-phase recurrence, rational durations, same-duration smoothing and scalar endpoint phase were read completely. These are root checks of root work, not independent review. No scientific program, target synthesis or new numerical fixture was run. The protected new derivation has not been opened. A short agent progress outline arrived only after the root proposal was frozen.

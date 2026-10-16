@@ -1,0 +1,24 @@
+{
+  "start_utc": "2026-10-15T19:19:03.044756+00:00",
+  "end_utc": "2026-10-15T19:19:03.063593+00:00",
+  "elapsed_seconds": 0.018692082725465298,
+  "kind": "actual_metadata_only_seal",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/seal_metadata.py",
+    "bytes": 3369,
+    "sha256": "73f5f53d2cddb066295a8042816060f95a9769e48a2079e56a3636f4c8905645"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/FINAL_FREEZE.json",
+    "bytes": 6904,
+    "sha256": "7b58d56405a7807b67039577b65ae3539a2221e42575b08e6ec639fe6f039d74"
+  },
+  "members": 34,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/REPORT.md",
+    "bytes": 31441,
+    "sha256": "e36f9dd364a5846d66d2bc1a2e2529e39cfc5cff83b25b1a0e17bdfe1a87894c"
+  },
+  "scientific_execution": false,
+  "self_and_freeze_exclusion": "Exact root paths only"
+}

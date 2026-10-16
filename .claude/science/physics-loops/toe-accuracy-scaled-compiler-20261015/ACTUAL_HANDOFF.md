@@ -1,0 +1,9 @@
+# Bound accuracy-scaled compiler handoff
+
+Actual source acceptance e0735ca8 and wrapper review f09815c0befcc6fb80aa0a98a59383d3a37bed5d5b6031bbcc044f9a7a16b9b0 are distinct. Initial nulls and three raw bodies remain immutable. Selected base PR 9622 on physics-loop/toe-conditioned-positive-compiler-20261015 is captured by actual receipts. Binding certifies no future primary/cache/action result.
+
+The sole mathematical parent is quantitative compiler db922c9b, protected finite-grid proof dd6cca85 [39210,70080) and exposed comparison227180a0 [70233,97212). The alternative supplied-logarithm recipe is not imported. Both selected intervals, PARENT_REVIEW_BINDING and every source/selection alias remain linked. No extra theorem edge comes from stack ancestry.
+
+Keep fixed computable consistent polynomial data, degree D versus separately attributed k0, the D+1 selected nodes, exposed sufficient constants, protected Frobenius/computable-time recipe and all actual recurrence waits. The full target is exp[-i chi(T+s)] exp(-isH) W exp(-iTH). Every original factor, dirty filler and arbitrary correlated reference remains. All faults share one integrated allowance. Pay complete scalar/reserve/norm/duration/action/slew/calibration/work, endpoint and growing-moment costs. Native supply, varying-size/oracle efficiency, common caps, autonomous implementation, permanent halt and restoration remain open.
+
+Root reads all changed scripts/diffs and the actual canonicalization diff, then owns seven phases, actual source-integrity/cache and semantic source mutants, focused evidence, exact one-node/one-edge preservation, staging/commit/regular PR and immediate attachment. Current-main/cumulative-stack landing and independent retained audit remain separate. No scientific fixture or historical replay occurs.

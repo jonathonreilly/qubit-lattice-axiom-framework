@@ -1,0 +1,5 @@
+# Preserved failed substitutions
+
+The immutable sources retain their concrete domain checks: importing fixed-tau mediator powers while compiler duration grows; using a one-excitation inverse for a two-excitation corrector; dropping kappa n_p or a reserve/clock phase; using multihead or vacuum clock input; replacing inverse-sine samples by linear position; omitting bare/dressed endpoint changes; arbitrarily enlarging a ceiling while claiming the minimal recipe's upper cost; using 2delta as a correlated joint replacement price; asserting H-only release aging without the lambda Jbar correction; treating the moving window clock as a fixed returned endpoint; and inferring accurate energy moments from trace error with growing norms.
+
+The root runtime budget is saturated. Adding a release or new fixed-target timing allocation requires a new split. Preparation-to-runtime release is not post-runtime stopping or decoupling. These are preserved scoped failed substitutions and unproved stronger conclusions, not new universal obstruction or impossibility claims. No additional negative result or N-gate verdict is manufactured by the packaging worker.

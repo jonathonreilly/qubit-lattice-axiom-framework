@@ -1,0 +1,40 @@
+{
+  "scope": "source/recovery metadata only; no scientific program",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate",
+  "start_utc": "2026-10-15T21:27:48.458216+00:00",
+  "end_utc": "2026-10-15T21:27:48.520793+00:00",
+  "elapsed_seconds": 0.06227495800703764,
+  "timeout_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/capture_sources.py",
+    "bytes": 5852,
+    "sha256": "63dc45a12e8183e8e7b117b67758952295273c923a83a5ba27ad6c87fc6af6cc"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/metadata_runs/capture/executed_source.py",
+    "bytes": 5852,
+    "sha256": "63dc45a12e8183e8e7b117b67758952295273c923a83a5ba27ad6c87fc6af6cc"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/record_metadata.py",
+    "bytes": 2123,
+    "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/metadata_runs/capture/stdout",
+    "bytes": 43,
+    "sha256": "99380752013a4f4053b5e063532637f0a0969b05d1fe88428086feb3aca43fef"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/metadata_runs/capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_programs_run": 0
+}

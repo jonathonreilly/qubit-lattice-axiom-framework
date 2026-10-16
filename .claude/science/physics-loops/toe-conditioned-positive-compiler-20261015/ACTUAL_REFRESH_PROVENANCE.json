@@ -1,0 +1,82 @@
+{
+  "kind": "captured_root_refresh_and_ancestry_metadata",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/62e3fb9432267ccb9af467a1ad074d9eb41078f3d3e2d24a4f8e1b8cb7e883ec.json",
+      "bytes": 3423,
+      "sha256": "62e3fb9432267ccb9af467a1ad074d9eb41078f3d3e2d24a4f8e1b8cb7e883ec"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/0ceb6356f19d41a423218f4f655afe1fcdd23e5093abc87b93436e89787f3e58.json",
+      "bytes": 1552,
+      "sha256": "0ceb6356f19d41a423218f4f655afe1fcdd23e5093abc87b93436e89787f3e58"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/33b62c769b732593761bc6d503bd6218c8a88fb8e721b5a63c344bc119e028c9.json",
+      "bytes": 178,
+      "sha256": "33b62c769b732593761bc6d503bd6218c8a88fb8e721b5a63c344bc119e028c9"
+    },
+    "prior_root_review_failure": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/6115a3e6170855873d90fef2cd85f34dd8fa80e3f791defda585b6139f73abf4.json",
+        "bytes": 1474,
+        "sha256": "6115a3e6170855873d90fef2cd85f34dd8fa80e3f791defda585b6139f73abf4"
+      },
+      "source": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/dc9b107da542e9e3217f723d0d75fff7adf9d60908d2ce33fe22d27433b5bdd4.py",
+        "bytes": 8544,
+        "sha256": "dc9b107da542e9e3217f723d0d75fff7adf9d60908d2ce33fe22d27433b5bdd4"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/5b4bfd031c00a6727b4062419ebfe6a14066321d41db80ec0b105031fa54d08d.blob",
+        "bytes": 364,
+        "sha256": "5b4bfd031c00a6727b4062419ebfe6a14066321d41db80ec0b105031fa54d08d"
+      },
+      "recorder": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+        "bytes": 1342,
+        "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+      }
+    },
+    "fetch": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/0409c0fc13fda1091e245958cffa67dfdfdf86e2ad9ee247349cb5a10b420814.json",
+        "bytes": 1196,
+        "sha256": "0409c0fc13fda1091e245958cffa67dfdfdf86e2ad9ee247349cb5a10b420814"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+        "bytes": 179,
+        "sha256": "3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44"
+      }
+    },
+    "inventory": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/df25ab872e8e2eca145172e54d8db83470f998f70e99a7c38cc9a2d89c8ce2b7.json",
+        "bytes": 1261,
+        "sha256": "df25ab872e8e2eca145172e54d8db83470f998f70e99a7c38cc9a2d89c8ce2b7"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/b0ae046e02283d56c3a7b08e8aef2d7504ae525671eb7c7b6c374d8b069b7aae.blob",
+        "bytes": 19895,
+        "sha256": "b0ae046e02283d56c3a7b08e8aef2d7504ae525671eb7c7b6c374d8b069b7aae"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "scope": "Historical fetch/inventory and base-publication provenance; the observed predecessor PR is Git ancestry only; the canonical compiler note and its raw proof/review intervals are the sole mathematical import/evidence."
+}

@@ -1,0 +1,9 @@
+# Bound autonomous compiler composition handoff
+
+The canonical binding records the exact source freeze, qualified source acceptance, frozen draft review and separately captured review of the installed canonical note and parent/body mapping. Original draft offsets and current canonical offsets are distinct. The three source argument bodies remain exact; metadata binding does not perform a scientific check.
+
+The direct parents are accuracy scaling, polynomial path mediator and protected finite-grid positive-time compiler. Preparation/release intervals in the mediator and its basis-clock ancestor remain specifically identified; basis-clock evidence is transitive. Local stacked HEAD and parent PR 9623 each have actual observation receipts. Current main remains separately pinned authority.
+
+Preserve the root runtime budget and separately complete preparation-to-runtime budget, literal full Hamiltonian aging, scalar phase, all old/dirty/reference outputs, distinct mediator Hamiltonians, complete resource and positivity prices, and supplied state/coefficient/sample/isolation premises. The optional switch does not provide final stopping, decoupling, restoration or reuse. No native physical realization, uniform varying-size efficiency or certificate-search bound is derived.
+
+The seven root-controlled phases preserve exact canonical source, metadata cache, source-mutation evidence, full prior graph topology, exact staged identities and source-review acknowledgements. Actual canonical review evidence is bound at cache start without changing note, proof or parent bytes, retaining PREPARED history and a full binding diff. Final staged review checks the exact index and base HEAD. Regular PR creation requires immediate artifact attachment. No merge, main push, authority edit, prompt edit or retained audit occurs in this source workflow.

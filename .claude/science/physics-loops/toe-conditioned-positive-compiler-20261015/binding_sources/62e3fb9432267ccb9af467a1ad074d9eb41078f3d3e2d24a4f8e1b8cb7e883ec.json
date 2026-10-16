@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-15T21:19:21.334577+00:00",
+  "refs": {
+    "HEAD": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "fetch_scope": "Actual origin/main fetch recorded in linked main_refresh_2119 receipt; origin/ai/execution also fetched in the same actual invocation.",
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_2119/EXECUTION.json",
+      "bytes": 1196,
+      "sha256": "0409c0fc13fda1091e245958cffa67dfdfdf86e2ad9ee247349cb5a10b420814"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2119/EXECUTION.json",
+      "bytes": 1261,
+      "sha256": "df25ab872e8e2eca145172e54d8db83470f998f70e99a7c38cc9a2d89c8ce2b7"
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_2119/stdout",
+    "bytes": 19895,
+    "sha256": "b0ae046e02283d56c3a7b08e8aef2d7504ae525671eb7c7b6c374d8b069b7aae"
+  },
+  "previous_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_2050/REFS.json",
+    "bytes": 2910,
+    "sha256": "6915958aa483d7d75f380a870e00e3b4150da0bf3a5d080c5f292b2c661348a2"
+  },
+  "inventory_count": 51,
+  "inventory_delta": {
+    "new": [
+      {
+        "baseRefName": "codex/observations-backward-environment-20261015",
+        "headRefName": "codex/observations-backward-material-20261015",
+        "headRefOid": "95609a8f3545258e5494d95f2d012a9e15ab1c14",
+        "isDraft": false,
+        "number": 9620,
+        "title": "[physics-loop] nonlinear vacuum metric inverse: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9620"
+      },
+      {
+        "baseRefName": "physics-loop/toe-basis-state-clock-20261015",
+        "headRefName": "physics-loop/toe-polynomial-path-mediator-20261015",
+        "headRefOid": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+        "isDraft": false,
+        "number": 9621,
+        "title": "[physics-loop] polynomial-path-mediator: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9621"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "external_science": "Latest9614 b7898552 fully scoped in main_refresh_2002/EXTERNAL_9614_DELTA; no import. Other source changes require scoped reading before import.",
+  "current_publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/PUBLICATION.json",
+    "bytes": 1552,
+    "sha256": "0ceb6356f19d41a423218f4f655afe1fcdd23e5093abc87b93436e89787f3e58"
+  },
+  "current_attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/ATTACHMENT.json",
+    "bytes": 178,
+    "sha256": "33b62c769b732593761bc6d503bd6218c8a88fb8e721b5a63c344bc119e028c9"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "verified_utc": "2026-10-15T20:15:36.944486+00:00",
+  "scope": "Identity, recovery, receipt, AST and report structure only",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/REPORT.md",
+    "bytes": 31455,
+    "sha256": "3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067"
+  },
+  "source_count": 16,
+  "source_freezes_verified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04",
+      "members_verified_as_bytes": 2
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/FINAL_FREEZE.json",
+      "sha256": "2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9",
+      "members_verified_as_bytes": 33
+    }
+  ],
+  "metadata_capture_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/metadata_runs/capture/EXECUTION.json",
+    "bytes": 2119,
+    "sha256": "583375468e3b3c15a52ded16fa5732eb4f6fe320c5047fc2e441cca7195b6eba"
+  },
+  "script_syntax": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/record_metadata.py",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/capture_sources.py",
+      "bytes": 5085,
+      "sha256": "087617a8d82b8547f9c4fd1f0c3552002ab7c6530a28db8318cdc67900e3e435"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/verify_metadata.py",
+      "bytes": 3257,
+      "sha256": "e3af5bfdd3d9685990e72c1e3ce547de8d25ad080188727eb6c4caead852bb8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/seal.py",
+      "bytes": 2851,
+      "sha256": "b3c1a64c5020981e8e87b55b3f121c65f16605fe1e8636e34c3269c91b4ea024"
+    }
+  ],
+  "scientific_programs_run_by_this_checker": 0,
+  "scientific_claims_verified_by_this_program": false
+}

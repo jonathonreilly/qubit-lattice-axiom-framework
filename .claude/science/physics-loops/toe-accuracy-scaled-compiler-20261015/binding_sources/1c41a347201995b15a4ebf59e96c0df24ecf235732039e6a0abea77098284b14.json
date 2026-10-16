@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T21:31:20.483570+00:00",
+  "baseRefName": "physics-loop/toe-polynomial-path-mediator-20261015",
+  "headRefName": "physics-loop/toe-conditioned-positive-compiler-20261015",
+  "headRefOid": "70676cfdaa37280254c95e55c8d550816daf0040",
+  "isDraft": false,
+  "number": 9622,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9622",
+  "tree": "fad5ca3afbe33a9a2914a129d7e44f8c9bde1383",
+  "base_head": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 97212,
+    "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/conditioned_positive_time_compiler_2026_10_15.py",
+    "bytes": 30369,
+    "sha256": "088f294087a3c1d52f114f36eca0f34613088eac889426d2db858e93995c8ac7"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/conditioned_positive_compiler/PR_BODY.md",
+    "bytes": 3865,
+    "sha256": "7e0398bdaf1a547c909b44a91f9ae97fd68759b3a0357737641813310caab1ed"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

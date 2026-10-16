@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T21:18:07.720658+00:00",
+  "baseRefName": "physics-loop/toe-basis-state-clock-20261015",
+  "headRefName": "physics-loop/toe-polynomial-path-mediator-20261015",
+  "headRefOid": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+  "isDraft": false,
+  "number": 9621,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9621",
+  "tree": "c679a05e530f249ebc5ac905cdfd6893d04fd6ed",
+  "base_head": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 115781,
+    "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/polynomial_path_mediator_2026_10_15.py",
+    "bytes": 39140,
+    "sha256": "0c96846b6fc146679c79fadc8438e626d45f3cc59a6185353606a83b9f270fc7"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/polynomial_path_mediator/PR_BODY.md",
+    "bytes": 3961,
+    "sha256": "45c1649f677b428417fa5fe9588dc23115df630dd9847fbd10b64932c3a50728"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

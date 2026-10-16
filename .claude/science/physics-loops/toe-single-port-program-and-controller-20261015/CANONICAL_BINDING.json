@@ -1,0 +1,25 @@
+{
+  "kind": "actual_single_port_program_controller_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "e93bc2b057492d0eef909907708871cb1920fdc6",
+  "actual_git_base": "e93bc2b057492d0eef909907708871cb1920fdc6",
+  "actual_branch_at_binding": "physics-loop/toe-transverse-field-memory-20261015",
+  "bound_note_sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/3495e85725a1a859ceae2fe841e748cf345db4afa3426048c36bdd244417a0aa.blob",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/5cc8716d5a9608557f9680ec5ac138f4b66f942b7da387758e54087c8525847b.py",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/6077453829fd70821e2b251624346ed533dc2447cf877992bdbaafe9077ee425.json",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/8df5326aae7f13bc0d2c1cc9c0c7ddcde9957c2ee18feec5da1caf572aac8d52.blob",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/9de86eef643813f0384f81c34cce5a1709eb806a7402e83a20d51cd439ddc46a.json",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/a4c867cd3283817a1069505c2b3a47d2f011aa0d01d658d66fa3a4bbea0f5aa0.json",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/c2c576011f10bf011139756ee0ab96e5dedf609a4f354242d9c653198ca7b3c2.json",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/d60d4cbbf6c3d5bb97fddbcc066d384810589613419e60ec34eda9229f8a9c84.json",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/e2e3157a88ea20e97fd8cc921d8a08e64178a12c0df314d6b3c00e903a039c52.py",
+    ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+  ],
+  "canonical_parent_sha256": {
+    "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md": "fa7028e0e9ad6c2c7d4c1c399feae8f9581f301dda5b46f8800eb6c355137542"
+  }
+}

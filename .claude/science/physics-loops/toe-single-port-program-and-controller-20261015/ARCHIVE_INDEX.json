@@ -1,0 +1,614 @@
+{
+  "schema": "sha256_deduplicated_recovery_v1",
+  "objects": [
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/02fa9c6d9f0ab9ede2c0442d514b335f5b021657ada94ed46e5eb0ef33f5a031.blob",
+      "bytes": 2529,
+      "sha256": "02fa9c6d9f0ab9ede2c0442d514b335f5b021657ada94ed46e5eb0ef33f5a031",
+      "aliases": [
+        "campaign/single_port_program_root_review/VERIFICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "aliases": [
+        "repository/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/07dce28ca9f31d3f03559d6998b35d77c4779b70c7a5bb1424c64bdb3a0fffff.blob",
+      "bytes": 3827,
+      "sha256": "07dce28ca9f31d3f03559d6998b35d77c4779b70c7a5bb1424c64bdb3a0fffff",
+      "aliases": [
+        "campaign/single_port_program_research/SOURCE_CURRENT_VERIFICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/0922dc404713a76b19016144e9532a0e5d8b3e1fd2b149c960203d8d11e84683.blob",
+      "bytes": 2141,
+      "sha256": "0922dc404713a76b19016144e9532a0e5d8b3e1fd2b149c960203d8d11e84683",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/0927ad04d7523a50a98b3ba3480b83b8fcb2963354fb6864f19c26fc0a7760d9.blob",
+      "bytes": 565,
+      "sha256": "0927ad04d7523a50a98b3ba3480b83b8fcb2963354fb6864f19c26fc0a7760d9",
+      "aliases": [
+        "campaign/single_port_program_research/FINAL_FREEZE_RECEIPT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f.blob",
+      "bytes": 4724,
+      "sha256": "134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f",
+      "aliases": [
+        "campaign/single_port_autonomous_root_review/ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/15d6ad5e756548ddd1437624513b0d3b43060ba99a735b8a2ea9036449f7ba4c.blob",
+      "bytes": 6408,
+      "sha256": "15d6ad5e756548ddd1437624513b0d3b43060ba99a735b8a2ea9036449f7ba4c",
+      "aliases": [
+        "campaign/single_port_program_research/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/16a38b3cd59461a347bcb7b05ef6e473f8c148ffaa341e0e5ee927527d4f6a77.blob",
+      "bytes": 1253,
+      "sha256": "16a38b3cd59461a347bcb7b05ef6e473f8c148ffaa341e0e5ee927527d4f6a77",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/START.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/18001b6e6218f15b146f1cafe2347893c349033e73e2d75a7b96e142a420f454.blob",
+      "bytes": 40513,
+      "sha256": "18001b6e6218f15b146f1cafe2347893c349033e73e2d75a7b96e142a420f454",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/1dd3f40898b99f513980ad75af55c3fa9d9b99b332bb7b438fcb251ac0a6a329.blob",
+      "bytes": 1052,
+      "sha256": "1dd3f40898b99f513980ad75af55c3fa9d9b99b332bb7b438fcb251ac0a6a329",
+      "aliases": [
+        "campaign/single_port_program_research/SEARCH_METADATA.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/1de6182ecb2cf58f521ff8f5f2558a51fede8d60bbbc2639c5e431b8097f66e1.blob",
+      "bytes": 2702,
+      "sha256": "1de6182ecb2cf58f521ff8f5f2558a51fede8d60bbbc2639c5e431b8097f66e1",
+      "aliases": [
+        "campaign/single_port_autonomous_root_candidate/SOURCE_PINS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/2149bbaa3db6954ba2b516d832b98fd91462e3b923b1840d11c0ea0307e244bb.blob",
+      "bytes": 2402,
+      "sha256": "2149bbaa3db6954ba2b516d832b98fd91462e3b923b1840d11c0ea0307e244bb",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/HANDOFF.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/259ddd2707797de9e64dd6b6a955a58eb114b27afab381e9436eeeb7c99b568d.blob",
+      "bytes": 598,
+      "sha256": "259ddd2707797de9e64dd6b6a955a58eb114b27afab381e9436eeeb7c99b568d",
+      "aliases": [
+        "campaign/single_port_program_research/METADATA_EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/274119dd43f5ad046a9f532e4d2229150c72fb6f2f00fa3fec6550f69716815e.blob",
+      "bytes": 3948,
+      "sha256": "274119dd43f5ad046a9f532e4d2229150c72fb6f2f00fa3fec6550f69716815e",
+      "aliases": [
+        "campaign/autonomous_preparation_root_review/ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/381d34ec60e13c02100283f751ac3ca3b26b21842af1a11b6ea474e86e7a0829.blob",
+      "bytes": 20996,
+      "sha256": "381d34ec60e13c02100283f751ac3ca3b26b21842af1a11b6ea474e86e7a0829",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.blob",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "aliases": [
+        "repository/docs/WRITING_VOICE_GUIDE_2026-04-25.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/43699a3792072c843a11918bce090aa585591ec3ca6c132307eaafa50fd97262.blob",
+      "bytes": 877,
+      "sha256": "43699a3792072c843a11918bce090aa585591ec3ca6c132307eaafa50fd97262",
+      "aliases": [
+        "campaign/single_port_program_research/STATUS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/4dd58d6860a2a2a0e73930ea2298210059a4f99e52d569846735ba3bc4cf1d07.blob",
+      "bytes": 3975,
+      "sha256": "4dd58d6860a2a2a0e73930ea2298210059a4f99e52d569846735ba3bc4cf1d07",
+      "aliases": [
+        "prior_campaign/UNARY_CYCLE_CLOCK_ROOT_ACCEPTANCE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/5475bd67d04f14c0b7d2e0924d3139bcfc2c67170f201cc74191d2d8233cd153.blob",
+      "bytes": 2841,
+      "sha256": "5475bd67d04f14c0b7d2e0924d3139bcfc2c67170f201cc74191d2d8233cd153",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/READ_EXPOSURE.md",
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/source_at_launch/READ_EXPOSURE.md",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/source_at_launch/READ_EXPOSURE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/5b84521fa00a92cb5bcf45de394aa1099ee52b333564c540286abd45dd0b06d8.blob",
+      "bytes": 799,
+      "sha256": "5b84521fa00a92cb5bcf45de394aa1099ee52b333564c540286abd45dd0b06d8",
+      "aliases": [
+        "campaign/single_port_program_research/CAPTURE_RESULT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/61c7f4ac520ee1ed57733f35e27fc15f40cb347788df0db480f6703cb9c2cc4a.blob",
+      "bytes": 3261,
+      "sha256": "61c7f4ac520ee1ed57733f35e27fc15f40cb347788df0db480f6703cb9c2cc4a",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/METADATA_INSPECTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/6aea7199218d76c6c809a2d44c6e1515b68663ea947d86d3c435e73b202bf8a9.blob",
+      "bytes": 7224,
+      "sha256": "6aea7199218d76c6c809a2d44c6e1515b68663ea947d86d3c435e73b202bf8a9",
+      "aliases": [
+        "campaign/bootstrap/accept_single_port_autonomous_1845.py",
+        "campaign/runs/single_port_autonomous_root_acceptance_1845/executed_source.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/6ce79f06293c9181470b133e666ba60003fc0f64f0675609667ae66e3d6cc6fa.blob",
+      "bytes": 4061,
+      "sha256": "6ce79f06293c9181470b133e666ba60003fc0f64f0675609667ae66e3d6cc6fa",
+      "aliases": [
+        "campaign/single_port_program_research/READ_COVERAGE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/6d0eb6e19a96167e3bb967a16f3a38f80daf2077563ac98195631c4622be6fe4.blob",
+      "bytes": 7598,
+      "sha256": "6d0eb6e19a96167e3bb967a16f3a38f80daf2077563ac98195631c4622be6fe4",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/6e44442c9463c88fe6ef2aad75ad40a6d7b9eb9628d11e42d6adf06803906605.blob",
+      "bytes": 444,
+      "sha256": "6e44442c9463c88fe6ef2aad75ad40a6d7b9eb9628d11e42d6adf06803906605",
+      "aliases": [
+        "campaign/single_port_program_research/LITERATURE_RETRIEVAL.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/70a4803ac3bf813d85475b9b0e9e650158a9078dbad8eecc3fc5ca9955abb6b8.blob",
+      "bytes": 1187,
+      "sha256": "70a4803ac3bf813d85475b9b0e9e650158a9078dbad8eecc3fc5ca9955abb6b8",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/ANALYTIC_PLAN.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/735e85c1501c220234a2e6935eab95afa47a844e35db0715e3f104c9721252a2.blob",
+      "bytes": 613,
+      "sha256": "735e85c1501c220234a2e6935eab95afa47a844e35db0715e3f104c9721252a2",
+      "aliases": [
+        "campaign/single_port_autonomous_root_review/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/751e6273e5edce4d3eadf93c4ba83f6c59eb2b9a69df83ce6427ab892732df1e.blob",
+      "bytes": 5786,
+      "sha256": "751e6273e5edce4d3eadf93c4ba83f6c59eb2b9a69df83ce6427ab892732df1e",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/verification/executed_source.py",
+        "campaign/single_port_autonomous_decisive_check/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/7c550e22dfc0c0b99e1f20dcc1d22f20cd4ecd0ebeae8380c54080a6ac43101e.blob",
+      "bytes": 5021,
+      "sha256": "7c550e22dfc0c0b99e1f20dcc1d22f20cd4ecd0ebeae8380c54080a6ac43101e",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/7f9b06e2bd539b52090e4c9f1a6dbc24bade2aa32c8dc32132c06a94d977a35a.blob",
+      "bytes": 1629,
+      "sha256": "7f9b06e2bd539b52090e4c9f1a6dbc24bade2aa32c8dc32132c06a94d977a35a",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/source_at_launch/verify_metadata.py",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/source_at_launch/verify_metadata.py",
+        "campaign/single_port_program_decisive_check/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/85777def74d9b5e0e1c041acf43c9c5265b671cdbf5e9cf149c4f69a617da00a.blob",
+      "bytes": 2685,
+      "sha256": "85777def74d9b5e0e1c041acf43c9c5265b671cdbf5e9cf149c4f69a617da00a",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/source_at_launch/seal.py",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/source_at_launch/seal.py",
+        "campaign/single_port_program_decisive_check/seal.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/8641cba03e079cee5b2ad81a05fb149a7aba48f49aa45b1a6e243c9078a06a03.blob",
+      "bytes": 2287,
+      "sha256": "8641cba03e079cee5b2ad81a05fb149a7aba48f49aa45b1a6e243c9078a06a03",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/verification/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/8818c6ac3a11e7b0ebc1347257ac8c231f974db86af81b18dcf34791502592ea.blob",
+      "bytes": 77,
+      "sha256": "8818c6ac3a11e7b0ebc1347257ac8c231f974db86af81b18dcf34791502592ea",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/capture/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/92e2e9779011723e934b8b21e692501f168f4010b677ddacea089f85721472f5.blob",
+      "bytes": 7707,
+      "sha256": "92e2e9779011723e934b8b21e692501f168f4010b677ddacea089f85721472f5",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/READ_COVERAGE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/994f9435ed1e772e8be2ce614a52569bc99c15dbfbead96c3d764de5e2e3bf33.blob",
+      "bytes": 1366,
+      "sha256": "994f9435ed1e772e8be2ce614a52569bc99c15dbfbead96c3d764de5e2e3bf33",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/RECOVERY_SCOPE.md",
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/source_at_launch/RECOVERY_SCOPE.md",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/source_at_launch/RECOVERY_SCOPE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/9b7d3b4d1305a80c221ccfe749a5e4921def521260adbf772e07a26a1124c969.blob",
+      "bytes": 607,
+      "sha256": "9b7d3b4d1305a80c221ccfe749a5e4921def521260adbf772e07a26a1124c969",
+      "aliases": [
+        "campaign/single_port_program_root_review/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/9b8f134b0a9a5c2131361e6e5cb99c6fad7bf7527267743cc38c50799b77ea43.blob",
+      "bytes": 1663,
+      "sha256": "9b8f134b0a9a5c2131361e6e5cb99c6fad7bf7527267743cc38c50799b77ea43",
+      "aliases": [
+        "campaign/single_port_program_research/LITERATURE_SCOPE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/9ef3a73f2495f26aa0fd470b29337202faa9d0cb874f28626b51045d9c504b17.blob",
+      "bytes": 442,
+      "sha256": "9ef3a73f2495f26aa0fd470b29337202faa9d0cb874f28626b51045d9c504b17",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/VERIFICATION.json",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/a19e0fab5ecca54f0e31cbf6af167e86942868e6054156d35dd5c4bf9340ec8b.blob",
+      "bytes": 401,
+      "sha256": "a19e0fab5ecca54f0e31cbf6af167e86942868e6054156d35dd5c4bf9340ec8b",
+      "aliases": [
+        "campaign/single_port_program_research/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/a2ac0f77d5d0daf6278144a71c980e43210a21c4c7dce6699ae765e1ac8bcf92.blob",
+      "bytes": 2506,
+      "sha256": "a2ac0f77d5d0daf6278144a71c980e43210a21c4c7dce6699ae765e1ac8bcf92",
+      "aliases": [
+        "campaign/single_port_program_research/SOURCE_IDENTITIES.initial.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/a6df08142a325e928f179bab470d7fde711dcb8cc7524e0b665f9e0952db9b67.blob",
+      "bytes": 3850,
+      "sha256": "a6df08142a325e928f179bab470d7fde711dcb8cc7524e0b665f9e0952db9b67",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/aad4ffbaa29dd1a4964437e93f4086fc94472a9e95b2aa37c4b0ddd33e7cc9d4.blob",
+      "bytes": 2502,
+      "sha256": "aad4ffbaa29dd1a4964437e93f4086fc94472a9e95b2aa37c4b0ddd33e7cc9d4",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/source_at_launch/record_metadata.py",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/source_at_launch/record_metadata.py",
+        "campaign/single_port_program_decisive_check/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/ab454bca5a612b8b69c24442e1b63fd44d83578c5536daaad9ade6e0ff3873aa.blob",
+      "bytes": 3961,
+      "sha256": "ab454bca5a612b8b69c24442e1b63fd44d83578c5536daaad9ade6e0ff3873aa",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/capture_sources.py",
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/source_at_launch/capture_sources.py",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/source_at_launch/capture_sources.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/acf27628d6df223ae8432b70e707ebdc9d1dac86f71ea78cd52f800cdbdc1b4b.blob",
+      "bytes": 160,
+      "sha256": "acf27628d6df223ae8432b70e707ebdc9d1dac86f71ea78cd52f800cdbdc1b4b",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/b1b6eb20146073ff278d12d786452eec533b4e5c16ea1750c90df9ba11c15d05.blob",
+      "bytes": 540,
+      "sha256": "b1b6eb20146073ff278d12d786452eec533b4e5c16ea1750c90df9ba11c15d05",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/SEAL_OPERATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/b255fa80806059e01f087eb438a6540348ad7024f347a6baaacc9953cb1a2a3b.blob",
+      "bytes": 4714,
+      "sha256": "b255fa80806059e01f087eb438a6540348ad7024f347a6baaacc9953cb1a2a3b",
+      "aliases": [
+        "campaign/local_clock_autonomous_preparation_candidate/SOURCE_PINS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/b495019f029b1174515fb04e8c459fe38792eb7c9413632b606fd2844cf1b0a6.blob",
+      "bytes": 2895,
+      "sha256": "b495019f029b1174515fb04e8c459fe38792eb7c9413632b606fd2844cf1b0a6",
+      "aliases": [
+        "campaign/single_port_autonomous_root_review/VERIFICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/b648ac2139f59077b2edd7ccd4dc8c54888f51f78aec4ab7afff3c0232950260.blob",
+      "bytes": 2636,
+      "sha256": "b648ac2139f59077b2edd7ccd4dc8c54888f51f78aec4ab7afff3c0232950260",
+      "aliases": [
+        "campaign/single_port_program_research/finalize_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/b981b1b15d4bc75a8ab4d5d50ebd18eb5be22bfbb5d6c342545d0e337be23f99.blob",
+      "bytes": 151007,
+      "sha256": "b981b1b15d4bc75a8ab4d5d50ebd18eb5be22bfbb5d6c342545d0e337be23f99",
+      "aliases": [
+        "campaign/single_port_program_research/Burgarth_et_al_0805.3975v2.pdf"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/bbe2e9c911e3323f840855fb2e77cc5e86d1669486eb8c8dda2e8cdec3ff53eb.blob",
+      "bytes": 4801,
+      "sha256": "bbe2e9c911e3323f840855fb2e77cc5e86d1669486eb8c8dda2e8cdec3ff53eb",
+      "aliases": [
+        "campaign/single_port_program_root_review/ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/c64f5ef88e56263becf876f92c105438f1371d0d011ee50c7edf70f151c56b6e.blob",
+      "bytes": 7321,
+      "sha256": "c64f5ef88e56263becf876f92c105438f1371d0d011ee50c7edf70f151c56b6e",
+      "aliases": [
+        "campaign/bootstrap/accept_single_port_program_1835.py",
+        "campaign/runs/single_port_program_root_acceptance_1835/executed_source.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/c75486365c5e4324270537f96c5a0210adfd75c9f8c8b5e25a9b6b8b7b9dbe5a.blob",
+      "bytes": 4964,
+      "sha256": "c75486365c5e4324270537f96c5a0210adfd75c9f8c8b5e25a9b6b8b7b9dbe5a",
+      "aliases": [
+        "campaign/single_port_program_research/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/c79073c5d09b2235804a7596a81ec8639dd440c64469e96b835e2a5b946a81c7.blob",
+      "bytes": 339,
+      "sha256": "c79073c5d09b2235804a7596a81ec8639dd440c64469e96b835e2a5b946a81c7",
+      "aliases": [
+        "campaign/single_port_program_research/search_0.stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.blob",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/cb55c8f137758dbab1c26693db14c8f5c5c3b3e4874846625286818e52ead6f0.blob",
+      "bytes": 3431,
+      "sha256": "cb55c8f137758dbab1c26693db14c8f5c5c3b3e4874846625286818e52ead6f0",
+      "aliases": [
+        "campaign/single_port_program_research/search_1.stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "aliases": [
+        "campaign/run.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/d1d233a1f42dd6d3ca79a3d2c16eca45b2aa8f108ab4ea7adc11f31d1efac3fe.blob",
+      "bytes": 380,
+      "sha256": "d1d233a1f42dd6d3ca79a3d2c16eca45b2aa8f108ab4ea7adc11f31d1efac3fe",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/verification/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/d4da9d90ed0ff34a7c89caad741447a02b0fc15971d511102a3e058b88a23d78.blob",
+      "bytes": 11862,
+      "sha256": "d4da9d90ed0ff34a7c89caad741447a02b0fc15971d511102a3e058b88a23d78",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/dad41827ab202b954d14982c3865040d74a9b1cdd043f9977ad92c6fb72fe76b.blob",
+      "bytes": 2265,
+      "sha256": "dad41827ab202b954d14982c3865040d74a9b1cdd043f9977ad92c6fb72fe76b",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/capture/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/db162743162a6811b4d245f33c7b762e2726895701f18c1baa89f8e239786369.blob",
+      "bytes": 2561,
+      "sha256": "db162743162a6811b4d245f33c7b762e2726895701f18c1baa89f8e239786369",
+      "aliases": [
+        "campaign/single_port_program_research/capture_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/dc8155a3798e8a8330cedcb3866d5e85f9480bc49e724fda7ec9394bccef2b53.blob",
+      "bytes": 545,
+      "sha256": "dc8155a3798e8a8330cedcb3866d5e85f9480bc49e724fda7ec9394bccef2b53",
+      "aliases": [
+        "campaign/runs/single_port_autonomous_root_acceptance_1845/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/dc8b9f0dfba5c708e1e5a494f973f503c8561c1cd7aa94b399dba279e54f437e.blob",
+      "bytes": 540,
+      "sha256": "dc8b9f0dfba5c708e1e5a494f973f503c8561c1cd7aa94b399dba279e54f437e",
+      "aliases": [
+        "campaign/runs/single_port_program_root_acceptance_1835/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aliases": [
+        "campaign/runs/single_port_autonomous_root_acceptance_1845/stderr",
+        "campaign/runs/single_port_program_root_acceptance_1835/stderr",
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/capture/stderr",
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/verification/stderr",
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/stderr",
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/stderr",
+        "campaign/single_port_program_research/search_0.stderr",
+        "campaign/single_port_program_research/search_1.stderr"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/e8aafa85650d2a0a59cb6a4740a892e0895b5901f078ab634e17ab42d939df5f.blob",
+      "bytes": 9160,
+      "sha256": "e8aafa85650d2a0a59cb6a4740a892e0895b5901f078ab634e17ab42d939df5f",
+      "aliases": [
+        "campaign/single_port_autonomous_decisive_check/capture_sources.py",
+        "campaign/single_port_autonomous_decisive_check/metadata_runs/capture/executed_source.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/ee5c24cc0cd75e063599661369c06e243464342e5795f3bda85e452aefa2788b.blob",
+      "bytes": 5056,
+      "sha256": "ee5c24cc0cd75e063599661369c06e243464342e5795f3bda85e452aefa2788b",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/verification/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/f36120cdf7737058c4f40030e45d1a4da729be2752ee51bf6f90d4e099d88b1b.blob",
+      "bytes": 1532,
+      "sha256": "f36120cdf7737058c4f40030e45d1a4da729be2752ee51bf6f90d4e099d88b1b",
+      "aliases": [
+        "campaign/single_port_program_research/SELECTED_PLAN.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10.blob",
+      "bytes": 704,
+      "sha256": "f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10",
+      "aliases": [
+        "campaign/single_port_autonomous_root_candidate/PROPOSAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/f3ed028f048f05d98e3bf474070561355cfca5b31ca48b8ed5a5d8322d24f2e7.blob",
+      "bytes": 2116,
+      "sha256": "f3ed028f048f05d98e3bf474070561355cfca5b31ca48b8ed5a5d8322d24f2e7",
+      "aliases": [
+        "campaign/single_port_program_decisive_check/metadata_runs/capture/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/f6e98cb5b38470ace605d81befd6df2e8c96e483b3e9b57c922c87e0b20e498c.blob",
+      "bytes": 5194,
+      "sha256": "f6e98cb5b38470ace605d81befd6df2e8c96e483b3e9b57c922c87e0b20e498c",
+      "aliases": [
+        "campaign/single_port_program_research/REPORT.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "aliases": [
+        "repository/AGENTS.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/fa2a52dcaf1d334e980b8d75e4ed187af40cee39322a944d4b72e341be1a88ba.blob",
+      "bytes": 1487,
+      "sha256": "fa2a52dcaf1d334e980b8d75e4ed187af40cee39322a944d4b72e341be1a88ba",
+      "aliases": [
+        "campaign/runs/single_port_autonomous_root_acceptance_1845/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-single-port-program-and-controller-20261015/source_recovery/fa848abcdd2e4f524f8cf8c346edfc83d905e036dab11a6f794beea5aa568893.blob",
+      "bytes": 1475,
+      "sha256": "fa848abcdd2e4f524f8cf8c346edfc83d905e036dab11a6f794beea5aa568893",
+      "aliases": [
+        "campaign/runs/single_port_program_root_acceptance_1835/EXECUTION.json"
+      ]
+    }
+  ],
+  "immutable_bodies_stored_only_in_note": true
+}

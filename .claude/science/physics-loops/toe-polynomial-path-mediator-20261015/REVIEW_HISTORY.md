@@ -1,0 +1,11 @@
+# Review and exposure history
+
+The protected independent derivation 0620431a was frozen before root-candidate access. Root's complete pre-comparison read is recorded at 20:01:16 UTC. The exposed comparison read root 45c211e6 at 20:01:44 UTC and preserved both proofs. Shared prior controller machinery, earlier mass-regularization exposure and the same model/effort limit the independence claim.
+
+Comparison 3cc7a9d3 supports both conditional families and identifies the lower-bound-only n wording defect. The wrapper requires minimal n or an explicit matching upper bound. Its explicit root-family majorants belong to the exposed comparison. Root acceptance 8f26be5f records complete analytical reading and was created by the actual metadata-only source-acceptance run at 20:17:47.959933–20:17:48.020149 UTC.
+
+Root's separate numerical fixture ran at 20:03:09.827816–20:03:10.280094 UTC. It retained all auxiliary sectors and the admitted one-clock-head sector in its finite contraction cases. The comparison checker learned of it by notification but did not inspect or use its files. The present assembler read its complete code, results, receipt and interpretation for accurate packaging, without replay. Fourteen spectra, fourteen inverse examples and four corrector/moment cases are one exposed scientific program, not thirty-two independent checks.
+
+The present task reads all three complete polynomial bodies, exposures, source decisions and necessary parent argument; it assembles and statically inspects source. It is source exposed and adds no new independent proof, scientific run or audit. Reviewed prior publication machinery is reused by exact function/source identities with complete changed-code and payload maps. Metadata equality alone is not semantic acceptance.
+
+This source-drafting task was limited to source assembly; root performs authorized integration and publication. Root publication-wrapper review d78856437e14673ea7c0a444c645527b2ca6a97fd4f99e81d9101b454cbff25f and selected PR 9619 base are now bound separately. Integration, publication and retained audit outcomes are separate actual records; historical pending source fields remain unchanged. No editable prompt changed.

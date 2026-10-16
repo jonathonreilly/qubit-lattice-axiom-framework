@@ -1,0 +1,101 @@
+"""Explicit source and actual-receipt recovery; no scientific computation."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+N = D.parent
+W = N.parent/'correlation_worktree'
+I = N/'basis_state_clock_independent'
+R = N/'basis_state_clock_root_candidate'
+sources = [
+    (R/'DERIVATION.md', '0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46', 'Complete root candidate newly read'),
+    (R/'SOURCE_PINS.json', '51f2979535cd494acf2553f7f6ac0a464b2a9841552e16535f5a00ca48e67a4d', 'Complete root source/exposure metadata'),
+    (R/'PROPOSAL_FREEZE.json', 'a24ea21b2c89a80554f09ca0038ef4ed61461ecca51e4a088dad6df4ce30fbea', 'Root two-member proposal freeze'),
+    (I/'DERIVATION.md', '84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39', 'Complete immutable independent proof'),
+    (I/'FINAL_FREEZE.json', 'e77e7efe17a30c4444b0de48a0d88d2bc6711d34549e7106153208a2da58566d', 'Independent 35-member pre-exposure freeze'),
+    (N/'basis_state_clock_root_review/PRE_EXPOSURE_READ.json', '5e81e709bc47249ee678ec7296b7b5d0b2a5ca32197503c19b7f1448f7b36149', 'Actual root complete read before candidate access'),
+    (N/'runs/review_frontiers_1926/EXECUTION.json', '75f6082dd4b7c31737a3fe426a714647f83299be418c7f339729de6b3b74158e', 'Actual root chronology receipt; no replay'),
+    (N/'single_port_autonomous_root_candidate/DERIVATION.md', '0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d', 'Previously complete reading, exact unchanged mediator premises'),
+    (N/'single_port_autonomous_decisive_check/REPORT.md', '52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d', 'Previously complete source-exposed mediator assessment'),
+    (N/'single_port_autonomous_root_review/ACCEPTANCE.md', '134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f', 'Complete qualified acceptance reread'),
+    (W/'docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md', '12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89', 'General pure-factor retained-marginal lemma; exact bounded reading below'),
+    (W/'AGENTS.md', 'f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f', 'Unchanged current instructions, reused complete reading'),
+    (W/'docs/ai_methodology/SCIENCE_WORKFLOW.md', '05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce', 'Unchanged current workflow, reused complete reading'),
+    (Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'), '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455', 'Unchanged review skill, reused complete applicable reading'),
+]
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def checked(path, expected):
+    data = path.read_bytes()
+    assert sha(data) == expected, str(path)
+    return data
+
+freeze_checks = []
+for folder, filename, expected in [(R, 'PROPOSAL_FREEZE.json', sources[2][1]), (I, 'FINAL_FREEZE.json', sources[4][1])]:
+    freeze = json.loads(checked(folder/filename, expected))
+    for row in freeze['files']:
+        path = Path(row['path'])
+        if not path.is_absolute():
+            path = folder/path
+        data = checked(path, row['sha256'])
+        assert len(data) == row['bytes']
+    freeze_checks.append({'freeze': str(folder/filename), 'sha256': expected, 'members_verified': len(freeze['files'])})
+
+for name in ('EXPOSURE_AND_LIMITS.md', 'ROUTE_LOG.md', 'START.md', 'SOURCE_MANIFEST.json'):
+    rows = json.loads((I/'FINAL_FREEZE.json').read_text())['files']
+    row = next(row for row in rows if row['path'] == name)
+    sources.append((I/name, row['sha256'], 'Immutable independent exposure/route/source metadata, not new science'))
+
+receipt_path = N/'runs/review_frontiers_1926/EXECUTION.json'
+receipt = json.loads(receipt_path.read_text())
+assert receipt['exit_code'] == 0
+for key in ('child_source_at_launch', 'recorder', 'stdout', 'stderr'):
+    row = receipt[key]
+    path = Path(row['path'])
+    data = checked(path, row['sha256'])
+    assert len(data) == row['bytes']
+    sources.append((path, row['sha256'], 'Actual root receipt member '+key+'; chronology/provenance only'))
+captured = receipt_path.parent/'executed_source.py'
+assert captured.read_bytes() == Path(receipt['child_source_at_launch']['path']).read_bytes()
+sources.append((captured, receipt['child_source_at_launch']['sha256'], 'Actual root source-at-launch capture; incidental other-frontier metadata unselected'))
+
+archive = D/'source_recovery'
+archive.mkdir(exist_ok=False)
+records = []
+seen_paths = set()
+for path, expected, coverage in sources:
+    if str(path) in seen_paths:
+        continue
+    seen_paths.add(str(path))
+    data = checked(path, expected)
+    target = archive/(expected+'.blob')
+    if not target.exists():
+        target.write_bytes(data)
+    records.append({'original_path': str(path), 'bytes': len(data), 'sha256': expected,
+                    'recovery': str(target.relative_to(D)), 'coverage': coverage})
+
+parent = W/'docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+data = parent.read_bytes()
+lines = data.splitlines(keepends=True)
+intervals = []
+for first, last in ((76,98),(307,350),(779,813),(1518,1547)):
+    start = sum(map(len, lines[:first-1]))
+    end = sum(map(len, lines[:last]))
+    intervals.append({'container': str(parent), 'line_start': first, 'line_end_inclusive': last,
+                      'start_byte_inclusive': start, 'end_byte_exclusive': end,
+                      'bytes': end-start, 'sha256': sha(data[start:end])})
+
+manifest = {
+    'captured_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Source-exposed comparison; exact source and actual chronology recovery',
+    'scientific_programs_run': 0, 'source_freezes_verified': freeze_checks,
+    'canonical_lemma_read_intervals': intervals, 'sources': records,
+    'limits': 'Prior root metadata may mention another frontier; it is not a proof import. No current acceptance is inferred.',
+}
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2)+'\n')
+print(json.dumps({'sources': len(records), 'recovery_blobs': len(list(archive.iterdir())),
+                  'source_freezes': freeze_checks, 'scientific_programs_run': 0}))

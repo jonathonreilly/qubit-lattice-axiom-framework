@@ -1,0 +1,40 @@
+"""Capture the narrowly selected old premises and exposure metadata, never new candidates."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+N = D.parent
+W = N.parent / 'correlation_worktree'
+
+
+def pin(path):
+    b = path.read_bytes()
+    return {'path': str(path), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+
+selected = [
+    (N / 'single_port_program_research/DERIVATION.md', 33757, 'bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0', 'Mathematical parent; earlier complete read reused, selected sections reread during selection.'),
+    (N / 'single_port_program_decisive_check/REPORT.md', 27426, '3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5', 'Mathematical parent review; complete reread in protected task.'),
+    (N / 'post_polynomial_realization_selection/MEMO.md', 10028, '1332d1d25624e2cbe65c52a67b3d6726eac80465c9bf46dda17dbd36c4bdcb74', 'Own frozen selection/exposure record only; no additional proof import.'),
+    (N / 'post_polynomial_realization_selection/FINAL_FREEZE.json', 1335, '63279c2b226089efe548c52a74364f90007116951f354d40e5bccc9b84abb2df', 'Selection freeze identity only; other members remain at original packet.'),
+    (W / 'AGENTS.md', 1265, 'f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f', 'Previously complete instruction reading reused at matched identity.'),
+    (W / 'docs/ai_methodology/SCIENCE_WORKFLOW.md', 15435, '05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce', 'Previously complete workflow reading reused at matched identity.'),
+    (Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'), 14490, '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455', 'Previously read bounded claim-discipline guidance; no audit invocation.'),
+    (N / 'polynomial_path_mediator_independent/record_metadata.py', 2123, 'c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a', 'Exact reusable metadata recorder source; no scientific claim import.'),
+]
+blobs = D / 'sources'
+blobs.mkdir(exist_ok=True)
+rows = []
+for path, size, sha, role in selected:
+    row = pin(path)
+    assert row['bytes'] == size and row['sha256'] == sha, (str(path), row)
+    q = blobs / sha
+    q.write_bytes(path.read_bytes())
+    row.update({'role_and_coverage': role, 'recovery': str(q.relative_to(D))})
+    rows.append(row)
+assert (D / 'record_metadata.py').read_bytes() == selected[-1][0].read_bytes()
+out = {'captured_utc': datetime.now(timezone.utc).isoformat(), 'sources': rows, 'scientific_programs_run': 0, 'new_root_candidate_exposed': False, 'recovery_limits': 'Only these eight exact sources are copied. Historical freezes are retained as selected provenance, not a recursively recovered or reverified prior archive.'}
+(D / 'SOURCE_MANIFEST.json').write_text(json.dumps(out, indent=2, sort_keys=True) + '\n')
+print(json.dumps({'source_rows': len(rows), 'source_blobs': len(list(blobs.iterdir())), 'scientific_programs_run': 0}))

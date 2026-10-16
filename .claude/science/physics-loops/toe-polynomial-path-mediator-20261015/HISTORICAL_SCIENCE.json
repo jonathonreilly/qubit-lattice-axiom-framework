@@ -1,0 +1,71 @@
+{
+  "historical_scientific_programs": 1,
+  "executed_this_draft": false,
+  "results": {
+    "bytes": 8166,
+    "sha256": "311d09793428b5a5ba64be3577a611d42b4671c60d1651718c8ab23e650e5a8f",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/311d09793428b5a5ba64be3577a611d42b4671c60d1651718c8ab23e650e5a8f.blob"
+    }
+  },
+  "interpretation": {
+    "bytes": 955,
+    "sha256": "70eea76efd8e224e4d5143856f6e4af6949e17fcf032b54e700ee4b1bb4e77f5",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/70eea76efd8e224e4d5143856f6e4af6949e17fcf032b54e700ee4b1bb4e77f5.blob"
+    }
+  },
+  "freeze": {
+    "bytes": 1742,
+    "sha256": "eb5027b361fd91e2dfc944f39d86a448dbfc1d30994fc1a3e2a54e561f35eb32",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/eb5027b361fd91e2dfc944f39d86a448dbfc1d30994fc1a3e2a54e561f35eb32.blob"
+    }
+  },
+  "execution": {
+    "bytes": 1454,
+    "sha256": "cce2637c4993f041808aabb9ef9ba966091be8946d0b133fe4dd06033da2a88a",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/cce2637c4993f041808aabb9ef9ba966091be8946d0b133fe4dd06033da2a88a.blob"
+    }
+  },
+  "source": {
+    "bytes": 5571,
+    "sha256": "ade7e28f58c4029eb4505cc29f1a951e7ee135db895928385aaf8699294c3d71",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/ade7e28f58c4029eb4505cc29f1a951e7ee135db895928385aaf8699294c3d71.blob"
+    }
+  },
+  "recorder": {
+    "bytes": 1342,
+    "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob"
+    }
+  },
+  "stdout": {
+    "bytes": 336,
+    "sha256": "2764f24509514fd1cd07cc736276e6af179ad2f733deabd21ef6aa0df8171773",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/2764f24509514fd1cd07cc736276e6af179ad2f733deabd21ef6aa0df8171773.blob"
+    }
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recovery": {
+      "kind": "blob",
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+    }
+  },
+  "comparison_checker_inspected_fixture": false,
+  "comparison_checker_notification_exposure": true,
+  "scope": "Finite exposed double-precision sanity evidence; no universal proof, independent check, long-time or device test"
+}

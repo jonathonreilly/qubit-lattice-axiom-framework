@@ -1,0 +1,5 @@
+# Independent basis-state clock derivation
+
+Started 2026-10-15T19:04:58.655538+00:00 after sealing the compiler/controller publication draft. Sole output directory is this directory. No root basis-state-clock candidate has been opened, listed, hashed, searched, or otherwise inspected. Root disclosed only the neutral task and that a separate candidate exists.
+
+Prior source exposure includes the accepted unary-cycle clock proof/review and the source-exposed single-port compiler/controller proofs and decisions. Those sources are context; this derivation will state its own finite clock, elementary binomial evolution, concentration bound, full-output comparison and costs. No scientific execution is planned unless a specific unresolved analytic risk needs it. Metadata source capture and sealing are permitted. The selected model/effort are unchanged; no delegation.

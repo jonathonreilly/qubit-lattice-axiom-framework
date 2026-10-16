@@ -1,0 +1,23 @@
+{
+  "disposition": "Complete positive conditional derivation, awaiting root reading and any separately authorized exposed comparison.",
+  "editable_prompts_changed": [],
+  "mathematical_parent_sources": [
+    "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0",
+    "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+  ],
+  "new_metadata_subprocesses": 2,
+  "open_limits": [
+    "Fixed admitted quantitative augmented certificate only.",
+    "No uniform varying-lambda/window or varying-dimension bound.",
+    "No arbitrary computable-oracle runtime bound.",
+    "Physical waveform, timing, isolation, static coefficients and initialization remain supplied."
+  ],
+  "proof": {
+    "bytes": 30870,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_independent/DERIVATION.md",
+    "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+  },
+  "protected_from_new_root_candidate": true,
+  "scientific_programs_run": 0,
+  "source_rows": 8
+}

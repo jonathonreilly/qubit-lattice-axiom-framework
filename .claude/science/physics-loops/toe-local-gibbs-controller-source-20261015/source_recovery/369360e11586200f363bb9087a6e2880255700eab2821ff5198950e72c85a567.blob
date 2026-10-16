@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-15T19:21:11.319248+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_review/ACCEPTANCE.md",
+      "bytes": 3238,
+      "sha256": "c2e7680d5a133ca950483f07036e7ef5879871a83e439c490c4bd1c919833537"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_review/PRE_EXPOSURE_READ.json",
+      "bytes": 1747,
+      "sha256": "ceca11900946ddb6b4e9e542b1af3a2ac2c98eab167b90f89e9bdd403bab335c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_root_review/VERIFICATION.json",
+      "bytes": 1605,
+      "sha256": "c36218bb3e5e096caebfb520212907f90c6851572528d10165d5b4fd1e27aa0f"
+    }
+  ],
+  "scope": "Conditional source acceptance with actual pre-exposure root read and verification; not publication or audit."
+}

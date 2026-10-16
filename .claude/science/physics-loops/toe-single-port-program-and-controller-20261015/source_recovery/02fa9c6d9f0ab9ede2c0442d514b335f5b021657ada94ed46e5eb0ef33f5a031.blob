@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-15T18:33:02.118091+00:00",
+  "decision": "Conditional external one-port endpoint/window source accepted with mandatory corrected Pauli step, endpoint-or-variation work contract and whole-generator positivity scope.",
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_root_review/ACCEPTANCE.md",
+    "bytes": 4801,
+    "sha256": "bbe2e9c911e3323f840855fb2e77cc5e86d1669486eb8c8dda2e8cdec3ff53eb"
+  },
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/DERIVATION.md",
+    "bytes": 33757,
+    "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_decisive_check/REPORT.md",
+    "bytes": 27426,
+    "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+  },
+  "freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/FINAL_FREEZE.json",
+        "bytes": 6408,
+        "sha256": "15d6ad5e756548ddd1437624513b0d3b43060ba99a735b8a2ea9036449f7ba4c"
+      },
+      "verified_members": 34
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_decisive_check/FINAL_FREEZE.json",
+        "bytes": 20996,
+        "sha256": "381d34ec60e13c02100283f751ac3ca3b26b21842af1a11b6ea474e86e7a0829"
+      },
+      "verified_members": 58
+    }
+  ],
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 2116,
+      "sha256": "f3ed028f048f05d98e3bf474070561355cfca5b31ca48b8ed5a5d8322d24f2e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_decisive_check/metadata_runs/verification/EXECUTION.json",
+      "bytes": 2141,
+      "sha256": "0922dc404713a76b19016144e9532a0e5d8b3e1fd2b149c960203d8d11e84683"
+    }
+  ],
+  "root_full_read": true,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

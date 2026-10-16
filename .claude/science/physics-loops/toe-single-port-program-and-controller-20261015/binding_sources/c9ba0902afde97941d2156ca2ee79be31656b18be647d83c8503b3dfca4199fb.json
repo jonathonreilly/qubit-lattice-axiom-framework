@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-15T19:41:56.570775+00:00",
+  "refs": {
+    "HEAD": "e93bc2b057492d0eef909907708871cb1920fdc6",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "fetch_scope": "Actual origin/main fetch19:41; instruction ref observed, not fetched anew.",
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1945/EXECUTION.json",
+      "bytes": 1176,
+      "sha256": "595bc5ac321759aa883a0a0a8ed89f7192ac48aac16776f9dfef3bd62dd8decf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1945/EXECUTION.json",
+      "bytes": 1261,
+      "sha256": "51bea7edd9222b8217d29f03270712d579941ecedaa0b7db3a06ced0494d8ef5"
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1945/stdout",
+    "bytes": 17907,
+    "sha256": "91697189a3cd89c90fe1b5a36a87132c8d89e7f907746c61a27046c3176a7144"
+  },
+  "previous_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1905/REFS.json",
+    "bytes": 3275,
+    "sha256": "41ed7d7d4ad1bcdf43b9004d1da164abfdda0a4d3090da2a180cbc11d4f045e1"
+  },
+  "inventory_count": 46,
+  "inventory_delta": {
+    "new": [
+      {
+        "baseRefName": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+        "headRefName": "physics-loop/toe-transverse-field-memory-20261015",
+        "headRefOid": "e93bc2b057492d0eef909907708871cb1920fdc6",
+        "isDraft": false,
+        "number": 9616,
+        "title": "[physics-loop] transverse-field-memory: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9616"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "external_science": "Previously scoped9612/9614 preserved; inspect any changed/new external head before import.",
+  "current_publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/transverse_field/PUBLICATION.json",
+    "bytes": 1559,
+    "sha256": "dfb2d10713db8efe0f591fde30db425fade2120b66b5476253a7c568b054a2a0"
+  },
+  "current_attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/transverse_field/ATTACHMENT.json",
+    "bytes": 374,
+    "sha256": "c3496c910e735e21369eb3b78938b2618bfbc6362ca3877988549219da30c53d"
+  }
+}

@@ -1,0 +1,51 @@
+"""Seal the complete comparison and actual metadata after source refresh."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+assert not (D/'FINAL_FREEZE.json').exists()
+started = datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path.relative_to(D)), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+def verify(path, row):
+    data = path.read_bytes()
+    assert len(data) == row['bytes'] and hashlib.sha256(data).hexdigest() == row['sha256'], str(path)
+
+v = json.loads((D/'VERIFICATION.json').read_text())
+verify(D/'REPORT.md', v['report'])
+for row in json.loads((D/'SOURCE_MANIFEST.json').read_text())['sources']:
+    verify(Path(row['original_path']), row)
+    verify(D/row['recovery'], row)
+receipts = []
+for label in ('capture', 'verify'):
+    path = D/'metadata_runs'/label/'EXECUTION.json'
+    r = json.loads(path.read_text())
+    assert r['exit_code'] == 0 and r['scientific_programs_run'] == 0
+    for key in ('child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr'):
+        verify(Path(r[key]['path']), r[key])
+    receipts.append(pin(path))
+for row in v['scripts']:
+    verify(Path(row['path']), row)
+(D/'SEAL_OPERATION.json').write_text(json.dumps({
+    'started_utc': started, 'finished_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Actual in-process metadata seal; no invented launch receipt',
+    'actual_metadata_subprocess_receipts': receipts, 'scientific_programs_run': 0,
+    'original_proofs_modified': False, 'editing_failure': 'OPERATION_FAILURES.md',
+}, indent=2)+'\n')
+members = [pin(p) for p in sorted(D.rglob('*')) if p.is_file() and p.name != 'FINAL_FREEZE.json']
+freeze = {
+    'frozen_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Complete source-exposed analytic comparison, separately attributed synthesis and actual metadata',
+    'report': pin(D/'REPORT.md'), 'scientific_programs_run': 0,
+    'same_model_source_exposed': True, 'original_proofs_modified': False, 'files': members,
+}
+target = D/'FINAL_FREEZE.json'
+target.write_text(json.dumps(freeze, indent=2)+'\n')
+for row in members:
+    verify(D/row['path'], row)
+print(json.dumps({'freeze': pin(target), 'members': len(members), 'report': freeze['report']}))

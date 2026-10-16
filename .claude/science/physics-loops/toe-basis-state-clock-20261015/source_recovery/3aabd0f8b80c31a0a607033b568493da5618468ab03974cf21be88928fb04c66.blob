@@ -1,0 +1,11 @@
+# Actual derivation route
+
+The initial route, stated to root before any candidate exposure, was the symmetric-spin weighted path with binomial site law and inverse-arcsine sample times. An initial positive realization used scalar-shifted exchange edges. Before writing the theorem I replaced that realization with the exact positive edge blocks
+
+  nu[(m-j)n_j+(j+1)n_{j+1}-sqrt((j+1)(m-j))(XX+YY)/2].
+
+Their single-excitation subblock has zero determinant and positive trace; summing the diagonal terms gives nu*m*N. This preserves the same binomial evolution, lowers the initial mean compared with the initial scalar-shifted realization, and exposes all scalar and number-sector costs. The abandoned preliminary realization is not a failed theorem or a scientific execution. No numerical calculation was needed.
+
+The public arXiv abstract for Christandl et al., quant-ph/0309131, was opened only after this route and its concentration estimate were fixed. It confirms standard prior art for fixed unequal-coupling perfect-transfer paths. The final derivation proves the exact representation and estimate directly rather than importing an unread theorem statement. No novelty claim for the spin-chain mechanism is made.
+
+Root candidate exposure: none. No list, hash, search, read, or content-based inference from that candidate was performed.

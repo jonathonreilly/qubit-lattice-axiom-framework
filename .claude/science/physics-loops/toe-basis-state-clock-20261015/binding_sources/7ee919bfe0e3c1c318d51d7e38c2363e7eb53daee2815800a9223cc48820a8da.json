@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T20:21:28.726084+00:00",
+  "baseRefName": "physics-loop/toe-single-port-program-and-controller-20261015",
+  "headRefName": "physics-loop/toe-local-gibbs-controller-source-20261015",
+  "headRefOid": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+  "isDraft": false,
+  "number": 9618,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9618",
+  "tree": "e3d0acc37b4dd7d3764f87f48b96eec7026b4257",
+  "base_head": "86eac8cc4523f7f15c8d84824f462f9a5c037806",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 102731,
+    "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_gibbs_controller_source_2026_10_15.py",
+    "bytes": 27829,
+    "sha256": "686529085c301520099d2c9b67bd7f720696301dba60582068db4d87b2a10490"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_gibbs_controller/PR_BODY.md",
+    "bytes": 3246,
+    "sha256": "f0b3aa479f5268aa0a42373ada3c08552c933361abefce09845cad598b802565"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

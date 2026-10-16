@@ -1,0 +1,251 @@
+{
+  "utc": "2026-10-15T21:13:10.293730+00:00",
+  "kind": "root_source_publication_review",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/FINAL_FREEZE.json",
+    "bytes": 87429,
+    "sha256": "137a053a187876c9540c9a2f3efcc60d03af6cb2b5da28398c86b86d8981e3fa"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/proposal/docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 96882,
+    "sha256": "2e300bea07e139badb8883b7f4a418c1bb25fc073fa107027fd1429160339ed3"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/proposal/scripts/conditioned_positive_time_compiler_2026_10_15.py",
+    "bytes": 26057,
+    "sha256": "497d2e8eafc7527b197d6f9c44cfc4ee02f46d06cca243f4dc6cc27a0a3f5337"
+  },
+  "body_pins": [
+    {
+      "name": "root_author",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20523,
+      "end_byte_exclusive": 38719,
+      "bytes": 18196,
+      "sha256": "2de387eb501aa8ead91afa1f5a26f7d3a0bbf11e51285d99786715152ad5b6d6"
+    },
+    {
+      "name": "independent_author",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 38880,
+      "end_byte_exclusive": 69750,
+      "bytes": 30870,
+      "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+    },
+    {
+      "name": "comparison",
+      "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 69903,
+      "end_byte_exclusive": 96882,
+      "bytes": 26979,
+      "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+    }
+  ],
+  "parents": [
+    {
+      "path": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 136036,
+      "sha256": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e",
+      "claim_id": "single_port_program_and_autonomous_controller_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "compiler_author",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 17605,
+          "end_byte_exclusive": 51362,
+          "bytes": 33757,
+          "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "compiler_author"
+      ],
+      "review_evidence": [
+        {
+          "name": "compiler_assessment",
+          "container": "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 51524,
+          "end_byte_exclusive": 78950,
+          "bytes": 27426,
+          "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+        }
+      ],
+      "role": "direct_mathematical_parent",
+      "import_scope": "Fixed full-plant geometry, positive NN path, one-port alphabet and qualified augmented actual-aging compiler context. The new quantitative recipes are proved in the three preserved bodies; autonomous controller, clock, memory and other stack milestones are not mathematical imports."
+    }
+  ],
+  "existing_source_acceptances": {
+    "conditioned_compiler": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_review/ACCEPTANCE.md",
+      "bytes": 2939,
+      "sha256": "9f90d834ef33e01300eed265e196df1f8d66ec92f846bfa96d30716d7d25790d"
+    }
+  },
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "current_files_reviewed_with_exact_reuse": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/wrapper.md",
+      "bytes": 20369,
+      "sha256": "39633fcb252c5d9cb64e7eb26156a3f2575d9e3da1cbac684040ecced27e87ff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/build_proposal.py",
+      "bytes": 16129,
+      "sha256": "07597dc76f268e48268b1d74cd9bb0b664574ff1095140141315a021d8ca1151"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/primary_template.py",
+      "bytes": 13180,
+      "sha256": "7c7bd8caeb71a8498d5ed2456dd7ee3ee8f45e70fb8146dfb3df4b2578577121"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/inspect_proposal.py",
+      "bytes": 13524,
+      "sha256": "a020802634d13a005ba3770bba064c5f4314b9c96a9955dda2189a04c1f8e360"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/seal_packet.py",
+      "bytes": 4360,
+      "sha256": "a872b02353eed9d40cb11dfc92e1ec6fe59ce7907213cab185d3c8f190b76a87"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/prepare_sources.py",
+      "bytes": 4376,
+      "sha256": "7a8de49da39be4db23fb6b679dab9a2651d2db98643186027db90d3314cc2703"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/record_metadata.py",
+      "bytes": 2662,
+      "sha256": "4951b9783bcb0a3fc17369f3b3cb85e3c859a50d315945bb7059ec20358134f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 1824,
+      "sha256": "48cbd9b24911ba42d3e7e8b6a385062e5a712c182b7b130c0ac28040791e9462"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/BINDING_CONTRACT.md",
+      "bytes": 1381,
+      "sha256": "6a1d7f8c5260fec0e65edb6e0e1b993d5cbf498822d3e02625cfb114f8df67b5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1063,
+      "sha256": "70ec8c8290682ceb27ee3f223d29c2f66c22d688951fc40dcfb9966c9349bdcb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1427,
+      "sha256": "0d1334a9c745e8d357441d4b6f4ec2e955a5d24812fa3173b598d30b8eafb388"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/HANDOFF.md",
+      "bytes": 2006,
+      "sha256": "6516bce38cd0458ff259f57cb469ad5776b4356e82199f53dfa7079a83667db8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/PR_BODY.md",
+      "bytes": 1487,
+      "sha256": "266caad96cda37f899ccb8263430478c436e75096b9344db0c06d44d2e2e72a7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1151,
+      "sha256": "578a2b9874f157106538d191ed23980c289fc2977bc6416f94197696dc22ff1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3298,
+      "sha256": "5ce30893285f7dd0f71ebb339efbda4e98dc59ab3dbe9eea46290dde364d1133"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/packet_text/TRACE_GATE.md",
+      "bytes": 901,
+      "sha256": "73865020e2a1904cd2bf3e9d7f414f94c5ceaa8b521ef6b1250418c0c5c4af6f"
+    }
+  ],
+  "read_scope": "Complete current wrapper and nine packet texts read. Complete changed builder, inspector, seal, recorder, preparation and primary logic read; repeated unchanged functions reused at verified exact identities. Aggregate truncated changed-code display repaired by complete affected inspector/recorder/seal and builder-final ranges. Three mathematical bodies and compiler parent proof/review reuse exact prior complete reading. Full freeze/source/body/recovery/receipt integrity verified; no new scientific calculation or independent verdict.",
+  "prior_root_metadata_failure": {
+    "receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/conditioned_publication_review_2114/EXECUTION.json",
+      "bytes": 1474,
+      "sha256": "6115a3e6170855873d90fef2cd85f34dd8fa80e3f791defda585b6139f73abf4"
+    },
+    "reason": "Root verifier assumed files key for every nested freeze; protected/comparison freezes use members. No source decision was written. Corrected reader preserves both schemas."
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/metadata_runs/prepare/EXECUTION.json",
+      "bytes": 2177,
+      "sha256": "a0372bec429d6e29c31d76565412f51627069f3e9ea294d40717d401a2601610"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 2167,
+      "sha256": "5b7ea1312e73c00d3c095edc9ce3481842c8cc7af1f7cbf1cfe0273ab12b44ce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/metadata_runs/build_final/EXECUTION.json",
+      "bytes": 2197,
+      "sha256": "311bb1c65f936f73062e3505a5a967730bdb137da017a5eb36380395a86e38e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/metadata_runs/inspection_final/EXECUTION.json",
+      "bytes": 2224,
+      "sha256": "94323f0af1be7a9ca2e9bd1235b3e2a73fb85a120b7ce363f347c8ffc3d39fe4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_publication_draft/metadata_runs/inspection_final_current/EXECUTION.json",
+      "bytes": 2264,
+      "sha256": "22d50a169528b0b70d6b79b3d9227e083ed0b27710a82174c58f8ec8605634bf"
+    }
+  ],
+  "selected_source_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 770,
+        "sha256": "e49ad0cd5e6031729fbecf236c61f973b74d0891491c18f43e6b79fafcb7844d"
+      },
+      "members": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_independent/FINAL_FREEZE.json",
+        "bytes": 4866,
+        "sha256": "586523f983bef60f52cd76d235074f98ea05a4a114475d349b59b36953edb47b"
+      },
+      "members": 27
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/FINAL_FREEZE.json",
+        "bytes": 7548,
+        "sha256": "db7b2b696bbbb59e09f9b5c9bf41df61f0f95f66cbe31bc357ed363929bc64e0"
+      },
+      "members": 40
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_root_review/FINAL_FREEZE.json",
+        "bytes": 653,
+        "sha256": "e6e1c8e0884b669aff569787685c5b12b1186ae2114428ac04015bb4a89442b8"
+      },
+      "members": 2
+    }
+  ],
+  "exact_helper_functions": 33,
+  "qualification_scope": [
+    "Root supplied-log and protected finite-grid recipes remain distinct; actual quantitative augmented certificate and fixed finite plant supplied.",
+    "Product targets compose augmented pairs before reconstructing total aging; window target exp(-isH) W exp(-iTH) with full scalar phase.",
+    "Operator-norm root recurrence test and larger Frobenius protected test are not interchangeable; rational root durations versus computable protected durations remain distinct.",
+    "Full pulse/time/action/calibration/slew/work/moment costs and all outputs retained. Fixed-certificate bounds are not uniform as coupling/conditioning changes, nor polynomial in qubit count or oracle runtime.",
+    "Accuracy-scaled coupling, autonomous implementation, native suppliers, common caps, permanent stopping, pure-memory restoration and physical identification excluded."
+  ],
+  "scientific_programs_run": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": []
+}

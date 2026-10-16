@@ -1,0 +1,25 @@
+{
+  "kind": "actual_basis_state_clock_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+  "actual_git_base": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+  "actual_branch_at_binding": "physics-loop/toe-local-gibbs-controller-source-20261015",
+  "bound_note_sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/20ebf2a5171efc8b24dd7731af9969edda6c36defd076fe186a17fc59bd713bf.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/43e0aba645e3f15844096135323b074de03e5da217ea158c2526ca4897e15706.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/45b2c8dae126a8082667fa9899e994847ff86b4172039dc20ed5730bc645448b.blob",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/5cb68783eb92da96600182e712ccd4529780c215f090807b4bb42dd43b8edd80.py",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/794f22d534ce6989712f085db1dc78928e2fdded1b6bb5a3559ebac049220f08.py",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/7d1c904ccad39714560697845ea919beb3266ff09c0b62aaa76777380920ad67.blob",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/c5d453f67f3723cfdb729a898a33dc8c717b59cec20a8663d795611db275ef24.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/c904492d9b5ae01038b1b545014a043912c1109ddc387694e24e7c3af7e73e0b.json",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-basis-state-clock-20261015/binding_sources/eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708.json"
+  ],
+  "canonical_parent_sha256": {
+    "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e"
+  }
+}

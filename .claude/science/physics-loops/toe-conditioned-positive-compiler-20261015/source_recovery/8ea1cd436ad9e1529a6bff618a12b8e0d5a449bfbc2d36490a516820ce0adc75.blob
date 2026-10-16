@@ -1,0 +1,33 @@
+"""Seal the exposed comparison after its two actual metadata subprocesses."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import sys
+
+D = Path(__file__).resolve().parent
+
+
+def pin(path):
+    b = path.read_bytes()
+    return {'path': str(path), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+
+def write(name, value):
+    (D / name).write_text(json.dumps(value, indent=2, sort_keys=True) + '\n')
+
+
+for label in ['capture', 'verify']:
+    r = json.loads((D / 'metadata_runs' / label / 'EXECUTION.json').read_text())
+    assert r['exit_code'] == 0 and not r['timed_out'] and r['scientific_programs_run'] == 0
+    for key in ['child_source_at_launch', 'source_capture', 'recorder', 'stdout', 'stderr']:
+        row = r[key]
+        got = pin(Path(row['path']))
+        assert got['bytes'] == row['bytes'] and got['sha256'] == row['sha256']
+v = json.loads((D / 'VERIFICATION.json').read_text())
+assert v['report'] == pin(D / 'REPORT.md')
+write('HANDOFF.json', {'report': pin(D / 'REPORT.md'), 'disposition': 'Both conditional recipes supported with root readout chronology qualifications and distinct target/norm/timing contracts. Awaiting root source decision; not an audit.', 'source_exposed': True, 'source_rows': v['source_rows'], 'source_blobs': v['source_blobs'], 'scientific_programs_run': 0, 'new_metadata_subprocesses': 2, 'editable_prompts_changed': [], 'mandatory_qualifications': ['Compose finite target factors as augmented pairs before reconstructing actual aging.', 'Window comparator is exp(-isH) W exp(-iTH), with scalar phase at actual T+s.', 'Keep root operator-norm recurrence test distinct from protected Frobenius test and ceiling.', 'Root supplies logarithm/factors; protected target-grid construction is a separate broader target-data result.', 'Fixed quantitative certificate only, with full physical supply and resource limits.']})
+write('SEAL_OPERATION.json', {'utc': datetime.now(timezone.utc).isoformat(), 'argv': sys.argv, 'cwd': str(Path.cwd()), 'source_at_operation': pin(Path(__file__).resolve()), 'operation': 'Direct in-process metadata seal; not an invented subprocess receipt.', 'scientific_programs_run': 0})
+members = [pin(p) | {'path': str(p.relative_to(D))} for p in sorted(D.rglob('*')) if p.is_file() and p.name != 'FINAL_FREEZE.json']
+write('FINAL_FREEZE.json', {'sealed_utc': datetime.now(timezone.utc).isoformat(), 'status': 'frozen source-exposed analytic comparison', 'scientific_programs_run': 0, 'members': members})
+print(json.dumps({'report': pin(D / 'REPORT.md'), 'freeze': pin(D / 'FINAL_FREEZE.json'), 'members': len(members), 'source_rows': v['source_rows'], 'source_blobs': v['source_blobs'], 'scientific_programs_run': 0}, sort_keys=True))

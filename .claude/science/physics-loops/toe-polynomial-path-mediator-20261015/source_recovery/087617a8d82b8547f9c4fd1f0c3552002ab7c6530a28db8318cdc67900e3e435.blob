@@ -1,0 +1,83 @@
+"""Capture only the explicit comparison sources; no science execution."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+N = D.parent
+W = N.parent/'correlation_worktree'
+I = N/'polynomial_path_mediator_independent'
+R = N/'polynomial_path_mediator_root_candidate'
+
+SOURCES = [
+    (R/'DERIVATION.md', '45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893', 'Complete newly exposed candidate; all eight sections read'),
+    (R/'SOURCE_PINS.json', '78ecb13acae41c653c96f3c5b2943f69aa4969022a7061f03318189b27cd88e2', 'Complete root source/exposure pins; unselected historical rows are not new imports'),
+    (R/'PROPOSAL_FREEZE.json', '60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04', 'Root two-member immutable candidate freeze'),
+    (I/'DERIVATION.md', '0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7', 'Complete protected independent proof, unchanged'),
+    (I/'FINAL_FREEZE.json', '2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9', 'Independent 33-member pre-exposure freeze'),
+    (N/'polynomial_path_mediator_precomparison_root_review/READ_REVIEW.json', '8f29f1e4e660dad0aeb38aefa61883e4a96f6bd95fa3fff115b41893f57485a6', 'Complete root read record; not an executable launch receipt or final acceptance'),
+    (N/'basis_state_clock_comparison/REPORT.md', '8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2', 'Complete unchanged prior comparison; exact permitted mechanics and marginal lemma reused'),
+    (N/'single_port_autonomous_root_candidate/DERIVATION.md', '0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d', 'Complete unchanged prior autonomous source; exact permitted reading reused'),
+    (N/'single_port_autonomous_decisive_check/REPORT.md', '52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d', 'Complete unchanged prior autonomous review; exact permitted reading reused'),
+    (W/'AGENTS.md', 'f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f', 'Unchanged instructions; previous complete reading reused'),
+    (W/'docs/ai_methodology/SCIENCE_WORKFLOW.md', '05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce', 'Unchanged workflow; previous complete reading reused'),
+    (Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'), '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455', 'Unchanged review skill; previous complete reading reused, not an audit'),
+    (I/'record_metadata.py', 'c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a', 'Byte-exact bounded metadata recorder reuse'),
+]
+
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def checked(path, expected):
+    data = path.read_bytes()
+    assert digest(data) == expected, str(path)
+    return data
+
+
+freeze_checks = []
+for index in (2,4):
+    path, expected, _ = SOURCES[index]
+    freeze = json.loads(checked(path, expected))
+    for row in freeze['files']:
+        member = Path(row['path'])
+        if not member.is_absolute():
+            member = path.parent/member
+        assert member.resolve().is_relative_to(path.parent.resolve())
+        data = checked(member, row['sha256'])
+        assert len(data) == row['bytes']
+    freeze_checks.append({'path': str(path), 'sha256': expected,
+                          'members_verified_as_bytes': len(freeze['files'])})
+
+independent_rows = json.loads((I/'FINAL_FREEZE.json').read_text())['files']
+for name in ('EXPOSURE_AND_LIMITS.md','ROUTE_AND_COVERAGE.md','DRAFT_CORRECTIONS.patch'):
+    row = next(row for row in independent_rows if row['path'] == name)
+    SOURCES.append((I/name, row['sha256'], 'Protected independent exposure/route/correction history; unchanged'))
+
+recovery = D/'source_recovery'
+recovery.mkdir(exist_ok=False)
+records = []
+for path, expected, coverage in SOURCES:
+    data = checked(path, expected)
+    target = recovery/(expected+'.blob')
+    if not target.exists():
+        target.write_bytes(data)
+    records.append({'original_path': str(path), 'bytes': len(data), 'sha256': expected,
+                    'recovery': str(target.relative_to(D)), 'coverage': coverage})
+assert (D/'record_metadata.py').read_bytes() == (I/'record_metadata.py').read_bytes()
+manifest = {
+    'schema': 'polynomial-path-exposed-comparison-manifest-v1',
+    'captured_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    'scope': 'Source-exposed analytic comparison; exact narrow recovery',
+    'root_candidate_exposed_after_independent_freeze': True,
+    'root_fixture_notification_received': True,
+    'root_fixture_files_inspected': False,
+    'scientific_programs_run_by_this_checker': 0,
+    'source_freezes_verified': freeze_checks, 'sources': records,
+    'root_read_record_is_execution_receipt': False,
+}
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2)+'\n')
+print(json.dumps({'sources': len(records), 'recovery_blobs': len(list(recovery.iterdir())),
+                  'freeze_checks': freeze_checks, 'scientific_programs_run_by_this_checker': 0}))

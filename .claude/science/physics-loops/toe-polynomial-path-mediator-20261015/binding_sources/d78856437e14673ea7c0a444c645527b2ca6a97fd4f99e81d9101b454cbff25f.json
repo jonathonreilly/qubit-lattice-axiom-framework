@@ -1,0 +1,357 @@
+{
+  "utc": "2026-10-15T20:54:59.647269+00:00",
+  "kind": "root_source_publication_review",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/FINAL_FREEZE.json",
+    "bytes": 37408,
+    "sha256": "922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/proposal/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 115265,
+    "sha256": "fbc6c8f4e1a2a5f5e353e889bc96c907329d6ecdd78db8803ee9e3e7dbb89ce5"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/proposal/scripts/polynomial_path_mediator_2026_10_15.py",
+    "bytes": 34304,
+    "sha256": "a1474051ea89b4fa20dd0bb0c272e509a497986405196f91afdf633516a8542e"
+  },
+  "body_pins": [
+    {
+      "name": "root_mass_m3",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 29909,
+      "end_byte_exclusive": 48463,
+      "bytes": 18554,
+      "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893"
+    },
+    {
+      "name": "independent_mass_m2",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 48605,
+      "end_byte_exclusive": 83662,
+      "bytes": 35057,
+      "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+    },
+    {
+      "name": "source_exposed_comparison",
+      "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 83810,
+      "end_byte_exclusive": 115265,
+      "bytes": 31455,
+      "sha256": "3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067"
+    }
+  ],
+  "parents": [
+    {
+      "path": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110611,
+      "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+      "claim_id": "basis_state_waveform_clock_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "root_author",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 23221,
+          "end_byte_exclusive": 46477,
+          "bytes": 23256,
+          "sha256": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46"
+        },
+        {
+          "name": "independent_author",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 46638,
+          "end_byte_exclusive": 75811,
+          "bytes": 29173,
+          "sha256": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39"
+        },
+        {
+          "name": "comparison",
+          "container": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 75964,
+          "end_byte_exclusive": 110611,
+          "bytes": 34647,
+          "sha256": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "root_author",
+        "independent_author",
+        "comparison"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "parent_review_binding": {
+    "canonical_parent": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "canonical_parent_sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1",
+    "reviewed_body_sha256": {
+      "root_author": "0fc2b7046b24c535ebd9549449601c42d8af6e3a9f95ca3e5a45a16eabb5eb46",
+      "independent_author": "84f03ca0de42477399e9a797f659b971e6beb88505d59fce6aaca5c6147acf39",
+      "comparison": "8c3ba783afdfa526e9da08df73760d8b6f0477c2598002b4c71fc042e480a2c2"
+    },
+    "records": [
+      {
+        "role": "parent_conditional_source_acceptance",
+        "source": "campaign/basis_state_clock_root_review/ACCEPTANCE.md",
+        "bytes": 2495,
+        "sha256": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0.blob"
+        }
+      },
+      {
+        "role": "parent_source_publication_wrapper_acceptance",
+        "source": "campaign/basis_state_clock_publication_root_review/ACCEPTANCE.json",
+        "bytes": 12693,
+        "sha256": "eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708.blob"
+        }
+      },
+      {
+        "role": "parent_actual_regular_publication",
+        "source": "campaign/publication_integration/basis_state_clock/PUBLICATION.json",
+        "bytes": 1554,
+        "sha256": "bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a.blob"
+        }
+      },
+      {
+        "role": "parent_actual_attachment",
+        "source": "campaign/publication_integration/basis_state_clock/ATTACHMENT.json",
+        "bytes": 216,
+        "sha256": "397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e.blob"
+        }
+      },
+      {
+        "role": "parent_actual_staged_root_decision",
+        "source": "campaign/publication_integration/basis_state_clock/ROOT_STAGED_REVIEW.json",
+        "bytes": 1698,
+        "sha256": "af5534f36f81045da14e2203739c963c49b243893522c6148a6fa6453ddcfc99",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/af5534f36f81045da14e2203739c963c49b243893522c6148a6fa6453ddcfc99.blob"
+        }
+      },
+      {
+        "role": "parent_actual_canonical_body_map",
+        "source": "repository/.claude/science/physics-loops/toe-basis-state-clock-20261015/BODY_MAP.json",
+        "bytes": 1032,
+        "sha256": "d9b384259bc086aedd10b8bc5cdac3640d8d5dcc59344fa98ce4d6a38d4ac67e",
+        "recovery": {
+          "kind": "blob",
+          "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d9b384259bc086aedd10b8bc5cdac3640d8d5dcc59344fa98ce4d6a38d4ac67e.blob"
+        }
+      }
+    ],
+    "gzip_reviews": [],
+    "publication": {
+      "utc": "2026-10-15T20:45:07.261001+00:00",
+      "baseRefName": "physics-loop/toe-local-gibbs-controller-source-20261015",
+      "headRefName": "physics-loop/toe-basis-state-clock-20261015",
+      "headRefOid": "aa4beefe822ee4564adaa48fd7ef5e3a5c033bf9",
+      "isDraft": false,
+      "number": 9619,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9619",
+      "tree": "f6cd39bef5bd6c27b87e29f342a447890ab36f74",
+      "base_head": "ce8e1842601b067f11141441aa73b1ccfd14476e",
+      "source_note": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 110611,
+        "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1"
+      },
+      "primary": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/basis_state_waveform_clock_2026_10_15.py",
+        "bytes": 27705,
+        "sha256": "be56d6b12e89e981a92e672bae6e592f768383c69bd808d1057c4133586d1e86"
+      },
+      "body": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/basis_state_clock/PR_BODY.md",
+        "bytes": 3191,
+        "sha256": "2ae75f9a0f8fafcdc11b4e15c1601c8e62067eeee8f2af89dc22b731a9a44255"
+      },
+      "science_merged": false,
+      "main_pushed": false,
+      "audit_applied": false,
+      "editable_prompt_files_changed": [],
+      "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+    },
+    "scope": "Exact parent bodies and actual supplied acceptance/publication evidence; provenance is not another theorem edge"
+  },
+  "existing_source_acceptances": {
+    "polynomial_path_mediator": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_review/ACCEPTANCE.md",
+      "bytes": 2910,
+      "sha256": "8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2"
+    }
+  },
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "full_current_files_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/wrapper.md",
+      "bytes": 29774,
+      "sha256": "c20ab3dafc6bbbe9d0874fa2b14762ac0f5ca21b68e478ce2a7daa970974c910"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/primary_template.py",
+      "bytes": 17059,
+      "sha256": "9c6884496feb0356072112d4449eb773192d9b933fc18ebf609c6878be0774e8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/record_metadata.py",
+      "bytes": 2482,
+      "sha256": "c5b3118f8d85f719a19158e59ba0e5815d5fada9c0443addc67e9cd311266431"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 1738,
+      "sha256": "412e315d414019522a788c6b9a727cefcc1a8545bee6374496986f57edd5d5f9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2284,
+      "sha256": "28775d32d3686c131eacd0d7613770111ea55f1e4e22698c3348603aa2ecb969"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1418,
+      "sha256": "9387adb76f95ca253a6556b5ec56074702b7ee90d2a3e196a51a27d7da12b751"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1925,
+      "sha256": "fa86f9cb7454dc187978eabfbad50f549a329444e5fa93f0f7b0d42d162cbd9c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/HANDOFF.md",
+      "bytes": 1408,
+      "sha256": "dfa9f30a2ecdfb49ec7930b9183b70447f2b49fb9d4d8b0ec42a5187958ca6d6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/PR_BODY.md",
+      "bytes": 1538,
+      "sha256": "90224cc64f8bc21dc4ca3507379390203617fdbd580b9bb8542d9a1530f07493"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1817,
+      "sha256": "4a28c35f564ab1c6b39a2d5752dc76e701c6367808a1bcac4b07123a975c6364"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/REVIEW_HISTORY.md",
+      "bytes": 2049,
+      "sha256": "c97dfb09f9579722d0b3c49a02ce6e11208dbb0359b8048538eaa697e8bf9cf5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/packet_text/TRACE_GATE.md",
+      "bytes": 1126,
+      "sha256": "79a533130dcbaca3abf99dee512a0653aa4cf051ea6b47476eaf3159b89e1347"
+    }
+  ],
+  "changed_code_complete_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/build_proposal.py",
+      "bytes": 17873,
+      "sha256": "492998e6f5e3efb704a783dd6a380354f80a747f10642f77596bea8267096844"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/inspect_proposal.py",
+      "bytes": 18484,
+      "sha256": "272ab79e43046f2b2c8722d145bb7fe7cf22b83121c9a4f0c33de31a6ec4e3ce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/seal_packet.py",
+      "bytes": 5170,
+      "sha256": "c8f34e9e44cf4f892bc5ba6cf7e2149b7747b7e326dfd57b7411c9040c705364"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/CHANGED_CODE.patch",
+      "bytes": 67440,
+      "sha256": "6e8b4bbbc761d2633e2956c732492f73f448ffeb3e5f180faedccc0c89f0d5c7"
+    }
+  ],
+  "code_reuse": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/REUSE_MAP.json",
+    "bytes": 24703,
+    "sha256": "5b62c83febb547fd44851f4e234e796bf9a50c65f3576d21c2ba4755ceef44f3"
+  },
+  "exact_helper_functions": 27,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 1803,
+      "sha256": "1f0b6321adcf44725e1b74796c0fd8d71a9ae2b659e04ffae7934aa1c5771ef9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 1821,
+      "sha256": "c2081d92f77f7bcda7f7bdb678f58b4ca755ef3214b3c3380c599f683b0eaca0"
+    }
+  ],
+  "selected_source_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 695,
+        "sha256": "60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04"
+      },
+      "members": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/FINAL_FREEZE.json",
+        "bytes": 6582,
+        "sha256": "2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9"
+      },
+      "members": 33
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_comparison/FINAL_FREEZE.json",
+        "bytes": 7280,
+        "sha256": "321c3aaa50591eb381bbbc9b51d4d00ee52f4ef7f6af86ab0b7e9358f1510654"
+      },
+      "members": 35
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_fixture/FINAL_FREEZE.json",
+        "bytes": 1742,
+        "sha256": "eb5027b361fd91e2dfc944f39d86a448dbfc1d30994fc1a3e2a54e561f35eb32"
+      },
+      "members": 6
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_root_review/FINAL_FREEZE.json",
+        "bytes": 611,
+        "sha256": "4e81647ca2654e8ff5442ebcd793060b525e0d8db561ef06efb1f750b29246fe"
+      },
+      "members": 2
+    }
+  ],
+  "read_scope": "Complete current wrapper10sections,9packet texts,primary and recorder; all changed module logic/functions across builder/inspector/seal read with27byte-exact prior helper functions reused. Two truncated aggregate reads were repaired with bounded complete current passages. Three immutable scientific bodies and necessary parent arguments reuse prior full reading at exact pins.162members87sources63blobs and all semantic recovery links, actual receipts and source captures verified. No primary or science execution.",
+  "qualification_scope": [
+    "Separate mu=m^-3/q=1/m and mu=m^-2/q=sqrt(G) generators and all ledgers.",
+    "Minimal clock-size ceiling and bounded sufficient Delta required for accuracy powers; explicit root majorants attributed to exposed comparison.",
+    "Complete auxiliary inverse and two-excitation noncommuting corrector, both bare endpoint costs, actual counterterms/scalars and full reference/controller outputs.",
+    "Real inverse calibration differs from general full-generator faults; exact unconditional marginal and actual release aging retained.",
+    "One historical finite root doubleprecision fixture is exposed sanity evidence; current packaging/review science0/replay0.",
+    "Native source, release/calibration/isolation hardware, total compiler complexity, physical identifications, common caps, permanent stop and reuse remain open."
+  ],
+  "scientific_programs_run_this_review": 0,
+  "historical_root_scientific_fixtures": 1,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": []
+}

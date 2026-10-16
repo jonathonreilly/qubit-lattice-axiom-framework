@@ -1,0 +1,64 @@
+{
+  "captured_utc": "2026-10-15T20:44:08.647513+00:00",
+  "new_root_candidate_exposed": false,
+  "recovery_limits": "Only these eight exact sources are copied. Historical freezes are retained as selected provenance, not a recursively recovered or reverified prior archive.",
+  "scientific_programs_run": 0,
+  "sources": [
+    {
+      "bytes": 33757,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_research/DERIVATION.md",
+      "recovery": "sources/bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0",
+      "role_and_coverage": "Mathematical parent; earlier complete read reused, selected sections reread during selection.",
+      "sha256": "bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0"
+    },
+    {
+      "bytes": 27426,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_decisive_check/REPORT.md",
+      "recovery": "sources/3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5",
+      "role_and_coverage": "Mathematical parent review; complete reread in protected task.",
+      "sha256": "3ad0ab6540ba9fae892824119aafa6c4e61ca16892ba3d23a7c59f95df82e7b5"
+    },
+    {
+      "bytes": 10028,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/post_polynomial_realization_selection/MEMO.md",
+      "recovery": "sources/1332d1d25624e2cbe65c52a67b3d6726eac80465c9bf46dda17dbd36c4bdcb74",
+      "role_and_coverage": "Own frozen selection/exposure record only; no additional proof import.",
+      "sha256": "1332d1d25624e2cbe65c52a67b3d6726eac80465c9bf46dda17dbd36c4bdcb74"
+    },
+    {
+      "bytes": 1335,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/post_polynomial_realization_selection/FINAL_FREEZE.json",
+      "recovery": "sources/63279c2b226089efe548c52a74364f90007116951f354d40e5bccc9b84abb2df",
+      "role_and_coverage": "Selection freeze identity only; other members remain at original packet.",
+      "sha256": "63279c2b226089efe548c52a74364f90007116951f354d40e5bccc9b84abb2df"
+    },
+    {
+      "bytes": 1265,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "recovery": "sources/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "role_and_coverage": "Previously complete instruction reading reused at matched identity.",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "bytes": 15435,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "recovery": "sources/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "role_and_coverage": "Previously complete workflow reading reused at matched identity.",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 14490,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "recovery": "sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role_and_coverage": "Previously read bounded claim-discipline guidance; no audit invocation.",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 2123,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_path_mediator_independent/record_metadata.py",
+      "recovery": "sources/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a",
+      "role_and_coverage": "Exact reusable metadata recorder source; no scientific claim import.",
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Route and limits
+
+The route is one explicit construction. It first searches a finite grid in the supplied augmented Lie basis; a bounded traceless-logarithm existence argument proves grid coverage without selecting a computable eigenangle branch. It then realizes signed commutator trees with Taylor-jet error bounds, replaces every negative elementary flow by a finite simultaneous recurrence of both plant and actual-time blocks, smooths the resulting positive segments at unchanged total duration, and restores the physical identity phases and resource ledgers.
+
+The main independent estimates are equations (10), (16), (18)-(22), (25)-(30) in DERIVATION.md. They are analytic, not test results. The auxiliary direct sum used in those equations is mathematical bookkeeping and adds no physical qubits or initialized ancillas. The recurrence search uses a fixed Frobenius-enclosure accuracy and a finite Q^(2d) candidate range, so no unsuccessful exact-threshold decision can stall it. The coefficient-grid search has the same strict-margin discipline.
+
+For a certificate with maximum commutator leaf count ell, physical duration has the sufficient upper exponent ell+2d(ell+1), word count exponent ell, and inverse ramp-width exponent ell+1. The constants can be enormous and depend on the entire supplied certificate. There is no classical oracle-runtime bound, uniform shrinking-lambda/window result, polynomial qubit-size claim, prescribed completion time, physical actuator supplier or free memory reset.
+
+No scientific computation was needed. No numerical fixture was predeclared or run. No metadata process failure had occurred before the two current metadata subprocesses; their actual outcomes, including any failure if one occurs, are recorded under metadata_runs. Earlier campaign failures are not rerun or recast as this theorem's evidence.
+
+One pre-freeze drafting clarification made both finite certificate searches use a fixed upper-norm enclosure accuracy before moving to the next candidate, rather than leaving a reader to infer a terminating comparison near a threshold. A second made the endpoint trace-error allocation explicit. These were analytic wording/algorithm clarifications during drafting, not failed scientific runs. There is one current proof at the final recorded identity.

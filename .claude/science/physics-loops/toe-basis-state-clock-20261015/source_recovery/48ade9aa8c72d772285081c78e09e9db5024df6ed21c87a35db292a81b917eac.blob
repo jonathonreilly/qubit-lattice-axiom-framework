@@ -1,0 +1,5 @@
+# Actual operation failure
+
+During report editing, an apply_patch call failed because its context expected a sentence as a standalone line, while the sentence was within a longer paragraph. The tool returned “Failed to find expected lines.” No file change occurred and no scientific or metadata program ran in that failed call. The intended computable-evaluation qualification was then added using the exact following section heading as context.
+
+This is an editing failure only. It is not a failed scientific check, an acceptance, or a numerical result. No other failure has been hidden or reclassified.

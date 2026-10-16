@@ -1,0 +1,9 @@
+# Independent bounded target
+
+Task received from root at the start of this block; first recorded clock18:37:34 UTC2026-10-15. Develop a Hamiltonian for an arbitrary supplied normalized computable nonvanishing one-excitation vector on a finite open ordinary-NN qubit path. Check the entire qubit Hilbert space, complex phases, positivity, exact scalar, certified gap, finite-temperature state error and calibration. Specialize only where the actual unary packet satisfies the hypotheses. No desired conclusion is assumed.
+
+The chosen analytic route is a normalized two-site hopping parent plus positive onsite vacancy penalties. The load-bearing question is whether the full many-body spectrum really selects one excitation; a one-particle kernel calculation alone is insufficient. The open path permits a direct finite anticommutation calculation. All of that calculation will be supplied in the derivation, without importing a controllability or thermalization theorem.
+
+No scientific program is planned. The finite local matrices, full-sector mode argument and gap proof are analytic; metadata scripts may hash, recover sources and freeze exact text. A later scientific diagnostic would require an explicit new risk and prior plan, not a desired PASS count. This block makes no repository or publication change.
+
+Root's parallel candidate is excluded: do not open, list, search or hash its directory. No other worker is consulted. Freeze this complete derivation and exposure record before any candidate comparison. The parent's separate candidate must not be used as evidence for this independent derivation.

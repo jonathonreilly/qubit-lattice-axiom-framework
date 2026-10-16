@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/metadata_run/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison",
+  "start_utc": "2026-10-15T19:18:48.432081+00:00",
+  "end_utc": "2026-10-15T19:18:48.481641+00:00",
+  "elapsed_seconds": 0.049596999771893024,
+  "exit_code": 0,
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/metadata_run/executed_source.py",
+    "bytes": 8145,
+    "sha256": "70264c3a9c76dccd9a5b561af70d3963a733b450cfdbb6394e6d06474ae4ee0e"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/metadata_run/recorder_source.py",
+    "bytes": 2414,
+    "sha256": "53eb8ab72f253269f654ec45a6dea92c5d112cec14264484d7e652fb46010306"
+  },
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/metadata_run/LAUNCH.json",
+    "bytes": 5147,
+    "sha256": "1134a35c531f39848e04bab2185c59a2aacd2f867a6142a8c73d4eefbbbd189b"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/metadata_run/stdout",
+    "bytes": 972,
+    "sha256": "eb08af71fdb97c736a17579a043c68ef7e917437ca8eeba3c06015126f978ede"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_controller_comparison/metadata_run/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_execution": false
+}

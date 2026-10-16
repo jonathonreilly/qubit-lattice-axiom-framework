@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/seal.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex",
+  "operation": "Direct in-process metadata seal; not an invented subprocess receipt.",
+  "scientific_programs_run": 0,
+  "source_at_operation": {
+    "bytes": 2752,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditioned_positive_compiler_comparison/seal.py",
+    "sha256": "8ea1cd436ad9e1529a6bff618a12b8e0d5a449bfbc2d36490a516820ce0adc75"
+  },
+  "utc": "2026-10-15T20:58:25.334286+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "historical_source_only_draft",
+  "canonical_integration": null,
+  "git_base": null,
+  "root_publication_review": null,
+  "primary_execution": null,
+  "cache_execution": null,
+  "mutation_execution": null,
+  "graph_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "scientific_programs_run_this_draft": 0,
+  "historical_scientific_programs_replayed": 0,
+  "source_acceptance_sha256": "c93bcd9a29d2226e5923b5ac53bd1d1eead89e59abfe41e470557b4fbfae93c4"
+}

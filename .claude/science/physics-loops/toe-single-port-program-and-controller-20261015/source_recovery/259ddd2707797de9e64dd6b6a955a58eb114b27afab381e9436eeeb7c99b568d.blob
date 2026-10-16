@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-10-15T17:58:55.504676+00:00",
+  "recorded_before_freeze_at": "2026-10-15T17:58:55.511127+00:00",
+  "program": "finalize_metadata.py",
+  "program_identity": {
+    "bytes": 2636,
+    "sha256": "b648ac2139f59077b2edd7ccd4dc8c54888f51f78aec4ab7afff3c0232950260"
+  },
+  "kind": "metadata-only execution",
+  "prior_capture_program": "capture_metadata.py",
+  "prior_capture_receipt": "CAPTURE_RESULT.json",
+  "science_runs": 0,
+  "comment": "Actual metadata commands are not scientific tests. No pre-execution science seal exists because no science program was selected or run."
+}

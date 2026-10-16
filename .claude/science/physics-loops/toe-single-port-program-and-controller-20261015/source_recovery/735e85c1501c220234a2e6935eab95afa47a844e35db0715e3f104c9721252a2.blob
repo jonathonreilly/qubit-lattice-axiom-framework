@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-15T18:44:08.623940+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_review/ACCEPTANCE.md",
+      "bytes": 4724,
+      "sha256": "134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_review/VERIFICATION.json",
+      "bytes": 2895,
+      "sha256": "b495019f029b1174515fb04e8c459fe38792eb7c9413632b606fd2844cf1b0a6"
+    }
+  ]
+}

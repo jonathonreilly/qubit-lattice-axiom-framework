@@ -1,0 +1,531 @@
+{
+  "schema": "source_integrity_inputs_v1",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/ACTUAL_BINDING.json",
+      "bytes": 9711,
+      "sha256": "06774d6219d4325a010b0848c4a96f1a1747353acf952fa2d27c882ff5dc5fbe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/ACTUAL_HANDOFF.md",
+      "bytes": 2135,
+      "sha256": "c4c8a5406ddcf303b6c9c9effb242fa142a4b2b7e69b60a36d6e74a6738ea93b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/ACTUAL_REFRESH_PROVENANCE.json",
+      "bytes": 3176,
+      "sha256": "dde3a0ac8ec177705cfc8667bb9e195ba8806781dfd5bbfb800079890a524964"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/ARCHIVE_INDEX.json",
+      "bytes": 25952,
+      "sha256": "634b8f3bd97562345bb29b2cdd78819310dd3f5795aeeec0686bb528ac9de277"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 1738,
+      "sha256": "412e315d414019522a788c6b9a727cefcc1a8545bee6374496986f57edd5d5f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/BINDING_CONTRACT.md",
+      "bytes": 2455,
+      "sha256": "4b5223ed1fd7253de1332ce9554ec2a0f02215eb9d287da05759df8801e270fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/BODY_MAP.json",
+      "bytes": 1041,
+      "sha256": "6ab51e0b1d83545d0ed1ccc0def8be768fb8e0fadb090df24309d427ee134a3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/CANONICAL_BINDING.json",
+      "bytes": 2401,
+      "sha256": "509dbbd181927e0dc69108ecbc8cedf3ca9cf158880941f78db87a86f3d9702c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1418,
+      "sha256": "9387adb76f95ca253a6556b5ec56074702b7ee90d2a3e196a51a27d7da12b751"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/COUNTEREXAMPLES.md",
+      "bytes": 1925,
+      "sha256": "fa86f9cb7454dc187978eabfbad50f549a329444e5fa93f0f7b0d42d162cbd9c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/DEPENDENCIES.json",
+      "bytes": 1714,
+      "sha256": "2d2fc5ea87648fbb77be6d99fae74ab49d87636b711521e802359b309e564aff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/HANDOFF.md",
+      "bytes": 1607,
+      "sha256": "a8329fadc58b794b41e80df6adcec00c78db8de97c6fe42eb2c20220bca3de4c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/HISTORICAL_SCIENCE.json",
+      "bytes": 2999,
+      "sha256": "75aec89fa2db3e21bd4d387ab2ca6c155a5cdd2640df59c41fa7747a5958ac3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/PARENT_REVIEW_BINDING.json",
+      "bytes": 5185,
+      "sha256": "2d15df608189147b71e4822532ac79fd3441689a24a4739366b16db31397f567"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/PR_BODY.md",
+      "bytes": 1660,
+      "sha256": "c29805a2eded3753254361b8612729bbf6571419e962d91a4091821e48dbb3ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/PR_TITLE.txt",
+      "bytes": 79,
+      "sha256": "a5ac4a6c71f4b3fdf25c33e29c81bf5909e0614b8424ae680faad276dc29f991"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/PUBLICATION_STATE.json",
+      "bytes": 615,
+      "sha256": "363cd21ab6bc08e37b7f6dfd422d8fe3de10a2da647ee848c10019fc45acf14c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/RECOVERY_SCOPE.md",
+      "bytes": 1817,
+      "sha256": "4a28c35f564ab1c6b39a2d5752dc76e701c6367808a1bcac4b07123a975c6364"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/RECOVERY_SELECTION.json",
+      "bytes": 60415,
+      "sha256": "2c6a972667a7661f22096802323ecb8691d14648a888e6788c3c68b2346275ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/REVIEW_HISTORY.md",
+      "bytes": 2209,
+      "sha256": "eb076ef1d4e141d745a6f0a0e575a1d940c0b5e5617e63421a82f5bf0c92fd59"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/SOURCE_MANIFEST.json",
+      "bytes": 42906,
+      "sha256": "61bbc025a1f139baec031a867e6cadee0322f1e47256d6a5c092b3ff59e2aa37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/TRACE_GATE.md",
+      "bytes": 1229,
+      "sha256": "9224044a457ce822897f55cec2ac06e999de57f466274350a7c42ccdc5e91a70"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/1044880b42acb6830366c27da99969c2e9b62de5904ef149dc03c92100e51bc3.blob",
+      "bytes": 317,
+      "sha256": "1044880b42acb6830366c27da99969c2e9b62de5904ef149dc03c92100e51bc3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2079ecf13e0a6008c736bc3ab76d3723901a8e1bf6039aeca344c850ae9f710c.json",
+      "bytes": 1175,
+      "sha256": "2079ecf13e0a6008c736bc3ab76d3723901a8e1bf6039aeca344c850ae9f710c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2148b8810f6dac38b8b6b4fe0054124e82bcd22d7f626532ae6ceb3f0817bef1.blob",
+      "bytes": 19116,
+      "sha256": "2148b8810f6dac38b8b6b4fe0054124e82bcd22d7f626532ae6ceb3f0817bef1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/267a03e415ed0bfa094fc89b3b201c6b17daf8b11df71744e0c0ac0b6fba035c.json",
+      "bytes": 1261,
+      "sha256": "267a03e415ed0bfa094fc89b3b201c6b17daf8b11df71744e0c0ac0b6fba035c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/2e2cbd31fe6c8ed92c80286f9cf32ca2bf553ad37ad569f561c3d29340f995e6.blob",
+      "bytes": 597,
+      "sha256": "2e2cbd31fe6c8ed92c80286f9cf32ca2bf553ad37ad569f561c3d29340f995e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e.json",
+      "bytes": 216,
+      "sha256": "397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/47f80d0950f11be804f0b67405fd2c46512164da57dae68befc80551e9be9ff0.py",
+      "bytes": 49413,
+      "sha256": "47f80d0950f11be804f0b67405fd2c46512164da57dae68befc80551e9be9ff0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/6915958aa483d7d75f380a870e00e3b4150da0bf3a5d080c5f292b2c661348a2.json",
+      "bytes": 2910,
+      "sha256": "6915958aa483d7d75f380a870e00e3b4150da0bf3a5d080c5f292b2c661348a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56.json",
+      "bytes": 37408,
+      "sha256": "922961127462c9856df7728d73e1c9eb885424d6675bb722eb3a99210fcdfb56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/a7d5d8d63a9b26f49b6065d82cd62ad93146f3e2503aeb3fd90daa4d4ecd26e1.json",
+      "bytes": 431,
+      "sha256": "a7d5d8d63a9b26f49b6065d82cd62ad93146f3e2503aeb3fd90daa4d4ecd26e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/acac29fb6a92fcbf4a14cd375f8c80525c171d8d159a710c62a196b5863d8b12.py",
+      "bytes": 10420,
+      "sha256": "acac29fb6a92fcbf4a14cd375f8c80525c171d8d159a710c62a196b5863d8b12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/b859501f0dec81dc34b1f3dd48bf0ebcad2f5ada77a2846164bb4498826f63f7.json",
+      "bytes": 1471,
+      "sha256": "b859501f0dec81dc34b1f3dd48bf0ebcad2f5ada77a2846164bb4498826f63f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a.json",
+      "bytes": 1554,
+      "sha256": "bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d78856437e14673ea7c0a444c645527b2ca6a97fd4f99e81d9101b454cbff25f.json",
+      "bytes": 18461,
+      "sha256": "d78856437e14673ea7c0a444c645527b2ca6a97fd4f99e81d9101b454cbff25f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/d9603a48b4afcf830617821b535d830f87cad2d63f1302c4ad22ff86f2b55fe3.json",
+      "bytes": 1760,
+      "sha256": "d9603a48b4afcf830617821b535d830f87cad2d63f1302c4ad22ff86f2b55fe3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/binding_sources/f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d.blob",
+      "bytes": 121,
+      "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/087617a8d82b8547f9c4fd1f0c3552002ab7c6530a28db8318cdc67900e3e435.blob",
+      "bytes": 5085,
+      "sha256": "087617a8d82b8547f9c4fd1f0c3552002ab7c6530a28db8318cdc67900e3e435"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0.blob",
+      "bytes": 2495,
+      "sha256": "174ff7dccd2e3e5b4afc631c8a551a893944c4891122a943d15dd154ef9e28e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/182e580b13ee516fbc5e1f3ae4ca999bd47eba6b1cfe474542bab995f267cb91.blob",
+      "bytes": 919,
+      "sha256": "182e580b13ee516fbc5e1f3ae4ca999bd47eba6b1cfe474542bab995f267cb91"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/1c4b0100775304f75e0fdd9ce110a702623c7e3785823caecc3e112da5bf6646.blob",
+      "bytes": 2107,
+      "sha256": "1c4b0100775304f75e0fdd9ce110a702623c7e3785823caecc3e112da5bf6646"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/2764f24509514fd1cd07cc736276e6af179ad2f733deabd21ef6aa0df8171773.blob",
+      "bytes": 336,
+      "sha256": "2764f24509514fd1cd07cc736276e6af179ad2f733deabd21ef6aa0df8171773"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9.blob",
+      "bytes": 6582,
+      "sha256": "2a3310794f09b61c77122ca3e627544a3a677c61578712aafa891c13be8badd9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.blob",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/311d09793428b5a5ba64be3577a611d42b4671c60d1651718c8ab23e650e5a8f.blob",
+      "bytes": 8166,
+      "sha256": "311d09793428b5a5ba64be3577a611d42b4671c60d1651718c8ab23e650e5a8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/31dcf82b746333e40360f276b95974b58d6c156c26b0e65cb371162b4096e70c.blob",
+      "bytes": 1458,
+      "sha256": "31dcf82b746333e40360f276b95974b58d6c156c26b0e65cb371162b4096e70c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/321c3aaa50591eb381bbbc9b51d4d00ee52f4ef7f6af86ab0b7e9358f1510654.blob",
+      "bytes": 7280,
+      "sha256": "321c3aaa50591eb381bbbc9b51d4d00ee52f4ef7f6af86ab0b7e9358f1510654"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e.blob",
+      "bytes": 216,
+      "sha256": "397c9cfc4128971a4604f477b664dfd2748ea6c680ae052213b713c998041d9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.blob",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/453e57ffafe5e58cf55c7b61238d4c42ca7e5496e754a1c44154f4329bfdb6e9.blob",
+      "bytes": 8609,
+      "sha256": "453e57ffafe5e58cf55c7b61238d4c42ca7e5496e754a1c44154f4329bfdb6e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/4d813dbb555a72794708ca914400734ba48c6354bb6e9abc63a6c8e93b0b7098.blob",
+      "bytes": 644,
+      "sha256": "4d813dbb555a72794708ca914400734ba48c6354bb6e9abc63a6c8e93b0b7098"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/4e81647ca2654e8ff5442ebcd793060b525e0d8db561ef06efb1f750b29246fe.blob",
+      "bytes": 611,
+      "sha256": "4e81647ca2654e8ff5442ebcd793060b525e0d8db561ef06efb1f750b29246fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/583375468e3b3c15a52ded16fa5732eb4f6fe320c5047fc2e441cca7195b6eba.blob",
+      "bytes": 2119,
+      "sha256": "583375468e3b3c15a52ded16fa5732eb4f6fe320c5047fc2e441cca7195b6eba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/5ceff7d58e226d50fe500293afecf5cdbb4d0cd17978a57df83a187d1e55c191.blob",
+      "bytes": 3532,
+      "sha256": "5ceff7d58e226d50fe500293afecf5cdbb4d0cd17978a57df83a187d1e55c191"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04.blob",
+      "bytes": 695,
+      "sha256": "60389ac284bab6672606985a55b6ab9ea5d532ac1fcb24aa83c02cf6f411ff04"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/608a0efacdd96eeaedad95e976e3a4a50b4ef7ad8dde1f66a3ee571c33c5cd23.blob",
+      "bytes": 6391,
+      "sha256": "608a0efacdd96eeaedad95e976e3a4a50b4ef7ad8dde1f66a3ee571c33c5cd23"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/63c05ab4ddbe3f6acdfcf0efae70565d5b6230adaf1d3eef7b69f858525b836c.blob",
+      "bytes": 810,
+      "sha256": "63c05ab4ddbe3f6acdfcf0efae70565d5b6230adaf1d3eef7b69f858525b836c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/70eea76efd8e224e4d5143856f6e4af6949e17fcf032b54e700ee4b1bb4e77f5.blob",
+      "bytes": 955,
+      "sha256": "70eea76efd8e224e4d5143856f6e4af6949e17fcf032b54e700ee4b1bb4e77f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/733fc6879d9e0e8e43d3471699a820919ddecd7f8d922fb010e4bac0f07e9710.blob",
+      "bytes": 887,
+      "sha256": "733fc6879d9e0e8e43d3471699a820919ddecd7f8d922fb010e4bac0f07e9710"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/78ecb13acae41c653c96f3c5b2943f69aa4969022a7061f03318189b27cd88e2.blob",
+      "bytes": 2728,
+      "sha256": "78ecb13acae41c653c96f3c5b2943f69aa4969022a7061f03318189b27cd88e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/7fca75e9786ccaa2a28ebd7c6935a40de8801c3a38b92dfc3b5027146c549d90.blob",
+      "bytes": 2122,
+      "sha256": "7fca75e9786ccaa2a28ebd7c6935a40de8801c3a38b92dfc3b5027146c549d90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/8ad3e890a822ac7b71b47789ec6e80b977a15a15f8adb48d1816c3d84164a8b9.blob",
+      "bytes": 5176,
+      "sha256": "8ad3e890a822ac7b71b47789ec6e80b977a15a15f8adb48d1816c3d84164a8b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2.blob",
+      "bytes": 2910,
+      "sha256": "8f26be5fb28c966ea405bb97facb0a16f9abdbd75c110de23e96f875aa9a8df2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/8f29f1e4e660dad0aeb38aefa61883e4a96f6bd95fa3fff115b41893f57485a6.blob",
+      "bytes": 3149,
+      "sha256": "8f29f1e4e660dad0aeb38aefa61883e4a96f6bd95fa3fff115b41893f57485a6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/94de40add86a3ac93157648c55c7aac725b3407f7d54b33cb4baa0ad659c75ff.blob",
+      "bytes": 3192,
+      "sha256": "94de40add86a3ac93157648c55c7aac725b3407f7d54b33cb4baa0ad659c75ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/95b81f81469ddb965098152d03ec07fe4ff2314ae69f3b78ec77c126193d07ac.blob",
+      "bytes": 2126,
+      "sha256": "95b81f81469ddb965098152d03ec07fe4ff2314ae69f3b78ec77c126193d07ac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/99dac9b9ee68e8c63c54a092925e3fe12dcdbb758d4376134b1136d1684587ed.blob",
+      "bytes": 87,
+      "sha256": "99dac9b9ee68e8c63c54a092925e3fe12dcdbb758d4376134b1136d1684587ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/a458606f9fd7c090166107f0da7636cd89abe0c7a2fcd08da3416d76c5465ac0.blob",
+      "bytes": 4395,
+      "sha256": "a458606f9fd7c090166107f0da7636cd89abe0c7a2fcd08da3416d76c5465ac0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/a5c757fdcb9e29ee12efb2681ceea5f3399cba93e5a04f36c153b8cbf3c5b48f.blob",
+      "bytes": 1494,
+      "sha256": "a5c757fdcb9e29ee12efb2681ceea5f3399cba93e5a04f36c153b8cbf3c5b48f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/aa6733e334581dc4b8bb912eb868eb7d5dfb01d1947c7b72161957b00e5d9d86.blob",
+      "bytes": 684,
+      "sha256": "aa6733e334581dc4b8bb912eb868eb7d5dfb01d1947c7b72161957b00e5d9d86"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/ad256ec358c129c28dde34df661726e51a625db527b545fba51d46b719546b5b.blob",
+      "bytes": 2116,
+      "sha256": "ad256ec358c129c28dde34df661726e51a625db527b545fba51d46b719546b5b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/ade7e28f58c4029eb4505cc29f1a951e7ee135db895928385aaf8699294c3d71.blob",
+      "bytes": 5571,
+      "sha256": "ade7e28f58c4029eb4505cc29f1a951e7ee135db895928385aaf8699294c3d71"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/aeacc0be08481cd931d9875d9353bed27a0a553a5d1ae94fa8e19ddf0298bba4.blob",
+      "bytes": 1238,
+      "sha256": "aeacc0be08481cd931d9875d9353bed27a0a553a5d1ae94fa8e19ddf0298bba4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/af5534f36f81045da14e2203739c963c49b243893522c6148a6fa6453ddcfc99.blob",
+      "bytes": 1698,
+      "sha256": "af5534f36f81045da14e2203739c963c49b243893522c6148a6fa6453ddcfc99"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/b39e2d58c0e04fb6ef3c8f1d1574af1c647995221c0b4151fe12e65ff18a7da5.blob",
+      "bytes": 2757,
+      "sha256": "b39e2d58c0e04fb6ef3c8f1d1574af1c647995221c0b4151fe12e65ff18a7da5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/b3c1a64c5020981e8e87b55b3f121c65f16605fe1e8636e34c3269c91b4ea024.blob",
+      "bytes": 2851,
+      "sha256": "b3c1a64c5020981e8e87b55b3f121c65f16605fe1e8636e34c3269c91b4ea024"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/b4e8a005ae93e5d3de7f6b5b5b678ab47718a00fb4aaf3b20009881933815607.blob",
+      "bytes": 5813,
+      "sha256": "b4e8a005ae93e5d3de7f6b5b5b678ab47718a00fb4aaf3b20009881933815607"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/b9092f19da5da3c8ef92b35b4018179e06bf4d38b4813779a709b22e1d0d299a.blob",
+      "bytes": 3017,
+      "sha256": "b9092f19da5da3c8ef92b35b4018179e06bf4d38b4813779a709b22e1d0d299a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/bad4a15eae8d700a75d8f29092283818470fd2663fc107d4a03c92fb89220218.blob",
+      "bytes": 2642,
+      "sha256": "bad4a15eae8d700a75d8f29092283818470fd2663fc107d4a03c92fb89220218"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a.blob",
+      "bytes": 1554,
+      "sha256": "bb241ae264dce6f435563a7a145ec8d7969f8f5a5463ef22f25727d0d45b815a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/c66b668c3d0edfb1351dc1f4c1a2da14850926b5ef7c7c5d830ae1964cc03e8e.blob",
+      "bytes": 378,
+      "sha256": "c66b668c3d0edfb1351dc1f4c1a2da14850926b5ef7c7c5d830ae1964cc03e8e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a.blob",
+      "bytes": 2123,
+      "sha256": "c707dc710885a6c2b988454a98667abc9a0e0c364fe2dbcf6832489cff464e4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.blob",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/cce2637c4993f041808aabb9ef9ba966091be8946d0b133fe4dd06033da2a88a.blob",
+      "bytes": 1454,
+      "sha256": "cce2637c4993f041808aabb9ef9ba966091be8946d0b133fe4dd06033da2a88a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/cf0caf28149b8b79a937bad165f5ea2994e3007debf19be9e7e99ca64aa3f4f4.blob",
+      "bytes": 103,
+      "sha256": "cf0caf28149b8b79a937bad165f5ea2994e3007debf19be9e7e99ca64aa3f4f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d67a3c92c02c0e672bb57ea6a026f49691677ef9fda0313a8ec97a7f46b3a011.blob",
+      "bytes": 3205,
+      "sha256": "d67a3c92c02c0e672bb57ea6a026f49691677ef9fda0313a8ec97a7f46b3a011"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d6bf0d9f029926830734ddd3c8974b77dae947247ef92da601dc62c9f29c9383.blob",
+      "bytes": 2176,
+      "sha256": "d6bf0d9f029926830734ddd3c8974b77dae947247ef92da601dc62c9f29c9383"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d9a97fd0afd0682c358025a2e6f19e2f450f3d95c55e8b5d46a71159dc875a2d.blob",
+      "bytes": 3496,
+      "sha256": "d9a97fd0afd0682c358025a2e6f19e2f450f3d95c55e8b5d46a71159dc875a2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/d9b384259bc086aedd10b8bc5cdac3640d8d5dcc59344fa98ce4d6a38d4ac67e.blob",
+      "bytes": 1032,
+      "sha256": "d9b384259bc086aedd10b8bc5cdac3640d8d5dcc59344fa98ce4d6a38d4ac67e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/e3af5bfdd3d9685990e72c1e3ce547de8d25ad080188727eb6c4caead852bb8f.blob",
+      "bytes": 3257,
+      "sha256": "e3af5bfdd3d9685990e72c1e3ce547de8d25ad080188727eb6c4caead852bb8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/e8aa4c0c1c4201387604c7c384bfe3a745cfe05c9cd3df488a1cd02c91f66d8f.blob",
+      "bytes": 2597,
+      "sha256": "e8aa4c0c1c4201387604c7c384bfe3a745cfe05c9cd3df488a1cd02c91f66d8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708.blob",
+      "bytes": 12693,
+      "sha256": "eb31fa43c503cfc659e3e5d18c7eafe3ed2927ee3efb45810c5ab4371a8d2708"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/eb5027b361fd91e2dfc944f39d86a448dbfc1d30994fc1a3e2a54e561f35eb32.blob",
+      "bytes": 1742,
+      "sha256": "eb5027b361fd91e2dfc944f39d86a448dbfc1d30994fc1a3e2a54e561f35eb32"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/f96a31e5e2369128cd1dd1129027d6c65af6aa6817f6c9cee4f22c4ea7e8d39d.blob",
+      "bytes": 1226,
+      "sha256": "f96a31e5e2369128cd1dd1129027d6c65af6aa6817f6c9cee4f22c4ea7e8d39d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-polynomial-path-mediator-20261015/source_recovery/fc7026d4698947ad1d2ab52fdd2c8c44ddd1216df76f6ab072bc3ba747a3e95e.blob",
+      "bytes": 2886,
+      "sha256": "fc7026d4698947ad1d2ab52fdd2c8c44ddd1216df76f6ab072bc3ba747a3e95e"
+    },
+    {
+      "path": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+    },
+    {
+      "path": "docs/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110611,
+      "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1"
+    }
+  ],
+  "scope": "Source/body/recovery/binding structure only; no scientific execution."
+}

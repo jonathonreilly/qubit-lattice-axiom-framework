@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-15T18:44:08.623940+00:00",
+  "decision": "Standalone conditional static nearest-neighbor single-port controller accepted; qualified external compiler composition supported. Native initialization and physical-identification obligations remain open.",
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_review/ACCEPTANCE.md",
+    "bytes": 4724,
+    "sha256": "134cbee6390a6f999813dd0234fe869bdd0bec2dddbd5d47a2209091c0dcbe5f"
+  },
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/DERIVATION.md",
+    "bytes": 24070,
+    "sha256": "0e91f9369e387608f8fb3720c290e67f6aa98b10f13428866334c8507b9e989d"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/REPORT.md",
+    "bytes": 32692,
+    "sha256": "52eb2e2dcd9fc56a7be490e193b57754bd85bfad5d585244d4a9fce947b4465d"
+  },
+  "freeze_checks": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 704,
+        "sha256": "f3b497f3db6c64809877be9b8b547e048e673da9203e3a7d40a106d51e166d10"
+      },
+      "members": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/FINAL_FREEZE.json",
+        "bytes": 7598,
+        "sha256": "6d0eb6e19a96167e3bb967a16f3a38f80daf2077563ac98195631c4622be6fe4"
+      },
+      "members": 37
+    }
+  ],
+  "source_rows": 20,
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 2265,
+      "sha256": "dad41827ab202b954d14982c3865040d74a9b1cdd043f9977ad92c6fb72fe76b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_autonomous_decisive_check/metadata_runs/verification/EXECUTION.json",
+      "bytes": 2287,
+      "sha256": "8641cba03e079cee5b2ad81a05fb149a7aba48f49aa45b1a6e243c9078a06a03"
+    }
+  ],
+  "root_full_read": true,
+  "external_compiler_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/single_port_program_root_review/ACCEPTANCE.md",
+    "bytes": 4801,
+    "sha256": "bbe2e9c911e3323f840855fb2e77cc5e86d1669486eb8c8dda2e8cdec3ff53eb"
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

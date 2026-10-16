@@ -1,0 +1,43 @@
+"""Exact source/recovery bookkeeping for the program check; no scientific run."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent;N=D.parent;C=N/'single_port_program_research'
+def ident(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,row):
+    a=ident(p);assert (a['bytes'],a['sha256'])==(row['bytes'],row['sha256']),str(p);return a
+assert not (D/'SOURCE_MANIFEST.json').exists(),'Preserve earlier capture'
+pins={'DERIVATION.md':(33757,'bda0be884fa79905ff81f0a2642def9e2efd5302796262f5f9eb4033b2c436c0'),'REPORT.md':(5194,'f6e98cb5b38470ace605d81befd6df2e8c96e483b3e9b57c922c87e0b20e498c'),'FINAL_FREEZE.json':(6408,'15d6ad5e756548ddd1437624513b0d3b43060ba99a735b8a2ea9036449f7ba4c')}
+for name,(size,digest) in pins.items():check(C/name,{'bytes':size,'sha256':digest})
+f=json.loads((C/'FINAL_FREEZE.json').read_text());assert len(f['members'])==34
+members=[];sources=[]
+for row in f['members']:
+    p=C/row['path'];a=check(p,row);members.append(a)
+    if '/' not in row['path'] and p.suffix!='.pdf':
+        q=D/'source_snapshot'/p.name;q.parent.mkdir(exist_ok=True);q.write_bytes(p.read_bytes())
+        sources.append({'original':a,'captured':ident(q),'role':'exact candidate body or top-level provenance; reading scope separately declared'})
+for name in ['FINAL_FREEZE.json','FINAL_FREEZE_RECEIPT.json']:
+    p=C/name;q=D/'source_snapshot'/name;q.write_bytes(p.read_bytes());sources.append({'original':ident(p),'captured':ident(q),'role':'author freeze or actual in-process completion receipt'})
+receipt=json.loads((C/'FINAL_FREEZE_RECEIPT.json').read_text());check(C/'FINAL_FREEZE.json',receipt['freeze']);check(C/'DERIVATION.md',receipt['derivation']);check(C/'REPORT.md',receipt['report']);assert receipt['members_verified']==34 and receipt['science_runs']==0
+origins=[]
+for row in json.loads((C/'SOURCE_MANIFEST.json').read_text())['sources']:
+    check(C/row['recovery'],row)
+    p=Path(row['source']);a=ident(p) if p.is_file() else None
+    origins.append({'source':row['source'],'author_expected':{'bytes':row['bytes'],'sha256':row['sha256']},'actual_at_capture':a,'matches':a is not None and (a['bytes'],a['sha256'])==(row['bytes'],row['sha256']),'role':'historical/contextual provenance, not a theorem dependency of the new control proof'})
+instruction_manifest=N/'transverse_field_memory_independent/independent/INSTRUCTIONS.json'
+instructions=json.loads(instruction_manifest.read_text())['instructions']
+for j,row in enumerate(instructions):
+    p=Path(row['original']);check(p,row);check(Path(row['captured']),row)
+    q=D/'instruction_snapshot'/f'{j}_{p.name}';q.parent.mkdir(exist_ok=True);q.write_bytes(p.read_bytes())
+    sources.append({'original':ident(p),'captured':ident(q),'role':'previously read exact current instruction identity'})
+local=[]
+for name in ['REPORT.md','READ_EXPOSURE.md','RECOVERY_SCOPE.md','capture_sources.py','verify_metadata.py','record_metadata.py','seal.py']:
+    p=D/name;local.append(ident(p))
+    if name.endswith('.py'):ast.parse(p.read_text(),filename=str(p))
+m={'captured_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'metadata-only source capture and freshness, no mathematics/science execution','candidate_freeze':ident(C/'FINAL_FREEZE.json'),'candidate_members':members,'sources':sources,'author_context_origins':origins,'local_sources':local,'recovery_limit':'Selected top-level source evidence and current instructions copied; PDF and historical recovered bodies hash-checked only, not recursively copied or claimed read','scientific_programs_run':0}
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps(m,indent=2)+'\n')
+print(json.dumps({'source_snapshots':len(sources),'candidate_members':len(members),'author_context_origins':len(origins),'author_context_current_matches':sum(r['matches'] for r in origins),'scientific_programs_run':0},indent=2))

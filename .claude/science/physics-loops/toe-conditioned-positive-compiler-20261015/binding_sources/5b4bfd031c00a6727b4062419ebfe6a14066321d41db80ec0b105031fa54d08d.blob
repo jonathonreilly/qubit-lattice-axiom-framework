@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/review_conditioned_publication_2114.py", line 66, in <module>
+    p=N/relative;assert pin(p)['sha256']==digest;rows=read(p)['files']
+                                                      ~~~~~~~^^^^^^^^^
+KeyError: 'files'

@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-15T21:36:13.341615+00:00",
+  "decision": "Conditional source support accepted with mandatory runtime/release-scope qualifications; unpublished",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/DERIVATION.md",
+      "bytes": 7415,
+      "sha256": "f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/DERIVATION.md",
+      "bytes": 27200,
+      "sha256": "9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_comparison/REPORT.md",
+      "bytes": 17515,
+      "sha256": "d43f8ee3e438afc591a1f542c7d6d97b572199d6fbc8547bb8948841a8f9e691"
+    }
+  ],
+  "freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 754,
+        "sha256": "1dbaac0f74deba57c46a9f42a7359ce91472c906ab1468de756173f8fe11969b"
+      },
+      "members": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/FINAL_FREEZE.json",
+        "bytes": 7566,
+        "sha256": "132c5ae474622d1eebd0abd0ee37ff1d1596054d5e5ce69f1e02e375af9e6b92"
+      },
+      "members": 40
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_comparison/FINAL_FREEZE.json",
+        "bytes": 3114,
+        "sha256": "4a4c21bb9e946c1719cff107366248ebd6cf6081ff77dda927b21bc7fe122993"
+      },
+      "members": 17
+    }
+  ],
+  "coverage": "Root complete changed argument reading: root source previously authored/frozen;27200-byte separate derivation in two bounded outputs;17515-byte exposed comparison fully read. Root explicitly rechecked clock/penalty/norm powers, phase, trace allocation, pure-factor preparation allowance, pre-release Duhamel correction, coefficient scaling and norm-weighted moment limits.",
+  "failed_route": "No use of preparation-to-runtime release as a final halt/decoupling theorem; no fixed-tau scaling copied into growing compiler duration.",
+  "scientific_programs_run": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,66 @@
+{
+  "limits": "Metadata identity/recovery/schema/syntax only; no matrix, compiler, physical or numerical execution.",
+  "prior_members_checked": 40,
+  "prior_recovery_manifest": {
+    "bytes": 11023,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/SOURCE_MANIFEST.json",
+    "sha256": "06e135fd35ca37965dd3b249e76d122e8957c74b9260b7811c813484b8b291dc"
+  },
+  "prior_sources_checked": 22,
+  "report": {
+    "bytes": 17515,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_comparison/REPORT.md",
+    "sha256": "d43f8ee3e438afc591a1f542c7d6d97b572199d6fbc8547bb8948841a8f9e691"
+  },
+  "root_members_checked": 2,
+  "root_source_pins_checked": 8,
+  "scientific_programs_run": 0,
+  "source_blobs": 6,
+  "source_exposed": true,
+  "sources": [
+    {
+      "bytes": 7415,
+      "coverage_and_role": "Complete first exposed read in21:30:17UTC-observed batch; all changed argument assessed.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/DERIVATION.md",
+      "recovery": "sources/f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8",
+      "sha256": "f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8"
+    },
+    {
+      "bytes": 754,
+      "coverage_and_role": "Complete root seal read; records21:21:41.541190UTC and prior-outline nonexposure claim.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/PROPOSAL_FREEZE.json",
+      "recovery": "sources/1dbaac0f74deba57c46a9f42a7359ce91472c906ab1468de756173f8fe11969b",
+      "sha256": "1dbaac0f74deba57c46a9f42a7359ce91472c906ab1468de756173f8fe11969b"
+    },
+    {
+      "bytes": 2382,
+      "coverage_and_role": "Complete root eight-source list and exposure statement read.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_root_candidate/SOURCE_PINS.json",
+      "recovery": "sources/9bcd36124fec16a5d03783f3f4a3e48c09d248d4327760cc1f92a5430f91fbd9",
+      "sha256": "9bcd36124fec16a5d03783f3f4a3e48c09d248d4327760cc1f92a5430f91fbd9"
+    },
+    {
+      "bytes": 27200,
+      "coverage_and_role": "Own complete frozen provisional composition; immutable before root candidate exposure.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/DERIVATION.md",
+      "recovery": "sources/9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7",
+      "sha256": "9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7"
+    },
+    {
+      "bytes": 7566,
+      "coverage_and_role": "Own40-member seal verified at original paths.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/FINAL_FREEZE.json",
+      "recovery": "sources/132c5ae474622d1eebd0abd0ee37ff1d1596054d5e5ce69f1e02e375af9e6b92",
+      "sha256": "132c5ae474622d1eebd0abd0ee37ff1d1596054d5e5ce69f1e02e375af9e6b92"
+    },
+    {
+      "bytes": 11023,
+      "coverage_and_role": "Exact22-source prior recovery reused and validated without recursively copying bodies.",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/autonomous_compiler_composition_candidate/SOURCE_MANIFEST.json",
+      "recovery": "sources/06e135fd35ca37965dd3b249e76d122e8957c74b9260b7811c813484b8b291dc",
+      "sha256": "06e135fd35ca37965dd3b249e76d122e8957c74b9260b7811c813484b8b291dc"
+    }
+  ],
+  "status": "Analytic comparison; root disposition remains separate",
+  "utc": "2026-10-15T21:34:28.939010+00:00"
+}

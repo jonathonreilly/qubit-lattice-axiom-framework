@@ -1,0 +1,38 @@
+"""Metadata-only source capture. No scientific program, matrix or pulse search."""
+from pathlib import Path
+import hashlib,json,datetime,urllib.request
+N=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309')
+O=N/'single_port_program_research'; W=N.parent/'correlation_worktree'
+def now(): return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def ident(b): return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+start=now(); hist=json.loads((N/'next_realization_attack/SOURCE_MANIFEST.json').read_text())
+by_path={r['source']:r for r in hist['sources']}
+rows=[]; rec=O/'recovery';rec.mkdir(exist_ok=True)
+initial=json.loads((O/'SOURCE_IDENTITIES.initial.json').read_text())
+paths=[Path(r['source']) for r in initial['sources']]
+paths += [N/'local_clock_autonomous_preparation_decisive_check/REPORT.md',N/'local_clock_autonomous_preparation_candidate/FINAL_FREEZE.json',N/'next_realization_attack/SOURCE_MANIFEST.json',W/'docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md']
+for p in paths:
+ b=p.read_bytes();meta=ident(b)
+ if str(p) in by_path:
+  assert meta['sha256']==by_path[str(p)]['sha256'], str(p)
+ for row in initial['sources']:
+  if row['source']==str(p): assert row['sha256']==meta['sha256'],str(p)
+ dest=rec/(meta['sha256']+p.suffix)
+ if dest.exists(): assert dest.read_bytes()==b
+ else: dest.write_bytes(b)
+ rows.append({'source':str(p),**meta,'recovery':str(dest.relative_to(O))})
+url='https://arxiv.org/pdf/0805.3975v2'; lit_start=now();lit={'requested_url':url,'started_at':lit_start}
+try:
+ with urllib.request.urlopen(url,timeout=30) as response:
+  b=response.read();lit.update({'resolved_url':response.url,'http_status':response.status,'content_type':response.headers.get('Content-Type')})
+ assert b.startswith(b'%PDF')
+ dest=O/'Burgarth_et_al_0805.3975v2.pdf';dest.write_bytes(b)
+ lit.update({'file':dest.name,**ident(b),'outcome':'retrieved'})
+except Exception as e:
+ lit.update({'outcome':'retrieval_error','error':repr(e)})
+lit['ended_at']=now()
+(O/'LITERATURE_RETRIEVAL.json').write_text(json.dumps(lit,indent=2)+'\n')
+(O/'SOURCE_MANIFEST.json').write_text(json.dumps({'recorded_at':now(),'kind':'metadata only; read scope separately declared','sources':rows},indent=2)+'\n')
+result={'started_at':start,'ended_at':now(),'code':ident(Path(__file__).read_bytes()),'sources_captured':len(rows),'literal_source_identities_preserved':True,'literature':lit,'science_runs':0}
+(O/'CAPTURE_RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))

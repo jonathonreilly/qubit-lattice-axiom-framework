@@ -1,0 +1,18 @@
+{
+  "issue": "Initial independent result limitation incorrectly asserted item87 was always zero; the actual extracted distribution in the same result shows otherwise. No field extraction or arithmetic check changed. Superseded by v3 with corrected scope and extra negative controls.",
+  "original_source_sha256": "3970b290ae75cd613a82b786797bab23e89bc6afb5d694255dc748823742fad9",
+  "original_result_sha256": "4d1138218ef28664b06502f3b6983373d58f9cf00c6d15089ff73c162663a112",
+  "observed_used_endpoint_slipped_cycle_occurrences": {
+    "0": 164936,
+    "2": 8567,
+    "1": 6939,
+    "7": 2,
+    "10": 94,
+    "6": 69,
+    "3": 1979,
+    "5": 178,
+    "4": 558,
+    "8": 7
+  },
+  "nonzero_occurrences": 18393
+}

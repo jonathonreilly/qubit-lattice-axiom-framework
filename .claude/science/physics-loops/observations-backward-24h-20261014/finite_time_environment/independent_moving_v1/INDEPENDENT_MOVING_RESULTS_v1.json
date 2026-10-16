@@ -1,0 +1,295 @@
+{
+  "checks_passed": 61,
+  "checks": [
+    "signed_weight_W0_not_signed_integral",
+    "analytic_velocity_margin",
+    "analytic_direction_magnitude_bound",
+    "signed_polygon_distribution_IBP_0.0_-1.0_False",
+    "signed_polygon_envelope_0.0_-1.0_False",
+    "signed_polygon_distribution_IBP_0.0_-1.0_True",
+    "signed_polygon_envelope_0.0_-1.0_True",
+    "signed_polygon_distribution_IBP_0.0_1.0_False",
+    "signed_polygon_envelope_0.0_1.0_False",
+    "signed_polygon_distribution_IBP_0.0_1.0_True",
+    "signed_polygon_envelope_0.0_1.0_True",
+    "signed_polygon_distribution_IBP_0.9_-1.0_False",
+    "signed_polygon_envelope_0.9_-1.0_False",
+    "signed_polygon_distribution_IBP_0.9_-1.0_True",
+    "signed_polygon_envelope_0.9_-1.0_True",
+    "signed_polygon_distribution_IBP_0.9_1.0_False",
+    "signed_polygon_envelope_0.9_1.0_False",
+    "signed_polygon_distribution_IBP_0.9_1.0_True",
+    "signed_polygon_envelope_0.9_1.0_True",
+    "signed_polygon_distribution_IBP_0.4_-1.0_False",
+    "signed_polygon_envelope_0.4_-1.0_False",
+    "signed_polygon_distribution_IBP_0.4_-1.0_True",
+    "signed_polygon_envelope_0.4_-1.0_True",
+    "signed_polygon_distribution_IBP_0.4_1.0_False",
+    "signed_polygon_envelope_0.4_1.0_False",
+    "signed_polygon_distribution_IBP_0.4_1.0_True",
+    "signed_polygon_envelope_0.4_1.0_True",
+    "signed_polygon_atoms_are_material",
+    "phase_coordinate_inverse_-1.0_False",
+    "phase_coordinate_inverse_-1.0_True",
+    "phase_coordinate_inverse_1.0_False",
+    "phase_coordinate_inverse_1.0_True",
+    "complex_two_frequency_identity_0.0",
+    "integrated_frequency_equality_0.0",
+    "frequency_branches_differ_per_mode_0.0",
+    "real_Riesz_energy_frequency_norm_0.0",
+    "full_vector_spectral_Gram_enclosure_0.0",
+    "rotating_real_Riesz_frequency_norm_0.0",
+    "rotating_spectral_norm_enclosure_0.0",
+    "fixed_coefficient_real_symmetry_0.0",
+    "rotating_coefficient_real_symmetry_0.0",
+    "complex_two_frequency_identity_0.8",
+    "integrated_frequency_equality_0.8",
+    "frequency_branches_differ_per_mode_0.8",
+    "real_Riesz_energy_frequency_norm_0.8",
+    "full_vector_spectral_Gram_enclosure_0.8",
+    "rotating_real_Riesz_frequency_norm_0.8",
+    "rotating_spectral_norm_enclosure_0.8",
+    "fixed_coefficient_real_symmetry_0.8",
+    "rotating_coefficient_real_symmetry_0.8",
+    "zero_acceleration_geometric_readout",
+    "geometric_term_full_identity",
+    "geometric_term_cannot_be_dropped",
+    "normalized_triangle_geometry_bound",
+    "null_sector_change_of_variables_4.0",
+    "null_sector_divergent_lower_bound_4.0",
+    "null_sector_change_of_variables_8.0",
+    "null_sector_divergent_lower_bound_8.0",
+    "null_sector_change_of_variables_16.0",
+    "null_sector_divergent_lower_bound_16.0",
+    "null_sector_growth"
+  ],
+  "signed_weight_norms": {
+    "W0": 0.9565714285714284,
+    "W1": 4.0,
+    "W2": 12.423809523809524
+  },
+  "kinematics": {
+    "vmax": 0.17664,
+    "A": 0.060200000000000004,
+    "J": 0.018,
+    "delta": 0.82336,
+    "N1": 0.10129165809680479,
+    "N2": 0.044721359549995794
+  },
+  "signed_polygon_IBP": [
+    {
+      "mu": 0.0,
+      "sign": -1.0,
+      "rotating": false,
+      "discrepancy": 5.978733960281817e-16,
+      "omitted_atom_error": 0.5700323774881842,
+      "direct_magnitude": 0.5673375625831767,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.0,
+      "sign": -1.0,
+      "rotating": true,
+      "discrepancy": 1.7471903712796214e-16,
+      "omitted_atom_error": 0.14103897745440597,
+      "direct_magnitude": 0.1374784905553133,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.0,
+      "sign": 1.0,
+      "rotating": false,
+      "discrepancy": 5.311767472816653e-16,
+      "omitted_atom_error": 0.6146133539670768,
+      "direct_magnitude": 0.6252371998428125,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.0,
+      "sign": 1.0,
+      "rotating": true,
+      "discrepancy": 2.539163526713095e-16,
+      "omitted_atom_error": 0.17508344887859,
+      "direct_magnitude": 0.15372756269120558,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.9,
+      "sign": -1.0,
+      "rotating": false,
+      "discrepancy": 5.551115123125783e-17,
+      "omitted_atom_error": 0.6374038267100618,
+      "direct_magnitude": 0.6375112983085027,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.9,
+      "sign": -1.0,
+      "rotating": true,
+      "discrepancy": 5.551115123125783e-17,
+      "omitted_atom_error": 0.2649557842914961,
+      "direct_magnitude": 0.2650390455421521,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.9,
+      "sign": 1.0,
+      "rotating": false,
+      "discrepancy": 1.2412670766236366e-16,
+      "omitted_atom_error": 0.6320134125349594,
+      "direct_magnitude": 0.6355707325420801,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.9,
+      "sign": 1.0,
+      "rotating": true,
+      "discrepancy": 6.206335383118183e-17,
+      "omitted_atom_error": 0.2621975172976131,
+      "direct_magnitude": 0.2635609644005548,
+      "envelope": 0.9565714285714284
+    },
+    {
+      "mu": 0.4,
+      "sign": -1.0,
+      "rotating": false,
+      "discrepancy": 1.2911750880923164e-16,
+      "omitted_atom_error": 0.04202924403790899,
+      "direct_magnitude": 0.042064323730155874,
+      "envelope": 0.11361756462902303
+    },
+    {
+      "mu": 0.4,
+      "sign": -1.0,
+      "rotating": true,
+      "discrepancy": 2.2551405187698492e-17,
+      "omitted_atom_error": 0.011203996869831638,
+      "direct_magnitude": 0.011245261789608507,
+      "envelope": 0.12106601362872847
+    },
+    {
+      "mu": 0.4,
+      "sign": 1.0,
+      "rotating": false,
+      "discrepancy": 6.842818993142715e-17,
+      "omitted_atom_error": 0.026115372575914536,
+      "direct_magnitude": 0.026230615906498164,
+      "envelope": 0.11361756462902303
+    },
+    {
+      "mu": 0.4,
+      "sign": 1.0,
+      "rotating": true,
+      "discrepancy": 3.297115672281534e-17,
+      "omitted_atom_error": 0.008232236931168578,
+      "direct_magnitude": 0.00819875145200619,
+      "envelope": 0.12106601362872847
+    }
+  ],
+  "phase_coordinate_inversion": [
+    {
+      "sign": -1.0,
+      "rotating": false,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "sign": -1.0,
+      "rotating": true,
+      "error": 5.003707553108401e-17
+    },
+    {
+      "sign": 1.0,
+      "rotating": false,
+      "error": 1.5700924586837752e-16
+    },
+    {
+      "sign": 1.0,
+      "rotating": true,
+      "error": 1.8683543625880677e-17
+    }
+  ],
+  "Fourier_energy_controls": [
+    {
+      "mu": 0.0,
+      "fixed_spectral_Gram": [
+        [
+          0.3067846759188192,
+          -1.006850941762507e-17,
+          8.301485365908679e-19
+        ],
+        [
+          -1.006850941762507e-17,
+          0.2991239625522597,
+          -3.639660869682326e-19
+        ],
+        [
+          8.301485365908679e-19,
+          -3.639660869682326e-19,
+          0.2991239625523699
+        ]
+      ],
+      "fixed_envelope_squared": 1.9217019156365547,
+      "rotating_partial_norm_squared": 0.0895372129837424,
+      "rotating_envelope_squared": 6.34121425929787,
+      "branch_Gram_difference": 2.7755575615628914e-16
+    },
+    {
+      "mu": 0.8,
+      "fixed_spectral_Gram": [
+        [
+          0.2862807896053181,
+          -9.427738505604236e-18,
+          -1.198849405385354e-19
+        ],
+        [
+          -9.427738505604236e-18,
+          0.2788014663993251,
+          4.094047723769955e-20
+        ],
+        [
+          -1.198849405385354e-19,
+          4.094047723769955e-20,
+          0.2788014663994618
+        ]
+      ],
+      "fixed_envelope_squared": 1.9217019156365547,
+      "rotating_partial_norm_squared": 0.08352168753055882,
+      "rotating_envelope_squared": 6.34121425929787,
+      "branch_Gram_difference": 2.7755575615628914e-16
+    }
+  ],
+  "pure_geometric_readout": {
+    "adjacent_readout": -0.18834179536785958,
+    "vector_acceleration": 0.0,
+    "geometric_term": -0.18834179536785978,
+    "oracle": -0.18834179536785967,
+    "bound": 0.192
+  },
+  "null_path_boundary_controls": [
+    {
+      "cutoff": 4.0,
+      "sector_norm_squared": 0.10256093395059251,
+      "rigorous_sector_lower_bound": 0.032117088193548776
+    },
+    {
+      "cutoff": 8.0,
+      "sector_norm_squared": 0.5901979833150064,
+      "rigorous_sector_lower_bound": 0.16058544096774388
+    },
+    {
+      "cutoff": 16.0,
+      "sector_norm_squared": 2.711425517659584,
+      "rigorous_sector_lower_bound": 0.6744588520645244
+    }
+  ],
+  "source_sha256": {
+    "MOVING_TEMPORAL_HISTORY_WORKING_v1.md": "9de4f5427b7824a6b594cc64f2c782b0f15dc602b6245852e1e9c05dc6a4d3c5",
+    "moving_temporal_history_check_v1.py": "73a080b441ec9848c70b3d9b1fa90f790490b08fdbaff1374e34a1a4534a2a03",
+    "MOVING_TEMPORAL_RESULTS_v1.json": "9d6490fdd9c974651b89db47e062c213f13122a4ee6b3a630d45d3d9165b7597",
+    "MOVING_PRECHECK_v1.md": "9f44d46c0d91ae7736da950d7cbeca9ddfba18c70720aa0146183eea349419fd",
+    "MOVING_CONTROL_ORACLES_v1.md": "7a6f4867349e45e86ebf2aae2b82090ae70c62938906864885b6d3446e415314",
+    "independent_moving_check_v1.py": "50f434fd27f801fad78089d21b332131546c21b9793f79029f5356eb43a46a45"
+  },
+  "elapsed_seconds": 0.12085954193025827,
+  "scope": "Focused conditional fixed free-KG operator and synthetic kinematics. Null case is outside the timelike theorem. Finite-domain spectral quadratures are controls, not full norm evaluations or interval certificates. No empirical data or physical calibration."
+}

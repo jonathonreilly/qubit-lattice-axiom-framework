@@ -1,0 +1,313 @@
+{
+  "checks_passed": 70,
+  "checks": [
+    "triangular_derivative_norm",
+    "triangle_transform",
+    "angular_isotropy_factor",
+    "norm_positive_0.4_0.0",
+    "mass_enclosure_0.4_0.0",
+    "massless_tail_enclosure_0.4",
+    "norm_positive_0.4_0.7499999999999999",
+    "mass_enclosure_0.4_0.7499999999999999",
+    "norm_positive_0.4_2.5",
+    "mass_enclosure_0.4_2.5",
+    "norm_positive_0.4_7.5",
+    "mass_enclosure_0.4_7.5",
+    "norm_positive_0.4_25.0",
+    "mass_enclosure_0.4_25.0",
+    "mass_monotonicity_0.4",
+    "norm_positive_1.0_0.0",
+    "mass_enclosure_1.0_0.0",
+    "massless_tail_enclosure_1.0",
+    "norm_positive_1.0_0.3",
+    "mass_enclosure_1.0_0.3",
+    "norm_positive_1.0_1.0",
+    "mass_enclosure_1.0_1.0",
+    "norm_positive_1.0_3.0",
+    "mass_enclosure_1.0_3.0",
+    "norm_positive_1.0_10.0",
+    "mass_enclosure_1.0_10.0",
+    "mass_monotonicity_1.0",
+    "norm_positive_2.3_0.0",
+    "mass_enclosure_2.3_0.0",
+    "massless_tail_enclosure_2.3",
+    "norm_positive_2.3_0.13043478260869565",
+    "mass_enclosure_2.3_0.13043478260869565",
+    "norm_positive_2.3_0.4347826086956522",
+    "mass_enclosure_2.3_0.4347826086956522",
+    "norm_positive_2.3_1.3043478260869565",
+    "mass_enclosure_2.3_1.3043478260869565",
+    "norm_positive_2.3_4.347826086956522",
+    "mass_enclosure_2.3_4.347826086956522",
+    "mass_monotonicity_2.3",
+    "time_frequency_filter_0.0",
+    "Gaussian_energy_filter_0.0",
+    "time_frequency_filter_0.8",
+    "Gaussian_energy_filter_0.8",
+    "time_frequency_filter_2.0",
+    "Gaussian_energy_filter_2.0",
+    "Gaussian_Parseval_0.4",
+    "Gaussian_Parseval_1.2",
+    "box_cutoff_formula_0.5_10.0",
+    "box_cutoff_formula_0.5_40.0",
+    "box_cutoff_formula_0.5_160.0",
+    "box_not_triangle_witness_0.5",
+    "box_cutoff_formula_1.0_10.0",
+    "box_cutoff_formula_1.0_40.0",
+    "box_cutoff_formula_1.0_160.0",
+    "box_not_triangle_witness_1.0",
+    "box_cutoff_formula_2.0_10.0",
+    "box_cutoff_formula_2.0_40.0",
+    "box_cutoff_formula_2.0_160.0",
+    "box_not_triangle_witness_2.0",
+    "adjacent_velocity_identity_degree0",
+    "adjacent_velocity_identity_degree1",
+    "adjacent_velocity_identity_degree2",
+    "adjacent_velocity_identity_degree3",
+    "adjacent_velocity_identity_degree4",
+    "adjacent_velocity_identity_degree5",
+    "adjacent_velocity_identity_degree6",
+    "nonlinear_adjacent_identity_0.5",
+    "count_error_bound_0.5",
+    "nonlinear_adjacent_identity_1.2",
+    "count_error_bound_1.2"
+  ],
+  "mass_norms": [
+    {
+      "mu": 0.0,
+      "T": 0.4,
+      "cutoff": 750.0,
+      "partial_norm_squared": 1.652610428085175,
+      "omitted_tail_upper_bound": 0.014072386616991355,
+      "quadrature_error_estimate": 9.92369963697234e-12,
+      "massless_exact_norm_squared": 1.657863990540576
+    },
+    {
+      "mu": 0.7499999999999999,
+      "T": 0.4,
+      "cutoff": 750.0,
+      "partial_norm_squared": 1.5886105549350096,
+      "omitted_tail_upper_bound": 0.014072386616991355,
+      "quadrature_error_estimate": 1.2646127844474996e-10,
+      "massless_exact_norm_squared": 1.657863990540576
+    },
+    {
+      "mu": 2.5,
+      "T": 0.4,
+      "cutoff": 750.0,
+      "partial_norm_squared": 1.1668608496455088,
+      "omitted_tail_upper_bound": 0.014072386616991355,
+      "quadrature_error_estimate": 2.1927637386755267e-11,
+      "massless_exact_norm_squared": 1.657863990540576
+    },
+    {
+      "mu": 7.5,
+      "T": 0.4,
+      "cutoff": 750.0,
+      "partial_norm_squared": 0.2843357277082561,
+      "omitted_tail_upper_bound": 0.014072386616991355,
+      "quadrature_error_estimate": 3.2732831435128354e-12,
+      "massless_exact_norm_squared": 1.657863990540576
+    },
+    {
+      "mu": 25.0,
+      "T": 0.4,
+      "cutoff": 750.0,
+      "partial_norm_squared": 0.08632201353265333,
+      "omitted_tail_upper_bound": 0.014072386616991355,
+      "quadrature_error_estimate": 1.2733767360898082e-14,
+      "massless_exact_norm_squared": 1.657863990540576
+    },
+    {
+      "mu": 0.0,
+      "T": 1.0,
+      "cutoff": 300.0,
+      "partial_norm_squared": 0.10576706739745115,
+      "omitted_tail_upper_bound": 0.0009006327434874469,
+      "quadrature_error_estimate": 6.351178887077939e-13,
+      "massless_exact_norm_squared": 0.1061032953945969
+    },
+    {
+      "mu": 0.3,
+      "T": 1.0,
+      "cutoff": 300.0,
+      "partial_norm_squared": 0.1016710755158407,
+      "omitted_tail_upper_bound": 0.0009006327434874469,
+      "quadrature_error_estimate": 8.0934865438788e-12,
+      "massless_exact_norm_squared": 0.1061032953945969
+    },
+    {
+      "mu": 1.0,
+      "T": 1.0,
+      "cutoff": 300.0,
+      "partial_norm_squared": 0.07467909437731263,
+      "omitted_tail_upper_bound": 0.0009006327434874469,
+      "quadrature_error_estimate": 1.4033241570731072e-12,
+      "massless_exact_norm_squared": 0.1061032953945969
+    },
+    {
+      "mu": 3.0,
+      "T": 1.0,
+      "cutoff": 300.0,
+      "partial_norm_squared": 0.01819748657332838,
+      "omitted_tail_upper_bound": 0.0009006327434874469,
+      "quadrature_error_estimate": 2.094959706185915e-13,
+      "massless_exact_norm_squared": 0.1061032953945969
+    },
+    {
+      "mu": 10.0,
+      "T": 1.0,
+      "cutoff": 300.0,
+      "partial_norm_squared": 0.005524608866089816,
+      "omitted_tail_upper_bound": 0.0009006327434874469,
+      "quadrature_error_estimate": 8.11796417442413e-16,
+      "massless_exact_norm_squared": 0.1061032953945969
+    },
+    {
+      "mu": 0.0,
+      "T": 2.3,
+      "cutoff": 130.43478260869566,
+      "partial_norm_squared": 0.008692945458819042,
+      "omitted_tail_upper_bound": 7.402258103784394e-05,
+      "quadrature_error_estimate": 5.219997052528445e-14,
+      "massless_exact_norm_squared": 0.008720579879559211
+    },
+    {
+      "mu": 0.13043478260869565,
+      "T": 2.3,
+      "cutoff": 130.43478260869566,
+      "partial_norm_squared": 0.008356297815060464,
+      "omitted_tail_upper_bound": 7.402258103784394e-05,
+      "quadrature_error_estimate": 6.651996706274802e-13,
+      "massless_exact_norm_squared": 0.008720579879559211
+    },
+    {
+      "mu": 0.4347826086956522,
+      "T": 2.3,
+      "cutoff": 130.43478260869566,
+      "partial_norm_squared": 0.006137839597050429,
+      "omitted_tail_upper_bound": 7.402258103784394e-05,
+      "quadrature_error_estimate": 1.1534633438043192e-13,
+      "massless_exact_norm_squared": 0.008720579879559211
+    },
+    {
+      "mu": 1.3043478260869565,
+      "T": 2.3,
+      "cutoff": 130.43478260869566,
+      "partial_norm_squared": 0.0014956428514283225,
+      "omitted_tail_upper_bound": 7.402258103784394e-05,
+      "quadrature_error_estimate": 1.721763019430619e-14,
+      "massless_exact_norm_squared": 0.008720579879559211
+    },
+    {
+      "mu": 4.347826086956522,
+      "T": 2.3,
+      "cutoff": 130.43478260869566,
+      "partial_norm_squared": 0.0004540650009109764,
+      "omitted_tail_upper_bound": 7.402258103784394e-05,
+      "quadrature_error_estimate": 6.047509571004534e-13,
+      "massless_exact_norm_squared": 0.008720579879559211
+    }
+  ],
+  "Gaussian_initial_data_controls": [
+    {
+      "mu": 0.0,
+      "ell": 0.7,
+      "T": 0.8,
+      "A": 0.2,
+      "frequency_average": 0.16906771373604354,
+      "direct_time_average": 0.169067713736044,
+      "energy": 0.0974457399445549,
+      "energy_upper_bound": 0.2009675242953815,
+      "discrepancy": 4.718447854656915e-16
+    },
+    {
+      "mu": 0.8,
+      "ell": 0.9,
+      "T": 1.3,
+      "A": 0.3,
+      "frequency_average": 0.1324320041231273,
+      "direct_time_average": 0.1324320041231282,
+      "energy": 0.34035068481914577,
+      "energy_upper_bound": 0.1813124891079661,
+      "discrepancy": 8.881784197001252e-16
+    },
+    {
+      "mu": 2.0,
+      "ell": 0.6,
+      "T": 0.4,
+      "A": 0.1,
+      "frequency_average": 0.13127751763901532,
+      "direct_time_average": 0.13127751763901546,
+      "energy": 0.0329088184612754,
+      "energy_upper_bound": 0.33032815531887505,
+      "discrepancy": 1.3877787807814457e-16
+    }
+  ],
+  "box_cutoff_controls": [
+    {
+      "T": 0.5,
+      "cutoff": 20.0,
+      "norm_squared": 0.6446409931474605
+    },
+    {
+      "T": 0.5,
+      "cutoff": 80.0,
+      "norm_squared": 2.735465555403743
+    },
+    {
+      "T": 0.5,
+      "cutoff": 320.0,
+      "norm_squared": 10.822053326768165
+    },
+    {
+      "T": 1.0,
+      "cutoff": 10.0,
+      "norm_squared": 0.08058012414343256
+    },
+    {
+      "T": 1.0,
+      "cutoff": 40.0,
+      "norm_squared": 0.3419331944254679
+    },
+    {
+      "T": 1.0,
+      "cutoff": 160.0,
+      "norm_squared": 1.3527566658460206
+    },
+    {
+      "T": 2.0,
+      "cutoff": 5.0,
+      "norm_squared": 0.01007251551792907
+    },
+    {
+      "T": 2.0,
+      "cutoff": 20.0,
+      "norm_squared": 0.042741649303183485
+    },
+    {
+      "T": 2.0,
+      "cutoff": 80.0,
+      "norm_squared": 0.16909458323075258
+    }
+  ],
+  "adjacent_readouts": [
+    {
+      "T": "0.5",
+      "center": "0.3",
+      "triangular_acceleration": "1.846487736171956281175611956399630296737",
+      "adjacent_velocity_difference": "1.846487736171956281175611956399630296737",
+      "count_readout": "1.832202021886241995461326242113916011024",
+      "count_error_bound": "0.01428571428571428571428571428571428571429"
+    },
+    {
+      "T": "1.2",
+      "center": "-0.4",
+      "triangular_acceleration": "1.109555153268024100327806140916429417772",
+      "adjacent_velocity_difference": "1.109555153268024100327806140916429417773",
+      "count_readout": "1.107074994537865370169075982186270687614",
+      "count_error_bound": "0.00248015873015873015873015873015873015873"
+    }
+  ],
+  "scope": "Fixed-point temporal field functional and conditional leading velocity/count readout. No actual radio-force calibration, physical energy budget, localized state selection or observational test."
+}

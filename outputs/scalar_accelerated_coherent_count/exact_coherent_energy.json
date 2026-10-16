@@ -1,0 +1,100 @@
+{
+  "source_sha256": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f",
+  "checks_passed": 15,
+  "checks": [
+    {
+      "name": "arrival_vs_original_coherent_spectral_gram_0_0",
+      "exact_residual": "0"
+    },
+    {
+      "name": "arrival_vs_original_coherent_spectral_gram_0_1",
+      "exact_residual": "0"
+    },
+    {
+      "name": "initial_position_moment_0",
+      "exact_residual": "0"
+    },
+    {
+      "name": "initial_velocity_moment_0",
+      "exact_residual": "0"
+    },
+    {
+      "name": "original_harmonic_zero_sum_0",
+      "exact_residual": "0"
+    },
+    {
+      "name": "constant_background_response_0",
+      "exact_residual": "0"
+    },
+    {
+      "name": "arrival_vs_original_coherent_spectral_gram_1_0",
+      "exact_residual": "0"
+    },
+    {
+      "name": "arrival_vs_original_coherent_spectral_gram_1_1",
+      "exact_residual": "0"
+    },
+    {
+      "name": "initial_position_moment_1",
+      "exact_residual": "0"
+    },
+    {
+      "name": "initial_velocity_moment_1",
+      "exact_residual": "0"
+    },
+    {
+      "name": "original_harmonic_zero_sum_1",
+      "exact_residual": "0"
+    },
+    {
+      "name": "constant_background_response_1",
+      "exact_residual": "0"
+    },
+    {
+      "name": "exact_positive_definite_count_gram",
+      "determinant_of_4pi_gram": "392497/10935"
+    },
+    {
+      "name": "reject_omitted_station_direct_clock",
+      "exact_4pi_matrix_difference": "Matrix([[-344/135, 166/135], [166/135, -344/135]])"
+    },
+    {
+      "name": "reject_equal_coordinate_cross_path_composition",
+      "exact_4pi_matrix_difference": "Matrix([[3848/405, -2557/405], [-2557/405, 3848/405]])"
+    }
+  ],
+  "fixture": {
+    "light_time_L": "3/5",
+    "count_duration_T": "1",
+    "coupling_times_turnaround": "1",
+    "reference": "two stationary free bodies, same station clock at emission/reception",
+    "contrast": "adjacent finite count difference, two time-translated channels"
+  },
+  "four_pi_times_gram": [
+    [
+      "3064/405",
+      "-1871/405"
+    ],
+    [
+      "-1871/405",
+      "3064/405"
+    ]
+  ],
+  "gram_decimal": [
+    [
+      0.6020379575723053,
+      -0.3676282697838718
+    ],
+    [
+      -0.3676282697838718,
+      0.6020379575723053
+    ]
+  ],
+  "angular_partition": [
+    "-1",
+    "-2/3",
+    "2/3",
+    "1"
+  ],
+  "scope": "Exact conditional symbolic composition, no observed data or fitted constants. Free massless conformal scalar, ideal coherent link, stationary reference. Actual action/state/energy/calibration remain supplied. The accelerated theorem is separately checked; this exact fixture tests count-to-multipath composition and normalization."
+}

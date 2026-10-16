@@ -1,0 +1,41 @@
+{
+  "scope": "Final metadata source confirmation only; underlying exact reconstruction separately checked",
+  "script_sha256": "1b3e8ce18a8464b65fe256b9fd474bb1adf35b17a3240eb44afb57c93a7a37e1",
+  "checks": {
+    "rows": true,
+    "all_item87_values": true,
+    "projected_prior_ledger_hash": true,
+    "quality_summary": true,
+    "math_summary_unchanged": true,
+    "canonical_matches_working_except_filename": true,
+    "field_order": true,
+    "nonzero_occurrences": true
+  },
+  "field87": [
+    1466,
+    10,
+    false
+  ],
+  "failed_field_comparisons": [],
+  "rows": 91664,
+  "endpoint_occurrences": 183329,
+  "slipped_cycle_occurrences": {
+    "0": 164936,
+    "2": 8567,
+    "1": 6939,
+    "7": 2,
+    "10": 94,
+    "6": 69,
+    "3": 1979,
+    "5": 178,
+    "4": 558,
+    "8": 7
+  },
+  "distinct_endpoint_records": 91701,
+  "distinct_endpoint_records_with_nonzero_diagnostic": 9207,
+  "intervals_with_any_nonzero_endpoint_diagnostic": 13015,
+  "new_ledger_sha256": "6973b8b57b7ecb9fc4f3ea87efbfa1e15dfe4e12349f3ad6aadd054790597f77",
+  "projected_prior_ledger_sha256": "0aa1da97c9cb0bcba4ce3bce3c203d3759843d7bca78890007d0f50ef0e40f19",
+  "working_summary_sha256": "f56414c996d1379743efe2780b4604a44023e3dcf15d5ce1b0b86619ef51c406",
+  "canonical_summary_sha256": "52300ef640fc9b3d643c8fce268c2b40318c1c1c6726e4c2de1c7d9734f8dbab"
+}

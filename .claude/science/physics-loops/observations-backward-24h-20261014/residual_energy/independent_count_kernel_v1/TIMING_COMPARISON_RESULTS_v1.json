@@ -1,0 +1,507 @@
+{
+  "checked_at": "2026-10-15T02:36:53.241013+00:00",
+  "passed": 114,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "author_ledger_hash",
+      "passed": true
+    },
+    {
+      "name": "source_hashes",
+      "passed": true
+    },
+    {
+      "name": "orbit_and_type_counts",
+      "passed": true
+    },
+    {
+      "name": "Doppler_accounting",
+      "passed": true
+    },
+    {
+      "name": "strata_and_chain_counts",
+      "passed": true
+    },
+    {
+      "name": "duration_histogram",
+      "passed": true
+    },
+    {
+      "name": "exact_static_configuration_keys",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_0",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_0",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_0",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_1",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_1",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_1",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_2",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_2",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_2",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_3",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_3",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_3",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_4",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_4",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_4",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_5",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_5",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_5",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_6",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_6",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_6",
+      "passed": true
+    },
+    {
+      "name": "stream_accounting_7",
+      "passed": true
+    },
+    {
+      "name": "stream_pair_accounting_7",
+      "passed": true
+    },
+    {
+      "name": "stream_chain_lengths_7",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_0",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_0",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_1",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_1",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_2",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_2",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_3",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_3",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_4",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_4",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_5",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_5",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_6",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_6",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_7",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_7",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_8",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_8",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_9",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_9",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_10",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_10",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_11",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_11",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_12",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_12",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_13",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_13",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_14",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_14",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_15",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_15",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_16",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_16",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_17",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_17",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_18",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_18",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_19",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_19",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_20",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_20",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_21",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_21",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_22",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_22",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_23",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_23",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_24",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_24",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_25",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_25",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_26",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_26",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_27",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_27",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_28",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_28",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_29",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_29",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_30",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_30",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_31",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_31",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_32",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_32",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_33",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_33",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_34",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_34",
+      "passed": true
+    },
+    {
+      "name": "chain_timing_35",
+      "passed": true
+    },
+    {
+      "name": "unit_duration_gram_35",
+      "passed": true
+    },
+    {
+      "name": "exact_weighted_mean_0",
+      "passed": true
+    },
+    {
+      "name": "exact_raw_centered_sum_0",
+      "passed": true
+    },
+    {
+      "name": "exact_weighted_mean_1",
+      "passed": true
+    },
+    {
+      "name": "exact_raw_centered_sum_1",
+      "passed": true
+    },
+    {
+      "name": "exact_weighted_mean_2",
+      "passed": true
+    },
+    {
+      "name": "exact_raw_centered_sum_2",
+      "passed": true
+    },
+    {
+      "name": "exact_weighted_mean_15",
+      "passed": true
+    },
+    {
+      "name": "exact_raw_centered_sum_15",
+      "passed": true
+    },
+    {
+      "name": "all_exact_gap_boundaries",
+      "passed": true
+    },
+    {
+      "name": "no_actual_overlap_or_duplicate",
+      "passed": true
+    },
+    {
+      "name": "documented_setup_repair_scope",
+      "passed": true
+    }
+  ],
+  "independent_record_decode_preceded_author_source_access": true,
+  "all_chain_timing_rows_checked": 36,
+  "exact_moment_chain_count": 4,
+  "exact_moment_chain_correspondence": [
+    {
+      "independent_chain": 0,
+      "author_stream": 1,
+      "author_chain": 0,
+      "records": 11564,
+      "first_file_record": 45589,
+      "last_file_record": 57190
+    },
+    {
+      "independent_chain": 1,
+      "author_stream": 1,
+      "author_chain": 1,
+      "records": 18730,
+      "first_file_record": 57191,
+      "last_file_record": 75982
+    },
+    {
+      "independent_chain": 2,
+      "author_stream": 1,
+      "author_chain": 2,
+      "records": 3147,
+      "first_file_record": 75983,
+      "last_file_record": 79574
+    },
+    {
+      "independent_chain": 15,
+      "author_stream": 7,
+      "author_chain": 0,
+      "records": 394,
+      "first_file_record": 3313,
+      "last_file_record": 4100
+    }
+  ],
+  "source_sha256": {
+    "independent_script": "0d7a31cbe0a1f5ca2460be5bab797c750cd37bf1b91a9bd026c43302440daefd",
+    "author_script": "9b41c5a92214cd0cd6ee4e8c0c3c99b89f2af9ef6b06467e5fa72fb7ca6ef5bc",
+    "author_results": "a6a50d9e0934ff06f06c4ff63b6b710dee95461170f8c99c7ff847fc384a6f67",
+    "author_ledger": "cd5ba960fef413f2207056fa3cf39cf674242a51ce87081834953a0aa8a0a813"
+  },
+  "scope": "Nominal timing/configuration/raw receiver-frequency moments only; no physical residual or field energy."
+}

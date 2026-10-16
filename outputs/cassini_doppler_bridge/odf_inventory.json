@@ -1,0 +1,326 @@
+{
+  "role": "exposed development inventory; no empirical gravity test",
+  "source": {
+    "label_sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+    "odf_sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+    "bytes": 3314304,
+    "orbit_first_record_one_based": 6,
+    "orbit_records": 91863
+  },
+  "self_checks": {
+    "known_cross_byte_fields": 17,
+    "signed_control": true,
+    "truncation_rejected": true,
+    "validity_mutation_detected": true
+  },
+  "type_counts": {
+    "13": 29556,
+    "12": 61459,
+    "37": 199,
+    "11": 649
+  },
+  "link_field_order": [
+    "type",
+    "receiving_station",
+    "transmitting_station",
+    "uplink_band",
+    "downlink_band",
+    "bad"
+  ],
+  "link_counts": [
+    {
+      "key": [
+        11,
+        54,
+        0,
+        0,
+        2,
+        0
+      ],
+      "count": 649
+    },
+    {
+      "key": [
+        12,
+        25,
+        25,
+        2,
+        2,
+        0
+      ],
+      "count": 36007
+    },
+    {
+      "key": [
+        12,
+        45,
+        45,
+        2,
+        2,
+        0
+      ],
+      "count": 6094
+    },
+    {
+      "key": [
+        12,
+        54,
+        54,
+        2,
+        2,
+        0
+      ],
+      "count": 19358
+    },
+    {
+      "key": [
+        13,
+        25,
+        54,
+        2,
+        2,
+        0
+      ],
+      "count": 9910
+    },
+    {
+      "key": [
+        13,
+        45,
+        25,
+        2,
+        2,
+        0
+      ],
+      "count": 10160
+    },
+    {
+      "key": [
+        13,
+        54,
+        45,
+        2,
+        2,
+        0
+      ],
+      "count": 9486
+    },
+    {
+      "key": [
+        37,
+        25,
+        25,
+        2,
+        2,
+        0
+      ],
+      "count": 116
+    },
+    {
+      "key": [
+        37,
+        25,
+        54,
+        2,
+        2,
+        0
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        37,
+        45,
+        45,
+        2,
+        2,
+        0
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        37,
+        54,
+        54,
+        2,
+        2,
+        0
+      ],
+      "count": 64
+    }
+  ],
+  "nominal_utc_bounds": [
+    "2002-06-18T04:25:09.500000",
+    "2002-06-19T04:20:20.500000"
+  ],
+  "time_conversion_scope": "naive label-epoch calendar arithmetic only; no relativistic or station time correction",
+  "all_record_time_decreases": 0,
+  "spacecraft_ids": [
+    82
+  ],
+  "doppler_groups": [
+    {
+      "key": [
+        11,
+        54,
+        0,
+        0,
+        2,
+        0
+      ],
+      "records": 649,
+      "time_seconds": [
+        1655529617.5,
+        1655530266.5
+      ],
+      "compression_centiseconds": {
+        "100": 649
+      },
+      "raw_observable_hz": [
+        -2912330.843844148,
+        -2912329.789844724
+      ],
+      "time_decreases": 0
+    },
+    {
+      "key": [
+        12,
+        25,
+        25,
+        2,
+        2,
+        0
+      ],
+      "records": 36007,
+      "time_seconds": [
+        1655568662.5,
+        1655604681.5
+      ],
+      "compression_centiseconds": {
+        "100": 36007
+      },
+      "raw_observable_hz": [
+        -115.089,
+        26334.13499999
+      ],
+      "time_decreases": 0
+    },
+    {
+      "key": [
+        12,
+        45,
+        45,
+        2,
+        2,
+        0
+      ],
+      "records": 6094,
+      "time_seconds": [
+        1655526327.5,
+        1655612420.5
+      ],
+      "compression_centiseconds": {
+        "100": 6094
+      },
+      "raw_observable_hz": [
+        201754.572999954,
+        219256.515999794
+      ],
+      "time_decreases": 0
+    },
+    {
+      "key": [
+        12,
+        54,
+        54,
+        2,
+        2,
+        0
+      ],
+      "records": 19358,
+      "time_seconds": [
+        1655540771.5,
+        1655560637.5
+      ],
+      "compression_centiseconds": {
+        "100": 19358
+      },
+      "raw_observable_hz": [
+        201.912999988,
+        193483.542999744
+      ],
+      "time_decreases": 0
+    },
+    {
+      "key": [
+        13,
+        25,
+        54,
+        2,
+        2,
+        0
+      ],
+      "records": 9910,
+      "time_seconds": [
+        1655558667.5,
+        1655568580.5
+      ],
+      "compression_centiseconds": {
+        "100": 9910
+      },
+      "raw_observable_hz": [
+        -853024.970000267,
+        197291.250999928
+      ],
+      "time_decreases": 0
+    },
+    {
+      "key": [
+        13,
+        45,
+        25,
+        2,
+        2,
+        0
+      ],
+      "records": 10160,
+      "time_seconds": [
+        1655526309.5,
+        1655612410.5
+      ],
+      "compression_centiseconds": {
+        "100": 10160
+      },
+      "raw_observable_hz": [
+        -189305.027999878,
+        214005.646999836
+      ],
+      "time_decreases": 0
+    },
+    {
+      "key": [
+        13,
+        54,
+        45,
+        2,
+        2,
+        0
+      ],
+      "records": 9486,
+      "time_seconds": [
+        1655531163.5,
+        1655540655.5
+      ],
+      "compression_centiseconds": {
+        "100": 9486
+      },
+      "raw_observable_hz": [
+        201458.049999714,
+        205157.787999868
+      ],
+      "time_decreases": 0
+    }
+  ],
+  "measurement_scope": "Archived observable is a receiver/ramp/transponder compression product, not fractional gravitational Doppler or a plasma-corrected residual. All channels and validity flags retained; none selected by values."
+}

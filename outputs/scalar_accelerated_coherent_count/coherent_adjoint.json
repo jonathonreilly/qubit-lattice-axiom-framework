@@ -1,0 +1,108 @@
+{
+  "source_sha256": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+  "helper_sha256": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+  "geometry_helper_sha256": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+  "checks_passed": 14,
+  "checks": [
+    {
+      "name": "coherent_initial_response_forward_vs_adjoint",
+      "max_absolute_error": 4.3087755585702325e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "coherent_count_from_joint_adjoint",
+      "max_absolute_error": 3.75607114855292e-11,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ideal_coherent_spacecraft_direct_clock_absent",
+      "max_adjoint_clock": 0.0
+    },
+    {
+      "name": "spacecraft_force_response_retained",
+      "max_count_force_response": 0.3794920260651277
+    },
+    {
+      "name": "coherent_full_initial_nuisance_constant_cancellation",
+      "max_absolute_error": 1.7763568394002505e-15,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "coherent_contrast_count_from_field",
+      "max_absolute_error": 2.800872839786005e-11,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "coherent_no_force_weight_jump_body_0",
+      "max_jump": 0.0
+    },
+    {
+      "name": "coherent_initial_force_trace_body_0",
+      "max_absolute_error": 5.94949464401943e-13,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "coherent_no_force_weight_jump_body_1",
+      "max_jump": 0.0
+    },
+    {
+      "name": "coherent_initial_force_trace_body_1",
+      "max_absolute_error": 1.3919939973193621e-13,
+      "tolerance": 1e-11
+    },
+    {
+      "name": "reject_omitted_composed_light_time_factor",
+      "max_count_error": 0.03571857405757317
+    },
+    {
+      "name": "nonlinear_coherent_link_to_linear_count",
+      "error": 1.7327623913487855e-07
+    },
+    {
+      "name": "coherent_second_order_0",
+      "ratio": 3.9999455585811803
+    },
+    {
+      "name": "coherent_second_order_1",
+      "ratio": 3.9995503165981665
+    }
+  ],
+  "convergence": [
+    {
+      "eps": 0.004,
+      "max_count_error": 2.772070418988193e-06
+    },
+    {
+      "eps": 0.002,
+      "max_count_error": 6.930270370908431e-07
+    },
+    {
+      "eps": 0.001,
+      "max_count_error": 1.7327623913487855e-07
+    }
+  ],
+  "observation_count": 22,
+  "contrast_dimension": 6,
+  "design_singular_values": [
+    48.940588401893784,
+    6.244381218002754,
+    1.2963023969522078,
+    0.10715888711151784,
+    0.05161893739949869,
+    0.012758895133686889,
+    0.0020519884722117786,
+    0.0002044185609020593,
+    7.973906463803839e-05,
+    1.864880501602227e-05,
+    5.516450479779905e-06,
+    1.1191321083477466e-06,
+    4.698902691939515e-08,
+    3.251109079299918e-08,
+    3.02511203110037e-09,
+    1.727708297148497e-10,
+    2.9040110668810278e-24
+  ],
+  "rank_rcond": 1e-13,
+  "turnaround": 1.4,
+  "scope": "Synthetic ideal instantaneous coherent station-spacecraft-station link. Shared station clock; no spacecraft oscillator phase. Both orbital force responses retained. Supplied conformal flat propagation and external dynamics; no actual calibration, energy/error budget, massive extension or empirical test. Floating rank and finite-step checks are not certified enclosures."
+}

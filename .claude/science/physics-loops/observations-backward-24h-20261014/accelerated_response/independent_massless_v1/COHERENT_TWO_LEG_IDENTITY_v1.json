@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-15T03:52:18.103257+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Focused independent exact ideal coherent two-leg stationary/free composition, no formal audit.",
+  "new_author_coherent_source_or_result_read": false,
+  "prior_exposure": "General joint theorem and earlier author joint Gram code were already reviewed; no new coherent author implementation read.",
+  "files": {
+    "COHERENT_TWO_LEG_PRECHECK_v1.md": "c8435b8c50a227b9a6c3439856f4fecdd3d452b8ae69fed83ad715a674520859",
+    "coherent_two_leg_check_v1.py": "96c137ad703a9da7b7ca61afff6b583b715dc2e8e814934e0fc73282548a66df",
+    "COHERENT_TWO_LEG_FREEZE_v1.json": "28447a1d73d42daad4efd24f4adf1d707feea9b8286554747b8d16bac8bf8151",
+    "COHERENT_TWO_LEG_RESULTS_v1.json": "2a537b8ef7543b1172bbf6e5f368803feb16fa2217b9c337e547250ff0079205",
+    "COHERENT_TWO_LEG_RUN_v1.stdout": "2a537b8ef7543b1172bbf6e5f368803feb16fa2217b9c337e547250ff0079205",
+    "COHERENT_TWO_LEG_RUN_v1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "COHERENT_TWO_LEG_REVIEW_v1.md": "2347cde604f7b7d7b31523fb28d107053b3670a51d36ff8e7db8661f81b34aa0"
+  },
+  "result": "G=[[3064,-1871],[-1871,3064]]/(1620*pi), norm ||h||^2=2E",
+  "checks_passed": 61,
+  "checks_failed": 0,
+  "max_original_null_leg_integral_error": 1.0145207566569258e-12,
+  "source_or_index_changes": false,
+  "raw_observations_read": false
+}

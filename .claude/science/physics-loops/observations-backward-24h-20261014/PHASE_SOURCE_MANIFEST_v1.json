@@ -1,0 +1,51 @@
+{
+  "author": "/root",
+  "scope": "Self-contained conditional theorem; no data fitting or ancestor theorem output in runner",
+  "files": [
+    {
+      "path": "docs/COHERENT_RADIO_COUNT_INITIAL_PHASE_ELIMINATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "48e77f8cb258b11a47acd18a1e6d8213a0e7fc693a851862ea8d1a2df2789442"
+    },
+    {
+      "path": "scripts/coherent_radio_count_initial_phase_check.py",
+      "sha256": "9ca987b06ff9f9035c86c0403ff84acbc0d42d479c2dee0b4bda9956ed72f21f"
+    },
+    {
+      "path": "scripts/coherent_count_plasma_controls.py",
+      "sha256": "a0170fef63edc54af3a7a9a23708d695ab94f51d7f13b9a2b90f848341dcc90f"
+    },
+    {
+      "path": "scripts/coherent_count_initial_phase_controls.py",
+      "sha256": "74554c02590e0ebb0a730ba0f86a47bb222853f7fb1d0ccb52facb3023e6254a"
+    },
+    {
+      "path": "scripts/coherent_count_chirp_controls.py",
+      "sha256": "9254de2d47f12eb1a5114b08e3b9844e4f561eb913fbff0bb21d4c282361b66b"
+    },
+    {
+      "path": "outputs/coherent_radio_initial_phase/initial_phase_contrasts.json",
+      "sha256": "928d2db59138602e813a4de8f1572b96ce5000463a06b2457c043bf384f4b694"
+    },
+    {
+      "path": "outputs/coherent_radio_initial_phase/plasma_finite_count.json",
+      "sha256": "e22977cb436516a25974e0f53791ce353d4cfce973ceae02b0743ea3812cc23d"
+    },
+    {
+      "path": "outputs/coherent_radio_initial_phase/summary.json",
+      "sha256": "ef05cac414e20948915d332ee5aaa7f01a662755a226d47f72bccbba39d3b22d"
+    },
+    {
+      "path": "outputs/coherent_radio_initial_phase/two_uplink_chirps.json",
+      "sha256": "c9bbe75023ac0c0538d700d05c3fd1e579f37decddfbc3752c4002b8eacaecd1"
+    },
+    {
+      "path": "logs/runner-cache/coherent_radio_count_initial_phase_check.txt",
+      "sha256": "e1f75b8598f430a26a1ad4d0707fcfb532bd919aa19924f79df5bef2161fe5f5"
+    }
+  ],
+  "independent_report": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_link/independent_v1/CANONICAL_PHASE_SOURCE_CONFIRMATION_v1.md",
+    "sha256": "d1b73dd2cc6d194c0bca3c6a0574ecb1894cdf2b9391d81d271be2288ec4722b"
+  },
+  "preserved_history": "Working drafts, independent source snapshots and scratch mutation programs remain in the local physical_link pack. Selected final reports/receipts are published; the proof and runnable source closure are canonical and self-contained."
+}

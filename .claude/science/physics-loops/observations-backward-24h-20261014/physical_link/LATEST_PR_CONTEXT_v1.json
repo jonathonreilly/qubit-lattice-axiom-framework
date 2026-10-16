@@ -1,0 +1,17 @@
+{
+  "as_of": "2026-10-15T00:04:04.328058+00:00",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "new_background_pr": {
+    "number": 9579,
+    "head": "bf3ecf67438816b28634282361428ad096245ed1",
+    "base": "physics-loop/toe-chain-preparation-scaling-20261014",
+    "title": "Add a one-clean-pointer vacuum-preparation circuit and conditional moments",
+    "body": "The checked chain preparation bounds assume auxiliary input quality without supplying a test circuit. This adds a literal heralded vacuum test using one clean pointer, arbitrary returned workspace and ordinary-neighbor routing on an explicitly extended chain box. On ideal success, the full old/reference disturbance is bounded by the initial marginal error plus twice the failure probability. That gives sufficient local defect O(M^-3) and old/reference O(M^-2) allowances for fixed successful scalar mean/variance tolerances, with the same installed Hamiltonian and its baseline variance retained.\n\nBoth outcomes remain part of the instrument. Clean pointer, eligible factors, identity background on the added layer, net controls after drift removal, clock and terminal readout are supplied premises. General instrument faults still carry the full-space energy sensitivity. This does not supply native apparatus, permanent Records, reset, free retries, physical-energy identification or an optimal resource bound. Existing projector dilation and dirty-workspace synthesis are credited.\n\nStacked on #9577. Source status is conditional support; no science merge or retained audit is proposed.\n\nValidation:\n\n- Independently derived conditioning/moment proof and source-exposed composition review; exact phase-sensitive circuit review with disclosed exposure limits.\n- Canonical exact circuit run: Toffoli and generic routing matrices, selected dirty-workspace predicates, full frozen words at M=1,2,3,8. Logical predicate enumeration covers M=1,2,3; M=8 has decomposition/routing checks. No full physical-word matrix or numerical all-M moment proof is claimed.\n- Five wrong circuit interfaces and five separate source-integrity mutations detected. Complete proof bodies, parent clauses, programs, actual streams, review findings and packaging corrections are preserved.\n- Three live Python files compile; vocabulary and staged whitespace checks pass; all declared inputs and local links close over the publication tree.\n- Citation graph preserves every old node/edge/root and adds one node with two explicit theorem imports. Focused ledger compatibility reports no affected audit rows; this is not a scientific audit.\n\nShared full-pipeline/strict-lint validation on an integrated current-main landing candidate and independent retained audit remain outstanding. The separate dyadic-filter investigation is excluded.\n",
+    "file_count": 205,
+    "new_science_notes": [
+      "docs/HERALDED_AUXILIARY_VACUUM_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    ]
+  },
+  "coverage": "Read body and complete205path inventory; proof bodies not adopted. Its description concerns conditional auxiliary vacuum preparation and explicitly retains apparatus/control premises. No theorem from this background PR is used in the radio operator.",
+  "initial_api_limitation": "gh pr view returned100files; a separate paginated API call retrieved all205."
+}

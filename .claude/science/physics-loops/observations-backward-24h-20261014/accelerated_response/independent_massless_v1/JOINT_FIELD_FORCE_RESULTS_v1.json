@@ -1,0 +1,279 @@
+{
+  "at": "2026-10-15T03:29:57.668801+00:00",
+  "role": "independent massless joint field-force and common-field cross-path check",
+  "source_sha256": "12ea944363278f847fe716510953d994559be8b16b72cbe4d33d542aaa33c7d9",
+  "derivation_sha256": "3e7a62bcac1c3268f9b8a8a2141aa2ff8a50693bab285332e11e6428b5614d95",
+  "elementary_oracle_source_sha256": "0984c9e09eb64ce318d049444d4af64a1fdfee56e3f725a289933e5a98e63c8d",
+  "author_accelerated_material_read": false,
+  "observations_read": false,
+  "anchored_massless_energy_completion_required_unless_total_c_integral_zero": true,
+  "checks": [
+    {
+      "name": "constant_velocity_joint_coefficients_0.0",
+      "actual": [
+        0.15915494309189535,
+        -1.1216148779032583e-19,
+        0.053051647697297644
+      ],
+      "expected": [
+        0.15915494309189535,
+        0.0,
+        0.05305164769729845
+      ],
+      "error": 8.049116928532385e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "constant_velocity_joint_coefficients_0.2",
+      "actual": [
+        0.1613294405167602,
+        -0.010437587639351814,
+        0.050100420668886404
+      ],
+      "expected": [
+        0.16132944051676024,
+        -0.010437587639351457,
+        0.050100420668886994
+      ],
+      "error": 5.898059818321144e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "relative_sign_detectable_at_constant_velocity_0.2",
+      "passed": true,
+      "cross_coefficient": -0.010437587639351457
+    },
+    {
+      "name": "constant_velocity_joint_coefficients_0.6",
+      "actual": [
+        0.1838630001272092,
+        -0.026355260837669536,
+        0.028112278226845963
+      ],
+      "expected": [
+        0.18386300012720966,
+        -0.026355260837668617,
+        0.02811227822684653
+      ],
+      "error": 9.194034422677078e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "relative_sign_detectable_at_constant_velocity_0.6",
+      "passed": true,
+      "cross_coefficient": -0.026355260837668617
+    },
+    {
+      "name": "constant_velocity_joint_coefficients_0.85",
+      "actual": [
+        0.23520344624315462,
+        -0.02482759955820727,
+        0.008105481032237603
+      ],
+      "expected": [
+        0.23520344624315714,
+        -0.024827599558206077,
+        0.008105481032237866
+      ],
+      "error": 2.525757381022231e-15,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "relative_sign_detectable_at_constant_velocity_0.85",
+      "passed": true,
+      "cross_coefficient": -0.024827599558206077
+    },
+    {
+      "name": "rest_acceleration_joint_polynomial_0",
+      "actual": 0.3114131719831409,
+      "expected": 0.3114131719831419,
+      "error": 9.992007221626409e-16,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "rest_acceleration_joint_polynomial_1",
+      "actual": 0.12722209530993786,
+      "expected": 0.12722209530993744,
+      "error": 4.163336342344337e-16,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "rest_acceleration_joint_polynomial_2",
+      "actual": 0.47109863155201187,
+      "expected": 0.47109863155201026,
+      "error": 1.609823385706477e-15,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "accelerated_joint_quadrature_refinement",
+      "actual": [
+        0.512773761190119,
+        0.19185875552880172,
+        0.1278721142719635,
+        0.22444414408749713,
+        0.1604575028306584
+      ],
+      "expected": [
+        0.5127737611901214,
+        0.19185875552880066,
+        0.12787211427196385,
+        0.22444414408749702,
+        0.16045750283066015
+      ],
+      "error": 2.4424906541753444e-15,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "joint_components_include_signed_cross",
+      "actual": 0.512773761190119,
+      "expected": 0.5127737611901191,
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "wrong_relative_plus_sign_rejected",
+      "passed": true,
+      "signed_square_difference": 0.32091500566131725
+    },
+    {
+      "name": "original_laboratory_joint_fourier_80.0",
+      "actual": 0.5127618677803093,
+      "expected": 0.512773761190119,
+      "error": 1.189340980967124e-05,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "original_laboratory_joint_fourier_160.0",
+      "actual": 0.5127722844039263,
+      "expected": 0.512773761190119,
+      "error": 1.4767861926667791e-06,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "distinct_paths_time_refinement_0.3",
+      "actual": 0.5176008073303212,
+      "expected": 0.5176008073303204,
+      "error": 7.771561172376096e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "distinct_paths_original_fourier_0.3",
+      "actual": 0.5176008068706021,
+      "expected": 0.5176008073303212,
+      "error": 4.597191516353405e-10,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "distinct_paths_cross_accounting_0.3",
+      "actual": 0.5176008073303212,
+      "expected": 0.517600807330321,
+      "error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "distinct_path_cross_term_nonzero_0.3",
+      "passed": true,
+      "cross_term": 0.08216390674989744
+    },
+    {
+      "name": "distinct_paths_time_refinement_0.7",
+      "actual": 0.5714844562880737,
+      "expected": 0.571484456288073,
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "distinct_paths_original_fourier_0.7",
+      "actual": 0.5714844558283384,
+      "expected": 0.5714844562880737,
+      "error": 4.5973524986919756e-10,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "distinct_paths_cross_accounting_0.7",
+      "actual": 0.5714844562880737,
+      "expected": 0.5714844562880732,
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "distinct_path_cross_term_nonzero_0.7",
+      "passed": true,
+      "cross_term": 0.1360475557076497
+    },
+    {
+      "name": "constant_background_coefficient",
+      "actual": 2.0,
+      "expected": 2.0,
+      "error": 0.0,
+      "tolerance": 2e-14,
+      "passed": true
+    },
+    {
+      "name": "arbitrary_constant_not_energy_controlled",
+      "passed": true,
+      "zero_energy": 0,
+      "h0": 3.0,
+      "functional_shift": 6.0
+    },
+    {
+      "name": "opposite_direct_coefficients_cancel_background",
+      "actual": 0.0,
+      "expected": 0.0,
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "name": "coincident_opposite_common_field_responses_cancel",
+      "actual": 0.0,
+      "expected": 0.0,
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    }
+  ],
+  "checks_passed": 27,
+  "checks_failed": 0,
+  "accelerated_joint_example": {
+    "joint_minus": 0.512773761190119,
+    "wrong_plus": 0.19185875552880172,
+    "clock_only": 0.1278721142719635,
+    "force_only": 0.22444414408749713,
+    "cross_term": 0.1604575028306584
+  },
+  "distinct_stationary_path_examples": [
+    {
+      "separation": 0.3,
+      "exact_time_integral": 0.5176008073303212,
+      "direct_lab_fourier": 0.5176008068706021,
+      "incorrect_diagonal_sum": 0.43543690058042356,
+      "cross_term": 0.08216390674989744
+    },
+    {
+      "separation": 0.7,
+      "exact_time_integral": 0.5714844562880737,
+      "direct_lab_fourier": 0.5714844558283384,
+      "incorrect_diagonal_sum": 0.43543690058042356,
+      "cross_term": 0.1360475557076497
+    }
+  ],
+  "scope": "No physical count model or positive-mass acceleration theorem; the functional is a single common-field response."
+}

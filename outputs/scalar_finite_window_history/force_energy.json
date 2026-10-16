@@ -1,0 +1,181 @@
+{
+  "checks_passed": 57,
+  "checks": [
+    "Euler_Lagrange_component_0",
+    "Euler_Lagrange_component_1",
+    "Euler_Lagrange_component_2",
+    "ODE_success_0.03_0.8",
+    "canonical_momentum_vs_acceleration_0.03_0.8",
+    "partial_time_force_material_0.03_0.8",
+    "ODE_success_0.25_1.1",
+    "canonical_momentum_vs_acceleration_0.25_1.1",
+    "partial_time_force_material_0.25_1.1",
+    "ODE_success_0.2_0.0",
+    "canonical_momentum_vs_acceleration_0.2_0.0",
+    "P_derivative_budget_0",
+    "R_derivative_budget_0",
+    "P_derivative_budget_1",
+    "R_derivative_budget_1",
+    "P_derivative_budget_2",
+    "R_derivative_budget_2",
+    "candidate_coupling_ceiling_identity",
+    "forcejet_exact_norm_inside_envelope_0.0",
+    "forcejet_rest_limit",
+    "forcejet_exact_norm_inside_envelope_0.2",
+    "forcejet_parallel_angular_antiderivative_0.2",
+    "forcejet_perpendicular_angular_antiderivative_0.2",
+    "forcejet_exact_norm_inside_envelope_0.65",
+    "forcejet_parallel_angular_antiderivative_0.65",
+    "forcejet_perpendicular_angular_antiderivative_0.65",
+    "forcejet_exact_norm_inside_envelope_0.9",
+    "forcejet_parallel_angular_antiderivative_0.9",
+    "forcejet_perpendicular_angular_antiderivative_0.9",
+    "forcejet_exact_norm_inside_envelope_0.99",
+    "forcejet_parallel_angular_antiderivative_0.99",
+    "forcejet_perpendicular_angular_antiderivative_0.99",
+    "Gaussian_energy_frame_scaling_0.4",
+    "physical_energy_frame_scaling_0.4",
+    "acceleration_frame_scaling_0.4",
+    "Q_to_G_normalization_0.4",
+    "Gaussian_energy_frame_scaling_2.3",
+    "physical_energy_frame_scaling_2.3",
+    "acceleration_frame_scaling_2.3",
+    "Q_to_G_normalization_2.3",
+    "Gaussian_energy_frame_scaling_1.0",
+    "physical_energy_frame_scaling_1.0",
+    "acceleration_frame_scaling_1.0",
+    "Q_to_G_normalization_1.0",
+    "joint_mode_energy_0",
+    "joint_mode_energy_1",
+    "joint_mode_energy_2",
+    "joint_mode_energy_3",
+    "joint_mode_energy_4",
+    "joint_mode_energy_5",
+    "joint_mode_energy_6",
+    "joint_mode_energy_7",
+    "joint_mode_energy_8",
+    "joint_mode_energy_9",
+    "joint_mode_energy_10",
+    "joint_mode_energy_11",
+    "joint_mode_budget_attainment"
+  ],
+  "momentum_ODE_controls": [
+    {
+      "epsilon": 0.03,
+      "frequency": 0.8,
+      "max_trajectory_or_velocity_error": 3.6335240372054045e-12,
+      "initial_omitted_partial_time_term": [
+        0.0037232059563168133,
+        0.0018616029781584067,
+        -0.002233923573790088
+      ]
+    },
+    {
+      "epsilon": 0.25,
+      "frequency": 1.1,
+      "max_trajectory_or_velocity_error": 8.86066567340471e-12,
+      "initial_omitted_partial_time_term": [
+        0.042661734916130165,
+        0.021330867458065082,
+        -0.025597040949678095
+      ]
+    },
+    {
+      "epsilon": 0.2,
+      "frequency": 0.0,
+      "max_trajectory_or_velocity_error": 1.6094070520722425e-13,
+      "initial_omitted_partial_time_term": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "coefficient_budgets": {
+    "P": [
+      1.0,
+      0.476064935238856,
+      0.3290335093429475
+    ],
+    "R": [
+      0.1947408534437497,
+      0.21098168923910038,
+      0.37320694889194744
+    ],
+    "P_observed_max": [
+      0.967089864770666,
+      0.4158486690114008,
+      0.20676845275449413
+    ],
+    "R_observed_max": [
+      0.1798292354761916,
+      0.09822796740382983,
+      0.14233890801506172
+    ]
+  },
+  "constant_velocity_force_norms": [
+    {
+      "speed": 0.0,
+      "parallel_norm_squared": 0.10610329539459688,
+      "perpendicular_norm_squared": 0.10610329539459688,
+      "coarse_norm_squared": 0.5403796460924681
+    },
+    {
+      "speed": 0.2,
+      "parallel_norm_squared": 0.10020084133777438,
+      "perpendicular_norm_squared": 0.10268832469933234,
+      "coarse_norm_squared": 1.5198177546350662
+    },
+    {
+      "speed": 0.65,
+      "parallel_norm_squared": 0.04843514688672215,
+      "perpendicular_norm_squared": 0.06769440619220846,
+      "coarse_norm_squared": 34.31331980144011
+    },
+    {
+      "speed": 0.9,
+      "parallel_norm_squared": 0.009019707343909292,
+      "perpendicular_norm_squared": 0.025729585515505457,
+      "coarse_norm_squared": 1950.770522393811
+    },
+    {
+      "speed": 0.99,
+      "parallel_norm_squared": 0.00021521973562289552,
+      "perpendicular_norm_squared": 0.0030595734997172722,
+      "coarse_norm_squared": 2139957.436490777
+    }
+  ],
+  "frame_controls": [
+    {
+      "Ab": 0.4,
+      "Q": 3.0,
+      "energy_E": 0.24675600051719965,
+      "energy_J": 0.09870240020687986,
+      "physical_energy_E": 1.480536003103198,
+      "physical_energy_J": 3.701340007757994,
+      "bound_E": 0.04576603527793575,
+      "bound_J": 0.11441508819483935
+    },
+    {
+      "Ab": 2.3,
+      "Q": 0.7,
+      "energy_E": 0.039023399434596304,
+      "energy_J": 0.08975381869957148,
+      "physical_energy_E": 0.05463275920843482,
+      "physical_energy_J": 0.023753373568884704,
+      "bound_E": 0.03640004957144017,
+      "bound_J": 0.015826108509321812
+    },
+    {
+      "Ab": 1.0,
+      "Q": 2.0,
+      "energy_E": 0.6960409996039635,
+      "energy_J": 0.6960409996039635,
+      "physical_energy_E": 2.784163998415854,
+      "physical_energy_J": 2.784163998415854,
+      "bound_E": 0.03843234153359117,
+      "bound_J": 0.03843234153359117
+    }
+  ],
+  "scope": "Conditional point-particle action, prescribed-path linear force functional, joint energy and constant-frame conversion. All controls synthetic; no empirical fit or physical energy calibration."
+}

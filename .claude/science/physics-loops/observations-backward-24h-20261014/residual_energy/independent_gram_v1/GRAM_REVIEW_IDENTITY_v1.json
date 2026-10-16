@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-10-15T02:21:49.675064+00:00",
+  "reviewer_session": "/root/localized_history_check",
+  "scope": "Focused v1 real-KG energy-space reconstruction, adjacent triangular Gram, completion and exact smooth constraints, specified nuisance quotient and narrow invisible-energy statement. No later vector-kernel, unequal-window or deterministic-noise claims are attributed to these 110 controls.",
+  "finding": "No discrepancy in the bound working v1 note within its stated model. Singular-nuisance compatibility extension and zero-coupling boundary are expressly qualified.",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/GRAM_REVIEW_v1.md",
+    "sha256": "e25e4881b01de589bfdff2b4655192506b50519139885c8756ddec9f4afb6997"
+  },
+  "author_note": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DERIVATION_v1.md",
+    "sha256": "fd0f660b86d47f444236ad0a2e13c416c23a0f9d52442d7a5dafd7afb8aa05e1"
+  },
+  "author_probe": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/ALGEBRA_PROBE_v1.json",
+    "sha256": "f360264df8f18fdd49279cb4e42823ea02079ad30a9386fbec25fe38c27bd8c5"
+  },
+  "inherited_note": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_FINITE_WINDOW_INITIAL_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e"
+  },
+  "precheck_saved_before_author_note_or_code_read": true,
+  "independent_controls_executed_before_any_new_author_code_read": true,
+  "independent_controls": 110,
+  "author_code_reviewed": false,
+  "author_probe_controls_separately_attributed": 10,
+  "references": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/GRAM_PRECHECK_v1.md",
+      "sha256": "0f9ed691bca4e74bb58fb544186dee7506ccff291f91a85e54d3b8984a81081d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/independent_gram_check_v1.py",
+      "sha256": "36f859f4c14992740f31bbaf23ff597c115348099013b045855959ff914f6fda"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/INDEPENDENT_GRAM_RESULTS_v1.json",
+      "sha256": "16de0423d86484e05d9134347ca4ea87d670df4c3da576e84d66020951899071"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/INDEPENDENT_RUN_v1.stdout",
+      "sha256": "26a958ba129722dcdd1eacfff951a5bdd88d34b477c5b0bf0c63608d32f54084"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/INDEPENDENT_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "failed_runs": 0,
+  "raw_data_accessed": false,
+  "physical_energy_or_residual_calibration_established": false,
+  "formal_audit_verdict_applied": false
+}

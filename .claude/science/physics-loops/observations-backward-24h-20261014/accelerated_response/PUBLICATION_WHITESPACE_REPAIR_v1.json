@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-15T04:06:21.383465+00:00",
+  "trigger": "git diff --cached --check found whitespace on blank line197; vocab lint did not alter it",
+  "old_source_sha256": "49a1ac95f7126e1c83aabecf009e0d5947ad92039f9caa9e352441fe12e1376d",
+  "new_source_sha256": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+  "ast_unchanged": true,
+  "change": "Remove spaces from one blank line; no scientific code, fixture, assertion, tolerance or result value change. Fresh source-bound cache and only four affected Gram mutations follow."
+}

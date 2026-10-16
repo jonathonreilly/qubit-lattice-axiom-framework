@@ -1,0 +1,36 @@
+{
+  "scope": "Preserved failed literal-label route and corrected conversion; development reconstruction only",
+  "recorded_at": "2026-10-14T23:08:50.409608+00:00",
+  "original_failure": {
+    "wrong_scale_mismatches": 999,
+    "ambiguous_endpoint_intervals": 1,
+    "all_rows_sha256": "a2f283b4685762c30414c84819fa276e28a0a7f896d5fd51d54a10469fd9573c"
+  },
+  "source_correction": "PDS tdf_unpack AppendixB(3), sha256 2a826779dfa96bfe39658711e936eb156e324ce2c1c41cd526c4b93588bcc33a; H*10^14 microcycles",
+  "current_reconstruction": {
+    "conditional_rows": 91664,
+    "within_storage_scale": 91664,
+    "rollovers": 21,
+    "equivalent_duplicate_interval": 1,
+    "scope": "Forward lift assumes increment in [0,2^32) and no reset. Diagnostic item87 is retained, not interpreted as proof of physical cycle continuity."
+  },
+  "local_original_files": [
+    {
+      "path": "orbit_light_time/atdf_odf_reconcile_v1.py",
+      "sha256": "5c0f4d0013e87d7dd56453ed479253e79b91dbe6e08ddfda0c54de0d0ae48a04"
+    },
+    {
+      "path": "orbit_light_time/atdf_odf_reconcile_results_v1.json",
+      "sha256": "d67bd7238f9f37ade9e0e05d98b528fef5b789b79269b49a1f44ac0aeb7f4293"
+    },
+    {
+      "path": "orbit_light_time/atdf_odf_reconcile_v2.py",
+      "sha256": "fde68aa68a82a5afdad8b2d633a820d80b787b7d81439224903d8ffa05ee4afb"
+    },
+    {
+      "path": "orbit_light_time/atdf_odf_reconcile_results_v2.json",
+      "sha256": "f56414c996d1379743efe2780b4604a44023e3dcf15d5ce1b0b86619ef51c406"
+    }
+  ],
+  "reproduction": "Canonical primary runner regenerates failed-scale countermodel on every row; full original v1 source and logs persist locally. This record is provenance, not a cached runner output."
+}

@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-10-15T04:02:52.689641+00:00",
+  "source_sha256": {
+    "scripts/scalar_accelerated_coherent_count_check.py": "b03883fbaafd9adc1bf7a849051ffa35c9dbd233c925e798f555f60eabfef7b9",
+    "docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+    "scripts/scalar_accelerated_gram_controls.py": "49a1ac95f7126e1c83aabecf009e0d5947ad92039f9caa9e352441fe12e1376d",
+    "scripts/scalar_proper_count_controls.py": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+    "scripts/scalar_count_adjoint_controls.py": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+    "scripts/scalar_coherent_count_controls.py": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+    "scripts/scalar_coherent_exact_energy_controls.py": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f"
+  },
+  "product_sha256": {
+    "joint_gram": "41dc7f33684c526b972f485b09fa3e65db577f8922f497caaee53dedb8337a25",
+    "proper_endpoint": "451a3411ac5fe5d6695a58f54b8d434eeb1fa6a554dbc26c87624091461bde8b",
+    "one_way_adjoint": "9934e795c58723670cf1dc1cec0ae7633bf494bc9a529a021fe3e8e9280bae75",
+    "coherent_adjoint": "b7be9d248eb795ccfaf2f4eaa6965b7fe308c89421561d619114fcb71f4249dd",
+    "exact_coherent_energy": "e7bf47f154ad7ad86c823449bb6acfd0c4ce2314b9f296dca7e38be65e312e9d"
+  },
+  "cache": {
+    "path": "logs/runner-cache/scalar_accelerated_coherent_count_check.txt",
+    "sha256": "afddd7917edef6e3c0fcbfeee2364280f024d449f4bc8330ea7b7905ebd596a1"
+  },
+  "execution": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/ACCELERATED_CANONICAL_EXECUTION_v2.json",
+  "author_checks": {
+    "joint_gram": 15,
+    "proper_endpoint": 9,
+    "one_way_adjoint": 22,
+    "coherent_adjoint": 14,
+    "exact_coherent_energy": 15
+  },
+  "mutation_checks": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/CANONICAL_MUTATIONS_v1.json",
+    "sha256": "be1ac560c21734f0b2684eef55b04abca4af53f800d1fd1c6edc6aeb18426b20",
+    "assertion_rejected": 14
+  },
+  "scope": "Final canonical science and machine-status/import/trace metadata. Original reviewed sources and findings remain preserved."
+}

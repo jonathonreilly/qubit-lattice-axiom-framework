@@ -1,0 +1,45 @@
+{
+  "reviewer": "/root/force_energy_bridge_check",
+  "completed_at": "2026-10-15T02:24:01.718201+00:00",
+  "author_new_implementation_opened": false,
+  "observation_values_accessed": false,
+  "independent_controls": 109,
+  "independent_failures": 0,
+  "files": [
+    {
+      "path": "SOURCE_FREEZE_v1.json",
+      "sha256": "892104fbfde88b92e81b16b3984adafcfe44b3c71bca737d84a0a4f369806fab",
+      "bytes": 527
+    },
+    {
+      "path": "PRECHECK_v1.md",
+      "sha256": "fd11f68d69ed5542728e7060582a861759360ed17c9e83e19e66f6bb4f28ca4a",
+      "bytes": 6458
+    },
+    {
+      "path": "independent_count_kernel_check_v1.py",
+      "sha256": "1becb7f812e659c3cad271abd192765147fba16fcd5f2f174162bfe670431e2e",
+      "bytes": 13719
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_v1.json",
+      "sha256": "b6b2972f505cda9da6fc0644bda9c1ba00fffbf86541f886624df3b431d7552c",
+      "bytes": 13750
+    },
+    {
+      "path": "INDEPENDENT_RUN_v1.stdout",
+      "sha256": "71f0b3f78a4c8a8ca51f5f4b988648330b24a4eb83c60306efac413ca27cb802",
+      "bytes": 457
+    },
+    {
+      "path": "INDEPENDENT_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "REVIEW_COUNT_KERNEL_v1.md",
+      "sha256": "10b67a0ed03137290a6abfe8d124ad056991c1e254936f1db09624aad8d30b9f",
+      "bytes": 11995
+    }
+  ]
+}

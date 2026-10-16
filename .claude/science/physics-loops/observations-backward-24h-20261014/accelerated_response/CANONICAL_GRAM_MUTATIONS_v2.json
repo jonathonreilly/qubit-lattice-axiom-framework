@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-10-15T04:06:30.234968+00:00",
+  "cases": [
+    {
+      "name": "joint_sign",
+      "source": "scalar_accelerated_gram_controls.py",
+      "source_sha256": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+      "scratch_source": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-joint_sign-mceniydw/scalar_accelerated_gram_controls.py",
+      "mutation_sha256": "5df79fa8ef2caed624a32d2bd2164aece5cc664c8c24adb17891cd4e23d6aa46",
+      "before": "sign = 1 if reverse_cross else -1",
+      "after": "sign = 1 if reverse_cross else 1",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_file": "joint_sign_MUTATION_v2.stderr",
+      "stderr_sha256": "eaf792f6733a736cd9c0a8995c4c487621fe707626d12b91c0848dad1bc7acf0",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-joint_sign-mceniydw/scalar_accelerated_gram_controls.py\", line 205, in <module>\n    print(json.dumps(run_checks(), indent=2))\n                     ^^^^^^^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-joint_sign-mceniydw/scalar_accelerated_gram_controls.py\", line 158, in run_checks\n    close(mode+'_original_wave_vs_time', wave, tm, 2e-8)\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-joint_sign-mceniydw/scalar_accelerated_gram_controls.py\", line 152, in close\n    assert err<tol, (name, err, tol, got, expected)\n           ^^^^^^^\nAssertionError: ('inertial_original_wave_vs_time', 0.006817392754436519, 2e-08, array([[ 0.2180333 , -0.04716043],\n       [-0.04716043,  0.0692105 ]]), array([[ 0.21121591, -0.04357588],\n       [-0.04357588,  0.06932116]]))\n"
+    },
+    {
+      "name": "acceleration_derivative",
+      "source": "scalar_accelerated_gram_controls.py",
+      "source_sha256": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+      "scratch_source": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-acceleration_derivative-an4adso7/scalar_accelerated_gram_controls.py",
+      "mutation_sha256": "36974b1c17848b8b7e010170566eccb8a0ab45d659d99ed22afdb0df5871a994",
+      "before": "derivative += np.sum(bp*w, axis=-1)",
+      "after": "derivative += 0*np.sum(bp*w, axis=-1)",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_file": "acceleration_derivative_MUTATION_v2.stderr",
+      "stderr_sha256": "1356afa3ad84f0ab14f378df19b65a1879f269cfb1fa1b572f72ca032d4fd3cd",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-acceleration_derivative-an4adso7/scalar_accelerated_gram_controls.py\", line 205, in <module>\n    print(json.dumps(run_checks(), indent=2))\n                     ^^^^^^^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-acceleration_derivative-an4adso7/scalar_accelerated_gram_controls.py\", line 158, in run_checks\n    close(mode+'_original_wave_vs_time', wave, tm, 2e-8)\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-acceleration_derivative-an4adso7/scalar_accelerated_gram_controls.py\", line 152, in close\n    assert err<tol, (name, err, tol, got, expected)\n           ^^^^^^^\nAssertionError: ('curved_original_wave_vs_time', 0.004170763813840954, 2e-08, array([[ 0.21472677, -0.05092302],\n       [-0.05092302,  0.06998784]]), array([[ 0.21789767, -0.04675226],\n       [-0.04675226,  0.06948278]]))\n"
+    },
+    {
+      "name": "real_norm_factor",
+      "source": "scalar_accelerated_gram_controls.py",
+      "source_sha256": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+      "scratch_source": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-real_norm_factor-wpq468wu/scalar_accelerated_gram_controls.py",
+      "mutation_sha256": "d9a48f6f1ccfa37eb980197a4b839c0f243769c540d067820d125c02fc496fb8",
+      "before": "return result/(8*np.pi*np.pi)",
+      "after": "return result/(4*np.pi*np.pi)",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_file": "real_norm_factor_MUTATION_v2.stderr",
+      "stderr_sha256": "16d967329157e42699b40e56bdd3bcfbfdddaae3b7a9ec59d300971de669c9e1",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-real_norm_factor-wpq468wu/scalar_accelerated_gram_controls.py\", line 205, in <module>\n    print(json.dumps(run_checks(), indent=2))\n                     ^^^^^^^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-real_norm_factor-wpq468wu/scalar_accelerated_gram_controls.py\", line 158, in run_checks\n    close(mode+'_original_wave_vs_time', wave, tm, 2e-8)\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-real_norm_factor-wpq468wu/scalar_accelerated_gram_controls.py\", line 152, in close\n    assert err<tol, (name, err, tol, got, expected)\n           ^^^^^^^\nAssertionError: ('rest_original_wave_vs_time', 0.226228157539516, 2e-08, array([[ 0.22622816, -0.04591425],\n       [-0.04591425,  0.07258007]]), array([[ 0.45245632, -0.0918285 ],\n       [-0.0918285 ,  0.14516014]]))\n"
+    },
+    {
+      "name": "multipath_arrival_shift",
+      "source": "scalar_accelerated_gram_controls.py",
+      "source_sha256": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+      "scratch_source": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-multipath_arrival_shift-oosnj5ia/scalar_accelerated_gram_controls.py",
+      "mutation_sha256": "cad4c63352dac3b75e270fb512d4cb76ff160521caf53178741d2e07bcf3d992",
+      "before": "if equal_coordinate:",
+      "after": "if True:",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_file": "multipath_arrival_shift_MUTATION_v2.stderr",
+      "stderr_sha256": "f8d60a7608bb9eec97057b39202ce8d358e93d316bfed62433155cba682fa172",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-multipath_arrival_shift-oosnj5ia/scalar_accelerated_gram_controls.py\", line 205, in <module>\n    print(json.dumps(run_checks(), indent=2))\n                     ^^^^^^^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-multipath_arrival_shift-oosnj5ia/scalar_accelerated_gram_controls.py\", line 184, in run_checks\n    close('separated_paths_common_phase_vs_original_wave', arrival, direct, 3e-8)\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/observations-backward-mutation-multipath_arrival_shift-oosnj5ia/scalar_accelerated_gram_controls.py\", line 152, in close\n    assert err<tol, (name, err, tol, got, expected)\n           ^^^^^^^\nAssertionError: ('separated_paths_common_phase_vs_original_wave', 0.2308083290097771, 3e-08, array([[ 0.62056038, -0.03462765],\n       [-0.03462765,  0.01119805]]), array([[ 0.38975205, -0.03787442],\n       [-0.03787442,  0.06125215]]))\n"
+    }
+  ],
+  "assertion_rejected": 4,
+  "cases_total": 4,
+  "source_sha256": "f3404ef18db21f8df76f95635fe357a9121b4fe65992ec298191aac745c633f0"
+}

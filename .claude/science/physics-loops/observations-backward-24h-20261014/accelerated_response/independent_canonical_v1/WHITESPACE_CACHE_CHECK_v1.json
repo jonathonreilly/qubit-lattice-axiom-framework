@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-10-15T04:08:05.785993+00:00",
+  "changed_helper_sha256": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+  "note_sha256": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+  "source_change": "spaces removed from blank line197 only; identical full Python AST",
+  "all_other_six_canonical_source_hashes_unchanged": true,
+  "cache_sha256": "a770fbbfb5da518a19029ebaf0d65afc17a92d12166129c0a7ef719934a4cc45",
+  "input_fingerprint_sha256": "81d58374bfcc28e04e5eea588c67a1af31ade7ac9780489381d00ccc4a551cd5",
+  "cache_stdout_matches_summary": true,
+  "cache_stderr_empty": true,
+  "exit_code": 0,
+  "elapsed_seconds": 23.62,
+  "timeout_seconds": 180,
+  "author_control_count": 75,
+  "products": [
+    {
+      "product": "joint_gram",
+      "sha256": "7804112b52283c47014b898de9981784d5f44aed4905a1478d20453759b7e6e8",
+      "scientific_values_unchanged": true,
+      "only_source_hash_metadata_changed": true
+    },
+    {
+      "product": "proper_endpoint",
+      "sha256": "451a3411ac5fe5d6695a58f54b8d434eeb1fa6a554dbc26c87624091461bde8b",
+      "scientific_values_unchanged": true,
+      "only_source_hash_metadata_changed": false
+    },
+    {
+      "product": "one_way_adjoint",
+      "sha256": "9934e795c58723670cf1dc1cec0ae7633bf494bc9a529a021fe3e8e9280bae75",
+      "scientific_values_unchanged": true,
+      "only_source_hash_metadata_changed": false
+    },
+    {
+      "product": "coherent_adjoint",
+      "sha256": "b7be9d248eb795ccfaf2f4eaa6965b7fe308c89421561d619114fcb71f4249dd",
+      "scientific_values_unchanged": true,
+      "only_source_hash_metadata_changed": false
+    },
+    {
+      "product": "exact_coherent_energy",
+      "sha256": "e7bf47f154ad7ad86c823449bb6acfd0c4ce2314b9f296dca7e38be65e312e9d",
+      "scientific_values_unchanged": true,
+      "only_source_hash_metadata_changed": false
+    }
+  ],
+  "four_affected_author_mutations": [
+    {
+      "case": "joint_sign",
+      "mutant_reconstructed_sha256": "5df79fa8ef2caed624a32d2bd2164aece5cc664c8c24adb17891cd4e23d6aa46",
+      "assertion_stderr_sha256": "eaf792f6733a736cd9c0a8995c4c487621fe707626d12b91c0848dad1bc7acf0",
+      "actual_assertion_rejection_verified": true
+    },
+    {
+      "case": "acceleration_derivative",
+      "mutant_reconstructed_sha256": "36974b1c17848b8b7e010170566eccb8a0ab45d659d99ed22afdb0df5871a994",
+      "assertion_stderr_sha256": "1356afa3ad84f0ab14f378df19b65a1879f269cfb1fa1b572f72ca032d4fd3cd",
+      "actual_assertion_rejection_verified": true
+    },
+    {
+      "case": "real_norm_factor",
+      "mutant_reconstructed_sha256": "d9a48f6f1ccfa37eb980197a4b839c0f243769c540d067820d125c02fc496fb8",
+      "assertion_stderr_sha256": "16d967329157e42699b40e56bdd3bcfbfdddaae3b7a9ec59d300971de669c9e1",
+      "actual_assertion_rejection_verified": true
+    },
+    {
+      "case": "multipath_arrival_shift",
+      "mutant_reconstructed_sha256": "cad4c63352dac3b75e270fb512d4cb76ff160521caf53178741d2e07bcf3d992",
+      "assertion_stderr_sha256": "f8d60a7608bb9eec97057b39202ce8d358e93d316bfed62433155cba682fa172",
+      "actual_assertion_rejection_verified": true
+    }
+  ],
+  "scientific_suite_or_mutations_rerun_by_reviewer": false,
+  "raw_observations_accessed": false
+}

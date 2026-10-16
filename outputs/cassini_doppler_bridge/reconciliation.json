@@ -1,0 +1,2791 @@
+{
+  "role": "exposed development stored-count reconstruction; conditional counter lift; no physical fit",
+  "sources": {
+    "tdf": "215c2de473fd00b278267ab3ff0431ab4d00e9c3baaa17e949105b964644f4f3",
+    "odf": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+    "tdf_label": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6"
+  },
+  "self_checks": {
+    "published_pds_count_example": true,
+    "high_part_carry": true,
+    "ordinary_lift": true,
+    "rollover_lift": true,
+    "extra_full_turn_unidentifiable": true,
+    "negative_counter": true,
+    "out_of_range_counter": true,
+    "coherent_known_count": true,
+    "oneway_reference_sign": true,
+    "nonpositive_interval_rejected": true
+  },
+  "tracking_samples_indexed": 159528,
+  "outcome_counts": {
+    "reconstructed_conditional_lift": 91664
+  },
+  "counters": {
+    "rollovers": 21,
+    "value_equivalent_duplicate_endpoint_intervals": 1,
+    "mismatches": 0,
+    "wrong_label_scale_mismatches": 999,
+    "omitted_rollover_mismatches": 21,
+    "wrong_bias_mismatches": 91664,
+    "reverse_count_mismatches": 91664,
+    "omitted_oneway_reference_mismatches": 649
+  },
+  "groups": [
+    {
+      "key": [
+        11,
+        54,
+        0
+      ],
+      "records": 649,
+      "error_min_hz": {
+        "numerator": -39929,
+        "denominator": 331500000000,
+        "approximate": -1.2044947209653093e-07
+      },
+      "error_max_hz": {
+        "numerator": 100849,
+        "denominator": 132600000000,
+        "approximate": 7.60550527903469e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 100849,
+        "denominator": 132600000000,
+        "approximate": 7.60550527903469e-07
+      },
+      "worst_odf_record": 3916,
+      "within_storage_quantum_scale": 649,
+      "count_delta_min_cycles": {
+        "numerator": 803984037,
+        "denominator": 1000,
+        "approximate": 803984.037
+      },
+      "count_delta_max_cycles": {
+        "numerator": 803985091,
+        "denominator": 1000,
+        "approximate": 803985.091
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": null
+    },
+    {
+      "key": [
+        12,
+        25,
+        25
+      ],
+      "records": 36007,
+      "error_min_hz": {
+        "numerator": -469,
+        "denominator": 1000000000,
+        "approximate": -4.69e-07
+      },
+      "error_max_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "worst_odf_record": 57654,
+      "within_storage_quantum_scale": 36007,
+      "count_delta_min_cycles": {
+        "numerator": 999884911,
+        "denominator": 1000,
+        "approximate": 999884.911
+      },
+      "count_delta_max_cycles": {
+        "numerator": 205266827,
+        "denominator": 200,
+        "approximate": 1026334.135
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 36007
+    },
+    {
+      "key": [
+        12,
+        45,
+        45
+      ],
+      "records": 6094,
+      "error_min_hz": {
+        "numerator": -473,
+        "denominator": 1000000000,
+        "approximate": -4.73e-07
+      },
+      "error_max_hz": {
+        "numerator": 93,
+        "denominator": 200000000,
+        "approximate": 4.65e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "worst_odf_record": 2774,
+      "within_storage_quantum_scale": 6094,
+      "count_delta_min_cycles": {
+        "numerator": 1201754573,
+        "denominator": 1000,
+        "approximate": 1201754.573
+      },
+      "count_delta_max_cycles": {
+        "numerator": 304814129,
+        "denominator": 250,
+        "approximate": 1219256.516
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 6094
+    },
+    {
+      "key": [
+        12,
+        54,
+        54
+      ],
+      "records": 19358,
+      "error_min_hz": {
+        "numerator": -469,
+        "denominator": 1000000000,
+        "approximate": -4.69e-07
+      },
+      "error_max_hz": {
+        "numerator": 469,
+        "denominator": 1000000000,
+        "approximate": 4.69e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 469,
+        "denominator": 1000000000,
+        "approximate": 4.69e-07
+      },
+      "worst_odf_record": 22190,
+      "within_storage_quantum_scale": 19358,
+      "count_delta_min_cycles": {
+        "numerator": 1000201913,
+        "denominator": 1000,
+        "approximate": 1000201.913
+      },
+      "count_delta_max_cycles": {
+        "numerator": 1193483543,
+        "denominator": 1000,
+        "approximate": 1193483.543
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 19358
+    },
+    {
+      "key": [
+        13,
+        25,
+        54
+      ],
+      "records": 9910,
+      "error_min_hz": {
+        "numerator": -473,
+        "denominator": 1000000000,
+        "approximate": -4.73e-07
+      },
+      "error_max_hz": {
+        "numerator": 93,
+        "denominator": 200000000,
+        "approximate": 4.65e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "worst_odf_record": 41750,
+      "within_storage_quantum_scale": 9910,
+      "count_delta_min_cycles": {
+        "numerator": 14697503,
+        "denominator": 100,
+        "approximate": 146975.03
+      },
+      "count_delta_max_cycles": {
+        "numerator": 1197291251,
+        "denominator": 1000,
+        "approximate": 1197291.251
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 9910
+    },
+    {
+      "key": [
+        13,
+        45,
+        25
+      ],
+      "records": 10160,
+      "error_min_hz": {
+        "numerator": -223,
+        "denominator": 500000000,
+        "approximate": -4.46e-07
+      },
+      "error_max_hz": {
+        "numerator": 231,
+        "denominator": 500000000,
+        "approximate": 4.62e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 231,
+        "denominator": 500000000,
+        "approximate": 4.62e-07
+      },
+      "worst_odf_record": 88646,
+      "within_storage_quantum_scale": 10160,
+      "count_delta_min_cycles": {
+        "numerator": 202673743,
+        "denominator": 250,
+        "approximate": 810694.972
+      },
+      "count_delta_max_cycles": {
+        "numerator": 1214005647,
+        "denominator": 1000,
+        "approximate": 1214005.647
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 10160
+    },
+    {
+      "key": [
+        13,
+        54,
+        45
+      ],
+      "records": 9486,
+      "error_min_hz": {
+        "numerator": -469,
+        "denominator": 1000000000,
+        "approximate": -4.69e-07
+      },
+      "error_max_hz": {
+        "numerator": 231,
+        "denominator": 500000000,
+        "approximate": 4.62e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 469,
+        "denominator": 1000000000,
+        "approximate": 4.69e-07
+      },
+      "worst_odf_record": 10449,
+      "within_storage_quantum_scale": 9486,
+      "count_delta_min_cycles": {
+        "numerator": 24029161,
+        "denominator": 20,
+        "approximate": 1201458.05
+      },
+      "count_delta_max_cycles": {
+        "numerator": 301289447,
+        "denominator": 250,
+        "approximate": 1205157.788
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 9486
+    }
+  ],
+  "mode_quality_field_order": [
+    12,
+    19,
+    20,
+    22,
+    23,
+    26,
+    27,
+    28,
+    29,
+    79,
+    87
+  ],
+  "endpoint_quality_occurrences": [
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        1,
+        1
+      ],
+      "occurrences": 3
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        0
+      ],
+      "occurrences": 164148
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        1
+      ],
+      "occurrences": 6936
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        2
+      ],
+      "occurrences": 8567
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        3
+      ],
+      "occurrences": 1979
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        4
+      ],
+      "occurrences": 558
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        5
+      ],
+      "occurrences": 178
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        6
+      ],
+      "occurrences": 69
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        7
+      ],
+      "occurrences": 2
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        8
+      ],
+      "occurrences": 7
+    },
+    {
+      "values": [
+        1,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        10
+      ],
+      "occurrences": 94
+    },
+    {
+      "values": [
+        2,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        0,
+        100,
+        2,
+        0
+      ],
+      "occurrences": 787
+    },
+    {
+      "values": [
+        2,
+        0,
+        1000,
+        1,
+        1,
+        5,
+        4,
+        2,
+        100,
+        2,
+        0
+      ],
+      "occurrences": 1
+    }
+  ],
+  "rollover_duplicate_or_mismatch_examples": [
+    {
+      "odf_record": 808,
+      "type": 12,
+      "rx": 45,
+      "tx": 45,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          21327
+        ],
+        [
+          21328
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 21327,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 21328,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 607204369,
+        "denominator": 500,
+        "approximate": 1214408.738
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294240519812000,
+        487632550000
+      ],
+      "error_hz": {
+        "numerator": 101,
+        "denominator": 500000000,
+        "approximate": 2.02e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 68483648000000101,
+        "denominator": 500000000,
+        "approximate": 136967296.0000002
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 2147483648000000101,
+        "denominator": 500000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -499499999999899,
+        "denominator": 500000000,
+        "approximate": -998999.999999798
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 1214408738000101,
+        "denominator": 500000000,
+        "approximate": 2428817.476000202
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 101,
+        "denominator": 500000000,
+        "approximate": 2.02e-07
+      }
+    },
+    {
+      "odf_record": 4100,
+      "type": 11,
+      "rx": 54,
+      "tx": 0,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          25899
+        ],
+        [
+          25901,
+          25902
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": true,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 25899,
+            "values": [
+              2,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 25901,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          },
+          {
+            "record": 25902,
+            "values": [
+              2,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              2,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 100498011,
+        "denominator": 125,
+        "approximate": 803984.088
+      },
+      "lift_wraps": 0,
+      "count_endpoint_microcycles": [
+        3740391396512000,
+        3741195380600000
+      ],
+      "error_hz": {
+        "numerator": 91859,
+        "denominator": 663000000000,
+        "approximate": 1.3855052790346907e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2434966663,
+        "denominator": 663000000000,
+        "approximate": 0.0036726495671191555
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": null,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 91859,
+        "denominator": 663000000000,
+        "approximate": 1.3855052790346907e-07
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 91859,
+        "denominator": 663000000000,
+        "approximate": 1.3855052790346907e-07
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -662336999999908141,
+        "denominator": 663000000000,
+        "approximate": -998999.9999998615
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 1066082900688091859,
+        "denominator": 663000000000,
+        "approximate": 1607968.1760001385
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -2716314880844507,
+        "denominator": 1000000000,
+        "approximate": -2716314.880844507
+      }
+    },
+    {
+      "odf_record": 5001,
+      "type": 12,
+      "rx": 45,
+      "tx": 45,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          27199
+        ],
+        [
+          27201
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 27199,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 27201,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 608898421,
+        "denominator": 500,
+        "approximate": 1217796.842
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294702402073000,
+        952902915000
+      ],
+      "error_hz": {
+        "numerator": 23,
+        "denominator": 500000000,
+        "approximate": 4.6e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 68483648000000023,
+        "denominator": 500000000,
+        "approximate": 136967296.00000006
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 2147483648000000023,
+        "denominator": 500000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -499499999999977,
+        "denominator": 500000000,
+        "approximate": -998999.999999954
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 1217796842000023,
+        "denominator": 500000000,
+        "approximate": 2435593.684000046
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 23,
+        "denominator": 500000000,
+        "approximate": 4.6e-08
+      }
+    },
+    {
+      "odf_record": 7112,
+      "type": 13,
+      "rx": 54,
+      "tx": 45,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          29841
+        ],
+        [
+          29843
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 29841,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 29843,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1201695753,
+        "denominator": 1000,
+        "approximate": 1201695.753
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294408094161000,
+        642493914000
+      ],
+      "error_hz": {
+        "numerator": 9,
+        "denominator": 40000000,
+        "approximate": 2.25e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 5478691840000009,
+        "denominator": 40000000,
+        "approximate": 136967296.00000024
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 171798691840000009,
+        "denominator": 40000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -39959999999991,
+        "denominator": 40000000,
+        "approximate": -998999.999999775
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 96135660240009,
+        "denominator": 40000000,
+        "approximate": 2403391.506000225
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 9,
+        "denominator": 40000000,
+        "approximate": 2.25e-07
+      }
+    },
+    {
+      "odf_record": 11140,
+      "type": 13,
+      "rx": 54,
+      "tx": 45,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          33931
+        ],
+        [
+          33932
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 33931,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 33932,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1202970669,
+        "denominator": 1000,
+        "approximate": 1202970.669
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294082553561000,
+        318228230000
+      ],
+      "error_hz": {
+        "numerator": 13,
+        "denominator": 100000000,
+        "approximate": 1.3e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 13696729600000013,
+        "denominator": 100000000,
+        "approximate": 136967296.00000012
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 429496729600000013,
+        "denominator": 100000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -99899999999987,
+        "denominator": 100000000,
+        "approximate": -998999.99999987
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 240594133800013,
+        "denominator": 100000000,
+        "approximate": 2405941.33800013
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 13,
+        "denominator": 100000000,
+        "approximate": 1.3e-07
+      }
+    },
+    {
+      "odf_record": 14701,
+      "type": 13,
+      "rx": 54,
+      "tx": 45,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          37516
+        ],
+        [
+          37517
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 37516,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 37517,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 602237081,
+        "denominator": 500,
+        "approximate": 1204474.162
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4293951762486000,
+        188940648000
+      ],
+      "error_hz": {
+        "numerator": -61,
+        "denominator": 1000000000,
+        "approximate": -6.1e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967295999999939,
+        "denominator": 1000000000,
+        "approximate": 136967295.99999994
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967295999999939,
+        "denominator": 1000000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -999000000000061,
+        "denominator": 1000000000,
+        "approximate": -999000.000000061
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 2408948323999939,
+        "denominator": 1000000000,
+        "approximate": 2408948.323999939
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -61,
+        "denominator": 1000000000,
+        "approximate": -6.1e-08
+      }
+    },
+    {
+      "odf_record": 17038,
+      "type": 12,
+      "rx": 54,
+      "tx": 54,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          39985
+        ],
+        [
+          39986
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 39985,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 39986,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1192835583,
+        "denominator": 1000,
+        "approximate": 1192835.583
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294747270560000,
+        972810143000
+      ],
+      "error_hz": {
+        "numerator": 57,
+        "denominator": 1000000000,
+        "approximate": 5.7e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967296000000057,
+        "denominator": 1000000000,
+        "approximate": 136967296.00000006
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967296000000057,
+        "denominator": 1000000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -998999999999943,
+        "denominator": 1000000000,
+        "approximate": -998999.999999943
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 2385671166000057,
+        "denominator": 1000000000,
+        "approximate": 2385671.166000057
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 57,
+        "denominator": 1000000000,
+        "approximate": 5.7e-08
+      }
+    },
+    {
+      "odf_record": 24007,
+      "type": 12,
+      "rx": 54,
+      "tx": 54,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          47404
+        ],
+        [
+          47405
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 47404,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 47405,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1002073401,
+        "denominator": 1000,
+        "approximate": 1002073.401
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294661503125000,
+        696280526000
+      ],
+      "error_hz": {
+        "numerator": 0,
+        "denominator": 1,
+        "approximate": 0.0
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967296,
+        "denominator": 1,
+        "approximate": 136967296.0
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967296,
+        "denominator": 1,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -999000,
+        "denominator": 1,
+        "approximate": -999000.0
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 1002073401,
+        "denominator": 500,
+        "approximate": 2004146.802
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 0,
+        "denominator": 1,
+        "approximate": 0.0
+      }
+    },
+    {
+      "odf_record": 28061,
+      "type": 12,
+      "rx": 54,
+      "tx": 54,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          51527
+        ],
+        [
+          51528
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 51527,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 51528,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1005216051,
+        "denominator": 1000,
+        "approximate": 1005216.051
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294121078205000,
+        158998256000
+      ],
+      "error_hz": {
+        "numerator": 19,
+        "denominator": 250000000,
+        "approximate": 7.6e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 34241824000000019,
+        "denominator": 250000000,
+        "approximate": 136967296.0000001
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 1073741824000000019,
+        "denominator": 250000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -249749999999981,
+        "denominator": 250000000,
+        "approximate": -998999.999999924
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 502608025500019,
+        "denominator": 250000000,
+        "approximate": 2010432.102000076
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 19,
+        "denominator": 250000000,
+        "approximate": 7.6e-08
+      }
+    },
+    {
+      "odf_record": 32334,
+      "type": 12,
+      "rx": 54,
+      "tx": 54,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          55829
+        ],
+        [
+          55830
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 55829,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 55830,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 504600491,
+        "denominator": 500,
+        "approximate": 1009200.982
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294707472364000,
+        749377346000
+      ],
+      "error_hz": {
+        "numerator": 39,
+        "denominator": 250000000,
+        "approximate": 1.56e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 34241824000000039,
+        "denominator": 250000000,
+        "approximate": 136967296.00000015
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 1073741824000000039,
+        "denominator": 250000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -249749999999961,
+        "denominator": 250000000,
+        "approximate": -998999.999999844
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 504600491000039,
+        "denominator": 250000000,
+        "approximate": 2018401.964000156
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 39,
+        "denominator": 250000000,
+        "approximate": 1.56e-07
+      }
+    },
+    {
+      "odf_record": 38479,
+      "type": 13,
+      "rx": 25,
+      "tx": 54,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          62795
+        ],
+        [
+          62797
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 62795,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 62797,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 596499259,
+        "denominator": 500,
+        "approximate": 1192998.518
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294137501645000,
+        363204163000
+      ],
+      "error_hz": {
+        "numerator": 19,
+        "denominator": 1000000000,
+        "approximate": 1.9e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967296000000019,
+        "denominator": 1000000000,
+        "approximate": 136967296.00000003
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967296000000019,
+        "denominator": 1000000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -998999999999981,
+        "denominator": 1000000000,
+        "approximate": -998999.999999981
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 2385997036000019,
+        "denominator": 1000000000,
+        "approximate": 2385997.036000019
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 19,
+        "denominator": 1000000000,
+        "approximate": 1.9e-08
+      }
+    },
+    {
+      "odf_record": 42077,
+      "type": 13,
+      "rx": 25,
+      "tx": 54,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          70041
+        ],
+        [
+          70043
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 70041,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 70043,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 597444367,
+        "denominator": 500,
+        "approximate": 1194888.734
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294773113511000,
+        1000706245000
+      ],
+      "error_hz": {
+        "numerator": -39,
+        "denominator": 250000000,
+        "approximate": -1.56e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 34241823999999961,
+        "denominator": 250000000,
+        "approximate": 136967295.99999985
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 1073741823999999961,
+        "denominator": 250000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -249750000000039,
+        "denominator": 250000000,
+        "approximate": -999000.000000156
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 597444366999961,
+        "denominator": 250000000,
+        "approximate": 2389777.467999844
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -39,
+        "denominator": 250000000,
+        "approximate": -1.56e-07
+      }
+    },
+    {
+      "odf_record": 49892,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          85923
+        ],
+        [
+          85925
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 85923,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 85925,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1001134241,
+        "denominator": 1000,
+        "approximate": 1001134.241
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294105012412000,
+        138850653000
+      ],
+      "error_hz": {
+        "numerator": -179,
+        "denominator": 1000000000,
+        "approximate": -1.79e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967295999999821,
+        "denominator": 1000000000,
+        "approximate": 136967295.99999982
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967295999999821,
+        "denominator": 1000000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -999000000000179,
+        "denominator": 1000000000,
+        "approximate": -999000.000000179
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 2002268481999821,
+        "denominator": 1000000000,
+        "approximate": 2002268.481999821
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -179,
+        "denominator": 1000000000,
+        "approximate": -1.79e-07
+      }
+    },
+    {
+      "odf_record": 54191,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          94563
+        ],
+        [
+          94565
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 94563,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 94565,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 501948427,
+        "denominator": 500,
+        "approximate": 1003896.854
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294434333850000,
+        470934704000
+      ],
+      "error_hz": {
+        "numerator": 19,
+        "denominator": 200000000,
+        "approximate": 9.5e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 27393459200000019,
+        "denominator": 200000000,
+        "approximate": 136967296.0000001
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 858993459200000019,
+        "denominator": 200000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -199799999999981,
+        "denominator": 200000000,
+        "approximate": -998999.999999905
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 401558741600019,
+        "denominator": 200000000,
+        "approximate": 2007793.708000095
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 19,
+        "denominator": 200000000,
+        "approximate": 9.5e-08
+      }
+    },
+    {
+      "odf_record": 58468,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          103165
+        ],
+        [
+          103167
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 103165,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 103167,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1007778179,
+        "denominator": 1000,
+        "approximate": 1007778.179
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294071009113000,
+        111491292000
+      ],
+      "error_hz": {
+        "numerator": 21,
+        "denominator": 250000000,
+        "approximate": 8.4e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 34241824000000021,
+        "denominator": 250000000,
+        "approximate": 136967296.0000001
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 1073741824000000021,
+        "denominator": 250000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -249749999999979,
+        "denominator": 250000000,
+        "approximate": -998999.999999916
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 503889089500021,
+        "denominator": 250000000,
+        "approximate": 2015556.358000084
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 21,
+        "denominator": 250000000,
+        "approximate": 8.4e-08
+      }
+    },
+    {
+      "odf_record": 62735,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          111743
+        ],
+        [
+          111745
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 111743,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 111745,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 506141171,
+        "denominator": 500,
+        "approximate": 1012282.342
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294627742714000,
+        672729056000
+      ],
+      "error_hz": {
+        "numerator": -9,
+        "denominator": 40000000,
+        "approximate": -2.25e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 5478691839999991,
+        "denominator": 40000000,
+        "approximate": 136967295.99999976
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 171798691839999991,
+        "denominator": 40000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -39960000000009,
+        "denominator": 40000000,
+        "approximate": -999000.000000225
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 80982587359991,
+        "denominator": 40000000,
+        "approximate": 2024564.683999775
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -9,
+        "denominator": 40000000,
+        "approximate": -2.25e-07
+      }
+    },
+    {
+      "odf_record": 66982,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          120277
+        ],
+        [
+          120280
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 120277,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 120280,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1016862633,
+        "denominator": 1000,
+        "approximate": 1016862.633
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294405782597000,
+        455349230000
+      ],
+      "error_hz": {
+        "numerator": -61,
+        "denominator": 500000000,
+        "approximate": -1.22e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 68483647999999939,
+        "denominator": 500000000,
+        "approximate": 136967295.99999988
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 2147483647999999939,
+        "denominator": 500000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -499500000000061,
+        "denominator": 500000000,
+        "approximate": -999000.000000122
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 1016862632999939,
+        "denominator": 500000000,
+        "approximate": 2033725.265999878
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -61,
+        "denominator": 500000000,
+        "approximate": -1.22e-07
+      }
+    },
+    {
+      "odf_record": 71211,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          128777
+        ],
+        [
+          128779
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 128777,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 128779,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 102098117,
+        "denominator": 100,
+        "approximate": 1020981.17
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294438251016000,
+        491936186000
+      ],
+      "error_hz": {
+        "numerator": 103,
+        "denominator": 500000000,
+        "approximate": 2.06e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 68483648000000103,
+        "denominator": 500000000,
+        "approximate": 136967296.0000002
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 2147483648000000103,
+        "denominator": 500000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -499499999999897,
+        "denominator": 500000000,
+        "approximate": -998999.999999794
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 1020981170000103,
+        "denominator": 500000000,
+        "approximate": 2041962.340000206
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 103,
+        "denominator": 500000000,
+        "approximate": 2.06e-07
+      }
+    },
+    {
+      "odf_record": 75425,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          137247
+        ],
+        [
+          137249
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 137247,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 137249,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 204831383,
+        "denominator": 200,
+        "approximate": 1024156.915
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294661798077000,
+        718658992000
+      ],
+      "error_hz": {
+        "numerator": -141,
+        "denominator": 1000000000,
+        "approximate": -1.41e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967295999999859,
+        "denominator": 1000000000,
+        "approximate": 136967295.99999985
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967295999999859,
+        "denominator": 1000000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -999000000000141,
+        "denominator": 1000000000,
+        "approximate": -999000.000000141
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 2048313829999859,
+        "denominator": 1000000000,
+        "approximate": 2048313.829999859
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -141,
+        "denominator": 1000000000,
+        "approximate": -1.41e-07
+      }
+    },
+    {
+      "odf_record": 80056,
+      "type": 12,
+      "rx": 25,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          146706
+        ],
+        [
+          146709
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 146706,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 146709,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 512999933,
+        "denominator": 500,
+        "approximate": 1025999.866
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294266098758000,
+        324802624000
+      ],
+      "error_hz": {
+        "numerator": 103,
+        "denominator": 1000000000,
+        "approximate": 1.03e-07
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967296000000103,
+        "denominator": 1000000000,
+        "approximate": 136967296.0000001
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967296000000103,
+        "denominator": 1000000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -998999999999897,
+        "denominator": 1000000000,
+        "approximate": -998999.999999897
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 2051999732000103,
+        "denominator": 1000000000,
+        "approximate": 2051999.732000103
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 103,
+        "denominator": 1000000000,
+        "approximate": 1.03e-07
+      }
+    },
+    {
+      "odf_record": 85261,
+      "type": 13,
+      "rx": 45,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          154209
+        ],
+        [
+          154210
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 154209,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 154210,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 602686981,
+        "denominator": 500,
+        "approximate": 1205373.962
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4294561673099000,
+        799751061000
+      ],
+      "error_hz": {
+        "numerator": 23,
+        "denominator": 1000000000,
+        "approximate": 2.3e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 136967296000000023,
+        "denominator": 1000000000,
+        "approximate": 136967296.00000003
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 4294967296000000023,
+        "denominator": 1000000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -998999999999977,
+        "denominator": 1000000000,
+        "approximate": -998999.999999977
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 2410747924000023,
+        "denominator": 1000000000,
+        "approximate": 2410747.924000023
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": 23,
+        "denominator": 1000000000,
+        "approximate": 2.3e-08
+      }
+    },
+    {
+      "odf_record": 88818,
+      "type": 13,
+      "rx": 45,
+      "tx": 25,
+      "odf_bad": 0,
+      "tdf_candidates": [
+        [
+          157791
+        ],
+        [
+          157792
+        ]
+      ],
+      "value_equivalent_duplicate_endpoint": false,
+      "tdf_mode_quality_fields": [
+        [
+          {
+            "record": 157791,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "record": 157792,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2,
+              0
+            ]
+          }
+        ]
+      ],
+      "outcome": "reconstructed_conditional_lift",
+      "count_delta_cycles": {
+        "numerator": 1207747327,
+        "denominator": 1000,
+        "approximate": 1207747.327
+      },
+      "lift_wraps": 1,
+      "count_endpoint_microcycles": [
+        4293966041052000,
+        206492379000
+      ],
+      "error_hz": {
+        "numerator": -23,
+        "denominator": 500000000,
+        "approximate": -4.6e-08
+      },
+      "storage_quantum_scale_hz": {
+        "numerator": 2001,
+        "denominator": 1000000000,
+        "approximate": 2.001e-06
+      },
+      "within_storage_quantum_scale": true,
+      "coherent_reference_matches_odf": true,
+      "countermodel_wrong_label_scale_error_hz": {
+        "numerator": 68483647999999977,
+        "denominator": 500000000,
+        "approximate": 136967295.99999994
+      },
+      "countermodel_omit_wrap_error_hz": {
+        "numerator": 2147483647999999977,
+        "denominator": 500000000,
+        "approximate": 4294967296.0
+      },
+      "countermodel_subtract1000_error_hz": {
+        "numerator": -499500000000023,
+        "denominator": 500000000,
+        "approximate": -999000.000000046
+      },
+      "countermodel_reverse_count_error_hz": {
+        "numerator": 1207747326999977,
+        "denominator": 500000000,
+        "approximate": 2415494.653999954
+      },
+      "countermodel_omit_oneway_reference_error_hz": {
+        "numerator": -23,
+        "denominator": 500000000,
+        "approximate": -4.6e-08
+      }
+    }
+  ],
+  "all_rows_sha256": "6973b8b57b7ecb9fc4f3ea87efbfa1e15dfe4e12349f3ad6aadd054790597f77",
+  "all_rows_filename": "all_doppler_rows.jsonl",
+  "scope": [
+    "All91664ODF Doppler rows receive an outcome. No residual clipping or quality-group deletion.",
+    "Modulo lift assumes 0<=true interval increment<2^32 cycles with no reset; this bounded-history premise is not derived from two endpoints.",
+    "Equivalent endpoint variants identify the count/reference value only; their quality flags and item87 slip diagnostic remain distinct.",
+    "Storage-quantum comparison scales are not certified legacy software errors or instrumental accuracy.",
+    "Reconstruction of processed data from its precursor is not independent empirical validation.",
+    "No physical sky-frequency, trajectory, plasma calibration or scalar constraint is asserted."
+  ]
+}

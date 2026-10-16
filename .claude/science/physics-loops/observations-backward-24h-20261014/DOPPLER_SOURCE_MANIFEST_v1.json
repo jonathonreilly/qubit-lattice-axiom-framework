@@ -1,0 +1,69 @@
+{
+  "scope": "canonical source, primary output and final focused review identities; not an audit verdict",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/CANONICAL_DOPPLER_SOURCE_CONFIRMATION_v1_PUBLISHED.md",
+      "sha256": "b9eb624673eea7c856c0363bd994acb9050c20d832467131b15d51f0df9997e7"
+    },
+    {
+      "path": "docs/CASSINI_DOPPLER_COUNT_STATION_TIME_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "7665d29d78d2ce302c445bb3f8878e50cb75d89d20bbd14cdb0c4f8d673a0bde"
+    },
+    {
+      "path": "logs/runner-cache/cassini_doppler_count_bridge_check.txt",
+      "sha256": "1242f89bb4a67d4c41633104658b638d5406d4a0e6cc068c4edf461cb71e7467"
+    },
+    {
+      "path": "outputs/cassini_doppler_bridge/atdf_inventory.json",
+      "sha256": "269a1075f7f7f9a76ed45a5e113f649a268b4ef3afcc4a99dda3aaaa731c9d62"
+    },
+    {
+      "path": "outputs/cassini_doppler_bridge/endpoint_controls.json",
+      "sha256": "e9132974747752ab5b01f82210aaa4ee6edb0a1c490b738546d6aa555ca66d3b"
+    },
+    {
+      "path": "outputs/cassini_doppler_bridge/odf_inventory.json",
+      "sha256": "d5f35150bdf7d5ae6234e25ff811dcbf0452332fe30d0f76ad343e39d735950a"
+    },
+    {
+      "path": "outputs/cassini_doppler_bridge/ramp_integration.json",
+      "sha256": "1c34fdb5ce4353631fcbc9c511dc6b39a8b922ebedad03eb28a65fe7a5a4edfd"
+    },
+    {
+      "path": "outputs/cassini_doppler_bridge/reconciliation.json",
+      "sha256": "52300ef640fc9b3d643c8fce268c2b40318c1c1c6726e4c2de1c7d9734f8dbab"
+    },
+    {
+      "path": "outputs/cassini_doppler_bridge/summary.json",
+      "sha256": "10284751421344010b1f2e080f6f5c8289b15eefbeb8c67a0fda2b8fecbf01c5"
+    },
+    {
+      "path": "scripts/cassini_atdf_decode.py",
+      "sha256": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c"
+    },
+    {
+      "path": "scripts/cassini_atdf_odf_reconcile.py",
+      "sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225"
+    },
+    {
+      "path": "scripts/cassini_doppler_count_bridge_check.py",
+      "sha256": "a82b64943f216202aa1cb5db899a36c92a96d75136f728d19e3a6d78a71d279b"
+    },
+    {
+      "path": "scripts/cassini_doppler_development_inputs.json",
+      "sha256": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392"
+    },
+    {
+      "path": "scripts/cassini_finite_count_endpoint_check.py",
+      "sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003"
+    },
+    {
+      "path": "scripts/cassini_odf_decode.py",
+      "sha256": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8"
+    },
+    {
+      "path": "scripts/cassini_ramp_phase.py",
+      "sha256": "f6f20d30a557e03359ca1b28fc466805700122ca280819338da733eee80ca296"
+    }
+  ]
+}

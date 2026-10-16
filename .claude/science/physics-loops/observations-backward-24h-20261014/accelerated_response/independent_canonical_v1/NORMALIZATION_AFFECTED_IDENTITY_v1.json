@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-10-15T04:01:13.660725+00:00",
+  "scope": "narrow wording/source-identity confirmation; refreshed cache not yet claimed",
+  "files": {
+    "CANONICAL_REVIEW_v1.md": "f7bde6c49fc31e2299c695d279f57f5192e34573dae92a8cac3350146415bd17",
+    "CANONICAL_REVIEW_IDENTITY_v1.json": "e9117d575745de0f7b1021d31af85a9e550a86aac2b78c33649b9aa15547ad07",
+    "NOTE_NORMALIZATION_AFFECTED_v1.diff": "0e5a36110def44a4b39af95573da56d4e89448980fc9dc8ebeaf98916ee2002f",
+    "NOTE_NORMALIZATION_SOURCE_v1.md": "4a2bd6a11b68dc115a80cf716564baf195502dd3efc1b249eeea644e36b8269e",
+    "CANONICAL_ADAPTATION_v2_source.json": "1383e3642cbbeb4f662f0d3d7cee655b64bb387f166f61efc3498f3c0a7e1845",
+    "NORMALIZATION_AFFECTED_CONFIRMATION_v1.md": "76676a5c5ecc79aa401bbfa56d167516954145542610282fc345cfb2ed56cdbd"
+  }
+}

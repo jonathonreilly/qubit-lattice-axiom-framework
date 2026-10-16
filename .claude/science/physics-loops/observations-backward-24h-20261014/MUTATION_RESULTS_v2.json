@@ -1,0 +1,214 @@
+{
+  "source_sha256": "dfc02330c6e1df92540f937d888703616cc162f4b7ebedac258e4bfe172cba34",
+  "mutations": [
+    {
+      "mutation": "force_derivative",
+      "original": "return (1.0 + x) * np.exp(-x)",
+      "replacement": "return np.exp(-x)",
+      "exit_code": 1,
+      "failed_families": [
+        "extended_source",
+        "finite_error_enclosure",
+        "negative_mass_rejected",
+        "three_radius_inverse",
+        "two_radius_light_inverse"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "source_trace",
+      "original": "trace = rho - 3*pr - s*prprime",
+      "replacement": "trace = rho - 2*pr - s*prprime",
+      "exit_code": 1,
+      "failed_families": [
+        "extended_source"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "optical_scalar_sign",
+      "original": "phi=-e*(1-amplitude*math.exp(-mu*r))/r",
+      "replacement": "phi=-e*(1+amplitude*math.exp(-mu*r))/r",
+      "exit_code": 1,
+      "failed_families": [
+        "optical_linear_coefficient"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "endpoint_log",
+      "original": "L = math.log((ra+rb+D)/(ra+rb-D))",
+      "replacement": "L = math.log((ra+rb+0.9*D)/(ra+rb-0.9*D))",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_endpoint_light_integral",
+        "optical_linear_coefficient"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "range_ratio",
+      "original": "return log_interval(mu, a, b) - log_interval(mu, b, c)",
+      "replacement": "return log_interval(mu, a, b) - log_interval(mu, b, c*1.05)",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_error_enclosure",
+        "negative_mass_rejected",
+        "ratio_derivative_identity",
+        "three_radius_inverse"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "error_budget",
+      "original": "e12, e23 = eps[0]+eps[1], eps[1]+eps[2]",
+      "replacement": "e12, e23 = (eps[0]+eps[1])/2, (eps[1]+eps[2])/2",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_error_enclosure"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "bare_mass_sign",
+      "original": "M0 = K[0] - B*h(mu*radii[0])",
+      "replacement": "M0 = abs(K[0] - B*h(mu*radii[0]))",
+      "exit_code": 1,
+      "failed_families": [
+        "negative_mass_rejected"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "quadrature_resolution",
+      "original": "lo = profile_green(2,-.3,4,1.3,48)",
+      "replacement": "lo = profile_green(2,-.3,4,1.3,6)",
+      "exit_code": 1,
+      "failed_families": [
+        "green_refinement"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "retarded_jacobian",
+      "original": "J=(1-b)/(1+a)*(1-d)/(1+c)",
+      "replacement": "J=(1+a)/(1-b)*(1+c)/(1-d)",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_proper_count",
+        "retarded_phase_jacobian"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "emission_clock",
+      "original": "return k*(omega+chirp*tau(lines[0],te))*clock_rate(lines[0],te,mass,amplitude,mu)*jac",
+      "replacement": "return k*(omega+chirp*tau(lines[0],te))*jac",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_proper_count"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "finite_count_midpoint",
+      "original": "endpoint_count=k*(phase(tau(lines[0],t1high))-phase(tau(lines[0],t1low)))",
+      "replacement": "endpoint_count=k*(omega+chirp*tau(lines[0],events(lines,tr,mass)[0]))*duration",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_proper_count"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "source_amplitude_clock",
+      "original": "psi=-mass*(1+amplitude*math.exp(-mu*r))/r",
+      "replacement": "psi=-mass/r",
+      "exit_code": 1,
+      "failed_families": [
+        "moving_scalar_clock_witness"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "multimode_control",
+      "original": "mixed=1+.12*h(.4*radii)+.08*h(2*radii)",
+      "replacement": "mixed=1+.12*h(.4*radii)+.08*h(.4*radii)",
+      "exit_code": 0,
+      "failed_families": [],
+      "rejected": false,
+      "error": ""
+    },
+    {
+      "mutation": "static_jacobian_normalization",
+      "original": "J=(1-b)/(1+a)*(1-d)/(1+c)",
+      "replacement": "J=0.99*(1-b)/(1+a)*(1-d)/(1+c)",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_proper_count",
+        "retarded_phase_jacobian",
+        "static_endpoint_clock"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "unresolved_error_box",
+      "original": "if d12 <= e12 or d23 <= e23:\n        return None",
+      "replacement": "if d12 <= e12 or d23 <= e23:\n        return (0.,1.)",
+      "exit_code": 1,
+      "failed_families": [
+        "unresolved_zero_mode"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "green_force_missing_derivative",
+      "original": "gradient = np.exp(-mu*dist)*(1+mu*dist)*(radius-s[:,None]*nodes[None,:])/dist**3",
+      "replacement": "gradient = np.exp(-mu*dist)*(radius-s[:,None]*nodes[None,:])/dist**3",
+      "exit_code": 1,
+      "failed_families": [
+        "extended_source"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "rational_bound_constant",
+      "original": "Q(49,50)*Q(38,15)",
+      "replacement": "Q(48,50)*Q(38,15)",
+      "exit_code": 1,
+      "failed_families": [
+        "finite_error_positive_mass_witness"
+      ],
+      "rejected": true,
+      "error": ""
+    },
+    {
+      "mutation": "benchmark_inverse_sign",
+      "original": "bound=delta/(2-delta)",
+      "replacement": "bound=delta/(2+delta)",
+      "exit_code": 1,
+      "failed_families": [
+        "benchmark_forward_normalization"
+      ],
+      "rejected": true,
+      "error": ""
+    }
+  ],
+  "all_rejected": false,
+  "interpretation": "Scratch operator and fixture mutations; nonzero exits are preserved. These controls do not prove the analytic claim or validate the physical premises."
+}

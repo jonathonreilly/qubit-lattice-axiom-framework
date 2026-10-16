@@ -1,0 +1,448 @@
+{
+  "created_at": "2026-10-15T03:39:59.724903+00:00",
+  "script_sha256": "1bf369f67053b913e970f0a3032b69ae769e93747a0a4c1f30c375821e89cb4c",
+  "author_sources": {
+    "JOINT_CLOCK_FORCE_WORKING_v3.md": "c90af86ca2008d4d31e857bf4f7b6a7fe5b73b7ad0c307f65ac08eb3bff62605",
+    "proper_count_adjoint_controls_v2.py": "89521be38bf9859653b7e3bdd8fc8af9d99b805a4672f1ddde82144bf5510d13",
+    "proper_count_endpoint_controls_v2.py": "00c0b049351cbc366da89fe78831a9c48677fee08026b455562385c87022b5e6",
+    "PROPER_COUNT_ADJOINT_RESULTS_v2.json": "7c5ff21c236a809de240b3e5fdcae084ae6ff4e267979a180c75a3f514e6b2f1",
+    "PROPER_COUNT_ENDPOINT_RESULTS_v2.json": "540927a3e285db53e01cfc6f2e66620a095a54afdceedfcf6f4ebdb5f3ebc500",
+    "AUTHOR_FREEZE_v1.json": "1fbf8ce5a789e45c5c31de4d487e6d76eb0ff1562b15bf1995ab5b57aad78caf"
+  },
+  "post_author_source_exposure": true,
+  "author_main_or_nonlinear_suite_rerun": false,
+  "raw_observations_accessed": false,
+  "counts": {
+    "total": 53,
+    "passed": 53,
+    "failed": 0
+  },
+  "constant_response_closed": [
+    -0.04232296678819842,
+    -0.044124001579447784,
+    -0.04257515434242389,
+    -0.037785378012559157,
+    -0.030398658754948942,
+    -0.02134893227620965,
+    -0.011522135584413661,
+    -0.0015170504940501407,
+    0.008356787489419664,
+    0.017861838479297346,
+    0.026558559815800013,
+    0.03366942247072513,
+    0.038180881470699465,
+    0.039131708340105084,
+    0.03592879075701536,
+    0.02853222443645183,
+    0.017444369647430548,
+    0.0035473808094861675,
+    -0.01210687284049784,
+    -0.028455755093668073,
+    -0.0444778014719324,
+    -0.05913301170053706
+  ],
+  "checks": [
+    {
+      "name": "constant_column_closed_clock_response_vs_saved_adjoint",
+      "passed": true,
+      "details": {
+        "max_abs_error": 5.1486592766991635e-15,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "initial_emitter_clock_cancels_in_each_finite_count",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 1e-13
+      }
+    },
+    {
+      "name": "initial_receiver_clock_column_equals_negative_R_difference",
+      "passed": true,
+      "details": {
+        "max_abs_error": 2.740863092043355e-16,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "all_observation_atoms_are_after_initial_epoch_and_before_end",
+      "passed": true,
+      "details": {
+        "first_atom": -1.7141804430492662,
+        "last_atom": 6.7,
+        "initial": -4.0,
+        "final": 7.2
+      }
+    },
+    {
+      "name": "endpoint_count_atoms_have_no_velocity_rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 5.350442311424786e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 2.7023175364071506e-13,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 1.237114577445908e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 2.2021794110482773e-13,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 2.505579077549669e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 3.553685123947048e-13,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 4.805808528907107e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 7.687062791861266e-13,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 5.5921933750369135e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 7.291701964451391e-13,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 1.6407986080935189e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 2.8938136609202303e-13,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 1.3823039934912629e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 2.8309576904916867e-12,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "scalar_force_source_from_independent_field_differences",
+      "passed": true,
+      "details": {
+        "max_abs_error": 5.4062310184122e-12,
+        "tolerance": 4e-11
+      }
+    },
+    {
+      "name": "direct_clock_source_from_lapse_variation",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "proper_clock_velocity_jacobian_sign",
+      "passed": true,
+      "details": {
+        "max_abs_error": 0.0,
+        "tolerance": 2e-14
+      }
+    },
+    {
+      "name": "initial_clock_has_no_feedback_into_orbit_or_clock_rate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "external_reference_acceleration_matches_reference_velocity_derivative",
+      "passed": true,
+      "details": {
+        "max_abs_error": 1.6156347093509993e-12,
+        "tolerance": 2e-11
+      }
+    },
+    {
+      "name": "saved_floating_rank_matches_declared_nullity",
+      "passed": true,
+      "details": {
+        "spectrum": "design_singular_values",
+        "rank": 15,
+        "nullity": 7,
+        "threshold": 4.367363977446615e-12,
+        "smallest_retained": 2.7807654988391198e-08,
+        "largest_discarded": 2.3247525093452126e-19
+      }
+    },
+    {
+      "name": "saved_floating_rank_matches_declared_nullity",
+      "passed": true,
+      "details": {
+        "spectrum": "quotient_design_singular_values",
+        "rank": 16,
+        "nullity": 6,
+        "threshold": 4.36736437698981e-12,
+        "smallest_retained": 5.774152015454145e-09,
+        "largest_discarded": 2.5678516391537045e-19
+      }
+    },
+    {
+      "name": "author_input_identity_unchanged",
+      "passed": true,
+      "details": {
+        "file": "JOINT_CLOCK_FORCE_WORKING_v3.md"
+      }
+    },
+    {
+      "name": "author_input_identity_unchanged",
+      "passed": true,
+      "details": {
+        "file": "proper_count_adjoint_controls_v2.py"
+      }
+    },
+    {
+      "name": "author_input_identity_unchanged",
+      "passed": true,
+      "details": {
+        "file": "proper_count_endpoint_controls_v2.py"
+      }
+    },
+    {
+      "name": "author_input_identity_unchanged",
+      "passed": true,
+      "details": {
+        "file": "PROPER_COUNT_ADJOINT_RESULTS_v2.json"
+      }
+    },
+    {
+      "name": "author_input_identity_unchanged",
+      "passed": true,
+      "details": {
+        "file": "PROPER_COUNT_ENDPOINT_RESULTS_v2.json"
+      }
+    },
+    {
+      "name": "author_input_identity_unchanged",
+      "passed": true,
+      "details": {
+        "file": "AUTHOR_FREEZE_v1.json"
+      }
+    }
+  ],
+  "scope": "Targeted source correspondence and constant-offset/initial-clock/source-vector checks. Reuses the supplied helper reference clock and retarded geometry; it does not independently revalidate that geometry, finite global field energy, exact rank or real observations."
+}

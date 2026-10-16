@@ -1,0 +1,41 @@
+{
+  "scope": "Conditional synthetic mathematical check, not mission convention, observation fit or formal audit",
+  "source_sha256": "d3fe5e82bc70f69f9de7770c96bd114c68dc7dedd6291f9f6c4d6fb2f4391e7d",
+  "inputs": {
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/finite_count_frozen_v1/FINITE_COUNT_STATION_TIME_DERIVATION_v1.md": "01d7bbf2133f293cdcb41a78ddedb980a8dd24f760e3b0fcff1906416d695f41",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/finite_count_frozen_v1/finite_count_endpoint_check_v1.py": "29eb5bf31ebb81b2538679ea66872c1f79eed3f24b311c203166e08fbcc6d955",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/finite_count_frozen_v1/pds_odf_ramp_bridge_v1.py": "146e7d4cea4998cebae09883e8746fcf8e766c4c8346c60772fcbbfbc72a8acc",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/finite_count_frozen_v1/pds_odf_inventory_v1.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8"
+  },
+  "passed_by_family": {
+    "separate_proper_station_chain": 1,
+    "proper_to_station_frequency": 1,
+    "nonlinear_clock_phase_integral": 1,
+    "extra_multiplier_rejected": 3,
+    "oriented_endpoint_identity": 735,
+    "nonaffine_lipschitz_bound": 735,
+    "common_differential_identity": 735,
+    "affine_signed_remainder": 147,
+    "lipschitz_kink_bound": 21,
+    "negative_shift_integral_orientation": 18,
+    "jump_integral": 1,
+    "zero_slope_bound_is_false": 1,
+    "constant_common_shift_cancellation": 7,
+    "affine_common_shift_response": 7,
+    "clock_reparametrization_phase": 1,
+    "clock_rate_not_invariant": 1,
+    "reference_phase_gauge": 1,
+    "reference_only_shift_not_invariant": 1
+  },
+  "passed": 2417,
+  "failures": [],
+  "examples": {
+    "nonlinear_clock_count": "607272979173/4882812500",
+    "jump": {
+      "integral": "4",
+      "endpoint_linear": "6",
+      "remainder": "-2"
+    }
+  },
+  "method": "Explicit polynomial/absolute-value primitives and separately factored nonlinear proper/station clocks; no author helper imported."
+}

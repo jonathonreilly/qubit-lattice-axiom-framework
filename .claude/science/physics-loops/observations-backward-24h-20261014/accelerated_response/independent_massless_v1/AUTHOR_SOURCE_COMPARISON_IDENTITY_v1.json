@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-15T03:41:39.624051+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Focused v2 source comparison after independent precheck freeze; no formal audit or physical count-model numerical validation.",
+  "author_sources": {
+    "JOINT_CLOCK_FORCE_WORKING_v2.md": "7ac81b681804460dfb277b4e2fa369b69ed138b68f833d103a9e547f81de7f7c",
+    "ACCELERATED_RESPONSE_WORKING_v1.md": "80d40337d01210ff51847fd56b32fb4b6332e286ac1461a1c10f9e16d0e3ed04",
+    "joint_gram_controls_v2.py": "4bd9f3ba99369437ceefedb803bc6aae5d4d552c06b5d7e7a00b2501ab62a975",
+    "JOINT_GRAM_RESULTS_v2.json": "48ecd654fe086c5307bc7f6c967c9915dd309596d2c231274db2c255d01a60bd"
+  },
+  "files": {
+    "INDEPENDENT_IDENTITY_v1.json": "2302220706faa680308abd1fb48ddb46e2993ef8f5370a89327ecf084853adc8",
+    "AUTHOR_SOURCE_COMPARISON_v1.md": "a72bba3e9364fafdb7f09f6a237c52b6013e2502595e2c19ace2e115c773d0a4",
+    "compare_author_sources_v1.py": "b6aac8d3b1ae6cada183dff3a9d750cdf801f462d0f6235d40043f223549d6c1",
+    "AUTHOR_SOURCE_COMPARISON_RESULTS_v1.json": "198f9cb1b675ae1d252910ff0b7c001a21ffbae1814a61c924f0d78f0bb58f8d",
+    "AUTHOR_SOURCE_COMPARISON_RUN_v1.stdout": "198f9cb1b675ae1d252910ff0b7c001a21ffbae1814a61c924f0d78f0bb58f8d",
+    "AUTHOR_SOURCE_COMPARISON_RUN_v1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AUTHOR_BINDING_SETUP_FAILURE_v1.json": "0ccd14de9ead92c32660ab8bc528b8883803964ea7e5aa37c2202cacae2cf62e"
+  },
+  "review_result": "No unresolved scoped discrepancy; independently identified constant-background qualification is explicit in v2.",
+  "independent_controls_before_author_access": {
+    "pure_force": 18,
+    "joint_field_force": 27
+  },
+  "new_narrow_author_code_checks": 38,
+  "author_suite_rerun": false,
+  "author_recorded_checks": 15,
+  "prior_failure_preserved": true
+}

@@ -1,0 +1,574 @@
+{
+  "scope": "Independent exact stored-data reconciliation only; conditional forward modulo lift; no gravity fit or empirical holdout",
+  "source_sha256": "3970b290ae75cd613a82b786797bab23e89bc6afb5d694255dc748823742fad9",
+  "inputs": {
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_development/c32easc2002_169_0000xmmmv0.tdf": "215c2de473fd00b278267ab3ff0431ab4d00e9c3baaa17e949105b964644f4f3",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_development/c32easc2002_169_0000xmmmv0.odf": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_tdf_c32easc2002_169_0000xmmmv0.lbl": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_odf_c32easc2002_169_0000xmmmv0.lbl": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/atdf_frozen_v2/atdf_odf_reconcile_v2.py": "207985615620bab369ac5cb424753c3e218847067a07b150958f3bdbc0a34f58",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/atdf_frozen_v2/atdf_odf_reconcile_results_v2.json": "b097b7c91a9e92cf68f807652028ff542df444943c6a12ee8373b06e83ff00d8"
+  },
+  "imported_independent_parser_sha256": "342ae730577555fccf830fa3e2330a290d5e312cd3c125d610ae514ae5926fa8",
+  "complete_author_dependencies": {
+    "pds_atdf_inventory_v1.py": "302190b07cc4279ed5e6d62744a5ee938508b91f9353eb0912f339535a74d381",
+    "atdf_odf_reconcile_v1.py": "5c0f4d0013e87d7dd56453ed479253e79b91dbe6e08ddfda0c54de0d0ae48a04",
+    "atdf_odf_reconcile_v2.py": "207985615620bab369ac5cb424753c3e218847067a07b150958f3bdbc0a34f58",
+    "pds_odf_inventory_v1.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8"
+  },
+  "ledger_sha256": "0aa1da97c9cb0bcba4ce3bce3c203d3759843d7bca78890007d0f50ef0e40f19",
+  "v1_ledger_sha256": "a2f283b4685762c30414c84819fa276e28a0a7f896d5fd51d54a10469fd9573c",
+  "checks_by_family": {
+    "source_identity": 6,
+    "schema_positions_signedness": 28,
+    "signed_crossbyte_boundaries": 113,
+    "pds_published_example": 1,
+    "pds_reference_example": 1,
+    "decimal_high_carry": 1,
+    "decimal_intermediate_carry": 1,
+    "bounded_lift_congruence": 6,
+    "multiple_wrap_ambiguity": 18,
+    "tdf_size": 1,
+    "atdf_format": 160870,
+    "indexed_samples": 1,
+    "ledger_hash": 1,
+    "all_odf_rows_in_order": 91664,
+    "positive_integer_endpoint_grid": 91664,
+    "both_endpoints_present": 91664,
+    "endpoint_record_pairing": 91664,
+    "conversion_value_identified": 91664,
+    "all_duplicate_values_equal": 91664,
+    "reference_constant_on_interval": 91664,
+    "counter_modulus_domain": 91664,
+    "all_quality_variants_retained": 91664,
+    "mode_eligibility": 91664,
+    "exact_count_delta": 91664,
+    "exact_counter_endpoints": 91664,
+    "exact_residual": 91664,
+    "exact_comparison_scale": 91664,
+    "scope_flags": 91664,
+    "row_metadata": 91664,
+    "coherent_reference_equality": 91664,
+    "exact_countermodel_value": 458320,
+    "no_extra_ledger_rows": 1,
+    "total_doppler_rows": 1,
+    "total_outcomes": 1,
+    "summary_counters": 1,
+    "quality_occurrence_summary": 1,
+    "exact_group_summary": 7,
+    "all_groups_in_summary": 1,
+    "v1_failure_preserved": 1,
+    "v1_ledger_preserved": 1
+  },
+  "successful_check_events": 2177671,
+  "failures": [],
+  "tracking_records": 160870,
+  "tracking_samples_indexed": 159528,
+  "tdf_type_counts": {
+    "1": 157886,
+    "5": 218,
+    "8": 1055,
+    "6": 69,
+    "2": 1642
+  },
+  "dates": [
+    {
+      "year_mod1900": 102,
+      "day": 169,
+      "records": 134003
+    },
+    {
+      "year_mod1900": 102,
+      "day": 170,
+      "records": 26867
+    }
+  ],
+  "all_selected_count_microcycle_mod1000": {
+    "0": 159528
+  },
+  "used_endpoint_slipped_cycle_occurrences": {
+    "0": 164936,
+    "2": 8567,
+    "1": 6939,
+    "7": 2,
+    "10": 94,
+    "6": 69,
+    "3": 1979,
+    "5": 178,
+    "4": 558,
+    "8": 7
+  },
+  "odf_rows": 91664,
+  "time_grid": [
+    {
+      "duration_numerator": 1,
+      "duration_denominator": 1,
+      "midpoint_milliseconds": 500,
+      "records": 91664
+    }
+  ],
+  "counters": {
+    "wrong_label_scale_mismatches": 999,
+    "omitted_rollover_mismatches": 21,
+    "wrong_bias_mismatches": 91664,
+    "reverse_count_mismatches": 91664,
+    "rollovers": 21,
+    "value_equivalent_duplicate_endpoint_intervals": 1,
+    "mismatches": 0,
+    "omitted_oneway_reference_mismatches": 649
+  },
+  "groups": [
+    {
+      "key": [
+        11,
+        54,
+        0
+      ],
+      "records": 649,
+      "error_min_hz": {
+        "numerator": -39929,
+        "denominator": 331500000000,
+        "approximate": -1.2044947209653093e-07
+      },
+      "error_max_hz": {
+        "numerator": 100849,
+        "denominator": 132600000000,
+        "approximate": 7.60550527903469e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 100849,
+        "denominator": 132600000000,
+        "approximate": 7.60550527903469e-07
+      },
+      "worst_odf_record": 3916,
+      "within_storage_quantum_scale": 649,
+      "count_delta_min_cycles": {
+        "numerator": 803984037,
+        "denominator": 1000,
+        "approximate": 803984.037
+      },
+      "count_delta_max_cycles": {
+        "numerator": 803985091,
+        "denominator": 1000,
+        "approximate": 803985.091
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": null
+    },
+    {
+      "key": [
+        12,
+        25,
+        25
+      ],
+      "records": 36007,
+      "error_min_hz": {
+        "numerator": -469,
+        "denominator": 1000000000,
+        "approximate": -4.69e-07
+      },
+      "error_max_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "worst_odf_record": 57654,
+      "within_storage_quantum_scale": 36007,
+      "count_delta_min_cycles": {
+        "numerator": 999884911,
+        "denominator": 1000,
+        "approximate": 999884.911
+      },
+      "count_delta_max_cycles": {
+        "numerator": 205266827,
+        "denominator": 200,
+        "approximate": 1026334.135
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 36007
+    },
+    {
+      "key": [
+        12,
+        45,
+        45
+      ],
+      "records": 6094,
+      "error_min_hz": {
+        "numerator": -473,
+        "denominator": 1000000000,
+        "approximate": -4.73e-07
+      },
+      "error_max_hz": {
+        "numerator": 93,
+        "denominator": 200000000,
+        "approximate": 4.65e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "worst_odf_record": 2774,
+      "within_storage_quantum_scale": 6094,
+      "count_delta_min_cycles": {
+        "numerator": 1201754573,
+        "denominator": 1000,
+        "approximate": 1201754.573
+      },
+      "count_delta_max_cycles": {
+        "numerator": 304814129,
+        "denominator": 250,
+        "approximate": 1219256.516
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 6094
+    },
+    {
+      "key": [
+        12,
+        54,
+        54
+      ],
+      "records": 19358,
+      "error_min_hz": {
+        "numerator": -469,
+        "denominator": 1000000000,
+        "approximate": -4.69e-07
+      },
+      "error_max_hz": {
+        "numerator": 469,
+        "denominator": 1000000000,
+        "approximate": 4.69e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 469,
+        "denominator": 1000000000,
+        "approximate": 4.69e-07
+      },
+      "worst_odf_record": 22190,
+      "within_storage_quantum_scale": 19358,
+      "count_delta_min_cycles": {
+        "numerator": 1000201913,
+        "denominator": 1000,
+        "approximate": 1000201.913
+      },
+      "count_delta_max_cycles": {
+        "numerator": 1193483543,
+        "denominator": 1000,
+        "approximate": 1193483.543
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 19358
+    },
+    {
+      "key": [
+        13,
+        25,
+        54
+      ],
+      "records": 9910,
+      "error_min_hz": {
+        "numerator": -473,
+        "denominator": 1000000000,
+        "approximate": -4.73e-07
+      },
+      "error_max_hz": {
+        "numerator": 93,
+        "denominator": 200000000,
+        "approximate": 4.65e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 473,
+        "denominator": 1000000000,
+        "approximate": 4.73e-07
+      },
+      "worst_odf_record": 41750,
+      "within_storage_quantum_scale": 9910,
+      "count_delta_min_cycles": {
+        "numerator": 14697503,
+        "denominator": 100,
+        "approximate": 146975.03
+      },
+      "count_delta_max_cycles": {
+        "numerator": 1197291251,
+        "denominator": 1000,
+        "approximate": 1197291.251
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 9910
+    },
+    {
+      "key": [
+        13,
+        45,
+        25
+      ],
+      "records": 10160,
+      "error_min_hz": {
+        "numerator": -223,
+        "denominator": 500000000,
+        "approximate": -4.46e-07
+      },
+      "error_max_hz": {
+        "numerator": 231,
+        "denominator": 500000000,
+        "approximate": 4.62e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 231,
+        "denominator": 500000000,
+        "approximate": 4.62e-07
+      },
+      "worst_odf_record": 88646,
+      "within_storage_quantum_scale": 10160,
+      "count_delta_min_cycles": {
+        "numerator": 202673743,
+        "denominator": 250,
+        "approximate": 810694.972
+      },
+      "count_delta_max_cycles": {
+        "numerator": 1214005647,
+        "denominator": 1000,
+        "approximate": 1214005.647
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 10160
+    },
+    {
+      "key": [
+        13,
+        54,
+        45
+      ],
+      "records": 9486,
+      "error_min_hz": {
+        "numerator": -469,
+        "denominator": 1000000000,
+        "approximate": -4.69e-07
+      },
+      "error_max_hz": {
+        "numerator": 231,
+        "denominator": 500000000,
+        "approximate": 4.62e-07
+      },
+      "max_abs_error_hz": {
+        "numerator": 469,
+        "denominator": 1000000000,
+        "approximate": 4.69e-07
+      },
+      "worst_odf_record": 10449,
+      "within_storage_quantum_scale": 9486,
+      "count_delta_min_cycles": {
+        "numerator": 24029161,
+        "denominator": 20,
+        "approximate": 1201458.05
+      },
+      "count_delta_max_cycles": {
+        "numerator": 301289447,
+        "denominator": 250,
+        "approximate": 1205157.788
+      },
+      "nonpositive_count_increments": 0,
+      "coherent_reference_equality_count": 9486
+    }
+  ],
+  "duplicates": [
+    {
+      "odf_record": 4100,
+      "pair": [
+        [
+          25899
+        ],
+        [
+          25901,
+          25902
+        ]
+      ],
+      "mode_quality": [
+        [
+          {
+            "record": 25899,
+            "values": [
+              2,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2
+            ]
+          }
+        ],
+        [
+          {
+            "record": 25901,
+            "values": [
+              1,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              0,
+              100,
+              2
+            ]
+          },
+          {
+            "record": 25902,
+            "values": [
+              2,
+              0,
+              1000,
+              1,
+              1,
+              5,
+              4,
+              2,
+              100,
+              2
+            ]
+          }
+        ]
+      ],
+      "slips": [
+        [
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "count_microcycles": [
+        3740391396512000,
+        3741195380600000
+      ],
+      "error": {
+        "numerator": 91859,
+        "denominator": 663000000000,
+        "approximate": 1.3855052790346907e-07
+      }
+    }
+  ],
+  "rollover_odf_records": [
+    808,
+    5001,
+    7112,
+    11140,
+    14701,
+    17038,
+    24007,
+    28061,
+    32334,
+    38479,
+    42077,
+    49892,
+    54191,
+    58468,
+    62735,
+    66982,
+    71211,
+    75425,
+    80056,
+    85261,
+    88818
+  ],
+  "countermodel_examples": {
+    "wrong_bias_mismatches": {
+      "odf_record": 6,
+      "error": {
+        "numerator": -249750000000041,
+        "denominator": 250000000,
+        "approximate": -999000.000000164
+      }
+    },
+    "reverse_count_mismatches": {
+      "odf_record": 6,
+      "error": {
+        "numerator": 607002823499959,
+        "denominator": 250000000,
+        "approximate": 2428011.293999836
+      }
+    },
+    "wrong_label_scale_mismatches": {
+      "odf_record": 69,
+      "error": {
+        "numerator": 99000000000000233,
+        "denominator": 1000000000,
+        "approximate": 99000000.00000024
+      }
+    },
+    "omitted_rollover_mismatches": {
+      "odf_record": 808,
+      "error": {
+        "numerator": 2147483648000000101,
+        "denominator": 500000000,
+        "approximate": 4294967296.0
+      }
+    },
+    "omitted_oneway_reference_mismatches": {
+      "odf_record": 3313,
+      "error": {
+        "numerator": -679078720211163,
+        "denominator": 250000000,
+        "approximate": -2716314.880844652
+      }
+    }
+  },
+  "ambiguous_history_witnesses": [
+    {
+      "a": 11,
+      "b": 37,
+      "minimal": 26,
+      "other_history": 4294967296000026
+    },
+    {
+      "a": 4294967295999989,
+      "b": 37,
+      "minimal": 48,
+      "other_history": 4294967296000048
+    },
+    {
+      "a": 4294967295999999,
+      "b": 0,
+      "minimal": 1,
+      "other_history": 4294967296000001
+    },
+    {
+      "a": 0,
+      "b": 0,
+      "minimal": 0,
+      "other_history": 4294967296000000
+    },
+    {
+      "a": 4294967295999999,
+      "b": 4294967295999999,
+      "minimal": 0,
+      "other_history": 4294967296000000
+    },
+    {
+      "a": 17,
+      "b": 3,
+      "minimal": 4294967295999986,
+      "other_history": 8589934591999986
+    }
+  ],
+  "limitations": [
+    "Endpoint values alone cannot choose among increments delta+n*2^32 cycles or exclude intervening counter resets.",
+    "Storage-quantum comparison is arithmetic agreement, not an instrument-error certificate.",
+    "All observed endpoints happen to have zero slipped-cycle fields; other conventions/invalid/slipped cases are not certified.",
+    "Equivalent duplicate values retain differing no-process/sample-type flags; equality does not validate physical usability.",
+    "Only registered June18 ODF/ATDF raw products were opened."
+  ]
+}

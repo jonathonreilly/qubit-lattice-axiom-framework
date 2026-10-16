@@ -1,0 +1,1271 @@
+{
+  "created_at": "2026-10-15T03:47:59.641015+00:00",
+  "reviewer": "/root/localized_history_check",
+  "checks_passed": 150,
+  "checks": [
+    {
+      "name": "static_spatial_finite_count",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "static_spatial_closed_derivative",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "static_spatial_exact_-0.01",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "static_spatial_exact_0.01",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "changing_spacecraft_lapse_is_present",
+      "passed": true
+    },
+    {
+      "name": "static_temporal_finite_count",
+      "passed": true,
+      "error": 7.39684757888881e-10,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "static_temporal_closed_derivative",
+      "passed": true,
+      "error": 1.7763568394002505e-15,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "static_temporal_exact_-0.01",
+      "passed": true,
+      "error": 8.881784197001252e-15,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "static_temporal_exact_0.01",
+      "passed": true,
+      "error": 1.0658141036401503e-14,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "inertial_velocity_finite_count",
+      "passed": true,
+      "error": 2.672317922502998e-11,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "inertial_velocity_closed_derivative",
+      "passed": true,
+      "error": 2.7755575615628914e-16,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "double_doppler_exact_-0.01",
+      "passed": true,
+      "error": 3.552713678800501e-15,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "double_doppler_exact_0",
+      "passed": true,
+      "error": 1.7763568394002505e-15,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "double_doppler_exact_0.01",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "inertial_range_finite_count",
+      "passed": true,
+      "error": 2.8421709430404007e-12,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "inertial_range_closed_derivative",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "spacecraft_acceleration_displacement_finite_count",
+      "passed": true,
+      "error": 5.290114613032415e-08,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "spacecraft_acceleration_displacement_closed_derivative",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "spacecraft_force_sensitive_position_row",
+      "passed": true
+    },
+    {
+      "name": "moving_full_finite_count",
+      "passed": true,
+      "error": 4.16392753610495e-11,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "moving_full_a_r",
+      "passed": true,
+      "error": 1.6112111644872584e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_a_m",
+      "passed": true,
+      "error": 7.866443607618123e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_a_e",
+      "passed": true,
+      "error": 5.109371259415241e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_a_phase",
+      "passed": true,
+      "error": 7.98730526163638e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_a_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_full_a_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_full_a_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_full_a_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_full_a_down_time_composition",
+      "passed": true,
+      "error": 1.5029089084350744e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_full_a_full_time_composition",
+      "passed": true,
+      "error": 4.008904319618978e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_full_b_r",
+      "passed": true,
+      "error": 4.832245714680994e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_b_m",
+      "passed": true,
+      "error": 6.402933738769434e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_b_e",
+      "passed": true,
+      "error": 1.5249607132616916e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_b_phase",
+      "passed": true,
+      "error": 2.8045621380812236e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_full_b_endpoint_rows",
+      "passed": true,
+      "error": 2.7755575615628914e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_full_b_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_full_b_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_full_b_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_full_b_down_time_composition",
+      "passed": true,
+      "error": 5.4067861299245124e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_full_b_full_time_composition",
+      "passed": true,
+      "error": 3.1931124411244127e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_field_only_finite_count",
+      "passed": true,
+      "error": 1.5418297194536024e-10,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "moving_field_only_a_r",
+      "passed": true,
+      "error": 8.293379871737727e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_a_m",
+      "passed": true,
+      "error": 1.1680628686505656e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_a_e",
+      "passed": true,
+      "error": 1.254348014345652e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_a_phase",
+      "passed": true,
+      "error": 1.3217982264279726e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_a_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_field_only_a_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_field_only_a_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_field_only_a_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_field_only_a_down_time_composition",
+      "passed": true,
+      "error": 1.5029089084350744e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_field_only_a_full_time_composition",
+      "passed": true,
+      "error": 4.008904319618978e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_field_only_b_r",
+      "passed": true,
+      "error": 5.574346539916064e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_b_m",
+      "passed": true,
+      "error": 3.707520401796671e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_b_e",
+      "passed": true,
+      "error": 2.7942648195278252e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_b_phase",
+      "passed": true,
+      "error": 9.09641806323691e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_field_only_b_endpoint_rows",
+      "passed": true,
+      "error": 1.3877787807814457e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_field_only_b_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_field_only_b_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_field_only_b_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_field_only_b_down_time_composition",
+      "passed": true,
+      "error": 5.4067861299245124e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_field_only_b_full_time_composition",
+      "passed": true,
+      "error": 3.1931124411244127e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_paths_only_finite_count",
+      "passed": true,
+      "error": 1.7262711442603274e-12,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "moving_paths_only_a_r",
+      "passed": true,
+      "error": 5.6330645443330996e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_a_m",
+      "passed": true,
+      "error": 7.940502422254525e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_a_e",
+      "passed": true,
+      "error": 6.70838384841943e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_a_phase",
+      "passed": true,
+      "error": 6.470643465483761e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_a_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_paths_only_a_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_paths_only_a_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_paths_only_a_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_paths_only_a_down_time_composition",
+      "passed": true,
+      "error": 1.5029089084350744e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_paths_only_a_full_time_composition",
+      "passed": true,
+      "error": 4.008904319618978e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_paths_only_b_r",
+      "passed": true,
+      "error": 7.317300628265078e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_b_m",
+      "passed": true,
+      "error": 7.643113789437828e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_b_e",
+      "passed": true,
+      "error": 6.9142053193971265e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_b_phase",
+      "passed": true,
+      "error": 6.425256160458304e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_paths_only_b_endpoint_rows",
+      "passed": true,
+      "error": 2.0816681711721685e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_paths_only_b_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_paths_only_b_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_paths_only_b_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_paths_only_b_down_time_composition",
+      "passed": true,
+      "error": 5.4067861299245124e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_paths_only_b_full_time_composition",
+      "passed": true,
+      "error": 3.1931124411244127e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_clocks_only_finite_count",
+      "passed": true,
+      "error": 1.3627658029813361e-11,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "moving_clocks_only_a_r",
+      "passed": true,
+      "error": 6.491994442026083e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_a_m",
+      "passed": true,
+      "error": 6.0554755654251835e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_a_e",
+      "passed": true,
+      "error": 5.948484760320838e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_a_phase",
+      "passed": true,
+      "error": 5.852887619006708e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_a_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_clocks_only_a_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_clocks_only_a_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_clocks_only_a_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_clocks_only_a_down_time_composition",
+      "passed": true,
+      "error": 1.5029089084350744e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_clocks_only_a_full_time_composition",
+      "passed": true,
+      "error": 4.008904319618978e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_clocks_only_b_r",
+      "passed": true,
+      "error": 1.0141519568573898e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_b_m",
+      "passed": true,
+      "error": 9.956653557186002e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_b_e",
+      "passed": true,
+      "error": 7.298120441312506e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_b_phase",
+      "passed": true,
+      "error": 1.0348319423592045e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "moving_clocks_only_b_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "moving_clocks_only_b_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "moving_clocks_only_b_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_clocks_only_b_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "moving_clocks_only_b_down_time_composition",
+      "passed": true,
+      "error": 5.4067861299245124e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "moving_clocks_only_b_full_time_composition",
+      "passed": true,
+      "error": 3.1931124411244127e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "station_clock_only_finite_count",
+      "passed": true,
+      "error": 1.3627658029813361e-11,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "station_clock_only_a_r",
+      "passed": true,
+      "error": 6.491994442026083e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_a_m",
+      "passed": true,
+      "error": 6.0554755654251835e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_a_e",
+      "passed": true,
+      "error": 5.948484760320838e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_a_phase",
+      "passed": true,
+      "error": 5.852887619006708e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_a_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "station_clock_only_a_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "station_clock_only_a_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "station_clock_only_a_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "station_clock_only_a_down_time_composition",
+      "passed": true,
+      "error": 1.5029089084350744e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "station_clock_only_a_full_time_composition",
+      "passed": true,
+      "error": 4.008904319618978e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "station_clock_only_b_r",
+      "passed": true,
+      "error": 1.0141519568573898e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_b_m",
+      "passed": true,
+      "error": 9.956653557186002e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_b_e",
+      "passed": true,
+      "error": 7.298120441312506e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_b_phase",
+      "passed": true,
+      "error": 1.0348319423592045e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "station_clock_only_b_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "station_clock_only_b_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "station_clock_only_b_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "station_clock_only_b_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "station_clock_only_b_down_time_composition",
+      "passed": true,
+      "error": 5.4067861299245124e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "station_clock_only_b_full_time_composition",
+      "passed": true,
+      "error": 3.1931124411244127e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "spacecraft_clock_only_finite_count",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "spacecraft_clock_only_a_r",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_a_m",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_a_e",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_a_phase",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_a_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "spacecraft_clock_only_a_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "spacecraft_clock_only_a_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "spacecraft_clock_only_a_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "spacecraft_clock_only_a_down_time_composition",
+      "passed": true,
+      "error": 1.5029089084350744e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "spacecraft_clock_only_a_full_time_composition",
+      "passed": true,
+      "error": 4.008904319618978e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "spacecraft_clock_only_b_r",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_b_m",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_b_e",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_b_phase",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "spacecraft_clock_only_b_endpoint_rows",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "spacecraft_clock_only_b_ordered_events",
+      "passed": true
+    },
+    {
+      "name": "spacecraft_clock_only_b_spacecraft_lapse_product_-0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "spacecraft_clock_only_b_spacecraft_lapse_product_0.005",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "spacecraft_clock_only_b_down_time_composition",
+      "passed": true,
+      "error": 5.4067861299245124e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "spacecraft_clock_only_b_full_time_composition",
+      "passed": true,
+      "error": 3.1931124411244127e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "coherent_linear_superposition",
+      "passed": true,
+      "error": 6.938893903907228e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "spacecraft_clock_exactly_absent",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "spacecraft_clock_nonlinear_count_absent",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "shared_station_clock_boundary",
+      "passed": true,
+      "error": 2.168404344971009e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "shared_station_clock_generically_nonzero",
+      "passed": true,
+      "value": 0.0038081676956233114
+    }
+  ],
+  "tables": {
+    "static_spatial": {
+      "analytic": 0.0,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 0.0,
+          "error": 0.0
+        }
+      ]
+    },
+    "static_temporal": {
+      "analytic": -1.5247232000000013,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": -1.5247239871638563,
+          "error": 7.871638549872273e-07
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -1.524723396791039,
+          "error": 1.9679103768766026e-07
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -1.5247232491983453,
+          "error": 4.9198344065359834e-08
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": -1.524723212202872,
+          "error": 1.2202870713906577e-08
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": -1.524723203066003,
+          "error": 3.066001674767449e-09
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": -1.524723200739686,
+          "error": 7.39684757888881e-10
+        }
+      ]
+    },
+    "inertial_velocity": {
+      "analytic": -0.41437500000000005,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": -0.4143750297305626,
+          "error": 2.9730562567387153e-08
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -0.41437500743208844,
+          "error": 7.432088389158764e-09
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -0.41437500185921294,
+          "error": 1.8592128947503284e-09
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": -0.414375000463707,
+          "error": 4.637069617174916e-10
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": -0.4143750001126989,
+          "error": 1.126988502520021e-10
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": -0.41437500002672323,
+          "error": 2.672317922502998e-11
+        }
+      ]
+    },
+    "inertial_range": {
+      "analytic": 0.0,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 1.3322676295501878e-13,
+          "error": 1.3322676295501878e-13
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -2.6645352591003757e-13,
+          "error": 2.6645352591003757e-13
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 5.329070518200751e-13,
+          "error": 5.329070518200751e-13
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 1.7763568394002505e-12,
+          "error": 1.7763568394002505e-12
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": -3.552713678800501e-12,
+          "error": 3.552713678800501e-12
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 2.8421709430404007e-12,
+          "error": 2.8421709430404007e-12
+        }
+      ]
+    },
+    "spacecraft_acceleration_displacement": {
+      "analytic": -3.8464607999999996,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": -3.846514978502391,
+          "error": 5.41785023915331e-05
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -3.84647434441856,
+          "error": 1.3544418560496041e-05
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -3.846464186093357,
+          "error": 3.386093357260478e-06
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": -3.846461646521959,
+          "error": 8.465219596409668e-07
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": -3.846461011625024,
+          "error": 2.1162502461535837e-07
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": -3.8464608529011457,
+          "error": 5.290114613032415e-08
+        }
+      ]
+    },
+    "moving_full": {
+      "analytic": 0.11800822657662172,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.11800817601681501,
+          "error": 5.055980670243265e-08
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.11800821393643801,
+          "error": 1.2640183705281416e-08
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.1180082234155222,
+          "error": 3.1610995210318293e-09
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.11800822578464931,
+          "error": 7.919724043237153e-10
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": 0.11800822637653141,
+          "error": 2.0009030543555184e-10
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 0.11800822653498244,
+          "error": 4.16392753610495e-11
+        }
+      ]
+    },
+    "moving_field_only": {
+      "analytic": 0.11349198584368966,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.11349181790523133,
+          "error": 1.6793845833418253e-07
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.11349194385843475,
+          "error": 4.198525491161398e-08
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.113491975346669,
+          "error": 1.0497020669353319e-08
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.11349198321930487,
+          "error": 2.6243847928153485e-09
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": 0.11349198518644243,
+          "error": 6.572472288635112e-10
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 0.11349198568950669,
+          "error": 1.5418297194536024e-10
+        }
+      ]
+    },
+    "moving_paths_only": {
+      "analytic": 0.0007080730373086728,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.0007080699111483568,
+          "error": 3.126160315965361e-09
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.0007080722556729313,
+          "error": 7.816357414829403e-10
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.0007080728460451269,
+          "error": 1.9126354590826705e-10
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.000708072991528752,
+          "error": 4.577992076138654e-11
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": 0.0007080730277664316,
+          "error": 9.54224123762143e-12
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 0.0007080730355824016,
+          "error": 1.7262711442603274e-12
+        }
+      ]
+    },
+    "moving_clocks_only": {
+      "analytic": 0.0038081676956233136,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.0038081676786205776,
+          "error": 1.7002736024673837e-11
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.0038081676925649788,
+          "error": 3.0583348353818707e-12
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.003808167694785425,
+          "error": 8.378887861315576e-13
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.003808167696917053,
+          "error": 1.293739421148743e-12
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": 0.0038081676962065103,
+          "error": 5.831966853886428e-13
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 0.0038081676819956556,
+          "error": 1.3627658029813361e-11
+        }
+      ]
+    },
+    "station_clock_only": {
+      "analytic": 0.0038081676956233136,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.0038081676786205776,
+          "error": 1.7002736024673837e-11
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.0038081676925649788,
+          "error": 3.0583348353818707e-12
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.003808167694785425,
+          "error": 8.378887861315576e-13
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.003808167696917053,
+          "error": 1.293739421148743e-12
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": 0.0038081676962065103,
+          "error": 5.831966853886428e-13
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 0.0038081676819956556,
+          "error": 1.3627658029813361e-11
+        }
+      ]
+    },
+    "spacecraft_clock_only": {
+      "analytic": 0.0,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.000625,
+          "derivative": 0.0,
+          "error": 0.0
+        },
+        {
+          "epsilon": 0.0003125,
+          "derivative": 0.0,
+          "error": 0.0
+        }
+      ]
+    }
+  },
+  "multi_leg_author_sources_read_before_run": false,
+  "empirical_tests": 0,
+  "source_sha256": "1df60573e898712feb27d05eda7d4eae9e8136d0cd7187e8b53ffc1d90c69e29",
+  "precheck_sha256": "ea2951d292068f12aaa344645ad221098dea1d55320d66ec0620ba97d1ff3d33",
+  "elapsed_seconds": 0.17369412491098046,
+  "scope": "Ideal instantaneous coherent two-leg reference. Synthetic smooth metric/path fixtures, no field-equation or energy-Gram assertion, no transponder proper delay or independent spacecraft oscillator."
+}

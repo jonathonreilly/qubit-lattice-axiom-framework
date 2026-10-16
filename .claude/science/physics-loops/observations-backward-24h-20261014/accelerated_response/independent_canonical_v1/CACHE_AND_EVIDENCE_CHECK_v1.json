@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-10-15T03:57:05.033376+00:00",
+  "canonical_source_identity_matches_freeze": true,
+  "summary_source_identities_match_freeze": true,
+  "cache_sha256": "96b0ba40a1f81a4d9251fb65aaafbf2b6d6cdb1163f17a33925f682e89c2a54c",
+  "input_fingerprint_sha256": "48819f0cd3f6f011b4d4523a0d30e15f278503ad46528b920303b31f03759bb0",
+  "computed_fingerprint_matches_cache": true,
+  "cache_stdout_matches_summary": true,
+  "cache_stderr_empty": true,
+  "cache_exit_code": 0,
+  "cache_timeout_seconds": 180,
+  "cache_elapsed_seconds": 22.59,
+  "all_six_scripts_declare_180_seconds": true,
+  "suite_rerun_by_reviewer": false,
+  "raw_observations_accessed": false,
+  "products": [
+    {
+      "product": "joint_gram",
+      "checks": 15,
+      "all_scientific_result_values_identical_to_working": true,
+      "canonical_sha256": "41dc7f33684c526b972f485b09fa3e65db577f8922f497caaee53dedb8337a25",
+      "working_result_sha256": "48ecd654fe086c5307bc7f6c967c9915dd309596d2c231274db2c255d01a60bd"
+    },
+    {
+      "product": "proper_endpoint",
+      "checks": 9,
+      "all_scientific_result_values_identical_to_working": true,
+      "canonical_sha256": "451a3411ac5fe5d6695a58f54b8d434eeb1fa6a554dbc26c87624091461bde8b",
+      "working_result_sha256": "540927a3e285db53e01cfc6f2e66620a095a54afdceedfcf6f4ebdb5f3ebc500"
+    },
+    {
+      "product": "one_way_adjoint",
+      "checks": 22,
+      "all_scientific_result_values_identical_to_working": true,
+      "canonical_sha256": "9934e795c58723670cf1dc1cec0ae7633bf494bc9a529a021fe3e8e9280bae75",
+      "working_result_sha256": "7c5ff21c236a809de240b3e5fdcae084ae6ff4e267979a180c75a3f514e6b2f1"
+    },
+    {
+      "product": "coherent_adjoint",
+      "checks": 14,
+      "all_scientific_result_values_identical_to_working": true,
+      "canonical_sha256": "b7be9d248eb795ccfaf2f4eaa6965b7fe308c89421561d619114fcb71f4249dd",
+      "working_result_sha256": "2445aeb46f7d041c235ae8cc843c39677dc2409882fc714ceb449b36e86d4089"
+    },
+    {
+      "product": "exact_coherent_energy",
+      "checks": 15,
+      "all_scientific_result_values_identical_to_working": true,
+      "canonical_sha256": "e7bf47f154ad7ad86c823449bb6acfd0c4ce2314b9f296dca7e38be65e312e9d",
+      "working_result_sha256": "58885fa5ad2c05d9ad438e5461e4bc857a01a038da1eef43ff374f542803ea62"
+    }
+  ],
+  "original_report_identities": {
+    "independent_massless_v1/INDEPENDENT_REVIEW_v1.md": "95fb83a8f8642fa4566202e44dfcc86be44236dadb592e8b5cbb40dd774de0c4",
+    "independent_massless_v1/AUTHOR_SOURCE_COMPARISON_v1.md": "a72bba3e9364fafdb7f09f6a237c52b6013e2502595e2c19ace2e115c773d0a4",
+    "independent_massless_v1/V3_AFFECTED_CONFIRMATION_v1.md": "262be03a1cd583f20bd203c8c7e7a44e75ecf09148d95e1faa550a12be964ac6",
+    "independent_massless_v1/COHERENT_TWO_LEG_REVIEW_v1.md": "2347cde604f7b7d7b31523fb28d107053b3670a51d36ff8e7db8661f81b34aa0",
+    "independent_proper_count_v1/PROPER_COUNT_REVIEW_v1.md": "cce35cc81dd6b8e9625f8d585598c5a2d526696c0a439f561df20865477a3fab",
+    "independent_proper_count_v1/COHERENT_REVIEW_v1.md": "c5280542b21867779f79ed9025b3fc55403976203bcdc6fceb87b8db5c7e4ee6",
+    "independent_adjoint_v1/REVIEW_ADJOINT_v1.md": "f43c58f0a63e3dfef112f4cee0f05584c9c346c119c0c2b8efbb7421c29e19b6",
+    "independent_adjoint_v1/AUTHOR_SOURCE_CORRESPONDENCE_v1.md": "67e057e01ed9c94a3c265368da2dc25e4ceed162fabf067e74509ad886404665",
+    "independent_adjoint_v1/AUTHOR_COUNT_COMPOSITION_REVIEW_v1.md": "4f6851e6f3c7b45adaed5fd7c69b31ecf144c481491f115735b910c6519f5b9e"
+  }
+}

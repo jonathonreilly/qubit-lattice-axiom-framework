@@ -1,0 +1,22 @@
+{
+  "baseline": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "sources": [
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_ORBIT_LIGHT_TIME_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "5bf05c785444a71467ae871c7e5e40f884ac67bdb976eb08b280c2d437522d56"
+    },
+    {
+      "path": "scripts/exponential_scalar_orbit_light_time_check.py",
+      "sha256": "e7f61487097e3dea302c7f3a382d0b6399120195040f1966fa65942a4e8bbde3"
+    },
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "b4080f1e5c63109f66a4a8b15c2e4888c5331384654ddcbca5c9c0eb97a3cd68"
+    },
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_COMPOSITE_CHARGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "35b69de33af677cad57adcb82599edd526aa159797a84cc666dc43c2d3dba022"
+    }
+  ],
+  "scope": "Source identities only; not a proof or audit verdict"
+}

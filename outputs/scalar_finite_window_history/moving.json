@@ -1,0 +1,927 @@
+{
+  "checks_passed": 133,
+  "checks": [
+    "twice_IBP_coefficients",
+    "radial_envelope_integral",
+    "fixed_projection_constant",
+    "rotating_projection_constant",
+    "subluminal_path",
+    "velocity_fixture_bound",
+    "acceleration_fixture_bound",
+    "jerk_fixture_bound",
+    "IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+    "IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_True",
+    "IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_False",
+    "IBP_with_measure_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_True",
+    "IBP_with_measure_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_False",
+    "IBP_with_measure_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_True",
+    "IBP_with_measure_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_False",
+    "IBP_with_measure_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_True",
+    "IBP_with_measure_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_False",
+    "IBP_with_measure_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_True",
+    "IBP_with_measure_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_False",
+    "IBP_with_measure_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_True",
+    "IBP_with_measure_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_False",
+    "IBP_with_measure_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_True",
+    "IBP_with_measure_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_False",
+    "nonstationary_envelope_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_False",
+    "frequency_nonstationarity_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_False",
+    "IBP_with_measure_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_True",
+    "nonstationary_envelope_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_True",
+    "frequency_nonstationarity_0.0_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_True",
+    "IBP_with_measure_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_False",
+    "IBP_with_measure_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_-1.0_True",
+    "IBP_with_measure_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_False",
+    "IBP_with_measure_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(0.3), np.float64(0.4), np.float64(0.2))_1.0_True",
+    "IBP_with_measure_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_False",
+    "IBP_with_measure_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_-1.0_True",
+    "IBP_with_measure_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_False",
+    "IBP_with_measure_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(2.0), np.float64(-1.0), np.float64(0.7))_1.0_True",
+    "IBP_with_measure_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_False",
+    "IBP_with_measure_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_-1.0_True",
+    "IBP_with_measure_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_False",
+    "IBP_with_measure_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(-7.0), np.float64(3.0), np.float64(5.0))_1.0_True",
+    "IBP_with_measure_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_False",
+    "IBP_with_measure_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_-1.0_True",
+    "IBP_with_measure_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_False",
+    "nonstationary_envelope_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_False",
+    "frequency_nonstationarity_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_False",
+    "IBP_with_measure_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_True",
+    "nonstationary_envelope_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_True",
+    "frequency_nonstationarity_0.8_(np.float64(40.0), np.float64(-20.0), np.float64(10.0))_1.0_True",
+    "omitted_distribution_jumps_rejected",
+    "wrong_global_IBP_sign_rejected",
+    "straight_envelope_0.5_0.0",
+    "stationary_limit_0.5",
+    "straight_envelope_0.5_0.2",
+    "stationary_norm_not_reused_0.5_0.2",
+    "straight_envelope_0.5_0.65",
+    "stationary_norm_not_reused_0.5_0.65",
+    "straight_envelope_0.5_0.9",
+    "stationary_norm_not_reused_0.5_0.9",
+    "straight_envelope_1.0_0.0",
+    "stationary_limit_1.0",
+    "straight_envelope_1.0_0.2",
+    "stationary_norm_not_reused_1.0_0.2",
+    "straight_envelope_1.0_0.65",
+    "stationary_norm_not_reused_1.0_0.65",
+    "straight_envelope_1.0_0.9",
+    "stationary_norm_not_reused_1.0_0.9",
+    "straight_envelope_2.0_0.0",
+    "stationary_limit_2.0",
+    "straight_envelope_2.0_0.2",
+    "stationary_norm_not_reused_2.0_0.2",
+    "straight_envelope_2.0_0.65",
+    "stationary_norm_not_reused_2.0_0.65",
+    "straight_envelope_2.0_0.9",
+    "stationary_norm_not_reused_2.0_0.9",
+    "rotating_velocity_readout_identity",
+    "geometric_term_bound",
+    "dropped_geometric_term_rejected"
+  ],
+  "modes": [
+    {
+      "mu": 0.0,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        0.9557058855449765,
+        0.0005370399884775667
+      ],
+      "integrated_by_parts": [
+        0.9557058855449778,
+        0.000537039988476753
+      ],
+      "discrepancy": 1.561100420767837e-15,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.5300158134498534
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        0.5213780195995067,
+        0.04483033805581601
+      ],
+      "integrated_by_parts": [
+        0.5213780195995062,
+        0.04483033805581581
+      ],
+      "discrepancy": 4.875529749534861e-16,
+      "envelope": 1.0,
+      "omitted_jump_error": 1.1224725338120694
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.9744251385785025,
+        0.0005629684980922312
+      ],
+      "integrated_by_parts": [
+        0.9744251385785022,
+        0.0005629684980921171
+      ],
+      "discrepancy": 3.520551203959816e-16,
+      "envelope": 1.0,
+      "omitted_jump_error": 1.8935071705202426
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        0.5313898730308231,
+        -0.03392418451630831
+      ],
+      "integrated_by_parts": [
+        0.5313898730308226,
+        -0.03392418451630828
+      ],
+      "discrepancy": 4.454424009010536e-16,
+      "envelope": 1.0,
+      "omitted_jump_error": 1.766069743320274
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        0.3962648698014888,
+        -0.0005886972989879169
+      ],
+      "integrated_by_parts": [
+        0.39626486980148873,
+        -0.0005886972989878315
+      ],
+      "discrepancy": 1.0188547272692768e-16,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.38547513795613914
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        0.3436501889061361,
+        -0.05596063368877574
+      ],
+      "integrated_by_parts": [
+        0.3436501889061361,
+        -0.0559606336887757
+      ],
+      "discrepancy": 4.163336342344337e-17,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.30905299173821016
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.591451633520531,
+        0.00019074622172432498
+      ],
+      "integrated_by_parts": [
+        0.591451633520531,
+        0.00019074622172435732
+      ],
+      "discrepancy": 3.233632979438017e-17,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.6026608978512776
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        0.5028565541130611,
+        0.05867885936295905
+      ],
+      "integrated_by_parts": [
+        0.5028565541130611,
+        0.0586788593629591
+      ],
+      "discrepancy": 4.85722573273506e-17,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.48554406748522994
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        0.04421664155774921,
+        0.001678209309816353
+      ],
+      "integrated_by_parts": [
+        0.04421664155774914,
+        0.0016782093098162375
+      ],
+      "discrepancy": 1.3480588060688674e-16,
+      "envelope": 0.07099339495087667,
+      "omitted_jump_error": 0.0443475105652134
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        -0.032318777752827835,
+        0.0007428753137497107
+      ],
+      "integrated_by_parts": [
+        -0.03231877775282782,
+        0.0007428753137497437
+      ],
+      "discrepancy": 3.576224061345498e-17,
+      "envelope": 0.10458087472801268,
+      "omitted_jump_error": 0.03194271181745664
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.0011978141522703085,
+        -0.0012038277028736388
+      ],
+      "integrated_by_parts": [
+        0.0011978141522701216,
+        -0.001203827702873641
+      ],
+      "discrepancy": 1.869290318647671e-16,
+      "envelope": 0.07099339495087667,
+      "omitted_jump_error": 0.001644236806020079
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        -0.002306495782295811,
+        0.00024262091863604118
+      ],
+      "integrated_by_parts": [
+        -0.0023064957822956623,
+        0.00024262091863603769
+      ],
+      "discrepancy": 1.487936270702315e-16,
+      "envelope": 0.10458087472801268,
+      "omitted_jump_error": 0.002140444363894845
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        4.699495755544885e-05,
+        -8.571332062678669e-05
+      ],
+      "integrated_by_parts": [
+        4.6994957555623624e-05,
+        -8.571332062684438e-05
+      ],
+      "discrepancy": 1.8404953856573603e-16,
+      "envelope": 0.0028059294194870306,
+      "omitted_jump_error": 9.771115912252004e-05
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        9.137817358332266e-05,
+        -5.7796860077927864e-05
+      ],
+      "integrated_by_parts": [
+        9.137817358349279e-05,
+        -5.7796860077981146e-05
+      ],
+      "discrepancy": 1.782734375881292e-16,
+      "envelope": 0.004133434572583359,
+      "omitted_jump_error": 0.00010805018431245215
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.0018130097726056012,
+        0.00017174890297293535
+      ],
+      "integrated_by_parts": [
+        0.0018130097726056765,
+        0.0001717489029729362
+      ],
+      "discrepancy": 7.524832225917661e-17,
+      "envelope": 0.0028059294194870306,
+      "omitted_jump_error": 0.0018209853173652383
+    },
+    {
+      "mu": 0.0,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        0.0014725628098832203,
+        0.00013499005395187919
+      ],
+      "integrated_by_parts": [
+        0.0014725628098832574,
+        0.0001349900539518359
+      ],
+      "discrepancy": 5.699692816163193e-17,
+      "envelope": 0.004133434572583359,
+      "omitted_jump_error": 0.0014787688781578634
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        0.876976754177498,
+        0.00042665547931156067
+      ],
+      "integrated_by_parts": [
+        0.8769767541774977,
+        0.00042665547931171425
+      ],
+      "discrepancy": 3.6676904551266543e-16,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.8200189438828586
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        0.26789002339638573,
+        0.03951959600618469
+      ],
+      "integrated_by_parts": [
+        0.26789002339638573,
+        0.03951959600618473
+      ],
+      "discrepancy": 4.163336342344337e-17,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.3797742328932749
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.9085364343632611,
+        0.0004694009559279566
+      ],
+      "integrated_by_parts": [
+        0.9085364343632611,
+        0.0004694009559280093
+      ],
+      "discrepancy": 5.2692225582795515e-17,
+      "envelope": 1.0,
+      "omitted_jump_error": 1.0090408259609882
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        0.27732425441604813,
+        -0.03451950753417807
+      ],
+      "integrated_by_parts": [
+        0.27732425441604813,
+        -0.034519507534178
+      ],
+      "discrepancy": 6.938893903907228e-17,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.45396339984824463
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        0.35623070705707943,
+        -0.0007254234906604595
+      ],
+      "integrated_by_parts": [
+        0.3562307070570794,
+        -0.0007254234906604804
+      ],
+      "discrepancy": 5.932409124257507e-17,
+      "envelope": 0.9612482513740233,
+      "omitted_jump_error": 0.34603731417074807
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        0.2940175091541922,
+        -0.051388266795825754
+      ],
+      "integrated_by_parts": [
+        0.29401750915419217,
+        -0.051388266795825734
+      ],
+      "discrepancy": 5.928593550334434e-17,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.2628521544378949
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.5483447449950352,
+        9.986699358477402e-06
+      ],
+      "integrated_by_parts": [
+        0.548344744995035,
+        9.98669935847568e-06
+      ],
+      "discrepancy": 1.110356695298283e-16,
+      "envelope": 0.9612482513740233,
+      "omitted_jump_error": 0.5607539911494656
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        2.0,
+        -1.0,
+        0.7
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        0.4425937626774299,
+        0.055678363460731184
+      ],
+      "integrated_by_parts": [
+        0.44259376267742967,
+        0.055678363460731135
+      ],
+      "discrepancy": 2.2729511820139823e-16,
+      "envelope": 1.0,
+      "omitted_jump_error": 0.4249609268582929
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        0.04369566365599095,
+        0.0016185303301612664
+      ],
+      "integrated_by_parts": [
+        0.04369566365599091,
+        0.001618530330161255
+      ],
+      "discrepancy": 4.3133263485776853e-17,
+      "envelope": 0.07045016476473892,
+      "omitted_jump_error": 0.04383907899287104
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        -0.031869036328222966,
+        0.00090533179354714
+      ],
+      "integrated_by_parts": [
+        -0.03186903632822296,
+        0.0009053317935471542
+      ],
+      "discrepancy": 1.5807429713723026e-17,
+      "envelope": 0.10378063847949609,
+      "omitted_jump_error": 0.03147075382484051
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.0010719222245788003,
+        -0.0011905424259248537
+      ],
+      "integrated_by_parts": [
+        0.0010719222245786455,
+        -0.0011905424259248474
+      ],
+      "discrepancy": 1.5495172265203642e-16,
+      "envelope": 0.07045016476473892,
+      "omitted_jump_error": 0.001553797438284821
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        -7.0,
+        3.0,
+        5.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        -0.002193899684015782,
+        0.0003250869000761686
+      ],
+      "integrated_by_parts": [
+        -0.0021938996840156657,
+        0.00032508690007618945
+      ],
+      "discrepancy": 1.180855076879893e-16,
+      "envelope": 0.10378063847949609,
+      "omitted_jump_error": 0.0020654039594379856
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": false,
+      "direct": [
+        4.7317385558324696e-05,
+        -8.558350380456423e-05
+      ],
+      "integrated_by_parts": [
+        4.7317385558515136e-05,
+        -8.558350380460606e-05
+      ],
+      "discrepancy": 1.94981387572459e-16,
+      "envelope": 0.0028050745396273344,
+      "omitted_jump_error": 9.77558416845629e-05
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": -1.0,
+      "rotating": true,
+      "direct": [
+        9.14133390300248e-05,
+        -5.684439048485833e-05
+      ],
+      "integrated_by_parts": [
+        9.14133390301755e-05,
+        -5.684439048489417e-05
+      ],
+      "discrepancy": 1.5490709293766347e-16,
+      "envelope": 0.004132175242985496,
+      "omitted_jump_error": 0.00010760950044320213
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": false,
+      "direct": [
+        0.0018127857008700678,
+        0.00017163431902299936
+      ],
+      "integrated_by_parts": [
+        0.0018127857008699687,
+        0.00017163431902303107
+      ],
+      "discrepancy": 1.0404682442304883e-16,
+      "envelope": 0.0028050745396273344,
+      "omitted_jump_error": 0.0018207859872060896
+    },
+    {
+      "mu": 0.8,
+      "k": [
+        40.0,
+        -20.0,
+        10.0
+      ],
+      "frequency_sign": 1.0,
+      "rotating": true,
+      "direct": [
+        0.0014719034502920605,
+        0.00013659963525753174
+      ],
+      "integrated_by_parts": [
+        0.0014719034502919668,
+        0.00013659963525750147
+      ],
+      "discrepancy": 9.844630727478449e-17,
+      "envelope": 0.004132175242985496,
+      "omitted_jump_error": 0.001478187201211263
+    }
+  ],
+  "straight_path_norms": [
+    {
+      "T": 0.5,
+      "speed": 0.0,
+      "parallel_norm_squared": 0.8488263631567751,
+      "perpendicular_norm_squared": 0.8488263631567751,
+      "coarse_norm_squared": 1.441012389579915,
+      "stationary_norm_squared": 0.8488263631567752
+    },
+    {
+      "T": 0.5,
+      "speed": 0.2,
+      "parallel_norm_squared": 0.9803232359819963,
+      "perpendicular_norm_squared": 0.8913917074594822,
+      "coarse_norm_squared": 2.814477323398271,
+      "stationary_norm_squared": 0.8488263631567752
+    },
+    {
+      "T": 0.5,
+      "speed": 0.65,
+      "parallel_norm_squared": 4.387829584587966,
+      "perpendicular_norm_squared": 1.6238233902293218,
+      "coarse_norm_squared": 33.60961841585809,
+      "stationary_norm_squared": 0.8488263631567752
+    },
+    {
+      "T": 0.5,
+      "speed": 0.9,
+      "parallel_norm_squared": 59.135892554632655,
+      "perpendicular_norm_squared": 5.701847205652182,
+      "coarse_norm_squared": 1441.012389579916,
+      "stationary_norm_squared": 0.8488263631567752
+    },
+    {
+      "T": 1.0,
+      "speed": 0.0,
+      "parallel_norm_squared": 0.10610329539459688,
+      "perpendicular_norm_squared": 0.10610329539459688,
+      "coarse_norm_squared": 0.18012654869748937,
+      "stationary_norm_squared": 0.1061032953945969
+    },
+    {
+      "T": 1.0,
+      "speed": 0.2,
+      "parallel_norm_squared": 0.12254040449774954,
+      "perpendicular_norm_squared": 0.11142396343243527,
+      "coarse_norm_squared": 0.35180966542478387,
+      "stationary_norm_squared": 0.1061032953945969
+    },
+    {
+      "T": 1.0,
+      "speed": 0.65,
+      "parallel_norm_squared": 0.5484786980734957,
+      "perpendicular_norm_squared": 0.20297792377866522,
+      "coarse_norm_squared": 4.201202301982261,
+      "stationary_norm_squared": 0.1061032953945969
+    },
+    {
+      "T": 1.0,
+      "speed": 0.9,
+      "parallel_norm_squared": 7.391986569329082,
+      "perpendicular_norm_squared": 0.7127309007065228,
+      "coarse_norm_squared": 180.1265486974895,
+      "stationary_norm_squared": 0.1061032953945969
+    },
+    {
+      "T": 2.0,
+      "speed": 0.0,
+      "parallel_norm_squared": 0.01326291192432461,
+      "perpendicular_norm_squared": 0.01326291192432461,
+      "coarse_norm_squared": 0.02251581858718617,
+      "stationary_norm_squared": 0.013262911924324612
+    },
+    {
+      "T": 2.0,
+      "speed": 0.2,
+      "parallel_norm_squared": 0.015317550562218693,
+      "perpendicular_norm_squared": 0.013927995429054409,
+      "coarse_norm_squared": 0.043976208178097984,
+      "stationary_norm_squared": 0.013262911924324612
+    },
+    {
+      "T": 2.0,
+      "speed": 0.65,
+      "parallel_norm_squared": 0.06855983725918696,
+      "perpendicular_norm_squared": 0.025372240472333153,
+      "coarse_norm_squared": 0.5251502877477826,
+      "stationary_norm_squared": 0.013262911924324612
+    },
+    {
+      "T": 2.0,
+      "speed": 0.9,
+      "parallel_norm_squared": 0.9239983211661352,
+      "perpendicular_norm_squared": 0.08909136258831535,
+      "coarse_norm_squared": 22.51581858718619,
+      "stationary_norm_squared": 0.013262911924324612
+    }
+  ],
+  "rotating_velocity_readout": {
+    "adjacent_average_difference": 0.005202777229624568,
+    "triangular_projected_acceleration": -0.015003346131673543,
+    "triangular_geometry_term": 0.02020612336129812,
+    "geometry_upper_bound": 0.08373856698081236
+  },
+  "max_IBP_discrepancy": 1.561100420767837e-15,
+  "fixture_bounds": {
+    "T": 1.2,
+    "vmax": 0.1947408534437497,
+    "A": 0.11827239745604212,
+    "J": 0.19651999999999997,
+    "delta": 0.8052591465562503,
+    "Bfixed": 5.892451780922763,
+    "Brot": 8.680212602425053
+  },
+  "scope": "Conditional moving-path energy functional under a frozen stable flat KG operator. No measured energy, path calibration, fitted data or independent observation."
+}

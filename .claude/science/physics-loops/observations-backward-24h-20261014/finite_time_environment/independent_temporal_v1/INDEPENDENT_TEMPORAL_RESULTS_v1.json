@@ -1,0 +1,219 @@
+{
+  "checks_passed": 58,
+  "checks": [
+    "independent_partial_fraction_identity",
+    "real_data_q_0.0_0.0",
+    "real_data_p_0.0_0.0",
+    "isotropic_energy_Gram_0.0_0.0",
+    "Riesz_observable_Gram_0.0_0.0",
+    "full_vector_norm_attained_0.0_0.0",
+    "real_data_q_0.0_0.9",
+    "real_data_p_0.0_0.9",
+    "isotropic_energy_Gram_0.0_0.9",
+    "Riesz_observable_Gram_0.0_0.9",
+    "full_vector_norm_attained_0.0_0.9",
+    "time_shift_norm_invariance_0.0",
+    "gamma_partial_fraction_norm_0.0",
+    "real_data_q_0.6_0.0",
+    "real_data_p_0.6_0.0",
+    "isotropic_energy_Gram_0.6_0.0",
+    "Riesz_observable_Gram_0.6_0.0",
+    "full_vector_norm_attained_0.6_0.0",
+    "real_data_q_0.6_0.9",
+    "real_data_p_0.6_0.9",
+    "isotropic_energy_Gram_0.6_0.9",
+    "Riesz_observable_Gram_0.6_0.9",
+    "full_vector_norm_attained_0.6_0.9",
+    "time_shift_norm_invariance_0.6",
+    "gamma_partial_fraction_norm_0.6",
+    "real_data_q_1.7_0.0",
+    "real_data_p_1.7_0.0",
+    "isotropic_energy_Gram_1.7_0.0",
+    "Riesz_observable_Gram_1.7_0.0",
+    "full_vector_norm_attained_1.7_0.0",
+    "real_data_q_1.7_0.9",
+    "real_data_p_1.7_0.9",
+    "isotropic_energy_Gram_1.7_0.9",
+    "Riesz_observable_Gram_1.7_0.9",
+    "full_vector_norm_attained_1.7_0.9",
+    "time_shift_norm_invariance_1.7",
+    "gamma_partial_fraction_norm_1.7",
+    "asymmetric_H1_derivative_norm",
+    "massless_asymmetric_Parseval",
+    "smooth_Riesz_approximation_bound_0.1",
+    "smooth_Riesz_approximation_bound_0.02",
+    "smooth_Riesz_approximation_bound_0.004",
+    "smooth_Riesz_approaches_exact_norm",
+    "smooth_box_positive_energy_16.0",
+    "smooth_box_exceeds_triangle_bound_16.0",
+    "smooth_box_observable_quadrature",
+    "smooth_box_energy_quadrature",
+    "smooth_box_positive_energy_64.0",
+    "smooth_box_exceeds_triangle_bound_64.0",
+    "smooth_box_positive_energy_256.0",
+    "smooth_box_exceeds_triangle_bound_256.0",
+    "smooth_box_fixed_energy_growth",
+    "AC_nonsmooth_velocity_identity_0.7",
+    "conditional_count_error_saturation_0.7",
+    "constant_bias_premise_is_needed_0.7",
+    "AC_nonsmooth_velocity_identity_2.0",
+    "conditional_count_error_saturation_2.0",
+    "constant_bias_premise_is_needed_2.0"
+  ],
+  "asymmetric_weight_exact_norm": [
+    {
+      "mu": 0.0,
+      "shift": 0.0,
+      "expected_norm_squared": 0.006790610905254203,
+      "Gram_max_error": 6.852157730730561e-17,
+      "normalized_full_vector": [
+        0.022023706229642472,
+        0.044047412459284965,
+        -0.06607111868892633
+      ],
+      "normalized_full_vector_norm": 0.08240516309828017,
+      "imaginary_residual": 4.5974723115547976e-20
+    },
+    {
+      "mu": 0.0,
+      "shift": 0.9,
+      "expected_norm_squared": 0.006790610905254203,
+      "Gram_max_error": 1.205632815981893e-16,
+      "normalized_full_vector": [
+        0.022023706229642375,
+        0.04404741245928478,
+        -0.06607111868892605
+      ],
+      "normalized_full_vector_norm": 0.08240516309827982,
+      "imaginary_residual": 6.28891592967398e-20
+    },
+    {
+      "mu": 0.6,
+      "shift": 0.0,
+      "expected_norm_squared": 0.004668544997362265,
+      "Gram_max_error": 1.2576745200840738e-16,
+      "normalized_full_vector": [
+        0.018261092514183713,
+        0.03652218502836744,
+        -0.05478327754255359
+      ],
+      "normalized_full_vector_norm": 0.06832675169625979,
+      "imaginary_residual": 2.2667734218093328e-20
+    },
+    {
+      "mu": 0.6,
+      "shift": 0.9,
+      "expected_norm_squared": 0.004668544997362265,
+      "Gram_max_error": 2.766883944187227e-16,
+      "normalized_full_vector": [
+        0.018261092514183862,
+        0.03652218502836774,
+        -0.05478327754255405
+      ],
+      "normalized_full_vector_norm": 0.06832675169626035,
+      "imaginary_residual": 5.369070480161055e-20
+    },
+    {
+      "mu": 1.7,
+      "shift": 0.0,
+      "expected_norm_squared": 0.0022390019091424354,
+      "Gram_max_error": 1.3877787819043448e-17,
+      "normalized_full_vector": [
+        0.01264629225488169,
+        0.02529258450976338,
+        -0.03793887676464394
+      ],
+      "normalized_full_vector_norm": 0.04731809283077926,
+      "imaginary_residual": 4.0307533778192224e-20
+    },
+    {
+      "mu": 1.7,
+      "shift": 0.9,
+      "expected_norm_squared": 0.0022390019091424354,
+      "Gram_max_error": 4.0332320816952275e-17,
+      "normalized_full_vector": [
+        0.012646292254881786,
+        0.025292584509763575,
+        -0.03793887676464425
+      ],
+      "normalized_full_vector_norm": 0.04731809283077963,
+      "imaginary_residual": 3.9389417546803207e-20
+    }
+  ],
+  "smooth_Riesz_approximants": [
+    {
+      "delta": 0.1,
+      "Lambda": 12.0,
+      "norm_ratio": 0.07884093535278404,
+      "exact_norm": 0.08240516309828046
+    },
+    {
+      "delta": 0.02,
+      "Lambda": 60.0,
+      "norm_ratio": 0.0816819838481504,
+      "exact_norm": 0.08240516309828046
+    },
+    {
+      "delta": 0.004,
+      "Lambda": 300.0,
+      "norm_ratio": 0.0822600395968981,
+      "exact_norm": 0.08240516309828046
+    }
+  ],
+  "Schwartz_box_witnesses": [
+    {
+      "Lambda": 16.0,
+      "delta": 0.2,
+      "original_twice_energy": 0.08456182307271247,
+      "normalized_energy": 0.5,
+      "normalized_observable": 0.4115133214060452,
+      "triangle_bound_for_same_energy": 0.32573500793527993
+    },
+    {
+      "Lambda": 64.0,
+      "delta": 0.2,
+      "original_twice_energy": 0.33853632051123794,
+      "normalized_energy": 0.5,
+      "normalized_observable": 0.8229777058840668,
+      "triangle_bound_for_same_energy": 0.32573500793527993
+    },
+    {
+      "Lambda": 256.0,
+      "delta": 0.2,
+      "original_twice_energy": 1.3544344925642755,
+      "normalized_energy": 0.5,
+      "normalized_observable": 1.6459309355066338,
+      "triangle_bound_for_same_energy": 0.32573500793527993
+    }
+  ],
+  "absolutely_continuous_adjacent_readouts": [
+    {
+      "T": 0.7,
+      "s0": 0.3,
+      "triangular_acceleration": -0.16991999999999968,
+      "adjacent_average": -0.16991999999999358,
+      "count_error": -0.025457168314323847,
+      "count_error_bound": 0.02545716831431117,
+      "drifting_bias_effect": -0.13076923076923078
+    },
+    {
+      "T": 2.0,
+      "s0": -0.4,
+      "triangular_acceleration": -0.1699199999999999,
+      "adjacent_average": -0.16992000000000118,
+      "count_error": -0.003118503118509558,
+      "count_error_bound": 0.0031185031185031182,
+      "drifting_bias_effect": -0.13076923076923078
+    }
+  ],
+  "source_sha256": {
+    "TEMPORAL_FORCE_HISTORY_WORKING_v1.md": "57632b37c2c54f7cf12c48ac54429ffc119bbd3362fce39ffaa8d4a556a36625",
+    "temporal_force_history_check_v1.py": "8bb6a06ebb73c04b865fcd47ca7ed63b4e6392419b0090706448296f0474eac9",
+    "TEMPORAL_FORCE_RESULTS_v1.json": "6f61d6f2d5e1f7c292e8637aecdd2065cd1fec841c6a86c41ee95f5cfa484755",
+    "TEMPORAL_PRECHECK_v1.md": "84024de208522dc17dbbe5fc88e88a9713cdc1135d7cfe3c2e6982b0f4fa8953",
+    "TEMPORAL_CONTROL_ORACLES_v1.md": "65b3ad93621838ecea0c6300f746ab2677b6a2624b242f5691b15a0290ac8f0f",
+    "independent_temporal_check_v1.py": "31c4fa5f862b1be33cc22f8ed302410a3199fe59fbcae5fee5a3c718809ee21a"
+  },
+  "elapsed_seconds": 0.116501959040761,
+  "scope": "Independent mathematical controls for supplied fixed-point flat KG functional; no author code imports, actual force/count identification, physical energy budget or moving-worldline result. Numerical integrals are not interval certificates."
+}

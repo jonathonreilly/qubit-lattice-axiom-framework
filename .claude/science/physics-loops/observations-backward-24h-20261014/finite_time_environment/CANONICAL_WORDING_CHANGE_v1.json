@@ -1,0 +1,7 @@
+{
+  "before_sha256": "6b961015a75b9655623ddffd2c43d1ead6100d61c506208d772fe7cde58509dd",
+  "after_sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+  "change": "Internal references now point to proofs above; control count accurately labels canonical runner rather than the49-control original working force script; spacing. No formulas or executable scientific source changed.",
+  "old_note": "CANONICAL_NOTE_BEFORE_WORDING_v1.md",
+  "old_cache": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/HISTORY_CACHE_BEFORE_WORDING_v1.txt"
+}

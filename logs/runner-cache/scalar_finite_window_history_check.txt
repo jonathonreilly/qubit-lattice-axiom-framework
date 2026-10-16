@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/scalar_finite_window_history_check.py
+runner_sha256: 0e8f922fc17eee7b617b96c387d571952f8b819ab594e18bb409721a36cb7027
+input_fingerprint_sha256: 2fbab4a4f5dbdfcd344f2f45154bccf6693fa889aaa4ef131ce8acd764b3303d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.29
+status: ok
+----- stdout -----
+{
+  "actual_current_surface_status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "checks": {
+    "temporal": 70,
+    "moving": 133,
+    "force_energy": 57
+  },
+  "source_sha256": {
+    "scripts/scalar_finite_window_history_check.py": "0e8f922fc17eee7b617b96c387d571952f8b819ab594e18bb409721a36cb7027",
+    "docs/SCALAR_FINITE_WINDOW_INITIAL_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+    "scripts/scalar_temporal_history_controls.py": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+    "scripts/scalar_moving_history_controls.py": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+    "scripts/scalar_force_energy_controls.py": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353"
+  },
+  "product_sha256": {
+    "temporal": "5f735c2c9b3210301686b9e47438ccdf5007f7f69095be0086d693ca13e54b1c",
+    "moving": "343e521a5b4fa81ee0d6c5c951d749aa6c3a81908786d90b6176f3dcf4902811",
+    "force_energy": "e268f5779357059665ac9d6cc8ba806c298067f6bb2d55ca207c2cfa29a548a9"
+  },
+  "measured_gravity_tests": 0,
+  "fitted_parameters": 0,
+  "scope": [
+    "Flat stable free-field operator and prescribed regular subluminal paths are premises.",
+    "Finite-window bounds use a quantitative scalar energy input; no initial profile is selected.",
+    "Conformal test-particle force and constant-frame energy normalization are derived conditionally.",
+    "Actual clock/ray/trajectory calibration, nonlinear forcing error and physical energy budget remain open.",
+    "Finite control witnesses do not assert theory-wide impossibility or exhaust alternative routes."
+  ]
+}
+
+----- stderr -----
+

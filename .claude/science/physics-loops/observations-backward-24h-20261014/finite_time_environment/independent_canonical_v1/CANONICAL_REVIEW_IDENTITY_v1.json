@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "kind": "focused_canonical_scientific_confirmation",
+  "created_at": "2026-10-15T01:53:53.047357+00:00",
+  "reviewer_session": "/root/localized_history_check",
+  "finding": "No unresolved discrepancy within the stated conditional mathematical scope; empirical application and full delivery binding remain outside this confirmation.",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_REVIEW_v1.md",
+    "sha256": "d5f4153396c6d5740601cbf325dcbf3caec8c6f09a748a9d34871858bb7872ae"
+  },
+  "source_coverage": [
+    {
+      "path": "docs/SCALAR_FINITE_WINDOW_INITIAL_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+      "line_count": 508
+    },
+    {
+      "path": "scripts/scalar_finite_window_history_check.py",
+      "sha256": "dc2732e431c4c7427361004681136bc5fb89dbcff7c3c2bbaff58ac65b859b40",
+      "line_count": 55
+    },
+    {
+      "path": "scripts/scalar_temporal_history_controls.py",
+      "sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+      "line_count": 122
+    },
+    {
+      "path": "scripts/scalar_moving_history_controls.py",
+      "sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+      "line_count": 116
+    },
+    {
+      "path": "scripts/scalar_force_energy_controls.py",
+      "sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+      "line_count": 116
+    }
+  ],
+  "all_five_final_science_sources_covered": true,
+  "canonical_runner_reexecuted_by_this_reviewer": false,
+  "independent_controls_previously_executed_by_this_reviewer": {
+    "temporal": 58,
+    "moving": 61
+  },
+  "peer_evidence_controls": {
+    "force_preimplementation": 253,
+    "targeted_canonical_symbolic": 6
+  },
+  "author_final_source_control_counts": {
+    "temporal": 70,
+    "moving": 133,
+    "force_energy": 57
+  },
+  "author_mutation_evidence": {
+    "final_assertion_rejections": 29,
+    "unchanged_cases_reused": 18,
+    "force_cases_rerun_by_author": 11,
+    "original_survivors_preserved": 1
+  },
+  "mechanical_final_binding": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_FINAL_BINDING_v1.json",
+    "sha256": "85118a487115a652b5d8560431117952478a8f7ee42cf27ee54cc39f6aec084e"
+  },
+  "source_dispositions": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_ORIGINAL_DISPOSITIONS_v1.json",
+    "sha256": "876ed8addfbcb897f93c475bb8f5cce07e8afe50532102e66b386e779b4e9da2",
+    "json_pointer": "/original_dispositions"
+  },
+  "references": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_temporal_v1/TEMPORAL_REVIEW_v1.md",
+      "sha256": "a1eff40d8c53d2d0fd37d4aa9e2e1e6f0f8ab61722ead80ad43db30effd07dd5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_temporal_v1/TEMPORAL_REVIEW_IDENTITY_v1.json",
+      "sha256": "a25444c7933c86a05de8e6ef52ec69fa43a123cf38885c3b4267d7a6812ccef4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_temporal_v1/INDEPENDENT_TEMPORAL_RESULTS_v1.json",
+      "sha256": "dc99933002abdf9a9717a70f8d03371b4ec07c3a6979eaec9757d8d4394e12e1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_moving_v1/MOVING_REVIEW_v1.md",
+      "sha256": "e6562c3c4e30749f5d524064f532e8c1bc018511416a291be231426a6327eb3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_moving_v1/MOVING_REVIEW_IDENTITY_v1.json",
+      "sha256": "1c20fffad652b5d1dfec7421d4ecfe5bc53832a92fb9f91dd97c727934bb907b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_moving_v1/INDEPENDENT_MOVING_RESULTS_v1.json",
+      "sha256": "f61a79f3b81fe34c1f05797fe28a117f319cea8c67efc7560c6aa5ab3de1dc7b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_force_bridge_v1/REVIEW_FORCE_ENERGY_BRIDGE_v1.md",
+      "sha256": "6243e8b238304bd4a9f791a5cff8db1766df6132599d424216f4c13ef42a7d15"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_force_bridge_v1/REVIEW_IDENTITY_v1.json",
+      "sha256": "6c44332019493b3948240ac4a6d1a18a781b2d24ca264b05fe8755831ecf0589"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_force_bridge_v1/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "032548603c90ac0809ed8f832f6315c6acf34db5ddae667f5bf8a24f7f860316"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_force_bridge_v1/CANONICAL_FORCE_ENERGY_CONFIRMATION_v1.md",
+      "sha256": "8a4adfd9e1559679b8af5864cd5ff968e1031057b3ddc739e59c01ae5b7d305a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_force_bridge_v1/CANONICAL_FORCE_ENERGY_IDENTITY_v1.json",
+      "sha256": "f91fa00777ff29da6c90a8e141b92c7c3469e9ca367a32b1829cc53b344a9965"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_force_bridge_v1/CANONICAL_ALGEBRA_CONTROLS_v1.json",
+      "sha256": "60bbcc11e9ee6cb1b68ba65c6897ff1def9bf9a5a6b7d56e49b66aaa66cf2b87"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_CORRESPONDENCE_ATTEMPT_v1.json",
+      "sha256": "78ea473f4b2e6a0e9fbab856f185318a0e629a9d3b8e62b2589e16efbd5bbed3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_CORRESPONDENCE_v2.json",
+      "sha256": "7ed1ebe81b8e9e7ed83d696fb0a5381427c793c6cd38f0aa7a1cfe68b5fa0e45"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/scalar_temporal_history_controls_adaptation.diff",
+      "sha256": "5f45769aac5bbe5a7a8bd13727f3cee9350b27a92550d0c283ee5e094d4b04db"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/scalar_moving_history_controls_adaptation.diff",
+      "sha256": "e0862fcdda9c5f18e2e88d56d906f3698069487a06522ee2d3bfe7d6f37a8aed"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/scalar_force_energy_controls_final_adaptation.diff",
+      "sha256": "921ea9075b4d9c334cd97f0b9058e39ebedd50288e77e09dd1d029d3ba31a7a9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/check_canonical_binding_v1.py",
+      "sha256": "fafe5317f1dd7daf6634a722d1609edf810d48a9a34f40c6301ded302996c420"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/independent_canonical_v1/CANONICAL_FINAL_BINDING_v1.json",
+      "sha256": "85118a487115a652b5d8560431117952478a8f7ee42cf27ee54cc39f6aec084e"
+    }
+  ],
+  "fitted_parameters": 0,
+  "measured_gravity_tests": 0,
+  "formal_audit_verdict_applied": false,
+  "not_reviewed": [
+    "Git index or publication identity",
+    "graph-manifest delta",
+    "remote PR state",
+    "actual observations or physical calibration"
+  ]
+}

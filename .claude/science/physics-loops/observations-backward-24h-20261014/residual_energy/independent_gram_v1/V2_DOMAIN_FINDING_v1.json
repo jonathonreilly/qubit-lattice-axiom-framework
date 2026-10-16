@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-10-15T02:24:35.541798+00:00",
+  "reviewer": "/root/localized_history_check",
+  "source": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/DERIVATION_v2.md",
+  "source_sha256": "1e31731ea505da305b4a6250a63aa0b2b6c85909eb4f89b56e244ee37e9e02e1",
+  "snapshot": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/residual_energy/independent_gram_v1/DERIVATION_v2_SNAPSHOT.md",
+  "finding": "The weighted error-ball paragraph needs B positive definite for the written inverse square root. The componentwise contrast bound needs q>0 and positive c^T B c, or a separate zero-denominator compatibility rule.",
+  "scope": "Domain clarification for new v2 error formulas; unchanged v1 and its 110 controls are not amended.",
+  "positive_contrast_rule": "If q>0 and c^T B c>0, the displayed lower bound applies. For zero c^T B c, the supplied model instead requires |c^T y| <= sum |c_i| eta_i for compatibility.",
+  "singular_whitening_example": {
+    "B": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "Z": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "C": [
+      [
+        1,
+        0
+      ]
+    ],
+    "C_B_CT": [
+      [
+        1
+      ]
+    ],
+    "point": "Positive quotient Gram alone does not imply invertibility of raw B."
+  },
+  "reported_to_parent": true,
+  "author_code_read": false
+}

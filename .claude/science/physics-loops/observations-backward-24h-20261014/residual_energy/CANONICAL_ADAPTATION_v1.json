@@ -1,0 +1,18 @@
+{
+  "working_sources": [
+    "DERIVATION_v3.md",
+    "INERTIAL_DERIVATION_v1.md",
+    "residual_energy_check_v1.py",
+    "inertial_response_check_v1.py",
+    "development_timing_v2.py"
+  ],
+  "canonical_files": {
+    "docs/SCALAR_COUNT_KERNEL_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "0dba64852f9e83d748624326f8834f69dbf382e5a6de0eabe333e16040f37bd5",
+    "scripts/scalar_count_kernel_energy_check.py": "ada23f9ae989333afb0a50e2b0fe168ad50002da367758e124d2f7226fc3fa42",
+    "scripts/scalar_count_energy_controls.py": "5fd2a9d68a95ba756daf908b047b928bc6f8e6c62327973570f35e3edb9fcf2a",
+    "scripts/scalar_inertial_energy_controls.py": "64f5480ff6baf80ba54647d4eace0b0fe26778fa987dddc957f8afb85d75b75a",
+    "scripts/cassini_count_window_controls.py": "2e7492a2ff7ad0c701c9b3002a538715c39b9a52afb9afd89e54fa370092987d",
+    "scripts/cassini_count_window_inputs.json": "9b99d155442fb364df5bd32749d7f8ab2c0f355c87b4d2fc73affa1f69efe891"
+  },
+  "adaptation": "Preserved originals. Numerical controls wrapped in run_checks with result metadata owned by primary; timing output path made caller-supplied, two-input manifest pinned; canonical note integrates complete arguments and explicit Riesz, singular lower-bound and H1-density proofs. No new scientific datum or physical fit."
+}

@@ -1,0 +1,14 @@
+{
+  "confirmed_at": "2026-10-15T01:49:31.763075+00:00",
+  "reviewer": "/root/force_energy_bridge_check",
+  "prior_note_sha256": "6b961015a75b9655623ddffd2c43d1ead6100d61c506208d772fe7cde58509dd",
+  "final_note_sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+  "unchanged_force_helper_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+  "change_record_sha256": "3240a3e913cb0226795fb3748cadf3f21e155af0ab279d4e6670982b8230f36f",
+  "prior_confirmation_sha256": "8a4adfd9e1559679b8af5864cd5ff968e1031057b3ddc739e59c01ae5b7d305a",
+  "report_sha256": "cef8165703b3ef5931b2757f0f9cbe56c30540ce2d43eadb4ec13cb3f2cd4e6e",
+  "complete_diff_read": true,
+  "formulas_or_code_changed": false,
+  "numerical_rerun": false,
+  "new_discrepancies": []
+}

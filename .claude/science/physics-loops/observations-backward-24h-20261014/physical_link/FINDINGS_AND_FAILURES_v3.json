@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-14T23:37:34.435651+00:00",
+  "author_initial_run": {
+    "exit_code": 1,
+    "failure": "Source receipt path . was relative while __file__ was absolute; ValueError during output identity construction after mathematical and metadata checks. No completed PASS output claimed.",
+    "source_sha256": "8d7a1ec26e1940a92118f8bb81d9bd8f5245753c25d363f21b98970a1dc85441",
+    "repair": "Resolve repo path at argument entry in v2."
+  },
+  "independent_findings": [
+    {
+      "source_sha256": "827562589f7386ec797237e83beb8c94464771688b732aa8d6540cb426f83d6b",
+      "finding": "Section5 says counts give Delta p while p=phase/F_d(t). For time-varying F_d this needs initial phase. Use fixed-normalization q=phase/F_ref and B=diag(F_d/F_ref)A instead.",
+      "status": "Corrected finite-count v2; same independent reviewer confirmed 4007 mathematical controls, final source SHA0bcb450a."
+    },
+    {
+      "finding": "2018 guide locator is section3.6.2.2, printed pp64-67, not section3.8.",
+      "status": "correct in v2"
+    },
+    {
+      "source": "INITIAL_PHASE_ELIMINATION_v1.md",
+      "sha256": "af50288fa56e9a6e18f01bbf12956ec85d1a33f64b39182e470cec159e9e93ff",
+      "finding": "Joint bound using observed counts must bound count-error coefficients uniformly over true operator family; nominal coefficients can underbound.",
+      "repair": "v2 supplies exact decomposition, counterexample and uniform affine-family coefficient bound.",
+      "status": "Same independent reviewer read v2 in full and confirmed exact joint decomposition and uniform true-family count bound."
+    },
+    {
+      "source": "INITIAL_PHASE_ELIMINATION_v2.md",
+      "sha256": "e1966dbf396ff12892818b4dafd585e8ff3473c96b421d89d7a100c6f16ec856",
+      "finding": "Supplied covariance alone does not imply an unbiased estimate; nonzero error means preserve covariance.",
+      "repair": "v3 calls it minimum-variance unit-response nuisance-annihilating and states zero-mean or removed-known-mean requirement, with exact finite-distribution controls.",
+      "status": "Resolved in independent FINAL_INITIAL_PHASE_CHIRP_CONFIRMATION_v3.md; canonical source review separately in progress."
+    }
+  ],
+  "updated_at": "2026-10-14T23:49:25.827893+00:00",
+  "technical_failures": [
+    {
+      "failure": "One functions.exec source had an unescaped Markdown backtick in a JavaScript template. Parse rejected before any command or file change.",
+      "repair": "Use a marker in the controlled source assembly; replaced by character96 inside Python."
+    },
+    {
+      "failure": "Two mutation text selectors were ambiguous/absent, so two mutants were not executed.",
+      "repair": "Explicit exact selectors in v2; both produced intended AssertionError. Original receipts retained."
+    }
+  ]
+}

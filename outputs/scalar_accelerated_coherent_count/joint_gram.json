@@ -1,0 +1,228 @@
+{
+  "check_context": "author controls, focused independent evidence separate",
+  "source_sha256": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+  "checks_passed": 15,
+  "checks": [
+    {
+      "name": "rest_original_wave_vs_time",
+      "max_absolute_error": 3.3500702212307942e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "rest_positive_definite_fixture",
+      "minimum_eigenvalue": 0.05990522060761441
+    },
+    {
+      "name": "inertial_original_wave_vs_time",
+      "max_absolute_error": 7.606165697282563e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "inertial_positive_definite_fixture",
+      "minimum_eigenvalue": 0.05552444482135556
+    },
+    {
+      "name": "curved_original_wave_vs_time",
+      "max_absolute_error": 5.633493671552969e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "curved_positive_definite_fixture",
+      "minimum_eigenvalue": 0.053867231267756804
+    },
+    {
+      "name": "curved_time_angular_refinement",
+      "max_absolute_error": 3.913536161803677e-15,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "curved_original_wave_cutoff_refinement",
+      "max_absolute_error": 2.8754776337791554e-13,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "stationary_closed_reduction",
+      "max_absolute_error": 1.1657341758564144e-15,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "reject_reverse_clock_force_sign",
+      "max_gram_discrepancy": 0.011662879945390198
+    },
+    {
+      "name": "reject_omit_acceleration_derivative",
+      "max_gram_discrepancy": 0.004170763813833793
+    },
+    {
+      "name": "separated_paths_common_phase_vs_original_wave",
+      "max_absolute_error": 8.401390694245947e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "separated_paths_refinement",
+      "max_absolute_error": 1.6177466310995925e-10,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "reject_independent_path_budgets",
+      "max_gram_discrepancy": 0.0698091552396583
+    },
+    {
+      "name": "reject_equal_coordinate_cross_terms",
+      "max_gram_discrepancy": 0.2308083290013766
+    }
+  ],
+  "values": {
+    "rest": {
+      "time_gram": [
+        [
+          0.22622815753616593,
+          -0.045914248491089014
+        ],
+        [
+          -0.04591424849108902,
+          0.07258007023107356
+        ]
+      ],
+      "original_wave_gram_k120": [
+        [
+          0.22622815753281586,
+          -0.045914248491016135
+        ],
+        [
+          -0.04591424849101614,
+          0.07258007022904388
+        ]
+      ]
+    },
+    "inertial": {
+      "time_gram": [
+        [
+          0.2180332995342126,
+          -0.047160425867870004
+        ],
+        [
+          -0.047160425867870004,
+          0.06921050378699603
+        ]
+      ],
+      "original_wave_gram_k120": [
+        [
+          0.21803329952660644,
+          -0.04716042586788379
+        ],
+        [
+          -0.04716042586788379,
+          0.06921050378279124
+        ]
+      ]
+    },
+    "curved": {
+      "time_gram": [
+        [
+          0.21472677445788174,
+          -0.050923019849444355
+        ],
+        [
+          -0.050923019849444355,
+          0.06998784120584406
+        ]
+      ],
+      "original_wave_gram_k120": [
+        [
+          0.21472677445224825,
+          -0.05092301984945243
+        ],
+        [
+          -0.05092301984945244,
+          0.06998784120269805
+        ]
+      ]
+    },
+    "reverse_clock_force_sign": [
+      [
+        0.21398985563944406,
+        -0.03926013990405509
+      ],
+      [
+        -0.03926013990405508,
+        0.06827600661000444
+      ]
+    ],
+    "omit_acceleration_derivative": [
+      [
+        0.21789766659015447,
+        -0.046752256035611485
+      ],
+      [
+        -0.046752256035611485,
+        0.06948278068916139
+      ]
+    ],
+    "independent_path_budgets": [
+      [
+        0.31994289394224423,
+        -0.0295353515126778
+      ],
+      [
+        -0.0295353515126778,
+        0.09518346403994808
+      ]
+    ],
+    "equal_coordinate_cross_terms": [
+      [
+        0.6205603781832791,
+        -0.03462765349762221
+      ],
+      [
+        -0.03462765349762221,
+        0.011198054592935075
+      ]
+    ],
+    "two_paths": {
+      "common_phase_gram": [
+        [
+          0.38975204918190254,
+          -0.03787441962429224
+        ],
+        [
+          -0.03787441962429224,
+          0.06125215195206717
+        ]
+      ],
+      "original_wave_gram": [
+        [
+          0.38975204917350115,
+          -0.03787441962429814
+        ],
+        [
+          -0.03787441962429814,
+          0.0612521519477358
+        ]
+      ],
+      "offsets": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.64,
+          -0.29,
+          0.21
+        ]
+      ],
+      "factors": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.7,
+          -0.6
+        ]
+      ]
+    }
+  },
+  "scope": "Anchored free massless field, prescribed synthetic timelike paths and smooth compact windows. No archive sample, observation fit, independent empirical test, massive field claim, or certified quadrature enclosure."
+}

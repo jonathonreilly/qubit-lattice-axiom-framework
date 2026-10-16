@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-15T03:33:03.046503+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "role": "independent pre-author-access mathematics, not formal audit",
+  "author_accelerated_drafts_or_code_read": false,
+  "author_exposure": "Only existence/titles/identities of source files and acknowledgement of independently reported background-domain finding; no source content read yet.",
+  "files": {
+    "PURE_FORCE_PRECHECK_v1.md": "133bd9cb829e57fdf266eec26781ea1b7dd0d5592200d748152fe97d834b6577",
+    "pure_force_check_v1.py": "0984c9e09eb64ce318d049444d4af64a1fdfee56e3f725a289933e5a98e63c8d",
+    "PURE_FORCE_FREEZE_v1.json": "999cba5e80ca715ed11517e593113939f2b06fda041eff18f14345cdd70ef14a",
+    "PURE_FORCE_RESULTS_v1.json": "81f9adb7290283578ca731375dce2e32b2377d50f34b68db150d0a0a4f18e98b",
+    "PURE_FORCE_RUN_v1.stdout": "81f9adb7290283578ca731375dce2e32b2377d50f34b68db150d0a0a4f18e98b",
+    "PURE_FORCE_RUN_v1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "JOINT_FIELD_FORCE_PRECHECK_v1.md": "3e7a62bcac1c3268f9b8a8a2141aa2ff8a50693bab285332e11e6428b5614d95",
+    "joint_field_force_check_v1.py": "12ea944363278f847fe716510953d994559be8b16b72cbe4d33d542aaa33c7d9",
+    "JOINT_FIELD_FORCE_FREEZE_v1.json": "25be3acf4716d8f47f7236f2f554622c629521d7a73fbefc3be43274ad59e7bb",
+    "JOINT_FIELD_FORCE_RESULTS_v1.json": "d7d38ec759d72ab293cb4dc36f53cde65b78bea952801a8b77c8b3adda37e9fe",
+    "JOINT_FIELD_FORCE_RUN_v1.stdout": "d7d38ec759d72ab293cb4dc36f53cde65b78bea952801a8b77c8b3adda37e9fe",
+    "JOINT_FIELD_FORCE_RUN_v1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "INDEPENDENT_REVIEW_v1.md": "95fb83a8f8642fa4566202e44dfcc86be44236dadb592e8b5cbb40dd774de0c4"
+  },
+  "checks": {
+    "pure_force": 18,
+    "joint_field_force": 27
+  },
+  "failed_controls": 0,
+  "next": "Read exact authorized author sources and preserve any comparison in a separate supplement."
+}

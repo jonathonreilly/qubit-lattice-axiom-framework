@@ -1,0 +1,1003 @@
+{
+  "scope": "Exact format and affine integration checks; nominal reception interval coverage only",
+  "inputs": {
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_odf_c32easc2002_169_0000xmmmv0.lbl": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_development/c32easc2002_169_0000xmmmv0.odf": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/AUTHOR_PDS_ODF_INVENTORY_v1.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/AUTHOR_RAMP_BRIDGE_v1.py": "146e7d4cea4998cebae09883e8746fcf8e766c4c8346c60772fcbbfbc72a8acc",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/AUTHOR_RAMP_RESULTS_v1.json": "1c34fdb5ce4353631fcbc9c511dc6b39a8b922ebedad03eb28a65fe7a5a4edfd",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/check_odf_independent_v1.py": "342ae730577555fccf830fa3e2330a290d5e312cd3c125d610ae514ae5926fa8"
+  },
+  "script_sha256": "442bf49505a85cbaf6986b96de5677efa85d73044a46e17c52678aa2ca32c1f9",
+  "checks_passed_by_family": {
+    "all_ramp_fields": 69,
+    "published_ramp_fields": 69,
+    "whole_ramp_phase": 69,
+    "published_whole_phase": 69,
+    "actual_clipped_ramp_phase": 207,
+    "exact_boundary_difference": 66,
+    "nominal_interval_single_segment": 91664,
+    "every_nominal_interval_exact_phase": 91664,
+    "published_group_summary": 7,
+    "independent_synthetic_probe": 1,
+    "deliberate_mutation_rejected": 8
+  },
+  "failed_checks": [],
+  "synthetic_probe": {
+    "passed_by_family": {
+      "signed_ramp_decode": 1,
+      "frequency_and_time_units": 1,
+      "exact_partition_integral": 16,
+      "exact_clipped_segment": 6,
+      "reject_gap": 1,
+      "reject_overlap": 1,
+      "reject_mixed_station": 1,
+      "reject_mixed_level": 1,
+      "reject_unsorted": 1,
+      "reject_extrapolation_or_nonpositive": 4
+    },
+    "failed": []
+  },
+  "station_diagnostics": [
+    {
+      "station": 25,
+      "records": 23,
+      "gaps": 1,
+      "overlaps": 0,
+      "jumps_at_contiguous_boundary": 7,
+      "boundaries": [
+        {
+          "gap_ns": 0,
+          "difference_numerator": 19,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": -19,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 31754000000000,
+          "difference_numerator": -175337,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 165369,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 2,
+          "difference_denominator": 15625
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": -2,
+          "difference_denominator": 15625
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 17,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": -17,
+          "difference_denominator": 62500
+        }
+      ],
+      "whole_segment_integrals": [
+        {
+          "record": 91870,
+          "numerator": 34979116948218261,
+          "denominator": 125000
+        },
+        {
+          "record": 91871,
+          "numerator": 672675599354577,
+          "denominator": 6250
+        },
+        {
+          "record": 91872,
+          "numerator": 224225199784859,
+          "denominator": 6250
+        },
+        {
+          "record": 91873,
+          "numerator": 34979116948219743,
+          "denominator": 125000
+        },
+        {
+          "record": 91874,
+          "numerator": 5417276422800,
+          "denominator": 1
+        },
+        {
+          "record": 91875,
+          "numerator": 28700100892,
+          "denominator": 1
+        },
+        {
+          "record": 91876,
+          "numerator": 50225176561,
+          "denominator": 1
+        },
+        {
+          "record": 91877,
+          "numerator": 62424158150400,
+          "denominator": 1
+        },
+        {
+          "record": 91878,
+          "numerator": 28700762368,
+          "denominator": 1
+        },
+        {
+          "record": 91879,
+          "numerator": 43051143552,
+          "denominator": 1
+        },
+        {
+          "record": 91880,
+          "numerator": 6959934874240,
+          "denominator": 1
+        },
+        {
+          "record": 91881,
+          "numerator": 34979040041773659,
+          "denominator": 125000
+        },
+        {
+          "record": 91882,
+          "numerator": 1345347151828767,
+          "denominator": 12500
+        },
+        {
+          "record": 91883,
+          "numerator": 448449050609589,
+          "denominator": 12500
+        },
+        {
+          "record": 91884,
+          "numerator": 34979040041774283,
+          "denominator": 125000
+        },
+        {
+          "record": 91885,
+          "numerator": 269098347962368,
+          "denominator": 1
+        },
+        {
+          "record": 91886,
+          "numerator": 28700762368,
+          "denominator": 1
+        },
+        {
+          "record": 91887,
+          "numerator": 44443130526848,
+          "denominator": 1
+        },
+        {
+          "record": 91888,
+          "numerator": 34979068366653957,
+          "denominator": 125000
+        },
+        {
+          "record": 91889,
+          "numerator": 67267466533287,
+          "denominator": 625
+        },
+        {
+          "record": 91890,
+          "numerator": 22422488844429,
+          "denominator": 625
+        },
+        {
+          "record": 91891,
+          "numerator": 34979068366655283,
+          "denominator": 125000
+        },
+        {
+          "record": 91892,
+          "numerator": 4785852124864,
+          "denominator": 1
+        }
+      ]
+    },
+    {
+      "station": 45,
+      "records": 26,
+      "gaps": 1,
+      "overlaps": 0,
+      "jumps_at_contiguous_boundary": 5,
+      "boundaries": [
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 11,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": -11,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 68648000000000,
+          "difference_numerator": -172729,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 162761,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 1,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": -1,
+          "difference_denominator": 62500
+        }
+      ],
+      "whole_segment_integrals": [
+        {
+          "record": 91894,
+          "numerator": 28700791808,
+          "denominator": 1
+        },
+        {
+          "record": 91895,
+          "numerator": 43051187712,
+          "denominator": 1
+        },
+        {
+          "record": 91896,
+          "numerator": 19975751098368,
+          "denominator": 1
+        },
+        {
+          "record": 91897,
+          "numerator": 672674790691299,
+          "denominator": 31250
+        },
+        {
+          "record": 91898,
+          "numerator": 336337386691299,
+          "denominator": 3125
+        },
+        {
+          "record": 91899,
+          "numerator": 112112462230433,
+          "denominator": 3125
+        },
+        {
+          "record": 91900,
+          "numerator": 672674790691299,
+          "denominator": 31250
+        },
+        {
+          "record": 91901,
+          "numerator": 95444483157504,
+          "denominator": 1
+        },
+        {
+          "record": 91902,
+          "numerator": 28700791808,
+          "denominator": 1
+        },
+        {
+          "record": 91903,
+          "numerator": 7397629088512,
+          "denominator": 1
+        },
+        {
+          "record": 91904,
+          "numerator": 33185303073711767,
+          "denominator": 125000
+        },
+        {
+          "record": 91905,
+          "numerator": 672675316609953,
+          "denominator": 6250
+        },
+        {
+          "record": 91906,
+          "numerator": 224225105536651,
+          "denominator": 6250
+        },
+        {
+          "record": 91907,
+          "numerator": 33185303073712581,
+          "denominator": 125000
+        },
+        {
+          "record": 91908,
+          "numerator": 724694993152,
+          "denominator": 1
+        },
+        {
+          "record": 91909,
+          "numerator": 28700100892,
+          "denominator": 1
+        },
+        {
+          "record": 91910,
+          "numerator": 50225176561,
+          "denominator": 1
+        },
+        {
+          "record": 91911,
+          "numerator": 7749203022720,
+          "denominator": 1
+        },
+        {
+          "record": 91912,
+          "numerator": 28700751936,
+          "denominator": 1
+        },
+        {
+          "record": 91913,
+          "numerator": 43051127904,
+          "denominator": 1
+        },
+        {
+          "record": 91914,
+          "numerator": 12865112055312,
+          "denominator": 1
+        },
+        {
+          "record": 91915,
+          "numerator": 2690695414954143,
+          "denominator": 125000
+        },
+        {
+          "record": 91916,
+          "numerator": 672673833977073,
+          "denominator": 6250
+        },
+        {
+          "record": 91917,
+          "numerator": 224224611325691,
+          "denominator": 6250
+        },
+        {
+          "record": 91918,
+          "numerator": 2690695414954149,
+          "denominator": 125000
+        },
+        {
+          "record": 91919,
+          "numerator": 60364856509392,
+          "denominator": 1
+        }
+      ]
+    },
+    {
+      "station": 54,
+      "records": 20,
+      "gaps": 0,
+      "overlaps": 0,
+      "jumps_at_contiguous_boundary": 5,
+      "boundaries": [
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 168473,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 9,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": -9,
+          "difference_denominator": 62500
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 1,
+          "difference_denominator": 15625
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": -1,
+          "difference_denominator": 15625
+        },
+        {
+          "gap_ns": 0,
+          "difference_numerator": 0,
+          "difference_denominator": 1
+        }
+      ],
+      "whole_segment_integrals": [
+        {
+          "record": 91921,
+          "numerator": 28700100892,
+          "denominator": 1
+        },
+        {
+          "record": 91922,
+          "numerator": 43050151338,
+          "denominator": 1
+        },
+        {
+          "record": 91923,
+          "numerator": 16854529991904,
+          "denominator": 1
+        },
+        {
+          "record": 91924,
+          "numerator": 1313060446368,
+          "denominator": 1
+        },
+        {
+          "record": 91925,
+          "numerator": 28700774784,
+          "denominator": 1
+        },
+        {
+          "record": 91926,
+          "numerator": 43051162176,
+          "denominator": 1
+        },
+        {
+          "record": 91927,
+          "numerator": 10439906827680,
+          "denominator": 1
+        },
+        {
+          "record": 91928,
+          "numerator": 3811820300869163,
+          "denominator": 15625
+        },
+        {
+          "record": 91929,
+          "numerator": 269069572993299,
+          "denominator": 2500
+        },
+        {
+          "record": 91930,
+          "numerator": 89689857664433,
+          "denominator": 2500
+        },
+        {
+          "record": 91931,
+          "numerator": 7623640601738479,
+          "denominator": 31250
+        },
+        {
+          "record": 91932,
+          "numerator": 193493448400032,
+          "denominator": 1
+        },
+        {
+          "record": 91933,
+          "numerator": 28700774784,
+          "denominator": 1
+        },
+        {
+          "record": 91934,
+          "numerator": 6206542547040,
+          "denominator": 1
+        },
+        {
+          "record": 91935,
+          "numerator": 134534901917889,
+          "denominator": 1250
+        },
+        {
+          "record": 91936,
+          "numerator": 336337305089448,
+          "denominator": 3125
+        },
+        {
+          "record": 91937,
+          "numerator": 112112435029816,
+          "denominator": 3125
+        },
+        {
+          "record": 91938,
+          "numerator": 672674509589451,
+          "denominator": 6250
+        },
+        {
+          "record": 91939,
+          "numerator": 3271888325376,
+          "denominator": 1
+        },
+        {
+          "record": 91940,
+          "numerator": 301358135232,
+          "denominator": 1
+        }
+      ]
+    }
+  ],
+  "doppler_record_count": 91664,
+  "nominal_receive_intervals_covered": 91664,
+  "nominal_receive_intervals_crossing_boundaries": 0,
+  "receiver_exciter_flags": [
+    1
+  ],
+  "mutations": [
+    {
+      "mutation": "signed_fraction_rate",
+      "original": "rate_i*NS+rate_f",
+      "replacement": "rate_i*NS+abs(rate_f)",
+      "source_sha256": "8f5415e10b6ce2f46cc47ec36783deea1e830bc61b3ee0a019e233daa98491dc",
+      "probe": {
+        "passed_by_family": {
+          "frequency_and_time_units": 1,
+          "exact_partition_integral": 16,
+          "exact_clipped_segment": 6,
+          "reject_gap": 1,
+          "reject_overlap": 1,
+          "reject_mixed_station": 1,
+          "reject_mixed_level": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 4
+        },
+        "failed": [
+          "signed_ramp_decode"
+        ]
+      },
+      "rejected": true
+    },
+    {
+      "mutation": "frequency_unit_scale",
+      "original": "(ghz*NS+hz)*NS+nhz",
+      "replacement": "ghz*NS+hz+nhz",
+      "source_sha256": "5d726330f483f80859b3f5a7e5a7ca5dc0f9a616029961b3bca3601191118fd3",
+      "probe": {
+        "passed_by_family": {
+          "signed_ramp_decode": 1,
+          "exact_partition_integral": 16,
+          "exact_clipped_segment": 6,
+          "reject_gap": 1,
+          "reject_overlap": 1,
+          "reject_mixed_station": 1,
+          "reject_mixed_level": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 4
+        },
+        "failed": [
+          "frequency_and_time_units"
+        ]
+      },
+      "rejected": true
+    },
+    {
+      "mutation": "rate_integral_scale",
+      "original": "2*NS**3",
+      "replacement": "2*NS**2",
+      "source_sha256": "075fde28e3cbb319df5450f1ae2b3a82c243d09619f51439d6bcb2f45b2a6767",
+      "probe": {
+        "passed_by_family": {
+          "signed_ramp_decode": 1,
+          "frequency_and_time_units": 1,
+          "exact_partition_integral": 2,
+          "exact_clipped_segment": 2,
+          "reject_gap": 1,
+          "reject_overlap": 1,
+          "reject_mixed_station": 1,
+          "reject_mixed_level": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 4
+        },
+        "failed": [
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_clipped_segment",
+          "exact_clipped_segment",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_clipped_segment",
+          "exact_clipped_segment"
+        ]
+      },
+      "rejected": true
+    },
+    {
+      "mutation": "absolute_epoch_leak",
+      "original": "((hi_ns-self.start_ns)**2 -",
+      "replacement": "((hi_ns+self.start_ns)**2 -",
+      "source_sha256": "37b62a3e146d4228ac9281faf34774a7af669b0eac83ebb7f7d85ce52e419b1c",
+      "probe": {
+        "passed_by_family": {
+          "signed_ramp_decode": 1,
+          "frequency_and_time_units": 1,
+          "exact_partition_integral": 4,
+          "exact_clipped_segment": 3,
+          "reject_gap": 1,
+          "reject_overlap": 1,
+          "reject_mixed_station": 1,
+          "reject_mixed_level": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 4
+        },
+        "failed": [
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_clipped_segment",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_clipped_segment",
+          "exact_clipped_segment"
+        ]
+      },
+      "rejected": true
+    },
+    {
+      "mutation": "upper_clipping",
+      "original": "stop = min(r.end_ns, hi_ns)",
+      "replacement": "stop = hi_ns",
+      "source_sha256": "9c1be75c28a6eef27d25a934842dda2dc3449bbd735b38785bf0fec0b535a1c0",
+      "probe": {
+        "passed_by_family": {
+          "signed_ramp_decode": 1,
+          "frequency_and_time_units": 1,
+          "exact_partition_integral": 8,
+          "exact_clipped_segment": 6,
+          "reject_gap": 1,
+          "reject_overlap": 1,
+          "reject_mixed_station": 1,
+          "reject_mixed_level": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 4
+        },
+        "failed": [
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral"
+        ]
+      },
+      "rejected": true
+    },
+    {
+      "mutation": "overlap_guard",
+      "original": "if any(a.end_ns > b.start_ns for a, b in zip(ramps, ramps[1:])):",
+      "replacement": "if False:",
+      "source_sha256": "420e27eef2878331b5c6d5db1515c1d3761708210bdb3e84a1c2e79ba34a21f1",
+      "probe": {
+        "passed_by_family": {
+          "signed_ramp_decode": 1,
+          "frequency_and_time_units": 1,
+          "exact_partition_integral": 16,
+          "exact_clipped_segment": 6,
+          "reject_gap": 1,
+          "reject_mixed_station": 1,
+          "reject_mixed_level": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 4
+        },
+        "failed": [
+          "reject_overlap"
+        ]
+      },
+      "rejected": true
+    },
+    {
+      "mutation": "mixed_source_guard",
+      "original": "if len({r.station for r in ramps}) > 1 or len({r.sky_level for r in ramps}) > 1:",
+      "replacement": "if False:",
+      "source_sha256": "4ca5f241dc371311cc9bca43f760c7b6a99fedf9bed3f5dc354e0a9a713b8dc1",
+      "probe": {
+        "passed_by_family": {
+          "signed_ramp_decode": 1,
+          "frequency_and_time_units": 1,
+          "exact_partition_integral": 16,
+          "exact_clipped_segment": 6,
+          "reject_gap": 1,
+          "reject_overlap": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 4
+        },
+        "failed": [
+          "reject_mixed_station",
+          "reject_mixed_level"
+        ]
+      },
+      "rejected": true
+    },
+    {
+      "mutation": "lower_clipping",
+      "original": "cursor, total, used = lo_ns, Fraction(0), []",
+      "replacement": "cursor, total, used = ramps[0].start_ns, Fraction(0), []",
+      "source_sha256": "05808cf243a87e7bc467291ccd8b433539bb23d36d97dbc28a868ee6fa3194ba",
+      "probe": {
+        "passed_by_family": {
+          "signed_ramp_decode": 1,
+          "frequency_and_time_units": 1,
+          "exact_partition_integral": 4,
+          "exact_clipped_segment": 6,
+          "reject_gap": 1,
+          "reject_overlap": 1,
+          "reject_mixed_station": 1,
+          "reject_mixed_level": 1,
+          "reject_unsorted": 1,
+          "reject_extrapolation_or_nonpositive": 3
+        },
+        "failed": [
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "exact_partition_integral",
+          "reject_extrapolation_or_nonpositive"
+        ]
+      },
+      "rejected": true
+    }
+  ],
+  "limits": [
+    "A ramp with matching station and nominal receive-time coverage is not thereby the receiver reference or the correct uplink ramp.",
+    "No retarded emission time, proper/UTC/station-clock conversion, receiver bias, spacecraft turnaround conversion, calibrated Doppler or gravity residual is computed.",
+    "Physical interpretation of endpoint jumps and their rounding precision is not derived.",
+    "Initial inventory padding-label failure and initial author gap/jump labeling correction remain preserved."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "registered_at": "2026-10-14T22:50:53.010628+00:00",
+  "extends": "RAW_DATA_PROTOCOL_v1.json",
+  "prior_protocol_sha256": "1360e8812eb5500d654c30be2320eb852102d182b16957fad270265a11673c5a",
+  "change": "Explicitly include precursor ATDF for the already exposed June18 development track. No reserved-day roles change.",
+  "input_url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/tdf/c32easc2002_169_0000xmmmv0.tdf",
+  "label_sha256": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6",
+  "expected_bytes": 46335744,
+  "measurement_values_opened_before_this_extension": false,
+  "role": "exposed development instrument reconstruction; not an independent empirical test",
+  "selection_rule": "Same day and product identifier as registered development ODF; precursor chosen because the primary label exposes missing receiver/bias/frequency-level fields. No count values inspected to select it.",
+  "analysis_rule": "Decode all declared tracking records; retain all mode and quality groups. Match ODF intervals only by time/station/link/channel metadata, preserving unmatched, duplicate or rejected cases. No trajectory or gravity parameter fitted to select processing conventions. Compare explicit candidate formulas and field quantization limits; no residual-based clipping.",
+  "reserved_unopened": [
+    "2002_170_0000xmmmv0",
+    "2002_171_0000xmmmv0",
+    "2002_172_0000xmmmv0",
+    "2002_172_0000k252v0"
+  ]
+}

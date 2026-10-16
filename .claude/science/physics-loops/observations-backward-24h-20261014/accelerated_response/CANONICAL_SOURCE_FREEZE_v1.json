@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-15T03:53:13.528597+00:00",
+  "source_base": "ff4a63b6f0407d40ab925ac4bc83011546886217",
+  "files": {
+    "docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "72113d39011cd2a29beb3355edae2d122549f0369769fdb59b51594f48a9e711",
+    "scripts/scalar_accelerated_coherent_count_check.py": "b03883fbaafd9adc1bf7a849051ffa35c9dbd233c925e798f555f60eabfef7b9",
+    "scripts/scalar_accelerated_gram_controls.py": "49a1ac95f7126e1c83aabecf009e0d5947ad92039f9caa9e352441fe12e1376d",
+    "scripts/scalar_proper_count_controls.py": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+    "scripts/scalar_count_adjoint_controls.py": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+    "scripts/scalar_coherent_count_controls.py": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+    "scripts/scalar_coherent_exact_energy_controls.py": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f"
+  },
+  "execution": "canonical envelope running; result to be bound after completion",
+  "scope": "bounded_theorem / conditional-support; no observations or empirical energy budget"
+}

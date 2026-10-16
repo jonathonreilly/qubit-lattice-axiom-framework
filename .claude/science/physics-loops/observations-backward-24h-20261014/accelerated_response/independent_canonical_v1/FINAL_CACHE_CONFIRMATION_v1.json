@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-15T04:02:30.949120+00:00",
+  "final_note_sha256": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+  "final_cache_sha256": "afddd7917edef6e3c0fcbfeee2364280f024d449f4bc8330ea7b7905ebd596a1",
+  "final_input_fingerprint_sha256": "be43a662064cba4d555ea39265e8598acef34ab8c436979886371a5a0be45c94",
+  "all_seven_current_source_hashes_verified": true,
+  "all_six_scripts_unchanged": true,
+  "all_five_product_hashes_verified_and_unchanged": true,
+  "cache_stdout_matches_summary": true,
+  "cache_stderr_empty": true,
+  "exit_code": 0,
+  "elapsed_seconds": 22.93,
+  "timeout_seconds": 180,
+  "author_checks": 75,
+  "suite_rerun_by_reviewer": false,
+  "raw_observations_accessed": false
+}

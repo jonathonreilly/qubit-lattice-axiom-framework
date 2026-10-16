@@ -1,0 +1,30 @@
+{
+  "registered_at": "2026-10-14T22:07:09.126412+00:00",
+  "dataset": "CO-SS-RSS-1-SCE1-V1.0",
+  "metadata_exposed": [
+    "volume and product directories",
+    "CORS_0024 INDEX.TAB and product labels",
+    "2018 radio-science user guide",
+    "published gamma summary"
+  ],
+  "measurement_values_opened_before_registration": false,
+  "files": {
+    "2002_169_0000xmmmv0": "exposed development: parser, data geometry and nuisance-model design",
+    "2002_170_0000xmmmv0": "reserved calibration: nuisance estimation after forward model frozen; not opened",
+    "2002_171_0000xmmmv0": "reserved raw-track validation within exposed experiment; not opened",
+    "2002_172_0000xmmmv0": "reserved cross-band validation with same-day Ka; not opened",
+    "2002_172_0000k252v0": "reserved cross-band validation with same-day X; not opened"
+  },
+  "selection_rule": "first four-day archive volume spanning June18-21 chosen from directory chronology and data-format availability, before opening measurements; no value-based selection",
+  "test_scope": "Parser controls and physical bridge development. No gamma confidence interval until proper-time, ephemeris, ramp, transponder, media, finite-compression and covariance models are validated. Raw reserved tracks are not an independent experiment because the published aggregate is already exposed.",
+  "change_policy": "Record every role/selection change and why before dependent measurement access; exposed tracks cannot regain blind status.",
+  "read_now": [
+    "2002_169_0000xmmmv0"
+  ],
+  "do_not_read_yet": [
+    "2002_170_0000xmmmv0",
+    "2002_171_0000xmmmv0",
+    "2002_172_0000xmmmv0",
+    "2002_172_0000k252v0"
+  ]
+}

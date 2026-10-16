@@ -1,0 +1,409 @@
+{
+  "status": "passed",
+  "controls": 66,
+  "source_sha256": "3d3cd9e3e2171d224ff50edb44b85300666ef7f1873a3a1319e940e674748ffd",
+  "precheck_sha256": "aa3ff4ef0e3e5bbb350360adfc9dba274e5f55b5ec3a7764deaeeb2a94f1064c",
+  "parent_note_sha256": "059e1ff0ef5ab67e71763a55b022e130348b54e8477b478ecf5e0aaa25f0a74e",
+  "tensor_table": [
+    {
+      "beta": 0.0,
+      "T_perp": 0.05305164769729844,
+      "T_parallel": 0.05305164769729844
+    },
+    {
+      "beta": 0.03,
+      "T_perp": 0.053013445598415664,
+      "T_parallel": 0.05298481244628134
+    },
+    {
+      "beta": 0.2,
+      "T_perp": 0.05134416234966616,
+      "T_parallel": 0.05010042066888719
+    },
+    {
+      "beta": 0.5,
+      "T_perp": 0.042026641319434385,
+      "T_parallel": 0.03531292468005274
+    },
+    {
+      "beta": 0.8,
+      "T_perp": 0.02263292824627457,
+      "T_parallel": 0.012029923020533151
+    },
+    {
+      "beta": 0.95,
+      "T_perp": 0.006980786270661325,
+      "T_parallel": 0.0015560344101371373
+    },
+    {
+      "beta": 0.999,
+      "T_perp": 0.00015818192939346718,
+      "T_parallel": 1.7868724537569223e-06
+    }
+  ],
+  "checks": [
+    {
+      "name": "closed_angular_beta_0.0",
+      "relative_error": 1.307950686753237e-16,
+      "tensor": [
+        0.05305164769729844,
+        0.05305164769729844,
+        0.05305164769729844
+      ]
+    },
+    {
+      "name": "stationary_enclosure_beta_0.0",
+      "max_eigenvalue": 0.05305164769729844
+    },
+    {
+      "name": "closed_angular_beta_0.03",
+      "relative_error": 1.4424003185964127e-13,
+      "tensor": [
+        0.053013445598415664,
+        0.053013445598415664,
+        0.05298481244628134
+      ]
+    },
+    {
+      "name": "stationary_enclosure_beta_0.03",
+      "max_eigenvalue": 0.053013445598415664
+    },
+    {
+      "name": "closed_angular_beta_0.2",
+      "relative_error": 3.784052955937746e-15,
+      "tensor": [
+        0.05134416234966616,
+        0.05134416234966616,
+        0.05010042066888719
+      ]
+    },
+    {
+      "name": "stationary_enclosure_beta_0.2",
+      "max_eigenvalue": 0.05134416234966616
+    },
+    {
+      "name": "closed_angular_beta_0.5",
+      "relative_error": 9.906421763994456e-16,
+      "tensor": [
+        0.042026641319434385,
+        0.042026641319434385,
+        0.03531292468005274
+      ]
+    },
+    {
+      "name": "stationary_enclosure_beta_0.5",
+      "max_eigenvalue": 0.042026641319434385
+    },
+    {
+      "name": "closed_angular_beta_0.8",
+      "relative_error": 1.073044035637449e-15,
+      "tensor": [
+        0.02263292824627457,
+        0.02263292824627457,
+        0.012029923020533151
+      ]
+    },
+    {
+      "name": "stationary_enclosure_beta_0.8",
+      "max_eigenvalue": 0.02263292824627457
+    },
+    {
+      "name": "closed_angular_beta_0.95",
+      "relative_error": 9.939989042595148e-16,
+      "tensor": [
+        0.006980786270661325,
+        0.006980786270661325,
+        0.0015560344101371373
+      ]
+    },
+    {
+      "name": "stationary_enclosure_beta_0.95",
+      "max_eigenvalue": 0.006980786270661325
+    },
+    {
+      "name": "closed_angular_beta_0.999",
+      "relative_error": 1.0281220269370449e-14,
+      "tensor": [
+        0.00015818192939346718,
+        0.00015818192939346718,
+        1.7868724537569223e-06
+      ]
+    },
+    {
+      "name": "stationary_enclosure_beta_0.999",
+      "max_eigenvalue": 0.00015818192939346718
+    },
+    {
+      "name": "joint_time_tensor_beta_0.15",
+      "gram_eigenvalues": [
+        0.04362798210746483,
+        0.05823169103424076,
+        0.08928321857409761,
+        0.29220473444803485
+      ],
+      "stationary_difference_eigenvalues": [
+        0.0011206290412577769,
+        0.0012906213389184567,
+        0.0025901351810159244,
+        0.005905554019589696
+      ]
+    },
+    {
+      "name": "joint_time_tensor_beta_0.6",
+      "gram_eigenvalues": [
+        0.02509236270274726,
+        0.039010329367933284,
+        0.05266985587009187,
+        0.20219994580057127
+      ],
+      "stationary_difference_eigenvalues": [
+        0.018666728329885654,
+        0.01982264354974726,
+        0.039770990733860895,
+        0.09702170938978237
+      ]
+    },
+    {
+      "name": "joint_time_tensor_beta_0.97",
+      "gram_eigenvalues": [
+        0.00102070653305138,
+        0.0014553663799198864,
+        0.005113125463991431,
+        0.02273345402461734
+      ],
+      "stationary_difference_eigenvalues": [
+        0.04376604057988504,
+        0.05502982418504648,
+        0.0893665676600379,
+        0.27576948091807035
+      ]
+    },
+    {
+      "name": "mass_shell_order_beta_0.0_speed_0.01",
+      "min_increment": 5.305164769729845e-08,
+      "min_enclosure_gap": 0.05305159464565074
+    },
+    {
+      "name": "mass_shell_order_beta_0.0_speed_0.2",
+      "min_increment": 0.0004243601299306903,
+      "min_enclosure_gap": 0.05262723451572005
+    },
+    {
+      "name": "mass_shell_order_beta_0.0_speed_0.55",
+      "min_increment": 0.008402054704059643,
+      "min_enclosure_gap": 0.04422517981166041
+    },
+    {
+      "name": "mass_shell_order_beta_0.0_speed_0.88",
+      "min_increment": 0.02732674457393533,
+      "min_enclosure_gap": 0.01689843523772508
+    },
+    {
+      "name": "mass_shell_order_beta_0.0_speed_1.0",
+      "min_increment": 0.01689843523772508,
+      "min_enclosure_gap": 0.0
+    },
+    {
+      "name": "mass_shell_order_beta_0.4_speed_0.01",
+      "min_increment": 3.74336019784499e-08,
+      "min_enclosure_gap": 0.041496344200492606
+    },
+    {
+      "name": "mass_shell_order_beta_0.4_speed_0.2",
+      "min_increment": 0.00030058373974906294,
+      "min_enclosure_gap": 0.04119576046074354
+    },
+    {
+      "name": "mass_shell_order_beta_0.4_speed_0.55",
+      "min_increment": 0.006114692078614175,
+      "min_enclosure_gap": 0.03508106838212936
+    },
+    {
+      "name": "mass_shell_order_beta_0.4_speed_0.88",
+      "min_increment": 0.02117669500593617,
+      "min_enclosure_gap": 0.013904373376193196
+    },
+    {
+      "name": "mass_shell_order_beta_0.4_speed_1.0",
+      "min_increment": 0.013904373376193196,
+      "min_enclosure_gap": 0.0
+    },
+    {
+      "name": "mass_shell_order_beta_0.9_speed_0.01",
+      "min_increment": 1.9152575642518003e-09,
+      "min_enclosure_gap": 0.0045098517566970805
+    },
+    {
+      "name": "mass_shell_order_beta_0.9_speed_0.2",
+      "min_increment": 1.5624318432498416e-05,
+      "min_enclosure_gap": 0.0044942274382645826
+    },
+    {
+      "name": "mass_shell_order_beta_0.9_speed_0.55",
+      "min_increment": 0.0003600102523325378,
+      "min_enclosure_gap": 0.004134217185932045
+    },
+    {
+      "name": "mass_shell_order_beta_0.9_speed_0.88",
+      "min_increment": 0.0018687688628699216,
+      "min_enclosure_gap": 0.002265448323062123
+    },
+    {
+      "name": "mass_shell_order_beta_0.9_speed_1.0",
+      "min_increment": 0.002265448323062123,
+      "min_enclosure_gap": 0.0
+    },
+    {
+      "name": "mass_shell_order_beta_0.999_speed_0.01",
+      "min_increment": 2.1200713239465796e-13,
+      "min_enclosure_gap": 1.78687224174979e-06
+    },
+    {
+      "name": "mass_shell_order_beta_0.999_speed_0.2",
+      "min_increment": 1.7375605333712635e-09,
+      "min_enclosure_gap": 1.7851346812164186e-06
+    },
+    {
+      "name": "mass_shell_order_beta_0.999_speed_0.55",
+      "min_increment": 4.173039175954785e-08,
+      "min_enclosure_gap": 1.7434042894568708e-06
+    },
+    {
+      "name": "mass_shell_order_beta_0.999_speed_0.88",
+      "min_increment": 2.708611905112505e-07,
+      "min_enclosure_gap": 1.4725430989456203e-06
+    },
+    {
+      "name": "mass_shell_order_beta_0.999_speed_1.0",
+      "min_increment": 1.4725430989456203e-06,
+      "min_enclosure_gap": 0.0
+    },
+    {
+      "name": "real_qp_branch_beta_0.0_mass_0.0",
+      "relative_error": 1.7481659548928119e-15
+    },
+    {
+      "name": "reality_coefficients_beta_0.0_mass_0.0"
+    },
+    {
+      "name": "paired_single_branch_beta_0.0_mass_0.0"
+    },
+    {
+      "name": "real_qp_branch_beta_0.35_mass_0.0",
+      "relative_error": 7.8558202103121975e-16
+    },
+    {
+      "name": "reality_coefficients_beta_0.35_mass_0.0"
+    },
+    {
+      "name": "paired_single_branch_beta_0.35_mass_0.0"
+    },
+    {
+      "name": "real_qp_branch_beta_0.8_mass_0.7",
+      "relative_error": 9.030907557839705e-16
+    },
+    {
+      "name": "reality_coefficients_beta_0.8_mass_0.7"
+    },
+    {
+      "name": "paired_single_branch_beta_0.8_mass_0.7"
+    },
+    {
+      "name": "real_qp_branch_beta_0.97_mass_2.1",
+      "relative_error": 1.1656350558178062e-15
+    },
+    {
+      "name": "reality_coefficients_beta_0.97_mass_2.1"
+    },
+    {
+      "name": "paired_single_branch_beta_0.97_mass_2.1"
+    },
+    {
+      "name": "rotation_covariance_qp",
+      "relative_error": 3.711424064333464e-16
+    },
+    {
+      "name": "lorentz_shell_beta_0.2_mass_0.0_pz_0.8"
+    },
+    {
+      "name": "lorentz_measure_beta_0.2_mass_0.0_pz_0.8",
+      "relative_error": 6.6924894729614295e-12
+    },
+    {
+      "name": "lorentz_shell_beta_0.2_mass_0.0_pz_-2.0"
+    },
+    {
+      "name": "lorentz_measure_beta_0.2_mass_0.0_pz_-2.0",
+      "relative_error": 2.4220458436389954e-12
+    },
+    {
+      "name": "lorentz_shell_beta_0.7_mass_0.6_pz_0.8"
+    },
+    {
+      "name": "lorentz_measure_beta_0.7_mass_0.6_pz_0.8",
+      "relative_error": 1.934961204889066e-11
+    },
+    {
+      "name": "lorentz_shell_beta_0.7_mass_0.6_pz_-2.0"
+    },
+    {
+      "name": "lorentz_measure_beta_0.7_mass_0.6_pz_-2.0",
+      "relative_error": 2.989998126234626e-11
+    },
+    {
+      "name": "lorentz_shell_beta_0.95_mass_1.7_pz_0.8"
+    },
+    {
+      "name": "lorentz_measure_beta_0.95_mass_1.7_pz_0.8",
+      "relative_error": 1.5031506546661674e-11
+    },
+    {
+      "name": "lorentz_shell_beta_0.95_mass_1.7_pz_-2.0"
+    },
+    {
+      "name": "lorentz_measure_beta_0.95_mass_1.7_pz_-2.0",
+      "relative_error": 5.076493711210513e-11
+    },
+    {
+      "name": "real_schwartz_field_trace",
+      "values": [
+        0.035683433395497906,
+        0.11723059907888947,
+        0.06618178670902057,
+        0.1218113808841915
+      ],
+      "relative_error": 2.2786161452951202e-15
+    },
+    {
+      "name": "schwartz_field_stationary_enclosure",
+      "mathematical_energy": 6.797658209307233,
+      "ratios": [
+        0.0006539428614952111,
+        0.008745452252472486,
+        0.003695874956560659,
+        0.007360621206240148
+      ]
+    },
+    {
+      "name": "partial_time_term_discriminated",
+      "omitted_time_term_values": [
+        0.11968548167252537,
+        -0.04152567180656653,
+        0.0018657093015664451,
+        0.11087013764952466
+      ],
+      "max_difference": 0.158756270885456
+    },
+    {
+      "name": "lab_energy_is_not_rest_energy",
+      "lab_energy": 27.483485127402307,
+      "rest_energy": 14.544069829432555,
+      "transformed_energy": 14.544069829432553
+    }
+  ],
+  "limits": [
+    "Synthetic controls only; no observation used.",
+    "Exact claims rest on PRECHECK_v1.md, not sampled tests.",
+    "No arbitrary accelerated-path or radio-operator assertion."
+  ]
+}

@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/coherent_radio_count_initial_phase_check.py
+runner_sha256: 9ca987b06ff9f9035c86c0403ff84acbc0d42d479c2dee0b4bda9956ed72f21f
+input_fingerprint_sha256: 808debcf61159b74cedd81ef76b2e70b1e3127a47f8afb8d93b981fbd708cf5d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+{
+  "actual_current_surface_status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "role": "conditional observation-operator derivation and synthetic controls",
+  "source_sha256": {
+    "scripts/coherent_radio_count_initial_phase_check.py": "9ca987b06ff9f9035c86c0403ff84acbc0d42d479c2dee0b4bda9956ed72f21f",
+    "docs/COHERENT_RADIO_COUNT_INITIAL_PHASE_ELIMINATION_BOUNDED_THEOREM_NOTE_2026-10-14.md": "48e77f8cb258b11a47acd18a1e6d8213a0e7fc693a851862ea8d1a2df2789442",
+    "scripts/coherent_count_plasma_controls.py": "a0170fef63edc54af3a7a9a23708d695ab94f51d7f13b9a2b90f848341dcc90f",
+    "scripts/coherent_count_initial_phase_controls.py": "74554c02590e0ebb0a730ba0f86a47bb222853f7fb1d0ccb52facb3023e6254a",
+    "scripts/coherent_count_chirp_controls.py": "9254de2d47f12eb1a5114b08e3b9844e4f561eb913fbff0bb21d4c282361b66b"
+  },
+  "product_sha256": {
+    "plasma_finite_count": "e22977cb436516a25974e0f53791ce353d4cfce973ceae02b0743ea3812cc23d",
+    "initial_phase_contrasts": "928d2db59138602e813a4de8f1572b96ce5000463a06b2457c043bf384f4b694",
+    "two_uplink_chirps": "c9bbe75023ac0c0538d700d05c3fd1e579f37decddfbc3752c4002b8eacaecd1"
+  },
+  "checks": {
+    "plasma_finite_count": {
+      "passed": 879,
+      "failed": 0
+    },
+    "initial_phase_contrasts": {
+      "passed": 198,
+      "failed": 0
+    },
+    "two_uplink_chirps": {
+      "passed": 41,
+      "failed": 0
+    }
+  },
+  "chirp_initial_phase_rank": 2,
+  "measured_gravity_tests": 0,
+  "fitted_parameters": 0,
+  "scope": [
+    "Known invertible fixed-unit endpoint operators are premises.",
+    "The chirped physical class assumes common retarded maps and frequency-separable rays.",
+    "Initial receiver phase is eliminated for stated contrasts; no scalar initial field state is derived.",
+    "Standard plasma cancellation and null-space projection are reconstructed tools, not novelty claims.",
+    "No archive value, empirical covariance, real error bound or independent validation enters these controls."
+  ]
+}
+
+----- stderr -----
+

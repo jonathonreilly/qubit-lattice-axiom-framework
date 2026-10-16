@@ -1,0 +1,23 @@
+[
+  {
+    "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/temporal_force_history_check_v1.py",
+    "working_sha256": "8bb6a06ebb73c04b865fcd47ca7ed63b4e6392419b0090706448296f0474eac9",
+    "canonical": "scripts/scalar_temporal_history_controls.py",
+    "canonical_sha256": "105db461c83c9d522c9fb3cdc7786b68ef2506ccf3b3e7d126ecc6aad51bdf83",
+    "change_scope": "Same scientific calculations; wrapper returns results and writes through primary only; removes working-note integrity reads and elapsed field."
+  },
+  {
+    "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/moving_temporal_history_check_v1.py",
+    "working_sha256": "73a080b441ec9848c70b3d9b1fa90f790490b08fdbaff1374e34a1a4534a2a03",
+    "canonical": "scripts/scalar_moving_history_controls.py",
+    "canonical_sha256": "d968fd3ae26d278cde69e7a6a45d1e93211e17e6c8c97891359731aa51740739",
+    "change_scope": "Same scientific calculations; wrapper returns results and writes through primary only; removes working-note integrity reads and elapsed field."
+  },
+  {
+    "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/finite_time_environment/force_energy_bridge_check_v1.py",
+    "working_sha256": "45ece394a7056dfac76a0b654b37b0414de62c14d59f8f7a1abb3faeea625b4e",
+    "canonical": "scripts/scalar_force_energy_controls.py",
+    "canonical_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+    "change_scope": "Same scientific calculations; wrapper returns results and writes through primary only; removes working-note integrity reads and elapsed field. Also adds8independent angular-antiderivative comparisons and shares the mode-energy formula with the aligned attainment control to reject a real mutation survivor. Working49-control results preserved; canonical57controls."
+  }
+]

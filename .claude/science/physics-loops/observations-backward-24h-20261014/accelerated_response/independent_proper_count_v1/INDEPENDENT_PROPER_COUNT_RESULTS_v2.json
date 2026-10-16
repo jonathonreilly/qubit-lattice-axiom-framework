@@ -1,0 +1,1351 @@
+{
+  "created_at": "2026-10-15T03:39:07.461864+00:00",
+  "reviewer": "/root/localized_history_check",
+  "checks_passed": 179,
+  "checks": [
+    {
+      "name": "static_time_profile_finite_count_derivative",
+      "passed": true,
+      "error": 1.2610698041370938e-09,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "static_time_profile_closed_derivative",
+      "passed": true,
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_time_profile_exact_count_-0.01",
+      "passed": true,
+      "error": 2.6645352591003757e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_time_profile_exact_count_0.01",
+      "passed": true,
+      "error": 4.440892098500626e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_space_profile_finite_count_derivative",
+      "passed": true,
+      "error": 1.3317688063452238e-09,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "static_space_profile_closed_derivative",
+      "passed": true,
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_space_profile_exact_count_-0.01",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_space_profile_exact_count_0.01",
+      "passed": true,
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_constant_profile_finite_count_derivative",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "static_constant_profile_closed_derivative",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_constant_profile_exact_count_-0.01",
+      "passed": true,
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "static_constant_profile_exact_count_0.01",
+      "passed": true,
+      "error": 2.6645352591003757e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_finite_count_derivative",
+      "passed": true,
+      "error": 1.9592143185587219e-10,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "full_local_frequency_integral",
+      "passed": true,
+      "error": 1.4155343563970746e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "full_a_t",
+      "passed": true,
+      "error": 4.265962583183125e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_u",
+      "passed": true,
+      "error": 7.875949892266476e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_XR",
+      "passed": true,
+      "error": 2.9919122734867187e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_XE",
+      "passed": true,
+      "error": 4.847736795321467e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_n",
+      "passed": true,
+      "error": 1.5501159383868313e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_K",
+      "passed": true,
+      "error": 1.234568003383174e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_clockE",
+      "passed": true,
+      "error": 1.226224677353116e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_clockR",
+      "passed": true,
+      "error": 8.881784197001252e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_a_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_a_null_constraint",
+      "passed": true,
+      "error": 1.021405182655144e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_a_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "full_b_t",
+      "passed": true,
+      "error": 1.0783318682427989e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_u",
+      "passed": true,
+      "error": 1.2375586666557581e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_XR",
+      "passed": true,
+      "error": 1.7092837562016072e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_XE",
+      "passed": true,
+      "error": 7.916930999662952e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_n",
+      "passed": true,
+      "error": 6.30828288911145e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_K",
+      "passed": true,
+      "error": 1.5476812539882978e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_clockE",
+      "passed": true,
+      "error": 1.3540862875416337e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_clockR",
+      "passed": true,
+      "error": 1.7763568394002505e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "full_b_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_b_null_constraint",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_b_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "field_only_finite_count_derivative",
+      "passed": true,
+      "error": 7.027192716613229e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "field_only_local_frequency_integral",
+      "passed": true,
+      "error": 1.7486012637846216e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "field_only_a_t",
+      "passed": true,
+      "error": 1.9103330028968912e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_u",
+      "passed": true,
+      "error": 3.890054944832855e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_XR",
+      "passed": true,
+      "error": 6.73830782838003e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_XE",
+      "passed": true,
+      "error": 1.5005097858677985e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_n",
+      "passed": true,
+      "error": 1.1228584251635199e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_K",
+      "passed": true,
+      "error": 3.5689073224487444e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_clockE",
+      "passed": true,
+      "error": 2.6611074455118455e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_clockR",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_a_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field_only_a_null_constraint",
+      "passed": true,
+      "error": 1.021405182655144e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field_only_a_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "field_only_b_t",
+      "passed": true,
+      "error": 1.3993119163391299e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_u",
+      "passed": true,
+      "error": 1.1394864218861045e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_XR",
+      "passed": true,
+      "error": 4.149290286359353e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_XE",
+      "passed": true,
+      "error": 4.3914112797527327e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_n",
+      "passed": true,
+      "error": 4.1618542379745493e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_K",
+      "passed": true,
+      "error": 5.247295653543205e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_clockE",
+      "passed": true,
+      "error": 2.1597050536836804e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_clockR",
+      "passed": true,
+      "error": 1.7763568394002505e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "field_only_b_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field_only_b_null_constraint",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field_only_b_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "path_only_finite_count_derivative",
+      "passed": true,
+      "error": 1.0680768769422144e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "path_only_local_frequency_integral",
+      "passed": true,
+      "error": 3.0531133177191805e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "path_only_a_t",
+      "passed": true,
+      "error": 4.932522272571571e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_u",
+      "passed": true,
+      "error": 1.369061114475656e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_XR",
+      "passed": true,
+      "error": 1.8080641150941545e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_XE",
+      "passed": true,
+      "error": 5.6728927111393546e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_n",
+      "passed": true,
+      "error": 9.883877570560085e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_K",
+      "passed": true,
+      "error": 1.7147915032378336e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_clockE",
+      "passed": true,
+      "error": 4.839809109036253e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_clockR",
+      "passed": true,
+      "error": 4.440892098500626e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_a_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "path_only_a_null_constraint",
+      "passed": true,
+      "error": 1.021405182655144e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "path_only_a_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "path_only_b_t",
+      "passed": true,
+      "error": 3.0714536816689453e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_u",
+      "passed": true,
+      "error": 1.957101147809226e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_XR",
+      "passed": true,
+      "error": 2.066066068229233e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_XE",
+      "passed": true,
+      "error": 3.63355179278102e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_n",
+      "passed": true,
+      "error": 5.109854054642649e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_K",
+      "passed": true,
+      "error": 8.914206178767259e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_clockE",
+      "passed": true,
+      "error": 1.4734269360161534e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_clockR",
+      "passed": true,
+      "error": 8.881784197001252e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "path_only_b_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "path_only_b_null_constraint",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "path_only_b_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "clock_only_finite_count_derivative",
+      "passed": true,
+      "error": 1.5603018551670067e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "clock_only_local_frequency_integral",
+      "passed": true,
+      "error": 3.0899761915836876e-18,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "clock_only_a_t",
+      "passed": true,
+      "error": 7.764983100955192e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_u",
+      "passed": true,
+      "error": 9.069404949269e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_XR",
+      "passed": true,
+      "error": 5.606392086687784e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_XE",
+      "passed": true,
+      "error": 3.3502063970236584e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_n",
+      "passed": true,
+      "error": 1.116242081405927e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_K",
+      "passed": true,
+      "error": 4.931556871852136e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_clockE",
+      "passed": true,
+      "error": 1.1238038277738838e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_clockR",
+      "passed": true,
+      "error": 1.7763568394002505e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_a_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "clock_only_a_null_constraint",
+      "passed": true,
+      "error": 1.021405182655144e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "clock_only_a_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "clock_only_b_t",
+      "passed": true,
+      "error": 4.994754609910501e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_u",
+      "passed": true,
+      "error": 2.61154986525014e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_XR",
+      "passed": true,
+      "error": 3.7394219665198847e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_XE",
+      "passed": true,
+      "error": 6.022081704831761e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_n",
+      "passed": true,
+      "error": 9.131294353460773e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_K",
+      "passed": true,
+      "error": 8.611799424615429e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_clockE",
+      "passed": true,
+      "error": 1.8008095015176195e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_clockR",
+      "passed": true,
+      "error": 8.881784197001252e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "clock_only_b_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "clock_only_b_null_constraint",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "clock_only_b_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "emitter_clock_only_finite_count_derivative",
+      "passed": true,
+      "error": 7.105427357601002e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "emitter_clock_only_local_frequency_integral",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "emitter_clock_only_a_t",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_u",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_XR",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_XE",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_n",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_K",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_clockE",
+      "passed": true,
+      "error": 9.026668301714835e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_clockR",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_a_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "emitter_clock_only_a_null_constraint",
+      "passed": true,
+      "error": 1.021405182655144e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "emitter_clock_only_a_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "emitter_clock_only_b_t",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_u",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_XR",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_XE",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_n",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_K",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_clockE",
+      "passed": true,
+      "error": 9.026668301714835e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_clockR",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "emitter_clock_only_b_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "emitter_clock_only_b_null_constraint",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "emitter_clock_only_b_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "receiver_clock_only_finite_count_derivative",
+      "passed": true,
+      "error": 8.497591194069065e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "receiver_clock_only_local_frequency_integral",
+      "passed": true,
+      "error": 3.0899761915836876e-18,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "receiver_clock_only_a_t",
+      "passed": true,
+      "error": 7.764983100955192e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_u",
+      "passed": true,
+      "error": 9.069404949269e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_XR",
+      "passed": true,
+      "error": 5.606392086687784e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_XE",
+      "passed": true,
+      "error": 3.3502063970236584e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_n",
+      "passed": true,
+      "error": 1.116242081405927e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_K",
+      "passed": true,
+      "error": 4.931556871852136e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_clockE",
+      "passed": true,
+      "error": 1.2140698169016417e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_clockR",
+      "passed": true,
+      "error": 1.7763568394002505e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_a_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "receiver_clock_only_a_null_constraint",
+      "passed": true,
+      "error": 1.021405182655144e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "receiver_clock_only_a_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "receiver_clock_only_b_t",
+      "passed": true,
+      "error": 4.994754609910501e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_u",
+      "passed": true,
+      "error": 2.61154986525014e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_XR",
+      "passed": true,
+      "error": 3.7394219665198847e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_XE",
+      "passed": true,
+      "error": 6.022081704831761e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_n",
+      "passed": true,
+      "error": 9.131294353460773e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_K",
+      "passed": true,
+      "error": 8.611799424615429e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_clockE",
+      "passed": true,
+      "error": 8.981496102400399e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_clockR",
+      "passed": true,
+      "error": 8.881784197001252e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "receiver_clock_only_b_receiver_proper_constraint",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "receiver_clock_only_b_null_constraint",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "receiver_clock_only_b_retarded_subluminal",
+      "passed": true
+    },
+    {
+      "name": "first_order_superposition",
+      "passed": true,
+      "error": 4.163336342344337e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "emitter_offset_cancels",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "receiver_offset_retarded_frequency_boundary",
+      "passed": true,
+      "error": 5.421010862427522e-20,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "receiver_offset_is_not_generically_zero",
+      "passed": true,
+      "value": -0.00037710365937181913
+    },
+    {
+      "name": "omitting_receiver_clock_changes_count",
+      "passed": true,
+      "omitted_error": 0.09144748452608999
+    },
+    {
+      "name": "common_translation_derivative",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "common_translation_exact_count",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "rotation_invariant_count",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "rotation_invariant_derivative",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "constant_background_accelerating_path_finite_count_derivative",
+      "passed": true,
+      "error": 6.664062357497613e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "constant_background_accelerating_closed",
+      "passed": true,
+      "error": 6.938893903907228e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "constant_background_accelerating_nonzero",
+      "passed": true,
+      "value": 0.03082392888537673
+    },
+    {
+      "name": "augmented_tangent_solver_success",
+      "passed": true
+    },
+    {
+      "name": "augmented_state_and_clock_-3.0",
+      "passed": true,
+      "error": 1.239653935058982e-10,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_state_and_clock_0.0",
+      "passed": true,
+      "error": 1.1531364196848415e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_state_and_clock_2.0",
+      "passed": true,
+      "error": 5.1001225742641765e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_state_and_clock_5.0",
+      "passed": true,
+      "error": 7.013674474531939e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_receiver_time_a",
+      "passed": true,
+      "error": 3.0418246810270944e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_emission_time_a",
+      "passed": true,
+      "error": 3.819799920812272e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_receiver_time_b",
+      "passed": true,
+      "error": 3.166172879431883e-11,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_emission_time_b",
+      "passed": true,
+      "error": 1.0185620125113815e-09,
+      "tolerance": 3e-07
+    },
+    {
+      "name": "augmented_paths_subluminal",
+      "passed": true
+    },
+    {
+      "name": "augmented_count_derivative",
+      "passed": true,
+      "error": 9.994801319912483e-09,
+      "tolerance": 3e-07
+    }
+  ],
+  "tables": {
+    "static_time_profile": {
+      "analytic": -0.6612319999999997,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": -0.6612320853433218,
+          "absolute_error": 8.534332207599249e-08
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -0.6612320213354117,
+          "absolute_error": 2.1335411992673414e-08
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -0.6612320053340781,
+          "absolute_error": 5.334078401197928e-09
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": -0.6612320012610695,
+          "absolute_error": 1.2610698041370938e-09
+        }
+      ]
+    },
+    "static_space_profile": {
+      "analytic": -0.6612319999999997,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": -0.6612320853430553,
+          "absolute_error": 8.534305562246658e-08
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -0.6612320213359446,
+          "absolute_error": 2.1335944899725234e-08
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -0.6612320053340781,
+          "absolute_error": 5.334078401197928e-09
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": -0.6612320013317685,
+          "absolute_error": 1.3317688063452238e-09
+        }
+      ]
+    },
+    "static_constant_profile": {
+      "analytic": 0.0,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 2.220446049250313e-13,
+          "absolute_error": 2.220446049250313e-13
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -8.881784197001252e-14,
+          "absolute_error": 8.881784197001252e-14
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -7.105427357601002e-13,
+          "absolute_error": 7.105427357601002e-13
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.0,
+          "absolute_error": 0.0
+        }
+      ]
+    },
+    "full": {
+      "analytic": 0.10828058002000411,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.10828056725324942,
+          "absolute_error": 1.2766754695081595e-08
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.10828057682656933,
+          "absolute_error": 3.193434780501825e-09
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.10828057922172007,
+          "absolute_error": 7.982840360964971e-10
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.10828057982408268,
+          "absolute_error": 1.9592143185587219e-10
+        }
+      ]
+    },
+    "field_only": {
+      "analytic": 0.08351084665065325,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.08351084215356686,
+          "absolute_error": 4.4970863977145115e-09
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.08351084552513655,
+          "absolute_error": 1.125516707611851e-09
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.08351084636881723,
+          "absolute_error": 2.818360267387021e-10
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.08351084658038133,
+          "absolute_error": 7.027192716613229e-11
+        }
+      ]
+    },
+    "path_only": {
+      "analytic": 0.025146837028722648,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.025146836286138452,
+          "absolute_error": 7.425841955233103e-10
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.025146836842804277,
+          "absolute_error": 1.8591837097625685e-10
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.025146836982337106,
+          "absolute_error": 4.638554124136718e-11
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.02514683701804188,
+          "absolute_error": 1.0680768769422144e-11
+        }
+      ]
+    },
+    "clock_only": {
+      "analytic": -0.0003771036593718191,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": -0.0003771036586552867,
+          "absolute_error": 7.165323564518877e-13
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -0.00037710365958787406,
+          "absolute_error": 2.1605498423324376e-13
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -0.00037710366083132385,
+          "absolute_error": 1.459504771813419e-12
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": -0.0003771036578115172,
+          "absolute_error": 1.5603018551670067e-12
+        }
+      ]
+    },
+    "emitter_clock_only": {
+      "analytic": 0.0,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.0,
+          "absolute_error": 0.0
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.0,
+          "absolute_error": 0.0
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -3.552713678800501e-13,
+          "absolute_error": 3.552713678800501e-13
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 7.105427357601002e-13,
+          "absolute_error": 7.105427357601002e-13
+        }
+      ]
+    },
+    "receiver_clock_only": {
+      "analytic": -0.0003771036593718191,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": -0.0003771036586552867,
+          "absolute_error": 7.165323564518877e-13
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": -0.00037710365958787406,
+          "absolute_error": 2.1605498423324376e-13
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": -0.00037710366083132385,
+          "absolute_error": 1.459504771813419e-12
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": -0.00037710365852205996,
+          "absolute_error": 8.497591194069065e-13
+        }
+      ]
+    },
+    "constant_background_accelerating_path": {
+      "analytic": 0.03082392888537673,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.03082393311995002,
+          "absolute_error": 4.234573289241261e-09
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.030823929944778783,
+          "absolute_error": 1.0594020521947911e-09
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.030823929150347595,
+          "absolute_error": 2.649708646940141e-10
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.030823928952017354,
+          "absolute_error": 6.664062357497613e-11
+        }
+      ]
+    },
+    "augmented_dynamic_model": {
+      "analytic": 0.6663152445067285,
+      "finite_differences": [
+        {
+          "epsilon": 0.01,
+          "derivative": 0.6663146005833731,
+          "absolute_error": 6.439233554145218e-07
+        },
+        {
+          "epsilon": 0.005,
+          "derivative": 0.6663150836060616,
+          "absolute_error": 1.609006669012203e-07
+        },
+        {
+          "epsilon": 0.0025,
+          "derivative": 0.6663152043193676,
+          "absolute_error": 4.01873608835146e-08
+        },
+        {
+          "epsilon": 0.00125,
+          "derivative": 0.6663152345119272,
+          "absolute_error": 9.994801319912483e-09
+        }
+      ],
+      "force_prescription": "F_ext(t,v)-epsilon*(1-v^2)*(grad a+v partial_t a); F_ext supplied in coordinate units",
+      "initial_state_variations": [
+        0.02,
+        -0.01,
+        0.005,
+        0.004,
+        -0.003,
+        0.002,
+        0.07,
+        -0.01,
+        0.02,
+        -0.005,
+        -0.006,
+        0.005,
+        0.001,
+        -0.05
+      ]
+    }
+  },
+  "author_sources_read_before_run": false,
+  "empirical_tests": 0,
+  "source_sha256": "f403b7a190006448e843589523f7f339919eb9b325a6522798dd4bb241e26c40",
+  "precheck_sha256": "632e23a86381fcf8f5befca662456f25b687e94b9372014691c4f3ae00d1209f",
+  "protocol_sha256": "1312e1092790c9e8803b78d67937fd912f2a76e8d636599a7d25710a39469e1e",
+  "elapsed_seconds": 0.229438915848732,
+  "scope": "Synthetic conditional one-way proper-clock count response. Numerical quadrature/ODE/root solves are not interval certification; no actual calibration or energy inference."
+}

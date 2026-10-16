@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-15T03:43:01.653302+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Only v2-to-v3 mathematical note delta and interaction with unchanged reviewed operator; no new adjoint code or numerical experiment verification.",
+  "sources": {
+    "JOINT_CLOCK_FORCE_WORKING_v2.md": "7ac81b681804460dfb277b4e2fa369b69ed138b68f833d103a9e547f81de7f7c",
+    "JOINT_CLOCK_FORCE_WORKING_v3.md": "c90af86ca2008d4d31e857bf4f7b6a7fe5b73b7ad0c307f65ac08eb3bff62605"
+  },
+  "historical_v2_binding": {
+    "AUTHOR_SOURCE_COMPARISON_v1.md": "a72bba3e9364fafdb7f09f6a237c52b6013e2502595e2c19ace2e115c773d0a4",
+    "AUTHOR_SOURCE_COMPARISON_IDENTITY_v1.json": "fd9fb89d9da92218e8111d49b9ca9d908c91faa9976c8032c7ae56f3a58c4770",
+    "INDEPENDENT_IDENTITY_v1.json": "2302220706faa680308abd1fb48ddb46e2993ef8f5370a89327ecf084853adc8"
+  },
+  "files": {
+    "V3_AFFECTED_DIFF_v1.patch": "2161c410d1ae103f63a26d68fb4c1e4371e65d5b714d096c5f044c2230e43507",
+    "V3_AFFECTED_CONFIRMATION_v1.md": "262be03a1cd583f20bd203c8c7e7a44e75ecf09148d95e1faa550a12be964ac6",
+    "V3_AFFECTED_RESULTS_v1.json": "3d5411fa262222b6cad5860a66d6181cc44dda7b96b01f01121c05be4c0cee37"
+  },
+  "result": "No unresolved scoped mathematical discrepancy; numerical example and new adjoint implementation expressly outside certification."
+}

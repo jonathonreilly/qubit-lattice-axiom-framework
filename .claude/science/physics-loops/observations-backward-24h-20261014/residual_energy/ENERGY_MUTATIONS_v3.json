@@ -1,0 +1,195 @@
+{
+  "purpose": "Deliberately wrong scientific/operator variants, not empirical validation",
+  "variants": [
+    {
+      "name": "hat_normalization",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "fa0691db1f5b4b34e785d400357c118a2eac1af3075324f37012b99d74ac6ad7",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.4792158748023212,
+      "last_stderr": "AssertionError: ('constant_duration_count_vs_hat_0', 0.1061032953945969, 2e-09)"
+    },
+    {
+      "name": "hat_neighbor_sign",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "9098e084ceb12a6607fa2e5cca180ba2f45e64eaf5e62837baeb7aeb92501abb",
+      "replacement_count": 2,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.2979957088828087,
+      "last_stderr": "AssertionError: ('closed_inverse_2', 1.3333333333333333, 2e-09)"
+    },
+    {
+      "name": "unequal_difference_sign",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "3260e6ed4cd4ec1168b0ac569c72b6b9e642f05f50b1d731b58aa081df6c16d5",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.29090475011616945,
+      "last_stderr": "AssertionError: ('constant_velocity_cancellation_0', 2.0, 2e-09)"
+    },
+    {
+      "name": "vector_primitive_sign",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "9226ff28e3c392236fb53ab0f3fcbf268937427d4b12b153931ead53eb76f185",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.31243745936080813,
+      "last_stderr": "AssertionError: ('vector_time_domain_identity', 50.91117478492731, 2e-08)"
+    },
+    {
+      "name": "clock_jacobian_omission",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "ed44874b705763008977eaaecbc46edea8a3ebdc94b292f7c95a90573fb668f2",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.3056881669908762,
+      "last_stderr": "AssertionError: ('nonlinear_clock_0.1', 0.0170311251036368, 2e-09)"
+    },
+    {
+      "name": "energy_half_factor",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "b0a56a9e5f231ed85149eb60247b0e26e76982830dc2694a843dd3ef73fb7087",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.3694484159350395,
+      "last_stderr": "AssertionError: explicit_schwartz_above_infimum_0.3"
+    },
+    {
+      "name": "field_filter_power",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "0a4204db1cd74b35657dd1bc2bfae5c6f8e9747cfaeb7f6090c948e40d987231",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.37085504084825516,
+      "last_stderr": "AssertionError: ('explicit_schwartz_constraints_0.3', 1.509051853946316, 3e-08)"
+    },
+    {
+      "name": "error_radius_sign",
+      "module": "scalar_count_energy_controls",
+      "original_sha256": "2b2edb9c7247dc20d2397ff67349ce7e03407915463305189a884ecd5038b07c",
+      "mutant_sha256": "e8eac948ce66ed5b13ebd566ac125a571dd29b4ed460bcdb0f2e184bc78c7cbc",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.30609666695818305,
+      "last_stderr": "AssertionError: ('noise_ball_attainment_0', 3.68494288448004, 2e-09)"
+    },
+    {
+      "name": "parallel_velocity_power",
+      "module": "scalar_inertial_energy_controls",
+      "original_sha256": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+      "mutant_sha256": "c4549ed8c5429c89889c9451301c5b40aff66afe70b25797584fa8ff72b63982",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.2789454166777432,
+      "last_stderr": "AssertionError: ('lab_angle_tensor_0.001', 5.305162648072681e-08, 2e-09)"
+    },
+    {
+      "name": "perpendicular_tensor_factor",
+      "module": "scalar_inertial_energy_controls",
+      "original_sha256": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+      "mutant_sha256": "04e44902a439b5dd6b83fb195956c893da4027b232a47127775e364750a199b9",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.2835997501388192,
+      "last_stderr": "AssertionError: ('lab_angle_tensor_0.07', 0.026421769713150887, 2e-09)"
+    },
+    {
+      "name": "doppler_phase_sign",
+      "module": "scalar_inertial_energy_controls",
+      "original_sha256": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+      "mutant_sha256": "e8205587cb075cb0db4ec415432476a04d60c30386314e46ff81de8e8399112c",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.50959891686216,
+      "last_stderr": "AssertionError: ('massless_lab_vs_time_0.35', 0.15086161197106612, 2e-08)"
+    },
+    {
+      "name": "partial_time_force_omission",
+      "module": "scalar_inertial_energy_controls",
+      "original_sha256": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+      "mutant_sha256": "ba8ef4e9b100e5dfe83ca6787def0689cd43e76e2065bb9295047f73d810aaab",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.5197490002028644,
+      "last_stderr": "AssertionError: ('massless_lab_vs_time_0.35', 0.03771540299276609, 2e-08)"
+    },
+    {
+      "name": "boost_energy_factor",
+      "module": "scalar_inertial_energy_controls",
+      "original_sha256": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+      "mutant_sha256": "da1e4b31335f308b0511ef244632cb5cb8f5d8ea8781ae7f194b20e8463fa0e1",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.52706129103899,
+      "last_stderr": "AssertionError: ('massless_boost_vs_time_0.35', 0.024245940654221032, 2e-09)"
+    },
+    {
+      "name": "mass_threshold",
+      "module": "scalar_inertial_energy_controls",
+      "original_sha256": "1952f032c9801e2592b71f46be7fb7f0981d7f467cf2ec7e2c09188fcb3184c2",
+      "mutant_sha256": "3d83032260ac167900c115dda705add478896bc1acbec4421f6bd6f6d83f909f",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.5591938747093081,
+      "last_stderr": "AssertionError: ('massive_lab_vs_boost_(0.35, 0.25)', 0.0028352310697223326, 1e-07)"
+    },
+    {
+      "name": "compression_endpoint_scale",
+      "module": "cassini_count_window_controls",
+      "original_sha256": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e",
+      "mutant_sha256": "f6d700333525c5ae27fb2686343a1c82fd7c50bbfd8441227db7cbe0630888ae",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 1.4872763329185545,
+      "last_stderr": "AssertionError"
+    },
+    {
+      "name": "gap_bridge",
+      "module": "cassini_count_window_controls",
+      "original_sha256": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e",
+      "mutant_sha256": "59322ce36328be33f8c110987be1ee1c7072b5d230adba9280dcb2ac6bf984b8",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.609867291059345,
+      "last_stderr": "AssertionError"
+    },
+    {
+      "name": "raw_moment_units",
+      "module": "cassini_count_window_controls",
+      "original_sha256": "288f9e8db8987ab2b9e01b980b10adfccc9a4f280f1385643b200deb7b3de14e",
+      "mutant_sha256": "f38721f733abde2ccd2fbb75e38f8e50f90253c1c81bae888ca2654051443385",
+      "replacement_count": 1,
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "elapsed_sec": 0.6078229579143226,
+      "last_stderr": "AssertionError"
+    }
+  ],
+  "counts": {
+    "assertion_rejected": 17
+  }
+}

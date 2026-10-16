@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-15T03:57:21.801674+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Exact coherent fixture author-source and packaging-equivalence comparison only.",
+  "sources": {
+    "working_note": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/COHERENT_EXACT_ENERGY_WORKING_v1.md",
+      "sha256": "c4457b88521f426dde272db43cdee77712f5a8779764aef39823c5320e55cc99"
+    },
+    "working_code": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/coherent_exact_energy_v1.py",
+      "sha256": "81dbec52ef73deb04aef25dee498a839f1e1f7664615cb8355e01a09d1aeb92f"
+    },
+    "working_result": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/COHERENT_EXACT_ENERGY_RESULTS_v1.json",
+      "sha256": "58885fa5ad2c05d9ad438e5461e4bc857a01a038da1eef43ff374f542803ea62"
+    },
+    "packaged_code": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_coherent_exact_energy_controls.py",
+      "sha256": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f"
+    },
+    "canonical_note": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "72113d39011cd2a29beb3355edae2d122549f0369769fdb59b51594f48a9e711"
+    }
+  },
+  "files": {
+    "COHERENT_TWO_LEG_IDENTITY_v1.json": "9745c76dc778c59169ebcec5d4078d9789d5d1bb8a04630c84672c2be129137f",
+    "COHERENT_TWO_LEG_REVIEW_v1.md": "2347cde604f7b7d7b31523fb28d107053b3670a51d36ff8e7db8661f81b34aa0",
+    "COHERENT_AUTHOR_COMPARISON_v1.md": "a49e0a4cda283314cf355aa9a2f2fcbefb40329db4ca3cacc5e2de96752b29e5",
+    "COHERENT_AUTHOR_COMPARISON_RESULTS_v1.json": "04aa766aeb2bd8382228c775bcb98ba4f587b5eef8cf04cf8d9de418973a5bf0",
+    "COHERENT_COMPARISON_ORIGINAL_working_note_v1.md": "c4457b88521f426dde272db43cdee77712f5a8779764aef39823c5320e55cc99",
+    "COHERENT_COMPARISON_ORIGINAL_canonical_note_v1.md": "72113d39011cd2a29beb3355edae2d122549f0369769fdb59b51594f48a9e711"
+  },
+  "comparison_checks_passed": 18,
+  "comparison_checks_failed": 0,
+  "author_suites_rerun": false,
+  "mathematical_result": "Exact Gram, signs, factors and both wrong-variant matrices agree with frozen independent derivation.",
+  "wording_finding": "Make kappa multiplication of the count contrast explicit before absorbing alpha*kappa=1.",
+  "other_unresolved_scoped_discrepancies": []
+}

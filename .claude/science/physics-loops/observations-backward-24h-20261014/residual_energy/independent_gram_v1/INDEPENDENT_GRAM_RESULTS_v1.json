@@ -1,0 +1,840 @@
+{
+  "created_at": "2026-10-15T02:18:04.787601+00:00",
+  "reviewer": "/root/localized_history_check",
+  "author_code_read_before_independent_run": false,
+  "checks_passed": 110,
+  "checks": [
+    {
+      "name": "time_overlap_tridiagonal_1_0.6",
+      "passed": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "closed_inverse_1_0.6",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "closed_eigenvalues_1_0.6",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "energy_normalization_1_0.6",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "time_overlap_tridiagonal_1_1.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "closed_inverse_1_1.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "closed_eigenvalues_1_1.7",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "energy_normalization_1_1.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "time_overlap_tridiagonal_2_0.6",
+      "passed": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "closed_inverse_2_0.6",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "closed_eigenvalues_2_0.6",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "energy_normalization_2_0.6",
+      "passed": true,
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "time_overlap_tridiagonal_2_1.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "closed_inverse_2_1.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "closed_eigenvalues_2_1.7",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "energy_normalization_2_1.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "time_overlap_tridiagonal_4_0.6",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "closed_inverse_4_0.6",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "closed_eigenvalues_4_0.6",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "energy_normalization_4_0.6",
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "name": "time_overlap_tridiagonal_4_1.7",
+      "passed": true,
+      "max_error": 3.469446951953614e-18
+    },
+    {
+      "name": "closed_inverse_4_1.7",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "closed_eigenvalues_4_1.7",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "energy_normalization_4_1.7",
+      "passed": true,
+      "max_error": 2.2737367544323206e-13
+    },
+    {
+      "name": "time_overlap_tridiagonal_9_0.6",
+      "passed": true,
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "name": "closed_inverse_9_0.6",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "closed_eigenvalues_9_0.6",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "energy_normalization_9_0.6",
+      "passed": true,
+      "max_error": 3.410605131648481e-13
+    },
+    {
+      "name": "time_overlap_tridiagonal_9_1.7",
+      "passed": true,
+      "max_error": 1.5612511283791264e-17
+    },
+    {
+      "name": "closed_inverse_9_1.7",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "closed_eigenvalues_9_1.7",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "energy_normalization_9_1.7",
+      "passed": true,
+      "max_error": 2.773958840407431e-11
+    },
+    {
+      "name": "arbitrary_shift_overlap_-2.5",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_-2.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_-1.75",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_-1.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_-0.25",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_0.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_0.4",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_1.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_1.8",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_2.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "arbitrary_shift_overlap_2.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "filtered_exact_constraints_K4_mu0.0",
+      "passed": true,
+      "max_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "filtered_positive_Gram_K4_mu0.0",
+      "passed": true
+    },
+    {
+      "name": "filtered_energy_above_infimum_K4",
+      "passed": true
+    },
+    {
+      "name": "actual_3D_Fourier_energy_mu0.0",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "actual_3D_Fourier_constraints_mu0.0",
+      "passed": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "real_data_symmetry_q_mu0.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "real_data_symmetry_p_mu0.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "direct_time_window_of_actual_field_mu0.0",
+      "passed": true,
+      "max_error": 4.996003610813204e-16
+    },
+    {
+      "name": "radial_kernel_energy_mu0.0",
+      "passed": true,
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "radial_kernel_observations_mu0.0",
+      "passed": true,
+      "max_error": 3.267874882718813e-17
+    },
+    {
+      "name": "radial_kernel_energy_orthogonality_mu0.0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "invisible_added_energy_mu0.0",
+      "passed": true,
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "filtered_exact_constraints_K12_mu0.0",
+      "passed": true,
+      "max_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "filtered_positive_Gram_K12_mu0.0",
+      "passed": true
+    },
+    {
+      "name": "filtered_energy_above_infimum_K12",
+      "passed": true
+    },
+    {
+      "name": "filtered_exact_constraints_K36_mu0.0",
+      "passed": true,
+      "max_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "filtered_positive_Gram_K36_mu0.0",
+      "passed": true
+    },
+    {
+      "name": "filtered_energy_above_infimum_K36",
+      "passed": true
+    },
+    {
+      "name": "filtered_exact_constraints_K108_mu0.0",
+      "passed": true,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "name": "filtered_positive_Gram_K108_mu0.0",
+      "passed": true
+    },
+    {
+      "name": "filtered_energy_above_infimum_K108",
+      "passed": true
+    },
+    {
+      "name": "smooth_energy_approaches_infimum",
+      "passed": true,
+      "first_excess": 0.19419972522449183,
+      "last_excess": 0.007930622282224022
+    },
+    {
+      "name": "smooth_last_relative_excess",
+      "passed": true,
+      "relative_excess": 0.007930622282224022
+    },
+    {
+      "name": "filtered_exact_constraints_K4_mu0.7",
+      "passed": true,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "name": "filtered_positive_Gram_K4_mu0.7",
+      "passed": true
+    },
+    {
+      "name": "actual_3D_Fourier_energy_mu0.7",
+      "passed": true,
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "name": "actual_3D_Fourier_constraints_mu0.7",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "real_data_symmetry_q_mu0.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "real_data_symmetry_p_mu0.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "direct_time_window_of_actual_field_mu0.7",
+      "passed": true,
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "name": "radial_kernel_energy_mu0.7",
+      "passed": true,
+      "max_error": 3.552713678800501e-15
+    },
+    {
+      "name": "radial_kernel_observations_mu0.7",
+      "passed": true,
+      "max_error": 2.50691390536168e-17
+    },
+    {
+      "name": "radial_kernel_energy_orthogonality_mu0.7",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "invisible_added_energy_mu0.7",
+      "passed": true,
+      "max_error": 5.329070518200751e-15
+    },
+    {
+      "name": "dependent_constraint_energy",
+      "passed": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "dependent_constraint_compatibility",
+      "passed": true,
+      "max_error": 8.326672684688674e-17
+    },
+    {
+      "name": "incompatible_data_detected",
+      "passed": true
+    },
+    {
+      "name": "pseudoinverse_ignores_inconsistent_component",
+      "passed": true
+    },
+    {
+      "name": "zero_observation_map_zero_data_energy",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "quotient_annihilation_4_0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "quotient_vs_KKT_4_0",
+      "passed": true,
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "KKT_constraint_4_0",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "weighted_projection_energy_4_0",
+      "passed": true,
+      "max_error": 1.7763568394002505e-14
+    },
+    {
+      "name": "quotient_basis_invariance_4_0",
+      "passed": true,
+      "max_error": 7.105427357601002e-15
+    },
+    {
+      "name": "redundant_quotient_rows_4_0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "quotient_annihilation_4_1",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "quotient_vs_KKT_4_1",
+      "passed": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "KKT_constraint_4_1",
+      "passed": true,
+      "max_error": 3.0531133177191805e-16
+    },
+    {
+      "name": "weighted_projection_energy_4_1",
+      "passed": true,
+      "max_error": 1.6053824936079764e-13
+    },
+    {
+      "name": "quotient_basis_invariance_4_1",
+      "passed": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "redundant_quotient_rows_4_1",
+      "passed": true,
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "name": "quotient_annihilation_7_0",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "quotient_vs_KKT_7_0",
+      "passed": true,
+      "max_error": 7.105427357601002e-14
+    },
+    {
+      "name": "KKT_constraint_7_0",
+      "passed": true,
+      "max_error": 2.4424906541753444e-15
+    },
+    {
+      "name": "weighted_projection_energy_7_0",
+      "passed": true,
+      "max_error": 2.4158453015843406e-13
+    },
+    {
+      "name": "quotient_basis_invariance_7_0",
+      "passed": true,
+      "max_error": 9.947598300641403e-14
+    },
+    {
+      "name": "redundant_quotient_rows_7_0",
+      "passed": true,
+      "max_error": 1.8474111129762605e-13
+    },
+    {
+      "name": "quotient_annihilation_7_1",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "quotient_vs_KKT_7_1",
+      "passed": true,
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "name": "KKT_constraint_7_1",
+      "passed": true,
+      "max_error": 1.5543122344752192e-15
+    },
+    {
+      "name": "weighted_projection_energy_7_1",
+      "passed": true,
+      "max_error": 1.1395329124752607e-12
+    },
+    {
+      "name": "quotient_basis_invariance_7_1",
+      "passed": true,
+      "max_error": 7.993605777301127e-15
+    },
+    {
+      "name": "redundant_quotient_rows_7_1",
+      "passed": true,
+      "max_error": 9.769962616701378e-15
+    },
+    {
+      "name": "singular_nuisance_correct_quotient",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "singular_nuisance_naive_false_zero",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "singular_nuisance_feasible_residual",
+      "passed": true,
+      "max_error": 0.0
+    },
+    {
+      "name": "singular_nuisance_eta_zero_infeasible",
+      "passed": true
+    }
+  ],
+  "smooth_Fourier_field_controls": [
+    {
+      "K": 4,
+      "eps": 0.25,
+      "mu": 0.0,
+      "T": 1.0,
+      "energy": 0.5320833042935136,
+      "residual": [
+        0.14,
+        -0.08,
+        0.23
+      ],
+      "filtered_Gram": [
+        [
+          0.05968271133896072,
+          -0.023630051773369198,
+          -0.007226625111725126
+        ],
+        [
+          -0.023630051773369198,
+          0.05968271133896073,
+          -0.023630051773369187
+        ],
+        [
+          -0.007226625111725126,
+          -0.023630051773369187,
+          0.05968271133896072
+        ]
+      ],
+      "filtered_energy_Gram": [
+        [
+          0.04175951799825193,
+          -0.013104965031841104,
+          -0.009236349167555075
+        ],
+        [
+          -0.013104965031841104,
+          0.04175951799825192,
+          -0.013104965031841099
+        ],
+        [
+          -0.009236349167555075,
+          -0.013104965031841099,
+          0.04175951799825192
+        ]
+      ],
+      "minimum_energy": 0.44555637809537246,
+      "relative_excess": 0.19419972522449183,
+      "max_Gram_difference": 0.04642058405563618,
+      "actual_Fourier_energy": 0.5320833042935131,
+      "direct_time_observations": [
+        0.13999999999999974,
+        -0.07999999999999974,
+        0.2299999999999995
+      ],
+      "invisible_energy": 9.65548074650618,
+      "combined_energy": 10.187564050799693
+    },
+    {
+      "K": 12,
+      "eps": 0.08333333333333333,
+      "mu": 0.0,
+      "T": 1.0,
+      "energy": 0.47809257058738397,
+      "residual": [
+        0.14,
+        -0.08,
+        0.23
+      ],
+      "filtered_Gram": [
+        [
+          0.09090797679020451,
+          -0.04312730853373137,
+          -0.002484010169547555
+        ],
+        [
+          -0.04312730853373137,
+          0.09090797679020457,
+          -0.04312730853373139
+        ],
+        [
+          -0.002484010169547555,
+          -0.04312730853373139,
+          0.09090797679020454
+        ]
+      ],
+      "filtered_energy_Gram": [
+        [
+          0.08449672982849676,
+          -0.03904300731669913,
+          -0.003499957063932989
+        ],
+        [
+          -0.03904300731669913,
+          0.08449672982849671,
+          -0.03904300731669912
+        ],
+        [
+          -0.0034999570639329854,
+          -0.03904300731669912,
+          0.0844967298284968
+        ]
+      ],
+      "minimum_energy": 0.44555637809537246,
+      "relative_excess": 0.07302373861439158,
+      "max_Gram_difference": 0.015195318604392383
+    },
+    {
+      "K": 36,
+      "eps": 0.027777777777777776,
+      "mu": 0.0,
+      "T": 1.0,
+      "energy": 0.4562451410562477,
+      "residual": [
+        0.14,
+        -0.08,
+        0.23
+      ],
+      "filtered_Gram": [
+        [
+          0.10108795948840187,
+          -0.049732393258123175,
+          -0.0008310100155958754
+        ],
+        [
+          -0.049732393258123175,
+          0.10108795948840137,
+          -0.04973239325812301
+        ],
+        [
+          -0.0008310100155958788,
+          -0.04973239325812301,
+          0.1010879594884016
+        ]
+      ],
+      "filtered_energy_Gram": [
+        [
+          0.09899530355601632,
+          -0.04836100120783873,
+          -0.0011746618394837226
+        ],
+        [
+          -0.04836100120783873,
+          0.09899530355601616,
+          -0.048361001207838726
+        ],
+        [
+          -0.001174661839483719,
+          -0.048361001207838726,
+          0.09899530355601605
+        ]
+      ],
+      "minimum_energy": 0.44555637809537246,
+      "relative_excess": 0.023989698018838088,
+      "max_Gram_difference": 0.005015335906195531
+    },
+    {
+      "K": 108,
+      "eps": 0.009259259259259259,
+      "mu": 0.0,
+      "T": 1.0,
+      "energy": 0.44908991743548266,
+      "residual": [
+        0.14,
+        -0.08,
+        0.23
+      ],
+      "filtered_Gram": [
+        [
+          0.10443743602196699,
+          -0.051943827912033724,
+          -0.0002771249754943625
+        ],
+        [
+          -0.05194382791203374,
+          0.1044374360219675,
+          -0.05194382791203389
+        ],
+        [
+          -0.000277124975494359,
+          -0.05194382791203389,
+          0.10443743602196706
+        ]
+      ],
+      "filtered_energy_Gram": [
+        [
+          0.10374566251212403,
+          -0.05148537682860732,
+          -0.00039189200230802315
+        ],
+        [
+          -0.05148537682860732,
+          0.10374566251212365,
+          -0.05148537682860742
+        ],
+        [
+          -0.0003918920023080162,
+          -0.05148537682860742,
+          0.10374566251212364
+        ]
+      ],
+      "minimum_energy": 0.44555637809537246,
+      "relative_excess": 0.007930622282224022,
+      "max_Gram_difference": 0.0016658593726299048
+    },
+    {
+      "K": 4,
+      "eps": 0.25,
+      "mu": 0.7,
+      "T": 1.0,
+      "energy": 0.881994921648895,
+      "residual": [
+        0.14,
+        -0.08,
+        0.23
+      ],
+      "filtered_Gram": [
+        [
+          0.04711646681105906,
+          -0.025211144926867206,
+          -0.002691806399580601
+        ],
+        [
+          -0.025211144926867202,
+          0.047116466811059056,
+          -0.025211144926867195
+        ],
+        [
+          -0.0026918063995805992,
+          -0.025211144926867195,
+          0.04711646681105906
+        ]
+      ],
+      "filtered_energy_Gram": [
+        [
+          0.032428739583509905,
+          -0.015331092334773205,
+          -0.005234142854657503
+        ],
+        [
+          -0.015331092334773205,
+          0.0324287395835099,
+          -0.015331092334773203
+        ],
+        [
+          -0.005234142854657502,
+          -0.015331092334773203,
+          0.032428739583509905
+        ]
+      ],
+      "actual_Fourier_energy": 0.8819949216488943,
+      "direct_time_observations": [
+        0.13999999999999976,
+        -0.07999999999999965,
+        0.22999999999999934
+      ],
+      "invisible_energy": 11.674119921242404,
+      "combined_energy": 12.556114842891297
+    }
+  ],
+  "singular_nuisance_counterexample": {
+    "G": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "B": [
+      [
+        1.0
+      ],
+      [
+        1.0
+      ]
+    ],
+    "d": [
+      0.0,
+      1.0
+    ],
+    "correct_minimum_energy": 0.5,
+    "naive_infeasible_value": 0.0
+  },
+  "elapsed_seconds": 0.06505349976941943,
+  "source_sha256": {
+    "independent_gram_check_v1.py": "36f859f4c14992740f31bbaf23ff597c115348099013b045855959ff914f6fda",
+    "GRAM_PRECHECK_v1.md": "0f9ed691bca4e74bb58fb544186dee7506ccff291f91a85e54d3b8984a81081d",
+    "DERIVATION_v1.md": "fd0f660b86d47f444236ad0a2e13c416c23a0f9d52442d7a5dafd7afb8aa05e1"
+  },
+  "scope": "Independent conditional real-KG mathematical controls with actual smooth Fourier fields, no author code imports, no raw data, no physical energy or residual calibration, no interval certification and no theory-wide no-go."
+}

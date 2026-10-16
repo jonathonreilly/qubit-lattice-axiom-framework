@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-15T02:45:47.233474+00:00",
+  "finding": "A merely increasing map need not justify the inverse Jacobian/change of variables.",
+  "repair": "Explicit C1 map with derivative bounded positively on finite intervals; inverse is absolutely continuous. L2 transformed-kernel premise retained. No tested smooth formula or executable changed.",
+  "old_note_sha256": "1047bac3e489a443c9308d006dcfaa79f14429b991b5c2f543c70881a3f478f3",
+  "new_note_sha256": "f6c0936a00c83070081797a59ef55c66ce5856c15e344d6a73b5fc496498988b",
+  "reported_by": "/root/inertial_response_check"
+}

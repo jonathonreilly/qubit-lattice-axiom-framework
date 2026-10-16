@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-15T02:16:16.467096+00:00",
+  "author": "/root",
+  "role": "reuse of exposed development data for nominal count-window geometry; no gravity fit or independent test",
+  "inputs": {
+    "odf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304,
+      "filename": "c32easc2002_169_0000xmmmv0.odf"
+    },
+    "odf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903,
+      "filename": "odf_c32easc2002_169_0000xmmmv0.lbl"
+    }
+  },
+  "procedures": [
+    "Decode all91863orbit records with the frozen published ODF decoder; retain non-Doppler accounting.",
+    "Partition Doppler types11,12,13 by all static instrument/configuration fields except time, observable, compression and delays. Keep validity as an explicit stratum; never clip by measurement values.",
+    "Use exact doubled-millisecond nominal interval endpoints from mid-time and compression duration. This is the existing archive count convention, not a derived station proper-time or physical acceleration map.",
+    "Sort each stream by (nominal interval start,end,record). Record gaps, overlaps, duplicates and changes; split a contiguous nonoverlapping run whenever endpoint adjacency fails.",
+    "Compute window durations, chain lengths, dimensionless duration ratios and exact adjacent-window Gram diagonal/offdiagonal formulas from timing.",
+    "Optionally report the raw frequency weighted-variance functional on each complete chain, never call it a scalar residual, energy in physical units, error bar or exclusion. Keep every chain and bad/oneway stratum. No selection by values.",
+    "Preserve all outcomes and full chain ledger locally; compact timing summaries can be reviewed. Compare an independently decoded timing inventory before publication."
+  ],
+  "not_permitted_in_this_protocol": [
+    "opening reserved calibration/validation raw products",
+    "treating storage quantum as physical noise",
+    "fitting a trajectory, scalar coupling, physical energy or initial state",
+    "assigning the minimum-energy optimizer as the physical initial field"
+  ],
+  "physical_mapping_premises": [
+    "actual calibrated count response to projected velocity",
+    "proper clock and reference/ramp/electronic effects",
+    "path/direction and source dynamics",
+    "validity/error/forcing and nonlinear approximation budgets"
+  ],
+  "preexisting_exposure": "All values in day169 ODF/ATDF were previously exposed in M2; no new independent holdout."
+}

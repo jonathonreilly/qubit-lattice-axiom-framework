@@ -1,0 +1,440 @@
+{
+  "role": "synthetic operator controls; no physical trajectory or data fit",
+  "checks_passed": 81,
+  "checks": [
+    {
+      "name": "lab_angle_tensor_0.0",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_0.0",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_0.0",
+      "passed": true
+    },
+    {
+      "name": "lab_angle_tensor_1e-05",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_1e-05",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_1e-05",
+      "passed": true
+    },
+    {
+      "name": "lab_angle_tensor_0.001",
+      "error": 6.938893903907228e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_0.001",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_0.001",
+      "passed": true
+    },
+    {
+      "name": "lab_angle_tensor_0.07",
+      "error": 2.282896094385478e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_0.07",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_0.07",
+      "passed": true
+    },
+    {
+      "name": "lab_angle_tensor_0.4",
+      "error": 2.0816681711721685e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_0.4",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_0.4",
+      "passed": true
+    },
+    {
+      "name": "lab_angle_tensor_0.8",
+      "error": 1.0408340855860843e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_0.8",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_0.8",
+      "passed": true
+    },
+    {
+      "name": "lab_angle_tensor_0.95",
+      "error": 8.673617379884035e-19,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_0.95",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_0.95",
+      "passed": true
+    },
+    {
+      "name": "lab_angle_tensor_0.99",
+      "error": 8.673617379884035e-19,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "tensor_positive_0.99",
+      "passed": true
+    },
+    {
+      "name": "stationary_enclosure_0.99",
+      "passed": true
+    },
+    {
+      "name": "zero_velocity_tensor",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "massless_general_vector_pd_0.0",
+      "passed": true
+    },
+    {
+      "name": "massless_lab_vs_time_0.0",
+      "error": 8.326672684688674e-16,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "massless_boost_vs_time_0.0",
+      "error": 3.3861802251067274e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.0, 0.25)",
+      "error": 2.6098012639863555e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.0, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.0, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.0, 1.0)",
+      "error": 2.95666269245487e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.0, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.0, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.0, 3.0)",
+      "error": 2.358213450903701e-13,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.0, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.0, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "massless_general_vector_pd_0.35",
+      "passed": true
+    },
+    {
+      "name": "massless_lab_vs_time_0.35",
+      "error": 1.0130785099704553e-15,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "massless_boost_vs_time_0.35",
+      "error": 3.0253577421035516e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.35, 0.25)",
+      "error": 2.212813265956015e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.35, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.35, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.35, 1.0)",
+      "error": 2.6732088764802597e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.35, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.35, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.35, 3.0)",
+      "error": 2.8566211895952875e-13,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.35, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.35, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "omitting_partial_time_changes_response_0.35",
+      "passed": true
+    },
+    {
+      "name": "massless_general_vector_pd_0.72",
+      "passed": true
+    },
+    {
+      "name": "massless_lab_vs_time_0.72",
+      "error": 1.3600232051658168e-15,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "massless_boost_vs_time_0.72",
+      "error": 1.582067810090848e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.72, 0.25)",
+      "error": 1.0402095851347326e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.72, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.72, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.72, 1.0)",
+      "error": 1.5537848785385222e-12,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.72, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.72, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.72, 3.0)",
+      "error": 4.569938177878541e-13,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.72, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.72, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "omitting_partial_time_changes_response_0.72",
+      "passed": true
+    },
+    {
+      "name": "massless_general_vector_pd_0.9",
+      "passed": true
+    },
+    {
+      "name": "massless_lab_vs_time_0.9",
+      "error": 7.4593109467002705e-16,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "massless_boost_vs_time_0.9",
+      "error": 7.216449660063518e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.9, 0.25)",
+      "error": 3.2490676815655206e-13,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.9, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.9, 0.25)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.9, 1.0)",
+      "error": 5.720007800746885e-13,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.9, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.9, 1.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_lab_vs_boost_(0.9, 3.0)",
+      "error": 4.308081669179842e-13,
+      "tolerance": 1e-07
+    },
+    {
+      "name": "massive_gram_positive_(0.9, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "massive_gram_enclosure_(0.9, 3.0)",
+      "passed": true
+    },
+    {
+      "name": "omitting_partial_time_changes_response_0.9",
+      "passed": true
+    },
+    {
+      "name": "mixed_modes_shared_energy_enclosure",
+      "passed": true
+    },
+    {
+      "name": "inverse_energy_inequality",
+      "passed": true
+    },
+    {
+      "name": "count_vector_cancellation",
+      "error": 1.4705904771170472e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "count_metric_enclosure",
+      "passed": true
+    },
+    {
+      "name": "inertial_count_nuisance_quotient",
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2e-08
+    }
+  ],
+  "mass_samples": [
+    {
+      "beta": 0.0,
+      "mu": 0.25,
+      "lab_boost_max_error": 2.6098012639863555e-12,
+      "smallest_mass_gap_eigenvalue": 0.0013843274062746566
+    },
+    {
+      "beta": 0.0,
+      "mu": 1.0,
+      "lab_boost_max_error": 2.95666269245487e-12,
+      "smallest_mass_gap_eigenvalue": 0.014459766671474616
+    },
+    {
+      "beta": 0.0,
+      "mu": 3.0,
+      "lab_boost_max_error": 2.358213450903701e-13,
+      "smallest_mass_gap_eigenvalue": 0.043828572947123064
+    },
+    {
+      "beta": 0.35,
+      "mu": 0.25,
+      "lab_boost_max_error": 2.212813265956015e-12,
+      "smallest_mass_gap_eigenvalue": 0.0010799324414513074
+    },
+    {
+      "beta": 0.35,
+      "mu": 1.0,
+      "lab_boost_max_error": 2.6732088764802597e-12,
+      "smallest_mass_gap_eigenvalue": 0.01140955813053039
+    },
+    {
+      "beta": 0.35,
+      "mu": 3.0,
+      "lab_boost_max_error": 2.8566211895952875e-13,
+      "smallest_mass_gap_eigenvalue": 0.036234506924245284
+    },
+    {
+      "beta": 0.72,
+      "mu": 0.25,
+      "lab_boost_max_error": 1.0402095851347326e-12,
+      "smallest_mass_gap_eigenvalue": 0.0003445991442886795
+    },
+    {
+      "beta": 0.72,
+      "mu": 1.0,
+      "lab_boost_max_error": 1.5537848785385222e-12,
+      "smallest_mass_gap_eigenvalue": 0.0038014884394278465
+    },
+    {
+      "beta": 0.72,
+      "mu": 3.0,
+      "lab_boost_max_error": 4.569938177878541e-13,
+      "smallest_mass_gap_eigenvalue": 0.014121151211083122
+    },
+    {
+      "beta": 0.9,
+      "mu": 0.25,
+      "lab_boost_max_error": 3.2490676815655206e-13,
+      "smallest_mass_gap_eigenvalue": 5.83039117028439e-05
+    },
+    {
+      "beta": 0.9,
+      "mu": 1.0,
+      "lab_boost_max_error": 5.720007800746885e-13,
+      "smallest_mass_gap_eigenvalue": 0.0006695524402658828
+    },
+    {
+      "beta": 0.9,
+      "mu": 3.0,
+      "lab_boost_max_error": 4.308081669179842e-13,
+      "smallest_mass_gap_eigenvalue": 0.002866594741569052
+    }
+  ],
+  "mixed_mode_energy": {
+    "actual_required": 23.45901252911146,
+    "stationary_enclosure_lower": 13.247547021551028
+  },
+  "new_empirical_values": 0
+}

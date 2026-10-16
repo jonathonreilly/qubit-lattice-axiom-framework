@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-10-15T03:55:50.403497+00:00",
+  "canonical_source_hashes": {
+    "docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "72113d39011cd2a29beb3355edae2d122549f0369769fdb59b51594f48a9e711",
+    "scripts/scalar_accelerated_coherent_count_check.py": "b03883fbaafd9adc1bf7a849051ffa35c9dbd233c925e798f555f60eabfef7b9",
+    "scripts/scalar_accelerated_gram_controls.py": "49a1ac95f7126e1c83aabecf009e0d5947ad92039f9caa9e352441fe12e1376d",
+    "scripts/scalar_proper_count_controls.py": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+    "scripts/scalar_count_adjoint_controls.py": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+    "scripts/scalar_coherent_count_controls.py": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+    "scripts/scalar_coherent_exact_energy_controls.py": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f"
+  },
+  "helper_adaptations": [
+    {
+      "working": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/joint_gram_controls_v2.py",
+      "working_sha256": "4bd9f3ba99369437ceefedb803bc6aae5d4d552c06b5d7e7a00b2501ab62a975",
+      "canonical": "scripts/scalar_accelerated_gram_controls.py",
+      "canonical_sha256": "49a1ac95f7126e1c83aabecf009e0d5947ad92039f9caa9e352441fe12e1376d",
+      "historical_adaptation_hash": "e4e5f49470ace2b92195a5317bf7807e9ccdc3446c2ae803aabb209dba0249d4",
+      "all_nonentry_scientific_functions_ast_identical": true,
+      "nonentry_functions": {
+        "quad": true,
+        "angular": true,
+        "path": true,
+        "windows": true,
+        "density": true,
+        "time_gram": true,
+        "wave_gram": true,
+        "arrival_gram": true
+      },
+      "entry_calculation_prefix_ast_identical": true
+    },
+    {
+      "working": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/proper_count_endpoint_controls_v2.py",
+      "working_sha256": "00c0b049351cbc366da89fe78831a9c48677fee08026b455562385c87022b5e6",
+      "canonical": "scripts/scalar_proper_count_controls.py",
+      "canonical_sha256": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+      "historical_adaptation_hash": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+      "all_nonentry_scientific_functions_ast_identical": true,
+      "nonentry_functions": {
+        "ref": true,
+        "variation": true,
+        "field": true,
+        "lapse": true,
+        "clock": true,
+        "clock_variation": true,
+        "light_time": true,
+        "observed_phase": true,
+        "predicted_chi": true
+      },
+      "entry_calculation_prefix_ast_identical": true
+    },
+    {
+      "working": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/proper_count_adjoint_controls_v2.py",
+      "working_sha256": "89521be38bf9859653b7e3bdd8fc8af9d99b805a4672f1ddde82144bf5510d13",
+      "canonical": "scripts/scalar_count_adjoint_controls.py",
+      "canonical_sha256": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+      "historical_adaptation_hash": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+      "all_nonentry_scientific_functions_ast_identical": true,
+      "nonentry_functions": {
+        "acceleration_ref": true,
+        "matrices": true,
+        "source": true,
+        "linear": true,
+        "observations": true,
+        "forward": true,
+        "adjoint": true,
+        "nonlinear": true,
+        "nonlinear_counts": true
+      },
+      "entry_calculation_prefix_ast_identical": true
+    },
+    {
+      "working": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/coherent_count_controls_v1.py",
+      "working_sha256": "9446547baea019679960bc4d718f84f4aab340e17dde5323a1c9ce783107b92b",
+      "canonical": "scripts/scalar_coherent_count_controls.py",
+      "canonical_sha256": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+      "historical_adaptation_hash": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+      "all_nonentry_scientific_functions_ast_identical": true,
+      "nonentry_functions": {
+        "events": true,
+        "endpoint_atoms": true,
+        "observations": true,
+        "nonlinear_counts": true
+      },
+      "entry_calculation_prefix_ast_identical": true
+    },
+    {
+      "working": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/coherent_exact_energy_v1.py",
+      "working_sha256": "81dbec52ef73deb04aef25dee498a839f1e1f7664615cb8355e01a09d1aeb92f",
+      "canonical": "scripts/scalar_coherent_exact_energy_controls.py",
+      "canonical_sha256": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f",
+      "historical_adaptation_hash": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f",
+      "all_nonentry_scientific_functions_ast_identical": true,
+      "nonentry_functions": {
+        "times": true,
+        "rectangles": true,
+        "wave_events": true,
+        "partitions": true,
+        "integrate_poly": true,
+        "time_matrix": true,
+        "spectral_matrix": true
+      },
+      "entry_calculation_prefix_ast_identical": true
+    }
+  ],
+  "suite_rerun": false
+}

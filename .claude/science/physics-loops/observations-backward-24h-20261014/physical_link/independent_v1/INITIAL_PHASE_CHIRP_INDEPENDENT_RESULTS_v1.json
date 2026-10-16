@@ -1,0 +1,71 @@
+{
+  "scope": "Focused independent exact mathematical controls; synthetic supplied operators only, no observations, physical calibration, formal audit or source edits.",
+  "script_sha256": "f60366b98fd9d91856c226ee1a6020b29e37c236525ed0870a4827eb28bebdd8",
+  "source_snapshot_sha256": {
+    "INITIAL_PHASE_ELIMINATION_v1_SNAPSHOT.md": "af50288fa56e9a6e18f01bbf12956ec85d1a33f64b39182e470cec159e9e93ff",
+    "INITIAL_PHASE_ELIMINATION_v2_SNAPSHOT.md": "e1966dbf396ff12892818b4dafd585e8ff3473c96b421d89d7a100c6f16ec856",
+    "CHIRPED_COHERENT_PHASE_OPERATOR_v1_SNAPSHOT.md": "fbccc83584029ff10d5fccb234f85341190973f44159ffc06c111e1a0e370dbf"
+  },
+  "checks_by_family": {
+    "cumulative_map": 2,
+    "contrast_dimension": 1,
+    "exact_contrasts": 14,
+    "converse_witness": 6,
+    "constant_operator": 1,
+    "projected_amplitude": 2,
+    "minimum_norm": 25,
+    "physical_error": 2,
+    "signature_overlap": 1,
+    "count_error": 25,
+    "count_error_bound": 1,
+    "covariance": 2,
+    "false_endpoint_independence": 2,
+    "affine_robustness": 125,
+    "joint_error_decomposition": 41,
+    "joint_error_bound": 123,
+    "nonlinear_remainder_witness": 3,
+    "joint_counterexample": 1,
+    "chirp_inverse": 320,
+    "chirp_determinant": 160,
+    "chirp_singularity_identity": 160,
+    "chirp_phase_normalization": 160,
+    "chirp_rank": 8,
+    "common_chirp": 16,
+    "chirp_singularity": 4,
+    "chirp_taylor": 75,
+    "common_chirp_target": 1
+  },
+  "checks": 1281,
+  "failed_checks": 0,
+  "failures": [],
+  "details": {
+    "synthetic_design": {
+      "endpoints": 9,
+      "rank_W": 2,
+      "rank_K": 4,
+      "contrast_dimension": 7,
+      "physical_scope": "Positive two-uplink, three-link-shaped rational operator with declared synthetic nuisance columns; not Cassini data or a calibrated chirp model."
+    },
+    "joint_counterexample": {
+      "observed_operator_bound": 0,
+      "nominal_count_bound": 1,
+      "actual_error": 2,
+      "true_family_bound": 2
+    },
+    "nonlinear_remainder_witness": {
+      "lambda": "1/2",
+      "zero_counts": true,
+      "leakage": "1",
+      "doubled_initial_state_leakage": "2",
+      "interpretation": "Exact affine-family elimination cannot be applied to a truncated nonlinear inverse-row family without controlling its remainder times the initial phase."
+    },
+    "chirp_scope": "Two coherent-ratio families, one using sourced Cassini ratios, with wholly synthetic positive carriers and states. This does not establish the local-frequency/ray/clock model or data availability."
+  },
+  "limitations": [
+    "Exact finite examples supplement the analytic derivation, not universal numerical proof.",
+    "No author runner was imported or reviewed; no raw product or ancillary measurement was opened.",
+    "Known operators, correct nuisance/signature spaces and error envelopes remain supplied physical premises.",
+    "The affine inverse-row family is exact by construction; it is not obtained by truncating an arbitrary physical chirp family.",
+    "Pure count-induced endpoint covariance can be singular; the note's positive-definite supplied covariance is a separate conditional case."
+  ]
+}

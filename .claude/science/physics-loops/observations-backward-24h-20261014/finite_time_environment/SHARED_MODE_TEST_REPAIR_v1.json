@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-15T01:42:59.313508+00:00",
+  "finding": "The finite random joint-mode samples did not reject a missing factor2 in the shared bound. The separately written aligned equality tested a different expression.",
+  "original_source_sha256": "ce9e9d300049478374652c679d3e6fc189a9565014956ac0ba1be3c6c83090e8",
+  "original_record": "HISTORY_MUTATIONS_v1.json",
+  "original_outcome": "28assertion rejections;1survivor shared_mode_budget",
+  "repair": "One mode_energy_bound function now supplies both random and exact aligned attainment controls; proof unchanged. The aligned fixture tests the same production formula.",
+  "final_source_sha256": "f178ee6df06f7d391e5b9eae26cb4c665afcde458b9afb1fc9f8abe3683a2353",
+  "verification": "Targeted force-family mutation rerun pending; original evidence preserved."
+}

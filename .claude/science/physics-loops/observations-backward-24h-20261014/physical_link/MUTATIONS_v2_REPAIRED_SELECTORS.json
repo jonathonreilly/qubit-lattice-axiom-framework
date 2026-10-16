@@ -1,0 +1,30 @@
+{
+  "scope": "Load-bearing formula/domain mutations on scratch copies; positive author run remains separate. Related symbolic, rational and witness checks are grouped by the changed scientific mechanism.",
+  "results": [
+    {
+      "name": "count_error_propagation",
+      "helper": "scripts/coherent_count_initial_phase_controls.py",
+      "changed_from": "b=[sum((h[i]*rows[i] for i in range(k,n+1)),s.zeros(1,3)) for k in range(1,n+1)]",
+      "changed_to": "b=[sum((h[i]*rows[i] for i in range(k+1,n+1)),s.zeros(1,3)) for k in range(1,n+1)]",
+      "source_sha256": "74554c02590e0ebb0a730ba0f86a47bb222853f7fb1d0ccb52facb3023e6254a",
+      "mutant_sha256": "fbd2c7c432720c0167761cb84ccf764638a2c7bc3a89d9abe75d71bc4bf6d1fd",
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "last_error": "AssertionError: increment_error_propagation_exact"
+    },
+    {
+      "name": "chirp_symbolic_inverse",
+      "helper": "scripts/coherent_count_chirp_controls.py",
+      "changed_from": "v=s.diag(X,X,K)*w/denominator",
+      "changed_to": "v=w/denominator",
+      "source_sha256": "9254de2d47f12eb1a5114b08e3b9844e4f561eb913fbff0bb21d4c282361b66b",
+      "mutant_sha256": "84d74b9e910230be2da6a58bb55394795c7fb2103ce6014120c5e52906a98f15",
+      "exit_code": 1,
+      "status": "assertion_rejected",
+      "last_error": "AssertionError: symbolic_inverse_row"
+    }
+  ],
+  "total": 2,
+  "assertion_rejected": 2,
+  "survived": 0
+}

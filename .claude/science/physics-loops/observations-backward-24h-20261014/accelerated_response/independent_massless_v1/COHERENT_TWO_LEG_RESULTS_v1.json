@@ -1,0 +1,2660 @@
+{
+  "at": "2026-10-15T03:51:14.567226+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Independent ideal massless stationary coherent two-leg composition; before author coherent source access.",
+  "author_coherent_source_read": false,
+  "norm": "||h||^2=2E",
+  "R": "3/5",
+  "receiver_endpoints": [
+    "7/5",
+    "12/5",
+    "17/5"
+  ],
+  "contrast_coefficients": [
+    1,
+    -2,
+    1
+  ],
+  "second_channel_translation": 1,
+  "coupling_times_turnaround": 1,
+  "pi_times_gram_matrix": [
+    [
+      "766/405",
+      "-1871/1620"
+    ],
+    [
+      "-1871/1620",
+      "766/405"
+    ]
+  ],
+  "exact": {
+    "0": {
+      "pi_times_gram": "766/405",
+      "decimal": 0.6020379575723053,
+      "angular_overlap": "3064/405",
+      "angular_distance": "-6128/405"
+    },
+    "1": {
+      "pi_times_gram": "-1871/1620",
+      "decimal": -0.3676282697838718,
+      "angular_overlap": "-1871/405",
+      "angular_distance": "3742/405"
+    }
+  },
+  "pi_times_eigenvalues": [
+    "1193/1620",
+    "329/108"
+  ],
+  "checks_passed": 61,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "overlap_exact_delta_0",
+      "passed": true,
+      "pi_times_gram": "766/405"
+    },
+    {
+      "name": "direct_phase_exact_delta_0",
+      "passed": true,
+      "pi_times_gram": "766/405"
+    },
+    {
+      "name": "two_representations_delta_0",
+      "passed": true
+    },
+    {
+      "name": "overlap_exact_delta_1",
+      "passed": true,
+      "pi_times_gram": "-1871/1620"
+    },
+    {
+      "name": "direct_phase_exact_delta_1",
+      "passed": true,
+      "pi_times_gram": "-1871/1620"
+    },
+    {
+      "name": "two_representations_delta_1",
+      "passed": true
+    },
+    {
+      "name": "two_channel_positive_definite",
+      "passed": true,
+      "pi_times_eigenvalues": [
+        "1193/1620",
+        "329/108"
+      ]
+    },
+    {
+      "name": "stationary_direct_field_normalization",
+      "passed": true,
+      "pi_times_gram": "1"
+    },
+    {
+      "name": "original_null_leg_integral_(0, 0.31, -1.0)",
+      "passed": true,
+      "absolute_error": 1.5543122344752192e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 0.31, -0.7)",
+      "passed": true,
+      "absolute_error": 2.918462810976448e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 0.31, -0.1)",
+      "passed": true,
+      "absolute_error": 9.731535859790136e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 0.31, 0.37)",
+      "passed": true,
+      "absolute_error": 8.404086261191095e-16,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 0.31, 0.9)",
+      "passed": true,
+      "absolute_error": 1.4216744185433493e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 0.31, 1.0)",
+      "passed": true,
+      "absolute_error": 1.790180836524724e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 2.7, -1.0)",
+      "passed": true,
+      "absolute_error": 8.9428585234983e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 2.7, -0.7)",
+      "passed": true,
+      "absolute_error": 4.186821633428203e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 2.7, -0.1)",
+      "passed": true,
+      "absolute_error": 1.0814330239763486e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 2.7, 0.37)",
+      "passed": true,
+      "absolute_error": 1.1095572462949832e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 2.7, 0.9)",
+      "passed": true,
+      "absolute_error": 8.74603687876966e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 2.7, 1.0)",
+      "passed": true,
+      "absolute_error": 9.652991770674309e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 9.4, -1.0)",
+      "passed": true,
+      "absolute_error": 1.0262809400873094e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 9.4, -0.7)",
+      "passed": true,
+      "absolute_error": 3.4113844484490214e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 9.4, -0.1)",
+      "passed": true,
+      "absolute_error": 9.301758070207368e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 9.4, 0.37)",
+      "passed": true,
+      "absolute_error": 2.2492101938802613e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 9.4, 0.9)",
+      "passed": true,
+      "absolute_error": 2.3265393188055747e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 9.4, 1.0)",
+      "passed": true,
+      "absolute_error": 1.1231704443070244e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 23.0, -1.0)",
+      "passed": true,
+      "absolute_error": 8.327814211769876e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 23.0, -0.7)",
+      "passed": true,
+      "absolute_error": 1.0145207566569258e-12,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 23.0, -0.1)",
+      "passed": true,
+      "absolute_error": 1.1930102259812548e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 23.0, 0.37)",
+      "passed": true,
+      "absolute_error": 3.243149269979823e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 23.0, 0.9)",
+      "passed": true,
+      "absolute_error": 2.2469523906632222e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(0, 23.0, 1.0)",
+      "passed": true,
+      "absolute_error": 6.637688383448737e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 0.31, -1.0)",
+      "passed": true,
+      "absolute_error": 2.673771110915334e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 0.31, -0.7)",
+      "passed": true,
+      "absolute_error": 2.7829895750534264e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 0.31, -0.1)",
+      "passed": true,
+      "absolute_error": 1.6663172569541125e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 0.31, 0.37)",
+      "passed": true,
+      "absolute_error": 2.5066604164831255e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 0.31, 0.9)",
+      "passed": true,
+      "absolute_error": 4.934930051181425e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 0.31, 1.0)",
+      "passed": true,
+      "absolute_error": 4.965068306494546e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 2.7, -1.0)",
+      "passed": true,
+      "absolute_error": 2.4193041091143997e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 2.7, -0.7)",
+      "passed": true,
+      "absolute_error": 2.0120378015673113e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 2.7, -0.1)",
+      "passed": true,
+      "absolute_error": 1.6811551921266607e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 2.7, 0.37)",
+      "passed": true,
+      "absolute_error": 2.0333370225588732e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 2.7, 0.9)",
+      "passed": true,
+      "absolute_error": 2.756999942568961e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 2.7, 1.0)",
+      "passed": true,
+      "absolute_error": 2.8712900296511795e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 9.4, -1.0)",
+      "passed": true,
+      "absolute_error": 3.4107901638000697e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 9.4, -0.7)",
+      "passed": true,
+      "absolute_error": 4.4784746860568673e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 9.4, -0.1)",
+      "passed": true,
+      "absolute_error": 9.532223616141728e-14,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 9.4, 0.37)",
+      "passed": true,
+      "absolute_error": 1.7879461912006319e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 9.4, 0.9)",
+      "passed": true,
+      "absolute_error": 3.548650714839054e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 9.4, 1.0)",
+      "passed": true,
+      "absolute_error": 2.4039300004964877e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 23.0, -1.0)",
+      "passed": true,
+      "absolute_error": 8.645334565910251e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 23.0, -0.7)",
+      "passed": true,
+      "absolute_error": 9.640390598800266e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 23.0, -0.1)",
+      "passed": true,
+      "absolute_error": 1.9593205786596604e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 23.0, 0.37)",
+      "passed": true,
+      "absolute_error": 1.883912214590983e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 23.0, 0.9)",
+      "passed": true,
+      "absolute_error": 1.1665457109225422e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "original_null_leg_integral_(1, 23.0, 1.0)",
+      "passed": true,
+      "absolute_error": 9.384768222983441e-13,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "arbitrary_initial_state_cancellation_0",
+      "passed": true
+    },
+    {
+      "name": "arbitrary_initial_state_cancellation_1",
+      "passed": true
+    },
+    {
+      "name": "constant_field_clock_column_zero",
+      "passed": true
+    },
+    {
+      "name": "longitudinal_plane_wave_zero_-1",
+      "passed": true
+    },
+    {
+      "name": "longitudinal_plane_wave_zero_1",
+      "passed": true
+    }
+  ],
+  "exact_integration_trace": {
+    "0": {
+      "overlap_pieces": [
+        {
+          "pair": [
+            0,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "-13/162"
+        },
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "-415/162"
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/15"
+        },
+        {
+          "pair": [
+            1,
+            0
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "-13/162"
+        },
+        {
+          "pair": [
+            1,
+            0
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "-415/162"
+        },
+        {
+          "pair": [
+            1,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "-415/162"
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "-13/162"
+        },
+        {
+          "pair": [
+            2,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/15"
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "-415/162"
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "-13/162"
+        },
+        {
+          "pair": [
+            2,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        }
+      ],
+      "direct_phase_pieces": [
+        {
+          "pair": [
+            0,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/5"
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "88/15"
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-64/15"
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            1,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/5"
+        },
+        {
+          "pair": [
+            1,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/15"
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/15"
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            2,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            2,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            2,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            2,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            2,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            2,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            3,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            3,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/15"
+        },
+        {
+          "pair": [
+            3,
+            2
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            3,
+            2
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            3,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/5"
+        },
+        {
+          "pair": [
+            3,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            3,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            3,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "88/15"
+        },
+        {
+          "pair": [
+            3,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            4,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "88/15"
+        },
+        {
+          "pair": [
+            4,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            4,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            4,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/5"
+        },
+        {
+          "pair": [
+            4,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            4,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            4,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/15"
+        },
+        {
+          "pair": [
+            4,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            4,
+            8
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            4,
+            8
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            5,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            5,
+            1
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            5,
+            1
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            5,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            5,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            5,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            5,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            5,
+            6
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            5,
+            6
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            5,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            5,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            6,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            6,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/15"
+        },
+        {
+          "pair": [
+            6,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            6,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            6,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/15"
+        },
+        {
+          "pair": [
+            6,
+            5
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            6,
+            5
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            6,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/5"
+        },
+        {
+          "pair": [
+            6,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            7,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-64/15"
+        },
+        {
+          "pair": [
+            7,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            7,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            7,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "88/15"
+        },
+        {
+          "pair": [
+            7,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            7,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            7,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/5"
+        },
+        {
+          "pair": [
+            7,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            7,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            8,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            8,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            8,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            8,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            8,
+            4
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "215/81"
+        },
+        {
+          "pair": [
+            8,
+            4
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "-1/81"
+        },
+        {
+          "pair": [
+            8,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            8,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            8,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            8,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        }
+      ]
+    },
+    "1": {
+      "overlap_pieces": [
+        {
+          "pair": [
+            0,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "215/162"
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            1,
+            0
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "25/162"
+        },
+        {
+          "pair": [
+            1,
+            0
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "185/162"
+        },
+        {
+          "pair": [
+            1,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "215/162"
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            2,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-28/15"
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "185/162"
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "25/162"
+        },
+        {
+          "pair": [
+            2,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-8/3"
+        }
+      ],
+      "direct_phase_pieces": [
+        {
+          "pair": [
+            0,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-44/15"
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/3"
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/3"
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "128/15"
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8"
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-28/5"
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4"
+        },
+        {
+          "pair": [
+            1,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/15"
+        },
+        {
+          "pair": [
+            1,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "-215/162"
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "1/162"
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "32/15"
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/3"
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-12/5"
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8"
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4"
+        },
+        {
+          "pair": [
+            2,
+            0
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "1/162"
+        },
+        {
+          "pair": [
+            2,
+            0
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "-215/162"
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/3"
+        },
+        {
+          "pair": [
+            2,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            2,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/3"
+        },
+        {
+          "pair": [
+            2,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4"
+        },
+        {
+          "pair": [
+            2,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4"
+        },
+        {
+          "pair": [
+            2,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8"
+        },
+        {
+          "pair": [
+            3,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            3,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/5"
+        },
+        {
+          "pair": [
+            3,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            3,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "32/3"
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-176/15"
+        },
+        {
+          "pair": [
+            3,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            3,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/3"
+        },
+        {
+          "pair": [
+            3,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "128/15"
+        },
+        {
+          "pair": [
+            3,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            4,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/5"
+        },
+        {
+          "pair": [
+            4,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            4,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            4,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/15"
+        },
+        {
+          "pair": [
+            4,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "32/3"
+        },
+        {
+          "pair": [
+            4,
+            5
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "-430/81"
+        },
+        {
+          "pair": [
+            4,
+            5
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "2/81"
+        },
+        {
+          "pair": [
+            4,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "32/15"
+        },
+        {
+          "pair": [
+            4,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/3"
+        },
+        {
+          "pair": [
+            4,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            5,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            5,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            5,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            5,
+            3
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "2/81"
+        },
+        {
+          "pair": [
+            5,
+            3
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "-430/81"
+        },
+        {
+          "pair": [
+            5,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-16/3"
+        },
+        {
+          "pair": [
+            5,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "32/3"
+        },
+        {
+          "pair": [
+            5,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            5,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/3"
+        },
+        {
+          "pair": [
+            5,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-32/3"
+        },
+        {
+          "pair": [
+            6,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            6,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/15"
+        },
+        {
+          "pair": [
+            6,
+            2
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "1/162"
+        },
+        {
+          "pair": [
+            6,
+            2
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "-215/162"
+        },
+        {
+          "pair": [
+            6,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            6,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/5"
+        },
+        {
+          "pair": [
+            6,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            6,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-44/15"
+        },
+        {
+          "pair": [
+            6,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/3"
+        },
+        {
+          "pair": [
+            7,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-44/15"
+        },
+        {
+          "pair": [
+            7,
+            1
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            7,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/3"
+        },
+        {
+          "pair": [
+            7,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "16/5"
+        },
+        {
+          "pair": [
+            7,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            7,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            7,
+            6
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/15"
+        },
+        {
+          "pair": [
+            7,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            7,
+            8
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "-215/162"
+        },
+        {
+          "pair": [
+            7,
+            8
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "1/162"
+        },
+        {
+          "pair": [
+            8,
+            0
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/3"
+        },
+        {
+          "pair": [
+            8,
+            1
+          ],
+          "interval": [
+            "-1",
+            "2/3"
+          ],
+          "integral": "-215/162"
+        },
+        {
+          "pair": [
+            8,
+            1
+          ],
+          "interval": [
+            "2/3",
+            "1"
+          ],
+          "integral": "1/162"
+        },
+        {
+          "pair": [
+            8,
+            2
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        },
+        {
+          "pair": [
+            8,
+            3
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            8,
+            4
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            8,
+            5
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "0"
+        },
+        {
+          "pair": [
+            8,
+            6
+          ],
+          "interval": [
+            "-1",
+            "-2/3"
+          ],
+          "integral": "1/162"
+        },
+        {
+          "pair": [
+            8,
+            6
+          ],
+          "interval": [
+            "-2/3",
+            "1"
+          ],
+          "integral": "-215/162"
+        },
+        {
+          "pair": [
+            8,
+            7
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "-4/3"
+        },
+        {
+          "pair": [
+            8,
+            8
+          ],
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "integral": "8/3"
+        }
+      ]
+    }
+  },
+  "source_sha256": "96c137ad703a9da7b7ca61afff6b583b715dc2e8e814934e0fc73282548a66df"
+}

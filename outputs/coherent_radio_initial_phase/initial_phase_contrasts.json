@@ -1,0 +1,85 @@
+{
+  "check_families": {
+    "invertible_synthetic_phase_operators": 9,
+    "projector_symmetric": 1,
+    "projector_idempotent": 1,
+    "projector_annihilates_declared_nuisance": 1,
+    "signal_has_nonzero_observable_contrast": 1,
+    "contrast_unit_signal": 1,
+    "contrast_eliminates_initial_phase": 1,
+    "contrast_eliminates_H": 1,
+    "cumulative_count_identity": 1,
+    "synthetic_amplitude_recovered": 1,
+    "arbitrary_initial_offset_contrast_invariant": 48,
+    "initial_offset_preserves_all_counts": 48,
+    "overlapping_signature_is_removed": 1,
+    "increment_error_propagation_exact": 1,
+    "increment_box_bound_saturated": 1,
+    "correlated_increment_variance": 1,
+    "dropping_increment_correlations_detected": 1,
+    "omitting_initial_nuisance_detected": 1,
+    "omitting_cumulative_sum_detected": 1,
+    "nominal_elimination_not_uniform_under_operator_error": 1,
+    "unbounded_state_amplifies_operator_error": 1,
+    "robust_affine_initial_elimination": 1,
+    "robust_contrast_ignores_unbounded_initial_example": 4,
+    "robust_rows_have_invertible_operator": 36,
+    "data_based_operator_bound": 4,
+    "nonzero_mean_with_identity_covariance": 1,
+    "unit_response_contrast_bias_not_zero": 1,
+    "known_mean_subtraction_removes_bias": 1,
+    "nominal_joint_bound_counterexample": 1,
+    "uniform_true_family_joint_bound": 1,
+    "affine_joint_operator_count_bound": 25
+  },
+  "total_pass": 198,
+  "total_fail": 0,
+  "synthetic_three_link_family": {
+    "endpoints": 9,
+    "W_rank": 3,
+    "joint_nuisance_rank": 5,
+    "available_contrast_dimension": 4,
+    "theta_true": "3/7",
+    "theta_recovered": "3/7",
+    "contrast": [
+      "-25782739851509125923961073180317338332685960377882625/574331487387343534008420019533119413835356829233374851",
+      "8939239689751499365390508246770840058280035665099765709/68919778486481224081010402343974329660242819508004982120",
+      "-1297465473333340262189597437361607518280497990687256393/22973259495493741360336800781324776553414273169334994040",
+      "-2403963997760960527825757094444130805205763115276446587/22973259495493741360336800781324776553414273169334994040",
+      "29073729724670191575812480071713903453238877642750822/2871657436936717670042100097665597069176784146166874255",
+      "1502604132594301157175127047606559531105934566308941071/13783955697296244816202080468794865932048563901600996424",
+      "895053193283759706689742457949894329627988022206746991/22973259495493741360336800781324776553414273169334994040",
+      "-9109868286582616022975175733802631877314196012992403007/68919778486481224081010402343974329660242819508004982120",
+      "1736448018040122317370848865241736531061944474769347591/34459889243240612040505201171987164830121409754002491060"
+    ],
+    "noise_box_bound": "134552829873245793054119413977810294506731523957272951526143117003/1549851527177185930119648894404213609351153306494028199093308027520000",
+    "correlated_variance": "9398767416331724988811748758473960368010888636794103161535487517587809273832415802403995416871740753822211243620120495047255845629/12010198781467277488745505586124147683227067445384847453098507595745998401908114995282105819234037667696755784123012304798365386752000"
+  },
+  "robust_affine_family": {
+    "uncertainty_basis_rank": 5,
+    "contrast_dimension": 4,
+    "cases": [
+      {
+        "lambda": "-1/5",
+        "actual_contrast_change": "51/5",
+        "bound": "137394/325"
+      },
+      {
+        "lambda": "0",
+        "actual_contrast_change": "0",
+        "bound": "0"
+      },
+      {
+        "lambda": "1/10",
+        "actual_contrast_change": "51/10",
+        "bound": "68697/325"
+      },
+      {
+        "lambda": "1/4",
+        "actual_contrast_change": "51/4",
+        "bound": "68697/130"
+      }
+    ]
+  },
+  "scope": "Exact rational synthetic tests of an explicitly supplied linear phase model. No actual plasma-free Cassini observable, physical covariance, scalar action/state/scale or empirical test is supplied."
+}

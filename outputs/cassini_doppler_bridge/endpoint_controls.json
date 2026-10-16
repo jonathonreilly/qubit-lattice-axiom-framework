@@ -1,0 +1,2197 @@
+{
+  "status": "conditional mathematics checked; no empirical gravity fit",
+  "runner_sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003",
+  "ramp_helper_sha256": "f6f20d30a557e03359ca1b28fc466805700122ca280819338da733eee80ca296",
+  "checks": [
+    {
+      "name": "station_clock_chain_symbolic",
+      "pass": true
+    },
+    {
+      "name": "integrated_clock_chain_symbolic",
+      "pass": true
+    },
+    {
+      "name": "extra_clock_multiplier_rejected",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_0",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_0",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_0",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_0",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_1",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_1",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_1",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_1",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_2",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_2",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_2",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_2",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_3",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_3",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_3",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_3",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_4",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_4",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_4",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_4",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_5",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_5",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_5",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_5",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_6",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_6",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_6",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_6",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_7",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_7",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_7",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_7",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_8",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_8",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_8",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_8",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_9",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_9",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_9",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_9",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_10",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_10",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_10",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_10",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_11",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_11",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_11",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_11",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_12",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_12",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_12",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_12",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_13",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_13",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_13",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_13",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_14",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_14",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_14",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_14",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_15",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_15",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_15",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_15",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_16",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_16",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_16",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_16",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_17",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_17",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_17",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_17",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_18",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_18",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_18",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_18",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_19",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_19",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_19",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_19",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_20",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_20",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_20",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_20",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_21",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_21",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_21",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_21",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_22",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_22",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_22",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_22",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_23",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_23",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_23",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_23",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_24",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_24",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_24",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_24",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_25",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_25",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_25",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_25",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_26",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_26",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_26",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_26",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_27",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_27",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_27",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_27",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_28",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_28",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_28",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_28",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_29",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_29",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_29",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_29",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_30",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_30",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_30",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_30",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_31",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_31",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_31",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_31",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_32",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_32",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_32",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_32",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_33",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_33",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_33",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_33",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_34",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_34",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_34",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_34",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_35",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_35",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_35",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_35",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_36",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_36",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_36",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_36",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_37",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_37",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_37",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_37",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_38",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_38",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_38",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_38",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_39",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_39",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_39",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_39",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_40",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_40",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_40",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_40",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_41",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_41",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_41",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_41",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_42",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_42",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_42",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_42",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_43",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_43",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_43",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_43",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_44",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_44",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_44",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_44",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_45",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_45",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_45",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_45",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_46",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_46",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_46",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_46",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_47",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_47",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_47",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_47",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_48",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_48",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_48",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_48",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_49",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_49",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_49",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_49",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_50",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_50",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_50",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_50",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_51",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_51",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_51",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_51",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_52",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_52",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_52",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_52",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_53",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_53",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_53",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_53",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_54",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_54",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_54",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_54",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_55",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_55",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_55",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_55",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_56",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_56",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_56",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_56",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_57",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_57",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_57",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_57",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_58",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_58",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_58",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_58",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_59",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_59",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_59",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_59",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_60",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_60",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_60",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_60",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_61",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_61",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_61",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_61",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_62",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_62",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_62",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_62",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_63",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_63",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_63",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_63",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_64",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_64",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_64",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_64",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_65",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_65",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_65",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_65",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_66",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_66",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_66",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_66",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_67",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_67",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_67",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_67",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_68",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_68",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_68",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_68",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_69",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_69",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_69",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_69",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_70",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_70",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_70",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_70",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_71",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_71",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_71",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_71",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_72",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_72",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_72",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_72",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_73",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_73",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_73",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_73",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_74",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_74",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_74",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_74",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_75",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_75",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_75",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_75",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_76",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_76",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_76",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_76",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_77",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_77",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_77",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_77",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_78",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_78",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_78",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_78",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_79",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_79",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_79",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_79",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_80",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_80",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_80",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_80",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_81",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_81",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_81",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_81",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_82",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_82",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_82",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_82",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_83",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_83",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_83",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_83",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_84",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_84",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_84",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_84",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_85",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_85",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_85",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_85",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_86",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_86",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_86",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_86",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_87",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_87",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_87",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_87",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_88",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_88",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_88",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_88",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_89",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_89",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_89",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_89",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_90",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_90",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_90",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_90",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_91",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_91",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_91",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_91",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_92",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_92",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_92",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_92",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_93",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_93",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_93",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_93",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_94",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_94",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_94",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_94",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_95",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_95",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_95",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_95",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_96",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_96",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_96",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_96",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_97",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_97",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_97",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_97",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_98",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_98",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_98",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_98",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_99",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_99",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_99",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_99",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_100",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_100",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_100",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_100",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_101",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_101",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_101",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_101",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_102",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_102",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_102",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_102",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_103",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_103",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_103",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_103",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_104",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_104",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_104",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_104",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_105",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_105",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_105",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_105",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_106",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_106",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_106",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_106",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_107",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_107",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_107",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_107",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_108",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_108",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_108",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_108",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_109",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_109",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_109",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_109",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_110",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_110",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_110",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_110",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_111",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_111",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_111",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_111",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_112",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_112",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_112",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_112",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_113",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_113",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_113",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_113",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_114",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_114",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_114",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_114",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_115",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_115",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_115",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_115",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_116",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_116",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_116",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_116",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_117",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_117",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_117",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_117",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_118",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_118",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_118",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_118",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_119",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_119",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_119",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_119",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_120",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_120",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_120",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_120",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_121",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_121",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_121",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_121",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_122",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_122",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_122",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_122",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_123",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_123",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_123",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_123",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_124",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_124",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_124",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_124",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_125",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_125",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_125",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_125",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_126",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_126",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_126",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_126",
+      "pass": true
+    },
+    {
+      "name": "affine_endpoint_exact_127",
+      "pass": true
+    },
+    {
+      "name": "quadratic_bound_127",
+      "pass": true
+    },
+    {
+      "name": "common_differential_decomposition_127",
+      "pass": true
+    },
+    {
+      "name": "shared_reference_cancellation_127",
+      "pass": true
+    },
+    {
+      "name": "continuous_slope_change_bound",
+      "pass": true
+    },
+    {
+      "name": "jump_exact_integral",
+      "pass": true
+    },
+    {
+      "name": "slope_only_bound_at_jump_rejected",
+      "pass": true
+    },
+    {
+      "name": "common_shift_cancels_constant",
+      "pass": true
+    },
+    {
+      "name": "common_shift_survives_ramp",
+      "pass": true
+    },
+    {
+      "name": "duration_error_retains_carrier",
+      "pass": true
+    },
+    {
+      "name": "absolute_endpoint_shift_rejected",
+      "pass": true
+    },
+    {
+      "name": "sign_of_roundtrip_shift_rejected",
+      "pass": true
+    },
+    {
+      "name": "reference_phase_degeneracy",
+      "pass": true
+    },
+    {
+      "name": "clock_origin_is_not_physical_error",
+      "pass": true
+    },
+    {
+      "name": "emission_duration_denominator_rejected",
+      "pass": true
+    }
+  ],
+  "passed": 526,
+  "failed": 0,
+  "rational_examples": [
+    {
+      "delta_s": {
+        "numerator": -111,
+        "denominator": 1000,
+        "approximate": -0.111
+      },
+      "delta_e": {
+        "numerator": 73,
+        "denominator": 500,
+        "approximate": 0.146
+      },
+      "exact": {
+        "numerator": 2912201,
+        "denominator": 160000,
+        "approximate": 18.20125625
+      },
+      "linear": {
+        "numerator": 1457,
+        "denominator": 80,
+        "approximate": 18.2125
+      },
+      "bound": {
+        "numerator": 33637,
+        "denominator": 800000,
+        "approximate": 0.04204625
+      }
+    },
+    {
+      "delta_s": {
+        "numerator": 51,
+        "denominator": 500,
+        "approximate": 0.102
+      },
+      "delta_e": {
+        "numerator": 3,
+        "denominator": 50,
+        "approximate": 0.06
+      },
+      "exact": {
+        "numerator": -381699,
+        "denominator": 280000,
+        "approximate": -1.3632107142857144
+      },
+      "linear": {
+        "numerator": -1917,
+        "denominator": 1400,
+        "approximate": -1.3692857142857142
+      },
+      "bound": {
+        "numerator": 3501,
+        "denominator": 280000,
+        "approximate": 0.012503571428571428
+      }
+    },
+    {
+      "delta_s": {
+        "numerator": -17,
+        "denominator": 1000,
+        "approximate": -0.017
+      },
+      "delta_e": {
+        "numerator": -37,
+        "denominator": 1000,
+        "approximate": -0.037
+      },
+      "exact": {
+        "numerator": -38079,
+        "denominator": 28000,
+        "approximate": -1.3599642857142857
+      },
+      "linear": {
+        "numerator": -1521,
+        "denominator": 1120,
+        "approximate": -1.3580357142857142
+      },
+      "bound": {
+        "numerator": 829,
+        "denominator": 280000,
+        "approximate": 0.0029607142857142857
+      }
+    }
+  ],
+  "scope": "Synthetic exact/symbolic controls. No data exposure, clock precision, mission mode or scalar model selected."
+}

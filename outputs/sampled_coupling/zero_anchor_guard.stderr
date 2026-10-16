@@ -1,0 +1,2 @@
+/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/coupling-mutation-vgf_fffe/scripts/sampled_coupling_math.py:27: RuntimeWarning: invalid value encountered in divide
+  return E, anchor, E[:, -1]/anchor, E[0, :]/anchor

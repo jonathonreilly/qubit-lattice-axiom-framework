@@ -1,6 +1,6 @@
 {
  "edge_count": 16048,
- "node_count": 7111,
+ "node_count": 7112,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19237,6 +19237,10 @@
   "same_law_plaquette_noether_record_discriminator_bounded_theorem_note_2026-09-08": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "sampled_coupling_reconstruction_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "scalar_3plus1_temporal_ratio_note": {
    "deps_hash": "e3b0c44298fc",

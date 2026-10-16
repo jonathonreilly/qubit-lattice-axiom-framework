@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-16T04:33:34.738451+00:00",
+  "base_sha": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "compiled": [
+    "scripts/sampled_coupling_inverse.py",
+    "scripts/sampled_coupling_math.py",
+    "outputs/sampled_coupling/run_mutations.py",
+    "outputs/sampled_coupling/independent/check.py"
+  ],
+  "json_files_parsed": 18,
+  "cache_status": "fresh",
+  "final_bindings_verified": true,
+  "citation_delta": {
+    "added": [
+      "sampled_coupling_reconstruction_note_2026-10-16"
+    ],
+    "removed": [],
+    "rewired": [],
+    "edge_count_unchanged": true
+  },
+  "discovered_packet": {
+    "claim_id": "sampled_coupling_reconstruction_note_2026-10-16",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/sampled_coupling_math.py"
+    ],
+    "note_hash": "d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b",
+    "path": "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md",
+    "runner_path": "scripts/sampled_coupling_inverse.py",
+    "title": "Relative coupling reconstruction from sampled clamped responses"
+  },
+  "links": [
+    {
+      "target": "https://arxiv.org/html/1612.00490v3",
+      "kind": "web"
+    },
+    {
+      "target": "https://arxiv.org/abs/2202.01922",
+      "kind": "web"
+    },
+    {
+      "target": "https://doi.org/10.1103/PhysRevLett.133.077301",
+      "kind": "web"
+    }
+  ],
+  "primary_controls": 44,
+  "independent_assertions": 135,
+  "mutations_detected": 21,
+  "shared_integrated_landing_validation": "pending; not claimed passed",
+  "scope": "Focused author source preflight; no audit verdict."
+}

@@ -1,0 +1,7 @@
+{
+  "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b",
+  "scripts/sampled_coupling_inverse.py": "500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20",
+  "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af",
+  "logs/runner-cache/sampled_coupling_inverse.txt": "8f47d26366060335d7b1fc719b95f26c4dbfe477c21765c59534dd43090b9bd4",
+  "outputs/sampled_coupling/cache_before_runner_label.txt": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd"
+}

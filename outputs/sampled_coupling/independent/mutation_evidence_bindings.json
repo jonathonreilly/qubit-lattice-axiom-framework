@@ -1,0 +1,160 @@
+{
+  "sources": {
+    "scripts/sampled_coupling_inverse.py": "500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20",
+    "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af",
+    "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "6e28e5afcba4c2557570ae2527c71f9ed1cf5a947c20005fa00e3f345c5da0e5"
+  },
+  "evidence": {
+    "outputs/sampled_coupling/affine_characteristic.stdout": "c41ed417d8a3ce5b1de52b390f77715e8fd7b5914ac8b2a98936773f199906b0",
+    "outputs/sampled_coupling/affine_characteristic.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/difference_recurrence.stdout": "2900df59bf98d2b195aee7cede75bc9746d226b0d1aa49593cdb392b1da8c991",
+    "outputs/sampled_coupling/difference_recurrence.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/cramer_sign.stdout": "b5c3e96636756e3d8696ae1e8464ebeb353384eb638db0da8cc8f7c4a50be913",
+    "outputs/sampled_coupling/cramer_sign.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/energy_dissipation.stdout": "29e10ca0feb3b1a5e194c62f7a48fe3a55a1c02becae795cf0240613833d74ae",
+    "outputs/sampled_coupling/energy_dissipation.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/calibration_matrix.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/calibration_matrix.stderr": "0f3e1d4a8222bb74860029fa313f09746ce2cca7f593aaef8d0c20a8c2335c2e",
+    "outputs/sampled_coupling/baseline_weight.stdout": "908b31f4a67e5c4a04207d4d64f25f58c28e10aabe561a014a40112e004371d0",
+    "outputs/sampled_coupling/baseline_weight.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/backward_weight.stdout": "ceb45c4956c3de43a7fb48fbcdc04543178914c169f3484b9109482731294ede",
+    "outputs/sampled_coupling/backward_weight.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/pulse_duration.stdout": "f5dcf3694457b413148e47ec9d7dc6019d6515aa1f342d858de219d32f0462a2",
+    "outputs/sampled_coupling/pulse_duration.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/green_normalization.stdout": "0af8290fcd2e9dabcd18dc222780b0150f00bda2ccd66797713bbf47f9894ada",
+    "outputs/sampled_coupling/green_normalization.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/surface_centering.stdout": "edb0ba0e06e487b2bc2cf1f90c77a325c7443eed01442707d130dd33b5b19a1b",
+    "outputs/sampled_coupling/surface_centering.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/surface_anchor.stdout": "7b93cf8842e2cb3f310cf468f3486dfba2f30c30b7944f098db8f6ca189ad7da",
+    "outputs/sampled_coupling/surface_anchor.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/p_sensitivity.stdout": "4cc31113507692660614fe5e5a161d91eeae500067a28b37a83cf09562730d90",
+    "outputs/sampled_coupling/p_sensitivity.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/coefficient_bound.stdout": "65e3220344eb0c1963e436f590b442df0362d469ac53c6a12c586df302f15b6b",
+    "outputs/sampled_coupling/coefficient_bound.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/calibration_bound.stdout": "bb1b90672ead61ad704b4fb2305bca49c10a7283b11902cafe926372bd114478",
+    "outputs/sampled_coupling/calibration_bound.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/ratio_margin.stdout": "f014b90982f004f02949222574e40b97bd7197e072815f0d30416d338e3afa33",
+    "outputs/sampled_coupling/ratio_margin.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/shape_error_terms.stdout": "41e9ed6faa6450e9256d136734c362bd792ebc3c227f93ff7aaa24ce2fb9d7c1",
+    "outputs/sampled_coupling/shape_error_terms.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/potential_cross_force.stdout": "6766c13ab4ba9f3c57c37d538d75e92c39b2f94263e96c3270f233fb2be83848",
+    "outputs/sampled_coupling/potential_cross_force.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/interaction_sign.stdout": "ee669537853f0542465fcd411669629d333e9d6684fb2be2165a8c710445ef6f",
+    "outputs/sampled_coupling/interaction_sign.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/nonpolynomial_shape.stdout": "5e102c7efe08d9e17ee6e6fe923d35a74abfe71336a2452ed930c7d94bdfca47",
+    "outputs/sampled_coupling/nonpolynomial_shape.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/second_mode_control.stdout": "2efaf4b199dfa205010e1cd703bc848bb64660e96853a557f0ca4abf2ec4305d",
+    "outputs/sampled_coupling/second_mode_control.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/sampled_coupling/zero_anchor_guard.stdout": "cf06de64aa043bc3254a75c78dbdf1c3cf86ba632289860a22052757302aa777",
+    "outputs/sampled_coupling/zero_anchor_guard.stderr": "a2b816cc697a094c8f4d197b11aecfb66517e4093365715ed6e442502c25c261",
+    "outputs/sampled_coupling/run_mutations.py": "f6bf1ae3da9815787759117031a6526f6a67667e649ce4cdaa1bab368a36b60b",
+    "outputs/sampled_coupling/mutation_controls_v1.json": "38be48447fd9e928fd98258f8c57642e14df95edf1ba002fa97f432ef1a5fd31"
+  },
+  "verified": [
+    {
+      "name": "affine_characteristic",
+      "mutated_sha256": "d347890c659f326cae5d31d231c939f75f7b56a0d10e027578bca9282ba63af7",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "difference_recurrence",
+      "mutated_sha256": "b5e7c75299c0f6da3c0c9caa955cc74515d824417a6370012b49f11dffa27652",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "cramer_sign",
+      "mutated_sha256": "1ba46e580c45f2cd033907f4b3845981cd6e77d5dea7ddc8ac2f0f5a6577154b",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "energy_dissipation",
+      "mutated_sha256": "5ff148c57c0c23e24871c255a86bf82dc2b048579c88c857319200c3a4e9fcf1",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "calibration_matrix",
+      "mutated_sha256": "5ac00c9089a6c61e0c0ca9b92f2878f70b6a0f0660c9617399c4af10f32a96e6",
+      "failure_kind": "inverse domain guard"
+    },
+    {
+      "name": "baseline_weight",
+      "mutated_sha256": "d6a6de55b9baebc5666a79eed702c0caa11f76c8aa29b7fb0e0fe23faf4d518f",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "backward_weight",
+      "mutated_sha256": "b12caf999166b17005c79a00b9f482f064615cd2d4127dafe67243615bc2f837",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "pulse_duration",
+      "mutated_sha256": "3f7dcadd5d0ac9226648f8c2733fd1af0527e93e6b783de8875c910bcfc4f968",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "green_normalization",
+      "mutated_sha256": "700e819a75055c268016ca37264f23ca9df5637016784a9789bd4332a8b2df77",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "surface_centering",
+      "mutated_sha256": "6588cc1d8e663aa23e966ee583c76fd7de83791162d6b4499e7a3e3f3463d71a",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "surface_anchor",
+      "mutated_sha256": "5f578440f8157780a186cb4e16710962c7e08428d5f72451c87131f401b63b51",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "p_sensitivity",
+      "mutated_sha256": "8d8951d1ab56815080715b792a0485ed400c37c5b07cc9c3bcf84b92c00c0e1a",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "coefficient_bound",
+      "mutated_sha256": "0105f8871afc31530898b8089edd089455ba10ae549fdfb5605db6e5605fbdab",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "calibration_bound",
+      "mutated_sha256": "564a6e0d45ff9b4e9f3322102b820e2ac803fd3e71da14fdc6609b15233205d6",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "ratio_margin",
+      "mutated_sha256": "679e205cf1abb90ac641688cc05d652ac0bac07a91c4180f54bcf3adfad0b92d",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "shape_error_terms",
+      "mutated_sha256": "277ddba062bfc92b3f06bb01b00f6942e7de957c0fe966f3078817124a6aea37",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "potential_cross_force",
+      "mutated_sha256": "c614ebc97023c7fcf550e04dd5751c65e80a99d4ee5eda3b5ade4fba48c5feaa",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "interaction_sign",
+      "mutated_sha256": "6d249d9113660ebd2c9e9a2fcc1a28d242cee2ff71ed09f14825b343d6bf356a",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "nonpolynomial_shape",
+      "mutated_sha256": "e5224cccff991236c7b1c657dc400a6ee48c506d1801beac39f839a9cba6b58c",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "second_mode_control",
+      "mutated_sha256": "a2525cf0b62dd6125890eee2da4f978fff275d0e4dd2fa5dabde2831713c83f7",
+      "failure_kind": "failed controls"
+    },
+    {
+      "name": "zero_anchor_guard",
+      "mutated_sha256": "a3ddfeb1d818650b894da60d42563a89b38fad163a25d6ec54aaceaa0927bbc1",
+      "failure_kind": "failed controls"
+    }
+  ]
+}

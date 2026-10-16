@@ -1,0 +1,17 @@
+group size 24
+basis dim (complex) 19 3.4043383598327637
+0 res 4.96e-01 moving weight 1.932e+00
+1 res 3.32e-01 moving weight 1.986e+00
+2 res 3.19e-15 moving weight 2.175e-07
+3 res 5.53e-02 moving weight 2.000e+00
+4 res 1.77e-02 moving weight 1.857e+00
+5 res 1.85e-03 moving weight 1.937e+00
+6 res 3.42e-03 moving weight 1.324e+00
+7 res 1.77e-02 moving weight 1.859e+00
+8 res 7.85e-02 moving weight 1.669e+00
+9 res 5.16e-02 moving weight 2.000e+00
+10 res 3.32e-01 moving weight 1.986e+00
+11 res 1.77e-02 moving weight 1.859e+00
+12 res 2.96e-01 moving weight 1.939e+00
+13 res 4.67e-01 moving weight 1.969e+00
+14 res 5.10e-15 moving weight 3.033e-07

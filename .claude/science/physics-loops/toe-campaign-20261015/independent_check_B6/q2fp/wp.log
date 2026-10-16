@@ -1,0 +1,8 @@
+pcase00.sing exit 0 : a0=(-1, -1, 1, 1) a1=(-1, -1, 1, 1) nfree=22 dim= -1  time 19
+pcase01.sing exit 0 : a0=(-1, -1, 1, 1) a1=(-1, 0, 1, 0) nfree=22 dim= -1  time 12
+pcase02.sing exit 0 : a0=(-1, -1, 1, 1) a1=(-1, 1, 1, -1) nfree=22 dim= -1  time 7
+pcase03.sing exit 0 : a0=(-1, -1, 1, 1) a1=(0, -1, 0, 1) nfree=22 dim= -1  time 14
+pcase04.sing exit 0 : a0=(-1, -1, 1, 1) a1=(0, 0, 0, 0) nfree=22 dim= -1  time 21
+pcase05.sing exit 0 : a0=(-1, -1, 1, 1) a1=(0, 1, 0, -1) nfree=22 dim= -1  time 18
+pcase06.sing exit 0 : a0=(-1, -1, 1, 1) a1=(1, -1, -1, 1) nfree=22 dim= -1  time 41
+pcase07.sing exit 0 : a0=(-1, -1, 1, 1) a1=(1, 0, -1, 0) nfree=22 dim= -1  time 20

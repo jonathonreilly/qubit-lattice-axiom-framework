@@ -1,0 +1,26 @@
+{
+  "members": [
+    {
+      "bytes": 15248,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+      "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+    },
+    {
+      "bytes": 2778,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/PRE_EXPOSURE.json",
+      "sha256": "9fc9f84af943af735af2d3f8c894ea6c72bb05af75e7b537f80411eb61911c34"
+    },
+    {
+      "bytes": 11358,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/proposal/PROPOSED_LEMMAS.md",
+      "sha256": "3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169"
+    },
+    {
+      "bytes": 412,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/proposal/FREEZE.json",
+      "sha256": "f0ad2c52437a6ac63e55a8c8d13d2bb7636c76049430653c83c3f55f253f3ccd"
+    }
+  ],
+  "scope": "Immutable pre-enclosure analytical checkpoint; later review is additive",
+  "utc": "2026-10-16T18:51:20.497880+00:00"
+}

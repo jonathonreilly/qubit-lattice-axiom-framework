@@ -1,0 +1,51 @@
+NEW_RECURRENCE_ENCLOSURE_START order=320 scale_bits=768 substeps=8 slots=24
+fresh_endpoint_slot_complete 0
+fresh_endpoint_slot_complete 1
+fresh_endpoint_slot_complete 2
+fresh_endpoint_slot_complete 3
+fresh_endpoint_slot_complete 4
+fresh_endpoint_slot_complete 5
+fresh_endpoint_slot_complete 6
+fresh_endpoint_slot_complete 7
+fresh_endpoint_slot_complete 8
+fresh_endpoint_slot_complete 9
+fresh_endpoint_slot_complete 10
+fresh_endpoint_slot_complete 11
+fresh_endpoint_slot_complete 12
+fresh_endpoint_slot_complete 13
+fresh_endpoint_slot_complete 14
+fresh_endpoint_slot_complete 15
+fresh_endpoint_slot_complete 16
+fresh_endpoint_slot_complete 17
+fresh_endpoint_slot_complete 18
+fresh_endpoint_slot_complete 19
+fresh_endpoint_slot_complete 20
+fresh_endpoint_slot_complete 21
+fresh_endpoint_slot_complete 22
+fresh_endpoint_slot_complete 23
+FRESH_ENDPOINT_ARTIFACT {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/recurrence_001_output/ENDPOINT_ENCLOSURE.json", "bytes": 217372, "sha256": "454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de"}
+HEURISTIC_SELECTED_POSITIVE_N 98611368294597721931914764889297593425141587534996842205
+LLL_STATISTICS {"iterations": 627, "swaps": 342, "integer_reductions": 456, "iteration_limit": 10000}
+{
+  "positive_integer_n": 98611368294597721931914764889297593425141587534996842205,
+  "checks": {
+    "positive_integer": true,
+    "endpoint_amplification_condition": true,
+    "strict_recurrence_bound": true,
+    "explicit_total_upper_below_r_over_4": true
+  },
+  "power_bits": 187,
+  "interval_matrix_multiplications": 274,
+  "strict_decimal_operator_norm_bound": {
+    "numerator": 1,
+    "denominator": 10000000000000
+  },
+  "strict_target_bound_r_over_4": {
+    "numerator": 25,
+    "denominator": 924844032
+  }
+}
+{"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/recurrence_001_output/ENDPOINT_ENCLOSURE.json", "bytes": 217372, "sha256": "454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de"}
+{"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/recurrence_001_output/HEURISTIC_PROPOSAL.json", "bytes": 6228, "sha256": "4429fa4361c376ed6bc159a120da54563abb325ee0bf0f9097c1a4e8baad4a61"}
+{"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/recurrence_001_output/POWER_TRACE.json", "bytes": 5963253, "sha256": "2f848fc960ee957e3a97767b191f0fc732a5bff401a9d43d5aab25ea25d5055b"}
+{"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/recurrence_001_output/RECURRENCE_CERTIFICATE.json", "bytes": 32606, "sha256": "380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314"}

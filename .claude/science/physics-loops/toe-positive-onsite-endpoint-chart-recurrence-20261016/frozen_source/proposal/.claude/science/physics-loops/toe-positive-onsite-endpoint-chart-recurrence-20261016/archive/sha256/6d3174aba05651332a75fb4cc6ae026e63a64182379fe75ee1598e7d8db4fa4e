@@ -1,0 +1,59 @@
+{
+  "analytical_reconstruction": {
+    "bytes": 15248,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+    "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+  },
+  "audit_verdict": null,
+  "blind": false,
+  "checker_full_science_replays": 0,
+  "chosen_r": "25/231211008",
+  "chosen_s": "1/252",
+  "chosen_t": "25/229376",
+  "code_review": {
+    "bytes": 13919,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/CODE_REVIEW.md",
+    "sha256": "0c0415683b3508a306908a92ac786f99cbd05d6221a2f1cb2f3cdcf7baaf581b"
+  },
+  "coverage": {
+    "all_candidate_intervals_traversed_in_scoped_check": true,
+    "candidate_ODE_rerun": false,
+    "complete_candidate_derivation_and_programs_read": true,
+    "complete_root_proposal_read": true,
+    "complete_selector_source_and_original_streams_read": true,
+    "original_candidate_and_own_receipts_verified": true,
+    "physical_controls_realized": false,
+    "pre_exposure_analysis_sealed": true,
+    "recurrence_executed": false,
+    "selector_replay": false,
+    "target_compilation_executed": false
+  },
+  "disposition": "No blocking analytic or implementation defect found; finite conditional chart supported by reviewed evidence.",
+  "editable_prompt_files_changed": [],
+  "formal_retained_status": null,
+  "kind": "source_exposed_analytic_and_code_review",
+  "mathematical_authority": {
+    "bytes": 4388,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/REVIEW.md",
+    "sha256": "b9fd729aad4be1e7473f122b1abe8cc79ae647b9a968b0f9bc2679089484083a"
+  },
+  "new_scoped_arithmetic_checks": 1,
+  "original_candidate_scientific_runs": 1,
+  "qualifications": [
+    "Literal two-qubit plant and supplied positive controls only; all scalar terms retained.",
+    "Effective target access for algorithmic approximation; arbitrary-target existence is distinct.",
+    "No recurrence index, target word, efficient compiler or microscopic controller supplied.",
+    "Timing mismatch norm expression is a sufficient upper-error budget, not an error lower bound.",
+    "No native, autonomous, generic-system-size, arbitrary-cap, infinite-use or audited-retained result."
+  ],
+  "root_approval": null,
+  "same_selected_model_and_effort": true,
+  "scoped_result": {
+    "bytes": 6752,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/SCOPED_CHECK_RESULT.json",
+    "sha256": "c645a85f698d47609eb3a2d85c16680a23bab7f333af7eece480a76c047f5fa0"
+  },
+  "singular_lower_bound": "1/126",
+  "source_exposed": true,
+  "utc": "2026-10-16T19:07:32.619029+00:00"
+}

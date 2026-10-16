@@ -1,0 +1,78 @@
+{
+  "kind": "pre-execution source freeze",
+  "created_utc": "2026-10-16T18:50:01.959616+00:00",
+  "members": [
+    {
+      "path": "enclose_chart.py",
+      "bytes": 11860,
+      "sha256": "af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9"
+    },
+    {
+      "path": "record.py",
+      "bytes": 1656,
+      "sha256": "f84895800b2eccb239b27bb4e9b554e05f037e970d8dc049febbb718c0b54a99"
+    },
+    {
+      "path": "PRELAUNCH.md",
+      "bytes": 5167,
+      "sha256": "8ed75670c7fa746a77c41ac15494c15fc4e8bd20ab946c2c0cca062857c7a8c8"
+    },
+    {
+      "path": "INPUT_FREEZE.json",
+      "bytes": 2938,
+      "sha256": "5db328eec11f9b41671c69164a98f5df4c91f694260323ea00c3fd5f14a120c7"
+    },
+    {
+      "path": "INPUT_MANIFEST.json",
+      "bytes": 5541,
+      "sha256": "7f5202e9a326b732d33ace7d76f78e6e7d0dd89cd6e626d1dfb59f959eafcacd"
+    },
+    {
+      "path": "inputs/PROPOSAL_FREEZE.json",
+      "bytes": 412,
+      "sha256": "f0ad2c52437a6ac63e55a8c8d13d2bb7636c76049430653c83c3f55f253f3ccd"
+    },
+    {
+      "path": "inputs/PROPOSED_LEMMAS.md",
+      "bytes": 11358,
+      "sha256": "3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169"
+    },
+    {
+      "path": "inputs/SELECTED_INPUT.json",
+      "bytes": 6579,
+      "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+    },
+    {
+      "path": "inputs/selection_EXECUTION.json",
+      "bytes": 1732,
+      "sha256": "50727a9d9e151dbe6b4d2efe7d4e42238db6705fed142cd74299826cac2f0400"
+    },
+    {
+      "path": "inputs/selection_recorder.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": "inputs/selection_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "inputs/selection_stdout.json",
+      "bytes": 15592,
+      "sha256": "ba21dae6bdd5e75989e5ccfd51588f9e426cef10e32d2fac10f71ca8579c2ba8"
+    },
+    {
+      "path": "inputs/selector.py",
+      "bytes": 2767,
+      "sha256": "3ee0b9cf7d257ed6802d8ac96f2aa1743427ba27ea4da0208d789d21b1fd5449"
+    },
+    {
+      "path": "inputs/selector_executed_source.py",
+      "bytes": 2767,
+      "sha256": "3ee0b9cf7d257ed6802d8ac96f2aa1743427ba27ea4da0208d789d21b1fd5449"
+    }
+  ],
+  "self_hash_excluded": true,
+  "final_freeze_recorder_outside_member_list": false
+}

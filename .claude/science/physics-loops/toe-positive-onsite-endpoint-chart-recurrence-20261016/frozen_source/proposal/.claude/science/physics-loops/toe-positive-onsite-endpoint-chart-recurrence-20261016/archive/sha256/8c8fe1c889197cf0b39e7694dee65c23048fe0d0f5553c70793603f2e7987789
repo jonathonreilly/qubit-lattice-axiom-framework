@@ -1,0 +1,60 @@
+EXACT_ENCLOSURE_START scale_bits=128 N=80 substeps=8 pulses=24
+pulse_complete 0
+pulse_complete 1
+pulse_complete 2
+pulse_complete 3
+pulse_complete 4
+pulse_complete 5
+pulse_complete 6
+pulse_complete 7
+pulse_complete 8
+pulse_complete 9
+pulse_complete 10
+pulse_complete 11
+pulse_complete 12
+pulse_complete 13
+pulse_complete 14
+pulse_complete 15
+pulse_complete 16
+pulse_complete 17
+pulse_complete 18
+pulse_complete 19
+pulse_complete 20
+pulse_complete 21
+pulse_complete 22
+pulse_complete 23
+{
+  "checks": {
+    "residual_frobenius_le_half": true,
+    "inverse_frobenius_le_B": true,
+    "identity_row_contains_exact_minus_8_over_15": true
+  },
+  "integer_B": 63,
+  "chosen_s": {
+    "numerator": 1,
+    "denominator": 252
+  },
+  "chosen_t": {
+    "numerator": 25,
+    "denominator": 229376
+  },
+  "chosen_r": {
+    "numerator": 25,
+    "denominator": 231211008
+  },
+  "residual_frobenius_square_upper": {
+    "numerator": 277663866025211806662864381956311784496443347173953313,
+    "denominator": 28948022309329048855892746252171976963317496166410141009864396001978282409984
+  }
+}
+{
+  "certificate_artifact": {
+    "bytes": 154227,
+    "sha256": "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509"
+  },
+  "pulse_artifact": {
+    "bytes": 104993,
+    "sha256": "5d67868778e34ac003216906de643ce559a27bb025892ce878c3d10e59c5332b"
+  }
+}
+EXACT_INTEGER_INEQUALITIES_ESTABLISHED; separate proof/code review required

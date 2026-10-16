@@ -1,0 +1,46 @@
+"""Seal completed exposed review; do not execute mathematical or candidate source."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+O=Path.cwd()
+assert O.name=='endpoint_chart_exposed_check'
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(p.read_text())
+def check(p,r):
+ g=pin(p);assert g['bytes']==r['bytes'] and g['sha256']==r['sha256'],str(p)
+assert not (O/'FINAL_FREEZE.json').exists()
+for name in ['PRE_EXPOSURE.json','SELECTOR_EXPOSURE.json','CANDIDATE_EXPOSURE.json']:
+ for row in read(O/name)['sources']:
+  check(Path(row['original']['path']),row['original']);check(Path(row['copy']['path']),row['copy'])
+for row in read(O/'PRE_ENCLOSURE_FREEZE.json')['members']:check(Path(row['path']),row)
+e=read(O/'SOURCE_AND_EVIDENCE.json')
+for key in ['result','review','source_function_map']:check(Path(e[key]['path']),e[key])
+for row in e['methodology']:
+ check(Path(row['original']['path']),row['original']);check(Path(row['copy']['path']),row['copy'])
+for group in ['metadata_runs','scoped_runs']:
+ for d in (O/group).iterdir():
+  if d.name=='final_seal':continue
+  r=read(d/'EXECUTION.json');assert r['exit_code']==0 and not r['timed_out']
+  for key in ['source_original','source_at_launch','recorder_at_launch','stdout','stderr']:check(Path(r[key]['path']),r[key])
+  assert r['argv'][2]==r['source_at_launch']['path']
+result=read(O/'RESULT.json')
+assert result['root_approval'] is None and result['formal_retained_status'] is None and result['audit_verdict'] is None
+assert result['new_scoped_arithmetic_checks']==1 and result['checker_full_science_replays']==0
+members=[]
+for p in sorted(O.rglob('*')):
+ if not p.is_file():continue
+ rel=str(p.relative_to(O))
+ if rel=='FINAL_FREEZE.json' or rel.startswith('metadata_runs/final_seal/'):continue
+ b=p.read_bytes();members.append(dict(path=rel,bytes=len(b),sha256=hashlib.sha256(b).hexdigest()))
+freeze=dict(utc=datetime.now(timezone.utc).isoformat(),kind='separate_source_exposed_endpoint_chart_review',
+ status='review complete; no blocking defect found within stated finite conditional scope',
+ root_approval=None,formal_retained_status=None,audit_verdict=None,members=members,
+ pre_enclosure_checkpoint=pin(O/'PRE_ENCLOSURE_FREEZE.json'),source_candidate_freeze=pin(O/'sources/candidate/FREEZE.json'),
+ exclusions=['FINAL_FREEZE.json itself','metadata_runs/final_seal/** terminal recorder bundle written around/after this operation'],
+ terminal_evidence='metadata_runs/final_seal contains actual captured source/recorder, LAUNCH.json, EXECUTION.json and complete stdout/stderr; stdout records this freeze identity.',
+ scientific_replays=0,new_scoped_saved_evidence_checks=1,editable_prompt_files_changed=[])
+(O/'FINAL_FREEZE.json').write_text(json.dumps(freeze,indent=2,sort_keys=True)+'\n')
+print(json.dumps(dict(status='SEALED_EXPOSED_REVIEW',freeze=pin(O/'FINAL_FREEZE.json'),members=len(members),
+ review=pin(O/'REVIEW.md'),code_review=pin(O/'CODE_REVIEW.md'),pre_analysis=pin(O/'PRE_ENCLOSURE_ANALYSIS.md'),
+ scoped_check_result=pin(O/'SCOPED_CHECK_RESULT.json')),indent=2))

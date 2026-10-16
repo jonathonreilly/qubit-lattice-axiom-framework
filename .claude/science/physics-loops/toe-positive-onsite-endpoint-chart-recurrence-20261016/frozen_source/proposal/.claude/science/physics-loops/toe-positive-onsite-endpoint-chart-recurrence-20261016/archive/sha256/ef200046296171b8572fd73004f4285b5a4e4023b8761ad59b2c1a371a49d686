@@ -1,0 +1,57 @@
+# Reading and recovery map
+
+Start with DERIVATION.md for the finite claim, reconstructed proof, original
+execution outcome and physical qualifications. EXPOSURE_AND_QUALIFICATIONS.md
+controls interpretation. This is a proposed certificate awaiting separate
+analytical/code review and root decision; none of these files asserts an
+accepted or retained status.
+
+Read the exact implementation in enclose_chart.py against sections 4–6 of
+DERIVATION.md and the pre-execution PRELAUNCH.md. Its byte-identical actually
+executed copy is runs/enclosure_001/source_at_launch.py. record.py and
+runs/enclosure_001/recorder_at_launch.py show the recorder. The exact child
+argv/cwd/environment identifier/timestamps/wall limit/exit are in
+runs/enclosure_001/EXECUTION.json. stdout and stderr are complete original
+streams, not edited summaries. The run had exit 0, empty stderr and no timeout.
+
+SCIENCE_SOURCE_FREEZE.json froze all science inputs and source before the
+execution. INPUT_FREEZE.json and INPUT_MANIFEST.json preserve the earlier
+input capture. In inputs/, the complete root proposal is PROPOSED_LEMMAS.md,
+its original freeze is PROPOSAL_FREEZE.json, and selector.py plus the original
+stdout, stderr, executed source, recorder and receipt preserve the actual
+selection event. SELECTED_INPUT.json is the rational subset extracted for
+this enclosure. The selector's floating Jacobian/SVD are not proof premises.
+The historical input manifest's science_runs_in_this_packet=0 is true at
+that pre-execution stage; the final manifest records the later single run.
+
+The complete 154227-byte enclosure_001_output/certificate.json contains:
+
+- all 16 by 16 real Jacobian rectangles after the analytic pad;
+- all 16 by 16 inverse-residual rectangles, exact R, and squared bounds;
+- all raw complex Pauli coordinates, selected derivatives and endpoint U;
+- exact integers, rational constants, conventions and source identity.
+
+enclosure_001_output/pulse_intervals.json contains all 24 local U/D rectangle
+matrices. Matrix entries are four integers divided by 2^128, ordered
+(real_lo,real_hi,imag_lo,imag_hi); matrices use row-major order. The real
+Jacobian and inverse-residual entries are pairs (lo,hi)/2^128. Code comments
+and DERIVATION.md give the chronological convention. No JSON number in
+these interval arrays is a floating estimate.
+
+The only scientific execution in this candidate is enclosure_001. Metadata
+processes input_capture, source_freeze, metadata_validation and final_freeze
+have separately captured actual source, recorder and full streams. Metadata
+validation hashes the original/captured inputs and existing output, checks
+structural coverage and exact stored arithmetic, and emits SOURCE_MANIFEST.json;
+it does not reconstruct ODE coefficients, run the selector or rerun the
+enclosure. Metadata checks are not independent physics validation.
+
+FREEZE.json is the final closure of existing files, excluding itself and
+the necessarily subsequent runs/final_freeze recorder bundle. The freezer
+source, its executed copy and final receipt make that terminal operation
+reviewable without a recursive self-hash. No historical file was rewritten
+to claim a later decision. Parent paths remain in INPUT_MANIFEST.json; local
+immutable copies permit recovery even if those external paths later move.
+
+Editable prompts changed: none. Canonical/base/publication bindings: null.
+No Git, PR, lock, audit, axiom or worktree changes belong to this packet.

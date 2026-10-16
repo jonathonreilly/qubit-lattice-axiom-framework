@@ -1,0 +1,23 @@
+"""Verify and capture historical selector records; do not execute selector."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,shutil
+O=Path.cwd(); assert O.name=='endpoint_chart_exposed_check';N=O.parent
+assert (O/'PRE_ENCLOSURE_FREEZE.json').exists()
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def check(p,row):
+ q=pin(p);assert q['bytes']==row['bytes'] and q['sha256']==row['sha256']
+S=N/'endpoint_chart_root_proposal/select_chart.py';R=N/'runs/endpoint_chart_selection'
+e=json.loads((R/'EXECUTION.json').read_text());assert e['exit_code']==0
+assert e['argv'][1]==str(S)==e['child_source_at_launch']['path']
+for key in ['child_source_at_launch','source_capture','recorder','stdout','stderr']:check(Path(e[key]['path']),e[key])
+assert e['source_capture']['sha256']==e['child_source_at_launch']['sha256']=='3ee0b9cf7d257ed6802d8ac96f2aa1743427ba27ea4da0208d789d21b1fd5449'
+assert pin(R/'stdout')['sha256']=='ba21dae6bdd5e75989e5ccfd51588f9e426cef10e32d2fac10f71ca8579c2ba8'
+result=json.loads((R/'stdout').read_text());assert result['interval_certificate'] is False and result['independent_validation'] is False
+rows=[]
+for p,rel in [(S,'sources/proposal/select_chart.py'),(N/'review_run.py','sources/selector/review_run.py')]+[(R/f,'sources/selector/'+f) for f in ['EXECUTION.json','executed_source.py','stdout','stderr']]:
+ q=O/rel;q.parent.mkdir(parents=True,exist_ok=True);assert not q.exists();shutil.copyfile(p,q);rows.append(dict(original=pin(p),copy=pin(q)))
+record=dict(utc=datetime.now(timezone.utc).isoformat(),kind='historical_floating_selector_exposure_after_analytic_checkpoint',sources=rows,checkpoint=pin(O/'PRE_ENCLOSURE_FREEZE.json'),selector_review=pin(O/'SELECTOR_REVIEW.md'),historical_result=result['status'],scientific_executions=0,enclosure_material_read=False)
+(O/'SELECTOR_EXPOSURE.json').write_text(json.dumps(record,indent=2,sort_keys=True)+'\n')
+print(json.dumps(dict(status='CAPTURED_HISTORICAL_HEURISTIC_ONLY',sources=len(rows),metadata=pin(O/'SELECTOR_EXPOSURE.json'),scientific_executions=0),indent=2))

@@ -1,0 +1,43 @@
+from pathlib import Path
+import hashlib,json,sys
+from datetime import datetime,timezone
+OUT=Path(sys.argv[1]).resolve();N=OUT.parent;P=N/'endpoint_chart_root_proposal';R=N/'runs/endpoint_chart_selection'
+(OUT/'inputs').mkdir(exist_ok=True)
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+specs=[('PROPOSED_LEMMAS.md',P/'PROPOSED_LEMMAS.md','3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169'),
+ ('PROPOSAL_FREEZE.json',P/'FREEZE.json','f0ad2c52437a6ac63e55a8c8d13d2bb7636c76049430653c83c3f55f253f3ccd'),
+ ('selector.py',P/'select_chart.py','3ee0b9cf7d257ed6802d8ac96f2aa1743427ba27ea4da0208d789d21b1fd5449'),
+ ('selection_stdout.json',R/'stdout','ba21dae6bdd5e75989e5ccfd51588f9e426cef10e32d2fac10f71ca8579c2ba8'),
+ ('selection_stderr.txt',R/'stderr',None),('selection_EXECUTION.json',R/'EXECUTION.json',None),
+ ('selector_executed_source.py',R/'executed_source.py','3ee0b9cf7d257ed6802d8ac96f2aa1743427ba27ea4da0208d789d21b1fd5449'),
+ ('selection_recorder.py',N/'review_run.py','b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428')]
+rows=[]
+for name,p,expected in specs:
+ original=pin(p)
+ if expected:assert original['sha256']==expected,(p,original)
+ dest=OUT/'inputs'/name;dest.write_bytes(p.read_bytes())
+ rows.append({'original':original,'capture':pin(dest)})
+receipt=json.loads((R/'EXECUTION.json').read_text())
+for key in ('stdout','stderr','child_source_at_launch','source_capture','recorder'):
+ assert pin(Path(receipt[key]['path']))==receipt[key]
+assert receipt['exit_code']==0
+freeze=json.loads((P/'FREEZE.json').read_text())
+for row in freeze['members']:
+ x=pin(P/row['path']);assert x['bytes']==row['bytes'] and x['sha256']==row['sha256']
+sel=json.loads((R/'stdout').read_text())
+keys=['amplitude_numerators','amplitude_denominator','selected_zero_based_indices','rational_inverse_numerators','rational_inverse_denominator','pulse_channels','nominal_duration']
+chosen={k:sel[k] for k in keys}
+chosen.update({'certificate_order':80,'substeps_per_pulse':8,'dyadic_scale_bits':128,
+ 'input_status':'Rational inverse and indices are proposals only; no floating number is a certificate premise.'})
+(OUT/'inputs/SELECTED_INPUT.json').write_text(json.dumps(chosen,indent=2)+'\n')
+manifest={'utc':datetime.now(timezone.utc).isoformat(),'sources':rows,'selected_input':pin(OUT/'inputs/SELECTED_INPUT.json'),
+ 'coverage':'Complete root proposal and floating selector code/receipt/streams read. Selector never replayed.',
+ 'prior_discovery':'Root proposal contains no SOURCE_MANIFEST.json; initial cat reported that absence. FREEZE.json is the actual supplied source map.',
+ 'science_runs_in_this_packet':0,'historical_selector_runs':1}
+(OUT/'INPUT_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+members=[]
+for p in sorted((OUT/'inputs').iterdir()):members.append(pin(p))
+members.append(pin(OUT/'INPUT_MANIFEST.json'))
+(OUT/'INPUT_FREEZE.json').write_text(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),'members':members},indent=2)+'\n')
+print(json.dumps({'input_freeze':pin(OUT/'INPUT_FREEZE.json'),'selected_input':pin(OUT/'inputs/SELECTED_INPUT.json'),'sources':len(rows),'science_replayed':False},indent=2))

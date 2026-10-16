@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py
+runner_sha256: ae17d9fce64dce8d45fbb57de340ffbcf987e97f52a3a938fb1ec480dd533141
+input_fingerprint_sha256: 370032beab2f5a2a808067999f57687cb0e693063429558478c9ec241f79955b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: literal K=2I+ZZ; complete positive onsite rays and all identity reserves
+per_site: two-qubit plant, external clocks, precision, isolation and smooth controls remain supplied
+per_mode: full U(4) scalar phase and arbitrary old/reference input; no determinant normalization
+per_block: certified local chart and explicit huge recurrence; computable-target search only
+lattice_wide: original integer/rational evidence only; no replay, second ODE, native controller or efficiency
+
+----- stderr -----
+

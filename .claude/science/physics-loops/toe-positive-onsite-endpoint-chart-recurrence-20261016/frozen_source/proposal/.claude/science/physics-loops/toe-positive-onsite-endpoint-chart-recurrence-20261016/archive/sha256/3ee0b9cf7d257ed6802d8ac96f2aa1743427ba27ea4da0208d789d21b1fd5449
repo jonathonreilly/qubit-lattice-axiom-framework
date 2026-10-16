@@ -1,0 +1,40 @@
+"""One bounded complex128 candidate selection; not an interval or rank certificate."""
+import json,math
+import numpy as np
+from scipy.linalg import qr
+I2=np.eye(2,dtype=complex);X=np.array([[0,1],[1,0]],complex);Y=np.array([[0,-1j],[1j,0]],complex);Z=np.diag([1,-1]).astype(complex)
+I=np.eye(4,dtype=complex);K=2*I+np.kron(Z,Z)
+P=[I+np.kron(X,I2),I+np.kron(Y,I2),I+np.kron(I2,X),I+np.kron(I2,Y)]
+basis=[np.kron(a,b) for a in [I2,X,Y,Z] for b in [I2,X,Y,Z]]
+nums=[192+((73*j+41)%128) for j in range(24)];amps=[x/512 for x in nums]
+order=40;steps=8;h=1/steps
+def pulse(a,p):
+ U=I.copy();D=np.zeros((4,4),complex)
+ for step in range(steps):
+  x=step/steps;poly=[16*x*x*(1-x)**2,32*x*(1-x)*(1-2*x),16-96*x+96*x*x,-32+64*x,16]
+  A=[-1j*a*v*p for v in poly];A[0]=A[0]-1j*K
+  E=[-1j*v*p for v in poly]
+  us=[I.copy()];ds=[np.zeros((4,4),complex)]
+  for n in range(order):
+   us.append(sum((A[k]@us[n-k] for k in range(min(4,n)+1)),np.zeros((4,4),complex))/(n+1))
+   ds.append(sum((A[k]@ds[n-k]+E[k]@us[n-k] for k in range(min(4,n)+1)),np.zeros((4,4),complex))/(n+1))
+  u=sum((us[n]*h**n for n in range(order+1)),np.zeros((4,4),complex))
+  d=sum((ds[n]*h**n for n in range(order+1)),np.zeros((4,4),complex))
+  D=d@U+u@D;U=u@U
+ return U,D
+local=[pulse(amps[j],P[j%4]) for j in range(24)]
+prefix=[I.copy()]
+for u,d in local:prefix.append(u@prefix[-1])
+suffix=[None]*25;suffix[24]=I.copy()
+for j in range(23,-1,-1):suffix[j]=suffix[j+1]@local[j][0]
+U=prefix[-1];columns=[];skew=[]
+for j in range(24):
+ d=suffix[j+1]@local[j][1]@prefix[j];a=-1j*U.conj().T@d
+ columns.append([float(np.trace(b@a).real/4) for b in basis]);skew.append(float(np.linalg.norm(a-a.conj().T,2)))
+J=np.array(columns).T
+_,_,piv=qr(J,pivoting=True,mode='economic');selected=[int(v) for v in piv[:16]]
+A=J[:,selected];sv=np.linalg.svd(A,compute_uv=False);inverse=np.linalg.inv(A)
+den=2**40;invnums=[[int(round(float(v)*den)) for v in row] for row in inverse]
+assert float(sv[-1])>1e-8,'Selected candidate is too ill-conditioned for this proposed enclosure route'
+result=dict(status='FLOATING_CANDIDATE_ONLY_NOT_CERTIFIED',plant='K=2I+ZZ, hbar=1',channels=['I+X1','I+Y1','I+X2','I+Y2'],pulse_channels=[j%4 for j in range(24)],amplitude_numerators=nums,amplitude_denominator=512,selected_zero_based_indices=selected,nominal_duration=24,polynomial_order=order,substeps_per_pulse=steps,selected_jacobian=A.tolist(),selected_singular_values=sv.tolist(),rational_inverse_numerators=invnums,rational_inverse_denominator=den,unitarity_residual=float(np.linalg.norm(U.conj().T@U-I,2)),max_derivative_hermiticity_residual=max(skew),full_endpoint_real=U.real.tolist(),full_endpoint_imag=U.imag.tolist(),scientific_executions=1,interval_certificate=False,independent_validation=False)
+print(json.dumps(result,indent=2))

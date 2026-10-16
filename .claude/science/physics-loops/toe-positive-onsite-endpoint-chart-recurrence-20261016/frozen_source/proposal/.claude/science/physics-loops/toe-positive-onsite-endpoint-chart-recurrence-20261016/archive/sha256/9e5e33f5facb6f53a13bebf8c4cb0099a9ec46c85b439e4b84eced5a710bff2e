@@ -1,0 +1,22 @@
+# Final review checkpoint
+
+Candidate source freeze `33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c`
+is preserved unchanged. Complete proof, source, original receipts and saved
+intervals were inspected. No blocking defect was found. The single scoped
+Fraction check completed at 19:18:37 UTC and supports the stated full-U(4)
+recurrence below 10^-13, with endpoint amplification below 10^-35.
+
+The new check verified 274 saved trace products, 24 saved slot products, 960
+coefficient matrices and three rejected controls. It executed no fresh Taylor
+steps, heuristic selector, new recurrence candidate or physical process.
+Root acceptance and formal audit remain absent. The chart-dependent timing
+claim remains conditional on that separate premise. Python/runtime correctness,
+fresh-Taylor source execution, external drive/clock/precision/isolation, and
+astronomical physical duration remain explicit limitations.
+
+No failed new scientific check occurred. Candidate-disclosed metadata events
+and all historical source statuses are retained. The exact new source-at-launch,
+complete streams and original process limits are preserved. Only this review
+directory was written; no editable prompt file changed. The next decision is
+the root's independent disposition using the sealed review, not an automatic
+approval or publication step.

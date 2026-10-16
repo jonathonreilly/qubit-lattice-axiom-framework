@@ -1,0 +1,14 @@
+{
+  "status": "CAPTURED",
+  "checkpoint": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/PRE_ENCLOSURE_FREEZE.json",
+    "bytes": 1271,
+    "sha256": "bd6e3042dce21422bd2d3c8d387c7b36ebb58f4f788146802973332239eacd05"
+  },
+  "analysis": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+    "bytes": 15248,
+    "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+  },
+  "rank_status": "pending uninspected enclosure"
+}

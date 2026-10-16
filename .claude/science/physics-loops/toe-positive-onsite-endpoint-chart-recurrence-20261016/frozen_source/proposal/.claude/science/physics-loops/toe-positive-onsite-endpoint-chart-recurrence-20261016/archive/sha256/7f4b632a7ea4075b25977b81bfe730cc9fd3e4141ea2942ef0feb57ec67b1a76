@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW_PACKET_SEALED",
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/FINAL_FREEZE.json",
+    "bytes": 18005,
+    "sha256": "453b32503e06a569a361414984b96e808e34b267dec077b209d926fe7ed84204"
+  },
+  "members": 95,
+  "root_acceptance": null,
+  "scientific_execution": false
+}

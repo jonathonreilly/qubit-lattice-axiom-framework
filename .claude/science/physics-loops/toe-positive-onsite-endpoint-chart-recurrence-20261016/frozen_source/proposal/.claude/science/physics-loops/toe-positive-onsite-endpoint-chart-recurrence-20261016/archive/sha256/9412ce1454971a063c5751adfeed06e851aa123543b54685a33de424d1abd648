@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-16T18:59:47.667258+00:00",
+  "sources": [
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/DERIVATION.md",
+        "bytes": 21506,
+        "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/inputs/PARENT_DERIVATION.md",
+        "bytes": 21506,
+        "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/FREEZE.json",
+        "bytes": 7500,
+        "sha256": "485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/inputs/PARENT_FREEZE.json",
+        "bytes": 7500,
+        "sha256": "485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/inputs/SELECTED_INPUT.json",
+        "bytes": 6579,
+        "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/inputs/SELECTED_INPUT.json",
+        "bytes": 6579,
+        "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/enclosure_001_output/certificate.json",
+        "bytes": 154227,
+        "sha256": "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/inputs/PARENT_CERTIFICATE.json",
+        "bytes": 154227,
+        "sha256": "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/enclose_chart.py",
+        "bytes": 11860,
+        "sha256": "af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/inputs/PARENT_ENCLOSURE_SOURCE.py",
+        "bytes": 11860,
+        "sha256": "af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9"
+      }
+    }
+  ],
+  "coverage": "Parent complete derivation and source previously authored/read; exact frozen identities and all 45 members refreshed, no execution replay.",
+  "parent_status": "Provisional chart premise; separate checking/acceptance pending at dispatch.",
+  "mpmath_version": "1.3.0",
+  "mpmath_location": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py",
+  "mpmath_scope": "Heuristic eigenphase proposal only; never accepted as interval evidence.",
+  "new_science_runs_before_this_capture": 0
+}

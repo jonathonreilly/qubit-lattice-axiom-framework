@@ -1,0 +1,41 @@
+{
+  "start_utc": "2026-10-16T19:02:37.953913+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/scoped_runs/saved_arithmetic_001/source_at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check",
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/check_saved_certificate.py",
+    "bytes": 14457,
+    "sha256": "b771e76256f6c13e70282b7e13633b335d660739c2d8207e630bfed07d4b49d4"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/scoped_runs/saved_arithmetic_001/source_at_launch.py",
+    "bytes": 14457,
+    "sha256": "b771e76256f6c13e70282b7e13633b335d660739c2d8207e630bfed07d4b49d4"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/scoped_runs/saved_arithmetic_001/recorder_at_launch.py",
+    "bytes": 1956,
+    "sha256": "65dadc7e3490d3ceeef7a5902e00ef15a434a5d4c66b4274212a9d7d7106b40c"
+  },
+  "expected_exit": 0,
+  "timeout_seconds": 180,
+  "scope": "One new saved-evidence arithmetic/composition check; no ODE, selector, recurrence or enclosure replay",
+  "end_utc": "2026-10-16T19:02:44.620721+00:00",
+  "elapsed_seconds": 6.665944166947156,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/scoped_runs/saved_arithmetic_001/stdout",
+    "bytes": 1795,
+    "sha256": "8599a7813a018fb540ece38f642ef530fab99c39772ba24feb1400ba78486fb7"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/scoped_runs/saved_arithmetic_001/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

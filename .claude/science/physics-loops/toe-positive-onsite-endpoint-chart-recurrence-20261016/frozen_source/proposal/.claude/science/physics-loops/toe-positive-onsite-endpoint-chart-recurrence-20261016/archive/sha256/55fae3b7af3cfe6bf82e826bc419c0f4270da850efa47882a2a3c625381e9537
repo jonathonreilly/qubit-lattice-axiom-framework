@@ -1,0 +1,56 @@
+# Source and evidence map
+
+Read DERIVATION.md first. Its result is a proposed exact recurrence
+certificate pending separate analytical/code checking and root decision.
+The endpoint-chart parent is still a provisional premise; neither it nor
+this continuation is silently promoted to accepted status.
+
+Read PRELAUNCH.md for the frozen numerical choices, analytic tails,
+bounded selection rule, one-attempt policy and predicted failure handling.
+certify_recurrence.py is the complete source; the byte-identical actual
+executable is runs/recurrence_001/source_at_launch.py. record.py and its
+captured copy are the recorder. EXECUTION.json records actual child argv,
+cwd, timestamps, environment identifier, wall limit, exit and stream hashes.
+stdout and stderr are the complete original streams.
+
+SCIENCE_SOURCE_FREEZE.json precedes execution. INPUT_MANIFEST.json records
+the original/captured parent sources and the heuristic-only mpmath version.
+The parent freeze's full 45-member identity map was refreshed without
+executing its science. The selected bodies are in inputs/; no recursive
+historical publication archive is included.
+
+The original outputs are in recurrence_001_output/:
+
+- ENDPOINT_ENCLOSURE.json: all 24 fresh slot rectangles and the complete
+  endpoint, degree 320, scale 2^768, with separate analytic tail.
+- HEURISTIC_PROPOSAL.json: all eigenphases, input/reduced lattice bases,
+  reduction counters and the five bounded candidate scores. This selects
+  n only; none of its floating numbers proves recurrence.
+- POWER_TRACE.json: all 187 binary-power steps and their integer result/base
+  rectangles. Its 274 matrix multiplications are priced by directed rounding.
+- RECURRENCE_CERTIFICATE.json: the actual positive n, final power/residual
+  rectangles, exact squared Frobenius bound, analytic amplification allowance,
+  explicit rational total bound and strict threshold tests.
+
+All complex rectangles use four integer endpoints divided by 2^768, ordered
+(real_lo,real_hi,imag_lo,imag_hi). Matrices are 4 by 4 row-major. Both real
+and imaginary residual endpoints enter the Frobenius bound.
+
+The stored-artifact validator emits SOURCE_MANIFEST.json and compact ledger
+identities without invoking the endpoint solver, heuristic selector or
+power routine. Its source/actual receipt/full streams are retained separately.
+Metadata checks do not constitute independent mathematical validation.
+
+FREEZE.json seals the selected packet, excluding itself and its necessarily
+subsequent runs/final_freeze recorder bundle. The freezer's captured source,
+actual receipt and full output identify that terminal operation. No future
+acceptance is backdated into these historical artifacts.
+
+Parent/source exposure is explicit: the same author wrote the previous chart
+candidate and reused its exact arithmetic design. No sibling's scientific
+derivation or review was read for this task. The frozen code still needs
+separate checking. No actual physical run or arbitrary-target compilation
+was performed, and no native timing/precision/work apparatus is claimed.
+
+Editable prompt files changed: none. Actual canonical/base/publication
+bindings: null. No Git, PR, audit, axiom or lock changes belong to this task.

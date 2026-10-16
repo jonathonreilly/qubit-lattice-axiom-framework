@@ -1,0 +1,44 @@
+"""Capture sealed recurrence source and bounded prior review identity; no science execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,shutil
+O=Path.cwd();assert O.name=='endpoint_recurrence_exposed_check';N=O.parent;C=N/'endpoint_recurrence_candidate';P=N/'endpoint_chart_exposed_check'
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def check(p,r):
+ q=pin(p);assert q['bytes']==r['bytes'] and q['sha256']==r['sha256'],str(p)
+def read(p):return json.loads(p.read_text())
+assert pin(C/'FREEZE.json')['sha256']=='33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c'
+f=read(C/'FREEZE.json')
+for row in f['members']:check(C/row['path'],row)
+extras=['FREEZE.json']+['runs/final_freeze/'+x for x in ['EXECUTION.json','source_at_launch.py','recorder_at_launch.py','stdout','stderr']]
+paths=[r['path'] for r in f['members']]+extras
+assert len(paths)==len(set(paths))
+assert set(paths)=={str(p.relative_to(C)) for p in C.rglob('*') if p.is_file()}
+receipts=[]
+for label in ['input_capture','source_freeze','recurrence_001','metadata_validation','final_freeze']:
+ p=C/'runs'/label/'EXECUTION.json';r=read(p)
+ assert r['exit_code']==0 and r['timed_out'] is False
+ assert r['argv'][1]==r['source_at_launch']['path']
+ for key in ['source_at_launch','original_source','recorder_at_launch','stdout','stderr']:check(Path(r[key]['path']),r[key])
+ assert r['source_at_launch']['sha256']==r['original_source']['sha256']
+ receipts.append(dict(label=label,receipt=pin(p),kind=r['kind'],argv=r['argv'],start_utc=r['start_utc'],end_utc=r['end_utc']))
+pre=read(C/'SCIENCE_SOURCE_FREEZE.json');run=read(C/'runs/recurrence_001/EXECUTION.json')
+assert pre['created_utc']<run['start_utc']<run['end_utc']<f['created_utc']
+for row in pre['members']:check(C/row['path'],row)
+for row in read(C/'INPUT_MANIFEST.json')['sources']:
+ check(Path(row['original']['path']),row['original']);check(Path(row['capture']['path']),row['capture'])
+assert pin(P/'FINAL_FREEZE.json')['sha256']=='dab6af16cf9977a9b20d3438a7db2da68a5ef632bd883c5b0c7b9bd77fceb991'
+pf=read(P/'FINAL_FREEZE.json')
+for row in pf['members']:check(P/row['path'],row)
+rows=[]
+for p,rel in [(C/rel,'sources/candidate/'+rel) for rel in paths]+[(P/name,'sources/prior_review/'+name) for name in ['FINAL_FREEZE.json','REVIEW.md','CODE_REVIEW.md','PRE_ENCLOSURE_ANALYSIS.md','RESULT.json','SCOPED_CHECK_RESULT.json']]:
+ q=O/rel;q.parent.mkdir(parents=True,exist_ok=True);assert not q.exists();shutil.copyfile(p,q);rows.append(dict(original=pin(p),copy=pin(q)))
+exposure=dict(utc=datetime.now(timezone.utc).isoformat(),kind='source_exposed_recurrence_review',sources=rows,
+ candidate_member_count=len(f['members']),terminal_supplement_files=len(extras),original_receipts=receipts,
+ prior_review=pin(P/'FINAL_FREEZE.json'),prior_review_full_members_verified=len(pf['members']),
+ prior_scope='Reuse the reviewed literal plant, Pauli normalization, positive pulse geometry and majorant. New order, U-only global error, power amplification and power trace require new checks. No root acceptance inferred.',
+ exposure='Same model/campaign. Earlier chart analysis and code review authored by this checker. Current complete recurrence derivation and source were both read before any new arithmetic check; no blind or pre-code separation is claimed.',
+ root_approval=None,audit_verdict=None,checker_scientific_executions_so_far=0,external_messages=0)
+(O/'EXPOSURE_AND_SOURCE_CAPTURE.json').write_text(json.dumps(exposure,indent=2,sort_keys=True)+'\n')
+print(json.dumps(dict(status='SEALED_SOURCES_CAPTURED',candidate_members=len(f['members']),captured_aliases=len(rows),exposure=pin(O/'EXPOSURE_AND_SOURCE_CAPTURE.json'),scientific_execution=False),indent=2))

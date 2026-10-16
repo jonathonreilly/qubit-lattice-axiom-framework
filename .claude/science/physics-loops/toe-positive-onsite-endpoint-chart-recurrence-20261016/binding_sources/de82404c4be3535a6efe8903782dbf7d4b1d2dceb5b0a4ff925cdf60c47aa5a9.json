@@ -1,0 +1,27 @@
+{
+  "observed_commit": "9d5cd6d2fe59cd95d226e97e3ae818112256c32f",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/f1ab062487fab62b1669c7fa7642bd125eb654038d727bfdaea790305037b1fd.json",
+      "bytes": 1625,
+      "sha256": "f1ab062487fab62b1669c7fa7642bd125eb654038d727bfdaea790305037b1fd"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461.py",
+      "bytes": 62970,
+      "sha256": "7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/66976fed220839b1cbde5a00cbe7c31648cacd521f2dc93933359068ceb44872.blob",
+      "bytes": 41,
+      "sha256": "66976fed220839b1cbde5a00cbe7c31648cacd521f2dc93933359068ceb44872"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

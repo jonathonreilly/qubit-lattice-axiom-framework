@@ -1,0 +1,10 @@
+{
+  "status": "CAPTURED_HISTORICAL_HEURISTIC_ONLY",
+  "sources": 6,
+  "metadata": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/SELECTOR_EXPOSURE.json",
+    "bytes": 4401,
+    "sha256": "fd029c45143f5c6ce68b8e5e93acc89b420611b17465093028d8dc298a3c8b1d"
+  },
+  "scientific_executions": 0
+}

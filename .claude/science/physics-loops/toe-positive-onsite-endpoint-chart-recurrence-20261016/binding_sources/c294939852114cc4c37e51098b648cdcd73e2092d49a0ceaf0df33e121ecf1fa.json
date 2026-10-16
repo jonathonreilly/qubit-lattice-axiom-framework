@@ -1,0 +1,87 @@
+{
+  "kind": "root_integration_source_review",
+  "utc": "2026-10-16T20:06:25.401417+00:00",
+  "root_read_complete_for_changed_implementation": true,
+  "retained_audit": false,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 72553,
+    "sha256": "e9d70efe7dde9f4174ad46c75d025da3c0ca32c0cff3f1752787a5d4d0d5e150"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/endpoint_chart_recurrence_common.py",
+    "bytes": 62970,
+    "sha256": "7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 55492,
+    "sha256": "46bf81e9885460a479251adff83fa190fadbd244f9c0606bbce7ac6cbafa1ec8"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/REVIEW.json",
+    "bytes": 4068,
+    "sha256": "9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 2876,
+    "sha256": "cffe03775c9c7767efe75e160bfe8604623074b796ec2a2249e6f11fc4928721"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/metadata_runs/build/EXECUTION.json",
+      "bytes": 2390,
+      "sha256": "d71c2fba4e4e3666a433ed2017c0e04d3e3bb00071d00b76f0694235f6d6e196"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/metadata_runs/build_v2/EXECUTION.json",
+      "bytes": 2406,
+      "sha256": "b3d284d8e2bd61b988b00a110f74d97532eaf601075f5df912788d853a3e369b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/metadata_runs/validate/EXECUTION.json",
+      "bytes": 2409,
+      "sha256": "58d23e20e8d41194f55bd66c4b0ccba159736143ea9aa260861092ad02171646"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/metadata_runs/build_final/EXECUTION.json",
+      "bytes": 2421,
+      "sha256": "84954cf4d2f53975875eb394e84855976b165be9cef33cef49ec90f927dec6d4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/metadata_runs/capture_review/EXECUTION.json",
+      "bytes": 2443,
+      "sha256": "acf04362f936c03d07117711a62a655ee93cb8808811b9dfafb54d29aea48e01"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/metadata_runs/validate_v2/EXECUTION.json",
+      "bytes": 2424,
+      "sha256": "35039903fbed73b0ce9cc51e3bcff1d35a22ddb1f8e57398478861b3d0151eb7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2384,
+      "sha256": "1e898dfccacb649a8345e2ddb754f6ebca62a7dbdd08b161ce1e00ec39ac8969"
+    }
+  ],
+  "local_members": 345,
+  "immutable_bodies": 9,
+  "direct_mathematical_parents": [],
+  "source_review_command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_endpoint_publication_source_review.py"
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "editable_prompt_files_changed": [],
+  "verified_reuse_functions": 50,
+  "source_captures": 238,
+  "required_canonical_replacements": [
+    {
+      "before": "A fixed nonzero calibration floor\ndoes not allow arbitrary final precision.",
+      "after": "The stated worst-case error bound does not certify arbitrary final precision at a fixed nonzero calibration error floor."
+    }
+  ],
+  "scope": "Complete new adapter builder/validator/capture/recorder/seal, changed common/extension functions, primary source extension and all binding literals, generated note/wrapper/status/report/PR prose and seven metadata receipts/full streams read. Exact function reuse map verified against reviewed source; nine unchanged original scientific bodies retain qualified scope. All238 capture objects and345 frozen adapter members checked. New graph must add one root and zero edges with preservation;21 future provenance mutants,10 source synthetic graph controls. Sufficient-bound wording replacement required. Actual selected clean9651 with completed publication/attachment; source and integration reviews distinct, canonical/staged phases still pending. No ODE, scientific rerun, physical validation or retained claim."
+}

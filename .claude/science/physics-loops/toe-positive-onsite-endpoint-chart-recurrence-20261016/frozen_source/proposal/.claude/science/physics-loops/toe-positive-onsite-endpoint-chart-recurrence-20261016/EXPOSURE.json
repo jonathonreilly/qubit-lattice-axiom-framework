@@ -1,0 +1,12 @@
+{
+  "source_exposed": true,
+  "same_selected_model": true,
+  "blind_independence": false,
+  "second_ODE_implementation": false,
+  "new_scientific_executions": 0,
+  "historical_scientific_replays": 0,
+  "historical_author_enclosure_commands": 2,
+  "historical_separate_saved_evidence_checks": 2,
+  "historical_chart_selector_is_heuristic_only": true,
+  "retained_audit": false
+}

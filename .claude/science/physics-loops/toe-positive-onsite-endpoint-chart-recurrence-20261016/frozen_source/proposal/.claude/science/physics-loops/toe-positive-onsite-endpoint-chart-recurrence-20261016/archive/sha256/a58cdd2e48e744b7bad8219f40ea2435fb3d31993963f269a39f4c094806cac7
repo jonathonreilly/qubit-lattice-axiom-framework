@@ -1,0 +1,27 @@
+{
+  "start_utc": "2026-10-16T19:18:29.002657+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/source_at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check",
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/check_saved_recurrence.py",
+    "bytes": 15085,
+    "sha256": "76c42811fabb27297714e4a91c14090b40ff0229640af077ad4f45a940adc393"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/source_at_launch.py",
+    "bytes": 15085,
+    "sha256": "76c42811fabb27297714e4a91c14090b40ff0229640af077ad4f45a940adc393"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/recorder_at_launch.py",
+    "bytes": 1982,
+    "sha256": "a4699979a4a35e06b6855eab6775a6234e00c977b3c04b3625b591c793199c20"
+  },
+  "expected_exit": 0,
+  "timeout_seconds": 180,
+  "scope": "One new saved-recurrence-trace arithmetic check; no fresh endpoint integration, eigenphase selection or complete science replay"
+}

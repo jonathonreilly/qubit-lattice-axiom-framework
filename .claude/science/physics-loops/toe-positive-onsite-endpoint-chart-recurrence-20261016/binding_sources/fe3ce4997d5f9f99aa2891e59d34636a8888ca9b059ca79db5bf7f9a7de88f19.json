@@ -1,0 +1,39 @@
+{
+  "start_utc": "2026-10-16T20:06:50.488352+00:00",
+  "end_utc": "2026-10-16T20:06:51.104830+00:00",
+  "argv": [
+    "gh",
+    "pr",
+    "view",
+    "9651",
+    "--repo",
+    "jonathonreilly/qubit-lattice-axiom-framework",
+    "--json",
+    "number,state,isDraft,headRefOid,headRefName,baseRefName,url"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/endpoint_chart_recurrence_common.py",
+    "bytes": 62970,
+    "sha256": "7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461"
+  },
+  "child_source_at_launch": null,
+  "finished_utc": "2026-10-16T20:06:51.104858+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.6162799587473273,
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/runs/prepare_parent_base/LAUNCH.json",
+    "bytes": 784,
+    "sha256": "253fdb85a6b048df7443794fd051c8bdeefb895bbd3b02f6d0cd46396b12a209"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/runs/prepare_parent_base/stdout",
+    "bytes": 364,
+    "sha256": "0f852d89b515e4d84caad7bbe7b1720d6a477a8602ee3fffdfd0db8a8265f89a"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/runs/prepare_parent_base/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

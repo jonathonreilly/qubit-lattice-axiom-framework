@@ -1,0 +1,42 @@
+{
+  "kind": "metadata",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/metadata_validation/source_at_launch.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate",
+  "start_utc": "2026-10-16T19:08:55.409297+00:00",
+  "end_utc": "2026-10-16T19:08:55.514926+00:00",
+  "elapsed_seconds": 0.10550904087722301,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "wall_timeout_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/metadata_validation/source_at_launch.py",
+    "bytes": 7012,
+    "sha256": "50143dd7b580ddbcdef0f4f81ad9c1d9e445974e3c82a035957fbcd46537bead"
+  },
+  "original_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/validate_metadata.py",
+    "bytes": 7012,
+    "sha256": "50143dd7b580ddbcdef0f4f81ad9c1d9e445974e3c82a035957fbcd46537bead"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/metadata_validation/recorder_at_launch.py",
+    "bytes": 1662,
+    "sha256": "e464cff48a195288bc84a87cc14a1437ce5bbbb11a89ac3e3633831bb09d9cc5"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/metadata_validation/stdout",
+    "bytes": 1997,
+    "sha256": "1a70c8925d6424ee8e38ebb1e21c1fe899ba485e3941868bf65ba5f792bb47b0"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/metadata_validation/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

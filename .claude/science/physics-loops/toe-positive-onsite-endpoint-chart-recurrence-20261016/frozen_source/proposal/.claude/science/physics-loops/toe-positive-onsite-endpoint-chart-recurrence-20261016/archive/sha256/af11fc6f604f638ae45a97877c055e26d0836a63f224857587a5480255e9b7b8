@@ -1,0 +1,16 @@
+{
+  "status": "REVIEW_METADATA_VALIDATED",
+  "source_aliases": 59,
+  "function_rows": 28,
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/RESULT.json",
+    "bytes": 2862,
+    "sha256": "6d3174aba05651332a75fb4cc6ae026e63a64182379fe75ee1598e7d8db4fa4e"
+  },
+  "evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/SOURCE_AND_EVIDENCE.json",
+    "bytes": 47751,
+    "sha256": "fc1230e9cf7f709effbbd8fa1c49178864d9a3264deed5e8f20064077c55f02d"
+  },
+  "scientific_reexecution": false
+}

@@ -1,0 +1,29 @@
+{
+  "status": "SEALED_EXPOSED_REVIEW",
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/FINAL_FREEZE.json",
+    "bytes": 21486,
+    "sha256": "dab6af16cf9977a9b20d3438a7db2da68a5ef632bd883c5b0c7b9bd77fceb991"
+  },
+  "members": 116,
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/REVIEW.md",
+    "bytes": 4388,
+    "sha256": "b9fd729aad4be1e7473f122b1abe8cc79ae647b9a968b0f9bc2679089484083a"
+  },
+  "code_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/CODE_REVIEW.md",
+    "bytes": 13919,
+    "sha256": "0c0415683b3508a306908a92ac786f99cbd05d6221a2f1cb2f3cdcf7baaf581b"
+  },
+  "pre_analysis": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+    "bytes": 15248,
+    "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+  },
+  "scoped_check_result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/SCOPED_CHECK_RESULT.json",
+    "bytes": 6752,
+    "sha256": "c645a85f698d47609eb3a2d85c16680a23bab7f333af7eece480a76c047f5fa0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "SOURCE_AND_RECEIPT_METADATA_VERIFIED",
+  "validation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/METADATA_VALIDATION.json",
+    "bytes": 5082,
+    "sha256": "860507a04e51ef6bbb6e247124431bb00a491d0a57ba29f02882077546d857f5"
+  },
+  "source_aliases": 54,
+  "original_receipts": 5,
+  "new_completed_receipts": 3,
+  "parsed_top_level_sources": 7,
+  "mathematical_check_reexecuted": false
+}

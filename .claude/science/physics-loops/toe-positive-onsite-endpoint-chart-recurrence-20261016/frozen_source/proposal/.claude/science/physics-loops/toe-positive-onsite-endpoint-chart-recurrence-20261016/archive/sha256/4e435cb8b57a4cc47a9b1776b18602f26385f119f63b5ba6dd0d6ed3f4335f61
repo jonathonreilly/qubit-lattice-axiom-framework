@@ -1,0 +1,68 @@
+"""Validate frozen-source aliases, actual review receipts and pending scope only."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast, hashlib, json
+O=Path.cwd(); assert O.name=='endpoint_recurrence_exposed_check'
+C=O/'sources/candidate'
+def pin(p):
+ b=p.read_bytes(); return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p): return json.loads(p.read_text())
+def check(p,r):
+ q=pin(p); assert (q['bytes'],q['sha256'])==(r['bytes'],r['sha256']),str(p)
+exposure=read(O/'EXPOSURE_AND_SOURCE_CAPTURE.json')
+for row in exposure['sources']:
+ check(Path(row['original']['path']),row['original']); check(Path(row['copy']['path']),row['copy'])
+freeze=read(C/'FREEZE.json')
+for row in freeze['members']: check(C/row['path'],row)
+assert pin(C/'FREEZE.json')['sha256']=='33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c'
+original_receipts=[]
+for label in ['input_capture','source_freeze','recurrence_001','metadata_validation','final_freeze']:
+ p=C/'runs'/label/'EXECUTION.json'; r=read(p)
+ assert r['exit_code']==0 and r['timed_out'] is False
+ assert r['argv'][1]==r['source_at_launch']['path']
+ for key in ['source_at_launch','original_source','recorder_at_launch','stdout','stderr']:
+  check(Path(r[key]['path']),r[key])
+ assert r['source_at_launch']['sha256']==r['original_source']['sha256']
+ original_receipts.append(pin(p))
+our_receipts=[]
+for relative in ['metadata_runs/source_capture','metadata_runs/review_metadata','scoped_runs/saved_trace_001']:
+ p=O/relative/'EXECUTION.json'; r=read(p); launch=read(O/relative/'LAUNCH.json')
+ assert r['exit_code']==r['expected_exit']==0 and r['timed_out'] is False
+ assert all(r[key]==value for key,value in launch.items())
+ assert r['argv'][1]=='-B' and r['argv'][2]==r['source_at_launch']['path']
+ assert r['start_utc']<r['end_utc'] and r['elapsed_seconds']>0
+ for key in ['source_original','source_at_launch','recorder_at_launch','stdout','stderr']:
+  check(Path(r[key]['path']),r[key])
+ assert r['source_original']['sha256']==r['source_at_launch']['sha256']
+ our_receipts.append(pin(p))
+scope=read(O/'RESULT.json')
+for key in ['candidate_freeze','candidate_derivation','candidate_executed_source','candidate_certificate',
+ 'prior_review_freeze','review','full_analysis','coverage','scoped_check_result','scoped_check_execution']:
+ check(Path(scope[key]['path']),scope[key])
+assert all(scope[key] is None for key in ['root_acceptance','audit_verdict','canonical_binding','publication'])
+assert scope['changed_editable_prompt_files']==scope['other_paths_modified']==[]
+assert scope['new_scoped_arithmetic_runs']==1
+assert scope['new_science_program_replays']==scope['new_Taylor_steps']==scope['new_heuristic_runs']==0
+scoped=read(O/'SCOPED_CHECK_RESULT.json')
+assert scoped['saved_trace_matrix_products_verified']==274 and scoped['counts']['coefficient_matrices']==960
+assert scoped['new_Taylor_steps']==scoped['new_eigenphase_selections']==0
+assert all(scoped['controls'].values())
+assert scoped['root_acceptance'] is scoped['formal_audit_status'] is None
+assert len(list((O/'scoped_runs').glob('*/EXECUTION.json')))==1
+assert len(list((O/'scoped_runs').iterdir()))==1
+assert pin(O/'check_saved_recurrence.py')['sha256']=='76c42811fabb27297714e4a91c14090b40ff0229640af077ad4f45a940adc393'
+parsed=[]
+for p in sorted(O.glob('*.py')):
+ text=p.read_text(); ast.parse(text)
+ assert all(line==line.rstrip() for line in text.splitlines()),str(p)
+ parsed.append(pin(p))
+out=O/'METADATA_VALIDATION.json'; assert not out.exists()
+result=dict(utc=datetime.now(timezone.utc).isoformat(),status='SOURCE_AND_RECEIPT_METADATA_VERIFIED',
+ source_alias_count=len(exposure['sources']),candidate_members=len(freeze['members']),
+ original_receipts=original_receipts,new_completed_receipts=our_receipts,parsed_top_level_sources=parsed,
+ scope_only=True,mathematical_check_reexecuted=False,root_approval_created=False,
+ source_and_prior_review_unchanged=True,review_result=pin(O/'RESULT.json'))
+out.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
+print(json.dumps(dict(status=result['status'],validation=pin(out),source_aliases=len(exposure['sources']),
+ original_receipts=len(original_receipts),new_completed_receipts=len(our_receipts),
+ parsed_top_level_sources=len(parsed),mathematical_check_reexecuted=False),indent=2))

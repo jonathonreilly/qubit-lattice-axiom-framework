@@ -1,0 +1,71 @@
+# Exposed review of the explicit endpoint recurrence
+
+I found no blocking mathematical or implementation defect in the scoped
+recurrence claim. The source review and one separate exact-rational saved-evidence
+check support the conditional computer-assisted statement
+
+\[
+n=98611368294597721931914764889297593425141587534996842205,
+\qquad \|U_0^n-I\|_{\rm op}<10^{-13},
+\]
+
+for the literal two-qubit, 24-slot nominal endpoint specified in the candidate.
+This retains the complete U(4) phase. It is not a statement about a generic
+Hamiltonian, a physical experiment, a native actuator, or an efficient compiler.
+Root acceptance and formal retained/audit status remain unset.
+
+The controlling candidate is `sources/candidate/FREEZE.json`, SHA256
+`33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c`.
+Its full derivation, executable, actual launch, input, output matrices and trace
+were inspected. The separate chart review is reused at freeze
+`dab6af16cf9977a9b20d3438a7db2da68a5ef632bd883c5b0c7b9bd77fceb991`;
+that reuse does not assume a root decision on the chart.
+
+The load-bearing conclusions are:
+
+- The new degree-320 endpoint enclosure is fresh. The saved degree-80 chart
+  endpoint is not its input. Its analytic error is
+  \(e_0=31104/2^{321}\), separate from the directed rounding intervals.
+- The proof does not assume the truncated endpoint is unitary. The actual
+  exponent satisfies \(ne_0<1/2\), and telescoping gives an additional power
+  error \(\eta=2ne_0<10^{-35}\).
+- The new check independently verified all 187 saved bit steps: 88 selected
+  products and 186 squares. It also verified the 24-slot endpoint product,
+  all 960 shifted generator coefficient matrices, all residual entries, the
+  integer square-root bound, the strict decimal bound, and resource arithmetic.
+- Three negative controls rejected a corrupted trace entry, a wrong complete
+  scalar phase, and use of the old global tail at this exponent.
+
+The scoped check ran once at 19:18:29–19:18:37 UTC, elapsed
+8.572152290958911 seconds, exit 0, with empty stderr and a 180-second wall
+limit. Its full source and streams are under `scoped_runs/saved_trace_001`.
+The result is `SCOPED_CHECK_RESULT.json`, SHA256
+`22807dc4940e26d71b26bd83f37d5f676b39cf7e56e5636dc9af10fb7e2f5c81`.
+No fresh Taylor step, eigenphase selection, new candidate search, or complete
+scientific run was repeated. The candidate's original scientific run remains a
+distinct 12.999407208058983-second execution with its original receipts.
+
+The primary limitation is explicit: I did not regenerate the 192 fresh Taylor
+steps. Their enclosure relies on the reconstructed analytic coefficient/tail
+proof, complete executable inspection, directed primitive checks, source-at-launch
+integrity and original recorded execution. The saved endpoint also agrees with
+the earlier independently inspected chart enclosure after their respective
+analytic pads. This is useful consistency evidence, not a replacement for the
+new tail proof. Neither Python nor hardware was formally verified.
+
+The duration is \(24n\), not the classical calculation time. This chosen integer
+is larger than the earlier existential \(Q^4\) bound; it is an explicit witness,
+not a better cost bound. Conditional on the chart, the correctly ordered image
+\(U_0^{n-1}F(a)\) contains an identity neighborhood. The stated
+\(M=147975046\) and \(T_*=24Mn\) are then valid fixed-time existence/search
+parameters. No arbitrary-target parameters or physical word were compiled here.
+External drive, clock, isolation, precision, long-duration faults and controller
+outputs remain supplied assumptions. Net work and absolute work variation are
+kept separate.
+
+No source correction is required by this review. The qualifications in
+`ANALYTIC_CODE_REVIEW.md` are controlling, especially the distinction between
+the recurrence norm statement and the chart-dependent universal-duration
+consequence. This is a source-exposed check by the same selected model in the
+same campaign, using a separate arithmetic implementation. It is not blind,
+independent in a statistical/model-diversity sense, or a root approval.

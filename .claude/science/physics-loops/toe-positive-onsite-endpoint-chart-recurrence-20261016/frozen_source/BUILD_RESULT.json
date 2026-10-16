@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-16T19:33:47.772476+00:00",
+  "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "note_sha256": "f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb",
+  "primary_sha256": "3e39360b6179c922fa14ca9a2d56e0a39480af8cb9a12eeff2a13bb594f1c1fe",
+  "unchanged_bodies": 9,
+  "source_aliases": 231,
+  "unique_archive_objects": 148,
+  "source_receipts": 24,
+  "input_manifest_sha256": "d40459de62d0aa536b5033440a48f5990131f90a128fe8c41359550ecb7661ca",
+  "science_executions": 0,
+  "canonical_execution": null
+}

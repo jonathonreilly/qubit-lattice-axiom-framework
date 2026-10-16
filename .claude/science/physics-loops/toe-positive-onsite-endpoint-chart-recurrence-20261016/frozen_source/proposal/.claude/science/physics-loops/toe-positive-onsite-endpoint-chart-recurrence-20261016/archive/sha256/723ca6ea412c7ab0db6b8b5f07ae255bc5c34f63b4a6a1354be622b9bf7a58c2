@@ -1,0 +1,256 @@
+{
+  "coverage": "Complete source read; function inventory is navigational, not proof.",
+  "files": [
+    {
+      "bytes": 11860,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/enclose_chart.py",
+      "sha256": "af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9"
+    },
+    {
+      "bytes": 3227,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/capture_inputs.py",
+      "sha256": "315ec6251ee0748193068a9610f18286e13e6b701f0c16b6ad623828c64e536a"
+    },
+    {
+      "bytes": 1656,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/record.py",
+      "sha256": "f84895800b2eccb239b27bb4e9b554e05f037e970d8dc049febbb718c0b54a99"
+    },
+    {
+      "bytes": 1313,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/metadata_freeze.py",
+      "sha256": "650a8f3d82deba3f8c1ada54528161123afca62e34dd6e4cbca0d6e3e1f0ccde"
+    },
+    {
+      "bytes": 6664,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/validate_metadata.py",
+      "sha256": "a82c66ba14b6b15a0e26235e36f11af0f3ca80933d619b18ac2dda513391412a"
+    }
+  ],
+  "functions": [
+    {
+      "ast_sha256": "04dd50fd7a11474bbb045b71a0bda114deef19041ba32c46f326015d8b88170f",
+      "end_line": 7,
+      "file": "capture_inputs.py",
+      "name": "pin",
+      "source_sha256": "57d2e5b9b76b1dff4d2379e010600b64318c1bf30cbe4afd2f9b4b0d8dd46510",
+      "start_line": 6
+    },
+    {
+      "ast_sha256": "04119af0e6f493936090f0f77b405ca04c2ece4b86aa608ac8036707105e7285",
+      "end_line": 22,
+      "file": "enclose_chart.py",
+      "name": "ceildiv",
+      "source_sha256": "b830444fd6e40542285b1421bc531369cfd6cb9e7a5ddeaefc818c864d554c63",
+      "start_line": 20
+    },
+    {
+      "ast_sha256": "6d0727273c754ef43cafe2fcebc14b5a7510cf88d314dd736eb2be58b46f3d25",
+      "end_line": 27,
+      "file": "enclose_chart.py",
+      "name": "interval_scale",
+      "source_sha256": "8a9c1cae49b69f745e05693a57653be99e373827ac5398c17cf28770c3100217",
+      "start_line": 25
+    },
+    {
+      "ast_sha256": "dd8c55a0ebeebd35be4c50134dffddefe087ca2ef01942c9cb5877a2abf95696",
+      "end_line": 31,
+      "file": "enclose_chart.py",
+      "name": "cadd",
+      "source_sha256": "433e779bdcddeedb184a5ab7f5f31378c7c85f1a25a5b0858c1ced09f1074867",
+      "start_line": 30
+    },
+    {
+      "ast_sha256": "09a585af7c494393367aaf48c76ddd75a5492094bcb3d36e0a2bb58e9b1a6e0a",
+      "end_line": 36,
+      "file": "enclose_chart.py",
+      "name": "cdiv",
+      "source_sha256": "78dec14250a9f3ce8f7499119b588f18cfbdc8d0a9ebfd7cd7e06b5ce0bd940c",
+      "start_line": 34
+    },
+    {
+      "ast_sha256": "2af4da033489aa8499a57744af4d2731d05b6f4f81a767407eaa4da681557028",
+      "end_line": 45,
+      "file": "enclose_chart.py",
+      "name": "cgaussian",
+      "source_sha256": "6dc1607a32c3117e046d169bafdbd2d54a10a9d130ff32bdf1e425c39044cb84",
+      "start_line": 39
+    },
+    {
+      "ast_sha256": "8f78d865f06c78a94a35c74ddf5c0c1147101f70aed5f301cfe8c67d462cd493",
+      "end_line": 50,
+      "file": "enclose_chart.py",
+      "name": "rprod",
+      "source_sha256": "0477b28059f2118cbee6121ac8d757f9cf37a4e8c9d9cbb0b5951b69d8e06560",
+      "start_line": 48
+    },
+    {
+      "ast_sha256": "4a686d556f7b6b127b0e81917ea0907aece3fde30c0fdf1d9c67e50e3c9c3c52",
+      "end_line": 57,
+      "file": "enclose_chart.py",
+      "name": "cmul",
+      "source_sha256": "944b557b932ff260e955909b7d11ec801dd5614e953acd36c0c1ddec9ad33abc",
+      "start_line": 53
+    },
+    {
+      "ast_sha256": "4de45003fa73b343a9a99f35bd410bc16aab08f7d611a1b9fb6292e0590bb690",
+      "end_line": 61,
+      "file": "enclose_chart.py",
+      "name": "ident",
+      "source_sha256": "01d1bdf8d44f255ff000ae47916f40e01da832a60699f4ad4f05d7458decf396",
+      "start_line": 60
+    },
+    {
+      "ast_sha256": "9211031961d9822503437b76f7cdfe7c3d5cdf86ff99f76692826992702b85e6",
+      "end_line": 65,
+      "file": "enclose_chart.py",
+      "name": "madd",
+      "source_sha256": "9169024de6fe9931f54f55410050aac566c415463c70ff62f24e106fb6c55f57",
+      "start_line": 64
+    },
+    {
+      "ast_sha256": "39a527ebee7929a2bc0d15f27214ac1534c58eb1c641ee34419d92b8d3b217c9",
+      "end_line": 76,
+      "file": "enclose_chart.py",
+      "name": "mmul",
+      "source_sha256": "cd40c7b8ed56f04e34ee302cb6f3d78ee4fc7262c4830f9e0dcbe8716f2a7351",
+      "start_line": 68
+    },
+    {
+      "ast_sha256": "45dc25a1b4d93d8ea66bd31b3d4d7485c55e083b7f4e81daa658c1658756c056",
+      "end_line": 82,
+      "file": "enclose_chart.py",
+      "name": "adjoint",
+      "source_sha256": "5c00d48ba30b13aaaeea81e86b02bba8af7f2cd23cd0d97ef609cf92deb37e5d",
+      "start_line": 79
+    },
+    {
+      "ast_sha256": "96567ba3e1726b11f7206ac5666a0c65c9554d9cf9e545bf147d99deab573506",
+      "end_line": 86,
+      "file": "enclose_chart.py",
+      "name": "gmul",
+      "source_sha256": "aaf45bf78f80f8ceedcf605748e476c3513a94587cdab6016d4512d2a8b8d47a",
+      "start_line": 85
+    },
+    {
+      "ast_sha256": "264c082fc250c9b919dc9c2c3b53a48fed1a729557f876496c84d6d8f0d0d3e0",
+      "end_line": 91,
+      "file": "enclose_chart.py",
+      "name": "kron",
+      "source_sha256": "5fc94cde5e9496d550a3407e1c420aa9831b2b4a56e120d6eddc8a87ea6b43e9",
+      "start_line": 89
+    },
+    {
+      "ast_sha256": "40060ec59e7f1daa1e0932588abae04b9e1cd19e3e808b1ce2c7136c5fe1255a",
+      "end_line": 143,
+      "file": "enclose_chart.py",
+      "name": "coefficients",
+      "source_sha256": "6c93a41b71c481e8469b6dfec51942e03ca12af9ae199e88d2bc3967db24d816",
+      "start_line": 106
+    },
+    {
+      "ast_sha256": "c68a696e38f23cf7fd4f984d9559b0113100124f969a0de04fe8a95be1d6af17",
+      "end_line": 142,
+      "file": "enclose_chart.py",
+      "name": "sparse",
+      "source_sha256": "11fe2d333eef8cd4515d8c7ec79c6f5d473ea3d5d332b8cdbe38e11ce4edc11d",
+      "start_line": 128
+    },
+    {
+      "ast_sha256": "795fcca3de488ff28858536f7acc6cef6a4c44d0b069520de2b96fc1aac93b72",
+      "end_line": 154,
+      "file": "enclose_chart.py",
+      "name": "left_accumulate",
+      "source_sha256": "85131ab8232a41b910055924f9f1c3b3a45e04ae740d69455b9434ed231d1d3f",
+      "start_line": 146
+    },
+    {
+      "ast_sha256": "b9c81895750bd579521a7dc401837038c3749347a00e53ebecf859f654715341",
+      "end_line": 174,
+      "file": "enclose_chart.py",
+      "name": "step_polynomial",
+      "source_sha256": "0754a66b779ae508c1372c58684640e6a42c4e297bd722175065b79b176fb376",
+      "start_line": 157
+    },
+    {
+      "ast_sha256": "037b7052141eba115abd55a96f05240a28ba8e3d2c374008c7803052fd053c84",
+      "end_line": 173,
+      "file": "enclose_chart.py",
+      "name": "horner",
+      "source_sha256": "dd2f49b7562edddc6d856d358e278d9016adbd468c972677640c1e27d2ca2457",
+      "start_line": 169
+    },
+    {
+      "ast_sha256": "03d1aa01913461fb1959b69b27b2bd5b92800176754d73adedea9dc33abeceec",
+      "end_line": 183,
+      "file": "enclose_chart.py",
+      "name": "pauli_coefficient",
+      "source_sha256": "38b2f5a483faf4262d6f0a8251ae879f534354209d1aeedfa7733b44d0ef0ae6",
+      "start_line": 177
+    },
+    {
+      "ast_sha256": "a496223fa5c27ca81d6ee4b867c1c391e7ae70b2419833a32be317c992e142cc",
+      "end_line": 188,
+      "file": "enclose_chart.py",
+      "name": "ration",
+      "source_sha256": "e346c53c95adb20fd3b5b7c8f94ea4ec3469fcb7406b83a187fa99d8b400b07d",
+      "start_line": 186
+    },
+    {
+      "ast_sha256": "d41a7959994eafeff95f3eca55bb72b3585a81629413c6372890d99645c1e4b3",
+      "end_line": 193,
+      "file": "enclose_chart.py",
+      "name": "digest",
+      "source_sha256": "d6ab249e3ee03a1e620b1f1a72af6e6076c9a70794a960edc92539ca2ecea7bd",
+      "start_line": 191
+    },
+    {
+      "ast_sha256": "5d05d51878fc374d17d224025bfab8f57e7402423122ab7e50e1e0d4acd7ee18",
+      "end_line": 310,
+      "file": "enclose_chart.py",
+      "name": "main",
+      "source_sha256": "1c0eef40bcd7ba693595fd06f216b0759251a6007929d035f34b15f4a2893152",
+      "start_line": 196
+    },
+    {
+      "ast_sha256": "04dd50fd7a11474bbb045b71a0bda114deef19041ba32c46f326015d8b88170f",
+      "end_line": 8,
+      "file": "record.py",
+      "name": "pin",
+      "source_sha256": "57d2e5b9b76b1dff4d2379e010600b64318c1bf30cbe4afd2f9b4b0d8dd46510",
+      "start_line": 7
+    },
+    {
+      "ast_sha256": "04dd50fd7a11474bbb045b71a0bda114deef19041ba32c46f326015d8b88170f",
+      "end_line": 14,
+      "file": "validate_metadata.py",
+      "name": "pin",
+      "source_sha256": "db9c7fc9d17176abc13fc9fbb70ebf95fe3dbaa8af8e52904aa2900417ad33db",
+      "start_line": 12
+    },
+    {
+      "ast_sha256": "d5b4a7d6306923282ee8f549e111b3e1e8d323f6c96e6a8d7cb9cdcf3262f9dc",
+      "end_line": 20,
+      "file": "validate_metadata.py",
+      "name": "check_pin",
+      "source_sha256": "3973fe30d7fbafce760dac5b727db8918381ab54e0f8e2bea42595a550455c9a",
+      "start_line": 17
+    },
+    {
+      "ast_sha256": "7f1a465aa7ebe8e1e1048f1cf278b24ecdbfd69ca3933c6d759f9967c160e408",
+      "end_line": 24,
+      "file": "validate_metadata.py",
+      "name": "q",
+      "source_sha256": "e172642d00d26a679c8a0174de85ce57410b22e8aaae0d9518819397c4845b2b",
+      "start_line": 23
+    },
+    {
+      "ast_sha256": "e133ba7e01f9456524e238d6435fb110e498b7c0c25b28e763a5cebc31e504c8",
+      "end_line": 62,
+      "file": "validate_metadata.py",
+      "name": "complex_matrix",
+      "source_sha256": "63b067dc8eb3fb80d0cf19ae8aec7b6065e536db4e2c99f33097693e1cd31e8d",
+      "start_line": 58
+    }
+  ]
+}

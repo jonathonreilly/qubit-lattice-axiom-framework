@@ -1,0 +1,99 @@
+# Prelaunch scope and analytical enclosure
+
+Prepared before the first and only initially authorized enclosure calculation.
+The proposal and floating selector have been read completely. Their actual
+bytes and receipt/streams are captured by INPUT_FREEZE.json. The selector is
+input selection, not evidence of a positive singular value, and is not rerun.
+This author is source exposed and uses the same model; no independent checking
+claim is made. No broad matrix compiler or physical endpoint word is executed.
+
+The sole science command will compute a 16 by 16 real Jacobian enclosure at
+the supplied nominal amplitudes and selected ordered indices. The proposed
+rational inverse is tested, not assumed. A failure exits nonzero after saving
+the actual interval artifacts. No adjustment/rerun is authorized silently.
+
+## Exact arithmetic model
+
+All complex rectangles have integer endpoints divided by S=2^128. Addition
+is exact. Multiplication encloses real and imaginary bilinear expressions by
+their four corner products, followed by floor/ceiling division by S. Exact
+Gaussian-rational left coefficients use a common positive denominator, exact
+integer accumulation, then one outward division. Signed integer multiplication
+swaps endpoints when negative. Horner evaluation at 1/8 uses outward division.
+No Python float, NumPy, SciPy, numerical inverse, or SVD is used.
+
+For one slot and x=k/8, write A(z)=-i[K+a psi(x+z)P] and E(z)=-i psi(x+z)P,
+psi(s)=16s^2(1-s)^2. The exact Taylor coefficients are
+
+    psi_k = [16x^2(1-x)^2, 32x(1-x)(1-2x),
+             16-96x+96x^2, -32+64x, 16].
+
+The augmented fundamental matrix is [[U,D],[0,U]], for B=[[A,E],[0,A]].
+u_0=I,d_0=0 and
+
+    (n+1)u_(n+1)=sum_(k=0)^min(4,n) A_k u_(n-k),
+    (n+1)d_(n+1)=sum_(k=0)^min(4,n) [A_k d_(n-k)+E_k u_(n-k)].
+
+The code encloses the coefficients through degree 80 and the exact truncated
+polynomial value at h=1/8. It composes eight steps per slot and 24 slots,
+retaining chronological matrix order. For each selected amplitude only its
+own slot has a nonzero D block; caching other slot derivatives does not insert
+them into that amplitude's product.
+
+## Analytic error independent of arithmetic enclosure
+
+At nominal a<=1, ||K||=3, ||P||=2 and 0<=x<=1. A coefficient majorant for B is
+b(z)=7+32z+64z^2+128z^3+64z^4. These follow from |psi_0|<=1,
+|psi_1|<=8, |psi_2|<=16, |psi_3|<=32, |psi_4|=16 and the block norm bound
+||B_k||<=||A_k||+||E_k||. At R=1/4,
+integral_0^R b(z)dz=773/240<4. The nonnegative scalar solution
+f(z)=exp(integral_0^z b) majorizes all matrix Taylor coefficients in norm.
+Since e<3, f(R)<81. Thus the degree-80 tail at h=R/2 is at most
+
+    delta = 81 / 2^81.
+
+For one selected global amplitude the exact augmented propagator over ANY
+contiguous time segment has norm <=1+c<3, c=||P|| integral_0^1 psi=16/15.
+Let E_n be the operator error in a product of n truncated steps. Exact suffix
+telescoping gives E_n <=3 delta sum_(k=0)^(n-1)(3+E_k), hence
+E_n<=9 n delta exp(3 n delta). For n<=192, 3n delta<1/2 and exp(3n delta)<2,
+so E_n<=3456 delta<4096 delta=:e. The same bound holds for the U and D blocks.
+The code's regrouped pulse/prefix/suffix calculation encloses the exact same
+truncated product, so interval rounding is an additional enclosure, not an
+unpriced physical error.
+
+For H_j=-i U^dagger D_j, the exact/truncated difference is bounded by
+e(c+e)+e<4e. Each Pauli coefficient Tr(P_mu H_j)/4 has absolute error at most
+that norm. Therefore pad each real coefficient interval by
+
+    e_A=4e=16384 delta=81/2^67.
+
+The code retains the raw complex coordinates before the pad. The actual
+Jacobian is real by unitarity. Its exact identity-coordinate derivative is
+-integral psi Tr(P)/4=-8/15; containment is an additional sign/scalar check.
+
+## Acceptance inequalities, not anticipated output
+
+For supplied rational R with denominator 2^40, enclose I-RA using integer
+left multiplication. With b_ij the maximum absolute endpoint, require
+4 sum b_ij^2 <= S^2. This proves ||I-RA||_2 <=||I-RA||_F<=1/2. Choose the
+least computed integer B whose exact squared comparison proves ||R||_F<=B.
+Then ||A^-1||_2<=2B and sigma_min(A)>=1/(2B). No floating singular value
+is evidence. The candidate chooses s=1/(4B), L=4096/225,
+
+    t=min(1/8, s/(2L), 1/(16c)), rho=st/2, r=min(rho/2,1/8).
+
+These are all exact positive rationals if the residual test succeeds.
+Review must separately validate the source, analytic remainder and chart
+argument; successful integer comparisons alone do not certify those layers.
+
+## Execution limits and predicted diagnostics
+
+One recorded enclosure command, 240-second wall limit, no numerical libraries,
+no sampling or parameter search. No RAM/CPU quota is imposed beyond the wall
+limit; the receipt must say so. Original full stdout/stderr and immutable
+source-at-launch are retained. Output includes every Jacobian interval, every
+inverse-residual interval, all selected endpoint derivative intervals, and
+all slot U/D intervals. The scalar row diagnostic is predicted to contain
+-8/15. A wrong derivative sign or omission of positive identity reserves is
+expected to fail it and/or the inverse residual. This is not a mutant run.

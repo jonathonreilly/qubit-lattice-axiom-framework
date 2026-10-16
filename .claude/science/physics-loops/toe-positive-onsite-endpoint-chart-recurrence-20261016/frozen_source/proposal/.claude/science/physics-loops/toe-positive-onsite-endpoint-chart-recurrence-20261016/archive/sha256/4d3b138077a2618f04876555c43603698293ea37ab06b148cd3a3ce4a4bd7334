@@ -1,0 +1,36 @@
+# Read guide
+
+Read `REVIEW.md` for the disposition, then `ANALYTIC_CODE_REVIEW.md` for the
+complete fresh-tail, scalar, powering, timing and physical-scope reconstruction.
+No blocking defect was found. Root acceptance and formal audit status remain
+unset; these files are a separate source-exposed review, not an approval record.
+
+The numerical evidence is `SCOPED_CHECK_RESULT.json` and the full actual bundle
+`scoped_runs/saved_trace_001/`. `SCOPED_CHECK_PLAN.md` preceded that one run.
+`check_saved_recurrence.py` exposes the complete separate Fraction calculation.
+It verifies all saved power transitions but does not regenerate Taylor steps or
+rerun the candidate's scientific program. The new recorders expose actual argv,
+captured source, full streams, times, limits and status.
+
+`EXPOSURE_AND_SOURCE_CAPTURE.json` maps every copied artifact to its original
+path/hash. `sources/candidate/` contains the complete frozen 42-member candidate
+and its six-file final-seal supplement. It includes the full 5.96 MB power trace,
+all output intervals and all original source/recorder/stream bundles. Original
+historical statuses remain unchanged. `sources/prior_review/` contains only six
+selected review documents/results and the exact prior freeze, not its recursive
+archive. `CODE_COVERAGE.json` identifies current executable functions, exact
+source reuse and the new check's exact helper reuse.
+
+`RESULT.json` is the machine-readable review scope. `METADATA_VALIDATION.json`
+and its separately captured metadata run verify local closure, input/source
+identity, actual execution linkage, and pending approval fields. `FINAL_FREEZE.json`
+seals every completed artifact except itself and the terminal final-seal run.
+That terminal run is necessarily outside its own frozen membership; it is an
+actual subsequent receipt that binds the emitted freeze and preserves full
+source/streams. No new source files need to be changed to interpret this packet.
+
+The mathematical consequence is for this exact endpoint only. The arbitrary
+target/fixed-duration construction additionally depends on the reviewed but
+not root-accepted chart theorem. No mathematical approval follows from metadata
+validation. No W, Git, canonical, publication, prompt, axiom or lock action was
+performed. Editable prompt files changed: none.

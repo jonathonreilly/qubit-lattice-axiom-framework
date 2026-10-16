@@ -1,0 +1,314 @@
+#!/usr/bin/env python3
+"""One exact integer, outward-rounded enclosure. No floating arithmetic.
+
+The analytic remainder is supplied by PRELAUNCH.md, not inferred numerically.
+Run with explicit input JSON and a fresh output directory. The recorder executes
+an immutable source-at-launch copy, so paths are never inferred from __file__.
+"""
+import hashlib
+import json
+import sys
+from fractions import Fraction as Q
+from math import isqrt, lcm
+from pathlib import Path
+
+S = 1 << 128
+ZERO = (0, 0, 0, 0)
+ONE = (S, S, 0, 0)
+
+
+def ceildiv(a, b):
+    assert b > 0
+    return -((-a) // b)
+
+
+def interval_scale(a, k):
+    lo, hi = a
+    return (k * lo, k * hi) if k >= 0 else (k * hi, k * lo)
+
+
+def cadd(a, b):
+    return tuple(a[i] + b[i] for i in range(4))
+
+
+def cdiv(a, b):
+    assert b > 0
+    return (a[0] // b, ceildiv(a[1], b), a[2] // b, ceildiv(a[3], b))
+
+
+def cgaussian(a, r, i):
+    """Multiply by an exact Gaussian integer; no rounding."""
+    ar = interval_scale(a[:2], r)
+    bi = interval_scale(a[2:], i)
+    ai = interval_scale(a[2:], r)
+    br = interval_scale(a[:2], i)
+    return (ar[0] - bi[1], ar[1] - bi[0], ai[0] + br[0], ai[1] + br[1])
+
+
+def rprod(a, b):
+    p = [a[0] * b[0], a[0] * b[1], a[1] * b[0], a[1] * b[1]]
+    return min(p), max(p)
+
+
+def cmul(a, b):
+    ac, bd = rprod(a[:2], b[:2]), rprod(a[2:], b[2:])
+    ad, bc = rprod(a[:2], b[2:]), rprod(a[2:], b[:2])
+    return ((ac[0] - bd[1]) // S, ceildiv(ac[1] - bd[0], S),
+            (ad[0] + bc[0]) // S, ceildiv(ad[1] + bc[1], S))
+
+
+def ident():
+    return [ONE if i == j else ZERO for i in range(4) for j in range(4)]
+
+
+def madd(a, b):
+    return [cadd(x, y) for x, y in zip(a, b)]
+
+
+def mmul(a, b):
+    result = []
+    for i in range(4):
+        for j in range(4):
+            v = ZERO
+            for k in range(4):
+                v = cadd(v, cmul(a[4 * i + k], b[4 * k + j]))
+            result.append(v)
+    return result
+
+
+def adjoint(a):
+    return [(a[4 * j + i][0], a[4 * j + i][1],
+             -a[4 * j + i][3], -a[4 * j + i][2])
+            for i in range(4) for j in range(4)]
+
+
+def gmul(a, b):
+    return (a[0] * b[0] - a[1] * b[1], a[0] * b[1] + a[1] * b[0])
+
+
+def kron(a, b):
+    return [gmul(a[2 * (i // 2) + j // 2], b[2 * (i % 2) + j % 2])
+            for i in range(4) for j in range(4)]
+
+
+I2 = [(1, 0), (0, 0), (0, 0), (1, 0)]
+X = [(0, 0), (1, 0), (1, 0), (0, 0)]
+Y = [(0, 0), (0, -1), (0, 1), (0, 0)]
+Z = [(1, 0), (0, 0), (0, 0), (-1, 0)]
+I4 = kron(I2, I2)
+PAULIS = [kron(a, b) for a in (I2, X, Y, Z) for b in (I2, X, Y, Z)]
+RAYS = []
+for p in (kron(X, I2), kron(Y, I2), kron(I2, X), kron(I2, Y)):
+    RAYS.append([(p[k][0] + I4[k][0], p[k][1] + I4[k][1]) for k in range(16)])
+KDIAG = [3, 1, 1, 3]
+
+
+def coefficients(amplitude, ray, step):
+    x = Q(step, 8)
+    p = [16 * x * x * (1 - x) ** 2,
+         32 * x * (1 - x) * (1 - 2 * x),
+         16 - 96 * x + 96 * x * x, -32 + 64 * x, Q(16)]
+    aa, ee = [], []
+    for k in range(5):
+        a, e = [], []
+        for row in range(4):
+            for col in range(4):
+                pr, pi = ray[4 * row + col]
+                ar, ai = amplitude * p[k] * pi, -amplitude * p[k] * pr
+                if k == 0 and row == col:
+                    ai -= KDIAG[row]
+                a.append((Q(ar), Q(ai)))
+                e.append((Q(p[k] * pi), Q(-p[k] * pr)))
+        aa.append(a)
+        ee.append(e)
+    den = 1
+    for matrix in aa + ee:
+        for r, i in matrix:
+            den = lcm(den, r.denominator, i.denominator)
+    def sparse(matrices):
+        result = []
+        for matrix in matrices:
+            rows = []
+            for row in range(4):
+                entries = []
+                for col in range(4):
+                    r, i = matrix[4 * row + col]
+                    nr, ni = r * den, i * den
+                    assert nr.denominator == ni.denominator == 1
+                    if nr or ni:
+                        entries.append((col, nr.numerator, ni.numerator))
+                rows.append(entries)
+            result.append(rows)
+        return result
+    return sparse(aa), sparse(ee), den
+
+
+def left_accumulate(result, left, right):
+    """Add numerator(left) @ right exactly, before division by common denominator."""
+    for row, entries in enumerate(left):
+        for col in range(4):
+            pos = 4 * row + col
+            value = result[pos]
+            for k, r, i in entries:
+                value = cadd(value, cgaussian(right[4 * k + col], r, i))
+            result[pos] = value
+
+
+def step_polynomial(amplitude, ray, step):
+    aa, ee, den = coefficients(amplitude, ray, step)
+    uu, dd = [ident()], [[ZERO] * 16]
+    for n in range(80):
+        un, dn = [ZERO] * 16, [ZERO] * 16
+        for k in range(min(4, n) + 1):
+            left_accumulate(un, aa[k], uu[n - k])
+            left_accumulate(dn, aa[k], dd[n - k])
+            left_accumulate(dn, ee[k], uu[n - k])
+        divisor = den * (n + 1)
+        uu.append([cdiv(v, divisor) for v in un])
+        dd.append([cdiv(v, divisor) for v in dn])
+    def horner(series):
+        value = series[-1]
+        for coefficient in reversed(series[:-1]):
+            value = [cadd(cdiv(v, 8), a) for v, a in zip(value, coefficient)]
+        return value
+    return horner(uu), horner(dd)
+
+
+def pauli_coefficient(p, h):
+    value = ZERO
+    for i in range(4):
+        for k in range(4):
+            r, im = p[4 * i + k]
+            value = cadd(value, cgaussian(h[4 * k + i], r, im))
+    return cdiv(value, 4)
+
+
+def ration(q):
+    q = Q(q)
+    return {"numerator": q.numerator, "denominator": q.denominator}
+
+
+def digest(path):
+    b = path.read_bytes()
+    return {"bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
+
+
+def main():
+    input_path, output = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
+    output.mkdir(parents=True, exist_ok=False)
+    raw = input_path.read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+    data = json.loads(raw)
+    assert data["certificate_order"] == 80
+    assert data["substeps_per_pulse"] == 8
+    assert data["dyadic_scale_bits"] == 128
+    assert data["nominal_duration"] == 24
+    nums = data["amplitude_numerators"]
+    assert nums == [192 + ((73 * j + 41) % 128) for j in range(24)]
+    assert data["amplitude_denominator"] == 512
+    assert data["pulse_channels"] == [j % 4 for j in range(24)]
+    selected = data["selected_zero_based_indices"]
+    assert len(selected) == len(set(selected)) == 16
+    assert all(0 <= j < 24 for j in selected)
+    print("EXACT_ENCLOSURE_START scale_bits=128 N=80 substeps=8 pulses=24", flush=True)
+    pulse_u, pulse_d = [], []
+    for j in range(24):
+        u, d = ident(), [ZERO] * 16
+        for k in range(8):
+            us, ds = step_polynomial(Q(nums[j], 512), RAYS[j % 4], k)
+            d = madd(mmul(ds, u), mmul(us, d))
+            u = mmul(us, u)
+        pulse_u.append(u)
+        pulse_d.append(d)
+        print("pulse_complete", j, flush=True)
+    prefix = [ident()]
+    for u in pulse_u:
+        prefix.append(mmul(u, prefix[-1]))
+    suffix = [None] * 25
+    suffix[24] = ident()
+    for j in range(23, -1, -1):
+        suffix[j] = mmul(suffix[j + 1], pulse_u[j])
+    u = prefix[24]
+    derivatives, raw_columns = [], []
+    for j in selected:
+        d = mmul(mmul(suffix[j + 1], pulse_d[j]), prefix[j])
+        derivatives.append(d)
+        h = [cgaussian(v, 0, -1) for v in mmul(adjoint(u), d)]
+        raw_columns.append([pauli_coefficient(p, h) for p in PAULIS])
+    # Analytic, dimension-independent augmented remainder from PRELAUNCH.md.
+    jac_pad = 81 * (1 << 61)  # S * (16384 * 81 / 2**81)
+    jac = [[(raw_columns[j][i][0] - jac_pad, raw_columns[j][i][1] + jac_pad)
+            for j in range(16)] for i in range(16)]
+    # Exact scalar derivative, including all positive identity reserves.
+    identity_row_contains_minus_8_over_15 = all(
+        15 * lo <= -8 * S <= 15 * hi for lo, hi in jac[0])
+    rn, rd = data["rational_inverse_numerators"], data["rational_inverse_denominator"]
+    assert len(rn) == 16 and all(len(row) == 16 for row in rn) and rd == 1 << 40
+    residual = []
+    for i in range(16):
+        row = []
+        for j in range(16):
+            lo = hi = 0
+            for k in range(16):
+                a, b = interval_scale(jac[k][j], rn[i][k])
+                lo += a
+                hi += b
+            rlo, rhi = lo // rd, ceildiv(hi, rd)
+            delta = S if i == j else 0
+            row.append((delta - rhi, delta - rlo))
+        residual.append(row)
+    residual_square_numerator = sum(max(abs(lo), abs(hi)) ** 2
+                                    for row in residual for lo, hi in row)
+    inverse_square_numerator = sum(x * x for row in rn for x in row)
+    b = (isqrt(inverse_square_numerator) + rd - 1) // rd
+    if b * b * rd * rd < inverse_square_numerator:
+        b += 1
+    residual_bound = 4 * residual_square_numerator <= S * S
+    inverse_bound = inverse_square_numerator <= b * b * rd * rd
+    c, lipschitz = Q(16, 15), Q(4096, 225)
+    s = Q(1, 4 * b)
+    t = min(Q(1, 8), s / (2 * lipschitz), 1 / (16 * c))
+    rho = s * t / 2
+    radius = min(rho / 2, Q(1, 8))
+    certificate = {
+        "status": "CANDIDATE_EXACT_ARITHMETIC_CONDITIONAL_ON_ANALYTIC_AND_CODE_REVIEW",
+        "input": {"path": str(input_path), **digest(input_path)},
+        "scale_denominator": S, "complex_interval_order": ["real_lo", "real_hi", "imag_lo", "imag_hi"],
+        "matrix_flat_order": "row-major; complex matrices are 4 by 4",
+        "selected_zero_based_indices": selected,
+        "pauli_order": [a + b for a in "IXYZ" for b in "IXYZ"],
+        "global_truncated_U": u,
+        "global_truncated_selected_derivatives": derivatives,
+        "raw_pauli_coordinates_by_column": raw_columns,
+        "analytic_jacobian_entry_pad": ration(Q(jac_pad, S)),
+        "jacobian_real_intervals": jac,
+        "inverse_numerators": rn, "inverse_denominator": rd,
+        "inverse_residual_intervals": residual,
+        "residual_frobenius_square_upper": ration(Q(residual_square_numerator, S * S)),
+        "inverse_frobenius_square_exact": ration(Q(inverse_square_numerator, rd * rd)),
+        "integer_B": b,
+        "checks": {"residual_frobenius_le_half": residual_bound,
+                   "inverse_frobenius_le_B": inverse_bound,
+                   "identity_row_contains_exact_minus_8_over_15": identity_row_contains_minus_8_over_15},
+        "certified_lower_sigma": ration(Q(1, 2 * b)), "chosen_s": ration(s),
+        "chosen_t": ration(t), "image_coordinate_rho": ration(rho), "chosen_r": ration(radius),
+        "second_derivative_lipschitz_L": ration(lipschitz),
+        "analytic_step_error": ration(Q(81, 1 << 81)),
+        "analytic_global_augmented_error": ration(Q(81, 1 << 69)),
+        "intervals_include_arithmetic_rounding": True,
+        "floating_point_used": False, "independent_validation": False,
+    }
+    (output / "certificate.json").write_text(json.dumps(certificate, indent=2) + "\n")
+    (output / "pulse_intervals.json").write_text(json.dumps({
+        "scale_denominator": S, "pulse_U": pulse_u, "pulse_D": pulse_d}, indent=2) + "\n")
+    print(json.dumps({k: certificate[k] for k in ["checks", "integer_B", "chosen_s", "chosen_t", "chosen_r",
+                                                    "residual_frobenius_square_upper"]}, indent=2), flush=True)
+    print(json.dumps({"certificate_artifact": digest(output / "certificate.json"),
+                      "pulse_artifact": digest(output / "pulse_intervals.json")}, indent=2), flush=True)
+    if not all(certificate["checks"].values()):
+        raise SystemExit("ENCLOSURE_CERTIFICATE_INEQUALITY_FAILED; preserve this run, diagnose before any new execution")
+    print("EXACT_INTEGER_INEQUALITIES_ESTABLISHED; separate proof/code review required", flush=True)
+
+
+if __name__ == "__main__":
+    main()

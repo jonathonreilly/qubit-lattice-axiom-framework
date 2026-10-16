@@ -1,0 +1,90 @@
+{
+  "audit_verdict": null,
+  "candidate_certificate": {
+    "bytes": 32606,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/recurrence_001_output/RECURRENCE_CERTIFICATE.json",
+    "sha256": "380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314"
+  },
+  "candidate_derivation": {
+    "bytes": 17720,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/DERIVATION.md",
+    "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+  },
+  "candidate_executed_source": {
+    "bytes": 12700,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/runs/recurrence_001/source_at_launch.py",
+    "sha256": "c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771"
+  },
+  "candidate_freeze": {
+    "bytes": 7086,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/FREEZE.json",
+    "sha256": "33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c"
+  },
+  "canonical_binding": null,
+  "changed_editable_prompt_files": [],
+  "claim": {
+    "amplified_error": {
+      "denominator": 16687398718132110018711107079449625895333629080911349765211262561111091607661254297054391304192,
+      "numerator": 23962562495587246429455287868099315202309405771004232655815
+    },
+    "endpoint_analytic_error": {
+      "denominator": 33374797436264220037422214158899251790667258161822699530422525122222183215322508594108782608384,
+      "numerator": 243
+    },
+    "full_U4": true,
+    "plant": "K=2I+ZZ on exactly two old qubits, fixed rational nominal 24-slot positive-onsite template",
+    "positive_integer_n": 98611368294597721931914764889297593425141587534996842205,
+    "strict_operator_error": {
+      "denominator": 10000000000000,
+      "numerator": 1
+    }
+  },
+  "coverage": {
+    "bytes": 20808,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/CODE_COVERAGE.json",
+    "sha256": "5425ab91a2780d1cad99ba9d0ae275b857a0fbb592d9970b8541af3800f7d7b3"
+  },
+  "external_messages_sent": 0,
+  "full_analysis": {
+    "bytes": 17080,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/ANALYTIC_CODE_REVIEW.md",
+    "sha256": "5081d935a4d62c855adbb8c2b8060d16a613234e592288347f8441730acc742d"
+  },
+  "new_Taylor_steps": 0,
+  "new_heuristic_runs": 0,
+  "new_science_program_replays": 0,
+  "new_scoped_arithmetic_runs": 1,
+  "other_paths_modified": [],
+  "prior_review_freeze": {
+    "bytes": 21486,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/prior_review/FINAL_FREEZE.json",
+    "sha256": "dab6af16cf9977a9b20d3438a7db2da68a5ef632bd883c5b0c7b9bd77fceb991"
+  },
+  "publication": null,
+  "required_corrections": [],
+  "review": {
+    "bytes": 4131,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/REVIEW.md",
+    "sha256": "ba612ac16114b189703a3114c9c7d5051ec073d2c0822023b852b5ef807c2f50"
+  },
+  "review_limitations": [
+    "Fresh 192 Taylor steps not regenerated; source proof and recorded source execution remain premises.",
+    "No formal verification of Python, arithmetic runtime, JSON parser or hardware.",
+    "Separate same-model exposed review; no blind or statistical/model-diversity independence.",
+    "Conditional fixed-time arbitrary-target consequence additionally requires the chart theorem.",
+    "No arbitrary-target compilation, physical execution, efficiency, native supply, autonomous controller or indefinite reuse."
+  ],
+  "root_acceptance": null,
+  "scoped_check_execution": {
+    "bytes": 2273,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+    "sha256": "17a6a8af1615ded34fe1e02dda26ac373b84f1a2661a8174f28da4121caf6b19"
+  },
+  "scoped_check_result": {
+    "bytes": 6546,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/SCOPED_CHECK_RESULT.json",
+    "sha256": "22807dc4940e26d71b26bd83f37d5f676b39cf7e56e5636dc9af10fb7e2f5c81"
+  },
+  "status": "EXPOSED_SCOPED_REVIEW_NO_BLOCKING_DEFECT_FOUND",
+  "utc": "2026-10-16T19:23:07.459938+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-16T19:46:54.827361+00:00",
+  "exact_freeze_members": 216,
+  "immutable_bodies": 9,
+  "source_aliases": 231,
+  "archive_objects": 148,
+  "exact_function_reuses": 16,
+  "metadata_mutants": 27,
+  "receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3162,
+      "sha256": "a569a8f2ddea7acded20b1fec2cf0156a53c2e1c149dcfe33e979f414203ea14"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3197,
+      "sha256": "440cb02e018c21cede25b01b11234d4b1e515a1c97caaeded1fd5a8961652bb1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 3153,
+      "sha256": "1523159f87faf2e7ebd339e96e7081804490c627cfe024782d7160cd295b4eaa"
+    }
+  ],
+  "complete_new_code_and_prose_read": true,
+  "complete_metadata_streams_read": true,
+  "scientific_executions": 0,
+  "required_canonical_replacements": [
+    {
+      "before": "A fixed nonzero calibration floor\ndoes not allow arbitrary final precision.",
+      "after": "The stated worst-case error bound does not certify arbitrary final precision at a fixed nonzero calibration error floor."
+    }
+  ]
+}

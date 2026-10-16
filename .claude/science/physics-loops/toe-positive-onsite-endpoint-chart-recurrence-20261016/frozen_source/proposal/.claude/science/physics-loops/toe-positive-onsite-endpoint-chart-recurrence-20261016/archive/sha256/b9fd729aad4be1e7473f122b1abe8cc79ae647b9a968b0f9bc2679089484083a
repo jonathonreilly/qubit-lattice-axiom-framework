@@ -1,0 +1,24 @@
+# Separate exposed check of the positive-onsite endpoint chart
+
+**Finding:** no blocking mathematical or implementation defect found in the frozen finite certificate. The evidence supports the full-U(4) endpoint chart for the literal two-qubit K=2I+ZZ plant and its specified positive 24-slot controls, under the stated external control, clock, precision and isolation assumptions. This is a separate source-exposed same-model check, not a blind assessment, root acceptance, retained status or independent audit.
+
+The decisive enclosure and complete analytic argument support
+
+    ||I-RA||_F < 2^-38 < 1/2,    ||R||_F <= 63,
+    sigma_min(A) >= 1/126,
+    s=1/252,  t=25/229376,  rho=25/115605504,
+    r=25/231211008.
+
+The full U(1) direction is present: every identity-coordinate derivative is exactly -8/15. The normalized Pauli coordinates, repeated-derivative Hessian bound L=4096/225, contraction radius and unique positive-real-unitary imaginary-part chart are consistent. The analytic Taylor majorant gives exponent 773/240<4 at R=1/4 and tail 81/2^81; the separate 192-step augmented error bound and per-coordinate 81/2^67 padding correctly accompany, rather than replace, directed arithmetic widths.
+
+I sealed the analytical reconstruction before reading candidate enclosure code or output. PRE_ENCLOSURE_FREEZE.json is bd6e3042dce21422bd2d3c8d387c7b36ebb58f4f788146802973332239eacd05; the preserved analysis is 54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e. The author's enclosure had already run, but was uninspected at that checkpoint. The earlier floating selector is retained only as heuristic input selection.
+
+After reading the complete frozen derivation and source, one new 6.67-second scoped check inspected all saved matrices, independently reconstructed downstream Fraction arithmetic and residuals, and rejected four wrong-object controls: omitted scalar row, reversed sign, doubled normalization and a duplicated column. It executed zero ODE steps and did not replay either the selector or the full enclosure. Source, actual launch, stdout, stderr and exact results are preserved under scoped_runs/saved_arithmetic_001 and SCOPED_CHECK_RESULT.json c645a85f698d47609eb3a2d85c16680a23bab7f333af7eece480a76c047f5fa0. CODE_REVIEW.md states the complete source coverage and limits.
+
+The finite-duration consequence is mathematically consistent as an existence/approximation interface. Effective search requires a computably supplied target or effective error-bounded target oracle; the candidate explicitly says so. No recurrence index n, arbitrary-target pulse sequence or actual physical controller was constructed. The constants allow astronomical duration and precision demands. Git ancestry, the motivating actuator screen, and other campaign constructions are not additional premises.
+
+No certificate correction is required. Preserve one narrow wording qualification: the term ||K|| |delta_T| is an upper-error budget for a post-off endpoint-time comparison, not a necessary lower bound on actual error. Generic timing faults must be priced by the full integrated generator defect. Net drive work, absolute control variation, scalar phase and actual-time target order must remain distinct.
+
+The result does not establish practical or polynomial compilation, generic many-qubit or arbitrary-cap control, native actuation, microscopic conservative drive outputs, autonomous release/halt, or indefinite reuse. Arbitrary passive reference inputs are covered only within the stated driven two-qubit model. Python/runtime/hardware and original local Taylor output remain trusted infrastructure; there is no formal proof-assistant verification or second ODE implementation.
+
+Controlling inputs are root proposal 3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169 and candidate freeze 485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf, with executed source af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9 and certificate d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509. Complete originals, captured sources, source freezes, receipts, output streams, historical nulls and disclosed metadata failures are retained in the bounded sources/ closure. No source proposal, worktree, Git, PR, prompt, lock, axiom, audit or canonical file was changed. Root's decision remains separate and unset here.

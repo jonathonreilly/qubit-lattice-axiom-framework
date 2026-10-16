@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-10-16T19:03:13.359309+00:00",
+  "kind": "pre-execution source/input freeze",
+  "members": [
+    {
+      "path": "INPUT_MANIFEST.json",
+      "bytes": 3705,
+      "sha256": "9412ce1454971a063c5751adfeed06e851aa123543b54685a33de424d1abd648"
+    },
+    {
+      "path": "PRELAUNCH.md",
+      "bytes": 4925,
+      "sha256": "1112dfc5b75cdcf74589dd9e7ca6f97318d671d6421eee35fc79588c05b6db65"
+    },
+    {
+      "path": "capture_inputs.py",
+      "bytes": 2030,
+      "sha256": "bcdf1142b2f26fcf0026a125a6a1e4b6607f432c4572d82cad9f8014dd8091f6"
+    },
+    {
+      "path": "certify_recurrence.py",
+      "bytes": 12700,
+      "sha256": "c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771"
+    },
+    {
+      "path": "freeze.py",
+      "bytes": 1200,
+      "sha256": "36f8474d8d4bc5b78f9bae0d7f05570eb8f4072d7151469ceab9fb0def80b09c"
+    },
+    {
+      "path": "inputs/PARENT_CERTIFICATE.json",
+      "bytes": 154227,
+      "sha256": "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509"
+    },
+    {
+      "path": "inputs/PARENT_DERIVATION.md",
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+    },
+    {
+      "path": "inputs/PARENT_ENCLOSURE_SOURCE.py",
+      "bytes": 11860,
+      "sha256": "af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9"
+    },
+    {
+      "path": "inputs/PARENT_FREEZE.json",
+      "bytes": 7500,
+      "sha256": "485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf"
+    },
+    {
+      "path": "inputs/SELECTED_INPUT.json",
+      "bytes": 6579,
+      "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+    },
+    {
+      "path": "record.py",
+      "bytes": 1662,
+      "sha256": "e464cff48a195288bc84a87cc14a1437ce5bbbb11a89ac3e3633831bb09d9cc5"
+    },
+    {
+      "path": "runs/input_capture/EXECUTION.json",
+      "bytes": 2309,
+      "sha256": "5af049c3213003ba92d1651e4d29ed500f0e00555a45a817f6ab3de6d49e6d86"
+    },
+    {
+      "path": "runs/input_capture/recorder_at_launch.py",
+      "bytes": 1662,
+      "sha256": "e464cff48a195288bc84a87cc14a1437ce5bbbb11a89ac3e3633831bb09d9cc5"
+    },
+    {
+      "path": "runs/input_capture/source_at_launch.py",
+      "bytes": 2030,
+      "sha256": "bcdf1142b2f26fcf0026a125a6a1e4b6607f432c4572d82cad9f8014dd8091f6"
+    },
+    {
+      "path": "runs/input_capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/input_capture/stdout",
+      "bytes": 3705,
+      "sha256": "9412ce1454971a063c5751adfeed06e851aa123543b54685a33de424d1abd648"
+    }
+  ],
+  "self_hash_excluded": true,
+  "terminal_record_excluded": "runs/source_freeze"
+}

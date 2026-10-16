@@ -1,0 +1,326 @@
+#!/usr/bin/env python3
+"""Fresh U-only enclosure, bounded heuristic n selection, one exact power test.
+
+mpmath is used ONLY inside propose_integer. No heuristic eigenvalue, phase,
+lattice quality or residual is a premise of certify_power's inequalities.
+"""
+from fractions import Fraction as Q
+from math import lcm, isqrt
+from pathlib import Path
+import hashlib
+import json
+import sys
+
+BITS = 768
+S = 1 << BITS
+ORDER = 320
+ZERO = (0, 0, 0, 0)
+ONE = (S, S, 0, 0)
+
+
+def ceildiv(a, b):
+    assert b > 0
+    return -((-a) // b)
+
+
+def scale(a, k):
+    lo, hi = a
+    return (k * lo, k * hi) if k >= 0 else (k * hi, k * lo)
+
+
+def add(a, b):
+    return tuple(a[j] + b[j] for j in range(4))
+
+
+def divide(a, b):
+    assert b > 0
+    return (a[0] // b, ceildiv(a[1], b), a[2] // b, ceildiv(a[3], b))
+
+
+def gaussian(a, r, i):
+    ar, bi, ai, br = scale(a[:2], r), scale(a[2:], i), scale(a[2:], r), scale(a[:2], i)
+    return (ar[0]-bi[1], ar[1]-bi[0], ai[0]+br[0], ai[1]+br[1])
+
+
+def rprod(a, b):
+    x = [a[0]*b[0], a[0]*b[1], a[1]*b[0], a[1]*b[1]]
+    return min(x), max(x)
+
+
+def multiply(a, b):
+    ac, bd = rprod(a[:2], b[:2]), rprod(a[2:], b[2:])
+    ad, bc = rprod(a[:2], b[2:]), rprod(a[2:], b[:2])
+    return ((ac[0]-bd[1])//S, ceildiv(ac[1]-bd[0],S),
+            (ad[0]+bc[0])//S, ceildiv(ad[1]+bc[1],S))
+
+
+def ident():
+    return [ONE if i==j else ZERO for i in range(4) for j in range(4)]
+
+
+def mmul(a, b):
+    result = []
+    for i in range(4):
+        for j in range(4):
+            v = ZERO
+            for k in range(4):
+                v = add(v, multiply(a[4*i+k], b[4*k+j]))
+            result.append(v)
+    return result
+
+
+def gmul(a, b):
+    return (a[0]*b[0]-a[1]*b[1], a[0]*b[1]+a[1]*b[0])
+
+
+def kron(a, b):
+    return [gmul(a[2*(i//2)+j//2],b[2*(i%2)+j%2]) for i in range(4) for j in range(4)]
+
+
+I2=[(1,0),(0,0),(0,0),(1,0)]
+X=[(0,0),(1,0),(1,0),(0,0)]
+Y=[(0,0),(0,-1),(0,1),(0,0)]
+I4=kron(I2,I2)
+RAYS=[]
+for p in (kron(X,I2),kron(Y,I2),kron(I2,X),kron(I2,Y)):
+    RAYS.append([(p[k][0]+I4[k][0],p[k][1]+I4[k][1]) for k in range(16)])
+KDIAG=[3,1,1,3]
+
+
+def coefficients(amplitude, ray, step):
+    x=Q(step,8)
+    p=[16*x*x*(1-x)**2,32*x*(1-x)*(1-2*x),16-96*x+96*x*x,-32+64*x,Q(16)]
+    matrices=[]
+    den=1
+    for k in range(5):
+        matrix=[]
+        for row in range(4):
+            for col in range(4):
+                pr,pi=ray[4*row+col]
+                ar,ai=Q(amplitude*p[k]*pi),Q(-amplitude*p[k]*pr)
+                if k==0 and row==col:
+                    ai-=KDIAG[row]
+                matrix.append((ar,ai))
+                den=lcm(den,ar.denominator,ai.denominator)
+        matrices.append(matrix)
+    result=[]
+    for matrix in matrices:
+        rows=[]
+        for row in range(4):
+            entries=[]
+            for col in range(4):
+                r,i=matrix[4*row+col]
+                nr,ni=r*den,i*den
+                assert nr.denominator==ni.denominator==1
+                if nr or ni:
+                    entries.append((col,nr.numerator,ni.numerator))
+            rows.append(entries)
+        result.append(rows)
+    return result,den
+
+
+def step_polynomial(amplitude,ray,step):
+    aa,den=coefficients(amplitude,ray,step)
+    uu=[ident()]
+    for n in range(ORDER):
+        un=[ZERO]*16
+        for k in range(min(4,n)+1):
+            right=uu[n-k]
+            for row,entries in enumerate(aa[k]):
+                for col in range(4):
+                    pos=4*row+col
+                    v=un[pos]
+                    for j,r,i in entries:
+                        v=add(v,gaussian(right[4*j+col],r,i))
+                    un[pos]=v
+        uu.append([divide(v,den*(n+1)) for v in un])
+    value=uu[-1]
+    for coefficient in reversed(uu[:-1]):
+        value=[add(divide(v,8),a) for v,a in zip(value,coefficient)]
+    return value
+
+
+def dot(a,b):
+    return sum(x*y for x,y in zip(a,b))
+
+
+def gram_schmidt(basis):
+    star=[];norm=[];mu=[[Q(0) for j in basis] for i in basis]
+    for i,b in enumerate(basis):
+        v=[Q(x) for x in b]
+        for j in range(i):
+            mu[i][j]=dot(b,star[j])/norm[j]
+            v=[x-mu[i][j]*y for x,y in zip(v,star[j])]
+        star.append(v);norm.append(dot(v,v));assert norm[-1]>0
+    return mu,norm
+
+
+def bounded_lll(basis,limit=10000):
+    basis=[row[:] for row in basis]
+    k=1;iterations=0;swaps=0;reductions=0
+    while k<len(basis):
+        iterations+=1
+        if iterations>limit:
+            raise RuntimeError("bounded LLL iteration limit reached; no recurrence certified")
+        mu,norm=gram_schmidt(basis)
+        for j in range(k-1,-1,-1):
+            value=mu[k][j]
+            nearest=(2*value.numerator+value.denominator)//(2*value.denominator)
+            if nearest:
+                basis[k]=[x-nearest*y for x,y in zip(basis[k],basis[j])]
+                reductions+=1;mu,norm=gram_schmidt(basis)
+        if norm[k]>=(Q(3,4)-mu[k][k-1]**2)*norm[k-1]:
+            k+=1
+        else:
+            basis[k],basis[k-1]=basis[k-1],basis[k]
+            swaps+=1;k=max(1,k-1)
+    return basis,{"iterations":iterations,"swaps":swaps,"integer_reductions":reductions,"iteration_limit":limit}
+
+
+def propose_integer(u,output):
+    import mpmath as mp
+    mp.mp.dps=110
+    matrix=mp.matrix(4)
+    for i in range(4):
+        for j in range(4):
+            lo,hi,il,ih=u[4*i+j]
+            matrix[i,j]=mp.mpc(mp.mpf(lo+hi)/(2*S),mp.mpf(il+ih)/(2*S))
+    values=mp.eig(matrix,left=False,right=False)
+    phases=sorted(mp.arg(v)/(2*mp.pi) for v in values)
+    lattice_scale=10**70
+    rounded=[int(mp.nint(lattice_scale*a)) for a in phases]
+    basis=[[1]+rounded]
+    for j in range(4):
+        basis.append([0]+[lattice_scale if k==j else 0 for k in range(4)])
+    reduced,stats=bounded_lll(basis)
+    candidates=[]
+    for row in reduced:
+        n=abs(row[0])
+        if 0<n<=10**80:
+            score=max(2*abs(mp.sin(mp.pi*(n*a-mp.nint(n*a)))) for a in phases)
+            candidates.append((score,n))
+    if not candidates:
+        raise RuntimeError("No positive bounded integer in the five reduced lattice rows")
+    candidates.sort()
+    chosen=candidates[0][1]
+    proposal={"status":"HEURISTIC_ONLY_NOT_EVIDENCE_OF_RECURRENCE","mpmath_version":mp.__version__,
+              "decimal_precision":110,"eigenvalues":[str(v) for v in values],
+              "full_U4_eigenphases_divided_by_2pi":[str(a) for a in phases],
+              "lattice_scale":lattice_scale,"rounded_phase_integers":rounded,
+              "input_basis":basis,"reduced_basis":reduced,"reduction_statistics":stats,
+              "bounded_candidates":[{"n":n,"heuristic_residual":str(score)} for score,n in candidates],
+              "selected_positive_integer":chosen,"determinant_or_scalar_normalization":False,
+              "selection_rule":"Minimum heuristic phase residual among at most five positive row-first-coordinates, each <=10^80."}
+    write(output/"HEURISTIC_PROPOSAL.json",proposal)
+    print("HEURISTIC_SELECTED_POSITIVE_N",chosen,flush=True)
+    print("LLL_STATISTICS",json.dumps(stats),flush=True)
+    return chosen
+
+
+def ration(q):
+    q=Q(q);return {"numerator":q.numerator,"denominator":q.denominator}
+
+
+def write(path,obj):
+    path.write_text(json.dumps(obj,indent=2)+"\n")
+
+
+def pin(path):
+    b=path.read_bytes();return {"path":str(path),"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()}
+
+
+def certify_power(u,n,output):
+    delta=Q(81,1<<(ORDER+1))
+    endpoint_error=384*delta
+    assert n>0 and n<=10**80
+    assert n*endpoint_error<Q(1,2)
+    analytic_power_error=2*n*endpoint_error
+    result=ident();base=u;remaining=n;bit=0;trace=[];multiplies=0
+    while remaining:
+        used=remaining&1
+        if used:
+            result=mmul(base,result);multiplies+=1
+        remaining>>=1
+        if remaining:
+            base=mmul(base,base);multiplies+=1
+        trace.append({"bit_position":bit,"multiply_used":bool(used),"remaining_exponent":remaining,
+                      "result":result,"next_base":base if remaining else None})
+        bit+=1
+    residual=[]
+    for i in range(4):
+        for j in range(4):
+            lo,hi,il,ih=result[4*i+j]
+            shift=S if i==j else 0
+            residual.append((lo-shift,hi-shift,il,ih))
+    square_numerator=sum(max(abs(v[0]),abs(v[1]))**2+max(abs(v[2]),abs(v[3]))**2 for v in residual)
+    square_bound=Q(square_numerator,S*S)
+    radius=Q(25,231211008)
+    margin=radius/4-analytic_power_error
+    success=margin>0 and square_bound<margin*margin
+    coarse=[]
+    for k in range(31):
+        b=Q(1,10**k)-analytic_power_error
+        if b>0 and square_bound<b*b:
+            coarse.append(k)
+    coarse_bound=Q(1,10**max(coarse)) if coarse else None
+    root=isqrt(square_numerator)
+    if root*root<square_numerator:
+        root+=1
+    explicit_upper=Q(root,S)+analytic_power_error
+    certificate={"status":"PROPOSED_EXACT_RECURRENCE_CERTIFICATE_PENDING_SEPARATE_REVIEW",
+                 "positive_integer_n":n,"scale_bits":BITS,"scale_denominator":S,"taylor_order":ORDER,
+                 "substeps_per_slot":8,"slots":24,"complex_interval_order":["real_lo","real_hi","imag_lo","imag_hi"],
+                 "matrix_order":"4 by 4 row-major",
+                 "endpoint_analytic_error":ration(endpoint_error),"analytic_power_error":ration(analytic_power_error),
+                 "full_U4_power_interval":result,"power_minus_identity_interval":residual,
+                 "truncated_power_residual_frobenius_square_upper":ration(square_bound),
+                 "explicit_total_operator_norm_upper":ration(explicit_upper),
+                 "strict_decimal_operator_norm_bound":ration(coarse_bound) if coarse_bound else None,
+                 "provisional_chart_r":ration(radius),"strict_target_bound_r_over_4":ration(radius/4),
+                 "checks":{"positive_integer":n>0,"endpoint_amplification_condition":n*endpoint_error<Q(1,2),
+                           "strict_recurrence_bound":success,"explicit_total_upper_below_r_over_4":explicit_upper<radius/4},
+                 "power_bits":bit,"interval_matrix_multiplications":multiplies,
+                 "heuristic_data_used_in_certificate":"Only the selected positive integer n.",
+                 "determinant_or_scalar_normalization":False,"independent_validation":False}
+    write(output/"POWER_TRACE.json",{"scale_denominator":S,"steps":trace})
+    write(output/"RECURRENCE_CERTIFICATE.json",certificate)
+    print(json.dumps({key:certificate[key] for key in ("positive_integer_n","checks","power_bits","interval_matrix_multiplications",
+                                                     "strict_decimal_operator_norm_bound","strict_target_bound_r_over_4")},indent=2),flush=True)
+    for name in ("ENDPOINT_ENCLOSURE.json","HEURISTIC_PROPOSAL.json","POWER_TRACE.json","RECURRENCE_CERTIFICATE.json"):
+        print(json.dumps(pin(output/name)),flush=True)
+    if not all(certificate["checks"].values()):
+        raise SystemExit("RECURRENCE_CERTIFICATION_FAILED; preserve all artifacts; no automatic adjustment or rerun")
+
+
+def main():
+    input_path,output=Path(sys.argv[1]).resolve(),Path(sys.argv[2]).resolve()
+    output.mkdir(parents=True,exist_ok=False)
+    raw=input_path.read_bytes()
+    assert hashlib.sha256(raw).hexdigest()=="c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+    data=json.loads(raw)
+    nums=data["amplitude_numerators"]
+    assert nums==[192+((73*j+41)%128) for j in range(24)]
+    assert data["amplitude_denominator"]==512 and data["pulse_channels"]==[j%4 for j in range(24)]
+    print("NEW_RECURRENCE_ENCLOSURE_START order=320 scale_bits=768 substeps=8 slots=24",flush=True)
+    global_u=ident();pulses=[]
+    for j in range(24):
+        local=ident()
+        for k in range(8):
+            local=mmul(step_polynomial(Q(nums[j],512),RAYS[j%4],k),local)
+        global_u=mmul(local,global_u);pulses.append(local)
+        print("fresh_endpoint_slot_complete",j,flush=True)
+    write(output/"ENDPOINT_ENCLOSURE.json",{
+        "status":"INTERVAL_ENCLOSURE_OF_EXACT_TRUNCATED_PRODUCT_PLUS_SEPARATE_ANALYTIC_TAIL",
+        "input":pin(input_path),"scale_bits":BITS,"scale_denominator":S,"taylor_order":ORDER,
+        "complex_interval_order":["real_lo","real_hi","imag_lo","imag_hi"],"matrix_order":"4 by 4 row-major",
+        "truncated_endpoint_interval":global_u,"all_slot_intervals":pulses,
+        "step_tail_operator_bound":ration(Q(81,1<<(ORDER+1))),
+        "global_endpoint_operator_error":ration(384*Q(81,1<<(ORDER+1))),
+        "full_identity_parts_retained":True,"no_old_enclosure_interval_used":True})
+    print("FRESH_ENDPOINT_ARTIFACT",json.dumps(pin(output/"ENDPOINT_ENCLOSURE.json")),flush=True)
+    n=propose_integer(global_u,output)
+    certify_power(global_u,n,output)
+
+
+if __name__=="__main__":
+    main()

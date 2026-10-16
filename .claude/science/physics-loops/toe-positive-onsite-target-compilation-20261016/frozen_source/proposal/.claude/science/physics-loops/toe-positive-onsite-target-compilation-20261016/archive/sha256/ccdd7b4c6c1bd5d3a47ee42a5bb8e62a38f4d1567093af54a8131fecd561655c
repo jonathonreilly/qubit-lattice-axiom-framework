@@ -1,0 +1,304 @@
+{
+  "kind": "exact_compressed_chronological_positive_time_schedule",
+  "old_K": "2I+ZZ, literally present throughout",
+  "slot_shape": "psi(s)=16*s^2*(1-s)^2 on 0<=s<=1",
+  "slot_duration": 1,
+  "positive_rays": [
+    "I+X1",
+    "I+Y1",
+    "I+X2",
+    "I+Y2"
+  ],
+  "pulse_channels": [
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    2,
+    3
+  ],
+  "nominal_amplitudes": [
+    {
+      "numerator": 233,
+      "denominator": 512
+    },
+    {
+      "numerator": 153,
+      "denominator": 256
+    },
+    {
+      "numerator": 251,
+      "denominator": 512
+    },
+    {
+      "numerator": 49,
+      "denominator": 128
+    },
+    {
+      "numerator": 269,
+      "denominator": 512
+    },
+    {
+      "numerator": 107,
+      "denominator": 256
+    },
+    {
+      "numerator": 287,
+      "denominator": 512
+    },
+    {
+      "numerator": 29,
+      "denominator": 64
+    },
+    {
+      "numerator": 305,
+      "denominator": 512
+    },
+    {
+      "numerator": 125,
+      "denominator": 256
+    },
+    {
+      "numerator": 195,
+      "denominator": 512
+    },
+    {
+      "numerator": 67,
+      "denominator": 128
+    },
+    {
+      "numerator": 213,
+      "denominator": 512
+    },
+    {
+      "numerator": 143,
+      "denominator": 256
+    },
+    {
+      "numerator": 231,
+      "denominator": 512
+    },
+    {
+      "numerator": 19,
+      "denominator": 32
+    },
+    {
+      "numerator": 249,
+      "denominator": 512
+    },
+    {
+      "numerator": 97,
+      "denominator": 256
+    },
+    {
+      "numerator": 267,
+      "denominator": 512
+    },
+    {
+      "numerator": 53,
+      "denominator": 128
+    },
+    {
+      "numerator": 285,
+      "denominator": 512
+    },
+    {
+      "numerator": 115,
+      "denominator": 256
+    },
+    {
+      "numerator": 303,
+      "denominator": 512
+    },
+    {
+      "numerator": 31,
+      "denominator": 64
+    }
+  ],
+  "selected_indices": [
+    1,
+    21,
+    4,
+    3,
+    7,
+    5,
+    2,
+    6,
+    8,
+    10,
+    11,
+    12,
+    17,
+    9,
+    19,
+    13
+  ],
+  "displacement_numerators": [
+    10267184761920589045739338570233,
+    -3524230143753882712450475792025,
+    10754264618693536099619223853152,
+    3441393936353892658440213348213,
+    -15658524082195802775198476210547,
+    -1363326183818018475263068795001,
+    -6427342717004234629290515296513,
+    -4985210031260408282186305096539,
+    3723704915296017629583202790771,
+    -13503459927076003383741665867368,
+    9611718802916584538924164990214,
+    10328418815841338906256279612260,
+    -1967143217797207981287681565572,
+    -6388893971237248076064020759290,
+    22060436067110625538682736676427,
+    -17472387500355413876680494541952
+  ],
+  "displacement_denominator": 340282366920938463463374607431768211456,
+  "calibrated_amplitudes": [
+    {
+      "numerator": 233,
+      "denominator": 512
+    },
+    {
+      "numerator": 203371893622276890474871525962231290361,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 166818107043664225045193156774667947775,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 130264347028315691898465750347687116661,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 5586911755854243862471817163341568707,
+      "denominator": 10633823966279326983230456482242756608
+    },
+    {
+      "numerator": 142227394185659814582688880186928074631,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 190744212409925396501288030963924350117,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 154190431852526159061038843794043760269,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 202707273080904585913848206275955338611,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 83076746542110256437863903235511156355,
+      "denominator": 170141183460469231731687303715884105728
+    },
+    {
+      "numerator": 16199964510696171316514725579458466099,
+      "denominator": 42535295865117307932921825928971026432
+    },
+    {
+      "numerator": 89058280523448764942847342500865581699,
+      "denominator": 170141183460469231731687303715884105728
+    },
+    {
+      "numerator": 35390697969878089076398589544034077401,
+      "denominator": 85070591730234615865843651857942052864
+    },
+    {
+      "numerator": 1484996765037933355233051038590583847,
+      "denominator": 2658455991569831745807614120560689152
+    },
+    {
+      "numerator": 231,
+      "denominator": 512
+    },
+    {
+      "numerator": 19,
+      "denominator": 32
+    },
+    {
+      "numerator": 249,
+      "denominator": 512
+    },
+    {
+      "numerator": 32233778405998405468615325889877964575,
+      "denominator": 85070591730234615865843651857942052864
+    },
+    {
+      "numerator": 267,
+      "denominator": 512
+    },
+    {
+      "numerator": 140898189613637149638429087072453201483,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 285,
+      "denominator": 512
+    },
+    {
+      "numerator": 152861215991035181630055099481763834215,
+      "denominator": 340282366920938463463374607431768211456
+    },
+    {
+      "numerator": 303,
+      "denominator": 512
+    },
+    {
+      "numerator": 31,
+      "denominator": 64
+    }
+  ],
+  "tree": {
+    "repeat": 147975046,
+    "chronological_children": [
+      {
+        "template": "calibrated",
+        "slots": 24
+      },
+      {
+        "repeat": 98611368294597721931914764889297593425141587534996842204,
+        "template": "nominal",
+        "slots_each": 24
+      }
+    ]
+  },
+  "exact_duration": 350208522228384946904887108861751911074590975328100424043350794320,
+  "slot_count": 350208522228384946904887108861751911074590975328100424043350794320,
+  "nominal_template_count": 14592021759516039454370296202572996294774623972004184334991641384,
+  "calibrated_template_count": 147975046,
+  "matrix_order": "(U0^(n-1) F(a))^M = (D U0^dagger F(a))^M",
+  "negative_time_operations": 0,
+  "alpha0": {
+    "numerator": 13027,
+    "denominator": 240
+  },
+  "full_scalar_action": {
+    "numerator": 84224435078563338575779751802880091204641294476647187546931071017555277934750697243364699140999365563503,
+    "denominator": 106338239662793269832304564822427566080
+  },
+  "scalar_removed_or_normalized": false,
+  "added_incident_cap": 2,
+  "slew_cap": 16,
+  "physical_duration": "(hbar/E0)*exact_duration",
+  "original_old_load": 3
+}

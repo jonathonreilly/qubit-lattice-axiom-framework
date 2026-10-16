@@ -1,0 +1,28 @@
+{
+  "duration_and_slot_count": 350208522228384946904887108861751911074590975328100424043350794320,
+  "whole_templates": 14592021759516039454370296202572996294774623972004184335139616430,
+  "added_cap_E0_units": 2,
+  "slew_E0_squared_over_hbar_units": 16,
+  "absolute_control_variation_upper_E0_units": 1050625566685154840714661326585255733223772925984301272130052382960,
+  "uniform_amplitude_fault_multiplier": {
+    "numerator": 373555757043610610031879582785868705146230373683307118979574180608,
+    "denominator": 1
+  },
+  "sufficient_example_amplitude_error": {
+    "numerator": 1,
+    "denominator": 2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376
+  },
+  "example_integrated_amplitude_error_upper": {
+    "numerator": 1459202175951603945437029620257299629477462397200418433513961643,
+    "denominator": 7957171782556586274486115970349133441607298412757563479047423630290551952200534008528896
+  },
+  "post_off_timing_upper_multiplier": 3,
+  "net_ideal_work_for_selected_W": 0,
+  "initial_and_final_trace_error_energy_multiplier_E0_units_each": 1,
+  "full_reference_trace_error_upper": {
+    "numerator": 1,
+    "denominator": 549755813888
+  },
+  "external_drive_quantum_outputs_modeled": false,
+  "efficiency_native_supply_autonomous_halt_reuse_claimed": false
+}

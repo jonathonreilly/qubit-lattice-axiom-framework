@@ -1,0 +1,17 @@
+{
+  "tool": "exec_command",
+  "kind": "verbatim_returned_tool_fields_with_explicit_capture_limits",
+  "workdir": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_qualified_publication_draft",
+  "command_form": "python3 - <<'PY'\n<exact issued_python_stdin.txt content>\nPY",
+  "source_record": "Exact issued stdin copied from the tool invocation after failure; not a launch-time filesystem capture.",
+  "chunk_id": "97a2a6",
+  "wall_time_seconds": 0.121914292,
+  "exit_code": 1,
+  "original_token_count": 25,
+  "output": "Traceback (most recent call last):\n  File \"<stdin>\", line 23, in <module>\nKeyError: 'source_alias'\n",
+  "separately_captured_stdout": null,
+  "separately_captured_stderr": null,
+  "launch_source_capture": null,
+  "actual_start_utc": null,
+  "actual_finish_utc": null
+}

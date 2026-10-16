@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,hashlib,datetime
+D=Path.cwd(); N=D.parent
+assert D.name=='endpoint_target_compilation_qualified_publication_draft' and not (D/'FINAL_FREEZE.json').exists()
+P=D/'proposal'; PK='.claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016'
+ctx=D/'parent_publication_context';ctx.mkdir(exist_ok=False)
+expected={'PUBLICATION.json':'8188b7c44823410479d4a7e1f9f43f2e2a34622151223eeb18c94e95cf55fb16','ATTACHMENT.json':'04cf236c0cb4f7af03a1d5e75655d1c72de22f73cf57c12c9d5ec5cb12c44161'}
+rows=[]
+for name,h in expected.items():
+ source=N/'publication_integration/endpoint_chart_recurrence'/name;b=source.read_bytes();assert hashlib.sha256(b).hexdigest()==h
+ (ctx/name).write_bytes(b);rows.append({'original_path':str(source),'copy':'parent_publication_context/'+name,'bytes':len(b),'sha256':h})
+pub=json.loads((ctx/'PUBLICATION.json').read_text());attachment=json.loads((ctx/'ATTACHMENT.json').read_text())
+assert pub['number']==9652 and pub['state']=='OPEN' and pub['isDraft'] is False
+assert pub['headRefOid']=='4864625c13b2f0cf44eb19ae3114a8cabafc238c'
+assert pub['source_note']['sha256']=='ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8'
+assert attachment['arguments']['url']==pub['url'] and attachment['actual_result']['isError'] is False
+assert any(json.loads(c['text'])==attachment['arguments'] for c in attachment['actual_result']['content'] if c['type']=='text')
+context={'kind':'bounded_copy_of_actual_parent_publication_records','copied_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sources':rows,'parent_pr':9652,'recorded_head':pub['headRefOid'],'recorded_tree':pub['tree'],'recorded_branch':pub['headRefName'],'parent_note_sha256':pub['source_note']['sha256'],'scope':'Root-supplied selected transport base, observed from the two exact completed parent records. No fresh remote query, worktree phase, target binding or new approval is implied.','historical_attachment_pending_text_preserved':True,'separate_actual_attachment_result_present':True,'new_target_current_base_binding':None,'new_source_wrapper_review':None,'new_canonical_review':None,'new_staged_review':None,'new_target_publication':None}
+(D/'OBSERVED_PARENT_PUBLICATION.json').write_text(json.dumps(context,indent=2)+'\n')
+bodies=json.loads((P/PK/'BODY_MAP.json').read_text())['bodies']
+lines=['# Exact six-body read and recovery map','','Every body below was read completely for packaging scope and copied byte-for-byte. This is source-exposed packaging, not a new independent mathematical or scientific-program audit. Historical proposed/pending statements remain unchanged. Full hashes and byte intervals are authoritative in BODY_MAP.json and SOURCE_MANIFEST.json.','','| Body | Original source | Bytes | SHA256 | Note byte interval |','|---|---|---:|---|---|']
+for r in bodies:
+ lines.append('| '+r['name']+' | `'+r['source_alias']+'` | '+str(r['bytes'])+' | `'+r['sha256']+'` | ['+str(r['start_byte_inclusive'])+','+str(r['end_byte_exclusive'])+') |')
+lines+=['','The complete source-review filename is `endpoint_target_compilation_exposed_check/program_exposed/REVIEW.md`; no nonexistent SOURCE_REVIEW.md was substituted. The final body is controlling root qualifications3982bea8. All earlier review qualifications and unresolved trust limits remain visible.','']
+(D/'SOURCE_BODY_READ_MAP.md').write_text('\n'.join(lines))
+print(json.dumps({'observed_parent_records':rows,'body_rows':len(bodies)},indent=2))

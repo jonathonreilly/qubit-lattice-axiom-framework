@@ -1,0 +1,15 @@
+{
+  "status": "bound_immutable_author_evidence",
+  "author_bundle_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate",
+  "author_final_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/FREEZE.json",
+    "bytes": 22438,
+    "sha256": "0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc"
+  },
+  "freeze_member_key": "members",
+  "author_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/runs/target_001/EXECUTION.json",
+    "bytes": 2777,
+    "sha256": "4b8f622e076acee771ebd466c96fda8f6fba3b37196dbe45296f86ff3e83bb1a"
+  }
+}

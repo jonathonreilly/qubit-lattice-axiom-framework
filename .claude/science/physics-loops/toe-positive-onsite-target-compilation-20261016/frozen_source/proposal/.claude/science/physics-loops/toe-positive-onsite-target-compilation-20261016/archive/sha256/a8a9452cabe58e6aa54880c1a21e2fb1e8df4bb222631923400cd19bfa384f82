@@ -1,0 +1,41 @@
+# Read first: current qualifications at final seal
+
+The chart is now root-qualified for its specified conditional driven
+two-qubit domain. This later decision was reported to this task after
+PROPOSAL.md and the initial SOURCE_MANIFEST.json were written/captured.
+Their provisional labels are preserved as historical drafting context;
+this additive status note controls the current interpretation.
+
+The exact decision is endpoint_chart_root_review/ACCEPTANCE.json, SHA256
+112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7.
+Its controlling file is actually named FINAL_QUALIFICATIONS.md, SHA256
+6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86.
+Both complete files and their freeze were read and are captured under
+qualified_chart_sources/ with exact identities in CURRENT_SOURCE_MANIFEST.json.
+The acceptance explicitly includes ||I-RA||F<2^-38 and ||R||F<=63, so the
+stronger inverse-residual premise of the proposed contraction is within
+that qualified chart scope. This task did not independently revalidate it.
+
+The explicit recurrence remains pending separate checking/root decision.
+The new 32-step calibration lemma, target phase construction and proposed
+execution specification are also unreviewed. No numerical target work was
+launched, no calibrated amplitudes exist in this packet, and no target-word
+certificate is asserted. Root must review the specification before a new
+scientific execution. Only source-identity/capture/freeze metadata processes
+ran in this task.
+
+All qualifications in the accepted chart source continue to apply. In
+particular, ||K|| |delta_T| is only a conservative UPPER error budget for
+an added post-off timing comparison. It is neither a necessary error nor
+a lower bound; recurrences can cancel actual timing differences. In-pulse
+timing faults need the actual integrated full-generator defect bound. The
+new proposal's calibration and work expressions are sufficient budgets,
+not hardware requirements proved necessary.
+
+Read PROPOSAL.md for the one exact Gaussian-rational entangling target,
+fixed actual-time comparator, finite contraction, compressed positive-time
+schedule schema and decisive residual test. The actual additional witness
+remains 16 dyadic amplitudes plus the phase/whole-word enclosures. It would
+be a one-target fixture, with no generic efficient compiler, improved
+recurrence-duration bound, native actuation or microscopic work supplier.
+No parent or historical report was modified to insert this later decision.

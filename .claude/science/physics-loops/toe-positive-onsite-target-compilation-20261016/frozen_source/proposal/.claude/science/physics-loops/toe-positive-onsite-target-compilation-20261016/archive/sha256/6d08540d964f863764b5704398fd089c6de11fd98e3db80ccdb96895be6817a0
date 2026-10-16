@@ -1,0 +1,21 @@
+# Complete checker read guide and launch boundary
+
+Read the complete new check_saved_evidence.py and record_check.py. No author source is imported and no code is borrowed at runtime. This is a separate implementation of the already exposed arithmetic semantics: real interval endpoints are Fractions; rounded complex products/divisions are reconstructed on the 2^768 grid. The original author used scaled integers for these matrix operations. The analytical reconstruction was separately sealed before source exposure; this is still same-model exposed checking, not statistical or model-family independence.
+
+CODE_MAP.json is a metadata AST inventory of every function and source line/hash. The input/receipt guard is read_binding; phase reconstruction is arctangent_bounds/exponential/phases; the matrix/coordinate helpers are explicit; endpoint_from_slots checks exactly 24 saved matrices without Taylor regeneration; main follows all 32 iterations and the final power, residual, schedule and ledger. The controls at the end change only in-memory copies and cannot modify author files.
+
+The future input binding has five fields: status must be `bound_immutable_author_evidence`; author_bundle_root is the actual immutable author packet directory; author_final_freeze is its actual {path,bytes,sha256} pin; freeze_member_key is the observed `members` or `files` schema; author_execution is the actual target_001/EXECUTION.json pin. These values stay null here because no completed author bundle has been inspected. Root must create a separate binding file after the author bundle is frozen. Do not edit the frozen template or invent hashes.
+
+Every input consumed by the checker must be an exact member of that final author freeze. It verifies the pinned original prelaunch 33-member closure, the exact scientific executable, the four exact parent JSON inputs, actual source/recorder/full-stream receipt pins, original exit/timeout and actual argv/cwd. It will reject a failed or timed-out author attempt before performing phase/iteration checks. The final author's terminal metadata freeze receipt may be outside its own inventory; it is not a scientific input and is not required here. The original scientific receipt/source/full streams and all saved scientific outputs must be covered by the actual immutable bundle.
+
+After root's explicit execution authorization only, the intended command is:
+
+    python3 -B record_check.py /absolute/path/to/actual_bound_inputs.json
+
+The recorder creates sibling saved_arithmetic_001 exactly once, captures this checker and recorder plus input binding at launch, and runs with a fixed 180-second timeout. It writes full stdout/stderr and an actual exit/timeout receipt; no separate CPU/RAM quota is imposed. Existing run/output paths are refused. It verifies this source freeze before launch and refuses a start whose timeout would cross 22:40:23 UTC. This source packet does not authorize or execute that command.
+
+The checker reads files and writes only its fresh assigned output, RESULT.json and the recorder's logs. It has no Git, network, canonical, graph, cache, audit, lock, prompt or axiom operation. A runtime or assertion failure remains a failed scoped check. Any code correction or further execution needs a separately identified source/review/authorization; no automatic retry is present.
+
+Expected remaining trust boundaries: the new local slot enclosures are not regenerated; source inspection and the actual author execution support those. Python Fraction/integer semantics, JSON parsing and runtime/hardware remain trusted. A successful result would check only this one fixed complete word and its saved arithmetic, not an arbitrary-target compiler, physical control supply or retained status.
+
+The separate record_source_freeze.py invokes only freeze_source.py once, under a 30-second metadata timeout, with source-at-launch capture and full streams in sibling checker_source_freeze_run. That operation parses these four Python files without importing them, verifies the unchanged earlier review freezes and writes this source inventory/freeze. It cannot launch the scientific checker. Its eventual actual receipt is outside the source freeze because it is produced after the freeze; this is a metadata provenance boundary, not a claimed prior execution.

@@ -1,0 +1,54 @@
+"""Metadata-only bounded source capture; no mathematical solver is invoked."""
+from pathlib import Path
+import datetime, hashlib, json, shutil, sys
+
+out = Path(sys.argv[1]).resolve()
+root = out.parent
+assert out.name == 'endpoint_target_compilation_candidate'
+specs = [
+ ('endpoint_target_compilation_proposal/PROPOSAL.md', '9aa1028a51efa1acf5851a5537d07f4b96768f6addc87d003be233d698cbf47f', 'sources/target_proposal.md', 'Complete proposed derivation reread; fixed attempt specification.'),
+ ('endpoint_target_compilation_proposal/CURRENT_STATUS.md', 'a8a9452cabe58e6aa54880c1a21e2fb1e8df4bb222631923400cd19bfa384f82', 'sources/target_proposal_status.md', 'Historical additive status; current root qualifications below control.'),
+ ('endpoint_target_compilation_proposal/FREEZE.json', 'c356704d9703b904461c162e72dc50a449b2c7cd8a7f5e07bf0ad8f7d09048f3', 'sources/target_proposal_freeze.json', 'Metadata identity, not science replay.'),
+ ('endpoint_chart_root_proposal/PROPOSED_LEMMAS.md', '3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169', 'sources/chart_root_proposal.md', 'Complete argument already read; retained at same identity.'),
+ ('endpoint_chart_certificate_candidate/DERIVATION.md', 'b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef', 'sources/chart_derivation.md', 'Authored/read complete parent; source-exposed reuse, not fresh independent validation.'),
+ ('endpoint_chart_certificate_candidate/FREEZE.json', '485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf', 'sources/chart_freeze.json', 'Metadata identity.'),
+ ('endpoint_chart_certificate_candidate/inputs/SELECTED_INPUT.json', 'c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80', 'inputs/SELECTED_INPUT.json', 'Complete exact nominal amplitudes, selected coordinates and rational inverse.'),
+ ('endpoint_chart_certificate_candidate/enclosure_001_output/certificate.json', 'd4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509', 'inputs/CHART_CERTIFICATE.json', 'Saved strengthened residual used; no Jacobian recomputation.'),
+ ('endpoint_chart_root_review/ACCEPTANCE.json', '112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7', 'sources/chart_acceptance.json', 'Root source qualification read in prior continuation.'),
+ ('endpoint_chart_root_review/FINAL_QUALIFICATIONS.md', '6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86', 'sources/chart_qualifications.md', 'Complete controlling qualifications reread.'),
+ ('endpoint_chart_root_review/FREEZE.json', 'd2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223', 'sources/chart_review_freeze.json', 'Metadata identity.'),
+ ('endpoint_recurrence_candidate/DERIVATION.md', '5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a', 'sources/recurrence_derivation.md', 'Authored/read complete parent; relevant tail/power argument reread.'),
+ ('endpoint_recurrence_candidate/certify_recurrence.py', 'c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771', 'sources/recurrence_program.py', 'Complete source reread; U-only interval routines adapted, not executed.'),
+ ('endpoint_recurrence_candidate/FREEZE.json', '33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c', 'sources/recurrence_freeze.json', 'Metadata identity.'),
+ ('endpoint_recurrence_candidate/recurrence_001_output/ENDPOINT_ENCLOSURE.json', '454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de', 'inputs/NOMINAL_ENDPOINT.json', 'Saved N320/S768 endpoint and all slots; no nominal reintegration.'),
+ ('endpoint_recurrence_candidate/recurrence_001_output/RECURRENCE_CERTIFICATE.json', '380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314', 'inputs/RECURRENCE_CERTIFICATE.json', 'Saved full power and analytic error; no n-power rerun.'),
+ ('endpoint_recurrence_root_review/ACCEPTANCE.json', '36e72537f8d2546bc15c9baf69dd526fb22d854bafc36d07a020a7225c73465e', 'sources/recurrence_acceptance.json', 'Complete root source qualification read before freeze.'),
+ ('endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md', '69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55', 'sources/recurrence_qualifications.md', 'Complete controlling qualifications read before freeze.'),
+ ('endpoint_recurrence_root_review/FREEZE.json', '7e4268b5', 'sources/recurrence_review_freeze.json', 'Prefix supplied by root; full identity captured, plus exact members checked below.'),
+]
+members = []
+for relative, expected, destination, coverage in specs:
+    source = root / relative
+    raw = source.read_bytes()
+    actual = hashlib.sha256(raw).hexdigest()
+    assert actual.startswith(expected), (relative, expected, actual)
+    target = out / destination
+    target.parent.mkdir(parents=True, exist_ok=True)
+    assert not target.exists()
+    target.write_bytes(raw)
+    members.append({'source': str(source), 'copy': destination, 'bytes': len(raw),
+                    'sha256': actual, 'coverage': coverage})
+for name in ('chart_review_freeze.json', 'recurrence_review_freeze.json'):
+    data = json.loads((out / 'sources' / name).read_text())
+    source_dir = root / ('endpoint_chart_root_review' if name.startswith('chart') else 'endpoint_recurrence_root_review')
+    for member in data['members']:
+        raw = (source_dir / member['path']).read_bytes()
+        assert len(raw) == member['bytes'] and hashlib.sha256(raw).hexdigest() == member['sha256']
+manifest = {'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            'purpose': 'Source-only candidate; parent science reused, not rerun.',
+            'source_exposure': 'Same author/model as chart, recurrence and plan; no independent-validation claim.',
+            'members': members, 'canonical_binding': None, 'publication': None,
+            'new_scientific_runs_at_capture': 0, 'editable_prompt_files_changed': []}
+(out / 'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')
+print(json.dumps({'status': 'SOURCE_CAPTURE_COMPLETE', 'members': len(members),
+                  'source_manifest_sha256': hashlib.sha256((out / 'SOURCE_MANIFEST.json').read_bytes()).hexdigest()}))

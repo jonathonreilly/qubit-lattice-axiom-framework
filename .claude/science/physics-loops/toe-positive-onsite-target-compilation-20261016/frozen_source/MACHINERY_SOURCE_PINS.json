@@ -1,0 +1,40 @@
+{
+  "baseline": "endpoint_chart_recurrence_qualified_publication_draft",
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/FINAL_FREEZE.json",
+    "bytes": 58634,
+    "sha256": "996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326"
+  },
+  "selected_files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/build_packet.py",
+      "bytes": 9793,
+      "sha256": "9950610cb5da01244dff7385f5b385796df46ebd02c4dd160ba7cb7efd41e103",
+      "recovery": "machinery_reference/build_packet.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/primary_template.py",
+      "bytes": 8766,
+      "sha256": "3030758b92683fbfb9b7965baace39506282d8913010b00dd5dfc843bd5851aa",
+      "recovery": "machinery_reference/primary_template.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/inspect_packet.py",
+      "bytes": 7652,
+      "sha256": "ca386f3f120849c9e046f30461ba8fe96a7beb4a2200ebd5b8ba8f51e9b557a5",
+      "recovery": "machinery_reference/inspect_packet.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/record_metadata.py",
+      "bytes": 4401,
+      "sha256": "4245b94d64739103f126d463d64b00e1ae84c4a9b72021d265d131093254a166",
+      "recovery": "machinery_reference/record_metadata.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/seal_packet.py",
+      "bytes": 3801,
+      "sha256": "ea95a0eaf284840cb2e74d6647383bba6f5b0049ce72043d2850661a3f3a17f1",
+      "recovery": "machinery_reference/seal_packet.py"
+    }
+  ]
+}

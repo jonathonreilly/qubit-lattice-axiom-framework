@@ -1,0 +1,53 @@
+"""Record root's completed analytic/source review; metadata correspondence only."""
+from pathlib import Path
+from datetime import datetime, timezone
+from fractions import Fraction as Q
+import hashlib,json
+N=Path(__file__).resolve().parents[1]
+C=N/'endpoint_target_compilation_candidate';R=N/'endpoint_target_compilation_exposed_check';O=N/'endpoint_target_compilation_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def write(p,v):
+ with Path(p).open('x') as f:f.write(json.dumps(v,indent=2)+'\n')
+assert (O/'FINAL_QUALIFICATIONS.md').is_file() and not (O/'ACCEPTANCE.json').exists()
+freezes=[(C/'FREEZE.json','0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc',132),(R/'FINAL_FREEZE.json','857c60addbcd5882635a5b2178ec6014b65e40e364f35a01e62d1e04499d1722',256),(N/'endpoint_chart_root_review/FREEZE.json','d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223',2),(N/'endpoint_recurrence_root_review/FREEZE.json','7e4268b5f1a848dda65213917045427fc56b68732a71d1a18c6fb99118b63065',2)]
+for p,h,count in freezes:
+ assert pin(p)['sha256']==h
+ rows=read(p)['members'];assert len(rows)==count and len({r['path'] for r in rows})==count
+ for r in rows:
+  candidate=(p.parent/r['path']).resolve();assert candidate.is_relative_to(p.parent.resolve());same(candidate,r)
+receipts=[]
+for folder,original,limit,source_sha in [(C/'runs/target_001','original_source',600,'52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80'),(R/'saved_arithmetic_001','source_original',180,'7f679bc3b880791bc84b6268cec7b5bed5d35fcc3cdb85a04849888e7f248f94')]:
+ r=read(folder/'EXECUTION.json');assert r['exit_code']==0 and r['timed_out'] is False and r['start_utc']<r['end_utc']
+ assert r['wall_timeout_seconds']==limit
+ for k in ('source_at_launch',original,'recorder_at_launch','stdout','stderr'):same(r[k]['path'],r[k])
+ assert r['source_at_launch']['path'] in r['argv'] and Path(r['stderr']['path']).read_bytes()==b''
+ assert r[original]['path']!=r['source_at_launch']['path'] and r[original]['sha256']==r['source_at_launch']['sha256']==source_sha
+ receipts.append(pin(folder/'EXECUTION.json'))
+binding=read(R/'execution_binding/INPUT_BINDING.json')
+same(C/'FREEZE.json',binding['author_final_freeze']);same(C/'runs/target_001/EXECUTION.json',binding['author_execution'])
+same(R/'saved_arithmetic_001/INPUT_BINDING_AT_LAUNCH.json',pin(R/'execution_binding/INPUT_BINDING.json'))
+cert=read(C/'target_001_output/TARGET_CERTIFICATE.json');check=read(R/'saved_arithmetic_001/output/RESULT.json')
+q=lambda v:Q(v['numerator'],v['denominator'])
+n=98611368294597721931914764889297593425141587534996842205;M=147975046
+assert cert['n']==n and cert['M']==M and cert['T']==24*M*n
+assert cert['scale_denominator']==2**768 and cert['exact_iterations']==cert['new_endpoint_evaluations']==32
+assert cert['final_power_products']==check['final_power_products_checked']==41
+assert check['new_endpoints_checked_as_24_saved_slot_products']==check['iteration_records_checked']==32 and check['slot_products_checked']==768
+assert q(cert['explicit_total_operator_error_upper'])==q(check['explicit_total_operator_error_upper'])<q(check['epsilon'])==q(cert['epsilon'])==Q(1,2**40)
+assert cert['target_tails_included_before_subtraction'] is True
+assert check['phase_and_target_enclosures_reconstructed'] and check['all_analytic_coordinate_pads_checked'] and check['full_scalar_and_actual_time_checked']
+assert check['corrupted_controls_rejected']==['omitted_analytic_y_pad','changed_one_displacement','changed_one_power_interval'] and check['retained_audit'] is False
+same(check['author_execution']['path'],check['author_execution'])
+terminal=[]
+for folder in (C/'runs/final_freeze',R/'closure_metadata_run'):
+ for p in sorted(folder.iterdir()):
+  if p.is_file():terminal.append(pin(p))
+ r=read(folder/'EXECUTION.json');assert r['exit_code']==0
+ for k in ('stdout','stderr'):same(r[k]['path'],r[k])
+record=dict(kind='root_qualified_conditional_source_acceptance',utc=datetime.now(timezone.utc).isoformat(),disposition='QUALIFIED_CONDITIONAL_ONE_COMPLETE_POSITIVE_TIME_TARGET_WORD',source_freezes=[pin(p) for p,h,count in freezes],source_derivation=pin(C/'DERIVATION.md'),source_program=pin(C/'compile_target.py'),separate_review=pin(R/'ARITHMETIC_REVIEW.md'),separate_source_coverage=pin(R/'ARITHMETIC_SOURCE_COVERAGE.md'),independent_check_scope='Same-model source-exposed analytic reconstruction and separate Fraction saved-arithmetic checker, without author imports. No second local Taylor/ODE implementation, nominal endpoint or n-power replay, blind replication, formal proof or physical experiment.',original_execution_receipts=receipts,actual_input_binding=pin(R/'execution_binding/INPUT_BINDING.json'),terminal_freeze_evidence=terminal,controlling_qualifications=pin(O/'FINAL_QUALIFICATIONS.md'),certificate=pin(C/'target_001_output/TARGET_CERTIFICATE.json'),checker_result=pin(R/'saved_arithmetic_001/output/RESULT.json'),resource_ledger=pin(C/'target_001_output/RESOURCE_LEDGER.json'),mathematical_parent='Combined chart/recurrence note after exact canonical binding; transport ancestry is not a premise.',scientific_executions_by_root=0,historical_scientific_replays=0,root_read_complete=True,root_large_integer_coverage='Exact programmatic equality and previously inspected arithmetic source; not a claim to manually inspect every serialized integer.',canonical_binding=None,publication=None,retained_audit=False,editable_prompt_files_changed=[])
+write(O/'ACCEPTANCE.json',record)
+write(O/'FREEZE.json',dict(utc=datetime.now(timezone.utc).isoformat(),members=[dict(pin(O/p),path=p) for p in ('ACCEPTANCE.json','FINAL_QUALIFICATIONS.md')]))
+print(json.dumps(dict(acceptance=pin(O/'ACCEPTANCE.json'),qualification=pin(O/'FINAL_QUALIFICATIONS.md'),freeze=pin(O/'FREEZE.json'),scientific_executions=0)))

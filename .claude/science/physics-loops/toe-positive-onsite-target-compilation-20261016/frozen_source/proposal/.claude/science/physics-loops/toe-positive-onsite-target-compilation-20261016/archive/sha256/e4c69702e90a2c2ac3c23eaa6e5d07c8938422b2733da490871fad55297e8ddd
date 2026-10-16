@@ -1,0 +1,11 @@
+# Current review checkpoint
+
+The endpoint target review is complete at the source-exposed analytical and saved-arithmetic scope. Root scientific acceptance remains pending. This additive checkpoint supersedes historical pending-execution prose without editing any prior frozen file.
+
+The original analytical freeze f5c4bd4b, source-review freeze 6f972529 and checker-source freeze 78fe6aab remain unchanged. Checker source 7f679bc3 was sealed before result exposure; root read it and authorized exactly one 180-second run against author freeze 0f61e104 and actual author receipt 4b8f622e. The fresh binding is eda27de4.
+
+The unchanged check completed exit 0/no timeout at 20:02:54 UTC in 10.3879465 seconds. It reconstructed 32 calibration records, 768 saved-slot endpoint products, 41 final power products, exact phases/target, analytic pads, full residual, scalar/time and resource ledger. The exact complete operator bound is strictly below 2^-40. Full evidence is in saved_arithmetic_001; no retry occurred.
+
+Read ARITHMETIC_REVIEW.md and ARITHMETIC_SOURCE_COVERAGE.md for current disposition, trust boundaries and physical qualifications. The local ODE propagators and qualified chart/recurrence remain trusted at their stated source/execution scope, not independently replayed. The physical bound still includes initial preparation, integrated drive and any separately compared timing error. No generic compiler, efficient physical runtime, native supplier, autonomous closure, audit or publication is claimed.
+
+Closure seals the exact author 132-member evidence snapshot, unchanged review/source freezes, actual checker source/receipt/streams and additive report. Its terminal metadata receipt is outside its own freeze by construction. There is no further science authorization. No editable prompt, axiom, canonical file, Git/PR/cache/graph/audit/lock state was changed.

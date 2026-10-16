@@ -1,0 +1,19 @@
+"""Tool-invoked deterministic seal of source inspection; no scientific execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+O=Path(__file__).resolve().parent;P=O.parent
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(p.read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ['bytes','sha256']),str(p)
+assert not (O/'SOURCE_REVIEW_FREEZE.json').exists()
+for r in read(P/'INITIAL_FREEZE.json')['files']:same(P/r['path'],r)
+identity=read(O/'SOURCE_IDENTITIES.json');same(P/'INITIAL_FREEZE.json',identity['initial_analytical_freeze'])
+for r in identity['records']:same(O/r['capture'],r)
+r=read(O/'metadata_run/EXECUTION.json');assert r['exit_code']==0 and r['timed_out'] is False
+for key in ['original_source','source_at_launch','launcher_at_launch','stdout','stderr']:same(Path(r[key]['path']),r[key])
+assert Path(r['stderr']['path']).read_bytes()==b''
+files=[dict(pin(p),path=str(p.relative_to(O))) for p in sorted(O.rglob('*')) if p.is_file()]
+f=dict(kind='prelaunch_source_exposed_review_no_science_execution',utc=datetime.now(timezone.utc).isoformat(),files=files,initial_analytical_freeze=pin(P/'INITIAL_FREEZE.json'),candidate_prelaunch_freeze=identity['candidate_prelaunch_freeze'],review=pin(O/'REVIEW.md'),scientific_executions=0,scientific_result_viewed=False,candidate_program_imported=False,actual_root_GO=None,actual_target_success=None,retained_audit=False,editable_prompt_files_changed=[],seal_scope='Tool-invoked deterministic metadata seal; separate scientific computation requires root authorization.')
+(O/'SOURCE_REVIEW_FREEZE.json').write_text(json.dumps(f,indent=2)+'\n');print(json.dumps(dict(freeze=pin(O/'SOURCE_REVIEW_FREEZE.json'),review=pin(O/'REVIEW.md'),members=len(files)),indent=2))

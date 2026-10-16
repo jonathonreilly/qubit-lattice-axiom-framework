@@ -1,0 +1,26 @@
+# Additive coverage and evidence boundary
+
+The initial analytical and prelaunch source coverage files remain unchanged. Their complete source identities and captured bodies retain the original scope. This document adds only the authorized saved-arithmetic execution and subsequent result inspection.
+
+| Material | Actual coverage |
+| --- | --- |
+| Initial analytical REVIEW and prelaunch source REVIEW | Complete arguments reused at unchanged frozen identities; reread to check this additive disposition. |
+| Checker 7f679bc3, recorder b883de16, source freezer and metadata recorder | Complete new source read before freeze. AST parsing was metadata only. Root separately read the complete checker and recorder before GO. |
+| Author final freeze 0f61e104, 132 members | Every member's exact size/SHA checked during binding, by the checker, and at closure. No author file was changed. This inventory verification is not a manual content review of every member. |
+| Author original scientific receipt 4b8f622e, launch, source52e53faf, recorder84692be, complete stdout/stderr | Exact identities checked; complete receipt and full streams inspected. Source/recorder content had been read before the author run and is unchanged. Original exit 0/no timeout is an explicit checker gate. |
+| TARGET_ENCLOSURES, PHASE_PROGRESS and Y_COORDINATES | All proof-facing arithmetic fields reconstructed by the unchanged Fraction checker, including tails and pads. No target output was inspected before checker source freeze. |
+| ENDPOINT_01 through ENDPOINT_32 | Every saved local slot and endpoint rectangle consumed; all 32 chronological products of 24 saved slots reconstructed. Local Taylor/substep calculations were not regenerated. |
+| ITERATION_00 through ITERATION_31 | All pads, radii, midpoints, inverse applications, rounded updates, domain checks and continuity reconstructed. |
+| FINAL_POWER_TRACE and TARGET_CERTIFICATE | Entire final M-power arithmetic, intermediate matrices, complete complex residual and analytic allowances reconstructed. No n-power replay. |
+| SCHEDULE and RESOURCE_LEDGER | Full scalar/order/time/count/control/error ledger checked by code. Complete resource ledger also read directly after the run. |
+| Author RESULT.md, RESULT.json, CURRENT_STATUS.md, READ_GUIDE.md | Complete additive outcome prose and receipt linkage read after this check; historical pending labels remain preserved. |
+| Checker EXECUTION, full stdout/stderr and RESULT | Complete actual records read after the single run. Exit 0, no timeout, empty stderr; all reported scopes retained. |
+| Author terminal final-freeze metadata outside its own freeze | Not required as a scientific input and not a mathematical premise. The 132-member author source/evidence snapshot is bounded by its actual supplied freeze; no uninspected terminal metadata success is promoted into science evidence. |
+
+The closure snapshot copies exactly the supplied author freeze and its 132 immutable members for recovery, without executing them or recursively importing unrelated campaign archives. The earlier captured prelaunch sources and all three review freezes remain immutable. `ARITHMETIC_EVIDENCE.json` maps exact local/current sources, original scientific receipts, checker receipt/result and snapshot members.
+
+The binding script is a metadata-only operation that records its own source identity and output provenance. Its tool invocation exited 0; its printed metadata appears in the tool transcript, rather than in a claimed separate child-process receipt. The scientific checker has a distinct captured source, binding, launcher/recorder, original argv, full stdout/stderr and actual exit/timeout receipt. The closure metadata process has its own complete capture/streams/receipt and does not execute a mathematical program.
+
+One aggregated reread returned a display truncation; the complete affected prelaunch REVIEW was then reread separately. No truncated tool result is treated as full verification. Large saved JSON arithmetic was checked programmatically in the stated scope, not claimed as a line-by-line human read.
+
+Relationship: same-model source exposure, a different interval representation and separately written arithmetic code; not blind/model-family independence, independent ODE execution, formal proof-assistant verification, laboratory validation or retained audit. Exactly one checker launch occurred and no retry, adaptive change or old scientific replay occurred.

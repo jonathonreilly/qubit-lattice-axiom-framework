@@ -1,0 +1,27 @@
+"""Metadata-only verification of every immutable prelaunch member."""
+from pathlib import Path
+import datetime, hashlib, json, sys
+
+out = Path(sys.argv[1]).resolve()
+assert out.name == 'endpoint_target_compilation_candidate'
+freeze = out/'PRELAUNCH_FREEZE.json'
+raw = freeze.read_bytes()
+assert hashlib.sha256(raw).hexdigest() == 'f453d8268c170f725cfc376dafbc8988ffff742baf3e95e8d1dc25100df22a43'
+members = json.loads(raw)['members']
+checked = []
+for member in members:
+    data = (out/member['path']).read_bytes()
+    assert len(data) == member['bytes']
+    assert hashlib.sha256(data).hexdigest() == member['sha256'], member['path']
+    checked.append(member)
+assert hashlib.sha256((out/'compile_target.py').read_bytes()).hexdigest() == '52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80'
+assert (out/'ROOT_GO.md').is_file()
+assert not (out/'runs/target_001').exists() and not (out/'target_001_output').exists()
+result = {'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          'prelaunch_freeze_sha256': hashlib.sha256(raw).hexdigest(),
+          'verified_members': checked, 'scientific_runs_before_verification': 0,
+          'root_GO_record_sha256': hashlib.sha256((out/'ROOT_GO.md').read_bytes()).hexdigest(),
+          'status': 'ALL_PRELAUNCH_MEMBERS_IDENTICAL_READY_FOR_SINGLE_AUTHORIZED_LAUNCH'}
+(out/'PRELAUNCH_VERIFICATION.json').write_text(json.dumps(result, indent=2)+'\n')
+print(json.dumps({'verified_members': len(checked), 'science_runs': 0,
+                  'verification_sha256': hashlib.sha256((out/'PRELAUNCH_VERIFICATION.json').read_bytes()).hexdigest()}))

@@ -1,6 +1,6 @@
 {
- "edge_count": 16155,
- "node_count": 7199,
+ "edge_count": 16156,
+ "node_count": 7200,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17617,6 +17617,10 @@
   "positive_onsite_endpoint_chart_recurrence_bounded_theorem_note_2026-10-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "positive_onsite_target_compilation_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "dd54caf086db",
+   "out_degree": 1
   },
   "positive_open_path_clock_bounded_theorem_note_2026-10-14": {
    "deps_hash": "5def4db2d325",

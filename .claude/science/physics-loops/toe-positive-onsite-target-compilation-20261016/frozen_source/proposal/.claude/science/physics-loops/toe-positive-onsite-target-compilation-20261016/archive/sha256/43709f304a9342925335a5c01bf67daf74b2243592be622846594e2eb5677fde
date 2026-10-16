@@ -1,0 +1,30 @@
+{
+  "kind": "metadata_only",
+  "start_utc": "2026-10-16T19:59:46.244100+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal/freeze_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal",
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal/freeze_source.py",
+    "bytes": 2525,
+    "sha256": "3a50a5270ea747128050971e6884876c7ccab2ec753aa2f47c0e6528c12ae15c"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_source_freeze_run/source_at_launch.py",
+    "bytes": 2525,
+    "sha256": "3a50a5270ea747128050971e6884876c7ccab2ec753aa2f47c0e6528c12ae15c"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_source_freeze_run/recorder_at_launch.py",
+    "bytes": 2190,
+    "sha256": "9e49e00c1cf001ffadf376d851442269332fae36988c08ffeb6ce56b27022e0d"
+  },
+  "wall_timeout_seconds": 30,
+  "cpu_ram_limits": null,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "scope": "AST parsing, source identities and inventory only. No checker import or scientific arithmetic."
+}

@@ -1,0 +1,34 @@
+"""One fixed180-second saved-evidence check, only after explicit root authorization."""
+from pathlib import Path
+from datetime import datetime,timedelta,timezone
+import hashlib,json,platform,shutil,subprocess,sys,time
+P=Path(__file__).resolve().parent;R=P.parent/'saved_arithmetic_001';TIMEOUT=180
+
+def pin(path):
+    raw=Path(path).read_bytes();return dict(path=str(Path(path)),bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest())
+
+def now():return datetime.now(timezone.utc).isoformat()
+
+def write(path,value):Path(path).write_text(json.dumps(value,indent=2)+'\n')
+
+if __name__=='__main__':
+    assert len(sys.argv)==2,'Supply the root-bound immutable evidence input after explicit GO'
+    assert datetime.now(timezone.utc)+timedelta(seconds=TIMEOUT)<datetime(2026,10,16,22,40,23,tzinfo=timezone.utc),'Fixed campaign deadline would be exceeded'
+    seal=json.loads((P/'CHECKER_SOURCE_FREEZE.json').read_text())
+    for row in seal['files']:
+        actual=pin(P/row['path']);assert all(actual[k]==row[k] for k in ['bytes','sha256'])
+    binding_path=Path(sys.argv[1]).resolve();binding=json.loads(binding_path.read_text())
+    assert binding['status']=='bound_immutable_author_evidence','Actual evidence is not bound'
+    R.mkdir(exist_ok=False)
+    source=P/'check_saved_evidence.py';captured=R/'source_at_launch.py';shutil.copyfile(source,captured)
+    recorder=R/'recorder_at_launch.py';shutil.copyfile(Path(__file__),recorder)
+    binding_capture=R/'INPUT_BINDING_AT_LAUNCH.json';shutil.copyfile(binding_path,binding_capture)
+    argv=[sys.executable,'-B',str(captured),str(binding_capture),str(R/'output')]
+    launch=dict(kind='scoped_saved_evidence_arithmetic',start_utc=now(),argv=argv,cwd=str(R),wall_timeout_seconds=TIMEOUT,cpu_ram_limits=None,source_original=pin(source),source_at_launch=pin(captured),recorder_at_launch=pin(recorder),checker_source_freeze=pin(P/'CHECKER_SOURCE_FREEZE.json'),original_input_binding=pin(binding_path),input_binding_at_launch=pin(binding_capture),python=sys.version,platform=platform.platform(),executable=pin(Path(sys.executable).resolve()),scope='One Fraction saved-arithmetic check; no author import, local Taylor/ODE, nominal endpoint or n-power replay.')
+    write(R/'LAUNCH.json',launch);start=time.monotonic();timed_out=False
+    with (R/'stdout').open('wb') as stdout,(R/'stderr').open('wb') as stderr:
+        try:result=subprocess.run(argv,cwd=R,stdout=stdout,stderr=stderr,timeout=TIMEOUT);code=result.returncode
+        except subprocess.TimeoutExpired:timed_out=True;code=None
+    receipt=dict(launch,end_utc=now(),elapsed_seconds=time.monotonic()-start,exit_code=code,timed_out=timed_out,stdout=pin(R/'stdout'),stderr=pin(R/'stderr'))
+    write(R/'EXECUTION.json',receipt);print(json.dumps(receipt,indent=2))
+    if code!=0:raise SystemExit(code or 1)

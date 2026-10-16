@@ -1,0 +1,71 @@
+CHECKED_PHASES_AND_PADDED_Y
+CHECKED_ITERATION 1
+CHECKED_ITERATION 2
+CHECKED_ITERATION 3
+CHECKED_ITERATION 4
+CHECKED_ITERATION 5
+CHECKED_ITERATION 6
+CHECKED_ITERATION 7
+CHECKED_ITERATION 8
+CHECKED_ITERATION 9
+CHECKED_ITERATION 10
+CHECKED_ITERATION 11
+CHECKED_ITERATION 12
+CHECKED_ITERATION 13
+CHECKED_ITERATION 14
+CHECKED_ITERATION 15
+CHECKED_ITERATION 16
+CHECKED_ITERATION 17
+CHECKED_ITERATION 18
+CHECKED_ITERATION 19
+CHECKED_ITERATION 20
+CHECKED_ITERATION 21
+CHECKED_ITERATION 22
+CHECKED_ITERATION 23
+CHECKED_ITERATION 24
+CHECKED_ITERATION 25
+CHECKED_ITERATION 26
+CHECKED_ITERATION 27
+CHECKED_ITERATION 28
+CHECKED_ITERATION 29
+CHECKED_ITERATION 30
+CHECKED_ITERATION 31
+CHECKED_ITERATION 32
+{
+  "status": "SAVED_TARGET_ARITHMETIC_VERIFIED_WITH_EXPLICIT_LIMITS",
+  "binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/INPUT_BINDING_AT_LAUNCH.json",
+    "bytes": 827,
+    "sha256": "eda27de47d353685b918d334144fcdff832b36ee4c5b08aab34056c9c74bca2d"
+  },
+  "author_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/runs/target_001/EXECUTION.json",
+    "bytes": 2777,
+    "sha256": "4b8f622e076acee771ebd466c96fda8f6fba3b37196dbe45296f86ff3e83bb1a"
+  },
+  "author_source_sha256": "52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80",
+  "new_endpoints_checked_as_24_saved_slot_products": 32,
+  "slot_products_checked": 768,
+  "iteration_records_checked": 32,
+  "final_power_products_checked": 41,
+  "phase_and_target_enclosures_reconstructed": true,
+  "all_analytic_coordinate_pads_checked": true,
+  "full_scalar_and_actual_time_checked": true,
+  "explicit_total_operator_error_upper": {
+    "numerator": 1976818550977769249897017285946801476587234599021716379796007866450182368258485076193821407276555597606350921108720827712757668549176256912366695566140192841201327829407232089495941358272342321813963683121095472965187854807062126791761229129026472638851933,
+    "denominator": 4646927838993072071243945306718439250410188130185607684549287060362314553626263667328650982800488595593121011844353040782670578892327830336846345565944983205571783876398312106070895030732180427719497486819848241268961714708993375275490934188589556509412640954544199727574266715045888
+  },
+  "epsilon": {
+    "numerator": 1,
+    "denominator": 1099511627776
+  },
+  "corrupted_controls_rejected": [
+    "omitted_analytic_y_pad",
+    "changed_one_displacement",
+    "changed_one_power_interval"
+  ],
+  "scope": "Fraction saved-evidence arithmetic, source-exposed same-model. No author imports, local Taylor/ODE, nominal endpoint or n-power replay.",
+  "physical_trace_qualification": "Recorded 2 epsilon is ideal only; actual bound additionally includes initial trace error and 2 eta_drive.",
+  "trusted_local_slot_enclosures": "Inspected author source and its actual one execution; not regenerated here.",
+  "retained_audit": false
+}

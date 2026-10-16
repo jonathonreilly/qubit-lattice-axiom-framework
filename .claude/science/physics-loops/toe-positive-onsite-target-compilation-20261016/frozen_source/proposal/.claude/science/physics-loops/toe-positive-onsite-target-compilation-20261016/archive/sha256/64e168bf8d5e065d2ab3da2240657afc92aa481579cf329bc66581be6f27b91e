@@ -1,0 +1,5 @@
+# Recovery checkpoint
+
+The single scientific attempt is complete. The single exact-arithmetic attempt completed and its strict complete-word residual checks succeeded.
+
+Read RESULT.md, RESULT.json and READ_GUIDE.md for the current outcome. Source52e53faf and prelaunch freezef453d826 are unchanged; the actual receipt is runs/target_001/EXECUTION.json. No retry or further scientific calculation is authorized. Separate exposed checking and root disposition remain open. This final metadata process is sealing all actual artifacts in FREEZE.json; its own terminal receipt remains in runs/final_freeze.

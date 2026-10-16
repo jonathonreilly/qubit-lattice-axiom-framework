@@ -1,0 +1,36 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_endpoint_target_acceptance.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-16T20:15:45.622417+00:00",
+  "end_utc": "2026-10-16T20:15:45.764347+00:00",
+  "elapsed_seconds": 0.14138550031930208,
+  "exit_code": 1,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_target_acceptance/stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_target_acceptance/stderr",
+    "bytes": 344,
+    "sha256": "26c862377df0b68d9ec8f0f3e0dc3a293db3af953bc71d8ba8a3662bf8bef71b"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_endpoint_target_acceptance.py",
+    "bytes": 6001,
+    "sha256": "065014b3afd8146a00ccc98c5e5d74af062af5c9ec58e9bc5b6e61e770eca65c"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_target_acceptance/executed_source.py",
+    "bytes": 6001,
+    "sha256": "065014b3afd8146a00ccc98c5e5d74af062af5c9ec58e9bc5b6e61e770eca65c"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  }
+}

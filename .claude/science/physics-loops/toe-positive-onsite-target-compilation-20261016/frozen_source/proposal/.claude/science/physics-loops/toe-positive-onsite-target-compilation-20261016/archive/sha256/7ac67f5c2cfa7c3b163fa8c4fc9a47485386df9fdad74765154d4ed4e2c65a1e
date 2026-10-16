@@ -1,0 +1,12 @@
+# Root launch authorization
+
+The parent agent sent the following authorization in this task, after the
+prelaunch freeze and before the scientific run. This file records that
+message; it is not a scientific verdict or a new user-facing permission flow.
+
+> Root has now read the full frozen compile_target.py 52e53faf, PRELAUNCH, DERIVATION, recorder and actual metadata receipts/full streams. Exposed checker reports no blocking source defect. GO for exactly the specified single target_001 execution, 600 seconds, 32 iterations, frozen parameters. Verify f453d826 prelaunch and every member first, capture actual launch/source/full streams; preserve any failure without retry or alternate target. Ledger full_reference_trace_error_upper=2 EPS is ideal programmed scope; full physical error still adds drive and initial trace error. Report actual result and fresh output freeze; do not claim independent validation.
+
+The reported exposed-checker assessment is relayed by root; this author has
+not inspected that review and does not claim independent validation. The
+full physical trace bound remains2(epsilon+eta_drive)+delta_initial, and
+separate post-off timing error is added when applicable.

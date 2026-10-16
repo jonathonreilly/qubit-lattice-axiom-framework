@@ -1,0 +1,65 @@
+"""Metadata-only exact evidence snapshot, unchanged-source checks and final seal."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import shutil
+
+P=Path(__file__).resolve().parent
+A=P.parent/'endpoint_target_compilation_candidate'
+
+
+def pin(path):
+    raw=Path(path).read_bytes()
+    return {'path':str(path),'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+
+
+def write(path,value):
+    Path(path).write_text(json.dumps(value,indent=2)+'\n')
+
+
+def same(path,row):
+    actual=pin(path)
+    assert all(actual[k]==row[k] for k in ('bytes','sha256')),str(path)
+
+
+assert not (P/'FINAL_FREEZE.json').exists()
+prior=[]
+for name,expected in [('INITIAL_FREEZE.json','f5c4bd4b478a633c7c9c0b875d73ff6481ca5c4e1612f4e2456ed01e47506717'),('program_exposed/SOURCE_REVIEW_FREEZE.json','6f97252914b91116a96402b8ff865bb5a57cfcadfc7771204cde068fb6180f70'),('checker_proposal/CHECKER_SOURCE_FREEZE.json','78fe6aabbc5691a3fa4f04149ddf360c7f7fa4751bc693ecb1bc5eb7bf8983f9')]:
+    path=P/name;assert pin(path)['sha256']==expected
+    data=json.loads(path.read_text())
+    for row in data['files']:same(path.parent/row['path'],row)
+    prior.append({'freeze':pin(path),'members_unchanged':len(data['files'])})
+author_freeze=pin(A/'FREEZE.json')
+assert (author_freeze['bytes'],author_freeze['sha256'])==(22438,'0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc')
+author_rows=json.loads((A/'FREEZE.json').read_text())['members'];assert len(author_rows)==132
+snapshot=P/'author_final_snapshot';snapshot.mkdir(exist_ok=False)
+shutil.copyfile(A/'FREEZE.json',snapshot/'FREEZE.json')
+archived=[]
+for row in author_rows:
+    relative=Path(row['path']);assert not relative.is_absolute() and '..' not in relative.parts
+    source=A/relative;assert source.resolve().is_relative_to(A.resolve());same(source,row)
+    target=snapshot/relative;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target);same(target,row)
+    archived.append({'original':str(source),'snapshot':str(target.relative_to(P)),'bytes':row['bytes'],'sha256':row['sha256']})
+run=P/'saved_arithmetic_001';receipt=json.loads((run/'EXECUTION.json').read_text())
+assert receipt['exit_code']==0 and receipt['timed_out'] is False and receipt['wall_timeout_seconds']==180
+assert receipt['source_at_launch']['sha256']=='7f679bc3b880791bc84b6268cec7b5bed5d35fcc3cdb85a04849888e7f248f94'
+assert receipt['recorder_at_launch']['sha256']=='b883de16a549b62f789b3625b6aa050b1275c7603fcdaa273d243c1137f77fb0'
+for name in ['source_at_launch','recorder_at_launch','input_binding_at_launch','stdout','stderr']:same(receipt[name]['path'],receipt[name])
+assert (run/'stderr').read_bytes()==b''
+source=pin(P/'checker_proposal/check_saved_evidence.py');assert source['sha256']==receipt['source_at_launch']['sha256']
+result=json.loads((run/'output/RESULT.json').read_text())
+assert result['status']=='SAVED_TARGET_ARITHMETIC_VERIFIED_WITH_EXPLICIT_LIMITS'
+assert result['slot_products_checked']==768 and result['iteration_records_checked']==32 and result['final_power_products_checked']==41
+assert len(result['corrupted_controls_rejected'])==3
+binding=P/'execution_binding/INPUT_BINDING.json';assert pin(binding)['sha256']=='eda27de47d353685b918d334144fcdff832b36ee4c5b08aab34056c9c74bca2d'
+author_receipt=pin(A/'runs/target_001/EXECUTION.json');assert author_receipt['sha256']=='4b8f622e076acee771ebd466c96fda8f6fba3b37196dbe45296f86ff3e83bb1a'
+evidence={'kind':'metadata_linkage_and_source_snapshot_only','utc':datetime.now(timezone.utc).isoformat(),'prior_freezes_unchanged':prior,'author_final_freeze':author_freeze,'author_execution':author_receipt,'author_snapshot_members':archived,'checker_source':source,'checker_execution':pin(run/'EXECUTION.json'),'checker_result':pin(run/'output/RESULT.json'),'checker_stdout':pin(run/'stdout'),'checker_stderr':pin(run/'stderr'),'actual_input_binding':pin(binding),'additive_report':pin(P/'ARITHMETIC_REVIEW.md'),'additive_coverage':pin(P/'ARITHMETIC_SOURCE_COVERAGE.md'),'current_checkpoint':pin(P/'CURRENT_STATUS.md'),'scientific_checker_executions':1,'retry':False,'local_ode_replay':False,'nominal_endpoint_or_n_power_replay':False,'root_scientific_disposition':None,'retained_audit':False,'scope':'Same-model source-exposed analytical review plus one independently written Fraction saved-evidence arithmetic check. Qualified parent inputs and local slot generation remain explicit trust boundaries.'}
+write(P/'ARITHMETIC_EVIDENCE.json',evidence)
+files=[]
+for path in sorted(P.rglob('*')):
+    if not path.is_file() or 'closure_metadata_run' in path.relative_to(P).parts:continue
+    files.append(dict(pin(path),path=str(path.relative_to(P))))
+freeze={'kind':'completed_endpoint_target_source_exposed_check','utc':datetime.now(timezone.utc).isoformat(),'files':files,'author_source_freeze':author_freeze,'prior_freezes':prior,'checker_execution':pin(run/'EXECUTION.json'),'scientific_checker_executions':1,'scientific_retry':False,'source_prepared_before_result_exposure':True,'root_scientific_acceptance':None,'retained_audit':False,'terminal_metadata_receipt':'closure_metadata_run/EXECUTION.json is produced after this freeze and deliberately outside its inventory.'}
+write(P/'FINAL_FREEZE.json',freeze)
+print(json.dumps({'freeze':pin(P/'FINAL_FREEZE.json'),'members':len(files),'report':pin(P/'ARITHMETIC_REVIEW.md'),'evidence':pin(P/'ARITHMETIC_EVIDENCE.json'),'checker_execution':pin(run/'EXECUTION.json'),'checker_result':pin(run/'output/RESULT.json'),'prior_freezes_unchanged':True,'metadata_only_no_science_execution':True},indent=2))

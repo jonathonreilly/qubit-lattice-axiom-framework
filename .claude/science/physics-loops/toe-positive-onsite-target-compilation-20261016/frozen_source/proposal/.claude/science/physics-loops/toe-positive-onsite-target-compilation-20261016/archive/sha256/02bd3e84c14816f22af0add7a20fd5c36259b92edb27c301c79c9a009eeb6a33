@@ -1,0 +1,30 @@
+"""Capture only pinned prelaunch files and existing metadata; no science import or execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json,sys
+O=Path(sys.argv[1]).resolve();P=O.parent;N=P.parent;C=N/'endpoint_target_compilation_candidate'
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(p.read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ['bytes','sha256']),str(p)
+assert pin(P/'INITIAL_FREEZE.json')['sha256']=='f5c4bd4b478a633c7c9c0b875d73ff6481ca5c4e1612f4e2456ed01e47506717'
+for r in read(P/'INITIAL_FREEZE.json')['files']:same(P/r['path'],r)
+assert pin(C/'PRELAUNCH_FREEZE.json')['sha256']=='f453d8268c170f725cfc376dafbc8988ffff742baf3e95e8d1dc25100df22a43'
+assert pin(C/'compile_target.py')['sha256']=='52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80'
+rows=read(C/'PRELAUNCH_FREEZE.json')['members'];assert len(rows)==33
+for r in rows:same(C/r['path'],r)
+paths=[C/'PRELAUNCH_FREEZE.json']+[C/r['path'] for r in rows]
+paths += [C/'runs/prelaunch_freeze'/name for name in ['EXECUTION.json','LAUNCH.json','source_at_launch.py','recorder_at_launch.py','stdout','stderr']]
+records=[]
+for p in paths:
+ r=pin(p);rel=str(p.relative_to(C));dest=O/'captured_candidate'/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(p.read_bytes());same(dest,r);records.append(dict(**r,capture=str(dest.relative_to(O))))
+for label in ['capture_inputs','prelaunch_freeze']:
+ root=O/'captured_candidate/runs'/label;receipt=read(root/'EXECUTION.json');assert receipt['exit_code']==0 and receipt['timed_out'] is False and receipt['kind']=='metadata'
+ for key,filename in [('source_at_launch','source_at_launch.py'),('recorder_at_launch','recorder_at_launch.py'),('stdout','stdout'),('stderr','stderr')]:same(root/filename,receipt[key])
+ assert (root/'stderr').read_bytes()==b''
+source=(C/'compile_target.py').read_text();functions=[]
+for node in ast.parse(source).body:
+ if isinstance(node,ast.FunctionDef):
+  body=''.join(source.splitlines(True)[node.lineno-1:node.end_lineno]).encode();functions.append(dict(name=node.name,start_line=node.lineno,end_line=node.end_lineno,bytes=len(body),sha256=hashlib.sha256(body).hexdigest()))
+result=dict(kind='prelaunch_source_exposed_review_capture',utc=datetime.now(timezone.utc).isoformat(),initial_analytical_freeze=pin(P/'INITIAL_FREEZE.json'),candidate_prelaunch_freeze=pin(C/'PRELAUNCH_FREEZE.json'),records=records,science_functions=functions,scientific_executions=0,candidate_program_imported=False,scientific_result_viewed=False)
+(O/'SOURCE_IDENTITIES.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(dict(initial_analytical_freeze=pin(P/'INITIAL_FREEZE.json'),candidate_source=pin(C/'compile_target.py'),captured_files=len(records),complete_functions=len(functions),scientific_executions=0,scientific_result_viewed=False),indent=2))

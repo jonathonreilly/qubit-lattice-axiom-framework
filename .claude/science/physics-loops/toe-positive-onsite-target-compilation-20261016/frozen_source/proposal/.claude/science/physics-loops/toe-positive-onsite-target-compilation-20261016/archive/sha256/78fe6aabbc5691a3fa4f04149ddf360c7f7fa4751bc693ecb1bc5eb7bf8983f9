@@ -1,0 +1,71 @@
+{
+  "kind": "unexecuted_independent_fraction_saved_evidence_checker_source",
+  "utc": "2026-10-16T19:59:46.468080+00:00",
+  "files": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1078,
+      "sha256": "0a337edab71f0a4515208664c648ab2bcd91cad6bea2e0dfd55e3c2bd739f0d7"
+    },
+    {
+      "path": "CODE_MAP.json",
+      "bytes": 13114,
+      "sha256": "ce4ef1fb771af3c5e4eccb1a0c639c5c6362fac506cde5ef0c12b527aa682a10"
+    },
+    {
+      "path": "INPUT_BINDING_TEMPLATE.json",
+      "bytes": 139,
+      "sha256": "3f852de83587ee709b00cdf3ddb166a3c680ad2e8e6a29ef382ab848db8ad122"
+    },
+    {
+      "path": "ROOT_READ_GUIDE.md",
+      "bytes": 4314,
+      "sha256": "6d08540d964f863764b5704398fd089c6de11fd98e3db80ccdb96895be6817a0"
+    },
+    {
+      "path": "SCOPE.md",
+      "bytes": 2861,
+      "sha256": "080201498e6873f06c1bf741e1383f0f6e8aabd4448bb002cf7cf7c721a9e92a"
+    },
+    {
+      "path": "check_saved_evidence.py",
+      "bytes": 31600,
+      "sha256": "7f679bc3b880791bc84b6268cec7b5bed5d35fcc3cdb85a04849888e7f248f94"
+    },
+    {
+      "path": "freeze_source.py",
+      "bytes": 2525,
+      "sha256": "3a50a5270ea747128050971e6884876c7ccab2ec753aa2f47c0e6528c12ae15c"
+    },
+    {
+      "path": "record_check.py",
+      "bytes": 2813,
+      "sha256": "b883de16a549b62f789b3625b6aa050b1275c7603fcdaa273d243c1137f77fb0"
+    },
+    {
+      "path": "record_source_freeze.py",
+      "bytes": 2190,
+      "sha256": "9e49e00c1cf001ffadf376d851442269332fae36988c08ffeb6ce56b27022e0d"
+    }
+  ],
+  "initial_analytical_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/INITIAL_FREEZE.json",
+    "bytes": 5602,
+    "sha256": "f5c4bd4b478a633c7c9c0b875d73ff6481ca5c4e1612f4e2456ed01e47506717"
+  },
+  "source_review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/program_exposed/SOURCE_REVIEW_FREEZE.json",
+    "bytes": 10855,
+    "sha256": "6f97252914b91116a96402b8ff865bb5a57cfcadfc7771204cde068fb6180f70"
+  },
+  "author_source_sha256": "52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80",
+  "author_prelaunch_sha256": "f453d8268c170f725cfc376dafbc8988ffff742baf3e95e8d1dc25100df22a43",
+  "actual_author_output_binding": null,
+  "actual_execution_authorization": null,
+  "scientific_checker_executions": 0,
+  "author_scientific_output_viewed": false,
+  "syntax_only_no_checker_import": true,
+  "fixed_wall_timeout_seconds": 180,
+  "automatic_retry": false,
+  "retained_audit": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "Fixed specification before the single scientific attempt",
+  "n": 98611368294597721931914764889297593425141587534996842205,
+  "M": 147975046,
+  "T": 350208522228384946904887108861751911074590975328100424043350794320,
+  "epsilon_denominator": 1099511627776,
+  "W_identity_gaussian_numerator": [9, 12],
+  "W_XX_gaussian_numerator": [-16, 12],
+  "W_denominator": 25,
+  "iterations": 32,
+  "displacement_bits": 128,
+  "interval_bits": 768,
+  "endpoint_order": 320,
+  "substeps_per_slot": 8,
+  "phase_dyadic_bits": 512,
+  "arctan_terms": 128,
+  "exponential_order": 256,
+  "wall_limit_seconds": 600,
+  "scientific_attempt_limit": 1,
+  "automatic_retry": false,
+  "root_GO_required_before_launch": true
+}

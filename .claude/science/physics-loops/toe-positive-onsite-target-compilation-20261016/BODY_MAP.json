@@ -1,0 +1,60 @@
+{
+  "kind": "canonical_body_map",
+  "source_packet_freeze": "d8d497c515fa8f1eebf4f336a55435557cc3c8b60384f4a17a5ce2d40a8c37d7",
+  "bodies": [
+    {
+      "name": "original_target_derivation",
+      "source": "endpoint_target_compilation_candidate/DERIVATION.md",
+      "start_byte": 6823,
+      "end_byte_exclusive": 20680,
+      "bytes": 13857,
+      "sha256": "ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737"
+    },
+    {
+      "name": "pre_program_analytic_review",
+      "source": "endpoint_target_compilation_exposed_check/REVIEW.md",
+      "start_byte": 20747,
+      "end_byte_exclusive": 38417,
+      "bytes": 17670,
+      "sha256": "b66cca6fa6e02bb93e7a7374a43f4ffee804dca24a5efed9297a75bce02ea845"
+    },
+    {
+      "name": "complete_prelaunch_source_review",
+      "source": "endpoint_target_compilation_exposed_check/program_exposed/REVIEW.md",
+      "start_byte": 38489,
+      "end_byte_exclusive": 50314,
+      "bytes": 11825,
+      "sha256": "686331f66fd406c6a63b6c2332a8e0445cbb4f918c8e6086e238aea092ccfbcd"
+    },
+    {
+      "name": "completed_saved_arithmetic_review",
+      "source": "endpoint_target_compilation_exposed_check/ARITHMETIC_REVIEW.md",
+      "start_byte": 50387,
+      "end_byte_exclusive": 61046,
+      "bytes": 10659,
+      "sha256": "864a89b20138cff1a53669e3c07b136d448e37e087ee8549d2722ad212eb7238"
+    },
+    {
+      "name": "saved_arithmetic_coverage",
+      "source": "endpoint_target_compilation_exposed_check/ARITHMETIC_SOURCE_COVERAGE.md",
+      "start_byte": 61111,
+      "end_byte_exclusive": 65578,
+      "bytes": 4467,
+      "sha256": "b44ffb18cacd268e5681206a672be306ba9a6c39994fd1c1f2d772edca046683"
+    },
+    {
+      "name": "controlling_root_qualifications",
+      "source": "endpoint_target_compilation_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 65649,
+      "end_byte_exclusive": 73072,
+      "bytes": 7423,
+      "sha256": "3982bea887803282a172ab7dfac449d8f6f01c515b939f30ebe565fbf053295b"
+    }
+  ],
+  "trailer": {
+    "start_byte": 73072,
+    "end_byte_exclusive": 73223,
+    "bytes": 151,
+    "sha256": "83d2aebab0f608b0e3eccbe12d7b68a5d2c168acd3df12842e5c088b19cb0208"
+  }
+}

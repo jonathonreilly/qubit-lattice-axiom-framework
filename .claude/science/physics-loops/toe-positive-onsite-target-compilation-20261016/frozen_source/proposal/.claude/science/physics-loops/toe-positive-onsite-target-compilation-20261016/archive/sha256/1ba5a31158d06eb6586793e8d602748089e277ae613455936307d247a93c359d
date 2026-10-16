@@ -1,0 +1,70 @@
+FIXED_TARGET_ATTEMPT_START iterations=32 displacement_bits=128 interval_bits=768 order=320
+CALIBRATION_ITERATION_COMPLETE 1
+ENDPOINT_SAVED 1 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_01.json", "bytes": 219253, "sha256": "256ca2e2b5217e8c407c2238a050e130583fddc7e4c1e17dabbe8a106ecc22aa"}
+CALIBRATION_ITERATION_COMPLETE 2
+ENDPOINT_SAVED 2 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_02.json", "bytes": 219244, "sha256": "a5a2952c80587caa59436cd35121cfb1b14b46ae84202afa460843643956b1b4"}
+CALIBRATION_ITERATION_COMPLETE 3
+ENDPOINT_SAVED 3 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_03.json", "bytes": 219248, "sha256": "e8a33b9ea8b966d92e0de620ced205dd68a993f14d48c3c0596f1879b90acd7d"}
+CALIBRATION_ITERATION_COMPLETE 4
+ENDPOINT_SAVED 4 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_04.json", "bytes": 219252, "sha256": "c6a1b0c50858ba21bfaa89eb3e660327cc8afd25e85771e8107852b4e229d79e"}
+CALIBRATION_ITERATION_COMPLETE 5
+ENDPOINT_SAVED 5 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_05.json", "bytes": 219248, "sha256": "5f59918f1fdd3701d74a3eb71b357769396410ea8cce403f4e2f9f241c4bfa9e"}
+CALIBRATION_ITERATION_COMPLETE 6
+ENDPOINT_SAVED 6 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_06.json", "bytes": 219248, "sha256": "4ab4541ea4d32e370ca728f926262ac90ceee2e40f0ec32a45209e6346d2845b"}
+CALIBRATION_ITERATION_COMPLETE 7
+ENDPOINT_SAVED 7 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_07.json", "bytes": 219248, "sha256": "7f987f2faae5221c075bc7255fe17ad9545602f18f8df3f2062eef615d22bdaf"}
+CALIBRATION_ITERATION_COMPLETE 8
+ENDPOINT_SAVED 8 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_08.json", "bytes": 219248, "sha256": "45626d404e2eea822c8bdc5949188b3cba4c13494ccce052f0b92d58c6a39534"}
+CALIBRATION_ITERATION_COMPLETE 9
+ENDPOINT_SAVED 9 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_09.json", "bytes": 219248, "sha256": "d0abcf2205c37e357952f63946a8cdb620acc25dbd5a5c171876484534827f01"}
+CALIBRATION_ITERATION_COMPLETE 10
+ENDPOINT_SAVED 10 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_10.json", "bytes": 219249, "sha256": "fcdd321d2fb84e1f363929124776bb300848d5668302f4761c5221bcc717706c"}
+CALIBRATION_ITERATION_COMPLETE 11
+ENDPOINT_SAVED 11 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_11.json", "bytes": 219249, "sha256": "947dd9ec0e6301343a31dea186a8b1163083d66b74e18aed2082ee603a84541f"}
+CALIBRATION_ITERATION_COMPLETE 12
+ENDPOINT_SAVED 12 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_12.json", "bytes": 219249, "sha256": "ceedbe279b24518d73df17d7df0bcf9f5d0cdada4aca0b09a5773e640a454a34"}
+CALIBRATION_ITERATION_COMPLETE 13
+ENDPOINT_SAVED 13 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_13.json", "bytes": 219249, "sha256": "f62a985487d25820af0b26bd667015ffedb05a5aa14dad00fb1867af1f5ba03f"}
+CALIBRATION_ITERATION_COMPLETE 14
+ENDPOINT_SAVED 14 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_14.json", "bytes": 219249, "sha256": "c14795beceed756d7bcf539a80e6b68b7025ee9fb132e6f821d6999abe046571"}
+CALIBRATION_ITERATION_COMPLETE 15
+ENDPOINT_SAVED 15 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_15.json", "bytes": 219249, "sha256": "ed0de85cbaa5bbc3dfeda8b9dd6c071d02354cdc086ff2c4999a70b7a537737d"}
+CALIBRATION_ITERATION_COMPLETE 16
+ENDPOINT_SAVED 16 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_16.json", "bytes": 219249, "sha256": "7e89ef2d1af349f92d65843794ad108c3cb2f479e93c87525ebe50006756964c"}
+CALIBRATION_ITERATION_COMPLETE 17
+ENDPOINT_SAVED 17 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_17.json", "bytes": 219249, "sha256": "f986d1c899f6ed1b0f67ef647e81d9d09b3d897f07ba4ed030d94f6a20e2558b"}
+CALIBRATION_ITERATION_COMPLETE 18
+ENDPOINT_SAVED 18 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_18.json", "bytes": 219249, "sha256": "64753b77a6c4d4a1b317742ba63ab6140e188ed11a7c0e3dc88659404308fb7d"}
+CALIBRATION_ITERATION_COMPLETE 19
+ENDPOINT_SAVED 19 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_19.json", "bytes": 219249, "sha256": "4a6e194adb10b6935a8de663aa86bbe31bdd73310b9ef9530d49ec6aa55d8947"}
+CALIBRATION_ITERATION_COMPLETE 20
+ENDPOINT_SAVED 20 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_20.json", "bytes": 219249, "sha256": "8933e293bb39aca6102665ba7cfb834938043dad8a551d1524e303e1bb611256"}
+CALIBRATION_ITERATION_COMPLETE 21
+ENDPOINT_SAVED 21 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_21.json", "bytes": 219249, "sha256": "d0dd28151c298a5b3cf30826dccaac6a68fb9b0dc79a0c61dfafca8e28ac3661"}
+CALIBRATION_ITERATION_COMPLETE 22
+ENDPOINT_SAVED 22 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_22.json", "bytes": 219249, "sha256": "a85366b7de79f7926e1501d9871b004cd0143cbc5e93209fd28978f921aacf57"}
+CALIBRATION_ITERATION_COMPLETE 23
+ENDPOINT_SAVED 23 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_23.json", "bytes": 219249, "sha256": "ebad3fe7fafafb0e61669adc474fe8d6bdc5afd2b768d43e9d53e0967ad8087d"}
+CALIBRATION_ITERATION_COMPLETE 24
+ENDPOINT_SAVED 24 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_24.json", "bytes": 219249, "sha256": "0ba30fada1990a079ebc9a046a8a351476ed8c36d59455e47d40e65182957548"}
+CALIBRATION_ITERATION_COMPLETE 25
+ENDPOINT_SAVED 25 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_25.json", "bytes": 219249, "sha256": "5af6c4859ea04d8bbf4545445d792e618ec7d96aad63de0eb063ffd753274abc"}
+CALIBRATION_ITERATION_COMPLETE 26
+ENDPOINT_SAVED 26 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_26.json", "bytes": 219249, "sha256": "c9cad4fae9ce828895ccdd95487fbbc080e987f6f0e2fb6c1f3450be4a48eb5e"}
+CALIBRATION_ITERATION_COMPLETE 27
+ENDPOINT_SAVED 27 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_27.json", "bytes": 219249, "sha256": "97485e698457d25214598c63bc993a7a21bdae860c2663637000d9d6e776f997"}
+CALIBRATION_ITERATION_COMPLETE 28
+ENDPOINT_SAVED 28 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_28.json", "bytes": 219249, "sha256": "b456e8b50012563181c17e0c87af38cd37fa21f0a0b38e3dc1090d2bc7c24df5"}
+CALIBRATION_ITERATION_COMPLETE 29
+ENDPOINT_SAVED 29 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_29.json", "bytes": 219249, "sha256": "703eae562abd5e5f745abab2b914c9590ecb9b951c5e0a794ccdef9a0988f8c2"}
+CALIBRATION_ITERATION_COMPLETE 30
+ENDPOINT_SAVED 30 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_30.json", "bytes": 219249, "sha256": "65f2981d5f7aa6301adb0d7ca43f1be64967ddb8d51747d8e83a152ebe0c4509"}
+CALIBRATION_ITERATION_COMPLETE 31
+ENDPOINT_SAVED 31 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_31.json", "bytes": 219249, "sha256": "6896f9987eddf7e2b8dde16b43db61cc52e68366c53475900468a5d14e981ddf"}
+CALIBRATION_ITERATION_COMPLETE 32
+ENDPOINT_SAVED 32 {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/ENDPOINT_32.json", "bytes": 219249, "sha256": "9b22f4600a1081cbcbcacc6d1af9fd4e04057849f5f53c7bfcd087e750613f2e"}
+FINAL_CERTIFICATE {"checks": {"strict_complete_residual": true, "integer_sqrt_upper_below_epsilon": true, "all_amplitudes_legal": true}, "explicit_total_operator_error_upper": {"numerator": 1976818550977769249897017285946801476587234599021716379796007866450182368258485076193821407276555597606350921108720827712757668549176256912366695566140192841201327829407232089495941358272342321813963683121095472965187854807062126791761229129026472638851933, "denominator": 4646927838993072071243945306718439250410188130185607684549287060362314553626263667328650982800488595593121011844353040782670578892327830336846345565944983205571783876398312106070895030732180427719497486819848241268961714708993375275490934188589556509412640954544199727574266715045888}, "epsilon": {"numerator": 1, "denominator": 1099511627776}}
+OUTPUT_PIN {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/TARGET_ENCLOSURES.json", "bytes": 57779, "sha256": "9d79c08943e94ab71f4872b796bddac5e8b8db12648b95132b7026a464b9603d"}
+OUTPUT_PIN {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/SCHEDULE.json", "bytes": 6629, "sha256": "ccdd7b4c6c1bd5d3a47ee42a5bb8e62a38f4d1567093af54a8131fecd561655c"}
+OUTPUT_PIN {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/TARGET_CERTIFICATE.json", "bytes": 70692, "sha256": "0849c174b6944ed4514073979c49f38feec98ee057bb6447c6297c88bb4ef866"}
+OUTPUT_PIN {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/RESOURCE_LEDGER.json", "bytes": 1311, "sha256": "cdcd39086328fbaf5da3e252550dbd3e12dc314e7eba80aaaebf4bd4cd9c7c11"}

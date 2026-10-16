@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "start_utc": "2026-10-16T22:29:39.109710+00:00",
+  "end_utc": "2026-10-16T22:31:38.439514+00:00",
+  "elapsed_seconds": 119.3299579997547,
+  "exit_code": 0,
+  "timeout_seconds": 180,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/run_citation_graph_build.py",
+    "bytes": 6826,
+    "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/controlled_stop/runs/graph_build/stdout",
+    "bytes": 281,
+    "sha256": "eca0ff42e4bf7e41cf8eaa4101bf04795a0f8f8f1420e21e70ed4bca4f671b15"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/controlled_stop/runs/graph_build/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scientific_executions": 0
+}

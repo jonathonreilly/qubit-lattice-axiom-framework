@@ -1,0 +1,31 @@
+"""Metadata-only exact capture; no mathematical or scientific program execution."""
+from pathlib import Path
+import hashlib,json
+ROOT=Path(__file__).resolve().parent
+N=ROOT.parent
+SOURCES=[
+ ('product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md',5436,'47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6'),
+ ('product_source_mediator_candidate/PROPOSAL.md',7613,'aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248'),
+ ('product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md',4274,'afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065'),
+ ('product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md',3322,'8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f'),
+ ('product_source_mediator_root_review/QUALIFICATION.md',4414,'e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7'),
+ ('product_source_mediator_pauli_root_review/QUALIFICATION.md',2333,'1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9'),
+]
+def ident(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+records=[]
+for rel,size,digest in SOURCES:
+ p=N/rel;b=p.read_bytes();assert ident(b)=={'bytes':size,'sha256':digest},rel
+ dest=ROOT/'sources'/rel;dest.parent.mkdir(parents=True,exist_ok=True);assert not dest.exists();dest.write_bytes(b)
+ assert dest.read_bytes()==b and p.read_bytes()==b
+ records.append({'original':str(p),'capture':str(dest.relative_to(ROOT)),**ident(b),'read_completely':True})
+f=N/'product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json'
+raw=f.read_bytes();assert ident(raw)['sha256']=='454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb'
+frozen=json.loads(raw)
+for row in frozen['members']:
+ assert ident((f.parent/row['path']).read_bytes())=={k:row[k] for k in ['bytes','sha256']},row['path']
+manifest={'schema':'installation_source_exposed_analytic_review_v1','sources':records,
+ 'prior_publication_freeze':{'path':str(f),**ident(raw),'all_members_unchanged':True,'members':len(frozen['members'])},
+ 'scientific_executions':0,'same_model':True,'source_exposed':True,'root_installation_acceptance':None}
+(ROOT/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print(json.dumps({'sources_captured':len(records),'prior_publication_members_unchanged':len(frozen['members']),
+ 'scientific_executions':0,'root_installation_acceptance':None,'scope':'source bytes and frozen inventory only'},indent=2))

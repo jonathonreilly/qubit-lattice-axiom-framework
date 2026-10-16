@@ -1,0 +1,47 @@
+"""Root decision after full analytical review of external stop and C1 extension."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1];D=N/'product_source_mediator_stop_c1_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def rd(p):return json.loads(Path(p).read_text())
+def wr(p,v):
+ with p.open('x') as f:f.write(json.dumps(v,indent=2)+'\n')
+assert not D.exists();sources=[]
+for rel,h in [('EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md','18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0'),('C1_MINIMUM_DURATION_RAMPS_ADDENDUM.md','212571bcf9ed6837808f6d8347eb0c74ef1fab394b6672658018a27ba561d15b')]:
+ p=N/'product_source_mediator_candidate'/rel;assert pin(p)['sha256']==h;sources.append(pin(p))
+packets=[]
+for name,h,rh,count in [('product_source_mediator_external_stop_exposed_check','b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55','57f52ff14bec371aaafcb6afa6c20742d228947d9a0fcd676b85b74b588c9def',30),('product_source_mediator_c1_ramps_exposed_check','c70e477bd88365ae548377c59451a0e269673e274905fe4c8c5400f76309cc8d','5b4e50abaf3150c3089cc40e377f381659f21ffe89426c5ee2842032e90e331b',32)]:
+ p=N/name;assert pin(p/'FREEZE.json')['sha256']==h and pin(p/'REVIEW.md')['sha256']==rh;f=rd(p/'FREEZE.json');assert len(f['members'])==count
+ for row in f['members']:same(p/row['path'],row)
+ e=rd(p/'metadata/EXECUTION.json');assert e['exit_code']==0 and not e['timed_out'] and e['scientific_executions']==0 and e['source_unchanged_during_run'] is True
+ assert e['argv'][1:]==['-B',str(p/'inspect_sources.py')] and e['cwd']==str(p) and e['started_at']<=e['finished_at'] and e['timeout_seconds']==30
+ assert (p/'metadata/stderr').read_bytes()==b''
+ assert pin(p/'inspect_sources.py')['sha256']==pin(p/'metadata/executed_source.py')['sha256']==e['source_sha256']
+ assert pin(p/'record_metadata.py')['sha256']==pin(p/'metadata/launcher_source.py')['sha256']==e['launcher_sha256']=='8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6'
+ for row in rd(p/'SOURCE_MANIFEST.json')['sources']:same(row['original'],row);same(p/row['capture'],row)
+ packets.append(dict(freeze=pin(p/'FREEZE.json'),review=pin(p/'REVIEW.md'),execution=pin(p/'metadata/EXECUTION.json'),stdout=pin(p/'metadata/stdout'),stderr=pin(p/'metadata/stderr'),scientific_executions=0,source_exposed=True))
+qualification='''# Root qualification: supplied external stopping and C1 minimum-duration control
+
+Root accepts both complete unchanged arguments as conditional analytical support after reading the complete separately frozen reviews, checking their load-bearing phase/composition/energy arguments, and inspecting actual metadata sources and full streams. The source/review identities are in ACCEPTANCE.json. The earlier installation/work qualification remains controlling at43ab4e6c. All underlying product/Pauli permissions and the static finite-coefficient theorem remain explicit dependencies. This decision does not rewrite historical pending language or the earlier eight-body PR9656.
+
+The positive result supplies a mathematical externally scheduled on/static/off construction for this particular target and literal K. The four ramps retain full old aging and every scalar. Decreasing controls give forward evolution, not inverse dynamics. The exact three-error identity bounds the actual correlated-source evolution by7epsilon/32+2delta without resetting or discarding that source. The initial source must be independently supplied as|00>, or an additional full-joint initial error must be priced.
+
+For linear ramps the96 factor is not used: L>=64[8+16/sqrt(T)]/(epsilon T) suffices. For the cubic C1 envelope with each ramp duration at least1, the sufficient factor is96, delta=max(ghat,3ghat(ghat+lambdahat)/L), and the complete isometry/trace bounds are respectively belowepsilon/4 andepsilon/2. These conditions must hold for the actual chosen m,L; increasing m carries its larger T, durations and precision. Common source/port envelopes and the exact same-site complementary scalar realization are physical premises. No direction or coefficient has been derived from microscopic axioms.
+
+The output persists in the free-old interaction picture for all later times only under the declared exact final Hamiltonian K and zero source drift/residual coupling. It is not a stationary Schrödinger-picture state. Source return is approximate in the full joint comparison, not an exact reset or exact factorization. Comparing with the actual old/reference marginal times|00> can cost an additional triangle factor. No indefinite reuse is certified.
+
+The external-stop review's separately attributed appendix is accepted as an elementary contextual implication: a supplied certified integral_0^infinity||E(v)||dv<=eta_tail adds at mosteta_tail isometry and2eta_tail unhalved trace error. A generic small constant residual is insufficient; the explicit positive alpha(I+Z1) example gives trace distance2 at a late time. This is a narrow counterexample to that inference, not a no-go for all physical stopping routes. No supplier for the integral-tail certificate is established. This allowance is additional to, not hidden in, the epsilon/2 budget.
+
+Signed mean drive work is defined by the complete prescribed Hamiltonian, including time-dependent identity reserves. Initial/final installed generator K and[W,K]=0 imply |W_cycle|<epsilon/2 after cancelling2I. This labels return of the installed Hamiltonian, not a closed apparatus or thermodynamic cycle. Source/port decreasing ramps have nonpositive derivative operators, hence W_off<=0 even on the actual correlated state. Linear-ramp on-work deviation is4ghat^2*tau_g/3; cubic-ramp deviation is36ghat^2*tau_g/35. Those constants must not be interchanged. Negative drive work denotes modeled installed energy returned to a prescribed control; recoverable apparatus work, fluctuations, fabrication, clocks and source preparation remain unpriced.
+
+Cubic joins are C1, with a fixed minimum duration in the stated units; they are not C2 or a hard-bandwidth theorem. Exact waveform matching, endpoint zeroing, usable physical slew/calibration/timing and an autonomous controller remain unresolved physical identifications. These results do not promote externally supplied control to autonomous halt.
+
+The checks use the same selected model and disclose source/outline exposure and reused parent evidence. Four separate exposed analytical reviews support the coherent argument; none is blind or a different-model replication. Metadata verifies exact sources and receipts only. No product compiler, coefficient list, symbolic program, numerical time evolution or physical experiment ran for these extensions. Formal retained status remains the independent audit path. No editable prompts/physical axioms changed, no science merged, no main pushed, no audit verdict applied.
+'''
+D.mkdir();(D/'QUALIFICATION.md').write_text(qualification)
+wr(D/'ACCEPTANCE.json',dict(kind='root_conditional_analytical_acceptance',utc=datetime.now(timezone.utc).isoformat(),sources=sources,review_packets=packets,prior_installation_work_acceptance=pin(N/'product_source_mediator_installation_work_root_review/ACCEPTANCE.json'),prior_qualification=pin(N/'product_source_mediator_installation_work_root_review/QUALIFICATION.md'),root_complete_changed_arguments_read=True,status='conditional_local_support_publication_pending',qualification=pin(D/'QUALIFICATION.md'),contextual_tail_appendix_accepted_with_explicit_extra_budget=True,scientific_executions=0,retained_audit=False,editable_prompt_files_changed=[]))
+wr(D/'FREEZE.json',dict(members=[dict(pin(p),path=p.name) for p in sorted(D.iterdir()) if p.is_file()],scope='Separate completed root stop/C1 acceptance and controlling qualification; publication remains separate.'))
+print(json.dumps(dict(acceptance=pin(D/'ACCEPTANCE.json'),qualification=pin(D/'QUALIFICATION.md'),freeze=pin(D/'FREEZE.json'),scientific_executions=0)))

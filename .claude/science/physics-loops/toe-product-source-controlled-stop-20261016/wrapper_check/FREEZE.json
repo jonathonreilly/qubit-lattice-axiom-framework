@@ -1,0 +1,21 @@
+{
+  "scope": "source-exposed wrapper content review, no metadata approval",
+  "created_at": "2026-10-16T22:31:10.075132+00:00",
+  "members": [
+    {
+      "path": "REVIEW.md",
+      "bytes": 3181,
+      "sha256": "0f449b0be9ae4e98130e630ac250393db350eab66a8e917a1db18ca7b5bf563e"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 2382,
+      "sha256": "c6b69303ef7d6e1398129dff7f14a9f0143c24c3e1e1cc92f678a5f87a97cbe0"
+    },
+    {
+      "path": "WRAPPER_LINES_1_65.md",
+      "bytes": 8426,
+      "sha256": "91fcb0e06ba101d4730f4f8de57ad94ceb25baa111c3a5e202017e8ec519abb8"
+    }
+  ]
+}

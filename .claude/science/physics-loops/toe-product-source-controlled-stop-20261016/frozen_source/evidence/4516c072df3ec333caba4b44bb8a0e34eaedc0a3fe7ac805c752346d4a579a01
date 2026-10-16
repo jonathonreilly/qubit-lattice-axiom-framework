@@ -1,0 +1,128 @@
+{
+  "schema": "external_stop_source_exposed_analytic_review_v1",
+  "sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md",
+      "capture": "sources/product_source_mediator_candidate/EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md",
+      "bytes": 6927,
+      "sha256": "18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0",
+      "coverage": "complete new source read and reconstructed"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md",
+      "capture": "sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md",
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6",
+      "coverage": "complete necessary premise reread"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md",
+      "capture": "sources/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md",
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f",
+      "coverage": "complete necessary premise reread"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "capture": "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065",
+      "coverage": "complete necessary premise reread; not a compiler execution"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/PROPOSAL.md",
+      "capture": "sources/product_source_mediator_candidate/PROPOSAL.md",
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248",
+      "coverage": "previous full read and qualified result reused at exact identity"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "capture": "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f",
+      "coverage": "previous full read and qualified result reused at exact identity"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_root_review/QUALIFICATION.md",
+      "capture": "sources/product_source_mediator_root_review/QUALIFICATION.md",
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7",
+      "coverage": "complete controlling qualification reread"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "capture": "sources/product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9",
+      "coverage": "complete controlling qualification reread"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/QUALIFICATION.md",
+      "capture": "sources/product_source_mediator_installation_work_root_review/QUALIFICATION.md",
+      "bytes": 3392,
+      "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977",
+      "coverage": "complete new prior-parent qualification read"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/ACCEPTANCE.json",
+      "capture": "sources/product_source_mediator_installation_work_root_review/ACCEPTANCE.json",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847",
+      "coverage": "complete actual decision record read; root recorder not rerun or freshly inspected"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/REVIEW.md",
+      "capture": "sources/product_source_mediator_installation_exposed_check/REVIEW.md",
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15",
+      "coverage": "own completed sealed analytical check reused"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/REVIEW.md",
+      "capture": "sources/product_source_mediator_installation_work_exposed_check/REVIEW.md",
+      "bytes": 11562,
+      "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a",
+      "coverage": "own completed sealed analytical check reused"
+    }
+  ],
+  "prior_freezes": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "capture": "sources/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "members": 18,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/FREEZE.json",
+      "capture": "sources/product_source_mediator_installation_work_exposed_check/FREEZE.json",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11",
+      "members": 23,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "capture": "sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb",
+      "members": 166,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/FREEZE.json",
+      "capture": "sources/product_source_mediator_installation_work_root_review/FREEZE.json",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f",
+      "members": 2,
+      "all_members_unchanged": true
+    }
+  ],
+  "scientific_executions": 0,
+  "same_model": true,
+  "source_exposed": true,
+  "root_external_stop_acceptance": null,
+  "additional_exposure": "ROOT_CONTEXT_MESSAGE.txt suggested optional integrable-tail appendix after main review, before freeze"
+}

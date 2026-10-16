@@ -1,0 +1,36 @@
+--- source_note
++++ docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md
+@@ -1,16 +1,18 @@
+ ---
+ claim_type: bounded_theorem
+ actual_current_surface_status: conditional-support
+-source_only_proposal: true
+-wrapper_root_approval: null
+-canonical_execution: null
+-publication: null
++source_science_acceptance_complete: true
++wrapper_root_approval: separately_recorded
++canonical_execution: separately_recorded
++publication: separate_from_source_acceptance
+ audit_required_before_effective_retained: true
+ ---
+ # Product-source installation, mean work and supplied external stopping
+ 
+-**Primary provenance helper:** `scripts/product_source_controlled_stop_2026_10_16.py`.
+-This is an authoring proposal. The helper checks exact source bytes, embedded bodies and saved metadata; it performs no scientific calculation and cannot approve or publish this note. The status record in `INPUT_MANIFEST.json` distinguishes actual source decisions from this unapproved wrapper. Complete historical arguments and reviews below remain unchanged, including their original pending language.
++Claim type: bounded_theorem.
++
++**Primary runner:** `scripts/product_source_controlled_stop_2026_10_16.py`.
++This is a conditional milestone note. Root reviewed the source wrapper and canonical status changes; exact records are in the companion recovery packet. The helper checks exact source bytes, embedded bodies and saved metadata; it performs no scientific calculation and cannot approve or publish this note. The status record in `INPUT_MANIFEST.json` distinguishes actual source decisions from the historical source wrapper. Complete historical arguments and reviews below remain unchanged, including their original pending language.
+ 
+ The sole direct mathematical parent is [the product-source mediator theorem](PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md), exact SHA256 `4e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20`, 63,977 bytes. Its actual saved publication record identifies regular OPEN PR9656, head `6cd71718e16ef60505a210ff0a47559970753ab8`. This citation imports its rounded static full-isometry bound, coefficient bounds, independent source and positive-Pauli realization. The weak-mediator corrector/interval machinery is transitive through that parent, not another direct edge. Git ancestry and publication of this child remain separate. The existing eight-body static note is neither extended nor recopied here.
+ 
+@@ -58,7 +60,7 @@
+ 
+ Installation/work acceptance is the exact root record `45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847`, controlled by qualification `43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977`. That historical decision explicitly excluded external stopping. Root subsequently accepted stop/C1 in record `a69b51ac54fb2586100072eba45492473970ef612a57c53c02184f56af84eca9`, controlled by qualification `218ddfbed74e18f18dc30c8103a6a10acadb7a50daeb0d10dd0ee5f4e207ab9a`. Both complete qualifications follow. Their acceptance covers the specified sources and contextual tail implication, not this newly assembled wrapper.
+ 
+-All four checks are separately written same-model source-exposed analytical reconstructions. Their metadata runs record source identity, not a compiler, simulation, symbolic integration or experimental calculation. This author read all four complete arguments, all four complete reviews and the entire direct canonical parent, including controlling qualifications. Hashes do not replace those reads or prove mathematics. This new wrapper still needs root review. Canonical integration, its actual base, execution, staged review, publication and retained audit remain unbound or separate. No editable prompt or physical axiom changes are proposed.
++All four checks are separately written same-model source-exposed analytical reconstructions. Their metadata runs record source identity, not a compiler, simulation, symbolic integration or experimental calculation. This author read all four complete arguments, all four complete reviews and the entire direct canonical parent, including controlling qualifications. Hashes do not replace those reads or prove mathematics. Root has reviewed this wrapper against the unchanged accepted bodies. Actual base, canonical execution and staged review are recorded separately in the companion packet; publication and independent retained audit remain separate actions. No editable prompt or physical axiom changes are proposed.
+ 
+ 
+ <!-- Complete unchanged body: author_BOUNDED_SLEW_INSTALLATION_ADDENDUM.md -->

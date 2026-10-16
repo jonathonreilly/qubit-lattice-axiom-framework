@@ -100,3 +100,8 @@ archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 /.claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517 -whitespace
 /.claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f -whitespace
 /.claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/9ebe21c87187f6450a56539586de6633465b9d03b318446e58711ae19e0e22a1 -whitespace
+
+# Exact historical evidence for controlled-stop milestone.
+.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/integration_evidence/9e44a87ebaed5352dd8e402598b83b250e0a3def8a98dc0763d278ecb3bc1328 whitespace=-blank-at-eol,-blank-at-eof
+.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/integration_evidence/b66bddf6e14bb2fe1b9bd26a13e8bbbcf48aa1ff5571f4c6603e50c46e6656a8 whitespace=-blank-at-eol,-blank-at-eof
+.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/WRAPPER_LINES_1_65.md whitespace=-blank-at-eof

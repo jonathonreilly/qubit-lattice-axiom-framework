@@ -1,0 +1,126 @@
+{
+  "schema": "immutable_source_exposed_installation_work_review_v1",
+  "created_at": "2026-10-16T22:09:13.535146+00:00",
+  "scope": "analytical review; metadata capture only; no scientific execution; root disposition separate",
+  "source_exposed": true,
+  "same_model": true,
+  "root_acceptance": null,
+  "scientific_executions": 0,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1036,
+      "sha256": "66e67b278557f1a29f81fd85b811f53d4401e4396657a0d93d139c9b5148d1a7"
+    },
+    {
+      "path": "CODE_REUSE.md",
+      "bytes": 913,
+      "sha256": "f1c3f5140c9b92374b217afd47a7cc7f91370a486b9b273dc97590a81b737d58"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 11562,
+      "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 1729,
+      "sha256": "939664ca9184b142592c038b4248cb7e6c8ca0d6451161020f1baafad3d03236"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4605,
+      "sha256": "06c05c23983a6faff6621569519a9eb6bb8ebaaebb5e8215bd565cebb08ac052"
+    },
+    {
+      "path": "inspect_sources.py",
+      "bytes": 3465,
+      "sha256": "5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77"
+    },
+    {
+      "path": "metadata/EXECUTION.json",
+      "bytes": 919,
+      "sha256": "f839daba89b84304804fa377e4c40d840f878573bed656541395e889b77fd729"
+    },
+    {
+      "path": "metadata/executed_source.py",
+      "bytes": 3465,
+      "sha256": "5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77"
+    },
+    {
+      "path": "metadata/launcher_source.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "metadata/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata/stdout",
+      "bytes": 1074,
+      "sha256": "5956bd6666a7bc21c79148ba2d8f01f8a3828f204d6ca0c87c78d78ffc0fd285"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "seal.py",
+      "bytes": 1087,
+      "sha256": "7d46a1634c2f3e5f136c86007fc293e14f98e7972a36397efdf96723cb1aa50a"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md",
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md",
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PROPOSAL.md",
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_exposed_check/REVIEW.md",
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    {
+      "path": "sources/product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    {
+      "path": "sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb"
+    },
+    {
+      "path": "sources/product_source_mediator_root_review/QUALIFICATION.md",
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    }
+  ]
+}

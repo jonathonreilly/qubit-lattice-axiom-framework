@@ -1,0 +1,15 @@
+{
+  "members": [
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847"
+    },
+    {
+      "path": "QUALIFICATION.md",
+      "bytes": 3392,
+      "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977"
+    }
+  ],
+  "scope": "Completed root acceptance and qualification of two separate local extensions; no publication."
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "source identities and historical metadata only; not proof or scientific execution",
+  "bodies": 10,
+  "evidence_aliases": 59,
+  "selected_freeze_members": 107,
+  "historical_metadata_runs": 6,
+  "scientific_executions": 0,
+  "wrapper_root_approval": null,
+  "canonical_execution": null,
+  "publication": null,
+  "metadata_verification": "verified",
+  "approval": "refused",
+  "reason": "Source acceptance is real; this wrapper, selected base, canonical execution, staged review and child publication remain unbound."
+}

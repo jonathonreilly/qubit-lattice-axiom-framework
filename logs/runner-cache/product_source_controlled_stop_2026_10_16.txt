@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/product_source_controlled_stop_2026_10_16.py
+runner_sha256: f3571f26feca91cc79f69d06ddcd78080c535770e39b9fa0e58eeaf3fc2519dd
+input_fingerprint_sha256: 9cef9d03e712a118f316e6edd14fc695ba2c7af6d8c088c052de9763138fa678
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+{
+  "scope": "source identities and historical metadata only; not proof or scientific execution",
+  "bodies": 10,
+  "evidence_aliases": 59,
+  "selected_freeze_members": 107,
+  "historical_metadata_runs": 6,
+  "scientific_executions": 0,
+  "wrapper_root_approval": null,
+  "canonical_execution": null,
+  "publication": null,
+  "metadata_verification": "verified"
+}
+
+----- stderr -----
+

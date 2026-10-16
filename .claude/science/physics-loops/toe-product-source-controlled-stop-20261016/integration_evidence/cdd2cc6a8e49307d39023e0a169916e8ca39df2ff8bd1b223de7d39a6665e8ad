@@ -1,0 +1,33 @@
+"""Apply the reviewed narrow marginal-to-joint wording qualification."""
+from pathlib import Path
+import ast,datetime,difflib,hashlib,json
+N=Path(__file__).resolve().parents[1];W=N.parent/'correlation_worktree';D=N/'publication_integration/controlled_stop'
+P=W/'.claude/science/physics-loops/toe-product-source-controlled-stop-20261016';R=N/'product_source_controlled_stop_wrapper_check'
+note=W/'docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md';primary=W/'scripts/product_source_controlled_stop_2026_10_16.py'
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def write(p,x):p.write_text(json.dumps(x,indent=2)+'\n')
+assert pin(R/'FREEZE.json')['sha256']=='3cf35eafd2b754eb2dc4690716ff707735f4398924c63cb0d061947ae3eae635'
+freeze=json.loads((R/'FREEZE.json').read_bytes())
+for row in freeze['members']:
+ p=R/row['path'];assert pin(p)['sha256']==row['sha256'] and pin(p)['bytes']==row['bytes']
+before=note.read_text();assert pin(note)['sha256']=='49788e6b786164a4b34946e465e6f26337c51f356447cc9a1cdc6d6d312e530f'
+old='A small source-marginal error alone does not control arbitrary initial correlations.'
+new='A source-marginal error cannot be substituted for the required full-joint budget without a separate conversion bound.'
+assert before.count(old)==1;after=before.replace(old,new);note.write_text(after)
+(D/'WRAPPER_REFINEMENT.diff').write_text(''.join(difflib.unified_diff(before.splitlines(True),after.splitlines(True),fromfile='initial_canonical_note',tofile='qualified_canonical_note')))
+for p in R.iterdir():
+ if p.is_file():q=P/'wrapper_check'/p.name;q.parent.mkdir(exist_ok=True);q.write_bytes(p.read_bytes())
+record=dict(kind='root_narrow_wrapper_qualification',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),review=pin(R/'REVIEW.md'),review_freeze=pin(R/'FREEZE.json'),replacement_before=old,replacement_after=new,disposition='accepted; correct the overly broad marginal statement without changing the conditional theorem or constants',limits='Closeness to a pure source marginal permits a separate full-joint conversion at a different budget; this PR does not claim or price a new conversion theorem.',scientific_executions=0)
+write(P/'WRAPPER_REFINEMENT.json',record)
+bodymap=json.loads((P/'CANONICAL_BODY_MAP.json').read_bytes());b=after.encode()
+for row in bodymap:
+ source=Path(row['original']).read_bytes();assert b.count(source)==1;row['start_byte']=b.index(source);row['end_byte']=row['start_byte']+len(source)
+write(P/'CANONICAL_BODY_MAP.json',bodymap)
+s=primary.read_text();parsed=ast.parse(s);assignment=next(x for x in parsed.body if isinstance(x,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in x.targets))
+inputs=set(ast.literal_eval(assignment.value));inputs|={str(p.relative_to(W)) for p in (P/'wrapper_check').iterdir() if p.is_file()};inputs.add(str((P/'WRAPPER_REFINEMENT.json').relative_to(W)))
+lines=s.splitlines(True);lines[assignment.lineno-1:assignment.end_lineno]=['AUDIT_INPUT_PATHS = '+repr(tuple(sorted(inputs)))+'\n'];newprimary=''.join(lines)
+assert [ast.dump(x) for x in parsed.body if isinstance(x,ast.FunctionDef)]==[ast.dump(x) for x in ast.parse(newprimary).body if isinstance(x,ast.FunctionDef)]
+primary.write_text(newprimary)
+write(D/'FINAL_CANONICAL.json',dict(note=pin(note),primary=pin(primary),refinement=pin(P/'WRAPPER_REFINEMENT.json'),body_count=10,files={str(p.relative_to(W)):pin(p) for p in P.rglob('*') if p.is_file()}))
+print(json.dumps(dict(note=pin(note),primary=pin(primary),refinement=record)))

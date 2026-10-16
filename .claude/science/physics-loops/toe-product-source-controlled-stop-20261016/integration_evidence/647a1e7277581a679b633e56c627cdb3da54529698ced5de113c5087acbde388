@@ -1,0 +1,405 @@
+{
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 93655,
+    "sha256": "b25d812dc1a4cdad2959f003ddd36346f2de0058292c74c7d0e07c9c5e395a4d"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/product_source_controlled_stop_2026_10_16.py",
+    "bytes": 16874,
+    "sha256": "f3571f26feca91cc79f69d06ddcd78080c535770e39b9fa0e58eeaf3fc2519dd"
+  },
+  "refinement": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/WRAPPER_REFINEMENT.json",
+    "bytes": 1246,
+    "sha256": "28747d6f37da4fbb7f7ab18693fe57bfd0ebb3513705283788440143126214b9"
+  },
+  "body_count": 10,
+  "files": {
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/CANONICAL_BODY_MAP.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/CANONICAL_BODY_MAP.json",
+      "bytes": 4852,
+      "sha256": "895991f3ad9d70be252edeeda7be8bc505526be1a4d2912faf3e0180f264a41c"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/ROOT_WRAPPER_REVIEW.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/ROOT_WRAPPER_REVIEW.json",
+      "bytes": 2434,
+      "sha256": "e452479a7adfca9d828505a2ec26fc6555232f2b79af8fe805818beb6358f69b"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/WRAPPER_REFINEMENT.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/WRAPPER_REFINEMENT.json",
+      "bytes": 1246,
+      "sha256": "28747d6f37da4fbb7f7ab18693fe57bfd0ebb3513705283788440143126214b9"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/BASE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/BASE.json",
+      "bytes": 344,
+      "sha256": "e76c246297a57cd9bb459274d73dc257be7ca87dccea2451965d88c76a2b1895"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/record_metadata.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/record_metadata.py",
+      "bytes": 1776,
+      "sha256": "fc5f8d75de948cf8fd6363dc8da6e03608a692cf05fde1507a36ee589cf711b6"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/INPUT_MANIFEST.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/INPUT_MANIFEST.json",
+      "bytes": 36027,
+      "sha256": "121736e7f9ccf2a02ab30b3d8f792e0af897dfa681f310897913f5da9a3fcad1"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/build_packet.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/build_packet.py",
+      "bytes": 5428,
+      "sha256": "a0d429f880b1b1d238b27f115c953130073a1ecaa4f8ddeea32c432bb1a0db80"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/FINAL_FREEZE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/FINAL_FREEZE.json",
+      "bytes": 13267,
+      "sha256": "6a27f2d74b00ad306ff99dd1e25b7cd92d8c54cb9cce2d6ef6a707463c435802"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/UNCHANGED_BODY_DIFFS.txt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/UNCHANGED_BODY_DIFFS.txt",
+      "bytes": 1564,
+      "sha256": "eff449493c9cd09e71b5947926d30cb83ccc52c9ef26ea8273e411bf35354a52"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/finalize_packet.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/finalize_packet.py",
+      "bytes": 8947,
+      "sha256": "4afb935ef820025434503af5ba38ba347ab98a03e2427e0b1a5a9d7af568b82e"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/CHECKPOINT.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/CHECKPOINT.md",
+      "bytes": 863,
+      "sha256": "59a8aa62765ed84fe1f66d01183f4be05e1a7c8d8e106febe42fbf51bce42beb"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/ROOT_READ_GUIDE.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/ROOT_READ_GUIDE.md",
+      "bytes": 6284,
+      "sha256": "d8a965d08fdcaa7aa6a2225a3e165fef881a9a6511251a0ef68cebef68b89de9"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/wrapper.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/wrapper.md",
+      "bytes": 8135,
+      "sha256": "f73e155eb1cc3a202abf79ace1f73957d9e635b74e551602a6c9ccb1ca7c11f2"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/PROPOSED_FILES.diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/PROPOSED_FILES.diff",
+      "bytes": 109333,
+      "sha256": "d28c9afc38ea57ac2726177830e209f6ae25199c355b70a89d6780fa32af787c"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/CODE_MAP.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/CODE_MAP.json",
+      "bytes": 5778,
+      "sha256": "adf6c99973cf71066c3a9b0a7ee96a6ee93ff627fbac5bc8c6bfaae269e059f9"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/BODY_MAP.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/BODY_MAP.json",
+      "bytes": 4852,
+      "sha256": "237846027b71f599f0f1566d8fe9216fc29ed69df653183e097a8ee944e912e2"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/SOURCE_IDENTITIES.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/SOURCE_IDENTITIES.json",
+      "bytes": 2382,
+      "sha256": "c6b69303ef7d6e1398129dff7f14a9f0143c24c3e1e1cc92f678a5f87a97cbe0"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/WRAPPER_LINES_1_65.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/WRAPPER_LINES_1_65.md",
+      "bytes": 8426,
+      "sha256": "91fcb0e06ba101d4730f4f8de57ad94ceb25baa111c3a5e202017e8ec519abb8"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/REVIEW.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/REVIEW.md",
+      "bytes": 3181,
+      "sha256": "0f449b0be9ae4e98130e630ac250393db350eab66a8e917a1db18ca7b5bf563e"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/FREEZE.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/wrapper_check/FREEZE.json",
+      "bytes": 605,
+      "sha256": "3cf35eafd2b754eb2dc4690716ff707735f4398924c63cb0d061947ae3eae635"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5956bd6666a7bc21c79148ba2d8f01f8a3828f204d6ca0c87c78d78ffc0fd285": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5956bd6666a7bc21c79148ba2d8f01f8a3828f204d6ca0c87c78d78ffc0fd285",
+      "bytes": 1074,
+      "sha256": "5956bd6666a7bc21c79148ba2d8f01f8a3828f204d6ca0c87c78d78ffc0fd285"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/2df82ada50c6b192786c0343ea392ab4b8b1ce2b18756ba38aaa8b436da660c9": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/2df82ada50c6b192786c0343ea392ab4b8b1ce2b18756ba38aaa8b436da660c9",
+      "bytes": 2419,
+      "sha256": "2df82ada50c6b192786c0343ea392ab4b8b1ce2b18756ba38aaa8b436da660c9"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/4516c072df3ec333caba4b44bb8a0e34eaedc0a3fe7ac805c752346d4a579a01": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/4516c072df3ec333caba4b44bb8a0e34eaedc0a3fe7ac805c752346d4a579a01",
+      "bytes": 7578,
+      "sha256": "4516c072df3ec333caba4b44bb8a0e34eaedc0a3fe7ac805c752346d4a579a01"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/81086682cd7acabe2a2b472b49f3f6f381490103b07a946946231479bc28ea7f": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/81086682cd7acabe2a2b472b49f3f6f381490103b07a946946231479bc28ea7f",
+      "bytes": 8141,
+      "sha256": "81086682cd7acabe2a2b472b49f3f6f381490103b07a946946231479bc28ea7f"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/6b1217325caec3546178d49b66a831554c77bbc2215d8eca89f33fffb39c2f35": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/6b1217325caec3546178d49b66a831554c77bbc2215d8eca89f33fffb39c2f35",
+      "bytes": 1806,
+      "sha256": "6b1217325caec3546178d49b66a831554c77bbc2215d8eca89f33fffb39c2f35"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/23a576d278a44eb3e175dc4ea6212358773e14fc0ee2ece007522b205e86abea": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/23a576d278a44eb3e175dc4ea6212358773e14fc0ee2ece007522b205e86abea",
+      "bytes": 441,
+      "sha256": "23a576d278a44eb3e175dc4ea6212358773e14fc0ee2ece007522b205e86abea"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/61196218703721934aae4e568f1edd6637db08badbe2536ea3bd25eb8decb4c9": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/61196218703721934aae4e568f1edd6637db08badbe2536ea3bd25eb8decb4c9",
+      "bytes": 6826,
+      "sha256": "61196218703721934aae4e568f1edd6637db08badbe2536ea3bd25eb8decb4c9"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/7d41ab561988e1b2544db30b7ec33fbe4f8010a1f1d4d6c905d14aea6c619cef": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/7d41ab561988e1b2544db30b7ec33fbe4f8010a1f1d4d6c905d14aea6c619cef",
+      "bytes": 1756,
+      "sha256": "7d41ab561988e1b2544db30b7ec33fbe4f8010a1f1d4d6c905d14aea6c619cef"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/36c3f4e1b55c25742b8604f816af6e86f05b7883ee7fb567bf8db133d2db52c8": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/36c3f4e1b55c25742b8604f816af6e86f05b7883ee7fb567bf8db133d2db52c8",
+      "bytes": 1976,
+      "sha256": "36c3f4e1b55c25742b8604f816af6e86f05b7883ee7fb567bf8db133d2db52c8"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/987c8dbc1026df5320c024253853739d5a1309b8256195cbdb8f80fbb7cdcd66": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/987c8dbc1026df5320c024253853739d5a1309b8256195cbdb8f80fbb7cdcd66",
+      "bytes": 9393,
+      "sha256": "987c8dbc1026df5320c024253853739d5a1309b8256195cbdb8f80fbb7cdcd66"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/60c2480310954770e4c2950eb6430ca35686cd44f9fc684bed27a0cc09dfbfec": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/60c2480310954770e4c2950eb6430ca35686cd44f9fc684bed27a0cc09dfbfec",
+      "bytes": 911,
+      "sha256": "60c2480310954770e4c2950eb6430ca35686cd44f9fc684bed27a0cc09dfbfec"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b30283288f79ae2471703bdb0d14319c688b2350e2e1ea40de838a88db2c67d0": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b30283288f79ae2471703bdb0d14319c688b2350e2e1ea40de838a88db2c67d0",
+      "bytes": 886,
+      "sha256": "b30283288f79ae2471703bdb0d14319c688b2350e2e1ea40de838a88db2c67d0"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5eea5e976c259c29bf3c8f2ebb9046bee7e490a852a4db2c7b7f0fbeb7bf1760": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5eea5e976c259c29bf3c8f2ebb9046bee7e490a852a4db2c7b7f0fbeb7bf1760",
+      "bytes": 446,
+      "sha256": "5eea5e976c259c29bf3c8f2ebb9046bee7e490a852a4db2c7b7f0fbeb7bf1760"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b80195fcd0e428daa78b982b43ff631839ca71355c8402fe28b7f0da49d49c70": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b80195fcd0e428daa78b982b43ff631839ca71355c8402fe28b7f0da49d49c70",
+      "bytes": 1402,
+      "sha256": "b80195fcd0e428daa78b982b43ff631839ca71355c8402fe28b7f0da49d49c70"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/939664ca9184b142592c038b4248cb7e6c8ca0d6451161020f1baafad3d03236": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/939664ca9184b142592c038b4248cb7e6c8ca0d6451161020f1baafad3d03236",
+      "bytes": 1729,
+      "sha256": "939664ca9184b142592c038b4248cb7e6c8ca0d6451161020f1baafad3d03236"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/06c05c23983a6faff6621569519a9eb6bb8ebaaebb5e8215bd565cebb08ac052": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/06c05c23983a6faff6621569519a9eb6bb8ebaaebb5e8215bd565cebb08ac052",
+      "bytes": 4605,
+      "sha256": "06c05c23983a6faff6621569519a9eb6bb8ebaaebb5e8215bd565cebb08ac052"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/771f936632daa2542448185484d084d5c62d2de8307847cf8d361e8a16da83a5": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/771f936632daa2542448185484d084d5c62d2de8307847cf8d361e8a16da83a5",
+      "bytes": 861,
+      "sha256": "771f936632daa2542448185484d084d5c62d2de8307847cf8d361e8a16da83a5"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55",
+      "bytes": 5781,
+      "sha256": "b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/88d33beaa412a10eef191e692fe1762312f07a6ed9285af0226b2315f5a8a6f8": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/88d33beaa412a10eef191e692fe1762312f07a6ed9285af0226b2315f5a8a6f8",
+      "bytes": 2406,
+      "sha256": "88d33beaa412a10eef191e692fe1762312f07a6ed9285af0226b2315f5a8a6f8"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/a69b51ac54fb2586100072eba45492473970ef612a57c53c02184f56af84eca9": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/a69b51ac54fb2586100072eba45492473970ef612a57c53c02184f56af84eca9",
+      "bytes": 5168,
+      "sha256": "a69b51ac54fb2586100072eba45492473970ef612a57c53c02184f56af84eca9"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/c4515e42d1e849c00fe402365948abcf1ef5d48ff31df2c81c2bd8a6d3877e7c": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/c4515e42d1e849c00fe402365948abcf1ef5d48ff31df2c81c2bd8a6d3877e7c",
+      "bytes": 1547,
+      "sha256": "c4515e42d1e849c00fe402365948abcf1ef5d48ff31df2c81c2bd8a6d3877e7c"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f",
+      "bytes": 2454,
+      "sha256": "42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/e62749facb62241aeffe864034a06dcf0ee0ee7d8af27ea4544b033d0d77f9d3": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/e62749facb62241aeffe864034a06dcf0ee0ee7d8af27ea4544b033d0d77f9d3",
+      "bytes": 197,
+      "sha256": "e62749facb62241aeffe864034a06dcf0ee0ee7d8af27ea4544b033d0d77f9d3"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7",
+      "bytes": 4769,
+      "sha256": "211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f4c16256c1d3240f0a7b2bc4615f65777b74c51abf343c85c9b6c2204cfea0c8": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f4c16256c1d3240f0a7b2bc4615f65777b74c51abf343c85c9b6c2204cfea0c8",
+      "bytes": 2985,
+      "sha256": "f4c16256c1d3240f0a7b2bc4615f65777b74c51abf343c85c9b6c2204cfea0c8"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77",
+      "bytes": 3465,
+      "sha256": "5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/91974646449a8e6399275cbf4a019fe51151b3fcbd065b801612872c63763492": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/91974646449a8e6399275cbf4a019fe51151b3fcbd065b801612872c63763492",
+      "bytes": 909,
+      "sha256": "91974646449a8e6399275cbf4a019fe51151b3fcbd065b801612872c63763492"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33",
+      "bytes": 5742,
+      "sha256": "4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5c31726ca5a62ef238acdebfe71070d40003deffaa854d548055e522682dc22b": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5c31726ca5a62ef238acdebfe71070d40003deffaa854d548055e522682dc22b",
+      "bytes": 1904,
+      "sha256": "5c31726ca5a62ef238acdebfe71070d40003deffaa854d548055e522682dc22b"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/c70e477bd88365ae548377c59451a0e269673e274905fe4c8c5400f76309cc8d": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/c70e477bd88365ae548377c59451a0e269673e274905fe4c8c5400f76309cc8d",
+      "bytes": 6241,
+      "sha256": "c70e477bd88365ae548377c59451a0e269673e274905fe4c8c5400f76309cc8d"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f839daba89b84304804fa377e4c40d840f878573bed656541395e889b77fd729": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f839daba89b84304804fa377e4c40d840f878573bed656541395e889b77fd729",
+      "bytes": 919,
+      "sha256": "f839daba89b84304804fa377e4c40d840f878573bed656541395e889b77fd729"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/08b6235f297125c7b3b9bd95730677c67b6e359cf04d3a62ef718316fe1d2438": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/08b6235f297125c7b3b9bd95730677c67b6e359cf04d3a62ef718316fe1d2438",
+      "bytes": 831,
+      "sha256": "08b6235f297125c7b3b9bd95730677c67b6e359cf04d3a62ef718316fe1d2438"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b1b7166303125df1eeb1393233ec3632b4f8e4cab55aa1c650c94e4416316f15": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b1b7166303125df1eeb1393233ec3632b4f8e4cab55aa1c650c94e4416316f15",
+      "bytes": 901,
+      "sha256": "b1b7166303125df1eeb1393233ec3632b4f8e4cab55aa1c650c94e4416316f15"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/launcher_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/launcher_source.py",
+      "bytes": 1776,
+      "sha256": "fc5f8d75de948cf8fd6363dc8da6e03608a692cf05fde1507a36ee589cf711b6"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/stdout",
+      "bytes": 533,
+      "sha256": "b2a525e3189593572b71bffb80be2cb9fac2f3e65400829bf81e319815a5b00e"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/executed_source.py",
+      "bytes": 5647,
+      "sha256": "14f998b28da31ab9a6bf8c6cf3221c11904e0248f603cf917b52c356a0de509b"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/approval_refusal/EXECUTION.json",
+      "bytes": 2860,
+      "sha256": "865d680bb9bb7f57cca30c5a83aeeb69e82a60cc3ac05e93d8baad6b54f3d523"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/launcher_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/launcher_source.py",
+      "bytes": 1776,
+      "sha256": "fc5f8d75de948cf8fd6363dc8da6e03608a692cf05fde1507a36ee589cf711b6"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/stdout",
+      "bytes": 364,
+      "sha256": "0af525fb0a37e14c5a85821cde26b4019aef0f02d5382e4f5a0451429d8bd00e"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/executed_source.py",
+      "bytes": 5647,
+      "sha256": "14f998b28da31ab9a6bf8c6cf3221c11904e0248f603cf917b52c356a0de509b"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/metadata/source_check/EXECUTION.json",
+      "bytes": 2818,
+      "sha256": "85cf141e87af5a40a128a5ec202247add8d02fda22b5c3c2c3ee35103b31ac1d"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/BINDING_CONTRACT.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2149,
+      "sha256": "0c7644c5c9d0b2312c89b41500ae71c360734cd227ee38887005b6c42e558096"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/CLAIM_STATUS_CERTIFICATE.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 2297,
+      "sha256": "f29e2b48882de8cd9289b54809c64d36b213b32aa053f8719bc98194ea0c1769"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/PR_BODY.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/PR_BODY.md",
+      "bytes": 1977,
+      "sha256": "dda73f5a71755f377e0ad3821b096cf964394e8cb4475a000d5185148e684f6e"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/TRACE_GATE.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/TRACE_GATE.md",
+      "bytes": 733,
+      "sha256": "da0b3071bd3d39b75fc052d4ae0e7b89924120ecc605ed5845903a3ce24811ea"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/HANDOFF.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/packet_text/HANDOFF.md",
+      "bytes": 1403,
+      "sha256": "59a86444d923025cfa85b4b8413680c231c4179cefa7b6c0d086af353408448e"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 93333,
+      "sha256": "137bdaec6bcfeff047bc31b5467d0d06c076269b5d2e0f6bb991abb9bb3793d6"
+    },
+    ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/scripts/product_source_controlled_stop_2026_10_16.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/proposal/scripts/product_source_controlled_stop_2026_10_16.py",
+      "bytes": 5647,
+      "sha256": "14f998b28da31ab9a6bf8c6cf3221c11904e0248f603cf917b52c356a0de509b"
+    }
+  }
+}

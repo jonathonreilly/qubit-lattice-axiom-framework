@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-16T22:32:27.872140+00:00",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/product_source_controlled_stop_2026_10_16.py",
+    "bytes": 16874,
+    "sha256": "f3571f26feca91cc79f69d06ddcd78080c535770e39b9fa0e58eeaf3fc2519dd"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/controlled_stop/qualified_checks/CANONICAL_RESULT.json",
+    "bytes": 778,
+    "sha256": "c4ee0b67125fc749ef5068fafcd6d4b2eb75b2a4098789d9dada83babcb84f83"
+  },
+  "cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/product_source_controlled_stop_2026_10_16.txt",
+    "bytes": 722,
+    "sha256": "880a3a82f72c6691a85c9c1d15dc6b2ec8a8877969508444e3b17a9ddf2b2c18"
+  },
+  "scientific_executions": 0,
+  "scope": "Historical source provenance only; canonical binding checked separately by root",
+  "stream_limit": "runner_cache merges child stderr into stdout"
+}

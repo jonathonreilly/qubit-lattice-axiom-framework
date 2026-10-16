@@ -1,0 +1,7 @@
+# Source-only handoff
+
+Root should read the new wrapper and small provenance helper, then the full unchanged source/review/qualification intervals listed in BODY_MAP.json as needed against prior completed reads. Source acceptance is complete; this author does not approve the wrapper. Actual root review, canonical/base binding, integration verification, staged review and regular PR remain root-owned actions.
+
+The source-only metadata run verified ten complete unchanged bodies, 59 selected evidence aliases in 40 blobs, 107 members across six selected original freezes, and six historical metadata receipts. The intentional approval refusal exited 2; it is preserved as a refusal, not a scientific failure or PASS. Both actual runs captured child/recorder bytes before launch and retain complete streams. No science was rerun. The earlier read-only discovery errors and output truncation/re-read are disclosed in ROOT_READ_GUIDE.md.
+
+No algebraic blocker was found by this author in the changed arguments. All supplied physical interfaces and the independent-audit boundary remain. The conditional tail appendix carries a separate error allowance and explicit root-suggestion exposure. Linear ramps are a.e. slew-bounded; C1 joins have a fixed minimum duration but no hard-bandwidth implication. Total old duration, approximate joint source return and mean-drive convention must survive integration.

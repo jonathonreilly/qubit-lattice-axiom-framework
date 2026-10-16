@@ -1,0 +1,84 @@
+"""Root-owned small milestone integration. Metadata only; no scientific execution."""
+from pathlib import Path
+import ast,datetime,difflib,hashlib,json,os,shutil,subprocess,sys,time
+N=Path(__file__).resolve().parents[1];T=N.parent;W=T/'correlation_worktree'
+S=N/'product_source_controlled_stop_publication_draft';D=N/'publication_integration/controlled_stop/qualified_checks'
+P='.claude/science/physics-loops/toe-product-source-controlled-stop-20261016'
+NOTE='docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+HELPER='scripts/product_source_controlled_stop_2026_10_16.py'
+PARENT='docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+BASE='6cd71718e16ef60505a210ff0a47559970753ab8'
+BRANCH='physics-loop/toe-product-source-controlled-stop-20261016'
+GRAPH='docs/audit/data/citation_graph.json';MANIFEST='docs/audit/data/citation_graph_manifest.json'
+CLAIM='product_source_controlled_stop_bounded_theorem_note_2026-10-16'
+PC='product_source_mediator_bounded_theorem_note_2026-10-16'
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def write(p,x):
+ p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,indent=2)+'\n')
+def read(p):return json.loads(Path(p).read_bytes())
+def run(label,argv,expected=0,timeout=60):
+ d=D/'runs'/label;d.mkdir(parents=True,exist_ok=False);a=list(map(str,argv));start=now();tick=time.monotonic()
+ source=Path(a[2]) if len(a)>2 and a[1]=='-B' else None
+ if source and not source.is_absolute():source=W/source
+ before=pin(source) if source and source.is_file() else None
+ if before:(d/'executed_source.py').write_bytes(source.read_bytes())
+ with (d/'stdout').open('wb') as out,(d/'stderr').open('wb') as err:r=subprocess.run(a,cwd=W,stdout=out,stderr=err,timeout=timeout)
+ record=dict(argv=a,cwd=str(W),start_utc=start,end_utc=now(),elapsed_seconds=time.monotonic()-tick,exit_code=r.returncode,timeout_seconds=timeout,child_source_at_launch=before,stdout=pin(d/'stdout'),stderr=pin(d/'stderr'),scientific_executions=0)
+ write(d/'EXECUTION.json',record);assert r.returncode==expected,(label,r.returncode,(d/'stderr').read_text());return (d/'stdout').read_bytes()
+def git(*args):return subprocess.check_output(['git','-C',str(W),*args])
+def original():
+ f=read(S/'FINAL_FREEZE.json');assert pin(S/'FINAL_FREEZE.json')['sha256']=='6a27f2d74b00ad306ff99dd1e25b7cd92d8c54cb9cce2d6ef6a707463c435802'
+ for r in f['members']:
+  p=S/r['path'];assert {k:pin(p)[k] for k in ('bytes','sha256')}=={k:r[k] for k in ('bytes','sha256')}
+ assert pin(W/PARENT)['sha256']=='4e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20'
+ return read(S/'INPUT_MANIFEST.json')
+def cachemodule():
+ sys.dont_write_bytecode=True;os.environ['PYTHONDONTWRITEBYTECODE']='1';sys.path.insert(0,str(W/'scripts'));import runner_cache;return runner_cache
+phase=sys.argv[1];D.mkdir(parents=True,exist_ok=True)
+if phase=='prepare':
+ m=original();assert git('rev-parse','HEAD').decode().strip()==BASE and git('status','--porcelain')==b''
+ base=dict(utc=now(),head=BASE,tree=git('rev-parse','HEAD^{tree}').decode().strip(),branch=git('branch','--show-current').decode().strip(),origin_main=git('rev-parse','origin/main').decode().strip(),instructions=git('rev-parse','origin/ai/execution').decode().strip())
+ write(D/'BASE.json',base);shutil.copyfile(W/GRAPH,D/'GRAPH_BEFORE.json');shutil.copyfile(W/MANIFEST,D/'MANIFEST_BEFORE.json')
+ approval=dict(kind='root_source_wrapper_review',utc=now(),source_freeze=pin(S/'FINAL_FREEZE.json'),source_note=pin(S/m['note']['path']),source_primary=pin(S/('proposal/'+HELPER)),base=base,disposition='approve conditional source wrapper and the explicit canonical changes below for milestone integration',read_coverage='Complete new wrapper, helper, builders, finalizer, recorder, packet prose and both complete execution receipts/stdout/stderr read. Ten source argument/review/qualification bodies reused by exact hash after prior complete reads and separate root decisions. No truncated substantive argument accepted.',scientific_executions=0,independence='Four same-model source-exposed analytical reviews; not blind or a retained audit.',limits='Exact supplied controls, independent input, arbitrary reference, full scalar and old aging; linear64/C196 thresholds and 4/3 versus36/35 mean-work constants; exact-off persistence only in free-old interaction picture. Residual tail needs separate certified eta. No autonomous halt, apparatus cost, native supplier, exact reset or indefinite reuse.',editable_prompt_files_changed=[])
+ write(D/'ROOT_WRAPPER_REVIEW.json',approval)
+ raw=(S/m['note']['path']).read_text();replacements={
+ 'source_only_proposal: true':'source_science_acceptance_complete: true',
+ 'wrapper_root_approval: null':'wrapper_root_approval: separately_recorded',
+ 'canonical_execution: null':'canonical_execution: separately_recorded',
+ 'publication: null':'publication: separate_from_source_acceptance',
+ '**Primary provenance helper:**':'Claim type: bounded_theorem.\n\n**Primary runner:**',
+ 'This is an authoring proposal.':'This is a conditional milestone note. Root reviewed the source wrapper and canonical status changes; exact records are in the companion recovery packet.',
+ 'this unapproved wrapper':'the historical source wrapper',
+ 'This new wrapper still needs root review. Canonical integration, its actual base, execution, staged review, publication and retained audit remain unbound or separate.':'Root has reviewed this wrapper against the unchanged accepted bodies. Actual base, canonical execution and staged review are recorded separately in the companion packet; publication and independent retained audit remain separate actions.'}
+ for a,b in replacements.items():assert raw.count(a)==1,a;raw=raw.replace(a,b)
+ bodies=[];rb=raw.encode()
+ for row in m['bodies']:
+  b=Path(row['original']).read_bytes();assert rb.count(b)==1;start=rb.index(b);bodies.append(dict(row,start_byte=start,end_byte=start+len(b)))
+ changes=''.join(difflib.unified_diff((S/m['note']['path']).read_text().splitlines(True),raw.splitlines(True),fromfile='source_note',tofile=NOTE))
+ (D/'CANONICAL_NOTE.diff').write_text(changes)
+ run('branch',['git','switch','-c',BRANCH]);shutil.copytree(S,W/P/'frozen_source')
+ (W/NOTE).write_text(raw);write(W/P/'CANONICAL_BODY_MAP.json',bodies);write(W/P/'ROOT_WRAPPER_REVIEW.json',approval);write(W/P/'BASE.json',base)
+ primary=(S/('proposal/'+HELPER)).read_text();primary=primary.replace('ROOT=Path(__file__).resolve().parents[2]',"ROOT=Path(__file__).resolve().parents[1]/"+repr(P+'/frozen_source'))
+ inputs=sorted([str(p.relative_to(W)) for p in (W/P).rglob('*') if p.is_file()]+[NOTE,PARENT])
+ primary=primary.replace("if __name__=='__main__':sys.exit(main())","AUDIT_INPUT_PATHS = "+repr(tuple(inputs))+"\nif __name__=='__main__':sys.exit(main())");(W/HELPER).write_text(primary)
+ old=ast.parse((S/('proposal/'+HELPER)).read_bytes());new=ast.parse(primary)
+ assert [ast.dump(x) for x in old.body if isinstance(x,ast.FunctionDef)]==[ast.dump(x) for x in new.body if isinstance(x,ast.FunctionDef)]
+ write(D/'PREPARED.json',dict(utc=now(),note=pin(W/NOTE),primary=pin(W/HELPER),body_count=len(bodies),source_functions_unchanged=True,changes=pin(D/'CANONICAL_NOTE.diff'),files={str(p.relative_to(W)):pin(p) for p in (W/P).rglob('*') if p.is_file()}))
+ print(json.dumps(dict(phase=phase,note=pin(W/NOTE),primary=pin(W/HELPER),bodies=len(bodies))))
+elif phase=='check':
+ original();rc=cachemodule();r,p=rc.execute_and_write_cache(HELPER,timeout_sec=60);write(D/'CANONICAL_RESULT.json',r);assert r['status']=='ok' and r['exit_code']==0 and rc.cache_status(HELPER)=='fresh'
+ p=Path(p);p=p if p.is_absolute() else W/p;write(D/'CANONICAL_EXECUTION.json',dict(utc=now(),primary=pin(W/HELPER),result=pin(D/'CANONICAL_RESULT.json'),cache=pin(p),scientific_executions=0,scope='Historical source provenance only; canonical binding checked separately by root',stream_limit='runner_cache merges child stderr into stdout'))
+ run('vocab',[sys.executable,'-B','scripts/vocab_lint.py','--report-only',NOTE,HELPER])
+ run('graph_build',[sys.executable,'-B','docs/audit/scripts/run_citation_graph_build.py'],timeout=180)
+ run('graph_manifest',[sys.executable,'-B','docs/audit/scripts/write_citation_graph_manifest.py'])
+ g=read(W/GRAPH);before=read(D/'GRAPH_BEFORE.json');man=read(W/MANIFEST);bm=read(D/'MANIFEST_BEFORE.json')
+ nodes=dict(g['nodes']);node=nodes.pop(CLAIM);assert nodes==before['nodes'];assert node['path']==NOTE and node['runner_path']==HELPER and node['deps']==[PC]
+ assert [e for e in g['edges'] if e['from']==CLAIM]==[{'from':CLAIM,'to':PC}]
+ assert [e for e in g['edges'] if e['from']!=CLAIM]==before['edges'] and g['roots']==before['roots']
+ mn=dict(man['nodes']);added=mn.pop(CLAIM);assert mn==bm['nodes'] and added=={'out_degree':1,'deps_hash':hashlib.sha256(PC.encode()).hexdigest()[:12]}
+ assert man['node_count']==bm['node_count']+1 and man['edge_count']==bm['edge_count']+1
+ write(D/'GRAPH_VERIFICATION.json',dict(utc=now(),old_nodes_preserved=len(nodes),old_edges_preserved=len(before['edges']),new_node=node,new_edges=1,new_roots=0,graph=pin(W/GRAPH),manifest=pin(W/MANIFEST)))
+ print(json.dumps(dict(phase=phase,execution=read(D/'CANONICAL_EXECUTION.json'),graph=read(D/'GRAPH_VERIFICATION.json'))))
+else:raise ValueError(phase)

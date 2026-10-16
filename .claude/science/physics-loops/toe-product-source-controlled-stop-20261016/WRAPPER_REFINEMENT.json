@@ -1,0 +1,19 @@
+{
+  "kind": "root_narrow_wrapper_qualification",
+  "utc": "2026-10-16T22:32:27.214530+00:00",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_controlled_stop_wrapper_check/REVIEW.md",
+    "bytes": 3181,
+    "sha256": "0f449b0be9ae4e98130e630ac250393db350eab66a8e917a1db18ca7b5bf563e"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_controlled_stop_wrapper_check/FREEZE.json",
+    "bytes": 605,
+    "sha256": "3cf35eafd2b754eb2dc4690716ff707735f4398924c63cb0d061947ae3eae635"
+  },
+  "replacement_before": "A small source-marginal error alone does not control arbitrary initial correlations.",
+  "replacement_after": "A source-marginal error cannot be substituted for the required full-joint budget without a separate conversion bound.",
+  "disposition": "accepted; correct the overly broad marginal statement without changing the conditional theorem or constants",
+  "limits": "Closeness to a pure source marginal permits a separate full-joint conversion at a different budget; this PR does not claim or price a new conversion theorem.",
+  "scientific_executions": 0
+}

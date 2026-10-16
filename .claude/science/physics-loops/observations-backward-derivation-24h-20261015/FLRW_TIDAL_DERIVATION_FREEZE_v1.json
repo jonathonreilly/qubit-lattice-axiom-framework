@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-16T14:42:11.634098+00:00",
+  "phase": "derivation before executable controls",
+  "files": {
+    "FLRW_TIDAL_DERIVATION_v1.md": {
+      "sha256": "12d9121a08434bb1024f6c4ffe0b5bd2e4d4d9c762cf2c42da9e49fd44fb9839",
+      "bytes": 5305
+    }
+  }
+}

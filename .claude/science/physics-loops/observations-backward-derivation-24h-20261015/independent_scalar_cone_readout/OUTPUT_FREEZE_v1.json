@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-16T14:32:21.295940+00:00",
+  "author_exposure": false,
+  "files": {
+    "INDEPENDENT_DERIVATION_v1.md": {
+      "sha256": "bb8fc15bfaa5550063b17c0361d5abb319e53a8e2e4ac8a01c69230267ba6d1c",
+      "bytes": 9034
+    },
+    "DERIVATION_FREEZE_v1.json": {
+      "sha256": "05dc88d6041f05e33193bde706e03dde4fd9bca34915b49ed6a06b31d2da246a",
+      "bytes": 287
+    },
+    "check_v1.py": {
+      "sha256": "7ef09fd0efc3689d76a649c61dafb2b1e46a7715d5d4dfb7d772a9b8e63f3877",
+      "bytes": 3951
+    },
+    "stdout_v1.json": {
+      "sha256": "6827c0a5a271b3fcc64e39b300c0eeaaa2730c2c714cf384a77ad61fd661c93f",
+      "bytes": 2799
+    },
+    "stderr_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "receipt_v1.json": {
+      "sha256": "8cb93283ec4c3ecd1087301331a082bfbd99f0b90c73624c2280dc94cad0f80a",
+      "bytes": 448
+    },
+    "REPORT_v1.md": {
+      "sha256": "6cd21268a8aaabd5bbfc0377ccac43d471ef9bb17c4d1e993669496422ccbe26",
+      "bytes": 3758
+    }
+  }
+}

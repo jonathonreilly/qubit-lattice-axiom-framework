@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_cone_readout/check_v1.py"
+  ],
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.5283756665885448,
+  "returncode": 0,
+  "checker_sha256": "7ef09fd0efc3689d76a649c61dafb2b1e46a7715d5d4dfb7d772a9b8e63f3877"
+}

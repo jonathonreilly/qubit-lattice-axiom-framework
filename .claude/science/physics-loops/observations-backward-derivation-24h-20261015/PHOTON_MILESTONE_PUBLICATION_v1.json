@@ -1,0 +1,32 @@
+{
+  "pr": {
+    "baseRefName": "main",
+    "baseRefOid": "b31c55267a6d617023c9a4d1951385178663e70f",
+    "changedFiles": 73,
+    "headRefName": "codex/scalar-photon-calibration-20261016",
+    "headRefOid": "e42d363b618e16551e838d268748ac8eeff3dd19",
+    "isDraft": false,
+    "mergeStateStatus": "UNKNOWN",
+    "mergeable": "UNKNOWN",
+    "number": 9641,
+    "state": "OPEN",
+    "title": "[physics-loop] photon-calibration inverse bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9641",
+    "verified_at": "2026-10-16T14:20:29.367747+00:00",
+    "attached_to_current_chat": true,
+    "shared_landing_validation": "pending",
+    "scientific_status": "bounded_theorem / conditional-support; no empirical validation"
+  },
+  "committed_checks": {
+    "at": "2026-10-16T14:18:06.949002+00:00",
+    "head": "e42d363b618e16551e838d268748ac8eeff3dd19",
+    "base": "b31c55267a6d617023c9a4d1951385178663e70f",
+    "committed_diff_check": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "worktree_clean": true,
+    "shared_landing_validation": "pending",
+    "formal_audit": "not_run"
+  }
+}

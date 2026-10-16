@@ -1,0 +1,29 @@
+# Bounded post-exposure comparison: scalar cone and tidal readout
+
+No mathematical error or material overclaim was found in the inspected principal-symbol, conformal-cone, tidal-readout and finite-frequency statements. This conclusion is limited to sections1–3 and their directly corresponding controls. It does not independently endorse the finite-history product theorem, its nonlinear/full-Einstein witnesses, field-label reconstruction, or the complete kinetic-action block.
+
+The pre-author derivation and25-control record remain frozen unchanged. After authorization, the three complete named author files were read and copied into author_comparison_v1; exact source hashes and byte counts are in COMPARISON_SOURCES_v1.json. Reading the later material for context is not checking its proofs. No new literature, data or other checker proof was accessed.
+
+## Correspondence and qualifications
+
+The author's sign G^{mu nu}=P_X gE^{mu nu}-P_XX grad^mu(phi)grad^nu(phi), rest-frame coefficient D=P_X+2XP_XX, and c_s²=P_X/D agree with both independent derivations. The positive-energy/hyperbolic branch is explicitly restricted to P_X,D>0. X>0 is not mistaken for that stability condition. Tensor/light propagation is kept separate from the scalar principal mode.
+
+Physical frequency and wavenumber both scale inversely with A from Einstein to matter orthonormal units, so the dimensionless speed is invariant. The author's code multiplies both symbols by A in its ratio test rather than naming the direction of conversion; this tests the same invariant ratio and is not a disagreement with the physical inverse scaling. The field-relabeling powers f'^2 and f'^4 are correct and preserve the dimensionless ratio at matching states; a measured field coordinate is not derived.
+
+The linear conformal potentials and common-potential cancellation agree exactly with the independently frozen result. The author's J=[(1+k²/omega²)RT-RL]/(2k²) is algebraically identical to [RT/omega²-(RL-RT)/k²]/2. Its explicit U=3,J=5,omega²=13,k²=4 example gives RT=26,RL=-6 and J=5; the naive pure-conformal ratio fails. Relative calibration is essential. Common multiplication leaves phase intact but cannot supply absolute J, and distinct transfers can spoil cancellation, as the text states.
+
+The declared physical line element is the scalar Newtonian-gauge form. Interpret delta phi and delta log A in that gauge, or with their corresponding gauge-invariant completion; a rolling-background raw delta phi in arbitrary slicing is not an observable. The no-anisotropic-stress/nonzero spatial sector supplies equality of the two Einstein potentials. Additional matter anisotropic stress would invalidate the one-common-potential cancellation premise. The author explicitly states the needed sector. The readout requires nonzero real k and omega, known direction, local clock/ruler registration and two calibrated phase-resolved tidal components. It is not automatically provided by ordinary strain measurements or lensing.
+
+The author correctly calls the curvature formula exact only in the frozen linear plane model and requires a curvature/drift remainder in evolving or inhomogeneous settings. Smooth nonzero alpha transmits the leading scalar eikonal phase; alpha=0 is correctly treated as missing readout. Its separated-mode qualification excludes substituting material/tensor responses without another principal analysis. There is no claim that this is a completed measurement protocol or detection.
+
+The two-frequency subtraction follows by eliminating one common mu² in the explicitly supplied constant-environment dispersion model. The difference must be nonzero and its uncertainty controlled. The deterministic residual bound (E1+E2)/(k2²-k1²) is correct for registered exact squared wavenumbers, with the separately acknowledged need to propagate registration errors. A single phase velocity or finite-frequency group velocity does not identify c_s. The author's rational example saturates the bound3/100. Source/mode identification, mass/curvature dispersion and a justified remainder remain physical premises; the algebra does not retire them.
+
+## Prior art and contribution boundary
+
+The note expressly attributes the general scalar-speed formula and nonlinear reconstruction freedom to established work, and describes the campaign target as measurement and state-coverage limits. This comparison confirms its derivation in the supplied conventions; it does not verify external citation content or novelty. The explicit common-potential cancellation, countercontrols and conditional measurement discussion are the root-authored application being compared, not evidence that the action class or observational contract has been derived. No endorsement of the unreviewed finite-history theorem is implied by its prior-art attribution.
+
+## Scoped computation and retained evidence
+
+Only the exact author runner prefix through the finite-frequency controls was executed, stopping before the open-domain/finite-history material. scoped_author_prefix_v1.py preserves that prefix with an added output/exit wrapper. Its18 checks pass and match the corresponding stored JSON booleans. This is an exposed reproduction, not18 additional independent discoveries; the earlier25 pre-exposure checks provide the independent comparison. The entire46-control runner was not rerun. The bounded prefix completed normally in under one second with bytecode disabled and a120-second subprocess limit; stderr is empty and no failure occurred.
+
+comparison_stdout_v1.json, comparison_stderr_v1.txt and comparison_receipt_v1.json retain full evidence. COMPARISON_FINAL_BINDINGS_v1.json binds these records and verifies the seven original independent files remain unchanged. No author files or prior evidence were altered, and no audit/publication status is assigned.

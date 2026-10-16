@@ -1,0 +1,134 @@
+{
+  "scope": "Independent frozen-background principal and tidal algebra; no author sources or empirical records",
+  "checks": [
+    {
+      "name": "quadratic_action_time_Hessian",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_action_spatial_Hessian",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "equation_action_principal_agreement",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "noncanonical_positive_example",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "physical_conformal_speed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "timelike_does_not_ensure_no_ghost",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "physical_lapse",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "physical_spatial_potential",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "lensing_only_blind",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "transverse_curvature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "longitudinal_curvature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_tensor_structure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "invertible_tidal_map",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "slip_exact_with_nonzero_U",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "U_exact_recovery",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zero_frequency_rank_loss",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zero_k_rank_loss",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonluminal_nonzero_U_witness",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tensor_speed_substitution_detected",
+      "pass": true,
+      "detail": "29/54"
+    },
+    {
+      "name": "luminal_projection_conditional",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zero_coupling_blind",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "massless_luminal_phase",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "subluminal_massive_same_phase",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "noncanonical_luminal_family",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "off_trajectory_two_jet_blind",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "passed": 25,
+  "failed": 0,
+  "tidal_matrix": "Matrix([[-omega**2, omega**2], [-k**2 - omega**2, -k**2 + omega**2]])",
+  "principal_symbol": "k**2*(b*v**2 + 3*c*v**4/4 + 1) + omega**2*(-b*v**2 - 3*c*v**4/4 - v**2*(2*b + 3*c*v**2) - 1)"
+}

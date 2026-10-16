@@ -1,0 +1,22 @@
+{
+  "original_independent_files_unchanged": {
+    "INDEPENDENT_DERIVATION_v1.md": true,
+    "DERIVATION_FREEZE_v1.json": true,
+    "check_v1.py": true,
+    "stdout_v1.json": true,
+    "stderr_v1.txt": true,
+    "receipt_v1.json": true,
+    "REPORT_v1.md": true
+  },
+  "files": {
+    "COMPARISON_REPORT_v1.md": "32f1cceb6c0d410992bbc9958790f05b4827f71070ff35f33966a5941b87f2c1",
+    "COMPARISON_SOURCES_v1.json": "085e1419a1aa675b2ebddd191f7c260532b524bf286a45d49b7a4995c24756e5",
+    "scoped_author_prefix_v1.py": "5a3275a05b592b120b575f5d6a7aa659ad70a8ae82a0cadbf92d6ee28f1d96fc",
+    "comparison_stdout_v1.json": "a3f8411d20032b6a650d40bcedadbacc66fcc51ce2329dcddffdacd2f0a0f596",
+    "comparison_stderr_v1.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparison_receipt_v1.json": "306d16f92fea3657eaadb2033db6dfca8a4ff39b4ee3ded158389ae56c751c3a",
+    "author_comparison_v1/KINETIC_ACTION_CONTROLS_v1.json": "22701a51936e3382542075f9dba4277bf83943341fb7022c6ecc662279c9321b",
+    "author_comparison_v1/KINETIC_ACTION_DERIVATION_v1.md": "400d89412426af857e32db6b414fcc670f597072014c61f77fd7026ab417341c",
+    "author_comparison_v1/check_kinetic_action_v1.py": "3fe6294fe548e3f264e57e887f24423c1acfc8fdfad99fb9baf7f8767718d185"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-16T14:39:46.381693+00:00",
+  "phase": "before first execution",
+  "files": {
+    "CONFORMAL_EXCHANGE_DERIVATION_v1.md": {
+      "sha256": "2801638036e7a5bae3b72eb42c5fee7b7cd88a11d52fb19ae913bbe08c49c239",
+      "bytes": 4901
+    },
+    "check_conformal_exchange_v1.py": {
+      "sha256": "68c880dbdb0d17dd735ca8b1f4c8553106f88edac3655ce30923d637ce240911",
+      "bytes": 3895
+    }
+  }
+}

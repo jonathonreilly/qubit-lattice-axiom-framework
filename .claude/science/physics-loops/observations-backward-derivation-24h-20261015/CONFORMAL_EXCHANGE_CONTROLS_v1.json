@@ -1,0 +1,217 @@
+{
+  "scope": "Exact constructed class and background; no empirical validation",
+  "passed": 43,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "exchange_trace_component_0",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "exchange_trace_component_1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "exchange_trace_component_2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "exchange_trace_component_3",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "opposite_exchange_sign_not_identity",
+      "pass": true
+    },
+    {
+      "name": "metric_G00",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric_G11",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric_G22",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric_G33",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric_R",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar_density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar_pressure",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter_exchange",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar_Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar_energy_exchange",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical_scale_factor",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical_lapse",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical_density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_00",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_01",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_02",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_03",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_10",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_11",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_12",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_13",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_20",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_21",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_22",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_23",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_30",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_31",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_32",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_Einstein_33",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "healthy_local_margin_nu1",
+      "pass": true
+    },
+    {
+      "name": "luminal_nu1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "healthy_local_margin_nu2",
+      "pass": true
+    },
+    {
+      "name": "luminal_nu2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "different_physical_time_histories",
+      "pass": true
+    },
+    {
+      "name": "different_local_kinetic_coefficients",
+      "pass": true
+    },
+    {
+      "name": "wrong_potential_fails_Friedmann",
+      "pass": true
+    }
+  ],
+  "elapsed_seconds": 0.16879408387467265
+}

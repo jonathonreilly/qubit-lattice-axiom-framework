@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-16T14:38:39.812325+00:00",
+  "sources": {
+    "KINETIC_ACTION_DERIVATION_v1.md": {
+      "sha256": "400d89412426af857e32db6b414fcc670f597072014c61f77fd7026ab417341c",
+      "bytes": 9943
+    },
+    "check_kinetic_action_v1.py": {
+      "sha256": "3fe6294fe548e3f264e57e887f24423c1acfc8fdfad99fb9baf7f8767718d185",
+      "bytes": 6778
+    },
+    "KINETIC_ACTION_CONTROLS_v1.json": {
+      "sha256": "22701a51936e3382542075f9dba4277bf83943341fb7022c6ecc662279c9321b",
+      "bytes": 2975
+    }
+  },
+  "scope": "Post-exposure principal/conformal/tidal/finite-frequency comparison only"
+}

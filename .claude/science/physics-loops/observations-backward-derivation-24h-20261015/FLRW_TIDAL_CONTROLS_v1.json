@@ -1,0 +1,168 @@
+{
+  "scope": "First-order supplied FLRW metric observation identities; no empirical or action-solution claim",
+  "passed": 32,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "direct_tetrad_curvature_11",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_11",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_12",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_12",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_13",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_13",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_21",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_21",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_22",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_22",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_23",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_23",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_31",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_31",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_32",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_32",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "direct_tetrad_curvature_33",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background_tetrad_curvature_33",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "lapse_readout",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar_derivative_readout",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant_kernel",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_kernel",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "weak_exact_polynomial_fixture",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "test_value_endpoint0",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "test_derivative_endpoint0",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "test_value_endpoint1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "test_derivative_endpoint1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "exact_frozen_remainder",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "frozen_map_expansion_error_nonzero",
+      "pass": true
+    },
+    {
+      "name": "flat_constant_envelope_remainder",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "kernel_zero_transverse",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "kernel_spatial_curvature_can_be_nonzero",
+      "pass": true
+    }
+  ],
+  "frozen_error_witness": "5/9 - 3*I/2",
+  "weak_moment": "-543/14 + 56*log(2)",
+  "elapsed_seconds": 0.4409305830486119
+}

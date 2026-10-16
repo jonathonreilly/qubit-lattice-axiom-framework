@@ -1,0 +1,42 @@
+{
+  "scope": "Scoped execution of author prefix only, excluding all finite-history product controls",
+  "checks": {
+    "quadratic_time_coefficient": true,
+    "quadratic_space_coefficient": true,
+    "mixed_principal_coefficient": true,
+    "rest_frame_principal_symbol": true,
+    "field_relabeling_sound_ratio": true,
+    "conformal_clock_ruler_ratio": true,
+    "principal_wrong_sign_mutation_detected": true,
+    "tensor_light_cone_does_not_depend_on_kinetic_coefficients": true,
+    "transverse_tidal_component": true,
+    "longitudinal_tidal_component": true,
+    "tidal_slip_cancels_common_potential": true,
+    "tidal_slip_no_common_potential_dependence": true,
+    "naive_pure_conformal_ratio_fails_with_common_potential": true,
+    "naive_ratio_recovers_declared_zero_potential_limit": true,
+    "two_squared_wavenumbers_cancel_common_mass_squared": true,
+    "one_frequency_phase_ratio_does_not_cancel_mass": true,
+    "massive_group_speed_not_principal_speed": true,
+    "finite_dispersion_error_bound_saturated": true
+  },
+  "details": {
+    "naive_ratio_discrepancy": "-2*U*k**2/(J*omega**2 - U*omega**2)",
+    "finite_common_potential_control": {
+      "U": 3,
+      "J": 5,
+      "omega_squared": 13,
+      "k_squared": 4,
+      "RT": "26",
+      "RL": "-6",
+      "reconstructed_J": "5"
+    },
+    "finite_dispersion_control": {
+      "true_cs_squared": "3/5",
+      "fitted_slope": "57/100",
+      "certified_error": "3/100"
+    }
+  },
+  "passed": 18,
+  "failed": 0
+}

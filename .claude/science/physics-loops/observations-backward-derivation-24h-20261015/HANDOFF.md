@@ -539,3 +539,85 @@ The109 frozen files from the two completed focused checks are byte-verified in M
 Personally execute NEXT_JOINT_PHOTON_BACKGROUND_PLAN_v1.md: derive the joint compatibility problem for registered h, spherical Weyl P and corrected radial redshift Rz without supplying J, b, kappa or a preferred background. Freeze exact synthetic inputs and conventions before controls; retain all source equations, local metric kernels, clock/distance calibration and rank/error conditions. Seek a conditional identification theorem or an exact distinct-background same-record witness, preserving failed routes. Keep six earlier PRs frozen and seven Fuchs arrays unopened.
 
 No active focused agent, detached author or owned research job. All older campaigns remain stopped; network exploration remains frozen. Deadline22:36:59Z and packaging22:21:59Z unchanged.
+
+
+## Direct continuous research — 2026-10-16T12:34:26.687204+00:00
+
+The user explicitly requested personal problem-solving and orchestration of focused subs. The heartbeat was deleted through the app tool; this does not cancel the research or extend the original deadline. Root remains lead author in this active chat.
+
+The joint photon/background candidate now has46/0 primary controls and81/0 original-equation controls. Rank-eight forward witnesses do exist on the stated angular/annular sector. A genuine missing coefficient produced41/5 on first execution and remains preserved; v2 corrects it. No final independent confirmation yet. No empirical validation or actual measurement extraction is claimed.
+
+Personally challenge calibration and derivative assumptions in the joint photon/background reconstruction while the focused checker verifies the independent inverse. Compare full frozen sources after its independent freeze.
+
+
+## Direct research checkpoint 2026-10-16T12:56:50.796027+00:00
+
+Personally deriving a primitive reception-time gain inverse with its actual redshift path correction; twelve-column rank attainability untested. Root homogeneous-gain units49/0 and75/0 pass separately; these are not detector-reception calibration. The focused reception check found the required gained redshift path term, now explicitly included in the next candidate. Independent nine-column reconstruction is attributed to common_action_check and personally rederived; final comparison is pending.
+
+Check the primitive reception-gain expansion and actual original-equation rank with regular observer-origin polynomial modes. Preserve any rank deficit; integrate focused findings; freeze coherent source before PR.
+
+No new empirical arrays or earlier campaign restart. Scheduled handoff remains deleted. Original deadline and packaging cutoff unchanged.
+
+
+## Direct research checkpoint 2026-10-16T13:17:26.103938+00:00
+
+Two independent reception gains: root fourteen-column inverse and original-action rank fixture pass; blind focused independent derivation pending. Preparing coherent joint photon/background milestone.
+
+Single-shell model fits can hide a missing gain path term; the preserved mutation requires cross-shell/background residuals for rejection. Numerical conditioning remains poor. These are constructed controls, not measured calibration or action selection.
+
+Finish independent split-gain proof comparison, integrate complete physical/observation residuals and robustness limits, canonicalize the coherent milestone and validate before PR.
+
+Scheduled handoff remains deleted, older campaigns stopped, seven Fuchs arrays unopened. Deadline and packaging cutoff unchanged.
+
+
+## Direct research checkpoint 2026-10-16T13:41:54.502939+00:00
+
+Personally deriving primitive-record weak residuals while finalizing the independently checked reception-gain milestone.
+
+Canonical controls48/33/12 pass separately; independent integration16/0 and a byte-identical replay pass. The separate-gain checker independently reconstructed observed coefficient derivatives and is comparing its different twelve-column temporal route with the root fourteen-column characteristic route. No rank-dominance or empirical validation claim.
+
+Seven source mutation families are checked; a first attempted background positive control failed to restore the integrated A and was retained, then corrected consistently. One density mutation has recorded failed physical checks before its later eigenvector exception.
+
+Main advanced to4877e93c with workflow simplification and archived automation protocols; science source is unchanged. Current instructions read from main and execution56c5c0ab. PR9640 is a separate installed-bus preparation unit, with no new scalar input overlap. New milestone branch advanced to current main without source edits.
+
+Complete the bounded separate-gain comparison and source-bound milestone; finish exact weak-adjoint controls and compare the independent derivation. No scheduled author. Original deadline and packaging cutoff unchanged. Older campaigns stay stopped; seven Fuchs arrays unopened.
+
+
+## Direct next calculation: useful finite primitive test
+
+Target: determine whether the new weak necessary test can reject a concrete wrong calibration history using original-action photon fields and a certified primitive-error allowance. This is a constructive synthetic discrimination calculation, not empirical validation or parameter-family uniqueness.
+
+Freeze the existing action background a=256/eta^8, C=-eta^7/256, d=-256/eta^7, e=4. Use the already derived n=0,l=2 regular harmonic: P=r^2 H2, J=5P/2, Z=128 eta^-7 r^2 H2, Y=(eta r-7r^2/2)H2, psi=r^2 H2/3 and I0=r^3 H2/3. True common gain g=f=(u+11)/10; compare the distinct constant-gain candidate g=f=1 on the same supplied background. Both gain histories are admissible observation maps; only one need satisfy these records. Common normalization is left free.
+
+On -3/2<u<-1/2 and 1/2<r<3/2, eta=u-r stays strictly negative. Test lambda=[(u+3/2)(-1/2-u)(r-1/2)(3/2-r)]^6 H2, extended by zero with sufficient traces. Compute the strong candidate residual and its primitive-only adjoint moment separately. Require true-candidate zero, wrong-candidate nonzero, and original physical equations already certified by the source fixture. Obtain a rigorous upper bound on primitive-error sensitivity using exact polynomial/rational enclosures; report the maximum admissible error scale, even if uninformative. Do not tune the window or test after the outcome. If exact rational integration becomes too costly, preserve it and use a separately declared certified enclosure route. Rank or uniqueness is not inferred from one harmonic/test.
+
+
+## Direct research checkpoint 2026-10-16T14:06:52.921055+00:00
+
+Publishing joint background/reception calibration and primitive weak test; personally testing finite physical-record rejection budget.
+
+Four canonical units48/33/12/19 pass and portable closure is byte-identical. Independent separate-gain and primitive-weak derivations/comparisons are complete. Focused current-source confirmation covers the final editorial note. Counts overlap; no empirical validation.
+
+The fixed physical weak probe gives13/0 after preserved timeout and serialization failures. Its nominal and uniform-noisy-record thresholds differ by two; the conservative uniform radius is1.134586239e-6 at unit normalization and scales with field amplitude. Independent residual/prefactor check is active. It is outside the frozen milestone.
+
+Storage recovered by app-archiving clean committed PR9639 worktree after preserving ignored graph bytes; no source lost. Scheduling remains deleted, older campaigns stopped, seven Fuchs arrays unopened and original deadline unchanged.
+
+Finish coherent photon milestone PR; compare independently derived physical weak residual and error prefactor, then challenge remaining geometry/action premises.
+
+
+## Direct research checkpoint 2026-10-16T14:33:41.421752+00:00
+
+PR9641 at e42d363b618e16551e838d268748ac8eeff3dd19 is published and attached, with73intended files on reviewed mainb31c5526. Canonical tree is clean; staged/committed checks pass; shared landing remains pending. No merge or formal audit. The fixed physical weak probe is independently confirmed, with24/0 and10/0 pre-exposure controls plus12/0 correspondence; root read all arguments/code and verified28bindings.
+
+Root now derives the general-P scalar principal response and a tidal combination cancelling the unknown common Einstein potential. Initial46exact controls pass. Independent25-control readout proof is frozen; comparison is next. A tensor propagation constraint and a massive finite-frequency group speed are not counted as a scalar principal-speed measurement. Current GWTC5 methods are exposed literature context, with no numerical release arrays read.
+
+Personally check the field-label/exchange route for Einstein-frame circularity, and test finite-history actions that retain linear behavior while changing nonlinear response. All new actions remain explicit candidates. Scheduling stays deleted, earlier campaigns stopped, seven Fuchs arrays unopened and original deadline unchanged.
+
+
+## Direct checkpoint 2026-10-16T14:46:10.941640+00:00
+
+Root personally derived and executed43 exact conformal-exchange/full-action controls and32 exact FLRW tidal controls, all passing. These are constructed conditional mathematics. The first identifies a circular frame-selection shortcut; the second replaces a frozen-background approximation by an exact first-order curvature identity and a primitive weak map, retaining two genuine time-kernel amplitudes. Three focused checks are active; no detached author or scheduled handoff exists. The general-kinetic readout has25 independent pre-author controls and18 scoped exposed replay controls with no material discrepancy; root read all arguments and verified nine comparison bindings. The finite-history action alternatives remain under separate review.
+
+Completed photon source/check/failure files are preserved byte-for-byte in PHOTON_CAMPAIGN_RECOVERY_v1.tar.gz (389members), with a per-file manifest. Extract that archive in this pack to restore original names. Canonical PR9641 remains unchanged and unmerged. Current main403f4b92 adds five finite-record/installed-clock notes without scalar or workflow source overlap; this is scope inspection, not review of their proofs.
+
+Complete independent FLRW tidal and conformal-family comparisons; derive noncanonical action constraints from independently recorded geometry/stress and state coverage. Preserve source bytes and empirical limits. All seven Fuchs arrays remain unopened; literature is exposed development context. Original deadline22:36:59Z and packaging22:21:59Z are unchanged.

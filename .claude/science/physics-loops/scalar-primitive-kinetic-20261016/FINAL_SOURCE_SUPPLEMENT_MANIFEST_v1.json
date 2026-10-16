@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-16T16:52:39.721209+00:00",
+  "archive": "FINAL_SOURCE_SUPPLEMENT_v1.tar.gz",
+  "archive_sha256": "80d10dc4929fb5a05077f7fd8601fd99dee73bb3da2d3b03e0fd5a0355187ad0",
+  "all_members_byte_compared": true,
+  "members": [
+    {
+      "member": "TERMINAL_LF_BINDINGS_v1.json",
+      "sha256": "4141a9bd1386b93862fb46a7bdc92c2bc6e6a1a03b41cb663b275d131e90f688",
+      "bytes": 4741,
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/TERMINAL_LF_BINDINGS_v1.json"
+    },
+    {
+      "member": "TERMINAL_LF_MANIFEST_v1.json",
+      "sha256": "226578c72751a0ca8308c565c6b5f9962b8fa6ffe7e0bb82bbea3928aebead1e",
+      "bytes": 571,
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/TERMINAL_LF_MANIFEST_v1.json"
+    },
+    {
+      "member": "TERMINAL_LF_SUPPLEMENT_v1.md",
+      "sha256": "831290bf491109a4b7f062924135cbf9d469262b58f42010c10c7750e4470a3f",
+      "bytes": 1660,
+      "origin": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/TERMINAL_LF_SUPPLEMENT_v1.md"
+    }
+  ],
+  "source_correspondence_failures": 0,
+  "science_output_correspondence": "SCIENCE_OUTPUT_CORRESPONDENCE_v2.json",
+  "fresh_final_cache": "CACHE_RECEIPT_v2.json",
+  "final_source_freeze": "CANONICAL_SOURCE_FREEZE_v2.json",
+  "portable_replay": "PORTABLE_REPLAY_v2.json"
+}

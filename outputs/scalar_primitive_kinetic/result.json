@@ -1,0 +1,4467 @@
+{
+  "counting_scope": "Overlapping algebraic controls, not independent experiments.",
+  "failed": 0,
+  "input_roles": {
+    "computed_inputs": "Explicit original-action fields, integrated photon paths, and chosen compact tests; all development controls",
+    "external_scientific_data": "None",
+    "integrity_reads": [
+      "scripts/scalar_primitive_kinetic.py",
+      "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md",
+      "scripts/scalar_primitive_kinetic_action.py",
+      "scripts/scalar_primitive_kinetic_core.py",
+      "scripts/scalar_primitive_kinetic_bound.py"
+    ]
+  },
+  "scope": "Conditional primitive photon kinetic test and exact harmonic-error enclosure; no empirical validation",
+  "source_sha256": {
+    "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md": "4a24a549df6b53f23768e67ca174638ed360ec18137b874f85b9307cae03dfc3",
+    "scripts/scalar_primitive_kinetic.py": "978ab14363b55f759e867555dad5b15614056a7053caf4b33fb49abbec50475f",
+    "scripts/scalar_primitive_kinetic_action.py": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+    "scripts/scalar_primitive_kinetic_bound.py": "f4e3fbbdddb22d23a8611f60bdb7b7cbad064892c918318abdf07b6e75756c82",
+    "scripts/scalar_primitive_kinetic_core.py": "b7fff4c8f1df13adfd4cab76e452722edda848fc814d68af5f6b332df047dee5"
+  },
+  "units": {
+    "exact_bounds": {
+      "checks": [
+        {
+          "name": "constant_reconstruct_0_0",
+          "pass": true
+        },
+        {
+          "name": "constant_reconstruct_1_1",
+          "pass": true
+        },
+        {
+          "name": "constant_reconstruct_2/5_3/7",
+          "pass": true
+        },
+        {
+          "name": "constant_known_L1_exact_after_split",
+          "pass": true
+        },
+        {
+          "name": "constant_nested",
+          "pass": true
+        },
+        {
+          "name": "positive_quadratic_reconstruct_0_0",
+          "pass": true
+        },
+        {
+          "name": "positive_quadratic_reconstruct_1_1",
+          "pass": true
+        },
+        {
+          "name": "positive_quadratic_reconstruct_2/5_3/7",
+          "pass": true
+        },
+        {
+          "name": "positive_quadratic_known_L1_exact_after_split",
+          "pass": true
+        },
+        {
+          "name": "positive_quadratic_nested",
+          "pass": true
+        },
+        {
+          "name": "sign_changing_product_reconstruct_0_0",
+          "pass": true
+        },
+        {
+          "name": "sign_changing_product_reconstruct_1_1",
+          "pass": true
+        },
+        {
+          "name": "sign_changing_product_reconstruct_2/5_3/7",
+          "pass": true
+        },
+        {
+          "name": "sign_changing_product_known_L1_exact_after_split",
+          "pass": true
+        },
+        {
+          "name": "sign_changing_product_nested",
+          "pass": true
+        },
+        {
+          "name": "psi_rational_polynomial",
+          "pass": true
+        },
+        {
+          "name": "psi_exact_reconstruction_1/2_1/2",
+          "pass": true
+        },
+        {
+          "name": "psi_exact_reconstruction_1/4_3/4",
+          "pass": true
+        },
+        {
+          "name": "psi_exact_reconstruction_3/4_1/4",
+          "pass": true
+        },
+        {
+          "name": "psi_signed_integral",
+          "pass": true
+        },
+        {
+          "name": "psi_enclosure_order_0",
+          "pass": true
+        },
+        {
+          "name": "psi_enclosure_order_1",
+          "pass": true
+        },
+        {
+          "name": "psi_nested_1",
+          "pass": true
+        },
+        {
+          "name": "psi_enclosure_order_2",
+          "pass": true
+        },
+        {
+          "name": "psi_nested_2",
+          "pass": true
+        },
+        {
+          "name": "psi_enclosure_order_3",
+          "pass": true
+        },
+        {
+          "name": "psi_nested_3",
+          "pass": true
+        },
+        {
+          "name": "z_rational_polynomial",
+          "pass": true
+        },
+        {
+          "name": "z_exact_reconstruction_1/2_1/2",
+          "pass": true
+        },
+        {
+          "name": "z_exact_reconstruction_1/4_3/4",
+          "pass": true
+        },
+        {
+          "name": "z_exact_reconstruction_3/4_1/4",
+          "pass": true
+        },
+        {
+          "name": "z_signed_integral",
+          "pass": true
+        },
+        {
+          "name": "z_enclosure_order_0",
+          "pass": true
+        },
+        {
+          "name": "z_enclosure_order_1",
+          "pass": true
+        },
+        {
+          "name": "z_nested_1",
+          "pass": true
+        },
+        {
+          "name": "z_enclosure_order_2",
+          "pass": true
+        },
+        {
+          "name": "z_nested_2",
+          "pass": true
+        },
+        {
+          "name": "z_enclosure_order_3",
+          "pass": true
+        },
+        {
+          "name": "z_nested_3",
+          "pass": true
+        },
+        {
+          "name": "strict_positive_combined_bound",
+          "pass": true
+        },
+        {
+          "name": "strict_positive_certified_radius",
+          "pass": true
+        },
+        {
+          "name": "strict_rejection_at_radius_quarter",
+          "pass": true
+        }
+      ],
+      "combined_upper": "162677295731424740783879666051795129106258197/204455351051289521995092083836429520181657600",
+      "computed_weight_polynomials": {
+        "psi": {
+          "coefficients": [
+            {
+              "coefficient": "-11746560",
+              "powers": [
+                18,
+                15
+              ]
+            },
+            {
+              "coefficient": "27241200",
+              "powers": [
+                18,
+                14
+              ]
+            },
+            {
+              "coefficient": "12766656",
+              "powers": [
+                18,
+                13
+              ]
+            },
+            {
+              "coefficient": "-72233616",
+              "powers": [
+                18,
+                12
+              ]
+            },
+            {
+              "coefficient": "25734240",
+              "powers": [
+                18,
+                11
+              ]
+            },
+            {
+              "coefficient": "61545792",
+              "powers": [
+                18,
+                10
+              ]
+            },
+            {
+              "coefficient": "-45440640",
+              "powers": [
+                18,
+                9
+              ]
+            },
+            {
+              "coefficient": "-14466816",
+              "powers": [
+                18,
+                8
+              ]
+            },
+            {
+              "coefficient": "21267456",
+              "powers": [
+                18,
+                7
+              ]
+            },
+            {
+              "coefficient": "-2975280",
+              "powers": [
+                18,
+                6
+              ]
+            },
+            {
+              "coefficient": "-2503872",
+              "powers": [
+                18,
+                5
+              ]
+            },
+            {
+              "coefficient": "888720",
+              "powers": [
+                18,
+                4
+              ]
+            },
+            {
+              "coefficient": "-77280",
+              "powers": [
+                18,
+                3
+              ]
+            },
+            {
+              "coefficient": "8077888",
+              "powers": [
+                17,
+                16
+              ]
+            },
+            {
+              "coefficient": "197360608",
+              "powers": [
+                17,
+                15
+              ]
+            },
+            {
+              "coefficient": "-514748832",
+              "powers": [
+                17,
+                14
+              ]
+            },
+            {
+              "coefficient": "-173281696",
+              "powers": [
+                17,
+                13
+              ]
+            },
+            {
+              "coefficient": "1312961216",
+              "powers": [
+                17,
+                12
+              ]
+            },
+            {
+              "coefficient": "-541718016",
+              "powers": [
+                17,
+                11
+              ]
+            },
+            {
+              "coefficient": "-1085679616",
+              "powers": [
+                17,
+                10
+              ]
+            },
+            {
+              "coefficient": "860260352",
+              "powers": [
+                17,
+                9
+              ]
+            },
+            {
+              "coefficient": "235362816",
+              "powers": [
+                17,
+                8
+              ]
+            },
+            {
+              "coefficient": "-388054496",
+              "powers": [
+                17,
+                7
+              ]
+            },
+            {
+              "coefficient": "60181408",
+              "powers": [
+                17,
+                6
+              ]
+            },
+            {
+              "coefficient": "44008608",
+              "powers": [
+                17,
+                5
+              ]
+            },
+            {
+              "coefficient": "-16154880",
+              "powers": [
+                17,
+                4
+              ]
+            },
+            {
+              "coefficient": "1424640",
+              "powers": [
+                17,
+                3
+              ]
+            },
+            {
+              "coefficient": "-165978820",
+              "powers": [
+                16,
+                17
+              ]
+            },
+            {
+              "coefficient": "372324412",
+              "powers": [
+                16,
+                16
+              ]
+            },
+            {
+              "coefficient": "-1440312448",
+              "powers": [
+                16,
+                15
+              ]
+            },
+            {
+              "coefficient": "2902210816",
+              "powers": [
+                16,
+                14
+              ]
+            },
+            {
+              "coefficient": "1872473960",
+              "powers": [
+                16,
+                13
+              ]
+            },
+            {
+              "coefficient": "-9271492664",
+              "powers": [
+                16,
+                12
+              ]
+            },
+            {
+              "coefficient": "3473316112",
+              "powers": [
+                16,
+                11
+              ]
+            },
+            {
+              "coefficient": "8134913360",
+              "powers": [
+                16,
+                10
+              ]
+            },
+            {
+              "coefficient": "-6335944676",
+              "powers": [
+                16,
+                9
+              ]
+            },
+            {
+              "coefficient": "-1794566500",
+              "powers": [
+                16,
+                8
+              ]
+            },
+            {
+              "coefficient": "2942291344",
+              "powers": [
+                16,
+                7
+              ]
+            },
+            {
+              "coefficient": "-468724144",
+              "powers": [
+                16,
+                6
+              ]
+            },
+            {
+              "coefficient": "-334569312",
+              "powers": [
+                16,
+                5
+              ]
+            },
+            {
+              "coefficient": "125334720",
+              "powers": [
+                16,
+                4
+              ]
+            },
+            {
+              "coefficient": "-11276160",
+              "powers": [
+                16,
+                3
+              ]
+            },
+            {
+              "coefficient": "70110496",
+              "powers": [
+                15,
+                18
+              ]
+            },
+            {
+              "coefficient": "3495148608",
+              "powers": [
+                15,
+                17
+              ]
+            },
+            {
+              "coefficient": "-10535185504",
+              "powers": [
+                15,
+                16
+              ]
+            },
+            {
+              "coefficient": "7439478272",
+              "powers": [
+                15,
+                15
+              ]
+            },
+            {
+              "coefficient": "9129428544",
+              "powers": [
+                15,
+                14
+              ]
+            },
+            {
+              "coefficient": "-26175938432",
+              "powers": [
+                15,
+                13
+              ]
+            },
+            {
+              "coefficient": "24847308416",
+              "powers": [
+                15,
+                12
+              ]
+            },
+            {
+              "coefficient": "7993830144",
+              "powers": [
+                15,
+                11
+              ]
+            },
+            {
+              "coefficient": "-35319898208",
+              "powers": [
+                15,
+                10
+              ]
+            },
+            {
+              "coefficient": "17153452096",
+              "powers": [
+                15,
+                9
+              ]
+            },
+            {
+              "coefficient": "11082388896",
+              "powers": [
+                15,
+                8
+              ]
+            },
+            {
+              "coefficient": "-11496949504",
+              "powers": [
+                15,
+                7
+              ]
+            },
+            {
+              "coefficient": "1273547520",
+              "powers": [
+                15,
+                6
+              ]
+            },
+            {
+              "coefficient": "1540336896",
+              "powers": [
+                15,
+                5
+              ]
+            },
+            {
+              "coefficient": "-547700160",
+              "powers": [
+                15,
+                4
+              ]
+            },
+            {
+              "coefficient": "50641920",
+              "powers": [
+                15,
+                3
+              ]
+            },
+            {
+              "coefficient": "278738880",
+              "powers": [
+                14,
+                19
+              ]
+            },
+            {
+              "coefficient": "-2775315840",
+              "powers": [
+                14,
+                18
+              ]
+            },
+            {
+              "coefficient": "-28592583504",
+              "powers": [
+                14,
+                17
+              ]
+            },
+            {
+              "coefficient": "106577877552",
+              "powers": [
+                14,
+                16
+              ]
+            },
+            {
+              "coefficient": "-47387134464",
+              "powers": [
+                14,
+                15
+              ]
+            },
+            {
+              "coefficient": "-202863453600",
+              "powers": [
+                14,
+                14
+              ]
+            },
+            {
+              "coefficient": "249928028448",
+              "powers": [
+                14,
+                13
+              ]
+            },
+            {
+              "coefficient": "45576758976",
+              "powers": [
+                14,
+                12
+              ]
+            },
+            {
+              "coefficient": "-236663774400",
+              "powers": [
+                14,
+                11
+              ]
+            },
+            {
+              "coefficient": "114474681792",
+              "powers": [
+                14,
+                10
+              ]
+            },
+            {
+              "coefficient": "46821249840",
+              "powers": [
+                14,
+                9
+              ]
+            },
+            {
+              "coefficient": "-67005899088",
+              "powers": [
+                14,
+                8
+              ]
+            },
+            {
+              "coefficient": "21076210368",
+              "powers": [
+                14,
+                7
+              ]
+            },
+            {
+              "coefficient": "4514508768",
+              "powers": [
+                14,
+                6
+              ]
+            },
+            {
+              "coefficient": "-5316812928",
+              "powers": [
+                14,
+                5
+              ]
+            },
+            {
+              "coefficient": "1500841440",
+              "powers": [
+                14,
+                4
+              ]
+            },
+            {
+              "coefficient": "-143922240",
+              "powers": [
+                14,
+                3
+              ]
+            },
+            {
+              "coefficient": "-149805600",
+              "powers": [
+                13,
+                20
+              ]
+            },
+            {
+              "coefficient": "-4372811520",
+              "powers": [
+                13,
+                19
+              ]
+            },
+            {
+              "coefficient": "35484850464",
+              "powers": [
+                13,
+                18
+              ]
+            },
+            {
+              "coefficient": "112682049984",
+              "powers": [
+                13,
+                17
+              ]
+            },
+            {
+              "coefficient": "-592389162624",
+              "powers": [
+                13,
+                16
+              ]
+            },
+            {
+              "coefficient": "329717919552",
+              "powers": [
+                13,
+                15
+              ]
+            },
+            {
+              "coefficient": "1178198512512",
+              "powers": [
+                13,
+                14
+              ]
+            },
+            {
+              "coefficient": "-1444892299200",
+              "powers": [
+                13,
+                13
+              ]
+            },
+            {
+              "coefficient": "-510330951648",
+              "powers": [
+                13,
+                12
+              ]
+            },
+            {
+              "coefficient": "1517572487424",
+              "powers": [
+                13,
+                11
+              ]
+            },
+            {
+              "coefficient": "-384567788640",
+              "powers": [
+                13,
+                10
+              ]
+            },
+            {
+              "coefficient": "-530452410432",
+              "powers": [
+                13,
+                9
+              ]
+            },
+            {
+              "coefficient": "324872431296",
+              "powers": [
+                13,
+                8
+              ]
+            },
+            {
+              "coefficient": "3790121664",
+              "powers": [
+                13,
+                7
+              ]
+            },
+            {
+              "coefficient": "-48403360320",
+              "powers": [
+                13,
+                6
+              ]
+            },
+            {
+              "coefficient": "15681734208",
+              "powers": [
+                13,
+                5
+              ]
+            },
+            {
+              "coefficient": "-2714725440",
+              "powers": [
+                13,
+                4
+              ]
+            },
+            {
+              "coefficient": "273208320",
+              "powers": [
+                13,
+                3
+              ]
+            },
+            {
+              "coefficient": "2544884160",
+              "powers": [
+                12,
+                20
+              ]
+            },
+            {
+              "coefficient": "26667063696",
+              "powers": [
+                12,
+                19
+              ]
+            },
+            {
+              "coefficient": "-223976035920",
+              "powers": [
+                12,
+                18
+              ]
+            },
+            {
+              "coefficient": "-180593546280",
+              "powers": [
+                12,
+                17
+              ]
+            },
+            {
+              "coefficient": "2073614902968",
+              "powers": [
+                12,
+                16
+              ]
+            },
+            {
+              "coefficient": "-1660706454624",
+              "powers": [
+                12,
+                15
+              ]
+            },
+            {
+              "coefficient": "-3730011729696",
+              "powers": [
+                12,
+                14
+              ]
+            },
+            {
+              "coefficient": "5364197336400",
+              "powers": [
+                12,
+                13
+              ]
+            },
+            {
+              "coefficient": "1424850812112",
+              "powers": [
+                12,
+                12
+              ]
+            },
+            {
+              "coefficient": "-5363954932560",
+              "powers": [
+                12,
+                11
+              ]
+            },
+            {
+              "coefficient": "1368845912784",
+              "powers": [
+                12,
+                10
+              ]
+            },
+            {
+              "coefficient": "1951204216920",
+              "powers": [
+                12,
+                9
+              ]
+            },
+            {
+              "coefficient": "-1100512426440",
+              "powers": [
+                12,
+                8
+              ]
+            },
+            {
+              "coefficient": "-97674474912",
+              "powers": [
+                12,
+                7
+              ]
+            },
+            {
+              "coefficient": "181336532832",
+              "powers": [
+                12,
+                6
+              ]
+            },
+            {
+              "coefficient": "-38783868480",
+              "powers": [
+                12,
+                5
+              ]
+            },
+            {
+              "coefficient": "3307147200",
+              "powers": [
+                12,
+                4
+              ]
+            },
+            {
+              "coefficient": "-355340160",
+              "powers": [
+                12,
+                3
+              ]
+            },
+            {
+              "coefficient": "-17905122144",
+              "powers": [
+                11,
+                20
+              ]
+            },
+            {
+              "coefficient": "-79160425344",
+              "powers": [
+                11,
+                19
+              ]
+            },
+            {
+              "coefficient": "819780616368",
+              "powers": [
+                11,
+                18
+              ]
+            },
+            {
+              "coefficient": "-225721454112",
+              "powers": [
+                11,
+                17
+              ]
+            },
+            {
+              "coefficient": "-4852798462512",
+              "powers": [
+                11,
+                16
+              ]
+            },
+            {
+              "coefficient": "5491727990784",
+              "powers": [
+                11,
+                15
+              ]
+            },
+            {
+              "coefficient": "7215096831264",
+              "powers": [
+                11,
+                14
+              ]
+            },
+            {
+              "coefficient": "-13453097558208",
+              "powers": [
+                11,
+                13
+              ]
+            },
+            {
+              "coefficient": "-1362690413952",
+              "powers": [
+                11,
+                12
+              ]
+            },
+            {
+              "coefficient": "12115975334400",
+              "powers": [
+                11,
+                11
+              ]
+            },
+            {
+              "coefficient": "-3960400181136",
+              "powers": [
+                11,
+                10
+              ]
+            },
+            {
+              "coefficient": "-4099971916320",
+              "powers": [
+                11,
+                9
+              ]
+            },
+            {
+              "coefficient": "2554618827600",
+              "powers": [
+                11,
+                8
+              ]
+            },
+            {
+              "coefficient": "176352564864",
+              "powers": [
+                11,
+                7
+              ]
+            },
+            {
+              "coefficient": "-393006884928",
+              "powers": [
+                11,
+                6
+              ]
+            },
+            {
+              "coefficient": "73577419776",
+              "powers": [
+                11,
+                5
+              ]
+            },
+            {
+              "coefficient": "-2695210560",
+              "powers": [
+                11,
+                4
+              ]
+            },
+            {
+              "coefficient": "318044160",
+              "powers": [
+                11,
+                3
+              ]
+            },
+            {
+              "coefficient": "69079570560",
+              "powers": [
+                10,
+                20
+              ]
+            },
+            {
+              "coefficient": "104376843648",
+              "powers": [
+                10,
+                19
+              ]
+            },
+            {
+              "coefficient": "-1882590316992",
+              "powers": [
+                10,
+                18
+              ]
+            },
+            {
+              "coefficient": "1726799523120",
+              "powers": [
+                10,
+                17
+              ]
+            },
+            {
+              "coefficient": "7756579894896",
+              "powers": [
+                10,
+                16
+              ]
+            },
+            {
+              "coefficient": "-12073487163840",
+              "powers": [
+                10,
+                15
+              ]
+            },
+            {
+              "coefficient": "-8520905959248",
+              "powers": [
+                10,
+                14
+              ]
+            },
+            {
+              "coefficient": "23456174761824",
+              "powers": [
+                10,
+                13
+              ]
+            },
+            {
+              "coefficient": "-1975286679408",
+              "powers": [
+                10,
+                12
+              ]
+            },
+            {
+              "coefficient": "-18463453504608",
+              "powers": [
+                10,
+                11
+              ]
+            },
+            {
+              "coefficient": "8118392960832",
+              "powers": [
+                10,
+                10
+              ]
+            },
+            {
+              "coefficient": "5405743813680",
+              "powers": [
+                10,
+                9
+              ]
+            },
+            {
+              "coefficient": "-4111596110352",
+              "powers": [
+                10,
+                8
+              ]
+            },
+            {
+              "coefficient": "-55232049792",
+              "powers": [
+                10,
+                7
+              ]
+            },
+            {
+              "coefficient": "544920182352",
+              "powers": [
+                10,
+                6
+              ]
+            },
+            {
+              "coefficient": "-100729605312",
+              "powers": [
+                10,
+                5
+              ]
+            },
+            {
+              "coefficient": "1406457360",
+              "powers": [
+                10,
+                4
+              ]
+            },
+            {
+              "coefficient": "-192618720",
+              "powers": [
+                10,
+                3
+              ]
+            },
+            {
+              "coefficient": "-162817245360",
+              "powers": [
+                9,
+                20
+              ]
+            },
+            {
+              "coefficient": "25215664320",
+              "powers": [
+                9,
+                19
+              ]
+            },
+            {
+              "coefficient": "2825064839520",
+              "powers": [
+                9,
+                18
+              ]
+            },
+            {
+              "coefficient": "-4008878024256",
+              "powers": [
+                9,
+                17
+              ]
+            },
+            {
+              "coefficient": "-8395213253712",
+              "powers": [
+                9,
+                16
+              ]
+            },
+            {
+              "coefficient": "18037944112224",
+              "powers": [
+                9,
+                15
+              ]
+            },
+            {
+              "coefficient": "5178458606880",
+              "powers": [
+                9,
+                14
+              ]
+            },
+            {
+              "coefficient": "-28756705856928",
+              "powers": [
+                9,
+                13
+              ]
+            },
+            {
+              "coefficient": "7897659369264",
+              "powers": [
+                9,
+                12
+              ]
+            },
+            {
+              "coefficient": "19324283885760",
+              "powers": [
+                9,
+                11
+              ]
+            },
+            {
+              "coefficient": "-11476390464672",
+              "powers": [
+                9,
+                10
+              ]
+            },
+            {
+              "coefficient": "-4459825945920",
+              "powers": [
+                9,
+                9
+              ]
+            },
+            {
+              "coefficient": "4630412435088",
+              "powers": [
+                9,
+                8
+              ]
+            },
+            {
+              "coefficient": "-258720865248",
+              "powers": [
+                9,
+                7
+              ]
+            },
+            {
+              "coefficient": "-496762572768",
+              "powers": [
+                9,
+                6
+              ]
+            },
+            {
+              "coefficient": "96611685408",
+              "powers": [
+                9,
+                5
+              ]
+            },
+            {
+              "coefficient": "-411714240",
+              "powers": [
+                9,
+                4
+              ]
+            },
+            {
+              "coefficient": "75344640",
+              "powers": [
+                9,
+                3
+              ]
+            },
+            {
+              "coefficient": "246875428800",
+              "powers": [
+                8,
+                20
+              ]
+            },
+            {
+              "coefficient": "-299573270640",
+              "powers": [
+                8,
+                19
+              ]
+            },
+            {
+              "coefficient": "-2815901784144",
+              "powers": [
+                8,
+                18
+              ]
+            },
+            {
+              "coefficient": "5439228029676",
+              "powers": [
+                8,
+                17
+              ]
+            },
+            {
+              "coefficient": "5864528603084",
+              "powers": [
+                8,
+                16
+              ]
+            },
+            {
+              "coefficient": "-18546986169952",
+              "powers": [
+                8,
+                15
+              ]
+            },
+            {
+              "coefficient": "555400300128",
+              "powers": [
+                8,
+                14
+              ]
+            },
+            {
+              "coefficient": "24724301763784",
+              "powers": [
+                8,
+                13
+              ]
+            },
+            {
+              "coefficient": "-11675463243416",
+              "powers": [
+                8,
+                12
+              ]
+            },
+            {
+              "coefficient": "-13768624131744",
+              "powers": [
+                8,
+                11
+              ]
+            },
+            {
+              "coefficient": "11171249040448",
+              "powers": [
+                8,
+                10
+              ]
+            },
+            {
+              "coefficient": "2038191297292",
+              "powers": [
+                8,
+                9
+              ]
+            },
+            {
+              "coefficient": "-3641177403540",
+              "powers": [
+                8,
+                8
+              ]
+            },
+            {
+              "coefficient": "476982678800",
+              "powers": [
+                8,
+                7
+              ]
+            },
+            {
+              "coefficient": "294455082320",
+              "powers": [
+                8,
+                6
+              ]
+            },
+            {
+              "coefficient": "-63503047776",
+              "powers": [
+                8,
+                5
+              ]
+            },
+            {
+              "coefficient": "33976320",
+              "powers": [
+                8,
+                4
+              ]
+            },
+            {
+              "coefficient": "-17149440",
+              "powers": [
+                8,
+                3
+              ]
+            },
+            {
+              "coefficient": "-246458116800",
+              "powers": [
+                7,
+                20
+              ]
+            },
+            {
+              "coefficient": "477909621504",
+              "powers": [
+                7,
+                19
+              ]
+            },
+            {
+              "coefficient": "1855275587280",
+              "powers": [
+                7,
+                18
+              ]
+            },
+            {
+              "coefficient": "-4795310127200",
+              "powers": [
+                7,
+                17
+              ]
+            },
+            {
+              "coefficient": "-2257437343216",
+              "powers": [
+                7,
+                16
+              ]
+            },
+            {
+              "coefficient": "13129353546496",
+              "powers": [
+                7,
+                15
+              ]
+            },
+            {
+              "coefficient": "-3929718853792",
+              "powers": [
+                7,
+                14
+              ]
+            },
+            {
+              "coefficient": "-14662048568384",
+              "powers": [
+                7,
+                13
+              ]
+            },
+            {
+              "coefficient": "10171542840032",
+              "powers": [
+                7,
+                12
+              ]
+            },
+            {
+              "coefficient": "6391306445696",
+              "powers": [
+                7,
+                11
+              ]
+            },
+            {
+              "coefficient": "-7451075948528",
+              "powers": [
+                7,
+                10
+              ]
+            },
+            {
+              "coefficient": "-154932845152",
+              "powers": [
+                7,
+                9
+              ]
+            },
+            {
+              "coefficient": "1965001364944",
+              "powers": [
+                7,
+                8
+              ]
+            },
+            {
+              "coefficient": "-413980665472",
+              "powers": [
+                7,
+                7
+              ]
+            },
+            {
+              "coefficient": "-107143400000",
+              "powers": [
+                7,
+                6
+              ]
+            },
+            {
+              "coefficient": "27700872192",
+              "powers": [
+                7,
+                5
+              ]
+            },
+            {
+              "coefficient": "13870080",
+              "powers": [
+                7,
+                4
+              ]
+            },
+            {
+              "coefficient": "1720320",
+              "powers": [
+                7,
+                3
+              ]
+            },
+            {
+              "coefficient": "162418120704",
+              "powers": [
+                6,
+                20
+              ]
+            },
+            {
+              "coefficient": "-400941920736",
+              "powers": [
+                6,
+                19
+              ]
+            },
+            {
+              "coefficient": "-783479246368",
+              "powers": [
+                6,
+                18
+              ]
+            },
+            {
+              "coefficient": "2812206378912",
+              "powers": [
+                6,
+                17
+              ]
+            },
+            {
+              "coefficient": "96363463840",
+              "powers": [
+                6,
+                16
+              ]
+            },
+            {
+              "coefficient": "-6312962598656",
+              "powers": [
+                6,
+                15
+              ]
+            },
+            {
+              "coefficient": "3522276434880",
+              "powers": [
+                6,
+                14
+              ]
+            },
+            {
+              "coefficient": "5789931898688",
+              "powers": [
+                6,
+                13
+              ]
+            },
+            {
+              "coefficient": "-5665328709824",
+              "powers": [
+                6,
+                12
+              ]
+            },
+            {
+              "coefficient": "-1696541932512",
+              "powers": [
+                6,
+                11
+              ]
+            },
+            {
+              "coefficient": "3347218960736",
+              "powers": [
+                6,
+                10
+              ]
+            },
+            {
+              "coefficient": "-393735695584",
+              "powers": [
+                6,
+                9
+              ]
+            },
+            {
+              "coefficient": "-699497564640",
+              "powers": [
+                6,
+                8
+              ]
+            },
+            {
+              "coefficient": "209606095552",
+              "powers": [
+                6,
+                7
+              ]
+            },
+            {
+              "coefficient": "20031551232",
+              "powers": [
+                6,
+                6
+              ]
+            },
+            {
+              "coefficient": "-7562225664",
+              "powers": [
+                6,
+                5
+              ]
+            },
+            {
+              "coefficient": "-3010560",
+              "powers": [
+                6,
+                4
+              ]
+            },
+            {
+              "coefficient": "-69441034320",
+              "powers": [
+                5,
+                20
+              ]
+            },
+            {
+              "coefficient": "199790778432",
+              "powers": [
+                5,
+                19
+              ]
+            },
+            {
+              "coefficient": "196361775456",
+              "powers": [
+                5,
+                18
+              ]
+            },
+            {
+              "coefficient": "-1083838542528",
+              "powers": [
+                5,
+                17
+              ]
+            },
+            {
+              "coefficient": "343443781968",
+              "powers": [
+                5,
+                16
+              ]
+            },
+            {
+              "coefficient": "1999724807808",
+              "powers": [
+                5,
+                15
+              ]
+            },
+            {
+              "coefficient": "-1675480019136",
+              "powers": [
+                5,
+                14
+              ]
+            },
+            {
+              "coefficient": "-1422668026752",
+              "powers": [
+                5,
+                13
+              ]
+            },
+            {
+              "coefficient": "2031946915152",
+              "powers": [
+                5,
+                12
+              ]
+            },
+            {
+              "coefficient": "122698761024",
+              "powers": [
+                5,
+                11
+              ]
+            },
+            {
+              "coefficient": "-977675124384",
+              "powers": [
+                5,
+                10
+              ]
+            },
+            {
+              "coefficient": "246190507584",
+              "powers": [
+                5,
+                9
+              ]
+            },
+            {
+              "coefficient": "151240948656",
+              "powers": [
+                5,
+                8
+              ]
+            },
+            {
+              "coefficient": "-63047115264",
+              "powers": [
+                5,
+                7
+              ]
+            },
+            {
+              "coefficient": "-397243392",
+              "powers": [
+                5,
+                6
+              ]
+            },
+            {
+              "coefficient": "1148829696",
+              "powers": [
+                5,
+                5
+              ]
+            },
+            {
+              "coefficient": "18461647680",
+              "powers": [
+                4,
+                20
+              ]
+            },
+            {
+              "coefficient": "-59254648320",
+              "powers": [
+                4,
+                19
+              ]
+            },
+            {
+              "coefficient": "-23560010880",
+              "powers": [
+                4,
+                18
+              ]
+            },
+            {
+              "coefficient": "263314867200",
+              "powers": [
+                4,
+                17
+              ]
+            },
+            {
+              "coefficient": "-163617545280",
+              "powers": [
+                4,
+                16
+              ]
+            },
+            {
+              "coefficient": "-395101163520",
+              "powers": [
+                4,
+                15
+              ]
+            },
+            {
+              "coefficient": "465162620160",
+              "powers": [
+                4,
+                14
+              ]
+            },
+            {
+              "coefficient": "187395317760",
+              "powers": [
+                4,
+                13
+              ]
+            },
+            {
+              "coefficient": "-454435840320",
+              "powers": [
+                4,
+                12
+              ]
+            },
+            {
+              "coefficient": "63920048640",
+              "powers": [
+                4,
+                11
+              ]
+            },
+            {
+              "coefficient": "174484625280",
+              "powers": [
+                4,
+                10
+              ]
+            },
+            {
+              "coefficient": "-70795146240",
+              "powers": [
+                4,
+                9
+              ]
+            },
+            {
+              "coefficient": "-16040902080",
+              "powers": [
+                4,
+                8
+              ]
+            },
+            {
+              "coefficient": "10592977920",
+              "powers": [
+                4,
+                7
+              ]
+            },
+            {
+              "coefficient": "-454594560",
+              "powers": [
+                4,
+                6
+              ]
+            },
+            {
+              "coefficient": "-72253440",
+              "powers": [
+                4,
+                5
+              ]
+            },
+            {
+              "coefficient": "-2812185600",
+              "powers": [
+                3,
+                20
+              ]
+            },
+            {
+              "coefficient": "9828188160",
+              "powers": [
+                3,
+                19
+              ]
+            },
+            {
+              "coefficient": "33331200",
+              "powers": [
+                3,
+                18
+              ]
+            },
+            {
+              "coefficient": "-37164933120",
+              "powers": [
+                3,
+                17
+              ]
+            },
+            {
+              "coefficient": "33441192960",
+              "powers": [
+                3,
+                16
+              ]
+            },
+            {
+              "coefficient": "44310282240",
+              "powers": [
+                3,
+                15
+              ]
+            },
+            {
+              "coefficient": "-72555786240",
+              "powers": [
+                3,
+                14
+              ]
+            },
+            {
+              "coefficient": "-7433502720",
+              "powers": [
+                3,
+                13
+              ]
+            },
+            {
+              "coefficient": "58876554240",
+              "powers": [
+                3,
+                12
+              ]
+            },
+            {
+              "coefficient": "-19389726720",
+              "powers": [
+                3,
+                11
+              ]
+            },
+            {
+              "coefficient": "-17095895040",
+              "powers": [
+                3,
+                10
+              ]
+            },
+            {
+              "coefficient": "10694369280",
+              "powers": [
+                3,
+                9
+              ]
+            },
+            {
+              "coefficient": "64619520",
+              "powers": [
+                3,
+                8
+              ]
+            },
+            {
+              "coefficient": "-844677120",
+              "powers": [
+                3,
+                7
+              ]
+            },
+            {
+              "coefficient": "48168960",
+              "powers": [
+                3,
+                6
+              ]
+            },
+            {
+              "coefficient": "209018880",
+              "powers": [
+                2,
+                20
+              ]
+            },
+            {
+              "coefficient": "-784465920",
+              "powers": [
+                2,
+                19
+              ]
+            },
+            {
+              "coefficient": "221921280",
+              "powers": [
+                2,
+                18
+              ]
+            },
+            {
+              "coefficient": "2601123840",
+              "powers": [
+                2,
+                17
+              ]
+            },
+            {
+              "coefficient": "-3026903040",
+              "powers": [
+                2,
+                16
+              ]
+            },
+            {
+              "coefficient": "-2374041600",
+              "powers": [
+                2,
+                15
+              ]
+            },
+            {
+              "coefficient": "5542871040",
+              "powers": [
+                2,
+                14
+              ]
+            },
+            {
+              "coefficient": "-660602880",
+              "powers": [
+                2,
+                13
+              ]
+            },
+            {
+              "coefficient": "-3821690880",
+              "powers": [
+                2,
+                12
+              ]
+            },
+            {
+              "coefficient": "1981808640",
+              "powers": [
+                2,
+                11
+              ]
+            },
+            {
+              "coefficient": "758661120",
+              "powers": [
+                2,
+                10
+              ]
+            },
+            {
+              "coefficient": "-784465920",
+              "powers": [
+                2,
+                9
+              ]
+            },
+            {
+              "coefficient": "116121600",
+              "powers": [
+                2,
+                8
+              ]
+            },
+            {
+              "coefficient": "20643840",
+              "powers": [
+                2,
+                7
+              ]
+            },
+            {
+              "coefficient": "-5160960",
+              "powers": [
+                1,
+                20
+              ]
+            },
+            {
+              "coefficient": "20643840",
+              "powers": [
+                1,
+                19
+              ]
+            },
+            {
+              "coefficient": "-10321920",
+              "powers": [
+                1,
+                18
+              ]
+            },
+            {
+              "coefficient": "-61931520",
+              "powers": [
+                1,
+                17
+              ]
+            },
+            {
+              "coefficient": "87736320",
+              "powers": [
+                1,
+                16
+              ]
+            },
+            {
+              "coefficient": "41287680",
+              "powers": [
+                1,
+                15
+              ]
+            },
+            {
+              "coefficient": "-144506880",
+              "powers": [
+                1,
+                14
+              ]
+            },
+            {
+              "coefficient": "41287680",
+              "powers": [
+                1,
+                13
+              ]
+            },
+            {
+              "coefficient": "87736320",
+              "powers": [
+                1,
+                12
+              ]
+            },
+            {
+              "coefficient": "-61931520",
+              "powers": [
+                1,
+                11
+              ]
+            },
+            {
+              "coefficient": "-10321920",
+              "powers": [
+                1,
+                10
+              ]
+            },
+            {
+              "coefficient": "20643840",
+              "powers": [
+                1,
+                9
+              ]
+            },
+            {
+              "coefficient": "-5160960",
+              "powers": [
+                1,
+                8
+              ]
+            }
+          ],
+          "degree": [
+            18,
+            20
+          ]
+        },
+        "scope": "Frozen wrong-candidate measure-weighted photon kernels on x,y in[0,1]^2; no empirical data",
+        "z": {
+          "coefficients": [
+            {
+              "coefficient": "-7182",
+              "powers": [
+                17,
+                16
+              ]
+            },
+            {
+              "coefficient": "36720",
+              "powers": [
+                17,
+                15
+              ]
+            },
+            {
+              "coefficient": "-63504",
+              "powers": [
+                17,
+                14
+              ]
+            },
+            {
+              "coefficient": "15120",
+              "powers": [
+                17,
+                13
+              ]
+            },
+            {
+              "coefficient": "89964",
+              "powers": [
+                17,
+                12
+              ]
+            },
+            {
+              "coefficient": "-117936",
+              "powers": [
+                17,
+                11
+              ]
+            },
+            {
+              "coefficient": "37800",
+              "powers": [
+                17,
+                10
+              ]
+            },
+            {
+              "coefficient": "33264",
+              "powers": [
+                17,
+                9
+              ]
+            },
+            {
+              "coefficient": "-34830",
+              "powers": [
+                17,
+                8
+              ]
+            },
+            {
+              "coefficient": "12096",
+              "powers": [
+                17,
+                7
+              ]
+            },
+            {
+              "coefficient": "-1512",
+              "powers": [
+                17,
+                6
+              ]
+            },
+            {
+              "coefficient": "101080",
+              "powers": [
+                16,
+                16
+              ]
+            },
+            {
+              "coefficient": "-516800",
+              "powers": [
+                16,
+                15
+              ]
+            },
+            {
+              "coefficient": "893760",
+              "powers": [
+                16,
+                14
+              ]
+            },
+            {
+              "coefficient": "-212800",
+              "powers": [
+                16,
+                13
+              ]
+            },
+            {
+              "coefficient": "-1266160",
+              "powers": [
+                16,
+                12
+              ]
+            },
+            {
+              "coefficient": "1659840",
+              "powers": [
+                16,
+                11
+              ]
+            },
+            {
+              "coefficient": "-532000",
+              "powers": [
+                16,
+                10
+              ]
+            },
+            {
+              "coefficient": "-468160",
+              "powers": [
+                16,
+                9
+              ]
+            },
+            {
+              "coefficient": "490200",
+              "powers": [
+                16,
+                8
+              ]
+            },
+            {
+              "coefficient": "-170240",
+              "powers": [
+                16,
+                7
+              ]
+            },
+            {
+              "coefficient": "21280",
+              "powers": [
+                16,
+                6
+              ]
+            },
+            {
+              "coefficient": "-82800",
+              "powers": [
+                15,
+                18
+              ]
+            },
+            {
+              "coefficient": "496800",
+              "powers": [
+                15,
+                17
+              ]
+            },
+            {
+              "coefficient": "-1679688",
+              "powers": [
+                15,
+                16
+              ]
+            },
+            {
+              "coefficient": "3746880",
+              "powers": [
+                15,
+                15
+              ]
+            },
+            {
+              "coefficient": "-4175136",
+              "powers": [
+                15,
+                14
+              ]
+            },
+            {
+              "coefficient": "-1048320",
+              "powers": [
+                15,
+                13
+              ]
+            },
+            {
+              "coefficient": "8716176",
+              "powers": [
+                15,
+                12
+              ]
+            },
+            {
+              "coefficient": "-9244224",
+              "powers": [
+                15,
+                11
+              ]
+            },
+            {
+              "coefficient": "2098800",
+              "powers": [
+                15,
+                10
+              ]
+            },
+            {
+              "coefficient": "3290976",
+              "powers": [
+                15,
+                9
+              ]
+            },
+            {
+              "coefficient": "-3008520",
+              "powers": [
+                15,
+                8
+              ]
+            },
+            {
+              "coefficient": "1016064",
+              "powers": [
+                15,
+                7
+              ]
+            },
+            {
+              "coefficient": "-127008",
+              "powers": [
+                15,
+                6
+              ]
+            },
+            {
+              "coefficient": "1419840",
+              "powers": [
+                14,
+                18
+              ]
+            },
+            {
+              "coefficient": "-8519040",
+              "powers": [
+                14,
+                17
+              ]
+            },
+            {
+              "coefficient": "20488032",
+              "powers": [
+                14,
+                16
+              ]
+            },
+            {
+              "coefficient": "-21738240",
+              "powers": [
+                14,
+                15
+              ]
+            },
+            {
+              "coefficient": "-1927296",
+              "powers": [
+                14,
+                14
+              ]
+            },
+            {
+              "coefficient": "35481600",
+              "powers": [
+                14,
+                13
+              ]
+            },
+            {
+              "coefficient": "-45307584",
+              "powers": [
+                14,
+                12
+              ]
+            },
+            {
+              "coefficient": "21977856",
+              "powers": [
+                14,
+                11
+              ]
+            },
+            {
+              "coefficient": "7773120",
+              "powers": [
+                14,
+                10
+              ]
+            },
+            {
+              "coefficient": "-17921664",
+              "powers": [
+                14,
+                9
+              ]
+            },
+            {
+              "coefficient": "11265120",
+              "powers": [
+                14,
+                8
+              ]
+            },
+            {
+              "coefficient": "-3419136",
+              "powers": [
+                14,
+                7
+              ]
+            },
+            {
+              "coefficient": "427392",
+              "powers": [
+                14,
+                6
+              ]
+            },
+            {
+              "coefficient": "-9893352",
+              "powers": [
+                13,
+                18
+              ]
+            },
+            {
+              "coefficient": "59360112",
+              "powers": [
+                13,
+                17
+              ]
+            },
+            {
+              "coefficient": "-132914796",
+              "powers": [
+                13,
+                16
+              ]
+            },
+            {
+              "coefficient": "101138016",
+              "powers": [
+                13,
+                15
+              ]
+            },
+            {
+              "coefficient": "100475088",
+              "powers": [
+                13,
+                14
+              ]
+            },
+            {
+              "coefficient": "-267958656",
+              "powers": [
+                13,
+                13
+              ]
+            },
+            {
+              "coefficient": "192385368",
+              "powers": [
+                13,
+                12
+              ]
+            },
+            {
+              "coefficient": "8516256",
+              "powers": [
+                13,
+                11
+              ]
+            },
+            {
+              "coefficient": "-105975576",
+              "powers": [
+                13,
+                10
+              ]
+            },
+            {
+              "coefficient": "79281552",
+              "powers": [
+                13,
+                9
+              ]
+            },
+            {
+              "coefficient": "-30752652",
+              "powers": [
+                13,
+                8
+              ]
+            },
+            {
+              "coefficient": "7244160",
+              "powers": [
+                13,
+                7
+              ]
+            },
+            {
+              "coefficient": "-905520",
+              "powers": [
+                13,
+                6
+              ]
+            },
+            {
+              "coefficient": "37643424",
+              "powers": [
+                12,
+                18
+              ]
+            },
+            {
+              "coefficient": "-225860544",
+              "powers": [
+                12,
+                17
+              ]
+            },
+            {
+              "coefficient": "495397392",
+              "powers": [
+                12,
+                16
+              ]
+            },
+            {
+              "coefficient": "-331992192",
+              "powers": [
+                12,
+                15
+              ]
+            },
+            {
+              "coefficient": "-473664576",
+              "powers": [
+                12,
+                14
+              ]
+            },
+            {
+              "coefficient": "1041315072",
+              "powers": [
+                12,
+                13
+              ]
+            },
+            {
+              "coefficient": "-602577696",
+              "powers": [
+                12,
+                12
+              ]
+            },
+            {
+              "coefficient": "-202081152",
+              "powers": [
+                12,
+                11
+              ]
+            },
+            {
+              "coefficient": "457612512",
+              "powers": [
+                12,
+                10
+              ]
+            },
+            {
+              "coefficient": "-253802304",
+              "powers": [
+                12,
+                9
+              ]
+            },
+            {
+              "coefficient": "66900624",
+              "powers": [
+                12,
+                8
+              ]
+            },
+            {
+              "coefficient": "-10160640",
+              "powers": [
+                12,
+                7
+              ]
+            },
+            {
+              "coefficient": "1270080",
+              "powers": [
+                12,
+                6
+              ]
+            },
+            {
+              "coefficient": "-87952536",
+              "powers": [
+                11,
+                18
+              ]
+            },
+            {
+              "coefficient": "527715216",
+              "powers": [
+                11,
+                17
+              ]
+            },
+            {
+              "coefficient": "-1149080688",
+              "powers": [
+                11,
+                16
+              ]
+            },
+            {
+              "coefficient": "732751488",
+              "powers": [
+                11,
+                15
+              ]
+            },
+            {
+              "coefficient": "1180955664",
+              "powers": [
+                11,
+                14
+              ]
+            },
+            {
+              "coefficient": "-2450675808",
+              "powers": [
+                11,
+                13
+              ]
+            },
+            {
+              "coefficient": "1302706944",
+              "powers": [
+                11,
+                12
+              ]
+            },
+            {
+              "coefficient": "610057728",
+              "powers": [
+                11,
+                11
+              ]
+            },
+            {
+              "coefficient": "-1113394968",
+              "powers": [
+                11,
+                10
+              ]
+            },
+            {
+              "coefficient": "554104656",
+              "powers": [
+                11,
+                9
+              ]
+            },
+            {
+              "coefficient": "-115584336",
+              "powers": [
+                11,
+                8
+              ]
+            },
+            {
+              "coefficient": "9596160",
+              "powers": [
+                11,
+                7
+              ]
+            },
+            {
+              "coefficient": "-1199520",
+              "powers": [
+                11,
+                6
+              ]
+            },
+            {
+              "coefficient": "133639968",
+              "powers": [
+                10,
+                18
+              ]
+            },
+            {
+              "coefficient": "-801839808",
+              "powers": [
+                10,
+                17
+              ]
+            },
+            {
+              "coefficient": "1740907392",
+              "powers": [
+                10,
+                16
+              ]
+            },
+            {
+              "coefficient": "-1087463424",
+              "powers": [
+                10,
+                15
+              ]
+            },
+            {
+              "coefficient": "-1839235776",
+              "powers": [
+                10,
+                14
+              ]
+            },
+            {
+              "coefficient": "3734365824",
+              "powers": [
+                10,
+                13
+              ]
+            },
+            {
+              "coefficient": "-1915901568",
+              "powers": [
+                10,
+                12
+              ]
+            },
+            {
+              "coefficient": "-1010204160",
+              "powers": [
+                10,
+                11
+              ]
+            },
+            {
+              "coefficient": "1718436384",
+              "powers": [
+                10,
+                10
+              ]
+            },
+            {
+              "coefficient": "-818457024",
+              "powers": [
+                10,
+                9
+              ]
+            },
+            {
+              "coefficient": "151039488",
+              "powers": [
+                10,
+                8
+              ]
+            },
+            {
+              "coefficient": "-6042624",
+              "powers": [
+                10,
+                7
+              ]
+            },
+            {
+              "coefficient": "755328",
+              "powers": [
+                10,
+                6
+              ]
+            },
+            {
+              "coefficient": "-135471000",
+              "powers": [
+                9,
+                18
+              ]
+            },
+            {
+              "coefficient": "812826000",
+              "powers": [
+                9,
+                17
+              ]
+            },
+            {
+              "coefficient": "-1762566582",
+              "powers": [
+                9,
+                16
+              ]
+            },
+            {
+              "coefficient": "1091148720",
+              "powers": [
+                9,
+                15
+              ]
+            },
+            {
+              "coefficient": "1883829696",
+              "powers": [
+                9,
+                14
+              ]
+            },
+            {
+              "coefficient": "-3790148880",
+              "powers": [
+                9,
+                13
+              ]
+            },
+            {
+              "coefficient": "1914676764",
+              "powers": [
+                9,
+                12
+              ]
+            },
+            {
+              "coefficient": "1060062864",
+              "powers": [
+                9,
+                11
+              ]
+            },
+            {
+              "coefficient": "-1753525200",
+              "powers": [
+                9,
+                10
+              ]
+            },
+            {
+              "coefficient": "819512064",
+              "powers": [
+                9,
+                9
+              ]
+            },
+            {
+              "coefficient": "-142471830",
+              "powers": [
+                9,
+                8
+              ]
+            },
+            {
+              "coefficient": "2431296",
+              "powers": [
+                9,
+                7
+              ]
+            },
+            {
+              "coefficient": "-303912",
+              "powers": [
+                9,
+                6
+              ]
+            },
+            {
+              "coefficient": "91819872",
+              "powers": [
+                8,
+                18
+              ]
+            },
+            {
+              "coefficient": "-550919232",
+              "powers": [
+                8,
+                17
+              ]
+            },
+            {
+              "coefficient": "1193993496",
+              "powers": [
+                8,
+                16
+              ]
+            },
+            {
+              "coefficient": "-736272576",
+              "powers": [
+                8,
+                15
+              ]
+            },
+            {
+              "coefficient": "-1282514688",
+              "powers": [
+                8,
+                14
+              ]
+            },
+            {
+              "coefficient": "2570250816",
+              "powers": [
+                8,
+                13
+              ]
+            },
+            {
+              "coefficient": "-1289676528",
+              "powers": [
+                8,
+                12
+              ]
+            },
+            {
+              "coefficient": "-729055296",
+              "powers": [
+                8,
+                11
+              ]
+            },
+            {
+              "coefficient": "1191894336",
+              "powers": [
+                8,
+                10
+              ]
+            },
+            {
+              "coefficient": "-552471552",
+              "powers": [
+                8,
+                9
+              ]
+            },
+            {
+              "coefficient": "93445272",
+              "powers": [
+                8,
+                8
+              ]
+            },
+            {
+              "coefficient": "-564480",
+              "powers": [
+                8,
+                7
+              ]
+            },
+            {
+              "coefficient": "70560",
+              "powers": [
+                8,
+                6
+              ]
+            },
+            {
+              "coefficient": "-40739064",
+              "powers": [
+                7,
+                18
+              ]
+            },
+            {
+              "coefficient": "244434384",
+              "powers": [
+                7,
+                17
+              ]
+            },
+            {
+              "coefficient": "-529641880",
+              "powers": [
+                7,
+                16
+              ]
+            },
+            {
+              "coefficient": "326086592",
+              "powers": [
+                7,
+                15
+              ]
+            },
+            {
+              "coefficient": "570045840",
+              "powers": [
+                7,
+                14
+              ]
+            },
+            {
+              "coefficient": "-1140622112",
+              "powers": [
+                7,
+                13
+              ]
+            },
+            {
+              "coefficient": "570773392",
+              "powers": [
+                7,
+                12
+              ]
+            },
+            {
+              "coefficient": "325353408",
+              "powers": [
+                7,
+                11
+              ]
+            },
+            {
+              "coefficient": "-529428632",
+              "powers": [
+                7,
+                10
+              ]
+            },
+            {
+              "coefficient": "244592080",
+              "powers": [
+                7,
+                9
+              ]
+            },
+            {
+              "coefficient": "-40904184",
+              "powers": [
+                7,
+                8
+              ]
+            },
+            {
+              "coefficient": "57344",
+              "powers": [
+                7,
+                7
+              ]
+            },
+            {
+              "coefficient": "-7168",
+              "powers": [
+                7,
+                6
+              ]
+            },
+            {
+              "coefficient": "11217696",
+              "powers": [
+                6,
+                18
+              ]
+            },
+            {
+              "coefficient": "-67306176",
+              "powers": [
+                6,
+                17
+              ]
+            },
+            {
+              "coefficient": "145830048",
+              "powers": [
+                6,
+                16
+              ]
+            },
+            {
+              "coefficient": "-89741568",
+              "powers": [
+                6,
+                15
+              ]
+            },
+            {
+              "coefficient": "-157047744",
+              "powers": [
+                6,
+                14
+              ]
+            },
+            {
+              "coefficient": "314095488",
+              "powers": [
+                6,
+                13
+              ]
+            },
+            {
+              "coefficient": "-157047744",
+              "powers": [
+                6,
+                12
+              ]
+            },
+            {
+              "coefficient": "-89741568",
+              "powers": [
+                6,
+                11
+              ]
+            },
+            {
+              "coefficient": "145830048",
+              "powers": [
+                6,
+                10
+              ]
+            },
+            {
+              "coefficient": "-67306176",
+              "powers": [
+                6,
+                9
+              ]
+            },
+            {
+              "coefficient": "11217696",
+              "powers": [
+                6,
+                8
+              ]
+            },
+            {
+              "coefficient": "-1709568",
+              "powers": [
+                5,
+                18
+              ]
+            },
+            {
+              "coefficient": "10257408",
+              "powers": [
+                5,
+                17
+              ]
+            },
+            {
+              "coefficient": "-22224384",
+              "powers": [
+                5,
+                16
+              ]
+            },
+            {
+              "coefficient": "13676544",
+              "powers": [
+                5,
+                15
+              ]
+            },
+            {
+              "coefficient": "23933952",
+              "powers": [
+                5,
+                14
+              ]
+            },
+            {
+              "coefficient": "-47867904",
+              "powers": [
+                5,
+                13
+              ]
+            },
+            {
+              "coefficient": "23933952",
+              "powers": [
+                5,
+                12
+              ]
+            },
+            {
+              "coefficient": "13676544",
+              "powers": [
+                5,
+                11
+              ]
+            },
+            {
+              "coefficient": "-22224384",
+              "powers": [
+                5,
+                10
+              ]
+            },
+            {
+              "coefficient": "10257408",
+              "powers": [
+                5,
+                9
+              ]
+            },
+            {
+              "coefficient": "-1709568",
+              "powers": [
+                5,
+                8
+              ]
+            },
+            {
+              "coefficient": "107520",
+              "powers": [
+                4,
+                18
+              ]
+            },
+            {
+              "coefficient": "-645120",
+              "powers": [
+                4,
+                17
+              ]
+            },
+            {
+              "coefficient": "1397760",
+              "powers": [
+                4,
+                16
+              ]
+            },
+            {
+              "coefficient": "-860160",
+              "powers": [
+                4,
+                15
+              ]
+            },
+            {
+              "coefficient": "-1505280",
+              "powers": [
+                4,
+                14
+              ]
+            },
+            {
+              "coefficient": "3010560",
+              "powers": [
+                4,
+                13
+              ]
+            },
+            {
+              "coefficient": "-1505280",
+              "powers": [
+                4,
+                12
+              ]
+            },
+            {
+              "coefficient": "-860160",
+              "powers": [
+                4,
+                11
+              ]
+            },
+            {
+              "coefficient": "1397760",
+              "powers": [
+                4,
+                10
+              ]
+            },
+            {
+              "coefficient": "-645120",
+              "powers": [
+                4,
+                9
+              ]
+            },
+            {
+              "coefficient": "107520",
+              "powers": [
+                4,
+                8
+              ]
+            }
+          ],
+          "degree": [
+            17,
+            18
+          ]
+        }
+      },
+      "error_contract": "Recovered normalized-Y20 harmonic coefficient envelopes; full-sky pointwise errors need the angular factor",
+      "failed": 0,
+      "moment": "827093/50599790841600",
+      "norm_enclosures": {
+        "psi": {
+          "degrees": [
+            18,
+            20
+          ],
+          "levels": [
+            {
+              "level": 0,
+              "lower": "0",
+              "lower_numeric": 0.0,
+              "upper": "99207062891/11575610046",
+              "upper_numeric": 8.570352879611853
+            },
+            {
+              "level": 1,
+              "lower": "17579963333/127135776768",
+              "lower_numeric": 0.13827707495019503,
+              "upper": "375757397691404976892301/259770627874329565593600",
+              "upper_numeric": 1.4464968605811235
+            },
+            {
+              "level": 2,
+              "lower": "2796956639745034449229/10920880067402331586560",
+              "lower_numeric": 0.25611091986017254,
+              "upper": "95612369301672071131406028047/106283053220445961624234229760",
+              "upper_numeric": 0.8996012666606275
+            },
+            {
+              "level": 3,
+              "lower": "3123540907376461011876192653974115999/6147908925263877221701778557076766720",
+              "lower_numeric": 0.5080655789386785,
+              "upper": "162671529959125917734126928767926982865225229/204455351051289521995092083836429520181657600",
+              "upper_numeric": 0.7956335166709246
+            }
+          ]
+        },
+        "z": {
+          "degrees": [
+            17,
+            18
+          ],
+          "levels": [
+            {
+              "level": 0,
+              "lower": "7/1772928300",
+              "lower_numeric": 3.948270214875582e-09,
+              "upper": "76100273/303170739300",
+              "upper_numeric": 0.00025101457078512986
+            },
+            {
+              "level": 1,
+              "lower": "566519/181622538240",
+              "lower_numeric": 3.119210894692978e-06,
+              "upper": "2494753921291123/61036331737389465600",
+              "upper_numeric": 4.0873261060721536e-05
+            },
+            {
+              "level": 2,
+              "lower": "694487046632857/115742969813123727360",
+              "lower_numeric": 6.000252522932164e-06,
+              "upper": "222172356924802359291061/7281918018885961532414361600",
+              "upper_numeric": 3.0510142568014222e-05
+            },
+            {
+              "level": 3,
+              "lower": "62386954377263154699/2661519743744868981145600",
+              "lower_numeric": 2.344035001952761e-05,
+              "upper": "5418958927465272324001206642994587437/192157284822640528190876018643260827238400",
+              "upper_numeric": 2.8200642679078878e-05
+            }
+          ]
+        }
+      },
+      "passed": 42,
+      "scope": "Exact norm enclosure refinement of constructed fixed photon test, not observational precision",
+      "uniform_radius": "1670990994769466061218054686138957824/162677295731424740783879666051795129106258197",
+      "uniform_radius_numeric": 1.0271814436405565e-08
+    },
+    "original_action": {
+      "D": "2*(2*n - 1)/5",
+      "QY": "2/5",
+      "Q_history": "-15/(4*t**2)",
+      "checks": [
+        {
+          "name": "history_QY",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "history_D",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "history_Qz",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "history_Qzz",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_Friedmann",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_Raychaudhuri",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_dust",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_scalar",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "principal_speed",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "positive_domain_n_gt_half",
+          "pass": true
+        },
+        {
+          "name": "noncanonical_n2_not_luminal",
+          "pass": true
+        },
+        {
+          "name": "physical_Friedmann_action_value",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "physical_Raychaudhuri",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "physical_dust",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "action_zeta_derivative",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_coefficient_n_independent_G",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_coefficient_n_independent_R",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_coefficient_n_independent_Pi",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "full_linear_pressure_from_constraints",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "full_linear_scalar_from_constraints",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_linear_momentum",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_linear_Hamiltonian",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_linear_bare_dust",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_linear_Euler",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "physical_momentum",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "physical_Euler",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "photon_reduced_necessary_equation",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "recovered_q",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "recovered_QY",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "canonical_member_coordinates",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "noncanonical_initial_response_distinct",
+          "pass": true
+        },
+        {
+          "name": "noncanonical_full_scalar_gradient_changed",
+          "pass": true
+        },
+        {
+          "name": "wrong_dust_source_sign_detected",
+          "pass": true
+        },
+        {
+          "name": "wrong_canonical_D_detected",
+          "pass": true
+        },
+        {
+          "name": "mode_n1_0_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_0_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_0_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_0_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_1_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_1_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_1_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_1_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_2_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_2_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_2_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_2_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_3_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_3_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_3_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n1_3_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_0_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_0_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_0_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_0_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_1_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_1_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_1_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_1_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_2_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_2_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_2_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_2_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_3_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_3_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_3_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n2_3_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_0_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_0_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_0_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_0_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_1_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_1_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_1_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_1_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_2_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_2_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_2_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_2_db",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_3_P",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_3_J",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_3_U",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "mode_n3/2_3_db",
+          "pass": true,
+          "residual": "0"
+        }
+      ],
+      "failed": 0,
+      "harmonic_nonzero_mode_polynomial": "(2*m + 5)*(4*m**2*n - 2*m**2 + 14*m*n - 7*m + 6)/2",
+      "modes": [
+        {
+          "J_over_P": "5/2",
+          "U_over_tP": "-1",
+          "db_over_P": "-9/2",
+          "exponent": "0",
+          "n": "1"
+        },
+        {
+          "J_over_P": "-5/3",
+          "U_over_tP": "2/3",
+          "db_over_P": "3",
+          "exponent": "-5/2",
+          "n": "1"
+        },
+        {
+          "J_over_P": "-1",
+          "U_over_tP": "0",
+          "db_over_P": "3",
+          "exponent": "-2",
+          "n": "1"
+        },
+        {
+          "J_over_P": "-1/5",
+          "U_over_tP": "-2/5",
+          "db_over_P": "3",
+          "exponent": "-3/2",
+          "n": "1"
+        },
+        {
+          "J_over_P": "5/2",
+          "U_over_tP": "-1",
+          "db_over_P": "-9/2",
+          "exponent": "0",
+          "n": "2"
+        },
+        {
+          "J_over_P": "-5/3",
+          "U_over_tP": "2/3",
+          "db_over_P": "3",
+          "exponent": "-5/2",
+          "n": "2"
+        },
+        {
+          "J_over_P": "-sqrt(33)/3",
+          "U_over_tP": "1 + sqrt(33)/3",
+          "db_over_P": "3",
+          "exponent": "-7/4 - sqrt(33)/4",
+          "n": "2"
+        },
+        {
+          "J_over_P": "sqrt(33)/3",
+          "U_over_tP": "1 - sqrt(33)/3",
+          "db_over_P": "3",
+          "exponent": "-7/4 + sqrt(33)/4",
+          "n": "2"
+        },
+        {
+          "J_over_P": "5/2",
+          "U_over_tP": "-1",
+          "db_over_P": "-9/2",
+          "exponent": "0",
+          "n": "3/2"
+        },
+        {
+          "J_over_P": "-2",
+          "U_over_tP": "2",
+          "db_over_P": "3",
+          "exponent": "-3",
+          "n": "3/2"
+        },
+        {
+          "J_over_P": "-5/3",
+          "U_over_tP": "2/3",
+          "db_over_P": "3",
+          "exponent": "-5/2",
+          "n": "3/2"
+        },
+        {
+          "J_over_P": "11/7",
+          "U_over_tP": "-6/7",
+          "db_over_P": "3",
+          "exponent": "-1/2",
+          "n": "3/2"
+        }
+      ],
+      "noncanonical_initial_Jdot_difference": "4",
+      "passed": 82,
+      "physical_G": "t**(-7/2)",
+      "physical_R": "1/(2*t**7)",
+      "scope": "General-kinetic necessary inverse and constructed full-action controls; no empirical validation"
+    },
+    "primitive": {
+      "checks": [
+        {
+          "name": "background_h",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_qG",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "background_dust",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "commutator_coefficient",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_physical_momentum",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_physical_Euler",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_physical_number",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "original_physical_density",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "local_harmonic",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "Born_integrated_inverse",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "Born_path_primitive",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "actual_path_time_derivative",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "actual_redshift_LZ",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "primitive_Y_map",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "transport_original",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "commutator_original",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_0",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_1",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_2",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_3",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_4",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_5",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_6",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-4_7",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_0",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_1",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_2",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_3",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_4",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_5",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_6",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_eta_-3_7",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_0",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_1",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_2",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_3",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_4",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_5",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_6",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_1_7",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_0",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_1",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_2",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_3",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_4",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_5",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_6",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "trace_r_2_7",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "L_formal_adjoint_divergence",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "D_formal_adjoint_divergence",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "arbitrary_nonharmonic_first_adjoint",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "arbitrary_nonharmonic_moment_nonzero",
+          "pass": true
+        },
+        {
+          "name": "arbitrary_latent_residual_identity",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "arbitrary_Euler_residual_nonzero",
+          "pass": true
+        },
+        {
+          "name": "arbitrary_commutator_residual_nonzero",
+          "pass": true
+        },
+        {
+          "name": "arbitrary_primitive_adjoint",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "arbitrary_primitive_moment_nonzero",
+          "pass": true
+        },
+        {
+          "name": "true_first_adjoint",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "true_latent_elimination",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "true_primitive_adjoint",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "true_strong_residual",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "true_primitive_moment",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "wrong_canonical_first_adjoint",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "wrong_canonical_latent_elimination",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "wrong_canonical_primitive_adjoint",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "wrong_positive_form",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "wrong_moment_nonzero_positive",
+          "pass": true
+        },
+        {
+          "name": "finite_positive_primitive_error_bound",
+          "pass": true
+        },
+        {
+          "name": "bounded_record_error",
+          "pass": true
+        },
+        {
+          "name": "fixed_candidate_error_rejection",
+          "pass": true
+        },
+        {
+          "name": "known_reception_gain_pullback",
+          "pass": true,
+          "residual": "0"
+        },
+        {
+          "name": "missing_path_correction_detected",
+          "pass": true
+        },
+        {
+          "name": "wrong_time_measure_detected",
+          "pass": true
+        },
+        {
+          "name": "old_rectangle_crosses_singular_chart",
+          "pass": true
+        },
+        {
+          "name": "new_reception_interval_strictly_negative",
+          "pass": true
+        },
+        {
+          "name": "new_complete_ray_interval_negative",
+          "pass": true
+        },
+        {
+          "name": "new_source_t_interval",
+          "pass": true
+        },
+        {
+          "name": "fullsky_absolute_projection_factor",
+          "pass": true,
+          "residual": "0"
+        }
+      ],
+      "error_contract": "Recovered normalized-Y20 harmonic coefficient errors; multiply by4sqrt(15pi)/9 for arbitrary fullsky pointwise envelopes",
+      "failed": 0,
+      "moments": {
+        "true": {
+          "field_moment": "0",
+          "primitive_moment": "0",
+          "strong_moment": "0"
+        },
+        "wrong_canonical": {
+          "bounded_error_shift": "-2673428418667/42455360397554200984923489152770248696657026689696896000",
+          "field_moment": "827093/50599790841600",
+          "primitive_L1_bound_psi": "6799588940717271470591665838025434/230945",
+          "primitive_L1_bound_z": "246089438609114734377182446005885313/6737127540",
+          "primitive_moment": "827093/50599790841600",
+          "primitive_uniform_radius": "14060581/50715440325675603117898512672563618904600960",
+          "primitive_uniform_radius_numeric": "2.7724458093448866643e-37",
+          "strong_moment": "827093/50599790841600",
+          "weight_terms_psi": 364,
+          "weight_terms_z": 331
+        }
+      },
+      "passed": 78,
+      "records": {
+        "I0": "eta**6*r**3/192 + eta**5*r**4/128 + eta**4*r**5/128 + eta**3*r**6/192 + eta**2*r**7/448 + eta*r**8/1792 + r**9/16128",
+        "I1": "eta**5*r**3/32 + 5*eta**4*r**4/128 + eta**3*r**5/32 + eta**2*r**6/64 + eta*r**7/224 + r**8/1792",
+        "Y": "-eta**7*r/32 + eta**6*r**2/64",
+        "psi": "eta**6*r**2/192 + eta**5*r**3/64 + 3*eta**4*r**4/128 + eta**3*r**5/48 + 5*eta**2*r**6/448 + 3*eta*r**7/896 + r**8/2304",
+        "z": "-eta**7*r/32 + eta**6*r**2/64 - eta**5*r**3/16 - 5*eta**4*r**4/64 - eta**3*r**5/16 - eta**2*r**6/32 - eta*r**7/112 - r**8/896"
+      },
+      "scope": "Root constructed n=3/2 full-action mode photon primitives and exact weak kinetic test; no empirical inputs",
+      "versions": {
+        "sympy": "1.14.0"
+      }
+    }
+  },
+  "versions": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  }
+}

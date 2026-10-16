@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-16T16:45:13.810682+00:00",
+  "attempted": "/usr/local/bin/python3 -B scripts/run_citation_graph_build.py",
+  "exit_code": 2,
+  "error": "Wrapper path does not exist; no graph build executed",
+  "correction": "Located docs/audit/scripts/run_citation_graph_build.py with rg; normal serialized build started",
+  "scientific_inference": "None"
+}

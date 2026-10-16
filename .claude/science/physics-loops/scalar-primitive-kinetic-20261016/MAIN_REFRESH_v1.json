@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-16T16:42:42.823981+00:00",
+  "main": "6ee7a70e06216bf248409dc3495e5043e3df36b5",
+  "prior_base": "c64cf5df6206bb5363f8b4504999bd72ebe4d85d",
+  "workflow_delta": "",
+  "scientific_bindings": [
+    {
+      "path": "docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "main_sha256": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+      "source_head": "1355e4a8e7c7c035acdbb1385b730a3f4bc1da87",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_kinetic_background.py",
+      "main_sha256": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+      "source_head": "1355e4a8e7c7c035acdbb1385b730a3f4bc1da87",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_kinetic_response.py",
+      "main_sha256": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2",
+      "source_head": "1355e4a8e7c7c035acdbb1385b730a3f4bc1da87",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_kinetic_response_core.py",
+      "main_sha256": "2cb9263f0841849bbf393a06c293f8f45169530e2fdfce7f0ceadcf2ac5d0d28",
+      "source_head": "1355e4a8e7c7c035acdbb1385b730a3f4bc1da87",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_kinetic_phase.py",
+      "main_sha256": "8e885688bd5a70b15ad06321647df1672c9e7b2abfa01a1069115fa92fce4864",
+      "source_head": "1355e4a8e7c7c035acdbb1385b730a3f4bc1da87",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_kinetic_weak.py",
+      "main_sha256": "dce72839ce95df00cff487bd9a71311d061a4a3f6d3c8852757150d354b69d01",
+      "source_head": "1355e4a8e7c7c035acdbb1385b730a3f4bc1da87",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_kinetic_zero.py",
+      "main_sha256": "69e8f5bec95b2a0c0537a2df2ddf1071ad23de665dd5445dbbb1d4e87be3bc97",
+      "source_head": "1355e4a8e7c7c035acdbb1385b730a3f4bc1da87",
+      "equal": true
+    },
+    {
+      "path": "docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "main_sha256": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631",
+      "source_head": "e42d363b618e16551e838d268748ac8eeff3dd19",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_photon_calibration.py",
+      "main_sha256": "c22c88bc65a8530301904fa648e154ba841c89c68948a16f7431be6d32b4e1a8",
+      "source_head": "e42d363b618e16551e838d268748ac8eeff3dd19",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_photon_calibration_controls.py",
+      "main_sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+      "source_head": "e42d363b618e16551e838d268748ac8eeff3dd19",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_photon_reception_core.py",
+      "main_sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+      "source_head": "e42d363b618e16551e838d268748ac8eeff3dd19",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_photon_separate_gains.py",
+      "main_sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "source_head": "e42d363b618e16551e838d268748ac8eeff3dd19",
+      "equal": true
+    },
+    {
+      "path": "scripts/scalar_photon_weak_controls.py",
+      "main_sha256": "86c759edce2c57f93689352183fdfbf57bb76e3b02cab55a8e38f45a6b07e6d3",
+      "source_head": "e42d363b618e16551e838d268748ac8eeff3dd19",
+      "equal": true
+    }
+  ],
+  "scope": "Current main integration receipt; PR9641/9644 CLOSED with null mergeCommit, corresponding main source bytes separately checked. No merge performed here."
+}

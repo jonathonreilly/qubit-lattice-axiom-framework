@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-16T16:26:52.626357+00:00",
+  "stage": "Canonical integration, no new selected action or test",
+  "files": {
+    "scripts/scalar_primitive_kinetic_core.py": "df030726044df695faacc96eefb5d899c5fbadb0f9138e3ca050de7617604ddb",
+    "scripts/scalar_primitive_kinetic_bound.py": "e06cad4f61560603371dc99b4cc9e50e4d54859149435be35c8b9526f33ac32e",
+    "scripts/scalar_primitive_kinetic_action.py": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de"
+  },
+  "transformations": [
+    "Historical primitivev3 wrapped as callable, nondeterministic timing removed, explicit harmonic-error contract and analytic angular projection control added",
+    "Historical boundv4 becomes callable consuming exact in-memory weights from core; AST/file loading removed, same depth3 arithmetic and tests",
+    "Original action helper copied byte-identically from PR9644 to close original-equation checks"
+  ],
+  "historical_failures_retained": true
+}

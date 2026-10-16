@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-16T16:34:52.985156+00:00",
+  "source_closure": {
+    "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md": "1a2a389b64d4ad24f369876b637577459c1da568d2aaa6cb3a49c097446aff51",
+    "scripts/scalar_primitive_kinetic.py": "978ab14363b55f759e867555dad5b15614056a7053caf4b33fb49abbec50475f",
+    "scripts/scalar_primitive_kinetic_action.py": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+    "scripts/scalar_primitive_kinetic_core.py": "df030726044df695faacc96eefb5d899c5fbadb0f9138e3ca050de7617604ddb",
+    "scripts/scalar_primitive_kinetic_bound.py": "e06cad4f61560603371dc99b4cc9e50e4d54859149435be35c8b9526f33ac32e"
+  },
+  "scope": "Same Python/SymPy environment, isolated five-file source closure with no history archive or sibling PR",
+  "scratch": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/primitive-kinetic-portable-v1",
+  "exit_code": 0,
+  "elapsed_seconds": 29.13497233297676,
+  "stdout_sha256": "7736115296ea42850f3d283d1a22525ae6c84e088adba631e604d9b880afb954",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "output_sha256": "f142d98b33c29cffb821c92c7e5ba4ac949fa3b0e0da269576fe15b06c7f9bc2",
+  "byte_identical": true
+}

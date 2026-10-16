@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-16T16:51:39.316431+00:00",
+  "old_output_sha256": "f142d98b33c29cffb821c92c7e5ba4ac949fa3b0e0da269576fe15b06c7f9bc2",
+  "new_output_sha256": "5e8da3e3ba0f1fe59ee7376172cee450cf826babe3219fe41400faf2f9bd791e",
+  "all_non_integrity_result_content_identical": true,
+  "scope": "Exact JSON comparison excluding only source_sha256 field; controls, computed primitives, every rational kernel coefficient and bounds unchanged"
+}

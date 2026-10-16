@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-16T16:30:08.449601+00:00",
+  "canonical_source_bindings_current": true,
+  "kernel_coefficients_equal_to_corrected_independent_input": true,
+  "old77controls_and_all_moments_records_unchanged": true,
+  "new_control": {
+    "name": "fullsky_absolute_projection_factor",
+    "pass": true,
+    "residual": "0"
+  }
+}

@@ -1,0 +1,22 @@
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+updated_at: "2026-10-16T16:48:26.500614+00:00"
+lead_author: /root
+execution_mode: continuous direct research in this chat
+delivery: milestone
+base_main: 6ee7a70e06216bf248409dc3495e5043e3df36b5
+branch: codex/scalar-primitive-kinetic-20261016
+campaign_deadline: '2026-10-16T22:36:59Z'
+packaging_cutoff: '2026-10-16T22:21:59Z'
+scheduled_author: false
+current_goal: Test kinetic curvature directly from primitive photon records
+active_route: latent-field elimination and ordered adjoints with exact error enclosure
+strongest_unresolved_obligation: temporal/background/calibration observation suppliers
+independent_checks: original independent derivations, bounded comparisons and final canonical integration complete
+PR_status: prepared for one coherent review proposal
+next_action: publish one coherent reviewed milestone
+stop_condition: fixed deadline or explicit user stop

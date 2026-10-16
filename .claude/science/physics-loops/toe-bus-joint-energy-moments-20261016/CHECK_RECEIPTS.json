@@ -1,0 +1,15 @@
+{
+  "records": [
+    {
+      "kind": "historical_exact_moment_discriminator",
+      "source_alias": "bus_joint_energy_independent_check/exact_check/run_01/check_joint_moments.at_launch.py",
+      "launch_alias": "bus_joint_energy_independent_check/exact_check/run_01/LAUNCH.json",
+      "execution_alias": "bus_joint_energy_independent_check/exact_check/run_01/EXECUTION.json",
+      "scientific_replay_in_this_packet": false,
+      "child_argv_includes_B": true,
+      "secondary_launcher_annotation_complete": false,
+      "disclosure_alias": "bus_joint_energy_independent_check/SOURCE_EXPOSURE.md"
+    }
+  ],
+  "root_acceptance_execution_receipt": "Not supplied among controlling moment acceptance records; decision artifact and exact recorder source are preserved without fabricating a child receipt."
+}

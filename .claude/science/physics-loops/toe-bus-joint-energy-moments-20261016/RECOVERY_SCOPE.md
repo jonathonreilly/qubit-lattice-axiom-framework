@@ -1,0 +1,3 @@
+# Recovery scope
+
+The two complete moment bodies appear exactly once in the note and are also available as hash-deduplicated archive objects. Every member of the moment proposal, moment review and moment acceptance freezes is captured with exact aliases and source identities. The review's inherited bus source snapshots and freezes remain literal history. This packet does not claim recursive capture or fresh verification of every historical bus execution member; the separately published direct parent owns that recovery. Its accepted bodies, controlling qualifications and published canonical note are pinned here. No unavailable historical source is reconstructed.

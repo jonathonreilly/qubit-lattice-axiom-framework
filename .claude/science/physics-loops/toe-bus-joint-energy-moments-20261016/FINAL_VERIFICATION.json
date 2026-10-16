@@ -1,0 +1,332 @@
+{
+  "utc": "2026-10-16T04:20:47.960064+00:00",
+  "branch": "physics-loop/toe-bus-joint-energy-moments-20261016",
+  "base_head": "68c531309ac6dae96289aab964213b8c5f55969b",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 36025,
+    "sha256": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_joint_energy_moments_2026_10_16.py",
+    "bytes": 28920,
+    "sha256": "77661a31635bf2faa2680febc570f1f9222068346aaaa3a00d2e3dc719f90db4"
+  },
+  "cache": {
+    "utc": "2026-10-16T04:14:13.275703+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_joint_energy_moments_2026_10_16.py",
+      "bytes": 28920,
+      "sha256": "77661a31635bf2faa2680febc570f1f9222068346aaaa3a00d2e3dc719f90db4"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/CANONICAL_RESULT.json",
+      "bytes": 3318,
+      "sha256": "7fe9c0cea9bfc79da09c88d526c148016f4655723e9fcb4a32cd573a1f0be1fe"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/bus_joint_energy_moments_2026_10_16.txt",
+      "bytes": 3158,
+      "sha256": "d1c8e0bf3e3aa458477bb3a5b0641f050b93f7075f1dee41d1a51e8e75635757"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "archive_count": 29,
+      "body_map": [
+        {
+          "bytes": 7871,
+          "container": "docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "end_byte_exclusive": 16450,
+          "name": "root_proposal",
+          "sha256": "86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1",
+          "source": "bus_joint_energy_root_proposal/PROPOSED_LEMMAS.md",
+          "start_byte_inclusive": 8579
+        },
+        {
+          "bytes": 19400,
+          "container": "docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "end_byte_exclusive": 35898,
+          "name": "exposed_review",
+          "sha256": "498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1",
+          "source": "bus_joint_energy_independent_check/REVIEW.md",
+          "start_byte_inclusive": 16498
+        }
+      ],
+      "historical_programs_replayed": 0,
+      "mathematics_or_retention_certified": false,
+      "note_sha256": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49",
+      "parent_binding": {
+        "canonical_parents": [
+          {
+            "acceptance_sha256": "cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726",
+            "accepted_body_intervals": [
+              {
+                "bytes": 40500,
+                "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+                "end_byte_exclusive": 60317,
+                "name": "author_bus_body",
+                "sha256": "855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2",
+                "start_byte_inclusive": 19817
+              },
+              {
+                "bytes": 23433,
+                "container": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+                "end_byte_exclusive": 83919,
+                "name": "exposed_bus_review",
+                "sha256": "cda68e9f414bbc5d5baac5fca8f88a9324691c4e38b5569589ecb81c478458e7",
+                "start_byte_inclusive": 60486
+              }
+            ],
+            "bytes": 83919,
+            "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+            "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+            "used_contract": "Complete joint code K0J=JF, commuting secular D, source-only full-space A2, bus-vacuum V, reserves/loads, finite corrector and actual-time target contract."
+          }
+        ],
+        "source_revision": "Published parent PR9631 HEAD68c531309ac6dae96289aab964213b8c5f55969b; future integration base not observed",
+        "transitive_premises": [],
+        "upstream_history": "Parent fully supplies its mathematical construction; its older source exposures are not additional imported theorem parents."
+      },
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "source_count": 38
+    },
+    "scope_lines": [
+      "per_element: exact source identities only; no physical element executed",
+      "per_site: complete-space text preserved; no physical site measured",
+      "per_mode: same-installed-K moment contract retained; no science replay",
+      "per_block: historical executed source and unchanged streams verified only",
+      "lattice_wide: native suppliers and independent retained audit remain separate"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-16T04:14:26.399832+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_joint_energy_moments_2026_10_16.py",
+      "bytes": 28920,
+      "sha256": "77661a31635bf2faa2680febc570f1f9222068346aaaa3a00d2e3dc719f90db4"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/MUTATION_RESULTS.json",
+      "bytes": 6813,
+      "sha256": "32b89267aa4de671de2374d13f10c223092ab639ad21720a5cb7f19c4c2856df"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 86,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; independent retained audit remains separate."
+  },
+  "graph": {
+    "utc": "2026-10-16T04:16:43.150331+00:00",
+    "old_nodes_preserved": 7150,
+    "old_edges_preserved": 16113,
+    "new_node": {
+      "claim_id": "bus_joint_energy_moments_bounded_theorem_note_2026-10-16",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "strongly_regular_bus_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49",
+      "path": "docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "runner_path": "scripts/bus_joint_energy_moments_2026_10_16.py",
+      "title": "Joint-code moment comparison for the conditional fixed-strength bus"
+    },
+    "new_edges": [
+      {
+        "from": "bus_joint_energy_moments_bounded_theorem_note_2026-10-16",
+        "to": "strongly_regular_bus_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "old_roots_preserved": true,
+    "new_roots": [],
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10470620,
+      "sha256": "2e6b63a90cd5252f34ae9fc632e9c0b4a9df1f4bdc7c026bd0ba8f54f8d3fd16"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1021029,
+      "sha256": "93b3f25007a5156266d8aee61607287373b39ee0e5f83a25067c5a0085f40dcb"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "6b0c4956c85cb6b728d5b04e2d49bc4ad13855bb4ca7f3183c8ef6c8f8914c7a"
+    },
+    "failed_action": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/actions/graph/EXECUTION.json",
+      "bytes": 931,
+      "sha256": "5be8b73d582c321ff01f6f5a0ae1223e9badd797d5b1e744ec85d7207380c735"
+    },
+    "method": "Recovery adds one node and one edge to the original baseline; roots remain exactly unchanged.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-16T04:14:22.861728+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2306,
+          "sha256": "ecbb8b635494b3e63e1c97ecdf0ec7ceb446a979ab3e04c9afea15b606d5ca3c"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest pin",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2360,
+          "sha256": "96a7c9bcae619cead1667de3f44b3b2face66df99dff0280a367e01443048490"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Body interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2337,
+          "sha256": "ccb48b6e6b6116fea3e7c0f023c5735af866878e48d74e5e3dd0d4273321b78a"
+        }
+      },
+      {
+        "case": "wrong_body_role",
+        "expected_failure": "Exact two immutable body roles",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_wrong_body_role/EXECUTION.json",
+          "bytes": 2348,
+          "sha256": "ee9d62a7be58fb6d748a4e65610187b907759a98e829e38d4cce3a3b0ec66d57"
+        }
+      },
+      {
+        "case": "unrelated_parent",
+        "expected_failure": "One direct parent",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_unrelated_parent/EXECUTION.json",
+          "bytes": 2353,
+          "sha256": "68341a0a4a82b8fc20c888fcf4275da525930290dd9c558efa072cb4e4482301"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical draft placeholders",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2366,
+          "sha256": "c590f34b7b7d7233ffa8a344b3f01d9d5c0547f72ffb7faea71db532316c79c0"
+        }
+      },
+      {
+        "case": "retained_scope",
+        "expected_failure": "Scope field",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_retained_scope/EXECUTION.json",
+          "bytes": 2342,
+          "sha256": "23d6f7e1b5e2dd73c349aee0d26036e6eb9cec1fdb9f320368712616fc13e25a"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Canonical note/base linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2325,
+          "sha256": "a981bc97ba8e3b76fa9e93d7f5f9cf8d8f499a924dc61c4f0637f7a21931446c"
+        }
+      },
+      {
+        "case": "root_review_identity",
+        "expected_failure": "Exact root review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_root_review_identity/EXECUTION.json",
+          "bytes": 2379,
+          "sha256": "2d66abc967ec2df446ce0423a337bf68f015e30206ca2768ee8f227996088b98"
+        }
+      },
+      {
+        "case": "root_exit",
+        "expected_failure": "Captured successful execution required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_root_exit/EXECUTION.json",
+          "bytes": 2312,
+          "sha256": "7af2cfc466c8f61058d275e2da388a4be9866ad7bd87b602f956517436c22b39"
+        }
+      },
+      {
+        "case": "root_argv",
+        "expected_failure": "Actual launched review source",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_root_argv/EXECUTION.json",
+          "bytes": 2311,
+          "sha256": "99440d0dab85cdee1d3fd6c604d349a1e33bee827b773366fc03130a86c8dead"
+        }
+      },
+      {
+        "case": "canonical_identity",
+        "expected_failure": "Exact canonical review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_canonical_identity/EXECUTION.json",
+          "bytes": 2367,
+          "sha256": "656ac95ab9ae741eb9a2b0ccdaeca7cf1c558577f7ad7c42dd84f8532c18eb22"
+        }
+      },
+      {
+        "case": "canonical_argv",
+        "expected_failure": "Actual launched review source",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_canonical_argv/EXECUTION.json",
+          "bytes": 2343,
+          "sha256": "e3b114a18a1471b981c3d289b07865474180e395112e195992f30b15dc95db2a"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual local base identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2336,
+          "sha256": "e611081fc2bd0ef6b6e6b8df95862585828546159fe30ce6344ed6901bf81cb0"
+        }
+      },
+      {
+        "case": "acceptance_exit",
+        "expected_failure": "Actual acceptance execution",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/graph_recovery_01/runs/mutation_acceptance_exit/EXECUTION.json",
+          "bytes": 2348,
+          "sha256": "500f567015e5f70944e032bb7ff052edcb7940723474935431045fa4d94a9c46"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 14,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Same installed K, actual reserves, complete joint code, cubic-zero premises and off-code A2-square remain explicit. All-time first/second moments and statewise variance do not extend the finite state window. Extra xi-smallness recomputes actual T, phases and physical calibration. Preparation B_N^j e and numerical precision terms remain paid. Strong bus hypotheses and native suppliers remain supplied; no measured-energy, work, stopping or retained claim."
+  ]
+}

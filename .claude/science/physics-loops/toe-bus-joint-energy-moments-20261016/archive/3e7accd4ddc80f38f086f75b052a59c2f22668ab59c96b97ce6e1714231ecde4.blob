@@ -1,0 +1,7 @@
+# Current checkpoint
+
+The exposed joint-code moment recomputation is complete. `REVIEW.md` derives both compressed moments including the off-code A2-square contribution and scalar reserve cross term; proves all-time first/second/variance bounds; independently counts the full positive-block and scalar loads; and checks compatibility of additional xi-smallness with the actual parent state/runtime/phase budgets.
+
+All three parent arguments were read fully. The parent review freeze filename correction and subsequent qualified source acceptance are recorded in `SOURCE_EXPOSURE.md` and `SOURCE_MANIFEST.json`. Eight exact parent files are copied. The main check was written independently of parent executable code and one exact dimension-32 run exited zero. The source-at-launch, actual child command/cwd/timing/result and full streams remain under `exact_check/run_01/`. The wrapper's secondary argv annotation lacks its interpreter flag; the actual tool command is separately transcribed, with no rerun or receipt edit.
+
+No load-bearing defect was found under the stated premises. Open obligations remain the parent's stronger spectral/geometric domain, effective rational-target qualification, expensive finite design and code propagation, source preparation and actual long-time calibration, and operational energy interpretation. This is a conditional mathematical review, not retained status or physical validation. Next decision belongs to root after reviewing the sealed packet. No editable prompt changed.

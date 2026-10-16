@@ -1,0 +1,79 @@
+# Joint-code moment comparison for the conditional fixed-strength bus
+
+Status: root mathematical proposal, not yet independently checked or accepted. It depends conditionally on the exact algebra and error bounds in strongly_regular_bus_candidate/DERIVATION.md, SHA256 855ee2555465e460147dfd6512ce7c942a4d851e3aee552e2675ff19550980d2, whose own exposed check is still pending. It is not a theorem for the original generic Lie-certificate domain. The purpose is to retain source energy recoil in a finite comparison without propagating the complete high sector.
+
+## 1. Exact objects and scope
+
+Use the parent's actual finite source length N, bus, code isometry J, code generator F and secular D. On the full physical Hilbert space,
+
+    K = K0 + xi V + xi^2 A2 + R(xi) I,
+    K0 J = J F,  J*J=I,  J* V J=0,  [F,D]=0.
+
+Here J includes bus vacuum and all symmetric source sectors, with identity on every old factor. A2 is the actual source-only counterterm, not its projection; it preserves bus vacuum but may leave source symmetry. V changes bus excitation by one when applied to a vacuum vector. All reserves are the actual installed R(xi), not norm bounds. Define
+
+    U_c(t)=exp[-it(F+xi^2 D)],
+    C_xi(t)=exp[-it R(xi)] J U_c(t).
+
+C_xi is exactly an isometry from the complete code, and C_xi(0)=J. It retains joint old/source evolution and source correlations. It is not the parent's product mean-field target and is not a dressed initial state. The physical nominal evolution is A_xi(t)=exp(-itK)J. The parent's bare-code estimate gives ||A_xi(t)-C_xi(t)|| <= xi C_corr on 0<=t<=T+w, T=t_*/xi^2. That input/operator estimate also holds after tensoring an arbitrary passive reference.
+
+The first and second moments below are those of the very same physical K. Moment differences mean operator norms on the full code, so they imply uniform expectation bounds for all code/reference density inputs. Conservation under A_xi gives A_xi(t)*K^j A_xi(t)=J*K^j J.
+
+## 2. Projected moments and exact cancellation
+
+Write A_c=J*A2 J, V_2=J*V^2 J, A_2=J*A2^2 J, and F_R=F+R(xi)I. Then
+
+    J*K J = F_R + xi^2 A_c,
+    J*K^2 J = F_R^2
+        +xi^2 [V_2 + {F_R,A_c}] +xi^4 A_2.       (1)
+
+To check the expansion: K0 J=JF and its adjoint eliminate both linear V cross terms by J*VJ=0. They convert the K0/A2 cross terms to {F,A_c}. The scalar adds the remaining 2R A_c. Both cubic terms J*VA2J and J*A2VJ vanish because A2 preserves bus vacuum and V changes its excitation by one. This selection rule concerns the actual full-space A2, including its off-symmetric action. The quartic term is J*A2^2J, generally not (J*A2J)^2. No positivity or invariance of A2 on the code is asserted.
+
+Since U_c commutes with F_R, the leading terms in (1) cancel exactly in C_xi(t)*K^j C_xi(t)-J*K^jJ. For bounds v>=||V||, a2>=||A2|| and f_R>=||F||+R(xi),
+
+    E1(t) <= 2 xi^2 a2,
+    E2(t) <= 2 xi^2 [v^2+2 f_R a2] +2 xi^4 a2^2. (2)
+
+These inequalities hold for every real t, independent of the parent's finite state-comparison window. Their derivation uses ||U*XU-X||<=2||X||, ||V_2||<=v^2, ||A_2||<=a2^2 and ||A_c||<=a2. They do not identify C_xi with actual full evolution outside that window. For any fixed density input, if B>=||K|| then the variance discrepancy is at most E2+2B E1, since each mean has magnitude at most B.
+
+In particular, retaining the joint code dynamics can carry finite energy transfer between old plant and source. Replacing it by an unchanged free source product erases that transfer and does not inherit (2).
+
+## 3. A cap-compatible choice of xi with separate units
+
+The parent first fixes N, all bus/source spectral data, calibration, r_l, counterterms and finite corrector bounds, then chooses xi. Thus v and a2 are finite and known before this additional refinement, although they can be enormous and N-dependent. Further decreasing xi preserves all parent state, window and incident-load inequalities; the duration and phases must be recomputed at the actual xi.
+
+For an explicit xi-independent bound on f_R, let q be the number of sources, b the number of bus sites, and M_E the parent's uniform bound on positive base onsite frequencies, hoppings and J_F. Its physical load choices are xi ell_V<=J1 and xi^2 ell_2<=J2, with J1=J2=1/t_*. They imply
+
+    R(xi) <= R_s+(b-1)M_E+J1/2+qN J2,
+    ||F|| <= h+qN M_E.
+
+Indeed R_bus has b-1 edges, ell_V=2R_V, and R_A2<=sum_l[N|u_l|+(N-1)|v_l|]<=qN ell_2. Set
+
+    Fbar_N=h+qN M_E+R_s+(b-1)M_E+J1/2+qN J2,
+    C2_N=v^2+2 Fbar_N a2+a2^2.
+
+For xi<=1, (2) becomes E2<=2xi^2 C2_N. Choose independent positive moment tolerances delta1 (energy) and delta2 (energy squared). In addition to all parent conditions, require
+
+    xi <= sqrt[delta1/(2(a2+1/t_*))],
+    xi <= sqrt[delta2/(2(C2_N+1/t_*^2))].          (3)
+
+This has a strictly positive finite solution with dimensionless ratios even if a2=0. It guarantees E1<=delta1 and E2<=delta2 uniformly in t. State comparison and finite-window target accuracy continue to follow from the parent's conditions at the new actual duration. A bound on the full installed positive-block sum is
+
+    B_N = h+R_s+(3b-2)M_E+q(3N-2)M_E+J1+qN J2. (4)
+
+Here bus onsites/positive edges cost bM_E+2(b-1)M_E; source fields/ferromagnetic edges cost qNM_E+2q(N-1)M_E; the total weak positive V blocks cost at most J1; and all positive counterterms cost at most qNJ2. Equation (4) bounds ||K||, not thermodynamic work. It also charges scalar reserves. The incident cap remains J_*=R_s+7M_E+J1+J2. No favorable upper bound on the added duration or coefficient precision follows from (3).
+
+For variance accuracy delta_var, one can select delta2<=delta_var/2 and delta1<=delta_var/(4B_N), with compatible units, before (3). This is not obtained from state error alone.
+
+## 4. What is reduced and what remains expensive
+
+The propagated code has dimension d(N+1)^q and its generator D is exactly the parent's displayed complete code operator, including every source sector and compensated self-energy. At fixed old plant q is fixed, so this dimension is polynomial in N; it can be enormous as a function of the old plant. There is no high-block propagation in C_xi. Computing/certifying the parent's complete Q/P gap and corrector constants still involves a potentially expensive finite search or complete-space bounds. This proposal does not solve that design cost or provide an implemented numerical propagation package.
+
+Numerical approximation of C_xi must itself be an isometry if one uses the simple bound 2B_N^j zeta for an operator-norm evaluation error zeta. A physical preparation trace error e may cost B_N e or B_N^2 e in moments. Any changed physical generator has different moments; long-time calibration, release, spectral support and clock/energy identification remain separate obligations.
+
+The controller source input still has the parent's T-dependent phases and remains supplied. Exact existence and an effective finite-precision target selection must retain the parent's eventual review qualification at zero target entries. No native preparation, permanent stopping, reset/reuse, laboratory energy observable or generic coupled-plant theorem is inferred.
+
+## 5. Verification status and next decisive check
+
+This is an analytic root derivation from the stated conditional parent, with no new scientific executable run. A separate check should recompute the cubic selection rule with off-code source counterterms, all reserve factors, both moment expansions and the resource quantifier order. A finite full-matrix example should compare J*K^2J with (1) and deliberately omit J*A2^2J or a reserve term to ensure the check distinguishes the equations. More check counts do not establish the all-parameter theorem. A defect must narrow the claim rather than be hidden by the parent's state error.
+
+No canonical files, physical axioms or editable prompts were changed by this proposal.

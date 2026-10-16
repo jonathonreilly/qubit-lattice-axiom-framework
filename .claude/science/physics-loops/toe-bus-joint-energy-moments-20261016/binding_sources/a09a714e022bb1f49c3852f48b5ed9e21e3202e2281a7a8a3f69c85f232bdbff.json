@@ -1,0 +1,39 @@
+{
+  "start_utc": "2026-10-16T03:45:56.139321+00:00",
+  "end_utc": "2026-10-16T03:45:56.951330+00:00",
+  "argv": [
+    "gh",
+    "pr",
+    "view",
+    "9631",
+    "--repo",
+    "jonathonreilly/qubit-lattice-axiom-framework",
+    "--json",
+    "number,state,isDraft,headRefOid,headRefName,baseRefName,url"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_joint_energy_integration_corrected/bus_joint_energy_common.py",
+    "bytes": 55177,
+    "sha256": "26a90a28b3608fc5c18ce357d419e036b77b710195216d92879a599de2bf572e"
+  },
+  "child_source_at_launch": null,
+  "finished_utc": "2026-10-16T03:45:56.951367+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.8117757085710764,
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/runs/prepare_parent_base/LAUNCH.json",
+    "bytes": 767,
+    "sha256": "26746c0071c9431491ad6f728cbba9f001ef76672bcb50fbc95458f5773d06e5"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/runs/prepare_parent_base/stdout",
+    "bytes": 319,
+    "sha256": "abb3be119ee187f609f67cee0cb1a4a2b99a31de8ba4d68100166257ada089f3"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_joint_energy/runs/prepare_parent_base/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

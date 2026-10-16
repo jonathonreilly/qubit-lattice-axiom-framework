@@ -1,0 +1,3 @@
+# Assumptions and imports
+
+Sole direct mathematical parent: qualified strong spectral bus, exact canonical note and accepted bodies pinned in PARENT_BINDING. Its complete spectral, local-port, computable-data, vacant-geometry, source preparation, isolation and calibration premises remain supplied. The code lemma explicitly requires K0J=JF, J*J=I, J*VJ=0, [F,D]=0, bus-vacuum-preserving full A2 and zero vacuum block of V. Same installed K and actual reserves are used throughout. Parent state approximation is finite-window; moment identities are all-time. No generic Lie-certificate implication or extra physical controller supplier is imported.

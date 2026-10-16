@@ -1,0 +1,3 @@
+# Discriminators and failed routes
+
+The unchanged exact fixture detects replacing J*A2^2J by (J*A2J)^2, dropping reserve cross terms, allowing a bus-changing A2 while claiming cubic cancellation, and dropping [F,D]=0. These are premise/formula discriminators, not counterexamples to the stated theorem. Replacing joint source evolution with an unchanged free-source product does not inherit its moment cancellation. Trace readiness alone does not pay B_N^j e. Historical read/directory failures, omitted secondary launcher -B annotation and retrospective disclosure remain in SOURCE_EXPOSURE; no scientific failure or rerun occurred in the moment checker. The inherited bus parent separately preserves its failed calculations, missing launcher bytes and invalid first seal.

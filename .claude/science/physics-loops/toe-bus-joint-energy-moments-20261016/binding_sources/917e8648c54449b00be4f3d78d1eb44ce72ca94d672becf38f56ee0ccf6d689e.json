@@ -1,0 +1,27 @@
+{
+  "observed_commit": "68c531309ac6dae96289aab964213b8c5f55969b",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/binding_sources/d77e3c7b2960aedd309d3a3cc4a0269b89de944bd284508b7d5b32df9f294233.json",
+      "bytes": 1582,
+      "sha256": "d77e3c7b2960aedd309d3a3cc4a0269b89de944bd284508b7d5b32df9f294233"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/binding_sources/26a90a28b3608fc5c18ce357d419e036b77b710195216d92879a599de2bf572e.py",
+      "bytes": 55177,
+      "sha256": "26a90a28b3608fc5c18ce357d419e036b77b710195216d92879a599de2bf572e"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/binding_sources/bd7bf5ba30fed9837023c5b2ca91cc6544110e68b25d2adc61528e126b848f52.blob",
+      "bytes": 41,
+      "sha256": "bd7bf5ba30fed9837023c5b2ca91cc6544110e68b25d2adc61528e126b848f52"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-joint-energy-moments-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual local stacked base HEAD, separately checked by clean_base; origin/main is separately pinned authority."
+}

@@ -1,0 +1,36 @@
+{
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "arithmetic": "exact rational/Gaussian-rational and sqrt(3); no floating tolerance",
+  "physical_dimension": 32,
+  "code_dimension": 8,
+  "source_length": 3,
+  "verified": [
+    "bare code isometry and K0 invariance",
+    "both compressed moment polynomials exactly",
+    "bus-vacuum cubic cancellation",
+    "A2-square off-code contribution exactly",
+    "same-F joint unitary moment/variance bounds using stronger Frobenius bounds"
+  ],
+  "off_code_A2_square_diagonal": [
+    "0",
+    "0",
+    "32/729",
+    "0",
+    "0",
+    "0",
+    "32/729",
+    "0"
+  ],
+  "omitted_quartic_witness_at_xi_1_over_5": "32/455625",
+  "omitted_reserve_cross_witness_at_xi_1_over_5": "-5224/91875",
+  "invalid_bus_changing_A2_cubic_nonzero": true,
+  "noncommuting_code_unitary_leading_mean_error": "2",
+  "first_error_frobenius_squared": "8/30625",
+  "first_bound": "44/315",
+  "second_error_frobenius_squared": "20024818/937890625",
+  "second_bound": "7749122/2480625",
+  "variance_error_for_code_basis_1": "3/625",
+  "variance_bound": "6119614/826875",
+  "limits": "One reduced one-bus N=3 exact algebra fixture. Not full routed-parent realization, all-N proof, state-corrector simulation, preparation or physical-energy validation."
+}

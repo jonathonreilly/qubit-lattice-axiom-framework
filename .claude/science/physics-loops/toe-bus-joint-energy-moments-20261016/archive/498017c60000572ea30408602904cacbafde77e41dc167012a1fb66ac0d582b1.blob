@@ -1,0 +1,261 @@
+# Independent recomputation of the joint-code moment proposal
+
+Status: exposed, same-inherited-model mathematical recomputation. The exact root proposal and conditional bus arguments were read before this derivation. This is not a blind derivation, a different-model replication, a retained audit, or a physical energy/preparation theorem. All source identities and coverage are preserved separately.
+
+## 1. Conclusion and premises
+
+The proposed compressed moments, uniform-in-time bounds, load-based full norm allowance, and additional positive `xi` choice are correct under the stated bus hypotheses. No load-bearing defect was found. The quartic contribution from off-code counterterm action is essential; the exact finite check below detects its omission. The supplied reserve must remain in the second-moment cross term even though the comparator's scalar phase cancels from expectation values.
+
+The precise mathematical result concerns the **same installed nominal static generator**
+
+\[
+ K=K_0+\xi V+\xi^2 A_2+R(\xi)I,
+\]
+
+and the original isometric code inclusion \(J\), including every old factor, bus vacuum, and every symmetric excitation sector of every source. Its algebraic premises are
+
+\[
+ K_0J=JF,\quad J^*J=I,\quad J^*VJ=0,\quad [F,D]=0,
+\]
+
+with all indicated generators Hermitian. In addition, let \(P_b\) project to bus vacuum, including *all* source states. The actual source-only counterterm preserves this space and
+
+\[
+ A_2P_b=P_bA_2P_b,\qquad P_bVP_b=0.                 \tag{1}
+\]
+
+These conditions hold for the parent's displayed source density counterterms and bus-creating port/source perturbations. Merely knowing \(J^*VJ=0\) would not suffice to remove a cubic term after an off-code source excursion; the stronger bus-vacuum selection rule (1) is used.
+
+Define
+
+\[
+ U_c(t)=e^{-it(F+\xi^2D)},\quad
+ C_\xi(t)=e^{-itR(\xi)}JU_c(t).
+\]
+
+Then \(C_\xi(t)^*C_\xi(t)=I\) and \(C_\xi(0)=J\) exactly. It propagates joint old/source states and retains their correlations. All operator statements below tensor with arbitrary passive reference identities without changing their bounds.
+
+The compressed-moment lemma itself does not need a spectral gap. The parent's complete Q/P separation and corrector are required to make this comparator a state approximation for its desired gate on \(0\leq t\leq T+w\), \(T=t_*/\xi^2\). This review does not weaken or replace those parent premises. The root's subsequently supplied qualified source acceptance was read as provenance and scope information, not used as a substitute for the following recomputation.
+
+## 2. Exact compression of K and K squared
+
+Put
+
+\[
+ A_c=J^*A_2J,\quad V_c^{(2)}=J^*V^2J,\quad
+ S_c=J^*A_2^2J,\quad F_R=F+R(\xi)I.
+\]
+
+Because \(K_0\) is Hermitian, invariance implies \(J^*K_0=FJ^*\), as an identity on the complete physical space. Therefore
+
+\[
+ \boxed{J^*KJ=F_R+\xi^2A_c,}                       \tag{2}
+\]
+
+and full expansion gives
+
+\[
+\begin{split}
+ J^*K^2J={}&F_R^2+\xi J^*\{K_0+RI,V\}J
+       +\xi^2\big[V_c^{(2)}+\{F_R,A_c\}\big]\\
+       &+\xi^3J^*\{V,A_2\}J+\xi^4S_c.
+\end{split}
+\]
+
+The linear term vanishes since its two summands are \(F_RJ^*VJ\) and \(J^*VJF_R\). For the cubic term, \(A_2J\) is in bus vacuum even if it leaves source symmetry; applying \(V\) takes it to a one-bus-excitation space orthogonal to \(J\). Thus \(J^*VA_2J=0\); Hermitian adjunction gives \(J^*A_2VJ=0\). Consequently
+
+\[
+ \boxed{J^*K^2J=F_R^2+
+ \xi^2\big[V_c^{(2)}+\{F_R,A_c\}\big]+\xi^4S_c.}  \tag{3}
+\]
+
+This confirms the root proposal including all reserve factors. In particular the anticommutator contains \(2R(\xi)A_c\). The normalized trace scalar of the full Hamiltonian is a separate ledger; no trace normalization or phase convention removes this term.
+
+Let \(P=JJ^*\) and \(Q=I-P\). The exact identity
+
+\[
+ S_c=A_c^2+(QA_2J)^*(QA_2J)                       \tag{4}
+\]
+
+shows why replacing \(S_c\) by \(A_c^2\) is generally wrong. The omitted matrix is positive semidefinite. It can be nonzero while the counterterm preserves bus vacuum: the leakage in (4) can lie entirely in nonsymmetric source sectors. No invariance of source symmetry under \(A_2\) is needed or assumed.
+
+The source ferromagnetic terms vanish on the initial code as full operators, together with their scalar/nonidentity pieces. Their absence from \(F\) is not an arbitrary scalar subtraction. Equation (3) also explains why source energies reached by \(A_2J\) do not supply an extra \(K_0A_2\) term after compression: the exact invariance identity already fixes that cross term. The off-code action is still paid by (4).
+
+## 3. Uniform first, second, and variance comparison
+
+Since \([F,D]=0\), \(U_c(t)\) commutes with \(F_R\) for every real \(t\). The actual scalar \(R(\xi)\) is constant in time for each installed device. From (2),
+
+\[
+ C_\xi(t)^*KC_\xi(t)-J^*KJ
+    =\xi^2\big[U_c(t)^*A_cU_c(t)-A_c\big].        \tag{5}
+\]
+
+The \(F_R^2\) term in (3) is also invariant. Let \(v\geq\|V\|\), \(a_2\geq\|A_2\|\), and \(f_R\geq\|F\|+R(\xi)\). The reserve is nonnegative in this physical family. Using \(\|U^*XU-X\|\leq2\|X\|\),
+
+\[
+\begin{split}
+ E_1(t)&:=\|C_\xi(t)^*KC_\xi(t)-J^*KJ\|
+       \leq2\xi^2a_2,\\
+ E_2(t)&:=\|C_\xi(t)^*K^2C_\xi(t)-J^*K^2J\|\\
+       &\leq2\xi^2\big[v^2+2f_Ra_2\big]+2\xi^4a_2^2.           \tag{6}
+\end{split}
+\]
+
+For clarity, the anticommutator has norm at most \(2f_Ra_2\); conjugation minus its initial value costs another factor two. The quartic term uses the **full** norm allowance \(a_2\), not merely \(\|A_c\|\).
+
+For \(A_\xi(t)=e^{-itK}J\), exact static conservation gives \(A_\xi(t)^*K^jA_\xi(t)=J^*K^jJ\). Thus (6) compares the comparator with the conserved bare moments of the same generator. For any fixed code/reference density input, both means have magnitude at most \(B\) when \(B\geq\|K\|\). Its variance discrepancy therefore satisfies
+
+\[
+ |\operatorname{Var}_{C_\xi(t)}(K)
+       -\operatorname{Var}_{J}(K)|
+ \leq E_2(t)+2B E_1(t).                          \tag{7}
+\]
+
+Variance is a state-dependent nonlinear quantity; (7) is uniform over the allowed states, not a purported linear variance operator.
+
+Equations (5)–(7) hold for **all real times**. This does not extend the parent's state-isometry approximation beyond \([0,T+w]\): agreement of two moments does not establish agreement of states. These bounds do not multiply the parent's ordinary state error by a growing energy norm. They instead cancel the exactly conserved leading code energy before estimating the remaining terms.
+
+This cancellation explains the importance of retaining joint source dynamics. A free unchanged source product with a non-energy-commuting old gate need not conserve \(F\); it does not inherit (5) or (6). The initial product phases can depend on \(T\), because the operator estimates are uniform on the entire code and hence on every such input.
+
+## 4. Full physical norm and reserve bounds from the actual loads
+
+Use the parent's \(q=d(d-1)/2\) sources, common length \(N\), fixed bus size \(b=2(d-1)+4q\), and common base energy bound \(M_E\). The bus alone is a tree with \(b-1\) edges. A reserved bus exchange block has norm \(2|t_e|\). A source ferromagnetic block \(J_F(I-\mathrm{SWAP})\) has norm \(2J_F\). Each source field has norm \(\omega_l\leq M_E\). Hence the total base added-block allowances are
+
+\[
+ bM_E+2(b-1)M_E=(3b-2)M_E,
+ \quad qNM_E+2q(N-1)M_E=q(3N-2)M_E.              \tag{8}
+\]
+
+The parent's actual weak reserve and positive-block load are
+
+\[
+ R_V=v_p\|B_p\|+\sum_l r_l,\qquad \ell_V=2R_V.
+\]
+
+Therefore all weak positive blocks together have norm sum \(\xi\ell_V\leq J_1\), whereas their scalar reserve alone satisfies \(\xi R_V\leq J_1/2\). This factor two is required.
+
+For source counterterm coefficients \(u_l,v_l\), the complete positive onsite/edge block norms are \(\xi^2|u_l|\) and \(\xi^2|v_l|\). With \(\ell_2=\max_l(|u_l|+2|v_l|)\),
+
+\[
+\begin{split}
+ \sum_l\big[N|u_l|+(N-1)|v_l|\big]
+    &\leq qN\ell_2,\\
+ \xi^2R_{A_2}&\leq\xi^2qN\ell_2\leq qNJ_2.       \tag{9}
+\end{split}
+\]
+
+Here the scalar reserve uses only negative parts and is no larger than the first sum; the total reserved counterterm block norm sum is bounded by the same \(qNJ_2\). No projection to a low-excitation source sector was used.
+
+Since \(\|H\|\leq h\), \(R_s\geq h\), and \(R_{\rm bus}\leq(b-1)M_E\), equations (8)–(9) prove
+
+\[
+\begin{split}
+ R(\xi)&\leq R_s+(b-1)M_E+J_1/2+qNJ_2,\\
+ \|F\|&\leq h+qNM_E,\\
+ \overline F_N&=h+qNM_E+R_s+(b-1)M_E+J_1/2+qNJ_2,\\
+ \boxed{B_N}&=h+R_s+(3b-2)M_E+q(3N-2)M_E+J_1+qNJ_2
+              \ \geq\|K\|.                     \tag{10}
+\end{split}
+\]
+
+Thus the root's displayed `Fbar_N` and `B_N` are valid. The fixed old \(H\) need not have a positive decomposition into its own channels: its norm is paid by \(h\), and the added scalar by \(R_s\). They are not quietly combined into an assumption of separately positive old terms.
+
+The same installed-block accounting retains the parent's incident bound
+
+\[
+ J_*=R_s+7M_E+J_1+J_2,
+ \qquad J_1=J_2=1/t_*.
+\]
+
+This is a cap on **added incident norms**, including positive reserves. It is not an accuracy-independent bound on the total norm \(B_N\), total energy, preparation work, or norm-time action. The total bound in (10) can grow with \(N\).
+
+## 5. Joint choice of state and moment accuracy
+
+Fix an instance in this order: target (or qualified rational target), state accuracy and source size \(N\); finite spectral choices and full separation; routed calibration, amplitudes and full counterterms; corrector/load bounds. At that point \(v,a_2,C_{\rm corr},\ell_V,\ell_2\) are finite and independent of the subsequent \(\xi\) and source phases. They may be enormous and \(N\)-dependent.
+
+Set
+
+\[
+ C_{2,N}=v^2+2\overline F_N a_2+a_2^2.
+\]
+
+For \(0<\xi\leq1\), equations (6) and (10) give \(E_2\leq2\xi^2C_{2,N}\). In addition to the parent's five positive upper bounds, impose
+
+\[
+ \xi\leq\sqrt{\frac{\delta_1}{2(a_2+1/t_*)}},
+ \qquad
+ \xi\leq\sqrt{\frac{\delta_2}{2(C_{2,N}+1/t_*^2)}}.              \tag{11}
+\]
+
+Here \(\delta_1>0\) has energy units and \(\delta_2>0\) has energy-squared units. All ratios in (11) are dimensionless. The added denominators are mathematical positive slack, not newly installed physical terms. They handle \(a_2=0\) or vanishing quadratic coefficients without a zero denominator. A strictly positive \(\xi\) satisfying the finite collection exists and gives \(E_1\leq\delta_1\), \(E_2\leq\delta_2\) at all times. For variance tolerance \(\delta_{\rm var}>0\), choosing \(\delta_2\leq\delta_{\rm var}/2\) and \(\delta_1\leq\delta_{\rm var}/(4B_N)\) proves (7) within \(\delta_{\rm var}\). Separate first/second tolerances can be enforced simultaneously by taking the smaller budgets.
+
+For a family with growing \(N\), simply saying \(\xi\to0\) would not be sufficient: the coefficients in (6) can grow. The explicit instance-dependent conditions (11) pay that growth. With positive computable input tolerances and certified coefficient bounds, a positive rational \(\xi\) can be found strictly below all these positive computable upper bounds. No bound on search time, required precision, or resulting duration follows.
+
+After decreasing \(\xi\), set the **new actual** \(T=t_*/\xi^2\). The original error estimates continue to hold because
+
+\[
+\begin{split}
+ \text{bare-code error}&\leq\xi C_{\rm corr},\quad0\leq t\leq T+w,\\
+ \xi^2(T+s)B_L/\sqrt N
+     &=(t_*+\xi^2s)B_L/\sqrt N\leq(t_*+w)B_L/\sqrt N,\\
+ \text{window error}&\leq\xi^2w\|L\|/t_*.
+\end{split}                                                     \tag{12}
+\]
+
+The first and third bounds improve when \(\xi\) is reduced, while the fixed upper bound on the second is unchanged. Both incident loads also decrease. The original finite-time corrector remains applicable at the longer actual duration because its derivation already substitutes \(T=t_*/\xi^2\): the cubic residual integrated to that duration is order \(\xi\), not an unpriced fixed-time estimate.
+
+For each active source the actual input phase must be recomputed as
+
+\[
+ \phi_l=\arg L_{ab}-\arg\kappa_{ab}+\omega_lT,
+\]
+
+or by the parent's qualified computable unit-ratio formulation. The target comparator phase must likewise be recomputed as
+
+\[
+ \chi(T+s)=R(\xi)(T+s)+c_{\rm old}\xi^2(T+s)+\theta_0.          \tag{13}
+\]
+
+The free source factors and both literal old-H flows use the same new physical time. Hardware coefficients, calibration, \(D\), and the finite corrector constants do not depend on these final source phases. Holding an earlier \(T\) or phase while shrinking \(\xi\) would not establish the parent target contract.
+
+Longer runtime tightens physical integrated calibration and timing requirements; these must be supplied again at the new duration. A promise previously made only through a shorter duration cannot simply be reused. The nominal mathematical compatibility in (12) is not a native long-time calibration/preparation supplier.
+
+## 6. Scope, effectiveness, and remaining costs
+
+The comparator propagates the code of dimension \(d(N+1)^q\). There is no high-block propagator in its definition. For fixed old plant, \(q\) is fixed and this dimension is polynomial in \(N\); no polynomial dependence on old-qubit count, runtime, precision or gap-search cost is implied. Certifying full separation and obtaining corrector bounds can still require expensive complete-space calculations. The present proof does not replace those tasks by one-excitation checks.
+
+The parent construction requires the complete old simple spectrum, distinct positive gaps, nonzero off-diagonal energy-basis entries of the designated local port operator, computable spectral data and vacant routed geometry. The original generic Lie-certificate domain is not thereby covered. The algebraic moment lemma is reusable under its own premises, but it does not construct a gate for plants outside the parent's domain.
+
+Exact-target existence and effective target compilation remain distinct. The parent's qualified acceptance does not accept a uniform zero-support/arg decision for arbitrary computable \(L\). For an effective approximate-output version, use its separately attributed rational Hermitian \(M\), with \(\|M-L\|\leq\epsilon/32\), rational support, and working tolerance \(\epsilon/2\). The extra target trace cost is at most \(2\|M-L\|\), so the qualified parent budget remains at most \(9\epsilon/16\). Apply (2)–(13) to the **actual** device designed for \(M\), including its actual \(A_2,V,D,R\); do not identify its generator with the hypothetical exact-L device. Further reducing \(\xi\) preserves that state budget and independently pays the requested moment tolerances.
+
+The source size only needs to exceed a certified sufficient bound. Certified rational upper rounding with bounded additive excess avoids treating the exact ceiling of an arbitrary computable real as a universally computable operation. Nominal phases for nonzero rational support use unit ratios; zero entries have zero source coupling and a specified arbitrary phase. Neither choice adds a moment error because the estimates are uniform on the whole code.
+
+A numerical isometry within norm \(\zeta\) of \(C_\xi(t)\) adds at most \(2B_N^j\zeta\) to the \(j\)-th moment bound, \(j=1,2\). A general rounded matrix needs a normalization/norm allowance before invoking that estimate. At long times, coefficient error must also be propagated through the actual code evolution rather than declared a harmless phase. No implemented numerical propagation or coefficient-oracle complexity theorem is supplied here.
+
+For actual preparation trace-norm error \(e\), first- and second-moment errors can cost \(B_Ne\) and \(B_N^2e\). The state-level preparation tolerance alone therefore does not prove moment accuracy. The supplied initial source phases, exact unconditional old/reference marginal, release, continued isolation, and full-generator calibration remain separate conditions. A different physical generator or release state has different conserved moment constants. An integrated perturbation bound does not itself imply a pointwise incident-strength cap. Laboratory measured-energy identification, native source formation, thermodynamic work, permanent stopping, readable records and reset/reuse remain unresolved.
+
+## 7. Exact finite discriminator and verification limits
+
+One independent exact algebra fixture was executed. It uses one old qubit, one bus qubit and an \(N=3\) source, hence full dimension 32 and code dimension 8. Bit-transition assembly constructs the complete operators; no author/reviewer scientific code was imported. It keeps every source excitation sector and a literal old scalar. The counterterm is
+
+\[
+ A_2=-\frac27N_s+\frac49(n_1n_2+n_2n_3),
+\]
+
+which preserves bus vacuum while failing to preserve source symmetry. The actual fixture reserve is \(11/5+(19/15)\xi+(6/7)\xi^2\). It is paid separately from the full source/old operators.
+
+Exact symbolic multiplication verified (2)–(3) as polynomial matrix identities, not only at sampled \(\xi\). It found
+
+\[
+ S_c-A_c^2=\operatorname{diag}(0,0,32/729,0,0,0,32/729,0).
+\]
+
+At \(\xi=1/5\), deleting that quartic contribution gives a matrix-entry discrepancy \(32/455625\). Omitting only the reserve cross term gives an independent entry discrepancy \(-5224/91875\). Both deliberately wrong formulas are detected.
+
+An inadmissible counterterm with an added bus-X term makes the cubic compression nonzero, exhibiting the importance of (1). An old-only swap not commuting with \(F\) changes the leading mean by 2 even at \(\xi=0\), exhibiting the importance of \([F,D]=0\). These are premise discriminators, not counterexamples within the stated theorem.
+
+A nontrivial exact unitary swapping a degenerate joint-code pair commutes with \(F\). The fixture checks the first/second moment inequalities using the stronger Frobenius-norm test, and checks a variance discrepancy exactly: it is \(3/625\), below the displayed allowance. This unitary can be generated within an equal-F block. The fixture does **not** claim that its arbitrary discriminating counterterm and code unitary are the calibrated parent's particular \(D\) and hardware. It tests the compressed-moment lemma, not the parent's full routed realization or state-corrector estimate.
+
+The run used Python 3.13.5 and SymPy 1.14.0, exact rational/Gaussian-rational arithmetic and \(\sqrt3\), with no floating tolerance. It exited 0 in 1.1781459576450288 seconds; stderr is empty. Main executed-source SHA-256 is `e6b59e5008c14ef15412f79e7a8bfb19526bad3d5d6a40626c7b510109b543fa`. Full source-at-launch, launcher bytes, source manifest, actual child argv/cwd, timestamps, exit and complete streams survive. The launcher-argv annotation needs the explicit interpreter-flag clarification in `SOURCE_EXPOSURE.md`; no receipt was rewritten and no successful science rerun was used to improve provenance.
+
+These finite discriminators support the checked algebra and expose plausible omissions. They do not prove the all-parameter theorem by enumeration, establish the full routed-bus gap, or validate a physical energy supplier. The all-time inequalities follow from the preceding analytic identities. The new moment proposal can be accepted as this conditional mathematical corollary if its source, target-effectiveness and physical-supplier qualifications remain attached; formal retained status remains outside this review.

@@ -127,6 +127,9 @@ def main() -> int:
     ck.check('v^T G v = 1 - s^2, w^T G w = s^2, v^T G w = 0 with s = b0 + 2 b1 + b2 (so s^2 <= 1 when G >= 0)',
              sp.expand((v.T * G * v)[0] - (1 - s_ ** 2)) == 0 and sp.expand((w_.T * G * w_)[0] - s_ ** 2) == 0
              and sp.expand((v.T * G * w_)[0]) == 0)
+    Wsq = sp.expand((w_.T * G * w_)[0] - ((v + w_).T * G * w_)[0] ** 2)
+    ck.check('Wilson-gap identity: the flavor part W of the k^2 term of the massless member has |W|^2 = w^T G w - (phi0^T G w)^2 = s^2 (1 - s^2) = sin^2(theta_X)/4',
+             sp.expand(Wsq - s_ ** 2 * (1 - s_ ** 2)) == 0)
     ck.check('F(0).F(pi,0,0) = (v+w)^T G (v-w) = 1 - 2 s^2: the axis doubler gap is 2 arcsin|s|',
              sp.expand(((v + w_).T * G * (v - w_))[0] - (1 - 2 * s_ ** 2)) == 0)
     phiK = lambda c: sp.Matrix([1, sum(c), c[0] * c[1] + c[0] * c[2] + c[1] * c[2], c[0] * c[1] * c[2]])

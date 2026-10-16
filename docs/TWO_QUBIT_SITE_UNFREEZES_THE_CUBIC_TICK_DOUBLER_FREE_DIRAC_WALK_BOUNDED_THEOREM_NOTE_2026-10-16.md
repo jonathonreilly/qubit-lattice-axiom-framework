@@ -55,7 +55,8 @@ forced Dirac structure.
 4. **Speed and doubling trade off exactly.** For every member, s^2 <= 1:
    the cone moves at most one site per tick. The doublers at the three axis
    points (pi,0,0), (0,pi,0), (0,0,pi) sit at quasienergy 2 arcsin|s|, so
-   they are gapped iff s < 1.
+   they are gapped iff s < 1. The chirality-breaking k^2 term then has the
+   exact size s sqrt(1 - s^2) = sin(theta_X)/2.
 5. **A unique light-speed walk over the golden field.** s = 1 is attained
    only at b = +-b_gold with b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19,
    (71 - 29 sqrt5)/38). There f(t,0,0) = cos t exactly, the axes are
@@ -140,6 +141,23 @@ time-reversal-invariant classes gives, with F(0) on the f axis,
     cos theta_R = 1 - 6 (3 b0^2 + 2 b0 b2 + 3 b2^2 - 8 b1^2)   (corner point),
 
 so the whole doubler spectrum is an explicit quadratic function of b.
+
+**Corollary (the Wilson term is pinned to the doubler gap).** For the massless
+member, F(t,0,0) = P + Q cos t with P = F v, Q = F w and P + Q = F(0) = e_f.
+The identities above give |P|^2 = 1 - s^2, |Q|^2 = s^2 and P.Q = 0, so
+Q = s^2 e_f + W with W orthogonal to e_f. W is the flavor (h) part of the
+k^2 term: h(k) = -W |k|^2/2 + O(k^4), isotropic because h is O-invariant.
+Exactly,
+
+    |W| = s sqrt(1 - s^2) = sin(theta_X) / 2.
+
+The chirality-breaking k^2 term (the h terms anticommute with tau3) thus has
+a size fixed by the axis-doubler quasienergy theta_X = 2 arcsin|s|. It
+vanishes exactly when the axis doublers are massless (theta_X = 0 or pi),
+and it is largest, |W| = 1/2, at s = 1/sqrt 2. This is a quantitative form of
+the Nielsen–Ninomiya trade-off within the family: the doubler gap cannot be
+opened without a fixed amount of chirality breaking. At b_iso,
+|W| = sqrt2/3.
 
 ## Theorem 5 — the light-speed member
 
@@ -438,4 +456,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=39 FAIL=0` (under a minute).
+Expected: `TOTAL: PASS=40 FAIL=0` (under a minute).

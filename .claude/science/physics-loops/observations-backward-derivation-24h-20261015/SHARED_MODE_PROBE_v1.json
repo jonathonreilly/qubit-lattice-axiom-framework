@@ -1,0 +1,64 @@
+{
+  "kind": "author-only synthetic linear-response direction probe",
+  "source_sha256": "9e660c9bf7a8cfd5413c2d8e0424bbc0872443c944a0f26c2b06be829de0203d",
+  "input_sha256": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/RECURSIVE_MECHANISMS_INTAKE_v1.md": "e1fb1ecc9bec148ad8b19b9998422d8984ece82a2109112aa0fd52c15bb8dfa8"
+  },
+  "versions": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  },
+  "checks": [
+    {
+      "name": "first isolated pole has nonzero rank-one residue",
+      "passed": true
+    },
+    {
+      "name": "second isolated pole has nonzero rank-one residue",
+      "passed": true
+    },
+    {
+      "name": "non-normal residue equals left/right null-vector formula",
+      "passed": true
+    },
+    {
+      "name": "two-channel minor vanishes at isolated pole",
+      "passed": true
+    },
+    {
+      "name": "complete response need not be rank one",
+      "passed": true
+    },
+    {
+      "name": "unresolved sum of distinct modes has rank two",
+      "passed": true
+    },
+    {
+      "name": "consistent internal-coordinate change preserves observed transfer",
+      "passed": true
+    },
+    {
+      "name": "invertible channel changes preserve residue rank",
+      "passed": true
+    },
+    {
+      "name": "two degenerate modes can have rank-two residue",
+      "passed": true
+    },
+    {
+      "name": "rank-losing readout can hide a second mode",
+      "passed": true
+    },
+    {
+      "name": "generic outer-product channel identity",
+      "passed": true
+    }
+  ],
+  "first_residue": "Matrix([[-10, -16], [-5, -8]])",
+  "second_residue": "Matrix([[15, 25], [9, 15]])",
+  "full_response_determinant": "-1/((s + 1)*(s + 3))",
+  "passed": true,
+  "empirical_validation": false,
+  "independent_check": false,
+  "scope": "Elementary finite-dimensional pole algebra only; no physical scalar response or mode assumption derived."
+}

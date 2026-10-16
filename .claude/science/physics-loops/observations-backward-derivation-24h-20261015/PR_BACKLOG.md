@@ -17,3 +17,7 @@ coupled scalar/metric/material response with justified preparation, readout and
 boundaries. Preserve calibration/development/independent-test separation.
 No independent observations have been opened. The campaign continues to its
 original 2026-10-16T22:36:59Z deadline.
+
+The recursive-mechanism intake and shared-mode probe are exploratory checkpoint
+material only. They do not yet form a second milestone PR: the physical coupled
+operator, identified channels and source-bound independent check remain open.

@@ -1,0 +1,260 @@
+{
+  "status": "author synthetic development controls",
+  "empirical_validation": false,
+  "independent_check": false,
+  "sources_sha256": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/NETWORK_EVOLUTION_BLOCK02_v1.md": "7558a13c9d858e219fd825926d899888d956c0b3db4128ce394b2c3259c63c68",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/probe_flux_records_v1.py": "357aab5de2f830da0a3d28ef37c54ca4a660cb2f18dcbe5fe58eaa53b5d28e36"
+  },
+  "checks": [
+    {
+      "name": "real_network_two_fluxes",
+      "pass": true,
+      "detail": {
+        "flux0": "cos(a - b)/2 + 1/2",
+        "flux1": "1/2 - cos(a - b)/2",
+        "origin": "four-dimensional real matrix propagation"
+      }
+    },
+    {
+      "name": "total_flux_conserved",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "common_frame_invariance",
+      "pass": true,
+      "detail": "same rotation on both paths leaves flux fractions unchanged"
+    },
+    {
+      "name": "fresh_binary_settings_control",
+      "pass": true,
+      "detail": [
+        {
+          "x": 0,
+          "y": 0,
+          "flux0": "1"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "flux0": "0"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "flux0": "0"
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "flux0": "1"
+        }
+      ]
+    },
+    {
+      "name": "one_splitter_angle_insufficient",
+      "pass": true,
+      "detail": {
+        "balanced_residual": "3.11150763893057085357203202689006212029512608436058356655056e-60",
+        "unequal_residual": "0.190814474235260158423086462145865267363819073996389601070866",
+        "counterexample": "q(r)=r^2[1+0.5 sin(4 pi log_2 r)], q(0)=0"
+      }
+    },
+    {
+      "name": "wrong_fringe_harmonic_rejected",
+      "pass": true,
+      "detail": {
+        "correct_at_pi_over_2": "1/2",
+        "wrong": "0"
+      }
+    },
+    {
+      "name": "arbitrary_flux_exact_balance_and_complementarity",
+      "pass": true,
+      "detail": {
+        "step_cases": 916,
+        "max_count_flux_discrepancy": "17/20"
+      }
+    },
+    {
+      "name": "half_flux_alternates_for_every_checked_initial_residue",
+      "pass": true,
+      "detail": [
+        {
+          "initial_residue": "0",
+          "count0": 50,
+          "first_ten": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "initial_residue": "1/7",
+          "count0": 50,
+          "first_ten": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "initial_residue": "1/2",
+          "count0": 50,
+          "first_ten": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "initial_residue": "6/7",
+          "count0": 50,
+          "first_ten": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "symmetric_weak_tie_failure_preserved",
+      "pass": true,
+      "detail": {
+        "wrong_output": [
+          1,
+          1
+        ],
+        "scope": "the explicit asymmetric tie convention is required at equality"
+      }
+    },
+    {
+      "name": "independent_residue_initialization_loses_exclusivity",
+      "pass": true,
+      "detail": [
+        {
+          "p": "1/4",
+          "zero": "3/16",
+          "two": "3/16",
+          "exact_expected_both": "3/16"
+        },
+        {
+          "p": "2/5",
+          "zero": "6/25",
+          "two": "6/25",
+          "exact_expected_both": "6/25"
+        },
+        {
+          "p": "1/2",
+          "zero": "1/4",
+          "two": "1/4",
+          "exact_expected_both": "1/4"
+        },
+        {
+          "p": "3/4",
+          "zero": "3/16",
+          "two": "3/16",
+          "exact_expected_both": "3/16"
+        }
+      ]
+    },
+    {
+      "name": "unjustified_fixed_reset_destroys_flux_frequency",
+      "pass": true,
+      "detail": {
+        "port0_records": 0,
+        "total_port0_flux": "10"
+      }
+    },
+    {
+      "name": "loss_transition_normalization_and_stationarity",
+      "pass": true,
+      "detail": {
+        "transition": "Matrix([[a*(1 - b)/(-a*b + a + b), b/(-a*b + a + b)], [a/(-a*b + a + b), b*(1 - a)/(-a*b + a + b)]])",
+        "stationary": "Matrix([[a/(a + b), b/(a + b)]])"
+      }
+    },
+    {
+      "name": "loss_nontrivial_eigenvalue",
+      "pass": true,
+      "detail": {
+        "eigenvalue": "a*b/(a*b - a - b)"
+      }
+    },
+    {
+      "name": "missed_pair_geometric_sum_1/4_3/4",
+      "pass": true,
+      "detail": {
+        "tail_factor": "3486784401/1208925819614629174706176",
+        "exact_transition": "Matrix([[1/13, 12/13], [4/13, 9/13]])"
+      }
+    },
+    {
+      "name": "missed_pair_geometric_sum_4/5_4/5",
+      "pass": true,
+      "detail": {
+        "tail_factor": "1/9094947017729282379150390625",
+        "exact_transition": "Matrix([[1/6, 5/6], [5/6, 1/6]])"
+      }
+    },
+    {
+      "name": "missed_pair_geometric_sum_1_1",
+      "pass": true,
+      "detail": {
+        "tail_factor": "0",
+        "exact_transition": "Matrix([[0, 1], [1, 0]])"
+      }
+    },
+    {
+      "name": "heralded_even_bin_variance_difference",
+      "pass": true,
+      "detail": {
+        "threshold": "eta*n*(1 - eta)/2",
+        "Bernoulli_comparator": "eta*n*(1 - eta/2)/2",
+        "difference": "eta**2*n/4"
+      }
+    },
+    {
+      "name": "equal_efficiency_lag_one",
+      "pass": true,
+      "detail": {
+        "lag_one": "-eta/(2-eta)"
+      }
+    }
+  ],
+  "total": {
+    "pass": 18,
+    "fail": 0
+  }
+}

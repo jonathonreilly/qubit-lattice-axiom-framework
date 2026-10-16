@@ -105,3 +105,15 @@ Publication at 2026-10-16T00:42:54.152591+00:00: PR #9628 is open, non-draft, ve
 The PR's 59 changed paths exactly match the selected tree. Full source/evidence
 bytes were preserved; current main was not changed. Shared landing validation
 remains pending. The campaign continues with direct authorship.
+
+At 2026-10-16T00:50:32.157005+00:00, the public recursive-generalization argument was assessed as a
+research heuristic. A new author-only linear-system probe passed 11 exact controls
+and explicitly retained failures of the overbroad full-response rank-one claim.
+No independent check, formal audit or physical-mode derivation is claimed. This
+exploratory checkpoint does not modify the frozen milestone PR 9628.
+
+## Network exploration focused checks, 2026-10-16
+
+Direct author /root read the full independent derivations, check code and results for network history v2, flux records, pair orientation transport and deterministic reservoir. Final corrected scopes passed focused independent checking; exact bindings and primary reproductions are recorded in NETWORK_CHECKPOINT_20261016T0126.json and NETWORK_CHECKPOINT_20261016T0152.json. History v1's freshness/exception flaw is preserved with its counterexample, and corrected in v2. Orientation-check symbolic square-root domain failure is preserved as an operational calculation failure.
+
+Block05 is pending completion: independent checker identified that the adopted interior-p detector map must be explicitly extended at p=0,1 for the full phase domain. Its moment equations are unaffected by deterministic endpoint extension. This remains a review finding until the amended source is checked. No formal audit applied.

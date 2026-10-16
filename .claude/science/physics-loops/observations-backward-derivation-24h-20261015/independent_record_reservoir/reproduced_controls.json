@@ -1,0 +1,248 @@
+{
+  "source_sha256": "f1b89c4ad03ff810a9b713e45739bbe9ad96b5f077236e037e96aacb75039f5d",
+  "runner_sha256": "028188dcbbe633099088b8fd6f8ccdbe1bd76d568f0cdecc11073ab6e25b4ba3",
+  "checks": [
+    {
+      "name": "exact cylinder fixed thirds",
+      "passed": true,
+      "cylinders": 512
+    },
+    {
+      "name": "exact cylinder fixed balanced",
+      "passed": true,
+      "cylinders": 512
+    },
+    {
+      "name": "exact cylinder prescribed",
+      "passed": true,
+      "cylinders": 512
+    },
+    {
+      "name": "exact cylinder past-adaptive",
+      "passed": true,
+      "cylinders": 512
+    },
+    {
+      "name": "linear density exact contraction",
+      "passed": true
+    },
+    {
+      "name": "density normalization",
+      "passed": true
+    },
+    {
+      "name": "linear density output probability",
+      "passed": true
+    },
+    {
+      "name": "linear density total variation",
+      "passed": true
+    },
+    {
+      "name": "contraction gap is positive on declared domain",
+      "passed": true,
+      "domain": "0<p<1"
+    },
+    {
+      "name": "burn-in controls from original nonuniform seed",
+      "passed": true,
+      "rows": [
+        {
+          "p": "1/3",
+          "burn": 1,
+          "TV": "100/729",
+          "bound": "5/36"
+        },
+        {
+          "p": "1/3",
+          "burn": 2,
+          "TV": "500/6561",
+          "bound": "25/324"
+        },
+        {
+          "p": "1/3",
+          "burn": 4,
+          "TV": "12500/531441",
+          "bound": "625/26244"
+        },
+        {
+          "p": "1/2",
+          "burn": 1,
+          "TV": "1/8",
+          "bound": "1/8"
+        },
+        {
+          "p": "1/2",
+          "burn": 2,
+          "TV": "1/16",
+          "bound": "1/16"
+        },
+        {
+          "p": "1/2",
+          "burn": 4,
+          "TV": "1/64",
+          "bound": "1/64"
+        },
+        {
+          "p": "3/4",
+          "burn": 1,
+          "TV": "315/2048",
+          "bound": "5/32"
+        },
+        {
+          "p": "3/4",
+          "burn": 2,
+          "TV": "1575/16384",
+          "bound": "25/256"
+        },
+        {
+          "p": "3/4",
+          "burn": 4,
+          "TV": "39375/1048576",
+          "bound": "625/16384"
+        }
+      ]
+    },
+    {
+      "name": "two local detector rules and equality conventions",
+      "passed": true,
+      "cases": 120
+    },
+    {
+      "name": "exceptional realized seeds remain non-iid",
+      "passed": true
+    },
+    {
+      "name": "baker branches invertible and area preserving",
+      "passed": true
+    },
+    {
+      "name": "inverse branches including equality",
+      "passed": true
+    },
+    {
+      "name": "finite cyclic reservoir exact support and TV",
+      "passed": true,
+      "rows": [
+        {
+          "seed_bits": 2,
+          "record_length": 1,
+          "support": 2,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 2,
+          "record_length": 2,
+          "support": 4,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 2,
+          "record_length": 3,
+          "support": 4,
+          "TV": "1/2"
+        },
+        {
+          "seed_bits": 2,
+          "record_length": 5,
+          "support": 4,
+          "TV": "7/8"
+        },
+        {
+          "seed_bits": 3,
+          "record_length": 2,
+          "support": 4,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 3,
+          "record_length": 3,
+          "support": 8,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 3,
+          "record_length": 4,
+          "support": 8,
+          "TV": "1/2"
+        },
+        {
+          "seed_bits": 3,
+          "record_length": 6,
+          "support": 8,
+          "TV": "7/8"
+        },
+        {
+          "seed_bits": 4,
+          "record_length": 3,
+          "support": 8,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 4,
+          "record_length": 4,
+          "support": 16,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 4,
+          "record_length": 5,
+          "support": 16,
+          "TV": "1/2"
+        },
+        {
+          "seed_bits": 4,
+          "record_length": 7,
+          "support": 16,
+          "TV": "7/8"
+        },
+        {
+          "seed_bits": 5,
+          "record_length": 4,
+          "support": 16,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 5,
+          "record_length": 5,
+          "support": 32,
+          "TV": "0"
+        },
+        {
+          "seed_bits": 5,
+          "record_length": 6,
+          "support": 32,
+          "TV": "1/2"
+        },
+        {
+          "seed_bits": 5,
+          "record_length": 8,
+          "support": 32,
+          "TV": "7/8"
+        }
+      ]
+    },
+    {
+      "name": "detector covariance identity",
+      "passed": true
+    },
+    {
+      "name": "monotone detector synthetic ratio",
+      "passed": true,
+      "alpha": "190/147",
+      "calibrated_eta_example": "7/10",
+      "registered_ratio": "19/21"
+    },
+    {
+      "name": "complementary detector state exits independence class",
+      "passed": true,
+      "scope": "Counterexample to extending bound to arbitrary shared detector state, not data validation."
+    }
+  ],
+  "summary": {
+    "passed": 18,
+    "failed": 0
+  },
+  "empirical_test": false,
+  "scope": "Conditional synthetic identities and exact finite distributions; a deliberately selected deterministic detector model, not a derived physical law."
+}

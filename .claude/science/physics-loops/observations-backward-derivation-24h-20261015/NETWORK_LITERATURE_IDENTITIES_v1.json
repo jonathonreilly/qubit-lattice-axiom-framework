@@ -1,0 +1,104 @@
+{
+  "status": "literature bridge and exposed development comparator, not proof of candidate mechanism",
+  "full_sources_private": true,
+  "retrieval_metadata": [
+    {
+      "retrieved_at": "2026-10-16T01:29:24.784210+00:00",
+      "sources": [
+        {
+          "name": "berry1984",
+          "url": "https://michaelberryphysics.wordpress.com/wp-content/uploads/2013/07/berry120.pdf",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "297596e8eccfa2a36bdb2792f1cb1cea6ddfc68516582865b73af144e5fe0b80",
+          "pages": 13,
+          "text_chars": 12,
+          "rendered_pages": [
+            1,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "kwiat_chiao1991",
+          "url": "https://research.physics.illinois.edu/QI/Photonics/papers/My%20Collection.Data/PDF/Observation%20of%20a%20nonclassical%20Berry's%20phase%20for%20the%20photon.pdf",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "ade2c3d55e0023e0847ab9f915e3021b63593feff54f1ac9b631a1ac18bba93c",
+          "pages": 4,
+          "text_chars": 3,
+          "rendered_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "prior_attempts": [
+        "urllib default trust: SSL local-issuer verification failure",
+        "urllib certifi verified trust: HTTP403 on first Berry URL; second item not attempted"
+      ],
+      "scope": "No inference from retrieval failures."
+    },
+    {
+      "time": "2026-10-16T01:40:28.664547+00:00",
+      "sources": [
+        {
+          "name": "de_raedt2005",
+          "url": "https://arxiv.org/pdf/quant-ph/0501141",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "4908a7d5a62f47108d3d459bfc3f85b6a83049be77f592c3a0c934db6c6f3e8f",
+          "bytes": 250831,
+          "pdf_header": true
+        },
+        {
+          "name": "horvat_dakic2021",
+          "url": "https://arxiv.org/pdf/2003.12114",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "83134da65c5b5f6f99b69f4936371047db74c4830713a9f624d73c7bc531e2c5",
+          "bytes": 1015682,
+          "pdf_header": true
+        },
+        {
+          "name": "massa2018",
+          "url": "https://arxiv.org/pdf/1802.05102",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "80121996942dff1738e48e3b13cef7bce3f91a1b43a520b287cba3f79f653270",
+          "bytes": 2915421,
+          "pdf_header": true
+        },
+        {
+          "name": "araujo2014",
+          "url": "https://arxiv.org/pdf/1309.7976",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "00f3e0552f5c3256d9617bad167d6cddaec6e680f94da04d5174ba4f4bb2f8c4",
+          "bytes": 487376,
+          "pdf_header": true
+        },
+        {
+          "name": "bose_murray",
+          "url": "https://arxiv.org/pdf/1206.2406",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "8eb950bae432588fed475d974b59500d6c5af1103cf36710b1705ea906d6f6de",
+          "bytes": 314964,
+          "pdf_header": true
+        }
+      ]
+    }
+  ],
+  "read_scope": {
+    "berry1984.pdf": "Rendered pages 1,6,7; not all 13 pages.",
+    "kwiat_chiao1991.pdf": "All four rendered pages read by root; checker independently inspected pages3-4.",
+    "de_raedt2005.pdf": "Seven pages read via web source.",
+    "horvat_dakic2021.pdf": "Section IV parity-game equations, not whole paper.",
+    "massa2018.pdf": "Input-setting protocol and reported visibility/success summaries.",
+    "araujo2014.pdf": "All four pages text read; scope is black-box versus physically extended coherent control.",
+    "bose_murray.pdf": "Intro and construction through equations1-4; no later mixing theorem adopted."
+  }
+}

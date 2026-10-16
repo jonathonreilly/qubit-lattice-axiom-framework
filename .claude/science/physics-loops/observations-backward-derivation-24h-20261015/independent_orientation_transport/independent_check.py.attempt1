@@ -1,0 +1,26 @@
+import sympy as s,json
+from pathlib import Path
+I=s.eye(2); X=s.Matrix([[0,1],[1,0]]);Y=s.Matrix([[0,-s.I],[s.I,0]]);Z=s.diag(1,-1)
+def rotor(A,B):
+ c=s.trace(A*B)/2
+ return (I+B*A)/s.sqrt(2*(1+c))
+U=rotor(Z,X);V=rotor(X,Y);W=rotor(Y,Z)
+loop=s.simplify(W*V*U);expected=(I-s.I*Z)/s.sqrt(2)
+assert s.simplify(loop-expected)==s.zeros(2)
+k=s.symbols('k',real=True)
+twistX=s.cos(k/2)*I-s.I*s.sin(k/2)*X
+twistZ=s.cos(k/2)*I-s.I*s.sin(k/2)*Z
+assert s.simplify(W*V*twistX*U-loop*twistZ)==s.zeros(2)
+# Orbit and reversal test with completely independent phases of K.
+c=s.symbols('c',real=True); B=s.sqrt(1-c*c)*X+c*Z
+u=(I+B*Z)/s.sqrt(2*(1+c)); kp,km=s.symbols('kp km',complex=True)
+K=s.diag(kp,km);Kb=kp*(I+B)/2+km*(I-B)/2
+assert s.simplify(u*K*u.conjugate().T-Kb).subs(s.conjugate(s.sqrt(1-c*c)),s.sqrt(1-c*c))==s.zeros(2)
+# flat covariance witness and loop cancellation
+Fz=I;Fx=U;Fy=rotor(Z,Y)
+flatxy=Fy*Fx.conjugate().T
+flatloop=s.simplify((Fz*Fy.conjugate().T)*flatxy*(Fx*Fz.conjugate().T))
+assert flatloop==I
+assert s.trace(U)==s.sqrt(2) and s.trace(flatxy)==1
+result={'loop':str(loop),'flat_traces':[str(s.trace(U)),str(s.trace(flatxy))],'twist_identity':True,'flat_loop_identity':True,'orbit_projector_identity':True,'orbit_domain':'-1<c<=1'}
+Path(__file__).with_name('independent_results.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))

@@ -210,3 +210,60 @@ measured mass. Refresh relevant science first: main remains bbada1f, there are
 58 compact open-PR records, and new PR 9627's proof has not been adopted. The
 53-PR full path inventory remains distinct from this compact refresh. All older
 campaign statuses remain completed/cancelled with no worker/supervisor PID.
+
+## User steering: recursive mechanisms (2026-10-16T00:50:32.157005+00:00)
+
+Read RECURSIVE_MECHANISMS_INTAKE_v1.md. The user requested an assessment of
+recursive generalization versus representational superposition for this physics
+work. The public essay is a working hypothesis, not evidence against quantum
+superposition or for literal spacetime fractality. Prioritize fixed-action causal
+reuse across readouts, then consistency across resolutions. Neither is an assumed
+selector for the scalar action, potential, state or scales.
+
+Root personally derived the elementary isolated-simple-pole response residue
+formula and ran probe_shared_mode_response.py: 11 exact synthetic controls pass.
+The controls also show why full responses, unresolved modes and degenerate modes
+need not have rank one, and why rank-losing readout can conceal modes. This is
+author development mathematics, not independent evidence or the physical scalar
+response. The v1 execution receipt's started_at field is a post-run recording
+time; its monotonic elapsed duration is valid. The original receipt is preserved.
+No private email headers/content or full copyrighted essay is in this checkpoint.
+
+Next remains the coupled response with rho0, k and C fixed in the action and a
+justified forcing/readout. The finite-control PR 9627's declared interface was
+read, but supplies no physical source or measurement map for this lane. PR 9628
+remains unchanged. No new independent physics data was opened; deadline unchanged.
+
+## Latest human steering: underlying neighborhood evolution (2026-10-16T00:58:01.032424+00:00)
+
+The user corrected the narrower methodological interpretation above. Explore whether
+network relationships evolve through intermediate local specializations, with
+records forming and acquiring new downstream causal roles, and whether the
+apparent superposition is an incomplete description of that process. The
+`iy -> diy -> do it yourself` chain motivates looking for the intermediate
+mechanism, not an asserted physical identity. Root promised the next three hours,
+00:53:06Z to 03:53:06Z, within the unchanged 22:36:59Z campaign deadline.
+
+Preserve the original intake/probe as adjacent work. They do not answer the
+corrected mechanism hypothesis. Begin with explicit candidate networks and
+intervention tests. Distinguish apparatus memory from information carried in
+both paths in the current trial. Read the current axioms: M2(C) is supplied,
+but formation dynamics, numerical weights and measurement calibration are not.
+The selected projective-history sector kernel supplies trace/Luders weights;
+using it cannot count as deriving those weights. Current Record content is
+permanent; a changing causal role can be represented by new records. A model
+that overwrites content must be labeled an alternative conditional candidate.
+No previous campaign or detached author was started. No raw empirical data were
+opened for this new block. Next action is in STATE.yaml.
+
+## Network exploration checkpoint (2026-10-16T01:23:29.012094+00:00)
+
+Root personally completed NETWORK_EVOLUTION_BLOCK01_v2 and BLOCK02_v1. Complete independent derivations, code and results have now been read and their source bindings checked; both exact reproductions match. The history model has 19 controls, the flux/record model 18. These are synthetic mathematics, not independent observations. V1 of block01 remains preserved with its real exception-selection premise error; v2 corrects it. The threshold candidate has exact average fringes but rigid alternation, which fails an iid benchmark before any empirical claim.
+
+Next is orientation transport: test whether pair-relative symmetries and reciprocity select a connection, then challenge the pair-only restriction with a third neighbor. Geometric phase is known prior art, not a new discovery. No physical law, Born process, initial state or calibration has been supplied silently. No old campaign or detached author was restarted. The user-directed three-hour window and original campaign deadline are unchanged.
+
+## Network exploration checkpoint 2026-10-16T01:53:01.590602+00:00
+
+Personally completed and read focused independent proofs/code/results for orientation transport (23 primary controls) and record reservoir (18); verified all frozen bindings and exact author reproductions. Pair-only symmetry/reciprocity fixes a transport only within a strong assumed class; a third neighbor restores free contextual twists. A selected deterministic reservoir reproduces complete Bernoulli record laws, but its initial ensemble and physical map remain imports. Published Kwiat/Chiao 1991 geometric phase and anticoincidence constrain what a candidate must jointly reproduce; summaries are exposed development evidence, not held-out data.
+
+Block05 primary passed 10 controls and is under focused independent check: closed-loop phase separates endpoint frame changes from contextual history, and an explicit Poisson-renewal model has a rigorous refinement bound at fixed supplied correlation length. No physical correlation law or scale derived. Next: inverse characterization of record maps and conditional preparation forgetting. Research window ends 03:53:06Z; original campaign deadline unchanged. No competing owned author process found; matching lock held.

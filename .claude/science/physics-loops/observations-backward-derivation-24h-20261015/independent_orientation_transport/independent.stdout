@@ -1,0 +1,1 @@
+{"loop": "Matrix([[sqrt(2)*(1 - I)/2, 0], [0, sqrt(2)*I*(1 - I)/2]])", "flat_traces": ["sqrt(2)", "1"], "twist_identity": true, "flat_loop_identity": true, "orbit_projector_identity": true, "orbit_domain": "-1<c<=1"}

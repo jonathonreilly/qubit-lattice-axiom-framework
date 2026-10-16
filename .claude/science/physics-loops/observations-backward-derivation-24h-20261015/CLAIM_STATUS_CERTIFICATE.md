@@ -28,3 +28,20 @@ conditional constructions, with no physical action or global domain selected.
 No formal audit status or empirical validation is conferred. Known inverse prior
 art is attributed; the
 new campaign does not claim discovery of that general local construction.
+
+## Neighborhood-evolution exploration certificate
+
+```yaml
+actual_current_surface_status: conditional-support
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+conditional_surface_status: "Explicit finite transport, record-law constructions and candidate-specific obstructions"
+hypothetical_axiom_status: "No new axiom adopted; all dynamical choices remain candidates"
+admitted_observation_status: "Published summaries exposed for model development; no independent empirical validation"
+proposal_allowed: false
+proposal_allowed_reason: "Dynamics, measurement bridge, initial state and scales remain load-bearing imports"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+Blocks01v2-04 have focused independent mathematical checks, complete root reading and exact source/output binding checks. Block01v1's failed exception premise remains preserved. Block05 primary passed; focused independent review identified a degenerate-probability domain extension to make explicit before closure. None is a formal audit verdict.

@@ -32,3 +32,11 @@ Author controls and focused independent checks are synthetic mathematical
 evidence. Prior Cassini/RSR data remain exposed development data. No new raw or
 reserved observation was opened. No measured scalar profile, global action,
 initial vacuum, source law, probability law or absolute scale has been inferred.
+
+## User-directed neighborhood-evolution exploration
+
+Actual status: conditional-support, frontier discovery; no framework import retired. The allowed mechanism hypothesis is that changing local relationships and intermediate specialization generate observable records. This is stronger than the initial method-only analogy and is not yet an identified physical law.
+
+Blocks01-04 explicitly expose: conditional fresh-input independence and single-current-input influence; real two-component linear transport and universal splitter conservation; full SO(3) pair covariance, unitarity, phase-sensitive reciprocity and continuity; a selected deterministic full-branch detector map, coordinated complementary detector states, cadence and initial ensemble. The M2(C) site algebra and permanent-record premise do not alone select those dynamics. A third neighbor restores contextual freedom even in the narrow transport class.
+
+Block05 is under independent check: third-axis twist law, uniform context marks, renewal dynamics, correlation length and coherent readout remain supplied. Fixed correlation length gives a controlled refinement limit; choosing that length is not deriving it. Published Kwiat/Chiao visibility/anticoincidence summaries, Horvat/Dakic parity games and Massa protocol information are exposed development comparators. No raw independent empirical test data have been opened.

@@ -1,0 +1,13 @@
+{
+  "same_model_source_exposed": true,
+  "blind_independence": false,
+  "different_model_replication": false,
+  "shared_parent_authorship": true,
+  "new_scientific_executions": 0,
+  "historical_author_floating_executions": 1,
+  "reviewer_scientific_executions": 0,
+  "fixture_tests_final_phase": false,
+  "analytic_M4_nonrecurrence_discriminator": true,
+  "runtime_composition_claimed": false,
+  "retained_audit": false
+}

@@ -1,0 +1,158 @@
+# Sine preparation: angle-error bounds for work and moments
+
+Status: proposed conditional analytical result, pending a separate mathematical check. This concerns the supplied driven prefix preparation in the local conserving preparation note, exact SHA256 6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f. It does not change that note or its qualifications. The later interacting preparation and coherent runtime fault proposals motivate the question but are not premises of the proof below. This is original finite-dimensional algebra; no scientific program or historical fixture has been executed for it.
+
+The question is quantitative: under a particular coherent angle-error model for the existing sine preparation, how accurately are the preparation work and energy moments reproduced? A sum of small local rotation errors gives a better bound than a generic trace-distance estimate, but does not give a reservoir-size-independent first-energy coefficient. The claimed rates below concern this schedule and this fault class, not every possible preparation procedure or every local Hamiltonian error.
+
+## 1. Physical protocol, input and fault model
+
+One battery contains M>=L qubits, L>=1, with number operator B=sum_j n_j and physical free term Delta B, Delta>0. Initially it is exactly vacuum, independently of the unknown old register and any passive reference. The old generator K is an arbitrary supplied finite decoupled self-adjoint operator; take K>=0 when imposing the parent's positivity contract. No battery/old interaction is present during preparation. The old/reference state is arbitrary. All battery, old and reference outputs are retained.
+
+Let p_m=1^m 0^(M-m), including p_0=vacuum, and
+
+    b_m=sqrt(2/(L+1)) sin(pi m/(L+1)),  1<=m<=L,
+    w_i=sum_(m=i)^L b_m^2,
+    beta=sum_(m=1)^L b_m p_m.
+
+The nominal circuit flips the first site by exp[-i(pi/2)Y_1], then applies exp[-i theta_i n_i Y_(i+1)], i=1,...,L-1, where
+
+    cos(theta_i)=b_i/sqrt(w_i),
+    sin(theta_i)=sqrt(w_(i+1)/w_i).
+
+Use the parent's actual positive integrated generators 2pi I+(pi/2)Y_1 and n_i(2pi I+theta_i Y_(i+1)), absolute-time rotating carriers, fixed slot durations, and final battery number-phase cancellation. The integer-spectrum reserve exponentials are exactly identity on the full local Hilbert spaces. The full physical carrier and phase schedule is retained, not replaced by an abstract gate count. After the declared duration tau_p the old propagator is exactly E_p=exp(-i tau_p K/hbar), by disjoint support. The final free generator is the same F0=K+Delta B as at admission; all added controls vanish at both endpoints.
+
+The only imperfections considered in the new estimate are real fixed angle changes delta_0 in the flip and delta_i in conditional rotation i. The 2pi reserves, carriers, envelopes, clock, endpoint cancellation, isolation and all other terms remain exact. Let
+
+    eta=sum_(i=0)^(L-1) |delta_i|.
+
+This is a supplied structural fault model, not a conclusion from trace distance or arbitrary coefficient error. For example, the actual pulse differs by hbar f(t) delta_i times the appropriately rotated Y or nY, so its integrated full-operator discrepancy is |delta_i|. Pulses are sequential, giving total dimensionless discrepancy eta. The perturbation has support at most two sites and changes battery number by at most one. During preparation the *nominal* controls themselves change B; runtime charge-conservation theorems cannot simply be reused here.
+
+For a concrete positive strength/slew realization impose |delta_i|<=1 and use a common Q_*=6pi and
+
+    h_p >= max(4 hbar Q_*/g,
+               sqrt(8pi hbar Q_*/sigma), 8pi Delta/sigma).
+
+Then the actual Q blocks remain positive, have norm <=Q_*, and their number commutators have norm <=pi. For f=(1-cos(2pi t/h_p))/h_p, the actual pulse norm is <=g/2 and its derivative is <=sigma/2: the envelope contribution is <=2pi hbar Q_*/h_p^2 and the carrier contribution <=2pi Delta/h_p. The final exact phase layer uses its separately supplied parent bounds. This choice reserves room for the actual angle deviations; it does not infer positivity or slew from a small integrated error. Slot durations can remain fixed as L grows. The full incident/free-energy ledger and supplied rotating quadratures remain physical premises.
+
+The actual circuit is unitary on the entire battery, including all off-prefix inputs. The statements below are about its specified vacuum input domain. Prefix preservation on that domain does not discard the off-prefix output of an arbitrary error model.
+
+## 2. Exact distribution and complete state error
+
+With a correct first flip, arbitrary real conditional angles a_i give the prefix probabilities
+
+    P_a(m)=cos^2(a_m) product_(j<m) sin^2(a_j), m<L,
+    P_a(L)=product_(j<L) sin^2(a_j).
+
+Each prefix amplitude has one circuit path, so this formula holds even when some sines or cosines are negative. There is no incoherent measurement or reset. A faulty initial flip leaves vacuum probability sin^2(delta_0) and multiplies all nonzero-prefix probabilities by cos^2(delta_0). The final number-phase layer changes none of these probabilities. Sites beyond L remain vacant in this fault model.
+
+Unitary telescoping or Duhamel gives the complete isometry estimate
+
+    ||U_actual J0 - (E_p tensor |beta>)|| <= eta,
+
+with the same actual old/reference factor and the parent's exact scalar convention. The positive reserves remain fixed and therefore introduce no unreported new scalar. For mixed old/reference input the unhalved complete trace error is <=2eta. These inequalities alone would yield the coarser moment bound L^r eta; the following argument uses the specified error structure.
+
+## 3. A hybrid proof of the moment bound
+
+Let f be any function on {0,...,L} with f(0)=0 and range contained in [0,F]. For controlled rotation i form a hybrid with all earlier gates nominal and all later gates actual. Its incoming continuation weight is exactly w_i. Stopped prefixes m<i will never be touched again. Conditional on continuing past site i, the later actual gates produce a distribution on {i+1,...,L}; write its f-expectation as A_i. Conditional on stopping, the value is f(i). Both lie in [0,F]. The change caused by replacing only theta_i with theta_i+delta_i is exactly
+
+    w_i [A_i-f(i)]
+       [sin^2(theta_i+delta_i)-sin^2(theta_i)].                 (1)
+
+The suffix can be arbitrary within the actual angle-error circuit; no ideal state is reinserted after a faulty gate. Taylor's theorem with |(sin^2)''|<=2 gives
+
+    |sin^2(theta_i+delta_i)-sin^2(theta_i)|
+       <= |sin(2theta_i)| |delta_i|+delta_i^2,
+    w_i sin(2theta_i)=2 b_i sqrt(w_(i+1)).
+
+Since b_i<=sqrt(2/(L+1)), w_(i+1)<=1, the absolute contribution of (1) is at most
+
+    2 F sqrt(2/(L+1)) |delta_i| + F delta_i^2.
+
+Replace gates in reverse chronological order, so each difference has precisely the nominal prefix and actual suffix just described. At the last comparison replace the first flip; its error in f-expectation is at most F sin^2(delta_0)<=F delta_0^2. Summing yields
+
+    |<f(B)>_actual-<f(B)>_ideal|
+      <=2 F sqrt(2/(L+1)) sum_(i=1)^(L-1)|delta_i|
+                                      +F sum_(i=0)^(L-1)delta_i^2
+      <=2 F sqrt(2/(L+1)) eta+F eta^2.                    (2)
+
+The bound also covers L=1: the conditional sum is empty and the exact flip error is quadratic. The last line is deliberately less sharp in that case.
+
+Take f(m)=m^r, r a positive integer, F=L^r. Define
+
+    B_r(L,eta)=2 sqrt(2) L^(r-1/2) eta+L^r eta^2.
+
+Then
+
+    |<B^r>_actual-<B^r>_ideal|<=B_r(L,eta).               (3)
+
+The actual physical rth raw battery-energy moment error is <=Delta^r B_r. In particular the first-energy coefficient grows as sqrt(L), whereas a generic full trace bound has coefficient L. This improvement is specific to the prefix-angle model and its exact vacuum. It is not a theorem for arbitrary local perturbations.
+
+Both means lie in [0,L], hence the dimensionless variance error is at most
+
+    B_2+2L B_1 <=6 sqrt(2) L^(3/2) eta+3L^2 eta^2.       (4)
+
+Multiply by Delta^2 for battery-energy variance. The old distribution of K is unchanged by its disjoint evolution. Old/battery covariance is zero for this exact product input and product dynamics; no such covariance conclusion is asserted for generic correlated preparation errors. Full-F0 moments use the actual binomial cross terms with old K and retain its supplied norm/moments.
+
+For several isolated, independently initialized branches with gaps Delta_j, lengths L_j and deterministic angle errors eta_j, the mean-energy bounds add:
+
+    |Delta <sum_j Delta_j B_j>| <=sum_j Delta_j B_1(L_j,eta_j).
+
+This does not replace a quantum controller or an arbitrary correlated fault process by classical independent angles. Higher joint moments require the explicit cross terms; the single-branch result (3) is the primary statement.
+
+## 4. Work and sufficient calibration prices
+
+Because the actual controls vanish at both endpoints, coherent prescribed-drive work is exactly the change of F0 expectation. Its old contribution is zero, while the initial battery energy is zero. Therefore the difference between actual and nominal *net preparation work* is exactly Delta times the mean-number error in (3). This is neither an absolute-work bound nor a microscopic driver-energy construction. Positive scalar reserves still contribute during the pulse and their full load/variation costs are paid even though their endpoint phases are identity.
+
+For a dimensionless rth-moment tolerance t_r>0, one sufficient choice is
+
+    eta <= min(t_r/[4 sqrt(2) L^(r-1/2)],
+               sqrt(t_r/[2 L^r])).                      (5)
+
+The first and second terms in (3) then each cost at most t_r/2. For L=Theta(epsilon^-1), Delta fixed, and an O(epsilon) physical mean or raw-moment allowance, sufficient total angle actions are O(epsilon^(r+1/2)). Thus the mean/work request is O(epsilon^(3/2)); the raw second-moment and variance request is O(epsilon^(5/2)). A common bound on each of O(L) angles must also pay the gate count: sufficient per-angle requests are O(epsilon^(5/2)) for mean/work and O(epsilon^(7/2)) for second moment/variance. Constants and physical units are set using (3)-(5), not by exponents alone.
+
+These are total error allocations, not free extra budgets. The same angle discrepancy also contributes to the full-output error. Other control, phase, timing, vacuum or isolation errors must be allocated separately or compared through an alternative complete-generator bound without double counting. A pure final diagonal phase error does not alter B moments, but it can still spoil the full packet state and must meet its separate output budget. A generic residual outside the present circuit class receives the ordinary full-resource growing-width allowance; it cannot be relabeled as an angle error to use (2).
+
+## 5. A matching first-order growth witness
+
+The sqrt(L) coefficient cannot be replaced by an L-independent constant for all these preparation circuits and arbitrarily small single-angle errors. This is a statement about this particular fault interface, not a prohibition on other calibrated or robust preparation methods.
+
+Set L=2n with n>=8 and perturb only controlled rotation i=n by a positive delta. All other gates, the initial flip, the clock, the reserves and endpoint controls remain exact. By the sine symmetry,
+
+    w_(n+1)=1/2,
+    b_n>=1/sqrt(2n+1).
+
+Let D be the nominal conditional remaining mean beyond n, minus n:
+
+    D=(sum_(m=n+1)^(2n)(m-n)b_m^2)/w_(n+1).
+
+For m in {ceil(3n/2),...,floor(7n/4)} there are at least n/8 terms, m-n>=n/2, and sin^2(pi m/(2n+1))>=sin^2(pi/8)>1/8. Thus
+
+    sum_(m=n+1)^(2n)(m-n)b_m^2
+       >=n^2/[64(2n+1)]>=n/192,
+    D>=n/96=L/192.
+
+The exact mean difference is
+
+    Delta_mu=w_n D [sin^2(theta_n+delta)-sin^2(theta_n)].  (6)
+
+Its derivative at zero is
+
+    a=2 b_n sqrt(w_(n+1)) D>=sqrt(L)/192.
+
+The same Taylor remainder and w_n D<=L give
+
+    Delta_mu>=sqrt(L)delta/192-L delta^2.
+
+Consequently, for 0<delta<=1/(384 sqrt(L)),
+
+    Delta_mu>=sqrt(L)delta/384.                          (7)
+
+This is an exact analytic witness; no numerical asymptotics are substituted for the inequalities. It uses one positive onsite-controlled rotation perturbation with charge bandwidth one, complete integrated Hamiltonian discrepancy eta=delta, a fixed support of two sites, and fixed strength/slew headroom as in section1. All endpoints restore the same F0. It does not violate a runtime theorem whose nominal plateau conserves charge: here the later ideal number-changing preparation gates amplify a change in continuation probability.
+
+For example choose epsilon=1/L along even L>=384^2 and delta=epsilon. The complete vector error is <=epsilon and the physical residual action is epsilon, yet the preparation-work error is at least Delta sqrt(epsilon)/384. Thus neither that state estimate nor a bounded-bandwidth global residual budget alone implies O(epsilon) work accuracy for this nonconserving preparation schedule. In the small-error worst-case class, (7) matches the sqrt(L) dependence of (3) up to constants. Known signed calibration errors may be corrected; number-conserving fault classes, other schedules, feedback, different ready resources and different observables change the problem. None is excluded.
+
+## 6. Evidence and remaining decisions
+
+The proof above uses the exact existing prefix preparation and finite hybrid/telescoping algebra. No new spectral supplier, physical axiom, audit verdict or numerical experiment is imported. The next check should reconstruct the hybrid distribution for arbitrary real faulty angles, the treatment of the first flip and the lower-bound arithmetic, and verify that the physical waveform/endpoint/load assumptions really realize the stated error model. Full output, net work, absolute work, raw moments and covariance must remain distinct.
+
+The proposed calibration sharpening is conditional on exact independent vacuum and the declared classical angle-error interface. Native rotating controls, actual error certification, a microscopic work reservoir, arbitrary interacting preparation faults, autonomous release, record formation and indefinite reuse are still separate physical questions. This result does not establish those suppliers or close the full physical-realization objective.

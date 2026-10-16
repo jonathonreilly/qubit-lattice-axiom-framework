@@ -1,0 +1,11 @@
+# Evidence boundaries and recovery
+
+The accepted source result is conditional analytical support. The exposed reviewer supplied full sign, quotient, scalar, chronology, norm-domain, slew, variance and symmetry-bound calculations and exact finite counterexamples. The packaging primary verifies their recorded identities only.
+
+One historical author scientific execution used complete64-space complex128 exponentials at M=6. The nominal vector residual was approximately2.82e-13; matched eta=.22 gave error approximately.15074 and mean3; an unmatched pair shifted the mean to approximately3.03351; missing center normalization gave error approximately.39313. These are recorded floating results, not recomputed values or certified interval bounds. The fixture's tau/(2pi)=144 and final lambda=4pi make both factors recurrences, so it cannot establish the need for final phase. The exact M=4 odd-pi witness in the review supplies that phase distinction analytically.
+
+The author recorder had no explicit wall timeout or resolved executable/package version record. Its observed2.095 seconds is not a resource cap. The original command has no -B flag; the review metadata commands use -c with separate captured and original source paths; root acceptance/clarification commands have their own actual schemas. These heterogeneous records remain unchanged. No synthetic uniform receipt or inferred scientific execution is created.
+
+Original root qualification1c727dad contained the accidental phrase necessary sufficient. Current4474c5cd replaces exactly that sentence with a sufficient-only allocation and an explicit absence of necessity. Both successful metadata recording runs, their sources and full streams, and both decision freezes are preserved. No unrelated lost history is asserted absent. The exposed review's pre-fixture analytical checkpoint remains archived, including its original exposure chronology.
+
+New packaging source code runs no old science. Declared metadata mutants remove or alter preserved inputs and require refusal; they do not establish physics. The generated primary refuses all unbound canonical use. Actual future wrapper review, canonical/base observations, canonical execution and publication must be recorded separately. Frozen source nulls must not be overwritten by later integration.

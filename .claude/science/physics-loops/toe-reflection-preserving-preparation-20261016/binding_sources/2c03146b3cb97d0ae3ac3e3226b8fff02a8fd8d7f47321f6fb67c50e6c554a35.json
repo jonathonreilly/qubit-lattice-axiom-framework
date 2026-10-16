@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T19:50:12.717384+00:00",
+  "refs": {
+    "HEAD": "14780b5daec83ba275aff97934c2ed075d6c0a42",
+    "origin/main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "active_tree": "1a4649b2fbce34536c4429fdc984754ad0879450",
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1950/stdout",
+    "bytes": 1657,
+    "sha256": "4e87d99a23cdaab3656a8085bde4408fbced59d8519a25c65a05012b83ecba9b"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_1950/EXECUTION.json",
+      "bytes": 1161,
+      "sha256": "8695a8774f4a256a825af7e8168557de7bee5532e8f373d6e14da149d736a768"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1950/EXECUTION.json",
+      "bytes": 1260,
+      "sha256": "2d45d589c8e747c6605606ec7b7bb04a1ee4932f292735d5b405c579b8e739b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_base_refs/EXECUTION.json",
+      "bytes": 1237,
+      "sha256": "efdeea8a289729c3a896c56d94efdccc27f6b19eeef17b1fcba9a8941817d02f"
+    }
+  ],
+  "scope": "Actual19:49 fetch/refs/inventory and clean regular OPEN9650 selected; main/authority unchanged."
+}

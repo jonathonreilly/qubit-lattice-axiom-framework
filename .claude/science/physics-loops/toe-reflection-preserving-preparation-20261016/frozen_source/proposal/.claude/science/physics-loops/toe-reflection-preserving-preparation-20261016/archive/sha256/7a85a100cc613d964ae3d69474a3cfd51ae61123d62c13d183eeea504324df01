@@ -1,0 +1,184 @@
+# Exposed mathematical review: reflection-preserving prefix preparation
+
+The proposal `9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd` supports a **conditional preparation and matched-error mean-energy result**. No blocking algebraic defect was found in equations (1)–(14). The three-local permissions, matched coefficients, exact initialization and phase/timing premises are material. This is an exposed same-model reconstruction, not blind replication, a hardware observation, retained audit or root acceptance. I authored earlier preparation/control reviews and read the accepted parent machinery. The root proposal stayed unchanged.
+
+The principal improvement is exact mean preparation work within a narrower symmetry-preserving fault class. It comes with a stronger control alphabet and synchronization contract. It does not remove the extensive energy supplied to the battery, prove robust higher moments, or replace the accepted ordered-angle counterexample with a general fault-tolerance theorem.
+
+`PRE_FIXTURE_FINDINGS.md` records the analytical conclusions before author-code exposure. No new scientific program was run. The author's single floating fixture and its actual source, recorder, receipt and streams were subsequently inspected, without replay. Source identities, selected parent byte ranges, evidence coverage and actual metadata records accompany this review.
+
+## 1. Full physical operators, reflection and signs
+
+Use the proposal's M=2n>=4, B=sum n_j, p_m=|1^m0^(M-m)>, and J equal to reversal followed by a bit flip on every site. Reversal and the simultaneous flips commute; J is unitary, self-adjoint and squares to identity. On the full battery,
+
+    J n_j J=I-n_(M+1-j),  JY_jJ=-Y_(M+1-j),
+    JBJ=M I-B.
+
+For j=2,...,M-1 the two control projectors in F_j=n_(j-1)Y_j(I-n_(j+1)) commute with Y_j. Therefore F_j is Hermitian with norm one, and it acts only on the declared consecutive triple. Direct evaluation on every prefix gives F_j p_(j-1)=i p_j, F_j p_j=-i p_(j-1), and zero otherwise. Every individual F_j therefore preserves the entire prefix span, not merely the intended trajectory. This is stronger than what was needed for the parent's unfiltered ordered nY gates and is not obtained by projecting a physical operation afterward.
+
+Conjugation by J changes F_j to
+
+    -(I-n_(M+2-j))Y_(M+1-j)n_(M-j)
+       =-F_(M+1-j),
+
+where the distinct-site factors commute. This proves the proposed full-space identity, including the minus sign. With a=n+k+1 and b=n-k, reflection exchanges a and b, so G_k=F_a-F_b commutes with J on the full 2^M-dimensional battery. No implementation of J is needed or supplied.
+
+On s_0=p_n, G_0 produces i(p_(n-1)+p_(n+1))=i sqrt(2)s_1. Acting on s_1 gives -i sqrt(2)s_0. For k>=1, the outward action on the low branch comes from -F_b and on the high branch from F_a; both signs are +i. Thus G_k s_k=i s_(k+1), G_k s_(k+1)=-i s_k, with zero action on the other s_l. Dividing only the center by nu_0=sqrt(2) makes every A_k the usual Y on its indicated two-dimensional quotient edge. The desired even span is invariant for all real angles, including angles outside the nominal interval. No F_1 or F_M is used.
+
+The global and promised-domain norm statements must remain different. On the even span ||A_k||=1. The full-space triangle bound ||A_k||<=2/nu_k is safe. In fact for k>=1 the two triple supports are disjoint and their F terms have independent eigenvalues +/-1, so ||A_k||=2 on the full space. A global error bound eta is therefore not available merely from the restricted norm-one statement. The source correctly uses a larger full-space residual bound.
+
+Two analytic discriminators make these signs and domains consequential. Omitting the center normalization changes the central rotation angle to sqrt(2)theta_0; mean energy can still be exactly n while the packet is wrong. Replacing F_a-F_b by F_a+F_b sends the center toward the *antisymmetric* branch. For M=4, theta_0=pi/4, the resulting vector differs from the desired packet by norm one, even though its mean number remains two. Mean-energy agreement alone does not verify packet preparation or the mirror sign.
+
+## 2. Initialization, target weights and scalar reserves
+
+The n exact onsite flips have action exp[-i(pi/2)Y]|0>=|1> with the stated Y convention. Their serial product prepares p_n with no extra factor i^n. Their 2pi identity reserves exponentiate to identity on the full local spaces. The old register and reference are untouched by these battery controls.
+
+The sine normalization is sum_(m=1)^(M-1) sin^2(pi m/M)=M/2. Reflection gives b_(n-k)=b_(n+k)=sqrt(2/M)cos(pi k/M), so the coefficient of s_k is sqrt(2)b_(n+k) for k>=1 and c_0=b_n. This yields exactly the displayed c_k and sum c_k^2=1. Every c_k and finite continuation weight w_k is strictly positive. The state before quotient edge k is
+
+    sum_(l<k)c_l s_l + sqrt(w_k)s_k.
+
+The gate replaces its last term by c_k s_k+sqrt(w_(k+1))s_(k+1). This proves the entire ordered circuit with the correct sign and order. n=2 is included: there is one center spreading gate and no later quotient edge. No zero tail is divided by.
+
+The new integrated spreading terms are full-support identity reserves plus the filtered flips:
+
+    Q_+=2pi I+(theta_k/nu_k)F_a,
+    Q_-=2pi I-(theta_k/nu_k)F_b.
+
+After extension, their sum is 4pi I+theta_k A_k. At the center the nonidentity parts do not commute. Identical simultaneous envelopes are precisely what implement the exponential of this sum. A product of separate center rotations is not the proposed operation. The scalar exp(-i4pi) equals one on the entire battery, including off-prefix states; it is not removed by taking a density matrix or by restricting the input. Conditional projector reserves would be different operators and are not interchangeable here.
+
+For |delta_k|<=1, a local nonidentity coefficient has magnitude at most (pi/2+1)/nu_k<pi. Each complete actual Q is consequently positive and has norm below 3pi. The stated Q_*=6pi is a common conservative bound, also covering onsite initialization and the final number layer. This proves positivity for this exact coefficient family, not for an arbitrary small additive Hamiltonian error. The additive matched error itself need not be positive.
+
+## 3. Exact old/reference chronology and absolute carrier clock
+
+Let F_fill denote the full battery initialization unitary, C_delta the ordered product of matched spreading gates, and E_p=exp(-i tau_p K/hbar). With R_B(t)=exp(-it Delta B/hbar), the laboratory controls are hbar f_h(t-t_k)R_B(t)QR_B(t)*. Their interaction-picture generators are exactly hbar f_h Q. This sign follows by conjugating the laboratory term by R_B(t)*, not by R_B(t). The projectors remain local and only the driven Y quadrature rotates. Literal Delta B and K retain coefficient one.
+
+The slot count is n+(n-1)+1=M, so tau_p=Mh is fixed before lambda. If x=Delta tau_p/hbar, |r-x/(2pi)|<=1/4 and k=floor(r)+2, then k-x/(2pi) is in (3/4,9/4]. Hence lambda=2pi k-x is in (3pi/2,9pi/2]. The rational floor needs no equality oracle. A permitted h may be selected by a strict computable upper enclosure of the stated lower bounds; no exact comparison to an irrational threshold is required.
+
+Chronological order gives the complete nominal/matched operator identity
+
+    U_p(tau_p)
+      = E_p tensor [R_B(tau_p) exp(-i lambda B) C_delta F_fill]
+      = E_p tensor [C_delta F_fill].                    (R1)
+
+The cancellation is to the *left* of the spreading word. It uses integer-spectrum B and x+lambda=2pi k, and assumes no commutation of C_delta with B. All initialization and spreading reserve phases are already one. K's full scalar is retained in E_p. Restricting (R1) to independent battery vacuum proves the claimed input isometry, uniformly for arbitrary old/reference inputs. On arbitrary battery inputs (R1) still holds as an operator factorization, but it does not assert preparation of beta_delta from those inputs. No output is projected away.
+
+The old state may be correlated with the passive reference; its output is (E_p tensor I_R)rho_SR(E_p* tensor I_R). The battery remains in a product with this old/reference output in the exact matched model. An additional idle ancilla retains its actual free unitary off the promised vacuum domain. It must not be discarded from a later full-output statement.
+
+The absolute carrier clock is essential. The laboratory spreading generator generally does **not** commute with J: J R_B(t) J=e^(-i M Delta t/hbar)R_B(t)*. J-commutation is the interaction-picture statement. Free evolution and any exact number phase preserve the entire B probability distribution. At the endpoint the chosen phase restores the real J-even vector, not only its energy probabilities.
+
+An exact missing-phase discriminator is available without numerical work. For M=4, beta=(p_1+sqrt(2)p_2+p_3)/2. Choose an allowed h with x=Delta(4h)/hbar an odd multiple of pi; arbitrarily large such h meet all lower caps. If the final correction is omitted, the battery is e^(-i pi B)beta, whose overlap with beta is -1/4+1/2-1/4=0. Mean energy is nevertheless unchanged. The phase is therefore load-bearing even though the author's particular fixture does not discriminate it.
+
+## 4. Common incident cap, slew and work variation
+
+The local error-bearing Q commutator has norm ||[B,Q]||=|theta_k+delta_k|/nu_k<pi; initialization has pi/2 and the number-phase terms commute with B. The envelope has maximum 2/h, derivative maximum 2pi/h^2 and total variation 4/h. Differentiating the lab term gives
+
+    dot H=hbar f_h' R_B Q R_B* - i Delta f_h R_B[B,Q]R_B*.
+
+Thus every rotating term obeys
+
+    ||H||<=2hbar Q_*/h,
+    ||dot H||<=2pi hbar Q_*/h^2+2pi Delta/h.             (R2)
+
+Only the k=0 pair overlaps: its triple centers are adjacent and the supports share two sites. For k>=1 the center separation is 2k+1>=3, so the triples are disjoint. At most two driven terms meet any site. Consequently the source's h bounds give
+
+    sum_incident||H||<=4hbar Q_*/h<=g/2,
+    sum_incident||dot H||<=4pi hbar Q_*/h^2+4pi Delta/h
+                         <=sigma/4+sigma/4=sigma/2.
+
+The simultaneous final layer has one lambda n_j term per site and no carrier term; lambda<6pi makes the same h safe. Its global norm remains extensive. Initial flips are also covered. The literal battery field adds Delta to local incidence; old load remains its actual separate load. No three-local operator was synthesized from two-local controls in this argument. The required physical supports are genuine triples, and matching widely separated mirror pairs remains a supplied coordination resource.
+
+For a rotating term, integrating (R2) more carefully gives
+
+    integral||dot H||dt <=4hbar||Q||/h+Delta||[B,Q]||
+                       <=g+pi Delta.
+
+The first term actually has unused headroom under the proposed h, so this is conservative. There are n+2(n-1) rotating local pulses and M final number pulses. Summing proves equation (10). This prices each positive reserve and the full parallel phase layer. Since |Tr rho dot H|<=||dot H||, it bounds absolute modeled drive work. It is distinct from signed net work, instantaneous energy, microscopic drive storage and work fluctuations. The h,g,sigma,Delta,hbar units are consistent. Bounded first derivative is not a hard bandwidth certificate.
+
+## 5. Exact mean, full-output error and reverse-hybrid variance
+
+Every matched spreading gate commutes with J and preserves the desired even prefix span. Starting from s_0 therefore gives a normalized J-even beta_delta. Since J(B-n)J=-(B-n), every odd centered moment vanishes. In particular <B>=n exactly, without assuming small eta. Algebraically this holds for all real matched angles; the additional |delta_k|<=1 restriction is what supplies the stated physical positivity/cap family.
+
+On the invariant span, each A_k has norm one. Telescoping there gives ||beta_delta-beta||<=sum|delta_k|=eta and unhalved complete old/battery/reference trace error <=2eta. Later faulty suffixes are actual unitaries and never replaced by fresh target states. On the full battery, the integrated operator discrepancy is bounded by 2sum|delta_k|/nu_k, as stated, rather than by eta. These are alternative bounds on distinct domains, not interchangeable residual budgets.
+
+For the moment calculation let D_f be diagonal in the s_k basis with values f(k), and let its range width be F. In a reverse hybrid, earlier gates are ideal and later gates actual. Before the changed edge k the continuing amplitude is sqrt(w_k)s_k, and all earlier stopped components are outside the suffix's support. The actual later suffix sends s_(k+1) to a unit vector in span{s_(k+1),...,s_(n-1)} with some expectation A in the range of f. No cross term survives against the diagonal D_f between the stopped s_k and that suffix. The exact change is
+
+    w_k[A-f(k)]
+       [sin^2(theta_k+delta_k)-sin^2(theta_k)].            (R3)
+
+Using |(sin^2)''|<=2 and w_k sin(2theta_k)=2c_k sqrt(w_(k+1)), each term has magnitude at most
+
+    F[2c_k sqrt(w_(k+1))|delta_k|+w_k delta_k^2].
+
+All c_k<=sqrt(2/n), all w_k<=1, and sum delta_k^2<=eta^2. This proves equation (11). Subtracting any constant is harmless; the proof really uses the range width, so it need not assume f(0) is the minimum. Unlike the ordered circuit's deterministic first flip, the central spreading angle is not deterministic and its linear term is required.
+
+On the even span, (B-n)^2=X^2 has eigenvalues k^2 and range [0,(n-1)^2]. Both means are exactly n, so variance difference is precisely the expectation difference of this observable. Equation (12) follows without the larger generic mean-squared correction. For a positive integer r, the restriction of B^r to this span has diagonal entries [(n+k)^r+(n-k)^r]/2. Although B itself can map even to odd vectors, these compressed expectation values are valid for states actually remaining in the even span. No unphysical projection is inserted in the dynamics.
+
+Writing F_v=(n-1)^2, a concrete sufficient dimensionless variance request t_v>0 is
+
+    eta<=min[t_v/(4sqrt(2/n)F_v), sqrt(t_v/(2F_v))].       (R4)
+
+Each displayed variance term then costs at most t_v/2. For physical variance tolerance t_E, use t_v=t_E/Delta^2. Intersect (R4) with eta<=e_state/2 for an unhalved state target and with eta<=1 if using one simple sufficient bound on every local delta. A uniform per-spreading-angle allowance is eta/(n-1). At n=Theta(epsilon^-1), state error O(epsilon) admits total eta=O(epsilon) and per-angle O(epsilon^2); variance error O(epsilon) admits total O(epsilon^(5/2)) and per-angle O(epsilon^(7/2)), with fixed Delta and appropriately chosen constants. These are sufficient requests, not necessity results or arithmetic-runtime claims.
+
+The exact matched product structure gives unchanged old K moments and zero old/battery covariance. In particular the difference of Var(F0) equals Delta^2 times the difference of Var(B), and the same holds for the raw second-moment error because both first moments are fixed. For higher full-F0 moments use the explicit binomial sum of old moments and these actual battery moment errors. Coupled or correlated faults invalidate the zero-covariance shortcut.
+
+## 6. Mean work and the precise symmetry-breaking boundary
+
+For the exact matched model, controls vanish at the same F0 endpoints, initial battery is vacuum, and K-energy is unchanged. The closed Hamiltonian work identity therefore gives W_p=Delta n. Filling supplies this mean energy; every spreading slot preserves mean n in the interaction picture, and laboratory free phase preserves B. The final number layer also changes no mean. Identity reserves have unit endpoint phases but remain paid in peak load and absolute variation.
+
+The full-space centering identity is exact. With X=B-n and JXJ=-X,
+
+    Tr(X sigma)=1/2 Tr[X(sigma-Jsigma J)],
+    |Tr(X sigma)|<=M/4 ||sigma-Jsigma J||_1.              (R5)
+
+For nominal/matched H_sym commuting with J in the global interaction picture, compare evolution from sigma_0 under H_sym+E with evolution from J sigma_0 J under H_sym+JEJ. Triangle inequality, unitary contraction and Duhamel give
+
+    ||sigma(t)-Jsigma(t)J||_1
+      <=||sigma_0-Jsigma_0J||_1
+                        +(2/hbar)integral||E-JEJ||dt.   (R6)
+
+This remains valid with arbitrary retained old/reference factors by extending J with identities. The M/4 coefficient is the full-space norm of the centered B divided by two; it is not a size-independent energy estimate. Scalar faults cancel in E-JEJ, but may still affect coherent phases and work accounting.
+
+Equations (R5)–(R6) apply **after filling and through spreading**. Filling and the final number-phase control do not commute with J. The source now states this boundary correctly. Its initial sigma_0 is the actual post-fill state, whose symmetry defect is supplied or paid. An exact, or more generally B-commuting, final phase preserves B probabilities and carries the resulting mean bound to release. A faulty final operation with [E_post,B]!=0 is outside that transfer. One explicit additional bound for such a post-spreading interval is
+
+    |Delta_post <B>| <= (1/hbar)integral||[E_post(t),B]||dt,
+
+when the remaining nominal generator commutes with B. Alternatively use the ordinary endpoint trace-width allowance. This is a qualification on extending the claim, not a defect in its stated exact-phase model. A diagonal phase calibration error can preserve mean exactly while spoiling the real packet and its full comparator.
+
+Initial readiness also matters to net work. For actual initial battery energy differing from vacuum, net work contains the *initial* energy correction as well as the final mean error. With exact decoupled old evolution it is Delta(<B>_f-<B>_i), not Delta<B>_f. If faults couple to the old system, also retain Tr K(rho_f-rho_i); symmetry of B alone does not bound it. Residual controls at admission/release add their actual endpoint energy terms. The generic full-output trace allowance and symmetry-resolved allowance are alternative ways of bounding a named discrepancy; neither justifies double counting or dropping other faults.
+
+A finite-calibration output wrapper, without asserting exact mean, is
+
+    e_out <= e_ready+2[eta_fill+eta+M|delta_lambda|
+                                      +zeta_other+eta_time].     (R7)
+
+Here eta_fill is the sum of initialization angle errors, eta is the matched spreading-angle sum, and zeta_other is the full integrated Hamiltonian discrepancy divided by hbar for terms not already priced. Reserve/carrier/timing errors belong in that actual discrepancy unless separately resolved. The same actual faulty suffix propagates the initialization error; (R7) does not insert a fresh p_n. After all controls are off, eta_time<=(||K||+Delta M)|delta_t|/hbar is a safe fixed-time vector allowance, with any additional factors included. Timing during active controls is a schedule discrepancy. If M=Theta(epsilon^-1), generic additional action zeta_other=O(epsilon^2) is a sufficient request for O(epsilon) mean accuracy through the full-width estimate, although more structured errors can do better. Exact matched mean work therefore does not eliminate all precision costs. A phase-only error is a notable exception for energy, while still costing coherent output accuracy. Actual positivity/support/cap/slew need their own certificates throughout.
+
+The bounded value of lambda does not make its arithmetic insensitive: lambda=2pi k-Delta tau_p/hbar has k=O(M) and tau_p=O(M) at fixed physical constants. A state allocation M|delta_lambda|=O(epsilon) needs |delta_lambda|=O(epsilon/M); sufficient separate absolute input-error requests for pi or Delta can therefore scale as O(epsilon/M^2), after paying their displayed coefficients and product/division errors. At M=Theta(epsilon^-1) this is O(epsilon^3). These are finite conservative requests, not lower bounds, physical error certificates or oracle-walltime estimates. Keeping exact full scalar/number phases in the target remains necessary.
+
+An exact unmatched-pair witness illustrates the restricted fault class. For M=4, let the central integrated nonidentity generator be aF_3-bF_2. From p_2 its output is
+
+    cos(r)p_2 + [sin(r)/r](b p_1+a p_3),
+    r=sqrt(a^2+b^2).
+
+Its mean bias is [(a^2-b^2)/(a^2+b^2)]sin^2(r). At nominal a=b=theta_0/sqrt(2) the bias is zero; changing only a by any sufficiently small positive amount gives a nonzero bias while both complete 2pi-reserved local generators remain positive. Matching is therefore load-bearing. No general immunity to independent local calibration errors follows.
+
+## 7. Tradeoff with the accepted ordered-angle result
+
+The accepted ordered-angle result `fd847fb0`, controlled by `5ba89f88`, concerns two-local ordered flips/controlled rotations and permits deterministic errors in every rotation, including its first flip. It obtains a mean coefficient growing as sqrt(L), and an exact single-angle witness shows that this growth cannot be removed in that specific class. It does not exclude alternative schedules or correlated error models.
+
+The present circuit changes both axes of that comparison: three-local doubly filtered flips, simultaneous opposite-sign mirror matching, and an exact n-flip initialization. It uses O(M) slots, O(M) work/energy supply, O(M) qubits and a fixed local cap, but puts the matched spreading faults in a J-preserving family. Exact mean work is an advantage in that family. Initial filling faults, unmatched amplitudes/envelopes, clock errors and generic couplings are not granted that advantage. Variance still grows in sensitivity as specified above. This is a genuine conditional control/fault-contract trade, not a contradiction or a universal superiority claim.
+
+There is a separate runtime qualification. This proposal has M=L+1 with support p_1,...,p_L. The author's accepted fixed-duration conserving runtime uses M=L+2q and shifted support p_(q+l-1); its full buffers and register counts cannot be silently transplanted. The root period-wait variant uses M=L+2q-1, which matches the new inventory at q=1 and suggests a scoped composition route. This review accepts no runtime/ancilla-return composition merely from that coincidence. Any such use must bind the actual target packet, buffers, phase, old aging and runtime interface separately. Preparation factorization alone allows arbitrary finite decoupled positive K.
+
+## 8. Author fixture, evidence limits and disposition
+
+The actual author fixture is one complex128 calculation at M=6,n=3,L=5 on the complete 64-dimensional battery. It constructs the physical F_j, J, B and prefix/even embeddings; checks full-space JFJ and JBJ identities, prefix leakage and the restricted Y generators; prepares p_3 with the reserved onsite flips; and exponentiates each complete simultaneous pair sum. It uses no fictitious commuting product at the overlapping center. The source is `45da91b6`; the actual execution began at 18:27:39.013332 UTC and ended at 18:27:41.108925 UTC, exit 0, with empty stderr. The captured recorder matches its receipt.
+
+Reported nominal vector residual is about 2.82e-13. For matched errors (0.13,-0.09), eta=0.22, the vector error is about 0.15074, mean is 3 to floating error, and variance changes from about 1.16667 to 1.19650. An unmatched second pair gives mean about 3.03351. Omitting center normalization gives vector error about 0.39313 while mean remains 3. These are useful finite discriminators, not certified interval results or general-n proofs. The code has one author execution; this reviewer performed no independent replay.
+
+The fixture selects h=48pi in units hbar=Delta=g=sigma=1, hence tau/(2pi)=144 and lambda=4pi. Both the free factor and final number phase are separately identity analytically. Thus it **does not discriminate** an omitted endpoint phase, an incorrect absolute carrier, or a laboratory ODE implementation. Section 3's general factorization and nonrecurrence analytic counterexample supply the relevant mathematical checks. The fixture also does not numerically check the arbitrary old/reference input factorization, general symmetry-breaking inequality, reverse-hybrid coefficient for all f, or physical local slew. Those claims rely on the analytical arguments.
+
+The author recorder has no explicit child wall-time or resource limit in its source, and its receipt identifies `python3` without a resolved executable/version or NumPy/SciPy versions. The observed 2.095-second duration is not an enforced limit. These omissions are preserved rather than reconstructed. The fixed M and matrix sizes are visible in the frozen source. Its floating norms and eigenvalues are not exact positivity or error certificates. No failed author science execution is present in the supplied run directory; no lost history is asserted absent elsewhere.
+
+All source/freezer/capture/receipt hashes and full supplied author streams are preserved in this review's bounded evidence closure. The selected canonical preparation bodies and qualifications were read; no claim is made to revalidate the entire 170504-byte runtime archive or the Bai–Marvian synthesis proof. The accepted ordered-angle result is comparison context, not a premise for the new symmetry proof. Metadata checks validate bytes and linkage only.
+
+Recommended disposition: **qualified conditional analytical support**, with the exact matched fault class, stronger three-local/mirror permissions, initialization and endpoint obligations, global-versus-domain norms, and non-composition/runtime limits above. Root owns acceptance. No native vacuum, phase reference, microscopic controller work storage, autonomous release/halt, indefinite reuse, generic fault tolerance or retained status is established. No canonical, Git, PR, audit, lock, prompt or axiom file was changed.

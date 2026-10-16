@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/reflection_preserving_preparation_2026_10_16.py
+runner_sha256: 354d953d75afd17ce3a1cfe8fda90e8acd79cb689e80e1ba1ad05f35c75447e4
+input_fingerprint_sha256: e0ee39352ab752c248c9479d316041576e7d07213f96d5ad078f15b69e75dbb5
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: exact filling and matched three-local mirror sums with complete positive reserves
+per_site: exact vacuum, isolation, gap, carrier, clocks and final phase remain supplied
+per_mode: exact matched mean, qualified variance and symmetry-breaking allowances remain distinct
+per_block: full old/battery/reference output; promised-domain eta versus full-operator norm
+lattice_wide: one historical floating fixture; analytical nonrecurrence witness, no replay or runtime composition
+
+----- stderr -----
+

@@ -1,0 +1,17 @@
+"""Preserve an editorial correction to a qualified source record; no science execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1];O=N/'reflection_preparation_root_review';D=N/'reflection_preparation_root_review_v2'
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+assert pin(O/'FINAL_QUALIFICATIONS.md')['sha256']=='1c727dade021ef194f8b017d3304fae9e07689ca32ca8bfad367286212b7f2b5'
+old=(O/'FINAL_QUALIFICATIONS.md').read_text()
+a='M|delta_lambda| and underlying inputs of order epsilon/M^2 can remain necessary sufficient requests for the chosen allocation.'
+b='The state allowance M|delta_lambda|=O(epsilon) gives conservative sufficient underlying input requests of order epsilon/M^2 for this allocation; their necessity is not established.'
+assert old.count(a)==1
+D.mkdir(exist_ok=False);(D/'FINAL_QUALIFICATIONS.md').write_text(old.replace(a,b))
+review=json.loads((O/'ACCEPTANCE.json').read_text());review.update(utc=datetime.now(timezone.utc).isoformat(),supersedes_for_wording_only=pin(O/'ACCEPTANCE.json'),original_qualification_preserved=pin(O/'FINAL_QUALIFICATIONS.md'),original_acceptance_execution=pin(N/'runs/reflection_preparation_acceptance/EXECUTION.json'),controlling_qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),correction='Removed accidental phrase necessary sufficient requests. All allocations remain sufficient only; no necessity/lower bound was proved. No mathematical formula or source evidence changed.')
+(D/'ACCEPTANCE.json').write_text(json.dumps(review,indent=2)+'\n')
+(D/'FREEZE.json').write_text(json.dumps(dict(utc=datetime.now(timezone.utc).isoformat(),members=[dict(pin(D/n),path=n) for n in ('FINAL_QUALIFICATIONS.md','ACCEPTANCE.json')]),indent=2)+'\n')
+print(json.dumps(dict(acceptance=pin(D/'ACCEPTANCE.json'),qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),freeze=pin(D/'FREEZE.json'),new_scientific_executions=0)))

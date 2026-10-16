@@ -1,0 +1,55 @@
+{
+  "status": "bound_actual_root_published_base",
+  "base_head": "14780b5daec83ba275aff97934c2ed075d6c0a42",
+  "base_tree": "1a4649b2fbce34536c4429fdc984754ad0879450",
+  "base_branch": "physics-loop/toe-preparation-angle-energy-moments-runner-repair-20261016",
+  "base_pr": 9650,
+  "base_parent_branch": "physics-loop/toe-interacting-preparation-control-work-20261016",
+  "publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/PUBLICATION.json",
+    "bytes": 1622,
+    "sha256": "790c0aa4ce51e3fab6aa3431585bb2005605e7ebc9a9715ad0683dfbe30b23b4"
+  },
+  "attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ATTACHMENT_v2.json",
+    "bytes": 878,
+    "sha256": "c1d77da3327d86f077c8f0174c6f2742faf379e10f47bef1cbf735ecae7f1906"
+  },
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/FRESH_REFRESH.json",
+    "bytes": 1498,
+    "sha256": "2c03146b3cb97d0ae3ac3e3226b8fff02a8fd8d7f47321f6fb67c50e6c554a35"
+  },
+  "expected_refs": {
+    "HEAD": "14780b5daec83ba275aff97934c2ed075d6c0a42",
+    "origin/main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "observations": {
+    "head": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_base_head/EXECUTION.json",
+      "bytes": 1453,
+      "sha256": "03bed589fde12d1397071b03d13d3fb3984ebe4e0228a8338f5dab3c9e35b46e"
+    },
+    "tree": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_base_tree/EXECUTION.json",
+      "bytes": 1459,
+      "sha256": "2a576ffc31fb7ca82c0a7c4f5e9a7b19b923205dae5d89fad849ba03d40d6e4b"
+    },
+    "branch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_base_branch/EXECUTION.json",
+      "bytes": 1466,
+      "sha256": "4faa57055a8c0e13c9debe1e6c163d5a64a8df727f6141ae3baa43cac30c6aa1"
+    },
+    "status": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_base_status/EXECUTION.json",
+      "bytes": 1469,
+      "sha256": "3231a0e1bb27ee7b87438e574c6ed8c18a278c98109af166ba99ebce0528d0b2"
+    },
+    "parent_pr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_base_parent_pr_explicit_repo/EXECUTION.json",
+      "bytes": 1659,
+      "sha256": "c489aafcba88aa216f9235bb48e025936646e09755ed146e88c6ddebfb483893"
+    }
+  }
+}

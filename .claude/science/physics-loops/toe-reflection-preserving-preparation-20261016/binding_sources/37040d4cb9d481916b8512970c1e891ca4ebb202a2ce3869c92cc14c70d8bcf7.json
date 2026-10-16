@@ -1,0 +1,549 @@
+{
+  "schema": "reflection_preparation_source_archive_v1",
+  "sources": [
+    {
+      "source": "reflection_preparation_root_proposal/FREEZE.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/FREEZE.json",
+      "role": "source_freeze",
+      "bytes": 526,
+      "sha256": "280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68"
+    },
+    {
+      "source": "reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "role": "historical_source",
+      "bytes": 15258,
+      "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+    },
+    {
+      "source": "reflection_preparation_root_proposal/author_check.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/author_check.py",
+      "role": "historical_source",
+      "bytes": 4522,
+      "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+    },
+    {
+      "source": "reflection_preparation_root_proposal/SOURCE_MANIFEST.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/SOURCE_MANIFEST.json",
+      "role": "historical_source",
+      "bytes": 1420,
+      "sha256": "2906985b3fc20e92da279462656010f378600d84ffc6346778e1ee6cccf96996",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/2906985b3fc20e92da279462656010f378600d84ffc6346778e1ee6cccf96996"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/FREEZE.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/FREEZE.json",
+      "role": "source_freeze",
+      "bytes": 6423,
+      "sha256": "ddb52f94cb711d5cdea1271dec89a1e1b22002d055d89676c3f94cec01dc13aa",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/ddb52f94cb711d5cdea1271dec89a1e1b22002d055d89676c3f94cec01dc13aa"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/CHECKPOINT.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/CHECKPOINT.md",
+      "role": "historical_source",
+      "bytes": 1098,
+      "sha256": "6ce29058d8c30ac399d3c14271331026fc8c150b04c7e55f68e44832d4cbb0ae",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/6ce29058d8c30ac399d3c14271331026fc8c150b04c7e55f68e44832d4cbb0ae"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/EXPOSURE.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/EXPOSURE.md",
+      "role": "historical_source",
+      "bytes": 3062,
+      "sha256": "c351118e54d43eb2ba195b18041dc0af76666b530cd037a07052d6f4965a1b4d",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/c351118e54d43eb2ba195b18041dc0af76666b530cd037a07052d6f4965a1b4d"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/PRE_FIXTURE_FINDINGS.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/PRE_FIXTURE_FINDINGS.md",
+      "role": "historical_source",
+      "bytes": 2592,
+      "sha256": "ae215d02125323414a34dd295d7d8036ac43c9a7193559fc61bc731304477370",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/ae215d02125323414a34dd295d7d8036ac43c9a7193559fc61bc731304477370"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/RESULT.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/RESULT.json",
+      "role": "historical_source",
+      "bytes": 1577,
+      "sha256": "632bb16673ca052812ed53817ec1f6115ee23dc89e9516f8910c0860d2c754e0",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/632bb16673ca052812ed53817ec1f6115ee23dc89e9516f8910c0860d2c754e0"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/REVIEW.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/REVIEW.md",
+      "role": "historical_source",
+      "bytes": 25857,
+      "sha256": "7a85a100cc613d964ae3d69474a3cfd51ae61123d62c13d183eeea504324df01",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/7a85a100cc613d964ae3d69474a3cfd51ae61123d62c13d183eeea504324df01"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/SOURCE_MANIFEST.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/SOURCE_MANIFEST.json",
+      "role": "historical_source",
+      "bytes": 15399,
+      "sha256": "6ffea8e98853e6b921156b50a64320ffe2370da3ecea7603a4979e970fc3895d",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/6ffea8e98853e6b921156b50a64320ffe2370da3ecea7603a4979e970fc3895d"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/capture_sources.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/capture_sources.py",
+      "role": "historical_source",
+      "bytes": 7465,
+      "sha256": "21f090292f0fbd212e9409abcaced9416238dbe762811cda8e1b1fe3a4ba0de4",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/21f090292f0fbd212e9409abcaced9416238dbe762811cda8e1b1fe3a4ba0de4"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/final_validation/EXECUTION.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/EXECUTION.json",
+      "role": "historical_source",
+      "bytes": 2344,
+      "sha256": "04a27f9a415b269bddd7a38f1e85d99375950313a95cd5bb95c94c8c7297ebf5",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/04a27f9a415b269bddd7a38f1e85d99375950313a95cd5bb95c94c8c7297ebf5"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/final_validation/recorder_at_launch.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/recorder_at_launch.py",
+      "role": "historical_source",
+      "bytes": 5170,
+      "sha256": "da73cc0766a3dc37da3d9d76e8f138fd0e0e51f5faaa2da4bb973875857caaed",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/da73cc0766a3dc37da3d9d76e8f138fd0e0e51f5faaa2da4bb973875857caaed"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/final_validation/source_at_launch.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/source_at_launch.py",
+      "role": "historical_source",
+      "bytes": 1840,
+      "sha256": "3a60172dfe24d5d99faf459e25bc483bcddf6813f6c6efbf6d304d42ff2b3418",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/3a60172dfe24d5d99faf459e25bc483bcddf6813f6c6efbf6d304d42ff2b3418"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/final_validation/stderr",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/stderr",
+      "role": "historical_source",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/final_validation/stdout",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/stdout",
+      "role": "historical_source",
+      "bytes": 449,
+      "sha256": "30514c0378008ca91bd11c683b64fb4d578c6667291020dc439d0e41ae9bc3fa",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/30514c0378008ca91bd11c683b64fb4d578c6667291020dc439d0e41ae9bc3fa"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/source_capture/EXECUTION.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/source_capture/EXECUTION.json",
+      "role": "historical_source",
+      "bytes": 2351,
+      "sha256": "f04cc82e9111e353d0b561b5fb5de145f4d3cd07ccd75c45a627fbb20b1498b5",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/f04cc82e9111e353d0b561b5fb5de145f4d3cd07ccd75c45a627fbb20b1498b5"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/source_capture/recorder_at_launch.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/source_capture/recorder_at_launch.py",
+      "role": "historical_source",
+      "bytes": 1751,
+      "sha256": "57321af50a72e48242cd59558edc811795a2001c44dfcd74d466a4c42d60aeff",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/57321af50a72e48242cd59558edc811795a2001c44dfcd74d466a4c42d60aeff"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/source_capture/source_at_launch.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/source_capture/source_at_launch.py",
+      "role": "historical_source",
+      "bytes": 7465,
+      "sha256": "21f090292f0fbd212e9409abcaced9416238dbe762811cda8e1b1fe3a4ba0de4",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/21f090292f0fbd212e9409abcaced9416238dbe762811cda8e1b1fe3a4ba0de4"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/source_capture/stderr",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/source_capture/stderr",
+      "role": "historical_source",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/metadata_runs/source_capture/stdout",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/source_capture/stdout",
+      "role": "historical_source",
+      "bytes": 460,
+      "sha256": "78264339d502a05e77b22633decf380e7e095a97dd070c7ae33b208c7490e6f0",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/78264339d502a05e77b22633decf380e7e095a97dd070c7ae33b208c7490e6f0"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/record_capture.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/record_capture.py",
+      "role": "historical_source",
+      "bytes": 1751,
+      "sha256": "57321af50a72e48242cd59558edc811795a2001c44dfcd74d466a4c42d60aeff",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/57321af50a72e48242cd59558edc811795a2001c44dfcd74d466a4c42d60aeff"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/seal_review.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/seal_review.py",
+      "role": "historical_source",
+      "bytes": 5170,
+      "sha256": "da73cc0766a3dc37da3d9d76e8f138fd0e0e51f5faaa2da4bb973875857caaed",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/da73cc0766a3dc37da3d9d76e8f138fd0e0e51f5faaa2da4bb973875857caaed"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/author_check_source.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_check_source.py",
+      "role": "historical_source",
+      "bytes": 4522,
+      "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/author_executed_source.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_executed_source.py",
+      "role": "historical_source",
+      "bytes": 4522,
+      "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/author_execution.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_execution.json",
+      "role": "historical_source",
+      "bytes": 1780,
+      "sha256": "7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/author_recorder.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_recorder.py",
+      "role": "historical_source",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/author_stderr.txt",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_stderr.txt",
+      "role": "historical_source",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/author_stdout.txt",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_stdout.txt",
+      "role": "historical_source",
+      "bytes": 2218,
+      "sha256": "8a7052c02977aa51fd6daf9b4d485d4ca2504eb92ba623c88ee603a634edb61d",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/8a7052c02977aa51fd6daf9b4d485d4ca2504eb92ba623c88ee603a634edb61d"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/ordered_angle_acceptance.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/ordered_angle_acceptance.json",
+      "role": "historical_source",
+      "bytes": 2430,
+      "sha256": "d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/ordered_angle_proposal.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/ordered_angle_proposal.md",
+      "role": "historical_source",
+      "bytes": 14391,
+      "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/ordered_angle_qualifications.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/ordered_angle_qualifications.md",
+      "role": "historical_source",
+      "bytes": 8080,
+      "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/parent_preparation_argument.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_preparation_argument.md",
+      "role": "historical_source",
+      "bytes": 15501,
+      "sha256": "6fc70e269a55d0f13e63416cb0ce4d1e600d1509c2753ab2db9c2d44a402fde1",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/6fc70e269a55d0f13e63416cb0ce4d1e600d1509c2753ab2db9c2d44a402fde1"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/parent_preparation_qualifications.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_preparation_qualifications.md",
+      "role": "historical_source",
+      "bytes": 8547,
+      "sha256": "0c85e9294e4f8c93bc12cde5788e64051916a10612b939b66b280e6d6dddf153",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/0c85e9294e4f8c93bc12cde5788e64051916a10612b939b66b280e6d6dddf153"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/parent_preparation_review.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_preparation_review.md",
+      "role": "historical_source",
+      "bytes": 22831,
+      "sha256": "97570aecc29faf3dc3aba4228622cd1ea7565b01b7a3bfaae6943e9ba0e45735",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/97570aecc29faf3dc3aba4228622cd1ea7565b01b7a3bfaae6943e9ba0e45735"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/parent_wrapper.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_wrapper.md",
+      "role": "historical_source",
+      "bytes": 14706,
+      "sha256": "241dbcc2a6f4715df2ef322b4007ad816f954867b1ce47c1d4c61e71517a7388",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/241dbcc2a6f4715df2ef322b4007ad816f954867b1ce47c1d4c61e71517a7388"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/proposal.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/proposal.md",
+      "role": "historical_source",
+      "bytes": 15258,
+      "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/proposal_freeze.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/proposal_freeze.json",
+      "role": "historical_source",
+      "bytes": 526,
+      "sha256": "280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/sources/proposal_manifest.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/proposal_manifest.json",
+      "role": "historical_source",
+      "bytes": 1420,
+      "sha256": "2906985b3fc20e92da279462656010f378600d84ffc6346778e1ee6cccf96996",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/2906985b3fc20e92da279462656010f378600d84ffc6346778e1ee6cccf96996"
+    },
+    {
+      "source": "reflection_preparation_exposed_check/validate_packet.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/validate_packet.py",
+      "role": "historical_source",
+      "bytes": 1840,
+      "sha256": "3a60172dfe24d5d99faf459e25bc483bcddf6813f6c6efbf6d304d42ff2b3418",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/3a60172dfe24d5d99faf459e25bc483bcddf6813f6c6efbf6d304d42ff2b3418"
+    },
+    {
+      "source": "reflection_preparation_root_review/FREEZE.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review/FREEZE.json",
+      "role": "source_freeze",
+      "bytes": 375,
+      "sha256": "c0fc236512c4b57b10a27edcbccc824e83112b9e6c8e195a89ed2511c017d827",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/c0fc236512c4b57b10a27edcbccc824e83112b9e6c8e195a89ed2511c017d827"
+    },
+    {
+      "source": "reflection_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "role": "historical_source",
+      "bytes": 7864,
+      "sha256": "1c727dade021ef194f8b017d3304fae9e07689ca32ca8bfad367286212b7f2b5",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/1c727dade021ef194f8b017d3304fae9e07689ca32ca8bfad367286212b7f2b5"
+    },
+    {
+      "source": "reflection_preparation_root_review/ACCEPTANCE.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review/ACCEPTANCE.json",
+      "role": "historical_source",
+      "bytes": 2176,
+      "sha256": "e73667146d03703fd50a68859c6133f93c0f78e81b3c0f1ed61c48ccde09cedf",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e73667146d03703fd50a68859c6133f93c0f78e81b3c0f1ed61c48ccde09cedf"
+    },
+    {
+      "source": "reflection_preparation_root_review_v2/FREEZE.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review_v2/FREEZE.json",
+      "role": "source_freeze",
+      "bytes": 375,
+      "sha256": "dc4838051396e454d6fdccc6c9d3cd6df8b87a3ffdc7ffcd7d0924e8e44fe9b5",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/dc4838051396e454d6fdccc6c9d3cd6df8b87a3ffdc7ffcd7d0924e8e44fe9b5"
+    },
+    {
+      "source": "reflection_preparation_root_review_v2/FINAL_QUALIFICATIONS.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review_v2/FINAL_QUALIFICATIONS.md",
+      "role": "historical_source",
+      "bytes": 7918,
+      "sha256": "4474c5cd6f9707e4bf761bf361b67b2e9ea1e9ca2dd2b489c23ab0ecd3aa2438",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/4474c5cd6f9707e4bf761bf361b67b2e9ea1e9ca2dd2b489c23ab0ecd3aa2438"
+    },
+    {
+      "source": "reflection_preparation_root_review_v2/ACCEPTANCE.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review_v2/ACCEPTANCE.json",
+      "role": "historical_source",
+      "bytes": 3287,
+      "sha256": "e66487255904aa97e24e27a9643c14a128c9188e2153d56142347b86eea1e724",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e66487255904aa97e24e27a9643c14a128c9188e2153d56142347b86eea1e724"
+    },
+    {
+      "source": "runs/reflection_preparation_author_check/stdout",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/stdout",
+      "role": "actual_evidence",
+      "bytes": 2218,
+      "sha256": "8a7052c02977aa51fd6daf9b4d485d4ca2504eb92ba623c88ee603a634edb61d",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/8a7052c02977aa51fd6daf9b4d485d4ca2504eb92ba623c88ee603a634edb61d"
+    },
+    {
+      "source": "runs/reflection_preparation_author_check/stderr",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/stderr",
+      "role": "actual_evidence",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/reflection_preparation_author_check/executed_source.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/executed_source.py",
+      "role": "actual_evidence",
+      "bytes": 4522,
+      "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+    },
+    {
+      "source": "runs/reflection_preparation_author_check/EXECUTION.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/EXECUTION.json",
+      "role": "actual_evidence",
+      "bytes": 1780,
+      "sha256": "7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f"
+    },
+    {
+      "source": "review_run.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+      "role": "actual_evidence",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "source": "runs/reflection_preparation_acceptance/stdout",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/stdout",
+      "role": "actual_evidence",
+      "bytes": 816,
+      "sha256": "3149e0e46fc9a3a264c87282dc25e616222de6078039bfde628d3f8ffc774635",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/3149e0e46fc9a3a264c87282dc25e616222de6078039bfde628d3f8ffc774635"
+    },
+    {
+      "source": "runs/reflection_preparation_acceptance/stderr",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/stderr",
+      "role": "actual_evidence",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/reflection_preparation_acceptance/executed_source.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/executed_source.py",
+      "role": "actual_evidence",
+      "bytes": 11464,
+      "sha256": "6f6d0f69ae32b84e6c5a01d0aaebbc4eb3e4d7cc81e0adfa53362100952a00f7",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/6f6d0f69ae32b84e6c5a01d0aaebbc4eb3e4d7cc81e0adfa53362100952a00f7"
+    },
+    {
+      "source": "runs/reflection_preparation_acceptance/EXECUTION.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/EXECUTION.json",
+      "role": "actual_evidence",
+      "bytes": 1756,
+      "sha256": "dc551736d3aeac18fdf945d21373c4d89a1453929323de0a0d76b5c349d03076",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/dc551736d3aeac18fdf945d21373c4d89a1453929323de0a0d76b5c349d03076"
+    },
+    {
+      "source": "bootstrap/accept_reflection_preparation.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/accept_reflection_preparation.py",
+      "role": "actual_evidence",
+      "bytes": 11464,
+      "sha256": "6f6d0f69ae32b84e6c5a01d0aaebbc4eb3e4d7cc81e0adfa53362100952a00f7",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/6f6d0f69ae32b84e6c5a01d0aaebbc4eb3e4d7cc81e0adfa53362100952a00f7"
+    },
+    {
+      "source": "runs/reflection_preparation_qualification_clarification/stdout",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/stdout",
+      "role": "actual_evidence",
+      "bytes": 825,
+      "sha256": "009bfbd7dbe5cb8295d26c1898bd911c484af95c024a029e45eb9b6219389956",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/009bfbd7dbe5cb8295d26c1898bd911c484af95c024a029e45eb9b6219389956"
+    },
+    {
+      "source": "runs/reflection_preparation_qualification_clarification/stderr",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/stderr",
+      "role": "actual_evidence",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/reflection_preparation_qualification_clarification/executed_source.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/executed_source.py",
+      "role": "actual_evidence",
+      "bytes": 1995,
+      "sha256": "cb70b1595b99f441445a78e62370f801725ff056f02369912a1590b92a68d07e",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/cb70b1595b99f441445a78e62370f801725ff056f02369912a1590b92a68d07e"
+    },
+    {
+      "source": "runs/reflection_preparation_qualification_clarification/EXECUTION.json",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/EXECUTION.json",
+      "role": "actual_evidence",
+      "bytes": 1811,
+      "sha256": "2fa9804e93e1daeebf5e666f830bc8230610c712dcb0586b0b5513513d3f4a0c",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/2fa9804e93e1daeebf5e666f830bc8230610c712dcb0586b0b5513513d3f4a0c"
+    },
+    {
+      "source": "bootstrap/clarify_reflection_qualification.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/clarify_reflection_qualification.py",
+      "role": "actual_evidence",
+      "bytes": 1995,
+      "sha256": "cb70b1595b99f441445a78e62370f801725ff056f02369912a1590b92a68d07e",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/cb70b1595b99f441445a78e62370f801725ff056f02369912a1590b92a68d07e"
+    },
+    {
+      "source": "canonical_source/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "role": "direct_canonical_math_parent",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    },
+    {
+      "source": "interacting_control_qualified_publication_draft/build_packet.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/build_packet.py",
+      "role": "packaging_machinery_only",
+      "bytes": 4863,
+      "sha256": "131ef659b79ee205e008b4535de6ec5764ce78b9f1444659b13b6b8d0c56f0f8",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/131ef659b79ee205e008b4535de6ec5764ce78b9f1444659b13b6b8d0c56f0f8"
+    },
+    {
+      "source": "interacting_control_qualified_publication_draft/primary_template.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/primary_template.py",
+      "role": "packaging_machinery_only",
+      "bytes": 8842,
+      "sha256": "58028fb9788df81db5bafcb45520a997c3891b6e659e5ddeb7b60ca60aed87d0",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/58028fb9788df81db5bafcb45520a997c3891b6e659e5ddeb7b60ca60aed87d0"
+    },
+    {
+      "source": "interacting_control_qualified_publication_draft/inspect_packet.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/inspect_packet.py",
+      "role": "packaging_machinery_only",
+      "bytes": 2902,
+      "sha256": "8388e3d6521cd39a7d7d0c142bd2b63eea3161488132136acdb6dea273f0d76d",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/8388e3d6521cd39a7d7d0c142bd2b63eea3161488132136acdb6dea273f0d76d"
+    },
+    {
+      "source": "interacting_control_qualified_publication_draft/record_metadata.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/record_metadata.py",
+      "role": "packaging_machinery_only",
+      "bytes": 2703,
+      "sha256": "3f7c8d6234fc0ec1fcf7a9b41959fbe0284d4f03820f32a56acfb147367a0192",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/3f7c8d6234fc0ec1fcf7a9b41959fbe0284d4f03820f32a56acfb147367a0192"
+    },
+    {
+      "source": "interacting_control_qualified_publication_draft/seal_packet.py",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/seal_packet.py",
+      "role": "packaging_machinery_only",
+      "bytes": 5420,
+      "sha256": "1b3bab5e75e68ee26be2145b21803d556aeb2bb967e68d560b9abbbd5ab523cb",
+      "recovery_path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/archive/sha256/1b3bab5e75e68ee26be2145b21803d556aeb2bb967e68d560b9abbbd5ab523cb"
+    }
+  ]
+}

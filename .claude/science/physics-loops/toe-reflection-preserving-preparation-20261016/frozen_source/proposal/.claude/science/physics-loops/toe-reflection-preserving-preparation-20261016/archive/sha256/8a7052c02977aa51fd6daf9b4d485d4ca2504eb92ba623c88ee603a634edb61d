@@ -1,0 +1,65 @@
+{
+  "scope": "One floating complete 64-dimensional interaction-picture pulse fixture, with exact-analytic lab carrier/phase relation evaluated numerically. No time discretization, interval bounds, physical supplier, general-n proof or independent replay.",
+  "M": 6,
+  "L": 5,
+  "n": 3,
+  "theta": [
+    0.9553166181245093,
+    0.5235987755982989
+  ],
+  "actual_scalar_reserves": "Two simultaneous 2pi identities on every paired spreading slot; exact full exp of their sum, including overlapping center.",
+  "prefix_leak": 0.0,
+  "reflection_operator_residual": 0.0,
+  "restricted_generator_residuals": [
+    2.220446049250313e-16,
+    2.220446049250313e-16
+  ],
+  "initial_fill_error": 1.6129698292846876e-15,
+  "tau": 904.7786842338604,
+  "lambda_final": 12.56637061435913,
+  "results": {
+    "nominal": {
+      "norm": 1.0000000000000029,
+      "mean": 3.000000000000018,
+      "variance": 1.1666666666666217,
+      "vector_error": 2.8170120827431674e-13,
+      "prefix_leak": 3.2913275023992537e-16,
+      "reflection_error": 1.376429061871362e-13
+    },
+    "matched_angle_errors": {
+      "norm": 1.0000000000000027,
+      "mean": 3.000000000000015,
+      "variance": 1.1964972761164976,
+      "vector_error": 0.15073716024532638,
+      "prefix_leak": 3.2913275023992547e-16,
+      "reflection_error": 1.4657359104704347e-13
+    },
+    "unmatched_second_pair": {
+      "norm": 1.000000000000003,
+      "mean": 3.03350727879686,
+      "variance": 1.2660657653247611,
+      "vector_error": 0.06347651556968759,
+      "prefix_leak": 3.291327502399254e-16,
+      "reflection_error": 0.0897693492108389
+    },
+    "omitted_center_normalization": {
+      "norm": 1.000000000000001,
+      "mean": 3.000000000000006,
+      "variance": 1.666825629929372,
+      "vector_error": 0.39312846030427395,
+      "prefix_leak": 3.291327502399252e-16,
+      "reflection_error": 1.645196295005839e-13
+    }
+  },
+  "positive_minima": [
+    5.607674448323547,
+    5.515750566769295,
+    5.607674448323547,
+    5.327868689055076
+  ],
+  "matched_eta": 0.22,
+  "matched_full_operator_action_upper_bound": 0.3638477631085023,
+  "variance_error_bound": 1.6306339824327978,
+  "scientific_executions": 1,
+  "independent_validation": false
+}

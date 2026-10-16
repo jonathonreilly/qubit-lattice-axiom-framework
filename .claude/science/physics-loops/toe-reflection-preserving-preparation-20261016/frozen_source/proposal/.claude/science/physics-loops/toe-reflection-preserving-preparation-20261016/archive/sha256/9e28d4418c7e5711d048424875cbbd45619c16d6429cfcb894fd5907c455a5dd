@@ -1,0 +1,161 @@
+# Proposed reflection-preserving prefix preparation and exact mean work
+
+Status: original conditional construction, awaiting a separate exposed check. It changes the preparation control contract and does not prove native suppliers. The single ordered-angle sensitivity result motivates the question but is not a theorem premise. The direct preparation parent is the local preparation note6db93809; the new three-site operators and symmetry argument are proved below. No general optimality or physical realization claim is intended.
+
+## 1. Physical space and changed permissions
+
+Let M=2n with integer n>=2, L=M-1, and let a chain of M battery qubits have actual free generator Delta B, B=sum_(j=1)^M n_j, Delta>0. Retain a finite old register with literal K>=0, and an arbitrary untouched reference R. During this preparation the old register is exactly decoupled from the battery. Thus the complete baseline is F0=K+Delta B and old aging remains exp(-itK/hbar). The initial battery is independently vacuum. No resource or reference output is removed.
+
+Write p_m=|1^m0^(M-m)> for0<=m<=M and let P be their full prefix span. Define the unitary reflection J as reversing site order and flipping every bit. Then Jp_m=p_(M-m), J^2=I and JBJ=M I-B on the entire battery. J is a mathematical symmetry, not an extra supplied instantaneous operation.
+
+The new supplied interaction on an interior triple2<=j<=M-1 is
+
+    F_j=n_(j-1) Y_j (I-n_(j+1)),
+    Y|0>=i|1>,  Y|1>=-i|0>.
+
+These are Hermitian norm-one three-site terms on consecutive sites. They preserve P exactly and on P act as
+
+    F_j=i|p_j><p_(j-1)|-i|p_(j-1)><p_j|.             (1)
+
+Indeed either a prefix ends at j-1 or j and is moved across that boundary, or one of the two control projections is zero. This proof is on every p_m, not a compression imposed after an actual step. On the full battery,
+
+    JF_jJ=-F_(M+1-j).                                (2)
+
+The flipped neighbor projections exchange their roles and Y changes sign. Their factors lie on distinct sites and commute, proving (2) without assuming a prefix input.
+
+Compared with the parent two-site nY gates, these three-site filtered flips and simultaneous mirror matching are stronger physical permissions. This is an explicit tradeoff, not a free replacement of existing hardware. Actual strengths, supports, independent vacuum, old isolation, clock and rotating quadratures still have to be supplied.
+
+## 2. A quotient-chain circuit with actual scalar reserves
+
+First prepare the central prefix p_n from vacuum using n serial exact pi/2 onsite Y flips on sites1,...,n. These initialization flips are exact in the present fault theorem; any imperfect filling has its own obligation below. Each uses its original positive2pi identity reserve, whose endpoint scalar is one.
+
+An orthonormal reflection-even basis in the desired support1,...,M-1 is
+
+    s_0=p_n,
+    s_k=(p_(n-k)+p_(n+k))/sqrt(2), 1<=k<=n-1.
+
+For0<=k<=n-2 set a=n+k+1 and b=n-k, and put
+
+    G_k=F_a-F_b,   nu_0=sqrt(2),   nu_k=1 for k>=1,
+    A_k=G_k/nu_k.
+
+Equations(1)-(2) imply [G_k,J]=0 on the whole battery. On the even prefix span, A_k acts exactly as Y between s_k and s_(k+1), and annihilates the other s_l. For k=0, G_0s_0=i sqrt(2)s_1 and G_0s_1=-i sqrt(2)s_0, which explains nu_0. For k>=1 the two distinct edges each contribute i/sqrt(2) to the outward state, giving coefficient one. No endpoint edge to p_0 or p_M is used, so the span of s_0,...,s_(n-1) is invariant for every implemented angle.
+
+The desired real sine packet has
+
+    beta=sum_(m=1)^(M-1) b_m p_m,
+    b_m=sqrt(2/M) sin(pi m/M),
+    beta=sum_(k=0)^(n-1) c_k s_k,
+    c_0=sqrt(2/M),  c_k=sqrt(4/M) cos(pi k/M), k>=1.
+
+All c_k are positive and sum c_k^2=1. Set w_k=sum_(l=k)^(n-1)c_l^2, and for0<=k<=n-2 choose theta_k in[0,pi/2] with cos(theta_k)=c_k/sqrt(w_k), sin(theta_k)=sqrt(w_(k+1)/w_k). Then
+
+    exp(-i theta_(n-2) A_(n-2)) ... exp(-i theta_0 A_0) s_0=beta.    (3)
+
+Induction is the same finite continuation-weight calculation, now on the reflection-even quotient chain. Enclosures of the positive finite tails suffice to prescribe angles; no favorable classical arithmetic time is inferred.
+
+In a spreading slot, physically install the two local positive integrated generators
+
+    Q_+=2pi I_(a-1,a,a+1)+(theta_k/nu_k)F_a,
+    Q_-=2pi I_(b-1,b,b+1)-(theta_k/nu_k)F_b.             (4)
+
+After extension to the whole battery their identity parts sum to4pi I. Even when the center supports overlap and the F terms do not commute, their simultaneous sum is exactly4pi I+theta_k A_k. Its evolution is exp(-i theta_k A_k), with the scalar exp(-i4pi)=1 on the complete Hilbert space. No commuting-product decomposition of the overlapping nonidentity terms is assumed. Replacing these full identity reserves by conditional projections would change this argument and is not authorized.
+
+## 3. Restricted matched errors and exact energy symmetry
+
+In spreading slot k replace theta_k by theta_k+delta_k in BOTH coefficients in (4), with the fixed relative minus sign and the normalization nu_k unchanged. All other controls and clocks, including the initial filling, are exact. The two envelopes are simultaneous and identical. These are matched errors, not arbitrary independent local faults. For |delta_k|<=1 the two actual Q terms are positive, since |theta_k+delta_k|/nu_k<=pi/2+1<pi and the reserve is2pi. Their individual norms are below3pi; Q_*=6pi is a convenient common bound also covering the final phase layer.
+
+Every actual spreading gate preserves the even prefix span. Consequently, for arbitrary delta_k, the actual battery output beta_delta is a normalized J-even vector supported on p_1,...,p_(M-1). Hence
+
+    <B>_delta=M/2=n,
+    <(B-n)^(2r+1)>_delta=0 for every nonnegative integer r.         (5)
+
+This follows by conjugating the observables by J; no closeness to beta is needed for the identities. The same statements hold for any density operator supported on the J-even span, but no such readiness is obtained for free.
+
+Let eta=sum_k|delta_k|. On the even prefix space each A_k has norm one. Telescoping full physical gates on the invariant promised input space gives
+
+    ||beta_delta-beta||<=eta,  joint trace error<=2eta.             (6)
+
+This is an input-isometry statement for all old/reference inputs, retaining every battery qubit. On the entire unconstrained battery ||A_k||<=2/nu_k is only a general safe bound; the stronger coefficient one in (6) uses actual invariant-domain semantics, not a global-operator claim. The full physical Hamiltonian discrepancy has integrated norm at most2 sum_k |delta_k|/nu_k<=2eta; it is not identified with eta globally.
+
+## 4. Literal free field, caps, preparation clock and endpoint
+
+Let R_B(t)=exp(-it Delta B/hbar). Use the same absolute clock on every slot. With f_h(s)=(1-cos(2pi s/h))/h for0<=s<=h, the actual lab term in (4) is
+
+    H_+(t)=hbar f_h(t-t_k) R_B(t)Q_+R_B(t)*,
+
+and similarly H_-. This uses local conjugation since B is onsite. In the exact interaction picture the spreading controls are precisely the constant operators (4). The free lab field itself need not commute with J. It commutes with B, so it cannot change the mean-energy conclusion. At release the final phase also removes it on the full battery.
+
+There are n exact initialization slots, n-1 simultaneous-pair spreading slots, and one final simultaneous M-site number phase. Fix
+
+    tau_p=Mh=2nh
+
+before setting the final number-phase coefficient lambda. A rational enclosure r of Delta tau_p/(2pi hbar) with error<=1/4, k=floor(r)+2 and lambda=2pi k-Delta tau_p/hbar gives lambda in(3pi/2,9pi/2]. The final layer is exp(-i lambda B), so
+
+    U_p J0 = J_(beta_delta) exp(-i tau_p K/hbar),         (7)
+
+where J0 adjoins vacuum and J_(beta_delta) adjoins the complete actual battery. This uses exp[-i(Delta tau_p/hbar+lambda)B]=I and no commutation of B with the spreading word. A separate idle ancilla, if included, retains its known free phase off the vacuum domain; no runtime/ancilla-return theorem is inferred by this construction.
+
+For each spreading term ||[B,Q_+/-]||<=pi, since only Y changes occupation and the filters commute with B. Thus
+
+    ||H_+/-||<=2hbar Q_*/h,
+    ||dot H_+/-||<=2pi hbar Q_*/h^2+2pi Delta/h.
+
+Only the center pair has overlapping triple supports; at most two driven terms meet a site in any slot. Therefore the common choice
+
+    h>=max(8hbar Q_*/g, sqrt(16pi hbar Q_*/sigma), 16pi Delta/sigma) (8)
+
+gives total driven incident norm<=g/2 and slew<=sigma/2 at every site, including the overlap. The final M-site phase has one local term per site, lambda<Q_*, no carrier commutator, and also meets these bounds. Initial exact onsite flips meet them as well. Baseline Delta and any old incidence are added for a full load cap. Every envelope and its first derivative vanish at boundaries. No hard bandwidth limit follows merely from this derivative estimate.
+
+The spreading pair is physically local but matched across distant chain sites; this synchronization and phase access remain supplied. A final simultaneous M-site phase has extensive global norm despite a constant local cap. Equation(8) includes actual matched-error coefficients, rather than asserting that small integrated error certifies positivity or slew.
+
+## 5. Net work and remaining moment sensitivity
+
+With exact vacuum admission, exact filling and the stated matched spreading errors, all controls vanish at the same F0 endpoints. K energy is unchanged. Equations(5),(7) give exact modeled net drive work
+
+    W_p=Delta n=Delta M/2                                  (9)
+
+for every allowed matched error. The initial filling supplies the mean energy; subsequent spreading changes coherence/distribution without changing that mean. This is a prescribed closed Hamiltonian drive statement, not a microscopic controller energy/return theorem. Absolute work and temporary reserves remain paid.
+
+The slot envelope has integral|f_h'|=4/h. Counting local pulses, a safe absolute drive-work bound is
+
+    W_abs <= g[n+2(n-1)+M] + pi Delta[n+2(n-1)].             (10)
+
+Each local envelope variation costs at most g under (8), and each rotating term costs at most pi Delta from its commutator norm. This bound deliberately does not optimize the factor from unused headroom. There is no carrier variation for the final phase layer. It is O(M) at fixed physical constants; the actual global expectation variation cannot exceed the sum of these local norm variations. Net (9), absolute (10), controller work storage and energy fluctuations are distinct.
+
+Variance need not be robust. On the even span put X=|B-n|, with eigenvalues k on s_k. The same reverse-hybrid proof gives, for0<=f(k)<=F,
+
+    |Delta <f(X)>| <=2F sqrt(2/n)eta+F eta^2,              (11)
+
+because every ideal c_k<=sqrt(2/n) and w_k sin(2theta_k)=2c_k sqrt(w_(k+1)). Unlike the ordered preparation's first flip, the first spreading angle is not a deterministic flip and belongs in this linear term. The additive constant f(0) may be subtracted without changing the expectation difference; equivalently apply the proof to its range width F. In particular both means are exactly n and
+
+    |Delta Var(B)|=|Delta <X^2>|
+          <=2sqrt(2/n)(n-1)^2 eta+(n-1)^2 eta^2.          (12)
+
+For general raw moments average the two symmetric branches: f_r(k)=((n+k)^r+(n-k)^r)/2. The r=1 average is constant and has no error; r=2 gives n^2+k^2. Complete F0 cross moments retain the unchanged old K moments and actual product structure. Generic coupled errors reintroduce covariance and full width.
+
+For L=M-1=Theta(epsilon^-1), (6) permits eta=O(epsilon) for full-state accuracy while (9) remains exact in this matched class. A uniform per-spreading-angle request O(epsilon^2) is sufficient for (6); it is not asserted necessary. Variance still has a sufficient total eta=O(epsilon^(5/2)) for O(epsilon) absolute accuracy. This avoids the earlier mean-energy amplification by changing the circuit and fault class, not by contradicting its checked witness.
+
+## 6. Symmetry-breaking faults and honest boundary
+
+Exact initial filling is a material premise. If it or any later operation breaks the actual symmetry/domain assumptions, trace closeness alone costs full width: |Delta<B>|<=M e/2 for unhalved endpoint trace error e. A generic integrated full-operator error zeta around the matched protocol gives e<=2zeta and hence a sufficient mean allowance M zeta. An arbitrary initial battery trace discrepancy contributes its own M e_init/2; initial energy changes enter net work separately. No exact mean theorem is transferred to these errors.
+
+There is also a direct symmetry-resolved identity. In the exact global interaction picture let nominal/matched Hamiltonian H_sym commute with J and let E_break be the actual additional residual. Since J(B-n)J=-(B-n), any density matrix sigma has
+
+    |Tr[(B-n)sigma]| <=(M/4)||sigma-Jsigma J||_1.          (13)
+
+Compare sigma to Jsigma J under the two Hamiltonians H_sym+E_break and H_sym+JE_breakJ. Their unitary Duhamel comparison yields
+
+    ||sigma(t)-Jsigma(t)J||_1
+       <=||sigma(0)-Jsigma(0)J||_1
+                    +(2/hbar)integral||E_break-JE_breakJ||dt.     (14)
+
+This costs actual symmetry-breaking action; it does not certify it from independent per-site tolerances. It also includes a scalar-free difference automatically, but scalars remain in the full isometry/work bookkeeping. Mean-energy bias is bounded by multiplying (14) by M/4. Equation(13) uses centering and the full width M; restricting to a smaller support without a valid invariant-domain premise is disallowed.
+
+For this circuit, apply (14) after the initial filling and through the spreading slots in the global interaction picture. The initial filling and final number-phase control do not themselves commute with J. The initial state in (14) is therefore the state after filling; its symmetry defect must be supplied or paid. The later number phase and free battery evolution preserve B, so the resulting mean bound passes to the endpoint without asserting that those intermediate controls commute with J.
+
+The route therefore leaves explicit obligations: independently prepared vacuum; exact initial filling or a paid symmetry/readiness certificate; three-site filtered flips; matched opposite-sign mirror coefficients, simultaneous envelopes and phase clock; exact endpoint restoration or separately paid corrections; complete positivity/incidence/slew; and microscopic controller/phase supply. It proves no general fault tolerance, autonomous preparation/release/halt, indefinite reuse or native actuator emergence. Its comparison with the earlier ordered preparation is a contract tradeoff, not a universal superiority claim.
+
+## 7. Planned evidence
+
+All claims above are proposed analytic arguments. A single small complete-space author check may test the center normalization, full-space symmetry, positive reserves, prefix invariance, exact mean under matched errors and failure under an unmatched error. Such a floating check would not prove general-n correctness, certify an ODE or replace separate mathematical scrutiny. No historical scientific program is to be replayed. Source identity, actual launch/stream records and any failed route will remain explicit.

@@ -1,6 +1,6 @@
 {
- "edge_count": 16154,
- "node_count": 7197,
+ "edge_count": 16155,
+ "node_count": 7198,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18809,6 +18809,10 @@
   "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "reflection_preserving_preparation_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "b4fc7f0460f7",
+   "out_degree": 1
   },
   "refusal_wrapped_controller_cycle723_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",

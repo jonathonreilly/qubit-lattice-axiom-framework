@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-16T18:45:44.967864+00:00",
+  "members": [
+    {
+      "path": "FINAL_QUALIFICATIONS.md",
+      "bytes": 7918,
+      "sha256": "4474c5cd6f9707e4bf761bf361b67b2e9ea1e9ca2dd2b489c23ab0ecd3aa2438"
+    },
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 3287,
+      "sha256": "e66487255904aa97e24e27a9643c14a128c9188e2153d56142347b86eea1e724"
+    }
+  ]
+}

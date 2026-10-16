@@ -1,0 +1,11 @@
+{
+  "status": "source and evidence identities matched",
+  "source_records_refreshed": 16,
+  "distinct_original_files": 13,
+  "capture_ranges_byte_matched": 16,
+  "proposal_freeze_members_previously_verified": 3,
+  "existing_author_science_runs": 1,
+  "reviewer_science_runs": 0,
+  "actual_reviewer_capture_receipts_verified": 1,
+  "interpretation": "Provenance checks only; not theorem, numerical-precision or physical realization certification."
+}

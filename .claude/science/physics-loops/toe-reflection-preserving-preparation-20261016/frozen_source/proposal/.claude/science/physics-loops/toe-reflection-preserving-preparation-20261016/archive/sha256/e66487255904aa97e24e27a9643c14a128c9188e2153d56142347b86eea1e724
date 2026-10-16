@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-16T18:45:44.967214+00:00",
+  "disposition": "QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 15258,
+    "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/FREEZE.json",
+    "bytes": 526,
+    "sha256": "280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/REVIEW.md",
+    "bytes": 25857,
+    "sha256": "7a85a100cc613d964ae3d69474a3cfd51ae61123d62c13d183eeea504324df01"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/FREEZE.json",
+    "bytes": 6423,
+    "sha256": "ddb52f94cb711d5cdea1271dec89a1e1b22002d055d89676c3f94cec01dc13aa"
+  },
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review_v2/FINAL_QUALIFICATIONS.md",
+    "bytes": 7918,
+    "sha256": "4474c5cd6f9707e4bf761bf361b67b2e9ea1e9ca2dd2b489c23ab0ecd3aa2438"
+  },
+  "author_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/EXECUTION.json",
+    "bytes": 1780,
+    "sha256": "7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f"
+  },
+  "root_read_complete": true,
+  "source_exposed": true,
+  "blind_independence": false,
+  "existing_author_scientific_executions": 1,
+  "new_scientific_executions": 0,
+  "reviewer_scientific_executions": 0,
+  "scientific_replays": 0,
+  "retained_audit": false,
+  "canonical_acceptance": null,
+  "publication": null,
+  "editable_prompt_files_changed": [],
+  "supersedes_for_wording_only": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review/ACCEPTANCE.json",
+    "bytes": 2176,
+    "sha256": "e73667146d03703fd50a68859c6133f93c0f78e81b3c0f1ed61c48ccde09cedf"
+  },
+  "original_qualification_preserved": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 7864,
+    "sha256": "1c727dade021ef194f8b017d3304fae9e07689ca32ca8bfad367286212b7f2b5"
+  },
+  "original_acceptance_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/EXECUTION.json",
+    "bytes": 1756,
+    "sha256": "dc551736d3aeac18fdf945d21373c4d89a1453929323de0a0d76b5c349d03076"
+  },
+  "correction": "Removed accidental phrase necessary sufficient requests. All allocations remain sufficient only; no necessity/lower bound was proved. No mathematical formula or source evidence changed."
+}

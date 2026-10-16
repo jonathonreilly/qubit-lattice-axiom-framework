@@ -1,0 +1,31 @@
+{
+  "disposition": "QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT_RECOMMENDED_TO_ROOT",
+  "proposal_sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd",
+  "blocking_defect_found": false,
+  "qualifications": [
+    "Three-local filtered flips and distant matched simultaneous mirror controls are supplied.",
+    "Exact initialization and endpoint/clock model are material; generic faults retain width-dependent costs.",
+    "J-commuting comparison applies only after filling through spreading in the interaction picture.",
+    "Restricted norm-one angle error is not a full-space residual bound.",
+    "Higher-moment and phase precision remain paid; mean energy alone does not verify packet state.",
+    "New inventory is not silently bound to an accepted runtime.",
+    "Author floating fixture was inspected, not replayed; its endpoint is already a recurrence."
+  ],
+  "reviewer_scientific_executions": 0,
+  "existing_author_scientific_executions": 1,
+  "metadata": {
+    "status": "source and evidence identities matched",
+    "source_records_refreshed": 16,
+    "distinct_original_files": 13,
+    "capture_ranges_byte_matched": 16,
+    "proposal_freeze_members_previously_verified": 3,
+    "existing_author_science_runs": 1,
+    "reviewer_science_runs": 0,
+    "actual_reviewer_capture_receipts_verified": 1,
+    "interpretation": "Provenance checks only; not theorem, numerical-precision or physical realization certification."
+  },
+  "canonical_acceptance": null,
+  "publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

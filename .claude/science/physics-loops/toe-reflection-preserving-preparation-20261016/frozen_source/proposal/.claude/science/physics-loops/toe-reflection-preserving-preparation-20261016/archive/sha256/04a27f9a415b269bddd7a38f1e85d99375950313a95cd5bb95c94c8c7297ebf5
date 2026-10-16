@@ -1,0 +1,39 @@
+{
+  "kind": "final-source-identity-validation-only",
+  "start_utc": "2026-10-16T18:41:40.946419+00:00",
+  "end_utc": "2026-10-16T18:41:41.005049+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-c",
+    "from pathlib import Path; import sys; p=Path(sys.argv[1]); exec(compile(p.read_bytes(),sys.argv[2],'exec'),{'__name__':'__main__','__file__':sys.argv[2]})",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/source_at_launch.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/validate_packet.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "wall_timeout_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/source_at_launch.py",
+    "bytes": 1840,
+    "sha256": "3a60172dfe24d5d99faf459e25bc483bcddf6813f6c6efbf6d304d42ff2b3418"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/recorder_at_launch.py",
+    "bytes": 5170,
+    "sha256": "da73cc0766a3dc37da3d9d76e8f138fd0e0e51f5faaa2da4bb973875857caaed"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/stdout",
+    "bytes": 449,
+    "sha256": "30514c0378008ca91bd11c683b64fb4d578c6667291020dc439d0e41ae9bc3fa"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/metadata_runs/final_validation/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "new_scientific_runs": 0
+}

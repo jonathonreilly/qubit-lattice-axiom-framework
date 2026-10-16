@@ -1,0 +1,29 @@
+{
+  "roots": [
+    {
+      "folder": "reflection_preparation_root_proposal",
+      "key": "members",
+      "members": 3,
+      "sha256": "280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68"
+    },
+    {
+      "folder": "reflection_preparation_exposed_check",
+      "key": "members",
+      "members": 36,
+      "sha256": "ddb52f94cb711d5cdea1271dec89a1e1b22002d055d89676c3f94cec01dc13aa"
+    },
+    {
+      "folder": "reflection_preparation_root_review",
+      "key": "members",
+      "members": 2,
+      "sha256": "c0fc236512c4b57b10a27edcbccc824e83112b9e6c8e195a89ed2511c017d827"
+    },
+    {
+      "folder": "reflection_preparation_root_review_v2",
+      "key": "members",
+      "members": 2,
+      "sha256": "dc4838051396e454d6fdccc6c9d3cd6df8b87a3ffdc7ffcd7d0924e8e44fe9b5"
+    }
+  ],
+  "closure_rule": "Four complete bounded freezes plus actual author/acceptance/clarification original and captured sources/recorder/fullstreams, one exact math parent, five machinery sources. No recursive publication archive."
+}

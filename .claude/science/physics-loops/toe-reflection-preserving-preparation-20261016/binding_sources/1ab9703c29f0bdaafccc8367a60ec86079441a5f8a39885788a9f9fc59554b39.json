@@ -1,0 +1,66 @@
+{
+  "kind": "root_qualified_source_publication_review",
+  "utc": "2026-10-16T19:14:54.249912+00:00",
+  "root_read_complete": true,
+  "disposition": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/FREEZE.json",
+    "bytes": 26493,
+    "sha256": "84e7d1bbdd6b343b9452e4b7d8513aebdc37a5a302470d15a85842dc92cddfe2"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/proposal/docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 57076,
+    "sha256": "8d9d8abe3c0c9fd8cf8f9b94fd525df9713609f9b06f61a2afa0a55a6f6596b2"
+  },
+  "source_validator": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/proposal/scripts/reflection_preserving_preparation_2026_10_16.py",
+    "bytes": 18673,
+    "sha256": "3d92082267dd56753c142503bbce86118115aae038ef13c7e6b6e9e130eeaedf"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/SOURCE_MANIFEST.json",
+    "bytes": 40424,
+    "sha256": "37040d4cb9d481916b8512970c1e891ca4ebb202a2ce3869c92cc14c70d8bcf7"
+  },
+  "source_wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/packet_text/WRAPPER.md",
+    "bytes": 7849,
+    "sha256": "5b061bff466117529d2e9602121d18ebefc898c7a9950d4e7c6465525df36182"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_reflection_preparation_qualified_publication_review/REVIEW.md",
+    "bytes": 3343,
+    "sha256": "39ea66490d4586ad4eb2d911c92b8d840960bffb2664bccf40e5f9bcc1f63697"
+  },
+  "evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_reflection_preparation_qualified_publication_review/MECHANICAL_EVIDENCE.json",
+    "bytes": 3145,
+    "sha256": "f682e00186dc17979b82d67cddd2864f6862355b56085df7ba28d4bbcb7bb54c"
+  },
+  "immutable_bodies": 3,
+  "source_aliases": 68,
+  "archive_objects": 48,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3161,
+      "sha256": "922a0b1a318b9b512dfac896d89911fbf68d09db8fd6c6844435feb558eccaa6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3199,
+      "sha256": "0c85306ba97d7949050df1d59d62181edebc6066d7174bf67a83a46c51a45834"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2344,
+      "sha256": "e04de16f5964004384865ec7db8e3c84f2a190cc6ad6eb506076fe5c286d0367"
+    }
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "actual_publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

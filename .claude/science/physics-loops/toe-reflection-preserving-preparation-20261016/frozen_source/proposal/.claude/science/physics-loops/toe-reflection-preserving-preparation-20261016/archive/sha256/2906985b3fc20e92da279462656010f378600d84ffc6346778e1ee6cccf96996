@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-16T18:27:34.539616+00:00",
+  "status": "PROPOSED_UNCHECKED",
+  "direct_mathematical_parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 170504,
+    "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+  },
+  "context_not_premise": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_review/ACCEPTANCE.json",
+    "bytes": 2430,
+    "sha256": "d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4"
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 15258,
+    "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+  },
+  "author_fixture_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/author_check.py",
+    "bytes": 4522,
+    "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+  },
+  "scientific_executions_so_far": 0,
+  "limits": "Original proposed construction; stronger three-site matched-control permissions; no native/control/reuse claim."
+}
